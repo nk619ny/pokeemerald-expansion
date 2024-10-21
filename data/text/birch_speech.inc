@@ -44,8 +44,8 @@ gText_Birch_SoItsPlayer::
 
 gText_Birch_YourePlayer::
 	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
+	.string "You're {PLAYER}{KUN} from my hometown\n"
+	.string "of Littleroot.\l"
 	.string "I get it now!\p"
 	.string "$"
 

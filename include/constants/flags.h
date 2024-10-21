@@ -652,7 +652,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_GRASS_STARTER_REMOVED  0x264 // NK Flag for starter selection
+#define FLAG_REMOVE_LAB_STARTERS  0x264 // NK Flag for starter selection
 #define FLAG_FIRE_STARTER_REMOVED  0x265 // Unused Flag
 #define FLAG_WATER_STARTER_REMOVED  0x266 // Unused Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag

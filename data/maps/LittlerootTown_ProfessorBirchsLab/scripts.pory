@@ -664,6 +664,20 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 	releaseall
 	end
 
+LittlerootTown_ProfessorBirchsLab_EventScript_RemoveRivalIntroFlag::
+	checkplayergender
+	call_if_eq VAR_RESULT, MALE, ProfessorBirchsLab_EventScript_HideMayInBedroom
+	call_if_eq VAR_RESULT, FEMALE, ProfessorBirchsLab_EventScript_HideBrendanInBedroom
+    return
+
+ProfessorBirchsLab_EventScript_HideMayInBedroom::
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
+	return
+
+ProfessorBirchsLab_EventScript_HideBrendanInBedroom::
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
+	return
+
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
 	.string "Hunh? PROF. BIRCH?\p"
 	.string "The PROF's away on fieldwork.\n"
@@ -1002,33 +1016,138 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … Click!$"
 
 `
+// Sets constants to use for Object IDs 
+const INTRO_BIRCH_ID = 10
+const GRASS_STARTER_BALL = 7
+const FIRE_STARTER_BALL = 8
+const WATER_STARTER_BALL = 9
+
+//Uses VAR_TEMP_8 to signify starter region selected
+//Uses VAR_TEMP_7 to record answer to starter offer
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen{
+    lock
+    faceplayer
+    if(!flag(FLAG_REMOVE_LAB_STARTERS)){
+        if(var(VAR_TEMP_8) == 0) {
+            msgbox("Ah, hello {PLAYER}!\lI heard you were going to begin your\njourney as a Pokemon Trainer today.")
+        }
+        message(format("What region would you like to choose your starter Pokemon from?"))
+        dynmultichoice(25,3,1,4,2,DYN_MULTICHOICE_CB_NONE,"Kanto","Johto","Hoenn","Sinnoh","Unova","Kalos","Alola","Galar","Paldea","Hisui")
+        copyvar(VAR_TEMP_8,VAR_RESULT)      
+        addvar(VAR_TEMP_8,1)
+        closemessage
+        msgbox(("I'm sure you'll choose well!\lCome speak to me again if you want to\nsee other options."))
+        waitmessage
+        release
+    } 
+    else{
+        msgbox(format("Take care of your Pokemon, and good luck on your journey!"))
+    }
+    release
+}
 
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter{
     lockall
-    showmonpic(SPECIES_TREECKO,10,3)
-    msgbox("Do you want to choose Treecko?",MSGBOX_YESNO)
-    if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_TREECKO,10,ITEM_NUGGET)
-        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+    setvar(VAR_TEMP_7, NO)
+    switch(var(VAR_TEMP_8)){
+        case 0:
+            msgbox(format("Better go speak with Prof. Birch before taking a Pokemon."))
+                waitmessage
+                releaseall
+                return
+        case 1:
+            showmonpic(SPECIES_BULBASAUR,10,3)
+            msgbox(format("Do you want to choose Bulbasaur?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_BULBASAUR,5)
+                msgbox("Received Bulbasaur!")}
+        case 2:
+            showmonpic(SPECIES_CHIKORITA,10,3)
+            msgbox(format("Do you want to choose Chikorita?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_CHIKORITA,5)
+                msgbox("Received Chikorita!")}
+        case 3:
+            showmonpic(SPECIES_TREECKO,10,3)
+            msgbox(format("Do you want to choose Treecko?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_TREECKO,5)
+                msgbox("Received Treecko!")}
+        case 4:
+            showmonpic(SPECIES_TURTWIG,10,3)
+            msgbox(format("Do you want to choose Turtwig?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_TURTWIG,5)     
+                msgbox("Received Turtwig!")}
+        case 5:
+            showmonpic(SPECIES_SNIVY,10,3)
+            msgbox(format("Do you want to choose Snivy?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_SNIVY,5)      
+                msgbox("Received Snivy!")}
+        case 6:
+            showmonpic(SPECIES_CHESPIN,10,3)
+            msgbox(format("Do you want to choose Chespin?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_CHESPIN,5)                       
+                msgbox("Received Chespin!")}
+        case 7:
+            showmonpic(SPECIES_ROWLET,10,3)
+            msgbox(format("Do you want to choose Rowlet?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_ROWLET,5)       
+                msgbox("Received Rowlet!")}
+        case 8:
+            showmonpic(SPECIES_GROOKEY,10,3)
+            msgbox(format("Do you want to choose Grookey?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_GROOKEY,5)      
+                msgbox("Received Grookey!")}
+        case 9:
+            showmonpic(SPECIES_SPRIGATITO,10,3)
+            msgbox(format("Do you want to choose Sprigatito?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_SPRIGATITO,5)    
+                msgbox("Received Sprigatito!")}
+        case 10:
+            showmonpic(SPECIES_ROWLET,10,3)
+            msgbox(format("Do you want to choose Rowlet?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_ROWLET,5)   
+                msgbox("Received Rowlet!")}                   
+        default:
+            msgbox(format("Better go speak with Prof. Birch before taking a Pokemon."))
+            waitmessage
+            releaseall
+            return
+    }
+        if(var(VAR_TEMP_7) == YES){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Received Treecko!")
             hidemonpic
-            removeobject(7)
-            removeobject(8)
-            removeobject(9)
-            setflag(FLAG_GRASS_STARTER_REMOVED)
+            removeobject(GRASS_STARTER_BALL)
+            removeobject(FIRE_STARTER_BALL)
+            removeobject(WATER_STARTER_BALL)
+            setflag(FLAG_REMOVE_LAB_STARTERS)
             call(NicknamePartyMon)
             setvar(VAR_STARTER_MON, 0)
+            call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
+
         }
         else{
             hidemonpic
-            msgbox("That wasn't supposed to happen")
         }
-    }
-    else{
-        hidemonpic
-    }
     waitmessage
     releaseall
     end
@@ -1036,29 +1155,104 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter{
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter{
     lockall
-    showmonpic(SPECIES_TORCHIC,10,3)
-    msgbox("Do you want to choose Torchic?",MSGBOX_YESNO)
-    if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_TORCHIC,10,ITEM_NUGGET)
-        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+    setvar(VAR_TEMP_7, NO)
+    switch(var(VAR_TEMP_8)){
+        case 0:
+            msgbox(format("Better go speak with Prof. Birch before taking a Pokemon."))
+                waitmessage
+                releaseall
+                return
+        case 1:
+            showmonpic(SPECIES_CHARMANDER,10,3)
+            msgbox(format("Do you want to choose Charmander?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_CHARMANDER,5)
+                msgbox("Received Charmander!")}
+        case 2:
+            showmonpic(SPECIES_CYNDAQUIL,10,3)
+            msgbox(format("Do you want to choose Cyndaquil?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_CYNDAQUIL,5)
+                msgbox("Received Cyndaquil!")}
+        case 3:
+            showmonpic(SPECIES_TORCHIC,10,3)
+            msgbox(format("Do you want to choose Torchic?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_TORCHIC,5)
+                msgbox("Received Torchic!")}
+        case 4:
+            showmonpic(SPECIES_CHIMCHAR,10,3)
+            msgbox(format("Do you want to choose Chimchar?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_CHIMCHAR,5)     
+                msgbox("Received Chimchar!")}
+        case 5:
+            showmonpic(SPECIES_TEPIG,10,3)
+            msgbox(format("Do you want to choose Tepig?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_TEPIG,5)      
+                msgbox("Received Tepig!")}
+        case 6:
+            showmonpic(SPECIES_FENNEKIN,10,3)
+            msgbox(format("Do you want to choose Fennekin?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_FENNEKIN,5)                       
+                msgbox("Received Fennekin!")}
+        case 7:
+            showmonpic(SPECIES_LITTEN,10,3)
+            msgbox(format("Do you want to choose Litten?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_LITTEN,5)       
+                msgbox("Received Litten!")}
+        case 8:
+            showmonpic(SPECIES_SCORBUNNY,10,3)
+            msgbox(format("Do you want to choose Scorbunny?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_SCORBUNNY,5)      
+                msgbox("Received Scorbunny!")}
+        case 9:
+            showmonpic(SPECIES_FUECOCO,10,3)
+            msgbox(format("Do you want to choose Fuecoco?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_FUECOCO,5)    
+                msgbox("Received Fuecoco!")}
+        case 10:
+            showmonpic(SPECIES_CYNDAQUIL,10,3)
+            msgbox(format("Do you want to choose Cyndaquil?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_CYNDAQUIL,5)
+                msgbox("Received Cyndaquil!")}                 
+        default:
+            msgbox(format("Better go speak with Prof. Birch before taking a Pokemon."))
+            waitmessage
+            releaseall
+            return
+    }
+        if(var(VAR_TEMP_7) == YES){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Received Torchic!")
             hidemonpic
-            removeobject(7)
-            removeobject(8)
-            removeobject(9)
-            setflag(FLAG_GRASS_STARTER_REMOVED)
+            removeobject(GRASS_STARTER_BALL)
+            removeobject(FIRE_STARTER_BALL)
+            removeobject(WATER_STARTER_BALL)
+            setflag(FLAG_REMOVE_LAB_STARTERS)
             call(NicknamePartyMon)
-            setvar(VAR_STARTER_MON, 0)
+            setvar(VAR_STARTER_MON, 1)
+            call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
+
         }
         else{
             hidemonpic
-            msgbox("That wasn't supposed to happen")
         }
-    }
-    else{
-        hidemonpic
-    }
     waitmessage
     releaseall
     end
@@ -1066,32 +1260,129 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter{
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter{
     lockall
-    showmonpic(SPECIES_MUDKIP,10,3)
-    msgbox("Do you want to choose Mudkip?",MSGBOX_YESNO)
-    if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_MUDKIP,10,ITEM_NUGGET)
-        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+    setvar(VAR_TEMP_7, NO)
+    switch(var(VAR_TEMP_8)){
+        case 0:
+            msgbox(format("Better go speak with Prof. Birch before taking a Pokemon."))
+                waitmessage
+                releaseall
+                return
+        case 1:
+            showmonpic(SPECIES_SQUIRTLE,10,3)
+            msgbox(format("Do you want to choose Squirtle?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_SQUIRTLE,5)
+                msgbox("Received Squirtle!")}
+        case 2:
+            showmonpic(SPECIES_TOTODILE,10,3)
+            msgbox(format("Do you want to choose Totodile?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_TOTODILE,5)
+                msgbox("Received Totodile!")}
+        case 3:
+            showmonpic(SPECIES_MUDKIP,10,3)
+            msgbox(format("Do you want to choose Mudkip?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_MUDKIP,5)
+                msgbox("Received Mudkip!")}
+        case 4:
+            showmonpic(SPECIES_PIPLUP,10,3)
+            msgbox(format("Do you want to choose Piplup?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_PIPLUP,5)     
+                msgbox("Received Piplup!")}
+        case 5:
+            showmonpic(SPECIES_OSHAWOTT,10,3)
+            msgbox(format("Do you want to choose Oshawott?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_OSHAWOTT,5)      
+                msgbox("Received Oshawott!")}
+        case 6:
+            showmonpic(SPECIES_FROAKIE,10,3)
+            msgbox(format("Do you want to choose Froakie?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_FROAKIE,5)                       
+                msgbox("Received Froakie!")}
+        case 7:
+            showmonpic(SPECIES_POPPLIO,10,3)
+            msgbox(format("Do you want to choose Popplio?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_POPPLIO,5)       
+                msgbox("Received Popplio!")}
+        case 8:
+            showmonpic(SPECIES_SOBBLE,10,3)
+            msgbox(format("Do you want to choose Sobble?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_SOBBLE,5)      
+                msgbox("Received Sobble!")}
+        case 9:
+            showmonpic(SPECIES_QUAXLY,10,3)
+            msgbox(format("Do you want to choose Quaxly?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_QUAXLY,5)    
+                msgbox("Received Quaxly!")}
+        case 10:
+            showmonpic(SPECIES_OSHAWOTT,10,3)
+            msgbox(format("Do you want to choose Oshawott?"),MSGBOX_YESNO)
+            copyvar(VAR_TEMP_7,VAR_RESULT)
+            if(var(VAR_TEMP_7) == YES){
+                givemon(SPECIES_OSHAWOTT,5)      
+                msgbox("Received Oshawott!")}                
+        default:
+            msgbox(format("Better go speak with Prof. Birch before taking a Pokemon."))
+            waitmessage
+            releaseall
+            return
+    }
+        if(var(VAR_TEMP_7) == YES){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Received Mudkip!")
             hidemonpic
-            removeobject(7)
-            removeobject(8)
-            removeobject(9)
-            setflag(FLAG_GRASS_STARTER_REMOVED)
+            removeobject(GRASS_STARTER_BALL)
+            removeobject(FIRE_STARTER_BALL)
+            removeobject(WATER_STARTER_BALL)
+            setflag(FLAG_REMOVE_LAB_STARTERS)
             call(NicknamePartyMon)
-            setvar(VAR_STARTER_MON, 0)
+            setvar(VAR_STARTER_MON, 2)
+            call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
         }
         else{
             hidemonpic
-            msgbox("That wasn't supposed to happen")
         }
-    }
-    else{
-        hidemonpic
-    }
     waitmessage
     releaseall
     end
+}
+
+script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
+    setflag (FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE)
+	setflag (FLAG_SYS_POKEMON_GET)
+    setflag (FLAG_ADVENTURE_STARTED)
+	setflag (FLAG_RESCUED_BIRCH)
+    setflag (FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+    setflag (FLAG_HIDE_OLDALE_TOWN_RIVAL)
+	setvar(VAR_ROUTE101_STATE, 3)
+	clearflag (FLAG_HIDE_MAP_NAME_POPUP)
+    setvar (VAR_OLDALE_TOWN_STATE, 1)
+	setvar (VAR_LITTLEROOT_RIVAL_STATE, 4)
+    setflag (FLAG_SYS_POKEDEX_GET)
+	special (SetUnlockedPokedexFlags)
+	setflag (FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+	setvar (VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
+    setflag (FLAG_SYS_NATIONAL_DEX)
+	special (EnableNationalPokedex)
+    setvar(VAR_BIRCH_LAB_STATE, 5)
+	setvar (VAR_LITTLEROOT_TOWN_STATE, 3)
+    //call(LittlerootTown_ProfessorBirchsLab_EventScript_RemoveRivalIntroFlag)
+    return
 }
 
 script NicknamePartyMon{
@@ -1100,4 +1391,6 @@ script NicknamePartyMon{
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
+    return
+
 }
