@@ -274,15 +274,15 @@ LittlerootTown_ProfessorBirchsLab_Movement_PlayerEnterLabForJohtoStarter:
 	walk_up
 	step_end
 
-LittlerootTown_ProfessorBirchsLab_EventScript_Aide::
-	lock
-	faceplayer
-	goto_if_ge VAR_BIRCH_LAB_STATE, 3, LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter
-	goto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT
-	setflag FLAG_BIRCH_AIDE_MET
-	release
-	end
+//LittlerootTown_ProfessorBirchsLab_EventScript_Aide::
+//	lock
+//	faceplayer
+//	goto_if_ge VAR_BIRCH_LAB_STATE, 3, LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter
+//	goto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet
+//	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT
+//	setflag FLAG_BIRCH_AIDE_MET
+//	release
+//	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_DEFAULT
@@ -1385,8 +1385,8 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
     setvar (VAR_OLDALE_TOWN_STATE, 1)
 	setvar (VAR_LITTLEROOT_RIVAL_STATE, 4)
 	msgbox ("Prof. Birch: With that choice, {PLAYER},\nyou have begun your Pokémon journey!\pPlease take this Pokédex too, to record\nall of the Pokémon you encounter.")
-    msgbox ("Received Pokédex!")
     playfanfare(MUS_OBTAIN_ITEM)
+    msgbox ("Received Pokédex!")
 	waitfanfare
 	closemessage
 	setflag (FLAG_SYS_POKEDEX_GET)
@@ -1398,8 +1398,12 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	msgbox ("Prof. Birch: You will also need these\nPokéballs, in order to catch new\lPokémon to add to your team.")
 	giveitem(ITEM_POKE_BALL, 5)
 	closemessage
+	msgbox (format("Prof. Birch: And this bag full of Rare Candies will help you train the Pokémon you catch."))
+	giveitem(ITEM_CANDY_BAG)
+	closemessage
     setvar(VAR_BIRCH_LAB_STATE, 5)
 	setvar (VAR_LITTLEROOT_TOWN_STATE, 3)
+	msgbox (format("Prof. Birch: Double battles are the standard format in Hoenn now, so you should hurry and catch another Pokémon. {RIVAL} is waiting in Oldale Town to see you off."))
     //call(LittlerootTown_ProfessorBirchsLab_EventScript_RemoveRivalIntroFlag)
 	setflag(FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH) //this is a second (original) Birch sprite in the lab, I do not use
     return
@@ -1424,4 +1428,12 @@ movement BirchApproachGivePokedex_FireStarter{
 
 movement BirchApproachGivePokedex_WaterStarter{
 	face_left
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_Aide{
+	lock
+	faceplayer
+	msgbox(format("Hello, {PLAYER}! Professor Birch is very excited about your Pokémon journey."))
+	release
+	end
 }
