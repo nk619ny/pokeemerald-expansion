@@ -183,33 +183,33 @@ LittlerootTown_BrendansHouse_1F_EventScript_PetalburgGymReport::
 # 92 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 LittlerootTown_BrendansHouse_1F_EventScript_YoureNewNeighbor::
 # 93 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	lockall
+//	lockall
 # 94 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	playse SE_PIN
+//	playse SE_PIN
 # 95 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	applymovement LOCALID_RIVAL_MOM, Common_Movement_ExclamationMark
+//	applymovement LOCALID_RIVAL_MOM, Common_Movement_ExclamationMark
 # 96 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 97 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	applymovement LOCALID_RIVAL_MOM, Common_Movement_Delay48
+//	applymovement LOCALID_RIVAL_MOM, Common_Movement_Delay48
 # 98 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 99 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+//	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 100 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	applymovement LOCALID_RIVAL_MOM, LittlerootTown_BrendansHouse_1F_Movement_RivalMomApproach
+//	applymovement LOCALID_RIVAL_MOM, LittlerootTown_BrendansHouse_1F_Movement_RivalMomApproach
 # 101 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 102 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	special GetRivalSonDaughterString
+//	special GetRivalSonDaughterString
 # 103 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
+//	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
 # 104 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	setflag FLAG_MET_RIVAL_MOM
 # 105 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 2
 # 106 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	releaseall
+//	releaseall
 # 107 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	end
 # 108 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"

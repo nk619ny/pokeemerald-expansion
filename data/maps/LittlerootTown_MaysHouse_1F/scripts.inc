@@ -181,33 +181,33 @@ LittlerootTown_MaysHouse_1F_EventScript_PetalburgGymReport::
 # 91 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor::
 # 92 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	lockall
+//	lockall
 # 93 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	playse SE_PIN
+//	playse SE_PIN
 # 94 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	applymovement LOCALID_RIVAL_MOM, Common_Movement_ExclamationMark
+//	applymovement LOCALID_RIVAL_MOM, Common_Movement_ExclamationMark
 # 95 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 96 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	applymovement LOCALID_RIVAL_MOM, Common_Movement_Delay48
+//	applymovement LOCALID_RIVAL_MOM, Common_Movement_Delay48
 # 97 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 98 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+//	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 # 99 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	applymovement LOCALID_RIVAL_MOM, LittlerootTown_MaysHouse_1F_Movement_RivalMomApproach
+//	applymovement LOCALID_RIVAL_MOM, LittlerootTown_MaysHouse_1F_Movement_RivalMomApproach
 # 100 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 101 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	special GetRivalSonDaughterString
+//	special GetRivalSonDaughterString
 # 102 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
+//	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
 # 103 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	setflag FLAG_MET_RIVAL_MOM
 # 104 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 2
 # 105 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	releaseall
+//	releaseall
 # 106 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	end
 # 107 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"

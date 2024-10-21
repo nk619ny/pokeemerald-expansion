@@ -1030,7 +1030,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen{
     faceplayer
     if(!flag(FLAG_REMOVE_LAB_STARTERS)){
         if(var(VAR_TEMP_8) == 0) {
-            msgbox("Ah, hello {PLAYER}!\lI heard you were going to begin your\njourney as a Pokemon Trainer today.")
+            msgbox("Prof. Birch: Ah, hello {PLAYER}!\lI heard you were going to begin your\njourney as a Pokemon Trainer today.")
         }
         message(format("What region would you like to choose your starter Pokemon from?"))
         dynmultichoice(25,3,1,4,2,DYN_MULTICHOICE_CB_NONE,"Kanto","Johto","Hoenn","Sinnoh","Unova","Kalos","Alola","Galar","Paldea","Hisui")
@@ -1142,8 +1142,11 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter{
             setflag(FLAG_REMOVE_LAB_STARTERS)
             call(NicknamePartyMon)
             setvar(VAR_STARTER_MON, 0)
+			closemessage
+			delay(20)
+			applymovement(INTRO_BIRCH_ID,BirchApproachGivePokedex_GrassStarter)
+			waitmovement(0)
             call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
-
         }
         else{
             hidemonpic
@@ -1152,6 +1155,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter{
     releaseall
     end
 }
+
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter{
     lockall
@@ -1247,8 +1251,11 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter{
             setflag(FLAG_REMOVE_LAB_STARTERS)
             call(NicknamePartyMon)
             setvar(VAR_STARTER_MON, 1)
+			closemessage
+			delay(20)
+			applymovement(INTRO_BIRCH_ID,BirchApproachGivePokedex_FireStarter)
+			waitmovement(0)
             call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
-
         }
         else{
             hidemonpic
@@ -1352,6 +1359,10 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter{
             setflag(FLAG_REMOVE_LAB_STARTERS)
             call(NicknamePartyMon)
             setvar(VAR_STARTER_MON, 2)
+			closemessage
+			delay(20)
+			applymovement(INTRO_BIRCH_ID,BirchApproachGivePokedex_WaterStarter)
+			waitmovement(0)
             call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
         }
         else{
@@ -1373,15 +1384,24 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	clearflag (FLAG_HIDE_MAP_NAME_POPUP)
     setvar (VAR_OLDALE_TOWN_STATE, 1)
 	setvar (VAR_LITTLEROOT_RIVAL_STATE, 4)
-    setflag (FLAG_SYS_POKEDEX_GET)
+	msgbox ("Prof. Birch: With that choice, {PLAYER},\nyou have begun your Pokémon journey!\pPlease take this Pokédex too, to record\nall of the Pokémon you encounter.")
+    msgbox ("Received Pokédex!")
+    playfanfare(MUS_OBTAIN_ITEM)
+	waitfanfare
+	closemessage
+	setflag (FLAG_SYS_POKEDEX_GET)
 	special (SetUnlockedPokedexFlags)
 	setflag (FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
 	setvar (VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
     setflag (FLAG_SYS_NATIONAL_DEX)
 	special (EnableNationalPokedex)
+	msgbox ("Prof. Birch: You will also need these\nPokéballs, in order to catch new\lPokémon to add to your team.")
+	giveitem(ITEM_POKE_BALL, 5)
+	closemessage
     setvar(VAR_BIRCH_LAB_STATE, 5)
 	setvar (VAR_LITTLEROOT_TOWN_STATE, 3)
     //call(LittlerootTown_ProfessorBirchsLab_EventScript_RemoveRivalIntroFlag)
+	setflag(FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH) //this is a second (original) Birch sprite in the lab, I do not use
     return
 }
 
@@ -1392,5 +1412,16 @@ script NicknamePartyMon{
         call(Common_EventScript_NameReceivedPartyMon)
     }
     return
+}
 
+movement BirchApproachGivePokedex_GrassStarter{
+	walk_left * 2
+}
+
+movement BirchApproachGivePokedex_FireStarter{
+	walk_left
+}
+
+movement BirchApproachGivePokedex_WaterStarter{
+	face_left
 }
