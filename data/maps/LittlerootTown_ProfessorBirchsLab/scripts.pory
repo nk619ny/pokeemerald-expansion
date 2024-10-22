@@ -1146,6 +1146,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter{
 			delay(20)
 			applymovement(INTRO_BIRCH_ID,BirchApproachGivePokedex_GrassStarter)
 			waitmovement(0)
+			turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
             call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
         }
         else{
@@ -1255,6 +1256,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter{
 			delay(20)
 			applymovement(INTRO_BIRCH_ID,BirchApproachGivePokedex_FireStarter)
 			waitmovement(0)
+			turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
             call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
         }
         else{
@@ -1363,6 +1365,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter{
 			delay(20)
 			applymovement(INTRO_BIRCH_ID,BirchApproachGivePokedex_WaterStarter)
 			waitmovement(0)
+			turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
             call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
         }
         else{
@@ -1403,6 +1406,7 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	closemessage
     setvar(VAR_BIRCH_LAB_STATE, 5)
 	setvar (VAR_LITTLEROOT_TOWN_STATE, 3)
+	setvar(VAR_OLDALE_RIVAL_STATE,0)
 	msgbox (format("Prof. Birch: Double battles are the standard format in Hoenn now, so you should hurry and catch another Pokémon. {RIVAL} is waiting in Oldale Town to see you off."))
     //call(LittlerootTown_ProfessorBirchsLab_EventScript_RemoveRivalIntroFlag)
 	setflag(FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH) //this is a second (original) Birch sprite in the lab, I do not use

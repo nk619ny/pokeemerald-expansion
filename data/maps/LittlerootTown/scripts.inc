@@ -139,7 +139,7 @@ LittlerootTown_EventScript_MoveRivalFromOldale::
 # 70 "data/maps/LittlerootTown/scripts.pory"
 	setvar VAR_OLDALE_RIVAL_STATE, 2
 # 71 "data/maps/LittlerootTown/scripts.pory"
-	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
+//	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
 # 72 "data/maps/LittlerootTown/scripts.pory"
 	return
 # 73 "data/maps/LittlerootTown/scripts.pory"

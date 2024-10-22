@@ -9,6 +9,7 @@ Route101_MapScripts::
 
 Route101_OnTransition:
 	call ProfBirch_EventScript_UpdateLocation
+	call Common_EventScript_SetupRivalGfxId
 	end
 
 Route101_OnFrame:
@@ -302,3 +303,94 @@ Route101_Text_RouteSign:
 	.string "{UP_ARROW} OLDALE TOWN$"
 
 `
+
+// Sets constants to use for Object IDs 
+const LOCALID_RIVAL = 4
+
+script Route101_EventScript_RivalFirstBattle {
+	waitmovement(0)
+	checkplayergender
+	goto_if_eq(VAR_RESULT,MALE,Route101_MayBattle)
+	goto_if_eq(VAR_RESULT,FEMALE,Route101_BrendanBattle)
+}
+
+script Route101_EventScript_RivalTrigger2 {
+	lock
+	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(LOCALID_RIVAL, Route101_RivalApproachPlayer2)
+	waitmovement(0)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_WEST)
+	call (Route101_EventScript_RivalFirstBattle)
+}
+
+script Route101_EventScript_RivalTrigger1 {
+	lock
+	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(LOCALID_RIVAL, Route101_RivalApproachPlayer1)
+	waitmovement(0)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_WEST)
+	call (Route101_EventScript_RivalFirstBattle)
+}
+
+script Route101_EventScript_RivalTrigger0 {
+	lock
+	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_WEST)
+	call (Route101_EventScript_RivalFirstBattle)
+}
+
+script Route101_MayBattle {
+	playbgm(MUS_ENCOUNTER_MAY,TRUE)
+	switch (var(VAR_STARTER_MON)){
+		case 0:
+			trainerbattle_single(TRAINER_MAY_ROUTE_103_TREECKO,Route103_Text_MayLetsBattle,Route103_Text_MayDefeated,Route101_RivalDefeated)
+		case 1:
+			trainerbattle_single(TRAINER_MAY_ROUTE_103_TORCHIC,Route103_Text_MayLetsBattle,Route103_Text_MayDefeated,Route101_RivalDefeated)
+		case 2:
+			trainerbattle_single(TRAINER_MAY_ROUTE_103_MUDKIP,Route103_Text_MayLetsBattle,Route103_Text_MayDefeated,Route101_RivalDefeated)
+	}
+	end
+}
+
+script Route101_BrendanBattle {
+	playbgm(MUS_ENCOUNTER_BRENDAN,TRUE)
+	switch (var(VAR_STARTER_MON)){
+		case 0:
+			trainerbattle_single(TRAINER_BRENDAN_ROUTE_103_TREECKO,Route103_Text_BrendanLetsBattle,Route103_Text_BrendanDefeated,Route101_RivalDefeated)
+		case 1:
+			trainerbattle_single(TRAINER_BRENDAN_ROUTE_103_TORCHIC,Route103_Text_BrendanLetsBattle,Route103_Text_BrendanDefeated,Route101_RivalDefeated)
+		case 2:
+			trainerbattle_single(TRAINER_BRENDAN_ROUTE_103_MUDKIP,Route103_Text_BrendanLetsBattle,Route103_Text_BrendanDefeated,Route101_RivalDefeated)
+	}
+	end
+}
+
+script Route101_RivalDefeated {
+	lockall
+	msgbox(format("Looks like you're very ready to be a Pokémon Trainer! I'm looking forward to seeing you out there."))
+	waitmessage
+	applymovement(LOCALID_RIVAL,Route101_RivalDeparture)
+	waitmovement(0)
+	removeobject(LOCALID_RIVAL)
+	setflag(FLAG_HIDE_ROUTE_103_RIVAL)
+	setflag(FLAG_DEFEATED_RIVAL_ROUTE103)
+	setvar(VAR_OLDALE_RIVAL_STATE,2)
+	releaseall
+}
+
+movement Route101_RivalApproachPlayer2 {
+	walk_right * 2
+}
+
+movement Route101_RivalApproachPlayer1 {
+	walk_right
+}
+
+movement Route101_RivalDeparture {
+	walk_up * 2
+	walk_right *  1
+	walk_up * 7
+}

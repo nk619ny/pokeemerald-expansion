@@ -285,19 +285,19 @@ Route103_EventScript_RivalEnd::
 # 143 "data/maps/Route103/scripts.pory"
 	removeobject LOCALID_RIVAL
 # 144 "data/maps/Route103/scripts.pory"
-	setvar VAR_BIRCH_LAB_STATE, 4
+//	setvar VAR_BIRCH_LAB_STATE, 4
 # 145 "data/maps/Route103/scripts.pory"
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
+//	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 # 146 "data/maps/Route103/scripts.pory"
 	setflag FLAG_DEFEATED_RIVAL_ROUTE103
 # 147 "data/maps/Route103/scripts.pory"
-	setvar VAR_OLDALE_RIVAL_STATE, 1
+//	setvar VAR_OLDALE_RIVAL_STATE, 1
 # 148 "data/maps/Route103/scripts.pory"
-	clearflag FLAG_HIDE_OLDALE_TOWN_RIVAL
+//	clearflag FLAG_HIDE_OLDALE_TOWN_RIVAL
 # 149 "data/maps/Route103/scripts.pory"
-	savebgm MUS_DUMMY
+//	savebgm MUS_DUMMY
 # 150 "data/maps/Route103/scripts.pory"
-	fadedefaultbgm
+//	fadedefaultbgm
 # 151 "data/maps/Route103/scripts.pory"
 	releaseall
 # 152 "data/maps/Route103/scripts.pory"

@@ -276,13 +276,13 @@ OldaleTown_EventScript_ShowBrendanMessage::
 
 OldaleTown_EventScript_RivalFinish::
 	closemessage
-	call_if_eq VAR_0x8009, 0, OldaleTown_EventScript_DoExitMovement1
-	call_if_eq VAR_0x8009, 1, OldaleTown_EventScript_DoExitMovement2
-	applymovement LOCALID_RIVAL, OldaleTown_Movement_RivalExit
-	waitmovement 0
+//	call_if_eq VAR_0x8009, 0, OldaleTown_EventScript_DoExitMovement1
+//	call_if_eq VAR_0x8009, 1, OldaleTown_EventScript_DoExitMovement2
+//	applymovement LOCALID_RIVAL, OldaleTown_Movement_RivalExit
+//	waitmovement 0
 	removeobject LOCALID_RIVAL
-	setvar VAR_OLDALE_RIVAL_STATE, 2
-	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
+//	setvar VAR_OLDALE_RIVAL_STATE, 2
+//	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
 	releaseall
 	end
 

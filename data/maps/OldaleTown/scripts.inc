@@ -555,19 +555,19 @@ OldaleTown_EventScript_RivalFinish::
 # 278 "data/maps/OldaleTown/scripts.pory"
 	closemessage
 # 279 "data/maps/OldaleTown/scripts.pory"
-	call_if_eq VAR_0x8009, 0, OldaleTown_EventScript_DoExitMovement1
+//	call_if_eq VAR_0x8009, 0, OldaleTown_EventScript_DoExitMovement1
 # 280 "data/maps/OldaleTown/scripts.pory"
-	call_if_eq VAR_0x8009, 1, OldaleTown_EventScript_DoExitMovement2
+//	call_if_eq VAR_0x8009, 1, OldaleTown_EventScript_DoExitMovement2
 # 281 "data/maps/OldaleTown/scripts.pory"
-	applymovement LOCALID_RIVAL, OldaleTown_Movement_RivalExit
+//	applymovement LOCALID_RIVAL, OldaleTown_Movement_RivalExit
 # 282 "data/maps/OldaleTown/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 283 "data/maps/OldaleTown/scripts.pory"
 	removeobject LOCALID_RIVAL
 # 284 "data/maps/OldaleTown/scripts.pory"
-	setvar VAR_OLDALE_RIVAL_STATE, 2
+//	setvar VAR_OLDALE_RIVAL_STATE, 2
 # 285 "data/maps/OldaleTown/scripts.pory"
-	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
+//	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
 # 286 "data/maps/OldaleTown/scripts.pory"
 	releaseall
 # 287 "data/maps/OldaleTown/scripts.pory"
