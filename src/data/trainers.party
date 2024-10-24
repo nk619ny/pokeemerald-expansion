@@ -256,11 +256,31 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
-Poochyena
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Croagunk @ Salac Berry  
+Ability: Poison Touch  
+Level: 12  
+- Belch  
+- Rock Smash  
+- Poison Sting  
+- Fake Out  
+
+Toedscool @ Oran Berry  
+Ability: Mycelium Might  
+Level: 11  
+- Bullet Seed  
+- Stun Spore  
+- Leech Seed  
+- Mud Shot  
+
+Carvanha @ Oran Berry  
+Ability: Rough Skin  
+Level: 12  
+- Bite  
+- Water Pulse  
+- Aqua Jet  
+- Poison Fang  
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -4973,41 +4993,69 @@ Class: Leader
 Pic: Leader Norman
 Gender: Male
 Music: Male
-Items: Hyper Potion / Hyper Potion
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
-Spinda
-Level: 27
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Teeter Dance
-- Psybeam
-- Facade
-- Encore
+Slaking  
+Ability: Slow Start  
+Level: 15  
+EVs: 92 Atk / 104 SpD / 252 Spe  
+Adamant Nature  
+- Slack Off  
+- Yawn  
+- Headbutt  
+- Stomping Tantrum  
 
-Vigoroth
-Level: 27
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Facade
-- Encore
-- Feint Attack
+Skitty @ Silk Scarf  
+Ability: Normalize  
+Level: 15  
+EVs: 236 Atk / 24 Def / 236 SpD / 12 Spe  
+Adamant Nature  
+- Fake Out  
+- Last Resort  
 
-Linoone
-Level: 29
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Belly Drum
-- Facade
-- Headbutt
+Spinda @ Salac Berry  
+Ability: Contrary  
+Level: 15  
+EVs: 252 HP / 4 Atk / 252 Spe  
+Serious Nature  
+- Superpower  
+- Psycho Boost  
+- Teeter Dance  
+- Baton Pass  
 
-Slaking @ Sitrus Berry
-Level: 31
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Counter
-- Yawn
-- Facade
-- Feint Attack
+Zigzagoon @ Aguav Berry  
+Ability: Gluttony  
+Level: 15  
+EVs: 244 HP / 252 Atk / 4 Def  
+Adamant Nature  
+- Belly Drum  
+- Quick Attack
+- Super Fang  
+- Rock Smash  
+
+Aipom @ Life Orb  
+Ability: Skill Link  
+Level: 15  
+EVs: 252 Atk / 236 Spe  
+Jolly Nature  
+- Tail Slap  
+- U-turn  
+- Pursuit  
+- Retaliate  
+
+Clefairy @ Eviolite  
+Ability: Friend Guard  
+Level: 15  
+EVs: 224 HP / 108 Def / 156 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Heal Pulse  
+- Follow Me  
+- Disarming Voice  
+- Reflect  
+
+
 
 === TRAINER_WINONA_1 ===
 Name: WINONA

@@ -1,14 +1,27 @@
+mapscripts PetalburgCity_Gym_MapScripts {
+	MAP_SCRIPT_ON_LOAD: PetalburgCity_Gym_OnLoad
+	MAP_SCRIPT_ON_TRANSITION: PetalburgCity_Gym_OnTransition
+	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE: PetalburgCity_Gym_OnWarp
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_PETALBURG_GYM_STATE, 0: PetalburgCity_Gym_EventScript_WallyNormanIntroNew
+	]
+}
+
 raw `
 .set LOCALID_NORMAN, 1
 .set LOCALID_WALLY, 10
 .set LOCALID_WALLYS_DAD, 11
 
-PetalburgCity_Gym_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, PetalburgCity_Gym_OnLoad
-	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_Gym_OnTransition
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, PetalburgCity_Gym_OnWarp
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_Gym_OnFrame
-	.byte 0
+//goto_if_eq VAR_PETALBURG_GYM_STATE, 0, PetalburgCity_Gym_EventScript_WallyNormanIntroNew
+
+//PetalburgCity_Gym_MapScripts::
+//	map_script MAP_SCRIPT_ON_LOAD, PetalburgCity_Gym_OnLoad
+//	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_Gym_OnTransition
+//	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, PetalburgCity_Gym_OnWarp
+//	map_script MAP_SCRIPT_ON_FRAME_TABLE, {
+//		VAR_PETALBURG_GYM_STATE, 0, PetalburgCity_Gym_EventScript_WallyNormanIntroNew
+//		}
+//	end
 
 PetalburgCity_Gym_OnLoad:
 	goto_if_eq VAR_PETALBURG_GYM_STATE, 6, PetalburgCity_Gym_EventScript_OpenUnlockedDoors
@@ -41,18 +54,8 @@ PetalburgCity_Gym_EventScript_UnlockAllDoors::
 	return
 
 PetalburgCity_Gym_OnTransition:
-	call_if_eq VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_MoveWallyToEntrance
-	call_if_lt VAR_PETALBURG_GYM_STATE, 6, PetalburgCity_Gym_EventScript_MoveNormanToEntrance
 	call_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_CheckNormanForRematch
 	end
-
-PetalburgCity_Gym_EventScript_MoveWallyToEntrance::
-	setobjectxyperm LOCALID_WALLY, 5, 108
-	return
-
-PetalburgCity_Gym_EventScript_MoveNormanToEntrance::
-	setobjectxyperm LOCALID_NORMAN, 4, 107
-	return
 
 PetalburgCity_Gym_EventScript_CheckNormanForRematch::
 	setorcopyvar VAR_TRAINER_BATTLE_OPPONENT_A, TRAINER_NORMAN_1
@@ -74,27 +77,28 @@ PetalburgCity_Gym_EventScript_TurnPlayerNorth::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
 
-PetalburgCity_Gym_OnFrame:
-	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial
-	.2byte 0
+//PetalburgCity_Gym_OnFrame:
+//	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial
+//	goto_if_eq VAR_PETALBURG_GYM_STATE, 0, PetalburgCity_Gym_EventScript_WallyNormanIntroNew
+//	end
 
 PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial::
 	lockall
-	msgbox PetalburgCity_Gym_Text_DadSoDidItWorkOut, MSGBOX_DEFAULT
-	msgbox PetalburgCity_Gym_Text_WallyThankYouBye, MSGBOX_DEFAULT
-	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitGym
-	waitmovement 0
-	playse SE_EXIT
-	removeobject LOCALID_WALLY
-	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
-	delay 30
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	msgbox PetalburgCity_Gym_Text_DadGoCollectBadges, MSGBOX_DEFAULT
-	setvar VAR_PETALBURG_GYM_STATE, 2
-	releaseall
+//	msgbox PetalburgCity_Gym_Text_DadSoDidItWorkOut, MSGBOX_DEFAULT
+//	msgbox PetalburgCity_Gym_Text_WallyThankYouBye, MSGBOX_DEFAULT
+//	closemessage
+//	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+//	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitGym
+//	waitmovement 0
+//	playse SE_EXIT
+//	removeobject LOCALID_WALLY
+//	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
+//	delay 30
+//	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+//	waitmovement 0
+//	msgbox PetalburgCity_Gym_Text_DadGoCollectBadges, MSGBOX_DEFAULT
+//	setvar VAR_PETALBURG_GYM_STATE, 2
+//	releaseall
 	end
 
 PetalburgCity_Gym_Movement_WallyExitGym:
@@ -108,20 +112,21 @@ PetalburgCity_Gym_EventScript_Norman::
 	lock
 	faceplayer
 	switch VAR_PETALBURG_GYM_STATE
-	case 2, PetalburgCity_Gym_EventScript_NormanNoBadges
+	case 1, PetalburgCity_Gym_EventScript_NormanGoWest
+	case 2, PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle
 	case 3, PetalburgCity_Gym_EventScript_NormanOneBadge
 	case 4, PetalburgCity_Gym_EventScript_NormanTwoBadges
 	case 5, PetalburgCity_Gym_EventScript_NormanThreeBadges
 	case 6, PetalburgCity_Gym_EventScript_NormanBattle
 	case 7, PetalburgCity_Gym_EventScript_NormanPostBattle
 	case 8, PetalburgCity_Gym_EventScript_NormanRematch
-	msgbox PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon, MSGBOX_DEFAULT
-	closemessage
-	switch VAR_FACING
-	case DIR_SOUTH, PetalburgCity_Gym_EventScript_BeginWallyTutorialSouth
-	case DIR_NORTH, PetalburgCity_Gym_EventScript_BeginWallyTutorialNorth
-	case DIR_WEST, PetalburgCity_Gym_EventScript_BeginWallyTutorialWest
-	case DIR_EAST, PetalburgCity_Gym_EventScript_BeginWallyTutorialEast
+//	msgbox PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon, MSGBOX_DEFAULT
+//	closemessage
+//	switch VAR_FACING
+//	case DIR_SOUTH, PetalburgCity_Gym_EventScript_BeginWallyTutorialSouth
+//	case DIR_NORTH, PetalburgCity_Gym_EventScript_BeginWallyTutorialNorth
+//	case DIR_WEST, PetalburgCity_Gym_EventScript_BeginWallyTutorialWest
+//	case DIR_EAST, PetalburgCity_Gym_EventScript_BeginWallyTutorialEast
 	end
 
 PetalburgCity_Gym_EventScript_BeginWallyTutorialSouth::
@@ -1595,3 +1600,72 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 	.string "with at least two POKéMON.$"
 
 `
+
+//script PetalburgCity_Gym_OnFrame {
+//	goto_if_eq(VAR_PETALBURG_GYM_STATE,0,PetalburgCity_Gym_EventScript_WallyNormanIntroNew)
+//}
+
+script PetalburgCity_Gym_EventScript_WallyNormanIntroNew {
+	setvar (VAR_PETALBURG_GYM_STATE, 1)
+	lockall
+	delay(10)
+	applymovement(LOCALID_WALLY, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	msgbox(format("I finally did it! I won!"))
+	msgbox(format("Dad: Well done, Wally.\pYou've trained your Pokémon well, and\ntoday you commanded them skillfully.\pYou are ready to take on the Hoenn\nLeague. I will let your parents know.\p"))
+	msgbox(format("Wally: Thanks, Norman! I've learned a lot from battling you. "))
+	waitmessage
+	applymovement(LOCALID_NORMAN, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	turnobject(LOCALID_WALLY, DIR_SOUTH)
+	msgbox(format("Dad: Ah, {PLAYER}!\pIt is wonderful to see you with Pokémon\nof your own.\p"))
+	msgbox(format("Let me introduce you to Wally, a new trainer like yourself, from here in Petalburg."))
+	msgbox(format("Wally: Hi, {PLAYER}! It's nice to meet you."))
+	turnobject(LOCALID_WALLY, DIR_NORTH)
+	waitmovement(0)
+	msgbox(format("Wally: Well, now that I've proven I'm ready, I'm finally going to leave Petalburg."))
+	turnobject(LOCALID_WALLY, DIR_SOUTH)
+	waitmovement(0)
+	msgbox(format("Wally: Hopefully I see you around, {PLAYER}."))
+	waitmessage
+	delay(20)
+	applymovement(LOCALID_WALLY, PetalburgCity_Gym_WallyLeave)
+	waitmovement(0)
+	removeobject(LOCALID_WALLY)
+	delay(30)
+	applymovement(OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_PlayerApproachNorman)
+	waitmovement(0)
+	delay(5)
+	msgbox(format("Dad: It makes me so proud that this moment has finally come, {PLAYER}. I would be honored to finally get the chance to have a Pokémon battle with my own child. Why don't you go out, catch a few more Pokémon, and prepare your team. Then come back, and I'll show you what a Gym Battle is like."))
+	waitmessage
+	setvar (VAR_PETALBURG_CITY_STATE, 3)
+	setvar (VAR_PETALBURG_GYM_STATE, 1)
+	setflag (FLAG_HIDE_PETALBURG_CITY_WALLY)
+	setflag (FLAG_HIDE_PETALBURG_GYM_WALLY)
+	releaseall
+	end
+}
+
+
+movement PetalburgCity_Gym_WallyLeave {
+	walk_right
+	walk_down * 3
+}
+
+movement PetalburgCity_Gym_PlayerApproachNorman {
+	walk_up * 3
+}
+
+script PetalburgCity_Gym_EventScript_NormanGoWest {
+	lockall
+	msgbox(format("Dad: Why don't you try heading West to Route 104? You can't get to Rustboro City right now, but there are still many Pokémon to find along the way."),MSGBOX_NPC)
+	releaseall
+	end
+}
+
+script PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle {
+	lockall
+	msgbox(format("Dad: So, {PLAYER}, have you found any more Pokémon?"),MSGBOX_NPC)
+	msgbox(format("Do you think you're ready for a Pokémon battle against me now?"),MSGBOX_YESNO)
+	end
+}

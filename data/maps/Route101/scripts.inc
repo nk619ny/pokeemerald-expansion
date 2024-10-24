@@ -653,130 +653,146 @@ Route101_EventScript_RivalTrigger1::
 	return
 
 
-Route101_MayBattle::
+Route101_EventScript_RivalTrigger0::
+# 338 "data/maps/Route101/scripts.pory"
+	lock
 # 339 "data/maps/Route101/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	applymovement 4, Common_Movement_ExclamationMark
 # 340 "data/maps/Route101/scripts.pory"
-	switch VAR_STARTER_MON
+	waitmovement 0
 # 341 "data/maps/Route101/scripts.pory"
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
+# 342 "data/maps/Route101/scripts.pory"
+	call Route101_EventScript_RivalFirstBattle
+	return
+
+
+Route101_MayBattle::
+# 346 "data/maps/Route101/scripts.pory"
+	playbgm MUS_ENCOUNTER_MAY, TRUE
+# 347 "data/maps/Route101/scripts.pory"
+	switch VAR_STARTER_MON
+# 348 "data/maps/Route101/scripts.pory"
 	case 0, Route101_MayBattle_3
-# 343 "data/maps/Route101/scripts.pory"
+# 350 "data/maps/Route101/scripts.pory"
 	case 1, Route101_MayBattle_4
-# 345 "data/maps/Route101/scripts.pory"
+# 352 "data/maps/Route101/scripts.pory"
 	case 2, Route101_MayBattle_5
 Route101_MayBattle_1:
 	end
 
 Route101_MayBattle_3:
-# 342 "data/maps/Route101/scripts.pory"
+# 349 "data/maps/Route101/scripts.pory"
 	trainerbattle_single TRAINER_MAY_ROUTE_103_TREECKO, Route103_Text_MayLetsBattle, Route103_Text_MayDefeated, Route101_RivalDefeated
 	goto Route101_MayBattle_1
 
 Route101_MayBattle_4:
-# 344 "data/maps/Route101/scripts.pory"
+# 351 "data/maps/Route101/scripts.pory"
 	trainerbattle_single TRAINER_MAY_ROUTE_103_TORCHIC, Route103_Text_MayLetsBattle, Route103_Text_MayDefeated, Route101_RivalDefeated
 	goto Route101_MayBattle_1
 
 Route101_MayBattle_5:
-# 346 "data/maps/Route101/scripts.pory"
+# 353 "data/maps/Route101/scripts.pory"
 	trainerbattle_single TRAINER_MAY_ROUTE_103_MUDKIP, Route103_Text_MayLetsBattle, Route103_Text_MayDefeated, Route101_RivalDefeated
 	goto Route101_MayBattle_1
 
 
 Route101_BrendanBattle::
-# 352 "data/maps/Route101/scripts.pory"
+# 359 "data/maps/Route101/scripts.pory"
 	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
-# 353 "data/maps/Route101/scripts.pory"
+# 360 "data/maps/Route101/scripts.pory"
 	switch VAR_STARTER_MON
-# 354 "data/maps/Route101/scripts.pory"
+# 361 "data/maps/Route101/scripts.pory"
 	case 0, Route101_BrendanBattle_3
-# 356 "data/maps/Route101/scripts.pory"
+# 363 "data/maps/Route101/scripts.pory"
 	case 1, Route101_BrendanBattle_4
-# 358 "data/maps/Route101/scripts.pory"
+# 365 "data/maps/Route101/scripts.pory"
 	case 2, Route101_BrendanBattle_5
 Route101_BrendanBattle_1:
 	end
 
 Route101_BrendanBattle_3:
-# 355 "data/maps/Route101/scripts.pory"
+# 362 "data/maps/Route101/scripts.pory"
 	trainerbattle_single TRAINER_BRENDAN_ROUTE_103_TREECKO, Route103_Text_BrendanLetsBattle, Route103_Text_BrendanDefeated, Route101_RivalDefeated
 	goto Route101_BrendanBattle_1
 
 Route101_BrendanBattle_4:
-# 357 "data/maps/Route101/scripts.pory"
+# 364 "data/maps/Route101/scripts.pory"
 	trainerbattle_single TRAINER_BRENDAN_ROUTE_103_TORCHIC, Route103_Text_BrendanLetsBattle, Route103_Text_BrendanDefeated, Route101_RivalDefeated
 	goto Route101_BrendanBattle_1
 
 Route101_BrendanBattle_5:
-# 359 "data/maps/Route101/scripts.pory"
+# 366 "data/maps/Route101/scripts.pory"
 	trainerbattle_single TRAINER_BRENDAN_ROUTE_103_MUDKIP, Route103_Text_BrendanLetsBattle, Route103_Text_BrendanDefeated, Route101_RivalDefeated
 	goto Route101_BrendanBattle_1
 
 
 Route101_RivalDefeated::
-# 365 "data/maps/Route101/scripts.pory"
-	lockall
-# 366 "data/maps/Route101/scripts.pory"
-	msgbox Route101_RivalDefeated_Text_0
-# 367 "data/maps/Route101/scripts.pory"
-	waitmessage
-# 368 "data/maps/Route101/scripts.pory"
-	applymovement 4, Route101_RivalDeparture
-# 369 "data/maps/Route101/scripts.pory"
-	waitmovement 0
-# 370 "data/maps/Route101/scripts.pory"
-	removeobject 4
-# 371 "data/maps/Route101/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_103_RIVAL
 # 372 "data/maps/Route101/scripts.pory"
-	setflag FLAG_DEFEATED_RIVAL_ROUTE103
+	lockall
 # 373 "data/maps/Route101/scripts.pory"
-	setvar VAR_OLDALE_RIVAL_STATE, 2
+	msgbox Route101_RivalDefeated_Text_0
 # 374 "data/maps/Route101/scripts.pory"
+	waitmessage
+# 375 "data/maps/Route101/scripts.pory"
+	applymovement 4, Route101_RivalDeparture
+# 376 "data/maps/Route101/scripts.pory"
+	waitmovement 0
+# 377 "data/maps/Route101/scripts.pory"
+	removeobject 4
+# 378 "data/maps/Route101/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_103_RIVAL
+# 379 "data/maps/Route101/scripts.pory"
+	setflag FLAG_DEFEATED_RIVAL_ROUTE103
+# 380 "data/maps/Route101/scripts.pory"
+	setvar VAR_OLDALE_RIVAL_STATE, 2
+# 381 "data/maps/Route101/scripts.pory"
+	setvar VAR_PETALBURG_GYM_STATE, 0
+# 382 "data/maps/Route101/scripts.pory"
 	releaseall
 	return
 
 
-# 377 "data/maps/Route101/scripts.pory"
-Route101_RivalApproachPlayer2:
-# 378 "data/maps/Route101/scripts.pory"
-	walk_right
-# 378 "data/maps/Route101/scripts.pory"
-	walk_right
-	step_end
-
-# 381 "data/maps/Route101/scripts.pory"
-Route101_RivalApproachPlayer1:
-# 382 "data/maps/Route101/scripts.pory"
-	walk_right
-	step_end
-
 # 385 "data/maps/Route101/scripts.pory"
-Route101_RivalDeparture:
+Route101_RivalApproachPlayer2:
 # 386 "data/maps/Route101/scripts.pory"
-	walk_up
-# 386 "data/maps/Route101/scripts.pory"
-	walk_up
-# 387 "data/maps/Route101/scripts.pory"
 	walk_right
-# 388 "data/maps/Route101/scripts.pory"
+# 386 "data/maps/Route101/scripts.pory"
+	walk_right
+	step_end
+
+# 389 "data/maps/Route101/scripts.pory"
+Route101_RivalApproachPlayer1:
+# 390 "data/maps/Route101/scripts.pory"
+	walk_right
+	step_end
+
+# 393 "data/maps/Route101/scripts.pory"
+Route101_RivalDeparture:
+# 394 "data/maps/Route101/scripts.pory"
 	walk_up
-# 388 "data/maps/Route101/scripts.pory"
+# 394 "data/maps/Route101/scripts.pory"
 	walk_up
-# 388 "data/maps/Route101/scripts.pory"
+# 395 "data/maps/Route101/scripts.pory"
+	walk_right
+# 396 "data/maps/Route101/scripts.pory"
 	walk_up
-# 388 "data/maps/Route101/scripts.pory"
+# 396 "data/maps/Route101/scripts.pory"
 	walk_up
-# 388 "data/maps/Route101/scripts.pory"
+# 396 "data/maps/Route101/scripts.pory"
 	walk_up
-# 388 "data/maps/Route101/scripts.pory"
+# 396 "data/maps/Route101/scripts.pory"
 	walk_up
-# 388 "data/maps/Route101/scripts.pory"
+# 396 "data/maps/Route101/scripts.pory"
+	walk_up
+# 396 "data/maps/Route101/scripts.pory"
+	walk_up
+# 396 "data/maps/Route101/scripts.pory"
 	walk_up
 	step_end
 
 Route101_RivalDefeated_Text_0:
-# 366 "data/maps/Route101/scripts.pory"
-	.string "Looks like you're more than ready to be\n"
-	.string "a Pokémon Trainer! I'm excited to see\l"
-	.string "you out there.$"
+# 373 "data/maps/Route101/scripts.pory"
+	.string "Looks like you're very ready to be a\n"
+	.string "Pokémon Trainer! I'm looking forward to\l"
+	.string "seeing you out there.$"
