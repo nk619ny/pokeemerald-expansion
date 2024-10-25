@@ -283,19 +283,19 @@ RivalsHouse_1F_EventScript_GoHomeEverySoOften::
 # 142 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 
 # 143 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-RivalsHouse_1F_EventScript_RivalSibling::
+//RivalsHouse_1F_EventScript_RivalSibling::
 # 144 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	lock
+//	lock
 # 145 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	faceplayer
+//	faceplayer
 # 146 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	special GetPlayerBigGuyGirlString
+//	special GetPlayerBigGuyGirlString
 # 147 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_Text_DoYouHavePokemon, MSGBOX_DEFAULT
+//	msgbox RivalsHouse_1F_Text_DoYouHavePokemon, MSGBOX_DEFAULT
 # 148 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	release
+//	release
 # 149 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	end
+//	end
 # 150 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 
 # 151 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
@@ -818,3 +818,55 @@ RivalsHouse_1F_Text_DoYouHavePokemon:
 	.string "Do you already have your\n"
 # 410 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	.string "own POKéMON?$"
+
+RivalsHouse_1F_EventScript_RivalSibling::
+# 414 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	lock
+# 415 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	faceplayer
+# 416 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_SHINY_CHARM, RivalsHouse_1F_EventScript_RivalSibling_2
+# 428 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox RivalsHouse_1F_EventScript_RivalSibling_Text_3
+RivalsHouse_1F_EventScript_RivalSibling_1:
+# 430 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	waitmessage
+# 431 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	release
+	end
+
+RivalsHouse_1F_EventScript_RivalSibling_2:
+# 417 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox RivalsHouse_1F_EventScript_RivalSibling_Text_0, MSGBOX_YESNO
+# 418 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq RivalsHouse_1F_EventScript_RivalSibling_5
+# 424 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox RivalsHouse_1F_EventScript_RivalSibling_Text_2
+	goto RivalsHouse_1F_EventScript_RivalSibling_1
+
+RivalsHouse_1F_EventScript_RivalSibling_5:
+# 419 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox RivalsHouse_1F_EventScript_RivalSibling_Text_1
+# 420 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	giveitem ITEM_SHINY_CHARM
+# 421 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	setflag FLAG_RECEIVED_SHINY_CHARM
+	goto RivalsHouse_1F_EventScript_RivalSibling_1
+
+
+RivalsHouse_1F_EventScript_RivalSibling_Text_0:
+# 417 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "Do you like colorful things?$"
+
+RivalsHouse_1F_EventScript_RivalSibling_Text_1:
+# 419 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "I like colorful things, too!$"
+
+RivalsHouse_1F_EventScript_RivalSibling_Text_2:
+# 424 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "Aw...$"
+
+RivalsHouse_1F_EventScript_RivalSibling_Text_3:
+# 428 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "I like colorful things.$"

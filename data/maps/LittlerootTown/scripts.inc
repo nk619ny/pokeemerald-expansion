@@ -2072,7 +2072,6 @@ LittlerootTown_EventScript_MomGiveOldRod_Text_0:
 
 LittlerootTown_EventScript_MomGiveOldRod_Text_1:
 # 1035 "data/maps/LittlerootTown/scripts.pory"
-	.string "Mom: I'm pretty sure there are better\n"
-	.string "fishing rods out there, but this one\l"
-	.string "should help when you're getting\l"
-	.string "started.$"
+	.string "Mom: It's not the best quality fishing\n"
+	.string "rod, but it should help while you're\l"
+	.string "getting started.$"

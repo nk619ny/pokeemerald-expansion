@@ -323,7 +323,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION_HISUIAN}),
+                                {EVO_BEAUTY, 150, SPECIES_TYPHLOSION_HISUIAN}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8

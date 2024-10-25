@@ -140,13 +140,13 @@ RivalsHouse_1F_EventScript_GoHomeEverySoOften::
 	release
 	end
 
-RivalsHouse_1F_EventScript_RivalSibling::
-	lock
-	faceplayer
-	special GetPlayerBigGuyGirlString
-	msgbox RivalsHouse_1F_Text_DoYouHavePokemon, MSGBOX_DEFAULT
-	release
-	end
+//RivalsHouse_1F_EventScript_RivalSibling::
+//	lock
+//	faceplayer
+//	special GetPlayerBigGuyGirlString
+//	msgbox RivalsHouse_1F_Text_DoYouHavePokemon, MSGBOX_DEFAULT
+//	release
+//	end
 
 LittlerootTown_MaysHouse_1F_EventScript_GoSeeRoom::
 	lockall
@@ -409,3 +409,25 @@ RivalsHouse_1F_Text_DoYouHavePokemon:
 	.string "Do you already have your\n"
 	.string "own POKéMON?$"
 `
+
+script RivalsHouse_1F_EventScript_RivalSibling {
+	lock
+	faceplayer
+	if(!flag(FLAG_RECEIVED_SHINY_CHARM)){
+		msgbox(format("Do you like colorful things?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT)==YES) {
+			msgbox("I like colorful things, too!")
+			giveitem(ITEM_SHINY_CHARM)
+			setflag(FLAG_RECEIVED_SHINY_CHARM)
+		} 
+		else {
+			msgbox("Aw...")
+		}
+	}
+	else{
+		msgbox("I like colorful things.")
+	}
+	waitmessage
+	release
+	end
+}

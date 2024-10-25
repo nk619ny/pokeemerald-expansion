@@ -2981,7 +2981,7 @@ ProfessorBirchsLab_EventScript_RevisedIntroSequence::
 # 1410 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	closemessage
 # 1411 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_LEVEL_CAP, 16
+	setvar VAR_LEVEL_CAP, 80
 # 1412 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_BIRCH_LAB_STATE, 5
 # 1413 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
