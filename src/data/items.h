@@ -689,7 +689,7 @@ const struct Item gItemsInfo[] =
             "Fully restores the\n"
             "HP and status of a\n"
             "Pokémon."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_HEAL_AND_CURE_STATUS,
@@ -14094,6 +14094,22 @@ const struct Item gItemsInfo[] =
         .effect = gItemEffect_RareCandy,
         .iconPic = gItemIcon_RareCandy,
         .iconPalette = gItemIconPalette_RareCandy,
+    },
+
+    [ITEM_UNLIMITED_REPEL] =
+    {
+        .name = _("Unlimited Repel"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Repels all wild\n"
+            "Pokémon while\n"
+            "activated."),
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_UnlimitedRepel,
+        .iconPic = gItemIcon_Repel,
+        .iconPalette = gItemIconPalette_MaxRepel,
     },
 };
 

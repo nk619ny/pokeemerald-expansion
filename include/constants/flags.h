@@ -653,8 +653,8 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
 #define FLAG_REMOVE_LAB_STARTERS  0x264 // NK Flag for starter selection
-#define FLAG_FIRE_STARTER_REMOVED  0x265 // Unused Flag
-#define FLAG_WATER_STARTER_REMOVED  0x266 // Unused Flag
+#define FLAG_NO_BAG_ITEMS_IN_BATTLE  0x265 // formerly not used
+#define FLAG_PREVENT_WILD_ENCOUNTERS  0x266 // formerly not used
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag

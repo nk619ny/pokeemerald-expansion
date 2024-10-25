@@ -1383,6 +1383,7 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	setflag (FLAG_RESCUED_BIRCH)
     setflag (FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
     setflag (FLAG_HIDE_OLDALE_TOWN_RIVAL)
+	setflag (FLAG_NO_BAG_ITEMS_IN_BATTLE)
 	setvar(VAR_ROUTE101_STATE, 3)
 	clearflag (FLAG_HIDE_MAP_NAME_POPUP)
     setvar (VAR_OLDALE_TOWN_STATE, 1)
@@ -1401,12 +1402,17 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	msgbox ("Prof. Birch: You will also need these\nPokéballs, in order to catch new\lPokémon to add to your team.")
 	giveitem(ITEM_POKE_BALL, 5)
 	closemessage
-	msgbox (format("Prof. Birch: And this bag full of Rare Candies will help you train the Pokémon you catch."))
+	msgbox (format("Prof. Birch: And here are some utility items that will make your life as a Trainer much easier."))
 	giveitem(ITEM_CANDY_BAG)
+	giveitem(ITEM_ESCAPE_ROPE)
+	giveitem(ITEM_FULL_RESTORE)
+	giveitem(ITEM_UNLIMITED_REPEL)
 	closemessage
+	setvar(VAR_LEVEL_CAP,16)
     setvar(VAR_BIRCH_LAB_STATE, 5)
 	setvar (VAR_LITTLEROOT_TOWN_STATE, 3)
 	setvar(VAR_OLDALE_RIVAL_STATE,0)
+	setvar(VAR_PETALBURG_GYM_STATE,0)
 	msgbox (format("Prof. Birch: Double battles are the standard format in Hoenn now, so you should hurry and catch another Pokémon. {RIVAL} is waiting in Oldale Town to see you off."))
     //call(LittlerootTown_ProfessorBirchsLab_EventScript_RemoveRivalIntroFlag)
 	setflag(FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH) //this is a second (original) Birch sprite in the lab, I do not use

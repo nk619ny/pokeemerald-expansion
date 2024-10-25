@@ -255,7 +255,8 @@ const u8 gText_TheBattle[] = _("the battle");
 const u8 gText_ThePokemonList[] = _("the POKéMON LIST");
 const u8 gText_TheShop[] = _("the shop");
 const u8 gText_ThePC[] = _("the PC");
-
+const u8 gText_UnlimitedRepelOn[] = _("The Unlimited Repel was turned on.{PAUSE_UNTIL_PRESS}");
+const u8 gText_UnlimitedRepelOff[] = _("The Unlimited Repel was turned off.{PAUSE_UNTIL_PRESS}");
 const u8 *const gBagMenu_ReturnToStrings[] =
 {
     [ITEMMENULOCATION_FIELD]               = gText_TheField,

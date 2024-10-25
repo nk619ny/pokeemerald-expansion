@@ -4659,7 +4659,7 @@ void ItemUseCB_Medicine(u8 taskId, TaskFunc task)
         if (!IsItemFlute(item))
         {
             PlaySE(SE_USE_ITEM);
-            if (gPartyMenu.action != PARTY_ACTION_REUSABLE_ITEM)
+            if (gPartyMenu.action != PARTY_ACTION_REUSABLE_ITEM && item != ITEM_FULL_RESTORE)
                 RemoveBagItem(item, 1);
         }
         else
