@@ -114,7 +114,7 @@ PetalburgCity_Gym_EventScript_Norman::
 	switch VAR_PETALBURG_GYM_STATE
 	case 1, PetalburgCity_Gym_EventScript_NormanGoWest
 	case 2, PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle
-	case 3, PetalburgCity_Gym_EventScript_NormanOneBadge
+	case 3, PetalburgCity_Gym_EventScript_NormanPostBattle
 	case 4, PetalburgCity_Gym_EventScript_NormanTwoBadges
 	case 5, PetalburgCity_Gym_EventScript_NormanThreeBadges
 	case 6, PetalburgCity_Gym_EventScript_NormanBattle
@@ -335,14 +335,14 @@ PetalburgCity_Gym_EventScript_NormanFaceDoorWest::
 PetalburgCity_Gym_EventScript_NormanFaceDoorEast::
 	return
 
-PetalburgCity_Gym_EventScript_NormanPostBattle::
-	call PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry
-	goto_if_eq VAR_RESULT, TRUE, PetalburgCity_Gym_EventScript_GiveEnigmaBerry
-	goto_if_unset FLAG_RECEIVED_TM_FACADE, PetalburgCity_Gym_EventScript_GiveFacade2
-	goto_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough
-	msgbox PetalburgCity_Gym_Text_DadGoingToKeepTraining, MSGBOX_DEFAULT
-	release
-	end
+//PetalburgCity_Gym_EventScript_NormanPostBattle::
+//	call PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry
+//	goto_if_eq VAR_RESULT, TRUE, PetalburgCity_Gym_EventScript_GiveEnigmaBerry
+//	goto_if_unset FLAG_RECEIVED_TM_FACADE, PetalburgCity_Gym_EventScript_GiveFacade2
+//	goto_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough
+//	msgbox PetalburgCity_Gym_Text_DadGoingToKeepTraining, MSGBOX_DEFAULT
+//	release
+//	end
 
 PetalburgCity_Gym_EventScript_GiveFacade2::
 	call PetalburgCity_Gym_EventScript_GiveFacade
@@ -1663,9 +1663,120 @@ script PetalburgCity_Gym_EventScript_NormanGoWest {
 	end
 }
 
+
 script PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle {
 	lockall
 	msgbox(format("Dad: So, {PLAYER}, have you found any more Pokémon?"),MSGBOX_NPC)
 	msgbox(format("Do you think you're ready for a Pokémon battle against me now?"),MSGBOX_YESNO)
+	switch(var(VAR_RESULT)) {
+		case 0:
+			msgbox(format("Dad: I see. Well, come back when you're ready."),MSGBOX_NPC)
+			releaseall
+			end
+		case 1:
+			trainerbattle_single(TRAINER_NORMAN_1,format("Dad: Excellent! Let's see what you've got!"),PetalburgCity_Gym_NormanDefeatedText,PetalburgCity_Gym_EventScript_DefeatedNorman)
+			releaseall
+			end
+	}
 	end
+}
+
+script PetalburgCity_Gym_EventScript_NormanPostBattle {
+	lockall
+	applymovement(LOCALID_NORMAN,Common_Movement_FacePlayer)
+	msgbox(format("Dad: Did you have another question for me, {PLAYER}?"))
+    dynmultichoice(25,3,0,5,0,DYN_MULTICHOICE_CB_NONE,"Where To Go","Your Slaking","Retirement","Gift Pokémon","Nothing")
+	switch(var(VAR_RESULT)) {
+		case 0:
+			msgbox(format("Dad: Unfortunately, the bridge to Rustboro City is down. However, my friend Mr. Briney can take you to Dewford to start the Gym Challenge there. He lives just West of Petalburg in Route 104 South."),MSGBOX_NPC)
+		case 1:
+			msgbox(format("Dad: Ah, yes, many trainers are confused about the low-level Slaking. Well, it is my signature Pokémon, and even for new trainers it presents an interested challenge to manage. I found a strange seed in a faraway land that actually allows me to reduce the level of my Pokémon - I used this to weaken a Slaking after evolving it, so I could use it in battles against Trainers without a badge yet. I'll tell you more about this place I visited another time - I'd never seen Kecleon as strong as the ones that were there."),MSGBOX_NPC)
+		case 2:
+			msgbox(format("Dad: Yes, retiring is bittersweet, but I feel like I've found the perfect Trainer to replace me. I gave it a lot of thought, and I think they will do a great job. I'm really excited for you to meet them. It will take a little more time for them to return and get the gym set up, but I will call you when they do."))
+		case 3:
+			if(flag(FLAG_RECEIVED_EEVEE_FROM_NORMAN)) {
+				msgbox(format("Dad: That Pokémon is an Eevee. It's a special Normal-type Pokémon that can evolve a variety of different ways based on what rare stone you give it."))
+				waitmessage
+				msgbox(format("That one is extra special, as it possesses a rare ability. Based on the stone you give it, it will influence the environment around it. Not many Pokémon can do this. I trust you'll decide wisely how to train this Eevee."))
+			}
+			else{
+				msgbox(format("Dad: Are you ready to take the special Pokémon now?"),MSGBOX_YESNO)
+				if(var(VAR_RESULT) == 1){
+					goto(PetalburgCity_Gym_EventScript_GiveEevee)
+				}
+			}
+		case 4:
+			msgbox(format("Dad: Alright then {PLAYER}, if there's nothing else, I'll just wish you good luck."))
+		default:
+			closemessage
+	}	
+	waitmessage
+	releaseall
+	end
+}
+
+
+text PetalburgCity_Gym_NormanDefeatedText {
+	format("I'm so happy to have finally had the chance to battle you, {PLAYER}. I'm so proud.")
+}
+
+script PetalburgCity_Gym_EventScript_DefeatedNorman {
+	lockall
+	msgbox(format("Dad: That was an impressive battle, {PLAYER}. You've defeated a Gym Leader.\pUnfortunately, because I'm in the process of retiring, I cannot give you or Wally a badge.\pHowever, I can now say you are ready to take on the Hoenn League.\pI have a friend, Mr. Briney, who lives out to the West of Petalburg. He can take you to the next step in your journey.\pOh, you've already met? Wonderful. I'll give him a call and ask him to take you to Dewford once you're ready.\pSpeaking of which, I want to give you this."),MSGBOX_NPC)
+    playfanfare(MUS_OBTAIN_ITEM)    
+	msgbox("Received PokéNAV!")
+	waitfanfare
+	closemessage
+	setflag(FLAG_SYS_POKENAV_GET)
+	setflag(FLAG_RECEIVED_POKENAV)
+	waitfanfare
+	closemessage
+	msgbox(Route104_Text_RegisteredDadInPokenav, MSGBOX_DEFAULT)
+	waitmessage
+	setflag(FLAG_ENABLE_NORMAN_MATCH_CALL)
+	setvar(VAR_PETALBURG_GYM_STATE, 3)
+	setvar(VAR_LEVEL_CAP, 25)
+	setvar(VAR_BRINEY_HOUSE_STATE, 1)
+	setflag(FLAG_HIDE_BRINEY_FONT_OF_DOOR)
+	clearflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)
+	clearflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)
+	msgbox(format("Dad: This is a PokéNAV. It's a device that allows you to keep in touch with other trainers you've met, and even call me or your Mother while you're out on your journey."),MSGBOX_NPC)
+	msgbox(format("Dad: One last thing. To celebrate you becoming a Pokémon Trainer, I want to give you a special Pokémon. Are you ready to take it now?"),MSGBOX_YESNO)
+	switch(var(VAR_RESULT)) {
+		case 0:
+			msgbox(format("Dad: That's fine. Just come back for it whenever you're ready."),MSGBOX_NPC)
+		case 1:
+			call(PetalburgCity_Gym_EventScript_GiveEevee)
+		}
+	msgbox(format("Dad: Well, {PLAYER}, I think that's everything. I'm so proud of you. Good luck."),MSGBOX_NPC)
+	releaseall
+	end
+}
+
+script PetalburgCity_Gym_EventScript_GiveEevee {
+			givemon(SPECIES_EEVEE,5,0,0,0,2)
+			switch(var(VAR_RESULT)){
+				case MON_GIVEN_TO_PARTY:
+					playfanfare(MUS_OBTAIN_ITEM)
+					msgbox("Received Eevee.")
+					waitfanfare
+					call(NicknamePartyMon)
+					setflag(FLAG_RECEIVED_EEVEE_FROM_NORMAN)
+					msgbox(PetalburgCity_Gym_Text_NormanGaveEevee,MSGBOX_NPC)
+				case MON_GIVEN_TO_PC:
+					playfanfare(MUS_OBTAIN_ITEM)
+					msgbox("Received Eevee.")
+					waitfanfare
+					call(NicknameBoxMon)
+					setflag(FLAG_RECEIVED_EEVEE_FROM_NORMAN)
+					msgbox(PetalburgCity_Gym_Text_NormanGaveEevee,MSGBOX_NPC)
+				case MON_CANT_GIVE:
+				default:
+					msgbox("Dad: You have too many Pokémon to receive Eevee.")
+			}
+}
+
+
+text PetalburgCity_Gym_Text_NormanGaveEevee {
+		format("Dad: Here you go, {PLAYER}.\pThis is an Eevee. It's a special Normal-type Pokémon that can evolve a variety of different ways based on what rare stone you give it.\pThis one is extra special, as it possesses a rare ability. Based on the stone you give it, it will influence the environment around it.\pNot many Pokémon can do this. I trust you'll decide wisely how to train this Eevee.")
 }

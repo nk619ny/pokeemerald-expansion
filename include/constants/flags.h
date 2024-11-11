@@ -279,7 +279,7 @@
 #define FLAG_RECEIVED_CHARCOAL               0xFE
 #define FLAG_LATIOS_OR_LATIAS_ROAMING        0xFF
 #define FLAG_RECEIVED_REPEAT_BALL            0x100
-#define FLAG_RECEIVED_OLD_ROD                0x101
+#define FLAG_RECEIVED_EEVEE_FROM_NORMAN      0x101 //was Old Rod, but changed to Eevee
 #define FLAG_RECEIVED_COIN_CASE              0x102
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0x103
 #define FLAG_RECEIVED_TM_SNATCH              0x104
@@ -655,8 +655,8 @@
 #define FLAG_REMOVE_LAB_STARTERS  0x264 // NK Flag for starter selection
 #define FLAG_NO_BAG_ITEMS_IN_BATTLE  0x265 // formerly not used
 #define FLAG_PREVENT_WILD_ENCOUNTERS  0x266 // formerly not used
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
+#define FLAG_HIDE_104_NEW_MR_BRINEY  0x267 // formerly not used
+#define FLAG_HIDE_104_GRUNT_AND_PEEKO  0x268 // formerly not used
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
@@ -766,13 +766,13 @@
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0x2D3
-#define FLAG_HIDE_PETALBURG_WOODS_DEVON_EMPLOYEE                    0x2D4
+#define FLAG_HIDE_BRINEY_FONT_OF_DOOR                               0x2D4 //was devon employee, repurposed
 #define FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT                        0x2D5
 #define FLAG_HIDE_PETALBURG_CITY_WALLY                              0x2D6
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-#define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
+#define FLAG_HIDE_DEWFORD_GYM_BLOCKER                               0x2D9 // formerly unused
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB

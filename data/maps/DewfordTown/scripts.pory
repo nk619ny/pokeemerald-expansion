@@ -22,7 +22,7 @@ DewfordTown_OnTransition:
 DewfordTown_EventScript_Briney::
 	lock
 	faceplayer
-	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
+//	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
 	message DewfordTown_Text_WhereAreWeBound
 	waitmessage
 	multichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 2, FALSE
@@ -85,20 +85,20 @@ DewfordTown_EventScript_HallSign::
 DewfordTown_EventScript_OldRodFisherman::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_OLD_ROD, DewfordTown_EventScript_HowsFishing
-	msgbox DewfordTown_Text_GettingItchToFish, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_GiveOldRod
-	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_NotGettingItchToFish
+	goto DewfordTown_EventScript_HowsFishing
+//	msgbox DewfordTown_Text_GettingItchToFish, MSGBOX_YESNO
+//	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_GiveOldRod
+//	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_NotGettingItchToFish
 	end
 
-DewfordTown_EventScript_GiveOldRod::
-	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
-	giveitem ITEM_OLD_ROD
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_OLD_ROD
-	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
-	release
-	end
+//DewfordTown_EventScript_GiveOldRod::
+//	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
+//	giveitem ITEM_OLD_ROD
+//	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+//	setflag FLAG_RECEIVED_OLD_ROD
+//	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
+//	release
+//	end
 
 DewfordTown_EventScript_NotGettingItchToFish::
 	msgbox DewfordTown_Text_ThatsTooBadThen, MSGBOX_DEFAULT
@@ -661,12 +661,12 @@ DewfordTown_Text_HallSign:
 Route104_Text_LandedInDewfordDeliverLetter:
 	.string "MR. BRINEY: Ahoy!\n"
 	.string "We've hit land in DEWFORD.\p"
-	.string "I suppose you're off to deliver that\n"
-	.string "LETTER to, who was it now, STEVEN!$"
+	.string "I suppose you're off to the Gym\n"
+	.string "to challenge Brawly!$"
 
 DewfordTown_Text_SetSailBackToPetalburg:
-	.string "MR. BRINEY: Have you delivered your\n"
-	.string "LETTER?\p"
+	.string "MR. BRINEY: Have you gone to\n"
+	.string "the Gym?\p"
 	.string "Or were you meaning to sail back to\n"
 	.string "PETALBURG?$"
 
@@ -676,8 +676,8 @@ DewfordTown_Text_PetalburgWereSettingSail2:
 	.string "PEEKO, we're setting sail, my darling!$"
 
 DewfordTown_Text_GoDeliverIllBeWaiting:
-	.string "MR. BRINEY: Then you go on and deliver\n"
-	.string "the LETTER. I'll be waiting.$"
+	.string "MR. BRINEY: Then you go on to that\n"
+	.string "Gym. I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInDewford:
 	.string "MR. BRINEY: Ahoy!\n"
@@ -803,3 +803,12 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
 `
+
+script DewfordTown_EventScript_GymBlocker {
+	lock
+	faceplayer
+	msgbox(format("Ah, Trainer!\pI'm sorry, but Brawly is away dealing with some issues, so the Gym is closed right now. You'll have to come back later.\pYou don't want to wait? Well, I suppose you could find him in Slateport and try to get him to return to the Gym."), MSGBOX_NPC)
+	waitmessage
+	release
+	end
+}

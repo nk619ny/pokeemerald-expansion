@@ -47,7 +47,7 @@ DewfordTown_EventScript_Briney::
 # 24 "data/maps/DewfordTown/scripts.pory"
 	faceplayer
 # 25 "data/maps/DewfordTown/scripts.pory"
-	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
+//	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
 # 26 "data/maps/DewfordTown/scripts.pory"
 	message DewfordTown_Text_WhereAreWeBound
 # 27 "data/maps/DewfordTown/scripts.pory"
@@ -173,33 +173,33 @@ DewfordTown_EventScript_OldRodFisherman::
 # 87 "data/maps/DewfordTown/scripts.pory"
 	faceplayer
 # 88 "data/maps/DewfordTown/scripts.pory"
-	goto_if_set FLAG_RECEIVED_OLD_ROD, DewfordTown_EventScript_HowsFishing
+	goto DewfordTown_EventScript_HowsFishing
 # 89 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_GettingItchToFish, MSGBOX_YESNO
+//	msgbox DewfordTown_Text_GettingItchToFish, MSGBOX_YESNO
 # 90 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_GiveOldRod
+//	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_GiveOldRod
 # 91 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_NotGettingItchToFish
+//	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_NotGettingItchToFish
 # 92 "data/maps/DewfordTown/scripts.pory"
 	end
 # 93 "data/maps/DewfordTown/scripts.pory"
 
 # 94 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_GiveOldRod::
+//DewfordTown_EventScript_GiveOldRod::
 # 95 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
+//	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
 # 96 "data/maps/DewfordTown/scripts.pory"
-	giveitem ITEM_OLD_ROD
+//	giveitem ITEM_OLD_ROD
 # 97 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+//	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 98 "data/maps/DewfordTown/scripts.pory"
-	setflag FLAG_RECEIVED_OLD_ROD
+//	setflag FLAG_RECEIVED_OLD_ROD
 # 99 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
+//	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
 # 100 "data/maps/DewfordTown/scripts.pory"
-	release
+//	release
 # 101 "data/maps/DewfordTown/scripts.pory"
-	end
+//	end
 # 102 "data/maps/DewfordTown/scripts.pory"
 
 # 103 "data/maps/DewfordTown/scripts.pory"
@@ -1325,17 +1325,17 @@ Route104_Text_LandedInDewfordDeliverLetter:
 # 663 "data/maps/DewfordTown/scripts.pory"
 	.string "We've hit land in DEWFORD.\p"
 # 664 "data/maps/DewfordTown/scripts.pory"
-	.string "I suppose you're off to deliver that\n"
+	.string "I suppose you're off to the Gym\n"
 # 665 "data/maps/DewfordTown/scripts.pory"
-	.string "LETTER to, who was it now, STEVEN!$"
+	.string "to challenge Brawly!$"
 # 666 "data/maps/DewfordTown/scripts.pory"
 
 # 667 "data/maps/DewfordTown/scripts.pory"
 DewfordTown_Text_SetSailBackToPetalburg:
 # 668 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: Have you delivered your\n"
+	.string "MR. BRINEY: Have you gone to\n"
 # 669 "data/maps/DewfordTown/scripts.pory"
-	.string "LETTER?\p"
+	.string "the Gym?\p"
 # 670 "data/maps/DewfordTown/scripts.pory"
 	.string "Or were you meaning to sail back to\n"
 # 671 "data/maps/DewfordTown/scripts.pory"
@@ -1355,9 +1355,9 @@ DewfordTown_Text_PetalburgWereSettingSail2:
 # 678 "data/maps/DewfordTown/scripts.pory"
 DewfordTown_Text_GoDeliverIllBeWaiting:
 # 679 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: Then you go on and deliver\n"
+	.string "MR. BRINEY: Then you go on to that\n"
 # 680 "data/maps/DewfordTown/scripts.pory"
-	.string "the LETTER. I'll be waiting.$"
+	.string "Gym. I'll be waiting.$"
 # 681 "data/maps/DewfordTown/scripts.pory"
 
 # 682 "data/maps/DewfordTown/scripts.pory"
@@ -1606,3 +1606,28 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "“{STR_VAR_1}” is the\n"
 # 804 "data/maps/DewfordTown/scripts.pory"
 	.string "definition of “in” right now.$"
+
+DewfordTown_EventScript_GymBlocker::
+# 808 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 809 "data/maps/DewfordTown/scripts.pory"
+	faceplayer
+# 810 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_GymBlocker_Text_0, MSGBOX_NPC
+# 811 "data/maps/DewfordTown/scripts.pory"
+	waitmessage
+# 812 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+
+DewfordTown_EventScript_GymBlocker_Text_0:
+# 810 "data/maps/DewfordTown/scripts.pory"
+	.string "Ah, Trainer!\p"
+	.string "I'm sorry, but Brawly is away dealing\n"
+	.string "with some issues, so the Gym is closed\l"
+	.string "right now. You'll have to come back\l"
+	.string "later.\p"
+	.string "You don't want to wait? Well, I suppose\n"
+	.string "you could find him in Slateport and try\l"
+	.string "to get him to return to the Gym.$"

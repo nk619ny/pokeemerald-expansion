@@ -258,29 +258,37 @@ Music: Aqua
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
-Croagunk @ Salac Berry  
-Ability: Poison Touch  
+Tentacool @ Oran Berry
+Ability: Liquid Ooze  
 Level: 12  
-- Belch  
-- Rock Smash  
-- Poison Sting  
-- Fake Out  
+EVs: 192 HP / 244 SpA / 52 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Giga Drain  
+- Chilling Water  
+- Acid Spray  
+- Whirlpool  
 
 Toedscool @ Oran Berry  
 Ability: Mycelium Might  
-Level: 11  
+Level: 12
+EVs: 224 HP / 156 Atk / 64 Def / 44 SpA  
+Sassy Nature  
 - Bullet Seed  
 - Stun Spore  
 - Leech Seed  
 - Mud Shot  
 
-Carvanha @ Oran Berry  
-Ability: Rough Skin  
+Peeko (Wingull) @ Liechi Berry  
+Ability: Hydration  
 Level: 12  
-- Bite  
-- Water Pulse  
-- Aqua Jet  
-- Poison Fang  
+EVs: 224 HP / 236 Atk / 32 Spe  
+Jolly Nature  
+- Acrobatics  
+- Liquidation  
+- Dual Wingbeat  
+- Quick Attack  
+
 
 === TRAINER_MARCEL ===
 Name: MARCEL

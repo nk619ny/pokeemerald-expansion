@@ -1429,6 +1429,14 @@ script NicknamePartyMon{
     return
 }
 
+script NicknameBoxMon{
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+}
+
 movement BirchApproachGivePokedex_GrassStarter{
 	walk_left * 2
 }

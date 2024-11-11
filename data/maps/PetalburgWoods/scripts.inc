@@ -3,7 +3,7 @@
 # 2 "data/maps/PetalburgWoods/scripts.pory"
 .set LOCALID_GRUNT, 3
 # 3 "data/maps/PetalburgWoods/scripts.pory"
-.set LOCALID_DEVON_EMPLOYEE, 4
+.set LOCALID_PEEKO, 13
 # 4 "data/maps/PetalburgWoods/scripts.pory"
 
 # 5 "data/maps/PetalburgWoods/scripts.pory"
@@ -13,145 +13,145 @@ PetalburgWoods_MapScripts::
 # 7 "data/maps/PetalburgWoods/scripts.pory"
 
 # 8 "data/maps/PetalburgWoods/scripts.pory"
-PetalburgWoods_EventScript_DevonResearcherLeft::
+//PetalburgWoods_EventScript_DevonResearcherLeft::
 # 9 "data/maps/PetalburgWoods/scripts.pory"
-	lockall
+//	lockall
 # 10 "data/maps/PetalburgWoods/scripts.pory"
-	call PetalburgWoods_EventScript_DevonResearcherIntro
+//	call PetalburgWoods_EventScript_DevonResearcherIntro
 # 11 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerLeft
+//	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerLeft
 # 12 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 13 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
 # 14 "data/maps/PetalburgWoods/scripts.pory"
-	closemessage
+//	closemessage
 # 15 "data/maps/PetalburgWoods/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+//	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 16 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
+//	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
 # 17 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 18 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
 # 19 "data/maps/PetalburgWoods/scripts.pory"
-	closemessage
+//	closemessage
 # 20 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherLeft
+//	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherLeft
 # 21 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 22 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterUp
+//	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterUp
 # 23 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 24 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_HandOverThosePapers, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_HandOverThosePapers, MSGBOX_DEFAULT
 # 25 "data/maps/PetalburgWoods/scripts.pory"
-	closemessage
+//	closemessage
 # 26 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherFleeToPlayerLeft
+//	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherFleeToPlayerLeft
 # 27 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 28 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
 # 29 "data/maps/PetalburgWoods/scripts.pory"
-	closemessage
+//	closemessage
 # 30 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachPlayer
+//	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachPlayer
 # 31 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 32 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
 # 33 "data/maps/PetalburgWoods/scripts.pory"
-	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
+//	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
 # 34 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaBackOff
+//	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaBackOff
 # 35 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 36 "data/maps/PetalburgWoods/scripts.pory"
-	call PetalburgWoods_EventScript_DevonResearcherPostBattle
+//	call PetalburgWoods_EventScript_DevonResearcherPostBattle
 # 37 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave
+//	applymovement OBJ_EVENT_ID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave
 # 38 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherExitLeft
+//	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherExitLeft
 # 39 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 40 "data/maps/PetalburgWoods/scripts.pory"
-	goto PetalburgWoods_EventScript_RemoveDevonResearcher
+//	goto PetalburgWoods_EventScript_RemoveDevonResearcher
 # 41 "data/maps/PetalburgWoods/scripts.pory"
-	end
+//	end
 # 42 "data/maps/PetalburgWoods/scripts.pory"
 
 # 43 "data/maps/PetalburgWoods/scripts.pory"
-PetalburgWoods_EventScript_DevonResearcherRight::
+//PetalburgWoods_EventScript_DevonResearcherRight::
 # 44 "data/maps/PetalburgWoods/scripts.pory"
-	lockall
+//	lockall
 # 45 "data/maps/PetalburgWoods/scripts.pory"
-	call PetalburgWoods_EventScript_DevonResearcherIntro
+//	call PetalburgWoods_EventScript_DevonResearcherIntro
 # 46 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerRight
+//	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerRight
 # 47 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 48 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+//	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 49 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 50 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
 # 51 "data/maps/PetalburgWoods/scripts.pory"
-	closemessage
+//	closemessage
 # 52 "data/maps/PetalburgWoods/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+//	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 53 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
+//	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
 # 54 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 55 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
 # 56 "data/maps/PetalburgWoods/scripts.pory"
-	closemessage
+//	closemessage
 # 57 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherRight
+//	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherRight
 # 58 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 59 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterUp
+//	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterUp
 # 60 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 61 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_HandOverThosePapers, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_HandOverThosePapers, MSGBOX_DEFAULT
 # 62 "data/maps/PetalburgWoods/scripts.pory"
-	closemessage
+//	closemessage
 # 63 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherFleeToPlayerRight
+//	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherFleeToPlayerRight
 # 64 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 65 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
 # 66 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+//	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 67 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 68 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
+//	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
 # 69 "data/maps/PetalburgWoods/scripts.pory"
-	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
+//	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
 # 70 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaBackOff
+//	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaBackOff
 # 71 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 72 "data/maps/PetalburgWoods/scripts.pory"
-	call PetalburgWoods_EventScript_DevonResearcherPostBattle
+//	call PetalburgWoods_EventScript_DevonResearcherPostBattle
 # 73 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave
+//	applymovement OBJ_EVENT_ID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave
 # 74 "data/maps/PetalburgWoods/scripts.pory"
-	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherExitRight
+//	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherExitRight
 # 75 "data/maps/PetalburgWoods/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 76 "data/maps/PetalburgWoods/scripts.pory"
-	goto PetalburgWoods_EventScript_RemoveDevonResearcher
+//	goto PetalburgWoods_EventScript_RemoveDevonResearcher
 # 77 "data/maps/PetalburgWoods/scripts.pory"
-	end
+//	end
 # 78 "data/maps/PetalburgWoods/scripts.pory"
 
 # 79 "data/maps/PetalburgWoods/scripts.pory"
@@ -950,3 +950,165 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "If a POKéMON runs out of PP, it must be\n"
 # 476 "data/maps/PetalburgWoods/scripts.pory"
 	.string "taken to a POKéMON CENTER.$"
+
+PetalburgWoods_EventScript_PeekoTalk::
+# 481 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_EventScript_PeekoTalk_Text_0, MSGBOX_NPC
+	end
+
+
+PetalburgWoods_EventScript_AquaGruntBattle::
+# 486 "data/maps/PetalburgWoods/scripts.pory"
+	lockall
+# 487 "data/maps/PetalburgWoods/scripts.pory"
+	applymovement LOCALID_GRUNT, Common_Movement_FacePlayer
+# 488 "data/maps/PetalburgWoods/scripts.pory"
+	applymovement LOCALID_GRUNT, Common_Movement_ExclamationMark
+# 489 "data/maps/PetalburgWoods/scripts.pory"
+	waitmovement 0
+# 490 "data/maps/PetalburgWoods/scripts.pory"
+	playbgm MUS_ENCOUNTER_AQUA, TRUE
+# 491 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_EventScript_AquaGruntBattle_Text_0, MSGBOX_NPC
+# 492 "data/maps/PetalburgWoods/scripts.pory"
+	waitmessage
+# 493 "data/maps/PetalburgWoods/scripts.pory"
+	trainerbattle_single TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_EventScript_AquaGruntBattle_Text_1, PetalburgWoods_Text_AquaGruntDefeated, PetalburgWoods_EventScript_AquaGruntPostBattle
+# 494 "data/maps/PetalburgWoods/scripts.pory"
+	releaseall
+	end
+
+
+PetalburgWoods_EventScript_AquaGruntPostBattle::
+# 499 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_EventScript_AquaGruntPostBattle_Text_0, MSGBOX_NPC
+# 500 "data/maps/PetalburgWoods/scripts.pory"
+	waitmessage
+# 501 "data/maps/PetalburgWoods/scripts.pory"
+	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+# 502 "data/maps/PetalburgWoods/scripts.pory"
+	applymovement LOCALID_PEEKO, PetalburgWoods_Movement_PeekoEscape
+# 503 "data/maps/PetalburgWoods/scripts.pory"
+	waitmovement 0
+# 504 "data/maps/PetalburgWoods/scripts.pory"
+	removeobject LOCALID_PEEKO
+# 505 "data/maps/PetalburgWoods/scripts.pory"
+	msgbox PetalburgWoods_EventScript_AquaGruntPostBattle_Text_1, MSGBOX_NPC
+# 506 "data/maps/PetalburgWoods/scripts.pory"
+	waitmessage
+# 507 "data/maps/PetalburgWoods/scripts.pory"
+	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaGruntFlee
+# 508 "data/maps/PetalburgWoods/scripts.pory"
+	waitmovement 0
+# 509 "data/maps/PetalburgWoods/scripts.pory"
+	removeobject LOCALID_GRUNT
+# 510 "data/maps/PetalburgWoods/scripts.pory"
+	setflag FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT
+# 511 "data/maps/PetalburgWoods/scripts.pory"
+	setvar VAR_PETALBURG_WOODS_STATE, 1
+# 512 "data/maps/PetalburgWoods/scripts.pory"
+	setvar VAR_PETALBURG_GYM_STATE, 2
+# 513 "data/maps/PetalburgWoods/scripts.pory"
+	setvar VAR_LEVEL_CAP, 30
+# 514 "data/maps/PetalburgWoods/scripts.pory"
+	releaseall
+	end
+
+
+# 526 "data/maps/PetalburgWoods/scripts.pory"
+PetalburgWoods_Movement_PeekoEscape:
+# 527 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_down
+# 527 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_down
+# 527 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_down
+# 527 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_down
+# 527 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_down
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 528 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+	step_end
+
+# 531 "data/maps/PetalburgWoods/scripts.pory"
+PetalburgWoods_Movement_AquaGruntFlee:
+# 532 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_up
+# 532 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_up
+# 532 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_up
+# 532 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_up
+# 532 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_up
+# 533 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 533 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 533 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 533 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 533 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 533 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 533 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 533 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+	step_end
+
+PetalburgWoods_EventScript_PeekoTalk_Text_0:
+# 481 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Peeko: Pii!$"
+
+PetalburgWoods_EventScript_AquaGruntBattle_Text_0:
+# 491 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Who are you? Why are you disturbing my\n"
+	.string "training?$"
+
+PetalburgWoods_EventScript_AquaGruntBattle_Text_1:
+# 493 "data/maps/PetalburgWoods/scripts.pory"
+	.string "You want me to return this bird to the\n"
+	.string "old man? Absolutely not!$"
+
+PetalburgWoods_EventScript_AquaGruntPostBattle_Text_0:
+# 499 "data/maps/PetalburgWoods/scripts.pory"
+	.string "Fine, I'll release this Wingull. Clearly it\n"
+	.string "is too weak to help us with our mission\l"
+	.string "anyway.$"
+
+PetalburgWoods_EventScript_AquaGruntPostBattle_Text_1:
+# 505 "data/maps/PetalburgWoods/scripts.pory"
+	.string "This won't stop Team Aqua from doing\n"
+	.string "whatever it takes to prevent any more\l"
+	.string "damage being done to the natural\l"
+	.string "environment of Hoenn.$"
+
+PetalburgWoods_Text_AquaGruntDefeated::
+# 518 "data/maps/PetalburgWoods/scripts.pory"
+	.string "You're stronger than you look.$"
+
+PetalburgWoods_Text_AquaGruntLost::
+# 522 "data/maps/PetalburgWoods/scripts.pory"
+	.string "We're going to make sure no more damage\n"
+	.string "is done to Hoenn's environment!$"

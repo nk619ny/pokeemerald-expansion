@@ -2344,3 +2344,243 @@ Route104_Text_BrendanPostBattle:
 	.string "Like MR. BRINEY, it's important to\n"
 # 1173 "data/maps/Route104/scripts.pory"
 	.string "become friends with your POKéMON.$"
+
+Route104_EventScript_BrineyNew::
+# 1181 "data/maps/Route104/scripts.pory"
+	lock
+# 1182 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1183 "data/maps/Route104/scripts.pory"
+	switch VAR_PETALBURG_GYM_STATE
+# 1184 "data/maps/Route104/scripts.pory"
+	case 0, Route104_EventScript_BrineyNew_3
+# 1185 "data/maps/Route104/scripts.pory"
+	case 1, Route104_EventScript_BrineyNew_3
+# 1187 "data/maps/Route104/scripts.pory"
+	case 2, Route104_EventScript_BrineyNew_4
+Route104_EventScript_BrineyNew_1:
+# 1190 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+Route104_EventScript_BrineyNew_3:
+# 1186 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_BrineyNew_Text_0, MSGBOX_NPC
+	goto Route104_EventScript_BrineyNew_1
+
+Route104_EventScript_BrineyNew_4:
+# 1188 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_BrineyNew_Text_1, MSGBOX_NPC
+	goto Route104_EventScript_BrineyNew_1
+
+
+Route101_EventScript_PeekoCutscene::
+# 1195 "data/maps/Route104/scripts.pory"
+	lockall
+# 1196 "data/maps/Route104/scripts.pory"
+	special SpawnCameraObject
+# 1197 "data/maps/Route104/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraPan
+# 1198 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1199 "data/maps/Route104/scripts.pory"
+	msgbox Route101_EventScript_PeekoCutscene_Text_0
+# 1200 "data/maps/Route104/scripts.pory"
+	msgbox Route101_EventScript_PeekoCutscene_Text_1
+# 1201 "data/maps/Route104/scripts.pory"
+	msgbox Route101_EventScript_PeekoCutscene_Text_2
+# 1202 "data/maps/Route104/scripts.pory"
+	msgbox Route101_EventScript_PeekoCutscene_Text_3
+# 1203 "data/maps/Route104/scripts.pory"
+	waitmessage
+# 1204 "data/maps/Route104/scripts.pory"
+	applymovement 36, Route101_Cutscene_GruntApproachPeeko
+# 1205 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1206 "data/maps/Route104/scripts.pory"
+	removeobject 37
+# 1207 "data/maps/Route104/scripts.pory"
+	msgbox Route101_EventScript_PeekoCutscene_Text_4
+# 1208 "data/maps/Route104/scripts.pory"
+	waitmessage
+# 1209 "data/maps/Route104/scripts.pory"
+	applymovement 36, Route101_Cutscene_GruntFlees
+# 1210 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1211 "data/maps/Route104/scripts.pory"
+	removeobject 36
+# 1212 "data/maps/Route104/scripts.pory"
+	setflag FLAG_HIDE_104_GRUNT_AND_PEEKO
+# 1213 "data/maps/Route104/scripts.pory"
+	setvar VAR_PETALBURG_CITY_STATE, 4
+# 1214 "data/maps/Route104/scripts.pory"
+	delay 20
+# 1215 "data/maps/Route104/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraRevert
+# 1216 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1217 "data/maps/Route104/scripts.pory"
+	special RemoveCameraObject
+# 1219 "data/maps/Route104/scripts.pory"
+	releaseall
+	end
+
+
+# 1223 "data/maps/Route104/scripts.pory"
+Route101_Cutscene_CameraPan:
+# 1224 "data/maps/Route104/scripts.pory"
+	walk_fast_left
+# 1224 "data/maps/Route104/scripts.pory"
+	walk_fast_left
+# 1224 "data/maps/Route104/scripts.pory"
+	walk_fast_left
+# 1224 "data/maps/Route104/scripts.pory"
+	walk_fast_left
+# 1224 "data/maps/Route104/scripts.pory"
+	walk_fast_left
+# 1224 "data/maps/Route104/scripts.pory"
+	walk_fast_left
+# 1224 "data/maps/Route104/scripts.pory"
+	walk_fast_left
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+# 1225 "data/maps/Route104/scripts.pory"
+	walk_diag_northwest
+	step_end
+
+# 1228 "data/maps/Route104/scripts.pory"
+Route101_Cutscene_GruntApproachPeeko:
+# 1229 "data/maps/Route104/scripts.pory"
+	walk_fast_down
+# 1230 "data/maps/Route104/scripts.pory"
+	face_left
+	step_end
+
+# 1233 "data/maps/Route104/scripts.pory"
+Route101_Cutscene_GruntFlees:
+# 1234 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1234 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1234 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1234 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1235 "data/maps/Route104/scripts.pory"
+	walk_fast_up
+# 1235 "data/maps/Route104/scripts.pory"
+	walk_fast_up
+# 1235 "data/maps/Route104/scripts.pory"
+	walk_fast_up
+# 1235 "data/maps/Route104/scripts.pory"
+	walk_fast_up
+# 1235 "data/maps/Route104/scripts.pory"
+	walk_fast_up
+# 1235 "data/maps/Route104/scripts.pory"
+	walk_fast_up
+# 1235 "data/maps/Route104/scripts.pory"
+	walk_fast_up
+# 1235 "data/maps/Route104/scripts.pory"
+	walk_fast_up
+# 1235 "data/maps/Route104/scripts.pory"
+	walk_fast_up
+	step_end
+
+# 1238 "data/maps/Route104/scripts.pory"
+Route101_Cutscene_CameraRevert:
+# 1239 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1239 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1239 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1239 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1239 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1239 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1239 "data/maps/Route104/scripts.pory"
+	walk_fast_right
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+# 1240 "data/maps/Route104/scripts.pory"
+	walk_diag_southeast
+	step_end
+
+Route104_EventScript_BrineyNew_Text_0:
+# 1186 "data/maps/Route104/scripts.pory"
+	.string "That man took my beloved Peeko! Please,\n"
+	.string "you have to help me get her back!$"
+
+Route104_EventScript_BrineyNew_Text_1:
+# 1188 "data/maps/Route104/scripts.pory"
+	.string "Thank you so much! My Peeko is back,\n"
+	.string "and it's because of you!\p"
+	.string "Oh, you're Norman's kid? That makes so\n"
+	.string "much sense! I've heard so much about\l"
+	.string "you, it's great to finally meet you.$"
+
+Route101_EventScript_PeekoCutscene_Text_0:
+# 1199 "data/maps/Route104/scripts.pory"
+	.string "Mr. Briney: I can't part with my beloved\n"
+	.string "Peeko!$"
+
+Route101_EventScript_PeekoCutscene_Text_1:
+# 1200 "data/maps/Route104/scripts.pory"
+	.string "Team Aqua Grunt: Your Wingull has a rare\n"
+	.string "ability to influence the weather. It will\l"
+	.string "be incredibly valuable to our efforts\l"
+	.string "to protect Hoenn's seas!$"
+
+Route101_EventScript_PeekoCutscene_Text_2:
+# 1201 "data/maps/Route104/scripts.pory"
+	.string "Mr. Briney: Peeko's never changed the\n"
+	.string "weather before!$"
+
+Route101_EventScript_PeekoCutscene_Text_3:
+# 1202 "data/maps/Route104/scripts.pory"
+	.string "Team Aqua Grunt: It just needs to be\n"
+	.string "trained further. I don't have time to\l"
+	.string "discuss this! The Pokémon is coming\l"
+	.string "with me.$"
+
+Route101_EventScript_PeekoCutscene_Text_4:
+# 1207 "data/maps/Route104/scripts.pory"
+	.string "Mr. Briney: Peeko!$"

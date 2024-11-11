@@ -1172,3 +1172,70 @@ Route104_Text_BrendanPostBattle:
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
 `
+
+const LOCALID_BRINEY_NEW = 35
+const LOCALID_PEEKO = 37
+const LOCALID_GRUNT = 36
+
+script Route104_EventScript_BrineyNew{
+	lock
+	faceplayer
+	switch(var(VAR_PETALBURG_GYM_STATE)){
+		case 0:
+		case 1:
+			msgbox(format("That man took my beloved Peeko! Please, you have to help me get her back!"), MSGBOX_NPC)
+		case 2:
+			msgbox(format("Thank you so much! My Peeko is back, and it's because of you!\pOh, you're Norman's kid? That makes so much sense! I've heard so much about you, it's great to finally meet you."),MSGBOX_NPC)
+	}
+	release
+	end
+}
+
+script Route101_EventScript_PeekoCutscene {
+	lockall
+	special(SpawnCameraObject)
+	applymovement(OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraPan)
+	waitmovement(0)
+	msgbox(format("Mr. Briney: I can't part with my beloved Peeko!"))
+	msgbox(format("Team Aqua Grunt: Your Wingull has a rare ability to influence the weather. It will be incredibly valuable to our efforts to protect Hoenn's seas!"))
+	msgbox(format("Mr. Briney: Peeko's never changed the weather before!"))
+	msgbox(format("Team Aqua Grunt: It just needs to be trained further. I don't have time to discuss this! The Pokémon is coming with me."))
+	waitmessage
+	applymovement(LOCALID_GRUNT, Route101_Cutscene_GruntApproachPeeko)	
+	waitmovement(0)
+	removeobject(LOCALID_PEEKO)
+	msgbox(format("Mr. Briney: Peeko!"))
+	waitmessage
+	applymovement(LOCALID_GRUNT, Route101_Cutscene_GruntFlees)
+	waitmovement(0)
+	removeobject(LOCALID_GRUNT)
+	setflag(FLAG_HIDE_104_GRUNT_AND_PEEKO)
+	setvar(VAR_PETALBURG_CITY_STATE,4)
+	delay(20)
+	applymovement(OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraRevert)
+	waitmovement(0)
+	special(RemoveCameraObject)
+	//setvar(VAR_LEVEL_CAP, 30)
+	releaseall
+	end
+}
+
+movement Route101_Cutscene_CameraPan {
+	walk_fast_left * 7
+	walk_diag_northwest * 11
+}
+
+movement Route101_Cutscene_GruntApproachPeeko {
+	walk_fast_down
+	face_left
+}
+
+movement Route101_Cutscene_GruntFlees {
+	walk_fast_right * 4
+	walk_fast_up * 9
+}
+
+movement Route101_Cutscene_CameraRevert {
+	walk_fast_right * 7
+	walk_diag_southeast * 11
+}
