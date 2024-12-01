@@ -185,7 +185,7 @@
       "id": "LAYOUT_ROUTE103",
       "name": "Route103_Layout",
       "width": 80,
-      "height": 22,
+      "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route103/border.bin",
@@ -4410,6 +4410,16 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLDALE_RUINS",
+      "name": "OldaleRuins_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/OldaleRuins/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleRuins/map.bin"
     }
   ]
 }

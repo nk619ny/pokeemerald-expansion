@@ -214,8 +214,15 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
+#define MAPSEC_OLDALE_RUINS                 0xD5 //first new MAPSEC
+#define MAPSEC_104_NORTH                    0xD6
+#define MAPSEC_SLATEPORT_FARM               0xD7
 
+#define MAPSEC_NONE                         0xF9 //was 0xD5
+
+//#define METLOC_DISTANT_PAST                 0xFA
+//#define METLOC_FAR_FUTURE                   0xFB
+//#define METLOC_PLACEHOLDER                  0xFC
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF

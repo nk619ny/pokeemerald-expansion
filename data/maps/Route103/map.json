@@ -280,6 +280,13 @@
       "elevation": 0,
       "dest_map": "MAP_ALTERING_CAVE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_OLDALE_RUINS",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
