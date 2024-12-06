@@ -1384,6 +1384,7 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
     setflag (FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
     setflag (FLAG_HIDE_OLDALE_TOWN_RIVAL)
 	setflag (FLAG_NO_BAG_ITEMS_IN_BATTLE)
+	setflag (FLAG_HIDDEN_BY_DEFAULT)
 	setvar(VAR_ROUTE101_STATE, 3)
 	clearflag (FLAG_HIDE_MAP_NAME_POPUP)
     setvar (VAR_OLDALE_TOWN_STATE, 1)

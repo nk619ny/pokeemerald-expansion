@@ -1,0 +1,68 @@
+mapscripts SlateportCity_FarmCorridor_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: SlateportCity_FarmCorridor_EventScript_CheckforBrawly
+    ]
+}
+
+const LOCALID_BRAWLY = 1
+
+script SlateportCity_FarmCorridor_EventScript_CheckforBrawly {
+    if (flag(FLAG_SLATEPORT_BAY_FLOODED) && !(flag(FLAG_SLATEPORT_FARM_COMPLETED))) {
+        goto(SlateportCity_FarmCorridor_EventScript_BrawlyPostBattle)
+    }
+    else {
+        setvar(VAR_TEMP_1, 1)
+    }
+    releaseall
+    end
+}
+
+script SlateportCity_FarmCorridor_EventScript_BrawlyPostBattle {
+    lock
+    addobject(LOCALID_BRAWLY)
+    applymovement(LOCALID_BRAWLY, SlateportCity_FarmCorridor_BrawlyApproach)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox(BrawlyPostAquaFarmWinText)
+    waitmessage
+    applymovement(LOCALID_BRAWLY, SlateportCity_FarmCorridor_BrawlyDepart)
+    waitmovement(0)
+    removeobject(LOCALID_BRAWLY)
+    setflag(FLAG_SLATEPORT_FARM_COMPLETED)
+    setvar(VAR_TEMP_1, 1)
+    release
+    end
+}
+
+text BrawlyPostAquaFarmWinText {
+    format("Brawly: So, Team Aqua managed to re-flood Slateport Bay.\pI'm not completely surprised. A lot of people were very unhappy with how closing the Bay impacted life in and around Slateport.\pWell, what's done is done.\pBut who are you? You don't seem like a member of either Team Aqua or Team Magma, and I don't recognize you from around here.\pOh, you're a new trainer taking the Hoenn League Challenge!\pI'll head back to my Gym in Dewford. I'll be awaiting your challenge!")
+}
+
+movement SlateportCity_FarmCorridor_BrawlyApproach{
+    walk_right * 2
+}
+
+movement SlateportCity_FarmCorridor_BrawlyDepart{
+    walk_down
+    walk_right * 7
+    walk_down * 2
+}
+
+//script SlateportCity_FarmCorridor_TestDynamic {
+//	lockall
+//    setflag(FLAG_HIDDEN_BY_DEFAULT)
+//	msgbox(format("Where would you like to go, {PLAYER}?"))
+//    dynmultichoice(25,3,0,2,0,DYN_MULTICHOICE_CB_NONE,"Farm","Bay")
+//	switch(var(VAR_RESULT)) {
+//		case 0:
+//			setdynamicwarp(MAP_SLATEPORT_FARM,40,5)
+//		case 1:
+//			setdynamicwarp(MAP_SLATEPORT_BAY,45,5)
+//		default:
+//			closemessage
+//	}	
+//	waitmessage
+//	releaseall
+//	end
+//}

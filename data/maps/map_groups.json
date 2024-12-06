@@ -178,7 +178,11 @@
     "SlateportCity_House",
     "SlateportCity_PokemonCenter_1F",
     "SlateportCity_PokemonCenter_2F",
-    "SlateportCity_Mart"
+    "SlateportCity_Mart",
+    "SlateportCity_FarmCorridor",
+    "SlateportFarm",
+    "SlateportBay",
+    "SlateportCity_FarmCorridor_B1F"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",
@@ -588,7 +592,8 @@
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",
-    "Route104_PrototypePrettyPetalFlowerShop"
+    "Route104_PrototypePrettyPetalFlowerShop",
+    "Slateport_Original"
   ],
   "gMapGroup_IndoorRoute109": [
     "Route109_SeashoreHouse"

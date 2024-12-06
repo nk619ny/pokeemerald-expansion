@@ -2770,3 +2770,13 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "the perfect fit for the BATTLE TENT!\p"
 # 1386 "data/maps/SlateportCity/scripts.pory"
 	.string "Give it your best effort!$"
+
+SlateportCity_EventScript_FarmSign::
+# 1390 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_FarmSign_Text_0, MSGBOX_SIGN
+	end
+
+
+SlateportCity_EventScript_FarmSign_Text_0:
+# 1390 "data/maps/SlateportCity/scripts.pory"
+	.string "Tunnel to Slateport Farm$"

@@ -23,8 +23,8 @@
 #define TRAINER_GRUNT_WEATHER_INST_1         17
 #define TRAINER_GRUNT_WEATHER_INST_2         18
 #define TRAINER_GRUNT_WEATHER_INST_3         19
-#define TRAINER_GRUNT_MUSEUM_1               20
-#define TRAINER_GRUNT_MUSEUM_2               21
+#define TRAINER_GRUNT_FARM_1               20
+#define TRAINER_GRUNT_FARM_2               21
 #define TRAINER_GRUNT_SPACE_CENTER_1         22
 #define TRAINER_GRUNT_MT_PYRE_1              23
 #define TRAINER_GRUNT_MT_PYRE_2              24
@@ -43,10 +43,10 @@
 #define TRAINER_ROSE_1                       37
 #define TRAINER_FELIX                        38
 #define TRAINER_VIOLET                       39
-#define TRAINER_ROSE_2                       40
-#define TRAINER_ROSE_3                       41
-#define TRAINER_ROSE_4                       42
-#define TRAINER_ROSE_5                       43
+#define TRAINER_AQUA_ADMIN_FARM              40 //hijacked rematches of Rose in 40-43 for new fights
+#define TRAINER_MAGMA_ADMIN_FARM             41
+#define TRAINER_AQUA_MULTI_GRUNT_FARM        42
+#define TRAINER_MAGMA_MULTI_GRUNT_FARM       43
 #define TRAINER_DUSTY_1                      44
 #define TRAINER_CHIP                         45
 #define TRAINER_FOSTER                       46

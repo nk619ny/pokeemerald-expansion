@@ -857,11 +857,11 @@ RivalsHouse_1F_EventScript_RivalSibling_5:
 
 RivalsHouse_1F_EventScript_RivalSibling_Text_0:
 # 417 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	.string "Do you like colorful things?$"
+	.string "Do you like pretty colors?$"
 
 RivalsHouse_1F_EventScript_RivalSibling_Text_1:
 # 419 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	.string "I like colorful things, too!$"
+	.string "I like pretty colors, too!$"
 
 RivalsHouse_1F_EventScript_RivalSibling_Text_2:
 # 424 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
@@ -869,4 +869,4 @@ RivalsHouse_1F_EventScript_RivalSibling_Text_2:
 
 RivalsHouse_1F_EventScript_RivalSibling_Text_3:
 # 428 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	.string "I like colorful things.$"
+	.string "I like pretty colors.$"

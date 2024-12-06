@@ -188,7 +188,8 @@ static const u8 sRegionMapSectionId_To_PopUpThemeIdMapping[] =
     [MAPSEC_TRAINER_HILL - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_MARBLE,
     [MAPSEC_OLDALE_RUINS - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE,
     [MAPSEC_104_NORTH - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_SLATEPORT_FARM - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD
+    [MAPSEC_SLATEPORT_FARM - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_SLATEPORT_BAY - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_UNDERWATER
 
 
 };
@@ -616,13 +617,13 @@ static void LoadMapNamePopUpWindowBg(void)
     if (OW_POPUP_GENERATION == GEN_5)
         secondaryPopUpWindowId = GetSecondaryPopUpWindowId();
 
-//    if (regionMapSectionId >= KANTO_MAPSEC_START)
-//    {
-//        if (regionMapSectionId > KANTO_MAPSEC_END)
-//            regionMapSectionId -= KANTO_MAPSEC_COUNT;
-//        else
-//            regionMapSectionId = 0; // Discard kanto region sections;
-//    }
+    if (regionMapSectionId >= KANTO_MAPSEC_START)
+    {
+        if (regionMapSectionId > KANTO_MAPSEC_END)
+            regionMapSectionId -= KANTO_MAPSEC_COUNT;
+        else
+            regionMapSectionId = 0; // Discard kanto region sections;
+    }
 
     if (OW_POPUP_GENERATION == GEN_5)
     {

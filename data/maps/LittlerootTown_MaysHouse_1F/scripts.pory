@@ -414,9 +414,9 @@ script RivalsHouse_1F_EventScript_RivalSibling {
 	lock
 	faceplayer
 	if(!flag(FLAG_RECEIVED_SHINY_CHARM)){
-		msgbox(format("Do you like colorful things?"), MSGBOX_YESNO)
+		msgbox(format("Do you like pretty colors?"), MSGBOX_YESNO)
 		if(var(VAR_RESULT)==YES) {
-			msgbox("I like colorful things, too!")
+			msgbox("I like pretty colors, too!")
 			giveitem(ITEM_SHINY_CHARM)
 			setflag(FLAG_RECEIVED_SHINY_CHARM)
 		} 
@@ -425,7 +425,7 @@ script RivalsHouse_1F_EventScript_RivalSibling {
 		}
 	}
 	else{
-		msgbox("I like colorful things.")
+		msgbox("I like pretty colors.")
 	}
 	waitmessage
 	release

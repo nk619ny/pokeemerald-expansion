@@ -1385,3 +1385,8 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
 `
+
+script SlateportCity_EventScript_FarmSign {
+	msgbox(format("Tunnel to Slateport Farm"), MSGBOX_SIGN)
+	end
+}

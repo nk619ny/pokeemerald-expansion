@@ -1,0 +1,35 @@
+mapscripts SlateportCity_FarmCorridor_B1F_MapScripts{}
+
+
+script SlateportCity_FarmCorridorB1F_CheckIfFarmFlooded {
+    if (flag(FLAG_SLATEPORT_BAY_FLOODED)) {
+		setdynamicwarp(MAP_SLATEPORT_BAY,45,5)
+    } 
+    else {
+		setdynamicwarp(MAP_SLATEPORT_FARM,40,5)
+    }
+    setvar(VAR_TEMP_0, 1)
+    releaseall
+    end
+}
+
+//#define FLAG_SLATEPORT_FARM_COMPLETED  0x269 // formerly not used
+//#define FLAG_SLATEPORT_BAY_FLOODED  0x26A // formerly not used
+
+script SlateportCity_FarmCorridor_TestDynamic {
+	lockall
+    setflag(FLAG_HIDDEN_BY_DEFAULT)
+	msgbox(format("Where would you like to go, {PLAYER}?"))
+    dynmultichoice(25,3,0,2,0,DYN_MULTICHOICE_CB_NONE,"Farm","Bay")
+	switch(var(VAR_RESULT)) {
+		case 0:
+			setdynamicwarp(MAP_SLATEPORT_FARM,40,5)
+		case 1:
+			setdynamicwarp(MAP_SLATEPORT_BAY,45,5)
+		default:
+			closemessage
+	}	
+	waitmessage
+	releaseall
+	end
+}

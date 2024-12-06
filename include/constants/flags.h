@@ -657,9 +657,9 @@
 #define FLAG_PREVENT_WILD_ENCOUNTERS  0x266 // formerly not used
 #define FLAG_HIDE_104_NEW_MR_BRINEY  0x267 // formerly not used
 #define FLAG_HIDE_104_GRUNT_AND_PEEKO  0x268 // formerly not used
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
+#define FLAG_SLATEPORT_FARM_COMPLETED  0x269 // formerly not used
+#define FLAG_SLATEPORT_BAY_FLOODED  0x26A // formerly not used
+#define FLAG_HIDDEN_BY_DEFAULT  0x26B // formerly not used; set at start to hide variety of temporary objects & NPCs
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag

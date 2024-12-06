@@ -149,6 +149,10 @@
 #define MAP_SLATEPORT_CITY_POKEMON_CENTER_1F       (11 | (9 << 8))
 #define MAP_SLATEPORT_CITY_POKEMON_CENTER_2F       (12 | (9 << 8))
 #define MAP_SLATEPORT_CITY_MART                    (13 | (9 << 8))
+#define MAP_SLATEPORT_CITY_FARM_CORRIDOR           (14 | (9 << 8))
+#define MAP_SLATEPORT_FARM                         (15 | (9 << 8))
+#define MAP_SLATEPORT_BAY                          (16 | (9 << 8))
+#define MAP_SLATEPORT_CITY_FARM_CORRIDOR_B1F       (17 | (9 << 8))
 
 // gMapGroup_IndoorMauville
 #define MAP_MAUVILLE_CITY_GYM               (0 | (10 << 8))
@@ -559,6 +563,7 @@
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))
 #define MAP_ROUTE104_PROTOTYPE_PRETTY_PETAL_FLOWER_SHOP (1 | (27 << 8))
+#define MAP_SLATEPORT_ORIGINAL                          (2 | (27 << 8))
 
 // gMapGroup_IndoorRoute109
 #define MAP_ROUTE109_SEASHORE_HOUSE (0 | (28 << 8))

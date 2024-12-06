@@ -217,6 +217,7 @@
 #define MAPSEC_OLDALE_RUINS                 0xD5 //first new MAPSEC
 #define MAPSEC_104_NORTH                    0xD6
 #define MAPSEC_SLATEPORT_FARM               0xD7
+#define MAPSEC_SLATEPORT_BAY                0xD8
 
 #define MAPSEC_NONE                         0xF9 //was 0xD5
 

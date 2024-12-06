@@ -436,35 +436,91 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MUSEUM_1 ===
+=== TRAINER_GRUNT_FARM_1 === 
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+
+Torracat  
+Ability: Intimidate  
+Level: 19
+- Fake Out  
+- Flame Charge  
+- Leech Life  
+- Will-O-Wisp  
+
+Maractus @ Coba Berry
+Ability: Storm Drain  
+Level: 19
+- Cotton Guard  
+- Needle Arm  
+- Drain Punch  
+- Helping Hand  
+
+Magcargo @ Passho Berry
+Ability: Flame Body  
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+- Rock Slide  
+- Flame Burst  
+- Hidden Power
+- Recover  
+
+Nidorina (F) @ Shuca Berry
+Ability: Hustle  
+Level: 19
+- Body Slam  
+- Poison Jab  
+- Iron Tail  
+- Reflect  
+
+
+=== TRAINER_GRUNT_FARM_2 ===
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
+Pic: Aqua Grunt F
+Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
-Carvanha
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Galvantula 
+Ability: Compound Eyes  
+Level: 19
+IVs: 0 Atk  
+- Discharge  
+- Thunder Wave  
+- Struggle Bug  
+- Giga Drain  
 
-=== TRAINER_GRUNT_MUSEUM_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: Yes
-AI: Check Bad Move
+Palpitoad @ Rindo Berry
+Ability: Water Absorb  
+Level: 19
+- Bounce  
+- Flail  
+- Mud Bomb  
+- Bubble Beam  
 
-Zubat
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Boldore @ Chople Berry
+Ability: Sturdy  
+Level: 19
+- Body Press  
+- Heavy Slam  
+- Rock Blast  
+- Wide Guard  
 
-Carvanha
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fearow @ Charti Berry
+Ability: Sniper  
+Level: 19
+- Quick Attack  
+- Pluck  
+- U-turn  
+- Tri Attack  
+
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
 Name: GRUNT
@@ -754,85 +810,153 @@ Gloom
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROSE_2 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+=== TRAINER_AQUA_ADMIN_FARM ===
+Name: SHELLY
+Class: Aqua Admin
+Pic: Aqua Admin F
 Gender: Female
-Music: Female
+Music: Aqua
+AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+
+Ariados @ Sitrus Berry  
+Ability: Swarm  
+Level: 22
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- Bug Bite  
+- Cross Poison  
+- Toxic Thread  
+- Night Slash  
+
+Seaking @ Muscle Band  
+Ability: Water Veil  
+Level: 22
+EVs: 252 HP / 4 SpD / 164 Spe  
+Adamant Nature  
+- Waterfall  
+- Horn Attack  
+- Acupressure  
+- Fury Cutter  
+
+Sneasel @ Lum Berry  
+Ability: Inner Focus  
+Level: 22
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Avalanche  
+- Lash Out  
+- Quick Attack  
+- Aerial Ace  
+
+=== TRAINER_MAGMA_ADMIN_FARM ===
+Name: TABITHA
+Class: Magma Admin
+Pic: Magma Admin
+Gender: Male
+Music: Magma
 Double Battle: Yes
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
-Shroomish
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Sandslash @ Muscle Band  
+Ability: Sand Veil  
+Level: 22
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Brick Break  
+- Drill Run  
+- Super Fang  
+- Crush Claw  
 
-Roselia
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Arboliva @ Sitrus Berry  
+Ability: Harvest  
+Level: 22
+EVs: 248 HP / 252 SpA / 8 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Alluring Voice  
+- Magical Leaf  
+- Synthesis  
+- Charm  
 
-=== TRAINER_ROSE_3 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+Pyroar @ Lum Berry  
+Ability: Unnerve  
+Level: 22
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Burning Jealousy  
+- Snarl  
+- Swift  
+- Noble Roar  
+
+=== TRAINER_AQUA_MULTI_GRUNT_FARM ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+
+Mightyena  
+Ability: Intimidate  
+Level: 20
+Jolly Nature  
+- Bite  
+- Ice Fang  
+- Thunder Fang  
+- Heal Bell  
+
+Sudowoodo  
+Ability: Sturdy  
+Level: 20
+- Ice Punch  
+- Thunder Punch  
+- Rock Slide  
+- Curse  
+
+Lumineon  
+Ability: Storm Drain  
+Level: 20
+IVs: 0 Atk  
+- Bubble Beam  
+- Icy Wind  
+- Tailwind  
+- Psybeam  
+
+=== TRAINER_MAGMA_MULTI_GRUNT_FARM ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
 Gender: Female
-Music: Female
+Music: Magma
 Double Battle: Yes
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
-Shroomish
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Swalot  
+Ability: Liquid Ooze  
+Level: 20
+- Acid Armor  
+- Fire Punch  
+- Thunder Punch  
+- Poison Jab  
 
-Gloom
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Klang  
+Ability: Clear Body  
+Level: 20
+- Gear Grind  
+- Vise Grip  
+- Wild Charge  
+- Autotomize  
 
-Roselia
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-=== TRAINER_ROSE_4 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
-Double Battle: Yes
-AI: Check Bad Move
-
-Shroomish
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Gloom
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Roselia
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-=== TRAINER_ROSE_5 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
-Double Battle: Yes
-AI: Check Bad Move
-
-Breloom
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Gloom
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
-Roselia
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Cherrim  
+Ability: Flower Gift  
+Level: 20
+IVs: 31 HP / 3 Atk / 300 Def / 31 SpA / 30 SpD / 30 Spe
+- Draining Kiss  
+- Magical Leaf  
+- Hidden Power
+- Synthesis  
 
 === TRAINER_DUSTY_1 ===
 Name: DUSTY

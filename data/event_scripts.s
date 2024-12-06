@@ -1076,3 +1076,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/OldaleRuins/scripts.inc"
+
+	.include "data/maps/Slateport_Original/scripts.inc"
+
+	.include "data/maps/SlateportCity_FarmCorridor/scripts.inc"
+
+	.include "data/maps/SlateportFarm/scripts.inc"
+
+	.include "data/maps/SlateportBay/scripts.inc"
+
+	.include "data/maps/SlateportCity_FarmCorridor_B1F/scripts.inc"

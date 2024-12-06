@@ -14,7 +14,7 @@
     {
       "id": "LAYOUT_SLATEPORT_CITY",
       "name": "SlateportCity_Layout",
-      "width": 40,
+      "width": 46,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
@@ -185,7 +185,7 @@
       "id": "LAYOUT_ROUTE103",
       "name": "Route103_Layout",
       "width": 80,
-      "height": 24,
+      "height": 26,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route103/border.bin",
@@ -4420,6 +4420,56 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/OldaleRuins/border.bin",
       "blockdata_filepath": "data/layouts/OldaleRuins/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLATEPORT_ORIGINAL",
+      "name": "Slateport_Original_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Slateport_Original/border.bin",
+      "blockdata_filepath": "data/layouts/Slateport_Original/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLATEPORT_CITY_FARM_CORRIDOR",
+      "name": "SlateportCity_FarmCorridor_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SlateportCity_FarmCorridor/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_FarmCorridor/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLATEPORT_FARM",
+      "name": "SlateportFarm_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/SlateportFarm/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportFarm/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLATEPORT_BAY",
+      "name": "SlateportBay_Layout",
+      "width": 55,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/SlateportBay/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportBay/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLATEPORT_CITY_FARM_CORRIDOR_B1F",
+      "name": "SlateportCity_FarmCorridor_B1F_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SlateportCity_FarmCorridor_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_FarmCorridor_B1F/map.bin"
     }
   ]
 }

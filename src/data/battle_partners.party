@@ -41,3 +41,79 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 - Protect
 - Solar Beam
 - Dragon Claw
+
+=== PARTNER_AQUA ===
+Name: Shelly
+Class: Aqua Admin
+Pic: Leaf
+Gender: Female
+Music: Aqua
+
+Ariados @ Sitrus Berry  
+Ability: Swarm  
+Level: 22
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- Bug Bite  
+- Cross Poison  
+- Toxic Thread  
+- Night Slash  
+
+Seaking @ Muscle Band  
+Ability: Water Veil  
+Level: 22
+EVs: 252 HP / 4 SpD / 164 Spe  
+Adamant Nature  
+- Waterfall  
+- Horn Attack  
+- Acupressure  
+- Fury Cutter  
+
+Sneasel @ Lum Berry  
+Ability: Inner Focus  
+Level: 22
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Avalanche  
+- Lash Out  
+- Quick Attack  
+- Aerial Ace  
+
+=== PARTNER_MAGMA ===
+Name: Tabitha
+Class: Magma Admin
+Pic: Red
+Gender: Male
+Music: Magma
+
+Sandslash @ Muscle Band  
+Ability: Sand Veil  
+Level: 22
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Brick Break  
+- Drill Run  
+- Super Fang  
+- Crush Claw  
+
+Arboliva @ Sitrus Berry  
+Ability: Harvest  
+Level: 22
+EVs: 248 HP / 252 SpA / 8 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Alluring Voice  
+- Magical Leaf  
+- Synthesis  
+- Charm  
+
+Pyroar @ Lum Berry  
+Ability: Unnerve  
+Level: 22
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Burning Jealousy  
+- Snarl  
+- Swift  
+- Noble Roar  
