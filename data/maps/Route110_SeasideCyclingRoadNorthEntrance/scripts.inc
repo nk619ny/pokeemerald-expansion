@@ -2,19 +2,11 @@
 
 # 2 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 Route110_SeasideCyclingRoadNorthEntrance_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Route110_SeasideCyclingRoadNorthEntrance_OnTransition
+# 3 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	.byte 0
 # 4 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 
-Route110_SeasideCyclingRoadNorthEntrance_OnTransition:
-	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 3, Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge
-	call_if_eq VAR_CYCLING_CHALLENGE_STATE, 2, Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge
-	end
-
-Route110_SeasideCyclingRoadNorthEntrance_EventScript_RestartChallenge::
-	setvar VAR_CYCLING_CHALLENGE_STATE, 1
-	return
-
+# 5 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_Clerk::
 # 6 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	lock
@@ -34,7 +26,7 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck::
 	lockall
 # 14 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	specialvar VAR_RESULT, GetPlayerAvatarBike
-	call_if_eq VAR_RESULT, 2, Route110_SeasideCyclingRoadNorthEntrance_EventScript_OnMachBike
+# 15 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, Route110_SeasideCyclingRoadNorthEntrance_EventScript_NoBike
 # 16 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	setflag FLAG_SYS_CYCLING_ROAD
@@ -46,10 +38,7 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck::
 	end
 # 20 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 
-Route110_SeasideCyclingRoadNorthEntrance_EventScript_OnMachBike::
-	setvar VAR_CYCLING_CHALLENGE_STATE, 1
-	return
-
+# 21 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_NoBike::
 # 22 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	msgbox Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk, MSGBOX_DEFAULT
@@ -77,7 +66,7 @@ Route110_SeasideCyclingRoadNorthEntrance_Movement_PushPlayerBackFromCounter:
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad::
 # 34 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	lockall
-	setvar VAR_CYCLING_CHALLENGE_STATE, 0
+# 35 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	clearflag FLAG_SYS_CYCLING_ROAD
 # 36 "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.pory"
 	setvar VAR_TEMP_1, 0

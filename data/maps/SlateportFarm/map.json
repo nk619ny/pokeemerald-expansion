@@ -379,7 +379,7 @@
       "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUIAN)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUI)",
       "x": 16,
       "y": 36,
       "elevation": 0,
@@ -392,7 +392,7 @@
       "flag": "FLAG_HIDDEN_BY_DEFAULT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUIAN)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUI)",
       "x": 20,
       "y": 36,
       "elevation": 0,
@@ -405,11 +405,11 @@
       "flag": "FLAG_HIDDEN_BY_DEFAULT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUIAN)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUI)",
       "x": 18,
       "y": 36,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -418,7 +418,7 @@
       "flag": "FLAG_HIDDEN_BY_DEFAULT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUIAN)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUI)",
       "x": 22,
       "y": 36,
       "elevation": 0,
