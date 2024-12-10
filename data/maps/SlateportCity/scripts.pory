@@ -270,12 +270,6 @@ SlateportCity_EventScript_Man1SternInterview::
 SlateportCity_EventScript_Woman1::
 	lock
 	faceplayer
-	goto_if_set FLAG_DOCK_REJECTED_DEVON_GOODS, SlateportCity_EventScript_Woman1AquaGone
-	msgbox SlateportCity_Text_WhatsLongLineOverThere, MSGBOX_DEFAULT
-	release
-	end
-
-SlateportCity_EventScript_Woman1AquaGone::
 	msgbox SlateportCity_Text_VisitedMuseumOften, MSGBOX_DEFAULT
 	release
 	end
@@ -368,7 +362,7 @@ SlateportCity_EventScript_Man2::
 	msgbox SlateportCity_Text_BattleTentBuiltRecently, MSGBOX_NPC
 	end
 
-SlateportCity_EventScript_AquaGrunt1::
+/* SlateportCity_EventScript_AquaGrunt1::
 	lock
 	faceplayer
 	msgbox SlateportCity_Text_QuitPushing, MSGBOX_DEFAULT
@@ -498,7 +492,7 @@ SlateportCity_EventScript_AquaGrunt11::
 	applymovement LOCALID_GRUNT_11, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
-	end
+	end   */
 
 SlateportCity_EventScript_DollClerk::
 	lock

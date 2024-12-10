@@ -101,7 +101,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "DewfordTown_EventScript_GymBlocker",
-      "flag": "FLAG_HIDE_DEWFORD_GYM_BLOCKER"
+      "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     }
   ],
   "warp_events": [

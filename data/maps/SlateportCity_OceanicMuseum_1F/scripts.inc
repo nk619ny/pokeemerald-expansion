@@ -135,7 +135,7 @@ SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter:
 # 68 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 
 # 69 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt1::
+/* SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt1::
 # 70 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	msgbox SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll, MSGBOX_NPC
 # 71 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -179,7 +179,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt6::
 # 90 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	msgbox SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney, MSGBOX_NPC
 # 91 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	end
+	end */
 # 92 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 
 # 93 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -287,7 +287,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron4::
 # 144 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 
 # 145 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
+/* SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 # 146 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	lock
 # 147 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -325,7 +325,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 # 163 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	goto_if_eq VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast
 # 164 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	end
+	end 
 # 165 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 
 # 166 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -379,7 +379,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited::
 # 190 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	release
 # 191 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	end
+	end */
 # 192 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 
 # 193 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"

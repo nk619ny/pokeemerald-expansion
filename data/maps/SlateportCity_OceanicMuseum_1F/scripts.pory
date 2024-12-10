@@ -66,7 +66,7 @@ SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter:
 	walk_down
 	step_end
 
-SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt1::
+/* SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt1::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll, MSGBOX_NPC
 	end
 
@@ -88,7 +88,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt5::
 
 SlateportCity_OceanicMuseum_1F_EventScript_MuseumGrunt6::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney, MSGBOX_NPC
-	end
+	end */
 
 SlateportCity_OceanicMuseum_1F_EventScript_WhirlpoolExperiment::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_WhirlpoolExperiment, MSGBOX_SIGN
@@ -142,7 +142,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron4::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon, MSGBOX_NPC
 	end
 
-SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
+/* SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 	lock
 	faceplayer
 	delay 8
@@ -161,7 +161,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 	goto_if_eq VAR_FACING, DIR_SOUTH, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitSouth
 	goto_if_eq VAR_FACING, DIR_WEST, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast
 	goto_if_eq VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast
-	end
+	end 
 
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth::
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitNorth
@@ -188,7 +188,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited::
 	playse SE_EXIT
 	removeobject LOCALID_FAMILIAR_GRUNT
 	release
-	end
+	end */
 
 SlateportCity_OceanicMuseum_1F_EventScript_NoRoomForThief::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_YouHaveToTakeThis, MSGBOX_DEFAULT

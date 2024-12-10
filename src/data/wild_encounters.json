@@ -11659,6 +11659,40 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_SLATEPORT_FARM",
+          "base_label": "gSlateportFarm0",
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_URSALUNA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_URSALUNA_BLOODMOON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_URSALUNA_BLOODMOON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_URSALUNA_BLOODMOON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_URSALUNA_BLOODMOON"
+              }
+            ]
+          }
         }
       ]
     },

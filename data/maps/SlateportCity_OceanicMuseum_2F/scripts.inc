@@ -17,7 +17,7 @@ SlateportCity_OceanicMuseum_2F_MapScripts::
 # 9 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 
 # 10 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
+/* SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 11 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	lock
 # 12 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -431,7 +431,7 @@ SlateportCity_OceanicMuseum_2F_Movement_GruntMoveForArchie:
 # 216 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	walk_in_place_faster_up
 # 217 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	step_end
+	step_end */
 # 218 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 
 # 219 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -880,3 +880,19 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“A replica of the luxury liner that\n"
 # 441 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	.string "circles the globe.”$"
+
+SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
+# 446 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	lockall
+# 447 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_EventScript_CaptStern_Text_0, MSGBOX_NPC
+# 448 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	releaseall
+	return
+
+
+SlateportCity_OceanicMuseum_2F_EventScript_CaptStern_Text_0:
+# 447 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "I'm preparing for an expedition to the\n"
+	.string "Ocean Floor soon. I'm excited to see\l"
+	.string "what we'll find!$"

@@ -271,7 +271,7 @@
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
-#define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
+#define VAR_LEVEL_HANDICAP                               0x40FE // Formerly unused
 #define VAR_LEVEL_CAP                                    0x40FF // Formerly unused
 
 #define VARS_END                                         0x40FF

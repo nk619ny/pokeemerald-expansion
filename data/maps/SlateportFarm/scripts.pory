@@ -184,6 +184,11 @@ script SlateportFarm_EventScript_AquaVictory {
     waitmovement(0)
     msgbox(format("Aqua Admin: But today we're going to bring down this wall, and fix all that."))
     waitmessage
+    applymovement(LOCALID_AQUAADMIN,Common_Movement_FaceRight)
+    waitmovement(0)
+    msgbox(format("Aqua Admin: As a reward for your help, take this. It's a field move that will allow you to trim down trees, once your Pokémon are strong enough to use it.\pThe small trees grow back fairly quickly, and you've proven yourself responsible enough to use it."))
+    waitmessage
+    giveitem(ITEM_HM01)
     closemessage
     removeobject(LOCALID_BRAWLYMON)
     applymovement(LOCALID_BRAWLY,SlateportFarm_Movement_BrawlyRescuePlayer)
@@ -236,6 +241,13 @@ script SlateportFarm_EventScript_MagmaVictory {
     msgbox(format("Brawly: I agree, but they have a point about some of the consequences of the land reclamation project. We all need to be more careful going forward how we develop Hoenn, and what it means for the Pokémon in the region."))
     msgbox(format("Magma Admin: Like it or not, Hoenn is growing at a rapid rate. We need more land for people to live, and to grow crops and raise livestock to support them. It might be painful at times, but the scientists at Team Magma will not sit on the sidelines and allow Hoenn to crash into a resource crisis.\pRegardless, thank you."))
     waitmessage
+    applymovement(LOCALID_MAGMAADMIN,Common_Movement_FaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox(format("Magma Admin: Take this as a token of our appreciation.\pThis field move will allow you to cut down small trees blocking your path, once your Pokémon are strong enough to use it.\pIt's sometimes necessary to bend the environment around us to move forward."))
+    waitmessage
+    giveitem(ITEM_HM01)
+    closemessage
     removeobject(4)
     applymovement(LOCALID_MAGMAADMIN,SlateportFarm_Movement_MagmaLeaves)
     waitmovement(0)
@@ -381,6 +393,34 @@ script SlateportFarm_EventScript_PokemonBattling {
     lock
     msgbox(SlateportFarm_PokemonBattlingText)
     waitmessage
+    releaseall
+    end
+}
+
+script SlateportFarm_EventScript_BoyInGrass {
+    lock
+    msgbox(format("I saw you up there defending our farm - thank you."),MSGBOX_NPC)
+    releaseall
+    end
+}
+
+script SlateportFarm_EventScript_OldWomanByHouse {
+    lock
+    msgbox(format("I used to work on a farm in Johto. When I heard they needed folks to develop new farmland in Hoenn, I moved with my family out here."),MSGBOX_NPC)
+    releaseall
+    end
+}
+
+script SlateportFarm_EventScript_ManByTrees {
+    lock
+    msgbox(format("I take care of the trees in the farm - growing them, pruning them, picking berries and fruit, and eventually cutting them. Many Pokémon make nests in the trees, or feed in them."),MSGBOX_NPC)
+    releaseall
+    end
+}
+
+script SlateportFarm_EventScript_WomanByFlowers {
+    lock
+    msgbox(format("It's scary that some people tried destroying our farm. I've worked so hard growing these lovely flowers."),MSGBOX_NPC)
     releaseall
     end
 }
