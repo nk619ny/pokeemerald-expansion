@@ -273,14 +273,14 @@ Route109_Movement_BrineyExitBoat:
 	walk_in_place_faster_left
 	step_end
 
-Route109_EventScript_MrBriney::
-	lock
-	faceplayer
-	goto_if_unset FLAG_DELIVERED_DEVON_GOODS, Route109_EventScript_HaveNotDeliveredDevonGood
-	goto Route109_EventScript_DeliveredDevonGoods
-	end
+//Route109_EventScript_MrBriney::
+//	lock
+//	faceplayer
+//	goto_if_unset FLAG_DELIVERED_DEVON_GOODS, Route109_EventScript_HaveNotDoneFarm
+//	goto Route109_EventScript_DeliveredDevonGoods
+//	end
 
-Route109_EventScript_HaveNotDeliveredDevonGood::
+Route109_EventScript_HaveNotDoneFarm::
 	message Route109_Text_BrineySailToDewfordQuestion
 	msgbox Route109_Text_BrineySailToDewfordQuestion, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route109_EventScript_StayHere
@@ -295,6 +295,13 @@ Route109_EventScript_DeliveredDevonGoods::
 	case 0, Route109_EventScript_SailToDewford
 	case 1, Route109_EventScript_ChoseNotToSail
 	case MULTI_B_PRESSED, Route109_EventScript_ChoseNotToSail
+	end
+
+Route109_EventScript_BrineyBeforeBrawly::
+	message Route109_Text_BrineyBeforeBrawly
+	msgbox Route109_Text_BrineyBeforeBrawly, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route109_EventScript_StayHere
+	goto Route109_EventScript_SailToDewford
 	end
 
 Route109_EventScript_SailToDewford::
@@ -561,4 +568,22 @@ text Route109_Text_BrineySailToDewfordQuestion {
 
 text Route109_Text_BrineyDeliverDevonGoods {
 	format("Then you go on and find Brawly. I'll be waiting here for you.")
+}
+
+text Route109_Text_BrineyBeforeBrawly {
+	format("So, you found Brawly!\pAre you ready to sail back to Dewford and challenge him?")
+}
+
+script Route109_EventScript_MrBriney{
+	lock
+	faceplayer
+	if(!flag(FLAG_SLATEPORT_FARM_COMPLETED)) {
+		goto(Route109_EventScript_HaveNotDoneFarm)
+	}
+	if(!flag(FLAG_DEFEATED_DEWFORD_GYM)) {
+		goto(Route109_EventScript_BrineyBeforeBrawly)
+	}
+	goto(Route109_EventScript_DeliveredDevonGoods)
+	releaseall
+	end
 }

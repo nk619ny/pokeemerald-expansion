@@ -1163,3 +1163,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SlateportBay/scripts.inc"
 
 	.include "data/maps/SlateportCity_FarmCorridor_B1F/scripts.inc"
+
+	.include "data/maps/Route104_North/scripts.inc"

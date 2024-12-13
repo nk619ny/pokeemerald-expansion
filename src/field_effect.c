@@ -2607,7 +2607,7 @@ bool8 FldEff_FieldMoveShowMonInit(void)
     gFieldEffectArguments[1] = GetMonData(pokemon, MON_DATA_IS_SHINY);
     gFieldEffectArguments[2] = GetMonData(pokemon, MON_DATA_PERSONALITY);
     gFieldEffectArguments[0] |= noDucking;
-    FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON);
+    //FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON); //Commented out to hide Pokemon banner when using an HM. 
     FieldEffectActiveListRemove(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
     return FALSE;
 }

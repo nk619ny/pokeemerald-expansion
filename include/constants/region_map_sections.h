@@ -215,7 +215,7 @@
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
 #define MAPSEC_OLDALE_RUINS                 0xD5 //first new MAPSEC
-#define MAPSEC_104_NORTH                    0xD6
+#define MAPSEC_ROUTE_104_NORTH              0xD6
 #define MAPSEC_SLATEPORT_FARM               0xD7
 #define MAPSEC_SLATEPORT_BAY                0xD8
 
