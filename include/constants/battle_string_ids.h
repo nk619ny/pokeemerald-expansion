@@ -1002,8 +1002,8 @@
 // gStartingStatusStringIds
 #define B_MSG_TERRAIN_SET_MISTY     0
 #define B_MSG_TERRAIN_SET_ELECTRIC  1
-#define B_MSG_TERRAIN_SET_PSYCHIC   2
-#define B_MSG_TERRAIN_SET_GRASSY    3
+#define B_MSG_TERRAIN_SET_GRASSY    2 //switched with Psychic
+#define B_MSG_TERRAIN_SET_PSYCHIC   3 //switched with Grassy
 #define B_MSG_SET_TRICK_ROOM        4
 #define B_MSG_SET_MAGIC_ROOM        5
 #define B_MSG_SET_WONDER_ROOM       6
