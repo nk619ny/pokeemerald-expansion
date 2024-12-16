@@ -227,7 +227,7 @@ Route114_EventScript_RegisterSteve::
 # 114 "data/maps/Route114/scripts.pory"
 	msgbox Route114_Text_SteveRegister, MSGBOX_DEFAULT
 # 115 "data/maps/Route114/scripts.pory"
-	register_matchcall TRAINER_STEVE_1
+	//register_matchcall TRAINER_STEVE_1
 # 116 "data/maps/Route114/scripts.pory"
 	release
 # 117 "data/maps/Route114/scripts.pory"
@@ -269,7 +269,7 @@ Route114_EventScript_RegisterBernie::
 # 135 "data/maps/Route114/scripts.pory"
 	msgbox Route114_Text_BernieRegister, MSGBOX_DEFAULT
 # 136 "data/maps/Route114/scripts.pory"
-	register_matchcall TRAINER_BERNIE_1
+	//register_matchcall TRAINER_BERNIE_1
 # 137 "data/maps/Route114/scripts.pory"
 	release
 # 138 "data/maps/Route114/scripts.pory"

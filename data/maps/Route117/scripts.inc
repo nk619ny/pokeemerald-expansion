@@ -177,7 +177,7 @@ Route117_EventScript_RegisterIsaac::
 # 89 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_IsaacRegister, MSGBOX_DEFAULT
 # 90 "data/maps/Route117/scripts.pory"
-	register_matchcall TRAINER_ISAAC_1
+	//register_matchcall TRAINER_ISAAC_1
 # 91 "data/maps/Route117/scripts.pory"
 	release
 # 92 "data/maps/Route117/scripts.pory"
@@ -219,7 +219,7 @@ Route117_EventScript_RegisterLydia::
 # 110 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_LydiaRegister, MSGBOX_DEFAULT
 # 111 "data/maps/Route117/scripts.pory"
-	register_matchcall TRAINER_LYDIA_1
+	//register_matchcall TRAINER_LYDIA_1
 # 112 "data/maps/Route117/scripts.pory"
 	release
 # 113 "data/maps/Route117/scripts.pory"
@@ -261,7 +261,7 @@ Route117_EventScript_RegisterDylan::
 # 131 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_DylanRegister, MSGBOX_DEFAULT
 # 132 "data/maps/Route117/scripts.pory"
-	register_matchcall TRAINER_DYLAN_1
+	//register_matchcall TRAINER_DYLAN_1
 # 133 "data/maps/Route117/scripts.pory"
 	release
 # 134 "data/maps/Route117/scripts.pory"
@@ -303,7 +303,7 @@ Route117_EventScript_RegisterMaria::
 # 152 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_MariaRegister, MSGBOX_DEFAULT
 # 153 "data/maps/Route117/scripts.pory"
-	register_matchcall TRAINER_MARIA_1
+	//register_matchcall TRAINER_MARIA_1
 # 154 "data/maps/Route117/scripts.pory"
 	release
 # 155 "data/maps/Route117/scripts.pory"
@@ -351,7 +351,7 @@ Route117_EventScript_RegisterAnna::
 # 176 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
 # 177 "data/maps/Route117/scripts.pory"
-	register_matchcall TRAINER_ANNA_AND_MEG_1
+	//register_matchcall TRAINER_ANNA_AND_MEG_1
 # 178 "data/maps/Route117/scripts.pory"
 	release
 # 179 "data/maps/Route117/scripts.pory"
@@ -389,7 +389,7 @@ Route117_EventScript_RegisterMeg::
 # 195 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
 # 196 "data/maps/Route117/scripts.pory"
-	register_matchcall TRAINER_ANNA_AND_MEG_1
+	//register_matchcall TRAINER_ANNA_AND_MEG_1
 # 197 "data/maps/Route117/scripts.pory"
 	release
 # 198 "data/maps/Route117/scripts.pory"

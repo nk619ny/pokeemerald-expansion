@@ -385,7 +385,7 @@ Route118_EventScript_RegisterRose::
 # 193 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_RoseRegister, MSGBOX_DEFAULT
 # 194 "data/maps/Route118/scripts.pory"
-	register_matchcall TRAINER_ROSE_1
+	//register_matchcall TRAINER_ROSE_1
 # 195 "data/maps/Route118/scripts.pory"
 	release
 # 196 "data/maps/Route118/scripts.pory"
@@ -447,7 +447,7 @@ Route118_EventScript_RegisterDalton::
 # 224 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_DaltonRegister, MSGBOX_DEFAULT
 # 225 "data/maps/Route118/scripts.pory"
-	register_matchcall TRAINER_DALTON_1
+	//register_matchcall TRAINER_DALTON_1
 # 226 "data/maps/Route118/scripts.pory"
 	release
 # 227 "data/maps/Route118/scripts.pory"

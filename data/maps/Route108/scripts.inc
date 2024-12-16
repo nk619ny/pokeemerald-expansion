@@ -81,7 +81,7 @@ Route108_EventScript_CoryRegisterMatchCallAfterBattle::
 # 41 "data/maps/Route108/scripts.pory"
 	msgbox Route108_Text_CoryRegister, MSGBOX_DEFAULT
 # 42 "data/maps/Route108/scripts.pory"
-	register_matchcall TRAINER_CORY_1
+	//register_matchcall TRAINER_CORY_1
 # 43 "data/maps/Route108/scripts.pory"
 	release
 # 44 "data/maps/Route108/scripts.pory"

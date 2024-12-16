@@ -31,7 +31,7 @@ MtPyre_6F_EventScript_RegisterValerie::
 # 16 "data/maps/MtPyre_6F/scripts.pory"
 	msgbox MtPyre_6F_Text_ValerieRegister, MSGBOX_DEFAULT
 # 17 "data/maps/MtPyre_6F/scripts.pory"
-	register_matchcall TRAINER_VALERIE_1
+	//register_matchcall TRAINER_VALERIE_1
 # 18 "data/maps/MtPyre_6F/scripts.pory"
 	release
 # 19 "data/maps/MtPyre_6F/scripts.pory"

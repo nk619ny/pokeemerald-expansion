@@ -59,7 +59,7 @@ Route106_EventScript_ElliotRegisterMatchCallAfterBattle::
 # 30 "data/maps/Route106/scripts.pory"
 	msgbox Route106_Text_ElliotRegister, MSGBOX_DEFAULT
 # 31 "data/maps/Route106/scripts.pory"
-	register_matchcall TRAINER_ELLIOT_1
+	//register_matchcall TRAINER_ELLIOT_1
 # 32 "data/maps/Route106/scripts.pory"
 	release
 # 33 "data/maps/Route106/scripts.pory"

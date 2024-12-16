@@ -165,7 +165,7 @@ Route112_EventScript_RegisterTrent::
 # 83 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_TrentRegister, MSGBOX_DEFAULT
 # 84 "data/maps/Route112/scripts.pory"
-	register_matchcall TRAINER_TRENT_1
+	//register_matchcall TRAINER_TRENT_1
 # 85 "data/maps/Route112/scripts.pory"
 	release
 # 86 "data/maps/Route112/scripts.pory"

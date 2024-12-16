@@ -4480,6 +4480,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route104_North/border.bin",
       "blockdata_filepath": "data/layouts/Route104_North/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERDANT_GROVE",
+      "name": "VerdantGrove_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/VerdantGrove/border.bin",
+      "blockdata_filepath": "data/layouts/VerdantGrove/map.bin"
     }
   ]
 }

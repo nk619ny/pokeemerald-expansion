@@ -973,7 +973,7 @@ MtChimney_EventScript_DefeatedShelby::
 # 487 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_ShelbyRegister, MSGBOX_DEFAULT
 # 488 "data/maps/MtChimney/scripts.pory"
-	register_matchcall TRAINER_SHELBY_1
+	//register_matchcall TRAINER_SHELBY_1
 # 489 "data/maps/MtChimney/scripts.pory"
 	release
 # 490 "data/maps/MtChimney/scripts.pory"
@@ -1055,7 +1055,7 @@ MtChimney_EventScript_SawyerDefeated::
 # 528 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_Text_SawyerRegister, MSGBOX_DEFAULT
 # 529 "data/maps/MtChimney/scripts.pory"
-	register_matchcall TRAINER_SAWYER_1
+	//register_matchcall TRAINER_SAWYER_1
 # 530 "data/maps/MtChimney/scripts.pory"
 	release
 # 531 "data/maps/MtChimney/scripts.pory"

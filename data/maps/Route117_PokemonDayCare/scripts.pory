@@ -8,3 +8,41 @@ Route117_PokemonDayCare_OnTransition:
 	end
 
 `
+
+script Route117_PokemonDayCare_EventScript_Breeder {
+	lock
+	msgbox(format("Sometimes the Pokémon left here lay eggs, but the Trainers don't always want them. We save these eggs for other Trainers who can raise them."),MSGBOX_NPC)
+	waitmessage
+	msgbox(format("Would you like to take care of a baby Pokémon egg?"),MSGBOX_YESNO)
+	switch (var(VAR_RESULT)) {
+		case YES:
+			getpartysize
+			if(var(VAR_RESULT) == PARTY_SIZE) {
+				goto(Route117_PokemonDayCare_EventScript_NoRoomForEgg)
+			}
+			else {
+				call(Route117_PokemonDayCare_EventScript_BabyPokemonEgg)
+			}
+		case NO:
+			msgbox(format("If you're ever interested in raising a baby Pokémon, let us know."),MSGBOX_NPC)
+	}
+	releaseall
+	end
+}
+
+script Route117_PokemonDayCare_EventScript_BabyPokemonEgg {
+	msgbox(format("Oh, wonderful! Here is an egg you can raise."),MSGBOX_NPC)
+	waitmessage
+	randomelement(SPECIES_PICHU,SPECIES_CLEFFA,SPECIES_IGGLYBUFF,SPECIES_TOGEPI,SPECIES_TYROGUE,SPECIES_SMOOCHUM,SPECIES_ELEKID,SPECIES_MAGBY,SPECIES_AZURILL,SPECIES_WYNAUT,SPECIES_BUDEW,SPECIES_CHINGLING,SPECIES_BONSLY,SPECIES_MIME_JR,SPECIES_HAPPINY,SPECIES_MUNCHLAX,SPECIES_RIOLU,SPECIES_MANTYKE,SPECIES_TOXEL)
+	giveegg(VAR_RESULT)
+	releaseall
+	end
+}
+
+script Route117_PokemonDayCare_EventScript_NoRoomForEgg {
+	msgbox(format("Oh, but if you want an egg, you will have to make room in your party first.\pCome back after you've done that!"))
+	waitmessage
+	closemessage
+	releaseall
+	end
+}

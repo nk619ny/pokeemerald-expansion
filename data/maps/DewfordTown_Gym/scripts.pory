@@ -166,7 +166,8 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	//setvar VAR_ROXANNE_CALL_STEP_COUNTER, 0
 	//setflag FLAG_ENABLE_ROXANNE_FIRST_CALL
 	setflag FLAG_HIDE_ROUTE_110_TEAM_AQUA
-	setvar VAR_LEVEL_CAP, 30
+	//setvar VAR_LEVEL_CAP, 30
+	call DewfordTown_Gym_EventScript_SetNewLevelCap
 	release
 	end
 
@@ -461,3 +462,8 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "I'm sorry, but I'd like you to come back\n"
 	.string "with at least two POKéMON.$"
 `
+
+script DewfordTown_Gym_EventScript_SetNewLevelCap {
+	setvar(VAR_LEVEL_CAP, 30)
+	addvar(VAR_LEVEL_CAP, VAR_LEVEL_HANDICAP)
+}

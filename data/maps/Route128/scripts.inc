@@ -385,7 +385,7 @@ Route128_EventScript_RegisterIsaiah::
 # 193 "data/maps/Route128/scripts.pory"
 	msgbox Route128_Text_IsaiahRegister, MSGBOX_DEFAULT
 # 194 "data/maps/Route128/scripts.pory"
-	register_matchcall TRAINER_ISAIAH_1
+	//register_matchcall TRAINER_ISAIAH_1
 # 195 "data/maps/Route128/scripts.pory"
 	release
 # 196 "data/maps/Route128/scripts.pory"
@@ -427,7 +427,7 @@ Route128_EventScript_RegisterKatelyn::
 # 214 "data/maps/Route128/scripts.pory"
 	msgbox Route128_Text_KatelynRegister, MSGBOX_DEFAULT
 # 215 "data/maps/Route128/scripts.pory"
-	register_matchcall TRAINER_KATELYN_1
+	//register_matchcall TRAINER_KATELYN_1
 # 216 "data/maps/Route128/scripts.pory"
 	release
 # 217 "data/maps/Route128/scripts.pory"

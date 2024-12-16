@@ -225,7 +225,7 @@ JaggedPass_EventScript_RegisterDiana::
 # 113 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_DianaRegister, MSGBOX_DEFAULT
 # 114 "data/maps/JaggedPass/scripts.pory"
-	register_matchcall TRAINER_DIANA_1
+	//register_matchcall TRAINER_DIANA_1
 # 115 "data/maps/JaggedPass/scripts.pory"
 	release
 # 116 "data/maps/JaggedPass/scripts.pory"
@@ -265,7 +265,7 @@ JaggedPass_EventScript_RegisterEthan::
 # 133 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_EthanRegister, MSGBOX_DEFAULT
 # 134 "data/maps/JaggedPass/scripts.pory"
-	register_matchcall TRAINER_ETHAN_1
+	//register_matchcall TRAINER_ETHAN_1
 # 135 "data/maps/JaggedPass/scripts.pory"
 	release
 # 136 "data/maps/JaggedPass/scripts.pory"

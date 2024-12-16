@@ -79,7 +79,7 @@ Route102_EventScript_CalvinRegisterMatchCall::
 # 40 "data/maps/Route102/scripts.pory"
 	msgbox Route102_Text_CalvinRegisterShort, MSGBOX_DEFAULT
 # 41 "data/maps/Route102/scripts.pory"
-	register_matchcall TRAINER_CALVIN_1
+	//register_matchcall TRAINER_CALVIN_1
 # 42 "data/maps/Route102/scripts.pory"
 	release
 # 43 "data/maps/Route102/scripts.pory"
@@ -103,7 +103,7 @@ Route102_EventScript_CalvinRegister::
 # 52 "data/maps/Route102/scripts.pory"
 	msgbox Route102_Text_CalvinRegister, MSGBOX_DEFAULT
 # 53 "data/maps/Route102/scripts.pory"
-	register_matchcall TRAINER_CALVIN_1
+	//register_matchcall TRAINER_CALVIN_1
 # 54 "data/maps/Route102/scripts.pory"
 	release
 # 55 "data/maps/Route102/scripts.pory"

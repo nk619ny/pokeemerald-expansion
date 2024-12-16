@@ -569,7 +569,7 @@ Route120_EventScript_RegisterRobert::
 # 285 "data/maps/Route120/scripts.pory"
 	msgbox Route120_Text_RobertRegister, MSGBOX_DEFAULT
 # 286 "data/maps/Route120/scripts.pory"
-	register_matchcall TRAINER_ROBERT_1
+	//register_matchcall TRAINER_ROBERT_1
 # 287 "data/maps/Route120/scripts.pory"
 	release
 # 288 "data/maps/Route120/scripts.pory"
@@ -631,7 +631,7 @@ Route120_EventScript_RegisterJeffrey::
 # 316 "data/maps/Route120/scripts.pory"
 	msgbox Route120_Text_JeffreyRegister, MSGBOX_DEFAULT
 # 317 "data/maps/Route120/scripts.pory"
-	register_matchcall TRAINER_JEFFREY_1
+	//register_matchcall TRAINER_JEFFREY_1
 # 318 "data/maps/Route120/scripts.pory"
 	release
 # 319 "data/maps/Route120/scripts.pory"

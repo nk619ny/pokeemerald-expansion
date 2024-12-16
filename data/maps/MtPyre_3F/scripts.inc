@@ -51,7 +51,7 @@ MtPyre_3F_EventScript_RegisterGabrielle::
 # 26 "data/maps/MtPyre_3F/scripts.pory"
 	msgbox MtPyre_3F_Text_GabrielleRegister, MSGBOX_DEFAULT
 # 27 "data/maps/MtPyre_3F/scripts.pory"
-	register_matchcall TRAINER_GABRIELLE_1
+	//register_matchcall TRAINER_GABRIELLE_1
 # 28 "data/maps/MtPyre_3F/scripts.pory"
 	release
 # 29 "data/maps/MtPyre_3F/scripts.pory"

@@ -141,7 +141,7 @@ Route113_EventScript_RegisterMadeline::
 # 71 "data/maps/Route113/scripts.pory"
 	msgbox Route113_Text_MadelineRegister, MSGBOX_DEFAULT
 # 72 "data/maps/Route113/scripts.pory"
-	register_matchcall TRAINER_MADELINE_1
+	//register_matchcall TRAINER_MADELINE_1
 # 73 "data/maps/Route113/scripts.pory"
 	release
 # 74 "data/maps/Route113/scripts.pory"
@@ -183,7 +183,7 @@ Route113_EventScript_RegisterLao::
 # 92 "data/maps/Route113/scripts.pory"
 	msgbox Route113_Text_LaoRegister, MSGBOX_DEFAULT
 # 93 "data/maps/Route113/scripts.pory"
-	register_matchcall TRAINER_LAO_1
+	//register_matchcall TRAINER_LAO_1
 # 94 "data/maps/Route113/scripts.pory"
 	release
 # 95 "data/maps/Route113/scripts.pory"

@@ -224,6 +224,7 @@ MauvilleCity_Gym_EventScript_Angelo::
 
 MauvilleCity_Gym_EventScript_GymGuide::
 	lock
+	call MauvilleCity_Gym_EventScript_SetNewLevelCap
 	faceplayer
 	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_GymGuidePostVictory
 	msgbox MauvilleCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
@@ -421,3 +422,10 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 	.string "POKéMON, all right?$"
 
 `
+
+
+script MauvilleCity_Gym_EventScript_SetNewLevelCap {
+	setvar(VAR_LEVEL_HANDICAP, 5)
+	setvar(VAR_LEVEL_CAP, 40)
+	addvar(VAR_LEVEL_CAP, VAR_LEVEL_HANDICAP)
+}

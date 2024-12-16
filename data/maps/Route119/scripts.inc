@@ -731,7 +731,7 @@ Route119_EventScript_RegisterJackson::
 # 366 "data/maps/Route119/scripts.pory"
 	msgbox Route119_Text_JacksonRegister, MSGBOX_DEFAULT
 # 367 "data/maps/Route119/scripts.pory"
-	register_matchcall TRAINER_JACKSON_1
+	//register_matchcall TRAINER_JACKSON_1
 # 368 "data/maps/Route119/scripts.pory"
 	release
 # 369 "data/maps/Route119/scripts.pory"
@@ -773,7 +773,7 @@ Route119_EventScript_RegisterCatherine::
 # 387 "data/maps/Route119/scripts.pory"
 	msgbox Route119_Text_CatherineRegister, MSGBOX_DEFAULT
 # 388 "data/maps/Route119/scripts.pory"
-	register_matchcall TRAINER_CATHERINE_1
+	//register_matchcall TRAINER_CATHERINE_1
 # 389 "data/maps/Route119/scripts.pory"
 	release
 # 390 "data/maps/Route119/scripts.pory"

@@ -64,17 +64,6 @@ VerdanturfTown_EventScript_RusturfTunnelSign::
 	msgbox VerdanturfTown_Text_RusturfTunnelSign, MSGBOX_SIGN
 	end
 
-VerdanturfTown_Text_ManTryingToDigTunnel:
-	.string "My papa told me.\p"
-	.string "He says this tunnel is full of\n"
-	.string "timid POKéMON.\p"
-	.string "They get all scared of loud noise and\n"
-	.string "make a big uproar.\p"
-	.string "So they had to stop the big tunnel\n"
-	.string "project.\p"
-	.string "But there's one man. He's trying to dig\n"
-	.string "the tunnel by himself!$"
-
 VerdanturfTown_Text_ManDugTunnelForLove:
 	.string "There was a man who dug a tunnel for\n"
 	.string "a lady he loved.\p"
@@ -127,3 +116,7 @@ VerdanturfTown_Text_RusturfTunnelSign:
 	.string "canceled.”$"
 
 `
+
+text VerdanturfTown_Text_ManTryingToDigTunnel {
+	format("They tried building a tunnel to Rustboro City, but it was abandoned because of the Pokémon inside.\pBut now that the bridge outside Rustboro is broken, they're trying to finish the tunnel again.")
+}

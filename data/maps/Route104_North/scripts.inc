@@ -279,7 +279,7 @@ Route104_North_EventScript_RegisterHaleyAfterBattle::
 # 140 "data/maps/Route104_North/scripts.pory"
 	msgbox Route104_Text_HaleyRegister2, MSGBOX_DEFAULT
 # 141 "data/maps/Route104_North/scripts.pory"
-	register_matchcall TRAINER_HALEY_1
+	//register_matchcall TRAINER_HALEY_1
 # 142 "data/maps/Route104_North/scripts.pory"
 	release
 # 143 "data/maps/Route104_North/scripts.pory"
@@ -303,7 +303,7 @@ Route104_North_EventScript_RegisterHaley::
 # 152 "data/maps/Route104_North/scripts.pory"
 	msgbox Route104_Text_HaleyRegister1, MSGBOX_DEFAULT
 # 153 "data/maps/Route104_North/scripts.pory"
-	register_matchcall TRAINER_HALEY_1
+	//register_matchcall TRAINER_HALEY_1
 # 154 "data/maps/Route104_North/scripts.pory"
 	release
 # 155 "data/maps/Route104_North/scripts.pory"
@@ -361,7 +361,7 @@ Route104_North_EventScript_RegisterWinstonAfterBattle::
 # 181 "data/maps/Route104_North/scripts.pory"
 	msgbox Route104_Text_WinstonRegister2, MSGBOX_DEFAULT
 # 182 "data/maps/Route104_North/scripts.pory"
-	register_matchcall TRAINER_WINSTON_1
+	//register_matchcall TRAINER_WINSTON_1
 # 183 "data/maps/Route104_North/scripts.pory"
 	release
 # 184 "data/maps/Route104_North/scripts.pory"
@@ -385,7 +385,7 @@ Route104_North_EventScript_RegisterWinston::
 # 193 "data/maps/Route104_North/scripts.pory"
 	msgbox Route104_Text_WinstonRegister1, MSGBOX_DEFAULT
 # 194 "data/maps/Route104_North/scripts.pory"
-	register_matchcall TRAINER_WINSTON_1
+	//register_matchcall TRAINER_WINSTON_1
 # 195 "data/maps/Route104_North/scripts.pory"
 	release
 # 196 "data/maps/Route104_North/scripts.pory"
@@ -443,7 +443,7 @@ Route104_North_EventScript_RegisterCindyAfterBattle::
 # 222 "data/maps/Route104_North/scripts.pory"
 	msgbox Route104_Text_CindyRegister2, MSGBOX_DEFAULT
 # 223 "data/maps/Route104_North/scripts.pory"
-	register_matchcall TRAINER_CINDY_1
+	//register_matchcall TRAINER_CINDY_1
 # 224 "data/maps/Route104_North/scripts.pory"
 	release
 # 225 "data/maps/Route104_North/scripts.pory"
@@ -467,7 +467,7 @@ Route104_North_EventScript_RegisterCindy::
 # 234 "data/maps/Route104_North/scripts.pory"
 	msgbox Route104_Text_CindyRegister1, MSGBOX_DEFAULT
 # 235 "data/maps/Route104_North/scripts.pory"
-	register_matchcall TRAINER_CINDY_1
+	//register_matchcall TRAINER_CINDY_1
 # 236 "data/maps/Route104_North/scripts.pory"
 	release
 # 237 "data/maps/Route104_North/scripts.pory"

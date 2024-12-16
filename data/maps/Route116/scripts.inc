@@ -523,7 +523,7 @@ Route116_EventScript_RegisterJerryAfterBattle::
 # 262 "data/maps/Route116/scripts.pory"
 	msgbox Route116_Text_JerryRegister2, MSGBOX_DEFAULT
 # 263 "data/maps/Route116/scripts.pory"
-	register_matchcall TRAINER_JERRY_1
+	//register_matchcall TRAINER_JERRY_1
 # 264 "data/maps/Route116/scripts.pory"
 	release
 # 265 "data/maps/Route116/scripts.pory"
@@ -547,7 +547,7 @@ Route116_EventScript_RegisterJerry::
 # 274 "data/maps/Route116/scripts.pory"
 	msgbox Route116_Text_JerryRegister1, MSGBOX_DEFAULT
 # 275 "data/maps/Route116/scripts.pory"
-	register_matchcall TRAINER_JERRY_1
+	//register_matchcall TRAINER_JERRY_1
 # 276 "data/maps/Route116/scripts.pory"
 	release
 # 277 "data/maps/Route116/scripts.pory"
@@ -625,7 +625,7 @@ Route116_EventScript_RegisterKarenAfterBattle::
 # 313 "data/maps/Route116/scripts.pory"
 	msgbox Route116_Text_KarenRegister2, MSGBOX_DEFAULT
 # 314 "data/maps/Route116/scripts.pory"
-	register_matchcall TRAINER_KAREN_1
+	//register_matchcall TRAINER_KAREN_1
 # 315 "data/maps/Route116/scripts.pory"
 	release
 # 316 "data/maps/Route116/scripts.pory"
@@ -649,7 +649,7 @@ Route116_EventScript_RegisterKaren::
 # 325 "data/maps/Route116/scripts.pory"
 	msgbox Route116_Text_KarenRegister1, MSGBOX_DEFAULT
 # 326 "data/maps/Route116/scripts.pory"
-	register_matchcall TRAINER_KAREN_1
+	//register_matchcall TRAINER_KAREN_1
 # 327 "data/maps/Route116/scripts.pory"
 	release
 # 328 "data/maps/Route116/scripts.pory"

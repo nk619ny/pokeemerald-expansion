@@ -91,7 +91,7 @@ Route115_EventScript_RegisterTimothy::
 # 46 "data/maps/Route115/scripts.pory"
 	msgbox Route115_Text_TimothyRegister, MSGBOX_DEFAULT
 # 47 "data/maps/Route115/scripts.pory"
-	register_matchcall TRAINER_TIMOTHY_1
+	//register_matchcall TRAINER_TIMOTHY_1
 # 48 "data/maps/Route115/scripts.pory"
 	release
 # 49 "data/maps/Route115/scripts.pory"
@@ -143,7 +143,7 @@ Route115_EventScript_RegisterNob::
 # 72 "data/maps/Route115/scripts.pory"
 	msgbox Route115_Text_NobRegister, MSGBOX_DEFAULT
 # 73 "data/maps/Route115/scripts.pory"
-	register_matchcall TRAINER_NOB_1
+	//register_matchcall TRAINER_NOB_1
 # 74 "data/maps/Route115/scripts.pory"
 	release
 # 75 "data/maps/Route115/scripts.pory"
@@ -185,7 +185,7 @@ Route115_EventScript_RegisterCyndy::
 # 93 "data/maps/Route115/scripts.pory"
 	msgbox Route115_Text_CyndyRegister, MSGBOX_DEFAULT
 # 94 "data/maps/Route115/scripts.pory"
-	register_matchcall TRAINER_CYNDY_1
+	//register_matchcall TRAINER_CYNDY_1
 # 95 "data/maps/Route115/scripts.pory"
 	release
 # 96 "data/maps/Route115/scripts.pory"

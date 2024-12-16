@@ -49,7 +49,7 @@ AbandonedShip_Rooms_1F_EventScript_RegisterThalia::
 # 25 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	msgbox AbandonedShip_Rooms_1F_Text_ThaliaRegister, MSGBOX_DEFAULT
 # 26 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	register_matchcall TRAINER_THALIA_1
+	//register_matchcall TRAINER_THALIA_1
 # 27 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	release
 # 28 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"

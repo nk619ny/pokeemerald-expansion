@@ -435,7 +435,7 @@ Route102_EventScript_AmyRegisterMatchCallAfterBattle::
 # 218 "data/maps/Route103/scripts.pory"
 	msgbox Route103_Text_AmyLivRegister, MSGBOX_DEFAULT
 # 219 "data/maps/Route103/scripts.pory"
-	register_matchcall TRAINER_AMY_AND_LIV_1
+	//register_matchcall TRAINER_AMY_AND_LIV_1
 # 220 "data/maps/Route103/scripts.pory"
 	release
 # 221 "data/maps/Route103/scripts.pory"
@@ -471,7 +471,7 @@ Route102_EventScript_LivRegisterMatchCallAfterBattle::
 # 236 "data/maps/Route103/scripts.pory"
 	msgbox Route103_Text_AmyLivRegister, MSGBOX_DEFAULT
 # 237 "data/maps/Route103/scripts.pory"
-	register_matchcall TRAINER_AMY_AND_LIV_1
+	//register_matchcall TRAINER_AMY_AND_LIV_1
 # 238 "data/maps/Route103/scripts.pory"
 	release
 # 239 "data/maps/Route103/scripts.pory"
@@ -523,7 +523,7 @@ Route102_EventScript_MiguelRegisterMatchCallAfterBattle::
 # 262 "data/maps/Route103/scripts.pory"
 	msgbox Route103_Text_MiguelRegister, MSGBOX_DEFAULT
 # 263 "data/maps/Route103/scripts.pory"
-	register_matchcall TRAINER_MIGUEL_1
+	//register_matchcall TRAINER_MIGUEL_1
 # 264 "data/maps/Route103/scripts.pory"
 	release
 # 265 "data/maps/Route103/scripts.pory"

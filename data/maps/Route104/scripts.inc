@@ -823,9 +823,9 @@ Route104_EventScript_ArriveInDewford::
 # 412 "data/maps/Route104/scripts.pory"
 	setvar VAR_BOARD_BRINEY_BOAT_STATE, 0
 # 413 "data/maps/Route104/scripts.pory"
-	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_DeliverLetterReminder
+	goto_if_unset FLAG_DEFEATED_DEWFORD_GYM, Route104_EventScript_DeliverLetterReminder
 # 414 "data/maps/Route104/scripts.pory"
-	goto_if_set FLAG_DELIVERED_STEVEN_LETTER, Route104_EventScript_LandedInDewford
+	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, Route104_EventScript_LandedInDewford
 # 415 "data/maps/Route104/scripts.pory"
 	end
 # 416 "data/maps/Route104/scripts.pory"
@@ -1757,7 +1757,7 @@ Route104_EventScript_RegisterHaleyAfterBattle::
 # 879 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_HaleyRegister2, MSGBOX_DEFAULT
 # 880 "data/maps/Route104/scripts.pory"
-	register_matchcall TRAINER_HALEY_1
+	//register_matchcall TRAINER_HALEY_1
 # 881 "data/maps/Route104/scripts.pory"
 	release
 # 882 "data/maps/Route104/scripts.pory"
@@ -1781,7 +1781,7 @@ Route104_EventScript_RegisterHaley::
 # 891 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_HaleyRegister1, MSGBOX_DEFAULT
 # 892 "data/maps/Route104/scripts.pory"
-	register_matchcall TRAINER_HALEY_1
+	//register_matchcall TRAINER_HALEY_1
 # 893 "data/maps/Route104/scripts.pory"
 	release
 # 894 "data/maps/Route104/scripts.pory"
@@ -1839,7 +1839,7 @@ Route104_EventScript_RegisterWinstonAfterBattle::
 # 920 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_WinstonRegister2, MSGBOX_DEFAULT
 # 921 "data/maps/Route104/scripts.pory"
-	register_matchcall TRAINER_WINSTON_1
+	//register_matchcall TRAINER_WINSTON_1
 # 922 "data/maps/Route104/scripts.pory"
 	release
 # 923 "data/maps/Route104/scripts.pory"
@@ -1863,7 +1863,7 @@ Route104_EventScript_RegisterWinston::
 # 932 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_WinstonRegister1, MSGBOX_DEFAULT
 # 933 "data/maps/Route104/scripts.pory"
-	register_matchcall TRAINER_WINSTON_1
+	//register_matchcall TRAINER_WINSTON_1
 # 934 "data/maps/Route104/scripts.pory"
 	release
 # 935 "data/maps/Route104/scripts.pory"
@@ -1921,7 +1921,7 @@ Route104_EventScript_RegisterCindyAfterBattle::
 # 961 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_CindyRegister2, MSGBOX_DEFAULT
 # 962 "data/maps/Route104/scripts.pory"
-	register_matchcall TRAINER_CINDY_1
+	//register_matchcall TRAINER_CINDY_1
 # 963 "data/maps/Route104/scripts.pory"
 	release
 # 964 "data/maps/Route104/scripts.pory"
@@ -1945,7 +1945,7 @@ Route104_EventScript_RegisterCindy::
 # 973 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_CindyRegister1, MSGBOX_DEFAULT
 # 974 "data/maps/Route104/scripts.pory"
-	register_matchcall TRAINER_CINDY_1
+	//register_matchcall TRAINER_CINDY_1
 # 975 "data/maps/Route104/scripts.pory"
 	release
 # 976 "data/maps/Route104/scripts.pory"

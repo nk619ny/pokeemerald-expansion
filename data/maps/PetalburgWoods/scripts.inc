@@ -599,7 +599,7 @@ PetalburgWoods_EventScript_RegisterJames::
 # 300 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_Text_IWantRematch1, MSGBOX_DEFAULT
 # 301 "data/maps/PetalburgWoods/scripts.pory"
-	register_matchcall TRAINER_JAMES_1
+	//register_matchcall TRAINER_JAMES_1
 # 302 "data/maps/PetalburgWoods/scripts.pory"
 	release
 # 303 "data/maps/PetalburgWoods/scripts.pory"
@@ -623,7 +623,7 @@ PetalburgWoods_EventScript_RegisterJames2::
 # 312 "data/maps/PetalburgWoods/scripts.pory"
 	msgbox PetalburgWoods_Text_IWantRematch2, MSGBOX_DEFAULT
 # 313 "data/maps/PetalburgWoods/scripts.pory"
-	register_matchcall TRAINER_JAMES_1
+	//register_matchcall TRAINER_JAMES_1
 # 314 "data/maps/PetalburgWoods/scripts.pory"
 	release
 # 315 "data/maps/PetalburgWoods/scripts.pory"

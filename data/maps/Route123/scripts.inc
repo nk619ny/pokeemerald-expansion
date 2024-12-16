@@ -143,7 +143,7 @@ Route123_EventScript_RegisterCameron::
 # 72 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_CameronRegister, MSGBOX_DEFAULT
 # 73 "data/maps/Route123/scripts.pory"
-	register_matchcall TRAINER_CAMERON_1
+	//register_matchcall TRAINER_CAMERON_1
 # 74 "data/maps/Route123/scripts.pory"
 	release
 # 75 "data/maps/Route123/scripts.pory"
@@ -185,7 +185,7 @@ Route123_EventScript_RegisterJacki::
 # 93 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_JackiRegister, MSGBOX_DEFAULT
 # 94 "data/maps/Route123/scripts.pory"
-	register_matchcall TRAINER_JACKI_1
+	//register_matchcall TRAINER_JACKI_1
 # 95 "data/maps/Route123/scripts.pory"
 	release
 # 96 "data/maps/Route123/scripts.pory"
@@ -327,7 +327,7 @@ Route123_EventScript_RegisterFernando::
 # 164 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_FernandoRegister, MSGBOX_DEFAULT
 # 165 "data/maps/Route123/scripts.pory"
-	register_matchcall TRAINER_FERNANDO_1
+	//register_matchcall TRAINER_FERNANDO_1
 # 166 "data/maps/Route123/scripts.pory"
 	release
 # 167 "data/maps/Route123/scripts.pory"

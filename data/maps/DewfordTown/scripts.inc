@@ -369,9 +369,9 @@ DewfordTown_EventScript_SailToSlateport::
 # 185 "data/maps/DewfordTown/scripts.pory"
 	hideobjectat LOCALID_BOAT_DEWFORD, MAP_DEWFORD_TOWN
 # 186 "data/maps/DewfordTown/scripts.pory"
-	call_if_unset FLAG_DELIVERED_DEVON_GOODS, DewfordTown_EventScript_LandedSlateportDeliverGoods
+	call_if_unset FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_LandedSlateportDeliverGoods
 # 187 "data/maps/DewfordTown/scripts.pory"
-	call_if_set FLAG_DELIVERED_DEVON_GOODS, DewfordTown_EventScript_LandedSlateport
+	call_if_set FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_LandedSlateport
 # 188 "data/maps/DewfordTown/scripts.pory"
 	closemessage
 # 189 "data/maps/DewfordTown/scripts.pory"

@@ -218,6 +218,7 @@
 #define MAPSEC_ROUTE_104_NORTH              0xD6
 #define MAPSEC_SLATEPORT_FARM               0xD7
 #define MAPSEC_SLATEPORT_BAY                0xD8
+#define MAPSEC_VERDANT_GROVE                0xD9
 
 #define MAPSEC_NONE                         0xF9 //was 0xD5
 

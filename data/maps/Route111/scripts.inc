@@ -941,7 +941,7 @@ Route111_EventScript_RegisterDusty::
 # 471 "data/maps/Route111/scripts.pory"
 	msgbox Route111_Text_DustyRegister, MSGBOX_DEFAULT
 # 472 "data/maps/Route111/scripts.pory"
-	register_matchcall TRAINER_DUSTY_1
+	//register_matchcall TRAINER_DUSTY_1
 # 473 "data/maps/Route111/scripts.pory"
 	release
 # 474 "data/maps/Route111/scripts.pory"
@@ -1013,7 +1013,7 @@ Route111_EventScript_RegisterWilton::
 # 507 "data/maps/Route111/scripts.pory"
 	msgbox Route111_Text_WiltonRegister, MSGBOX_DEFAULT
 # 508 "data/maps/Route111/scripts.pory"
-	register_matchcall TRAINER_WILTON_1
+	//register_matchcall TRAINER_WILTON_1
 # 509 "data/maps/Route111/scripts.pory"
 	release
 # 510 "data/maps/Route111/scripts.pory"
@@ -1055,7 +1055,7 @@ Route111_EventScript_RegisterBrooke::
 # 528 "data/maps/Route111/scripts.pory"
 	msgbox Route111_Text_BrookeRegister, MSGBOX_DEFAULT
 # 529 "data/maps/Route111/scripts.pory"
-	register_matchcall TRAINER_BROOKE_1
+	//register_matchcall TRAINER_BROOKE_1
 # 530 "data/maps/Route111/scripts.pory"
 	release
 # 531 "data/maps/Route111/scripts.pory"

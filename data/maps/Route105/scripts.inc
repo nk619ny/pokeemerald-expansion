@@ -139,7 +139,7 @@ Route105_EventScript_AndresRegisterMatchCallAfterBattle::
 # 70 "data/maps/Route105/scripts.pory"
 	msgbox Route105_Text_AndresRegister, MSGBOX_DEFAULT
 # 71 "data/maps/Route105/scripts.pory"
-	register_matchcall TRAINER_ANDRES_1
+	//register_matchcall TRAINER_ANDRES_1
 # 72 "data/maps/Route105/scripts.pory"
 	release
 # 73 "data/maps/Route105/scripts.pory"

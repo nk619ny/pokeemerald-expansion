@@ -177,7 +177,7 @@ Route121_EventScript_RegisterWalter::
 # 89 "data/maps/Route121/scripts.pory"
 	msgbox Route121_Text_WalterRegister, MSGBOX_DEFAULT
 # 90 "data/maps/Route121/scripts.pory"
-	register_matchcall TRAINER_WALTER_1
+	//register_matchcall TRAINER_WALTER_1
 # 91 "data/maps/Route121/scripts.pory"
 	release
 # 92 "data/maps/Route121/scripts.pory"
@@ -249,7 +249,7 @@ Route121_EventScript_RegisterJessica::
 # 125 "data/maps/Route121/scripts.pory"
 	msgbox Route121_Text_JessicaRegister, MSGBOX_DEFAULT
 # 126 "data/maps/Route121/scripts.pory"
-	register_matchcall TRAINER_JESSICA_1
+	//register_matchcall TRAINER_JESSICA_1
 # 127 "data/maps/Route121/scripts.pory"
 	release
 # 128 "data/maps/Route121/scripts.pory"
@@ -331,7 +331,7 @@ Route121_EventScript_RegisterCristin::
 # 166 "data/maps/Route121/scripts.pory"
 	msgbox Route121_Text_CristinRegister, MSGBOX_DEFAULT
 # 167 "data/maps/Route121/scripts.pory"
-	register_matchcall TRAINER_CRISTIN_1
+	//register_matchcall TRAINER_CRISTIN_1
 # 168 "data/maps/Route121/scripts.pory"
 	release
 # 169 "data/maps/Route121/scripts.pory"

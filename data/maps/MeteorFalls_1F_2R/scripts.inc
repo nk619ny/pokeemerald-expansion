@@ -31,7 +31,7 @@ MeteorFalls_1F_2R_EventScript_RegisterNicolas::
 # 16 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	msgbox MeteorFalls_1F_2R_Text_NicolasRegister, MSGBOX_DEFAULT
 # 17 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	register_matchcall TRAINER_NICOLAS_1
+	//register_matchcall TRAINER_NICOLAS_1
 # 18 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	release
 # 19 "data/maps/MeteorFalls_1F_2R/scripts.pory"
@@ -69,7 +69,7 @@ MeteorFalls_1F_2R_EventScript_RegisterJohn::
 # 35 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	msgbox MeteorFalls_1F_2R_Text_JohnRegister, MSGBOX_DEFAULT
 # 36 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	register_matchcall TRAINER_JOHN_AND_JAY_1
+	//register_matchcall TRAINER_JOHN_AND_JAY_1
 # 37 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	release
 # 38 "data/maps/MeteorFalls_1F_2R/scripts.pory"
@@ -107,7 +107,7 @@ MeteorFalls_1F_2R_EventScript_RegisterJay::
 # 54 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	msgbox MeteorFalls_1F_2R_Text_JohnRegister, MSGBOX_DEFAULT  @ John speaks for both during register
 # 55 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	register_matchcall TRAINER_JOHN_AND_JAY_1
+	//register_matchcall TRAINER_JOHN_AND_JAY_1
 # 56 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	release
 # 57 "data/maps/MeteorFalls_1F_2R/scripts.pory"
