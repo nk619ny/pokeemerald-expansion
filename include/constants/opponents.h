@@ -50,10 +50,10 @@
 #define TRAINER_DUSTY_1                      44
 #define TRAINER_CHIP                         45
 #define TRAINER_FOSTER                       46
-#define TRAINER_DUSTY_2                      47
-#define TRAINER_DUSTY_3                      48
-#define TRAINER_DUSTY_4                      49
-#define TRAINER_DUSTY_5                      50
+#define TRAINER_AQUA_ADMIN_RUSTURF           47 //hijacked rematches of Dusty in 47-50 for new fights
+#define TRAINER_GRUNT_RUSTURF_TUNNEL_2       48 //hijacked rematches of Dusty in 47-50 for new fights
+#define TRAINER_DUSTY_4                      49 //available
+#define TRAINER_DUSTY_5                      50 //available
 #define TRAINER_GABBY_AND_TY_1               51
 #define TRAINER_GABBY_AND_TY_2               52
 #define TRAINER_GABBY_AND_TY_3               53

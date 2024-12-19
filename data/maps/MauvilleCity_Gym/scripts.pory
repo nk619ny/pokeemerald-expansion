@@ -222,9 +222,9 @@ MauvilleCity_Gym_EventScript_Angelo::
 	msgbox MauvilleCity_Gym_Text_AngeloPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MauvilleCity_Gym_EventScript_GymGuide::
+MauvilleCity_Gym_EventScript_GymGuideDuringChallenge::
 	lock
-	call MauvilleCity_Gym_EventScript_SetNewLevelCap
+//	call MauvilleCity_Gym_EventScript_SetNewLevelCap
 	faceplayer
 	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_GymGuidePostVictory
 	msgbox MauvilleCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
@@ -420,12 +420,160 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 	.string "You've only one POKéMON with you!\p"
 	.string "Come see me with two or more\n"
 	.string "POKéMON, all right?$"
-
 `
 
+const LOCALID_GYMGUIDE = 6
 
 script MauvilleCity_Gym_EventScript_SetNewLevelCap {
 	setvar(VAR_LEVEL_HANDICAP, 5)
 	setvar(VAR_LEVEL_CAP, 40)
 	addvar(VAR_LEVEL_CAP, VAR_LEVEL_HANDICAP)
+}
+
+script MauvilleCity_Gym_EventScript_GymGuide{
+	lock
+	if(!flag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)){
+		goto(MauvilleCity_Gym_EventScript_GymGuideWattsonBusy)
+	}
+	else{
+		goto(MauvilleCity_Gym_EventScript_GymGuideDuringChallenge)
+	}
+}
+
+script MauvilleCity_Gym_EventScript_GymGuideWattsonBusy {
+	lock
+	faceplayer
+	msgbox(MauvilleCity_Gym_Text_GymGuideWattsonBusy,MSGBOX_NPC)
+	releaseall
+	end
+}
+
+text MauvilleCity_Gym_Text_GymGuideWattsonBusy{
+	format("Wattson is busy right now.\pYou should come back later.\nI recommend checking out Verdanturf Town to the West - it's quite lovely!")
+}
+
+text MauvilleCity_Gym_Text_GymGuideHaltPlayer{
+	format("Wattson, the Gym Leader, is in the middle of a battle with another challenger already.\pYou should come back later.\nMaybe take the chance to explore the local area first?")
+}
+
+script MauvilleCity_Gym_EventScript_HaltPlayerTrigger5 {
+	setvar(VAR_TEMP_2,5)
+	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
+}
+
+script MauvilleCity_Gym_EventScript_HaltPlayerTrigger6 {
+	setvar(VAR_TEMP_2,6)
+	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
+}	
+
+script MauvilleCity_Gym_EventScript_HaltPlayerTrigger7 {
+	setvar(VAR_TEMP_2,7)
+	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
+}	
+
+script MauvilleCity_Gym_EventScript_HaltPlayerTrigger8 {
+	setvar(VAR_TEMP_2,8)
+	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
+}	
+
+script MauvilleCity_Gym_EventScript_HaltPlayerTrigger9 {
+	setvar(VAR_TEMP_2,9)
+	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
+}	
+
+script MauvilleCity_Gym_EventScript_HaltPlayer {
+	lockall
+	if(flag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)){
+		setvar(VAR_TEMP_3,1)
+		releaseall
+		end
+	}
+	applymovement(LOCALID_GYMGUIDE, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	setflag(FLAG_TEMP_HIDE_FOLLOWER)
+	switch(var(VAR_TEMP_2)){
+		case 5:
+			delay(5)
+		case 6:
+			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer6)
+		case 7:
+			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer7)
+		case 8:
+			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer8)
+		case 9:
+			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer9)
+	}
+	waitmovement(0)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
+	waitmovement(0)
+	setflag(FLAG_TEMP_HIDE_FOLLOWER)
+	msgbox(MauvilleCity_Gym_Text_GymGuideHaltPlayer,MSGBOX_NPC)
+	waitmessage
+	applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuidePushPlayer)
+	applymovement(OBJ_EVENT_ID_PLAYER, MauvilleCity_Gym_Movement_Player_ForcedDown)
+	waitmovement(0)
+	delay(10)
+	switch(var(VAR_TEMP_2)){
+		case 5:
+			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot5)
+		case 6:
+			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot6)
+		case 7:
+			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot7)
+		case 8:
+			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot8)
+		case 9:
+			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot9)
+	}
+	waitmovement(0)
+	delay(20)
+	applymovement(LOCALID_GYMGUIDE, Common_Movement_FaceLeft)
+	waitmovement(0)
+	clearflag(FLAG_TEMP_HIDE_FOLLOWER)
+	releaseall
+	end
+}
+
+movement MauvilleCity_Gym_Movement_Player_ForcedDown {
+	walk_down
+}
+
+movement MauvilleCity_Gym_Movement_GymGuidePushPlayer {
+	walk_left
+}
+
+movement MauvilleCity_Gym_Movement_GymGuideHaltPlayer6 {
+	walk_fast_left
+}
+
+movement MauvilleCity_Gym_Movement_GymGuideHaltPlayer7 {
+	walk_fast_left * 2
+}
+
+movement MauvilleCity_Gym_Movement_GymGuideHaltPlayer8 {
+	walk_fast_left * 3
+}
+
+movement MauvilleCity_Gym_Movement_GymGuideHaltPlayer9 {
+	walk_fast_left * 4
+}
+
+movement MauvilleCity_Gym_Movement_GymGuideReturnToSpot5 {
+	walk_right
+}
+
+movement MauvilleCity_Gym_Movement_GymGuideReturnToSpot6 {
+	walk_right * 2
+}
+
+movement MauvilleCity_Gym_Movement_GymGuideReturnToSpot7 {
+	walk_right * 3
+}
+
+movement MauvilleCity_Gym_Movement_GymGuideReturnToSpot8 {
+	walk_right * 4
+}
+
+movement MauvilleCity_Gym_Movement_GymGuideReturnToSpot9 {
+	walk_right * 5
 }

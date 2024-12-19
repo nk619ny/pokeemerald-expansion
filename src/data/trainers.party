@@ -376,9 +376,49 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Poochyena
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Graveler @ Rindo Berry
+Ability: Sturdy  
+Level: 26
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Stone Edge  
+- Sucker Punch  
+- Fire Punch  
+- Heavy Slam  
+
+Gastrodon @ Rindo Berry
+Ability: Storm Drain  
+Level: 26
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Earth Power  
+- Water Pulse  
+- Recover  
+- Blizzard  
+
+Exploud @ Throat Spray  
+Ability: Scrappy  
+Level: 26
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Hyper Voice  
+- Flamethrower  
+- Ice Beam  
+- Shadow Ball  
+
+Spidops  
+Ability: Stakeout  
+Level: 26
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- First Impression  
+- Circle Throw  
+- Trailblaze  
+- Silk Trap  
+
+
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
@@ -1029,39 +1069,116 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_DUSTY_2 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
-Music: Hiker
+=== TRAINER_AQUA_ADMIN_RUSTURF ===
+Name: SHELLY
+Class: Aqua Admin
+Pic: Aqua Admin F
+Gender: Female
+Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Sandslash
-Level: 27
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
 
-=== TRAINER_DUSTY_3 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
-Music: Hiker
+Gigalith  
+Ability: Sturdy  
+Level: 28
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Curse  
+- Rock Slide  
+- Earthquake  
+- Body Press  
+
+Golbat @ Eviolite  
+Ability: Inner Focus  
+Level: 28
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Poison Fang  
+- Dual Wingbeat  
+- Pursuit  
+- Quick Attack  
+
+Swoobat
+Ability: Unaware  
+Level: 28
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Air Slash  
+- Expanding Force  
+- Giga Drain  
+- Nasty Plot  
+
+Beartic  
+Ability: Swift Swim  
+Level: 28
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Aqua Jet  
+- Avalanche  
+- Play Rough  
+- Brick Break
+
+Kleavor  
+Ability: Sharpness  
+Level: 29
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- X-Scissor  
+- Stone Axe  
+- Night Slash  
+- Aerial Ace
+
+=== TRAINER_GRUNT_RUSTURF_TUNNEL_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: Female
+Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Sandslash
-Level: 30
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Cradily @ Leftovers  
+Ability: Storm Drain  
+EVs: 248 HP / 252 SpA / 8 SpD  
+Level: 26
+Modest Nature  
+IVs: 0 Atk  
+- Ancient Power  
+- Giga Drain  
+- Sludge Bomb  
+- Attract  
+
+Crustle @ Salac Berry
+Ability: Sturdy  
+Level: 26
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- Skitter Smack  
+- Rock Slide  
+- Wide Guard  
+- Flail
+
+Carbink @ Babiri Berry  
+Ability: Clear Body  
+Level: 26
+EVs: 248 HP / 252 SpA / 8 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Calm Mind  
+- Earth Power  
+- Power Gem  
+
+Barbaracle @ Rindo Berry  
+Ability: Tough Claws  
+Level: 26
+EVs: 252 Atk / 4 SpD / 252 Spe  
+- Liquidation  
+- Shell Smash  
+- Poison Jab  
+- Shadow Claw  
 
 === TRAINER_DUSTY_4 ===
 Name: DUSTY
@@ -1073,8 +1190,8 @@ Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Sandslash
-Level: 33
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Level: 36
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Dig
 - Slash
 - Sand Attack
@@ -14116,7 +14233,7 @@ Pic: Psychic F
 Gender: Female
 Music: Intense
 Double Battle: Yes
-Starting Status: STARTING_STATUS_PSYCHIC_TERRAIN
+Starting Status: STARTING_STATUS_GRASSY_TERRAIN
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Ralts

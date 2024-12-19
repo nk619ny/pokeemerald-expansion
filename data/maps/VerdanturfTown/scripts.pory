@@ -13,6 +13,8 @@ VerdanturfTown_OnTransition:
 VerdanturfTown_EventScript_Twin::
 	lock
 	faceplayer
+	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDA
+	clearflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT
 	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, VerdanturfTown_EventScript_TwinTunnelOpen
 	msgbox VerdanturfTown_Text_ManTryingToDigTunnel, MSGBOX_DEFAULT
 	applymovement LOCALID_TWIN, Common_Movement_FaceOriginalDirection

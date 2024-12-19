@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 23,
+      "x": 4,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 24,
+      "x": 19,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -67,47 +67,21 @@
       "flag": "FLAG_ITEM_RUSTURF_TUNNEL_MAX_ETHER"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 5,
-      "y": 4,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "FLAG_HIDE_RUSTURF_TUNNEL_BRINEY"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 14,
-      "y": 5,
+      "x": 32,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_Grunt",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "RusturfTunnel_EventScript_Grunt_M",
       "flag": "FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
-      "x": 14,
-      "y": 4,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_Peeko",
-      "flag": "FLAG_HIDE_RUSTURF_TUNNEL_PEEKO"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 24,
+      "x": 19,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -120,8 +94,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 32,
-      "y": 13,
+      "x": 20,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -133,16 +107,68 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 25,
-      "y": 4,
+      "x": 30,
+      "y": 14,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RusturfTunnel_EventScript_Wanda",
       "flag": "FLAG_HIDE_RUSTURF_TUNNEL_WANDA"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 20,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "RusturfTunnel_EventScript_AquaAdmin",
+      "flag": "FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+      "x": 18,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+      "x": 18,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 25,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "RusturfTunnel_EventScript_Grunt_F",
+      "flag": "FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT"
     }
   ],
   "warp_events": [
@@ -169,51 +195,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 23,
-      "y": 4,
-      "elevation": 3,
-      "var": "TRIGGER_RUN_IMMEDIATELY",
-      "var_value": "0",
-      "script": "RusturfTunnel_EventScript_TunnelBlockagePos1"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 4,
-      "elevation": 3,
-      "var": "VAR_RUSTURF_TUNNEL_STATE",
-      "var_value": "2",
-      "script": "RusturfTunnel_EventScript_AquaGruntBackUp"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 5,
-      "elevation": 3,
-      "var": "VAR_RUSTURF_TUNNEL_STATE",
-      "var_value": "2",
-      "script": "RusturfTunnel_EventScript_AquaGruntBackUp"
-    },
-    {
-      "type": "trigger",
-      "x": 25,
-      "y": 4,
-      "elevation": 3,
-      "var": "TRIGGER_RUN_IMMEDIATELY",
-      "var_value": "0",
-      "script": "RusturfTunnel_EventScript_TunnelBlockagePos2"
-    },
-    {
-      "type": "trigger",
-      "x": 25,
-      "y": 5,
-      "elevation": 3,
-      "var": "TRIGGER_RUN_IMMEDIATELY",
-      "var_value": "0",
-      "script": "RusturfTunnel_EventScript_TunnelBlockagePos3"
-    }
+
   ],
   "bg_events": [
 
