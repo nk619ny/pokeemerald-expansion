@@ -7,7 +7,7 @@ MauvilleCity_House1_MapScripts::
 # 4 "data/maps/MauvilleCity_House1/scripts.pory"
 
 # 5 "data/maps/MauvilleCity_House1/scripts.pory"
-MauvilleCity_House1_EventScript_RockSmashDude::
+/* MauvilleCity_House1_EventScript_RockSmashDude::
 # 6 "data/maps/MauvilleCity_House1/scripts.pory"
 	lock
 # 7 "data/maps/MauvilleCity_House1/scripts.pory"
@@ -27,7 +27,7 @@ MauvilleCity_House1_EventScript_RockSmashDude::
 # 14 "data/maps/MauvilleCity_House1/scripts.pory"
 	release
 # 15 "data/maps/MauvilleCity_House1/scripts.pory"
-	end
+	end */
 # 16 "data/maps/MauvilleCity_House1/scripts.pory"
 
 # 17 "data/maps/MauvilleCity_House1/scripts.pory"
@@ -90,3 +90,24 @@ MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
 	.string "could come flying out of hiding.\p"
 # 46 "data/maps/MauvilleCity_House1/scripts.pory"
 	.string "Woohoo!$"
+
+MauvilleCity_House1_EventScript_RockSmashDude::
+# 51 "data/maps/MauvilleCity_House1/scripts.pory"
+	lock
+# 52 "data/maps/MauvilleCity_House1/scripts.pory"
+	faceplayer
+# 53 "data/maps/MauvilleCity_House1/scripts.pory"
+	msgbox MauvilleCity_House1_EventScript_RockSmashDude_Text_0
+# 54 "data/maps/MauvilleCity_House1/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_House1_EventScript_RockSmashDude_Text_0:
+# 53 "data/maps/MauvilleCity_House1/scripts.pory"
+	.string "People used to call me the Rock Smash\n"
+	.string "Guy, but I found it kind of degrading.\l"
+	.string "Now I've given up that life.\p"
+	.string "I hear the Winstrates, in the house\n"
+	.string "North of town, all know how to use Rock\l"
+	.string "Smash.$"

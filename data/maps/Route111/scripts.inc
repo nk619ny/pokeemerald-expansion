@@ -1484,6 +1484,10 @@ Route111_EventScript_WinstratesGiveRockSmash::
 # 754 "data/maps/Route111/scripts.pory"
 	giveitem ITEM_HM06
 # 755 "data/maps/Route111/scripts.pory"
+	setflag FLAG_RECEIVED_HM_ROCK_SMASH
+# 756 "data/maps/Route111/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY
+# 757 "data/maps/Route111/scripts.pory"
 	closemessage
 	return
 

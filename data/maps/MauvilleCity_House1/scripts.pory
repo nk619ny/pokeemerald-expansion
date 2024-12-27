@@ -2,7 +2,7 @@ raw `
 MauvilleCity_House1_MapScripts::
 	.byte 0
 
-MauvilleCity_House1_EventScript_RockSmashDude::
+/* MauvilleCity_House1_EventScript_RockSmashDude::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_HM_ROCK_SMASH, MauvilleCity_House1_EventScript_ReceivedRockSmash
@@ -12,7 +12,7 @@ MauvilleCity_House1_EventScript_RockSmashDude::
 	setflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY
 	msgbox MauvilleCity_House1_Text_ExplainRockSmash, MSGBOX_DEFAULT
 	release
-	end
+	end */
 
 MauvilleCity_House1_EventScript_ReceivedRockSmash::
 	msgbox MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock, MSGBOX_DEFAULT
@@ -46,3 +46,11 @@ MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
 	.string "Woohoo!$"
 
 `
+
+script MauvilleCity_House1_EventScript_RockSmashDude {
+	lock
+	faceplayer
+	msgbox(format("People used to call me the Rock Smash Guy, but I found it kind of degrading. Now I've given up that life.\pI hear the Winstrates, in the house North of town, all know how to use Rock Smash."))
+	release
+	end
+}

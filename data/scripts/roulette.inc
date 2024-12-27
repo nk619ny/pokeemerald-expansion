@@ -1,4 +1,5 @@
 Roulette_EventScript_Table1::
+	goto Roulette_EventScript_Table
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
 	setvar VAR_0x8004, 0
@@ -9,6 +10,7 @@ Roulette_EventScript_Table1::
 	end
 
 Roulette_EventScript_Table2::
+	goto Roulette_EventScript_Table
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
 	setvar VAR_0x8004, 1

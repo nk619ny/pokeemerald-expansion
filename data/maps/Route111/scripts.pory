@@ -752,6 +752,8 @@ script Route111_EventScript_WinstratesGiveRockSmash {
 	msgbox(format("Vicky: You're strong! I'll give you this HM. It's ROCK SMASH. It allows your Pokémon to clear rocks away."))
 	waitmessage
 	giveitem(ITEM_HM06)
+	setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
+	setflag(FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY)
 	closemessage
 	return
 }

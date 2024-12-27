@@ -13,7 +13,7 @@ MauvilleCity_BikeShop_EventScript_Rydel::
 # 7 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	faceplayer
 # 8 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	goto_if_set FLAG_RECEIVED_BIKE, MauvilleCity_BikeShop_EventScript_AskSwitchBikes
+	goto_if_set FLAG_RECEIVED_BIKE, MauvilleCity_BikeShop_EventScript_AlreadyHaveBikes
 # 9 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	goto_if_set FLAG_DECLINED_BIKE, MauvilleCity_BikeShop_EventScript_SkipGreeting
 # 10 "data/maps/MauvilleCity_BikeShop/scripts.pory"
@@ -73,9 +73,9 @@ MauvilleCity_BikeShop_EventScript_NotFar::
 # 37 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 MauvilleCity_BikeShop_EventScript_YesFar::
 # 38 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	setflag FLAG_RECEIVED_BIKE
+	//setflag FLAG_RECEIVED_BIKE
 # 39 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-	goto MauvilleCity_BikeShop_EventScript_ChooseBike
+	goto MauvilleCity_BikeShop_EventScript_GetBikes
 # 40 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	end
 # 41 "data/maps/MauvilleCity_BikeShop/scripts.pory"
@@ -642,3 +642,71 @@ MauvilleCity_BikeShop_Text_Jumps:
 	.string "change directions while jumping.\p"
 # 322 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	.string "Want to read a different page?$"
+
+MauvilleCity_BikeShop_EventScript_GetBikes::
+# 331 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	msgbox MauvilleCity_BikeShop_Text_ExplainBikesGiveBoth
+# 332 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	giveitem ITEM_MACH_BIKE
+# 333 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 334 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	giveitem ITEM_ACRO_BIKE
+# 335 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 336 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	setflag FLAG_RECEIVED_BIKE
+# 337 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	msgbox MauvilleCity_BikeShop_Text_HaveBothBikes
+# 338 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	waitmessage
+# 339 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	releaseall
+	end
+
+
+MauvilleCity_BikeShop_EventScript_AlreadyHaveBikes::
+# 348 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	lock
+# 349 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	faceplayer
+# 350 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	msgbox MauvilleCity_BikeShop_Text_HaveBothBikes
+# 351 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	waitmessage
+# 352 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	release
+	end
+
+
+MauvilleCity_BikeShop_Text_ExplainBikesGiveBoth::
+# 326 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	.string "Rydel: Hm, hm… … … … …\p"
+	.string "You're saying that you came all this way\n"
+	.string "from LITTLEROOT?\p"
+	.string "My goodness!\n"
+	.string "That's ridiculously far!\p"
+	.string "If you had one of my BIKES, you could go\n"
+	.string "anywhere easily while feeling the\l"
+	.string "gentle caress of the wind!\p"
+	.string "I'll tell you what!\n"
+	.string "I'll give you a BIKE!\p"
+	.string "Oh, wait a second!\p"
+	.string "I forgot to tell you that there are two\n"
+	.string "kinds of BIKES!\p"
+	.string "They are the MACH BIKE and the ACRO\n"
+	.string "BIKE!\p"
+	.string "The MACH BIKE is for cyclists who want\n"
+	.string "to feel the wind with their bodies!\p"
+	.string "And an ACRO BIKE is for those who\n"
+	.string "prefer technical rides!\p"
+	.string "I'm a real sweetheart, so you can have\n"
+	.string "one of each!$"
+
+MauvilleCity_BikeShop_Text_HaveBothBikes::
+# 343 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	.string "Rydel: Some people like to switch\n"
+	.string "between bikes depending on the\l"
+	.string "situation. It seems impractical to come\l"
+	.string "all the way back here each time. Makes\l"
+	.string "more sense to me to have one of each.$"

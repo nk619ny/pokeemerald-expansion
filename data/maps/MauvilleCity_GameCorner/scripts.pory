@@ -435,7 +435,7 @@ MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll::
 	release
 	end
 
-MauvilleCity_GameCorner_EventScript_PokefanM::
+/* MauvilleCity_GameCorner_EventScript_PokefanM::
 	lock
 	faceplayer
 	checkitem ITEM_COIN_CASE
@@ -444,7 +444,7 @@ MauvilleCity_GameCorner_EventScript_PokefanM::
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 	end
 
-MauvilleCity_GameCorner_EventScript_TryGive20Coins::
+ MauvilleCity_GameCorner_EventScript_TryGive20Coins::
 	goto_if_set FLAG_RECEIVED_20_COINS, MauvilleCity_GameCorner_EventScript_PokefanMNormal
 	checkcoins VAR_TEMP_1
 	goto_if_ge VAR_TEMP_1, 1, MauvilleCity_GameCorner_EventScript_PokefanMNormal @ Only give 20 coins if player has no coins
@@ -453,9 +453,11 @@ MauvilleCity_GameCorner_EventScript_TryGive20Coins::
 	msgbox MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins, MSGBOX_DEFAULT
 	playse SE_SHOP
 	goto MauvilleCity_GameCorner_EventScript_PokefanMNormal
-	end
+	end */
 
-MauvilleCity_GameCorner_EventScript_PokefanMNormal::
+MauvilleCity_GameCorner_EventScript_PokefanM::
+	lock
+	faceplayer
 	msgbox MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone, MSGBOX_DEFAULT
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 	end
@@ -502,7 +504,7 @@ MauvilleCity_GameCorner_EventScript_Woman::
 	goto MauvilleCity_GameCorner_EventScript_NPCReturnToSlots
 	end
 
-MauvilleCity_GameCorner_EventScript_SlotMachine0::
+/* MauvilleCity_GameCorner_EventScript_SlotMachine0::
 	lockall
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoCoinCase
@@ -621,6 +623,7 @@ MauvilleCity_GameCorner_EventScript_SlotMachine11::
 	playslotmachine VAR_RESULT
 	releaseall
 	end
+	*/
 
 MauvilleCity_GameCorner_EventScript_NoCoinCase::
 	msgbox MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase, MSGBOX_DEFAULT
@@ -742,9 +745,9 @@ MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime:
 	.string "It's easy to lose track of time in here. \n"
 	.string "I should get back to work.$"
 
-MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay:
+/* MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay:
 	.string "COINS are needed to play here\n"
-	.string "in the GAME CORNER.$"
+	.string "in the GAME CORNER.$" */
 
 MauvilleCity_GameCorner_Text_RouletteOnlyLuck:
 	.string "This ROULETTE thing…\n"
@@ -855,4 +858,24 @@ text MauvilleCity_GameCorner_Text_ScottAgree {
 
 text MauvilleCity_GameCorner_Text_ScottDecline {
 	format("Scott: I understand, you seem busy. Well, take this Coin Case anyway.\pIf you ever change your mind, come out to the Tower in Route 111 and you can earn some Coins.")
+}
+
+script MauvilleCity_GameCorner_EventScript_SlotMachine {
+	lock
+	msgbox(format("It's a slot machine. Unfortunately, they won't let you play."))
+	waitmessage
+	releaseall
+	end
+}
+
+script Roulette_EventScript_Table {
+	lock
+	msgbox(format("It's a roulette table. Unfortunately, they won't let you play."))
+	waitmessage
+	releaseall
+	end
+}
+
+text MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay {
+	format("The games at the Game Corner are only open to adults above a certain age.\pWe don't want children to develop dangerous habits.")
 }

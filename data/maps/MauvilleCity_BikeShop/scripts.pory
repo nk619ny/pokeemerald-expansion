@@ -5,7 +5,7 @@ MauvilleCity_BikeShop_MapScripts::
 MauvilleCity_BikeShop_EventScript_Rydel::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_BIKE, MauvilleCity_BikeShop_EventScript_AskSwitchBikes
+	goto_if_set FLAG_RECEIVED_BIKE, MauvilleCity_BikeShop_EventScript_AlreadyHaveBikes
 	goto_if_set FLAG_DECLINED_BIKE, MauvilleCity_BikeShop_EventScript_SkipGreeting
 	msgbox MauvilleCity_BikeShop_Text_RydelGreeting, MSGBOX_DEFAULT
 	msgbox MauvilleCity_BikeShop_Text_DidYouComeFromFarAway, MSGBOX_YESNO
@@ -35,8 +35,8 @@ MauvilleCity_BikeShop_EventScript_NotFar::
 	end
 
 MauvilleCity_BikeShop_EventScript_YesFar::
-	setflag FLAG_RECEIVED_BIKE
-	goto MauvilleCity_BikeShop_EventScript_ChooseBike
+	//setflag FLAG_RECEIVED_BIKE
+	goto MauvilleCity_BikeShop_EventScript_GetBikes
 	end
 
 MauvilleCity_BikeShop_EventScript_GetMachBike::
@@ -322,3 +322,33 @@ MauvilleCity_BikeShop_Text_Jumps:
 	.string "Want to read a different page?$"
 
 `
+
+text MauvilleCity_BikeShop_Text_ExplainBikesGiveBoth {
+	format("Rydel: Hm, hm… … … … …\pYou're saying that you came all this way from LITTLEROOT?\pMy goodness!\nThat's ridiculously far!\pIf you had one of my BIKES, you could go anywhere easily while feeling the gentle caress of the wind!\pI'll tell you what!\nI'll give you a BIKE!\pOh, wait a second!\pI forgot to tell you that there are two kinds of BIKES!\pThey are the MACH BIKE and the ACRO BIKE!\pThe MACH BIKE is for cyclists who want to feel the wind with their bodies!\pAnd an ACRO BIKE is for those who prefer technical rides!\pI'm a real sweetheart, so you can have one of each!")
+}
+
+script MauvilleCity_BikeShop_EventScript_GetBikes {
+	msgbox(MauvilleCity_BikeShop_Text_ExplainBikesGiveBoth)
+	giveitem(ITEM_MACH_BIKE)
+	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+	giveitem(ITEM_ACRO_BIKE)
+	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+	setflag(FLAG_RECEIVED_BIKE)
+	msgbox(MauvilleCity_BikeShop_Text_HaveBothBikes)
+	waitmessage
+	releaseall
+	end
+}
+
+text MauvilleCity_BikeShop_Text_HaveBothBikes {
+	format("Rydel: Some people like to switch between bikes depending on the situation.\pIt seems impractical to come all the way back here each time.\pMakes more sense to me to have one of each.")
+}
+
+script MauvilleCity_BikeShop_EventScript_AlreadyHaveBikes {
+	lock
+	faceplayer
+	msgbox(MauvilleCity_BikeShop_Text_HaveBothBikes)
+	waitmessage
+	release
+	end
+}
