@@ -1079,183 +1079,189 @@ RusturfTunnel_EventScript_ClearOutAqua::
 # 549 "data/maps/RusturfTunnel/scripts.pory"
 	setflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT
 # 550 "data/maps/RusturfTunnel/scripts.pory"
-	removeobject 9
+	clearflag FLAG_HIDE_MAUVILLE_CITY_WALLY
 # 551 "data/maps/RusturfTunnel/scripts.pory"
-	removeobject 5
+	fadescreen FADE_TO_BLACK
 # 552 "data/maps/RusturfTunnel/scripts.pory"
-	removeobject 12
+	removeobject 9
 # 553 "data/maps/RusturfTunnel/scripts.pory"
+	removeobject 5
+# 554 "data/maps/RusturfTunnel/scripts.pory"
+	removeobject 12
+# 555 "data/maps/RusturfTunnel/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 556 "data/maps/RusturfTunnel/scripts.pory"
 	releaseall
 	end
 
 
 RusturfTunnel_EventScript_Grunt_M::
-# 558 "data/maps/RusturfTunnel/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_Grunt1Intro, RusturfTunnel_Text_Grunt1Defeated
-# 559 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_Grunt1Outro
-# 560 "data/maps/RusturfTunnel/scripts.pory"
-	waitmessage
 # 561 "data/maps/RusturfTunnel/scripts.pory"
+	trainerbattle_single TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_Grunt1Intro, RusturfTunnel_Text_Grunt1Defeated
+# 562 "data/maps/RusturfTunnel/scripts.pory"
+	msgbox RusturfTunnel_Text_Grunt1Outro
+# 563 "data/maps/RusturfTunnel/scripts.pory"
+	waitmessage
+# 564 "data/maps/RusturfTunnel/scripts.pory"
 	releaseall
 	end
 
 
 RusturfTunnel_EventScript_AquaAdmin::
-# 566 "data/maps/RusturfTunnel/scripts.pory"
+# 569 "data/maps/RusturfTunnel/scripts.pory"
 	trainerbattle_single TRAINER_AQUA_ADMIN_RUSTURF, RusturfTunnel_Text_AdminIntro, RusturfTunnel_Text_AdminDefeated, RusturfTunnel_EventScript_ClearOutAqua
-# 567 "data/maps/RusturfTunnel/scripts.pory"
+# 570 "data/maps/RusturfTunnel/scripts.pory"
 	releaseall
 	end
 
 
 RusturfTunnel_EventScript_Grunt_F::
-# 571 "data/maps/RusturfTunnel/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_RUSTURF_TUNNEL_2, RusturfTunnel_Text_Grunt2Intro, RusturfTunnel_Text_Grunt2Defeated
-# 572 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_Text_Grunt2Outro
-# 573 "data/maps/RusturfTunnel/scripts.pory"
-	waitmessage
 # 574 "data/maps/RusturfTunnel/scripts.pory"
+	trainerbattle_single TRAINER_GRUNT_RUSTURF_TUNNEL_2, RusturfTunnel_Text_Grunt2Intro, RusturfTunnel_Text_Grunt2Defeated
+# 575 "data/maps/RusturfTunnel/scripts.pory"
+	msgbox RusturfTunnel_Text_Grunt2Outro
+# 576 "data/maps/RusturfTunnel/scripts.pory"
+	waitmessage
+# 577 "data/maps/RusturfTunnel/scripts.pory"
 	releaseall
 	end
 
 
 RusturfTunnel_EventScript_Wanda::
-# 579 "data/maps/RusturfTunnel/scripts.pory"
+# 582 "data/maps/RusturfTunnel/scripts.pory"
 	lock
-# 580 "data/maps/RusturfTunnel/scripts.pory"
+# 583 "data/maps/RusturfTunnel/scripts.pory"
 	goto_if_unset FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT, RusturfTunnel_EventScript_Wanda_2
 RusturfTunnel_EventScript_Wanda_1:
-# 583 "data/maps/RusturfTunnel/scripts.pory"
+# 586 "data/maps/RusturfTunnel/scripts.pory"
 	goto RusturfTunnel_EventScript_Wanda_TunnelBlocked
-# 584 "data/maps/RusturfTunnel/scripts.pory"
+# 587 "data/maps/RusturfTunnel/scripts.pory"
 	releaseall
 	end
 
 RusturfTunnel_EventScript_Wanda_2:
-# 581 "data/maps/RusturfTunnel/scripts.pory"
+# 584 "data/maps/RusturfTunnel/scripts.pory"
 	goto RusturfTunnel_EventScript_Wanda_AquaPresent
 	goto RusturfTunnel_EventScript_Wanda_1
 
 
 RusturfTunnel_EventScript_Wanda_AquaPresent::
-# 589 "data/maps/RusturfTunnel/scripts.pory"
+# 592 "data/maps/RusturfTunnel/scripts.pory"
 	lock
-# 590 "data/maps/RusturfTunnel/scripts.pory"
+# 593 "data/maps/RusturfTunnel/scripts.pory"
 	switch VAR_TEMP_4
-# 591 "data/maps/RusturfTunnel/scripts.pory"
-	case 0, RusturfTunnel_EventScript_Wanda_AquaPresent_3
 # 594 "data/maps/RusturfTunnel/scripts.pory"
-	case 1, RusturfTunnel_EventScript_Wanda_AquaPresent_4
+	case 0, RusturfTunnel_EventScript_Wanda_AquaPresent_3
 # 597 "data/maps/RusturfTunnel/scripts.pory"
+	case 1, RusturfTunnel_EventScript_Wanda_AquaPresent_4
+# 600 "data/maps/RusturfTunnel/scripts.pory"
 	case 2, RusturfTunnel_EventScript_Wanda_AquaPresent_5
 RusturfTunnel_EventScript_Wanda_AquaPresent_1:
-# 601 "data/maps/RusturfTunnel/scripts.pory"
+# 604 "data/maps/RusturfTunnel/scripts.pory"
 	waitmessage
-# 602 "data/maps/RusturfTunnel/scripts.pory"
+# 605 "data/maps/RusturfTunnel/scripts.pory"
 	releaseall
 	end
 
 RusturfTunnel_EventScript_Wanda_AquaPresent_3:
-# 592 "data/maps/RusturfTunnel/scripts.pory"
+# 595 "data/maps/RusturfTunnel/scripts.pory"
 	setvar VAR_TEMP_4, 1
-# 593 "data/maps/RusturfTunnel/scripts.pory"
+# 596 "data/maps/RusturfTunnel/scripts.pory"
 	msgbox RusturfTunnel_Text_WandaTalksAqua, MSGBOX_NPC
 	goto RusturfTunnel_EventScript_Wanda_AquaPresent_1
 
 RusturfTunnel_EventScript_Wanda_AquaPresent_4:
-# 595 "data/maps/RusturfTunnel/scripts.pory"
+# 598 "data/maps/RusturfTunnel/scripts.pory"
 	setvar VAR_TEMP_4, 2
-# 596 "data/maps/RusturfTunnel/scripts.pory"
+# 599 "data/maps/RusturfTunnel/scripts.pory"
 	msgbox RusturfTunnel_Text_WandaMissesBoyfriend, MSGBOX_NPC
 	goto RusturfTunnel_EventScript_Wanda_AquaPresent_1
 
 RusturfTunnel_EventScript_Wanda_AquaPresent_5:
-# 598 "data/maps/RusturfTunnel/scripts.pory"
+# 601 "data/maps/RusturfTunnel/scripts.pory"
 	setvar VAR_TEMP_4, 0
-# 599 "data/maps/RusturfTunnel/scripts.pory"
+# 602 "data/maps/RusturfTunnel/scripts.pory"
 	msgbox RusturfTunnel_Text_WandaAsksForHelp, MSGBOX_NPC
 	goto RusturfTunnel_EventScript_Wanda_AquaPresent_1
 
 
 RusturfTunnel_EventScript_Wanda_TunnelBlocked::
-# 607 "data/maps/RusturfTunnel/scripts.pory"
-	lock
-# 608 "data/maps/RusturfTunnel/scripts.pory"
-	msgbox RusturfTunnel_EventScript_Wanda_TunnelBlocked_Text_0, MSGBOX_NPC
-# 609 "data/maps/RusturfTunnel/scripts.pory"
-	waitmessage
 # 610 "data/maps/RusturfTunnel/scripts.pory"
+	lock
+# 611 "data/maps/RusturfTunnel/scripts.pory"
+	msgbox RusturfTunnel_EventScript_Wanda_TunnelBlocked_Text_0, MSGBOX_NPC
+# 612 "data/maps/RusturfTunnel/scripts.pory"
+	waitmessage
+# 613 "data/maps/RusturfTunnel/scripts.pory"
 	releaseall
 	end
 
 
 RusturfTunnel_EventScript_Wanda_TunnelBlocked_Text_0:
-# 608 "data/maps/RusturfTunnel/scripts.pory"
+# 611 "data/maps/RusturfTunnel/scripts.pory"
 	.string "Thank you for chasing Team Aqua out!$"
 
 RusturfTunnel_Text_WandaTalksAqua::
-# 614 "data/maps/RusturfTunnel/scripts.pory"
+# 617 "data/maps/RusturfTunnel/scripts.pory"
 	.string "They finally announced they were going\n"
 	.string "to finish the tunnel, and then these\l"
 	.string "Team Aqua people showed up and chased\l"
 	.string "out the workers.$"
 
 RusturfTunnel_Text_WandaMissesBoyfriend::
-# 618 "data/maps/RusturfTunnel/scripts.pory"
+# 621 "data/maps/RusturfTunnel/scripts.pory"
 	.string "I just want to be able to see my\n"
 	.string "boyfriend in Rustboro City again...$"
 
 RusturfTunnel_Text_WandaAsksForHelp::
-# 622 "data/maps/RusturfTunnel/scripts.pory"
+# 625 "data/maps/RusturfTunnel/scripts.pory"
 	.string "Can you help us do something about\n"
 	.string "Team Aqua?$"
 
 RusturfTunnel_Text_Grunt1Intro::
-# 626 "data/maps/RusturfTunnel/scripts.pory"
+# 629 "data/maps/RusturfTunnel/scripts.pory"
 	.string "We won't let this cave be disturbed any\n"
 	.string "further!$"
 
 RusturfTunnel_Text_Grunt1Defeated::
-# 630 "data/maps/RusturfTunnel/scripts.pory"
+# 633 "data/maps/RusturfTunnel/scripts.pory"
 	.string "I couldn't hold you back...$"
 
 RusturfTunnel_Text_Grunt1Outro::
-# 634 "data/maps/RusturfTunnel/scripts.pory"
+# 637 "data/maps/RusturfTunnel/scripts.pory"
 	.string "You may have gotten past me, but Team\n"
 	.string "Aqua will never give up!$"
 
 RusturfTunnel_Text_Grunt2Intro::
-# 638 "data/maps/RusturfTunnel/scripts.pory"
+# 641 "data/maps/RusturfTunnel/scripts.pory"
 	.string "When they first started digging this\n"
 	.string "tunnel, the drills and machines they use\l"
 	.string "disturbed the Pokémon living here.$"
 
 RusturfTunnel_Text_Grunt2Defeated::
-# 642 "data/maps/RusturfTunnel/scripts.pory"
+# 645 "data/maps/RusturfTunnel/scripts.pory"
 	.string "We're trying to be as strong as stone...\n"
 	.string "but we got crushed.$"
 
 RusturfTunnel_Text_Grunt2Outro::
-# 646 "data/maps/RusturfTunnel/scripts.pory"
+# 649 "data/maps/RusturfTunnel/scripts.pory"
 	.string "They say that they've learned their\n"
 	.string "lesson and will be more careful\l"
 	.string "finishing the tunnel, but we don't trust\l"
 	.string "them.$"
 
 RusturfTunnel_Text_AdminOutro::
-# 650 "data/maps/RusturfTunnel/scripts.pory"
+# 653 "data/maps/RusturfTunnel/scripts.pory"
 	.string "People just won't learn their lesson.\n"
 	.string "You want to open this tunnel so badly?\l"
 	.string "Fine. We'll focus our efforts elsewhere.$"
 
 RusturfTunnel_Text_AdminDefeated::
-# 654 "data/maps/RusturfTunnel/scripts.pory"
+# 657 "data/maps/RusturfTunnel/scripts.pory"
 	.string "I hope you know what you're doing.$"
 
 RusturfTunnel_Text_AdminIntro::
-# 658 "data/maps/RusturfTunnel/scripts.pory"
+# 661 "data/maps/RusturfTunnel/scripts.pory"
 	.string "People decide they need a new path, and\n"
 	.string "break through whatever is in their way\l"
 	.string "to get there.\p"

@@ -67,10 +67,11 @@ EventScript_UseRockSmash::
 EventScript_RockSmash::
 	lockall
 	goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
-	checkpartymove MOVE_ROCK_SMASH
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock
-	setfieldeffectargument 0, VAR_RESULT
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	goto_if_unset FLAG_HIDE_ROUTE_111_VICTOR_WINSTRATE, EventScript_CantSmashRock //require HM from Winstrates before Rock Smash
+//	checkpartymove MOVE_ROCK_SMASH
+//	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock
+//	setfieldeffectargument 0, VAR_RESULT
+//	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	buffermovename STR_VAR_2, MOVE_ROCK_SMASH
 	msgbox Text_WantToSmash, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
@@ -78,13 +79,13 @@ EventScript_RockSmash::
 	closemessage
 EventScript_RockSmashCommon:
 	@ check if follower should use the field move
-	isfollowerfieldmoveuser VAR_0x8004
+//	isfollowerfieldmoveuser VAR_0x8004
 	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
 EventScript_SmashRock:: @ fallthrough
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
+//	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
 	applymovement VAR_LAST_TALKED, Movement_SmashRock
 	waitmovement 0
 	removeobject VAR_LAST_TALKED

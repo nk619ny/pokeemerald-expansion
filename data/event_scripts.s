@@ -1167,3 +1167,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route104_North/scripts.inc"
 
 	.include "data/maps/VerdantGrove/scripts.inc"
+
+	.include "data/maps/NewTrainerHill/scripts.inc"

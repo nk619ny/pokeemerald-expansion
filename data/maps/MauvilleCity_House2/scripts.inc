@@ -7,7 +7,7 @@ MauvilleCity_House2_MapScripts::
 # 4 "data/maps/MauvilleCity_House2/scripts.pory"
 
 # 5 "data/maps/MauvilleCity_House2/scripts.pory"
-MauvilleCity_House2_EventScript_Woman::
+/* MauvilleCity_House2_EventScript_Woman::
 # 6 "data/maps/MauvilleCity_House2/scripts.pory"
 	lock
 # 7 "data/maps/MauvilleCity_House2/scripts.pory"
@@ -130,3 +130,24 @@ MauvilleCity_House2_Text_ThatsDisappointing:
 	.string "A COIN CASE is needed for the\n"
 # 66 "data/maps/MauvilleCity_House2/scripts.pory"
 	.string "GAME CORNER.$"
+# 67 "data/maps/MauvilleCity_House2/scripts.pory"
+*/
+
+MauvilleCity_House2_EventScript_Woman::
+# 70 "data/maps/MauvilleCity_House2/scripts.pory"
+	lock
+# 71 "data/maps/MauvilleCity_House2/scripts.pory"
+	msgbox MauvilleCity_House2_EventScript_Woman_Text_0, MSGBOX_NPC
+# 72 "data/maps/MauvilleCity_House2/scripts.pory"
+	releaseall
+	end
+
+
+MauvilleCity_House2_EventScript_Woman_Text_0:
+# 71 "data/maps/MauvilleCity_House2/scripts.pory"
+	.string "I used to write a lot of letters to\n"
+	.string "friends across the region.\p"
+	.string "Sadly, we've lost touch over the years.\p"
+	.string "Good thing the Game Corner is so close,\n"
+	.string "I suppose - it gives me a way to pass\l"
+	.string "the time.$"

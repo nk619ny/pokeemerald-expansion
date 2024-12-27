@@ -25,7 +25,7 @@ OldaleTown_OnTransition:
 # 13 "data/maps/OldaleTown/scripts.pory"
 	call_if_unset FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_BlockWestEntrance
 # 14 "data/maps/OldaleTown/scripts.pory"
-	call_if_unset FLAG_RECEIVED_POTION_OLDALE, OldaleTown_EventScript_MoveMartEmployee
+	// call_if_unset FLAG_RECEIVED_POTION_OLDALE, OldaleTown_EventScript_MoveMartEmployee
 # 15 "data/maps/OldaleTown/scripts.pory"
 	call_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_SetOldaleState
 # 16 "data/maps/OldaleTown/scripts.pory"
@@ -53,13 +53,13 @@ OldaleTown_EventScript_BlockWestEntrance::
 # 27 "data/maps/OldaleTown/scripts.pory"
 
 # 28 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_EventScript_MoveMartEmployee::
+/* OldaleTown_EventScript_MoveMartEmployee::
 # 29 "data/maps/OldaleTown/scripts.pory"
 	setobjectxyperm LOCALID_MART_EMPLOYEE, 13, 14
 # 30 "data/maps/OldaleTown/scripts.pory"
 	setobjectmovementtype LOCALID_MART_EMPLOYEE, MOVEMENT_TYPE_FACE_DOWN
 # 31 "data/maps/OldaleTown/scripts.pory"
-	return
+	return */
 # 32 "data/maps/OldaleTown/scripts.pory"
 
 # 33 "data/maps/OldaleTown/scripts.pory"
@@ -79,7 +79,7 @@ OldaleTown_EventScript_Girl::
 # 40 "data/maps/OldaleTown/scripts.pory"
 
 # 41 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_EventScript_MartEmployee::
+/*OldaleTown_EventScript_MartEmployee::
 # 42 "data/maps/OldaleTown/scripts.pory"
 	lock
 # 43 "data/maps/OldaleTown/scripts.pory"
@@ -177,7 +177,7 @@ OldaleTown_EventScript_ExplainPotion::
 # 89 "data/maps/OldaleTown/scripts.pory"
 	release
 # 90 "data/maps/OldaleTown/scripts.pory"
-	end
+	end */
 # 91 "data/maps/OldaleTown/scripts.pory"
 
 # 92 "data/maps/OldaleTown/scripts.pory"
@@ -800,3 +800,21 @@ OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 # 401 "data/maps/OldaleTown/scripts.pory"
 	.string "“Where things start off scarce.”$"
+
+OldaleTown_EventScript_MartWorker::
+# 406 "data/maps/OldaleTown/scripts.pory"
+	lock
+# 407 "data/maps/OldaleTown/scripts.pory"
+	faceplayer
+# 408 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_MartWorker_Text_0, MSGBOX_NPC
+# 409 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	end
+
+
+OldaleTown_EventScript_MartWorker_Text_0:
+# 408 "data/maps/OldaleTown/scripts.pory"
+	.string "This is a Pokemart - if you need\n"
+	.string "supplies for your journeys, you can buy\l"
+	.string "them here!$"

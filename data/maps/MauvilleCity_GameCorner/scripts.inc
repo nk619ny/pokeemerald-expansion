@@ -1554,3 +1554,180 @@ MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 	.string "You can't play if you don't have\n"
 # 778 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "a COIN CASE.$"
+
+MauvilleCity_GameCorner_EventScript_GimmighoulEncounter::
+# 785 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	lock
+# 786 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	setflag FLAG_HIDE_GIMMIGHOUL
+# 787 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	delay 40
+# 788 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	playmoncry SPECIES_GIMMIGHOUL, CRY_MODE_ENCOUNTER
+# 789 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	waitmoncry
+# 790 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	setwildbattle SPECIES_GIMMIGHOUL, 50, ITEM_BIG_NUGGET
+# 791 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dowildbattle
+# 792 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removeobject 13
+# 793 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	releaseall
+	end
+
+
+MauvilleCity_GameCorner_EventScript_Scott::
+# 798 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	lock
+# 802 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	faceplayer
+# 803 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_Text_ScottIntro, MSGBOX_NPC
+# 804 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_Scott_Text_0, MSGBOX_YESNO
+# 805 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq MauvilleCity_GameCorner_EventScript_Scott_2
+# 811 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_Text_ScottDecline, MSGBOX_NPC
+# 812 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	giveitem ITEM_COIN_CASE
+# 813 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_Scott_Text_2, MSGBOX_NPC
+MauvilleCity_GameCorner_EventScript_Scott_1:
+# 815 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	waitmessage
+# 816 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	setflag FLAG_RECEIVED_COIN_CASE
+# 817 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	switch VAR_FACING
+# 818 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case DIR_NORTH, MauvilleCity_GameCorner_EventScript_Scott_7
+# 820 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case DIR_EAST, MauvilleCity_GameCorner_EventScript_Scott_8
+# 822 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case DIR_WEST, MauvilleCity_GameCorner_EventScript_Scott_9
+MauvilleCity_GameCorner_EventScript_Scott_5:
+# 825 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	waitmovement 0
+# 826 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removeobject 14
+# 827 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	releaseall
+	end
+
+MauvilleCity_GameCorner_EventScript_Scott_2:
+# 806 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_Text_ScottAgree, MSGBOX_NPC
+# 807 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	giveitem ITEM_COIN_CASE
+# 808 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_Scott_Text_1, MSGBOX_NPC
+	goto MauvilleCity_GameCorner_EventScript_Scott_1
+
+MauvilleCity_GameCorner_EventScript_Scott_7:
+# 819 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	applymovement 14, MauvilleCity_GameCorner_Movement_ScottLeaveLeft
+	goto MauvilleCity_GameCorner_EventScript_Scott_5
+
+MauvilleCity_GameCorner_EventScript_Scott_8:
+# 821 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	applymovement 14, MauvilleCity_GameCorner_Movement_ScottLeave
+	goto MauvilleCity_GameCorner_EventScript_Scott_5
+
+MauvilleCity_GameCorner_EventScript_Scott_9:
+# 823 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	applymovement 14, MauvilleCity_GameCorner_Movement_ScottLeave
+	goto MauvilleCity_GameCorner_EventScript_Scott_5
+
+
+# 837 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+MauvilleCity_GameCorner_Movement_ScottLeave:
+# 838 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 838 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 838 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 838 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 838 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 838 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 838 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+	step_end
+
+# 841 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+MauvilleCity_GameCorner_Movement_ScottLeaveLeft:
+# 842 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_left
+# 843 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 843 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 843 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 844 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_right
+# 845 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 845 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 845 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+# 845 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	walk_down
+	step_end
+
+MauvilleCity_GameCorner_EventScript_Scott_Text_0:
+# 804 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Are you interested?$"
+
+MauvilleCity_GameCorner_EventScript_Scott_Text_1:
+# 808 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Scott: I look forward to seeing what\n"
+	.string "you can do!$"
+
+MauvilleCity_GameCorner_EventScript_Scott_Text_2:
+# 813 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Scott: I hope to see you around!$"
+
+MauvilleCity_GameCorner_Text_ScottIntro::
+# 848 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Scott: Ah, {PLAYER}, right?\p"
+	.string "Unexpected place to run into you.\p"
+	.string "Oh, you heard you can purchase new\n"
+	.string "Pokémon and items here?\p"
+	.string "That's right, but unfortunately, they\n"
+	.string "won't let you play. Even though you're\l"
+	.string "old enough to travel with your Pokémon,\l"
+	.string "it would still be wildly irresponsible to\l"
+	.string "let someone your age gamble.\p"
+	.string "You seem a little disappointed.\n"
+	.string "Hmmm... maybe I can help you out a little.\p"
+	.string "I'm launching a new project, exhibition\n"
+	.string "battles between trainers.\p"
+	.string "If you were interested in\n"
+	.string "participating, I could pay you in Game\l"
+	.string "Corner Coins for every battle you win.$"
+
+MauvilleCity_GameCorner_Text_ScottAgree::
+# 852 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Scott: Great! I've got another\n"
+	.string "participant already lined up, so just\l"
+	.string "come out to the Tower in Route 111\l"
+	.string "whenever you're ready.\p"
+	.string "You can take this Coin Case now.\n"
+	.string "The more battles you win, the more Coins\l"
+	.string "I'll give you.$"
+
+MauvilleCity_GameCorner_Text_ScottDecline::
+# 856 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Scott: I understand, you seem busy.\n"
+	.string "Well, take this Coin Case anyway.\p"
+	.string "If you ever change your mind, come out\n"
+	.string "to the Tower in Route 111 and you can\l"
+	.string "earn some Coins.$"

@@ -270,7 +270,7 @@ Route111_EventScript_Victor::
 	faceplayer
 	setflag FLAG_LANDMARK_WINSTRATE_FAMILY
 	msgbox Route111_Text_BattleOurFamily, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, Route111_EventScript_BattleWinstrates
+	goto_if_eq VAR_RESULT, YES, Route111_EventScript_WinstratesCheckBadge
 	msgbox Route111_Text_IsThatSo, MSGBOX_DEFAULT
 	release
 	end
@@ -332,6 +332,7 @@ Route111_EventScript_BattleWinstrates::
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_VickyIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VICKY, Route111_Text_VickyDefeat
+	call Route111_EventScript_WinstratesGiveRockSmash
 	msgbox Route111_Text_VickyPostBattle, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_VICKY, Common_Movement_WalkInPlaceFasterUp
@@ -504,7 +505,7 @@ Route111_EventScript_Wilton::
 Route111_EventScript_RegisterWilton::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route111_Text_WiltonRegister, MSGBOX_DEFAULT
+	//msgbox Route111_Text_WiltonRegister, MSGBOX_DEFAULT
 	//register_matchcall TRAINER_WILTON_1
 	release
 	end
@@ -715,13 +716,13 @@ Route111_Text_RootFossilDisappeared:
 	.string "The ROOT FOSSIL disappeared into\n"
 	.string "the sand…$"
 
-Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
+/*Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "Oh, no!\p"
 	.string "My uncle in MAUVILLE told me to take\n"
 	.string "ROCK SMASH with me if I was going to\l"
 	.string "ROUTE 111!\p"
 	.string "My uncle? He lives across from\n"
-	.string "the bike shop in MAUVILLE.$"
+	.string "the bike shop in MAUVILLE.$" */
 
 Route111_Text_TrainerHillSign:
 	.string "{RIGHT_ARROW} TRAINER HILL ENTRANCE\p"
@@ -729,3 +730,28 @@ Route111_Text_TrainerHillSign:
 	.string "TRAINERS!”$"
 
 `
+
+
+script Route111_EventScript_WinstratesCheckBadge{
+	if(flag(FLAG_BADGE03_GET)){
+		goto(Route111_EventScript_BattleWinstrates)
+	}
+	else {
+		msgbox(format("Victor: Before we start, do you have the Mauville Gym Badge?\pNo?\nWell, then I don't think you're ready to battle us.\pCome back after you've beaten Wattson!"), MSGBOX_DEFAULT)
+		waitmessage
+		releaseall
+		end
+	}
+}
+
+text Route111_Text_MauvilleUncleToldMeToTakeRockSmash {
+	format("My Pokémon aren't strong enough to use Rock Smash yet... I usually wait here until someone from the Winstrate House comes this way.")
+}
+
+script Route111_EventScript_WinstratesGiveRockSmash {
+	msgbox(format("Vicky: You're strong! I'll give you this HM. It's ROCK SMASH. It allows your Pokémon to clear rocks away."))
+	waitmessage
+	giveitem(ITEM_HM06)
+	closemessage
+	return
+}

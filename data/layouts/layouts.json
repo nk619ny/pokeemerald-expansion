@@ -4490,6 +4490,16 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/VerdantGrove/border.bin",
       "blockdata_filepath": "data/layouts/VerdantGrove/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_TRAINER_HILL",
+      "name": "NewTrainerHill_Layout",
+      "width": 20,
+      "height": 11,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/NewTrainerHill/border.bin",
+      "blockdata_filepath": "data/layouts/NewTrainerHill/map.bin"
     }
   ]
 }

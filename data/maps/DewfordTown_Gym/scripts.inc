@@ -928,7 +928,19 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 DewfordTown_Gym_EventScript_SetNewLevelCap::
 # 467 "data/maps/DewfordTown_Gym/scripts.pory"
 	setvar VAR_LEVEL_CAP, 30
-# 468 "data/maps/DewfordTown_Gym/scripts.pory"
-	addvar VAR_LEVEL_CAP, VAR_LEVEL_HANDICAP
+# 469 "data/maps/DewfordTown_Gym/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_LEVEL_CAP
+# 470 "data/maps/DewfordTown_Gym/scripts.pory"
+	msgbox DewfordTown_Gym_EventScript_SetNewLevelCap_Text_0, MSGBOX_DEFAULT
+# 471 "data/maps/DewfordTown_Gym/scripts.pory"
+	playfanfare MUS_OBTAIN_B_POINTS
+# 472 "data/maps/DewfordTown_Gym/scripts.pory"
+	waitfanfare
+# 473 "data/maps/DewfordTown_Gym/scripts.pory"
+	closemessage
 	return
 
+
+DewfordTown_Gym_EventScript_SetNewLevelCap_Text_0:
+# 470 "data/maps/DewfordTown_Gym/scripts.pory"
+	.string "{PLAYER} grew to Trainer Level {STR_VAR_1}!$"

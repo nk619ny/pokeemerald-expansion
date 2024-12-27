@@ -2,7 +2,7 @@ raw `
 MauvilleCity_House2_MapScripts::
 	.byte 0
 
-MauvilleCity_House2_EventScript_Woman::
+/* MauvilleCity_House2_EventScript_Woman::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_COIN_CASE, MauvilleCity_House2_EventScript_ReceivedCoinCase
@@ -64,5 +64,11 @@ MauvilleCity_House2_Text_ThatsDisappointing:
 	.string "Oh, that's disappointing.\p"
 	.string "A COIN CASE is needed for the\n"
 	.string "GAME CORNER.$"
-
+*/
 `
+script MauvilleCity_House2_EventScript_Woman {
+	lock
+	msgbox(format("I used to write a lot of letters to friends across the region.\pSadly, we've lost touch over the years.\pGood thing the Game Corner is so close, I suppose - it gives me a way to pass the time."),MSGBOX_NPC)
+	releaseall
+	end
+}

@@ -778,3 +778,81 @@ MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 	.string "a COIN CASE.$"
 
 `
+const LOCALID_GIMMIGHOUL = 13
+const LOCALID_SCOTT = 14
+
+script MauvilleCity_GameCorner_EventScript_GimmighoulEncounter {
+	lock
+	setflag(FLAG_HIDE_GIMMIGHOUL)
+	delay(40)
+	playmoncry(SPECIES_GIMMIGHOUL,CRY_MODE_ENCOUNTER)
+	waitmoncry
+	setwildbattle(SPECIES_GIMMIGHOUL, 50, ITEM_BIG_NUGGET)
+	dowildbattle
+	removeobject(LOCALID_GIMMIGHOUL)
+	releaseall
+	end
+}
+
+script MauvilleCity_GameCorner_EventScript_Scott {
+	lock
+//	if(flag(FLAG_TEMP_8)){
+//		goto(MauvilleCity_GameCorner_EventScript_ScottRepeat)
+//	}
+	faceplayer
+	msgbox(MauvilleCity_GameCorner_Text_ScottIntro,MSGBOX_NPC)
+	msgbox(format("Are you interested?"),MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES){
+		msgbox(MauvilleCity_GameCorner_Text_ScottAgree,MSGBOX_NPC)
+		giveitem(ITEM_COIN_CASE)
+		msgbox(format("Scott: I look forward to seeing what you can do!"),MSGBOX_NPC)
+	}
+	else{
+		msgbox(MauvilleCity_GameCorner_Text_ScottDecline,MSGBOX_NPC)
+		giveitem(ITEM_COIN_CASE)
+		msgbox(format("Scott: I hope to see you around!"),MSGBOX_NPC)
+	}
+	waitmessage
+	setflag(FLAG_RECEIVED_COIN_CASE)
+	switch(var(VAR_FACING)){
+		case DIR_NORTH:
+			applymovement(LOCALID_SCOTT, MauvilleCity_GameCorner_Movement_ScottLeaveLeft)
+		case DIR_EAST:
+			applymovement(LOCALID_SCOTT, MauvilleCity_GameCorner_Movement_ScottLeave)
+		case DIR_WEST:
+			applymovement(LOCALID_SCOTT, MauvilleCity_GameCorner_Movement_ScottLeave)
+	}
+	waitmovement(0)
+	removeobject(LOCALID_SCOTT)
+	releaseall
+	end
+}
+
+//script MauvilleCity_GameCorner_EventScript_ScottRepeat {
+//	lock
+//	releaseall
+//	end
+//}
+
+movement MauvilleCity_GameCorner_Movement_ScottLeave {
+	walk_down * 7
+}
+
+movement MauvilleCity_GameCorner_Movement_ScottLeaveLeft {
+	walk_left
+	walk_down * 3
+	walk_right
+	walk_down * 4
+}
+
+text MauvilleCity_GameCorner_Text_ScottIntro {
+	format("Scott: Ah, {PLAYER}, right?\pUnexpected place to run into you.\pOh, you heard you can purchase new Pokémon and items here?\pThat's right, but unfortunately, they won't let you play. Even though you're old enough to travel with your Pokémon, it would still be wildly irresponsible to let someone your age gamble.\pYou seem a little disappointed.\nHmmm... maybe I can help you out a little.\pI'm launching a new project, exhibition battles between trainers.\pIf you were interested in participating, I could pay you in Game Corner Coins for every battle you win.")
+}
+
+text MauvilleCity_GameCorner_Text_ScottAgree {
+	format("Scott: Great! I've got another participant already lined up, so just come out to the Tower in Route 111 whenever you're ready.\pYou can take this Coin Case now.\nThe more battles you win, the more Coins I'll give you.")
+}
+
+text MauvilleCity_GameCorner_Text_ScottDecline {
+	format("Scott: I understand, you seem busy. Well, take this Coin Case anyway.\pIf you ever change your mind, come out to the Tower in Route 111 and you can earn some Coins.")
+}

@@ -81,6 +81,7 @@ MauvilleCity_Gym_EventScript_Wattson::
 	goto_if_unset FLAG_RECEIVED_TM_SHOCK_WAVE, MauvilleCity_Gym_EventScript_GiveShockWave2
 	goto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_Gym_EventScript_CompletedNewMauville
 	msgbox MauvilleCity_Gym_Text_WattsonPostBattle, MSGBOX_DEFAULT
+	call MauvilleCity_Gym_EventScript_SetNewLevelCap
 	release
 	end
 
@@ -117,6 +118,7 @@ MauvilleCity_Gym_EventScript_GiveShockWave2::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox MauvilleCity_Gym_Text_ExplainShockWave, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_SHOCK_WAVE
+	call MauvilleCity_Gym_EventScript_SetNewLevelCap
 	release
 	end
 
@@ -125,6 +127,7 @@ MauvilleCity_Gym_EventScript_GiveShockWave::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox MauvilleCity_Gym_Text_ExplainShockWave, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_SHOCK_WAVE
+	call MauvilleCity_Gym_EventScript_SetNewLevelCap
 	return
 
 MauvilleCity_Gym_EventScript_CompletedNewMauville::
@@ -425,9 +428,15 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 const LOCALID_GYMGUIDE = 6
 
 script MauvilleCity_Gym_EventScript_SetNewLevelCap {
-	setvar(VAR_LEVEL_HANDICAP, 5)
-	setvar(VAR_LEVEL_CAP, 40)
-	addvar(VAR_LEVEL_CAP, VAR_LEVEL_HANDICAP)
+//	setvar(VAR_LEVEL_HANDICAP, 5)
+	setvar(VAR_LEVEL_CAP, 45)
+//	addvar(VAR_LEVEL_CAP, VAR_LEVEL_HANDICAP)
+	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
+	msgbox("{PLAYER} grew to Trainer Level {STR_VAR_1}!",MSGBOX_DEFAULT)
+	playfanfare(MUS_OBTAIN_B_POINTS)
+	waitfanfare
+	closemessage
+	return
 }
 
 script MauvilleCity_Gym_EventScript_GymGuide{
@@ -507,6 +516,7 @@ script MauvilleCity_Gym_EventScript_HaltPlayer {
 	turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
 	waitmovement(0)
 	setflag(FLAG_TEMP_HIDE_FOLLOWER)
+	setflag(FLAG_TEMP_E)
 	msgbox(MauvilleCity_Gym_Text_GymGuideHaltPlayer,MSGBOX_NPC)
 	waitmessage
 	applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuidePushPlayer)
@@ -530,6 +540,7 @@ script MauvilleCity_Gym_EventScript_HaltPlayer {
 	applymovement(LOCALID_GYMGUIDE, Common_Movement_FaceLeft)
 	waitmovement(0)
 	clearflag(FLAG_TEMP_HIDE_FOLLOWER)
+	clearflag(FLAG_TEMP_E)
 	releaseall
 	end
 }

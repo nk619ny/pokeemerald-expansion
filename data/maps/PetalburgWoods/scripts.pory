@@ -510,7 +510,12 @@ script PetalburgWoods_EventScript_AquaGruntPostBattle {
 	setflag(FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT)
 	setvar(VAR_PETALBURG_WOODS_STATE, 1)
 	setvar(VAR_PETALBURG_GYM_STATE, 2)
-	setvar(VAR_LEVEL_CAP, 30)
+	setvar(VAR_LEVEL_CAP, 17)
+	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
+	msgbox("{PLAYER} grew to Trainer Level {STR_VAR_1}!",MSGBOX_DEFAULT)
+	playfanfare(MUS_OBTAIN_B_POINTS)
+	waitfanfare
+	closemessage
 	releaseall
 	end
 }

@@ -2,6 +2,7 @@ raw `
 .set LOCALID_WALLY, 6
 .set LOCALID_WALLYS_UNCLE, 7
 .set LOCALID_SCOTT, 11
+.set LOCALID_GALLADE, 12
 
 MauvilleCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_OnTransition
@@ -72,7 +73,7 @@ MauvilleCity_EventScript_TVExplained::
 MauvilleCity_EventScript_WallysUncle::
 	lock
 	faceplayer
-	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_UncleAskPlayerToBattleWally
+	//goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_UncleAskPlayerToBattleWally
 	msgbox MauvilleCity_Text_UncleHesTooPeppy, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
@@ -88,7 +89,7 @@ MauvilleCity_EventScript_UncleAskPlayerToBattleWally::
 	release
 	end
 
-MauvilleCity_EventScript_Wally::
+/* MauvilleCity_EventScript_Wally::
 	lockall
 	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_WallyRequestBattleAgain
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
@@ -105,7 +106,7 @@ MauvilleCity_EventScript_Wally::
 	waitmovement 0
 	msgbox MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO
 	goto MauvilleCity_EventScript_BattleWallyPrompt
-	end
+	end */
 
 MauvilleCity_EventScript_BattleWallyPrompt::
 	call_if_eq VAR_RESULT, YES, MauvilleCity_EventScript_BattleWally
@@ -158,7 +159,7 @@ MauvilleCity_EventScript_WallyAndUncleExitEast::
 MauvilleCity_EventScript_DefeatedWally::
 	removeobject LOCALID_WALLY
 	removeobject LOCALID_WALLYS_UNCLE
-	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY
+	//clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE
 	setflag FLAG_DEFEATED_WALLY_MAUVILLE
 	setvar VAR_WALLY_CALL_STEP_COUNTER, 0
@@ -216,7 +217,7 @@ MauvilleCity_EventScript_BattleWally::
 	return
 
 MauvilleCity_EventScript_DeclineWallyBattle::
-	setflag FLAG_DECLINED_WALLY_BATTLE_MAUVILLE
+	//setflag FLAG_DECLINED_WALLY_BATTLE_MAUVILLE
 	msgbox MauvilleCity_Text_WallyMyUncleWontKnowImStrong, MSGBOX_DEFAULT
 	release
 	end
@@ -516,10 +517,11 @@ MauvilleCity_Text_WallyHereICome:
 	.string "WALLY: {PLAYER}, thank you.\p"
 	.string "Okay… Here I come!$"
 
-MauvilleCity_Text_WallyDefeat:
+/*MauvilleCity_Text_WallyDefeat:
 	.string "WALLY: … … … … … … …\p"
 	.string "… … … … … … … …\p"
-	.string "I lost…$"
+	.string "I lost…$" */
+//original Wally defeat text
 
 MauvilleCity_Text_WallyIllGoBackToVerdanturf:
 	.string "WALLY: UNCLE…\n"
@@ -668,3 +670,61 @@ MauvilleCity_Text_ExplainTV:
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
 `
+
+script MauvilleCity_EventScript_Gallade {
+	lock
+	msgbox("Gallade: Aiii!")
+	waitmessage
+	release
+	end
+}
+
+script MauvilleCity_EventScript_Wally {
+	lock
+	trainerbattle_single(TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyIntro, MauvilleCity_Text_WallyDefeat, MauvilleCity_EventScript_WallyPostBattle)
+	release
+	end
+}
+
+text MauvilleCity_Text_WallyDefeat {
+	format("Wow, you're learning much faster than I did!")
+}
+
+text MauvilleCity_Text_WallyIntro{
+	format("Wally: Oh, hi {PLAYER}! I remember you from Petalburg!\pHow is your journey going?\pI just beat Wattson! It was a tough battle.\pHey, now that we're both real Pokémon Trainers, how about we battle? My team is all healed up and ready to go!")
+}
+
+script MauvilleCity_EventScript_WallyPostBattle {
+	lock
+	msgbox(format("Wally: You're good! I think you're definitely ready to face Wattson.\pI'm going to head North now. I hear there's a family on Route 111 that can teach my Pokémon to break rocks.\pGood luck, {PLAYER}!"))
+	waitmessage
+	closemessage
+	applymovement(LOCALID_WALLY,MauvilleCity_WallyAndGalladeDepart)
+	applymovement(LOCALID_GALLADE,MauvilleCity_WallyAndGalladeDepart)
+	waitmovement(0)
+	removeobject(LOCALID_WALLY)
+	removeobject(LOCALID_GALLADE)
+	setflag(FLAG_HIDE_MAUVILLE_CITY_WALLY)
+	call(MauvilleCity_EventScript_DefeatedWally)
+	release
+	end
+}
+
+movement MauvilleCity_WallyAndGalladeDepart {
+	walk_down * 2
+	walk_right * 8
+	walk_fast_up * 11
+}
+
+script MauvilleCity_EventScript_Temporary{
+	lock
+	addvar(VAR_LEVEL_CAP,5)
+	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
+	msgbox("New level cap is {STR_VAR_1}")
+	waitmessage
+	giveitem(ITEM_UNLIMITED_REPEL)
+	waitmessage
+	closemessage
+	releaseall
+	end
+}

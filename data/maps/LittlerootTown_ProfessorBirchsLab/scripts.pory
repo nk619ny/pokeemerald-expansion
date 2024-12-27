@@ -1409,7 +1409,7 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	giveitem(ITEM_FULL_RESTORE)
 	giveitem(ITEM_UNLIMITED_REPEL)
 	closemessage
-	setvar(VAR_LEVEL_CAP,80)
+	setvar(VAR_LEVEL_CAP,10)
     setvar(VAR_BIRCH_LAB_STATE, 5)
 	setvar (VAR_LITTLEROOT_TOWN_STATE, 3)
 	setvar(VAR_OLDALE_RIVAL_STATE,0)

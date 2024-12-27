@@ -1722,6 +1722,12 @@ text PetalburgCity_Gym_NormanDefeatedText {
 
 script PetalburgCity_Gym_EventScript_DefeatedNorman {
 	lockall
+	setvar(VAR_LEVEL_CAP, 24)
+	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
+	msgbox("{PLAYER} grew to Trainer Level {STR_VAR_1}!",MSGBOX_DEFAULT)
+	playfanfare(MUS_OBTAIN_B_POINTS)
+	waitfanfare
+	closemessage
 	msgbox(format("Dad: That was an impressive battle, {PLAYER}. You've defeated a Gym Leader.\pUnfortunately, because I'm in the process of retiring, I cannot give you or Wally a badge.\pHowever, I can now say you are ready to take on the Hoenn League.\pI have a friend, Mr. Briney, who lives out to the West of Petalburg. He can take you to the next step in your journey.\pOh, you've already met? Wonderful. I'll give him a call and ask him to take you to Dewford once you're ready.\pSpeaking of which, I want to give you this."),MSGBOX_NPC)
     playfanfare(MUS_OBTAIN_ITEM)    
 	msgbox("Received PokéNAV!")
@@ -1735,7 +1741,6 @@ script PetalburgCity_Gym_EventScript_DefeatedNorman {
 	waitmessage
 	setflag(FLAG_ENABLE_NORMAN_MATCH_CALL)
 	setvar(VAR_PETALBURG_GYM_STATE, 3)
-	setvar(VAR_LEVEL_CAP, 25)
 	setvar(VAR_BRINEY_HOUSE_STATE, 1)
 	setflag(FLAG_HIDE_BRINEY_FONT_OF_DOOR)
 	clearflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)

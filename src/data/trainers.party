@@ -5148,7 +5148,7 @@ AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Rotom-Heat  
 Ability: Levitate  
-Level: 36
+Level: 29
 EVs: 252 HP / 252 SpA / 4 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -5159,7 +5159,7 @@ IVs: 0 Atk
 
 Lanturn @ Rindo Berry
 Ability: Volt Absorb  
-Level: 36
+Level: 30
 EVs: 252 HP / 252 SpA
 Modest Nature
 IVs: 0 Atk  
@@ -5170,7 +5170,7 @@ IVs: 0 Atk
 
 Kilowattrel @ Electric Seed  
 Ability: Volt Absorb  
-Level: 36
+Level: 29
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Supercell Slam  
@@ -5180,7 +5180,7 @@ Jolly Nature
 
 Regieleki @ Petaya Berry
 Ability: Transistor  
-Level: 36
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe /* HP Ice IVs for Max Atk */
 EVs: 128 HP / 64 Def / 252 SpA / 64 Spe  
 Mild Nature  
@@ -5191,7 +5191,7 @@ Mild Nature
 
 Manectric @ Manectite  
 Ability: Static   
-Level: 36
+Level: 30
 IVs: 0 Atk  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Modest Nature  
@@ -5202,7 +5202,7 @@ Modest Nature
 
 Cryogonal @ Light Clay  
 Ability: Levitate  
-Level: 36  
+Level: 29
 EVs: 252 Def / 128 SpD / 128 Spe  
 Calm Nature  
 IVs: 0 Atk  
@@ -12378,9 +12378,66 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Ralts
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Magneton @ Shuca Berry  
+Ability: Magnet Pull  
+Level: 31
+EVs: 252 SpA / 4 SpD / 252 Spe  
+IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */
+Timid Nature  
+- Discharge  
+- Flash Cannon  
+- Hidden Power
+- Light Screen  
+
+Gabite @ Rocky Helmet  
+Ability: Rough Skin  
+Level: 31
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Earthquake  
+- Dig  
+- Dragon Tail  
+- Rock Slide  
+
+Roselia @ Eviolite  
+Ability: Poison Point  
+Level: 31
+EVs: 248 HP / 252 SpA / 8 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Energy Ball  
+- Leech Seed  
+- Sludge Bomb  
+
+Delcatty @ Normal Gem  
+Ability: Wonder Skin  
+Level: 31
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Fake Out  
+- Heal Bell  
+- Sucker Punch  
+- Body Slam  
+
+Gallade (M) @ Expert Belt  
+Ability: Justified  
+Level: 31
+Serious Nature
+- Psycho Cut  
+- Slash
+- Brick Break  
+- Shadow Sneak  
+
+/* Gallade (M) @ Expert Belt  
+Ability: Justified  
+Level: 31
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature
+- Psycho Cut  
+- Slash
+- Brick Break  
+- Shadow Sneak  */
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY

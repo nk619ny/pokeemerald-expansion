@@ -15,22 +15,22 @@ Route111_WinstrateFamilysHouse_EventScript_Victor::
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 
-Route111_WinstrateFamilysHouse_EventScript_Victoria::
+/*Route111_WinstrateFamilysHouse_EventScript_Victoria::
 	lock
 	faceplayer
-	setvar VAR_0x8008, LOCALID_VICTORIA
-	goto_if_set FLAG_RECEIVED_MACHO_BRACE, Route111_WinstrateFamilysHouse_EventScript_ReceivedMachoBrace
-	msgbox Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace, MSGBOX_DEFAULT
-	giveitem ITEM_MACHO_BRACE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_MACHO_BRACE
+	//setvar VAR_0x8008, LOCALID_VICTORIA
+	//goto_if_set FLAG_RECEIVED_MACHO_BRACE, Route111_WinstrateFamilysHouse_EventScript_ReceivedMachoBrace
+	//msgbox Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace, MSGBOX_DEFAULT
+	//giveitem ITEM_MACHO_BRACE
+	//goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	//setflag FLAG_RECEIVED_MACHO_BRACE
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 
 Route111_WinstrateFamilysHouse_EventScript_ReceivedMachoBrace::
 	msgbox Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles, MSGBOX_DEFAULT
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
-	end
+	end */
 
 Route111_WinstrateFamilysHouse_EventScript_Vivi::
 	lock
@@ -68,7 +68,7 @@ Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou:
 	.string "But, I should tell you--my son is\n"
 	.string "stronger than you.\p"
 	.string "He even took the POKéMON LEAGUE\n"
-	.string "challenge, I'll have you know.$"
+	.string "challenge, I'll have you know.$" 
 
 Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace:
 	.string "We use this MACHO BRACE to more\n"
@@ -89,7 +89,7 @@ Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers:
 	.string "But my big brother is even stronger\n"
 	.string "than Grandma.$"
 
-Route111_WinstrateFamilysHouse_Text_GrandsonStrong:
+/* Route111_WinstrateFamilysHouse_Text_GrandsonStrong:
 	.string "There's no question that you're strong.\p"
 	.string "But if you were to battle my grandson,\n"
 	.string "you'd end up crying in frustration.\p"
@@ -104,6 +104,86 @@ Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort:
 	.string "My grandson must be challenging the\n"
 	.string "POKéMON LEAGUE CHAMPION by now.\p"
 	.string "Knowing my grandson, he could be the\n"
-	.string "CHAMPION already!$"
+	.string "CHAMPION already!$" */
 
 `
+
+text Route111_WinstrateFamilysHouse_Text_GrandsonStrong {
+	format("There's no question that you're strong.\pBut if you were to battle my grandson,\nyou'd end up crying in frustration.\pHe's much stronger than any Trainer\nour family knows.\pHe went off to Unova to hone his skills even further.\pBut we heard he's back in Hoenn now, so we're excited to see how he's grown.")
+}
+
+text Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort {
+	format("My grandson took the Hoenn League challenge, then went off to Unova to hone his skills even further.\pHe must be an Elite Trainer by now.")
+}
+
+script Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem {
+	msgbox(format("As a reward for taking us all on, we'd like to give you something!\pWhich rare battle item would you like?"))
+	dynmultichoice(25,2,0,5,0,DYN_MULTICHOICE_CB_NONE,"Choice Band","Choice Specs","Choice Scarf","Life Orb","Leftovers")
+	copyvar(VAR_TEMP_6,VAR_RESULT)
+	switch(var(VAR_TEMP_6)){
+		case 0:
+			bufferstring(STR_VAR_1,"Choice Band")
+		case 1:
+			bufferstring(STR_VAR_1,"Choice Specs")
+		case 2:
+			bufferstring(STR_VAR_1,"Choice Scarf")
+		case 3:
+			bufferstring(STR_VAR_1,"Life Orb")
+		case 4:
+			bufferstring(STR_VAR_1,"Leftovers")
+		case 127:
+			msgbox(format("Okay, let me know when you've decided what item you'd like."),MSGBOX_NPC)
+			goto(Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection)
+			end
+	}
+	msgbox(format("Are you sure you want the {STR_VAR_1}?"),MSGBOX_YESNO)
+	if(var(VAR_RESULT) == NO){
+		msgbox(format("Okay, let me know when you've decided what item you'd like."),MSGBOX_NPC)
+		waitmessage
+		end
+	}
+	else{
+		switch(var(VAR_TEMP_6)){
+			case 0:
+				giveitem(ITEM_CHOICE_BAND)
+				setflag(FLAG_RECEIVED_CHOICE_BAND)
+				setflag(FLAG_RECEIVED_WINSTRATE_ITEM)
+			case 1:	
+				giveitem(ITEM_CHOICE_SPECS)
+				setflag(FLAG_RECEIVED_CHOICE_SPECS)
+				setflag(FLAG_RECEIVED_WINSTRATE_ITEM)
+			case 2:
+				giveitem(ITEM_CHOICE_SCARF)
+				setflag(FLAG_RECEIVED_CHOICE_SCARF)
+				setflag(FLAG_RECEIVED_WINSTRATE_ITEM)
+			case 3:	
+				giveitem(ITEM_LIFE_ORB)
+				setflag(FLAG_RECEIVED_LIFE_ORB)
+				setflag(FLAG_RECEIVED_WINSTRATE_ITEM)
+			case 4:	
+				giveitem(ITEM_LEFTOVERS)
+				setflag(FLAG_RECEIVED_LEFTOVERS)
+				setflag(FLAG_RECEIVED_WINSTRATE_ITEM)
+		}
+	}
+	msgbox(format("Wonderful choice - I hope this {STR_VAR_1} makes you & your Pokémon even stronger!"))
+	waitmessage
+	goto(Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection)
+	releaseall
+	end
+}
+
+script Route111_WinstrateFamilysHouse_EventScript_Victoria {
+	lock
+	faceplayer
+	goto_if_set(FLAG_RECEIVED_WINSTRATE_ITEM,Route111_WinstrateFamilysHouse_EventScript_ReceivedItem)
+	goto(Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem)
+	releaseall
+	return
+}
+
+script Route111_WinstrateFamilysHouse_EventScript_ReceivedItem {
+	msgbox(Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles, MSGBOX_DEFAULT)
+	goto(Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection)
+	end
+}

@@ -151,7 +151,7 @@
 #define FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN  0x81
 #define FLAG_DEFEATED_RIVAL_ROUTE103         0x82
 #define FLAG_RECEIVED_DOLL_LANETTE           0x83
-#define FLAG_RECEIVED_POTION_OLDALE          0x84
+#define FLAG_RECEIVED_CHOICE_BAND            0x84 // was Potion in Oldale, repurposed
 #define FLAG_RECEIVED_AMULET_COIN            0x85
 #define FLAG_PENDING_DAYCARE_EGG             0x86
 #define FLAG_THANKED_FOR_PLAYING_WITH_WALLY  0x87
@@ -281,7 +281,7 @@
 #define FLAG_LATIOS_OR_LATIAS_ROAMING        0xFF
 #define FLAG_RECEIVED_REPEAT_BALL            0x100
 #define FLAG_RECEIVED_EEVEE_FROM_NORMAN      0x101 //was Old Rod, but changed to Eevee
-#define FLAG_RECEIVED_COIN_CASE              0x102
+#define FLAG_RECEIVED_COIN_CASE              0x102 // changed to use new Scott plotline
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0x103
 #define FLAG_RECEIVED_TM_SNATCH              0x104
 #define FLAG_RECEIVED_TM_DIG                 0x105
@@ -300,14 +300,14 @@
 #define FLAG_RECEIVED_RUNNING_SHOES          0x112
 #define FLAG_RECEIVED_QUICK_CLAW             0x113
 #define FLAG_RECEIVED_KINGS_ROCK             0x114
-#define FLAG_RECEIVED_MACHO_BRACE            0x115
+#define FLAG_RECEIVED_CHOICE_SPECS           0x115 // Was Macho Brace, repurposed
 #define FLAG_RECEIVED_SOOTHE_BELL            0x116
 #define FLAG_RECEIVED_WHITE_HERB             0x117
 #define FLAG_RECEIVED_SOFT_SAND              0x118
 #define FLAG_ENABLE_PROF_BIRCH_MATCH_CALL    0x119
 #define FLAG_RECEIVED_CLEANSE_TAG            0x11A
 #define FLAG_RECEIVED_FOCUS_BAND             0x11B
-#define FLAG_DECLINED_WALLY_BATTLE_MAUVILLE  0x11C
+#define FLAG_RECEIVED_CHOICE_SCARF           0x11C // attempting to repurpose
 #define FLAG_RECEIVED_DEVON_SCOPE            0x11D
 #define FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE  0x11E
 #define FLAG_MET_DEVON_EMPLOYEE              0x11F
@@ -664,10 +664,10 @@
 #define FLAG_SLATEPORT_FARM_COMPLETED  0x269 // formerly not used
 #define FLAG_SLATEPORT_BAY_FLOODED  0x26A // formerly not used
 #define FLAG_HIDDEN_BY_DEFAULT  0x26B // formerly not used; set at start to hide variety of temporary objects & NPCs
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
+#define FLAG_HIDE_GIMMIGHOUL  0x26C // formerly not used
+#define FLAG_RECEIVED_LIFE_ORB  0x26D // formerly not used
+#define FLAG_RECEIVED_LEFTOVERS  0x26E // formerly not used
+#define FLAG_RECEIVED_WINSTRATE_ITEM  0x26F // formerly not used
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag
 #define FLAG_UNUSED_0x271  0x271 // Unused Flag
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag
