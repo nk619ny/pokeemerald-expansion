@@ -722,7 +722,9 @@ script MauvilleCity_EventScript_Temporary{
 	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
 	msgbox("New level cap is {STR_VAR_1}")
 	waitmessage
-	giveitem(ITEM_UNLIMITED_REPEL)
+	//giveitem(ITEM_UNLIMITED_REPEL)
+	//givemon(SPECIES_EXCADRILL,40,,,,,,,,,,,,,,,,,,MOVE_SEARING_SUNRAZE_SMASH,MOVE_SUNSTEEL_STRIKE,MOVE_BITTER_MALICE,MOVE_PURIFY)
+	//givemon(SPECIES_EXCADRILL,40,,,,,,,,,,,,,,,,,,MOVE_NOXIOUS_TORQUE,MOVE_COMBAT_TORQUE,MOVE_THUNDERCLAP,MOVE_NIGHT_DAZE)
 	waitmessage
 	closemessage
 	releaseall

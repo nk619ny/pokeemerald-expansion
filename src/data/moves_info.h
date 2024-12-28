@@ -19007,7 +19007,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Bitter Malice"),
         .description = COMPOUND_STRING(
             "A spine-chilling resentment.\n"
-            "Lowers the foe's Attack."),
+            "May freeze the foe."),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 75 : 60,
         .type = TYPE_GHOST,
@@ -19017,8 +19017,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
-            .chance = 100,
+            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+            .chance = 10,
         }),
         .battleAnimScript = gBattleAnimMove_BitterMalice,
     },

@@ -5,7 +5,7 @@
   "music": "MUS_VERDANTURF",
   "region_map_section": "MAPSEC_VERDANT_GROVE",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_NONE",
   "allow_cycling": true,
   "allow_escaping": false,
