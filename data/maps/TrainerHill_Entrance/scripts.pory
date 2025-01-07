@@ -459,3 +459,20 @@ TrainerHill_Elevator_Text_ReturnToReception:
 	.string "Would you like to return to\n"
 	.string "the reception counter?$"
 `
+
+
+text TrainerHill_Text_ScottIntro {
+	format("Scott: Ah, {PLAYER}!\nYou've stumbled onto something exciting.\pThis is Trainer Hill, a new facility I'm launching for exhibition battles between trainers.\pIt's a way for Trainers to hone their skills, and residents of nearby Cities to see talented or aspiring Trainers.")
+}
+
+text TrainerHill_Text_ScottAreYouInterested {
+	format("Are you interested in participating?")
+}
+
+text TrainerHill_Text_ScottAgree {
+	format("Scott: Great! I've got another participant already lined up, so you can talk to the gate attendant whenever you're ready.\pWattson has agreed to subsidize this project, so for every battle you win here in Trainer Hill, you'll receive Coins for the Mauville Game Corner as a reward.\pYou can use this Coin Case to collect them.")
+}
+
+text TrainerHill_Text_ScottDecline {
+	format("Scott: Oh well, I'm sure I'll find other Trainers interested in participating.\pCome back if you ever change your mind!")
+}

@@ -219,6 +219,11 @@
 #define MAPSEC_SLATEPORT_FARM               0xD7
 #define MAPSEC_SLATEPORT_BAY                0xD8
 #define MAPSEC_VERDANT_GROVE                0xD9
+#define MAPSEC_ROUTE_111_SOUTH              0xDA
+#define MAPSEC_ROUTE_111_NORTH              0xDB
+#define MAPSEC_MIRAGE_DESERT                0xDC
+#define MAPSEC_WEATHER_INSTITUTE            0xDD
+#define MAPSEC_GAME_CORNER                  0xDE
 
 #define MAPSEC_NONE                         0xF9 //was 0xD5
 

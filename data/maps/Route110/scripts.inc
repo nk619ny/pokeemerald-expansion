@@ -379,7 +379,7 @@ Route110_EventScript_EdwinRegisterMatchCallAfterBattle::
 # 190 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_EdwinRegister, MSGBOX_DEFAULT
 # 191 "data/maps/Route110/scripts.pory"
-	//register_matchcall TRAINER_EDWIN_1
+	register_matchcall TRAINER_EDWIN_1
 # 192 "data/maps/Route110/scripts.pory"
 	release
 # 193 "data/maps/Route110/scripts.pory"
@@ -451,7 +451,7 @@ Route110_EventScript_BenjaminRegisterMatchCallAfterBattle::
 # 226 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_BenjaminRegister, MSGBOX_DEFAULT
 # 227 "data/maps/Route110/scripts.pory"
-	//register_matchcall TRAINER_BENJAMIN_1
+	register_matchcall TRAINER_BENJAMIN_1
 # 228 "data/maps/Route110/scripts.pory"
 	release
 # 229 "data/maps/Route110/scripts.pory"
@@ -503,7 +503,7 @@ Route110_EventScript_AbigailRegisterMatchCallAfterBattle::
 # 252 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_AbigailRegister, MSGBOX_DEFAULT
 # 253 "data/maps/Route110/scripts.pory"
-	//register_matchcall TRAINER_ABIGAIL_1
+	register_matchcall TRAINER_ABIGAIL_1
 # 254 "data/maps/Route110/scripts.pory"
 	release
 # 255 "data/maps/Route110/scripts.pory"
@@ -545,7 +545,7 @@ Route110_EventScript_IsabelRegisterMatchCallAfterBattle::
 # 273 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_IsabelRegister, MSGBOX_DEFAULT
 # 274 "data/maps/Route110/scripts.pory"
-	//register_matchcall TRAINER_ISABEL_1
+	register_matchcall TRAINER_ISABEL_1
 # 275 "data/maps/Route110/scripts.pory"
 	release
 # 276 "data/maps/Route110/scripts.pory"

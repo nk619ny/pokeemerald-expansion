@@ -94,7 +94,10 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "Route104_North",
-    "VerdantGrove"
+    "VerdantGrove",
+    "Route111_South",
+    "Route111_Desert",
+    "Route111_North"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -596,7 +599,8 @@
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",
     "Route104_PrototypePrettyPetalFlowerShop",
-    "Slateport_Original"
+    "Slateport_Original",
+    "TestMapDesert"
   ],
   "gMapGroup_IndoorRoute109": [
     "Route109_SeashoreHouse"

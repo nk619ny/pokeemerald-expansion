@@ -24,8 +24,13 @@
       "direction": "left"
     },
     {
-      "map": "MAP_ROUTE111",
-      "offset": -20,
+      "map": "MAP_ROUTE111_SOUTH",
+      "offset": 43,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE111_DESERT",
+      "offset": -37,
       "direction": "right"
     }
   ],

@@ -4500,6 +4500,46 @@
       "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/NewTrainerHill/border.bin",
       "blockdata_filepath": "data/layouts/NewTrainerHill/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_MAP_DESERT",
+      "name": "TestMapDesert_Layout",
+      "width": 40,
+      "height": 170,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/TestMapDesert/border.bin",
+      "blockdata_filepath": "data/layouts/TestMapDesert/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE111_SOUTH",
+      "name": "Route111_South_Layout",
+      "width": 43,
+      "height": 77,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route111_South/border.bin",
+      "blockdata_filepath": "data/layouts/Route111_South/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE111_DESERT",
+      "name": "Route111_Desert_Layout",
+      "width": 43,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route111_Desert/border.bin",
+      "blockdata_filepath": "data/layouts/Route111_Desert/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE111_NORTH",
+      "name": "Route111_North_Layout",
+      "width": 58,
+      "height": 37,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/Route111_North/border.bin",
+      "blockdata_filepath": "data/layouts/Route111_North/map.bin"
     }
   ]
 }

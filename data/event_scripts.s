@@ -1169,3 +1169,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/VerdantGrove/scripts.inc"
 
 	.include "data/maps/NewTrainerHill/scripts.inc"
+
+	.include "data/maps/TestMapDesert/scripts.inc"
+
+	.include "data/maps/Route111_South/scripts.inc"
+
+	.include "data/maps/Route111_Desert/scripts.inc"
+
+	.include "data/maps/Route111_North/scripts.inc"

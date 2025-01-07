@@ -918,3 +918,39 @@ TrainerHill_Elevator_Text_ReturnToReception:
 	.string "Would you like to return to\n"
 # 460 "data/maps/TrainerHill_Entrance/scripts.pory"
 	.string "the reception counter?$"
+
+TrainerHill_Text_ScottIntro::
+# 464 "data/maps/TrainerHill_Entrance/scripts.pory"
+	.string "Scott: Ah, {PLAYER}!\n"
+	.string "You've stumbled onto something\l"
+	.string "exciting.\p"
+	.string "This is Trainer Hill, a new facility I'm\n"
+	.string "launching for exhibition battles\l"
+	.string "between trainers.\p"
+	.string "It's a way for Trainers to hone their\n"
+	.string "skills, and residents of nearby Cities\l"
+	.string "to see talented or aspiring Trainers.$"
+
+TrainerHill_Text_ScottAreYouInterested::
+# 468 "data/maps/TrainerHill_Entrance/scripts.pory"
+	.string "Are you interested in participating?$"
+
+TrainerHill_Text_ScottAgree::
+# 472 "data/maps/TrainerHill_Entrance/scripts.pory"
+	.string "Scott: Great! I've got another\n"
+	.string "participant already lined up, so you can\l"
+	.string "talk to the gate attendant whenever\l"
+	.string "you're ready.\p"
+	.string "Wattson has agreed to subsidize this\n"
+	.string "project, so for every battle you win\l"
+	.string "here in Trainer Hill, you'll receive Coins\l"
+	.string "for the Mauville Game Corner as a\l"
+	.string "reward.\p"
+	.string "You can use this Coin Case to collect\n"
+	.string "them.$"
+
+TrainerHill_Text_ScottDecline::
+# 476 "data/maps/TrainerHill_Entrance/scripts.pory"
+	.string "Scott: Oh well, I'm sure I'll find other\n"
+	.string "Trainers interested in participating.\p"
+	.string "Come back if you ever change your mind!$"
