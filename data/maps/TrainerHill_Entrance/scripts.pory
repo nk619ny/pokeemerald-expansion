@@ -469,10 +469,56 @@ text TrainerHill_Text_ScottAreYouInterested {
 	format("Are you interested in participating?")
 }
 
-text TrainerHill_Text_ScottAgree {
+text TrainerHill_Text_ScottAreYouSure {
+	format("Scott: Are you sure?\nWattson has agreed to subsidize this project, so for every battle you win here in Trainer Hill, you'll receive Coins for the Mauville Game Corner as a reward.\nIs that enough to convince you?")
+}
+
+text TrainerHill_Text_ScottAgree1st {
 	format("Scott: Great! I've got another participant already lined up, so you can talk to the gate attendant whenever you're ready.\pWattson has agreed to subsidize this project, so for every battle you win here in Trainer Hill, you'll receive Coins for the Mauville Game Corner as a reward.\pYou can use this Coin Case to collect them.")
 }
 
+text TrainerHill_Text_ScottAgree2nd {
+	format("Scott: Great! I've got another participant already lined up, so you can talk to the gate attendant whenever you're ready.\nYou can take this Coin Case to store any prizes you win.")
+}
+
 text TrainerHill_Text_ScottDecline {
-	format("Scott: Oh well, I'm sure I'll find other Trainers interested in participating.\pCome back if you ever change your mind!")
+	format("Scott: Oh well, I'm sure I'll find other Trainers interested in participating.\pIn case you change your mind, take this.")
+}
+
+text TrainerHill_Text_ScottDepart {
+	format("Scott: I've got to go spread the word and find more Trainers. I'll see you around!")
+}
+
+script TrainerHill_EventScript_ScottIntro {
+	lock
+	faceplayer
+	msgbox(TrainerHill_Text_ScottIntro,MSGBOX_NPC)
+	waitmessage
+	msgbox(TrainerHill_Text_ScottAreYouInterested,MSGBOX_YESNO)
+	waitmessage
+	if(var(VAR_RESULT)==YES){
+		msgbox(TrainerHill_Text_ScottAgree1st)
+		waitmessage
+	}
+	else{
+		msgbox(TrainerHill_Text_ScottAreYouSure,MSGBOX_YESNO)
+		waitmessage
+		if(var(VAR_RESULT)==YES){
+			msgbox(TrainerHill_Text_ScottAgree2nd)
+			waitmessage
+		}
+		else{
+			msgbox(TrainerHill_Text_ScottDecline)
+			waitmessage
+		}
+	}
+	giveitem(ITEM_COIN_CASE)
+	waitmessage
+	waitfanfare
+	closemessage
+	msgbox(TrainerHill_Text_ScottDepart)
+	waitmessage
+	closemessage
+	releaseall
+	end
 }

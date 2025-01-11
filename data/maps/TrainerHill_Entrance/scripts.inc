@@ -919,6 +919,67 @@ TrainerHill_Elevator_Text_ReturnToReception:
 # 460 "data/maps/TrainerHill_Entrance/scripts.pory"
 	.string "the reception counter?$"
 
+TrainerHill_EventScript_ScottIntro::
+# 493 "data/maps/TrainerHill_Entrance/scripts.pory"
+	lock
+# 494 "data/maps/TrainerHill_Entrance/scripts.pory"
+	faceplayer
+# 495 "data/maps/TrainerHill_Entrance/scripts.pory"
+	msgbox TrainerHill_Text_ScottIntro, MSGBOX_NPC
+# 496 "data/maps/TrainerHill_Entrance/scripts.pory"
+	waitmessage
+# 497 "data/maps/TrainerHill_Entrance/scripts.pory"
+	msgbox TrainerHill_Text_ScottAreYouInterested, MSGBOX_YESNO
+# 498 "data/maps/TrainerHill_Entrance/scripts.pory"
+	waitmessage
+# 499 "data/maps/TrainerHill_Entrance/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq TrainerHill_EventScript_ScottIntro_2
+# 504 "data/maps/TrainerHill_Entrance/scripts.pory"
+	msgbox TrainerHill_Text_ScottAreYouSure, MSGBOX_YESNO
+# 505 "data/maps/TrainerHill_Entrance/scripts.pory"
+	waitmessage
+# 506 "data/maps/TrainerHill_Entrance/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq TrainerHill_EventScript_ScottIntro_5
+# 511 "data/maps/TrainerHill_Entrance/scripts.pory"
+	msgbox TrainerHill_Text_ScottDecline
+# 512 "data/maps/TrainerHill_Entrance/scripts.pory"
+	waitmessage
+TrainerHill_EventScript_ScottIntro_1:
+# 515 "data/maps/TrainerHill_Entrance/scripts.pory"
+	giveitem ITEM_COIN_CASE
+# 516 "data/maps/TrainerHill_Entrance/scripts.pory"
+	waitmessage
+# 517 "data/maps/TrainerHill_Entrance/scripts.pory"
+	waitfanfare
+# 518 "data/maps/TrainerHill_Entrance/scripts.pory"
+	closemessage
+# 519 "data/maps/TrainerHill_Entrance/scripts.pory"
+	msgbox TrainerHill_Text_ScottDepart
+# 520 "data/maps/TrainerHill_Entrance/scripts.pory"
+	waitmessage
+# 521 "data/maps/TrainerHill_Entrance/scripts.pory"
+	closemessage
+# 522 "data/maps/TrainerHill_Entrance/scripts.pory"
+	releaseall
+	end
+
+TrainerHill_EventScript_ScottIntro_2:
+# 500 "data/maps/TrainerHill_Entrance/scripts.pory"
+	msgbox TrainerHill_Text_ScottAgree1st
+# 501 "data/maps/TrainerHill_Entrance/scripts.pory"
+	waitmessage
+	goto TrainerHill_EventScript_ScottIntro_1
+
+TrainerHill_EventScript_ScottIntro_5:
+# 507 "data/maps/TrainerHill_Entrance/scripts.pory"
+	msgbox TrainerHill_Text_ScottAgree2nd
+# 508 "data/maps/TrainerHill_Entrance/scripts.pory"
+	waitmessage
+	goto TrainerHill_EventScript_ScottIntro_1
+
+
 TrainerHill_Text_ScottIntro::
 # 464 "data/maps/TrainerHill_Entrance/scripts.pory"
 	.string "Scott: Ah, {PLAYER}!\n"
@@ -935,8 +996,18 @@ TrainerHill_Text_ScottAreYouInterested::
 # 468 "data/maps/TrainerHill_Entrance/scripts.pory"
 	.string "Are you interested in participating?$"
 
-TrainerHill_Text_ScottAgree::
+TrainerHill_Text_ScottAreYouSure::
 # 472 "data/maps/TrainerHill_Entrance/scripts.pory"
+	.string "Scott: Are you sure?\n"
+	.string "Wattson has agreed to subsidize this\l"
+	.string "project, so for every battle you win\l"
+	.string "here in Trainer Hill, you'll receive Coins\l"
+	.string "for the Mauville Game Corner as a\l"
+	.string "reward.\n"
+	.string "Is that enough to convince you?$"
+
+TrainerHill_Text_ScottAgree1st::
+# 476 "data/maps/TrainerHill_Entrance/scripts.pory"
 	.string "Scott: Great! I've got another\n"
 	.string "participant already lined up, so you can\l"
 	.string "talk to the gate attendant whenever\l"
@@ -949,8 +1020,23 @@ TrainerHill_Text_ScottAgree::
 	.string "You can use this Coin Case to collect\n"
 	.string "them.$"
 
+TrainerHill_Text_ScottAgree2nd::
+# 480 "data/maps/TrainerHill_Entrance/scripts.pory"
+	.string "Scott: Great! I've got another\n"
+	.string "participant already lined up, so you can\l"
+	.string "talk to the gate attendant whenever\l"
+	.string "you're ready.\n"
+	.string "You can take this Coin Case to store\l"
+	.string "any prizes you win.$"
+
 TrainerHill_Text_ScottDecline::
-# 476 "data/maps/TrainerHill_Entrance/scripts.pory"
+# 484 "data/maps/TrainerHill_Entrance/scripts.pory"
 	.string "Scott: Oh well, I'm sure I'll find other\n"
 	.string "Trainers interested in participating.\p"
-	.string "Come back if you ever change your mind!$"
+	.string "In case you change your mind, take this.$"
+
+TrainerHill_Text_ScottDepart::
+# 488 "data/maps/TrainerHill_Entrance/scripts.pory"
+	.string "Scott: I've got to go spread the word\n"
+	.string "and find more Trainers. I'll see you\l"
+	.string "around!$"
