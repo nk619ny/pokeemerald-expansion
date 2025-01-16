@@ -280,6 +280,24 @@ const u32 gTrainerPalette_RubySapphireBrendan[] = INCBIN_U32("graphics/trainers/
 const u32 gTrainerFrontPic_RubySapphireMay[] = INCBIN_U32("graphics/trainers/front_pics/may_rs.4bpp.lz");
 const u32 gTrainerPalette_RubySapphireMay[] = INCBIN_U32("graphics/trainers/palettes/may_rs.gbapal.lz");
 
+const u32 gTrainerFrontPic_CourtneyORAS[] = INCBIN_U32("graphics/trainers/front_pics/courtney_oras.4bpp.lz");
+const u32 gTrainerPalette_CourtneyORAS[] = INCBIN_U32("graphics/trainers/front_pics/courtney_oras.gbapal.lz");
+
+const u32 gTrainerFrontPic_TabithaORAS[] = INCBIN_U32("graphics/trainers/front_pics/tabitha_oras.4bpp.lz");
+const u32 gTrainerPalette_TabithaORAS[] = INCBIN_U32("graphics/trainers/front_pics/tabitha_oras.gbapal.lz");
+
+const u32 gTrainerFrontPic_ShellyORAS[] = INCBIN_U32("graphics/trainers/front_pics/shelly_oras.4bpp.lz");
+const u32 gTrainerPalette_ShellyORAS[] = INCBIN_U32("graphics/trainers/front_pics/shelly_oras.gbapal.lz");
+
+const u32 gTrainerFrontPic_MattORAS[] = INCBIN_U32("graphics/trainers/front_pics/matt_oras.4bpp.lz");
+const u32 gTrainerPalette_MattORAS[] = INCBIN_U32("graphics/trainers/front_pics/matt_oras.gbapal.lz");
+
+const u32 gTrainerFrontPic_ArchieORAS[] = INCBIN_U32("graphics/trainers/front_pics/archie_oras.4bpp.lz");
+const u32 gTrainerPalette_ArchieORAS[] = INCBIN_U32("graphics/trainers/front_pics/archie_oras.gbapal.lz");
+
+const u32 gTrainerFrontPic_MaxieORAS[] = INCBIN_U32("graphics/trainers/front_pics/maxie_oras.4bpp.lz");
+const u32 gTrainerPalette_MaxieORAS[] = INCBIN_U32("graphics/trainers/front_pics/maxie_oras.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -401,6 +419,12 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LEAF, gTrainerFrontPic_Leaf, gTrainerPalette_Leaf),
     TRAINER_SPRITE(TRAINER_PIC_RS_BRENDAN, gTrainerFrontPic_RubySapphireBrendan, gTrainerPalette_RubySapphireBrendan),
     TRAINER_SPRITE(TRAINER_PIC_RS_MAY, gTrainerFrontPic_RubySapphireMay, gTrainerPalette_RubySapphireMay),
+    TRAINER_SPRITE(TRAINER_PIC_COURTNEY_ORAS, gTrainerFrontPic_CourtneyORAS, gTrainerPalette_CourtneyORAS),
+    TRAINER_SPRITE(TRAINER_PIC_TABITHA_ORAS, gTrainerFrontPic_TabithaORAS, gTrainerPalette_TabithaORAS),
+    TRAINER_SPRITE(TRAINER_PIC_SHELLY_ORAS, gTrainerFrontPic_ShellyORAS, gTrainerPalette_ShellyORAS),
+    TRAINER_SPRITE(TRAINER_PIC_MATT_ORAS, gTrainerFrontPic_MattORAS, gTrainerPalette_MattORAS),
+    TRAINER_SPRITE(TRAINER_PIC_ARCHIE_ORAS, gTrainerFrontPic_ArchieORAS, gTrainerPalette_ArchieORAS),
+    TRAINER_SPRITE(TRAINER_PIC_MAXIE_ORAS, gTrainerFrontPic_MaxieORAS, gTrainerPalette_MaxieORAS),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
