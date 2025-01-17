@@ -260,6 +260,7 @@ AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Do
 
 Tentacool @ Oran Berry
 Ability: Liquid Ooze  
+Ball: Nest Ball
 Level: 12  
 EVs: 192 HP / 244 SpA / 52 Spe  
 Timid Nature  
@@ -271,6 +272,7 @@ IVs: 0 Atk
 
 Toedscool @ Oran Berry  
 Ability: Mycelium Might  
+Ball: Nest Ball
 Level: 12
 EVs: 224 HP / 156 Atk / 64 Def / 44 SpA  
 Sassy Nature  
@@ -5076,6 +5078,7 @@ AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Kubfu @ Weakness Policy
 Ability: Inner Focus  
+Ball: Sport Ball
 Level: 25
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -5086,6 +5089,7 @@ Jolly Nature
 
 Tauros-Paldea-Aqua (M) @ Salac Berry  
 Ability: Anger Point  
+Ball: Luxury Ball
 Level: 25
 EVs: 252 HP / 252 Spe  
 Jolly Nature  
@@ -5095,7 +5099,8 @@ Jolly Nature
 - Zen Headbutt  
 
 Breloom @ Coba Berry
-Ability: Technician  
+Ability: Technician 
+Ball : Nest Ball 
 Level: 25
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -5106,6 +5111,7 @@ Jolly Nature
 
 Combusken @ Wise Glasses
 Ability: Speed Boost  
+Ball: Fast Ball
 Level: 25
 EVs: 4 HP / 252 SpA / 252 Spe  
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe /* HP Grass IVs for Max Atk */
@@ -5117,6 +5123,7 @@ Modest Nature
 
 Perrserker @ Expert Belt
 Ability: Tough Claws
+Ball: Heavy Ball
 Level: 25
 EVs: 248 HP / 252 Atk / 8 SpD  
 Adamant Nature  
@@ -5127,6 +5134,7 @@ Adamant Nature
 
 Hariyama @ Sitrus Berry
 Ability: Guts  
+Ball: Level Ball
 Level: 25
 EVs: 144 Def / 244 SpD  
 Careful Nature  
@@ -5147,7 +5155,8 @@ Starting Status: STARTING_STATUS_ELECTRIC_TERRAIN
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Rotom-Heat  
-Ability: Levitate  
+Ability: Levitate 
+Ball: Fast Ball 
 Level: 29
 EVs: 252 HP / 252 SpA / 4 Spe  
 Modest Nature  
@@ -5159,6 +5168,7 @@ IVs: 0 Atk
 
 Lanturn @ Rindo Berry
 Ability: Volt Absorb  
+Ball: Fast Ball 
 Level: 30
 EVs: 252 HP / 252 SpA
 Modest Nature
@@ -5170,6 +5180,7 @@ IVs: 0 Atk
 
 Kilowattrel @ Electric Seed  
 Ability: Volt Absorb  
+Ball: Fast Ball 
 Level: 29
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -5180,6 +5191,7 @@ Jolly Nature
 
 Regieleki @ Petaya Berry
 Ability: Transistor  
+Ball: Fast Ball 
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe /* HP Ice IVs for Max Atk */
 EVs: 128 HP / 64 Def / 252 SpA / 64 Spe  
@@ -5191,6 +5203,7 @@ Mild Nature
 
 Manectric @ Manectite  
 Ability: Static   
+Ball: Fast Ball 
 Level: 30
 IVs: 0 Atk  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -5202,6 +5215,7 @@ Modest Nature
 
 Cryogonal @ Light Clay  
 Ability: Levitate  
+Ball: Fast Ball 
 Level: 29
 EVs: 252 Def / 128 SpD / 128 Spe  
 Calm Nature  
@@ -5276,6 +5290,7 @@ AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Slaking  
 Ability: Slow Start  
+Ball: Premier Ball
 Level: 15  
 EVs: 92 Atk / 104 SpD / 252 Spe  
 Adamant Nature  
@@ -5286,6 +5301,7 @@ Adamant Nature
 
 Skitty @ Silk Scarf  
 Ability: Normalize  
+Ball: Premier Ball
 Level: 15  
 EVs: 236 Atk / 24 Def / 236 SpD / 12 Spe  
 Adamant Nature  
@@ -5294,6 +5310,7 @@ Adamant Nature
 
 Spinda @ Salac Berry  
 Ability: Contrary  
+Ball: Premier Ball
 Level: 15  
 EVs: 252 HP / 4 Atk / 252 Spe  
 Serious Nature  
@@ -5304,6 +5321,7 @@ Serious Nature
 
 Zigzagoon @ Aguav Berry  
 Ability: Gluttony  
+Ball: Premier Ball
 Level: 15  
 EVs: 244 HP / 252 Atk / 4 Def  
 Adamant Nature  
@@ -5314,6 +5332,7 @@ Adamant Nature
 
 Aipom @ Life Orb  
 Ability: Skill Link  
+Ball: Premier Ball
 Level: 15  
 EVs: 252 Atk / 236 Spe  
 Jolly Nature  
@@ -5324,6 +5343,7 @@ Jolly Nature
 
 Clefairy @ Eviolite  
 Ability: Friend Guard  
+Ball: Moon Ball
 Level: 15  
 EVs: 224 HP / 108 Def / 156 SpD  
 Calm Nature  

@@ -377,6 +377,9 @@ const u32 gObjectEventPic_VigorothMover[] = INCBIN_U32("graphics/object_events/p
 const u32 gObjectEventPic_SudowoodoTree[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/sudowoodo_tree.4bpp");
 const u32 gObjectEventPic_RayquazaCutscene[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/rayquaza_cutscene.4bpp");
 
+const u32 gObjectEventPic_CourtneyORAS[] = INCBIN_U32("graphics/object_events/pics/people/courtney_oras.4bpp");
+const u16 gObjectEventPal_CourtneyORAS[] = INCBIN_U16("graphics/object_events/pics/people/courtney_oras.gbapal");
+
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 
