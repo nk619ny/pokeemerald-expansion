@@ -380,6 +380,15 @@ const u32 gObjectEventPic_RayquazaCutscene[] = INCBIN_U32("graphics/object_event
 const u32 gObjectEventPic_CourtneyORAS[] = INCBIN_U32("graphics/object_events/pics/people/courtney_oras.4bpp");
 const u16 gObjectEventPal_CourtneyORAS[] = INCBIN_U16("graphics/object_events/pics/people/courtney_oras.gbapal");
 
+const u32 gObjectEventPic_TabithaORAS[] = INCBIN_U32("graphics/object_events/pics/people/tabitha_oras.4bpp");
+const u16 gObjectEventPal_TabithaORAS[] = INCBIN_U16("graphics/object_events/pics/people/tabitha_oras.gbapal");
+
+const u32 gObjectEventPic_ShellyORAS[] = INCBIN_U32("graphics/object_events/pics/people/shelly_oras.4bpp");
+const u16 gObjectEventPal_ShellyORAS[] = INCBIN_U16("graphics/object_events/pics/people/shelly_oras.gbapal");
+
+const u32 gObjectEventPic_MattORAS[] = INCBIN_U32("graphics/object_events/pics/people/matt_oras.4bpp");
+const u16 gObjectEventPal_MattORAS[] = INCBIN_U16("graphics/object_events/pics/people/matt_oras.gbapal");
+
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 
