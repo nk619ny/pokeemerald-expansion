@@ -9885,8 +9885,21 @@ Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Treecko
-Level: 5
+Level: 8
+Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Leafage
+- Pound
+- Leer
+- Absorb
+
+Beldum  
+Level: 8
+Ability: Clear Body  
+- Tackle  
+- Take Down  
+- Iron Defense  
+
 
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
 Name: BRENDAN
@@ -9897,17 +9910,69 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Munchlax  
+Level: 28
+Ability: Thick Fat  
+Tera Type: Normal  
+EVs: 64 HP / 128 Atk / 64 Def  
+Adamant Nature  
+- Body Slam  
+- Counter  
+- Zen Headbutt  
+- Rock Slide  
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Metang 
+Level: 28
+Ability: Clear Body  
+Tera Type: Steel  
+EVs: 128 HP / 128 Atk 
+Adamant Nature  
+- Bullet Punch  
+- Ice Punch  
+- Psycho Cut  
+- Light Screen  
 
-Grovyle
+Salamence  
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ability: Intimidate  
+Tera Type: Dragon  
+- Bite  
+- Dragon Breath  
+- Dual Wingbeat  
+
+Salazzle  
+Level: 28
+Ability: Corrosion  
+Shiny: Yes  
+Tera Type: Poison  
+EVs: 128 SpA / 128 Spe  
+Timid Nature  
+- Toxic  
+- Fake Out  
+- Sludge Wave  
+- Heat Wave  
+
+Basculin-White-Striped (F) 
+Level: 28
+Ability: Adaptability  
+Tera Type: Water  
+EVs: 128 Atk / 128 Spe  
+Jolly Nature  
+- Flip Turn  
+- Aqua Jet  
+- Flail  
+- Psychic Fangs  
+
+Grovyle  
+Level: 28
+Ability: Overgrow  
+Tera Type: Grass  
+EVs: 128 Atk / 128 Spe  
+Jolly Nature  
+- Dragon Tail  
+- Trailblaze  
+- Breaking Swipe  
+- Quick Attack  
 
 === TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
 Name: BRENDAN
@@ -9937,11 +10002,24 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Torchic
-Level: 5
+Level: 8
+Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Ember
+- Growl
+- Peck
+
+Flabebe-White  
+Level: 8
+Ability: Flower Veil  
+- Disarming Voice  
+- Vine Whip  
+- Confide  
+- Aromatherapy  
 
 === TRAINER_BRENDAN_ROUTE_110_TREECKO ===
 Name: BRENDAN
@@ -9952,17 +10030,69 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Munchlax  
+Level: 28
+Ability: Thick Fat  
+Tera Type: Normal  
+EVs: 64 HP / 128 Atk / 64 Def  
+Adamant Nature  
+- Body Slam  
+- Counter  
+- Zen Headbutt  
+- Rock Slide  
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Metang 
+Level: 28
+Ability: Clear Body  
+Shiny: Yes  
+Tera Type: Steel  
+EVs: 128 HP / 128 Atk
+Adamant Nature  
+- Bullet Punch  
+- Ice Punch  
+- Psycho Cut  
+- Light Screen   
 
-Combusken
+Salamence  
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ability: Intimidate  
+Tera Type: Dragon  
+- Bite  
+- Dragon Breath  
+- Dual Wingbeat  
+
+Combusken  
+Level: 28
+Ability: Blaze  
+Tera Type: Fire  
+EVs: 128 Atk / 128 Spe  
+Jolly Nature  
+- Double Kick  
+- Flame Charge  
+- Quick Attack  
+- Thunder Punch  
+
+Basculin-White-Striped (F) 
+Level: 28
+Ability: Adaptability  
+Tera Type: Water  
+EVs: 128 Atk / 128 Spe  
+Jolly Nature  
+- Flip Turn  
+- Aqua Jet  
+- Flail  
+- Psychic Fangs  
+
+Gourgeist-Super  
+Level: 28
+Ability: Insomnia  
+Tera Type: Ghost  
+EVs: 128 HP / 128 Atk
+Adamant Nature  
+- Shadow Sneak  
+- Will-O-Wisp  
+- Skitter Smack  
+- Bullet Seed  
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRENDAN
@@ -9995,8 +10125,21 @@ Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Mudkip
-Level: 5
+Level: 8
+Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Water Gun
+- Growl
+- Rock Smash
+
+Sinistea-Antique  
+Level: 8
+Ability: Cursed Body  
+- Night Shade  
+- Astonish  
+- Mega Drain  
+- Aromatic Mist  
 
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
 Name: BRENDAN
@@ -10007,17 +10150,70 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Munchlax  
+Level: 28
+Ability: Thick Fat  
+Tera Type: Normal  
+EVs: 64 HP / 128 Atk / 64 Def  
+Adamant Nature  
+- Body Slam  
+- Counter  
+- Zen Headbutt  
+- Rock Slide  
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Metang 
+Level: 28
+Ability: Clear Body  
+Tera Type: Steel  
+EVs: 128 HP / 128 Atk 
+Adamant Nature  
+- Bullet Punch  
+- Ice Punch  
+- Psycho Cut  
+- Light Screen  
 
-Marshtomp
+Salamence  
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ability: Intimidate  
+Tera Type: Dragon  
+- Bite  
+- Dragon Breath  
+- Dual Wingbeat  
+
+Salazzle  
+Level: 28
+Ability: Corrosion  
+Tera Type: Poison  
+EVs: 128 SpA / 128 Spe  
+Timid Nature  
+- Toxic  
+- Fake Out  
+- Sludge Wave  
+- Heat Wave  
+
+Marshtomp  
+Level: 28
+Ability: Torrent  
+Tera Type: Water  
+EVs: 128 HP / 128 SpA
+Modest Nature  
+IVs: 0 Atk  
+- Muddy Water  
+- Ancient Power  
+- Mud Shot  
+- Wide Guard  
+
+Gourgeist-Super  
+Level: 28
+Ability: Insomnia  
+Shiny: Yes  
+Tera Type: Ghost  
+EVs: 128 HP / 128 Atk
+Adamant Nature  
+- Shadow Sneak  
+- Will-O-Wisp  
+- Skitter Smack  
+- Bullet Seed  
 
 === TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
 Name: BRENDAN
@@ -10050,8 +10246,20 @@ Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Treecko
-Level: 5
+Level: 8
+Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Absorb
+- Pound
+- Leer
+- Leafage
+
+Beldum  
+Level: 8
+Ability: Clear Body  
+- Tackle  
+- Take Down  
+- Iron Defense  
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: MAY
@@ -10062,17 +10270,70 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Munchlax  
+Level: 28
+Ability: Thick Fat  
+Tera Type: Normal  
+EVs: 64 HP / 128 Atk / 64 Def  
+Adamant Nature  
+- Body Slam  
+- Counter  
+- Zen Headbutt  
+- Rock Slide  
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Metang 
+Level: 28
+Ability: Clear Body  
+Tera Type: Steel  
+EVs: 128 HP / 128 Atk 
+Adamant Nature  
+- Bullet Punch  
+- Ice Punch  
+- Psycho Cut  
+- Light Screen  
 
-Grovyle
+Salamence  
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ability: Intimidate  
+Tera Type: Dragon  
+- Bite  
+- Dragon Breath  
+- Dual Wingbeat  
+
+Salazzle  
+Level: 28
+Ability: Corrosion  
+Shiny: Yes  
+Tera Type: Poison  
+EVs: 128 SpA / 128 Spe  
+Timid Nature  
+- Toxic  
+- Fake Out  
+- Sludge Wave  
+- Heat Wave  
+
+Basculin-White-Striped (F) 
+Level: 28
+Ability: Adaptability  
+Tera Type: Water  
+EVs: 128 Atk / 128 Spe  
+Jolly Nature  
+- Flip Turn  
+- Aqua Jet  
+- Flail  
+- Psychic Fangs  
+
+Grovyle  
+Level: 28
+Ability: Overgrow  
+Tera Type: Grass  
+EVs: 128 Atk / 128 Spe  
+Jolly Nature  
+- Dragon Tail  
+- Trailblaze  
+- Breaking Swipe  
+- Quick Attack  
+
 
 === TRAINER_MAY_ROUTE_119_MUDKIP ===
 Name: MAY
@@ -10105,8 +10366,21 @@ Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Torchic
-Level: 5
+Level: 8
+Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Ember
+- Growl
+- Peck
+
+Flabebe-White  
+Level: 8
+Ability: Flower Veil  
+- Disarming Voice  
+- Vine Whip  
+- Confide  
+- Aromatherapy  
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: MAY
@@ -10117,17 +10391,69 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Munchlax  
+Level: 28
+Ability: Thick Fat  
+Tera Type: Normal  
+EVs: 64 HP / 128 Atk / 64 Def  
+Adamant Nature  
+- Body Slam  
+- Counter  
+- Zen Headbutt  
+- Rock Slide  
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Metang 
+Level: 28
+Ability: Clear Body  
+Shiny: Yes  
+Tera Type: Steel  
+EVs: 128 HP / 128 Atk 
+Adamant Nature  
+- Bullet Punch  
+- Ice Punch  
+- Psycho Cut  
+- Light Screen  
 
-Combusken
+Salamence  
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ability: Intimidate  
+Tera Type: Dragon  
+- Bite  
+- Dragon Breath  
+- Dual Wingbeat  
+
+Combusken  
+Level: 28
+Ability: Blaze  
+Tera Type: Fire  
+EVs: 128 Atk / 128 Spe  
+Jolly Nature  
+- Double Kick  
+- Flame Charge  
+- Quick Attack  
+- Thunder Punch  
+
+Basculin-White-Striped (F) 
+Level: 28
+Ability: Adaptability  
+Tera Type: Water  
+EVs: 128 Atk / 128 Spe  
+Jolly Nature  
+- Flip Turn  
+- Aqua Jet  
+- Flail  
+- Psychic Fangs  
+
+Gourgeist-Super  
+Level: 28
+Ability: Insomnia  
+Tera Type: Ghost  
+EVs: 128 HP / 128 Atk
+Adamant Nature  
+- Shadow Sneak  
+- Will-O-Wisp  
+- Skitter Smack  
+- Bullet Seed  
 
 === TRAINER_MAY_ROUTE_119_TREECKO ===
 Name: MAY
@@ -10160,8 +10486,21 @@ Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Mudkip
-Level: 5
+Level: 8
+Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Water Gun
+- Growl
+- Rock Smash
+
+Sinistea-Antique  
+Level: 8
+Ability: Cursed Body  
+- Night Shade  
+- Astonish  
+- Mega Drain  
+- Aromatic Mist  
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: MAY
@@ -10172,17 +10511,70 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Munchlax  
+Level: 28
+Ability: Thick Fat  
+Tera Type: Normal  
+EVs: 64 HP / 128 Atk / 64 Def  
+Adamant Nature  
+- Body Slam  
+- Counter  
+- Zen Headbutt  
+- Rock Slide  
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Metang 
+Level: 28
+Ability: Clear Body  
+Tera Type: Steel  
+EVs: 128 HP / 128 Atk 
+Adamant Nature  
+- Bullet Punch  
+- Ice Punch  
+- Psycho Cut  
+- Light Screen  
 
-Marshtomp
+Salamence  
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ability: Intimidate  
+Tera Type: Dragon  
+- Bite  
+- Dragon Breath  
+- Dual Wingbeat  
+
+Salazzle  
+Level: 28
+Ability: Corrosion  
+Tera Type: Poison  
+EVs: 128 SpA / 128 Spe  
+Timid Nature  
+- Toxic  
+- Fake Out  
+- Sludge Wave  
+- Heat Wave  
+
+Marshtomp  
+Level: 28
+Ability: Torrent  
+Tera Type: Water  
+EVs: 128 HP / 128 SpA
+Modest Nature  
+IVs: 0 Atk  
+- Muddy Water  
+- Ancient Power  
+- Mud Shot  
+- Wide Guard  
+
+Gourgeist-Super  
+Level: 28
+Ability: Insomnia  
+Shiny: Yes  
+Tera Type: Ghost  
+EVs: 128 HP / 128 Atk
+Adamant Nature  
+- Shadow Sneak  
+- Will-O-Wisp  
+- Skitter Smack  
+- Bullet Seed  
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: MAY
