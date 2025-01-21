@@ -2408,4 +2408,25 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_DARK_CLOUDS] =
+    {
+        .name = _("Dark Clouds"),
+        .description = COMPOUND_STRING("Summons storms in battle."),
+        .aiRating = 9
+    },
+
+    [ABILITY_BLITZ_BOXER] =
+    {
+        .name = _("Blitz Boxer"),
+        .description = COMPOUND_STRING("Punching moves strike first."),
+        .aiRating = 8
+    },
+
+    [ABILITY_SUB_ZERO] =
+    {
+        .name = _("Sub-Zero"),
+        .description = COMPOUND_STRING("Powers up Ice moves."),
+        .aiRating = 6
+    },
 };

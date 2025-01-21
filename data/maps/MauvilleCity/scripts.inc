@@ -1448,11 +1448,11 @@ MauvilleCity_EventScript_Temporary::
 	msgbox MauvilleCity_EventScript_Temporary_Text_0
 # 724 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
-# 728 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
 # 729 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
+	waitmessage
 # 730 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 731 "data/maps/MauvilleCity/scripts.pory"
 	releaseall
 	end
 
