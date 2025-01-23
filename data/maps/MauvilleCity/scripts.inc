@@ -1448,11 +1448,17 @@ MauvilleCity_EventScript_Temporary::
 	msgbox MauvilleCity_EventScript_Temporary_Text_0
 # 724 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
+# 728 "data/maps/MauvilleCity/scripts.pory"
+	givemon SPECIES_REGICE, 35, , , , 0, , , , , , , , , , , , , , MOVE_BITTER_MALICE, MOVE_NOXIOUS_TORQUE, MOVE_PSYSHIELD_BASH, MOVE_BODY_SLAM
 # 729 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+	givemon SPECIES_NIDOKING, 35, , , , 1, , , , , , , , , , , , , , MOVE_WICKED_BLOW, MOVE_JET_PUNCH, MOVE_SHORE_UP, MOVE_TEATIME
 # 730 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
+	givemon SPECIES_KINGDRA, 35, , , , 1, , , , , , , , , , , , , , MOVE_THOUSAND_ARROWS, MOVE_BOLT_BEAK, MOVE_BURNING_BULWARK, MOVE_THUNDEROUS_KICK
 # 731 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 732 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 733 "data/maps/MauvilleCity/scripts.pory"
 	releaseall
 	end
 

@@ -19008,8 +19008,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "A spine-chilling resentment.\n"
             "May freeze the foe."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 75 : 60,
+        .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
+        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 60 : 60,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 15,

@@ -450,6 +450,24 @@ static void CreateWildMon(u16 species, u8 level)
         CreateMonWithGenderNatureLetter(&gEnemyParty[0], species, level, USE_RANDOM_IVS, gender, PickWildMonNature(), 0);
         return;
     }
+    /*else if (checkCuteCharm
+        && !GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG)
+        && GetMonAbility(&gPlayerParty[0]) == ABILITY_RIVALRY
+        && Random() % 3 != 0)
+    {
+        u16 leadingMonSpecies = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES);
+        u32 leadingMonPersonality = GetMonData(&gPlayerParty[0], MON_DATA_PERSONALITY);
+        u8 gender = GetGenderFromSpeciesAndPersonality(leadingMonSpecies, leadingMonPersonality);
+
+        // misses mon is genderless check, although no genderless mon can have cute charm as ability
+        if (gender == MON_FEMALE)
+            gender = MON_FEMALE;
+        else
+            gender = MON_MALE;
+
+        CreateMonWithGenderNatureLetter(&gEnemyParty[0], species, level, USE_RANDOM_IVS, gender, PickWildMonNature(), 0);
+        return;
+    } */
 
     CreateMonWithNature(&gEnemyParty[0], species, level, USE_RANDOM_IVS, PickWildMonNature());
 }
@@ -479,6 +497,36 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
             break;
         if (OW_STORM_DRAIN >= GEN_8 && TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_WATER, ABILITY_STORM_DRAIN, &wildMonIndex, LAND_WILD_COUNT))
             break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_ICE, ABILITY_ICE_BODY, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_ROCK, ABILITY_ROCK_HEAD, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_GROUND, ABILITY_ARENA_TRAP, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_GROUND, ABILITY_SAND_RUSH, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_POISON, ABILITY_STENCH, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_GHOST, ABILITY_CURSED_BODY, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_NORMAL, ABILITY_OBLIVIOUS, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_FIGHTING, ABILITY_GUTS, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_FAIRY, ABILITY_ILLUMINATE, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_DARK, ABILITY_PRANKSTER, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_BUG, ABILITY_SWARM, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_PSYCHIC, ABILITY_TELEPATHY, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_FLYING, ABILITY_SNIPER, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_FLYING, ABILITY_GALE_WINGS, &wildMonIndex, LAND_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_DRAGON, ABILITY_MARVEL_SCALE, &wildMonIndex, LAND_WILD_COUNT))
+            break;
 
         wildMonIndex = ChooseWildMonIndex_Land();
         break;
@@ -494,6 +542,36 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
         if (OW_HARVEST >= GEN_8 && TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_GRASS, ABILITY_HARVEST, &wildMonIndex, WATER_WILD_COUNT))
             break;
         if (OW_STORM_DRAIN >= GEN_8 && TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_WATER, ABILITY_STORM_DRAIN, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+                if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_ICE, ABILITY_ICE_BODY, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_ROCK, ABILITY_ROCK_HEAD, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_GROUND, ABILITY_ARENA_TRAP, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_GROUND, ABILITY_SAND_RUSH, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_POISON, ABILITY_STENCH, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_GHOST, ABILITY_CURSED_BODY, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_NORMAL, ABILITY_OBLIVIOUS, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_FIGHTING, ABILITY_GUTS, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_FAIRY, ABILITY_ILLUMINATE, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_DARK, ABILITY_PRANKSTER, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_BUG, ABILITY_SWARM, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_PSYCHIC, ABILITY_TELEPATHY, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_FLYING, ABILITY_SNIPER, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_FLYING, ABILITY_GALE_WINGS, &wildMonIndex, WATER_WILD_COUNT))
+            break;
+        if (TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_DRAGON, ABILITY_MARVEL_SCALE, &wildMonIndex, WATER_WILD_COUNT))
             break;
 
         wildMonIndex = ChooseWildMonIndex_WaterRock();
@@ -573,8 +651,8 @@ static bool8 WildEncounterCheck(u32 encounterRate, bool8 ignoreAbility)
         u32 ability = GetMonAbility(&gPlayerParty[0]);
 
         if (ability == ABILITY_STENCH && gMapHeader.mapLayoutId == LAYOUT_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR)
-            encounterRate = encounterRate * 3 / 4;
-        else if (ability == ABILITY_STENCH)
+            encounterRate = encounterRate * 1;
+        /*else if (ability == ABILITY_STENCH)
             encounterRate /= 2;
         else if (ability == ABILITY_ILLUMINATE)
             encounterRate *= 2;
@@ -591,7 +669,7 @@ static bool8 WildEncounterCheck(u32 encounterRate, bool8 ignoreAbility)
         else if (ability == ABILITY_INFILTRATOR && OW_INFILTRATOR >= GEN_8)
             encounterRate /= 2;
         else if (ability == ABILITY_NO_GUARD)
-            encounterRate *= 2;
+            encounterRate *= 2; */ //removed abilities that effect encounter rate
     }
     if (encounterRate > MAX_ENCOUNTER_RATE)
         encounterRate = MAX_ENCOUNTER_RATE;
