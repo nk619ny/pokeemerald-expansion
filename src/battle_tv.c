@@ -935,7 +935,7 @@ static void AddMovePoints(u8 caseId, u16 arg1, u8 arg2, u8 arg3)
             baseFromEffect++; // Recoil moves
         if (MoveHasAdditionalEffect(arg2, MOVE_EFFECT_RAPID_SPIN))
             baseFromEffect++;
-        if (MoveHasAdditionalEffect(arg2, MOVE_EFFECT_SP_ATK_MINUS_2) || MoveHasAdditionalEffect(arg2, MOVE_EFFECT_ATK_DEF_DOWN))
+        if (MoveHasAdditionalEffect(arg2, MOVE_EFFECT_SP_ATK_MINUS_2) || MoveHasAdditionalEffect(arg2, MOVE_EFFECT_ATK_DEF_DOWN) || MoveHasAdditionalEffect(arg2, MOVE_EFFECT_SPATK_SPDEF_DOWN))
             baseFromEffect += 2; // Overheat, Superpower, etc.
         if (MoveHasAdditionalEffect(arg2, MOVE_EFFECT_STEAL_ITEM))
             baseFromEffect += 3;

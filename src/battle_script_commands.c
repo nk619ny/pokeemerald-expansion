@@ -3593,6 +3593,13 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     gBattlescriptCurrInstr = BattleScript_AtkDefDown;
                 }
                 break;
+            case MOVE_EFFECT_SPATK_SPDEF_DOWN: // Special SuperPower, used for Psycho Boost
+                if (!NoAliveMonsForEitherParty())
+                {
+                    BattleScriptPush(gBattlescriptCurrInstr + 1);
+                    gBattlescriptCurrInstr = BattleScript_SpAtkSpDefDown;
+                }
+                break;
             case MOVE_EFFECT_DEF_SPDEF_DOWN: // Close Combat
                 if (!NoAliveMonsForEitherParty())
                 {
