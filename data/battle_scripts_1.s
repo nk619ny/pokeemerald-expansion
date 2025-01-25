@@ -4271,6 +4271,7 @@ BattleScript_EffectSandstorm::
 	ppreduce
 	call BattleScript_CheckPrimalWeather
 	setfieldweather ENUM_WEATHER_SANDSTORM
+	call BattleScript_TryTailwindAbilitiesLoop // added to try to make Wind Rider activate on Sandstorm triggering
 	goto BattleScript_MoveWeatherChange
 
 BattleScript_EffectRollout::
@@ -7799,6 +7800,7 @@ BattleScript_SandstreamActivates::
 	printstring STRINGID_PKMNSXWHIPPEDUPSANDSTORM
 	waitstate
 	playanimation BS_BATTLER_0, B_ANIM_SANDSTORM_CONTINUES
+	call BattleScript_TryTailwindAbilitiesLoop // added to try to make Wind Rider activate on Sandstorm
 	call BattleScript_ActivateWeatherAbilities
 	end3
 

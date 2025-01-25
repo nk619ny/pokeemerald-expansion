@@ -465,10 +465,11 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 
 script DewfordTown_Gym_EventScript_SetNewLevelCap {
 	setvar(VAR_LEVEL_CAP, 30)
+	call(Common_EventScript_LevelCapUpdate)
 //	addvar(VAR_LEVEL_CAP, VAR_LEVEL_HANDICAP)
-	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
-	msgbox("{PLAYER} grew to Trainer Level {STR_VAR_1}!",MSGBOX_DEFAULT)
-	playfanfare(MUS_OBTAIN_B_POINTS)
-	waitfanfare
-	closemessage
+//	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
+//	msgbox("{PLAYER} grew to Trainer Level {STR_VAR_1}!",MSGBOX_DEFAULT)
+//	playfanfare(MUS_OBTAIN_B_POINTS)
+//	waitfanfare
+//	closemessage
 }

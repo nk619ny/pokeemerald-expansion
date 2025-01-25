@@ -270,7 +270,7 @@
 #define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
-#define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
+#define VAR_STARTING_TERRAIN                             0x40FD // Formerly not used
 #define VAR_LEVEL_HANDICAP                               0x40FE // Formerly unused
 #define VAR_LEVEL_CAP                                    0x40FF // Formerly unused
 

@@ -1449,9 +1449,9 @@ MauvilleCity_EventScript_Temporary::
 # 724 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
 # 731 "data/maps/MauvilleCity/scripts.pory"
-	givemon SPECIES_SPINDA, 35, , , , 2, , , , , , , , , , , , , , MOVE_SUPERPOWER, MOVE_PSYCHO_BOOST
+	givemon SPECIES_TYRANITAR, 35, , , , 0, , , , , , , , , , , , , , MOVE_SUPERPOWER, MOVE_PSYCHO_BOOST, MOVE_SANDSEAR_STORM
 # 732 "data/maps/MauvilleCity/scripts.pory"
-	givemon SPECIES_BEEDRILL, 35, , , , 0, , , , , , , , , , , , , , MOVE_SUPERPOWER, MOVE_PSYCHO_BOOST
+	givemon SPECIES_BRAMBLEGHAST, 35, , , , 0, , , , , , , , , , , , , , MOVE_SUPERPOWER, MOVE_SANDSEAR_STORM
 # 733 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
 # 734 "data/maps/MauvilleCity/scripts.pory"

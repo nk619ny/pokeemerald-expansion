@@ -1011,79 +1011,71 @@ PetalburgWoods_EventScript_AquaGruntPostBattle::
 # 513 "data/maps/PetalburgWoods/scripts.pory"
 	setvar VAR_LEVEL_CAP, 17
 # 514 "data/maps/PetalburgWoods/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_LEVEL_CAP
-# 515 "data/maps/PetalburgWoods/scripts.pory"
-	msgbox PetalburgWoods_EventScript_AquaGruntPostBattle_Text_2, MSGBOX_DEFAULT
-# 516 "data/maps/PetalburgWoods/scripts.pory"
-	playfanfare MUS_OBTAIN_B_POINTS
-# 517 "data/maps/PetalburgWoods/scripts.pory"
-	waitfanfare
-# 518 "data/maps/PetalburgWoods/scripts.pory"
-	closemessage
-# 519 "data/maps/PetalburgWoods/scripts.pory"
+	call Common_EventScript_LevelCapUpdate
+# 520 "data/maps/PetalburgWoods/scripts.pory"
 	releaseall
 	end
 
 
-# 531 "data/maps/PetalburgWoods/scripts.pory"
+# 532 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Movement_PeekoEscape:
-# 532 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_down
-# 532 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_down
-# 532 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_down
-# 532 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_down
-# 532 "data/maps/PetalburgWoods/scripts.pory"
+# 533 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_down
 # 533 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_left
+	walk_fast_down
 # 533 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_left
+	walk_fast_down
 # 533 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_left
+	walk_fast_down
 # 533 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_down
+# 534 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 533 "data/maps/PetalburgWoods/scripts.pory"
+# 534 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 533 "data/maps/PetalburgWoods/scripts.pory"
+# 534 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 533 "data/maps/PetalburgWoods/scripts.pory"
+# 534 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 533 "data/maps/PetalburgWoods/scripts.pory"
+# 534 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 533 "data/maps/PetalburgWoods/scripts.pory"
+# 534 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 534 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 534 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 534 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 536 "data/maps/PetalburgWoods/scripts.pory"
+# 537 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Movement_AquaGruntFlee:
-# 537 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_up
-# 537 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_up
-# 537 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_up
-# 537 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_up
-# 537 "data/maps/PetalburgWoods/scripts.pory"
+# 538 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_up
 # 538 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_right
+	walk_fast_up
 # 538 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_right
+	walk_fast_up
 # 538 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_right
+	walk_fast_up
 # 538 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_up
+# 539 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
-# 538 "data/maps/PetalburgWoods/scripts.pory"
+# 539 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
-# 538 "data/maps/PetalburgWoods/scripts.pory"
+# 539 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
-# 538 "data/maps/PetalburgWoods/scripts.pory"
+# 539 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
-# 538 "data/maps/PetalburgWoods/scripts.pory"
+# 539 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 539 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 539 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 539 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
 	step_end
 
@@ -1114,15 +1106,11 @@ PetalburgWoods_EventScript_AquaGruntPostBattle_Text_1:
 	.string "damage being done to the natural\l"
 	.string "environment of Hoenn.$"
 
-PetalburgWoods_EventScript_AquaGruntPostBattle_Text_2:
-# 515 "data/maps/PetalburgWoods/scripts.pory"
-	.string "{PLAYER} grew to Trainer Level {STR_VAR_1}!$"
-
 PetalburgWoods_Text_AquaGruntDefeated::
-# 523 "data/maps/PetalburgWoods/scripts.pory"
+# 524 "data/maps/PetalburgWoods/scripts.pory"
 	.string "You're stronger than you look.$"
 
 PetalburgWoods_Text_AquaGruntLost::
-# 527 "data/maps/PetalburgWoods/scripts.pory"
+# 528 "data/maps/PetalburgWoods/scripts.pory"
 	.string "We're going to make sure no more damage\n"
 	.string "is done to Hoenn's environment!$"

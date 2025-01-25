@@ -2332,6 +2332,7 @@ u8 DoBattlerEndTurnEffects(void)
                   && ability != ABILITY_SAND_VEIL
                   && ability != ABILITY_SAND_FORCE
                   && ability != ABILITY_SAND_RUSH
+                  && ability != ABILITY_WIND_RIDER
                   && ability != ABILITY_OVERCOAT
                   && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ROCK)
                   && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GROUND)
@@ -4956,10 +4957,10 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_WIND_RIDER:
+        case ABILITY_WIND_RIDER: //added Sandstorm as a Wind Rider switch-in attack raise effect
             if (!gSpecialStatuses[battler].switchInAbilityDone
              && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
-             && gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_TAILWIND)
+             && ((gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_TAILWIND) || (gBattleWeather & B_WEATHER_SANDSTORM && WEATHER_HAS_EFFECT)))
             {
                 gBattleScripting.savedBattler = gBattlerAttacker;
                 gBattlerAttacker = battler;

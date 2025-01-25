@@ -37,7 +37,7 @@
 #define TRAINER_ZANDER                       31
 #define TRAINER_SHELLY_WEATHER_INSTITUTE     32
 #define TRAINER_SHELLY_SEAFLOOR_CAVERN       33
-#define TRAINER_ARCHIE                       34
+#define TRAINER_ARCHIE_SEAFLOOR_CAVERN       34
 #define TRAINER_LEAH                         35
 #define TRAINER_DAISY                        36
 #define TRAINER_ROSE_1                       37
@@ -52,7 +52,7 @@
 #define TRAINER_FOSTER                       46
 #define TRAINER_AQUA_ADMIN_RUSTURF           47 //hijacked rematches of Dusty in 47-50 for new fights
 #define TRAINER_GRUNT_RUSTURF_TUNNEL_2       48 //hijacked rematches of Dusty in 47-50 for new fights
-#define TRAINER_DUSTY_4                      49 //available
+#define TRAINER_ARCHIE_WEATHER_INSTITUTE     49 //hijacked rematches of Dusty in 47-50 for new fights
 #define TRAINER_DUSTY_5                      50 //available
 #define TRAINER_GABBY_AND_TY_1               51
 #define TRAINER_GABBY_AND_TY_2               52
@@ -600,7 +600,7 @@
 #define TRAINER_PAXTON                      594
 #define TRAINER_ISABELLA                    595
 #define TRAINER_GRUNT_WEATHER_INST_5        596
-#define TRAINER_TABITHA_MT_CHIMNEY          597
+#define TRAINER_COURTNEY_MT_CHIMNEY          597
 #define TRAINER_JONATHAN                    598
 #define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599
 #define TRAINER_MAY_RUSTBORO_MUDKIP         600
@@ -815,10 +815,10 @@
 #define TRAINER_NOLAND                      809
 #define TRAINER_LUCY                        810
 #define TRAINER_BRANDON                     811
-#define TRAINER_ANDRES_2                    812
-#define TRAINER_ANDRES_3                    813
-#define TRAINER_ANDRES_4                    814
-#define TRAINER_ANDRES_5                    815
+#define TRAINER_TABITHA_GLACIER             812 //was ANDRES rematches, repurposing for new trainers
+#define TRAINER_GRUNT_GLACIER_1             813 //was ANDRES rematches, repurposing for new trainers
+#define TRAINER_GRUNT_GLACIER_2             814 //was ANDRES rematches, repurposing for new trainers
+#define TRAINER_GRUNT_GLACIER_3             815 //was ANDRES rematches, repurposing for new trainers
 #define TRAINER_CORY_2                      816
 #define TRAINER_CORY_3                      817
 #define TRAINER_CORY_4                      818

@@ -3,3 +3,13 @@ TradeCenter_MapScripts::
 	.byte 0
 
 `
+// Location of all Common Scripts added by me, until a better or more obvious location comes about.
+
+script Common_EventScript_LevelCapUpdate {
+	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
+	msgbox(format("{PLAYER} grew to Trainer Level {STR_VAR_1}!"),MSGBOX_DEFAULT)
+	playfanfare(MUS_OBTAIN_B_POINTS)
+	waitfanfare
+	closemessage
+	return
+}

@@ -1536,6 +1536,12 @@ static bool32 AccuracyCalcHelper(u16 move)
             JumpIfMoveFailed(7, move);
             return TRUE;
         }
+        else if ((gBattleWeather & (B_WEATHER_SANDSTORM)) && gMovesInfo[move].effect == EFFECT_SANDSTORM_ALWAYS_HIT)
+        {
+            // adding new effect so Sandsear Storm always hits in Sandstorm
+            JumpIfMoveFailed(7, move);
+            return TRUE;
+        } 
     }
 
     if (B_MINIMIZE_DMG_ACC >= GEN_6

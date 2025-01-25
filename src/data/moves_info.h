@@ -19164,7 +19164,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Hits with brutally hot sand.\n"
             "May inflict a burn."),
-        .effect = EFFECT_RAIN_ALWAYS_HIT,
+        .effect = EFFECT_SANDSTORM_ALWAYS_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 100 : 95,
         .type = TYPE_GROUND,
         .accuracy = 80,
