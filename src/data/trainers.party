@@ -678,7 +678,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_MATT ===
 Name: MATT
 Class: Aqua Admin
-Pic: Aqua Admin M
+Pic: Matt ORAS
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -708,13 +708,15 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_SHELLY_WEATHER_INSTITUTE ===
 Name: SHELLY
 Class: Aqua Admin
-Pic: Aqua Admin F
+Pic: Shelly ORAS
 Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
 Ninetales-Alola @ Light Clay  
+Level: 55
+Ball: Great Ball
 Ability: Snow Warning  
 Tera Type: Ice  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -726,6 +728,8 @@ IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min 
 - Hidden Power 
 
 Empoleon @ Lum Berry  
+Level: 55
+Ball: Great Ball
 Ability: Slush Rush  
 Tera Type: Water  
 EVs: 4 HP / 252 SpA / 252 Spe  
@@ -737,6 +741,8 @@ IVs: 0 Atk
 - Scald  
 
 Articuno @ Charti Berry  
+Level: 55
+Ball: Great Ball
 Ability: Snow Cloak  
 Tera Type: Ice  
 EVs: 248 HP / 252 SpA / 8 SpD  
@@ -748,6 +754,8 @@ IVs: 0 Atk
 - Aurora Veil  
 
 Castform @ Expert Belt  
+Level: 55
+Ball: Great Ball
 Ability: Forecast  
 Tera Type: Normal  
 EVs: 4 Def / 252 SpA / 252 Spe  
@@ -759,6 +767,8 @@ IVs: 0 Atk
 - Hex  
 
 Quaquaval @ Flying Gem  
+Level: 55
+Ball: Great Ball
 Ability: Moxie  
 Tera Type: Water  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -769,6 +779,8 @@ Jolly Nature
 - Acrobatics  
 
 Heracross-Mega @ Heracronite  
+Level: 55
+Ball: Great Ball
 Ability: Skill Link  
 Tera Type: Bug  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -782,19 +794,81 @@ Adamant Nature
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
 Name: SHELLY
 Class: Aqua Admin
-Pic: Aqua Admin F
+Pic: Shelly ORAS
 Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
-Sharpedo
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Shaymin-Sky @ Yache Berry  
+Level: 75
+Ability: Serene Grace  
+Tera Type: Grass  
+EVs: 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Air Slash  
+- Seed Flare  
+- Ominous Wind  
+- Tailwind  
 
-Mightyena
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Sharpedo-Mega @ Sharpedonite  
+Level: 75
+Ability: Speed Boost  
+Tera Type: Water  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Poison Fang  
+- Ice Fang  
+- Waterfall  
+- Bite  
+
+Togekiss @ Leftovers  
+Level: 75
+Ability: Serene Grace  
+Tera Type: Fairy  
+EVs: 252 HP / 128 Def / 128 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Ancient Power  
+- Air Slash  
+- Ominous Wind  
+- Stored Power  
+
+Cinccino @ Kings Rock
+Level: 76
+Ability: Skill Link  
+Tera Type: Normal  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Bullet Seed  
+- Rock Blast  
+- Tail Slap  
+- Body Slam  
+
+Gastrodon @ Rindo Berry  
+Level: 77
+Ability: Storm Drain  
+Tera Type: Water  
+EVs: 252 HP / 128 Def / 128 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Muddy Water  
+- Scald  
+- Recover  
+- Earth Power  
+
+Pecharunt @ Black Sludge  
+Level: 75
+Ability: Poison Puppeteer  
+Tera Type: Poison  
+EVs: 252 HP / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Malignant Chain  
+- Shadow Ball  
+- Hex  
+- Recover  
 
 === TRAINER_ARCHIE_SEAFLOOR_CAVERN ===
 Name: ARCHIE
@@ -908,7 +982,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_AQUA_ADMIN_FARM ===
 Name: SHELLY
 Class: Aqua Admin
-Pic: Aqua Admin F
+Pic: SHELLY ORAS
 Gender: Female
 Music: Aqua
 AI: Check Bad Move / Try To Faint / Check Viability / Prefer Strongest Move / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
@@ -946,7 +1020,7 @@ Jolly Nature
 === TRAINER_MAGMA_ADMIN_FARM ===
 Name: TABITHA
 Class: Magma Admin
-Pic: Magma Admin
+Pic: Tabitha ORAS
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -1131,7 +1205,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_AQUA_ADMIN_RUSTURF ===
 Name: SHELLY
 Class: Aqua Admin
-Pic: Aqua Admin F
+Pic: Shelly ORAS
 Gender: Female
 Music: Aqua
 Double Battle: Yes
@@ -1244,7 +1318,7 @@ Name: ARCHIE
 Class: Aqua Leader
 Pic: Archie ORAS
 Gender: Male
-Music: Hiker
+Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
 
@@ -1488,39 +1562,156 @@ Marill
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LOLA_2 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
+=== TRAINER_ARCHIE_MT_PYRE ===
+Name: ARCHIE
+Class: Aqua Leader
+Pic: Archie ORAS
+Gender: Male
+Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
+AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware / Will Suicide
 
-Marill
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Swampert-Mega @ Swampertite  
+Level: 65
+Ball: Dive Ball
+Ability: Torrent
+EVs: 252 HP / 252 SpA  
+Brave Nature  
+- Earthquake  
+- Surf  
+- Sludge Wave  
+- Protect  
 
-Marill
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Primarina  
+Level: 65
+Ball: Dive Ball
+Ability: Torrent  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Sparkling Aria  
+- Misty Explosion  
+- Boomburst  
+- Protect  
 
-=== TRAINER_LOLA_3 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
+Electrode-Hisui  
+Level: 65
+Ball: Dive Ball
+Ability: Soundproof  
+EVs: 192 Atk / 252 SpA / 64 Spe  
+Timid Nature  
+- Discharge  
+- Explosion  
+- Petal Blizzard  
+- Mind Blown  
+
+Armaldo  
+Level: 65
+Ball: Dive Ball
+Ability: Battle Armor  
+EVs: 252 HP / 4 Atk / 252 SpA  
+Brave Nature  
+- Earthquake  
+- Surf  
+- Brutal Swing  
+- Protect  
+
+Tentacruel  
+Level: 65
+Ball: Dive Ball
+Ability: Clear Body  
+EVs: 112 Atk / 76 Def / 252 SpA / 68 Spe  
+Hasty Nature  
+- Surf  
+- Sludge Wave  
+- Brutal Swing  
+- Baneful Bunker  
+
+Zarude  
+Level: 65
+Ball: Dive Ball
+Ability: Intimidate
+EVs: 252 Atk / 252 Spe  
+Jolly Nature  
+- Petal Blizzard  
+- Brutal Swing  
+- Protect  
+- Boomburst  
+
+=== TRAINER_MAXIE_MT_PYRE ===
+Name: MAXIE
+Class: Magma Leader
+Pic: Maxie ORAS
+Gender: Male
+Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
+AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware / Will Suicide
 
-Marill
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Camerupt-Mega @ Cameruptite  
+Level: 65
+Ball: Timer Ball
+Ability: Sheer Force  
+EVs: 248 HP / 164 Atk / 96 SpA  
+Quiet Nature  
+- Lava Plume  
+- Earthquake  
+- Burning Bulwark  
 
-Marill
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Toxtricity @ Air Balloon  
+Level: 65
+Ball: Timer Ball
+Ability: Punk Rock  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Discharge  
+- Boomburst  
+- Sludge Wave  
+- Protect  
+
+Weezing-Galar  
+Level: 65
+Ball: Timer Ball
+Ability: Levitate  
+EVs: 252 HP / 4 Atk / 252 SpA  
+Relaxed Nature  
+- Sludge Wave  
+- Explosion  
+- Misty Explosion  
+- Protect  
+
+Golem-Alola @ Air Balloon  
+Level: 65
+Ball: Timer Ball
+Ability: Magnet Pull  
+EVs: 252 HP / 128 Atk / 128 SpA  
+Brave Nature  
+- Discharge  
+- Earthquake  
+- Explosion  
+- Brutal Swing  
+
+Flygon @ Yache Berry  
+Level: 65
+Ball: Timer Ball
+Ability: Levitate  
+EVs: 196 Atk / 84 Def / 60 SpA / 168 Spe  
+Hasty Nature  
+- Earthquake  
+- Boomburst  
+- Brutal Swing  
+- Protect  
+
+Volcanion  
+Level: 65
+Ball: Timer Ball
+Ability: Water Absorb  
+EVs: 248 HP / 8 Atk / 252 SpA  
+Serious Nature  
+- Lava Plume  
+- Surf  
+- Earthquake  
+- Explosion  
 
 === TRAINER_LOLA_4 ===
 Name: LOLA
@@ -1905,7 +2096,7 @@ Gender: Male
 Music: Cool
 Mugshot: Purple
 Double Battle: Yes
-AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware
+AI: Smart Trainer / Prefer Strongest Move / Double Battle / HP Aware / Will Suicide
 
 Shiftry @ Focus Sash  
 Level: 53
@@ -10065,7 +10256,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TABITHA_MOSSDEEP ===
 Name: TABITHA
 Class: Magma Admin
-Pic: Magma Admin
+Pic: Tabitha ORAS
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -14928,7 +15119,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
 Name: TABITHA
 Class: Magma Admin
-Pic: Magma Admin
+Pic: Tabitha ORAS
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -14970,7 +15161,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_MAXIE_MOSSDEEP ===
 Name: MAXIE
 Class: Magma Leader
-Pic: Magma Leader Maxie
+Pic: Maxie ORAS
 Gender: Male
 Music: Magma
 Double Battle: Yes

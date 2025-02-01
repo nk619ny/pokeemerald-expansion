@@ -44,9 +44,9 @@
 #define TRAINER_FELIX                        38
 #define TRAINER_VIOLET                       39
 #define TRAINER_AQUA_ADMIN_FARM              40 //hijacked rematches of Rose in 40-43 for new fights
-#define TRAINER_MAGMA_ADMIN_FARM             41
-#define TRAINER_AQUA_MULTI_GRUNT_FARM        42
-#define TRAINER_MAGMA_MULTI_GRUNT_FARM       43
+#define TRAINER_MAGMA_ADMIN_FARM             41 //hijacked rematches of Rose in 40-43 for new fights
+#define TRAINER_AQUA_MULTI_GRUNT_FARM        42 //hijacked rematches of Rose in 40-43 for new fights
+#define TRAINER_MAGMA_MULTI_GRUNT_FARM       43 //hijacked rematches of Rose in 40-43 for new fights
 #define TRAINER_DUSTY_1                      44
 #define TRAINER_CHIP                         45
 #define TRAINER_FOSTER                       46
@@ -63,10 +63,10 @@
 #define TRAINER_LOLA_1                       57
 #define TRAINER_AUSTINA                      58
 #define TRAINER_GWEN                         59
-#define TRAINER_LOLA_2                       60
-#define TRAINER_LOLA_3                       61
-#define TRAINER_LOLA_4                       62
-#define TRAINER_LOLA_5                       63
+#define TRAINER_ARCHIE_MT_PYRE               60 //hijacked rematches of Lola in 60-63 for new fights
+#define TRAINER_MAXIE_MT_PYRE                61 //hijacked rematches of Lola in 60-63 for new fights
+#define TRAINER_LOLA_4                       62 //available
+#define TRAINER_LOLA_5                       63 //available
 #define TRAINER_RICKY_1                      64
 #define TRAINER_SIMON                        65
 #define TRAINER_CHARLIE                      66

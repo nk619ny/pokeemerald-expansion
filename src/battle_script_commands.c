@@ -1608,6 +1608,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
     case ABILITY_COMPOUND_EYES:
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
         break;
+    case ABILITY_KEEN_EYE:
+        if (!IS_MOVE_STATUS(move))
+            calc = (calc * 120) / 100; //added 1.2 boost to Keen Eye for damaging moves
+        break;
     case ABILITY_VICTORY_STAR:
         calc = (calc * 110) / 100; // 1.1 victory star boost
         break;
