@@ -122,13 +122,7 @@ Route104_PrettyPetalFlowerShop_Pokemart_Plants:
 	.2byte DECOR_BIG_PLANT
 # 62 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	.2byte DECOR_GORGEOUS_PLANT
-# 63 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	.2byte DECOR_NONE
-# 64 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	release
-# 65 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	end
-# 66 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	pokemartlistend
 
 # 67 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirl::

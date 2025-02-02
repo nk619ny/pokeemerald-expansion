@@ -38,13 +38,7 @@ LavaridgeTown_HerbShop_Pokemart:
 	.2byte ITEM_HEAL_POWDER
 # 20 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 	.2byte ITEM_REVIVAL_HERB
-# 21 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
-	.2byte ITEM_NONE
-# 22 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
-	release
-# 23 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
-	end
-# 24 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
+	pokemartlistend
 
 # 25 "data/maps/LavaridgeTown_HerbShop/scripts.pory"
 LavaridgeTown_HerbShop_EventScript_ExpertM::
