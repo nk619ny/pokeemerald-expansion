@@ -15,13 +15,13 @@
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 104
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 106
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 107
         .doubleBattle = TRUE,
 #line 108
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 0,
         .party = (const struct TrainerMon[])
         {
@@ -36,13 +36,13 @@
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 114
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 116
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 117
         .doubleBattle = TRUE,
 #line 118
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -68,13 +68,13 @@
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 127
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 129
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 130
         .doubleBattle = TRUE,
 #line 131
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -100,13 +100,13 @@
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 140
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 142
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 143
         .doubleBattle = TRUE,
 #line 144
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -143,13 +143,13 @@
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 157
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 159
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 160
         .doubleBattle = TRUE,
 #line 161
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -175,13 +175,13 @@
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 170
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 172
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 173
         .doubleBattle = TRUE,
 #line 174
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -207,13 +207,13 @@
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 183
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 185
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 186
         .doubleBattle = TRUE,
 #line 187
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -239,13 +239,13 @@
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 196
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 198
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 199
         .doubleBattle = TRUE,
 #line 200
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -271,13 +271,13 @@
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 209
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 211
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 212
         .doubleBattle = TRUE,
 #line 213
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -303,7 +303,7 @@
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 222
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 223
 F_TRAINER_FEMALE | 
 #line 224
@@ -311,7 +311,7 @@ F_TRAINER_FEMALE |
 #line 225
         .doubleBattle = TRUE,
 #line 226
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -392,13 +392,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 255
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 257
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 258
         .doubleBattle = TRUE,
 #line 259
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -494,13 +494,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 298
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 300
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 301
         .doubleBattle = TRUE,
 #line 302
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -537,13 +537,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 315
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 317
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 318
         .doubleBattle = TRUE,
 #line 319
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -580,13 +580,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 332
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 334
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 335
         .doubleBattle = TRUE,
 #line 336
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -623,7 +623,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 349
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 350
 F_TRAINER_FEMALE | 
 #line 351
@@ -631,7 +631,7 @@ F_TRAINER_FEMALE |
 #line 352
         .doubleBattle = TRUE,
 #line 353
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -657,13 +657,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 362
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 364
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 365
         .doubleBattle = TRUE,
 #line 366
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -689,13 +689,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 375
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 377
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 378
         .doubleBattle = TRUE,
 #line 379
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -808,13 +808,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 428
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 430
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 431
         .doubleBattle = TRUE,
 #line 432
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -851,13 +851,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 445
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 447
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 448
         .doubleBattle = TRUE,
 #line 449
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -894,13 +894,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 462
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 464
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 465
         .doubleBattle = TRUE,
 #line 466
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -948,13 +948,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 483
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 485
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 486
         .doubleBattle = TRUE,
 #line 487
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -1056,7 +1056,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 526
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 527
 F_TRAINER_FEMALE | 
 #line 528
@@ -1064,7 +1064,7 @@ F_TRAINER_FEMALE |
 #line 529
         .doubleBattle = TRUE,
 #line 530
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -1165,13 +1165,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 569
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 571
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 572
         .doubleBattle = TRUE,
 #line 573
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -1197,13 +1197,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 582
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 584
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 585
         .doubleBattle = TRUE,
 #line 586
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -1229,13 +1229,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 595
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 597
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 598
         .doubleBattle = TRUE,
 #line 599
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -1261,13 +1261,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 608
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 610
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 611
         .doubleBattle = TRUE,
 #line 612
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -1304,7 +1304,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 625
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 626
 F_TRAINER_FEMALE | 
 #line 627
@@ -1312,7 +1312,7 @@ F_TRAINER_FEMALE |
 #line 628
         .doubleBattle = TRUE,
 #line 629
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -1338,7 +1338,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 638
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 639
 F_TRAINER_FEMALE | 
 #line 640
@@ -1346,7 +1346,7 @@ F_TRAINER_FEMALE |
 #line 641
         .doubleBattle = TRUE,
 #line 642
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -1372,7 +1372,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 651
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 652
 F_TRAINER_FEMALE | 
 #line 653
@@ -1380,7 +1380,7 @@ F_TRAINER_FEMALE |
 #line 654
         .doubleBattle = TRUE,
 #line 655
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -1406,13 +1406,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 664
         .trainerPic = TRAINER_PIC_EXPERT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 666
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 667
         .doubleBattle = TRUE,
 #line 668
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -1449,13 +1449,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 681
         .trainerPic = TRAINER_PIC_MATT_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 683
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 684
         .doubleBattle = TRUE,
 #line 685
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -1492,13 +1492,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 698
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 700
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 701
         .doubleBattle = TRUE,
 #line 702
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -1524,7 +1524,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 711
         .trainerPic = TRAINER_PIC_SHELLY_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 712
 F_TRAINER_FEMALE | 
 #line 713
@@ -1532,7 +1532,7 @@ F_TRAINER_FEMALE |
 #line 714
         .doubleBattle = TRUE,
 #line 715
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -1721,7 +1721,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 797
         .trainerPic = TRAINER_PIC_SHELLY_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 798
 F_TRAINER_FEMALE | 
 #line 799
@@ -1729,7 +1729,7 @@ F_TRAINER_FEMALE |
 #line 800
         .doubleBattle = TRUE,
 #line 801
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -1906,13 +1906,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AQUA_LEADER,
 #line 876
         .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 878
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 879
         .doubleBattle = TRUE,
 #line 880
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -1960,7 +1960,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 897
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 898
 F_TRAINER_FEMALE | 
 #line 899
@@ -1968,7 +1968,7 @@ F_TRAINER_FEMALE |
 #line 900
         .doubleBattle = TRUE,
 #line 901
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -1994,7 +1994,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 910
         .trainerPic = TRAINER_PIC_AROMA_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 911
 F_TRAINER_FEMALE | 
 #line 912
@@ -2002,7 +2002,7 @@ F_TRAINER_FEMALE |
 #line 913
         .doubleBattle = TRUE,
 #line 914
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -2039,7 +2039,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 927
         .trainerPic = TRAINER_PIC_AROMA_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 928
 F_TRAINER_FEMALE | 
 #line 929
@@ -2047,7 +2047,7 @@ F_TRAINER_FEMALE |
 #line 930
         .doubleBattle = TRUE,
 #line 931
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -2095,13 +2095,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 948
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 950
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 951
         .doubleBattle = TRUE,
 #line 952
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -2147,7 +2147,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 968
         .trainerPic = TRAINER_PIC_AROMA_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 969
 F_TRAINER_FEMALE | 
 #line 970
@@ -2155,7 +2155,7 @@ F_TRAINER_FEMALE |
 #line 971
         .doubleBattle = TRUE,
 #line 972
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -2192,13 +2192,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 985
         .trainerPic = TRAINER_PIC_SHELLY_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 986
 F_TRAINER_FEMALE | 
 #line 987
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 988
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -2288,13 +2288,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
 #line 1023
         .trainerPic = TRAINER_PIC_TABITHA_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1025
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 1026
         .doubleBattle = TRUE,
 #line 1027
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -2384,13 +2384,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 1064
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1066
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1067
         .doubleBattle = TRUE,
 #line 1068
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -2466,7 +2466,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 1099
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1100
 F_TRAINER_FEMALE | 
 #line 1101
@@ -2474,7 +2474,7 @@ F_TRAINER_FEMALE |
 #line 1102
         .doubleBattle = TRUE,
 #line 1103
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -2549,13 +2549,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 1133
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1135
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 1136
         .doubleBattle = TRUE,
 #line 1137
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -2588,13 +2588,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 1150
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1152
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 1153
         .doubleBattle = TRUE,
 #line 1154
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -2663,13 +2663,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 1183
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1185
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 1186
         .doubleBattle = TRUE,
 #line 1187
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -2720,7 +2720,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 1208
         .trainerPic = TRAINER_PIC_SHELLY_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1209
 F_TRAINER_FEMALE | 
 #line 1210
@@ -2728,7 +2728,7 @@ F_TRAINER_FEMALE |
 #line 1211
         .doubleBattle = TRUE,
 #line 1212
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -2860,7 +2860,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 1269
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1270
 F_TRAINER_FEMALE | 
 #line 1271
@@ -2868,7 +2868,7 @@ F_TRAINER_FEMALE |
 #line 1272
         .doubleBattle = TRUE,
 #line 1273
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -2982,13 +2982,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AQUA_LEADER,
 #line 1319
         .trainerPic = TRAINER_PIC_ARCHIE_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1321
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1322
         .doubleBattle = TRUE,
 #line 1323
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -3167,13 +3167,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 1398
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1400
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 1401
         .doubleBattle = TRUE,
 #line 1402
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -3206,13 +3206,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 1415
         .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1417
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1418
         .doubleBattle = TRUE,
 #line 1419
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -3249,13 +3249,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 1432
         .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1434
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1435
         .doubleBattle = TRUE,
 #line 1436
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -3292,13 +3292,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 1449
         .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1451
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1452
         .doubleBattle = TRUE,
 #line 1453
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -3335,13 +3335,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 1466
         .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1468
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1469
         .doubleBattle = TRUE,
 #line 1470
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -3378,13 +3378,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 1483
         .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1485
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1486
         .doubleBattle = TRUE,
 #line 1487
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -3421,13 +3421,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 1500
         .trainerPic = TRAINER_PIC_INTERVIEWER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1502
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1503
         .doubleBattle = TRUE,
 #line 1504
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -3478,7 +3478,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1525
         .trainerPic = TRAINER_PIC_TUBER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1526
 F_TRAINER_FEMALE | 
 #line 1527
@@ -3486,7 +3486,7 @@ F_TRAINER_FEMALE |
 #line 1528
         .doubleBattle = TRUE,
 #line 1529
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -3523,7 +3523,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1542
         .trainerPic = TRAINER_PIC_TUBER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1543
 F_TRAINER_FEMALE | 
 #line 1544
@@ -3531,7 +3531,7 @@ F_TRAINER_FEMALE |
 #line 1545
         .doubleBattle = TRUE,
 #line 1546
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -3557,7 +3557,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1555
         .trainerPic = TRAINER_PIC_TUBER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1556
 F_TRAINER_FEMALE | 
 #line 1557
@@ -3565,7 +3565,7 @@ F_TRAINER_FEMALE |
 #line 1558
         .doubleBattle = TRUE,
 #line 1559
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -3591,13 +3591,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AQUA_LEADER,
 #line 1568
         .trainerPic = TRAINER_PIC_ARCHIE_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1570
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 1571
         .doubleBattle = TRUE,
 #line 1572
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -3764,13 +3764,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
 #line 1644
         .trainerPic = TRAINER_PIC_MAXIE_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1646
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 1647
         .doubleBattle = TRUE,
 #line 1648
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -3942,7 +3942,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1719
         .trainerPic = TRAINER_PIC_TUBER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1720
 F_TRAINER_FEMALE | 
 #line 1721
@@ -3950,7 +3950,7 @@ F_TRAINER_FEMALE |
 #line 1722
         .doubleBattle = TRUE,
 #line 1723
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -3987,7 +3987,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1736
         .trainerPic = TRAINER_PIC_TUBER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1737
 F_TRAINER_FEMALE | 
 #line 1738
@@ -3995,7 +3995,7 @@ F_TRAINER_FEMALE |
 #line 1739
         .doubleBattle = TRUE,
 #line 1740
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -4032,13 +4032,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1753
         .trainerPic = TRAINER_PIC_TUBER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1755
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1756
         .doubleBattle = TRUE,
 #line 1757
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4071,13 +4071,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1770
         .trainerPic = TRAINER_PIC_TUBER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1772
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1773
         .doubleBattle = TRUE,
 #line 1774
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -4114,13 +4114,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1787
         .trainerPic = TRAINER_PIC_TUBER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1789
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1790
         .doubleBattle = TRUE,
 #line 1791
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4146,13 +4146,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1800
         .trainerPic = TRAINER_PIC_TUBER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1802
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1803
         .doubleBattle = TRUE,
 #line 1804
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4185,13 +4185,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1817
         .trainerPic = TRAINER_PIC_TUBER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1819
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1820
         .doubleBattle = TRUE,
 #line 1821
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4224,13 +4224,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1834
         .trainerPic = TRAINER_PIC_TUBER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1836
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1837
         .doubleBattle = TRUE,
 #line 1838
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4263,13 +4263,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1851
         .trainerPic = TRAINER_PIC_TUBER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1853
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1854
         .doubleBattle = TRUE,
 #line 1855
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4302,13 +4302,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1868
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1870
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1871
         .doubleBattle = TRUE,
 #line 1872
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4340,13 +4340,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1884
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1886
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1887
         .doubleBattle = TRUE,
 #line 1888
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4378,13 +4378,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1900
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1902
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1903
         .doubleBattle = TRUE,
 #line 1904
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4418,13 +4418,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1916
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1918
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1919
         .doubleBattle = TRUE,
 #line 1920
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4455,13 +4455,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1931
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1933
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1934
         .doubleBattle = TRUE,
 #line 1935
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -4566,13 +4566,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1980
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 1982
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1983
         .doubleBattle = TRUE,
 #line 1984
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -4620,13 +4620,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2001
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2003
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2004
         .doubleBattle = TRUE,
 #line 2005
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -4663,13 +4663,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2018
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2020
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2021
         .doubleBattle = TRUE,
 #line 2022
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -4717,13 +4717,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2039
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2041
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2042
         .doubleBattle = TRUE,
 #line 2043
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -4760,13 +4760,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2056
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2058
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2059
         .doubleBattle = TRUE,
 #line 2060
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -4803,13 +4803,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2073
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2075
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2076
         .doubleBattle = TRUE,
 #line 2077
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -4857,13 +4857,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 2094
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2096
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2098
         .doubleBattle = TRUE,
 #line 2099
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE,
 #line 2097
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
@@ -5038,13 +5038,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2170
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2172
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2173
         .doubleBattle = TRUE,
 #line 2174
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -5092,13 +5092,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2191
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2193
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2194
         .doubleBattle = TRUE,
 #line 2195
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -5146,13 +5146,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2212
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2214
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2215
         .doubleBattle = TRUE,
 #line 2216
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -5200,13 +5200,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2233
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2235
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2236
         .doubleBattle = TRUE,
 #line 2237
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -5254,13 +5254,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2254
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2256
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2257
         .doubleBattle = TRUE,
 #line 2258
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -5308,13 +5308,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2275
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2277
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2278
         .doubleBattle = TRUE,
 #line 2279
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -5351,7 +5351,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2292
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2293
 F_TRAINER_FEMALE | 
 #line 2294
@@ -5359,7 +5359,7 @@ F_TRAINER_FEMALE |
 #line 2295
         .doubleBattle = TRUE,
 #line 2296
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -5390,7 +5390,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2307
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2308
 F_TRAINER_FEMALE | 
 #line 2309
@@ -5398,7 +5398,7 @@ F_TRAINER_FEMALE |
 #line 2310
         .doubleBattle = TRUE,
 #line 2311
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -5430,7 +5430,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2323
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2324
 F_TRAINER_FEMALE | 
 #line 2325
@@ -5469,7 +5469,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2338
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2339
 F_TRAINER_FEMALE | 
 #line 2340
@@ -5546,7 +5546,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2371
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2372
 F_TRAINER_FEMALE | 
 #line 2373
@@ -5591,7 +5591,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2388
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2389
 F_TRAINER_FEMALE | 
 #line 2390
@@ -5599,7 +5599,7 @@ F_TRAINER_FEMALE |
 #line 2391
         .doubleBattle = TRUE,
 #line 2392
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -5647,7 +5647,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2409
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2410
 F_TRAINER_FEMALE | 
 #line 2411
@@ -5655,7 +5655,7 @@ F_TRAINER_FEMALE |
 #line 2412
         .doubleBattle = TRUE,
 #line 2413
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -5681,7 +5681,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2422
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2423
 F_TRAINER_FEMALE | 
 #line 2424
@@ -5689,7 +5689,7 @@ F_TRAINER_FEMALE |
 #line 2425
         .doubleBattle = TRUE,
 #line 2426
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -5715,7 +5715,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2435
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2436
 F_TRAINER_FEMALE | 
 #line 2437
@@ -5723,7 +5723,7 @@ F_TRAINER_FEMALE |
 #line 2438
         .doubleBattle = TRUE,
 #line 2439
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -5749,7 +5749,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2448
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2449
 F_TRAINER_FEMALE | 
 #line 2450
@@ -5757,7 +5757,7 @@ F_TRAINER_FEMALE |
 #line 2451
         .doubleBattle = TRUE,
 #line 2452
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -5805,7 +5805,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2469
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2470
 F_TRAINER_FEMALE | 
 #line 2471
@@ -5813,7 +5813,7 @@ F_TRAINER_FEMALE |
 #line 2472
         .doubleBattle = TRUE,
 #line 2473
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -5850,7 +5850,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2486
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2487
 F_TRAINER_FEMALE | 
 #line 2488
@@ -5858,7 +5858,7 @@ F_TRAINER_FEMALE |
 #line 2489
         .doubleBattle = TRUE,
 #line 2490
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -5906,7 +5906,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2507
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2508
 F_TRAINER_FEMALE | 
 #line 2509
@@ -5914,7 +5914,7 @@ F_TRAINER_FEMALE |
 #line 2510
         .doubleBattle = TRUE,
 #line 2511
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -5962,7 +5962,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2528
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2529
 F_TRAINER_FEMALE | 
 #line 2530
@@ -5970,7 +5970,7 @@ F_TRAINER_FEMALE |
 #line 2531
         .doubleBattle = TRUE,
 #line 2532
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -6018,7 +6018,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2549
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2550
 F_TRAINER_FEMALE | 
 #line 2551
@@ -6026,7 +6026,7 @@ F_TRAINER_FEMALE |
 #line 2552
         .doubleBattle = TRUE,
 #line 2553
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -6074,7 +6074,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 2570
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2571
 F_TRAINER_FEMALE | 
 #line 2572
@@ -6082,7 +6082,7 @@ F_TRAINER_FEMALE |
 #line 2573
         .doubleBattle = TRUE,
 #line 2574
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -6130,7 +6130,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2591
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2592
 F_TRAINER_FEMALE | 
 #line 2593
@@ -6138,7 +6138,7 @@ F_TRAINER_FEMALE |
 #line 2594
         .doubleBattle = TRUE,
 #line 2595
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -6175,7 +6175,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2608
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2609
 F_TRAINER_FEMALE | 
 #line 2610
@@ -6183,7 +6183,7 @@ F_TRAINER_FEMALE |
 #line 2611
         .doubleBattle = TRUE,
 #line 2612
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -6220,7 +6220,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2625
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2626
 F_TRAINER_FEMALE | 
 #line 2627
@@ -6228,7 +6228,7 @@ F_TRAINER_FEMALE |
 #line 2628
         .doubleBattle = TRUE,
 #line 2629
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -6265,7 +6265,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2642
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2643
 F_TRAINER_FEMALE | 
 #line 2644
@@ -6273,7 +6273,7 @@ F_TRAINER_FEMALE |
 #line 2645
         .doubleBattle = TRUE,
 #line 2646
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6299,7 +6299,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2655
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2656
 F_TRAINER_FEMALE | 
 #line 2657
@@ -6307,7 +6307,7 @@ F_TRAINER_FEMALE |
 #line 2658
         .doubleBattle = TRUE,
 #line 2659
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6333,7 +6333,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2668
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2669
 F_TRAINER_FEMALE | 
 #line 2670
@@ -6341,7 +6341,7 @@ F_TRAINER_FEMALE |
 #line 2671
         .doubleBattle = TRUE,
 #line 2672
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -6378,7 +6378,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2685
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2686
 F_TRAINER_FEMALE | 
 #line 2687
@@ -6386,7 +6386,7 @@ F_TRAINER_FEMALE |
 #line 2688
         .doubleBattle = TRUE,
 #line 2689
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -6423,7 +6423,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2702
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2703
 F_TRAINER_FEMALE | 
 #line 2704
@@ -6431,7 +6431,7 @@ F_TRAINER_FEMALE |
 #line 2705
         .doubleBattle = TRUE,
 #line 2706
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -6468,7 +6468,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2719
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2720
 F_TRAINER_FEMALE | 
 #line 2721
@@ -6476,7 +6476,7 @@ F_TRAINER_FEMALE |
 #line 2722
         .doubleBattle = TRUE,
 #line 2723
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -6524,7 +6524,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2740
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2741
 F_TRAINER_FEMALE | 
 #line 2742
@@ -6532,7 +6532,7 @@ F_TRAINER_FEMALE |
 #line 2743
         .doubleBattle = TRUE,
 #line 2744
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6560,7 +6560,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2753
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2754
 F_TRAINER_FEMALE | 
 #line 2755
@@ -6568,7 +6568,7 @@ F_TRAINER_FEMALE |
 #line 2756
         .doubleBattle = TRUE,
 #line 2757
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -6623,13 +6623,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 2778
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2780
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 2781
         .doubleBattle = TRUE,
 #line 2782
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -6677,7 +6677,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2799
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2800
 F_TRAINER_FEMALE | 
 #line 2801
@@ -6685,7 +6685,7 @@ F_TRAINER_FEMALE |
 #line 2802
         .doubleBattle = TRUE,
 #line 2803
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6718,7 +6718,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2814
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2815
 F_TRAINER_FEMALE | 
 #line 2816
@@ -6726,7 +6726,7 @@ F_TRAINER_FEMALE |
 #line 2817
         .doubleBattle = TRUE,
 #line 2818
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6754,7 +6754,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2827
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2828
 F_TRAINER_FEMALE | 
 #line 2829
@@ -6762,7 +6762,7 @@ F_TRAINER_FEMALE |
 #line 2830
         .doubleBattle = TRUE,
 #line 2831
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6790,7 +6790,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2840
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2841
 F_TRAINER_FEMALE | 
 #line 2842
@@ -6798,7 +6798,7 @@ F_TRAINER_FEMALE |
 #line 2843
         .doubleBattle = TRUE,
 #line 2844
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6826,7 +6826,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2853
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2854
 F_TRAINER_FEMALE | 
 #line 2855
@@ -6834,7 +6834,7 @@ F_TRAINER_FEMALE |
 #line 2856
         .doubleBattle = TRUE,
 #line 2857
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6862,7 +6862,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2866
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2867
 F_TRAINER_FEMALE | 
 #line 2868
@@ -6870,7 +6870,7 @@ F_TRAINER_FEMALE |
 #line 2869
         .doubleBattle = TRUE,
 #line 2870
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6898,7 +6898,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2879
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2880
 F_TRAINER_FEMALE | 
 #line 2881
@@ -6906,7 +6906,7 @@ F_TRAINER_FEMALE |
 #line 2882
         .doubleBattle = TRUE,
 #line 2883
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6941,7 +6941,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2896
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2897
 F_TRAINER_FEMALE | 
 #line 2898
@@ -6949,7 +6949,7 @@ F_TRAINER_FEMALE |
 #line 2899
         .doubleBattle = TRUE,
 #line 2900
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -6975,7 +6975,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2909
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2910
 F_TRAINER_FEMALE | 
 #line 2911
@@ -6983,7 +6983,7 @@ F_TRAINER_FEMALE |
 #line 2912
         .doubleBattle = TRUE,
 #line 2913
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7009,7 +7009,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2922
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2923
 F_TRAINER_FEMALE | 
 #line 2924
@@ -7017,7 +7017,7 @@ F_TRAINER_FEMALE |
 #line 2925
         .doubleBattle = TRUE,
 #line 2926
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7043,7 +7043,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2935
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2936
 F_TRAINER_FEMALE | 
 #line 2937
@@ -7051,7 +7051,7 @@ F_TRAINER_FEMALE |
 #line 2938
         .doubleBattle = TRUE,
 #line 2939
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -7102,7 +7102,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2960
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2961
 F_TRAINER_FEMALE | 
 #line 2962
@@ -7110,7 +7110,7 @@ F_TRAINER_FEMALE |
 #line 2963
         .doubleBattle = TRUE,
 #line 2964
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7136,7 +7136,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2973
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2974
 F_TRAINER_FEMALE | 
 #line 2975
@@ -7144,7 +7144,7 @@ F_TRAINER_FEMALE |
 #line 2976
         .doubleBattle = TRUE,
 #line 2977
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7170,7 +7170,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2986
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 2987
 F_TRAINER_FEMALE | 
 #line 2988
@@ -7178,7 +7178,7 @@ F_TRAINER_FEMALE |
 #line 2989
         .doubleBattle = TRUE,
 #line 2990
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -7246,7 +7246,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 3018
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3019
 F_TRAINER_FEMALE | 
 #line 3020
@@ -7254,7 +7254,7 @@ F_TRAINER_FEMALE |
 #line 3021
         .doubleBattle = TRUE,
 #line 3022
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -7291,7 +7291,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 3035
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3036
 F_TRAINER_FEMALE | 
 #line 3037
@@ -7299,7 +7299,7 @@ F_TRAINER_FEMALE |
 #line 3038
         .doubleBattle = TRUE,
 #line 3039
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -7350,7 +7350,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 3060
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3061
 F_TRAINER_FEMALE | 
 #line 3062
@@ -7358,7 +7358,7 @@ F_TRAINER_FEMALE |
 #line 3063
         .doubleBattle = TRUE,
 #line 3064
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -7409,7 +7409,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 3085
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3086
 F_TRAINER_FEMALE | 
 #line 3087
@@ -7417,7 +7417,7 @@ F_TRAINER_FEMALE |
 #line 3088
         .doubleBattle = TRUE,
 #line 3089
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -7468,7 +7468,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 3110
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3111
 F_TRAINER_FEMALE | 
 #line 3112
@@ -7476,7 +7476,7 @@ F_TRAINER_FEMALE |
 #line 3113
         .doubleBattle = TRUE,
 #line 3114
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -7527,13 +7527,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 3135
         .trainerPic = TRAINER_PIC_RICH_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3137
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3138
         .doubleBattle = TRUE,
 #line 3139
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7561,7 +7561,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 3148
         .trainerPic = TRAINER_PIC_EXPERT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3149
 F_TRAINER_FEMALE | 
 #line 3150
@@ -7569,7 +7569,7 @@ F_TRAINER_FEMALE |
 #line 3151
         .doubleBattle = TRUE,
 #line 3152
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -7606,13 +7606,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 3165
         .trainerPic = TRAINER_PIC_RICH_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3167
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3168
         .doubleBattle = TRUE,
 #line 3169
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7640,13 +7640,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 3178
         .trainerPic = TRAINER_PIC_RICH_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3180
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3181
         .doubleBattle = TRUE,
 #line 3182
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7674,13 +7674,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 3191
         .trainerPic = TRAINER_PIC_RICH_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3193
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3194
         .doubleBattle = TRUE,
 #line 3195
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7708,13 +7708,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 3204
         .trainerPic = TRAINER_PIC_RICH_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3206
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3207
         .doubleBattle = TRUE,
 #line 3208
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7742,13 +7742,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 3217
         .trainerPic = TRAINER_PIC_RICH_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3219
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3220
         .doubleBattle = TRUE,
 #line 3221
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7783,13 +7783,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 3234
         .trainerPic = TRAINER_PIC_POKEMANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3236
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3237
         .doubleBattle = TRUE,
 #line 3238
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7815,7 +7815,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 3247
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3248
 F_TRAINER_FEMALE | 
 #line 3249
@@ -7823,7 +7823,7 @@ F_TRAINER_FEMALE |
 #line 3250
         .doubleBattle = TRUE,
 #line 3251
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -7860,13 +7860,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 3264
         .trainerPic = TRAINER_PIC_POKEMANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3266
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3267
         .doubleBattle = TRUE,
 #line 3268
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7892,7 +7892,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 3277
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3278
 F_TRAINER_FEMALE | 
 #line 3279
@@ -7900,7 +7900,7 @@ F_TRAINER_FEMALE |
 #line 3280
         .doubleBattle = TRUE,
 #line 3281
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7926,13 +7926,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 3290
         .trainerPic = TRAINER_PIC_POKEMANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3292
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3293
         .doubleBattle = TRUE,
 #line 3294
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -7958,13 +7958,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 3303
         .trainerPic = TRAINER_PIC_POKEMANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3305
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3306
         .doubleBattle = TRUE,
 #line 3307
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8001,13 +8001,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 3320
         .trainerPic = TRAINER_PIC_POKEMANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3322
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3323
         .doubleBattle = TRUE,
 #line 3324
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8044,13 +8044,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 3337
         .trainerPic = TRAINER_PIC_POKEMANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3339
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3340
         .doubleBattle = TRUE,
 #line 3341
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8087,13 +8087,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3354
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3356
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3357
         .doubleBattle = TRUE,
 #line 3358
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8119,13 +8119,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3367
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3369
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3370
         .doubleBattle = TRUE,
 #line 3371
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8151,13 +8151,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3380
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3382
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3383
         .doubleBattle = TRUE,
 #line 3384
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8194,13 +8194,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3397
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3399
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3400
         .doubleBattle = TRUE,
 #line 3401
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -8248,13 +8248,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3418
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3420
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3421
         .doubleBattle = TRUE,
 #line 3422
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8280,13 +8280,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3431
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3433
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3434
         .doubleBattle = TRUE,
 #line 3435
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8312,13 +8312,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3444
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3446
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3447
         .doubleBattle = TRUE,
 #line 3448
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8344,13 +8344,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3457
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3459
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3460
         .doubleBattle = TRUE,
 #line 3461
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8387,13 +8387,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3474
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3476
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3477
         .doubleBattle = TRUE,
 #line 3478
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8430,13 +8430,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3491
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3493
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3494
         .doubleBattle = TRUE,
 #line 3495
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8462,13 +8462,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3504
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3506
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3507
         .doubleBattle = TRUE,
 #line 3508
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8494,13 +8494,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3517
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3519
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3520
         .doubleBattle = TRUE,
 #line 3521
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8526,13 +8526,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3530
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3532
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3533
         .doubleBattle = TRUE,
 #line 3534
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8558,13 +8558,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3543
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3545
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3546
         .doubleBattle = TRUE,
 #line 3547
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -8612,13 +8612,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3564
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3566
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3567
         .doubleBattle = TRUE,
 #line 3568
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8644,13 +8644,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3577
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3579
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3580
         .doubleBattle = TRUE,
 #line 3581
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8676,13 +8676,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3590
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3592
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3593
         .doubleBattle = TRUE,
 #line 3594
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8719,13 +8719,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3607
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3609
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3610
         .doubleBattle = TRUE,
 #line 3611
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8762,13 +8762,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3624
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3626
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3627
         .doubleBattle = TRUE,
 #line 3628
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8794,13 +8794,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3637
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3639
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3640
         .doubleBattle = TRUE,
 #line 3641
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8826,13 +8826,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3650
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3652
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3653
         .doubleBattle = TRUE,
 #line 3654
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8858,13 +8858,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3663
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3665
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3666
         .doubleBattle = TRUE,
 #line 3667
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -8890,13 +8890,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3676
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3678
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3679
         .doubleBattle = TRUE,
 #line 3680
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -8944,13 +8944,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3697
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3699
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3700
         .doubleBattle = TRUE,
 #line 3701
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8987,13 +8987,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3714
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3716
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3717
         .doubleBattle = TRUE,
 #line 3718
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -9019,13 +9019,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3727
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3729
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3730
         .doubleBattle = TRUE,
 #line 3731
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -9051,13 +9051,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3740
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3742
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3743
         .doubleBattle = TRUE,
 #line 3744
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -9094,13 +9094,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3757
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3759
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3760
         .doubleBattle = TRUE,
 #line 3761
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -9137,13 +9137,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3774
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3776
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3777
         .doubleBattle = TRUE,
 #line 3778
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -9169,13 +9169,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3787
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3789
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3790
         .doubleBattle = TRUE,
 #line 3791
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -9212,13 +9212,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3804
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3806
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3807
         .doubleBattle = TRUE,
 #line 3808
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -9244,13 +9244,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3817
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3819
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3820
         .doubleBattle = TRUE,
 #line 3821
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -9287,13 +9287,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3834
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3836
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3837
         .doubleBattle = TRUE,
 #line 3838
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -9319,13 +9319,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3847
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3849
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3850
         .doubleBattle = TRUE,
 #line 3851
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -9351,13 +9351,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3860
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3862
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3863
         .doubleBattle = TRUE,
 #line 3864
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -9394,13 +9394,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3877
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3879
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3880
         .doubleBattle = TRUE,
 #line 3881
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -9448,13 +9448,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3898
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3900
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3901
         .doubleBattle = TRUE,
 #line 3902
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -9515,13 +9515,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3923
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3925
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3926
         .doubleBattle = TRUE,
 #line 3927
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -9558,13 +9558,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3940
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3942
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3943
         .doubleBattle = TRUE,
 #line 3944
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -9590,13 +9590,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3953
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3955
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3956
         .doubleBattle = TRUE,
 #line 3957
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -9622,13 +9622,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 3966
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3968
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3969
         .doubleBattle = TRUE,
 #line 3971
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 3970
         .startingStatus = STARTING_STATUS_ELECTRIC_TERRAIN,
         .partySize = 2,
@@ -9680,7 +9680,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 3991
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 3992
 F_TRAINER_FEMALE | 
 #line 3993
@@ -9688,7 +9688,7 @@ F_TRAINER_FEMALE |
 #line 3994
         .doubleBattle = TRUE,
 #line 3995
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -9725,13 +9725,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 4008
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4010
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 4011
         .doubleBattle = TRUE,
 #line 4012
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -9757,13 +9757,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 4021
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4023
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4025
         .doubleBattle = TRUE,
 #line 4026
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 4024
         .startingStatus = STARTING_STATUS_ELECTRIC_TERRAIN,
         .partySize = 2,
@@ -9802,13 +9802,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 4039
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4041
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4042
         .doubleBattle = TRUE,
 #line 4043
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -9845,13 +9845,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 4056
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4058
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4059
         .doubleBattle = TRUE,
 #line 4060
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -9888,13 +9888,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 4073
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4075
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4076
         .doubleBattle = TRUE,
 #line 4077
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -9942,13 +9942,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 4094
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4096
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4097
         .doubleBattle = TRUE,
 #line 4098
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -9996,13 +9996,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 4115
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4117
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4118
         .doubleBattle = TRUE,
 #line 4119
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -10050,13 +10050,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 4136
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4138
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4139
         .doubleBattle = TRUE,
 #line 4140
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -10104,13 +10104,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4157
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4159
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4160
         .doubleBattle = TRUE,
 #line 4161
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -10136,13 +10136,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4170
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4172
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4173
         .doubleBattle = TRUE,
 #line 4174
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10179,13 +10179,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4187
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4189
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4190
         .doubleBattle = TRUE,
 #line 4191
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -10211,13 +10211,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4200
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4202
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4203
         .doubleBattle = TRUE,
 #line 4204
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -10243,13 +10243,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4213
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4215
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4216
         .doubleBattle = TRUE,
 #line 4217
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -10275,13 +10275,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4226
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4228
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4229
         .doubleBattle = TRUE,
 #line 4230
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10318,13 +10318,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4243
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4245
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4246
         .doubleBattle = TRUE,
 #line 4247
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10361,13 +10361,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4260
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4262
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4263
         .doubleBattle = TRUE,
 #line 4264
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10404,13 +10404,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4277
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4279
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4280
         .doubleBattle = TRUE,
 #line 4281
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10447,13 +10447,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 4294
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4296
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4297
         .doubleBattle = TRUE,
 #line 4298
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10490,13 +10490,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4311
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4313
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4314
         .doubleBattle = TRUE,
 #line 4315
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -10529,13 +10529,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4328
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4330
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4331
         .doubleBattle = TRUE,
 #line 4332
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -10604,13 +10604,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4361
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4363
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4364
         .doubleBattle = TRUE,
 #line 4365
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -10636,13 +10636,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4374
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4376
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4377
         .doubleBattle = TRUE,
 #line 4378
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10679,13 +10679,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4391
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4393
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4394
         .doubleBattle = TRUE,
 #line 4395
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -10711,13 +10711,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4404
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4406
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4407
         .doubleBattle = TRUE,
 #line 4408
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10754,7 +10754,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 4421
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4422
 F_TRAINER_FEMALE | 
 #line 4423
@@ -10762,7 +10762,7 @@ F_TRAINER_FEMALE |
 #line 4424
         .doubleBattle = TRUE,
 #line 4425
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -10788,13 +10788,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4434
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4436
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4437
         .doubleBattle = TRUE,
 #line 4438
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -10820,13 +10820,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4447
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4449
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4450
         .doubleBattle = TRUE,
 #line 4451
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10863,13 +10863,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4464
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4466
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4467
         .doubleBattle = TRUE,
 #line 4468
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -10906,13 +10906,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4481
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4483
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4484
         .doubleBattle = TRUE,
 #line 4485
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -10960,13 +10960,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 4502
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4504
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4505
         .doubleBattle = TRUE,
 #line 4506
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -11014,13 +11014,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4523
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4525
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4526
         .doubleBattle = TRUE,
 #line 4527
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -11046,13 +11046,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4536
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4538
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4539
         .doubleBattle = TRUE,
 #line 4540
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -11100,13 +11100,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4557
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4559
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4560
         .doubleBattle = TRUE,
 #line 4561
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -11154,13 +11154,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4578
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4580
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4581
         .doubleBattle = TRUE,
 #line 4582
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -11208,13 +11208,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4599
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4601
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4602
         .doubleBattle = TRUE,
 #line 4604
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 4603
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 2,
@@ -11253,13 +11253,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4617
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4619
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4620
         .doubleBattle = TRUE,
 #line 4621
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -11307,13 +11307,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4638
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4640
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4641
         .doubleBattle = TRUE,
 #line 4642
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -11361,13 +11361,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4659
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4661
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4662
         .doubleBattle = TRUE,
 #line 4663
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -11426,13 +11426,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4684
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4686
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4687
         .doubleBattle = TRUE,
 #line 4688
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -11504,13 +11504,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4713
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4715
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4716
         .doubleBattle = TRUE,
 #line 4717
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -11540,13 +11540,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4727
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4729
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4730
         .doubleBattle = TRUE,
 #line 4731
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -11572,13 +11572,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4740
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4742
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4743
         .doubleBattle = TRUE,
 #line 4744
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -11604,13 +11604,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4753
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4755
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4756
         .doubleBattle = TRUE,
 #line 4757
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -11636,13 +11636,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4766
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4768
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4769
         .doubleBattle = TRUE,
 #line 4770
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -11690,13 +11690,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4787
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4789
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4790
         .doubleBattle = TRUE,
 #line 4791
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -11733,13 +11733,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4804
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4806
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4807
         .doubleBattle = TRUE,
 #line 4808
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -11765,13 +11765,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4817
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4819
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4820
         .doubleBattle = TRUE,
 #line 4821
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -11808,13 +11808,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4834
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4836
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4837
         .doubleBattle = TRUE,
 #line 4838
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -11851,13 +11851,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4851
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4853
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4854
         .doubleBattle = TRUE,
 #line 4855
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -11894,13 +11894,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4868
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4870
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4871
         .doubleBattle = TRUE,
 #line 4872
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -11937,7 +11937,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4885
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4886
 F_TRAINER_FEMALE | 
 #line 4887
@@ -11945,7 +11945,7 @@ F_TRAINER_FEMALE |
 #line 4888
         .doubleBattle = TRUE,
 #line 4889
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -11975,7 +11975,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4899
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4900
 F_TRAINER_FEMALE | 
 #line 4901
@@ -11983,7 +11983,7 @@ F_TRAINER_FEMALE |
 #line 4902
         .doubleBattle = TRUE,
 #line 4903
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -12009,7 +12009,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4912
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4913
 F_TRAINER_FEMALE | 
 #line 4914
@@ -12017,7 +12017,7 @@ F_TRAINER_FEMALE |
 #line 4915
         .doubleBattle = TRUE,
 #line 4916
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -12043,7 +12043,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4925
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4926
 F_TRAINER_FEMALE | 
 #line 4927
@@ -12051,7 +12051,7 @@ F_TRAINER_FEMALE |
 #line 4928
         .doubleBattle = TRUE,
 #line 4929
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -12077,7 +12077,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4938
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4939
 F_TRAINER_FEMALE | 
 #line 4940
@@ -12085,7 +12085,7 @@ F_TRAINER_FEMALE |
 #line 4941
         .doubleBattle = TRUE,
 #line 4942
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -12133,7 +12133,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4959
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4960
 F_TRAINER_FEMALE | 
 #line 4961
@@ -12141,7 +12141,7 @@ F_TRAINER_FEMALE |
 #line 4962
         .doubleBattle = TRUE,
 #line 4963
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -12178,7 +12178,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4976
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4977
 F_TRAINER_FEMALE | 
 #line 4978
@@ -12186,7 +12186,7 @@ F_TRAINER_FEMALE |
 #line 4979
         .doubleBattle = TRUE,
 #line 4980
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -12223,7 +12223,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4993
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 4994
 F_TRAINER_FEMALE | 
 #line 4995
@@ -12231,7 +12231,7 @@ F_TRAINER_FEMALE |
 #line 4996
         .doubleBattle = TRUE,
 #line 4997
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -12268,7 +12268,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 5010
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5011
 F_TRAINER_FEMALE | 
 #line 5012
@@ -12276,7 +12276,7 @@ F_TRAINER_FEMALE |
 #line 5013
         .doubleBattle = TRUE,
 #line 5014
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -12313,7 +12313,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 5027
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5028
 F_TRAINER_FEMALE | 
 #line 5029
@@ -12321,7 +12321,7 @@ F_TRAINER_FEMALE |
 #line 5030
         .doubleBattle = TRUE,
 #line 5031
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -12358,7 +12358,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 5044
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5045
 F_TRAINER_FEMALE | 
 #line 5046
@@ -12366,7 +12366,7 @@ F_TRAINER_FEMALE |
 #line 5047
         .doubleBattle = TRUE,
 #line 5048
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -12403,13 +12403,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 5061
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5063
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5064
         .doubleBattle = TRUE,
 #line 5065
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -12435,13 +12435,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 5074
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5076
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5077
         .doubleBattle = TRUE,
 #line 5078
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -12478,13 +12478,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 5091
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5093
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5094
         .doubleBattle = TRUE,
 #line 5095
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -12510,13 +12510,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 5104
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5106
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5107
         .doubleBattle = TRUE,
 #line 5108
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -12542,13 +12542,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 5117
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5119
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5120
         .doubleBattle = TRUE,
 #line 5121
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -12599,13 +12599,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 5142
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5144
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5145
         .doubleBattle = TRUE,
 #line 5146
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -12655,13 +12655,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 5166
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5168
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5169
         .doubleBattle = TRUE,
 #line 5170
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -12730,13 +12730,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 5199
         .trainerPic = TRAINER_PIC_ELITE_FOUR_SIDNEY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5201
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
 #line 5202
         .doubleBattle = TRUE,
 #line 5203
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_FORCE_SETUP_FIRST_TURN,
 #line 5204
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
@@ -12846,7 +12846,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 5249
         .trainerPic = TRAINER_PIC_ELITE_FOUR_PHOEBE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5250
 F_TRAINER_FEMALE | 
 #line 5251
@@ -12854,7 +12854,7 @@ F_TRAINER_FEMALE |
 #line 5252
         .doubleBattle = TRUE,
 #line 5253
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5254
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_GREEN,
@@ -12964,7 +12964,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 5299
         .trainerPic = TRAINER_PIC_ELITE_FOUR_GLACIA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5300
 F_TRAINER_FEMALE | 
 #line 5301
@@ -12972,7 +12972,7 @@ F_TRAINER_FEMALE |
 #line 5302
         .doubleBattle = TRUE,
 #line 5303
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5304
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_PINK,
@@ -13082,13 +13082,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 5349
         .trainerPic = TRAINER_PIC_ELITE_FOUR_DRAKE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5351
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
 #line 5352
         .doubleBattle = TRUE,
 #line 5353
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5354
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_BLUE,
@@ -13198,7 +13198,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5399
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5400
 F_TRAINER_FEMALE | 
 #line 5401
@@ -13206,7 +13206,7 @@ F_TRAINER_FEMALE |
 #line 5402
         .doubleBattle = TRUE,
 #line 5404
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5403
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
@@ -13398,13 +13398,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5483
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5485
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 5486
         .doubleBattle = TRUE,
 #line 5488
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5487
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_BLUE,
@@ -13585,13 +13585,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5560
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5562
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 5563
         .doubleBattle = TRUE,
 #line 5566
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5564
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
@@ -13771,7 +13771,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5653
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5654
 F_TRAINER_FEMALE | 
 #line 5655
@@ -13779,7 +13779,7 @@ F_TRAINER_FEMALE |
 #line 5656
         .doubleBattle = TRUE,
 #line 5658
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5657
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_PINK,
@@ -13972,13 +13972,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5736
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5738
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 5739
         .doubleBattle = TRUE,
 #line 5741
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5740
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
@@ -14154,7 +14154,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5813
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5814
 F_TRAINER_FEMALE | 
 #line 5815
@@ -14162,7 +14162,7 @@ F_TRAINER_FEMALE |
 #line 5816
         .doubleBattle = TRUE,
 #line 5818
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
 #line 5817
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_BLUE,
@@ -14329,13 +14329,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5886
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5888
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 5889
         .doubleBattle = TRUE,
 #line 5892
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5890
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
@@ -14518,13 +14518,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5969
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 5971
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 5972
         .doubleBattle = TRUE,
 #line 5973
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -14631,13 +14631,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6018
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6020
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6021
         .doubleBattle = TRUE,
 #line 6022
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -14663,13 +14663,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6031
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6033
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6034
         .doubleBattle = TRUE,
 #line 6035
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -14695,13 +14695,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6044
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6046
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6047
         .doubleBattle = TRUE,
 #line 6048
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -14749,13 +14749,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6065
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6067
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6068
         .doubleBattle = TRUE,
 #line 6069
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -14792,13 +14792,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6082
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6084
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6085
         .doubleBattle = TRUE,
 #line 6086
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -14835,13 +14835,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6099
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6101
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6102
         .doubleBattle = TRUE,
 #line 6103
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -14878,13 +14878,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6116
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6118
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6119
         .doubleBattle = TRUE,
 #line 6120
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -14932,7 +14932,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6137
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6138
 F_TRAINER_FEMALE | 
 #line 6139
@@ -14940,7 +14940,7 @@ F_TRAINER_FEMALE |
 #line 6140
         .doubleBattle = TRUE,
 #line 6141
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -14966,7 +14966,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6150
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6151
 F_TRAINER_FEMALE | 
 #line 6152
@@ -14974,7 +14974,7 @@ F_TRAINER_FEMALE |
 #line 6153
         .doubleBattle = TRUE,
 #line 6154
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15011,7 +15011,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6167
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6168
 F_TRAINER_FEMALE | 
 #line 6169
@@ -15019,7 +15019,7 @@ F_TRAINER_FEMALE |
 #line 6170
         .doubleBattle = TRUE,
 #line 6171
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15056,7 +15056,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6184
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6185
 F_TRAINER_FEMALE | 
 #line 6186
@@ -15064,7 +15064,7 @@ F_TRAINER_FEMALE |
 #line 6187
         .doubleBattle = TRUE,
 #line 6188
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15101,7 +15101,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6201
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6202
 F_TRAINER_FEMALE | 
 #line 6203
@@ -15109,7 +15109,7 @@ F_TRAINER_FEMALE |
 #line 6204
         .doubleBattle = TRUE,
 #line 6205
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15146,7 +15146,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 6218
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6219
 F_TRAINER_FEMALE | 
 #line 6220
@@ -15154,7 +15154,7 @@ F_TRAINER_FEMALE |
 #line 6221
         .doubleBattle = TRUE,
 #line 6222
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15191,13 +15191,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 6235
         .trainerPic = TRAINER_PIC_SR_AND_JR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6237
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6238
         .doubleBattle = TRUE,
 #line 6239
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15248,13 +15248,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 6260
         .trainerPic = TRAINER_PIC_SR_AND_JR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6262
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6263
         .doubleBattle = TRUE,
 #line 6265
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 6264
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 2,
@@ -15306,13 +15306,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 6285
         .trainerPic = TRAINER_PIC_SR_AND_JR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6287
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6288
         .doubleBattle = TRUE,
 #line 6289
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15362,13 +15362,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 6309
         .trainerPic = TRAINER_PIC_SR_AND_JR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6311
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6312
         .doubleBattle = TRUE,
 #line 6313
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15418,13 +15418,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 6333
         .trainerPic = TRAINER_PIC_SR_AND_JR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6335
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6336
         .doubleBattle = TRUE,
 #line 6337
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15474,13 +15474,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 6357
         .trainerPic = TRAINER_PIC_SR_AND_JR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6359
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6360
         .doubleBattle = TRUE,
 #line 6361
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15530,13 +15530,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_WINSTRATE,
 #line 6381
         .trainerPic = TRAINER_PIC_POKEFAN_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6383
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6384
         .doubleBattle = TRUE,
 #line 6385
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -15577,13 +15577,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6398
         .trainerPic = TRAINER_PIC_POKEFAN_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6400
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6401
         .doubleBattle = TRUE,
 #line 6402
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -15611,13 +15611,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6411
         .trainerPic = TRAINER_PIC_POKEFAN_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6413
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6414
         .doubleBattle = TRUE,
 #line 6415
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -15752,13 +15752,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6468
         .trainerPic = TRAINER_PIC_POKEFAN_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6470
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6471
         .doubleBattle = TRUE,
 #line 6472
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -15786,13 +15786,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6481
         .trainerPic = TRAINER_PIC_POKEFAN_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6483
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6484
         .doubleBattle = TRUE,
 #line 6485
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -15820,13 +15820,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6494
         .trainerPic = TRAINER_PIC_POKEFAN_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6496
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6497
         .doubleBattle = TRUE,
 #line 6498
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -15854,13 +15854,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6507
         .trainerPic = TRAINER_PIC_POKEFAN_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6509
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6510
         .doubleBattle = TRUE,
 #line 6511
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -15888,7 +15888,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_WINSTRATE,
 #line 6520
         .trainerPic = TRAINER_PIC_POKEFAN_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6521
 F_TRAINER_FEMALE | 
 #line 6522
@@ -15924,7 +15924,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6533
         .trainerPic = TRAINER_PIC_POKEFAN_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6534
 F_TRAINER_FEMALE | 
 #line 6535
@@ -15932,7 +15932,7 @@ F_TRAINER_FEMALE |
 #line 6536
         .doubleBattle = TRUE,
 #line 6537
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -15960,7 +15960,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6546
         .trainerPic = TRAINER_PIC_POKEFAN_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6547
 F_TRAINER_FEMALE | 
 #line 6548
@@ -15968,7 +15968,7 @@ F_TRAINER_FEMALE |
 #line 6549
         .doubleBattle = TRUE,
 #line 6550
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -16022,7 +16022,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6567
         .trainerPic = TRAINER_PIC_POKEFAN_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6568
 F_TRAINER_FEMALE | 
 #line 6569
@@ -16030,7 +16030,7 @@ F_TRAINER_FEMALE |
 #line 6570
         .doubleBattle = TRUE,
 #line 6571
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16071,7 +16071,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6584
         .trainerPic = TRAINER_PIC_POKEFAN_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6585
 F_TRAINER_FEMALE | 
 #line 6586
@@ -16079,7 +16079,7 @@ F_TRAINER_FEMALE |
 #line 6587
         .doubleBattle = TRUE,
 #line 6588
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16120,7 +16120,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6601
         .trainerPic = TRAINER_PIC_POKEFAN_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6602
 F_TRAINER_FEMALE | 
 #line 6603
@@ -16128,7 +16128,7 @@ F_TRAINER_FEMALE |
 #line 6604
         .doubleBattle = TRUE,
 #line 6605
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16169,7 +16169,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6618
         .trainerPic = TRAINER_PIC_POKEFAN_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6619
 F_TRAINER_FEMALE | 
 #line 6620
@@ -16177,7 +16177,7 @@ F_TRAINER_FEMALE |
 #line 6621
         .doubleBattle = TRUE,
 #line 6622
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16218,7 +16218,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 6635
         .trainerPic = TRAINER_PIC_POKEFAN_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6636
 F_TRAINER_FEMALE | 
 #line 6637
@@ -16226,7 +16226,7 @@ F_TRAINER_FEMALE |
 #line 6638
         .doubleBattle = TRUE,
 #line 6639
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16267,13 +16267,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6652
         .trainerPic = TRAINER_PIC_EXPERT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6654
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6655
         .doubleBattle = TRUE,
 #line 6656
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -16299,13 +16299,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6665
         .trainerPic = TRAINER_PIC_EXPERT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6667
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6668
         .doubleBattle = TRUE,
 #line 6669
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -16338,13 +16338,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6682
         .trainerPic = TRAINER_PIC_EXPERT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6684
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6685
         .doubleBattle = TRUE,
 #line 6686
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -16377,13 +16377,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6699
         .trainerPic = TRAINER_PIC_EXPERT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6701
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6702
         .doubleBattle = TRUE,
 #line 6703
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -16416,13 +16416,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6716
         .trainerPic = TRAINER_PIC_EXPERT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6718
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6719
         .doubleBattle = TRUE,
 #line 6720
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -16455,7 +16455,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_WINSTRATE,
 #line 6733
         .trainerPic = TRAINER_PIC_EXPERT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6734
 F_TRAINER_FEMALE | 
 #line 6735
@@ -16463,7 +16463,7 @@ F_TRAINER_FEMALE |
 #line 6736
         .doubleBattle = TRUE,
 #line 6737
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -16496,7 +16496,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6750
         .trainerPic = TRAINER_PIC_EXPERT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6751
 F_TRAINER_FEMALE | 
 #line 6752
@@ -16504,7 +16504,7 @@ F_TRAINER_FEMALE |
 #line 6753
         .doubleBattle = TRUE,
 #line 6754
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16541,7 +16541,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6767
         .trainerPic = TRAINER_PIC_EXPERT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6768
 F_TRAINER_FEMALE | 
 #line 6769
@@ -16549,7 +16549,7 @@ F_TRAINER_FEMALE |
 #line 6770
         .doubleBattle = TRUE,
 #line 6771
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16586,7 +16586,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6784
         .trainerPic = TRAINER_PIC_EXPERT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6785
 F_TRAINER_FEMALE | 
 #line 6786
@@ -16594,7 +16594,7 @@ F_TRAINER_FEMALE |
 #line 6787
         .doubleBattle = TRUE,
 #line 6788
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16631,7 +16631,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6801
         .trainerPic = TRAINER_PIC_EXPERT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6802
 F_TRAINER_FEMALE | 
 #line 6803
@@ -16639,7 +16639,7 @@ F_TRAINER_FEMALE |
 #line 6804
         .doubleBattle = TRUE,
 #line 6805
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16676,7 +16676,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 6818
         .trainerPic = TRAINER_PIC_EXPERT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6819
 F_TRAINER_FEMALE | 
 #line 6820
@@ -16684,7 +16684,7 @@ F_TRAINER_FEMALE |
 #line 6821
         .doubleBattle = TRUE,
 #line 6822
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16721,13 +16721,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6835
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6837
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6838
         .doubleBattle = TRUE,
 #line 6840
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 6839
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 2,
@@ -16766,13 +16766,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6853
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6855
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6856
         .doubleBattle = TRUE,
 #line 6857
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16809,13 +16809,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6870
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6872
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6873
         .doubleBattle = TRUE,
 #line 6874
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -16845,13 +16845,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6884
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6886
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6887
         .doubleBattle = TRUE,
 #line 6888
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -16888,13 +16888,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6901
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6903
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6904
         .doubleBattle = TRUE,
 #line 6905
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -16920,13 +16920,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6914
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6916
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6917
         .doubleBattle = TRUE,
 #line 6919
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 6918
         .startingStatus = STARTING_STATUS_ELECTRIC_TERRAIN,
         .partySize = 2,
@@ -16979,13 +16979,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 6940
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6942
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 6943
         .doubleBattle = TRUE,
 #line 6944
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -17036,7 +17036,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 6965
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6966
 F_TRAINER_FEMALE | 
 #line 6967
@@ -17044,7 +17044,7 @@ F_TRAINER_FEMALE |
 #line 6968
         .doubleBattle = TRUE,
 #line 6969
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -17095,13 +17095,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6990
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6992
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6993
         .doubleBattle = TRUE,
 #line 6994
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -17127,13 +17127,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 7003
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7005
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7006
         .doubleBattle = TRUE,
 #line 7007
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -17159,13 +17159,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 7016
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7018
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7019
         .doubleBattle = TRUE,
 #line 7020
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -17191,13 +17191,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 7029
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7031
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7032
         .doubleBattle = TRUE,
 #line 7033
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -17234,13 +17234,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 7046
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7048
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7049
         .doubleBattle = TRUE,
 #line 7050
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -17288,13 +17288,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 7067
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7069
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7070
         .doubleBattle = TRUE,
 #line 7071
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -17342,13 +17342,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 7088
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7090
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7091
         .doubleBattle = TRUE,
 #line 7092
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -17385,13 +17385,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 7105
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7107
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7108
         .doubleBattle = TRUE,
 #line 7109
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -17428,13 +17428,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 7122
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7124
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7125
         .doubleBattle = TRUE,
 #line 7126
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -17471,13 +17471,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CHAMPION,
 #line 7139
         .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7141
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7142
         .doubleBattle = TRUE,
 #line 7143
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 7144
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
@@ -17605,13 +17605,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7197
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7199
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7200
         .doubleBattle = TRUE,
 #line 7201
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -17659,13 +17659,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7218
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7220
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7221
         .doubleBattle = TRUE,
 #line 7222
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -17713,13 +17713,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7239
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7241
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7242
         .doubleBattle = TRUE,
 #line 7243
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -17767,13 +17767,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7260
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7262
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7263
         .doubleBattle = TRUE,
 #line 7264
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -17821,13 +17821,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7281
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7283
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7284
         .doubleBattle = TRUE,
 #line 7285
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -17853,13 +17853,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7294
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7296
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7297
         .doubleBattle = TRUE,
 #line 7298
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -17918,13 +17918,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7319
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7321
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7322
         .doubleBattle = TRUE,
 #line 7323
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -17950,13 +17950,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7332
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7334
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7335
         .doubleBattle = TRUE,
 #line 7336
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -17993,13 +17993,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7349
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7351
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7352
         .doubleBattle = TRUE,
 #line 7353
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18025,13 +18025,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7362
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7364
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7365
         .doubleBattle = TRUE,
 #line 7366
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -18068,13 +18068,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7379
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7381
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7382
         .doubleBattle = TRUE,
 #line 7383
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -18122,13 +18122,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7400
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7402
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7403
         .doubleBattle = TRUE,
 #line 7404
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -18187,13 +18187,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7425
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7427
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7428
         .doubleBattle = TRUE,
 #line 7429
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -18252,7 +18252,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7450
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7452
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7453
@@ -18317,13 +18317,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 7475
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7477
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7478
         .doubleBattle = TRUE,
 #line 7479
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -18404,13 +18404,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7508
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7510
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7511
         .doubleBattle = TRUE,
 #line 7512
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -18458,13 +18458,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7529
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7531
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7532
         .doubleBattle = TRUE,
 #line 7533
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -18501,13 +18501,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7546
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7548
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7549
         .doubleBattle = TRUE,
 #line 7550
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18533,13 +18533,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7559
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7561
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7562
         .doubleBattle = TRUE,
 #line 7563
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18565,13 +18565,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7572
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7574
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7575
         .doubleBattle = TRUE,
 #line 7576
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18597,13 +18597,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7585
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7587
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7588
         .doubleBattle = TRUE,
 #line 7589
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18629,13 +18629,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7598
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7600
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7601
         .doubleBattle = TRUE,
 #line 7602
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18661,7 +18661,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7611
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7612
 F_TRAINER_FEMALE | 
 #line 7613
@@ -18669,7 +18669,7 @@ F_TRAINER_FEMALE |
 #line 7614
         .doubleBattle = TRUE,
 #line 7615
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18695,7 +18695,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7624
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7625
 F_TRAINER_FEMALE | 
 #line 7626
@@ -18703,7 +18703,7 @@ F_TRAINER_FEMALE |
 #line 7627
         .doubleBattle = TRUE,
 #line 7628
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -18751,7 +18751,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7645
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7646
 F_TRAINER_FEMALE | 
 #line 7647
@@ -18759,7 +18759,7 @@ F_TRAINER_FEMALE |
 #line 7648
         .doubleBattle = TRUE,
 #line 7649
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18785,7 +18785,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7658
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7659
 F_TRAINER_FEMALE | 
 #line 7660
@@ -18793,7 +18793,7 @@ F_TRAINER_FEMALE |
 #line 7661
         .doubleBattle = TRUE,
 #line 7662
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18819,7 +18819,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7671
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7672
 F_TRAINER_FEMALE | 
 #line 7673
@@ -18827,7 +18827,7 @@ F_TRAINER_FEMALE |
 #line 7674
         .doubleBattle = TRUE,
 #line 7675
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18853,7 +18853,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7684
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7685
 F_TRAINER_FEMALE | 
 #line 7686
@@ -18861,7 +18861,7 @@ F_TRAINER_FEMALE |
 #line 7687
         .doubleBattle = TRUE,
 #line 7688
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18887,13 +18887,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7697
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7699
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7700
         .doubleBattle = TRUE,
 #line 7702
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 7701
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 1,
@@ -18921,13 +18921,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7711
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7713
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7714
         .doubleBattle = TRUE,
 #line 7715
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18953,13 +18953,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7724
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7726
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7727
         .doubleBattle = TRUE,
 #line 7728
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -18985,13 +18985,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7737
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7739
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7740
         .doubleBattle = TRUE,
 #line 7741
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19017,13 +19017,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7750
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7752
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7753
         .doubleBattle = TRUE,
 #line 7754
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19049,7 +19049,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7763
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7764
 F_TRAINER_FEMALE | 
 #line 7765
@@ -19057,7 +19057,7 @@ F_TRAINER_FEMALE |
 #line 7766
         .doubleBattle = TRUE,
 #line 7768
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 7767
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 1,
@@ -19085,7 +19085,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7777
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7778
 F_TRAINER_FEMALE | 
 #line 7779
@@ -19093,7 +19093,7 @@ F_TRAINER_FEMALE |
 #line 7780
         .doubleBattle = TRUE,
 #line 7781
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19119,7 +19119,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7790
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7791
 F_TRAINER_FEMALE | 
 #line 7792
@@ -19127,7 +19127,7 @@ F_TRAINER_FEMALE |
 #line 7793
         .doubleBattle = TRUE,
 #line 7794
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19153,7 +19153,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7803
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7804
 F_TRAINER_FEMALE | 
 #line 7805
@@ -19161,7 +19161,7 @@ F_TRAINER_FEMALE |
 #line 7806
         .doubleBattle = TRUE,
 #line 7807
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19187,7 +19187,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7816
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7817
 F_TRAINER_FEMALE | 
 #line 7818
@@ -19195,7 +19195,7 @@ F_TRAINER_FEMALE |
 #line 7819
         .doubleBattle = TRUE,
 #line 7820
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19221,13 +19221,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7829
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7831
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7832
         .doubleBattle = TRUE,
 #line 7833
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19264,13 +19264,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 7846
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7848
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7849
         .doubleBattle = TRUE,
 #line 7850
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19307,13 +19307,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7863
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7865
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7866
         .doubleBattle = TRUE,
 #line 7867
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19339,13 +19339,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7876
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7878
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7879
         .doubleBattle = TRUE,
 #line 7880
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19382,13 +19382,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7893
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7895
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7896
         .doubleBattle = TRUE,
 #line 7897
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19425,13 +19425,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7910
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7912
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7913
         .doubleBattle = TRUE,
 #line 7914
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19457,13 +19457,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7923
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7925
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7926
         .doubleBattle = TRUE,
 #line 7927
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19489,13 +19489,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7936
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7938
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7939
         .doubleBattle = TRUE,
 #line 7940
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19521,13 +19521,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7949
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7951
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7952
         .doubleBattle = TRUE,
 #line 7953
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19553,7 +19553,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7962
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7963
 F_TRAINER_FEMALE | 
 #line 7964
@@ -19561,7 +19561,7 @@ F_TRAINER_FEMALE |
 #line 7965
         .doubleBattle = TRUE,
 #line 7966
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19587,7 +19587,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7975
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7976
 F_TRAINER_FEMALE | 
 #line 7977
@@ -19595,7 +19595,7 @@ F_TRAINER_FEMALE |
 #line 7978
         .doubleBattle = TRUE,
 #line 7979
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19632,7 +19632,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7992
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 7993
 F_TRAINER_FEMALE | 
 #line 7994
@@ -19640,7 +19640,7 @@ F_TRAINER_FEMALE |
 #line 7995
         .doubleBattle = TRUE,
 #line 7996
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19666,7 +19666,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 8005
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8006
 F_TRAINER_FEMALE | 
 #line 8007
@@ -19674,7 +19674,7 @@ F_TRAINER_FEMALE |
 #line 8008
         .doubleBattle = TRUE,
 #line 8009
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19700,7 +19700,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 8018
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8019
 F_TRAINER_FEMALE | 
 #line 8020
@@ -19708,7 +19708,7 @@ F_TRAINER_FEMALE |
 #line 8021
         .doubleBattle = TRUE,
 #line 8022
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19745,7 +19745,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 8035
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8036
 F_TRAINER_FEMALE | 
 #line 8037
@@ -19753,7 +19753,7 @@ F_TRAINER_FEMALE |
 #line 8038
         .doubleBattle = TRUE,
 #line 8039
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19779,7 +19779,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 8048
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8049
 F_TRAINER_FEMALE | 
 #line 8050
@@ -19787,7 +19787,7 @@ F_TRAINER_FEMALE |
 #line 8051
         .doubleBattle = TRUE,
 #line 8052
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19813,7 +19813,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 8061
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8062
 F_TRAINER_FEMALE | 
 #line 8063
@@ -19821,7 +19821,7 @@ F_TRAINER_FEMALE |
 #line 8064
         .doubleBattle = TRUE,
 #line 8065
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19847,7 +19847,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 8074
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8075
 F_TRAINER_FEMALE | 
 #line 8076
@@ -19855,7 +19855,7 @@ F_TRAINER_FEMALE |
 #line 8077
         .doubleBattle = TRUE,
 #line 8078
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19881,13 +19881,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 8087
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8089
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8090
         .doubleBattle = TRUE,
 #line 8091
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19924,13 +19924,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 8104
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8106
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8107
         .doubleBattle = TRUE,
 #line 8108
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19967,13 +19967,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 8121
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8123
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8124
         .doubleBattle = TRUE,
 #line 8125
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20010,13 +20010,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 8138
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8140
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8141
         .doubleBattle = TRUE,
 #line 8142
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -20064,13 +20064,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 8159
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8161
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8162
         .doubleBattle = TRUE,
 #line 8163
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -20120,13 +20120,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 8180
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8182
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8183
         .doubleBattle = TRUE,
 #line 8184
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -20159,13 +20159,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8197
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8199
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8200
         .doubleBattle = TRUE,
 #line 8201
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -20191,13 +20191,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8210
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8212
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8213
         .doubleBattle = TRUE,
 #line 8214
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20234,13 +20234,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8227
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8229
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8230
         .doubleBattle = TRUE,
 #line 8231
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -20266,13 +20266,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8240
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8242
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8243
         .doubleBattle = TRUE,
 #line 8244
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -20320,13 +20320,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8261
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8263
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8264
         .doubleBattle = TRUE,
 #line 8265
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -20352,13 +20352,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8274
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8276
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8277
         .doubleBattle = TRUE,
 #line 8278
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20395,13 +20395,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8291
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8293
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8294
         .doubleBattle = TRUE,
 #line 8295
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20438,13 +20438,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8308
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8310
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8311
         .doubleBattle = TRUE,
 #line 8312
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20481,13 +20481,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8325
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8327
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8328
         .doubleBattle = TRUE,
 #line 8329
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -20513,13 +20513,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8338
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8340
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8341
         .doubleBattle = TRUE,
 #line 8342
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -20567,13 +20567,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8359
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8361
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8362
         .doubleBattle = TRUE,
 #line 8363
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20610,13 +20610,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8376
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8378
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8379
         .doubleBattle = TRUE,
 #line 8380
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20653,13 +20653,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8393
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8395
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8396
         .doubleBattle = TRUE,
 #line 8397
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20696,13 +20696,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8410
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8412
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8413
         .doubleBattle = TRUE,
 #line 8414
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20739,13 +20739,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8427
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8429
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8430
         .doubleBattle = TRUE,
 #line 8431
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20782,13 +20782,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8444
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8446
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8447
         .doubleBattle = TRUE,
 #line 8448
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20825,13 +20825,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 8461
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8463
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8464
         .doubleBattle = TRUE,
 #line 8465
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -20857,7 +20857,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 8474
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8476
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8477
@@ -20889,7 +20889,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 8487
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8489
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8490
@@ -20932,7 +20932,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 8504
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8505
 F_TRAINER_FEMALE | 
 #line 8506
@@ -20985,7 +20985,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 8524
         .trainerPic = TRAINER_PIC_TUBER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8525
 F_TRAINER_FEMALE | 
 #line 8526
@@ -21017,7 +21017,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 8536
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8538
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8539
@@ -21090,7 +21090,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 8568
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8570
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8571
@@ -21131,7 +21131,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 8584
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8586
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8587
@@ -21219,7 +21219,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 8621
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8623
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8624
@@ -21307,7 +21307,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 8658
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8660
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8661
@@ -21393,7 +21393,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 8693
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8695
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8696
@@ -21483,7 +21483,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 8730
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8731
 F_TRAINER_FEMALE | 
 #line 8732
@@ -21491,7 +21491,7 @@ F_TRAINER_FEMALE |
 #line 8733
         .doubleBattle = TRUE,
 #line 8734
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -21517,7 +21517,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 8743
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8744
 F_TRAINER_FEMALE | 
 #line 8745
@@ -21525,7 +21525,7 @@ F_TRAINER_FEMALE |
 #line 8746
         .doubleBattle = TRUE,
 #line 8747
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -21551,7 +21551,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 8756
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8757
 F_TRAINER_FEMALE | 
 #line 8758
@@ -21559,7 +21559,7 @@ F_TRAINER_FEMALE |
 #line 8759
         .doubleBattle = TRUE,
 #line 8760
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -21596,7 +21596,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 8773
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8774
 F_TRAINER_FEMALE | 
 #line 8775
@@ -21604,7 +21604,7 @@ F_TRAINER_FEMALE |
 #line 8776
         .doubleBattle = TRUE,
 #line 8777
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -21630,7 +21630,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 8786
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8787
 F_TRAINER_FEMALE | 
 #line 8788
@@ -21638,7 +21638,7 @@ F_TRAINER_FEMALE |
 #line 8789
         .doubleBattle = TRUE,
 #line 8790
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -21664,7 +21664,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 8799
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8800
 F_TRAINER_FEMALE | 
 #line 8801
@@ -21672,7 +21672,7 @@ F_TRAINER_FEMALE |
 #line 8802
         .doubleBattle = TRUE,
 #line 8803
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -21709,7 +21709,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 8816
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8817
 F_TRAINER_FEMALE | 
 #line 8818
@@ -21717,7 +21717,7 @@ F_TRAINER_FEMALE |
 #line 8819
         .doubleBattle = TRUE,
 #line 8820
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -21754,7 +21754,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 8833
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8834
 F_TRAINER_FEMALE | 
 #line 8835
@@ -21762,7 +21762,7 @@ F_TRAINER_FEMALE |
 #line 8836
         .doubleBattle = TRUE,
 #line 8837
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -21799,7 +21799,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 8850
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8851
 F_TRAINER_FEMALE | 
 #line 8852
@@ -21807,7 +21807,7 @@ F_TRAINER_FEMALE |
 #line 8853
         .doubleBattle = TRUE,
 #line 8854
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -21844,7 +21844,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8867
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8868
 F_TRAINER_FEMALE | 
 #line 8869
@@ -21852,7 +21852,7 @@ F_TRAINER_FEMALE |
 #line 8870
         .doubleBattle = TRUE,
 #line 8871
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -21885,7 +21885,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8884
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8885
 F_TRAINER_FEMALE | 
 #line 8886
@@ -21893,7 +21893,7 @@ F_TRAINER_FEMALE |
 #line 8887
         .doubleBattle = TRUE,
 #line 8888
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -21930,7 +21930,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8901
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8902
 F_TRAINER_FEMALE | 
 #line 8903
@@ -21938,7 +21938,7 @@ F_TRAINER_FEMALE |
 #line 8904
         .doubleBattle = TRUE,
 #line 8905
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -21971,7 +21971,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8918
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8919
 F_TRAINER_FEMALE | 
 #line 8920
@@ -21979,7 +21979,7 @@ F_TRAINER_FEMALE |
 #line 8921
         .doubleBattle = TRUE,
 #line 8922
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22012,7 +22012,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8935
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8936
 F_TRAINER_FEMALE | 
 #line 8937
@@ -22020,7 +22020,7 @@ F_TRAINER_FEMALE |
 #line 8938
         .doubleBattle = TRUE,
 #line 8939
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22053,7 +22053,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8952
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8953
 F_TRAINER_FEMALE | 
 #line 8954
@@ -22061,7 +22061,7 @@ F_TRAINER_FEMALE |
 #line 8955
         .doubleBattle = TRUE,
 #line 8956
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22112,7 +22112,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8977
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 8978
 F_TRAINER_FEMALE | 
 #line 8979
@@ -22120,7 +22120,7 @@ F_TRAINER_FEMALE |
 #line 8980
         .doubleBattle = TRUE,
 #line 8981
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22171,7 +22171,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9002
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9003
 F_TRAINER_FEMALE | 
 #line 9004
@@ -22179,7 +22179,7 @@ F_TRAINER_FEMALE |
 #line 9005
         .doubleBattle = TRUE,
 #line 9006
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22216,7 +22216,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9019
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9020
 F_TRAINER_FEMALE | 
 #line 9021
@@ -22224,7 +22224,7 @@ F_TRAINER_FEMALE |
 #line 9022
         .doubleBattle = TRUE,
 #line 9023
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22250,7 +22250,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9032
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9033
 F_TRAINER_FEMALE | 
 #line 9034
@@ -22258,7 +22258,7 @@ F_TRAINER_FEMALE |
 #line 9035
         .doubleBattle = TRUE,
 #line 9036
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22284,7 +22284,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9045
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9046
 F_TRAINER_FEMALE | 
 #line 9047
@@ -22292,7 +22292,7 @@ F_TRAINER_FEMALE |
 #line 9048
         .doubleBattle = TRUE,
 #line 9049
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22329,7 +22329,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9062
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9063
 F_TRAINER_FEMALE | 
 #line 9064
@@ -22337,7 +22337,7 @@ F_TRAINER_FEMALE |
 #line 9065
         .doubleBattle = TRUE,
 #line 9066
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22363,7 +22363,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9075
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9076
 F_TRAINER_FEMALE | 
 #line 9077
@@ -22371,7 +22371,7 @@ F_TRAINER_FEMALE |
 #line 9078
         .doubleBattle = TRUE,
 #line 9079
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22408,7 +22408,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9092
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9093
 F_TRAINER_FEMALE | 
 #line 9094
@@ -22416,7 +22416,7 @@ F_TRAINER_FEMALE |
 #line 9095
         .doubleBattle = TRUE,
 #line 9096
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22442,7 +22442,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9105
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9106
 F_TRAINER_FEMALE | 
 #line 9107
@@ -22450,7 +22450,7 @@ F_TRAINER_FEMALE |
 #line 9108
         .doubleBattle = TRUE,
 #line 9109
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -22498,7 +22498,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9126
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9127
 F_TRAINER_FEMALE | 
 #line 9128
@@ -22506,7 +22506,7 @@ F_TRAINER_FEMALE |
 #line 9129
         .doubleBattle = TRUE,
 #line 9130
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22532,7 +22532,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9139
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9140
 F_TRAINER_FEMALE | 
 #line 9141
@@ -22540,7 +22540,7 @@ F_TRAINER_FEMALE |
 #line 9142
         .doubleBattle = TRUE,
 #line 9143
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22566,7 +22566,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9152
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9153
 F_TRAINER_FEMALE | 
 #line 9154
@@ -22574,7 +22574,7 @@ F_TRAINER_FEMALE |
 #line 9155
         .doubleBattle = TRUE,
 #line 9156
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22600,7 +22600,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9165
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9166
 F_TRAINER_FEMALE | 
 #line 9167
@@ -22608,7 +22608,7 @@ F_TRAINER_FEMALE |
 #line 9168
         .doubleBattle = TRUE,
 #line 9169
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22634,7 +22634,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9178
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9179
 F_TRAINER_FEMALE | 
 #line 9180
@@ -22642,7 +22642,7 @@ F_TRAINER_FEMALE |
 #line 9181
         .doubleBattle = TRUE,
 #line 9182
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22679,7 +22679,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9195
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9196
 F_TRAINER_FEMALE | 
 #line 9197
@@ -22687,7 +22687,7 @@ F_TRAINER_FEMALE |
 #line 9198
         .doubleBattle = TRUE,
 #line 9199
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22713,7 +22713,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9208
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9209
 F_TRAINER_FEMALE | 
 #line 9210
@@ -22721,7 +22721,7 @@ F_TRAINER_FEMALE |
 #line 9211
         .doubleBattle = TRUE,
 #line 9212
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22758,7 +22758,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9225
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9226
 F_TRAINER_FEMALE | 
 #line 9227
@@ -22766,7 +22766,7 @@ F_TRAINER_FEMALE |
 #line 9228
         .doubleBattle = TRUE,
 #line 9229
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22792,7 +22792,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9238
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9239
 F_TRAINER_FEMALE | 
 #line 9240
@@ -22800,7 +22800,7 @@ F_TRAINER_FEMALE |
 #line 9241
         .doubleBattle = TRUE,
 #line 9242
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22826,7 +22826,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9251
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9252
 F_TRAINER_FEMALE | 
 #line 9253
@@ -22834,7 +22834,7 @@ F_TRAINER_FEMALE |
 #line 9254
         .doubleBattle = TRUE,
 #line 9255
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22860,7 +22860,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9264
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9265
 F_TRAINER_FEMALE | 
 #line 9266
@@ -22868,7 +22868,7 @@ F_TRAINER_FEMALE |
 #line 9267
         .doubleBattle = TRUE,
 #line 9268
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22905,7 +22905,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9281
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9282
 F_TRAINER_FEMALE | 
 #line 9283
@@ -22913,7 +22913,7 @@ F_TRAINER_FEMALE |
 #line 9284
         .doubleBattle = TRUE,
 #line 9285
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22939,7 +22939,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9294
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9295
 F_TRAINER_FEMALE | 
 #line 9296
@@ -22947,7 +22947,7 @@ F_TRAINER_FEMALE |
 #line 9297
         .doubleBattle = TRUE,
 #line 9298
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22984,7 +22984,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9311
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9312
 F_TRAINER_FEMALE | 
 #line 9313
@@ -22992,7 +22992,7 @@ F_TRAINER_FEMALE |
 #line 9314
         .doubleBattle = TRUE,
 #line 9315
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23029,7 +23029,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9328
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9329
 F_TRAINER_FEMALE | 
 #line 9330
@@ -23037,7 +23037,7 @@ F_TRAINER_FEMALE |
 #line 9331
         .doubleBattle = TRUE,
 #line 9332
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23074,7 +23074,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9345
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9346
 F_TRAINER_FEMALE | 
 #line 9347
@@ -23082,7 +23082,7 @@ F_TRAINER_FEMALE |
 #line 9348
         .doubleBattle = TRUE,
 #line 9349
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -23108,7 +23108,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9358
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9359
 F_TRAINER_FEMALE | 
 #line 9360
@@ -23116,7 +23116,7 @@ F_TRAINER_FEMALE |
 #line 9361
         .doubleBattle = TRUE,
 #line 9362
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -23142,7 +23142,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9371
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9372
 F_TRAINER_FEMALE | 
 #line 9373
@@ -23150,7 +23150,7 @@ F_TRAINER_FEMALE |
 #line 9374
         .doubleBattle = TRUE,
 #line 9375
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -23176,7 +23176,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9384
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9385
 F_TRAINER_FEMALE | 
 #line 9386
@@ -23184,7 +23184,7 @@ F_TRAINER_FEMALE |
 #line 9387
         .doubleBattle = TRUE,
 #line 9388
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23221,7 +23221,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 9401
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9402
 F_TRAINER_FEMALE | 
 #line 9403
@@ -23229,7 +23229,7 @@ F_TRAINER_FEMALE |
 #line 9404
         .doubleBattle = TRUE,
 #line 9405
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -23277,7 +23277,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9422
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9423
 F_TRAINER_FEMALE | 
 #line 9424
@@ -23285,7 +23285,7 @@ F_TRAINER_FEMALE |
 #line 9425
         .doubleBattle = TRUE,
 #line 9426
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23336,7 +23336,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9447
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9448
 F_TRAINER_FEMALE | 
 #line 9449
@@ -23344,7 +23344,7 @@ F_TRAINER_FEMALE |
 #line 9450
         .doubleBattle = TRUE,
 #line 9451
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23395,7 +23395,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9472
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9473
 F_TRAINER_FEMALE | 
 #line 9474
@@ -23403,7 +23403,7 @@ F_TRAINER_FEMALE |
 #line 9475
         .doubleBattle = TRUE,
 #line 9476
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23440,7 +23440,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9489
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9490
 F_TRAINER_FEMALE | 
 #line 9491
@@ -23448,7 +23448,7 @@ F_TRAINER_FEMALE |
 #line 9492
         .doubleBattle = TRUE,
 #line 9493
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23485,7 +23485,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9506
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9507
 F_TRAINER_FEMALE | 
 #line 9508
@@ -23493,7 +23493,7 @@ F_TRAINER_FEMALE |
 #line 9509
         .doubleBattle = TRUE,
 #line 9510
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23530,7 +23530,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9523
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9524
 F_TRAINER_FEMALE | 
 #line 9525
@@ -23538,7 +23538,7 @@ F_TRAINER_FEMALE |
 #line 9526
         .doubleBattle = TRUE,
 #line 9527
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -23586,13 +23586,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 9544
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9546
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 9547
         .doubleBattle = TRUE,
 #line 9548
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -23625,7 +23625,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9561
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9562
 F_TRAINER_FEMALE | 
 #line 9563
@@ -23633,7 +23633,7 @@ F_TRAINER_FEMALE |
 #line 9564
         .doubleBattle = TRUE,
 #line 9565
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23670,7 +23670,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9578
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9579
 F_TRAINER_FEMALE | 
 #line 9580
@@ -23678,7 +23678,7 @@ F_TRAINER_FEMALE |
 #line 9581
         .doubleBattle = TRUE,
 #line 9582
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -23726,7 +23726,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9599
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9600
 F_TRAINER_FEMALE | 
 #line 9601
@@ -23734,7 +23734,7 @@ F_TRAINER_FEMALE |
 #line 9602
         .doubleBattle = TRUE,
 #line 9603
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -23782,7 +23782,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9620
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9621
 F_TRAINER_FEMALE | 
 #line 9622
@@ -23790,7 +23790,7 @@ F_TRAINER_FEMALE |
 #line 9623
         .doubleBattle = TRUE,
 #line 9624
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -23838,7 +23838,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 9641
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9642
 F_TRAINER_FEMALE | 
 #line 9643
@@ -23846,7 +23846,7 @@ F_TRAINER_FEMALE |
 #line 9644
         .doubleBattle = TRUE,
 #line 9645
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -23894,13 +23894,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 9662
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9664
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9665
         .doubleBattle = TRUE,
 #line 9666
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23937,13 +23937,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 9679
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9681
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9682
         .doubleBattle = TRUE,
 #line 9683
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23980,13 +23980,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 9696
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9698
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9699
         .doubleBattle = TRUE,
 #line 9700
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24023,13 +24023,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 9713
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9715
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9716
         .doubleBattle = TRUE,
 #line 9717
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24066,13 +24066,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 9730
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9732
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9733
         .doubleBattle = TRUE,
 #line 9734
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24109,13 +24109,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 9747
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9749
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9750
         .doubleBattle = TRUE,
 #line 9751
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24162,13 +24162,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 9768
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9770
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9771
         .doubleBattle = TRUE,
 #line 9772
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24205,13 +24205,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 9785
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9787
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9788
         .doubleBattle = TRUE,
 #line 9789
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24262,13 +24262,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 9810
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9812
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9813
         .doubleBattle = TRUE,
 #line 9814
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24319,13 +24319,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9835
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9837
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9838
         .doubleBattle = TRUE,
 #line 9839
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24362,13 +24362,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9852
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9854
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9855
         .doubleBattle = TRUE,
 #line 9856
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -24394,13 +24394,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9865
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9867
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9868
         .doubleBattle = TRUE,
 #line 9869
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24437,13 +24437,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9882
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9884
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9885
         .doubleBattle = TRUE,
 #line 9886
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -24491,13 +24491,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9903
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9905
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9906
         .doubleBattle = TRUE,
 #line 9907
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24534,13 +24534,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9920
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9922
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9923
         .doubleBattle = TRUE,
 #line 9924
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -24588,13 +24588,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9941
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9943
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9944
         .doubleBattle = TRUE,
 #line 9945
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24631,13 +24631,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9958
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9960
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9961
         .doubleBattle = TRUE,
 #line 9962
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -24685,13 +24685,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9979
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 9981
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9982
         .doubleBattle = TRUE,
 #line 9983
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -24739,13 +24739,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 10000
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10002
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10003
         .doubleBattle = TRUE,
 #line 10004
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -24793,13 +24793,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 10021
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10023
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10024
         .doubleBattle = TRUE,
 #line 10025
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -24847,13 +24847,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 10042
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10044
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 10045
         .doubleBattle = TRUE,
 #line 10046
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -24879,7 +24879,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 10055
         .trainerPic = TRAINER_PIC_POKEFAN_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10056
 F_TRAINER_FEMALE | 
 #line 10057
@@ -24887,7 +24887,7 @@ F_TRAINER_FEMALE |
 #line 10058
         .doubleBattle = TRUE,
 #line 10059
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24942,7 +24942,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER_2,
 #line 10080
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10081
 F_TRAINER_FEMALE | 
 #line 10082
@@ -24950,7 +24950,7 @@ F_TRAINER_FEMALE |
 #line 10083
         .doubleBattle = TRUE,
 #line 10084
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -24976,13 +24976,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 10093
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10095
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10096
         .doubleBattle = TRUE,
 #line 10097
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -25015,7 +25015,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 10110
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10111
 F_TRAINER_FEMALE | 
 #line 10112
@@ -25023,7 +25023,7 @@ F_TRAINER_FEMALE |
 #line 10113
         .doubleBattle = TRUE,
 #line 10114
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -25056,13 +25056,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 10127
         .trainerPic = TRAINER_PIC_EXPERT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10129
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 10130
         .doubleBattle = TRUE,
 #line 10131
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25099,13 +25099,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 10144
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10146
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10147
         .doubleBattle = TRUE,
 #line 10148
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25142,7 +25142,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 10161
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10162
 F_TRAINER_FEMALE | 
 #line 10163
@@ -25150,7 +25150,7 @@ F_TRAINER_FEMALE |
 #line 10164
         .doubleBattle = TRUE,
 #line 10165
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -25183,7 +25183,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 10178
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10179
 F_TRAINER_FEMALE | 
 #line 10180
@@ -25191,7 +25191,7 @@ F_TRAINER_FEMALE |
 #line 10181
         .doubleBattle = TRUE,
 #line 10182
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25228,13 +25228,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 10195
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10197
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10198
         .doubleBattle = TRUE,
 #line 10199
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -25260,13 +25260,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 10208
         .trainerPic = TRAINER_PIC_EXPERT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10210
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 10211
         .doubleBattle = TRUE,
 #line 10212
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25303,13 +25303,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 10225
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10227
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10228
         .doubleBattle = TRUE,
 #line 10229
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25346,13 +25346,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 10242
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10244
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10245
         .doubleBattle = TRUE,
 #line 10246
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25389,13 +25389,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
 #line 10259
         .trainerPic = TRAINER_PIC_TABITHA_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10261
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 10262
         .doubleBattle = TRUE,
 #line 10263
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -25443,13 +25443,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 10280
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10282
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10283
         .doubleBattle = TRUE,
 #line 10284
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25486,13 +25486,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 10297
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10299
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10300
         .doubleBattle = TRUE,
 #line 10301
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25529,13 +25529,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 10314
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10316
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10317
         .doubleBattle = TRUE,
 #line 10318
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25572,13 +25572,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 10331
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10333
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10334
         .doubleBattle = TRUE,
 #line 10335
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25615,13 +25615,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10348
         .trainerPic = TRAINER_PIC_WALLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10350
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10351
         .doubleBattle = TRUE,
 #line 10352
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -25726,13 +25726,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10397
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10399
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10400
         .doubleBattle = TRUE,
 #line 10401
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -25786,13 +25786,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10423
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10425
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10426
         .doubleBattle = TRUE,
 #line 10427
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -25956,13 +25956,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10496
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10498
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10499
         .doubleBattle = TRUE,
 #line 10500
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -26010,13 +26010,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10517
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10519
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10520
         .doubleBattle = TRUE,
 #line 10521
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -26071,13 +26071,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10543
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10545
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10546
         .doubleBattle = TRUE,
 #line 10547
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -26241,13 +26241,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10616
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10618
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10619
         .doubleBattle = TRUE,
 #line 10620
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -26295,13 +26295,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10637
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10639
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10640
         .doubleBattle = TRUE,
 #line 10641
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -26356,13 +26356,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10663
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10665
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10666
         .doubleBattle = TRUE,
 #line 10667
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -26525,13 +26525,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10737
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10739
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10740
         .doubleBattle = TRUE,
 #line 10741
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -26579,7 +26579,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10758
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10759
 F_TRAINER_FEMALE | 
 #line 10760
@@ -26587,7 +26587,7 @@ F_TRAINER_FEMALE |
 #line 10761
         .doubleBattle = TRUE,
 #line 10762
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -26641,7 +26641,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10783
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10784
 F_TRAINER_FEMALE | 
 #line 10785
@@ -26649,7 +26649,7 @@ F_TRAINER_FEMALE |
 #line 10786
         .doubleBattle = TRUE,
 #line 10787
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -26813,7 +26813,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10857
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10858
 F_TRAINER_FEMALE | 
 #line 10859
@@ -26821,7 +26821,7 @@ F_TRAINER_FEMALE |
 #line 10860
         .doubleBattle = TRUE,
 #line 10861
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -26869,7 +26869,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10878
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10879
 F_TRAINER_FEMALE | 
 #line 10880
@@ -26877,7 +26877,7 @@ F_TRAINER_FEMALE |
 #line 10881
         .doubleBattle = TRUE,
 #line 10882
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -26932,7 +26932,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10904
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10905
 F_TRAINER_FEMALE | 
 #line 10906
@@ -26940,7 +26940,7 @@ F_TRAINER_FEMALE |
 #line 10907
         .doubleBattle = TRUE,
 #line 10908
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -27104,7 +27104,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10977
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10978
 F_TRAINER_FEMALE | 
 #line 10979
@@ -27112,7 +27112,7 @@ F_TRAINER_FEMALE |
 #line 10980
         .doubleBattle = TRUE,
 #line 10981
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -27160,7 +27160,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10998
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 10999
 F_TRAINER_FEMALE | 
 #line 11000
@@ -27168,7 +27168,7 @@ F_TRAINER_FEMALE |
 #line 11001
         .doubleBattle = TRUE,
 #line 11002
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -27223,7 +27223,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 11024
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11025
 F_TRAINER_FEMALE | 
 #line 11026
@@ -27231,7 +27231,7 @@ F_TRAINER_FEMALE |
 #line 11027
         .doubleBattle = TRUE,
 #line 11028
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -27394,7 +27394,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 11098
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11099
 F_TRAINER_FEMALE | 
 #line 11100
@@ -27402,7 +27402,7 @@ F_TRAINER_FEMALE |
 #line 11101
         .doubleBattle = TRUE,
 #line 11102
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -27450,13 +27450,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11119
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11121
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11122
         .doubleBattle = TRUE,
 #line 11124
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 11123
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 6,
@@ -27539,13 +27539,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11153
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11155
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11156
         .doubleBattle = TRUE,
 #line 11157
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -27571,13 +27571,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 11166
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11168
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11169
         .doubleBattle = TRUE,
 #line 11170
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -27628,13 +27628,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11191
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11193
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11194
         .doubleBattle = TRUE,
 #line 11195
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -27715,13 +27715,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11224
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11226
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11227
         .doubleBattle = TRUE,
 #line 11228
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -27802,13 +27802,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11257
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11259
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11260
         .doubleBattle = TRUE,
 #line 11261
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -27889,13 +27889,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11290
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11292
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11293
         .doubleBattle = TRUE,
 #line 11294
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -27976,7 +27976,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11323
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11324
 F_TRAINER_FEMALE | 
 #line 11325
@@ -27984,7 +27984,7 @@ F_TRAINER_FEMALE |
 #line 11326
         .doubleBattle = TRUE,
 #line 11328
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 11327
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 5,
@@ -28056,7 +28056,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 11353
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11354
 F_TRAINER_FEMALE | 
 #line 11355
@@ -28064,7 +28064,7 @@ F_TRAINER_FEMALE |
 #line 11356
         .doubleBattle = TRUE,
 #line 11357
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -28101,13 +28101,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 11370
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11372
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 11373
         .doubleBattle = TRUE,
 #line 11374
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -28133,7 +28133,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11383
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11384
 F_TRAINER_FEMALE | 
 #line 11385
@@ -28141,7 +28141,7 @@ F_TRAINER_FEMALE |
 #line 11386
         .doubleBattle = TRUE,
 #line 11387
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -28222,7 +28222,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11416
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11417
 F_TRAINER_FEMALE | 
 #line 11418
@@ -28230,7 +28230,7 @@ F_TRAINER_FEMALE |
 #line 11419
         .doubleBattle = TRUE,
 #line 11420
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -28311,7 +28311,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11449
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11450
 F_TRAINER_FEMALE | 
 #line 11451
@@ -28319,7 +28319,7 @@ F_TRAINER_FEMALE |
 #line 11452
         .doubleBattle = TRUE,
 #line 11453
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -28400,7 +28400,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 11482
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11483
 F_TRAINER_FEMALE | 
 #line 11484
@@ -28408,7 +28408,7 @@ F_TRAINER_FEMALE |
 #line 11485
         .doubleBattle = TRUE,
 #line 11486
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -28489,13 +28489,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11515
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11517
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11518
         .doubleBattle = TRUE,
 #line 11519
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -28521,13 +28521,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11528
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11530
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11531
         .doubleBattle = TRUE,
 #line 11532
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -28575,13 +28575,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11549
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11551
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11552
         .doubleBattle = TRUE,
 #line 11553
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -28607,7 +28607,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11562
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11564
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11565
@@ -28639,13 +28639,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11575
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11577
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11578
         .doubleBattle = TRUE,
 #line 11579
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -28671,7 +28671,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11588
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11590
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11591
@@ -28703,13 +28703,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11601
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11603
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11604
         .doubleBattle = TRUE,
 #line 11605
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -28746,7 +28746,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11618
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11619
 F_TRAINER_FEMALE | 
 #line 11620
@@ -28791,7 +28791,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11635
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11636
 F_TRAINER_FEMALE | 
 #line 11637
@@ -28847,7 +28847,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11656
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11657
 F_TRAINER_FEMALE | 
 #line 11658
@@ -28855,7 +28855,7 @@ F_TRAINER_FEMALE |
 #line 11659
         .doubleBattle = TRUE,
 #line 11660
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -28892,7 +28892,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11673
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11674
 F_TRAINER_FEMALE | 
 #line 11675
@@ -28937,7 +28937,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11690
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11691
 F_TRAINER_FEMALE | 
 #line 11692
@@ -28945,7 +28945,7 @@ F_TRAINER_FEMALE |
 #line 11693
         .doubleBattle = TRUE,
 #line 11694
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -28982,7 +28982,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11707
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11708
 F_TRAINER_FEMALE | 
 #line 11709
@@ -29027,7 +29027,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 11724
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11725
 F_TRAINER_FEMALE | 
 #line 11726
@@ -29035,7 +29035,7 @@ F_TRAINER_FEMALE |
 #line 11727
         .doubleBattle = TRUE,
 #line 11728
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29072,13 +29072,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 11741
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11743
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11744
         .doubleBattle = TRUE,
 #line 11745
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29104,13 +29104,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 11754
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11756
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 11757
         .doubleBattle = TRUE,
 #line 11758
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29147,7 +29147,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 11771
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11772
 F_TRAINER_FEMALE | 
 #line 11773
@@ -29155,7 +29155,7 @@ F_TRAINER_FEMALE |
 #line 11774
         .doubleBattle = TRUE,
 #line 11775
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29192,7 +29192,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 11788
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11789
 F_TRAINER_FEMALE | 
 #line 11790
@@ -29200,7 +29200,7 @@ F_TRAINER_FEMALE |
 #line 11791
         .doubleBattle = TRUE,
 #line 11792
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29237,13 +29237,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 11805
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11807
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 11808
         .doubleBattle = TRUE,
 #line 11809
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29280,13 +29280,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11822
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11824
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 11825
         .doubleBattle = TRUE,
 #line 11826
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29323,13 +29323,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 11839
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11841
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11842
         .doubleBattle = TRUE,
 #line 11843
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29355,7 +29355,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 11852
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11853
 F_TRAINER_FEMALE | 
 #line 11854
@@ -29363,7 +29363,7 @@ F_TRAINER_FEMALE |
 #line 11855
         .doubleBattle = TRUE,
 #line 11856
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29389,13 +29389,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 11865
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11867
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 11868
         .doubleBattle = TRUE,
 #line 11869
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29421,7 +29421,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 11878
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11879
 F_TRAINER_FEMALE | 
 #line 11880
@@ -29429,7 +29429,7 @@ F_TRAINER_FEMALE |
 #line 11881
         .doubleBattle = TRUE,
 #line 11882
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29455,13 +29455,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 11891
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11893
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 11894
         .doubleBattle = TRUE,
 #line 11895
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29487,7 +29487,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 11904
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11905
 F_TRAINER_FEMALE | 
 #line 11906
@@ -29495,7 +29495,7 @@ F_TRAINER_FEMALE |
 #line 11907
         .doubleBattle = TRUE,
 #line 11908
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29543,13 +29543,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 11926
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11928
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 11929
         .doubleBattle = TRUE,
 #line 11930
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29575,13 +29575,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 11939
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11941
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 11942
         .doubleBattle = TRUE,
 #line 11943
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29607,13 +29607,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 11952
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11954
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 11955
         .doubleBattle = TRUE,
 #line 11956
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29639,7 +29639,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 11965
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11966
 F_TRAINER_FEMALE | 
 #line 11967
@@ -29647,7 +29647,7 @@ F_TRAINER_FEMALE |
 #line 11968
         .doubleBattle = TRUE,
 #line 11969
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29673,13 +29673,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 11978
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11980
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 11981
         .doubleBattle = TRUE,
 #line 11982
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29705,7 +29705,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 11991
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 11992
 F_TRAINER_FEMALE | 
 #line 11993
@@ -29713,7 +29713,7 @@ F_TRAINER_FEMALE |
 #line 11994
         .doubleBattle = TRUE,
 #line 11995
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29739,13 +29739,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 12004
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12006
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 12007
         .doubleBattle = TRUE,
 #line 12008
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29771,13 +29771,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 12017
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12019
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 12020
         .doubleBattle = TRUE,
 #line 12021
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29803,7 +29803,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 12030
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12031
 F_TRAINER_FEMALE | 
 #line 12032
@@ -29811,7 +29811,7 @@ F_TRAINER_FEMALE |
 #line 12033
         .doubleBattle = TRUE,
 #line 12034
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29848,13 +29848,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 12047
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12049
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12050
         .doubleBattle = TRUE,
 #line 12051
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29880,13 +29880,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 12060
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12062
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12063
         .doubleBattle = TRUE,
 #line 12064
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29912,13 +29912,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 12073
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12075
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12076
         .doubleBattle = TRUE,
 #line 12077
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29944,13 +29944,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 12086
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12088
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12089
         .doubleBattle = TRUE,
 #line 12090
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -29976,7 +29976,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 12099
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12100
 F_TRAINER_FEMALE | 
 #line 12101
@@ -29984,7 +29984,7 @@ F_TRAINER_FEMALE |
 #line 12102
         .doubleBattle = TRUE,
 #line 12103
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -30010,13 +30010,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12112
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12114
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12115
         .doubleBattle = TRUE,
 #line 12116
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -30193,13 +30193,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12193
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12195
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12196
         .doubleBattle = TRUE,
 #line 12197
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -30374,13 +30374,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 12274
         .trainerPic = TRAINER_PIC_EXPERT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12276
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 12277
         .doubleBattle = TRUE,
 #line 12278
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -30417,7 +30417,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 12291
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12292
 F_TRAINER_FEMALE | 
 #line 12293
@@ -30425,7 +30425,7 @@ F_TRAINER_FEMALE |
 #line 12294
         .doubleBattle = TRUE,
 #line 12295
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -30451,7 +30451,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 12304
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12305
 F_TRAINER_FEMALE | 
 #line 12306
@@ -30459,7 +30459,7 @@ F_TRAINER_FEMALE |
 #line 12307
         .doubleBattle = TRUE,
 #line 12308
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -30496,7 +30496,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
 #line 12321
         .trainerPic = TRAINER_PIC_COURTNEY_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12322
 F_TRAINER_FEMALE | 
 #line 12323
@@ -30504,7 +30504,7 @@ F_TRAINER_FEMALE |
 #line 12324
         .doubleBattle = TRUE,
 #line 12325
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -30563,7 +30563,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 12346
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12348
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 12349
@@ -30606,13 +30606,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12363
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12365
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12366
         .doubleBattle = TRUE,
 #line 12367
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -30789,7 +30789,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12444
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12445
 F_TRAINER_FEMALE | 
 #line 12446
@@ -30972,13 +30972,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
 #line 12525
         .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12527
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12528
         .doubleBattle = TRUE,
 #line 12529
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -31026,13 +31026,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
 #line 12546
         .trainerPic = TRAINER_PIC_MAXIE_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12548
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12549
         .doubleBattle = TRUE,
 #line 12550
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -31215,7 +31215,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12633
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12634
 F_TRAINER_FEMALE | 
 #line 12635
@@ -31223,7 +31223,7 @@ F_TRAINER_FEMALE |
 #line 12636
         .doubleBattle = TRUE,
 #line 12637
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31260,7 +31260,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12650
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12651
 F_TRAINER_FEMALE | 
 #line 12652
@@ -31268,7 +31268,7 @@ F_TRAINER_FEMALE |
 #line 12653
         .doubleBattle = TRUE,
 #line 12654
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31305,7 +31305,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12667
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12668
 F_TRAINER_FEMALE | 
 #line 12669
@@ -31313,7 +31313,7 @@ F_TRAINER_FEMALE |
 #line 12670
         .doubleBattle = TRUE,
 #line 12671
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -31339,7 +31339,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_WINSTRATE,
 #line 12680
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12681
 F_TRAINER_FEMALE | 
 #line 12682
@@ -31347,7 +31347,7 @@ F_TRAINER_FEMALE |
 #line 12683
         .doubleBattle = TRUE,
 #line 12684
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -31395,7 +31395,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12701
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12702
 F_TRAINER_FEMALE | 
 #line 12703
@@ -31403,7 +31403,7 @@ F_TRAINER_FEMALE |
 #line 12704
         .doubleBattle = TRUE,
 #line 12705
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31440,7 +31440,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12718
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12719
 F_TRAINER_FEMALE | 
 #line 12720
@@ -31448,7 +31448,7 @@ F_TRAINER_FEMALE |
 #line 12721
         .doubleBattle = TRUE,
 #line 12722
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31485,7 +31485,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12735
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12736
 F_TRAINER_FEMALE | 
 #line 12737
@@ -31493,7 +31493,7 @@ F_TRAINER_FEMALE |
 #line 12738
         .doubleBattle = TRUE,
 #line 12739
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31530,7 +31530,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12752
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12753
 F_TRAINER_FEMALE | 
 #line 12754
@@ -31538,7 +31538,7 @@ F_TRAINER_FEMALE |
 #line 12755
         .doubleBattle = TRUE,
 #line 12756
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -31586,7 +31586,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12773
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12774
 F_TRAINER_FEMALE | 
 #line 12775
@@ -31594,7 +31594,7 @@ F_TRAINER_FEMALE |
 #line 12776
         .doubleBattle = TRUE,
 #line 12777
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -31620,7 +31620,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12786
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12787
 F_TRAINER_FEMALE | 
 #line 12788
@@ -31628,7 +31628,7 @@ F_TRAINER_FEMALE |
 #line 12789
         .doubleBattle = TRUE,
 #line 12790
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -31676,7 +31676,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12807
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12808
 F_TRAINER_FEMALE | 
 #line 12809
@@ -31684,7 +31684,7 @@ F_TRAINER_FEMALE |
 #line 12810
         .doubleBattle = TRUE,
 #line 12811
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -31710,7 +31710,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LASS,
 #line 12820
         .trainerPic = TRAINER_PIC_LASS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12821
 F_TRAINER_FEMALE | 
 #line 12822
@@ -31718,7 +31718,7 @@ F_TRAINER_FEMALE |
 #line 12823
         .doubleBattle = TRUE,
 #line 12824
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31755,13 +31755,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12837
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12839
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12840
         .doubleBattle = TRUE,
 #line 12841
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31798,13 +31798,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12854
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12856
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12857
         .doubleBattle = TRUE,
 #line 12858
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -31863,13 +31863,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12879
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12881
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12882
         .doubleBattle = TRUE,
 #line 12883
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31906,13 +31906,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12896
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12898
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12899
         .doubleBattle = TRUE,
 #line 12900
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31949,13 +31949,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12913
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12915
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12916
         .doubleBattle = TRUE,
 #line 12917
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -31992,13 +31992,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12930
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12932
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12933
         .doubleBattle = TRUE,
 #line 12934
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -32024,13 +32024,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12943
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12945
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12946
         .doubleBattle = TRUE,
 #line 12947
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -32067,13 +32067,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12960
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12962
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12963
         .doubleBattle = TRUE,
 #line 12964
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -32099,13 +32099,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12973
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12975
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12976
         .doubleBattle = TRUE,
 #line 12977
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -32142,13 +32142,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 12990
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 12992
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12993
         .doubleBattle = TRUE,
 #line 12994
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -32196,13 +32196,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 13011
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13013
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13014
         .doubleBattle = TRUE,
 #line 13015
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -32261,13 +32261,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13036
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13038
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13039
         .doubleBattle = TRUE,
 #line 13040
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -32304,13 +32304,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13053
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13055
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13056
         .doubleBattle = TRUE,
 #line 13057
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -32358,13 +32358,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13074
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13076
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13077
         .doubleBattle = TRUE,
 #line 13078
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -32401,13 +32401,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13091
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13093
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13094
         .doubleBattle = TRUE,
 #line 13095
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -32444,13 +32444,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13108
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13110
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13111
         .doubleBattle = TRUE,
 #line 13112
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -32498,13 +32498,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13129
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13131
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13132
         .doubleBattle = TRUE,
 #line 13133
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -32530,13 +32530,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13142
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13144
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13145
         .doubleBattle = TRUE,
 #line 13146
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -32573,13 +32573,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13159
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13161
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13162
         .doubleBattle = TRUE,
 #line 13163
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -32610,13 +32610,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13174
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13176
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13177
         .doubleBattle = TRUE,
 #line 13178
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -32663,13 +32663,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13195
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13197
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13198
         .doubleBattle = TRUE,
 #line 13199
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -32717,13 +32717,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13216
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13218
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13219
         .doubleBattle = TRUE,
 #line 13220
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -32782,13 +32782,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13241
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13243
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13244
         .doubleBattle = TRUE,
 #line 13245
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -32847,13 +32847,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13266
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13268
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13269
         .doubleBattle = TRUE,
 #line 13270
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -32912,13 +32912,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13291
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13293
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13294
         .doubleBattle = TRUE,
 #line 13295
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -32977,13 +32977,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 13316
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13318
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13319
         .doubleBattle = TRUE,
 #line 13320
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33020,13 +33020,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 13333
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13335
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13336
         .doubleBattle = TRUE,
 #line 13337
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33063,13 +33063,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 13350
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13352
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13353
         .doubleBattle = TRUE,
 #line 13354
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33106,13 +33106,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 13367
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13369
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13370
         .doubleBattle = TRUE,
 #line 13371
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33149,13 +33149,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 13384
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13386
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13387
         .doubleBattle = TRUE,
 #line 13388
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33192,13 +33192,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 13401
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13403
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13404
         .doubleBattle = TRUE,
 #line 13405
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33235,13 +33235,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 13418
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13420
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13421
         .doubleBattle = TRUE,
 #line 13422
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33278,7 +33278,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 13435
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13436
 F_TRAINER_FEMALE | 
 #line 13437
@@ -33286,7 +33286,7 @@ F_TRAINER_FEMALE |
 #line 13438
         .doubleBattle = TRUE,
 #line 13439
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -33312,13 +33312,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 13448
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13450
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 13451
         .doubleBattle = TRUE,
 #line 13452
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -33351,7 +33351,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 13465
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13466
 F_TRAINER_FEMALE | 
 #line 13467
@@ -33359,7 +33359,7 @@ F_TRAINER_FEMALE |
 #line 13468
         .doubleBattle = TRUE,
 #line 13470
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 13469
         .startingStatus = STARTING_STATUS_ELECTRIC_TERRAIN,
         .partySize = 2,
@@ -33412,7 +33412,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 13491
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13492
 F_TRAINER_FEMALE | 
 #line 13493
@@ -33420,7 +33420,7 @@ F_TRAINER_FEMALE |
 #line 13494
         .doubleBattle = TRUE,
 #line 13495
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -33453,7 +33453,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 13508
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13510
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 13511
@@ -33510,7 +33510,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 13533
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13535
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 13536
@@ -33567,7 +33567,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 13558
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13560
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 13561
@@ -33624,13 +33624,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 13583
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13585
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13586
         .doubleBattle = TRUE,
 #line 13587
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33667,7 +33667,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 13600
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13601
 F_TRAINER_FEMALE | 
 #line 13602
@@ -33675,7 +33675,7 @@ F_TRAINER_FEMALE |
 #line 13603
         .doubleBattle = TRUE,
 #line 13604
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33723,13 +33723,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13621
         .trainerPic = TRAINER_PIC_WALLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13623
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13624
         .doubleBattle = TRUE,
 #line 13625
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -33868,13 +33868,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13691
         .trainerPic = TRAINER_PIC_WALLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13693
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13694
         .doubleBattle = TRUE,
 #line 13695
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -33979,13 +33979,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13740
         .trainerPic = TRAINER_PIC_WALLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13742
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13743
         .doubleBattle = TRUE,
 #line 13744
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -34090,13 +34090,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13789
         .trainerPic = TRAINER_PIC_WALLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13791
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13792
         .doubleBattle = TRUE,
 #line 13793
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -34201,13 +34201,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13838
         .trainerPic = TRAINER_PIC_WALLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13840
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13841
         .doubleBattle = TRUE,
 #line 13842
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -34312,13 +34312,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13887
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13889
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13890
         .doubleBattle = TRUE,
 #line 13891
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -34377,13 +34377,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13912
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13914
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13915
         .doubleBattle = TRUE,
 #line 13916
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -34442,13 +34442,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13937
         .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13939
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13940
         .doubleBattle = TRUE,
 #line 13941
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -34507,7 +34507,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13962
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13963
 F_TRAINER_FEMALE | 
 #line 13964
@@ -34515,7 +34515,7 @@ F_TRAINER_FEMALE |
 #line 13965
         .doubleBattle = TRUE,
 #line 13966
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -34574,7 +34574,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 13987
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13988
 F_TRAINER_FEMALE | 
 #line 13989
@@ -34582,7 +34582,7 @@ F_TRAINER_FEMALE |
 #line 13990
         .doubleBattle = TRUE,
 #line 13991
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -34641,7 +34641,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 14012
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14013
 F_TRAINER_FEMALE | 
 #line 14014
@@ -34649,7 +34649,7 @@ F_TRAINER_FEMALE |
 #line 14015
         .doubleBattle = TRUE,
 #line 14016
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -34708,13 +34708,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 14037
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14039
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14040
         .doubleBattle = TRUE,
 #line 14041
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -34762,13 +34762,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 14058
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14060
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14061
         .doubleBattle = TRUE,
 #line 14062
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -34805,13 +34805,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 14075
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14077
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14078
         .doubleBattle = TRUE,
 #line 14079
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -34859,7 +34859,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 14096
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14097
 F_TRAINER_FEMALE | 
 #line 14098
@@ -34867,7 +34867,7 @@ F_TRAINER_FEMALE |
 #line 14099
         .doubleBattle = TRUE,
 #line 14100
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -34904,13 +34904,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 14113
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14115
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 14116
         .doubleBattle = TRUE,
 #line 14117
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -34947,13 +34947,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 14130
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14132
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14133
         .doubleBattle = TRUE,
 #line 14134
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -34979,13 +34979,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 14143
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14145
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14146
         .doubleBattle = TRUE,
 #line 14147
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -35033,13 +35033,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 14164
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14166
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 14167
         .doubleBattle = TRUE,
 #line 14168
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35076,13 +35076,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 14181
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14183
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14184
         .doubleBattle = TRUE,
 #line 14185
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35119,7 +35119,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 14198
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14199
 F_TRAINER_FEMALE | 
 #line 14200
@@ -35127,7 +35127,7 @@ F_TRAINER_FEMALE |
 #line 14201
         .doubleBattle = TRUE,
 #line 14202
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -35153,13 +35153,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 14211
         .trainerPic = TRAINER_PIC_TWINS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14213
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 14214
         .doubleBattle = TRUE,
 #line 14215
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35196,13 +35196,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 14228
         .trainerPic = TRAINER_PIC_SR_AND_JR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14230
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 14231
         .doubleBattle = TRUE,
 #line 14232
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35253,13 +35253,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 14253
         .trainerPic = TRAINER_PIC_SR_AND_JR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14255
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 14256
         .doubleBattle = TRUE,
 #line 14257
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35310,13 +35310,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 14278
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14280
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 14281
         .doubleBattle = TRUE,
 #line 14282
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35367,13 +35367,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 14303
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14305
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14306
         .doubleBattle = TRUE,
 #line 14307
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35424,13 +35424,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 14328
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14330
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14331
         .doubleBattle = TRUE,
 #line 14332
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35481,13 +35481,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 14353
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14355
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14356
         .doubleBattle = TRUE,
 #line 14357
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35538,7 +35538,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 14378
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14380
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14381
@@ -35595,13 +35595,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 14403
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14405
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14406
         .doubleBattle = TRUE,
 #line 14407
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35652,13 +35652,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 14428
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14430
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14431
         .doubleBattle = TRUE,
 #line 14432
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35695,13 +35695,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 14445
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14447
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14448
         .doubleBattle = TRUE,
 #line 14449
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35738,13 +35738,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 14462
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14464
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14465
         .doubleBattle = TRUE,
 #line 14466
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35781,13 +35781,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 14479
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14481
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14482
         .doubleBattle = TRUE,
 #line 14483
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35824,13 +35824,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 14496
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14498
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14499
         .doubleBattle = TRUE,
 #line 14500
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35867,13 +35867,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 14513
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14515
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14516
         .doubleBattle = TRUE,
 #line 14517
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35910,13 +35910,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 14530
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14532
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14533
         .doubleBattle = TRUE,
 #line 14534
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -35953,13 +35953,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 14547
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14549
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14550
         .doubleBattle = TRUE,
 #line 14551
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -36018,13 +36018,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 14572
         .trainerPic = TRAINER_PIC_RICH_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14574
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 14575
         .doubleBattle = TRUE,
 #line 14576
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36063,7 +36063,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LADY,
 #line 14589
         .trainerPic = TRAINER_PIC_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14590
 F_TRAINER_FEMALE | 
 #line 14591
@@ -36071,7 +36071,7 @@ F_TRAINER_FEMALE |
 #line 14592
         .doubleBattle = TRUE,
 #line 14593
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36110,13 +36110,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 14606
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14608
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14609
         .doubleBattle = TRUE,
 #line 14610
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36142,7 +36142,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 14619
         .trainerPic = TRAINER_PIC_TUBER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14620
 F_TRAINER_FEMALE | 
 #line 14621
@@ -36150,7 +36150,7 @@ F_TRAINER_FEMALE |
 #line 14622
         .doubleBattle = TRUE,
 #line 14623
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36176,13 +36176,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 14632
         .trainerPic = TRAINER_PIC_TUBER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14634
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 14635
         .doubleBattle = TRUE,
 #line 14636
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36219,13 +36219,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 14649
         .trainerPic = TRAINER_PIC_POKEFAN_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14651
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 14652
         .doubleBattle = TRUE,
 #line 14653
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36266,13 +36266,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 14666
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14668
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14669
         .doubleBattle = TRUE,
 #line 14670
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36309,7 +36309,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 14683
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14684
 F_TRAINER_FEMALE | 
 #line 14685
@@ -36317,7 +36317,7 @@ F_TRAINER_FEMALE |
 #line 14686
         .doubleBattle = TRUE,
 #line 14687
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36343,13 +36343,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 14696
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14698
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14699
         .doubleBattle = TRUE,
 #line 14700
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36375,13 +36375,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 14709
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14711
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14712
         .doubleBattle = TRUE,
 #line 14713
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36407,13 +36407,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 14722
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14724
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 14725
         .doubleBattle = TRUE,
 #line 14726
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36439,7 +36439,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 14735
         .trainerPic = TRAINER_PIC_AROMA_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14736
 F_TRAINER_FEMALE | 
 #line 14737
@@ -36447,7 +36447,7 @@ F_TRAINER_FEMALE |
 #line 14738
         .doubleBattle = TRUE,
 #line 14739
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36473,7 +36473,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 14748
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14749
 F_TRAINER_FEMALE | 
 #line 14750
@@ -36481,7 +36481,7 @@ F_TRAINER_FEMALE |
 #line 14751
         .doubleBattle = TRUE,
 #line 14752
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36507,13 +36507,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 14761
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14763
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14764
         .doubleBattle = TRUE,
 #line 14765
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36539,7 +36539,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 14774
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14775
 F_TRAINER_FEMALE | 
 #line 14776
@@ -36547,7 +36547,7 @@ F_TRAINER_FEMALE |
 #line 14777
         .doubleBattle = TRUE,
 #line 14778
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36584,13 +36584,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 14791
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14793
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 14794
         .doubleBattle = TRUE,
 #line 14795
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36627,13 +36627,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 14808
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14810
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 14811
         .doubleBattle = TRUE,
 #line 14812
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36670,13 +36670,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 14825
         .trainerPic = TRAINER_PIC_POKEMANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14827
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 14828
         .doubleBattle = TRUE,
 #line 14829
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36713,7 +36713,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 14842
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14843
 F_TRAINER_FEMALE | 
 #line 14844
@@ -36721,7 +36721,7 @@ F_TRAINER_FEMALE |
 #line 14845
         .doubleBattle = TRUE,
 #line 14846
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -36758,13 +36758,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 14859
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14861
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14862
         .doubleBattle = TRUE,
 #line 14863
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36790,7 +36790,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 14872
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14873
 F_TRAINER_FEMALE | 
 #line 14874
@@ -36798,7 +36798,7 @@ F_TRAINER_FEMALE |
 #line 14875
         .doubleBattle = TRUE,
 #line 14876
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36824,13 +36824,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 14885
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14887
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 14888
         .doubleBattle = TRUE,
 #line 14889
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -36878,13 +36878,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 14906
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14908
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14909
         .doubleBattle = TRUE,
 #line 14910
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36910,13 +36910,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 14919
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14921
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14922
         .doubleBattle = TRUE,
 #line 14923
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36942,13 +36942,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 14932
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14934
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14935
         .doubleBattle = TRUE,
 #line 14936
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -36974,13 +36974,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 14945
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14947
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14948
         .doubleBattle = TRUE,
 #line 14949
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -37017,13 +37017,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 14962
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14964
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14965
         .doubleBattle = TRUE,
 #line 14966
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -37060,13 +37060,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 14979
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14981
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14982
         .doubleBattle = TRUE,
 #line 14983
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37092,13 +37092,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 14992
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 14994
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14995
         .doubleBattle = TRUE,
 #line 14996
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37124,13 +37124,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 15005
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15007
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15008
         .doubleBattle = TRUE,
 #line 15009
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37156,13 +37156,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 15018
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15020
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15021
         .doubleBattle = TRUE,
 #line 15022
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37188,13 +37188,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 15031
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15033
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15034
         .doubleBattle = TRUE,
 #line 15035
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37220,13 +37220,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 15044
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15046
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15047
         .doubleBattle = TRUE,
 #line 15048
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37252,13 +37252,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 15057
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15059
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15060
         .doubleBattle = TRUE,
 #line 15061
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37284,13 +37284,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 15070
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15072
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15073
         .doubleBattle = TRUE,
 #line 15074
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37316,7 +37316,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 15083
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15084
 F_TRAINER_FEMALE | 
 #line 15085
@@ -37324,7 +37324,7 @@ F_TRAINER_FEMALE |
 #line 15086
         .doubleBattle = TRUE,
 #line 15087
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37350,7 +37350,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 15096
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15097
 F_TRAINER_FEMALE | 
 #line 15098
@@ -37358,7 +37358,7 @@ F_TRAINER_FEMALE |
 #line 15099
         .doubleBattle = TRUE,
 #line 15100
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37384,7 +37384,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 15109
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15110
 F_TRAINER_FEMALE | 
 #line 15111
@@ -37392,7 +37392,7 @@ F_TRAINER_FEMALE |
 #line 15112
         .doubleBattle = TRUE,
 #line 15113
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37418,13 +37418,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
 #line 15122
         .trainerPic = TRAINER_PIC_TABITHA_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15124
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15125
         .doubleBattle = TRUE,
 #line 15126
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -37483,7 +37483,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 15147
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15148
 F_TRAINER_FEMALE | 
 #line 15149
@@ -37491,7 +37491,7 @@ F_TRAINER_FEMALE |
 #line 15150
         .doubleBattle = TRUE,
 #line 15151
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -37528,13 +37528,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
 #line 15164
         .trainerPic = TRAINER_PIC_MAXIE_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15166
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15167
         .doubleBattle = TRUE,
 #line 15168
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -37582,13 +37582,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 15185
         .trainerPic = TRAINER_PIC_SWIMMER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15187
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 15188
         .doubleBattle = TRUE,
 #line 15189
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37614,7 +37614,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 15198
         .trainerPic = TRAINER_PIC_SWIMMER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15199
 F_TRAINER_FEMALE | 
 #line 15200
@@ -37622,7 +37622,7 @@ F_TRAINER_FEMALE |
 #line 15201
         .doubleBattle = TRUE,
 #line 15202
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37648,13 +37648,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 15211
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15213
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15214
         .doubleBattle = TRUE,
 #line 15215
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -37691,13 +37691,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 15228
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15230
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 15231
         .doubleBattle = TRUE,
 #line 15232
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -37734,13 +37734,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 15245
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15247
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 15248
         .doubleBattle = TRUE,
 #line 15249
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -37766,13 +37766,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 15258
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15260
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 15261
         .doubleBattle = TRUE,
 #line 15262
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -37820,7 +37820,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 15279
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15280
 F_TRAINER_FEMALE | 
 #line 15281
@@ -37828,7 +37828,7 @@ F_TRAINER_FEMALE |
 #line 15282
         .doubleBattle = TRUE,
 #line 15283
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -37876,13 +37876,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 15300
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15302
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 15303
         .doubleBattle = TRUE,
 #line 15304
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -37919,7 +37919,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 15317
         .trainerPic = TRAINER_PIC_PICNICKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15318
 F_TRAINER_FEMALE | 
 #line 15319
@@ -37927,7 +37927,7 @@ F_TRAINER_FEMALE |
 #line 15320
         .doubleBattle = TRUE,
 #line 15321
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -37964,13 +37964,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 15334
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15336
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15337
         .doubleBattle = TRUE,
 #line 15338
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38007,13 +38007,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 15351
         .trainerPic = TRAINER_PIC_CAMPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15353
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 15354
         .doubleBattle = TRUE,
 #line 15355
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38050,13 +38050,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 15368
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15370
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15371
         .doubleBattle = TRUE,
 #line 15372
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38093,7 +38093,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 15385
         .trainerPic = TRAINER_PIC_AROMA_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15386
 F_TRAINER_FEMALE | 
 #line 15387
@@ -38101,7 +38101,7 @@ F_TRAINER_FEMALE |
 #line 15388
         .doubleBattle = TRUE,
 #line 15389
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38138,7 +38138,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 15402
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15403
 F_TRAINER_FEMALE | 
 #line 15404
@@ -38146,7 +38146,7 @@ F_TRAINER_FEMALE |
 #line 15405
         .doubleBattle = TRUE,
 #line 15406
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38183,13 +38183,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 15419
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15421
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 15422
         .doubleBattle = TRUE,
 #line 15423
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38226,7 +38226,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 15436
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15437
 F_TRAINER_FEMALE | 
 #line 15438
@@ -38234,7 +38234,7 @@ F_TRAINER_FEMALE |
 #line 15439
         .doubleBattle = TRUE,
 #line 15440
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38271,7 +38271,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 15453
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15454
 F_TRAINER_FEMALE | 
 #line 15455
@@ -38279,7 +38279,7 @@ F_TRAINER_FEMALE |
 #line 15456
         .doubleBattle = TRUE,
 #line 15457
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38316,7 +38316,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 15470
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15471
 F_TRAINER_FEMALE | 
 #line 15472
@@ -38324,7 +38324,7 @@ F_TRAINER_FEMALE |
 #line 15473
         .doubleBattle = TRUE,
 #line 15474
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38361,13 +38361,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 15487
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15489
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15490
         .doubleBattle = TRUE,
 #line 15491
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38404,13 +38404,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 15504
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15506
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 15507
         .doubleBattle = TRUE,
 #line 15508
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38447,7 +38447,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 15521
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15522
 F_TRAINER_FEMALE | 
 #line 15523
@@ -38455,7 +38455,7 @@ F_TRAINER_FEMALE |
 #line 15524
         .doubleBattle = TRUE,
 #line 15526
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 15525
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 1,
@@ -38483,7 +38483,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 15535
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15536
 F_TRAINER_FEMALE | 
 #line 15537
@@ -38491,7 +38491,7 @@ F_TRAINER_FEMALE |
 #line 15538
         .doubleBattle = TRUE,
 #line 15540
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 15539
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 1,
@@ -38519,7 +38519,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 15549
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15550
 F_TRAINER_FEMALE | 
 #line 15551
@@ -38527,7 +38527,7 @@ F_TRAINER_FEMALE |
 #line 15552
         .doubleBattle = TRUE,
 #line 15554
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 15553
         .startingStatus = STARTING_STATUS_GRASSY_TERRAIN,
         .partySize = 1,
@@ -38555,7 +38555,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 15563
         .trainerPic = TRAINER_PIC_EXPERT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15564
 F_TRAINER_FEMALE | 
 #line 15565
@@ -38563,7 +38563,7 @@ F_TRAINER_FEMALE |
 #line 15566
         .doubleBattle = TRUE,
 #line 15567
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38600,13 +38600,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 15580
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15582
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 15583
         .doubleBattle = TRUE,
 #line 15584
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -38632,13 +38632,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 15593
         .trainerPic = TRAINER_PIC_KINDLER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15595
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15596
         .doubleBattle = TRUE,
 #line 15597
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38675,7 +38675,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 15610
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15611
 F_TRAINER_FEMALE | 
 #line 15612
@@ -38683,7 +38683,7 @@ F_TRAINER_FEMALE |
 #line 15613
         .doubleBattle = TRUE,
 #line 15614
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -38709,13 +38709,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 15623
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15625
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 15626
         .doubleBattle = TRUE,
 #line 15627
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -38747,7 +38747,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 15639
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15640
 F_TRAINER_FEMALE | 
 #line 15641
@@ -38755,7 +38755,7 @@ F_TRAINER_FEMALE |
 #line 15642
         .doubleBattle = TRUE,
 #line 15643
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38792,13 +38792,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 15656
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15658
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 15659
         .doubleBattle = TRUE,
 #line 15660
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -38835,13 +38835,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 15673
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15675
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 15676
         .doubleBattle = TRUE,
 #line 15677
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -38922,7 +38922,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 15706
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15707
 F_TRAINER_FEMALE | 
 #line 15708
@@ -38930,7 +38930,7 @@ F_TRAINER_FEMALE |
 #line 15709
         .doubleBattle = TRUE,
 #line 15710
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -39011,7 +39011,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 15739
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15740
 F_TRAINER_FEMALE | 
 #line 15741
@@ -39019,7 +39019,7 @@ F_TRAINER_FEMALE |
 #line 15742
         .doubleBattle = TRUE,
 #line 15743
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -39056,7 +39056,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 15756
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15757
 F_TRAINER_FEMALE | 
 #line 15758
@@ -39064,7 +39064,7 @@ F_TRAINER_FEMALE |
 #line 15759
         .doubleBattle = TRUE,
 #line 15760
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -39241,7 +39241,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 15837
         .trainerPic = TRAINER_PIC_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15838
 F_TRAINER_FEMALE | 
 #line 15839
@@ -39249,7 +39249,7 @@ F_TRAINER_FEMALE |
 #line 15840
         .doubleBattle = TRUE,
 #line 15841
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -39426,7 +39426,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15918
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15919
 F_TRAINER_FEMALE | 
 #line 15920
@@ -39434,7 +39434,7 @@ F_TRAINER_FEMALE |
 #line 15921
         .doubleBattle = TRUE,
 #line 15922
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -39525,7 +39525,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15959
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 15960
 F_TRAINER_FEMALE | 
 #line 15961
@@ -39533,7 +39533,7 @@ F_TRAINER_FEMALE |
 #line 15962
         .doubleBattle = TRUE,
 #line 15963
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -39642,7 +39642,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16008
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16009
 F_TRAINER_FEMALE | 
 #line 16010
@@ -39650,7 +39650,7 @@ F_TRAINER_FEMALE |
 #line 16011
         .doubleBattle = TRUE,
 #line 16012
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -39759,7 +39759,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16057
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16058
 F_TRAINER_FEMALE | 
 #line 16059
@@ -39767,7 +39767,7 @@ F_TRAINER_FEMALE |
 #line 16060
         .doubleBattle = TRUE,
 #line 16061
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -39894,13 +39894,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16114
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16116
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16117
         .doubleBattle = TRUE,
 #line 16118
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -39991,13 +39991,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16155
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16157
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16158
         .doubleBattle = TRUE,
 #line 16159
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -40088,13 +40088,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16196
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16198
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16199
         .doubleBattle = TRUE,
 #line 16200
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -40203,13 +40203,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16245
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16247
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16248
         .doubleBattle = TRUE,
 #line 16249
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -40336,13 +40336,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16302
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16304
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16305
         .doubleBattle = TRUE,
 #line 16306
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -40433,13 +40433,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16343
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16345
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16346
         .doubleBattle = TRUE,
 #line 16347
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -40548,13 +40548,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16392
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16394
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16395
         .doubleBattle = TRUE,
 #line 16396
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -40663,13 +40663,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16441
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16443
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16444
         .doubleBattle = TRUE,
 #line 16445
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -40796,7 +40796,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16498
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16499
 F_TRAINER_FEMALE | 
 #line 16500
@@ -40804,7 +40804,7 @@ F_TRAINER_FEMALE |
 #line 16501
         .doubleBattle = TRUE,
 #line 16502
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -40897,7 +40897,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16539
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16540
 F_TRAINER_FEMALE | 
 #line 16541
@@ -40905,7 +40905,7 @@ F_TRAINER_FEMALE |
 #line 16542
         .doubleBattle = TRUE,
 #line 16543
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -41016,7 +41016,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16588
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16589
 F_TRAINER_FEMALE | 
 #line 16590
@@ -41024,7 +41024,7 @@ F_TRAINER_FEMALE |
 #line 16591
         .doubleBattle = TRUE,
 #line 16592
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -41153,7 +41153,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16645
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16646
 F_TRAINER_FEMALE | 
 #line 16647
@@ -41161,7 +41161,7 @@ F_TRAINER_FEMALE |
 #line 16648
         .doubleBattle = TRUE,
 #line 16649
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -41290,13 +41290,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16702
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16704
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16705
         .doubleBattle = TRUE,
 #line 16706
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -41387,13 +41387,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16743
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16745
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16746
         .doubleBattle = TRUE,
 #line 16747
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -41502,13 +41502,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16792
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16794
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16795
         .doubleBattle = TRUE,
 #line 16796
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -41617,13 +41617,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16841
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16843
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16844
         .doubleBattle = TRUE,
 #line 16845
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -41750,7 +41750,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16898
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16899
 F_TRAINER_FEMALE | 
 #line 16900
@@ -41758,7 +41758,7 @@ F_TRAINER_FEMALE |
 #line 16901
         .doubleBattle = TRUE,
 #line 16902
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -41867,7 +41867,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 16947
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 16948
 F_TRAINER_FEMALE | 
 #line 16949
@@ -41875,7 +41875,7 @@ F_TRAINER_FEMALE |
 #line 16950
         .doubleBattle = TRUE,
 #line 16951
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -42002,7 +42002,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17004
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17005
 F_TRAINER_FEMALE | 
 #line 17006
@@ -42010,7 +42010,7 @@ F_TRAINER_FEMALE |
 #line 17007
         .doubleBattle = TRUE,
 #line 17008
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -42137,7 +42137,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17061
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17062
 F_TRAINER_FEMALE | 
 #line 17063
@@ -42145,7 +42145,7 @@ F_TRAINER_FEMALE |
 #line 17064
         .doubleBattle = TRUE,
 #line 17065
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_RISKY,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -42272,13 +42272,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17118
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17120
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 17121
         .doubleBattle = TRUE,
 #line 17122
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -42389,13 +42389,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17167
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17169
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 17170
         .doubleBattle = TRUE,
 #line 17171
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -42524,13 +42524,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17224
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17226
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 17227
         .doubleBattle = TRUE,
 #line 17228
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -42659,13 +42659,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17281
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17283
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 17284
         .doubleBattle = TRUE,
 #line 17285
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -42794,13 +42794,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17338
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17340
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17341
         .doubleBattle = TRUE,
 #line 17342
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -42909,13 +42909,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17387
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17389
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17390
         .doubleBattle = TRUE,
 #line 17391
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -43024,13 +43024,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17436
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17438
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17439
         .doubleBattle = TRUE,
 #line 17440
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -43157,13 +43157,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17493
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17495
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17496
         .doubleBattle = TRUE,
 #line 17497
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -43290,13 +43290,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 17550
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17552
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 17553
         .doubleBattle = TRUE,
 #line 17555
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 17554
         .startingStatus = STARTING_STATUS_ELECTRIC_TERRAIN,
         .partySize = 2,
@@ -43347,13 +43347,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 17574
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17576
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 17577
         .doubleBattle = TRUE,
 #line 17578
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -43379,13 +43379,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 17587
         .trainerPic = TRAINER_PIC_STEVEN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17589
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17590
         .doubleBattle = TRUE,
 #line 17591
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -43510,7 +43510,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SALON_MAIDEN,
 #line 17644
         .trainerPic = TRAINER_PIC_SALON_MAIDEN_ANABEL,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17645
 F_TRAINER_FEMALE | 
 #line 17646
@@ -43518,7 +43518,7 @@ F_TRAINER_FEMALE |
 #line 17647
         .doubleBattle = TRUE,
 #line 17648
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -43544,13 +43544,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_DOME_ACE,
 #line 17657
         .trainerPic = TRAINER_PIC_DOME_ACE_TUCKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17659
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17660
         .doubleBattle = TRUE,
 #line 17661
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -43576,13 +43576,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PALACE_MAVEN,
 #line 17670
         .trainerPic = TRAINER_PIC_PALACE_MAVEN_SPENSER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17672
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17673
         .doubleBattle = TRUE,
 #line 17674
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -43608,7 +43608,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_ARENA_TYCOON,
 #line 17683
         .trainerPic = TRAINER_PIC_ARENA_TYCOON_GRETA,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17684
 F_TRAINER_FEMALE | 
 #line 17685
@@ -43616,7 +43616,7 @@ F_TRAINER_FEMALE |
 #line 17686
         .doubleBattle = TRUE,
 #line 17687
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -43642,13 +43642,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_FACTORY_HEAD,
 #line 17696
         .trainerPic = TRAINER_PIC_FACTORY_HEAD_NOLAND,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17698
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17699
         .doubleBattle = TRUE,
 #line 17700
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -43674,7 +43674,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PIKE_QUEEN,
 #line 17709
         .trainerPic = TRAINER_PIC_PIKE_QUEEN_LUCY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17710
 F_TRAINER_FEMALE | 
 #line 17711
@@ -43682,7 +43682,7 @@ F_TRAINER_FEMALE |
 #line 17712
         .doubleBattle = TRUE,
 #line 17713
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -43708,13 +43708,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PYRAMID_KING,
 #line 17722
         .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17724
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17725
         .doubleBattle = TRUE,
 #line 17726
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -43740,13 +43740,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
 #line 17735
         .trainerPic = TRAINER_PIC_TABITHA_ORAS,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17737
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 17738
         .doubleBattle = TRUE,
 #line 17739
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -43923,13 +43923,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 17812
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17814
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 17815
         .doubleBattle = TRUE,
 #line 17816
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -43977,7 +43977,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 17833
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17834
 F_TRAINER_FEMALE | 
 #line 17835
@@ -43985,7 +43985,7 @@ F_TRAINER_FEMALE |
 #line 17836
         .doubleBattle = TRUE,
 #line 17837
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44033,13 +44033,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 17854
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17856
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 17857
         .doubleBattle = TRUE,
 #line 17858
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44087,13 +44087,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 17875
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17877
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17878
         .doubleBattle = TRUE,
 #line 17879
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44141,13 +44141,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 17896
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17898
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17899
         .doubleBattle = TRUE,
 #line 17900
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44195,13 +44195,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 17917
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17919
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17920
         .doubleBattle = TRUE,
 #line 17921
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44249,13 +44249,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 17938
         .trainerPic = TRAINER_PIC_SAILOR,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17940
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17941
         .doubleBattle = TRUE,
 #line 17942
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44303,13 +44303,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 17959
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17961
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 17962
         .doubleBattle = TRUE,
 #line 17963
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -44346,13 +44346,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 17976
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17978
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 17979
         .doubleBattle = TRUE,
 #line 17980
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44400,13 +44400,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 17997
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 17999
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 18000
         .doubleBattle = TRUE,
 #line 18001
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44454,13 +44454,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 18018
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18020
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 18021
         .doubleBattle = TRUE,
 #line 18022
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44508,13 +44508,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 18039
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18041
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18042
         .doubleBattle = TRUE,
 #line 18043
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -44551,13 +44551,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 18056
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18058
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18059
         .doubleBattle = TRUE,
 #line 18060
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44605,13 +44605,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 18077
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18079
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18080
         .doubleBattle = TRUE,
 #line 18081
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44659,13 +44659,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 18098
         .trainerPic = TRAINER_PIC_BLACK_BELT,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18100
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18101
         .doubleBattle = TRUE,
 #line 18102
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44713,7 +44713,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 18119
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18120
 F_TRAINER_FEMALE | 
 #line 18121
@@ -44721,7 +44721,7 @@ F_TRAINER_FEMALE |
 #line 18122
         .doubleBattle = TRUE,
 #line 18123
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -44758,7 +44758,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 18136
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18137
 F_TRAINER_FEMALE | 
 #line 18138
@@ -44766,7 +44766,7 @@ F_TRAINER_FEMALE |
 #line 18139
         .doubleBattle = TRUE,
 #line 18140
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44814,7 +44814,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 18157
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18158
 F_TRAINER_FEMALE | 
 #line 18159
@@ -44822,7 +44822,7 @@ F_TRAINER_FEMALE |
 #line 18160
         .doubleBattle = TRUE,
 #line 18161
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44870,7 +44870,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 18178
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18179
 F_TRAINER_FEMALE | 
 #line 18180
@@ -44878,7 +44878,7 @@ F_TRAINER_FEMALE |
 #line 18181
         .doubleBattle = TRUE,
 #line 18182
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44926,13 +44926,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 18199
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18201
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18202
         .doubleBattle = TRUE,
 #line 18203
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44980,13 +44980,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 18220
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18222
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18223
         .doubleBattle = TRUE,
 #line 18224
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -45034,13 +45034,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 18241
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18243
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18244
         .doubleBattle = TRUE,
 #line 18245
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -45088,13 +45088,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 18262
         .trainerPic = TRAINER_PIC_GUITARIST,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18264
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18265
         .doubleBattle = TRUE,
 #line 18266
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -45142,13 +45142,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 18283
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18285
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 18286
         .doubleBattle = TRUE,
 #line 18287
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -45185,13 +45185,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 18300
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18302
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 18303
         .doubleBattle = TRUE,
 #line 18304
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -45239,13 +45239,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 18321
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18323
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 18324
         .doubleBattle = TRUE,
 #line 18325
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -45293,13 +45293,13 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 18342
         .trainerPic = TRAINER_PIC_HIKER,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18344
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 18345
         .doubleBattle = TRUE,
 #line 18346
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -45347,7 +45347,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 18363
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18364
 F_TRAINER_FEMALE | 
 #line 18365
@@ -45355,7 +45355,7 @@ F_TRAINER_FEMALE |
 #line 18366
         .doubleBattle = TRUE,
 #line 18367
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -45436,7 +45436,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 18396
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18397
 F_TRAINER_FEMALE | 
 #line 18398
@@ -45444,7 +45444,7 @@ F_TRAINER_FEMALE |
 #line 18399
         .doubleBattle = TRUE,
 #line 18400
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -45525,7 +45525,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 18429
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18430
 F_TRAINER_FEMALE | 
 #line 18431
@@ -45533,7 +45533,7 @@ F_TRAINER_FEMALE |
 #line 18432
         .doubleBattle = TRUE,
 #line 18433
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -45614,7 +45614,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 18462
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18463
 F_TRAINER_FEMALE | 
 #line 18464
@@ -45622,7 +45622,7 @@ F_TRAINER_FEMALE |
 #line 18465
         .doubleBattle = TRUE,
 #line 18466
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -45703,7 +45703,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 18495
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18496
 F_TRAINER_FEMALE | 
 #line 18497
@@ -45711,7 +45711,7 @@ F_TRAINER_FEMALE |
 #line 18498
         .doubleBattle = TRUE,
 #line 18499
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -45748,7 +45748,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 18512
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18513
 F_TRAINER_FEMALE | 
 #line 18514
@@ -45756,7 +45756,7 @@ F_TRAINER_FEMALE |
 #line 18515
         .doubleBattle = TRUE,
 #line 18516
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -45804,7 +45804,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 18533
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18534
 F_TRAINER_FEMALE | 
 #line 18535
@@ -45812,7 +45812,7 @@ F_TRAINER_FEMALE |
 #line 18536
         .doubleBattle = TRUE,
 #line 18537
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -45860,7 +45860,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 18554
         .trainerPic = TRAINER_PIC_BEAUTY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18555
 F_TRAINER_FEMALE | 
 #line 18556
@@ -45868,7 +45868,7 @@ F_TRAINER_FEMALE |
 #line 18557
         .doubleBattle = TRUE,
 #line 18558
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -45916,7 +45916,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 18575
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18576
 F_TRAINER_FEMALE | 
 #line 18577
@@ -45948,7 +45948,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 18587
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18589
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18590
@@ -45989,7 +45989,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 18603
         .trainerPic = TRAINER_PIC_GENTLEMAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18605
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 18606
@@ -46019,7 +46019,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 18615
         .trainerPic = TRAINER_PIC_RED,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18617
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 18618
@@ -46049,7 +46049,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 18627
         .trainerPic = TRAINER_PIC_LEAF,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18628
 F_TRAINER_FEMALE | 
 #line 18629
@@ -46081,7 +46081,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
 #line 18639
         .trainerPic = TRAINER_PIC_RS_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18641
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 18642
@@ -46111,7 +46111,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
 #line 18651
         .trainerPic = TRAINER_PIC_RS_MAY,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 18652
 F_TRAINER_FEMALE | 
 #line 18653
