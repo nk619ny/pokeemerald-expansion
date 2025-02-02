@@ -20119,16 +20119,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     [MOVE_BLAZING_TORQUE] =
     {
         .name = COMPOUND_STRING("Blazing Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Powerful spin while aflame.\n"
+            "May burn the target."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 95 : 80,
         .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .mirrorMoveBanned = TRUE,
+        /*.mirrorMoveBanned = TRUE,
         .meFirstBanned = TRUE,
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
@@ -20137,7 +20139,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .instructBanned = TRUE,
         .encoreBanned = TRUE,
         .assistBanned = TRUE,
-        .sketchBanned = (B_SKETCH_BANS >= GEN_9),
+        .sketchBanned = (B_SKETCH_BANS >= GEN_9), */
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_BURN,
             .chance = 30,
@@ -20148,16 +20150,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     [MOVE_WICKED_TORQUE] =
     {
         .name = COMPOUND_STRING("Wicked Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Powerful spin with malice.\n"
+            "May put the target asleep."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 95 : 80,
         .type = TYPE_DARK,
         .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .mirrorMoveBanned = TRUE,
+        /*.mirrorMoveBanned = TRUE,
         .meFirstBanned = TRUE,
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
@@ -20166,7 +20170,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .instructBanned = TRUE,
         .encoreBanned = TRUE,
         .assistBanned = TRUE,
-        .sketchBanned = (B_SKETCH_BANS >= GEN_9),
+        .sketchBanned = (B_SKETCH_BANS >= GEN_9), */
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SLEEP,
             .chance = 10,
@@ -20177,16 +20181,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     [MOVE_NOXIOUS_TORQUE] =
     {
         .name = COMPOUND_STRING("Noxious Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Powerful spin with fumes.\n"
+            "May poison the target."),
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 95 : 100,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .mirrorMoveBanned = TRUE,
+        /*.mirrorMoveBanned = TRUE,
         .meFirstBanned = TRUE,
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
@@ -20195,7 +20201,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .instructBanned = TRUE,
         .encoreBanned = TRUE,
         .assistBanned = TRUE,
-        .sketchBanned = (B_SKETCH_BANS >= GEN_9),
+        .sketchBanned = (B_SKETCH_BANS >= GEN_9), */
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_POISON,
             .chance = 30,
@@ -20206,16 +20212,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     [MOVE_COMBAT_TORQUE] =
     {
         .name = COMPOUND_STRING("Combat Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Powerful spin with force.\n"
+            "May paralyze the target."),
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 95 : 100,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .mirrorMoveBanned = TRUE,
+        /*.mirrorMoveBanned = TRUE,
         .meFirstBanned = TRUE,
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
@@ -20224,7 +20232,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .instructBanned = TRUE,
         .encoreBanned = TRUE,
         .assistBanned = TRUE,
-        .sketchBanned = (B_SKETCH_BANS >= GEN_9),
+        .sketchBanned = (B_SKETCH_BANS >= GEN_9), */
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PARALYSIS,
             .chance = 30,
@@ -20235,16 +20243,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     [MOVE_MAGICAL_TORQUE] =
     {
         .name = COMPOUND_STRING("Magical Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Powerful otherworldly spin.\n"
+            "May confuse the target."),
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 95 : 100,
         .type = TYPE_FAIRY,
         .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .mirrorMoveBanned = TRUE,
+        /*.mirrorMoveBanned = TRUE,
         .meFirstBanned = TRUE,
         .mimicBanned = TRUE,
         .metronomeBanned = TRUE,
@@ -20253,7 +20263,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .instructBanned = TRUE,
         .encoreBanned = TRUE,
         .assistBanned = TRUE,
-        .sketchBanned = (B_SKETCH_BANS >= GEN_9),
+        .sketchBanned = (B_SKETCH_BANS >= GEN_9), */
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_CONFUSION,
             .chance = 30,
