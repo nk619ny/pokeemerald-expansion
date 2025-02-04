@@ -29,7 +29,7 @@ MauvilleCity_GameCorner_MapScripts::
 # 15 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 
 # 16 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-MauvilleCity_GameCorner_EventScript_CoinsClerk::
+/*MauvilleCity_GameCorner_EventScript_CoinsClerk::
 # 17 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	lock
 # 18 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -49,7 +49,7 @@ MauvilleCity_GameCorner_EventScript_CoinsClerk::
 # 25 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	showcoinsbox 1, 6
 # 26 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto MauvilleCity_GameCorner_EventScript_ChooseCoinsDefault50
+	goto MauvilleCity_GameCorner_EventScript_ChooseCoinsDefault50 */
 # 27 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 
 # 28 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -1712,6 +1712,24 @@ Roulette_EventScript_Table::
 	end
 
 
+MauvilleCity_GameCorner_EventScript_CoinsClerk::
+# 884 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	lock
+# 885 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	faceplayer
+# 886 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner, MSGBOX_DEFAULT
+# 887 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	waitmessage
+# 888 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_CoinsClerk_Text_0
+# 889 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	waitmessage
+# 890 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	releaseall
+	end
+
+
 MauvilleCity_GameCorner_EventScript_Scott_Text_0:
 # 807 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Are you interested?$"
@@ -1734,6 +1752,12 @@ Roulette_EventScript_Table_Text_0:
 # 873 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "It's a roulette table. Unfortunately,\n"
 	.string "they won't let you play.$"
+
+MauvilleCity_GameCorner_EventScript_CoinsClerk_Text_0:
+# 888 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Were you looking for coins?\p"
+	.string "I'm sorry, but I can't sell any to you.\n"
+	.string "Children are not allowed to gamble.$"
 
 MauvilleCity_GameCorner_Text_ScottIntro::
 # 851 "data/maps/MauvilleCity_GameCorner/scripts.pory"

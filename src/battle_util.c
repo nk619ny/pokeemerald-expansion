@@ -9169,7 +9169,7 @@ static inline u32 CalcMoveBasePower(struct DamageCalculationData *damageCalcData
         break;
     case EFFECT_EXPLOSION:
         if (move == MOVE_MISTY_EXPLOSION && gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN && IsBattlerGrounded(battlerAtk))
-            basePower = uq4_12_multiply(basePower, UQ_4_12(1.5));
+            basePower = uq4_12_multiply(basePower, UQ_4_12(1.25));
         break;
     case EFFECT_DYNAMAX_DOUBLE_DMG:
         if (GetActiveGimmick(battlerDef) == GIMMICK_DYNAMAX)
@@ -9313,6 +9313,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
     if (IsBattlerTerrainAffected(battlerDef, STATUS_FIELD_MISTY_TERRAIN) && moveType == TYPE_DRAGON)
         modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
+    if (IsBattlerTerrainAffected(battlerDef, STATUS_FIELD_MISTY_TERRAIN) && moveType == TYPE_FAIRY)
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
     if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_ELECTRIC_TERRAIN) && moveType == TYPE_ELECTRIC)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
     if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_PSYCHIC_TERRAIN) && moveType == TYPE_PSYCHIC)

@@ -13,7 +13,7 @@ MauvilleCity_GameCorner_MapScripts::
 	.set COINS_PRICE_50,  1000
 	.set COINS_PRICE_500, 10000
 
-MauvilleCity_GameCorner_EventScript_CoinsClerk::
+/*MauvilleCity_GameCorner_EventScript_CoinsClerk::
 	lock
 	faceplayer
 	msgbox MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner, MSGBOX_DEFAULT
@@ -23,7 +23,7 @@ MauvilleCity_GameCorner_EventScript_CoinsClerk::
 	waitmessage
 	showmoneybox 0, 0
 	showcoinsbox 1, 6
-	goto MauvilleCity_GameCorner_EventScript_ChooseCoinsDefault50
+	goto MauvilleCity_GameCorner_EventScript_ChooseCoinsDefault50 */
 
 MauvilleCity_GameCorner_EventScript_ChooseCoinsDefault50::
 	multichoicedefault 15, 0, MULTI_GAME_CORNER_COINS, 0, FALSE
@@ -878,4 +878,15 @@ script Roulette_EventScript_Table {
 
 text MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay {
 	format("The games at the Game Corner are only open to adults above a certain age.\pWe don't want children to develop dangerous habits.")
+}
+
+script MauvilleCity_GameCorner_EventScript_CoinsClerk {
+	lock
+	faceplayer
+	msgbox(MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner, MSGBOX_DEFAULT)
+	waitmessage
+	msgbox(format("Were you looking for coins?\pI'm sorry, but I can't sell any to you.\nChildren are not allowed to gamble."))
+	waitmessage
+	releaseall
+	end
 }

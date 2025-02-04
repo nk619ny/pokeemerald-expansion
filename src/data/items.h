@@ -6253,6 +6253,74 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Miloticite,
     },
 
+    [ITEM_DRAGONITITE] =
+    {
+        .name = _("Dragonitite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Dragonite to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Dragonitite,
+        .iconPalette = gItemIconPalette_Dragonitite,
+    },
+
+    [ITEM_SUNFLORITE] =
+    {
+        .name = _("Sunflorite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Sunflora to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Sunflorite,
+        .iconPalette = gItemIconPalette_Sunflorite,
+    },
+
+    [ITEM_FLYGONITE] =
+    {
+        .name = _("Flygonite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Flygon to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Flygonite,
+        .iconPalette = gItemIconPalette_Flygonite,
+    },
+
+    [ITEM_VIKAVOLITE] =
+    {
+        .name = _("Vikavolite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Vikavolt to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Vikavolite,
+        .iconPalette = gItemIconPalette_Vikavolite,
+    },
+
 // Gems
 
     [ITEM_NORMAL_GEM] =

@@ -1683,7 +1683,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 781
-            .species = SPECIES_HERACROSS_MEGA,
+            .species = SPECIES_HERACROSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 781
             .heldItem = ITEM_HERACRONITE,
@@ -1762,7 +1762,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 815
-            .species = SPECIES_SHARPEDO_MEGA,
+            .species = SPECIES_SHARPEDO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 815
             .heldItem = ITEM_SHARPEDONITE,
@@ -4953,7 +4953,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 2134
-            .species = SPECIES_ABSOL_MEGA,
+            .species = SPECIES_ABSOL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2134
             .heldItem = ITEM_ABSOLITE,
@@ -13817,7 +13817,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5673
-            .species = SPECIES_BLAZIKEN_MEGA,
+            .species = SPECIES_BLAZIKEN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5673
             .heldItem = ITEM_BLAZIKENITE,
@@ -14269,7 +14269,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5861
-            .species = SPECIES_ALTARIA_MEGA,
+            .species = SPECIES_ALTARIA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5861
             .heldItem = ITEM_ALTARIANITE,
@@ -14373,7 +14373,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5906
-            .species = SPECIES_SLOWBRO_MEGA,
+            .species = SPECIES_SLOWBRO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5906
             .heldItem = ITEM_SLOWBRONITE,
@@ -31092,7 +31092,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12578
-            .species = SPECIES_HOUNDOOM_MEGA,
+            .species = SPECIES_HOUNDOOM,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12578
             .heldItem = ITEM_HOUNDOOMINITE,
@@ -43887,7 +43887,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 17798
-            .species = SPECIES_AGGRON_MEGA,
+            .species = SPECIES_AGGRON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 17798
             .heldItem = ITEM_AGGRONITE,

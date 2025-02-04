@@ -1651,8 +1651,12 @@
 #define SPECIES_CINDERACE_MEGA                          1533
 #define SPECIES_INTELEON_MEGA                           1534
 #define SPECIES_MILOTIC_MEGA                            1535
+#define SPECIES_DRAGONITE_MEGA                          1536
+#define SPECIES_SUNFLORA_MEGA                           1537
+#define SPECIES_FLYGON_MEGA                             1538
+#define SPECIES_VIKAVOLT_MEGA                           1539
 
-#define SPECIES_EGG                                     1536
+#define SPECIES_EGG                                     1540
 
 #define NUM_SPECIES SPECIES_EGG
 

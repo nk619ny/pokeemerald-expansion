@@ -21,7 +21,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_SHELL_ARMOR },
+        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_SHELL_ARMOR }, //TBD, revisit
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Turtwig"),
         .cryId = CRY_TURTWIG,
@@ -218,7 +218,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
+        .abilities = { ABILITY_BLAZE, ABILITY_IRON_FIST, ABILITY_MOXIE }, //Changed
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Chimchar"),
@@ -283,7 +283,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
+        .abilities = { ABILITY_BLAZE, ABILITY_IRON_FIST, ABILITY_MOXIE }, //Changed
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Monferno"),
@@ -354,7 +354,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
+        .abilities = { ABILITY_BLAZE, ABILITY_IRON_FIST, ABILITY_MOXIE }, //Changed
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Infernape"),
         .cryId = CRY_INFERNAPE,
@@ -418,7 +418,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_9
-        .abilities = { ABILITY_TORRENT, ABILITY_COMPETITIVE, ABILITY_SLUSH_RUSH },
+        .abilities = { ABILITY_TORRENT, ABILITY_SLUSH_RUSH, ABILITY_COMPETITIVE }, //Changed
     #else
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DEFIANT },
     #endif
@@ -485,7 +485,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_9
-        .abilities = { ABILITY_TORRENT, ABILITY_COMPETITIVE, ABILITY_SLUSH_RUSH },
+        .abilities = { ABILITY_TORRENT, ABILITY_SLUSH_RUSH, ABILITY_COMPETITIVE }, //Changed
     #else
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DEFIANT },
     #endif
@@ -557,7 +557,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_9
-        .abilities = { ABILITY_TORRENT, ABILITY_COMPETITIVE, ABILITY_SLUSH_RUSH },
+        .abilities = { ABILITY_TORRENT, ABILITY_SLUSH_RUSH, ABILITY_COMPETITIVE }, //Changed
     #else
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DEFIANT },
     #endif

@@ -994,6 +994,18 @@ const u32 gItemIconPalette_Inteleonite[] = INCBIN_U32("graphics/items/icon_palet
 const u32 gItemIcon_Miloticite[] = INCBIN_U32("graphics/items/icons/miloticite.4bpp.lz");
 const u32 gItemIconPalette_Miloticite[] = INCBIN_U32("graphics/items/icon_palettes/miloticite.gbapal.lz");
 
+const u32 gItemIcon_Dragonitite[] = INCBIN_U32("graphics/items/icons/dragonitite.4bpp.lz");
+const u32 gItemIconPalette_Dragonitite[] = INCBIN_U32("graphics/items/icon_palettes/dragonitite.gbapal.lz");
+
+const u32 gItemIcon_Sunflorite[] = INCBIN_U32("graphics/items/icons/sunflorite.4bpp.lz");
+const u32 gItemIconPalette_Sunflorite[] = INCBIN_U32("graphics/items/icon_palettes/sunflorite.gbapal.lz");
+
+const u32 gItemIcon_Flygonite[] = INCBIN_U32("graphics/items/icons/flygonite.4bpp.lz");
+const u32 gItemIconPalette_Flygonite[] = INCBIN_U32("graphics/items/icon_palettes/flygonite.gbapal.lz");
+
+const u32 gItemIcon_Vikavolite[] = INCBIN_U32("graphics/items/icons/vikavolite.4bpp.lz");
+const u32 gItemIconPalette_Vikavolite[] = INCBIN_U32("graphics/items/icon_palettes/vikavolite.gbapal.lz");
+
 // Gems
 
 const u32 gItemIcon_NormalGem[] = INCBIN_U32("graphics/items/icons/normal_gem.4bpp.lz");

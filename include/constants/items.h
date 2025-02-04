@@ -1012,10 +1012,13 @@
 #define ITEM_CINDERACITE 840
 #define ITEM_INTELEONITE 841
 #define ITEM_MILOTICITE 842
+#define ITEM_DRAGONITITE 843
+#define ITEM_SUNFLORITE 844
+#define ITEM_FLYGONITE 845
+#define ITEM_VIKAVOLITE 846
 
 
-
-#define ITEMS_COUNT 843
+#define ITEMS_COUNT 847
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
