@@ -3603,7 +3603,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1574
-            .species = SPECIES_SWAMPERT_MEGA,
+            .species = SPECIES_SWAMPERT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1574
             .heldItem = ITEM_SWAMPERTITE,
@@ -3776,7 +3776,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1650
-            .species = SPECIES_CAMERUPT_MEGA,
+            .species = SPECIES_CAMERUPT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1650
             .heldItem = ITEM_CAMERUPTITE,

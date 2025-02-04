@@ -241,6 +241,9 @@ static const u16 sAlakazamFormSpeciesIdTable[] = {
 #if P_FAMILY_MACHOP
 static const u16 sMachampFormSpeciesIdTable[] = {
     SPECIES_MACHAMP,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_MACHAMP_MEGA,
+#endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_MACHAMP_GMAX,
 #endif

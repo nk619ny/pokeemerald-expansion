@@ -1000,9 +1000,22 @@
 // Custom Added Items
 #define ITEM_CANDY_BAG 829
 #define ITEM_UNLIMITED_REPEL 830
+#define ITEM_BUTTERFRITE 831
+#define ITEM_MACHAMPITE 832
+#define ITEM_KINGLERITE 833
+#define ITEM_LAPRASITE 834
+#define ITEM_CENTISKORITE 835
+#define ITEM_MEGANIUMITE 836
+#define ITEM_TYPHLOSIONITE 837
+#define ITEM_FERALIGATRITE 838
+#define ITEM_RILLABOOMITE 839
+#define ITEM_CINDERACITE 840
+#define ITEM_INTELEONITE 841
+#define ITEM_MILOTICITE 842
 
 
-#define ITEMS_COUNT 831
+
+#define ITEMS_COUNT 843
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

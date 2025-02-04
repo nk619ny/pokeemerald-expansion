@@ -1448,15 +1448,15 @@ MauvilleCity_EventScript_Temporary::
 	msgbox MauvilleCity_EventScript_Temporary_Text_0
 # 724 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
-# 731 "data/maps/MauvilleCity/scripts.pory"
-	givemon SPECIES_TYRANITAR, 35, , , , 0, , , , , , , , , , , , , , MOVE_SUPERPOWER, MOVE_PSYCHO_BOOST, MOVE_SANDSEAR_STORM
-# 732 "data/maps/MauvilleCity/scripts.pory"
-	givemon SPECIES_BRAMBLEGHAST, 35, , , , 0, , , , , , , , , , , , , , MOVE_SUPERPOWER, MOVE_SANDSEAR_STORM
-# 733 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
-# 734 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
+# 725 "data/maps/MauvilleCity/scripts.pory"
+	giveitem ITEM_MEGA_RING
+# 728 "data/maps/MauvilleCity/scripts.pory"
+	givemon SPECIES_MACHAMP, 50, ITEM_MACHAMPITE, , , 2, , , , , , , , , , , , , , MOVE_PROTECT, MOVE_WICKED_TORQUE, MOVE_BOOMBURST, MOVE_SEARING_SUNSMASH
 # 735 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 736 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 737 "data/maps/MauvilleCity/scripts.pory"
 	releaseall
 	end
 
