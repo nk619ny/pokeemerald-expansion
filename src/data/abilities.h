@@ -2429,4 +2429,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Powers up Ice moves."),
         .aiRating = 6
     },
+
+    [ABILITY_SMOKE_CLOUD] =
+    {
+        .name = _("Smoke Cloud"),
+        .description = COMPOUND_STRING("Constant smoke ups evasion."),
+        .aiRating = 4,
+        .breakable = TRUE,
+    },
 };

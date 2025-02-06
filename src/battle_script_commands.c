@@ -1604,6 +1604,9 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
         if (gBattleMons[battlerDef].status2 & STATUS2_CONFUSION)
             calc = (calc * 50) / 100; // 1.5 tangled feet loss
         break;
+    case ABILITY_SMOKE_CLOUD:
+            calc = (calc * 90) / 100; // 1.1 smoke cloud loss
+        break;
     }
 
     // Attacker's ally's ability

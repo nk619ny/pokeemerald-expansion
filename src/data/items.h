@@ -6321,6 +6321,23 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Vikavolite,
     },
 
+    [ITEM_SLOWKINGITE] =
+    {
+        .name = _("Slowkingite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Slowking to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Slowkingite,
+        .iconPalette = gItemIconPalette_Slowkingite,
+    },
+
 // Gems
 
     [ITEM_NORMAL_GEM] =

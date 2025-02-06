@@ -1015,6 +1015,8 @@ extern const u32 gItemIcon_Flygonite[];
 extern const u32 gItemIconPalette_Flygonite[];
 extern const u32 gItemIcon_Vikavolite[];
 extern const u32 gItemIconPalette_Vikavolite[];
+extern const u32 gItemIcon_Slowkingite[];
+extern const u32 gItemIconPalette_Slowkingite[];
 // Gems
 extern const u32 gItemIcon_NormalGem[];
 extern const u32 gItemIconPalette_NormalGem[];

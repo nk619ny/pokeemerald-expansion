@@ -1016,9 +1016,10 @@
 #define ITEM_SUNFLORITE 844
 #define ITEM_FLYGONITE 845
 #define ITEM_VIKAVOLITE 846
+#define ITEM_SLOWKINGITE 847
 
 
-#define ITEMS_COUNT 847
+#define ITEMS_COUNT 848
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
