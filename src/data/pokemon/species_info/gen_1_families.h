@@ -1227,7 +1227,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sButterfreeFormChangeTable,
     },
 
-/*#if P_MEGA_EVOLUTIONS
+#if P_MEGA_EVOLUTIONS
     [SPECIES_BUTTERFREE_MEGA] =
     {
         .baseHP        = 60,
@@ -11596,7 +11596,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sKinglerFormChangeTable,
     },
 
-/* #if P_MEGA_EVOLUTIONS
+ #if P_MEGA_EVOLUTIONS
     [SPECIES_KINGLER_MEGA] =
     {
         .baseHP        = 55,
@@ -11653,7 +11653,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sKinglerFormSpeciesIdTable,
         .formChangeTable = sKinglerFormChangeTable,
     },
-#endif //P_GIGANTAMAX_FORMS */
+#endif //P_MEGA_EVOLUTIONS */
 
 #if P_GIGANTAMAX_FORMS
     [SPECIES_KINGLER_GMAX] =
@@ -18336,8 +18336,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sDragoniteTeachableLearnset,
     },
 
-/* #if P_MEGA_EVOLUTIONS
-    [SPECIES_DRAGONITE] =
+ /* #if P_MEGA_EVOLUTIONS
+    [SPECIES_DRAGONITE_MEGA] =
     {
         .baseHP        = 91,
         .baseAttack    = (134 + 30),

@@ -190,6 +190,63 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sRillaboomFormChangeTable,
     },
 
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_RILLABOOM_MEGA] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = (125 + 30),
+        .baseDefense   = (90 + 20),
+        .baseSpeed     = 85,
+        .baseSpAttack  = (60 + 20),
+        .baseSpDefense = (70 + 30),
+        .types = MON_TYPES(TYPE_GRASS),
+        .catchRate = 45,
+        .expYield = 265,
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_GRASS_PELT, ABILITY_GRASS_PELT, ABILITY_GRASS_PELT },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Rillaboom"),
+        .cryId = CRY_RILLABOOM,
+        .natDexNum = NATIONAL_DEX_RILLABOOM,
+        .categoryName = _("Drummer"),
+        .height = 280,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Rillaboom has become one with its\n"
+            "forest of drums and continues to lay\n"
+            "down beats that shake all of Galar."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 365,
+        .trainerOffset = 7,
+        .frontPic = gMonFrontPic_RillaboomGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_RillaboomGmax,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_RillaboomGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 4,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_RillaboomGmax,
+        .shinyPalette = gMonShinyPalette_RillaboomGmax,
+        .iconSprite = gMonIcon_RillaboomGmax,
+        .iconPalIndex = 1,
+        SHADOW(0, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Rillaboom)
+        .isGigantamax = TRUE,
+        .levelUpLearnset = sRillaboomLevelUpLearnset,
+        .teachableLearnset = sRillaboomTeachableLearnset,
+        .formSpeciesIdTable = sRillaboomFormSpeciesIdTable,
+        .formChangeTable = sRillaboomFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
+
 #if P_GIGANTAMAX_FORMS
     [SPECIES_RILLABOOM_GMAX] =
     {
@@ -435,6 +492,64 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sCinderaceFormSpeciesIdTable,
         .formChangeTable = sCinderaceFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_CINDERACE_MEGA] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = (116 + 30),
+        .baseDefense   = (75 + 20),
+        .baseSpeed     = (119 + 30),
+        .baseSpAttack  = 65,
+        .baseSpDefense = (75 + 20),
+        .types = MON_TYPES(TYPE_FIRE),
+        .catchRate = 45,
+        .expYield = 265,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_LIBERO, ABILITY_LIBERO, ABILITY_LIBERO },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Cinderace"),
+        .cryId = CRY_CINDERACE,
+        .natDexNum = NATIONAL_DEX_CINDERACE,
+        .categoryName = _("Striker"),
+        .height = 270,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Infused with Cinderace's fighting\n"
+            "spirit, the gigantic Pyro Ball never\n"
+            "misses its targets and completely\n"
+            "roasts opponents."),
+        .pokemonScale = 265,
+        .pokemonOffset = 2,
+        .trainerScale = 262,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CinderaceGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_CinderaceGmax,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CinderaceGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 4,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CinderaceGmax,
+        .shinyPalette = gMonShinyPalette_CinderaceGmax,
+        .iconSprite = gMonIcon_CinderaceGmax,
+        .iconPalIndex = 0,
+        SHADOW(-3, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Cinderace)
+        .isGigantamax = TRUE,
+        .levelUpLearnset = sCinderaceLevelUpLearnset,
+        .teachableLearnset = sCinderaceTeachableLearnset,
+        .formSpeciesIdTable = sCinderaceFormSpeciesIdTable,
+        .formChangeTable = sCinderaceFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTION
 
 #if P_GIGANTAMAX_FORMS
     [SPECIES_CINDERACE_GMAX] =
@@ -683,6 +798,64 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sInteleonFormSpeciesIdTable,
         .formChangeTable = sInteleonFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_INTELEON_MEGA] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = (85 + 10),
+        .baseDefense   = (65 + 10),
+        .baseSpeed     = (120 + 30),
+        .baseSpAttack  = (125 + 40),
+        .baseSpDefense = (65 + 10),
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 45,
+        .expYield = 265,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
+        .abilities = { ABILITY_SNIPER, ABILITY_SNIPER, ABILITY_SNIPER },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Inteleon"),
+        .cryId = CRY_INTELEON,
+        .natDexNum = NATIONAL_DEX_INTELEON,
+        .categoryName = _("Secret Agent"),
+        .height = 400,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Gigantamax Inteleon's Water Gun\n"
+            "move fires at Mach 7. As the Pokémon\n"
+            "takes aim, it uses the crest on its\n"
+            "head to gauge wind and temperature."),
+        .pokemonScale = 256,
+        .pokemonOffset = 1,
+        .trainerScale = 326,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_InteleonGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_InteleonGmax,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_InteleonGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 4,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_InteleonGmax,
+        .shinyPalette = gMonShinyPalette_InteleonGmax,
+        .iconSprite = gMonIcon_InteleonGmax,
+        .iconPalIndex = 0,
+        SHADOW(-5, 12, SHADOW_SIZE_L)
+        FOOTPRINT(Inteleon)
+        .isGigantamax = TRUE,
+        .levelUpLearnset = sInteleonLevelUpLearnset,
+        .teachableLearnset = sInteleonTeachableLearnset,
+        .formSpeciesIdTable = sInteleonFormSpeciesIdTable,
+        .formChangeTable = sInteleonFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
     [SPECIES_INTELEON_GMAX] =
@@ -3651,6 +3824,64 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sCentiskorchFormSpeciesIdTable,
         .formChangeTable = sCentiskorchFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_CENTISKORCH_MEGA] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = (115 + 40),
+        .baseDefense   = (65 + 25),
+        .baseSpeed     = (65 + 20),
+        .baseSpAttack  = 90,
+        .baseSpDefense = (90 + 15),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_BUG),
+        .catchRate = 75,
+        .expYield = 184,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLASH_FIRE, ABILITY_FLASH_FIRE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Centiskorch"),
+        .cryId = CRY_CENTISKORCH,
+        .natDexNum = NATIONAL_DEX_CENTISKORCH,
+        .categoryName = _("Radiator"),
+        .height = 750,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "The heat that comes off a\n"
+            "Gigantamax Centiskorch may\n"
+            "destabilize air currents. Sometimes\n"
+            "it can even cause storms."),
+        .pokemonScale = 275,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CentiskorchGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_CentiskorchGmax,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CentiskorchGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 1,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CentiskorchGmax,
+        .shinyPalette = gMonShinyPalette_CentiskorchGmax,
+        .iconSprite = gMonIcon_CentiskorchGmax,
+        .iconPalIndex = 0,
+        SHADOW(6, 9, SHADOW_SIZE_L)
+        FOOTPRINT(Centiskorch)
+        .isGigantamax = TRUE,
+        .levelUpLearnset = sCentiskorchLevelUpLearnset,
+        .teachableLearnset = sCentiskorchTeachableLearnset,
+        .formSpeciesIdTable = sCentiskorchFormSpeciesIdTable,
+        .formChangeTable = sCentiskorchFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
     [SPECIES_CENTISKORCH_GMAX] =

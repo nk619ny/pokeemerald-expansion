@@ -41,6 +41,9 @@ static const u16 sBlastoiseFormSpeciesIdTable[] = {
 #if P_FAMILY_CATERPIE
 static const u16 sButterfreeFormSpeciesIdTable[] = {
     SPECIES_BUTTERFREE,
+#if P_MEGA_EVOOLUTIONS
+    SPECIES_BUTTERFREE_MEGA,
+#endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_BUTTERFREE_GMAX,
 #endif
@@ -382,6 +385,9 @@ static const u16 sSteelixFormSpeciesIdTable[] = {
 #if P_FAMILY_KRABBY
 static const u16 sKinglerFormSpeciesIdTable[] = {
     SPECIES_KINGLER,
+#if P_MEGA_EVOOLUTIONS
+    SPECIES_KINGLER_MEGA,
+#endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_KINGLER_GMAX,
 #endif
@@ -505,6 +511,9 @@ static const u16 sGyaradosFormSpeciesIdTable[] = {
 #if P_FAMILY_LAPRAS
 static const u16 sLaprasFormSpeciesIdTable[] = {
     SPECIES_LAPRAS,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_LAPRAS_MEGA,
+#endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_LAPRAS_GMAX,
 #endif
@@ -1768,6 +1777,9 @@ static const u16 sMelmetalFormSpeciesIdTable[] = {
 #if P_FAMILY_GROOKEY
 static const u16 sRillaboomFormSpeciesIdTable[] = {
     SPECIES_RILLABOOM,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_RILLABOOM_MEGA,
+#endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_RILLABOOM_GMAX,
 #endif
@@ -1778,6 +1790,9 @@ static const u16 sRillaboomFormSpeciesIdTable[] = {
 #if P_FAMILY_SCORBUNNY
 static const u16 sCinderaceFormSpeciesIdTable[] = {
     SPECIES_CINDERACE,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_CINDERACE_MEGA,
+#endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_CINDERACE_GMAX,
 #endif
@@ -1788,6 +1803,9 @@ static const u16 sCinderaceFormSpeciesIdTable[] = {
 #if P_FAMILY_SOBBLE
 static const u16 sInteleonFormSpeciesIdTable[] = {
     SPECIES_INTELEON,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_INTELEON_MEGA,
+#endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_INTELEON_GMAX,
 #endif
@@ -1889,6 +1907,9 @@ static const u16 sToxtricityFormSpeciesIdTable[] = {
 #if P_FAMILY_SIZZLIPEDE
 static const u16 sCentiskorchFormSpeciesIdTable[] = {
     SPECIES_CENTISKORCH,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_CENTISKORCH_MEGA,
+#endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_CENTISKORCH_GMAX,
 #endif

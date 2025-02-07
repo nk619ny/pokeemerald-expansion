@@ -1451,14 +1451,16 @@ MauvilleCity_EventScript_Temporary::
 # 725 "data/maps/MauvilleCity/scripts.pory"
 	giveitem ITEM_MEGA_RING
 # 728 "data/maps/MauvilleCity/scripts.pory"
-	givemon SPECIES_MACHAMP, 50, ITEM_MACHAMPITE, , , 2, , , , , , , , , , , , , , MOVE_DYNAMIC_PUNCH, MOVE_WICKED_TORQUE, MOVE_BOOMBURST, MOVE_SEARING_SUNSMASH
+	givemon SPECIES_RILLABOOM, 50, ITEM_RILLABOOMITE, , , 2, , , , , , , , , , , , , , MOVE_DYNAMIC_PUNCH, MOVE_WICKED_TORQUE, MOVE_BOOMBURST, MOVE_SEARING_SUNSMASH
 # 729 "data/maps/MauvilleCity/scripts.pory"
-	givemon SPECIES_VOLBEAT, 50, , , , 0, , , , , , , , , , , , , , MOVE_WICKED_BLOW, MOVE_JET_PUNCH, MOVE_SHORE_UP, MOVE_TEATIME
-# 735 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+	givemon SPECIES_KINGLER, 50, ITEM_KINGLERITE, , , 0, , , , , , , , , , , , , , MOVE_WICKED_BLOW, MOVE_JET_PUNCH, MOVE_SHORE_UP, MOVE_TEATIME
+# 730 "data/maps/MauvilleCity/scripts.pory"
+	givemon SPECIES_BUTTERFREE, 50, ITEM_BUTTERFRITE, , , 0, , , , , , , , , , , , , , MOVE_WICKED_BLOW, MOVE_JET_PUNCH, MOVE_SHORE_UP, MOVE_TEATIME
 # 736 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
+	waitmessage
 # 737 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 738 "data/maps/MauvilleCity/scripts.pory"
 	releaseall
 	end
 

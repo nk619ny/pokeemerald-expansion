@@ -464,7 +464,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS //P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_ButterfreeGmax[] = INCBIN_U32("graphics/pokemon/butterfree/gmax/front.4bpp.lz");
     const u32 gMonBackPic_ButterfreeGmax[] = INCBIN_U32("graphics/pokemon/butterfree/gmax/back.4bpp.lz");
     const u32 gMonPalette_ButterfreeGmax[] = INCBIN_U32("graphics/pokemon/butterfree/gmax/normal.gbapal.lz");
@@ -3959,7 +3959,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS //P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_KinglerGmax[] = INCBIN_U32("graphics/pokemon/kingler/gmax/front.4bpp.lz");
     const u32 gMonBackPic_KinglerGmax[] = INCBIN_U32("graphics/pokemon/kingler/gmax/back.4bpp.lz");
     const u32 gMonPalette_KinglerGmax[] = INCBIN_U32("graphics/pokemon/kingler/gmax/normal.gbapal.lz");
@@ -22624,7 +22624,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS //P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_RillaboomGmax[] = INCBIN_U32("graphics/pokemon/rillaboom/gmax/front.4bpp.lz");
     const u32 gMonBackPic_RillaboomGmax[] = INCBIN_U32("graphics/pokemon/rillaboom/gmax/back.4bpp.lz");
     const u32 gMonPalette_RillaboomGmax[] = INCBIN_U32("graphics/pokemon/rillaboom/gmax/normal.gbapal.lz");
@@ -22689,7 +22689,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS //P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_CinderaceGmax[] = INCBIN_U32("graphics/pokemon/cinderace/gmax/front.4bpp.lz");
     const u32 gMonBackPic_CinderaceGmax[] = INCBIN_U32("graphics/pokemon/cinderace/gmax/back.4bpp.lz");
     const u32 gMonPalette_CinderaceGmax[] = INCBIN_U32("graphics/pokemon/cinderace/gmax/normal.gbapal.lz");
@@ -22754,7 +22754,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS //P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_InteleonGmax[] = INCBIN_U32("graphics/pokemon/inteleon/gmax/front.4bpp.lz");
     const u32 gMonBackPic_InteleonGmax[] = INCBIN_U32("graphics/pokemon/inteleon/gmax/back.4bpp.lz");
     const u32 gMonPalette_InteleonGmax[] = INCBIN_U32("graphics/pokemon/inteleon/gmax/normal.gbapal.lz");
@@ -23520,7 +23520,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS //P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_CentiskorchGmax[] = INCBIN_U32("graphics/pokemon/centiskorch/gmax/front.4bpp.lz");
     const u32 gMonBackPic_CentiskorchGmax[] = INCBIN_U32("graphics/pokemon/centiskorch/gmax/back.4bpp.lz");
     const u32 gMonPalette_CentiskorchGmax[] = INCBIN_U32("graphics/pokemon/centiskorch/gmax/normal.gbapal.lz");
