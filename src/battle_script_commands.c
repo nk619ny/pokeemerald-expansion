@@ -1578,7 +1578,7 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
         break;
     case ABILITY_KEEN_EYE:
         if (!IS_MOVE_STATUS(move))
-            calc = (calc * 120) / 100; //added 1.2 boost to Keen Eye for damaging moves
+            calc = (calc * 110) / 100; //added 1.1 boost to Keen Eye for damaging moves
         break;
     case ABILITY_VICTORY_STAR:
         calc = (calc * 110) / 100; // 1.1 victory star boost
@@ -1616,6 +1616,12 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
         if (IsBattlerAlive(atkAlly))
             calc = (calc * 110) / 100; // 1.1 ally's victory star boost
         break;
+    }
+
+    // Ability on field
+    if (IsAbilityOnField(ABILITY_ILLUMINATE))
+    {
+        calc = (calc * 115) / 100; // illuminate boost accuracy of all moves by 16%
     }
 
     // Attacker's hold effect

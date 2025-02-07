@@ -1451,7 +1451,9 @@ MauvilleCity_EventScript_Temporary::
 # 725 "data/maps/MauvilleCity/scripts.pory"
 	giveitem ITEM_MEGA_RING
 # 728 "data/maps/MauvilleCity/scripts.pory"
-	givemon SPECIES_MACHAMP, 50, ITEM_MACHAMPITE, , , 2, , , , , , , , , , , , , , MOVE_PROTECT, MOVE_WICKED_TORQUE, MOVE_BOOMBURST, MOVE_SEARING_SUNSMASH
+	givemon SPECIES_MACHAMP, 50, ITEM_MACHAMPITE, , , 2, , , , , , , , , , , , , , MOVE_DYNAMIC_PUNCH, MOVE_WICKED_TORQUE, MOVE_BOOMBURST, MOVE_SEARING_SUNSMASH
+# 729 "data/maps/MauvilleCity/scripts.pory"
+	givemon SPECIES_VOLBEAT, 50, , , , 0, , , , , , , , , , , , , , MOVE_WICKED_BLOW, MOVE_JET_PUNCH, MOVE_SHORE_UP, MOVE_TEATIME
 # 735 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
 # 736 "data/maps/MauvilleCity/scripts.pory"
