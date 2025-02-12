@@ -5760,16 +5760,16 @@ Adamant Nature
 - Fake Out  
 - Last Resort  
 
-Spinda @ Salac Berry  
+Spinda @ Custap Berry  
 Ability: Contrary  
 Ball: Premier Ball
-Level: 15  
-EVs: 252 HP / 4 Atk / 252 Spe  
-Serious Nature  
+Level: 14  
+EVs: 252 HP  
+Quirky Nature  
+IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD  
 - Superpower  
 - Psycho Boost  
-- Teeter Dance  
-- Baton Pass  
+- Teeter Dance
 
 Zigzagoon @ Aguav Berry  
 Ability: Gluttony  
@@ -5795,7 +5795,7 @@ Jolly Nature
 
 Clefairy @ Eviolite  
 Ability: Friend Guard  
-Ball: Moon Ball
+Ball: Premier Ball
 Level: 15  
 EVs: 224 HP / 108 Def / 156 SpD  
 Calm Nature  

@@ -14040,26 +14040,25 @@ F_TRAINER_FEMALE |
             .species = SPECIES_SPINDA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5763
-            .heldItem = ITEM_SALAC_BERRY,
+            .heldItem = ITEM_CUSTAP_BERRY,
 #line 5767
-            .ev = TRAINER_PARTY_EVS(252, 4, 0, 252, 0, 0),
+            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 0),
 #line 5769
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .iv = TRAINER_PARTY_IVS(31, 0, 0, 31, 0, 0),
 #line 5764
             .ability = ABILITY_CONTRARY,
 #line 5766
-            .lvl = 15,
+            .lvl = 14,
 #line 5765
             .ball = ITEM_PREMIER_BALL,
 #line 5768
-            .nature = NATURE_SERIOUS,
+            .nature = NATURE_QUIRKY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 5769
+#line 5770
                 MOVE_SUPERPOWER,
                 MOVE_PSYCHO_BOOST,
                 MOVE_TEETER_DANCE,
-                MOVE_BATON_PASS,
             },
             },
             {
@@ -14131,7 +14130,7 @@ F_TRAINER_FEMALE |
 #line 5799
             .lvl = 15,
 #line 5798
-            .ball = ITEM_MOON_BALL,
+            .ball = ITEM_PREMIER_BALL,
 #line 5801
             .nature = NATURE_CALM,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,

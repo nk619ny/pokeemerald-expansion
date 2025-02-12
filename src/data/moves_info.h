@@ -15597,7 +15597,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Sings with bubbles. Cures\n"
             "burns on contact."),
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 100 : 90,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 10,
