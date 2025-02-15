@@ -2240,10 +2240,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "A weak jolt of electricity\n"
             "that paralyzes the foe."),
-        .effect = EFFECT_PARALYZE,
+        .effect = EFFECT_THUNDER_WAVE, // Changed to always hit if used by electric type
         .power = 0,
         .type = TYPE_ELECTRIC,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_7 ? 90 : 100,
+        .accuracy = B_UPDATED_MOVE_DATA >= GEN_7 ? 90 : 100, // Changed to always hit if used by electric type
         .pp = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

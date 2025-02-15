@@ -853,6 +853,7 @@ static bool32 AI_IsMoveEffectInPlus(u32 battlerAtk, u32 battlerDef, u32 move, s3
                         return TRUE;
                     break;
                 case MOVE_EFFECT_PARALYSIS:
+                case MOVE_EFFECT_THUNDER_WAVE:
                     if (AI_CanParalyze(battlerAtk, battlerDef, abilityDef, move, MOVE_NONE))
                         return TRUE;
                     break;
@@ -1440,6 +1441,7 @@ bool32 IsNonVolatileStatusMoveEffect(u32 moveEffect)
     case EFFECT_TOXIC:
     case EFFECT_POISON:
     case EFFECT_PARALYZE:
+    case EFFECT_THUNDER_WAVE:
     case EFFECT_WILL_O_WISP:
     case EFFECT_YAWN:
         return TRUE;
@@ -3329,6 +3331,7 @@ bool32 PartnerMoveEffectIsStatusSameTarget(u32 battlerAtkPartner, u32 battlerDef
        || gMovesInfo[partnerMove].effect == EFFECT_POISON
        || gMovesInfo[partnerMove].effect == EFFECT_TOXIC
        || gMovesInfo[partnerMove].effect == EFFECT_PARALYZE
+       || gMovesInfo[partnerMove].effect == EFFECT_THUNDER_WAVE
        || gMovesInfo[partnerMove].effect == EFFECT_WILL_O_WISP
        || gMovesInfo[partnerMove].effect == EFFECT_YAWN))
         return TRUE;
@@ -4111,6 +4114,7 @@ void IncreaseSubstituteMoveScore(u32 battlerAtk, u32 battlerDef, u32 move, s32 *
      || HasMoveEffect(battlerDef, EFFECT_TOXIC)
      || HasMoveEffect(battlerDef, EFFECT_POISON)
      || HasMoveEffect(battlerDef, EFFECT_PARALYZE)
+     || HasMoveEffect(battlerDef, EFFECT_THUNDER_WAVE)
      || HasMoveEffect(battlerDef, EFFECT_WILL_O_WISP)
      || HasMoveEffect(battlerDef, EFFECT_CONFUSE)
      || HasMoveEffect(battlerDef, EFFECT_LEECH_SEED))

@@ -890,6 +890,7 @@ static const u32 sStatusFlagsForMoveEffects[NUM_MOVE_EFFECTS] =
     [MOVE_EFFECT_PREVENT_ESCAPE] = STATUS2_ESCAPE_PREVENTION,
     [MOVE_EFFECT_NIGHTMARE]      = STATUS2_NIGHTMARE,
     [MOVE_EFFECT_THRASH]         = STATUS2_LOCK_CONFUSE,
+    [MOVE_EFFECT_THUNDER_WAVE]   = STATUS1_PARALYSIS,
 };
 
 static const u8 *const sMoveEffectBS_Ptrs[] =
@@ -905,6 +906,7 @@ static const u8 *const sMoveEffectBS_Ptrs[] =
     [MOVE_EFFECT_PAYDAY]           = BattleScript_MoveEffectPayDay,
     [MOVE_EFFECT_WRAP]             = BattleScript_MoveEffectWrap,
     [MOVE_EFFECT_FROSTBITE]        = BattleScript_MoveEffectFrostbite,
+    [MOVE_EFFECT_THUNDER_WAVE]     = BattleScript_MoveEffectParalysis,
 };
 
 static const struct WindowTemplate sUnusedWinTemplate =
@@ -1441,6 +1443,7 @@ static bool32 AccuracyCalcHelper(u16 move)
 {
     if ((gStatuses3[gBattlerTarget] & STATUS3_ALWAYS_HITS && gDisableStructs[gBattlerTarget].battlerWithSureHit == gBattlerAttacker)
      || (B_TOXIC_NEVER_MISS >= GEN_6 && gMovesInfo[move].effect == EFFECT_TOXIC && IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_POISON))
+     || (B_TOXIC_NEVER_MISS >= GEN_6 && gMovesInfo[move].effect == EFFECT_THUNDER_WAVE && IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ELECTRIC))
      || gStatuses4[gBattlerTarget] & STATUS4_GLAIVE_RUSH)
     {
         JumpIfMoveFailed(7, move);
@@ -3258,6 +3261,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
             if (gBattleScripting.moveEffect == MOVE_EFFECT_POISON
              || gBattleScripting.moveEffect == MOVE_EFFECT_TOXIC
              || gBattleScripting.moveEffect == MOVE_EFFECT_PARALYSIS
+             || gBattleScripting.moveEffect == MOVE_EFFECT_THUNDER_WAVE
              || gBattleScripting.moveEffect == MOVE_EFFECT_BURN)
              {
                 gBattleStruct->synchronizeMoveEffect = gBattleScripting.moveEffect;

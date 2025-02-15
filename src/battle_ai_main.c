@@ -1392,6 +1392,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_PARALYZE:
+        case EFFECT_THUNDER_WAVE:
             if (!AI_CanParalyze(battlerAtk, battlerDef, aiData->abilities[battlerDef], move, aiData->partnerMove))
                 ADJUST_SCORE(-10);
             break;
@@ -2305,6 +2306,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                         ADJUST_SCORE(-10);
                     break;
                 case MOVE_EFFECT_PARALYSIS:
+                case MOVE_EFFECT_THUNDER_WAVE:
                     if (!AI_CanParalyze(battlerAtk, battlerDef, aiData->abilities[battlerDef], move, aiData->partnerMove))
                         ADJUST_SCORE(-10);
                     break;
@@ -3487,6 +3489,7 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
         IncreaseConfusionScore(battlerAtk, battlerDef, move, &score);
         break;
     case EFFECT_PARALYZE:
+    case EFFECT_THUNDER_WAVE:
         IncreaseParalyzeScore(battlerAtk, battlerDef, move, &score);
         break;
     case EFFECT_SUBSTITUTE:
@@ -4281,6 +4284,7 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
             score += ShouldTryToFlinch(battlerAtk, battlerDef, aiData->abilities[battlerAtk], aiData->abilities[battlerDef], move);
             break;
         case MOVE_EFFECT_PARALYSIS:
+        case MOVE_EFFECT_THUNDER_WAVE:
             IncreaseParalyzeScore(battlerAtk, battlerDef, move, &score);
             break;
         case MOVE_EFFECT_POISON:
@@ -4761,6 +4765,7 @@ static s32 AI_ForceSetupFirstTurn(u32 battlerAtk, u32 battlerDef, u32 move, s32 
     case EFFECT_REFLECT:
     case EFFECT_POISON:
     case EFFECT_PARALYZE:
+    case EFFECT_THUNDER_WAVE:
     case EFFECT_SUBSTITUTE:
     case EFFECT_LEECH_SEED:
     case EFFECT_MINIMIZE:

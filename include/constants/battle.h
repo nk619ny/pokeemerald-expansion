@@ -417,8 +417,9 @@
 #define MOVE_EFFECT_SALT_CURE           86
 #define MOVE_EFFECT_EERIE_SPELL         87
 #define MOVE_EFFECT_SPATK_SPDEF_DOWN    88
+#define MOVE_EFFECT_THUNDER_WAVE        89
 
-#define NUM_MOVE_EFFECTS                89
+#define NUM_MOVE_EFFECTS                90
 
 #define MOVE_EFFECT_AFFECTS_USER        0x2000
 #define MOVE_EFFECT_CERTAIN             0x4000
