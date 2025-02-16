@@ -2535,10 +2535,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_DEWPIDER] =
     {
         .baseHP        = 38,
-        .baseAttack    = 40,
+        .baseAttack    = 50,
         .baseDefense   = 52,
         .baseSpeed     = 27,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 50,
         .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_WATER, TYPE_BUG),
         .catchRate = 200,
@@ -2600,10 +2600,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ARAQUANID] =
     {
         .baseHP        = 68,
-        .baseAttack    = 70,
+        .baseAttack    = 85,
         .baseDefense   = 92,
         .baseSpeed     = 42,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 60,
         .baseSpDefense = 132,
         .types = MON_TYPES(TYPE_WATER, TYPE_BUG),
         .catchRate = 100,

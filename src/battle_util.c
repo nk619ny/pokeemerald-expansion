@@ -9391,7 +9391,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         break;
     case ABILITY_WATER_BUBBLE:
         if (moveType == TYPE_WATER)
-           modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_STEELWORKER:
         if (moveType == TYPE_STEEL)
@@ -9463,6 +9463,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         case ABILITY_STEELY_SPIRIT:
             if (moveType == TYPE_STEEL)
                 modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+            break;
+        case ABILITY_PUNK_ROCK:
+            if (gMovesInfo[move].soundMove)
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
             break;
         }
     }
