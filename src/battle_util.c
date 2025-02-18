@@ -9475,6 +9475,13 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
     switch (defAbility)
     {
     case ABILITY_HEATPROOF:
+        if (moveType == TYPE_FIRE)
+        {
+            modifier = uq4_12_multiply(modifier, UQ_4_12(0.25));
+            if (damageCalcData->updateFlags)
+                RecordAbilityBattle(battlerDef, defAbility);
+        }
+        break;
     case ABILITY_WATER_BUBBLE:
         if (moveType == TYPE_FIRE)
         {
