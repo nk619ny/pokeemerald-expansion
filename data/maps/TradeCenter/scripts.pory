@@ -13,3 +13,36 @@ script Common_EventScript_LevelCapUpdate {
 	closemessage
 	return
 }
+
+script Common_EventScript_ApplyHandicap {
+	switch (var(VAR_LEVEL_HANDICAP)) {
+		case 0:
+			return
+		case 1:
+			addvar(VAR_LEVEL_CAP,1)
+		case 2:
+			addvar(VAR_LEVEL_CAP,2)
+		case 3:
+			addvar(VAR_LEVEL_CAP,3)
+		case 4:
+			addvar(VAR_LEVEL_CAP,4)
+		case 5:
+			addvar(VAR_LEVEL_CAP,5)
+		case 6:
+			addvar(VAR_LEVEL_CAP,6)
+		case 7:
+			addvar(VAR_LEVEL_CAP,7)
+		case 8:
+			addvar(VAR_LEVEL_CAP,8)
+		case 9:
+			addvar(VAR_LEVEL_CAP,9)
+		case 10:
+			addvar(VAR_LEVEL_CAP,10)
+		default:
+			return
+	}
+	if (var(VAR_LEVEL_CAP) > 100) {
+		setvar(VAR_LEVEL_CAP,100)
+	}
+	return
+}

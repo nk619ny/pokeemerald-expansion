@@ -1024,6 +1024,8 @@ const WATER_STARTER_BALL = 9
 
 //Uses VAR_TEMP_8 to signify starter region selected
 //Uses VAR_TEMP_7 to record answer to starter offer
+//Uses VAR_TEMP_9 to store handicap answer
+//Uses VAR_TEMP_4 to store resultant prospective handicap
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen{
     lock
@@ -1452,8 +1454,190 @@ movement BirchApproachGivePokedex_WaterStarter{
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_Aide{
 	lock
+	if (flag(FLAG_ADVENTURE_STARTED)) {
+		goto(LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap)
+	}
+	else {
+		goto(LittlerootTown_ProfessorBirchsLab_EventScript_Aide_Intro)
+	}
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_Aide_Intro{
+	lock
 	faceplayer
 	msgbox(format("Hello, {PLAYER}! Professor Birch is very excited about your Pokémon journey."))
 	release
 	end
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap {
+	lock
+	faceplayer
+	msgbox(LittlerootTown_ProfessorBirchsLab_Text_ExplainHandicap)
+	waitmessage
+	buffernumberstring(STR_VAR_1,VAR_LEVEL_HANDICAP)
+	if(var(VAR_LEVEL_HANDICAP) == 0){
+		msgbox(format("You currently do not have a handicap.\pWould you like to set one?"),MSGBOX_YESNO)
+	}
+	else{
+		msgbox(format("You currently have a handicap of {STR_VAR_1}.\pWould you like to change it?"),MSGBOX_YESNO)
+	}
+	waitmessage
+	if (var(VAR_RESULT) == YES) {
+		closemessage
+		goto(LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes)
+	}
+	else {
+		msgbox(format("If you ever change your mind, come back and talk to me."))
+	}
+	waitmessage
+	releaseall
+	end
+}
+
+text LittlerootTown_ProfessorBirchsLab_Text_ExplainHandicap {
+	format("I can help you register a handicap for your adventure.\pA handicap will let you use slightly higher level Pokémon than you otherwise could, in all battles.\pRemember, though, that once a handicap is set it can’t be lowered, and it will be recorded by the Pokémon League challenge.")
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes {
+	if(var(VAR_LEVEL_HANDICAP) == 10){
+		msgbox(format("You currently have a handicap of 10.\pWe cannot change it any further."))
+		waitmessage
+		releaseall
+		end
+	}
+	elif(var(VAR_LEVEL_HANDICAP) == 0){
+		msgbox(format("What level handicap would you like?"))
+        dynmultichoice(25,2,0,5,0,DYN_MULTICHOICE_CB_NONE,"0","1","2","3","4","5","6","7","8","9","10")
+        copyvar(VAR_TEMP_9,VAR_RESULT)      
+		waitmessage
+
+		if(var(VAR_TEMP_9) == 0){
+			msgbox(format("Very well, you still do not have a handicap.\pCome back if you ever decide to add one."))
+			waitmessage
+			releaseall
+			end
+		}
+		elif(var(VAR_TEMP_9) == 127){
+			setvar(VAR_TEMP_9,0)
+			msgbox(format("Very well, you still do not have a handicap.\pCome back if you ever decide to add one."))
+			waitmessage
+			releaseall
+			end
+		else{
+			buffernumberstring(STR_VAR_2,VAR_TEMP_9)
+			msgbox(format("Are you sure you would like a handicap of {STR_VAR_2} levels?"),MSGBOX_YESNO)
+
+			if(var(VAR_RESULT) == YES){
+				copyvar(VAR_LEVEL_HANDICAP,VAR_TEMP_9)
+				msgbox(format("Your handicap has been set to {STR_VAR_2} levels."))
+				waitmessage
+				call(LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap)
+				releaseall
+				end
+			}
+			else{
+				msgbox(format("Very well, you still do not have a handicap.\pCome back if you ever decide to add one."))
+				waitmessage
+				releaseall
+				end
+			}
+		}
+	}
+	else {
+		buffernumberstring(STR_VAR_1,VAR_LEVEL_HANDICAP)
+		copyvar(VAR_TEMP_4,VAR_LEVEL_HANDICAP)
+		dynmultipush("0",0)
+		if(var(VAR_LEVEL_HANDICAP) <= 9){dynmultipush("1",1)}
+		if(var(VAR_LEVEL_HANDICAP) <= 8){dynmultipush("2",2)}
+		if(var(VAR_LEVEL_HANDICAP) <= 7){dynmultipush("3",3)}
+		if(var(VAR_LEVEL_HANDICAP) <= 6){dynmultipush("4",4)}
+		if(var(VAR_LEVEL_HANDICAP) <= 5){dynmultipush("5",5)}
+		if(var(VAR_LEVEL_HANDICAP) <= 4){dynmultipush("6",6)}
+		if(var(VAR_LEVEL_HANDICAP) <= 3){dynmultipush("7",7)}
+		if(var(VAR_LEVEL_HANDICAP) <= 2){dynmultipush("8",8)}
+		if(var(VAR_LEVEL_HANDICAP) <= 1){dynmultipush("9",9)}
+//		if(var(VAR_LEVEL_HANDICAP) == 0){dynmultipush("10",10)}
+		msgbox(format("How much would you like to increase it?"))
+		dynmultistack(25,2,FALSE,5,1,0,DYN_MULTICHOICE_CB_NONE)
+		copyvar(VAR_TEMP_9,VAR_RESULT)    
+		waitmessage  
+
+		switch(var(VAR_TEMP_9)){
+			case 0:
+				msgbox(format("Your handicap remains at {STR_VAR_1}.\pCome back if you ever decide to increase it."))  
+				waitmessage
+				closemessage
+				releaseall
+				end
+			case 1:
+				addvar(VAR_TEMP_4,1)
+			case 2:
+				addvar(VAR_TEMP_4,2)
+			case 3:
+				addvar(VAR_TEMP_4,3)
+			case 4:
+				addvar(VAR_TEMP_4,4)
+			case 5:
+				addvar(VAR_TEMP_4,5)
+			case 6:
+				addvar(VAR_TEMP_4,6)
+			case 7:
+				addvar(VAR_TEMP_4,7)
+			case 8:
+				addvar(VAR_TEMP_4,8)
+			case 9:
+				addvar(VAR_TEMP_4,9)
+			case 10:
+				addvar(VAR_TEMP_4,10)
+			default:
+				msgbox(format("Your handicap remains at {STR_VAR_1}.\pCome back if you ever decide to increase it."))  
+				waitmessage
+				releaseall
+				end
+		}
+		buffernumberstring(STR_VAR_2,VAR_TEMP_4)
+		msgbox(format("Are you sure you would like to increase your handicap from {STR_VAR_1} to {STR_VAR_2}?"),MSGBOX_YESNO)
+		waitmessage
+		if(var(VAR_RESULT) == YES){
+			copyvar(VAR_LEVEL_HANDICAP,VAR_TEMP_4)
+			call(LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap)
+			msgbox(format("Very well. Your handicap has been set to {STR_VAR_2}.\pCome back if you ever decide to increase it."))
+		}
+		else{
+			msgbox(format("Very well. Your handicap remains at {STR_VAR_1}.\pCome back if you ever decide to increase it."))  
+		}
+		waitmessage
+		releaseall
+		end
+	}
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap{
+				switch(var(VAR_TEMP_9)){
+					case 1:
+						addvar(VAR_LEVEL_CAP,1)
+					case 2:
+						addvar(VAR_LEVEL_CAP,2)
+					case 3:	
+						addvar(VAR_LEVEL_CAP,3)
+					case 4:
+						addvar(VAR_LEVEL_CAP,4)
+					case 5:
+						addvar(VAR_LEVEL_CAP,5)
+					case 6:
+						addvar(VAR_LEVEL_CAP,6)
+					case 7:
+						addvar(VAR_LEVEL_CAP,7)
+					case 8:
+						addvar(VAR_LEVEL_CAP,8)
+					case 9:
+						addvar(VAR_LEVEL_CAP,9)
+					case 10:	
+						addvar(VAR_LEVEL_CAP,10)
+					default:
+						delay(1)
+				}
+				setvar(VAR_TEMP_9,0)
+				return
 }

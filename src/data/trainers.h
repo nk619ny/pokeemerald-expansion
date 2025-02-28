@@ -25744,7 +25744,7 @@ F_TRAINER_FEMALE |
 #line 10405
             .ability = ABILITY_OVERGROW,
 #line 10404
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -25764,7 +25764,7 @@ F_TRAINER_FEMALE |
 #line 10414
             .ability = ABILITY_CLEAR_BODY,
 #line 10413
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -26028,7 +26028,7 @@ F_TRAINER_FEMALE |
 #line 10525
             .ability = ABILITY_BLAZE,
 #line 10524
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -26048,7 +26048,7 @@ F_TRAINER_FEMALE |
 #line 10534
             .ability = ABILITY_FLOWER_VEIL,
 #line 10533
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -26313,7 +26313,7 @@ F_TRAINER_FEMALE |
 #line 10645
             .ability = ABILITY_TORRENT,
 #line 10644
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -26333,14 +26333,14 @@ F_TRAINER_FEMALE |
 #line 10654
             .ability = ABILITY_CURSED_BODY,
 #line 10653
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 10655
                 MOVE_NIGHT_SHADE,
                 MOVE_ASTONISH,
-                MOVE_MEGA_DRAIN,
+                MOVE_ABSORB,
                 MOVE_AROMATIC_MIST,
             },
             },
@@ -26599,7 +26599,7 @@ F_TRAINER_FEMALE |
 #line 10766
             .ability = ABILITY_OVERGROW,
 #line 10765
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -26619,7 +26619,7 @@ F_TRAINER_FEMALE |
 #line 10775
             .ability = ABILITY_CLEAR_BODY,
 #line 10774
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -26889,7 +26889,7 @@ F_TRAINER_FEMALE |
 #line 10886
             .ability = ABILITY_BLAZE,
 #line 10885
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -26909,7 +26909,7 @@ F_TRAINER_FEMALE |
 #line 10895
             .ability = ABILITY_FLOWER_VEIL,
 #line 10894
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -27180,7 +27180,7 @@ F_TRAINER_FEMALE |
 #line 11006
             .ability = ABILITY_TORRENT,
 #line 11005
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -27200,14 +27200,14 @@ F_TRAINER_FEMALE |
 #line 11015
             .ability = ABILITY_CURSED_BODY,
 #line 11014
-            .lvl = 8,
+            .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 11016
                 MOVE_NIGHT_SHADE,
                 MOVE_ASTONISH,
-                MOVE_MEGA_DRAIN,
+                MOVE_ABSORB,
                 MOVE_AROMATIC_MIST,
             },
             },

@@ -1011,71 +1011,73 @@ PetalburgWoods_EventScript_AquaGruntPostBattle::
 # 513 "data/maps/PetalburgWoods/scripts.pory"
 	setvar VAR_LEVEL_CAP, 17
 # 514 "data/maps/PetalburgWoods/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 515 "data/maps/PetalburgWoods/scripts.pory"
 	call Common_EventScript_LevelCapUpdate
-# 520 "data/maps/PetalburgWoods/scripts.pory"
+# 521 "data/maps/PetalburgWoods/scripts.pory"
 	releaseall
 	end
 
 
-# 532 "data/maps/PetalburgWoods/scripts.pory"
+# 533 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Movement_PeekoEscape:
-# 533 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_down
-# 533 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_down
-# 533 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_down
-# 533 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_down
-# 533 "data/maps/PetalburgWoods/scripts.pory"
+# 534 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_down
 # 534 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_left
+	walk_fast_down
 # 534 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_left
+	walk_fast_down
 # 534 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_left
+	walk_fast_down
 # 534 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_down
+# 535 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 534 "data/maps/PetalburgWoods/scripts.pory"
+# 535 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 534 "data/maps/PetalburgWoods/scripts.pory"
+# 535 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 534 "data/maps/PetalburgWoods/scripts.pory"
+# 535 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 534 "data/maps/PetalburgWoods/scripts.pory"
+# 535 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
-# 534 "data/maps/PetalburgWoods/scripts.pory"
+# 535 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 535 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 535 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_left
+# 535 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 537 "data/maps/PetalburgWoods/scripts.pory"
+# 538 "data/maps/PetalburgWoods/scripts.pory"
 PetalburgWoods_Movement_AquaGruntFlee:
-# 538 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_up
-# 538 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_up
-# 538 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_up
-# 538 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_up
-# 538 "data/maps/PetalburgWoods/scripts.pory"
+# 539 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_up
 # 539 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_right
+	walk_fast_up
 # 539 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_right
+	walk_fast_up
 # 539 "data/maps/PetalburgWoods/scripts.pory"
-	walk_fast_right
+	walk_fast_up
 # 539 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_up
+# 540 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
-# 539 "data/maps/PetalburgWoods/scripts.pory"
+# 540 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
-# 539 "data/maps/PetalburgWoods/scripts.pory"
+# 540 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
-# 539 "data/maps/PetalburgWoods/scripts.pory"
+# 540 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
-# 539 "data/maps/PetalburgWoods/scripts.pory"
+# 540 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 540 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 540 "data/maps/PetalburgWoods/scripts.pory"
+	walk_fast_right
+# 540 "data/maps/PetalburgWoods/scripts.pory"
 	walk_fast_right
 	step_end
 
@@ -1107,10 +1109,10 @@ PetalburgWoods_EventScript_AquaGruntPostBattle_Text_1:
 	.string "environment of Hoenn.$"
 
 PetalburgWoods_Text_AquaGruntDefeated::
-# 524 "data/maps/PetalburgWoods/scripts.pory"
+# 525 "data/maps/PetalburgWoods/scripts.pory"
 	.string "You're stronger than you look.$"
 
 PetalburgWoods_Text_AquaGruntLost::
-# 528 "data/maps/PetalburgWoods/scripts.pory"
+# 529 "data/maps/PetalburgWoods/scripts.pory"
 	.string "We're going to make sure no more damage\n"
 	.string "is done to Hoenn's environment!$"

@@ -852,6 +852,8 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 MauvilleCity_Gym_EventScript_SetNewLevelCap::
 # 432 "data/maps/MauvilleCity_Gym/scripts.pory"
 	setvar VAR_LEVEL_CAP, 45
+# 433 "data/maps/MauvilleCity_Gym/scripts.pory"
+	call Common_EventScript_ApplyHandicap
 # 434 "data/maps/MauvilleCity_Gym/scripts.pory"
 	call Common_EventScript_LevelCapUpdate
 	return

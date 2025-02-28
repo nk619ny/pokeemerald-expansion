@@ -10401,7 +10401,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Treecko
-Level: 8
+Level: 6
 Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leafage
@@ -10410,7 +10410,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Absorb
 
 Beldum  
-Level: 8
+Level: 6
 Ability: Clear Body  
 - Tackle  
 - Take Down  
@@ -10521,7 +10521,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Torchic
-Level: 8
+Level: 6
 Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
@@ -10530,7 +10530,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Peck
 
 Flabebe-White  
-Level: 8
+Level: 6
 Ability: Flower Veil  
 - Disarming Voice  
 - Vine Whip  
@@ -10641,7 +10641,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mudkip
-Level: 8
+Level: 6
 Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
@@ -10650,11 +10650,11 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Smash
 
 Sinistea-Antique  
-Level: 8
+Level: 6
 Ability: Cursed Body  
 - Night Shade  
 - Astonish  
-- Mega Drain  
+- Absorb  
 - Aromatic Mist  
 
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
@@ -10762,7 +10762,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Treecko
-Level: 8
+Level: 6
 Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Absorb
@@ -10771,7 +10771,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leafage
 
 Beldum  
-Level: 8
+Level: 6
 Ability: Clear Body  
 - Tackle  
 - Take Down  
@@ -10882,7 +10882,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Torchic
-Level: 8
+Level: 6
 Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
@@ -10891,7 +10891,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Peck
 
 Flabebe-White  
-Level: 8
+Level: 6
 Ability: Flower Veil  
 - Disarming Voice  
 - Vine Whip  
@@ -11002,7 +11002,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mudkip
-Level: 8
+Level: 6
 Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
@@ -11011,11 +11011,11 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Smash
 
 Sinistea-Antique  
-Level: 8
+Level: 6
 Ability: Cursed Body  
 - Night Shade  
 - Astonish  
-- Mega Drain  
+- Absorb
 - Aromatic Mist  
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===

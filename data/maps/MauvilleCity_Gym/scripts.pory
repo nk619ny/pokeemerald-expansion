@@ -430,7 +430,7 @@ const LOCALID_GYMGUIDE = 6
 script MauvilleCity_Gym_EventScript_SetNewLevelCap {
 //	setvar(VAR_LEVEL_HANDICAP, 5)
 	setvar(VAR_LEVEL_CAP, 45)
-//	addvar(VAR_LEVEL_CAP, VAR_LEVEL_HANDICAP)
+	call(Common_EventScript_ApplyHandicap)
 	call(Common_EventScript_LevelCapUpdate)
 //	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
 //	msgbox("{PLAYER} grew to Trainer Level {STR_VAR_1}!",MSGBOX_DEFAULT)
