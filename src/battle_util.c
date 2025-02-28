@@ -5198,7 +5198,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_WIND_RIDER: //added Sandstorm as a Wind Rider switch-in attack raise effect
             if (!gSpecialStatuses[battler].switchInAbilityDone
              && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
-             && ((gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_TAILWIND) || (gBattleWeather & B_WEATHER_SANDSTORM && WEATHER_HAS_EFFECT)))
+             && ((gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_TAILWIND) || (gBattleWeather & B_WEATHER_SANDSTORM && HasWeatherEffect())))
             {
                 gBattleScripting.savedBattler = gBattlerAttacker;
                 gBattlerAttacker = battler;

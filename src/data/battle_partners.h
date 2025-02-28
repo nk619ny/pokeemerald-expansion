@@ -15,7 +15,9 @@
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 4
         .trainerPic = TRAINER_BACK_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
+#line 5
+F_TRAINER_FEMALE | 
 #line 6
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 0,
@@ -32,7 +34,7 @@
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 11
         .trainerPic = TRAINER_BACK_PIC_STEVEN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 3,
@@ -104,7 +106,7 @@
         },
     },
 #line 45
-    [PARTNER_AQUA] =
+    [DIFFICULTY_NORMAL][PARTNER_AQUA] =
     {
 #line 46
         .trainerName = _("Shelly"),
@@ -112,7 +114,7 @@
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 48
         .trainerPic = TRAINER_BACK_PIC_LEAF,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 49
 F_TRAINER_FEMALE | 
 #line 50
@@ -198,7 +200,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 82
-    [PARTNER_MAGMA] =
+    [DIFFICULTY_NORMAL][PARTNER_MAGMA] =
     {
 #line 83
         .trainerName = _("Tabitha"),
@@ -206,7 +208,7 @@ F_TRAINER_FEMALE |
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
 #line 85
         .trainerPic = TRAINER_BACK_PIC_RED,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 87
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .partySize = 3,
