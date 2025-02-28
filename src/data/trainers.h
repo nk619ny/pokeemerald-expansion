@@ -8,15 +8,15 @@
 
 #line 1 "src/data/trainers.party"
 
-#line 101
-    [TRAINER_NONE] =
+#line 76
+    [DIFFICULTY_NORMAL][TRAINER_NONE] =
     {
 #line 103
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 104
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 106
+#line 81
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 107
         .doubleBattle = TRUE,
@@ -27,8 +27,8 @@
         {
         },
     },
-#line 111
-    [TRAINER_SAWYER_1] =
+#line 84
+    [DIFFICULTY_NORMAL][TRAINER_SAWYER_1] =
     {
 #line 112
         .trainerName = _("SAWYER"),
@@ -37,7 +37,7 @@
 #line 114
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 116
+#line 89
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 117
         .doubleBattle = TRUE,
@@ -59,8 +59,8 @@
             },
         },
     },
-#line 124
-    [TRAINER_GRUNT_AQUA_HIDEOUT_1] =
+#line 97
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_1] =
     {
 #line 125
         .trainerName = _("GRUNT"),
@@ -69,7 +69,7 @@
 #line 127
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 129
+#line 102
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 130
         .doubleBattle = TRUE,
@@ -91,8 +91,8 @@
             },
         },
     },
-#line 137
-    [TRAINER_GRUNT_AQUA_HIDEOUT_2] =
+#line 110
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_2] =
     {
 #line 138
         .trainerName = _("GRUNT"),
@@ -101,7 +101,7 @@
 #line 140
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 142
+#line 115
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 143
         .doubleBattle = TRUE,
@@ -134,8 +134,8 @@
             },
         },
     },
-#line 154
-    [TRAINER_GRUNT_AQUA_HIDEOUT_3] =
+#line 127
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_3] =
     {
 #line 155
         .trainerName = _("GRUNT"),
@@ -144,7 +144,7 @@
 #line 157
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 159
+#line 132
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 160
         .doubleBattle = TRUE,
@@ -166,8 +166,8 @@
             },
         },
     },
-#line 167
-    [TRAINER_GRUNT_AQUA_HIDEOUT_4] =
+#line 140
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_4] =
     {
 #line 168
         .trainerName = _("GRUNT"),
@@ -176,7 +176,7 @@
 #line 170
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 172
+#line 145
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 173
         .doubleBattle = TRUE,
@@ -198,8 +198,8 @@
             },
         },
     },
-#line 180
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
+#line 153
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
     {
 #line 181
         .trainerName = _("GRUNT"),
@@ -208,7 +208,7 @@
 #line 183
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 185
+#line 158
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 186
         .doubleBattle = TRUE,
@@ -230,8 +230,8 @@
             },
         },
     },
-#line 193
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
+#line 166
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
     {
 #line 194
         .trainerName = _("GRUNT"),
@@ -240,7 +240,7 @@
 #line 196
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 198
+#line 171
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 199
         .doubleBattle = TRUE,
@@ -262,8 +262,8 @@
             },
         },
     },
-#line 206
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
+#line 179
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
     {
 #line 207
         .trainerName = _("GRUNT"),
@@ -272,7 +272,7 @@
 #line 209
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 211
+#line 184
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 212
         .doubleBattle = TRUE,
@@ -294,8 +294,8 @@
             },
         },
     },
-#line 219
-    [TRAINER_GABRIELLE_1] =
+#line 192
+    [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_1] =
     {
 #line 220
         .trainerName = _("GABRIELLE"),
@@ -304,7 +304,7 @@
 #line 222
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 223
+#line 196
 F_TRAINER_FEMALE | 
 #line 224
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -383,8 +383,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 252
-    [TRAINER_GRUNT_PETALBURG_WOODS] =
+#line 225
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_PETALBURG_WOODS] =
     {
 #line 253
         .trainerName = _("GRUNT"),
@@ -393,7 +393,7 @@ F_TRAINER_FEMALE |
 #line 255
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 257
+#line 230
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 258
         .doubleBattle = TRUE,
@@ -421,72 +421,11 @@ F_TRAINER_FEMALE |
 #line 266
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 268
-                MOVE_GIGA_DRAIN,
-                MOVE_CHILLING_WATER,
-                MOVE_ACID_SPRAY,
-                MOVE_WHIRLPOOL,
-            },
-            },
-            {
-#line 273
-            .species = SPECIES_TOEDSCOOL,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 273
-            .heldItem = ITEM_ORAN_BERRY,
-#line 277
-            .ev = TRAINER_PARTY_EVS(224, 156, 64, 0, 44, 0),
-#line 279
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 274
-            .ability = ABILITY_MYCELIUM_MIGHT,
-#line 276
-            .lvl = 12,
-#line 275
-            .ball = ITEM_NEST_BALL,
-#line 278
-            .nature = NATURE_SASSY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 279
-                MOVE_BULLET_SEED,
-                MOVE_STUN_SPORE,
-                MOVE_LEECH_SEED,
-                MOVE_MUD_SHOT,
-            },
-            },
-            {
-#line 284
-            .nickname = COMPOUND_STRING("Peeko"),
-#line 284
-            .species = SPECIES_WINGULL,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 284
-            .heldItem = ITEM_LIECHI_BERRY,
-#line 287
-            .ev = TRAINER_PARTY_EVS(224, 236, 0, 32, 0, 0),
-#line 289
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 285
-            .ability = ABILITY_HYDRATION,
-#line 286
-            .lvl = 12,
-#line 288
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 289
-                MOVE_ACROBATICS,
-                MOVE_LIQUIDATION,
-                MOVE_DUAL_WINGBEAT,
-                MOVE_QUICK_ATTACK,
-            },
             },
         },
     },
-#line 295
-    [TRAINER_MARCEL] =
+#line 238
+    [DIFFICULTY_NORMAL][TRAINER_MARCEL] =
     {
 #line 296
         .trainerName = _("MARCEL"),
@@ -495,7 +434,7 @@ F_TRAINER_FEMALE |
 #line 298
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 300
+#line 243
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 301
         .doubleBattle = TRUE,
@@ -528,8 +467,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 312
-    [TRAINER_ALBERTO] =
+#line 256
+    [DIFFICULTY_NORMAL][TRAINER_ALBERTO] =
     {
 #line 313
         .trainerName = _("ALBERTO"),
@@ -538,7 +477,7 @@ F_TRAINER_FEMALE |
 #line 315
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 317
+#line 261
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 318
         .doubleBattle = TRUE,
@@ -571,8 +510,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 329
-    [TRAINER_ED] =
+#line 273
+    [DIFFICULTY_NORMAL][TRAINER_ED] =
     {
 #line 330
         .trainerName = _("ED"),
@@ -581,7 +520,7 @@ F_TRAINER_FEMALE |
 #line 332
         .trainerPic = TRAINER_PIC_COLLECTOR,
         .encounterMusic_gender =
-#line 334
+#line 278
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 335
         .doubleBattle = TRUE,
@@ -614,8 +553,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 346
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =
+#line 290
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =
     {
 #line 347
         .trainerName = _("GRUNT"),
@@ -624,7 +563,7 @@ F_TRAINER_FEMALE |
 #line 349
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .encounterMusic_gender =
-#line 350
+#line 294
 F_TRAINER_FEMALE | 
 #line 351
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -648,8 +587,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 359
-    [TRAINER_DECLAN] =
+#line 303
+    [DIFFICULTY_NORMAL][TRAINER_DECLAN] =
     {
 #line 360
         .trainerName = _("DECLAN"),
@@ -658,7 +597,7 @@ F_TRAINER_FEMALE |
 #line 362
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 364
+#line 308
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 365
         .doubleBattle = TRUE,
@@ -680,8 +619,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 372
-    [TRAINER_GRUNT_RUSTURF_TUNNEL] =
+#line 316
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_RUSTURF_TUNNEL] =
     {
 #line 373
         .trainerName = _("GRUNT"),
@@ -690,7 +629,7 @@ F_TRAINER_FEMALE |
 #line 375
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 377
+#line 321
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 378
         .doubleBattle = TRUE,
@@ -716,91 +655,11 @@ F_TRAINER_FEMALE |
 #line 385
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 386
-                MOVE_STONE_EDGE,
-                MOVE_SUCKER_PUNCH,
-                MOVE_FIRE_PUNCH,
-                MOVE_HEAVY_SLAM,
-            },
-            },
-            {
-#line 391
-            .species = SPECIES_GASTRODON,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 391
-            .heldItem = ITEM_RINDO_BERRY,
-#line 394
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
-#line 396
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 392
-            .ability = ABILITY_STORM_DRAIN,
-#line 393
-            .lvl = 26,
-#line 395
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 397
-                MOVE_EARTH_POWER,
-                MOVE_WATER_PULSE,
-                MOVE_RECOVER,
-                MOVE_BLIZZARD,
-            },
-            },
-            {
-#line 402
-            .species = SPECIES_EXPLOUD,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 402
-            .heldItem = ITEM_THROAT_SPRAY,
-#line 405
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
-#line 407
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 403
-            .ability = ABILITY_SCRAPPY,
-#line 404
-            .lvl = 26,
-#line 406
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 408
-                MOVE_HYPER_VOICE,
-                MOVE_FLAMETHROWER,
-                MOVE_ICE_BEAM,
-                MOVE_SHADOW_BALL,
-            },
-            },
-            {
-#line 413
-            .species = SPECIES_SPIDOPS,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 416
-            .ev = TRAINER_PARTY_EVS(248, 252, 0, 0, 0, 8),
-#line 418
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 414
-            .ability = ABILITY_STAKEOUT,
-#line 415
-            .lvl = 26,
-#line 417
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 418
-                MOVE_FIRST_IMPRESSION,
-                MOVE_CIRCLE_THROW,
-                MOVE_TRAILBLAZE,
-                MOVE_SILK_TRAP,
-            },
             },
         },
     },
-#line 425
-    [TRAINER_GRUNT_WEATHER_INST_1] =
+#line 329
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_1] =
     {
 #line 426
         .trainerName = _("GRUNT"),
@@ -809,7 +668,7 @@ F_TRAINER_FEMALE |
 #line 428
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 430
+#line 334
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 431
         .doubleBattle = TRUE,
@@ -842,8 +701,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 442
-    [TRAINER_GRUNT_WEATHER_INST_2] =
+#line 346
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_2] =
     {
 #line 443
         .trainerName = _("GRUNT"),
@@ -852,7 +711,7 @@ F_TRAINER_FEMALE |
 #line 445
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 447
+#line 351
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 448
         .doubleBattle = TRUE,
@@ -885,8 +744,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 459
-    [TRAINER_GRUNT_WEATHER_INST_3] =
+#line 363
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_3] =
     {
 #line 460
         .trainerName = _("GRUNT"),
@@ -895,7 +754,7 @@ F_TRAINER_FEMALE |
 #line 462
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 464
+#line 368
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 465
         .doubleBattle = TRUE,
@@ -939,23 +798,23 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 480
-    [TRAINER_GRUNT_FARM_1] =
+#line 384
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_1] =
     {
 #line 481
         .trainerName = _("GRUNT"),
-#line 482
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 483
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+#line 386
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+#line 387
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 485
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 486
-        .doubleBattle = TRUE,
-#line 487
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
-        .partySize = 4,
+#line 389
+            TRAINER_ENCOUNTER_MUSIC_AQUA,
+#line 390
+        .doubleBattle = FALSE,
+#line 391
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 1,
         .party = (const struct TrainerMon[])
         {
             {
@@ -970,96 +829,20 @@ F_TRAINER_FEMALE |
             .lvl = 19,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 492
-                MOVE_FAKE_OUT,
-                MOVE_FLAME_CHARGE,
-                MOVE_LEECH_LIFE,
-                MOVE_WILL_O_WISP,
-            },
-            },
-            {
-#line 497
-            .species = SPECIES_MARACTUS,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 497
-            .heldItem = ITEM_COBA_BERRY,
-#line 500
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 498
-            .ability = ABILITY_STORM_DRAIN,
-#line 499
-            .lvl = 19,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 500
-                MOVE_COTTON_GUARD,
-                MOVE_NEEDLE_ARM,
-                MOVE_DRAIN_PUNCH,
-                MOVE_HELPING_HAND,
-            },
-            },
-            {
-#line 505
-            .species = SPECIES_MAGCARGO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 505
-            .heldItem = ITEM_PASSHO_BERRY,
-#line 508
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 30, 31),
-#line 506
-            .ability = ABILITY_FLAME_BODY,
-#line 507
-            .lvl = 19,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 509
-                MOVE_ROCK_SLIDE,
-                MOVE_FLAME_BURST,
-                MOVE_HIDDEN_POWER,
-                MOVE_RECOVER,
-            },
-            },
-            {
-#line 514
-            .species = SPECIES_NIDORINA,
-#line 514
-            .gender = TRAINER_MON_FEMALE,
-#line 514
-            .heldItem = ITEM_SHUCA_BERRY,
-#line 517
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 515
-            .ability = ABILITY_HUSTLE,
-#line 516
-            .lvl = 19,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 517
-                MOVE_BODY_SLAM,
-                MOVE_POISON_JAB,
-                MOVE_IRON_TAIL,
-                MOVE_REFLECT,
-            },
             },
         },
     },
-#line 523
-    [TRAINER_GRUNT_FARM_2] =
+#line 397
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_2] =
     {
-#line 524
+#line 398
         .trainerName = _("GRUNT"),
 #line 525
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-#line 526
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+#line 400
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 527
-F_TRAINER_FEMALE | 
-#line 528
+#line 402
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 529
         .doubleBattle = TRUE,
@@ -1102,62 +885,11 @@ F_TRAINER_FEMALE |
             .lvl = 19,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 544
-                MOVE_BOUNCE,
-                MOVE_FLAIL,
-                MOVE_MUD_BOMB,
-                MOVE_BUBBLE_BEAM,
-            },
-            },
-            {
-#line 549
-            .species = SPECIES_BOLDORE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 549
-            .heldItem = ITEM_CHOPLE_BERRY,
-#line 552
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 550
-            .ability = ABILITY_STURDY,
-#line 551
-            .lvl = 19,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 552
-                MOVE_BODY_PRESS,
-                MOVE_HEAVY_SLAM,
-                MOVE_ROCK_BLAST,
-                MOVE_WIDE_GUARD,
-            },
-            },
-            {
-#line 557
-            .species = SPECIES_FEAROW,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 557
-            .heldItem = ITEM_CHARTI_BERRY,
-#line 560
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 558
-            .ability = ABILITY_SNIPER,
-#line 559
-            .lvl = 19,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 560
-                MOVE_QUICK_ATTACK,
-                MOVE_PLUCK,
-                MOVE_U_TURN,
-                MOVE_TRI_ATTACK,
-            },
             },
         },
     },
-#line 566
-    [TRAINER_GRUNT_SPACE_CENTER_1] =
+#line 414
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_1] =
     {
 #line 567
         .trainerName = _("GRUNT"),
@@ -1166,7 +898,7 @@ F_TRAINER_FEMALE |
 #line 569
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 571
+#line 419
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 572
         .doubleBattle = TRUE,
@@ -1188,8 +920,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 579
-    [TRAINER_GRUNT_MT_PYRE_1] =
+#line 427
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_1] =
     {
 #line 580
         .trainerName = _("GRUNT"),
@@ -1198,7 +930,7 @@ F_TRAINER_FEMALE |
 #line 582
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 584
+#line 432
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 585
         .doubleBattle = TRUE,
@@ -1220,8 +952,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 592
-    [TRAINER_GRUNT_MT_PYRE_2] =
+#line 440
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_2] =
     {
 #line 593
         .trainerName = _("GRUNT"),
@@ -1230,7 +962,7 @@ F_TRAINER_FEMALE |
 #line 595
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 597
+#line 445
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 598
         .doubleBattle = TRUE,
@@ -1252,8 +984,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 605
-    [TRAINER_GRUNT_MT_PYRE_3] =
+#line 453
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_3] =
     {
 #line 606
         .trainerName = _("GRUNT"),
@@ -1262,7 +994,7 @@ F_TRAINER_FEMALE |
 #line 608
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 610
+#line 458
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 611
         .doubleBattle = TRUE,
@@ -1295,8 +1027,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 622
-    [TRAINER_GRUNT_WEATHER_INST_4] =
+#line 470
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_4] =
     {
 #line 623
         .trainerName = _("GRUNT"),
@@ -1305,7 +1037,7 @@ F_TRAINER_FEMALE |
 #line 625
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .encounterMusic_gender =
-#line 626
+#line 474
 F_TRAINER_FEMALE | 
 #line 627
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -1329,8 +1061,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 635
-    [TRAINER_GRUNT_AQUA_HIDEOUT_5] =
+#line 483
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_5] =
     {
 #line 636
         .trainerName = _("GRUNT"),
@@ -1339,7 +1071,7 @@ F_TRAINER_FEMALE |
 #line 638
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .encounterMusic_gender =
-#line 639
+#line 487
 F_TRAINER_FEMALE | 
 #line 640
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -1363,8 +1095,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 648
-    [TRAINER_GRUNT_AQUA_HIDEOUT_6] =
+#line 496
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_6] =
     {
 #line 649
         .trainerName = _("GRUNT"),
@@ -1373,7 +1105,7 @@ F_TRAINER_FEMALE |
 #line 651
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .encounterMusic_gender =
-#line 652
+#line 500
 F_TRAINER_FEMALE | 
 #line 653
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -1397,8 +1129,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 661
-    [TRAINER_FREDRICK] =
+#line 509
+    [DIFFICULTY_NORMAL][TRAINER_FREDRICK] =
     {
 #line 662
         .trainerName = _("FREDRICK"),
@@ -1407,7 +1139,7 @@ F_TRAINER_FEMALE |
 #line 664
         .trainerPic = TRAINER_PIC_EXPERT_M,
         .encounterMusic_gender =
-#line 666
+#line 514
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 667
         .doubleBattle = TRUE,
@@ -1440,17 +1172,17 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 678
-    [TRAINER_MATT] =
+#line 526
+    [DIFFICULTY_NORMAL][TRAINER_MATT] =
     {
 #line 679
         .trainerName = _("MATT"),
 #line 680
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-#line 681
-        .trainerPic = TRAINER_PIC_MATT_ORAS,
+#line 529
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,
         .encounterMusic_gender =
-#line 683
+#line 531
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 684
         .doubleBattle = TRUE,
@@ -1483,8 +1215,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 695
-    [TRAINER_ZANDER] =
+#line 544
+    [DIFFICULTY_NORMAL][TRAINER_ZANDER] =
     {
 #line 696
         .trainerName = _("ZANDER"),
@@ -1493,7 +1225,7 @@ F_TRAINER_FEMALE |
 #line 698
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 700
+#line 549
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 701
         .doubleBattle = TRUE,
@@ -1515,17 +1247,17 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 708
-    [TRAINER_SHELLY_WEATHER_INSTITUTE] =
+#line 557
+    [DIFFICULTY_NORMAL][TRAINER_SHELLY_WEATHER_INSTITUTE] =
     {
 #line 709
         .trainerName = _("SHELLY"),
 #line 710
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-#line 711
-        .trainerPic = TRAINER_PIC_SHELLY_ORAS,
+#line 560
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
         .encounterMusic_gender =
-#line 712
+#line 561
 F_TRAINER_FEMALE | 
 #line 713
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -1584,145 +1316,20 @@ F_TRAINER_FEMALE |
 #line 736
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 734
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 738
-                MOVE_BLIZZARD,
-                MOVE_FLASH_CANNON,
-                MOVE_HAZE,
-                MOVE_SCALD,
-            },
-            },
-            {
-#line 743
-            .species = SPECIES_ARTICUNO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 743
-            .heldItem = ITEM_CHARTI_BERRY,
-#line 748
-            .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 252, 8),
-#line 750
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 746
-            .ability = ABILITY_SNOW_CLOAK,
-#line 744
-            .lvl = 55,
-#line 745
-            .ball = ITEM_GREAT_BALL,
-#line 749
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 747
-            .teraType = TYPE_ICE,
-            .moves = {
-#line 751
-                MOVE_FREEZE_DRY,
-                MOVE_ROOST,
-                MOVE_HURRICANE,
-                MOVE_AURORA_VEIL,
-            },
-            },
-            {
-#line 756
-            .species = SPECIES_CASTFORM,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 756
-            .heldItem = ITEM_EXPERT_BELT,
-#line 761
-            .ev = TRAINER_PARTY_EVS(0, 0, 4, 252, 252, 0),
-#line 763
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 759
-            .ability = ABILITY_FORECAST,
-#line 757
-            .lvl = 55,
-#line 758
-            .ball = ITEM_GREAT_BALL,
-#line 762
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 760
-            .teraType = TYPE_NORMAL,
-            .moves = {
-#line 764
-                MOVE_WEATHER_BALL,
-                MOVE_FLAMETHROWER,
-                MOVE_THUNDERBOLT,
-                MOVE_HEX,
-            },
-            },
-            {
-#line 769
-            .species = SPECIES_QUAQUAVAL,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 769
-            .heldItem = ITEM_FLYING_GEM,
-#line 774
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 776
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 772
-            .ability = ABILITY_MOXIE,
-#line 770
-            .lvl = 55,
-#line 771
-            .ball = ITEM_GREAT_BALL,
-#line 775
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 773
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 776
-                MOVE_AQUA_STEP,
-                MOVE_TRIPLE_AXEL,
-                MOVE_BRICK_BREAK,
-                MOVE_ACROBATICS,
-            },
-            },
-            {
-#line 781
-            .species = SPECIES_HERACROSS,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 781
-            .heldItem = ITEM_HERACRONITE,
-#line 786
-            .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 4),
-#line 788
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 784
-            .ability = ABILITY_SKILL_LINK,
-#line 782
-            .lvl = 55,
-#line 783
-            .ball = ITEM_GREAT_BALL,
-#line 787
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 785
-            .teraType = TYPE_BUG,
-            .moves = {
-#line 788
-                MOVE_ARM_THRUST,
-                MOVE_PIN_MISSILE,
-                MOVE_BULLET_SEED,
-                MOVE_HIGH_HORSEPOWER,
-            },
             },
         },
     },
-#line 794
-    [TRAINER_SHELLY_SEAFLOOR_CAVERN] =
+#line 574
+    [DIFFICULTY_NORMAL][TRAINER_SHELLY_SEAFLOOR_CAVERN] =
     {
 #line 795
         .trainerName = _("SHELLY"),
 #line 796
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-#line 797
-        .trainerPic = TRAINER_PIC_SHELLY_ORAS,
+#line 577
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
         .encounterMusic_gender =
-#line 798
+#line 578
 F_TRAINER_FEMALE | 
 #line 799
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -1804,101 +1411,11 @@ F_TRAINER_FEMALE |
 #line 831
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 829
-            .teraType = TYPE_FAIRY,
-            .moves = {
-#line 833
-                MOVE_ANCIENT_POWER,
-                MOVE_AIR_SLASH,
-                MOVE_OMINOUS_WIND,
-                MOVE_STORED_POWER,
-            },
-            },
-            {
-#line 838
-            .species = SPECIES_CINCCINO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 838
-            .heldItem = ITEM_KINGS_ROCK,
-#line 842
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 844
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 840
-            .ability = ABILITY_SKILL_LINK,
-#line 839
-            .lvl = 76,
-#line 843
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 841
-            .teraType = TYPE_NORMAL,
-            .moves = {
-#line 844
-                MOVE_BULLET_SEED,
-                MOVE_ROCK_BLAST,
-                MOVE_TAIL_SLAP,
-                MOVE_BODY_SLAM,
-            },
-            },
-            {
-#line 849
-            .species = SPECIES_GASTRODON,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 849
-            .heldItem = ITEM_RINDO_BERRY,
-#line 853
-            .ev = TRAINER_PARTY_EVS(252, 0, 128, 0, 128, 0),
-#line 855
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 851
-            .ability = ABILITY_STORM_DRAIN,
-#line 850
-            .lvl = 77,
-#line 854
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 852
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 856
-                MOVE_MUDDY_WATER,
-                MOVE_SCALD,
-                MOVE_RECOVER,
-                MOVE_EARTH_POWER,
-            },
-            },
-            {
-#line 861
-            .species = SPECIES_PECHARUNT,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 861
-            .heldItem = ITEM_BLACK_SLUDGE,
-#line 865
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
-#line 867
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 863
-            .ability = ABILITY_POISON_PUPPETEER,
-#line 862
-            .lvl = 75,
-#line 866
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 864
-            .teraType = TYPE_POISON,
-            .moves = {
-#line 868
-                MOVE_MALIGNANT_CHAIN,
-                MOVE_SHADOW_BALL,
-                MOVE_HEX,
-                MOVE_RECOVER,
-            },
             },
         },
     },
-#line 873
-    [TRAINER_ARCHIE_SEAFLOOR_CAVERN] =
+#line 591
+    [DIFFICULTY_NORMAL][TRAINER_ARCHIE] =
     {
 #line 874
         .trainerName = _("ARCHIE"),
@@ -1907,7 +1424,7 @@ F_TRAINER_FEMALE |
 #line 876
         .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,
         .encounterMusic_gender =
-#line 878
+#line 596
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 879
         .doubleBattle = TRUE,
@@ -1951,8 +1468,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 894
-    [TRAINER_LEAH] =
+#line 613
+    [DIFFICULTY_NORMAL][TRAINER_LEAH] =
     {
 #line 895
         .trainerName = _("LEAH"),
@@ -1961,7 +1478,7 @@ F_TRAINER_FEMALE |
 #line 897
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 898
+#line 617
 F_TRAINER_FEMALE | 
 #line 899
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -1985,8 +1502,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 907
-    [TRAINER_DAISY] =
+#line 626
+    [DIFFICULTY_NORMAL][TRAINER_DAISY] =
     {
 #line 908
         .trainerName = _("DAISY"),
@@ -1995,7 +1512,7 @@ F_TRAINER_FEMALE |
 #line 910
         .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
-#line 911
+#line 630
 F_TRAINER_FEMALE | 
 #line 912
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -2030,8 +1547,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 924
-    [TRAINER_ROSE_1] =
+#line 643
+    [DIFFICULTY_NORMAL][TRAINER_ROSE_1] =
     {
 #line 925
         .trainerName = _("ROSE"),
@@ -2040,7 +1557,7 @@ F_TRAINER_FEMALE |
 #line 927
         .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
-#line 928
+#line 647
 F_TRAINER_FEMALE | 
 #line 929
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -2086,8 +1603,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 945
-    [TRAINER_FELIX] =
+#line 664
+    [DIFFICULTY_NORMAL][TRAINER_FELIX] =
     {
 #line 946
         .trainerName = _("FELIX"),
@@ -2096,7 +1613,7 @@ F_TRAINER_FEMALE |
 #line 948
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 950
+#line 669
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 951
         .doubleBattle = TRUE,
@@ -2138,8 +1655,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 965
-    [TRAINER_VIOLET] =
+#line 685
+    [DIFFICULTY_NORMAL][TRAINER_VIOLET] =
     {
 #line 966
         .trainerName = _("VIOLET"),
@@ -2148,7 +1665,7 @@ F_TRAINER_FEMALE |
 #line 968
         .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
-#line 969
+#line 689
 F_TRAINER_FEMALE | 
 #line 970
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -2183,17 +1700,17 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 982
-    [TRAINER_AQUA_ADMIN_FARM] =
+#line 702
+    [DIFFICULTY_NORMAL][TRAINER_ROSE_2] =
     {
-#line 983
-        .trainerName = _("SHELLY"),
-#line 984
-        .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-#line 985
-        .trainerPic = TRAINER_PIC_SHELLY_ORAS,
+#line 703
+        .trainerName = _("ROSE"),
+#line 704
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+#line 705
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
-#line 986
+#line 706
 F_TRAINER_FEMALE | 
 #line 987
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -2244,57 +1761,27 @@ F_TRAINER_FEMALE |
 #line 1004
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1005
-                MOVE_WATERFALL,
-                MOVE_HORN_ATTACK,
-                MOVE_ACUPRESSURE,
-                MOVE_FURY_CUTTER,
-            },
-            },
-            {
-#line 1010
-            .species = SPECIES_SNEASEL,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1010
-            .heldItem = ITEM_LUM_BERRY,
-#line 1013
-            .ev = TRAINER_PARTY_EVS(4, 252, 0, 252, 0, 0),
-#line 1015
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 1011
-            .ability = ABILITY_INNER_FOCUS,
-#line 1012
-            .lvl = 22,
-#line 1014
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1015
-                MOVE_AVALANCHE,
-                MOVE_LASH_OUT,
-                MOVE_QUICK_ATTACK,
-                MOVE_AERIAL_ACE,
-            },
             },
         },
     },
-#line 1020
-    [TRAINER_MAGMA_ADMIN_FARM] =
+#line 719
+    [DIFFICULTY_NORMAL][TRAINER_ROSE_3] =
     {
-#line 1021
-        .trainerName = _("TABITHA"),
-#line 1022
-        .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-#line 1023
-        .trainerPic = TRAINER_PIC_TABITHA_ORAS,
+#line 720
+        .trainerName = _("ROSE"),
+#line 721
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+#line 722
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
-#line 1025
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 1026
-        .doubleBattle = TRUE,
-#line 1027
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+#line 723
+F_TRAINER_FEMALE | 
+#line 724
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+#line 725
+        .doubleBattle = FALSE,
+#line 726
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -2372,25 +1859,26 @@ F_TRAINER_FEMALE |
                 MOVE_SWIFT,
                 MOVE_NOBLE_ROAR,
             },
-            },
         },
     },
-#line 1061
-    [TRAINER_AQUA_MULTI_GRUNT_FARM] =
+#line 740
+    [DIFFICULTY_NORMAL][TRAINER_ROSE_4] =
     {
-#line 1062
-        .trainerName = _("GRUNT"),
-#line 1063
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-#line 1064
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+#line 741
+        .trainerName = _("ROSE"),
+#line 742
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+#line 743
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
-#line 1066
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
-#line 1067
-        .doubleBattle = TRUE,
-#line 1068
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+#line 744
+F_TRAINER_FEMALE | 
+#line 745
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+#line 746
+        .doubleBattle = FALSE,
+#line 747
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -2454,20 +1942,19 @@ F_TRAINER_FEMALE |
                 MOVE_TAILWIND,
                 MOVE_PSYBEAM,
             },
-            },
         },
     },
-#line 1096
-    [TRAINER_MAGMA_MULTI_GRUNT_FARM] =
+#line 761
+    [DIFFICULTY_NORMAL][TRAINER_ROSE_5] =
     {
-#line 1097
-        .trainerName = _("GRUNT"),
-#line 1098
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 1099
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+#line 762
+        .trainerName = _("ROSE"),
+#line 763
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+#line 764
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
-#line 1100
+#line 765
 F_TRAINER_FEMALE | 
 #line 1101
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
@@ -2537,11 +2024,10 @@ F_TRAINER_FEMALE |
                 MOVE_HIDDEN_POWER,
                 MOVE_SYNTHESIS,
             },
-            },
         },
     },
-#line 1130
-    [TRAINER_DUSTY_1] =
+#line 782
+    [DIFFICULTY_NORMAL][TRAINER_DUSTY_1] =
     {
 #line 1131
         .trainerName = _("DUSTY"),
@@ -2550,7 +2036,7 @@ F_TRAINER_FEMALE |
 #line 1133
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 1135
+#line 787
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 1136
         .doubleBattle = TRUE,
@@ -2579,8 +2065,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1147
-    [TRAINER_CHIP] =
+#line 799
+    [DIFFICULTY_NORMAL][TRAINER_CHIP] =
     {
 #line 1148
         .trainerName = _("CHIP"),
@@ -2589,7 +2075,7 @@ F_TRAINER_FEMALE |
 #line 1150
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 1152
+#line 804
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 1153
         .doubleBattle = TRUE,
@@ -2654,8 +2140,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1180
-    [TRAINER_FOSTER] =
+#line 832
+    [DIFFICULTY_NORMAL][TRAINER_FOSTER] =
     {
 #line 1181
         .trainerName = _("FOSTER"),
@@ -2664,7 +2150,7 @@ F_TRAINER_FEMALE |
 #line 1183
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 1185
+#line 837
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 1186
         .doubleBattle = TRUE,
@@ -2711,25 +2197,23 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1205
-    [TRAINER_AQUA_ADMIN_RUSTURF] =
+#line 857
+    [DIFFICULTY_NORMAL][TRAINER_DUSTY_2] =
     {
-#line 1206
-        .trainerName = _("SHELLY"),
-#line 1207
-        .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-#line 1208
-        .trainerPic = TRAINER_PIC_SHELLY_ORAS,
+#line 858
+        .trainerName = _("DUSTY"),
+#line 859
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+#line 860
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 1209
-F_TRAINER_FEMALE | 
-#line 1210
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
-#line 1211
-        .doubleBattle = TRUE,
-#line 1212
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-        .partySize = 5,
+#line 862
+            TRAINER_ENCOUNTER_MUSIC_HIKER,
+#line 863
+        .doubleBattle = FALSE,
+#line 864
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 1,
         .party = (const struct TrainerMon[])
         {
             {
@@ -2851,25 +2335,23 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1266
-    [TRAINER_GRUNT_RUSTURF_TUNNEL_2] =
+#line 874
+    [DIFFICULTY_NORMAL][TRAINER_DUSTY_3] =
     {
-#line 1267
-        .trainerName = _("GRUNT"),
-#line 1268
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-#line 1269
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+#line 875
+        .trainerName = _("DUSTY"),
+#line 876
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+#line 877
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 1270
-F_TRAINER_FEMALE | 
-#line 1271
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
-#line 1272
-        .doubleBattle = TRUE,
-#line 1273
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-        .partySize = 4,
+#line 879
+            TRAINER_ENCOUNTER_MUSIC_HIKER,
+#line 880
+        .doubleBattle = FALSE,
+#line 881
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 1,
         .party = (const struct TrainerMon[])
         {
             {
@@ -2973,23 +2455,23 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1316
-    [TRAINER_ARCHIE_WEATHER_INSTITUTE] =
+#line 891
+    [DIFFICULTY_NORMAL][TRAINER_DUSTY_4] =
     {
-#line 1317
-        .trainerName = _("ARCHIE"),
-#line 1318
-        .trainerClass = TRAINER_CLASS_AQUA_LEADER,
-#line 1319
-        .trainerPic = TRAINER_PIC_ARCHIE_ORAS,
+#line 892
+        .trainerName = _("DUSTY"),
+#line 893
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+#line 894
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 1321
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
-#line 1322
-        .doubleBattle = TRUE,
-#line 1323
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-        .partySize = 6,
+#line 896
+            TRAINER_ENCOUNTER_MUSIC_HIKER,
+#line 897
+        .doubleBattle = FALSE,
+#line 898
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 1,
         .party = (const struct TrainerMon[])
         {
             {
@@ -3158,8 +2640,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1395
-    [TRAINER_DUSTY_5] =
+#line 908
+    [DIFFICULTY_NORMAL][TRAINER_DUSTY_5] =
     {
 #line 1396
         .trainerName = _("DUSTY"),
@@ -3168,7 +2650,7 @@ F_TRAINER_FEMALE |
 #line 1398
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 1400
+#line 913
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 1401
         .doubleBattle = TRUE,
@@ -3197,8 +2679,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1412
-    [TRAINER_GABBY_AND_TY_1] =
+#line 925
+    [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_1] =
     {
 #line 1413
         .trainerName = _("GABBY & TY"),
@@ -3207,7 +2689,7 @@ F_TRAINER_FEMALE |
 #line 1415
         .trainerPic = TRAINER_PIC_INTERVIEWER,
         .encounterMusic_gender =
-#line 1417
+#line 930
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1418
         .doubleBattle = TRUE,
@@ -3240,8 +2722,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1429
-    [TRAINER_GABBY_AND_TY_2] =
+#line 942
+    [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_2] =
     {
 #line 1430
         .trainerName = _("GABBY & TY"),
@@ -3250,7 +2732,7 @@ F_TRAINER_FEMALE |
 #line 1432
         .trainerPic = TRAINER_PIC_INTERVIEWER,
         .encounterMusic_gender =
-#line 1434
+#line 947
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1435
         .doubleBattle = TRUE,
@@ -3283,8 +2765,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1446
-    [TRAINER_GABBY_AND_TY_3] =
+#line 959
+    [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_3] =
     {
 #line 1447
         .trainerName = _("GABBY & TY"),
@@ -3293,7 +2775,7 @@ F_TRAINER_FEMALE |
 #line 1449
         .trainerPic = TRAINER_PIC_INTERVIEWER,
         .encounterMusic_gender =
-#line 1451
+#line 964
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1452
         .doubleBattle = TRUE,
@@ -3326,8 +2808,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1463
-    [TRAINER_GABBY_AND_TY_4] =
+#line 976
+    [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_4] =
     {
 #line 1464
         .trainerName = _("GABBY & TY"),
@@ -3336,7 +2818,7 @@ F_TRAINER_FEMALE |
 #line 1466
         .trainerPic = TRAINER_PIC_INTERVIEWER,
         .encounterMusic_gender =
-#line 1468
+#line 981
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1469
         .doubleBattle = TRUE,
@@ -3369,8 +2851,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1480
-    [TRAINER_GABBY_AND_TY_5] =
+#line 993
+    [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_5] =
     {
 #line 1481
         .trainerName = _("GABBY & TY"),
@@ -3379,7 +2861,7 @@ F_TRAINER_FEMALE |
 #line 1483
         .trainerPic = TRAINER_PIC_INTERVIEWER,
         .encounterMusic_gender =
-#line 1485
+#line 998
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1486
         .doubleBattle = TRUE,
@@ -3412,8 +2894,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1497
-    [TRAINER_GABBY_AND_TY_6] =
+#line 1010
+    [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_6] =
     {
 #line 1498
         .trainerName = _("GABBY & TY"),
@@ -3422,7 +2904,7 @@ F_TRAINER_FEMALE |
 #line 1500
         .trainerPic = TRAINER_PIC_INTERVIEWER,
         .encounterMusic_gender =
-#line 1502
+#line 1015
             TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
 #line 1503
         .doubleBattle = TRUE,
@@ -3469,8 +2951,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1522
-    [TRAINER_LOLA_1] =
+#line 1035
+    [DIFFICULTY_NORMAL][TRAINER_LOLA_1] =
     {
 #line 1523
         .trainerName = _("LOLA"),
@@ -3479,7 +2961,7 @@ F_TRAINER_FEMALE |
 #line 1525
         .trainerPic = TRAINER_PIC_TUBER_F,
         .encounterMusic_gender =
-#line 1526
+#line 1039
 F_TRAINER_FEMALE | 
 #line 1527
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -3514,8 +2996,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1539
-    [TRAINER_AUSTINA] =
+#line 1052
+    [DIFFICULTY_NORMAL][TRAINER_AUSTINA] =
     {
 #line 1540
         .trainerName = _("AUSTINA"),
@@ -3524,7 +3006,7 @@ F_TRAINER_FEMALE |
 #line 1542
         .trainerPic = TRAINER_PIC_TUBER_F,
         .encounterMusic_gender =
-#line 1543
+#line 1056
 F_TRAINER_FEMALE | 
 #line 1544
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -3548,8 +3030,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1552
-    [TRAINER_GWEN] =
+#line 1065
+    [DIFFICULTY_NORMAL][TRAINER_GWEN] =
     {
 #line 1553
         .trainerName = _("GWEN"),
@@ -3558,7 +3040,7 @@ F_TRAINER_FEMALE |
 #line 1555
         .trainerPic = TRAINER_PIC_TUBER_F,
         .encounterMusic_gender =
-#line 1556
+#line 1069
 F_TRAINER_FEMALE | 
 #line 1557
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -3582,23 +3064,25 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1565
-    [TRAINER_ARCHIE_MT_PYRE] =
+#line 1078
+    [DIFFICULTY_NORMAL][TRAINER_LOLA_2] =
     {
-#line 1566
-        .trainerName = _("ARCHIE"),
-#line 1567
-        .trainerClass = TRAINER_CLASS_AQUA_LEADER,
-#line 1568
-        .trainerPic = TRAINER_PIC_ARCHIE_ORAS,
+#line 1079
+        .trainerName = _("LOLA"),
+#line 1080
+        .trainerClass = TRAINER_CLASS_TUBER_F,
+#line 1081
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .encounterMusic_gender =
-#line 1570
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
-#line 1571
-        .doubleBattle = TRUE,
-#line 1572
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE,
-        .partySize = 6,
+#line 1082
+F_TRAINER_FEMALE | 
+#line 1083
+            TRAINER_ENCOUNTER_MUSIC_GIRL,
+#line 1084
+        .doubleBattle = FALSE,
+#line 1085
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 2,
         .party = (const struct TrainerMon[])
         {
             {
@@ -3645,133 +3129,28 @@ F_TRAINER_FEMALE |
 #line 1590
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1592
-                MOVE_SPARKLING_ARIA,
-                MOVE_MISTY_EXPLOSION,
-                MOVE_BOOMBURST,
-                MOVE_PROTECT,
-            },
-            },
-            {
-#line 1597
-            .species = SPECIES_ELECTRODE_HISUI,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1601
-            .ev = TRAINER_PARTY_EVS(0, 192, 0, 64, 252, 0),
-#line 1603
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 1600
-            .ability = ABILITY_SOUNDPROOF,
-#line 1598
-            .lvl = 65,
-#line 1599
-            .ball = ITEM_DIVE_BALL,
-#line 1602
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1603
-                MOVE_DISCHARGE,
-                MOVE_EXPLOSION,
-                MOVE_PETAL_BLIZZARD,
-                MOVE_MIND_BLOWN,
-            },
-            },
-            {
-#line 1608
-            .species = SPECIES_ARMALDO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1612
-            .ev = TRAINER_PARTY_EVS(252, 4, 0, 0, 252, 0),
-#line 1614
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 1611
-            .ability = ABILITY_BATTLE_ARMOR,
-#line 1609
-            .lvl = 65,
-#line 1610
-            .ball = ITEM_DIVE_BALL,
-#line 1613
-            .nature = NATURE_BRAVE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1614
-                MOVE_EARTHQUAKE,
-                MOVE_SURF,
-                MOVE_BRUTAL_SWING,
-                MOVE_PROTECT,
-            },
-            },
-            {
-#line 1619
-            .species = SPECIES_TENTACRUEL,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1623
-            .ev = TRAINER_PARTY_EVS(0, 112, 76, 68, 252, 0),
-#line 1625
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 1622
-            .ability = ABILITY_CLEAR_BODY,
-#line 1620
-            .lvl = 65,
-#line 1621
-            .ball = ITEM_DIVE_BALL,
-#line 1624
-            .nature = NATURE_HASTY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1625
-                MOVE_SURF,
-                MOVE_SLUDGE_WAVE,
-                MOVE_BRUTAL_SWING,
-                MOVE_BANEFUL_BUNKER,
-            },
-            },
-            {
-#line 1630
-            .species = SPECIES_ZARUDE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1634
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
-#line 1636
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 1633
-            .ability = ABILITY_INTIMIDATE,
-#line 1631
-            .lvl = 65,
-#line 1632
-            .ball = ITEM_DIVE_BALL,
-#line 1635
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1636
-                MOVE_PETAL_BLIZZARD,
-                MOVE_BRUTAL_SWING,
-                MOVE_PROTECT,
-                MOVE_BOOMBURST,
-            },
             },
         },
     },
-#line 1641
-    [TRAINER_MAXIE_MT_PYRE] =
+#line 1095
+    [DIFFICULTY_NORMAL][TRAINER_LOLA_3] =
     {
-#line 1642
-        .trainerName = _("MAXIE"),
-#line 1643
-        .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-#line 1644
-        .trainerPic = TRAINER_PIC_MAXIE_ORAS,
+#line 1096
+        .trainerName = _("LOLA"),
+#line 1097
+        .trainerClass = TRAINER_CLASS_TUBER_F,
+#line 1098
+        .trainerPic = TRAINER_PIC_TUBER_F,
         .encounterMusic_gender =
-#line 1646
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 1647
-        .doubleBattle = TRUE,
-#line 1648
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE,
-        .partySize = 6,
+#line 1099
+F_TRAINER_FEMALE | 
+#line 1100
+            TRAINER_ENCOUNTER_MUSIC_GIRL,
+#line 1101
+        .doubleBattle = FALSE,
+#line 1102
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 2,
         .party = (const struct TrainerMon[])
         {
             {
@@ -3819,122 +3198,11 @@ F_TRAINER_FEMALE |
 #line 1665
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1667
-                MOVE_DISCHARGE,
-                MOVE_BOOMBURST,
-                MOVE_SLUDGE_WAVE,
-                MOVE_PROTECT,
-            },
-            },
-            {
-#line 1672
-            .species = SPECIES_WEEZING_GALAR,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1676
-            .ev = TRAINER_PARTY_EVS(252, 4, 0, 0, 252, 0),
-#line 1678
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 1675
-            .ability = ABILITY_LEVITATE,
-#line 1673
-            .lvl = 65,
-#line 1674
-            .ball = ITEM_TIMER_BALL,
-#line 1677
-            .nature = NATURE_RELAXED,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1678
-                MOVE_SLUDGE_WAVE,
-                MOVE_EXPLOSION,
-                MOVE_MISTY_EXPLOSION,
-                MOVE_PROTECT,
-            },
-            },
-            {
-#line 1683
-            .species = SPECIES_GOLEM_ALOLA,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1683
-            .heldItem = ITEM_AIR_BALLOON,
-#line 1687
-            .ev = TRAINER_PARTY_EVS(252, 128, 0, 0, 128, 0),
-#line 1689
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 1686
-            .ability = ABILITY_MAGNET_PULL,
-#line 1684
-            .lvl = 65,
-#line 1685
-            .ball = ITEM_TIMER_BALL,
-#line 1688
-            .nature = NATURE_BRAVE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1689
-                MOVE_DISCHARGE,
-                MOVE_EARTHQUAKE,
-                MOVE_EXPLOSION,
-                MOVE_BRUTAL_SWING,
-            },
-            },
-            {
-#line 1694
-            .species = SPECIES_FLYGON,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1694
-            .heldItem = ITEM_YACHE_BERRY,
-#line 1698
-            .ev = TRAINER_PARTY_EVS(0, 196, 84, 168, 60, 0),
-#line 1700
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 1697
-            .ability = ABILITY_LEVITATE,
-#line 1695
-            .lvl = 65,
-#line 1696
-            .ball = ITEM_TIMER_BALL,
-#line 1699
-            .nature = NATURE_HASTY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1700
-                MOVE_EARTHQUAKE,
-                MOVE_BOOMBURST,
-                MOVE_BRUTAL_SWING,
-                MOVE_PROTECT,
-            },
-            },
-            {
-#line 1705
-            .species = SPECIES_VOLCANION,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 1709
-            .ev = TRAINER_PARTY_EVS(248, 8, 0, 0, 252, 0),
-#line 1711
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 1708
-            .ability = ABILITY_WATER_ABSORB,
-#line 1706
-            .lvl = 65,
-#line 1707
-            .ball = ITEM_TIMER_BALL,
-#line 1710
-            .nature = NATURE_SERIOUS,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 1711
-                MOVE_LAVA_PLUME,
-                MOVE_SURF,
-                MOVE_EARTHQUAKE,
-                MOVE_EXPLOSION,
-            },
             },
         },
     },
-#line 1716
-    [TRAINER_LOLA_4] =
+#line 1112
+    [DIFFICULTY_NORMAL][TRAINER_LOLA_4] =
     {
 #line 1717
         .trainerName = _("LOLA"),
@@ -3943,7 +3211,7 @@ F_TRAINER_FEMALE |
 #line 1719
         .trainerPic = TRAINER_PIC_TUBER_F,
         .encounterMusic_gender =
-#line 1720
+#line 1116
 F_TRAINER_FEMALE | 
 #line 1721
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -3978,8 +3246,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1733
-    [TRAINER_LOLA_5] =
+#line 1129
+    [DIFFICULTY_NORMAL][TRAINER_LOLA_5] =
     {
 #line 1734
         .trainerName = _("LOLA"),
@@ -3988,7 +3256,7 @@ F_TRAINER_FEMALE |
 #line 1736
         .trainerPic = TRAINER_PIC_TUBER_F,
         .encounterMusic_gender =
-#line 1737
+#line 1133
 F_TRAINER_FEMALE | 
 #line 1738
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -4023,8 +3291,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1750
-    [TRAINER_RICKY_1] =
+#line 1146
+    [DIFFICULTY_NORMAL][TRAINER_RICKY_1] =
     {
 #line 1751
         .trainerName = _("RICKY"),
@@ -4033,7 +3301,7 @@ F_TRAINER_FEMALE |
 #line 1753
         .trainerPic = TRAINER_PIC_TUBER_M,
         .encounterMusic_gender =
-#line 1755
+#line 1151
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1756
         .doubleBattle = TRUE,
@@ -4062,8 +3330,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1767
-    [TRAINER_SIMON] =
+#line 1163
+    [DIFFICULTY_NORMAL][TRAINER_SIMON] =
     {
 #line 1768
         .trainerName = _("SIMON"),
@@ -4072,7 +3340,7 @@ F_TRAINER_FEMALE |
 #line 1770
         .trainerPic = TRAINER_PIC_TUBER_M,
         .encounterMusic_gender =
-#line 1772
+#line 1168
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1773
         .doubleBattle = TRUE,
@@ -4105,8 +3373,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1784
-    [TRAINER_CHARLIE] =
+#line 1180
+    [DIFFICULTY_NORMAL][TRAINER_CHARLIE] =
     {
 #line 1785
         .trainerName = _("CHARLIE"),
@@ -4115,7 +3383,7 @@ F_TRAINER_FEMALE |
 #line 1787
         .trainerPic = TRAINER_PIC_TUBER_M,
         .encounterMusic_gender =
-#line 1789
+#line 1185
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1790
         .doubleBattle = TRUE,
@@ -4137,8 +3405,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1797
-    [TRAINER_RICKY_2] =
+#line 1193
+    [DIFFICULTY_NORMAL][TRAINER_RICKY_2] =
     {
 #line 1798
         .trainerName = _("RICKY"),
@@ -4147,7 +3415,7 @@ F_TRAINER_FEMALE |
 #line 1800
         .trainerPic = TRAINER_PIC_TUBER_M,
         .encounterMusic_gender =
-#line 1802
+#line 1198
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1803
         .doubleBattle = TRUE,
@@ -4176,8 +3444,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1814
-    [TRAINER_RICKY_3] =
+#line 1210
+    [DIFFICULTY_NORMAL][TRAINER_RICKY_3] =
     {
 #line 1815
         .trainerName = _("RICKY"),
@@ -4186,7 +3454,7 @@ F_TRAINER_FEMALE |
 #line 1817
         .trainerPic = TRAINER_PIC_TUBER_M,
         .encounterMusic_gender =
-#line 1819
+#line 1215
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1820
         .doubleBattle = TRUE,
@@ -4215,8 +3483,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1831
-    [TRAINER_RICKY_4] =
+#line 1227
+    [DIFFICULTY_NORMAL][TRAINER_RICKY_4] =
     {
 #line 1832
         .trainerName = _("RICKY"),
@@ -4225,7 +3493,7 @@ F_TRAINER_FEMALE |
 #line 1834
         .trainerPic = TRAINER_PIC_TUBER_M,
         .encounterMusic_gender =
-#line 1836
+#line 1232
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1837
         .doubleBattle = TRUE,
@@ -4254,8 +3522,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1848
-    [TRAINER_RICKY_5] =
+#line 1244
+    [DIFFICULTY_NORMAL][TRAINER_RICKY_5] =
     {
 #line 1849
         .trainerName = _("RICKY"),
@@ -4264,7 +3532,7 @@ F_TRAINER_FEMALE |
 #line 1851
         .trainerPic = TRAINER_PIC_TUBER_M,
         .encounterMusic_gender =
-#line 1853
+#line 1249
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 1854
         .doubleBattle = TRUE,
@@ -4293,8 +3561,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1865
-    [TRAINER_RANDALL] =
+#line 1261
+    [DIFFICULTY_NORMAL][TRAINER_RANDALL] =
     {
 #line 1866
         .trainerName = _("RANDALL"),
@@ -4303,7 +3571,7 @@ F_TRAINER_FEMALE |
 #line 1868
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 1870
+#line 1266
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1871
         .doubleBattle = TRUE,
@@ -4331,8 +3599,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1881
-    [TRAINER_PARKER] =
+#line 1278
+    [DIFFICULTY_NORMAL][TRAINER_PARKER] =
     {
 #line 1882
         .trainerName = _("PARKER"),
@@ -4341,7 +3609,7 @@ F_TRAINER_FEMALE |
 #line 1884
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 1886
+#line 1283
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1887
         .doubleBattle = TRUE,
@@ -4369,8 +3637,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1897
-    [TRAINER_GEORGE] =
+#line 1295
+    [DIFFICULTY_NORMAL][TRAINER_GEORGE] =
     {
 #line 1898
         .trainerName = _("GEORGE"),
@@ -4379,7 +3647,7 @@ F_TRAINER_FEMALE |
 #line 1900
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 1902
+#line 1300
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1903
         .doubleBattle = TRUE,
@@ -4409,8 +3677,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1913
-    [TRAINER_BERKE] =
+#line 1312
+    [DIFFICULTY_NORMAL][TRAINER_BERKE] =
     {
 #line 1914
         .trainerName = _("BERKE"),
@@ -4419,7 +3687,7 @@ F_TRAINER_FEMALE |
 #line 1916
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 1918
+#line 1317
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1919
         .doubleBattle = TRUE,
@@ -4446,8 +3714,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1928
-    [TRAINER_BRAXTON] =
+#line 1328
+    [DIFFICULTY_NORMAL][TRAINER_BRAXTON] =
     {
 #line 1929
         .trainerName = _("BRAXTON"),
@@ -4456,7 +3724,7 @@ F_TRAINER_FEMALE |
 #line 1931
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 1933
+#line 1333
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1934
         .doubleBattle = TRUE,
@@ -4557,8 +3825,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1977
-    [TRAINER_VINCENT] =
+#line 1378
+    [DIFFICULTY_NORMAL][TRAINER_VINCENT] =
     {
 #line 1978
         .trainerName = _("VINCENT"),
@@ -4567,7 +3835,7 @@ F_TRAINER_FEMALE |
 #line 1980
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 1982
+#line 1383
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 1983
         .doubleBattle = TRUE,
@@ -4611,8 +3879,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 1998
-    [TRAINER_LEROY] =
+#line 1400
+    [DIFFICULTY_NORMAL][TRAINER_LEROY] =
     {
 #line 1999
         .trainerName = _("LEROY"),
@@ -4621,7 +3889,7 @@ F_TRAINER_FEMALE |
 #line 2001
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2003
+#line 1405
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2004
         .doubleBattle = TRUE,
@@ -4654,8 +3922,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2015
-    [TRAINER_WILTON_1] =
+#line 1418
+    [DIFFICULTY_NORMAL][TRAINER_WILTON_1] =
     {
 #line 2016
         .trainerName = _("WILTON"),
@@ -4664,7 +3932,7 @@ F_TRAINER_FEMALE |
 #line 2018
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2020
+#line 1423
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2021
         .doubleBattle = TRUE,
@@ -4708,8 +3976,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2036
-    [TRAINER_EDGAR] =
+#line 1440
+    [DIFFICULTY_NORMAL][TRAINER_EDGAR] =
     {
 #line 2037
         .trainerName = _("EDGAR"),
@@ -4718,7 +3986,7 @@ F_TRAINER_FEMALE |
 #line 2039
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2041
+#line 1445
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2042
         .doubleBattle = TRUE,
@@ -4751,8 +4019,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2053
-    [TRAINER_ALBERT] =
+#line 1458
+    [DIFFICULTY_NORMAL][TRAINER_ALBERT] =
     {
 #line 2054
         .trainerName = _("ALBERT"),
@@ -4761,7 +4029,7 @@ F_TRAINER_FEMALE |
 #line 2056
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2058
+#line 1463
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2059
         .doubleBattle = TRUE,
@@ -4794,8 +4062,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2070
-    [TRAINER_SAMUEL] =
+#line 1476
+    [DIFFICULTY_NORMAL][TRAINER_SAMUEL] =
     {
 #line 2071
         .trainerName = _("SAMUEL"),
@@ -4804,7 +4072,7 @@ F_TRAINER_FEMALE |
 #line 2073
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2075
+#line 1481
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2076
         .doubleBattle = TRUE,
@@ -4848,8 +4116,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2091
-    [TRAINER_VITO] =
+#line 1498
+    [DIFFICULTY_NORMAL][TRAINER_VITO] =
     {
 #line 2092
         .trainerName = _("VITO"),
@@ -4858,7 +4126,7 @@ F_TRAINER_FEMALE |
 #line 2094
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2096
+#line 1503
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2098
         .doubleBattle = TRUE,
@@ -4965,72 +4233,11 @@ F_TRAINER_FEMALE |
             .lvl = 53,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 2137
-            .teraType = TYPE_DARK,
-            .moves = {
-#line 2138
-                MOVE_PURSUIT,
-                MOVE_PLAY_ROUGH,
-                MOVE_SUCKER_PUNCH,
-                MOVE_IRON_TAIL,
-            },
-            },
-            {
-#line 2143
-            .species = SPECIES_DARKRAI,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 2143
-            .heldItem = ITEM_ROSELI_BERRY,
-#line 2147
-            .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 4),
-#line 2149
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 2145
-            .ability = ABILITY_BAD_DREAMS,
-#line 2144
-            .lvl = 53,
-#line 2148
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 2146
-            .teraType = TYPE_DARK,
-            .moves = {
-#line 2150
-                MOVE_DARK_VOID,
-                MOVE_SHADOW_BALL,
-                MOVE_SLUDGE_BOMB,
-                MOVE_NASTY_PLOT,
-            },
-            },
-            {
-#line 2155
-            .species = SPECIES_YVELTAL,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 2159
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 4, 0),
-#line 2161
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 2157
-            .ability = ABILITY_DARK_AURA,
-#line 2156
-            .lvl = 50,
-#line 2160
-            .nature = NATURE_HASTY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 2158
-            .teraType = TYPE_DARK,
-            .moves = {
-#line 2161
-                MOVE_OBLIVION_WING,
-                MOVE_PURSUIT,
-                MOVE_KNOCK_OFF,
-                MOVE_STEEL_WING,
-            },
             },
         },
     },
-#line 2167
-    [TRAINER_OWEN] =
+#line 1524
+    [DIFFICULTY_NORMAL][TRAINER_OWEN] =
     {
 #line 2168
         .trainerName = _("OWEN"),
@@ -5039,7 +4246,7 @@ F_TRAINER_FEMALE |
 #line 2170
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2172
+#line 1529
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2173
         .doubleBattle = TRUE,
@@ -5083,8 +4290,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2188
-    [TRAINER_WILTON_2] =
+#line 1546
+    [DIFFICULTY_NORMAL][TRAINER_WILTON_2] =
     {
 #line 2189
         .trainerName = _("WILTON"),
@@ -5093,7 +4300,7 @@ F_TRAINER_FEMALE |
 #line 2191
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2193
+#line 1551
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2194
         .doubleBattle = TRUE,
@@ -5137,8 +4344,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2209
-    [TRAINER_WILTON_3] =
+#line 1568
+    [DIFFICULTY_NORMAL][TRAINER_WILTON_3] =
     {
 #line 2210
         .trainerName = _("WILTON"),
@@ -5147,7 +4354,7 @@ F_TRAINER_FEMALE |
 #line 2212
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2214
+#line 1573
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2215
         .doubleBattle = TRUE,
@@ -5191,8 +4398,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2230
-    [TRAINER_WILTON_4] =
+#line 1590
+    [DIFFICULTY_NORMAL][TRAINER_WILTON_4] =
     {
 #line 2231
         .trainerName = _("WILTON"),
@@ -5201,7 +4408,7 @@ F_TRAINER_FEMALE |
 #line 2233
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2235
+#line 1595
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2236
         .doubleBattle = TRUE,
@@ -5245,8 +4452,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2251
-    [TRAINER_WILTON_5] =
+#line 1612
+    [DIFFICULTY_NORMAL][TRAINER_WILTON_5] =
     {
 #line 2252
         .trainerName = _("WILTON"),
@@ -5255,7 +4462,7 @@ F_TRAINER_FEMALE |
 #line 2254
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2256
+#line 1617
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2257
         .doubleBattle = TRUE,
@@ -5299,8 +4506,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2272
-    [TRAINER_WARREN] =
+#line 1634
+    [DIFFICULTY_NORMAL][TRAINER_WARREN] =
     {
 #line 2273
         .trainerName = _("WARREN"),
@@ -5309,7 +4516,7 @@ F_TRAINER_FEMALE |
 #line 2275
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 2277
+#line 1639
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 2278
         .doubleBattle = TRUE,
@@ -5342,8 +4549,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2289
-    [TRAINER_MARY] =
+#line 1652
+    [DIFFICULTY_NORMAL][TRAINER_MARY] =
     {
 #line 2290
         .trainerName = _("MARY"),
@@ -5352,7 +4559,7 @@ F_TRAINER_FEMALE |
 #line 2292
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2293
+#line 1656
 F_TRAINER_FEMALE | 
 #line 2294
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5381,8 +4588,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2304
-    [TRAINER_ALEXIA] =
+#line 1668
+    [DIFFICULTY_NORMAL][TRAINER_ALEXIA] =
     {
 #line 2305
         .trainerName = _("ALEXIA"),
@@ -5391,7 +4598,7 @@ F_TRAINER_FEMALE |
 #line 2307
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2308
+#line 1672
 F_TRAINER_FEMALE | 
 #line 2309
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5421,8 +4628,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2320
-    [TRAINER_JODY] =
+#line 1685
+    [DIFFICULTY_NORMAL][TRAINER_JODY] =
     {
 #line 2321
         .trainerName = _("JODY"),
@@ -5431,7 +4638,7 @@ F_TRAINER_FEMALE |
 #line 2323
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2324
+#line 1689
 F_TRAINER_FEMALE | 
 #line 2325
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5460,8 +4667,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2335
-    [TRAINER_WENDY] =
+#line 1701
+    [DIFFICULTY_NORMAL][TRAINER_WENDY] =
     {
 #line 2336
         .trainerName = _("WENDY"),
@@ -5470,7 +4677,7 @@ F_TRAINER_FEMALE |
 #line 2338
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2339
+#line 1705
 F_TRAINER_FEMALE | 
 #line 2340
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5537,8 +4744,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2368
-    [TRAINER_KEIRA] =
+#line 1735
+    [DIFFICULTY_NORMAL][TRAINER_KEIRA] =
     {
 #line 2369
         .trainerName = _("KEIRA"),
@@ -5547,7 +4754,7 @@ F_TRAINER_FEMALE |
 #line 2371
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2372
+#line 1739
 F_TRAINER_FEMALE | 
 #line 2373
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5582,8 +4789,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2385
-    [TRAINER_BROOKE_1] =
+#line 1753
+    [DIFFICULTY_NORMAL][TRAINER_BROOKE_1] =
     {
 #line 2386
         .trainerName = _("BROOKE"),
@@ -5592,7 +4799,7 @@ F_TRAINER_FEMALE |
 #line 2388
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2389
+#line 1757
 F_TRAINER_FEMALE | 
 #line 2390
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5638,8 +4845,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2406
-    [TRAINER_JENNIFER] =
+#line 1775
+    [DIFFICULTY_NORMAL][TRAINER_JENNIFER] =
     {
 #line 2407
         .trainerName = _("JENNIFER"),
@@ -5648,7 +4855,7 @@ F_TRAINER_FEMALE |
 #line 2409
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2410
+#line 1779
 F_TRAINER_FEMALE | 
 #line 2411
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5672,8 +4879,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2419
-    [TRAINER_HOPE] =
+#line 1789
+    [DIFFICULTY_NORMAL][TRAINER_HOPE] =
     {
 #line 2420
         .trainerName = _("HOPE"),
@@ -5682,7 +4889,7 @@ F_TRAINER_FEMALE |
 #line 2422
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2423
+#line 1793
 F_TRAINER_FEMALE | 
 #line 2424
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5706,8 +4913,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2432
-    [TRAINER_SHANNON] =
+#line 1803
+    [DIFFICULTY_NORMAL][TRAINER_SHANNON] =
     {
 #line 2433
         .trainerName = _("SHANNON"),
@@ -5716,7 +4923,7 @@ F_TRAINER_FEMALE |
 #line 2435
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2436
+#line 1807
 F_TRAINER_FEMALE | 
 #line 2437
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5740,8 +4947,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2445
-    [TRAINER_MICHELLE] =
+#line 1817
+    [DIFFICULTY_NORMAL][TRAINER_MICHELLE] =
     {
 #line 2446
         .trainerName = _("MICHELLE"),
@@ -5750,7 +4957,7 @@ F_TRAINER_FEMALE |
 #line 2448
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2449
+#line 1821
 F_TRAINER_FEMALE | 
 #line 2450
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5796,8 +5003,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2466
-    [TRAINER_CAROLINE] =
+#line 1839
+    [DIFFICULTY_NORMAL][TRAINER_CAROLINE] =
     {
 #line 2467
         .trainerName = _("CAROLINE"),
@@ -5806,7 +5013,7 @@ F_TRAINER_FEMALE |
 #line 2469
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2470
+#line 1843
 F_TRAINER_FEMALE | 
 #line 2471
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5841,8 +5048,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2483
-    [TRAINER_JULIE] =
+#line 1857
+    [DIFFICULTY_NORMAL][TRAINER_JULIE] =
     {
 #line 2484
         .trainerName = _("JULIE"),
@@ -5851,7 +5058,7 @@ F_TRAINER_FEMALE |
 #line 2486
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2487
+#line 1861
 F_TRAINER_FEMALE | 
 #line 2488
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5897,8 +5104,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2504
-    [TRAINER_BROOKE_2] =
+#line 1879
+    [DIFFICULTY_NORMAL][TRAINER_BROOKE_2] =
     {
 #line 2505
         .trainerName = _("BROOKE"),
@@ -5907,7 +5114,7 @@ F_TRAINER_FEMALE |
 #line 2507
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2508
+#line 1883
 F_TRAINER_FEMALE | 
 #line 2509
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -5953,8 +5160,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2525
-    [TRAINER_BROOKE_3] =
+#line 1901
+    [DIFFICULTY_NORMAL][TRAINER_BROOKE_3] =
     {
 #line 2526
         .trainerName = _("BROOKE"),
@@ -5963,7 +5170,7 @@ F_TRAINER_FEMALE |
 #line 2528
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2529
+#line 1905
 F_TRAINER_FEMALE | 
 #line 2530
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -6009,8 +5216,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2546
-    [TRAINER_BROOKE_4] =
+#line 1923
+    [DIFFICULTY_NORMAL][TRAINER_BROOKE_4] =
     {
 #line 2547
         .trainerName = _("BROOKE"),
@@ -6019,7 +5226,7 @@ F_TRAINER_FEMALE |
 #line 2549
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2550
+#line 1927
 F_TRAINER_FEMALE | 
 #line 2551
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -6065,8 +5272,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2567
-    [TRAINER_BROOKE_5] =
+#line 1945
+    [DIFFICULTY_NORMAL][TRAINER_BROOKE_5] =
     {
 #line 2568
         .trainerName = _("BROOKE"),
@@ -6075,7 +5282,7 @@ F_TRAINER_FEMALE |
 #line 2570
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 2571
+#line 1949
 F_TRAINER_FEMALE | 
 #line 2572
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -6121,8 +5328,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2588
-    [TRAINER_PATRICIA] =
+#line 1967
+    [DIFFICULTY_NORMAL][TRAINER_PATRICIA] =
     {
 #line 2589
         .trainerName = _("PATRICIA"),
@@ -6131,7 +5338,7 @@ F_TRAINER_FEMALE |
 #line 2591
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 2592
+#line 1971
 F_TRAINER_FEMALE | 
 #line 2593
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6166,8 +5373,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2605
-    [TRAINER_KINDRA] =
+#line 1984
+    [DIFFICULTY_NORMAL][TRAINER_KINDRA] =
     {
 #line 2606
         .trainerName = _("KINDRA"),
@@ -6176,7 +5383,7 @@ F_TRAINER_FEMALE |
 #line 2608
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 2609
+#line 1988
 F_TRAINER_FEMALE | 
 #line 2610
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6211,8 +5418,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2622
-    [TRAINER_TAMMY] =
+#line 2001
+    [DIFFICULTY_NORMAL][TRAINER_TAMMY] =
     {
 #line 2623
         .trainerName = _("TAMMY"),
@@ -6221,7 +5428,7 @@ F_TRAINER_FEMALE |
 #line 2625
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 2626
+#line 2005
 F_TRAINER_FEMALE | 
 #line 2627
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6256,8 +5463,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2639
-    [TRAINER_VALERIE_1] =
+#line 2018
+    [DIFFICULTY_NORMAL][TRAINER_VALERIE_1] =
     {
 #line 2640
         .trainerName = _("VALERIE"),
@@ -6266,7 +5473,7 @@ F_TRAINER_FEMALE |
 #line 2642
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 2643
+#line 2022
 F_TRAINER_FEMALE | 
 #line 2644
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6290,8 +5497,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2652
-    [TRAINER_TASHA] =
+#line 2031
+    [DIFFICULTY_NORMAL][TRAINER_TASHA] =
     {
 #line 2653
         .trainerName = _("TASHA"),
@@ -6300,7 +5507,7 @@ F_TRAINER_FEMALE |
 #line 2655
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 2656
+#line 2035
 F_TRAINER_FEMALE | 
 #line 2657
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6324,8 +5531,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2665
-    [TRAINER_VALERIE_2] =
+#line 2044
+    [DIFFICULTY_NORMAL][TRAINER_VALERIE_2] =
     {
 #line 2666
         .trainerName = _("VALERIE"),
@@ -6334,7 +5541,7 @@ F_TRAINER_FEMALE |
 #line 2668
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 2669
+#line 2048
 F_TRAINER_FEMALE | 
 #line 2670
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6369,8 +5576,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2682
-    [TRAINER_VALERIE_3] =
+#line 2061
+    [DIFFICULTY_NORMAL][TRAINER_VALERIE_3] =
     {
 #line 2683
         .trainerName = _("VALERIE"),
@@ -6379,7 +5586,7 @@ F_TRAINER_FEMALE |
 #line 2685
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 2686
+#line 2065
 F_TRAINER_FEMALE | 
 #line 2687
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6414,8 +5621,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2699
-    [TRAINER_VALERIE_4] =
+#line 2078
+    [DIFFICULTY_NORMAL][TRAINER_VALERIE_4] =
     {
 #line 2700
         .trainerName = _("VALERIE"),
@@ -6424,7 +5631,7 @@ F_TRAINER_FEMALE |
 #line 2702
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 2703
+#line 2082
 F_TRAINER_FEMALE | 
 #line 2704
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6459,8 +5666,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2716
-    [TRAINER_VALERIE_5] =
+#line 2095
+    [DIFFICULTY_NORMAL][TRAINER_VALERIE_5] =
     {
 #line 2717
         .trainerName = _("VALERIE"),
@@ -6469,7 +5676,7 @@ F_TRAINER_FEMALE |
 #line 2719
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 2720
+#line 2099
 F_TRAINER_FEMALE | 
 #line 2721
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -6515,8 +5722,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2737
-    [TRAINER_CINDY_1] =
+#line 2116
+    [DIFFICULTY_NORMAL][TRAINER_CINDY_1] =
     {
 #line 2738
         .trainerName = _("CINDY"),
@@ -6525,7 +5732,7 @@ F_TRAINER_FEMALE |
 #line 2740
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 2741
+#line 2120
 F_TRAINER_FEMALE | 
 #line 2742
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6551,8 +5758,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2750
-    [TRAINER_DAPHNE] =
+#line 2130
+    [DIFFICULTY_NORMAL][TRAINER_DAPHNE] =
     {
 #line 2751
         .trainerName = _("DAPHNE"),
@@ -6561,7 +5768,7 @@ F_TRAINER_FEMALE |
 #line 2753
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 2754
+#line 2134
 F_TRAINER_FEMALE | 
 #line 2755
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6614,8 +5821,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2775
-    [TRAINER_GRUNT_SPACE_CENTER_2] =
+#line 2156
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_2] =
     {
 #line 2776
         .trainerName = _("GRUNT"),
@@ -6624,7 +5831,7 @@ F_TRAINER_FEMALE |
 #line 2778
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 2780
+#line 2161
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 2781
         .doubleBattle = TRUE,
@@ -6668,8 +5875,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2796
-    [TRAINER_CINDY_2] =
+#line 2177
+    [DIFFICULTY_NORMAL][TRAINER_CINDY_2] =
     {
 #line 2797
         .trainerName = _("CINDY"),
@@ -6678,7 +5885,7 @@ F_TRAINER_FEMALE |
 #line 2799
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 2800
+#line 2181
 F_TRAINER_FEMALE | 
 #line 2801
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6709,8 +5916,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2811
-    [TRAINER_BRIANNA] =
+#line 2193
+    [DIFFICULTY_NORMAL][TRAINER_BRIANNA] =
     {
 #line 2812
         .trainerName = _("BRIANNA"),
@@ -6719,7 +5926,7 @@ F_TRAINER_FEMALE |
 #line 2814
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 2815
+#line 2197
 F_TRAINER_FEMALE | 
 #line 2816
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6745,8 +5952,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2824
-    [TRAINER_NAOMI] =
+#line 2207
+    [DIFFICULTY_NORMAL][TRAINER_NAOMI] =
     {
 #line 2825
         .trainerName = _("NAOMI"),
@@ -6755,7 +5962,7 @@ F_TRAINER_FEMALE |
 #line 2827
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 2828
+#line 2211
 F_TRAINER_FEMALE | 
 #line 2829
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6781,8 +5988,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2837
-    [TRAINER_CINDY_3] =
+#line 2221
+    [DIFFICULTY_NORMAL][TRAINER_CINDY_3] =
     {
 #line 2838
         .trainerName = _("CINDY"),
@@ -6791,7 +5998,7 @@ F_TRAINER_FEMALE |
 #line 2840
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 2841
+#line 2225
 F_TRAINER_FEMALE | 
 #line 2842
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6817,8 +6024,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2850
-    [TRAINER_CINDY_4] =
+#line 2235
+    [DIFFICULTY_NORMAL][TRAINER_CINDY_4] =
     {
 #line 2851
         .trainerName = _("CINDY"),
@@ -6827,7 +6034,7 @@ F_TRAINER_FEMALE |
 #line 2853
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 2854
+#line 2239
 F_TRAINER_FEMALE | 
 #line 2855
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6853,8 +6060,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2863
-    [TRAINER_CINDY_5] =
+#line 2249
+    [DIFFICULTY_NORMAL][TRAINER_CINDY_5] =
     {
 #line 2864
         .trainerName = _("CINDY"),
@@ -6863,7 +6070,7 @@ F_TRAINER_FEMALE |
 #line 2866
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 2867
+#line 2253
 F_TRAINER_FEMALE | 
 #line 2868
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6889,8 +6096,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2876
-    [TRAINER_CINDY_6] =
+#line 2263
+    [DIFFICULTY_NORMAL][TRAINER_CINDY_6] =
     {
 #line 2877
         .trainerName = _("CINDY"),
@@ -6899,7 +6106,7 @@ F_TRAINER_FEMALE |
 #line 2879
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 2880
+#line 2267
 F_TRAINER_FEMALE | 
 #line 2881
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6932,8 +6139,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2893
-    [TRAINER_MELISSA] =
+#line 2281
+    [DIFFICULTY_NORMAL][TRAINER_MELISSA] =
     {
 #line 2894
         .trainerName = _("MELISSA"),
@@ -6942,7 +6149,7 @@ F_TRAINER_FEMALE |
 #line 2896
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 2897
+#line 2285
 F_TRAINER_FEMALE | 
 #line 2898
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -6966,8 +6173,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2906
-    [TRAINER_SHEILA] =
+#line 2294
+    [DIFFICULTY_NORMAL][TRAINER_SHEILA] =
     {
 #line 2907
         .trainerName = _("SHEILA"),
@@ -6976,7 +6183,7 @@ F_TRAINER_FEMALE |
 #line 2909
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 2910
+#line 2298
 F_TRAINER_FEMALE | 
 #line 2911
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7000,8 +6207,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2919
-    [TRAINER_SHIRLEY] =
+#line 2307
+    [DIFFICULTY_NORMAL][TRAINER_SHIRLEY] =
     {
 #line 2920
         .trainerName = _("SHIRLEY"),
@@ -7010,7 +6217,7 @@ F_TRAINER_FEMALE |
 #line 2922
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 2923
+#line 2311
 F_TRAINER_FEMALE | 
 #line 2924
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7034,8 +6241,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2932
-    [TRAINER_JESSICA_1] =
+#line 2320
+    [DIFFICULTY_NORMAL][TRAINER_JESSICA_1] =
     {
 #line 2933
         .trainerName = _("JESSICA"),
@@ -7044,7 +6251,7 @@ F_TRAINER_FEMALE |
 #line 2935
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 2936
+#line 2324
 F_TRAINER_FEMALE | 
 #line 2937
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7093,8 +6300,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2957
-    [TRAINER_CONNIE] =
+#line 2345
+    [DIFFICULTY_NORMAL][TRAINER_CONNIE] =
     {
 #line 2958
         .trainerName = _("CONNIE"),
@@ -7103,7 +6310,7 @@ F_TRAINER_FEMALE |
 #line 2960
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 2961
+#line 2349
 F_TRAINER_FEMALE | 
 #line 2962
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7127,8 +6334,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2970
-    [TRAINER_BRIDGET] =
+#line 2358
+    [DIFFICULTY_NORMAL][TRAINER_BRIDGET] =
     {
 #line 2971
         .trainerName = _("BRIDGET"),
@@ -7137,7 +6344,7 @@ F_TRAINER_FEMALE |
 #line 2973
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 2974
+#line 2362
 F_TRAINER_FEMALE | 
 #line 2975
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7161,8 +6368,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 2983
-    [TRAINER_OLIVIA] =
+#line 2371
+    [DIFFICULTY_NORMAL][TRAINER_OLIVIA] =
     {
 #line 2984
         .trainerName = _("OLIVIA"),
@@ -7171,7 +6378,7 @@ F_TRAINER_FEMALE |
 #line 2986
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 2987
+#line 2375
 F_TRAINER_FEMALE | 
 #line 2988
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7237,8 +6444,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3015
-    [TRAINER_TIFFANY] =
+#line 2403
+    [DIFFICULTY_NORMAL][TRAINER_TIFFANY] =
     {
 #line 3016
         .trainerName = _("TIFFANY"),
@@ -7247,7 +6454,7 @@ F_TRAINER_FEMALE |
 #line 3018
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 3019
+#line 2407
 F_TRAINER_FEMALE | 
 #line 3020
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7282,8 +6489,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3032
-    [TRAINER_JESSICA_2] =
+#line 2420
+    [DIFFICULTY_NORMAL][TRAINER_JESSICA_2] =
     {
 #line 3033
         .trainerName = _("JESSICA"),
@@ -7292,7 +6499,7 @@ F_TRAINER_FEMALE |
 #line 3035
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 3036
+#line 2424
 F_TRAINER_FEMALE | 
 #line 3037
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7341,8 +6548,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3057
-    [TRAINER_JESSICA_3] =
+#line 2445
+    [DIFFICULTY_NORMAL][TRAINER_JESSICA_3] =
     {
 #line 3058
         .trainerName = _("JESSICA"),
@@ -7351,7 +6558,7 @@ F_TRAINER_FEMALE |
 #line 3060
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 3061
+#line 2449
 F_TRAINER_FEMALE | 
 #line 3062
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7400,8 +6607,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3082
-    [TRAINER_JESSICA_4] =
+#line 2470
+    [DIFFICULTY_NORMAL][TRAINER_JESSICA_4] =
     {
 #line 3083
         .trainerName = _("JESSICA"),
@@ -7410,7 +6617,7 @@ F_TRAINER_FEMALE |
 #line 3085
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 3086
+#line 2474
 F_TRAINER_FEMALE | 
 #line 3087
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7459,8 +6666,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3107
-    [TRAINER_JESSICA_5] =
+#line 2495
+    [DIFFICULTY_NORMAL][TRAINER_JESSICA_5] =
     {
 #line 3108
         .trainerName = _("JESSICA"),
@@ -7469,7 +6676,7 @@ F_TRAINER_FEMALE |
 #line 3110
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 3111
+#line 2499
 F_TRAINER_FEMALE | 
 #line 3112
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7518,8 +6725,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3132
-    [TRAINER_WINSTON_1] =
+#line 2520
+    [DIFFICULTY_NORMAL][TRAINER_WINSTON_1] =
     {
 #line 3133
         .trainerName = _("WINSTON"),
@@ -7528,7 +6735,7 @@ F_TRAINER_FEMALE |
 #line 3135
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender =
-#line 3137
+#line 2525
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3138
         .doubleBattle = TRUE,
@@ -7552,8 +6759,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3145
-    [TRAINER_MOLLIE] =
+#line 2534
+    [DIFFICULTY_NORMAL][TRAINER_MOLLIE] =
     {
 #line 3146
         .trainerName = _("MOLLIE"),
@@ -7562,7 +6769,7 @@ F_TRAINER_FEMALE |
 #line 3148
         .trainerPic = TRAINER_PIC_EXPERT_F,
         .encounterMusic_gender =
-#line 3149
+#line 2538
 F_TRAINER_FEMALE | 
 #line 3150
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -7597,8 +6804,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3162
-    [TRAINER_GARRET] =
+#line 2551
+    [DIFFICULTY_NORMAL][TRAINER_GARRET] =
     {
 #line 3163
         .trainerName = _("GARRET"),
@@ -7607,7 +6814,7 @@ F_TRAINER_FEMALE |
 #line 3165
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender =
-#line 3167
+#line 2556
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3168
         .doubleBattle = TRUE,
@@ -7631,8 +6838,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3175
-    [TRAINER_WINSTON_2] =
+#line 2565
+    [DIFFICULTY_NORMAL][TRAINER_WINSTON_2] =
     {
 #line 3176
         .trainerName = _("WINSTON"),
@@ -7641,7 +6848,7 @@ F_TRAINER_FEMALE |
 #line 3178
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender =
-#line 3180
+#line 2570
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3181
         .doubleBattle = TRUE,
@@ -7665,8 +6872,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3188
-    [TRAINER_WINSTON_3] =
+#line 2579
+    [DIFFICULTY_NORMAL][TRAINER_WINSTON_3] =
     {
 #line 3189
         .trainerName = _("WINSTON"),
@@ -7675,7 +6882,7 @@ F_TRAINER_FEMALE |
 #line 3191
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender =
-#line 3193
+#line 2584
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3194
         .doubleBattle = TRUE,
@@ -7699,8 +6906,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3201
-    [TRAINER_WINSTON_4] =
+#line 2593
+    [DIFFICULTY_NORMAL][TRAINER_WINSTON_4] =
     {
 #line 3202
         .trainerName = _("WINSTON"),
@@ -7709,7 +6916,7 @@ F_TRAINER_FEMALE |
 #line 3204
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender =
-#line 3206
+#line 2598
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3207
         .doubleBattle = TRUE,
@@ -7733,8 +6940,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3214
-    [TRAINER_WINSTON_5] =
+#line 2607
+    [DIFFICULTY_NORMAL][TRAINER_WINSTON_5] =
     {
 #line 3215
         .trainerName = _("WINSTON"),
@@ -7743,7 +6950,7 @@ F_TRAINER_FEMALE |
 #line 3217
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender =
-#line 3219
+#line 2612
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 3220
         .doubleBattle = TRUE,
@@ -7774,8 +6981,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3231
-    [TRAINER_STEVE_1] =
+#line 2625
+    [DIFFICULTY_NORMAL][TRAINER_STEVE_1] =
     {
 #line 3232
         .trainerName = _("STEVE"),
@@ -7784,7 +6991,7 @@ F_TRAINER_FEMALE |
 #line 3234
         .trainerPic = TRAINER_PIC_POKEMANIAC,
         .encounterMusic_gender =
-#line 3236
+#line 2630
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3237
         .doubleBattle = TRUE,
@@ -7806,8 +7013,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3244
-    [TRAINER_THALIA_1] =
+#line 2638
+    [DIFFICULTY_NORMAL][TRAINER_THALIA_1] =
     {
 #line 3245
         .trainerName = _("THALIA"),
@@ -7816,7 +7023,7 @@ F_TRAINER_FEMALE |
 #line 3247
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 3248
+#line 2642
 F_TRAINER_FEMALE | 
 #line 3249
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7851,8 +7058,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3261
-    [TRAINER_MARK] =
+#line 2655
+    [DIFFICULTY_NORMAL][TRAINER_MARK] =
     {
 #line 3262
         .trainerName = _("MARK"),
@@ -7861,7 +7068,7 @@ F_TRAINER_FEMALE |
 #line 3264
         .trainerPic = TRAINER_PIC_POKEMANIAC,
         .encounterMusic_gender =
-#line 3266
+#line 2660
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3267
         .doubleBattle = TRUE,
@@ -7883,8 +7090,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3274
-    [TRAINER_GRUNT_MT_CHIMNEY_1] =
+#line 2668
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_CHIMNEY_1] =
     {
 #line 3275
         .trainerName = _("GRUNT"),
@@ -7893,7 +7100,7 @@ F_TRAINER_FEMALE |
 #line 3277
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .encounterMusic_gender =
-#line 3278
+#line 2672
 F_TRAINER_FEMALE | 
 #line 3279
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
@@ -7917,8 +7124,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3287
-    [TRAINER_STEVE_2] =
+#line 2681
+    [DIFFICULTY_NORMAL][TRAINER_STEVE_2] =
     {
 #line 3288
         .trainerName = _("STEVE"),
@@ -7927,7 +7134,7 @@ F_TRAINER_FEMALE |
 #line 3290
         .trainerPic = TRAINER_PIC_POKEMANIAC,
         .encounterMusic_gender =
-#line 3292
+#line 2686
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3293
         .doubleBattle = TRUE,
@@ -7949,8 +7156,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3300
-    [TRAINER_STEVE_3] =
+#line 2694
+    [DIFFICULTY_NORMAL][TRAINER_STEVE_3] =
     {
 #line 3301
         .trainerName = _("STEVE"),
@@ -7959,7 +7166,7 @@ F_TRAINER_FEMALE |
 #line 3303
         .trainerPic = TRAINER_PIC_POKEMANIAC,
         .encounterMusic_gender =
-#line 3305
+#line 2699
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3306
         .doubleBattle = TRUE,
@@ -7992,8 +7199,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3317
-    [TRAINER_STEVE_4] =
+#line 2711
+    [DIFFICULTY_NORMAL][TRAINER_STEVE_4] =
     {
 #line 3318
         .trainerName = _("STEVE"),
@@ -8002,7 +7209,7 @@ F_TRAINER_FEMALE |
 #line 3320
         .trainerPic = TRAINER_PIC_POKEMANIAC,
         .encounterMusic_gender =
-#line 3322
+#line 2716
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3323
         .doubleBattle = TRUE,
@@ -8035,8 +7242,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3334
-    [TRAINER_STEVE_5] =
+#line 2728
+    [DIFFICULTY_NORMAL][TRAINER_STEVE_5] =
     {
 #line 3335
         .trainerName = _("STEVE"),
@@ -8045,7 +7252,7 @@ F_TRAINER_FEMALE |
 #line 3337
         .trainerPic = TRAINER_PIC_POKEMANIAC,
         .encounterMusic_gender =
-#line 3339
+#line 2733
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 3340
         .doubleBattle = TRUE,
@@ -8078,8 +7285,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3351
-    [TRAINER_LUIS] =
+#line 2745
+    [DIFFICULTY_NORMAL][TRAINER_LUIS] =
     {
 #line 3352
         .trainerName = _("LUIS"),
@@ -8088,7 +7295,7 @@ F_TRAINER_FEMALE |
 #line 3354
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3356
+#line 2750
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3357
         .doubleBattle = TRUE,
@@ -8110,8 +7317,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3364
-    [TRAINER_DOMINIK] =
+#line 2758
+    [DIFFICULTY_NORMAL][TRAINER_DOMINIK] =
     {
 #line 3365
         .trainerName = _("DOMINIK"),
@@ -8120,7 +7327,7 @@ F_TRAINER_FEMALE |
 #line 3367
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3369
+#line 2763
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3370
         .doubleBattle = TRUE,
@@ -8142,8 +7349,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3377
-    [TRAINER_DOUGLAS] =
+#line 2771
+    [DIFFICULTY_NORMAL][TRAINER_DOUGLAS] =
     {
 #line 3378
         .trainerName = _("DOUGLAS"),
@@ -8152,7 +7359,7 @@ F_TRAINER_FEMALE |
 #line 3380
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3382
+#line 2776
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3383
         .doubleBattle = TRUE,
@@ -8185,8 +7392,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3394
-    [TRAINER_DARRIN] =
+#line 2788
+    [DIFFICULTY_NORMAL][TRAINER_DARRIN] =
     {
 #line 3395
         .trainerName = _("DARRIN"),
@@ -8195,7 +7402,7 @@ F_TRAINER_FEMALE |
 #line 3397
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3399
+#line 2793
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3400
         .doubleBattle = TRUE,
@@ -8239,8 +7446,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3415
-    [TRAINER_TONY_1] =
+#line 2809
+    [DIFFICULTY_NORMAL][TRAINER_TONY_1] =
     {
 #line 3416
         .trainerName = _("TONY"),
@@ -8249,7 +7456,7 @@ F_TRAINER_FEMALE |
 #line 3418
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3420
+#line 2814
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3421
         .doubleBattle = TRUE,
@@ -8271,8 +7478,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3428
-    [TRAINER_JEROME] =
+#line 2822
+    [DIFFICULTY_NORMAL][TRAINER_JEROME] =
     {
 #line 3429
         .trainerName = _("JEROME"),
@@ -8281,7 +7488,7 @@ F_TRAINER_FEMALE |
 #line 3431
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3433
+#line 2827
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3434
         .doubleBattle = TRUE,
@@ -8303,8 +7510,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3441
-    [TRAINER_MATTHEW] =
+#line 2835
+    [DIFFICULTY_NORMAL][TRAINER_MATTHEW] =
     {
 #line 3442
         .trainerName = _("MATTHEW"),
@@ -8313,7 +7520,7 @@ F_TRAINER_FEMALE |
 #line 3444
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3446
+#line 2840
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3447
         .doubleBattle = TRUE,
@@ -8335,8 +7542,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3454
-    [TRAINER_DAVID] =
+#line 2848
+    [DIFFICULTY_NORMAL][TRAINER_DAVID] =
     {
 #line 3455
         .trainerName = _("DAVID"),
@@ -8345,7 +7552,7 @@ F_TRAINER_FEMALE |
 #line 3457
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3459
+#line 2853
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3460
         .doubleBattle = TRUE,
@@ -8378,8 +7585,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3471
-    [TRAINER_SPENCER] =
+#line 2865
+    [DIFFICULTY_NORMAL][TRAINER_SPENCER] =
     {
 #line 3472
         .trainerName = _("SPENCER"),
@@ -8388,7 +7595,7 @@ F_TRAINER_FEMALE |
 #line 3474
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3476
+#line 2870
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3477
         .doubleBattle = TRUE,
@@ -8421,8 +7628,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3488
-    [TRAINER_ROLAND] =
+#line 2882
+    [DIFFICULTY_NORMAL][TRAINER_ROLAND] =
     {
 #line 3489
         .trainerName = _("ROLAND"),
@@ -8431,7 +7638,7 @@ F_TRAINER_FEMALE |
 #line 3491
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3493
+#line 2887
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3494
         .doubleBattle = TRUE,
@@ -8453,8 +7660,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3501
-    [TRAINER_NOLEN] =
+#line 2895
+    [DIFFICULTY_NORMAL][TRAINER_NOLEN] =
     {
 #line 3502
         .trainerName = _("NOLEN"),
@@ -8463,7 +7670,7 @@ F_TRAINER_FEMALE |
 #line 3504
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3506
+#line 2900
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3507
         .doubleBattle = TRUE,
@@ -8485,8 +7692,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3514
-    [TRAINER_STAN] =
+#line 2908
+    [DIFFICULTY_NORMAL][TRAINER_STAN] =
     {
 #line 3515
         .trainerName = _("STAN"),
@@ -8495,7 +7702,7 @@ F_TRAINER_FEMALE |
 #line 3517
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3519
+#line 2913
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3520
         .doubleBattle = TRUE,
@@ -8517,8 +7724,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3527
-    [TRAINER_BARRY] =
+#line 2921
+    [DIFFICULTY_NORMAL][TRAINER_BARRY] =
     {
 #line 3528
         .trainerName = _("BARRY"),
@@ -8527,7 +7734,7 @@ F_TRAINER_FEMALE |
 #line 3530
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3532
+#line 2926
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3533
         .doubleBattle = TRUE,
@@ -8549,8 +7756,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3540
-    [TRAINER_DEAN] =
+#line 2934
+    [DIFFICULTY_NORMAL][TRAINER_DEAN] =
     {
 #line 3541
         .trainerName = _("DEAN"),
@@ -8559,7 +7766,7 @@ F_TRAINER_FEMALE |
 #line 3543
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3545
+#line 2939
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3546
         .doubleBattle = TRUE,
@@ -8603,8 +7810,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3561
-    [TRAINER_RODNEY] =
+#line 2955
+    [DIFFICULTY_NORMAL][TRAINER_RODNEY] =
     {
 #line 3562
         .trainerName = _("RODNEY"),
@@ -8613,7 +7820,7 @@ F_TRAINER_FEMALE |
 #line 3564
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3566
+#line 2960
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3567
         .doubleBattle = TRUE,
@@ -8635,8 +7842,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3574
-    [TRAINER_RICHARD] =
+#line 2968
+    [DIFFICULTY_NORMAL][TRAINER_RICHARD] =
     {
 #line 3575
         .trainerName = _("RICHARD"),
@@ -8645,7 +7852,7 @@ F_TRAINER_FEMALE |
 #line 3577
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3579
+#line 2973
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3580
         .doubleBattle = TRUE,
@@ -8667,8 +7874,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3587
-    [TRAINER_HERMAN] =
+#line 2981
+    [DIFFICULTY_NORMAL][TRAINER_HERMAN] =
     {
 #line 3588
         .trainerName = _("HERMAN"),
@@ -8677,7 +7884,7 @@ F_TRAINER_FEMALE |
 #line 3590
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3592
+#line 2986
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3593
         .doubleBattle = TRUE,
@@ -8710,8 +7917,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3604
-    [TRAINER_SANTIAGO] =
+#line 2998
+    [DIFFICULTY_NORMAL][TRAINER_SANTIAGO] =
     {
 #line 3605
         .trainerName = _("SANTIAGO"),
@@ -8720,7 +7927,7 @@ F_TRAINER_FEMALE |
 #line 3607
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3609
+#line 3003
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3610
         .doubleBattle = TRUE,
@@ -8753,8 +7960,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3621
-    [TRAINER_GILBERT] =
+#line 3015
+    [DIFFICULTY_NORMAL][TRAINER_GILBERT] =
     {
 #line 3622
         .trainerName = _("GILBERT"),
@@ -8763,7 +7970,7 @@ F_TRAINER_FEMALE |
 #line 3624
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3626
+#line 3020
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3627
         .doubleBattle = TRUE,
@@ -8785,8 +7992,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3634
-    [TRAINER_FRANKLIN] =
+#line 3028
+    [DIFFICULTY_NORMAL][TRAINER_FRANKLIN] =
     {
 #line 3635
         .trainerName = _("FRANKLIN"),
@@ -8795,7 +8002,7 @@ F_TRAINER_FEMALE |
 #line 3637
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3639
+#line 3033
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3640
         .doubleBattle = TRUE,
@@ -8817,8 +8024,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3647
-    [TRAINER_KEVIN] =
+#line 3041
+    [DIFFICULTY_NORMAL][TRAINER_KEVIN] =
     {
 #line 3648
         .trainerName = _("KEVIN"),
@@ -8827,7 +8034,7 @@ F_TRAINER_FEMALE |
 #line 3650
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3652
+#line 3046
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3653
         .doubleBattle = TRUE,
@@ -8849,8 +8056,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3660
-    [TRAINER_JACK] =
+#line 3054
+    [DIFFICULTY_NORMAL][TRAINER_JACK] =
     {
 #line 3661
         .trainerName = _("JACK"),
@@ -8859,7 +8066,7 @@ F_TRAINER_FEMALE |
 #line 3663
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3665
+#line 3059
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3666
         .doubleBattle = TRUE,
@@ -8881,8 +8088,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3673
-    [TRAINER_DUDLEY] =
+#line 3067
+    [DIFFICULTY_NORMAL][TRAINER_DUDLEY] =
     {
 #line 3674
         .trainerName = _("DUDLEY"),
@@ -8891,7 +8098,7 @@ F_TRAINER_FEMALE |
 #line 3676
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3678
+#line 3072
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3679
         .doubleBattle = TRUE,
@@ -8935,8 +8142,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3694
-    [TRAINER_CHAD] =
+#line 3088
+    [DIFFICULTY_NORMAL][TRAINER_CHAD] =
     {
 #line 3695
         .trainerName = _("CHAD"),
@@ -8945,7 +8152,7 @@ F_TRAINER_FEMALE |
 #line 3697
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3699
+#line 3093
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3700
         .doubleBattle = TRUE,
@@ -8978,8 +8185,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3711
-    [TRAINER_TONY_2] =
+#line 3105
+    [DIFFICULTY_NORMAL][TRAINER_TONY_2] =
     {
 #line 3712
         .trainerName = _("TONY"),
@@ -8988,7 +8195,7 @@ F_TRAINER_FEMALE |
 #line 3714
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3716
+#line 3110
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3717
         .doubleBattle = TRUE,
@@ -9010,8 +8217,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3724
-    [TRAINER_TONY_3] =
+#line 3118
+    [DIFFICULTY_NORMAL][TRAINER_TONY_3] =
     {
 #line 3725
         .trainerName = _("TONY"),
@@ -9020,7 +8227,7 @@ F_TRAINER_FEMALE |
 #line 3727
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3729
+#line 3123
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3730
         .doubleBattle = TRUE,
@@ -9042,8 +8249,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3737
-    [TRAINER_TONY_4] =
+#line 3131
+    [DIFFICULTY_NORMAL][TRAINER_TONY_4] =
     {
 #line 3738
         .trainerName = _("TONY"),
@@ -9052,7 +8259,7 @@ F_TRAINER_FEMALE |
 #line 3740
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3742
+#line 3136
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3743
         .doubleBattle = TRUE,
@@ -9085,8 +8292,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3754
-    [TRAINER_TONY_5] =
+#line 3148
+    [DIFFICULTY_NORMAL][TRAINER_TONY_5] =
     {
 #line 3755
         .trainerName = _("TONY"),
@@ -9095,7 +8302,7 @@ F_TRAINER_FEMALE |
 #line 3757
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 3759
+#line 3153
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 3760
         .doubleBattle = TRUE,
@@ -9128,8 +8335,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3771
-    [TRAINER_TAKAO] =
+#line 3165
+    [DIFFICULTY_NORMAL][TRAINER_TAKAO] =
     {
 #line 3772
         .trainerName = _("TAKAO"),
@@ -9138,7 +8345,7 @@ F_TRAINER_FEMALE |
 #line 3774
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3776
+#line 3170
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3777
         .doubleBattle = TRUE,
@@ -9160,8 +8367,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3784
-    [TRAINER_HITOSHI] =
+#line 3178
+    [DIFFICULTY_NORMAL][TRAINER_HITOSHI] =
     {
 #line 3785
         .trainerName = _("HITOSHI"),
@@ -9170,7 +8377,7 @@ F_TRAINER_FEMALE |
 #line 3787
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3789
+#line 3183
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3790
         .doubleBattle = TRUE,
@@ -9203,8 +8410,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3801
-    [TRAINER_KIYO] =
+#line 3195
+    [DIFFICULTY_NORMAL][TRAINER_KIYO] =
     {
 #line 3802
         .trainerName = _("KIYO"),
@@ -9213,7 +8420,7 @@ F_TRAINER_FEMALE |
 #line 3804
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3806
+#line 3200
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3807
         .doubleBattle = TRUE,
@@ -9235,8 +8442,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3814
-    [TRAINER_KOICHI] =
+#line 3208
+    [DIFFICULTY_NORMAL][TRAINER_KOICHI] =
     {
 #line 3815
         .trainerName = _("KOICHI"),
@@ -9245,7 +8452,7 @@ F_TRAINER_FEMALE |
 #line 3817
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3819
+#line 3213
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3820
         .doubleBattle = TRUE,
@@ -9278,8 +8485,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3831
-    [TRAINER_NOB_1] =
+#line 3225
+    [DIFFICULTY_NORMAL][TRAINER_NOB_1] =
     {
 #line 3832
         .trainerName = _("NOB"),
@@ -9288,7 +8495,7 @@ F_TRAINER_FEMALE |
 #line 3834
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3836
+#line 3230
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3837
         .doubleBattle = TRUE,
@@ -9310,8 +8517,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3844
-    [TRAINER_NOB_2] =
+#line 3238
+    [DIFFICULTY_NORMAL][TRAINER_NOB_2] =
     {
 #line 3845
         .trainerName = _("NOB"),
@@ -9320,7 +8527,7 @@ F_TRAINER_FEMALE |
 #line 3847
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3849
+#line 3243
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3850
         .doubleBattle = TRUE,
@@ -9342,8 +8549,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3857
-    [TRAINER_NOB_3] =
+#line 3251
+    [DIFFICULTY_NORMAL][TRAINER_NOB_3] =
     {
 #line 3858
         .trainerName = _("NOB"),
@@ -9352,7 +8559,7 @@ F_TRAINER_FEMALE |
 #line 3860
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3862
+#line 3256
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3863
         .doubleBattle = TRUE,
@@ -9385,8 +8592,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3874
-    [TRAINER_NOB_4] =
+#line 3268
+    [DIFFICULTY_NORMAL][TRAINER_NOB_4] =
     {
 #line 3875
         .trainerName = _("NOB"),
@@ -9395,7 +8602,7 @@ F_TRAINER_FEMALE |
 #line 3877
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3879
+#line 3273
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3880
         .doubleBattle = TRUE,
@@ -9439,8 +8646,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3895
-    [TRAINER_NOB_5] =
+#line 3289
+    [DIFFICULTY_NORMAL][TRAINER_NOB_5] =
     {
 #line 3896
         .trainerName = _("NOB"),
@@ -9449,7 +8656,7 @@ F_TRAINER_FEMALE |
 #line 3898
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3900
+#line 3294
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3901
         .doubleBattle = TRUE,
@@ -9506,8 +8713,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3920
-    [TRAINER_YUJI] =
+#line 3314
+    [DIFFICULTY_NORMAL][TRAINER_YUJI] =
     {
 #line 3921
         .trainerName = _("YUJI"),
@@ -9516,7 +8723,7 @@ F_TRAINER_FEMALE |
 #line 3923
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3925
+#line 3319
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3926
         .doubleBattle = TRUE,
@@ -9549,8 +8756,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3937
-    [TRAINER_DAISUKE] =
+#line 3331
+    [DIFFICULTY_NORMAL][TRAINER_DAISUKE] =
     {
 #line 3938
         .trainerName = _("DAISUKE"),
@@ -9559,7 +8766,7 @@ F_TRAINER_FEMALE |
 #line 3940
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3942
+#line 3336
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3943
         .doubleBattle = TRUE,
@@ -9581,8 +8788,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3950
-    [TRAINER_ATSUSHI] =
+#line 3344
+    [DIFFICULTY_NORMAL][TRAINER_ATSUSHI] =
     {
 #line 3951
         .trainerName = _("ATSUSHI"),
@@ -9591,7 +8798,7 @@ F_TRAINER_FEMALE |
 #line 3953
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 3955
+#line 3349
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3956
         .doubleBattle = TRUE,
@@ -9613,8 +8820,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3963
-    [TRAINER_KIRK] =
+#line 3357
+    [DIFFICULTY_NORMAL][TRAINER_KIRK] =
     {
 #line 3964
         .trainerName = _("KIRK"),
@@ -9623,7 +8830,7 @@ F_TRAINER_FEMALE |
 #line 3966
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 3968
+#line 3362
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 3969
         .doubleBattle = TRUE,
@@ -9671,8 +8878,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 3988
-    [TRAINER_GRUNT_AQUA_HIDEOUT_7] =
+#line 3381
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_7] =
     {
 #line 3989
         .trainerName = _("GRUNT"),
@@ -9681,7 +8888,7 @@ F_TRAINER_FEMALE |
 #line 3991
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .encounterMusic_gender =
-#line 3992
+#line 3385
 F_TRAINER_FEMALE | 
 #line 3993
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -9716,8 +8923,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4005
-    [TRAINER_GRUNT_AQUA_HIDEOUT_8] =
+#line 3398
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_8] =
     {
 #line 4006
         .trainerName = _("GRUNT"),
@@ -9726,7 +8933,7 @@ F_TRAINER_FEMALE |
 #line 4008
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 4010
+#line 3403
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 4011
         .doubleBattle = TRUE,
@@ -9748,8 +8955,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4018
-    [TRAINER_SHAWN] =
+#line 3411
+    [DIFFICULTY_NORMAL][TRAINER_SHAWN] =
     {
 #line 4019
         .trainerName = _("SHAWN"),
@@ -9758,7 +8965,7 @@ F_TRAINER_FEMALE |
 #line 4021
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 4023
+#line 3416
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4025
         .doubleBattle = TRUE,
@@ -9793,8 +9000,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4036
-    [TRAINER_FERNANDO_1] =
+#line 3428
+    [DIFFICULTY_NORMAL][TRAINER_FERNANDO_1] =
     {
 #line 4037
         .trainerName = _("FERNANDO"),
@@ -9803,7 +9010,7 @@ F_TRAINER_FEMALE |
 #line 4039
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 4041
+#line 3433
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4042
         .doubleBattle = TRUE,
@@ -9836,8 +9043,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4053
-    [TRAINER_DALTON_1] =
+#line 3445
+    [DIFFICULTY_NORMAL][TRAINER_DALTON_1] =
     {
 #line 4054
         .trainerName = _("DALTON"),
@@ -9846,7 +9053,7 @@ F_TRAINER_FEMALE |
 #line 4056
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 4058
+#line 3450
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4059
         .doubleBattle = TRUE,
@@ -9879,8 +9086,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4070
-    [TRAINER_DALTON_2] =
+#line 3462
+    [DIFFICULTY_NORMAL][TRAINER_DALTON_2] =
     {
 #line 4071
         .trainerName = _("DALTON"),
@@ -9889,7 +9096,7 @@ F_TRAINER_FEMALE |
 #line 4073
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 4075
+#line 3467
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4076
         .doubleBattle = TRUE,
@@ -9933,8 +9140,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4091
-    [TRAINER_DALTON_3] =
+#line 3483
+    [DIFFICULTY_NORMAL][TRAINER_DALTON_3] =
     {
 #line 4092
         .trainerName = _("DALTON"),
@@ -9943,7 +9150,7 @@ F_TRAINER_FEMALE |
 #line 4094
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 4096
+#line 3488
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4097
         .doubleBattle = TRUE,
@@ -9987,8 +9194,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4112
-    [TRAINER_DALTON_4] =
+#line 3504
+    [DIFFICULTY_NORMAL][TRAINER_DALTON_4] =
     {
 #line 4113
         .trainerName = _("DALTON"),
@@ -9997,7 +9204,7 @@ F_TRAINER_FEMALE |
 #line 4115
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 4117
+#line 3509
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4118
         .doubleBattle = TRUE,
@@ -10041,8 +9248,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4133
-    [TRAINER_DALTON_5] =
+#line 3525
+    [DIFFICULTY_NORMAL][TRAINER_DALTON_5] =
     {
 #line 4134
         .trainerName = _("DALTON"),
@@ -10051,7 +9258,7 @@ F_TRAINER_FEMALE |
 #line 4136
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 4138
+#line 3530
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4139
         .doubleBattle = TRUE,
@@ -10095,8 +9302,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4154
-    [TRAINER_COLE] =
+#line 3546
+    [DIFFICULTY_NORMAL][TRAINER_COLE] =
     {
 #line 4155
         .trainerName = _("COLE"),
@@ -10105,7 +9312,7 @@ F_TRAINER_FEMALE |
 #line 4157
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4159
+#line 3551
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4160
         .doubleBattle = TRUE,
@@ -10127,8 +9334,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4167
-    [TRAINER_JEFF] =
+#line 3559
+    [DIFFICULTY_NORMAL][TRAINER_JEFF] =
     {
 #line 4168
         .trainerName = _("JEFF"),
@@ -10137,7 +9344,7 @@ F_TRAINER_FEMALE |
 #line 4170
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4172
+#line 3564
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4173
         .doubleBattle = TRUE,
@@ -10170,8 +9377,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4184
-    [TRAINER_AXLE] =
+#line 3576
+    [DIFFICULTY_NORMAL][TRAINER_AXLE] =
     {
 #line 4185
         .trainerName = _("AXLE"),
@@ -10180,7 +9387,7 @@ F_TRAINER_FEMALE |
 #line 4187
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4189
+#line 3581
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4190
         .doubleBattle = TRUE,
@@ -10202,8 +9409,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4197
-    [TRAINER_JACE] =
+#line 3589
+    [DIFFICULTY_NORMAL][TRAINER_JACE] =
     {
 #line 4198
         .trainerName = _("JACE"),
@@ -10212,7 +9419,7 @@ F_TRAINER_FEMALE |
 #line 4200
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4202
+#line 3594
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4203
         .doubleBattle = TRUE,
@@ -10234,8 +9441,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4210
-    [TRAINER_KEEGAN] =
+#line 3602
+    [DIFFICULTY_NORMAL][TRAINER_KEEGAN] =
     {
 #line 4211
         .trainerName = _("KEEGAN"),
@@ -10244,7 +9451,7 @@ F_TRAINER_FEMALE |
 #line 4213
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4215
+#line 3607
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4216
         .doubleBattle = TRUE,
@@ -10266,8 +9473,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4223
-    [TRAINER_BERNIE_1] =
+#line 3615
+    [DIFFICULTY_NORMAL][TRAINER_BERNIE_1] =
     {
 #line 4224
         .trainerName = _("BERNIE"),
@@ -10276,7 +9483,7 @@ F_TRAINER_FEMALE |
 #line 4226
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4228
+#line 3620
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4229
         .doubleBattle = TRUE,
@@ -10309,8 +9516,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4240
-    [TRAINER_BERNIE_2] =
+#line 3632
+    [DIFFICULTY_NORMAL][TRAINER_BERNIE_2] =
     {
 #line 4241
         .trainerName = _("BERNIE"),
@@ -10319,7 +9526,7 @@ F_TRAINER_FEMALE |
 #line 4243
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4245
+#line 3637
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4246
         .doubleBattle = TRUE,
@@ -10352,8 +9559,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4257
-    [TRAINER_BERNIE_3] =
+#line 3649
+    [DIFFICULTY_NORMAL][TRAINER_BERNIE_3] =
     {
 #line 4258
         .trainerName = _("BERNIE"),
@@ -10362,7 +9569,7 @@ F_TRAINER_FEMALE |
 #line 4260
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4262
+#line 3654
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4263
         .doubleBattle = TRUE,
@@ -10395,8 +9602,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4274
-    [TRAINER_BERNIE_4] =
+#line 3666
+    [DIFFICULTY_NORMAL][TRAINER_BERNIE_4] =
     {
 #line 4275
         .trainerName = _("BERNIE"),
@@ -10405,7 +9612,7 @@ F_TRAINER_FEMALE |
 #line 4277
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4279
+#line 3671
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4280
         .doubleBattle = TRUE,
@@ -10438,8 +9645,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4291
-    [TRAINER_BERNIE_5] =
+#line 3683
+    [DIFFICULTY_NORMAL][TRAINER_BERNIE_5] =
     {
 #line 4292
         .trainerName = _("BERNIE"),
@@ -10448,7 +9655,7 @@ F_TRAINER_FEMALE |
 #line 4294
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 4296
+#line 3688
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 4297
         .doubleBattle = TRUE,
@@ -10481,8 +9688,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4308
-    [TRAINER_DREW] =
+#line 3700
+    [DIFFICULTY_NORMAL][TRAINER_DREW] =
     {
 #line 4309
         .trainerName = _("DREW"),
@@ -10491,7 +9698,7 @@ F_TRAINER_FEMALE |
 #line 4311
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4313
+#line 3705
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4314
         .doubleBattle = TRUE,
@@ -10520,8 +9727,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4325
-    [TRAINER_BEAU] =
+#line 3717
+    [DIFFICULTY_NORMAL][TRAINER_BEAU] =
     {
 #line 4326
         .trainerName = _("BEAU"),
@@ -10530,7 +9737,7 @@ F_TRAINER_FEMALE |
 #line 4328
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4330
+#line 3722
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4331
         .doubleBattle = TRUE,
@@ -10595,8 +9802,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4358
-    [TRAINER_LARRY] =
+#line 3750
+    [DIFFICULTY_NORMAL][TRAINER_LARRY] =
     {
 #line 4359
         .trainerName = _("LARRY"),
@@ -10605,7 +9812,7 @@ F_TRAINER_FEMALE |
 #line 4361
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4363
+#line 3755
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4364
         .doubleBattle = TRUE,
@@ -10627,8 +9834,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4371
-    [TRAINER_SHANE] =
+#line 3763
+    [DIFFICULTY_NORMAL][TRAINER_SHANE] =
     {
 #line 4372
         .trainerName = _("SHANE"),
@@ -10637,7 +9844,7 @@ F_TRAINER_FEMALE |
 #line 4374
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4376
+#line 3768
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4377
         .doubleBattle = TRUE,
@@ -10670,8 +9877,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4388
-    [TRAINER_JUSTIN] =
+#line 3780
+    [DIFFICULTY_NORMAL][TRAINER_JUSTIN] =
     {
 #line 4389
         .trainerName = _("JUSTIN"),
@@ -10680,7 +9887,7 @@ F_TRAINER_FEMALE |
 #line 4391
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4393
+#line 3785
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4394
         .doubleBattle = TRUE,
@@ -10702,8 +9909,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4401
-    [TRAINER_ETHAN_1] =
+#line 3793
+    [DIFFICULTY_NORMAL][TRAINER_ETHAN_1] =
     {
 #line 4402
         .trainerName = _("ETHAN"),
@@ -10712,7 +9919,7 @@ F_TRAINER_FEMALE |
 #line 4404
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4406
+#line 3798
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4407
         .doubleBattle = TRUE,
@@ -10745,8 +9952,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4418
-    [TRAINER_AUTUMN] =
+#line 3810
+    [DIFFICULTY_NORMAL][TRAINER_AUTUMN] =
     {
 #line 4419
         .trainerName = _("AUTUMN"),
@@ -10755,7 +9962,7 @@ F_TRAINER_FEMALE |
 #line 4421
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 4422
+#line 3814
 F_TRAINER_FEMALE | 
 #line 4423
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -10779,8 +9986,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4431
-    [TRAINER_TRAVIS] =
+#line 3823
+    [DIFFICULTY_NORMAL][TRAINER_TRAVIS] =
     {
 #line 4432
         .trainerName = _("TRAVIS"),
@@ -10789,7 +9996,7 @@ F_TRAINER_FEMALE |
 #line 4434
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4436
+#line 3828
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4437
         .doubleBattle = TRUE,
@@ -10811,8 +10018,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4444
-    [TRAINER_ETHAN_2] =
+#line 3836
+    [DIFFICULTY_NORMAL][TRAINER_ETHAN_2] =
     {
 #line 4445
         .trainerName = _("ETHAN"),
@@ -10821,7 +10028,7 @@ F_TRAINER_FEMALE |
 #line 4447
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4449
+#line 3841
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4450
         .doubleBattle = TRUE,
@@ -10854,8 +10061,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4461
-    [TRAINER_ETHAN_3] =
+#line 3853
+    [DIFFICULTY_NORMAL][TRAINER_ETHAN_3] =
     {
 #line 4462
         .trainerName = _("ETHAN"),
@@ -10864,7 +10071,7 @@ F_TRAINER_FEMALE |
 #line 4464
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4466
+#line 3858
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4467
         .doubleBattle = TRUE,
@@ -10897,8 +10104,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4478
-    [TRAINER_ETHAN_4] =
+#line 3870
+    [DIFFICULTY_NORMAL][TRAINER_ETHAN_4] =
     {
 #line 4479
         .trainerName = _("ETHAN"),
@@ -10907,7 +10114,7 @@ F_TRAINER_FEMALE |
 #line 4481
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4483
+#line 3875
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4484
         .doubleBattle = TRUE,
@@ -10951,8 +10158,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4499
-    [TRAINER_ETHAN_5] =
+#line 3891
+    [DIFFICULTY_NORMAL][TRAINER_ETHAN_5] =
     {
 #line 4500
         .trainerName = _("ETHAN"),
@@ -10961,7 +10168,7 @@ F_TRAINER_FEMALE |
 #line 4502
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 4504
+#line 3896
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4505
         .doubleBattle = TRUE,
@@ -11005,8 +10212,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4520
-    [TRAINER_BRENT] =
+#line 3912
+    [DIFFICULTY_NORMAL][TRAINER_BRENT] =
     {
 #line 4521
         .trainerName = _("BRENT"),
@@ -11015,7 +10222,7 @@ F_TRAINER_FEMALE |
 #line 4523
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 4525
+#line 3917
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4526
         .doubleBattle = TRUE,
@@ -11037,8 +10244,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4533
-    [TRAINER_DONALD] =
+#line 3925
+    [DIFFICULTY_NORMAL][TRAINER_DONALD] =
     {
 #line 4534
         .trainerName = _("DONALD"),
@@ -11047,7 +10254,7 @@ F_TRAINER_FEMALE |
 #line 4536
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 4538
+#line 3930
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4539
         .doubleBattle = TRUE,
@@ -11091,8 +10298,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4554
-    [TRAINER_TAYLOR] =
+#line 3946
+    [DIFFICULTY_NORMAL][TRAINER_TAYLOR] =
     {
 #line 4555
         .trainerName = _("TAYLOR"),
@@ -11101,7 +10308,7 @@ F_TRAINER_FEMALE |
 #line 4557
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 4559
+#line 3951
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4560
         .doubleBattle = TRUE,
@@ -11145,8 +10352,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4575
-    [TRAINER_JEFFREY_1] =
+#line 3967
+    [DIFFICULTY_NORMAL][TRAINER_JEFFREY_1] =
     {
 #line 4576
         .trainerName = _("JEFFREY"),
@@ -11155,7 +10362,7 @@ F_TRAINER_FEMALE |
 #line 4578
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 4580
+#line 3972
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4581
         .doubleBattle = TRUE,
@@ -11199,8 +10406,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4596
-    [TRAINER_DEREK] =
+#line 3988
+    [DIFFICULTY_NORMAL][TRAINER_DEREK] =
     {
 #line 4597
         .trainerName = _("DEREK"),
@@ -11209,7 +10416,7 @@ F_TRAINER_FEMALE |
 #line 4599
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 4601
+#line 3993
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4602
         .doubleBattle = TRUE,
@@ -11244,8 +10451,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4614
-    [TRAINER_JEFFREY_2] =
+#line 4005
+    [DIFFICULTY_NORMAL][TRAINER_JEFFREY_2] =
     {
 #line 4615
         .trainerName = _("JEFFREY"),
@@ -11254,7 +10461,7 @@ F_TRAINER_FEMALE |
 #line 4617
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 4619
+#line 4010
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4620
         .doubleBattle = TRUE,
@@ -11298,8 +10505,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4635
-    [TRAINER_JEFFREY_3] =
+#line 4026
+    [DIFFICULTY_NORMAL][TRAINER_JEFFREY_3] =
     {
 #line 4636
         .trainerName = _("JEFFREY"),
@@ -11308,7 +10515,7 @@ F_TRAINER_FEMALE |
 #line 4638
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 4640
+#line 4031
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4641
         .doubleBattle = TRUE,
@@ -11352,8 +10559,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4656
-    [TRAINER_JEFFREY_4] =
+#line 4047
+    [DIFFICULTY_NORMAL][TRAINER_JEFFREY_4] =
     {
 #line 4657
         .trainerName = _("JEFFREY"),
@@ -11362,7 +10569,7 @@ F_TRAINER_FEMALE |
 #line 4659
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 4661
+#line 4052
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4662
         .doubleBattle = TRUE,
@@ -11417,8 +10624,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4681
-    [TRAINER_JEFFREY_5] =
+#line 4072
+    [DIFFICULTY_NORMAL][TRAINER_JEFFREY_5] =
     {
 #line 4682
         .trainerName = _("JEFFREY"),
@@ -11427,7 +10634,7 @@ F_TRAINER_FEMALE |
 #line 4684
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 4686
+#line 4077
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4687
         .doubleBattle = TRUE,
@@ -11495,8 +10702,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4710
-    [TRAINER_EDWARD] =
+#line 4101
+    [DIFFICULTY_NORMAL][TRAINER_EDWARD] =
     {
 #line 4711
         .trainerName = _("EDWARD"),
@@ -11505,7 +10712,7 @@ F_TRAINER_FEMALE |
 #line 4713
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4715
+#line 4106
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4716
         .doubleBattle = TRUE,
@@ -11531,8 +10738,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4724
-    [TRAINER_PRESTON] =
+#line 4115
+    [DIFFICULTY_NORMAL][TRAINER_PRESTON] =
     {
 #line 4725
         .trainerName = _("PRESTON"),
@@ -11541,7 +10748,7 @@ F_TRAINER_FEMALE |
 #line 4727
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4729
+#line 4120
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4730
         .doubleBattle = TRUE,
@@ -11563,8 +10770,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4737
-    [TRAINER_VIRGIL] =
+#line 4128
+    [DIFFICULTY_NORMAL][TRAINER_VIRGIL] =
     {
 #line 4738
         .trainerName = _("VIRGIL"),
@@ -11573,7 +10780,7 @@ F_TRAINER_FEMALE |
 #line 4740
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4742
+#line 4133
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4743
         .doubleBattle = TRUE,
@@ -11595,8 +10802,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4750
-    [TRAINER_BLAKE] =
+#line 4141
+    [DIFFICULTY_NORMAL][TRAINER_BLAKE] =
     {
 #line 4751
         .trainerName = _("BLAKE"),
@@ -11605,7 +10812,7 @@ F_TRAINER_FEMALE |
 #line 4753
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4755
+#line 4146
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4756
         .doubleBattle = TRUE,
@@ -11627,8 +10834,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4763
-    [TRAINER_WILLIAM] =
+#line 4154
+    [DIFFICULTY_NORMAL][TRAINER_WILLIAM] =
     {
 #line 4764
         .trainerName = _("WILLIAM"),
@@ -11637,7 +10844,7 @@ F_TRAINER_FEMALE |
 #line 4766
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4768
+#line 4159
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4769
         .doubleBattle = TRUE,
@@ -11681,8 +10888,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4784
-    [TRAINER_JOSHUA] =
+#line 4175
+    [DIFFICULTY_NORMAL][TRAINER_JOSHUA] =
     {
 #line 4785
         .trainerName = _("JOSHUA"),
@@ -11691,7 +10898,7 @@ F_TRAINER_FEMALE |
 #line 4787
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4789
+#line 4180
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4790
         .doubleBattle = TRUE,
@@ -11724,8 +10931,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4801
-    [TRAINER_CAMERON_1] =
+#line 4192
+    [DIFFICULTY_NORMAL][TRAINER_CAMERON_1] =
     {
 #line 4802
         .trainerName = _("CAMERON"),
@@ -11734,7 +10941,7 @@ F_TRAINER_FEMALE |
 #line 4804
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4806
+#line 4197
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4807
         .doubleBattle = TRUE,
@@ -11756,8 +10963,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4814
-    [TRAINER_CAMERON_2] =
+#line 4205
+    [DIFFICULTY_NORMAL][TRAINER_CAMERON_2] =
     {
 #line 4815
         .trainerName = _("CAMERON"),
@@ -11766,7 +10973,7 @@ F_TRAINER_FEMALE |
 #line 4817
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4819
+#line 4210
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4820
         .doubleBattle = TRUE,
@@ -11799,8 +11006,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4831
-    [TRAINER_CAMERON_3] =
+#line 4222
+    [DIFFICULTY_NORMAL][TRAINER_CAMERON_3] =
     {
 #line 4832
         .trainerName = _("CAMERON"),
@@ -11809,7 +11016,7 @@ F_TRAINER_FEMALE |
 #line 4834
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4836
+#line 4227
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4837
         .doubleBattle = TRUE,
@@ -11842,8 +11049,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4848
-    [TRAINER_CAMERON_4] =
+#line 4239
+    [DIFFICULTY_NORMAL][TRAINER_CAMERON_4] =
     {
 #line 4849
         .trainerName = _("CAMERON"),
@@ -11852,7 +11059,7 @@ F_TRAINER_FEMALE |
 #line 4851
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4853
+#line 4244
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4854
         .doubleBattle = TRUE,
@@ -11885,8 +11092,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4865
-    [TRAINER_CAMERON_5] =
+#line 4256
+    [DIFFICULTY_NORMAL][TRAINER_CAMERON_5] =
     {
 #line 4866
         .trainerName = _("CAMERON"),
@@ -11895,7 +11102,7 @@ F_TRAINER_FEMALE |
 #line 4868
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 4870
+#line 4261
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 4871
         .doubleBattle = TRUE,
@@ -11928,8 +11135,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4882
-    [TRAINER_JACLYN] =
+#line 4273
+    [DIFFICULTY_NORMAL][TRAINER_JACLYN] =
     {
 #line 4883
         .trainerName = _("JACLYN"),
@@ -11938,7 +11145,7 @@ F_TRAINER_FEMALE |
 #line 4885
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 4886
+#line 4277
 F_TRAINER_FEMALE | 
 #line 4887
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -11966,8 +11173,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4896
-    [TRAINER_HANNAH] =
+#line 4287
+    [DIFFICULTY_NORMAL][TRAINER_HANNAH] =
     {
 #line 4897
         .trainerName = _("HANNAH"),
@@ -11976,7 +11183,7 @@ F_TRAINER_FEMALE |
 #line 4899
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 4900
+#line 4291
 F_TRAINER_FEMALE | 
 #line 4901
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12000,8 +11207,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4909
-    [TRAINER_SAMANTHA] =
+#line 4300
+    [DIFFICULTY_NORMAL][TRAINER_SAMANTHA] =
     {
 #line 4910
         .trainerName = _("SAMANTHA"),
@@ -12010,7 +11217,7 @@ F_TRAINER_FEMALE |
 #line 4912
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 4913
+#line 4304
 F_TRAINER_FEMALE | 
 #line 4914
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12034,8 +11241,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4922
-    [TRAINER_MAURA] =
+#line 4313
+    [DIFFICULTY_NORMAL][TRAINER_MAURA] =
     {
 #line 4923
         .trainerName = _("MAURA"),
@@ -12044,7 +11251,7 @@ F_TRAINER_FEMALE |
 #line 4925
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 4926
+#line 4317
 F_TRAINER_FEMALE | 
 #line 4927
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12068,8 +11275,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4935
-    [TRAINER_KAYLA] =
+#line 4326
+    [DIFFICULTY_NORMAL][TRAINER_KAYLA] =
     {
 #line 4936
         .trainerName = _("KAYLA"),
@@ -12078,7 +11285,7 @@ F_TRAINER_FEMALE |
 #line 4938
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 4939
+#line 4330
 F_TRAINER_FEMALE | 
 #line 4940
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12124,8 +11331,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4956
-    [TRAINER_ALEXIS] =
+#line 4347
+    [DIFFICULTY_NORMAL][TRAINER_ALEXIS] =
     {
 #line 4957
         .trainerName = _("ALEXIS"),
@@ -12134,7 +11341,7 @@ F_TRAINER_FEMALE |
 #line 4959
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 4960
+#line 4351
 F_TRAINER_FEMALE | 
 #line 4961
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12169,8 +11376,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4973
-    [TRAINER_JACKI_1] =
+#line 4364
+    [DIFFICULTY_NORMAL][TRAINER_JACKI_1] =
     {
 #line 4974
         .trainerName = _("JACKI"),
@@ -12179,7 +11386,7 @@ F_TRAINER_FEMALE |
 #line 4976
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 4977
+#line 4368
 F_TRAINER_FEMALE | 
 #line 4978
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12214,8 +11421,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 4990
-    [TRAINER_JACKI_2] =
+#line 4381
+    [DIFFICULTY_NORMAL][TRAINER_JACKI_2] =
     {
 #line 4991
         .trainerName = _("JACKI"),
@@ -12224,7 +11431,7 @@ F_TRAINER_FEMALE |
 #line 4993
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 4994
+#line 4385
 F_TRAINER_FEMALE | 
 #line 4995
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12259,8 +11466,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5007
-    [TRAINER_JACKI_3] =
+#line 4398
+    [DIFFICULTY_NORMAL][TRAINER_JACKI_3] =
     {
 #line 5008
         .trainerName = _("JACKI"),
@@ -12269,7 +11476,7 @@ F_TRAINER_FEMALE |
 #line 5010
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 5011
+#line 4402
 F_TRAINER_FEMALE | 
 #line 5012
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12304,8 +11511,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5024
-    [TRAINER_JACKI_4] =
+#line 4415
+    [DIFFICULTY_NORMAL][TRAINER_JACKI_4] =
     {
 #line 5025
         .trainerName = _("JACKI"),
@@ -12314,7 +11521,7 @@ F_TRAINER_FEMALE |
 #line 5027
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 5028
+#line 4419
 F_TRAINER_FEMALE | 
 #line 5029
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12349,8 +11556,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5041
-    [TRAINER_JACKI_5] =
+#line 4432
+    [DIFFICULTY_NORMAL][TRAINER_JACKI_5] =
     {
 #line 5042
         .trainerName = _("JACKI"),
@@ -12359,7 +11566,7 @@ F_TRAINER_FEMALE |
 #line 5044
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 5045
+#line 4436
 F_TRAINER_FEMALE | 
 #line 5046
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -12394,8 +11601,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5058
-    [TRAINER_WALTER_1] =
+#line 4449
+    [DIFFICULTY_NORMAL][TRAINER_WALTER_1] =
     {
 #line 5059
         .trainerName = _("WALTER"),
@@ -12404,7 +11611,7 @@ F_TRAINER_FEMALE |
 #line 5061
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 5063
+#line 4454
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5064
         .doubleBattle = TRUE,
@@ -12426,8 +11633,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5071
-    [TRAINER_MICAH] =
+#line 4462
+    [DIFFICULTY_NORMAL][TRAINER_MICAH] =
     {
 #line 5072
         .trainerName = _("MICAH"),
@@ -12436,7 +11643,7 @@ F_TRAINER_FEMALE |
 #line 5074
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 5076
+#line 4467
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5077
         .doubleBattle = TRUE,
@@ -12469,8 +11676,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5088
-    [TRAINER_THOMAS] =
+#line 4479
+    [DIFFICULTY_NORMAL][TRAINER_THOMAS] =
     {
 #line 5089
         .trainerName = _("THOMAS"),
@@ -12479,7 +11686,7 @@ F_TRAINER_FEMALE |
 #line 5091
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 5093
+#line 4484
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5094
         .doubleBattle = TRUE,
@@ -12501,8 +11708,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5101
-    [TRAINER_WALTER_2] =
+#line 4492
+    [DIFFICULTY_NORMAL][TRAINER_WALTER_2] =
     {
 #line 5102
         .trainerName = _("WALTER"),
@@ -12511,7 +11718,7 @@ F_TRAINER_FEMALE |
 #line 5104
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 5106
+#line 4497
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5107
         .doubleBattle = TRUE,
@@ -12533,8 +11740,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5114
-    [TRAINER_WALTER_3] =
+#line 4505
+    [DIFFICULTY_NORMAL][TRAINER_WALTER_3] =
     {
 #line 5115
         .trainerName = _("WALTER"),
@@ -12543,7 +11750,7 @@ F_TRAINER_FEMALE |
 #line 5117
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 5119
+#line 4510
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5120
         .doubleBattle = TRUE,
@@ -12590,8 +11797,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5139
-    [TRAINER_WALTER_4] =
+#line 4530
+    [DIFFICULTY_NORMAL][TRAINER_WALTER_4] =
     {
 #line 5140
         .trainerName = _("WALTER"),
@@ -12600,7 +11807,7 @@ F_TRAINER_FEMALE |
 #line 5142
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 5144
+#line 4535
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5145
         .doubleBattle = TRUE,
@@ -12646,8 +11853,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5163
-    [TRAINER_WALTER_5] =
+#line 4554
+    [DIFFICULTY_NORMAL][TRAINER_WALTER_5] =
     {
 #line 5164
         .trainerName = _("WALTER"),
@@ -12656,7 +11863,7 @@ F_TRAINER_FEMALE |
 #line 5166
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 5168
+#line 4559
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 5169
         .doubleBattle = TRUE,
@@ -12721,8 +11928,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5196
-    [TRAINER_SIDNEY] =
+#line 4587
+    [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =
     {
 #line 5197
         .trainerName = _("SIDNEY"),
@@ -12731,14 +11938,15 @@ F_TRAINER_FEMALE |
 #line 5199
         .trainerPic = TRAINER_PIC_ELITE_FOUR_SIDNEY,
         .encounterMusic_gender =
-#line 5201
+#line 4592
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-#line 5202
-        .doubleBattle = TRUE,
-#line 5203
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE | AI_FLAG_FORCE_SETUP_FIRST_TURN,
-#line 5204
-        .mugshotEnabled = TRUE,
+#line 4593
+        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
+#line 4594
+        .doubleBattle = FALSE,
+#line 4595
+        .aiFlags = AI_FLAG_BASIC_TRAINER | AI_FLAG_FORCE_SETUP_FIRST_TURN,
+#line 4596
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -12837,8 +12045,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5246
-    [TRAINER_PHOEBE] =
+#line 4638
+    [DIFFICULTY_NORMAL][TRAINER_PHOEBE] =
     {
 #line 5247
         .trainerName = _("PHOEBE"),
@@ -12847,16 +12055,17 @@ F_TRAINER_FEMALE |
 #line 5249
         .trainerPic = TRAINER_PIC_ELITE_FOUR_PHOEBE,
         .encounterMusic_gender =
-#line 5250
+#line 4642
 F_TRAINER_FEMALE | 
 #line 5251
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-#line 5252
-        .doubleBattle = TRUE,
-#line 5253
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-#line 5254
-        .mugshotEnabled = TRUE,
+#line 4644
+        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
+#line 4645
+        .doubleBattle = FALSE,
+#line 4646
+        .aiFlags = AI_FLAG_BASIC_TRAINER,
+#line 4647
         .mugshotColor = MUGSHOT_COLOR_GREEN,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -12955,8 +12164,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5296
-    [TRAINER_GLACIA] =
+#line 4689
+    [DIFFICULTY_NORMAL][TRAINER_GLACIA] =
     {
 #line 5297
         .trainerName = _("GLACIA"),
@@ -12965,16 +12174,17 @@ F_TRAINER_FEMALE |
 #line 5299
         .trainerPic = TRAINER_PIC_ELITE_FOUR_GLACIA,
         .encounterMusic_gender =
-#line 5300
+#line 4693
 F_TRAINER_FEMALE | 
 #line 5301
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-#line 5302
-        .doubleBattle = TRUE,
-#line 5303
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-#line 5304
-        .mugshotEnabled = TRUE,
+#line 4695
+        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
+#line 4696
+        .doubleBattle = FALSE,
+#line 4697
+        .aiFlags = AI_FLAG_BASIC_TRAINER,
+#line 4698
         .mugshotColor = MUGSHOT_COLOR_PINK,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -13073,8 +12283,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5346
-    [TRAINER_DRAKE] =
+#line 4740
+    [DIFFICULTY_NORMAL][TRAINER_DRAKE] =
     {
 #line 5347
         .trainerName = _("DRAKE"),
@@ -13083,14 +12293,15 @@ F_TRAINER_FEMALE |
 #line 5349
         .trainerPic = TRAINER_PIC_ELITE_FOUR_DRAKE,
         .encounterMusic_gender =
-#line 5351
+#line 4745
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-#line 5352
-        .doubleBattle = TRUE,
-#line 5353
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-#line 5354
-        .mugshotEnabled = TRUE,
+#line 4746
+        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
+#line 4747
+        .doubleBattle = FALSE,
+#line 4748
+        .aiFlags = AI_FLAG_BASIC_TRAINER,
+#line 4749
         .mugshotColor = MUGSHOT_COLOR_BLUE,
         .partySize = 5,
         .party = (const struct TrainerMon[])
@@ -13189,8 +12400,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5396
-    [TRAINER_ROXANNE_1] =
+#line 4791
+    [DIFFICULTY_NORMAL][TRAINER_ROXANNE_1] =
     {
 #line 5397
         .trainerName = _("ROXANNE"),
@@ -13199,7 +12410,7 @@ F_TRAINER_FEMALE |
 #line 5399
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .encounterMusic_gender =
-#line 5400
+#line 4795
 F_TRAINER_FEMALE | 
 #line 5401
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -13389,8 +12600,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5480
-    [TRAINER_BRAWLY_1] =
+#line 4825
+    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_1] =
     {
 #line 5481
         .trainerName = _("BRAWLY"),
@@ -13399,7 +12610,7 @@ F_TRAINER_FEMALE |
 #line 5483
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .encounterMusic_gender =
-#line 5485
+#line 4830
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 5486
         .doubleBattle = TRUE,
@@ -13576,8 +12787,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5557
-    [TRAINER_WATTSON_1] =
+#line 4859
+    [DIFFICULTY_NORMAL][TRAINER_WATTSON_1] =
     {
 #line 5558
         .trainerName = _("WATTSON"),
@@ -13586,7 +12797,7 @@ F_TRAINER_FEMALE |
 #line 5560
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .encounterMusic_gender =
-#line 5562
+#line 4864
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 5563
         .doubleBattle = TRUE,
@@ -13762,8 +12973,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5650
-    [TRAINER_FLANNERY_1] =
+#line 4901
+    [DIFFICULTY_NORMAL][TRAINER_FLANNERY_1] =
     {
 #line 5651
         .trainerName = _("FLANNERY"),
@@ -13772,7 +12983,7 @@ F_TRAINER_FEMALE |
 #line 5653
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .encounterMusic_gender =
-#line 5654
+#line 4905
 F_TRAINER_FEMALE | 
 #line 5655
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -13963,8 +13174,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5733
-    [TRAINER_NORMAN_1] =
+#line 4943
+    [DIFFICULTY_NORMAL][TRAINER_NORMAN_1] =
     {
 #line 5734
         .trainerName = _("NORMAN"),
@@ -13973,7 +13184,7 @@ F_TRAINER_FEMALE |
 #line 5736
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender =
-#line 5738
+#line 4948
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 5739
         .doubleBattle = TRUE,
@@ -14144,8 +13355,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5810
-    [TRAINER_WINONA_1] =
+#line 4985
+    [DIFFICULTY_NORMAL][TRAINER_WINONA_1] =
     {
 #line 5811
         .trainerName = _("WINONA"),
@@ -14154,7 +13365,7 @@ F_TRAINER_FEMALE |
 #line 5813
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .encounterMusic_gender =
-#line 5814
+#line 4989
 F_TRAINER_FEMALE | 
 #line 5815
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -14319,8 +13530,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5883
-    [TRAINER_TATE_AND_LIZA_1] =
+#line 5035
+    [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_1] =
     {
 #line 5884
         .trainerName = _("TATE&LIZA"),
@@ -14329,7 +13540,7 @@ F_TRAINER_FEMALE |
 #line 5886
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .encounterMusic_gender =
-#line 5888
+#line 5040
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 5889
         .doubleBattle = TRUE,
@@ -14508,8 +13719,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 5966
-    [TRAINER_JUAN_1] =
+#line 5077
+    [DIFFICULTY_NORMAL][TRAINER_JUAN_1] =
     {
 #line 5967
         .trainerName = _("JUAN"),
@@ -14518,7 +13729,7 @@ F_TRAINER_FEMALE |
 #line 5969
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .encounterMusic_gender =
-#line 5971
+#line 5082
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 5972
         .doubleBattle = TRUE,
@@ -14621,8 +13832,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6015
-    [TRAINER_JERRY_1] =
+#line 5127
+    [DIFFICULTY_NORMAL][TRAINER_JERRY_1] =
     {
 #line 6016
         .trainerName = _("JERRY"),
@@ -14631,7 +13842,7 @@ F_TRAINER_FEMALE |
 #line 6018
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .encounterMusic_gender =
-#line 6020
+#line 5132
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6021
         .doubleBattle = TRUE,
@@ -14653,8 +13864,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6028
-    [TRAINER_TED] =
+#line 5140
+    [DIFFICULTY_NORMAL][TRAINER_TED] =
     {
 #line 6029
         .trainerName = _("TED"),
@@ -14663,7 +13874,7 @@ F_TRAINER_FEMALE |
 #line 6031
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .encounterMusic_gender =
-#line 6033
+#line 5145
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6034
         .doubleBattle = TRUE,
@@ -14685,8 +13896,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6041
-    [TRAINER_PAUL] =
+#line 5153
+    [DIFFICULTY_NORMAL][TRAINER_PAUL] =
     {
 #line 6042
         .trainerName = _("PAUL"),
@@ -14695,7 +13906,7 @@ F_TRAINER_FEMALE |
 #line 6044
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .encounterMusic_gender =
-#line 6046
+#line 5158
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6047
         .doubleBattle = TRUE,
@@ -14739,8 +13950,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6062
-    [TRAINER_JERRY_2] =
+#line 5174
+    [DIFFICULTY_NORMAL][TRAINER_JERRY_2] =
     {
 #line 6063
         .trainerName = _("JERRY"),
@@ -14749,7 +13960,7 @@ F_TRAINER_FEMALE |
 #line 6065
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .encounterMusic_gender =
-#line 6067
+#line 5179
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6068
         .doubleBattle = TRUE,
@@ -14782,8 +13993,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6079
-    [TRAINER_JERRY_3] =
+#line 5191
+    [DIFFICULTY_NORMAL][TRAINER_JERRY_3] =
     {
 #line 6080
         .trainerName = _("JERRY"),
@@ -14792,7 +14003,7 @@ F_TRAINER_FEMALE |
 #line 6082
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .encounterMusic_gender =
-#line 6084
+#line 5196
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6085
         .doubleBattle = TRUE,
@@ -14825,8 +14036,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6096
-    [TRAINER_JERRY_4] =
+#line 5208
+    [DIFFICULTY_NORMAL][TRAINER_JERRY_4] =
     {
 #line 6097
         .trainerName = _("JERRY"),
@@ -14835,7 +14046,7 @@ F_TRAINER_FEMALE |
 #line 6099
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .encounterMusic_gender =
-#line 6101
+#line 5213
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6102
         .doubleBattle = TRUE,
@@ -14868,8 +14079,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6113
-    [TRAINER_JERRY_5] =
+#line 5225
+    [DIFFICULTY_NORMAL][TRAINER_JERRY_5] =
     {
 #line 6114
         .trainerName = _("JERRY"),
@@ -14878,7 +14089,7 @@ F_TRAINER_FEMALE |
 #line 6116
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .encounterMusic_gender =
-#line 6118
+#line 5230
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6119
         .doubleBattle = TRUE,
@@ -14922,8 +14133,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6134
-    [TRAINER_KAREN_1] =
+#line 5246
+    [DIFFICULTY_NORMAL][TRAINER_KAREN_1] =
     {
 #line 6135
         .trainerName = _("KAREN"),
@@ -14932,7 +14143,7 @@ F_TRAINER_FEMALE |
 #line 6137
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .encounterMusic_gender =
-#line 6138
+#line 5250
 F_TRAINER_FEMALE | 
 #line 6139
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -14956,8 +14167,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6147
-    [TRAINER_GEORGIA] =
+#line 5259
+    [DIFFICULTY_NORMAL][TRAINER_GEORGIA] =
     {
 #line 6148
         .trainerName = _("GEORGIA"),
@@ -14966,7 +14177,7 @@ F_TRAINER_FEMALE |
 #line 6150
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .encounterMusic_gender =
-#line 6151
+#line 5263
 F_TRAINER_FEMALE | 
 #line 6152
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -15001,8 +14212,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6164
-    [TRAINER_KAREN_2] =
+#line 5276
+    [DIFFICULTY_NORMAL][TRAINER_KAREN_2] =
     {
 #line 6165
         .trainerName = _("KAREN"),
@@ -15011,7 +14222,7 @@ F_TRAINER_FEMALE |
 #line 6167
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .encounterMusic_gender =
-#line 6168
+#line 5280
 F_TRAINER_FEMALE | 
 #line 6169
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -15046,8 +14257,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6181
-    [TRAINER_KAREN_3] =
+#line 5293
+    [DIFFICULTY_NORMAL][TRAINER_KAREN_3] =
     {
 #line 6182
         .trainerName = _("KAREN"),
@@ -15056,7 +14267,7 @@ F_TRAINER_FEMALE |
 #line 6184
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .encounterMusic_gender =
-#line 6185
+#line 5297
 F_TRAINER_FEMALE | 
 #line 6186
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -15091,8 +14302,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6198
-    [TRAINER_KAREN_4] =
+#line 5310
+    [DIFFICULTY_NORMAL][TRAINER_KAREN_4] =
     {
 #line 6199
         .trainerName = _("KAREN"),
@@ -15101,7 +14312,7 @@ F_TRAINER_FEMALE |
 #line 6201
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .encounterMusic_gender =
-#line 6202
+#line 5314
 F_TRAINER_FEMALE | 
 #line 6203
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -15136,8 +14347,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6215
-    [TRAINER_KAREN_5] =
+#line 5327
+    [DIFFICULTY_NORMAL][TRAINER_KAREN_5] =
     {
 #line 6216
         .trainerName = _("KAREN"),
@@ -15146,7 +14357,7 @@ F_TRAINER_FEMALE |
 #line 6218
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .encounterMusic_gender =
-#line 6219
+#line 5331
 F_TRAINER_FEMALE | 
 #line 6220
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -15181,8 +14392,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6232
-    [TRAINER_KATE_AND_JOY] =
+#line 5344
+    [DIFFICULTY_NORMAL][TRAINER_KATE_AND_JOY] =
     {
 #line 6233
         .trainerName = _("KATE & JOY"),
@@ -15191,7 +14402,7 @@ F_TRAINER_FEMALE |
 #line 6235
         .trainerPic = TRAINER_PIC_SR_AND_JR,
         .encounterMusic_gender =
-#line 6237
+#line 5349
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6238
         .doubleBattle = TRUE,
@@ -15238,8 +14449,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6257
-    [TRAINER_ANNA_AND_MEG_1] =
+#line 5369
+    [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_1] =
     {
 #line 6258
         .trainerName = _("ANNA & MEG"),
@@ -15248,7 +14459,7 @@ F_TRAINER_FEMALE |
 #line 6260
         .trainerPic = TRAINER_PIC_SR_AND_JR,
         .encounterMusic_gender =
-#line 6262
+#line 5374
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6263
         .doubleBattle = TRUE,
@@ -15296,8 +14507,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6282
-    [TRAINER_ANNA_AND_MEG_2] =
+#line 5393
+    [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_2] =
     {
 #line 6283
         .trainerName = _("ANNA & MEG"),
@@ -15306,7 +14517,7 @@ F_TRAINER_FEMALE |
 #line 6285
         .trainerPic = TRAINER_PIC_SR_AND_JR,
         .encounterMusic_gender =
-#line 6287
+#line 5398
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6288
         .doubleBattle = TRUE,
@@ -15352,8 +14563,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6306
-    [TRAINER_ANNA_AND_MEG_3] =
+#line 5417
+    [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_3] =
     {
 #line 6307
         .trainerName = _("ANNA & MEG"),
@@ -15362,7 +14573,7 @@ F_TRAINER_FEMALE |
 #line 6309
         .trainerPic = TRAINER_PIC_SR_AND_JR,
         .encounterMusic_gender =
-#line 6311
+#line 5422
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6312
         .doubleBattle = TRUE,
@@ -15408,8 +14619,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6330
-    [TRAINER_ANNA_AND_MEG_4] =
+#line 5441
+    [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_4] =
     {
 #line 6331
         .trainerName = _("ANNA & MEG"),
@@ -15418,7 +14629,7 @@ F_TRAINER_FEMALE |
 #line 6333
         .trainerPic = TRAINER_PIC_SR_AND_JR,
         .encounterMusic_gender =
-#line 6335
+#line 5446
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6336
         .doubleBattle = TRUE,
@@ -15464,8 +14675,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6354
-    [TRAINER_ANNA_AND_MEG_5] =
+#line 5465
+    [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_5] =
     {
 #line 6355
         .trainerName = _("ANNA & MEG"),
@@ -15474,7 +14685,7 @@ F_TRAINER_FEMALE |
 #line 6357
         .trainerPic = TRAINER_PIC_SR_AND_JR,
         .encounterMusic_gender =
-#line 6359
+#line 5470
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6360
         .doubleBattle = TRUE,
@@ -15520,8 +14731,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6378
-    [TRAINER_VICTOR] =
+#line 5489
+    [DIFFICULTY_NORMAL][TRAINER_VICTOR] =
     {
 #line 6379
         .trainerName = _("VICTOR"),
@@ -15530,7 +14741,7 @@ F_TRAINER_FEMALE |
 #line 6381
         .trainerPic = TRAINER_PIC_POKEFAN_M,
         .encounterMusic_gender =
-#line 6383
+#line 5494
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6384
         .doubleBattle = TRUE,
@@ -15567,8 +14778,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6395
-    [TRAINER_MIGUEL_1] =
+#line 5506
+    [DIFFICULTY_NORMAL][TRAINER_MIGUEL_1] =
     {
 #line 6396
         .trainerName = _("MIGUEL"),
@@ -15577,7 +14788,7 @@ F_TRAINER_FEMALE |
 #line 6398
         .trainerPic = TRAINER_PIC_POKEFAN_M,
         .encounterMusic_gender =
-#line 6400
+#line 5511
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6401
         .doubleBattle = TRUE,
@@ -15601,8 +14812,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6408
-    [TRAINER_COLTON] =
+#line 5519
+    [DIFFICULTY_NORMAL][TRAINER_COLTON] =
     {
 #line 6409
         .trainerName = _("COLTON"),
@@ -15611,7 +14822,7 @@ F_TRAINER_FEMALE |
 #line 6411
         .trainerPic = TRAINER_PIC_POKEFAN_M,
         .encounterMusic_gender =
-#line 6413
+#line 5524
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6414
         .doubleBattle = TRUE,
@@ -15742,8 +14953,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6465
-    [TRAINER_MIGUEL_2] =
+#line 5576
+    [DIFFICULTY_NORMAL][TRAINER_MIGUEL_2] =
     {
 #line 6466
         .trainerName = _("MIGUEL"),
@@ -15752,7 +14963,7 @@ F_TRAINER_FEMALE |
 #line 6468
         .trainerPic = TRAINER_PIC_POKEFAN_M,
         .encounterMusic_gender =
-#line 6470
+#line 5581
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6471
         .doubleBattle = TRUE,
@@ -15776,8 +14987,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6478
-    [TRAINER_MIGUEL_3] =
+#line 5589
+    [DIFFICULTY_NORMAL][TRAINER_MIGUEL_3] =
     {
 #line 6479
         .trainerName = _("MIGUEL"),
@@ -15786,7 +14997,7 @@ F_TRAINER_FEMALE |
 #line 6481
         .trainerPic = TRAINER_PIC_POKEFAN_M,
         .encounterMusic_gender =
-#line 6483
+#line 5594
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6484
         .doubleBattle = TRUE,
@@ -15810,8 +15021,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6491
-    [TRAINER_MIGUEL_4] =
+#line 5602
+    [DIFFICULTY_NORMAL][TRAINER_MIGUEL_4] =
     {
 #line 6492
         .trainerName = _("MIGUEL"),
@@ -15820,7 +15031,7 @@ F_TRAINER_FEMALE |
 #line 6494
         .trainerPic = TRAINER_PIC_POKEFAN_M,
         .encounterMusic_gender =
-#line 6496
+#line 5607
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6497
         .doubleBattle = TRUE,
@@ -15844,8 +15055,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6504
-    [TRAINER_MIGUEL_5] =
+#line 5615
+    [DIFFICULTY_NORMAL][TRAINER_MIGUEL_5] =
     {
 #line 6505
         .trainerName = _("MIGUEL"),
@@ -15854,7 +15065,7 @@ F_TRAINER_FEMALE |
 #line 6507
         .trainerPic = TRAINER_PIC_POKEFAN_M,
         .encounterMusic_gender =
-#line 6509
+#line 5620
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 6510
         .doubleBattle = TRUE,
@@ -15878,8 +15089,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6517
-    [TRAINER_VICTORIA] =
+#line 5628
+    [DIFFICULTY_NORMAL][TRAINER_VICTORIA] =
     {
 #line 6518
         .trainerName = _("VICTORIA"),
@@ -15888,7 +15099,7 @@ F_TRAINER_FEMALE |
 #line 6520
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .encounterMusic_gender =
-#line 6521
+#line 5632
 F_TRAINER_FEMALE | 
 #line 6522
             TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -15914,8 +15125,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6530
-    [TRAINER_VANESSA] =
+#line 5641
+    [DIFFICULTY_NORMAL][TRAINER_VANESSA] =
     {
 #line 6531
         .trainerName = _("VANESSA"),
@@ -15924,7 +15135,7 @@ F_TRAINER_FEMALE |
 #line 6533
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .encounterMusic_gender =
-#line 6534
+#line 5645
 F_TRAINER_FEMALE | 
 #line 6535
             TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -15950,8 +15161,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6543
-    [TRAINER_BETHANY] =
+#line 5654
+    [DIFFICULTY_NORMAL][TRAINER_BETHANY] =
     {
 #line 6544
         .trainerName = _("BETHANY"),
@@ -15960,7 +15171,7 @@ F_TRAINER_FEMALE |
 #line 6546
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .encounterMusic_gender =
-#line 6547
+#line 5658
 F_TRAINER_FEMALE | 
 #line 6548
             TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -16012,8 +15223,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6564
-    [TRAINER_ISABEL_1] =
+#line 5675
+    [DIFFICULTY_NORMAL][TRAINER_ISABEL_1] =
     {
 #line 6565
         .trainerName = _("ISABEL"),
@@ -16022,7 +15233,7 @@ F_TRAINER_FEMALE |
 #line 6567
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .encounterMusic_gender =
-#line 6568
+#line 5679
 F_TRAINER_FEMALE | 
 #line 6569
             TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -16061,8 +15272,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6581
-    [TRAINER_ISABEL_2] =
+#line 5692
+    [DIFFICULTY_NORMAL][TRAINER_ISABEL_2] =
     {
 #line 6582
         .trainerName = _("ISABEL"),
@@ -16071,7 +15282,7 @@ F_TRAINER_FEMALE |
 #line 6584
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .encounterMusic_gender =
-#line 6585
+#line 5696
 F_TRAINER_FEMALE | 
 #line 6586
             TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -16110,8 +15321,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6598
-    [TRAINER_ISABEL_3] =
+#line 5709
+    [DIFFICULTY_NORMAL][TRAINER_ISABEL_3] =
     {
 #line 6599
         .trainerName = _("ISABEL"),
@@ -16120,7 +15331,7 @@ F_TRAINER_FEMALE |
 #line 6601
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .encounterMusic_gender =
-#line 6602
+#line 5713
 F_TRAINER_FEMALE | 
 #line 6603
             TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -16159,8 +15370,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6615
-    [TRAINER_ISABEL_4] =
+#line 5726
+    [DIFFICULTY_NORMAL][TRAINER_ISABEL_4] =
     {
 #line 6616
         .trainerName = _("ISABEL"),
@@ -16169,7 +15380,7 @@ F_TRAINER_FEMALE |
 #line 6618
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .encounterMusic_gender =
-#line 6619
+#line 5730
 F_TRAINER_FEMALE | 
 #line 6620
             TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -16208,8 +15419,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6632
-    [TRAINER_ISABEL_5] =
+#line 5743
+    [DIFFICULTY_NORMAL][TRAINER_ISABEL_5] =
     {
 #line 6633
         .trainerName = _("ISABEL"),
@@ -16218,7 +15429,7 @@ F_TRAINER_FEMALE |
 #line 6635
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .encounterMusic_gender =
-#line 6636
+#line 5747
 F_TRAINER_FEMALE | 
 #line 6637
             TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -16257,8 +15468,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6649
-    [TRAINER_TIMOTHY_1] =
+#line 5760
+    [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_1] =
     {
 #line 6650
         .trainerName = _("TIMOTHY"),
@@ -16267,7 +15478,7 @@ F_TRAINER_FEMALE |
 #line 6652
         .trainerPic = TRAINER_PIC_EXPERT_M,
         .encounterMusic_gender =
-#line 6654
+#line 5765
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6655
         .doubleBattle = TRUE,
@@ -16289,8 +15500,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6662
-    [TRAINER_TIMOTHY_2] =
+#line 5773
+    [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_2] =
     {
 #line 6663
         .trainerName = _("TIMOTHY"),
@@ -16299,7 +15510,7 @@ F_TRAINER_FEMALE |
 #line 6665
         .trainerPic = TRAINER_PIC_EXPERT_M,
         .encounterMusic_gender =
-#line 6667
+#line 5778
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6668
         .doubleBattle = TRUE,
@@ -16328,8 +15539,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6679
-    [TRAINER_TIMOTHY_3] =
+#line 5790
+    [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_3] =
     {
 #line 6680
         .trainerName = _("TIMOTHY"),
@@ -16338,7 +15549,7 @@ F_TRAINER_FEMALE |
 #line 6682
         .trainerPic = TRAINER_PIC_EXPERT_M,
         .encounterMusic_gender =
-#line 6684
+#line 5795
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6685
         .doubleBattle = TRUE,
@@ -16367,8 +15578,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6696
-    [TRAINER_TIMOTHY_4] =
+#line 5807
+    [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_4] =
     {
 #line 6697
         .trainerName = _("TIMOTHY"),
@@ -16377,7 +15588,7 @@ F_TRAINER_FEMALE |
 #line 6699
         .trainerPic = TRAINER_PIC_EXPERT_M,
         .encounterMusic_gender =
-#line 6701
+#line 5812
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6702
         .doubleBattle = TRUE,
@@ -16406,8 +15617,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6713
-    [TRAINER_TIMOTHY_5] =
+#line 5824
+    [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_5] =
     {
 #line 6714
         .trainerName = _("TIMOTHY"),
@@ -16416,7 +15627,7 @@ F_TRAINER_FEMALE |
 #line 6716
         .trainerPic = TRAINER_PIC_EXPERT_M,
         .encounterMusic_gender =
-#line 6718
+#line 5829
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 6719
         .doubleBattle = TRUE,
@@ -16445,8 +15656,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6730
-    [TRAINER_VICKY] =
+#line 5841
+    [DIFFICULTY_NORMAL][TRAINER_VICKY] =
     {
 #line 6731
         .trainerName = _("VICKY"),
@@ -16455,7 +15666,7 @@ F_TRAINER_FEMALE |
 #line 6733
         .trainerPic = TRAINER_PIC_EXPERT_F,
         .encounterMusic_gender =
-#line 6734
+#line 5845
 F_TRAINER_FEMALE | 
 #line 6735
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -16486,8 +15697,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6747
-    [TRAINER_SHELBY_1] =
+#line 5858
+    [DIFFICULTY_NORMAL][TRAINER_SHELBY_1] =
     {
 #line 6748
         .trainerName = _("SHELBY"),
@@ -16496,7 +15707,7 @@ F_TRAINER_FEMALE |
 #line 6750
         .trainerPic = TRAINER_PIC_EXPERT_F,
         .encounterMusic_gender =
-#line 6751
+#line 5862
 F_TRAINER_FEMALE | 
 #line 6752
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -16531,8 +15742,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6764
-    [TRAINER_SHELBY_2] =
+#line 5875
+    [DIFFICULTY_NORMAL][TRAINER_SHELBY_2] =
     {
 #line 6765
         .trainerName = _("SHELBY"),
@@ -16541,7 +15752,7 @@ F_TRAINER_FEMALE |
 #line 6767
         .trainerPic = TRAINER_PIC_EXPERT_F,
         .encounterMusic_gender =
-#line 6768
+#line 5879
 F_TRAINER_FEMALE | 
 #line 6769
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -16576,8 +15787,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6781
-    [TRAINER_SHELBY_3] =
+#line 5892
+    [DIFFICULTY_NORMAL][TRAINER_SHELBY_3] =
     {
 #line 6782
         .trainerName = _("SHELBY"),
@@ -16586,7 +15797,7 @@ F_TRAINER_FEMALE |
 #line 6784
         .trainerPic = TRAINER_PIC_EXPERT_F,
         .encounterMusic_gender =
-#line 6785
+#line 5896
 F_TRAINER_FEMALE | 
 #line 6786
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -16621,8 +15832,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6798
-    [TRAINER_SHELBY_4] =
+#line 5909
+    [DIFFICULTY_NORMAL][TRAINER_SHELBY_4] =
     {
 #line 6799
         .trainerName = _("SHELBY"),
@@ -16631,7 +15842,7 @@ F_TRAINER_FEMALE |
 #line 6801
         .trainerPic = TRAINER_PIC_EXPERT_F,
         .encounterMusic_gender =
-#line 6802
+#line 5913
 F_TRAINER_FEMALE | 
 #line 6803
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -16666,8 +15877,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6815
-    [TRAINER_SHELBY_5] =
+#line 5926
+    [DIFFICULTY_NORMAL][TRAINER_SHELBY_5] =
     {
 #line 6816
         .trainerName = _("SHELBY"),
@@ -16676,7 +15887,7 @@ F_TRAINER_FEMALE |
 #line 6818
         .trainerPic = TRAINER_PIC_EXPERT_F,
         .encounterMusic_gender =
-#line 6819
+#line 5930
 F_TRAINER_FEMALE | 
 #line 6820
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -16711,8 +15922,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6832
-    [TRAINER_CALVIN_1] =
+#line 5943
+    [DIFFICULTY_NORMAL][TRAINER_CALVIN_1] =
     {
 #line 6833
         .trainerName = _("CALVIN"),
@@ -16721,7 +15932,7 @@ F_TRAINER_FEMALE |
 #line 6835
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 6837
+#line 5948
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6838
         .doubleBattle = TRUE,
@@ -16738,26 +15949,15 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6844
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 6843
-            .lvl = 5,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            },
-            {
-#line 6846
-            .species = SPECIES_ZIGZAGOON,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 6848
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 6847
+#line 5953
             .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 6850
-    [TRAINER_BILLY] =
+#line 5956
+    [DIFFICULTY_NORMAL][TRAINER_BILLY] =
     {
 #line 6851
         .trainerName = _("BILLY"),
@@ -16766,7 +15966,7 @@ F_TRAINER_FEMALE |
 #line 6853
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 6855
+#line 5961
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6856
         .doubleBattle = TRUE,
@@ -16799,8 +15999,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6867
-    [TRAINER_JOSH] =
+#line 5973
+    [DIFFICULTY_NORMAL][TRAINER_JOSH] =
     {
 #line 6868
         .trainerName = _("JOSH"),
@@ -16809,7 +16009,7 @@ F_TRAINER_FEMALE |
 #line 6870
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 6872
+#line 5978
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6873
         .doubleBattle = TRUE,
@@ -16835,8 +16035,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6881
-    [TRAINER_TOMMY] =
+#line 5987
+    [DIFFICULTY_NORMAL][TRAINER_TOMMY] =
     {
 #line 6882
         .trainerName = _("TOMMY"),
@@ -16845,7 +16045,7 @@ F_TRAINER_FEMALE |
 #line 6884
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 6886
+#line 5992
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6887
         .doubleBattle = TRUE,
@@ -16878,8 +16078,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6898
-    [TRAINER_JOEY] =
+#line 6004
+    [DIFFICULTY_NORMAL][TRAINER_JOEY] =
     {
 #line 6899
         .trainerName = _("JOEY"),
@@ -16888,7 +16088,7 @@ F_TRAINER_FEMALE |
 #line 6901
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 6903
+#line 6009
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6904
         .doubleBattle = TRUE,
@@ -16910,8 +16110,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6911
-    [TRAINER_BEN] =
+#line 6017
+    [DIFFICULTY_NORMAL][TRAINER_BEN] =
     {
 #line 6912
         .trainerName = _("BEN"),
@@ -16920,7 +16120,7 @@ F_TRAINER_FEMALE |
 #line 6914
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 6916
+#line 6022
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6917
         .doubleBattle = TRUE,
@@ -16969,8 +16169,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6937
-    [TRAINER_QUINCY] =
+#line 6042
+    [DIFFICULTY_NORMAL][TRAINER_QUINCY] =
     {
 #line 6938
         .trainerName = _("QUINCY"),
@@ -16979,7 +16179,7 @@ F_TRAINER_FEMALE |
 #line 6940
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 6942
+#line 6047
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 6943
         .doubleBattle = TRUE,
@@ -17026,8 +16226,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6962
-    [TRAINER_KATELYNN] =
+#line 6068
+    [DIFFICULTY_NORMAL][TRAINER_KATELYNN] =
     {
 #line 6963
         .trainerName = _("KATELYNN"),
@@ -17036,7 +16236,7 @@ F_TRAINER_FEMALE |
 #line 6965
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 6966
+#line 6072
 F_TRAINER_FEMALE | 
 #line 6967
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -17085,8 +16285,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 6987
-    [TRAINER_JAYLEN] =
+#line 6094
+    [DIFFICULTY_NORMAL][TRAINER_JAYLEN] =
     {
 #line 6988
         .trainerName = _("JAYLEN"),
@@ -17095,7 +16295,7 @@ F_TRAINER_FEMALE |
 #line 6990
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 6992
+#line 6099
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6993
         .doubleBattle = TRUE,
@@ -17117,8 +16317,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7000
-    [TRAINER_DILLON] =
+#line 6107
+    [DIFFICULTY_NORMAL][TRAINER_DILLON] =
     {
 #line 7001
         .trainerName = _("DILLON"),
@@ -17127,7 +16327,7 @@ F_TRAINER_FEMALE |
 #line 7003
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 7005
+#line 6112
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7006
         .doubleBattle = TRUE,
@@ -17149,8 +16349,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7013
-    [TRAINER_CALVIN_2] =
+#line 6120
+    [DIFFICULTY_NORMAL][TRAINER_CALVIN_2] =
     {
 #line 7014
         .trainerName = _("CALVIN"),
@@ -17159,7 +16359,7 @@ F_TRAINER_FEMALE |
 #line 7016
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 7018
+#line 6125
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7019
         .doubleBattle = TRUE,
@@ -17181,8 +16381,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7026
-    [TRAINER_CALVIN_3] =
+#line 6133
+    [DIFFICULTY_NORMAL][TRAINER_CALVIN_3] =
     {
 #line 7027
         .trainerName = _("CALVIN"),
@@ -17191,7 +16391,7 @@ F_TRAINER_FEMALE |
 #line 7029
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 7031
+#line 6138
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7032
         .doubleBattle = TRUE,
@@ -17224,8 +16424,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7043
-    [TRAINER_CALVIN_4] =
+#line 6150
+    [DIFFICULTY_NORMAL][TRAINER_CALVIN_4] =
     {
 #line 7044
         .trainerName = _("CALVIN"),
@@ -17234,7 +16434,7 @@ F_TRAINER_FEMALE |
 #line 7046
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 7048
+#line 6155
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7049
         .doubleBattle = TRUE,
@@ -17278,8 +16478,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7064
-    [TRAINER_CALVIN_5] =
+#line 6171
+    [DIFFICULTY_NORMAL][TRAINER_CALVIN_5] =
     {
 #line 7065
         .trainerName = _("CALVIN"),
@@ -17288,7 +16488,7 @@ F_TRAINER_FEMALE |
 #line 7067
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 7069
+#line 6176
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7070
         .doubleBattle = TRUE,
@@ -17332,8 +16532,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7085
-    [TRAINER_EDDIE] =
+#line 6192
+    [DIFFICULTY_NORMAL][TRAINER_EDDIE] =
     {
 #line 7086
         .trainerName = _("EDDIE"),
@@ -17342,7 +16542,7 @@ F_TRAINER_FEMALE |
 #line 7088
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 7090
+#line 6197
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7091
         .doubleBattle = TRUE,
@@ -17375,8 +16575,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7102
-    [TRAINER_ALLEN] =
+#line 6209
+    [DIFFICULTY_NORMAL][TRAINER_ALLEN] =
     {
 #line 7103
         .trainerName = _("ALLEN"),
@@ -17385,7 +16585,7 @@ F_TRAINER_FEMALE |
 #line 7105
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 7107
+#line 6214
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7108
         .doubleBattle = TRUE,
@@ -17418,8 +16618,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7119
-    [TRAINER_TIMMY] =
+#line 6226
+    [DIFFICULTY_NORMAL][TRAINER_TIMMY] =
     {
 #line 7120
         .trainerName = _("TIMMY"),
@@ -17428,7 +16628,7 @@ F_TRAINER_FEMALE |
 #line 7122
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 7124
+#line 6231
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7125
         .doubleBattle = TRUE,
@@ -17461,8 +16661,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7136
-    [TRAINER_WALLACE] =
+#line 6243
+    [DIFFICULTY_NORMAL][TRAINER_WALLACE] =
     {
 #line 7137
         .trainerName = _("WALLACE"),
@@ -17471,14 +16671,15 @@ F_TRAINER_FEMALE |
 #line 7139
         .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
         .encounterMusic_gender =
-#line 7141
+#line 6248
             TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 7142
-        .doubleBattle = TRUE,
-#line 7143
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-#line 7144
-        .mugshotEnabled = TRUE,
+#line 6249
+        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
+#line 6250
+        .doubleBattle = FALSE,
+#line 6251
+        .aiFlags = AI_FLAG_BASIC_TRAINER,
+#line 6252
         .mugshotColor = MUGSHOT_COLOR_YELLOW,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -17595,8 +16796,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7194
-    [TRAINER_ANDREW] =
+#line 6302
+    [DIFFICULTY_NORMAL][TRAINER_ANDREW] =
     {
 #line 7195
         .trainerName = _("ANDREW"),
@@ -17605,7 +16806,7 @@ F_TRAINER_FEMALE |
 #line 7197
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7199
+#line 6307
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7200
         .doubleBattle = TRUE,
@@ -17649,8 +16850,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7215
-    [TRAINER_IVAN] =
+#line 6323
+    [DIFFICULTY_NORMAL][TRAINER_IVAN] =
     {
 #line 7216
         .trainerName = _("IVAN"),
@@ -17659,7 +16860,7 @@ F_TRAINER_FEMALE |
 #line 7218
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7220
+#line 6328
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7221
         .doubleBattle = TRUE,
@@ -17703,8 +16904,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7236
-    [TRAINER_CLAUDE] =
+#line 6344
+    [DIFFICULTY_NORMAL][TRAINER_CLAUDE] =
     {
 #line 7237
         .trainerName = _("CLAUDE"),
@@ -17713,7 +16914,7 @@ F_TRAINER_FEMALE |
 #line 7239
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7241
+#line 6349
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7242
         .doubleBattle = TRUE,
@@ -17757,8 +16958,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7257
-    [TRAINER_ELLIOT_1] =
+#line 6365
+    [DIFFICULTY_NORMAL][TRAINER_ELLIOT_1] =
     {
 #line 7258
         .trainerName = _("ELLIOT"),
@@ -17767,7 +16968,7 @@ F_TRAINER_FEMALE |
 #line 7260
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7262
+#line 6370
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7263
         .doubleBattle = TRUE,
@@ -17811,8 +17012,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7278
-    [TRAINER_NED] =
+#line 6386
+    [DIFFICULTY_NORMAL][TRAINER_NED] =
     {
 #line 7279
         .trainerName = _("NED"),
@@ -17821,7 +17022,7 @@ F_TRAINER_FEMALE |
 #line 7281
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7283
+#line 6391
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7284
         .doubleBattle = TRUE,
@@ -17843,8 +17044,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7291
-    [TRAINER_DALE] =
+#line 6399
+    [DIFFICULTY_NORMAL][TRAINER_DALE] =
     {
 #line 7292
         .trainerName = _("DALE"),
@@ -17853,7 +17054,7 @@ F_TRAINER_FEMALE |
 #line 7294
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7296
+#line 6404
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7297
         .doubleBattle = TRUE,
@@ -17908,8 +17109,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7316
-    [TRAINER_NOLAN] =
+#line 6424
+    [DIFFICULTY_NORMAL][TRAINER_NOLAN] =
     {
 #line 7317
         .trainerName = _("NOLAN"),
@@ -17918,7 +17119,7 @@ F_TRAINER_FEMALE |
 #line 7319
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7321
+#line 6429
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7322
         .doubleBattle = TRUE,
@@ -17940,8 +17141,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7329
-    [TRAINER_BARNY] =
+#line 6437
+    [DIFFICULTY_NORMAL][TRAINER_BARNY] =
     {
 #line 7330
         .trainerName = _("BARNY"),
@@ -17950,7 +17151,7 @@ F_TRAINER_FEMALE |
 #line 7332
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7334
+#line 6442
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7335
         .doubleBattle = TRUE,
@@ -17983,8 +17184,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7346
-    [TRAINER_WADE] =
+#line 6454
+    [DIFFICULTY_NORMAL][TRAINER_WADE] =
     {
 #line 7347
         .trainerName = _("WADE"),
@@ -17993,7 +17194,7 @@ F_TRAINER_FEMALE |
 #line 7349
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7351
+#line 6459
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7352
         .doubleBattle = TRUE,
@@ -18015,8 +17216,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7359
-    [TRAINER_CARTER] =
+#line 6467
+    [DIFFICULTY_NORMAL][TRAINER_CARTER] =
     {
 #line 7360
         .trainerName = _("CARTER"),
@@ -18025,7 +17226,7 @@ F_TRAINER_FEMALE |
 #line 7362
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7364
+#line 6472
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7365
         .doubleBattle = TRUE,
@@ -18058,8 +17259,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7376
-    [TRAINER_ELLIOT_2] =
+#line 6484
+    [DIFFICULTY_NORMAL][TRAINER_ELLIOT_2] =
     {
 #line 7377
         .trainerName = _("ELLIOT"),
@@ -18068,7 +17269,7 @@ F_TRAINER_FEMALE |
 #line 7379
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7381
+#line 6489
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7382
         .doubleBattle = TRUE,
@@ -18112,8 +17313,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7397
-    [TRAINER_ELLIOT_3] =
+#line 6505
+    [DIFFICULTY_NORMAL][TRAINER_ELLIOT_3] =
     {
 #line 7398
         .trainerName = _("ELLIOT"),
@@ -18122,7 +17323,7 @@ F_TRAINER_FEMALE |
 #line 7400
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7402
+#line 6510
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7403
         .doubleBattle = TRUE,
@@ -18177,8 +17378,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7422
-    [TRAINER_ELLIOT_4] =
+#line 6530
+    [DIFFICULTY_NORMAL][TRAINER_ELLIOT_4] =
     {
 #line 7423
         .trainerName = _("ELLIOT"),
@@ -18187,7 +17388,7 @@ F_TRAINER_FEMALE |
 #line 7425
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7427
+#line 6535
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7428
         .doubleBattle = TRUE,
@@ -18242,8 +17443,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7447
-    [TRAINER_ELLIOT_5] =
+#line 6555
+    [DIFFICULTY_NORMAL][TRAINER_ELLIOT_5] =
     {
 #line 7448
         .trainerName = _("ELLIOT"),
@@ -18252,7 +17453,7 @@ F_TRAINER_FEMALE |
 #line 7450
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7452
+#line 6560
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7453
         .doubleBattle = TRUE,
@@ -18307,8 +17508,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7472
-    [TRAINER_RONALD] =
+#line 6580
+    [DIFFICULTY_NORMAL][TRAINER_RONALD] =
     {
 #line 7473
         .trainerName = _("RONALD"),
@@ -18317,7 +17518,7 @@ F_TRAINER_FEMALE |
 #line 7475
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 7477
+#line 6585
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 7478
         .doubleBattle = TRUE,
@@ -18394,8 +17595,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7505
-    [TRAINER_JACOB] =
+#line 6613
+    [DIFFICULTY_NORMAL][TRAINER_JACOB] =
     {
 #line 7506
         .trainerName = _("JACOB"),
@@ -18404,7 +17605,7 @@ F_TRAINER_FEMALE |
 #line 7508
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7510
+#line 6618
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7511
         .doubleBattle = TRUE,
@@ -18448,8 +17649,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7526
-    [TRAINER_ANTHONY] =
+#line 6634
+    [DIFFICULTY_NORMAL][TRAINER_ANTHONY] =
     {
 #line 7527
         .trainerName = _("ANTHONY"),
@@ -18458,7 +17659,7 @@ F_TRAINER_FEMALE |
 #line 7529
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7531
+#line 6639
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7532
         .doubleBattle = TRUE,
@@ -18491,8 +17692,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7543
-    [TRAINER_BENJAMIN_1] =
+#line 6651
+    [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_1] =
     {
 #line 7544
         .trainerName = _("BENJAMIN"),
@@ -18501,7 +17702,7 @@ F_TRAINER_FEMALE |
 #line 7546
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7548
+#line 6656
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7549
         .doubleBattle = TRUE,
@@ -18523,8 +17724,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7556
-    [TRAINER_BENJAMIN_2] =
+#line 6664
+    [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_2] =
     {
 #line 7557
         .trainerName = _("BENJAMIN"),
@@ -18533,7 +17734,7 @@ F_TRAINER_FEMALE |
 #line 7559
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7561
+#line 6669
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7562
         .doubleBattle = TRUE,
@@ -18555,8 +17756,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7569
-    [TRAINER_BENJAMIN_3] =
+#line 6677
+    [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_3] =
     {
 #line 7570
         .trainerName = _("BENJAMIN"),
@@ -18565,7 +17766,7 @@ F_TRAINER_FEMALE |
 #line 7572
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7574
+#line 6682
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7575
         .doubleBattle = TRUE,
@@ -18587,8 +17788,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7582
-    [TRAINER_BENJAMIN_4] =
+#line 6690
+    [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_4] =
     {
 #line 7583
         .trainerName = _("BENJAMIN"),
@@ -18597,7 +17798,7 @@ F_TRAINER_FEMALE |
 #line 7585
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7587
+#line 6695
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7588
         .doubleBattle = TRUE,
@@ -18619,8 +17820,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7595
-    [TRAINER_BENJAMIN_5] =
+#line 6703
+    [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_5] =
     {
 #line 7596
         .trainerName = _("BENJAMIN"),
@@ -18629,7 +17830,7 @@ F_TRAINER_FEMALE |
 #line 7598
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7600
+#line 6708
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7601
         .doubleBattle = TRUE,
@@ -18651,8 +17852,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7608
-    [TRAINER_ABIGAIL_1] =
+#line 6716
+    [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_1] =
     {
 #line 7609
         .trainerName = _("ABIGAIL"),
@@ -18661,7 +17862,7 @@ F_TRAINER_FEMALE |
 #line 7611
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7612
+#line 6720
 F_TRAINER_FEMALE | 
 #line 7613
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -18685,8 +17886,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7621
-    [TRAINER_JASMINE] =
+#line 6729
+    [DIFFICULTY_NORMAL][TRAINER_JASMINE] =
     {
 #line 7622
         .trainerName = _("JASMINE"),
@@ -18695,7 +17896,7 @@ F_TRAINER_FEMALE |
 #line 7624
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7625
+#line 6733
 F_TRAINER_FEMALE | 
 #line 7626
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -18741,8 +17942,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7642
-    [TRAINER_ABIGAIL_2] =
+#line 6750
+    [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_2] =
     {
 #line 7643
         .trainerName = _("ABIGAIL"),
@@ -18751,7 +17952,7 @@ F_TRAINER_FEMALE |
 #line 7645
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7646
+#line 6754
 F_TRAINER_FEMALE | 
 #line 7647
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -18775,8 +17976,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7655
-    [TRAINER_ABIGAIL_3] =
+#line 6763
+    [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_3] =
     {
 #line 7656
         .trainerName = _("ABIGAIL"),
@@ -18785,7 +17986,7 @@ F_TRAINER_FEMALE |
 #line 7658
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7659
+#line 6767
 F_TRAINER_FEMALE | 
 #line 7660
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -18809,8 +18010,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7668
-    [TRAINER_ABIGAIL_4] =
+#line 6776
+    [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_4] =
     {
 #line 7669
         .trainerName = _("ABIGAIL"),
@@ -18819,7 +18020,7 @@ F_TRAINER_FEMALE |
 #line 7671
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7672
+#line 6780
 F_TRAINER_FEMALE | 
 #line 7673
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -18843,8 +18044,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7681
-    [TRAINER_ABIGAIL_5] =
+#line 6789
+    [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_5] =
     {
 #line 7682
         .trainerName = _("ABIGAIL"),
@@ -18853,7 +18054,7 @@ F_TRAINER_FEMALE |
 #line 7684
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7685
+#line 6793
 F_TRAINER_FEMALE | 
 #line 7686
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -18877,8 +18078,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7694
-    [TRAINER_DYLAN_1] =
+#line 6802
+    [DIFFICULTY_NORMAL][TRAINER_DYLAN_1] =
     {
 #line 7695
         .trainerName = _("DYLAN"),
@@ -18887,7 +18088,7 @@ F_TRAINER_FEMALE |
 #line 7697
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7699
+#line 6807
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7700
         .doubleBattle = TRUE,
@@ -18911,8 +18112,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7708
-    [TRAINER_DYLAN_2] =
+#line 6815
+    [DIFFICULTY_NORMAL][TRAINER_DYLAN_2] =
     {
 #line 7709
         .trainerName = _("DYLAN"),
@@ -18921,7 +18122,7 @@ F_TRAINER_FEMALE |
 #line 7711
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7713
+#line 6820
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7714
         .doubleBattle = TRUE,
@@ -18943,8 +18144,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7721
-    [TRAINER_DYLAN_3] =
+#line 6828
+    [DIFFICULTY_NORMAL][TRAINER_DYLAN_3] =
     {
 #line 7722
         .trainerName = _("DYLAN"),
@@ -18953,7 +18154,7 @@ F_TRAINER_FEMALE |
 #line 7724
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7726
+#line 6833
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7727
         .doubleBattle = TRUE,
@@ -18975,8 +18176,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7734
-    [TRAINER_DYLAN_4] =
+#line 6841
+    [DIFFICULTY_NORMAL][TRAINER_DYLAN_4] =
     {
 #line 7735
         .trainerName = _("DYLAN"),
@@ -18985,7 +18186,7 @@ F_TRAINER_FEMALE |
 #line 7737
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7739
+#line 6846
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7740
         .doubleBattle = TRUE,
@@ -19007,8 +18208,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7747
-    [TRAINER_DYLAN_5] =
+#line 6854
+    [DIFFICULTY_NORMAL][TRAINER_DYLAN_5] =
     {
 #line 7748
         .trainerName = _("DYLAN"),
@@ -19017,7 +18218,7 @@ F_TRAINER_FEMALE |
 #line 7750
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7752
+#line 6859
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7753
         .doubleBattle = TRUE,
@@ -19039,8 +18240,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7760
-    [TRAINER_MARIA_1] =
+#line 6867
+    [DIFFICULTY_NORMAL][TRAINER_MARIA_1] =
     {
 #line 7761
         .trainerName = _("MARIA"),
@@ -19049,7 +18250,7 @@ F_TRAINER_FEMALE |
 #line 7763
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7764
+#line 6871
 F_TRAINER_FEMALE | 
 #line 7765
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -19075,8 +18276,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7774
-    [TRAINER_MARIA_2] =
+#line 6880
+    [DIFFICULTY_NORMAL][TRAINER_MARIA_2] =
     {
 #line 7775
         .trainerName = _("MARIA"),
@@ -19085,7 +18286,7 @@ F_TRAINER_FEMALE |
 #line 7777
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7778
+#line 6884
 F_TRAINER_FEMALE | 
 #line 7779
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -19109,8 +18310,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7787
-    [TRAINER_MARIA_3] =
+#line 6893
+    [DIFFICULTY_NORMAL][TRAINER_MARIA_3] =
     {
 #line 7788
         .trainerName = _("MARIA"),
@@ -19119,7 +18320,7 @@ F_TRAINER_FEMALE |
 #line 7790
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7791
+#line 6897
 F_TRAINER_FEMALE | 
 #line 7792
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -19143,8 +18344,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7800
-    [TRAINER_MARIA_4] =
+#line 6906
+    [DIFFICULTY_NORMAL][TRAINER_MARIA_4] =
     {
 #line 7801
         .trainerName = _("MARIA"),
@@ -19153,7 +18354,7 @@ F_TRAINER_FEMALE |
 #line 7803
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7804
+#line 6910
 F_TRAINER_FEMALE | 
 #line 7805
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -19177,8 +18378,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7813
-    [TRAINER_MARIA_5] =
+#line 6919
+    [DIFFICULTY_NORMAL][TRAINER_MARIA_5] =
     {
 #line 7814
         .trainerName = _("MARIA"),
@@ -19187,7 +18388,7 @@ F_TRAINER_FEMALE |
 #line 7816
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7817
+#line 6923
 F_TRAINER_FEMALE | 
 #line 7818
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -19211,8 +18412,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7826
-    [TRAINER_CAMDEN] =
+#line 6932
+    [DIFFICULTY_NORMAL][TRAINER_CAMDEN] =
     {
 #line 7827
         .trainerName = _("CAMDEN"),
@@ -19221,7 +18422,7 @@ F_TRAINER_FEMALE |
 #line 7829
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7831
+#line 6937
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7832
         .doubleBattle = TRUE,
@@ -19254,8 +18455,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7843
-    [TRAINER_DEMETRIUS] =
+#line 6949
+    [DIFFICULTY_NORMAL][TRAINER_DEMETRIUS] =
     {
 #line 7844
         .trainerName = _("DEMETRIUS"),
@@ -19264,7 +18465,7 @@ F_TRAINER_FEMALE |
 #line 7846
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 7848
+#line 6954
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7849
         .doubleBattle = TRUE,
@@ -19297,8 +18498,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7860
-    [TRAINER_ISAIAH_1] =
+#line 6966
+    [DIFFICULTY_NORMAL][TRAINER_ISAIAH_1] =
     {
 #line 7861
         .trainerName = _("ISAIAH"),
@@ -19307,7 +18508,7 @@ F_TRAINER_FEMALE |
 #line 7863
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7865
+#line 6971
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7866
         .doubleBattle = TRUE,
@@ -19329,8 +18530,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7873
-    [TRAINER_PABLO_1] =
+#line 6979
+    [DIFFICULTY_NORMAL][TRAINER_PABLO_1] =
     {
 #line 7874
         .trainerName = _("PABLO"),
@@ -19339,7 +18540,7 @@ F_TRAINER_FEMALE |
 #line 7876
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7878
+#line 6984
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7879
         .doubleBattle = TRUE,
@@ -19372,8 +18573,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7890
-    [TRAINER_CHASE] =
+#line 6996
+    [DIFFICULTY_NORMAL][TRAINER_CHASE] =
     {
 #line 7891
         .trainerName = _("CHASE"),
@@ -19382,7 +18583,7 @@ F_TRAINER_FEMALE |
 #line 7893
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7895
+#line 7001
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7896
         .doubleBattle = TRUE,
@@ -19415,8 +18616,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7907
-    [TRAINER_ISAIAH_2] =
+#line 7013
+    [DIFFICULTY_NORMAL][TRAINER_ISAIAH_2] =
     {
 #line 7908
         .trainerName = _("ISAIAH"),
@@ -19425,7 +18626,7 @@ F_TRAINER_FEMALE |
 #line 7910
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7912
+#line 7018
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7913
         .doubleBattle = TRUE,
@@ -19447,8 +18648,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7920
-    [TRAINER_ISAIAH_3] =
+#line 7026
+    [DIFFICULTY_NORMAL][TRAINER_ISAIAH_3] =
     {
 #line 7921
         .trainerName = _("ISAIAH"),
@@ -19457,7 +18658,7 @@ F_TRAINER_FEMALE |
 #line 7923
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7925
+#line 7031
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7926
         .doubleBattle = TRUE,
@@ -19479,8 +18680,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7933
-    [TRAINER_ISAIAH_4] =
+#line 7039
+    [DIFFICULTY_NORMAL][TRAINER_ISAIAH_4] =
     {
 #line 7934
         .trainerName = _("ISAIAH"),
@@ -19489,7 +18690,7 @@ F_TRAINER_FEMALE |
 #line 7936
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7938
+#line 7044
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7939
         .doubleBattle = TRUE,
@@ -19511,8 +18712,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7946
-    [TRAINER_ISAIAH_5] =
+#line 7052
+    [DIFFICULTY_NORMAL][TRAINER_ISAIAH_5] =
     {
 #line 7947
         .trainerName = _("ISAIAH"),
@@ -19521,7 +18722,7 @@ F_TRAINER_FEMALE |
 #line 7949
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 7951
+#line 7057
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 7952
         .doubleBattle = TRUE,
@@ -19543,8 +18744,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7959
-    [TRAINER_ISOBEL] =
+#line 7065
+    [DIFFICULTY_NORMAL][TRAINER_ISOBEL] =
     {
 #line 7960
         .trainerName = _("ISOBEL"),
@@ -19553,7 +18754,7 @@ F_TRAINER_FEMALE |
 #line 7962
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7963
+#line 7069
 F_TRAINER_FEMALE | 
 #line 7964
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -19577,8 +18778,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7972
-    [TRAINER_DONNY] =
+#line 7078
+    [DIFFICULTY_NORMAL][TRAINER_DONNY] =
     {
 #line 7973
         .trainerName = _("DONNY"),
@@ -19587,7 +18788,7 @@ F_TRAINER_FEMALE |
 #line 7975
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7976
+#line 7082
 F_TRAINER_FEMALE | 
 #line 7977
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -19622,8 +18823,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 7989
-    [TRAINER_TALIA] =
+#line 7095
+    [DIFFICULTY_NORMAL][TRAINER_TALIA] =
     {
 #line 7990
         .trainerName = _("TALIA"),
@@ -19632,7 +18833,7 @@ F_TRAINER_FEMALE |
 #line 7992
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 7993
+#line 7099
 F_TRAINER_FEMALE | 
 #line 7994
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -19656,8 +18857,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8002
-    [TRAINER_KATELYN_1] =
+#line 7108
+    [DIFFICULTY_NORMAL][TRAINER_KATELYN_1] =
     {
 #line 8003
         .trainerName = _("KATELYN"),
@@ -19666,7 +18867,7 @@ F_TRAINER_FEMALE |
 #line 8005
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 8006
+#line 7112
 F_TRAINER_FEMALE | 
 #line 8007
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -19690,8 +18891,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8015
-    [TRAINER_ALLISON] =
+#line 7121
+    [DIFFICULTY_NORMAL][TRAINER_ALLISON] =
     {
 #line 8016
         .trainerName = _("ALLISON"),
@@ -19700,7 +18901,7 @@ F_TRAINER_FEMALE |
 #line 8018
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 8019
+#line 7125
 F_TRAINER_FEMALE | 
 #line 8020
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -19735,8 +18936,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8032
-    [TRAINER_KATELYN_2] =
+#line 7138
+    [DIFFICULTY_NORMAL][TRAINER_KATELYN_2] =
     {
 #line 8033
         .trainerName = _("KATELYN"),
@@ -19745,7 +18946,7 @@ F_TRAINER_FEMALE |
 #line 8035
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 8036
+#line 7142
 F_TRAINER_FEMALE | 
 #line 8037
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -19769,8 +18970,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8045
-    [TRAINER_KATELYN_3] =
+#line 7151
+    [DIFFICULTY_NORMAL][TRAINER_KATELYN_3] =
     {
 #line 8046
         .trainerName = _("KATELYN"),
@@ -19779,7 +18980,7 @@ F_TRAINER_FEMALE |
 #line 8048
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 8049
+#line 7155
 F_TRAINER_FEMALE | 
 #line 8050
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -19803,8 +19004,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8058
-    [TRAINER_KATELYN_4] =
+#line 7164
+    [DIFFICULTY_NORMAL][TRAINER_KATELYN_4] =
     {
 #line 8059
         .trainerName = _("KATELYN"),
@@ -19813,7 +19014,7 @@ F_TRAINER_FEMALE |
 #line 8061
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 8062
+#line 7168
 F_TRAINER_FEMALE | 
 #line 8063
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -19837,8 +19038,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8071
-    [TRAINER_KATELYN_5] =
+#line 7177
+    [DIFFICULTY_NORMAL][TRAINER_KATELYN_5] =
     {
 #line 8072
         .trainerName = _("KATELYN"),
@@ -19847,7 +19048,7 @@ F_TRAINER_FEMALE |
 #line 8074
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 8075
+#line 7181
 F_TRAINER_FEMALE | 
 #line 8076
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -19871,8 +19072,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8084
-    [TRAINER_NICOLAS_1] =
+#line 7190
+    [DIFFICULTY_NORMAL][TRAINER_NICOLAS_1] =
     {
 #line 8085
         .trainerName = _("NICOLAS"),
@@ -19881,7 +19082,7 @@ F_TRAINER_FEMALE |
 #line 8087
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .encounterMusic_gender =
-#line 8089
+#line 7195
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8090
         .doubleBattle = TRUE,
@@ -19914,8 +19115,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8101
-    [TRAINER_NICOLAS_2] =
+#line 7207
+    [DIFFICULTY_NORMAL][TRAINER_NICOLAS_2] =
     {
 #line 8102
         .trainerName = _("NICOLAS"),
@@ -19924,7 +19125,7 @@ F_TRAINER_FEMALE |
 #line 8104
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .encounterMusic_gender =
-#line 8106
+#line 7212
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8107
         .doubleBattle = TRUE,
@@ -19957,8 +19158,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8118
-    [TRAINER_NICOLAS_3] =
+#line 7224
+    [DIFFICULTY_NORMAL][TRAINER_NICOLAS_3] =
     {
 #line 8119
         .trainerName = _("NICOLAS"),
@@ -19967,7 +19168,7 @@ F_TRAINER_FEMALE |
 #line 8121
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .encounterMusic_gender =
-#line 8123
+#line 7229
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8124
         .doubleBattle = TRUE,
@@ -20000,8 +19201,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8135
-    [TRAINER_NICOLAS_4] =
+#line 7241
+    [DIFFICULTY_NORMAL][TRAINER_NICOLAS_4] =
     {
 #line 8136
         .trainerName = _("NICOLAS"),
@@ -20010,7 +19211,7 @@ F_TRAINER_FEMALE |
 #line 8138
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .encounterMusic_gender =
-#line 8140
+#line 7246
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8141
         .doubleBattle = TRUE,
@@ -20054,8 +19255,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8156
-    [TRAINER_NICOLAS_5] =
+#line 7262
+    [DIFFICULTY_NORMAL][TRAINER_NICOLAS_5] =
     {
 #line 8157
         .trainerName = _("NICOLAS"),
@@ -20064,7 +19265,7 @@ F_TRAINER_FEMALE |
 #line 8159
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .encounterMusic_gender =
-#line 8161
+#line 7267
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8162
         .doubleBattle = TRUE,
@@ -20110,8 +19311,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8177
-    [TRAINER_AARON] =
+#line 7283
+    [DIFFICULTY_NORMAL][TRAINER_AARON] =
     {
 #line 8178
         .trainerName = _("AARON"),
@@ -20120,7 +19321,7 @@ F_TRAINER_FEMALE |
 #line 8180
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .encounterMusic_gender =
-#line 8182
+#line 7288
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 8183
         .doubleBattle = TRUE,
@@ -20149,8 +19350,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8194
-    [TRAINER_PERRY] =
+#line 7300
+    [DIFFICULTY_NORMAL][TRAINER_PERRY] =
     {
 #line 8195
         .trainerName = _("PERRY"),
@@ -20159,7 +19360,7 @@ F_TRAINER_FEMALE |
 #line 8197
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8199
+#line 7305
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8200
         .doubleBattle = TRUE,
@@ -20181,8 +19382,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8207
-    [TRAINER_HUGH] =
+#line 7313
+    [DIFFICULTY_NORMAL][TRAINER_HUGH] =
     {
 #line 8208
         .trainerName = _("HUGH"),
@@ -20191,7 +19392,7 @@ F_TRAINER_FEMALE |
 #line 8210
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8212
+#line 7318
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8213
         .doubleBattle = TRUE,
@@ -20224,8 +19425,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8224
-    [TRAINER_PHIL] =
+#line 7330
+    [DIFFICULTY_NORMAL][TRAINER_PHIL] =
     {
 #line 8225
         .trainerName = _("PHIL"),
@@ -20234,7 +19435,7 @@ F_TRAINER_FEMALE |
 #line 8227
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8229
+#line 7335
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8230
         .doubleBattle = TRUE,
@@ -20256,8 +19457,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8237
-    [TRAINER_JARED] =
+#line 7343
+    [DIFFICULTY_NORMAL][TRAINER_JARED] =
     {
 #line 8238
         .trainerName = _("JARED"),
@@ -20266,7 +19467,7 @@ F_TRAINER_FEMALE |
 #line 8240
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8242
+#line 7348
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8243
         .doubleBattle = TRUE,
@@ -20310,8 +19511,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8258
-    [TRAINER_HUMBERTO] =
+#line 7364
+    [DIFFICULTY_NORMAL][TRAINER_HUMBERTO] =
     {
 #line 8259
         .trainerName = _("HUMBERTO"),
@@ -20320,7 +19521,7 @@ F_TRAINER_FEMALE |
 #line 8261
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8263
+#line 7369
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8264
         .doubleBattle = TRUE,
@@ -20342,8 +19543,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8271
-    [TRAINER_PRESLEY] =
+#line 7377
+    [DIFFICULTY_NORMAL][TRAINER_PRESLEY] =
     {
 #line 8272
         .trainerName = _("PRESLEY"),
@@ -20352,7 +19553,7 @@ F_TRAINER_FEMALE |
 #line 8274
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8276
+#line 7382
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8277
         .doubleBattle = TRUE,
@@ -20385,8 +19586,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8288
-    [TRAINER_EDWARDO] =
+#line 7394
+    [DIFFICULTY_NORMAL][TRAINER_EDWARDO] =
     {
 #line 8289
         .trainerName = _("EDWARDO"),
@@ -20395,7 +19596,7 @@ F_TRAINER_FEMALE |
 #line 8291
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8293
+#line 7399
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8294
         .doubleBattle = TRUE,
@@ -20428,8 +19629,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8305
-    [TRAINER_COLIN] =
+#line 7411
+    [DIFFICULTY_NORMAL][TRAINER_COLIN] =
     {
 #line 8306
         .trainerName = _("COLIN"),
@@ -20438,7 +19639,7 @@ F_TRAINER_FEMALE |
 #line 8308
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8310
+#line 7416
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8311
         .doubleBattle = TRUE,
@@ -20471,8 +19672,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8322
-    [TRAINER_ROBERT_1] =
+#line 7428
+    [DIFFICULTY_NORMAL][TRAINER_ROBERT_1] =
     {
 #line 8323
         .trainerName = _("ROBERT"),
@@ -20481,7 +19682,7 @@ F_TRAINER_FEMALE |
 #line 8325
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8327
+#line 7433
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8328
         .doubleBattle = TRUE,
@@ -20503,8 +19704,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8335
-    [TRAINER_BENNY] =
+#line 7441
+    [DIFFICULTY_NORMAL][TRAINER_BENNY] =
     {
 #line 8336
         .trainerName = _("BENNY"),
@@ -20513,7 +19714,7 @@ F_TRAINER_FEMALE |
 #line 8338
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8340
+#line 7446
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8341
         .doubleBattle = TRUE,
@@ -20557,8 +19758,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8356
-    [TRAINER_CHESTER] =
+#line 7462
+    [DIFFICULTY_NORMAL][TRAINER_CHESTER] =
     {
 #line 8357
         .trainerName = _("CHESTER"),
@@ -20567,7 +19768,7 @@ F_TRAINER_FEMALE |
 #line 8359
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8361
+#line 7467
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8362
         .doubleBattle = TRUE,
@@ -20600,8 +19801,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8373
-    [TRAINER_ROBERT_2] =
+#line 7479
+    [DIFFICULTY_NORMAL][TRAINER_ROBERT_2] =
     {
 #line 8374
         .trainerName = _("ROBERT"),
@@ -20610,7 +19811,7 @@ F_TRAINER_FEMALE |
 #line 8376
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8378
+#line 7484
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8379
         .doubleBattle = TRUE,
@@ -20643,8 +19844,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8390
-    [TRAINER_ROBERT_3] =
+#line 7496
+    [DIFFICULTY_NORMAL][TRAINER_ROBERT_3] =
     {
 #line 8391
         .trainerName = _("ROBERT"),
@@ -20653,7 +19854,7 @@ F_TRAINER_FEMALE |
 #line 8393
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8395
+#line 7501
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8396
         .doubleBattle = TRUE,
@@ -20686,8 +19887,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8407
-    [TRAINER_ROBERT_4] =
+#line 7513
+    [DIFFICULTY_NORMAL][TRAINER_ROBERT_4] =
     {
 #line 8408
         .trainerName = _("ROBERT"),
@@ -20696,7 +19897,7 @@ F_TRAINER_FEMALE |
 #line 8410
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8412
+#line 7518
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8413
         .doubleBattle = TRUE,
@@ -20729,8 +19930,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8424
-    [TRAINER_ROBERT_5] =
+#line 7530
+    [DIFFICULTY_NORMAL][TRAINER_ROBERT_5] =
     {
 #line 8425
         .trainerName = _("ROBERT"),
@@ -20739,7 +19940,7 @@ F_TRAINER_FEMALE |
 #line 8427
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8429
+#line 7535
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8430
         .doubleBattle = TRUE,
@@ -20772,8 +19973,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8441
-    [TRAINER_ALEX] =
+#line 7547
+    [DIFFICULTY_NORMAL][TRAINER_ALEX] =
     {
 #line 8442
         .trainerName = _("ALEX"),
@@ -20782,7 +19983,7 @@ F_TRAINER_FEMALE |
 #line 8444
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8446
+#line 7552
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8447
         .doubleBattle = TRUE,
@@ -20815,8 +20016,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8458
-    [TRAINER_BECK] =
+#line 7564
+    [DIFFICULTY_NORMAL][TRAINER_BECK] =
     {
 #line 8459
         .trainerName = _("BECK"),
@@ -20825,7 +20026,7 @@ F_TRAINER_FEMALE |
 #line 8461
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 8463
+#line 7569
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 8464
         .doubleBattle = TRUE,
@@ -20847,8 +20048,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8471
-    [TRAINER_YASU] =
+#line 7577
+    [DIFFICULTY_NORMAL][TRAINER_YASU] =
     {
 #line 8472
         .trainerName = _("YASU"),
@@ -20857,7 +20058,7 @@ F_TRAINER_FEMALE |
 #line 8474
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 8476
+#line 7582
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8477
         .doubleBattle = TRUE,
@@ -20879,8 +20080,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8484
-    [TRAINER_TAKASHI] =
+#line 7590
+    [DIFFICULTY_NORMAL][TRAINER_TAKASHI] =
     {
 #line 8485
         .trainerName = _("TAKASHI"),
@@ -20889,7 +20090,7 @@ F_TRAINER_FEMALE |
 #line 8487
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 8489
+#line 7595
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8490
         .doubleBattle = TRUE,
@@ -20922,8 +20123,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8501
-    [TRAINER_DIANNE] =
+#line 7607
+    [DIFFICULTY_NORMAL][TRAINER_DIANNE] =
     {
 #line 8502
         .trainerName = _("DIANNE"),
@@ -20932,7 +20133,7 @@ F_TRAINER_FEMALE |
 #line 8504
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 8505
+#line 7611
 F_TRAINER_FEMALE | 
 #line 8506
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -20975,8 +20176,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8521
-    [TRAINER_JANI] =
+#line 7628
+    [DIFFICULTY_NORMAL][TRAINER_JANI] =
     {
 #line 8522
         .trainerName = _("JANI"),
@@ -20985,7 +20186,7 @@ F_TRAINER_FEMALE |
 #line 8524
         .trainerPic = TRAINER_PIC_TUBER_F,
         .encounterMusic_gender =
-#line 8525
+#line 7632
 F_TRAINER_FEMALE | 
 #line 8526
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -21007,8 +20208,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8533
-    [TRAINER_LAO_1] =
+#line 7640
+    [DIFFICULTY_NORMAL][TRAINER_LAO_1] =
     {
 #line 8534
         .trainerName = _("LAO"),
@@ -21017,7 +20218,7 @@ F_TRAINER_FEMALE |
 #line 8536
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 8538
+#line 7645
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8539
         .doubleBattle = TRUE,
@@ -21080,8 +20281,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8565
-    [TRAINER_LUNG] =
+#line 7672
+    [DIFFICULTY_NORMAL][TRAINER_LUNG] =
     {
 #line 8566
         .trainerName = _("LUNG"),
@@ -21090,7 +20291,7 @@ F_TRAINER_FEMALE |
 #line 8568
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 8570
+#line 7677
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8571
         .doubleBattle = TRUE,
@@ -21121,8 +20322,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8581
-    [TRAINER_LAO_2] =
+#line 7688
+    [DIFFICULTY_NORMAL][TRAINER_LAO_2] =
     {
 #line 8582
         .trainerName = _("LAO"),
@@ -21131,7 +20332,7 @@ F_TRAINER_FEMALE |
 #line 8584
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 8586
+#line 7693
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8587
         .doubleBattle = TRUE,
@@ -21209,8 +20410,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8618
-    [TRAINER_LAO_3] =
+#line 7725
+    [DIFFICULTY_NORMAL][TRAINER_LAO_3] =
     {
 #line 8619
         .trainerName = _("LAO"),
@@ -21219,7 +20420,7 @@ F_TRAINER_FEMALE |
 #line 8621
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 8623
+#line 7730
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8624
         .doubleBattle = TRUE,
@@ -21297,8 +20498,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8655
-    [TRAINER_LAO_4] =
+#line 7762
+    [DIFFICULTY_NORMAL][TRAINER_LAO_4] =
     {
 #line 8656
         .trainerName = _("LAO"),
@@ -21307,7 +20508,7 @@ F_TRAINER_FEMALE |
 #line 8658
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 8660
+#line 7767
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8661
         .doubleBattle = TRUE,
@@ -21383,8 +20584,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8690
-    [TRAINER_LAO_5] =
+#line 7797
+    [DIFFICULTY_NORMAL][TRAINER_LAO_5] =
     {
 #line 8691
         .trainerName = _("LAO"),
@@ -21393,7 +20594,7 @@ F_TRAINER_FEMALE |
 #line 8693
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 8695
+#line 7802
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 8696
         .doubleBattle = TRUE,
@@ -21473,8 +20674,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8727
-    [TRAINER_JOCELYN] =
+#line 7834
+    [DIFFICULTY_NORMAL][TRAINER_JOCELYN] =
     {
 #line 8728
         .trainerName = _("JOCELYN"),
@@ -21483,7 +20684,7 @@ F_TRAINER_FEMALE |
 #line 8730
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 8731
+#line 7838
 F_TRAINER_FEMALE | 
 #line 8732
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -21507,8 +20708,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8740
-    [TRAINER_LAURA] =
+#line 7847
+    [DIFFICULTY_NORMAL][TRAINER_LAURA] =
     {
 #line 8741
         .trainerName = _("LAURA"),
@@ -21517,7 +20718,7 @@ F_TRAINER_FEMALE |
 #line 8743
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 8744
+#line 7851
 F_TRAINER_FEMALE | 
 #line 8745
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -21541,8 +20742,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8753
-    [TRAINER_CYNDY_1] =
+#line 7860
+    [DIFFICULTY_NORMAL][TRAINER_CYNDY_1] =
     {
 #line 8754
         .trainerName = _("CYNDY"),
@@ -21551,7 +20752,7 @@ F_TRAINER_FEMALE |
 #line 8756
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 8757
+#line 7864
 F_TRAINER_FEMALE | 
 #line 8758
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -21586,8 +20787,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8770
-    [TRAINER_CORA] =
+#line 7877
+    [DIFFICULTY_NORMAL][TRAINER_CORA] =
     {
 #line 8771
         .trainerName = _("CORA"),
@@ -21596,7 +20797,7 @@ F_TRAINER_FEMALE |
 #line 8773
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 8774
+#line 7881
 F_TRAINER_FEMALE | 
 #line 8775
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -21620,8 +20821,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8783
-    [TRAINER_PAULA] =
+#line 7890
+    [DIFFICULTY_NORMAL][TRAINER_PAULA] =
     {
 #line 8784
         .trainerName = _("PAULA"),
@@ -21630,7 +20831,7 @@ F_TRAINER_FEMALE |
 #line 8786
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 8787
+#line 7894
 F_TRAINER_FEMALE | 
 #line 8788
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -21654,8 +20855,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8796
-    [TRAINER_CYNDY_2] =
+#line 7903
+    [DIFFICULTY_NORMAL][TRAINER_CYNDY_2] =
     {
 #line 8797
         .trainerName = _("CYNDY"),
@@ -21664,7 +20865,7 @@ F_TRAINER_FEMALE |
 #line 8799
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 8800
+#line 7907
 F_TRAINER_FEMALE | 
 #line 8801
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -21699,8 +20900,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8813
-    [TRAINER_CYNDY_3] =
+#line 7920
+    [DIFFICULTY_NORMAL][TRAINER_CYNDY_3] =
     {
 #line 8814
         .trainerName = _("CYNDY"),
@@ -21709,7 +20910,7 @@ F_TRAINER_FEMALE |
 #line 8816
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 8817
+#line 7924
 F_TRAINER_FEMALE | 
 #line 8818
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -21744,8 +20945,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8830
-    [TRAINER_CYNDY_4] =
+#line 7937
+    [DIFFICULTY_NORMAL][TRAINER_CYNDY_4] =
     {
 #line 8831
         .trainerName = _("CYNDY"),
@@ -21754,7 +20955,7 @@ F_TRAINER_FEMALE |
 #line 8833
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 8834
+#line 7941
 F_TRAINER_FEMALE | 
 #line 8835
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -21789,8 +20990,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8847
-    [TRAINER_CYNDY_5] =
+#line 7954
+    [DIFFICULTY_NORMAL][TRAINER_CYNDY_5] =
     {
 #line 8848
         .trainerName = _("CYNDY"),
@@ -21799,7 +21000,7 @@ F_TRAINER_FEMALE |
 #line 8850
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 8851
+#line 7958
 F_TRAINER_FEMALE | 
 #line 8852
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -21834,8 +21035,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8864
-    [TRAINER_MADELINE_1] =
+#line 7971
+    [DIFFICULTY_NORMAL][TRAINER_MADELINE_1] =
     {
 #line 8865
         .trainerName = _("MADELINE"),
@@ -21844,7 +21045,7 @@ F_TRAINER_FEMALE |
 #line 8867
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .encounterMusic_gender =
-#line 8868
+#line 7975
 F_TRAINER_FEMALE | 
 #line 8869
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -21875,8 +21076,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8881
-    [TRAINER_CLARISSA] =
+#line 7988
+    [DIFFICULTY_NORMAL][TRAINER_CLARISSA] =
     {
 #line 8882
         .trainerName = _("CLARISSA"),
@@ -21885,7 +21086,7 @@ F_TRAINER_FEMALE |
 #line 8884
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .encounterMusic_gender =
-#line 8885
+#line 7992
 F_TRAINER_FEMALE | 
 #line 8886
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -21920,8 +21121,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8898
-    [TRAINER_ANGELICA] =
+#line 8005
+    [DIFFICULTY_NORMAL][TRAINER_ANGELICA] =
     {
 #line 8899
         .trainerName = _("ANGELICA"),
@@ -21930,7 +21131,7 @@ F_TRAINER_FEMALE |
 #line 8901
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .encounterMusic_gender =
-#line 8902
+#line 8009
 F_TRAINER_FEMALE | 
 #line 8903
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -21961,8 +21162,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8915
-    [TRAINER_MADELINE_2] =
+#line 8022
+    [DIFFICULTY_NORMAL][TRAINER_MADELINE_2] =
     {
 #line 8916
         .trainerName = _("MADELINE"),
@@ -21971,7 +21172,7 @@ F_TRAINER_FEMALE |
 #line 8918
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .encounterMusic_gender =
-#line 8919
+#line 8026
 F_TRAINER_FEMALE | 
 #line 8920
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -22002,8 +21203,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8932
-    [TRAINER_MADELINE_3] =
+#line 8039
+    [DIFFICULTY_NORMAL][TRAINER_MADELINE_3] =
     {
 #line 8933
         .trainerName = _("MADELINE"),
@@ -22012,7 +21213,7 @@ F_TRAINER_FEMALE |
 #line 8935
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .encounterMusic_gender =
-#line 8936
+#line 8043
 F_TRAINER_FEMALE | 
 #line 8937
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -22043,8 +21244,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8949
-    [TRAINER_MADELINE_4] =
+#line 8056
+    [DIFFICULTY_NORMAL][TRAINER_MADELINE_4] =
     {
 #line 8950
         .trainerName = _("MADELINE"),
@@ -22053,7 +21254,7 @@ F_TRAINER_FEMALE |
 #line 8952
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .encounterMusic_gender =
-#line 8953
+#line 8060
 F_TRAINER_FEMALE | 
 #line 8954
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -22102,8 +21303,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8974
-    [TRAINER_MADELINE_5] =
+#line 8081
+    [DIFFICULTY_NORMAL][TRAINER_MADELINE_5] =
     {
 #line 8975
         .trainerName = _("MADELINE"),
@@ -22112,7 +21313,7 @@ F_TRAINER_FEMALE |
 #line 8977
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .encounterMusic_gender =
-#line 8978
+#line 8085
 F_TRAINER_FEMALE | 
 #line 8979
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -22161,8 +21362,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 8999
-    [TRAINER_BEVERLY] =
+#line 8106
+    [DIFFICULTY_NORMAL][TRAINER_BEVERLY] =
     {
 #line 9000
         .trainerName = _("BEVERLY"),
@@ -22171,7 +21372,7 @@ F_TRAINER_FEMALE |
 #line 9002
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9003
+#line 8110
 F_TRAINER_FEMALE | 
 #line 9004
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22206,8 +21407,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9016
-    [TRAINER_IMANI] =
+#line 8123
+    [DIFFICULTY_NORMAL][TRAINER_IMANI] =
     {
 #line 9017
         .trainerName = _("IMANI"),
@@ -22216,7 +21417,7 @@ F_TRAINER_FEMALE |
 #line 9019
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9020
+#line 8127
 F_TRAINER_FEMALE | 
 #line 9021
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22240,8 +21441,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9029
-    [TRAINER_KYLA] =
+#line 8136
+    [DIFFICULTY_NORMAL][TRAINER_KYLA] =
     {
 #line 9030
         .trainerName = _("KYLA"),
@@ -22250,7 +21451,7 @@ F_TRAINER_FEMALE |
 #line 9032
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9033
+#line 8140
 F_TRAINER_FEMALE | 
 #line 9034
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22274,8 +21475,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9042
-    [TRAINER_DENISE] =
+#line 8149
+    [DIFFICULTY_NORMAL][TRAINER_DENISE] =
     {
 #line 9043
         .trainerName = _("DENISE"),
@@ -22284,7 +21485,7 @@ F_TRAINER_FEMALE |
 #line 9045
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9046
+#line 8153
 F_TRAINER_FEMALE | 
 #line 9047
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22319,8 +21520,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9059
-    [TRAINER_BETH] =
+#line 8166
+    [DIFFICULTY_NORMAL][TRAINER_BETH] =
     {
 #line 9060
         .trainerName = _("BETH"),
@@ -22329,7 +21530,7 @@ F_TRAINER_FEMALE |
 #line 9062
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9063
+#line 8170
 F_TRAINER_FEMALE | 
 #line 9064
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22353,8 +21554,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9072
-    [TRAINER_TARA] =
+#line 8179
+    [DIFFICULTY_NORMAL][TRAINER_TARA] =
     {
 #line 9073
         .trainerName = _("TARA"),
@@ -22363,7 +21564,7 @@ F_TRAINER_FEMALE |
 #line 9075
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9076
+#line 8183
 F_TRAINER_FEMALE | 
 #line 9077
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22398,8 +21599,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9089
-    [TRAINER_MISSY] =
+#line 8196
+    [DIFFICULTY_NORMAL][TRAINER_MISSY] =
     {
 #line 9090
         .trainerName = _("MISSY"),
@@ -22408,7 +21609,7 @@ F_TRAINER_FEMALE |
 #line 9092
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9093
+#line 8200
 F_TRAINER_FEMALE | 
 #line 9094
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22432,8 +21633,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9102
-    [TRAINER_ALICE] =
+#line 8209
+    [DIFFICULTY_NORMAL][TRAINER_ALICE] =
     {
 #line 9103
         .trainerName = _("ALICE"),
@@ -22442,7 +21643,7 @@ F_TRAINER_FEMALE |
 #line 9105
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9106
+#line 8213
 F_TRAINER_FEMALE | 
 #line 9107
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22488,8 +21689,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9123
-    [TRAINER_JENNY_1] =
+#line 8230
+    [DIFFICULTY_NORMAL][TRAINER_JENNY_1] =
     {
 #line 9124
         .trainerName = _("JENNY"),
@@ -22498,7 +21699,7 @@ F_TRAINER_FEMALE |
 #line 9126
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9127
+#line 8234
 F_TRAINER_FEMALE | 
 #line 9128
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22522,8 +21723,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9136
-    [TRAINER_GRACE] =
+#line 8243
+    [DIFFICULTY_NORMAL][TRAINER_GRACE] =
     {
 #line 9137
         .trainerName = _("GRACE"),
@@ -22532,7 +21733,7 @@ F_TRAINER_FEMALE |
 #line 9139
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9140
+#line 8247
 F_TRAINER_FEMALE | 
 #line 9141
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22556,8 +21757,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9149
-    [TRAINER_TANYA] =
+#line 8256
+    [DIFFICULTY_NORMAL][TRAINER_TANYA] =
     {
 #line 9150
         .trainerName = _("TANYA"),
@@ -22566,7 +21767,7 @@ F_TRAINER_FEMALE |
 #line 9152
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9153
+#line 8260
 F_TRAINER_FEMALE | 
 #line 9154
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22590,8 +21791,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9162
-    [TRAINER_SHARON] =
+#line 8269
+    [DIFFICULTY_NORMAL][TRAINER_SHARON] =
     {
 #line 9163
         .trainerName = _("SHARON"),
@@ -22600,7 +21801,7 @@ F_TRAINER_FEMALE |
 #line 9165
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9166
+#line 8273
 F_TRAINER_FEMALE | 
 #line 9167
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22624,8 +21825,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9175
-    [TRAINER_NIKKI] =
+#line 8282
+    [DIFFICULTY_NORMAL][TRAINER_NIKKI] =
     {
 #line 9176
         .trainerName = _("NIKKI"),
@@ -22634,7 +21835,7 @@ F_TRAINER_FEMALE |
 #line 9178
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9179
+#line 8286
 F_TRAINER_FEMALE | 
 #line 9180
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22669,8 +21870,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9192
-    [TRAINER_BRENDA] =
+#line 8299
+    [DIFFICULTY_NORMAL][TRAINER_BRENDA] =
     {
 #line 9193
         .trainerName = _("BRENDA"),
@@ -22679,7 +21880,7 @@ F_TRAINER_FEMALE |
 #line 9195
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9196
+#line 8303
 F_TRAINER_FEMALE | 
 #line 9197
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22703,8 +21904,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9205
-    [TRAINER_KATIE] =
+#line 8312
+    [DIFFICULTY_NORMAL][TRAINER_KATIE] =
     {
 #line 9206
         .trainerName = _("KATIE"),
@@ -22713,7 +21914,7 @@ F_TRAINER_FEMALE |
 #line 9208
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9209
+#line 8316
 F_TRAINER_FEMALE | 
 #line 9210
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22748,8 +21949,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9222
-    [TRAINER_SUSIE] =
+#line 8329
+    [DIFFICULTY_NORMAL][TRAINER_SUSIE] =
     {
 #line 9223
         .trainerName = _("SUSIE"),
@@ -22758,7 +21959,7 @@ F_TRAINER_FEMALE |
 #line 9225
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9226
+#line 8333
 F_TRAINER_FEMALE | 
 #line 9227
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22782,8 +21983,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9235
-    [TRAINER_KARA] =
+#line 8342
+    [DIFFICULTY_NORMAL][TRAINER_KARA] =
     {
 #line 9236
         .trainerName = _("KARA"),
@@ -22792,7 +21993,7 @@ F_TRAINER_FEMALE |
 #line 9238
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9239
+#line 8346
 F_TRAINER_FEMALE | 
 #line 9240
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22816,8 +22017,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9248
-    [TRAINER_DANA] =
+#line 8355
+    [DIFFICULTY_NORMAL][TRAINER_DANA] =
     {
 #line 9249
         .trainerName = _("DANA"),
@@ -22826,7 +22027,7 @@ F_TRAINER_FEMALE |
 #line 9251
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9252
+#line 8359
 F_TRAINER_FEMALE | 
 #line 9253
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22850,8 +22051,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9261
-    [TRAINER_SIENNA] =
+#line 8368
+    [DIFFICULTY_NORMAL][TRAINER_SIENNA] =
     {
 #line 9262
         .trainerName = _("SIENNA"),
@@ -22860,7 +22061,7 @@ F_TRAINER_FEMALE |
 #line 9264
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9265
+#line 8372
 F_TRAINER_FEMALE | 
 #line 9266
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22895,8 +22096,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9278
-    [TRAINER_DEBRA] =
+#line 8385
+    [DIFFICULTY_NORMAL][TRAINER_DEBRA] =
     {
 #line 9279
         .trainerName = _("DEBRA"),
@@ -22905,7 +22106,7 @@ F_TRAINER_FEMALE |
 #line 9281
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9282
+#line 8389
 F_TRAINER_FEMALE | 
 #line 9283
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22929,8 +22130,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9291
-    [TRAINER_LINDA] =
+#line 8398
+    [DIFFICULTY_NORMAL][TRAINER_LINDA] =
     {
 #line 9292
         .trainerName = _("LINDA"),
@@ -22939,7 +22140,7 @@ F_TRAINER_FEMALE |
 #line 9294
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9295
+#line 8402
 F_TRAINER_FEMALE | 
 #line 9296
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -22974,8 +22175,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9308
-    [TRAINER_KAYLEE] =
+#line 8415
+    [DIFFICULTY_NORMAL][TRAINER_KAYLEE] =
     {
 #line 9309
         .trainerName = _("KAYLEE"),
@@ -22984,7 +22185,7 @@ F_TRAINER_FEMALE |
 #line 9311
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9312
+#line 8419
 F_TRAINER_FEMALE | 
 #line 9313
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -23019,8 +22220,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9325
-    [TRAINER_LAUREL] =
+#line 8432
+    [DIFFICULTY_NORMAL][TRAINER_LAUREL] =
     {
 #line 9326
         .trainerName = _("LAUREL"),
@@ -23029,7 +22230,7 @@ F_TRAINER_FEMALE |
 #line 9328
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9329
+#line 8436
 F_TRAINER_FEMALE | 
 #line 9330
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -23064,8 +22265,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9342
-    [TRAINER_CARLEE] =
+#line 8449
+    [DIFFICULTY_NORMAL][TRAINER_CARLEE] =
     {
 #line 9343
         .trainerName = _("CARLEE"),
@@ -23074,7 +22275,7 @@ F_TRAINER_FEMALE |
 #line 9345
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9346
+#line 8453
 F_TRAINER_FEMALE | 
 #line 9347
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -23098,8 +22299,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9355
-    [TRAINER_JENNY_2] =
+#line 8462
+    [DIFFICULTY_NORMAL][TRAINER_JENNY_2] =
     {
 #line 9356
         .trainerName = _("JENNY"),
@@ -23108,7 +22309,7 @@ F_TRAINER_FEMALE |
 #line 9358
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9359
+#line 8466
 F_TRAINER_FEMALE | 
 #line 9360
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -23132,8 +22333,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9368
-    [TRAINER_JENNY_3] =
+#line 8475
+    [DIFFICULTY_NORMAL][TRAINER_JENNY_3] =
     {
 #line 9369
         .trainerName = _("JENNY"),
@@ -23142,7 +22343,7 @@ F_TRAINER_FEMALE |
 #line 9371
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9372
+#line 8479
 F_TRAINER_FEMALE | 
 #line 9373
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -23166,8 +22367,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9381
-    [TRAINER_JENNY_4] =
+#line 8488
+    [DIFFICULTY_NORMAL][TRAINER_JENNY_4] =
     {
 #line 9382
         .trainerName = _("JENNY"),
@@ -23176,7 +22377,7 @@ F_TRAINER_FEMALE |
 #line 9384
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9385
+#line 8492
 F_TRAINER_FEMALE | 
 #line 9386
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -23211,8 +22412,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9398
-    [TRAINER_JENNY_5] =
+#line 8505
+    [DIFFICULTY_NORMAL][TRAINER_JENNY_5] =
     {
 #line 9399
         .trainerName = _("JENNY"),
@@ -23221,7 +22422,7 @@ F_TRAINER_FEMALE |
 #line 9401
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 9402
+#line 8509
 F_TRAINER_FEMALE | 
 #line 9403
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -23267,8 +22468,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9419
-    [TRAINER_HEIDI] =
+#line 8526
+    [DIFFICULTY_NORMAL][TRAINER_HEIDI] =
     {
 #line 9420
         .trainerName = _("HEIDI"),
@@ -23277,7 +22478,7 @@ F_TRAINER_FEMALE |
 #line 9422
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9423
+#line 8530
 F_TRAINER_FEMALE | 
 #line 9424
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23326,8 +22527,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9444
-    [TRAINER_BECKY] =
+#line 8551
+    [DIFFICULTY_NORMAL][TRAINER_BECKY] =
     {
 #line 9445
         .trainerName = _("BECKY"),
@@ -23336,7 +22537,7 @@ F_TRAINER_FEMALE |
 #line 9447
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9448
+#line 8555
 F_TRAINER_FEMALE | 
 #line 9449
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23385,8 +22586,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9469
-    [TRAINER_CAROL] =
+#line 8576
+    [DIFFICULTY_NORMAL][TRAINER_CAROL] =
     {
 #line 9470
         .trainerName = _("CAROL"),
@@ -23395,7 +22596,7 @@ F_TRAINER_FEMALE |
 #line 9472
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9473
+#line 8580
 F_TRAINER_FEMALE | 
 #line 9474
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23430,8 +22631,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9486
-    [TRAINER_NANCY] =
+#line 8593
+    [DIFFICULTY_NORMAL][TRAINER_NANCY] =
     {
 #line 9487
         .trainerName = _("NANCY"),
@@ -23440,7 +22641,7 @@ F_TRAINER_FEMALE |
 #line 9489
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9490
+#line 8597
 F_TRAINER_FEMALE | 
 #line 9491
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23475,8 +22676,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9503
-    [TRAINER_MARTHA] =
+#line 8610
+    [DIFFICULTY_NORMAL][TRAINER_MARTHA] =
     {
 #line 9504
         .trainerName = _("MARTHA"),
@@ -23485,7 +22686,7 @@ F_TRAINER_FEMALE |
 #line 9506
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9507
+#line 8614
 F_TRAINER_FEMALE | 
 #line 9508
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23520,8 +22721,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9520
-    [TRAINER_DIANA_1] =
+#line 8627
+    [DIFFICULTY_NORMAL][TRAINER_DIANA_1] =
     {
 #line 9521
         .trainerName = _("DIANA"),
@@ -23530,7 +22731,7 @@ F_TRAINER_FEMALE |
 #line 9523
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9524
+#line 8631
 F_TRAINER_FEMALE | 
 #line 9525
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23576,8 +22777,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9541
-    [TRAINER_CEDRIC] =
+#line 8648
+    [DIFFICULTY_NORMAL][TRAINER_CEDRIC] =
     {
 #line 9542
         .trainerName = _("CEDRIC"),
@@ -23586,7 +22787,7 @@ F_TRAINER_FEMALE |
 #line 9544
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 9546
+#line 8653
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 9547
         .doubleBattle = TRUE,
@@ -23615,8 +22816,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9558
-    [TRAINER_IRENE] =
+#line 8665
+    [DIFFICULTY_NORMAL][TRAINER_IRENE] =
     {
 #line 9559
         .trainerName = _("IRENE"),
@@ -23625,7 +22826,7 @@ F_TRAINER_FEMALE |
 #line 9561
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9562
+#line 8669
 F_TRAINER_FEMALE | 
 #line 9563
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23660,8 +22861,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9575
-    [TRAINER_DIANA_2] =
+#line 8682
+    [DIFFICULTY_NORMAL][TRAINER_DIANA_2] =
     {
 #line 9576
         .trainerName = _("DIANA"),
@@ -23670,7 +22871,7 @@ F_TRAINER_FEMALE |
 #line 9578
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9579
+#line 8686
 F_TRAINER_FEMALE | 
 #line 9580
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23716,8 +22917,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9596
-    [TRAINER_DIANA_3] =
+#line 8703
+    [DIFFICULTY_NORMAL][TRAINER_DIANA_3] =
     {
 #line 9597
         .trainerName = _("DIANA"),
@@ -23726,7 +22927,7 @@ F_TRAINER_FEMALE |
 #line 9599
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9600
+#line 8707
 F_TRAINER_FEMALE | 
 #line 9601
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23772,8 +22973,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9617
-    [TRAINER_DIANA_4] =
+#line 8724
+    [DIFFICULTY_NORMAL][TRAINER_DIANA_4] =
     {
 #line 9618
         .trainerName = _("DIANA"),
@@ -23782,7 +22983,7 @@ F_TRAINER_FEMALE |
 #line 9620
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9621
+#line 8728
 F_TRAINER_FEMALE | 
 #line 9622
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23828,8 +23029,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9638
-    [TRAINER_DIANA_5] =
+#line 8745
+    [DIFFICULTY_NORMAL][TRAINER_DIANA_5] =
     {
 #line 9639
         .trainerName = _("DIANA"),
@@ -23838,7 +23039,7 @@ F_TRAINER_FEMALE |
 #line 9641
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 9642
+#line 8749
 F_TRAINER_FEMALE | 
 #line 9643
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -23884,8 +23085,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9659
-    [TRAINER_AMY_AND_LIV_1] =
+#line 8766
+    [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_1] =
     {
 #line 9660
         .trainerName = _("AMY & LIV"),
@@ -23894,7 +23095,7 @@ F_TRAINER_FEMALE |
 #line 9662
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 9664
+#line 8771
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9665
         .doubleBattle = TRUE,
@@ -23927,8 +23128,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9676
-    [TRAINER_AMY_AND_LIV_2] =
+#line 8783
+    [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_2] =
     {
 #line 9677
         .trainerName = _("AMY & LIV"),
@@ -23937,7 +23138,7 @@ F_TRAINER_FEMALE |
 #line 9679
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 9681
+#line 8788
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9682
         .doubleBattle = TRUE,
@@ -23970,8 +23171,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9693
-    [TRAINER_GINA_AND_MIA_1] =
+#line 8800
+    [DIFFICULTY_NORMAL][TRAINER_GINA_AND_MIA_1] =
     {
 #line 9694
         .trainerName = _("GINA & MIA"),
@@ -23980,7 +23181,7 @@ F_TRAINER_FEMALE |
 #line 9696
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 9698
+#line 8805
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9699
         .doubleBattle = TRUE,
@@ -24013,8 +23214,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9710
-    [TRAINER_MIU_AND_YUKI] =
+#line 8817
+    [DIFFICULTY_NORMAL][TRAINER_MIU_AND_YUKI] =
     {
 #line 9711
         .trainerName = _("MIU & YUKI"),
@@ -24023,7 +23224,7 @@ F_TRAINER_FEMALE |
 #line 9713
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 9715
+#line 8822
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9716
         .doubleBattle = TRUE,
@@ -24056,8 +23257,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9727
-    [TRAINER_AMY_AND_LIV_3] =
+#line 8834
+    [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_3] =
     {
 #line 9728
         .trainerName = _("AMY & LIV"),
@@ -24066,7 +23267,7 @@ F_TRAINER_FEMALE |
 #line 9730
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 9732
+#line 8839
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9733
         .doubleBattle = TRUE,
@@ -24099,8 +23300,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9744
-    [TRAINER_GINA_AND_MIA_2] =
+#line 8851
+    [DIFFICULTY_NORMAL][TRAINER_GINA_AND_MIA_2] =
     {
 #line 9745
         .trainerName = _("GINA & MIA"),
@@ -24109,7 +23310,7 @@ F_TRAINER_FEMALE |
 #line 9747
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 9749
+#line 8856
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9750
         .doubleBattle = TRUE,
@@ -24152,8 +23353,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9765
-    [TRAINER_AMY_AND_LIV_4] =
+#line 8872
+    [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_4] =
     {
 #line 9766
         .trainerName = _("AMY & LIV"),
@@ -24162,7 +23363,7 @@ F_TRAINER_FEMALE |
 #line 9768
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 9770
+#line 8877
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9771
         .doubleBattle = TRUE,
@@ -24195,8 +23396,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9782
-    [TRAINER_AMY_AND_LIV_5] =
+#line 8889
+    [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_5] =
     {
 #line 9783
         .trainerName = _("AMY & LIV"),
@@ -24205,7 +23406,7 @@ F_TRAINER_FEMALE |
 #line 9785
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 9787
+#line 8894
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9788
         .doubleBattle = TRUE,
@@ -24252,8 +23453,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9807
-    [TRAINER_AMY_AND_LIV_6] =
+#line 8914
+    [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_6] =
     {
 #line 9808
         .trainerName = _("AMY & LIV"),
@@ -24262,7 +23463,7 @@ F_TRAINER_FEMALE |
 #line 9810
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 9812
+#line 8919
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 9813
         .doubleBattle = TRUE,
@@ -24309,8 +23510,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9832
-    [TRAINER_HUEY] =
+#line 8939
+    [DIFFICULTY_NORMAL][TRAINER_HUEY] =
     {
 #line 9833
         .trainerName = _("HUEY"),
@@ -24319,7 +23520,7 @@ F_TRAINER_FEMALE |
 #line 9835
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 9837
+#line 8944
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9838
         .doubleBattle = TRUE,
@@ -24352,8 +23553,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9849
-    [TRAINER_EDMOND] =
+#line 8956
+    [DIFFICULTY_NORMAL][TRAINER_EDMOND] =
     {
 #line 9850
         .trainerName = _("EDMOND"),
@@ -24362,7 +23563,7 @@ F_TRAINER_FEMALE |
 #line 9852
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 9854
+#line 8961
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9855
         .doubleBattle = TRUE,
@@ -24384,8 +23585,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9862
-    [TRAINER_ERNEST_1] =
+#line 8969
+    [DIFFICULTY_NORMAL][TRAINER_ERNEST_1] =
     {
 #line 9863
         .trainerName = _("ERNEST"),
@@ -24394,7 +23595,7 @@ F_TRAINER_FEMALE |
 #line 9865
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 9867
+#line 8974
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9868
         .doubleBattle = TRUE,
@@ -24427,8 +23628,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9879
-    [TRAINER_DWAYNE] =
+#line 8986
+    [DIFFICULTY_NORMAL][TRAINER_DWAYNE] =
     {
 #line 9880
         .trainerName = _("DWAYNE"),
@@ -24437,7 +23638,7 @@ F_TRAINER_FEMALE |
 #line 9882
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 9884
+#line 8991
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9885
         .doubleBattle = TRUE,
@@ -24481,8 +23682,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9900
-    [TRAINER_PHILLIP] =
+#line 9007
+    [DIFFICULTY_NORMAL][TRAINER_PHILLIP] =
     {
 #line 9901
         .trainerName = _("PHILLIP"),
@@ -24491,7 +23692,7 @@ F_TRAINER_FEMALE |
 #line 9903
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 9905
+#line 9012
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9906
         .doubleBattle = TRUE,
@@ -24524,8 +23725,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9917
-    [TRAINER_LEONARD] =
+#line 9024
+    [DIFFICULTY_NORMAL][TRAINER_LEONARD] =
     {
 #line 9918
         .trainerName = _("LEONARD"),
@@ -24534,7 +23735,7 @@ F_TRAINER_FEMALE |
 #line 9920
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 9922
+#line 9029
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9923
         .doubleBattle = TRUE,
@@ -24578,8 +23779,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9938
-    [TRAINER_DUNCAN] =
+#line 9045
+    [DIFFICULTY_NORMAL][TRAINER_DUNCAN] =
     {
 #line 9939
         .trainerName = _("DUNCAN"),
@@ -24588,7 +23789,7 @@ F_TRAINER_FEMALE |
 #line 9941
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 9943
+#line 9050
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9944
         .doubleBattle = TRUE,
@@ -24621,8 +23822,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9955
-    [TRAINER_ERNEST_2] =
+#line 9062
+    [DIFFICULTY_NORMAL][TRAINER_ERNEST_2] =
     {
 #line 9956
         .trainerName = _("ERNEST"),
@@ -24631,7 +23832,7 @@ F_TRAINER_FEMALE |
 #line 9958
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 9960
+#line 9067
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9961
         .doubleBattle = TRUE,
@@ -24675,8 +23876,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9976
-    [TRAINER_ERNEST_3] =
+#line 9083
+    [DIFFICULTY_NORMAL][TRAINER_ERNEST_3] =
     {
 #line 9977
         .trainerName = _("ERNEST"),
@@ -24685,7 +23886,7 @@ F_TRAINER_FEMALE |
 #line 9979
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 9981
+#line 9088
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 9982
         .doubleBattle = TRUE,
@@ -24729,8 +23930,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 9997
-    [TRAINER_ERNEST_4] =
+#line 9104
+    [DIFFICULTY_NORMAL][TRAINER_ERNEST_4] =
     {
 #line 9998
         .trainerName = _("ERNEST"),
@@ -24739,7 +23940,7 @@ F_TRAINER_FEMALE |
 #line 10000
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 10002
+#line 9109
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10003
         .doubleBattle = TRUE,
@@ -24783,8 +23984,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10018
-    [TRAINER_ERNEST_5] =
+#line 9125
+    [DIFFICULTY_NORMAL][TRAINER_ERNEST_5] =
     {
 #line 10019
         .trainerName = _("ERNEST"),
@@ -24793,7 +23994,7 @@ F_TRAINER_FEMALE |
 #line 10021
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 10023
+#line 9130
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10024
         .doubleBattle = TRUE,
@@ -24837,8 +24038,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10039
-    [TRAINER_ELI] =
+#line 9146
+    [DIFFICULTY_NORMAL][TRAINER_ELI] =
     {
 #line 10040
         .trainerName = _("ELI"),
@@ -24847,7 +24048,7 @@ F_TRAINER_FEMALE |
 #line 10042
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 10044
+#line 9151
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 10045
         .doubleBattle = TRUE,
@@ -24869,8 +24070,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10052
-    [TRAINER_ANNIKA] =
+#line 9159
+    [DIFFICULTY_NORMAL][TRAINER_ANNIKA] =
     {
 #line 10053
         .trainerName = _("ANNIKA"),
@@ -24879,7 +24080,7 @@ F_TRAINER_FEMALE |
 #line 10055
         .trainerPic = TRAINER_PIC_POKEFAN_F,
         .encounterMusic_gender =
-#line 10056
+#line 9163
 F_TRAINER_FEMALE | 
 #line 10057
             TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -24932,8 +24133,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10077
-    [TRAINER_JAZMYN] =
+#line 9184
+    [DIFFICULTY_NORMAL][TRAINER_JAZMYN] =
     {
 #line 10078
         .trainerName = _("JAZMYN"),
@@ -24942,7 +24143,7 @@ F_TRAINER_FEMALE |
 #line 10080
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 10081
+#line 9188
 F_TRAINER_FEMALE | 
 #line 10082
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -24966,8 +24167,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10090
-    [TRAINER_JONAS] =
+#line 9198
+    [DIFFICULTY_NORMAL][TRAINER_JONAS] =
     {
 #line 10091
         .trainerName = _("JONAS"),
@@ -24976,7 +24177,7 @@ F_TRAINER_FEMALE |
 #line 10093
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 10095
+#line 9203
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10096
         .doubleBattle = TRUE,
@@ -25005,8 +24206,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10107
-    [TRAINER_KAYLEY] =
+#line 9215
+    [DIFFICULTY_NORMAL][TRAINER_KAYLEY] =
     {
 #line 10108
         .trainerName = _("KAYLEY"),
@@ -25015,7 +24216,7 @@ F_TRAINER_FEMALE |
 #line 10110
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .encounterMusic_gender =
-#line 10111
+#line 9219
 F_TRAINER_FEMALE | 
 #line 10112
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -25046,8 +24247,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10124
-    [TRAINER_AURON] =
+#line 9232
+    [DIFFICULTY_NORMAL][TRAINER_AURON] =
     {
 #line 10125
         .trainerName = _("AURON"),
@@ -25056,7 +24257,7 @@ F_TRAINER_FEMALE |
 #line 10127
         .trainerPic = TRAINER_PIC_EXPERT_M,
         .encounterMusic_gender =
-#line 10129
+#line 9237
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 10130
         .doubleBattle = TRUE,
@@ -25089,8 +24290,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10141
-    [TRAINER_KELVIN] =
+#line 9249
+    [DIFFICULTY_NORMAL][TRAINER_KELVIN] =
     {
 #line 10142
         .trainerName = _("KELVIN"),
@@ -25099,7 +24300,7 @@ F_TRAINER_FEMALE |
 #line 10144
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 10146
+#line 9254
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10147
         .doubleBattle = TRUE,
@@ -25132,8 +24333,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10158
-    [TRAINER_MARLEY] =
+#line 9266
+    [DIFFICULTY_NORMAL][TRAINER_MARLEY] =
     {
 #line 10159
         .trainerName = _("MARLEY"),
@@ -25142,7 +24343,7 @@ F_TRAINER_FEMALE |
 #line 10161
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 10162
+#line 9270
 F_TRAINER_FEMALE | 
 #line 10163
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -25173,8 +24374,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10175
-    [TRAINER_REYNA] =
+#line 9284
+    [DIFFICULTY_NORMAL][TRAINER_REYNA] =
     {
 #line 10176
         .trainerName = _("REYNA"),
@@ -25183,7 +24384,7 @@ F_TRAINER_FEMALE |
 #line 10178
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 10179
+#line 9288
 F_TRAINER_FEMALE | 
 #line 10180
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -25218,8 +24419,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10192
-    [TRAINER_HUDSON] =
+#line 9301
+    [DIFFICULTY_NORMAL][TRAINER_HUDSON] =
     {
 #line 10193
         .trainerName = _("HUDSON"),
@@ -25228,7 +24429,7 @@ F_TRAINER_FEMALE |
 #line 10195
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 10197
+#line 9306
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10198
         .doubleBattle = TRUE,
@@ -25250,8 +24451,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10205
-    [TRAINER_CONOR] =
+#line 9314
+    [DIFFICULTY_NORMAL][TRAINER_CONOR] =
     {
 #line 10206
         .trainerName = _("CONOR"),
@@ -25260,7 +24461,7 @@ F_TRAINER_FEMALE |
 #line 10208
         .trainerPic = TRAINER_PIC_EXPERT_M,
         .encounterMusic_gender =
-#line 10210
+#line 9319
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 10211
         .doubleBattle = TRUE,
@@ -25293,8 +24494,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10222
-    [TRAINER_EDWIN_1] =
+#line 9331
+    [DIFFICULTY_NORMAL][TRAINER_EDWIN_1] =
     {
 #line 10223
         .trainerName = _("EDWIN"),
@@ -25303,7 +24504,7 @@ F_TRAINER_FEMALE |
 #line 10225
         .trainerPic = TRAINER_PIC_COLLECTOR,
         .encounterMusic_gender =
-#line 10227
+#line 9336
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10228
         .doubleBattle = TRUE,
@@ -25336,8 +24537,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10239
-    [TRAINER_HECTOR] =
+#line 9348
+    [DIFFICULTY_NORMAL][TRAINER_HECTOR] =
     {
 #line 10240
         .trainerName = _("HECTOR"),
@@ -25346,7 +24547,7 @@ F_TRAINER_FEMALE |
 #line 10242
         .trainerPic = TRAINER_PIC_COLLECTOR,
         .encounterMusic_gender =
-#line 10244
+#line 9353
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10245
         .doubleBattle = TRUE,
@@ -25379,17 +24580,17 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10256
-    [TRAINER_TABITHA_MOSSDEEP] =
+#line 9365
+    [DIFFICULTY_NORMAL][TRAINER_TABITHA_MOSSDEEP] =
     {
 #line 10257
         .trainerName = _("TABITHA"),
 #line 10258
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-#line 10259
-        .trainerPic = TRAINER_PIC_TABITHA_ORAS,
+#line 9368
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
         .encounterMusic_gender =
-#line 10261
+#line 9370
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 10262
         .doubleBattle = TRUE,
@@ -25433,8 +24634,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10277
-    [TRAINER_EDWIN_2] =
+#line 9386
+    [DIFFICULTY_NORMAL][TRAINER_EDWIN_2] =
     {
 #line 10278
         .trainerName = _("EDWIN"),
@@ -25443,7 +24644,7 @@ F_TRAINER_FEMALE |
 #line 10280
         .trainerPic = TRAINER_PIC_COLLECTOR,
         .encounterMusic_gender =
-#line 10282
+#line 9391
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10283
         .doubleBattle = TRUE,
@@ -25476,8 +24677,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10294
-    [TRAINER_EDWIN_3] =
+#line 9403
+    [DIFFICULTY_NORMAL][TRAINER_EDWIN_3] =
     {
 #line 10295
         .trainerName = _("EDWIN"),
@@ -25486,7 +24687,7 @@ F_TRAINER_FEMALE |
 #line 10297
         .trainerPic = TRAINER_PIC_COLLECTOR,
         .encounterMusic_gender =
-#line 10299
+#line 9408
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10300
         .doubleBattle = TRUE,
@@ -25519,8 +24720,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10311
-    [TRAINER_EDWIN_4] =
+#line 9420
+    [DIFFICULTY_NORMAL][TRAINER_EDWIN_4] =
     {
 #line 10312
         .trainerName = _("EDWIN"),
@@ -25529,7 +24730,7 @@ F_TRAINER_FEMALE |
 #line 10314
         .trainerPic = TRAINER_PIC_COLLECTOR,
         .encounterMusic_gender =
-#line 10316
+#line 9425
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10317
         .doubleBattle = TRUE,
@@ -25562,8 +24763,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10328
-    [TRAINER_EDWIN_5] =
+#line 9437
+    [DIFFICULTY_NORMAL][TRAINER_EDWIN_5] =
     {
 #line 10329
         .trainerName = _("EDWIN"),
@@ -25572,7 +24773,7 @@ F_TRAINER_FEMALE |
 #line 10331
         .trainerPic = TRAINER_PIC_COLLECTOR,
         .encounterMusic_gender =
-#line 10333
+#line 9442
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 10334
         .doubleBattle = TRUE,
@@ -25605,8 +24806,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10345
-    [TRAINER_WALLY_VR_1] =
+#line 9454
+    [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_1] =
     {
 #line 10346
         .trainerName = _("WALLY"),
@@ -25615,7 +24816,7 @@ F_TRAINER_FEMALE |
 #line 10348
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender =
-#line 10350
+#line 9459
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10351
         .doubleBattle = TRUE,
@@ -25716,8 +24917,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10394
-    [TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
+#line 9504
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
     {
 #line 10395
         .trainerName = _("BRENDAN"),
@@ -25726,7 +24927,7 @@ F_TRAINER_FEMALE |
 #line 10397
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 10399
+#line 9509
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10400
         .doubleBattle = TRUE,
@@ -25747,37 +24948,11 @@ F_TRAINER_FEMALE |
             .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10407
-                MOVE_LEAFAGE,
-                MOVE_POUND,
-                MOVE_LEER,
-                MOVE_ABSORB,
-            },
-            },
-            {
-#line 10412
-            .species = SPECIES_BELDUM,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10415
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10414
-            .ability = ABILITY_CLEAR_BODY,
-#line 10413
-            .lvl = 6,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10415
-                MOVE_TACKLE,
-                MOVE_TAKE_DOWN,
-                MOVE_IRON_DEFENSE,
-            },
             },
         },
     },
-#line 10420
-    [TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
+#line 9517
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
     {
 #line 10421
         .trainerName = _("BRENDAN"),
@@ -25786,7 +24961,7 @@ F_TRAINER_FEMALE |
 #line 10423
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 10425
+#line 9522
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10426
         .doubleBattle = TRUE,
@@ -25857,97 +25032,11 @@ F_TRAINER_FEMALE |
             .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10454
-            .teraType = TYPE_DRAGON,
-            .moves = {
-#line 10455
-                MOVE_BITE,
-                MOVE_DRAGON_BREATH,
-                MOVE_DUAL_WINGBEAT,
-            },
-            },
-            {
-#line 10459
-            .species = SPECIES_SALAZZLE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10464
-            .ev = TRAINER_PARTY_EVS(0, 0, 0, 128, 128, 0),
-#line 10466
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10461
-            .ability = ABILITY_CORROSION,
-#line 10460
-            .lvl = 28,
-#line 10465
-            .nature = NATURE_TIMID,
-#line 10462
-            .isShiny = TRUE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10463
-            .teraType = TYPE_POISON,
-            .moves = {
-#line 10466
-                MOVE_TOXIC,
-                MOVE_FAKE_OUT,
-                MOVE_SLUDGE_WAVE,
-                MOVE_HEAT_WAVE,
-            },
-            },
-            {
-#line 10471
-            .species = SPECIES_BASCULIN_WHITE_STRIPED,
-#line 10471
-            .gender = TRAINER_MON_FEMALE,
-#line 10475
-            .ev = TRAINER_PARTY_EVS(0, 128, 0, 128, 0, 0),
-#line 10477
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10473
-            .ability = ABILITY_ADAPTABILITY,
-#line 10472
-            .lvl = 28,
-#line 10476
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10474
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 10477
-                MOVE_FLIP_TURN,
-                MOVE_AQUA_JET,
-                MOVE_FLAIL,
-                MOVE_PSYCHIC_FANGS,
-            },
-            },
-            {
-#line 10482
-            .species = SPECIES_GROVYLE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10486
-            .ev = TRAINER_PARTY_EVS(0, 128, 0, 128, 0, 0),
-#line 10488
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10484
-            .ability = ABILITY_OVERGROW,
-#line 10483
-            .lvl = 28,
-#line 10487
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10485
-            .teraType = TYPE_GRASS,
-            .moves = {
-#line 10488
-                MOVE_DRAGON_TAIL,
-                MOVE_TRAILBLAZE,
-                MOVE_BREAKING_SWIPE,
-                MOVE_QUICK_ATTACK,
-            },
             },
         },
     },
-#line 10493
-    [TRAINER_BRENDAN_ROUTE_119_MUDKIP] =
+#line 9538
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_119_MUDKIP] =
     {
 #line 10494
         .trainerName = _("BRENDAN"),
@@ -25956,7 +25045,7 @@ F_TRAINER_FEMALE |
 #line 10496
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 10498
+#line 9543
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10499
         .doubleBattle = TRUE,
@@ -26000,8 +25089,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10514
-    [TRAINER_BRENDAN_ROUTE_103_TREECKO] =
+#line 9559
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_103_TREECKO] =
     {
 #line 10515
         .trainerName = _("BRENDAN"),
@@ -26010,7 +25099,7 @@ F_TRAINER_FEMALE |
 #line 10517
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 10519
+#line 9564
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10520
         .doubleBattle = TRUE,
@@ -26031,38 +25120,11 @@ F_TRAINER_FEMALE |
             .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10527
-                MOVE_SCRATCH,
-                MOVE_EMBER,
-                MOVE_GROWL,
-                MOVE_PECK,
-            },
-            },
-            {
-#line 10532
-            .species = SPECIES_FLABEBE_WHITE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10535
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10534
-            .ability = ABILITY_FLOWER_VEIL,
-#line 10533
-            .lvl = 6,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10535
-                MOVE_DISARMING_VOICE,
-                MOVE_VINE_WHIP,
-                MOVE_CONFIDE,
-                MOVE_AROMATHERAPY,
-            },
             },
         },
     },
-#line 10540
-    [TRAINER_BRENDAN_ROUTE_110_TREECKO] =
+#line 9572
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_110_TREECKO] =
     {
 #line 10541
         .trainerName = _("BRENDAN"),
@@ -26071,7 +25133,7 @@ F_TRAINER_FEMALE |
 #line 10543
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 10545
+#line 9577
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10546
         .doubleBattle = TRUE,
@@ -26144,95 +25206,11 @@ F_TRAINER_FEMALE |
             .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10575
-            .teraType = TYPE_DRAGON,
-            .moves = {
-#line 10576
-                MOVE_BITE,
-                MOVE_DRAGON_BREATH,
-                MOVE_DUAL_WINGBEAT,
-            },
-            },
-            {
-#line 10580
-            .species = SPECIES_COMBUSKEN,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10584
-            .ev = TRAINER_PARTY_EVS(0, 128, 0, 128, 0, 0),
-#line 10586
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10582
-            .ability = ABILITY_BLAZE,
-#line 10581
-            .lvl = 28,
-#line 10585
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10583
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 10586
-                MOVE_DOUBLE_KICK,
-                MOVE_FLAME_CHARGE,
-                MOVE_QUICK_ATTACK,
-                MOVE_THUNDER_PUNCH,
-            },
-            },
-            {
-#line 10591
-            .species = SPECIES_BASCULIN_WHITE_STRIPED,
-#line 10591
-            .gender = TRAINER_MON_FEMALE,
-#line 10595
-            .ev = TRAINER_PARTY_EVS(0, 128, 0, 128, 0, 0),
-#line 10597
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10593
-            .ability = ABILITY_ADAPTABILITY,
-#line 10592
-            .lvl = 28,
-#line 10596
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10594
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 10597
-                MOVE_FLIP_TURN,
-                MOVE_AQUA_JET,
-                MOVE_FLAIL,
-                MOVE_PSYCHIC_FANGS,
-            },
-            },
-            {
-#line 10602
-            .species = SPECIES_GOURGEIST_SUPER,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10606
-            .ev = TRAINER_PARTY_EVS(128, 128, 0, 0, 0, 0),
-#line 10608
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10604
-            .ability = ABILITY_INSOMNIA,
-#line 10603
-            .lvl = 28,
-#line 10607
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10605
-            .teraType = TYPE_GHOST,
-            .moves = {
-#line 10608
-                MOVE_SHADOW_SNEAK,
-                MOVE_WILL_O_WISP,
-                MOVE_SKITTER_SMACK,
-                MOVE_BULLET_SEED,
-            },
             },
         },
     },
-#line 10613
-    [TRAINER_BRENDAN_ROUTE_119_TREECKO] =
+#line 9593
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_119_TREECKO] =
     {
 #line 10614
         .trainerName = _("BRENDAN"),
@@ -26241,7 +25219,7 @@ F_TRAINER_FEMALE |
 #line 10616
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 10618
+#line 9598
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10619
         .doubleBattle = TRUE,
@@ -26285,8 +25263,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10634
-    [TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
+#line 9614
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
     {
 #line 10635
         .trainerName = _("BRENDAN"),
@@ -26295,7 +25273,7 @@ F_TRAINER_FEMALE |
 #line 10637
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 10639
+#line 9619
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10640
         .doubleBattle = TRUE,
@@ -26316,38 +25294,11 @@ F_TRAINER_FEMALE |
             .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10647
-                MOVE_TACKLE,
-                MOVE_WATER_GUN,
-                MOVE_GROWL,
-                MOVE_ROCK_SMASH,
-            },
-            },
-            {
-#line 10652
-            .species = SPECIES_SINISTEA_ANTIQUE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10655
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10654
-            .ability = ABILITY_CURSED_BODY,
-#line 10653
-            .lvl = 6,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10655
-                MOVE_NIGHT_SHADE,
-                MOVE_ASTONISH,
-                MOVE_ABSORB,
-                MOVE_AROMATIC_MIST,
-            },
             },
         },
     },
-#line 10660
-    [TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
+#line 9627
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
     {
 #line 10661
         .trainerName = _("BRENDAN"),
@@ -26356,7 +25307,7 @@ F_TRAINER_FEMALE |
 #line 10663
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 10665
+#line 9632
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10666
         .doubleBattle = TRUE,
@@ -26427,96 +25378,11 @@ F_TRAINER_FEMALE |
             .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10694
-            .teraType = TYPE_DRAGON,
-            .moves = {
-#line 10695
-                MOVE_BITE,
-                MOVE_DRAGON_BREATH,
-                MOVE_DUAL_WINGBEAT,
-            },
-            },
-            {
-#line 10699
-            .species = SPECIES_SALAZZLE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10703
-            .ev = TRAINER_PARTY_EVS(0, 0, 0, 128, 128, 0),
-#line 10705
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10701
-            .ability = ABILITY_CORROSION,
-#line 10700
-            .lvl = 28,
-#line 10704
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10702
-            .teraType = TYPE_POISON,
-            .moves = {
-#line 10705
-                MOVE_TOXIC,
-                MOVE_FAKE_OUT,
-                MOVE_SLUDGE_WAVE,
-                MOVE_HEAT_WAVE,
-            },
-            },
-            {
-#line 10710
-            .species = SPECIES_MARSHTOMP,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10714
-            .ev = TRAINER_PARTY_EVS(128, 0, 0, 0, 128, 0),
-#line 10716
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 10712
-            .ability = ABILITY_TORRENT,
-#line 10711
-            .lvl = 28,
-#line 10715
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10713
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 10717
-                MOVE_MUDDY_WATER,
-                MOVE_ANCIENT_POWER,
-                MOVE_MUD_SHOT,
-                MOVE_WIDE_GUARD,
-            },
-            },
-            {
-#line 10722
-            .species = SPECIES_GOURGEIST_SUPER,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10727
-            .ev = TRAINER_PARTY_EVS(128, 128, 0, 0, 0, 0),
-#line 10729
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10724
-            .ability = ABILITY_INSOMNIA,
-#line 10723
-            .lvl = 28,
-#line 10728
-            .nature = NATURE_ADAMANT,
-#line 10725
-            .isShiny = TRUE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10726
-            .teraType = TYPE_GHOST,
-            .moves = {
-#line 10729
-                MOVE_SHADOW_SNEAK,
-                MOVE_WILL_O_WISP,
-                MOVE_SKITTER_SMACK,
-                MOVE_BULLET_SEED,
-            },
             },
         },
     },
-#line 10734
-    [TRAINER_BRENDAN_ROUTE_119_TORCHIC] =
+#line 9648
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_119_TORCHIC] =
     {
 #line 10735
         .trainerName = _("BRENDAN"),
@@ -26525,7 +25391,7 @@ F_TRAINER_FEMALE |
 #line 10737
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 10739
+#line 9653
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 10740
         .doubleBattle = TRUE,
@@ -26569,8 +25435,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10755
-    [TRAINER_MAY_ROUTE_103_MUDKIP] =
+#line 9669
+    [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_103_MUDKIP] =
     {
 #line 10756
         .trainerName = _("MAY"),
@@ -26579,7 +25445,7 @@ F_TRAINER_FEMALE |
 #line 10758
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 10759
+#line 9673
 F_TRAINER_FEMALE | 
 #line 10760
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -26602,37 +25468,11 @@ F_TRAINER_FEMALE |
             .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10768
-                MOVE_ABSORB,
-                MOVE_POUND,
-                MOVE_LEER,
-                MOVE_LEAFAGE,
-            },
-            },
-            {
-#line 10773
-            .species = SPECIES_BELDUM,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10776
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10775
-            .ability = ABILITY_CLEAR_BODY,
-#line 10774
-            .lvl = 6,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10776
-                MOVE_TACKLE,
-                MOVE_TAKE_DOWN,
-                MOVE_IRON_DEFENSE,
-            },
             },
         },
     },
-#line 10780
-    [TRAINER_MAY_ROUTE_110_MUDKIP] =
+#line 9682
+    [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_110_MUDKIP] =
     {
 #line 10781
         .trainerName = _("MAY"),
@@ -26641,7 +25481,7 @@ F_TRAINER_FEMALE |
 #line 10783
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 10784
+#line 9686
 F_TRAINER_FEMALE | 
 #line 10785
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -26714,97 +25554,11 @@ F_TRAINER_FEMALE |
             .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10814
-            .teraType = TYPE_DRAGON,
-            .moves = {
-#line 10815
-                MOVE_BITE,
-                MOVE_DRAGON_BREATH,
-                MOVE_DUAL_WINGBEAT,
-            },
-            },
-            {
-#line 10819
-            .species = SPECIES_SALAZZLE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10824
-            .ev = TRAINER_PARTY_EVS(0, 0, 0, 128, 128, 0),
-#line 10826
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10821
-            .ability = ABILITY_CORROSION,
-#line 10820
-            .lvl = 28,
-#line 10825
-            .nature = NATURE_TIMID,
-#line 10822
-            .isShiny = TRUE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10823
-            .teraType = TYPE_POISON,
-            .moves = {
-#line 10826
-                MOVE_TOXIC,
-                MOVE_FAKE_OUT,
-                MOVE_SLUDGE_WAVE,
-                MOVE_HEAT_WAVE,
-            },
-            },
-            {
-#line 10831
-            .species = SPECIES_BASCULIN_WHITE_STRIPED,
-#line 10831
-            .gender = TRAINER_MON_FEMALE,
-#line 10835
-            .ev = TRAINER_PARTY_EVS(0, 128, 0, 128, 0, 0),
-#line 10837
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10833
-            .ability = ABILITY_ADAPTABILITY,
-#line 10832
-            .lvl = 28,
-#line 10836
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10834
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 10837
-                MOVE_FLIP_TURN,
-                MOVE_AQUA_JET,
-                MOVE_FLAIL,
-                MOVE_PSYCHIC_FANGS,
-            },
-            },
-            {
-#line 10842
-            .species = SPECIES_GROVYLE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10846
-            .ev = TRAINER_PARTY_EVS(0, 128, 0, 128, 0, 0),
-#line 10848
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10844
-            .ability = ABILITY_OVERGROW,
-#line 10843
-            .lvl = 28,
-#line 10847
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10845
-            .teraType = TYPE_GRASS,
-            .moves = {
-#line 10848
-                MOVE_DRAGON_TAIL,
-                MOVE_TRAILBLAZE,
-                MOVE_BREAKING_SWIPE,
-                MOVE_QUICK_ATTACK,
-            },
             },
         },
     },
-#line 10854
-    [TRAINER_MAY_ROUTE_119_MUDKIP] =
+#line 9703
+    [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_119_MUDKIP] =
     {
 #line 10855
         .trainerName = _("MAY"),
@@ -26813,7 +25567,7 @@ F_TRAINER_FEMALE |
 #line 10857
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 10858
+#line 9707
 F_TRAINER_FEMALE | 
 #line 10859
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -26859,8 +25613,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10875
-    [TRAINER_MAY_ROUTE_103_TREECKO] =
+#line 9724
+    [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_103_TREECKO] =
     {
 #line 10876
         .trainerName = _("MAY"),
@@ -26869,7 +25623,7 @@ F_TRAINER_FEMALE |
 #line 10878
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 10879
+#line 9728
 F_TRAINER_FEMALE | 
 #line 10880
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -26892,38 +25646,11 @@ F_TRAINER_FEMALE |
             .lvl = 6,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10888
-                MOVE_SCRATCH,
-                MOVE_EMBER,
-                MOVE_GROWL,
-                MOVE_PECK,
-            },
-            },
-            {
-#line 10893
-            .species = SPECIES_FLABEBE_WHITE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10896
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10895
-            .ability = ABILITY_FLOWER_VEIL,
-#line 10894
-            .lvl = 6,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 10896
-                MOVE_DISARMING_VOICE,
-                MOVE_VINE_WHIP,
-                MOVE_CONFIDE,
-                MOVE_AROMATHERAPY,
-            },
             },
         },
     },
-#line 10901
-    [TRAINER_MAY_ROUTE_110_TREECKO] =
+#line 9737
+    [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_110_TREECKO] =
     {
 #line 10902
         .trainerName = _("MAY"),
@@ -26932,7 +25659,7 @@ F_TRAINER_FEMALE |
 #line 10904
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 10905
+#line 9741
 F_TRAINER_FEMALE | 
 #line 10906
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -27007,95 +25734,11 @@ F_TRAINER_FEMALE |
             .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10936
-            .teraType = TYPE_DRAGON,
-            .moves = {
-#line 10937
-                MOVE_BITE,
-                MOVE_DRAGON_BREATH,
-                MOVE_DUAL_WINGBEAT,
-            },
-            },
-            {
-#line 10941
-            .species = SPECIES_COMBUSKEN,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10945
-            .ev = TRAINER_PARTY_EVS(0, 128, 0, 128, 0, 0),
-#line 10947
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10943
-            .ability = ABILITY_BLAZE,
-#line 10942
-            .lvl = 28,
-#line 10946
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10944
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 10947
-                MOVE_DOUBLE_KICK,
-                MOVE_FLAME_CHARGE,
-                MOVE_QUICK_ATTACK,
-                MOVE_THUNDER_PUNCH,
-            },
-            },
-            {
-#line 10952
-            .species = SPECIES_BASCULIN_WHITE_STRIPED,
-#line 10952
-            .gender = TRAINER_MON_FEMALE,
-#line 10956
-            .ev = TRAINER_PARTY_EVS(0, 128, 0, 128, 0, 0),
-#line 10958
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10954
-            .ability = ABILITY_ADAPTABILITY,
-#line 10953
-            .lvl = 28,
-#line 10957
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10955
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 10958
-                MOVE_FLIP_TURN,
-                MOVE_AQUA_JET,
-                MOVE_FLAIL,
-                MOVE_PSYCHIC_FANGS,
-            },
-            },
-            {
-#line 10963
-            .species = SPECIES_GOURGEIST_SUPER,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 10967
-            .ev = TRAINER_PARTY_EVS(128, 128, 0, 0, 0, 0),
-#line 10969
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 10965
-            .ability = ABILITY_INSOMNIA,
-#line 10964
-            .lvl = 28,
-#line 10968
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 10966
-            .teraType = TYPE_GHOST,
-            .moves = {
-#line 10969
-                MOVE_SHADOW_SNEAK,
-                MOVE_WILL_O_WISP,
-                MOVE_SKITTER_SMACK,
-                MOVE_BULLET_SEED,
-            },
             },
         },
     },
-#line 10974
-    [TRAINER_MAY_ROUTE_119_TREECKO] =
+#line 9758
+    [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_119_TREECKO] =
     {
 #line 10975
         .trainerName = _("MAY"),
@@ -27104,7 +25747,7 @@ F_TRAINER_FEMALE |
 #line 10977
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 10978
+#line 9762
 F_TRAINER_FEMALE | 
 #line 10979
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -27150,8 +25793,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 10995
-    [TRAINER_MAY_ROUTE_103_TORCHIC] =
+#line 9779
+    [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_103_TORCHIC] =
     {
 #line 10996
         .trainerName = _("MAY"),
@@ -27160,7 +25803,7 @@ F_TRAINER_FEMALE |
 #line 10998
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 10999
+#line 9783
 F_TRAINER_FEMALE | 
 #line 11000
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -27213,8 +25856,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11021
-    [TRAINER_MAY_ROUTE_110_TORCHIC] =
+#line 9792
+    [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_110_TORCHIC] =
     {
 #line 11022
         .trainerName = _("MAY"),
@@ -27223,7 +25866,7 @@ F_TRAINER_FEMALE |
 #line 11024
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 11025
+#line 9796
 F_TRAINER_FEMALE | 
 #line 11026
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -27296,96 +25939,11 @@ F_TRAINER_FEMALE |
             .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 11055
-            .teraType = TYPE_DRAGON,
-            .moves = {
-#line 11056
-                MOVE_BITE,
-                MOVE_DRAGON_BREATH,
-                MOVE_DUAL_WINGBEAT,
-            },
-            },
-            {
-#line 11060
-            .species = SPECIES_SALAZZLE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 11064
-            .ev = TRAINER_PARTY_EVS(0, 0, 0, 128, 128, 0),
-#line 11066
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 11062
-            .ability = ABILITY_CORROSION,
-#line 11061
-            .lvl = 28,
-#line 11065
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 11063
-            .teraType = TYPE_POISON,
-            .moves = {
-#line 11066
-                MOVE_TOXIC,
-                MOVE_FAKE_OUT,
-                MOVE_SLUDGE_WAVE,
-                MOVE_HEAT_WAVE,
-            },
-            },
-            {
-#line 11071
-            .species = SPECIES_MARSHTOMP,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 11075
-            .ev = TRAINER_PARTY_EVS(128, 0, 0, 0, 128, 0),
-#line 11077
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 11073
-            .ability = ABILITY_TORRENT,
-#line 11072
-            .lvl = 28,
-#line 11076
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 11074
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 11078
-                MOVE_MUDDY_WATER,
-                MOVE_ANCIENT_POWER,
-                MOVE_MUD_SHOT,
-                MOVE_WIDE_GUARD,
-            },
-            },
-            {
-#line 11083
-            .species = SPECIES_GOURGEIST_SUPER,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 11088
-            .ev = TRAINER_PARTY_EVS(128, 128, 0, 0, 0, 0),
-#line 11090
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 11085
-            .ability = ABILITY_INSOMNIA,
-#line 11084
-            .lvl = 28,
-#line 11089
-            .nature = NATURE_ADAMANT,
-#line 11086
-            .isShiny = TRUE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 11087
-            .teraType = TYPE_GHOST,
-            .moves = {
-#line 11090
-                MOVE_SHADOW_SNEAK,
-                MOVE_WILL_O_WISP,
-                MOVE_SKITTER_SMACK,
-                MOVE_BULLET_SEED,
-            },
             },
         },
     },
-#line 11095
-    [TRAINER_MAY_ROUTE_119_TORCHIC] =
+#line 9813
+    [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_119_TORCHIC] =
     {
 #line 11096
         .trainerName = _("MAY"),
@@ -27394,7 +25952,7 @@ F_TRAINER_FEMALE |
 #line 11098
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 11099
+#line 9817
 F_TRAINER_FEMALE | 
 #line 11100
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -27440,8 +25998,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11116
-    [TRAINER_ISAAC_1] =
+#line 9834
+    [DIFFICULTY_NORMAL][TRAINER_ISAAC_1] =
     {
 #line 11117
         .trainerName = _("ISAAC"),
@@ -27450,7 +26008,7 @@ F_TRAINER_FEMALE |
 #line 11119
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .encounterMusic_gender =
-#line 11121
+#line 9839
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11122
         .doubleBattle = TRUE,
@@ -27529,8 +26087,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11150
-    [TRAINER_DAVIS] =
+#line 9867
+    [DIFFICULTY_NORMAL][TRAINER_DAVIS] =
     {
 #line 11151
         .trainerName = _("DAVIS"),
@@ -27539,7 +26097,7 @@ F_TRAINER_FEMALE |
 #line 11153
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 11155
+#line 9872
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11156
         .doubleBattle = TRUE,
@@ -27561,8 +26119,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11163
-    [TRAINER_MITCHELL] =
+#line 9880
+    [DIFFICULTY_NORMAL][TRAINER_MITCHELL] =
     {
 #line 11164
         .trainerName = _("MITCHELL"),
@@ -27571,7 +26129,7 @@ F_TRAINER_FEMALE |
 #line 11166
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 11168
+#line 9885
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11169
         .doubleBattle = TRUE,
@@ -27618,8 +26176,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11188
-    [TRAINER_ISAAC_2] =
+#line 9905
+    [DIFFICULTY_NORMAL][TRAINER_ISAAC_2] =
     {
 #line 11189
         .trainerName = _("ISAAC"),
@@ -27628,7 +26186,7 @@ F_TRAINER_FEMALE |
 #line 11191
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .encounterMusic_gender =
-#line 11193
+#line 9910
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11194
         .doubleBattle = TRUE,
@@ -27705,8 +26263,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11221
-    [TRAINER_ISAAC_3] =
+#line 9938
+    [DIFFICULTY_NORMAL][TRAINER_ISAAC_3] =
     {
 #line 11222
         .trainerName = _("ISAAC"),
@@ -27715,7 +26273,7 @@ F_TRAINER_FEMALE |
 #line 11224
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .encounterMusic_gender =
-#line 11226
+#line 9943
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11227
         .doubleBattle = TRUE,
@@ -27792,8 +26350,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11254
-    [TRAINER_ISAAC_4] =
+#line 9971
+    [DIFFICULTY_NORMAL][TRAINER_ISAAC_4] =
     {
 #line 11255
         .trainerName = _("ISAAC"),
@@ -27802,7 +26360,7 @@ F_TRAINER_FEMALE |
 #line 11257
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .encounterMusic_gender =
-#line 11259
+#line 9976
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11260
         .doubleBattle = TRUE,
@@ -27879,8 +26437,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11287
-    [TRAINER_ISAAC_5] =
+#line 10004
+    [DIFFICULTY_NORMAL][TRAINER_ISAAC_5] =
     {
 #line 11288
         .trainerName = _("ISAAC"),
@@ -27889,7 +26447,7 @@ F_TRAINER_FEMALE |
 #line 11290
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .encounterMusic_gender =
-#line 11292
+#line 10009
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11293
         .doubleBattle = TRUE,
@@ -27966,8 +26524,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11320
-    [TRAINER_LYDIA_1] =
+#line 10037
+    [DIFFICULTY_NORMAL][TRAINER_LYDIA_1] =
     {
 #line 11321
         .trainerName = _("LYDIA"),
@@ -27976,7 +26534,7 @@ F_TRAINER_FEMALE |
 #line 11323
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 11324
+#line 10041
 F_TRAINER_FEMALE | 
 #line 11325
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -28046,8 +26604,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11350
-    [TRAINER_HALLE] =
+#line 10070
+    [DIFFICULTY_NORMAL][TRAINER_HALLE] =
     {
 #line 11351
         .trainerName = _("HALLE"),
@@ -28056,7 +26614,7 @@ F_TRAINER_FEMALE |
 #line 11353
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 11354
+#line 10074
 F_TRAINER_FEMALE | 
 #line 11355
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -28091,8 +26649,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11367
-    [TRAINER_GARRISON] =
+#line 10088
+    [DIFFICULTY_NORMAL][TRAINER_GARRISON] =
     {
 #line 11368
         .trainerName = _("GARRISON"),
@@ -28101,7 +26659,7 @@ F_TRAINER_FEMALE |
 #line 11370
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 11372
+#line 10093
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 11373
         .doubleBattle = TRUE,
@@ -28123,8 +26681,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11380
-    [TRAINER_LYDIA_2] =
+#line 10101
+    [DIFFICULTY_NORMAL][TRAINER_LYDIA_2] =
     {
 #line 11381
         .trainerName = _("LYDIA"),
@@ -28133,7 +26691,7 @@ F_TRAINER_FEMALE |
 #line 11383
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 11384
+#line 10105
 F_TRAINER_FEMALE | 
 #line 11385
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -28212,8 +26770,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11413
-    [TRAINER_LYDIA_3] =
+#line 10134
+    [DIFFICULTY_NORMAL][TRAINER_LYDIA_3] =
     {
 #line 11414
         .trainerName = _("LYDIA"),
@@ -28222,7 +26780,7 @@ F_TRAINER_FEMALE |
 #line 11416
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 11417
+#line 10138
 F_TRAINER_FEMALE | 
 #line 11418
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -28301,8 +26859,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11446
-    [TRAINER_LYDIA_4] =
+#line 10167
+    [DIFFICULTY_NORMAL][TRAINER_LYDIA_4] =
     {
 #line 11447
         .trainerName = _("LYDIA"),
@@ -28311,7 +26869,7 @@ F_TRAINER_FEMALE |
 #line 11449
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 11450
+#line 10171
 F_TRAINER_FEMALE | 
 #line 11451
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -28390,8 +26948,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11479
-    [TRAINER_LYDIA_5] =
+#line 10200
+    [DIFFICULTY_NORMAL][TRAINER_LYDIA_5] =
     {
 #line 11480
         .trainerName = _("LYDIA"),
@@ -28400,7 +26958,7 @@ F_TRAINER_FEMALE |
 #line 11482
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 11483
+#line 10204
 F_TRAINER_FEMALE | 
 #line 11484
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -28479,8 +27037,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11512
-    [TRAINER_JACKSON_1] =
+#line 10233
+    [DIFFICULTY_NORMAL][TRAINER_JACKSON_1] =
     {
 #line 11513
         .trainerName = _("JACKSON"),
@@ -28489,7 +27047,7 @@ F_TRAINER_FEMALE |
 #line 11515
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender =
-#line 11517
+#line 10238
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11518
         .doubleBattle = TRUE,
@@ -28511,8 +27069,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11525
-    [TRAINER_LORENZO] =
+#line 10247
+    [DIFFICULTY_NORMAL][TRAINER_LORENZO] =
     {
 #line 11526
         .trainerName = _("LORENZO"),
@@ -28521,7 +27079,7 @@ F_TRAINER_FEMALE |
 #line 11528
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender =
-#line 11530
+#line 10252
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11531
         .doubleBattle = TRUE,
@@ -28565,8 +27123,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11546
-    [TRAINER_SEBASTIAN] =
+#line 10269
+    [DIFFICULTY_NORMAL][TRAINER_SEBASTIAN] =
     {
 #line 11547
         .trainerName = _("SEBASTIAN"),
@@ -28575,7 +27133,7 @@ F_TRAINER_FEMALE |
 #line 11549
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender =
-#line 11551
+#line 10274
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11552
         .doubleBattle = TRUE,
@@ -28597,8 +27155,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11559
-    [TRAINER_JACKSON_2] =
+#line 10283
+    [DIFFICULTY_NORMAL][TRAINER_JACKSON_2] =
     {
 #line 11560
         .trainerName = _("JACKSON"),
@@ -28607,7 +27165,7 @@ F_TRAINER_FEMALE |
 #line 11562
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender =
-#line 11564
+#line 10288
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11565
         .doubleBattle = TRUE,
@@ -28629,8 +27187,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11572
-    [TRAINER_JACKSON_3] =
+#line 10297
+    [DIFFICULTY_NORMAL][TRAINER_JACKSON_3] =
     {
 #line 11573
         .trainerName = _("JACKSON"),
@@ -28639,7 +27197,7 @@ F_TRAINER_FEMALE |
 #line 11575
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender =
-#line 11577
+#line 10302
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11578
         .doubleBattle = TRUE,
@@ -28661,8 +27219,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11585
-    [TRAINER_JACKSON_4] =
+#line 10311
+    [DIFFICULTY_NORMAL][TRAINER_JACKSON_4] =
     {
 #line 11586
         .trainerName = _("JACKSON"),
@@ -28671,7 +27229,7 @@ F_TRAINER_FEMALE |
 #line 11588
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender =
-#line 11590
+#line 10316
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11591
         .doubleBattle = TRUE,
@@ -28693,8 +27251,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11598
-    [TRAINER_JACKSON_5] =
+#line 10325
+    [DIFFICULTY_NORMAL][TRAINER_JACKSON_5] =
     {
 #line 11599
         .trainerName = _("JACKSON"),
@@ -28703,7 +27261,7 @@ F_TRAINER_FEMALE |
 #line 11601
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender =
-#line 11603
+#line 10330
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 11604
         .doubleBattle = TRUE,
@@ -28736,8 +27294,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11615
-    [TRAINER_CATHERINE_1] =
+#line 10343
+    [DIFFICULTY_NORMAL][TRAINER_CATHERINE_1] =
     {
 #line 11616
         .trainerName = _("CATHERINE"),
@@ -28746,7 +27304,7 @@ F_TRAINER_FEMALE |
 #line 11618
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .encounterMusic_gender =
-#line 11619
+#line 10347
 F_TRAINER_FEMALE | 
 #line 11620
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -28781,8 +27339,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11632
-    [TRAINER_JENNA] =
+#line 10361
+    [DIFFICULTY_NORMAL][TRAINER_JENNA] =
     {
 #line 11633
         .trainerName = _("JENNA"),
@@ -28791,7 +27349,7 @@ F_TRAINER_FEMALE |
 #line 11635
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .encounterMusic_gender =
-#line 11636
+#line 10365
 F_TRAINER_FEMALE | 
 #line 11637
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -28837,8 +27395,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11653
-    [TRAINER_SOPHIA] =
+#line 10383
+    [DIFFICULTY_NORMAL][TRAINER_SOPHIA] =
     {
 #line 11654
         .trainerName = _("SOPHIA"),
@@ -28847,7 +27405,7 @@ F_TRAINER_FEMALE |
 #line 11656
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .encounterMusic_gender =
-#line 11657
+#line 10387
 F_TRAINER_FEMALE | 
 #line 11658
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -28882,8 +27440,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11670
-    [TRAINER_CATHERINE_2] =
+#line 10401
+    [DIFFICULTY_NORMAL][TRAINER_CATHERINE_2] =
     {
 #line 11671
         .trainerName = _("CATHERINE"),
@@ -28892,7 +27450,7 @@ F_TRAINER_FEMALE |
 #line 11673
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .encounterMusic_gender =
-#line 11674
+#line 10405
 F_TRAINER_FEMALE | 
 #line 11675
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -28927,8 +27485,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11687
-    [TRAINER_CATHERINE_3] =
+#line 10419
+    [DIFFICULTY_NORMAL][TRAINER_CATHERINE_3] =
     {
 #line 11688
         .trainerName = _("CATHERINE"),
@@ -28937,7 +27495,7 @@ F_TRAINER_FEMALE |
 #line 11690
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .encounterMusic_gender =
-#line 11691
+#line 10423
 F_TRAINER_FEMALE | 
 #line 11692
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -28972,8 +27530,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11704
-    [TRAINER_CATHERINE_4] =
+#line 10437
+    [DIFFICULTY_NORMAL][TRAINER_CATHERINE_4] =
     {
 #line 11705
         .trainerName = _("CATHERINE"),
@@ -28982,7 +27540,7 @@ F_TRAINER_FEMALE |
 #line 11707
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .encounterMusic_gender =
-#line 11708
+#line 10441
 F_TRAINER_FEMALE | 
 #line 11709
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -29017,8 +27575,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11721
-    [TRAINER_CATHERINE_5] =
+#line 10455
+    [DIFFICULTY_NORMAL][TRAINER_CATHERINE_5] =
     {
 #line 11722
         .trainerName = _("CATHERINE"),
@@ -29027,7 +27585,7 @@ F_TRAINER_FEMALE |
 #line 11724
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .encounterMusic_gender =
-#line 11725
+#line 10459
 F_TRAINER_FEMALE | 
 #line 11726
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -29062,8 +27620,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11738
-    [TRAINER_JULIO] =
+#line 10473
+    [DIFFICULTY_NORMAL][TRAINER_JULIO] =
     {
 #line 11739
         .trainerName = _("JULIO"),
@@ -29072,7 +27630,7 @@ F_TRAINER_FEMALE |
 #line 11741
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 11743
+#line 10478
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11744
         .doubleBattle = TRUE,
@@ -29094,8 +27652,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11751
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_5] =
+#line 10486
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_5] =
     {
 #line 11752
         .trainerName = _("GRUNT"),
@@ -29104,7 +27662,7 @@ F_TRAINER_FEMALE |
 #line 11754
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .encounterMusic_gender =
-#line 11756
+#line 10491
             TRAINER_ENCOUNTER_MUSIC_AQUA,
 #line 11757
         .doubleBattle = TRUE,
@@ -29137,8 +27695,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11768
-    [TRAINER_GRUNT_UNUSED] =
+#line 10503
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_UNUSED] =
     {
 #line 11769
         .trainerName = _("GRUNT"),
@@ -29147,7 +27705,7 @@ F_TRAINER_FEMALE |
 #line 11771
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .encounterMusic_gender =
-#line 11772
+#line 10507
 F_TRAINER_FEMALE | 
 #line 11773
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -29182,8 +27740,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11785
-    [TRAINER_GRUNT_MT_PYRE_4] =
+#line 10520
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_4] =
     {
 #line 11786
         .trainerName = _("GRUNT"),
@@ -29192,7 +27750,7 @@ F_TRAINER_FEMALE |
 #line 11788
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .encounterMusic_gender =
-#line 11789
+#line 10524
 F_TRAINER_FEMALE | 
 #line 11790
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -29227,8 +27785,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11802
-    [TRAINER_GRUNT_JAGGED_PASS] =
+#line 10537
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_JAGGED_PASS] =
     {
 #line 11803
         .trainerName = _("GRUNT"),
@@ -29237,7 +27795,7 @@ F_TRAINER_FEMALE |
 #line 11805
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 11807
+#line 10542
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 11808
         .doubleBattle = TRUE,
@@ -29270,8 +27828,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11819
-    [TRAINER_MARC] =
+#line 10554
+    [DIFFICULTY_NORMAL][TRAINER_MARC] =
     {
 #line 11820
         .trainerName = _("MARC"),
@@ -29280,7 +27838,7 @@ F_TRAINER_FEMALE |
 #line 11822
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 11824
+#line 10559
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 11825
         .doubleBattle = TRUE,
@@ -29313,8 +27871,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11836
-    [TRAINER_BRENDEN] =
+#line 10571
+    [DIFFICULTY_NORMAL][TRAINER_BRENDEN] =
     {
 #line 11837
         .trainerName = _("BRENDEN"),
@@ -29323,7 +27881,7 @@ F_TRAINER_FEMALE |
 #line 11839
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 11841
+#line 10576
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 11842
         .doubleBattle = TRUE,
@@ -29345,8 +27903,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11849
-    [TRAINER_LILITH] =
+#line 10584
+    [DIFFICULTY_NORMAL][TRAINER_LILITH] =
     {
 #line 11850
         .trainerName = _("LILITH"),
@@ -29355,7 +27913,7 @@ F_TRAINER_FEMALE |
 #line 11852
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 11853
+#line 10588
 F_TRAINER_FEMALE | 
 #line 11854
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -29379,8 +27937,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11862
-    [TRAINER_CRISTIAN] =
+#line 10597
+    [DIFFICULTY_NORMAL][TRAINER_CRISTIAN] =
     {
 #line 11863
         .trainerName = _("CRISTIAN"),
@@ -29389,7 +27947,7 @@ F_TRAINER_FEMALE |
 #line 11865
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 11867
+#line 10602
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 11868
         .doubleBattle = TRUE,
@@ -29411,8 +27969,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11875
-    [TRAINER_SYLVIA] =
+#line 10610
+    [DIFFICULTY_NORMAL][TRAINER_SYLVIA] =
     {
 #line 11876
         .trainerName = _("SYLVIA"),
@@ -29421,7 +27979,7 @@ F_TRAINER_FEMALE |
 #line 11878
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 11879
+#line 10614
 F_TRAINER_FEMALE | 
 #line 11880
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -29445,8 +28003,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11888
-    [TRAINER_LEONARDO] =
+#line 10623
+    [DIFFICULTY_NORMAL][TRAINER_LEONARDO] =
     {
 #line 11889
         .trainerName = _("LEONARDO"),
@@ -29455,7 +28013,7 @@ F_TRAINER_FEMALE |
 #line 11891
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 11893
+#line 10628
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 11894
         .doubleBattle = TRUE,
@@ -29477,8 +28035,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11901
-    [TRAINER_ATHENA] =
+#line 10636
+    [DIFFICULTY_NORMAL][TRAINER_ATHENA] =
     {
 #line 11902
         .trainerName = _("ATHENA"),
@@ -29487,7 +28045,7 @@ F_TRAINER_FEMALE |
 #line 11904
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 11905
+#line 10640
 F_TRAINER_FEMALE | 
 #line 11906
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -29533,8 +28091,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11923
-    [TRAINER_HARRISON] =
+#line 10659
+    [DIFFICULTY_NORMAL][TRAINER_HARRISON] =
     {
 #line 11924
         .trainerName = _("HARRISON"),
@@ -29543,7 +28101,7 @@ F_TRAINER_FEMALE |
 #line 11926
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 11928
+#line 10664
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 11929
         .doubleBattle = TRUE,
@@ -29565,8 +28123,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11936
-    [TRAINER_GRUNT_MT_CHIMNEY_2] =
+#line 10672
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_CHIMNEY_2] =
     {
 #line 11937
         .trainerName = _("GRUNT"),
@@ -29575,7 +28133,7 @@ F_TRAINER_FEMALE |
 #line 11939
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 11941
+#line 10677
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 11942
         .doubleBattle = TRUE,
@@ -29597,8 +28155,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11949
-    [TRAINER_CLARENCE] =
+#line 10685
+    [DIFFICULTY_NORMAL][TRAINER_CLARENCE] =
     {
 #line 11950
         .trainerName = _("CLARENCE"),
@@ -29607,7 +28165,7 @@ F_TRAINER_FEMALE |
 #line 11952
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 11954
+#line 10690
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 11955
         .doubleBattle = TRUE,
@@ -29629,8 +28187,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11962
-    [TRAINER_TERRY] =
+#line 10698
+    [DIFFICULTY_NORMAL][TRAINER_TERRY] =
     {
 #line 11963
         .trainerName = _("TERRY"),
@@ -29639,7 +28197,7 @@ F_TRAINER_FEMALE |
 #line 11965
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 11966
+#line 10702
 F_TRAINER_FEMALE | 
 #line 11967
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -29663,8 +28221,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11975
-    [TRAINER_NATE] =
+#line 10711
+    [DIFFICULTY_NORMAL][TRAINER_NATE] =
     {
 #line 11976
         .trainerName = _("NATE"),
@@ -29673,7 +28231,7 @@ F_TRAINER_FEMALE |
 #line 11978
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 11980
+#line 10716
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 11981
         .doubleBattle = TRUE,
@@ -29695,8 +28253,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 11988
-    [TRAINER_KATHLEEN] =
+#line 10724
+    [DIFFICULTY_NORMAL][TRAINER_KATHLEEN] =
     {
 #line 11989
         .trainerName = _("KATHLEEN"),
@@ -29705,7 +28263,7 @@ F_TRAINER_FEMALE |
 #line 11991
         .trainerPic = TRAINER_PIC_HEX_MANIAC,
         .encounterMusic_gender =
-#line 11992
+#line 10728
 F_TRAINER_FEMALE | 
 #line 11993
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
@@ -29729,8 +28287,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12001
-    [TRAINER_CLIFFORD] =
+#line 10737
+    [DIFFICULTY_NORMAL][TRAINER_CLIFFORD] =
     {
 #line 12002
         .trainerName = _("CLIFFORD"),
@@ -29739,7 +28297,7 @@ F_TRAINER_FEMALE |
 #line 12004
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 12006
+#line 10742
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 12007
         .doubleBattle = TRUE,
@@ -29761,8 +28319,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12014
-    [TRAINER_NICHOLAS] =
+#line 10750
+    [DIFFICULTY_NORMAL][TRAINER_NICHOLAS] =
     {
 #line 12015
         .trainerName = _("NICHOLAS"),
@@ -29771,7 +28329,7 @@ F_TRAINER_FEMALE |
 #line 12017
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 12019
+#line 10755
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 12020
         .doubleBattle = TRUE,
@@ -29793,8 +28351,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12027
-    [TRAINER_GRUNT_SPACE_CENTER_3] =
+#line 10763
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_3] =
     {
 #line 12028
         .trainerName = _("GRUNT"),
@@ -29803,7 +28361,7 @@ F_TRAINER_FEMALE |
 #line 12030
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .encounterMusic_gender =
-#line 12031
+#line 10767
 F_TRAINER_FEMALE | 
 #line 12032
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
@@ -29838,8 +28396,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12044
-    [TRAINER_GRUNT_SPACE_CENTER_4] =
+#line 10780
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_4] =
     {
 #line 12045
         .trainerName = _("GRUNT"),
@@ -29848,7 +28406,7 @@ F_TRAINER_FEMALE |
 #line 12047
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 12049
+#line 10785
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12050
         .doubleBattle = TRUE,
@@ -29870,8 +28428,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12057
-    [TRAINER_GRUNT_SPACE_CENTER_5] =
+#line 10793
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_5] =
     {
 #line 12058
         .trainerName = _("GRUNT"),
@@ -29880,7 +28438,7 @@ F_TRAINER_FEMALE |
 #line 12060
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 12062
+#line 10798
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12063
         .doubleBattle = TRUE,
@@ -29902,8 +28460,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12070
-    [TRAINER_GRUNT_SPACE_CENTER_6] =
+#line 10806
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_6] =
     {
 #line 12071
         .trainerName = _("GRUNT"),
@@ -29912,7 +28470,7 @@ F_TRAINER_FEMALE |
 #line 12073
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 12075
+#line 10811
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12076
         .doubleBattle = TRUE,
@@ -29934,8 +28492,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12083
-    [TRAINER_GRUNT_SPACE_CENTER_7] =
+#line 10819
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_7] =
     {
 #line 12084
         .trainerName = _("GRUNT"),
@@ -29944,7 +28502,7 @@ F_TRAINER_FEMALE |
 #line 12086
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 12088
+#line 10824
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12089
         .doubleBattle = TRUE,
@@ -29966,8 +28524,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12096
-    [TRAINER_MACEY] =
+#line 10832
+    [DIFFICULTY_NORMAL][TRAINER_MACEY] =
     {
 #line 12097
         .trainerName = _("MACEY"),
@@ -29976,7 +28534,7 @@ F_TRAINER_FEMALE |
 #line 12099
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 12100
+#line 10836
 F_TRAINER_FEMALE | 
 #line 12101
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -30000,8 +28558,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12109
-    [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
+#line 10845
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_RUSTBORO_TREECKO] =
     {
 #line 12110
         .trainerName = _("BRENDAN"),
@@ -30010,7 +28568,7 @@ F_TRAINER_FEMALE |
 #line 12112
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 12114
+#line 10850
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12115
         .doubleBattle = TRUE,
@@ -30065,126 +28623,11 @@ F_TRAINER_FEMALE |
 #line 12134
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12135
-            .teraType = TYPE_BUG,
-            .moves = {
-#line 12138
-                MOVE_ATTACK_ORDER,
-                MOVE_HEAL_ORDER,
-                MOVE_ACROBATICS,
-                MOVE_U_TURN,
-            },
-            },
-            {
-#line 12143
-            .species = SPECIES_CHIMECHO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12148
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
-#line 12150
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 12145
-            .ability = ABILITY_LEVITATE,
-#line 12144
-            .lvl = 50,
-#line 12149
-            .nature = NATURE_MODEST,
-#line 12146
-            .isShiny = FALSE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12147
-            .teraType = TYPE_PSYCHIC,
-            .moves = {
-#line 12151
-                MOVE_DAZZLING_GLEAM,
-                MOVE_PSYCHIC,
-                MOVE_SIGNAL_BEAM,
-                MOVE_THUNDER_WAVE,
-            },
-            },
-            {
-#line 12156
-            .species = SPECIES_BLAZIKEN,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12156
-            .heldItem = ITEM_SITRUS_BERRY,
-#line 12160
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 12162
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 12158
-            .ability = ABILITY_BLAZE,
-#line 12157
-            .lvl = 50,
-#line 12161
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12159
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 12162
-                MOVE_FLARE_BLITZ,
-                MOVE_BRAVE_BIRD,
-                MOVE_HIGH_JUMP_KICK,
-                MOVE_U_TURN,
-            },
-            },
-            {
-#line 12167
-            .species = SPECIES_ROTOM_MOW,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12167
-            .heldItem = ITEM_WHITE_HERB,
-#line 12171
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
-#line 12173
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 12169
-            .ability = ABILITY_LEVITATE,
-#line 12168
-            .lvl = 50,
-#line 12172
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12170
-            .teraType = TYPE_ELECTRIC,
-            .moves = {
-#line 12174
-                MOVE_LEAF_STORM,
-                MOVE_THUNDERBOLT,
-                MOVE_WILL_O_WISP,
-                MOVE_HEX,
-            },
-            },
-            {
-#line 12179
-            .species = SPECIES_BASCULEGION_F,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12183
-            .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 4),
-#line 12185
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 12181
-            .ability = ABILITY_MOLD_BREAKER,
-#line 12180
-            .lvl = 50,
-#line 12184
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12182
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 12185
-                MOVE_FLIP_TURN,
-                MOVE_AQUA_JET,
-                MOVE_PSYCHIC_FANGS,
-                MOVE_CRUNCH,
-            },
             },
         },
     },
-#line 12190
-    [TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
+#line 10862
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
     {
 #line 12191
         .trainerName = _("BRENDAN"),
@@ -30193,7 +28636,7 @@ F_TRAINER_FEMALE |
 #line 12193
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 12195
+#line 10867
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12196
         .doubleBattle = TRUE,
@@ -30248,124 +28691,11 @@ F_TRAINER_FEMALE |
 #line 12215
             .isShiny = FALSE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12216
-            .teraType = TYPE_BUG,
-            .moves = {
-#line 12219
-                MOVE_ATTACK_ORDER,
-                MOVE_HEAL_ORDER,
-                MOVE_ACROBATICS,
-                MOVE_U_TURN,
-            },
-            },
-            {
-#line 12224
-            .species = SPECIES_CHIMECHO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12229
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
-#line 12231
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 12226
-            .ability = ABILITY_LEVITATE,
-#line 12225
-            .lvl = 50,
-#line 12230
-            .nature = NATURE_MODEST,
-#line 12227
-            .isShiny = FALSE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12228
-            .teraType = TYPE_PSYCHIC,
-            .moves = {
-#line 12232
-                MOVE_DAZZLING_GLEAM,
-                MOVE_PSYCHIC,
-                MOVE_SIGNAL_BEAM,
-                MOVE_THUNDER_WAVE,
-            },
-            },
-            {
-#line 12237
-            .species = SPECIES_CERULEDGE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12241
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 12243
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 12239
-            .ability = ABILITY_FLASH_FIRE,
-#line 12238
-            .lvl = 50,
-#line 12242
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12240
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 12243
-                MOVE_BITTER_BLADE,
-                MOVE_X_SCISSOR,
-                MOVE_SHADOW_SNEAK,
-                MOVE_SWORDS_DANCE,
-            },
-            },
-            {
-#line 12248
-            .species = SPECIES_SCEPTILE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12248
-            .heldItem = ITEM_YACHE_BERRY,
-#line 12252
-            .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 4),
-#line 12254
-            .iv = TRAINER_PARTY_IVS(31, 2, 30, 31, 31, 31),
-#line 12250
-            .ability = ABILITY_OVERGROW,
-#line 12249
-            .lvl = 50,
-#line 12253
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12251
-            .teraType = TYPE_GRASS,
-            .moves = {
-#line 12255
-                MOVE_ENERGY_BALL,
-                MOVE_DRAGON_PULSE,
-                MOVE_HIDDEN_POWER,
-                MOVE_LEECH_SEED,
-            },
-            },
-            {
-#line 12260
-            .species = SPECIES_BASCULEGION_F,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12264
-            .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 4),
-#line 12266
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 12262
-            .ability = ABILITY_MOLD_BREAKER,
-#line 12261
-            .lvl = 50,
-#line 12265
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12263
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 12266
-                MOVE_FLIP_TURN,
-                MOVE_AQUA_JET,
-                MOVE_PSYCHIC_FANGS,
-                MOVE_CRUNCH,
-            },
             },
         },
     },
-#line 12271
-    [TRAINER_PAXTON] =
+#line 10879
+    [DIFFICULTY_NORMAL][TRAINER_PAXTON] =
     {
 #line 12272
         .trainerName = _("PAXTON"),
@@ -30374,7 +28704,7 @@ F_TRAINER_FEMALE |
 #line 12274
         .trainerPic = TRAINER_PIC_EXPERT_M,
         .encounterMusic_gender =
-#line 12276
+#line 10884
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 12277
         .doubleBattle = TRUE,
@@ -30407,8 +28737,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12288
-    [TRAINER_ISABELLA] =
+#line 10896
+    [DIFFICULTY_NORMAL][TRAINER_ISABELLA] =
     {
 #line 12289
         .trainerName = _("ISABELLA"),
@@ -30417,7 +28747,7 @@ F_TRAINER_FEMALE |
 #line 12291
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 12292
+#line 10900
 F_TRAINER_FEMALE | 
 #line 12293
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -30441,8 +28771,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12301
-    [TRAINER_GRUNT_WEATHER_INST_5] =
+#line 10909
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_5] =
     {
 #line 12302
         .trainerName = _("GRUNT"),
@@ -30451,7 +28781,7 @@ F_TRAINER_FEMALE |
 #line 12304
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
         .encounterMusic_gender =
-#line 12305
+#line 10913
 F_TRAINER_FEMALE | 
 #line 12306
             TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -30486,19 +28816,17 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12318
-    [TRAINER_COURTNEY_MT_CHIMNEY] =
+#line 10926
+    [DIFFICULTY_NORMAL][TRAINER_TABITHA_MT_CHIMNEY] =
     {
 #line 12319
         .trainerName = _("COURTNEY"),
 #line 12320
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-#line 12321
-        .trainerPic = TRAINER_PIC_COURTNEY_ORAS,
+#line 10929
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
         .encounterMusic_gender =
-#line 12322
-F_TRAINER_FEMALE | 
-#line 12323
+#line 10931
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12324
         .doubleBattle = TRUE,
@@ -30553,8 +28881,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12343
-    [TRAINER_JONATHAN] =
+#line 10951
+    [DIFFICULTY_NORMAL][TRAINER_JONATHAN] =
     {
 #line 12344
         .trainerName = _("JONATHAN"),
@@ -30563,7 +28891,7 @@ F_TRAINER_FEMALE |
 #line 12346
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 12348
+#line 10956
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 12349
         .doubleBattle = TRUE,
@@ -30596,8 +28924,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12360
-    [TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
+#line 10969
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
     {
 #line 12361
         .trainerName = _("BRENDAN"),
@@ -30606,7 +28934,7 @@ F_TRAINER_FEMALE |
 #line 12363
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 12365
+#line 10974
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12366
         .doubleBattle = TRUE,
@@ -30661,126 +28989,11 @@ F_TRAINER_FEMALE |
 #line 12385
             .isShiny = FALSE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12386
-            .teraType = TYPE_BUG,
-            .moves = {
-#line 12389
-                MOVE_ATTACK_ORDER,
-                MOVE_HEAL_ORDER,
-                MOVE_ACROBATICS,
-                MOVE_U_TURN,
-            },
-            },
-            {
-#line 12394
-            .species = SPECIES_CHIMECHO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12399
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
-#line 12401
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 12396
-            .ability = ABILITY_LEVITATE,
-#line 12395
-            .lvl = 50,
-#line 12400
-            .nature = NATURE_MODEST,
-#line 12397
-            .isShiny = TRUE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12398
-            .teraType = TYPE_PSYCHIC,
-            .moves = {
-#line 12402
-                MOVE_DAZZLING_GLEAM,
-                MOVE_PSYCHIC,
-                MOVE_SIGNAL_BEAM,
-                MOVE_THUNDER_WAVE,
-            },
-            },
-            {
-#line 12407
-            .species = SPECIES_CERULEDGE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12411
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 12413
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 12409
-            .ability = ABILITY_FLASH_FIRE,
-#line 12408
-            .lvl = 50,
-#line 12412
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12410
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 12413
-                MOVE_BITTER_BLADE,
-                MOVE_X_SCISSOR,
-                MOVE_SHADOW_SNEAK,
-                MOVE_SWORDS_DANCE,
-            },
-            },
-            {
-#line 12418
-            .species = SPECIES_ROTOM_MOW,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12418
-            .heldItem = ITEM_WHITE_HERB,
-#line 12422
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
-#line 12424
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 12420
-            .ability = ABILITY_LEVITATE,
-#line 12419
-            .lvl = 50,
-#line 12423
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12421
-            .teraType = TYPE_ELECTRIC,
-            .moves = {
-#line 12425
-                MOVE_LEAF_STORM,
-                MOVE_THUNDERBOLT,
-                MOVE_WILL_O_WISP,
-                MOVE_HEX,
-            },
-            },
-            {
-#line 12430
-            .species = SPECIES_SWAMPERT,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12430
-            .heldItem = ITEM_RINDO_BERRY,
-#line 12434
-            .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 4),
-#line 12436
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 12432
-            .ability = ABILITY_TORRENT,
-#line 12431
-            .lvl = 50,
-#line 12435
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12433
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 12436
-                MOVE_FLIP_TURN,
-                MOVE_WATERFALL,
-                MOVE_HIGH_HORSEPOWER,
-                MOVE_POISON_JAB,
-            },
             },
         },
     },
-#line 12441
-    [TRAINER_MAY_RUSTBORO_MUDKIP] =
+#line 10986
+    [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_MUDKIP] =
     {
 #line 12442
         .trainerName = _("MAY"),
@@ -30789,7 +29002,7 @@ F_TRAINER_FEMALE |
 #line 12444
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 12445
+#line 10990
 F_TRAINER_FEMALE | 
 #line 12446
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -30846,124 +29059,11 @@ F_TRAINER_FEMALE |
 #line 12466
             .isShiny = FALSE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12467
-            .teraType = TYPE_BUG,
-            .moves = {
-#line 12470
-                MOVE_ATTACK_ORDER,
-                MOVE_HEAL_ORDER,
-                MOVE_ACROBATICS,
-                MOVE_U_TURN,
-            },
-            },
-            {
-#line 12475
-            .species = SPECIES_CHIMECHO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12480
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
-#line 12482
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 12477
-            .ability = ABILITY_LEVITATE,
-#line 12476
-            .lvl = 50,
-#line 12481
-            .nature = NATURE_MODEST,
-#line 12478
-            .isShiny = FALSE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12479
-            .teraType = TYPE_PSYCHIC,
-            .moves = {
-#line 12483
-                MOVE_DAZZLING_GLEAM,
-                MOVE_PSYCHIC,
-                MOVE_SIGNAL_BEAM,
-                MOVE_THUNDER_WAVE,
-            },
-            },
-            {
-#line 12488
-            .species = SPECIES_CERULEDGE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12492
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 12494
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 12490
-            .ability = ABILITY_FLASH_FIRE,
-#line 12489
-            .lvl = 50,
-#line 12493
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12491
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 12494
-                MOVE_BITTER_BLADE,
-                MOVE_X_SCISSOR,
-                MOVE_SHADOW_SNEAK,
-                MOVE_SWORDS_DANCE,
-            },
-            },
-            {
-#line 12499
-            .species = SPECIES_SCEPTILE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12499
-            .heldItem = ITEM_YACHE_BERRY,
-#line 12503
-            .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 4),
-#line 12505
-            .iv = TRAINER_PARTY_IVS(31, 2, 30, 31, 31, 31),
-#line 12501
-            .ability = ABILITY_OVERGROW,
-#line 12500
-            .lvl = 50,
-#line 12504
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12502
-            .teraType = TYPE_GRASS,
-            .moves = {
-#line 12506
-                MOVE_ENERGY_BALL,
-                MOVE_DRAGON_PULSE,
-                MOVE_HIDDEN_POWER,
-                MOVE_LEECH_SEED,
-            },
-            },
-            {
-#line 12511
-            .species = SPECIES_BASCULEGION_F,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12515
-            .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 4),
-#line 12517
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 12513
-            .ability = ABILITY_MOLD_BREAKER,
-#line 12512
-            .lvl = 50,
-#line 12516
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12514
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 12517
-                MOVE_FLIP_TURN,
-                MOVE_AQUA_JET,
-                MOVE_PSYCHIC_FANGS,
-                MOVE_CRUNCH,
-            },
             },
         },
     },
-#line 12522
-    [TRAINER_MAXIE_MAGMA_HIDEOUT] =
+#line 11003
+    [DIFFICULTY_NORMAL][TRAINER_MAXIE_MAGMA_HIDEOUT] =
     {
 #line 12523
         .trainerName = _("MAXIE"),
@@ -30972,7 +29072,7 @@ F_TRAINER_FEMALE |
 #line 12525
         .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
         .encounterMusic_gender =
-#line 12527
+#line 11008
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12528
         .doubleBattle = TRUE,
@@ -31016,17 +29116,17 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12543
-    [TRAINER_MAXIE_MT_CHIMNEY] =
+#line 11025
+    [DIFFICULTY_NORMAL][TRAINER_MAXIE_MT_CHIMNEY] =
     {
 #line 12544
         .trainerName = _("MAXIE"),
 #line 12545
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-#line 12546
-        .trainerPic = TRAINER_PIC_MAXIE_ORAS,
+#line 11028
+        .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
         .encounterMusic_gender =
-#line 12548
+#line 11030
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 12549
         .doubleBattle = TRUE,
@@ -31108,105 +29208,11 @@ F_TRAINER_FEMALE |
 #line 12584
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12582
-            .teraType = TYPE_DARK,
-            .moves = {
-#line 12586
-                MOVE_DARK_PULSE,
-                MOVE_HEAT_WAVE,
-                MOVE_SOLAR_BEAM,
-                MOVE_NASTY_PLOT,
-            },
-            },
-            {
-#line 12591
-            .species = SPECIES_HEATRAN,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12591
-            .heldItem = ITEM_SHUCA_BERRY,
-#line 12596
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
-#line 12598
-            .iv = TRAINER_PARTY_IVS(31, 2, 31, 31, 30, 31),
-#line 12594
-            .ability = ABILITY_FLASH_FIRE,
-#line 12592
-            .lvl = 45,
-#line 12593
-            .ball = ITEM_HEAVY_BALL,
-#line 12597
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12595
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 12599
-                MOVE_MAGMA_STORM,
-                MOVE_SCORCHING_SANDS,
-                MOVE_FLASH_CANNON,
-                MOVE_HIDDEN_POWER,
-            },
-            },
-            {
-#line 12604
-            .species = SPECIES_URSALUNA,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12604
-            .heldItem = ITEM_FLAME_ORB,
-#line 12609
-            .ev = TRAINER_PARTY_EVS(248, 252, 0, 0, 0, 8),
-#line 12611
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 12607
-            .ability = ABILITY_GUTS,
-#line 12605
-            .lvl = 45,
-#line 12606
-            .ball = ITEM_TIMER_BALL,
-#line 12610
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12608
-            .teraType = TYPE_GROUND,
-            .moves = {
-#line 12611
-                MOVE_HIGH_HORSEPOWER,
-                MOVE_DRAIN_PUNCH,
-                MOVE_FACADE,
-                MOVE_PLAY_ROUGH,
-            },
-            },
-            {
-#line 12616
-            .species = SPECIES_VOLCANION,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12621
-            .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 252, 8),
-#line 12623
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 12619
-            .ability = ABILITY_WATER_ABSORB,
-#line 12617
-            .lvl = 45,
-#line 12618
-            .ball = ITEM_TIMER_BALL,
-#line 12622
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 12620
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 12624
-                MOVE_HYDRO_STEAM,
-                MOVE_SLUDGE_BOMB,
-                MOVE_SCORCHING_SANDS,
-                MOVE_HEAT_WAVE,
-            },
             },
         },
     },
-#line 12630
-    [TRAINER_TIANA] =
+#line 11047
+    [DIFFICULTY_NORMAL][TRAINER_TIANA] =
     {
 #line 12631
         .trainerName = _("TIANA"),
@@ -31215,7 +29221,7 @@ F_TRAINER_FEMALE |
 #line 12633
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12634
+#line 11051
 F_TRAINER_FEMALE | 
 #line 12635
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31250,8 +29256,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12647
-    [TRAINER_HALEY_1] =
+#line 11064
+    [DIFFICULTY_NORMAL][TRAINER_HALEY_1] =
     {
 #line 12648
         .trainerName = _("HALEY"),
@@ -31260,7 +29266,7 @@ F_TRAINER_FEMALE |
 #line 12650
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12651
+#line 11068
 F_TRAINER_FEMALE | 
 #line 12652
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31295,8 +29301,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12664
-    [TRAINER_JANICE] =
+#line 11081
+    [DIFFICULTY_NORMAL][TRAINER_JANICE] =
     {
 #line 12665
         .trainerName = _("JANICE"),
@@ -31305,7 +29311,7 @@ F_TRAINER_FEMALE |
 #line 12667
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12668
+#line 11085
 F_TRAINER_FEMALE | 
 #line 12669
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31329,8 +29335,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12677
-    [TRAINER_VIVI] =
+#line 11094
+    [DIFFICULTY_NORMAL][TRAINER_VIVI] =
     {
 #line 12678
         .trainerName = _("VIVI"),
@@ -31339,7 +29345,7 @@ F_TRAINER_FEMALE |
 #line 12680
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12681
+#line 11098
 F_TRAINER_FEMALE | 
 #line 12682
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31385,8 +29391,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12698
-    [TRAINER_HALEY_2] =
+#line 11115
+    [DIFFICULTY_NORMAL][TRAINER_HALEY_2] =
     {
 #line 12699
         .trainerName = _("HALEY"),
@@ -31395,7 +29401,7 @@ F_TRAINER_FEMALE |
 #line 12701
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12702
+#line 11119
 F_TRAINER_FEMALE | 
 #line 12703
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31430,8 +29436,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12715
-    [TRAINER_HALEY_3] =
+#line 11132
+    [DIFFICULTY_NORMAL][TRAINER_HALEY_3] =
     {
 #line 12716
         .trainerName = _("HALEY"),
@@ -31440,7 +29446,7 @@ F_TRAINER_FEMALE |
 #line 12718
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12719
+#line 11136
 F_TRAINER_FEMALE | 
 #line 12720
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31475,8 +29481,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12732
-    [TRAINER_HALEY_4] =
+#line 11149
+    [DIFFICULTY_NORMAL][TRAINER_HALEY_4] =
     {
 #line 12733
         .trainerName = _("HALEY"),
@@ -31485,7 +29491,7 @@ F_TRAINER_FEMALE |
 #line 12735
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12736
+#line 11153
 F_TRAINER_FEMALE | 
 #line 12737
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31520,8 +29526,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12749
-    [TRAINER_HALEY_5] =
+#line 11166
+    [DIFFICULTY_NORMAL][TRAINER_HALEY_5] =
     {
 #line 12750
         .trainerName = _("HALEY"),
@@ -31530,7 +29536,7 @@ F_TRAINER_FEMALE |
 #line 12752
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12753
+#line 11170
 F_TRAINER_FEMALE | 
 #line 12754
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31576,8 +29582,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12770
-    [TRAINER_SALLY] =
+#line 11187
+    [DIFFICULTY_NORMAL][TRAINER_SALLY] =
     {
 #line 12771
         .trainerName = _("SALLY"),
@@ -31586,7 +29592,7 @@ F_TRAINER_FEMALE |
 #line 12773
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12774
+#line 11191
 F_TRAINER_FEMALE | 
 #line 12775
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31610,8 +29616,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12783
-    [TRAINER_ROBIN] =
+#line 11200
+    [DIFFICULTY_NORMAL][TRAINER_ROBIN] =
     {
 #line 12784
         .trainerName = _("ROBIN"),
@@ -31620,7 +29626,7 @@ F_TRAINER_FEMALE |
 #line 12786
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12787
+#line 11204
 F_TRAINER_FEMALE | 
 #line 12788
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31666,8 +29672,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12804
-    [TRAINER_ANDREA] =
+#line 11221
+    [DIFFICULTY_NORMAL][TRAINER_ANDREA] =
     {
 #line 12805
         .trainerName = _("ANDREA"),
@@ -31676,7 +29682,7 @@ F_TRAINER_FEMALE |
 #line 12807
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12808
+#line 11225
 F_TRAINER_FEMALE | 
 #line 12809
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31700,8 +29706,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12817
-    [TRAINER_CRISSY] =
+#line 11234
+    [DIFFICULTY_NORMAL][TRAINER_CRISSY] =
     {
 #line 12818
         .trainerName = _("CRISSY"),
@@ -31710,7 +29716,7 @@ F_TRAINER_FEMALE |
 #line 12820
         .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
-#line 12821
+#line 11238
 F_TRAINER_FEMALE | 
 #line 12822
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -31745,8 +29751,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12834
-    [TRAINER_RICK] =
+#line 11251
+    [DIFFICULTY_NORMAL][TRAINER_RICK] =
     {
 #line 12835
         .trainerName = _("RICK"),
@@ -31755,7 +29761,7 @@ F_TRAINER_FEMALE |
 #line 12837
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12839
+#line 11256
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12840
         .doubleBattle = TRUE,
@@ -31788,8 +29794,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12851
-    [TRAINER_LYLE] =
+#line 11268
+    [DIFFICULTY_NORMAL][TRAINER_LYLE] =
     {
 #line 12852
         .trainerName = _("LYLE"),
@@ -31798,7 +29804,7 @@ F_TRAINER_FEMALE |
 #line 12854
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12856
+#line 11273
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12857
         .doubleBattle = TRUE,
@@ -31853,8 +29859,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12876
-    [TRAINER_JOSE] =
+#line 11293
+    [DIFFICULTY_NORMAL][TRAINER_JOSE] =
     {
 #line 12877
         .trainerName = _("JOSE"),
@@ -31863,7 +29869,7 @@ F_TRAINER_FEMALE |
 #line 12879
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12881
+#line 11298
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12882
         .doubleBattle = TRUE,
@@ -31896,8 +29902,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12893
-    [TRAINER_DOUG] =
+#line 11310
+    [DIFFICULTY_NORMAL][TRAINER_DOUG] =
     {
 #line 12894
         .trainerName = _("DOUG"),
@@ -31906,7 +29912,7 @@ F_TRAINER_FEMALE |
 #line 12896
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12898
+#line 11315
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12899
         .doubleBattle = TRUE,
@@ -31939,8 +29945,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12910
-    [TRAINER_GREG] =
+#line 11327
+    [DIFFICULTY_NORMAL][TRAINER_GREG] =
     {
 #line 12911
         .trainerName = _("GREG"),
@@ -31949,7 +29955,7 @@ F_TRAINER_FEMALE |
 #line 12913
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12915
+#line 11332
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12916
         .doubleBattle = TRUE,
@@ -31982,8 +29988,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12927
-    [TRAINER_KENT] =
+#line 11344
+    [DIFFICULTY_NORMAL][TRAINER_KENT] =
     {
 #line 12928
         .trainerName = _("KENT"),
@@ -31992,7 +29998,7 @@ F_TRAINER_FEMALE |
 #line 12930
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12932
+#line 11349
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12933
         .doubleBattle = TRUE,
@@ -32014,8 +30020,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12940
-    [TRAINER_JAMES_1] =
+#line 11357
+    [DIFFICULTY_NORMAL][TRAINER_JAMES_1] =
     {
 #line 12941
         .trainerName = _("JAMES"),
@@ -32024,7 +30030,7 @@ F_TRAINER_FEMALE |
 #line 12943
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12945
+#line 11362
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12946
         .doubleBattle = TRUE,
@@ -32057,8 +30063,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12957
-    [TRAINER_JAMES_2] =
+#line 11374
+    [DIFFICULTY_NORMAL][TRAINER_JAMES_2] =
     {
 #line 12958
         .trainerName = _("JAMES"),
@@ -32067,7 +30073,7 @@ F_TRAINER_FEMALE |
 #line 12960
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12962
+#line 11379
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12963
         .doubleBattle = TRUE,
@@ -32089,8 +30095,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12970
-    [TRAINER_JAMES_3] =
+#line 11387
+    [DIFFICULTY_NORMAL][TRAINER_JAMES_3] =
     {
 #line 12971
         .trainerName = _("JAMES"),
@@ -32099,7 +30105,7 @@ F_TRAINER_FEMALE |
 #line 12973
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12975
+#line 11392
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12976
         .doubleBattle = TRUE,
@@ -32132,8 +30138,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 12987
-    [TRAINER_JAMES_4] =
+#line 11404
+    [DIFFICULTY_NORMAL][TRAINER_JAMES_4] =
     {
 #line 12988
         .trainerName = _("JAMES"),
@@ -32142,7 +30148,7 @@ F_TRAINER_FEMALE |
 #line 12990
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 12992
+#line 11409
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 12993
         .doubleBattle = TRUE,
@@ -32186,8 +30192,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13008
-    [TRAINER_JAMES_5] =
+#line 11425
+    [DIFFICULTY_NORMAL][TRAINER_JAMES_5] =
     {
 #line 13009
         .trainerName = _("JAMES"),
@@ -32196,7 +30202,7 @@ F_TRAINER_FEMALE |
 #line 13011
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender =
-#line 13013
+#line 11430
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13014
         .doubleBattle = TRUE,
@@ -32251,8 +30257,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13033
-    [TRAINER_BRICE] =
+#line 11450
+    [DIFFICULTY_NORMAL][TRAINER_BRICE] =
     {
 #line 13034
         .trainerName = _("BRICE"),
@@ -32261,7 +30267,7 @@ F_TRAINER_FEMALE |
 #line 13036
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13038
+#line 11455
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13039
         .doubleBattle = TRUE,
@@ -32294,8 +30300,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13050
-    [TRAINER_TRENT_1] =
+#line 11467
+    [DIFFICULTY_NORMAL][TRAINER_TRENT_1] =
     {
 #line 13051
         .trainerName = _("TRENT"),
@@ -32304,7 +30310,7 @@ F_TRAINER_FEMALE |
 #line 13053
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13055
+#line 11472
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13056
         .doubleBattle = TRUE,
@@ -32348,8 +30354,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13071
-    [TRAINER_LENNY] =
+#line 11488
+    [DIFFICULTY_NORMAL][TRAINER_LENNY] =
     {
 #line 13072
         .trainerName = _("LENNY"),
@@ -32358,7 +30364,7 @@ F_TRAINER_FEMALE |
 #line 13074
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13076
+#line 11493
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13077
         .doubleBattle = TRUE,
@@ -32391,8 +30397,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13088
-    [TRAINER_LUCAS_1] =
+#line 11505
+    [DIFFICULTY_NORMAL][TRAINER_LUCAS_1] =
     {
 #line 13089
         .trainerName = _("LUCAS"),
@@ -32401,7 +30407,7 @@ F_TRAINER_FEMALE |
 #line 13091
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13093
+#line 11510
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13094
         .doubleBattle = TRUE,
@@ -32434,8 +30440,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13105
-    [TRAINER_ALAN] =
+#line 11522
+    [DIFFICULTY_NORMAL][TRAINER_ALAN] =
     {
 #line 13106
         .trainerName = _("ALAN"),
@@ -32444,7 +30450,7 @@ F_TRAINER_FEMALE |
 #line 13108
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13110
+#line 11527
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13111
         .doubleBattle = TRUE,
@@ -32488,8 +30494,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13126
-    [TRAINER_CLARK] =
+#line 11543
+    [DIFFICULTY_NORMAL][TRAINER_CLARK] =
     {
 #line 13127
         .trainerName = _("CLARK"),
@@ -32498,7 +30504,7 @@ F_TRAINER_FEMALE |
 #line 13129
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13131
+#line 11548
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13132
         .doubleBattle = TRUE,
@@ -32520,8 +30526,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13139
-    [TRAINER_ERIC] =
+#line 11556
+    [DIFFICULTY_NORMAL][TRAINER_ERIC] =
     {
 #line 13140
         .trainerName = _("ERIC"),
@@ -32530,7 +30536,7 @@ F_TRAINER_FEMALE |
 #line 13142
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13144
+#line 11561
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13145
         .doubleBattle = TRUE,
@@ -32563,8 +30569,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13156
-    [TRAINER_LUCAS_2] =
+#line 11573
+    [DIFFICULTY_NORMAL][TRAINER_LUCAS_2] =
     {
 #line 13157
         .trainerName = _("LUCAS"),
@@ -32573,7 +30579,7 @@ F_TRAINER_FEMALE |
 #line 13159
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13161
+#line 11578
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13162
         .doubleBattle = TRUE,
@@ -32600,8 +30606,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13171
-    [TRAINER_MIKE_1] =
+#line 11588
+    [DIFFICULTY_NORMAL][TRAINER_MIKE_1] =
     {
 #line 13172
         .trainerName = _("MIKE"),
@@ -32610,7 +30616,7 @@ F_TRAINER_FEMALE |
 #line 13174
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13176
+#line 11593
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13177
         .doubleBattle = TRUE,
@@ -32653,8 +30659,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13192
-    [TRAINER_MIKE_2] =
+#line 11609
+    [DIFFICULTY_NORMAL][TRAINER_MIKE_2] =
     {
 #line 13193
         .trainerName = _("MIKE"),
@@ -32663,7 +30669,7 @@ F_TRAINER_FEMALE |
 #line 13195
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13197
+#line 11614
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13198
         .doubleBattle = TRUE,
@@ -32707,8 +30713,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13213
-    [TRAINER_TRENT_2] =
+#line 11630
+    [DIFFICULTY_NORMAL][TRAINER_TRENT_2] =
     {
 #line 13214
         .trainerName = _("TRENT"),
@@ -32717,7 +30723,7 @@ F_TRAINER_FEMALE |
 #line 13216
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13218
+#line 11635
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13219
         .doubleBattle = TRUE,
@@ -32772,8 +30778,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13238
-    [TRAINER_TRENT_3] =
+#line 11655
+    [DIFFICULTY_NORMAL][TRAINER_TRENT_3] =
     {
 #line 13239
         .trainerName = _("TRENT"),
@@ -32782,7 +30788,7 @@ F_TRAINER_FEMALE |
 #line 13241
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13243
+#line 11660
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13244
         .doubleBattle = TRUE,
@@ -32837,8 +30843,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13263
-    [TRAINER_TRENT_4] =
+#line 11680
+    [DIFFICULTY_NORMAL][TRAINER_TRENT_4] =
     {
 #line 13264
         .trainerName = _("TRENT"),
@@ -32847,7 +30853,7 @@ F_TRAINER_FEMALE |
 #line 13266
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13268
+#line 11685
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13269
         .doubleBattle = TRUE,
@@ -32902,8 +30908,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13288
-    [TRAINER_TRENT_5] =
+#line 11705
+    [DIFFICULTY_NORMAL][TRAINER_TRENT_5] =
     {
 #line 13289
         .trainerName = _("TRENT"),
@@ -32912,7 +30918,7 @@ F_TRAINER_FEMALE |
 #line 13291
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 13293
+#line 11710
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 13294
         .doubleBattle = TRUE,
@@ -32967,8 +30973,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13313
-    [TRAINER_DEZ_AND_LUKE] =
+#line 11730
+    [DIFFICULTY_NORMAL][TRAINER_DEZ_AND_LUKE] =
     {
 #line 13314
         .trainerName = _("DEZ & LUKE"),
@@ -32977,7 +30983,7 @@ F_TRAINER_FEMALE |
 #line 13316
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .encounterMusic_gender =
-#line 13318
+#line 11735
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13319
         .doubleBattle = TRUE,
@@ -33010,8 +31016,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13330
-    [TRAINER_LEA_AND_JED] =
+#line 11747
+    [DIFFICULTY_NORMAL][TRAINER_LEA_AND_JED] =
     {
 #line 13331
         .trainerName = _("LEA & JED"),
@@ -33020,7 +31026,7 @@ F_TRAINER_FEMALE |
 #line 13333
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .encounterMusic_gender =
-#line 13335
+#line 11752
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13336
         .doubleBattle = TRUE,
@@ -33053,8 +31059,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13347
-    [TRAINER_KIRA_AND_DAN_1] =
+#line 11764
+    [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_1] =
     {
 #line 13348
         .trainerName = _("KIRA & DAN"),
@@ -33063,7 +31069,7 @@ F_TRAINER_FEMALE |
 #line 13350
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .encounterMusic_gender =
-#line 13352
+#line 11769
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13353
         .doubleBattle = TRUE,
@@ -33096,8 +31102,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13364
-    [TRAINER_KIRA_AND_DAN_2] =
+#line 11781
+    [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_2] =
     {
 #line 13365
         .trainerName = _("KIRA & DAN"),
@@ -33106,7 +31112,7 @@ F_TRAINER_FEMALE |
 #line 13367
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .encounterMusic_gender =
-#line 13369
+#line 11786
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13370
         .doubleBattle = TRUE,
@@ -33139,8 +31145,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13381
-    [TRAINER_KIRA_AND_DAN_3] =
+#line 11798
+    [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_3] =
     {
 #line 13382
         .trainerName = _("KIRA & DAN"),
@@ -33149,7 +31155,7 @@ F_TRAINER_FEMALE |
 #line 13384
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .encounterMusic_gender =
-#line 13386
+#line 11803
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13387
         .doubleBattle = TRUE,
@@ -33182,8 +31188,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13398
-    [TRAINER_KIRA_AND_DAN_4] =
+#line 11815
+    [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_4] =
     {
 #line 13399
         .trainerName = _("KIRA & DAN"),
@@ -33192,7 +31198,7 @@ F_TRAINER_FEMALE |
 #line 13401
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .encounterMusic_gender =
-#line 13403
+#line 11820
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13404
         .doubleBattle = TRUE,
@@ -33225,8 +31231,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13415
-    [TRAINER_KIRA_AND_DAN_5] =
+#line 11832
+    [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_5] =
     {
 #line 13416
         .trainerName = _("KIRA & DAN"),
@@ -33235,7 +31241,7 @@ F_TRAINER_FEMALE |
 #line 13418
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .encounterMusic_gender =
-#line 13420
+#line 11837
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 13421
         .doubleBattle = TRUE,
@@ -33268,8 +31274,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13432
-    [TRAINER_JOHANNA] =
+#line 11849
+    [DIFFICULTY_NORMAL][TRAINER_JOHANNA] =
     {
 #line 13433
         .trainerName = _("JOHANNA"),
@@ -33278,7 +31284,7 @@ F_TRAINER_FEMALE |
 #line 13435
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 13436
+#line 11853
 F_TRAINER_FEMALE | 
 #line 13437
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -33302,8 +31308,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13445
-    [TRAINER_GERALD] =
+#line 11862
+    [DIFFICULTY_NORMAL][TRAINER_GERALD] =
     {
 #line 13446
         .trainerName = _("GERALD"),
@@ -33312,7 +31318,7 @@ F_TRAINER_FEMALE |
 #line 13448
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 13450
+#line 11867
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 13451
         .doubleBattle = TRUE,
@@ -33341,8 +31347,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13462
-    [TRAINER_VIVIAN] =
+#line 11880
+    [DIFFICULTY_NORMAL][TRAINER_VIVIAN] =
     {
 #line 13463
         .trainerName = _("VIVIAN"),
@@ -33351,7 +31357,7 @@ F_TRAINER_FEMALE |
 #line 13465
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 13466
+#line 11884
 F_TRAINER_FEMALE | 
 #line 13467
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -33402,8 +31408,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13488
-    [TRAINER_DANIELLE] =
+#line 11905
+    [DIFFICULTY_NORMAL][TRAINER_DANIELLE] =
     {
 #line 13489
         .trainerName = _("DANIELLE"),
@@ -33412,7 +31418,7 @@ F_TRAINER_FEMALE |
 #line 13491
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 13492
+#line 11909
 F_TRAINER_FEMALE | 
 #line 13493
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -33443,8 +31449,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13505
-    [TRAINER_HIDEO] =
+#line 11922
+    [DIFFICULTY_NORMAL][TRAINER_HIDEO] =
     {
 #line 13506
         .trainerName = _("HIDEO"),
@@ -33453,7 +31459,7 @@ F_TRAINER_FEMALE |
 #line 13508
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 13510
+#line 11927
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 13511
         .doubleBattle = TRUE,
@@ -33500,8 +31506,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13530
-    [TRAINER_KEIGO] =
+#line 11947
+    [DIFFICULTY_NORMAL][TRAINER_KEIGO] =
     {
 #line 13531
         .trainerName = _("KEIGO"),
@@ -33510,7 +31516,7 @@ F_TRAINER_FEMALE |
 #line 13533
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 13535
+#line 11952
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 13536
         .doubleBattle = TRUE,
@@ -33557,8 +31563,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13555
-    [TRAINER_RILEY] =
+#line 11972
+    [DIFFICULTY_NORMAL][TRAINER_RILEY] =
     {
 #line 13556
         .trainerName = _("RILEY"),
@@ -33567,7 +31573,7 @@ F_TRAINER_FEMALE |
 #line 13558
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 13560
+#line 11977
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 13561
         .doubleBattle = TRUE,
@@ -33614,8 +31620,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13580
-    [TRAINER_FLINT] =
+#line 11997
+    [DIFFICULTY_NORMAL][TRAINER_FLINT] =
     {
 #line 13581
         .trainerName = _("FLINT"),
@@ -33624,7 +31630,7 @@ F_TRAINER_FEMALE |
 #line 13583
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 13585
+#line 12002
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13586
         .doubleBattle = TRUE,
@@ -33657,8 +31663,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13597
-    [TRAINER_ASHLEY] =
+#line 12014
+    [DIFFICULTY_NORMAL][TRAINER_ASHLEY] =
     {
 #line 13598
         .trainerName = _("ASHLEY"),
@@ -33667,7 +31673,7 @@ F_TRAINER_FEMALE |
 #line 13600
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 13601
+#line 12018
 F_TRAINER_FEMALE | 
 #line 13602
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -33713,8 +31719,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13618
-    [TRAINER_WALLY_MAUVILLE] =
+#line 12035
+    [DIFFICULTY_NORMAL][TRAINER_WALLY_MAUVILLE] =
     {
 #line 13619
         .trainerName = _("WALLY"),
@@ -33723,7 +31729,7 @@ F_TRAINER_FEMALE |
 #line 13621
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender =
-#line 13623
+#line 12040
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13624
         .doubleBattle = TRUE,
@@ -33749,117 +31755,11 @@ F_TRAINER_FEMALE |
 #line 13632
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 13633
-                MOVE_DISCHARGE,
-                MOVE_FLASH_CANNON,
-                MOVE_HIDDEN_POWER,
-                MOVE_LIGHT_SCREEN,
-            },
-            },
-            {
-#line 13638
-            .species = SPECIES_GABITE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 13638
-            .heldItem = ITEM_ROCKY_HELMET,
-#line 13641
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 13643
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 13639
-            .ability = ABILITY_ROUGH_SKIN,
-#line 13640
-            .lvl = 31,
-#line 13642
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 13643
-                MOVE_EARTHQUAKE,
-                MOVE_DIG,
-                MOVE_DRAGON_TAIL,
-                MOVE_ROCK_SLIDE,
-            },
-            },
-            {
-#line 13648
-            .species = SPECIES_ROSELIA,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 13648
-            .heldItem = ITEM_EVIOLITE,
-#line 13651
-            .ev = TRAINER_PARTY_EVS(248, 0, 0, 0, 252, 8),
-#line 13653
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 13649
-            .ability = ABILITY_POISON_POINT,
-#line 13650
-            .lvl = 31,
-#line 13652
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 13654
-                MOVE_DAZZLING_GLEAM,
-                MOVE_ENERGY_BALL,
-                MOVE_LEECH_SEED,
-                MOVE_SLUDGE_BOMB,
-            },
-            },
-            {
-#line 13659
-            .species = SPECIES_DELCATTY,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 13659
-            .heldItem = ITEM_NORMAL_GEM,
-#line 13662
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 13664
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 13660
-            .ability = ABILITY_WONDER_SKIN,
-#line 13661
-            .lvl = 31,
-#line 13663
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 13664
-                MOVE_FAKE_OUT,
-                MOVE_HEAL_BELL,
-                MOVE_SUCKER_PUNCH,
-                MOVE_BODY_SLAM,
-            },
-            },
-            {
-#line 13669
-            .species = SPECIES_GALLADE,
-#line 13669
-            .gender = TRAINER_MON_MALE,
-#line 13669
-            .heldItem = ITEM_EXPERT_BELT,
-#line 13673
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 13670
-            .ability = ABILITY_JUSTIFIED,
-#line 13671
-            .lvl = 31,
-#line 13672
-            .nature = NATURE_SERIOUS,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 13673
-                MOVE_PSYCHO_CUT,
-                MOVE_SLASH,
-                MOVE_BRICK_BREAK,
-                MOVE_SHADOW_SNEAK,
-            },
             },
         },
     },
-#line 13688
-    [TRAINER_WALLY_VR_2] =
+#line 12048
+    [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_2] =
     {
 #line 13689
         .trainerName = _("WALLY"),
@@ -33868,7 +31768,7 @@ F_TRAINER_FEMALE |
 #line 13691
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender =
-#line 13693
+#line 12053
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13694
         .doubleBattle = TRUE,
@@ -33969,8 +31869,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13737
-    [TRAINER_WALLY_VR_3] =
+#line 12098
+    [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_3] =
     {
 #line 13738
         .trainerName = _("WALLY"),
@@ -33979,7 +31879,7 @@ F_TRAINER_FEMALE |
 #line 13740
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender =
-#line 13742
+#line 12103
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13743
         .doubleBattle = TRUE,
@@ -34080,8 +31980,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13786
-    [TRAINER_WALLY_VR_4] =
+#line 12148
+    [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_4] =
     {
 #line 13787
         .trainerName = _("WALLY"),
@@ -34090,7 +31990,7 @@ F_TRAINER_FEMALE |
 #line 13789
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender =
-#line 13791
+#line 12153
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13792
         .doubleBattle = TRUE,
@@ -34191,8 +32091,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13835
-    [TRAINER_WALLY_VR_5] =
+#line 12198
+    [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_5] =
     {
 #line 13836
         .trainerName = _("WALLY"),
@@ -34201,7 +32101,7 @@ F_TRAINER_FEMALE |
 #line 13838
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender =
-#line 13840
+#line 12203
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13841
         .doubleBattle = TRUE,
@@ -34302,8 +32202,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13884
-    [TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
+#line 12248
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
     {
 #line 13885
         .trainerName = _("BRENDAN"),
@@ -34312,7 +32212,7 @@ F_TRAINER_FEMALE |
 #line 13887
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 13889
+#line 12253
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13890
         .doubleBattle = TRUE,
@@ -34367,8 +32267,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13909
-    [TRAINER_BRENDAN_LILYCOVE_TREECKO] =
+#line 12273
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_LILYCOVE_TREECKO] =
     {
 #line 13910
         .trainerName = _("BRENDAN"),
@@ -34377,7 +32277,7 @@ F_TRAINER_FEMALE |
 #line 13912
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 13914
+#line 12278
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13915
         .doubleBattle = TRUE,
@@ -34432,8 +32332,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13934
-    [TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
+#line 12298
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
     {
 #line 13935
         .trainerName = _("BRENDAN"),
@@ -34442,7 +32342,7 @@ F_TRAINER_FEMALE |
 #line 13937
         .trainerPic = TRAINER_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 13939
+#line 12303
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 13940
         .doubleBattle = TRUE,
@@ -34497,8 +32397,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13959
-    [TRAINER_MAY_LILYCOVE_MUDKIP] =
+#line 12323
+    [DIFFICULTY_NORMAL][TRAINER_MAY_LILYCOVE_MUDKIP] =
     {
 #line 13960
         .trainerName = _("MAY"),
@@ -34507,7 +32407,7 @@ F_TRAINER_FEMALE |
 #line 13962
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 13963
+#line 12327
 F_TRAINER_FEMALE | 
 #line 13964
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -34564,8 +32464,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 13984
-    [TRAINER_MAY_LILYCOVE_TREECKO] =
+#line 12348
+    [DIFFICULTY_NORMAL][TRAINER_MAY_LILYCOVE_TREECKO] =
     {
 #line 13985
         .trainerName = _("MAY"),
@@ -34574,7 +32474,7 @@ F_TRAINER_FEMALE |
 #line 13987
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 13988
+#line 12352
 F_TRAINER_FEMALE | 
 #line 13989
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -34631,8 +32531,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14009
-    [TRAINER_MAY_LILYCOVE_TORCHIC] =
+#line 12373
+    [DIFFICULTY_NORMAL][TRAINER_MAY_LILYCOVE_TORCHIC] =
     {
 #line 14010
         .trainerName = _("MAY"),
@@ -34641,7 +32541,7 @@ F_TRAINER_FEMALE |
 #line 14012
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 14013
+#line 12377
 F_TRAINER_FEMALE | 
 #line 14014
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -34698,8 +32598,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14034
-    [TRAINER_JONAH] =
+#line 12398
+    [DIFFICULTY_NORMAL][TRAINER_JONAH] =
     {
 #line 14035
         .trainerName = _("JONAH"),
@@ -34708,7 +32608,7 @@ F_TRAINER_FEMALE |
 #line 14037
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 14039
+#line 12403
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14040
         .doubleBattle = TRUE,
@@ -34752,8 +32652,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14055
-    [TRAINER_HENRY] =
+#line 12419
+    [DIFFICULTY_NORMAL][TRAINER_HENRY] =
     {
 #line 14056
         .trainerName = _("HENRY"),
@@ -34762,7 +32662,7 @@ F_TRAINER_FEMALE |
 #line 14058
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 14060
+#line 12424
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14061
         .doubleBattle = TRUE,
@@ -34795,8 +32695,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14072
-    [TRAINER_ROGER] =
+#line 12436
+    [DIFFICULTY_NORMAL][TRAINER_ROGER] =
     {
 #line 14073
         .trainerName = _("ROGER"),
@@ -34805,7 +32705,7 @@ F_TRAINER_FEMALE |
 #line 14075
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 14077
+#line 12441
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14078
         .doubleBattle = TRUE,
@@ -34849,8 +32749,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14093
-    [TRAINER_ALEXA] =
+#line 12457
+    [DIFFICULTY_NORMAL][TRAINER_ALEXA] =
     {
 #line 14094
         .trainerName = _("ALEXA"),
@@ -34859,7 +32759,7 @@ F_TRAINER_FEMALE |
 #line 14096
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 14097
+#line 12461
 F_TRAINER_FEMALE | 
 #line 14098
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -34894,8 +32794,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14110
-    [TRAINER_RUBEN] =
+#line 12475
+    [DIFFICULTY_NORMAL][TRAINER_RUBEN] =
     {
 #line 14111
         .trainerName = _("RUBEN"),
@@ -34904,7 +32804,7 @@ F_TRAINER_FEMALE |
 #line 14113
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 14115
+#line 12480
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 14116
         .doubleBattle = TRUE,
@@ -34937,8 +32837,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14127
-    [TRAINER_KOJI_1] =
+#line 12493
+    [DIFFICULTY_NORMAL][TRAINER_KOJI_1] =
     {
 #line 14128
         .trainerName = _("KOJI"),
@@ -34947,7 +32847,7 @@ F_TRAINER_FEMALE |
 #line 14130
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 14132
+#line 12498
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14133
         .doubleBattle = TRUE,
@@ -34969,8 +32869,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14140
-    [TRAINER_WAYNE] =
+#line 12506
+    [DIFFICULTY_NORMAL][TRAINER_WAYNE] =
     {
 #line 14141
         .trainerName = _("WAYNE"),
@@ -34979,7 +32879,7 @@ F_TRAINER_FEMALE |
 #line 14143
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 14145
+#line 12511
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14146
         .doubleBattle = TRUE,
@@ -35023,8 +32923,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14161
-    [TRAINER_AIDAN] =
+#line 12527
+    [DIFFICULTY_NORMAL][TRAINER_AIDAN] =
     {
 #line 14162
         .trainerName = _("AIDAN"),
@@ -35033,7 +32933,7 @@ F_TRAINER_FEMALE |
 #line 14164
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 14166
+#line 12532
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 14167
         .doubleBattle = TRUE,
@@ -35066,8 +32966,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14178
-    [TRAINER_REED] =
+#line 12544
+    [DIFFICULTY_NORMAL][TRAINER_REED] =
     {
 #line 14179
         .trainerName = _("REED"),
@@ -35076,7 +32976,7 @@ F_TRAINER_FEMALE |
 #line 14181
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 14183
+#line 12549
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14184
         .doubleBattle = TRUE,
@@ -35109,8 +33009,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14195
-    [TRAINER_TISHA] =
+#line 12561
+    [DIFFICULTY_NORMAL][TRAINER_TISHA] =
     {
 #line 14196
         .trainerName = _("TISHA"),
@@ -35119,7 +33019,7 @@ F_TRAINER_FEMALE |
 #line 14198
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 14199
+#line 12565
 F_TRAINER_FEMALE | 
 #line 14200
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -35143,8 +33043,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14208
-    [TRAINER_TORI_AND_TIA] =
+#line 12574
+    [DIFFICULTY_NORMAL][TRAINER_TORI_AND_TIA] =
     {
 #line 14209
         .trainerName = _("TORI & TIA"),
@@ -35153,7 +33053,7 @@ F_TRAINER_FEMALE |
 #line 14211
         .trainerPic = TRAINER_PIC_TWINS,
         .encounterMusic_gender =
-#line 14213
+#line 12579
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 14214
         .doubleBattle = TRUE,
@@ -35186,8 +33086,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14225
-    [TRAINER_KIM_AND_IRIS] =
+#line 12591
+    [DIFFICULTY_NORMAL][TRAINER_KIM_AND_IRIS] =
     {
 #line 14226
         .trainerName = _("KIM & IRIS"),
@@ -35196,7 +33096,7 @@ F_TRAINER_FEMALE |
 #line 14228
         .trainerPic = TRAINER_PIC_SR_AND_JR,
         .encounterMusic_gender =
-#line 14230
+#line 12596
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 14231
         .doubleBattle = TRUE,
@@ -35243,8 +33143,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14250
-    [TRAINER_TYRA_AND_IVY] =
+#line 12616
+    [DIFFICULTY_NORMAL][TRAINER_TYRA_AND_IVY] =
     {
 #line 14251
         .trainerName = _("TYRA & IVY"),
@@ -35253,7 +33153,7 @@ F_TRAINER_FEMALE |
 #line 14253
         .trainerPic = TRAINER_PIC_SR_AND_JR,
         .encounterMusic_gender =
-#line 14255
+#line 12621
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 14256
         .doubleBattle = TRUE,
@@ -35300,8 +33200,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14275
-    [TRAINER_MEL_AND_PAUL] =
+#line 12641
+    [DIFFICULTY_NORMAL][TRAINER_MEL_AND_PAUL] =
     {
 #line 14276
         .trainerName = _("MEL & PAUL"),
@@ -35310,7 +33210,7 @@ F_TRAINER_FEMALE |
 #line 14278
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .encounterMusic_gender =
-#line 14280
+#line 12646
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 14281
         .doubleBattle = TRUE,
@@ -35357,8 +33257,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14300
-    [TRAINER_JOHN_AND_JAY_1] =
+#line 12666
+    [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_1] =
     {
 #line 14301
         .trainerName = _("JOHN & JAY"),
@@ -35367,7 +33267,7 @@ F_TRAINER_FEMALE |
 #line 14303
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .encounterMusic_gender =
-#line 14305
+#line 12671
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14306
         .doubleBattle = TRUE,
@@ -35414,8 +33314,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14325
-    [TRAINER_JOHN_AND_JAY_2] =
+#line 12691
+    [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_2] =
     {
 #line 14326
         .trainerName = _("JOHN & JAY"),
@@ -35424,7 +33324,7 @@ F_TRAINER_FEMALE |
 #line 14328
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .encounterMusic_gender =
-#line 14330
+#line 12696
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14331
         .doubleBattle = TRUE,
@@ -35471,8 +33371,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14350
-    [TRAINER_JOHN_AND_JAY_3] =
+#line 12716
+    [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_3] =
     {
 #line 14351
         .trainerName = _("JOHN & JAY"),
@@ -35481,7 +33381,7 @@ F_TRAINER_FEMALE |
 #line 14353
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .encounterMusic_gender =
-#line 14355
+#line 12721
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14356
         .doubleBattle = TRUE,
@@ -35528,8 +33428,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14375
-    [TRAINER_JOHN_AND_JAY_4] =
+#line 12741
+    [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_4] =
     {
 #line 14376
         .trainerName = _("JOHN & JAY"),
@@ -35538,7 +33438,7 @@ F_TRAINER_FEMALE |
 #line 14378
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .encounterMusic_gender =
-#line 14380
+#line 12746
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14381
         .doubleBattle = TRUE,
@@ -35585,8 +33485,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14400
-    [TRAINER_JOHN_AND_JAY_5] =
+#line 12766
+    [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_5] =
     {
 #line 14401
         .trainerName = _("JOHN & JAY"),
@@ -35595,7 +33495,7 @@ F_TRAINER_FEMALE |
 #line 14403
         .trainerPic = TRAINER_PIC_OLD_COUPLE,
         .encounterMusic_gender =
-#line 14405
+#line 12771
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14406
         .doubleBattle = TRUE,
@@ -35642,8 +33542,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14425
-    [TRAINER_RELI_AND_IAN] =
+#line 12791
+    [DIFFICULTY_NORMAL][TRAINER_RELI_AND_IAN] =
     {
 #line 14426
         .trainerName = _("RELI & IAN"),
@@ -35652,7 +33552,7 @@ F_TRAINER_FEMALE |
 #line 14428
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .encounterMusic_gender =
-#line 14430
+#line 12796
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14431
         .doubleBattle = TRUE,
@@ -35685,8 +33585,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14442
-    [TRAINER_LILA_AND_ROY_1] =
+#line 12808
+    [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_1] =
     {
 #line 14443
         .trainerName = _("LILA & ROY"),
@@ -35695,7 +33595,7 @@ F_TRAINER_FEMALE |
 #line 14445
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .encounterMusic_gender =
-#line 14447
+#line 12813
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14448
         .doubleBattle = TRUE,
@@ -35728,8 +33628,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14459
-    [TRAINER_LILA_AND_ROY_2] =
+#line 12825
+    [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_2] =
     {
 #line 14460
         .trainerName = _("LILA & ROY"),
@@ -35738,7 +33638,7 @@ F_TRAINER_FEMALE |
 #line 14462
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .encounterMusic_gender =
-#line 14464
+#line 12830
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14465
         .doubleBattle = TRUE,
@@ -35771,8 +33671,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14476
-    [TRAINER_LILA_AND_ROY_3] =
+#line 12842
+    [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_3] =
     {
 #line 14477
         .trainerName = _("LILA & ROY"),
@@ -35781,7 +33681,7 @@ F_TRAINER_FEMALE |
 #line 14479
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .encounterMusic_gender =
-#line 14481
+#line 12847
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14482
         .doubleBattle = TRUE,
@@ -35814,8 +33714,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14493
-    [TRAINER_LILA_AND_ROY_4] =
+#line 12859
+    [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_4] =
     {
 #line 14494
         .trainerName = _("LILA & ROY"),
@@ -35824,7 +33724,7 @@ F_TRAINER_FEMALE |
 #line 14496
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .encounterMusic_gender =
-#line 14498
+#line 12864
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14499
         .doubleBattle = TRUE,
@@ -35857,8 +33757,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14510
-    [TRAINER_LILA_AND_ROY_5] =
+#line 12876
+    [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_5] =
     {
 #line 14511
         .trainerName = _("LILA & ROY"),
@@ -35867,7 +33767,7 @@ F_TRAINER_FEMALE |
 #line 14513
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .encounterMusic_gender =
-#line 14515
+#line 12881
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14516
         .doubleBattle = TRUE,
@@ -35900,8 +33800,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14527
-    [TRAINER_LISA_AND_RAY] =
+#line 12893
+    [DIFFICULTY_NORMAL][TRAINER_LISA_AND_RAY] =
     {
 #line 14528
         .trainerName = _("LISA & RAY"),
@@ -35910,7 +33810,7 @@ F_TRAINER_FEMALE |
 #line 14530
         .trainerPic = TRAINER_PIC_SIS_AND_BRO,
         .encounterMusic_gender =
-#line 14532
+#line 12898
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 14533
         .doubleBattle = TRUE,
@@ -35943,8 +33843,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14544
-    [TRAINER_CHRIS] =
+#line 12910
+    [DIFFICULTY_NORMAL][TRAINER_CHRIS] =
     {
 #line 14545
         .trainerName = _("CHRIS"),
@@ -35953,7 +33853,7 @@ F_TRAINER_FEMALE |
 #line 14547
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 14549
+#line 12915
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14550
         .doubleBattle = TRUE,
@@ -36008,8 +33908,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14569
-    [TRAINER_DAWSON] =
+#line 12935
+    [DIFFICULTY_NORMAL][TRAINER_DAWSON] =
     {
 #line 14570
         .trainerName = _("DAWSON"),
@@ -36018,7 +33918,7 @@ F_TRAINER_FEMALE |
 #line 14572
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender =
-#line 14574
+#line 12940
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 14575
         .doubleBattle = TRUE,
@@ -36053,8 +33953,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14586
-    [TRAINER_SARAH] =
+#line 12952
+    [DIFFICULTY_NORMAL][TRAINER_SARAH] =
     {
 #line 14587
         .trainerName = _("SARAH"),
@@ -36063,7 +33963,7 @@ F_TRAINER_FEMALE |
 #line 14589
         .trainerPic = TRAINER_PIC_LADY,
         .encounterMusic_gender =
-#line 14590
+#line 12956
 F_TRAINER_FEMALE | 
 #line 14591
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -36100,8 +34000,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14603
-    [TRAINER_DARIAN] =
+#line 12970
+    [DIFFICULTY_NORMAL][TRAINER_DARIAN] =
     {
 #line 14604
         .trainerName = _("DARIAN"),
@@ -36110,7 +34010,7 @@ F_TRAINER_FEMALE |
 #line 14606
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 14608
+#line 12975
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14609
         .doubleBattle = TRUE,
@@ -36132,8 +34032,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14616
-    [TRAINER_HAILEY] =
+#line 12983
+    [DIFFICULTY_NORMAL][TRAINER_HAILEY] =
     {
 #line 14617
         .trainerName = _("HAILEY"),
@@ -36142,7 +34042,7 @@ F_TRAINER_FEMALE |
 #line 14619
         .trainerPic = TRAINER_PIC_TUBER_F,
         .encounterMusic_gender =
-#line 14620
+#line 12987
 F_TRAINER_FEMALE | 
 #line 14621
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -36166,8 +34066,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14629
-    [TRAINER_CHANDLER] =
+#line 12996
+    [DIFFICULTY_NORMAL][TRAINER_CHANDLER] =
     {
 #line 14630
         .trainerName = _("CHANDLER"),
@@ -36176,7 +34076,7 @@ F_TRAINER_FEMALE |
 #line 14632
         .trainerPic = TRAINER_PIC_TUBER_M,
         .encounterMusic_gender =
-#line 14634
+#line 13001
             TRAINER_ENCOUNTER_MUSIC_GIRL,
 #line 14635
         .doubleBattle = TRUE,
@@ -36209,8 +34109,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14646
-    [TRAINER_KALEB] =
+#line 13013
+    [DIFFICULTY_NORMAL][TRAINER_KALEB] =
     {
 #line 14647
         .trainerName = _("KALEB"),
@@ -36219,7 +34119,7 @@ F_TRAINER_FEMALE |
 #line 14649
         .trainerPic = TRAINER_PIC_POKEFAN_M,
         .encounterMusic_gender =
-#line 14651
+#line 13018
             TRAINER_ENCOUNTER_MUSIC_TWINS,
 #line 14652
         .doubleBattle = TRUE,
@@ -36256,8 +34156,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14663
-    [TRAINER_JOSEPH] =
+#line 13030
+    [DIFFICULTY_NORMAL][TRAINER_JOSEPH] =
     {
 #line 14664
         .trainerName = _("JOSEPH"),
@@ -36266,7 +34166,7 @@ F_TRAINER_FEMALE |
 #line 14666
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 14668
+#line 13035
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14669
         .doubleBattle = TRUE,
@@ -36299,8 +34199,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14680
-    [TRAINER_ALYSSA] =
+#line 13047
+    [DIFFICULTY_NORMAL][TRAINER_ALYSSA] =
     {
 #line 14681
         .trainerName = _("ALYSSA"),
@@ -36309,7 +34209,7 @@ F_TRAINER_FEMALE |
 #line 14683
         .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 14684
+#line 13051
 F_TRAINER_FEMALE | 
 #line 14685
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -36333,8 +34233,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14693
-    [TRAINER_MARCOS] =
+#line 13060
+    [DIFFICULTY_NORMAL][TRAINER_MARCOS] =
     {
 #line 14694
         .trainerName = _("MARCOS"),
@@ -36343,7 +34243,7 @@ F_TRAINER_FEMALE |
 #line 14696
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 14698
+#line 13065
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14699
         .doubleBattle = TRUE,
@@ -36365,8 +34265,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14706
-    [TRAINER_RHETT] =
+#line 13073
+    [DIFFICULTY_NORMAL][TRAINER_RHETT] =
     {
 #line 14707
         .trainerName = _("RHETT"),
@@ -36375,7 +34275,7 @@ F_TRAINER_FEMALE |
 #line 14709
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 14711
+#line 13078
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 14712
         .doubleBattle = TRUE,
@@ -36397,8 +34297,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14719
-    [TRAINER_TYRON] =
+#line 13086
+    [DIFFICULTY_NORMAL][TRAINER_TYRON] =
     {
 #line 14720
         .trainerName = _("TYRON"),
@@ -36407,7 +34307,7 @@ F_TRAINER_FEMALE |
 #line 14722
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 14724
+#line 13091
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 14725
         .doubleBattle = TRUE,
@@ -36429,8 +34329,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14732
-    [TRAINER_CELINA] =
+#line 13099
+    [DIFFICULTY_NORMAL][TRAINER_CELINA] =
     {
 #line 14733
         .trainerName = _("CELINA"),
@@ -36439,7 +34339,7 @@ F_TRAINER_FEMALE |
 #line 14735
         .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
-#line 14736
+#line 13103
 F_TRAINER_FEMALE | 
 #line 14737
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -36463,8 +34363,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14745
-    [TRAINER_BIANCA] =
+#line 13112
+    [DIFFICULTY_NORMAL][TRAINER_BIANCA] =
     {
 #line 14746
         .trainerName = _("BIANCA"),
@@ -36473,7 +34373,7 @@ F_TRAINER_FEMALE |
 #line 14748
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 14749
+#line 13116
 F_TRAINER_FEMALE | 
 #line 14750
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -36497,8 +34397,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14758
-    [TRAINER_HAYDEN] =
+#line 13125
+    [DIFFICULTY_NORMAL][TRAINER_HAYDEN] =
     {
 #line 14759
         .trainerName = _("HAYDEN"),
@@ -36507,7 +34407,7 @@ F_TRAINER_FEMALE |
 #line 14761
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 14763
+#line 13130
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14764
         .doubleBattle = TRUE,
@@ -36529,8 +34429,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14771
-    [TRAINER_SOPHIE] =
+#line 13138
+    [DIFFICULTY_NORMAL][TRAINER_SOPHIE] =
     {
 #line 14772
         .trainerName = _("SOPHIE"),
@@ -36539,7 +34439,7 @@ F_TRAINER_FEMALE |
 #line 14774
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 14775
+#line 13142
 F_TRAINER_FEMALE | 
 #line 14776
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -36574,8 +34474,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14788
-    [TRAINER_COBY] =
+#line 13155
+    [DIFFICULTY_NORMAL][TRAINER_COBY] =
     {
 #line 14789
         .trainerName = _("COBY"),
@@ -36584,7 +34484,7 @@ F_TRAINER_FEMALE |
 #line 14791
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 14793
+#line 13160
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 14794
         .doubleBattle = TRUE,
@@ -36617,8 +34517,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14805
-    [TRAINER_LAWRENCE] =
+#line 13172
+    [DIFFICULTY_NORMAL][TRAINER_LAWRENCE] =
     {
 #line 14806
         .trainerName = _("LAWRENCE"),
@@ -36627,7 +34527,7 @@ F_TRAINER_FEMALE |
 #line 14808
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 14810
+#line 13177
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 14811
         .doubleBattle = TRUE,
@@ -36660,8 +34560,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14822
-    [TRAINER_WYATT] =
+#line 13189
+    [DIFFICULTY_NORMAL][TRAINER_WYATT] =
     {
 #line 14823
         .trainerName = _("WYATT"),
@@ -36670,7 +34570,7 @@ F_TRAINER_FEMALE |
 #line 14825
         .trainerPic = TRAINER_PIC_POKEMANIAC,
         .encounterMusic_gender =
-#line 14827
+#line 13194
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 14828
         .doubleBattle = TRUE,
@@ -36703,8 +34603,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14839
-    [TRAINER_ANGELINA] =
+#line 13206
+    [DIFFICULTY_NORMAL][TRAINER_ANGELINA] =
     {
 #line 14840
         .trainerName = _("ANGELINA"),
@@ -36713,7 +34613,7 @@ F_TRAINER_FEMALE |
 #line 14842
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 14843
+#line 13210
 F_TRAINER_FEMALE | 
 #line 14844
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -36748,8 +34648,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14856
-    [TRAINER_KAI] =
+#line 13223
+    [DIFFICULTY_NORMAL][TRAINER_KAI] =
     {
 #line 14857
         .trainerName = _("KAI"),
@@ -36758,7 +34658,7 @@ F_TRAINER_FEMALE |
 #line 14859
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .encounterMusic_gender =
-#line 14861
+#line 13228
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 14862
         .doubleBattle = TRUE,
@@ -36780,8 +34680,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14869
-    [TRAINER_CHARLOTTE] =
+#line 13236
+    [DIFFICULTY_NORMAL][TRAINER_CHARLOTTE] =
     {
 #line 14870
         .trainerName = _("CHARLOTTE"),
@@ -36790,7 +34690,7 @@ F_TRAINER_FEMALE |
 #line 14872
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 14873
+#line 13240
 F_TRAINER_FEMALE | 
 #line 14874
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -36814,8 +34714,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14882
-    [TRAINER_DEANDRE] =
+#line 13249
+    [DIFFICULTY_NORMAL][TRAINER_DEANDRE] =
     {
 #line 14883
         .trainerName = _("DEANDRE"),
@@ -36824,7 +34724,7 @@ F_TRAINER_FEMALE |
 #line 14885
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 14887
+#line 13254
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 14888
         .doubleBattle = TRUE,
@@ -36868,8 +34768,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14903
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
+#line 13270
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
     {
 #line 14904
         .trainerName = _("GRUNT"),
@@ -36878,7 +34778,7 @@ F_TRAINER_FEMALE |
 #line 14906
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 14908
+#line 13275
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14909
         .doubleBattle = TRUE,
@@ -36900,8 +34800,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14916
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
+#line 13283
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
     {
 #line 14917
         .trainerName = _("GRUNT"),
@@ -36910,7 +34810,7 @@ F_TRAINER_FEMALE |
 #line 14919
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 14921
+#line 13288
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14922
         .doubleBattle = TRUE,
@@ -36932,8 +34832,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14929
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
+#line 13296
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
     {
 #line 14930
         .trainerName = _("GRUNT"),
@@ -36942,7 +34842,7 @@ F_TRAINER_FEMALE |
 #line 14932
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 14934
+#line 13301
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14935
         .doubleBattle = TRUE,
@@ -36964,8 +34864,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14942
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
+#line 13309
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
     {
 #line 14943
         .trainerName = _("GRUNT"),
@@ -36974,7 +34874,7 @@ F_TRAINER_FEMALE |
 #line 14945
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 14947
+#line 13314
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14948
         .doubleBattle = TRUE,
@@ -37007,8 +34907,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14959
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
+#line 13326
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
     {
 #line 14960
         .trainerName = _("GRUNT"),
@@ -37017,7 +34917,7 @@ F_TRAINER_FEMALE |
 #line 14962
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 14964
+#line 13331
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14965
         .doubleBattle = TRUE,
@@ -37050,8 +34950,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14976
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
+#line 13343
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
     {
 #line 14977
         .trainerName = _("GRUNT"),
@@ -37060,7 +34960,7 @@ F_TRAINER_FEMALE |
 #line 14979
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 14981
+#line 13348
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14982
         .doubleBattle = TRUE,
@@ -37082,8 +34982,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 14989
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
+#line 13356
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
     {
 #line 14990
         .trainerName = _("GRUNT"),
@@ -37092,7 +34992,7 @@ F_TRAINER_FEMALE |
 #line 14992
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 14994
+#line 13361
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 14995
         .doubleBattle = TRUE,
@@ -37114,8 +35014,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15002
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
+#line 13369
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
     {
 #line 15003
         .trainerName = _("GRUNT"),
@@ -37124,7 +35024,7 @@ F_TRAINER_FEMALE |
 #line 15005
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 15007
+#line 13374
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15008
         .doubleBattle = TRUE,
@@ -37146,8 +35046,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15015
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
+#line 13382
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
     {
 #line 15016
         .trainerName = _("GRUNT"),
@@ -37156,7 +35056,7 @@ F_TRAINER_FEMALE |
 #line 15018
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 15020
+#line 13387
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15021
         .doubleBattle = TRUE,
@@ -37178,8 +35078,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15028
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
+#line 13395
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
     {
 #line 15029
         .trainerName = _("GRUNT"),
@@ -37188,7 +35088,7 @@ F_TRAINER_FEMALE |
 #line 15031
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 15033
+#line 13400
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15034
         .doubleBattle = TRUE,
@@ -37210,8 +35110,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15041
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
+#line 13408
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
     {
 #line 15042
         .trainerName = _("GRUNT"),
@@ -37220,7 +35120,7 @@ F_TRAINER_FEMALE |
 #line 15044
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 15046
+#line 13413
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15047
         .doubleBattle = TRUE,
@@ -37242,8 +35142,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15054
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
+#line 13421
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
     {
 #line 15055
         .trainerName = _("GRUNT"),
@@ -37252,7 +35152,7 @@ F_TRAINER_FEMALE |
 #line 15057
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 15059
+#line 13426
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15060
         .doubleBattle = TRUE,
@@ -37274,8 +35174,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15067
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
+#line 13434
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
     {
 #line 15068
         .trainerName = _("GRUNT"),
@@ -37284,7 +35184,7 @@ F_TRAINER_FEMALE |
 #line 15070
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender =
-#line 15072
+#line 13439
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15073
         .doubleBattle = TRUE,
@@ -37306,8 +35206,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15080
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
+#line 13447
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
     {
 #line 15081
         .trainerName = _("GRUNT"),
@@ -37316,7 +35216,7 @@ F_TRAINER_FEMALE |
 #line 15083
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .encounterMusic_gender =
-#line 15084
+#line 13451
 F_TRAINER_FEMALE | 
 #line 15085
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
@@ -37340,8 +35240,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15093
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
+#line 13460
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
     {
 #line 15094
         .trainerName = _("GRUNT"),
@@ -37350,7 +35250,7 @@ F_TRAINER_FEMALE |
 #line 15096
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .encounterMusic_gender =
-#line 15097
+#line 13464
 F_TRAINER_FEMALE | 
 #line 15098
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
@@ -37374,8 +35274,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15106
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
+#line 13473
+    [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
     {
 #line 15107
         .trainerName = _("GRUNT"),
@@ -37384,7 +35284,7 @@ F_TRAINER_FEMALE |
 #line 15109
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .encounterMusic_gender =
-#line 15110
+#line 13477
 F_TRAINER_FEMALE | 
 #line 15111
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
@@ -37408,17 +35308,17 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15119
-    [TRAINER_TABITHA_MAGMA_HIDEOUT] =
+#line 13486
+    [DIFFICULTY_NORMAL][TRAINER_TABITHA_MAGMA_HIDEOUT] =
     {
 #line 15120
         .trainerName = _("TABITHA"),
 #line 15121
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-#line 15122
-        .trainerPic = TRAINER_PIC_TABITHA_ORAS,
+#line 13489
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
         .encounterMusic_gender =
-#line 15124
+#line 13491
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15125
         .doubleBattle = TRUE,
@@ -37473,8 +35373,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15144
-    [TRAINER_DARCY] =
+#line 13511
+    [DIFFICULTY_NORMAL][TRAINER_DARCY] =
     {
 #line 15145
         .trainerName = _("DARCY"),
@@ -37483,7 +35383,7 @@ F_TRAINER_FEMALE |
 #line 15147
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 15148
+#line 13515
 F_TRAINER_FEMALE | 
 #line 15149
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -37518,17 +35418,17 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15161
-    [TRAINER_MAXIE_MOSSDEEP] =
+#line 13529
+    [DIFFICULTY_NORMAL][TRAINER_MAXIE_MOSSDEEP] =
     {
 #line 15162
         .trainerName = _("MAXIE"),
 #line 15163
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-#line 15164
-        .trainerPic = TRAINER_PIC_MAXIE_ORAS,
+#line 13532
+        .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
         .encounterMusic_gender =
-#line 15166
+#line 13534
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
 #line 15167
         .doubleBattle = TRUE,
@@ -37572,8 +35472,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15182
-    [TRAINER_PETE] =
+#line 13550
+    [DIFFICULTY_NORMAL][TRAINER_PETE] =
     {
 #line 15183
         .trainerName = _("PETE"),
@@ -37582,7 +35482,7 @@ F_TRAINER_FEMALE |
 #line 15185
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .encounterMusic_gender =
-#line 15187
+#line 13555
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 15188
         .doubleBattle = TRUE,
@@ -37604,8 +35504,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15195
-    [TRAINER_ISABELLE] =
+#line 13563
+    [DIFFICULTY_NORMAL][TRAINER_ISABELLE] =
     {
 #line 15196
         .trainerName = _("ISABELLE"),
@@ -37614,7 +35514,7 @@ F_TRAINER_FEMALE |
 #line 15198
         .trainerPic = TRAINER_PIC_SWIMMER_F,
         .encounterMusic_gender =
-#line 15199
+#line 13567
 F_TRAINER_FEMALE | 
 #line 15200
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
@@ -37638,8 +35538,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15208
-    [TRAINER_ANDRES_1] =
+#line 13576
+    [DIFFICULTY_NORMAL][TRAINER_ANDRES_1] =
     {
 #line 15209
         .trainerName = _("ANDRES"),
@@ -37648,7 +35548,7 @@ F_TRAINER_FEMALE |
 #line 15211
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 15213
+#line 13581
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15214
         .doubleBattle = TRUE,
@@ -37681,8 +35581,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15225
-    [TRAINER_JOSUE] =
+#line 13593
+    [DIFFICULTY_NORMAL][TRAINER_JOSUE] =
     {
 #line 15226
         .trainerName = _("JOSUE"),
@@ -37691,7 +35591,7 @@ F_TRAINER_FEMALE |
 #line 15228
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 15230
+#line 13598
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 15231
         .doubleBattle = TRUE,
@@ -37724,8 +35624,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15242
-    [TRAINER_CAMRON] =
+#line 13610
+    [DIFFICULTY_NORMAL][TRAINER_CAMRON] =
     {
 #line 15243
         .trainerName = _("CAMRON"),
@@ -37734,7 +35634,7 @@ F_TRAINER_FEMALE |
 #line 15245
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 15247
+#line 13615
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 15248
         .doubleBattle = TRUE,
@@ -37756,8 +35656,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15255
-    [TRAINER_CORY_1] =
+#line 13623
+    [DIFFICULTY_NORMAL][TRAINER_CORY_1] =
     {
 #line 15256
         .trainerName = _("CORY"),
@@ -37766,7 +35666,7 @@ F_TRAINER_FEMALE |
 #line 15258
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 15260
+#line 13628
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 15261
         .doubleBattle = TRUE,
@@ -37810,8 +35710,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15276
-    [TRAINER_CAROLINA] =
+#line 13644
+    [DIFFICULTY_NORMAL][TRAINER_CAROLINA] =
     {
 #line 15277
         .trainerName = _("CAROLINA"),
@@ -37820,7 +35720,7 @@ F_TRAINER_FEMALE |
 #line 15279
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 15280
+#line 13648
 F_TRAINER_FEMALE | 
 #line 15281
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -37866,8 +35766,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15297
-    [TRAINER_ELIJAH] =
+#line 13666
+    [DIFFICULTY_NORMAL][TRAINER_ELIJAH] =
     {
 #line 15298
         .trainerName = _("ELIJAH"),
@@ -37876,7 +35776,7 @@ F_TRAINER_FEMALE |
 #line 15300
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 15302
+#line 13671
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 15303
         .doubleBattle = TRUE,
@@ -37909,8 +35809,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15314
-    [TRAINER_CELIA] =
+#line 13683
+    [DIFFICULTY_NORMAL][TRAINER_CELIA] =
     {
 #line 15315
         .trainerName = _("CELIA"),
@@ -37919,7 +35819,7 @@ F_TRAINER_FEMALE |
 #line 15317
         .trainerPic = TRAINER_PIC_PICNICKER,
         .encounterMusic_gender =
-#line 15318
+#line 13687
 F_TRAINER_FEMALE | 
 #line 15319
             TRAINER_ENCOUNTER_MUSIC_GIRL,
@@ -37954,8 +35854,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15331
-    [TRAINER_BRYAN] =
+#line 13700
+    [DIFFICULTY_NORMAL][TRAINER_BRYAN] =
     {
 #line 15332
         .trainerName = _("BRYAN"),
@@ -37964,7 +35864,7 @@ F_TRAINER_FEMALE |
 #line 15334
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 15336
+#line 13705
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15337
         .doubleBattle = TRUE,
@@ -37997,8 +35897,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15348
-    [TRAINER_BRANDEN] =
+#line 13717
+    [DIFFICULTY_NORMAL][TRAINER_BRANDEN] =
     {
 #line 15349
         .trainerName = _("BRANDEN"),
@@ -38007,7 +35907,7 @@ F_TRAINER_FEMALE |
 #line 15351
         .trainerPic = TRAINER_PIC_CAMPER,
         .encounterMusic_gender =
-#line 15353
+#line 13722
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 15354
         .doubleBattle = TRUE,
@@ -38040,8 +35940,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15365
-    [TRAINER_BRYANT] =
+#line 13734
+    [DIFFICULTY_NORMAL][TRAINER_BRYANT] =
     {
 #line 15366
         .trainerName = _("BRYANT"),
@@ -38050,7 +35950,7 @@ F_TRAINER_FEMALE |
 #line 15368
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 15370
+#line 13739
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15371
         .doubleBattle = TRUE,
@@ -38083,8 +35983,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15382
-    [TRAINER_SHAYLA] =
+#line 13751
+    [DIFFICULTY_NORMAL][TRAINER_SHAYLA] =
     {
 #line 15383
         .trainerName = _("SHAYLA"),
@@ -38093,7 +35993,7 @@ F_TRAINER_FEMALE |
 #line 15385
         .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender =
-#line 15386
+#line 13755
 F_TRAINER_FEMALE | 
 #line 15387
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -38128,8 +36028,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15399
-    [TRAINER_KYRA] =
+#line 13768
+    [DIFFICULTY_NORMAL][TRAINER_KYRA] =
     {
 #line 15400
         .trainerName = _("KYRA"),
@@ -38138,7 +36038,7 @@ F_TRAINER_FEMALE |
 #line 15402
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 15403
+#line 13772
 F_TRAINER_FEMALE | 
 #line 15404
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -38173,8 +36073,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15416
-    [TRAINER_JAIDEN] =
+#line 13785
+    [DIFFICULTY_NORMAL][TRAINER_JAIDEN] =
     {
 #line 15417
         .trainerName = _("JAIDEN"),
@@ -38183,7 +36083,7 @@ F_TRAINER_FEMALE |
 #line 15419
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .encounterMusic_gender =
-#line 15421
+#line 13790
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 15422
         .doubleBattle = TRUE,
@@ -38216,8 +36116,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15433
-    [TRAINER_ALIX] =
+#line 13802
+    [DIFFICULTY_NORMAL][TRAINER_ALIX] =
     {
 #line 15434
         .trainerName = _("ALIX"),
@@ -38226,7 +36126,7 @@ F_TRAINER_FEMALE |
 #line 15436
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 15437
+#line 13806
 F_TRAINER_FEMALE | 
 #line 15438
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -38261,8 +36161,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15450
-    [TRAINER_HELENE] =
+#line 13819
+    [DIFFICULTY_NORMAL][TRAINER_HELENE] =
     {
 #line 15451
         .trainerName = _("HELENE"),
@@ -38271,7 +36171,7 @@ F_TRAINER_FEMALE |
 #line 15453
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 15454
+#line 13823
 F_TRAINER_FEMALE | 
 #line 15455
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -38306,8 +36206,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15467
-    [TRAINER_MARLENE] =
+#line 13836
+    [DIFFICULTY_NORMAL][TRAINER_MARLENE] =
     {
 #line 15468
         .trainerName = _("MARLENE"),
@@ -38316,7 +36216,7 @@ F_TRAINER_FEMALE |
 #line 15470
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 15471
+#line 13840
 F_TRAINER_FEMALE | 
 #line 15472
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -38351,8 +36251,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15484
-    [TRAINER_DEVAN] =
+#line 13853
+    [DIFFICULTY_NORMAL][TRAINER_DEVAN] =
     {
 #line 15485
         .trainerName = _("DEVAN"),
@@ -38361,7 +36261,7 @@ F_TRAINER_FEMALE |
 #line 15487
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 15489
+#line 13858
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15490
         .doubleBattle = TRUE,
@@ -38394,8 +36294,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15501
-    [TRAINER_JOHNSON] =
+#line 13870
+    [DIFFICULTY_NORMAL][TRAINER_JOHNSON] =
     {
 #line 15502
         .trainerName = _("JOHNSON"),
@@ -38404,7 +36304,7 @@ F_TRAINER_FEMALE |
 #line 15504
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender =
-#line 15506
+#line 13875
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 15507
         .doubleBattle = TRUE,
@@ -38437,8 +36337,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15518
-    [TRAINER_MELINA] =
+#line 13887
+    [DIFFICULTY_NORMAL][TRAINER_MELINA] =
     {
 #line 15519
         .trainerName = _("MELINA"),
@@ -38447,7 +36347,7 @@ F_TRAINER_FEMALE |
 #line 15521
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
         .encounterMusic_gender =
-#line 15522
+#line 13891
 F_TRAINER_FEMALE | 
 #line 15523
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -38473,8 +36373,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15532
-    [TRAINER_BRANDI] =
+#line 13900
+    [DIFFICULTY_NORMAL][TRAINER_BRANDI] =
     {
 #line 15533
         .trainerName = _("BRANDI"),
@@ -38483,7 +36383,7 @@ F_TRAINER_FEMALE |
 #line 15535
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 15536
+#line 13904
 F_TRAINER_FEMALE | 
 #line 15537
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -38509,8 +36409,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15546
-    [TRAINER_AISHA] =
+#line 13913
+    [DIFFICULTY_NORMAL][TRAINER_AISHA] =
     {
 #line 15547
         .trainerName = _("AISHA"),
@@ -38519,7 +36419,7 @@ F_TRAINER_FEMALE |
 #line 15549
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 15550
+#line 13917
 F_TRAINER_FEMALE | 
 #line 15551
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -38545,8 +36445,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15560
-    [TRAINER_MAKAYLA] =
+#line 13926
+    [DIFFICULTY_NORMAL][TRAINER_MAKAYLA] =
     {
 #line 15561
         .trainerName = _("MAKAYLA"),
@@ -38555,7 +36455,7 @@ F_TRAINER_FEMALE |
 #line 15563
         .trainerPic = TRAINER_PIC_EXPERT_F,
         .encounterMusic_gender =
-#line 15564
+#line 13930
 F_TRAINER_FEMALE | 
 #line 15565
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -38590,8 +36490,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15577
-    [TRAINER_FABIAN] =
+#line 13944
+    [DIFFICULTY_NORMAL][TRAINER_FABIAN] =
     {
 #line 15578
         .trainerName = _("FABIAN"),
@@ -38600,7 +36500,7 @@ F_TRAINER_FEMALE |
 #line 15580
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 15582
+#line 13949
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 15583
         .doubleBattle = TRUE,
@@ -38622,8 +36522,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15590
-    [TRAINER_DAYTON] =
+#line 13957
+    [DIFFICULTY_NORMAL][TRAINER_DAYTON] =
     {
 #line 15591
         .trainerName = _("DAYTON"),
@@ -38632,7 +36532,7 @@ F_TRAINER_FEMALE |
 #line 15593
         .trainerPic = TRAINER_PIC_KINDLER,
         .encounterMusic_gender =
-#line 15595
+#line 13962
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 15596
         .doubleBattle = TRUE,
@@ -38665,8 +36565,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15607
-    [TRAINER_RACHEL] =
+#line 13974
+    [DIFFICULTY_NORMAL][TRAINER_RACHEL] =
     {
 #line 15608
         .trainerName = _("RACHEL"),
@@ -38675,7 +36575,7 @@ F_TRAINER_FEMALE |
 #line 15610
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
         .encounterMusic_gender =
-#line 15611
+#line 13978
 F_TRAINER_FEMALE | 
 #line 15612
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -38699,8 +36599,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15620
-    [TRAINER_LEONEL] =
+#line 13987
+    [DIFFICULTY_NORMAL][TRAINER_LEONEL] =
     {
 #line 15621
         .trainerName = _("LEONEL"),
@@ -38709,7 +36609,7 @@ F_TRAINER_FEMALE |
 #line 15623
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 15625
+#line 13992
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 15626
         .doubleBattle = TRUE,
@@ -38737,8 +36637,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15636
-    [TRAINER_CALLIE] =
+#line 14004
+    [DIFFICULTY_NORMAL][TRAINER_CALLIE] =
     {
 #line 15637
         .trainerName = _("CALLIE"),
@@ -38747,7 +36647,7 @@ F_TRAINER_FEMALE |
 #line 15639
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
         .encounterMusic_gender =
-#line 15640
+#line 14008
 F_TRAINER_FEMALE | 
 #line 15641
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -38782,8 +36682,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15653
-    [TRAINER_CALE] =
+#line 14021
+    [DIFFICULTY_NORMAL][TRAINER_CALE] =
     {
 #line 15654
         .trainerName = _("CALE"),
@@ -38792,7 +36692,7 @@ F_TRAINER_FEMALE |
 #line 15656
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 15658
+#line 14026
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 15659
         .doubleBattle = TRUE,
@@ -38825,8 +36725,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15670
-    [TRAINER_MYLES] =
+#line 14038
+    [DIFFICULTY_NORMAL][TRAINER_MYLES] =
     {
 #line 15671
         .trainerName = _("MYLES"),
@@ -38835,7 +36735,7 @@ F_TRAINER_FEMALE |
 #line 15673
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
         .encounterMusic_gender =
-#line 15675
+#line 14043
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 15676
         .doubleBattle = TRUE,
@@ -38912,8 +36812,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15703
-    [TRAINER_PAT] =
+#line 14071
+    [DIFFICULTY_NORMAL][TRAINER_PAT] =
     {
 #line 15704
         .trainerName = _("PAT"),
@@ -38922,7 +36822,7 @@ F_TRAINER_FEMALE |
 #line 15706
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 15707
+#line 14075
 F_TRAINER_FEMALE | 
 #line 15708
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -39001,8 +36901,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15736
-    [TRAINER_CRISTIN_1] =
+#line 14104
+    [DIFFICULTY_NORMAL][TRAINER_CRISTIN_1] =
     {
 #line 15737
         .trainerName = _("CRISTIN"),
@@ -39011,7 +36911,7 @@ F_TRAINER_FEMALE |
 #line 15739
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 15740
+#line 14108
 F_TRAINER_FEMALE | 
 #line 15741
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -39046,8 +36946,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15753
-    [TRAINER_MAY_RUSTBORO_TREECKO] =
+#line 14122
+    [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_TREECKO] =
     {
 #line 15754
         .trainerName = _("MAY"),
@@ -39056,7 +36956,7 @@ F_TRAINER_FEMALE |
 #line 15756
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 15757
+#line 14126
 F_TRAINER_FEMALE | 
 #line 15758
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -39113,126 +37013,11 @@ F_TRAINER_FEMALE |
 #line 15778
             .isShiny = TRUE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15779
-            .teraType = TYPE_BUG,
-            .moves = {
-#line 15782
-                MOVE_ATTACK_ORDER,
-                MOVE_HEAL_ORDER,
-                MOVE_ACROBATICS,
-                MOVE_U_TURN,
-            },
-            },
-            {
-#line 15787
-            .species = SPECIES_CHIMECHO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 15792
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
-#line 15794
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 15789
-            .ability = ABILITY_LEVITATE,
-#line 15788
-            .lvl = 50,
-#line 15793
-            .nature = NATURE_MODEST,
-#line 15790
-            .isShiny = FALSE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15791
-            .teraType = TYPE_PSYCHIC,
-            .moves = {
-#line 15795
-                MOVE_DAZZLING_GLEAM,
-                MOVE_PSYCHIC,
-                MOVE_SIGNAL_BEAM,
-                MOVE_THUNDER_WAVE,
-            },
-            },
-            {
-#line 15800
-            .species = SPECIES_BLAZIKEN,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 15800
-            .heldItem = ITEM_SITRUS_BERRY,
-#line 15804
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 15806
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 15802
-            .ability = ABILITY_BLAZE,
-#line 15801
-            .lvl = 50,
-#line 15805
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15803
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 15806
-                MOVE_FLARE_BLITZ,
-                MOVE_BRAVE_BIRD,
-                MOVE_HIGH_JUMP_KICK,
-                MOVE_U_TURN,
-            },
-            },
-            {
-#line 15811
-            .species = SPECIES_ROTOM_MOW,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 15811
-            .heldItem = ITEM_WHITE_HERB,
-#line 15815
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
-#line 15817
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 15813
-            .ability = ABILITY_LEVITATE,
-#line 15812
-            .lvl = 50,
-#line 15816
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15814
-            .teraType = TYPE_ELECTRIC,
-            .moves = {
-#line 15818
-                MOVE_LEAF_STORM,
-                MOVE_THUNDERBOLT,
-                MOVE_WILL_O_WISP,
-                MOVE_HEX,
-            },
-            },
-            {
-#line 15823
-            .species = SPECIES_BASCULEGION_F,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 15827
-            .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 4),
-#line 15829
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 15825
-            .ability = ABILITY_MOLD_BREAKER,
-#line 15824
-            .lvl = 50,
-#line 15828
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15826
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 15829
-                MOVE_FLIP_TURN,
-                MOVE_AQUA_JET,
-                MOVE_PSYCHIC_FANGS,
-                MOVE_CRUNCH,
-            },
             },
         },
     },
-#line 15834
-    [TRAINER_MAY_RUSTBORO_TORCHIC] =
+#line 14139
+    [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_TORCHIC] =
     {
 #line 15835
         .trainerName = _("MAY"),
@@ -39241,7 +37026,7 @@ F_TRAINER_FEMALE |
 #line 15837
         .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
-#line 15838
+#line 14143
 F_TRAINER_FEMALE | 
 #line 15839
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -39298,126 +37083,11 @@ F_TRAINER_FEMALE |
 #line 15859
             .isShiny = FALSE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15860
-            .teraType = TYPE_BUG,
-            .moves = {
-#line 15863
-                MOVE_ATTACK_ORDER,
-                MOVE_HEAL_ORDER,
-                MOVE_ACROBATICS,
-                MOVE_U_TURN,
-            },
-            },
-            {
-#line 15868
-            .species = SPECIES_CHIMECHO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 15873
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 4),
-#line 15875
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 15870
-            .ability = ABILITY_LEVITATE,
-#line 15869
-            .lvl = 50,
-#line 15874
-            .nature = NATURE_MODEST,
-#line 15871
-            .isShiny = TRUE,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15872
-            .teraType = TYPE_PSYCHIC,
-            .moves = {
-#line 15876
-                MOVE_DAZZLING_GLEAM,
-                MOVE_PSYCHIC,
-                MOVE_SIGNAL_BEAM,
-                MOVE_THUNDER_WAVE,
-            },
-            },
-            {
-#line 15881
-            .species = SPECIES_CERULEDGE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 15885
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 15887
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 15883
-            .ability = ABILITY_FLASH_FIRE,
-#line 15882
-            .lvl = 50,
-#line 15886
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15884
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 15887
-                MOVE_BITTER_BLADE,
-                MOVE_X_SCISSOR,
-                MOVE_SHADOW_SNEAK,
-                MOVE_SWORDS_DANCE,
-            },
-            },
-            {
-#line 15892
-            .species = SPECIES_ROTOM_MOW,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 15892
-            .heldItem = ITEM_WHITE_HERB,
-#line 15896
-            .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
-#line 15898
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 15894
-            .ability = ABILITY_LEVITATE,
-#line 15893
-            .lvl = 50,
-#line 15897
-            .nature = NATURE_MODEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15895
-            .teraType = TYPE_ELECTRIC,
-            .moves = {
-#line 15899
-                MOVE_LEAF_STORM,
-                MOVE_THUNDERBOLT,
-                MOVE_WILL_O_WISP,
-                MOVE_HEX,
-            },
-            },
-            {
-#line 15904
-            .species = SPECIES_SWAMPERT,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 15904
-            .heldItem = ITEM_RINDO_BERRY,
-#line 15908
-            .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 4),
-#line 15910
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 15906
-            .ability = ABILITY_TORRENT,
-#line 15905
-            .lvl = 50,
-#line 15909
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 15907
-            .teraType = TYPE_WATER,
-            .moves = {
-#line 15910
-                MOVE_FLIP_TURN,
-                MOVE_WATERFALL,
-                MOVE_HIGH_HORSEPOWER,
-                MOVE_POISON_JAB,
-            },
             },
         },
     },
-#line 15915
-    [TRAINER_ROXANNE_2] =
+#line 14156
+    [DIFFICULTY_NORMAL][TRAINER_ROXANNE_2] =
     {
 #line 15916
         .trainerName = _("ROXANNE"),
@@ -39426,7 +37096,7 @@ F_TRAINER_FEMALE |
 #line 15918
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .encounterMusic_gender =
-#line 15919
+#line 14160
 F_TRAINER_FEMALE | 
 #line 15920
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -39515,8 +37185,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 15956
-    [TRAINER_ROXANNE_3] =
+#line 14198
+    [DIFFICULTY_NORMAL][TRAINER_ROXANNE_3] =
     {
 #line 15957
         .trainerName = _("ROXANNE"),
@@ -39525,7 +37195,7 @@ F_TRAINER_FEMALE |
 #line 15959
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .encounterMusic_gender =
-#line 15960
+#line 14202
 F_TRAINER_FEMALE | 
 #line 15961
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -39632,8 +37302,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16005
-    [TRAINER_ROXANNE_4] =
+#line 14248
+    [DIFFICULTY_NORMAL][TRAINER_ROXANNE_4] =
     {
 #line 16006
         .trainerName = _("ROXANNE"),
@@ -39642,7 +37312,7 @@ F_TRAINER_FEMALE |
 #line 16008
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .encounterMusic_gender =
-#line 16009
+#line 14252
 F_TRAINER_FEMALE | 
 #line 16010
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -39749,8 +37419,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16054
-    [TRAINER_ROXANNE_5] =
+#line 14298
+    [DIFFICULTY_NORMAL][TRAINER_ROXANNE_5] =
     {
 #line 16055
         .trainerName = _("ROXANNE"),
@@ -39759,7 +37429,7 @@ F_TRAINER_FEMALE |
 #line 16057
         .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
         .encounterMusic_gender =
-#line 16058
+#line 14302
 F_TRAINER_FEMALE | 
 #line 16059
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -39884,8 +37554,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16111
-    [TRAINER_BRAWLY_2] =
+#line 14356
+    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_2] =
     {
 #line 16112
         .trainerName = _("BRAWLY"),
@@ -39894,7 +37564,7 @@ F_TRAINER_FEMALE |
 #line 16114
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .encounterMusic_gender =
-#line 16116
+#line 14361
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16117
         .doubleBattle = TRUE,
@@ -39981,8 +37651,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16152
-    [TRAINER_BRAWLY_3] =
+#line 14398
+    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_3] =
     {
 #line 16153
         .trainerName = _("BRAWLY"),
@@ -39991,7 +37661,7 @@ F_TRAINER_FEMALE |
 #line 16155
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .encounterMusic_gender =
-#line 16157
+#line 14403
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16158
         .doubleBattle = TRUE,
@@ -40078,8 +37748,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16193
-    [TRAINER_BRAWLY_4] =
+#line 14440
+    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_4] =
     {
 #line 16194
         .trainerName = _("BRAWLY"),
@@ -40088,7 +37758,7 @@ F_TRAINER_FEMALE |
 #line 16196
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .encounterMusic_gender =
-#line 16198
+#line 14445
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16199
         .doubleBattle = TRUE,
@@ -40193,8 +37863,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16242
-    [TRAINER_BRAWLY_5] =
+#line 14490
+    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_5] =
     {
 #line 16243
         .trainerName = _("BRAWLY"),
@@ -40203,7 +37873,7 @@ F_TRAINER_FEMALE |
 #line 16245
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .encounterMusic_gender =
-#line 16247
+#line 14495
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16248
         .doubleBattle = TRUE,
@@ -40326,8 +37996,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16299
-    [TRAINER_WATTSON_2] =
+#line 14548
+    [DIFFICULTY_NORMAL][TRAINER_WATTSON_2] =
     {
 #line 16300
         .trainerName = _("WATTSON"),
@@ -40336,7 +38006,7 @@ F_TRAINER_FEMALE |
 #line 16302
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .encounterMusic_gender =
-#line 16304
+#line 14553
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16305
         .doubleBattle = TRUE,
@@ -40423,8 +38093,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16340
-    [TRAINER_WATTSON_3] =
+#line 14590
+    [DIFFICULTY_NORMAL][TRAINER_WATTSON_3] =
     {
 #line 16341
         .trainerName = _("WATTSON"),
@@ -40433,7 +38103,7 @@ F_TRAINER_FEMALE |
 #line 16343
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .encounterMusic_gender =
-#line 16345
+#line 14595
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16346
         .doubleBattle = TRUE,
@@ -40538,8 +38208,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16389
-    [TRAINER_WATTSON_4] =
+#line 14640
+    [DIFFICULTY_NORMAL][TRAINER_WATTSON_4] =
     {
 #line 16390
         .trainerName = _("WATTSON"),
@@ -40548,7 +38218,7 @@ F_TRAINER_FEMALE |
 #line 16392
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .encounterMusic_gender =
-#line 16394
+#line 14645
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16395
         .doubleBattle = TRUE,
@@ -40653,8 +38323,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16438
-    [TRAINER_WATTSON_5] =
+#line 14690
+    [DIFFICULTY_NORMAL][TRAINER_WATTSON_5] =
     {
 #line 16439
         .trainerName = _("WATTSON"),
@@ -40663,7 +38333,7 @@ F_TRAINER_FEMALE |
 #line 16441
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .encounterMusic_gender =
-#line 16443
+#line 14695
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16444
         .doubleBattle = TRUE,
@@ -40786,8 +38456,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16495
-    [TRAINER_FLANNERY_2] =
+#line 14748
+    [DIFFICULTY_NORMAL][TRAINER_FLANNERY_2] =
     {
 #line 16496
         .trainerName = _("FLANNERY"),
@@ -40796,7 +38466,7 @@ F_TRAINER_FEMALE |
 #line 16498
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .encounterMusic_gender =
-#line 16499
+#line 14752
 F_TRAINER_FEMALE | 
 #line 16500
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -40887,8 +38557,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16536
-    [TRAINER_FLANNERY_3] =
+#line 14790
+    [DIFFICULTY_NORMAL][TRAINER_FLANNERY_3] =
     {
 #line 16537
         .trainerName = _("FLANNERY"),
@@ -40897,7 +38567,7 @@ F_TRAINER_FEMALE |
 #line 16539
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .encounterMusic_gender =
-#line 16540
+#line 14794
 F_TRAINER_FEMALE | 
 #line 16541
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -41006,8 +38676,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16585
-    [TRAINER_FLANNERY_4] =
+#line 14840
+    [DIFFICULTY_NORMAL][TRAINER_FLANNERY_4] =
     {
 #line 16586
         .trainerName = _("FLANNERY"),
@@ -41016,7 +38686,7 @@ F_TRAINER_FEMALE |
 #line 16588
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .encounterMusic_gender =
-#line 16589
+#line 14844
 F_TRAINER_FEMALE | 
 #line 16590
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -41143,8 +38813,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16642
-    [TRAINER_FLANNERY_5] =
+#line 14898
+    [DIFFICULTY_NORMAL][TRAINER_FLANNERY_5] =
     {
 #line 16643
         .trainerName = _("FLANNERY"),
@@ -41153,7 +38823,7 @@ F_TRAINER_FEMALE |
 #line 16645
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .encounterMusic_gender =
-#line 16646
+#line 14902
 F_TRAINER_FEMALE | 
 #line 16647
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -41280,8 +38950,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16699
-    [TRAINER_NORMAN_2] =
+#line 14956
+    [DIFFICULTY_NORMAL][TRAINER_NORMAN_2] =
     {
 #line 16700
         .trainerName = _("NORMAN"),
@@ -41290,7 +38960,7 @@ F_TRAINER_FEMALE |
 #line 16702
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender =
-#line 16704
+#line 14961
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16705
         .doubleBattle = TRUE,
@@ -41377,8 +39047,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16740
-    [TRAINER_NORMAN_3] =
+#line 14998
+    [DIFFICULTY_NORMAL][TRAINER_NORMAN_3] =
     {
 #line 16741
         .trainerName = _("NORMAN"),
@@ -41387,7 +39057,7 @@ F_TRAINER_FEMALE |
 #line 16743
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender =
-#line 16745
+#line 15003
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16746
         .doubleBattle = TRUE,
@@ -41492,8 +39162,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16789
-    [TRAINER_NORMAN_4] =
+#line 15048
+    [DIFFICULTY_NORMAL][TRAINER_NORMAN_4] =
     {
 #line 16790
         .trainerName = _("NORMAN"),
@@ -41502,7 +39172,7 @@ F_TRAINER_FEMALE |
 #line 16792
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender =
-#line 16794
+#line 15053
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16795
         .doubleBattle = TRUE,
@@ -41607,8 +39277,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16838
-    [TRAINER_NORMAN_5] =
+#line 15098
+    [DIFFICULTY_NORMAL][TRAINER_NORMAN_5] =
     {
 #line 16839
         .trainerName = _("NORMAN"),
@@ -41617,7 +39287,7 @@ F_TRAINER_FEMALE |
 #line 16841
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender =
-#line 16843
+#line 15103
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16844
         .doubleBattle = TRUE,
@@ -41740,8 +39410,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16895
-    [TRAINER_WINONA_2] =
+#line 15156
+    [DIFFICULTY_NORMAL][TRAINER_WINONA_2] =
     {
 #line 16896
         .trainerName = _("WINONA"),
@@ -41750,7 +39420,7 @@ F_TRAINER_FEMALE |
 #line 16898
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .encounterMusic_gender =
-#line 16899
+#line 15160
 F_TRAINER_FEMALE | 
 #line 16900
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -41857,8 +39527,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 16944
-    [TRAINER_WINONA_3] =
+#line 15206
+    [DIFFICULTY_NORMAL][TRAINER_WINONA_3] =
     {
 #line 16945
         .trainerName = _("WINONA"),
@@ -41867,7 +39537,7 @@ F_TRAINER_FEMALE |
 #line 16947
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .encounterMusic_gender =
-#line 16948
+#line 15210
 F_TRAINER_FEMALE | 
 #line 16949
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -41992,8 +39662,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17001
-    [TRAINER_WINONA_4] =
+#line 15264
+    [DIFFICULTY_NORMAL][TRAINER_WINONA_4] =
     {
 #line 17002
         .trainerName = _("WINONA"),
@@ -42002,7 +39672,7 @@ F_TRAINER_FEMALE |
 #line 17004
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .encounterMusic_gender =
-#line 17005
+#line 15268
 F_TRAINER_FEMALE | 
 #line 17006
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -42127,8 +39797,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17058
-    [TRAINER_WINONA_5] =
+#line 15322
+    [DIFFICULTY_NORMAL][TRAINER_WINONA_5] =
     {
 #line 17059
         .trainerName = _("WINONA"),
@@ -42137,7 +39807,7 @@ F_TRAINER_FEMALE |
 #line 17061
         .trainerPic = TRAINER_PIC_LEADER_WINONA,
         .encounterMusic_gender =
-#line 17062
+#line 15326
 F_TRAINER_FEMALE | 
 #line 17063
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -42262,8 +39932,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17115
-    [TRAINER_TATE_AND_LIZA_2] =
+#line 15380
+    [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_2] =
     {
 #line 17116
         .trainerName = _("TATE&LIZA"),
@@ -42272,7 +39942,7 @@ F_TRAINER_FEMALE |
 #line 17118
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .encounterMusic_gender =
-#line 17120
+#line 15385
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 17121
         .doubleBattle = TRUE,
@@ -42379,8 +40049,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17164
-    [TRAINER_TATE_AND_LIZA_3] =
+#line 15430
+    [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_3] =
     {
 #line 17165
         .trainerName = _("TATE&LIZA"),
@@ -42389,7 +40059,7 @@ F_TRAINER_FEMALE |
 #line 17167
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .encounterMusic_gender =
-#line 17169
+#line 15435
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 17170
         .doubleBattle = TRUE,
@@ -42514,8 +40184,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17221
-    [TRAINER_TATE_AND_LIZA_4] =
+#line 15488
+    [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_4] =
     {
 #line 17222
         .trainerName = _("TATE&LIZA"),
@@ -42524,7 +40194,7 @@ F_TRAINER_FEMALE |
 #line 17224
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .encounterMusic_gender =
-#line 17226
+#line 15493
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 17227
         .doubleBattle = TRUE,
@@ -42649,8 +40319,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17278
-    [TRAINER_TATE_AND_LIZA_5] =
+#line 15546
+    [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_5] =
     {
 #line 17279
         .trainerName = _("TATE&LIZA"),
@@ -42659,7 +40329,7 @@ F_TRAINER_FEMALE |
 #line 17281
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .encounterMusic_gender =
-#line 17283
+#line 15551
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 17284
         .doubleBattle = TRUE,
@@ -42784,8 +40454,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17335
-    [TRAINER_JUAN_2] =
+#line 15604
+    [DIFFICULTY_NORMAL][TRAINER_JUAN_2] =
     {
 #line 17336
         .trainerName = _("JUAN"),
@@ -42794,7 +40464,7 @@ F_TRAINER_FEMALE |
 #line 17338
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .encounterMusic_gender =
-#line 17340
+#line 15609
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17341
         .doubleBattle = TRUE,
@@ -42899,8 +40569,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17384
-    [TRAINER_JUAN_3] =
+#line 15654
+    [DIFFICULTY_NORMAL][TRAINER_JUAN_3] =
     {
 #line 17385
         .trainerName = _("JUAN"),
@@ -42909,7 +40579,7 @@ F_TRAINER_FEMALE |
 #line 17387
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .encounterMusic_gender =
-#line 17389
+#line 15659
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17390
         .doubleBattle = TRUE,
@@ -43014,8 +40684,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17433
-    [TRAINER_JUAN_4] =
+#line 15704
+    [DIFFICULTY_NORMAL][TRAINER_JUAN_4] =
     {
 #line 17434
         .trainerName = _("JUAN"),
@@ -43024,7 +40694,7 @@ F_TRAINER_FEMALE |
 #line 17436
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .encounterMusic_gender =
-#line 17438
+#line 15709
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17439
         .doubleBattle = TRUE,
@@ -43147,8 +40817,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17490
-    [TRAINER_JUAN_5] =
+#line 15762
+    [DIFFICULTY_NORMAL][TRAINER_JUAN_5] =
     {
 #line 17491
         .trainerName = _("JUAN"),
@@ -43157,7 +40827,7 @@ F_TRAINER_FEMALE |
 #line 17493
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .encounterMusic_gender =
-#line 17495
+#line 15767
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17496
         .doubleBattle = TRUE,
@@ -43280,8 +40950,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17547
-    [TRAINER_ANGELO] =
+#line 15820
+    [DIFFICULTY_NORMAL][TRAINER_ANGELO] =
     {
 #line 17548
         .trainerName = _("ANGELO"),
@@ -43290,7 +40960,7 @@ F_TRAINER_FEMALE |
 #line 17550
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
         .encounterMusic_gender =
-#line 17552
+#line 15825
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 17553
         .doubleBattle = TRUE,
@@ -43337,8 +41007,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17571
-    [TRAINER_DARIUS] =
+#line 15843
+    [DIFFICULTY_NORMAL][TRAINER_DARIUS] =
     {
 #line 17572
         .trainerName = _("DARIUS"),
@@ -43347,7 +41017,7 @@ F_TRAINER_FEMALE |
 #line 17574
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
         .encounterMusic_gender =
-#line 17576
+#line 15848
             TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 17577
         .doubleBattle = TRUE,
@@ -43369,8 +41039,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17584
-    [TRAINER_STEVEN] =
+#line 15856
+    [DIFFICULTY_NORMAL][TRAINER_STEVEN] =
     {
 #line 17585
         .trainerName = _("STEVEN"),
@@ -43379,7 +41049,7 @@ F_TRAINER_FEMALE |
 #line 17587
         .trainerPic = TRAINER_PIC_STEVEN,
         .encounterMusic_gender =
-#line 17589
+#line 15861
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17590
         .doubleBattle = TRUE,
@@ -43500,8 +41170,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17641
-    [TRAINER_ANABEL] =
+#line 15914
+    [DIFFICULTY_NORMAL][TRAINER_ANABEL] =
     {
 #line 17642
         .trainerName = _("ANABEL"),
@@ -43510,7 +41180,7 @@ F_TRAINER_FEMALE |
 #line 17644
         .trainerPic = TRAINER_PIC_SALON_MAIDEN_ANABEL,
         .encounterMusic_gender =
-#line 17645
+#line 15918
 F_TRAINER_FEMALE | 
 #line 17646
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -43534,8 +41204,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17654
-    [TRAINER_TUCKER] =
+#line 15927
+    [DIFFICULTY_NORMAL][TRAINER_TUCKER] =
     {
 #line 17655
         .trainerName = _("TUCKER"),
@@ -43544,7 +41214,7 @@ F_TRAINER_FEMALE |
 #line 17657
         .trainerPic = TRAINER_PIC_DOME_ACE_TUCKER,
         .encounterMusic_gender =
-#line 17659
+#line 15932
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17660
         .doubleBattle = TRUE,
@@ -43566,8 +41236,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17667
-    [TRAINER_SPENSER] =
+#line 15940
+    [DIFFICULTY_NORMAL][TRAINER_SPENSER] =
     {
 #line 17668
         .trainerName = _("SPENSER"),
@@ -43576,7 +41246,7 @@ F_TRAINER_FEMALE |
 #line 17670
         .trainerPic = TRAINER_PIC_PALACE_MAVEN_SPENSER,
         .encounterMusic_gender =
-#line 17672
+#line 15945
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17673
         .doubleBattle = TRUE,
@@ -43598,8 +41268,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17680
-    [TRAINER_GRETA] =
+#line 15953
+    [DIFFICULTY_NORMAL][TRAINER_GRETA] =
     {
 #line 17681
         .trainerName = _("GRETA"),
@@ -43608,7 +41278,7 @@ F_TRAINER_FEMALE |
 #line 17683
         .trainerPic = TRAINER_PIC_ARENA_TYCOON_GRETA,
         .encounterMusic_gender =
-#line 17684
+#line 15957
 F_TRAINER_FEMALE | 
 #line 17685
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -43632,8 +41302,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17693
-    [TRAINER_NOLAND] =
+#line 15966
+    [DIFFICULTY_NORMAL][TRAINER_NOLAND] =
     {
 #line 17694
         .trainerName = _("NOLAND"),
@@ -43642,7 +41312,7 @@ F_TRAINER_FEMALE |
 #line 17696
         .trainerPic = TRAINER_PIC_FACTORY_HEAD_NOLAND,
         .encounterMusic_gender =
-#line 17698
+#line 15971
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17699
         .doubleBattle = TRUE,
@@ -43664,8 +41334,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17706
-    [TRAINER_LUCY] =
+#line 15979
+    [DIFFICULTY_NORMAL][TRAINER_LUCY] =
     {
 #line 17707
         .trainerName = _("LUCY"),
@@ -43674,7 +41344,7 @@ F_TRAINER_FEMALE |
 #line 17709
         .trainerPic = TRAINER_PIC_PIKE_QUEEN_LUCY,
         .encounterMusic_gender =
-#line 17710
+#line 15983
 F_TRAINER_FEMALE | 
 #line 17711
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -43698,8 +41368,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17719
-    [TRAINER_BRANDON] =
+#line 15992
+    [DIFFICULTY_NORMAL][TRAINER_BRANDON] =
     {
 #line 17720
         .trainerName = _("BRANDON"),
@@ -43708,7 +41378,7 @@ F_TRAINER_FEMALE |
 #line 17722
         .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
         .encounterMusic_gender =
-#line 17724
+#line 15997
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17725
         .doubleBattle = TRUE,
@@ -43730,23 +41400,23 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17732
-    [TRAINER_TABITHA_GLACIER] =
+#line 16005
+    [DIFFICULTY_NORMAL][TRAINER_ANDRES_2] =
     {
-#line 17733
-        .trainerName = _("TABITHA"),
-#line 17734
-        .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-#line 17735
-        .trainerPic = TRAINER_PIC_TABITHA_ORAS,
+#line 16006
+        .trainerName = _("ANDRES"),
+#line 16007
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+#line 16008
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 17737
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 17738
-        .doubleBattle = TRUE,
-#line 17739
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
-        .partySize = 6,
+#line 16010
+            TRAINER_ENCOUNTER_MUSIC_HIKER,
+#line 16011
+        .doubleBattle = FALSE,
+#line 16012
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 2,
         .party = (const struct TrainerMon[])
         {
             {
@@ -43793,142 +41463,25 @@ F_TRAINER_FEMALE |
 #line 17758
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 17755
-            .teraType = TYPE_FIRE,
-            .moves = {
-#line 17759
-                MOVE_FLAMETHROWER,
-                MOVE_AIR_SLASH,
-                MOVE_HIDDEN_POWER,
-                MOVE_WILL_O_WISP,
-            },
-            },
-            {
-#line 17764
-            .species = SPECIES_GLISCOR,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 17764
-            .heldItem = ITEM_TOXIC_ORB,
-#line 17768
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 17770
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 17766
-            .ability = ABILITY_POISON_HEAL,
-#line 17765
-            .lvl = 40,
-#line 17769
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 17767
-            .teraType = TYPE_GROUND,
-            .moves = {
-#line 17770
-                MOVE_FLING,
-                MOVE_ACROBATICS,
-                MOVE_HIGH_HORSEPOWER,
-                MOVE_PROTECT,
-            },
-            },
-            {
-#line 17775
-            .species = SPECIES_SCEPTILE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 17775
-            .heldItem = ITEM_FOCUS_SASH,
-#line 17779
-            .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 4),
-#line 17780
-            .iv = TRAINER_PARTY_IVS(31, 3, 30, 30, 31, 30),
-#line 17777
-            .ability = ABILITY_OVERGROW,
-#line 17776
-            .lvl = 40,
-#line 17781
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 17778
-            .teraType = TYPE_GRASS,
-            .moves = {
-#line 17782
-                MOVE_ENERGY_BALL,
-                MOVE_DRAGON_PULSE,
-                MOVE_HIDDEN_POWER,
-                MOVE_DETECT,
-            },
-            },
-            {
-#line 17787
-            .species = SPECIES_DARMANITAN_GALAR_ZEN,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 17787
-            .heldItem = ITEM_CHOICE_SCARF,
-#line 17791
-            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
-#line 17793
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 17789
-            .ability = ABILITY_GORILLA_TACTICS,
-#line 17788
-            .lvl = 40,
-#line 17792
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 17790
-            .teraType = TYPE_ICE,
-            .moves = {
-#line 17793
-                MOVE_U_TURN,
-                MOVE_FLARE_BLITZ,
-                MOVE_ICICLE_CRASH,
-                MOVE_ROCK_SLIDE,
-            },
-            },
-            {
-#line 17798
-            .species = SPECIES_AGGRON,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 17798
-            .heldItem = ITEM_AGGRONITE,
-#line 17802
-            .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 4),
-#line 17804
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 17800
-            .ability = ABILITY_STURDY,
-#line 17799
-            .lvl = 40,
-#line 17803
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 17801
-            .teraType = TYPE_STEEL,
-            .moves = {
-#line 17804
-                MOVE_BODY_PRESS,
-                MOVE_HEAVY_SLAM,
-                MOVE_STONE_EDGE,
-                MOVE_THUNDER_PUNCH,
-            },
             },
         },
     },
-#line 17809
-    [TRAINER_GRUNT_GLACIER_1] =
+#line 16022
+    [DIFFICULTY_NORMAL][TRAINER_ANDRES_3] =
     {
-#line 17810
-        .trainerName = _("GRUNT"),
-#line 17811
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 17812
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+#line 16023
+        .trainerName = _("ANDRES"),
+#line 16024
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+#line 16025
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 17814
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 17815
-        .doubleBattle = TRUE,
-#line 17816
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+#line 16027
+            TRAINER_ENCOUNTER_MUSIC_HIKER,
+#line 16028
+        .doubleBattle = FALSE,
+#line 16029
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -43967,24 +41520,22 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17830
-    [TRAINER_GRUNT_GLACIER_2] =
+#line 16043
+    [DIFFICULTY_NORMAL][TRAINER_ANDRES_4] =
     {
-#line 17831
-        .trainerName = _("GRUNT"),
-#line 17832
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 17833
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+#line 16044
+        .trainerName = _("ANDRES"),
+#line 16045
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+#line 16046
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 17834
-F_TRAINER_FEMALE | 
-#line 17835
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 17836
-        .doubleBattle = TRUE,
-#line 17837
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+#line 16048
+            TRAINER_ENCOUNTER_MUSIC_HIKER,
+#line 16049
+        .doubleBattle = FALSE,
+#line 16050
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44023,22 +41574,22 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17851
-    [TRAINER_GRUNT_GLACIER_3] =
+#line 16064
+    [DIFFICULTY_NORMAL][TRAINER_ANDRES_5] =
     {
-#line 17852
-        .trainerName = _("GRUNT"),
-#line 17853
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 17854
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+#line 16065
+        .trainerName = _("ANDRES"),
+#line 16066
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+#line 16067
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender =
-#line 17856
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 17857
-        .doubleBattle = TRUE,
-#line 17858
-        .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
+#line 16069
+            TRAINER_ENCOUNTER_MUSIC_HIKER,
+#line 16070
+        .doubleBattle = FALSE,
+#line 16071
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -44077,8 +41628,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17872
-    [TRAINER_CORY_2] =
+#line 16085
+    [DIFFICULTY_NORMAL][TRAINER_CORY_2] =
     {
 #line 17873
         .trainerName = _("CORY"),
@@ -44087,7 +41638,7 @@ F_TRAINER_FEMALE |
 #line 17875
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 17877
+#line 16090
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17878
         .doubleBattle = TRUE,
@@ -44131,8 +41682,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17893
-    [TRAINER_CORY_3] =
+#line 16106
+    [DIFFICULTY_NORMAL][TRAINER_CORY_3] =
     {
 #line 17894
         .trainerName = _("CORY"),
@@ -44141,7 +41692,7 @@ F_TRAINER_FEMALE |
 #line 17896
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 17898
+#line 16111
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17899
         .doubleBattle = TRUE,
@@ -44185,8 +41736,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17914
-    [TRAINER_CORY_4] =
+#line 16127
+    [DIFFICULTY_NORMAL][TRAINER_CORY_4] =
     {
 #line 17915
         .trainerName = _("CORY"),
@@ -44195,7 +41746,7 @@ F_TRAINER_FEMALE |
 #line 17917
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 17919
+#line 16132
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17920
         .doubleBattle = TRUE,
@@ -44239,8 +41790,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17935
-    [TRAINER_CORY_5] =
+#line 16148
+    [DIFFICULTY_NORMAL][TRAINER_CORY_5] =
     {
 #line 17936
         .trainerName = _("CORY"),
@@ -44249,7 +41800,7 @@ F_TRAINER_FEMALE |
 #line 17938
         .trainerPic = TRAINER_PIC_SAILOR,
         .encounterMusic_gender =
-#line 17940
+#line 16153
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17941
         .doubleBattle = TRUE,
@@ -44293,8 +41844,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17956
-    [TRAINER_PABLO_2] =
+#line 16169
+    [DIFFICULTY_NORMAL][TRAINER_PABLO_2] =
     {
 #line 17957
         .trainerName = _("PABLO"),
@@ -44303,7 +41854,7 @@ F_TRAINER_FEMALE |
 #line 17959
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 17961
+#line 16174
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 17962
         .doubleBattle = TRUE,
@@ -44336,8 +41887,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17973
-    [TRAINER_PABLO_3] =
+#line 16186
+    [DIFFICULTY_NORMAL][TRAINER_PABLO_3] =
     {
 #line 17974
         .trainerName = _("PABLO"),
@@ -44346,7 +41897,7 @@ F_TRAINER_FEMALE |
 #line 17976
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 17978
+#line 16191
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 17979
         .doubleBattle = TRUE,
@@ -44390,8 +41941,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 17994
-    [TRAINER_PABLO_4] =
+#line 16207
+    [DIFFICULTY_NORMAL][TRAINER_PABLO_4] =
     {
 #line 17995
         .trainerName = _("PABLO"),
@@ -44400,7 +41951,7 @@ F_TRAINER_FEMALE |
 #line 17997
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 17999
+#line 16212
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 18000
         .doubleBattle = TRUE,
@@ -44444,8 +41995,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18015
-    [TRAINER_PABLO_5] =
+#line 16228
+    [DIFFICULTY_NORMAL][TRAINER_PABLO_5] =
     {
 #line 18016
         .trainerName = _("PABLO"),
@@ -44454,7 +42005,7 @@ F_TRAINER_FEMALE |
 #line 18018
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
         .encounterMusic_gender =
-#line 18020
+#line 16233
             TRAINER_ENCOUNTER_MUSIC_SWIMMER,
 #line 18021
         .doubleBattle = TRUE,
@@ -44498,8 +42049,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18036
-    [TRAINER_KOJI_2] =
+#line 16249
+    [DIFFICULTY_NORMAL][TRAINER_KOJI_2] =
     {
 #line 18037
         .trainerName = _("KOJI"),
@@ -44508,7 +42059,7 @@ F_TRAINER_FEMALE |
 #line 18039
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 18041
+#line 16254
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18042
         .doubleBattle = TRUE,
@@ -44541,8 +42092,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18053
-    [TRAINER_KOJI_3] =
+#line 16266
+    [DIFFICULTY_NORMAL][TRAINER_KOJI_3] =
     {
 #line 18054
         .trainerName = _("KOJI"),
@@ -44551,7 +42102,7 @@ F_TRAINER_FEMALE |
 #line 18056
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 18058
+#line 16271
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18059
         .doubleBattle = TRUE,
@@ -44595,8 +42146,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18074
-    [TRAINER_KOJI_4] =
+#line 16287
+    [DIFFICULTY_NORMAL][TRAINER_KOJI_4] =
     {
 #line 18075
         .trainerName = _("KOJI"),
@@ -44605,7 +42156,7 @@ F_TRAINER_FEMALE |
 #line 18077
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 18079
+#line 16292
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18080
         .doubleBattle = TRUE,
@@ -44649,8 +42200,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18095
-    [TRAINER_KOJI_5] =
+#line 16308
+    [DIFFICULTY_NORMAL][TRAINER_KOJI_5] =
     {
 #line 18096
         .trainerName = _("KOJI"),
@@ -44659,7 +42210,7 @@ F_TRAINER_FEMALE |
 #line 18098
         .trainerPic = TRAINER_PIC_BLACK_BELT,
         .encounterMusic_gender =
-#line 18100
+#line 16313
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18101
         .doubleBattle = TRUE,
@@ -44703,8 +42254,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18116
-    [TRAINER_CRISTIN_2] =
+#line 16329
+    [DIFFICULTY_NORMAL][TRAINER_CRISTIN_2] =
     {
 #line 18117
         .trainerName = _("CRISTIN"),
@@ -44713,7 +42264,7 @@ F_TRAINER_FEMALE |
 #line 18119
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 18120
+#line 16333
 F_TRAINER_FEMALE | 
 #line 18121
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -44748,8 +42299,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18133
-    [TRAINER_CRISTIN_3] =
+#line 16347
+    [DIFFICULTY_NORMAL][TRAINER_CRISTIN_3] =
     {
 #line 18134
         .trainerName = _("CRISTIN"),
@@ -44758,7 +42309,7 @@ F_TRAINER_FEMALE |
 #line 18136
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 18137
+#line 16351
 F_TRAINER_FEMALE | 
 #line 18138
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -44804,8 +42355,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18154
-    [TRAINER_CRISTIN_4] =
+#line 16369
+    [DIFFICULTY_NORMAL][TRAINER_CRISTIN_4] =
     {
 #line 18155
         .trainerName = _("CRISTIN"),
@@ -44814,7 +42365,7 @@ F_TRAINER_FEMALE |
 #line 18157
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 18158
+#line 16373
 F_TRAINER_FEMALE | 
 #line 18159
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -44860,8 +42411,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18175
-    [TRAINER_CRISTIN_5] =
+#line 16391
+    [DIFFICULTY_NORMAL][TRAINER_CRISTIN_5] =
     {
 #line 18176
         .trainerName = _("CRISTIN"),
@@ -44870,7 +42421,7 @@ F_TRAINER_FEMALE |
 #line 18178
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .encounterMusic_gender =
-#line 18179
+#line 16395
 F_TRAINER_FEMALE | 
 #line 18180
             TRAINER_ENCOUNTER_MUSIC_COOL,
@@ -44916,8 +42467,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18196
-    [TRAINER_FERNANDO_2] =
+#line 16413
+    [DIFFICULTY_NORMAL][TRAINER_FERNANDO_2] =
     {
 #line 18197
         .trainerName = _("FERNANDO"),
@@ -44926,7 +42477,7 @@ F_TRAINER_FEMALE |
 #line 18199
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 18201
+#line 16418
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18202
         .doubleBattle = TRUE,
@@ -44970,8 +42521,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18217
-    [TRAINER_FERNANDO_3] =
+#line 16434
+    [DIFFICULTY_NORMAL][TRAINER_FERNANDO_3] =
     {
 #line 18218
         .trainerName = _("FERNANDO"),
@@ -44980,7 +42531,7 @@ F_TRAINER_FEMALE |
 #line 18220
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 18222
+#line 16439
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18223
         .doubleBattle = TRUE,
@@ -45024,8 +42575,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18238
-    [TRAINER_FERNANDO_4] =
+#line 16455
+    [DIFFICULTY_NORMAL][TRAINER_FERNANDO_4] =
     {
 #line 18239
         .trainerName = _("FERNANDO"),
@@ -45034,7 +42585,7 @@ F_TRAINER_FEMALE |
 #line 18241
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 18243
+#line 16460
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18244
         .doubleBattle = TRUE,
@@ -45078,8 +42629,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18259
-    [TRAINER_FERNANDO_5] =
+#line 16476
+    [DIFFICULTY_NORMAL][TRAINER_FERNANDO_5] =
     {
 #line 18260
         .trainerName = _("FERNANDO"),
@@ -45088,7 +42639,7 @@ F_TRAINER_FEMALE |
 #line 18262
         .trainerPic = TRAINER_PIC_GUITARIST,
         .encounterMusic_gender =
-#line 18264
+#line 16481
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18265
         .doubleBattle = TRUE,
@@ -45132,8 +42683,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18280
-    [TRAINER_SAWYER_2] =
+#line 16497
+    [DIFFICULTY_NORMAL][TRAINER_SAWYER_2] =
     {
 #line 18281
         .trainerName = _("SAWYER"),
@@ -45142,7 +42693,7 @@ F_TRAINER_FEMALE |
 #line 18283
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 18285
+#line 16502
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 18286
         .doubleBattle = TRUE,
@@ -45175,8 +42726,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18297
-    [TRAINER_SAWYER_3] =
+#line 16514
+    [DIFFICULTY_NORMAL][TRAINER_SAWYER_3] =
     {
 #line 18298
         .trainerName = _("SAWYER"),
@@ -45185,7 +42736,7 @@ F_TRAINER_FEMALE |
 #line 18300
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 18302
+#line 16519
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 18303
         .doubleBattle = TRUE,
@@ -45229,8 +42780,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18318
-    [TRAINER_SAWYER_4] =
+#line 16535
+    [DIFFICULTY_NORMAL][TRAINER_SAWYER_4] =
     {
 #line 18319
         .trainerName = _("SAWYER"),
@@ -45239,7 +42790,7 @@ F_TRAINER_FEMALE |
 #line 18321
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 18323
+#line 16540
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 18324
         .doubleBattle = TRUE,
@@ -45283,8 +42834,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18339
-    [TRAINER_SAWYER_5] =
+#line 16556
+    [DIFFICULTY_NORMAL][TRAINER_SAWYER_5] =
     {
 #line 18340
         .trainerName = _("SAWYER"),
@@ -45293,7 +42844,7 @@ F_TRAINER_FEMALE |
 #line 18342
         .trainerPic = TRAINER_PIC_HIKER,
         .encounterMusic_gender =
-#line 18344
+#line 16561
             TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 18345
         .doubleBattle = TRUE,
@@ -45337,8 +42888,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18360
-    [TRAINER_GABRIELLE_2] =
+#line 16577
+    [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_2] =
     {
 #line 18361
         .trainerName = _("GABRIELLE"),
@@ -45347,7 +42898,7 @@ F_TRAINER_FEMALE |
 #line 18363
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 18364
+#line 16581
 F_TRAINER_FEMALE | 
 #line 18365
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -45426,8 +42977,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18393
-    [TRAINER_GABRIELLE_3] =
+#line 16610
+    [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_3] =
     {
 #line 18394
         .trainerName = _("GABRIELLE"),
@@ -45436,7 +42987,7 @@ F_TRAINER_FEMALE |
 #line 18396
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 18397
+#line 16614
 F_TRAINER_FEMALE | 
 #line 18398
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -45515,8 +43066,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18426
-    [TRAINER_GABRIELLE_4] =
+#line 16643
+    [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_4] =
     {
 #line 18427
         .trainerName = _("GABRIELLE"),
@@ -45525,7 +43076,7 @@ F_TRAINER_FEMALE |
 #line 18429
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 18430
+#line 16647
 F_TRAINER_FEMALE | 
 #line 18431
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -45604,8 +43155,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18459
-    [TRAINER_GABRIELLE_5] =
+#line 16676
+    [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_5] =
     {
 #line 18460
         .trainerName = _("GABRIELLE"),
@@ -45614,7 +43165,7 @@ F_TRAINER_FEMALE |
 #line 18462
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
         .encounterMusic_gender =
-#line 18463
+#line 16680
 F_TRAINER_FEMALE | 
 #line 18464
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -45693,8 +43244,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18492
-    [TRAINER_THALIA_2] =
+#line 16709
+    [DIFFICULTY_NORMAL][TRAINER_THALIA_2] =
     {
 #line 18493
         .trainerName = _("THALIA"),
@@ -45703,7 +43254,7 @@ F_TRAINER_FEMALE |
 #line 18495
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 18496
+#line 16713
 F_TRAINER_FEMALE | 
 #line 18497
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -45738,8 +43289,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18509
-    [TRAINER_THALIA_3] =
+#line 16726
+    [DIFFICULTY_NORMAL][TRAINER_THALIA_3] =
     {
 #line 18510
         .trainerName = _("THALIA"),
@@ -45748,7 +43299,7 @@ F_TRAINER_FEMALE |
 #line 18512
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 18513
+#line 16730
 F_TRAINER_FEMALE | 
 #line 18514
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -45794,8 +43345,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18530
-    [TRAINER_THALIA_4] =
+#line 16747
+    [DIFFICULTY_NORMAL][TRAINER_THALIA_4] =
     {
 #line 18531
         .trainerName = _("THALIA"),
@@ -45804,7 +43355,7 @@ F_TRAINER_FEMALE |
 #line 18533
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 18534
+#line 16751
 F_TRAINER_FEMALE | 
 #line 18535
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -45850,8 +43401,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18551
-    [TRAINER_THALIA_5] =
+#line 16768
+    [DIFFICULTY_NORMAL][TRAINER_THALIA_5] =
     {
 #line 18552
         .trainerName = _("THALIA"),
@@ -45860,7 +43411,7 @@ F_TRAINER_FEMALE |
 #line 18554
         .trainerPic = TRAINER_PIC_BEAUTY,
         .encounterMusic_gender =
-#line 18555
+#line 16772
 F_TRAINER_FEMALE | 
 #line 18556
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -45906,8 +43457,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18572
-    [TRAINER_MARIELA] =
+#line 16789
+    [DIFFICULTY_NORMAL][TRAINER_MARIELA] =
     {
 #line 18573
         .trainerName = _("MARIELA"),
@@ -45916,7 +43467,7 @@ F_TRAINER_FEMALE |
 #line 18575
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
         .encounterMusic_gender =
-#line 18576
+#line 16793
 F_TRAINER_FEMALE | 
 #line 18577
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
@@ -45938,8 +43489,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18584
-    [TRAINER_ALVARO] =
+#line 16801
+    [DIFFICULTY_NORMAL][TRAINER_ALVARO] =
     {
 #line 18585
         .trainerName = _("ALVARO"),
@@ -45948,7 +43499,7 @@ F_TRAINER_FEMALE |
 #line 18587
         .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .encounterMusic_gender =
-#line 18589
+#line 16806
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
 #line 18590
         .doubleBattle = TRUE,
@@ -45979,8 +43530,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18600
-    [TRAINER_EVERETT] =
+#line 16817
+    [DIFFICULTY_NORMAL][TRAINER_EVERETT] =
     {
 #line 18601
         .trainerName = _("EVERETT"),
@@ -45989,7 +43540,7 @@ F_TRAINER_FEMALE |
 #line 18603
         .trainerPic = TRAINER_PIC_GENTLEMAN,
         .encounterMusic_gender =
-#line 18605
+#line 16822
             TRAINER_ENCOUNTER_MUSIC_RICH,
 #line 18606
         .doubleBattle = TRUE,
@@ -46009,8 +43560,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18612
-    [TRAINER_RED] =
+#line 16829
+    [DIFFICULTY_NORMAL][TRAINER_RED] =
     {
 #line 18613
         .trainerName = _("RED"),
@@ -46019,7 +43570,7 @@ F_TRAINER_FEMALE |
 #line 18615
         .trainerPic = TRAINER_PIC_RED,
         .encounterMusic_gender =
-#line 18617
+#line 16834
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 18618
         .doubleBattle = TRUE,
@@ -46039,8 +43590,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18624
-    [TRAINER_LEAF] =
+#line 16841
+    [DIFFICULTY_NORMAL][TRAINER_LEAF] =
     {
 #line 18625
         .trainerName = _("LEAF"),
@@ -46049,7 +43600,7 @@ F_TRAINER_FEMALE |
 #line 18627
         .trainerPic = TRAINER_PIC_LEAF,
         .encounterMusic_gender =
-#line 18628
+#line 16845
 F_TRAINER_FEMALE | 
 #line 18629
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -46071,8 +43622,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18636
-    [TRAINER_BRENDAN_PLACEHOLDER] =
+#line 16853
+    [DIFFICULTY_NORMAL][TRAINER_BRENDAN_PLACEHOLDER] =
     {
 #line 18637
         .trainerName = _("BRENDAN"),
@@ -46081,7 +43632,7 @@ F_TRAINER_FEMALE |
 #line 18639
         .trainerPic = TRAINER_PIC_RS_BRENDAN,
         .encounterMusic_gender =
-#line 18641
+#line 16858
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 18642
         .doubleBattle = TRUE,
@@ -46101,8 +43652,8 @@ F_TRAINER_FEMALE |
             },
         },
     },
-#line 18648
-    [TRAINER_MAY_PLACEHOLDER] =
+#line 16865
+    [DIFFICULTY_NORMAL][TRAINER_MAY_PLACEHOLDER] =
     {
 #line 18649
         .trainerName = _("MAY"),
@@ -46111,7 +43662,7 @@ F_TRAINER_FEMALE |
 #line 18651
         .trainerPic = TRAINER_PIC_RS_MAY,
         .encounterMusic_gender =
-#line 18652
+#line 16869
 F_TRAINER_FEMALE | 
 #line 18653
             TRAINER_ENCOUNTER_MUSIC_MALE,
