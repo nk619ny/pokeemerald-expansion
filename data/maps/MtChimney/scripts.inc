@@ -891,19 +891,19 @@ MtChimney_EventScript_MeteoriteMachine::
 # 446 "data/maps/MtChimney/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, MtChimney_EventScript_MachineOn
 # 447 "data/maps/MtChimney/scripts.pory"
-	goto_if_set FLAG_RECEIVED_METEORITE, MtChimney_EventScript_MachineOff
+	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, MtChimney_EventScript_MachineOff
 # 448 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_RemoveTheMeteorite, MSGBOX_YESNO
+	// msgbox MtChimney_Text_RemoveTheMeteorite, MSGBOX_YESNO
 # 449 "data/maps/MtChimney/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MtChimney_EventScript_LeaveMeteoriteAlone
+	// goto_if_eq VAR_RESULT, NO, MtChimney_EventScript_LeaveMeteoriteAlone
 # 450 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_Text_PlayerRemovedMeteorite, MSGBOX_DEFAULT
+	// msgbox MtChimney_Text_PlayerRemovedMeteorite, MSGBOX_DEFAULT
 # 451 "data/maps/MtChimney/scripts.pory"
-	giveitem ITEM_METEORITE
+	// giveitem ITEM_METEORITE
 # 452 "data/maps/MtChimney/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	// goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 453 "data/maps/MtChimney/scripts.pory"
-	setflag FLAG_RECEIVED_METEORITE
+	// setflag FLAG_RECEIVED_METEORITE
 # 454 "data/maps/MtChimney/scripts.pory"
 	releaseall
 # 455 "data/maps/MtChimney/scripts.pory"
@@ -1692,3 +1692,13 @@ MtChimney_Text_SawyerPostRematch:
 	.string "Actually, it really is hot here.\n"
 # 847 "data/maps/MtChimney/scripts.pory"
 	.string "I'm overdressed for these parts.$"
+
+MtChimney_EventScript_SetupMagma::
+# 852 "data/maps/MtChimney/scripts.pory"
+	setflag FLAG_HIDE_MT_CHIMNEY_TRAINERS
+# 853 "data/maps/MtChimney/scripts.pory"
+	clearflag FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
+# 854 "data/maps/MtChimney/scripts.pory"
+	clearflag FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA
+	return
+

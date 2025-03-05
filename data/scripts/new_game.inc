@@ -201,8 +201,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
 //	setflag FLAG_HIDE_RUSTURF_TUNNEL_PEEKO
 //	setflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT
-	setflag FLAG_HIDE_MAUVILLE_CITY_WALLY // added so Wally doesn't appear at start
-	setflag FLAG_HIDE_GIMMIGHOUL // added
 //	setflag FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND
 //	setflag FLAG_HIDE_RUSTURF_TUNNEL_WANDA
 	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE
@@ -274,5 +272,8 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_EVER_GRANDE_POKEMON_CENTER_1F_SCOTT
 	setflag FLAG_HIDE_SKY_PILLAR_WALLACE
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
+	setflag FLAG_HIDE_MAUVILLE_CITY_WALLY // added so Wally doesn't appear at start
+	setflag FLAG_HIDE_GIMMIGHOUL // added
+	call Common_EventScript_SetStartingFlagStates
 	call EventScript_ResetAllBerries
 	end

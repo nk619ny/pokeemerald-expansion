@@ -1440,33 +1440,35 @@ MauvilleCity_WallyAndGalladeDepart:
 MauvilleCity_EventScript_Temporary::
 # 720 "data/maps/MauvilleCity/scripts.pory"
 	lock
+# 721 "data/maps/MauvilleCity/scripts.pory"
+	dynmultipush MauvilleCity_EventScript_Temporary_Text_0, 1
 # 722 "data/maps/MauvilleCity/scripts.pory"
-	setvar VAR_LEVEL_HANDICAP, 0
+	dynmultipush MauvilleCity_EventScript_Temporary_Text_1, 2
 # 723 "data/maps/MauvilleCity/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_LEVEL_CAP
+	dynmultipush MauvilleCity_EventScript_Temporary_Text_2, 4
 # 724 "data/maps/MauvilleCity/scripts.pory"
-	buffernumberstring STR_VAR_2, VAR_LEVEL_HANDICAP
+	dynmultipush MauvilleCity_EventScript_Temporary_Text_3, 6
 # 725 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_EventScript_Temporary_Text_0
+	dynmultistack 0, 0, FALSE, 6, 0, 1, DYN_MULTICHOICE_CB_NONE
 # 726 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
 # 727 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_EventScript_Temporary_Text_1
+	buffernumberstring STR_VAR_1, VAR_RESULT
 # 728 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+	msgbox MauvilleCity_EventScript_Temporary_Text_4
 # 729 "data/maps/MauvilleCity/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	copyvar VAR_TEMP_1, VAR_RESULT
 # 730 "data/maps/MauvilleCity/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_LEVEL_CAP
+	buffernumberstring STR_VAR_1, VAR_TEMP_1
 # 731 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_EventScript_Temporary_Text_2
+	msgbox MauvilleCity_EventScript_Temporary_Text_4
 # 732 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
-# 744 "data/maps/MauvilleCity/scripts.pory"
+# 757 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
-# 745 "data/maps/MauvilleCity/scripts.pory"
+# 758 "data/maps/MauvilleCity/scripts.pory"
 	closemessage
-# 746 "data/maps/MauvilleCity/scripts.pory"
+# 759 "data/maps/MauvilleCity/scripts.pory"
 	releaseall
 	end
 
@@ -1485,16 +1487,24 @@ MauvilleCity_EventScript_WallyPostBattle_Text_0:
 	.string "Good luck, {PLAYER}!$"
 
 MauvilleCity_EventScript_Temporary_Text_0:
-# 725 "data/maps/MauvilleCity/scripts.pory"
-	.string "level cap is {STR_VAR_1}$"
+# 721 "data/maps/MauvilleCity/scripts.pory"
+	.string "One$"
 
 MauvilleCity_EventScript_Temporary_Text_1:
-# 727 "data/maps/MauvilleCity/scripts.pory"
-	.string "handicap is {STR_VAR_2}$"
+# 722 "data/maps/MauvilleCity/scripts.pory"
+	.string "Two$"
 
 MauvilleCity_EventScript_Temporary_Text_2:
-# 731 "data/maps/MauvilleCity/scripts.pory"
-	.string "adjusted level cap is {STR_VAR_1}$"
+# 723 "data/maps/MauvilleCity/scripts.pory"
+	.string "Four$"
+
+MauvilleCity_EventScript_Temporary_Text_3:
+# 724 "data/maps/MauvilleCity/scripts.pory"
+	.string "Six$"
+
+MauvilleCity_EventScript_Temporary_Text_4:
+# 728 "data/maps/MauvilleCity/scripts.pory"
+	.string "Result is {STR_VAR_1}$"
 
 MauvilleCity_Text_WallyDefeat::
 # 689 "data/maps/MauvilleCity/scripts.pory"

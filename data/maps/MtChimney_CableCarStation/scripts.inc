@@ -192,3 +192,23 @@ MtChimney_CableCarStation_Text_StepThisWay:
 MtChimney_CableCarStation_Text_RideAnotherTime:
 # 97 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	.string "Please ride with us another time.$"
+
+MtChimney_CableCarStation_EventScript_MagmaGrunt::
+# 102 "data/maps/MtChimney_CableCarStation/scripts.pory"
+	lock
+# 103 "data/maps/MtChimney_CableCarStation/scripts.pory"
+	msgbox MtChimney_CableCarStation_EventScript_MagmaGrunt_Text_0, MSGBOX_NPC
+# 104 "data/maps/MtChimney_CableCarStation/scripts.pory"
+	waitmessage
+# 105 "data/maps/MtChimney_CableCarStation/scripts.pory"
+	release
+	end
+
+
+MtChimney_CableCarStation_EventScript_MagmaGrunt_Text_0:
+# 103 "data/maps/MtChimney_CableCarStation/scripts.pory"
+	.string "I'm sorry, but the cable car is currently\n"
+	.string "out of service.\p"
+	.string "We had to do some... routine\n"
+	.string "maintenance.\p"
+	.string "Please come back later.$"

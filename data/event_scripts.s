@@ -1182,3 +1182,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route111_North/scripts.inc"
 
 	.include "data/maps/Route111_MtChimneyBackground/scripts.inc"
+
+	.include "data/maps/GlacierPath/scripts.inc"
+
+	.include "data/maps/TestMapIce/scripts.inc"

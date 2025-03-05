@@ -97,3 +97,11 @@ MtChimney_CableCarStation_Text_RideAnotherTime:
 	.string "Please ride with us another time.$"
 
 `
+
+script MtChimney_CableCarStation_EventScript_MagmaGrunt {
+	lock
+	msgbox(format("I'm sorry, but the cable car is currently out of service.\pWe had to do some... routine maintenance.\pPlease come back later."), MSGBOX_NPC)
+	waitmessage
+	release
+	end
+}

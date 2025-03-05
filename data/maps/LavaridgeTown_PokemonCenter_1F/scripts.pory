@@ -37,11 +37,11 @@ LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether:
 	.string "The longer the better.\n"
 	.string "That's what I think.$"
 
-LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
+/*LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
 	.string "It's sort of magical how just sitting\n"
 	.string "in a hot-spring pool can invigorate.\p"
 	.string "I wish I could let my POKéMON\n"
-	.string "soak, too.$"
+	.string "soak, too.$"*/
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo:
 	.string "Hohoho! Hey, kid, you can reach\n"
@@ -50,3 +50,7 @@ LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo:
 	.string "should their TRAINERS.$"
 
 `
+
+text LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate {
+	format("It's sort of magical how just sitting in a hot-spring pool can invigorate. I love relaxing with my POKéMON.")
+}

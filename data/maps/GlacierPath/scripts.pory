@@ -1,0 +1,42 @@
+mapscripts GlacierPath_MapScripts{}
+
+const LOCALID_TABITHA = 1
+
+script GlacierPath_EventScript_Tabitha {
+    lock
+    trainerbattle_single(TRAINER_TABITHA_GLACIER, GlacierPath_Text_TabithaMonologue, GlacierPath_Text_TabithaPostBattle, GlacierPath_EventScript_TabithaDefeated)
+    end
+}
+
+script GlacierPath_EventScript_TabithaDefeated {
+    lock
+    setflag(FLAG_HIDE_MAGMA_GLACIER)
+    setflag(FLAG_HIDE_ROUTE_112_TEAM_MAGMA)
+    clearflag(FLAG_HIDE_CABLE_CAR_ATTENDANT)
+    clearflag(FLAG_HIDE_MT_CHIMNEY_TRAINERS)
+    setflag(FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA)
+	setflag(FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA)
+    msgbox(GlacierPath_Text_TabithaOutro)
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+	removeobject(LOCALID_TABITHA)
+    delay(20)
+	fadescreen(FADE_FROM_BLACK)
+    setvar(VAR_LEVEL_CAP,43)
+    call(Common_EventScript_ApplyHandicap)
+    call(Common_EventScript_LevelCapUpdate)
+    releaseall
+    end
+}
+
+text GlacierPath_Text_TabithaMonologue {
+    format("Underneath this glacier, there is plenty of unused land. Courtney tells me that it's especially rich in minerals, or something.\pBy melting away the accumulated ice, we can give the people of Hoenn access to a huge amount of unused land.\pAnd once the ice is gone, there will be nothing you or Team Aqua can do to undo it!")
+}
+
+text GlacierPath_Text_TabithaPostBattle {
+    format("I can't believe it! We were so close!")
+}
+
+text GlacierPath_Text_TabithaOutro {
+    format("You and those fools in Team Aqua don't understand. These plans are necessary.\pLand expansion is inevitable. And Leader Maxie is much smarter than you all.\pHe will find a way - trust me.")
+}

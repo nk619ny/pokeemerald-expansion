@@ -66,6 +66,7 @@ LavaridgeTown_EventScript_MayGiveGoGoggles::
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
 	msgbox LavaridgeTown_Text_MayExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
+	call LavaridgeTown_Script_RivalNewScript
 	goto LavaridgeTown_EventScript_RivalExit
 	end
 
@@ -74,6 +75,7 @@ LavaridgeTown_EventScript_BrendanGiveGoGoggles::
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
 	msgbox LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
+	call LavaridgeTown_Script_RivalNewScript
 	goto LavaridgeTown_EventScript_RivalExit
 	end
 
@@ -290,14 +292,14 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis:
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "MAY: With those GO-GOGGLES, you'll\n"
 	.string "have no trouble getting through the\l"
-	.string "desert near ROUTE 111.\p"
-	.string "But, wow, {PLAYER}{KUN}…\n"
+	.string "desert near ROUTE 111.$"
+/*	.string "But, wow, {PLAYER}{KUN}…\n"
 	.string "Challenging GYMS…\p"
 	.string "You're trying hard because you don't\n"
 	.string "want to lose to me, I bet!\p"
 	.string "{PLAYER}{KUN}, I think I should challenge\n"
 	.string "your dad in PETALBURG GYM.\p"
-	.string "See you again!$"
+	.string "See you again!$" */
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 	.string "BRENDAN: {PLAYER}, hey, it's been a while.\n"
@@ -313,13 +315,13 @@ LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 	.string "ROUTE 111.\p"
 	.string "There should be some POKéMON that\n"
 	.string "are exclusively desert-dwellers.\l"
-	.string "You might look around for those.\p"
-	.string "As for me…\n"
+	.string "You might look around for those.$"
+/*	.string "As for me…\n"
 	.string "I'm considering challenging NORMAN,\l"
 	.string "the GYM LEADER of PETALBURG.\p"
 	.string "Unlike you, {PLAYER}, your dad looks like\n"
 	.string "he really is tough.\p"
-	.string "See you around!$"
+	.string "See you around!$" */
 
 LavaridgeTown_Text_HaveEggWillYouTakeIt:
 	.string "I have here an EGG.\p"
@@ -371,21 +373,21 @@ LavaridgeTown_Text_PokemonNippedBackside:
 	.string "Eh? Gyaah! Ouch!\p"
 	.string "A POKéMON nipped my backside!$"
 
-LavaridgeTown_Text_OhYouLikeHotSprings:
+/*LavaridgeTown_Text_OhYouLikeHotSprings:
 	.string "Oh, you like hot springs, do you?\p"
 	.string "That's surprising for one as young\n"
-	.string "as you.$"
+	.string "as you.$" */
 
 LavaridgeTown_Text_BatheInHotSpringsEveryDay:
 	.string "I bathe in the hot springs every day.\p"
 	.string "I want to become a beautiful and strong\n"
 	.string "GYM LEADER like FLANNERY.$"
 
-LavaridgeTown_Text_IfPokemonInHotSprings:
+/* LavaridgeTown_Text_IfPokemonInHotSprings:
 	.string "If people put POKéMON in hot springs,\n"
 	.string "it might be seriously strange.\p"
 	.string "Why, it might be an electric bath, or\n"
-	.string "a bubble bath, or even a lava bath…$"
+	.string "a bubble bath, or even a lava bath…$" */
 
 LavaridgeTown_Text_HotSpringsClaims:
 	.string "They're claiming that these hot springs\n"
@@ -409,3 +411,28 @@ LavaridgeTown_Text_HerbShopSign:
 	.string "“Bitter taste--better cure!”$"
 
 `
+
+text LavaridgeTown_Text_IfPokemonInHotSprings {
+	format("The hot springs are a place to relax and unwind.\pAnd not just for people! Several species of Pokémon have visited the hot springs for as long as anyone can remember.\pSo you are welcome to bring your Pokémon here, but be careful. You might unexpectedly encounter a wild Pokémon too!")
+}
+
+text LavaridgeTown_Text_OhYouLikeHotSprings {
+	format("Oh, you like hot springs, do you?\pThat's surprising for one as young as you.\pJust be careful not to disturb the Pokémon that live here.")
+}
+
+text LavaridgeTown_Text_RivalSafetyGoggles {
+	format("{RIVAL}: You should take these, too. The Go Goggles will help you navigate the desert, but it might be hard on some of your Pokémon.\pThese Safety Goggles should help keep them comfortable, too.")
+}
+
+text LavaridgeTown_Text_RivalSomethingGoingOnMtChimney {
+	format("{RIVAL}: I'm heading off to find more Pokémon.\pBy the way, I heard some kind of commotion going on at Mt. Chimney as I was heading down.\pIt might be worth checking out, but be careful if you do.\pSee you later!")
+}
+
+script LavaridgeTown_Script_RivalNewScript {
+	giveitem(ITEM_SAFETY_GOGGLES)
+	msgbox(LavaridgeTown_Text_RivalSafetyGoggles, MSGBOX_DEFAULT)
+	waitmessage
+	msgbox(LavaridgeTown_Text_RivalSomethingGoingOnMtChimney, MSGBOX_DEFAULT)
+	waitmessage
+	return
+}

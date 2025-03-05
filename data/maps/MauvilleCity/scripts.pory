@@ -718,18 +718,31 @@ movement MauvilleCity_WallyAndGalladeDepart {
 
 script MauvilleCity_EventScript_Temporary{
 	lock
+	dynmultipush("One",1)
+	dynmultipush("Two",2)
+	dynmultipush("Four",4)
+	dynmultipush("Six",6)
+	dynmultistack(0,0,FALSE,6,0,1,DYN_MULTICHOICE_CB_NONE) //Use this to set only the non-obtained Rare Battle items, the positional numbers are consistent
+	waitmessage
+	buffernumberstring(STR_VAR_1,VAR_RESULT)
+	msgbox("Result is {STR_VAR_1}")
+	copyvar(VAR_TEMP_1,VAR_RESULT)
+	buffernumberstring(STR_VAR_1,VAR_TEMP_1)
+	msgbox("Result is {STR_VAR_1}")
+	waitmessage 
+
 	//addvar(VAR_LEVEL_CAP,5)
-	setvar(VAR_LEVEL_HANDICAP,0)
-	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
-	buffernumberstring(STR_VAR_2,VAR_LEVEL_HANDICAP)
-	msgbox("level cap is {STR_VAR_1}")
-	waitmessage
-	msgbox("handicap is {STR_VAR_2}")
-	waitmessage
-	call(Common_EventScript_ApplyHandicap)
-	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
-	msgbox("adjusted level cap is {STR_VAR_1}")
-	waitmessage
+	//setvar(VAR_LEVEL_HANDICAP,0)
+	//buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
+	//buffernumberstring(STR_VAR_2,VAR_LEVEL_HANDICAP)
+	//msgbox("level cap is {STR_VAR_1}")
+	//waitmessage
+	//msgbox("handicap is {STR_VAR_2}")
+	//waitmessage
+	//call(Common_EventScript_ApplyHandicap)
+	//buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
+	//msgbox("adjusted level cap is {STR_VAR_1}")
+	//waitmessage*/
 	//giveitem(ITEM_MEGA_RING)
 	//givemon(SPECIES_EXCADRILL,40,,,,,,,,,,,,,,,,,,MOVE_SEARING_SUNRAZE_SMASH,MOVE_SUNSTEEL_STRIKE,MOVE_BITTER_MALICE,MOVE_PURIFY)
 	//givemon(SPECIES_EXCADRILL,40,,,,,,,,,,,,,,,,,,MOVE_NOXIOUS_TORQUE,MOVE_COMBAT_TORQUE,MOVE_THUNDERCLAP,MOVE_NIGHT_DAZE)

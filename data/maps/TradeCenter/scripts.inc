@@ -19,35 +19,51 @@ Common_EventScript_LevelCapUpdate::
 	return
 
 
-Common_EventScript_ApplyHandicap::
+Common_EventScript_SetStartingFlagStates::
 # 18 "data/maps/TradeCenter/scripts.pory"
-	switch VAR_LEVEL_HANDICAP
+	setflag FLAG_HIDDEN_BY_DEFAULT
 # 19 "data/maps/TradeCenter/scripts.pory"
-	case 0, Common_EventScript_ApplyHandicap_3
+	setflag FLAG_HIDE_CABLE_CAR_ATTENDANT
+# 20 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
 # 21 "data/maps/TradeCenter/scripts.pory"
-	case 1, Common_EventScript_ApplyHandicap_4
+	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA
+# 22 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDE_TRAINER_HILL_AUDIENCE
 # 23 "data/maps/TradeCenter/scripts.pory"
-	case 2, Common_EventScript_ApplyHandicap_5
-# 25 "data/maps/TradeCenter/scripts.pory"
-	case 3, Common_EventScript_ApplyHandicap_6
-# 27 "data/maps/TradeCenter/scripts.pory"
-	case 4, Common_EventScript_ApplyHandicap_7
+	setflag FLAG_HIDE_MAUVILLE_CITY_WALLY
+	return
+
+
+Common_EventScript_ApplyHandicap::
+# 28 "data/maps/TradeCenter/scripts.pory"
+	switch VAR_LEVEL_HANDICAP
 # 29 "data/maps/TradeCenter/scripts.pory"
-	case 5, Common_EventScript_ApplyHandicap_8
+	case 0, Common_EventScript_ApplyHandicap_3
 # 31 "data/maps/TradeCenter/scripts.pory"
-	case 6, Common_EventScript_ApplyHandicap_9
+	case 1, Common_EventScript_ApplyHandicap_4
 # 33 "data/maps/TradeCenter/scripts.pory"
-	case 7, Common_EventScript_ApplyHandicap_10
+	case 2, Common_EventScript_ApplyHandicap_5
 # 35 "data/maps/TradeCenter/scripts.pory"
-	case 8, Common_EventScript_ApplyHandicap_11
+	case 3, Common_EventScript_ApplyHandicap_6
 # 37 "data/maps/TradeCenter/scripts.pory"
-	case 9, Common_EventScript_ApplyHandicap_12
+	case 4, Common_EventScript_ApplyHandicap_7
 # 39 "data/maps/TradeCenter/scripts.pory"
+	case 5, Common_EventScript_ApplyHandicap_8
+# 41 "data/maps/TradeCenter/scripts.pory"
+	case 6, Common_EventScript_ApplyHandicap_9
+# 43 "data/maps/TradeCenter/scripts.pory"
+	case 7, Common_EventScript_ApplyHandicap_10
+# 45 "data/maps/TradeCenter/scripts.pory"
+	case 8, Common_EventScript_ApplyHandicap_11
+# 47 "data/maps/TradeCenter/scripts.pory"
+	case 9, Common_EventScript_ApplyHandicap_12
+# 49 "data/maps/TradeCenter/scripts.pory"
 	case 10, Common_EventScript_ApplyHandicap_13
 	return
 
 Common_EventScript_ApplyHandicap_1:
-# 44 "data/maps/TradeCenter/scripts.pory"
+# 54 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_LEVEL_CAP, 100
 	goto_if_gt Common_EventScript_ApplyHandicap_16
 Common_EventScript_ApplyHandicap_15:
@@ -57,57 +73,57 @@ Common_EventScript_ApplyHandicap_3:
 	return
 
 Common_EventScript_ApplyHandicap_4:
-# 22 "data/maps/TradeCenter/scripts.pory"
+# 32 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 1
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_5:
-# 24 "data/maps/TradeCenter/scripts.pory"
+# 34 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 2
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_6:
-# 26 "data/maps/TradeCenter/scripts.pory"
+# 36 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 3
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_7:
-# 28 "data/maps/TradeCenter/scripts.pory"
+# 38 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 4
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_8:
-# 30 "data/maps/TradeCenter/scripts.pory"
+# 40 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 5
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_9:
-# 32 "data/maps/TradeCenter/scripts.pory"
+# 42 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 6
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_10:
-# 34 "data/maps/TradeCenter/scripts.pory"
+# 44 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 7
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_11:
-# 36 "data/maps/TradeCenter/scripts.pory"
+# 46 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 8
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_12:
-# 38 "data/maps/TradeCenter/scripts.pory"
+# 48 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 9
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_13:
-# 40 "data/maps/TradeCenter/scripts.pory"
+# 50 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 10
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_16:
-# 45 "data/maps/TradeCenter/scripts.pory"
+# 55 "data/maps/TradeCenter/scripts.pory"
 	setvar VAR_LEVEL_CAP, 100
 	goto Common_EventScript_ApplyHandicap_15
 

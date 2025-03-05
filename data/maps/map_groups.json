@@ -440,7 +440,8 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "OldaleRuins"
+    "OldaleRuins",
+    "GlacierPath"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -601,7 +602,8 @@
     "Route104_Prototype",
     "Route104_PrototypePrettyPetalFlowerShop",
     "Slateport_Original",
-    "TestMapDesert"
+    "TestMapDesert",
+    "TestMapIce"
   ],
   "gMapGroup_IndoorRoute109": [
     "Route109_SeashoreHouse"

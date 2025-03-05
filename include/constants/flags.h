@@ -132,7 +132,7 @@
 #define FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE  0x70
 #define FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE 0x71 // Unused Flag. Used in R/S to indicate whether player defeated or caught Groudon/Kyogre in Cave of Origin.
 #define FLAG_SCOTT_CALL_BATTLE_FRONTIER      0x72 // Used in order to activate a phone call from Scott, inviting the player to the SS Tidal.
-#define FLAG_RECEIVED_METEORITE              0x73
+#define FLAG_RECEIVED_METEORITE              0x73 // Should be available for repurposing
 #define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokédex.
 #define FLAG_DEFEATED_MAGMA_SPACE_CENTER     0x75 // Set when Team Magma is defeated at Mossdeep's Space Center.
 #define FLAG_MET_HIDDEN_POWER_GIVER          0x76
@@ -668,9 +668,9 @@
 #define FLAG_RECEIVED_LIFE_ORB  0x26D // formerly not used
 #define FLAG_RECEIVED_LEFTOVERS  0x26E // formerly not used
 #define FLAG_RECEIVED_WINSTRATE_ITEM  0x26F // formerly not used
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
+#define FLAG_HIDE_MAGMA_GLACIER  0x270 // formerly not used
+#define FLAG_HIDE_CABLE_CAR_ATTENDANT  0x271 // formerly not used
+#define FLAG_HIDE_TRAINER_HILL_AUDIENCE  0x272 // formerly not used
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag

@@ -77,7 +77,7 @@ LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether:
 # 39 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 
 # 40 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
-LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
+/*LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
 # 41 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 	.string "It's sort of magical how just sitting\n"
 # 42 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
@@ -85,7 +85,7 @@ LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
 # 43 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 	.string "I wish I could let my POKéMON\n"
 # 44 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
-	.string "soak, too.$"
+	.string "soak, too.$"*/
 # 45 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 
 # 46 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
@@ -98,3 +98,9 @@ LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo:
 	.string "If POKéMON are getting rest, so too\n"
 # 50 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 	.string "should their TRAINERS.$"
+
+LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate::
+# 54 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
+	.string "It's sort of magical how just sitting in\n"
+	.string "a hot-spring pool can invigorate. I love\l"
+	.string "relaxing with my POKéMON.$"
