@@ -18,10 +18,12 @@ script GlacierPath_EventScript_TabithaDefeated {
 	setflag(FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA)
     msgbox(GlacierPath_Text_TabithaOutro)
     waitmessage
+    delay(20)
     fadescreen(FADE_TO_BLACK)
 	removeobject(LOCALID_TABITHA)
-    delay(20)
+    delay(40)
 	fadescreen(FADE_FROM_BLACK)
+    delay(20)
     setvar(VAR_LEVEL_CAP,43)
     call(Common_EventScript_ApplyHandicap)
     call(Common_EventScript_LevelCapUpdate)

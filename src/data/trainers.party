@@ -5661,7 +5661,6 @@ Typhlosion @ Quick Claw
 Level: 43
 Ball: Love Ball
 Ability: Flash Fire  
-Tera Type: Fire  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -5682,7 +5681,7 @@ Adamant Nature
 - Brave Bird  
 - Sky Uppercut  
 
-Ceruledge @ Salac Berry  
+/*Ceruledge @ Salac Berry  
 Level: 43
 Ball: Love Ball
 Ability: Weak Armor  
@@ -5716,7 +5715,7 @@ Adamant Nature
 - Flare Blitz  
 - Rock Slide  
 - Morning Sun  
-- Sunny Day  
+- Sunny Day   */
 
 Entei @ Muscle Band
 Level: 43
@@ -16599,6 +16598,7 @@ Pic: Leader Flannery
 Gender: Female
 Music: Female
 Double Battle: Yes
+Starting Status: STARTING_STATUS_TRICK_ROOM
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Growlithe

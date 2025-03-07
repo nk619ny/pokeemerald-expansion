@@ -9,6 +9,7 @@ EventScript_FieldPoison::
 
 EventScript_FieldWhiteOut::
 	message gText_PlayerWhitedOut
+	clearflag FLAG_FORCE_SUN //added to remove the rough workaround that creates sun in Flannery's Gym, Lavaridge Gym
 	waitmessage
 	waitbuttonpress
 	special Script_FadeOutMapMusic

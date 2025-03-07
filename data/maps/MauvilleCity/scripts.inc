@@ -1441,34 +1441,14 @@ MauvilleCity_EventScript_Temporary::
 # 720 "data/maps/MauvilleCity/scripts.pory"
 	lock
 # 721 "data/maps/MauvilleCity/scripts.pory"
-	dynmultipush MauvilleCity_EventScript_Temporary_Text_0, 1
+	setwildbattle SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE
 # 722 "data/maps/MauvilleCity/scripts.pory"
-	dynmultipush MauvilleCity_EventScript_Temporary_Text_1, 2
-# 723 "data/maps/MauvilleCity/scripts.pory"
-	dynmultipush MauvilleCity_EventScript_Temporary_Text_2, 4
-# 724 "data/maps/MauvilleCity/scripts.pory"
-	dynmultipush MauvilleCity_EventScript_Temporary_Text_3, 6
-# 725 "data/maps/MauvilleCity/scripts.pory"
-	dynmultistack 0, 0, FALSE, 6, 0, 1, DYN_MULTICHOICE_CB_NONE
-# 726 "data/maps/MauvilleCity/scripts.pory"
+	dowildbattle
+# 747 "data/maps/MauvilleCity/scripts.pory"
 	waitmessage
-# 727 "data/maps/MauvilleCity/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_RESULT
-# 728 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_EventScript_Temporary_Text_4
-# 729 "data/maps/MauvilleCity/scripts.pory"
-	copyvar VAR_TEMP_1, VAR_RESULT
-# 730 "data/maps/MauvilleCity/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_TEMP_1
-# 731 "data/maps/MauvilleCity/scripts.pory"
-	msgbox MauvilleCity_EventScript_Temporary_Text_4
-# 732 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
-# 757 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
-# 758 "data/maps/MauvilleCity/scripts.pory"
+# 748 "data/maps/MauvilleCity/scripts.pory"
 	closemessage
-# 759 "data/maps/MauvilleCity/scripts.pory"
+# 749 "data/maps/MauvilleCity/scripts.pory"
 	releaseall
 	end
 
@@ -1485,26 +1465,6 @@ MauvilleCity_EventScript_WallyPostBattle_Text_0:
 	.string "there's a family on Route 111 that can\l"
 	.string "teach my Pokémon to break rocks.\p"
 	.string "Good luck, {PLAYER}!$"
-
-MauvilleCity_EventScript_Temporary_Text_0:
-# 721 "data/maps/MauvilleCity/scripts.pory"
-	.string "One$"
-
-MauvilleCity_EventScript_Temporary_Text_1:
-# 722 "data/maps/MauvilleCity/scripts.pory"
-	.string "Two$"
-
-MauvilleCity_EventScript_Temporary_Text_2:
-# 723 "data/maps/MauvilleCity/scripts.pory"
-	.string "Four$"
-
-MauvilleCity_EventScript_Temporary_Text_3:
-# 724 "data/maps/MauvilleCity/scripts.pory"
-	.string "Six$"
-
-MauvilleCity_EventScript_Temporary_Text_4:
-# 728 "data/maps/MauvilleCity/scripts.pory"
-	.string "Result is {STR_VAR_1}$"
 
 MauvilleCity_Text_WallyDefeat::
 # 689 "data/maps/MauvilleCity/scripts.pory"

@@ -30,26 +30,30 @@ GlacierPath_EventScript_TabithaDefeated::
 # 20 "data/maps/GlacierPath/scripts.pory"
 	waitmessage
 # 21 "data/maps/GlacierPath/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 22 "data/maps/GlacierPath/scripts.pory"
-	removeobject 1
-# 23 "data/maps/GlacierPath/scripts.pory"
 	delay 20
+# 22 "data/maps/GlacierPath/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 23 "data/maps/GlacierPath/scripts.pory"
+	removeobject 1
 # 24 "data/maps/GlacierPath/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	delay 40
 # 25 "data/maps/GlacierPath/scripts.pory"
-	setvar VAR_LEVEL_CAP, 43
+	fadescreen FADE_FROM_BLACK
 # 26 "data/maps/GlacierPath/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	delay 20
 # 27 "data/maps/GlacierPath/scripts.pory"
-	call Common_EventScript_LevelCapUpdate
+	setvar VAR_LEVEL_CAP, 43
 # 28 "data/maps/GlacierPath/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 29 "data/maps/GlacierPath/scripts.pory"
+	call Common_EventScript_LevelCapUpdate
+# 30 "data/maps/GlacierPath/scripts.pory"
 	releaseall
 	end
 
 
 GlacierPath_Text_TabithaMonologue::
-# 32 "data/maps/GlacierPath/scripts.pory"
+# 34 "data/maps/GlacierPath/scripts.pory"
 	.string "Underneath this glacier, there is\n"
 	.string "plenty of unused land. Courtney tells\l"
 	.string "me that it's especially rich in minerals,\l"
@@ -62,11 +66,11 @@ GlacierPath_Text_TabithaMonologue::
 	.string "it!$"
 
 GlacierPath_Text_TabithaPostBattle::
-# 36 "data/maps/GlacierPath/scripts.pory"
+# 38 "data/maps/GlacierPath/scripts.pory"
 	.string "I can't believe it! We were so close!$"
 
 GlacierPath_Text_TabithaOutro::
-# 40 "data/maps/GlacierPath/scripts.pory"
+# 42 "data/maps/GlacierPath/scripts.pory"
 	.string "You and those fools in Team Aqua don't\n"
 	.string "understand. These plans are necessary.\p"
 	.string "Land expansion is inevitable. And\n"

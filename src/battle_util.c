@@ -4723,7 +4723,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 break;
             case WEATHER_FOG_DIAGONAL:
             case WEATHER_FOG_HORIZONTAL:
-                if (B_OVERWORLD_FOG == GEN_4)
+                if(FlagGet(FLAG_FORCE_SUN)) // added as a really rough workaround to make sun in Flannery's gym without changing the OW fog
+                {
+                    gBattleWeather = B_WEATHER_SUN_NORMAL;
+                    gBattleScripting.animArg1 = B_ANIM_SUN_CONTINUES;
+                    effect++;
+                }
+                else if (B_OVERWORLD_FOG == GEN_4)
                 {
                     if (!(gBattleWeather & B_WEATHER_FOG))
                     {
