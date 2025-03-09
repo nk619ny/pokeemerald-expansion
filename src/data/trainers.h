@@ -13774,7 +13774,7 @@ F_TRAINER_FEMALE |
         .aiFlags = AI_FLAG_SMART_TRAINER | AI_FLAG_TRY_TO_2HKO | AI_FLAG_DOUBLE_BATTLE | AI_FLAG_HP_AWARE,
 #line 5657
         .mugshotColor = MUGSHOT_COLOR_PINK,
-        .partySize = 3,
+        .partySize = 6,
         .party = (const struct TrainerMon[])
         {
             {
@@ -13831,6 +13831,94 @@ F_TRAINER_FEMALE |
                 MOVE_BLAZE_KICK,
                 MOVE_BRAVE_BIRD,
                 MOVE_SKY_UPPERCUT,
+            },
+            },
+            {
+#line 5684
+            .species = SPECIES_CERULEDGE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 5684
+            .heldItem = ITEM_SALAC_BERRY,
+#line 5689
+            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
+#line 5691
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 5687
+            .ability = ABILITY_WEAK_ARMOR,
+#line 5685
+            .lvl = 43,
+#line 5686
+            .ball = ITEM_LOVE_BALL,
+#line 5690
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 5688
+            .teraType = TYPE_FIRE,
+            .moves = {
+#line 5691
+                MOVE_BITTER_BLADE,
+                MOVE_POLTERGEIST,
+                MOVE_SWORDS_DANCE,
+                MOVE_X_SCISSOR,
+            },
+            },
+            {
+#line 5696
+            .species = SPECIES_LILLIGANT_HISUI,
+#line 5696
+            .gender = TRAINER_MON_FEMALE,
+#line 5696
+            .heldItem = ITEM_COBA_BERRY,
+#line 5701
+            .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 4),
+#line 5703
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 5699
+            .ability = ABILITY_CHLOROPHYLL,
+#line 5697
+            .lvl = 43,
+#line 5698
+            .ball = ITEM_LOVE_BALL,
+#line 5702
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 5700
+            .teraType = TYPE_GRASS,
+            .moves = {
+#line 5703
+                MOVE_AXE_KICK,
+                MOVE_SOLAR_BLADE,
+                MOVE_VICTORY_DANCE,
+                MOVE_TRIPLE_AXEL,
+            },
+            },
+            {
+#line 5708
+            .species = SPECIES_SOLROCK,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 5708
+            .heldItem = ITEM_PASSHO_BERRY,
+#line 5713
+            .ev = TRAINER_PARTY_EVS(248, 252, 0, 0, 0, 8),
+#line 5715
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 5711
+            .ability = ABILITY_LEVITATE,
+#line 5709
+            .lvl = 43,
+#line 5710
+            .ball = ITEM_LOVE_BALL,
+#line 5714
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 5712
+            .teraType = TYPE_ROCK,
+            .moves = {
+#line 5715
+                MOVE_FLARE_BLITZ,
+                MOVE_ROCK_SLIDE,
+                MOVE_MORNING_SUN,
+                MOVE_SUNNY_DAY,
             },
             },
             {

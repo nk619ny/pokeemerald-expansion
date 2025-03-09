@@ -7,11 +7,16 @@ raw `
 
 MeteorFalls_1F_1R_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MeteorFalls_1F_1R_OnLoad
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, MeteorFalls_1F_1R_OnFrame
 	.byte 0
 
 MeteorFalls_1F_1R_OnLoad:
 	call_if_set FLAG_SYS_GAME_CLEAR, MeteorFalls_1F_1R_EventScript_OpenStevensCave
 	end
+
+MeteorFalls_1F_1R_OnFrame:
+	map_script_2 VAR_TEMP_0, 0, MeteorFalls_1F_1R_FlashCheck
+	.2byte 0
 
 MeteorFalls_1F_1R_EventScript_OpenStevensCave::
 	setmetatile 4, 1, METATILE_MeteorFalls_CaveEntrance_Top, TRUE
@@ -20,7 +25,7 @@ MeteorFalls_1F_1R_EventScript_OpenStevensCave::
 	setmetatile 5, 2, METATILE_MeteorFalls_CaveEntrance_Right, TRUE
 	return
 
-MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
+/*MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	lockall
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
@@ -313,5 +318,34 @@ MeteorFalls_1F_1R_Text_MeetProfCozmo:
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
 	.string "PROF. COZMO: But that TEAM MAGMA…\p"
 	.string "What are they going to do with that\n"
-	.string "METEORITE at MT. CHIMNEY?$"
+	.string "METEORITE at MT. CHIMNEY?$" */
 `
+
+script MeteorFalls_1F_1R_FlashCheck {
+    if(flag(FLAG_RECEIVED_HM_FLASH)) {
+		lock
+		msgbox(Common_Text_CaveIsDarkUseFlash)
+		waitmessage
+		dofieldeffect(FLDEFF_USE_STRENGTH)
+		playse(SE_M_REFLECT)
+		delay(30)
+		setflag(FLAG_SYS_USE_FLASH)
+		animateflash(0)
+		setflashlevel(0)
+		setvar(VAR_TEMP_0,1)
+		release
+		return
+	}
+	else {
+		lock
+		msgbox(Common_Text_CaveIsDarkNeedFlash)
+		waitmessage
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep)
+		delay(2)
+		warp(MAP_ROUTE114,8,63)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep)
+		waitmovement(0)
+		release
+		return
+	}
+}

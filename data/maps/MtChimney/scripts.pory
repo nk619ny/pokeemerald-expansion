@@ -42,7 +42,7 @@ MtChimney_EventScript_ArchieBusyFighting::
 MtChimney_EventScript_Maxie::
 	lockall
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
-	msgbox MtChimney_Text_MeteoriteWillActivateVolcano, MSGBOX_DEFAULT
+	msgbox MtChimney_Text_MachineWillActivateVolcano, MSGBOX_DEFAULT
 	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
 	waitmovement 0
 	playse SE_PIN
@@ -70,13 +70,20 @@ MtChimney_EventScript_Maxie::
 	waitmovement 0
 	msgbox MtChimney_Text_ArchieThankYou, MSGBOX_DEFAULT
 	closemessage
+	msgbox MtChimney_Text_ArchieGiveFlash, MSGBOX_DEFAULT
+	waitmessage
+	GIVEITEM ITEM_HM05
+	waitfanfare
+	closemessage
+	setflag FLAG_RECEIVED_HM_FLASH
+	msgbox MtChimney_Text_ArchieMeetAgain
+	closemessage
 	call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieExitEast
 	call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieExitNorth
 	removeobject LOCALID_ARCHIE
 	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA
 	setflag FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
-	clearflag FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO
-	setflag FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO
+//	clearflag FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO
 	clearflag FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY
 	releaseall
 	end
@@ -404,6 +411,11 @@ MtChimney_EventScript_Tabitha::
 	msgbox MtChimney_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+MtChimney_EventScript_Courtney::
+	trainerbattle_single TRAINER_COURTNEY_MT_CHIMNEY, MtChimney_Text_CourtneyIntro, MtChimney_Text_CourtneyDefeat, MtChimney_EventScript_CourtneyOutro
+	msgbox MtChimney_Text_CourtneyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 MtChimney_EventScript_Grunt2::
 	trainerbattle_single TRAINER_GRUNT_MT_CHIMNEY_2, MtChimney_Text_Grunt2Intro, MtChimney_Text_Grunt2Defeat
 	msgbox MtChimney_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
@@ -433,13 +445,13 @@ MtChimney_EventScript_BusyMagmaGrunt6::
 	msgbox MtChimney_Text_KeepMakingMoreLand, MSGBOX_SIGN
 	end
 
-MtChimney_EventScript_MagmaPoochyena::
+/*MtChimney_EventScript_MagmaPoochyena::
 	msgbox MtChimney_Text_Bufoh, MSGBOX_SIGN
-	end
+	end 
 
 MtChimney_EventScript_AquaPoochyena::
 	msgbox MtChimney_Text_Bushaa, MSGBOX_SIGN
-	end
+	end */
 
 MtChimney_EventScript_MeteoriteMachine::
 	lockall
@@ -544,7 +556,7 @@ MtChimney_Text_MeteoriteWillActivateVolcano:
 	.string "the crater and…\l"
 	.string "Fufufu…$"
 
-MtChimney_Text_MaxieIntro:
+/* MtChimney_Text_MaxieIntro:
 	.string "MAXIE: Hm?\n"
 	.string "Who are you?\p"
 	.string "… … … … … …\n"
@@ -583,7 +595,7 @@ MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
 	.string "you've seen of TEAM MAGMA.\p"
 	.string "Fufufu…\p"
 	.string "Even without the METEORITE, if we\n"
-	.string "obtain that ORB… Fufufu…$"
+	.string "obtain that ORB… Fufufu…$" */
 
 MtChimney_Text_TabithaIntro:
 	.string "Hehehe!\p"
@@ -664,8 +676,8 @@ MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "I should've guessed you'd show up!\p"
 	.string "See for yourself what the fanatics\n"
 	.string "of TEAM MAGMA are up to!\p"
-	.string "They're trying to inject the stolen\n"
-	.string "METEORITE's power into the volcano!\p"
+	.string "They're using a machine to agitate\n"
+	.string "the volcano!\p"
 	.string "Doing something like that will cause\n"
 	.string "the volcano's eruption!$"
 
@@ -685,8 +697,7 @@ MtChimney_Text_ArchieThankYou:
 	.string "Whose side are you on?\p"
 	.string "Ah, it doesn't matter.\p"
 	.string "We will remain vigilant and keep up\n"
-	.string "our pursuit of TEAM MAGMA.\p"
-	.string "{PLAYER}, we shall meet again!$"
+	.string "our pursuit of TEAM MAGMA.$"
 
 MtChimney_Text_MagmaOutnumbersUs:
 	.string "Darn… TEAM MAGMA outnumbers us!\n"
@@ -854,3 +865,78 @@ script MtChimney_EventScript_SetupMagma {
 	clearflag(FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA)
 	return
 }
+
+script MtChimney_EventScript_MagmaPoochyena {
+    lock
+    msgbox(SlateportFarm_PokemonBattlingText)
+    waitmessage
+    releaseall
+    end
+}
+
+script MtChimney_EventScript_AquaPoochyena {
+    lock
+    msgbox(SlateportFarm_PokemonBattlingText)
+    waitmessage
+    releaseall
+    end
+}
+
+script MtChimney_EventScript_CourtneyOutro {
+	lock
+	msgbox(MtChimney_Text_CourtneyOutro, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+text MtChimney_Text_CourtneyIntro {
+	format("...Who are you?\nGet away from me.\pWe seek to revitalize this volcano. The machine will awaken the slumbering giant.\pIt will create more land for humanity and Pokémon alike. That is what... what we of Team Magma seek.\pYou are a hindrance...\nWill you get away from me...?\lNo...?\p...Well then...\nDeleting...")
+}
+
+text MtChimney_Text_CourtneyDefeat {
+	format("...Analyzing...")
+}
+
+text MtChimney_Text_CourtneyOutro {
+	format("Unanticipated.\nYou. Target lock.\pThis will be remembered...")
+}
+
+
+text MtChimney_Text_CourtneyPostBattle {
+	format("New growth is needed…\n…for the future…")
+}
+
+text MtChimney_Text_MachineWillActivateVolcano {
+	//format("This machine… will intensify the volcanic activity within Mt. Chimney.\pThe energy deep within the planet's core will grow...")
+	format("If our calculations are correct, there is a 63% chance that this machine will be able to awaken the power deep within the volcano...")
+}
+
+text MtChimney_Text_MaxieIntro {
+	format("I remember you. You are the one who defied us at the glacier.\pAnd your presence here tells me that you have defeated Courtney as well.\pYou show true promise.\nFine. I will attempt to educate you.\p12 years ago, during my research into Hoenn's development, I discovered an existential risk.\pPopulation growth could soon outpace the land's ability to support us.\pHousing, crop yields, infrastructure - all would be strained to the breaking point.\pSo, I spearheaded land reclamation efforts to expand the space available to us, and I created Team Magma to achieve these goals.\pBut it was not enough.\pEven if all of our modest efforts succeeded, I fear it would merely delay the inevitable.\pAnd along the way, short-sighted fools such as those in Team Aqua continue to delay and undermine us.\pBut recently, I discovered there was a power capable of creating new lands on a grand scale, expediently, and irreversably.\pIt has become clear to me that this represents Hoenn's salvation. And though it now slumbers, deep underground, we believe that it can be awakened.\lThat it must be awakened.\pI should not say too much…\nThat is enough for today's lesson.\lI believe it is time we begin.\pAny fool standing in the way of progress must be met without mercy.\pI will bury you by my own hand!")
+	//format("I remember you. You are the one who defied us at the glacier.\pAnd your presence here tells me that you have defeated Courtney as well.\p
+	//You show true promise.\nFine. I will attempt to educate you.\pVolcanic eruptions bring molten rock from the Earth's core to the surface, 
+	//which cools and solidifies, layering upon itself to create new land.\pThis process occurs over millions of years.\l
+	//But Hoenn does not have that kind of time.\pThousands of years ago, there lived a powerful being that was said to be capable of creating new lands 
+	//on the planet. In a similar manner, but on a grander scale, more expediently.\pIt has become clear to us in Team Magma that this power holds Hoenn's salvation. 
+	//And though it now slumbers, trapped in a deep sleep, we believe that it can be awakened.\nThat it must be awakened.\pI should not say too much…\nThat is enough for today's lesson.\l
+	//I believe it is time we begin.\pAny fool standing in the way of progress must be met without mercy.\pI will bury you by my own hand!")
+
+}
+
+text MtChimney_Text_MaxieDefeat {
+	format("You are… quite capable…\nI fell behind, but only by an inch…")
+}
+
+text MtChimney_Text_MaxieYouHaventSeenLastOfMagma {
+	format("...\n...\pWell. This is not yet time for us to unleash our full strength.\pIf our machine was capable of awakening the ancient being beneath the volcano, we would have felt it by now.\pSo there is no purpose to continued squabbling with you.\pI must excuse myself. But if I encounter you again, you will face the full might of Team Magma and witness the true brilliance of Maxie!")
+}
+
+
+text MtChimney_Text_ArchieGiveFlash {
+	format("Take this, as a thank you for your help today.\pIt will help if you need to chase Team Magma underground.")
+}
+
+text MtChimney_Text_ArchieMeetAgain {
+	"{PLAYER}, we shall meet again!"
+}
+

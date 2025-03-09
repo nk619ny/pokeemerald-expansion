@@ -10209,13 +10209,13 @@ static uq4_12_t GetWeatherDamageModifier(struct DamageCalculationData *damageCal
     {
         if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
             return UQ_4_12(1.0);
-        return (moveType == TYPE_FIRE) ? UQ_4_12(0.5) : UQ_4_12(1.5);
+        return (moveType == TYPE_FIRE) ? UQ_4_12(0.5) : UQ_4_12(1.3); //reduced rain boost of water type attacks to 30%, similar to terrain
     }
     if (weather & B_WEATHER_SUN)
     {
         if (moveType != TYPE_FIRE && moveType != TYPE_WATER)
             return UQ_4_12(1.0);
-        return (moveType == TYPE_WATER) ? UQ_4_12(0.5) : UQ_4_12(1.5);
+        return (moveType == TYPE_WATER) ? UQ_4_12(0.5) : UQ_4_12(1.3); //reduced sun boost of fire type attacks to 30%, similar to terrain
     }
     return UQ_4_12(1.0);
 }

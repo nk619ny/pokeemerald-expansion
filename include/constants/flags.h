@@ -986,11 +986,11 @@
 #define FLAG_HIDE_REGIROCK                                          0x3A7
 #define FLAG_HIDE_REGICE                                            0x3A8
 #define FLAG_HIDE_REGISTEEL                                         0x3A9
-#define FLAG_HIDE_METEOR_FALLS_TEAM_AQUA                            0x3AA
-#define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB
+#define FLAG_HIDE_METEOR_FALLS_TEAM_AQUA                            0x3AA //was meteor falls; now unused, available to repurpose
+#define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB //was meteor falls; now unused, available to repurpose
 #define FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN                      0x3AC
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT               0x3AD
-#define FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO                          0x3AE
+#define FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO                          0x3AE //was meteor falls; now unused, available to repurpose
 #define FLAG_HIDE_AQUA_HIDEOUT_B2F_SUBMARINE_SHADOW                 0x3AF
 #define FLAG_HIDE_ROUTE_128_ARCHIE                                  0x3B0
 #define FLAG_HIDE_ROUTE_128_MAXIE                                   0x3B1

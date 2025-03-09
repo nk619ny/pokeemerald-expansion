@@ -56,3 +56,40 @@ script Common_EventScript_ApplyHandicap {
 	}
 	return
 }
+
+text Common_Text_CaveIsDarkUseFlash {
+	format("This cave is too dark to explore without a light.\p{PLAYER}'s Pokémon used Flash!")
+}
+
+text Common_Text_CaveIsDarkNeedFlash {
+	format("This cave is too dark to explore without a light.\pIt's better to turn back.")
+}
+
+movement Common_Movement_WalkDownOneStep{
+	walk_down
+}
+
+movement Common_Movement_WalkUpOneStep{
+	walk_up
+}
+
+movement Common_Movement_WalkLeftOneStep{
+	walk_left
+}
+
+movement Common_Movement_WalkRightOneStep{
+	walk_right
+}
+
+script Common_EventScript_SetFlashTest {
+	lock
+	msgbox(format("Do you have flash?"),MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		setflag(FLAG_RECEIVED_HM_FLASH)
+	} 
+	elif (var(VAR_RESULT) == NO) {
+		clearflag(FLAG_RECEIVED_HM_FLASH)
+	}
+	releaseall
+	return
+}

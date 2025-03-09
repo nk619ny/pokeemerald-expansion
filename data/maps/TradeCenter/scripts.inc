@@ -128,7 +128,74 @@ Common_EventScript_ApplyHandicap_16:
 	goto Common_EventScript_ApplyHandicap_15
 
 
+# 68 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkDownOneStep:
+# 69 "data/maps/TradeCenter/scripts.pory"
+	walk_down
+	step_end
+
+# 72 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkUpOneStep:
+# 73 "data/maps/TradeCenter/scripts.pory"
+	walk_up
+	step_end
+
+# 76 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkLeftOneStep:
+# 77 "data/maps/TradeCenter/scripts.pory"
+	walk_left
+	step_end
+
+# 80 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkRightOneStep:
+# 81 "data/maps/TradeCenter/scripts.pory"
+	walk_right
+	step_end
+
+Common_EventScript_SetFlashTest::
+# 85 "data/maps/TradeCenter/scripts.pory"
+	lock
+# 86 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_SetFlashTest_Text_0, MSGBOX_YESNO
+# 87 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Common_EventScript_SetFlashTest_2
+# 90 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq Common_EventScript_SetFlashTest_3
+Common_EventScript_SetFlashTest_1:
+# 93 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	return
+
+Common_EventScript_SetFlashTest_2:
+# 88 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_RECEIVED_HM_FLASH
+	goto Common_EventScript_SetFlashTest_1
+
+Common_EventScript_SetFlashTest_3:
+# 91 "data/maps/TradeCenter/scripts.pory"
+	clearflag FLAG_RECEIVED_HM_FLASH
+	goto Common_EventScript_SetFlashTest_1
+
+
 Common_EventScript_LevelCapUpdate_Text_0:
 # 10 "data/maps/TradeCenter/scripts.pory"
 	.string "{PLAYER} grew to Trainer Level\n"
 	.string "{STR_VAR_1}!$"
+
+Common_EventScript_SetFlashTest_Text_0:
+# 86 "data/maps/TradeCenter/scripts.pory"
+	.string "Do you have flash?$"
+
+Common_Text_CaveIsDarkUseFlash::
+# 60 "data/maps/TradeCenter/scripts.pory"
+	.string "This cave is too dark to explore\n"
+	.string "without a light.\p"
+	.string "{PLAYER}'s Pokémon used Flash!$"
+
+Common_Text_CaveIsDarkNeedFlash::
+# 64 "data/maps/TradeCenter/scripts.pory"
+	.string "This cave is too dark to explore\n"
+	.string "without a light.\p"
+	.string "It's better to turn back.$"
