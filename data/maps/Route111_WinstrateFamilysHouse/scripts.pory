@@ -108,6 +108,8 @@ Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort:
 
 `
 
+const TempVar_SelectedItem = VAR_TEMP_6
+
 text Route111_WinstrateFamilysHouse_Text_GrandsonStrong {
 	format("There's no question that you're strong.\pBut if you were to battle my grandson,\nyou'd end up crying in frustration.\pHe's much stronger than any Trainer\nour family knows.\pHe went off to Unova to hone his skills even further.\pBut we heard he's back in Hoenn now, so we're excited to see how he's grown.")
 }
@@ -119,8 +121,8 @@ text Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort {
 script Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem {
 	msgbox(format("As a reward for taking us all on, we'd like to give you something!\pWhich rare battle item would you like?"))
 	dynmultichoice(25,2,0,5,0,DYN_MULTICHOICE_CB_NONE,"Choice Band","Choice Specs","Choice Scarf","Life Orb","Leftovers")
-	copyvar(VAR_TEMP_6,VAR_RESULT)
-	switch(var(VAR_TEMP_6)){
+	copyvar(TempVar_SelectedItem,VAR_RESULT)
+	switch(var(TempVar_SelectedItem)){
 		case 0:
 			bufferstring(STR_VAR_1,"Choice Band")
 		case 1:
@@ -143,7 +145,7 @@ script Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem {
 		end
 	}
 	else{
-		switch(var(VAR_TEMP_6)){
+		switch(var(TempVar_SelectedItem)){
 			case 0:
 				giveitem(ITEM_CHOICE_BAND)
 				setflag(FLAG_RECEIVED_CHOICE_BAND)

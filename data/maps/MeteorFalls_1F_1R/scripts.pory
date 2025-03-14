@@ -328,7 +328,7 @@ script MeteorFalls_1F_1R_FlashCheck {
 		waitmessage
 		dofieldeffect(FLDEFF_USE_STRENGTH)
 		playse(SE_M_REFLECT)
-		delay(30)
+		delay(20)
 		setflag(FLAG_SYS_USE_FLASH)
 		animateflash(0)
 		setflashlevel(0)
@@ -338,10 +338,11 @@ script MeteorFalls_1F_1R_FlashCheck {
 	}
 	else {
 		lock
+		setvar(VAR_TEMP_0,1)
 		msgbox(Common_Text_CaveIsDarkNeedFlash)
 		waitmessage
 		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep)
-		delay(2)
+		delay(1)
 		warp(MAP_ROUTE114,8,63)
 		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep)
 		waitmovement(0)

@@ -309,8 +309,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_MAGMA_ARMOR] =
     {
         .name = _("Magma Armor"),
-        .description = COMPOUND_STRING("Prevents freezing."),
-        .aiRating = 1,
+        .description = COMPOUND_STRING("Blocks crits & freezing."),
+        .aiRating = 2,
         .breakable = TRUE,
     },
 
@@ -2436,5 +2436,19 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Constant smoke ups evasion."),
         .aiRating = 4,
         .breakable = TRUE,
+    },
+
+    [ABILITY_SANDGEIST] =
+    {
+        .name = _("Sandgeist"),
+        .description = COMPOUND_STRING("Creates a sandstorm if hit."),
+        .aiRating = 5,
+    },
+
+    [ABILITY_SPOUT_SPRAY] =
+    {
+        .name = _("Spout Spray"),
+        .description = COMPOUND_STRING("Creates a downpour if hit."),
+        .aiRating = 5,
     },
 };

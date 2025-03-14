@@ -214,206 +214,206 @@ Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort:
 	.string "CHAMPION already!$" */
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem::
-# 120 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	msgbox Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_0
-# 121 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	dynmultichoice 25, 2, 0, 5, 0, DYN_MULTICHOICE_CB_NONE, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_2, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_3, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_4, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_5
 # 122 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	copyvar VAR_TEMP_6, VAR_RESULT
+	msgbox Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_0
 # 123 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	switch VAR_TEMP_6
+	dynmultichoice 25, 2, 0, 5, 0, DYN_MULTICHOICE_CB_NONE, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_2, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_3, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_4, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_5
 # 124 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	case 0, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_3
+	copyvar VAR_TEMP_6, VAR_RESULT
+# 125 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	switch VAR_TEMP_6
 # 126 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	case 1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_4
+	case 0, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_3
 # 128 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	case 2, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_5
+	case 1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_4
 # 130 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	case 3, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_6
+	case 2, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_5
 # 132 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	case 4, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_7
+	case 3, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_6
 # 134 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	case 4, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_7
+# 136 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	case 127, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_8
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_1:
-# 139 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 141 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	msgbox Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_7, MSGBOX_YESNO
-# 140 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 142 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_10
-# 146 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 148 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	switch VAR_TEMP_6
-# 147 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 149 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	case 0, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_14
-# 151 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 153 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	case 1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_15
-# 155 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 157 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	case 2, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_16
-# 159 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 161 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	case 3, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_17
-# 163 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 165 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	case 4, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_18
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_9:
-# 169 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	msgbox Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_8
-# 170 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	waitmessage
 # 171 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
+	msgbox Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_8
 # 172 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	waitmessage
+# 173 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
+# 174 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	releaseall
 	end
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_3:
-# 125 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 127 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_1
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_1
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_4:
-# 127 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 129 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_2
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_1
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_5:
-# 129 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 131 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_3
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_1
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_6:
-# 131 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 133 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_4
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_1
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_7:
-# 133 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 135 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_5
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_1
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_8:
-# 135 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 137 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	msgbox Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_6, MSGBOX_NPC
-# 136 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 138 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_10:
-# 141 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 143 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	msgbox Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_6, MSGBOX_NPC
-# 142 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 144 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	waitmessage
 	end
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_14:
-# 148 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	giveitem ITEM_CHOICE_BAND
-# 149 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	setflag FLAG_RECEIVED_CHOICE_BAND
 # 150 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	giveitem ITEM_CHOICE_BAND
+# 151 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	setflag FLAG_RECEIVED_CHOICE_BAND
+# 152 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	setflag FLAG_RECEIVED_WINSTRATE_ITEM
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_9
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_15:
-# 152 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	giveitem ITEM_CHOICE_SPECS
-# 153 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	setflag FLAG_RECEIVED_CHOICE_SPECS
 # 154 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	giveitem ITEM_CHOICE_SPECS
+# 155 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	setflag FLAG_RECEIVED_CHOICE_SPECS
+# 156 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	setflag FLAG_RECEIVED_WINSTRATE_ITEM
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_9
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_16:
-# 156 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	giveitem ITEM_CHOICE_SCARF
-# 157 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	setflag FLAG_RECEIVED_CHOICE_SCARF
 # 158 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	giveitem ITEM_CHOICE_SCARF
+# 159 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	setflag FLAG_RECEIVED_CHOICE_SCARF
+# 160 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	setflag FLAG_RECEIVED_WINSTRATE_ITEM
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_9
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_17:
-# 160 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	giveitem ITEM_LIFE_ORB
-# 161 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	setflag FLAG_RECEIVED_LIFE_ORB
 # 162 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	giveitem ITEM_LIFE_ORB
+# 163 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	setflag FLAG_RECEIVED_LIFE_ORB
+# 164 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	setflag FLAG_RECEIVED_WINSTRATE_ITEM
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_9
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_18:
-# 164 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	giveitem ITEM_LEFTOVERS
-# 165 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	setflag FLAG_RECEIVED_LEFTOVERS
 # 166 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	giveitem ITEM_LEFTOVERS
+# 167 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	setflag FLAG_RECEIVED_LEFTOVERS
+# 168 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	setflag FLAG_RECEIVED_WINSTRATE_ITEM
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_9
 
 
 Route111_WinstrateFamilysHouse_EventScript_Victoria::
-# 177 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	lock
-# 178 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	faceplayer
 # 179 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	goto_if_set FLAG_RECEIVED_WINSTRATE_ITEM, Route111_WinstrateFamilysHouse_EventScript_ReceivedItem
+	lock
 # 180 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem
+	faceplayer
 # 181 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	goto_if_set FLAG_RECEIVED_WINSTRATE_ITEM, Route111_WinstrateFamilysHouse_EventScript_ReceivedItem
+# 182 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem
+# 183 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	releaseall
 	return
 
 
 Route111_WinstrateFamilysHouse_EventScript_ReceivedItem::
-# 186 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 188 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	msgbox Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles, MSGBOX_DEFAULT
-# 187 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 189 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_0:
-# 120 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 122 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "As a reward for taking us all on, we'd\n"
 	.string "like to give you something!\p"
 	.string "Which rare battle item would you like?$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_1:
-# 121 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 123 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "Choice Band$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_2:
-# 121 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 123 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "Choice Specs$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_3:
-# 121 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 123 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "Choice Scarf$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_4:
-# 121 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 123 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "Life Orb$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_5:
-# 121 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 123 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "Leftovers$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_6:
-# 135 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 137 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "Okay, let me know when you've decided\n"
 	.string "what item you'd like.$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_7:
-# 139 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 141 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "Are you sure you want the\n"
 	.string "{STR_VAR_1}?$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_8:
-# 169 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 171 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "Wonderful choice - I hope this\n"
 	.string "{STR_VAR_1} makes you & your\l"
 	.string "Pokémon even stronger!$"
 
 Route111_WinstrateFamilysHouse_Text_GrandsonStrong::
-# 111 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 113 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "There's no question that you're strong.\p"
 	.string "But if you were to battle my grandson,\n"
 	.string "you'd end up crying in frustration.\p"
@@ -425,7 +425,7 @@ Route111_WinstrateFamilysHouse_Text_GrandsonStrong::
 	.string "we're excited to see how he's grown.$"
 
 Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort::
-# 115 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
+# 117 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	.string "My grandson took the Hoenn League\n"
 	.string "challenge, then went off to Unova to\l"
 	.string "hone his skills even further.\p"

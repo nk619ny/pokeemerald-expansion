@@ -190,6 +190,7 @@ script SlateportFarm_EventScript_AquaVictory {
     waitmessage
     giveitem(ITEM_HM01)
     closemessage
+    setflag(FLAG_RECEIVED_HM_CUT)
     removeobject(LOCALID_BRAWLYMON)
     applymovement(LOCALID_BRAWLY,SlateportFarm_Movement_BrawlyRescuePlayer)
     waitmovement(0)
@@ -249,6 +250,7 @@ script SlateportFarm_EventScript_MagmaVictory {
     giveitem(ITEM_HM01)
     closemessage
     removeobject(4)
+    setflag(FLAG_RECEIVED_HM_CUT)
     applymovement(LOCALID_MAGMAADMIN,SlateportFarm_Movement_MagmaLeaves)
     waitmovement(0)
     delay(20)

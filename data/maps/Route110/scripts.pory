@@ -430,6 +430,15 @@ Route110_EventScript_MayDefeated::
 	msgbox Route110_Text_MayTakeThis, MSGBOX_DEFAULT
 	call Route110_EventScript_GiveItemfinder
 	msgbox Route110_Text_MayExplainItemfinder, MSGBOX_DEFAULT
+	msgbox Route110_Text_MayHiLetsRegister, MSGBOX_DEFAULT
+	closemessage
+	delay 30
+	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT
+	waitfanfare
+	closemessage
+	delay 30
+	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 	goto Route110_EventScript_RivalExit
 	end
 
@@ -460,6 +469,15 @@ Route110_EventScript_BrendanDefeated::
 	msgbox Route110_Text_BrendanTakeThis, MSGBOX_DEFAULT
 	call Route110_EventScript_GiveItemfinder
 	msgbox Route110_Text_BrendanExplainItemfinder, MSGBOX_DEFAULT
+	msgbox Route110_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
+	closemessage
+	delay 30
+	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	waitfanfare
+	closemessage
+	delay 30
+	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 	goto Route110_EventScript_RivalExit
 	end
 
@@ -994,3 +1012,11 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "See you again, {PLAYER}{KUN}!$"
 
 `
+
+text Route110_Text_MayHiLetsRegister {
+	format("May: Let's register each other in your POKéNAV so that we can contact one another anytime!")
+}
+
+text Route110_Text_BrendanHiLetsRegister {
+	format("Brendan: Let's register each other in your POKéNAV so that we can get in touch anytime!")
+}

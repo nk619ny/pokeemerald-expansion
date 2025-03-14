@@ -93,8 +93,8 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT
 	setflag FLAG_DEFEATED_MAUVILLE_GYM
 	setflag FLAG_BADGE03_GET
-	addvar VAR_PETALBURG_GYM_STATE, 1
-	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
+//	addvar VAR_PETALBURG_GYM_STATE, 1
+//	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
 	setvar VAR_0x8008, 3
 	call Common_EventScript_SetGymTrainers
 	special MauvilleGymDeactivatePuzzle
@@ -424,6 +424,7 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 `
 
 const LOCALID_GYMGUIDE = 6
+const TempVar_TriggerSquare = VAR_TEMP_2
 
 script MauvilleCity_Gym_EventScript_SetNewLevelCap {
 //	setvar(VAR_LEVEL_HANDICAP, 5)
@@ -465,27 +466,27 @@ text MauvilleCity_Gym_Text_GymGuideHaltPlayer{
 }
 
 script MauvilleCity_Gym_EventScript_HaltPlayerTrigger5 {
-	setvar(VAR_TEMP_2,5)
+	setvar(TempVar_TriggerSquare,5)
 	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
 }
 
 script MauvilleCity_Gym_EventScript_HaltPlayerTrigger6 {
-	setvar(VAR_TEMP_2,6)
+	setvar(TempVar_TriggerSquare,6)
 	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
 }	
 
 script MauvilleCity_Gym_EventScript_HaltPlayerTrigger7 {
-	setvar(VAR_TEMP_2,7)
+	setvar(TempVar_TriggerSquare,7)
 	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
 }	
 
 script MauvilleCity_Gym_EventScript_HaltPlayerTrigger8 {
-	setvar(VAR_TEMP_2,8)
+	setvar(TempVar_TriggerSquare,8)
 	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
 }	
 
 script MauvilleCity_Gym_EventScript_HaltPlayerTrigger9 {
-	setvar(VAR_TEMP_2,9)
+	setvar(TempVar_TriggerSquare,9)
 	goto(MauvilleCity_Gym_EventScript_HaltPlayer)
 }	
 
@@ -499,7 +500,7 @@ script MauvilleCity_Gym_EventScript_HaltPlayer {
 	applymovement(LOCALID_GYMGUIDE, Common_Movement_ExclamationMark)
 	waitmovement(0)
 	setflag(FLAG_TEMP_HIDE_FOLLOWER)
-	switch(var(VAR_TEMP_2)){
+	switch(var(TempVar_TriggerSquare)){
 		case 5:
 			delay(5)
 		case 6:
@@ -522,7 +523,7 @@ script MauvilleCity_Gym_EventScript_HaltPlayer {
 	applymovement(OBJ_EVENT_ID_PLAYER, MauvilleCity_Gym_Movement_Player_ForcedDown)
 	waitmovement(0)
 	delay(10)
-	switch(var(VAR_TEMP_2)){
+	switch(var(TempVar_TriggerSquare)){
 		case 5:
 			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot5)
 		case 6:

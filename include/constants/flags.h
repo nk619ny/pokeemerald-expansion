@@ -779,8 +779,8 @@
 #define FLAG_UNUSED_2D9                                             0x2D9 // unused, temporarily used but reopened
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
-#define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
-#define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC
+#define FLAG_UNUSED_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB //was used, now unused and available for repurposing
+#define FLAG_UNUSED_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC //was used, now unused and available for repurposing
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF

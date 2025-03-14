@@ -137,9 +137,9 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
 # 69 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	setflag FLAG_BADGE04_GET
 # 70 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	addvar VAR_PETALBURG_GYM_STATE, 1
+//	addvar VAR_PETALBURG_GYM_STATE, 1
 # 71 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
+//	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
 # 72 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	setvar VAR_0x8008, 4
 # 73 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

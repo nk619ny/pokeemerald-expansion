@@ -1203,14 +1203,13 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Poison Sting
 
 === TRAINER_AQUA_ADMIN_RUSTURF ===
-Name: SHELLY
+Name: MATT
 Class: Aqua Admin
-Pic: Shelly ORAS
-Gender: Female
+Pic: Matt ORAS
+Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
-
 
 Gigalith  
 Ability: Sturdy  
@@ -2101,7 +2100,6 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 Shiftry @ Focus Sash  
 Level: 53
 Ability: Wind Rider  
-Tera Type: Grass  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Leaf Blade  
@@ -2112,8 +2110,7 @@ Jolly Nature
 Murkrow @ Focus Sash 
 Level: 55
 Ability: Prankster  
-Tera Type: Dark  
-EVs: 248 HP / 8 Def / 252 SpD  
+EVs: 252 HP / 4 Def / 252 SpD  
 Careful Nature  
 - Tailwind  
 - U-turn  
@@ -2123,7 +2120,6 @@ Careful Nature
 Crobat @ Black Sludge 
 Level: 53
 Ability: Inner Focus  
-Tera Type: Poison  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Brave Bird  
@@ -2134,7 +2130,8 @@ Jolly Nature
 Absol @ Absolite  
 Level: 53
 Ability: Justified  
-Tera Type: Dark  
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
 - Pursuit  
 - Play Rough  
 - Sucker Punch  
@@ -2143,7 +2140,6 @@ Tera Type: Dark
 Darkrai @ Roseli Berry  
 Level: 53
 Ability: Bad Dreams  
-Tera Type: Dark  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -2155,7 +2151,6 @@ IVs: 0 Atk
 Yveltal  
 Level: 50
 Ability: Dark Aura  
-Tera Type: Dark  
 EVs: 252 Atk / 4 SpA / 252 Spe  
 Hasty Nature  
 - Oblivion Wing  
@@ -10253,10 +10248,10 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MOSSDEEP ===
-Name: TABITHA
+Name: Courtney
 Class: Magma Admin
-Pic: Tabitha ORAS
-Gender: Male
+Pic: Courtney ORAS
+Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
@@ -12586,17 +12581,81 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Mightyena
-Level: 37
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Groudon @ Red Orb  
+Ability: Drought
+Level: 65
+Ball: Master Ball
+Tera Type: Ground  
+EVs: 252 HP / 160 SpD / 96 Spe  
+Brave Nature  
+- Precipice Blades  
+- Heat Crash  
+- Solar Beam  
+- Rock Slide  
 
-Crobat
-Level: 38
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Charizard @ Charti Berry  
+Ability: Solar Power  
+Level: 65
+Ball: Timer Ball
+Tera Type: Fire  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Heat Wave  
+- Ancient Power  
+- Scorching Sands  
+- Solar Beam  
 
-Camerupt
-Level: 39
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Lilligant-Hisui (F) @ Coba Berry  
+Ability: Chlorophyll  
+Level: 65
+Ball: Timer Ball
+Tera Type: Grass  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Acrobatics  
+- Seed Bomb  
+- Axe Kick  
+- Ice Spinner  
+
+Walking Wake @ Expert Belt  
+Ability: Protosynthesis  
+Level: 65
+Ball: Timer Ball
+Tera Type: Water  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe /* HP Electric IVs for Min Atk */
+- Hydro Steam  
+- Flamethrower  
+- Draco Meteor  
+- Hidden Power
+
+Gouging Fire @ Weakness Policy  
+Ability: Protosynthesis  
+Level: 65
+Ball: Timer Ball
+Tera Type: Fire  
+EVs: 128 HP / 128 Atk / 252 Spe  
+Jolly Nature  
+- Burning Bulwark  
+- Heat Crash  
+- Breaking Swipe  
+- Morning Sun  
+
+Camerupt @ Cameruptite  
+Ability: Magma Armor 
+Level: 65
+Ball: Timer Ball
+Tera Type: Fire  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Eruption  
+- Heat Wave  
+- Earth Power  
+- Solar Beam  
+
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
 Name: MAXIE
@@ -12607,7 +12666,7 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Ninetales  
+Ninetales @ Wise Glasses
 Level: 45
 Ball: Timer Ball
 Ability: Drought  
@@ -12620,7 +12679,7 @@ IVs: 0 Atk
 - Morning Sun  
 - Solar Beam  
 
-Venusaur  
+Venusaur @ Big Root
 Level: 45
 Ball: Timer Ball
 Ability: Chlorophyll  
@@ -12648,7 +12707,7 @@ IVs: 0 Atk
 
 Heatran @ Shuca Berry  
 Level: 45
-Ball: Heavy Ball
+Ball: Timer Ball
 Ability: Flash Fire  
 Tera Type: Fire  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -12671,7 +12730,7 @@ Adamant Nature
 - Facade  
 - Play Rough  
 
-Volcanion  
+Volcanion @ Expert Belt
 Level: 45
 Ball: Timer Ball
 Ability: Water Absorb  

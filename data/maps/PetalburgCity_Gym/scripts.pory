@@ -7,6 +7,17 @@ mapscripts PetalburgCity_Gym_MapScripts {
 	]
 }
 
+const TempVar_Vito_Dialogue = VAR_TEMP_3
+
+//VAR_PETALBURG_GYM_STATE
+//0 - First entrance into Gym
+//1 - After Wally introduce
+//2 - After fought Petalburg Grunt
+//3 - After fought Norman
+//6 - Ready to battle Gym
+//7 - After defeated Vito 
+//8 - Vito rematch
+
 raw `
 .set LOCALID_NORMAN, 1
 .set LOCALID_WALLY, 10
@@ -108,6 +119,7 @@ PetalburgCity_Gym_Movement_WallyExitGym:
 	delay_16
 	step_end
 
+
 PetalburgCity_Gym_EventScript_Norman::
 	lock
 	faceplayer
@@ -115,8 +127,8 @@ PetalburgCity_Gym_EventScript_Norman::
 	case 1, PetalburgCity_Gym_EventScript_NormanGoWest
 	case 2, PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle
 	case 3, PetalburgCity_Gym_EventScript_NormanPostBattle
-	case 4, PetalburgCity_Gym_EventScript_NormanTwoBadges
-	case 5, PetalburgCity_Gym_EventScript_NormanThreeBadges
+//	case 4, PetalburgCity_Gym_EventScript_NormanTwoBadges
+//	case 5, PetalburgCity_Gym_EventScript_NormanThreeBadges
 	case 6, PetalburgCity_Gym_EventScript_NormanBattle
 	case 7, PetalburgCity_Gym_EventScript_NormanPostBattle
 	case 8, PetalburgCity_Gym_EventScript_NormanRematch
@@ -1493,7 +1505,7 @@ PetalburgCity_Gym_Text_JodyIntro:
 	.string "Our GYM LEADER told us to go all out\n"
 	.string "and beat you.\p"
 	.string "Even if you happen to be the\n"
-	.string "LEADER's kid!$"
+	.string "last LEADER's kid!$"
 
 PetalburgCity_Gym_Text_JodyDefeat:
 	.string "But… I went all out!$"
@@ -1501,8 +1513,8 @@ PetalburgCity_Gym_Text_JodyDefeat:
 PetalburgCity_Gym_Text_JodyPostBattle:
 	.string "The way you use your POKéMON…\n"
 	.string "It's like your father's style.\p"
-	.string "Go on through! The GYM LEADER, your\n"
-	.string "father, is waiting!$"
+	.string "Go on through! The new GYM LEADER\n"
+	.string "is waiting!$"
 
 PetalburgCity_Gym_Text_JodyPostBadge:
 	.string "Sure, it's fine to make your POKéMON\n"
@@ -1783,7 +1795,41 @@ script PetalburgCity_Gym_EventScript_GiveEevee {
 			}
 }
 
-
 text PetalburgCity_Gym_Text_NormanGaveEevee {
 		format("Dad: Here you go, {PLAYER}.\pThis is an Eevee. It's a special Normal-type Pokémon that can evolve a variety of different ways based on what rare stone you give it.\pThis one is extra special, as it possesses a rare ability. Based on the stone you give it, it will influence the environment around it.\pNot many Pokémon can do this. I trust you'll decide wisely how to train this Eevee.")
+}
+
+script PetalburgCity_Gym_EventScript_Vito {
+	lock
+	addvar(TempVar_Vito_Dialogue,1)
+	if (var(TempVar_Vito_Dialogue) == 4) {
+		setvar(TempVar_Vito_Dialogue,1)
+	}
+	switch(var(TempVar_Vito_Dialogue)) {
+		case 1:
+			msgbox(PetalburgCity_Gym_Text_Vito_DarkUnderrepresented,MSGBOX_NPC)
+		case 2:
+			msgbox(PetalburgCity_Gym_Text_Vito_TooManyLegendaries,MSGBOX_NPC)
+		case 3:
+			msgbox(PetalburgCity_Gym_Text_Vito_OweWinstrateFamily,MSGBOX_NPC)
+	}
+	waitmessage
+	releaseall	
+	end
+}
+
+text PetalburgCity_Gym_Text_Vito {
+		format("Hey, {PLAYER}! Your Dad told me you would be here to challenge me soon.\pYou're actually the first person to reach me since I took over the Gym.\pMy name's Vito. I grew up outside Mauville, but I've been traveling throughout Hoenn and the entire country honing my battle skills.\pAlong the way, I've picked up a particular affinity for Dark-type Pokémon.\pN")
+}
+
+text PetalburgCity_Gym_Text_Vito_DarkUnderrepresented{
+		format("Vito: Norman recognized that Dark-type Pokémon are underrepresented among Gym Leaders across regions.\pSo, he was specifically looking for a Dark specialist to take over his Gym.")
+}
+
+text PetalburgCity_Gym_Text_Vito_TooManyLegendaries{
+	format("Vito: Yeah, I know that the other Gym Leaders all only use one Legendary Pokémon.\pTechnically though, Darkrai is mythical, so it doesn't count.\p...\pYes, I know Yveltal is an Uber...")
+}
+
+text PetalburgCity_Gym_Text_Vito_OweWinstrateFamily{
+	format("Vito: I really owe everything I've accomplished to my family.\pThey taught me all about battling, trained me, and most importantly encouraged me to go out and pursue this dream.\pI wouldn't have made it here without all their help!")
 }

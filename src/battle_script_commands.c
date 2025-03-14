@@ -1458,6 +1458,8 @@ static bool32 AccuracyCalcHelper(u32 move, u32 battler)
             effect = TRUE;
         else if ((gBattleWeather & (B_WEATHER_SANDSTORM)) && moveEffect == EFFECT_SANDSTORM_ALWAYS_HIT)
             effect = TRUE;
+        else if ((gBattleWeather & B_WEATHER_SUN) && moveEffect == EFFECT_SUN_ALWAYS_HIT)
+            effect = TRUE;
         if (effect)
             return effect;
     }
@@ -1877,7 +1879,7 @@ s32 CalcCritChanceStage(u32 battlerAtk, u32 battlerDef, u32 move, bool32 recordA
             critChance = ARRAY_COUNT(sCriticalHitOdds) - 1;
     }
 
-    if (critChance != CRITICAL_HIT_BLOCKED && (abilityDef == ABILITY_BATTLE_ARMOR || abilityDef == ABILITY_SHELL_ARMOR))
+    if (critChance != CRITICAL_HIT_BLOCKED && (abilityDef == ABILITY_BATTLE_ARMOR || abilityDef == ABILITY_SHELL_ARMOR || abilityDef == ABILITY_MAGMA_ARMOR))
     {
         // Record ability only if move had 100% chance to get a crit
         if (recordAbility)
@@ -1932,7 +1934,7 @@ s32 CalcCritChanceStageGen1(u32 battlerAtk, u32 battlerDef, u32 move, bool32 rec
     // Prevented crits
     if (gSideStatuses[battlerDef] & SIDE_STATUS_LUCKY_CHANT)
         critChance = CRITICAL_HIT_BLOCKED;
-    else if (abilityDef == ABILITY_BATTLE_ARMOR || abilityDef == ABILITY_SHELL_ARMOR)
+    else if (abilityDef == ABILITY_BATTLE_ARMOR || abilityDef == ABILITY_SHELL_ARMOR || abilityDef == ABILITY_MAGMA_ARMOR)
     {
         if (recordAbility)
             RecordAbilityBattle(battlerDef, abilityDef);

@@ -6733,7 +6733,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Exhales a hot breath on the\n"
             "foe. May inflict a burn."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SUN_ALWAYS_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 95 : 100,
         .type = TYPE_FIRE,
         .accuracy = 90, // TO BE REVISITED
@@ -8950,7 +8950,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "item held by the foe."),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 60 : 40,
-        .type = TYPE_NORMAL,
+        .type = B_CUSTOMIZED_MOVE_STATS == TRUE ? TYPE_FAIRY : TYPE_NORMAL, //changed to fairy
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 25 : 40,
         .target = MOVE_TARGET_SELECTED,

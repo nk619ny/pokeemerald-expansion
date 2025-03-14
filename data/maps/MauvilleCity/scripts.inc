@@ -1444,11 +1444,15 @@ MauvilleCity_EventScript_Temporary::
 	setwildbattle SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE
 # 722 "data/maps/MauvilleCity/scripts.pory"
 	dowildbattle
-# 747 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
+# 739 "data/maps/MauvilleCity/scripts.pory"
+	givemon SPECIES_WAILORD, 50, ITEM_TYPHLOSIONITE, , , 2, , , , , , , , , , , , , , MOVE_DYNAMIC_PUNCH, MOVE_WICKED_TORQUE, MOVE_BOOMBURST, MOVE_SEARING_SUNSMASH
+# 740 "data/maps/MauvilleCity/scripts.pory"
+	givemon SPECIES_PALOSSAND, 50, ITEM_TYPHLOSIONITE, , , 2, , , , , , , , , , , , , , MOVE_DYNAMIC_PUNCH, MOVE_WICKED_TORQUE, MOVE_BOOMBURST, MOVE_SEARING_SUNSMASH
 # 748 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
+	waitmessage
 # 749 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 750 "data/maps/MauvilleCity/scripts.pory"
 	releaseall
 	end
 
