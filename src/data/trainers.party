@@ -16038,37 +16038,98 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Golem
-Level: 32
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Protect
-- Rollout
-- Magnitude
-- Explosion
+/*Ninetales @ Tyranitarite
+Level: 48
+Ball: Heavy Ball
+Ability: Drought  
+Tera Type: Rock  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Crunch  
+- Stone Edge
+- Dragon Dance  
+- Stomping Tantrum  
 
-Kabuto @ Sitrus Berry
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Ice Beam
-- Surf
-- Rock Slide
+Roaring Moon @ Tyranitarite
+Level: 48
+Ball: Heavy Ball
+Ability: Protosynthesis  
+Tera Type: Rock  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Crunch  
+- Stone Edge
+- Dragon Dance  
+- Stomping Tantrum  */
 
-Onix
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Tail
-- Explosion
-- Roar
-- Rock Slide
+Tyranitar @ Tyranitarite
+Level: 2
+Ball: Heavy Ball
+Ability: Sand Stream  
+Tera Type: Rock  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Crunch  
+- Stone Edge
+- Dragon Dance  
+- Stomping Tantrum  
 
-Nosepass @ Sitrus Berry
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Team
-- Explosion
-- Protect
-- Rock Slide
+/*Aerodactyl @ Life Orb
+Level: 48
+Ball: Heavy Ball
+Ability: Rock Head  
+Tera Type: Rock  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Brave Bird  
+- Head Smash  
+- Hone Claws  
+- Tailwind  
+
+Aurorus @ Babiri Berry  
+Level: 48
+Ball: Heavy Ball
+Ability: Refrigerate  
+Tera Type: Rock  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Hyper Voice  
+- Freeze-Dry  
+- Weather Ball  
+- Light Screen   */
+
+Brambleghast @ Liechi Berry
+Level: 48
+Ball: Heavy Ball
+Ability: Wind Rider      
+EVs: 128 HP / 128 Atk / 252 Spe  
+Jolly Nature  
+- Shadow Sneak  
+
+Garganacl @ Rocky Helmet
+Level: 2
+Ball: Heavy Ball
+Ability: Purifying Salt  
+Tera Type: Rock  
+EVs: 252 HP / 4 Atk / 252 Def  
+Impish Nature  
+- Salt Cure  
+- Curse  
+- Recover  
+- Fire Punch  
+
+Regirock @ Leftovers
+Level: 48
+Ball: Heavy Ball
+Ability: Solid Rock  
+Tera Type: Rock  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Impish Nature  
+- Rock Slide  
+- Body Press  
+- Thunder Punch  
+- Shore Up  
 
 === TRAINER_ROXANNE_3 ===
 Name: ROXANNE

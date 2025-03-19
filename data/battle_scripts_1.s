@@ -8480,6 +8480,20 @@ BattleScript_ScriptingAbilityStatRaise::
 	copybyte gBattlerAttacker, sSAVED_DMG
 	return
 
+BattleScript_ScriptingAbilityWindRiderSandstorm::
+	copybyte gBattlerAbility, sBATTLER
+	call BattleScript_AbilityPopUp
+	copybyte sSAVED_DMG, gBattlerAttacker
+	copybyte gBattlerAttacker, sBATTLER
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, NULL
+	setgraphicalstatchangevalues
+	playanimation BS_SCRIPTING, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	waitanimation
+	printstring STRINGID_ATTACKERABILITYSTATRAISE
+	waitmessage B_WAIT_TIME_LONG
+	copybyte gBattlerAttacker, sSAVED_DMG
+	end3
+
 BattleScript_WeakArmorActivates::
 	call BattleScript_AbilityPopUp
 	setstatchanger STAT_DEF, 1, TRUE

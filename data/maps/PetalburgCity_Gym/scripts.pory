@@ -1298,23 +1298,7 @@ PetalburgCity_Gym_Text_NormanDefeat:
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 	.string "{PLAYER} received the BALANCE BADGE\n"
-	.string "from DAD!$"
-
-PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "DAD: With that BADGE, the DEFENSE\n"
-	.string "of all your POKéMON will increase.\p"
-	.string "POKéMON that know the HM move SURF\n"
-	.string "will be able to travel over water.\p"
-	.string "This is my gift to you. {PLAYER}, I'm\n"
-	.string "sure you can use it correctly.$"
-
-PetalburgCity_Gym_Text_ExplainFacade:
-	.string "DAD: TM42 contains FACADE.\p"
-	.string "It doubles the power of moves if\n"
-	.string "the POKéMON is poisoned, paralyzed,\l"
-	.string "or burned.\p"
-	.string "It might be able to turn a bad\n"
-	.string "situation into an advantage.$"
+	.string "from Vito!$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
 	.string "DAD: As the GYM LEADER, I can't\n"
@@ -1611,6 +1595,35 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 	.string "Sorry, but you'll have to come back\n"
 	.string "with at least two POKéMON.$"
 
+PetalburgCity_Gym_EventScript_Vito_PostBattle::
+	message PetalburgCity_Gym_Text_ReceivedBalanceBadge
+	waitmessage
+	call Common_EventScript_PlayGymBadgeFanfare
+
+	setvar VAR_LEVEL_CAP, 24
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
+
+	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
+	setflag FLAG_DEFEATED_PETALBURG_GYM
+	setvar VAR_PETALBURG_GYM_STATE, 7
+	setflag FLAG_BADGE05_GET
+	special ResetHealLocationFromDewford
+	call EventScript_HideMrBriney
+	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
+	setvar VAR_0x8008, 5
+	setvar VAR_TEMP_3, 1 //TempVar_Vito_Dialogue 
+	call Common_EventScript_SetGymTrainers
+	clearflag FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN
+	call PetalburgCity_Gym_EventScript_UnlockAllDoors
+	special DrawWholeMapView
+	call PetalburgCity_Gym_EventScript_GiveFacade
+	delay 30
+	msgbox PetalburgCity_Gym_Text_Vito_GoodLuck, MSGBOX_NPC
+	releaseall
+	end
+
 `
 
 //script PetalburgCity_Gym_OnFrame {
@@ -1801,29 +1814,65 @@ text PetalburgCity_Gym_Text_NormanGaveEevee {
 
 script PetalburgCity_Gym_EventScript_Vito {
 	lock
-	addvar(TempVar_Vito_Dialogue,1)
-	if (var(TempVar_Vito_Dialogue) == 4) {
-		setvar(TempVar_Vito_Dialogue,1)
+	faceplayer
+	if(flag(FLAG_DEFEATED_PETALBURG_GYM)) {goto(PetalburgCity_Gym_EventScript_Vito_PostBadge)}
+	else {
+		trainerbattle_single(TRAINER_VITO, PetalburgCity_Gym_Text_Vito_Intro,PetalburgCity_Gym_Text_Vito_BattleOutro,PetalburgCity_Gym_EventScript_Vito_PostBattle)
+	}
+	releaseall
+	end
+}
+
+script PetalburgCity_Gym_EventScript_Vito_GymBattle{
+	
+}
+
+text PetalburgCity_Gym_Text_Vito_BattleOutro {
+	//format("Your skills cut right through the darkness.")
+	format("I couldn't have asked for a better inagural battle, {PLAYER}. You're everything I would've expected from Norman's child.")
+}
+
+text PetalburgCity_Gym_Text_Vito_GoodLuck {
+	format("Vito: You've cleared a major hurdle getting your fifth badge.\pBut trust me, {PLAYER}, it still gets harder from here.\pBut I think you have what it takes to make it all the way to becoming a Hoenn League Champion.\nGood luck.")
+}
+
+script PetalburgCity_Gym_EventScript_Vito_PostBadge{
+	if (var(TempVar_Vito_Dialogue) == 0) {
+		random(3)
+		copyvar(TempVar_Vito_Dialogue,VAR_RESULT)
+		addvar(TempVar_Vito_Dialogue,1)
 	}
 	switch(var(TempVar_Vito_Dialogue)) {
 		case 1:
 			msgbox(PetalburgCity_Gym_Text_Vito_DarkUnderrepresented,MSGBOX_NPC)
+			addvar(TempVar_Vito_Dialogue,1)
 		case 2:
 			msgbox(PetalburgCity_Gym_Text_Vito_TooManyLegendaries,MSGBOX_NPC)
+			addvar(TempVar_Vito_Dialogue,1)
 		case 3:
 			msgbox(PetalburgCity_Gym_Text_Vito_OweWinstrateFamily,MSGBOX_NPC)
+			setvar(TempVar_Vito_Dialogue,1)
 	}
 	waitmessage
 	releaseall	
 	end
 }
 
-text PetalburgCity_Gym_Text_Vito {
-		format("Hey, {PLAYER}! Your Dad told me you would be here to challenge me soon.\pYou're actually the first person to reach me since I took over the Gym.\pMy name's Vito. I grew up outside Mauville, but I've been traveling throughout Hoenn and the entire country honing my battle skills.\pAlong the way, I've picked up a particular affinity for Dark-type Pokémon.\pN")
+script PetalburgCity_Gym_EventScript_Vito_Rematch{
+	releaseall
+	end
+}
+
+text PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis {
+	format("Vito: With that badge, Pokémon that know the HM move Surf will be able to travel over water.\nThis will open up the Eastern half of Hoenn to you.\pThis is my gift to you. {PLAYER}, I'm sure you can use it correctly.")
+}
+
+text PetalburgCity_Gym_Text_Vito_Intro {
+		format("Hey, {PLAYER}! Your Dad told me you would be here to challenge me soon.\pYou're actually the first person to reach me since I took over the Gym.\pMy name's Vito. I grew up outside Mauville, but I've been traveling throughout Hoenn and the entire country honing my battle skills.\pAlong the way, I've picked up a particular affinity for Dark-type Pokémon.\pAllow me to show you everything I've learned. This will be a test for both of us!")
 }
 
 text PetalburgCity_Gym_Text_Vito_DarkUnderrepresented{
-		format("Vito: Norman recognized that Dark-type Pokémon are underrepresented among Gym Leaders across regions.\pSo, he was specifically looking for a Dark specialist to take over his Gym.")
+	format("Vito: Norman recognized that Dark-type Pokémon are underrepresented among Gym Leaders across regions.\pSo, he was specifically looking for a Dark specialist to take over his Gym.")
 }
 
 text PetalburgCity_Gym_Text_Vito_TooManyLegendaries{
@@ -1832,4 +1881,8 @@ text PetalburgCity_Gym_Text_Vito_TooManyLegendaries{
 
 text PetalburgCity_Gym_Text_Vito_OweWinstrateFamily{
 	format("Vito: I really owe everything I've accomplished to my family.\pThey taught me all about battling, trained me, and most importantly encouraged me to go out and pursue this dream.\pI wouldn't have made it here without all their help!")
+}
+
+text PetalburgCity_Gym_Text_ExplainFacade {
+	format("Vito: TM42 contains FACADE.\pIt doubles the power of moves if the POKéMON is poisoned, paralyzed, or burned.\pIt might be able to turn a bad situation into an advantage.")
 }

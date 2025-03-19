@@ -6639,6 +6639,19 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_WIND_RIDER: //newly added to make wind rider activate when sandstorm activates
+            if (!gDisableStructs[battler].weatherAbilityDone
+             && (gBattleWeather & B_WEATHER_SANDSTORM) && HasWeatherEffect()
+             && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
+             && !(gBattleMons[battler].status2 & STATUS2_TRANSFORMED))
+            {
+                gDisableStructs[battler].weatherAbilityDone = TRUE;
+                gBattleScripting.battler = battler;
+                SET_STATCHANGER(STAT_ATK, 1, FALSE);
+                BattleScriptPushCursorAndCallback(BattleScript_ScriptingAbilityWindRiderSandstorm);
+                effect++;
+            }
+            break;
         }
         break;
     case ABILITYEFFECT_ON_TERRAIN:  // For ability effects that activate when the field terrain changes.
