@@ -877,19 +877,76 @@ Pic: Aqua Leader Archie
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Ace Pokemon
 
-Mightyena
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Kyogre @ Blue Orb  
+Ability: Drizzle
+Level: 76
+Ball: Master Ball
+EVs: 252 HP / 160 Def  
+Modest Nature  
+IVs: 0 Atk  
+- Origin Pulse  
+- Freeze-Dry  
+- Thunder  
+- Calm Mind  
 
-Crobat
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Zapdos  
+Ability: Lightning Rod  
+Level: 76
+Ball: Dive Ball
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Wildbolt Storm  
+- Hurricane  
+- Weather Ball  
+- Tailwind  
 
-Sharpedo
-Level: 43
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Overqwil  
+Ability: Swift Swim  
+Level: 76
+Ball: Dive Ball
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Barb Barrage  
+- Aqua Jet  
+- Throat Chop  
+- Swords Dance  
+
+Scizor @ Scizorite  
+Ability: Technician  
+Level: 76
+Ball: Dive Ball
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Fury Cutter  
+- Bullet Punch  
+- Swords Dance  
+- Drill Run  
+
+Zarude  
+Ability: Intimidate  
+Level: 76
+Ball: Dive Ball
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Darkest Lariat  
+- Power Whip  
+- Jungle Healing  
+- Acrobatics  
+
+Basculegion (M) @ Muscle Band
+Ability: Swift Swim  
+Level: 76
+Ball: Dive Ball
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Wave Crash  
+- Aqua Jet  
+- Last Respects  
+- Psychic Fangs  
+
 
 === TRAINER_LEAH ===
 Name: LEAH

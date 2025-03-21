@@ -1440,19 +1440,19 @@ MauvilleCity_WallyAndGalladeDepart:
 MauvilleCity_EventScript_Temporary::
 # 720 "data/maps/MauvilleCity/scripts.pory"
 	lock
-# 721 "data/maps/MauvilleCity/scripts.pory"
-	setwildbattle SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE
-# 722 "data/maps/MauvilleCity/scripts.pory"
-	dowildbattle
-# 739 "data/maps/MauvilleCity/scripts.pory"
+# 723 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_BADGE05_GET
+# 724 "data/maps/MauvilleCity/scripts.pory"
+	setflag FLAG_RECEIVED_HM_SURF
+# 741 "data/maps/MauvilleCity/scripts.pory"
 	givemon SPECIES_WAILORD, 50, ITEM_TYPHLOSIONITE, , , 2, , , , , , , , , , , , , , MOVE_DYNAMIC_PUNCH, MOVE_WICKED_TORQUE, MOVE_BOOMBURST, MOVE_SEARING_SUNSMASH
-# 740 "data/maps/MauvilleCity/scripts.pory"
+# 742 "data/maps/MauvilleCity/scripts.pory"
 	givemon SPECIES_PALOSSAND, 50, ITEM_TYPHLOSIONITE, , , 2, , , , , , , , , , , , , , MOVE_DYNAMIC_PUNCH, MOVE_WICKED_TORQUE, MOVE_BOOMBURST, MOVE_SEARING_SUNSMASH
-# 748 "data/maps/MauvilleCity/scripts.pory"
-	waitmessage
-# 749 "data/maps/MauvilleCity/scripts.pory"
-	closemessage
 # 750 "data/maps/MauvilleCity/scripts.pory"
+	waitmessage
+# 751 "data/maps/MauvilleCity/scripts.pory"
+	closemessage
+# 752 "data/maps/MauvilleCity/scripts.pory"
 	releaseall
 	end
 

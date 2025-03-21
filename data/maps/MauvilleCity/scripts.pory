@@ -718,9 +718,11 @@ movement MauvilleCity_WallyAndGalladeDepart {
 
 script MauvilleCity_EventScript_Temporary{
 	lock
-	setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
-	dowildbattle
-
+	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
+	//dowildbattle
+	setflag(FLAG_BADGE05_GET)
+	setflag(FLAG_RECEIVED_HM_SURF)
+	//trainerbattle_no_intro(TRAINER_ARCHIE_SEAFLOOR_CAVERN,LavaridgeTown_Gym_1F_Text_FlanneryDefeat)
 	//addvar(VAR_LEVEL_CAP,5)
 	//setvar(VAR_LEVEL_HANDICAP,0)
 	//buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)

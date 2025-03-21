@@ -853,7 +853,7 @@
 #define FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER                    0x322
 #define FLAG_HIDE_SLATEPORT_CITY_CONTEST_REPORTER                   0x323
 #define FLAG_HIDE_MAUVILLE_CITY_WALLY                               0x324
-#define FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE                        0x325
+#define FLAG_UNUSED_FORMERLY_HIDE_MAUVILLE_CITY_WALLYS_UNCLE                        0x325 // now unused; was hiding Wallys Uncle in Mauville
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY                0x326
 #define FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND                   0x327
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDAS_BOYFRIEND     0x328

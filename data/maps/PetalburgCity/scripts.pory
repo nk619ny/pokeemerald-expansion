@@ -1,5 +1,5 @@
 raw `
-.set LOCALID_WALLY, 2
+.set LOCALID_WALLY, 11
 .set LOCALID_BOY, 3
 .set LOCALID_WALLYS_DAD, 5
 .set LOCALID_GYM_BOY, 8
@@ -32,6 +32,7 @@ PetalburgCity_EventScript_SetGymDoorsUnlocked::
 	return
 
 PetalburgCity_OnFrame:
+	map_script_2 VAR_PETALBURG_CITY_STATE, 5, PetalburgCity_EventScript_WallyPostVito
 	.2byte 0
 
 PetalburgCity_EventScript_WallyTutorial::
@@ -774,19 +775,59 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 `
 
 script PetalburgCity_EventScript_GymSign {
-//	switch(var(VAR_PETALBURG_GYM_STATE)) {
-//	case 0:
-//	case 1:
-//	case 2:
-//	case 3:
-	msgbox(PetalburgCity_Text_GymSignOriginal,MSGBOX_SIGN)
-//	case 4:
-//	case 5:
-//	MSGBOX_SIGN(PetalburgCity_Text_GymSignBlank)
-//	case 6:
-//	case 7:
-//	case 8:
-//	MSGBOX_SIGN(PetalburgCity_Text_GymSignChanged)
-//	}
+	switch(var(VAR_PETALBURG_GYM_STATE)) {
+		case 0:
+		case 1:
+		case 2:
+		case 3:
+			msgbox(PetalburgCity_Text_GymSignOriginal,MSGBOX_SIGN)
+		case 4:
+		case 5:
+			msgbox(PetalburgCity_Text_GymSignBlank,MSGBOX_SIGN)
+		case 6:
+		case 7:
+		case 8:
+			msgbox(PetalburgCity_Text_GymSignChanged,MSGBOX_SIGN)
+	}
 	end
+}
+
+
+script PetalburgCity_EventScript_WallyPostVito {
+	lock
+	setvar(VAR_PETALBURG_CITY_STATE, 6)
+	addobject(LOCALID_WALLY)
+	applymovement(LOCALID_WALLY, PetalburgCity_Movement_WallyPostVitoApproach)
+	waitmovement(LOCALID_WALLY)
+	applymovement(LOCALID_WALLY, Common_Movement_ExclamationMark)
+	waitmovement(LOCALID_WALLY)
+	delay(30)
+	msgbox(PetalburgCity_Text_WallyPostVito, MSGBOX_DEFAULT)
+	waitmessage
+	giveitem(ITEM_HM_SURF, 1)
+	setflag(FLAG_RECEIVED_HM_SURF)
+	msgbox(PetalburgCity_Text_WallyBye, MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(LOCALID_WALLY, PetalburgCity_Movement_WallyPostVitoDepart)
+	waitmovement(LOCALID_WALLY)
+	removeobject(LOCALID_WALLY)
+	releaseall
+	return
+}
+
+movement PetalburgCity_Movement_WallyPostVitoApproach {
+	walk_right * 8
+	face_up
+}
+
+text PetalburgCity_Text_WallyPostVito {
+	format("Wally: Oh, {PLAYER}! It looks like you've already fought the new Gym Leader!\pI stopped at home to see my parents, but it looks like you passed me in Gym Badges now.\pYou'll need the HM Surf to get to the rest of the Gyms - here, take this.")
+}
+
+text PetalburgCity_Text_WallyBye {
+	format("Wally: I'm sure I'll run into you again.\pI'm going to prepare my team for the Gym now - wish me luck!")
+}
+
+movement PetalburgCity_Movement_WallyPostVitoDepart {
+	walk_down * 8
 }

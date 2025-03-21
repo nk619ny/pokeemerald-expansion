@@ -4415,7 +4415,7 @@
       "id": "LAYOUT_OLDALE_RUINS",
       "name": "OldaleRuins_Layout",
       "width": 10,
-      "height": 10,
+      "height": 11,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/OldaleRuins/border.bin",

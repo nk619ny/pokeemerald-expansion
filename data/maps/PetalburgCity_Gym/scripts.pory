@@ -14,6 +14,7 @@ const TempVar_Vito_Dialogue = VAR_TEMP_3
 //1 - After Wally introduce
 //2 - After fought Petalburg Grunt
 //3 - After fought Norman
+//4 - after Wattson, Norman gone
 //6 - Ready to battle Gym
 //7 - After defeated Vito 
 //8 - Vito rematch
@@ -1607,6 +1608,7 @@ PetalburgCity_Gym_EventScript_Vito_PostBattle::
 	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_PETALBURG_GYM
 	setvar VAR_PETALBURG_GYM_STATE, 7
+	setvar VAR_PETALBURG_CITY_STATE, 5
 	setflag FLAG_BADGE05_GET
 	special ResetHealLocationFromDewford
 	call EventScript_HideMrBriney
@@ -1829,7 +1831,7 @@ script PetalburgCity_Gym_EventScript_Vito_GymBattle{
 
 text PetalburgCity_Gym_Text_Vito_BattleOutro {
 	//format("Your skills cut right through the darkness.")
-	format("I couldn't have asked for a better inagural battle, {PLAYER}. You're everything I would've expected from Norman's child.")
+	format("I couldn't have asked for a better inaugural battle, {PLAYER}. You're everything I would've expected from Norman's child.")
 }
 
 text PetalburgCity_Gym_Text_Vito_GoodLuck {
@@ -1864,7 +1866,7 @@ script PetalburgCity_Gym_EventScript_Vito_Rematch{
 }
 
 text PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis {
-	format("Vito: With that badge, Pokémon that know the HM move Surf will be able to travel over water.\nThis will open up the Eastern half of Hoenn to you.\pThis is my gift to you. {PLAYER}, I'm sure you can use it correctly.")
+	format("Vito: With that badge, the HM move Surf will allow your Pokémon to travel over water.\pThis will open up the Eastern half of Hoenn to you.\pThis is my gift to you. {PLAYER}, I'm sure you can use it correctly.")
 }
 
 text PetalburgCity_Gym_Text_Vito_Intro {
