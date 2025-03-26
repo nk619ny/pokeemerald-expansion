@@ -389,6 +389,24 @@ const u16 gObjectEventPal_ShellyORAS[] = INCBIN_U16("graphics/object_events/pics
 const u32 gObjectEventPic_MattORAS[] = INCBIN_U32("graphics/object_events/pics/people/matt_oras.4bpp");
 const u16 gObjectEventPal_MattORAS[] = INCBIN_U16("graphics/object_events/pics/people/matt_oras.gbapal");
 
+const u32 gObjectEventPic_ArchieORAS[] = INCBIN_U32("graphics/object_events/pics/people/archie_oras.4bpp");
+const u16 gObjectEventPal_ArchieORAS[] = INCBIN_U16("graphics/object_events/pics/people/archie_oras.gbapal");
+
+const u32 gObjectEventPic_MaxieORAS[] = INCBIN_U32("graphics/object_events/pics/people/maxie_oras.4bpp");
+const u16 gObjectEventPal_MaxieORAS[] = INCBIN_U16("graphics/object_events/pics/people/maxie_oras.gbapal");
+
+const u32 gObjectEventPic_BrawlyORAS[] = INCBIN_U32("graphics/object_events/pics/people/brawly_oras.4bpp");
+const u16 gObjectEventPal_BrawlyORAS[] = INCBIN_U16("graphics/object_events/pics/people/brawly_oras.gbapal");
+
+const u32 gObjectEventPic_Vito[] = INCBIN_U32("graphics/object_events/pics/people/vito.4bpp");
+const u16 gObjectEventPal_Vito[] = INCBIN_U16("graphics/object_events/pics/people/vito.gbapal");
+
+const u32 gObjectEventPic_Sada[] = INCBIN_U32("graphics/object_events/pics/people/sada.4bpp");
+const u16 gObjectEventPal_Sada[] = INCBIN_U16("graphics/object_events/pics/people/sada.gbapal");
+
+const u32 gObjectEventPic_Turo[] = INCBIN_U32("graphics/object_events/pics/people/turo.4bpp");
+const u16 gObjectEventPal_Turo[] = INCBIN_U16("graphics/object_events/pics/people/turo.gbapal");
+
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 

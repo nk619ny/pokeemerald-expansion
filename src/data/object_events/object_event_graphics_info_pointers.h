@@ -240,6 +240,12 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CourtneyORA
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TabithaORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShellyORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MattORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ArchieORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaxieORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrawlyORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Vito;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Turo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sada;
 
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
@@ -499,6 +505,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_TABITHA_ORAS] =             &gObjectEventGraphicsInfo_TabithaORAS,
     [OBJ_EVENT_GFX_SHELLY_ORAS] =              &gObjectEventGraphicsInfo_ShellyORAS,
     [OBJ_EVENT_GFX_MATT_ORAS] =                &gObjectEventGraphicsInfo_MattORAS,
+    [OBJ_EVENT_GFX_ARCHIE_ORAS] =              &gObjectEventGraphicsInfo_ArchieORAS,
+    [OBJ_EVENT_GFX_MAXIE_ORAS] =               &gObjectEventGraphicsInfo_MaxieORAS,
+    [OBJ_EVENT_GFX_BRAWLY_ORAS] =              &gObjectEventGraphicsInfo_BrawlyORAS,
+    [OBJ_EVENT_GFX_VITO] =                     &gObjectEventGraphicsInfo_Vito,
+    [OBJ_EVENT_GFX_TURO] =                     &gObjectEventGraphicsInfo_Turo,
+    [OBJ_EVENT_GFX_SADA] =                     &gObjectEventGraphicsInfo_Sada,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
