@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
@@ -29,10 +29,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
-      "x": 23,
+      "x": 20,
       "y": 6,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
-      "x": 23,
+      "x": 24,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -107,16 +107,55 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAXIE",
-      "x": 23,
+      "x": 26,
       "y": 6,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "x": 23,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MtPyre_Summit_EventScript_Steven",
+      "flag": "FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SWAMPERT_MEGA)",
+      "x": 22,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CAMERUPT_MEGA)",
+      "x": 24,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA"
     }
   ],
   "warp_events": [
@@ -145,8 +184,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 22,
-      "y": 7,
+      "x": 18,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_MT_PYRE_STATE",
       "var_value": "0",
@@ -154,8 +193,8 @@
     },
     {
       "type": "trigger",
-      "x": 23,
-      "y": 7,
+      "x": 19,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_MT_PYRE_STATE",
       "var_value": "0",
@@ -163,8 +202,8 @@
     },
     {
       "type": "trigger",
-      "x": 24,
-      "y": 7,
+      "x": 20,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_MT_PYRE_STATE",
       "var_value": "0",
@@ -172,8 +211,8 @@
     },
     {
       "type": "trigger",
-      "x": 22,
-      "y": 9,
+      "x": 26,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_MT_PYRE_STATE",
       "var_value": "2",
@@ -181,8 +220,8 @@
     },
     {
       "type": "trigger",
-      "x": 23,
-      "y": 9,
+      "x": 27,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_MT_PYRE_STATE",
       "var_value": "2",
@@ -190,12 +229,30 @@
     },
     {
       "type": "trigger",
-      "x": 24,
-      "y": 9,
+      "x": 28,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_MT_PYRE_STATE",
       "var_value": "2",
       "script": "MtPyre_Summit_EventScript_ArchieMaxieTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "MtPyre_Summit_EventScript_LeftTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "MtPyre_Summit_EventScript_RightTrigger"
     }
   ],
   "bg_events": [

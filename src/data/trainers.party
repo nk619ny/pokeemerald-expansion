@@ -873,7 +873,7 @@ IVs: 0 Atk
 === TRAINER_ARCHIE_SEAFLOOR_CAVERN ===
 Name: ARCHIE
 Class: Aqua Leader
-Pic: Aqua Leader Archie
+Pic: Archie ORAS
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -1378,37 +1378,51 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tornadus-Therian (M) @ Wacan Berry
+Tornadus (M) @ Wacan Berry
 Level: 55
 Ball: Quick Ball
 Ability: Prankster
-Tera Type: Flying  
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature  
 IVs: 0 Atk  
 - Bleakwind Storm  
 - Weather Ball  
 - Tailwind  
 - Grass Knot  
 
-Thundurus-Therian (M) @ Charti Berry
+Thundurus (M) @ Charti Berry
 Level: 55
 Ball: Quick Ball
 Ability: Dark Clouds
-Tera Type: Electric  
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature 
 IVs: 0 Atk  
 - Wildbolt Storm  
 - Hurricane  
 - Weather Ball  
 - Aura Sphere  
 
-Swampert @ Rindo Berry  
+/* Swampert @ Swampertite  
 Level: 55
 Ball: Dive Ball
-Ability: Swift Swim  
-Tera Type: Water  
+Ability: Damp  
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
 - Flip Turn  
 - Earthquake  
 - Poison Jab  
-- Brick Break  
+- Brick Break  */
+
+Swampert @ Rindo Berry  
+Level: 55
+Ball: Dive Ball
+Ability: Swift Swim
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Flip Turn  
+- Earthquake  
+- Poison Jab  
+- Brick Break
 
 Lanturn @ Assault Vest
 Level: 55
@@ -1421,7 +1435,7 @@ IVs: 0 Atk
 - Thunder  
 - Blizzard
 
-Clawitzer @ Sitrus Berry
+/* Clawitzer @ Sitrus Berry
 Level: 55
 Ball: Dive Ball
 Ability: Mega Launcher  
@@ -1432,7 +1446,19 @@ IVs: 0 Atk
 - Water Pulse  
 - Terrain Pulse  
 - Heal Pulse  
-- Dark Pulse  
+- Dark Pulse  */
+
+Blastoise @ Blastoisinite
+Level: 55
+Ball: Dive Ball
+Ability: Rain Dish
+EVs: 252 HP / 252 SpA / 4 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Water Pulse  
+- Terrain Pulse  
+- Heal Pulse  
+- Dark Pulse
 
 Raichu-Alola @ Electric Seed  
 Level: 55
@@ -5871,6 +5897,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Risky
 Aerodactyl @ Expert Belt  
 Level: 60
 Ability: Unnerve  
+Ball: Safari Ball
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Earthquake  
@@ -5881,6 +5908,7 @@ Jolly Nature
 Rotom-Fan @ Light Clay  
 Level: 60
 Ability: Motor Drive  
+Ball: Safari Ball
 EVs: 128 HP / 252 SpA / 128 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -5892,7 +5920,8 @@ IVs: 0 Atk
 Magneton @ Eviolite  
 Level: 60
 Ability: Levitate  
-EVs: 248 HP / 252 SpA / 8 SpD  
+Ball: Safari Ball
+EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */
 - Thunderbolt  
@@ -5903,6 +5932,7 @@ IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min 
 Celesteela @ Muscle Band  
 Level: 60
 Ability: Beast Boost  
+Ball: Safari Ball
 Serious Nature  
 - Earthquake  
 - Rock Slide  
@@ -5912,6 +5942,7 @@ Serious Nature
 Altaria @ Altarianite  
 Level: 60
 Ability: Cloud Nine  
+Ball: Safari Ball
 EVs: 252 HP / 4 Atk / 252 SpD  
 Sassy Nature  
 - Hyper Voice  
@@ -5922,6 +5953,7 @@ Sassy Nature
 Tornadus-Therian (M) @ Sitrus Berry  
 Level: 60
 Ability: Delta Stream  
+Ball: Safari Ball
 EVs: 252 HP / 164 SpA / 92 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -10550,17 +10582,104 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+/* 
+Blaziken @ Blazikenite  
+Ability: Speed Boost  
+Level: 58
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Blaze Kick  
+- Sky Uppercut  
+- Brave Bird  
+- Protect  
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swampert @ Swampertite  
+Ability: Damp
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Liquidation  
+- High Horsepower  
+- Ice Punch  
+- Protect  */
 
-Grovyle
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Sceptile @ Sceptilite  
+Ability: Unburden 
+Level: 58  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Energy Ball  
+- Dragon Pulse  
+- Vacuum Wave  
+- Protect  
+
+Snorlax @ Iapapa Berry  
+Ability: Gluttony  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Def  
+Adamant Nature  
+- Body Slam  
+- High Horsepower  
+- Belly Drum  
+- Recycle  
+
+Florges-White (F) @ Light Clay  
+Ability: Flower Veil  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Moonblast  
+- Energy Ball  
+- Light Screen  
+- Pollen Puff  
+
+Spiritomb @ Rocky Helmet  
+Ability: Cursed Body  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Sucker Punch  
+- Poltergeist  
+- Will-O-Wisp  
+- Pain Split  
+
+Volcarona @ Charti Berry  
+Ability: Flame Body   
+Level: 58
+EVs: 4 Def / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Quiver Dance  
+- Fiery Dance  
+- Bug Buzz  
+- Giga Drain  
+
+Milotic @ Lum Berry  
+Ability: Competitive  
+Shiny: Yes  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Scald  
+- Alluring Voice  
+- Blizzard  
+- Recover  
+
+/* 
+Spiritomb @ Leftovers  
+Ability: Infiltrator  
+Level: 58
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Ominous Wind  
+- Stored Power  
+- Foul Play  
+- Infestation  
+*/
 
 === TRAINER_BRENDAN_ROUTE_103_TREECKO ===
 Name: BRENDAN
@@ -10670,17 +10789,93 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Blaziken @ Blazikenite  
+Ability: Speed Boost  
+Level: 58
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Blaze Kick  
+- Sky Uppercut  
+- Brave Bird  
+- Protect  
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+/*
+Swampert @ Swampertite  
+Ability: Damp
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Liquidation  
+- High Horsepower  
+- Ice Punch  
+- Protect  
 
-Combusken
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Sceptile @ Sceptilite  
+Ability: Unburden 
+Level: 58  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Energy Ball  
+- Dragon Pulse  
+- Vacuum Wave  
+- Protect  
+*/
+
+Florges-White (F) @ Light Clay  
+Ability: Flower Veil  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Moonblast  
+- Energy Ball  
+- Light Screen  
+- Pollen Puff  
+
+Snorlax @ Iapapa Berry  
+Ability: Gluttony  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Def  
+Adamant Nature  
+- Body Slam  
+- High Horsepower  
+- Belly Drum  
+- Recycle  
+
+Spiritomb @ Leftovers  
+Ability: Infiltrator  
+Level: 58
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Ominous Wind  
+- Stored Power  
+- Foul Play  
+- Infestation  
+
+Milotic @ Lum Berry  
+Ability: Competitive  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Scald  
+- Alluring Voice  
+- Blizzard  
+- Recover  
+
+Dhelmise @ Expert Belt  
+Ability: Steelworker  
+Shiny: Yes  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Anchor Shot  
+- Shadow Claw  
+- Power Whip  
+- Ally Switch  
+
 
 === TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
 Name: BRENDAN
@@ -10791,17 +10986,82 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swampert @ Swampertite  
+Ability: Damp
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Liquidation  
+- High Horsepower  
+- Ice Punch  
+- Protect  
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Florges-White (F) @ Light Clay  
+Ability: Flower Veil  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Moonblast  
+- Energy Ball  
+- Light Screen  
+- Pollen Puff  
 
-Marshtomp
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Snorlax @ Iapapa Berry  
+Ability: Gluttony  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Def  
+Adamant Nature  
+- Body Slam  
+- High Horsepower  
+- Belly Drum  
+- Recycle  
+
+Spiritomb @ Leftovers  
+Ability: Infiltrator  
+Level: 58
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Ominous Wind  
+- Stored Power  
+- Foul Play  
+- Infestation 
+
+Volcarona @ Charti Berry  
+Ability: Flame Body  
+Shiny: Yes  
+Level: 58
+EVs: 4 Def / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Quiver Dance  
+- Fiery Dance  
+- Bug Buzz  
+- Giga Drain  
+
+Dhelmise @ Expert Belt  
+Ability: Steelworker  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Anchor Shot  
+- Shadow Claw  
+- Power Whip  
+- Ally Switch  
+
+/* 
+Spiritomb @ Leftovers  
+Ability: Infiltrator  
+Level: 58
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Ominous Wind  
+- Stored Power  
+- Foul Play  
+- Infestation  
+*/
 
 === TRAINER_MAY_ROUTE_103_MUDKIP ===
 Name: MAY
@@ -10911,17 +11171,105 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+/* 
+Blaziken @ Blazikenite  
+Ability: Speed Boost  
+Level: 58
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Blaze Kick  
+- Sky Uppercut  
+- Brave Bird  
+- Protect  
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swampert @ Swampertite  
+Ability: Damp
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Liquidation  
+- High Horsepower  
+- Ice Punch  
+- Protect  */
 
-Grovyle
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Sceptile @ Sceptilite  
+Ability: Unburden 
+Level: 58  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Energy Ball  
+- Dragon Pulse  
+- Vacuum Wave  
+- Protect  
+
+Snorlax @ Iapapa Berry  
+Ability: Gluttony  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Def  
+Adamant Nature  
+- Body Slam  
+- High Horsepower  
+- Belly Drum  
+- Recycle  
+
+Florges-White (F) @ Light Clay  
+Ability: Flower Veil  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Moonblast  
+- Energy Ball  
+- Light Screen  
+- Pollen Puff  
+
+Spiritomb @ Rocky Helmet  
+Ability: Cursed Body  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Sucker Punch  
+- Poltergeist  
+- Will-O-Wisp  
+- Pain Split  
+
+Volcarona @ Charti Berry  
+Ability: Flame Body   
+Level: 58
+EVs: 4 Def / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Quiver Dance  
+- Fiery Dance  
+- Bug Buzz  
+- Giga Drain  
+
+Milotic @ Lum Berry  
+Ability: Competitive  
+Shiny: Yes  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Scald  
+- Alluring Voice  
+- Blizzard  
+- Recover  
+
+/* 
+Spiritomb @ Leftovers  
+Ability: Infiltrator  
+Level: 58
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Ominous Wind  
+- Stored Power  
+- Foul Play  
+- Infestation  
+*/
+
 
 === TRAINER_MAY_ROUTE_103_TREECKO ===
 Name: MAY
@@ -11031,17 +11379,92 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Blaziken @ Blazikenite  
+Ability: Speed Boost  
+Level: 58
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Blaze Kick  
+- Sky Uppercut  
+- Brave Bird  
+- Protect  
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+/*
+Swampert @ Swampertite  
+Ability: Damp
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Liquidation  
+- High Horsepower  
+- Ice Punch  
+- Protect  
 
-Combusken
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Sceptile @ Sceptilite  
+Ability: Unburden 
+Level: 58  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Energy Ball  
+- Dragon Pulse  
+- Vacuum Wave  
+- Protect  
+*/
+
+Florges-White (F) @ Light Clay  
+Ability: Flower Veil  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Moonblast  
+- Energy Ball  
+- Light Screen  
+- Pollen Puff  
+
+Snorlax @ Iapapa Berry  
+Ability: Gluttony  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Def  
+Adamant Nature  
+- Body Slam  
+- High Horsepower  
+- Belly Drum  
+- Recycle  
+
+Spiritomb @ Leftovers  
+Ability: Infiltrator  
+Level: 58
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Ominous Wind  
+- Stored Power  
+- Foul Play  
+- Infestation  
+
+Milotic @ Lum Berry  
+Ability: Competitive  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Scald  
+- Alluring Voice  
+- Blizzard  
+- Recover  
+
+Dhelmise @ Expert Belt  
+Ability: Steelworker  
+Shiny: Yes  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Anchor Shot  
+- Shadow Claw  
+- Power Whip  
+- Ally Switch  
 
 === TRAINER_MAY_ROUTE_103_TORCHIC ===
 Name: MAY
@@ -11152,17 +11575,116 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+/* 
+Blaziken @ Blazikenite  
+Ability: Speed Boost  
+Level: 58
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Blaze Kick  
+- Sky Uppercut  
+- Brave Bird  
+- Protect  
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Swampert @ Swampertite  
+Ability: Damp
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Liquidation  
+- High Horsepower  
+- Ice Punch  
+- Protect  
 
-Marshtomp
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Sceptile @ Sceptilite  
+Ability: Unburden 
+Level: 58  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Energy Ball  
+- Dragon Pulse  
+- Vacuum Wave  
+- Protect  
+*/
+
+Swampert @ Swampertite  
+Ability: Damp
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Liquidation  
+- High Horsepower  
+- Ice Punch  
+- Protect  
+
+Florges-White (F) @ Light Clay  
+Ability: Flower Veil  
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Moonblast  
+- Energy Ball  
+- Light Screen  
+- Pollen Puff  
+
+Snorlax @ Iapapa Berry  
+Ability: Gluttony  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Def  
+Adamant Nature  
+- Body Slam  
+- High Horsepower  
+- Belly Drum  
+- Recycle  
+
+Spiritomb @ Leftovers  
+Ability: Infiltrator  
+Level: 58
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Ominous Wind  
+- Stored Power  
+- Foul Play  
+- Infestation 
+
+Volcarona @ Charti Berry  
+Ability: Flame Body  
+Shiny: Yes  
+Level: 58
+EVs: 4 Def / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Quiver Dance  
+- Fiery Dance  
+- Bug Buzz  
+- Giga Drain  
+
+Dhelmise @ Expert Belt  
+Ability: Steelworker  
+Level: 58
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Anchor Shot  
+- Shadow Claw  
+- Power Whip  
+- Ally Switch  
+
+/* 
+Spiritomb @ Leftovers  
+Ability: Infiltrator  
+Level: 58
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Ominous Wind  
+- Stored Power  
+- Foul Play  
+- Infestation  
+*/
+
 
 === TRAINER_ISAAC_1 ===
 Name: ISAAC
@@ -12632,7 +13154,7 @@ Adamant Nature
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
 Class: Magma Leader
-Pic: Magma Leader Maxie
+Pic: Maxie ORAS
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -12650,6 +13172,18 @@ Brave Nature
 - Solar Beam  
 - Rock Slide  
 
+Lilligant-Hisui (F) @ Coba Berry  
+Ability: Chlorophyll  
+Level: 65
+Ball: Timer Ball
+Tera Type: Grass  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Acrobatics  
+- Seed Bomb  
+- Axe Kick  
+- Ice Spinner  
+
 Charizard @ Charti Berry  
 Ability: Solar Power  
 Level: 65
@@ -12662,18 +13196,6 @@ IVs: 0 Atk
 - Ancient Power  
 - Scorching Sands  
 - Solar Beam  
-
-Lilligant-Hisui (F) @ Coba Berry  
-Ability: Chlorophyll  
-Level: 65
-Ball: Timer Ball
-Tera Type: Grass  
-EVs: 252 Atk / 4 SpD / 252 Spe  
-Adamant Nature  
-- Acrobatics  
-- Seed Bomb  
-- Axe Kick  
-- Ice Spinner  
 
 Walking Wake @ Expert Belt  
 Ability: Protosynthesis  

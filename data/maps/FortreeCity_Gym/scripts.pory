@@ -31,6 +31,9 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	message FortreeCity_Gym_Text_ReceivedFeatherBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
+	setvar VAR_LEVEL_CAP, 63
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
 	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_FORTREE_GYM
 	setflag FLAG_BADGE06_GET
@@ -47,6 +50,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	setflag FLAG_ENABLE_WINONA_MATCH_CALL
 	setvar VAR_SCOTT_FORTREE_CALL_STEP_COUNTER, 0
 	setflag FLAG_SCOTT_CALL_FORTREE_GYM
+	clearflag FLAG_HIDE_ROUTE_120_STEVEN
 	release
 	end
 
@@ -255,11 +259,9 @@ FortreeCity_Gym_Text_ReceivedFeatherBadge:
 	.string "from WINONA.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
-	.string "With the FEATHER BADGE, all POKéMON up\n"
-	.string "to LV 70, even those received through\l"
-	.string "trades, will obey your every command.\p"
-	.string "You will also be able to use\n"
-	.string "the HM move FLY outside of battle.\p"
+	.string "With the FEATHER BADGE, you will be\n"
+	.string "able to use the HM move FLY outside\l"
+	.string "of battle.\p"
 	.string "And this…\n"
 	.string "This is a gift from me.$"
 

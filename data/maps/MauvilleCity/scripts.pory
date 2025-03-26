@@ -716,39 +716,3 @@ movement MauvilleCity_WallyAndGalladeDepart {
 	walk_fast_up * 11
 }
 
-script MauvilleCity_EventScript_Temporary{
-	lock
-	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
-	//dowildbattle
-	setflag(FLAG_BADGE05_GET)
-	setflag(FLAG_RECEIVED_HM_SURF)
-	//trainerbattle_no_intro(TRAINER_ARCHIE_SEAFLOOR_CAVERN,LavaridgeTown_Gym_1F_Text_FlanneryDefeat)
-	//addvar(VAR_LEVEL_CAP,5)
-	//setvar(VAR_LEVEL_HANDICAP,0)
-	//buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
-	//buffernumberstring(STR_VAR_2,VAR_LEVEL_HANDICAP)
-	//msgbox("level cap is {STR_VAR_1}")
-	//waitmessage
-	//msgbox("handicap is {STR_VAR_2}")
-	//waitmessage
-	//call(Common_EventScript_ApplyHandicap)
-	//buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
-	//msgbox("adjusted level cap is {STR_VAR_1}")
-	//waitmessage*/
-	//giveitem(ITEM_MEGA_RING)
-	//givemon(SPECIES_EXCADRILL,40,,,,,,,,,,,,,,,,,,MOVE_SEARING_SUNRAZE_SMASH,MOVE_SUNSTEEL_STRIKE,MOVE_BITTER_MALICE,MOVE_PURIFY)
-	//givemon(SPECIES_EXCADRILL,40,,,,,,,,,,,,,,,,,,MOVE_NOXIOUS_TORQUE,MOVE_COMBAT_TORQUE,MOVE_THUNDERCLAP,MOVE_NIGHT_DAZE)
-	givemon(SPECIES_WAILORD,50,ITEM_TYPHLOSIONITE,,,2,,,,,,,,,,,,,,MOVE_DYNAMIC_PUNCH,MOVE_WICKED_TORQUE,MOVE_BOOMBURST,MOVE_SEARING_SUNSMASH)
-	givemon(SPECIES_PALOSSAND,50,ITEM_TYPHLOSIONITE,,,2,,,,,,,,,,,,,,MOVE_DYNAMIC_PUNCH,MOVE_WICKED_TORQUE,MOVE_BOOMBURST,MOVE_SEARING_SUNSMASH)
-	//givemon(SPECIES_MILOTIC,50,ITEM_MILOTICITE,,,0,,,,,,,,,,,,,,MOVE_THUNDER_WAVE,MOVE_JET_PUNCH,MOVE_SHORE_UP,MOVE_TEATIME)
-	//givemon(SPECIES_MAGNEZONE,50,ITEM_MEGANIUMITE,,,0,,,,,,,,,,,,,,MOVE_THUNDER_WAVE,MOVE_JET_PUNCH,MOVE_SHORE_UP,MOVE_TEATIME)
-	//givemon(SPECIES_KINGDRA,35,,,,1,,,,,,,,,,,,,,MOVE_THOUSAND_ARROWS,MOVE_BOLT_BEAK,MOVE_BURNING_BULWARK,MOVE_THUNDEROUS_KICK)
-	//givemon(SPECIES_TYRANITAR,35,,,,0,,,,,,,,,,,,,,MOVE_ROCK_CLIMB,MOVE_STONE_EDGE,MOVE_STRENGTH,MOVE_MAGICAL_TORQUE)
-	//givemon(SPECIES_BRAMBLEGHAST,35,,,,0,,,,,,,,,,,,,,MOVE_SUPERPOWER,MOVE_SANDSEAR_STORM)
-	
-	//multi_fixed_2_vs_2(TRAINER_ARCHIE_MT_PYRE, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAXIE_MT_PYRE, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
-	waitmessage
-	closemessage
-	releaseall
-	end
-}

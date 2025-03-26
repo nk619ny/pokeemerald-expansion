@@ -5,6 +5,7 @@ raw `
 .set LOCALID_SCIENTIST, 5
 .set LOCALID_GRUNT_3, 7
 .set LOCALID_GRUNT_4, 8
+.set LOCALID_ARCHIE, 9
 
 Route119_WeatherInstitute_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route119_WeatherInstitute_2F_OnTransition
@@ -51,8 +52,8 @@ Route119_WeatherInstitute_2F_EventScript_Shelly::
 	msgbox Route119_WeatherInstitute_2F_Text_ShellyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
-	msgbox Route119_WeatherInstitute_2F_Text_ShellyPostBattle, MSGBOX_DEFAULT
+Route119_WeatherInstitute_2F_EventScript_ArchieDefeated::
+	msgbox Route119_WeatherInstitute_2F_Text_ArchiePostBattle, MSGBOX_DEFAULT
 	closemessage
 	addobject LOCALID_GRUNT_3
 	applymovement LOCALID_GRUNT_3, Route119_WeatherInstitute_2F_Movement_GruntApproachShelly
@@ -67,6 +68,8 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 	waitmovement 0
 	msgbox Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre, MSGBOX_DEFAULT
 	closemessage
+	msgbox Route119_WeatherInstitute_2F_Text_ArchieDepart, MSGBOX_DEFAULT
+	closemessage
 	setvar VAR_WEATHER_INSTITUTE_STATE, 1
 	clearflag FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS
 	fadedefaultbgm
@@ -78,6 +81,7 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 	removeobject LOCALID_SHELLY
 	removeobject LOCALID_GRUNT_4
 	removeobject LOCALID_GRUNT_3
+	removeobject LOCALID_ARCHIE
 	applymovement OBJ_EVENT_ID_PLAYER, Route119_WeatherInstitute_2F_Movement_PlayerReturnToPosition
 	waitmovement 0
 	fadescreen FADE_FROM_BLACK
@@ -211,65 +215,11 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	goto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform
 	end
 
-Route119_WeatherInstitute_2F_Text_Grunt2Intro:
-	.string "The INSTITUTE created a type of\n"
-	.string "POKéMON that has something to do with\l"
-	.string "the weather. We're here to take them!$"
-
-Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
-	.string "Our plan's being spoiled by a kid?$"
-
-Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
-	.string "If the POKéMON they made here can\n"
-	.string "control the weather freely, then we of\l"
-	.string "TEAM AQUA definitely need it!$"
-
-Route119_WeatherInstitute_2F_Text_Grunt3Intro:
-	.string "We're TEAM AQUA!\n"
-	.string "We appear wherever anything rare is\l"
-	.string "found!$"
-
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
-	.string "You got me!$"
-
-Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
-	.string "You don't have any idea what we of\n"
-	.string "TEAM AQUA are working towards!\l"
-	.string "You stay out of our way!$"
-
-Route119_WeatherInstitute_2F_Text_Grunt5Intro:
-	.string "Don't tell me you're looking for that\n"
-	.string "weather POKéMON, too?\p"
-	.string "That's a no-no!\n"
-	.string "We were here to get it first!$"
+	.string "Just a setback!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
 	.string "Oh, will you look at my POKéMON?$"
-
-Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
-	.string "Humph, so what?\n"
-	.string "What we want…\p"
-	.string "What we really want isn't here…\n"
-	.string "Ihihihihi…$"
-
-Route119_WeatherInstitute_2F_Text_ShellyIntro:
-	.string "Ahahahaha!\p"
-	.string "You're going to meddle in TEAM AQUA's\n"
-	.string "affairs?\p"
-	.string "You're either absolutely fearless,\n"
-	.string "simply ignorant, or both!\p"
-	.string "You're so cute, you're disgusting!\n"
-	.string "I'll put you down, kiddy!$"
-
-Route119_WeatherInstitute_2F_Text_ShellyDefeat:
-	.string "Ahahahaha!\n"
-	.string "You're disgustingly strong!$"
-
-Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
-	.string "It's bad enough to have TEAM MAGMA\n"
-	.string "blunder about, but now there's you!\p"
-	.string "What makes you want to sniff around\n"
-	.string "in our business, anyway?$"
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
 	.string "We have a situation here!\p"
@@ -279,11 +229,8 @@ Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
 	.string "MT. PYRE!$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:
-	.string "What?!\p"
-	.string "We can't waste any more time here!\n"
-	.string "We have to hurry to MT. PYRE, too!\p"
-	.string "Ahahahaha!\n"
-	.string "TEAM MAGMA, just you wait!$"
+	.string "What?! That is where the Orbs are!\p"
+	.string "We can't waste any more time here!$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
 	.string "Thanks!\n"
@@ -304,11 +251,6 @@ Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
 	.string "to the weather conditions.\p"
 	.string "There're plenty of them in the\n"
 	.string "INSTITUTE--go ahead and take it.$"
-
-Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous:
-	.string "I've been researching rain for many\n"
-	.string "years, but it's ridiculous to think that\l"
-	.string "humans can freely change the weather.$"
 
 Route119_WeatherInstitute_2F_Text_GroudonWeather:
 	.string "I track weather patterns over\n"
@@ -333,3 +275,80 @@ Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:
 	.string "really.$"
 
 `
+
+
+text Route119_WeatherInstitute_2F_Text_Grunt2Intro {
+	format("The Institute has lots of research on Pokémon who interact with the weather.\pWe need to figure out what Maxie is planning, and how to stop it!")
+}
+
+text Route119_WeatherInstitute_2F_Text_Grunt5Intro {
+	format("Archie has already found a few Pokémon that affect the Weather.\pMaybe now we'll be able to stop team Magma?")
+}
+
+text Route119_WeatherInstitute_2F_Text_Grunt2Defeat{
+	format("Are we going to be stopped by a kid?")
+}
+
+text Route119_WeatherInstitute_2F_Text_Grunt5PostBattle{
+	format("Hmph, so what?\nShelly and Archie found the important documents…")
+}
+
+text Route119_WeatherInstitute_2F_Text_Grunt2PostBattle{
+	format("Maxie has been researching his plans for years.\pIf we can't learn more about these ancient Pokémon, we won't be able to stop him from ruining the balance of Hoenn!")
+}
+
+text Route119_WeatherInstitute_2F_Text_Grunt3Intro{
+	format("We're Team Aqua!\nIf others are threatening Nature, we'll make sure Nature can fight back!")
+}
+
+text Route119_WeatherInstitute_2F_Text_Grunt3PostBattle{
+	format("You don't have any idea what could happen if we lose!\pYou stay out of our way!")
+}
+
+script Route119_WeatherInstitute_2F_EventScript_Archie{
+	lock
+	faceplayer
+	trainerbattle_single(TRAINER_ARCHIE_WEATHER_INSTITUTE, Route119_WeatherInstitute_2F_Text_ArchieIntro, Route119_WeatherInstitute_2F_Text_ArchieOutro, Route119_WeatherInstitute_2F_EventScript_ArchieDefeated)
+	release
+	end
+}
+ 
+text Route119_WeatherInstitute_2F_Text_ArchieIntro{
+	format("Archie: Ah, it's you again!\nWhy do you insist on meddling in our important work?\pI'll show you the same thing I'm going to show Maxie. Witness what happens when you stand against the Forces of Nature!")
+}
+
+text Route119_WeatherInstitute_2F_Text_ArchieOutro{
+	format("This is the problem… Humans think they can fight against Nature…")
+}
+
+script Route119_WeatherInstitute_2F_EventScript_ShellyDefeated {
+	lock
+	msgbox(format("It doesn't matter if we lose here.\pI've already found the records on the ancient Pokémon Maxie is after.\pEven better, we've learned of another…"))
+	waitmessage
+	releaseall
+	end
+}
+
+text Route119_WeatherInstitute_2F_Text_ShellyIntro{
+	format("These scientists spend so much time studying the weather, but they would just sit idly by and take measurements while Team Magma disrupted it beyond repair.\pWe're here to take this valuable information and do something with it!")
+}
+
+text Route119_WeatherInstitute_2F_Text_ShellyDefeat{
+	format("Was that… not bracing enough to keep you out?")
+}
+
+text Route119_WeatherInstitute_2F_Text_ShellyPostBattle{
+	format("Even if you chase us out, I've collected the data we need.\pWe'll figure out how to weaponize the weather, and put an end to Team Magma's plans!")
+}
+
+text Route119_WeatherInstitute_2F_Text_ArchiePostBattle{
+	format("Day by day, human actions are polluting the oceans, damaging the forests, and changing the climate.\pIt would be one then for us to suffer the consequences of our actions, but the innocent Pokémon and animals of Hoenn won't be able to adapt in time.\pWe need to go back… to how things were before.")
+}
+
+text Route119_WeatherInstitute_2F_Text_ArchieDepart{
+	format("Archie: We cannot allow the Orbs to fall into Maxie's hands. We have to hurry to Mt. Pyre, too.")
+}
+
+text Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous{
+	format("I've been researching weather for many years.\pHuman activity is certainly impacting the climate, but the idea that we can predict or control how the environment will respond is laughable.")
+}

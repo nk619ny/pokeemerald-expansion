@@ -12,35 +12,35 @@ Pic: Steven
 Gender: Male
 Music: Male
 
-Metang
-Brave Nature
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
-- Light Screen
-- Psychic
-- Reflect
-- Metal Claw
+Claydol @ Light Clay  
+Ability: Levitate  
+Level: 65
+EVs: 252 HP / 252 SpA  
+Calm Nature  
+IVs: 0 Atk  
+- Earth Power  
+- Expanding Force  
+- Light Screen  
+- Reflect  
 
-Skarmory
-Impish Nature
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 6 SpA / 252 SpD
-- Toxic
-- Aerial Ace
-- Protect
-- Steel Wing
+Aerodactyl @ Life Orb  
+Ability: Rock Head  
+Level: 65
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Head Smash  
+- Brave Bird  
+- Tailwind  
+- Wide Guard  
 
-Aggron
-Adamant Nature
-Level: 44
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 SpA / 6 SpD
-- Thunder
-- Protect
-- Solar Beam
-- Dragon Claw
+Metagross @ Metagrossite  
+Ability: Clear Body  
+Level: 65
+- Bullet Punch  
+- Zen Headbutt  
+- Stomping Tantrum  
+- Protect  
+
 
 === PARTNER_AQUA ===
 Name: Shelly

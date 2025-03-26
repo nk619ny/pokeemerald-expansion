@@ -2,6 +2,7 @@ raw `
 .set LOCALID_BRIDGE_KECLEON, 30
 .set LOCALID_STEVEN, 31
 .set LOCALID_BRIDGE_KECLEON_SHADOW, 36  @ They use a second object which is identical to Kecleon but has a reflection palette tag for the bridge shadow
+.set LOCALID_BRIDGE_KECLEON_2, 45
 
 Route120_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route120_OnResume
@@ -26,6 +27,7 @@ Route120_EventScript_RemoveBridgeKecleon::
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 	removeobject LOCALID_BRIDGE_KECLEON
+	removeobject LOCALID_BRIDGE_KECLEON_2
 	removeobject LOCALID_BRIDGE_KECLEON_SHADOW
 	return
 
@@ -432,3 +434,36 @@ Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} ROUTE 121\n"
 	.string "{LEFT_ARROW} ROUTE 120$"
 `
+
+const TempVar_KecleonPosition = VAR_TEMP_3
+
+script Route120_EventScript_MoveKecleonUp{
+	if(flag(FLAG_DEFEATED_FORTREE_GYM)){
+		setvar(TempVar_KecleonPosition, 5)
+		end
+	}
+	else{
+		setobjectxy(LOCALID_BRIDGE_KECLEON_SHADOW, 12, 16)
+		setvar(TempVar_KecleonPosition, 1)
+		applymovement(LOCALID_BRIDGE_KECLEON_SHADOW, Common_Movement_WalkUpFastSafeKecleon)
+		end
+	}
+}
+
+script Route120_EventScript_MoveKecleonDown{
+	if(flag(FLAG_DEFEATED_FORTREE_GYM)){
+		setvar(TempVar_KecleonPosition, 5)
+		end
+	}
+	else{
+		setobjectxy(LOCALID_BRIDGE_KECLEON_SHADOW, 12, 15)
+		setvar(TempVar_KecleonPosition, 0)
+		applymovement(LOCALID_BRIDGE_KECLEON_SHADOW, Common_Movement_WalkDownFastSafeKecleon)
+		end
+	}
+}
+
+script Route120_EventScript_ResetKecleonVar{
+	setvar(TempVar_KecleonPosition, 0)
+	end
+}

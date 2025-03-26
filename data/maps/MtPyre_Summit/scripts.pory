@@ -6,6 +6,9 @@ raw `
 .set LOCALID_GRUNT_3, 6
 .set LOCALID_GRUNT_4, 7
 .set LOCALID_MAXIE, 8
+.set LOCALID_STEVEN, 9
+.set LOCALID_ARCHIE_MON, 10
+.set LOCALID_MAXIE_MON, 11
 
 MtPyre_Summit_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MtPyre_Summit_OnTransition
@@ -625,3 +628,279 @@ MtPyre_Summit_Text_HoennTrioTale:
 	.string "flew off into the wild blue yonder…$"
 
 `
+
+const TempVar_PlayerPosition = VAR_TEMP_4
+
+script MtPyre_Summit_EventScript_LeftTrigger{
+	setvar(TempVar_PlayerPosition, 1)
+	if(!flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)){
+		applymovement(LOCALID_STEVEN, Common_Movement_FaceLeft)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+		goto(MtPyre_Summit_EventScript_StevenTrigger)
+	}
+	else{
+		return
+	}
+}
+
+script MtPyre_Summit_EventScript_RightTrigger{
+	setvar(TempVar_PlayerPosition, 2)
+	if(!flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)){
+		applymovement(LOCALID_STEVEN, Common_Movement_FaceRight)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+		goto(MtPyre_Summit_EventScript_StevenTrigger)
+	}
+	else{
+		return
+	}
+}
+
+script MtPyre_Summit_EventScript_StevenTrigger{
+	lock
+	call(MtPyre_Summit_EventScript_Steven)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep)
+	setvar(TempVar_PlayerPosition, 0)
+	releaseall
+	end
+}
+
+script MtPyre_Summit_EventScript_MultiBattlePositioning1{
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUpOneStep)
+            applymovement(LOCALID_STEVEN, Common_Movement_WalkUpOneStep)
+            waitmovement(0)
+            return
+}
+
+
+script MtPyre_Summit_EventScript_MultiBattlePositioning2{
+    removeobject(LOCALID_MAXIE_MON)
+    switch(var(TempVar_PlayerPosition)){
+        case 0:
+            applymovement(LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieMovesTwoLeft)
+        case 1:
+            applymovement(LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieMovesThreeLeft)
+        case 2:
+            applymovement(LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieMovesTwoLeft)
+        default:
+            return
+    }
+    waitmovement(0)
+    applymovement(LOCALID_MAXIE, Common_Movement_FaceDown)
+    waitmovement(0)
+}
+
+
+script MtPyre_Summit_EventScript_MultiBattlePositioning3{
+    removeobject(LOCALID_ARCHIE_MON)
+	switch(var(TempVar_PlayerPosition)){
+        case 0:
+            applymovement(LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieMovesThreeRight)
+        case 1:
+            applymovement(LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieMovesTwoRight)
+        case 2:
+            applymovement(LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieMovesThreeRight)
+        default:
+            return
+    }
+    waitmovement(0)
+    //applymovement(LOCALID_ARCHIE, Common_Movement_FaceDown)
+    //waitmovement(0)
+    return
+}
+
+
+
+
+script MtPyre_Summit_EventScript_MultiBattlePositioning4{
+    if(var(TempVar_PlayerPosition) == 0){      
+            applymovement(LOCALID_STEVEN, MtPyre_Summit_Movement_StevenMovesToMaxie)
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUpOneStep)
+            waitmovement(0)
+    }
+	applymovement(LOCALID_ARCHIE, Common_Movement_FaceDown)
+    waitmovement(0)
+    return
+}
+
+
+movement MtPyre_Summit_Movement_ArchieMovesTwoRight{
+    walk_right * 2
+}
+
+
+movement MtPyre_Summit_Movement_MaxieMovesTwoLeft{
+    walk_left * 2
+}
+
+
+movement MtPyre_Summit_Movement_ArchieMovesThreeRight{
+    walk_right * 3
+}
+
+
+movement MtPyre_Summit_Movement_MaxieMovesThreeLeft{
+    walk_left * 3
+}
+
+
+movement MtPyre_Summit_Movement_StevenMovesToMaxie{
+    walk_right
+    face_up
+}
+
+
+script MtPyre_Summit_EventScript_StevenMultiIntro{
+    lock
+    faceplayer
+    applymovement(LOCALID_STEVEN, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    msgbox(MtPyre_Summit_Text_StevenNeedHelp, MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES) {
+        goto(MtPyre_Summit_EventScript_MtPyreMultiBattle)
+    }
+    else {
+        msgbox(MtPyre_Summit_Text_StevenHurryBack, MSGBOX_DEFAULT)
+        waitmessage
+		closemessage
+        applymovement(LOCALID_STEVEN,Common_Movement_FaceOriginalDirection)
+		applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_WalkDownOneStep)
+		waitmovement(0)
+		releaseall
+        return
+    }
+}
+
+script MtPyre_Summit_EventScript_Steven{
+	clearflag(FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE)
+	if(!flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)){
+		goto(MtPyre_Summit_EventScript_StevenMultiIntro)
+	}
+	else{
+		msgbox(MtPyre_Summit_Text_StevenGoToHideouts, MSGBOX_NPC)
+		waitmessage
+	}
+	releaseall
+	end
+}
+
+script MtPyre_Summit_EventScript_MtPyreMultiBattle{
+    call(MtPyre_Summit_EventScript_MultiBattlePositioning1)
+    msgbox(MtPyre_Summit_Text_StevenStopThis, MSGBOX_DEFAULT)
+    waitmessage
+    call(MtPyre_Summit_EventScript_MultiBattlePositioning2)
+    msgbox(MtPyre_Summit_Text_MaxieBeforeBattle, MSGBOX_DEFAULT)
+    waitmessage
+    call(MtPyre_Summit_EventScript_MultiBattlePositioning3)
+    msgbox(MtPyre_Summit_Text_ArchieBeforeBattle, MSGBOX_DEFAULT)
+    waitmessage
+    call(MtPyre_Summit_EventScript_MultiBattlePositioning4)
+    multi_fixed_2_vs_2(TRAINER_MAXIE_MT_PYRE, MtPyre_Summit_Text_MaxieDefeated, TRAINER_ARCHIE_MT_PYRE, MtPyre_Summit_Text_ArchieDefeated, PARTNER_STEVEN)
+    specialvar(VAR_RESULT,GetBattleOutcome)
+    if((var(VAR_RESULT) == B_OUTCOME_WON)){
+        goto(MtPyre_Summit_EventScript_MtPyreVictory)
+        releaseall
+        end
+    }
+}
+
+script MtPyre_Summit_EventScript_MtPyreVictory {
+	lock
+	msgbox(MtPyre_Summit_Text_MaxieAfterBattle, MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(LOCALID_ARCHIE, Common_Movement_FaceRight)
+	waitmovement(0)
+	msgbox(MtPyre_Summit_Text_ArchieAfterBattle, MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(LOCALID_MAXIE, Common_Movement_FaceLeft)
+	waitmovement(0)
+	msgbox(MtPyre_Summit_Text_MaxieResponse, MSGBOX_DEFAULT)
+	waitmessage
+	delay(20)
+    fadescreen(FADE_TO_BLACK)
+	removeobject(LOCALID_ARCHIE)
+	removeobject(LOCALID_MAXIE)
+	removeobject(LOCALID_ARCHIE_MON)
+	removeobject(LOCALID_MAXIE_MON)
+	setflag(FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE)
+	setflag(FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA)
+	setflag(FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE)
+	removeobject(4)
+	removeobject(5)
+	removeobject(6)
+	removeobject(7)
+    delay(40)
+	fadescreen(FADE_FROM_BLACK)
+    delay(40)
+
+    switch(var(TempVar_PlayerPosition)){
+        case 0:
+		case 1:
+			applymovement(LOCALID_STEVEN, Common_Movement_FaceLeft)
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+        case 2:
+			applymovement(LOCALID_STEVEN, Common_Movement_FaceRight)
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+        default:
+            return
+	}
+	waitmovement(0)
+	msgbox(MtPyre_Summit_Text_StevenPostBattle, MSGBOX_DEFAULT)
+	waitmessage
+	giveitem(ITEM_MAGMA_EMBLEM)
+	setflag(FLAG_RECEIVED_RED_OR_BLUE_ORB)
+	setflag(FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD)
+	msgbox(format("Steven: We need to hurry. Good luck."))
+	waitmessage
+	releaseall
+	end
+}
+
+
+//FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
+
+text MtPyre_Summit_Text_StevenNeedHelp{
+	format("Steven: {PLAYER}, I'm so glad you're here!\pArchie and Maxie are attempting to steal two powerful sacred artifacts from Mt. Pyre.\pWe need to stop them before they can cause any harm to this hallowed place or the rest of Hoenn.\pThe good news is, they're just as focused on defeating each other as they will be on us.\pHowever, this situation is already unstable, so we'll need to be careful how many Pokémon we use in battle.\pAre you ready to help me stop them?")
+}
+
+text MtPyre_Summit_Text_StevenHurryBack{
+	format("Steven: Things are too precarious to rush in unprepared.\pGather your strength and hurry back as soon as you're ready.")
+}
+
+text MtPyre_Summit_Text_StevenStopThis{
+	format("Steven: Maxie, Archie! Enough of this madness!\pThis is a sacred place you are defiling.\pThese Orbs belong here, to preserve harmony, not to be taken as instruments for your foolish ambitions.\pWe will not let you do this.")
+}
+
+text MtPyre_Summit_Text_MaxieBeforeBattle{
+	format("Maxie: For all the good work your father has done with the Devon Corp, do you still not see, Steven?\pHoenn needs more resources, more land to cultivate and expand.\pThe power of the Red and Blue Orbs will allow us to awaken and control the continent Pokémon, and we can provide everything Hoenn needs.\pThis is infinitely more important than some sentimental burial site.")
+}	
+
+text MtPyre_Summit_Text_ArchieBeforeBattle{
+	format("Archie: We won't allow that. Team Aqua is taking possession of the Orbs, and we will use them to definitively stop your destructive plans!")
+}
+
+text MtPyre_Summit_Text_MaxieDefeated {
+	format("Maxie: I allowed Archie to distract me…\nA perennial thorn in my side.")
+}
+
+text MtPyre_Summit_Text_ArchieDefeated {
+	format("Archie: Why won't you two pick a side already?")
+}
+
+text MtPyre_Summit_Text_MaxieAfterBattle{
+	format("Maxie: During our battle, I managed to get ahold of the Red Orb. One will have to be sufficient.")
+}
+
+text MtPyre_Summit_Text_ArchieAfterBattle{
+	format("Archie: Then I'll be keeping this Blue Orb as our insurance against you.")
+}
+
+text MtPyre_Summit_Text_MaxieResponse{
+	format("Maxie: ...\pYou are too far behind us, anyway. It is no matter.")
+}
+
+text MtPyre_Summit_Text_StevenPostBattle{
+	format("Steven: Well… we kept either of them from taking both Orbs, but they each managed to escape with one.\p{PLAYER}, this is very worrying. If they go ahead with their plans to awaken these ancient Pokémon, they will unleash forces they cannot possibly control.\pThe results would be cataclysmic.\pYou should try to infiltrate the Team Magma and Team Aqua hideouts, and see if you can stop them before that happens.\pI'm going to investigate reports of Team Aqua activity in Slateport to see if we can figure out their next moves. I also want to go to the Weather Institute to better understand what we can do if they do manage to awaken the ancient Pokémon.\pTeam Aqua's Hideout is in Lilycove, accessible by Surfing. Team Magma's Hideout is in the Jagged Pass of Mt. Chimney - you'll need this to get in.")
+}
+text MtPyre_Summit_Text_StevenGoToHideouts {
+	format("Steven: You should try to infiltrate the Team Magma and Team Aqua hideouts.\pTeam Magma's Hideout is in the Jagged Pass, South of Mt. Chimney. Team Aqua's Hideout is East of Lilycove, accessible by Surfing.")
+}

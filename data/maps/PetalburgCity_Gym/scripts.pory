@@ -1601,7 +1601,7 @@ PetalburgCity_Gym_EventScript_Vito_PostBattle::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 
-	setvar VAR_LEVEL_CAP, 24
+	setvar VAR_LEVEL_CAP, 56
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
 
@@ -1764,6 +1764,8 @@ script PetalburgCity_Gym_EventScript_DefeatedNorman {
 	closemessage
 	setflag(FLAG_SYS_POKENAV_GET)
 	setflag(FLAG_RECEIVED_POKENAV)
+	setflag(FLAG_HAS_MATCH_CALL)
+	setflag(FLAG_ADDED_MATCH_CALL_TO_POKENAV)
 	waitfanfare
 	closemessage
 	msgbox(Route104_Text_RegisteredDadInPokenav, MSGBOX_DEFAULT)
