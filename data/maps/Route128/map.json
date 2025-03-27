@@ -75,7 +75,7 @@
       "flag": "FLAG_HIDE_ROUTE_128_STEVEN"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
+      "graphics_id": "OBJ_EVENT_GFX_ARCHIE_ORAS",
       "x": 37,
       "y": 22,
       "elevation": 3,
@@ -88,7 +88,7 @@
       "flag": "FLAG_HIDE_ROUTE_128_ARCHIE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAXIE",
+      "graphics_id": "OBJ_EVENT_GFX_MAXIE_ORAS",
       "x": 38,
       "y": 21,
       "elevation": 3,
