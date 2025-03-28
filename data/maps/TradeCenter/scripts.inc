@@ -196,17 +196,17 @@ Common_EventScript_SetFlashTest_3:
 MauvilleCity_EventScript_Temporary::
 # 108 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 113 "data/maps/TradeCenter/scripts.pory"
-	addvar VAR_LEVEL_CAP, 5
-# 115 "data/maps/TradeCenter/scripts.pory"
+# 114 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_FLY_FROM_MAP_CONFIG
+# 116 "data/maps/TradeCenter/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_LEVEL_CAP
-# 117 "data/maps/TradeCenter/scripts.pory"
+# 118 "data/maps/TradeCenter/scripts.pory"
 	msgbox MauvilleCity_EventScript_Temporary_Text_0
-# 137 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
 # 138 "data/maps/TradeCenter/scripts.pory"
-	closemessage
+	waitmessage
 # 139 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 140 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
@@ -221,7 +221,7 @@ Common_EventScript_SetFlashTest_Text_0:
 	.string "Do you have flash?$"
 
 MauvilleCity_EventScript_Temporary_Text_0:
-# 117 "data/maps/TradeCenter/scripts.pory"
+# 118 "data/maps/TradeCenter/scripts.pory"
 	.string "level cap is {STR_VAR_1}$"
 
 Common_Text_CaveIsDarkUseFlash::

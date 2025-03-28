@@ -205,8 +205,13 @@ script SlateportFarm_EventScript_AquaVictory {
 	waitmovement(0)
     clearflag(FLAG_SLATEPORT_FARM_COMPLETED)
     setflag(FLAG_SLATEPORT_BAY_FLOODED)
+    fadescreen(FADE_TO_WHITE) //newly added; may not work
+    waitstate
+    delay(60)
     special(RemoveCameraObject)
     warp(MAP_SLATEPORT_CITY_FARM_CORRIDOR,8,4)
+    fadescreen(FADE_FROM_WHITE) //newly added; may not work
+    waitstate
     waitmessage
     releaseall
     end

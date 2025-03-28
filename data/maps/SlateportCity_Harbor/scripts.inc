@@ -157,9 +157,9 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 # 79 "data/maps/SlateportCity_Harbor/scripts.pory"
 	closemessage
 # 80 "data/maps/SlateportCity_Harbor/scripts.pory"
-	setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_1_BLOCKING_ENTRANCE
+	//setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_1_BLOCKING_ENTRANCE
 # 81 "data/maps/SlateportCity_Harbor/scripts.pory"
-	setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE
+	//setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE
 # 82 "data/maps/SlateportCity_Harbor/scripts.pory"
 	copyobjectxytoperm LOCALID_CAPT_STERN
 # 83 "data/maps/SlateportCity_Harbor/scripts.pory"
