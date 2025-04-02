@@ -2451,4 +2451,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Creates a downpour if hit."),
         .aiRating = 5,
     },
+
+    [ABILITY_TIME_TRAVELER] =
+    {
+        .name = _("Time Traveler"),
+        .description = COMPOUND_STRING("Protects from priority."),
+        .aiRating = 5,
+        .breakable = TRUE,
+    },
 };

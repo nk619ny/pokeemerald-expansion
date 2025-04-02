@@ -202,6 +202,10 @@ MauvilleCity_EventScript_Temporary::
 	buffernumberstring STR_VAR_1, VAR_LEVEL_CAP
 # 118 "data/maps/TradeCenter/scripts.pory"
 	msgbox MauvilleCity_EventScript_Temporary_Text_0
+# 127 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_CYNDAQUIL, 24, , , , 2, , , , , , , , , , , , , , MOVE_SEARING_SUNRAZE_SMASH, MOVE_SUNSTEEL_STRIKE, MOVE_BITTER_MALICE, MOVE_PURIFY
+# 128 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_CYNDAQUIL_HISUI, 25, , , , 1, , , , , , , , , , , , , , MOVE_INFERNAL_PARADE, MOVE_COMBAT_TORQUE, MOVE_THUNDERCLAP, MOVE_NIGHT_DAZE
 # 138 "data/maps/TradeCenter/scripts.pory"
 	waitmessage
 # 139 "data/maps/TradeCenter/scripts.pory"

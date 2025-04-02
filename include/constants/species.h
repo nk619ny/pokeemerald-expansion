@@ -1656,7 +1656,14 @@
 #define SPECIES_FLYGON_MEGA                             1538
 #define SPECIES_VIKAVOLT_MEGA                           1539
 
-#define SPECIES_EGG                                     1540
+#define SPECIES_CYNDAQUIL_HISUI                         1540 
+#define SPECIES_QUILAVA_HISUI                           1541
+#define SPECIES_OSHAWOTT_HISUI                          1542
+#define SPECIES_DEWOTT_HISUI                            1543
+#define SPECIES_ROWLETT_HISUI                           1544
+#define SPECIES_DARTRIX_HISUI                           1545
+
+#define SPECIES_EGG                                     1546
 
 #define NUM_SPECIES SPECIES_EGG
 

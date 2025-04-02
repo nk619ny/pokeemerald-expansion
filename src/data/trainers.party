@@ -684,13 +684,77 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Mightyena
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Buzzwole @ Coba Berry  
+Ability: Beast Boost  
+Tera Type: Bug  
+EVs: 128 HP / 252 Atk / 128 SpD  
+Adamant Nature  
+- Drain Punch  
+- High Horsepower  
+- Leech Life  
+- Stone Edge  
 
-Golbat
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Feraligatr @ Feraligatrite  
+Ability: Intimidate  
+Tera Type: Water  
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Crunch  
+- Ice Fang  
+- Dragon Dance  
+- Fishious Rend  
+
+Palafin-Hero @ Muscle Band  
+Ability: Zero to Hero  
+Tera Type: Water  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Jet Punch  
+- Wave Crash  
+- Iron Head  
+- Drain Punch  
+
+Greninja-Ash (M) @ Focus Sash  
+Ability: Battle Bond  
+Tera Type: Water  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+IVs: 31 HP / 3 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe /* HP Poison IVs for Min Atk */
+Timid Nature  
+- Water Shuriken  
+- Dark Pulse  
+- Hidden Power
+- Mud Shot  
+
+Darmanitan-Galar @ Choice Scarf  
+Ability: Gorilla Tactics  
+Tera Type: Ice  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Icicle Crash  
+- Flare Blitz  
+- Rock Slide  
+
+Urshifu-Rapid-Strike @ Assault Vest  
+Ability: Unseen Fist  
+Tera Type: Fighting  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Surging Strikes  
+- Close Combat  
+- Aqua Jet  
+- Iron Head  
+
+/*
+Dracovish @ Choice Scarf  
+Ability: Strong Jaw  
+Tera Type: Water  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Fishious Rend  
+- Ice Fang  
+- Psychic Fangs  
+*/
+
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -10345,17 +10409,84 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Camerupt
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+/*
+Indeedee-F (F) @ Light Clay  
+Ability: Psychic Surge  
+Tera Type: Psychic  
+EVs: 252 HP / 4 Def / 252 SpA  
+Quiet Nature  
+IVs: 0 Atk / 0 Spe  
+- Follow Me  
+- Expanding Force  
+- Mystical Fire  
+- Light Screen  
+*/
 
-Mightyena
-Level: 38
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Magmar @ Eviolite  
+Ability: Flame Body  
+Shiny: Yes  
+EVs: 252 HP / 252 Def / 4 SpD  
+Sassy Nature  
+IVs: 0 Atk / 0 Spe  
+- Follow Me  
+- Helping Hand  
+- Will-O-Wisp  
+- Lava Plume  
 
-Golbat
-Level: 40
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Armarouge  
+Ability: Flash Fire
+Shiny: Yes  
+Tera Type: Fire  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Quiet Nature  
+IVs: 0 Atk / 0 Spe  
+- Trick Room  
+- Armor Cannon  
+- Expanding Force  
+- Aura Sphere  
+
+Torkoal @ Psychic Seed  
+Ability: Drought  
+Tera Type: Fire  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Quiet Nature  
+IVs: 0 Atk / 0 Spe  
+- Eruption  
+- Heat Wave  
+- Body Press  
+- Solar Beam  
+
+Shiinotic @ Kebia Berry  
+Ability: Effect Spore  
+Tera Type: Grass  
+IVs: 0 Atk / 0 Spe 
+- Spore  
+- Giga Drain  
+- Dazzling Gleam  
+- Moonlight  
+
+Stakataka @ Chople Berry  
+Ability: Beast Boost  
+Tera Type: Rock  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Lonely Nature  
+IVs: 10 Def / 0 Spe  
+- Heavy Slam  
+- Rock Slide  
+- Magnet Rise  
+- Trick Room  
+
+Camerupt @ Cameruptite  
+Ability: Solid Rock  
+Tera Type: Fire  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Quiet Nature  
+IVs: 0 Atk / 0 Spe  
+- Eruption  
+- Earth Power  
+- Heat Wave  
+- Solar Beam  
+
 
 === TRAINER_EDWIN_2 ===
 Name: EDWIN
@@ -15821,21 +15952,79 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Numel
-Level: 26
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Gigalith  
+Ability: Sand Stream  
+Tera Type: Rock  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Stone Edge  
+- Stomping Tantrum  
+- Curse  
+- Wide Guard  
 
-Mightyena
-Level: 28
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Landorus (M)  
+Ability: Sand Force  
+Tera Type: Ground  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 30 HP / 2 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe /* HP Flying IVs for Min Atk */
+- Sandsear Storm  
+- Psychic  
+- Hidden Power
+- Weather Ball  
 
-Zubat
-Level: 30
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Steelix-Mega @ Steelixite  
+Ability: Sand Force  
+Tera Type: Steel  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Heavy Slam  
+- Drill Run  
+- Rock Slide  
+- Body Press  
 
-Camerupt
-Level: 33
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Regirock  
+Ability: Solid Rock  
+Tera Type: Rock  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Impish Nature  
+- Rock Slide  
+- Body Press  
+- Thunder Punch  
+- Shore Up  
+
+Excadrill  
+Ability: Sand Rush  
+Tera Type: Ground  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Drill Run  
+- Iron Head  
+- Brick Break  
+- Swords Dance  
+
+/*
+Lycanroc  
+Ability: Sand Rush  
+Tera Type: Rock  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Accelerock  
+- Drill Run  
+- Iron Head  
+- Psychic Fangs  
+
+Gliscor @ Toxic Orb  
+Ability: Poison Heal  
+Tera Type: Ground  
+EVs: 184 HP / 252 Atk / 72 Spe  
+Adamant Nature  
+- Dual Wingbeat  
+- Protect  
+- Fling  
+- U-turn  
+*/
+
 
 === TRAINER_DARCY ===
 Name: DARCY
