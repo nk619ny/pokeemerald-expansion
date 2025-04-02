@@ -29,6 +29,7 @@ FortreeCity_Gym_EventScript_Winona::
 
 FortreeCity_Gym_EventScript_WinonaDefeated::
 	message FortreeCity_Gym_Text_ReceivedFeatherBadge
+	setflag FLAG_FLY_FROM_MAP_CONFIG
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	setvar VAR_LEVEL_CAP, 63

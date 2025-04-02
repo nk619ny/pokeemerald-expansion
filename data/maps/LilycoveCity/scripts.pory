@@ -566,12 +566,12 @@ LilycoveCity_Text_DontGoNearCaveInCove:
 	.string "Don't go near the cave in the cove!\p"
 	.string "Why? You don't need a reason why!\n"
 	.string "I'm an adult, so you just listen to me!$"
-
+/*
 LilycoveCity_Text_IfWorldBecomesOurs:
 	.string "If this whole wide world becomes ours,\n"
 	.string "TEAM AQUA's, it will be a happier\l"
 	.string "place for POKéMON, too.$"
-
+*/
 LilycoveCity_Text_WailmerLeapOutOfWater:
 	.string "There! WAILMER!\n"
 	.string "Leap out of the water now!$"
@@ -761,3 +761,7 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "I mean, we are totally happy!$"
 
 `
+
+text LilycoveCity_Text_IfWorldBecomesOurs{
+	format("If the whole wide world embraces Team Aqua's philosophy, it will be a happier place for Pokémon, too.")
+}
