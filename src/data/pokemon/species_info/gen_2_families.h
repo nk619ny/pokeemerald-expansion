@@ -281,6 +281,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconPalIndex = 1,
         SHADOW(0, 13, SHADOW_SIZE_M)
         FOOTPRINT(Meganium)
+        .isMegaEvolution = TRUE
         .levelUpLearnset = sMeganiumLevelUpLearnset,
         .teachableLearnset = sMeganiumTeachableLearnset,
     },
@@ -764,6 +765,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Typhlosion,
             gShinyOverworldPalette_Typhlosion
         )
+        .isMegaEvolution = TRUE
         .levelUpLearnset = sTyphlosionLevelUpLearnset,
         .teachableLearnset = sTyphlosionTeachableLearnset,
         .formSpeciesIdTable = sTyphlosionFormSpeciesIdTable,
@@ -1054,6 +1056,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Feraligatr,
             gShinyOverworldPalette_Feraligatr
         )
+        .isMegaEvolution = TRUE
         .levelUpLearnset = sFeraligatrLevelUpLearnset,
         .teachableLearnset = sFeraligatrTeachableLearnset,
     },

@@ -112,6 +112,7 @@ script MauvilleCity_EventScript_Temporary{
 	//trainerbattle_no_intro(TRAINER_ARCHIE_SEAFLOOR_CAVERN,LavaridgeTown_Gym_1F_Text_FlanneryDefeat)
 	//addvar(VAR_LEVEL_CAP,5)
 	setflag(FLAG_FLY_FROM_MAP_CONFIG)
+	setflag(FLAG_MENU_PC_CONFIG)
 	//setvar(VAR_LEVEL_HANDICAP,0)
 	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
 	//buffernumberstring(STR_VAR_2,VAR_LEVEL_HANDICAP)

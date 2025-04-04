@@ -123,7 +123,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS //P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_VenusaurGmax[] = INCBIN_U32("graphics/pokemon/venusaur/gmax/front.4bpp.lz");
     const u32 gMonBackPic_VenusaurGmax[] = INCBIN_U32("graphics/pokemon/venusaur/gmax/back.4bpp.lz");
     const u32 gMonPalette_VenusaurGmax[] = INCBIN_U32("graphics/pokemon/venusaur/gmax/normal.gbapal.lz");
@@ -362,7 +362,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS //P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_BlastoiseGmax[] = INCBIN_U32("graphics/pokemon/blastoise/gmax/front.4bpp.lz");
     const u32 gMonBackPic_BlastoiseGmax[] = INCBIN_U32("graphics/pokemon/blastoise/gmax/back.4bpp.lz");
     const u32 gMonPalette_BlastoiseGmax[] = INCBIN_U32("graphics/pokemon/blastoise/gmax/normal.gbapal.lz");

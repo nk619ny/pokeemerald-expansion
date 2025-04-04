@@ -2243,7 +2243,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_12:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_13:
 # 1130 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_ROWLET, 10, 3
+	showmonpic SPECIES_ROWLET_HISUI, 10, 3
 # 1131 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_13, MSGBOX_YESNO
 # 1132 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -2349,7 +2349,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_35:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_37:
 # 1134 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_ROWLET, 5
+	givemon SPECIES_ROWLET_HISUI, 5
 # 1135 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_14
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
@@ -2524,7 +2524,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_12:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_13:
 # 1240 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_CYNDAQUIL, 10, 3
+	showmonpic SPECIES_CYNDAQUIL_HISUI, 10, 3
 # 1241 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_2, MSGBOX_YESNO
 # 1242 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -2630,7 +2630,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_35:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_37:
 # 1244 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_CYNDAQUIL, 5
+	givemon SPECIES_CYNDAQUIL_HISUI, 5
 # 1245 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_3
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
@@ -2805,7 +2805,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_12:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_13:
 # 1349 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_OSHAWOTT, 10, 3
+	showmonpic SPECIES_OSHAWOTT_HISUI, 10, 3
 # 1350 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_8, MSGBOX_YESNO
 # 1351 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -2911,7 +2911,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_35:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_37:
 # 1353 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_OSHAWOTT, 5
+	givemon SPECIES_OSHAWOTT_HISUI, 5
 # 1354 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_9
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1

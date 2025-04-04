@@ -184,6 +184,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
+Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Poochyena
@@ -197,6 +198,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
+Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Carvanha
@@ -210,6 +212,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
+Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Zubat
@@ -350,6 +353,7 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
+Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Carvanha
@@ -413,7 +417,7 @@ IVs: 0 Atk
 Spidops  
 Ability: Stakeout  
 Level: 26
-EVs: 248 HP / 252 Atk / 8 SpD  
+EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - First Impression  
 - Circle Throw  
@@ -686,7 +690,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Buzzwole @ Coba Berry  
 Ability: Beast Boost  
-Tera Type: Bug  
+Ball: Beast Ball
+Level: 65
 EVs: 128 HP / 252 Atk / 128 SpD  
 Adamant Nature  
 - Drain Punch  
@@ -696,7 +701,8 @@ Adamant Nature
 
 Feraligatr @ Feraligatrite  
 Ability: Intimidate  
-Tera Type: Water  
+Ball: Great Ball
+Level: 65
 EVs: 252 HP / 252 Atk / 4 Spe  
 Adamant Nature  
 - Crunch  
@@ -706,7 +712,8 @@ Adamant Nature
 
 Palafin-Hero @ Muscle Band  
 Ability: Zero to Hero  
-Tera Type: Water  
+Ball: Great Ball
+Level: 65
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Jet Punch  
@@ -716,7 +723,8 @@ Adamant Nature
 
 Greninja-Ash (M) @ Focus Sash  
 Ability: Battle Bond  
-Tera Type: Water  
+Ball: Great Ball
+Level: 65
 EVs: 252 SpA / 4 SpD / 252 Spe  
 IVs: 31 HP / 3 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe /* HP Poison IVs for Min Atk */
 Timid Nature  
@@ -727,7 +735,8 @@ Timid Nature
 
 Darmanitan-Galar @ Choice Scarf  
 Ability: Gorilla Tactics  
-Tera Type: Ice  
+Ball: Great Ball
+Level: 65
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Icicle Crash  
@@ -736,7 +745,8 @@ Jolly Nature
 
 Urshifu-Rapid-Strike @ Assault Vest  
 Ability: Unseen Fist  
-Tera Type: Fighting  
+Ball: Great Ball
+Level: 65
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Surging Strikes  
@@ -747,7 +757,8 @@ Jolly Nature
 /*
 Dracovish @ Choice Scarf  
 Ability: Strong Jaw  
-Tera Type: Water  
+Ball: Great Ball
+Level: 65
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Fishious Rend  
@@ -782,7 +793,6 @@ Ninetales-Alola @ Light Clay
 Level: 55
 Ball: Great Ball
 Ability: Snow Warning  
-Tera Type: Ice  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */
@@ -809,7 +819,7 @@ Level: 55
 Ball: Great Ball
 Ability: Snow Cloak  
 Tera Type: Ice  
-EVs: 248 HP / 252 SpA / 8 SpD  
+EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
 - Freeze-Dry  
@@ -862,6 +872,7 @@ Pic: Shelly ORAS
 Gender: Female
 Music: Aqua
 Double Battle: Yes
+Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Shaymin-Sky @ Yache Berry  
@@ -1111,7 +1122,7 @@ AI: Check Bad Move / Try To Faint / Check Viability / Try To 2HKO / Double Battl
 Ariados @ Sitrus Berry  
 Ability: Swarm  
 Level: 22
-EVs: 248 HP / 252 Atk / 8 SpD  
+EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Bug Bite  
 - Cross Poison  
@@ -1160,7 +1171,7 @@ Adamant Nature
 Arboliva @ Sitrus Berry  
 Ability: Harvest  
 Level: 22
-EVs: 248 HP / 252 SpA / 8 SpD  
+EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
 - Alluring Voice  
@@ -1335,6 +1346,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Gigalith  
 Ability: Sturdy  
 Level: 28
+Ball: Great Ball
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Curse  
@@ -1344,6 +1356,7 @@ Adamant Nature
 
 Golbat @ Eviolite  
 Ability: Inner Focus  
+Ball: Great Ball
 Level: 28
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -1355,6 +1368,7 @@ Jolly Nature
 Swoobat
 Ability: Unaware  
 Level: 28
+Ball: Great Ball
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -1366,6 +1380,7 @@ IVs: 0 Atk
 Beartic  
 Ability: Swift Swim  
 Level: 28
+Ball: Great Ball
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Aqua Jet  
@@ -1376,6 +1391,7 @@ Adamant Nature
 Kleavor  
 Ability: Sharpness  
 Level: 29
+Ball: Great Ball
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - X-Scissor  
@@ -1394,7 +1410,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Cradily @ Leftovers  
 Ability: Storm Drain  
-EVs: 248 HP / 252 SpA / 8 SpD  
+EVs: 252 HP / 252 SpA / 4 SpD  
 Level: 26
 Modest Nature  
 IVs: 0 Atk  
@@ -1406,7 +1422,7 @@ IVs: 0 Atk
 Crustle @ Salac Berry
 Ability: Sturdy  
 Level: 26
-EVs: 248 HP / 252 Atk / 8 SpD  
+EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Skitter Smack  
 - Rock Slide  
@@ -1416,7 +1432,7 @@ Adamant Nature
 Carbink @ Babiri Berry  
 Ability: Clear Body  
 Level: 26
-EVs: 248 HP / 252 SpA / 8 SpD  
+EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
 - Dazzling Gleam  
@@ -1718,7 +1734,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Swampert @ Swampertite  
-Level: 65
+Level: 63
 Ball: Dive Ball
 Ability: Torrent
 EVs: 252 HP / 252 SpA  
@@ -1729,7 +1745,7 @@ Brave Nature
 - Protect  
 
 Primarina  
-Level: 65
+Level: 63
 Ball: Dive Ball
 Ability: Torrent  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -1741,7 +1757,7 @@ IVs: 0 Atk
 - Protect  
 
 Electrode-Hisui  
-Level: 65
+Level: 63
 Ball: Dive Ball
 Ability: Soundproof  
 EVs: 192 Atk / 252 SpA / 64 Spe  
@@ -1752,7 +1768,7 @@ Timid Nature
 - Mind Blown  
 
 Armaldo  
-Level: 65
+Level: 63
 Ball: Dive Ball
 Ability: Battle Armor  
 EVs: 252 HP / 4 Atk / 252 SpA  
@@ -1763,7 +1779,7 @@ Brave Nature
 - Protect  
 
 Tentacruel  
-Level: 65
+Level: 63
 Ball: Dive Ball
 Ability: Clear Body  
 EVs: 112 Atk / 76 Def / 252 SpA / 68 Spe  
@@ -1774,7 +1790,7 @@ Hasty Nature
 - Baneful Bunker  
 
 Zarude  
-Level: 65
+Level: 63
 Ball: Dive Ball
 Ability: Intimidate
 EVs: 252 Atk / 252 Spe  
@@ -1794,17 +1810,17 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Camerupt @ Cameruptite  
-Level: 65
+Level: 63
 Ball: Timer Ball
 Ability: Sheer Force  
-EVs: 248 HP / 164 Atk / 96 SpA  
+EVs: 252 HP / 164 Atk / 96 SpA  
 Quiet Nature  
 - Lava Plume  
 - Earthquake  
 - Burning Bulwark  
 
 Toxtricity @ Air Balloon  
-Level: 65
+Level: 63
 Ball: Timer Ball
 Ability: Punk Rock  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -1816,7 +1832,7 @@ IVs: 0 Atk
 - Protect  
 
 Weezing-Galar  
-Level: 65
+Level: 63
 Ball: Timer Ball
 Ability: Levitate  
 EVs: 252 HP / 4 Atk / 252 SpA  
@@ -1827,7 +1843,7 @@ Relaxed Nature
 - Protect  
 
 Golem-Alola @ Air Balloon  
-Level: 65
+Level: 63
 Ball: Timer Ball
 Ability: Magnet Pull  
 EVs: 252 HP / 128 Atk / 128 SpA  
@@ -1838,7 +1854,7 @@ Brave Nature
 - Brutal Swing  
 
 Flygon @ Yache Berry  
-Level: 65
+Level: 63
 Ball: Timer Ball
 Ability: Levitate  
 EVs: 196 Atk / 84 Def / 60 SpA / 168 Spe  
@@ -1849,10 +1865,10 @@ Hasty Nature
 - Protect  
 
 Volcanion  
-Level: 65
+Level: 63
 Ball: Timer Ball
 Ability: Water Absorb  
-EVs: 248 HP / 8 Atk / 252 SpA  
+EVs: 252 HP / 4 Atk / 252 SpA  
 Serious Nature  
 - Lava Plume  
 - Surf  
@@ -5852,7 +5868,7 @@ Level: 43
 Ball: Love Ball
 Ability: Levitate  
 Tera Type: Rock  
-EVs: 248 HP / 252 Atk / 8 SpD  
+EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Flare Blitz  
 - Rock Slide  
@@ -6042,7 +6058,7 @@ Lunatone @ Psychic Seed
 Level: 72
 Ball: Moon Ball
 Ability: Levitate  
-EVs: 248 HP / 8 Def / 252 SpA  
+EVs: 252 HP / 4 Def / 252 SpA  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
 - Ancient Power  
@@ -6078,7 +6094,7 @@ Gothitelle @ Leftovers
 Level: 71
 Ball: Moon Ball
 Ability: Shadow Tag  
-EVs: 248 HP / 252 SpA / 8 SpD  
+EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
 - Protect  
@@ -6086,10 +6102,10 @@ IVs: 0 Atk / 0 Spe
 - Psyshock  
 - Shadow Ball  
 
-Audino @ Expert Belt
+Clefable @ Expert Belt
 Level: 73
 Ball: Moon Ball
-Ability: Healer  
+Ability: Unaware  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -6099,10 +6115,10 @@ IVs: 0 Atk / 0 Spe
 - Light Screen  
 
 Calyrex-Ice @ White Herb
-Level: 70
+Level: 71
 Ball: Moon Ball
 Ability: As One Ice Rider 
-EVs: 248 HP / 252 Atk / 8 SpD  
+EVs: 252 HP / 252 Atk / 4 SpD  
 Brave Nature  
 IVs: 0 Spe  
 - Close Combat  
@@ -10412,7 +10428,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 /*
 Indeedee-F (F) @ Light Clay  
 Ability: Psychic Surge  
-Tera Type: Psychic  
+Level: 74
+Ball: Dream Ball
 EVs: 252 HP / 4 Def / 252 SpA  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -10425,6 +10442,8 @@ IVs: 0 Atk / 0 Spe
 Magmar @ Eviolite  
 Ability: Flame Body  
 Shiny: Yes  
+Level: 74
+Ball: Dream Ball
 EVs: 252 HP / 252 Def / 4 SpD  
 Sassy Nature  
 IVs: 0 Atk / 0 Spe  
@@ -10436,7 +10455,8 @@ IVs: 0 Atk / 0 Spe
 Armarouge  
 Ability: Flash Fire
 Shiny: Yes  
-Tera Type: Fire  
+Level: 74
+Ball: Dream Ball
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -10447,7 +10467,8 @@ IVs: 0 Atk / 0 Spe
 
 Torkoal @ Psychic Seed  
 Ability: Drought  
-Tera Type: Fire  
+Level: 74
+Ball: Dream Ball
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -10458,7 +10479,8 @@ IVs: 0 Atk / 0 Spe
 
 Shiinotic @ Kebia Berry  
 Ability: Effect Spore  
-Tera Type: Grass  
+Level: 74
+Ball: Dream Ball
 IVs: 0 Atk / 0 Spe 
 - Spore  
 - Giga Drain  
@@ -10467,7 +10489,8 @@ IVs: 0 Atk / 0 Spe
 
 Stakataka @ Chople Berry  
 Ability: Beast Boost  
-Tera Type: Rock  
+Level: 74
+Ball: Beast Ball
 EVs: 252 HP / 252 Atk / 4 SpD  
 Lonely Nature  
 IVs: 10 Def / 0 Spe  
@@ -10478,7 +10501,8 @@ IVs: 10 Def / 0 Spe
 
 Camerupt @ Cameruptite  
 Ability: Solid Rock  
-Tera Type: Fire  
+Level: 74
+Ball: Timer Ball
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -12459,6 +12483,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
+Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mightyena
@@ -13293,7 +13318,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Groudon @ Red Orb  
 Ability: Drought
-Level: 65
+Level: 66
 Ball: Master Ball
 Tera Type: Ground  
 EVs: 252 HP / 160 SpD / 96 Spe  
@@ -13305,7 +13330,7 @@ Brave Nature
 
 Lilligant-Hisui (F) @ Coba Berry  
 Ability: Chlorophyll  
-Level: 65
+Level: 66
 Ball: Timer Ball
 Tera Type: Grass  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -13317,7 +13342,7 @@ Adamant Nature
 
 Charizard @ Charti Berry  
 Ability: Solar Power  
-Level: 65
+Level: 66
 Ball: Timer Ball
 Tera Type: Fire  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -13330,7 +13355,7 @@ IVs: 0 Atk
 
 Walking Wake @ Expert Belt  
 Ability: Protosynthesis  
-Level: 65
+Level: 66
 Ball: Timer Ball
 Tera Type: Water  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -13343,7 +13368,7 @@ IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe /* HP Electric IVs for Mi
 
 Gouging Fire @ Weakness Policy  
 Ability: Protosynthesis  
-Level: 65
+Level: 66
 Ball: Timer Ball
 Tera Type: Fire  
 EVs: 128 HP / 128 Atk / 252 Spe  
@@ -13355,7 +13380,7 @@ Jolly Nature
 
 Camerupt @ Cameruptite  
 Ability: Magma Armor 
-Level: 65
+Level: 66
 Ball: Timer Ball
 Tera Type: Fire  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -13433,7 +13458,7 @@ Level: 45
 Ball: Timer Ball
 Ability: Guts  
 Tera Type: Ground  
-EVs: 248 HP / 252 Atk / 8 SpD  
+EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - High Horsepower  
 - Drain Punch  
@@ -13445,7 +13470,7 @@ Level: 45
 Ball: Timer Ball
 Ability: Water Absorb  
 Tera Type: Fire  
-EVs: 248 HP / 252 SpA / 8 SpD  
+EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
 - Hydro Steam  
@@ -14475,7 +14500,7 @@ Jolly Nature
 Roselia @ Eviolite  
 Ability: Poison Point  
 Level: 31
-EVs: 248 HP / 252 SpA / 8 SpD  
+EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
 - Dazzling Gleam  
@@ -15734,6 +15759,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Zubat
@@ -15747,6 +15773,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Poochyena
@@ -15760,6 +15787,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Numel
@@ -15773,6 +15801,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Baltoy
@@ -15790,6 +15819,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Baltoy
@@ -15807,6 +15837,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mightyena
@@ -15820,6 +15851,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Zubat
@@ -15833,6 +15865,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Poochyena
@@ -15846,6 +15879,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Zubat
@@ -15859,6 +15893,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mightyena
@@ -15872,6 +15907,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Baltoy
@@ -15885,6 +15921,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Numel
@@ -15898,6 +15935,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Zubat
@@ -15911,6 +15949,7 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mightyena
@@ -15924,6 +15963,7 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Numel
@@ -15937,6 +15977,7 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Baltoy
@@ -15954,7 +15995,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gigalith  
 Ability: Sand Stream  
-Tera Type: Rock  
+Ball: Heavy Ball
+Level: 64
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Stone Edge  
@@ -15964,7 +16006,8 @@ Adamant Nature
 
 Landorus (M)  
 Ability: Sand Force  
-Tera Type: Ground  
+Ball: Heavy Ball
+Level: 64
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 30 HP / 2 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe /* HP Flying IVs for Min Atk */
@@ -15975,7 +16018,8 @@ IVs: 30 HP / 2 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe /* HP Flying IVs for Min 
 
 Steelix-Mega @ Steelixite  
 Ability: Sand Force  
-Tera Type: Steel  
+Ball: Heavy Ball
+Level: 64
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Heavy Slam  
@@ -15985,7 +16029,8 @@ Adamant Nature
 
 Regirock  
 Ability: Solid Rock  
-Tera Type: Rock  
+Ball: Heavy Ball
+Level: 64
 EVs: 252 HP / 252 Atk / 4 SpD  
 Impish Nature  
 - Rock Slide  
@@ -15995,7 +16040,8 @@ Impish Nature
 
 Excadrill  
 Ability: Sand Rush  
-Tera Type: Ground  
+Ball: Heavy Ball
+Level: 64
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Drill Run  
@@ -16006,7 +16052,8 @@ Adamant Nature
 /*
 Lycanroc  
 Ability: Sand Rush  
-Tera Type: Rock  
+Ball: Heavy Ball
+Level: 64
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Accelerock  
@@ -16016,7 +16063,8 @@ Adamant Nature
 
 Gliscor @ Toxic Orb  
 Ability: Poison Heal  
-Tera Type: Ground  
+Ball: Heavy Ball
+Level: 64 
 EVs: 184 HP / 252 Atk / 72 Spe  
 Adamant Nature  
 - Dual Wingbeat  

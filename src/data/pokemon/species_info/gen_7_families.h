@@ -71,6 +71,74 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DARTRIX}),
     },
 
+    [SPECIES_ROWLET_HISUI] =
+    {
+        .baseHP        = 68,
+        .baseAttack    = 55,
+        .baseDefense   = 55,
+        .baseSpeed     = 42,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
+        .catchRate = 45,
+        .expYield = 64,
+        .evYield_HP = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_OVERGROW, ABILITY_LONG_REACH, ABILITY_KEEN_EYE }, //Changed
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Rowlet"),
+        .cryId = CRY_ROWLET,
+        .natDexNum = NATIONAL_DEX_ROWLET,
+        .categoryName = _("Grass Quill"),
+        .height = 3,
+        .weight = 15,
+        .description = COMPOUND_STRING(
+            "This wary Pokémon uses photosynthesis\n"
+            "to store up energy during the day, while\n"
+            "becoming active at night. Silently it\n"
+            "glides, drawing near to its target."),
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Rowlet,
+        .frontPicSize = MON_COORDS_SIZE(31, 37),
+        .frontPicYOffset = 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
+        .backPic = gMonBackPic_Rowlet,
+        .backPicSize = MON_COORDS_SIZE(43, 36),
+        .backPicYOffset = 15,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+        .palette = gMonPalette_Rowlet,
+        .shinyPalette = gMonShinyPalette_Rowlet,
+        .iconSprite = gMonIcon_Rowlet,
+        .iconPalIndex = 0,
+        SHADOW(-1, 1, SHADOW_SIZE_S)
+        FOOTPRINT(Rowlet)
+        OVERWORLD(
+            sPicTable_Rowlet,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Rowlet,
+            gShinyOverworldPalette_Rowlet
+        )
+        .isHisuianForm = TRUE,
+        .levelUpLearnset = sRowletLevelUpLearnset,
+        .teachableLearnset = sRowletTeachableLearnset,
+        .eggMoveLearnset = sRowletEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DARTRIX_HISUI}),
+    },
+
     [SPECIES_DARTRIX] =
     {
         .baseHP        = 78,
@@ -137,6 +205,74 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sDartrixTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DECIDUEYE},
                                 {EVO_NONE, 0, SPECIES_DECIDUEYE_HISUI}),
+    },
+
+    [SPECIES_DARTRIX_HISUI] =
+    {
+        .baseHP        = 78,
+        .baseAttack    = 75,
+        .baseDefense   = 75,
+        .baseSpeed     = 52,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
+        .catchRate = 45,
+        .expYield = 147,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_OVERGROW, ABILITY_LONG_REACH, ABILITY_KEEN_EYE }, //Changed
+        .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
+        .speciesName = _("Dartrix"),
+        .cryId = CRY_DARTRIX,
+        .natDexNum = NATIONAL_DEX_DARTRIX,
+        .categoryName = _("Blade Quill"),
+        .height = 7,
+        .weight = 160,
+        .description = COMPOUND_STRING(
+            "A bit of a dandy, it spends its free time\n"
+            "preening its wings. Its preoccupation\n"
+            "with any dirt on its plumage can leave\n"
+            "it unable to battle."),
+        .pokemonScale = 365,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Dartrix,
+        .frontPicSize = MON_COORDS_SIZE(34, 47),
+        .frontPicYOffset = 8,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_Dartrix,
+        .backPicSize = MON_COORDS_SIZE(56, 54),
+        .backPicYOffset = 4,
+        .backAnimId = BACK_ANIM_V_STRETCH,
+        .palette = gMonPalette_Dartrix,
+        .shinyPalette = gMonShinyPalette_Dartrix,
+        .iconSprite = gMonIcon_Dartrix,
+        .iconPalIndex = 1,
+        SHADOW(0, 5, SHADOW_SIZE_S)
+        FOOTPRINT(Dartrix)
+        OVERWORLD(
+            sPicTable_Dartrix,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Dartrix,
+            gShinyOverworldPalette_Dartrix
+        )
+        .isHisuianForm = TRUE,
+        .levelUpLearnset = sDartrixLevelUpLearnset,
+        .teachableLearnset = sDartrixTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DECIDUEYE_HISUI}),
     },
 
     [SPECIES_DECIDUEYE] =
@@ -1243,6 +1379,68 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sVikavoltTeachableLearnset,
         .formSpeciesIdTable = sVikavoltFormSpeciesIdTable,
     },
+
+/*
+    [SPECIES_VIKAVOLT_MEGA] =
+    {
+        .baseHP        = 77,
+        .baseAttack    = 70,
+        .baseDefense   = 90,
+        .baseSpeed     = (43 + 80),
+        .baseSpAttack  = (145 + 10),
+        .baseSpDefense = (75 + 10),
+        .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 250 : 225,
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_BATTERY, ABILITY_BATTERY, ABILITY_BATTERY },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Vikavolt"),
+        .cryId = CRY_VIKAVOLT,
+        .natDexNum = NATIONAL_DEX_VIKAVOLT,
+        .categoryName = _("Stag Beetle"),
+        .height = 15,
+        .weight = 450,
+        .description = gVikavoltPokedexText,
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Vikavolt,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_Vikavolt,
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .enemyMonElevation = 8,
+        .backPic = gMonBackPic_Vikavolt,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 7,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Vikavolt,
+        .shinyPalette = gMonShinyPalette_Vikavolt,
+        .iconSprite = gMonIcon_Vikavolt,
+        .iconPalIndex = 0,
+        SHADOW(-1, 16, SHADOW_SIZE_S)
+        FOOTPRINT(Vikavolt)
+        OVERWORLD(
+            sPicTable_Vikavolt,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Vikavolt,
+            gShinyOverworldPalette_Vikavolt
+        )
+        .isMegaEvolution = TRUE
+        .levelUpLearnset = sVikavoltLevelUpLearnset,
+        .teachableLearnset = sVikavoltTeachableLearnset,
+        .formSpeciesIdTable = sVikavoltFormSpeciesIdTable,
+    }, */
 
     [SPECIES_VIKAVOLT_TOTEM] =
     {

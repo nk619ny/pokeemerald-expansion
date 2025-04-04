@@ -1135,7 +1135,7 @@ LilycoveCity_Text_DontGoNearCaveInCove:
 # 568 "data/maps/LilycoveCity/scripts.pory"
 	.string "I'm an adult, so you just listen to me!$"
 # 569 "data/maps/LilycoveCity/scripts.pory"
-
+/*
 # 570 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_IfWorldBecomesOurs:
 # 571 "data/maps/LilycoveCity/scripts.pory"
@@ -1145,7 +1145,7 @@ LilycoveCity_Text_IfWorldBecomesOurs:
 # 573 "data/maps/LilycoveCity/scripts.pory"
 	.string "place for POKéMON, too.$"
 # 574 "data/maps/LilycoveCity/scripts.pory"
-
+*/
 # 575 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Text_WailmerLeapOutOfWater:
 # 576 "data/maps/LilycoveCity/scripts.pory"
@@ -1520,3 +1520,9 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "POKéMON as soon as we arrived.\p"
 # 761 "data/maps/LilycoveCity/scripts.pory"
 	.string "I mean, we are totally happy!$"
+
+LilycoveCity_Text_IfWorldBecomesOurs::
+# 765 "data/maps/LilycoveCity/scripts.pory"
+	.string "If the whole wide world embraces Team\n"
+	.string "Aqua's philosophy, it will be a happier\l"
+	.string "place for Pokémon, too.$"

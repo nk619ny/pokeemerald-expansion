@@ -3,6 +3,7 @@ static const u16 sVenusaurFormSpeciesIdTable[] = {
     SPECIES_VENUSAUR,
 #if P_MEGA_EVOLUTIONS
     SPECIES_VENUSAUR_MEGA,
+    SPECIES_VENUSAUR_MEGA_X,
 #endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_VENUSAUR_GMAX,
@@ -30,6 +31,7 @@ static const u16 sBlastoiseFormSpeciesIdTable[] = {
     SPECIES_BLASTOISE,
 #if P_MEGA_EVOLUTIONS
     SPECIES_BLASTOISE_MEGA,
+    SPECIES_BLASTOISE_MEGA_X,
 #endif
 #if P_GIGANTAMAX_FORMS
     SPECIES_BLASTOISE_GMAX,
@@ -324,6 +326,9 @@ static const u16 sSlowkingFormSpeciesIdTable[] = {
 #if P_GALARIAN_FORMS
     SPECIES_SLOWKING_GALAR,
 #endif
+#if P_MEGA_EVOLUTIONS
+    SPECIES_SLOWKING_MEGA,
+#endif
     FORM_SPECIES_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -593,6 +598,16 @@ static const u16 sMewtwoFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_MEWTWO
 
+#if P_FAMILY_CHIKORITA
+static const u16 sMeganiumFormSpeciesIdTable[] = {
+    SPECIES_MEGANIUM,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_MEGANIUM_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_CHIKORITA
+
 #if P_FAMILY_CYNDAQUIL
 static const u16 sCyndaquilFormSpeciesIdTable[] = {
     SPECIES_CYNDAQUIL,
@@ -613,9 +628,22 @@ static const u16 sTyphlosionFormSpeciesIdTable[] = {
 #if P_HISUIAN_FORMS
     SPECIES_TYPHLOSION_HISUI,
 #endif
+#if P_MEGA_EVOLUTIONS
+    SPECIES_TYPHLOSION_MEGA,
+#endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CYNDAQUIL
+
+#if P_FAMILY_TOTODILE
+static const u16 sFerligatrFormSpeciesIdTable[] = {
+    SPECIES_FERALIGATR,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_FERALIGATR_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_TOTODILE
 
 #if P_FAMILY_MAREEP
 static const u16 sAmpharosFormSpeciesIdTable[] = {
@@ -626,6 +654,16 @@ static const u16 sAmpharosFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_MAREEP
+
+#if P_FAMILY_SUNKERN
+static const u16 sSunfloraFormSpeciesIdTable[] = {
+    SPECIES_SUNFLORA,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_SUNFLORA_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_SUNKERN
 
 #if P_FAMILY_WOOPER
 static const u16 sWooperFormSpeciesIdTable[] = {
@@ -933,7 +971,34 @@ static const u16 sGlalieFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
+static const u16 sFroslassFormSpeciesIdTable[] = {
+    SPECIES_FROSLASS,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_FROSLASS_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
 #endif //P_FAMILY_SNORUNT
+
+#if P_FAMILY_FEEBAS
+static const u16 sMiloticFormSpeciesIdTable[] = {
+    SPECIES_MILOTIC,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_MILOTIC_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_FEEBAS
+
+#if P_FAMILY_TRAPINCH
+static const u16 sFlygonFormSpeciesIdTable[] = {
+    SPECIES_FLYGON,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_FLYGON_MEGA,
+#endif
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_TRAPINCH
 
 #if P_FAMILY_BAGON
 static const u16 sSalamenceFormSpeciesIdTable[] = {
@@ -1169,6 +1234,20 @@ static const u16 sArceusFormSpeciesIdTable[] = {
 #endif //P_FAMILY_ARCEUS
 
 #if P_FAMILY_OSHAWOTT
+static const u16 sOshawottFormSpeciesIdTable[] = {
+    SPECIES_OSHAWOTT,
+#if P_HISUIAN_FORMS
+    SPECIES_OSHAWOTT_HISUI,
+#endif
+    FORM_SPECIES_END,
+};
+static const u16 sDewottFormSpeciesIdTable[] = {
+    SPECIES_DEWOTT,
+#if P_HISUIAN_FORMS
+    SPECIES_DEWOTT_HISUI,
+#endif
+    FORM_SPECIES_END,
+};
 static const u16 sSamurottFormSpeciesIdTable[] = {
     SPECIES_SAMUROTT,
 #if P_HISUIAN_FORMS
@@ -1598,6 +1677,20 @@ static const u16 sHoopaFormSpeciesIdTable[] = {
 #endif //P_FAMILY_HOOPA
 
 #if P_FAMILY_ROWLET
+static const u16 sRowletFormSpeciesIdTable[] = {
+    SPECIES_ROWLET,
+#if P_HISUIAN_FORMS
+    SPECIES_ROWLET_HISUI,
+#endif
+    FORM_SPECIES_END,
+};
+static const u16 sDartrixFormSpeciesIdTable[] = {
+    SPECIES_DARTRIX,
+#if P_HISUIAN_FORMS
+    SPECIES_DARTRIX_HISUI,
+#endif
+    FORM_SPECIES_END,
+};
 static const u16 sDecidueyeFormSpeciesIdTable[] = {
     SPECIES_DECIDUEYE,
 #if P_HISUIAN_FORMS
@@ -1619,6 +1712,9 @@ static const u16 sGumshoosFormSpeciesIdTable[] = {
 static const u16 sVikavoltFormSpeciesIdTable[] = {
     SPECIES_VIKAVOLT,
     SPECIES_VIKAVOLT_TOTEM,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_VIKAVOLT_MEGA,
+#endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_GRUBBIN

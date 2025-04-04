@@ -1655,15 +1655,19 @@
 #define SPECIES_SUNFLORA_MEGA                           1537
 #define SPECIES_FLYGON_MEGA                             1538
 #define SPECIES_VIKAVOLT_MEGA                           1539
+#define SPECIES_VENUSAUR_MEGA_X                         1540
+#define SPECIES_BLASTOISE_MEGA_X                        1541
+#define SPECIES_SLOWKING_MEGA                           1542
+#define SPECIES_FROSLASS_MEGA                           1543
 
-#define SPECIES_CYNDAQUIL_HISUI                         1540 
-#define SPECIES_QUILAVA_HISUI                           1541
-#define SPECIES_OSHAWOTT_HISUI                          1542
-#define SPECIES_DEWOTT_HISUI                            1543
-#define SPECIES_ROWLETT_HISUI                           1544
-#define SPECIES_DARTRIX_HISUI                           1545
+#define SPECIES_CYNDAQUIL_HISUI                         1544
+#define SPECIES_QUILAVA_HISUI                           1545
+#define SPECIES_OSHAWOTT_HISUI                          1546
+#define SPECIES_DEWOTT_HISUI                            1547
+#define SPECIES_ROWLET_HISUI                            1548
+#define SPECIES_DARTRIX_HISUI                           1549
 
-#define SPECIES_EGG                                     1546
+#define SPECIES_EGG                                     1550
 
 #define NUM_SPECIES SPECIES_EGG
 

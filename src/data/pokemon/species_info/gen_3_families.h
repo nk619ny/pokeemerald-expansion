@@ -7394,6 +7394,91 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sFlygonLevelUpLearnset,
         .teachableLearnset = sFlygonTeachableLearnset,
     },
+
+/*
+    [SPECIES_FLYGON_MEGA] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = (100 + 20),
+        .baseDefense   = (80 + 10),
+        .baseSpeed     = (100 + 30),
+        .baseSpAttack  = (80 + 30),
+        .baseSpDefense = (80 + 10),
+        .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 260,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 234,
+    #else
+        .expYield = 197,
+    #endif
+        .evYield_Attack = 1,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+    #if P_UPDATED_EGG_GROUPS >= GEN_8
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_DRAGON),
+    #else
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+    #endif
+        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_SAND_STREAM },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Flygon"),
+        .cryId = CRY_FLYGON,
+        .natDexNum = NATIONAL_DEX_FLYGON,
+        .categoryName = _("Mystic"),
+        .height = 20,
+        .weight = 820,
+        .description = COMPOUND_STRING(
+            "The flapping of its wings sounds like\n"
+            "singing. To prevent detection by enemies,\n"
+            "it hides itself by flapping up a cloud of\n"
+            "desert sand."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 268,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_Flygon,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 50),
+        ),
+        .frontAnimId = ANIM_ZIGZAG_SLOW,
+        .enemyMonElevation = 7,
+        .backPic = gMonBackPic_Flygon,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 2 : 3,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_Flygon,
+        .shinyPalette = gMonShinyPalette_Flygon,
+        .iconSprite = gMonIcon_Flygon,
+        .iconPalIndex = 1,
+        SHADOW(0, 17, SHADOW_SIZE_M)
+        FOOTPRINT(Flygon)
+        OVERWORLD(
+            sPicTable_Flygon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Flygon,
+            gShinyOverworldPalette_Flygon
+        )
+        .isMegaEvolution = TRUE
+        .levelUpLearnset = sFlygonLevelUpLearnset,
+        .teachableLearnset = sFlygonTeachableLearnset,
+    }, */
+
 #endif //P_FAMILY_TRAPINCH
 
 #if P_FAMILY_CACNEA
@@ -9011,6 +9096,95 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sMiloticLevelUpLearnset,
         .teachableLearnset = sMiloticTeachableLearnset,
     },
+
+/*
+    [SPECIES_MILOTIC_MEGA] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 60,
+        .baseDefense   = 79,
+        .baseSpeed     = 81,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 125,
+        .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
+        .catchRate = 60,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 189 : 213,
+        .evYield_SpDefense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_ERRATIC,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_MARVEL_SCALE, ABILITY_COMPETITIVE, ABILITY_CUTE_CHARM },
+    #else
+        .abilities = { ABILITY_MARVEL_SCALE, ABILITY_NONE, ABILITY_CUTE_CHARM },
+    #endif
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Milotic"),
+        .cryId = CRY_MILOTIC,
+        .natDexNum = NATIONAL_DEX_MILOTIC,
+        .categoryName = _("Tender"),
+        .height = 62,
+        .weight = 1620,
+        .description = COMPOUND_STRING(
+            "It is said to live at the bottom of\n"
+            "large lakes. Considered to be the most\n"
+            "beautiful of all Pokémon, it has been\n"
+            "depicted in paintings and statues."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 360,
+        .trainerOffset = 7,
+        .frontPic = gMonFrontPic_Milotic,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 2,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_GLOW_BLUE : ANIM_CIRCULAR_STRETCH_TWICE,
+        .frontAnimDelay = 45,
+        .backPic = gMonBackPic_Milotic,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 64) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 2 : 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_Milotic,
+        .shinyPalette = gMonShinyPalette_Milotic,
+        .iconSprite = gMonIcon_Milotic,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_MiloticF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
+        .backPicFemale = gMonBackPic_MiloticF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
+#endif //P_GENDER_DIFFERENCES
+        SHADOW(0, 12, SHADOW_SIZE_M)
+        FOOTPRINT(Milotic)
+        OVERWORLD(
+            sPicTable_Milotic,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gOverworldPalette_Milotic,
+            gShinyOverworldPalette_Milotic
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_MiloticF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following
+        )
+        .levelUpLearnset = sMiloticLevelUpLearnset,
+        .teachableLearnset = sMiloticTeachableLearnset,
+    }, */
 #endif //P_FAMILY_FEEBAS
 
 #if P_FAMILY_CASTFORM

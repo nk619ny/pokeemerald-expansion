@@ -581,6 +581,79 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DEWOTT}),
     },
 
+    [SPECIES_OSHAWOTT_HISUI] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 55,
+        .baseDefense   = 45,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 63,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 45,
+        .expYield = 62,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_TORRENT, ABILITY_SHARPNESS, ABILITY_SHELL_ARMOR }, //Changed
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Oshawott"),
+        .cryId = CRY_OSHAWOTT,
+        .natDexNum = NATIONAL_DEX_OSHAWOTT,
+        .categoryName = _("Sea Otter"),
+        .height = 5,
+        .weight = 59,
+        .description = COMPOUND_STRING(
+            "The scalchop on its stomach isn't just\n"
+            "used for battle, it can be used to break\n"
+            "open hard berries as well. It is made\n"
+            "from the same element as its claws."),
+        .pokemonScale = 432,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Oshawott,
+        .frontPicSize = MON_COORDS_SIZE(32, 40),
+        .frontPicYOffset = 14,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 13),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 13),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 13),
+            ANIMCMD_FRAME(1, 7),
+            ANIMCMD_FRAME(0, 11),
+        ),
+        .frontAnimId = ANIM_H_JUMPS,
+        .backPic = gMonBackPic_Oshawott,
+        .backPicSize = MON_COORDS_SIZE(40, 48),
+        .backPicYOffset = 14,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+        .palette = gMonPalette_Oshawott,
+        .shinyPalette = gMonShinyPalette_Oshawott,
+        .iconSprite = gMonIcon_Oshawott,
+        .iconPalIndex = 0,
+        SHADOW(-3, 0, SHADOW_SIZE_S)
+        FOOTPRINT(Oshawott)
+        OVERWORLD(
+            sPicTable_Oshawott,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Oshawott,
+            gShinyOverworldPalette_Oshawott
+        )
+        .isHisuianForm = TRUE,
+        .levelUpLearnset = sOshawottLevelUpLearnset,
+        .teachableLearnset = sOshawottTeachableLearnset,
+        .eggMoveLearnset = sOshawottEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DEWOTT_HISUI}),
+    },
+
     [SPECIES_DEWOTT] =
     {
         .baseHP        = 75,
@@ -649,6 +722,77 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sDewottTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT},
                                 {EVO_NONE, 0, SPECIES_SAMUROTT_HISUI}),
+    },
+
+    [SPECIES_DEWOTT_HISUI] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 75,
+        .baseDefense   = 60,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 45,
+        .expYield = 145,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_TORRENT, ABILITY_SHARPNESS, ABILITY_SHELL_ARMOR }, //Changed
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Dewott"),
+        .cryId = CRY_DEWOTT,
+        .natDexNum = NATIONAL_DEX_DEWOTT,
+        .categoryName = _("Discipline"),
+        .height = 8,
+        .weight = 245,
+        .description = COMPOUND_STRING(
+            "Strict training and disclipine leads it\n"
+            "to master its flowing double-scalchop\n"
+            "technique. Scalchop techniques differ\n"
+            "from one Dewott to another."),
+        .pokemonScale = 366,
+        .pokemonOffset = 9,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Dewott,
+        .frontPicSize = MON_COORDS_SIZE(40, 56),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 35),
+            ANIMCMD_FRAME(0, 28),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_H_VIBRATE,
+        .backPic = gMonBackPic_Dewott,
+        .backPicSize = MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 5,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = gMonPalette_Dewott,
+        .shinyPalette = gMonShinyPalette_Dewott,
+        .iconSprite = gMonIcon_Dewott,
+        .iconPalIndex = 0,
+        SHADOW(-2, 6, SHADOW_SIZE_S)
+        FOOTPRINT(Dewott)
+        OVERWORLD(
+            sPicTable_Dewott,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Dewott,
+            gShinyOverworldPalette_Dewott
+        )
+        .isHisuianForm = TRUE,
+        .levelUpLearnset = sDewottLevelUpLearnset,
+        .teachableLearnset = sDewottTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT_HISUI},
+                                {EVO_NONE, 0, SPECIES_SAMUROTT}),
     },
 
     [SPECIES_SAMUROTT] =

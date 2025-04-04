@@ -295,6 +295,62 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sVenusaurFormSpeciesIdTable,
         .formChangeTable = sVenusaurFormChangeTable,
     },
+
+    [SPECIES_VENUSAUR_MEGA_X] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = (82 + 20),
+        .baseDefense   = (83 + 30),
+        .baseSpeed     = 80,
+        .baseSpAttack  = (100 + 10),
+        .baseSpDefense = (100 + 40),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 313 : 281,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Venusaur"),
+        .cryId = CRY_VENUSAUR_MEGA,
+        .natDexNum = NATIONAL_DEX_VENUSAUR,
+        .categoryName = _("Seed"),
+        .height = 24,
+        .weight = 1555,
+        .description = COMPOUND_STRING(
+            "In order to support its flower, which\n"
+            "has grown larger due to Mega Evolution,\n"
+            "its back and legs have become stronger."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 388,
+        .trainerOffset = 6,
+        .frontPic = gMonFrontPic_VenusaurGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_VenusaurGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 11,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_VenusaurGmax,
+        .shinyPalette = gMonShinyPalette_VenusaurGmax,
+        .iconSprite = gMonIcon_VenusaurGmax,
+        .iconPalIndex = 0,
+        SHADOW(2, 6, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Venusaur)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sVenusaurLevelUpLearnset,
+        .teachableLearnset = sVenusaurTeachableLearnset,
+        .formSpeciesIdTable = sVenusaurFormSpeciesIdTable,
+        .formChangeTable = sVenusaurFormChangeTable,
+    }, 
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
@@ -1042,6 +1098,62 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sBlastoiseFormSpeciesIdTable,
         .formChangeTable = sBlastoiseFormChangeTable,
     },
+
+    [SPECIES_BLASTOISE_MEGA_X] =
+    {
+        .baseHP        = 79,
+        .baseAttack    = (83 + 30),
+        .baseDefense   = (100 + 50),
+        .baseSpeed     = (78 - 10),
+        .baseSpAttack  = 85,
+        .baseSpDefense = (105 + 30),
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
+        .catchRate = 45,
+        .expYield = 239,
+        .evYield_SpDefense = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SHELL_ARMOR, ABILITY_SHELL_ARMOR },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Blastoise"),
+        .cryId = CRY_BLASTOISE,
+        .natDexNum = NATIONAL_DEX_BLASTOISE,
+        .categoryName = _("Shellfish"),
+        .height = 250,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "It's not very good at precision\n"
+            "shooting. When attacking, it just fires\n"
+            "its 31 cannons over and over and\n"
+            "over."),
+        .pokemonScale = 256,
+        .pokemonOffset = -1,
+        .trainerScale = 293,
+        .trainerOffset = 2,
+        .frontPic = gMonFrontPic_BlastoiseGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_BlastoiseGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 5,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_BlastoiseGmax,
+        .shinyPalette = gMonShinyPalette_BlastoiseGmax,
+        .iconSprite = gMonIcon_BlastoiseGmax,
+        .iconPalIndex = 0,
+        SHADOW(-2, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Blastoise)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sBlastoiseLevelUpLearnset,
+        .teachableLearnset = sBlastoiseTeachableLearnset,
+        .formSpeciesIdTable = sBlastoiseFormSpeciesIdTable,
+        .formChangeTable = sBlastoiseFormChangeTable,
+    }, 
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
@@ -10239,19 +10351,19 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SHELL_ARMOR, ABILITY_SHELL_ARMOR },
+        .abilities = { ABILITY_MAGIC_GUARD, ABILITY_MAGIC_GUARD, ABILITY_MAGIC_GUARD },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Slowbro"),
-        .cryId = CRY_SLOWBRO,
-        .natDexNum = NATIONAL_DEX_SLOWBRO,
-        .categoryName = _("Hermit Crab"),
+        .speciesName = _("Slowking"),
+        .cryId = CRY_SLOWKING,
+        .natDexNum = NATIONAL_DEX_SLOWKING,
+        .categoryName = _("Royal"),
         .height = 20,
-        .weight = 1200,
+        .weight = 795,
         .description = COMPOUND_STRING(
             "When bathed in the energy of Mega\n"
-            "Evolution, Shellder converts into\n"
-            "impregnable armor. There is virtually no\n"
-            "change in Slowpoke."),
+            "Evolution, Slowpoke becomes closed\n"
+            "off from the world by Shellder,\n"
+            "except by Psychic power."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 296,
@@ -10270,12 +10382,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_SlowbroMega,
         .iconPalIndex = 0,
         SHADOW(0, 13, SHADOW_SIZE_L)
-        FOOTPRINT(Slowbro)
+        FOOTPRINT(Slowking)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sSlowbroLevelUpLearnset,
-        .teachableLearnset = sSlowbroTeachableLearnset,
-        .formSpeciesIdTable = sSlowbroFormSpeciesIdTable,
-        .formChangeTable = sSlowbroFormChangeTable,
+        .levelUpLearnset = sSlowkingLevelUpLearnset,
+        .teachableLearnset = sSlowkingTeachableLearnset,
+        .formSpeciesIdTable = sSlowkingFormSpeciesIdTable,
+        .formChangeTable = sSlowkingFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS */
 
@@ -19948,6 +20060,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Dragonite,
             gShinyOverworldPalette_Dragonite
         )
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sDragoniteLevelUpLearnset,
         .teachableLearnset = sDragoniteTeachableLearnset,
     }, 

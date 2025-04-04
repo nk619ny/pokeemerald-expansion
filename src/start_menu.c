@@ -31,6 +31,7 @@
 #include "pokedex.h"
 #include "pokenav.h"
 #include "region_map.h" //new include to make Fly work
+//#include "pc.inc"
 #include "safari_zone.h"
 #include "save.h"
 #include "scanline_effect.h"
@@ -59,6 +60,7 @@ enum
     MENU_ACTION_BAG,
     MENU_ACTION_POKENAV,
     MENU_ACTION_FLY, //testing addition
+    MENU_ACTION_PC, //testing addition
     MENU_ACTION_PLAYER,
     MENU_ACTION_SAVE,
     MENU_ACTION_OPTION,
@@ -113,6 +115,7 @@ static bool8 StartMenuBattlePyramidBagCallback(void);
 static bool8 StartMenuDebugCallback(void);
 static bool8 StartMenuDexNavCallback(void);
 static bool8 StartMenuFlyCallback(void); //testing addition
+static bool8 StartMenuPCCallback(void); //testing addition
 
 // Menu callbacks
 static bool8 SaveStartCallback(void);
@@ -197,6 +200,7 @@ static const struct MenuAction sStartMenuItems[] =
     [MENU_ACTION_POKEMON]         = {gText_MenuPokemon, {.u8_void = StartMenuPokemonCallback}},
     [MENU_ACTION_BAG]             = {gText_MenuBag,     {.u8_void = StartMenuBagCallback}},
     [MENU_ACTION_FLY]             = {gText_MenuFly,     {.u8_void = StartMenuFlyCallback}}, //testing addition
+    [MENU_ACTION_PC]              = {gText_MenuPC,     {.u8_void = StartMenuPCCallback}}, //testing addition
     [MENU_ACTION_POKENAV]         = {gText_MenuPokenav, {.u8_void = StartMenuPokeNavCallback}},
     [MENU_ACTION_PLAYER]          = {gText_MenuPlayer,  {.u8_void = StartMenuPlayerNameCallback}},
     [MENU_ACTION_SAVE]            = {gText_MenuSave,    {.u8_void = StartMenuSaveCallback}},
@@ -334,6 +338,9 @@ static void AddStartMenuAction(u8 action)
 
 static void BuildNormalStartMenu(void)
 {
+    if(FlagGet(FLAG_MENU_PC_CONFIG) == TRUE)
+        AddStartMenuAction(MENU_ACTION_PC); //testing addition
+
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
         AddStartMenuAction(MENU_ACTION_POKEDEX);
 
@@ -722,14 +729,30 @@ static bool8 StartMenuBagCallback(void)
     return FALSE;
 }
 
-static bool8 StartMenuFlyCallback(void) //for now, just runs the bag code. TODO
+static bool8 StartMenuPCCallback(void) //added to support PC from Start Menu
+{
+    if (!gPaletteFade.active)
+    {
+        PlayRainStoppingSoundEffect();
+        RemoveExtraStartMenuWindows();
+        //CleanupOverworldWindowsAndTilemaps();
+
+        //SetMainCallback2(CB2_OpenFlyMap); // Opens Fly Meny
+
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+static bool8 StartMenuFlyCallback(void) //added to support Fly from Start Menu
 {
     if (!gPaletteFade.active)
     {
         PlayRainStoppingSoundEffect();
         RemoveExtraStartMenuWindows();
         CleanupOverworldWindowsAndTilemaps();
-        SetMainCallback2(CB2_OpenFlyMap); // Display bag menu
+        SetMainCallback2(CB2_OpenFlyMap); // Opens Fly Meny
 
         return TRUE;
     }

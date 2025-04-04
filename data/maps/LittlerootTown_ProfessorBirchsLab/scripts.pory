@@ -1127,11 +1127,11 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter{
                 givemon(SPECIES_SPRIGATITO,5)    
                 msgbox("Received Sprigatito!")}
         case 10:
-            showmonpic(SPECIES_ROWLET,10,3)
+            showmonpic(SPECIES_ROWLET_HISUI,10,3)
             msgbox(format("Do you want to choose Rowlet?"),MSGBOX_YESNO)
             copyvar(VAR_TEMP_7,VAR_RESULT)
             if(var(VAR_TEMP_7) == YES){
-                givemon(SPECIES_ROWLET,5)   
+                givemon(SPECIES_ROWLET_HISUI,5)   
                 msgbox("Received Rowlet!")}                   
         default:
             msgbox(format("Better go speak with Prof. Birch before taking a Pokemon."))
@@ -1237,11 +1237,11 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter{
                 givemon(SPECIES_FUECOCO,5)    
                 msgbox("Received Fuecoco!")}
         case 10:
-            showmonpic(SPECIES_CYNDAQUIL,10,3)
+            showmonpic(SPECIES_CYNDAQUIL_HISUI,10,3)
             msgbox(format("Do you want to choose Cyndaquil?"),MSGBOX_YESNO)
             copyvar(VAR_TEMP_7,VAR_RESULT)
             if(var(VAR_TEMP_7) == YES){
-                givemon(SPECIES_CYNDAQUIL,5)
+                givemon(SPECIES_CYNDAQUIL_HISUI,5)
                 msgbox("Received Cyndaquil!")}                 
         default:
             msgbox(format("Better go speak with Prof. Birch before taking a Pokemon."))
@@ -1346,11 +1346,11 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter{
                 givemon(SPECIES_QUAXLY,5)    
                 msgbox("Received Quaxly!")}
         case 10:
-            showmonpic(SPECIES_OSHAWOTT,10,3)
+            showmonpic(SPECIES_OSHAWOTT_HISUI,10,3)
             msgbox(format("Do you want to choose Oshawott?"),MSGBOX_YESNO)
             copyvar(VAR_TEMP_7,VAR_RESULT)
             if(var(VAR_TEMP_7) == YES){
-                givemon(SPECIES_OSHAWOTT,5)      
+                givemon(SPECIES_OSHAWOTT_HISUI,5)      
                 msgbox("Received Oshawott!")}                
         default:
             msgbox(format("Better go speak with Prof. Birch before taking a Pokemon."))
