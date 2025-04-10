@@ -2765,8 +2765,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sKirliaLevelUpLearnset,
         .teachableLearnset = sKirliaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR},
-                                {EVO_ITEM_MALE, ITEM_DAWN_STONE, SPECIES_GALLADE}),
+//        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR},
+//                                {EVO_ITEM_MALE, ITEM_DAWN_STONE, SPECIES_GALLADE}),
+        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 30, SPECIES_GARDEVOIR},
+                                {EVO_LEVEL_MALE, 30, SPECIES_GALLADE},
+                                {EVO_ITEM_FEMALE, ITEM_HEART_STONE, SPECIES_GALLADE},
+                                {EVO_ITEM_MALE, ITEM_HEART_STONE, SPECIES_GARDEVOIR}),
     },
 
     [SPECIES_GARDEVOIR] =
@@ -2787,7 +2791,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .expYield = 208,
     #endif
         .evYield_SpAttack = 3,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_FEMALE,
         .eggCycles = 20,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
@@ -10494,8 +10498,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSnoruntLevelUpLearnset,
         .teachableLearnset = sSnoruntTeachableLearnset,
         .eggMoveLearnset = sSnoruntEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_GLALIE},
-                                {EVO_ITEM_FEMALE, ITEM_DAWN_STONE, SPECIES_FROSLASS}),
+        .evolutions = EVOLUTION({EVO_LEVEL_MALE, 42, SPECIES_GLALIE},
+                                {EVO_ITEM_MALE, ITEM_HEART_STONE, SPECIES_FROSLASS},
+                                {EVO_LEVEL_FEMALE, 42, SPECIES_FROSLASS},
+                                {EVO_ITEM_FEMALE, ITEM_HEART_STONE, SPECIES_GLALIE}),
     },
 
     [SPECIES_GLALIE] =
@@ -10510,7 +10516,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 187,
         .evYield_HP = 2,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_MALE,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -13004,11 +13010,19 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_DEOXYS_NORMAL] =
     {
         .baseHP        = 50,
+        .baseAttack    = 120,
+        .baseDefense   = 100,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 100,
+/*
+        .baseHP        = 50,
         .baseAttack    = 150,
         .baseDefense   = 50,
         .baseSpeed     = 150,
         .baseSpAttack  = 150,
         .baseSpDefense = 50,
+*/        
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 3,
         .expYield = DEOXYS_EXP_YIELD,

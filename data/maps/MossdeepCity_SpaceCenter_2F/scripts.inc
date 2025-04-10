@@ -1006,3 +1006,51 @@ MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
 	.string "Oh, yes, I don't live in RUSTBORO CITY.\n"
 # 504 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "I live right here on this island.$"
+# 505 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+
+# 506 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+/*
+# 507 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+Maxie: Courtney! Stop this!
+# 508 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+
+# 509 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+Courtney: This meteorite. It has a connection to a third ancient Pokémon. One that can tame the primal Groudon. If I take it, we can…
+# 510 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+
+# 511 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+Maxie: We were wrong. Our models did not fully comprehend the implications of land creation, and the power and will of Groudon was beyond our understanding. We need to surrender our ambitions before we make things even worse.
+# 512 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+
+# 513 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+Courtney: …
+# 514 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+
+# 515 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+Steven: Right now, Archie is on his way to awaken the ancient undersea Pokémon, Kyogre. As dangerous as it is to have Groudon wandering Hoenn, adding Kyogre to the mix will make the situation exponentially worse.
+# 516 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+
+# 517 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+Maxie: We will help. Based on weather patterns from our research, Kyogre is likely located in a seafloor cavern under Route 128. 
+# 518 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+
+# 519 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+Maxie: However, we shouldn’t be the ones to pursue them. Our presence will only antagonize Archie further, and make him even more unpredictable. If anyone can get through to him, it’s you, {PLAYER}. And this HM should let you and your Pokémon go after them.
+# 520 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+
+# 521 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+Steven: I will investigate this meteorite Courtney found. If there is some way to pacify Groudon, we’ll need to find it.
+# 522 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+
+# 523 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+Courtney has really stepped up. Team Magma will not surrender!  
+# 524 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+*/
+
+MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro::
+# 529 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	.string "Courtney: …You. You infiltrated the\n"
+	.string "hideout. You interfered with Maxie\l"
+	.string "awakening Groudon. Common\l"
+	.string "denominator… you. Necessary condition:\l"
+	.string "your removal.$"

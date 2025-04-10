@@ -84,7 +84,7 @@ bool32 ShouldTrainerBattlerUseGimmick(u32 battler, enum Gimmick gimmick)
         const struct TrainerMon *mon = &GetTrainerPartyFromId(trainerId)[isSecondTrainer ? gBattlerPartyIndexes[battler] - MULTI_PARTY_SIZE : gBattlerPartyIndexes[battler]];
 
         if (gimmick == GIMMICK_TERA && mon->teraType != TYPE_NONE)
-            return TRUE;
+            return FALSE; //changed to FALSE out to hard disable tera, allowing tera type to hopefully be used for Hidden Power
         if (gimmick == GIMMICK_DYNAMAX && mon->shouldUseDynamax)
             return FALSE; //changed to FALSE out to hard disable dynamax, fixing Multibattle issue
     }

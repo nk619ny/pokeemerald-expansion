@@ -31,7 +31,7 @@
 #include "pokedex.h"
 #include "pokenav.h"
 #include "region_map.h" //new include to make Fly work
-//#include "pc.inc"
+//#include "pc.inc" //new include to make PC work
 #include "safari_zone.h"
 #include "save.h"
 #include "scanline_effect.h"
@@ -51,6 +51,8 @@
 #include "constants/battle_frontier.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+
+extern u8 c[];
 
 // Menu actions
 enum
@@ -338,8 +340,8 @@ static void AddStartMenuAction(u8 action)
 
 static void BuildNormalStartMenu(void)
 {
-    if(FlagGet(FLAG_MENU_PC_CONFIG) == TRUE)
-        AddStartMenuAction(MENU_ACTION_PC); //testing addition
+//    if(FlagGet(FLAG_MENU_PC_CONFIG) == TRUE)
+//        AddStartMenuAction(MENU_ACTION_PC); //testing addition
 
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
         AddStartMenuAction(MENU_ACTION_POKEDEX);
@@ -352,8 +354,8 @@ static void BuildNormalStartMenu(void)
 
     AddStartMenuAction(MENU_ACTION_BAG);
 
-    if (FlagGet(FLAG_FLY_FROM_MAP_CONFIG) == TRUE) //testing addition
-        AddStartMenuAction(MENU_ACTION_FLY); //testing addition
+//    if (FlagGet(FLAG_FLY_FROM_MAP_CONFIG) == TRUE) //testing addition
+//        AddStartMenuAction(MENU_ACTION_FLY); //testing addition
 
     if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
         AddStartMenuAction(MENU_ACTION_POKENAV);
@@ -735,6 +737,8 @@ static bool8 StartMenuPCCallback(void) //added to support PC from Start Menu
     {
         PlayRainStoppingSoundEffect();
         RemoveExtraStartMenuWindows();
+        HideStartMenu();
+        ScriptContext_SetupScript(EventScript_PC);
         //CleanupOverworldWindowsAndTilemaps();
 
         //SetMainCallback2(CB2_OpenFlyMap); // Opens Fly Meny

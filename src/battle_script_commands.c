@@ -17743,7 +17743,7 @@ void BS_SetDynamicMoveCategory(void)
             gBattleStruct->swapDamageCategory = (GetCategoryBasedOnStats(gBattlerAttacker) != GetMoveCategory(gCurrentMove));
         break;
     case EFFECT_TERA_STARSTORM:
-        if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_TERA && gBattleMons[gBattlerAttacker].species == SPECIES_TERAPAGOS_STELLAR)
+        if (/*GetActiveGimmick(gBattlerAttacker) == GIMMICK_TERA && */gBattleMons[gBattlerAttacker].species == SPECIES_TERAPAGOS_STELLAR)
             gBattleStruct->swapDamageCategory = (GetCategoryBasedOnStats(gBattlerAttacker) != GetMoveCategory(gCurrentMove));
         break;
     default:

@@ -1187,3 +1187,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GlacierPath/scripts.inc"
 
 	.include "data/maps/TestMapIce/scripts.inc"
+
+	.include "data/maps/TestMapSpaceTime/scripts.inc"

@@ -711,6 +711,8 @@ extern const u32 gItemIconPalette_FabMail[];
 extern const u32 gItemIcon_RetroMail[];
 extern const u32 gItemIconPalette_RetroMail[];
 // Evolution Items
+extern const u32 gItemIcon_HeartStone[];
+extern const u32 gItemIconPalette_HeartStone[];
 extern const u32 gItemIcon_FireStone[];
 extern const u32 gItemIconPalette_FireStone[];
 extern const u32 gItemIcon_WaterStone[];

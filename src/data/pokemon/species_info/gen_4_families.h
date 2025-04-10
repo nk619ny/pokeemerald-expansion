@@ -1847,7 +1847,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formSpeciesIdTable = sBurmyFormSpeciesIdTable,
         .formChangeTable = sBurmyFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 20, SPECIES_WORMADAM_PLANT},
-                                {EVO_LEVEL_MALE, 20, SPECIES_MOTHIM_PLANT}),
+                                {EVO_LEVEL_MALE, 20, SPECIES_MOTHIM_PLANT},
+                                {EVO_ITEM_FEMALE, ITEM_HEART_STONE, SPECIES_MOTHIM_PLANT},
+                                {EVO_ITEM_MALE, ITEM_HEART_STONE, SPECIES_WORMADAM_PLANT}),
     },
 
     [SPECIES_BURMY_SANDY] =
@@ -1915,7 +1917,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formSpeciesIdTable = sBurmyFormSpeciesIdTable,
         .formChangeTable = sBurmyFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 20, SPECIES_WORMADAM_SANDY},
-                                {EVO_LEVEL_MALE, 20, SPECIES_MOTHIM_SANDY}),
+                                {EVO_LEVEL_MALE, 20, SPECIES_MOTHIM_SANDY},
+                                {EVO_ITEM_FEMALE, ITEM_HEART_STONE, SPECIES_MOTHIM_SANDY},
+                                {EVO_ITEM_MALE, ITEM_HEART_STONE, SPECIES_WORMADAM_PLANT}),
     },
 
     [SPECIES_BURMY_TRASH] =
@@ -1983,7 +1987,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formSpeciesIdTable = sBurmyFormSpeciesIdTable,
         .formChangeTable = sBurmyFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 20, SPECIES_WORMADAM_TRASH},
-                                {EVO_LEVEL_MALE, 20, SPECIES_MOTHIM_TRASH}),
+                                {EVO_LEVEL_MALE, 20, SPECIES_MOTHIM_TRASH},
+                                {EVO_ITEM_FEMALE, ITEM_HEART_STONE, SPECIES_MOTHIM_TRASH},
+                                {EVO_ITEM_MALE, ITEM_HEART_STONE, SPECIES_WORMADAM_TRASH}),
     },
 
     [SPECIES_WORMADAM_PLANT] =
@@ -2332,7 +2338,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sCombeeLevelUpLearnset,
         .teachableLearnset = sCombeeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 21, SPECIES_VESPIQUEN}),
+        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 21, SPECIES_VESPIQUEN},
+                                {EVO_ITEM_MALE, ITEM_HEART_STONE, SPECIES_VESPIQUEN}),
     },
 
     [SPECIES_VESPIQUEN] =

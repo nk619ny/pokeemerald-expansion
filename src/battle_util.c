@@ -11844,7 +11844,7 @@ u32 GetBattlerMoveTargetType(u32 battler, u32 move)
     u32 effect = GetMoveEffect(move);
     if (effect == EFFECT_EXPANDING_FORCE && IsBattlerTerrainAffected(battler, STATUS_FIELD_PSYCHIC_TERRAIN))
         return MOVE_TARGET_BOTH;
-    if (effect == EFFECT_TERA_STARSTORM && gBattleMons[battler].species == SPECIES_TERAPAGOS_STELLAR)
+    if (effect == EFFECT_TERA_STARSTORM && (gBattleMons[battler].species == SPECIES_TERAPAGOS_STELLAR || gBattleMons[battler].species == SPECIES_TERAPAGOS))
         return MOVE_TARGET_BOTH;
 
     return GetMoveTarget(move);

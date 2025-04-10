@@ -3830,6 +3830,20 @@ const struct Item gItemsInfo[] =
 
 // Evolution Items
 
+[ITEM_HEART_STONE] =
+{
+    .name = _("Heart Stone"),
+    .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
+    .description = sEvolutionStoneDesc,
+    .pocket = POCKET_ITEMS,
+    .type = ITEM_USE_PARTY_MENU,
+    .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+    .effect = gItemEffect_EvoItem,
+    .flingPower = 30,
+    .iconPic = gItemIcon_HeartStone,
+    .iconPalette = gItemIconPalette_HeartStone,
+},
+
     [ITEM_FIRE_STONE] =
     {
         .name = _("Fire Stone"),

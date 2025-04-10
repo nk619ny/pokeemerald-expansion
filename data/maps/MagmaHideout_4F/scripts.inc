@@ -464,3 +464,15 @@ MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
 	.string "I am going after GROUDON, so this\n"
 # 233 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "is where we part!$"
+
+MagmaHideout_4F_Text_MaxieNewIntro::
+# 236 "data/maps/MagmaHideout_4F/scripts.pory"
+	.string "Maxie: Ah, {PLAYER}. Have you come to\n"
+	.string "witness the miracle of Groudon? No? I\l"
+	.string "shouldn't be surprised. Like Steven\l"
+	.string "Stone and many others, despite my\l"
+	.string "efforts to educate, you still do not\l"
+	.string "see it. No matter. You should be\l"
+	.string "grateful, you are lucky to see this.\l"
+	.string "Behold - years of planning have led to\l"
+	.string "this moment!$"

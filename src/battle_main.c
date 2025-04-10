@@ -6025,7 +6025,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
             return GetMonData(mon, MON_DATA_TERA_TYPE);
         break;
     case EFFECT_TERA_STARSTORM:
-        if (species == SPECIES_TERAPAGOS_STELLAR)
+        if (species == SPECIES_TERAPAGOS_STELLAR || SPECIES_TERAPAGOS_TERASTAL)
             return TYPE_STELLAR;
         break;
     }

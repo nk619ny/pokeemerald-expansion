@@ -325,4 +325,13 @@ SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue:
 SeafloorCavern_Room9_Text_MaxieComeOnPlayer:
 	.string "MAXIE: {PLAYER}, come on, you have\n"
 	.string "to get out of here, too!$"
+
+/*
+
+Archie: With Kyogre’s power, we will return this world to the way it should be. Waves will tear down the dams that disrupt currents. Storms will destroy the factories that pollute, and tornados will rid down the skyscrapers that blot the air. Humanity and Pokémon can start anew in an untainted world. Team Aqua will reveal the hubris of the world, and teach humanity a lesson it will never forget!
+
+Hm? You say these ancient Pokémon are too dangerous, that Maxie couldn’t control Groudon? Of course he couldn’t… his “science” fails to understand the equilibrium that nature wants. I am not here to control nature, I am merely here to liberate/empower it!
+
+*/
 `
+

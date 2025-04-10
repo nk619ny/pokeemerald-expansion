@@ -2744,7 +2744,7 @@
     {
       "id": "LAYOUT_MOSSDEEP_CITY_SPACE_CENTER_1F",
       "name": "MossdeepCity_SpaceCenter_1F_Layout",
-      "width": 16,
+      "width": 18,
       "height": 10,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Facility",
@@ -4564,12 +4564,22 @@
     {
       "id": "LAYOUT_TEST_MAP_ICE",
       "name": "TestMapIce_Layout",
-      "width": 40,
+      "width": 120,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/TestMapIce/border.bin",
       "blockdata_filepath": "data/layouts/TestMapIce/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_MAP_SPACE_TIME",
+      "name": "TestMapSpaceTime_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/TestMapSpaceTime/border.bin",
+      "blockdata_filepath": "data/layouts/TestMapSpaceTime/map.bin"
     }
   ]
 }

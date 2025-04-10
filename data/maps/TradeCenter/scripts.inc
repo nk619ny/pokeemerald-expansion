@@ -197,22 +197,22 @@ MauvilleCity_EventScript_Temporary::
 # 108 "data/maps/TradeCenter/scripts.pory"
 	lock
 # 114 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_FLY_FROM_MAP_CONFIG
-# 115 "data/maps/TradeCenter/scripts.pory"
+	giveitem ITEM_POKEMON_BOX_LINK
+# 116 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_MENU_PC_CONFIG
-# 117 "data/maps/TradeCenter/scripts.pory"
+# 118 "data/maps/TradeCenter/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_LEVEL_CAP
-# 119 "data/maps/TradeCenter/scripts.pory"
+# 120 "data/maps/TradeCenter/scripts.pory"
 	msgbox MauvilleCity_EventScript_Temporary_Text_0
-# 128 "data/maps/TradeCenter/scripts.pory"
-	givemon SPECIES_CYNDAQUIL, 24, , , , 2, , , , , , , , , , , , , , MOVE_SEARING_SUNRAZE_SMASH, MOVE_SUNSTEEL_STRIKE, MOVE_BITTER_MALICE, MOVE_PURIFY
 # 129 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_CYNDAQUIL, 24, , , , 2, , , , , , , , , , , , , , MOVE_SEARING_SUNRAZE_SMASH, MOVE_SUNSTEEL_STRIKE, MOVE_BITTER_MALICE, MOVE_PURIFY
+# 130 "data/maps/TradeCenter/scripts.pory"
 	givemon SPECIES_CYNDAQUIL_HISUI, 25, , , , 1, , , , , , , , , , , , , , MOVE_INFERNAL_PARADE, MOVE_COMBAT_TORQUE, MOVE_THUNDERCLAP, MOVE_NIGHT_DAZE
-# 139 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
 # 140 "data/maps/TradeCenter/scripts.pory"
-	closemessage
+	waitmessage
 # 141 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 142 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
@@ -227,7 +227,7 @@ Common_EventScript_SetFlashTest_Text_0:
 	.string "Do you have flash?$"
 
 MauvilleCity_EventScript_Temporary_Text_0:
-# 119 "data/maps/TradeCenter/scripts.pory"
+# 120 "data/maps/TradeCenter/scripts.pory"
 	.string "level cap is {STR_VAR_1}$"
 
 Common_Text_CaveIsDarkUseFlash::

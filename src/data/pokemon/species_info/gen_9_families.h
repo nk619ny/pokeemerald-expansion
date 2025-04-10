@@ -639,7 +639,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sLechonkTeachableLearnset,
         .eggMoveLearnset = sLechonkEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_MALE, 18, SPECIES_OINKOLOGNE_M},
-                                {EVO_LEVEL_FEMALE, 18, SPECIES_OINKOLOGNE_F}),
+                                {EVO_LEVEL_FEMALE, 18, SPECIES_OINKOLOGNE_F},
+                                {EVO_ITEM_MALE, ITEM_HEART_STONE, SPECIES_OINKOLOGNE_F},
+                                {EVO_ITEM_FEMALE, ITEM_HEART_STONE, SPECIES_OINKOLOGNE_M}),
     },
 
     [SPECIES_OINKOLOGNE_M] =
@@ -7494,7 +7496,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseSpAttack  = 60,                                                                                            \
         .baseSpDefense = 96,                                                                                            \
         .types = MON_TYPES(TYPE_GRASS, type),                                                                           \
-        .forceTeraType = type,                                                                                          \
+    /*    .forceTeraType = type,      */                                                                                    \
         .catchRate = 5,                                                                                                 \
         .expYield = 275,                                                                                                \
         .evYield_Attack = 3,                                                                                            \
@@ -7835,7 +7837,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseSpAttack  = 65,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_NORMAL),
-        .forceTeraType = TYPE_STELLAR,
+    /*    .forceTeraType = TYPE_STELLAR, */
         .catchRate = 255,
         .expYield = 90,
         .evYield_Defense = 1,
@@ -7904,7 +7906,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseSpAttack  = 105,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_NORMAL),
-        .forceTeraType = TYPE_STELLAR,
+    /*    .forceTeraType = TYPE_STELLAR, */
         .catchRate = 255,
         .expYield = 120,
         .evYield_Defense = 2,
@@ -7974,7 +7976,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseSpAttack  = 130,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_NORMAL),
-        .forceTeraType = TYPE_STELLAR,
+    /*    .forceTeraType = TYPE_STELLAR, */
         .catchRate = 255,
         .expYield = 140,
         .evYield_HP = 3,

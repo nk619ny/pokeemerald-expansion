@@ -547,6 +547,9 @@ const u32 gItemIconPalette_RetroMail[] = INCBIN_U32("graphics/items/icon_palette
 
 // Evolution Items
 
+const u32 gItemIcon_HeartStone[] = INCBIN_U32("graphics/items/icons/heart_stone.4bpp.lz");
+const u32 gItemIconPalette_HeartStone[] = INCBIN_U32("graphics/items/icons/heart_stone.gbapal.lz");
+
 const u32 gItemIcon_FireStone[] = INCBIN_U32("graphics/items/icons/fire_stone.4bpp.lz");
 const u32 gItemIconPalette_FireStone[] = INCBIN_U32("graphics/items/icon_palettes/fire_stone.gbapal.lz");
 

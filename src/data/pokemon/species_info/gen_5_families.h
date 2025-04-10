@@ -4586,7 +4586,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sBasculinWhiteStripedTeachableLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_RECOIL_DAMAGE_MALE, 294, SPECIES_BASCULEGION_M},
-                                {EVO_RECOIL_DAMAGE_FEMALE, 294, SPECIES_BASCULEGION_F}),
+                                {EVO_RECOIL_DAMAGE_FEMALE, 294, SPECIES_BASCULEGION_F},
+                                {EVO_ITEM_MALE, ITEM_HEART_STONE, SPECIES_BASCULEGION_F},
+                                {EVO_ITEM_FEMALE, ITEM_HEART_STONE, SPECIES_BASCULEGION_M}),
     },
 
     [SPECIES_BASCULEGION_M] =

@@ -502,4 +502,31 @@ MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
 	.string "after this.\p"
 	.string "Oh, yes, I don't live in RUSTBORO CITY.\n"
 	.string "I live right here on this island.$"
+
+/*
+Maxie: Courtney! Stop this!
+
+Courtney: This meteorite. It has a connection to a third ancient Pokémon. One that can tame the primal Groudon. If I take it, we can…
+
+Maxie: We were wrong. Our models did not fully comprehend the implications of land creation, and the power and will of Groudon was beyond our understanding. We need to surrender our ambitions before we make things even worse.
+
+Courtney: …
+
+Steven: Right now, Archie is on his way to awaken the ancient undersea Pokémon, Kyogre. As dangerous as it is to have Groudon wandering Hoenn, adding Kyogre to the mix will make the situation exponentially worse.
+
+Maxie: We will help. Based on weather patterns from our research, Kyogre is likely located in a seafloor cavern under Route 128. 
+
+Maxie: However, we shouldn’t be the ones to pursue them. Our presence will only antagonize Archie further, and make him even more unpredictable. If anyone can get through to him, it’s you, {PLAYER}. And this HM should let you and your Pokémon go after them.
+
+Steven: I will investigate this meteorite Courtney found. If there is some way to pacify Groudon, we’ll need to find it.
+
+Courtney has really stepped up. Team Magma will not surrender!  
+*/
+
+
 `
+
+text MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro {
+	format("Courtney: …You. You infiltrated the hideout. You interfered with Maxie awakening Groudon. Common denominator… you. Necessary condition: your removal.")
+}
+

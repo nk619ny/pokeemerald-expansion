@@ -232,3 +232,7 @@ MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
 	.string "I am going after GROUDON, so this\n"
 	.string "is where we part!$"
 `
+
+text MagmaHideout_4F_Text_MaxieNewIntro {
+	format("Maxie: Ah, {PLAYER}. Have you come to witness the miracle of Groudon? No? I shouldn't be surprised. Like Steven Stone and many others, despite my efforts to educate, you still do not see it. No matter. You should be grateful, you are lucky to see this. Behold - years of planning have led to this moment!")
+}
