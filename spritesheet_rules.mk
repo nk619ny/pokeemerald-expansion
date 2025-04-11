@@ -417,6 +417,23 @@ $(OBJEVENTGFXDIR)/people/shelly_oras.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/matt_oras.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/people/archie_oras.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/maxie_oras.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/vito.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/sada.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/turo.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/brawly_oras.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 
 $(OBJEVENTGFXDIR)/pokemon_old/azumarill.4bpp: %.4bpp: %.png

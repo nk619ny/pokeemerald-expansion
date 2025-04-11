@@ -4580,6 +4580,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/TestMapSpaceTime/border.bin",
       "blockdata_filepath": "data/layouts/TestMapSpaceTime/map.bin"
+    },
+    {
+      "id": "LAYOUT_MOSSDEEP_CITY_SPACE_CENTER_2F_R",
+      "name": "MossdeepCity_SpaceCenter_2F_R_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F_R/border.bin",
+      "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F_R/map.bin"
     }
   ]
 }

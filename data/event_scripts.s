@@ -1189,3 +1189,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TestMapIce/scripts.inc"
 
 	.include "data/maps/TestMapSpaceTime/scripts.inc"
+
+	.include "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.inc"
