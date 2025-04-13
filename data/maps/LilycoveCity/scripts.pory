@@ -238,6 +238,29 @@ LilycoveCity_EventScript_Rival::
 	goto_if_eq VAR_RESULT, FEMALE, LilycoveCity_EventScript_Brendan
 	end
 
+LilycoveCity_EventScript_RivalBeachBattleSequence::
+	lock
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, LilycoveCity_EventScript_MayStarterCheck
+	goto_if_eq VAR_RESULT, FEMALE, LilycoveCity_EventScript_BrendanStarterCheck
+	end
+
+LilycoveCity_EventScript_BrendanStarterCheck::
+	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+	switch VAR_STARTER_MON
+	case 0, LilycoveCity_EventScript_BattleBrendanTreecko
+	case 1, LilycoveCity_EventScript_BattleBrendanTorchic
+	case 2, LilycoveCity_EventScript_BattleBrendanMudkip
+	end
+
+LilycoveCity_EventScript_MayStarterCheck::
+	playbgm MUS_ENCOUNTER_MAY, TRUE
+	switch VAR_STARTER_MON
+	case 0, LilycoveCity_EventScript_BattleMayTreecko
+	case 1, LilycoveCity_EventScript_BattleMayTorchic
+	case 2, LilycoveCity_EventScript_BattleMayMudkip
+	end
+
 LilycoveCity_EventScript_May::
 	playbgm MUS_ENCOUNTER_MAY, TRUE
 	call_if_set FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattleAgain
@@ -325,7 +348,7 @@ LilycoveCity_EventScript_BattleBrendanMudkip::
 	end
 
 LilycoveCity_EventScript_DefeatedMay::
-	msgbox LilycoveCity_Text_MayGoingBackToLittleroot, MSGBOX_DEFAULT
+	msgbox LilycoveCity_Text_RivalGoingBackToLittleroot, MSGBOX_DEFAULT
 	setvar VAR_RESULT, FALSE
 	call_if_set FLAG_BADGE06_GET, LilycoveCity_EventScript_CheckFinalBadge
 	call_if_eq VAR_RESULT, FALSE, LilycoveCity_EventScript_MayCollectBadges
@@ -357,7 +380,7 @@ LilycoveCity_EventScript_MayBattleFrontier::
 	return
 
 LilycoveCity_EventScript_DefeatedBrendan::
-	msgbox LilycoveCity_Text_BrendanGoingBackToLittleroot, MSGBOX_DEFAULT
+	msgbox LilycoveCity_Text_RivalGoingBackToLittleroot, MSGBOX_DEFAULT
 	setvar VAR_RESULT, FALSE
 	call_if_set FLAG_BADGE06_GET, LilycoveCity_EventScript_CheckFinalBadge
 	call_if_eq VAR_RESULT, FALSE, LilycoveCity_EventScript_BrendanCollectBadges
@@ -393,6 +416,9 @@ LilycoveCity_EventScript_RivalFlyAway::
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	setflag FLAG_MET_RIVAL_LILYCOVE
+	setvar VAR_LEVEL_CAP, 70
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
 	release
 	end
 
@@ -413,6 +439,8 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	msgbox LilycoveCity_Text_ExplainBerryBlender, MSGBOX_DEFAULT
 	return
 
+
+/*
 LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "MAY: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
@@ -425,12 +453,13 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "raising POKéMON properly, {PLAYER}{KUN}.\p"
 	.string "I'll battle with you, so you can show\n"
 	.string "me your POKéMON, {PLAYER}{KUN}.$"
+*/
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "MAY: Oh, why? {PLAYER}{KUN}, haven't you\n"
-	.string "been raising your POKéMON?\p"
-	.string "That's not a very good showing as a\n"
-	.string "TRAINER…$"
+	.string "MAY: Oh, why? {PLAYER}{KUN}, don't you\n"
+	.string "want to see the rare Pokémon I found?\p"
+	.string "That's not a very good curiosity as a\n"
+	.string "Trainer…$"
 
 LilycoveCity_Text_MayBattleMe:
 	.string "MAY: Come on, battle with me, so I can\n"
@@ -483,6 +512,7 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier:
 	.string "but I'll finish my POKéDEX before you!\p"
 	.string "See you!$"
 
+/*
 LilycoveCity_Text_BrendanShoppingLetsBattle:
 	.string "BRENDAN: Oh, hey, it's {PLAYER}.\p"
 	.string "I'm running an errand for my dad.\n"
@@ -490,10 +520,11 @@ LilycoveCity_Text_BrendanShoppingLetsBattle:
 	.string "Anyways, it's been a while.\p"
 	.string "Want to have a battle to see who's been\n"
 	.string "raising POKéMON better?$"
+*/
 
 LilycoveCity_Text_BrendanNoConfidence:
 	.string "BRENDAN: Oh, what's the matter?\n"
-	.string "Don't have the confidence?$"
+	.string "Scared of my ultra-rare Pokémon?$"
 
 LilycoveCity_Text_BrendanBattleMe:
 	.string "BRENDAN: Want to battle to see who's\n"
@@ -761,7 +792,86 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "I mean, we are totally happy!$"
 
 `
+const TempVar_RivalEncounter = VAR_TEMP_0
 
 text LilycoveCity_Text_IfWorldBecomesOurs{
 	format("If the whole wide world embraces Team Aqua's philosophy, it will be a happier place for Pokémon, too.")
+}
+
+script LilycoveCity_EventScript_RivalTriggerLeft {
+	if (flag(FLAG_MET_RIVAL_LILYCOVE)) {
+		setvar(TempVar_RivalEncounter,1)
+	} 
+	else {
+		goto(LilycoveCity_EventScript_RivalEncounterLeft)
+	}
+}
+
+script LilycoveCity_EventScript_RivalTriggerRight {
+	if (flag(FLAG_MET_RIVAL_LILYCOVE)) {
+		setvar(TempVar_RivalEncounter,1)
+	} 
+	else {
+		goto(LilycoveCity_EventScript_RivalEncounterRight)
+	}
+}
+
+script LilycoveCity_EventScript_RivalEncounterLeft{
+	lock
+	msgbox(format("{RIVAL}: {PLAYER}, wait up!"))
+	closemessage
+	setobjectxyperm(LOCALID_RIVAL, 53, 15)
+	addobject(LOCALID_RIVAL)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	applymovement(LOCALID_RIVAL, LilycoveCity_Movement_RivalApproachLeft)
+	waitmovement(0)
+	goto(LilycoveCity_EventScript_RivalBeachEncounter)
+}
+
+script LilycoveCity_EventScript_RivalEncounterRight{
+	lock
+	msgbox(format("{RIVAL}: {PLAYER}, wait up!"))
+	closemessage
+	setobjectxyperm(LOCALID_RIVAL, 53, 15)
+	addobject(LOCALID_RIVAL)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+	applymovement(LOCALID_RIVAL, LilycoveCity_Movement_RivalApproachRight)
+	waitmovement(0)
+	goto(LilycoveCity_EventScript_RivalBeachEncounter)
+}
+
+script LilycoveCity_EventScript_RivalBeachEncounter{
+	msgbox(LilycoveCity_Text_RivalGreeting, MSGBOX_DEFAULT)
+	waitmessage	
+	goto(LilycoveCity_EventScript_RivalBeachBattleSequence)
+	release
+	end
+}
+
+movement LilycoveCity_Movement_RivalApproachLeft{
+	walk_fast_down * 2
+	walk_fast_right * 2
+	walk_fast_down * 3
+}
+
+movement LilycoveCity_Movement_RivalApproachRight{
+	walk_fast_down * 2
+	walk_fast_right * 3
+	walk_fast_down * 3
+}
+
+text LilycoveCity_Text_RivalGreeting{
+	format("{RIVAL}: You weren't going to leave without saying anything, were you {PLAYER}?\nThe last two gym badges are on islands to the East, so I'm not surprised you're going to Surf away.\pI've been searching for all kinds of rare and mysterious Pokémon lately. Let me show you what I've found before you go!")
+}
+
+text LilycoveCity_Text_MayShoppingLetsBattle{
+	format("{RIVAL}: Oh, hey?\n{PLAYER}, are you shopping, or leaving?\pI've found some even-rarer Pokémon lately, and I'm doing my best to train them, too.\pWant to see them? It'll be good practice for me, too!")
+}
+
+text LilycoveCity_Text_BrendanShoppingLetsBattle{
+	format("{RIVAL}: Oh, hey, it's {PLAYER}.\NIt's been a while.\pWant to have a battle to see the cool, ultra-rare Pokémon I found?")
+}
+
+text LilycoveCity_Text_RivalGoingBackToLittleroot {
+	format("{RIVAL}: Wow. Thanks, {PLAYER}. This helped me make up my mind.\pI've really enjoyed searching high and low for special Pokémon, but I think it's time to go home.\pI don't have the same love for battling you do, and I think my dad will be really excited to see my Pokédex.\pI hope you have fun on your journey, {PLAYER}.\pSee you later!")
 }

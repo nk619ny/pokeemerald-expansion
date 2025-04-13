@@ -32245,7 +32245,7 @@ F_TRAINER_FEMALE |
 #line 13320
             .ability = ABILITY_DROUGHT,
 #line 13321
-            .lvl = 4,
+            .lvl = 6,
 #line 13322
             .ball = ITEM_MASTER_BALL,
 #line 13325

@@ -45,6 +45,25 @@ MagmaHideout_4F_EventScript_Maxie::
 	special ShakeCamera
 	waitstate
 	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
+	applymovement LOCALID_MAXIE, Common_Movement_FaceLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	waitmovement 0
+	msgbox MagmaHideout_4F_Text_MaxieAdmirable, MSGBOX_DEFAULT
+	closemessage
+	
+	setvar VAR_RESULT, 1
+	playse SE_M_DETECT
+	dofieldeffectsparkle 18, 42, 0
+	waitfieldeffect FLDEFF_SPARKLE
+	setvar VAR_RESULT, 0
+	playfanfare MUS_AWAKEN_LEGEND
+	playse SE_ORB
+	special DoOrbEffect
+	delay 150
+	special FadeOutOrbEffect
+	waitstate
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
 
 	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonExit
 	waitmovement 0
@@ -52,29 +71,34 @@ MagmaHideout_4F_EventScript_Maxie::
 	delay 4
 	setvar VAR_0x8004, 2  @ vertical pan
 	setvar VAR_0x8005, 2  @ horizontal pan
-	setvar VAR_0x8006, 8  @ num shakes
+	setvar VAR_0x8006, 16  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
 	delay 30
 	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
 	waitmovement 0
-	msgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT
+
+	call MagmaHideout_4F_EventScript_TabithaReport
+
+	msgbox MagmaHideout_4F_Text_MaxieMiscalculated, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	delay 30
-	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
-	waitmovement 0
-	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
-	closemessage
+	//applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
+	//waitmovement 0
+	//call MagmaHideout_4F_EventScript_TabithaReport
+	//msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
+	//closemessage
 	//trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
-	msgbox MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT
+	msgbox MagmaHideout_4F_Text_MaxieNewDeparture, MSGBOX_DEFAULT
 	closemessage
 	//clearflag FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN
 	//clearflag FLAG_HIDE_SLATEPORT_CITY_GABBY_AND_TY
 	//setvar VAR_SLATEPORT_CITY_STATE, 1
 	setflag FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT
+	setflag FLAG_ENABLE_STEVEN_CALL_MAGMA_HIDEOUT
+	setvar VAR_STEVEN_MAGMA_CALL_STEP_COUNTER, 0
 	//setvar VAR_SLATEPORT_HARBOR_STATE, 1
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_MAXIE
@@ -84,6 +108,7 @@ MagmaHideout_4F_EventScript_Maxie::
 	removeobject LOCALID_TABITHA
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 	fadescreen FADE_FROM_BLACK
+	
 	call Common_EventScript_CheckIfHideoutsComplete
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
@@ -103,10 +128,12 @@ MagmaHideout_4F_Movement_GroudonApproach:
 	delay_16
 	step_end
 
+/*
 MagmaHideout_4F_Movement_GroudonExit:
 	slide_up
 	slide_up
 	step_end
+	*/
 
 MagmaHideout_4F_Movement_MaxieLookAround:
 	face_left
@@ -209,10 +236,10 @@ MagmaHideout_4F_Text_MaxieAwakenGroudon:
 	.string "Show me the full extent of your power!$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "MAXIE: GROUDON!\n"
+	.string "MAXIE: Groudon!\n"
 	.string "What's wrong?\p"
-	.string "Wasn't the BLUE ORB the key?\p"
-	.string "GROUDON!\n"
+	.string "Wasn't the Red Orb the key?\p"
+	.string "Groudon!\n"
 	.string "Where have you gone…$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
@@ -280,11 +307,11 @@ script MagmaHideout_4F_EventScript_StevenCallOutro {
 }
 
 text MagmaHideout_4F_Text_StevenSecondCall_BothHideoutsDone {
-	format("… … … … … …\n… … … … … Beep!\pSteven: I could feel the earth\Nrumbling from here… it seems Maxie successfully revived Groudon.\p{PLAYER}, you defeated him? But\Nhe couldn't control Groudon, and it escaped?\NWho knows what effects\Nthis could have…\pI'm heading home to Mossdeep to do further research. You should meet\Nme there.\p… … … … … …\n… … … … … Click!")
+	format("… … … … … …\n… … … … … Beep!\pSteven: I could feel the earth\Nrumbling from here… it seems Maxie successfully revived Groudon.\p{PLAYER}, you defeated him? But\Nhe couldn't control Groudon, and it escaped?\NWho knows what effects this\Ncould have…\pI'm heading home to Mossdeep to do further research. You should meet\Nme there.\p… … … … … …\n… … … … … Click!")
 }
 
 text MagmaHideout_4F_Text_StevenSecondCall_AquaRemaining {
-	format("… … … … … …\n… … … … … Beep!\pSteven: I could feel the earth\Nrumbling from here… it seems Maxie successfully revived Groudon.\p{PLAYER}, you defeated him? But\Nhe couldn't control Groudon, and it escaped?\NWho knows what effects\Nthis could have…\pYou should hurry to Team Aqua's\Nhideout east of Lilycove.\pWe can still stop Archie before\Nthis gets any worse.\p… … … … … …\n… … … … … Click!")
+	format("… … … … … …\n… … … … … Beep!\pSteven: I could feel the earth\Nrumbling from here… it seems Maxie successfully revived Groudon.\p{PLAYER}, you defeated him? But\Nhe couldn't control Groudon, and it escaped?\NWho knows what effects this\Ncould have…\pYou should hurry to Team Aqua's\Nhideout east of Lilycove.\pWe can still stop Archie before\Nthis gets any worse.\p… … … … … …\n… … … … … Click!")
 }
 
 text MagmaHideout_4F_Text_MattIntro {
@@ -299,3 +326,39 @@ text MagmaHideout_4F_Text_OurBossGotThroughHisPreparations{
 	format("Ah… hah… Archie, man, it's all on you now…")
 }
 
+script MagmaHideout_4F_EventScript_TabithaReport {
+	lock
+	setobjectxyperm(LOCALID_TABITHA, 7, 21)
+	addobject(LOCALID_TABITHA)
+	applymovement(LOCALID_TABITHA, MagmaHideout_4F_EventScript_TabithaApproach)
+	applymovement(LOCALID_MAXIE, Common_Movement_FaceLeft)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement(0)
+	msgbox(MagmaHideout_4F_Text_TabithaReport, MSGBOX_DEFAULT)
+	closemessage
+	return
+}
+
+movement MagmaHideout_4F_EventScript_TabithaApproach {
+	walk_fast_right * 6
+}
+
+text MagmaHideout_4F_Text_TabithaReport {
+	format("Tabitha: Maxie, sir!\pWe're getting reports from outside that the intensity of the sun has become nearly unbearable outside! Earthquakes and fissures are occurring all over Hoenn!\pWhat is happening!?")
+}
+
+text MagmaHideout_4F_Text_MaxieMiscalculated {
+	format("Maxie: Is it possible… have I miscalculated…?\pNone of our simulations projected this possibility…\pThis is a serious risk to our base, and our safety, and it has only just awoken!")
+}
+
+text MagmaHideout_4F_Text_MaxieAdmirable {
+	format("Maxie: Splendid, truly.\pObviously you are a fool, but there is something admirable about your ignorance.\pYou believe until the very end that humanity, Pokémon, and nature can coexist as-is.\pYou reject all science and reason, and struggle with every fiber of yourself in futility.\pAnd yet, futile it remains. For now, Groudon-")
+}
+
+text MagmaHideout_4F_Text_MaxieNewDeparture {
+	format("Maxie: We need to evacuate immediately.\pAnd we need to get to the bottom of this… urgently.")
+}
+
+movement MagmaHideout_4F_Movement_GroudonExit {
+	walk_up * 8
+}

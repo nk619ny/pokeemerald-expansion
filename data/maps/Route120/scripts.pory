@@ -406,12 +406,14 @@ Route120_Text_StevenGiveDevonScope:
 	.string "Who knows, there may be other\n"
 	.string "concealed POKéMON.$"
 
+/*
 Route120_Text_StevenGoodbye:
 	.string "STEVEN: {PLAYER}{KUN}.\p"
 	.string "I enjoy seeing POKéMON and TRAINERS\n"
 	.string "who strive together.\p"
 	.string "I think you're doing great.\p"
 	.string "Well, let's meet again somewhere.$"
+*/
 
 Kecleon_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"
@@ -466,4 +468,8 @@ script Route120_EventScript_MoveKecleonDown{
 script Route120_EventScript_ResetKecleonVar{
 	setvar(TempVar_KecleonPosition, 0)
 	end
+}
+
+text Route120_Text_StevenGoodbye{
+	format("STEVEN: I think you're doing great, {PLAYER}{KUN}.\p In fact, I could use your help.\pI just got word that Team Magma and Team Aqua may be planning something nefarious at Mt. Pyre.\pI'm headed there now to investigate, but I could always use a talented, trustworthy Trainer's help.\pHopefully I'll see you there.")
 }

@@ -815,96 +815,113 @@ Route120_Text_StevenGiveDevonScope:
 # 408 "data/maps/Route120/scripts.pory"
 
 # 409 "data/maps/Route120/scripts.pory"
-Route120_Text_StevenGoodbye:
+/*
 # 410 "data/maps/Route120/scripts.pory"
-	.string "STEVEN: {PLAYER}{KUN}.\p"
+Route120_Text_StevenGoodbye:
 # 411 "data/maps/Route120/scripts.pory"
-	.string "I enjoy seeing POKéMON and TRAINERS\n"
+	.string "STEVEN: {PLAYER}{KUN}.\p"
 # 412 "data/maps/Route120/scripts.pory"
-	.string "who strive together.\p"
+	.string "I enjoy seeing POKéMON and TRAINERS\n"
 # 413 "data/maps/Route120/scripts.pory"
-	.string "I think you're doing great.\p"
+	.string "who strive together.\p"
 # 414 "data/maps/Route120/scripts.pory"
-	.string "Well, let's meet again somewhere.$"
+	.string "I think you're doing great.\p"
 # 415 "data/maps/Route120/scripts.pory"
-
+	.string "Well, let's meet again somewhere.$"
 # 416 "data/maps/Route120/scripts.pory"
-Kecleon_Text_SomethingUnseeable:
+*/
 # 417 "data/maps/Route120/scripts.pory"
-	.string "Something unseeable is in the way.$"
+
 # 418 "data/maps/Route120/scripts.pory"
-
+Kecleon_Text_SomethingUnseeable:
 # 419 "data/maps/Route120/scripts.pory"
-Kecleon_Text_WantToUseDevonScope:
+	.string "Something unseeable is in the way.$"
 # 420 "data/maps/Route120/scripts.pory"
-	.string "Something unseeable is in the way.\p"
+
 # 421 "data/maps/Route120/scripts.pory"
-	.string "Want to use the DEVON SCOPE?$"
+Kecleon_Text_WantToUseDevonScope:
 # 422 "data/maps/Route120/scripts.pory"
-
+	.string "Something unseeable is in the way.\p"
 # 423 "data/maps/Route120/scripts.pory"
-Kecleon_Text_UseDevonScopeMonAttacked:
+	.string "Want to use the DEVON SCOPE?$"
 # 424 "data/maps/Route120/scripts.pory"
-	.string "{PLAYER} used the DEVON SCOPE.\p"
+
 # 425 "data/maps/Route120/scripts.pory"
-	.string "An invisible POKéMON became completely\n"
+Kecleon_Text_UseDevonScopeMonAttacked:
 # 426 "data/maps/Route120/scripts.pory"
-	.string "visible!\p"
+	.string "{PLAYER} used the DEVON SCOPE.\p"
 # 427 "data/maps/Route120/scripts.pory"
-	.string "The startled POKéMON attacked!$"
+	.string "An invisible POKéMON became completely\n"
 # 428 "data/maps/Route120/scripts.pory"
-
+	.string "visible!\p"
 # 429 "data/maps/Route120/scripts.pory"
-Route120_Text_RouteSignFortree:
+	.string "The startled POKéMON attacked!$"
 # 430 "data/maps/Route120/scripts.pory"
-	.string "ROUTE 120\n"
-# 431 "data/maps/Route120/scripts.pory"
-	.string "{LEFT_ARROW} FORTREE CITY$"
-# 432 "data/maps/Route120/scripts.pory"
 
+# 431 "data/maps/Route120/scripts.pory"
+Route120_Text_RouteSignFortree:
+# 432 "data/maps/Route120/scripts.pory"
+	.string "ROUTE 120\n"
 # 433 "data/maps/Route120/scripts.pory"
-Route120_Text_RouteSign121:
+	.string "{LEFT_ARROW} FORTREE CITY$"
 # 434 "data/maps/Route120/scripts.pory"
-	.string "{RIGHT_ARROW} ROUTE 121\n"
+
 # 435 "data/maps/Route120/scripts.pory"
+Route120_Text_RouteSign121:
+# 436 "data/maps/Route120/scripts.pory"
+	.string "{RIGHT_ARROW} ROUTE 121\n"
+# 437 "data/maps/Route120/scripts.pory"
 	.string "{LEFT_ARROW} ROUTE 120$"
 
 Route120_EventScript_MoveKecleonUp::
-# 441 "data/maps/Route120/scripts.pory"
+# 443 "data/maps/Route120/scripts.pory"
 	goto_if_set FLAG_DEFEATED_FORTREE_GYM, Route120_EventScript_MoveKecleonUp_1
-# 446 "data/maps/Route120/scripts.pory"
-	setobjectxy LOCALID_BRIDGE_KECLEON_SHADOW, 12, 16
-# 447 "data/maps/Route120/scripts.pory"
-	setvar VAR_TEMP_3, 1
 # 448 "data/maps/Route120/scripts.pory"
+	setobjectxy LOCALID_BRIDGE_KECLEON_SHADOW, 12, 16
+# 449 "data/maps/Route120/scripts.pory"
+	setvar VAR_TEMP_3, 1
+# 450 "data/maps/Route120/scripts.pory"
 	applymovement LOCALID_BRIDGE_KECLEON_SHADOW, Common_Movement_WalkUpFastSafeKecleon
 	end
 
 Route120_EventScript_MoveKecleonUp_1:
-# 442 "data/maps/Route120/scripts.pory"
+# 444 "data/maps/Route120/scripts.pory"
 	setvar VAR_TEMP_3, 5
 	end
 
 
 Route120_EventScript_MoveKecleonDown::
-# 454 "data/maps/Route120/scripts.pory"
+# 456 "data/maps/Route120/scripts.pory"
 	goto_if_set FLAG_DEFEATED_FORTREE_GYM, Route120_EventScript_MoveKecleonDown_1
-# 459 "data/maps/Route120/scripts.pory"
-	setobjectxy LOCALID_BRIDGE_KECLEON_SHADOW, 12, 15
-# 460 "data/maps/Route120/scripts.pory"
-	setvar VAR_TEMP_3, 0
 # 461 "data/maps/Route120/scripts.pory"
+	setobjectxy LOCALID_BRIDGE_KECLEON_SHADOW, 12, 15
+# 462 "data/maps/Route120/scripts.pory"
+	setvar VAR_TEMP_3, 0
+# 463 "data/maps/Route120/scripts.pory"
 	applymovement LOCALID_BRIDGE_KECLEON_SHADOW, Common_Movement_WalkDownFastSafeKecleon
 	end
 
 Route120_EventScript_MoveKecleonDown_1:
-# 455 "data/maps/Route120/scripts.pory"
+# 457 "data/maps/Route120/scripts.pory"
 	setvar VAR_TEMP_3, 5
 	end
 
 
 Route120_EventScript_ResetKecleonVar::
-# 467 "data/maps/Route120/scripts.pory"
+# 469 "data/maps/Route120/scripts.pory"
 	setvar VAR_TEMP_3, 0
 	end
 
+
+Route120_Text_StevenGoodbye::
+# 473 "data/maps/Route120/scripts.pory"
+	.string "STEVEN: I think you're doing great,\n"
+	.string "{PLAYER}{KUN}.\p"
+	.string "In fact, I could use your help.\p"
+	.string "I just got word that Team Magma and\n"
+	.string "Team Aqua may be planning something\l"
+	.string "nefarious at Mt. Pyre.\p"
+	.string "I'm headed there now to investigate,\n"
+	.string "but I could always use a talented,\l"
+	.string "trustworthy Trainer's help.\p"
+	.string "Hopefully I'll see you there.$"

@@ -11321,12 +11321,14 @@ static void Cmd_various(void)
             gBattleWeather &= ~B_WEATHER_SUN_PRIMAL;
             PrepareStringBattle(STRINGID_EXTREMESUNLIGHTFADED, battler);
             gBattleCommunication[MSG_DISPLAY] = 1;
+            TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN, TRUE);
         }
         else if (gBattleWeather & B_WEATHER_RAIN_PRIMAL && !shouldNotClear)
         {
             gBattleWeather &= ~B_WEATHER_RAIN_PRIMAL;
             PrepareStringBattle(STRINGID_HEAVYRAINLIFTED, battler);
             gBattleCommunication[MSG_DISPLAY] = 1;
+            TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, TRUE);
         }
         else if (gBattleWeather & B_WEATHER_STRONG_WINDS && !shouldNotClear)
         {

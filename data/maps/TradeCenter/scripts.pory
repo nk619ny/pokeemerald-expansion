@@ -22,6 +22,7 @@ script Common_EventScript_SetStartingFlagStates {
 	setflag(FLAG_HIDE_TRAINER_HILL_AUDIENCE)
 	setflag(FLAG_HIDE_MAUVILLE_CITY_WALLY)
 	setflag(FLAG_HIDE_ROUTE_120_STEVEN)
+	setflag(FLAG_HIDE_LILYCOVE_CITY_RIVAL)
 	return
 }
 
@@ -106,10 +107,11 @@ script Common_EventScript_SetFlashTest {
 script Common_EventScript_CheckIfHideoutsComplete {
 	if(flag(FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE) && flag(FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT)){
 		setflag(FLAG_BOTH_HIDEOUTS_COMPLETE)
-		setvar(VAR_LEVEL_CAP,66)
+		setvar(VAR_LEVEL_CAP,68)
+		clearflag(FLAG_HIDE_LILYCOVE_CITY_RIVAL)
 	}
 	else{
-		setvar(VAR_LEVEL_CAP,68)
+		setvar(VAR_LEVEL_CAP,66)
 	}
 	return
 }
