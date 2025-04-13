@@ -143,7 +143,7 @@ SlateportCity_Harbor_EventScript_AquaEscapeScene::
 # 72 "data/maps/SlateportCity_Harbor/scripts.pory"
 	setvar VAR_SLATEPORT_HARBOR_STATE, 2
 # 73 "data/maps/SlateportCity_Harbor/scripts.pory"
-	setflag FLAG_MET_TEAM_AQUA_HARBOR
+	//setflag FLAG_MET_TEAM_AQUA_HARBOR
 # 74 "data/maps/SlateportCity_Harbor/scripts.pory"
 	setflag FLAG_HIDE_LILYCOVE_MOTEL_SCOTT
 # 75 "data/maps/SlateportCity_Harbor/scripts.pory"

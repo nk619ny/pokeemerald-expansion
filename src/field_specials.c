@@ -395,6 +395,55 @@ bool32 ShouldDoWallyCall(void)
     return TRUE;
 }
 
+bool32 ShouldDoStevenAquaCall(void)
+{
+    if (FlagGet(FLAG_ENABLE_STEVEN_CALL_AQUA_HIDEOUT))
+    {
+        switch (gMapHeader.mapType)
+        {
+        case MAP_TYPE_TOWN:
+        case MAP_TYPE_CITY:
+        case MAP_TYPE_ROUTE:
+        case MAP_TYPE_OCEAN_ROUTE:
+            if (++(*GetVarPointer(VAR_STEVEN_AQUA_CALL_STEP_COUNTER)) < 10)
+                return FALSE;
+            break;
+        default:
+            return FALSE;
+        }
+    }
+    else
+    {
+        return FALSE;
+    }
+
+    return TRUE;
+}
+
+bool32 ShouldDoStevenMagmaCall(void)
+{
+    if (FlagGet(FLAG_ENABLE_STEVEN_CALL_MAGMA_HIDEOUT))
+    {
+        switch (gMapHeader.mapType)
+        {
+        case MAP_TYPE_TOWN:
+        case MAP_TYPE_CITY:
+        case MAP_TYPE_ROUTE:
+        case MAP_TYPE_OCEAN_ROUTE:
+            if (++(*GetVarPointer(VAR_STEVEN_MAGMA_CALL_STEP_COUNTER)) < 15)
+                return FALSE;
+            break;
+        default:
+            return FALSE;
+        }
+    }
+    else
+    {
+        return FALSE;
+    }
+
+    return TRUE;
+}
 bool32 ShouldDoScottFortreeCall(void)
 {
     if (FlagGet(FLAG_SCOTT_CALL_FORTREE_GYM))

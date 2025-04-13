@@ -59,7 +59,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	removeobject LOCALID_GRUNT_2
 	removeobject LOCALID_GRUNT_3
 	removeobject LOCALID_GRUNT_4
-	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE
+	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE_MAXIE
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
 	fadedefaultbgm
 	fadescreen FADE_FROM_BLACK
@@ -637,7 +637,9 @@ script MtPyre_Summit_EventScript_LeftTrigger{
 	if(!flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)){
 		applymovement(LOCALID_STEVEN, Common_Movement_FaceLeft)
 		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
-		goto(MtPyre_Summit_EventScript_StevenTrigger)
+		waitmovement(0)
+		//delay(20)
+		goto(MtPyre_Summit_EventScript_StevenMultiIntro)
 	}
 	else{
 		return
@@ -649,7 +651,9 @@ script MtPyre_Summit_EventScript_RightTrigger{
 	if(!flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)){
 		applymovement(LOCALID_STEVEN, Common_Movement_FaceRight)
 		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
-		goto(MtPyre_Summit_EventScript_StevenTrigger)
+		waitmovement(0)
+		//delay(20)
+		goto(MtPyre_Summit_EventScript_StevenMultiIntro)
 	}
 	else{
 		return
@@ -714,7 +718,7 @@ script MtPyre_Summit_EventScript_MultiBattlePositioning3{
 
 script MtPyre_Summit_EventScript_MultiBattlePositioning4{
     if(var(TempVar_PlayerPosition) == 0){      
-            applymovement(LOCALID_STEVEN, MtPyre_Summit_Movement_StevenMovesToMaxie)
+			applymovement(LOCALID_STEVEN, MtPyre_Summit_Movement_StevenMovesToMaxie)
             applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUpOneStep)
             waitmovement(0)
     }
@@ -752,7 +756,6 @@ movement MtPyre_Summit_Movement_StevenMovesToMaxie{
 
 script MtPyre_Summit_EventScript_StevenMultiIntro{
     lock
-    faceplayer
     applymovement(LOCALID_STEVEN, Common_Movement_ExclamationMark)
     waitmovement(0)
     msgbox(MtPyre_Summit_Text_StevenNeedHelp, MSGBOX_YESNO)
@@ -772,7 +775,8 @@ script MtPyre_Summit_EventScript_StevenMultiIntro{
 }
 
 script MtPyre_Summit_EventScript_Steven{
-	clearflag(FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE)
+	lock
+	faceplayer
 	if(!flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)){
 		goto(MtPyre_Summit_EventScript_StevenMultiIntro)
 	}
@@ -795,6 +799,8 @@ script MtPyre_Summit_EventScript_MtPyreMultiBattle{
     msgbox(MtPyre_Summit_Text_ArchieBeforeBattle, MSGBOX_DEFAULT)
     waitmessage
     call(MtPyre_Summit_EventScript_MultiBattlePositioning4)
+	waitmovement(0)
+	delay(20)
     multi_fixed_2_vs_2(TRAINER_MAXIE_MT_PYRE, MtPyre_Summit_Text_MaxieDefeated, TRAINER_ARCHIE_MT_PYRE, MtPyre_Summit_Text_ArchieDefeated, PARTNER_STEVEN)
     specialvar(VAR_RESULT,GetBattleOutcome)
     if((var(VAR_RESULT) == B_OUTCOME_WON)){
@@ -822,9 +828,9 @@ script MtPyre_Summit_EventScript_MtPyreVictory {
 	removeobject(LOCALID_MAXIE)
 	removeobject(LOCALID_ARCHIE_MON)
 	removeobject(LOCALID_MAXIE_MON)
-	setflag(FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE)
+	//setflag(FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE)
 	setflag(FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA)
-	setflag(FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE)
+	setflag(FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE_MAXIE)
 	removeobject(4)
 	removeobject(5)
 	removeobject(6)
@@ -850,10 +856,19 @@ script MtPyre_Summit_EventScript_MtPyreVictory {
 	giveitem(ITEM_MAGMA_EMBLEM)
 	setflag(FLAG_RECEIVED_RED_OR_BLUE_ORB)
 	setflag(FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD)
+	setflag(FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNTS_BLOCKING_ENTRANCE)
 	msgbox(format("Steven: We need to hurry. Good luck."))
 	waitmessage
 	releaseall
 	end
+}
+
+script Test_EventScript_TestCall {
+	lock
+	setvar(VAR_TEMP_7,1)
+	pokenavcall(MagmaHideout_Text_StevenCall)
+	waitmessage
+	releaseall
 }
 
 
@@ -904,4 +919,8 @@ text MtPyre_Summit_Text_StevenPostBattle{
 }
 text MtPyre_Summit_Text_StevenGoToHideouts {
 	format("Steven: You should try to infiltrate the Team Magma and Team Aqua hideouts.\pTeam Magma's Hideout is in the Jagged Pass, South of Mt. Chimney. Team Aqua's Hideout is East of Lilycove, accessible by Surfing.")
+}
+
+text MagmaHideout_Text_StevenCall {
+	format("Steven: We've been trying to reach you about your car's extended warranty. Steven: We've been trying to reach you about your car's extended warranty.")
 }

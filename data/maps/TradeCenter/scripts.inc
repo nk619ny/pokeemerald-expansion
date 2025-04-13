@@ -193,26 +193,38 @@ Common_EventScript_SetFlashTest_3:
 	goto Common_EventScript_SetFlashTest_1
 
 
-MauvilleCity_EventScript_Temporary::
+Common_EventScript_CheckIfHideoutsComplete::
+# 107 "data/maps/TradeCenter/scripts.pory"
+	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, Common_EventScript_CheckIfHideoutsComplete_4
+Common_EventScript_CheckIfHideoutsComplete_3:
+# 112 "data/maps/TradeCenter/scripts.pory"
+	setvar VAR_LEVEL_CAP, 68
+Common_EventScript_CheckIfHideoutsComplete_1:
+	return
+
+Common_EventScript_CheckIfHideoutsComplete_2:
 # 108 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_BOTH_HIDEOUTS_COMPLETE
+# 109 "data/maps/TradeCenter/scripts.pory"
+	setvar VAR_LEVEL_CAP, 66
+	goto Common_EventScript_CheckIfHideoutsComplete_1
+
+Common_EventScript_CheckIfHideoutsComplete_4:
+# 107 "data/maps/TradeCenter/scripts.pory"
+	goto_if_set FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, Common_EventScript_CheckIfHideoutsComplete_2
+	goto Common_EventScript_CheckIfHideoutsComplete_3
+
+
+MauvilleCity_EventScript_Temporary::
+# 119 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 114 "data/maps/TradeCenter/scripts.pory"
+# 125 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_POKEMON_BOX_LINK
-# 116 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_MENU_PC_CONFIG
-# 118 "data/maps/TradeCenter/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_LEVEL_CAP
-# 120 "data/maps/TradeCenter/scripts.pory"
-	msgbox MauvilleCity_EventScript_Temporary_Text_0
-# 129 "data/maps/TradeCenter/scripts.pory"
-	givemon SPECIES_CYNDAQUIL, 24, , , , 2, , , , , , , , , , , , , , MOVE_SEARING_SUNRAZE_SMASH, MOVE_SUNSTEEL_STRIKE, MOVE_BITTER_MALICE, MOVE_PURIFY
-# 130 "data/maps/TradeCenter/scripts.pory"
-	givemon SPECIES_CYNDAQUIL_HISUI, 25, , , , 1, , , , , , , , , , , , , , MOVE_INFERNAL_PARADE, MOVE_COMBAT_TORQUE, MOVE_THUNDERCLAP, MOVE_NIGHT_DAZE
-# 140 "data/maps/TradeCenter/scripts.pory"
+# 150 "data/maps/TradeCenter/scripts.pory"
 	waitmessage
-# 141 "data/maps/TradeCenter/scripts.pory"
+# 151 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 142 "data/maps/TradeCenter/scripts.pory"
+# 152 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
@@ -225,10 +237,6 @@ Common_EventScript_LevelCapUpdate_Text_0:
 Common_EventScript_SetFlashTest_Text_0:
 # 95 "data/maps/TradeCenter/scripts.pory"
 	.string "Do you have flash?$"
-
-MauvilleCity_EventScript_Temporary_Text_0:
-# 120 "data/maps/TradeCenter/scripts.pory"
-	.string "level cap is {STR_VAR_1}$"
 
 Common_Text_CaveIsDarkUseFlash::
 # 61 "data/maps/TradeCenter/scripts.pory"

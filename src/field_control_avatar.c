@@ -669,6 +669,16 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(MauvilleCity_EventScript_RegisterWallyCall);
             return TRUE;
         }
+        if (ShouldDoStevenAquaCall() == TRUE)
+        {
+            ScriptContext_SetupScript(AquaHideout_B2F_EventScript_StevenCallOutro);
+            return TRUE;
+        }
+        if (ShouldDoStevenMagmaCall() == TRUE)
+        {
+            ScriptContext_SetupScript(MagmaHideout_4F_EventScript_StevenCallOutro);
+            return TRUE;
+        }
         if (ShouldDoScottFortreeCall() == TRUE)
         {
             ScriptContext_SetupScript(Route119_EventScript_ScottWonAtFortreeGymCall);

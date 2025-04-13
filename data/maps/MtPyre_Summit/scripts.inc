@@ -121,7 +121,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 # 61 "data/maps/MtPyre_Summit/scripts.pory"
 	removeobject LOCALID_GRUNT_4
 # 62 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE
+	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE_MAXIE
 # 63 "data/maps/MtPyre_Summit/scripts.pory"
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
 # 64 "data/maps/MtPyre_Summit/scripts.pory"
@@ -1270,389 +1270,411 @@ MtPyre_Summit_EventScript_LeftTrigger_1:
 # 639 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 # 640 "data/maps/MtPyre_Summit/scripts.pory"
-	goto MtPyre_Summit_EventScript_StevenTrigger
+	waitmovement 0
+# 642 "data/maps/MtPyre_Summit/scripts.pory"
+	goto MtPyre_Summit_EventScript_StevenMultiIntro
 	return
 
 
 MtPyre_Summit_EventScript_RightTrigger::
-# 648 "data/maps/MtPyre_Summit/scripts.pory"
+# 650 "data/maps/MtPyre_Summit/scripts.pory"
 	setvar VAR_TEMP_4, 2
-# 649 "data/maps/MtPyre_Summit/scripts.pory"
+# 651 "data/maps/MtPyre_Summit/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_RED_OR_BLUE_ORB, MtPyre_Summit_EventScript_RightTrigger_1
 	return
 
 MtPyre_Summit_EventScript_RightTrigger_1:
-# 650 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_STEVEN, Common_Movement_FaceRight
-# 651 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 # 652 "data/maps/MtPyre_Summit/scripts.pory"
-	goto MtPyre_Summit_EventScript_StevenTrigger
+	applymovement LOCALID_STEVEN, Common_Movement_FaceRight
+# 653 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 654 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 656 "data/maps/MtPyre_Summit/scripts.pory"
+	goto MtPyre_Summit_EventScript_StevenMultiIntro
 	return
 
 
 MtPyre_Summit_EventScript_StevenTrigger::
-# 660 "data/maps/MtPyre_Summit/scripts.pory"
-	lock
-# 661 "data/maps/MtPyre_Summit/scripts.pory"
-	call MtPyre_Summit_EventScript_Steven
-# 662 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep
-# 663 "data/maps/MtPyre_Summit/scripts.pory"
-	setvar VAR_TEMP_4, 0
 # 664 "data/maps/MtPyre_Summit/scripts.pory"
+	lock
+# 665 "data/maps/MtPyre_Summit/scripts.pory"
+	call MtPyre_Summit_EventScript_Steven
+# 666 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep
+# 667 "data/maps/MtPyre_Summit/scripts.pory"
+	setvar VAR_TEMP_4, 0
+# 668 "data/maps/MtPyre_Summit/scripts.pory"
 	releaseall
 	end
 
 
 MtPyre_Summit_EventScript_MultiBattlePositioning1::
-# 669 "data/maps/MtPyre_Summit/scripts.pory"
+# 673 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUpOneStep
-# 670 "data/maps/MtPyre_Summit/scripts.pory"
+# 674 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_STEVEN, Common_Movement_WalkUpOneStep
-# 671 "data/maps/MtPyre_Summit/scripts.pory"
+# 675 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmovement 0
 	return
 
 
 MtPyre_Summit_EventScript_MultiBattlePositioning2::
-# 677 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject LOCALID_MAXIE_MON
-# 678 "data/maps/MtPyre_Summit/scripts.pory"
-	switch VAR_TEMP_4
-# 679 "data/maps/MtPyre_Summit/scripts.pory"
-	case 0, MtPyre_Summit_EventScript_MultiBattlePositioning2_3
 # 681 "data/maps/MtPyre_Summit/scripts.pory"
-	case 1, MtPyre_Summit_EventScript_MultiBattlePositioning2_4
+	removeobject LOCALID_MAXIE_MON
+# 682 "data/maps/MtPyre_Summit/scripts.pory"
+	switch VAR_TEMP_4
 # 683 "data/maps/MtPyre_Summit/scripts.pory"
+	case 0, MtPyre_Summit_EventScript_MultiBattlePositioning2_3
+# 685 "data/maps/MtPyre_Summit/scripts.pory"
+	case 1, MtPyre_Summit_EventScript_MultiBattlePositioning2_4
+# 687 "data/maps/MtPyre_Summit/scripts.pory"
 	case 2, MtPyre_Summit_EventScript_MultiBattlePositioning2_5
 	return
 
 MtPyre_Summit_EventScript_MultiBattlePositioning2_1:
-# 688 "data/maps/MtPyre_Summit/scripts.pory"
+# 692 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmovement 0
-# 689 "data/maps/MtPyre_Summit/scripts.pory"
+# 693 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_MAXIE, Common_Movement_FaceDown
-# 690 "data/maps/MtPyre_Summit/scripts.pory"
+# 694 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MultiBattlePositioning2_3:
-# 680 "data/maps/MtPyre_Summit/scripts.pory"
+# 684 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieMovesTwoLeft
 	goto MtPyre_Summit_EventScript_MultiBattlePositioning2_1
 
 MtPyre_Summit_EventScript_MultiBattlePositioning2_4:
-# 682 "data/maps/MtPyre_Summit/scripts.pory"
+# 686 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieMovesThreeLeft
 	goto MtPyre_Summit_EventScript_MultiBattlePositioning2_1
 
 MtPyre_Summit_EventScript_MultiBattlePositioning2_5:
-# 684 "data/maps/MtPyre_Summit/scripts.pory"
+# 688 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieMovesTwoLeft
 	goto MtPyre_Summit_EventScript_MultiBattlePositioning2_1
 
 
 MtPyre_Summit_EventScript_MultiBattlePositioning3::
-# 695 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject LOCALID_ARCHIE_MON
-# 696 "data/maps/MtPyre_Summit/scripts.pory"
-	switch VAR_TEMP_4
-# 697 "data/maps/MtPyre_Summit/scripts.pory"
-	case 0, MtPyre_Summit_EventScript_MultiBattlePositioning3_3
 # 699 "data/maps/MtPyre_Summit/scripts.pory"
-	case 1, MtPyre_Summit_EventScript_MultiBattlePositioning3_4
+	removeobject LOCALID_ARCHIE_MON
+# 700 "data/maps/MtPyre_Summit/scripts.pory"
+	switch VAR_TEMP_4
 # 701 "data/maps/MtPyre_Summit/scripts.pory"
+	case 0, MtPyre_Summit_EventScript_MultiBattlePositioning3_3
+# 703 "data/maps/MtPyre_Summit/scripts.pory"
+	case 1, MtPyre_Summit_EventScript_MultiBattlePositioning3_4
+# 705 "data/maps/MtPyre_Summit/scripts.pory"
 	case 2, MtPyre_Summit_EventScript_MultiBattlePositioning3_5
 	return
 
 MtPyre_Summit_EventScript_MultiBattlePositioning3_1:
-# 706 "data/maps/MtPyre_Summit/scripts.pory"
+# 710 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MultiBattlePositioning3_3:
-# 698 "data/maps/MtPyre_Summit/scripts.pory"
+# 702 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieMovesThreeRight
 	goto MtPyre_Summit_EventScript_MultiBattlePositioning3_1
 
 MtPyre_Summit_EventScript_MultiBattlePositioning3_4:
-# 700 "data/maps/MtPyre_Summit/scripts.pory"
+# 704 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieMovesTwoRight
 	goto MtPyre_Summit_EventScript_MultiBattlePositioning3_1
 
 MtPyre_Summit_EventScript_MultiBattlePositioning3_5:
-# 702 "data/maps/MtPyre_Summit/scripts.pory"
+# 706 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieMovesThreeRight
 	goto MtPyre_Summit_EventScript_MultiBattlePositioning3_1
 
 
 MtPyre_Summit_EventScript_MultiBattlePositioning4::
-# 716 "data/maps/MtPyre_Summit/scripts.pory"
+# 720 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_TEMP_4, 0
 	goto_if_eq MtPyre_Summit_EventScript_MultiBattlePositioning4_2
 MtPyre_Summit_EventScript_MultiBattlePositioning4_1:
-# 721 "data/maps/MtPyre_Summit/scripts.pory"
+# 725 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_ARCHIE, Common_Movement_FaceDown
-# 722 "data/maps/MtPyre_Summit/scripts.pory"
+# 726 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MultiBattlePositioning4_2:
-# 717 "data/maps/MtPyre_Summit/scripts.pory"
+# 721 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_STEVEN, MtPyre_Summit_Movement_StevenMovesToMaxie
-# 718 "data/maps/MtPyre_Summit/scripts.pory"
+# 722 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUpOneStep
-# 719 "data/maps/MtPyre_Summit/scripts.pory"
+# 723 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmovement 0
 	goto MtPyre_Summit_EventScript_MultiBattlePositioning4_1
 
 
-# 727 "data/maps/MtPyre_Summit/scripts.pory"
+# 731 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_Movement_ArchieMovesTwoRight:
-# 728 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_right
-# 728 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_right
-	step_end
-
 # 732 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_right
+# 732 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_right
+	step_end
+
+# 736 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_Movement_MaxieMovesTwoLeft:
-# 733 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_left
-# 733 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_left
-	step_end
-
 # 737 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_left
+# 737 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_left
+	step_end
+
+# 741 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_Movement_ArchieMovesThreeRight:
-# 738 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_right
-# 738 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_right
-# 738 "data/maps/MtPyre_Summit/scripts.pory"
-	walk_right
-	step_end
-
 # 742 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_right
+# 742 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_right
+# 742 "data/maps/MtPyre_Summit/scripts.pory"
+	walk_right
+	step_end
+
+# 746 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_Movement_MaxieMovesThreeLeft:
-# 743 "data/maps/MtPyre_Summit/scripts.pory"
+# 747 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_left
-# 743 "data/maps/MtPyre_Summit/scripts.pory"
+# 747 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_left
-# 743 "data/maps/MtPyre_Summit/scripts.pory"
+# 747 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_left
 	step_end
 
-# 747 "data/maps/MtPyre_Summit/scripts.pory"
+# 751 "data/maps/MtPyre_Summit/scripts.pory"
 MtPyre_Summit_Movement_StevenMovesToMaxie:
-# 748 "data/maps/MtPyre_Summit/scripts.pory"
+# 752 "data/maps/MtPyre_Summit/scripts.pory"
 	walk_right
-# 749 "data/maps/MtPyre_Summit/scripts.pory"
+# 753 "data/maps/MtPyre_Summit/scripts.pory"
 	face_up
 	step_end
 
 MtPyre_Summit_EventScript_StevenMultiIntro::
-# 754 "data/maps/MtPyre_Summit/scripts.pory"
-	lock
-# 755 "data/maps/MtPyre_Summit/scripts.pory"
-	faceplayer
-# 756 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_STEVEN, Common_Movement_ExclamationMark
-# 757 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
 # 758 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_StevenNeedHelp, MSGBOX_YESNO
+	lock
 # 759 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_STEVEN, Common_Movement_ExclamationMark
+# 760 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 761 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_StevenNeedHelp, MSGBOX_YESNO
+# 762 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MtPyre_Summit_EventScript_StevenMultiIntro_1
-# 763 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_StevenHurryBack, MSGBOX_DEFAULT
-# 764 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmessage
-# 765 "data/maps/MtPyre_Summit/scripts.pory"
-	closemessage
 # 766 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_STEVEN, Common_Movement_FaceOriginalDirection
+	msgbox MtPyre_Summit_Text_StevenHurryBack, MSGBOX_DEFAULT
 # 767 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep
+	waitmessage
 # 768 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
+	closemessage
 # 769 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_STEVEN, Common_Movement_FaceOriginalDirection
+# 770 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep
+# 771 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 772 "data/maps/MtPyre_Summit/scripts.pory"
 	releaseall
 	return
 
 MtPyre_Summit_EventScript_StevenMultiIntro_1:
-# 760 "data/maps/MtPyre_Summit/scripts.pory"
+# 763 "data/maps/MtPyre_Summit/scripts.pory"
 	goto MtPyre_Summit_EventScript_MtPyreMultiBattle
 	return
 
 
 MtPyre_Summit_EventScript_Steven::
-# 775 "data/maps/MtPyre_Summit/scripts.pory"
-	clearflag FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE
-# 776 "data/maps/MtPyre_Summit/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_RED_OR_BLUE_ORB, MtPyre_Summit_EventScript_Steven_2
+# 778 "data/maps/MtPyre_Summit/scripts.pory"
+	lock
+# 779 "data/maps/MtPyre_Summit/scripts.pory"
+	faceplayer
 # 780 "data/maps/MtPyre_Summit/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_RED_OR_BLUE_ORB, MtPyre_Summit_EventScript_Steven_2
+# 784 "data/maps/MtPyre_Summit/scripts.pory"
 	msgbox MtPyre_Summit_Text_StevenGoToHideouts, MSGBOX_NPC
-# 781 "data/maps/MtPyre_Summit/scripts.pory"
+# 785 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmessage
 MtPyre_Summit_EventScript_Steven_1:
-# 783 "data/maps/MtPyre_Summit/scripts.pory"
+# 787 "data/maps/MtPyre_Summit/scripts.pory"
 	releaseall
 	end
 
 MtPyre_Summit_EventScript_Steven_2:
-# 777 "data/maps/MtPyre_Summit/scripts.pory"
+# 781 "data/maps/MtPyre_Summit/scripts.pory"
 	goto MtPyre_Summit_EventScript_StevenMultiIntro
 	goto MtPyre_Summit_EventScript_Steven_1
 
 
 MtPyre_Summit_EventScript_MtPyreMultiBattle::
-# 788 "data/maps/MtPyre_Summit/scripts.pory"
-	call MtPyre_Summit_EventScript_MultiBattlePositioning1
-# 789 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_StevenStopThis, MSGBOX_DEFAULT
-# 790 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmessage
-# 791 "data/maps/MtPyre_Summit/scripts.pory"
-	call MtPyre_Summit_EventScript_MultiBattlePositioning2
 # 792 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_MaxieBeforeBattle, MSGBOX_DEFAULT
+	call MtPyre_Summit_EventScript_MultiBattlePositioning1
 # 793 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmessage
+	msgbox MtPyre_Summit_Text_StevenStopThis, MSGBOX_DEFAULT
 # 794 "data/maps/MtPyre_Summit/scripts.pory"
-	call MtPyre_Summit_EventScript_MultiBattlePositioning3
-# 795 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_ArchieBeforeBattle, MSGBOX_DEFAULT
-# 796 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmessage
+# 795 "data/maps/MtPyre_Summit/scripts.pory"
+	call MtPyre_Summit_EventScript_MultiBattlePositioning2
+# 796 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_MaxieBeforeBattle, MSGBOX_DEFAULT
 # 797 "data/maps/MtPyre_Summit/scripts.pory"
-	call MtPyre_Summit_EventScript_MultiBattlePositioning4
+	waitmessage
 # 798 "data/maps/MtPyre_Summit/scripts.pory"
-	multi_fixed_2_vs_2 TRAINER_MAXIE_MT_PYRE, MtPyre_Summit_Text_MaxieDefeated, TRAINER_ARCHIE_MT_PYRE, MtPyre_Summit_Text_ArchieDefeated, PARTNER_STEVEN
+	call MtPyre_Summit_EventScript_MultiBattlePositioning3
 # 799 "data/maps/MtPyre_Summit/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	msgbox MtPyre_Summit_Text_ArchieBeforeBattle, MSGBOX_DEFAULT
 # 800 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmessage
+# 801 "data/maps/MtPyre_Summit/scripts.pory"
+	call MtPyre_Summit_EventScript_MultiBattlePositioning4
+# 802 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
+# 803 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 20
+# 804 "data/maps/MtPyre_Summit/scripts.pory"
+	multi_fixed_2_vs_2 TRAINER_MAXIE_MT_PYRE, MtPyre_Summit_Text_MaxieDefeated, TRAINER_ARCHIE_MT_PYRE, MtPyre_Summit_Text_ArchieDefeated, PARTNER_STEVEN
+# 805 "data/maps/MtPyre_Summit/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 806 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq MtPyre_Summit_EventScript_MtPyreMultiBattle_1
 	return
 
 MtPyre_Summit_EventScript_MtPyreMultiBattle_1:
-# 801 "data/maps/MtPyre_Summit/scripts.pory"
+# 807 "data/maps/MtPyre_Summit/scripts.pory"
 	goto MtPyre_Summit_EventScript_MtPyreVictory
-# 802 "data/maps/MtPyre_Summit/scripts.pory"
+# 808 "data/maps/MtPyre_Summit/scripts.pory"
 	releaseall
 	end
 
 
 MtPyre_Summit_EventScript_MtPyreVictory::
-# 808 "data/maps/MtPyre_Summit/scripts.pory"
-	lock
-# 809 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_MaxieAfterBattle, MSGBOX_DEFAULT
-# 810 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmessage
-# 811 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_ARCHIE, Common_Movement_FaceRight
-# 812 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 813 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_ArchieAfterBattle, MSGBOX_DEFAULT
 # 814 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmessage
+	lock
 # 815 "data/maps/MtPyre_Summit/scripts.pory"
-	applymovement LOCALID_MAXIE, Common_Movement_FaceLeft
+	msgbox MtPyre_Summit_Text_MaxieAfterBattle, MSGBOX_DEFAULT
 # 816 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 817 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_MaxieResponse, MSGBOX_DEFAULT
-# 818 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmessage
+# 817 "data/maps/MtPyre_Summit/scripts.pory"
+	applymovement LOCALID_ARCHIE, Common_Movement_FaceRight
+# 818 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmovement 0
 # 819 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 20
+	msgbox MtPyre_Summit_Text_ArchieAfterBattle, MSGBOX_DEFAULT
 # 820 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	waitmessage
 # 821 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject LOCALID_ARCHIE
+	applymovement LOCALID_MAXIE, Common_Movement_FaceLeft
 # 822 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject LOCALID_MAXIE
+	waitmovement 0
 # 823 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject LOCALID_ARCHIE_MON
+	msgbox MtPyre_Summit_Text_MaxieResponse, MSGBOX_DEFAULT
 # 824 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject LOCALID_MAXIE_MON
+	waitmessage
 # 825 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE
+	delay 20
 # 826 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
+	fadescreen FADE_TO_BLACK
 # 827 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE
+	removeobject LOCALID_ARCHIE
 # 828 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject 4
+	removeobject LOCALID_MAXIE
 # 829 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject 5
+	removeobject LOCALID_ARCHIE_MON
 # 830 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject 6
-# 831 "data/maps/MtPyre_Summit/scripts.pory"
-	removeobject 7
+	removeobject LOCALID_MAXIE_MON
 # 832 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 40
+	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
 # 833 "data/maps/MtPyre_Summit/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE_MAXIE
 # 834 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 40
+	removeobject 4
+# 835 "data/maps/MtPyre_Summit/scripts.pory"
+	removeobject 5
 # 836 "data/maps/MtPyre_Summit/scripts.pory"
-	switch VAR_TEMP_4
+	removeobject 6
 # 837 "data/maps/MtPyre_Summit/scripts.pory"
-	case 0, MtPyre_Summit_EventScript_MtPyreVictory_3
+	removeobject 7
 # 838 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 40
+# 839 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 840 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 40
+# 842 "data/maps/MtPyre_Summit/scripts.pory"
+	switch VAR_TEMP_4
+# 843 "data/maps/MtPyre_Summit/scripts.pory"
+	case 0, MtPyre_Summit_EventScript_MtPyreVictory_3
+# 844 "data/maps/MtPyre_Summit/scripts.pory"
 	case 1, MtPyre_Summit_EventScript_MtPyreVictory_3
-# 841 "data/maps/MtPyre_Summit/scripts.pory"
+# 847 "data/maps/MtPyre_Summit/scripts.pory"
 	case 2, MtPyre_Summit_EventScript_MtPyreVictory_4
 	return
 
 MtPyre_Summit_EventScript_MtPyreVictory_1:
-# 847 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmovement 0
-# 848 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_StevenPostBattle, MSGBOX_DEFAULT
-# 849 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmessage
-# 850 "data/maps/MtPyre_Summit/scripts.pory"
-	giveitem ITEM_MAGMA_EMBLEM
-# 851 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_RECEIVED_RED_OR_BLUE_ORB
-# 852 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD
 # 853 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_EventScript_MtPyreVictory_Text_0
+	waitmovement 0
 # 854 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmessage
+	msgbox MtPyre_Summit_Text_StevenPostBattle, MSGBOX_DEFAULT
 # 855 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmessage
+# 856 "data/maps/MtPyre_Summit/scripts.pory"
+	giveitem ITEM_MAGMA_EMBLEM
+# 857 "data/maps/MtPyre_Summit/scripts.pory"
+	setflag FLAG_RECEIVED_RED_OR_BLUE_ORB
+# 858 "data/maps/MtPyre_Summit/scripts.pory"
+	setflag FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD
+# 859 "data/maps/MtPyre_Summit/scripts.pory"
+	setflag FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNTS_BLOCKING_ENTRANCE
+# 860 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_EventScript_MtPyreVictory_Text_0
+# 861 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmessage
+# 862 "data/maps/MtPyre_Summit/scripts.pory"
 	releaseall
 	end
 
 MtPyre_Summit_EventScript_MtPyreVictory_3:
-# 839 "data/maps/MtPyre_Summit/scripts.pory"
+# 845 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_STEVEN, Common_Movement_FaceLeft
-# 840 "data/maps/MtPyre_Summit/scripts.pory"
+# 846 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 	goto MtPyre_Summit_EventScript_MtPyreVictory_1
 
 MtPyre_Summit_EventScript_MtPyreVictory_4:
-# 842 "data/maps/MtPyre_Summit/scripts.pory"
+# 848 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement LOCALID_STEVEN, Common_Movement_FaceRight
-# 843 "data/maps/MtPyre_Summit/scripts.pory"
+# 849 "data/maps/MtPyre_Summit/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 	goto MtPyre_Summit_EventScript_MtPyreVictory_1
 
 
+Test_EventScript_TestCall::
+# 867 "data/maps/MtPyre_Summit/scripts.pory"
+	lock
+# 868 "data/maps/MtPyre_Summit/scripts.pory"
+	setvar VAR_TEMP_7, 1
+# 869 "data/maps/MtPyre_Summit/scripts.pory"
+	pokenavcall MagmaHideout_Text_StevenCall
+# 870 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmessage
+# 871 "data/maps/MtPyre_Summit/scripts.pory"
+	releaseall
+	return
+
+
 MtPyre_Summit_EventScript_MtPyreVictory_Text_0:
-# 853 "data/maps/MtPyre_Summit/scripts.pory"
+# 860 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Steven: We need to hurry. Good luck.$"
 
 MtPyre_Summit_Text_StevenNeedHelp::
-# 862 "data/maps/MtPyre_Summit/scripts.pory"
+# 877 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Steven: {PLAYER}, I'm so glad you're\n"
 	.string "here!\p"
 	.string "Archie and Maxie are attempting to\n"
@@ -1670,14 +1692,14 @@ MtPyre_Summit_Text_StevenNeedHelp::
 	.string "Are you ready to help me stop them?$"
 
 MtPyre_Summit_Text_StevenHurryBack::
-# 866 "data/maps/MtPyre_Summit/scripts.pory"
+# 881 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Steven: Things are too precarious to\n"
 	.string "rush in unprepared.\p"
 	.string "Gather your strength and hurry back as\n"
 	.string "soon as you're ready.$"
 
 MtPyre_Summit_Text_StevenStopThis::
-# 870 "data/maps/MtPyre_Summit/scripts.pory"
+# 885 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Steven: Maxie, Archie! Enough of this\n"
 	.string "madness!\p"
 	.string "This is a sacred place you are defiling.\p"
@@ -1687,7 +1709,7 @@ MtPyre_Summit_Text_StevenStopThis::
 	.string "We will not let you do this.$"
 
 MtPyre_Summit_Text_MaxieBeforeBattle::
-# 874 "data/maps/MtPyre_Summit/scripts.pory"
+# 889 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Maxie: For all the good work your father\n"
 	.string "has done with the Devon Corp, do you\l"
 	.string "still not see, Steven?\p"
@@ -1701,41 +1723,41 @@ MtPyre_Summit_Text_MaxieBeforeBattle::
 	.string "some sentimental burial site.$"
 
 MtPyre_Summit_Text_ArchieBeforeBattle::
-# 878 "data/maps/MtPyre_Summit/scripts.pory"
+# 893 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Archie: We won't allow that. Team Aqua\n"
 	.string "is taking possession of the Orbs, and\l"
 	.string "we will use them to definitively stop\l"
 	.string "your destructive plans!$"
 
 MtPyre_Summit_Text_MaxieDefeated::
-# 882 "data/maps/MtPyre_Summit/scripts.pory"
+# 897 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Maxie: I allowed Archie to distract me…\n"
 	.string "A perennial thorn in my side.$"
 
 MtPyre_Summit_Text_ArchieDefeated::
-# 886 "data/maps/MtPyre_Summit/scripts.pory"
+# 901 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Archie: Why won't you two pick a side\n"
 	.string "already?$"
 
 MtPyre_Summit_Text_MaxieAfterBattle::
-# 890 "data/maps/MtPyre_Summit/scripts.pory"
+# 905 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Maxie: During our battle, I managed to\n"
 	.string "get ahold of the Red Orb. One will have\l"
 	.string "to be sufficient.$"
 
 MtPyre_Summit_Text_ArchieAfterBattle::
-# 894 "data/maps/MtPyre_Summit/scripts.pory"
+# 909 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Archie: Then I'll be keeping this Blue\n"
 	.string "Orb as our insurance against you.$"
 
 MtPyre_Summit_Text_MaxieResponse::
-# 898 "data/maps/MtPyre_Summit/scripts.pory"
+# 913 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Maxie: ...\p"
 	.string "You are too far behind us, anyway. It is\n"
 	.string "no matter.$"
 
 MtPyre_Summit_Text_StevenPostBattle::
-# 902 "data/maps/MtPyre_Summit/scripts.pory"
+# 917 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Steven: Well… we kept either of them\n"
 	.string "from taking both Orbs, but they each\l"
 	.string "managed to escape with one.\p"
@@ -1762,10 +1784,17 @@ MtPyre_Summit_Text_StevenPostBattle::
 	.string "Chimney - you'll need this to get in.$"
 
 MtPyre_Summit_Text_StevenGoToHideouts::
-# 905 "data/maps/MtPyre_Summit/scripts.pory"
+# 920 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Steven: You should try to infiltrate\n"
 	.string "the Team Magma and Team Aqua hideouts.\p"
 	.string "Team Magma's Hideout is in the Jagged\n"
 	.string "Pass, South of Mt. Chimney. Team Aqua's\l"
 	.string "Hideout is East of Lilycove, accessible\l"
 	.string "by Surfing.$"
+
+MagmaHideout_Text_StevenCall::
+# 924 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "Steven: We've been trying to reach you\n"
+	.string "about your car's extended warranty.\l"
+	.string "Steven: We've been trying to reach you\l"
+	.string "about your car's extended warranty.$"

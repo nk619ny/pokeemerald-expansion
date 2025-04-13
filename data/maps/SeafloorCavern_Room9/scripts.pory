@@ -48,7 +48,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	dofieldeffectsparkle 16, 42, 0
 	waitfieldeffect FLDEFF_SPARKLE
 	closemessage
-	setvar VAR_RESULT, 0
+	setvar VAR_RESULT, 1
 	playfanfare MUS_AWAKEN_LEGEND
 	playse SE_ORB
 	special DoOrbEffect

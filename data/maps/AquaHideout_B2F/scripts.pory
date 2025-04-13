@@ -52,6 +52,11 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	msgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT
 	setflag FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE
 	setflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS
+	setflag FLAG_ENABLE_STEVEN_CALL_AQUA_HIDEOUT
+	setvar VAR_STEVEN_AQUA_CALL_STEP_COUNTER, 0
+	call Common_EventScript_CheckIfHideoutsComplete
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
 	release
 	end
 
@@ -90,7 +95,7 @@ AquaHideout_B2F_EventScript_Grunt8::
 	msgbox AquaHideout_B2F_Text_Grunt8PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-AquaHideout_B2F_Text_MattIntro:
+/* AquaHideout_B2F_Text_MattIntro:
 	.string "Hehehe…\p"
 	.string "Got here already, did you?\n"
 	.string "We underestimated you!\p"
@@ -100,24 +105,23 @@ AquaHideout_B2F_Text_MattIntro:
 	.string "I'm not stalling for time.\n"
 	.string "I'm going to pulverize you!$"
 
-AquaHideout_B2F_Text_MattDefeat:
-	.string "Hehehe…\n"
-	.string "So, I lost, too…$"
-
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
 	.string "Hehehe!\p"
 	.string "While I was toying with you, our BOSS\n"
-	.string "got through his preparations!$"
+	.string "got through his preparations!$" 
 
 AquaHideout_B2F_Text_MattPostBattle:
-	.string "Hehehe!\p"
-	.string "Our BOSS has already gone on his way to\n"
+	.string "Our Boss has already gone on his way to\n"
 	.string "some cave under the sea!\p"
 	.string "If you're going to give chase, you'd\n"
 	.string "better search the big, wide sea beyond\l"
-	.string "LILYCOVE.\p"
-	.string "But will you find it then?\n"
-	.string "Hehehe!$"
+	.string "Lilycove.\p"
+	.string "But how will you even find it?\n"
+	.string "Hehehe…$" */
+
+AquaHideout_B2F_Text_MattDefeat:
+	.string "Hehehe…\n"
+	.string "So, I lost, too…$"
 
 AquaHideout_B2F_Text_Grunt4Intro:
 	.string "Wahahah, I grew weary of waiting!\n"
@@ -162,3 +166,56 @@ AquaHideout_B2F_Text_Grunt8PostBattle:
 	.string "I'll have to learn about how I can\n"
 	.string "battle more effectively…$"
 `
+
+const TempVar_StevenCall = VAR_TEMP_2
+
+script AquaHideout_B2F_EventScript_StevenCallTrigger {
+	lock
+	setvar(TempVar_StevenCall,1)
+	if(!flag(FLAG_STEVEN_CALLED_AQUA_HIDEOUT)){
+		pokenavcall(AquaHideout_B2F_Text_StevenFirstCall)
+		setflag(FLAG_STEVEN_CALLED_AQUA_HIDEOUT)
+	}
+	waitmessage
+	closemessage
+	releaseall
+}
+
+text AquaHideout_B2F_Text_StevenFirstCall {
+	format("… … … … … …\n… … … … … Beep!\pSteven: {PLAYER}, I just visited\NCapt. Stern in Slateport. It looks\Nlike Team Aqua stole his submarine.\pI believe they've tracked down\Nthe ancient Pokémon Kyogre some-\Nwhere on the Ocean floor - you\Nneed to stop them before they can\Nsubmerge!\p… … … … … …\n… … … … … Click!")
+	//Steven: {PLAYER}, I just visited Capt. Stern in Slateport. It looks like Team Aqua stole his submarine. I believe they’ve tracked down the ancient Pokémon Kyogre somewhere on the Ocean floor - you need to stop them before they can submerge!
+}
+
+script AquaHideout_B2F_EventScript_StevenCallOutro {
+	lock
+	if(flag(FLAG_BOTH_HIDEOUTS_COMPLETE)){
+		pokenavcall(AquaHideout_B2F_Text_StevenSecondCall_BothHideoutsDone)
+	}
+	else{
+		pokenavcall(AquaHideout_B2F_Text_StevenSecondCall_MagmaRemaining)
+	}
+	waitmessage
+	closemessage
+	clearflag(FLAG_ENABLE_STEVEN_CALL_AQUA_HIDEOUT)
+	releaseall
+}
+
+text AquaHideout_B2F_Text_StevenSecondCall_BothHideoutsDone {
+	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch\NArchie, {PLAYER}? I see… Matt\Nbought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not\Nsure where it sleeps. I'm heading\Nhome to Mossdeep to do further research. You should meet me there.\p… … … … … …\n… … … … … Click!")
+}
+
+text AquaHideout_B2F_Text_StevenSecondCall_MagmaRemaining {
+	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch\NArchie, {PLAYER}? I see… Matt\Nbought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not\Nsure where it sleeps. In the\Nmeantime, you should hurry to Team Magma's hideout in the Jagged\NPass. We can still stop Maxie.\p… … … … … …\n… … … … … Click!")
+}
+
+text AquaHideout_B2F_Text_MattIntro {
+	format("Matt: Shelly looked through the documents from the Weather Institute, Archie grabbed the Blue Orb, and I took this submarine.\pEverything is working according to Archie's plan.\pAnd now, my last job is to stop you, right here!\pThis won't be like last time.\NI've collected the strongest and most fearsome Pokémon around.\pYou'll see our strength!")
+}
+
+text AquaHideout_B2F_Text_MattPostBattle{
+	format("I still can't beat you.\NBut I held you back long enough for Archie and Shelly to take off.\pYou can't stop us now…")
+}
+
+text AquaHideout_B2F_Text_OurBossGotThroughHisPreparations{
+	format("Ah… hah… Archie, man, it's all on you now…")
+}

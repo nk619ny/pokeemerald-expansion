@@ -14,6 +14,8 @@ void IncrementBirthIslandRockStepCount(void);
 bool8 AbnormalWeatherHasExpired(void);
 bool8 ShouldDoBrailleRegicePuzzle(void);
 bool32 ShouldDoWallyCall(void);
+bool32 ShouldDoStevenAquaCall(void);
+bool32 ShouldDoStevenMagmaCall(void);
 bool32 ShouldDoScottFortreeCall(void);
 bool32 ShouldDoScottBattleFrontierCall(void);
 bool32 ShouldDoRoxanneCall(void);

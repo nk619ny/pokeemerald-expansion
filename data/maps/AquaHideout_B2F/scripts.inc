@@ -107,125 +107,125 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 # 54 "data/maps/AquaHideout_B2F/scripts.pory"
 	setflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS
 # 55 "data/maps/AquaHideout_B2F/scripts.pory"
-	release
+	setflag FLAG_ENABLE_STEVEN_CALL_AQUA_HIDEOUT
 # 56 "data/maps/AquaHideout_B2F/scripts.pory"
-	end
+	setvar VAR_STEVEN_AQUA_CALL_STEP_COUNTER, 0
 # 57 "data/maps/AquaHideout_B2F/scripts.pory"
-
+	call Common_EventScript_CheckIfHideoutsComplete
 # 58 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Movement_SumbarineDepartLeft:
+	call Common_EventScript_ApplyHandicap
 # 59 "data/maps/AquaHideout_B2F/scripts.pory"
-	walk_left
+	call Common_EventScript_LevelCapUpdate
 # 60 "data/maps/AquaHideout_B2F/scripts.pory"
-	walk_left
+	release
 # 61 "data/maps/AquaHideout_B2F/scripts.pory"
-	walk_left
-# 62 "data/maps/AquaHideout_B2F/scripts.pory"
-	walk_left
-# 63 "data/maps/AquaHideout_B2F/scripts.pory"
-	step_end
-# 64 "data/maps/AquaHideout_B2F/scripts.pory"
-
-# 65 "data/maps/AquaHideout_B2F/scripts.pory"
-@ Unused
-# 66 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Movement_SumbarineDepartRight:
-# 67 "data/maps/AquaHideout_B2F/scripts.pory"
-	walk_right
-# 68 "data/maps/AquaHideout_B2F/scripts.pory"
-	walk_right
-# 69 "data/maps/AquaHideout_B2F/scripts.pory"
-	walk_right
-# 70 "data/maps/AquaHideout_B2F/scripts.pory"
-	walk_right
-# 71 "data/maps/AquaHideout_B2F/scripts.pory"
-	step_end
-# 72 "data/maps/AquaHideout_B2F/scripts.pory"
-
-# 73 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_EventScript_Grunt4::
-# 74 "data/maps/AquaHideout_B2F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B2F_Text_Grunt4Intro, AquaHideout_B2F_Text_Grunt4Defeat, AquaHideout_B2F_EventScript_Grunt4Defeated
-# 75 "data/maps/AquaHideout_B2F/scripts.pory"
-	msgbox AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
-# 76 "data/maps/AquaHideout_B2F/scripts.pory"
 	end
+# 62 "data/maps/AquaHideout_B2F/scripts.pory"
+
+# 63 "data/maps/AquaHideout_B2F/scripts.pory"
+AquaHideout_B2F_Movement_SumbarineDepartLeft:
+# 64 "data/maps/AquaHideout_B2F/scripts.pory"
+	walk_left
+# 65 "data/maps/AquaHideout_B2F/scripts.pory"
+	walk_left
+# 66 "data/maps/AquaHideout_B2F/scripts.pory"
+	walk_left
+# 67 "data/maps/AquaHideout_B2F/scripts.pory"
+	walk_left
+# 68 "data/maps/AquaHideout_B2F/scripts.pory"
+	step_end
+# 69 "data/maps/AquaHideout_B2F/scripts.pory"
+
+# 70 "data/maps/AquaHideout_B2F/scripts.pory"
+@ Unused
+# 71 "data/maps/AquaHideout_B2F/scripts.pory"
+AquaHideout_B2F_Movement_SumbarineDepartRight:
+# 72 "data/maps/AquaHideout_B2F/scripts.pory"
+	walk_right
+# 73 "data/maps/AquaHideout_B2F/scripts.pory"
+	walk_right
+# 74 "data/maps/AquaHideout_B2F/scripts.pory"
+	walk_right
+# 75 "data/maps/AquaHideout_B2F/scripts.pory"
+	walk_right
+# 76 "data/maps/AquaHideout_B2F/scripts.pory"
+	step_end
 # 77 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 78 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_EventScript_Grunt4Defeated::
+AquaHideout_B2F_EventScript_Grunt4::
 # 79 "data/maps/AquaHideout_B2F/scripts.pory"
-	msgbox AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B2F_Text_Grunt4Intro, AquaHideout_B2F_Text_Grunt4Defeat, AquaHideout_B2F_EventScript_Grunt4Defeated
 # 80 "data/maps/AquaHideout_B2F/scripts.pory"
-	release
+	msgbox AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 # 81 "data/maps/AquaHideout_B2F/scripts.pory"
 	end
 # 82 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 83 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_EventScript_Grunt6::
+AquaHideout_B2F_EventScript_Grunt4Defeated::
 # 84 "data/maps/AquaHideout_B2F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, AquaHideout_B2F_Text_Grunt6Intro, AquaHideout_B2F_Text_Grunt6Defeat
+	msgbox AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_DEFAULT
 # 85 "data/maps/AquaHideout_B2F/scripts.pory"
-	msgbox AquaHideout_B2F_Text_Grunt6PostBattle, MSGBOX_AUTOCLOSE
+	release
 # 86 "data/maps/AquaHideout_B2F/scripts.pory"
 	end
 # 87 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 88 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_EventScript_Grunt8::
+AquaHideout_B2F_EventScript_Grunt6::
 # 89 "data/maps/AquaHideout_B2F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_8, AquaHideout_B2F_Text_Grunt8Intro, AquaHideout_B2F_Text_Grunt8Defeat
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, AquaHideout_B2F_Text_Grunt6Intro, AquaHideout_B2F_Text_Grunt6Defeat
 # 90 "data/maps/AquaHideout_B2F/scripts.pory"
-	msgbox AquaHideout_B2F_Text_Grunt8PostBattle, MSGBOX_AUTOCLOSE
+	msgbox AquaHideout_B2F_Text_Grunt6PostBattle, MSGBOX_AUTOCLOSE
 # 91 "data/maps/AquaHideout_B2F/scripts.pory"
 	end
 # 92 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 93 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_MattIntro:
+AquaHideout_B2F_EventScript_Grunt8::
 # 94 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Hehehe…\p"
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_8, AquaHideout_B2F_Text_Grunt8Intro, AquaHideout_B2F_Text_Grunt8Defeat
 # 95 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Got here already, did you?\n"
+	msgbox AquaHideout_B2F_Text_Grunt8PostBattle, MSGBOX_AUTOCLOSE
 # 96 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "We underestimated you!\p"
+	end
 # 97 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "But this is it!\p"
+
 # 98 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "I'm a cut above the GRUNTS you've seen\n"
+/* AquaHideout_B2F_Text_MattIntro:
 # 99 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "so far.\p"
+	.string "Hehehe…\p"
 # 100 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "I'm not stalling for time.\n"
+	.string "Got here already, did you?\n"
 # 101 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "I'm going to pulverize you!$"
+	.string "We underestimated you!\p"
 # 102 "data/maps/AquaHideout_B2F/scripts.pory"
-
+	.string "But this is it!\p"
 # 103 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_MattDefeat:
+	.string "I'm a cut above the GRUNTS you've seen\n"
 # 104 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Hehehe…\n"
+	.string "so far.\p"
 # 105 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "So, I lost, too…$"
+	.string "I'm not stalling for time.\n"
 # 106 "data/maps/AquaHideout_B2F/scripts.pory"
-
+	.string "I'm going to pulverize you!$"
 # 107 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
-# 108 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Hehehe!\p"
-# 109 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "While I was toying with you, our BOSS\n"
-# 110 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "got through his preparations!$"
-# 111 "data/maps/AquaHideout_B2F/scripts.pory"
 
-# 112 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_MattPostBattle:
-# 113 "data/maps/AquaHideout_B2F/scripts.pory"
+# 108 "data/maps/AquaHideout_B2F/scripts.pory"
+AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
+# 109 "data/maps/AquaHideout_B2F/scripts.pory"
 	.string "Hehehe!\p"
+# 110 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "While I was toying with you, our BOSS\n"
+# 111 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "got through his preparations!$" 
+# 112 "data/maps/AquaHideout_B2F/scripts.pory"
+
+# 113 "data/maps/AquaHideout_B2F/scripts.pory"
+AquaHideout_B2F_Text_MattPostBattle:
 # 114 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Our BOSS has already gone on his way to\n"
+	.string "Our Boss has already gone on his way to\n"
 # 115 "data/maps/AquaHideout_B2F/scripts.pory"
 	.string "some cave under the sea!\p"
 # 116 "data/maps/AquaHideout_B2F/scripts.pory"
@@ -233,94 +233,223 @@ AquaHideout_B2F_Text_MattPostBattle:
 # 117 "data/maps/AquaHideout_B2F/scripts.pory"
 	.string "better search the big, wide sea beyond\l"
 # 118 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "LILYCOVE.\p"
+	.string "Lilycove.\p"
 # 119 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "But will you find it then?\n"
+	.string "But how will you even find it?\n"
 # 120 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Hehehe!$"
+	.string "Hehehe…$" */
 # 121 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 122 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_Grunt4Intro:
+AquaHideout_B2F_Text_MattDefeat:
 # 123 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Wahahah, I grew weary of waiting!\n"
+	.string "Hehehe…\n"
 # 124 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "You owe me a battle, too!$"
+	.string "So, I lost, too…$"
 # 125 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 126 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_Grunt4Defeat:
+AquaHideout_B2F_Text_Grunt4Intro:
 # 127 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Tired of waiting…\n"
+	.string "Wahahah, I grew weary of waiting!\n"
 # 128 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Lost and dazed…$"
+	.string "You owe me a battle, too!$"
 # 129 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 130 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_Grunt4PostBattle:
+AquaHideout_B2F_Text_Grunt4Defeat:
 # 131 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "BOSS…\n"
+	.string "Tired of waiting…\n"
 # 132 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Is this good enough?$"
+	.string "Lost and dazed…$"
 # 133 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 134 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_Grunt6Intro:
+AquaHideout_B2F_Text_Grunt4PostBattle:
 # 135 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Warp panels, the HIDEOUT's pride\n"
+	.string "BOSS…\n"
 # 136 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "and joy!\p"
+	.string "Is this good enough?$"
 # 137 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "You're clueless about where you are,\n"
-# 138 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "aren't you?\p"
-# 139 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "Fluster and tire out the enemy, then\n"
-# 140 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "lower the boom! That's our plan!$"
-# 141 "data/maps/AquaHideout_B2F/scripts.pory"
 
+# 138 "data/maps/AquaHideout_B2F/scripts.pory"
+AquaHideout_B2F_Text_Grunt6Intro:
+# 139 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "Warp panels, the HIDEOUT's pride\n"
+# 140 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "and joy!\p"
+# 141 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "You're clueless about where you are,\n"
 # 142 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_Grunt6Defeat:
+	.string "aren't you?\p"
 # 143 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "What's wrong with you?\n"
+	.string "Fluster and tire out the enemy, then\n"
 # 144 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "You're not tired at all!$"
+	.string "lower the boom! That's our plan!$"
 # 145 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 146 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_Grunt6PostBattle:
+AquaHideout_B2F_Text_Grunt6Defeat:
 # 147 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "That reminds me… I can't remember\n"
+	.string "What's wrong with you?\n"
 # 148 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "where I put the MASTER BALL.\p"
+	.string "You're not tired at all!$"
 # 149 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "If I fail to guard it, our BOSS will\n"
+
 # 150 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "chew me out…$"
+AquaHideout_B2F_Text_Grunt6PostBattle:
 # 151 "data/maps/AquaHideout_B2F/scripts.pory"
-
+	.string "That reminds me… I can't remember\n"
 # 152 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_Grunt8Intro:
+	.string "where I put the MASTER BALL.\p"
 # 153 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "When I joined TEAM AQUA, the first\n"
+	.string "If I fail to guard it, our BOSS will\n"
 # 154 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "thing I had to learn was how these\l"
+	.string "chew me out…$"
 # 155 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "warp panels connected.$"
-# 156 "data/maps/AquaHideout_B2F/scripts.pory"
 
+# 156 "data/maps/AquaHideout_B2F/scripts.pory"
+AquaHideout_B2F_Text_Grunt8Intro:
 # 157 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_Grunt8Defeat:
+	.string "When I joined TEAM AQUA, the first\n"
 # 158 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "I was too occupied thinking about\n"
+	.string "thing I had to learn was how these\l"
 # 159 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "the warp panels…$"
+	.string "warp panels connected.$"
 # 160 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 161 "data/maps/AquaHideout_B2F/scripts.pory"
-AquaHideout_B2F_Text_Grunt8PostBattle:
+AquaHideout_B2F_Text_Grunt8Defeat:
 # 162 "data/maps/AquaHideout_B2F/scripts.pory"
-	.string "I'll have to learn about how I can\n"
+	.string "I was too occupied thinking about\n"
 # 163 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "the warp panels…$"
+# 164 "data/maps/AquaHideout_B2F/scripts.pory"
+
+# 165 "data/maps/AquaHideout_B2F/scripts.pory"
+AquaHideout_B2F_Text_Grunt8PostBattle:
+# 166 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "I'll have to learn about how I can\n"
+# 167 "data/maps/AquaHideout_B2F/scripts.pory"
 	.string "battle more effectively…$"
+
+AquaHideout_B2F_EventScript_StevenCallTrigger::
+# 173 "data/maps/AquaHideout_B2F/scripts.pory"
+	lock
+# 174 "data/maps/AquaHideout_B2F/scripts.pory"
+	setvar VAR_TEMP_2, 1
+# 175 "data/maps/AquaHideout_B2F/scripts.pory"
+	goto_if_unset FLAG_STEVEN_CALLED_AQUA_HIDEOUT, AquaHideout_B2F_EventScript_StevenCallTrigger_2
+AquaHideout_B2F_EventScript_StevenCallTrigger_1:
+# 179 "data/maps/AquaHideout_B2F/scripts.pory"
+	waitmessage
+# 180 "data/maps/AquaHideout_B2F/scripts.pory"
+	closemessage
+# 181 "data/maps/AquaHideout_B2F/scripts.pory"
+	releaseall
+	return
+
+AquaHideout_B2F_EventScript_StevenCallTrigger_2:
+# 176 "data/maps/AquaHideout_B2F/scripts.pory"
+	pokenavcall AquaHideout_B2F_Text_StevenFirstCall
+# 177 "data/maps/AquaHideout_B2F/scripts.pory"
+	setflag FLAG_STEVEN_CALLED_AQUA_HIDEOUT
+	goto AquaHideout_B2F_EventScript_StevenCallTrigger_1
+
+
+AquaHideout_B2F_EventScript_StevenCallOutro::
+# 190 "data/maps/AquaHideout_B2F/scripts.pory"
+	lock
+# 191 "data/maps/AquaHideout_B2F/scripts.pory"
+	goto_if_set FLAG_BOTH_HIDEOUTS_COMPLETE, AquaHideout_B2F_EventScript_StevenCallOutro_2
+# 195 "data/maps/AquaHideout_B2F/scripts.pory"
+	pokenavcall AquaHideout_B2F_Text_StevenSecondCall_MagmaRemaining
+AquaHideout_B2F_EventScript_StevenCallOutro_1:
+# 197 "data/maps/AquaHideout_B2F/scripts.pory"
+	waitmessage
+# 198 "data/maps/AquaHideout_B2F/scripts.pory"
+	closemessage
+# 199 "data/maps/AquaHideout_B2F/scripts.pory"
+	clearflag FLAG_ENABLE_STEVEN_CALL_AQUA_HIDEOUT
+# 200 "data/maps/AquaHideout_B2F/scripts.pory"
+	releaseall
+	return
+
+AquaHideout_B2F_EventScript_StevenCallOutro_2:
+# 192 "data/maps/AquaHideout_B2F/scripts.pory"
+	pokenavcall AquaHideout_B2F_Text_StevenSecondCall_BothHideoutsDone
+	goto AquaHideout_B2F_EventScript_StevenCallOutro_1
+
+
+AquaHideout_B2F_Text_StevenFirstCall::
+# 184 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: {PLAYER}, I just visited\n"
+	.string "Capt. Stern in Slateport. It looks\l"
+	.string "like Team Aqua stole his submarine.\p"
+	.string "I believe they've tracked down\n"
+	.string "the ancient Pokémon Kyogre some-\l"
+	.string "where on the Ocean floor - you\l"
+	.string "need to stop them before they can\l"
+	.string "submerge!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+AquaHideout_B2F_Text_StevenSecondCall_BothHideoutsDone::
+# 203 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Were you able to catch\n"
+	.string "Archie, {PLAYER}? I see… Matt\l"
+	.string "bought time for him to escape.\p"
+	.string "We need to catch them before they\n"
+	.string "awaken Kyogre, but I'm still not\l"
+	.string "sure where it sleeps. I'm heading\l"
+	.string "home to Mossdeep to do further\l"
+	.string "research. You should meet me there.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+AquaHideout_B2F_Text_StevenSecondCall_MagmaRemaining::
+# 207 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Were you able to catch\n"
+	.string "Archie, {PLAYER}? I see… Matt\l"
+	.string "bought time for him to escape.\p"
+	.string "We need to catch them before they\n"
+	.string "awaken Kyogre, but I'm still not\l"
+	.string "sure where it sleeps. In the\l"
+	.string "meantime, you should hurry to Team\l"
+	.string "Magma's hideout in the Jagged\l"
+	.string "Pass. We can still stop Maxie.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+AquaHideout_B2F_Text_MattIntro::
+# 211 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "Matt: Shelly looked through the\n"
+	.string "documents from the Weather Institute,\l"
+	.string "Archie grabbed the Blue Orb, and I took\l"
+	.string "this submarine.\p"
+	.string "Everything is working according to\n"
+	.string "Archie's plan.\p"
+	.string "And now, my last job is to stop you,\n"
+	.string "right here!\p"
+	.string "This won't be like last time.\n"
+	.string "I've collected the strongest and most\l"
+	.string "fearsome Pokémon around.\p"
+	.string "You'll see our strength!$"
+
+AquaHideout_B2F_Text_MattPostBattle::
+# 215 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "I still can't beat you.\n"
+	.string "But I held you back long enough for\l"
+	.string "Archie and Shelly to take off.\p"
+	.string "You can't stop us now…$"
+
+AquaHideout_B2F_Text_OurBossGotThroughHisPreparations::
+# 219 "data/maps/AquaHideout_B2F/scripts.pory"
+	.string "Ah… hah… Archie, man, it's all on you\n"
+	.string "now…$"

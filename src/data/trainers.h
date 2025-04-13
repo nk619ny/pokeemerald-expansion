@@ -32245,7 +32245,7 @@ F_TRAINER_FEMALE |
 #line 13320
             .ability = ABILITY_DROUGHT,
 #line 13321
-            .lvl = 66,
+            .lvl = 4,
 #line 13322
             .ball = ITEM_MASTER_BALL,
 #line 13325
@@ -38911,7 +38911,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16019
-            .species = SPECIES_STEELIX_MEGA,
+            .species = SPECIES_STEELIX,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16019
             .heldItem = ITEM_STEELIXITE,

@@ -12,10 +12,10 @@
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_AQUA",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_MATT_ORAS",
       "x": 23,
       "y": 19,
       "elevation": 3,
@@ -183,7 +183,45 @@
       "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "AquaHideout_B2F_EventScript_MattNoticePlayer"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "AquaHideout_B2F_EventScript_StevenCallTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "AquaHideout_B2F_EventScript_StevenCallTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "AquaHideout_B2F_EventScript_StevenCallTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "AquaHideout_B2F_EventScript_StevenCallTrigger"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+
+  ]
 }

@@ -99,7 +99,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 50 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	closemessage
 # 51 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	setvar VAR_RESULT, 0
+	setvar VAR_RESULT, 1
 # 52 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	playfanfare MUS_AWAKEN_LEGEND
 # 53 "data/maps/SeafloorCavern_Room9/scripts.pory"

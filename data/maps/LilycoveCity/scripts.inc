@@ -35,7 +35,7 @@ LilycoveCity_OnTransition:
 # 18 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_OnLoad:
 # 19 "data/maps/LilycoveCity/scripts.pory"
-	call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
+	call_if_unset FLAG_BOTH_HIDEOUTS_COMPLETE, LilycoveCity_EventScript_SetWailmerMetatiles
 # 20 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 21 "data/maps/LilycoveCity/scripts.pory"
