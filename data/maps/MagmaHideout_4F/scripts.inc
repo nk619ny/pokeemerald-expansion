@@ -95,83 +95,83 @@ MagmaHideout_4F_EventScript_Maxie::
 # 48 "data/maps/MagmaHideout_4F/scripts.pory"
 	applymovement LOCALID_MAXIE, Common_Movement_FaceLeft
 # 49 "data/maps/MagmaHideout_4F/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 # 50 "data/maps/MagmaHideout_4F/scripts.pory"
-	msgbox MagmaHideout_4F_Text_MaxieAdmirable, MSGBOX_DEFAULT
+	waitmovement 0
 # 51 "data/maps/MagmaHideout_4F/scripts.pory"
-	closemessage
+	msgbox MagmaHideout_4F_Text_MaxieAdmirable, MSGBOX_DEFAULT
 # 52 "data/maps/MagmaHideout_4F/scripts.pory"
-	
-# 53 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_RESULT, 1
-# 54 "data/maps/MagmaHideout_4F/scripts.pory"
-	playse SE_M_DETECT
-# 55 "data/maps/MagmaHideout_4F/scripts.pory"
-	dofieldeffectsparkle 18, 42, 0
-# 56 "data/maps/MagmaHideout_4F/scripts.pory"
-	waitfieldeffect FLDEFF_SPARKLE
-# 57 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_RESULT, 0
-# 58 "data/maps/MagmaHideout_4F/scripts.pory"
-	playfanfare MUS_AWAKEN_LEGEND
-# 59 "data/maps/MagmaHideout_4F/scripts.pory"
-	playse SE_ORB
-# 60 "data/maps/MagmaHideout_4F/scripts.pory"
-	special DoOrbEffect
-# 61 "data/maps/MagmaHideout_4F/scripts.pory"
-	delay 150
-# 62 "data/maps/MagmaHideout_4F/scripts.pory"
-	special FadeOutOrbEffect
-# 63 "data/maps/MagmaHideout_4F/scripts.pory"
-	waitstate
-# 64 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-# 65 "data/maps/MagmaHideout_4F/scripts.pory"
-	waitmovement 0
-# 66 "data/maps/MagmaHideout_4F/scripts.pory"
-
-# 67 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonExit
-# 68 "data/maps/MagmaHideout_4F/scripts.pory"
-	waitmovement 0
-# 69 "data/maps/MagmaHideout_4F/scripts.pory"
-	removeobject LOCALID_GROUDON
-# 70 "data/maps/MagmaHideout_4F/scripts.pory"
-	delay 4
-# 71 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_0x8004, 2  @ vertical pan
-# 72 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_0x8005, 2  @ horizontal pan
-# 73 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_0x8006, 16  @ num shakes
-# 74 "data/maps/MagmaHideout_4F/scripts.pory"
-	setvar VAR_0x8007, 5  @ shake delay
-# 75 "data/maps/MagmaHideout_4F/scripts.pory"
-	special ShakeCamera
-# 76 "data/maps/MagmaHideout_4F/scripts.pory"
-	waitstate
-# 77 "data/maps/MagmaHideout_4F/scripts.pory"
-	delay 30
-# 78 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
-# 79 "data/maps/MagmaHideout_4F/scripts.pory"
-	waitmovement 0
-# 80 "data/maps/MagmaHideout_4F/scripts.pory"
-
-# 81 "data/maps/MagmaHideout_4F/scripts.pory"
-	call MagmaHideout_4F_EventScript_TabithaReport
-# 82 "data/maps/MagmaHideout_4F/scripts.pory"
-
-# 83 "data/maps/MagmaHideout_4F/scripts.pory"
-	msgbox MagmaHideout_4F_Text_MaxieMiscalculated, MSGBOX_DEFAULT
-# 84 "data/maps/MagmaHideout_4F/scripts.pory"
 	closemessage
-# 85 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
-# 86 "data/maps/MagmaHideout_4F/scripts.pory"
+# 53 "data/maps/MagmaHideout_4F/scripts.pory"
+	
+# 54 "data/maps/MagmaHideout_4F/scripts.pory"
+	setvar VAR_RESULT, 1
+# 55 "data/maps/MagmaHideout_4F/scripts.pory"
+	playse SE_M_DETECT
+# 56 "data/maps/MagmaHideout_4F/scripts.pory"
+	dofieldeffectsparkle 18, 42, 0
+# 57 "data/maps/MagmaHideout_4F/scripts.pory"
+	waitfieldeffect FLDEFF_SPARKLE
+# 58 "data/maps/MagmaHideout_4F/scripts.pory"
+	setvar VAR_RESULT, 0
+# 59 "data/maps/MagmaHideout_4F/scripts.pory"
+	playfanfare MUS_AWAKEN_LEGEND
+# 60 "data/maps/MagmaHideout_4F/scripts.pory"
+	playse SE_ORB
+# 61 "data/maps/MagmaHideout_4F/scripts.pory"
+	special DoOrbEffect
+# 62 "data/maps/MagmaHideout_4F/scripts.pory"
+	delay 150
+# 63 "data/maps/MagmaHideout_4F/scripts.pory"
+	special FadeOutOrbEffect
+# 64 "data/maps/MagmaHideout_4F/scripts.pory"
+	waitstate
+# 65 "data/maps/MagmaHideout_4F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+# 66 "data/maps/MagmaHideout_4F/scripts.pory"
 	waitmovement 0
-# 87 "data/maps/MagmaHideout_4F/scripts.pory"
+# 67 "data/maps/MagmaHideout_4F/scripts.pory"
+
+# 68 "data/maps/MagmaHideout_4F/scripts.pory"
+	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonExit
+# 69 "data/maps/MagmaHideout_4F/scripts.pory"
+	waitmovement 0
+# 70 "data/maps/MagmaHideout_4F/scripts.pory"
+	removeobject LOCALID_GROUDON
+# 71 "data/maps/MagmaHideout_4F/scripts.pory"
+	delay 4
+# 72 "data/maps/MagmaHideout_4F/scripts.pory"
+	setvar VAR_0x8004, 2  @ vertical pan
+# 73 "data/maps/MagmaHideout_4F/scripts.pory"
+	setvar VAR_0x8005, 2  @ horizontal pan
+# 74 "data/maps/MagmaHideout_4F/scripts.pory"
+	setvar VAR_0x8006, 16  @ num shakes
+# 75 "data/maps/MagmaHideout_4F/scripts.pory"
+	setvar VAR_0x8007, 5  @ shake delay
+# 76 "data/maps/MagmaHideout_4F/scripts.pory"
+	special ShakeCamera
+# 77 "data/maps/MagmaHideout_4F/scripts.pory"
+	waitstate
+# 78 "data/maps/MagmaHideout_4F/scripts.pory"
 	delay 30
+# 79 "data/maps/MagmaHideout_4F/scripts.pory"
+	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
+# 80 "data/maps/MagmaHideout_4F/scripts.pory"
+	waitmovement 0
+# 81 "data/maps/MagmaHideout_4F/scripts.pory"
+
+# 82 "data/maps/MagmaHideout_4F/scripts.pory"
+	call MagmaHideout_4F_EventScript_TabithaReport
+# 83 "data/maps/MagmaHideout_4F/scripts.pory"
+
+# 84 "data/maps/MagmaHideout_4F/scripts.pory"
+	msgbox MagmaHideout_4F_Text_MaxieMiscalculated, MSGBOX_DEFAULT
+# 85 "data/maps/MagmaHideout_4F/scripts.pory"
+	closemessage
+# 86 "data/maps/MagmaHideout_4F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+# 87 "data/maps/MagmaHideout_4F/scripts.pory"
+	waitmovement 0
 # 88 "data/maps/MagmaHideout_4F/scripts.pory"
 	//applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
 # 89 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -185,7 +185,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 93 "data/maps/MagmaHideout_4F/scripts.pory"
 	//trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
 # 94 "data/maps/MagmaHideout_4F/scripts.pory"
-	//msgbox MagmaHideout_4F_Text_MaxieNewDeparture, MSGBOX_DEFAULT
+	msgbox MagmaHideout_4F_Text_MaxieNewDeparture, MSGBOX_DEFAULT
 # 95 "data/maps/MagmaHideout_4F/scripts.pory"
 	closemessage
 # 96 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -680,8 +680,8 @@ MagmaHideout_4F_Text_StevenSecondCall_BothHideoutsDone::
 	.string "{PLAYER}, you defeated him? But\n"
 	.string "he couldn't control Groudon, and it\l"
 	.string "escaped?\l"
-	.string "Who knows what effects\l"
-	.string "this could have…\p"
+	.string "Who knows what effects this\l"
+	.string "could have…\p"
 	.string "I'm heading home to Mossdeep to do\n"
 	.string "further research. You should meet\l"
 	.string "me there.\p"
@@ -698,8 +698,8 @@ MagmaHideout_4F_Text_StevenSecondCall_AquaRemaining::
 	.string "{PLAYER}, you defeated him? But\n"
 	.string "he couldn't control Groudon, and it\l"
 	.string "escaped?\l"
-	.string "Who knows what effects\l"
-	.string "this could have…\p"
+	.string "Who knows what effects this\l"
+	.string "could have…\p"
 	.string "You should hurry to Team Aqua's\n"
 	.string "hideout east of Lilycove.\p"
 	.string "We can still stop Archie before\n"

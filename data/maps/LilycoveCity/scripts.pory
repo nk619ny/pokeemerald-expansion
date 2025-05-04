@@ -1,6 +1,7 @@
 raw `
 .set LOCALID_WOMAN_1, 19
 .set LOCALID_MAN_1, 20
+.set LOCALID_RIVAL, 17
 
 LilycoveCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_OnTransition
@@ -861,7 +862,7 @@ movement LilycoveCity_Movement_RivalApproachRight{
 }
 
 text LilycoveCity_Text_RivalGreeting{
-	format("{RIVAL}: You weren't going to leave without saying anything, were you {PLAYER}?\nThe last two gym badges are on islands to the East, so I'm not surprised you're going to Surf away.\pI've been searching for all kinds of rare and mysterious Pokémon lately. Let me show you what I've found before you go!")
+	format("{RIVAL}: You weren't going to leave without saying anything, were you {PLAYER}?\pThe last two gym badges are on islands to the East, so I'm not surprised you're going to Surf away.\pI've been searching for all kinds of rare and mysterious Pokémon lately.\pLet me show you what I've found before you go!")
 }
 
 text LilycoveCity_Text_MayShoppingLetsBattle{

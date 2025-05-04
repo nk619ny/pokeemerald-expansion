@@ -47,6 +47,7 @@
 #include "data.h"
 #include "generational_changes.h"
 #include "move.h"
+//#include "daycare.c"
 #include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
@@ -15870,11 +15871,13 @@ static void Cmd_handleballthrow(void)
             }
             break;
             case BALL_LOVE:
+                //if (EggGroupsOverlap(gBattleMons[gBattlerTarget].species, gBattleMons[gBattlerAttacker].species) && !(gSpeciesInfo[gBattleMons[gBattlerTarget].species].eggGroups[0] == EGG_GROUP_NO_EGGS_DISCOVERED))
+                //    ballMultiplier = 10000;
                 if (gBattleMons[gBattlerTarget].species == gBattleMons[gBattlerAttacker].species)
                 {
                     u8 gender1 = GetMonGender(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]]);
                     u8 gender2 = GetMonGender(&gPlayerParty[gBattlerPartyIndexes[gBattlerAttacker]]);
-
+                
                     if (gender1 != gender2 && gender1 != MON_GENDERLESS && gender2 != MON_GENDERLESS)
                         ballMultiplier = 800;
                 }
