@@ -16,8 +16,6 @@
 #line 4
         .trainerPic = TRAINER_BACK_PIC_BRENDAN,
         .encounterMusic_gender =
-#line 5
-F_TRAINER_FEMALE | 
 #line 6
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 0,
