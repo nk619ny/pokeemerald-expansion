@@ -76,73 +76,81 @@ LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_AWAKENING
 # 39 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_FLUFFY_TAIL
+# 40 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+	.2byte ITEM_NONE
+# 41 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	pokemartlistend
+# 42 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 
-# 44 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 43 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
-# 45 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 44 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	lock
-# 46 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 45 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	faceplayer
-# 47 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 46 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	message gText_HowMayIServeYou
-# 48 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 47 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	waitmessage
-# 49 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 48 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	pokemart LilycoveCity_DepartmentStore_2F_Pokemart2
-# 50 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 49 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-# 51 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 50 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	release
-# 52 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 51 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	end
+# 52 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+
 # 53 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
-
-# 54 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.align 2
-# 55 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 54 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 LilycoveCity_DepartmentStore_2F_Pokemart2:
-# 56 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 55 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_POTION
-# 57 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 56 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_SUPER_POTION
-# 58 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 57 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_HYPER_POTION
-# 59 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 58 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_MAX_POTION
-# 60 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 59 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_REVIVE
-# 61 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 60 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_REPEL
-# 62 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 61 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_SUPER_REPEL
-# 63 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 62 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_MAX_REPEL
-# 64 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 63 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_WAVE_MAIL
-# 65 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 64 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.2byte ITEM_MECH_MAIL
+# 65 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+	.2byte ITEM_NONE
+# 66 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	pokemartlistend
+# 67 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 
-# 70 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 68 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly:
-# 71 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 69 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.string "Learn to use items properly.\n"
-# 72 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 70 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.string "That's basic, really.$"
-# 73 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 71 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 
-# 74 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 72 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband:
-# 75 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 73 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.string "My husband is waiting at home.\n"
-# 76 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 74 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.string "What would make a good gift for him?$"
-# 77 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 75 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 
-# 78 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 76 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
-# 79 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 77 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.string "I'm leaving on a long journey soon.\n"
-# 80 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
+# 78 "data/maps/LilycoveCity_DepartmentStore_2F/scripts.pory"
 	.string "I need to stock up on items.$"

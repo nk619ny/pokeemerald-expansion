@@ -44,8 +44,7 @@ LilycoveCity_DepartmentStoreRooftop_PokemartDecor_ClearOutSale:
 	.2byte DECOR_WAILMER_DOLL
 	.2byte DECOR_RHYDON_DOLL
 	.2byte 0
-	release
-	end
+	pokemartlistend
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_Man::
 	lock

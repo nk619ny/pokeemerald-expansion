@@ -60,73 +60,77 @@ BattleFrontier_Mart_Pokemart:
 	.2byte ITEM_CARBOS
 # 31 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.2byte ITEM_HP_UP
+# 32 "data/maps/BattleFrontier_Mart/scripts.pory"
+	.2byte ITEM_NONE
+# 33 "data/maps/BattleFrontier_Mart/scripts.pory"
 	pokemartlistend
+# 34 "data/maps/BattleFrontier_Mart/scripts.pory"
 
-# 36 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 35 "data/maps/BattleFrontier_Mart/scripts.pory"
 BattleFrontier_Mart_EventScript_OldMan::
-# 37 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 36 "data/maps/BattleFrontier_Mart/scripts.pory"
 	msgbox BattleFrontier_Mart_Text_ChaperonGrandson, MSGBOX_NPC
+# 37 "data/maps/BattleFrontier_Mart/scripts.pory"
+	end
 # 38 "data/maps/BattleFrontier_Mart/scripts.pory"
-	end
+
 # 39 "data/maps/BattleFrontier_Mart/scripts.pory"
-
-# 40 "data/maps/BattleFrontier_Mart/scripts.pory"
 BattleFrontier_Mart_EventScript_OldWoman::
-# 41 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 40 "data/maps/BattleFrontier_Mart/scripts.pory"
 	lock
-# 42 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 41 "data/maps/BattleFrontier_Mart/scripts.pory"
 	applymovement LOCALID_OLD_WOMAN, Common_Movement_FaceDown
-# 43 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 42 "data/maps/BattleFrontier_Mart/scripts.pory"
 	waitmovement 0
-# 44 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 43 "data/maps/BattleFrontier_Mart/scripts.pory"
 	msgbox BattleFrontier_Mart_Text_ProteinMakeNiceGift, MSGBOX_DEFAULT
-# 45 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 44 "data/maps/BattleFrontier_Mart/scripts.pory"
 	release
+# 45 "data/maps/BattleFrontier_Mart/scripts.pory"
+	end
 # 46 "data/maps/BattleFrontier_Mart/scripts.pory"
-	end
+
 # 47 "data/maps/BattleFrontier_Mart/scripts.pory"
-
-# 48 "data/maps/BattleFrontier_Mart/scripts.pory"
 BattleFrontier_Mart_EventScript_Boy::
-# 49 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 48 "data/maps/BattleFrontier_Mart/scripts.pory"
 	msgbox BattleFrontier_Mart_Text_FacilitiesDontAllowItems, MSGBOX_NPC
-# 50 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 49 "data/maps/BattleFrontier_Mart/scripts.pory"
 	end
+# 50 "data/maps/BattleFrontier_Mart/scripts.pory"
+
 # 51 "data/maps/BattleFrontier_Mart/scripts.pory"
-
-# 52 "data/maps/BattleFrontier_Mart/scripts.pory"
 BattleFrontier_Mart_Text_ChaperonGrandson:
-# 53 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 52 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "We came here to chaperon our\n"
-# 54 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 53 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "grandson.\p"
-# 55 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 54 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "But since we're here, we thought\n"
-# 56 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 55 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "we should get some souvenirs.$"
+# 56 "data/maps/BattleFrontier_Mart/scripts.pory"
+
 # 57 "data/maps/BattleFrontier_Mart/scripts.pory"
-
-# 58 "data/maps/BattleFrontier_Mart/scripts.pory"
 BattleFrontier_Mart_Text_ProteinMakeNiceGift:
-# 59 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 58 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "Dear, what do you think of this?\n"
-# 60 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 59 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "Wouldn't this make a nice gift?\p"
-# 61 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 60 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "It's…PRO…TE…IN?\n"
-# 62 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 61 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "It sounds delicious, doesn't it?$"
-# 63 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 62 "data/maps/BattleFrontier_Mart/scripts.pory"
 
-# 64 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 63 "data/maps/BattleFrontier_Mart/scripts.pory"
 BattleFrontier_Mart_Text_FacilitiesDontAllowItems:
-# 65 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 64 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "A lot of the BATTLE FRONTIER's\n"
-# 66 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 65 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "facilities don't allow the use of items\l"
-# 67 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 66 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "during battles.\p"
-# 68 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 67 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "That rule makes things tougher than\n"
-# 69 "data/maps/BattleFrontier_Mart/scripts.pory"
+# 68 "data/maps/BattleFrontier_Mart/scripts.pory"
 	.string "they already are!$"

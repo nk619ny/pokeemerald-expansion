@@ -48,101 +48,105 @@ SootopolisCity_Mart_Pokemart:
 	.2byte ITEM_X_DEFENSE
 # 25 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.2byte ITEM_SHADOW_MAIL
+# 26 "data/maps/SootopolisCity_Mart/scripts.pory"
+	.2byte ITEM_NONE
+# 27 "data/maps/SootopolisCity_Mart/scripts.pory"
 	pokemartlistend
+# 28 "data/maps/SootopolisCity_Mart/scripts.pory"
 
-# 30 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 29 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_EventScript_FatMan::
+# 30 "data/maps/SootopolisCity_Mart/scripts.pory"
+	lock
 # 31 "data/maps/SootopolisCity_Mart/scripts.pory"
-	lock
+	faceplayer
 # 32 "data/maps/SootopolisCity_Mart/scripts.pory"
-	faceplayer
-# 33 "data/maps/SootopolisCity_Mart/scripts.pory"
 	goto_if_ge VAR_SKY_PILLAR_STATE, 2, SootopolisCity_Mart_EventScript_FatManNoLegendaries
-# 34 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 33 "data/maps/SootopolisCity_Mart/scripts.pory"
 	goto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_Mart_EventScript_FatManNoLegendaries
-# 35 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 34 "data/maps/SootopolisCity_Mart/scripts.pory"
 	msgbox SootopolisCity_Mart_Text_TooScaryOutside, MSGBOX_DEFAULT
+# 35 "data/maps/SootopolisCity_Mart/scripts.pory"
+	release
 # 36 "data/maps/SootopolisCity_Mart/scripts.pory"
-	release
+	end
 # 37 "data/maps/SootopolisCity_Mart/scripts.pory"
-	end
+
 # 38 "data/maps/SootopolisCity_Mart/scripts.pory"
-
-# 39 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_EventScript_FatManNoLegendaries::
-# 40 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 39 "data/maps/SootopolisCity_Mart/scripts.pory"
 	msgbox SootopolisCity_Mart_Text_PPUpIsGreat, MSGBOX_DEFAULT
+# 40 "data/maps/SootopolisCity_Mart/scripts.pory"
+	release
 # 41 "data/maps/SootopolisCity_Mart/scripts.pory"
-	release
+	end
 # 42 "data/maps/SootopolisCity_Mart/scripts.pory"
-	end
+
 # 43 "data/maps/SootopolisCity_Mart/scripts.pory"
-
-# 44 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_EventScript_Gentleman::
-# 45 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 44 "data/maps/SootopolisCity_Mart/scripts.pory"
 	lock
-# 46 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 45 "data/maps/SootopolisCity_Mart/scripts.pory"
 	faceplayer
-# 47 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 46 "data/maps/SootopolisCity_Mart/scripts.pory"
 	goto_if_ge VAR_SKY_PILLAR_STATE, 2, SootopolisCity_Mart_EventScript_GentlemanNoLegendaries
-# 48 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 47 "data/maps/SootopolisCity_Mart/scripts.pory"
 	goto_if_unset FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, SootopolisCity_Mart_EventScript_GentlemanNoLegendaries
-# 49 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 48 "data/maps/SootopolisCity_Mart/scripts.pory"
 	msgbox SootopolisCity_Mart_Text_DidSomethingAwaken, MSGBOX_DEFAULT
+# 49 "data/maps/SootopolisCity_Mart/scripts.pory"
+	release
 # 50 "data/maps/SootopolisCity_Mart/scripts.pory"
-	release
+	end
 # 51 "data/maps/SootopolisCity_Mart/scripts.pory"
-	end
+
 # 52 "data/maps/SootopolisCity_Mart/scripts.pory"
-
-# 53 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_EventScript_GentlemanNoLegendaries::
-# 54 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 53 "data/maps/SootopolisCity_Mart/scripts.pory"
 	msgbox SootopolisCity_Mart_Text_FullRestoreItemOfDreams, MSGBOX_DEFAULT
-# 55 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 54 "data/maps/SootopolisCity_Mart/scripts.pory"
 	release
-# 56 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 55 "data/maps/SootopolisCity_Mart/scripts.pory"
 	end
+# 56 "data/maps/SootopolisCity_Mart/scripts.pory"
+
 # 57 "data/maps/SootopolisCity_Mart/scripts.pory"
-
-# 58 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_Text_PPUpIsGreat:
-# 59 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 58 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "PP UP is great!\p"
-# 60 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 59 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "It raises the POWER POINTS, the PP,\n"
-# 61 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 60 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "of a POKéMON move.$"
+# 61 "data/maps/SootopolisCity_Mart/scripts.pory"
+
 # 62 "data/maps/SootopolisCity_Mart/scripts.pory"
-
-# 63 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_Text_TooScaryOutside:
-# 64 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 63 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "What…\n"
-# 65 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 64 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "What is happening?\p"
-# 66 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 65 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "I really want to know, but it's too\n"
-# 67 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 66 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "scary to go outside.$"
+# 67 "data/maps/SootopolisCity_Mart/scripts.pory"
+
 # 68 "data/maps/SootopolisCity_Mart/scripts.pory"
-
-# 69 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_Text_FullRestoreItemOfDreams:
-# 70 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 69 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "Do you know FULL RESTORE?\p"
-# 71 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 70 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "Full restoration of HP!\n"
-# 72 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 71 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "Eradication of all status problems!\p"
-# 73 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 72 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "It's truly an item of your dreams!$"
-# 74 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 73 "data/maps/SootopolisCity_Mart/scripts.pory"
 
-# 75 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 74 "data/maps/SootopolisCity_Mart/scripts.pory"
 SootopolisCity_Mart_Text_DidSomethingAwaken:
-# 76 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 75 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "This weather…\n"
-# 77 "data/maps/SootopolisCity_Mart/scripts.pory"
+# 76 "data/maps/SootopolisCity_Mart/scripts.pory"
 	.string "Did something awaken?$"
