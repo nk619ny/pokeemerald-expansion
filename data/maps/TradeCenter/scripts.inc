@@ -222,13 +222,17 @@ Common_EventScript_CheckIfHideoutsComplete_4:
 MauvilleCity_EventScript_Temporary::
 # 121 "data/maps/TradeCenter/scripts.pory"
 	lock
+# 126 "data/maps/TradeCenter/scripts.pory"
+	addvar VAR_LEVEL_CAP, 5
 # 127 "data/maps/TradeCenter/scripts.pory"
-	giveitem ITEM_POKEMON_BOX_LINK
-# 152 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
-# 153 "data/maps/TradeCenter/scripts.pory"
-	closemessage
+	givemon SPECIES_CALYREX_SHADOW, 100, , , , 0, , , , , , , , , , , , , , MOVE_ORIGIN_PULSE, MOVE_HYPER_VOICE, MOVE_STRENGTH, MOVE_MAGICAL_TORQUE
+# 128 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_MEWTWO, 100, , , , 0, , , , , , , , , , , , , , MOVE_PSYSTRIKE
 # 154 "data/maps/TradeCenter/scripts.pory"
+	waitmessage
+# 155 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 156 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 

@@ -357,6 +357,7 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
 	.string "that dream of mine!\p"
 	.string "I'm not having any of that!$"
 
+/*
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
 	.string "STEVEN: {PLAYER}{KUN}, have you read that\n"
 	.string "proclamation already?\p"
@@ -368,6 +369,7 @@ MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
 	.string "a while longer.\p"
 	.string "In the meantime, why don't you go\n"
 	.string "check out the town?$"
+	*/
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
 	.string "As promised, we've come for\n"
@@ -419,6 +421,7 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
 	.string "I never abandoned my post.\l"
 	.string "That I stayed to the bitter end…$"
 
+/*
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "This is…\n"
 	.string "An intent-to-steal notice?\p"
@@ -430,4 +433,23 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "We will take the fuel no matter what.\p"
 	.string "“Let there be more land!\n"
 	.string "                                          TEAM MAGMA”$"
+	*/
 `
+
+text MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice {
+	format("To the staff of the Space Center, and the people of Hoenn:\pWe have not yielded or relinquished. Land expansion is inevitable.\pOur goal will be completed, even without your cooperation.\p                                          TEAM MAGMA")
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel {
+	format("Steven: I'm still trying to determine where Groudon and Kyogre might be.\pThe situation is urgent, but until we pinpoint their locations, there isn't much that can be done.\pIn the meantime, why don't you go check out the town?")
+}
+
+script MossdeepCity_EventScript_LeftSign{
+	msgbox(format("Mossdeep City Science Center\lSpace Department"),MSGBOX_SIGN)
+	end
+}
+
+script MossdeepCity_EventScript_RightSign{
+	msgbox(format("Mossdeep City Science Center\lTime Department"),MSGBOX_SIGN)
+	end
+}

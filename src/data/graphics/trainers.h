@@ -298,6 +298,15 @@ const u32 gTrainerPalette_ArchieORAS[] = INCBIN_U32("graphics/trainers/front_pic
 const u32 gTrainerFrontPic_MaxieORAS[] = INCBIN_U32("graphics/trainers/front_pics/maxie_oras.4bpp.lz");
 const u32 gTrainerPalette_MaxieORAS[] = INCBIN_U32("graphics/trainers/front_pics/maxie_oras.gbapal.lz");
 
+const u32 gTrainerFrontPic_ProfessorTuro[] = INCBIN_U32("graphics/trainers/front_pics/professor_turo.4bpp.lz");
+const u32 gTrainerPalette_ProfessorTuro[] = INCBIN_U32("graphics/trainers/front_pics/professor_turo.gbapal.lz");
+
+const u32 gTrainerFrontPic_ProfessorSada[] = INCBIN_U32("graphics/trainers/front_pics/professor_sada.4bpp.lz");
+const u32 gTrainerPalette_ProfessorSada[] = INCBIN_U32("graphics/trainers/front_pics/professor_sada.gbapal.lz");
+
+const u32 gTrainerFrontPic_Vito[] = INCBIN_U32("graphics/trainers/front_pics/vito.4bpp.lz");
+const u32 gTrainerPalette_Vito[] = INCBIN_U32("graphics/trainers/front_pics/vito.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -425,6 +434,9 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_MATT_ORAS, gTrainerFrontPic_MattORAS, gTrainerPalette_MattORAS),
     TRAINER_SPRITE(TRAINER_PIC_ARCHIE_ORAS, gTrainerFrontPic_ArchieORAS, gTrainerPalette_ArchieORAS),
     TRAINER_SPRITE(TRAINER_PIC_MAXIE_ORAS, gTrainerFrontPic_MaxieORAS, gTrainerPalette_MaxieORAS),
+    TRAINER_SPRITE(TRAINER_PIC_PROFESSOR_TURO, gTrainerFrontPic_ProfessorTuro, gTrainerPalette_ProfessorTuro),
+    TRAINER_SPRITE(TRAINER_PIC_PROFESSOR_SADA, gTrainerFrontPic_ProfessorSada, gTrainerPalette_ProfessorSada),
+    TRAINER_SPRITE(TRAINER_PIC_VITO, gTrainerFrontPic_Vito, gTrainerPalette_Vito),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

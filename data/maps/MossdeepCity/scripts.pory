@@ -408,8 +408,8 @@ MossdeepCity_Text_CitySign:
 	.string "“Our slogan: Cherish POKéMON!”$"
 
 MossdeepCity_Text_SpaceCenterSign:
-	.string "MOSSDEEP SPACE CENTER\n"
-	.string "“The closest place to space.”$"
+	.string "MOSSDEEP SCIENCE CENTER\n"
+	.string "“Understanding Space and Time.”$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
 	.string "SCOTT: {PLAYER}{KUN}, feeling good?\n"

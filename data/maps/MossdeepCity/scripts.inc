@@ -819,9 +819,9 @@ MossdeepCity_Text_CitySign:
 # 410 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_Text_SpaceCenterSign:
 # 411 "data/maps/MossdeepCity/scripts.pory"
-	.string "MOSSDEEP SPACE CENTER\n"
+	.string "MOSSDEEP SCIENCE CENTER\n"
 # 412 "data/maps/MossdeepCity/scripts.pory"
-	.string "“The closest place to space.”$"
+	.string "“Understanding Space and Time.”$"
 # 413 "data/maps/MossdeepCity/scripts.pory"
 
 # 414 "data/maps/MossdeepCity/scripts.pory"

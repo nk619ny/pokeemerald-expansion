@@ -70,10 +70,10 @@
 #define TRAINER_RICKY_1                      64
 #define TRAINER_SIMON                        65
 #define TRAINER_CHARLIE                      66
-#define TRAINER_RICKY_2                      67
-#define TRAINER_RICKY_3                      68
-#define TRAINER_RICKY_4                      69
-#define TRAINER_RICKY_5                      70
+#define TRAINER_TURO_1                      67 //hijacked rematches of Ricky in 73-76 for new fights
+#define TRAINER_TURO_2                      68 //hijacked rematches of Ricky in 73-76 for new fights
+#define TRAINER_SADA_1                      69 //hijacked rematches of Ricky in 73-76 for new fights
+#define TRAINER_SADA_2                      70 //hijacked rematches of Ricky in 73-76 for new fights
 #define TRAINER_RANDALL                      71
 #define TRAINER_PARKER                       72
 #define TRAINER_GEORGE                       73

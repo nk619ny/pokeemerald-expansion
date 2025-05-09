@@ -1,0 +1,147 @@
+raw `
+MossdeepCity_SpaceCenter_2F_R_MapScripts::
+	.byte 0
+
+/*
+TURO & SADA STATE VARIABLES:
+- 0: First Meeting
+- 1: Met, not yet battled 
+- 2: Met, battled, not yet given Paradox Pokémon
+- 3: Met, battled, given Paradox Pokémon
+- 4: Ready for second battle
+- 5: Beaten twice, unlimited paradox access
+*/
+
+`
+const TEMPVAR_TradeCandidate = VAR_TEMP_5
+const LOCALID_SADA = 2
+const LOCALID_TURO = 3
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_RevivalScientist {
+    lock
+    faceplayer
+    releaseall
+    end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuro {
+    lock
+    faceplayer
+    switch (var(VAR_TURO_STATE)) {
+        case 0:
+            msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroFirstMeeting)
+            setvar(VAR_TURO_STATE,1)
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence1)
+            break
+        case 1:
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence1)
+            break
+        case 2:
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence2)
+            break
+        default:
+    }
+    // applymovement(LOCALID_TURO, Common_Movement_FaceOriginalDirection)
+    waitmessage
+    releaseall
+    end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence1 {
+            msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroAreYouInterested,MSGBOX_YESNO)
+            if(var(VAR_RESULT) == YES) {
+                msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroProveYourself,MSGBOX_YESNO)
+                if(var(VAR_RESULT) == YES) {
+                    goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroBattle)
+                } 
+                else {
+                    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWhenReady)
+                }
+            } 
+            else {
+                msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWithPokemon)
+            }
+            // applymovement(LOCALID_TURO, Common_Movement_FaceOriginalDirection)
+            waitmessage
+            releaseall
+            end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroBattle {
+    trainerbattle_single(TRAINER_TURO_1,MossdeepCity_SpaceCenter_2F_R_Text_TuroIntro,MossdeepCity_SpaceCenter_2F_R_Text_TuroDefeated,MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence2)
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence2 {
+    setvar(VAR_TURO_STATE,2)
+    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroDoYouHaveFuturePokemon,MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES) {
+        msgbox("Trade Goes Here")
+    } 
+    else {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWithPokemon)
+    }
+    // applymovement(LOCALID_TURO, Common_Movement_FaceOriginalDirection)
+    waitmessage
+    releaseall
+    end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada {
+    lock
+    faceplayer
+    releaseall
+    end
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroIntro{
+    format("Turo: Welcome to the future!")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroDefeated{
+    format("Brilliant... you're ready for the future.")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroFirstMeeting {
+    format("It is nice to meet you.\nMy name is Professor Turo.\pI carry out research on Pokémon evolution - but not the kind of evolution you are thinking of. I am studying how Pokémon change over centuries.\pAlongside my colleague, Professor Sada, I developed a time machine capable of retrieving Pokémon from the future.\pThese Pokémon may resemble our own, but they have adapted to advanced technology and draw strength from electricity. It's fascinating.\pIn order to bring them to our time, I need to have a modern Pokémon whose lineage can be traced forward in order to scan the timeline.") 
+}
+//Pokémon
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroDoYouHaveFuturePokemon {
+    format("Turo: You clearly are very knowledgeable.\pIf you bring me a Pokémon with a future counterpart, I can scan the timeline and bring a Paradox Pokémon from the future back to our time.\pDo you think you have such a candidate?")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroAreYouInterested {
+    format("Turo: Our time machine is capable of taking a modern Pokémon and scanning the timeline to find a descendant of it from the future.\pAre you interested in using the time machine?")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroProveYourself {
+    format("Turo: Even if you've found a Pokémon with a future counterpart, it may not be prudent to bring a Paradox Pokémon back to our time.\pIt takes a clever and resourceful trainer to control a Pokémon from another time.\pBefore running the time machine, I will need to be sure you can handle it.\pIf you can defeat my team of advanced Pokémon, I will allow you one use of my time machine. Is that satisfactory?")
+}    
+    
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWithPokemon {
+    format("Turo: I see. If you do capture a Pokémon with a counterpart in the future, I may be able to use it to find a new Paradox Pokémon.")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWhenReady {
+    format("Turo: I see. If you do believe you are capable of defeating me and bringing back a Paradox Pokémon, you can find me here.")
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade {
+    special(ChoosePartyMon)
+    waitstate
+    if(var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWithPokemon)
+        waitmessage
+        // applymovement(LOCALID_TURO, Common_Movement_FaceOriginalDirection)
+        releaseall
+        end
+    }
+    special(GetTradeSpecies)
+    copyvar(TEMPVAR_TradeCandidate,VAR_0x8004)
+    switch(var(TEMPVAR_TradeCandidate)) {
+        case PARTY_NOTHING_CHOSEN:
+            msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWithPokemon)
+            break
+        default:
+            break
+    }
+}
