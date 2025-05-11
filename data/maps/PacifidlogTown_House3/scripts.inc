@@ -15,164 +15,166 @@ PacifidlogTown_House3_EventScript_Trader::
 # 8 "data/maps/PacifidlogTown_House3/scripts.pory"
 	goto_if_set FLAG_PACIFIDLOG_NPC_TRADE_COMPLETED, PacifidlogTown_House3_EventScript_TradeCompleted
 # 9 "data/maps/PacifidlogTown_House3/scripts.pory"
-	setvar VAR_0x8008, INGAME_TRADE_HORSEA
+	setvar VAR_0x8003, 1
 # 10 "data/maps/PacifidlogTown_House3/scripts.pory"
-	copyvar VAR_0x8004, VAR_0x8008
+	setvar VAR_0x8008, INGAME_TRADE_HORSEA
 # 11 "data/maps/PacifidlogTown_House3/scripts.pory"
-	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
-# 12 "data/maps/PacifidlogTown_House3/scripts.pory"
-	copyvar VAR_0x8009, VAR_RESULT
-# 13 "data/maps/PacifidlogTown_House3/scripts.pory"
-	msgbox PacifidlogTown_House3_Text_WillingToTradeIt, MSGBOX_YESNO
-# 14 "data/maps/PacifidlogTown_House3/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, PacifidlogTown_House3_EventScript_DeclineTrade
-# 15 "data/maps/PacifidlogTown_House3/scripts.pory"
-	special ChoosePartyMon
-# 16 "data/maps/PacifidlogTown_House3/scripts.pory"
-	waitstate
-# 17 "data/maps/PacifidlogTown_House3/scripts.pory"
-	copyvar VAR_0x800A, VAR_0x8004
-# 18 "data/maps/PacifidlogTown_House3/scripts.pory"
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, PacifidlogTown_House3_EventScript_DeclineTrade
-# 19 "data/maps/PacifidlogTown_House3/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
-# 20 "data/maps/PacifidlogTown_House3/scripts.pory"
-	specialvar VAR_RESULT, GetTradeSpecies
-# 21 "data/maps/PacifidlogTown_House3/scripts.pory"
-	copyvar VAR_0x800B, VAR_RESULT
-# 22 "data/maps/PacifidlogTown_House3/scripts.pory"
-	goto_if_ne VAR_RESULT, VAR_0x8009, PacifidlogTown_House3_EventScript_NotRequestedMon
-# 23 "data/maps/PacifidlogTown_House3/scripts.pory"
 	copyvar VAR_0x8004, VAR_0x8008
-# 24 "data/maps/PacifidlogTown_House3/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
-# 25 "data/maps/PacifidlogTown_House3/scripts.pory"
-	special CreateInGameTradePokemon
-# 26 "data/maps/PacifidlogTown_House3/scripts.pory"
-	special DoInGameTradeScene
-# 27 "data/maps/PacifidlogTown_House3/scripts.pory"
+# 12 "data/maps/PacifidlogTown_House3/scripts.pory"
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+# 13 "data/maps/PacifidlogTown_House3/scripts.pory"
+	copyvar VAR_0x8009, VAR_RESULT
+# 14 "data/maps/PacifidlogTown_House3/scripts.pory"
+	msgbox PacifidlogTown_House3_Text_WillingToTradeIt, MSGBOX_YESNO
+# 15 "data/maps/PacifidlogTown_House3/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, PacifidlogTown_House3_EventScript_DeclineTrade
+# 16 "data/maps/PacifidlogTown_House3/scripts.pory"
+	special ChoosePartyMon
+# 17 "data/maps/PacifidlogTown_House3/scripts.pory"
 	waitstate
+# 18 "data/maps/PacifidlogTown_House3/scripts.pory"
+	copyvar VAR_0x800A, VAR_0x8004
+# 19 "data/maps/PacifidlogTown_House3/scripts.pory"
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, PacifidlogTown_House3_EventScript_DeclineTrade
+# 20 "data/maps/PacifidlogTown_House3/scripts.pory"
+	copyvar VAR_0x8005, VAR_0x800A
+# 21 "data/maps/PacifidlogTown_House3/scripts.pory"
+	specialvar VAR_RESULT, GetTradeSpecies
+# 22 "data/maps/PacifidlogTown_House3/scripts.pory"
+	copyvar VAR_0x800B, VAR_RESULT
+# 23 "data/maps/PacifidlogTown_House3/scripts.pory"
+	goto_if_ne VAR_RESULT, VAR_0x8009, PacifidlogTown_House3_EventScript_NotRequestedMon
+# 24 "data/maps/PacifidlogTown_House3/scripts.pory"
+	copyvar VAR_0x8004, VAR_0x8008
+# 25 "data/maps/PacifidlogTown_House3/scripts.pory"
+	copyvar VAR_0x8005, VAR_0x800A
+# 26 "data/maps/PacifidlogTown_House3/scripts.pory"
+	special CreateInGameTradePokemon
+# 27 "data/maps/PacifidlogTown_House3/scripts.pory"
+	special DoInGameTradeScene
 # 28 "data/maps/PacifidlogTown_House3/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_0x8009
+	waitstate
 # 29 "data/maps/PacifidlogTown_House3/scripts.pory"
-	msgbox PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou, MSGBOX_DEFAULT
-# 30 "data/maps/PacifidlogTown_House3/scripts.pory"
-	setflag FLAG_PACIFIDLOG_NPC_TRADE_COMPLETED
-# 31 "data/maps/PacifidlogTown_House3/scripts.pory"
-	release
-# 32 "data/maps/PacifidlogTown_House3/scripts.pory"
-	end
-# 33 "data/maps/PacifidlogTown_House3/scripts.pory"
-
-# 34 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_EventScript_DeclineTrade::
-# 35 "data/maps/PacifidlogTown_House3/scripts.pory"
-	msgbox PacifidlogTown_House3_Text_NotDesperateOrAnything, MSGBOX_DEFAULT
-# 36 "data/maps/PacifidlogTown_House3/scripts.pory"
-	release
-# 37 "data/maps/PacifidlogTown_House3/scripts.pory"
-	end
-# 38 "data/maps/PacifidlogTown_House3/scripts.pory"
-
-# 39 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_EventScript_NotRequestedMon::
-# 40 "data/maps/PacifidlogTown_House3/scripts.pory"
 	bufferspeciesname STR_VAR_1, VAR_0x8009
+# 30 "data/maps/PacifidlogTown_House3/scripts.pory"
+	msgbox PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou, MSGBOX_DEFAULT
+# 31 "data/maps/PacifidlogTown_House3/scripts.pory"
+	setflag FLAG_PACIFIDLOG_NPC_TRADE_COMPLETED
+# 32 "data/maps/PacifidlogTown_House3/scripts.pory"
+	release
+# 33 "data/maps/PacifidlogTown_House3/scripts.pory"
+	end
+# 34 "data/maps/PacifidlogTown_House3/scripts.pory"
+
+# 35 "data/maps/PacifidlogTown_House3/scripts.pory"
+PacifidlogTown_House3_EventScript_DeclineTrade::
+# 36 "data/maps/PacifidlogTown_House3/scripts.pory"
+	msgbox PacifidlogTown_House3_Text_NotDesperateOrAnything, MSGBOX_DEFAULT
+# 37 "data/maps/PacifidlogTown_House3/scripts.pory"
+	release
+# 38 "data/maps/PacifidlogTown_House3/scripts.pory"
+	end
+# 39 "data/maps/PacifidlogTown_House3/scripts.pory"
+
+# 40 "data/maps/PacifidlogTown_House3/scripts.pory"
+PacifidlogTown_House3_EventScript_NotRequestedMon::
 # 41 "data/maps/PacifidlogTown_House3/scripts.pory"
-	msgbox PacifidlogTown_House3_Text_WontAcceptAnyLessThanRealMon, MSGBOX_DEFAULT
+	bufferspeciesname STR_VAR_1, VAR_0x8009
 # 42 "data/maps/PacifidlogTown_House3/scripts.pory"
-	release
+	msgbox PacifidlogTown_House3_Text_WontAcceptAnyLessThanRealMon, MSGBOX_DEFAULT
 # 43 "data/maps/PacifidlogTown_House3/scripts.pory"
-	end
-# 44 "data/maps/PacifidlogTown_House3/scripts.pory"
-
-# 45 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_EventScript_TradeCompleted::
-# 46 "data/maps/PacifidlogTown_House3/scripts.pory"
-	msgbox PacifidlogTown_House3_Text_ReallyWantedToGetBagon, MSGBOX_DEFAULT
-# 47 "data/maps/PacifidlogTown_House3/scripts.pory"
 	release
+# 44 "data/maps/PacifidlogTown_House3/scripts.pory"
+	end
+# 45 "data/maps/PacifidlogTown_House3/scripts.pory"
+
+# 46 "data/maps/PacifidlogTown_House3/scripts.pory"
+PacifidlogTown_House3_EventScript_TradeCompleted::
+# 47 "data/maps/PacifidlogTown_House3/scripts.pory"
+	msgbox PacifidlogTown_House3_Text_ReallyWantedToGetBagon, MSGBOX_DEFAULT
 # 48 "data/maps/PacifidlogTown_House3/scripts.pory"
-	end
+	release
 # 49 "data/maps/PacifidlogTown_House3/scripts.pory"
-
-# 50 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_EventScript_Girl::
-# 51 "data/maps/PacifidlogTown_House3/scripts.pory"
-	msgbox PacifidlogTown_House3_Text_IsThatAPokedex, MSGBOX_NPC
-# 52 "data/maps/PacifidlogTown_House3/scripts.pory"
 	end
+# 50 "data/maps/PacifidlogTown_House3/scripts.pory"
+
+# 51 "data/maps/PacifidlogTown_House3/scripts.pory"
+PacifidlogTown_House3_EventScript_Girl::
+# 52 "data/maps/PacifidlogTown_House3/scripts.pory"
+	msgbox PacifidlogTown_House3_Text_IsThatAPokedex, MSGBOX_NPC
 # 53 "data/maps/PacifidlogTown_House3/scripts.pory"
-
+	end
 # 54 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_Text_WillingToTradeIt:
+
 # 55 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "Check out this {STR_VAR_2}!\p"
+PacifidlogTown_House3_Text_WillingToTradeIt:
 # 56 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "It's the {STR_VAR_2} that I caught\n"
+	.string "Check out this {STR_VAR_2}!\p"
 # 57 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "yesterday to celebrate my birthday!\p"
+	.string "It's the {STR_VAR_2} that I caught\n"
 # 58 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "Oh, I can see that you want it!\n"
+	.string "yesterday to celebrate my birthday!\p"
 # 59 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "After all, it's priceless!\p"
+	.string "Oh, I can see that you want it!\n"
 # 60 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "I'll tell you what. I might be willing\n"
+	.string "After all, it's priceless!\p"
 # 61 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "to trade it for a {STR_VAR_1}.$"
+	.string "I'll tell you what. I might be willing\n"
 # 62 "data/maps/PacifidlogTown_House3/scripts.pory"
-
+	.string "to trade it for a {STR_VAR_1}.$"
 # 63 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou:
+
 # 64 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "Oh, so this is a {STR_VAR_1}?\p"
+PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou:
 # 65 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "It's sort of like a {STR_VAR_2},\n"
+	.string "Oh, so this is a {STR_VAR_1}?\p"
 # 66 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "and yet it's subtly different.\p"
+	.string "It's sort of like a {STR_VAR_2},\n"
 # 67 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "Thank you!$"
+	.string "and yet it's subtly different.\p"
 # 68 "data/maps/PacifidlogTown_House3/scripts.pory"
-
+	.string "Thank you!$"
 # 69 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_Text_WontAcceptAnyLessThanRealMon:
+
 # 70 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "No, no, no! I won't accept any\n"
+PacifidlogTown_House3_Text_WontAcceptAnyLessThanRealMon:
 # 71 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "less than a real {STR_VAR_1}!$"
+	.string "No, no, no! I won't accept any\n"
 # 72 "data/maps/PacifidlogTown_House3/scripts.pory"
-
+	.string "less than a real {STR_VAR_1}!$"
 # 73 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_Text_NotDesperateOrAnything:
+
 # 74 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "Oh, so you're not going to go through\n"
+PacifidlogTown_House3_Text_NotDesperateOrAnything:
 # 75 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "with this?\p"
+	.string "Oh, so you're not going to go through\n"
 # 76 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "That's cool. I'm not desperate to make\n"
+	.string "with this?\p"
 # 77 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "a trade or anything.$"
+	.string "That's cool. I'm not desperate to make\n"
 # 78 "data/maps/PacifidlogTown_House3/scripts.pory"
-
+	.string "a trade or anything.$"
 # 79 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_Text_ReallyWantedToGetBagon:
-# 80 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "I know I could go looking for one\n"
-# 81 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "on my own, but…\p"
-# 82 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "But I really wanted to get a BAGON\n"
-# 83 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "that another TRAINER caught…$"
-# 84 "data/maps/PacifidlogTown_House3/scripts.pory"
 
+# 80 "data/maps/PacifidlogTown_House3/scripts.pory"
+PacifidlogTown_House3_Text_ReallyWantedToGetBagon:
+# 81 "data/maps/PacifidlogTown_House3/scripts.pory"
+	.string "I know I could go looking for one\n"
+# 82 "data/maps/PacifidlogTown_House3/scripts.pory"
+	.string "on my own, but…\p"
+# 83 "data/maps/PacifidlogTown_House3/scripts.pory"
+	.string "But I really wanted to get a BAGON\n"
+# 84 "data/maps/PacifidlogTown_House3/scripts.pory"
+	.string "that another TRAINER caught…$"
 # 85 "data/maps/PacifidlogTown_House3/scripts.pory"
-PacifidlogTown_House3_Text_IsThatAPokedex:
+
 # 86 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "Is that a POKéDEX?\p"
+PacifidlogTown_House3_Text_IsThatAPokedex:
 # 87 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "Did you get to meet a lot of different\n"
+	.string "Is that a POKéDEX?\p"
 # 88 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "POKéMON?\p"
+	.string "Did you get to meet a lot of different\n"
 # 89 "data/maps/PacifidlogTown_House3/scripts.pory"
+	.string "POKéMON?\p"
+# 90 "data/maps/PacifidlogTown_House3/scripts.pory"
 	.string "I wish I was like you.$"

@@ -223,9 +223,9 @@ MauvilleCity_EventScript_Temporary::
 # 121 "data/maps/TradeCenter/scripts.pory"
 	lock
 # 127 "data/maps/TradeCenter/scripts.pory"
-	givemon SPECIES_HYDREIGON, 100, , , , 0, , , , , , , , , , , , , , MOVE_ORIGIN_PULSE, MOVE_HYPER_VOICE, MOVE_STRENGTH, MOVE_MAGICAL_TORQUE
+	givemon SPECIES_VOLBEAT, 100, , , , 0, , , , , , , , , , , , , , MOVE_ORIGIN_PULSE, MOVE_HYPER_VOICE, MOVE_STRENGTH, MOVE_MAGICAL_TORQUE
 # 128 "data/maps/TradeCenter/scripts.pory"
-	givemon SPECIES_TYRANITAR, 100, , , , 0, , , , , , , , , , , , , , MOVE_PSYSTRIKE
+	givemon SPECIES_SALAMENCE, 100, , , , 0, , , , , , , , , , , , , , MOVE_PSYSTRIKE
 # 129 "data/maps/TradeCenter/scripts.pory"
 	givemon SPECIES_KIRLIA, 100, , , , 0, , , , , , , , , , , , , , MOVE_ORIGIN_PULSE, MOVE_HYPER_VOICE, MOVE_STRENGTH, MOVE_MAGICAL_TORQUE
 # 130 "data/maps/TradeCenter/scripts.pory"

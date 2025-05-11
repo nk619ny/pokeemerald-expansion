@@ -3322,7 +3322,10 @@ static void BufferTradeSceneStrings(void)
     {
         ingameTrade = &sIngameTrades[gSpecialVar_0x8004];
         StringCopy(gStringVar1, ingameTrade->otName);
-        StringCopy_Nickname(gStringVar3, ingameTrade->nickname);
+        if (gSpecialVar_0x8003 != 36 && gSpecialVar_0x8003 != 37)
+        {
+            StringCopy_Nickname(gStringVar3, ingameTrade->nickname);
+        }
         GetMonData(&gPlayerParty[gSpecialVar_0x8005], MON_DATA_NICKNAME, name);
         StringCopy_Nickname(gStringVar2, name);
     }
@@ -3912,7 +3915,14 @@ static bool8 DoTradeAnim_Wireless(void)
         }
         break;
     case STATE_SEND_MSG:
+    if (gSpecialVar_0x8003 == 36  || gSpecialVar_0x8003 == 37)
+    {
+        StringExpandPlaceholders(gStringVar4, gText_XWillBeSentThroughTime);
+    }
+    else
+    {
         StringExpandPlaceholders(gStringVar4, gText_XWillBeSentToY);
+    }
         DrawTextOnTradeWindow(0, gStringVar4, 0);
 
         if (sTradeAnim->monSpecies[TRADE_PLAYER] != SPECIES_EGG)
@@ -4301,7 +4311,14 @@ static bool8 DoTradeAnim_Wireless(void)
                                       DISPCNT_BG0_ON |
                                       DISPCNT_BG2_ON |
                                       DISPCNT_OBJ_ON);
-        StringExpandPlaceholders(gStringVar4, gText_XSentOverY);
+        if (gSpecialVar_0x8003 == 36  || gSpecialVar_0x8003 == 37)
+        {
+            StringExpandPlaceholders(gStringVar4, gText_CameThroughTime);
+        }
+        else
+        {
+            StringExpandPlaceholders(gStringVar4, gText_XSentOverY);
+        }
         DrawTextOnTradeWindow(0, gStringVar4, 0);
         sTradeAnim->state = STATE_DELAY_FOR_MON_ANIM;
         sTradeAnim->timer = 0;
@@ -4324,7 +4341,14 @@ static bool8 DoTradeAnim_Wireless(void)
         if (sTradeAnim->timer == 250)
         {
             sTradeAnim->state++;
-            StringExpandPlaceholders(gStringVar4, gText_TakeGoodCareOfX);
+            if (gSpecialVar_0x8003 == 36  || gSpecialVar_0x8003 == 37)
+            {
+                StringExpandPlaceholders(gStringVar4, gText_YouveReceivedAParadox);
+            }
+            else
+            {
+                StringExpandPlaceholders(gStringVar4, gText_TakeGoodCareOfX);
+            }
             DrawTextOnTradeWindow(0, gStringVar4, 0);
             sTradeAnim->timer = 0;
         }
