@@ -318,6 +318,9 @@ static void Task_OpenCenterWhiteColumn(u8);
 static void Task_CloseCenterWhiteColumn(u8);
 static void CB2_SaveAndEndWirelessTrade(void);
 
+static void CreateInGameTradeParadoxPokemonInternal(u16 species);
+void CreateInGameTradeParadoxPokemon(void);
+
 #include "data/trade.h"
 
 static bool8 SendLinkData(const void *linkData, u32 size)
@@ -4519,6 +4522,24 @@ static void BufferInGameTradeMonName(void)
     StringCopy(gStringVar2, GetSpeciesName(inGameTrade->species));
 }
 
+static void CreateInGameTradeParadoxPokemonInternal(u16 species)
+{
+    struct Pokemon *pokemon = &gEnemyParty[0];
+    u8 metLocation = METLOC_IN_GAME_TRADE;
+
+    // Create the Pokémon with the player's OT_ID
+    CreateMon(pokemon, species, 70, USE_RANDOM_IVS, TRUE, 0, OT_ID_PLAYER_ID, 0);
+
+    // Set additional Pokémon data
+    SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
+    CalculateMonStats(pokemon);
+}
+
+void CreateInGameTradeParadoxPokemon(void)
+{
+    CreateInGameTradeParadoxPokemonInternal(gSpecialVar_0x8008);
+}
+
 static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTrade)
 {
     const struct InGameTrade *inGameTrade = &sIngameTrades[whichInGameTrade];
@@ -4530,7 +4551,7 @@ static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTr
     struct Pokemon *pokemon = &gEnemyParty[0];
 
     CreateMon(pokemon, inGameTrade->species, level, USE_RANDOM_IVS, TRUE, inGameTrade->personality, OT_ID_PRESET, inGameTrade->otId);
-
+    
     //SetMonData(pokemon, MON_DATA_HP_IV, &inGameTrade->ivs[0]);
     //SetMonData(pokemon, MON_DATA_ATK_IV, &inGameTrade->ivs[1]);
     //SetMonData(pokemon, MON_DATA_DEF_IV, &inGameTrade->ivs[2]);
@@ -4566,6 +4587,7 @@ static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTr
     }
     CalculateMonStats(&gEnemyParty[0]);
 }
+
 
 static void GetInGameTradeMail(struct Mail *mail, const struct InGameTrade *trade)
 {

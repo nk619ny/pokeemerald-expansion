@@ -1628,6 +1628,9 @@ extern const u8 gText_ByeByeVar1[];
 extern const u8 gText_XSentOverY[];
 extern const u8 gText_TakeGoodCareOfX[];
 extern const u8 gText_CommunicationStandby5[];
+extern const u8 gText_XWillBeSentThroughTime[];
+extern const u8 gText_CameThroughTime[];
+extern const u8 gText_YouveReceivedAParadox[];
 
 // match call
 extern const u8 MatchCall_WildBattleText1[];

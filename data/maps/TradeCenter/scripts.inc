@@ -222,17 +222,27 @@ Common_EventScript_CheckIfHideoutsComplete_4:
 MauvilleCity_EventScript_Temporary::
 # 121 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 126 "data/maps/TradeCenter/scripts.pory"
-	addvar VAR_LEVEL_CAP, 5
 # 127 "data/maps/TradeCenter/scripts.pory"
-	givemon SPECIES_CALYREX_SHADOW, 100, , , , 0, , , , , , , , , , , , , , MOVE_ORIGIN_PULSE, MOVE_HYPER_VOICE, MOVE_STRENGTH, MOVE_MAGICAL_TORQUE
+	givemon SPECIES_HYDREIGON, 100, , , , 0, , , , , , , , , , , , , , MOVE_ORIGIN_PULSE, MOVE_HYPER_VOICE, MOVE_STRENGTH, MOVE_MAGICAL_TORQUE
 # 128 "data/maps/TradeCenter/scripts.pory"
-	givemon SPECIES_MEWTWO, 100, , , , 0, , , , , , , , , , , , , , MOVE_PSYSTRIKE
-# 154 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_TYRANITAR, 100, , , , 0, , , , , , , , , , , , , , MOVE_PSYSTRIKE
+# 129 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_KIRLIA, 100, , , , 0, , , , , , , , , , , , , , MOVE_ORIGIN_PULSE, MOVE_HYPER_VOICE, MOVE_STRENGTH, MOVE_MAGICAL_TORQUE
+# 130 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_GALLADE, 100, , , , 0, , , , , , , , , , , , , , MOVE_PSYSTRIKE
+# 131 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_GARDEVOIR, 100, , , , 0, , , , , , , , , , , , , , MOVE_ORIGIN_PULSE, MOVE_HYPER_VOICE, MOVE_STRENGTH, MOVE_MAGICAL_TORQUE
+# 132 "data/maps/TradeCenter/scripts.pory"
+	setvar VAR_TEMP_2, SPECIES_IRON_VALIANT
+# 133 "data/maps/TradeCenter/scripts.pory"
+	bufferspeciesname STR_VAR_1, VAR_TEMP_2
+# 134 "data/maps/TradeCenter/scripts.pory"
+	msgbox MauvilleCity_EventScript_Temporary_Text_0, MSGBOX_DEFAULT
+# 160 "data/maps/TradeCenter/scripts.pory"
 	waitmessage
-# 155 "data/maps/TradeCenter/scripts.pory"
+# 161 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 156 "data/maps/TradeCenter/scripts.pory"
+# 162 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
@@ -245,6 +255,10 @@ Common_EventScript_LevelCapUpdate_Text_0:
 Common_EventScript_SetFlashTest_Text_0:
 # 96 "data/maps/TradeCenter/scripts.pory"
 	.string "Do you have flash?$"
+
+MauvilleCity_EventScript_Temporary_Text_0:
+# 134 "data/maps/TradeCenter/scripts.pory"
+	.string "You have received a {STR_VAR_1}$"
 
 Common_Text_CaveIsDarkUseFlash::
 # 62 "data/maps/TradeCenter/scripts.pory"
