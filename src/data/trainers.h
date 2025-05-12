@@ -14899,7 +14899,7 @@ F_TRAINER_FEMALE |
 #line 6183
             .ability = ABILITY_LEVITATE,
 #line 6181
-            .lvl = 72,
+            .lvl = 71,
 #line 6182
             .ball = ITEM_MOON_BALL,
 #line 6185
@@ -14926,7 +14926,7 @@ F_TRAINER_FEMALE |
 #line 6195
             .ability = ABILITY_SHELL_ARMOR,
 #line 6193
-            .lvl = 71,
+            .lvl = 70,
 #line 6194
             .ball = ITEM_MOON_BALL,
 #line 6197
@@ -14954,7 +14954,7 @@ F_TRAINER_FEMALE |
 #line 6207
             .ability = ABILITY_MAGIC_BOUNCE,
 #line 6205
-            .lvl = 71,
+            .lvl = 70,
 #line 6206
             .ball = ITEM_MOON_BALL,
 #line 6209
@@ -14981,7 +14981,7 @@ F_TRAINER_FEMALE |
 #line 6219
             .ability = ABILITY_SHADOW_TAG,
 #line 6217
-            .lvl = 71,
+            .lvl = 70,
 #line 6218
             .ball = ITEM_MOON_BALL,
 #line 6221
@@ -15008,7 +15008,7 @@ F_TRAINER_FEMALE |
 #line 6231
             .ability = ABILITY_UNAWARE,
 #line 6229
-            .lvl = 73,
+            .lvl = 72,
 #line 6230
             .ball = ITEM_MOON_BALL,
 #line 6233
@@ -15035,7 +15035,7 @@ F_TRAINER_FEMALE |
 #line 6243
             .ability = ABILITY_AS_ONE_ICE_RIDER,
 #line 6241
-            .lvl = 71,
+            .lvl = 70,
 #line 6242
             .ball = ITEM_MOON_BALL,
 #line 6245
