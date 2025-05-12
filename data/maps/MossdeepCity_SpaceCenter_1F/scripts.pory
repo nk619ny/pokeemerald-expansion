@@ -445,11 +445,11 @@ text MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel {
 }
 
 script MossdeepCity_EventScript_LeftSign{
-	msgbox(format("Mossdeep City Science Center\lSpace Department"),MSGBOX_SIGN)
+	msgbox(format("Mossdeep City Science Center\nSpace Department"),MSGBOX_SIGN)
 	end
 }
 
 script MossdeepCity_EventScript_RightSign{
-	msgbox(format("Mossdeep City Science Center\lTime Department"),MSGBOX_SIGN)
+	msgbox(format("Mossdeep City Science Center\nTime Department"),MSGBOX_SIGN)
 	end
 }

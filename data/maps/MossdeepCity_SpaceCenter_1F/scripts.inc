@@ -885,12 +885,12 @@ MossdeepCity_EventScript_RightSign::
 
 MossdeepCity_EventScript_LeftSign_Text_0:
 # 448 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Mossdeep City Science Center\l"
+	.string "Mossdeep City Science Center\n"
 	.string "Space Department$"
 
 MossdeepCity_EventScript_RightSign_Text_0:
 # 453 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "Mossdeep City Science Center\l"
+	.string "Mossdeep City Science Center\n"
 	.string "Time Department$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice::

@@ -139,13 +139,31 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence3 {
 }
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence4 {
+    lockall
+    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroChampionNow,MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES) {
+        trainerbattle_single(TRAINER_TURO_2,MossdeepCity_SpaceCenter_2F_R_Text_TuroNotLikeLastTime,MossdeepCity_SpaceCenter_2F_R_Text_TuroDefeated,MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence5)
+    } 
+    else {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWhenReady)
+        waitmessage
+    }
     releaseall
     end
 }
 
-script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada {
-    lockall
-    faceplayer
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence5 {
+    setvar(VAR_TURO_STATE,5)
+    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroDoYouHaveFuturePokemon,MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES) {
+        goto(MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade)
+    } 
+    else {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWithPokemon)
+    }
+    // applymovement(LOCALID_TURO, Common_Movement_FaceOriginalDirection)
+    waitmessage
     releaseall
     end
 }
@@ -184,6 +202,14 @@ text MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWhenReady {
 
 text MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackChangedMind {
     format("Turo: I see. When you are ready to use the time machine, you can find me here.")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroChampionNow {
+    format("Turo: Ah, {PLAYER}. I have good news.\pProfessor Sada and I have been able to upgrade the time machine to allow for unlimited access to Paradox Pokémon.\pIt appears that you have grown considerably as well.\pYou may be ready to wield the responsibility of the time machine.\pHowever, I would like to test your abilities one last time before I allow that.\pHow about it - are you ready for a battle?")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_TuroNotLikeLastTime {
+    format("Turo: This time, I'll be showing you the full might of futuristic technology.\pI hope you are ready for a challenge!")
 }
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade {
@@ -250,17 +276,24 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade {
         end
     }
     else{
-        lockall
-        msgbox(format("Turo: At the moment, we only have enough power for one pull from the future. Are you sure?"),MSGBOX_YESNO)
-        if(var(VAR_RESULT) == NO) {
-            msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackChangedMind)
-            closemessage
-            releaseall
-            end
+        if(var(VAR_TURO_STATE) == 2) {
+            lockall
+            msgbox(format("Turo: At the moment, we only have enough power for one pull from the future. Are you sure?"),MSGBOX_YESNO)
+            if(var(VAR_RESULT) == NO) {
+                msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackChangedMind)
+                closemessage
+                releaseall
+                end
+            }
+            else {
+                copyvar(SpecVar_TradeMonToReceive, TempVar_ParadoxSpecies)
+                setvar(VAR_TURO_STATE,3)
+                special(CreateInGameTradeParadoxPokemon)
+                special(DoInGameTradeScene)
+            }
         }
         else {
             copyvar(SpecVar_TradeMonToReceive, TempVar_ParadoxSpecies)
-            setvar(VAR_TURO_STATE,3)
             special(CreateInGameTradeParadoxPokemon)
             special(DoInGameTradeScene)
         }
@@ -298,4 +331,267 @@ text MossdeepCity_SpaceCenter_2F_R_Text_TuroTrySada {
 
 text MossdeepCity_SpaceCenter_2F_R_Text_TuroEnjoyParadox {
     format("Turo: You now have an extremely rare Pokémon from the future.\pI hope it brings you a more refined understanding of how dynamic the relationship between Pokémon and our society is.")
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada {
+    lockall
+    faceplayer
+    waitmovement(0)
+    switch (var(VAR_SADA_STATE)) {
+        case 0:
+            msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaFirstMeeting,MSGBOX_NPC)
+            setvar(VAR_SADA_STATE, 1)
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1)
+            break
+        case 1:
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1)
+            break
+        case 2:
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2)
+            break
+        case 3:
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence3)
+            break
+        case 4:
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4)
+            break
+        default:
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1 {
+    lockall
+    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaAreYouInterested, MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaProveYourself, MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaBattle)
+        } else {
+            msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWhenReady)
+        }
+    } else {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon)
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaBattle {
+    trainerbattle_single(TRAINER_SADA_1, MossdeepCity_SpaceCenter_2F_R_Text_SadaIntro, MossdeepCity_SpaceCenter_2F_R_Text_SadaDefeated, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2)
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2 {
+    setvar(VAR_SADA_STATE, 2)
+    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon, MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        goto(MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade)
+    } else {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon)
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence3 {
+    if (flag(FLAG_IS_CHAMPION) == TRUE) {
+        setvar(VAR_SADA_STATE, 4)
+        goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4)
+    } else {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaEnjoyParadox, MSGBOX_NPC)
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4 {
+    lockall
+    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaChampionNow, MSGBOX_YESNO)
+    waitmessage
+    if (var(VAR_RESULT) == YES) {
+        trainerbattle_single(TRAINER_SADA_2, MossdeepCity_SpaceCenter_2F_R_Text_SadaNotLikeLastTime, MossdeepCity_SpaceCenter_2F_R_Text_SadaDefeated, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence5)
+    } else {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWhenReady)
+        waitmessage
+    }
+    releaseall
+    end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence5 {
+    setvar(VAR_SADA_STATE, 5)
+    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon, MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        goto(MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade)
+    } else {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon)
+    }
+    waitmessage
+    releaseall
+    end
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaIntro {
+    format("Sada: Watch out for our primal strength!")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaDefeated {
+    format("You've learned something from our ancestors.")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaFirstMeeting {
+    format("Good to meet you. I'm Professor Sada.\pI study Pokémon's past, to learn more about their nature.\pMy friend Professor Turo and I developed a time machine capable of retrieving Pokémon from the past.\pThese Pokémon may resemble our own, but they were adapted to ancient environments and drew strength from the sun. It's awe-inspiring.\pIn order to bring them to our time, I need to have a modern Pokémon whose lineage can be traced backward in order to scan the timeline.")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaAreYouInterested {
+    format("Sada: Our time machine is capable of taking a modern Pokémon and scanning the timeline to find one of its ancestors from the past.\pDo you want to use the time machine?")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaProveYourself {
+    format("Sada: Even if you have a Pokémon whose ancestry we can track, you might not be ready to handle a Paradox Pokémon.\pIt takes a strong will to control a Pokémon from another time.\pBefore using the time machine, I want to see that you can handle it.\pIf you can defeat my team of ancient Pokémon, you can use the time machine once. Do we have a deal?")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon {
+    format("Sada: Okay. If you can hunt down a Pokémon with a counterpart in the past, I can use it to find a new Paradox Pokémon.")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWhenReady {
+    format("Sada: Fine. If you're bold enough to take me on to get a Paradox Pokémon, I'll be here.")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaChampionNow {
+    format("Sada: Hey, {PLAYER}. Good news.\pProfessor Turo and I upgraded the time machine so that we can access multiple Paradox Pokémon.\pYou seem more fierce, too.\pMaybe you can handle the time machine.\pBut there's no way I'd let you use it without seeing for myself, first.\pHow about it - are you ready for a battle?")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaNotLikeLastTime {
+    format("Sada: This time, I'll be showing you the full might of the ancient past.\pYou better bring everything you have!")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaEnjoyParadox {
+    format("Sada: You've tamed an ancient Pokémon.\pUse its strength well, and take inspiration from what has come before.")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon {
+    format("Sada: Alright, you know how to handle yourself.\pIf you bring me a Pokémon with an ancient predecessor, I can scan the timeline and bring a Paradox Pokémon from the past back to our time.\pDo you think you have the right Pokémon?")
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade {
+    lockall
+    special(ChoosePartyMon)
+    waitstate
+    if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+        lockall
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon)
+        waitmessage
+        releaseall
+        end
+    }
+    copyvar(VAR_0x8005, VAR_0x8004)
+    specialvar(TempVar_TradeCandidate, GetTradeSpecies)
+    setvar(VAR_0x8003, 36)
+    switch (var(TempVar_TradeCandidate)) {
+        case SPECIES_DONPHAN:
+            setvar(TempVar_ParadoxSpecies, SPECIES_GREAT_TUSK)
+        case SPECIES_VOLCARONA:
+            setvar(TempVar_ParadoxSpecies, SPECIES_SLITHER_WING)
+        case SPECIES_AMOONGUSS:
+            setvar(TempVar_ParadoxSpecies, SPECIES_BRUTE_BONNET)
+        case SPECIES_SALAMENCE:
+            setvar(TempVar_ParadoxSpecies, SPECIES_ROARING_MOON)
+        case SPECIES_JIGGLYPUFF:
+        case SPECIES_WIGGLYTUFF:
+            setvar(TempVar_ParadoxSpecies, SPECIES_SCREAM_TAIL)
+        case SPECIES_MISDREAVUS:
+        case SPECIES_MISMAGIUS:
+            setvar(TempVar_ParadoxSpecies, SPECIES_FLUTTER_MANE)
+        case SPECIES_MAGNETON:
+        case SPECIES_MAGNEZONE:
+            setvar(TempVar_ParadoxSpecies, SPECIES_SANDY_SHOCKS)
+        case SPECIES_SUICUNE:
+            setvar(TempVar_ParadoxSpecies, SPECIES_WALKING_WAKE)
+        case SPECIES_ENTEI:
+            setvar(TempVar_ParadoxSpecies, SPECIES_GOUGING_FIRE)
+        case SPECIES_RAIKOU:
+            setvar(TempVar_ParadoxSpecies, SPECIES_RAGING_BOLT)
+        case SPECIES_HYDREIGON:
+        case SPECIES_DELIBIRD:
+        case SPECIES_HARIYAMA:
+        case SPECIES_TYRANITAR:
+        case SPECIES_VIRIZION:
+        case SPECIES_TERRAKION:
+        case SPECIES_COBALION:
+        case SPECIES_GARDEVOIR:
+        case SPECIES_GALLADE:
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaTryTuro)
+        default:
+            goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaNotAParadox)
+    }
+    bufferspeciesname(STR_VAR_3, TempVar_ParadoxSpecies)
+    special(BufferMonNickname)
+    lockall
+    msgbox(format("Sada: You want to send your {STR_VAR_1} to the past, in exchange for a {STR_VAR_3}?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == NO) {
+        msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackChangedMind)
+        closemessage
+        releaseall
+        end
+    } else {
+        if (var(VAR_SADA_STATE) == 2) {
+            lockall
+            msgbox(format("Sada: At the moment, we only have enough power for one pull from the past. Are you sure?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == NO) {
+                msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackChangedMind)
+                closemessage
+                releaseall
+                end
+            } 
+            else {
+                copyvar(SpecVar_TradeMonToReceive, TempVar_ParadoxSpecies)
+                setvar(VAR_SADA_STATE, 3)
+                special(CreateInGameTradeParadoxPokemon)
+                special(DoInGameTradeScene)
+            }
+        } 
+        else {
+            copyvar(SpecVar_TradeMonToReceive, TempVar_ParadoxSpecies)
+            special(CreateInGameTradeParadoxPokemon)
+            special(DoInGameTradeScene)
+        }
+    }
+    waitstate
+    releaseall
+    end
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaTryTuro {
+    lockall
+    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaTryTuro, MSGBOX_NPC)
+    closemessage
+    releaseall
+    end
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaTryTuro {
+    format("Sada: Sorry, I haven't found any ancestors of that Pokémon.\pMaybe you should speak with Professor Turo. He might have something helpful there.")
+}
+
+script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaNotAParadox {
+    lockall
+    msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaNotAParadox, MSGBOX_NPC)
+    closemessage
+    releaseall
+    end
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaNotAParadox {
+    format("Sada: Unfortunately, I have not discovered an ancient equivalent for that Pokémon.\pCome back if you want me to check another Pokémon of yours.")
+}
+
+text MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackChangedMind {
+    format("Sada: Alright, when you are ready to use the time machine, you can find me here.")
 }
