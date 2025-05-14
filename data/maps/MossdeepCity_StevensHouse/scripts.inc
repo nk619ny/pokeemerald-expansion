@@ -55,7 +55,7 @@ MossdeepCity_StevensHouse_EventScript_SetStevenPos::
 # 28 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 MossdeepCity_StevensHouse_OnFrame:
 # 29 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	map_script_2 VAR_STEVENS_HOUSE_STATE, 1, MossdeepCity_StevensHouse_EventScript_StevenGivesDive
+	map_script_2 VAR_STEVENS_HOUSE_STATE, 6, MossdeepCity_StevensHouse_EventScript_StevenGivesDive
 # 30 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	.2byte 0
 # 31 "data/maps/MossdeepCity_StevensHouse/scripts.pory"

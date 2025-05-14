@@ -671,7 +671,7 @@
 #define FLAG_HIDE_MAGMA_GLACIER  0x270 // formerly not used
 #define FLAG_HIDE_CABLE_CAR_ATTENDANT  0x271 // formerly not used
 #define FLAG_HIDE_TRAINER_HILL_AUDIENCE  0x272 // formerly not used
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
+#define FLAG_MOSSDEEP_GYM_B2B_1  0x273 // formerly not used
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag

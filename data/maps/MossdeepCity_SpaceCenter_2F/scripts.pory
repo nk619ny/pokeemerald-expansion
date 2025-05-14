@@ -8,6 +8,7 @@ raw `
 .set LOCALID_GRUNT_5, 6
 .set LOCALID_GRUNT_7, 7
 .set LOCALID_TABITHA, 8
+.set LOCALID_COURTNEY, 8
 .set LOCALID_MAXIE, 9
 
 MossdeepCity_SpaceCenter_2F_MapScripts::
@@ -182,6 +183,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Tabitha::
 	release
 	end
 
+/*
 MossdeepCity_SpaceCenter_2F_EventScript_Maxie::
 	lockall
 	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere, MSGBOX_DEFAULT
@@ -203,6 +205,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Steven::
 	waitmovement 0
 	releaseall
 	end
+*/
 
 MossdeepCity_SpaceCenter_2F_EventScript_StevenFightMovementSouth::
 	applymovement LOCALID_STEVEN, MossdeepCity_SpaceCenter_2F_Movement_StevenFightSouth
@@ -258,7 +261,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle::
 	goto MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt
 
 MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
-	multi_2_vs_2 TRAINER_MAXIE_MOSSDEEP, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_TABITHA_MOSSDEEP, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_STEVEN
+	multi_2_vs_2 TRAINER_MAXIE_MOSSDEEP, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_COURTNEY_MOSSDEEP, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_STEVEN
 	switch VAR_RESULT
 	case 1, MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha
 	fadescreen FADE_TO_BLACK
@@ -359,29 +362,15 @@ MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets:
 	.string "It's an ideal location for launching\n"
 	.string "rockets.$"
 
-MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel:
-	.string "Why would TEAM MAGMA want to steal\n"
-	.string "our rocket fuel in the first place?$"
-
 MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut:
 	.string "If only I was a little younger, I would\n"
 	.string "have liked being an astronaut…\p"
 	.string "No… It's not too late!\n"
 	.string "I can and will try!$"
 
-MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis:
-	.string "If TEAM MAGMA takes the rocket fuel,\n"
-	.string "I won't be able to go to space!\p"
-	.string "They can't be allowed to get away\n"
-	.string "with such an outrage!$"
-
 MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace:
 	.string "I wish ordinary people could go into\n"
 	.string "space one day…$"
-
-MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace:
-	.string "TEAM MAGMA…\n"
-	.string "Do they want to go to space, too?$"
 
 MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn:
 	.string "What's wrong with you?\p"
@@ -503,30 +492,226 @@ MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
 	.string "Oh, yes, I don't live in RUSTBORO CITY.\n"
 	.string "I live right here on this island.$"
 
-/*
-Maxie: Courtney! Stop this!
-
-Courtney: This meteorite. It has a connection to a third ancient Pokémon. One that can tame the primal Groudon. If I take it, we can…
-
-Maxie: We were wrong. Our models did not fully comprehend the implications of land creation, and the power and will of Groudon was beyond our understanding. We need to surrender our ambitions before we make things even worse.
-
-Courtney: …
-
-Steven: Right now, Archie is on his way to awaken the ancient undersea Pokémon, Kyogre. As dangerous as it is to have Groudon wandering Hoenn, adding Kyogre to the mix will make the situation exponentially worse.
-
-Maxie: We will help. Based on weather patterns from our research, Kyogre is likely located in a seafloor cavern under Route 128. 
-
-Maxie: However, we shouldn’t be the ones to pursue them. Our presence will only antagonize Archie further, and make him even more unpredictable. If anyone can get through to him, it’s you, {PLAYER}. And this HM should let you and your Pokémon go after them.
-
-Steven: I will investigate this meteorite Courtney found. If there is some way to pacify Groudon, we’ll need to find it.
-
-Courtney has really stepped up. Team Magma will not surrender!  
-*/
-
-
 `
 
-text MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro {
-	format("Courtney: …You. You infiltrated the hideout. You interfered with Maxie awakening Groudon. Common denominator… you. Necessary condition: your removal.")
+
+const TempVar_PlayerLocation = VAR_TEMP_3
+
+script MossdeepCity_SpaceCenter_2F_EventScript_PlayerLocation1 {
+	setvar(TempVar_PlayerLocation, 1)
+	//call(MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle)
 }
 
+script MossdeepCity_SpaceCenter_2F_EventScript_PlayerLocation2 {
+	setvar(TempVar_PlayerLocation, 2)
+	//call(MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle)
+}
+
+script MossdeepCity_SpaceCenter_2F_EventScript_PlayerLocation3 {
+	setvar(TempVar_PlayerLocation, 3)
+	//call(MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle)
+}
+
+script MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle {
+	lock
+	addobject(LOCALID_STEVEN)
+	addobject(LOCALID_MAXIE)
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_MaxieStopThis, MSGBOX_DEFAULT)
+	applymovement(LOCALID_COURTNEY, Common_Movement_ExclamationMark)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(LOCALID_COURTNEY, Common_Movement_FaceRight)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
+	waitmessage
+	applymovement(LOCALID_STEVEN, MossdeepCity_SpaceCenter_2F_Movement_StevenMaxieEnter)
+	applymovement(LOCALID_MAXIE, MossdeepCity_SpaceCenter_2F_Movement_StevenMaxieEnter)
+	waitmovement(0)
+	applymovement(LOCALID_COURTNEY, Common_Movement_WalkInPlaceFasterRight)
+	waitmovement(0)
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_CourtneyMeteorite, MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(LOCALID_MAXIE, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement(0)
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_MaxieWeWereWrong, MSGBOX_DEFAULT)
+	waitmessage
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_CourtneySilent, MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterLeft)
+	waitmovement(0)
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_StevenArchieKyogre, MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(LOCALID_MAXIE, Common_Movement_WalkInPlaceFasterUp)
+	applymovement(LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement(0)
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_MaxieKyogreLocation, MSGBOX_DEFAULT)
+	waitmessage
+	switch(var(TempVar_PlayerLocation)) {
+		case 1:
+			applymovement(LOCALID_MAXIE, MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer1)
+		case 2:
+			applymovement(LOCALID_MAXIE, MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer2)
+		case 3:
+			applymovement(LOCALID_MAXIE, MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer3)
+	}
+	waitmovement(0)
+	switch(var(TempVar_PlayerLocation)) {
+		case 1:
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+		case 2:
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+		case 3:
+			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown)
+	}
+	applymovement(LOCALID_STEVEN, Common_Movement_FaceLeft)
+	applymovement(LOCALID_COURTNEY, Common_Movement_FaceDown)
+	waitmovement(0)
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_MaxiePlayerPursue, MSGBOX_DEFAULT)
+	waitmessage
+	giveitem(ITEM_HM08, 1)
+	waitfanfare
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_MaxieExplainDive, MSGBOX_DEFAULT)
+	waitmessage
+	switch(var(TempVar_PlayerLocation)) {
+		case 1:
+		case 2:
+			applymovement(LOCALID_STEVEN, MossdeepCity_SpaceCenter_2F_Movement_StevenApproachCourtney)
+		case 3:
+			applymovement(LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterLeft)
+	}
+	waitmovement(0)
+	applymovement(LOCALID_COURTNEY, Common_Movement_FaceRight)
+	waitmovement(0)
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_StevenInvestigateMeteorite, MSGBOX_DEFAULT)
+	waitmessage
+	setvar(VAR_LEVEL_CAP,75)
+	call(Common_EventScript_ApplyHandicap)
+	call(Common_EventScript_LevelCapUpdate)
+	call(MossdeepCity_SpaceCenter_2F_EventScript_SetPostMagmaFlags)
+	releaseall
+	end
+}
+
+script MossdeepCity_SpaceCenter_2F_EventScript_SetPostMagmaFlags {
+	setflag(FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA)
+	setflag(FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA)
+	setflag(FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA)
+	setflag(FLAG_DEFEATED_MAGMA_SPACE_CENTER)
+	setflag(FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN)
+	setflag(FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE)
+	clearflag(FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN)
+	setflag(FLAG_HIDE_MOSSDEEP_CITY_SCOTT)
+	setvar(VAR_MOSSDEEP_CITY_STATE, 3)
+	setvar(VAR_MOSSDEEP_SPACE_CENTER_STATE, 3)
+	setvar(VAR_STEVENS_HOUSE_STATE, 2)
+	setflag(FLAG_RECEIVED_HM_DIVE)
+	setflag(FLAG_OMIT_DIVE_FROM_STEVEN_LETTER)
+	setflag(FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT)
+	return
+}
+
+script MossdeepCity_SpaceCenter_2F_EventScript_Courtney {
+	trainerbattle_single(TRAINER_COURTNEY_MOSSDEEP, MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro, MossdeepCity_SpaceCenter_2F_Text_CourtneyDefeat,MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle)
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_CourtneyInFreeRoam, MSGBOX_NPC)
+	end
+}
+
+script MossdeepCity_SpaceCenter_2F_EventScript_Maxie {
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_MaxieInFreeRoam, MSGBOX_NPC)
+	end
+}
+
+script MossdeepCity_SpaceCenter_2F_EventScript_Steven {
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_StevenInFreeRoam, MSGBOX_NPC)
+	end
+}
+
+movement MossdeepCity_SpaceCenter_2F_Movement_StevenMaxieEnter {
+	walk_left * 6
+}
+
+movement MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer1  {
+	walk_left * 4
+	face_up
+}
+
+movement MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer2  {
+	walk_left * 2
+}
+
+movement MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer3  {
+	walk_left * 2
+	face_up
+}
+
+movement MossdeepCity_SpaceCenter_2F_Movement_StevenApproachCourtney {
+	walk_left * 2
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro {
+    format("Courtney: …You. You infiltrated the hideout. You interfered with Maxie awakening Groudon. Common denominator… you. Necessary condition: your removal.")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_CourtneyDefeat {
+	format("Courtney: Additional data collected. Success rate: 0%.")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_MaxieStopThis {
+    format("Maxie: Courtney! Stop this!")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_CourtneyMeteorite {
+    format("Courtney: This meteorite. It has a connection to a third ancient Pokémon. One that can tame the primal Groudon. If I obtain it, we can…")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_MaxieWeWereWrong {
+    format("Maxie: We were wrong. Our models did not fully comprehend the implications of land creation, and the power and will of Groudon was beyond our understanding. We need to surrender our ambitions before we make things even worse.")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_CourtneySilent {
+    format("Courtney: ...")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_StevenArchieKyogre {
+    format("Steven: Right now, Archie is on his way to awaken the ancient undersea Pokémon, Kyogre. As dangerous as it is to have Groudon wandering Hoenn, adding Kyogre to the mix will make the situation exponentially worse.")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_MaxieKyogreLocation {
+    format("Maxie: We will help. Based on weather patterns we've observed in our research, Kyogre is likely located in a seafloor cavern under Route 128.")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_MaxiePlayerPursue {
+    format("Maxie: However, we shouldn't be the ones to pursue them. Our presence will only antagonize Archie further, and render him even more unpredictable. If anyone can get through to him, it's you, {PLAYER}. And this HM should let you and your Pokémon go after them.")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_MaxieExplainDive {
+    format("Maxie: HM08 contains the move Dive. It will allow you and your Pokémon to follow Team Aqua to the seafloor cavern where they are searching for Kyogre.")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_StevenInvestigateMeteorite {
+    format("Steven: I will investigate this meteorite Courtney found. If there is some way to pacify Groudon, we'll need to find it.")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel {
+    format("Why would Team Magma want to steal a meteorite in the first place?")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace {
+    format("Team Magma… Are they just big fans of rocks?")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis {
+    format("The results of scientific exploration belong to all of humanity. Team Magma can't just take it for themselves!")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_CourtneyInFreeRoam {
+	format("Courtney: ...\pAll our work...")
+} 
+
+text MossdeepCity_SpaceCenter_2F_Text_MaxieInFreeRoam {
+	format("Maxie: After everything, it turned out I had much to learn.\pThank you, {PLAYER}. And good luck.")
+} 
+
+text MossdeepCity_SpaceCenter_2F_Text_StevenInFreeRoam {
+	format("Steven: There is something about this meteorite… I can feel it.")
+}

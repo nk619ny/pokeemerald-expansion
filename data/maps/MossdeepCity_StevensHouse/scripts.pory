@@ -26,7 +26,7 @@ MossdeepCity_StevensHouse_EventScript_SetStevenPos::
 	return
 
 MossdeepCity_StevensHouse_OnFrame:
-	map_script_2 VAR_STEVENS_HOUSE_STATE, 1, MossdeepCity_StevensHouse_EventScript_StevenGivesDive
+	map_script_2 VAR_STEVENS_HOUSE_STATE, 6, MossdeepCity_StevensHouse_EventScript_StevenGivesDive
 	.2byte 0
 
 MossdeepCity_StevensHouse_EventScript_StevenGivesDive::

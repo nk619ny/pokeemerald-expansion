@@ -55,6 +55,7 @@ MossdeepCity_Gym_EventScript_SetSwitch4Metatiles::
 	end
 
 MossdeepCity_Gym_EventScript_TateAndLiza::
+	//setvar VAR_STARTING_TERRAIN, STARTING_STATUS_PSYCHIC_TERRAIN
 	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_Gym_EventScript_TateAndLizaRematch
@@ -92,6 +93,9 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
+	setvar VAR_LEVEL_CAP, 73
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
 	release
 	end
 
@@ -320,6 +324,7 @@ MossdeepCity_Gym_EventScript_YellowFloorSwitch::
 	turnrotatingtileobjects
 	waitmovement 0
 	freerotatingtilepuzzle
+	//goto_if_unset FLAG_MOSSDEEP_GYM_B2B_1, MossdeepCity_Gym_EventScript_FirstBackToBack
 	end
 
 MossdeepCity_Gym_EventScript_BlueFloorSwitch::
@@ -551,6 +556,7 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "All right! I think I'll develop a special\n"
 	.string "invincible POKéMON power next.$"
 
+/*
 MossdeepCity_Gym_Text_TateAndLizaIntro:
 	.string "TATE: Hehehe… Were you surprised?\p"
 	.string "LIZA: Fufufu… Were you surprised?\p"
@@ -564,6 +570,7 @@ MossdeepCity_Gym_Text_TateAndLizaIntro:
 	.string "LIZA: All in our minds!\p"
 	.string "TATE: This combination of ours…\n"
 	.string "LIZA: Can you beat it?$"
+	*/
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
 	.string "TATE: What?! Our combination…\n"
@@ -575,12 +582,14 @@ MossdeepCity_Gym_Text_ReceivedMindBadge:
 	.string "{PLAYER} received the MIND BADGE\n"
 	.string "from TATE and LIZA.$"
 
+/*
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "TATE: The MIND BADGE enhances the\n"
 	.string "SP. ATK and SP. DEF of POKéMON.\p"
 	.string "LIZA: It also lets you use the HM move\n"
 	.string "DIVE outside of battle.\p"
 	.string "TATE: You should also take this, too.$"
+*/
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "TATE: That TM04 contains…\n"
@@ -597,7 +606,7 @@ MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 	.string "TATE: Looks like the bond between you\n"
-	.string "and your POKéMON is far stronger than\l"
+	.string "and your POKéMON can even rival\l"
 	.string "the bond that we share as twins.\p"
 	.string "LIZA: You will become even stronger!\n"
 	.string "We've battled you, so we know.$"
@@ -653,3 +662,11 @@ MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
 	.string "TATE: We need you to bring at least…\n"
 	.string "LIZA: Two POKéMON when you come back.$"
 `
+
+text MossdeepCity_Gym_Text_TateAndLizaIntro {
+	format("TATE: We were the first to master double battles…\pLIZA: Fighting perfectly in sync!\pTATE: Then the Hoenn League made it a rule!\pLIZA: So we had to advance further…\pTATE: We looked to the Science Center…\pLIZA: And devoted our psychic abilities to controlling Time…\pTATE: And Space!\pLIZA: Can you defeat this…\pTATE: Supernatural combination?")
+}
+
+text MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis {
+	format("TATE: The MIND BADGE lets you use the HM move DIVE outside of battle.\pLIZA: You should also take this, too.")
+}

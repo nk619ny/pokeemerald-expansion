@@ -4881,7 +4881,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .effect = EFFECT_CONFUSE,
         .power = 0,
         .type = B_UPDATED_MOVE_TYPES >= GEN_6 ? TYPE_FAIRY : TYPE_NORMAL,
-        .accuracy = 75,
+        .accuracy = B_CUSTOMIZED_MOVE_STATS == TRUE ? 100 : 75,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

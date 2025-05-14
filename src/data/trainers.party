@@ -6177,18 +6177,6 @@ Mugshot: Purple
 Starting Status: STARTING_STATUS_TRICK_ROOM
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lunatone @ Psychic Seed  
-Level: 71
-Ball: Moon Ball
-Ability: Levitate  
-EVs: 252 HP / 4 Def / 252 SpA  
-Quiet Nature  
-IVs: 0 Atk / 0 Spe  
-- Ancient Power  
-- Cosmic Power  
-- Stored Power  
-- Moonlight  
-
 Slowbro @ Slowbronite  
 Level: 70
 Ball: Moon Ball
@@ -6201,7 +6189,7 @@ IVs: 0 Atk / 0 Spe
 - Expanding Force  
 - Body Press  
 
-Hatterene (F) @ Light Clay
+Hatterene (F) @ Terrain Extender
 Level: 70
 Ball: Moon Ball
 Ability: Magic Bounce  
@@ -6211,7 +6199,19 @@ IVs: 0 Atk / 0 Spe
 - Trick Room  
 - Dazzling Gleam  
 - Expanding Force  
-- Light Screen 
+- Psychic Terrain 
+
+Lunatone @ Psychic Seed  
+Level: 71
+Ball: Moon Ball
+Ability: Levitate  
+EVs: 252 HP / 4 Def / 252 SpA  
+Quiet Nature  
+IVs: 0 Atk / 0 Spe  
+- Ancient Power  
+- Cosmic Power  
+- Stored Power  
+- Moonlight  
 
 Gothitelle @ Leftovers  
 Level: 70
@@ -6225,17 +6225,17 @@ IVs: 0 Atk / 0 Spe
 - Psyshock  
 - Shadow Ball  
 
-Clefable @ Expert Belt
+Wigglytuff @ Expert Belt
 Level: 72
 Ball: Moon Ball
-Ability: Unaware  
-EVs: 252 HP / 252 SpA / 4 SpD  
+Ability: Cute Charm
+EVs: 168 Def / 172 SpA / 168 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
 - Dazzling Gleam  
 - Flamethrower  
 - Signal Beam  
-- Light Screen  
+- Psychic Terrain
 
 Calyrex-Ice @ White Herb
 Level: 70
@@ -6244,9 +6244,9 @@ Ability: As One Ice Rider
 EVs: 252 HP / 252 Atk / 4 SpD  
 Brave Nature  
 IVs: 0 Spe  
+- Icicle Crash
+- Zen Headbutt 
 - Close Combat  
-- Icicle Crash  
-- Zen Headbutt  
 - Trick Room  
 
 === TRAINER_JUAN_1 ===
@@ -10539,13 +10539,14 @@ Seviper
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TABITHA_MOSSDEEP ===
+=== TRAINER_COURTNEY_MOSSDEEP ===
 Name: Courtney
 Class: Magma Admin
 Pic: Courtney ORAS
 Gender: Female
 Music: Magma
 Double Battle: Yes
+Starting Status: STARTING_STATUS_PSYCHIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 /*
@@ -10565,20 +10566,20 @@ IVs: 0 Atk / 0 Spe
 Magmar @ Eviolite  
 Ability: Flame Body  
 Shiny: Yes  
-Level: 74
+Level: 73
 Ball: Dream Ball
 EVs: 252 HP / 252 Def / 4 SpD  
 Sassy Nature  
 IVs: 0 Atk / 0 Spe  
 - Follow Me  
 - Helping Hand  
-- Will-O-Wisp  
+- Will-o-Wisp
 - Lava Plume  
 
-Armarouge  
+Armarouge @ White Herb
 Ability: Flash Fire
 Shiny: Yes  
-Level: 74
+Level: 73
 Ball: Dream Ball
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
@@ -10590,7 +10591,7 @@ IVs: 0 Atk / 0 Spe
 
 Torkoal @ Psychic Seed  
 Ability: Drought  
-Level: 74
+Level: 73
 Ball: Dream Ball
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
@@ -10602,8 +10603,10 @@ IVs: 0 Atk / 0 Spe
 
 Shiinotic @ Kebia Berry  
 Ability: Effect Spore  
-Level: 74
+Level: 73
 Ball: Dream Ball
+EVs: 252 HP / 4 Def / 252 SpA
+Quiet Nature
 IVs: 0 Atk / 0 Spe 
 - Spore  
 - Giga Drain  
@@ -10612,7 +10615,7 @@ IVs: 0 Atk / 0 Spe
 
 Stakataka @ Chople Berry  
 Ability: Beast Boost  
-Level: 74
+Level: 73
 Ball: Beast Ball
 EVs: 252 HP / 252 Atk / 4 SpD  
 Lonely Nature  
@@ -10624,7 +10627,7 @@ IVs: 10 Def / 0 Spe
 
 Camerupt @ Cameruptite  
 Ability: Solid Rock  
-Level: 74
+Level: 73
 Ball: Timer Ball
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
@@ -14943,14 +14946,14 @@ Adamant Nature
 - Ice Punch  
 - Protect  
 
-Dragapult @ White Herb  
+Dragapult @ Expert Belt
 Ability: Infiltrator  
 Level: 67
 Ball: Ultra Ball
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Draco Meteor  
+- Dragon Energy 
 - Shadow Ball  
 - Thunderbolt  
 - Will-O-Wisp  
@@ -15057,17 +15060,17 @@ Adamant Nature
 - Ice Punch  
 - Protect  
 
-Dragapult @ White Herb  
+Dragapult @ Expert Belt
 Ability: Infiltrator  
 Level: 67
 Ball: Ultra Ball
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Draco Meteor  
+- Dragon Energy 
 - Shadow Ball  
 - Thunderbolt  
-- Will-O-Wisp  
+- Will-O-Wisp   
 
 Sceptile @ Sceptilite  
 Ability: Lightning Rod  
@@ -15137,17 +15140,17 @@ Adamant Nature
 - Belly Drum  
 - Recycle  
 
-Dragapult @ White Herb  
+Dragapult @ Expert Belt
 Ability: Infiltrator  
 Level: 67
 Ball: Ultra Ball
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Draco Meteor  
+- Dragon Energy 
 - Shadow Ball  
 - Thunderbolt  
-- Will-O-Wisp  
+- Will-O-Wisp   
 
 
 Swampert @ Swampertite  

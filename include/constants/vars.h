@@ -175,7 +175,7 @@
 #define VAR_TURO_STATE                                0x409B // formerly not used
 #define VAR_ELITE_4_STATE                                0x409C
 #define VAR_SADA_STATE                                0x409D // formerly not used
-#define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
+#define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E //was used, now available to be repurposed
 #define VAR_MOSSDEEP_SPACE_CENTER_STATE                  0x409F
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0
 #define VAR_UNUSED_0x40A1                                0x40A1 // Unused var

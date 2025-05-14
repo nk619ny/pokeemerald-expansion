@@ -18,16 +18,16 @@ MossdeepCity_SpaceCenter_1F_OnTransition:
 MossdeepCity_SpaceCenter_1F_EventScript_MoveObjectsForTeamMagma::
 	setobjectxyperm LOCALID_SAILOR, 1, 9
 	setobjectmovementtype LOCALID_SAILOR, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm LOCALID_WOMAN, 0, 8
+	setobjectxyperm LOCALID_WOMAN, 0, 7
 	setobjectmovementtype LOCALID_WOMAN, MOVEMENT_TYPE_FACE_RIGHT
 	setobjectxyperm LOCALID_OLD_MAN, 1, 6
 	setobjectmovementtype LOCALID_OLD_MAN, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm LOCALID_SCIENTIST_1, 3, 4
+	setobjectxyperm LOCALID_SCIENTIST_1, 2, 4
 	setobjectmovementtype LOCALID_SCIENTIST_1, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectmovementtype LOCALID_SCIENTIST_2, MOVEMENT_TYPE_FACE_RIGHT
-	goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardLeft
-	goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardDown
-	goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 3, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardRight
+	setobjectmovementtype LOCALID_SCIENTIST_2, MOVEMENT_TYPE_FACE_LEFT
+	//goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardLeft
+	//goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardDown
+	//goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 3, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardRight
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardLeft::
@@ -104,8 +104,8 @@ MossdeepCity_SpaceCenter_1F_EventScript_Scientist::
 
 MossdeepCity_SpaceCenter_1F_EventScript_ScientistMagma::
 	msgbox MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter, MSGBOX_DEFAULT
-	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
+	//applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight
+	//waitmovement 0
 	release
 	end
 
@@ -221,24 +221,8 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt4::
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
-	lock
-	faceplayer
-	goto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_2, MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat
-	setflag FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F
-	copyobjectxytoperm LOCALID_STAIR_GRUNT
-	switch VAR_FACING
-	case DIR_WEST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest
-#ifdef BUGFIX
-	case DIR_EAST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast
-#else
-	case DIR_WEST, MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast
-#endif
-	applymovement LOCALID_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs
-	waitmovement 0
-	setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 2
-	release
+	trainerbattle_single TRAINER_GRUNT_SPACE_CENTER_2, MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat
+	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated::
@@ -249,7 +233,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated::
 MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest::
 	applymovement LOCALID_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsWest
 	waitmovement 0
-	setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1
+	//setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1
 	release
 	end
 
@@ -258,7 +242,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest::
 MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast::
 	applymovement LOCALID_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsEast
 	waitmovement 0
-	setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 3
+	//setvar VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 3
 	release
 	end
 
@@ -371,55 +355,18 @@ MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
 	.string "check out the town?$"
 	*/
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
-	.string "As promised, we've come for\n"
-	.string "the rocket fuel!$"
-
-MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat:
-	.string "Ran out of fuel…$"
-
-MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
-	.string "Don't think you're on a roll just\n"
-	.string "because you've beaten me!$"
-
-MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro:
+MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
 	.string "We gave you fair warning!\n"
 	.string "There's nothing sneaky about us!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat:
+MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
 	.string "Grrr…\n"
 	.string "We should've used sneaky treachery…$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
+MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
 	.string "Okay, I get it already! The next time,\n"
 	.string "we'll come unannounced.$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
-	.string "The rocket fuel the SPACE CENTER has\n"
-	.string "in storage--that's what we're after.\p"
-	.string "We mean to take every last bit of it!$"
-
-MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
-	.string "Please, can you spare some fuel?\n"
-	.string "Even a chintzy cup will do!$"
-
-MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
-	.string "What are we going to do with\n"
-	.string "the rocket fuel?\p"
-	.string "How would I know?\n"
-	.string "Ask our leader upstairs!$"
-
-MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
-	.string "Our leader said no one, but no one,\n"
-	.string "gets past me!$"
-
-MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
-	.string "Ack! Ack! Aaack!$"
-
-MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
-	.string "Please, tell our leader that\n"
-	.string "I never abandoned my post.\l"
-	.string "That I stayed to the bitter end…$"
 
 /*
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
@@ -452,4 +399,40 @@ script MossdeepCity_EventScript_LeftSign{
 script MossdeepCity_EventScript_RightSign{
 	msgbox(format("Mossdeep City Science Center\nTime Department"),MSGBOX_SIGN)
 	end
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro {
+	format("Sorry, the Science Center is closed!")
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat {
+	format("Who do you think you are, bursting in like this?")
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle {
+	format("You're the one who barged into our hideout, too!\pDidn't anyone teach you manners?")
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro {
+	format("Courtney says there is some kind of special rock upstairs.\pI don't know why, but it's very important!")
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat {
+	format("All this over a rock?")
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle {
+	format("Courtney has really stepped up.\pShe's inspiring, but also scary…")
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro {
+	format("Our Admin said not to let a single person through!")
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat {
+	format("I can't hold them back!")
+}
+
+text MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle {
+	format("Please, tell our Admins that I never abandoned my post.\pThat I stayed to the bitter end…")
 }
