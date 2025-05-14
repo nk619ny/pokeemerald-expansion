@@ -323,11 +323,11 @@ Text_MonUsedWaterfall:
 
 EventScript_UseDive::
 	lockall
-	checkpartymove MOVE_DIVE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantDive
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
-	setfieldeffectargument 1, 1
+	//checkpartymove MOVE_DIVE
+	//goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantDive
+	//bufferpartymonnick STR_VAR_1, VAR_RESULT
+	//setfieldeffectargument 0, VAR_RESULT
+	//setfieldeffectargument 1, 1
 	msgbox Text_WantToDive, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndDive
 	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
@@ -346,11 +346,11 @@ EventScript_EndDive::
 
 EventScript_UseDiveUnderwater::
 	lockall
-	checkpartymove MOVE_DIVE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSurface
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
-	setfieldeffectargument 1, 1
+	//checkpartymove MOVE_DIVE
+	//goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSurface
+	//bufferpartymonnick STR_VAR_1, VAR_RESULT
+	//setfieldeffectargument 0, VAR_RESULT
+	//setfieldeffectargument 1, 1
 	msgbox Text_WantToSurface, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndSurface
 	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
@@ -406,7 +406,7 @@ Text_WantToDive:
 	.string "Would you like to use DIVE?$"
 
 Text_MonUsedDive:
-	.string "{STR_VAR_1} used DIVE.$"
+	.string "{PLAYER}'s Pokémon used Dive!$"
 
 Text_CantSurface:
 	.string "Light is filtering down from above.\n"
