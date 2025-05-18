@@ -27,46 +27,66 @@ SeafloorCavern_Room1_EventScript_Grunt2::
 # 14 "data/maps/SeafloorCavern_Room1/scripts.pory"
 
 # 15 "data/maps/SeafloorCavern_Room1/scripts.pory"
-SeafloorCavern_Room1_Text_Grunt1Intro:
+/*
 # 16 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "We don't need a kid around!\n"
+SeafloorCavern_Room1_Text_Grunt1Intro:
 # 17 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "Go on home already!$"
+	.string "We don't need a kid around!\n"
 # 18 "data/maps/SeafloorCavern_Room1/scripts.pory"
-
+	.string "Go on home already!$"
 # 19 "data/maps/SeafloorCavern_Room1/scripts.pory"
-SeafloorCavern_Room1_Text_Grunt1Defeat:
+
 # 20 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "I want to go home…$"
+SeafloorCavern_Room1_Text_Grunt1Defeat:
 # 21 "data/maps/SeafloorCavern_Room1/scripts.pory"
-
+	.string "I want to go home…$"
 # 22 "data/maps/SeafloorCavern_Room1/scripts.pory"
-SeafloorCavern_Room1_Text_Grunt1PostBattle:
+
 # 23 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "I want to get a promotion so I can\n"
+SeafloorCavern_Room1_Text_Grunt1PostBattle:
 # 24 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "boss around the GRUNTS…$"
+	.string "I want to get a promotion so I can\n"
 # 25 "data/maps/SeafloorCavern_Room1/scripts.pory"
-
+	.string "boss around the GRUNTS…$"
 # 26 "data/maps/SeafloorCavern_Room1/scripts.pory"
-SeafloorCavern_Room1_Text_Grunt2Intro:
-# 27 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "That submarine… It's tiny inside.\n"
-# 28 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "I'm sore all over!$"
-# 29 "data/maps/SeafloorCavern_Room1/scripts.pory"
 
+# 27 "data/maps/SeafloorCavern_Room1/scripts.pory"
+*/
+# 28 "data/maps/SeafloorCavern_Room1/scripts.pory"
+
+# 29 "data/maps/SeafloorCavern_Room1/scripts.pory"
+SeafloorCavern_Room1_Text_Grunt1Intro:
 # 30 "data/maps/SeafloorCavern_Room1/scripts.pory"
-SeafloorCavern_Room1_Text_Grunt2Defeat:
+	.string "That submarine… It's tiny inside.\n"
 # 31 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "Losing makes me sore!$"
+	.string "I'm sore all over!$"
 # 32 "data/maps/SeafloorCavern_Room1/scripts.pory"
 
 # 33 "data/maps/SeafloorCavern_Room1/scripts.pory"
-SeafloorCavern_Room1_Text_Grunt2PostBattle:
+SeafloorCavern_Room1_Text_Grunt1Defeat:
 # 34 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "That submarine we jacked, man,\n"
+	.string "Losing makes me sore!$"
 # 35 "data/maps/SeafloorCavern_Room1/scripts.pory"
-	.string "it's brutal as a ride.\l"
+
 # 36 "data/maps/SeafloorCavern_Room1/scripts.pory"
+SeafloorCavern_Room1_Text_Grunt1PostBattle:
+# 37 "data/maps/SeafloorCavern_Room1/scripts.pory"
+	.string "That submarine we jacked, man,\n"
+# 38 "data/maps/SeafloorCavern_Room1/scripts.pory"
+	.string "it's brutal as a ride.\l"
+# 39 "data/maps/SeafloorCavern_Room1/scripts.pory"
 	.string "It's way too tight in there!$"
+
+SeafloorCavern_Room1_Text_Grunt2Intro::
+# 43 "data/maps/SeafloorCavern_Room1/scripts.pory"
+	.string "Do you feel it yet?\n"
+	.string "The energy in the air?$"
+
+SeafloorCavern_Room1_Text_Grunt2Defeat::
+# 47 "data/maps/SeafloorCavern_Room1/scripts.pory"
+	.string "Maybe I couldn't handle it...$"
+
+SeafloorCavern_Room1_Text_Grunt2PostBattle::
+# 51 "data/maps/SeafloorCavern_Room1/scripts.pory"
+	.string "The colors in the mist... the tremors of\n"
+	.string "the stone... the smell of the sea...$"

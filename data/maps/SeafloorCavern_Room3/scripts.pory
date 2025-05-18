@@ -1,15 +1,27 @@
 raw `
+.set LOCALID_SHELLY, 8
+
 SeafloorCavern_Room3_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SeafloorCavern_Room3_OnTransition
 	.byte 0
 
-SeafloorCavern_Room3_EventScript_Shelly::
-	trainerbattle_single TRAINER_SHELLY_SEAFLOOR_CAVERN, SeafloorCavern_Room3_Text_ShellyIntro, SeafloorCavern_Room3_Text_ShellyDefeat
-	msgbox SeafloorCavern_Room3_Text_ShellyPostBattle, MSGBOX_AUTOCLOSE
+SeafloorCavern_Room3_OnTransition:
+	call_if_set FLAG_SEAFLOOR_SHELLY_DEFEATED_MOVED, SeafloorCavern_Room3_EventScript_MoveShelly
 	end
+
+SeafloorCavern_Room3_EventScript_MoveShelly::
+	setobjectxyperm LOCALID_SHELLY, 8, 4
+	return
 
 SeafloorCavern_Room3_EventScript_Grunt5::
 	trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_5, SeafloorCavern_Room3_Text_Grunt5Intro, SeafloorCavern_Room3_Text_Grunt5Defeat
 	msgbox SeafloorCavern_Room3_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+/*
+SeafloorCavern_Room3_EventScript_Shelly::
+	trainerbattle_single TRAINER_SHELLY_SEAFLOOR_CAVERN, SeafloorCavern_Room3_Text_ShellyIntro, SeafloorCavern_Room3_Text_ShellyDefeat
+	msgbox SeafloorCavern_Room3_Text_ShellyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 SeafloorCavern_Room3_Text_ShellyIntro:
@@ -56,5 +68,74 @@ SeafloorCavern_Room3_Text_Grunt5PostBattle:
 	.string "going up against our BOSS.\p"
 	.string "Maybe…\n"
 	.string "You must be something…$"
-
+*/
 `
+
+
+script SeafloorCavern_Room3_EventScript_Shelly {
+	trainerbattle_single(TRAINER_SHELLY_SEAFLOOR_CAVERN, SeafloorCavern_Room3_Text_ShellyIntro, SeafloorCavern_Room3_Text_ShellyDefeat, SeafloorCavern_Room3_EventScript_ShellyPostBattle)
+	msgbox(SeafloorCavern_Room3_Text_ShellyAfterBattle, MSGBOX_NPC)
+	waitmessage
+	applymovement(LOCALID_SHELLY,Common_Movement_FaceUp)
+	waitmovement(0)
+	releaseall
+	end
+}
+
+script SeafloorCavern_Room3_EventScript_ShellyPostBattle {
+	lock
+	msgbox(SeafloorCavern_Room3_Text_ShellyPostBattle, MSGBOX_DEFAULT)
+	closemessage
+	switch(var(VAR_FACING)){
+		case DIR_NORTH:
+		case DIR_SOUTH:
+			applymovement(LOCALID_SHELLY, SeafloorCavern_Room3_Movement_ShellyWalksAround)
+		case DIR_EAST:
+		case DIR_WEST:
+			applymovement(LOCALID_SHELLY, SeafloorCavern_Room3_Movement_ShellyWalksDown)
+		default:
+	}
+	waitmovement(0)
+	setflag(FLAG_SEAFLOOR_SHELLY_DEFEATED_MOVED)
+	release
+}
+
+text SeafloorCavern_Room3_Text_ShellyIntro {
+	format("Shelly: Hm?\nAh, it's you.\pI was just… no matter.\pArchie is committed to… He's ordered me not to let anyone into the inner chamber.\pSo… that's it, I guess. I have to stop you, right here.")
+}
+
+text SeafloorCavern_Room3_Text_ShellyDefeat {
+	format("It's… kind of a relief.")
+}
+
+text SeafloorCavern_Room3_Text_ShellyPostBattle {
+	format("Shelly: I did my best, but despite my tactics and the mystical energy of this cavern, you won anyway.\p…\nMaybe this is a sign.\pThe more I read through the research from the Weather Institute, the more it seems… awakening Kyogre won't have the effect Archie hopes it will.\pBut he's convinced this is the only way… he isn't listening to me anymore.\pPlease… you need to stop him. For everyone's sake.")
+}
+
+text SeafloorCavern_Room3_Text_ShellyAfterBattle {
+	format("Shelly: Please… you need to stop him. It's the only way.")
+}
+
+movement SeafloorCavern_Room3_Movement_ShellyWalksDown {
+	walk_down * 2
+	walk_in_place_up
+}
+
+movement SeafloorCavern_Room3_Movement_ShellyWalksAround {
+	walk_left
+	walk_down * 2
+	walk_right
+	walk_in_place_up
+}
+
+text SeafloorCavern_Room3_Text_Grunt5Intro {
+	format("Hahahaha, can't you tell?\pShelly helped each of us build a team to perfectly capitalize on the natural power of this cavern.\pYou don't stand a chance!")
+}
+
+text SeafloorCavern_Room3_Text_Grunt5Defeat {
+	format("This cavern was supposed to protect us!")
+}
+
+text SeafloorCavern_Room3_Text_Grunt5PostBattle {
+	format("You might have beaten us, but there's no way you'll get past Shelly.\pThe rainbow makes her team unbeatable!")
+}

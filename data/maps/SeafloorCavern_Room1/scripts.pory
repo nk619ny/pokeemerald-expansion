@@ -12,6 +12,7 @@ SeafloorCavern_Room1_EventScript_Grunt2::
 	msgbox SeafloorCavern_Room1_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+/*
 SeafloorCavern_Room1_Text_Grunt1Intro:
 	.string "We don't need a kid around!\n"
 	.string "Go on home already!$"
@@ -23,16 +24,30 @@ SeafloorCavern_Room1_Text_Grunt1PostBattle:
 	.string "I want to get a promotion so I can\n"
 	.string "boss around the GRUNTS…$"
 
-SeafloorCavern_Room1_Text_Grunt2Intro:
+*/
+
+SeafloorCavern_Room1_Text_Grunt1Intro:
 	.string "That submarine… It's tiny inside.\n"
 	.string "I'm sore all over!$"
 
-SeafloorCavern_Room1_Text_Grunt2Defeat:
+SeafloorCavern_Room1_Text_Grunt1Defeat:
 	.string "Losing makes me sore!$"
 
-SeafloorCavern_Room1_Text_Grunt2PostBattle:
+SeafloorCavern_Room1_Text_Grunt1PostBattle:
 	.string "That submarine we jacked, man,\n"
 	.string "it's brutal as a ride.\l"
 	.string "It's way too tight in there!$"
 
 `
+
+text SeafloorCavern_Room1_Text_Grunt2Intro {
+	format("Do you feel it yet?\nThe energy in the air?")
+}
+
+text SeafloorCavern_Room1_Text_Grunt2Defeat {
+	format("Maybe I couldn't handle it...")
+}
+
+text SeafloorCavern_Room1_Text_Grunt2PostBattle {
+	format("The colors in the mist... the tremors of the stone... the smell of the sea...")
+}

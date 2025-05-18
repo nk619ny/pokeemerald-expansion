@@ -28,7 +28,7 @@ AquaHideout_B2F_EventScript_MattNoticePlayer::
 
 AquaHideout_B2F_EventScript_Matt::
 	trainerbattle_single TRAINER_MATT, AquaHideout_B2F_Text_MattIntro, AquaHideout_B2F_Text_MattDefeat, AquaHideout_B2F_EventScript_SubmarineEscape
-	msgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT
+	goto AquaHideout_B2F_EventScript_MattAfterBattle
 	release
 	end
 
@@ -47,9 +47,9 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	waitmovement 0
 	removeobject VAR_0x8009
 	delay 20
-	applymovement VAR_0x8008, Common_Movement_FacePlayer
+	applymovement VAR_0x8008, Common_Movement_FaceLeft
 	waitmovement 0
-	msgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT
+	msgbox AquaHideout_B2F_Text_MattRepaidDebt, MSGBOX_DEFAULT
 	setflag FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE
 	setflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS
 	setflag FLAG_ENABLE_STEVEN_CALL_AQUA_HIDEOUT
@@ -117,11 +117,13 @@ AquaHideout_B2F_Text_MattPostBattle:
 	.string "better search the big, wide sea beyond\l"
 	.string "Lilycove.\p"
 	.string "But how will you even find it?\n"
-	.string "Hehehe…$" */
+	.string "Hehehe…$" 
 
 AquaHideout_B2F_Text_MattDefeat:
 	.string "Hehehe…\n"
 	.string "So, I lost, too…$"
+
+*/
 
 AquaHideout_B2F_Text_Grunt4Intro:
 	.string "Wahahah, I grew weary of waiting!\n"
@@ -212,10 +214,27 @@ text AquaHideout_B2F_Text_MattIntro {
 	format("Matt: Shelly looked through the documents from the Weather Institute, Archie grabbed the Blue Orb, and I took this submarine.\pEverything is working according to Archie's plan.\pAnd now, my last job is to stop you, right here!\pThis won't be like last time.\NI've collected the strongest and most fearsome Pokémon around.\pYou'll see our strength!")
 }
 
-text AquaHideout_B2F_Text_MattPostBattle{
+text AquaHideout_B2F_Text_MattDefeat{
 	format("I still can't beat you.\NBut I held you back long enough for Archie and Shelly to take off.\pYou can't stop us now…")
 }
 
 text AquaHideout_B2F_Text_OurBossGotThroughHisPreparations{
-	format("Ah… hah… Archie, man, it's all on you now…")
+	format("Matt: Ah… hah… Archie, man, it's all on you now…")
+}
+
+text AquaHideout_B2F_Text_MattRepaidDebt{
+	format("Matt: I hope I've repaid my debt to you… Boss…")
+}
+
+
+script AquaHideout_B2F_EventScript_MattAfterBattle {
+	lock
+	faceplayer
+	delay(40)
+	applymovement(LOCALID_MATT, Common_Movement_WalkInPlaceLeft)
+	waitmovement(0)
+	msgbox(AquaHideout_B2F_Text_MattRepaidDebt, MSGBOX_DEFAULT)
+	waitmessage
+	releaseall
+	end
 }

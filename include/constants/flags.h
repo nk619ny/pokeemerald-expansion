@@ -130,7 +130,7 @@
 #define FLAG_RECEIVED_HM_FLY                 0x6E
 #define FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT  0x6F
 #define FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE  0x70
-#define FLAG_BOTH_HIDEOUTS_COMPLETE          0x71 // Unused Flag. Used in R/S to indicate whether player defeated or caught Groudon/Kyogre in Cave of Origin.
+#define FLAG_BOTH_HIDEOUTS_COMPLETE          0x71 // Formerly Unused Flag. Used in R/S to indicate whether player defeated or caught Groudon/Kyogre in Cave of Origin.
 #define FLAG_SCOTT_CALL_BATTLE_FRONTIER      0x72 // Used in order to activate a phone call from Scott, inviting the player to the SS Tidal.
 #define FLAG_RECEIVED_METEORITE              0x73 // Should be available for repurposing
 #define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokédex.
@@ -461,7 +461,7 @@
 #define FLAG_REGISTERED_WALLACE              (TRAINER_REGISTERED_FLAGS_START + REMATCH_WALLACE)
 
 #define FLAG_RECEIVED_SHINY_CHARM            0x1AA // formerly not used flag
-#define FLAG_FORCE_SUN                    0x1AB // Unused Flag
+#define FLAG_FORCE_SUN                    0x1AB // formerly not used Flag
 
 #define FLAG_DEFEATED_DEOXYS                 0x1AC
 #define FLAG_BATTLED_DEOXYS                  0x1AD
@@ -671,7 +671,7 @@
 #define FLAG_HIDE_MAGMA_GLACIER  0x270 // formerly not used
 #define FLAG_HIDE_CABLE_CAR_ATTENDANT  0x271 // formerly not used
 #define FLAG_HIDE_TRAINER_HILL_AUDIENCE  0x272 // formerly not used
-#define FLAG_MOSSDEEP_GYM_B2B_1  0x273 // formerly not used
+#define FLAG_SEAFLOOR_SHELLY_DEFEATED_MOVED  0x273 // formerly not used
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
@@ -868,7 +868,7 @@
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL       0x331
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL           0x332
 #define FLAG_HIDE_ROUTE_112_TEAM_MAGMA                              0x333
-#define FLAG_HIDE_CAVE_OF_ORIGIN_B1F_WALLACE                        0x334
+#define FLAG_HIDE_CAVE_OF_ORIGIN_B1F_WALLACE                        0x334 // now unused
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNTS_BLOCKING_ENTRANCE          0x335 //renamed
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE         0x336 // there were two flags for each grunt - I consolidated. Now unused
 #define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
