@@ -7,7 +7,7 @@ EverGrandeCity_DrakesRoom_MapScripts::
 
 @ Unused, Drake uses Sidneys identical OnWarp for some reason
 EverGrandeCity_DrakesRoom_OnWarp:
-	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_DrakesRoom_EventScript_PlayerTurnNorth
+	//map_script_2 VAR_TEMP_1, 0, EverGrandeCity_DrakesRoom_EventScript_PlayerTurnNorth
 	.2byte 0
 
 EverGrandeCity_DrakesRoom_EventScript_PlayerTurnNorth::
@@ -15,13 +15,14 @@ EverGrandeCity_DrakesRoom_EventScript_PlayerTurnNorth::
 	end
 
 EverGrandeCity_DrakesRoom_OnFrame:
-	map_script_2 VAR_ELITE_4_STATE, 3, EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor
+	map_script_2 VAR_TEMP_4, 0, EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor
 	.2byte 0
 
 EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor::
 	lockall
+	//call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
-	setvar VAR_ELITE_4_STATE, 4
+	setvar VAR_TEMP_4, 1
 	releaseall
 	end
 
@@ -44,24 +45,20 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_DRAKE, EverGrandeCity_DrakesRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_TUCKER, EverGrandeCity_DrakesRoom_Text_Defeat
 	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech::
-	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
-	release
-	end
-
 EverGrandeCity_DrakesRoom_EventScript_Defeated::
-	setvar VAR_0x8004, FANCOUNTER_DEFEATED_DRAKE
-	special Script_TryGainNewFanFromCounter
+	//setvar VAR_0x8004, FANCOUNTER_DEFEATED_DRAKE
+	//special Script_TryGainNewFanFromCounter
 	setflag FLAG_DEFEATED_ELITE_4_DRAKE
-	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
-	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call Common_EventScript_CheckIfEliteFourComplete
+	goto EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
 	release
 	end
 
+/*
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 	.string "I am the last of the POKéMON LEAGUE\n"
 	.string "ELITE FOUR, DRAKE the DRAGON master!\p"
@@ -90,5 +87,44 @@ EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 	.string "TRAINERS and grow strong.\p"
 	.string "Go! Go onwards!\n"
 	.string "The CHAMPION is waiting!$"
+*/
 
+EverGrandeCity_DrakesRoom_EventScript_Tucker::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_TUCKER, EverGrandeCity_DrakesRoom_Text_Defeat
+	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
+	end
 `
+
+text EverGrandeCity_DrakesRoom_Text_IntroSpeech {
+	format("Ahahah! Do you hear it? The crowd! They're all itching to see our match!\pAhahah! I bet you're twitching all over from the tension of getting to battle me!\pBut don't worry about a thing! I'm the no. 1 star of the Elite Four!\pI, Tucker the Ace, will bathe you in a brilliant glow!\pYour strategy! Let's see it!\pThe ultimate match! {PLAYER} versus the Ace, Tucker!\pLet the battle begin!")
+}
+
+text EverGrandeCity_DrakesRoom_Text_Defeat {
+	format("What the…")
+}
+
+text EverGrandeCity_DrakesRoom_Text_PostBattleSpeech {
+	format("You're genuinely fantastic! Yes, quite fantastic!\pYou're strong, but above all, you have a unique charm!\pIn you, I see a definite potential for a superstar like me.\pI will very much look forward to your encounters with the rest of the Elite Four!")
+}
+
+text EverGrandeCity_DrakesRoom_Text_PostE4Speech {
+	format("You're genuinely fantastic! Yes, quite fantastic!\pYou're strong, but above all, you have a unique charm!\pIn you, I see a definite potential for a superstar like me.\pI will very much look forward to your encounter with the Champion!")
+}
+
+script EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech {
+	lock
+	if(flag(FLAG_ALL_ELITE_FOUR_BEATEN)) {
+		msgbox(EverGrandeCity_DrakesRoom_Text_PostE4Speech, MSGBOX_NPC)
+	}
+	else {
+		msgbox(EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_NPC)
+	}
+	waitmessage
+	releaseall
+	end
+}

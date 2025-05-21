@@ -113,6 +113,9 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_JUAN_MATCH_CALL
+	setvar VAR_LEVEL_CAP, 80
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
 	release
 	end
 
@@ -176,17 +179,19 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 	releaseall
 	end
 
+/*
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
 	.string "SOOTOPOLIS's GYM LEADER JUAN is\n"
-	.string "a master of WATER-type POKéMON.\p"
+	.string "a master of ICE-type POKéMON.\p"
 	.string "And, to get to JUAN, an icy floor\n"
 	.string "will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
 	.string "The rest of the way, you have to\n"
 	.string "go for it yourself!$"
+	*/
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "Yow! You've beaten even JUAN, who\n"
@@ -195,6 +200,7 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "If you've gotten all the BADGES, you're\n"
 	.string "set for the POKéMON LEAGUE challenge!$"
 
+/*
 SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"
@@ -233,15 +239,14 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 	.string "Rather than my clothes, I shall reward\n"
 	.string "you with this, the RAIN BADGE!$"
 
+	*/
+
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the RAIN BADGE\n"
 	.string "from JUAN.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "Having the RAIN BADGE shall assure you\n"
-	.string "the full obedience of all your POKéMON\l"
-	.string "to your every command.\p"
-	.string "The RAIN BADGE also allows the use\n"
+	.string "The RAIN BADGE allows the use\n"
 	.string "of the HM move WATERFALL to scale\l"
 	.string "walls of cascading water.\p"
 	.string "And, so that you never forget the\n"
@@ -266,7 +271,7 @@ SootopolisCity_Gym_1F_Text_JuanPostBattle:
 	.string "Travel to the easternmost reaches\n"
 	.string "of HOENN, to the island EVER GRANDE.\p"
 	.string "There, you shall find the POKéMON\n"
-	.string "LEAGUE.$"
+	.string "LEAGUE… and my protégé.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "There remains but one BADGE to\n"
@@ -319,3 +324,30 @@ SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "two, perhaps more, POKéMON, please.$"
 
 `
+
+script SootopolisCity_Gym_1F_EventScript_SetHail {
+	// This script is used to set the weather to hail in the Sootopolis Gym.
+	// It is called when the player enters the gym.
+	setflag(FLAG_FORCE_SUN)
+	return
+}
+
+script SootopolisCity_Gym_1F_EventScript_ClearHail {
+	// This script is used to set the weather to rain in the Sootopolis Gym.
+	// It is called when the player enters the gym.
+	clearflag(FLAG_FORCE_SUN)
+	return
+}
+
+text SootopolisCity_Gym_1F_Text_GymGuideAdvice {
+	format("Yo! How's it going, CHAMPION-\n bound {PLAYER}?\p SOOTOPOLIS's GYM LEADER JUAN is\n a master of ICE-type POKéMON.\p And, to get to JUAN, an icy floor\n will hamper your progress…\pAnd the snow coming down is light now, but will get brutal when you reach JUAN.\pListen, I'm sorry, but that's all the\n advice that I have for you.\p The rest of the way, you have to\n go for it yourself!$")
+}
+
+text SootopolisCity_Gym_1F_Text_JuanIntro {
+	format("I heard you worked with Steven to fix the situation outside.\pFor that, myself, and all of Hoenn, owe you a great debt.\pBut that will earn you no mercy from me here.\pLet us begin our match, shall we?\pPlease, you shall bear witness to\n our artistry.\pA grand illusion of ice sculpted\n by Pokémon and myself!")
+}
+
+text SootopolisCity_Gym_1F_Text_JuanDefeat {
+	format("Ahahaha, excellent!\n Very well, you are the winner.\pFrom you, I sense the brilliant shine\nof skill that will overcome all.\pI shall reward you with this, the RAIN BADGE!")
+}
+

@@ -71,6 +71,9 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	waitmovement 0 
 	delay 60
 	trainerbattle_no_intro TRAINER_ARCHIE_SEAFLOOR_CAVERN, SeafloorCavern_Room9_Text_ArchieDefeat
+	setvar VAR_LEVEL_CAP, 77
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
 	//msgbox SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT
 	//setweather WEATHER_NONE
 	//doweather

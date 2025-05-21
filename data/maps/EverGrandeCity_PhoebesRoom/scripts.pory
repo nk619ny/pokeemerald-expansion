@@ -6,7 +6,7 @@ EverGrandeCity_PhoebesRoom_MapScripts::
 	.byte 0
 
 EverGrandeCity_PhoebesRoom_OnWarp:
-	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_PhoebesRoom_EventScript_PlayerTurnNorth
+	//map_script_2 VAR_TEMP_1, 0, EverGrandeCity_PhoebesRoom_EventScript_PlayerTurnNorth
 	.2byte 0
 
 EverGrandeCity_PhoebesRoom_EventScript_PlayerTurnNorth::
@@ -14,13 +14,14 @@ EverGrandeCity_PhoebesRoom_EventScript_PlayerTurnNorth::
 	end
 
 EverGrandeCity_PhoebesRoom_OnFrame:
-	map_script_2 VAR_ELITE_4_STATE, 1, EverGrandeCity_PhoebesRoom_EventScript_WalkInCloseDoor
+	map_script_2 VAR_TEMP_4, 0, EverGrandeCity_PhoebesRoom_EventScript_WalkInCloseDoor
 	.2byte 0
 
 EverGrandeCity_PhoebesRoom_EventScript_WalkInCloseDoor::
 	lockall
+	//call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
-	setvar VAR_ELITE_4_STATE, 2
+	setvar VAR_TEMP_4, 1
 	releaseall
 	end
 
@@ -43,22 +44,18 @@ EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
 	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_LUCY, EverGrandeCity_PhoebesRoom_Text_Defeat
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
-	end
-
-EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech::
-	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
-	release
 	end
 
 EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_PHOEBE
-	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
-	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call Common_EventScript_CheckIfEliteFourComplete
+	goto EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 	release
 	end
 
+/*
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 	.string "Ahahaha!\p"
 	.string "I'm PHOEBE of the ELITE FOUR.\n"
@@ -82,5 +79,46 @@ EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 	.string "Yup, I'd like to see how far your bond\n"
 	.string "will carry you.\p"
 	.string "Go ahead, move on to the next room.$"
+*/
+
+EverGrandeCity_PhoebesRoom_EventScript_Lucy::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_LUCY, EverGrandeCity_PhoebesRoom_Text_Defeat
+	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
+	end
 
 `
+
+
+text EverGrandeCity_PhoebesRoom_Text_IntroSpeech {
+	format("I am Lucy… You have entered my domain…\pYou already know it, but to advance, you must defeat me.\pI'm not one for idle chatter. Hurry.\pCome on… Your luck… I hope you didn't use it all up to get here…")
+}
+
+text EverGrandeCity_PhoebesRoom_Text_Defeat {
+	format("Urk…")
+}
+
+text EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech {
+	format("…That's all there is… Disappear already…")
+}
+
+text EverGrandeCity_PhoebesRoom_Text_PostE4Speech {
+	format("You are never so skilled that victory is completely certain.\pMore often than not, luck is what tilts the scales of battle.\pTime to see who has better luck. Or, who has the strength to overcome whatever obstacles bad luck places before them.\NYou, or the Champion.")
+}
+
+script EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech {
+	lock
+	if(flag(FLAG_ALL_ELITE_FOUR_BEATEN)) {
+		msgbox(EverGrandeCity_PhoebesRoom_Text_PostE4Speech, MSGBOX_NPC)
+	}
+	else {
+		msgbox(EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_NPC)
+	}
+	waitmessage
+	releaseall
+	end
+}

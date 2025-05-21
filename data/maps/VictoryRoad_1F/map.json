@@ -4,7 +4,7 @@
   "layout": "LAYOUT_VICTORY_ROAD_1F",
   "music": "MUS_VICTORY_ROAD",
   "region_map_section": "MAPSEC_VICTORY_ROAD",
-  "requires_flash": false,
+  "requires_flash": true,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -55,8 +55,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
-      "x": 12,
-      "y": 25,
+      "x": 31,
+      "y": 13,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -172,21 +172,30 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 2,
-      "y": 23,
+      "x": 30,
+      "y": 5,
       "elevation": 4,
-      "var": "VAR_VICTORY_ROAD_1F_STATE",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "VictoryRoad_1F_EventScript_WallyBattleTrigger1"
     },
     {
       "type": "trigger",
-      "x": 3,
-      "y": 23,
+      "x": 31,
+      "y": 5,
       "elevation": 4,
-      "var": "VAR_VICTORY_ROAD_1F_STATE",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "VictoryRoad_1F_EventScript_WallyBattleTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 5,
+      "elevation": 4,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "VictoryRoad_1F_EventScript_WallyBattleTrigger3"
     }
   ],
   "bg_events": [

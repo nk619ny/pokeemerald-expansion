@@ -1,5 +1,6 @@
 raw `
 .set LOCALID_RAYQUAZA_SLEEPING, 1
+.set LOCALID_STEVEN, 3
 
 SkyPillar_Top_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, SkyPillar_Top_OnResume
@@ -32,7 +33,7 @@ SkyPillar_Top_EventScript_TryShowRayquaza::
 	return
 
 SkyPillar_Top_EventScript_ShowRayquaza::
-	clearflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
+	//clearflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
 	return
 
 SkyPillar_Top_OnWarp:
@@ -91,6 +92,18 @@ SkyPillar_Top_EventScript_RanFromRayquaza2::
 SkyPillar_Top_EventScript_AwakenRayquaza::
 	lockall
 	fadeoutbgm 1
+
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterUp
+	msgbox SkyPillar_Top_Text_StevenRayquazaAwakens, MSGBOX_DEFAULT
+	closemessage
+
+	setvar VAR_RESULT, 1
+	playse SE_M_DETECT
+	dofieldeffectsparkle 13, 9, 0
+	waitfieldeffect FLDEFF_SPARKLE
+	closemessage
+	setvar VAR_RESULT, 1
+
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
 	special SpawnCameraObject
@@ -130,6 +143,23 @@ SkyPillar_Top_EventScript_AwakenRayquaza::
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 5
 	setvar VAR_SKY_PILLAR_STATE, 1
 	setvar VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 1
+	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA
+
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	msgbox SkyPillar_Top_Text_StevenCheckSootopolis, MSGBOX_DEFAULT
+	closemessage
+
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
+	waitmovement 0
+	delay 50
+	setfieldeffectargument 0, 1
+	dofieldeffect FLDEFF_NPCFLY_OUT
+	delay 15
+	removeobject LOCALID_STEVEN
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+
 	releaseall
 	end
 
@@ -185,3 +215,11 @@ SkyPillar_Top_Text_RayquazaFlewOff:
 	.string "The awakened RAYQUAZA flew off…$"
 
 `
+
+text SkyPillar_Top_Text_StevenRayquazaAwakens {
+	format("Steven: This meteorite should awaken Rayquaza, and make it aware of the presence of Groudon and Kyogre.\pI admit, I'm very nervous about waking up another super-ancient Pokémon.\pBut according to legends, Rayquaza has served as the guardian of the skies, and has calmed down Kyogre and Groudon in the past.\pWe need to trust it to do so again.")
+}
+
+text SkyPillar_Top_Text_StevenCheckSootopolis {
+	format("Steven: Let's hurry back to Sootopolis to see if it worked.")
+}

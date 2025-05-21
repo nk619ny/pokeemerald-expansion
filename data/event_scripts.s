@@ -1191,3 +1191,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TestMapSpaceTime/scripts.inc"
 
 	.include "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_SelectionRoom/scripts.inc"

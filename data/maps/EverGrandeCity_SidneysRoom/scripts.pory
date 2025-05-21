@@ -25,7 +25,7 @@ EverGrandeCity_SidneysRoom_EventScript_CloseDoor::
 	return
 
 EverGrandeCity_SidneysRoom_OnWarp:
-	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_SidneysRoom_EventScript_PlayerTurnNorth
+	//map_script_2 VAR_TEMP_1, 0, EverGrandeCity_SidneysRoom_EventScript_PlayerTurnNorth
 	.2byte 0
 
 EverGrandeCity_SidneysRoom_EventScript_PlayerTurnNorth::
@@ -33,13 +33,14 @@ EverGrandeCity_SidneysRoom_EventScript_PlayerTurnNorth::
 	end
 
 EverGrandeCity_SidneysRoom_OnFrame:
-	map_script_2 VAR_ELITE_4_STATE, 0, EverGrandeCity_SidneysRoom_EventScript_WalkInCloseDoor
+	map_script_2 VAR_TEMP_4, 0, EverGrandeCity_SidneysRoom_EventScript_WalkInCloseDoor
 	.2byte 0
 
 EverGrandeCity_SidneysRoom_EventScript_WalkInCloseDoor::
 	lockall
+	//call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
-	setvar VAR_ELITE_4_STATE, 1
+	setvar VAR_TEMP_4, 1
 	releaseall
 	end
 
@@ -49,22 +50,18 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney::
 	goto_if_set FLAG_DEFEATED_ELITE_4_SIDNEY, EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_SIDNEY, EverGrandeCity_SidneysRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_NOLAND, EverGrandeCity_SidneysRoom_Text_Defeat
 	goto EverGrandeCity_SidneysRoom_EventScript_Defeated
-	end
-
-EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech::
-	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
-	release
 	end
 
 EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
-	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
-	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call Common_EventScript_CheckIfEliteFourComplete
+	goto EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech
 	release
 	end
 
+/*
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
 	.string "Welcome, challenger!\n"
 	.string "I'm SIDNEY of the ELITE FOUR.\p"
@@ -85,5 +82,45 @@ EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
 	.string "You've got what it takes to go far.\n"
 	.string "Now, go on to the next room and enjoy\l"
 	.string "your next battle!$"
+*/
+
+EverGrandeCity_SidneysRoom_EventScript_Noland::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ELITE_4_SIDNEY, EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_NOLAND, EverGrandeCity_SidneysRoom_Text_Defeat
+	goto EverGrandeCity_SidneysRoom_EventScript_Defeated
+	end
 
 `
+
+text EverGrandeCity_SidneysRoom_Text_IntroSpeech {
+	format("Hey, hey! My name's Noland!\pYou must have a grasp of battling to get this far.\pBut, listen up.\pKnowledge isn't only about reading books or doing desk work. Just doing that sort of thing... It may as well be useless!\pYou have to experience things with your heart and your body, understand?\pLet's see if you know enough... in the ways that count!")
+}
+
+text EverGrandeCity_SidneysRoom_Text_Defeat {
+	format("Good job! You know what you're doing!")
+}
+
+text EverGrandeCity_SidneysRoom_Text_PostBattleSpeech {
+	format("Heh... you're a pretty bright spark.\pYou keep up your studies, there'll be no stopping you!\pYou should go on to the next room and have a good time!")
+}
+
+text EverGrandeCity_SidneysRoom_Text_PostE4Speech {
+	format("Heh... you're a pretty bright spark.\pYou go show the Champion what you know!")
+}
+
+script EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech {
+	lock
+	if(flag(FLAG_ALL_ELITE_FOUR_BEATEN)) {
+		msgbox(EverGrandeCity_SidneysRoom_Text_PostE4Speech, MSGBOX_NPC)
+	}
+	else {
+		msgbox(EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_NPC)
+	}
+	waitmessage
+	releaseall
+	end
+}

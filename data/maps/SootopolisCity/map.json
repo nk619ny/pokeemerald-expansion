@@ -145,11 +145,11 @@
       "flag": "FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RAYQUAZA)",
+      "graphics_id": "OBJ_EVENT_GFX_RAYQUAZA",
       "x": 31,
       "y": 41,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -343,7 +343,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "SootopolisCity_EventScript_StevenWaterfallTrigger"
+    }
   ],
   "bg_events": [
     {

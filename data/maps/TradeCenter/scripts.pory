@@ -116,9 +116,28 @@ script Common_EventScript_CheckIfHideoutsComplete {
 	return
 }
 
+movement Common_Movement_EliteFourNewEntrance{
+	//walk_down
+	walk_left * 2
+	walk_down * 4
+	walk_right * 2
+	walk_in_place_fast_up
+}
+
+
+script Common_EventScript_CheckIfEliteFourComplete {
+	if(flag(FLAG_DEFEATED_ELITE_4_SIDNEY) && flag(FLAG_DEFEATED_ELITE_4_PHOEBE) && flag(FLAG_DEFEATED_ELITE_4_GLACIA) && flag(FLAG_DEFEATED_ELITE_4_DRAKE)){
+		setflag(FLAG_ALL_ELITE_FOUR_BEATEN)
+	}
+	else{
+		clearflag(FLAG_ALL_ELITE_FOUR_BEATEN)
+	}
+	return
+}
 
 script MauvilleCity_EventScript_Temporary{
 	lock
+	setflag(FLAG_RECEIVED_HM_WATERFALL)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
 	//pokenavcall

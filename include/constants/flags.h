@@ -672,7 +672,7 @@
 #define FLAG_HIDE_CABLE_CAR_ATTENDANT  0x271 // formerly not used
 #define FLAG_HIDE_TRAINER_HILL_AUDIENCE  0x272 // formerly not used
 #define FLAG_SEAFLOOR_SHELLY_DEFEATED_MOVED  0x273 // formerly not used
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
+#define FLAG_ALL_ELITE_FOUR_BEATEN  0x274 // formerly not used
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag

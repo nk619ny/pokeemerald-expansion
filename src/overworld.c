@@ -383,6 +383,7 @@ void Overworld_ResetStateAfterFly(void)
     FlagClear(FLAG_SYS_SAFARI_MODE);
     FlagClear(FLAG_SYS_USE_STRENGTH);
     FlagClear(FLAG_SYS_USE_FLASH);
+    FlagClear(FLAG_FORCE_SUN);
 }
 
 void Overworld_ResetStateAfterTeleport(void)
@@ -393,6 +394,7 @@ void Overworld_ResetStateAfterTeleport(void)
     FlagClear(FLAG_SYS_SAFARI_MODE);
     FlagClear(FLAG_SYS_USE_STRENGTH);
     FlagClear(FLAG_SYS_USE_FLASH);
+    FlagClear(FLAG_FORCE_SUN);
     RunScriptImmediately(EventScript_ResetMrBriney);
 }
 
@@ -404,6 +406,7 @@ void Overworld_ResetStateAfterDigEscRope(void)
     FlagClear(FLAG_SYS_SAFARI_MODE);
     FlagClear(FLAG_SYS_USE_STRENGTH);
     FlagClear(FLAG_SYS_USE_FLASH);
+    FlagClear(FLAG_FORCE_SUN);
 }
 
 #if B_RESET_FLAGS_VARS_AFTER_WHITEOUT  == TRUE
@@ -1045,7 +1048,7 @@ void SetDefaultFlashLevel(void)
     if (!gMapHeader.cave)
         gSaveBlock1Ptr->flashLevel = 0;
     else if (FlagGet(FLAG_SYS_USE_FLASH))
-        gSaveBlock1Ptr->flashLevel = 1;
+        gSaveBlock1Ptr->flashLevel = 0;
     else
         gSaveBlock1Ptr->flashLevel = gMaxFlashLevel - 1;
 }

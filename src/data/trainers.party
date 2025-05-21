@@ -6258,45 +6258,74 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Luvdisc
-Level: 41
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Attract
-- Sweet Kiss
-- Flail
+Mamoswine @ Life Orb
+Ability: Thick Fat  
+Ball: Great Ball
+Level: 77
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- High Horsepower  
+- Avalanche  
+- Facade  
+- Ice Shard  
 
-Whiscash
-Level: 41
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rain Dance
-- Water Pulse
-- Amnesia
-- Earthquake
+Regice @ Leftovers
+Ability: Ice Body  
+Ball: Great Ball
+Level: 77
+IVs: 0 Atk  
+- Blizzard  
+- Freeze-Dry  
+- Protect
+- Charge Beam  
 
-Sealeo
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Encore
-- Body Slam
-- Aurora Beam
-- Water Pulse
+Jellicent @ Safety Goggles
+Ability: Water Absorb  
+Ball: Great Ball
+Level: 77
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Water Spout  
+- Giga Drain  
+- Strength Sap  
+- Shadow Ball  
 
-Crawdaunt
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Crabhammer
-- Taunt
-- Leer
+Weavile @ Ice Gem
+Ball: Great Ball
+Level: 77
+Ability: Pickpocket  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Triple Axel  
+- Knock Off  
+- Psycho Cut  
+- Swords Dance  
 
-Kingdra @ Chesto Berry
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Water Pulse
-- Double Team
-- Ice Beam
-- Rest
+Baxcalibur @ Leftovers  
+Ball: Great Ball
+Level: 77
+Ability: Ice Body  
+Tera Type: Dragon  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Glaive Rush  
+- Avalanche  
+- Ice Shard  
+- Protect
+
+Lapras @ Laprasite
+Ability: Water Absorb  
+Ball: Great Ball
+Level: 77
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Blizzard  
+- Sparkling Aria  
+- Dragon Pulse  
+- Freeze-Dry  
+
 
 === TRAINER_JERRY_1 ===
 Name: JERRY
@@ -7421,13 +7450,13 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALLACE ===
 Name: WALLACE
-Class: Champion
+Class: Elite Four
 Pic: Champion Wallace
 Gender: Male
-Music: Male
+Music: Elite Four
+Mugshot: Blue
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
-Mugshot: Yellow
 
 Wailord
 Level: 57
@@ -19194,10 +19223,11 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TUCKER ===
 Name: TUCKER
-Class: Dome Ace
+Class: Elite Four
 Pic: Dome Ace Tucker
 Gender: Male
-Music: Male
+Music: Elite Four
+Mugshot: Pink
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19233,10 +19263,11 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NOLAND ===
 Name: NOLAND
-Class: Factory Head
+Class: Elite Four
 Pic: Factory Head Noland
 Gender: Male
-Music: Male
+Music: Elite Four
+Mugshot: Yellow
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19246,10 +19277,11 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LUCY ===
 Name: LUCY
-Class: Pike Queen
+Class: Elite Four
 Pic: Pike Queen Lucy
 Gender: Female
-Music: Male
+Music: Elite Four
+Mugshot: PURPLE
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 

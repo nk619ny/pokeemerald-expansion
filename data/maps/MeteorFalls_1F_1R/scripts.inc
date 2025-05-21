@@ -643,51 +643,60 @@ MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
 
 MeteorFalls_1F_1R_FlashCheck::
 # 325 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	goto_if_set FLAG_RECEIVED_HM_FLASH, MeteorFalls_1F_1R_FlashCheck_1
-# 340 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	lock
-# 341 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setvar VAR_TEMP_0, 1
-# 342 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox Common_Text_CaveIsDarkNeedFlash
-# 343 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	waitmessage
-# 344 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep
+	goto_if_set FLAG_SYS_USE_FLASH, MeteorFalls_1F_1R_FlashCheck_2
+# 330 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	goto_if_set FLAG_RECEIVED_HM_FLASH, MeteorFalls_1F_1R_FlashCheck_4
 # 345 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	delay 1
+	lock
 # 346 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	warp MAP_ROUTE114, 8, 63
+	setvar VAR_TEMP_0, 1
 # 347 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep
+	msgbox Common_Text_CaveIsDarkNeedFlash
 # 348 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 349 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep
+# 350 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	delay 1
+# 351 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	warp MAP_ROUTE114, 8, 63
+# 352 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep
+# 353 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	waitmovement 0
+# 354 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 	return
 
-MeteorFalls_1F_1R_FlashCheck_1:
+MeteorFalls_1F_1R_FlashCheck_2:
 # 326 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	lock
-# 327 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	msgbox Common_Text_CaveIsDarkUseFlash
-# 328 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	waitmessage
-# 329 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	dofieldeffect FLDEFF_USE_STRENGTH
-# 330 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	playse SE_M_REFLECT
-# 331 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	delay 20
-# 332 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setflag FLAG_SYS_USE_FLASH
-# 333 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	animateflash 0
-# 334 "data/maps/MeteorFalls_1F_1R/scripts.pory"
-	setflashlevel 0
-# 335 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	setvar VAR_TEMP_0, 1
+# 327 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	releaseall
+	return
+
+MeteorFalls_1F_1R_FlashCheck_4:
+# 331 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	lock
+# 332 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	msgbox Common_Text_CaveIsDarkUseFlash
+# 333 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	waitmessage
+# 334 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	dofieldeffect FLDEFF_USE_STRENGTH
+# 335 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	playse SE_M_REFLECT
 # 336 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	delay 20
+# 337 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	setflag FLAG_SYS_USE_FLASH
+# 338 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	animateflash 0
+# 339 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	setflashlevel 0
+# 340 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 341 "data/maps/MeteorFalls_1F_1R/scripts.pory"
 	release
 	return
 

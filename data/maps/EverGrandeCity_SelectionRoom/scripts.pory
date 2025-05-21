@@ -1,0 +1,42 @@
+raw `
+EverGrandeCity_SelectionRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_SelectionRoom_OnWarp
+	.byte 0
+
+EverGrandeCity_SelectionRoom_OnWarp:
+	//map_script_2 VAR_TEMP_1, 0, EverGrandeCity_SelectionRoom_EventScript_PlayerTurnNorth
+	.2byte 0
+
+EverGrandeCity_SelectionRoom_EventScript_PlayerTurnNorth::
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	end
+`
+
+const TempVar_E4Remaining = VAR_TEMP_4
+
+script EverGrandeCity_SelectionRoom_EventScript_DoorGuard {
+    lockall
+    faceplayer
+    waitmovement(0)
+    setvar(TempVar_E4Remaining,0)
+    if(!flag(0x4FB)) {addvar(TempVar_E4Remaining,1)}
+    if(!flag(0x4FC)) {addvar(TempVar_E4Remaining,1)}
+    if(!flag(0x4FD)) {addvar(TempVar_E4Remaining,1)}
+    if(!flag(0x4FE)) {addvar(TempVar_E4Remaining,1)}
+    buffernumberstring(STR_VAR_1,TempVar_E4Remaining)
+    switch(var(TempVar_E4Remaining)){
+        case 0:
+            msgbox(format("You've managed to defeat all of the Elite Four.\pNow, the Champion is all that awaits."),MSGBOX_NPC)
+        case 1:
+            msgbox(format("You still have to defeat the {STR_VAR_1}\Nremaining member of the Elite Four\Nbefore you can take on the Champion."),MSGBOX_NPC)
+        case 2:
+        case 3:
+            msgbox(format("You still have to defeat the {STR_VAR_1}\Nremaining members of the Elite Four\Nbefore you can take on the Champion."),MSGBOX_NPC)
+        case 4:
+            msgbox(format("You must defeat all 4 members of the Elite Four before you can challenge the Champion."),MSGBOX_NPC)
+    }
+    waitmessage
+    releaseall
+    end
+}
+

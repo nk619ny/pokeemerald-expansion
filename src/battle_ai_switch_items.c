@@ -1463,7 +1463,7 @@ static s32 GetSwitchinWeatherImpact(void)
         {
             if ((gBattleWeather & B_WEATHER_HAIL)
              && (AI_DATA->switchinCandidate.battleMon.types[0] != TYPE_ICE || AI_DATA->switchinCandidate.battleMon.types[1] != TYPE_ICE)
-             && ability != ABILITY_SNOW_CLOAK && ability != ABILITY_ICE_BODY)
+             && ability != ABILITY_SNOW_CLOAK && ability != ABILITY_ICE_BODY && ability != ABILITY_SUB_ZERO)
             {
                 weatherImpact = maxHP / 16;
                 if (weatherImpact == 0)

@@ -6,21 +6,22 @@ EverGrandeCity_GlaciasRoom_MapScripts::
 	.byte 0
 
 EverGrandeCity_GlaciasRoom_OnWarp:
-	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_GlaciasRoom_EventScript_PlayerTurnNorth
+	//map_script_2 VAR_TEMP_1, 0, EverGrandeCity_GlaciasRoom_EventScript_PlayerTurnNorth
 	.2byte 0
 
 EverGrandeCity_GlaciasRoom_EventScript_PlayerTurnNorth::
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	//applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep
 	end
 
 EverGrandeCity_GlaciasRoom_OnFrame:
-	map_script_2 VAR_ELITE_4_STATE, 2, EverGrandeCity_GlaciasRoom_EventScript_WalkInCloseDoor
+	map_script_2 VAR_TEMP_4, 0, EverGrandeCity_GlaciasRoom_EventScript_WalkInCloseDoor
 	.2byte 0
 
 EverGrandeCity_GlaciasRoom_EventScript_WalkInCloseDoor::
 	lockall
+	//call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
-	setvar VAR_ELITE_4_STATE, 3
+	setvar VAR_TEMP_4, 1
 	releaseall
 	end
 
@@ -43,22 +44,18 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
-	end
-
-EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech::
-	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
-	release
 	end
 
 EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_GLACIA
-	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
-	msgbox EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	call Common_EventScript_CheckIfEliteFourComplete
+	goto EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech
 	release
 	end
 
+/*
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 	.string "Welcome, my name is GLACIA\n"
 	.string "of the ELITE FOUR.\p"
@@ -81,5 +78,45 @@ EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
 	.string "Advance to the next room.\p"
 	.string "And there, confirm the truly fearsome\n"
 	.string "side of the POKéMON LEAGUE.$"
+*/
+
+EverGrandeCity_GlaciasRoom_EventScript_Wallace::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_GlaciasRoom_Text_Defeat
+	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
+	end
 
 `
+
+text EverGrandeCity_GlaciasRoom_Text_IntroSpeech {
+	format("Allow me to formally introduce myself.\NI am Wallace. Member of the Elite Four.\pI come from Sootopolis, and heard of your talent from my mentor, Juan.\pThis is where your achievements are put to the test against what others like you have achieved.\pNow! Who can most elegantly dance with their Pokémon?\pShow me right here and now!")
+}
+
+text EverGrandeCity_GlaciasRoom_Text_Defeat {
+	format("Bravo!")
+}
+
+text EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech {
+	format("I realize now your authenticity and magnificence as a Pokémon Trainer.\pI find much joy in having met you and your Pokémon.\pProceed forth, and prove yourself against the remaining members!")
+}
+
+text EverGrandeCity_GlaciasRoom_Text_PostE4Speech {
+	format("I lack fitting words to offer you.\pYou are standing before the summit of all Hoenn Trainers.\pLet us see if you can even surpass Steven!")
+}
+
+script EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech {
+	lock
+	if(flag(FLAG_ALL_ELITE_FOUR_BEATEN)) {
+		msgbox(EverGrandeCity_GlaciasRoom_Text_PostE4Speech, MSGBOX_NPC)
+	}
+	else {
+		msgbox(EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech, MSGBOX_NPC)
+	}
+	waitmessage
+	releaseall
+	end
+}

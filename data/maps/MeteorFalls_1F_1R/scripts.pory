@@ -322,7 +322,12 @@ MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
 `
 
 script MeteorFalls_1F_1R_FlashCheck {
-    if(flag(FLAG_RECEIVED_HM_FLASH)) {
+    if (flag(FLAG_SYS_USE_FLASH)) {
+		setvar(VAR_TEMP_0,1)
+		releaseall
+		return
+	}
+	if(flag(FLAG_RECEIVED_HM_FLASH)) {
 		lock
 		msgbox(Common_Text_CaveIsDarkUseFlash)
 		waitmessage

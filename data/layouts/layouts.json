@@ -4590,6 +4590,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F_R/border.bin",
       "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F_R/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_SELECTION_ROOM",
+      "name": "EverGrandeCity_SelectionRoom_Layout",
+      "width": 23,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_SelectionRoom/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_SelectionRoom/map.bin"
     }
   ]
 }

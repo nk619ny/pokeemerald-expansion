@@ -2276,6 +2276,7 @@ u8 DoBattlerEndTurnEffects(void)
                   && ability != ABILITY_SNOW_CLOAK
                   && ability != ABILITY_OVERCOAT
                   && ability != ABILITY_ICE_BODY
+                  && ability != ABILITY_SUB_ZERO
                   && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
                   && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES)
             {
@@ -4687,7 +4688,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             case WEATHER_SNOW:
                 if (!(gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)))
                 {
-                    if (B_OVERWORLD_SNOW >= GEN_9)
+                    if (B_OVERWORLD_SNOW >= GEN_9 && !(FlagGet(FLAG_FORCE_SUN)))
                     {
                         gBattleWeather = B_WEATHER_SNOW;
                         gBattleScripting.animArg1 = B_ANIM_SNOW_CONTINUES;

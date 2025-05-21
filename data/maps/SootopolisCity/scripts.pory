@@ -914,6 +914,7 @@ SootopolisCity_EventScript_StevenHelpWallace::
 	end
 
 SootopolisCity_EventScript_StevenMaxieArchieLeft::
+	goto_if_unset FLAG_RECEIVED_HM_WATERFALL, SootopolisCity_EventScript_StevenGiveWaterfall
 	msgbox SootopolisCity_Text_MaxieArchieLeft, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -1410,7 +1411,7 @@ SootopolisCity_Text_GymSign:
 	.string "SOOTOPOLIS CITY POKéMON GYM\n"
 	.string "LEADER: JUAN\p"
 	.string "“The GYM LEADER with the beauty\n"
-	.string "of pure water!”$"
+	.string "of sculpted ice!”$"
 
 SootopolisCity_Text_CitySign:
 	.string "SOOTOPOLIS CITY\p"
@@ -1751,6 +1752,41 @@ script SootopolisCity_EventScript_StevenLeadPlayerSkyPillar {
 	waitmessage
 	setflag(FLAG_WALLACE_GOES_TO_SKY_PILLAR)
 	clearflag(FLAG_HIDE_SKY_PILLAR_WALLACE)
+	releaseall
+	end
+}
+
+script SootopolisCity_EventScript_StevenWaterfallTrigger {
+	if(!flag(FLAG_RECEIVED_HM_WATERFALL)) {
+		lockall
+		applymovement(LOCALID_STEVEN, SootopolisCity_Movement_StevenWaterfallTrigger)
+		waitmovement(0)
+		goto(SootopolisCity_EventScript_StevenGiveWaterfall)
+	} 
+	releaseall
+	end
+}
+
+movement SootopolisCity_Movement_StevenWaterfallTrigger {
+	walk_right * 2
+}
+
+text SootopolisCity_Text_StevenTakeThis {
+	format("Steven: {PLAYER} - please take this.")
+}
+
+text SootopolisCity_Text_StevenMeetMeInEvergrande {
+	format("Steven: Once you've collected the last Gym Badge, come find me in Ever Grande City.")
+}
+
+script SootopolisCity_EventScript_StevenGiveWaterfall {
+	lockall
+	msgbox(SootopolisCity_Text_StevenTakeThis, MSGBOX_DEFAULT)
+	waitmessage
+	giveitem(ITEM_HM_WATERFALL)
+	setflag(FLAG_RECEIVED_HM_WATERFALL)
+	msgbox(SootopolisCity_Text_StevenMeetMeInEvergrande, MSGBOX_DEFAULT)
+	closemessage
 	releaseall
 	end
 }
