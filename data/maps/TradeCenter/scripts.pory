@@ -116,11 +116,19 @@ script Common_EventScript_CheckIfHideoutsComplete {
 	return
 }
 
-movement Common_Movement_EliteFourNewEntrance{
+movement Common_Movement_EliteFourNewEntranceLeft{
 	//walk_down
 	walk_left * 2
 	walk_down * 4
 	walk_right * 2
+	walk_in_place_fast_up
+}
+
+movement Common_Movement_EliteFourNewEntranceRight{
+	//walk_down
+	walk_right * 2
+	walk_down * 4
+	walk_left * 2
 	walk_in_place_fast_up
 }
 

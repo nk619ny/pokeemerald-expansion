@@ -45,7 +45,7 @@ EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace:
 EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_ChampionsRoom_Text_Defeat
+	call EverGrandeCity_ChampionsRoom_EventScript_SelectStevenTeam
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
@@ -224,6 +224,7 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 	walk_in_place_faster_left
 	step_end
 
+/*
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "WALLACE: Welcome, {PLAYER}{KUN}.\p"
 	.string "That incident in SOOTOPOLIS CITY…\n"
@@ -270,6 +271,7 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "of the POKéMON LEAGUE.\p"
 	.string "I now proclaim you to be the new\n"
 	.string "HOENN region…$"
+*/
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
 	.string "MAY: {PLAYER}{KUN}!\p"
@@ -314,6 +316,7 @@ EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
 	.string "congratulations!\p"
 	.string "Now, go proudly into the final room!$"
 
+/*
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
 	.string "WALLACE: {PLAYER}{KUN}…\p"
 	.string "No, let me rephrase that properly.\p"
@@ -326,6 +329,7 @@ EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
 	.string "have become CHAMPIONS may enter.\p"
 	.string "You'll have to wait outside with\n"
 	.string "PROF. BIRCH.$"
+	*/
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
 	.string "MAY: Groan…\p"
@@ -344,3 +348,34 @@ EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
 	.string "Congratulations!$"
 
 `
+
+text EverGrandeCity_ChampionsRoom_Text_IntroSpeech {
+	format("Steven: Welcome, {PLAYER}.\pI was looking forward to seeing you here one day.\pYou… What did you see on your journey with Pokémon? What did you feel, meeting so many other Trainers like you? What has awoken in you?\pI want you to hit me with it all! Now, bring it!")
+}
+
+text EverGrandeCity_ChampionsRoom_Text_Defeat {
+	format("Steven: I, the Champion, fall in defeat…\pKudos to you, {PLAYER}!\pYou are a truly noble Pokémon Trainer!")
+}
+
+text EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech {
+	format("Steven: Congratulations!\pThe feelings you have for your Pokémon… And the Pokémon that responded to those feelings with all their might…\pThey came together as one, and created an even greater power.\pAnd thus, you were able to grasp victory today!\pYou are rightfully the Hoenn region's newest…")
+}
+
+text EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe {
+	format("Steven: {PLAYER}…\pNo, let me rephrase that properly.\pThe new Champion!\pCome with me!")
+}
+
+text EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside {
+	format("Steven: I'm sorry, but…\pFrom here on, only those Trainers who have become Champions may enter.\pYou'll have to wait outside with Professor Birch.")
+}
+
+script EverGrandeCity_ChampionsRoom_EventScript_SelectStevenTeam {
+	random(1)
+	switch(var(VAR_RESULT)){
+		case 0:
+			trainerbattle_no_intro(TRAINER_STEVEN_1,EverGrandeCity_ChampionsRoom_Text_Defeat)
+		case 1:
+			trainerbattle_no_intro(TRAINER_STEVEN_2,EverGrandeCity_ChampionsRoom_Text_Defeat)
+	}
+	return
+}

@@ -43,7 +43,7 @@ EverGrandeCity_GlaciasRoom_EventScript_WalkInCloseDoor::
 # 22 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	//call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 # 23 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	call_if_unset FLAG_DEFEATED_ELITE_4_GLACIA, PokemonLeague_EliteFour_EventScript_WalkInCloseDoorRight
 # 24 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	setvar VAR_TEMP_4, 1
 # 25 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"

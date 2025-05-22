@@ -807,7 +807,7 @@
 #define TRAINER_JUAN_5                      801
 #define TRAINER_ANGELO                      802
 #define TRAINER_DARIUS                      803
-#define TRAINER_STEVEN                      804
+#define TRAINER_STEVEN_1                     804
 #define TRAINER_ANABEL                      805
 #define TRAINER_TUCKER                      806
 #define TRAINER_SPENSER                     807
@@ -819,22 +819,22 @@
 #define TRAINER_GRUNT_GLACIER_1             813 //was ANDRES rematches, repurposing for new trainers
 #define TRAINER_GRUNT_GLACIER_2             814 //was ANDRES rematches, repurposing for new trainers
 #define TRAINER_GRUNT_GLACIER_3             815 //was ANDRES rematches, repurposing for new trainers
-#define TRAINER_CORY_2                      816
-#define TRAINER_CORY_3                      817
-#define TRAINER_CORY_4                      818
-#define TRAINER_CORY_5                      819
-#define TRAINER_PABLO_2                     820
-#define TRAINER_PABLO_3                     821
-#define TRAINER_PABLO_4                     822
-#define TRAINER_PABLO_5                     823
-#define TRAINER_KOJI_2                      824
-#define TRAINER_KOJI_3                      825
-#define TRAINER_KOJI_4                      826
-#define TRAINER_KOJI_5                      827
-#define TRAINER_CRISTIN_2                   828
-#define TRAINER_CRISTIN_3                   829
-#define TRAINER_CRISTIN_4                   830
-#define TRAINER_CRISTIN_5                   831
+#define TRAINER_STEVEN_2                      816 //was CORY rematches, repurposing for new trainers
+#define TRAINER_STEVEN_3                      817 //was CORY rematches, repurposing for new trainers
+#define TRAINER_STEVEN_4                      818 //was CORY rematches, repurposing for new trainers
+#define TRAINER_WALLACE_2                      819   //was CORY rematches, repurposing for new trainers
+#define TRAINER_WALLACE_3                     820 // was PABLO rematches, repurposing for new trainers
+#define TRAINER_WALLACE_4                     821 // was PABLO rematches, repurposing for new trainers
+#define TRAINER_LUCY_2                     822 // was PABLO rematches, repurposing for new trainers
+#define TRAINER_LUCY_3                     823 // was PABLO rematches, repurposing for new trainers
+#define TRAINER_LUCY_4                      824 // was KOJI rematches, repurposing for new trainers
+#define TRAINER_NOLAND_2                      825 // was KOJI rematches, repurposing for new trainers
+#define TRAINER_NOLAND_3                      826 // was KOJI rematches, repurposing for new trainers
+#define TRAINER_NOLAND_4                      827 // was KOJI rematches, repurposing for new trainers
+#define TRAINER_TUCKER_2                   828 // was CRISTIN rematches, repurposing for new trainers
+#define TRAINER_TUCKER_3                   829 // was CRISTIN rematches, repurposing for new trainers
+#define TRAINER_TUCKER_4                   830 // was CRISTIN rematches, repurposing for new trainers
+#define TRAINER_CRISTIN_5                   831     // was CRISTIN rematches, repurposing for new trainers
 #define TRAINER_FERNANDO_2                  832
 #define TRAINER_FERNANDO_3                  833
 #define TRAINER_FERNANDO_4                  834

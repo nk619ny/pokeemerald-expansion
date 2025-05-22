@@ -25,7 +25,21 @@ PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles::
 
 PokemonLeague_EliteFour_EventScript_WalkInCloseDoor::
 	//applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_EliteFourNewEntrance
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_EliteFourNewEntranceLeft
+	waitmovement 0
+	//playse SE_TRUCK_DOOR
+	//setmetatile 5, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE
+	//setmetatile 6, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE
+	//setmetatile 7, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE
+	//setmetatile 5, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE
+	//setmetatile 6, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE
+	//setmetatile 7, 13, METATILE_EliteFour_EntryDoor_ClosedBottom, TRUE
+	special DrawWholeMapView
+	return
+
+PokemonLeague_EliteFour_EventScript_WalkInCloseDoorRight::
+	//applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_EliteFourNewEntranceRight
 	waitmovement 0
 	//playse SE_TRUCK_DOOR
 	//setmetatile 5, 12, METATILE_EliteFour_EntryDoor_ClosedTop, TRUE

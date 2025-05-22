@@ -220,7 +220,7 @@ Common_EventScript_CheckIfHideoutsComplete_4:
 
 
 # 119 "data/maps/TradeCenter/scripts.pory"
-Common_Movement_EliteFourNewEntrance:
+Common_Movement_EliteFourNewEntranceLeft:
 # 121 "data/maps/TradeCenter/scripts.pory"
 	walk_left
 # 121 "data/maps/TradeCenter/scripts.pory"
@@ -241,46 +241,68 @@ Common_Movement_EliteFourNewEntrance:
 	walk_in_place_fast_up
 	step_end
 
-Common_EventScript_CheckIfEliteFourComplete::
+# 127 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_EliteFourNewEntranceRight:
 # 129 "data/maps/TradeCenter/scripts.pory"
+	walk_right
+# 129 "data/maps/TradeCenter/scripts.pory"
+	walk_right
+# 130 "data/maps/TradeCenter/scripts.pory"
+	walk_down
+# 130 "data/maps/TradeCenter/scripts.pory"
+	walk_down
+# 130 "data/maps/TradeCenter/scripts.pory"
+	walk_down
+# 130 "data/maps/TradeCenter/scripts.pory"
+	walk_down
+# 131 "data/maps/TradeCenter/scripts.pory"
+	walk_left
+# 131 "data/maps/TradeCenter/scripts.pory"
+	walk_left
+# 132 "data/maps/TradeCenter/scripts.pory"
+	walk_in_place_fast_up
+	step_end
+
+Common_EventScript_CheckIfEliteFourComplete::
+# 137 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_SIDNEY, Common_EventScript_CheckIfEliteFourComplete_5
 Common_EventScript_CheckIfEliteFourComplete_3:
-# 133 "data/maps/TradeCenter/scripts.pory"
+# 141 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_ALL_ELITE_FOUR_BEATEN
 Common_EventScript_CheckIfEliteFourComplete_1:
 	return
 
 Common_EventScript_CheckIfEliteFourComplete_2:
-# 130 "data/maps/TradeCenter/scripts.pory"
+# 138 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ALL_ELITE_FOUR_BEATEN
 	goto Common_EventScript_CheckIfEliteFourComplete_1
 
 Common_EventScript_CheckIfEliteFourComplete_4:
-# 129 "data/maps/TradeCenter/scripts.pory"
+# 137 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, Common_EventScript_CheckIfEliteFourComplete_8
 	goto Common_EventScript_CheckIfEliteFourComplete_3
 
 Common_EventScript_CheckIfEliteFourComplete_5:
-# 129 "data/maps/TradeCenter/scripts.pory"
+# 137 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, Common_EventScript_CheckIfEliteFourComplete_4
 	goto Common_EventScript_CheckIfEliteFourComplete_3
 
 Common_EventScript_CheckIfEliteFourComplete_8:
-# 129 "data/maps/TradeCenter/scripts.pory"
+# 137 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, Common_EventScript_CheckIfEliteFourComplete_2
 	goto Common_EventScript_CheckIfEliteFourComplete_3
 
 
 MauvilleCity_EventScript_Temporary::
-# 139 "data/maps/TradeCenter/scripts.pory"
+# 147 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 140 "data/maps/TradeCenter/scripts.pory"
+# 148 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_HM_WATERFALL
-# 176 "data/maps/TradeCenter/scripts.pory"
+# 184 "data/maps/TradeCenter/scripts.pory"
 	waitmessage
-# 177 "data/maps/TradeCenter/scripts.pory"
+# 185 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 178 "data/maps/TradeCenter/scripts.pory"
+# 186 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 

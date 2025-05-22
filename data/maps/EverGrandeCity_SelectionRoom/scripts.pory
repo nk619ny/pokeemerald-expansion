@@ -28,10 +28,10 @@ script EverGrandeCity_SelectionRoom_EventScript_DoorGuard {
         case 0:
             msgbox(format("You've managed to defeat all of the Elite Four.\pNow, the Champion is all that awaits."),MSGBOX_NPC)
         case 1:
-            msgbox(format("You still have to defeat the {STR_VAR_1}\Nremaining member of the Elite Four\Nbefore you can take on the Champion."),MSGBOX_NPC)
+            msgbox("You still have to defeat the {STR_VAR_1}\nremaining member of the Elite Four\lbefore you can take on the Champion.",MSGBOX_NPC)
         case 2:
         case 3:
-            msgbox(format("You still have to defeat the {STR_VAR_1}\Nremaining members of the Elite Four\Nbefore you can take on the Champion."),MSGBOX_NPC)
+            msgbox("You still have to defeat the {STR_VAR_1}\nremaining members of the Elite Four\lbefore you can take on the Champion.",MSGBOX_NPC)
         case 4:
             msgbox(format("You must defeat all 4 members of the Elite Four before you can challenge the Champion."),MSGBOX_NPC)
     }

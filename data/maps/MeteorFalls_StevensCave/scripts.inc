@@ -15,7 +15,7 @@ MeteorFalls_StevensCave_EventScript_Steven::
 # 8 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	lock
 # 9 "data/maps/MeteorFalls_StevensCave/scripts.pory"
-	goto_if_set FLAG_DEFEATED_METEOR_FALLS_STEVEN, MeteorFalls_StevensCave_EventScript_Defeated
+	//goto_if_set FLAG_DEFEATED_METEOR_FALLS_STEVEN, MeteorFalls_StevensCave_EventScript_Defeated
 # 10 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	waitse
 # 11 "data/maps/MeteorFalls_StevensCave/scripts.pory"
@@ -35,11 +35,11 @@ MeteorFalls_StevensCave_EventScript_Steven::
 # 18 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	msgbox MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst, MSGBOX_DEFAULT
 # 19 "data/maps/MeteorFalls_StevensCave/scripts.pory"
-	trainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat
+	//trainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat
 # 20 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
 # 21 "data/maps/MeteorFalls_StevensCave/scripts.pory"
-	setflag FLAG_DEFEATED_METEOR_FALLS_STEVEN
+	//setflag FLAG_DEFEATED_METEOR_FALLS_STEVEN
 # 22 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	release
 # 23 "data/maps/MeteorFalls_StevensCave/scripts.pory"

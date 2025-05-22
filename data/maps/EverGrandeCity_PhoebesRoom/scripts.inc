@@ -43,7 +43,7 @@ EverGrandeCity_PhoebesRoom_EventScript_WalkInCloseDoor::
 # 22 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	//call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 # 23 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	call_if_unset FLAG_DEFEATED_ELITE_4_PHOEBE, PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
 # 24 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	setvar VAR_TEMP_4, 1
 # 25 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"

@@ -11744,9 +11744,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A life-risking headbutt that\n"
             "seriously hurts the user."),
         .effect = EFFECT_HIT,
-        .power = 150,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 120 : 150,
         .type = TYPE_ROCK,
-        .accuracy = 80,
+        .accuracy = B_CUSTOMIZED_MOVE_STATS == TRUE ? 100 : 80,
         .recoil = 50,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,

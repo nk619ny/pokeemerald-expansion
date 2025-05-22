@@ -20,7 +20,7 @@ EverGrandeCity_GlaciasRoom_OnFrame:
 EverGrandeCity_GlaciasRoom_EventScript_WalkInCloseDoor::
 	lockall
 	//call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
-	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	call_if_unset FLAG_DEFEATED_ELITE_4_GLACIA, PokemonLeague_EliteFour_EventScript_WalkInCloseDoorRight
 	setvar VAR_TEMP_4, 1
 	releaseall
 	end

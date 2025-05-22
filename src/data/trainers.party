@@ -19151,13 +19151,14 @@ Tropius
 Level: 30
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_STEVEN ===
+=== TRAINER_STEVEN_1 ===
 Name: STEVEN
-Class: Rival
+Class: Champion
 Pic: Steven
 Gender: Male
-Music: Male
+Music: Elite Four
 Double Battle: Yes
+Mugshot: Green
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Skarmory
@@ -19442,13 +19443,14 @@ Sandslash
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CORY_2 ===
-Name: CORY
-Class: Sailor
-Pic: Sailor
+=== TRAINER_STEVEN_2 ===
+Name: STEVEN
+Class: Champion
+Pic: Steven
 Gender: Male
-Music: Male
+Music: Elite Four
 Double Battle: Yes
+Mugshot: Green
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Wingull
@@ -19463,13 +19465,14 @@ Tentacool
 Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_CORY_3 ===
-Name: CORY
-Class: Sailor
-Pic: Sailor
+=== TRAINER_STEVEN_3 ===
+Name: STEVEN
+Class: Champion
+Pic: Steven
 Gender: Male
-Music: Male
+Music: Elite Four
 Double Battle: Yes
+Mugshot: Green
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Pelipper
@@ -19484,13 +19487,14 @@ Tentacool
 Level: 32
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_CORY_4 ===
-Name: CORY
-Class: Sailor
-Pic: Sailor
+=== TRAINER_STEVEN_4 ===
+Name: STEVEN
+Class: Champion
+Pic: Steven
 Gender: Male
-Music: Male
+Music: Elite Four
 Double Battle: Yes
+Mugshot: Green
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Pelipper
@@ -19505,12 +19509,13 @@ Tentacruel
 Level: 34
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_CORY_5 ===
-Name: CORY
-Class: Sailor
-Pic: Sailor
+=== TRAINER_WALLACE_2 ===
+Name: WALLACE
+Class: Elite Four
+Pic: Champion Wallace
 Gender: Male
-Music: Male
+Music: Elite Four
+Mugshot: Blue
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19526,12 +19531,13 @@ Tentacruel
 Level: 36
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_PABLO_2 ===
-Name: PABLO
-Class: Triathlete
-Pic: Swimming Triathlete M
+=== TRAINER_WALLACE_3 ===
+Name: WALLACE
+Class: Elite Four
+Pic: Champion Wallace
 Gender: Male
-Music: Swimmer
+Music: Elite Four
+Mugshot: Blue
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19543,12 +19549,13 @@ Staryu
 Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_PABLO_3 ===
-Name: PABLO
-Class: Triathlete
-Pic: Swimming Triathlete M
+=== TRAINER_WALLACE_4 ===
+Name: WALLACE
+Class: Elite Four
+Pic: Champion Wallace
 Gender: Male
-Music: Swimmer
+Music: Elite Four
+Mugshot: Blue
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19564,12 +19571,13 @@ Staryu
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_PABLO_4 ===
-Name: PABLO
-Class: Triathlete
-Pic: Swimming Triathlete M
-Gender: Male
-Music: Swimmer
+=== TRAINER_LUCY_2 ===
+Name: LUCY
+Class: Elite Four
+Pic: Pike Queen Lucy
+Gender: Female
+Music: Elite Four
+Mugshot: PURPLE
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19585,12 +19593,13 @@ Staryu
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_PABLO_5 ===
-Name: PABLO
-Class: Triathlete
-Pic: Swimming Triathlete M
-Gender: Male
-Music: Swimmer
+=== TRAINER_LUCY_3 ===
+Name: LUCY
+Class: Elite Four
+Pic: Pike Queen Lucy
+Gender: Female
+Music: Elite Four
+Mugshot: PURPLE
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19606,12 +19615,13 @@ Starmie
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_KOJI_2 ===
-Name: KOJI
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
-Music: Intense
+=== TRAINER_LUCY_4 ===
+Name: LUCY
+Class: Elite Four
+Pic: Pike Queen Lucy
+Gender: Female
+Music: Elite Four
+Mugshot: PURPLE
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19623,12 +19633,13 @@ Machoke
 Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_KOJI_3 ===
-Name: KOJI
-Class: Black Belt
-Pic: Black Belt
+=== TRAINER_NOLAND_2 ===
+Name: NOLAND
+Class: Elite Four
+Pic: Factory Head Noland
 Gender: Male
-Music: Intense
+Music: Elite Four
+Mugshot: Yellow
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19644,12 +19655,13 @@ Machoke
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_KOJI_4 ===
-Name: KOJI
-Class: Black Belt
-Pic: Black Belt
+=== TRAINER_NOLAND_3 ===
+Name: NOLAND
+Class: Elite Four
+Pic: Factory Head Noland
 Gender: Male
-Music: Intense
+Music: Elite Four
+Mugshot: Yellow
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19665,12 +19677,13 @@ Machoke
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_KOJI_5 ===
-Name: KOJI
-Class: Black Belt
-Pic: Black Belt
+=== TRAINER_NOLAND_4 ===
+Name: NOLAND
+Class: Elite Four
+Pic: Factory Head Noland
 Gender: Male
-Music: Intense
+Music: Elite Four
+Mugshot: Yellow
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19686,12 +19699,13 @@ Machamp
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CRISTIN_2 ===
-Name: CRISTIN
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
+=== TRAINER_TUCKER_2 ===
+Name: TUCKER
+Class: Elite Four
+Pic: Dome Ace Tucker
+Gender: Male
+Music: Elite Four
+Mugshot: Pink
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19703,12 +19717,13 @@ Vigoroth
 Level: 35
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-=== TRAINER_CRISTIN_3 ===
-Name: CRISTIN
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
+=== TRAINER_TUCKER_3 ===
+Name: TUCKER
+Class: Elite Four
+Pic: Dome Ace Tucker
+Gender: Male
+Music: Elite Four
+Mugshot: Pink
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -19724,12 +19739,13 @@ Vigoroth
 Level: 37
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_CRISTIN_4 ===
-Name: CRISTIN
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
+=== TRAINER_TUCKER_4 ===
+Name: TUCKER
+Class: Elite Four
+Pic: Dome Ace Tucker
+Gender: Male
+Music: Elite Four
+Mugshot: Pink
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 

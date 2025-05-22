@@ -114,17 +114,11 @@ EverGrandeCity_SelectionRoom_EventScript_DoorGuard_Text_0:
 
 EverGrandeCity_SelectionRoom_EventScript_DoorGuard_Text_1:
 # 31 "data/maps/EverGrandeCity_SelectionRoom/scripts.pory"
-	.string "You still have to defeat the\n"
-	.string "{STR_VAR_1}\l"
-	.string "remaining member of the Elite Four\l"
-	.string "before you can take on the Champion.$"
+	.string "You still have to defeat the {STR_VAR_1}\nremaining member of the Elite Four\lbefore you can take on the Champion.$"
 
 EverGrandeCity_SelectionRoom_EventScript_DoorGuard_Text_2:
 # 34 "data/maps/EverGrandeCity_SelectionRoom/scripts.pory"
-	.string "You still have to defeat the\n"
-	.string "{STR_VAR_1}\l"
-	.string "remaining members of the Elite Four\l"
-	.string "before you can take on the Champion.$"
+	.string "You still have to defeat the {STR_VAR_1}\nremaining members of the Elite Four\lbefore you can take on the Champion.$"
 
 EverGrandeCity_SelectionRoom_EventScript_DoorGuard_Text_3:
 # 36 "data/maps/EverGrandeCity_SelectionRoom/scripts.pory"

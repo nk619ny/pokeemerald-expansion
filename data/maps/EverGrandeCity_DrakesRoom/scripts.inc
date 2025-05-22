@@ -7,7 +7,7 @@ EverGrandeCity_DrakesRoom_MapScripts::
 # 4 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_DrakesRoom_OnLoad
 # 5 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_SidneysRoom_OnWarp
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_DrakesRoom_OnWarp
 # 6 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.byte 0
 # 7 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
@@ -45,7 +45,7 @@ EverGrandeCity_DrakesRoom_EventScript_WalkInCloseDoor::
 # 23 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	//call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 # 24 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	call_if_unset FLAG_DEFEATED_ELITE_4_DRAKE, PokemonLeague_EliteFour_EventScript_WalkInCloseDoorRight
 # 25 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	setvar VAR_TEMP_4, 1
 # 26 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"

@@ -81,7 +81,7 @@ EverGrandeCity_SidneysRoom_EventScript_WalkInCloseDoor::
 # 41 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	//call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 # 42 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	call PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
+	call_if_unset FLAG_DEFEATED_ELITE_4_SIDNEY, PokemonLeague_EliteFour_EventScript_WalkInCloseDoor
 # 43 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	setvar VAR_TEMP_4, 1
 # 44 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
