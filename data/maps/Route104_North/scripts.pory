@@ -1,11 +1,16 @@
 raw `
 Route104_North_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route104_North_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route104_North_OnFrame
 	.byte 0
 
 Route104_North_OnTransition:
 	call Route104_North_EventScript_ShowOrHideWhiteHerbFlorist
 	end
+
+Route104_North_OnFrame:
+	map_script_2 VAR_TEMP_1, 0, Route104_North_EventScript_SetBrokenBridge
+	.2byte 0
 
 Route104_North_EventScript_ShowOrHideWhiteHerbFlorist::
 	goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_North_EventScript_HideWhiteHerbFlorist
@@ -260,3 +265,17 @@ Route104_North_EventScript_Darian::
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
 `
+
+script Route104_North_EventScript_SetBrokenBridge {
+	if(!flag(FLAG_VISITED_RUSTBORO_CITY)){
+		setmetatile(28,15,0x20D,TRUE)
+		setmetatile(28,16,0x20E,TRUE)
+		setmetatile(28,17,0x20F,TRUE)
+		setmetatile(27,15,0x20E,TRUE)
+		setmetatile(27,16,0x20F,TRUE)
+		setmetatile(27,17,0x208,TRUE)
+	}
+	special(DrawWholeMapView)
+	setvar(VAR_TEMP_1, 1)
+	return
+}
