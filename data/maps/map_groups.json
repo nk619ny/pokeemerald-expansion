@@ -606,7 +606,8 @@
     "Slateport_Original",
     "TestMapDesert",
     "TestMapIce",
-    "TestMapSpaceTime"
+    "TestMapSpaceTime",
+    "DewfordGymCopy"
   ],
   "gMapGroup_IndoorRoute109": [
     "Route109_SeashoreHouse"

@@ -1193,3 +1193,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.inc"
 
 	.include "data/maps/EverGrandeCity_SelectionRoom/scripts.inc"
+
+	.include "data/maps/DewfordGymCopy/scripts.inc"

@@ -23,6 +23,7 @@ PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles::
 	special DrawWholeMapView
 	return
 
+
 PokemonLeague_EliteFour_EventScript_WalkInCloseDoor::
 	//applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_EliteFourNewEntranceLeft
