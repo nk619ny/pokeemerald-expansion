@@ -298,11 +298,15 @@ MauvilleCity_EventScript_Temporary::
 	lock
 # 148 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_HM_WATERFALL
-# 184 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
+# 172 "data/maps/TradeCenter/scripts.pory"
+	giveitem ITEM_PROTEIN, 30
+# 173 "data/maps/TradeCenter/scripts.pory"
+	giveitem ITEM_HP_UP, 30
 # 185 "data/maps/TradeCenter/scripts.pory"
-	closemessage
+	waitmessage
 # 186 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 187 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 

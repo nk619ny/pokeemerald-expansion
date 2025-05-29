@@ -169,7 +169,8 @@ script MauvilleCity_EventScript_Temporary{
 	//buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
 	//msgbox("adjusted level cap is {STR_VAR_1}")
 	//waitmessage*/
-	//giveitem(ITEM_MEGA_RING)
+	giveitem(ITEM_PROTEIN, 30)
+	giveitem(ITEM_HP_UP, 30)
 	//givemon(SPECIES_CYNDAQUIL,24,,,,2,,,,,,,,,,,,,,MOVE_SEARING_SUNRAZE_SMASH,MOVE_SUNSTEEL_STRIKE,MOVE_BITTER_MALICE,MOVE_PURIFY)
 	//givemon(SPECIES_CYNDAQUIL_HISUI,25,,,,1,,,,,,,,,,,,,,MOVE_INFERNAL_PARADE,MOVE_COMBAT_TORQUE,MOVE_THUNDERCLAP,MOVE_NIGHT_DAZE)
 	//givemon(SPECIES_WAILORD,50,ITEM_TYPHLOSIONITE,,,2,,,,,,,,,,,,,,MOVE_DYNAMIC_PUNCH,MOVE_WICKED_TORQUE,MOVE_BOOMBURST,MOVE_SEARING_SUNSMASH)
@@ -185,4 +186,19 @@ script MauvilleCity_EventScript_Temporary{
 	closemessage
 	releaseall
 	end
+}
+
+script Common_EventScript_HideGym0OptionalRewards {
+	//hideobject(LOCALID_MAUVILLE_CITY_GYM_ITEM_BALL_1)
+	//hideobject(LOCALID_MAUVILLE_CITY_GYM_ITEM_BALL_2)
+	//hideobject(LOCALID_MAUVILLE_CITY_GYM_ITEM_BALL_3)
+	//hideobject(LOCALID_MAUVILLE_CITY_GYM_ITEM_BALL_4)
+	//hideobject(LOCALID_MAUVILLE_CITY_GYM_ITEM_BALL_5)
+	//hideobject(LOCALID_MAUVILLE_CITY_GYM_ITEM_BALL_6)
+	return
+}
+
+script Common_EventScript_HideGym1OptionalRewards {
+	setflag(FLAG_RECEIVED_6_SODA_POP)
+	return
 }

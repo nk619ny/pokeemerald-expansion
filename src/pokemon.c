@@ -66,6 +66,7 @@
 #include "wild_encounter.h"
 
 #define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_8) ? 160 : 220)
+#define VITAMIN_EV_BOOST_VALUE 64
 
 struct SpeciesItem
 {
@@ -3916,7 +3917,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                     case 0: // ITEM4_EV_HP
                     case 1: // ITEM4_EV_ATK
                         evCount = GetMonEVCount(mon);
-                        temp2 = itemEffect[itemEffectParam];
+                        temp2 = VITAMIN_EV_BOOST_VALUE;
                         dataSigned = GetMonData(mon, sGetMonDataEVConstants[temp1], NULL);
                         evChange = temp2;
 
@@ -4098,7 +4099,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                     case 2: // ITEM5_EV_SPDEF
                     case 3: // ITEM5_EV_SPATK
                         evCount = GetMonEVCount(mon);
-                        temp2 = itemEffect[itemEffectParam];
+                        temp2 = VITAMIN_EV_BOOST_VALUE;
                         dataSigned = GetMonData(mon, sGetMonDataEVConstants[temp1 + 2], NULL);
                         evChange = temp2;
                         if (evChange > 0) // Increasing EV

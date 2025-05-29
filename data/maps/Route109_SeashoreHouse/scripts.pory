@@ -25,7 +25,8 @@ Route109_SeashoreHouse_EventScript_AlreadyGaveIntroduction::
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers::
 	msgbox Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles, MSGBOX_DEFAULT
-	giveitem ITEM_SODA_POP, 6
+	//giveitem ITEM_SODA_POP, 6
+	giveitem ITEM_HEART_SCALE, 1
 	goto_if_eq VAR_RESULT, FALSE, Route109_SeashoreHouse_EventScript_BagFull
 	setflag FLAG_RECEIVED_6_SODA_POP
 	release
@@ -116,12 +117,8 @@ Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles:
 	.string "Those battles blazed!\l"
 	.string "I'm more than just satisfied!\p"
 	.string "As thanks for showing me your hot\n"
-	.string "streak, I want you to take these.\p"
-	.string "It's half a dozen bottles of SODA POP!$"
-
-Route109_SeashoreHouse_Text_BagFull:
-	.string "Oh, but hey, your BAG's jammed full.\n"
-	.string "I'll hang on to these for you.$"
+	.string "streak, I want you to take this.\p"
+	.string "It's a valuable scale that washed up!$"
 
 Route109_SeashoreHouse_Text_WantToBuySodaPop:
 	.string "Want to buy some SODA POP?\n"
@@ -177,3 +174,7 @@ Route109_SeashoreHouse_Text_SimonPostBattle:
 	.string "back, I could get rid of this inner tube.$"
 
 `
+
+text Route109_SeashoreHouse_Text_BagFull {
+	format("Oh, but hey, your bag's jammed full.\nI'll hang on to this for a little while.\pBut you better come back soon, I can't hold it forever!")
+}

@@ -3015,7 +3015,7 @@ Grumpig
 Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CINDY_1 ===
+=== TRAINER_CINDY_1 === /* Route 104 */
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -7152,7 +7152,7 @@ Hariyama
 Level: 39
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
-=== TRAINER_CALVIN_1 ===
+=== TRAINER_CALVIN_1 === /* Route 102 */
 Name: CALVIN
 Class: Youngster
 Pic: Youngster
@@ -7162,15 +7162,31 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Poochyena
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sentret  
+Ability: Keen Eye  
+Level: 6
+- Echoed Voice  
+- Quick Attack  
+- Fury Cutter  
+- Rollout  
 
-Zigzagoon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bidoof  
+Ability: Moody  
+Level: 6
+- Chilling Water  
+- Yawn  
+- Fury Swipes  
+- Attract  
 
-=== TRAINER_BILLY ===
+Wooloo  
+Ability: Fluffy  
+Level: 6
+- Copycat  
+- Grassy Glide  
+- Tackle  
+- Protect 
+
+=== TRAINER_BILLY === /* Route 104 */
 Name: BILLY
 Class: Youngster
 Pic: Youngster
@@ -13665,7 +13681,7 @@ IVs: 0 Atk
 - Heat Wave  
 
 
-=== TRAINER_TIANA ===
+=== TRAINER_TIANA === /* Route 102 */
 Name: TIANA
 Class: Lass
 Pic: Lass
@@ -13674,15 +13690,44 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Litleo  
+Ability: Unnerve  
+Level: 10
+Tera Type: Fire  
+- Ember  
+- Echoed Voice  
+- Trailblaze  
+- Mud-Slap  
 
-Shroomish
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rockruff  
+Ability: Keen Eye  
+Level: 10
+Tera Type: Rock  
+- Rock Throw  
+- Covet  
+- Howl  
+- Mud-Slap  
 
-=== TRAINER_HALEY_1 ===
+Yamper  
+Ability: Rattled  
+Level: 10
+Tera Type: Electric  
+- Thunder Fang  
+- Howl  
+- Attract  
+- Tackle  
+
+Houndour  
+Ability: Unnerve  
+Level: 10
+Tera Type: Dark  
+- Fire Fang  
+- Howl  
+- Thief  
+- Torment  
+
+
+=== TRAINER_HALEY_1 === /* Route 104 North */
 Name: HALEY
 Class: Lass
 Pic: Lass
@@ -13869,7 +13914,7 @@ Wailmer
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RICK ===
+=== TRAINER_RICK === /* Route 102 */
 Name: RICK
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -13878,15 +13923,32 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wurmple  
+Ability: Shield Dust  
+Level: 6
+- String Shot  
+- Bug Bite  
+- Tackle  
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Burmy  
+Ability: Shed Skin  
+Level: 6
+Tera Type: Bug  
+- Protect  
+- String Shot  
+- Tackle  
+- Bug Bite  
 
-=== TRAINER_LYLE ===
+Spinarak  
+Ability: Sniper  
+Level: 6
+Tera Type: Bug  
+- Absorb  
+- Spider Web  
+- Poison Sting  
+- Mud-Slap  
+
+=== TRAINER_LYLE === /* Petalburg Woods */
 Name: LYLE
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -13895,21 +13957,39 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Silcoon  
+Ability: Shed Skin  
+Level: 10
+Tera Type: Bug  
+- Harden  
+- String Shot  
+- Tackle  
+- Poison Sting  
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cascoon  
+Ability: Shed Skin  
+Level: 10
+Tera Type: Bug  
+- Harden  
+- String Shot  
+- Tackle  
+- Poison Sting  
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Metapod  
+Ability: Shed Skin  
+Level: 10
+Tera Type: Bug  
+- Iron Defense  
+- Bug Bite  
+- Electroweb  
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kakuna  
+Ability: Shed Skin  
+Level: 10
+Tera Type: Bug  
+- Poison Sting  
+- Bug Bite  
+- Electroweb  
 
 === TRAINER_JOSE ===
 Name: JOSE
@@ -13975,7 +14055,7 @@ Ninjask
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JAMES_1 ===
+=== TRAINER_JAMES_1 === /* Petalburg Woods */
 Name: JAMES
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -13984,13 +14064,54 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kricketot  
+Ability: Shed Skin  
+Level: 10
+Tera Type: Bug  
+IVs: 0 Atk  
+- Echoed Voice  
+- Struggle Bug  
+- Mud-Slap  
+- Bide  
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venipede  
+Ability: Poison Point  
+Level: 10
+- Pin Missile  
+- Rollout  
+- Rock Smash  
+- Toxic Spikes  
+
+Grubbin  
+Ability: Swarm  
+Level: 10
+Tera Type: Water
+IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe /* HP Water IVs for Min Atk */
+- Shock Wave  
+- Struggle Bug  
+- Hidden Power
+
+Scatterbug  
+Ability: Shield Dust  
+Level: 10  
+Tera Type: Bug  
+EVs: 252 HP  
+- Stun Spore  
+- Pounce  
+- Struggle Bug  
+- Rage Powder  
+
+Blipbug  
+Ability: Swarm  
+Level: 10  
+Tera Type: Bug  
+EVs: 252 HP  
+IVs: 0 Atk  
+- Infestation  
+- Sticky Web  
+- Recover  
+- Supersonic  
+
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -16058,7 +16179,7 @@ Zigzagoon @ Nugget
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DARIAN ===
+=== TRAINER_DARIAN === /* Route 104 */
 Name: DARIAN
 Class: Fisherman
 Pic: Fisherman
@@ -16067,9 +16188,30 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magikarp
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Magikarp  
+Ability: Rattled  
+Level: 12
+- Tackle  
+- Flail  
+- Bounce  
+- Bubble Beam  
+
+Feebas  
+Ability: Oblivious  
+Level: 12
+- Icy Wind  
+- Scale Shot  
+- Dive  
+- Confuse Ray  
+
+Wishiwashi  
+Ability: Schooling  
+Level: 12
+IVs: 0 Atk  
+- Tearful Look  
+- Whirlpool  
+- Soak  
+- Protect  
 
 === TRAINER_HAILEY ===
 Name: HAILEY
