@@ -483,7 +483,7 @@ PetalburgWoods_Text_TrainerTipsPP:
 `
 
 script PetalburgWoods_EventScript_HideMysteryGrotto {
-	if(!flag(FLAG_ENABLE_NORMAN_MATCH_CALL)){
+	if(!flag(FLAG_DEFEATED_NORMAN_INTRO)){
 		setmetatile(26,4,0x0C7,TRUE) //overlapping tree
 		setmetatile(27,4,0x0C7,TRUE) //overlapping tree
 		setmetatile(26,5,0x016,TRUE) //tree bottom

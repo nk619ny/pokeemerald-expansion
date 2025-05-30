@@ -1993,7 +1993,7 @@ Route104_EventScript_Mia::
 # 997 "data/maps/Route104/scripts.pory"
 Route104_EventScript_Darian::
 # 998 "data/maps/Route104/scripts.pory"
-	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
+	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat, Route104_EventScript_TryDarianGiftAfterBattle
 # 999 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 # 1000 "data/maps/Route104/scripts.pory"
@@ -2384,165 +2384,216 @@ Route101_EventScript_PeekoCutscene::
 # 1198 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1199 "data/maps/Route104/scripts.pory"
-	msgbox Route101_EventScript_PeekoCutscene_Text_0
+	applymovement 35, Common_Movement_WalkInPlaceRight
 # 1200 "data/maps/Route104/scripts.pory"
-	msgbox Route101_EventScript_PeekoCutscene_Text_1
+	waitmovement 0
 # 1201 "data/maps/Route104/scripts.pory"
-	msgbox Route101_EventScript_PeekoCutscene_Text_2
+	msgbox Route101_EventScript_PeekoCutscene_Text_0
 # 1202 "data/maps/Route104/scripts.pory"
-	msgbox Route101_EventScript_PeekoCutscene_Text_3
+	waitmessage
 # 1203 "data/maps/Route104/scripts.pory"
-	waitmessage
+	applymovement 36, Common_Movement_WalkInPlaceLeft
 # 1204 "data/maps/Route104/scripts.pory"
-	applymovement 36, Route101_Cutscene_GruntApproachPeeko
+	waitmovement 0
 # 1205 "data/maps/Route104/scripts.pory"
-	waitmovement 0
+	msgbox Route101_EventScript_PeekoCutscene_Text_1
 # 1206 "data/maps/Route104/scripts.pory"
-	removeobject 37
-# 1207 "data/maps/Route104/scripts.pory"
-	msgbox Route101_EventScript_PeekoCutscene_Text_4
-# 1208 "data/maps/Route104/scripts.pory"
 	waitmessage
-# 1209 "data/maps/Route104/scripts.pory"
-	applymovement 36, Route101_Cutscene_GruntFlees
-# 1210 "data/maps/Route104/scripts.pory"
+# 1207 "data/maps/Route104/scripts.pory"
+	applymovement 35, Common_Movement_WalkInPlaceRight
+# 1208 "data/maps/Route104/scripts.pory"
 	waitmovement 0
+# 1209 "data/maps/Route104/scripts.pory"
+	msgbox Route101_EventScript_PeekoCutscene_Text_2
+# 1210 "data/maps/Route104/scripts.pory"
+	waitmessage
 # 1211 "data/maps/Route104/scripts.pory"
-	removeobject 36
+	applymovement 36, Common_Movement_WalkInPlaceLeft
 # 1212 "data/maps/Route104/scripts.pory"
-	setflag FLAG_HIDE_104_GRUNT_AND_PEEKO
+	waitmovement 0
 # 1213 "data/maps/Route104/scripts.pory"
-	setvar VAR_PETALBURG_CITY_STATE, 4
+	msgbox Route101_EventScript_PeekoCutscene_Text_3
 # 1214 "data/maps/Route104/scripts.pory"
-	delay 20
+	waitmessage
 # 1215 "data/maps/Route104/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraRevert
+	applymovement 36, Route101_Cutscene_GruntApproachPeeko
 # 1216 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1217 "data/maps/Route104/scripts.pory"
-	special RemoveCameraObject
+	removeobject 37
+# 1218 "data/maps/Route104/scripts.pory"
+	applymovement 35, Common_Movement_WalkInPlaceDown
 # 1219 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1220 "data/maps/Route104/scripts.pory"
+	msgbox Route101_EventScript_PeekoCutscene_Text_4
+# 1221 "data/maps/Route104/scripts.pory"
+	waitmessage
+# 1222 "data/maps/Route104/scripts.pory"
+	applymovement 36, Route101_Cutscene_GruntFlees
+# 1223 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1224 "data/maps/Route104/scripts.pory"
+	removeobject 36
+# 1225 "data/maps/Route104/scripts.pory"
+	setflag FLAG_HIDE_104_GRUNT_AND_PEEKO
+# 1226 "data/maps/Route104/scripts.pory"
+	setvar VAR_PETALBURG_CITY_STATE, 4
+# 1227 "data/maps/Route104/scripts.pory"
+	delay 20
+# 1228 "data/maps/Route104/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraRevert
+# 1229 "data/maps/Route104/scripts.pory"
+	waitmovement 0
+# 1230 "data/maps/Route104/scripts.pory"
+	special RemoveCameraObject
+# 1232 "data/maps/Route104/scripts.pory"
 	releaseall
 	end
 
 
-# 1223 "data/maps/Route104/scripts.pory"
+# 1236 "data/maps/Route104/scripts.pory"
 Route101_Cutscene_CameraPan:
-# 1224 "data/maps/Route104/scripts.pory"
+# 1237 "data/maps/Route104/scripts.pory"
 	walk_fast_left
-# 1224 "data/maps/Route104/scripts.pory"
+# 1237 "data/maps/Route104/scripts.pory"
 	walk_fast_left
-# 1224 "data/maps/Route104/scripts.pory"
+# 1237 "data/maps/Route104/scripts.pory"
 	walk_fast_left
-# 1224 "data/maps/Route104/scripts.pory"
+# 1237 "data/maps/Route104/scripts.pory"
 	walk_fast_left
-# 1224 "data/maps/Route104/scripts.pory"
+# 1237 "data/maps/Route104/scripts.pory"
 	walk_fast_left
-# 1224 "data/maps/Route104/scripts.pory"
+# 1237 "data/maps/Route104/scripts.pory"
 	walk_fast_left
-# 1224 "data/maps/Route104/scripts.pory"
+# 1237 "data/maps/Route104/scripts.pory"
 	walk_fast_left
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
-# 1225 "data/maps/Route104/scripts.pory"
+# 1238 "data/maps/Route104/scripts.pory"
 	walk_diag_northwest
 	step_end
 
-# 1228 "data/maps/Route104/scripts.pory"
+# 1241 "data/maps/Route104/scripts.pory"
 Route101_Cutscene_GruntApproachPeeko:
-# 1229 "data/maps/Route104/scripts.pory"
+# 1242 "data/maps/Route104/scripts.pory"
 	walk_fast_down
-# 1230 "data/maps/Route104/scripts.pory"
+# 1243 "data/maps/Route104/scripts.pory"
 	face_left
 	step_end
 
-# 1233 "data/maps/Route104/scripts.pory"
+# 1246 "data/maps/Route104/scripts.pory"
 Route101_Cutscene_GruntFlees:
-# 1234 "data/maps/Route104/scripts.pory"
+# 1247 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1234 "data/maps/Route104/scripts.pory"
+# 1247 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1234 "data/maps/Route104/scripts.pory"
+# 1247 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1234 "data/maps/Route104/scripts.pory"
+# 1247 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1235 "data/maps/Route104/scripts.pory"
+# 1248 "data/maps/Route104/scripts.pory"
 	walk_fast_up
-# 1235 "data/maps/Route104/scripts.pory"
+# 1248 "data/maps/Route104/scripts.pory"
 	walk_fast_up
-# 1235 "data/maps/Route104/scripts.pory"
+# 1248 "data/maps/Route104/scripts.pory"
 	walk_fast_up
-# 1235 "data/maps/Route104/scripts.pory"
+# 1248 "data/maps/Route104/scripts.pory"
 	walk_fast_up
-# 1235 "data/maps/Route104/scripts.pory"
+# 1248 "data/maps/Route104/scripts.pory"
 	walk_fast_up
-# 1235 "data/maps/Route104/scripts.pory"
+# 1248 "data/maps/Route104/scripts.pory"
 	walk_fast_up
-# 1235 "data/maps/Route104/scripts.pory"
+# 1248 "data/maps/Route104/scripts.pory"
 	walk_fast_up
-# 1235 "data/maps/Route104/scripts.pory"
+# 1248 "data/maps/Route104/scripts.pory"
 	walk_fast_up
-# 1235 "data/maps/Route104/scripts.pory"
+# 1248 "data/maps/Route104/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 1238 "data/maps/Route104/scripts.pory"
+# 1251 "data/maps/Route104/scripts.pory"
 Route101_Cutscene_CameraRevert:
-# 1239 "data/maps/Route104/scripts.pory"
+# 1252 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1239 "data/maps/Route104/scripts.pory"
+# 1252 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1239 "data/maps/Route104/scripts.pory"
+# 1252 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1239 "data/maps/Route104/scripts.pory"
+# 1252 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1239 "data/maps/Route104/scripts.pory"
+# 1252 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1239 "data/maps/Route104/scripts.pory"
+# 1252 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1239 "data/maps/Route104/scripts.pory"
+# 1252 "data/maps/Route104/scripts.pory"
 	walk_fast_right
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
-# 1240 "data/maps/Route104/scripts.pory"
+# 1253 "data/maps/Route104/scripts.pory"
 	walk_diag_southeast
 	step_end
+
+Route104_EventScript_TryDarianGiftAfterBattle::
+# 1257 "data/maps/Route104/scripts.pory"
+	lock
+# 1258 "data/maps/Route104/scripts.pory"
+	goto_if_set FLAG_DEFEATED_NORMAN_INTRO, Route104_EventScript_TryDarianGiftAfterBattle_1
+# 1262 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_TryDarianGiftAfterBattle_Text_1, MSGBOX_NPC
+# 1263 "data/maps/Route104/scripts.pory"
+	waitmessage
+# 1264 "data/maps/Route104/scripts.pory"
+	giveitem ITEM_CARBOS
+# 1265 "data/maps/Route104/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 1266 "data/maps/Route104/scripts.pory"
+	waitfanfare
+# 1267 "data/maps/Route104/scripts.pory"
+	release
+	end
+
+Route104_EventScript_TryDarianGiftAfterBattle_1:
+# 1259 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_TryDarianGiftAfterBattle_Text_0, MSGBOX_NPC
+	return
+
 
 Route104_EventScript_BrineyNew_Text_0:
 # 1186 "data/maps/Route104/scripts.pory"
@@ -2558,29 +2609,53 @@ Route104_EventScript_BrineyNew_Text_1:
 	.string "you, it's great to finally meet you.$"
 
 Route101_EventScript_PeekoCutscene_Text_0:
-# 1199 "data/maps/Route104/scripts.pory"
-	.string "Mr. Briney: I can't part with my beloved\n"
-	.string "Peeko!$"
+# 1201 "data/maps/Route104/scripts.pory"
+	.string "I won't give up my beloved Peeko!$"
 
 Route101_EventScript_PeekoCutscene_Text_1:
-# 1200 "data/maps/Route104/scripts.pory"
-	.string "Team Aqua Grunt: Your Wingull has a rare\n"
-	.string "ability to influence the weather. It will\l"
-	.string "be incredibly valuable to our efforts\l"
-	.string "to protect Hoenn's seas!$"
+# 1205 "data/maps/Route104/scripts.pory"
+	.string "That Wingull has a rare ability to\n"
+	.string "influence the weather.\l"
+	.string "It will be incredibly valuable to our\l"
+	.string "efforts to protect Hoenn's shores!$"
 
 Route101_EventScript_PeekoCutscene_Text_2:
-# 1201 "data/maps/Route104/scripts.pory"
-	.string "Mr. Briney: Peeko's never changed the\n"
-	.string "weather before!$"
+# 1209 "data/maps/Route104/scripts.pory"
+	.string "What?\n"
+	.string "That's nonsense.\l"
+	.string "Peeko's never made the weather change!$"
 
 Route101_EventScript_PeekoCutscene_Text_3:
-# 1202 "data/maps/Route104/scripts.pory"
-	.string "Team Aqua Grunt: It just needs to be\n"
-	.string "trained further. I don't have time to\l"
-	.string "discuss this! The Pokémon is coming\l"
-	.string "with me.$"
+# 1213 "data/maps/Route104/scripts.pory"
+	.string "I'm sure of it. It just needs to be\n"
+	.string "trained further.\l"
+	.string "But I don't have time to keep going\l"
+	.string "back and forth with you! That Pokémon\l"
+	.string "is coming with me.$"
 
 Route101_EventScript_PeekoCutscene_Text_4:
-# 1207 "data/maps/Route104/scripts.pory"
-	.string "Mr. Briney: Peeko!$"
+# 1220 "data/maps/Route104/scripts.pory"
+	.string "Peeko!!$"
+
+Route104_EventScript_TryDarianGiftAfterBattle_Text_0:
+# 1259 "data/maps/Route104/scripts.pory"
+	.string "A little while ago, I fished up some sort\n"
+	.string "of Pokémon treat. Didn't need it,\l"
+	.string "though.\p"
+	.string "If you came a little sooner, I would've\n"
+	.string "just given it to you, but I already\l"
+	.string "threw it away.$"
+
+Route104_EventScript_TryDarianGiftAfterBattle_Text_1:
+# 1262 "data/maps/Route104/scripts.pory"
+	.string "I just fished up some kind of medicine\n"
+	.string "or treat or something, for Pokémon.\p"
+	.string "Mine don't seem interested, so you can\n"
+	.string "have it.$"
+
+Route104_Text_DarianPostBattle::
+# 1272 "data/maps/Route104/scripts.pory"
+	.string "Sometimes objects get caught in my\n"
+	.string "fishing line.\p"
+	.string "Usually it's junk, so I just throw them\n"
+	.string "away.$"

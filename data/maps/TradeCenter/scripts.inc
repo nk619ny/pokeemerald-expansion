@@ -305,7 +305,7 @@ MauvilleCity_EventScript_Temporary::
 # 174 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_IRON, 30
 # 175 "data/maps/TradeCenter/scripts.pory"
-	clearflag FLAG_ENABLE_NORMAN_MATCH_CALL
+	clearflag FLAG_DEFEATED_NORMAN_INTRO
 # 187 "data/maps/TradeCenter/scripts.pory"
 	waitmessage
 # 188 "data/maps/TradeCenter/scripts.pory"
@@ -316,11 +316,19 @@ MauvilleCity_EventScript_Temporary::
 
 
 Common_EventScript_HideGym0OptionalRewards::
+# 194 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_102_POTION
+# 195 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_104_POTION
+# 196 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_104_X_ACCURACY
+# 197 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_104_NORTH_NEW
 	return
 
 
 Common_EventScript_HideGym1OptionalRewards::
-# 204 "data/maps/TradeCenter/scripts.pory"
+# 202 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_6_SODA_POP
 	return
 

@@ -965,7 +965,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Birch::
 # 483 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	faceplayer
 # 484 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_unset FLAG_ENABLE_NORMAN_MATCH_CALL, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen
+	goto_if_unset FLAG_DEFEATED_NORMAN_INTRO, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen
 # 485 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	//goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 5, LittlerootTown_ProfessorBirchsLab_EventScript_CanHaveAnyOneOfRarePokemon
 # 486 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

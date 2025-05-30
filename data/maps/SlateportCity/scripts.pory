@@ -1384,3 +1384,11 @@ script SlateportCity_EventScript_FarmSign {
 	msgbox(format("Tunnel to Slateport Farm"), MSGBOX_SIGN)
 	end
 }
+
+script SlateportCity_EventScript_EnergyGuruNew {
+	lock
+	faceplayer
+	msgbox(format("I used to sell special vitamins for POKéMON.\nBut they've gotten harder to find, so I've closed my store for now."), MSGBOX_NPC)
+	release
+	end
+}

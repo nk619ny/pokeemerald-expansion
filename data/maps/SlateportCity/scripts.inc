@@ -2765,6 +2765,25 @@ SlateportCity_EventScript_FarmSign::
 	end
 
 
+SlateportCity_EventScript_EnergyGuruNew::
+# 1389 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1390 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1391 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_EnergyGuruNew_Text_0, MSGBOX_NPC
+# 1392 "data/maps/SlateportCity/scripts.pory"
+	release
+	end
+
+
 SlateportCity_EventScript_FarmSign_Text_0:
 # 1384 "data/maps/SlateportCity/scripts.pory"
 	.string "Tunnel to Slateport Farm$"
+
+SlateportCity_EventScript_EnergyGuruNew_Text_0:
+# 1391 "data/maps/SlateportCity/scripts.pory"
+	.string "I used to sell special vitamins for\n"
+	.string "POKéMON.\n"
+	.string "But they've gotten harder to find, so\l"
+	.string "I've closed my store for now.$"

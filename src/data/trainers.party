@@ -6893,13 +6893,62 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Plusle @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pikachu  
+Ability: Static  
+Level: 30  
+Tera Type: Electric  
+EVs: 252 HP / 94 Atk / 68 Def / 94 SpA  
+Hasty Nature  
+- Zippy Zap  
+- Pika Papow  
+- Floaty Fall  
+- Splishy Splash  
 
-Minun @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Eevee  
+Ability: Adaptability  
+Level: 30  
+Tera Type: Normal  
+EVs: 252 HP / 64 Atk / 64 Def / 128 SpA  
+Lonely Nature  
+- Veevee Volley  
+- Sparkly Swirl  
+- Sizzly Slide  
+- Sappy Seed  
+
+Bulbasaur @ Power Herb  
+Ability: Overgrow  
+Level: 30  
+Tera Type: Grass  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Frenzy Plant  
+- Giga Drain  
+- Sludge Bomb  
+- Weather Ball  
+
+Charmander @ Power Herb  
+Ability: Blaze  
+Level: 30  
+Tera Type: Fire  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Blast Burn  
+- Fire Blast  
+- Draco Meteor  
+
+Squirtle @ Power Herb  
+Ability: Torrent  
+Level: 30  
+Tera Type: Water  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Hydro Cannon  
+- Hydro Pump  
+- Water Spout  
+- Flash Cannon  
 
 === TRAINER_ISABEL_2 ===
 Name: ISABEL

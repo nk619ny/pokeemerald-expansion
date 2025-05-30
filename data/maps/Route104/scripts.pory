@@ -995,7 +995,7 @@ Route104_EventScript_Mia::
 	end
 
 Route104_EventScript_Darian::
-	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
+	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat, Route104_EventScript_TryDarianGiftAfterBattle
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -1196,15 +1196,28 @@ script Route101_EventScript_PeekoCutscene {
 	special(SpawnCameraObject)
 	applymovement(OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraPan)
 	waitmovement(0)
-	msgbox(format("Mr. Briney: I can't part with my beloved Peeko!"))
-	msgbox(format("Team Aqua Grunt: Your Wingull has a rare ability to influence the weather. It will be incredibly valuable to our efforts to protect Hoenn's seas!"))
-	msgbox(format("Mr. Briney: Peeko's never changed the weather before!"))
-	msgbox(format("Team Aqua Grunt: It just needs to be trained further. I don't have time to discuss this! The Pokémon is coming with me."))
+	applymovement(LOCALID_BRINEY_NEW, Common_Movement_WalkInPlaceRight)
+	waitmovement(0)
+	msgbox(format("I won't give up my beloved Peeko!"))
+	waitmessage
+	applymovement(LOCALID_GRUNT, Common_Movement_WalkInPlaceLeft)
+	waitmovement(0)
+	msgbox(format("That Wingull has a rare ability to influence the weather.\NIt will be incredibly valuable to our efforts to protect Hoenn's shores!"))
+	waitmessage
+	applymovement(LOCALID_BRINEY_NEW, Common_Movement_WalkInPlaceRight)
+	waitmovement(0)
+	msgbox(format("What?\NThat's nonsense.\NPeeko's never made the weather change!"))
+	waitmessage
+	applymovement(LOCALID_GRUNT, Common_Movement_WalkInPlaceLeft)
+	waitmovement(0)
+	msgbox(format("I'm sure of it. It just needs to be trained further.\NBut I don't have time to keep going back and forth with you! That Pokémon is coming with me."))
 	waitmessage
 	applymovement(LOCALID_GRUNT, Route101_Cutscene_GruntApproachPeeko)	
 	waitmovement(0)
 	removeobject(LOCALID_PEEKO)
-	msgbox(format("Mr. Briney: Peeko!"))
+	applymovement(LOCALID_BRINEY_NEW, Common_Movement_WalkInPlaceDown)
+	waitmovement(0)
+	msgbox(format("Peeko!!"))
 	waitmessage
 	applymovement(LOCALID_GRUNT, Route101_Cutscene_GruntFlees)
 	waitmovement(0)
@@ -1238,4 +1251,24 @@ movement Route101_Cutscene_GruntFlees {
 movement Route101_Cutscene_CameraRevert {
 	walk_fast_right * 7
 	walk_diag_southeast * 11
+}
+
+script Route104_EventScript_TryDarianGiftAfterBattle {
+	lock
+	if(flag(FLAG_DEFEATED_NORMAN_INTRO)){
+		msgbox(format("A little while ago, I fished up some sort of Pokémon treat. Didn't need it, though.\pIf you came a little sooner, I would've just given it to you, but I already threw it away."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("I just fished up some kind of medicine or treat or something, for Pokémon.\pMine don't seem interested, so you can have it."), MSGBOX_NPC)
+		waitmessage
+		giveitem(ITEM_CARBOS)
+		goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+		waitfanfare
+		release
+		end
+	}
+}
+
+text Route104_Text_DarianPostBattle {
+	format("Sometimes objects get caught in my fishing line.\pUsually it's junk, so I just throw them away.")
 }

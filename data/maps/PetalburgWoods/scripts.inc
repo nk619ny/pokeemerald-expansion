@@ -963,7 +963,7 @@ PetalburgWoods_Text_TrainerTipsPP:
 
 PetalburgWoods_EventScript_HideMysteryGrotto::
 # 486 "data/maps/PetalburgWoods/scripts.pory"
-	goto_if_unset FLAG_ENABLE_NORMAN_MATCH_CALL, PetalburgWoods_EventScript_HideMysteryGrotto_2
+	goto_if_unset FLAG_DEFEATED_NORMAN_INTRO, PetalburgWoods_EventScript_HideMysteryGrotto_2
 PetalburgWoods_EventScript_HideMysteryGrotto_1:
 # 494 "data/maps/PetalburgWoods/scripts.pory"
 	special DrawWholeMapView
