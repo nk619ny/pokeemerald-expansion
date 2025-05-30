@@ -103,19 +103,19 @@ LittlerootTown_OnTransition:
 # 52 "data/maps/LittlerootTown/scripts.pory"
 	call_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103
 # 53 "data/maps/LittlerootTown/scripts.pory"
-	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup
+	//call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup
 # 54 "data/maps/LittlerootTown/scripts.pory"
-	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
+	//call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
 # 55 "data/maps/LittlerootTown/scripts.pory"
 	end
 # 56 "data/maps/LittlerootTown/scripts.pory"
 
 # 57 "data/maps/LittlerootTown/scripts.pory"
-LittlerootTown_EventScript_LeftLabAfterDexUpgrade::
+//LittlerootTown_EventScript_LeftLabAfterDexUpgrade::
 # 58 "data/maps/LittlerootTown/scripts.pory"
-	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 3
+//	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 3
 # 59 "data/maps/LittlerootTown/scripts.pory"
-	return
+//	return
 # 60 "data/maps/LittlerootTown/scripts.pory"
 
 # 61 "data/maps/LittlerootTown/scripts.pory"
@@ -223,7 +223,7 @@ LittlerootTown_OnFrame:
 # 112 "data/maps/LittlerootTown/scripts.pory"
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_StepOffTruckFemale
 # 113 "data/maps/LittlerootTown/scripts.pory"
-	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_BeginDexUpgradeScene
+	//map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_BeginDexUpgradeScene
 # 114 "data/maps/LittlerootTown/scripts.pory"
 	.2byte 0
 # 115 "data/maps/LittlerootTown/scripts.pory"
@@ -455,7 +455,7 @@ LittlerootTown_EventScript_BeginDexUpgradeScene::
 # 228 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_OnWarp:
 # 229 "data/maps/LittlerootTown/scripts.pory"
-	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade
+//	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_SetRivalBirchPosForDexUpgrade
 # 230 "data/maps/LittlerootTown/scripts.pory"
 	.2byte 0
 # 231 "data/maps/LittlerootTown/scripts.pory"

@@ -49,7 +49,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos::
 # 25 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	@ Odd that the MaysHouse equivalent was used below instead
 # 26 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_Ret
+	//goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_Ret
 # 27 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	setobjectxyperm LOCALID_RIVAL, 0, 2
 # 28 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"

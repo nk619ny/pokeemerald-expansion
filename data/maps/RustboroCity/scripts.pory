@@ -1315,5 +1315,5 @@ text RustboroCity_Text_BrendanIWontGoEasy {
 }
 
 text RustboroCity_Text_RivalPetalburgGymReady {
-	format("{RIVAL}: Oh, by the way, {PLAYER}, I heard that the new Gym Leader in Petalburg is all set up and accepting challengers now. I heard they are pretty strong, too. I was thinking of challenging the Gym... but after losing to you I'm not sure if I'm ready. You should go challenge them! And fortunately the bridge has been fixed, too.")
+	format("{RIVAL}: Oh, by the way, {PLAYER}, I heard that the new Gym Leader in Petalburg is all set up and accepting challengers now.\pI hear they are pretty strong, too.\pI was thinking of challenging the Gym... but after losing to you I'm not sure if I'm ready.\NYou should go challenge them!\pAnd luckily the bridge has been fixed, too.")
 }

@@ -3,7 +3,12 @@ raw `
 .set LOCALID_PEEKO, 13
 
 PetalburgWoods_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgWoods_OnFrame
 	.byte 0
+
+PetalburgWoods_OnFrame:
+	map_script_2 VAR_TEMP_1, 0, PetalburgWoods_EventScript_HideMysteryGrotto
+	.2byte 0
 
 //PetalburgWoods_EventScript_DevonResearcherLeft::
 //	lockall
@@ -476,6 +481,20 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "taken to a POKéMON CENTER.$"
 
 `
+
+script PetalburgWoods_EventScript_HideMysteryGrotto {
+	if(!flag(FLAG_ENABLE_NORMAN_MATCH_CALL)){
+		setmetatile(26,4,0x0C7,TRUE) //overlapping tree
+		setmetatile(27,4,0x0C7,TRUE) //overlapping tree
+		setmetatile(26,5,0x016,TRUE) //tree bottom
+		setmetatile(27,5,0x016,TRUE) //tree bottom
+		setmetatile(26,6,0x001,FALSE) //blank grass
+		setmetatile(27,6,0x001,FALSE) //blank grass
+	}
+	special(DrawWholeMapView)
+	setvar(VAR_TEMP_1, 1)
+	return
+}
 
 script PetalburgWoods_EventScript_PeekoTalk {
 	msgbox(format("Peeko: Pii!"),MSGBOX_NPC)

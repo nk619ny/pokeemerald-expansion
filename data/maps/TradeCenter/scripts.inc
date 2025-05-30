@@ -302,13 +302,27 @@ MauvilleCity_EventScript_Temporary::
 	giveitem ITEM_PROTEIN, 30
 # 173 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_HP_UP, 30
-# 185 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
-# 186 "data/maps/TradeCenter/scripts.pory"
-	closemessage
+# 174 "data/maps/TradeCenter/scripts.pory"
+	giveitem ITEM_IRON, 30
+# 175 "data/maps/TradeCenter/scripts.pory"
+	clearflag FLAG_ENABLE_NORMAN_MATCH_CALL
 # 187 "data/maps/TradeCenter/scripts.pory"
+	waitmessage
+# 188 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 189 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
+
+
+Common_EventScript_HideGym0OptionalRewards::
+	return
+
+
+Common_EventScript_HideGym1OptionalRewards::
+# 204 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_RECEIVED_6_SODA_POP
+	return
 
 
 Common_EventScript_LevelCapUpdate_Text_0:

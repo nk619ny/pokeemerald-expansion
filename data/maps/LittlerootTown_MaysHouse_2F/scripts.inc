@@ -47,7 +47,7 @@ LittlerootTown_MaysHouse_2F_EventScript_TryUpdateMayPos::
 # 24 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	goto_if_eq VAR_RESULT, FEMALE, LittlerootTown_MaysHouse_2F_EventScript_Ret
 # 25 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_Ret
+	//goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_Ret
 # 26 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	setobjectxyperm LOCALID_RIVAL, 8, 2
 # 27 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
