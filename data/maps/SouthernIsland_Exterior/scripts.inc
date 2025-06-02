@@ -1,9 +1,9 @@
 # 1 "data/maps/SouthernIsland_Exterior/scripts.pory"
 
 # 2 "data/maps/SouthernIsland_Exterior/scripts.pory"
-.set LOCALID_SAILOR, 1
+//.set LOCALID_SOUTHERN_ISLAND_SAILOR, 1
 # 3 "data/maps/SouthernIsland_Exterior/scripts.pory"
-.set LOCALID_SS_TIDAL, 2
+//.set LOCALID_SOUTHERN_ISLAND_SS_TIDAL, 2
 # 4 "data/maps/SouthernIsland_Exterior/scripts.pory"
 
 # 5 "data/maps/SouthernIsland_Exterior/scripts.pory"
@@ -43,9 +43,9 @@ SouthernIsland_Exterior_EventScript_Sailor::
 # 22 "data/maps/SouthernIsland_Exterior/scripts.pory"
 	delay 30
 # 23 "data/maps/SouthernIsland_Exterior/scripts.pory"
-	hideobjectat LOCALID_SAILOR, MAP_SOUTHERN_ISLAND_EXTERIOR
+	hideobjectat LOCALID_SOUTHERN_ISLAND_SAILOR, MAP_SOUTHERN_ISLAND_EXTERIOR
 # 24 "data/maps/SouthernIsland_Exterior/scripts.pory"
-	setvar VAR_0x8004, LOCALID_SS_TIDAL
+	setvar VAR_0x8004, LOCALID_SOUTHERN_ISLAND_SS_TIDAL
 # 25 "data/maps/SouthernIsland_Exterior/scripts.pory"
 	call Common_EventScript_FerryDepartIsland
 # 26 "data/maps/SouthernIsland_Exterior/scripts.pory"

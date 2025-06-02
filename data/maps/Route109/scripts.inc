@@ -77,7 +77,7 @@ Route109_EventScript_EnterBoatWest::
 # 39 "data/maps/Route109/scripts.pory"
 Route109_EventScript_DoSailToDewford::
 # 40 "data/maps/Route109/scripts.pory"
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE109
+	hideobjectat LOCALID_PLAYER, MAP_ROUTE109
 # 41 "data/maps/Route109/scripts.pory"
 	call Common_EventScript_PlayBrineysBoatMusic
 # 42 "data/maps/Route109/scripts.pory"

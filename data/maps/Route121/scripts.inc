@@ -1,11 +1,11 @@
 # 1 "data/maps/Route121/scripts.pory"
 
 # 2 "data/maps/Route121/scripts.pory"
-.set LOCALID_GRUNT_1, 12
+//.set LOCALID_ROUTE121_GRUNT_1, 12
 # 3 "data/maps/Route121/scripts.pory"
-.set LOCALID_GRUNT_2, 13
+//.set LOCALID_ROUTE121_GRUNT_2, 13
 # 4 "data/maps/Route121/scripts.pory"
-.set LOCALID_GRUNT_3, 14
+//.set LOCALID_ROUTE121_GRUNT_3, 14
 # 5 "data/maps/Route121/scripts.pory"
 
 # 6 "data/maps/Route121/scripts.pory"
@@ -45,7 +45,7 @@ Route121_EventScript_AquaGruntsMoveOut::
 # 23 "data/maps/Route121/scripts.pory"
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 24 "data/maps/Route121/scripts.pory"
-	applymovement LOCALID_GRUNT_2, Common_Movement_WalkInPlaceRight
+	applymovement LOCALID_ROUTE121_GRUNT_2, Common_Movement_WalkInPlaceRight
 # 25 "data/maps/Route121/scripts.pory"
 	waitmovement 0
 # 26 "data/maps/Route121/scripts.pory"
@@ -53,21 +53,21 @@ Route121_EventScript_AquaGruntsMoveOut::
 # 27 "data/maps/Route121/scripts.pory"
 	closemessage
 # 28 "data/maps/Route121/scripts.pory"
-	applymovement LOCALID_GRUNT_1, Route121_Movement_Grunt1Exit
+	applymovement LOCALID_ROUTE121_GRUNT_1, Route121_Movement_Grunt1Exit
 # 29 "data/maps/Route121/scripts.pory"
-	applymovement LOCALID_GRUNT_2, Route121_Movement_Grunt2Exit
+	applymovement LOCALID_ROUTE121_GRUNT_2, Route121_Movement_Grunt2Exit
 # 30 "data/maps/Route121/scripts.pory"
-	applymovement LOCALID_GRUNT_3, Route121_Movement_Grunt3Exit
+	applymovement LOCALID_ROUTE121_GRUNT_3, Route121_Movement_Grunt3Exit
 # 31 "data/maps/Route121/scripts.pory"
 	waitmovement 0
 # 32 "data/maps/Route121/scripts.pory"
 	fadedefaultbgm
 # 33 "data/maps/Route121/scripts.pory"
-	removeobject LOCALID_GRUNT_1
+	removeobject LOCALID_ROUTE121_GRUNT_1
 # 34 "data/maps/Route121/scripts.pory"
-	removeobject LOCALID_GRUNT_2
+	removeobject LOCALID_ROUTE121_GRUNT_2
 # 35 "data/maps/Route121/scripts.pory"
-	removeobject LOCALID_GRUNT_3
+	removeobject LOCALID_ROUTE121_GRUNT_3
 # 36 "data/maps/Route121/scripts.pory"
 	setvar VAR_ROUTE121_STATE, 1
 # 37 "data/maps/Route121/scripts.pory"

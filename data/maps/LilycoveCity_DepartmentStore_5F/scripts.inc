@@ -1,7 +1,7 @@
 # 1 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 
 # 2 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-.set LOCALID_WOMAN, 7
+//.set LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, 7
 # 3 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 
 # 4 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
@@ -31,9 +31,9 @@ LilycoveCity_DepartmentStore_5F_OnWarp:
 # 16 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_EventScript_BlockRoofStairs::
 # 17 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	setobjectxy LOCALID_WOMAN, 16, 2
+	setobjectxy LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, 16, 2
 # 18 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	turnobject LOCALID_WOMAN, DIR_NORTH
+	turnobject LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, DIR_NORTH
 # 19 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	end
 # 20 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
@@ -253,7 +253,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_Woman::
 # 127 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	lockall
 # 128 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	applymovement LOCALID_WOMAN, Common_Movement_FacePlayer
+	applymovement LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, Common_Movement_FacePlayer
 # 129 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmovement 0
 # 130 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
@@ -285,7 +285,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_WomanLegendaryWeather::
 # 143 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	closemessage
 # 144 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	applymovement LOCALID_WOMAN, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_DEPARTMENT_STORE_STAIRS_WOMAN, Common_Movement_WalkInPlaceFasterUp
 # 145 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	waitmovement 0
 # 146 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

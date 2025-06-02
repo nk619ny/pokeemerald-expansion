@@ -3,7 +3,7 @@
   "name": "Route111_MtChimneyBackground",
   "layout": "LAYOUT_ROUTE111_MT_CHIMNEY_BACKGROUND",
   "music": "MUS_ROUTE110",
-  "region_map_section": "MAPSEC_ROUTE_111_NORTH",
+  "region_map_section": "MAPSEC_SECRET_BASE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",

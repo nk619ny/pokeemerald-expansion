@@ -1,17 +1,17 @@
 # 1 "data/maps/SeafloorCavern_Room9/scripts.pory"
 
 # 2 "data/maps/SeafloorCavern_Room9/scripts.pory"
-.set LOCALID_KYOGRE, 1
+//.set LOCALID_SEAFLOOR_CAVERN_KYOGRE, 1
 # 3 "data/maps/SeafloorCavern_Room9/scripts.pory"
-.set LOCALID_ARCHIE, 2
+//.set LOCALID_SEAFLOOR_CAVERN_ARCHIE, 2
 # 4 "data/maps/SeafloorCavern_Room9/scripts.pory"
-.set LOCALID_MAXIE, 3
+//.set LOCALID_SEAFLOOR_CAVERN_MAXIE, 3
 # 5 "data/maps/SeafloorCavern_Room9/scripts.pory"
-.set LOCALID_GRUNT_1, 4
+//.set LOCALID_SEAFLOOR_CAVERN_GRUNT_1, 4
 # 6 "data/maps/SeafloorCavern_Room9/scripts.pory"
-.set LOCALID_GRUNT_2, 5
+//.set LOCALID_SEAFLOOR_CAVERN_GRUNT_2, 5
 # 7 "data/maps/SeafloorCavern_Room9/scripts.pory"
-.set LOCALID_KYOGRE_SLEEPING, 7
+//.set LOCALID_SEAFLOOR_CAVERN_KYOGRE_SLEEPING, 7
 # 8 "data/maps/SeafloorCavern_Room9/scripts.pory"
 
 # 9 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -25,13 +25,13 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 13 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	lockall
 # 14 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	setvar VAR_0x8004, LOCALID_ARCHIE
+	setvar VAR_0x8004, LOCALID_SEAFLOOR_CAVERN_ARCHIE
 # 15 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	setvar VAR_0x8005, LOCALID_MAXIE
+	setvar VAR_0x8005, LOCALID_SEAFLOOR_CAVERN_MAXIE
 # 16 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	setvar VAR_0x8006, LOCALID_GRUNT_1
+	setvar VAR_0x8006, LOCALID_SEAFLOOR_CAVERN_GRUNT_1
 # 17 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	setvar VAR_0x8007, LOCALID_GRUNT_2
+	setvar VAR_0x8007, LOCALID_SEAFLOOR_CAVERN_GRUNT_2
 # 18 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	//applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 19 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -47,25 +47,25 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 24 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	//closemessage
 # 25 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	//addobject LOCALID_ARCHIE
+	//addobject LOCALID_SEAFLOOR_CAVERN_ARCHIE
 # 26 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	//applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 27 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	//waitmovement 0
 # 28 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	//applymovement LOCALID_ARCHIE, SeafloorCavern_Room9_Movement_ArchieApproachPlayer
+	//applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, SeafloorCavern_Room9_Movement_ArchieApproachPlayer
 # 29 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	//waitmovement 0
 # 30 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	//msgbox SeafloorCavern_Room9_Text_ArchieSoItWasYou, MSGBOX_DEFAULT
 # 31 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	//applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterUp
+	//applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, Common_Movement_WalkInPlaceFasterUp
 # 32 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	//waitmovement 0
 # 33 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	msgbox SeafloorCavern_Room9_Text_ArchieBeholdKyogre, MSGBOX_DEFAULT
 # 34 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	//applymovement LOCALID_ARCHIE, Common_Movement_FacePlayer
+	//applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, Common_Movement_FacePlayer
 # 35 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	call SeafloorCavern_Room9_EventScript_ArchieFacePlayer
 # 36 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -107,15 +107,15 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 54 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	delay 150
 # 55 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	removeobject LOCALID_KYOGRE_SLEEPING
+	removeobject LOCALID_SEAFLOOR_CAVERN_KYOGRE_SLEEPING
 # 56 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	addobject LOCALID_KYOGRE
+	addobject LOCALID_SEAFLOOR_CAVERN_KYOGRE
 # 57 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitstate
 # 58 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	delay 60
 # 59 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_KYOGRE, SeafloorCavern_Room9_Movement_KyogreApproach
+	applymovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreApproach
 # 60 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 61 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -169,11 +169,11 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 85 "data/maps/SeafloorCavern_Room9/scripts.pory"
 
 # 86 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_KYOGRE, SeafloorCavern_Room9_Movement_KyogreNewExit
+	applymovement LOCALID_SEAFLOOR_CAVERN_KYOGRE, SeafloorCavern_Room9_Movement_KyogreNewExit
 # 87 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	waitmovement 0
 # 88 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	removeobject LOCALID_KYOGRE
+	removeobject LOCALID_SEAFLOOR_CAVERN_KYOGRE
 # 89 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	delay 4
 # 90 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -191,13 +191,13 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 96 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	delay 30
 # 97 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	setvar VAR_0x8004, LOCALID_ARCHIE
+	setvar VAR_0x8004, LOCALID_SEAFLOOR_CAVERN_ARCHIE
 # 98 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	setvar VAR_0x8005, LOCALID_MAXIE
+	setvar VAR_0x8005, LOCALID_SEAFLOOR_CAVERN_MAXIE
 # 99 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	setvar VAR_0x8006, LOCALID_GRUNT_1
+	setvar VAR_0x8006, LOCALID_SEAFLOOR_CAVERN_GRUNT_1
 # 100 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	setvar VAR_0x8007, LOCALID_GRUNT_2
+	setvar VAR_0x8007, LOCALID_SEAFLOOR_CAVERN_GRUNT_2
 # 101 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	msgbox SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo, MSGBOX_DEFAULT
 # 102 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -231,7 +231,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 116 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	closemessage
 # 117 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	addobject LOCALID_MAXIE
+	addobject LOCALID_SEAFLOOR_CAVERN_MAXIE
 # 118 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	addobject VAR_0x8006
 # 119 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -241,7 +241,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 121 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	applymovement VAR_0x8006, SeafloorCavern_Room9_Movement_MagmaGruntArrive
 # 122 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_MAXIE, SeafloorCavern_Room9_Movement_MaxieArrive
+	applymovement LOCALID_SEAFLOOR_CAVERN_MAXIE, SeafloorCavern_Room9_Movement_MaxieArrive
 # 123 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 124 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -269,7 +269,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 # 135 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	closemessage
 # 136 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	//applymovement LOCALID_MAXIE, SeafloorCavern_Room9_Movement_MaxieExit
+	//applymovement LOCALID_SEAFLOOR_CAVERN_MAXIE, SeafloorCavern_Room9_Movement_MaxieExit
 # 137 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	//applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieExit
 # 138 "data/maps/SeafloorCavern_Room9/scripts.pory"
@@ -745,21 +745,21 @@ SeafloorCavern_Room9_EventScript_PlayerArchieFaceToFace_1:
 
 SeafloorCavern_Room9_EventScript_PlayerArchieFaceToFace_3:
 # 414 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, Common_Movement_WalkInPlaceFasterLeft
 # 415 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 	goto SeafloorCavern_Room9_EventScript_PlayerArchieFaceToFace_1
 
 SeafloorCavern_Room9_EventScript_PlayerArchieFaceToFace_4:
 # 417 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, Common_Movement_WalkInPlaceFasterDown
 # 418 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	goto SeafloorCavern_Room9_EventScript_PlayerArchieFaceToFace_1
 
 SeafloorCavern_Room9_EventScript_PlayerArchieFaceToFace_5:
 # 420 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, Common_Movement_WalkInPlaceFasterRight
 # 421 "data/maps/SeafloorCavern_Room9/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 	goto SeafloorCavern_Room9_EventScript_PlayerArchieFaceToFace_1
@@ -781,17 +781,17 @@ SeafloorCavern_Room9_EventScript_ArchieFacePlayer_1:
 
 SeafloorCavern_Room9_EventScript_ArchieFacePlayer_3:
 # 431 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, Common_Movement_WalkInPlaceFasterLeft
 	goto SeafloorCavern_Room9_EventScript_ArchieFacePlayer_1
 
 SeafloorCavern_Room9_EventScript_ArchieFacePlayer_4:
 # 433 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, Common_Movement_WalkInPlaceFasterDown
 	goto SeafloorCavern_Room9_EventScript_ArchieFacePlayer_1
 
 SeafloorCavern_Room9_EventScript_ArchieFacePlayer_5:
 # 435 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, Common_Movement_WalkInPlaceFasterRight
 	goto SeafloorCavern_Room9_EventScript_ArchieFacePlayer_1
 
 
@@ -811,12 +811,12 @@ SeafloorCavern_Room9_EventScript_ArchieWalkMessage_1:
 
 SeafloorCavern_Room9_EventScript_ArchieWalkMessage_3:
 # 445 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_ARCHIE, SeafloorCavern_Room9_Movement_ArchieListenMessage1
+	applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, SeafloorCavern_Room9_Movement_ArchieListenMessage1
 	goto SeafloorCavern_Room9_EventScript_ArchieWalkMessage_1
 
 SeafloorCavern_Room9_EventScript_ArchieWalkMessage_4:
 # 448 "data/maps/SeafloorCavern_Room9/scripts.pory"
-	applymovement LOCALID_ARCHIE, SeafloorCavern_Room9_Movement_ArchieListenMessage
+	applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, SeafloorCavern_Room9_Movement_ArchieListenMessage
 	goto SeafloorCavern_Room9_EventScript_ArchieWalkMessage_1
 
 

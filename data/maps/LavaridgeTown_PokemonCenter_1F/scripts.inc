@@ -1,7 +1,7 @@
 # 1 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 
 # 2 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
-.set LOCALID_NURSE, 1
+//.set LOCALID_LAVARIDGE_NURSE, 1
 # 3 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 
 # 4 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
@@ -27,7 +27,7 @@ LavaridgeTown_PokemonCenter_1F_OnTransition:
 # 14 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 LavaridgeTown_PokemonCenter_1F_EventScript_Nurse::
 # 15 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, LOCALID_LAVARIDGE_NURSE
 # 16 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"
 	call Common_EventScript_PkmnCenterNurse
 # 17 "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.pory"

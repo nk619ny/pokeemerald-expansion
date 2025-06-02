@@ -1,5 +1,5 @@
 raw `
-.set LOCALID_WALLYS_DAD, 1
+//.set LOCALID_WALLYS_DAD, 1
 
 PetalburgCity_WallysHouse_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_WallysHouse_OnFrame

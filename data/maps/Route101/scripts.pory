@@ -1,6 +1,6 @@
 raw `
-.set LOCALID_BIRCH, 2
-.set LOCALID_ZIGZAGOON, 4
+//.set LOCALID_ROUTE101_BIRCH, 2
+//.set LOCALID_ROUTE101_ZIGZAGOON, 4
 
 Route101_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route101_OnTransition
@@ -26,19 +26,19 @@ Route101_EventScript_StartBirchRescue::
 	playbgm MUS_HELP, TRUE
 	msgbox Route101_Text_HelpMe, MSGBOX_DEFAULT
 	closemessage
-	setobjectxy LOCALID_BIRCH, 0, 15
-	setobjectxy LOCALID_ZIGZAGOON, 0, 16
+	setobjectxy LOCALID_ROUTE101_BIRCH, 0, 15
+	setobjectxy LOCALID_ROUTE101_ZIGZAGOON, 0, 16
 	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_EnterScene
-	applymovement LOCALID_BIRCH, Route101_Movement_BirchRunAway1
-	applymovement LOCALID_ZIGZAGOON, Route101_Movement_ZigzagoonChase1
+	applymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchRunAway1
+	applymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonChase1
 	waitmovement 0
-	applymovement LOCALID_ZIGZAGOON, Route101_Movement_ZigzagoonChaseInCircles
-	applymovement LOCALID_BIRCH, Route101_Movement_BirchRunInCircles
+	applymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonChaseInCircles
+	applymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchRunInCircles
 	waitmovement 0
-	applymovement LOCALID_BIRCH, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_ROUTE101_BIRCH, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	applymovement LOCALID_ZIGZAGOON, Route101_Movement_ZigzagoonFaceBirch
-	applymovement LOCALID_BIRCH, Route101_Movement_BirchFaceZigzagoon
+	applymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonFaceBirch
+	applymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchFaceZigzagoon
 	waitmovement 0
 	msgbox Route101_Text_PleaseHelp, MSGBOX_DEFAULT
 	closemessage
@@ -226,13 +226,13 @@ Route101_EventScript_BirchsBag::
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_RESCUED_BIRCH
 	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_ZIGZAGOON
+	removeobject LOCALID_ROUTE101_ZIGZAGOON
 	setobjectxy OBJ_EVENT_ID_PLAYER, 6, 13
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	special ChooseStarter
 	waitstate
-	applymovement LOCALID_BIRCH, Route101_Movement_BirchApproachPlayer
+	applymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchApproachPlayer
 	waitmovement 0
 	msgbox Route101_Text_YouSavedMe, MSGBOX_DEFAULT
 	special HealPlayerParty
@@ -305,7 +305,7 @@ Route101_Text_RouteSign:
 `
 
 // Sets constants to use for Object IDs 
-const LOCALID_RIVAL = 4
+const LOCALID_ROUTE101_RIVAL = 4
 
 script Route101_EventScript_RivalFirstBattle {
 	waitmovement(0)
@@ -316,9 +316,9 @@ script Route101_EventScript_RivalFirstBattle {
 
 script Route101_EventScript_RivalTrigger2 {
 	lock
-	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+	applymovement(LOCALID_ROUTE101_RIVAL, Common_Movement_ExclamationMark)
 	waitmovement(0)
-	applymovement(LOCALID_RIVAL, Route101_RivalApproachPlayer2)
+	applymovement(LOCALID_ROUTE101_RIVAL, Route101_RivalApproachPlayer2)
 	waitmovement(0)
 	turnobject(OBJ_EVENT_ID_PLAYER, DIR_WEST)
 	call (Route101_EventScript_RivalFirstBattle)
@@ -326,9 +326,9 @@ script Route101_EventScript_RivalTrigger2 {
 
 script Route101_EventScript_RivalTrigger1 {
 	lock
-	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+	applymovement(LOCALID_ROUTE101_RIVAL, Common_Movement_ExclamationMark)
 	waitmovement(0)
-	applymovement(LOCALID_RIVAL, Route101_RivalApproachPlayer1)
+	applymovement(LOCALID_ROUTE101_RIVAL, Route101_RivalApproachPlayer1)
 	waitmovement(0)
 	turnobject(OBJ_EVENT_ID_PLAYER, DIR_WEST)
 	call (Route101_EventScript_RivalFirstBattle)
@@ -336,7 +336,7 @@ script Route101_EventScript_RivalTrigger1 {
 
 script Route101_EventScript_RivalTrigger0 {
 	lock
-	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+	applymovement(LOCALID_ROUTE101_RIVAL, Common_Movement_ExclamationMark)
 	waitmovement(0)
 	turnobject(OBJ_EVENT_ID_PLAYER, DIR_WEST)
 	call (Route101_EventScript_RivalFirstBattle)
@@ -372,9 +372,9 @@ script Route101_RivalDefeated {
 	lockall
 	msgbox(format("Looks like you're very ready to be a Pokémon Trainer! I'm looking forward to seeing you out there."))
 	waitmessage
-	applymovement(LOCALID_RIVAL,Route101_RivalDeparture)
+	applymovement(LOCALID_ROUTE101_RIVAL,Route101_RivalDeparture)
 	waitmovement(0)
-	removeobject(LOCALID_RIVAL)
+	removeobject(LOCALID_ROUTE101_RIVAL)
 	setflag(FLAG_HIDE_ROUTE_103_RIVAL)
 	setflag(FLAG_DEFEATED_RIVAL_ROUTE103)
 	setvar(VAR_OLDALE_RIVAL_STATE,2)

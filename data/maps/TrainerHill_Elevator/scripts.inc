@@ -1,7 +1,7 @@
 # 1 "data/maps/TrainerHill_Elevator/scripts.pory"
 
 # 2 "data/maps/TrainerHill_Elevator/scripts.pory"
-.set LOCALID_ATTENDANT, 1
+//.set LOCALID_TRAINER_HILL_ELEVATOR_ATTENDANT, 1
 # 3 "data/maps/TrainerHill_Elevator/scripts.pory"
 
 # 4 "data/maps/TrainerHill_Elevator/scripts.pory"
@@ -49,7 +49,7 @@ TrainerHill_Elevator_EventScript_EnterElevator::
 # 25 "data/maps/TrainerHill_Elevator/scripts.pory"
 	waitmovement 0
 # 26 "data/maps/TrainerHill_Elevator/scripts.pory"
-	applymovement LOCALID_ATTENDANT, TrainerHill_Elevator_Movement_AttendantFacePlayer
+	applymovement LOCALID_TRAINER_HILL_ELEVATOR_ATTENDANT, TrainerHill_Elevator_Movement_AttendantFacePlayer
 # 27 "data/maps/TrainerHill_Elevator/scripts.pory"
 	waitmovement 0
 # 28 "data/maps/TrainerHill_Elevator/scripts.pory"
@@ -61,7 +61,7 @@ TrainerHill_Elevator_EventScript_EnterElevator::
 # 31 "data/maps/TrainerHill_Elevator/scripts.pory"
 	releaseall
 # 32 "data/maps/TrainerHill_Elevator/scripts.pory"
-	applymovement LOCALID_ATTENDANT, TrainerHill_Elevator_Movement_AttendantFaceDown
+	applymovement LOCALID_TRAINER_HILL_ELEVATOR_ATTENDANT, TrainerHill_Elevator_Movement_AttendantFaceDown
 # 33 "data/maps/TrainerHill_Elevator/scripts.pory"
 	waitmovement 0
 # 34 "data/maps/TrainerHill_Elevator/scripts.pory"

@@ -1,7 +1,7 @@
 # 1 "data/maps/MtChimney_CableCarStation/scripts.pory"
 
 # 2 "data/maps/MtChimney_CableCarStation/scripts.pory"
-.set LOCALID_ATTENDANT, 1
+//.set LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, 1
 # 3 "data/maps/MtChimney_CableCarStation/scripts.pory"
 
 # 4 "data/maps/MtChimney_CableCarStation/scripts.pory"
@@ -25,9 +25,9 @@ MtChimney_CableCarStation_OnTransition:
 # 13 "data/maps/MtChimney_CableCarStation/scripts.pory"
 MtChimney_CableCarStation_EventScript_MoveAttendantAside::
 # 14 "data/maps/MtChimney_CableCarStation/scripts.pory"
-	setobjectxyperm LOCALID_ATTENDANT, 5, 4
+	setobjectxyperm LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, 5, 4
 # 15 "data/maps/MtChimney_CableCarStation/scripts.pory"
-	setobjectmovementtype LOCALID_ATTENDANT, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectmovementtype LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, MOVEMENT_TYPE_FACE_RIGHT
 # 16 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	return
 # 17 "data/maps/MtChimney_CableCarStation/scripts.pory"
@@ -47,15 +47,15 @@ MtChimney_CableCarStation_EventScript_ExitCableCar::
 # 24 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MtChimney_CableCarStation_Movement_ExitCableCar
 # 25 "data/maps/MtChimney_CableCarStation/scripts.pory"
-	applymovement LOCALID_ATTENDANT, MtChimney_CableCarStation_Movement_FollowPlayerOutFromCableCar
+	applymovement LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, MtChimney_CableCarStation_Movement_FollowPlayerOutFromCableCar
 # 26 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	waitmovement 0
 # 27 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	setvar VAR_CABLE_CAR_STATION_STATE, 0
 # 28 "data/maps/MtChimney_CableCarStation/scripts.pory"
-	setobjectxyperm LOCALID_ATTENDANT, 6, 7
+	setobjectxyperm LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, 6, 7
 # 29 "data/maps/MtChimney_CableCarStation/scripts.pory"
-	setobjectmovementtype LOCALID_ATTENDANT, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, MOVEMENT_TYPE_FACE_DOWN
 # 30 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	releaseall
 # 31 "data/maps/MtChimney_CableCarStation/scripts.pory"
@@ -85,7 +85,7 @@ MtChimney_CableCarStation_EventScript_RideCableCar::
 # 43 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	closemessage
 # 44 "data/maps/MtChimney_CableCarStation/scripts.pory"
-	applymovement LOCALID_ATTENDANT, MtChimney_CableCarStation_Movement_LeadPlayerToCableCar
+	applymovement LOCALID_MT_CHIMNEY_CABLE_CAR_ATTENDANT, MtChimney_CableCarStation_Movement_LeadPlayerToCableCar
 # 45 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MtChimney_CableCarStation_Movement_BoardCableCar
 # 46 "data/maps/MtChimney_CableCarStation/scripts.pory"

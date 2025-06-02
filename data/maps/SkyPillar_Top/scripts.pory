@@ -1,5 +1,5 @@
 raw `
-.set LOCALID_RAYQUAZA_SLEEPING, 1
+//.set LOCALID_RAYQUAZA_SLEEPING, 1
 .set LOCALID_STEVEN, 3
 
 SkyPillar_Top_MapScripts::

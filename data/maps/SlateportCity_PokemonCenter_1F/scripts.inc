@@ -1,7 +1,7 @@
 # 1 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
 
 # 2 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
-.set LOCALID_NURSE, 1
+//.set LOCALID_SLATEPORT_NURSE, 1
 # 3 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
 
 # 4 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
@@ -27,7 +27,7 @@ SlateportCity_PokemonCenter_1F_OnTransition:
 # 14 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
 SlateportCity_PokemonCenter_1F_EventScript_Nurse::
 # 15 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, LOCALID_SLATEPORT_NURSE
 # 16 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"
 	call Common_EventScript_PkmnCenterNurse
 # 17 "data/maps/SlateportCity_PokemonCenter_1F/scripts.pory"

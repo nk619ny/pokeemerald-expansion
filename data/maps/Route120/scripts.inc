@@ -1,13 +1,13 @@
 # 1 "data/maps/Route120/scripts.pory"
 
 # 2 "data/maps/Route120/scripts.pory"
-.set LOCALID_BRIDGE_KECLEON, 30
+//.set LOCALID_ROUTE120_BRIDGE_KECLEON, 30
 # 3 "data/maps/Route120/scripts.pory"
-.set LOCALID_STEVEN, 31
+//.set LOCALID_ROUTE120_STEVEN, 31
 # 4 "data/maps/Route120/scripts.pory"
-.set LOCALID_BRIDGE_KECLEON_SHADOW, 36  @ They use a second object which is identical to Kecleon but has a reflection palette tag for the bridge shadow
+//.set LOCALID_ROUTE120_BRIDGE_KECLEON_SHADOW, 36  @ They use a second object which is identical to Kecleon but has a reflection palette tag for the bridge shadow
 # 5 "data/maps/Route120/scripts.pory"
-.set LOCALID_BRIDGE_KECLEON_2, 45
+//.set LOCALID_ROUTE120_BRIDGE_KECLEON_2, 45
 # 6 "data/maps/Route120/scripts.pory"
 
 # 7 "data/maps/Route120/scripts.pory"
@@ -55,11 +55,11 @@ Route120_EventScript_RemoveBridgeKecleon::
 # 28 "data/maps/Route120/scripts.pory"
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 # 29 "data/maps/Route120/scripts.pory"
-	removeobject LOCALID_BRIDGE_KECLEON
+	removeobject LOCALID_ROUTE120_BRIDGE_KECLEON
 # 30 "data/maps/Route120/scripts.pory"
-	removeobject LOCALID_BRIDGE_KECLEON_2
+	removeobject LOCALID_ROUTE120_BRIDGE_KECLEON_2
 # 31 "data/maps/Route120/scripts.pory"
-	removeobject LOCALID_BRIDGE_KECLEON_SHADOW
+	removeobject LOCALID_ROUTE120_BRIDGE_KECLEON_SHADOW
 # 32 "data/maps/Route120/scripts.pory"
 	return
 # 33 "data/maps/Route120/scripts.pory"
@@ -115,7 +115,7 @@ Route120_EventScript_SetBridgeClearMetatiles::
 # 58 "data/maps/Route120/scripts.pory"
 Route120_EventScript_SetBridgeKecleonMovement::
 # 59 "data/maps/Route120/scripts.pory"
-	setobjectmovementtype LOCALID_BRIDGE_KECLEON_SHADOW, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectmovementtype LOCALID_ROUTE120_BRIDGE_KECLEON_SHADOW, MOVEMENT_TYPE_FACE_RIGHT
 # 60 "data/maps/Route120/scripts.pory"
 	return
 # 61 "data/maps/Route120/scripts.pory"
@@ -369,7 +369,7 @@ Route120_EventScript_StevenBattleKecleon::
 # 185 "data/maps/Route120/scripts.pory"
 	call_if_eq VAR_FACING, DIR_WEST, Route120_EventScript_PlayerApproachKecleonWest
 # 186 "data/maps/Route120/scripts.pory"
-	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_ROUTE120_STEVEN, Common_Movement_WalkInPlaceFasterLeft
 # 187 "data/maps/Route120/scripts.pory"
 	waitmovement 0
 # 188 "data/maps/Route120/scripts.pory"
@@ -379,11 +379,11 @@ Route120_EventScript_StevenBattleKecleon::
 # 190 "data/maps/Route120/scripts.pory"
 	closemessage
 # 191 "data/maps/Route120/scripts.pory"
-	applymovement LOCALID_BRIDGE_KECLEON, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_ROUTE120_BRIDGE_KECLEON, Common_Movement_WalkInPlaceFasterRight
 # 192 "data/maps/Route120/scripts.pory"
 	waitmovement 0
 # 193 "data/maps/Route120/scripts.pory"
-	applymovement LOCALID_BRIDGE_KECLEON, Movement_KecleonAppears
+	applymovement LOCALID_ROUTE120_BRIDGE_KECLEON, Movement_KecleonAppears
 # 194 "data/maps/Route120/scripts.pory"
 	waitmovement 0
 # 195 "data/maps/Route120/scripts.pory"
@@ -423,9 +423,9 @@ Route120_EventScript_RemoveBridgeKecleonPostBattle::
 # 212 "data/maps/Route120/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
 # 213 "data/maps/Route120/scripts.pory"
-	removeobject LOCALID_BRIDGE_KECLEON
+	removeobject LOCALID_ROUTE120_BRIDGE_KECLEON
 # 214 "data/maps/Route120/scripts.pory"
-	removeobject LOCALID_BRIDGE_KECLEON_SHADOW
+	removeobject LOCALID_ROUTE120_BRIDGE_KECLEON_SHADOW
 # 215 "data/maps/Route120/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
 # 216 "data/maps/Route120/scripts.pory"
@@ -437,7 +437,7 @@ Route120_EventScript_RemoveBridgeKecleonPostBattle::
 # 219 "data/maps/Route120/scripts.pory"
 Route120_EventScript_StevenGiveDeconScope::
 # 220 "data/maps/Route120/scripts.pory"
-	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_ROUTE120_STEVEN, Common_Movement_WalkInPlaceFasterDown
 # 221 "data/maps/Route120/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 222 "data/maps/Route120/scripts.pory"
@@ -453,7 +453,7 @@ Route120_EventScript_StevenGiveDeconScope::
 # 227 "data/maps/Route120/scripts.pory"
 	closemessage
 # 228 "data/maps/Route120/scripts.pory"
-	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_ROUTE120_STEVEN, Common_Movement_WalkInPlaceFasterDown
 # 229 "data/maps/Route120/scripts.pory"
 	waitmovement 0
 # 230 "data/maps/Route120/scripts.pory"
@@ -465,7 +465,7 @@ Route120_EventScript_StevenGiveDeconScope::
 # 233 "data/maps/Route120/scripts.pory"
 	delay 15
 # 234 "data/maps/Route120/scripts.pory"
-	removeobject LOCALID_STEVEN
+	removeobject LOCALID_ROUTE120_STEVEN
 # 235 "data/maps/Route120/scripts.pory"
 	waitfieldeffect FLDEFF_NPCFLY_OUT
 # 236 "data/maps/Route120/scripts.pory"
@@ -877,11 +877,11 @@ Route120_EventScript_MoveKecleonUp::
 # 443 "data/maps/Route120/scripts.pory"
 	goto_if_set FLAG_DEFEATED_FORTREE_GYM, Route120_EventScript_MoveKecleonUp_1
 # 448 "data/maps/Route120/scripts.pory"
-	setobjectxy LOCALID_BRIDGE_KECLEON_SHADOW, 12, 16
+	setobjectxy LOCALID_ROUTE120_BRIDGE_KECLEON_SHADOW, 12, 16
 # 449 "data/maps/Route120/scripts.pory"
 	setvar VAR_TEMP_3, 1
 # 450 "data/maps/Route120/scripts.pory"
-	applymovement LOCALID_BRIDGE_KECLEON_SHADOW, Common_Movement_WalkUpFastSafeKecleon
+	applymovement LOCALID_ROUTE120_BRIDGE_KECLEON_SHADOW, Common_Movement_WalkUpFastSafeKecleon
 	end
 
 Route120_EventScript_MoveKecleonUp_1:
@@ -894,11 +894,11 @@ Route120_EventScript_MoveKecleonDown::
 # 456 "data/maps/Route120/scripts.pory"
 	goto_if_set FLAG_DEFEATED_FORTREE_GYM, Route120_EventScript_MoveKecleonDown_1
 # 461 "data/maps/Route120/scripts.pory"
-	setobjectxy LOCALID_BRIDGE_KECLEON_SHADOW, 12, 15
+	setobjectxy LOCALID_ROUTE120_BRIDGE_KECLEON_SHADOW, 12, 15
 # 462 "data/maps/Route120/scripts.pory"
 	setvar VAR_TEMP_3, 0
 # 463 "data/maps/Route120/scripts.pory"
-	applymovement LOCALID_BRIDGE_KECLEON_SHADOW, Common_Movement_WalkDownFastSafeKecleon
+	applymovement LOCALID_ROUTE120_BRIDGE_KECLEON_SHADOW, Common_Movement_WalkDownFastSafeKecleon
 	end
 
 Route120_EventScript_MoveKecleonDown_1:

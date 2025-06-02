@@ -1,13 +1,13 @@
 # 1 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 
 # 2 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-.set LOCALID_VIVI, 1
+//.set LOCALID_WINSTRATE_HOUSE_VIVI, 1
 # 3 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-.set LOCALID_VICTOR, 2
+//.set LOCALID_WINSTRATE_HOUSE_VICTOR, 2
 # 4 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-.set LOCALID_VICTORIA, 3
+//.set LOCALID_WINSTRATE_HOUSE_VICTORIA, 3
 # 5 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-.set LOCALID_VICKY, 4
+//.set LOCALID_WINSTRATE_HOUSE_VICKY, 4
 # 6 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 
 # 7 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
@@ -23,7 +23,7 @@ Route111_WinstrateFamilysHouse_EventScript_Victor::
 # 12 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	faceplayer
 # 13 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	setvar VAR_0x8008, LOCALID_VICTOR
+	setvar VAR_0x8008, LOCALID_WINSTRATE_HOUSE_VICTOR
 # 14 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	msgbox Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou, MSGBOX_DEFAULT
 # 15 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
@@ -39,7 +39,7 @@ Route111_WinstrateFamilysHouse_EventScript_Victor::
 # 20 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	faceplayer
 # 21 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	//setvar VAR_0x8008, LOCALID_VICTORIA
+	//setvar VAR_0x8008, LOCALID_WINSTRATE_HOUSE_VICTORIA
 # 22 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	//goto_if_set FLAG_RECEIVED_MACHO_BRACE, Route111_WinstrateFamilysHouse_EventScript_ReceivedMachoBrace
 # 23 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
@@ -73,7 +73,7 @@ Route111_WinstrateFamilysHouse_EventScript_Vivi::
 # 37 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	faceplayer
 # 38 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	setvar VAR_0x8008, LOCALID_VIVI
+	setvar VAR_0x8008, LOCALID_WINSTRATE_HOUSE_VIVI
 # 39 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	msgbox Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers, MSGBOX_DEFAULT
 # 40 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
@@ -89,7 +89,7 @@ Route111_WinstrateFamilysHouse_EventScript_Vicky::
 # 45 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	faceplayer
 # 46 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	setvar VAR_0x8008, LOCALID_VICKY
+	setvar VAR_0x8008, LOCALID_WINSTRATE_HOUSE_VICKY
 # 47 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto_if_set FLAG_TEMP_4, Route111_WinstrateFamilysHouse_EventScript_AlreadySpokenTo
 # 48 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"

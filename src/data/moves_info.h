@@ -19337,7 +19337,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Giant chunks of ice damage\n"
             "the foe. It may flinch."),
-        .effect = EFFECT_BLIZZARD,
+        .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_ICE,
         .accuracy = 85, // CHANGED TO PERFECT ACCURACY IN SNOW OR HAIL
@@ -21185,7 +21185,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "sun. May burn."),
         .effect = EFFECT_HIT,
         .power = 150,
-        .recoil = 50,
+        //.recoil = 50,
         .type = TYPE_FIRE,
         .accuracy = 90,
         .pp = 5,

@@ -1,14 +1,14 @@
 raw `
-.set LOCALID_ARCHIE, 2
-.set LOCALID_OLD_LADY, 3
-.set LOCALID_GRUNT_1, 4
-.set LOCALID_GRUNT_2, 5
-.set LOCALID_GRUNT_3, 6
-.set LOCALID_GRUNT_4, 7
-.set LOCALID_MAXIE, 8
-.set LOCALID_STEVEN, 9
-.set LOCALID_ARCHIE_MON, 10
-.set LOCALID_MAXIE_MON, 11
+//.set LOCALID_MT_PYRE_SUMMIT_ARCHIE, 2
+//.set LOCALID_MT_PYRE_SUMMIT_OLD_LADY, 3
+//.set LOCALID_MT_PYRE_SUMMIT_GRUNT_1, 4
+//.set LOCALID_MT_PYRE_SUMMIT_GRUNT_2, 5
+//.set LOCALID_MT_PYRE_SUMMIT_GRUNT_3, 6
+//.set LOCALID_MT_PYRE_SUMMIT_GRUNT_4, 7
+//.set LOCALID_MT_PYRE_SUMMIT_MAXIE, 8
+//.set LOCALID_MT_PYRE_SUMMIT_STEVEN, 9
+.set LOCALID_MT_PYRE_SUMMIT_ARCHIE_MON, 10
+.set LOCALID_MT_PYRE_SUMMIT_MAXIE_MON, 11
 
 MtPyre_Summit_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MtPyre_Summit_OnTransition
@@ -19,8 +19,8 @@ MtPyre_Summit_OnTransition:
 	end
 
 MtPyre_Summit_EventScript_SetArchieMaxiePositions::
-	setobjectxyperm LOCALID_MAXIE, 23, 6
-	setobjectxyperm LOCALID_ARCHIE, 22, 6
+	setobjectxyperm LOCALID_MT_PYRE_SUMMIT_MAXIE, 23, 6
+	setobjectxyperm LOCALID_MT_PYRE_SUMMIT_ARCHIE, 22, 6
 	end
 
 MtPyre_Summit_EventScript_TeamAquaTrigger0::
@@ -45,7 +45,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 50
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_ArchieFacePlayer0
@@ -53,16 +53,16 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieFacePlayer2
 	msgbox MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo, MSGBOX_DEFAULT
 	closemessage
-	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_ARCHIE
-	removeobject LOCALID_GRUNT_1
-	removeobject LOCALID_GRUNT_2
-	removeobject LOCALID_GRUNT_3
-	removeobject LOCALID_GRUNT_4
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_MT_PYRE_SUMMIT_ARCHIE
+	removeobject LOCALID_MT_PYRE_SUMMIT_GRUNT_1
+	removeobject LOCALID_MT_PYRE_SUMMIT_GRUNT_2
+	removeobject LOCALID_MT_PYRE_SUMMIT_GRUNT_3
+	removeobject LOCALID_MT_PYRE_SUMMIT_GRUNT_4
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE_MAXIE
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
 	fadedefaultbgm
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	delay 20
 	setvar VAR_MT_PYRE_STATE, 1
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_OldLadyApproachPlayer0
@@ -77,7 +77,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	end
 
 MtPyre_Summit_EventScript_ArchieFacePlayer0::
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer0
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer0
 	waitmovement 0
 	return
 
@@ -86,24 +86,24 @@ MtPyre_Summit_EventScript_ArchieFacePlayer1::
 	return
 
 MtPyre_Summit_EventScript_ArchieFacePlayer2::
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer2
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieFacePlayer2
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_OldLadyApproachPlayer0::
-	applymovement LOCALID_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer0
+	applymovement LOCALID_MT_PYRE_SUMMIT_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer0
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_OldLadyApproachPlayer1::
-	applymovement LOCALID_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer1
+	applymovement LOCALID_MT_PYRE_SUMMIT_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer1
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_OldLadyApproachPlayer2::
-	applymovement LOCALID_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer2
+	applymovement LOCALID_MT_PYRE_SUMMIT_OLD_LADY, MtPyre_Summit_Movement_OldLadyApproachPlayer2
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
@@ -216,9 +216,9 @@ MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs::
 	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_ArchieMaxieBeginExit1
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieMaxieBeginExit2
 	playse SE_PIN
-	applymovement LOCALID_MAXIE, Common_Movement_ExclamationMark
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_MAXIE, Common_Movement_Delay48
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, Common_Movement_Delay48
 	waitmovement 0
 	delay 30
 	call_if_eq VAR_0x8008, 0, MtPyre_Summit_EventScript_MaxieApproachPlayer0
@@ -230,78 +230,78 @@ MtPyre_Summit_EventScript_ArchieMaxieReturnOrbs::
 	call_if_eq VAR_0x8008, 1, MtPyre_Summit_EventScript_MaxieApproachArchie1
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_MaxieApproachArchie2
 	delay 30
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieExit
 	waitmovement 0
-	removeobject LOCALID_ARCHIE
-	removeobject LOCALID_MAXIE
+	removeobject LOCALID_MT_PYRE_SUMMIT_ARCHIE
+	removeobject LOCALID_MT_PYRE_SUMMIT_MAXIE
 	setvar VAR_MT_PYRE_STATE, 3
 	releaseall
 	end
 
 MtPyre_Summit_EventScript_ArchieMaxieBeginExit0::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit0
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieExit
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_ArchieMaxieBeginExit1::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit1
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieExit
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_ArchieMaxieBeginExit2::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchArchieMaxieExit2
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieExit
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieExit
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieExit
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieExit
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MaxieApproachPlayer0::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerFaceMaxie0
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer0
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer0
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MaxieApproachPlayer1::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerFaceMaxie
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer1
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer1
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MaxieApproachPlayer2::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerFaceMaxie
-	applymovement LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer2
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieWatchMaxie
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieApproachPlayer2
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MaxieApproachArchie0::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie0
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie0
 	waitmovement 0
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MaxieApproachArchie1::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie1
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie1
 	waitmovement 0
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
 MtPyre_Summit_EventScript_MaxieApproachArchie2::
 	applymovement OBJ_EVENT_ID_PLAYER, MtPyre_Summit_Movement_PlayerWatchMaxie
-	applymovement LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie2
+	applymovement LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieApproachArchie2
 	waitmovement 0
-	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
@@ -635,7 +635,7 @@ const TempVar_PlayerPosition = VAR_TEMP_4
 script MtPyre_Summit_EventScript_LeftTrigger{
 	setvar(TempVar_PlayerPosition, 1)
 	if(!flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)){
-		applymovement(LOCALID_STEVEN, Common_Movement_FaceLeft)
+		applymovement(LOCALID_MT_PYRE_SUMMIT_STEVEN, Common_Movement_FaceLeft)
 		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
 		waitmovement(0)
 		//delay(20)
@@ -649,7 +649,7 @@ script MtPyre_Summit_EventScript_LeftTrigger{
 script MtPyre_Summit_EventScript_RightTrigger{
 	setvar(TempVar_PlayerPosition, 2)
 	if(!flag(FLAG_RECEIVED_RED_OR_BLUE_ORB)){
-		applymovement(LOCALID_STEVEN, Common_Movement_FaceRight)
+		applymovement(LOCALID_MT_PYRE_SUMMIT_STEVEN, Common_Movement_FaceRight)
 		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
 		waitmovement(0)
 		//delay(20)
@@ -671,44 +671,44 @@ script MtPyre_Summit_EventScript_StevenTrigger{
 
 script MtPyre_Summit_EventScript_MultiBattlePositioning1{
             applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUpOneStep)
-            applymovement(LOCALID_STEVEN, Common_Movement_WalkUpOneStep)
+            applymovement(LOCALID_MT_PYRE_SUMMIT_STEVEN, Common_Movement_WalkUpOneStep)
             waitmovement(0)
             return
 }
 
 
 script MtPyre_Summit_EventScript_MultiBattlePositioning2{
-    removeobject(LOCALID_MAXIE_MON)
+    removeobject(LOCALID_MT_PYRE_SUMMIT_MAXIE_MON)
     switch(var(TempVar_PlayerPosition)){
         case 0:
-            applymovement(LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieMovesTwoLeft)
+            applymovement(LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieMovesTwoLeft)
         case 1:
-            applymovement(LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieMovesThreeLeft)
+            applymovement(LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieMovesThreeLeft)
         case 2:
-            applymovement(LOCALID_MAXIE, MtPyre_Summit_Movement_MaxieMovesTwoLeft)
+            applymovement(LOCALID_MT_PYRE_SUMMIT_MAXIE, MtPyre_Summit_Movement_MaxieMovesTwoLeft)
         default:
             return
     }
     waitmovement(0)
-    applymovement(LOCALID_MAXIE, Common_Movement_FaceDown)
+    applymovement(LOCALID_MT_PYRE_SUMMIT_MAXIE, Common_Movement_FaceDown)
     waitmovement(0)
 }
 
 
 script MtPyre_Summit_EventScript_MultiBattlePositioning3{
-    removeobject(LOCALID_ARCHIE_MON)
+    removeobject(LOCALID_MT_PYRE_SUMMIT_ARCHIE_MON)
 	switch(var(TempVar_PlayerPosition)){
         case 0:
-            applymovement(LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieMovesThreeRight)
+            applymovement(LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieMovesThreeRight)
         case 1:
-            applymovement(LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieMovesTwoRight)
+            applymovement(LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieMovesTwoRight)
         case 2:
-            applymovement(LOCALID_ARCHIE, MtPyre_Summit_Movement_ArchieMovesThreeRight)
+            applymovement(LOCALID_MT_PYRE_SUMMIT_ARCHIE, MtPyre_Summit_Movement_ArchieMovesThreeRight)
         default:
             return
     }
     waitmovement(0)
-    //applymovement(LOCALID_ARCHIE, Common_Movement_FaceDown)
+    //applymovement(LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_FaceDown)
     //waitmovement(0)
     return
 }
@@ -718,11 +718,11 @@ script MtPyre_Summit_EventScript_MultiBattlePositioning3{
 
 script MtPyre_Summit_EventScript_MultiBattlePositioning4{
     if(var(TempVar_PlayerPosition) == 0){      
-			applymovement(LOCALID_STEVEN, MtPyre_Summit_Movement_StevenMovesToMaxie)
+			applymovement(LOCALID_MT_PYRE_SUMMIT_STEVEN, MtPyre_Summit_Movement_StevenMovesToMaxie)
             applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUpOneStep)
             waitmovement(0)
     }
-	applymovement(LOCALID_ARCHIE, Common_Movement_FaceDown)
+	applymovement(LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_FaceDown)
     waitmovement(0)
     return
 }
@@ -756,7 +756,7 @@ movement MtPyre_Summit_Movement_StevenMovesToMaxie{
 
 script MtPyre_Summit_EventScript_StevenMultiIntro{
     lock
-    applymovement(LOCALID_STEVEN, Common_Movement_ExclamationMark)
+    applymovement(LOCALID_MT_PYRE_SUMMIT_STEVEN, Common_Movement_ExclamationMark)
     waitmovement(0)
     msgbox(MtPyre_Summit_Text_StevenNeedHelp, MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES) {
@@ -766,7 +766,7 @@ script MtPyre_Summit_EventScript_StevenMultiIntro{
         msgbox(MtPyre_Summit_Text_StevenHurryBack, MSGBOX_DEFAULT)
         waitmessage
 		closemessage
-        applymovement(LOCALID_STEVEN,Common_Movement_FaceOriginalDirection)
+        applymovement(LOCALID_MT_PYRE_SUMMIT_STEVEN,Common_Movement_FaceOriginalDirection)
 		applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_WalkDownOneStep)
 		waitmovement(0)
 		releaseall
@@ -814,20 +814,20 @@ script MtPyre_Summit_EventScript_MtPyreVictory {
 	lock
 	msgbox(MtPyre_Summit_Text_MaxieAfterBattle, MSGBOX_DEFAULT)
 	waitmessage
-	applymovement(LOCALID_ARCHIE, Common_Movement_FaceRight)
+	applymovement(LOCALID_MT_PYRE_SUMMIT_ARCHIE, Common_Movement_FaceRight)
 	waitmovement(0)
 	msgbox(MtPyre_Summit_Text_ArchieAfterBattle, MSGBOX_DEFAULT)
 	waitmessage
-	applymovement(LOCALID_MAXIE, Common_Movement_FaceLeft)
+	applymovement(LOCALID_MT_PYRE_SUMMIT_MAXIE, Common_Movement_FaceLeft)
 	waitmovement(0)
 	msgbox(MtPyre_Summit_Text_MaxieResponse, MSGBOX_DEFAULT)
 	waitmessage
 	delay(20)
-    fadescreen(FADE_TO_BLACK)
-	removeobject(LOCALID_ARCHIE)
-	removeobject(LOCALID_MAXIE)
-	removeobject(LOCALID_ARCHIE_MON)
-	removeobject(LOCALID_MAXIE_MON)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+	removeobject(LOCALID_MT_PYRE_SUMMIT_ARCHIE)
+	removeobject(LOCALID_MT_PYRE_SUMMIT_MAXIE)
+	removeobject(LOCALID_MT_PYRE_SUMMIT_ARCHIE_MON)
+	removeobject(LOCALID_MT_PYRE_SUMMIT_MAXIE_MON)
 	//setflag(FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE)
 	setflag(FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA)
 	setflag(FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE_MAXIE)
@@ -836,16 +836,16 @@ script MtPyre_Summit_EventScript_MtPyreVictory {
 	removeobject(6)
 	removeobject(7)
     delay(40)
-	fadescreen(FADE_FROM_BLACK)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
     delay(40)
 
     switch(var(TempVar_PlayerPosition)){
         case 0:
 		case 1:
-			applymovement(LOCALID_STEVEN, Common_Movement_FaceLeft)
+			applymovement(LOCALID_MT_PYRE_SUMMIT_STEVEN, Common_Movement_FaceLeft)
 			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
         case 2:
-			applymovement(LOCALID_STEVEN, Common_Movement_FaceRight)
+			applymovement(LOCALID_MT_PYRE_SUMMIT_STEVEN, Common_Movement_FaceRight)
 			applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
         default:
             return

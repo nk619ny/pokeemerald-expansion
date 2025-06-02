@@ -1,7 +1,7 @@
 # 1 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
 
 # 2 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
-.set LOCALID_ATTENDANT, 1
+//.set LOCALID_VERDANTURF_TENT_CORRIDOR_ATTENDANT, 1
 # 3 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
 
 # 4 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
@@ -27,7 +27,7 @@ VerdanturfTown_BattleTentCorridor_EventScript_EnterCorridor::
 # 14 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
 	setvar VAR_TEMP_0, 1
 # 15 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
-	applymovement LOCALID_ATTENDANT, VerdanturfTown_BattleTentCorridor_Movement_WalkToDoor
+	applymovement LOCALID_VERDANTURF_TENT_CORRIDOR_ATTENDANT, VerdanturfTown_BattleTentCorridor_Movement_WalkToDoor
 # 16 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_BattleTentCorridor_Movement_WalkToDoor
 # 17 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
@@ -37,7 +37,7 @@ VerdanturfTown_BattleTentCorridor_EventScript_EnterCorridor::
 # 19 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
 	waitdooranim
 # 20 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
-	applymovement LOCALID_ATTENDANT, VerdanturfTown_BattleTentCorridor_Movement_AttendantEnterDoor
+	applymovement LOCALID_VERDANTURF_TENT_CORRIDOR_ATTENDANT, VerdanturfTown_BattleTentCorridor_Movement_AttendantEnterDoor
 # 21 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_BattleTentCorridor_Movement_PlayerEnterDoor
 # 22 "data/maps/VerdanturfTown_BattleTentCorridor/scripts.pory"

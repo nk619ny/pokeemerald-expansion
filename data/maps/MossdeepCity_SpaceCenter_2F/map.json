@@ -12,7 +12,7 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_SPACE_CENTER_2F_RICH_BOY",
@@ -71,7 +71,7 @@
       "flag": "FLAG_HIDDEN_BY_DEFAULT"
     },
     {
-      "local_id": "LOCALID_SPACE_CENTER_GRUNT_6",
+      "local_id": "LOCALID_SPACE_CENTER_2F_GRUNT_6",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
       "x": 12,
       "y": 2,
@@ -85,7 +85,7 @@
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA"
     },
     {
-      "local_id": "LOCALID_SPACE_CENTER_GRUNT_5",
+      "local_id": "LOCALID_SPACE_CENTER_2F_GRUNT_5",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
       "x": 13,
       "y": 3,
@@ -99,7 +99,7 @@
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA"
     },
     {
-      "local_id": "LOCALID_SPACE_CENTER_GRUNT_7",
+      "local_id": "LOCALID_SPACE_CENTER_2F_GRUNT_7",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
       "x": 14,
       "y": 2,
@@ -113,7 +113,7 @@
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA"
     },
     {
-      "local_id": "LOCALID_SPACE_CENTER_COURTNEY",
+      "local_id": "LOCALID_SPACE_CENTER_2F_COURTNEY",
       "graphics_id": "OBJ_EVENT_GFX_COURTNEY_ORAS",
       "x": 2,
       "y": 8,
@@ -127,7 +127,7 @@
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA"
     },
     {
-      "local_id": "LOCALID_SPACE_CENTER_MAXIE",
+      "local_id": "LOCALID_SPACE_CENTER_2F_MAXIE",
       "graphics_id": "OBJ_EVENT_GFX_MAXIE_ORAS",
       "x": 11,
       "y": 9,
@@ -179,7 +179,5 @@
       "script": "MossdeepCity_SpaceCenter_2F_EventScript_PlayerLocation3"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

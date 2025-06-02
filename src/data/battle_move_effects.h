@@ -2227,7 +2227,7 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
 
     [EFFECT_THUNDER_WAVE] =
     {
-        .battleScript = BattleScript_EffectParalyze,
+        .battleScript = BattleScript_EffectNonVolatileStatus,
         .battleTvScore = 5,
         .encourageEncore = TRUE,
     },

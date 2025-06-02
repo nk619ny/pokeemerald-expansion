@@ -1,7 +1,7 @@
 # 1 "data/maps/MarineCave_End/scripts.pory"
 
 # 2 "data/maps/MarineCave_End/scripts.pory"
-.set LOCALID_KYOGRE, 1
+//.set LOCALID_MARINE_CAVE_KYOGRE, 1
 # 3 "data/maps/MarineCave_End/scripts.pory"
 
 # 4 "data/maps/MarineCave_End/scripts.pory"
@@ -29,7 +29,7 @@ MarineCave_End_EventScript_TryRemoveKyogre::
 # 15 "data/maps/MarineCave_End/scripts.pory"
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 # 16 "data/maps/MarineCave_End/scripts.pory"
-	removeobject LOCALID_KYOGRE
+	removeobject LOCALID_MARINE_CAVE_KYOGRE
 # 17 "data/maps/MarineCave_End/scripts.pory"
 	return
 # 18 "data/maps/MarineCave_End/scripts.pory"
@@ -61,7 +61,7 @@ MarineCave_End_EventScript_Kyogre::
 # 31 "data/maps/MarineCave_End/scripts.pory"
 	waitmovement 0
 # 32 "data/maps/MarineCave_End/scripts.pory"
-	applymovement LOCALID_KYOGRE, MarineCave_End_Movement_KyogreApproach
+	applymovement LOCALID_MARINE_CAVE_KYOGRE, MarineCave_End_Movement_KyogreApproach
 # 33 "data/maps/MarineCave_End/scripts.pory"
 	waitmovement 0
 # 34 "data/maps/MarineCave_End/scripts.pory"
@@ -73,7 +73,7 @@ MarineCave_End_EventScript_Kyogre::
 # 37 "data/maps/MarineCave_End/scripts.pory"
 	waitmoncry
 # 38 "data/maps/MarineCave_End/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_KYOGRE
+	setvar VAR_LAST_TALKED, LOCALID_MARINE_CAVE_KYOGRE
 # 39 "data/maps/MarineCave_End/scripts.pory"
 	setwildbattle SPECIES_KYOGRE, 70
 # 40 "data/maps/MarineCave_End/scripts.pory"

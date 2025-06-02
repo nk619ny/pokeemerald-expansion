@@ -1,7 +1,7 @@
 # 1 "data/maps/NavelRock_Bottom/scripts.pory"
 
 # 2 "data/maps/NavelRock_Bottom/scripts.pory"
-.set LOCALID_LUGIA, 1
+//.set LOCALID_NAVEL_ROCK_LUGIA, 1
 # 3 "data/maps/NavelRock_Bottom/scripts.pory"
 
 # 4 "data/maps/NavelRock_Bottom/scripts.pory"
@@ -57,7 +57,7 @@ NavelRock_Bottom_EventScript_TryRemoveLugia::
 # 29 "data/maps/NavelRock_Bottom/scripts.pory"
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 # 30 "data/maps/NavelRock_Bottom/scripts.pory"
-	removeobject LOCALID_LUGIA
+	removeobject LOCALID_NAVEL_ROCK_LUGIA
 # 31 "data/maps/NavelRock_Bottom/scripts.pory"
 	return
 # 32 "data/maps/NavelRock_Bottom/scripts.pory"

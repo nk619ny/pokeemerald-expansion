@@ -1,7 +1,7 @@
 # 1 "data/maps/SkyPillar_Outside/scripts.pory"
 
 # 2 "data/maps/SkyPillar_Outside/scripts.pory"
-.set LOCALID_WALLACE, 1
+//.set LOCALID_SKY_PILLAR_WALLACE, 1
 # 3 "data/maps/SkyPillar_Outside/scripts.pory"
 
 # 4 "data/maps/SkyPillar_Outside/scripts.pory"
@@ -73,7 +73,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 # 37 "data/maps/SkyPillar_Outside/scripts.pory"
 	lockall
 # 38 "data/maps/SkyPillar_Outside/scripts.pory"
-	applymovement LOCALID_WALLACE, SkyPillar_Outside_Movement_WallaceApproachPlayer
+	applymovement LOCALID_SKY_PILLAR_WALLACE, SkyPillar_Outside_Movement_WallaceApproachPlayer
 # 39 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitmovement 0
 # 40 "data/maps/SkyPillar_Outside/scripts.pory"
@@ -107,7 +107,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 # 54 "data/maps/SkyPillar_Outside/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SkyPillar_Outside_Movement_PlayerClimbSkyPillar
 # 55 "data/maps/SkyPillar_Outside/scripts.pory"
-	applymovement LOCALID_WALLACE, SkyPillar_Outside_Movement_WallaceClimbSkyPillar
+	applymovement LOCALID_SKY_PILLAR_WALLACE, SkyPillar_Outside_Movement_WallaceClimbSkyPillar
 # 56 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitmovement 0
 # 57 "data/maps/SkyPillar_Outside/scripts.pory"
@@ -125,19 +125,19 @@ SkyPillar_Outside_EventScript_WallaceScene::
 # 63 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 20
 # 64 "data/maps/SkyPillar_Outside/scripts.pory"
-	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterLeft
 # 65 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitmovement 0
 # 66 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 10
 # 67 "data/maps/SkyPillar_Outside/scripts.pory"
-	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterRight
 # 68 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitmovement 0
 # 69 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 20
 # 70 "data/maps/SkyPillar_Outside/scripts.pory"
-	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterDown
 # 71 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitmovement 0
 # 72 "data/maps/SkyPillar_Outside/scripts.pory"
@@ -171,7 +171,7 @@ SkyPillar_Outside_EventScript_WallaceScene::
 # 86 "data/maps/SkyPillar_Outside/scripts.pory"
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 4
 # 87 "data/maps/SkyPillar_Outside/scripts.pory"
-	removeobject LOCALID_WALLACE
+	removeobject LOCALID_SKY_PILLAR_WALLACE
 # 88 "data/maps/SkyPillar_Outside/scripts.pory"
 	setflag FLAG_HIDE_SKY_PILLAR_WALLACE
 # 89 "data/maps/SkyPillar_Outside/scripts.pory"

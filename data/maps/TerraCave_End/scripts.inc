@@ -1,7 +1,7 @@
 # 1 "data/maps/TerraCave_End/scripts.pory"
 
 # 2 "data/maps/TerraCave_End/scripts.pory"
-.set LOCALID_GROUDON, 1
+//.set LOCALID_TERRA_CAVE_GROUDON, 1
 # 3 "data/maps/TerraCave_End/scripts.pory"
 
 # 4 "data/maps/TerraCave_End/scripts.pory"
@@ -29,7 +29,7 @@ TerraCave_End_EventScript_TryRemoveGroudon::
 # 15 "data/maps/TerraCave_End/scripts.pory"
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 # 16 "data/maps/TerraCave_End/scripts.pory"
-	removeobject LOCALID_GROUDON
+	removeobject LOCALID_TERRA_CAVE_GROUDON
 # 17 "data/maps/TerraCave_End/scripts.pory"
 	return
 # 18 "data/maps/TerraCave_End/scripts.pory"
@@ -61,7 +61,7 @@ TerraCave_End_EventScript_Groudon::
 # 31 "data/maps/TerraCave_End/scripts.pory"
 	waitmovement 0
 # 32 "data/maps/TerraCave_End/scripts.pory"
-	applymovement LOCALID_GROUDON, TerraCave_End_Movement_GroudonApproach
+	applymovement LOCALID_TERRA_CAVE_GROUDON, TerraCave_End_Movement_GroudonApproach
 # 33 "data/maps/TerraCave_End/scripts.pory"
 	waitmovement 0
 # 34 "data/maps/TerraCave_End/scripts.pory"
@@ -73,7 +73,7 @@ TerraCave_End_EventScript_Groudon::
 # 37 "data/maps/TerraCave_End/scripts.pory"
 	waitmoncry
 # 38 "data/maps/TerraCave_End/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_GROUDON
+	setvar VAR_LAST_TALKED, LOCALID_TERRA_CAVE_GROUDON
 # 39 "data/maps/TerraCave_End/scripts.pory"
 	setwildbattle SPECIES_GROUDON, 70
 # 40 "data/maps/TerraCave_End/scripts.pory"

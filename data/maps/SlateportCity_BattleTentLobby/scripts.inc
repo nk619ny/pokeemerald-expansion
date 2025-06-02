@@ -1,7 +1,7 @@
 # 1 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 
 # 2 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
-.set LOCALID_ATTENDANT, 1
+//.set LOCALID_SLATEPORT_TENT_ATTENDANT, 1
 # 3 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 
 # 4 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
@@ -281,7 +281,7 @@ SlateportCity_BattleTentLobby_EventScript_EnterChallenge::
 # 141 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 SlateportCity_BattleTentLobby_EventScript_WalkToDoor::
 # 142 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
-	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantWalkToDoor
+	applymovement LOCALID_SLATEPORT_TENT_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantWalkToDoor
 # 143 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentLobby_Movement_PlayerWalkToDoor
 # 144 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
@@ -291,7 +291,7 @@ SlateportCity_BattleTentLobby_EventScript_WalkToDoor::
 # 146 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	waitdooranim
 # 147 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
-	applymovement LOCALID_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_SLATEPORT_TENT_ATTENDANT, SlateportCity_BattleTentLobby_Movement_AttendantEnterDoor
 # 148 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_BattleTentLobby_Movement_PlayerEnterDoor
 # 149 "data/maps/SlateportCity_BattleTentLobby/scripts.pory"
