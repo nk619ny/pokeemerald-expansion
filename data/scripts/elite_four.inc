@@ -1,5 +1,5 @@
 PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles::
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_Delay32
+	applymovement LOCALID_PLAYER, Common_Movement_Delay32
 	waitmovement 0
 	//playse SE_DOOR
 	setmetatile 6, 1, METATILE_EliteFour_OpenDoor_Frame, FALSE

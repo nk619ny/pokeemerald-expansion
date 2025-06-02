@@ -1,10 +1,3 @@
-# 1 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-
-# 2 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-.set LOCALID_WALLYS_DAD, 1
-# 3 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-
-# 4 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_MapScripts::
 # 5 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_WallysHouse_OnFrame
