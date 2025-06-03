@@ -4057,7 +4057,7 @@ Sharpedo
 Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_TAKAO ===
+=== TRAINER_TAKAO === /* Dewford Gym */
 Name: TAKAO
 Class: Black Belt
 Pic: Black Belt
@@ -4066,9 +4066,44 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Machop
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mankey @ Liechi Berry  
+Ability: Vital Spirit  
+Level: 21  
+Tera Type: Fighting  
+Relaxed Nature  
+IVs: 0 Spe  
+- Acrobatics  
+- Lash Out  
+- Karate Chop  
+- Taunt  
+
+Nuzleaf  
+Ability: Pickpocket  
+Level: 20  
+Tera Type: Grass  
+- Fake Out  
+- Brick Break  
+- Lash Out  
+- Bullet Seed  
+
+Pignite  
+Ability: Blaze  
+Level: 20  
+Tera Type: Fire  
+- Flame Charge  
+- Trailblaze  
+- Low Sweep  
+- Rock Tomb  
+
+Machop  
+Ability: No Guard  
+Level: 21  
+Tera Type: Fighting  
+- Bullet Punch  
+- Mega Punch  
+- Dual Chop  
+- Counter  
+
 
 === TRAINER_HITOSHI ===
 Name: HITOSHI
@@ -9135,7 +9170,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Tackle
 - Sludge
 
-=== TRAINER_JOCELYN ===
+=== TRAINER_JOCELYN === /* Dewford Gym */
 Name: JOCELYN
 Class: Battle Girl
 Pic: Battle Girl
@@ -9144,11 +9179,43 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Meditite
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Maschiff  
+Ability: Intimidate  
+Level: 20  
+Tera Type: Dark  
+- Bite  
+- Ice Fang  
+- Fire Fang  
+- Helping Hand  
 
-=== TRAINER_LAURA ===
+Pawmo  
+Ability: Volt Absorb  
+Level: 20  
+Tera Type: Electric  
+- Spark  
+- Sweet Kiss  
+- Arm Thrust  
+- Fake Out  
+
+Sneasel-Hisui  
+Ability: Inner Focus  
+Level: 20  
+Tera Type: Fighting  
+- Reversal  
+- Poison Tail  
+- Thief  
+- Shadow Claw  
+
+Monferno  
+Ability: Iron Fist  
+Level: 20
+Tera Type: Fire  
+- Fire Punch  
+- Thunder Punch  
+- Mach Punch  
+- Fake Out  
+
+=== TRAINER_LAURA === /* Dewford Gym */
 Name: LAURA
 Class: Battle Girl
 Pic: Battle Girl
@@ -9157,9 +9224,41 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Meditite
-Level: 13
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Pawniard  
+Ability: Defiant  
+Level: 22  
+Tera Type: Dark  
+- Beat Up  
+- Metal Claw  
+- Fury Cutter  
+- Psycho Cut  
+
+Stufful  
+Ability: Fluffy  
+Level: 21  
+Tera Type: Normal  
+- Charm  
+- Taunt  
+- Headbutt  
+- Force Palm  
+
+Tyrogue (M)  
+Ability: Guts  
+Level: 21  
+Tera Type: Fighting  
+- Fake Out  
+- Dynamic Punch  
+- High Jump Kick  
+- Combat Torque  
+
+Riolu  
+Ability: Prankster  
+Level: 21  
+Tera Type: Fighting  
+- Bulk Up  
+- Attract  
+- Low Sweep  
+- Meteor Mash  
 
 === TRAINER_CYNDY_1 ===
 Name: CYNDY
@@ -12813,7 +12912,7 @@ Geodude
 Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-=== TRAINER_BRENDEN ===
+=== TRAINER_BRENDEN === /* Dewford Gym */
 Name: BRENDEN
 Class: Sailor
 Pic: Sailor
@@ -12822,11 +12921,45 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Machop
-Level: 13
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Clobbopus  
+Ability: Technician  
+Level: 21  
+Tera Type: Fighting  
+- Circle Throw  
+- Waterfall  
+- Bind  
+- Detect  
 
-=== TRAINER_LILITH ===
+Croagunk  
+Ability: Poison Touch  
+Level: 22  
+Tera Type: Poison  
+EVs: 252 Atk / 252 SpA  
+- Fake Out  
+- Chilling Water  
+- Acid Spray  
+- Vacuum Wave  
+
+Crabrawler  
+Ability: Hyper Cutter  
+Level: 21  
+Tera Type: Fighting  
+- Crabhammer  
+- Brick Break  
+- Ice Punch  
+- Helping Hand  
+
+Dewott  
+Ability: Shell Armor  
+Level: 20  
+Tera Type: Water  
+- Aqua Cutter  
+- Aerial Ace  
+- Fury Cutter  
+- Night Slash 
+
+
+=== TRAINER_LILITH === /* Dewford Gym */
 Name: LILITH
 Class: Battle Girl
 Pic: Battle Girl
@@ -12835,11 +12968,43 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Meditite
-Level: 13
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Meditite  
+Ability: Pure Power  
+Level: 21  
+Tera Type: Fighting  
+- Zen Headbutt  
+- Brick Break  
+- Fake Out  
+- Meditate  
 
-=== TRAINER_CRISTIAN ===
+Nymble  
+Ability: Tinted Lens  
+Level: 22  
+Tera Type: Bug  
+- Pounce  
+- Double Kick  
+- Counter  
+- Sucker Punch  
+
+Farfetch’d-Galar  
+Ability: Scrappy  
+Level: 20  
+Tera Type: Fighting  
+- Wing Attack  
+- Rock Smash  
+- Fury Cutter  
+- Steel Wing  
+
+Mienfoo  
+Ability: Inner Focus  
+Level: 21  
+Tera Type: Fighting  
+- Fake Out  
+- Low Kick  
+- Trailblaze  
+- Dual Chop  
+
+=== TRAINER_CRISTIAN === /* Dewford Gym */
 Name: CRISTIAN
 Class: Black Belt
 Pic: Black Belt
@@ -12848,9 +13013,43 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Makuhita
-Level: 13
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Scraggy  
+Ability: Intimidate  
+Level: 21  
+Tera Type: Dark  
+- Fake Out  
+- Lash Out  
+- Super Fang  
+- Counter  
+
+Timburr  
+Ability: Guts  
+Level: 21  
+Tera Type: Fighting  
+- Wood Hammer  
+- Block  
+- Wide Guard  
+- Low Sweep  
+
+Pancham  
+Ability: Mold Breaker  
+Level: 21  
+Tera Type: Fighting  
+- Mega Punch  
+- Power Trip  
+- Power-Up Punch  
+- Ice Punch  
+
+Ledian @ Charti Berry  
+Ability: Iron Fist  
+Level: 22
+EVs: 252 Atk
+Tera Type: Bug  
+- Comet Punch  
+- Ice Punch  
+- Thunder Punch  
+- Acrobatics  
+
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA

@@ -1756,7 +1756,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_HyperBeam,
+        .battleAnimScript = gBattleAnimMove_LightOfRuin, //gBattleAnimMove_HyperBeam,
         .validApprenticeMove = TRUE,
     },
 

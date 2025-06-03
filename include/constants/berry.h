@@ -46,7 +46,7 @@
 // Those with no initial berry are named "soil"
 #define BERRY_TREE_ROUTE_102_PECHA    1
 #define BERRY_TREE_ROUTE_102_ORAN     2
-#define BERRY_TREE_ROUTE_104_SOIL_1   3
+#define BERRY_TREE_ROUTE_104_CHESTO_1 3
 #define BERRY_TREE_ROUTE_104_ORAN_1   4
 #define BERRY_TREE_ROUTE_103_CHERI_1  5
 #define BERRY_TREE_ROUTE_103_LEPPA    6
