@@ -1,14 +1,14 @@
 raw `
 //.set LOCALID_PETALBURG_WOODS_GRUNT, 3
-.set LOCALID_PETALBURG_WOODS_PEEKO, 13
+//.set LOCALID_PETALBURG_WOODS_PEEKO, 13
 
 PetalburgWoods_MapScripts::
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgWoods_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, PetalburgWoods_OnLoad
 	.byte 0
 
-PetalburgWoods_OnFrame:
-	map_script_2 VAR_TEMP_1, 0, PetalburgWoods_EventScript_HideMysteryGrotto
-	.2byte 0
+PetalburgWoods_OnLoad:
+	call_if_unset FLAG_DEFEATED_NORMAN_INTRO PetalburgWoods_EventScript_HideMysteryGrotto
+	end
 
 //PetalburgWoods_EventScript_DevonResearcherLeft::
 //	lockall
@@ -81,6 +81,7 @@ PetalburgWoods_OnFrame:
 //	goto PetalburgWoods_EventScript_RemoveDevonResearcher
 //	end
 
+/*
 PetalburgWoods_EventScript_DevonResearcherIntro::
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherLookAround
 	waitmovement 0
@@ -120,6 +121,8 @@ PetalburgWoods_EventScript_RemoveDevonResearcher::
 	setvar VAR_PETALBURG_WOODS_STATE, 1
 	releaseall
 	end
+
+	*/
 
 PetalburgWoods_Movement_DevonResearcherLookAround:
 	face_up
@@ -483,16 +486,12 @@ PetalburgWoods_Text_TrainerTipsPP:
 `
 
 script PetalburgWoods_EventScript_HideMysteryGrotto {
-	if(!flag(FLAG_DEFEATED_NORMAN_INTRO)){
-		setmetatile(26,4,0x0C7,TRUE) //overlapping tree
-		setmetatile(27,4,0x0C7,TRUE) //overlapping tree
-		setmetatile(26,5,0x016,TRUE) //tree bottom
-		setmetatile(27,5,0x016,TRUE) //tree bottom
-		setmetatile(26,6,0x001,FALSE) //blank grass
-		setmetatile(27,6,0x001,FALSE) //blank grass
-	}
-	special(DrawWholeMapView)
-	setvar(VAR_TEMP_1, 1)
+		setmetatile(26,6,0x0C7,TRUE) //overlapping tree
+		setmetatile(27,6,0x0C7,TRUE) //overlapping tree
+		setmetatile(26,7,0x016,TRUE) //tree bottom
+		setmetatile(27,7,0x016,TRUE) //tree bottom
+		setmetatile(26,8,0x001,FALSE) //blank grass
+		setmetatile(27,8,0x001,FALSE) //blank grass
 	return
 }
 

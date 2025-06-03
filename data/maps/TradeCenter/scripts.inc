@@ -305,7 +305,7 @@ MauvilleCity_EventScript_Temporary::
 # 174 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_IRON, 30
 # 175 "data/maps/TradeCenter/scripts.pory"
-	clearflag FLAG_DEFEATED_NORMAN_INTRO
+	clearflag FLAG_VISITED_RUSTBORO_CITY
 # 187 "data/maps/TradeCenter/scripts.pory"
 	waitmessage
 # 188 "data/maps/TradeCenter/scripts.pory"
