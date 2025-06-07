@@ -73,6 +73,15 @@
 #define B_PP_REDUCED_BY_SPITE       GEN_LATEST // In Gen4+, Spite reduces the foe's last move's PP by 4, instead of 2 to 5.
 #define B_EXTRAPOLATED_MOVE_FLAGS   TRUE       // Adds move flags to moves that they don't officially have but would likely have if they were in the latest core series game.
 #define B_CUSTOMIZED_MOVE_STATS     TRUE       // Customizes move stats by me, the hack creator. This includes changing the base power, accuracy, PP, and priority of moves.
+#define B_CUSTOMIZED_GEN_1_STATS    TRUE       // Customizes Gen 1 mon stats by me, the hack creator.
+#define B_CUSTOMIZED_GEN_2_STATS    TRUE       // Customizes Gen 2 mon stats by me, the hack creator.
+#define B_CUSTOMIZED_GEN_3_STATS    TRUE       // Customizes Gen 3 mon stats by me, the hack creator.
+#define B_CUSTOMIZED_GEN_4_STATS    TRUE       // Customizes Gen 4 mon stats by me, the hack creator.
+#define B_CUSTOMIZED_GEN_5_STATS    TRUE       // Customizes Gen 5 mon stats by me, the hack creator.
+#define B_CUSTOMIZED_GEN_6_STATS    TRUE       // Customizes Gen 6 mon stats by me, the hack creator.
+#define B_CUSTOMIZED_GEN_7_STATS    TRUE       // Customizes Gen 7 mon stats by me, the hack creator.
+#define B_CUSTOMIZED_GEN_8_STATS    TRUE       // Customizes Gen 8 mon stats by me, the hack creator.
+#define B_CUSTOMIZED_GEN_9_STATS    TRUE       // Customizes Gen 9 mon stats by me, the hack creator.
 
 // Ability data settings
 #define B_UPDATED_ABILITY_DATA      GEN_LATEST // Affects flags
