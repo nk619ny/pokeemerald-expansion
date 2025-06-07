@@ -1003,11 +1003,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sFeraligatrTeachableLearnset,
     },
 
-/* #if P_MEGA_EVOLUTIONS
+#if P_MEGA_EVOLUTIONS
     [SPECIES_FERALIGATR_MEGA] =
     {
         .baseHP        = 85,
-        .baseAttack    = (105 + 40),
+        .baseAttack    = (105 + 40) + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 5 : 0),
         .baseDefense   = (100 + 30),
         .baseSpeed     = (78 + 0) + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 10 : 0),
         .baseSpAttack  = (79 + 10) - (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 10 : 0),
