@@ -1,7 +1,7 @@
 # 1 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
 
 # 2 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
-.set LOCALID_NURSE, 1
+//.set LOCALID_MOSSDEEP_NURSE, 1
 # 3 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
 
 # 4 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
@@ -25,7 +25,7 @@ MossdeepCity_PokemonCenter_1F_OnTransition:
 # 13 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
 MossdeepCity_PokemonCenter_1F_EventScript_Nurse::
 # 14 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, LOCALID_MOSSDEEP_NURSE
 # 15 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"
 	call Common_EventScript_PkmnCenterNurse
 # 16 "data/maps/MossdeepCity_PokemonCenter_1F/scripts.pory"

@@ -56,7 +56,6 @@ LilycoveCity_PokemonCenter_1F_EventScript_ShowContestLadyMon::
 
 # 29 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
 LilycoveCity_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_LILYCOVE_NURSE
 # 30 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"
 	setvar VAR_0x800B, LOCALID_NURSE
 # 31 "data/maps/LilycoveCity_PokemonCenter_1F/scripts.pory"

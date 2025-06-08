@@ -18,11 +18,11 @@ PetalburgCity_Gym_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 22 "data/maps/PetalburgCity_Gym/scripts.pory"
 
 # 23 "data/maps/PetalburgCity_Gym/scripts.pory"
-.set LOCALID_NORMAN, 1
+//.set LOCALID_PETALBURG_GYM_NORMAN, 1
 # 24 "data/maps/PetalburgCity_Gym/scripts.pory"
-.set LOCALID_WALLY, 10
+//.set LOCALID_PETALBURG_GYM_WALLY, 10
 # 25 "data/maps/PetalburgCity_Gym/scripts.pory"
-.set LOCALID_WALLYS_DAD, 11
+//.set LOCALID_PETALBURG_GYM_WALLYS_DAD, 11
 # 26 "data/maps/PetalburgCity_Gym/scripts.pory"
 
 # 27 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -126,7 +126,7 @@ PetalburgCity_Gym_EventScript_CheckNormanForRematch::
 # 76 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_eq VAR_PETALBURG_GYM_STATE, 8, PetalburgCity_Gym_EventScript_DontMoveNormanToFront
 # 77 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setobjectxyperm LOCALID_NORMAN, 4, 107
+	setobjectxyperm LOCALID_PETALBURG_GYM_NORMAN, 4, 107
 # 78 "data/maps/PetalburgCity_Gym/scripts.pory"
 	return
 # 79 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -178,13 +178,13 @@ PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial::
 # 102 "data/maps/PetalburgCity_Gym/scripts.pory"
 //	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 # 103 "data/maps/PetalburgCity_Gym/scripts.pory"
-//	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitGym
+//	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitGym
 # 104 "data/maps/PetalburgCity_Gym/scripts.pory"
 //	waitmovement 0
 # 105 "data/maps/PetalburgCity_Gym/scripts.pory"
 //	playse SE_EXIT
 # 106 "data/maps/PetalburgCity_Gym/scripts.pory"
-//	removeobject LOCALID_WALLY
+//	removeobject LOCALID_PETALBURG_GYM_WALLY
 # 107 "data/maps/PetalburgCity_Gym/scripts.pory"
 //	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
 # 108 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -304,7 +304,7 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorialEast::
 # 165 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 # 166 "data/maps/PetalburgCity_Gym/scripts.pory"
-	addobject LOCALID_WALLY
+	addobject LOCALID_PETALBURG_GYM_WALLY
 # 167 "data/maps/PetalburgCity_Gym/scripts.pory"
 	playse SE_DOOR
 # 168 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -380,7 +380,7 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 # 203 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_ExitGymWithWallyEast
 # 204 "data/maps/PetalburgCity_Gym/scripts.pory"
-	removeobject LOCALID_WALLY
+	removeobject LOCALID_PETALBURG_GYM_WALLY
 # 205 "data/maps/PetalburgCity_Gym/scripts.pory"
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
 # 206 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -408,9 +408,9 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 # 217 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallyArriveSouth::
 # 218 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 219 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyArrive
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyArrive
 # 220 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 221 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -420,11 +420,11 @@ PetalburgCity_Gym_EventScript_WallyArriveSouth::
 # 223 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallyArriveNorth::
 # 224 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyArriveNorth
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyArriveNorth
 # 225 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 226 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterRight
 # 227 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 # 228 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -436,11 +436,11 @@ PetalburgCity_Gym_EventScript_WallyArriveNorth::
 # 231 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallyArriveWestEast::
 # 232 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 233 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 # 234 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyArrive
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyArrive
 # 235 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 236 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -450,9 +450,9 @@ PetalburgCity_Gym_EventScript_WallyArriveWestEast::
 # 238 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_ExitGymWithWallySouth::
 # 239 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 240 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
 # 241 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallySouth
 # 242 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -464,7 +464,7 @@ PetalburgCity_Gym_EventScript_ExitGymWithWallySouth::
 # 245 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_ExitGymWithWallyNorth::
 # 246 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitNorth
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitNorth
 # 247 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyNorth
 # 248 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -476,7 +476,7 @@ PetalburgCity_Gym_EventScript_ExitGymWithWallyNorth::
 # 251 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_ExitGymWithWallyWest::
 # 252 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
 # 253 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyWest
 # 254 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -488,7 +488,7 @@ PetalburgCity_Gym_EventScript_ExitGymWithWallyWest::
 # 257 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_ExitGymWithWallyEast::
 # 258 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitEast
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitEast
 # 259 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyEast
 # 260 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -500,7 +500,7 @@ PetalburgCity_Gym_EventScript_ExitGymWithWallyEast::
 # 263 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanAddressPlayerSouth::
 # 264 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterUp
 # 265 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 266 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -510,7 +510,7 @@ PetalburgCity_Gym_EventScript_NormanAddressPlayerSouth::
 # 268 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanAddressPlayerNorth::
 # 269 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 270 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 271 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -522,7 +522,7 @@ PetalburgCity_Gym_EventScript_NormanAddressPlayerNorth::
 # 274 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanAddressPlayerWest::
 # 275 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterRight
 # 276 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 277 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -534,7 +534,7 @@ PetalburgCity_Gym_EventScript_NormanAddressPlayerWest::
 # 280 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanAddressPlayerEast::
 # 281 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterLeft
 # 282 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 # 283 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -546,7 +546,7 @@ PetalburgCity_Gym_EventScript_NormanAddressPlayerEast::
 # 286 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanAddressWallySouth::
 # 287 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 288 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 289 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -556,7 +556,7 @@ PetalburgCity_Gym_EventScript_NormanAddressWallySouth::
 # 291 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanAddressWallyNorth::
 # 292 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterRight
 # 293 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 294 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -566,7 +566,7 @@ PetalburgCity_Gym_EventScript_NormanAddressWallyNorth::
 # 296 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanAddressWallyWest::
 # 297 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 298 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 299 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -576,7 +576,7 @@ PetalburgCity_Gym_EventScript_NormanAddressWallyWest::
 # 301 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanAddressWallyEast::
 # 302 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 303 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 304 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -586,7 +586,7 @@ PetalburgCity_Gym_EventScript_NormanAddressWallyEast::
 # 306 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallyFacePlayer::
 # 307 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+	applymovement LOCALID_PETALBURG_GYM_WALLY, Common_Movement_FacePlayer
 # 308 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 309 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -596,7 +596,7 @@ PetalburgCity_Gym_EventScript_WallyFacePlayer::
 # 311 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallyFaceDown::
 # 312 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_WALLY, Common_Movement_WalkInPlaceFasterDown
 # 313 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 314 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -654,7 +654,7 @@ PetalburgCity_Gym_EventScript_NormanFaceDoorSouth::
 # 340 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_NormanFaceDoorNorth::
 # 341 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 342 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 343 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -810,7 +810,7 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 # 418 "data/maps/PetalburgCity_Gym/scripts.pory"
 	delay 10
 # 419 "data/maps/PetalburgCity_Gym/scripts.pory"
-	addobject LOCALID_WALLYS_DAD
+	addobject LOCALID_PETALBURG_GYM_WALLYS_DAD
 # 420 "data/maps/PetalburgCity_Gym/scripts.pory"
 	switch VAR_FACING
 # 421 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -864,17 +864,17 @@ PetalburgCity_Gym_EventScript_WallysDadArrivesWest::
 # 445 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallysDadArrives::
 # 446 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadEnterGym
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadEnterGym
 # 447 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 448 "data/maps/PetalburgCity_Gym/scripts.pory"
 	playse SE_PIN
 # 449 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_ExclamationMark
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, Common_Movement_ExclamationMark
 # 450 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 451 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_Delay48
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, Common_Movement_Delay48
 # 452 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 453 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -912,7 +912,7 @@ PetalburgCity_Gym_EventScript_WallysDadArrives::
 # 469 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_ExitGymWithWallysDadWest
 # 470 "data/maps/PetalburgCity_Gym/scripts.pory"
-	removeobject LOCALID_WALLYS_DAD
+	removeobject LOCALID_PETALBURG_GYM_WALLYS_DAD
 # 471 "data/maps/PetalburgCity_Gym/scripts.pory"
 	setvar VAR_PETALBURG_CITY_STATE, 4
 # 472 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -930,7 +930,7 @@ PetalburgCity_Gym_EventScript_WallysDadArrives::
 # 478 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallysDadFaceNormanNorth::
 # 479 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, Common_Movement_WalkInPlaceFasterUp
 # 480 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 481 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -940,7 +940,7 @@ PetalburgCity_Gym_EventScript_WallysDadFaceNormanNorth::
 # 483 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallysDadFaceNormanEast::
 # 484 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, Common_Movement_WalkInPlaceFasterRight
 # 485 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 486 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -950,7 +950,7 @@ PetalburgCity_Gym_EventScript_WallysDadFaceNormanEast::
 # 488 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallysDadFaceNormanWest::
 # 489 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, Common_Movement_WalkInPlaceFasterLeft
 # 490 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 491 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -960,13 +960,13 @@ PetalburgCity_Gym_EventScript_WallysDadFaceNormanWest::
 # 493 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallysDadApproachPlayerNorth::
 # 494 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadApproachPlayerNorth
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadApproachPlayerNorth
 # 495 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 496 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 497 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterLeft
 # 498 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 499 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -976,13 +976,13 @@ PetalburgCity_Gym_EventScript_WallysDadApproachPlayerNorth::
 # 501 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallysDadApproachPlayerEast::
 # 502 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadApproachPlayerEast
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadApproachPlayerEast
 # 503 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 504 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 # 505 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 506 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 507 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -992,13 +992,13 @@ PetalburgCity_Gym_EventScript_WallysDadApproachPlayerEast::
 # 509 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_WallysDadApproachPlayerWest::
 # 510 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadApproachPlayerWest
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadApproachPlayerWest
 # 511 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 512 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 # 513 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 514 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 515 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1008,9 +1008,9 @@ PetalburgCity_Gym_EventScript_WallysDadApproachPlayerWest::
 # 517 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_ExitGymWithWallysDadNorth::
 # 518 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadExitNorth
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadExitNorth
 # 519 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 # 520 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallysDadNorth
 # 521 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1022,7 +1022,7 @@ PetalburgCity_Gym_EventScript_ExitGymWithWallysDadNorth::
 # 524 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_ExitGymWithWallysDadEast::
 # 525 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadExitEast
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadExitEast
 # 526 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallysDadEast
 # 527 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -1034,7 +1034,7 @@ PetalburgCity_Gym_EventScript_ExitGymWithWallysDadEast::
 # 530 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_EventScript_ExitGymWithWallysDadWest::
 # 531 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadExitWest
+	applymovement LOCALID_PETALBURG_GYM_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadExitWest
 # 532 "data/maps/PetalburgCity_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallysDadWest
 # 533 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3236,7 +3236,7 @@ PetalburgCity_Gym_EventScript_WallyNormanIntroNew::
 # 1638 "data/maps/PetalburgCity_Gym/scripts.pory"
 	delay 10
 # 1639 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	applymovement LOCALID_PETALBURG_GYM_WALLY, Common_Movement_ExclamationMark
 # 1640 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 1641 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3248,11 +3248,11 @@ PetalburgCity_Gym_EventScript_WallyNormanIntroNew::
 # 1644 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmessage
 # 1645 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_ExclamationMark
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_ExclamationMark
 # 1646 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 1647 "data/maps/PetalburgCity_Gym/scripts.pory"
-	turnobject LOCALID_WALLY, DIR_SOUTH
+	turnobject LOCALID_PETALBURG_GYM_WALLY, DIR_SOUTH
 # 1648 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_3
 # 1649 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3260,13 +3260,13 @@ PetalburgCity_Gym_EventScript_WallyNormanIntroNew::
 # 1650 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_5
 # 1651 "data/maps/PetalburgCity_Gym/scripts.pory"
-	turnobject LOCALID_WALLY, DIR_NORTH
+	turnobject LOCALID_PETALBURG_GYM_WALLY, DIR_NORTH
 # 1652 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 1653 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_6
 # 1654 "data/maps/PetalburgCity_Gym/scripts.pory"
-	turnobject LOCALID_WALLY, DIR_SOUTH
+	turnobject LOCALID_PETALBURG_GYM_WALLY, DIR_SOUTH
 # 1655 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 1656 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3276,11 +3276,11 @@ PetalburgCity_Gym_EventScript_WallyNormanIntroNew::
 # 1658 "data/maps/PetalburgCity_Gym/scripts.pory"
 	delay 20
 # 1659 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_WallyLeave
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_WallyLeave
 # 1660 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmovement 0
 # 1661 "data/maps/PetalburgCity_Gym/scripts.pory"
-	removeobject LOCALID_WALLY
+	removeobject LOCALID_PETALBURG_GYM_WALLY
 # 1662 "data/maps/PetalburgCity_Gym/scripts.pory"
 	delay 30
 # 1663 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3372,7 +3372,7 @@ PetalburgCity_Gym_EventScript_NormanPostBattle::
 # 1712 "data/maps/PetalburgCity_Gym/scripts.pory"
 	lockall
 # 1713 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_NORMAN, Common_Movement_FacePlayer
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_FacePlayer
 # 1714 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_0
 # 1715 "data/maps/PetalburgCity_Gym/scripts.pory"

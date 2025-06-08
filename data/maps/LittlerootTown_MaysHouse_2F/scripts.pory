@@ -1,5 +1,5 @@
 raw `
-.set LOCALID_RIVALS_HOUSE_2F_RIVAL, 1
+//.set LOCALID_RIVALS_HOUSE_2F_RIVAL, 1
 
 LittlerootTown_MaysHouse_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_MaysHouse_2F_OnTransition

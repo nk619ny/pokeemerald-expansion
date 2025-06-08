@@ -1,7 +1,7 @@
 raw `
 //.set LOCALID_WOMAN_1, 19
 //.set LOCALID_MAN_1, 20
-.set LOCALID_RIVAL, 17
+//.set LOCALID_LILYCOVE_RIVAL, 17
 
 LilycoveCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_OnTransition
@@ -406,13 +406,13 @@ LilycoveCity_EventScript_BrendanBattleFrontier::
 
 LilycoveCity_EventScript_RivalFlyAway::
 	closemessage
-	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_LILYCOVE_RIVAL, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 50
 	setfieldeffectargument 0, 1
 	dofieldeffect FLDEFF_NPCFLY_OUT
 	delay 15
-	removeobject LOCALID_RIVAL
+	removeobject LOCALID_LILYCOVE_RIVAL
 	waitfieldeffect FLDEFF_NPCFLY_OUT
 	savebgm MUS_DUMMY
 	fadedefaultbgm
@@ -822,10 +822,10 @@ script LilycoveCity_EventScript_RivalEncounterLeft{
 	lock
 	msgbox(format("{RIVAL}: {PLAYER}, wait up!"))
 	closemessage
-	setobjectxyperm(LOCALID_RIVAL, 53, 15)
-	addobject(LOCALID_RIVAL)
+	setobjectxyperm(LOCALID_LILYCOVE_RIVAL, 53, 15)
+	addobject(LOCALID_LILYCOVE_RIVAL)
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
-	applymovement(LOCALID_RIVAL, LilycoveCity_Movement_RivalApproachLeft)
+	applymovement(LOCALID_LILYCOVE_RIVAL, LilycoveCity_Movement_RivalApproachLeft)
 	waitmovement(0)
 	goto(LilycoveCity_EventScript_RivalBeachEncounter)
 }
@@ -834,10 +834,10 @@ script LilycoveCity_EventScript_RivalEncounterRight{
 	lock
 	msgbox(format("{RIVAL}: {PLAYER}, wait up!"))
 	closemessage
-	setobjectxyperm(LOCALID_RIVAL, 53, 15)
-	addobject(LOCALID_RIVAL)
+	setobjectxyperm(LOCALID_LILYCOVE_RIVAL, 53, 15)
+	addobject(LOCALID_LILYCOVE_RIVAL)
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
-	applymovement(LOCALID_RIVAL, LilycoveCity_Movement_RivalApproachRight)
+	applymovement(LOCALID_LILYCOVE_RIVAL, LilycoveCity_Movement_RivalApproachRight)
 	waitmovement(0)
 	goto(LilycoveCity_EventScript_RivalBeachEncounter)
 }

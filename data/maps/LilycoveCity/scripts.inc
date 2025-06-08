@@ -1,11 +1,11 @@
 # 1 "data/maps/LilycoveCity/scripts.pory"
 
 # 2 "data/maps/LilycoveCity/scripts.pory"
-.set LOCALID_WOMAN_1, 19
+//.set LOCALID_WOMAN_1, 19
 # 3 "data/maps/LilycoveCity/scripts.pory"
-.set LOCALID_MAN_1, 20
+//.set LOCALID_MAN_1, 20
 # 4 "data/maps/LilycoveCity/scripts.pory"
-.set LOCALID_RIVAL, 17
+//.set LOCALID_LILYCOVE_RIVAL, 17
 # 5 "data/maps/LilycoveCity/scripts.pory"
 
 # 6 "data/maps/LilycoveCity/scripts.pory"
@@ -279,7 +279,7 @@ LilycoveCity_EventScript_Man1::
 # 140 "data/maps/LilycoveCity/scripts.pory"
 	msgbox LilycoveCity_Text_JustArrivedAndSawRarePokemon, MSGBOX_NPC
 # 141 "data/maps/LilycoveCity/scripts.pory"
-	applymovement LOCALID_MAN_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_LILYCOVE_MAN_1, Common_Movement_FaceOriginalDirection
 # 142 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 143 "data/maps/LilycoveCity/scripts.pory"
@@ -291,7 +291,7 @@ LilycoveCity_EventScript_Woman1::
 # 146 "data/maps/LilycoveCity/scripts.pory"
 	msgbox LilycoveCity_Text_HoneymoonVowToSeeRarePokemon, MSGBOX_NPC
 # 147 "data/maps/LilycoveCity/scripts.pory"
-	applymovement LOCALID_WOMAN_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_LILYCOVE_WOMAN_1, Common_Movement_FaceOriginalDirection
 # 148 "data/maps/LilycoveCity/scripts.pory"
 	end
 # 149 "data/maps/LilycoveCity/scripts.pory"
@@ -815,7 +815,7 @@ LilycoveCity_EventScript_RivalFlyAway::
 # 408 "data/maps/LilycoveCity/scripts.pory"
 	closemessage
 # 409 "data/maps/LilycoveCity/scripts.pory"
-	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_LILYCOVE_RIVAL, Common_Movement_WalkInPlaceFasterDown
 # 410 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 0
 # 411 "data/maps/LilycoveCity/scripts.pory"
@@ -827,7 +827,7 @@ LilycoveCity_EventScript_RivalFlyAway::
 # 414 "data/maps/LilycoveCity/scripts.pory"
 	delay 15
 # 415 "data/maps/LilycoveCity/scripts.pory"
-	removeobject LOCALID_RIVAL
+	removeobject LOCALID_LILYCOVE_RIVAL
 # 416 "data/maps/LilycoveCity/scripts.pory"
 	waitfieldeffect FLDEFF_NPCFLY_OUT
 # 417 "data/maps/LilycoveCity/scripts.pory"
@@ -1621,13 +1621,13 @@ LilycoveCity_EventScript_RivalEncounterLeft::
 # 824 "data/maps/LilycoveCity/scripts.pory"
 	closemessage
 # 825 "data/maps/LilycoveCity/scripts.pory"
-	setobjectxyperm LOCALID_RIVAL, 53, 15
+	setobjectxyperm LOCALID_LILYCOVE_RIVAL, 53, 15
 # 826 "data/maps/LilycoveCity/scripts.pory"
-	addobject LOCALID_RIVAL
+	addobject LOCALID_LILYCOVE_RIVAL
 # 827 "data/maps/LilycoveCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 # 828 "data/maps/LilycoveCity/scripts.pory"
-	applymovement LOCALID_RIVAL, LilycoveCity_Movement_RivalApproachLeft
+	applymovement LOCALID_LILYCOVE_RIVAL, LilycoveCity_Movement_RivalApproachLeft
 # 829 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 0
 # 830 "data/maps/LilycoveCity/scripts.pory"
@@ -1643,13 +1643,13 @@ LilycoveCity_EventScript_RivalEncounterRight::
 # 836 "data/maps/LilycoveCity/scripts.pory"
 	closemessage
 # 837 "data/maps/LilycoveCity/scripts.pory"
-	setobjectxyperm LOCALID_RIVAL, 53, 15
+	setobjectxyperm LOCALID_LILYCOVE_RIVAL, 53, 15
 # 838 "data/maps/LilycoveCity/scripts.pory"
-	addobject LOCALID_RIVAL
+	addobject LOCALID_LILYCOVE_RIVAL
 # 839 "data/maps/LilycoveCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 # 840 "data/maps/LilycoveCity/scripts.pory"
-	applymovement LOCALID_RIVAL, LilycoveCity_Movement_RivalApproachRight
+	applymovement LOCALID_LILYCOVE_RIVAL, LilycoveCity_Movement_RivalApproachRight
 # 841 "data/maps/LilycoveCity/scripts.pory"
 	waitmovement 0
 # 842 "data/maps/LilycoveCity/scripts.pory"

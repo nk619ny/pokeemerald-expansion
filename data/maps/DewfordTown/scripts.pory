@@ -2,14 +2,14 @@ raw `
 @ Sailing to and from Dewford uses local IDs from different maps
 @ e.g. Route 104's sail to Dewford script references local IDs from Dewford's map
 @ All of these local IDs are labeled here
-.equ LOCALID_DEWFORD_BRINEY, 2
-.equ LOCALID_DEWFORD_BOAT, 4
+//.equ LOCALID_DEWFORD_BRINEY, 2
+//.equ LOCALID_DEWFORD_BOAT, 4
 
-.equ LOCALID_ROUTE109_BOAT, 1
-.equ LOCALID_ROUTE109_BRINEY, 2
+//.equ LOCALID_ROUTE109_BOAT, 1
+//.equ LOCALID_ROUTE109_BRINEY, 2
 
-.equ LOCALID_BOAT_R104, 7
-.equ LOCALID_BRINEY_R104, 8
+//.equ LOCALID_BOAT_R104, 7
+//.equ LOCALID_BRINEY_R104, 8
 
 DewfordTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, DewfordTown_OnTransition

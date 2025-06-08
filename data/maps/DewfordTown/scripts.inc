@@ -7,21 +7,21 @@
 # 4 "data/maps/DewfordTown/scripts.pory"
 @ All of these local IDs are labeled here
 # 5 "data/maps/DewfordTown/scripts.pory"
-.equ LOCALID_BRINEY_DEWFORD, 2
+//.equ LOCALID_DEWFORD_BRINEY, 2
 # 6 "data/maps/DewfordTown/scripts.pory"
-.equ LOCALID_BOAT_DEWFORD, 4
+//.equ LOCALID_DEWFORD_BOAT, 4
 # 7 "data/maps/DewfordTown/scripts.pory"
 
 # 8 "data/maps/DewfordTown/scripts.pory"
-.equ LOCALID_BOAT_R109, 1
+//.equ LOCALID_ROUTE109_BOAT, 1
 # 9 "data/maps/DewfordTown/scripts.pory"
-.equ LOCALID_BRINEY_R109, 2
+//.equ LOCALID_ROUTE109_BRINEY, 2
 # 10 "data/maps/DewfordTown/scripts.pory"
 
 # 11 "data/maps/DewfordTown/scripts.pory"
-.equ LOCALID_BOAT_R104, 7
+//.equ LOCALID_BOAT_R104, 7
 # 12 "data/maps/DewfordTown/scripts.pory"
-.equ LOCALID_BRINEY_R104, 8
+//.equ LOCALID_BRINEY_R104, 8
 # 13 "data/maps/DewfordTown/scripts.pory"
 
 # 14 "data/maps/DewfordTown/scripts.pory"
@@ -253,39 +253,39 @@ DewfordTown_EventScript_SailToPetalburg::
 # 127 "data/maps/DewfordTown/scripts.pory"
 	call EventScript_BackupMrBrineyLocation
 # 128 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN, 0
+	setobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0
 # 129 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN, 0
+	setobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN, 0
 # 130 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_BRINEY_DEWFORD, DewfordTown_Movement_BrineyBoardBoat
+	applymovement LOCALID_DEWFORD_BRINEY, DewfordTown_Movement_BrineyBoardBoat
 # 131 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 132 "data/maps/DewfordTown/scripts.pory"
-	removeobject LOCALID_BRINEY_DEWFORD
+	removeobject LOCALID_DEWFORD_BRINEY
 # 133 "data/maps/DewfordTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
 # 134 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 135 "data/maps/DewfordTown/scripts.pory"
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
+	hideobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN
 # 136 "data/maps/DewfordTown/scripts.pory"
 	call Common_EventScript_PlayBrineysBoatMusic
 # 137 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_BOAT_DEWFORD, DewfordTown_Movement_SailToPetalburg
+	applymovement LOCALID_DEWFORD_BOAT, DewfordTown_Movement_SailToPetalburg
 # 138 "data/maps/DewfordTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, DewfordTown_Movement_SailToPetalburg
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_SailToPetalburg
 # 139 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 140 "data/maps/DewfordTown/scripts.pory"
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
+	showobjectat LOCALID_PLAYER, MAP_ROUTE104
 # 141 "data/maps/DewfordTown/scripts.pory"
 	call Common_EventScript_StopBrineysBoatMusic
 # 142 "data/maps/DewfordTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, DewfordTown_Movement_ExitBoatPetalburg
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_ExitBoatPetalburg
 # 143 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 144 "data/maps/DewfordTown/scripts.pory"
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
+	showobjectat LOCALID_PLAYER, MAP_ROUTE104
 # 145 "data/maps/DewfordTown/scripts.pory"
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
 # 146 "data/maps/DewfordTown/scripts.pory"
@@ -295,11 +295,11 @@ DewfordTown_EventScript_SailToPetalburg::
 # 148 "data/maps/DewfordTown/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 # 149 "data/maps/DewfordTown/scripts.pory"
-	hideobjectat LOCALID_BOAT_DEWFORD, MAP_DEWFORD_TOWN
+	hideobjectat LOCALID_DEWFORD_BOAT, MAP_DEWFORD_TOWN
 # 150 "data/maps/DewfordTown/scripts.pory"
 	setvar VAR_BOARD_BRINEY_BOAT_STATE, 2
 # 151 "data/maps/DewfordTown/scripts.pory"
-	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
+	resetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN
 # 152 "data/maps/DewfordTown/scripts.pory"
 	warp MAP_ROUTE104_MR_BRINEYS_HOUSE, 5, 4
 # 153 "data/maps/DewfordTown/scripts.pory"
@@ -317,57 +317,57 @@ DewfordTown_EventScript_SailToSlateport::
 # 159 "data/maps/DewfordTown/scripts.pory"
 	call EventScript_BackupMrBrineyLocation
 # 160 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN, 0
+	setobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0
 # 161 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN, 1
+	setobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN, 1
 # 162 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_BRINEY_DEWFORD, DewfordTown_Movement_BrineyBoardBoat
+	applymovement LOCALID_DEWFORD_BRINEY, DewfordTown_Movement_BrineyBoardBoat
 # 163 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 164 "data/maps/DewfordTown/scripts.pory"
-	removeobject LOCALID_BRINEY_DEWFORD
+	removeobject LOCALID_DEWFORD_BRINEY
 # 165 "data/maps/DewfordTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
 # 166 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 167 "data/maps/DewfordTown/scripts.pory"
-	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
+	hideobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN
 # 168 "data/maps/DewfordTown/scripts.pory"
 	call Common_EventScript_PlayBrineysBoatMusic
 # 169 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_BOAT_DEWFORD, DewfordTown_Movement_SailToSlateport
+	applymovement LOCALID_DEWFORD_BOAT, DewfordTown_Movement_SailToSlateport
 # 170 "data/maps/DewfordTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, DewfordTown_Movement_SailToSlateport
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_SailToSlateport
 # 171 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 172 "data/maps/DewfordTown/scripts.pory"
 	call Common_EventScript_StopBrineysBoatMusic
 # 173 "data/maps/DewfordTown/scripts.pory"
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE109
+	showobjectat LOCALID_PLAYER, MAP_ROUTE109
 # 174 "data/maps/DewfordTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, DewfordTown_Movement_ExitBoatSlateport
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_ExitBoatSlateport
 # 175 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 176 "data/maps/DewfordTown/scripts.pory"
-	setobjectxyperm LOCALID_BRINEY_R109, 21, 26
+	setobjectxyperm LOCALID_ROUTE109_BRINEY, 21, 26
 # 177 "data/maps/DewfordTown/scripts.pory"
-	addobject LOCALID_BRINEY_R109
+	addobject LOCALID_ROUTE109_BRINEY
 # 178 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority LOCALID_BRINEY_R109, MAP_ROUTE109, 0
+	setobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109, 0
 # 179 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_BRINEY_R109, DewfordTown_Movement_BrineyExitBoat
+	applymovement LOCALID_ROUTE109_BRINEY, DewfordTown_Movement_BrineyExitBoat
 # 180 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 181 "data/maps/DewfordTown/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY
 # 182 "data/maps/DewfordTown/scripts.pory"
-	addobject LOCALID_BOAT_R109
+	addobject LOCALID_ROUTE109_BOAT
 # 183 "data/maps/DewfordTown/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
 # 184 "data/maps/DewfordTown/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 # 185 "data/maps/DewfordTown/scripts.pory"
-	hideobjectat LOCALID_BOAT_DEWFORD, MAP_DEWFORD_TOWN
+	hideobjectat LOCALID_DEWFORD_BOAT, MAP_DEWFORD_TOWN
 # 186 "data/maps/DewfordTown/scripts.pory"
 	call_if_unset FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_LandedSlateportDeliverGoods
 # 187 "data/maps/DewfordTown/scripts.pory"
@@ -377,11 +377,11 @@ DewfordTown_EventScript_SailToSlateport::
 # 189 "data/maps/DewfordTown/scripts.pory"
 	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
 # 190 "data/maps/DewfordTown/scripts.pory"
-	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
+	resetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN
 # 191 "data/maps/DewfordTown/scripts.pory"
-	resetobjectsubpriority LOCALID_BRINEY_R109, MAP_ROUTE109
+	resetobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109
 # 192 "data/maps/DewfordTown/scripts.pory"
-	copyobjectxytoperm LOCALID_BRINEY_R109
+	copyobjectxytoperm LOCALID_ROUTE109_BRINEY
 # 193 "data/maps/DewfordTown/scripts.pory"
 	release
 # 194 "data/maps/DewfordTown/scripts.pory"

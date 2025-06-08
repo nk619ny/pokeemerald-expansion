@@ -1,7 +1,7 @@
 # 1 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
 # 2 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-.set LOCALID_LITTLE_BOY, 5
+//.set LOCALID_WEATHER_INSTITUTE_LITTLE_BOY, 5
 # 3 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 
 # 4 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
@@ -23,9 +23,9 @@ Route119_WeatherInstitute_1F_OnTransition:
 # 12 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 Route119_WeatherInstitute_1F_EventScript_SetLittleBoyPos::
 # 13 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	setobjectxyperm LOCALID_LITTLE_BOY, 0, 5
+	setobjectxyperm LOCALID_WEATHER_INSTITUTE_LITTLE_BOY, 0, 5
 # 14 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
-	setobjectmovementtype LOCALID_LITTLE_BOY, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectmovementtype LOCALID_WEATHER_INSTITUTE_LITTLE_BOY, MOVEMENT_TYPE_FACE_RIGHT
 # 15 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"
 	return
 # 16 "data/maps/Route119_WeatherInstitute_1F/scripts.pory"

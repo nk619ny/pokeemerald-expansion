@@ -16,7 +16,7 @@ AquaHideout_B2F_EventScript_PreventMattNoticing::
 
 AquaHideout_B2F_EventScript_MattNoticePlayer::
 	lockall
-	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_AQUA_HIDEOUT_MATT
+	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT
 	playse SE_PIN
 	applymovement VAR_0x8008, Common_Movement_ExclamationMark
 	waitmovement 0

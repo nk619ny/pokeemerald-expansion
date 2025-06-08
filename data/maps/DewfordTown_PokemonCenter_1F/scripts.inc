@@ -1,7 +1,7 @@
 # 1 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 
 # 2 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
-.set LOCALID_NURSE, 1
+//.set LOCALID_NURSE, 1
 # 3 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 
 # 4 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"

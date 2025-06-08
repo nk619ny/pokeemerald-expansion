@@ -1,19 +1,19 @@
 # 1 "data/maps/MagmaHideout_4F/scripts.pory"
 
 # 2 "data/maps/MagmaHideout_4F/scripts.pory"
-.set LOCALID_GROUDON, 1
+//.set LOCALID_MAGMA_HIDEOUT_4F_GROUDON, 1
 # 3 "data/maps/MagmaHideout_4F/scripts.pory"
-.set LOCALID_GRUNT_1, 2
+//.set LOCALID_MAGMA_HIDEOUT_4F_GRUNT_1, 2
 # 4 "data/maps/MagmaHideout_4F/scripts.pory"
-.set LOCALID_GRUNT_2, 3
+//.set LOCALID_MAGMA_HIDEOUT_4F_GRUNT_2, 3
 # 5 "data/maps/MagmaHideout_4F/scripts.pory"
-.set LOCALID_GRUNT_3, 4
+//.set LOCALID_MAGMA_HIDEOUT_4F_GRUNT_3, 4
 # 6 "data/maps/MagmaHideout_4F/scripts.pory"
-.set LOCALID_TABITHA, 5
+//.set LOCALID_MAGMA_HIDEOUT_4F_TABITHA, 5
 # 7 "data/maps/MagmaHideout_4F/scripts.pory"
-.set LOCALID_MAXIE, 6
+//.set LOCALID_MAGMA_HIDEOUT_4F_MAXIE, 6
 # 8 "data/maps/MagmaHideout_4F/scripts.pory"
-.set LOCALID_GROUDON_SLEEPING, 7
+//.set LOCALID_MAGMA_HIDEOUT_4F_GROUDON_SLEEPING, 7
 # 9 "data/maps/MagmaHideout_4F/scripts.pory"
 
 # 10 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -35,7 +35,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 18 "data/maps/MagmaHideout_4F/scripts.pory"
 	closemessage
 # 19 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement LOCALID_MAXIE, Common_Movement_FaceUp
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FaceUp
 # 20 "data/maps/MagmaHideout_4F/scripts.pory"
 	waitmovement 0
 # 21 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -63,15 +63,15 @@ MagmaHideout_4F_EventScript_Maxie::
 # 32 "data/maps/MagmaHideout_4F/scripts.pory"
 	delay 150
 # 33 "data/maps/MagmaHideout_4F/scripts.pory"
-	removeobject LOCALID_GROUDON_SLEEPING
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON_SLEEPING
 # 34 "data/maps/MagmaHideout_4F/scripts.pory"
-	addobject LOCALID_GROUDON
+	addobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON
 # 35 "data/maps/MagmaHideout_4F/scripts.pory"
 	waitstate
 # 36 "data/maps/MagmaHideout_4F/scripts.pory"
 	delay 60
 # 37 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonApproach
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonApproach
 # 38 "data/maps/MagmaHideout_4F/scripts.pory"
 	waitmovement 0
 # 39 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -93,7 +93,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 47 "data/maps/MagmaHideout_4F/scripts.pory"
 	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
 # 48 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement LOCALID_MAXIE, Common_Movement_FaceLeft
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FaceLeft
 # 49 "data/maps/MagmaHideout_4F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 # 50 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -133,11 +133,11 @@ MagmaHideout_4F_EventScript_Maxie::
 # 67 "data/maps/MagmaHideout_4F/scripts.pory"
 
 # 68 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonExit
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonExit
 # 69 "data/maps/MagmaHideout_4F/scripts.pory"
 	waitmovement 0
 # 70 "data/maps/MagmaHideout_4F/scripts.pory"
-	removeobject LOCALID_GROUDON
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON
 # 71 "data/maps/MagmaHideout_4F/scripts.pory"
 	delay 4
 # 72 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -155,7 +155,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 78 "data/maps/MagmaHideout_4F/scripts.pory"
 	delay 30
 # 79 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
 # 80 "data/maps/MagmaHideout_4F/scripts.pory"
 	waitmovement 0
 # 81 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -173,7 +173,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 87 "data/maps/MagmaHideout_4F/scripts.pory"
 	waitmovement 0
 # 88 "data/maps/MagmaHideout_4F/scripts.pory"
-	//applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
+	//applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FacePlayer
 # 89 "data/maps/MagmaHideout_4F/scripts.pory"
 	//waitmovement 0
 # 90 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -205,15 +205,15 @@ MagmaHideout_4F_EventScript_Maxie::
 # 103 "data/maps/MagmaHideout_4F/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 104 "data/maps/MagmaHideout_4F/scripts.pory"
-	removeobject LOCALID_MAXIE
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_MAXIE
 # 105 "data/maps/MagmaHideout_4F/scripts.pory"
-	removeobject LOCALID_GRUNT_1
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_1
 # 106 "data/maps/MagmaHideout_4F/scripts.pory"
-	removeobject LOCALID_GRUNT_2
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_2
 # 107 "data/maps/MagmaHideout_4F/scripts.pory"
-	removeobject LOCALID_GRUNT_3
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_3
 # 108 "data/maps/MagmaHideout_4F/scripts.pory"
-	removeobject LOCALID_TABITHA
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_TABITHA
 # 109 "data/maps/MagmaHideout_4F/scripts.pory"
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 # 110 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -587,13 +587,13 @@ MagmaHideout_4F_EventScript_TabithaReport::
 # 330 "data/maps/MagmaHideout_4F/scripts.pory"
 	lock
 # 331 "data/maps/MagmaHideout_4F/scripts.pory"
-	setobjectxyperm LOCALID_TABITHA, 7, 21
+	setobjectxyperm LOCALID_MAGMA_HIDEOUT_4F_TABITHA, 7, 21
 # 332 "data/maps/MagmaHideout_4F/scripts.pory"
-	addobject LOCALID_TABITHA
+	addobject LOCALID_MAGMA_HIDEOUT_4F_TABITHA
 # 333 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement LOCALID_TABITHA, MagmaHideout_4F_EventScript_TabithaApproach
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_TABITHA, MagmaHideout_4F_EventScript_TabithaApproach
 # 334 "data/maps/MagmaHideout_4F/scripts.pory"
-	applymovement LOCALID_MAXIE, Common_Movement_FaceLeft
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FaceLeft
 # 335 "data/maps/MagmaHideout_4F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 # 336 "data/maps/MagmaHideout_4F/scripts.pory"

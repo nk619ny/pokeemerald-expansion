@@ -1,9 +1,9 @@
 # 1 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 2 "data/maps/AquaHideout_B2F/scripts.pory"
-.set LOCALID_MATT, 1
+//.set LOCALID_AQUA_HIDEOUT_MATT, 1
 # 3 "data/maps/AquaHideout_B2F/scripts.pory"
-.set LOCALID_SUBMARINE, 4
+//.set LOCALID_AQUA_HIDEOUT_SUBMARINE, 4
 # 4 "data/maps/AquaHideout_B2F/scripts.pory"
 
 # 5 "data/maps/AquaHideout_B2F/scripts.pory"
@@ -35,7 +35,7 @@ AquaHideout_B2F_EventScript_MattNoticePlayer::
 # 18 "data/maps/AquaHideout_B2F/scripts.pory"
 	lockall
 # 19 "data/maps/AquaHideout_B2F/scripts.pory"
-	setvar VAR_0x8008, LOCALID_MATT
+	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT
 # 20 "data/maps/AquaHideout_B2F/scripts.pory"
 	playse SE_PIN
 # 21 "data/maps/AquaHideout_B2F/scripts.pory"
@@ -69,9 +69,9 @@ AquaHideout_B2F_EventScript_Matt::
 # 35 "data/maps/AquaHideout_B2F/scripts.pory"
 AquaHideout_B2F_EventScript_SubmarineEscape::
 # 36 "data/maps/AquaHideout_B2F/scripts.pory"
-	setvar VAR_0x8008, LOCALID_MATT
+	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT
 # 37 "data/maps/AquaHideout_B2F/scripts.pory"
-	setvar VAR_0x8009, LOCALID_SUBMARINE
+	setvar VAR_0x8009, LOCALID_AQUA_HIDEOUT_SUBMARINE
 # 38 "data/maps/AquaHideout_B2F/scripts.pory"
 	applymovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft
 # 39 "data/maps/AquaHideout_B2F/scripts.pory"
@@ -393,7 +393,7 @@ AquaHideout_B2F_EventScript_MattAfterBattle::
 # 233 "data/maps/AquaHideout_B2F/scripts.pory"
 	delay 40
 # 234 "data/maps/AquaHideout_B2F/scripts.pory"
-	applymovement LOCALID_MATT, Common_Movement_WalkInPlaceLeft
+	applymovement LOCALID_AQUA_HIDEOUT_MATT, Common_Movement_WalkInPlaceLeft
 # 235 "data/maps/AquaHideout_B2F/scripts.pory"
 	waitmovement 0
 # 236 "data/maps/AquaHideout_B2F/scripts.pory"

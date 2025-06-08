@@ -1,11 +1,11 @@
 # 1 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 
 # 2 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-.set LOCALID_WALLACE, 1
+//.set LOCALID_CHAMPIONS_ROOM_WALLACE, 1
 # 3 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-.set LOCALID_RIVAL, 2
+//.set LOCALID_CHAMPIONS_ROOM_RIVAL, 2
 # 4 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-.set LOCALID_BIRCH, 3
+//.set LOCALID_CHAMPIONS_ROOM_BIRCH, 3
 # 5 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 
 # 6 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -39,7 +39,7 @@ EverGrandeCity_ChampionsRoom_OnWarp:
 # 20 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_EventScript_PlayerTurnNorth::
 # 21 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 # 22 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	end
 # 23 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -57,13 +57,13 @@ EverGrandeCity_ChampionsRoom_EventScript_EnterRoom::
 # 29 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	lockall
 # 30 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp4
 # 31 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 32 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	delay 40
 # 33 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace
+	applymovement LOCALID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace
 # 34 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 35 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -123,7 +123,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 # 62 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	call_if_eq VAR_RESULT, FEMALE, EverGrandeCity_ChampionsRoom_EventScript_PlayBrendanMusic
 # 63 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	addobject LOCALID_RIVAL
+	addobject LOCALID_CHAMPIONS_ROOM_RIVAL
 # 64 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	call EverGrandeCity_ChampionsRoom_EventScript_RivalApproachPlayer
 # 65 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -161,11 +161,11 @@ EverGrandeCity_ChampionsRoom_EventScript_MayAdvice::
 # 81 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	playse SE_PIN
 # 82 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	applymovement LOCALID_CHAMPIONS_ROOM_RIVAL, Common_Movement_ExclamationMark
 # 83 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 84 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_RIVAL, Common_Movement_Delay48
+	applymovement LOCALID_CHAMPIONS_ROOM_RIVAL, Common_Movement_Delay48
 # 85 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 86 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -187,11 +187,11 @@ EverGrandeCity_ChampionsRoom_EventScript_BrendanAdvice::
 # 94 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	playse SE_PIN
 # 95 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	applymovement LOCALID_CHAMPIONS_ROOM_RIVAL, Common_Movement_ExclamationMark
 # 96 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 97 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_RIVAL, Common_Movement_Delay48
+	applymovement LOCALID_CHAMPIONS_ROOM_RIVAL, Common_Movement_Delay48
 # 98 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 99 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -209,13 +209,13 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 # 105 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	closemessage
 # 106 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	addobject LOCALID_BIRCH
+	addobject LOCALID_CHAMPIONS_ROOM_BIRCH
 # 107 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_BIRCH, EverGrandeCity_ChampionsRoom_Movement_BirchArrives
+	applymovement LOCALID_CHAMPIONS_ROOM_BIRCH, EverGrandeCity_ChampionsRoom_Movement_BirchArrives
 # 108 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 109 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 # 110 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 111 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -225,13 +225,13 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 # 113 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	msgbox EverGrandeCity_ChampionsRoom_Text_BirchCongratulations, MSGBOX_DEFAULT
 # 114 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_CHAMPIONS_ROOM_WALLACE, Common_Movement_WalkInPlaceFasterUp
 # 115 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 116 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	delay 20
 # 117 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_WALLACE, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_CHAMPIONS_ROOM_WALLACE, Common_Movement_WalkInPlaceFasterDown
 # 118 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 119 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -241,19 +241,19 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 # 121 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	delay 30
 # 122 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExitStart
+	applymovement LOCALID_CHAMPIONS_ROOM_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExitStart
 # 123 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExitStart
+	applymovement LOCALID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExitStart
 # 124 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_BIRCH, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_CHAMPIONS_ROOM_BIRCH, Common_Movement_WalkInPlaceFasterUp
 # 125 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalFollows
+	applymovement LOCALID_CHAMPIONS_ROOM_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalFollows
 # 126 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 127 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	delay 20
 # 128 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 # 129 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 130 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -267,9 +267,9 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 # 134 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	closemessage
 # 135 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExit
+	applymovement LOCALID_CHAMPIONS_ROOM_WALLACE, EverGrandeCity_ChampionsRoom_Movement_WallaceExit
 # 136 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit
+	applymovement LOCALID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit
 # 137 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 138 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -303,11 +303,11 @@ EverGrandeCity_ChampionsRoom_EventScript_BrendanCongratulations::
 # 152 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_EventScript_RivalApproachPlayer::
 # 153 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalApproachPlayer
+	applymovement LOCALID_CHAMPIONS_ROOM_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalApproachPlayer
 # 154 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 155 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 156 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 157 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
@@ -317,7 +317,7 @@ EverGrandeCity_ChampionsRoom_EventScript_RivalApproachPlayer::
 # 159 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 EverGrandeCity_ChampionsRoom_EventScript_RivalLookBackAndForth::
 # 160 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalLookBackAndForth
+	applymovement LOCALID_CHAMPIONS_ROOM_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalLookBackAndForth
 # 161 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	waitmovement 0
 # 162 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"

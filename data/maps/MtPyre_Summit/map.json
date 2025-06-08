@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
@@ -126,6 +126,7 @@
       "flag": "FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE_MAXIE"
     },
     {
+      "local_id": "LOCALID_MT_PYRE_SUMMIT_STEVEN",
       "graphics_id": "OBJ_EVENT_GFX_STEVEN",
       "x": 23,
       "y": 8,

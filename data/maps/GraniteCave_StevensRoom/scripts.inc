@@ -1,7 +1,7 @@
 # 1 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 
 # 2 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-.set LOCALID_STEVEN, 1
+//.set LOCALID_GRANITE_CAVE_STEVEN, 1
 # 3 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 
 # 4 "data/maps/GraniteCave_StevensRoom/scripts.pory"
@@ -63,7 +63,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 # 32 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	playse SE_EXIT
 # 33 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	removeobject LOCALID_STEVEN
+	removeobject LOCALID_GRANITE_CAVE_STEVEN
 # 34 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	release
 # 35 "data/maps/GraniteCave_StevensRoom/scripts.pory"
@@ -73,7 +73,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 # 37 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 GraniteCave_StevensRoom_EventScript_StevenExitNorth::
 # 38 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement LOCALID_STEVEN, GraniteCave_StevensRoom_Movement_StevenExit
+	applymovement LOCALID_GRANITE_CAVE_STEVEN, GraniteCave_StevensRoom_Movement_StevenExit
 # 39 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	waitmovement 0
 # 40 "data/maps/GraniteCave_StevensRoom/scripts.pory"
@@ -85,7 +85,7 @@ GraniteCave_StevensRoom_EventScript_StevenExitWestEast::
 # 43 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, GraniteCave_StevensRoom_Movement_PlayerTurnTowardExit
 # 44 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement LOCALID_STEVEN, GraniteCave_StevensRoom_Movement_StevenExit
+	applymovement LOCALID_GRANITE_CAVE_STEVEN, GraniteCave_StevensRoom_Movement_StevenExit
 # 45 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/GraniteCave_StevensRoom/scripts.pory"
@@ -97,7 +97,7 @@ GraniteCave_StevensRoom_EventScript_StevenExitSouth::
 # 49 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, GraniteCave_StevensRoom_Movement_PlayerTurnTowardExit
 # 50 "data/maps/GraniteCave_StevensRoom/scripts.pory"
-	applymovement LOCALID_STEVEN, GraniteCave_StevensRoom_Movement_StevenExitSouth
+	applymovement LOCALID_GRANITE_CAVE_STEVEN, GraniteCave_StevensRoom_Movement_StevenExitSouth
 # 51 "data/maps/GraniteCave_StevensRoom/scripts.pory"
 	waitmovement 0
 # 52 "data/maps/GraniteCave_StevensRoom/scripts.pory"

@@ -1,3 +1,12 @@
+# 1 "data/maps/Route104_MrBrineysHouse/scripts.pory"
+
+# 2 "data/maps/Route104_MrBrineysHouse/scripts.pory"
+//.set LOCALID_BRINEYS_HOUSE_BRINEY, 1
+# 3 "data/maps/Route104_MrBrineysHouse/scripts.pory"
+//.set LOCALID_BRINEYS_HOUSE_PEEKO, 2
+# 4 "data/maps/Route104_MrBrineysHouse/scripts.pory"
+
+# 5 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 Route104_MrBrineysHouse_MapScripts::
 # 6 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, Route104_MrBrineysHouse_OnTransition

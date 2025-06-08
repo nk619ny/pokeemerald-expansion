@@ -1,9 +1,9 @@
 # 1 "data/maps/FarawayIsland_Entrance/scripts.pory"
 
 # 2 "data/maps/FarawayIsland_Entrance/scripts.pory"
-.set LOCALID_SAILOR, 1
+//.set LOCALID_FARAWAY_ISLAND_SAILOR, 1
 # 3 "data/maps/FarawayIsland_Entrance/scripts.pory"
-.set LOCALID_SS_TIDAL, 2
+//.set LOCALID_FARAWAY_ISLAND_SS_TIDAL, 2
 # 4 "data/maps/FarawayIsland_Entrance/scripts.pory"
 
 # 5 "data/maps/FarawayIsland_Entrance/scripts.pory"
@@ -63,9 +63,9 @@ FarawayIsland_Entrance_EventScript_Sailor::
 # 32 "data/maps/FarawayIsland_Entrance/scripts.pory"
 	delay 30
 # 33 "data/maps/FarawayIsland_Entrance/scripts.pory"
-	hideobjectat LOCALID_SAILOR, MAP_FARAWAY_ISLAND_ENTRANCE
+	hideobjectat LOCALID_FARAWAY_ISLAND_SAILOR, MAP_FARAWAY_ISLAND_ENTRANCE
 # 34 "data/maps/FarawayIsland_Entrance/scripts.pory"
-	setvar VAR_0x8004, LOCALID_SS_TIDAL
+	setvar VAR_0x8004, LOCALID_FARAWAY_ISLAND_SS_TIDAL
 # 35 "data/maps/FarawayIsland_Entrance/scripts.pory"
 	call Common_EventScript_FerryDepartIsland
 # 36 "data/maps/FarawayIsland_Entrance/scripts.pory"

@@ -1,7 +1,7 @@
 # 1 "data/maps/JaggedPass/scripts.pory"
 
 # 2 "data/maps/JaggedPass/scripts.pory"
-.set LOCALID_HIDEOUT_GUARD, 5
+//.set LOCALID_MAGMA_HIDEOUT_GUARD, 5
 # 3 "data/maps/JaggedPass/scripts.pory"
 
 # 4 "data/maps/JaggedPass/scripts.pory"
@@ -143,15 +143,15 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 # 72 "data/maps/JaggedPass/scripts.pory"
 	playse SE_PIN
 # 73 "data/maps/JaggedPass/scripts.pory"
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_ExclamationMark
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_ExclamationMark
 # 74 "data/maps/JaggedPass/scripts.pory"
 	waitmovement 0
 # 75 "data/maps/JaggedPass/scripts.pory"
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_Delay48
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_Delay48
 # 76 "data/maps/JaggedPass/scripts.pory"
 	waitmovement 0
 # 77 "data/maps/JaggedPass/scripts.pory"
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_FacePlayer
 # 78 "data/maps/JaggedPass/scripts.pory"
 	waitmovement 0
 # 79 "data/maps/JaggedPass/scripts.pory"
@@ -163,7 +163,7 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 # 82 "data/maps/JaggedPass/scripts.pory"
 	setflag FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS
 # 83 "data/maps/JaggedPass/scripts.pory"
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 # 84 "data/maps/JaggedPass/scripts.pory"
 	waitmovement 0
 # 85 "data/maps/JaggedPass/scripts.pory"
@@ -175,7 +175,7 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 # 88 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_GuardDefeated::
 # 89 "data/maps/JaggedPass/scripts.pory"
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_FacePlayer
 # 90 "data/maps/JaggedPass/scripts.pory"
 	waitmovement 0
 # 91 "data/maps/JaggedPass/scripts.pory"
@@ -183,7 +183,7 @@ JaggedPass_EventScript_GuardDefeated::
 # 92 "data/maps/JaggedPass/scripts.pory"
 	closemessage
 # 93 "data/maps/JaggedPass/scripts.pory"
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 # 94 "data/maps/JaggedPass/scripts.pory"
 	waitmovement 0
 # 95 "data/maps/JaggedPass/scripts.pory"

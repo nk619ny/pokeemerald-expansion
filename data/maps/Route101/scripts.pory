@@ -21,6 +21,7 @@ Route101_EventScript_HideMapNamePopup::
 	setvar VAR_ROUTE101_STATE, 1
 	end
 
+/*
 Route101_EventScript_StartBirchRescue::
 	lockall
 	playbgm MUS_HELP, TRUE
@@ -45,6 +46,7 @@ Route101_EventScript_StartBirchRescue::
 	setvar VAR_ROUTE101_STATE, 2
 	releaseall
 	end
+*/
 
 Route101_EventScript_PreventExitSouth::
 	lockall
@@ -220,6 +222,7 @@ Route101_EventScript_RouteSign::
 	msgbox Route101_Text_RouteSign, MSGBOX_SIGN
 	end
 
+/*
 Route101_EventScript_BirchsBag::
 	lock
 	faceplayer
@@ -249,6 +252,7 @@ Route101_EventScript_BirchsBag::
 	waitstate
 	release
 	end
+*/
 
 Route101_EventScript_HideMayInBedroom::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM

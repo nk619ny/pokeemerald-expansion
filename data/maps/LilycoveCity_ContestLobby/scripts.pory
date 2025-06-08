@@ -3,7 +3,7 @@ raw `
 //.set LOCALID_CONTEST_LOBBY_RECEPTIONIST, 1
 //.set LOCALID_CONTEST_LOBBY_LINK_RECEPTIONIST, 2
 //.set LOCALID_CONTEST_LOBBY_ARTIST, 4
-//.set LOCALID_CONTEST_LOBBY_ARTIST_LINK, 11
+//.set LOCALID_CONTEST_LOBBY_LINK_ARTIST, 11
 
 LilycoveCity_ContestLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_ContestLobby_OnTransition
@@ -211,9 +211,9 @@ LilycoveCity_ContestLobby_EventScript_TryDoLinkContestArtist::
 
 LilycoveCity_ContestLobby_EventScript_LinkContestArtist::
 	lockall
-	addobject LOCALID_CONTEST_LOBBY_ARTIST_LINK
-	applymovement LOCALID_CONTEST_LOBBY_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_LinkArtistApproachPlayer
-	waitmovement LOCALID_CONTEST_LOBBY_ARTIST_LINK
+	addobject LOCALID_CONTEST_LOBBY_LINK_ARTIST
+	applymovement LOCALID_CONTEST_LOBBY_LINK_ARTIST, LilycoveCity_ContestLobby_Movement_LinkArtistApproachPlayer
+	waitmovement LOCALID_CONTEST_LOBBY_LINK_ARTIST
 	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_ContestLobby_Movement_PlayerFaceLinkArtist
 	waitmovement 0
 	msgbox LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint, MSGBOX_DEFAULT
@@ -232,9 +232,9 @@ LilycoveCity_ContestLobby_EventScript_TakePaintingToMuseumLink::
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 0
 	specialvar VAR_RESULT, GiveMonArtistRibbon
 	call_if_eq VAR_RESULT, TRUE, LilycoveCity_ContestLobby_EventScript_ReceivedLinkArtistRibbon
-	applymovement LOCALID_CONTEST_LOBBY_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_LinkArtistExit
+	applymovement LOCALID_CONTEST_LOBBY_LINK_ARTIST, LilycoveCity_ContestLobby_Movement_LinkArtistExit
 	waitmovement 0
-	removeobject LOCALID_CONTEST_LOBBY_ARTIST_LINK
+	removeobject LOCALID_CONTEST_LOBBY_LINK_ARTIST
 	call LilycoveCity_ContestLobby_EventScript_UpdateMuseumPatrons
 	call LilycoveCity_ContestLobby_EventScript_SetPaintingFlag
 	releaseall
@@ -245,10 +245,10 @@ LilycoveCity_ContestLobby_EventScript_ConfirmDontTakePaintingLink::
 	goto_if_eq VAR_RESULT, YES, LilycoveCity_ContestLobby_EventScript_TakePaintingToMuseumLink
 	msgbox LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CONTEST_LOBBY_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_LinkArtistExit
+	applymovement LOCALID_CONTEST_LOBBY_LINK_ARTIST, LilycoveCity_ContestLobby_Movement_LinkArtistExit
 	waitmovement 0
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 0
-	removeobject LOCALID_CONTEST_LOBBY_ARTIST_LINK
+	removeobject LOCALID_CONTEST_LOBBY_LINK_ARTIST
 	releaseall
 	end
 
@@ -256,12 +256,12 @@ LilycoveCity_ContestLobby_EventScript_ReceivedLinkArtistRibbon::
 	incrementgamestat GAME_STAT_RECEIVED_RIBBONS
 	setflag FLAG_SYS_RIBBON_GET
 	special BufferContestWinnerMonName
-	applymovement LOCALID_CONTEST_LOBBY_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_LinkArtistBeginExit
+	applymovement LOCALID_CONTEST_LOBBY_LINK_ARTIST, LilycoveCity_ContestLobby_Movement_LinkArtistBeginExit
 	waitmovement 0
 	playse SE_PIN
-	applymovement LOCALID_CONTEST_LOBBY_ARTIST_LINK, Common_Movement_ExclamationMark
+	applymovement LOCALID_CONTEST_LOBBY_LINK_ARTIST, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_CONTEST_LOBBY_ARTIST_LINK, LilycoveCity_ContestLobby_Movement_LinkArtistReturnToPlayer
+	applymovement LOCALID_CONTEST_LOBBY_LINK_ARTIST, LilycoveCity_ContestLobby_Movement_LinkArtistReturnToPlayer
 	waitmovement 0
 	msgbox LilycoveCity_ContestLobby_Text_TakeMementoOfPainting, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM

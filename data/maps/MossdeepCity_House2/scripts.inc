@@ -1,7 +1,7 @@
 # 1 "data/maps/MossdeepCity_House2/scripts.pory"
 
 # 2 "data/maps/MossdeepCity_House2/scripts.pory"
-.set LOCALID_WINGULL, 3
+//.set LOCALID_MOSSDEEP_HOUSE_WINGULL, 3
 # 3 "data/maps/MossdeepCity_House2/scripts.pory"
 
 # 4 "data/maps/MossdeepCity_House2/scripts.pory"
@@ -51,7 +51,7 @@ MossdeepCity_House2_EventScript_Wingull::
 # 26 "data/maps/MossdeepCity_House2/scripts.pory"
 	call_if_eq VAR_FACING, DIR_WEST, MossdeepCity_House2_EventScript_WingullExitWest
 # 27 "data/maps/MossdeepCity_House2/scripts.pory"
-	removeobject LOCALID_WINGULL
+	removeobject LOCALID_MOSSDEEP_HOUSE_WINGULL
 # 28 "data/maps/MossdeepCity_House2/scripts.pory"
 	release
 # 29 "data/maps/MossdeepCity_House2/scripts.pory"
@@ -61,7 +61,7 @@ MossdeepCity_House2_EventScript_Wingull::
 # 31 "data/maps/MossdeepCity_House2/scripts.pory"
 MossdeepCity_House2_EventScript_WingullExitNorth::
 # 32 "data/maps/MossdeepCity_House2/scripts.pory"
-	applymovement LOCALID_WINGULL, MossdeepCity_House2_Movement_WingullExitNorth
+	applymovement LOCALID_MOSSDEEP_HOUSE_WINGULL, MossdeepCity_House2_Movement_WingullExitNorth
 # 33 "data/maps/MossdeepCity_House2/scripts.pory"
 	waitmovement 0
 # 34 "data/maps/MossdeepCity_House2/scripts.pory"
@@ -71,7 +71,7 @@ MossdeepCity_House2_EventScript_WingullExitNorth::
 # 36 "data/maps/MossdeepCity_House2/scripts.pory"
 MossdeepCity_House2_EventScript_WingullExitWest::
 # 37 "data/maps/MossdeepCity_House2/scripts.pory"
-	applymovement LOCALID_WINGULL, MossdeepCity_House2_Movement_WingullExitEast
+	applymovement LOCALID_MOSSDEEP_HOUSE_WINGULL, MossdeepCity_House2_Movement_WingullExitEast
 # 38 "data/maps/MossdeepCity_House2/scripts.pory"
 	waitmovement 0
 # 39 "data/maps/MossdeepCity_House2/scripts.pory"

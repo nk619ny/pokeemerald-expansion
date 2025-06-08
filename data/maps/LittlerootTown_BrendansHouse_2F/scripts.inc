@@ -1,7 +1,7 @@
 # 1 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 
 # 2 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-.set LOCALID_RIVAL, 1
+//.set LOCALID_RIVALS_HOUSE_2F_RIVAL, 1
 # 3 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 
 # 4 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -51,9 +51,9 @@ LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos::
 # 26 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	//goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_Ret
 # 27 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setobjectxyperm LOCALID_RIVAL, 0, 2
+	setobjectxyperm LOCALID_RIVALS_HOUSE_2F_RIVAL, 0, 2
 # 28 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setobjectmovementtype LOCALID_RIVAL, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_RIVALS_HOUSE_2F_RIVAL, MOVEMENT_TYPE_FACE_UP
 # 29 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	return
 # 30 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -119,19 +119,19 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendan::
 # 60 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	delay 10
 # 61 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	addobject LOCALID_RIVAL
+	addobject LOCALID_RIVALS_HOUSE_2F_RIVAL
 # 62 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanEnters
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanEnters
 # 63 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 64 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	playse SE_PIN
 # 65 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, Common_Movement_ExclamationMark
 # 66 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 67 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, Common_Movement_Delay48
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, Common_Movement_Delay48
 # 68 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 69 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -167,7 +167,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendan::
 # 84 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanNorth::
 # 85 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerNorth
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerNorth
 # 86 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 87 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -181,7 +181,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanNorth::
 # 91 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_2F_Movement_PlayerWatchBrendanNorth
 # 92 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCNorth
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCNorth
 # 93 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 94 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -191,7 +191,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanNorth::
 # 96 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanSouth::
 # 97 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerSouth
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerSouth
 # 98 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 99 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -205,7 +205,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanSouth::
 # 103 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_2F_Movement_PlayerWatchBrendanSouth
 # 104 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCSouth
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCSouth
 # 105 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 106 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -215,7 +215,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanSouth::
 # 108 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanWest::
 # 109 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerWest
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerWest
 # 110 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 111 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -229,7 +229,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanWest::
 # 115 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_2F_Movement_PlayerWatchBrendanWest
 # 116 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCWest
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCWest
 # 117 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 118 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -239,7 +239,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanWest::
 # 120 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanEast::
 # 121 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerEast
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanApproachPlayerEast
 # 122 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 123 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -251,7 +251,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanEast::
 # 126 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	closemessage
 # 127 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCEast
+	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCEast
 # 128 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
 # 129 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"

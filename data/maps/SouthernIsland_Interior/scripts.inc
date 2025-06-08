@@ -1,7 +1,7 @@
 # 1 "data/maps/SouthernIsland_Interior/scripts.pory"
 
 # 2 "data/maps/SouthernIsland_Interior/scripts.pory"
-.set LOCALID_LATI, 2
+//.set LOCALID_SOUTHERN_ISLAND_LATI, 2
 # 3 "data/maps/SouthernIsland_Interior/scripts.pory"
 
 # 4 "data/maps/SouthernIsland_Interior/scripts.pory"
@@ -29,7 +29,7 @@ SouthernIsland_Interior_EventScript_TryRemoveLati::
 # 15 "data/maps/SouthernIsland_Interior/scripts.pory"
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 # 16 "data/maps/SouthernIsland_Interior/scripts.pory"
-	removeobject LOCALID_LATI
+	removeobject LOCALID_SOUTHERN_ISLAND_LATI
 # 17 "data/maps/SouthernIsland_Interior/scripts.pory"
 	return
 # 18 "data/maps/SouthernIsland_Interior/scripts.pory"
@@ -137,13 +137,13 @@ SouthernIsland_Interior_EventScript_Lati::
 # 69 "data/maps/SouthernIsland_Interior/scripts.pory"
 	waitmoncry
 # 70 "data/maps/SouthernIsland_Interior/scripts.pory"
-	addobject LOCALID_LATI
+	addobject LOCALID_SOUTHERN_ISLAND_LATI
 # 71 "data/maps/SouthernIsland_Interior/scripts.pory"
 	delay 30
 # 72 "data/maps/SouthernIsland_Interior/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, SouthernIsland_Interior_Movement_CameraPanDown
 # 73 "data/maps/SouthernIsland_Interior/scripts.pory"
-	applymovement LOCALID_LATI, SouthernIsland_Interior_Movement_LatiApproach
+	applymovement LOCALID_SOUTHERN_ISLAND_LATI, SouthernIsland_Interior_Movement_LatiApproach
 # 74 "data/maps/SouthernIsland_Interior/scripts.pory"
 	waitmovement 0
 # 75 "data/maps/SouthernIsland_Interior/scripts.pory"
@@ -151,7 +151,7 @@ SouthernIsland_Interior_EventScript_Lati::
 # 76 "data/maps/SouthernIsland_Interior/scripts.pory"
 	special RemoveCameraObject
 # 77 "data/maps/SouthernIsland_Interior/scripts.pory"
-	setvar VAR_LAST_TALKED, LOCALID_LATI
+	setvar VAR_LAST_TALKED, LOCALID_SOUTHERN_ISLAND_LATI
 # 78 "data/maps/SouthernIsland_Interior/scripts.pory"
 	call_if_eq VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetLatiosBattleVars
 # 79 "data/maps/SouthernIsland_Interior/scripts.pory"

@@ -1,7 +1,7 @@
 # 1 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 
 # 2 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-.set LOCALID_CURATOR, 1
+//.set LOCALID_MUSEUM_2F_CURATOR, 1
 # 3 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 
 # 4 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
@@ -133,7 +133,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ShowExhibitHall::
 # 67 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	lockall
 # 68 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	applymovement LOCALID_CURATOR, Common_Movement_FacePlayer
+	applymovement LOCALID_MUSEUM_2F_CURATOR, Common_Movement_FacePlayer
 # 69 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, LilycoveCity_LilycoveMuseum_2F_Movement_PlayerWalkInPlaceLeft
 # 70 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
@@ -141,7 +141,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ShowExhibitHall::
 # 71 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ThisIsExhibitHall, MSGBOX_SIGN
 # 72 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	applymovement LOCALID_CURATOR, LilycoveCity_LilycoveMuseum_2F_Movement_FaceExhibitHall
+	applymovement LOCALID_MUSEUM_2F_CURATOR, LilycoveCity_LilycoveMuseum_2F_Movement_FaceExhibitHall
 # 73 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	waitmovement 0
 # 74 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
@@ -151,7 +151,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ShowExhibitHall::
 # 76 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall, MSGBOX_SIGN
 # 77 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	applymovement LOCALID_CURATOR, Common_Movement_FacePlayer
+	applymovement LOCALID_MUSEUM_2F_CURATOR, Common_Movement_FacePlayer
 # 78 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	waitmovement 0
 # 79 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
@@ -223,13 +223,13 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_AddedPainting::
 # 112 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 LilycoveCity_LilycoveMuseum_2F_EventScript_ThankPlayer::
 # 113 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	applymovement LOCALID_CURATOR, Common_Movement_FacePlayer
+	applymovement LOCALID_MUSEUM_2F_CURATOR, Common_Movement_FacePlayer
 # 114 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	waitmovement 0
 # 115 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ItsYouPlayer, MSGBOX_DEFAULT
 # 116 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	applymovement LOCALID_CURATOR, LilycoveCity_LilycoveMuseum_2F_Movement_FaceExhibitHall
+	applymovement LOCALID_MUSEUM_2F_CURATOR, LilycoveCity_LilycoveMuseum_2F_Movement_FaceExhibitHall
 # 117 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_PaintingsAttractedMoreGuests, MSGBOX_DEFAULT
 # 118 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
@@ -241,7 +241,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ThankPlayer::
 # 121 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 LilycoveCity_LilycoveMuseum_2F_EventScript_GiveGlassOrnament::
 # 122 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	applymovement LOCALID_CURATOR, Common_Movement_FacePlayer
+	applymovement LOCALID_MUSEUM_2F_CURATOR, Common_Movement_FacePlayer
 # 123 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_TokenOfGratitude, MSGBOX_DEFAULT
 # 124 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"

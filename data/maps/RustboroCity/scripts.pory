@@ -3,7 +3,7 @@ raw `
 //.set LOCALID_RUSTBORO_LITTLE_GIRL, 8
 //.set LOCALID_RUSTBORO_DEVON_EMPLOYEE, 9
 //.set LOCALID_RUSTBORO_GRUNT, 10
-.set LOCALID_RUSTBORO_RIVAL, 12
+//.set LOCALID_RUSTBORO_RIVAL, 12
 //.set LOCALID_RUSTBORO_SCIENTIST, 13
 
 RustboroCity_MapScripts::
@@ -320,6 +320,7 @@ RustboroCity_EventScript_StolenGoodsScene::
 	releaseall
 	end */
 
+/*
 @ Unused
 RustboroCity_EventScript_ShadyCharacterTookOff::
 	msgbox RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel, MSGBOX_DEFAULT
@@ -361,7 +362,7 @@ RustboroCity_EventScript_EmployeeApproachPlayerFar::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	return
-
+*/
 @ Unused
 RustboroCity_Movement_GruntEscapeExtended:
 	walk_faster_right
