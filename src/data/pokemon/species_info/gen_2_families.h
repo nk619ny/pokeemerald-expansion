@@ -4246,12 +4246,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_MISMAGIUS] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 60,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 105,
-        .baseSpDefense = 105,
+        .baseHP        = 60 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 5 : 0),
+        .baseAttack    = 60 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 5 : 0),
+        .baseDefense   = 60 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 5 : 0),
+        .baseSpeed     = 105 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 5 : 0),
+        .baseSpAttack  = 105 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 5 : 0),
+        .baseSpDefense = 105 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 5 : 0),
         .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 173 : 187,
