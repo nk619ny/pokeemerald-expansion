@@ -549,11 +549,11 @@ script RusturfTunnel_EventScript_WandasBoyfriend {
 script RusturfTunnel_EventScript_ClearOutAqua{
 	setflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
 	clearflag(FLAG_HIDE_MAUVILLE_CITY_WALLY)
-	fadescreen(FADE_TO_BLACK)
+	fadescreenswapbuffers(FADE_TO_BLACK)
 	removeobject(LOCALID_RUSTURF_TUNNEL_AQUAADMIN)
 	removeobject(LOCALID_RUSTURF_TUNNEL_GRUNT1)
 	removeobject(LOCALID_RUSTURF_TUNNEL_GRUNT2)
-	fadescreen(FADE_FROM_BLACK)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
 	releaseall
 	end
 }

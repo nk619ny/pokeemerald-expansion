@@ -705,9 +705,9 @@ Common_EventScript_ShowPokemonCenterSign::
 	end
 
 Common_ShowEasyChatScreen::
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	special ShowEasyChatScreen
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	return
 
 Common_EventScript_ReadyPetalburgGymForBattle::
@@ -775,7 +775,7 @@ Common_EventScript_OutOfCenterPartyHeal::
 EventScript_RegionMap::
 	lockall
 	msgbox Common_Text_LookCloserAtMap, MSGBOX_DEFAULT
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	special FieldShowRegionMap
 	waitstate
 	releaseall
@@ -858,7 +858,7 @@ Common_EventScript_FerryDepartIsland::
 	.include "data/scripts/kecleon.inc"
 
 Common_EventScript_NameReceivedPartyMon::
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	special ChangePokemonNickname
 	waitstate
 	return

@@ -433,7 +433,7 @@ TrainerHill_Entrance_EventScript_Records::
 # 217 "data/maps/TrainerHill_Entrance/scripts.pory"
 	lockall
 # 218 "data/maps/TrainerHill_Entrance/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 219 "data/maps/TrainerHill_Entrance/scripts.pory"
 	special ShowTrainerHillRecords
 # 220 "data/maps/TrainerHill_Entrance/scripts.pory"

@@ -32,13 +32,13 @@ GlacierPath_EventScript_TabithaDefeated::
 # 21 "data/maps/GlacierPath/scripts.pory"
 	delay 20
 # 22 "data/maps/GlacierPath/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 23 "data/maps/GlacierPath/scripts.pory"
 	removeobject 1
 # 24 "data/maps/GlacierPath/scripts.pory"
 	delay 40
 # 25 "data/maps/GlacierPath/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 26 "data/maps/GlacierPath/scripts.pory"
 	delay 20
 # 27 "data/maps/GlacierPath/scripts.pory"

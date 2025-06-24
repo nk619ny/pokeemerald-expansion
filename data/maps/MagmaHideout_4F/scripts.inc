@@ -203,7 +203,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 102 "data/maps/MagmaHideout_4F/scripts.pory"
 	//setvar VAR_SLATEPORT_HARBOR_STATE, 1
 # 103 "data/maps/MagmaHideout_4F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 104 "data/maps/MagmaHideout_4F/scripts.pory"
 	removeobject LOCALID_MAGMA_HIDEOUT_4F_MAXIE
 # 105 "data/maps/MagmaHideout_4F/scripts.pory"
@@ -217,7 +217,7 @@ MagmaHideout_4F_EventScript_Maxie::
 # 109 "data/maps/MagmaHideout_4F/scripts.pory"
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 # 110 "data/maps/MagmaHideout_4F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 111 "data/maps/MagmaHideout_4F/scripts.pory"
 	
 # 112 "data/maps/MagmaHideout_4F/scripts.pory"

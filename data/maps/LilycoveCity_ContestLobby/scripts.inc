@@ -99,7 +99,7 @@ LilycoveCity_ContestLobby_EventScript_ContestArtist::
 # 50 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	lockall
 # 51 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 52 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	showcontestpainting CONTEST_WINNER_ARTIST
 # 53 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -439,7 +439,7 @@ LilycoveCity_ContestLobby_EventScript_LinkContestArtist::
 # 220 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	lockall
 # 221 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 222 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	showcontestpainting CONTEST_WINNER_ARTIST
 # 223 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1005,7 +1005,7 @@ LilycoveCity_ContestLobby_EventScript_ContestWinner1::
 # 503 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	lockall
 # 504 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 505 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	showcontestpainting CONTEST_WINNER_HALL_1
 # 506 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1019,7 +1019,7 @@ LilycoveCity_ContestLobby_EventScript_ContestWinner2::
 # 510 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	lockall
 # 511 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 512 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	showcontestpainting CONTEST_WINNER_HALL_2
 # 513 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1033,7 +1033,7 @@ LilycoveCity_ContestLobby_EventScript_ContestWinner3::
 # 517 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	lockall
 # 518 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 519 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	showcontestpainting CONTEST_WINNER_HALL_3
 # 520 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1047,7 +1047,7 @@ LilycoveCity_ContestLobby_EventScript_ContestWinner4::
 # 524 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	lockall
 # 525 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 526 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	showcontestpainting CONTEST_WINNER_HALL_4
 # 527 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1061,7 +1061,7 @@ LilycoveCity_ContestLobby_EventScript_ContestWinner5::
 # 531 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	lockall
 # 532 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 533 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	showcontestpainting CONTEST_WINNER_HALL_5
 # 534 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
@@ -1075,7 +1075,7 @@ LilycoveCity_ContestLobby_EventScript_ContestWinner6::
 # 538 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	lockall
 # 539 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 540 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	showcontestpainting CONTEST_WINNER_HALL_6
 # 541 "data/maps/LilycoveCity_ContestLobby/scripts.pory"

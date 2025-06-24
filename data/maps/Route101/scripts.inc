@@ -459,7 +459,7 @@ Route101_EventScript_BirchsBag::
 # 230 "data/maps/Route101/scripts.pory"
 	setflag FLAG_RESCUED_BIRCH
 # 231 "data/maps/Route101/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 232 "data/maps/Route101/scripts.pory"
 	removeobject LOCALID_ROUTE101_ZIGZAGOON
 # 233 "data/maps/Route101/scripts.pory"

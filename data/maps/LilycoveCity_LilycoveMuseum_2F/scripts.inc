@@ -371,7 +371,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ShowCoolPainting::
 # 186 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon, MSGBOX_SIGN
 # 187 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 188 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	showcontestpainting CONTEST_WINNER_MUSEUM_COOL
 # 189 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
@@ -385,7 +385,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ShowBeautyPainting::
 # 193 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon, MSGBOX_SIGN
 # 194 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 195 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	showcontestpainting CONTEST_WINNER_MUSEUM_BEAUTY
 # 196 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
@@ -399,7 +399,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ShowCutePainting::
 # 200 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon, MSGBOX_SIGN
 # 201 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 202 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	showcontestpainting CONTEST_WINNER_MUSEUM_CUTE
 # 203 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
@@ -413,7 +413,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ShowSmartPainting::
 # 207 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon, MSGBOX_SIGN
 # 208 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 209 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	showcontestpainting CONTEST_WINNER_MUSEUM_SMART
 # 210 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
@@ -427,7 +427,7 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ShowToughPainting::
 # 214 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon, MSGBOX_SIGN
 # 215 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 216 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	showcontestpainting CONTEST_WINNER_MUSEUM_TOUGH
 # 217 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"

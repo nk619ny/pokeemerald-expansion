@@ -19,10 +19,10 @@ script GlacierPath_EventScript_TabithaDefeated {
     msgbox(GlacierPath_Text_TabithaOutro)
     waitmessage
     delay(20)
-    fadescreen(FADE_TO_BLACK)
+    fadescreenswapbuffers(FADE_TO_BLACK)
 	removeobject(LOCALID_TABITHA)
     delay(40)
-	fadescreen(FADE_FROM_BLACK)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
     delay(20)
     setvar(VAR_LEVEL_CAP,43)
     call(Common_EventScript_ApplyHandicap)

@@ -64,7 +64,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_AcceptFavor::
 	end
 
 LilycoveCity_PokemonCenter_1F_EventScript_ChooseFavorItem::
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	setvar VAR_RESULT, 0
 	special Script_FavorLadyOpenBagMenu
 	waitstate
@@ -284,7 +284,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_DeclineMakeQuiz::
 LilycoveCity_PokemonCenter_1F_EventScript_MakeQuiz::
 	msgbox LilycoveCity_PokemonCenter_1F_Text_PickYourPrize, MSGBOX_DEFAULT
 LilycoveCity_PokemonCenter_1F_EventScript_PickPrize::
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	setvar VAR_RESULT, 0
 	special Script_QuizLadyOpenBagMenu
 	waitstate
@@ -304,7 +304,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_WriteQuiz::
 	special ClearQuizLadyPlayerAnswer
 	setvar VAR_0x8004, EASY_CHAT_TYPE_QUIZ_QUESTION
 LilycoveCity_PokemonCenter_1F_EventScript_WriteQuizQuestion::
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	special QuizLadySetCustomQuestion
 	waitstate
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_PokemonCenter_1F_EventScript_AskQuitWritingQuizQuestion
@@ -362,7 +362,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_DeclineGivePokeblock::
 	end
 
 LilycoveCity_PokemonCenter_1F_EventScript_ChoosePokeblock::
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	special OpenPokeblockCaseForContestLady
 	waitstate
 	goto_if_eq VAR_RESULT, 0xFFFF, LilycoveCity_PokemonCenter_1F_EventScript_AskQuitGivingPokeblock

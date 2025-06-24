@@ -117,7 +117,7 @@ SlateportCity_OceanicMuseum_2F_MapScripts::
 # 59 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	fadedefaultbgm
 # 60 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 61 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	removeobject LOCALID_OCEANIC_MUSEUM_2F_ARCHIE
 # 62 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -125,7 +125,7 @@ SlateportCity_OceanicMuseum_2F_MapScripts::
 # 63 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	removeobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2
 # 64 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 65 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	delay 30
 # 66 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -145,7 +145,7 @@ SlateportCity_OceanicMuseum_2F_MapScripts::
 # 73 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	closemessage
 # 74 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 75 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	playfanfare MUS_HEAL
 # 76 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
@@ -169,7 +169,7 @@ SlateportCity_OceanicMuseum_2F_MapScripts::
 # 85 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1
 # 86 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 87 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	release
 # 88 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"

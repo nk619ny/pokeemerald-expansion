@@ -379,13 +379,13 @@ Route113_GlassWorkshop_EventScript_MakeGlassItem::
 # 190 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	closemessage
 # 191 "data/maps/Route113_GlassWorkshop/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 192 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	playse SE_SELECT
 # 193 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	delay 30
 # 194 "data/maps/Route113_GlassWorkshop/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 195 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	msgbox Route113_GlassWorkshop_Text_IveFinishedGlassItem, MSGBOX_DEFAULT
 # 196 "data/maps/Route113_GlassWorkshop/scripts.pory"

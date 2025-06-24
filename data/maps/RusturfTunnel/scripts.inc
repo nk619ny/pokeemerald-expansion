@@ -1081,7 +1081,7 @@ RusturfTunnel_EventScript_ClearOutAqua::
 # 551 "data/maps/RusturfTunnel/scripts.pory"
 	clearflag FLAG_HIDE_MAUVILLE_CITY_WALLY
 # 552 "data/maps/RusturfTunnel/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 553 "data/maps/RusturfTunnel/scripts.pory"
 	removeobject 9
 # 554 "data/maps/RusturfTunnel/scripts.pory"
@@ -1089,7 +1089,7 @@ RusturfTunnel_EventScript_ClearOutAqua::
 # 555 "data/maps/RusturfTunnel/scripts.pory"
 	removeobject 12
 # 556 "data/maps/RusturfTunnel/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 557 "data/maps/RusturfTunnel/scripts.pory"
 	releaseall
 	end

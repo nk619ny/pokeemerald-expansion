@@ -85,7 +85,7 @@ Apprentice_EventScript_UseWhatHeldItem:
 	apprentice_msg TRUE, APPRENTICE_MSG_WHAT_HELD_ITEM
 	apprentice_freequestion
 Apprentice_EventScript_ChooseHoldItem:
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	setvar VAR_RESULT, 0
 	apprentice_openbag
 	goto_if_eq VAR_RESULT, FALSE, Apprentice_EventScript_ConfirmHoldNothing

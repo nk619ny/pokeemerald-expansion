@@ -133,7 +133,7 @@ Route119_WeatherInstitute_2F_EventScript_ArchieDefeated::
 # 67 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	fadedefaultbgm
 # 68 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 69 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_119_TEAM_AQUA
 # 70 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -155,7 +155,7 @@ Route119_WeatherInstitute_2F_EventScript_ArchieDefeated::
 # 78 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	waitmovement 0
 # 79 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 80 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	applymovement LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, Route119_WeatherInstitute_2F_Movement_ScientistApproachPlayer
 # 81 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"

@@ -485,7 +485,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle::
 # 243 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	special SavePlayerParty
 # 244 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 245 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	special ChooseHalfPartyForBattle
 # 246 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -507,7 +507,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
 # 254 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	case 1, MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha
 # 255 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 256 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	special SetCB2WhiteOut
 # 257 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -547,7 +547,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 # 274 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	fadedefaultbgm
 # 275 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 276 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 3
 # 277 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -581,13 +581,13 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 # 291 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	call MossdeepCity_SpaceCenter_2F_EventScript_StevenFacePlayer
 # 292 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 293 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome, MSGBOX_DEFAULT
 # 294 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	closemessage
 # 295 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 296 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	setflag FLAG_DEFEATED_MAGMA_SPACE_CENTER
 # 297 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -611,7 +611,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 # 306 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	addobject LOCALID_SPACE_CENTER_2F_SCIENTIST
 # 307 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 308 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 #ifdef BUGFIX
 # 309 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"

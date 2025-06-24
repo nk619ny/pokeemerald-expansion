@@ -306,29 +306,35 @@ MauvilleCity_EventScript_Temporary::
 	giveitem ITEM_IRON, 30
 # 175 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_VISITED_RUSTBORO_CITY
-# 187 "data/maps/TradeCenter/scripts.pory"
+# 177 "data/maps/TradeCenter/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 178 "data/maps/TradeCenter/scripts.pory"
+	delay 40
+# 179 "data/maps/TradeCenter/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 191 "data/maps/TradeCenter/scripts.pory"
 	waitmessage
-# 188 "data/maps/TradeCenter/scripts.pory"
+# 192 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 189 "data/maps/TradeCenter/scripts.pory"
+# 193 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 Common_EventScript_HideGym0OptionalRewards::
-# 194 "data/maps/TradeCenter/scripts.pory"
+# 198 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_102_POTION
-# 195 "data/maps/TradeCenter/scripts.pory"
+# 199 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_104_POTION
-# 196 "data/maps/TradeCenter/scripts.pory"
+# 200 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_104_X_ACCURACY
-# 197 "data/maps/TradeCenter/scripts.pory"
+# 201 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_104_NORTH_NEW
 	return
 
 
 Common_EventScript_HideGym1OptionalRewards::
-# 202 "data/maps/TradeCenter/scripts.pory"
+# 206 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_6_SODA_POP
 	return
 

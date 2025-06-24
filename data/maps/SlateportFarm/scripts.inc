@@ -363,7 +363,7 @@ SlateportFarm_EventScript_AquaVictory::
 # 207 "data/maps/SlateportFarm/scripts.pory"
 	setflag FLAG_SLATEPORT_BAY_FLOODED
 # 208 "data/maps/SlateportFarm/scripts.pory"
-	fadescreen FADE_TO_WHITE
+	fadescreenswapbuffers FADE_TO_WHITE
 # 209 "data/maps/SlateportFarm/scripts.pory"
 	waitstate
 # 210 "data/maps/SlateportFarm/scripts.pory"
@@ -373,7 +373,7 @@ SlateportFarm_EventScript_AquaVictory::
 # 212 "data/maps/SlateportFarm/scripts.pory"
 	warp MAP_SLATEPORT_CITY_FARM_CORRIDOR, 8, 4
 # 213 "data/maps/SlateportFarm/scripts.pory"
-	fadescreen FADE_FROM_WHITE
+	fadescreenswapbuffers FADE_FROM_WHITE
 # 214 "data/maps/SlateportFarm/scripts.pory"
 	waitstate
 # 215 "data/maps/SlateportFarm/scripts.pory"

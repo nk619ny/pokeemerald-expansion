@@ -261,7 +261,7 @@ VerdanturfTown_BattleTentLobby_EventScript_TryEnterChallenge::
 # 131 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	msgbox VerdanturfTown_BattleTentLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 # 132 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 133 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	setvar VAR_0x8004, 1
 # 134 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"

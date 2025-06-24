@@ -6,7 +6,7 @@ Common_EventScript_GetGiftMonPartySlot::
 	return
 
 Common_EventScript_NameReceivedBoxMon::
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	special ChangeBoxPokemonNickname
 	waitstate
 	lock

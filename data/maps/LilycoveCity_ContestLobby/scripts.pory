@@ -48,7 +48,7 @@ LilycoveCity_ContestLobby_EventScript_ContestArtist::
 	waitmovement 0
 	msgbox LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint, MSGBOX_DEFAULT
 	lockall
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	showcontestpainting CONTEST_WINNER_ARTIST
 	lockall
 	msgbox LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum, MSGBOX_YESNO
@@ -218,7 +218,7 @@ LilycoveCity_ContestLobby_EventScript_LinkContestArtist::
 	waitmovement 0
 	msgbox LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint, MSGBOX_DEFAULT
 	lockall
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	showcontestpainting CONTEST_WINNER_ARTIST
 	msgbox LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, LilycoveCity_ContestLobby_EventScript_TakePaintingToMuseumLink
@@ -501,42 +501,42 @@ LilycoveCity_ContestLobby_EventScript_NinjaBoy::
 
 LilycoveCity_ContestLobby_EventScript_ContestWinner1::
 	lockall
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	showcontestpainting CONTEST_WINNER_HALL_1
 	releaseall
 	end
 
 LilycoveCity_ContestLobby_EventScript_ContestWinner2::
 	lockall
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	showcontestpainting CONTEST_WINNER_HALL_2
 	releaseall
 	end
 
 LilycoveCity_ContestLobby_EventScript_ContestWinner3::
 	lockall
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	showcontestpainting CONTEST_WINNER_HALL_3
 	releaseall
 	end
 
 LilycoveCity_ContestLobby_EventScript_ContestWinner4::
 	lockall
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	showcontestpainting CONTEST_WINNER_HALL_4
 	releaseall
 	end
 
 LilycoveCity_ContestLobby_EventScript_ContestWinner5::
 	lockall
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	showcontestpainting CONTEST_WINNER_HALL_5
 	releaseall
 	end
 
 LilycoveCity_ContestLobby_EventScript_ContestWinner6::
 	lockall
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	showcontestpainting CONTEST_WINNER_HALL_6
 	releaseall
 	end
