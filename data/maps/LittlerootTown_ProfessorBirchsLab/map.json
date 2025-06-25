@@ -12,7 +12,7 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_BIRCHS_LAB_AIDE",
@@ -57,7 +57,7 @@
       "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL"
     },
     {
-      "local_id": "LOCALID_BIRCHS_LAB_CYNDAQUIL_BALL",
+      "local_id": "LOCALID_BIRCHS_LAB_GRASS_STARTER_BALL",
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 5,
       "y": 3,
@@ -71,6 +71,7 @@
       "flag": "FLAG_REMOVE_LAB_STARTERS"
     },
     {
+      "local_id": "LOCALID_BIRCHS_LAB_FIRE_STARTER_BALL",
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 6,
       "y": 3,
@@ -84,7 +85,7 @@
       "flag": "FLAG_REMOVE_LAB_STARTERS"
     },
     {
-      "local_id": "LOCALID_BIRCHS_LAB_TOTODILE_BALL",
+      "local_id": "LOCALID_BIRCHS_LAB_WATER_STARTER_BALL",
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 7,
       "y": 3,
@@ -128,9 +129,7 @@
       "dest_warp_id": "2"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

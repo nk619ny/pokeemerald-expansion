@@ -2058,1776 +2058,1815 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … Click!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen::
-# 1048 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1043 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lock
-# 1049 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1044 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	faceplayer
-# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1045 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto_if_unset FLAG_REMOVE_LAB_STARTERS, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_2
-# 1064 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1059 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_13
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_1:
-# 1066 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1061 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_2:
-# 1051 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1046 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_8, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_6
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_5:
-# 1054 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1049 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	message LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_1
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultichoice 25, 3, 1, 4, 2, DYN_MULTICHOICE_CB_NONE, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_2, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_3, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_5, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_6, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_7, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_8, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_9, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_10, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_11
-# 1056 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1051 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_8, VAR_RESULT
-# 1057 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1052 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_8, 1
-# 1058 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1053 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	closemessage
-# 1059 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1054 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_12
-# 1060 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1061 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1056 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_6:
-# 1052 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1047 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_0
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_5
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter::
-# 1072 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1067 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lockall
-# 1073 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1068 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	switch VAR_FACING
+# 1069 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case DIR_EAST, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_3
+# 1070 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case DIR_WEST, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_3
+# 1071 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case DIR_SOUTH, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_3
+# 1077 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_TEMP_7, NO
-# 1074 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1078 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	switch VAR_TEMP_8
-# 1075 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_3
-# 1080 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
-# 1087 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_5
-# 1094 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_6
-# 1101 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_7
-# 1108 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_8
-# 1115 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_9
-# 1122 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_10
-# 1129 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_11
-# 1136 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_12
-# 1143 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_13
-# 1151 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1079 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_6
+# 1084 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_7
+# 1091 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_8
+# 1098 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_9
+# 1105 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_10
+# 1112 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_11
+# 1119 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_12
+# 1126 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_13
+# 1133 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_14
+# 1140 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_15
+# 1147 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_16
+# 1155 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0
-# 1152 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1156 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1153 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1157 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	return
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1:
-# 1156 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_16
-# 1173 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	hidemonpic
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_15:
-# 1175 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitmessage
-# 1176 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_3:
+# 1072 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_3:
-# 1076 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0
-# 1077 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4:
+# 1160 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_19
+# 1177 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	hidemonpic
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_18:
+# 1179 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1078 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1180 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	releaseall
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_6:
+# 1080 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0
+# 1081 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	waitmessage
+# 1082 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	return
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4:
-# 1081 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_BULBASAUR, 10, 3
-# 1082 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_1, MSGBOX_YESNO
-# 1083 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1084 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_19
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_5:
-# 1088 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_CHIKORITA, 10, 3
-# 1089 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_3, MSGBOX_YESNO
-# 1090 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1091 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_21
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_6:
-# 1095 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_TREECKO, 10, 3
-# 1096 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_5, MSGBOX_YESNO
-# 1097 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1098 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_23
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
-
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_7:
-# 1102 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_TURTWIG, 10, 3
-# 1103 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_7, MSGBOX_YESNO
-# 1104 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1085 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_BULBASAUR, 10, 3
+# 1086 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_1, MSGBOX_YESNO
+# 1087 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1105 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1088 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_25
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_22
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_8:
-# 1109 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_SNIVY, 10, 3
-# 1110 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_9, MSGBOX_YESNO
-# 1111 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1092 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_CHIKORITA, 10, 3
+# 1093 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_3, MSGBOX_YESNO
+# 1094 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1112 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1095 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_27
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_24
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_9:
-# 1116 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_CHESPIN, 10, 3
-# 1117 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_11, MSGBOX_YESNO
-# 1118 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1099 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_TREECKO, 10, 3
+# 1100 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_5, MSGBOX_YESNO
+# 1101 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1119 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1102 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_29
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_26
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_10:
-# 1123 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_ROWLET, 10, 3
-# 1124 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_13, MSGBOX_YESNO
-# 1125 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1106 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_TURTWIG, 10, 3
+# 1107 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_7, MSGBOX_YESNO
+# 1108 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1126 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1109 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_31
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_28
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_11:
-# 1130 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_GROOKEY, 10, 3
-# 1131 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_15, MSGBOX_YESNO
-# 1132 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1113 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_SNIVY, 10, 3
+# 1114 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_9, MSGBOX_YESNO
+# 1115 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1133 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1116 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_33
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_30
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_12:
-# 1137 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_SPRIGATITO, 10, 3
-# 1138 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_17, MSGBOX_YESNO
-# 1139 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1120 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_CHESPIN, 10, 3
+# 1121 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_11, MSGBOX_YESNO
+# 1122 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1140 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1123 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_35
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_32
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_13:
-# 1144 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_ROWLET_HISUI, 10, 3
-# 1145 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1127 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_ROWLET, 10, 3
+# 1128 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_13, MSGBOX_YESNO
-# 1146 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1129 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1147 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1130 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_37
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_34
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_14:
+# 1134 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_GROOKEY, 10, 3
+# 1135 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_15, MSGBOX_YESNO
+# 1136 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1137 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_36
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_15:
+# 1141 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_SPRIGATITO, 10, 3
+# 1142 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_17, MSGBOX_YESNO
+# 1143 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1144 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_38
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_16:
-# 1157 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 1158 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	hidemonpic
-# 1159 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	removeobject 7
-# 1160 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	removeobject 8
-# 1161 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	removeobject 9
-# 1162 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_REMOVE_LAB_STARTERS
-# 1163 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	call NicknamePartyMon
-# 1164 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_STARTER_MON, 0
-# 1165 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
-# 1166 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	delay 20
-# 1167 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	applymovement 10, BirchApproachGivePokedex_GrassStarter
-# 1168 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitmovement 0
-# 1169 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-# 1170 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	call ProfessorBirchsLab_EventScript_RevisedIntroSequence
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_15
+# 1148 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_ROWLET_HISUI, 10, 3
+# 1149 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_13, MSGBOX_YESNO
+# 1150 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1151 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_40
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_19:
-# 1085 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1161 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 1162 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	hidemonpic
+# 1163 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeobject LOCALID_BIRCHS_LAB_GRASS_STARTER_BALL
+# 1164 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeobject LOCALID_BIRCHS_LAB_FIRE_STARTER_BALL
+# 1165 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeobject LOCALID_BIRCHS_LAB_WATER_STARTER_BALL
+# 1166 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setflag FLAG_REMOVE_LAB_STARTERS
+# 1167 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	call NicknamePartyMon
+# 1168 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_STARTER_MON, 0
+# 1169 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1170 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	delay 20
+# 1171 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	applymovement LOCALID_BIRCHS_LAB_BIRCH, BirchApproachGivePokedex_GrassStarter
+# 1172 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	waitmovement 0
+# 1173 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+# 1174 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	call ProfessorBirchsLab_EventScript_RevisedIntroSequence
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_18
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_22:
+# 1089 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_BULBASAUR, 5
-# 1086 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1090 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_2
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_21:
-# 1092 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_24:
+# 1096 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_CHIKORITA, 5
-# 1093 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1097 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_4
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_23:
-# 1099 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_26:
+# 1103 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_TREECKO, 5
-# 1100 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1104 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_6
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_25:
-# 1106 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_28:
+# 1110 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_TURTWIG, 5
-# 1107 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1111 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_8
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_27:
-# 1113 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_30:
+# 1117 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_SNIVY, 5
-# 1114 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1118 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_10
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_29:
-# 1120 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_32:
+# 1124 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_CHESPIN, 5
-# 1121 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1125 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_12
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_31:
-# 1127 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_34:
+# 1131 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_ROWLET, 5
-# 1128 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1132 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_14
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_33:
-# 1134 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_36:
+# 1138 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_GROOKEY, 5
-# 1135 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1139 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_16
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_35:
-# 1141 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_38:
+# 1145 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_SPRIGATITO, 5
-# 1142 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1146 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_18
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_37:
-# 1148 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_40:
+# 1152 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_ROWLET_HISUI, 5
-# 1149 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1153 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_14
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_4
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter::
-# 1182 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1186 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lockall
-# 1183 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_TEMP_7, NO
-# 1184 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	switch VAR_TEMP_8
-# 1185 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_3
+# 1187 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	switch VAR_FACING
+# 1188 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case DIR_EAST, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_3
+# 1189 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case DIR_WEST, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_3
 # 1190 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+	case DIR_SOUTH, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_3
+# 1196 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_TEMP_7, NO
 # 1197 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_5
-# 1204 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_6
-# 1211 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_7
-# 1218 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_8
-# 1225 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_9
-# 1232 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_10
-# 1239 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_11
-# 1246 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_12
-# 1253 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_13
-# 1261 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	switch VAR_TEMP_8
+# 1198 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_6
+# 1203 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_7
+# 1210 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_8
+# 1217 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_9
+# 1224 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_10
+# 1231 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_11
+# 1238 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_12
+# 1245 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_13
+# 1252 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_14
+# 1259 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_15
+# 1266 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_16
+# 1274 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0
-# 1262 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1275 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1263 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1276 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	return
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1:
-# 1266 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_16
-# 1283 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	hidemonpic
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_15:
-# 1285 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitmessage
-# 1286 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_3:
+# 1191 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_3:
-# 1186 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0
-# 1187 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4:
+# 1279 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_19
+# 1296 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	hidemonpic
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_18:
+# 1298 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1188 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1299 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	releaseall
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_6:
+# 1199 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0
+# 1200 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	waitmessage
+# 1201 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	return
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4:
-# 1191 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_CHARMANDER, 10, 3
-# 1192 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_0, MSGBOX_YESNO
-# 1193 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1194 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_19
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_5:
-# 1198 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_CYNDAQUIL, 10, 3
-# 1199 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_2, MSGBOX_YESNO
-# 1200 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1201 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_21
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_6:
-# 1205 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_TORCHIC, 10, 3
-# 1206 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_4, MSGBOX_YESNO
-# 1207 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1208 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_23
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_7:
-# 1212 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_CHIMCHAR, 10, 3
-# 1213 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_6, MSGBOX_YESNO
-# 1214 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1204 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_CHARMANDER, 10, 3
+# 1205 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_0, MSGBOX_YESNO
+# 1206 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1215 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1207 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_25
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_22
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_8:
-# 1219 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_TEPIG, 10, 3
-# 1220 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_8, MSGBOX_YESNO
-# 1221 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1211 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_CYNDAQUIL, 10, 3
+# 1212 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_2, MSGBOX_YESNO
+# 1213 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1222 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1214 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_27
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_24
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_9:
-# 1226 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_FENNEKIN, 10, 3
-# 1227 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_10, MSGBOX_YESNO
-# 1228 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1218 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_TORCHIC, 10, 3
+# 1219 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_4, MSGBOX_YESNO
+# 1220 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1229 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1221 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_29
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_26
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_10:
-# 1233 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_LITTEN, 10, 3
-# 1234 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_12, MSGBOX_YESNO
-# 1235 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1225 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_CHIMCHAR, 10, 3
+# 1226 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_6, MSGBOX_YESNO
+# 1227 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1236 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1228 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_31
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_28
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_11:
-# 1240 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_SCORBUNNY, 10, 3
-# 1241 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_14, MSGBOX_YESNO
-# 1242 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1232 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_TEPIG, 10, 3
+# 1233 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_8, MSGBOX_YESNO
+# 1234 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1243 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1235 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_33
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_30
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_12:
-# 1247 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_FUECOCO, 10, 3
-# 1248 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_16, MSGBOX_YESNO
-# 1249 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1239 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_FENNEKIN, 10, 3
+# 1240 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_10, MSGBOX_YESNO
+# 1241 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1250 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1242 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_35
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_32
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_13:
-# 1254 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_CYNDAQUIL_HISUI, 10, 3
-# 1255 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_2, MSGBOX_YESNO
-# 1256 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1246 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_LITTEN, 10, 3
+# 1247 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_12, MSGBOX_YESNO
+# 1248 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_7, VAR_RESULT
-# 1257 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1249 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_37
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_34
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_14:
+# 1253 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_SCORBUNNY, 10, 3
+# 1254 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_14, MSGBOX_YESNO
+# 1255 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1256 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_36
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_15:
+# 1260 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_FUECOCO, 10, 3
+# 1261 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_16, MSGBOX_YESNO
+# 1262 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1263 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_38
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_16:
 # 1267 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	showmonpic SPECIES_CYNDAQUIL_HISUI, 10, 3
 # 1268 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	hidemonpic
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_2, MSGBOX_YESNO
 # 1269 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	removeobject 7
+	copyvar VAR_TEMP_7, VAR_RESULT
 # 1270 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	removeobject 8
-# 1271 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	removeobject 9
-# 1272 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_REMOVE_LAB_STARTERS
-# 1273 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	call NicknamePartyMon
-# 1274 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_STARTER_MON, 1
-# 1275 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
-# 1276 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	delay 20
-# 1277 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	applymovement 10, BirchApproachGivePokedex_FireStarter
-# 1278 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitmovement 0
-# 1279 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-# 1280 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	call ProfessorBirchsLab_EventScript_RevisedIntroSequence
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_15
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_40
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_19:
-# 1195 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1280 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 1281 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	hidemonpic
+# 1282 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeobject LOCALID_BIRCHS_LAB_GRASS_STARTER_BALL
+# 1283 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeobject LOCALID_BIRCHS_LAB_FIRE_STARTER_BALL
+# 1284 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeobject LOCALID_BIRCHS_LAB_WATER_STARTER_BALL
+# 1285 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setflag FLAG_REMOVE_LAB_STARTERS
+# 1286 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	call NicknamePartyMon
+# 1287 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_STARTER_MON, 1
+# 1288 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1289 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	delay 20
+# 1290 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	applymovement LOCALID_BIRCHS_LAB_BIRCH, BirchApproachGivePokedex_FireStarter
+# 1291 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	waitmovement 0
+# 1292 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+# 1293 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	call ProfessorBirchsLab_EventScript_RevisedIntroSequence
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_18
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_22:
+# 1208 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	givemon SPECIES_CHARMANDER, 5
-# 1196 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_1
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_21:
-# 1202 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_CYNDAQUIL, 5
-# 1203 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_3
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_23:
 # 1209 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_TORCHIC, 5
-# 1210 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_5
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_25:
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_24:
+# 1215 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_CYNDAQUIL, 5
 # 1216 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_CHIMCHAR, 5
-# 1217 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_7
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_27:
-# 1223 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_TEPIG, 5
-# 1224 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_9
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_29:
-# 1230 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_FENNEKIN, 5
-# 1231 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_11
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_31:
-# 1237 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_LITTEN, 5
-# 1238 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_13
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_33:
-# 1244 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_SCORBUNNY, 5
-# 1245 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_15
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_35:
-# 1251 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_FUECOCO, 5
-# 1252 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_17
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_37:
-# 1258 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_CYNDAQUIL_HISUI, 5
-# 1259 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_3
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_26:
+# 1222 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_TORCHIC, 5
+# 1223 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_5
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_28:
+# 1229 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_CHIMCHAR, 5
+# 1230 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_7
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_30:
+# 1236 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_TEPIG, 5
+# 1237 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_9
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_32:
+# 1243 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_FENNEKIN, 5
+# 1244 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_11
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_34:
+# 1250 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_LITTEN, 5
+# 1251 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_13
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_36:
+# 1257 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_SCORBUNNY, 5
+# 1258 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_15
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_38:
+# 1264 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_FUECOCO, 5
+# 1265 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_17
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_40:
+# 1271 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_CYNDAQUIL_HISUI, 5
+# 1272 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_3
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_4
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter::
-# 1291 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1304 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lockall
-# 1292 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_TEMP_7, NO
-# 1293 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	switch VAR_TEMP_8
-# 1294 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_3
-# 1299 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
+# 1305 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	switch VAR_FACING
 # 1306 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_5
-# 1313 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_6
-# 1320 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_7
-# 1327 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_8
-# 1334 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_9
-# 1341 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_10
-# 1348 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_11
-# 1355 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_12
-# 1362 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_13
+	case DIR_EAST, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_3
+# 1307 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case DIR_WEST, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_3
+# 1308 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case DIR_SOUTH, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_3
+# 1314 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_TEMP_7, NO
+# 1315 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	switch VAR_TEMP_8
+# 1316 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_6
+# 1321 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_7
+# 1328 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_8
+# 1335 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_9
+# 1342 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_10
+# 1349 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_11
+# 1356 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_12
+# 1363 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_13
 # 1370 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_14
+# 1377 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_15
+# 1384 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_16
+# 1392 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0
-# 1371 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1393 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1372 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1394 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	return
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1:
-# 1375 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_16
-# 1392 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	hidemonpic
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_15:
-# 1394 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitmessage
-# 1395 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_3:
+# 1309 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_3:
-# 1295 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0
-# 1296 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4:
+# 1397 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_19
+# 1414 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	hidemonpic
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_18:
+# 1416 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1297 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1417 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	releaseall
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_6:
+# 1317 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0
+# 1318 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	waitmessage
+# 1319 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	return
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4:
-# 1300 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_SQUIRTLE, 10, 3
-# 1301 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_0, MSGBOX_YESNO
-# 1302 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1303 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_19
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_5:
-# 1307 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_TOTODILE, 10, 3
-# 1308 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_2, MSGBOX_YESNO
-# 1309 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1310 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_21
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_6:
-# 1314 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_MUDKIP, 10, 3
-# 1315 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_4, MSGBOX_YESNO
-# 1316 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1317 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_23
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
-
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_7:
-# 1321 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_PIPLUP, 10, 3
 # 1322 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_6, MSGBOX_YESNO
+	showmonpic SPECIES_SQUIRTLE, 10, 3
 # 1323 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_0, MSGBOX_YESNO
 # 1324 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1325 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_25
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_22
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_8:
-# 1328 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_OSHAWOTT, 10, 3
 # 1329 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_8, MSGBOX_YESNO
+	showmonpic SPECIES_TOTODILE, 10, 3
 # 1330 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_2, MSGBOX_YESNO
 # 1331 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1332 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_27
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_24
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_9:
-# 1335 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_FROAKIE, 10, 3
 # 1336 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_10, MSGBOX_YESNO
+	showmonpic SPECIES_MUDKIP, 10, 3
 # 1337 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_4, MSGBOX_YESNO
 # 1338 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1339 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_29
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_26
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_10:
-# 1342 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_POPPLIO, 10, 3
 # 1343 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_12, MSGBOX_YESNO
+	showmonpic SPECIES_PIPLUP, 10, 3
 # 1344 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_6, MSGBOX_YESNO
 # 1345 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1346 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_31
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_28
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_11:
-# 1349 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_SOBBLE, 10, 3
 # 1350 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_14, MSGBOX_YESNO
+	showmonpic SPECIES_OSHAWOTT, 10, 3
 # 1351 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_8, MSGBOX_YESNO
 # 1352 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1353 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_33
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_30
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_12:
-# 1356 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_QUAXLY, 10, 3
 # 1357 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_16, MSGBOX_YESNO
+	showmonpic SPECIES_FROAKIE, 10, 3
 # 1358 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_10, MSGBOX_YESNO
 # 1359 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1360 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_35
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_32
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_13:
-# 1363 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	showmonpic SPECIES_OSHAWOTT_HISUI, 10, 3
 # 1364 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_8, MSGBOX_YESNO
+	showmonpic SPECIES_POPPLIO, 10, 3
 # 1365 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_12, MSGBOX_YESNO
 # 1366 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1367 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_7, YES
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_37
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_34
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_14:
+# 1371 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_SOBBLE, 10, 3
+# 1372 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_14, MSGBOX_YESNO
+# 1373 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1374 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_36
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_15:
+# 1378 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	showmonpic SPECIES_QUAXLY, 10, 3
+# 1379 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_16, MSGBOX_YESNO
+# 1380 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1381 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_38
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_16:
-# 1376 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 1377 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	hidemonpic
-# 1378 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	removeobject 7
-# 1379 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	removeobject 8
-# 1380 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	removeobject 9
-# 1381 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_REMOVE_LAB_STARTERS
-# 1382 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	call NicknamePartyMon
-# 1383 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_STARTER_MON, 2
-# 1384 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
 # 1385 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	delay 20
+	showmonpic SPECIES_OSHAWOTT_HISUI, 10, 3
 # 1386 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	applymovement 10, BirchApproachGivePokedex_WaterStarter
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_8, MSGBOX_YESNO
 # 1387 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitmovement 0
+	copyvar VAR_TEMP_7, VAR_RESULT
 # 1388 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-# 1389 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	call ProfessorBirchsLab_EventScript_RevisedIntroSequence
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_15
+	compare VAR_TEMP_7, YES
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_40
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_19:
-# 1304 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_SQUIRTLE, 5
-# 1305 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_1
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+# 1398 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 1399 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	hidemonpic
+# 1400 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeobject LOCALID_BIRCHS_LAB_GRASS_STARTER_BALL
+# 1401 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeobject LOCALID_BIRCHS_LAB_FIRE_STARTER_BALL
+# 1402 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	removeobject LOCALID_BIRCHS_LAB_WATER_STARTER_BALL
+# 1403 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setflag FLAG_REMOVE_LAB_STARTERS
+# 1404 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	call NicknamePartyMon
+# 1405 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_STARTER_MON, 2
+# 1406 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1407 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	delay 20
+# 1408 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	applymovement LOCALID_BIRCHS_LAB_BIRCH, BirchApproachGivePokedex_WaterStarter
+# 1409 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	waitmovement 0
+# 1410 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+# 1411 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	call ProfessorBirchsLab_EventScript_RevisedIntroSequence
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_18
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_21:
-# 1311 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_TOTODILE, 5
-# 1312 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_3
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_23:
-# 1318 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_MUDKIP, 5
-# 1319 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_5
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_25:
-# 1325 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_PIPLUP, 5
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_22:
 # 1326 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_7
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	givemon SPECIES_SQUIRTLE, 5
+# 1327 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_27:
-# 1332 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_OSHAWOTT, 5
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_24:
 # 1333 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_9
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	givemon SPECIES_TOTODILE, 5
+# 1334 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_3
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_29:
-# 1339 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_FROAKIE, 5
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_26:
 # 1340 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_11
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	givemon SPECIES_MUDKIP, 5
+# 1341 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_5
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_31:
-# 1346 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_POPPLIO, 5
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_28:
 # 1347 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_13
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	givemon SPECIES_PIPLUP, 5
+# 1348 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_7
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_33:
-# 1353 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_SOBBLE, 5
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_30:
 # 1354 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_15
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_35:
-# 1360 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_QUAXLY, 5
-# 1361 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_17
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
-
-LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_37:
-# 1367 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	givemon SPECIES_OSHAWOTT_HISUI, 5
-# 1368 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_OSHAWOTT, 5
+# 1355 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_9
-	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_1
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_32:
+# 1361 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_FROAKIE, 5
+# 1362 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_11
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_34:
+# 1368 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_POPPLIO, 5
+# 1369 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_13
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_36:
+# 1375 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_SOBBLE, 5
+# 1376 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_15
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_38:
+# 1382 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_QUAXLY, 5
+# 1383 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_17
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_40:
+# 1389 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	givemon SPECIES_OSHAWOTT_HISUI, 5
+# 1390 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_9
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_4
 
 
 ProfessorBirchsLab_EventScript_RevisedIntroSequence::
-# 1400 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
-# 1401 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 1402 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_ADVENTURE_STARTED
-# 1403 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_RESCUED_BIRCH
-# 1404 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
-# 1405 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
-# 1406 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_NO_BAG_ITEMS_IN_BATTLE
-# 1407 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_HIDDEN_BY_DEFAULT
-# 1408 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_ROUTE101_STATE, 3
-# 1409 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	clearflag FLAG_HIDE_MAP_NAME_POPUP
-# 1410 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_OLDALE_TOWN_STATE, 1
-# 1411 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 4
-# 1412 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_0
-# 1413 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 1414 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_1
-# 1415 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitfanfare
-# 1416 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
-# 1417 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_SYS_POKEDEX_GET
-# 1418 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	special SetUnlockedPokedexFlags
-# 1419 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
-# 1420 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
-# 1421 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_SYS_NATIONAL_DEX
 # 1422 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	special EnableNationalPokedex
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
 # 1423 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_2
+	setflag FLAG_SYS_POKEMON_GET
 # 1424 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	giveitem ITEM_POKE_BALL, 5
+	setflag FLAG_ADVENTURE_STARTED
 # 1425 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
+	setflag FLAG_RESCUED_BIRCH
 # 1426 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_3
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
 # 1427 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	giveitem ITEM_POKEMON_BOX_LINK
+	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
 # 1428 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	giveitem ITEM_CANDY_BAG
+	setflag FLAG_NO_BAG_ITEMS_IN_BATTLE
 # 1429 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	giveitem ITEM_ESCAPE_ROPE
+	setflag FLAG_HIDDEN_BY_DEFAULT
 # 1430 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	giveitem ITEM_FULL_RESTORE
+	setvar VAR_ROUTE101_STATE, 3
 # 1431 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	giveitem ITEM_UNLIMITED_REPEL
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 # 1432 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
+	setvar VAR_OLDALE_TOWN_STATE, 1
 # 1433 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_LEVEL_CAP, 10
+	setvar VAR_LITTLEROOT_RIVAL_STATE, 4
 # 1434 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_BIRCH_LAB_STATE, 5
+	msgbox ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_0
 # 1435 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_LITTLEROOT_TOWN_STATE, 3
+	playfanfare MUS_OBTAIN_ITEM
 # 1436 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_OLDALE_RIVAL_STATE, 0
+	msgbox ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_1
 # 1437 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_PETALBURG_GYM_STATE, 0
+	waitfanfare
 # 1438 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	clearflag FLAG_HIDE_PETALBURG_GYM_WALLY
+	closemessage
 # 1439 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setflag FLAG_SYS_POKEDEX_GET
+# 1440 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	special SetUnlockedPokedexFlags
+# 1441 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+# 1442 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
+# 1443 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setflag FLAG_SYS_NATIONAL_DEX
+# 1444 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	special EnableNationalPokedex
+# 1445 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_2
+# 1446 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	giveitem ITEM_POKE_BALL, 5
+# 1447 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1448 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_3
+# 1449 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	giveitem ITEM_POKEMON_BOX_LINK
+# 1450 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	giveitem ITEM_CANDY_BAG
+# 1451 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	giveitem ITEM_ESCAPE_ROPE
+# 1452 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	giveitem ITEM_FULL_RESTORE
+# 1453 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	giveitem ITEM_UNLIMITED_REPEL
+# 1454 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1455 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_LEVEL_CAP, 10
+# 1456 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_BIRCH_LAB_STATE, 5
+# 1457 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_LITTLEROOT_TOWN_STATE, 3
+# 1458 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_OLDALE_RIVAL_STATE, 0
+# 1459 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setvar VAR_PETALBURG_GYM_STATE, 0
+# 1460 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	clearflag FLAG_HIDE_PETALBURG_GYM_WALLY
+# 1461 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_4
 	return
 
 
 NicknamePartyMon::
-# 1446 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1468 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 1447 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1469 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyMon_2
 NicknamePartyMon_1:
 	return
 
 NicknamePartyMon_2:
-# 1448 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1470 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 1449 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1471 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto NicknamePartyMon_1
 
 
 NicknameBoxMon::
-# 1455 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1477 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 1456 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1478 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknameBoxMon_2
 NicknameBoxMon_1:
-# 1459 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1481 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	call Common_EventScript_TransferredToPC
 	return
 
 NicknameBoxMon_2:
-# 1457 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1479 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NicknameBoxMon_1
 
 
-# 1462 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1484 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 BirchApproachGivePokedex_GrassStarter:
-# 1463 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1485 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	walk_left
-# 1463 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1485 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	walk_left
 	step_end
 
-# 1466 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1488 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 BirchApproachGivePokedex_FireStarter:
-# 1467 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1489 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	walk_left
 	step_end
 
-# 1470 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1492 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 BirchApproachGivePokedex_WaterStarter:
-# 1471 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1493 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	face_left
 	step_end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide::
-# 1475 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1497 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lock
-# 1476 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1498 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto_if_set FLAG_ADVENTURE_STARTED, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_1
-# 1480 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1502 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_Intro
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_1:
-# 1477 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1499 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap
 	return
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_Intro::
-# 1485 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1507 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lock
-# 1486 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1508 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	faceplayer
-# 1487 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1509 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_Intro_Text_0
-# 1488 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1510 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 	end
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap::
-# 1493 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1515 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lock
-# 1494 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1516 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	faceplayer
-# 1495 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1517 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainHandicap
-# 1496 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1518 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1497 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1519 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_LEVEL_HANDICAP
-# 1498 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1520 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_2
-# 1502 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1524 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_Text_1, MSGBOX_YESNO
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_1:
-# 1504 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1526 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1505 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1527 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_6
-# 1510 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1532 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_Text_2
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_5:
-# 1512 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1534 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1513 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1535 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_2:
-# 1499 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1521 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_Text_0, MSGBOX_YESNO
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_6:
-# 1506 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1528 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	closemessage
-# 1507 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1529 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_5
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes::
-# 1522 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1544 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 10
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_1
-# 1528 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1550 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_2
-# 1568 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1590 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_LEVEL_HANDICAP
-# 1569 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1591 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_4, VAR_LEVEL_HANDICAP
-# 1570 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1592 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_2, 0
-# 1571 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1593 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 9
 	goto_if_le LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_12
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_11:
-# 1572 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1594 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 8
 	goto_if_le LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_18
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_17:
-# 1573 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1595 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 7
 	goto_if_le LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_21
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_20:
-# 1574 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1596 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 6
 	goto_if_le LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_24
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_23:
-# 1575 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1597 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 5
 	goto_if_le LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_27
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_26:
-# 1576 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1598 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 4
 	goto_if_le LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_30
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_29:
-# 1577 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1599 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 3
 	goto_if_le LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_33
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_32:
-# 1578 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1600 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 2
 	goto_if_le LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_36
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_35:
-# 1579 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1601 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_LEVEL_HANDICAP, 1
 	goto_if_le LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_39
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_38:
-# 1581 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_16
-# 1582 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	dynmultistack 25, 2, FALSE, 5, 1, 0, DYN_MULTICHOICE_CB_NONE
-# 1583 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_9, VAR_RESULT
-# 1584 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitmessage
-# 1586 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	switch VAR_TEMP_9
-# 1587 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_43
-# 1593 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_44
-# 1595 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_45
-# 1597 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_46
-# 1599 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_47
-# 1601 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_48
 # 1603 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_49
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_16
+# 1604 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	dynmultistack 25, 2, FALSE, 5, 1, 0, DYN_MULTICHOICE_CB_NONE
 # 1605 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_50
-# 1607 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_51
-# 1609 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_52
-# 1611 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_53
-# 1614 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_17
-# 1615 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_9, VAR_RESULT
+# 1606 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1616 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1608 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	switch VAR_TEMP_9
+# 1609 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_43
+# 1615 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_44
+# 1617 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_45
+# 1619 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_46
+# 1621 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_47
+# 1623 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_48
+# 1625 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_49
+# 1627 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_50
+# 1629 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_51
+# 1631 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_52
+# 1633 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_53
+# 1636 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_17
+# 1637 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	waitmessage
+# 1638 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_1:
-# 1523 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1545 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_0
-# 1524 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1546 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1525 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1547 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_2:
-# 1529 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1551 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_1
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultichoice 25, 2, 0, 5, 0, DYN_MULTICHOICE_CB_NONE, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_2, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_3, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_4, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_5, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_6, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_7, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_8, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_9, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_10, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_11, LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_12
-# 1531 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1553 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_TEMP_9, VAR_RESULT
-# 1532 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1554 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1534 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1556 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_9, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_6
-# 1540 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1562 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_TEMP_9, 127
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_7
-# 1548 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1570 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	buffernumberstring STR_VAR_2, VAR_TEMP_9
-# 1549 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1571 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_14, MSGBOX_YESNO
-# 1551 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1573 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_14
-# 1560 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1582 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_13
-# 1561 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1583 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1562 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1584 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_6:
-# 1535 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1557 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_13
-# 1536 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1558 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1537 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1559 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_7:
-# 1541 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1563 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_TEMP_9, 0
-# 1542 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1564 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_13
-# 1543 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1565 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1544 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1566 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_12:
-# 1571 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1593 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_3, 1
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_11
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_14:
-# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1574 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_LEVEL_HANDICAP, VAR_TEMP_9
-# 1553 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1575 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_15
-# 1554 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1576 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1555 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1577 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap
-# 1556 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1578 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_18:
-# 1572 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1594 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_4, 2
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_17
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_21:
-# 1573 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1595 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_5, 3
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_20
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_24:
-# 1574 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1596 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_6, 4
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_23
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_27:
-# 1575 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1597 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_7, 5
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_26
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_30:
-# 1576 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1598 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_8, 6
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_29
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_33:
-# 1577 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1599 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_9, 7
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_32
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_36:
-# 1578 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1600 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_10, 8
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_35
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_39:
-# 1579 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1601 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_11, 9
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_38
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41:
-# 1619 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1641 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	buffernumberstring STR_VAR_2, VAR_TEMP_4
-# 1620 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1642 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_18, MSGBOX_YESNO
-# 1621 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1643 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1622 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1644 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_56
-# 1628 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1650 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_20
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_55:
-# 1630 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1652 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1631 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1653 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_43:
-# 1588 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1610 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_17
-# 1589 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1611 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	waitmessage
-# 1590 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1612 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	closemessage
-# 1591 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1613 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_44:
-# 1594 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1616 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 1
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_45:
-# 1596 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1618 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 2
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_46:
-# 1598 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1620 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 3
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_47:
-# 1600 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1622 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 4
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_48:
-# 1602 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1624 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 5
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_49:
-# 1604 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1626 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 6
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_50:
-# 1606 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1628 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 7
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_51:
-# 1608 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1630 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 8
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_52:
-# 1610 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1632 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 9
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_53:
-# 1612 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1634 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_TEMP_4, 10
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_41
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_56:
-# 1623 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1645 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	copyvar VAR_LEVEL_HANDICAP, VAR_TEMP_4
-# 1624 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1646 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap
-# 1625 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1647 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_19
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_55
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap::
-# 1637 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	switch VAR_TEMP_9
-# 1638 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_3
-# 1640 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_4
-# 1642 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_5
-# 1644 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_6
-# 1646 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_7
-# 1648 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_8
-# 1650 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_9
-# 1652 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_10
-# 1654 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_11
-# 1656 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_12
 # 1659 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	switch VAR_TEMP_9
+# 1660 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_3
+# 1662 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_4
+# 1664 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 3, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_5
+# 1666 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 4, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_6
+# 1668 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 5, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_7
+# 1670 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 6, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_8
+# 1672 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 7, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_9
+# 1674 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 8, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_10
+# 1676 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 9, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_11
+# 1678 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	case 10, LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_12
+# 1681 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	delay 1
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1:
-# 1661 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1683 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_TEMP_9, 0
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_3:
-# 1639 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1661 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 1
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_4:
-# 1641 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1663 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 2
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_5:
-# 1643 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1665 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 3
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_6:
-# 1645 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1667 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 4
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_7:
-# 1647 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1669 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 5
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_8:
-# 1649 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1671 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 6
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_9:
-# 1651 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1673 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 7
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_10:
-# 1653 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1675 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 8
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_11:
-# 1655 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1677 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 9
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_12:
-# 1657 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1679 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	addvar VAR_LEVEL_CAP, 10
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap_1
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_0:
-# 1052 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1047 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Prof. Birch: Ah, hello {PLAYER}!\lI heard you were going to begin your\njourney as a Pokemon Trainer today.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_1:
-# 1054 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1049 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "What region would you like to choose\n"
 	.string "your starter Pokemon from?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_2:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Kanto$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_3:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Johto$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_4:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Hoenn$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_5:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Sinnoh$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_6:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Unova$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_7:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Kalos$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_8:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Alola$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_9:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Galar$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_10:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Paldea$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_11:
-# 1055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Hisui$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_12:
-# 1059 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1054 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "I'm sure you'll choose well!\lCome speak to me again if you want to\nsee other options.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen_Text_13:
-# 1064 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1059 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Take care of your Pokemon, and good\n"
 	.string "luck on your journey!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_0:
-# 1076 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1080 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Better go speak with Prof. Birch before\n"
 	.string "taking a Pokemon.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_1:
-# 1082 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1086 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Bulbasaur?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_2:
-# 1086 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1090 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Bulbasaur!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_3:
-# 1089 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1093 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Chikorita?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_4:
-# 1093 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1097 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Chikorita!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_5:
-# 1096 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1100 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Treecko?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_6:
-# 1100 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1104 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Treecko!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_7:
-# 1103 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1107 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Turtwig?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_8:
-# 1107 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1111 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Turtwig!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_9:
-# 1110 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1114 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Snivy?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_10:
-# 1114 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1118 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Snivy!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_11:
-# 1117 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1121 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Chespin?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_12:
-# 1121 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1125 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Chespin!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_13:
-# 1124 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1128 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Rowlet?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_14:
-# 1128 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1132 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Rowlet!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_15:
-# 1131 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1135 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Grookey?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_16:
-# 1135 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1139 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Grookey!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_17:
-# 1138 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1142 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Sprigatito?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter_Text_18:
-# 1142 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1146 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Sprigatito!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_0:
-# 1192 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1205 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Charmander?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_1:
-# 1196 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1209 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Charmander!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_2:
-# 1199 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1212 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Cyndaquil?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_3:
-# 1203 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1216 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Cyndaquil!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_4:
-# 1206 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1219 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Torchic?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_5:
-# 1210 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1223 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Torchic!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_6:
-# 1213 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1226 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Chimchar?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_7:
-# 1217 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1230 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Chimchar!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_8:
-# 1220 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1233 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Tepig?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_9:
-# 1224 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1237 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Tepig!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_10:
-# 1227 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1240 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Fennekin?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_11:
-# 1231 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1244 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Fennekin!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_12:
-# 1234 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1247 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Litten?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_13:
-# 1238 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1251 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Litten!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_14:
-# 1241 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1254 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Scorbunny?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_15:
-# 1245 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1258 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Scorbunny!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_16:
-# 1248 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1261 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Fuecoco?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter_Text_17:
-# 1252 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1265 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Fuecoco!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_0:
-# 1301 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1323 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Squirtle?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_1:
-# 1305 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1327 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Squirtle!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_2:
-# 1308 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1330 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Totodile?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_3:
-# 1312 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1334 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Totodile!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_4:
-# 1315 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1337 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Mudkip?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_5:
-# 1319 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1341 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Mudkip!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_6:
-# 1322 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1344 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Piplup?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_7:
-# 1326 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1348 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Piplup!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_8:
-# 1329 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1351 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Oshawott?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_9:
-# 1333 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1355 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Oshawott!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_10:
-# 1336 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1358 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Froakie?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_11:
-# 1340 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1362 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Froakie!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_12:
-# 1343 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1365 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Popplio?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_13:
-# 1347 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1369 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Popplio!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_14:
-# 1350 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1372 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Sobble?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_15:
-# 1354 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1376 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Sobble!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_16:
-# 1357 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1379 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Do you want to choose Quaxly?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter_Text_17:
-# 1361 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1383 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Quaxly!$"
 
 ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_0:
-# 1412 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1434 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Prof. Birch: With that choice, {PLAYER},\nyou have begun your Pokémon journey!\pPlease take this Pokédex too, to record\nall of the Pokémon you encounter.$"
 
 ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_1:
-# 1414 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1436 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Received Pokédex!$"
 
 ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_2:
-# 1423 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1445 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Prof. Birch: You will also need these\nPokéballs, in order to catch new\lPokémon to add to your team.$"
 
 ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_3:
-# 1426 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1448 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Prof. Birch: And here are some utility\n"
 	.string "items that will make your life as a\l"
 	.string "Trainer much easier.$"
 
 ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_4:
-# 1439 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1461 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Prof. Birch: Double battles are the\n"
 	.string "standard format in Hoenn now, so you\l"
 	.string "should hurry and catch another\l"
@@ -3835,133 +3874,133 @@ ProfessorBirchsLab_EventScript_RevisedIntroSequence_Text_4:
 	.string "Town to see you off.$"
 
 NicknamePartyMon_Text_0:
-# 1446 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1468 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Give it a nickname?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_Intro_Text_0:
-# 1487 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1509 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Hello, {PLAYER}! Professor Birch is\n"
 	.string "very excited about your Pokémon\l"
 	.string "journey.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_Text_0:
-# 1499 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1521 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "You currently do not have a handicap.\p"
 	.string "Would you like to set one?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_Text_1:
-# 1502 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1524 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "You currently have a handicap of\n"
 	.string "{STR_VAR_1}.\p"
 	.string "Would you like to change it?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap_Text_2:
-# 1510 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1532 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "If you ever change your mind, come back\n"
 	.string "and talk to me.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_0:
-# 1523 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1545 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "You currently have a handicap of 10.\p"
 	.string "We cannot change it any further.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_1:
-# 1529 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1551 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "What level handicap would you like?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_2:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "0$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_3:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "1$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_4:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "2$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_5:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "3$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_6:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "4$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_7:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "5$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_8:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "6$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_9:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "7$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_10:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "8$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_11:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "9$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_12:
-# 1530 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1552 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "10$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_13:
-# 1535 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1557 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Very well, you still do not have a\n"
 	.string "handicap.\p"
 	.string "Come back if you ever decide to add one.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_14:
-# 1549 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1571 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Are you sure you would like a handicap\n"
 	.string "of {STR_VAR_2} levels?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_15:
-# 1553 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1575 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Your handicap has been set to\n"
 	.string "{STR_VAR_2} levels.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_16:
-# 1581 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1603 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "How much would you like to increase it?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_17:
-# 1588 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1610 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Your handicap remains at\n"
 	.string "{STR_VAR_1}.\p"
 	.string "Come back if you ever decide to\n"
 	.string "increase it.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_18:
-# 1620 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1642 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Are you sure you would like to increase\n"
 	.string "your handicap from {STR_VAR_1} to\l"
 	.string "{STR_VAR_2}?$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_19:
-# 1625 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1647 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Very well. Your handicap has been set to\n"
 	.string "{STR_VAR_2}.\p"
 	.string "Come back if you ever decide to\n"
 	.string "increase it.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes_Text_20:
-# 1628 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1650 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Very well. Your handicap remains at\n"
 	.string "{STR_VAR_1}.\p"
 	.string "Come back if you ever decide to\n"
 	.string "increase it.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ExplainHandicap::
-# 1517 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1539 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "I can help you register a handicap for\n"
 	.string "your adventure.\p"
 	.string "A handicap will let you use slightly\n"

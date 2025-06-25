@@ -1030,11 +1030,6 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 
 `
 // Sets constants to use for Object IDs 
-const INTRO_BIRCH_ID = 10
-const GRASS_STARTER_BALL = 7
-const FIRE_STARTER_BALL = 8
-const WATER_STARTER_BALL = 9
-
 const TempVar_StarterRegion = VAR_TEMP_8
 const TempVar_HandicapAnswer = VAR_TEMP_9
 const TempVar_ProspectiveHandicap = VAR_TEMP_4
@@ -1070,6 +1065,15 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen{
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter{
     lockall
+	switch(var(VAR_FACING)){
+		case DIR_EAST:
+		case DIR_WEST:
+		case DIR_SOUTH:
+			releaseall
+			end
+		case DIR_NORTH:	
+		default:
+	}
     setvar(VAR_TEMP_7, NO)
     switch(var(TempVar_StarterRegion)){
         case 0:
@@ -1156,15 +1160,15 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter{
         if(var(VAR_TEMP_7) == YES){
             playfanfare(MUS_OBTAIN_ITEM)
             hidemonpic
-            removeobject(GRASS_STARTER_BALL)
-            removeobject(FIRE_STARTER_BALL)
-            removeobject(WATER_STARTER_BALL)
+            removeobject(LOCALID_BIRCHS_LAB_GRASS_STARTER_BALL)
+            removeobject(LOCALID_BIRCHS_LAB_FIRE_STARTER_BALL)
+            removeobject(LOCALID_BIRCHS_LAB_WATER_STARTER_BALL)
             setflag(FLAG_REMOVE_LAB_STARTERS)
             call(NicknamePartyMon)
             setvar(VAR_STARTER_MON, 0)
 			closemessage
 			delay(20)
-			applymovement(INTRO_BIRCH_ID,BirchApproachGivePokedex_GrassStarter)
+			applymovement(LOCALID_BIRCHS_LAB_BIRCH,BirchApproachGivePokedex_GrassStarter)
 			waitmovement(0)
 			turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
             call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
@@ -1180,6 +1184,15 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseGrassStarter{
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter{
     lockall
+	switch(var(VAR_FACING)){
+		case DIR_EAST:
+		case DIR_WEST:
+		case DIR_SOUTH:
+			releaseall
+			end
+		case DIR_NORTH:	
+		default:
+	}
     setvar(VAR_TEMP_7, NO)
     switch(var(TempVar_StarterRegion)){
         case 0:
@@ -1266,15 +1279,15 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter{
         if(var(VAR_TEMP_7) == YES){
             playfanfare(MUS_OBTAIN_ITEM)
             hidemonpic
-            removeobject(GRASS_STARTER_BALL)
-            removeobject(FIRE_STARTER_BALL)
-            removeobject(WATER_STARTER_BALL)
+            removeobject(LOCALID_BIRCHS_LAB_GRASS_STARTER_BALL)
+            removeobject(LOCALID_BIRCHS_LAB_FIRE_STARTER_BALL)
+            removeobject(LOCALID_BIRCHS_LAB_WATER_STARTER_BALL)
             setflag(FLAG_REMOVE_LAB_STARTERS)
             call(NicknamePartyMon)
             setvar(VAR_STARTER_MON, 1)
 			closemessage
 			delay(20)
-			applymovement(INTRO_BIRCH_ID,BirchApproachGivePokedex_FireStarter)
+			applymovement(LOCALID_BIRCHS_LAB_BIRCH,BirchApproachGivePokedex_FireStarter)
 			waitmovement(0)
 			turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
             call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
@@ -1289,6 +1302,15 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseFireStarter{
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter{
     lockall
+	switch(var(VAR_FACING)){
+		case DIR_EAST:
+		case DIR_WEST:
+		case DIR_SOUTH:
+			releaseall
+			end
+		case DIR_NORTH:	
+		default:
+	}
     setvar(VAR_TEMP_7, NO)
     switch(var(TempVar_StarterRegion)){
         case 0:
@@ -1375,15 +1397,15 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ChooseWaterStarter{
         if(var(VAR_TEMP_7) == YES){
             playfanfare(MUS_OBTAIN_ITEM)
             hidemonpic
-            removeobject(GRASS_STARTER_BALL)
-            removeobject(FIRE_STARTER_BALL)
-            removeobject(WATER_STARTER_BALL)
+            removeobject(LOCALID_BIRCHS_LAB_GRASS_STARTER_BALL)
+            removeobject(LOCALID_BIRCHS_LAB_FIRE_STARTER_BALL)
+            removeobject(LOCALID_BIRCHS_LAB_WATER_STARTER_BALL)
             setflag(FLAG_REMOVE_LAB_STARTERS)
             call(NicknamePartyMon)
             setvar(VAR_STARTER_MON, 2)
 			closemessage
 			delay(20)
-			applymovement(INTRO_BIRCH_ID,BirchApproachGivePokedex_WaterStarter)
+			applymovement(LOCALID_BIRCHS_LAB_BIRCH,BirchApproachGivePokedex_WaterStarter)
 			waitmovement(0)
 			turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
             call(ProfessorBirchsLab_EventScript_RevisedIntroSequence)
