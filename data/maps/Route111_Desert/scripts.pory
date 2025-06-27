@@ -1,0 +1,37 @@
+mapscripts Route111_Desert_MapScripts{
+}
+
+const TempVarCheckBoulder = VAR_TEMP_6
+
+raw`
+/*
+script Route111_Desert_EventScript_CheckBoulder {
+    lock
+    if (flag(FLAG_HIDE_REGIROCK_RUINS_ROCK)) {
+        setvar(TempVarCheckBoulder, 1)
+    }
+    else {
+        goto(Route111_Desert_EventScript_SinkBoulder)
+    }
+    releaseall
+    end
+}
+
+script  Route111_Desert_EventScript_SinkBoulder {
+    lock
+    setvar(VAR_0x8004, 1)  // vertical pan
+    setvar(VAR_0x8005, 1)  // horizontal pan
+    setvar(VAR_0x8006, 4)  // num shakes
+    setvar(VAR_0x8007, 5)  // shake delay
+	special(ShakeCamera)
+    applymovement(LOCALID_DESERT_BOULDER, Common_Movement_WalkDown)
+    delay(10) 
+    removeobject(LOCALID_DESERT_BOULDER)
+    setflag(FLAG_HIDE_REGIROCK_RUINS_ROCK)
+    setvar(TempVarCheckBoulder, 1)
+    waitmovement(0)
+    releaseall
+    end
+}
+*/
+`

@@ -29,6 +29,19 @@
     #define NIGHT_HOUR_BEGIN   0
     #define NIGHT_HOUR_END     12
 //Evening doesn't exist in Gen 4
+//gen 1 used to represent custom times for the Hack
+#elif OW_TIMES_OF_DAY == GEN_1
+    #define MORNING_HOUR_BEGIN 6
+    #define MORNING_HOUR_END   12
+
+    #define DAY_HOUR_BEGIN     12
+    #define DAY_HOUR_END       18
+
+    #define EVENING_HOUR_BEGIN 18
+    #define EVENING_HOUR_END   24
+
+    #define NIGHT_HOUR_BEGIN   24
+    #define NIGHT_HOUR_END     6
 #elif OW_TIMES_OF_DAY == GEN_4
     #define MORNING_HOUR_BEGIN 4
     #define MORNING_HOUR_END   10

@@ -81,23 +81,23 @@ IslandCave_EventScript_ShowRegice::
 # 41 "data/maps/IslandCave/scripts.pory"
 IslandCave_EventScript_OpenRegiEntrance::
 # 42 "data/maps/IslandCave/scripts.pory"
-	setmetatile 7, 19, METATILE_Cave_SealedChamberEntrance_TopLeft, TRUE
+	//setmetatile 7, 19, METATILE_Cave_SealedChamberEntrance_TopLeft, TRUE
 # 43 "data/maps/IslandCave/scripts.pory"
-	setmetatile 8, 19, METATILE_Cave_SealedChamberEntrance_TopMid, TRUE
+	//setmetatile 8, 19, METATILE_Cave_SealedChamberEntrance_TopMid, TRUE
 # 44 "data/maps/IslandCave/scripts.pory"
-	setmetatile 9, 19, METATILE_Cave_SealedChamberEntrance_TopRight, TRUE
+	//setmetatile 9, 19, METATILE_Cave_SealedChamberEntrance_TopRight, TRUE
 # 45 "data/maps/IslandCave/scripts.pory"
-	setmetatile 7, 20, METATILE_Cave_SealedChamberEntrance_BottomLeft, TRUE
+	//setmetatile 7, 20, METATILE_Cave_SealedChamberEntrance_BottomLeft, TRUE
 # 46 "data/maps/IslandCave/scripts.pory"
-	setmetatile 8, 20, METATILE_Cave_SealedChamberEntrance_BottomMid, FALSE
+	//setmetatile 8, 20, METATILE_Cave_SealedChamberEntrance_BottomMid, FALSE
 # 47 "data/maps/IslandCave/scripts.pory"
-	setmetatile 9, 20, METATILE_Cave_SealedChamberEntrance_BottomRight, TRUE
+	//setmetatile 9, 20, METATILE_Cave_SealedChamberEntrance_BottomRight, TRUE
 # 48 "data/maps/IslandCave/scripts.pory"
-	special DrawWholeMapView
+	//special DrawWholeMapView
 # 49 "data/maps/IslandCave/scripts.pory"
-	playse SE_BANG
+	//playse SE_BANG
 # 50 "data/maps/IslandCave/scripts.pory"
-	setflag FLAG_SYS_BRAILLE_REGICE_COMPLETED
+	//setflag FLAG_SYS_BRAILLE_REGICE_COMPLETED
 # 51 "data/maps/IslandCave/scripts.pory"
 	end
 # 52 "data/maps/IslandCave/scripts.pory"

@@ -29,6 +29,9 @@ SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 	closemessage
 	fadeinbgm 0
 	setflag FLAG_REGI_DOORS_OPENED
+	setflag FLAG_SYS_REGIROCK_PUZZLE_COMPLETED
+	setflag FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED
+	setflag FLAG_SYS_BRAILLE_REGICE_COMPLETED
 	releaseall
 	end
 

@@ -986,7 +986,7 @@
 #define FLAG_HIDE_REGIROCK                                          0x3A7
 #define FLAG_HIDE_REGICE                                            0x3A8
 #define FLAG_HIDE_REGISTEEL                                         0x3A9
-#define FLAG_HIDE_METEOR_FALLS_TEAM_AQUA                            0x3AA //was meteor falls; now unused, available to repurpose
+#define FLAG_HIDE_REGIROCK_RUINS_ROCK                               0x3AA //repurposed
 #define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB //was meteor falls; now unused, available to repurpose
 #define FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN                      0x3AC
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT               0x3AD

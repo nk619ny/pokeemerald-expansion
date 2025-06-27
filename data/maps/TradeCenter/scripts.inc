@@ -36,38 +36,40 @@ Common_EventScript_SetStartingFlagStates::
 	setflag FLAG_HIDE_ROUTE_120_STEVEN
 # 25 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDE_LILYCOVE_CITY_RIVAL
+# 26 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_REGI_DOORS_OPENED
 	return
 
 
 Common_EventScript_ApplyHandicap::
-# 30 "data/maps/TradeCenter/scripts.pory"
-	switch VAR_LEVEL_HANDICAP
 # 31 "data/maps/TradeCenter/scripts.pory"
+	switch VAR_LEVEL_HANDICAP
+# 32 "data/maps/TradeCenter/scripts.pory"
 	case 0, Common_EventScript_ApplyHandicap_3
-# 33 "data/maps/TradeCenter/scripts.pory"
+# 34 "data/maps/TradeCenter/scripts.pory"
 	case 1, Common_EventScript_ApplyHandicap_4
-# 35 "data/maps/TradeCenter/scripts.pory"
+# 36 "data/maps/TradeCenter/scripts.pory"
 	case 2, Common_EventScript_ApplyHandicap_5
-# 37 "data/maps/TradeCenter/scripts.pory"
+# 38 "data/maps/TradeCenter/scripts.pory"
 	case 3, Common_EventScript_ApplyHandicap_6
-# 39 "data/maps/TradeCenter/scripts.pory"
+# 40 "data/maps/TradeCenter/scripts.pory"
 	case 4, Common_EventScript_ApplyHandicap_7
-# 41 "data/maps/TradeCenter/scripts.pory"
+# 42 "data/maps/TradeCenter/scripts.pory"
 	case 5, Common_EventScript_ApplyHandicap_8
-# 43 "data/maps/TradeCenter/scripts.pory"
+# 44 "data/maps/TradeCenter/scripts.pory"
 	case 6, Common_EventScript_ApplyHandicap_9
-# 45 "data/maps/TradeCenter/scripts.pory"
+# 46 "data/maps/TradeCenter/scripts.pory"
 	case 7, Common_EventScript_ApplyHandicap_10
-# 47 "data/maps/TradeCenter/scripts.pory"
+# 48 "data/maps/TradeCenter/scripts.pory"
 	case 8, Common_EventScript_ApplyHandicap_11
-# 49 "data/maps/TradeCenter/scripts.pory"
+# 50 "data/maps/TradeCenter/scripts.pory"
 	case 9, Common_EventScript_ApplyHandicap_12
-# 51 "data/maps/TradeCenter/scripts.pory"
+# 52 "data/maps/TradeCenter/scripts.pory"
 	case 10, Common_EventScript_ApplyHandicap_13
 	return
 
 Common_EventScript_ApplyHandicap_1:
-# 56 "data/maps/TradeCenter/scripts.pory"
+# 57 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_LEVEL_CAP, 100
 	goto_if_gt Common_EventScript_ApplyHandicap_16
 Common_EventScript_ApplyHandicap_15:
@@ -77,264 +79,268 @@ Common_EventScript_ApplyHandicap_3:
 	return
 
 Common_EventScript_ApplyHandicap_4:
-# 34 "data/maps/TradeCenter/scripts.pory"
+# 35 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 1
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_5:
-# 36 "data/maps/TradeCenter/scripts.pory"
+# 37 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 2
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_6:
-# 38 "data/maps/TradeCenter/scripts.pory"
+# 39 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 3
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_7:
-# 40 "data/maps/TradeCenter/scripts.pory"
+# 41 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 4
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_8:
-# 42 "data/maps/TradeCenter/scripts.pory"
+# 43 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 5
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_9:
-# 44 "data/maps/TradeCenter/scripts.pory"
+# 45 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 6
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_10:
-# 46 "data/maps/TradeCenter/scripts.pory"
+# 47 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 7
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_11:
-# 48 "data/maps/TradeCenter/scripts.pory"
+# 49 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 8
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_12:
-# 50 "data/maps/TradeCenter/scripts.pory"
+# 51 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 9
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_13:
-# 52 "data/maps/TradeCenter/scripts.pory"
+# 53 "data/maps/TradeCenter/scripts.pory"
 	addvar VAR_LEVEL_CAP, 10
 	goto Common_EventScript_ApplyHandicap_1
 
 Common_EventScript_ApplyHandicap_16:
-# 57 "data/maps/TradeCenter/scripts.pory"
+# 58 "data/maps/TradeCenter/scripts.pory"
 	setvar VAR_LEVEL_CAP, 100
 	goto Common_EventScript_ApplyHandicap_15
 
 
-# 70 "data/maps/TradeCenter/scripts.pory"
-Common_Movement_WalkDownOneStep:
 # 71 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkDownOneStep:
+# 72 "data/maps/TradeCenter/scripts.pory"
 	walk_down
 	step_end
 
-# 74 "data/maps/TradeCenter/scripts.pory"
-Common_Movement_WalkUpOneStep:
 # 75 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkUpOneStep:
+# 76 "data/maps/TradeCenter/scripts.pory"
 	walk_up
 	step_end
 
-# 78 "data/maps/TradeCenter/scripts.pory"
-Common_Movement_WalkLeftOneStep:
 # 79 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkLeftOneStep:
+# 80 "data/maps/TradeCenter/scripts.pory"
 	walk_left
 	step_end
 
-# 82 "data/maps/TradeCenter/scripts.pory"
-Common_Movement_WalkRightOneStep:
 # 83 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkRightOneStep:
+# 84 "data/maps/TradeCenter/scripts.pory"
 	walk_right
 	step_end
 
-# 86 "data/maps/TradeCenter/scripts.pory"
-Common_Movement_WalkDownOneStepFast:
 # 87 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkDownOneStepFast:
+# 88 "data/maps/TradeCenter/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 90 "data/maps/TradeCenter/scripts.pory"
-Common_Movement_WalkUpOneStepFast:
 # 91 "data/maps/TradeCenter/scripts.pory"
+Common_Movement_WalkUpOneStepFast:
+# 92 "data/maps/TradeCenter/scripts.pory"
 	walk_fast_up
 	step_end
 
 Common_EventScript_SetFlashTest::
-# 95 "data/maps/TradeCenter/scripts.pory"
-	lock
 # 96 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_SetFlashTest_Text_0, MSGBOX_YESNO
+	lock
 # 97 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_SetFlashTest_Text_0, MSGBOX_YESNO
+# 98 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Common_EventScript_SetFlashTest_2
-# 100 "data/maps/TradeCenter/scripts.pory"
+# 101 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq Common_EventScript_SetFlashTest_3
 Common_EventScript_SetFlashTest_1:
-# 103 "data/maps/TradeCenter/scripts.pory"
+# 104 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	return
 
 Common_EventScript_SetFlashTest_2:
-# 98 "data/maps/TradeCenter/scripts.pory"
+# 99 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_HM_FLASH
 	goto Common_EventScript_SetFlashTest_1
 
 Common_EventScript_SetFlashTest_3:
-# 101 "data/maps/TradeCenter/scripts.pory"
+# 102 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_RECEIVED_HM_FLASH
 	goto Common_EventScript_SetFlashTest_1
 
 
 Common_EventScript_CheckIfHideoutsComplete::
-# 108 "data/maps/TradeCenter/scripts.pory"
+# 109 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, Common_EventScript_CheckIfHideoutsComplete_4
 Common_EventScript_CheckIfHideoutsComplete_3:
-# 114 "data/maps/TradeCenter/scripts.pory"
+# 115 "data/maps/TradeCenter/scripts.pory"
 	setvar VAR_LEVEL_CAP, 66
 Common_EventScript_CheckIfHideoutsComplete_1:
 	return
 
 Common_EventScript_CheckIfHideoutsComplete_2:
-# 109 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_BOTH_HIDEOUTS_COMPLETE
 # 110 "data/maps/TradeCenter/scripts.pory"
-	setvar VAR_LEVEL_CAP, 68
+	setflag FLAG_BOTH_HIDEOUTS_COMPLETE
 # 111 "data/maps/TradeCenter/scripts.pory"
+	setvar VAR_LEVEL_CAP, 68
+# 112 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_HIDE_LILYCOVE_CITY_RIVAL
 	goto Common_EventScript_CheckIfHideoutsComplete_1
 
 Common_EventScript_CheckIfHideoutsComplete_4:
-# 108 "data/maps/TradeCenter/scripts.pory"
+# 109 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, Common_EventScript_CheckIfHideoutsComplete_2
 	goto Common_EventScript_CheckIfHideoutsComplete_3
 
 
-# 119 "data/maps/TradeCenter/scripts.pory"
+# 120 "data/maps/TradeCenter/scripts.pory"
 Common_Movement_EliteFourNewEntranceLeft:
-# 121 "data/maps/TradeCenter/scripts.pory"
-	walk_left
-# 121 "data/maps/TradeCenter/scripts.pory"
+# 122 "data/maps/TradeCenter/scripts.pory"
 	walk_left
 # 122 "data/maps/TradeCenter/scripts.pory"
-	walk_down
-# 122 "data/maps/TradeCenter/scripts.pory"
-	walk_down
-# 122 "data/maps/TradeCenter/scripts.pory"
-	walk_down
-# 122 "data/maps/TradeCenter/scripts.pory"
+	walk_left
+# 123 "data/maps/TradeCenter/scripts.pory"
 	walk_down
 # 123 "data/maps/TradeCenter/scripts.pory"
-	walk_right
+	walk_down
 # 123 "data/maps/TradeCenter/scripts.pory"
+	walk_down
+# 123 "data/maps/TradeCenter/scripts.pory"
+	walk_down
+# 124 "data/maps/TradeCenter/scripts.pory"
 	walk_right
 # 124 "data/maps/TradeCenter/scripts.pory"
+	walk_right
+# 125 "data/maps/TradeCenter/scripts.pory"
 	walk_in_place_fast_up
 	step_end
 
-# 127 "data/maps/TradeCenter/scripts.pory"
+# 128 "data/maps/TradeCenter/scripts.pory"
 Common_Movement_EliteFourNewEntranceRight:
-# 129 "data/maps/TradeCenter/scripts.pory"
-	walk_right
-# 129 "data/maps/TradeCenter/scripts.pory"
+# 130 "data/maps/TradeCenter/scripts.pory"
 	walk_right
 # 130 "data/maps/TradeCenter/scripts.pory"
-	walk_down
-# 130 "data/maps/TradeCenter/scripts.pory"
-	walk_down
-# 130 "data/maps/TradeCenter/scripts.pory"
-	walk_down
-# 130 "data/maps/TradeCenter/scripts.pory"
+	walk_right
+# 131 "data/maps/TradeCenter/scripts.pory"
 	walk_down
 # 131 "data/maps/TradeCenter/scripts.pory"
-	walk_left
+	walk_down
 # 131 "data/maps/TradeCenter/scripts.pory"
+	walk_down
+# 131 "data/maps/TradeCenter/scripts.pory"
+	walk_down
+# 132 "data/maps/TradeCenter/scripts.pory"
 	walk_left
 # 132 "data/maps/TradeCenter/scripts.pory"
+	walk_left
+# 133 "data/maps/TradeCenter/scripts.pory"
 	walk_in_place_fast_up
 	step_end
 
 Common_EventScript_CheckIfEliteFourComplete::
-# 137 "data/maps/TradeCenter/scripts.pory"
+# 138 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_SIDNEY, Common_EventScript_CheckIfEliteFourComplete_5
 Common_EventScript_CheckIfEliteFourComplete_3:
-# 141 "data/maps/TradeCenter/scripts.pory"
+# 142 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_ALL_ELITE_FOUR_BEATEN
 Common_EventScript_CheckIfEliteFourComplete_1:
 	return
 
 Common_EventScript_CheckIfEliteFourComplete_2:
-# 138 "data/maps/TradeCenter/scripts.pory"
+# 139 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ALL_ELITE_FOUR_BEATEN
 	goto Common_EventScript_CheckIfEliteFourComplete_1
 
 Common_EventScript_CheckIfEliteFourComplete_4:
-# 137 "data/maps/TradeCenter/scripts.pory"
+# 138 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, Common_EventScript_CheckIfEliteFourComplete_8
 	goto Common_EventScript_CheckIfEliteFourComplete_3
 
 Common_EventScript_CheckIfEliteFourComplete_5:
-# 137 "data/maps/TradeCenter/scripts.pory"
+# 138 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, Common_EventScript_CheckIfEliteFourComplete_4
 	goto Common_EventScript_CheckIfEliteFourComplete_3
 
 Common_EventScript_CheckIfEliteFourComplete_8:
-# 137 "data/maps/TradeCenter/scripts.pory"
+# 138 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, Common_EventScript_CheckIfEliteFourComplete_2
 	goto Common_EventScript_CheckIfEliteFourComplete_3
 
 
 MauvilleCity_EventScript_Temporary::
-# 147 "data/maps/TradeCenter/scripts.pory"
-	lock
 # 148 "data/maps/TradeCenter/scripts.pory"
+	lock
+# 149 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_HM_WATERFALL
-# 172 "data/maps/TradeCenter/scripts.pory"
-	giveitem ITEM_PROTEIN, 30
 # 173 "data/maps/TradeCenter/scripts.pory"
-	giveitem ITEM_HP_UP, 30
+	giveitem ITEM_PROTEIN, 30
 # 174 "data/maps/TradeCenter/scripts.pory"
-	giveitem ITEM_IRON, 30
+	giveitem ITEM_HP_UP, 30
 # 175 "data/maps/TradeCenter/scripts.pory"
+	giveitem ITEM_IRON, 30
+# 176 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_VISITED_RUSTBORO_CITY
 # 177 "data/maps/TradeCenter/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	clearflag FLAG_HIDE_REGIROCK_RUINS_ROCK
 # 178 "data/maps/TradeCenter/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 180 "data/maps/TradeCenter/scripts.pory"
 	delay 40
-# 179 "data/maps/TradeCenter/scripts.pory"
+# 181 "data/maps/TradeCenter/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 191 "data/maps/TradeCenter/scripts.pory"
+# 182 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_REGI_DOORS_OPENED
+# 194 "data/maps/TradeCenter/scripts.pory"
 	waitmessage
-# 192 "data/maps/TradeCenter/scripts.pory"
+# 195 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 193 "data/maps/TradeCenter/scripts.pory"
+# 196 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 Common_EventScript_HideGym0OptionalRewards::
-# 198 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_102_POTION
-# 199 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_104_POTION
-# 200 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_104_X_ACCURACY
 # 201 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_102_POTION
+# 202 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_104_POTION
+# 203 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_104_X_ACCURACY
+# 204 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_104_NORTH_NEW
 	return
 
 
 Common_EventScript_HideGym1OptionalRewards::
-# 206 "data/maps/TradeCenter/scripts.pory"
+# 209 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_6_SODA_POP
 	return
 
@@ -345,17 +351,17 @@ Common_EventScript_LevelCapUpdate_Text_0:
 	.string "{STR_VAR_1}!$"
 
 Common_EventScript_SetFlashTest_Text_0:
-# 96 "data/maps/TradeCenter/scripts.pory"
+# 97 "data/maps/TradeCenter/scripts.pory"
 	.string "Do you have flash?$"
 
 Common_Text_CaveIsDarkUseFlash::
-# 62 "data/maps/TradeCenter/scripts.pory"
+# 63 "data/maps/TradeCenter/scripts.pory"
 	.string "This cave is too dark to explore\n"
 	.string "without a light.\p"
 	.string "{PLAYER}'s Pokémon used Flash!$"
 
 Common_Text_CaveIsDarkNeedFlash::
-# 66 "data/maps/TradeCenter/scripts.pory"
+# 67 "data/maps/TradeCenter/scripts.pory"
 	.string "This cave is too dark to explore\n"
 	.string "without a light.\p"
 	.string "It's better to turn back.$"
