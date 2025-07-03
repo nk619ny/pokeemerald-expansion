@@ -11144,10 +11144,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_SIRFETCHD] =
     {
-        .baseHP        = 62,
+        .baseHP        = 62 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 20 : 0),
         .baseAttack    = 135,
         .baseDefense   = 95,
-        .baseSpeed     = 65,
+        .baseSpeed     = 65 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
         .baseSpAttack  = 68,
         .baseSpDefense = 82,
         .types = MON_TYPES(TYPE_FIGHTING),

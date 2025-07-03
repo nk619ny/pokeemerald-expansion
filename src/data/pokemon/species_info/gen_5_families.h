@@ -6052,7 +6052,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_RUNERIGUS] =
     {
-        .baseHP        = 58,
+        .baseHP        = 58 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0),
         .baseAttack    = 95,
         .baseDefense   = 145,
         .baseSpeed     = 30,
