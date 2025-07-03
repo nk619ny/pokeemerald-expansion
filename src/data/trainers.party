@@ -2045,18 +2045,84 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Linoone
-Level: 30
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+Miraidon  
+Ability: Hadron Engine  
+Level: 90
+Ball: Timer Ball
+Tera Type: Electric  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+- Volt Switch  
+- Electro Drift  
+- Draco Meteor  
+- Flash Cannon  
+
+Iron Jugulis  
+Ability: Quark Drive  
+Level: 90
+Ball: Timer Ball
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dark Pulse  
+- Hurricane  
+- Tailwind  
+- Hydro Pump 
+
+Metagross @ Metagrossite  
+Ability: Tough Claws  
+Level: 90
+Ball: Timer Ball
+Tera Type: Steel  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Body Press  
+- Bullet Punch  
+- Heavy Slam  
+- Zen Headbutt  
+
+Iron Bundle @ Wide Lens  
+Ability: Quark Drive  
+Level: 90
+Ball: Timer Ball
+Tera Type: Ice  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Freeze-Dry  
+- Hydro Pump  
+- Blizzard  
+- Terrain Pulse  
+
+Iron Hands @ Assault Vest  
+Ability: Quark Drive  
+Level: 90
+Ball: Timer Ball
+Tera Type: Fighting  
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- Wild Charge  
+- Drain Punch  
+- Fake Out  
+- Heavy Slam  
+
+Iron Boulder  
+Ability: Quark Drive  
+Level: 90
+Ball: Timer Ball
+Tera Type: Rock  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Mighty Cleave  
+- Wild Charge  
+- Zen Headbutt  
+- Swords Dance  
+
 
 === TRAINER_SADA_1 ===
 Name: SADA
 Class: Professor
-Pic: Professor_Sada
+Pic: Professor Sada
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -2131,21 +2197,82 @@ Jolly Nature
 - Iron Head  
 
 === TRAINER_SADA_2 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
-Music: Girl
+Name: SADA
+Class: Professor
+Pic: Professor Sada
+Gender: Female
+Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Linoone
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+Koraidon  
+Ability: Orichalcum Pulse 
+Level: 90 
+Tera Type: Fighting  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Collision Course  
+- Dragon Claw  
+- Iron Head  
+- U-turn  
+
+Roaring Moon @ Booster Energy  
+Ability: Protosynthesis  
+Level: 90 
+Tera Type: Dragon  
+EVs: 56 HP / 200 Atk / 252 Spe  
+Jolly Nature  
+- Tailwind  
+- Crunch  
+- Iron Head  
+- Acrobatics  
+
+Aerodactyl @ Aerodactylite  
+Ability: Tough Claws  
+Level: 90 
+Tera Type: Rock  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Brave Bird  
+- Head Smash  
+- Dragon Dance  
+- Crunch  
+
+Flutter Mane  
+Ability: Protosynthesis  
+Level: 90 
+Tera Type: Ghost  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Mystical Fire  
+- Protect
+
+Gouging Fire @ Lum Berry  
+Ability: Protosynthesis  
+Level: 90 
+Tera Type: Fire  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Burning Bulwark  
+- Raging Fury  
+- Morning Sun  
+- Dragon Claw  
+
+Raging Bolt  
+Ability: Protosynthesis  
+Level: 90 
+Tera Type: Electric  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Thunderclap  
+- Volt Switch  
+- Dragon Pulse  
+- Ancient Power  
+
 
 === TRAINER_RANDALL ===
 Name: RANDALL

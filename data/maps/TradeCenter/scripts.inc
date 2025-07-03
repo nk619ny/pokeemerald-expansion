@@ -318,29 +318,31 @@ MauvilleCity_EventScript_Temporary::
 	fadescreenswapbuffers FADE_FROM_BLACK
 # 182 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_REGI_DOORS_OPENED
-# 194 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
+# 183 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_TERAPAGOS_NORMAL, 90, , , , 0, , , , , , , , , , , , , , MOVE_TERA_STARSTORM, MOVE_WIDE_GUARD, MOVE_SHELL_SMASH, MOVE_MYSTICAL_FIRE
 # 195 "data/maps/TradeCenter/scripts.pory"
-	closemessage
+	waitmessage
 # 196 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 197 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 Common_EventScript_HideGym0OptionalRewards::
-# 201 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_102_POTION
 # 202 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_104_POTION
+	setflag FLAG_ITEM_ROUTE_102_POTION
 # 203 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_104_X_ACCURACY
+	setflag FLAG_ITEM_ROUTE_104_POTION
 # 204 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_104_X_ACCURACY
+# 205 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_104_NORTH_NEW
 	return
 
 
 Common_EventScript_HideGym1OptionalRewards::
-# 209 "data/maps/TradeCenter/scripts.pory"
+# 210 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_6_SODA_POP
 	return
 

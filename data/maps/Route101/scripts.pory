@@ -309,7 +309,7 @@ Route101_Text_RouteSign:
 `
 
 // Sets constants to use for Object IDs 
-const LOCALID_ROUTE101_RIVAL = 4
+//const LOCALID_ROUTE101_RIVAL = 4
 
 script Route101_EventScript_RivalFirstBattle {
 	waitmovement(0)

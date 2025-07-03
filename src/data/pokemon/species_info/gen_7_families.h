@@ -1397,6 +1397,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sVikavoltLevelUpLearnset,
         .teachableLearnset = sVikavoltTeachableLearnset,
         .formSpeciesIdTable = sVikavoltFormSpeciesIdTable,
+        .formChangeTable = sVikavoltFormChangeTable,
     },
 
     [SPECIES_VIKAVOLT_MEGA] =
@@ -1454,11 +1455,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Vikavolt,
             gShinyOverworldPalette_Vikavolt
         )
-        .isMegaEvolution = TRUE
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sVikavoltLevelUpLearnset,
         .teachableLearnset = sVikavoltTeachableLearnset,
         .formSpeciesIdTable = sVikavoltFormSpeciesIdTable,
-    }, 
+        .formChangeTable = sVikavoltFormChangeTable,
+    },
 
     [SPECIES_VIKAVOLT_TOTEM] =
     {
