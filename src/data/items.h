@@ -6189,8 +6189,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Centiskorch to Mega\n"
-            "Evolve in battle."),
+            "Centiskorch to\n"
+            "Mega Evolve."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

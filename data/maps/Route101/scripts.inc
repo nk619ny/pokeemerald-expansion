@@ -629,11 +629,11 @@ Route101_EventScript_RivalTrigger2::
 # 322 "data/maps/Route101/scripts.pory"
 	lock
 # 323 "data/maps/Route101/scripts.pory"
-	applymovement 4, Common_Movement_ExclamationMark
+	applymovement LOCALID_ROUTE101_RIVAL, Common_Movement_ExclamationMark
 # 324 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 325 "data/maps/Route101/scripts.pory"
-	applymovement 4, Route101_RivalApproachPlayer2
+	applymovement LOCALID_ROUTE101_RIVAL, Route101_RivalApproachPlayer2
 # 326 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 327 "data/maps/Route101/scripts.pory"
@@ -647,11 +647,11 @@ Route101_EventScript_RivalTrigger1::
 # 332 "data/maps/Route101/scripts.pory"
 	lock
 # 333 "data/maps/Route101/scripts.pory"
-	applymovement 4, Common_Movement_ExclamationMark
+	applymovement LOCALID_ROUTE101_RIVAL, Common_Movement_ExclamationMark
 # 334 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 335 "data/maps/Route101/scripts.pory"
-	applymovement 4, Route101_RivalApproachPlayer1
+	applymovement LOCALID_ROUTE101_RIVAL, Route101_RivalApproachPlayer1
 # 336 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 337 "data/maps/Route101/scripts.pory"
@@ -665,7 +665,7 @@ Route101_EventScript_RivalTrigger0::
 # 342 "data/maps/Route101/scripts.pory"
 	lock
 # 343 "data/maps/Route101/scripts.pory"
-	applymovement 4, Common_Movement_ExclamationMark
+	applymovement LOCALID_ROUTE101_RIVAL, Common_Movement_ExclamationMark
 # 344 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 345 "data/maps/Route101/scripts.pory"
@@ -743,11 +743,11 @@ Route101_RivalDefeated::
 # 378 "data/maps/Route101/scripts.pory"
 	waitmessage
 # 379 "data/maps/Route101/scripts.pory"
-	applymovement 4, Route101_RivalDeparture
+	applymovement LOCALID_ROUTE101_RIVAL, Route101_RivalDeparture
 # 380 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 381 "data/maps/Route101/scripts.pory"
-	removeobject 4
+	removeobject LOCALID_ROUTE101_RIVAL
 # 382 "data/maps/Route101/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_103_RIVAL
 # 383 "data/maps/Route101/scripts.pory"
