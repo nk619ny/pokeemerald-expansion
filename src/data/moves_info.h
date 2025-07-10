@@ -5752,17 +5752,17 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Present"),
         .description = COMPOUND_STRING(
-            "A gift in the form of a\n"
-            "bomb. May restore HP."),
-        .effect = EFFECT_PRESENT,
-        .power = 1,
+            "Explodes on foes, but\n"
+            "restores ally's HP."),
+        .effect = B_CUSTOMIZED_MOVE_STATS == TRUE ? EFFECT_HIT_ENEMY_HEAL_ALLY : EFFECT_PRESENT,
+        .power = 90,
         .type = TYPE_NORMAL,
-        .accuracy = 90,
+        .accuracy = B_CUSTOMIZED_MOVE_STATS == TRUE ? 100 : 90,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .ignoresKingsRock = (B_UPDATED_MOVE_FLAGS == GEN_3 || B_UPDATED_MOVE_FLAGS == GEN_4),
+        //.ignoresKingsRock = (B_UPDATED_MOVE_FLAGS == GEN_3 || B_UPDATED_MOVE_FLAGS == GEN_4),
         .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,

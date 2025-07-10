@@ -3890,7 +3890,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             if (gBattleMons[battler].level < 20)
                 break;
         // Fallthrough
-        case ABILITY_ZEN_MODE:
+        //case ABILITY_ZEN_MODE:
         case ABILITY_SHIELDS_DOWN:
             if (TryBattleFormChange(battler, FORM_CHANGE_BATTLE_HP_PERCENT))
             {
@@ -4110,6 +4110,18 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_ZEN_MODE:
+            if (!gSpecialStatuses[battler].switchInAbilityDone
+             && (gBattleMons[battler].species == SPECIES_DARMANITAN_STANDARD || gBattleMons[battler].species == SPECIES_DARMANITAN_GALAR_STANDARD)
+             && TryBattleFormChange(battler, FORM_CHANGE_BATTLE_SWITCH))
+            {
+                gBattlerAttacker = battler;
+                gBattleScripting.abilityPopupOverwrite = gLastUsedAbility = ABILITY_ZEN_MODE;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_AttackerFormChangeWithStringEnd3);
+                effect++;
+            }
+            break;
         case ABILITY_ICE_FACE:
             if (IsBattlerWeatherAffected(battler, B_WEATHER_HAIL | B_WEATHER_SNOW)
              && gBattleMons[battler].species == SPECIES_EISCUE_NOICE
@@ -4321,7 +4333,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 if (gBattleMons[battler].level < 20)
                     break;
             // Fallthrough
-            case ABILITY_ZEN_MODE:
+            //case ABILITY_ZEN_MODE:
             case ABILITY_SHIELDS_DOWN:
                 if (TryBattleFormChange(battler, FORM_CHANGE_BATTLE_HP_PERCENT))
                 {
@@ -8520,6 +8532,22 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (moveType == TYPE_ICE)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_BLAZE:
+        if (moveType == TYPE_FIRE)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        break;
+    case ABILITY_OVERGROW:
+        if (moveType == TYPE_GRASS)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        break;
+    case ABILITY_TORRENT:
+        if (moveType == TYPE_WATER)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        break;
+    case ABILITY_SWARM:
+        if (moveType == TYPE_BUG)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        break;
     case ABILITY_PIXILATE:
         if (moveType == TYPE_FAIRY && gBattleStruct->ateBoost[battlerAtk])
             modifier = uq4_12_multiply(modifier, UQ_4_12(GetGenConfig(GEN_CONFIG_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3));
@@ -8800,19 +8828,19 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
         break;
     case ABILITY_SWARM:
         if (moveType == TYPE_BUG && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
         break;
     case ABILITY_TORRENT:
         if (moveType == TYPE_WATER && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
         break;
     case ABILITY_BLAZE:
         if (moveType == TYPE_FIRE && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
         break;
     case ABILITY_OVERGROW:
         if (moveType == TYPE_GRASS && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.25));
         break;
     case ABILITY_PLUS:
         if (IsBattleMoveSpecial(move) && IsBattlerAlive(BATTLE_PARTNER(battlerAtk)))
