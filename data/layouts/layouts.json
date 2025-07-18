@@ -4564,10 +4564,10 @@
     {
       "id": "LAYOUT_TEST_MAP_ICE",
       "name": "TestMapIce_Layout",
-      "width": 120,
+      "width": 40,
       "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
+      "primary_tileset": "gTileset_CustomGeneral",
+      "secondary_tileset": "gTileset_Glacier",
       "border_filepath": "data/layouts/TestMapIce/border.bin",
       "blockdata_filepath": "data/layouts/TestMapIce/map.bin"
     },

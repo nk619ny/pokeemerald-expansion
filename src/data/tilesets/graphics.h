@@ -1634,3 +1634,41 @@ const u16 gTilesetPalettes_UnionRoom[][16] =
 };
 
 const u32 gTilesetTiles_UnionRoom[] = INCBIN_U32("data/tilesets/secondary/union_room/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Glacier[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/glacier/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Glacier[] = INCBIN_U32("data/tilesets/secondary/glacier/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_CustomGeneral[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_general/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_CustomGeneral[] = INCBIN_U32("data/tilesets/primary/custom_general/tiles.4bpp.lz");

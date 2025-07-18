@@ -1210,7 +1210,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Zen Mode"),
 //        .description = COMPOUND_STRING("Transforms at half HP."),
-        .description = COMPOUND_STRING("Transforms thru discipline."),
+//        .description = COMPOUND_STRING("Transforms thru discipline."),
+        .description = COMPOUND_STRING("Transforms from mindset."),
         .aiRating = -1,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
