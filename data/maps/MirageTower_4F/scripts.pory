@@ -82,3 +82,63 @@ MirageTower_4F_Text_LeaveClawFossilAlone:
 	.string "{PLAYER} left the CLAW FOSSIL alone.$"
 
 `
+
+const TempVar_Fossil = VAR_TEMP_6
+
+script MirageTower_EventScript_GiveRandomFossil {
+	lock
+	random(15)
+	switch(var(VAR_RESULT)) {
+		case 0:
+			setvar(TempVar_Fossil, ITEM_HELIX_FOSSIL)
+			break
+		case 1:
+			setvar(TempVar_Fossil, ITEM_DOME_FOSSIL)
+			break
+		case 2:
+			setvar(TempVar_Fossil, ITEM_ROOT_FOSSIL)
+			break
+		case 3:
+			setvar(TempVar_Fossil, ITEM_CLAW_FOSSIL)
+			break
+		case 4:
+			setvar(TempVar_Fossil, ITEM_SKULL_FOSSIL)
+			break
+		case 5:
+			setvar(TempVar_Fossil, ITEM_ARMOR_FOSSIL)
+			break
+		case 6:
+			setvar(TempVar_Fossil, ITEM_JAW_FOSSIL)
+			break
+		case 7:
+			setvar(TempVar_Fossil, ITEM_SAIL_FOSSIL)
+			break
+		case 8:
+			setvar(TempVar_Fossil, ITEM_PLUME_FOSSIL)
+			break
+		case 9:
+			setvar(TempVar_Fossil, ITEM_COVER_FOSSIL)
+			break
+		case 10:
+			setvar(TempVar_Fossil, ITEM_OLD_AMBER)
+			break
+		case 11:
+			setvar(TempVar_Fossil, ITEM_FOSSILIZED_BIRD)
+			break
+		case 12:
+			setvar(TempVar_Fossil, ITEM_FOSSILIZED_DRAKE)
+			break
+		case 13:
+			setvar(TempVar_Fossil, ITEM_FOSSILIZED_FISH)
+			break
+		case 14:
+			setvar(TempVar_Fossil, ITEM_FOSSILIZED_DINO)
+			break
+		default:
+			setvar(TempVar_Fossil, ITEM_NONE)
+			break
+	}
+	giveitem(TempVar_Fossil)
+	waitfanfare
+	closemessage
+}

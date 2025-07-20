@@ -17,7 +17,7 @@
     {
       "local_id": "LOCALID_MIRAGE_ROOT_FOSSIL",
       "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
-      "x": 5,
+      "x": 6,
       "y": 4,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -25,14 +25,14 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MirageTower_4F_EventScript_RootFossil",
+      "script": "MirageTower_EventScript_GiveRandomFossil",
       "flag": "FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL"
     },
     {
       "local_id": "LOCALID_MIRAGE_CLAW_FOSSIL",
       "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
-      "x": 7,
-      "y": 4,
+      "x": -7,
+      "y": -5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -43,7 +43,7 @@
       "flag": "FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
       "x": 6,
       "y": 7,
       "elevation": 3,
@@ -52,7 +52,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
+      "script": "EventScript_StrengthBoulder",
       "flag": "FLAG_TEMP_11"
     }
   ],

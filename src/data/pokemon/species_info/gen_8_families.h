@@ -7307,12 +7307,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_ETERNATUS_ETERNAMAX] =
     {
-        .baseHP        = 255,
-        .baseAttack    = 115,
-        .baseDefense   = 250,
+        .baseHP        = 140 + 30,
+        .baseAttack    = 85 - 10,
+        .baseDefense   = 95 + 40,
         .baseSpeed     = 130,
-        .baseSpAttack  = 125,
-        .baseSpDefense = 250,
+        .baseSpAttack  = 145,
+        .baseSpDefense = 95 + 40,
+//        .baseHP        = 255,
+//        .baseAttack    = 115,
+//        .baseDefense   = 250,
+//        .baseSpeed     = 130,
+//        .baseSpAttack  = 125,
+//        .baseSpDefense = 250,
         .types = MON_TYPES(TYPE_POISON, TYPE_DRAGON),
         .catchRate = 255,
         .expYield = 563,
@@ -7357,6 +7363,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         SHADOW(-3, 20, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Eternatus)
         .isLegendary = TRUE,
+        .isMegaEvolution = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sEternatusLevelUpLearnset,

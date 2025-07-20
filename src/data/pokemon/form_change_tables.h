@@ -1427,5 +1427,14 @@ static const struct FormChange sTerapagosFormChangeTable[] = {
 };
 #endif //P_FAMILY_TERAPAGOS
 
+#if P_FAMILY_ETERNATUS
+static const struct FormChange sEternatusFormChangeTable[] = {
+#if P_MEGA_EVOLUTIONS
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE,    SPECIES_ETERNATUS_ETERNAMAX, MOVE_DYNAMAX_CANNON},
+#endif
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_ETERNATUS
+
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

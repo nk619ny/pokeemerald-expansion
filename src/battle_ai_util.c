@@ -1591,6 +1591,7 @@ bool32 IsHazardMove(u32 move)
     case EFFECT_TOXIC_SPIKES:
     case EFFECT_STICKY_WEB:
     case EFFECT_STEALTH_ROCK:
+    case EFFECT_STEELSURGE:
         return TRUE;
     }
 

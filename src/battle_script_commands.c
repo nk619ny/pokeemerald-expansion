@@ -3304,6 +3304,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
     switch (gBattleScripting.moveEffect) // Set move effects which happen later on
     {
     case MOVE_EFFECT_STEALTH_ROCK:
+    case MOVE_EFFECT_STEELSURGE:
     case MOVE_EFFECT_SPIKES:
     case MOVE_EFFECT_PAYDAY:
     case MOVE_EFFECT_BUG_BITE:
@@ -16554,14 +16555,19 @@ static void Cmd_jumpifcaptivateaffected(void)
         gLastUsedAbility = ABILITY_OBLIVIOUS;
         RecordAbilityBattle(gBattlerTarget, ABILITY_OBLIVIOUS);
     }
-    else if (AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
-    {
-        gBattlescriptCurrInstr = cmd->jumpInstr;
-    }
     else
     {
         gBattlescriptCurrInstr = cmd->nextInstr;
-    }
+    }   
+//    
+//    else if (AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
+//    {
+//        gBattlescriptCurrInstr = cmd->jumpInstr;
+//    }
+//    else
+//    {
+//        gBattlescriptCurrInstr = cmd->nextInstr;
+//    }
 }
 
 static void Cmd_setnonvolatilestatus(void)
@@ -18568,8 +18574,8 @@ void BS_TrySetInfatuation(void)
 
     if (!(gBattleMons[gBattlerTarget].status2 & STATUS2_INFATUATION)
         && gBattleMons[gBattlerTarget].ability != ABILITY_OBLIVIOUS
-        && !IsAbilityOnSide(gBattlerTarget, ABILITY_AROMA_VEIL)
-        && AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
+        && !IsAbilityOnSide(gBattlerTarget, ABILITY_AROMA_VEIL))
+//        && AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
     {
         gBattleMons[gBattlerTarget].status2 |= STATUS2_INFATUATED_WITH(gBattlerAttacker);
         gBattleCommunication[MULTISTRING_CHOOSER] = 1;

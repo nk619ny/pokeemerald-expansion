@@ -537,6 +537,8 @@ extern const u8 BattleScript_AlreadyParalyzed[];
 extern const u8 BattleScript_AlreadyBurned[];
 extern const u8 BattleScript_PrintAbilityMadeIneffective[];
 extern const u8 BattleScript_IlluminateAbilityActivates[]; //Newly added
+extern const u8 BattleScript_EffectSteelsurge[];
+
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];
@@ -553,7 +555,7 @@ extern const u8 BattleScript_EffectLowerStatFoes[];
 extern const u8 BattleScript_EffectSetWeather[];
 extern const u8 BattleScript_EffectSetTerrain[];
 extern const u8 BattleScript_EffectStonesurge[];
-extern const u8 BattleScript_EffectSteelsurge[];
+extern const u8 BattleScript_EffectSteelsurgeOriginal[];
 extern const u8 BattleScript_SteelsurgeFree[];
 extern const u8 BattleScript_SteelsurgeDefog[];
 extern const u8 BattleScript_DamageNonTypesStarts[];

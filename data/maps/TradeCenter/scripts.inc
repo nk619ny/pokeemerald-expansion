@@ -300,51 +300,39 @@ MauvilleCity_EventScript_Temporary::
 	lock
 # 149 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_HM_WATERFALL
-# 173 "data/maps/TradeCenter/scripts.pory"
-	giveitem ITEM_PROTEIN, 30
 # 174 "data/maps/TradeCenter/scripts.pory"
-	giveitem ITEM_HP_UP, 30
-# 175 "data/maps/TradeCenter/scripts.pory"
-	giveitem ITEM_IRON, 30
-# 176 "data/maps/TradeCenter/scripts.pory"
-	clearflag FLAG_VISITED_RUSTBORO_CITY
-# 177 "data/maps/TradeCenter/scripts.pory"
-	clearflag FLAG_HIDE_REGIROCK_RUINS_ROCK
-# 178 "data/maps/TradeCenter/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 180 "data/maps/TradeCenter/scripts.pory"
+# 176 "data/maps/TradeCenter/scripts.pory"
 	delay 40
-# 181 "data/maps/TradeCenter/scripts.pory"
+# 177 "data/maps/TradeCenter/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 182 "data/maps/TradeCenter/scripts.pory"
+# 178 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_REGI_DOORS_OPENED
-# 183 "data/maps/TradeCenter/scripts.pory"
-	givemon SPECIES_DARMANITAN, 90, , , , 2, , , , , , , , , , , , , , MOVE_TERA_STARSTORM, MOVE_WIDE_GUARD, MOVE_SHELL_SMASH, MOVE_MYSTICAL_FIRE
-# 184 "data/maps/TradeCenter/scripts.pory"
-	givemon SPECIES_DARMANITAN_GALAR, 90, , , , 2, , , , , , , , , , , , , , MOVE_TERA_STARSTORM, MOVE_WIDE_GUARD, MOVE_SHELL_SMASH, MOVE_MYSTICAL_FIRE
-# 197 "data/maps/TradeCenter/scripts.pory"
+# 179 "data/maps/TradeCenter/scripts.pory"
+	givemon SPECIES_DARMANITAN, 90, , , , 2, , , , , , , , , , , , , , MOVE_STEELSURGE, MOVE_WIDE_GUARD, MOVE_SHELL_SMASH, MOVE_MYSTICAL_FIRE
+# 193 "data/maps/TradeCenter/scripts.pory"
 	waitmessage
-# 198 "data/maps/TradeCenter/scripts.pory"
+# 194 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 199 "data/maps/TradeCenter/scripts.pory"
+# 195 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 Common_EventScript_HideGym0OptionalRewards::
-# 204 "data/maps/TradeCenter/scripts.pory"
+# 200 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_102_POTION
-# 205 "data/maps/TradeCenter/scripts.pory"
+# 201 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_104_POTION
-# 206 "data/maps/TradeCenter/scripts.pory"
+# 202 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_104_X_ACCURACY
-# 207 "data/maps/TradeCenter/scripts.pory"
+# 203 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_104_NORTH_NEW
 	return
 
 
 Common_EventScript_HideGym1OptionalRewards::
-# 212 "data/maps/TradeCenter/scripts.pory"
+# 208 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_6_SODA_POP
 	return
 
