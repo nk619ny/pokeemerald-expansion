@@ -212,7 +212,8 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
             || aiMoveEffect == EFFECT_EXPLOSION
             || nonVolatileStatus == MOVE_EFFECT_SLEEP
             || nonVolatileStatus == MOVE_EFFECT_TOXIC
-            || nonVolatileStatus == MOVE_EFFECT_PARALYSIS
+            || nonVolatileStatus == MOVE_EFFECT_PARALYSIS //RELEVANT CODE FOR THUNDER WAVE
+            || nonVolatileStatus == MOVE_EFFECT_THUNDER_WAVE
             || nonVolatileStatus == MOVE_EFFECT_BURN
             || aiMoveEffect == EFFECT_YAWN
             || aiMoveEffect == EFFECT_THUNDER_WAVE

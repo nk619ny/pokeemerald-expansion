@@ -901,7 +901,7 @@ static const u32 sStatusFlagsForMoveEffects[NUM_MOVE_EFFECTS] =
     [MOVE_EFFECT_PREVENT_ESCAPE] = STATUS2_ESCAPE_PREVENTION,
     [MOVE_EFFECT_NIGHTMARE]      = STATUS2_NIGHTMARE,
     [MOVE_EFFECT_THRASH]         = STATUS2_LOCK_CONFUSE,
-    [MOVE_EFFECT_THUNDER_WAVE]   = STATUS1_PARALYSIS,
+    [MOVE_EFFECT_THUNDER_WAVE]   = STATUS1_PARALYSIS, //RELEVANT CODE FOR THUNDER WAVE
 };
 
 static const u8 *const sMoveEffectBS_Ptrs[] =
@@ -1285,7 +1285,7 @@ static void Cmd_attackcanceler(void)
                             ABILITY_RUN_SCRIPT))
         return;
 
-    if (GetMoveNonVolatileStatus(gCurrentMove) == MOVE_EFFECT_PARALYSIS)
+    if (GetMoveNonVolatileStatus(gCurrentMove) == MOVE_EFFECT_PARALYSIS || GetMoveNonVolatileStatus(gCurrentMove) == MOVE_EFFECT_THUNDER_WAVE)
     {
         if (CanAbilityAbsorbMove(gBattlerAttacker,
                                  gBattlerTarget,
@@ -1503,7 +1503,12 @@ static bool32 AccuracyCalcHelper(u32 move, u32 battler)
     if ((gStatuses3[battler] & STATUS3_ALWAYS_HITS && gDisableStructs[battler].battlerWithSureHit == gBattlerAttacker)
      || (B_TOXIC_NEVER_MISS >= GEN_6
         && nonVolatileStatus == MOVE_EFFECT_TOXIC
-        && IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_POISON))
+        && IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_POISON)) //RELEVANT CODE FOR THUNDER WAVE
+
+     || (B_TOXIC_NEVER_MISS >= GEN_6
+        && nonVolatileStatus == MOVE_EFFECT_THUNDER_WAVE
+        && IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ELECTRIC)) //RELEVANT CODE FOR THUNDER WAVE
+
      || gStatuses4[battler] & STATUS4_GLAIVE_RUSH)
     {
         effect = TRUE;
@@ -3262,7 +3267,8 @@ void SetNonVolatileStatusCondition(u32 effectBattler, enum MoveEffects effect)
     // for synchronize
     if (effect == MOVE_EFFECT_POISON
      || effect == MOVE_EFFECT_TOXIC
-     || effect == MOVE_EFFECT_PARALYSIS
+     || effect == MOVE_EFFECT_PARALYSIS //RELEVANT CODE FOR THUNDER WAVE
+     || effect == MOVE_EFFECT_THUNDER_WAVE
      || effect == MOVE_EFFECT_BURN)
      {
         gBattleStruct->synchronizeMoveEffect = effect;

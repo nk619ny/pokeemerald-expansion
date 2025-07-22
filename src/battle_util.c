@@ -5737,6 +5737,7 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
         }
         break;
     case MOVE_EFFECT_PARALYSIS:
+    case MOVE_EFFECT_THUNDER_WAVE:
         if (gBattleMons[battlerDef].status1 & STATUS1_PARALYSIS)
         {
             battleScript = BattleScript_AlreadyParalyzed;
@@ -8637,6 +8638,14 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
                 RecordAbilityBattle(battlerDef, defAbility);
         }
         break;
+    case ABILITY_SUB_ZERO:
+        if (moveType == TYPE_ICE)
+        {
+            modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
+            if (damageCalcData->updateFlags)
+                RecordAbilityBattle(battlerDef, defAbility);
+        }
+        break;
     case ABILITY_DRY_SKIN:
         if (moveType == TYPE_FIRE)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
@@ -8895,6 +8904,10 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
         break;
     case ABILITY_ROCKY_PAYLOAD:
         if (moveType == TYPE_ROCK)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_PLANT_POSER:
+        if (moveType == TYPE_GRASS)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_PROTOSYNTHESIS:

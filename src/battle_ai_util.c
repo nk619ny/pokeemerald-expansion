@@ -966,7 +966,7 @@ static bool32 AI_IsMoveEffectInPlus(u32 battlerAtk, u32 battlerDef, u32 move, s3
                         return TRUE;
                     break;
                 case MOVE_EFFECT_PARALYSIS:
-                case MOVE_EFFECT_THUNDER_WAVE:
+                case MOVE_EFFECT_THUNDER_WAVE: //RELEVANT CODE FOR THUNDER WAVE
                     if (AI_CanParalyze(battlerAtk, battlerDef, abilityDef, move, MOVE_NONE))
                         return TRUE;
                     break;
@@ -1728,10 +1728,15 @@ bool32 IsMoveEncouragedToHit(u32 battlerAtk, u32 battlerDef, u32 move)
         return TRUE;
 
     u32 nonVolatileStatus = GetMoveNonVolatileStatus(move);
-    if (B_TOXIC_NEVER_MISS >= GEN_6
+    if ((B_TOXIC_NEVER_MISS >= GEN_6
         && nonVolatileStatus == MOVE_EFFECT_TOXIC
-        && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_POISON))
-        return TRUE;
+        && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_POISON)) || 
+
+        (B_TOXIC_NEVER_MISS >= GEN_6
+        && nonVolatileStatus == MOVE_EFFECT_THUNDER_WAVE
+        && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_ELECTRIC)))
+
+        return TRUE; //RELEVANT CODE FOR THUNDER WAVE
 
     // discouraged from hitting
     weather = AI_GetWeather();
@@ -1814,7 +1819,7 @@ bool32 ShouldSetHail(u32 battler, u32 ability, enum ItemHoldEffect holdEffect)
      || ability == ABILITY_SLUSH_RUSH
      || ability == ABILITY_MAGIC_GUARD
      || ability == ABILITY_OVERCOAT
-      || ability == ABILITY_SUB_ZERO
+     || ability == ABILITY_SUB_ZERO
      || holdEffect == HOLD_EFFECT_SAFETY_GOGGLES
      || IS_BATTLER_OF_TYPE(battler, TYPE_ICE)
      || HasMoveWithFlag(battler, MoveAlwaysHitsInHailSnow)
@@ -3740,7 +3745,8 @@ bool32 PartnerMoveEffectIsStatusSameTarget(u32 battlerAtkPartner, u32 battlerDef
      && (nonVolatileStatus == MOVE_EFFECT_POISON
        || nonVolatileStatus == MOVE_EFFECT_TOXIC
        || nonVolatileStatus == MOVE_EFFECT_SLEEP
-       || nonVolatileStatus == MOVE_EFFECT_PARALYSIS
+       || nonVolatileStatus == MOVE_EFFECT_PARALYSIS //RELEVANT CODE FOR THUNDER WAVE
+       || nonVolatileStatus == MOVE_EFFECT_THUNDER_WAVE
        || nonVolatileStatus == MOVE_EFFECT_BURN
        || partnerEffect == EFFECT_YAWN))
         return TRUE;
@@ -4626,7 +4632,8 @@ u32 IncreaseSubstituteMoveScore(u32 battlerAtk, u32 battlerDef, u32 move)
 
     if (HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_SLEEP)
      || HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_TOXIC)
-     || HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_PARALYSIS)
+     || HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_PARALYSIS) //RELEVANT CODE FOR THUNDER WAVE
+     || HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_THUNDER_WAVE)
      || HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_BURN)
      || HasMoveWithEffect(battlerDef, EFFECT_CONFUSE)
      || HasMoveWithEffect(battlerDef, EFFECT_LEECH_SEED))

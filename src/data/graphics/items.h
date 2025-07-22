@@ -996,7 +996,6 @@ const u16 gItemIconPalette_Inteleonite[] = INCBIN_U16("graphics/items/icon_palet
 
 const u32 gItemIcon_Miloticite[] = INCBIN_U32("graphics/items/icons/miloticite.4bpp.lz");
 const u16 gItemIconPalette_Miloticite[] = INCBIN_U16("graphics/items/icon_palettes/miloticite.gbapal");
-//The ones below this do not have custom graphics yet
 
 const u32 gItemIcon_Dragonitite[] = INCBIN_U32("graphics/items/icons/dragonitite.4bpp.lz");
 const u16 gItemIconPalette_Dragonitite[] = INCBIN_U16("graphics/items/icon_palettes/dragonitite.gbapal");
@@ -1012,6 +1011,7 @@ const u16 gItemIconPalette_Vikavolite[] = INCBIN_U16("graphics/items/icon_palett
 
 const u32 gItemIcon_Slowkingite[] = INCBIN_U32("graphics/items/icons/slowkingite.4bpp.lz");
 const u16 gItemIconPalette_Slowkingite[] = INCBIN_U16("graphics/items/icon_palettes/slowkingite.gbapal");
+//the above mega stones have custom colors
 
 // Gems
 

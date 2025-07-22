@@ -2114,6 +2114,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6,
     },
 
+    [ABILITY_PLANT_POSER] =
+    {
+        .name = _("Plant Poser"),
+        .description = COMPOUND_STRING("Powers up Grass moves."),
+        .aiRating = 6,
+    },
+
     [ABILITY_WIND_POWER] =
     {
         .name = _("Wind Power"),

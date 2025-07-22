@@ -2880,6 +2880,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             ADJUST_SCORE(-20);
         break;
     case MOVE_EFFECT_PARALYSIS:
+    case MOVE_EFFECT_THUNDER_WAVE: //RELEVANT CODE FOR THUNDER WAVE
         if (!AI_CanParalyze(battlerAtk, battlerDef, aiData->abilities[battlerDef], move, aiData->partnerMove))
             ADJUST_SCORE(-10);
         if (!ShouldParalyze(battlerAtk, battlerDef, aiData->abilities[battlerDef]))
@@ -3829,7 +3830,8 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
     case MOVE_EFFECT_SLEEP:
         IncreaseSleepScore(battlerAtk, battlerDef, move, &score);
         break;
-    case MOVE_EFFECT_PARALYSIS:
+    case MOVE_EFFECT_PARALYSIS: //RELEVANT CODE FOR THUNDER WAVE
+    case MOVE_EFFECT_THUNDER_WAVE:
         IncreaseParalyzeScore(battlerAtk, battlerDef, move, &score);
         break;
     case MOVE_EFFECT_BURN:
@@ -4216,6 +4218,7 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
         {
         case MOVE_EFFECT_POISON:
         case MOVE_EFFECT_PARALYSIS:
+        case MOVE_EFFECT_THUNDER_WAVE:
             encourage = TRUE;
             break;
         }

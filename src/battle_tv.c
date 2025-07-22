@@ -814,7 +814,8 @@ static void AddMovePoints(u8 caseId, u16 arg1, u8 arg2, u8 arg3)
         case MOVE_EFFECT_SLEEP:
             baseFromEffect++;
             break;
-        case MOVE_EFFECT_PARALYSIS:
+        case MOVE_EFFECT_PARALYSIS: //RELEVANT CODE FOR THUNDER WAVE
+        case MOVE_EFFECT_THUNDER_WAVE:
             baseFromEffect += 3;
             break;
         case MOVE_EFFECT_BURN:
