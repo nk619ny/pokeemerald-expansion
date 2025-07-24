@@ -213,3 +213,6 @@ const u16 gMetatileAttributes_Glacier[] = INCBIN_U16("data/tilesets/secondary/gl
 
 const u16 gMetatiles_CustomGeneral[] = INCBIN_U16("data/tilesets/primary/custom_general/metatiles.bin");
 const u16 gMetatileAttributes_CustomGeneral[] = INCBIN_U16("data/tilesets/primary/custom_general/metatile_attributes.bin");
+
+const u16 gMetatiles_Ultra_Space[] = INCBIN_U16("data/tilesets/secondary/ultra_space/metatiles.bin");
+const u16 gMetatileAttributes_Ultra_Space[] = INCBIN_U16("data/tilesets/secondary/ultra_space/metatile_attributes.bin");

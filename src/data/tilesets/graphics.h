@@ -1672,3 +1672,22 @@ const u16 gTilesetPalettes_CustomGeneral[][16] =
 };
 
 const u32 gTilesetTiles_CustomGeneral[] = INCBIN_U32("data/tilesets/primary/custom_general/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Ultra_Space[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/ultra_space/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Ultra_Space[] = INCBIN_U32("data/tilesets/secondary/ultra_space/tiles.4bpp.lz");

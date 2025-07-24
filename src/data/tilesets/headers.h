@@ -861,3 +861,14 @@ const struct Tileset gTileset_CustomGeneral =
     .metatileAttributes = gMetatileAttributes_CustomGeneral,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Ultra_Space =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Ultra_Space,
+    .palettes = gTilesetPalettes_Ultra_Space,
+    .metatiles = gMetatiles_Ultra_Space,
+    .metatileAttributes = gMetatileAttributes_Ultra_Space,
+    .callback = NULL,
+};
