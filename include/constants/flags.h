@@ -673,7 +673,7 @@
 #define FLAG_HIDE_TRAINER_HILL_AUDIENCE  0x272 // formerly not used
 #define FLAG_SEAFLOOR_SHELLY_DEFEATED_MOVED  0x273 // formerly not used
 #define FLAG_ALL_ELITE_FOUR_BEATEN  0x274 // formerly not used
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
+#define FLAG_NO_TRAINER_BATTLE  0x275 // formerly not used
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
 #define FLAG_UNUSED_0x278  0x278 // Unused Flag
