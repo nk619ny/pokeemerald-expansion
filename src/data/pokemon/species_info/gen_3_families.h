@@ -5758,7 +5758,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_VOLBEAT] =
     {
         .baseHP        = 65 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 20 : 0),
-        .baseAttack    = 73 - (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 30 : 0),
+        .baseAttack    = 73 - (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 11 : 0),
         .baseDefense   = (P_UPDATED_STATS >= GEN_7 ? 75 : 55),
         .baseSpeed     = 85 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 15 : 0),
         .baseSpAttack  = (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 95 : 47),

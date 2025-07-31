@@ -13,9 +13,22 @@
 #include "overworld.h"
 #include "wallclock.h"
 #include "constants/form_change_types.h"
+#include "fake_rtc.h"
 
 static void UpdatePerDay(struct Time *localTime);
 static void UpdatePerMinute(struct Time *localTime);
+
+
+static u32 GetCurrentMinuteCount(void)
+{
+#if OW_USE_FAKE_RTC
+    struct SiiRtcInfo rtc;
+    FakeRtc_GetRawInfo(&rtc);
+    return (HOURS_PER_DAY * MINUTES_PER_HOUR) * RtcGetDayCount(&rtc) + MINUTES_PER_HOUR * rtc.hour + rtc.minute;
+#else
+    return RtcGetMinuteCount();
+#endif
+}
 
 void InitTimeBasedEvents(void)
 {
@@ -61,17 +74,22 @@ static void UpdatePerDay(struct Time *localTime)
 
 static void UpdatePerMinute(struct Time *localTime)
 {
-    struct Time difference;
     int minutes;
+    static u32 lastMinuteCount = 0;
+    u32 currentMinuteCount = GetCurrentMinuteCount();
 
-    CalcTimeDifference(&difference, &gSaveBlock2Ptr->lastBerryTreeUpdate, localTime);
-    minutes = 24 * 60 * difference.days + 60 * difference.hours + difference.minutes;
+    // On first call, initialize lastMinuteCount
+    if (lastMinuteCount == 0)
+        lastMinuteCount = currentMinuteCount;
+
+    minutes = currentMinuteCount - lastMinuteCount;
+
     if (minutes != 0)
     {
         if (minutes >= 0)
         {
             BerryTreeTimeUpdate(minutes);
-            gSaveBlock2Ptr->lastBerryTreeUpdate = *localTime;
+            lastMinuteCount = currentMinuteCount;
         }
     }
 }
