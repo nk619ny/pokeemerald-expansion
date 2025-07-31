@@ -176,6 +176,7 @@ script MauvilleCity_EventScript_Temporary{
     delay(40)
 	fadescreenswapbuffers(FADE_FROM_BLACK)
 	setflag(FLAG_REGI_DOORS_OPENED)
+	setflag(FLAG_NO_TRAINER_BATTLE)
 	givemon(SPECIES_DARMANITAN,90,,,,2,,,,,,,,,,,,,,MOVE_STEELSURGE,MOVE_WIDE_GUARD,MOVE_SHELL_SMASH,MOVE_MYSTICAL_FIRE)
 	//givemon(SPECIES_DARMANITAN_GALAR,90,,,,2,,,,,,,,,,,,,,MOVE_TERA_STARSTORM,MOVE_WIDE_GUARD,MOVE_SHELL_SMASH,MOVE_MYSTICAL_FIRE)
 
@@ -206,5 +207,244 @@ script Common_EventScript_HideGym0OptionalRewards {
 
 script Common_EventScript_HideGym1OptionalRewards {
 	setflag(FLAG_RECEIVED_6_SODA_POP)
+	return
+}
+
+script Common_EventScipt_CheckForBerryTreeEncounter {
+	if(flag(FLAG_PREVENT_WILD_ENCOUNTERS)) {
+		return
+	}
+	else {
+		random(100)
+		if (var(VAR_RESULT) < 25) {
+			goto(Common_EventScript_BerryTreeEncounter)
+		}
+		else {
+			return
+		}
+	}
+}
+
+script Common_EventScript_BerryTreeEncounter {
+	lock
+	switch(var(VAR_0x8004)) {
+		case BERRY_STAGE_SPROUTED:
+			call(Common_EventScript_BerryTreeSproutedEncounter)
+			msgbox(Common_Text_BerryTreeSproutEncounter, MSGBOX_DEFAULT)
+			waitmessage
+			waitbuttonpress
+			dowildbattle
+		case BERRY_STAGE_TALLER:
+			call(Common_EventScript_BerryTreeTallEncounter)
+			msgbox(Common_Text_BerryTreeTallEncounter, MSGBOX_DEFAULT)
+			waitmessage
+			waitbuttonpress
+			dowildbattle
+		case BERRY_STAGE_FLOWERING:
+			call(Common_EventScript_BerryTreeFlowersEncounter)
+			msgbox(Common_Text_BerryTreeFlowersEncounter, MSGBOX_DEFAULT)
+			waitmessage
+			waitbuttonpress
+			dowildbattle
+		case BERRY_STAGE_BERRIES:
+			call(Common_EventScript_BerryTreeBerriesEncounter)
+			msgbox(Common_Text_BerryTreeBerriesEncounter, MSGBOX_DEFAULT)
+			waitmessage
+			waitbuttonpress
+			dowildbattle
+		default:
+			releaseall
+			end
+	}
+	releaseall
+	end
+}
+
+
+script Common_EventScript_BerryTreeSproutedEncounter {
+	random(100)
+	if (var(VAR_RESULT) < 14) {
+		setwildbattle(SPECIES_CATERPIE, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 28) {
+		setwildbattle(SPECIES_WEEDLE, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 42) {
+		setwildbattle(SPECIES_WURMPLE, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 56) {
+		setwildbattle(SPECIES_BURMY, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 70) {
+		setwildbattle(SPECIES_SCATTERBUG_FANCY, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 80) {
+		setwildbattle(SPECIES_VENONAT, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 90) {
+		setwildbattle(SPECIES_SPINARAK, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 95) {
+		setwildbattle(SPECIES_SHROOMISH, 12, ITEM_NONE)
+	}
+	else {
+		if(flag(FLAG_DEFEATED_DEWFORD_GYM)){
+			setwildbattle(SPECIES_HERACROSS, 24, ITEM_NONE)
+		}
+		else {
+			goto(Common_EventScript_BerryTreeEncounterFled)
+		}
+	}
+	return
+}
+
+script Common_EventScript_BerryTreeTallEncounter {
+	random(100)
+	if (var(VAR_RESULT) < 14) {
+		setwildbattle(SPECIES_SPEAROW, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 28) {
+		setwildbattle(SPECIES_HOOTHOOT, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 42) {
+		setwildbattle(SPECIES_TAILLOW, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 56) {
+		setwildbattle(SPECIES_STARLY, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 70) {
+		setwildbattle(SPECIES_PIKIPEK, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 80) {
+		setwildbattle(SPECIES_LEDYBA, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 90) {
+		setwildbattle(SPECIES_SEWADDLE, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 95) {
+		setwildbattle(SPECIES_SLAKOTH, 12, ITEM_NONE)
+	}
+	else {
+		if(flag(FLAG_DEFEATED_DEWFORD_GYM)){
+			setwildbattle(SPECIES_EMOLGA, 24, ITEM_NONE)
+		}
+		else {
+			goto(Common_EventScript_BerryTreeEncounterFled)
+		}
+	}
+	return
+}
+
+script Common_EventScript_BerryTreeFlowersEncounter {
+	random(100)
+	if (var(VAR_RESULT) < 20) {
+		setwildbattle(SPECIES_COMBEE, 12, ITEM_HONEY)
+	}
+	elif (var(VAR_RESULT) < 40) {
+		setwildbattle(SPECIES_CHERUBI, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 50) {
+		setwildbattle(SPECIES_CUTIEFLY, 12, ITEM_HONEY)
+	}
+	elif (var(VAR_RESULT) < 60) {
+		setwildbattle(SPECIES_PINECO, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 70) {
+		setwildbattle(SPECIES_EXEGGCUTE, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 80) {
+		setwildbattle(SPECIES_SEEDOT, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 90) {
+		call(Common_EventScript_BerryTreeFlowersEncounterFlabebe)
+		//setwildbattle(SPECIES_FLABEBE, 12, ITEM_NONE)
+	}
+	elif (var(VAR_RESULT) < 95) {
+		if(flag(FLAG_DEFEATED_DEWFORD_GYM)){
+			setwildbattle(SPECIES_ILLUMISE, 24, ITEM_NONE)
+		}
+		else {
+			goto(Common_EventScript_BerryTreeEncounterFled)
+		}
+	}
+	else {
+		if(flag(FLAG_DEFEATED_DEWFORD_GYM)){
+			setwildbattle(SPECIES_VOLBEAT, 24, ITEM_NONE)
+		}
+		else {
+			goto(Common_EventScript_BerryTreeEncounterFled)
+		}
+	}
+	return
+}
+
+script Common_EventScript_BerryTreeBerriesEncounter {
+	random(100)
+	if (var(VAR_RESULT) < 80) {
+		setwildbattle(SPECIES_CRABRAWLER, 12, ITEM_BERRY_JUICE)
+	}
+	elif (var(VAR_RESULT) < 40) {
+		setwildbattle(SPECIES_SKWOVET, 12, ITEM_BERRY_JUICE)
+	}
+	elif (var(VAR_RESULT) < 60) {
+		setwildbattle(SPECIES_AIPOM, 12, ITEM_BERRY_JUICE)
+	}
+	elif (var(VAR_RESULT) < 70) {
+		setwildbattle(SPECIES_PANSAGE, 12, ITEM_BERRY_JUICE)
+	}
+	elif (var(VAR_RESULT) < 80) {
+		setwildbattle(SPECIES_PANSEAR, 12, ITEM_BERRY_JUICE)
+	}
+	elif (var(VAR_RESULT) < 90) {
+		setwildbattle(SPECIES_PANPOUR, 12, ITEM_BERRY_JUICE)
+	}
+	elif (var(VAR_RESULT) < 95) {
+		setwildbattle(SPECIES_APPLIN, 12, ITEM_BERRY_JUICE)
+	}
+	else {
+		setwildbattle(SPECIES_MUNCHLAX, 12, ITEM_BERRY_JUICE)
+	}
+	return
+}
+
+script Common_EventScript_BerryTreeEncounterFled {
+	lock
+	msgbox(format("There's a wild Pokémon in the berry plant!\N...but it fled!"), MSGBOX_DEFAULT)
+	waitmessage
+	closemessage
+	releaseall
+	end
+}
+
+text Common_Text_BerryTreeSproutEncounter {
+	format("There's a wild Pokémon in the sprouting berry tree!")
+}
+
+text Common_Text_BerryTreeTallEncounter {
+	format("There's a wild Pokémon in the growing berry tree!")
+}
+
+text Common_Text_BerryTreeFlowersEncounter {
+	format("There's a wild Pokémon in the flowering berry tree!")
+}
+
+text Common_Text_BerryTreeBerriesEncounter {
+	format("There's a wild Pokémon eating the berries in the tree!")
+}
+
+script Common_EventScript_BerryTreeFlowersEncounterFlabebe {
+	random(4)
+	switch(var(VAR_RESULT)) {
+		case 0:
+			setwildbattle(SPECIES_FLABEBE_RED, 12, ITEM_NONE)
+		case 1:
+			setwildbattle(SPECIES_FLABEBE_BLUE, 12, ITEM_NONE)
+		case 2:
+			setwildbattle(SPECIES_FLABEBE_YELLOW, 12, ITEM_NONE)
+		case 3:
+			setwildbattle(SPECIES_FLABEBE_ORANGE, 12, ITEM_NONE)
+		default:
+			setwildbattle(SPECIES_FLABEBE_WHITE, 12, ITEM_NONE) // Fallback to white if something goes wrong.
+	}
 	return
 }

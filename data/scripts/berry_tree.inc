@@ -97,6 +97,7 @@ BerryTree_EventScript_CheckBerryStage2::
 	message BerryTree_Text_BerryGrowthStage2
 	waitmessage
 	waitbuttonpress
+	call Common_EventScipt_CheckForBerryTreeEncounter
 	goto BerryTree_EventScript_WantToWater
 
 BerryTree_EventScript_CheckBerryStage3::
@@ -105,6 +106,7 @@ BerryTree_EventScript_CheckBerryStage3::
 	message BerryTree_Text_BerryGrowthStage3
 	waitmessage
 	waitbuttonpress
+	call Common_EventScipt_CheckForBerryTreeEncounter
 	goto BerryTree_EventScript_WantToWater
 
 BerryTree_EventScript_CheckBerryStageTrunk::
@@ -130,6 +132,7 @@ BerryTree_EventScript_CheckBerryStage4::
 	message BerryTree_Text_BerryGrowthStage4
 	waitmessage
 	waitbuttonpress
+	call Common_EventScipt_CheckForBerryTreeEncounter
 	goto BerryTree_EventScript_WantToWater
 
 @ VAR_0x8005 here is the number of times watered
@@ -157,6 +160,7 @@ BerryTree_EventScript_CheckBerryFullyGrown::
 .if OW_BERRY_MUTATIONS == TRUE
 	goto_if_eq VAR_RESULT, TRUE, BerryTree_EventScript_CheckBerryFullyGrown_Mutation
 .endif
+	call Common_EventScipt_CheckForBerryTreeEncounter
 	msgbox BerryTree_Text_WantToPick, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, BerryTree_EventScript_PickBerry
 	goto_if_eq VAR_RESULT, NO, BerryTree_EventScript_CancelPickingBerry
