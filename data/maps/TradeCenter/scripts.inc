@@ -300,51 +300,53 @@ MauvilleCity_EventScript_Temporary::
 	lock
 # 149 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_HM_WATERFALL
-# 174 "data/maps/TradeCenter/scripts.pory"
+# 150 "data/maps/TradeCenter/scripts.pory"
+	goto EventScript_RustboroCity_DevonCorp_2F_NewFossilScript
+# 175 "data/maps/TradeCenter/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 176 "data/maps/TradeCenter/scripts.pory"
-	delay 40
 # 177 "data/maps/TradeCenter/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	delay 40
 # 178 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_REGI_DOORS_OPENED
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 179 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_NO_TRAINER_BATTLE
+	setflag FLAG_REGI_DOORS_OPENED
 # 180 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_NO_TRAINER_BATTLE
+# 181 "data/maps/TradeCenter/scripts.pory"
 	givemon SPECIES_DARMANITAN, 90, , , , 2, , , , , , , , , , , , , , MOVE_STEELSURGE, MOVE_WIDE_GUARD, MOVE_SHELL_SMASH, MOVE_MYSTICAL_FIRE
-# 194 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
 # 195 "data/maps/TradeCenter/scripts.pory"
-	closemessage
+	waitmessage
 # 196 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 197 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 Common_EventScript_HideGym0OptionalRewards::
-# 201 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_102_POTION
 # 202 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_104_POTION
+	setflag FLAG_ITEM_ROUTE_102_POTION
 # 203 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_104_X_ACCURACY
+	setflag FLAG_ITEM_ROUTE_104_POTION
 # 204 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_104_X_ACCURACY
+# 205 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_104_NORTH_NEW
 	return
 
 
 Common_EventScript_HideGym1OptionalRewards::
-# 209 "data/maps/TradeCenter/scripts.pory"
+# 210 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_6_SODA_POP
 	return
 
 
 Common_EventScipt_CheckForBerryTreeEncounter::
-# 214 "data/maps/TradeCenter/scripts.pory"
+# 215 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_PREVENT_WILD_ENCOUNTERS, Common_EventScipt_CheckForBerryTreeEncounter_1
-# 218 "data/maps/TradeCenter/scripts.pory"
-	random 100
 # 219 "data/maps/TradeCenter/scripts.pory"
+	random 100
+# 220 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 25
 	goto_if_lt Common_EventScipt_CheckForBerryTreeEncounter_4
 	return
@@ -353,447 +355,447 @@ Common_EventScipt_CheckForBerryTreeEncounter_1:
 	return
 
 Common_EventScipt_CheckForBerryTreeEncounter_4:
-# 220 "data/maps/TradeCenter/scripts.pory"
+# 221 "data/maps/TradeCenter/scripts.pory"
 	goto Common_EventScript_BerryTreeEncounter
 	return
 
 
 Common_EventScript_BerryTreeEncounter::
-# 229 "data/maps/TradeCenter/scripts.pory"
-	lock
 # 230 "data/maps/TradeCenter/scripts.pory"
-	switch VAR_0x8004
+	lock
 # 231 "data/maps/TradeCenter/scripts.pory"
+	switch VAR_0x8004
+# 232 "data/maps/TradeCenter/scripts.pory"
 	case BERRY_STAGE_SPROUTED, Common_EventScript_BerryTreeEncounter_3
-# 237 "data/maps/TradeCenter/scripts.pory"
+# 238 "data/maps/TradeCenter/scripts.pory"
 	case BERRY_STAGE_TALLER, Common_EventScript_BerryTreeEncounter_4
-# 243 "data/maps/TradeCenter/scripts.pory"
+# 244 "data/maps/TradeCenter/scripts.pory"
 	case BERRY_STAGE_FLOWERING, Common_EventScript_BerryTreeEncounter_5
-# 249 "data/maps/TradeCenter/scripts.pory"
+# 250 "data/maps/TradeCenter/scripts.pory"
 	case BERRY_STAGE_BERRIES, Common_EventScript_BerryTreeEncounter_6
-# 256 "data/maps/TradeCenter/scripts.pory"
+# 257 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_BerryTreeEncounter_1:
-# 259 "data/maps/TradeCenter/scripts.pory"
+# 260 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_BerryTreeEncounter_3:
-# 232 "data/maps/TradeCenter/scripts.pory"
-	call Common_EventScript_BerryTreeSproutedEncounter
 # 233 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_Text_BerryTreeSproutEncounter, MSGBOX_DEFAULT
+	call Common_EventScript_BerryTreeSproutedEncounter
 # 234 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
+	msgbox Common_Text_BerryTreeSproutEncounter, MSGBOX_DEFAULT
 # 235 "data/maps/TradeCenter/scripts.pory"
-	waitbuttonpress
+	waitmessage
 # 236 "data/maps/TradeCenter/scripts.pory"
+	waitbuttonpress
+# 237 "data/maps/TradeCenter/scripts.pory"
 	dowildbattle
 	goto Common_EventScript_BerryTreeEncounter_1
 
 Common_EventScript_BerryTreeEncounter_4:
-# 238 "data/maps/TradeCenter/scripts.pory"
-	call Common_EventScript_BerryTreeTallEncounter
 # 239 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_Text_BerryTreeTallEncounter, MSGBOX_DEFAULT
+	call Common_EventScript_BerryTreeTallEncounter
 # 240 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
+	msgbox Common_Text_BerryTreeTallEncounter, MSGBOX_DEFAULT
 # 241 "data/maps/TradeCenter/scripts.pory"
-	waitbuttonpress
+	waitmessage
 # 242 "data/maps/TradeCenter/scripts.pory"
+	waitbuttonpress
+# 243 "data/maps/TradeCenter/scripts.pory"
 	dowildbattle
 	goto Common_EventScript_BerryTreeEncounter_1
 
 Common_EventScript_BerryTreeEncounter_5:
-# 244 "data/maps/TradeCenter/scripts.pory"
-	call Common_EventScript_BerryTreeFlowersEncounter
 # 245 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_Text_BerryTreeFlowersEncounter, MSGBOX_DEFAULT
+	call Common_EventScript_BerryTreeFlowersEncounter
 # 246 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
+	msgbox Common_Text_BerryTreeFlowersEncounter, MSGBOX_DEFAULT
 # 247 "data/maps/TradeCenter/scripts.pory"
-	waitbuttonpress
+	waitmessage
 # 248 "data/maps/TradeCenter/scripts.pory"
+	waitbuttonpress
+# 249 "data/maps/TradeCenter/scripts.pory"
 	dowildbattle
 	goto Common_EventScript_BerryTreeEncounter_1
 
 Common_EventScript_BerryTreeEncounter_6:
-# 250 "data/maps/TradeCenter/scripts.pory"
-	call Common_EventScript_BerryTreeBerriesEncounter
 # 251 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_Text_BerryTreeBerriesEncounter, MSGBOX_DEFAULT
+	call Common_EventScript_BerryTreeBerriesEncounter
 # 252 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
+	msgbox Common_Text_BerryTreeBerriesEncounter, MSGBOX_DEFAULT
 # 253 "data/maps/TradeCenter/scripts.pory"
-	waitbuttonpress
+	waitmessage
 # 254 "data/maps/TradeCenter/scripts.pory"
+	waitbuttonpress
+# 255 "data/maps/TradeCenter/scripts.pory"
 	dowildbattle
 	goto Common_EventScript_BerryTreeEncounter_1
 
 
 Common_EventScript_BerryTreeSproutedEncounter::
-# 265 "data/maps/TradeCenter/scripts.pory"
-	random 100
 # 266 "data/maps/TradeCenter/scripts.pory"
+	random 100
+# 267 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 14
 	goto_if_lt Common_EventScript_BerryTreeSproutedEncounter_2
-# 269 "data/maps/TradeCenter/scripts.pory"
+# 270 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 28
 	goto_if_lt Common_EventScript_BerryTreeSproutedEncounter_3
-# 272 "data/maps/TradeCenter/scripts.pory"
+# 273 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 42
 	goto_if_lt Common_EventScript_BerryTreeSproutedEncounter_4
-# 275 "data/maps/TradeCenter/scripts.pory"
+# 276 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 56
 	goto_if_lt Common_EventScript_BerryTreeSproutedEncounter_5
-# 278 "data/maps/TradeCenter/scripts.pory"
+# 279 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 70
 	goto_if_lt Common_EventScript_BerryTreeSproutedEncounter_6
-# 281 "data/maps/TradeCenter/scripts.pory"
+# 282 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 80
 	goto_if_lt Common_EventScript_BerryTreeSproutedEncounter_7
-# 284 "data/maps/TradeCenter/scripts.pory"
+# 285 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 90
 	goto_if_lt Common_EventScript_BerryTreeSproutedEncounter_8
-# 287 "data/maps/TradeCenter/scripts.pory"
+# 288 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 95
 	goto_if_lt Common_EventScript_BerryTreeSproutedEncounter_9
-# 291 "data/maps/TradeCenter/scripts.pory"
+# 292 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, Common_EventScript_BerryTreeSproutedEncounter_19
-# 295 "data/maps/TradeCenter/scripts.pory"
+# 296 "data/maps/TradeCenter/scripts.pory"
 	goto Common_EventScript_BerryTreeEncounterFled
 Common_EventScript_BerryTreeSproutedEncounter_1:
 	return
 
 Common_EventScript_BerryTreeSproutedEncounter_2:
-# 267 "data/maps/TradeCenter/scripts.pory"
+# 268 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_CATERPIE, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeSproutedEncounter_1
 
 Common_EventScript_BerryTreeSproutedEncounter_3:
-# 270 "data/maps/TradeCenter/scripts.pory"
+# 271 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_WEEDLE, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeSproutedEncounter_1
 
 Common_EventScript_BerryTreeSproutedEncounter_4:
-# 273 "data/maps/TradeCenter/scripts.pory"
+# 274 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_WURMPLE, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeSproutedEncounter_1
 
 Common_EventScript_BerryTreeSproutedEncounter_5:
-# 276 "data/maps/TradeCenter/scripts.pory"
+# 277 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_BURMY, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeSproutedEncounter_1
 
 Common_EventScript_BerryTreeSproutedEncounter_6:
-# 279 "data/maps/TradeCenter/scripts.pory"
+# 280 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_SCATTERBUG_FANCY, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeSproutedEncounter_1
 
 Common_EventScript_BerryTreeSproutedEncounter_7:
-# 282 "data/maps/TradeCenter/scripts.pory"
-	setwildbattle SPECIES_VENONAT, 12, ITEM_NONE
+# 283 "data/maps/TradeCenter/scripts.pory"
+	setwildbattle SPECIES_LEDYBA, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeSproutedEncounter_1
 
 Common_EventScript_BerryTreeSproutedEncounter_8:
-# 285 "data/maps/TradeCenter/scripts.pory"
+# 286 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_SPINARAK, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeSproutedEncounter_1
 
 Common_EventScript_BerryTreeSproutedEncounter_9:
-# 288 "data/maps/TradeCenter/scripts.pory"
+# 289 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_SHROOMISH, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeSproutedEncounter_1
 
 Common_EventScript_BerryTreeSproutedEncounter_19:
-# 292 "data/maps/TradeCenter/scripts.pory"
+# 293 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_HERACROSS, 24, ITEM_NONE
 	goto Common_EventScript_BerryTreeSproutedEncounter_1
 
 
 Common_EventScript_BerryTreeTallEncounter::
-# 302 "data/maps/TradeCenter/scripts.pory"
-	random 100
 # 303 "data/maps/TradeCenter/scripts.pory"
+	random 100
+# 304 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 14
 	goto_if_lt Common_EventScript_BerryTreeTallEncounter_2
-# 306 "data/maps/TradeCenter/scripts.pory"
+# 307 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 28
 	goto_if_lt Common_EventScript_BerryTreeTallEncounter_3
-# 309 "data/maps/TradeCenter/scripts.pory"
+# 310 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 42
 	goto_if_lt Common_EventScript_BerryTreeTallEncounter_4
-# 312 "data/maps/TradeCenter/scripts.pory"
+# 313 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 56
 	goto_if_lt Common_EventScript_BerryTreeTallEncounter_5
-# 315 "data/maps/TradeCenter/scripts.pory"
+# 316 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 70
 	goto_if_lt Common_EventScript_BerryTreeTallEncounter_6
-# 318 "data/maps/TradeCenter/scripts.pory"
+# 319 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 80
 	goto_if_lt Common_EventScript_BerryTreeTallEncounter_7
-# 321 "data/maps/TradeCenter/scripts.pory"
+# 322 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 90
 	goto_if_lt Common_EventScript_BerryTreeTallEncounter_8
-# 324 "data/maps/TradeCenter/scripts.pory"
+# 325 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 95
 	goto_if_lt Common_EventScript_BerryTreeTallEncounter_9
-# 328 "data/maps/TradeCenter/scripts.pory"
+# 329 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, Common_EventScript_BerryTreeTallEncounter_19
-# 332 "data/maps/TradeCenter/scripts.pory"
+# 333 "data/maps/TradeCenter/scripts.pory"
 	goto Common_EventScript_BerryTreeEncounterFled
 Common_EventScript_BerryTreeTallEncounter_1:
 	return
 
 Common_EventScript_BerryTreeTallEncounter_2:
-# 304 "data/maps/TradeCenter/scripts.pory"
+# 305 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_SPEAROW, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeTallEncounter_1
 
 Common_EventScript_BerryTreeTallEncounter_3:
-# 307 "data/maps/TradeCenter/scripts.pory"
+# 308 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_HOOTHOOT, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeTallEncounter_1
 
 Common_EventScript_BerryTreeTallEncounter_4:
-# 310 "data/maps/TradeCenter/scripts.pory"
+# 311 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_TAILLOW, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeTallEncounter_1
 
 Common_EventScript_BerryTreeTallEncounter_5:
-# 313 "data/maps/TradeCenter/scripts.pory"
+# 314 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_STARLY, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeTallEncounter_1
 
 Common_EventScript_BerryTreeTallEncounter_6:
-# 316 "data/maps/TradeCenter/scripts.pory"
+# 317 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_PIKIPEK, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeTallEncounter_1
 
 Common_EventScript_BerryTreeTallEncounter_7:
-# 319 "data/maps/TradeCenter/scripts.pory"
-	setwildbattle SPECIES_LEDYBA, 12, ITEM_NONE
+# 320 "data/maps/TradeCenter/scripts.pory"
+	setwildbattle SPECIES_VENONAT, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeTallEncounter_1
 
 Common_EventScript_BerryTreeTallEncounter_8:
-# 322 "data/maps/TradeCenter/scripts.pory"
+# 323 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_SEWADDLE, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeTallEncounter_1
 
 Common_EventScript_BerryTreeTallEncounter_9:
-# 325 "data/maps/TradeCenter/scripts.pory"
+# 326 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_SLAKOTH, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeTallEncounter_1
 
 Common_EventScript_BerryTreeTallEncounter_19:
-# 329 "data/maps/TradeCenter/scripts.pory"
+# 330 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_EMOLGA, 24, ITEM_NONE
 	goto Common_EventScript_BerryTreeTallEncounter_1
 
 
 Common_EventScript_BerryTreeFlowersEncounter::
-# 339 "data/maps/TradeCenter/scripts.pory"
-	random 100
 # 340 "data/maps/TradeCenter/scripts.pory"
+	random 100
+# 341 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 20
 	goto_if_lt Common_EventScript_BerryTreeFlowersEncounter_2
-# 343 "data/maps/TradeCenter/scripts.pory"
+# 344 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 40
 	goto_if_lt Common_EventScript_BerryTreeFlowersEncounter_3
-# 346 "data/maps/TradeCenter/scripts.pory"
+# 347 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 50
 	goto_if_lt Common_EventScript_BerryTreeFlowersEncounter_4
-# 349 "data/maps/TradeCenter/scripts.pory"
+# 350 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 60
 	goto_if_lt Common_EventScript_BerryTreeFlowersEncounter_5
-# 352 "data/maps/TradeCenter/scripts.pory"
+# 353 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 70
 	goto_if_lt Common_EventScript_BerryTreeFlowersEncounter_6
-# 355 "data/maps/TradeCenter/scripts.pory"
+# 356 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 80
 	goto_if_lt Common_EventScript_BerryTreeFlowersEncounter_7
-# 358 "data/maps/TradeCenter/scripts.pory"
+# 359 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 90
 	goto_if_lt Common_EventScript_BerryTreeFlowersEncounter_8
-# 362 "data/maps/TradeCenter/scripts.pory"
+# 363 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 95
 	goto_if_lt Common_EventScript_BerryTreeFlowersEncounter_9
-# 371 "data/maps/TradeCenter/scripts.pory"
+# 372 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, Common_EventScript_BerryTreeFlowersEncounter_22
-# 375 "data/maps/TradeCenter/scripts.pory"
+# 376 "data/maps/TradeCenter/scripts.pory"
 	goto Common_EventScript_BerryTreeEncounterFled
 Common_EventScript_BerryTreeFlowersEncounter_1:
 	return
 
 Common_EventScript_BerryTreeFlowersEncounter_2:
-# 341 "data/maps/TradeCenter/scripts.pory"
+# 342 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_COMBEE, 12, ITEM_HONEY
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 Common_EventScript_BerryTreeFlowersEncounter_3:
-# 344 "data/maps/TradeCenter/scripts.pory"
+# 345 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_CHERUBI, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 Common_EventScript_BerryTreeFlowersEncounter_4:
-# 347 "data/maps/TradeCenter/scripts.pory"
+# 348 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_CUTIEFLY, 12, ITEM_HONEY
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 Common_EventScript_BerryTreeFlowersEncounter_5:
-# 350 "data/maps/TradeCenter/scripts.pory"
+# 351 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_PINECO, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 Common_EventScript_BerryTreeFlowersEncounter_6:
-# 353 "data/maps/TradeCenter/scripts.pory"
+# 354 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_EXEGGCUTE, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 Common_EventScript_BerryTreeFlowersEncounter_7:
-# 356 "data/maps/TradeCenter/scripts.pory"
+# 357 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_SEEDOT, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 Common_EventScript_BerryTreeFlowersEncounter_8:
-# 359 "data/maps/TradeCenter/scripts.pory"
+# 360 "data/maps/TradeCenter/scripts.pory"
 	call Common_EventScript_BerryTreeFlowersEncounterFlabebe
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 Common_EventScript_BerryTreeFlowersEncounter_9:
-# 363 "data/maps/TradeCenter/scripts.pory"
+# 364 "data/maps/TradeCenter/scripts.pory"
 	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, Common_EventScript_BerryTreeFlowersEncounter_19
-# 367 "data/maps/TradeCenter/scripts.pory"
+# 368 "data/maps/TradeCenter/scripts.pory"
 	goto Common_EventScript_BerryTreeEncounterFled
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 Common_EventScript_BerryTreeFlowersEncounter_19:
-# 364 "data/maps/TradeCenter/scripts.pory"
+# 365 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_ILLUMISE, 24, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 Common_EventScript_BerryTreeFlowersEncounter_22:
-# 372 "data/maps/TradeCenter/scripts.pory"
+# 373 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_VOLBEAT, 24, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounter_1
 
 
 Common_EventScript_BerryTreeBerriesEncounter::
-# 382 "data/maps/TradeCenter/scripts.pory"
-	random 100
 # 383 "data/maps/TradeCenter/scripts.pory"
+	random 100
+# 384 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 80
 	goto_if_lt Common_EventScript_BerryTreeBerriesEncounter_2
-# 386 "data/maps/TradeCenter/scripts.pory"
+# 387 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 40
 	goto_if_lt Common_EventScript_BerryTreeBerriesEncounter_3
-# 389 "data/maps/TradeCenter/scripts.pory"
+# 390 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 60
 	goto_if_lt Common_EventScript_BerryTreeBerriesEncounter_4
-# 392 "data/maps/TradeCenter/scripts.pory"
+# 393 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 70
 	goto_if_lt Common_EventScript_BerryTreeBerriesEncounter_5
-# 395 "data/maps/TradeCenter/scripts.pory"
+# 396 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 80
 	goto_if_lt Common_EventScript_BerryTreeBerriesEncounter_6
-# 398 "data/maps/TradeCenter/scripts.pory"
+# 399 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 90
 	goto_if_lt Common_EventScript_BerryTreeBerriesEncounter_7
-# 401 "data/maps/TradeCenter/scripts.pory"
+# 402 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 95
 	goto_if_lt Common_EventScript_BerryTreeBerriesEncounter_8
-# 405 "data/maps/TradeCenter/scripts.pory"
+# 406 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_MUNCHLAX, 12, ITEM_BERRY_JUICE
 Common_EventScript_BerryTreeBerriesEncounter_1:
 	return
 
 Common_EventScript_BerryTreeBerriesEncounter_2:
-# 384 "data/maps/TradeCenter/scripts.pory"
+# 385 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_CRABRAWLER, 12, ITEM_BERRY_JUICE
 	goto Common_EventScript_BerryTreeBerriesEncounter_1
 
 Common_EventScript_BerryTreeBerriesEncounter_3:
-# 387 "data/maps/TradeCenter/scripts.pory"
+# 388 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_SKWOVET, 12, ITEM_BERRY_JUICE
 	goto Common_EventScript_BerryTreeBerriesEncounter_1
 
 Common_EventScript_BerryTreeBerriesEncounter_4:
-# 390 "data/maps/TradeCenter/scripts.pory"
+# 391 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_AIPOM, 12, ITEM_BERRY_JUICE
 	goto Common_EventScript_BerryTreeBerriesEncounter_1
 
 Common_EventScript_BerryTreeBerriesEncounter_5:
-# 393 "data/maps/TradeCenter/scripts.pory"
+# 394 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_PANSAGE, 12, ITEM_BERRY_JUICE
 	goto Common_EventScript_BerryTreeBerriesEncounter_1
 
 Common_EventScript_BerryTreeBerriesEncounter_6:
-# 396 "data/maps/TradeCenter/scripts.pory"
+# 397 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_PANSEAR, 12, ITEM_BERRY_JUICE
 	goto Common_EventScript_BerryTreeBerriesEncounter_1
 
 Common_EventScript_BerryTreeBerriesEncounter_7:
-# 399 "data/maps/TradeCenter/scripts.pory"
+# 400 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_PANPOUR, 12, ITEM_BERRY_JUICE
 	goto Common_EventScript_BerryTreeBerriesEncounter_1
 
 Common_EventScript_BerryTreeBerriesEncounter_8:
-# 402 "data/maps/TradeCenter/scripts.pory"
+# 403 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_APPLIN, 12, ITEM_BERRY_JUICE
 	goto Common_EventScript_BerryTreeBerriesEncounter_1
 
 
 Common_EventScript_BerryTreeEncounterFled::
-# 411 "data/maps/TradeCenter/scripts.pory"
-	lock
 # 412 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_BerryTreeEncounterFled_Text_0, MSGBOX_DEFAULT
+	lock
 # 413 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
+	msgbox Common_EventScript_BerryTreeEncounterFled_Text_0, MSGBOX_DEFAULT
 # 414 "data/maps/TradeCenter/scripts.pory"
-	closemessage
+	waitmessage
 # 415 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 416 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 Common_EventScript_BerryTreeFlowersEncounterFlabebe::
-# 436 "data/maps/TradeCenter/scripts.pory"
-	random 4
 # 437 "data/maps/TradeCenter/scripts.pory"
-	switch VAR_RESULT
+	random 4
 # 438 "data/maps/TradeCenter/scripts.pory"
+	switch VAR_RESULT
+# 439 "data/maps/TradeCenter/scripts.pory"
 	case 0, Common_EventScript_BerryTreeFlowersEncounterFlabebe_3
-# 440 "data/maps/TradeCenter/scripts.pory"
+# 441 "data/maps/TradeCenter/scripts.pory"
 	case 1, Common_EventScript_BerryTreeFlowersEncounterFlabebe_4
-# 442 "data/maps/TradeCenter/scripts.pory"
+# 443 "data/maps/TradeCenter/scripts.pory"
 	case 2, Common_EventScript_BerryTreeFlowersEncounterFlabebe_5
-# 444 "data/maps/TradeCenter/scripts.pory"
+# 445 "data/maps/TradeCenter/scripts.pory"
 	case 3, Common_EventScript_BerryTreeFlowersEncounterFlabebe_6
-# 447 "data/maps/TradeCenter/scripts.pory"
+# 448 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_FLABEBE_WHITE, 12, ITEM_NONE
 Common_EventScript_BerryTreeFlowersEncounterFlabebe_1:
 	return
 
 Common_EventScript_BerryTreeFlowersEncounterFlabebe_3:
-# 439 "data/maps/TradeCenter/scripts.pory"
+# 440 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_FLABEBE_RED, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounterFlabebe_1
 
 Common_EventScript_BerryTreeFlowersEncounterFlabebe_4:
-# 441 "data/maps/TradeCenter/scripts.pory"
+# 442 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_FLABEBE_BLUE, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounterFlabebe_1
 
 Common_EventScript_BerryTreeFlowersEncounterFlabebe_5:
-# 443 "data/maps/TradeCenter/scripts.pory"
+# 444 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_FLABEBE_YELLOW, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounterFlabebe_1
 
 Common_EventScript_BerryTreeFlowersEncounterFlabebe_6:
-# 445 "data/maps/TradeCenter/scripts.pory"
+# 446 "data/maps/TradeCenter/scripts.pory"
 	setwildbattle SPECIES_FLABEBE_ORANGE, 12, ITEM_NONE
 	goto Common_EventScript_BerryTreeFlowersEncounterFlabebe_1
 
@@ -808,7 +810,7 @@ Common_EventScript_SetFlashTest_Text_0:
 	.string "Do you have flash?$"
 
 Common_EventScript_BerryTreeEncounterFled_Text_0:
-# 412 "data/maps/TradeCenter/scripts.pory"
+# 413 "data/maps/TradeCenter/scripts.pory"
 	.string "There's a wild Pokémon in the berry\n"
 	.string "plant!\l"
 	.string "...but it fled!$"
@@ -826,21 +828,21 @@ Common_Text_CaveIsDarkNeedFlash::
 	.string "It's better to turn back.$"
 
 Common_Text_BerryTreeSproutEncounter::
-# 419 "data/maps/TradeCenter/scripts.pory"
+# 420 "data/maps/TradeCenter/scripts.pory"
 	.string "There's a wild Pokémon in the sprouting\n"
 	.string "berry tree!$"
 
 Common_Text_BerryTreeTallEncounter::
-# 423 "data/maps/TradeCenter/scripts.pory"
+# 424 "data/maps/TradeCenter/scripts.pory"
 	.string "There's a wild Pokémon in the growing\n"
 	.string "berry tree!$"
 
 Common_Text_BerryTreeFlowersEncounter::
-# 427 "data/maps/TradeCenter/scripts.pory"
+# 428 "data/maps/TradeCenter/scripts.pory"
 	.string "There's a wild Pokémon in the flowering\n"
 	.string "berry tree!$"
 
 Common_Text_BerryTreeBerriesEncounter::
-# 431 "data/maps/TradeCenter/scripts.pory"
+# 432 "data/maps/TradeCenter/scripts.pory"
 	.string "There's a wild Pokémon eating the\n"
 	.string "berries in the tree!$"

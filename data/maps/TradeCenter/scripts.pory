@@ -147,6 +147,7 @@ script Common_EventScript_CheckIfEliteFourComplete {
 script MauvilleCity_EventScript_Temporary{
 	lock
 	setflag(FLAG_RECEIVED_HM_WATERFALL)
+	goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
 	//pokenavcall
@@ -279,7 +280,7 @@ script Common_EventScript_BerryTreeSproutedEncounter {
 		setwildbattle(SPECIES_SCATTERBUG_FANCY, 12, ITEM_NONE)
 	}
 	elif (var(VAR_RESULT) < 80) {
-		setwildbattle(SPECIES_VENONAT, 12, ITEM_NONE)
+		setwildbattle(SPECIES_LEDYBA, 12, ITEM_NONE)
 	}
 	elif (var(VAR_RESULT) < 90) {
 		setwildbattle(SPECIES_SPINARAK, 12, ITEM_NONE)
@@ -316,7 +317,7 @@ script Common_EventScript_BerryTreeTallEncounter {
 		setwildbattle(SPECIES_PIKIPEK, 12, ITEM_NONE)
 	}
 	elif (var(VAR_RESULT) < 80) {
-		setwildbattle(SPECIES_LEDYBA, 12, ITEM_NONE)
+		setwildbattle(SPECIES_VENONAT, 12, ITEM_NONE)
 	}
 	elif (var(VAR_RESULT) < 90) {
 		setwildbattle(SPECIES_SEWADDLE, 12, ITEM_NONE)
