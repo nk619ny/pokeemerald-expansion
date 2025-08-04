@@ -1198,3 +1198,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/EverGrandeCity_SelectionRoom/scripts.inc"
 
 	.include "data/maps/DewfordGymCopy/scripts.inc"
+
+	.include "data/maps/Route103_West/scripts.inc"

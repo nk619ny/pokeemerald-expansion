@@ -184,7 +184,7 @@
     {
       "id": "LAYOUT_ROUTE103",
       "name": "Route103_Layout",
-      "width": 80,
+      "width": 45,
       "height": 26,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
@@ -4610,6 +4610,16 @@
       "secondary_tileset": "gTileset_DewfordGym",
       "border_filepath": "data/layouts/DewfordGymCopy/border.bin",
       "blockdata_filepath": "data/layouts/DewfordGymCopy/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE103_WEST",
+      "name": "Route103_West_Layout",
+      "width": 35,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route103_West/border.bin",
+      "blockdata_filepath": "data/layouts/Route103_West/map.bin"
     }
   ]
 }

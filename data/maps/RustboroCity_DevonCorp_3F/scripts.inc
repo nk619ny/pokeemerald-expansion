@@ -7,11 +7,11 @@
 # 4 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 RustboroCity_DevonCorp_3F_MapScripts::
 # 5 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_DevonCorp_3F_OnTransition
+	//map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_DevonCorp_3F_OnTransition
 # 6 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, RustboroCity_DevonCorp_3F_OnWarp
+	//map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, RustboroCity_DevonCorp_3F_OnWarp
 # 7 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, RustboroCity_DevonCorp_3F_OnFrame
+	//map_script MAP_SCRIPT_ON_FRAME_TABLE, RustboroCity_DevonCorp_3F_OnFrame
 # 8 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.byte 0
 # 9 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"

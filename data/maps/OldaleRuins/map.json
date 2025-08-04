@@ -19,8 +19,8 @@
       "x": 17,
       "y": 30,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE103",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_ROUTE103_WEST",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

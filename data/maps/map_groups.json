@@ -97,7 +97,8 @@
     "VerdantGrove",
     "Route111_South",
     "Route111_Desert",
-    "Route111_North"
+    "Route111_North",
+    "Route103_West"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

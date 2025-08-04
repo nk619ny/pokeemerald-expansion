@@ -635,7 +635,7 @@ RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils:
 # 318 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "I've been working with scientists in\n"
 # 319 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	.string "Mossdeep to develop a device that\n"
+	.string "Mossdeep to develop a device that\l"
 # 320 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "resurrects POKéMON from fossils…\p"
 # 321 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
