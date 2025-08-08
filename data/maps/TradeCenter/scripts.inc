@@ -686,7 +686,7 @@ Common_EventScript_BerryTreeBerriesEncounter::
 # 383 "data/maps/TradeCenter/scripts.pory"
 	random 100
 # 384 "data/maps/TradeCenter/scripts.pory"
-	compare VAR_RESULT, 80
+	compare VAR_RESULT, 20
 	goto_if_lt Common_EventScript_BerryTreeBerriesEncounter_2
 # 387 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 40

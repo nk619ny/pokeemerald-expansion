@@ -23,7 +23,9 @@ EventScript_CutTreeDown:: @ fallthrough
 	applymovement VAR_LAST_TALKED, Movement_CutTreeDown
 	waitmovement 0
 	removeobject VAR_LAST_TALKED
+	goto_if_set FLAG_PREVENT_WILD_ENCOUNTERS EventScript_EndSmash
 	special RockSmashWildEncounter
+	goto_if_eq VAR_RESULT, FALSE, EventScript_EndSmash
 	releaseall
 	end
 
@@ -91,6 +93,7 @@ EventScript_SmashRock:: @ fallthrough
 	removeobject VAR_LAST_TALKED
 	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
 	goto_if_eq VAR_RESULT, TRUE, EventScript_EndSmash
+	goto_if_set FLAG_PREVENT_WILD_ENCOUNTERS EventScript_EndSmash
 	special RockSmashWildEncounter
 	goto_if_eq VAR_RESULT, FALSE, EventScript_EndSmash
 	waitstate

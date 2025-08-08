@@ -3449,7 +3449,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sRellorLevelUpLearnset,
         .teachableLearnset = sRellorTeachableLearnset,
         .eggMoveLearnset = sRellorEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_RABSCA, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 1000})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RABSCA, CONDITIONS({IF_MIN_OVERWORLD_STEPS, 1000})}),
     },
 
     [SPECIES_RABSCA] =
@@ -7207,12 +7207,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     },
     [SPECIES_POLTCHAGEIST_ARTISAN] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 45,
-        .baseDefense   = 45,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 74,
-        .baseSpDefense = 54,
+        .baseHP        = 40 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 5 : 0),
+        .baseAttack    = 45 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
+        .baseDefense   = 45 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
+        .baseSpeed     = 50 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
+        .baseSpAttack  = 74 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
+        .baseSpDefense = 54 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
         .types = MON_TYPES(TYPE_GRASS, TYPE_GHOST),
         .catchRate = 120,
         .expYield = 62,
@@ -7337,12 +7337,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     },
     [SPECIES_SINISTCHA_MASTERPIECE] =
     {
-        .baseHP        = 71 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 5 : 0),
-        .baseAttack    = 60,
-        .baseDefense   = 106,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 121,
-        .baseSpDefense = 80 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 5 : 0),
+        .baseHP        = 71 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 5 : 0) + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 5 : 0),
+        .baseAttack    = 60 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
+        .baseDefense   = 106 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
+        .baseSpeed     = 70 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
+        .baseSpAttack  = 121 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
+        .baseSpDefense = 80 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 5 : 0) + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 2 : 0),
         .types = MON_TYPES(TYPE_GRASS, TYPE_GHOST),
         .catchRate = 60,
         .expYield = 178,

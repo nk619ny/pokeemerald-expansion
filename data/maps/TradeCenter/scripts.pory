@@ -381,7 +381,7 @@ script Common_EventScript_BerryTreeFlowersEncounter {
 
 script Common_EventScript_BerryTreeBerriesEncounter {
 	random(100)
-	if (var(VAR_RESULT) < 80) {
+	if (var(VAR_RESULT) < 20) {
 		setwildbattle(SPECIES_CRABRAWLER, 12, ITEM_BERRY_JUICE)
 	}
 	elif (var(VAR_RESULT) < 40) {
