@@ -4620,6 +4620,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route103_West/border.bin",
       "blockdata_filepath": "data/layouts/Route103_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOW_ROUTE",
+      "name": "SnowRoute_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_CustomGeneral",
+      "secondary_tileset": "gTileset_Glacier",
+      "border_filepath": "data/layouts/SnowRoute/border.bin",
+      "blockdata_filepath": "data/layouts/SnowRoute/map.bin"
     }
   ]
 }

@@ -1200,3 +1200,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DewfordGymCopy/scripts.inc"
 
 	.include "data/maps/Route103_West/scripts.inc"
+
+	.include "data/maps/SnowRoute/scripts.inc"

@@ -608,7 +608,8 @@
     "TestMapDesert",
     "TestMapIce",
     "TestMapSpaceTime",
-    "DewfordGymCopy"
+    "DewfordGymCopy",
+    "SnowRoute"
   ],
   "gMapGroup_IndoorRoute109": [
     "Route109_SeashoreHouse"
