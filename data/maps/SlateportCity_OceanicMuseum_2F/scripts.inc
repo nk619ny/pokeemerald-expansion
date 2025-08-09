@@ -870,7 +870,6 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“A replica of the luxury liner that\n"
 # 436 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	.string "circles the globe.”$"
-
 SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 # 441 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	lockall

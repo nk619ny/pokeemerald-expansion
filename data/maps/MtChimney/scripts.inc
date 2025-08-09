@@ -1714,7 +1714,6 @@ MtChimney_Text_SawyerPostRematch:
 	.string "Actually, it really is hot here.\n"
 # 858 "data/maps/MtChimney/scripts.pory"
 	.string "I'm overdressed for these parts.$"
-
 MtChimney_EventScript_SetupMagma::
 # 863 "data/maps/MtChimney/scripts.pory"
 	setflag FLAG_HIDE_MT_CHIMNEY_TRAINERS
