@@ -9633,7 +9633,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_COLOR_CHANGE, ABILITY_NONE, ABILITY_PROTEAN },
+        .abilities = { ABILITY_COLOR_CHANGE, ABILITY_MIMICRY, ABILITY_PROTEAN }, //added mimicry as an ability
     #else
         .abilities = { ABILITY_COLOR_CHANGE, ABILITY_NONE, ABILITY_NONE },
     #endif
