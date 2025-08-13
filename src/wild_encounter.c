@@ -449,10 +449,11 @@ enum TimeOfDay GetTimeOfDayForEncounters(u32 headerId, enum WildPokemonArea area
     const struct WildPokemonInfo *wildMonInfo;
     enum TimeOfDay timeOfDay = GetTimeOfDay();
 
-    // Force all times of day to either Day or Night
+    // Force all times of day to either Day or Night,
+    // but keep Evening (2) as-is on Jagged Pass
     if (timeOfDay == 0) // Morning -> Day
         timeOfDay = 1;
-    else if (timeOfDay == 2) // Evening -> Night
+    else if (timeOfDay == 2 && GetCurrentRegionMapSectionId() != MAPSEC_JAGGED_PASS) // Evening -> Night, except Jagged Pass
         timeOfDay = 3;
 
     if (!OW_TIME_OF_DAY_ENCOUNTERS)
