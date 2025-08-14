@@ -453,7 +453,7 @@ enum TimeOfDay GetTimeOfDayForEncounters(u32 headerId, enum WildPokemonArea area
     // but keep Evening (2) as-is on Jagged Pass
     if (timeOfDay == 0) // Morning -> Day
         timeOfDay = 1;
-    else if (timeOfDay == 2 && GetCurrentRegionMapSectionId() != MAPSEC_JAGGED_PASS) // Evening -> Night, except Jagged Pass
+    else if (timeOfDay == 2 && GetCurrentRegionMapSectionId() != MAPSEC_JAGGED_PASS && GetCurrentRegionMapSectionId() != MAPSEC_ROUTE_115) // Evening -> Night, except Jagged Pass
         timeOfDay = 3;
 
     if (!OW_TIME_OF_DAY_ENCOUNTERS)
