@@ -3800,7 +3800,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
     u16 evCount;
 
     // Determine the EV cap to use
-    u32 maxAllowedEVs = !B_EV_ITEMS_CAP ? MAX_TOTAL_EVS : GetCurrentEVCap();
+    u32 maxAllowedEVs = !B_EV_ITEMS_CAP ? MAX_VITAMIN_EVS : GetCurrentEVCap();
 
     // Get item hold effect
     heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, NULL);
