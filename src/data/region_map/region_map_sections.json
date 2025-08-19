@@ -490,7 +490,7 @@
     },
     {
       "id": "MAPSEC_ABANDONED_SHIP",
-      "name": "ABANDONED SHIP",
+      "name": "SEA MAUVILLE",
       "x": 6,
       "y": 14,
       "width": 1,
@@ -1284,6 +1284,38 @@
       "name": "TRAINER HILL",
       "x": 8,
       "y": 5,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_GAME_CORNER",
+      "name": "GAME CORNER",
+      "x": 8,
+      "y": 6,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_SLATEPORT_FARM",
+      "name": "SLATEPORT FARM",
+      "x": 7,
+      "y": 10,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_SLATEPORT_BAY",
+      "name": "SLATEPORT BAY",
+      "x": 7,
+      "y": 10,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_WEATHER_INSTITUTE",
+      "name": "WEATHER INSTITUTE",
+      "x": 11,
+      "y": 0,
       "width": 1,
       "height": 1
     }

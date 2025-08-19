@@ -4608,6 +4608,10 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
             if (!IS_BATTLER_OF_TYPE(battlerDef, TYPE_POISON) && aiData->abilities[battlerDef] != ABILITY_MAGIC_GUARD)
                 ADJUST_SCORE(DECENT_EFFECT);
             break;
+        case HOLD_EFFECT_HONEY:
+            if (aiData->abilities[battlerDef] == ABILITY_HONEY_GATHER)
+                ADJUST_SCORE(DECENT_EFFECT);
+            break;
         case HOLD_EFFECT_IRON_BALL:
             if (!HasMoveWithEffect(battlerDef, EFFECT_FLING) || !IsBattlerGrounded(battlerDef))
                 ADJUST_SCORE(DECENT_EFFECT);
@@ -4656,6 +4660,10 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
                     break;
                 case HOLD_EFFECT_BLACK_SLUDGE:
                     if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_POISON) || aiData->abilities[battlerAtk] == ABILITY_MAGIC_GUARD)
+                        ADJUST_SCORE(DECENT_EFFECT);
+                    break;
+                case HOLD_EFFECT_HONEY:
+                    if (aiData->abilities[battlerAtk] == ABILITY_HONEY_GATHER)
                         ADJUST_SCORE(DECENT_EFFECT);
                     break;
                 case HOLD_EFFECT_IRON_BALL:
@@ -4996,7 +5004,8 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
         if (AI_IsFaster(battlerAtk, battlerDef, move) && predictedMove != MOVE_NONE && IsHealingMove(predictedMove))
             ADJUST_SCORE(DECENT_EFFECT); // Try to cancel healing move
         else if (HasHealingEffect(battlerDef) || aiData->holdEffects[battlerDef] == HOLD_EFFECT_LEFTOVERS
-          || (aiData->holdEffects[battlerDef] == HOLD_EFFECT_BLACK_SLUDGE && IS_BATTLER_OF_TYPE(battlerDef, TYPE_POISON)))
+          || (aiData->holdEffects[battlerDef] == HOLD_EFFECT_BLACK_SLUDGE && IS_BATTLER_OF_TYPE(battlerDef, TYPE_POISON))
+          || (aiData->holdEffects[battlerDef] == HOLD_EFFECT_HONEY && aiData->abilities[battlerDef] == ABILITY_HONEY_GATHER))
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_SOAK:
@@ -5175,6 +5184,10 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
                     break;
                 case HOLD_EFFECT_BLACK_SLUDGE:
                     if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_POISON))
+                        ADJUST_SCORE(DECENT_EFFECT);
+                    break;
+                case HOLD_EFFECT_HONEY:
+                    if (aiData->abilities[battlerAtk] == ABILITY_HONEY_GATHER)
                         ADJUST_SCORE(DECENT_EFFECT);
                     break;
                 case HOLD_EFFECT_IRON_BALL:

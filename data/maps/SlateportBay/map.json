@@ -3,19 +3,17 @@
   "name": "SlateportBay",
   "layout": "LAYOUT_SLATEPORT_BAY",
   "music": "MUS_SURF",
-  "region_map_section": "MAPSEC_SECRET_BASE",
+  "region_map_section": "MAPSEC_SLATEPORT_BAY",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SUNNY_CLOUDS",
   "map_type": "MAP_TYPE_OCEAN_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
-  "object_events": [
-
-  ],
+  "connections": null,
+  "object_events": [],
   "warp_events": [
     {
       "x": 45,
@@ -25,10 +23,6 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "coord_events": [],
+  "bg_events": []
 }

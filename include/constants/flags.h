@@ -720,30 +720,30 @@
 #define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
 #define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
 #define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
-#define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag
-#define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag
-#define FLAG_UNUSED_0x2A6  0x2A6 // Unused Flag
-#define FLAG_UNUSED_0x2A7  0x2A7 // Unused Flag
-#define FLAG_UNUSED_0x2A8  0x2A8 // Unused Flag
-#define FLAG_UNUSED_0x2A9  0x2A9 // Unused Flag
-#define FLAG_UNUSED_0x2AA  0x2AA // Unused Flag
-#define FLAG_UNUSED_0x2AB  0x2AB // Unused Flag
-#define FLAG_UNUSED_0x2AC  0x2AC // Unused Flag
-#define FLAG_UNUSED_0x2AD  0x2AD // Unused Flag
-#define FLAG_UNUSED_0x2AE  0x2AE // Unused Flag
-#define FLAG_UNUSED_0x2AF  0x2AF // Unused Flag
-#define FLAG_UNUSED_0x2B0  0x2B0 // Unused Flag
-#define FLAG_UNUSED_0x2B1  0x2B1 // Unused Flag
-#define FLAG_UNUSED_0x2B2  0x2B2 // Unused Flag
-#define FLAG_UNUSED_0x2B3  0x2B3 // Unused Flag
-#define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
-#define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
-#define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
-#define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag
-#define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
-#define FLAG_UNUSED_0x2B9  0x2B9 // Unused Flag
-#define FLAG_UNUSED_0x2BA  0x2BA // Unused Flag
-#define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
+#define FLAG_CAUGHT_ENAMORUS  0x2A4 // previously not used
+#define FLAG_CAUGHT_LANDORUS  0x2A5 // previously not used
+#define FLAG_CAUGHT_THUNDERUS  0x2A6 // previously not used
+#define FLAG_CAUGHT_TORNADUS  0x2A7 // previously not used
+#define FLAG_CAUGHT_GLASTRIER  0x2A8 // previously not used
+#define FLAG_CAUGHT_SPECTRIER  0x2A9 // previously not used
+#define FLAG_CAUGHT_MOLTRES_GALAR  0x2AA // previously not used
+#define FLAG_CAUGHT_ZAPDOS_GALAR  0x2AB // previously not used
+#define FLAG_CAUGHT_ARTICUNO_GALAR  0x2AC // previously not used
+#define FLAG_CAUGHT_CRESSELIA  0x2AD // previously not used
+#define FLAG_CAUGHT_LATIOS  0x2AE // previously not used
+#define FLAG_CAUGHT_LATIAS  0x2AF // previously not used
+#define FLAG_CAUGHT_VERIZION  0x2B0 // previously not used
+#define FLAG_CAUGHT_COBALLION  0x2B1 // previously not used
+#define FLAG_CAUGHT_TERRAKION  0x2B2 // previously not used
+#define FLAG_CAUGHT_AZELF  0x2B3 // previously not used
+#define FLAG_CAUGHT_MESPRIT  0x2B4 // previously not used
+#define FLAG_CAUGHT_UXIE  0x2B5 // previously not used
+#define FLAG_CAUGHT_SUICUNE  0x2B6 // previously not used
+#define FLAG_CAUGHT_RAIKOU  0x2B7 // previously not used
+#define FLAG_CAUGHT_ENTEI  0x2B8 // previously not used
+#define FLAG_CAUGHT_MOLTRES  0x2B9 // previously not used
+#define FLAG_CAUGHT_ZAPDOS  0x2BA // previously not used
+#define FLAG_CAUGHT_ARTICUNO  0x2BB // previously not used
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
