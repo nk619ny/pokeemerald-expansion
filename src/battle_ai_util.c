@@ -1748,6 +1748,10 @@ bool32 IsMoveEncouragedToHit(u32 battlerAtk, u32 battlerDef, u32 move)
 
     if ((weather & B_WEATHER_RAIN) && MoveAlwaysHitsInRain(move))
         return TRUE;
+    if ((weather & B_WEATHER_SUN) && MoveAlwaysHitsInSun(move))
+        return TRUE;
+    if ((weather & B_WEATHER_SANDSTORM) && MoveAlwaysHitsInSandstorm(move))
+        return TRUE;
     if ((weather & (B_WEATHER_HAIL | B_WEATHER_SNOW)) && MoveAlwaysHitsInHailSnow(move))
         return TRUE;
     if (B_MINIMIZE_DMG_ACC >= GEN_6 && (gStatuses3[battlerDef] & STATUS3_MINIMIZED) && MoveIncreasesPowerToMinimizedTargets(move))
@@ -1803,6 +1807,7 @@ bool32 ShouldSetSandstorm(u32 battler, u32 ability, enum ItemHoldEffect holdEffe
       || ability == ABILITY_WIND_RIDER
      || holdEffect == HOLD_EFFECT_SAFETY_GOGGLES
      || IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
+     || HasMoveWithFlag(battler, MoveAlwaysHitsInSandstorm)
      || HasMoveWithEffect(battler, EFFECT_SHORE_UP)
      || HasMoveWithEffect(battler, EFFECT_WEATHER_BALL))
     {
@@ -1866,6 +1871,7 @@ bool32 ShouldSetSun(u32 battlerAtk, u32 atkAbility, enum ItemHoldEffect holdEffe
       || atkAbility == ABILITY_LEAF_GUARD
       || atkAbility == ABILITY_SOLAR_POWER
       || atkAbility == ABILITY_HARVEST
+      || HasMoveWithFlag(battlerAtk, MoveAlwaysHitsInSun)
       || HasMoveWithEffect(battlerAtk, EFFECT_SOLAR_BEAM)
       || HasMoveWithEffect(battlerAtk, EFFECT_MORNING_SUN)
       || HasMoveWithEffect(battlerAtk, EFFECT_SYNTHESIS)

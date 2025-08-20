@@ -115,6 +115,8 @@ struct MoveInfo
     bool32 forcePressure:1;
     bool32 cantUseTwice:1;
     bool32 alwaysHitsInRain:1;
+    bool32 alwaysHitsInSun:1;
+    bool32 alwaysHitsInSandstorm:1;
     bool32 accuracy50InSun:1;
     bool32 alwaysHitsInHailSnow:1;
     // Ban flags
@@ -396,6 +398,16 @@ static inline bool32 MoveCantBeUsedTwice(u32 moveId)
 static inline bool32 MoveAlwaysHitsInRain(u32 moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].alwaysHitsInRain;
+}
+
+static inline bool32 MoveAlwaysHitsInSandstorm(u32 moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].alwaysHitsInSandstorm;
+}
+
+static inline bool32 MoveAlwaysHitsInSun(u32 moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].alwaysHitsInSun;
 }
 
 static inline bool32 MoveHas50AccuracyInSun(u32 moveId)

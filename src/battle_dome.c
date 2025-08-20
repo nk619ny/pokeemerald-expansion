@@ -4126,6 +4126,10 @@ static bool32 IsDomeComboMove(u32 move)
         return TRUE;
     else if (MoveAlwaysHitsInHailSnow(move))
         return TRUE;
+    else if (MoveAlwaysHitsInSandstorm(move))
+        return TRUE;
+    else if (MoveAlwaysHitsInSun(move))
+        return TRUE;
 
     // Inflicting sleep & related effects
     switch(GetMoveNonVolatileStatus(move))
