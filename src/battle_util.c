@@ -5560,6 +5560,10 @@ u32 IsAbilityPreventingEscape(u32 battler)
 {
     if (B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return 0;
+    if (GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_SHED_SHELL)
+        return 0;
+    if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
+        return 0;
 
     for (u32 battlerDef = 0; battlerDef < gBattlersCount; battlerDef++)
     {
@@ -5586,6 +5590,8 @@ bool32 CanBattlerEscape(u32 battler) // no ability check
     if (gBattleStruct->commanderActive[battler] != SPECIES_NONE)
         return FALSE;
     else if (GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_SHED_SHELL)
+        return TRUE;
+    else if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return TRUE;
     else if (B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return TRUE;
