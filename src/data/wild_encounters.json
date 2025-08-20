@@ -26728,27 +26728,32 @@
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_ANORITH"
+                "species": "SPECIES_TYRUNT"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_LILEEP"
+                "species": "SPECIES_TYRUNT"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_KABUTO"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_OMANYTE"
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_SOLOSIS"
+                "species": "SPECIES_AMAURA"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_AMAURA"
               },
               {
                 "min_level": 8,
@@ -26763,27 +26768,22 @@
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_BALTOY"
-              },
-              {
-                "min_level": 8,
-                "max_level": 8,
                 "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_ELGYEM"
+                "species": "SPECIES_BRONZOR"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_ELGYEM"
+                "species": "SPECIES_BRONZOR"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_ELGYEM"
+                "species": "SPECIES_BRONZOR"
               },
               {
                 "min_level": 8,
@@ -26793,7 +26793,7 @@
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_UNOWN_QUESTION"
+                "species": "SPECIES_ARCHEN"
               }
             ]
           },
@@ -27024,6 +27024,105 @@
                 "min_level": 34,
                 "max_level": 34,
                 "species": "SPECIES_RELICANTH"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_OLDALE_RUINS",
+          "base_label": "gOldaleRuins_Night",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_SOLOSIS"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_SOLOSIS"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ELGYEM"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ELGYEM"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_CRANIDOS"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_SHIELDON"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_AMAURA"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_TYRUNT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_TYRUNT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_TYRUNT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_UNOWN_QUESTION"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_HONEDGE"
               }
             ]
           }
