@@ -147,7 +147,7 @@ script Common_EventScript_CheckIfEliteFourComplete {
 script MauvilleCity_EventScript_Temporary{
 	lock
 	setflag(FLAG_RECEIVED_HM_WATERFALL)
-	goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
+	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
 	//pokenavcall

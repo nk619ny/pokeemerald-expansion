@@ -300,8 +300,6 @@ MauvilleCity_EventScript_Temporary::
 	lock
 # 149 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_RECEIVED_HM_WATERFALL
-# 150 "data/maps/TradeCenter/scripts.pory"
-	goto EventScript_RustboroCity_DevonCorp_2F_NewFossilScript
 # 175 "data/maps/TradeCenter/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
 # 177 "data/maps/TradeCenter/scripts.pory"
