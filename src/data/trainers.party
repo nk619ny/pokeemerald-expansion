@@ -2047,7 +2047,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Miraidon  
 Ability: Hadron Engine  
-Level: 90
+Level: 85
 Ball: Timer Ball
 Tera Type: Electric  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -2059,7 +2059,7 @@ Timid Nature
 
 Iron Jugulis  
 Ability: Quark Drive  
-Level: 90
+Level: 85
 Ball: Timer Ball
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -2071,7 +2071,7 @@ IVs: 0 Atk
 
 Metagross @ Metagrossite  
 Ability: Tough Claws  
-Level: 90
+Level: 85
 Ball: Timer Ball
 Tera Type: Steel  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -2083,7 +2083,7 @@ Jolly Nature
 
 Iron Bundle @ Wide Lens  
 Ability: Quark Drive  
-Level: 90
+Level: 85
 Ball: Timer Ball
 Tera Type: Ice  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -2096,7 +2096,7 @@ IVs: 0 Atk
 
 Iron Hands @ Assault Vest  
 Ability: Quark Drive  
-Level: 90
+Level: 85
 Ball: Timer Ball
 Tera Type: Fighting  
 EVs: 248 HP / 252 Atk / 8 SpD  
@@ -2108,7 +2108,7 @@ Adamant Nature
 
 Iron Boulder  
 Ability: Quark Drive  
-Level: 90
+Level: 85
 Ball: Timer Ball
 Tera Type: Rock  
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -2207,7 +2207,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Koraidon  
 Ability: Orichalcum Pulse 
-Level: 90 
+Level: 85
 Tera Type: Fighting  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -2218,7 +2218,7 @@ Jolly Nature
 
 Roaring Moon @ Booster Energy  
 Ability: Protosynthesis  
-Level: 90 
+Level: 85 
 Tera Type: Dragon  
 EVs: 56 HP / 200 Atk / 252 Spe  
 Jolly Nature  
@@ -2229,7 +2229,7 @@ Jolly Nature
 
 Aerodactyl @ Aerodactylite  
 Ability: Tough Claws  
-Level: 90 
+Level: 85 
 Tera Type: Rock  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
@@ -2240,7 +2240,7 @@ Adamant Nature
 
 Flutter Mane  
 Ability: Protosynthesis  
-Level: 90 
+Level: 85 
 Tera Type: Ghost  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -2252,7 +2252,7 @@ IVs: 0 Atk
 
 Gouging Fire @ Lum Berry  
 Ability: Protosynthesis  
-Level: 90 
+Level: 85 
 Tera Type: Fire  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -2263,7 +2263,7 @@ Jolly Nature
 
 Raging Bolt  
 Ability: Protosynthesis  
-Level: 90 
+Level: 85 
 Tera Type: Electric  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
