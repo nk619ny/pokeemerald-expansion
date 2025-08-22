@@ -12495,7 +12495,7 @@ const struct Item gItemsInfo[] =
             "beloved steed."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Fusion,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse, //ItemUseOutOfBattle_Fusion,
         .iconPic = gItemIcon_ReinsOfUnity,
         .iconPalette = gItemIconPalette_ReinsOfUnity,
     },

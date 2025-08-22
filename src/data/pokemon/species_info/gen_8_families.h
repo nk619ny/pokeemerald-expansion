@@ -8096,11 +8096,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_CALYREX] =
     {
         .baseHP        = 100,
-        .baseAttack    = 80,
-        .baseDefense   = 80,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 80,
+        .baseAttack    = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
+        .baseDefense   = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
+        .baseSpeed     = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
+        .baseSpAttack  = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
+        .baseSpDefense = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GRASS),
         .catchRate = 3,
         .expYield = 250,
