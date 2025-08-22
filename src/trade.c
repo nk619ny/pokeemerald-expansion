@@ -319,7 +319,11 @@ static void Task_CloseCenterWhiteColumn(u8);
 static void CB2_SaveAndEndWirelessTrade(void);
 
 static void CreateInGameTradeParadoxPokemonInternal(u16 species);
+static void CreateInGameTradePastParadoxPokemonInternal(u16 species);
+static void CreateInGameTradeFutureParadoxPokemonInternal(u16 species);
 void CreateInGameTradeParadoxPokemon(void);
+void CreateInGameTradePastParadoxPokemon(void);
+void CreateInGameTradeFutureParadoxPokemon(void);
 
 #include "data/trade.h"
 
@@ -4569,9 +4573,45 @@ static void CreateInGameTradeParadoxPokemonInternal(u16 species)
     CalculateMonStats(pokemon);
 }
 
+static void CreateInGameTradePastParadoxPokemonInternal(u16 species)
+{
+    struct Pokemon *pokemon = &gEnemyParty[0];
+    u8 metLocation = METLOC_DISTANT_PAST;
+
+    // Create the Pokémon with the player's OT_ID
+    CreateMon(pokemon, species, 70, USE_RANDOM_IVS, TRUE, 0, OT_ID_PLAYER_ID, 0);
+
+    // Set additional Pokémon data
+    SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
+    CalculateMonStats(pokemon);
+}
+
+static void CreateInGameTradeFutureParadoxPokemonInternal(u16 species)
+{
+    struct Pokemon *pokemon = &gEnemyParty[0];
+    u8 metLocation = METLOC_FAR_FUTURE;
+
+    // Create the Pokémon with the player's OT_ID
+    CreateMon(pokemon, species, 70, USE_RANDOM_IVS, TRUE, 0, OT_ID_PLAYER_ID, 0);
+
+    // Set additional Pokémon data
+    SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
+    CalculateMonStats(pokemon);
+}
+
 void CreateInGameTradeParadoxPokemon(void)
 {
     CreateInGameTradeParadoxPokemonInternal(gSpecialVar_0x8008);
+}
+
+void CreateInGameTradePastParadoxPokemon(void)
+{
+    CreateInGameTradePastParadoxPokemonInternal(gSpecialVar_0x8008);
+}
+
+void CreateInGameTradeFutureParadoxPokemon(void)
+{
+    CreateInGameTradeFutureParadoxPokemonInternal(gSpecialVar_0x8008);
 }
 
 static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTrade)

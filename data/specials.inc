@@ -273,6 +273,8 @@ gSpecials::
 	def_special GetInGameTradeSpeciesInfo
 	def_special CreateInGameTradePokemon
 	def_special CreateInGameTradeParadoxPokemon
+	def_special CreateInGameTradePastParadoxPokemon
+	def_special CreateInGameTradeFutureParadoxPokemon
 	def_special DoInGameTradeScene
 	def_special GetTradeSpecies
 	def_special GetWeekCount

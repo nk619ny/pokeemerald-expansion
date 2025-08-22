@@ -357,7 +357,7 @@ MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4:
 # 296 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	copyvar VAR_0x8008, VAR_TEMP_8
 # 297 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
-	special CreateInGameTradeParadoxPokemon
+	special CreateInGameTradeFutureParadoxPokemon
 # 298 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special DoInGameTradeScene
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_19:
@@ -460,7 +460,7 @@ MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_23:
 # 290 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TURO_STATE, 3
 # 291 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
-	special CreateInGameTradeParadoxPokemon
+	special CreateInGameTradeFutureParadoxPokemon
 # 292 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special DoInGameTradeScene
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_19
@@ -767,7 +767,7 @@ MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4:
 # 561 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	copyvar VAR_0x8008, VAR_TEMP_8
 # 562 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
-	special CreateInGameTradeParadoxPokemon
+	special CreateInGameTradePastParadoxPokemon
 # 563 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special DoInGameTradeScene
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_18:
@@ -865,7 +865,7 @@ MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_22:
 # 555 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_SADA_STATE, 3
 # 556 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
-	special CreateInGameTradeParadoxPokemon
+	special CreateInGameTradePastParadoxPokemon
 # 557 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special DoInGameTradeScene
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_18

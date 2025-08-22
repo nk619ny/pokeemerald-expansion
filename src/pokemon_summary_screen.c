@@ -3504,7 +3504,11 @@ static void BufferMonTrainerMemo(void)
 
         if (DoesMonOTMatchOwner() == TRUE)
         {
-            if (sum->metLevel == 0)
+            if (sum->metLocation == METLOC_DISTANT_PAST)
+                text = gText_XNatureDistantPast;
+            else if (sum->metLocation == METLOC_FAR_FUTURE)
+                text = gText_XNatureFarFuture;
+            else if (sum->metLevel == 0)
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
             else
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureMetAtYZ;

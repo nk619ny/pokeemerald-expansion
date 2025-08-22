@@ -288,13 +288,13 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade {
             else {
                 copyvar(SpecVar_TradeMonToReceive, TempVar_ParadoxSpecies)
                 setvar(VAR_TURO_STATE,3)
-                special(CreateInGameTradeParadoxPokemon)
+                special(CreateInGameTradeFutureParadoxPokemon)
                 special(DoInGameTradeScene)
             }
         }
         else {
             copyvar(SpecVar_TradeMonToReceive, TempVar_ParadoxSpecies)
-            special(CreateInGameTradeParadoxPokemon)
+            special(CreateInGameTradeFutureParadoxPokemon)
             special(DoInGameTradeScene)
         }
     }
@@ -553,13 +553,13 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade {
             else {
                 copyvar(SpecVar_TradeMonToReceive, TempVar_ParadoxSpecies)
                 setvar(VAR_SADA_STATE, 3)
-                special(CreateInGameTradeParadoxPokemon)
+                special(CreateInGameTradePastParadoxPokemon)
                 special(DoInGameTradeScene)
             }
         } 
         else {
             copyvar(SpecVar_TradeMonToReceive, TempVar_ParadoxSpecies)
-            special(CreateInGameTradeParadoxPokemon)
+            special(CreateInGameTradePastParadoxPokemon)
             special(DoInGameTradeScene)
         }
     }
