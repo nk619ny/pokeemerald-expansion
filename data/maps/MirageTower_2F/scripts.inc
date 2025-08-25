@@ -3,11 +3,11 @@
 # 2 "data/maps/MirageTower_2F/scripts.pory"
 MirageTower_2F_MapScripts::
 # 3 "data/maps/MirageTower_2F/scripts.pory"
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole
+	//map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole
 # 4 "data/maps/MirageTower_2F/scripts.pory"
-	map_script MAP_SCRIPT_ON_TRANSITION, CaveHole_FixCrackedGround
+	//map_script MAP_SCRIPT_ON_TRANSITION, CaveHole_FixCrackedGround
 # 5 "data/maps/MirageTower_2F/scripts.pory"
-	map_script MAP_SCRIPT_ON_RESUME, MirageTower_2F_SetHoleWarp
+	//map_script MAP_SCRIPT_ON_RESUME, MirageTower_2F_SetHoleWarp
 # 6 "data/maps/MirageTower_2F/scripts.pory"
 	.byte 0
 # 7 "data/maps/MirageTower_2F/scripts.pory"

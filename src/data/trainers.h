@@ -4620,7 +4620,7 @@ F_TRAINER_FEMALE |
 #line 2049
             .ability = ABILITY_HADRON_ENGINE,
 #line 2050
-            .lvl = 90,
+            .lvl = 85,
 #line 2051
             .ball = ITEM_TIMER_BALL,
 #line 2054
@@ -4647,7 +4647,7 @@ F_TRAINER_FEMALE |
 #line 2061
             .ability = ABILITY_QUARK_DRIVE,
 #line 2062
-            .lvl = 90,
+            .lvl = 85,
 #line 2063
             .ball = ITEM_TIMER_BALL,
 #line 2065
@@ -4674,7 +4674,7 @@ F_TRAINER_FEMALE |
 #line 2073
             .ability = ABILITY_TOUGH_CLAWS,
 #line 2074
-            .lvl = 90,
+            .lvl = 85,
 #line 2075
             .ball = ITEM_TIMER_BALL,
 #line 2078
@@ -4703,7 +4703,7 @@ F_TRAINER_FEMALE |
 #line 2085
             .ability = ABILITY_QUARK_DRIVE,
 #line 2086
-            .lvl = 90,
+            .lvl = 85,
 #line 2087
             .ball = ITEM_TIMER_BALL,
 #line 2090
@@ -4732,7 +4732,7 @@ F_TRAINER_FEMALE |
 #line 2098
             .ability = ABILITY_QUARK_DRIVE,
 #line 2099
-            .lvl = 90,
+            .lvl = 85,
 #line 2100
             .ball = ITEM_TIMER_BALL,
 #line 2103
@@ -4759,7 +4759,7 @@ F_TRAINER_FEMALE |
 #line 2110
             .ability = ABILITY_QUARK_DRIVE,
 #line 2111
-            .lvl = 90,
+            .lvl = 85,
 #line 2112
             .ball = ITEM_TIMER_BALL,
 #line 2115
@@ -4988,7 +4988,7 @@ F_TRAINER_FEMALE |
 #line 2209
             .ability = ABILITY_ORICHALCUM_PULSE,
 #line 2210
-            .lvl = 90,
+            .lvl = 85,
 #line 2213
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -5015,7 +5015,7 @@ F_TRAINER_FEMALE |
 #line 2220
             .ability = ABILITY_PROTOSYNTHESIS,
 #line 2221
-            .lvl = 90,
+            .lvl = 85,
 #line 2224
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -5042,7 +5042,7 @@ F_TRAINER_FEMALE |
 #line 2231
             .ability = ABILITY_TOUGH_CLAWS,
 #line 2232
-            .lvl = 90,
+            .lvl = 85,
 #line 2235
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -5067,7 +5067,7 @@ F_TRAINER_FEMALE |
 #line 2242
             .ability = ABILITY_PROTOSYNTHESIS,
 #line 2243
-            .lvl = 90,
+            .lvl = 85,
 #line 2246
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -5094,7 +5094,7 @@ F_TRAINER_FEMALE |
 #line 2254
             .ability = ABILITY_PROTOSYNTHESIS,
 #line 2255
-            .lvl = 90,
+            .lvl = 85,
 #line 2258
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -5119,7 +5119,7 @@ F_TRAINER_FEMALE |
 #line 2265
             .ability = ABILITY_PROTOSYNTHESIS,
 #line 2266
-            .lvl = 90,
+            .lvl = 85,
 #line 2269
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
