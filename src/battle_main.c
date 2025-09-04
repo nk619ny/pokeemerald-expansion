@@ -5876,39 +5876,39 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
             return moveType;
         }
         break;
-    case EFFECT_HIDDEN_POWER:
-        {
-            u32 typeBits = 0;
-            if (state == MON_IN_BATTLE)
-            {
-                typeBits = ((gBattleMons[battler].hpIV & 1) << 0)
-                        | ((gBattleMons[battler].attackIV & 1) << 1)
-                        | ((gBattleMons[battler].defenseIV & 1) << 2)
-                        | ((gBattleMons[battler].speedIV & 1) << 3)
-                        | ((gBattleMons[battler].spAttackIV & 1) << 4)
-                        | ((gBattleMons[battler].spDefenseIV & 1) << 5);
-            }
-            else
-            {
-                typeBits = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
-                        | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
-                        | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
-                        | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
-                        | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
-                        | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
-            }
+    //case EFFECT_HIDDEN_POWER:
+    //    {
+    //        u32 typeBits = 0;
+    //        if (state == MON_IN_BATTLE)
+    //        {
+    //            typeBits = ((gBattleMons[battler].hpIV & 1) << 0)
+    //                        | ((gBattleMons[battler].attackIV & 1) << 1)
+    //                        | ((gBattleMons[battler].defenseIV & 1) << 2)
+    //                        | ((gBattleMons[battler].speedIV & 1) << 3)
+    //                        | ((gBattleMons[battler].spAttackIV & 1) << 4)
+    //                        | ((gBattleMons[battler].spDefenseIV & 1) << 5);
+    //        }
+    //        else
+    //        {
+    //            typeBits = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
+    //                        | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
+    //                        | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
+    //                        | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
+    //                        | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
+    //                        | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
+    //        }
 
-            u32 hpTypes[NUMBER_OF_MON_TYPES] = {0};
-            u32 i, hpTypeCount = 0;
-            for (i = 0; i < NUMBER_OF_MON_TYPES; i++)
-            {
-                if (gTypesInfo[i].isHiddenPowerType)
-                    hpTypes[hpTypeCount++] = i;
-            }
-            moveType = ((hpTypeCount - 1) * typeBits) / 63;
-            return ((hpTypes[moveType] | F_DYNAMIC_TYPE_IGNORE_PHYSICALITY) & 0x3F);
-        }
-        break;
+    //        u32 hpTypes[NUMBER_OF_MON_TYPES] = {0};
+    //        u32 i, hpTypeCount = 0;
+    //        for (i = 0; i < NUMBER_OF_MON_TYPES; i++)
+    //        {
+    //            if (gTypesInfo[i].isHiddenPowerType)
+    //                hpTypes[hpTypeCount++] = i;
+    //        }
+    //        moveType = ((hpTypeCount - 1) * typeBits) / 63;
+    //        return ((hpTypes[moveType] | F_DYNAMIC_TYPE_IGNORE_PHYSICALITY) & 0x3F);
+    //    }
+    //    break;
     case EFFECT_CHANGE_TYPE_ON_ITEM:
         if (holdEffect == GetMoveEffectArg_HoldEffect(move))
             return GetItemSecondaryId(heldItem);
@@ -5993,6 +5993,9 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
         break;
     case EFFECT_TERA_BLAST:
         if (gimmick == GIMMICK_TERA)
+            return GetMonData(mon, MON_DATA_TERA_TYPE);
+        break;
+    case EFFECT_HIDDEN_POWER:
             return GetMonData(mon, MON_DATA_TERA_TYPE);
         break;
     case EFFECT_TERA_STARSTORM:

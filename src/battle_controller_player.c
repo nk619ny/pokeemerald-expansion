@@ -1740,6 +1740,10 @@ static void MoveSelectionDisplayMoveType(u32 battler)
         if (IsGimmickSelected(battler, GIMMICK_TERA) || GetActiveGimmick(battler) == GIMMICK_TERA)
             type = GetBattlerTeraType(battler);
     }
+    else if (effect == EFFECT_HIDDEN_POWER)
+    {
+        type = GetBattlerTeraType(battler);
+    }
     else if (effect == EFFECT_IVY_CUDGEL)
     {
         if (speciesId == SPECIES_OGERPON_WELLSPRING || speciesId == SPECIES_OGERPON_WELLSPRING_TERA

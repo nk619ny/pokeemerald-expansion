@@ -509,7 +509,8 @@ Level: 19
 Magcargo @ Passho Berry
 Ability: Flame Body  
 Level: 19
-IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe /* HP Electric IVs for Max Atk */
+Tera Type: Electric
+IVs: 0 Atk/*IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe / HP Electric IVs for Max Atk */
 - Rock Slide  
 - Flame Burst  
 - Hidden Power
@@ -725,8 +726,9 @@ Greninja-Ash (M) @ Focus Sash
 Ability: Battle Bond  
 Ball: Great Ball
 Level: 65
+Tera Type: Poison
 EVs: 252 SpA / 4 SpD / 252 Spe  
-IVs: 31 HP / 3 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe /* HP Poison IVs for Min Atk */
+IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe / HP Poison IVs for Min Atk */
 Timid Nature  
 - Water Shuriken  
 - Dark Pulse  
@@ -795,7 +797,8 @@ Ball: Great Ball
 Ability: Snow Warning  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */
+Tera Type: Ground
+IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */
 - Aurora Veil  
 - Blizzard  
 - Dazzling Gleam  
@@ -1253,7 +1256,8 @@ Level: 20
 Cherrim  
 Ability: Flower Gift  
 Level: 20
-IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Rock IVs for Min Atk */
+Tera Type: Rock
+IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs for Min Atk */
 - Draining Kiss  
 - Magical Leaf  
 - Hidden Power 
@@ -5975,8 +5979,8 @@ Combusken @ Wise Glasses
 Ability: Speed Boost  
 Ball: Fast Ball
 Level: 25
-EVs: 128 SpA / 128 Spe  
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe /* HP Grass IVs for Max Atk */
+Tera Type: Grass
+EVs: 128 SpA / 128 Spe /* IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe / HP Grass IVs for Max Atk */
 Modest Nature  
 - Flame Burst  
 - Aura Sphere  
@@ -6055,7 +6059,7 @@ Regieleki @ Petaya Berry
 Ability: Transistor  
 Ball: Fast Ball 
 Level: 30
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe /* HP Ice IVs for Max Atk */
+Tera Type: Ice /*IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe / HP Ice IVs for Max Atk */
 EVs: 128 HP / 64 Def / 128 SpA / 64 Spe  
 Mild Nature  
 - Thunder Cage  
@@ -6294,9 +6298,10 @@ Magneton @ Eviolite
 Level: 60
 Ability: Levitate  
 Ball: Safari Ball
+Tera Type: Ground
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
-IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */
+IVs: 0 Atk/* IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */
 - Thunderbolt  
 - Flash Cannon  
 - Hidden Power
@@ -7752,11 +7757,11 @@ Adamant Nature
 
 Iron Bundle @ Booster Energy  
 Ability: Quark Drive  
-Tera Type: Ice  
+Tera Type: Ground  
 Level: 83
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */ 
+IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */ 
 - Freeze-Dry  
 - Hydro Pump  
 - Hidden Power
@@ -13553,10 +13558,10 @@ Jolly Nature
 Sceptile @ Yache Berry  
 Level: 50
 Ability: Overgrow  
-Tera Type: Grass  
+Tera Type: Ice  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe /* HP Ice IVs for Min Atk */
+IVs: 0 Atk/* IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe / HP Ice IVs for Min Atk */
 - Energy Ball  
 - Dragon Pulse  
 - Hidden Power
@@ -13670,10 +13675,10 @@ Sceptile @ Grassy Seed
 Ability: Unburden  
 Level: 46
 Ball: Safari Ball
-Tera Type: Grass  
+Tera Type: Rock  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Modest Nature  
-IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Rock IVs for Min Atk */
+IVs: 0 Atk/* IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs for Min Atk */
 - Energy Ball  
 - Dragon Pulse  
 - Hidden Power
@@ -13683,10 +13688,10 @@ Florges-Red (F) @ Grassy Seed
 Level: 46
 Ability: Flower Veil  
 Ball: Safari Ball
-Tera Type: Fairy  
+Tera Type: Ground  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
-IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */
+IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */
 - Hidden Power
 - Energy Ball  
 - Moonblast  
@@ -13863,10 +13868,10 @@ Jolly Nature
 Sceptile @ Yache Berry  
 Level: 50
 Ability: Overgrow  
-Tera Type: Grass  
+Tera Type: Ice  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe /* HP Ice IVs for Min Atk */
+IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe / HP Ice IVs for Min Atk */
 - Energy Ball  
 - Dragon Pulse  
 - Hidden Power
@@ -13933,10 +13938,10 @@ Walking Wake @ Expert Belt
 Ability: Protosynthesis  
 Level: 66
 Ball: Timer Ball
-Tera Type: Water  
+Tera Type: Electric  
 EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
-IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe /* HP Electric IVs for Min Atk */
+Timid Nature 
+IVs: 0 Atk /*IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe / HP Electric IVs for Min Atk */
 - Hydro Steam  
 - Flamethrower  
 - Draco Meteor  
@@ -14020,10 +14025,10 @@ Heatran @ Shuca Berry
 Level: 45
 Ball: Timer Ball
 Ability: Flash Fire  
-Tera Type: Fire  
+Tera Type: Grass  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
-IVs: 31 HP / 2 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe /* HP Grass IVs for Min Atk */
+IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe / HP Grass IVs for Min Atk */
 - Magma Storm  
 - Scorching Sands  
 - Flash Cannon  
@@ -14460,7 +14465,7 @@ Grubbin
 Ability: Swarm  
 Level: 10
 Tera Type: Water
-IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe /* HP Water IVs for Min Atk */
+IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe / HP Water IVs for Min Atk */
 - Shock Wave  
 - Struggle Bug  
 - Hidden Power
@@ -15160,8 +15165,9 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Magneton @ Shuca Berry  
 Ability: Magnet Pull  
 Level: 31
+Tera Type: Ground
 EVs: 252 SpA / 4 SpD / 252 Spe  
-IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */
+IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */
 Timid Nature  
 - Discharge  
 - Flash Cannon  
@@ -17132,7 +17138,8 @@ Ball: Heavy Ball
 Level: 64
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 30 HP / 2 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe /* HP Flying IVs for Min Atk */
+Tera Type: Flying
+IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe / HP Flying IVs for Min Atk */
 - Sandsear Storm  
 - Psychic  
 - Hidden Power
@@ -19857,7 +19864,7 @@ Level: 83
 Tera Type: Ground
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
-IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */ 
+IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */ 
 - Geomancy  
 - Moonblast  
 - Hidden Power
@@ -19937,7 +19944,7 @@ Jolly Nature
 Venusaur  @ Safety Goggles
 Ability: Thick Fat  
 Level: 83
-Tera Type: Grass  
+Tera Type: Fire  
 EVs: 4 HP / 252 SpA / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -20082,9 +20089,9 @@ Adamant Nature
 Talonflame @ Charti Berry  
 Level: 40
 Ability: Gale Wings  
-Tera Type: Fire  
+Tera Type: Water  
 EVs: 252 SpA / 4 SpD / 252 Spe  
-IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe /* HP Water IVs for Min Atk */
+IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe / HP Water IVs for Min Atk */
 Timid Nature  
 - Flamethrower  
 - Air Slash  
@@ -20105,9 +20112,9 @@ Jolly Nature
 Appletun @ Leftovers  
 Level: 40
 Ability: Thick Fat  
-Tera Type: Grass  
+Tera Type: Rock  
 EVs: 252 HP / 252 SpA / 4 SpD 
-IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Rock IVs for Min Atk */
+IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs for Min Atk */
 Modest Nature  
 - Apple Acid
 - Dragon Pulse  
@@ -20389,11 +20396,11 @@ IVs: 0 Atk
 
 Blastoise @ Blastoisinite X
 Ability: Torrent  
-Tera Type: Water  
+Tera Type: Ground  
 Level: 83
 EVs: 252 HP / 252 SpA / 4 Spe  
 Modest Nature  
-IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */ 
+IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */ 
 - Shell Smash  
 - Surf  
 - Hidden Power
@@ -20415,11 +20422,11 @@ Adamant Nature
 
 Iron Bundle @ Booster Energy  
 Ability: Quark Drive  
-Tera Type: Ice  
+Tera Type: Ground  
 Level: 83
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
-IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */ 
+IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */ 
 - Freeze-Dry  
 - Hydro Pump  
 - Hidden Power
@@ -20781,7 +20788,7 @@ Level: 83
 Tera Type: Ground
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
-IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe /* HP Ground IVs for Min Atk */ 
+IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */ 
 - Geomancy  
 - Moonblast  
 - Hidden Power

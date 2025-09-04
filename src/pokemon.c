@@ -7164,8 +7164,27 @@ bool32 IsSpeciesForeignRegionalForm(u32 species, u32 currentRegion)
     return FALSE;
 }
 
+//u32 GetTeraTypeFromPersonality(struct Pokemon *mon)
+//{
+//    const u8 *types = gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].types;
+//    return (GetMonData(mon, MON_DATA_PERSONALITY) & 0x1) == 0 ? types[0] : types[1];
+//}
+
+// Add this array somewhere accessible (static/global is fine)
+static const u8 sNonNormalTypes[] = {
+    TYPE_FIGHTING, TYPE_FLYING, TYPE_POISON, TYPE_GROUND, TYPE_ROCK,
+    TYPE_BUG, TYPE_GHOST, TYPE_STEEL, TYPE_FIRE, TYPE_WATER,
+    TYPE_GRASS, TYPE_ELECTRIC, TYPE_PSYCHIC, TYPE_ICE, TYPE_DRAGON,
+    TYPE_DARK, TYPE_FAIRY
+    // Add any custom types here, but DO NOT include TYPE_NORMAL
+};
+
+#define NUM_NON_NORMAL_TYPES (sizeof(sNonNormalTypes) / sizeof(sNonNormalTypes[0]))
+
 u32 GetTeraTypeFromPersonality(struct Pokemon *mon)
 {
-    const u8 *types = gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].types;
-    return (GetMonData(mon, MON_DATA_PERSONALITY) & 0x1) == 0 ? types[0] : types[1];
+    u32 personality = GetMonData(mon, MON_DATA_PERSONALITY);
+    // Use the personality to pick a type, evenly distributed
+    u32 idx = personality % NUM_NON_NORMAL_TYPES;
+    return sNonNormalTypes[idx];
 }
