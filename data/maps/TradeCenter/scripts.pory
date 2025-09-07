@@ -147,18 +147,19 @@ script Common_EventScript_CheckIfEliteFourComplete {
 script MauvilleCity_EventScript_Temporary{
 	lock
 	setflag(FLAG_RECEIVED_HM_WATERFALL)
+	giveitem(ITEM_TM_HIDDEN_POWER)
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
 	//pokenavcall
 	//trainerbattle_no_intro(TRAINER_ARCHIE_SEAFLOOR_CAVERN,LavaridgeTown_Gym_1F_Text_FlanneryDefeat)
 	//addvar(VAR_LEVEL_CAP,5)
-	//givemon(SPECIES_FERALIGATR,12,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE)
+	//givemon(SPECIES_FERALIGATR,12,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE, MOVE_HIDDEN_POWER)
 	//givemon(SPECIES_FERALIGATR,15,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE)
 	//givemon(SPECIES_SNORLAX,100,,,,0,,,,,,,,,,,,,,MOVE_BLOCK,MOVE_HYPER_VOICE,MOVE_STRENGTH,MOVE_MAGICAL_TORQUE)
 	//givemon(SPECIES_CRADILY,100,,,,0,,,,,,,,,,,,,,MOVE_BLOCK)
 //	givemon(SPECIES_GARDEVOIR,100,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE,MOVE_HYPER_VOICE,MOVE_STRENGTH,MOVE_MAGICAL_TORQUE)
-	//giveitem(ITEM_POKEMON_BOX_LINK)
+	giveitem(ITEM_MASTER_BALL,99)
 	//setflag(FLAG_FLY_FROM_MAP_CONFIG)
 	//setvar(VAR_LEVEL_HANDICAP,0)
 	//buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
@@ -178,7 +179,7 @@ script MauvilleCity_EventScript_Temporary{
 	fadescreenswapbuffers(FADE_FROM_BLACK)
 	setflag(FLAG_REGI_DOORS_OPENED)
 	setflag(FLAG_NO_TRAINER_BATTLE)
-	givemon(SPECIES_DARMANITAN,90,,,,2,,,,,,,,,,,,,,MOVE_STEELSURGE,MOVE_WIDE_GUARD,MOVE_SHELL_SMASH,MOVE_MYSTICAL_FIRE)
+	//givemon(SPECIES_DARMANITAN,90,,,,2,,,,,,,,,,,,,,MOVE_STEELSURGE,MOVE_WIDE_GUARD,MOVE_SHELL_SMASH,MOVE_MYSTICAL_FIRE)
 	//givemon(SPECIES_DARMANITAN_GALAR,90,,,,2,,,,,,,,,,,,,,MOVE_TERA_STARSTORM,MOVE_WIDE_GUARD,MOVE_SHELL_SMASH,MOVE_MYSTICAL_FIRE)
 
 	//givemon(SPECIES_CYNDAQUIL,24,,,,2,,,,,,,,,,,,,,MOVE_SEARING_SUNRAZE_SMASH,MOVE_SUNSTEEL_STRIKE,MOVE_BITTER_MALICE,MOVE_PURIFY)
