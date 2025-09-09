@@ -1,13 +1,44 @@
-raw `
-GraniteCave_B1F_MapScripts::
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole
-	map_script MAP_SCRIPT_ON_TRANSITION, CaveHole_FixCrackedGround
-	map_script MAP_SCRIPT_ON_RESUME, GraniteCave_B1F_SetHoleWarp
-	.byte 0
+mapscripts GraniteCave_B1F_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: GraniteCave_FlashCheck
+    ]
+}
 
-GraniteCave_B1F_SetHoleWarp:
-	setstepcallback STEP_CB_CRACKED_FLOOR
-	setholewarp MAP_GRANITE_CAVE_B2F
-	end
+//GraniteCave_B1F_SetHoleWarp:
+//	setstepcallback STEP_CB_CRACKED_FLOOR
+//	setholewarp MAP_GRANITE_CAVE_B2F
+//	end
+//
 
-`
+script GraniteCave_FlashCheck {
+    if (flag(FLAG_SYS_USE_FLASH)) {
+		setvar(VAR_TEMP_0,1)
+		releaseall
+		return
+	}
+	if(flag(FLAG_RECEIVED_HM_FLASH)) {
+		lock
+		msgbox(Common_Text_CaveIsDarkUseFlash)
+		waitmessage
+		dofieldeffect(FLDEFF_USE_STRENGTH)
+		playse(SE_M_REFLECT)
+		delay(20)
+		setflag(FLAG_SYS_USE_FLASH)
+		animateflash(0)
+		setflashlevel(0)
+		setvar(VAR_TEMP_0,1)
+		release
+		return
+	}
+	else {
+		lock
+		setvar(VAR_TEMP_0,1)
+		msgbox(Common_Text_CaveIsDarkNeedFlash)
+		waitmessage
+		delay(20)
+		warp(MAP_GRANITE_CAVE_1F,17,11)
+		//applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp)
+		release
+		return
+	}
+}
