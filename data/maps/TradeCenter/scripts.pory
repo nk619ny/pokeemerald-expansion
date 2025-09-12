@@ -148,6 +148,7 @@ script MauvilleCity_EventScript_Temporary{
 	lock
 	setflag(FLAG_RECEIVED_HM_WATERFALL)
 	giveitem(ITEM_TM_HIDDEN_POWER)
+	setvar(VAR_SCOTT_PETALBURG_ENCOUNTER,2)
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle

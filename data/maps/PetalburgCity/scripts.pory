@@ -541,15 +541,16 @@ PetalburgCity_EventScript_Scott::
 	setvar VAR_SCOTT_STATE, 1
 	msgbox PetalburgCity_Text_AreYouATrainer, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PETALBURG_SCOTT, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	delay 30
-	msgbox PetalburgCity_Text_WellMaybeNot, MSGBOX_DEFAULT
-	closemessage
 	applymovement LOCALID_PETALBURG_SCOTT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 30
 	msgbox PetalburgCity_Text_ImLookingForTalentedTrainers, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_PETALBURG_SCOTT, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	call PetalburgCity_EventScript_GiveRareEgg
+	delay 30
+	msgbox PetalburgCity_Text_EggHasPotential, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_0x8008, 0, PetalburgCity_EventScript_ScottExit0
 	call_if_eq VAR_0x8008, 1, PetalburgCity_EventScript_ScottExit1
@@ -761,12 +762,16 @@ PetalburgCity_Text_WellMaybeNot:
 	.string "Your clothes aren't all that dirty.\p"
 	.string "You're either a rookie TRAINER,\n"
 	.string "or maybe you're just an ordinary kid.$"
-
-PetalburgCity_Text_ImLookingForTalentedTrainers:
-	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
 `
+const TempVar_EggSpecies = VAR_TEMP_6
+
+text PetalburgCity_Text_EggHasPotential {
+	format("That Egg is extremely rare. And I think it has a lot of potential, too.\pBut I think it needs a special Trainer to bring it out.\pHopefully, it can help you, and you can make it into something legendary.\pI'm looking forward to seeing what you can accomplish.")
+}
+
+text PetalburgCity_Text_ImLookingForTalentedTrainers {
+	format("I'm roaming the land in search of Trainers with a lot of potential.\pI'm trying to build something special, and foster young talent along the way.\pI came here to speak with that Wally kid, but I think you might have something too.\pHere - take this.")
+}
 
 script PetalburgCity_EventScript_GymSign {
 	switch(var(VAR_PETALBURG_GYM_STATE)) {
@@ -824,4 +829,31 @@ text PetalburgCity_Text_WallyBye {
 
 movement PetalburgCity_Movement_WallyPostVitoDepart {
 	walk_down * 8
+}
+
+script PetalburgCity_EventScript_GiveRareEgg {
+	lock
+	random(5)
+	switch(var(VAR_RESULT)) {
+		case 0:
+			setvar(TempVar_EggSpecies, SPECIES_PHIONE)
+		case 1:
+			setvar(TempVar_EggSpecies, SPECIES_COSMOG)
+		case 2:
+			setvar(TempVar_EggSpecies, SPECIES_KUBFU)
+		case 3:
+			setvar(TempVar_EggSpecies, SPECIES_MELTAN)
+		case 4:
+			setvar(TempVar_EggSpecies, SPECIES_POIPOLE)
+		case 5:
+			setvar(TempVar_EggSpecies, SPECIES_ZYGARDE_10_AURA_BREAK)
+		default:
+			setvar(TempVar_EggSpecies, SPECIES_DITTO)
+	}
+	playfanfare(MUS_OBTAIN_ITEM)
+	giveegg(TempVar_EggSpecies)
+	msgbox(format("Received a Pokémon Egg!"), MSGBOX_DEFAULT)
+	waitfanfare
+	closemessage
+	return
 }
