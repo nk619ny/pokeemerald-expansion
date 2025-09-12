@@ -2,7 +2,8 @@
 EventScript_CutTree::
 	lockall
 	goto_if_unset FLAG_BADGE02_GET, EventScript_CheckTreeCantCut
-	//checkpartymove MOVE_CUT
+	//checkfieldmove FIELD_MOVE_CUT, TRUE //this is new in 1.13
+	//checkpartymove MOVE_CUT //this was the prior version
 	//goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
 	//setfieldeffectargument 0, VAR_RESULT
 	//bufferpartymonnick STR_VAR_1, VAR_RESULT
@@ -70,7 +71,8 @@ EventScript_RockSmash::
 	lockall
 	goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
 	goto_if_unset FLAG_HIDE_ROUTE_111_VICTOR_WINSTRATE, EventScript_CantSmashRock //require HM from Winstrates before Rock Smash
-//	checkpartymove MOVE_ROCK_SMASH
+// 	checkfieldmove FIELD_MOVE_ROCK_SMASH, TRUE // this is new in 1.13
+//	checkpartymove MOVE_ROCK_SMASH //this was the prior version
 //	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock
 //	setfieldeffectargument 0, VAR_RESULT
 //	bufferpartymonnick STR_VAR_1, VAR_RESULT
@@ -233,7 +235,8 @@ EventScript_StrengthBoulder::
 	lockall
 	goto_if_unset FLAG_BADGE01_GET, EventScript_CantStrength
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
-//	checkpartymove MOVE_STRENGTH
+//	checkfieldmove FIELD_MOVE_STRENGTH, TRUE //new version in 1.13
+//	checkpartymove MOVE_STRENGTH //prior version 
 //	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
 //	setfieldeffectargument 0, VAR_RESULT
 	msgbox Text_WantToStrength, MSGBOX_YESNO
@@ -293,8 +296,9 @@ Text_StrengthActivated:
 
 EventScript_UseWaterfall::
 	lockall
-	//goto_if_unset FLAG_BADGE08_GET, EventScript_CantWaterfall
-	//checkpartymove MOVE_WATERFALL
+	goto_if_unset FLAG_BADGE08_GET, EventScript_CantWaterfall
+	//checkfieldmove FIELD_MOVE_WATERFALL //new check in 1.13
+	//checkpartymove MOVE_WATERFALL // prior check for move in party
 	//goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantWaterfall
 	//bufferpartymonnick STR_VAR_1, VAR_RESULT
 	//setfieldeffectargument 0, VAR_RESULT
@@ -329,7 +333,8 @@ Text_MonUsedWaterfall:
 
 EventScript_UseDive::
 	lockall
-	//checkpartymove MOVE_DIVE
+	//checkfieldmove FIELD_MOVE_DIVE // new move check in 1.13
+	//checkpartymove MOVE_DIVE //prior check
 	//goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantDive
 	//copyvar 0x8004 VAR_RESULT - newly added line in 1.12
 	//bufferpartymonnick STR_VAR_1, VAR_RESULT
@@ -356,7 +361,7 @@ EventScript_EndDive::
 
 EventScript_UseDiveUnderwater::
 	lockall
-	//checkpartymove MOVE_DIVE
+	//checkfieldmove FIELD_MOVE_DIVE
 	//goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSurface
 	//bufferpartymonnick STR_VAR_1, VAR_RESULT
 	//setfieldeffectargument 0, VAR_RESULT
@@ -452,3 +457,36 @@ EventScript_UseDefog::
 	waitstate
 	releaseall
 	end
+
+EventScript_UseRockClimb::
+	lockall
+	checkfieldmove FIELD_MOVE_ROCK_CLIMB
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantRockClimb
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToRockClimb, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_EndRockClimb
+	msgbox Text_MonUsedRockClimb, MSGBOX_DEFAULT
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_CLIMB
+	waitstate
+	goto EventScript_EndRockClimb
+	end
+
+EventScript_CantRockClimb::
+	msgbox Text_CantRockClimb, MSGBOX_DEFAULT
+
+EventScript_EndRockClimb::
+	releaseall
+	end
+
+Text_WantToRockClimb:
+    .string "The cliff is steep.\n"
+    .string "Would you like to use Rock Climb?$"
+
+Text_MonUsedRockClimb:
+    .string "{STR_VAR_1} used Rock Climb!$"
+
+Text_CantRockClimb:
+    .string "The cliff is steep.\n"
+    .string "A Pokémon may be able to climb it.$"

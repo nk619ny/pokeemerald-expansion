@@ -1,5 +1,6 @@
 EventScript_UseSurf::
-	//checkpartymove MOVE_SURF
+	//checkfieldmove FIELD_MOVE_SURF // new check in 1.13
+	//checkpartymove MOVE_SURF // prior check for move in party
 	goto_if_unset FLAG_BADGE05_GET, EventScript_EndUseSurf
 	goto_if_unset FLAG_RECEIVED_HM_SURF, EventScript_EndUseSurf
 	//bufferpartymonnick STR_VAR_1, VAR_RESULT
