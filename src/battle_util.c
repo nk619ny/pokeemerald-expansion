@@ -5369,12 +5369,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             if (!gDisableStructs[battler].weatherAbilityDone
              && (gBattleWeather & B_WEATHER_SANDSTORM) && HasWeatherEffect()
              && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
-             && !(gBattleMons[battler].status2 & STATUS2_TRANSFORMED))
+             && !gBattleMons[battler].volatiles.transformed)
             {
                 gDisableStructs[battler].weatherAbilityDone = TRUE;
                 gBattleScripting.battler = battler;
                 SET_STATCHANGER(STAT_ATK, 1, FALSE);
-                BattleScriptPushCursorAndCallback(BattleScript_ScriptingAbilityWindRiderSandstorm);
+                //BattleScriptPushCursorAndCallback(BattleScript_ScriptingAbilityStatRaise);
+                //BattleScriptPushCursorAndCallback(BattleScript_ScriptingAbilityWindRiderSandstorm);
                 effect++;
             }
             break;
@@ -8583,8 +8584,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         if (moveType == TYPE_FIRE)
         {
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.25));
-            if (damageCalcData->updateFlags)
-                RecordAbilityBattle(battlerDef, defAbility);
+            if (ctx->updateFlags)
+                RecordAbilityBattle(battlerDef, ctx->abilityDef);
         }
         break;
     case ABILITY_WATER_BUBBLE:

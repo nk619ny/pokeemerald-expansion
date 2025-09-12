@@ -897,8 +897,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_POWERCONSTRUCTPRESENCEOFMANY]         = COMPOUND_STRING("You sense the presence of many!"),
     [STRINGID_POWERCONSTRUCTTRANSFORM]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} transformed into its Complete Forme!"),
     [STRINGID_ABILITYSHIELDPROTECTS]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}'s Ability is protected by the effects of its {B_LAST_ITEM}!"),
-    [STRINGID_PKMNMADEASTORM]                       = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY} created a thunderstorm!"), //not in gen 5+, ability popup
-    [STRINGID_ABILITYLOWEREDSURROUNDINGEVASION]     = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY} lowered the evasion of all Pokémon on the field!\p"),
+    [STRINGID_PKMNMADEASTORM]                       = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} created a thunderstorm!"), //not in gen 5+, ability popup
+    [STRINGID_ABILITYLOWEREDSURROUNDINGEVASION]     = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} lowered the evasion of all Pokémon on the field!\p"),
 
 };
 

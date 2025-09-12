@@ -1876,8 +1876,8 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_STEELSURGE:
-            if (gSideTimers[GetBattlerSide(battlerDef)].steelsurgeAmount > 0
-              || PartnerMoveIsSameNoTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove)) //Only one mon needs to set up Steelsurge
+            if (IsHazardOnSide(GetBattlerSide(battlerDef), HAZARDS_STEELSURGE)
+              || PartnerMoveIsSameNoTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove)) //Only one mon needs to set up Stealth Rocks
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_TOXIC_SPIKES:
