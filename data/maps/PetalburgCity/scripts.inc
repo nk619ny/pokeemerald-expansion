@@ -1672,9 +1672,15 @@ PetalburgCity_EventScript_GiveRareEgg::
 	setvar VAR_TEMP_6, SPECIES_DITTO
 PetalburgCity_EventScript_GiveRareEgg_1:
 # 853 "data/maps/PetalburgCity/scripts.pory"
-	giveegg VAR_TEMP_6
+	playfanfare MUS_OBTAIN_ITEM
 # 854 "data/maps/PetalburgCity/scripts.pory"
+	giveegg VAR_TEMP_6
+# 855 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_GiveRareEgg_Text_0, MSGBOX_DEFAULT
+# 856 "data/maps/PetalburgCity/scripts.pory"
 	waitfanfare
+# 857 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
 	return
 
 PetalburgCity_EventScript_GiveRareEgg_3:
@@ -1707,6 +1713,10 @@ PetalburgCity_EventScript_GiveRareEgg_8:
 	setvar VAR_TEMP_6, SPECIES_ZYGARDE_10_AURA_BREAK
 	goto PetalburgCity_EventScript_GiveRareEgg_1
 
+
+PetalburgCity_EventScript_GiveRareEgg_Text_0:
+# 855 "data/maps/PetalburgCity/scripts.pory"
+	.string "Received a Pokémon Egg!$"
 
 PetalburgCity_Text_EggHasPotential::
 # 768 "data/maps/PetalburgCity/scripts.pory"

@@ -6114,11 +6114,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_COSMOEM] =
     {
-        .baseHP        = 43,
-        .baseAttack    = 29,
+        .baseHP        = 43 + (B_LITTLE_LEGEND_480  == TRUE ? 20 : 0),
+        .baseAttack    = 29 + (B_LITTLE_LEGEND_480  == TRUE ? 20 : 0),
         .baseDefense   = 131,
         .baseSpeed     = 37,
-        .baseSpAttack  = 29,
+        .baseSpAttack  = 29 + (B_LITTLE_LEGEND_480  == TRUE ? 20 : 0),
         .baseSpDefense = 131,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 45,
@@ -7295,12 +7295,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_POIPOLE
     [SPECIES_POIPOLE] =
     {
-        .baseHP        = 67,
-        .baseAttack    = 73,
-        .baseDefense   = 67,
-        .baseSpeed     = 73,
-        .baseSpAttack  = 73,
-        .baseSpDefense = 67,
+        .baseHP        = 67 + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
+        .baseAttack    = 73 + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
+        .baseDefense   = 67 + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
+        .baseSpeed     = 73 + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
+        .baseSpAttack  = 73 + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
+        .baseSpDefense = 67 + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_POISON),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 210 : 189,
@@ -7629,12 +7629,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_MELTAN
     [SPECIES_MELTAN] =
     {
-        .baseHP        = 46,
-        .baseAttack    = 65,
-        .baseDefense   = 65,
-        .baseSpeed     = 34,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 35,
+        .baseHP        = 46 + (B_LITTLE_LEGEND_420  == TRUE ? 20 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
+        .baseAttack    = 65 + (B_LITTLE_LEGEND_420  == TRUE ? 15 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 15 : 0),
+        .baseDefense   = 65 + (B_LITTLE_LEGEND_420  == TRUE ? 20 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
+        .baseSpeed     = 34 + (B_LITTLE_LEGEND_420  == TRUE ? 10 : 0),
+        .baseSpAttack  = 55 + (B_LITTLE_LEGEND_420  == TRUE ? 15 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 25 : 0),
+        .baseSpDefense = 35 + (B_LITTLE_LEGEND_420  == TRUE ? 10 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 20 : 0),
         .types = MON_TYPES(TYPE_STEEL),
         .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 150 : 135,

@@ -82,6 +82,8 @@
 #define B_CUSTOMIZED_GEN_7_STATS    TRUE       // Customizes Gen 7 mon stats by me, the hack creator.
 #define B_CUSTOMIZED_GEN_8_STATS    TRUE       // Customizes Gen 8 mon stats by me, the hack creator.
 #define B_CUSTOMIZED_GEN_9_STATS    TRUE       // Customizes Gen 9 mon stats by me, the hack creator.
+#define B_LITTLE_LEGEND_420         TRUE       // Sets a floor of 420 for Rare Egg encounters base stat total.
+#define B_LITTLE_LEGEND_480         TRUE       // Sets a floor of 480 for Rare Egg encounters base stat total.
 
 // Ability data settings
 #define B_UPDATED_ABILITY_DATA      GEN_LATEST // Affects flags

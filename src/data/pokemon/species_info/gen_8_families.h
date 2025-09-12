@@ -7375,12 +7375,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_KUBFU
     [SPECIES_KUBFU] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 90,
-        .baseDefense   = 60,
-        .baseSpeed     = 72,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 50,
+        .baseHP        = 60 + (B_LITTLE_LEGEND_480  == TRUE ? 20 : 0),
+        .baseAttack    = 90 + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
+        .baseDefense   = 60 + (B_LITTLE_LEGEND_480  == TRUE ? 15 : 0),
+        .baseSpeed     = 72 + (B_LITTLE_LEGEND_480  == TRUE ? 15 : 0),
+        .baseSpAttack  = 53 + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
+        .baseSpDefense = 50 + (B_LITTLE_LEGEND_480  == TRUE ? 15 : 0),
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 3,
         .expYield = 77,
