@@ -6364,7 +6364,7 @@ IVs: 0 Atk / 0 Spe
 - Expanding Force  
 - Body Press  
 
-Hatterene (F) @ Terrain Extender
+Hatterene (F) @ Mental Herb
 Level: 70
 Ball: Moon Ball
 Ability: Magic Bounce  
@@ -6374,12 +6374,12 @@ IVs: 0 Atk / 0 Spe
 - Trick Room  
 - Dazzling Gleam  
 - Expanding Force  
-- Psychic Terrain 
+- Calm Mind
 
 Lunatone @ Psychic Seed  
 Level: 71
 Ball: Moon Ball
-Ability: Levitate  
+Ability: Psychic Surge  
 EVs: 252 HP / 4 Def / 252 SpA  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
