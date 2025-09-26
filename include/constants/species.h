@@ -1667,7 +1667,9 @@
 #define SPECIES_ROWLET_HISUI                            1548
 #define SPECIES_DARTRIX_HISUI                           1549
 
-#define SPECIES_EGG                                     1550
+#define SPECIES_TERAPAGOS_NORMAL_SHELL                 1550
+
+#define SPECIES_EGG                                     1551
 
 #define NUM_SPECIES SPECIES_EGG
 

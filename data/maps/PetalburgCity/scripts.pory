@@ -833,7 +833,7 @@ movement PetalburgCity_Movement_WallyPostVitoDepart {
 
 script PetalburgCity_EventScript_GiveRareEgg {
 	lock
-	random(5)
+	random(6)
 	switch(var(VAR_RESULT)) {
 		case 0:
 			setvar(TempVar_EggSpecies, SPECIES_PHIONE)
@@ -847,6 +847,8 @@ script PetalburgCity_EventScript_GiveRareEgg {
 			setvar(TempVar_EggSpecies, SPECIES_POIPOLE)
 		case 5:
 			setvar(TempVar_EggSpecies, SPECIES_ZYGARDE_10_AURA_BREAK)
+		case 6:
+			setvar(TempVar_EggSpecies, SPECIES_TERAPAGOS_NORMAL_SHELL)
 		default:
 			setvar(TempVar_EggSpecies, SPECIES_DITTO)
 	}
