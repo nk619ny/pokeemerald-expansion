@@ -1685,7 +1685,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Supersonic
 - Hyper Voice
 
-=== TRAINER_LOLA_1 ===
+=== TRAINER_LOLA_1 === /* Route 109 */
 Name: LOLA
 Class: Tuber F
 Pic: Tuber F
@@ -1694,13 +1694,35 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Azurill
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Oshawott  
+Level: 19
+Ability: Torrent  
+Tera Type: Water  
+- Razor Shell  
+- Encore  
+- Aerial Ace  
+- Copycat  
 
-Azurill
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Krabby  
+Level: 19
+Ability: Hyper Cutter  
+Tera Type: Water  
+EVs: 252 HP / 252 SpD  
+- Razor Shell  
+- X-Scissor  
+- Chip Away  
+- Rock Smash  
+
+Wormadam-Sandy (F)  
+Level: 19
+Ability: Shed Skin
+Tera Type: Bug  
+- Bulldoze  
+- Bug Bite  
+- Rock Tomb  
+- String Shot  
+
+
 
 === TRAINER_AUSTINA ===
 Name: AUSTINA
@@ -1913,7 +1935,7 @@ Azumarill
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_RICKY_1 ===
+=== TRAINER_RICKY_1 === /* Route 109 */
 Name: RICKY
 Class: Tuber M
 Pic: Tuber M
@@ -3541,7 +3563,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Glare
 - Crunch
 
-=== TRAINER_WINSTON_1 ===
+=== TRAINER_WINSTON_1 === /* Route 104 North */
 Name: WINSTON
 Class: Rich Boy
 Pic: Rich Boy
@@ -3550,9 +3572,34 @@ Music: Rich
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fennekin  
+Level: 12
+Ability: Magician  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Fire Spin  
+- Swift  
+- Foul Play  
+- Magic Coat  
+
+Snubbull  
+Level: 12
+Ability: Intimidate  
+Tera Type: Fairy  
+- Lash Out  
+- Fire Fang  
+- Ice Fang  
+- Covet  
+
+Purrloin  
+Level: 12
+Ability: Prankster  
+Tera Type: Dark  
+- Assist  
+- Fake Out  
+- Covet  
+- Foul Play  
+
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE
@@ -7410,13 +7457,21 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon
+Cyndaquil  
+Ability: Blaze  
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tera Type: Fire  
 
-Seedot
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Totodile  
+Ability: Torrent  
+Level: 5  
+Tera Type: Water  
+
+Chikorita  
+Ability: Overgrow  
+Level: 5  
+Tera Type: Grass  
+
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -7789,7 +7844,7 @@ Magikarp
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_IVAN ===
+=== TRAINER_IVAN === /* Route 104 North */
 Name: IVAN
 Class: Fisherman
 Pic: Fisherman
@@ -7831,7 +7886,7 @@ Barboach
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ELLIOT_1 ===
+=== TRAINER_ELLIOT_1 === /* Route 106 */
 Name: ELLIOT
 Class: Fisherman
 Pic: Fisherman
@@ -7840,19 +7895,48 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magikarp
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowpoke-Galar @ Salac Berry  
+Level: 18
+Ability: Gluttony  
+Tera Type: Psychic  
+EVs: 128 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Yawn  
+- Slack Off  
+- Belch  
+- Psyshock  
 
-Tentacool
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Barboach @ Bright Powder  
+Level: 18
+Ability: Oblivious  
+Tera Type: Water  
+IVs: 0 Atk  
+- Muddy Water  
+- Mud Bomb  
+- Toxic  
+- Amnesia  
 
-Magikarp
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Goldeen  
+Level: 18
+Ability: Swift Swim  
+Tera Type: Water  
+- Bubble Beam  
+- Peck  
+- Fury Cutter  
+- Supersonic  
 
-=== TRAINER_NED ===
+Shelmet  
+Level: 18
+Ability: Overcoat  
+Tera Type: Bug  
+- Acid Armor  
+- Encore  
+- Leech Life  
+- Toxic Spikes  
+
+
+=== TRAINER_NED === /* Route 106 */
 Name: NED
 Class: Fisherman
 Pic: Fisherman
@@ -7861,9 +7945,43 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacool
-Level: 11
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Shellder  
+Level: 18
+Ability: Overcoat  
+Tera Type: Water  
+- Ice Shard  
+- Toxic  
+- Toxic Spikes  
+- Clamp  
+
+Tympole  
+Level: 18
+Ability: Swift Swim  
+Tera Type: Water  
+- Endeavor  
+- Infestation  
+- Bounce  
+- Bubble Beam  
+
+Tynamo  
+Level: 18
+Ability: Levitate  
+Tera Type: Electric  
+- Spark  
+- Charge Beam  
+- Knock Off  
+- Thunder Wave  
+
+Poliwag  
+Level: 18
+Ability: Swift Swim  
+Tera Type: Water  
+- Flip Turn  
+- Dive  
+- Hypnosis  
+- Dig  
+
+
 
 === TRAINER_DALE ===
 Name: DALE
@@ -10470,7 +10588,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Charm
 - Helping Hand
 
-=== TRAINER_HUEY ===
+=== TRAINER_HUEY === /* Route 109 */
 Name: HUEY
 Class: Sailor
 Pic: Sailor
@@ -10479,15 +10597,36 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wingull
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Bergmite  
+Level: 19
+Ability: Sturdy  
+Tera Type: Ice  
+- Chilling Water  
+- Icicle Spear  
+- Recover  
+- Sharpen  
 
-Machop
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Pikipek  
+Level: 19
+Ability: Pickup  
+Tera Type: Normal  
+- Roost  
+- U-turn  
+- Bullet Seed  
+- Dual Wingbeat  
 
-=== TRAINER_EDMOND ===
+Mareanie  
+Level: 19
+Ability: Merciless  
+Tera Type: Poison  
+IVs: 0 Atk  
+- Venoshock  
+- Toxic  
+- Venom Drench  
+- Soak  
+
+
+=== TRAINER_EDMOND === /* Route 109 */
 Name: EDMOND
 Class: Sailor
 Pic: Sailor
@@ -10496,9 +10635,33 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wingull
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Klawf  
+Level: 19
+Ability: Anger Shell  
+Tera Type: Rock  
+- Block  
+- Dig  
+- Rock Tomb  
+- Skitter Smack  
+
+Clauncher  
+Level: 19
+Ability: Mega Launcher  
+Tera Type: Water  
+- Bubble Beam  
+- U-turn  
+- Mud Shot  
+- Toxic  
+
+Binacle @ Custap Berry  
+Level: 19
+Ability: Pickpocket  
+Tera Type: Rock  
+- Brick Break  
+- Razor Shell  
+- Smack Down  
+- Endure  
+
 
 === TRAINER_ERNEST_1 ===
 Name: ERNEST
@@ -14115,13 +14278,36 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Smoliv  
+Ability: Early Bird  
+Level: 12
+Tera Type: Grass  
+IVs: 0 Atk  
+- Mega Drain  
+- Swift  
+- Charm  
 
-Shroomish
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Whismur  
+Ability: Soundproof  
+Level: 12
+Tera Type: Normal  
+IVs: 0 Atk  
+- Fake Tears  
+- Disarming Voice  
+- Howl  
+- Round  
+
+
+Patrat  
+Ability: Keen Eye  
+Level: 12
+Tera Type: Normal  
+- Detect  
+- Tackle  
+- Bite  
+- Bullet Seed  
+
+
 
 === TRAINER_JANICE ===
 Name: JANICE
@@ -14967,7 +15153,7 @@ Illumise
 Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_JOHANNA ===
+=== TRAINER_JOHANNA === /* Route 109 House */
 Name: JOHANNA
 Class: Beauty
 Pic: Beauty
@@ -16593,7 +16779,7 @@ IVs: 0 Atk
 - Soak  
 - Protect  
 
-=== TRAINER_HAILEY ===
+=== TRAINER_HAILEY === /* Route 109 */
 Name: HAILEY
 Class: Tuber F
 Pic: Tuber F
@@ -16602,11 +16788,39 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Buizel  
+Level: 19
+Ability: Water Veil  
+Tera Type: Water  
+- Aqua Jet  
+- Flip Turn  
+- Ice Spinner  
+- Low Sweep  
 
-=== TRAINER_CHANDLER ===
+Sandygast  
+Level: 19
+Ability: Water Compaction  
+Tera Type: Ground
+EVs: 128 HP  
+IVs: 0 Atk  
+- Chilling Water  
+- Night Shade  
+- Sandstorm  
+- Hidden Power 
+
+Tirtouga  
+Level: 19
+Ability: Solid Rock  
+Tera Type: Water  
+- Aqua Jet  
+- Ancient Power  
+- Curse  
+- Zen Headbutt  
+
+
+
+
+=== TRAINER_CHANDLER === /* Route 109 */
 Name: CHANDLER
 Class: Tuber M
 Pic: Tuber M
@@ -16615,13 +16829,36 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacool
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sandile  
+Level: 19
+Ability: Intimidate  
+Tera Type: Ground  
+EVs: 168 HP / 168 Def / 168 SpD  
+- Lash Out  
+- Stomping Tantrum  
+- Skitter Smack  
+- Stealth Rock  
 
-Tentacool
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wingull  
+Level: 19
+Ability: Keen Eye  
+Tera Type: Water  
+- Air Cutter  
+- Chilling Water  
+- Ominous Wind  
+- Pluck  
+
+
+Silicobra @ Sitrus Berry  
+Ability: Sand Veil  
+Level: 19
+Tera Type: Ground  
+EVs: 128 HP / 128 Atk / 128 SpA  
+- Glare  
+- Sand Tomb  
+- Drill Run  
+- Belch  
+
 
 === TRAINER_KALEB ===
 Name: KALEB

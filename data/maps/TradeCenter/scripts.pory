@@ -146,7 +146,7 @@ script Common_EventScript_CheckIfEliteFourComplete {
 
 script MauvilleCity_EventScript_Temporary{
 	lock
-	setflag(FLAG_RECEIVED_HM_WATERFALL)
+	setflag(FLAG_MIRAGE_ISLAND_VISIBLE)
 	giveitem(ITEM_TM_HIDDEN_POWER)
 	setvar(VAR_SCOTT_PETALBURG_ENCOUNTER,2)
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)

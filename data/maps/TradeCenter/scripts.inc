@@ -299,7 +299,7 @@ MauvilleCity_EventScript_Temporary::
 # 148 "data/maps/TradeCenter/scripts.pory"
 	lock
 # 149 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_RECEIVED_HM_WATERFALL
+	setflag FLAG_MIRAGE_ISLAND_VISIBLE
 # 150 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_TM_HIDDEN_POWER
 # 151 "data/maps/TradeCenter/scripts.pory"
