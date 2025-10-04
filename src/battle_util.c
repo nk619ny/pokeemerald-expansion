@@ -10499,6 +10499,7 @@ u32 TryImmunityAbilityHealStatus(u32 battler, u32 caseID)
         }
         break;
     case ABILITY_MAGMA_ARMOR:
+    case ABILITY_SUB_ZERO:
         if (gBattleMons[battler].status1 & (STATUS1_FREEZE | STATUS1_FROSTBITE))
         {
             StringCopy(gBattleTextBuff1, gStatusConditionString_IceJpn);
