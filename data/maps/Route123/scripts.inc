@@ -295,7 +295,7 @@ Route123_EventScript_Jazmyn::
 # 148 "data/maps/Route123/scripts.pory"
 Route123_EventScript_Davis::
 # 149 "data/maps/Route123/scripts.pory"
-	trainerbattle_single TRAINER_DAVIS, Route123_Text_DavisIntro, Route123_Text_DavisDefeat
+	trainerbattle_single TRAINER_DAVIS, Route123_Text_DavisIntro, Route123_Text_DavisDefeat, Route123_Script_DavisDefeated
 # 150 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_DavisPostBattle, MSGBOX_AUTOCLOSE
 # 151 "data/maps/Route123/scripts.pory"
@@ -394,3 +394,13 @@ Route123_Text_RouteSignMtPyre:
 Route123_Text_BerryMastersHouse:
 # 198 "data/maps/Route123/scripts.pory"
 	.string "BERRY MASTER'S HOUSE$"
+
+Route123_Script_DavisDefeated::
+# 202 "data/maps/Route123/scripts.pory"
+	lock
+# 203 "data/maps/Route123/scripts.pory"
+	setflag FLAG_DEFEATED_DAVIS_123
+# 204 "data/maps/Route123/scripts.pory"
+	release
+	return
+

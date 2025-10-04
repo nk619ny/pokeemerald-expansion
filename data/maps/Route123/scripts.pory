@@ -146,7 +146,7 @@ Route123_EventScript_Jazmyn::
 	end
 
 Route123_EventScript_Davis::
-	trainerbattle_single TRAINER_DAVIS, Route123_Text_DavisIntro, Route123_Text_DavisDefeat
+	trainerbattle_single TRAINER_DAVIS, Route123_Text_DavisIntro, Route123_Text_DavisDefeat, Route123_Script_DavisDefeated
 	msgbox Route123_Text_DavisPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -198,3 +198,9 @@ Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
 
 `
+script Route123_Script_DavisDefeated{
+	lock
+	setflag(FLAG_DEFEATED_DAVIS_123)
+	release
+	return
+}

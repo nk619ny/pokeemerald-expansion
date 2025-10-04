@@ -5292,7 +5292,7 @@ Surskit
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_DONALD === /* Route */
+=== TRAINER_DONALD === /* Route 119 */
 Name: DONALD
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -5301,19 +5301,45 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wurmple
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Parasect  @ Coba Berry
+Level: 51
+Ability: Effect Spore  
+Tera Type: Bug  
+- Spore  
+- Leech Life  
+- Leech Seed  
+- Rage Powder  
 
-Silcoon
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Scyther  @ Charti Berry
+Level: 51
+Ability: Swarm  
+Tera Type: Bug  
+- Dual Wingbeat  
+- X-Scissor  
+- Brick Break  
+- Swords Dance  
 
-Beautifly
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Durant @ Occa Berry  
+Level: 51
+Ability: Truant  
+Tera Type: Bug  
+- Skill Swap  
+- Stone Edge  
+- Iron Head  
+- Skitter Smack  
 
-=== TRAINER_TAYLOR === /* Route */
+Gastrodon  @ Rindo Berry
+Level: 51
+Ability: Storm Drain
+Tera Type: Water  
+IVs: 0 Atk  
+- Infestation  
+- String Shot  
+- Scald  
+- Earth Power  
+
+
+=== TRAINER_TAYLOR === /* Route 119 */
 Name: TAYLOR
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -5322,17 +5348,41 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wurmple
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Pinsir  @ Charti Berry
+Ability: Hyper Cutter  
+Tera Type: Bug  
+- X-Scissor  
+- Crush Grip  
+- Close Combat  
+- Swords Dance  
 
-Cascoon
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Masquerain  @ Charti Berry
+Ability: Intimidate  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Air Slash  
+- Energy Ball  
+- Water Pulse
+- Baton Pass  
 
-Dustox
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Yanma  @ Charti Berry
+Ability: Compound Eyes  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Hypnosis  
+- Air Slash  
+- Signal Beam  
+- Shadow Ball
+
+Vivillon  @ Charti Berry
+Ability: Compound Eyes  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Hurricane  
+- Quiver Dance  
+- Bug Buzz  
+- Sleep Powder  
+ 
 
 === TRAINER_JEFFREY_1 === /* Route */
 Name: JEFFREY
@@ -8568,7 +8618,7 @@ Tera Type: Water
 - Toxic  
 
 
-=== TRAINER_BARNY === /* Route */
+=== TRAINER_BARNY === /* Route 118 */
 Name: BARNY
 Class: Fisherman
 Pic: Fisherman
@@ -8577,13 +8627,44 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacool
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dratini  
+Level: 55
+Ability: Shed Skin  
+Tera Type: Dragon  
+- Ice Beam  
+- Flamethrower  
+- Thunderbolt  
+- Extreme Speed  
 
-Carvanha
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Huntail  
+Level: 50
+Ability: Swift Swim  
+Tera Type: Water  
+- Aqua Tail  
+- Ice Fang  
+- Coil  
+- Sucker Punch
+
+
+Basculin-Red-Striped  
+Level: 50
+Ability: Adaptability  
+Tera Type: Water  
+- Flip Turn  
+- Aqua Jet  
+- Head Smash  
+- Zen Headbutt  
+
+
+Qwilfish  
+Level: 50
+Ability: Intimidate  
+Tera Type: Water  
+- Spiky Shield  
+- Aqua Jet  
+- Barb Barrage  
+- Toxic Spikes  
+
 
 === TRAINER_WADE === /* Route */
 Name: WADE
@@ -9530,11 +9611,42 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Sequence Switching
 
-Wingull
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pidgeotto  
+Level: 55
+Ability: Keen Eye  
+Tera Type: Normal  
+- Feather Dance  
+- Roost  
+- Air Slash  
+- Steel Wing  
+
+Tranquill  
+Level: 55
+Ability: Big Pecks  
+Tera Type: Normal  
+- Dual Wingbeat  
+- Night Slash  
+- Secret Power  
+- Morning Sun  
+
+Staravia  
+Level: 55
+Ability: Intimidate  
+Tera Type: Normal  
+- Quick Attack  
+- U-turn  
+- Retaliate  
+
+Corvisquire  
+Level: 55
+Ability: Unnerve  
+Tera Type: Flying  
+- Drill Peck  
+- Power Trip  
+- Work Up  
+- Tailwind  
 
 === TRAINER_HUGH === /* Route 119 */
 Name: HUGH
@@ -9685,7 +9797,7 @@ Xatu
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CHESTER === /* Route */
+=== TRAINER_CHESTER === /* Route 118 */
 Name: CHESTER
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -9694,13 +9806,42 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Taillow
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fearow @ Power Herb  
+Level: 53
+Ability: Sniper  
+Tera Type: Normal  
+- Drill Peck  
+- Drill Run  
+- U-turn  
+- Sky Attack  
 
-Swellow
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Swellow  
+Level: 53
+Ability: Scrappy  
+Tera Type: Normal  
+- Boomburst  
+- Brave Bird  
+- Return  
+- Tailwind  
+
+Fletchinder  
+Level: 53
+Ability: Flame Body  
+Tera Type: Fire  
+- Flame Charge  
+- Dual Wingbeat  
+- Quick Attack  
+- Will-O-Wisp  
+
+Skarmory  
+Level: 53
+Ability: Sturdy  
+Tera Type: Steel  
+- Counter  
+- Steel Wing  
+- Drill Peck  
+- Roost  
+
 
 === TRAINER_ROBERT_2 === /* Route */
 Name: ROBERT
@@ -11738,7 +11879,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Return
 - Attract
 
-=== TRAINER_JAZMYN === /* Route */
+=== TRAINER_JAZMYN === /* Route 123 */ /* TO BE ADDED */
 Name: JAZMYN
 Class: Cooltrainer 2
 Pic: Cooltrainer F
@@ -13379,7 +13520,7 @@ Makuhita
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DAVIS === /* Route */
+=== TRAINER_DAVIS === /* Route 123 */ /* SET TO ALWAYS RAIN UNTIL DEFEATED */
 Name: DAVIS
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -13388,9 +13529,47 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Pinsir
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Surskit @ Leftovers
+Level: 55 
+Ability: Rain Dish  
+Tera Type: Bug  
+EVs: 192 Atk  
+- Aqua Jet  
+- Leech Life  
+- Infestation  
+- Protect
+
+Wimpod @ Choice Band  
+Level: 55
+Ability: Wimp Out  
+Tera Type: Bug  
+EVs: 192 HP / 192 Atk / 124 Spe  
+Jolly Nature  
+- Aqua Jet  
+- Leech Life  
+- Facade  
+
+Dewpider @ Mystic Water  
+Level: 55
+Ability: Water Bubble  
+Tera Type: Water  
+EVs: 252 HP / 128 Atk / 128 SpA  
+- Hydro Pump  
+- Liquidation  
+- Giga Drain  
+- Mirror Coat  
+
+Snom @ Charti Berry  
+Level: 55
+Ability: Ice Scales  
+Tera Type: Water  
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk  
+- Hidden Power
+- Mirror Coat  
+- Icy Wind  
+- Bug Buzz  
+
 
 === TRAINER_MITCHELL === /* Route */
 Name: MITCHELL

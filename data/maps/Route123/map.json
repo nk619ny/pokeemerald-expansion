@@ -547,10 +547,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
-      "x": 14,
+      "x": 32,
       "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -559,15 +559,15 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 14,
+      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "x": 17,
       "y": 12,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route123_EventScript_Davis",
       "flag": "0"
     },
@@ -632,14 +632,14 @@
     },
     {
       "type": "weather",
-      "x": 19,
+      "x": 15,
       "y": 13,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"
     },
     {
       "type": "weather",
-      "x": 19,
+      "x": 15,
       "y": 12,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"
@@ -653,21 +653,21 @@
     },
     {
       "type": "weather",
-      "x": 19,
-      "y": 14,
-      "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"
-    },
-    {
-      "type": "weather",
-      "x": 19,
+      "x": 15,
       "y": 15,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"
     },
     {
       "type": "weather",
-      "x": 19,
+      "x": 15,
+      "y": 14,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"
+    },
+    {
+      "type": "weather",
+      "x": 15,
       "y": 16,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"

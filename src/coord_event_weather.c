@@ -2,6 +2,8 @@
 #include "constants/weather.h"
 #include "coord_event_weather.h"
 #include "field_weather.h"
+#include "event_data.h" // Added to set flag-dependent weather cycle
+
 
 struct CoordEventWeather
 {
@@ -97,12 +99,18 @@ static void CoordEventWeather_Drought(void)
 
 static void CoordEventWeather_Route119Cycle(void)
 {
-    SetWeather(WEATHER_ROUTE119_CYCLE);
+    if (!FlagGet(FLAG_HIDE_ROUTE_119_TEAM_AQUA))
+        SetWeather(WEATHER_RAIN);
+    else
+        SetWeather(WEATHER_ROUTE119_CYCLE);
 }
 
 static void CoordEventWeather_Route123Cycle(void)
 {
-    SetWeather(WEATHER_ROUTE123_CYCLE);
+    if (!FlagGet(FLAG_DEFEATED_DAVIS_123))
+        SetWeather(WEATHER_RAIN);
+    else
+        SetWeather(WEATHER_ROUTE123_CYCLE);
 }
 
 void DoCoordEventWeather(u8 coordEventWeather)
