@@ -27558,6 +27558,101 @@
         {
           "map": "MAP_SOOTOPOLIS_CITY",
           "base_label": "gSootopolisCity_Day",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_SQUAWKABILLY_WHITE"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_ALTARIA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_DRAMPA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_AZUMARILL"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_RAPIDASH_GALAR"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_SWANNA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_SQUAWKABILLY_WHITE"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_ALTARIA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_CARBINK"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_CARBINK"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_ALTARIA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_SQUAWKABILLY_WHITE"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_HAKAMO_O"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_DRAMPA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_DRAMPA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_DRAMPA"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_VIVILLON_ELEGANT"
+              },
+              {
+                "min_level": 48,
+                "max_level": 48,
+                "species": "SPECIES_BLISSEY"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 1,
             "mons": [
@@ -27787,7 +27882,11 @@
                 "species": "SPECIES_DRAGONAIR"
               }
             ]
-          },
+          }
+        },
+        {
+          "map": "MAP_SOOTOPOLIS_CITY",
+          "base_label": "gSootopolisCity_Night",
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
@@ -27844,12 +27943,12 @@
               {
                 "min_level": 48,
                 "max_level": 48,
-                "species": "SPECIES_ALTARIA"
+                "species": "SPECIES_RAPIDASH_GALAR"
               },
               {
                 "min_level": 48,
                 "max_level": 48,
-                "species": "SPECIES_SQUAWKABILLY_WHITE"
+                "species": "SPECIES_RAPIDASH_GALAR"
               },
               {
                 "min_level": 48,
@@ -27882,11 +27981,7 @@
                 "species": "SPECIES_BLISSEY"
               }
             ]
-          }
-        },
-        {
-          "map": "MAP_SOOTOPOLIS_CITY",
-          "base_label": "gSootopolisCity_Night",
+          },
           "water_mons": {
             "encounter_rate": 1,
             "mons": [
@@ -27959,101 +28054,6 @@
                 "min_level": 48,
                 "max_level": 48,
                 "species": "SPECIES_VIVILLON_ELEGANT"
-              }
-            ]
-          },
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_SQUAWKABILLY_WHITE"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_ALTARIA"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_DRAMPA"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_AZUMARILL"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_RAPIDASH_GALAR"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_SWANNA"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_SQUAWKABILLY_WHITE"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_ALTARIA"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_CARBINK"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_CARBINK"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_RAPIDASH_GALAR"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_RAPIDASH_GALAR"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_HAKAMO_O"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_DRAMPA"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_DRAMPA"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_DRAMPA"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_VIVILLON_ELEGANT"
-              },
-              {
-                "min_level": 48,
-                "max_level": 48,
-                "species": "SPECIES_BLISSEY"
               }
             ]
           }

@@ -17,10 +17,8 @@ Route106_EventScript_Kyla::
 	end
 
 Route106_EventScript_Elliot::
-	trainerbattle_single TRAINER_ELLIOT_1, Route106_Text_ElliotIntro, Route106_Text_ElliotDefeated, Route106_EventScript_ElliotRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route106_EventScript_ElliotRematch
-	msgbox Route106_Text_ElliotPostBattle, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_ELLIOT_1, Route106_Text_ElliotIntro_New, Route106_Text_ElliotDefeated_New
+	msgbox Route106_Text_ElliotPostBattle_New, MSGBOX_DEFAULT
 	release
 	end
 
@@ -48,3 +46,15 @@ Route106_Text_TrainerTips:
 	.string "Press the A Button if you get a bite.$"
 
 `
+
+text Route106_Text_ElliotIntro_New {
+	format("Which do you prefer, hiking in the mountains or a stroll on the beach?")
+}
+
+text Route106_Text_ElliotDefeated_New {
+	format("Like in cave delving, I lost spectacularly!")
+}
+
+text Route106_Text_ElliotPostBattle_New {
+	format("Hiking is the greatest whether it's in the high mountains or deep underground. You agree with me, right?")
+}
