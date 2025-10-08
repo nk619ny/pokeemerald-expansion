@@ -4811,7 +4811,7 @@ Magneton
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_COLE === /* Route */
+=== TRAINER_COLE === /* Lavaridge Gym */
 Name: COLE
 Class: Kindler
 Pic: Kindler
@@ -4820,11 +4820,45 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Polteageist  
+Level: 38
+Ability: Weak Armor  
+Tera Type: Ghost  
+IVs: 0 Atk  
+- Hydro Steam  
+- Shadow Ball  
+- Giga Drain  
+- Strength Sap  
 
-=== TRAINER_JEFF === /* Route */
+Sawsbuck-Summer  
+Level: 38
+Ability: Chlorophyll  
+Tera Type: Normal  
+- Horn Leech  
+- High Horsepower  
+- Zen Headbutt  
+- Light Screen  
+
+Scovillain  
+Level: 38
+Ability: Chlorophyll  
+Tera Type: Grass  
+- Spicy Extract  
+- Flamethrower  
+- Seed Bomb  
+- Endeavor  
+
+Rapidash  
+Level: 38
+Ability: Flame Body  
+Tera Type: Fire  
+- High Horsepower  
+- Solar Blade  
+- Wild Charge  
+- Flame Charge  
+
+
+=== TRAINER_JEFF === /* Lavaridge Gym */
 Name: JEFF
 Class: Kindler
 Pic: Kindler
@@ -4833,15 +4867,47 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Slugma
-Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Incineroar  
+Level: 37
+Ability: Intimidate  
+Tera Type: Fire  
+- Blaze Kick  
+- Darkest Lariat  
+- Fake Out  
+- Parting Shot  
 
-Slugma
-Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Exeggutor-Alola @ Sitrus Berry  
+Level: 37
+Ability: Harvest  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Solar Beam  
+- Dragon Pulse  
+- Ancient Power  
+- Flamethrower  
 
-=== TRAINER_AXLE === /* Route */
+Eldegoss  
+Level: 37
+Ability: Cotton Down  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Cotton Guard  
+- Hyper Voice  
+- Weather Ball  
+- Pollen Puff  
+
+Darmanitan  
+Level: 37
+Ability: Sheer Force  
+Tera Type: Fire  
+- Fire Punch  
+- Iron Head  
+- Rock Slide  
+- Encore  
+
+
+
+=== TRAINER_AXLE === /* Lavaridge Gym */
 Name: AXLE
 Class: Kindler
 Pic: Kindler
@@ -4850,11 +4916,41 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Weezing  
+Ability: Levitate  
+Tera Type: Poison  
+EVs: 252 HP  
+- Heat Wave  
+- Sludge Bomb  
+- Explosion  
+- Thunderbolt  
 
-=== TRAINER_JACE === /* Route */
+Flapple  @ Yache Berry
+Ability: Hustle  
+Tera Type: Grass  
+- Grav Apple  
+- Dual Wingbeat  
+- Protect  
+- U-turn  
+
+Centiskorch  
+Ability: White Smoke  
+Tera Type: Fire  
+- Mystical Fire  
+- Lunge  
+- Fire Lash  
+- Protect
+
+Heatmor  
+Ability: White Smoke  
+Tera Type: Fire  
+- Fire Lash  
+- Power-Up Punch  
+- Sucker Punch  
+- Bug Bite  
+
+
+=== TRAINER_JACE === /* Lavaridge Gym */
 Name: JACE
 Class: Kindler
 Pic: Kindler
@@ -4867,7 +4963,7 @@ Slugma
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_KEEGAN === /* Route */
+=== TRAINER_KEEGAN === /* Lavaridge Gym */
 Name: KEEGAN
 Class: Kindler
 Pic: Kindler
@@ -4876,9 +4972,45 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Slugma
-Level: 23
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Cherrim  @ Occa Berry
+Level: 38
+Ability: Flower Gift  
+Tera Type: Grass  
+- Weather Ball  
+- Solar Blade  
+- Morning Sun  
+- Dazzling Gleam  
+
+Sinistcha  
+Level: 38
+Ability: Heatproof  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Matcha Gotcha  
+- Strength Sap  
+- Shadow Ball  
+- Scald  
+
+Druddigon  
+Level: 38
+Ability: Rough Skin  
+Tera Type: Dragon  
+EVs: 252 HP  
+- Fire Fang  
+- Dragon Tail  
+- Shadow Claw  
+- Crunch  
+
+Simisear  
+Level: 38
+Ability: Blaze  
+Tera Type: Fire  
+- Fire Blast  
+- Flare Blitz  
+- Rock Slide  
+- Yawn  
+
+
 
 === TRAINER_BERNIE_1 === /* Route 114 */ /* TO BE ADDED */
 Name: BERNIE
@@ -11841,7 +11973,7 @@ Tentacruel
 Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_ELI === /* Route */
+=== TRAINER_ELI === /* Lavaridge Gym */
 Name: ELI
 Class: Hiker
 Pic: Hiker
@@ -16285,22 +16417,55 @@ IVs: 0 Atk
 - Attract  
 
 
-=== TRAINER_GERALD === /* Route */
+=== TRAINER_GERALD === /* Lavaridge Gym */
 Name: GERALD
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Dragon Tamer
+Pic: Dragon Tamer
 Gender: Male
-Music: Cool
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Kecleon
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flamethrower
-- Fury Swipes
-- Feint Attack
-- Bind
+Kecleon  
+Level: 39
+Ability: Protean  
+Tera Type: Normal  
+EVs: 252 HP  
+- Fake Out  
+- Fire Punch  
+- Trailblaze  
+- Shadow Sneak  
+
+Tropius  
+Level: 39
+Ability: Solar Power  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Giga Drain  
+- Dragon Pulse  
+- Tailwind  
+- Synthesis  
+
+Fraxure 
+Level: 39
+Ability: Mold Breaker  
+Tera Type: Dragon  
+EVs: 252 Spe  
+- Dragon Claw  
+- Counter  
+- Stomping Tantrum  
+- First Impression  
+
+Turtonator  
+Level: 39
+Ability: Shell Armor  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Burning Bulwark  
+- Body Press  
+- Dragon Pulse  
+- Heat Wave  
+
 
 === TRAINER_VIVIAN === /* Route */
 Name: VIVIAN
@@ -16328,7 +16493,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Confusion
 - Meditate
 
-=== TRAINER_DANIELLE === /* Route */
+=== TRAINER_DANIELLE === /* Lavaridge Gym */
 Name: DANIELLE
 Class: Battle Girl
 Pic: Battle Girl
