@@ -60,6 +60,8 @@ enum {
     TRANSITION_TYPE_WATER,
 };
 
+u16 gLatestRoamerSpecies = SPECIES_NONE; // created for Roamer legendary catch flags
+
 // this file's functions
 static void DoBattlePikeWildBattle(void);
 static void DoSafariBattle(void);
@@ -589,6 +591,39 @@ static void CB2_EndWildBattle(void)
          || FlagGet(FNPC_FLAG_HEAL_AFTER_FOLLOWER_BATTLE)))
             HealPlayerParty();
     }
+
+        // Legendary catch flags
+    if (gBattleOutcome == B_OUTCOME_CAUGHT)
+    {
+        switch (gLatestRoamerSpecies)
+        {
+            case SPECIES_ENAMORUS:      FlagSet(FLAG_CAUGHT_ENAMORUS); break;
+            case SPECIES_LANDORUS:      FlagSet(FLAG_CAUGHT_LANDORUS); break;
+            case SPECIES_THUNDURUS:     FlagSet(FLAG_CAUGHT_THUNDERUS); break;
+            case SPECIES_TORNADUS:      FlagSet(FLAG_CAUGHT_TORNADUS); break;
+            case SPECIES_GLASTRIER:     FlagSet(FLAG_CAUGHT_GLASTRIER); break;
+            case SPECIES_SPECTRIER:     FlagSet(FLAG_CAUGHT_SPECTRIER); break;
+            case SPECIES_MOLTRES_GALAR: FlagSet(FLAG_CAUGHT_MOLTRES_GALAR); break;
+            case SPECIES_ZAPDOS_GALAR:  FlagSet(FLAG_CAUGHT_ZAPDOS_GALAR); break;
+            case SPECIES_ARTICUNO_GALAR:FlagSet(FLAG_CAUGHT_ARTICUNO_GALAR); break;
+            case SPECIES_CRESSELIA:     FlagSet(FLAG_CAUGHT_CRESSELIA); break;
+            case SPECIES_LATIOS:        FlagSet(FLAG_CAUGHT_LATIOS); break;
+            case SPECIES_LATIAS:        FlagSet(FLAG_CAUGHT_LATIAS); break;
+            case SPECIES_VIRIZION:      FlagSet(FLAG_CAUGHT_VIRIZION); break;
+            case SPECIES_COBALION:      FlagSet(FLAG_CAUGHT_COBALION); break;
+            case SPECIES_TERRAKION:     FlagSet(FLAG_CAUGHT_TERRAKION); break;
+            case SPECIES_AZELF:         FlagSet(FLAG_CAUGHT_AZELF); break;
+            case SPECIES_MESPRIT:       FlagSet(FLAG_CAUGHT_MESPRIT); break;
+            case SPECIES_UXIE:          FlagSet(FLAG_CAUGHT_UXIE); break;
+            case SPECIES_SUICUNE:       FlagSet(FLAG_CAUGHT_SUICUNE); break;
+            case SPECIES_RAIKOU:        FlagSet(FLAG_CAUGHT_RAIKOU); break;
+            case SPECIES_ENTEI:         FlagSet(FLAG_CAUGHT_ENTEI); break;
+            case SPECIES_MOLTRES:       FlagSet(FLAG_CAUGHT_MOLTRES); break;
+            case SPECIES_ZAPDOS:        FlagSet(FLAG_CAUGHT_ZAPDOS); break;
+            case SPECIES_ARTICUNO:      FlagSet(FLAG_CAUGHT_ARTICUNO); break;
+        }
+    }
+
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE && CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE && !InBattlePike())
     {

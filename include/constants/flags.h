@@ -732,8 +732,8 @@
 #define FLAG_CAUGHT_CRESSELIA  0x2AD // previously not used
 #define FLAG_CAUGHT_LATIOS  0x2AE // previously not used
 #define FLAG_CAUGHT_LATIAS  0x2AF // previously not used
-#define FLAG_CAUGHT_VERIZION  0x2B0 // previously not used
-#define FLAG_CAUGHT_COBALLION  0x2B1 // previously not used
+#define FLAG_CAUGHT_VIRIZION  0x2B0 // previously not used
+#define FLAG_CAUGHT_COBALION  0x2B1 // previously not used
 #define FLAG_CAUGHT_TERRAKION  0x2B2 // previously not used
 #define FLAG_CAUGHT_AZELF  0x2B3 // previously not used
 #define FLAG_CAUGHT_MESPRIT  0x2B4 // previously not used

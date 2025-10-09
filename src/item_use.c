@@ -45,6 +45,9 @@
 #include "constants/item_effects.h"
 #include "constants/items.h"
 #include "constants/songs.h"
+#include "constants/maps.h"
+#include "wild_encounter.h"
+#include "battle_setup.h"
 
 static void SetUpItemUseCallback(u8);
 static void FieldCB_UseItemOnField(void);
@@ -95,6 +98,8 @@ static const u8 sText_UsedVar2WildRepelled[] = _("{PLAYER} used the\n{STR_VAR_2}
 static const u8 sText_PlayedPokeFluteCatchy[] = _("Played the POKé FLUTE.\pNow, that's a catchy tune!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_PlayedPokeFlute[] = _("Played the POKé FLUTE.");
 static const u8 sText_PokeFluteAwakenedMon[] = _("The POKé FLUTE awakened sleeping\nPOKéMON.{PAUSE_UNTIL_PRESS}");
+
+extern u16 gLatestRoamerSpecies; 
 
 // EWRAM variables
 EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
@@ -778,6 +783,84 @@ void ItemUseOutOfBattle_UnlimitedRepel(u8 taskId)
             DisplayItemMessage(taskId, 1, gText_UnlimitedRepelOff, CloseItemMessage);
         }
     }
+}
+
+void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
+{
+    static const struct { u8 group, num; } sAllowedMaps[] = {
+        {MAP_GROUP(MAP_ROUTE108), MAP_NUM(MAP_ROUTE108)},
+        {MAP_GROUP(MAP_ROUTE109), MAP_NUM(MAP_ROUTE109)},
+        {MAP_GROUP(MAP_ROUTE124), MAP_NUM(MAP_ROUTE124)},
+        {MAP_GROUP(MAP_ROUTE125), MAP_NUM(MAP_ROUTE125)},
+        {MAP_GROUP(MAP_ROUTE126), MAP_NUM(MAP_ROUTE126)},
+        {MAP_GROUP(MAP_ROUTE127), MAP_NUM(MAP_ROUTE127)},
+        {MAP_GROUP(MAP_ROUTE128), MAP_NUM(MAP_ROUTE128)},
+        {MAP_GROUP(MAP_ROUTE129), MAP_NUM(MAP_ROUTE129)},
+        {MAP_GROUP(MAP_ROUTE130), MAP_NUM(MAP_ROUTE130)},
+        {MAP_GROUP(MAP_ROUTE131), MAP_NUM(MAP_ROUTE131)},
+        {MAP_GROUP(MAP_ROUTE132), MAP_NUM(MAP_ROUTE132)},
+        {MAP_GROUP(MAP_ROUTE133), MAP_NUM(MAP_ROUTE133)},
+        {MAP_GROUP(MAP_ROUTE134), MAP_NUM(MAP_ROUTE134)},
+    };
+
+    static const struct {
+        u16 species;
+        u16 flag;
+    } sRoamingLegendariesOcean[] = {
+        {SPECIES_AZELF, FLAG_CAUGHT_AZELF},
+        {SPECIES_MESPRIT, FLAG_CAUGHT_MESPRIT},
+        {SPECIES_UXIE, FLAG_CAUGHT_UXIE},
+        {SPECIES_MOLTRES, FLAG_CAUGHT_MOLTRES},
+        {SPECIES_ZAPDOS, FLAG_CAUGHT_ZAPDOS},
+        {SPECIES_ARTICUNO, FLAG_CAUGHT_ARTICUNO},
+        {SPECIES_THUNDURUS, FLAG_CAUGHT_THUNDERUS},
+        {SPECIES_TORNADUS, FLAG_CAUGHT_TORNADUS},
+    };
+
+    u8 i;
+    bool8 onAllowedMap = FALSE;
+    for (i = 0; i < ARRAY_COUNT(sAllowedMaps); i++) {
+        if (gSaveBlock1Ptr->location.mapGroup == sAllowedMaps[i].group &&
+            gSaveBlock1Ptr->location.mapNum == sAllowedMaps[i].num) {
+            onAllowedMap = TRUE;
+            break;
+        }
+    }
+
+    if (!onAllowedMap) {
+        DisplayCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem, gText_CantUseHere);
+        return;
+    }
+
+    // Build a list of available legendaries
+    u8 available[ARRAY_COUNT(sRoamingLegendariesOcean)];
+    u8 availableCount = 0;
+    for (i = 0; i < ARRAY_COUNT(sRoamingLegendariesOcean); i++) {
+        if (!FlagGet(sRoamingLegendariesOcean[i].flag)) {
+            available[availableCount++] = i;
+        }
+    }
+
+    if (availableCount == 0) {
+        DisplayCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem, gText_CantUseHere);
+        return;
+    }
+
+    // Randomly select one of the available legendaries
+    u8 chosenIdx = available[Random() % availableCount];
+    u16 species = sRoamingLegendariesOcean[chosenIdx].species;
+    //u16 flag = sRoamingLegendariesOcean[chosenIdx].flag;
+
+    gLatestRoamerSpecies = species; // Store the selected species globally
+
+    // Get encounter level from VAR_LEVEL_CAP
+    u8 level = VarGet(VAR_LEVEL_CAP);
+
+    // Set up the wild encounter
+    CreateWildMon(species, level);
+    BattleSetup_StartWildBattle();
+    //FlagSet(flag); // Mark as caught after encounter
+    DestroyTask(taskId);
 }
 
 void ItemUseOutOfBattle_PowderJar(u8 taskId)
