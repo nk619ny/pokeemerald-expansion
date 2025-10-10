@@ -1862,6 +1862,9 @@ const u16 gItemIconPalette_DynamaxBand[] = INCBIN_U16("graphics/items/icon_palet
 
 // Misc. Key Items
 
+const u32 gItemIcon_EonFlute[] = INCBIN_U32("graphics/items/icons/eon_flute.4bpp.lz");
+const u16 gItemIconPalette_EonFlute[] = INCBIN_U16("graphics/items/icons/eon_flute.gbapal");
+
 const u32 gItemIcon_Bicycle[] = INCBIN_U32("graphics/items/icons/bicycle.4bpp.smol");
 const u16 gItemIconPalette_Bicycle[] = INCBIN_U16("graphics/items/icon_palettes/bicycle.gbapal");
 

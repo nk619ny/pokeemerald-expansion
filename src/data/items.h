@@ -15009,8 +15009,8 @@ const struct Item gItemsInfo[] =
         .importance = 1,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RoamingBeacon,
-        .iconPic = gItemIcon_Repel,
-        .iconPalette = gItemIconPalette_MaxRepel,
+        .iconPic = gItemIcon_EonFlute,
+        .iconPalette = gItemIconPalette_EonFlute,
     },
 };
 

@@ -305,7 +305,7 @@ MauvilleCity_EventScript_Temporary::
 # 151 "data/maps/TradeCenter/scripts.pory"
 	setvar VAR_SCOTT_PETALBURG_ENCOUNTER, 2
 # 163 "data/maps/TradeCenter/scripts.pory"
-	giveitem ITEM_ROAMING_BEACON
+	giveitem ITEM_EON_FLUTE
 # 177 "data/maps/TradeCenter/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
 # 179 "data/maps/TradeCenter/scripts.pory"

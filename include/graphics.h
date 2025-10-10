@@ -1568,6 +1568,8 @@ extern const u16 gItemIconPalette_ZPowerRing[];
 extern const u32 gItemIcon_DynamaxBand[];
 extern const u16 gItemIconPalette_DynamaxBand[];
 // Misc. Key Items
+extern const u32 gItemIcon_EonFlute[];
+extern const u16 gItemIconPalette_EonFlute[];
 extern const u32 gItemIcon_Bicycle[];
 extern const u16 gItemIconPalette_Bicycle[];
 extern const u32 gItemIcon_MachBike[];
