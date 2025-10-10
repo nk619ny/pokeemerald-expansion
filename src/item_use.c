@@ -870,10 +870,12 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
 
     u8 i;
     bool8 onAllowedMap = FALSE;
+    enum { ROAMER_REGION_NONE, ROAMER_REGION_OCEAN, ROAMER_REGION_RUGGED, ROAMER_REGION_PLACID } RoamerRegion = ROAMER_REGION_NONE;
     for (i = 0; i < ARRAY_COUNT(sOceanMaps); i++) {
         if (gSaveBlock1Ptr->location.mapGroup == sOceanMaps[i].group &&
             gSaveBlock1Ptr->location.mapNum == sOceanMaps[i].num) {
             onAllowedMap = TRUE;
+            RoamerRegion = ROAMER_REGION_OCEAN;
             break;
         }
     }
@@ -882,6 +884,7 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
             if (gSaveBlock1Ptr->location.mapGroup == sRuggedMaps[i].group &&
                 gSaveBlock1Ptr->location.mapNum == sRuggedMaps[i].num) {
                 onAllowedMap = TRUE;
+                RoamerRegion = ROAMER_REGION_RUGGED;
                 break;
             }
         }
@@ -891,6 +894,7 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
             if (gSaveBlock1Ptr->location.mapGroup == sPlacidMaps[i].group &&
                 gSaveBlock1Ptr->location.mapNum == sPlacidMaps[i].num) {
                 onAllowedMap = TRUE;
+                RoamerRegion = ROAMER_REGION_PLACID;
                 break;
             }
         }
@@ -901,23 +905,51 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
         return;
     }
 
-    // Build a list of available legendaries
-    u8 available[ARRAY_COUNT(sRoamingLegendariesOcean)];
     u8 availableCount = 0;
-    for (i = 0; i < ARRAY_COUNT(sRoamingLegendariesOcean); i++) {
-        if (!FlagGet(sRoamingLegendariesOcean[i].flag)) {
-            available[availableCount++] = i;
-        }
-    }
+    u8 available[ARRAY_COUNT(sRoamingLegendariesOcean)];
+    u16 species = SPECIES_NONE;
 
+    switch (RoamerRegion) {
+        case ROAMER_REGION_OCEAN:
+                        for (i = 0; i < ARRAY_COUNT(sRoamingLegendariesOcean); i++) {
+                            if (!FlagGet(sRoamingLegendariesOcean[i].flag)) {
+                                available[availableCount++] = i;
+                            }
+                        }
+                        if (availableCount > 0)
+                            species = sRoamingLegendariesOcean[available[Random() % availableCount]].species;
+                        break;
+                    case ROAMER_REGION_RUGGED:
+                        for (i = 0; i < ARRAY_COUNT(sRoamingLegendariesRugged); i++) {
+                            if (!FlagGet(sRoamingLegendariesRugged[i].flag)) {
+                                available[availableCount++] = i;
+                            }
+                        }
+                        if (availableCount > 0)
+                            species = sRoamingLegendariesRugged[available[Random() % availableCount]].species;
+                        break;
+                    case ROAMER_REGION_PLACID:
+                        for (i = 0; i < ARRAY_COUNT(sRoamingLegendariesPlacid); i++) {
+                            if (!FlagGet(sRoamingLegendariesPlacid[i].flag)) {
+                                available[availableCount++] = i;
+                            }
+                        }
+                        if (availableCount > 0)
+                            species = sRoamingLegendariesPlacid[available[Random() % availableCount]].species;
+                        break;
+                    default:
+                        break;
+                }
+    
     if (availableCount == 0) {
         DisplayCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem, gText_NoRoamersAround);
         return;
     }
 
+
     // Randomly select one of the available legendaries
-    u8 chosenIdx = available[Random() % availableCount];
-    u16 species = sRoamingLegendariesOcean[chosenIdx].species;
+    //u8 chosenIdx = available[Random() % availableCount];
+    //u16 species = sRoamingLegendariesOcean[chosenIdx].species;
     //u16 flag = sRoamingLegendariesOcean[chosenIdx].flag;
 
     gLatestRoamerSpecies = species; // Store the selected species globally
@@ -928,6 +960,7 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
     // Set up the wild encounter
     CreateWildMon(species, level);
     gLatestRoamerSpecies = species;
+    RoamerRegion = ROAMER_REGION_NONE; // Reset region after use
     gBattleTypeFlags = BATTLE_TYPE_ROAMER; // Set battle type to roamer
     BattleAI_SetupFlags(); // Ensure AI flags are set for roamer
     BattleSetup_StartRoamerBattle();
