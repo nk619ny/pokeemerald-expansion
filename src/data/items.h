@@ -14996,6 +14996,22 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_MaxRepel,
     },
+
+    [ITEM_EON_FLUTE] =
+    {
+        .name = ITEM_NAME("Eon Flute"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Calls special\n"
+            "Roaming Pokémon\n"
+            "to the area."),
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RoamingBeacon,
+        .iconPic = gItemIcon_Repel,
+        .iconPalette = gItemIconPalette_MaxRepel,
+    },
 };
 
 #undef ITEM_NAME

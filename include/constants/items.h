@@ -1023,9 +1023,10 @@
 
 #define ITEM_HEART_STONE 851
 #define ITEM_ROAMING_BEACON 852
+#define ITEM_EON_FLUTE 853
 
 
-#define ITEMS_COUNT 853
+#define ITEMS_COUNT 854
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

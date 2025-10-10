@@ -845,7 +845,7 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
     }
 
     if (availableCount == 0) {
-        DisplayCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem, gText_CantUseHere);
+        DisplayCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem, gText_NoRoamersAround);
         return;
     }
 
