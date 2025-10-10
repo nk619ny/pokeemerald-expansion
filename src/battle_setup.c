@@ -61,6 +61,7 @@ enum {
 };
 
 u16 gLatestRoamerSpecies = SPECIES_NONE; // created for Roamer legendary catch flags
+u16 gLatestRoamerPartnerSpecies = SPECIES_NONE; // created for Roamer legendary catch flags
 
 // this file's functions
 static void DoBattlePikeWildBattle(void);
@@ -623,6 +624,10 @@ static void CB2_EndWildBattle(void)
             case SPECIES_ARTICUNO:      FlagSet(FLAG_CAUGHT_ARTICUNO); break;
         }
     }
+
+        // Reset roamer species tracking variables after battle
+        gLatestRoamerPartnerSpecies = SPECIES_NONE;
+        gLatestRoamerSpecies = SPECIES_NONE;
 
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE && CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE && !InBattlePike())

@@ -84,6 +84,8 @@ static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
 
+void BattleAI_SetupFlags(void); // added for roamer item
+
 static const u8 sText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderNearby[] = _("Huh?\nThe ITEMFINDER's responding!\pThere's an item buried around here!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderOnTop[] = _("Oh!\nThe ITEMFINDER's shaking wildly!{PAUSE_UNTIL_PRESS}");
@@ -100,6 +102,7 @@ static const u8 sText_PlayedPokeFlute[] = _("Played the POKé FLUTE.");
 static const u8 sText_PokeFluteAwakenedMon[] = _("The POKé FLUTE awakened sleeping\nPOKéMON.{PAUSE_UNTIL_PRESS}");
 
 extern u16 gLatestRoamerSpecies; 
+extern u16 gLatestRoamerPartnerSpecies;
 
 // EWRAM variables
 EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
@@ -858,7 +861,10 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
 
     // Set up the wild encounter
     CreateWildMon(species, level);
-    BattleSetup_StartWildBattle();
+    gLatestRoamerSpecies = species;
+    gBattleTypeFlags = BATTLE_TYPE_ROAMER; // Set battle type to roamer
+    BattleAI_SetupFlags(); // Ensure AI flags are set for roamer
+    BattleSetup_StartRoamerBattle();
     //FlagSet(flag); // Mark as caught after encounter
     DestroyTask(taskId);
 }
