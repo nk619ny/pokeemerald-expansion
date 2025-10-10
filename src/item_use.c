@@ -790,7 +790,7 @@ void ItemUseOutOfBattle_UnlimitedRepel(u8 taskId)
 
 void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
 {
-    static const struct { u8 group, num; } sAllowedMaps[] = {
+    static const struct { u8 group, num; } sOceanMaps[] = {
         {MAP_GROUP(MAP_ROUTE108), MAP_NUM(MAP_ROUTE108)},
         {MAP_GROUP(MAP_ROUTE109), MAP_NUM(MAP_ROUTE109)},
         {MAP_GROUP(MAP_ROUTE124), MAP_NUM(MAP_ROUTE124)},
@@ -804,6 +804,26 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
         {MAP_GROUP(MAP_ROUTE132), MAP_NUM(MAP_ROUTE132)},
         {MAP_GROUP(MAP_ROUTE133), MAP_NUM(MAP_ROUTE133)},
         {MAP_GROUP(MAP_ROUTE134), MAP_NUM(MAP_ROUTE134)},
+        {MAP_GROUP(MAP_MOSSDEEP_CITY), MAP_NUM(MAP_MOSSDEEP_CITY)},
+        {MAP_GROUP(MAP_SOOTOPOLIS_CITY), MAP_NUM(MAP_SOOTOPOLIS_CITY)},
+        {MAP_GROUP(MAP_PACIFIDLOG_TOWN), MAP_NUM(MAP_PACIFIDLOG_TOWN)},
+        {MAP_GROUP(MAP_EVER_GRANDE_CITY), MAP_NUM(MAP_EVER_GRANDE_CITY)},
+        {MAP_GROUP(MAP_SLATEPORT_CITY), MAP_NUM(MAP_SLATEPORT_CITY)},
+    };
+
+
+    static const struct { u8 group, num; } sRuggedMaps[] = {
+        {MAP_GROUP(MAP_ROUTE118), MAP_NUM(MAP_ROUTE118)},
+        {MAP_GROUP(MAP_ROUTE119), MAP_NUM(MAP_ROUTE119)},
+        {MAP_GROUP(MAP_ROUTE120), MAP_NUM(MAP_ROUTE120)},
+        {MAP_GROUP(MAP_ROUTE121), MAP_NUM(MAP_ROUTE121)},
+        {MAP_GROUP(MAP_ROUTE122), MAP_NUM(MAP_ROUTE122)},
+        {MAP_GROUP(MAP_ROUTE123), MAP_NUM(MAP_ROUTE123)},
+    };
+
+    static const struct { u8 group, num; } sPlacidMaps[] = {
+        {MAP_GROUP(MAP_ROUTE101), MAP_NUM(MAP_ROUTE101)},
+        {MAP_GROUP(MAP_ROUTE102), MAP_NUM(MAP_ROUTE102)},
     };
 
     static const struct {
@@ -820,13 +840,59 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
         {SPECIES_TORNADUS, FLAG_CAUGHT_TORNADUS},
     };
 
+    static const struct {
+        u16 species;
+        u16 flag;
+    } sRoamingLegendariesRugged[] = {
+        {SPECIES_ENTEI, FLAG_CAUGHT_ENTEI},
+        {SPECIES_RAIKOU, FLAG_CAUGHT_RAIKOU},
+        {SPECIES_SUICUNE, FLAG_CAUGHT_SUICUNE},
+        {SPECIES_ARTICUNO_GALAR, FLAG_CAUGHT_ARTICUNO_GALAR},
+        {SPECIES_ZAPDOS_GALAR, FLAG_CAUGHT_ZAPDOS_GALAR},
+        {SPECIES_MOLTRES_GALAR, FLAG_CAUGHT_MOLTRES_GALAR},
+        {SPECIES_GLASTRIER, FLAG_CAUGHT_GLASTRIER},
+        {SPECIES_SPECTRIER, FLAG_CAUGHT_SPECTRIER},
+    };
+
+    static const struct {
+        u16 species;
+        u16 flag;
+    } sRoamingLegendariesPlacid[] = {
+        {SPECIES_COBALION, FLAG_CAUGHT_COBALION},
+        {SPECIES_TERRAKION, FLAG_CAUGHT_TERRAKION},
+        {SPECIES_VIRIZION, FLAG_CAUGHT_VIRIZION},
+        {SPECIES_LATIAS, FLAG_CAUGHT_LATIAS},
+        {SPECIES_LATIOS, FLAG_CAUGHT_LATIOS},
+        {SPECIES_CRESSELIA, FLAG_CAUGHT_CRESSELIA},
+        {SPECIES_LANDORUS, FLAG_CAUGHT_LANDORUS},
+        {SPECIES_ENAMORUS, FLAG_CAUGHT_ENAMORUS},
+    };
+
     u8 i;
     bool8 onAllowedMap = FALSE;
-    for (i = 0; i < ARRAY_COUNT(sAllowedMaps); i++) {
-        if (gSaveBlock1Ptr->location.mapGroup == sAllowedMaps[i].group &&
-            gSaveBlock1Ptr->location.mapNum == sAllowedMaps[i].num) {
+    for (i = 0; i < ARRAY_COUNT(sOceanMaps); i++) {
+        if (gSaveBlock1Ptr->location.mapGroup == sOceanMaps[i].group &&
+            gSaveBlock1Ptr->location.mapNum == sOceanMaps[i].num) {
             onAllowedMap = TRUE;
             break;
+        }
+    }
+    if (!onAllowedMap) {
+        for (i = 0; i < ARRAY_COUNT(sRuggedMaps); i++) {
+            if (gSaveBlock1Ptr->location.mapGroup == sRuggedMaps[i].group &&
+                gSaveBlock1Ptr->location.mapNum == sRuggedMaps[i].num) {
+                onAllowedMap = TRUE;
+                break;
+            }
+        }
+    }
+    if (!onAllowedMap) {
+        for (i = 0; i < ARRAY_COUNT(sPlacidMaps); i++) {
+            if (gSaveBlock1Ptr->location.mapGroup == sPlacidMaps[i].group &&
+                gSaveBlock1Ptr->location.mapNum == sPlacidMaps[i].num) {
+                onAllowedMap = TRUE;
+                break;
+            }
         }
     }
 
