@@ -932,6 +932,12 @@ void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)
         return;
     }
 
+    // Prevent use in Rugged or Placid regions while surfing
+    if ((RoamerRegion == ROAMER_REGION_RUGGED || RoamerRegion == ROAMER_REGION_PLACID) && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING)) {
+        DisplayCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem, gText_CantUseHere);
+        return;
+    }
+
     u8 availableCount = 0;
     u8 available[ARRAY_COUNT(sRoamingLegendariesOcean)];
     u16 species = SPECIES_NONE;
