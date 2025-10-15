@@ -90,7 +90,8 @@ SealedChamber_OuterRoom_EventScript_BrailleComma::
 SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall::
 	lockall
 	goto_if_set FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_HoleInWall
-	braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
+	setflag FLAG_SYS_BRAILLE_DIG
+	//braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
 	releaseall
 	end
 
