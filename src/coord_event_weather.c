@@ -99,7 +99,7 @@ static void CoordEventWeather_Drought(void)
 
 static void CoordEventWeather_Route119Cycle(void)
 {
-    if (!FlagGet(FLAG_HIDE_ROUTE_119_TEAM_AQUA))
+    if (!FlagGet(FLAG_BADGE06_GET))
         SetWeather(WEATHER_RAIN);
     else
         SetWeather(WEATHER_ROUTE119_CYCLE);

@@ -2888,10 +2888,10 @@ Route119_Text_HideoPostBattle:
 	.string "to that.$"
 
 Route119_Text_ChrisIntro:
-	.string "You spoke to me…\n"
+	.string "You came to my fishing spot…\n"
 	.string "So you want to challenge me!\p"
 	.string "Sure! I'll try out the POKéMON I caught\n"
-	.string "while SURFING!$"
+	.string "while fishing!$"
 
 Route119_Text_ChrisDefeat:
 	.string "I don't have a clue about what it\n"

@@ -105,7 +105,7 @@ Pic: Hiker
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 /* AI: Setup First Turn / Risky / Prefer Status Moves / Powerful Status / Will Suicide */
 
 === TRAINER_SAWYER_1 === /* Route */
@@ -259,7 +259,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
 Tentacool @ Oran Berry
 Ability: Liquid Ooze  
@@ -527,7 +527,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
 Litten  
 Ability: Intimidate  
@@ -572,7 +572,7 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
 Joltik 
 Ability: Compound Eyes  
@@ -1195,7 +1195,7 @@ Class: Aqua Admin
 Pic: SHELLY ORAS
 Gender: Female
 Music: Aqua
-AI: Check Bad Move / Try To Faint / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
 Ariados @ Sitrus Berry  
 Ability: Swarm  
@@ -1234,7 +1234,7 @@ Pic: Tabitha ORAS
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
 Sandslash @ Muscle Band  
 Ability: Sand Veil  
@@ -1275,7 +1275,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
 Poochyena  
 Ability: Intimidate  
@@ -1311,7 +1311,7 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 
 Swalot  
 Ability: Liquid Ooze  
@@ -2943,7 +2943,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Zangoose
 Level: 26
@@ -2958,7 +2958,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mawile
 Level: 29
@@ -2991,7 +2991,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Lairon
 Level: 45
@@ -4720,8 +4720,9 @@ IVs: 0 Atk
 - Electric Terrain  
 - Round  
 
-Level: 36
+
 Ferroseed  
+Level: 36
 Ability: Iron Barbs  
 Tera Type: Grass  
 - Curse  
@@ -5570,7 +5571,7 @@ Linoone
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_BRENT === /* Route */
+=== TRAINER_BRENT === /* Route 119 */
 Name: BRENT
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -5579,9 +5580,42 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Surskit
-Level: 26
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Orbeetle @ Wide Lens  
+Ability: Telepathy  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Bug Buzz  
+- Body Press  
+- Giga Drain  
+- Hypnosis  
+
+Gligar @ Toxic Orb  
+Ability: Immunity  
+Tera Type: Ground  
+- Fling  
+- Acrobatics  
+- Crabhammer  
+- Earthquake  
+
+Vibrava @ Yache Berry
+Ability: Levitate  
+Tera Type: Ground  
+EVs: 128 SpA  
+Serious Nature  
+- Earthquake  
+- First Impression  
+- Giga Drain  
+- U-turn  
+
+Carnivine  
+Ability: Levitate  
+Tera Type: Grass  
+- Snap Trap  
+- Bug Bite  
+- Gastro Acid  
+- Jaw Lock  
+
+
 
 === TRAINER_DONALD === /* Route 119 */
 Name: DONALD
@@ -7731,7 +7765,7 @@ Pic: Pokefan F
 Gender: Female
 Music: Twins
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Roselia @ Oran Berry
 Level: 17
@@ -9088,7 +9122,7 @@ Pic: Fisherman
 Gender: Male
 Music: Hiker
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gyarados
 Level: 33
@@ -9962,7 +9996,7 @@ Tera Type: Flying
 - Work Up  
 - Tailwind  
 
-=== TRAINER_HUGH === /* Route 119 */
+=== TRAINER_HUGH === /* Route 119 */ /* TO BE ADDED */
 Name: HUGH
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -9988,9 +10022,43 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Swellow
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dartrix  
+Level: 55
+Ability: Overgrow  
+Tera Type: Grass  
+- Giga Drain  
+- Night Shade  
+- Shadow Sneak  
+- Light Screen  
+
+Pidgeot  
+Level: 53
+Ability: Big Pecks  
+Tera Type: Normal  
+- Bolt Beak  
+- Beak Blast  
+- Brave Bird  
+- U-turn  
+
+Mandibuzz (F)  
+Level: 53
+Ability: Overcoat  
+Tera Type: Dark  
+IVs: 0 Atk  
+- Roost  
+- Foul Play  
+- Nasty Plot  
+- Air Slash  
+
+Sirfetch’d  
+Level: 55
+Ability: Scrappy  
+Tera Type: Fighting  
+- First Impression  
+- Brick Break  
+- Night Slash  
+- Swords Dance  
+
 
 === TRAINER_JARED === /* Route */
 Name: JARED
@@ -10255,35 +10323,96 @@ Tropius
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_YASU === /* Route */
+=== TRAINER_YASU === /* Route 119 */
 Name: YASU
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Ninjask
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Glimmora  @ Focus Sash
+Ability: Toxic Debris  
+Tera Type: Rock  
+IVs: 0 Atk  
+- Spiky Shield  
+- Acid Spray  
+- Memento  
+- Power Gem  
 
-=== TRAINER_TAKASHI === /* Route */
+Seviper  
+Ability: Infiltrator  
+Tera Type: Poison  
+- Toxic  
+- Sucker Punch  
+- Sludge Bomb  
+- Double Team  
+
+Venomoth  @ Wide Lens
+Ability: Shield Dust  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Toxic Spikes  
+- Venoshock  
+- Bug Buzz  
+- Sleep Powder  
+
+Dugtrio @ Focus Sash  
+Ability: Arena Trap  
+Tera Type: Ground  
+- Sucker Punch  
+- High Horsepower  
+- Protect  
+- Toxic  
+
+
+=== TRAINER_TAKASHI === /* Route 119 */
 Name: TAKASHI
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Ninjask
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Accelgor @ Sitrus Berry  
+Level: 52
+Ability: Unburden  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Water Shuriken  
+- Focus Blast  
+- Toxic Spikes  
+- Acid Spray  
 
-Koffing
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ariados  
+Level: 52
+Ability: Swarm  
+Tera Type: Bug  
+- Sticky Web  
+- Spider Web  
+- Leech Life  
+- Shadow Sneak  
+
+Croconaw  
+Level: 55
+Ability: Torrent  
+Tera Type: Water  
+- Jaw Lock  
+- Aqua Jet  
+- Counter  
+- Dragon Dance  
+
+Victreebel @ Salac Berry  
+Level: 52
+Ability: Gluttony  
+Tera Type: Grass  
+- Snap Trap  
+- Acid Spray  
+- Giga Drain  
+- Strength Sap  
+
 
 === TRAINER_DIANNE === /* Route */
 Name: DIANNE
@@ -14327,9 +14456,42 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Breloom
-Level: 27
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Lopunny @ Jaboca Berry  
+Level: 52
+Ability: Cute Charm  
+Tera Type: Normal  
+- Mirror Coat  
+- Acrobatics  
+- Fake Out  
+
+Tauros (M)  @ White Herb
+Level: 52
+Ability: Intimidate  
+Tera Type: Normal  
+- Raging Bull  
+- Close Combat  
+- High Horsepower  
+- Trailblaze  
+
+
+Dubwool  @ Chople Berry
+Level: 52
+Ability: Fluffy  
+EVs: 252 HP / 252 SpD
+Tera Type: Normal  
+- Cotton Guard  
+- Body Press  
+- Last Resort  
+
+Kangaskhan (F) @ Chople Berry  
+Level: 52
+Ability: Scrappy  
+Tera Type: Normal  
+- Body Slam  
+- Counter  
+- Fake Out  
+- Brick Break  
+
 
 === TRAINER_LORENZO === /* Route 120 */
 Name: LORENZO
@@ -14372,7 +14534,7 @@ Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Breloom
 Level: 31
@@ -14398,7 +14560,7 @@ Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Breloom
 Level: 37
@@ -14421,22 +14583,51 @@ Breloom
 Level: 39
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-=== TRAINER_CATHERINE_1 === /* Route */
+=== TRAINER_CATHERINE_1 === /* Route 119 */
 Name: CATHERINE
 Class: Pkmn Ranger
 Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Gloom
-Level: 26
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ursaring  
+Level: 52
+Ability: Guts  
+Tera Type: Normal  
+- Trailblaze  
+- High Horsepower  
+- Avalanche  
+- Facade  
 
-Roselia
-Level: 26
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Feraligatr  
+Level: 52
+Ability: Intimidate  
+Tera Type: Water  
+- Aqua Jet  
+- Aqua Tail  
+- Counter  
+- Breaking Swipe  
+
+Girafarig  
+Level: 52
+Ability: Early Bird  
+Tera Type: Normal  
+- Zen Headbutt  
+- Energy Ball  
+- Mirror Coat  
+- Skill Swap  
+
+Stantler @ Power Herb
+Level: 52
+Ability: Intimidate  
+Tera Type: Normal  
+- Body Slam  
+- Lunge  
+- Zen Headbutt  
+- Bounce  
+
 
 === TRAINER_JENNA === /* Route */
 Name: JENNA
@@ -14445,7 +14636,7 @@ Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Lotad
 Level: 28
@@ -14483,7 +14674,7 @@ Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gloom
 Level: 30
@@ -14517,7 +14708,7 @@ Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gloom
 Level: 36
@@ -15316,7 +15507,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Kecleon
 Level: 33
@@ -15414,7 +15605,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Polteageist-Antique  
 Level: 50
@@ -16010,7 +16201,7 @@ Nincada
 Level: 8
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_DOUG === /* Route */
+=== TRAINER_DOUG === /* Route 119 */
 Name: DOUG
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -16019,15 +16210,48 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Nincada
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dustox  
+Level: 53
+Ability: Shield Dust  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Psychic  
+- Moonlight  
+- Bug Buzz  
+- Light Screen  
 
-Ninjask
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kricketune @ Metronome  
+Level: 53
+Ability: Technician  
+Tera Type: Bug  
+EVs: 252 SpA  
+- Echoed Voice  
+- Fury Cutter  
+- Power-Up Punch  
 
-=== TRAINER_GREG === /* Route */
+Leavanny @ Scope Lens  
+Level: 53
+Ability: Swarm  
+Tera Type: Bug  
+Jolly Nature  
+IVs: 0 SpA  
+- Leaf Blade  
+- Shadow Claw  
+- Pollen Puff  
+- X Scissor
+
+Victreebel @ Liechi Berry  
+Level: 53
+Ability: Gluttony  
+Tera Type: Grass  
+- Sucker Punch  
+- Swords Dance  
+- Leech Life  
+- Leaf Blade  
+ 
+
+
+=== TRAINER_GREG === /* Route 119 */ /* TO BE ADDED */
 Name: GREG
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -16833,22 +17057,47 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Confusion
 - Fire Punch
 
-=== TRAINER_HIDEO === /* Route */
+=== TRAINER_HIDEO === /* Route 119 */
 Name: HIDEO
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Koffing
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Self Destruct
-- Sludge
-- Smokescreen
+Shedinja  @ Focus Sash
+Ability: Wonder Guard  
+Tera Type: Bug  
+- Poltergeist  
+- Shadow Sneak  
+- X-Scissor  
+- Toxic  
+
+Forretress  @ Occa Berry
+Ability: Sturdy  
+Tera Type: Bug  
+- Toxic Spikes  
+- Counter  
+- Spikes  
+- Explosion 
+
+Turtonator @ Focus Band  
+Ability: Shell Armor  
+Tera Type: Fire  
+- Shell Trap  
+- Explosion  
+- Block  
+- Wide Guard  
+
+Dugtrio @ Focus Sash  
+Ability: Arena Trap  
+Tera Type: Ground  
+- Sucker Punch  
+- High Horsepower  
+- Protect  
+- Toxic  
+
 
 Koffing
 Level: 25
@@ -16865,7 +17114,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Koffing
 Level: 28
@@ -16890,7 +17139,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Nincada
 Level: 28
@@ -18131,7 +18380,7 @@ Pic: Old Couple
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Medicham
 Level: 49
@@ -18293,7 +18542,7 @@ Tentacool
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CHRIS === /* Route */
+=== TRAINER_CHRIS === /* Route 119 */
 Name: CHRIS
 Class: Fisherman
 Pic: Fisherman
@@ -18302,21 +18551,42 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magikarp
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Qwilfish  
+Level: 55
+Ability: Intimidate  
+Tera Type: Water  
+- Spiky Shield  
+- Aqua Jet  
+- Barb Barrage  
+- Toxic Spikes  
 
-Tentacool
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Seaking  
+Level: 55
+Ability: Lightning Rod  
+Tera Type: Water  
+- Megahorn  
+- Poison Jab  
+- Waterfall  
+- Drill Run  
 
-Feebas
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Whiscash @ Rindo Berry  
+Level: 55
+Ability: Hydration  
+Tera Type: Water  
+- Ice Beam 
+- Earth Power  
+- Weather Ball
+- Belch  
 
-Carvanha
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Basculin-Blue-Striped  
+Level: 55
+Ability: Adaptability  
+Tera Type: Water  
+- Flip Turn  
+- Aqua Jet  
+- Head Smash  
+- Zen Headbutt  
+
 
 === TRAINER_DAWSON === /* Route */
 Name: DAWSON
@@ -20083,7 +20353,7 @@ Medicham
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_FABIAN === /* Route */
+=== TRAINER_FABIAN === /* Route 119 */
 Name: FABIAN
 Class: Guitarist
 Pic: Guitarist
@@ -20092,11 +20362,47 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Manectric
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Quaquaval  @ Persim Berry
+Level: 51
+Ability: Dancer  
+Tera Type: Water  
+- Aqua Step  
+- Feather Dance  
+- Encore  
+- Triple Axel  
 
-=== TRAINER_DAYTON === /* Route */
+Bellossom @ Persim Berry  
+Level: 51
+Ability: Dancer  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Teeter Dance  
+- Quiver Dance  
+- Petal Dance  
+- Moonblast  
+
+Vikavolt  
+Level: 51
+Ability: Levitate  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Bug Buzz  
+- Air Slash  
+- Thunder  
+- Eerie Impulse  
+
+Electabuzz  
+Level: 51
+Ability: Vital Spirit  
+Tera Type: Electric  
+IVs: 0 Atk  
+- Screech  
+- Signal Beam  
+- Thunder  
+- Counter  
+
+
+=== TRAINER_DAYTON === /* Route 119 */
 Name: DAYTON
 Class: Kindler
 Pic: Kindler
@@ -20105,15 +20411,46 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Slugma
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Appletun @ Sitrus Berry  
+Level: 53
+Ability: Ripen  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Apple Acid  
+- Energy Ball  
+- Dragon Pulse  
+- Amnesia  
 
-Numel
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Coalossal @ Loaded Dice  
+Level: 53
+Ability: Flame Body  
+Tera Type: Rock  
+- Tar Shot  
+- Body Press  
+- Heat Crash  
+- Rock Blast  
 
-=== TRAINER_RACHEL === /* Route */
+Oinkologne (M) @ Apicot Berry  
+Level: 53
+Ability: Thick Fat  
+Tera Type: Normal  
+- Body Slam  
+- High Horsepower  
+- Seed Bomb  
+- Stuff Cheeks  
+
+Cramorant @ White Herb  
+Level: 53
+Ability: Gulp Missile  
+Tera Type: Flying  
+- Dive  
+- Pluck  
+- Acrobatics  
+- Stockpile  
+
+
+
+=== TRAINER_RACHEL === /* Route 119 */
 Name: RACHEL
 Class: Parasol Lady
 Pic: Parasol Lady
@@ -20122,9 +20459,45 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Goldeen
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Butterfree  @ Charti Berry
+Level: 53
+Ability: Compound Eyes  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Sleep Powder  
+- Pollen Puff  
+- Hurricane  
+- Electroweb  
+
+Leavanny  @ Coba Berry
+Level: 53
+Ability: Chlorophyll  
+Tera Type: Bug  
+- Leaf Blade  
+- Lunge  
+- Poison Jab  
+- Sticky Web  
+
+Wormadam (F) @ Coba Berry  
+Level: 53
+Ability: Overcoat  
+Tera Type: Ground  
+IVs: 0 Atk  
+- Quiver Dance  
+- Bug Buzz  
+- Energy Ball  
+- Hidden Power
+
+Forretress @ Occa Berry  
+Level: 53
+Ability: Overcoat  
+Tera Type: Bug  
+- Shell Side Arm  
+- Iron Head  
+- Seed Bomb  
+- Ally Switch  
+
 
 === TRAINER_LEONEL === /* Route */
 Name: LEONEL
