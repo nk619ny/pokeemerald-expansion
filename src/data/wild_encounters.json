@@ -14491,7 +14491,7 @@
               {
                 "min_level": 59,
                 "max_level": 59,
-                "species": "SPECIES_URSALUNA_BLOODMOON"
+                "species": "SPECIES_GOURGEIST_SUPER"
               },
               {
                 "min_level": 59,
@@ -14585,7 +14585,7 @@
               {
                 "min_level": 59,
                 "max_level": 59,
-                "species": "SPECIES_URSALUNA_BLOODMOON"
+                "species": "SPECIES_ZWEILOUS"
               },
               {
                 "min_level": 59,
@@ -14610,7 +14610,7 @@
               {
                 "min_level": 59,
                 "max_level": 59,
-                "species": "SPECIES_ZWEILOUS"
+                "species": "SPECIES_URSALUNA_BLOODMOON"
               }
             ]
           }

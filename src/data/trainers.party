@@ -752,7 +752,56 @@ Numel
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_PYRE_1 === /* Route */
+=== TRAINER_GRUNT_MT_PYRE_1 === /* Mt Pyre */
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+
+Skeledirge @ Throat Spray
+Level: 60  
+Ability: Blaze  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Torch Song  
+- Alluring Voice  
+- Hex  
+- Hyper Voice  
+
+Decidueye  
+Level: 60
+Ability: Overgrow  
+Tera Type: Grass  
+- Thousand Arrows  
+- Spirit Shackle  
+- Acrobatics  
+- Tailwind  
+
+Delphox 
+Level: 60 
+Ability: Magician  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Mystical Fire  
+- Future Sight  
+- Role Play  
+
+Chandelure  
+Level: 60
+Ability: Flash Fire  
+Tera Type: Ghost  
+IVs: 0 Atk  
+- Lava Plume  
+- Infernal Parade  
+- Energy Ball  
+- Haze  
+
+
+=== TRAINER_GRUNT_MT_PYRE_2 === /* Mt Pyre */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -761,11 +810,48 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cursola @ White Herb
+Level: 60
+Ability: Weak Armor  
+Tera Type: Ghost  
+IVs: 0 Atk  
+- Blizzard  
+- Shadow Ball  
+- Power Gem  
+- Strength Sap  
 
-=== TRAINER_GRUNT_MT_PYRE_2 === /* Route */
+Froslass (F)  @ Bright Powder
+Level: 60
+Ability: Snow Cloak  
+Tera Type: Ice  
+- Triple Axel  
+- Poltergeist  
+- Sucker Punch  
+- Destiny Bond  
+
+Starmie @ Wide Lens
+Level: 60
+Ability: Illuminate  
+Tera Type: Water  
+IVs: 0 Atk  
+- Blizzard  
+- Hydro Pump  
+- Zap Cannon  
+- Psyshock  
+
+Weavile @ Focus Sash  
+Level: 60
+Ability: Pickpocket  
+Tera Type: Dark  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Glacial Lance  
+- Pursuit  
+- X-Scissor  
+- Ice Shard  
+
+
+=== TRAINER_GRUNT_MT_PYRE_3 === /* Mt Pyre */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -774,26 +860,48 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ninetales-Alola  
+Level: 60
+Ability: Snow Warning  
+Tera Type: Ice  
+IVs: 0 Atk  
+- Aurora Veil  
+- Moonblast  
+- Blizzard  
+- Nasty Plot  
 
-=== TRAINER_GRUNT_MT_PYRE_3 === /* Route */
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+Jynx (F)  
+Level: 60
+Ability: Oblivious  
+Tera Type: Ice  
+EVs: 252 Def / 4 SpD / 252 Spe  
+Serious Nature  
+IVs: 0 Atk  
+- Ice Burn  
+- Freezing Glare  
+- Signal Beam  
+- Lovely Kiss  
 
-Poochyena
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowking-Galar  
+Level: 60
+Ability: Curious Medicine  
+Tera Type: Poison  
+IVs: 0 Atk  
+- Eerie Spell  
+- Chilly Reception  
+- Blizzard  
+- Sludge Bomb  
 
-Carvanha
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Jellicent  
+Level: 60
+Ability: Water Absorb  
+Tera Type: Water  
+IVs: 0 Atk  
+- Water Spout  
+- Acid Armor  
+- Giga Drain  
+- Sludge Bomb  
+
 
 === TRAINER_GRUNT_WEATHER_INST_4 === /* Route */
 Name: GRUNT
@@ -15179,22 +15287,54 @@ Zubat
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_PYRE_4 === /* Route */
+=== TRAINER_GRUNT_MT_PYRE_4 === /* Mt Pyre */
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Class: Team Magma
+Pic: Magma Grunt F
 Gender: Female
-Music: Aqua
+Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wailmer
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Marowak-Alola @ Thick Club  
+Level: 60
+Ability: Cursed Body  
+Tera Type: Fire  
+- Shadow Bone  
+- Fire Punch  
+- Thunder Punch  
+- Bonemerang  
 
-Zubat
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Palossand @ Absorb Bulb  
+Level: 60
+Ability: Water Compaction  
+Tera Type: Ghost  
+IVs: 0 Atk  
+- Scorching Sands  
+- Ancient Power  
+- Psychic  
+- Sludge Bomb  
+
+Typhlosion-Hisui  
+Level: 60
+Ability: Blaze  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Infernal Parade  
+- Eruption  
+- Extrasensory  
+- Confuse Ray  
+
+Ninetales  
+Level: 60
+Ability: Flash Fire  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Lava Plume  
+- Eerie Spell  
+- Calm Mind  
+- Scorching Sands  
+
 
 === TRAINER_GRUNT_JAGGED_PASS === /* Route */
 Name: GRUNT
