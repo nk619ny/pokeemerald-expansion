@@ -491,7 +491,7 @@ Carvanha
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DECLAN === /* Route */
+=== TRAINER_DECLAN === /* Route 124 */
 Name: DECLAN
 Class: Swimmer M
 Pic: Swimmer M
@@ -500,9 +500,42 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Gyarados
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Relicanth @ Rindo Berry
+Level: 65
+Ability: Sturdy  
+Tera Type: Water  
+- Aqua Tail  
+- Rock Blast  
+- Zen Headbutt  
+- Protect  
+
+Nidoqueen (F) @ Wide Lens  
+Level: 65
+Ability: Sheer Force  
+Tera Type: Poison  
+- Poison Jab  
+- Crunch  
+- Iron Tail  
+- Stomping Tantrum  
+
+Simipour @ Power Herb  
+Level: 65
+Ability: Torrent  
+Tera Type: Water  
+- Brine  
+- Dive  
+- Grass Knot  
+- Acrobatics  
+
+Slurpuff @ Sitrus Berry  
+Level: 65
+Ability: Unburden  
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Thunderbolt  
+- Energy Ball  
+- Flamethrower  
+- Dazzling Gleam  
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL === /* Route */
 Name: GRUNT
@@ -3687,7 +3720,7 @@ Zigzagoon @ Nugget
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DAPHNE === /* Route */
+=== TRAINER_DAPHNE === /* Sootopolis Gym */
 Name: DAPHNE
 Class: Lady
 Pic: Lady
@@ -3696,21 +3729,41 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Luvdisc @ Nugget
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Attract
-- Sweet Kiss
-- Flail
-- Water Pulse
+Delibird  @ Charti Berry
+Ability: Refrigerate  
+Tera Type: Ice  
+- Acrobatics  
+- Facade  
+- Fake Out  
+- Seed Bomb  
 
-Luvdisc @ Nugget
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Attract
-- Safeguard
-- Take Down
-- Water Pulse
+Frosmoth @ Occa Berry  
+Ability: Ice Scales  
+Tera Type: Ice  
+IVs: 0 Atk  
+- Blizzard  
+- Giga Drain  
+- Mirror Coat  
+- Quiver Dance  
+
+Carbink @ Babiri Berry  
+Ability: Clear Body  
+Tera Type: Rock  
+IVs: 0 Atk  
+- Body Press  
+- Ancient Power  
+- Endeavor  
+- Ally Switch  
+
+Primarina @ Throat Spray  
+Ability: Torrent  
+Tera Type: Water  
+IVs: 0 Atk  
+- Sparkling Aria  
+- Alluring Voice  
+- Psychic Noise  
+- Captivate  
+
 
 === TRAINER_GRUNT_SPACE_CENTER_2 === /* Route */
 Name: GRUNT
@@ -3748,7 +3801,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Tail Whip
 
-=== TRAINER_BRIANNA === /* Route */
+=== TRAINER_BRIANNA === /* Sootopolis Gym */
 Name: BRIANNA
 Class: Lady
 Pic: Lady
@@ -3757,9 +3810,46 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Seaking @ Nugget
-Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Starmie @ Focus Sash  
+Level: 73
+Ability: Illuminate  
+Tera Type: Water  
+IVs: 0 Atk  
+- Hydro Pump  
+- Blizzard  
+- Luster Purge  
+- Thunder  
+
+Tsareena (F)  
+Level: 73
+Ability: Queenly Majesty  
+Tera Type: Grass  
+- Triple Axel  
+- Acrobatics  
+- High Jump Kick  
+- Power Whip  
+
+Mantine  
+Level: 73
+Ability: Swift Swim  
+Tera Type: Water  
+IVs: 0 Atk  
+- Hurricane  
+- Blizzard  
+- Mirror Coat  
+- Hydro Pump  
+
+Aurorus @ Chople Berry  
+Level: 73
+Ability: Refrigerate  
+Tera Type: Rock  
+IVs: 0 Atk  
+- Hyper Voice  
+- Aurora Veil  
+- Ancient Power  
+- Roar  
+
+
 
 === TRAINER_NAOMI === /* Route */
 Name: NAOMI
@@ -3923,7 +4013,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Glare
 - Crunch
 
-=== TRAINER_CONNIE === /* Route */
+=== TRAINER_CONNIE === /* Sootopolis Gym */
 Name: CONNIE
 Class: Beauty
 Pic: Beauty
@@ -3936,7 +4026,7 @@ Goldeen
 Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRIDGET === /* Route */
+=== TRAINER_BRIDGET === /* Sootopolis Gym */
 Name: BRIDGET
 Class: Beauty
 Pic: Beauty
@@ -3949,7 +4039,7 @@ Azumarill
 Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_OLIVIA === /* Route */
+=== TRAINER_OLIVIA === /* Sootopolis Gym */
 Name: OLIVIA
 Class: Beauty
 Pic: Beauty
@@ -3981,7 +4071,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fake Out
 - Water Pulse
 
-=== TRAINER_TIFFANY === /* Route */
+=== TRAINER_TIFFANY === /* Sootopolis Gym */
 Name: TIFFANY
 Class: Beauty
 Pic: Beauty
@@ -3990,13 +4080,47 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Carvanha
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ninetales-Alola @ Babiri Berry  
+Level: 73
+Ability: Snow Cloak  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Aurora Veil  
+- Blizzard  
+- Moonblast  
+- Hidden Power
 
-Sharpedo
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Dewgong  
+Level: 73
+Ability: Thick Fat  
+Tera Type: Water  
+- Triple Axel  
+- Drill Run  
+- Fake Out  
+- Flip Turn  
+
+Castform  
+Level: 73
+Ability: Forecast  
+Tera Type: Normal  
+IVs: 0 Atk  
+- Blizzard  
+- Flamethrower  
+- Energy Ball  
+- Tailwind  
+
+
+Cloyster @ King's Rock  
+Level: 73
+Ability: Skill Link  
+EVs: 252 HP / 252 Spe  
+Tera Type: Water  
+- Icicle Spear  
+- Tri Attack  
+- Drill Run  
+- Toxic Spikes  
+
+
 
 === TRAINER_JESSICA_2 === /* Route */
 Name: JESSICA
@@ -4273,7 +4397,7 @@ Rhyhorn
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_CHIMNEY_1 === /* Route */
+=== TRAINER_GRUNT_MT_CHIMNEY_1 === /* Mt Chimney */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt F
@@ -4282,9 +4406,46 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Numel
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tangela @ Rocky Helmet  
+Level: 44
+Ability: Regenerator  
+Tera Type: Grass  
+EVs: 252 HP / 4 SpA / 252 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Rage Powder  
+- Pain Split  
+- Giga Drain  
+- Ancient Power  
+
+Numel  
+Level: 44
+Ability: Simple  
+Tera Type: Fire  
+- Curse  
+- Flame Charge  
+- Trailblaze  
+- Scorching Sands  
+
+Quilava  
+Level: 44
+Ability: Flash Fire  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Smokescreen  
+- Extrasensory  
+- Flamethrower  
+- Hidden Power
+
+Trubbish  
+Level: 44
+Ability: Stench  
+Tera Type: Poison  
+- Gunk Shot  
+- Pain Split  
+- Corrosive Gas  
+- Payback  
+
 
 === TRAINER_STEVE_2 === /* Route */
 Name: STEVE
@@ -4470,7 +4631,7 @@ Carvanha
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SPENCER === /* Route */
+=== TRAINER_SPENCER === /* Route 124 */ /* Dive Optional */
 Name: SPENCER
 Class: Swimmer M
 Pic: Swimmer M
@@ -4479,13 +4640,41 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacool
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Avalugg @ Assault Vest  
+Ability: Sturdy  
+Tera Type: Ice  
+EVs: 252 SpD  
+- Chilling Water  
+- Icicle Crash  
+- Body Press  
+- High Horsepower  
 
-Wingull
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Exploud  @ Expert Belt
+Ability: Soundproof  
+Tera Type: Normal  
+- Alluring Voice
+- Ice Beam  
+- Flamethrower  
+- Stomping Tantrum  
+
+Crawdaunt  @ Chople Berry
+Ability: Hyper Cutter  
+Tera Type: Water  
+- Dragon Dance  
+- Crabhammer  
+- X-Scissor  
+- Metal Claw  
+
+Veluza @ Scope Lens  
+Ability: Sharpness  
+Tera Type: Water  
+/* EVs: 4 HP / 252 Atk / 252 Spe  */
+Adamant Nature  
+- Aqua Cutter  
+- Drill Run  
+- Psycho Cut  
+- Night Slash  
+
 
 === TRAINER_ROLAND === /* Route */
 Name: ROLAND
@@ -4693,7 +4882,7 @@ Tentacruel
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CHAD === /* Route */
+=== TRAINER_CHAD === /* Route 124 */
 Name: CHAD
 Class: Swimmer M
 Pic: Swimmer M
@@ -4702,13 +4891,42 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacool
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hariyama  
+Level: 65
+Ability: Thick Fat  
+Tera Type: Fighting  
+- Salt Cure  
+- Chilling Water  
+- Bullet Punch  
+- Brick Break  
 
-Wailmer
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lumineon  
+Level: 65
+Ability: Storm Drain  
+Tera Type: Water  
+- Flip Turn  
+- U-turn  
+- Bounce  
+- Payback  
+
+Stoutland  
+Level: 65
+Ability: Intimidate  
+Tera Type: Normal  
+- Facade  
+- Play Rough  
+- Stomping Tantrum  
+- Howl  
+
+Carracosta  @ Rindo Berry
+Level: 65
+Ability: Solid Rock  
+Tera Type: Water  
+- Liquidation  
+- Stone Edge  
+- Wide Guard  
+- Curse  
+
 
 === TRAINER_TONY_2 === /* Route */
 Name: TONY
@@ -11713,7 +11931,7 @@ Wailmer
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRACE === /* Route */
+=== TRAINER_GRACE === /* Route 124 */
 Name: GRACE
 Class: Swimmer F
 Pic: Swimmer F
@@ -11722,9 +11940,44 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Audino  
+Level: 65
+Ability: Healer  
+Tera Type: Normal  
+IVs: 0 Atk  
+- Surf  
+- Thunderbolt  
+- Flamethrower  
+- Hyper Voice  
+
+Clodsire @ Black Sludge  
+Level: 65
+Ability: Water Absorb  
+Tera Type: Poison  
+- Waterfall  
+- Counter  
+- High Horsepower  
+- Poison Jab  
+
+Dewgong  
+Level: 65
+Ability: Thick Fat  
+Tera Type: Water  
+- Drill Run
+- Triple Axel  
+- Perish Song  
+- Encore  
+
+Mantine  @ Wacan Berry
+Level: 65
+Ability: Water Absorb 
+Tera Type: Water  
+IVs: 0 Atk  
+- Air Slash
+- Ice Beam
+- Scald
+- Signal Beam
+
 
 === TRAINER_TANYA === /* Route */
 Name: TANYA
@@ -12826,7 +13079,7 @@ Numel
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ANNIKA === /* Route */
+=== TRAINER_ANNIKA === /* Sootopolis Gym */ /* Remove? */
 Name: ANNIKA
 Class: Pokefan
 Pic: Pokefan F
@@ -15570,7 +15823,7 @@ Tentacruel
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_CHIMNEY_2 === /* Route */
+=== TRAINER_GRUNT_MT_CHIMNEY_2 === /* Route */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -16613,20 +16866,59 @@ Marill
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ANDREA === /* Route */
+=== TRAINER_ANDREA === /* Sootopolis Gym */
 Name: ANDREA
 Class: Lass
 Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Luvdisc
-Level: 40
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Vanilluxe @ Custap Berry  
+Level: 73
+Ability: Ice Body  
+EVs: 128 HP / 128 Atk / 128 SpA / 128 Spe
+Tera Type: Ice  
+- Freeze-Dry  
+- Flash Cannon  
+- Explosion  
+- Aurora Veil  
 
-=== TRAINER_CRISSY === /* Route */
+Froslass (F)  
+Level: 73
+Ability: Snow Cloak  
+Tera Type: Ice  
+IVs: 0 Atk  
+- Freezing Glare  
+- Destiny Bond  
+- Shadow Ball  
+- Will-O-Wisp  
+
+Glaceon @ Leftovers  
+Ability: Ice Body  
+Tera Type: Ice  
+EVs: 252 HP  
+Serious Nature  
+IVs: 0 Atk  
+- Freeze-Dry  
+- Shadow Ball
+- Protect  
+- Mirror Coat  
+
+Alcremie-Mint-Cream (F)  
+Level: 73
+Ability: Sweet Veil  
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Alluring Voice  
+- Mystical Fire  
+- Energy Ball  
+- Acid Armor  
+
+
+
+=== TRAINER_CRISSY === /* Sootopolis Gym */ /* maybe remove ? */
 Name: CRISSY
 Class: Lass
 Pic: Lass
@@ -16635,13 +16927,42 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Goldeen
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Quaquaval  
+Level: 72
+Ability: Dancer  
+Tera Type: Water  
+- Aqua Step  
+- Acrobatics  
+- Axe Kick  
+- Triple Axel  
 
-Wailmer
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ludicolo @ Yache Berry  
+Level: 72  
+Ability: Dancer  
+Tera Type: Water  
+- Aqua Step  
+- Petal Dance  
+- Weather Ball  
+- Double Team  
+
+Lilligant-Hisui (F) @ Wide Lens    
+Level: 72
+Ability: Hustle  
+Tera Type: Grass  
+- Triple Axel  
+- Axe Kick  
+- Leaf Blade  
+- Victory Dance  
+
+Cryogonal    
+Level: 72
+Ability: Levitate  
+Tera Type: Ice  
+IVs: 0 Atk  
+- Freeze-Dry  
+- Acid Armor  
+- Ancient Power  
+- Aurora Veil  
 
 === TRAINER_RICK === /* Route 102 */
 Name: RICK
@@ -19035,7 +19356,7 @@ Wingull
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LILA_AND_ROY_1 === /* Route */
+=== TRAINER_LILA_AND_ROY_1 === /* Route 124 */ /* Dive Optional Item Post Dive */
 Name: LILA & ROY
 Class: Sis And Bro
 Pic: Sis And Bro
@@ -19044,13 +19365,43 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Chinchou
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Floatzel  
+Level: 70
+Ability: Water Veil  
+Tera Type: Water  
+- Aqua Jet  
+- Baton Pass  
+- Power-Up Punch  
+- Double Team  
 
-Carvanha
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wishiwashi   
+Level: 70
+Ability: Schooling  
+Tera Type: Water  
+- Aqua Tail  
+- Beat Up  
+- Scale Shot  
+- Tearful Look  
+
+Raichu @ Power Herb 
+Level: 70
+Ability: Lightning Rod  
+Tera Type: Electric  
+- Surf  
+- Fly  
+- Thunderbolt  
+- Splishy Splash
+
+Poliwrath   
+Level: 70
+Ability: Water Absorb  
+Tera Type: Water  
+- Seismic Toss  
+- Counter  
+- Encore  
+- Knock Off  
+
+
 
 === TRAINER_LILA_AND_ROY_2 === /* Route */
 Name: LILA & ROY
@@ -19873,47 +20224,129 @@ Electrike
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_1 === /* Magma Hideout */ /* optional */
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_1 === /* Magma Hideout */ /* optional */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Zubat
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_2 === /* Route */
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_2 === /* Magma Hideout */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Poochyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Orthworm @ Assault Vest  
+Level: 62
+Ability: Earth Eater  
+Tera Type: Steel  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Earthquake  
+- Body Press  
+- Iron Head  
+- Smack Down  
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_3 === /* Route */
+Gliscor @ Toxic Orb  
+Level: 62
+Ability: Poison Heal  
+Tera Type: Ground  
+EVs: 128 HP / 252 Atk / 118 Spe  
+Adamant Nature  
+- Earthquake  
+- Dual Wingbeat  
+- Swords Dance  
+- Protect  
+
+Flygon @ Yache Berry  
+Level: 62
+Ability: Levitate  
+Tera Type: Ground  
+- Earthquake  
+- Dragon Tail  
+- Tailwind  
+- First Impression  
+
+Claydol  
+Level: 62
+Ability: Levitate  
+Tera Type: Ground  
+EVs: 252 HP  
+IVs: 0 Atk  
+- Scorching Sands  
+- Psychic  
+- Dazzling Gleam  
+- Ancient Power
+
+
+
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_3 === /* Magma Hideout */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Numel
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Flareon  
+Level: 63
+Ability: Drought  
+Tera Type: Fire  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Fire Pledge  
+- Heat Wave  
+- Scorching Sands  
+- Shadow Ball  
+
+Leafeon  
+Level: 63
+Ability: Chlorophyll  
+Tera Type: Grass  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Grass Pledge  
+- Grassy Glide  
+- Last Resort  
+- Knock Off  
+
+Tropius @ Yache Berry  
+Level: 63
+Ability: Solar Power  
+Tera Type: Fire  
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Solar Beam  
+- Air Slash  
+- Hidden Power
+- Tailwind  
+
+Heliolisk @ Life Orb  
+Level: 63
+Ability: Solar Power  
+Tera Type: Electric  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Hyper Voice  
+- Thunderbolt  
+- Weather Ball  
+- Volt Switch  
+
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 === /* Route */
 Name: GRUNT
@@ -19922,34 +20355,102 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Baltoy
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Weezing-Galar  @ Assault Vest
+Ability: Neutralizing Gas  
+Tera Type: Poison  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Strange Steam  
+- Sludge Bomb  
+- Heat Wave  
+- Clear Smog  
 
-Zubat
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Toedscruel  
+Ability: Mycelium Might  
+Tera Type: Ground  
+EVs: 252 HP / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Spore  
+- Earth Power  
+- Giga Drain  
+- Pain Split  
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_5 === /* Route */
+Archeops @ Leftovers  
+Ability: Klutz  
+Tera Type: Rock  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Stone Edge  
+- Dual Wingbeat  
+- Dragon Tail  
+- Aqua Tail  
+
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_5 === /* Magma Hideout */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Baltoy
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Oricorio  
+Level: 63
+Ability: Dancer  
+Tera Type: Fire  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Revelation Dance  
+- Quiver Dance  
+- Teeter Dance  
+- Feather Dance  
 
-Numel
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bellossom  
+Level: 63
+Ability: Dancer  
+Tera Type: Grass  
+EVs: 128 HP / 252 SpA / 128 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Petal Dance  
+- Quiver Dance  
+- Moonblast  
+- Strength Sap  
+
+Vileplume  
+Level: 63
+Ability: Effect Spore  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Petal Dance  
+- Sludge Bomb  
+- Reflect  
+- Sleep Powder  
+
+Decidueye-Hisui @ Coba Berry  
+Level: 63
+Ability: Overgrow  
+Tera Type: Grass  
+- Feather Dance  
+- Dual Wingbeat  
+- Leaf Blade  
+- Brick Break  
+
+/*
+Lilligant-Hisui (F) @ Coba Berry  
+Ability: Hustle  
+Tera Type: Grass  
+- Victory Dance  
+- Acrobatics  
+- Leaf Blade  
+- Low Kick  
+*/
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 === /* Magma Hideout */ /* redundant optional */
 Name: GRUNT
@@ -19958,7 +20459,6 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mightyena
@@ -19972,12 +20472,39 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zubat
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Victreebel  
+Level: 63
+Ability: Chlorophyll  
+Tera Type: Grass  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Weather Ball  
+- Lovely Kiss  
+- Solar Beam  
+- Sludge Bomb  
+
+Flareon  
+Level: 63
+Ability: Drought  
+Tera Type: Fire  
+- Sacred Fire  
+- Trailblaze  
+- Last Resort  
+- Quick Attack  
+
+Exeggutor @ Sitrus Berry  
+Level: 63
+Ability: Harvest  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Twin Beam  
+- Leech Seed  
+- Ancient Power  
+- Protect  
+
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 === /* Magma Hideout */ /* redundant optional */
 Name: GRUNT
@@ -19986,14 +20513,13 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Poochyena
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_9 === /* Route */
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_9 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -20003,9 +20529,48 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zubat
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Garbodor @ Black Sludge  
+Level: 63
+Ability: Stench  
+Tera Type: Poison  
+- Gunk Shot  
+- Seed Bomb  
+- Corrosive Gas  
+- Fling  
+
+Donphan  
+Level: 63
+Ability: Sturdy  
+Tera Type: Ground  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- High Horsepower  
+- Rock Slide  
+- Seed Bomb  
+- Counter  
+
+Vileplume  
+Level: 63
+Ability: Effect Spore  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Aromatherapy  
+- Energy Ball  
+- Moonlight  
+- Sludge Bomb  
+
+Magcargo  @ Shuca Berry
+Level: 63
+Ability: Magma Armor  
+Tera Type: Fire  
+EVs: 252 HP  
+IVs: 0 Atk  
+- Ancient Power  
+- Amnesia  
+- Recover  
+- Lava Plume  
+
+
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 === /* Route */
 Name: GRUNT
@@ -20021,7 +20586,7 @@ Mightyena
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_11 === /* Route */
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_11 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -20031,11 +20596,49 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Baltoy
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Duraludon  
+Level: 62
+Ability: Stalwart  
+Tera Type: Steel  
+IVs: 0 Atk  
+- Thunderbolt  
+- Reflect  
+- Mirror Coat  
+- Steel Beam  
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_12 === /* Route */
+Amoonguss @ Black Sludge  
+Level: 62
+Ability: Effect Spore  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Spore  
+- Giga Drain  
+- Pollen Puff  
+- Rage Powder  
+
+Magmortar  @ Shuca Berry 
+Level: 62
+Ability: Vital Spirit  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Counter  
+- Fiery Wrath  
+- Barrier  
+- Flamethrower  
+
+Revavroom @ Shuca Berry  
+Level: 62
+Ability: Filter  
+Tera Type: Steel  
+EVs: 128 HP / 252 Atk / 128 Spe  
+Adamant Nature  
+- Spin Out  
+- Noxious Torque  
+- Magical Torque  
+- Combat Torque  
+
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_12 === /* Route */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -20045,11 +20648,49 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Numel
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Minior @ Focus Sash  
+Level: 62
+Ability: Shields Down  
+Tera Type: Rock  
+EVs: 168 HP / 168 Atk / 168 Spe  
+Jolly Nature  
+- Earthquake  
+- Rock Slide  
+- Acrobatics  
+- Shell Smash  
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_13 === /* Route */
+Weezing-Galar 
+Level: 62 
+Ability: Levitate  
+Tera Type: Poison  
+IVs: 0 Atk  
+- Strange Steam  
+- Flamethrower  
+- Clear Smog  
+- Toxic Spikes  
+
+Diggersby  
+Level: 62
+Ability: Huge Power  
+Tera Type: Normal  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Earthquake  
+- Body Slam  
+- Thunder Punch  
+- Ice Punch  
+
+Chesnaught  @ Coba Berry
+Level: 62
+Ability: Bulletproof  
+Tera Type: Grass  
+- Spiky Shield  
+- Body Press  
+- Spikes  
+- Seed Bomb  
+
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_13 === /* Route */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -20059,23 +20700,91 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zubat
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tauros-Paldea-Blaze (M) @ Life Orb  
+Level: 62
+Ability: Intimidate  
+Tera Type: Fighting  
+- Raging Bull  
+- Drill Run  
+- Close Combat  
+- Facade  
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_14 === /* Route */
+Archaludon @ Power Herb  
+Level: 62
+Ability: Stamina  
+Tera Type: Steel  
+EVs: 128 HP / 252 SpA / 128 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Electro Shot  
+- Body Press  
+- Dragon Pulse  
+- Flash Cannon  
+
+Trevenant  @ Big Root
+Level: 62
+Ability: Natural Cure  
+Tera Type: Ghost  
+- Drain Punch  
+- Horn Leech  
+- Leech Seed  
+- Sucker Punch  
+
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_14 === /* Magma Hideout */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Mightyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bruxish  @ Ring Target
+Level: 52
+Ability: Dazzling  
+Tera Type: Water  
+EVs: 252 Spe  
+Timid Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD  
+- Aqua Jet  
+- Super Fang  
+- Flip Turn  
+
+Coalossal @ Weakness Policy  
+Level: 62
+Ability: Steam Engine  
+Tera Type: Grass  
+EVs: 252 HP / 252 Atk / 4 Spe  
+Brave Nature  
+- Earthquake  
+- Rock Slide  
+- Heat Crash  
+- Hidden Power
+
+Sinistcha   @ Sitrus Berry
+Level: 62
+Ability: Hospitality  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Modest Nature
+Tera Type: Grass  
+IVs: 0 Atk  
+- Matcha Gotcha  
+- Scald  
+- Shadow Ball  
+- Life Dew  
+
+Electrode @ Light Clay   
+Level: 62
+Ability: Static  
+Tera Type: Ice  
+EVs: 252 HP / 252 SpA / 4 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Thunderbolt  
+- Protect
+- Light Screen  
+- Reflect
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 === /* Magma Hideout */ /* optional */
 Name: GRUNT
@@ -20084,14 +20793,13 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Numel
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_16 === /* Route */
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_16 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt F
@@ -20101,11 +20809,48 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Baltoy
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Torterra @ Yache Berry  
+Level: 62
+Ability: Overgrow  
+Tera Type: Grass  
+- Headlong Rush  
+- Wood Hammer  
+- Shell Smash  
+- Synthesis  
 
-=== TRAINER_TABITHA_MAGMA_HIDEOUT === /* Route */
+Infernape  @ Shuca Berry
+Level: 62
+Ability: Iron Fist  
+Tera Type: Fire  
+- Fire Punch  
+- Drain Punch  
+- Fake Out  
+- Bulk Up  
+
+Klinklang  @ Shuca Berry
+Level: 62
+Ability: Clear Body  
+Tera Type: Steel  
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Shift Gear  
+- Gear Grind  
+- Wild Charge  
+- Secret Power  
+
+Muk  @ Shuca Berry
+Level: 62
+Ability: Poison Touch  
+Tera Type: Poison  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Acid Armor  
+- Drain Punch  
+- Gunk Shot  
+- Shadow Sneak  
+
+
+=== TRAINER_TABITHA_MAGMA_HIDEOUT === /* Magma Hideout */
 Name: TABITHA
 Class: Magma Admin
 Pic: Tabitha ORAS

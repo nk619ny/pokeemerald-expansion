@@ -206,3 +206,22 @@ Route124_EventScript_Isabella::
 Route124_Text_HuntersHouse:
 # 104 "data/maps/Route124/scripts.pory"
 	.string "HUNTER'S HOUSE$"
+
+Route124_EventScript_BlockSootopolis::
+# 109 "data/maps/Route124/scripts.pory"
+	lock
+# 110 "data/maps/Route124/scripts.pory"
+	msgbox Route124_EventScript_BlockSootopolis_Text_0, MSGBOX_NPC
+# 111 "data/maps/Route124/scripts.pory"
+	waitmessage
+# 112 "data/maps/Route124/scripts.pory"
+	release
+	end
+
+
+Route124_EventScript_BlockSootopolis_Text_0:
+# 110 "data/maps/Route124/scripts.pory"
+	.string "I want to visit Sootopolis City, but the\n"
+	.string "currents in this area are a bit much for\l"
+	.string "me.\p"
+	.string "Maybe I should go around...?$"

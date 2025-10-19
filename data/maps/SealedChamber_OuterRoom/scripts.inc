@@ -183,30 +183,32 @@ SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall::
 # 92 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	goto_if_set FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_HoleInWall
 # 93 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
+	setflag FLAG_SYS_BRAILLE_DIG
 # 94 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	releaseall
+	//braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
 # 95 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	end
+	releaseall
 # 96 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-
-# 97 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-SealedChamber_OuterRoom_EventScript_HoleInWall::
-# 98 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	msgbox gText_BigHoleInTheWall, MSGBOX_DEFAULT
-# 99 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	releaseall
-# 100 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	end
-# 101 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 97 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 
-# 102 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-SealedChamber_OuterRoom_EventScript_BrailleDigHere::
-# 103 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	lockall
-# 104 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
-# 105 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 98 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+SealedChamber_OuterRoom_EventScript_HoleInWall::
+# 99 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	msgbox gText_BigHoleInTheWall, MSGBOX_DEFAULT
+# 100 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	releaseall
+# 101 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	end
+# 102 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+
+# 103 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+SealedChamber_OuterRoom_EventScript_BrailleDigHere::
+# 104 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	lockall
+# 105 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
 # 106 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	releaseall
+# 107 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	end

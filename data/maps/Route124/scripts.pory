@@ -104,3 +104,11 @@ Route124_Text_HuntersHouse:
 	.string "HUNTER'S HOUSE$"
 
 `
+
+script Route124_EventScript_BlockSootopolis {
+	lock
+	msgbox(format("I want to visit Sootopolis City, but swimming around these rocks is difficult.\pMaybe I should go around...?"), MSGBOX_NPC)
+	waitmessage
+	release
+	end
+}
