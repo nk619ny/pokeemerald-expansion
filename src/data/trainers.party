@@ -4873,8 +4873,7 @@ Tera Type: Water
 Veluza @ Scope Lens   
 Level: 72
 Ability: Sharpness  
-Tera Type: Water  
-/* EVs: 4 HP / 252 Atk / 252 Spe  */
+Tera Type: Water  /* EVs: 4 HP / 252 Atk / 252 Spe  */
 Adamant Nature  
 - Aqua Cutter  
 - Drill Run  
@@ -19631,7 +19630,7 @@ Tera Type: Electric
 - Darkest Lariat  
 - Detect  
 
-Crabominable  @ Punhing Gloves
+Crabominable  @ Punching Glove
 Level: 73
 Ability: Iron Fist  
 Tera Type: Fighting  
@@ -20876,7 +20875,7 @@ Gliscor @ Toxic Orb
 Level: 62
 Ability: Poison Heal  
 Tera Type: Ground  
-EVs: 128 HP / 252 Atk / 118 Spe  
+EVs: 128 HP / 252 Atk / 128 Spe  
 Adamant Nature  
 - Earthquake  
 - Dual Wingbeat  
