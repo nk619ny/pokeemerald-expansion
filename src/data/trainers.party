@@ -318,9 +318,48 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Poochyena
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Barbaracle @ White Herb  
+Level: 72
+Ability: Tough Claws  
+Tera Type: Rock  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Razor Shell  
+- Shell Smash  
+- Rock Slide  
+- Poison Jab  
+
+Golisopod  @ Eject Button
+Level: 72
+Ability: Emergency Exit  
+EVs: 252 HP / 252 Atk / 4 SpD
+Tera Type: Bug  
+- First Impression  
+- Razor Shell  
+- Poison Jab  
+- Wide Guard  
+
+Escavalier  @ Occa Berry
+Level: 72
+Ability: Swarm  
+Tera Type: Bug  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Razor Shell  
+- Poison Jab  
+- Hyper Drill  
+- Megahorn  
+
+Sneasler @ Payapa Berry  
+Level: 72
+Ability: Poison Touch  
+Tera Type: Fighting  
+- Dire Claw  
+- Fake Out  
+- Rock Slide  
+
+
+
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 === /* Route */
 Name: GRUNT
@@ -332,9 +371,45 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Carvanha
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Aurorus  @ Babiri Berry
+Ability: Snow Warning  
+Tera Type: Rock  
+IVs: 0 Atk  
+- Blizzard  
+- Ancient Power  
+- Aurora Veil  
+- Charge Beam  
+
+Glimmora  @ Shuca Berry
+Ability: Toxic Debris  
+Tera Type: Rock  
+IVs: 0 Atk  
+- Ancient Power  
+- Earth Power  
+- Energy Ball  
+- Spiky Shield  
+
+Ribombee @ Focus Sash  
+Ability: Shield Dust  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Silver Wind  
+- Moonblast  
+- Quiver Dance  
+- Stored Power  
+
+Octillery @ Bright Powder  
+Ability: Moody  
+Tera Type: Water  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Octazooka  
+- Charge Beam  
+- Energy Ball  
+- Flamethrower  
+
+
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 === /* Route */
 Name: GRUNT
@@ -344,11 +419,95 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Zubat
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vaporeon  
+Level: 72
+Ability: Drizzle
+Tera Type: Water  
+IVs: 0 Atk  
+- Muddy Water  
+- Blizzard  
+- Shadow Ball  
+- Protect
+
+
+Qwilfish @ Choice Band  
+Level: 72
+Ability: Swift Swim  
+Tera Type: Water  
+EVs: 128 HP / 128 Atk / 252 Spe  
+Jolly Nature  
+- Barb Barrage  
+- Flip Turn  
+- Explosion  
+
+Omastar  @ Rindo Berry
+Level: 72
+Ability: Swift Swim  
+Tera Type: Rock  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Scald  
+- Ancient Power  
+- Blizzard  
+- Earth Power  
+
+
+Electrode-Hisui  @ Focus Sash
+Level: 72
+Ability: Aftermath  
+Tera Type: Electric  
+EVs: 192 HP / 252 SpA / 64 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Charge Beam  
+- Energy Ball  
+- Thunder  
+- Reflect  
+
+
+
+/*
+Vaporeon @ Big Root  
+Ability: Water Absorb  
+Tera Type: Water  
+IVs: 0 Atk  
+- Bouncy Bubble  
+- Surf
+- Blizzard  
+- Aqua Ring  
+
+Lanturn  
+Ability: Water Absorb  
+Tera Type: Water  
+IVs: 0 Atk  
+- Charge Beam  
+- Blizzard  
+- Scald  
+- Surf
+
+Gastrodon  @ Rindo Berry
+Ability: Storm Drain  
+Tera Type: Water  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Muddy Water  
+- Ancient Power  
+- Blizzard  
+- Recover  
+
+Politoed  
+Ability: Water Absorb  
+Tera Type: Water  
+IVs: 0 Atk  
+- Muddy Water  
+- Encore  
+- Surf
+- Hyper Voice  
+*/
 
 === TRAINER_GABRIELLE_1 === /* Route */
 Name: GABRIELLE
@@ -477,7 +636,7 @@ Seviper
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_4 === /* Route */
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_4 === /* Seafloor Cavern */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -487,9 +646,52 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Carvanha
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dragalge  
+Level: 73
+Ability: Poison Point  
+Tera Type: Poison  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Scald  
+- Shadow Ball  
+- Dragon Pulse  
+- Sludge Wave  
+
+Volbeat 
+Level: 73
+Ability: Prankster  
+Tera Type: Bug  
+EVs: 252 HP / 252 SpA / 4 Spe
+IVs: 0 Atk  
+Modest Nature
+- Silver Wind  
+- Tail Glow  
+- Tailwind  
+- Charge Beam  
+
+Bruxish   
+Level: 73
+Ability: Strong Jaw  
+Tera Type: Water  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature
+- Poison Fang  
+- Ice Fang  
+- Crunch  
+- Aqua Jet  
+
+Pinsir @ Pinsirite   
+Level: 73
+Ability: Hyper Cutter  
+Tera Type: Bug  
+EVs: 252 HP / 128 Atk / 128 Spe  
+Adamant Nature
+- Body Slam  
+- X-Scissor  
+- Rock Slide  
+- Brick Break  
+
 
 === TRAINER_DECLAN === /* Route 124 */
 Name: DECLAN
@@ -4680,7 +4882,7 @@ Adamant Nature
 - Night Slash  
 
 
-=== TRAINER_ROLAND === /* Route */
+=== TRAINER_ROLAND === /* Route 124 */ /*Pre-Dive Optional */
 Name: ROLAND
 Class: Swimmer M
 Pic: Swimmer M
@@ -4689,9 +4891,44 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Carvanha
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slurpuff  
+Level: 73
+Ability: Sweet Veil  
+Tera Type: Fairy  
+- Draining Kiss  
+- Metronome  
+- Misty Explosion  
+- Cotton Guard  
+
+Whiscash @ Rindo Berry  
+Level: 73
+Ability: Oblivious  
+Tera Type: Water  
+IVs: 0 Atk  
+- Earth Power  
+- Stealth Rock  
+- Amnesia  
+- Scald  
+
+Rampardos @ White Herb  
+Level: 73
+Ability: Mold Breaker  
+Tera Type: Rock  
+- Supercell Slam  
+- Head Smash  
+- Stomping Tantrum  
+- Superpower  
+
+Gorebyss  @ White Herb
+Level: 73
+Ability: Swift Swim  
+Tera Type: Water  
+IVs: 0 Atk  
+- Scald  
+- Dazzling Gleam
+- Infestation
+- Shell Smash
+
 
 === TRAINER_NOLEN === /* Route */
 Name: NOLEN
@@ -5303,7 +5540,7 @@ Tera Type: Grass
 - Bullet Seed  
 
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_7 === /* Aqua Hideout */ /* TO BE ADDED */
+=== TRAINER_GRUNT_AQUA_HIDEOUT_7 === /* Aqua Hideout */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -5312,13 +5549,58 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Poochyena
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vaporeon @ Big Root  
+Level: 62
+Ability: Water Absorb  
+Tera Type: Water  
+IVs: 0 Atk  
+- Bouncy Bubble  
+- Surf
+- Blizzard  
+- Aqua Ring  
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lanturn  
+Level: 62
+Ability: Water Absorb  
+Tera Type: Water  
+IVs: 0 Atk  
+- Charge Beam  
+- Blizzard  
+- Thunderbolt  
+- Surf
+
+Gastrodon  @ Rindo Berry
+Level: 62
+Ability: Storm Drain  
+Tera Type: Water  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Surf  
+- Earth Power  
+- Blizzard  
+- Recover  
+
+Politoed  
+Level: 62
+Ability: Water Absorb  
+Tera Type: Water  
+IVs: 0 Atk  
+- Earth Power  
+- Encore  
+- Surf
+- Hyper Voice
+
+/*
+Tatsugiri (Tatsugiri-Stretchy)  
+Ability: Storm Drain  
+Tera Type: Dragon  
+IVs: 0 Atk  
+- Counter  
+- Dragon Pulse  
+- Memento  
+- Muddy Water  
+*/
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 === /* Aqua Hideout */ /* TO BE ADDED */
 Name: GRUNT
@@ -10253,7 +10535,7 @@ Electrike
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ISAIAH_1 === /* Route */
+=== TRAINER_ISAIAH_1 === /* Route 129 */
 Name: ISAIAH
 Class: Triathlete
 Pic: Swimming Triathlete M
@@ -10262,9 +10544,42 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Staryu
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Druddigon @ Life Orb  
+Level: 70
+Ability: Sheer Force  
+Tera Type: Dragon  
+- Crunch  
+- Gunk Shot  
+- Rock Slide  
+- Breaking Swipe  
+
+Feraligatr  @ Life Orb
+Level: 70
+Ability: Sheer Force  
+Tera Type: Water  
+- Dragon Dance  
+- Trailblaze  
+- Waterfall  
+- Ice Fang  
+
+Tauros (M) @ White Herb  
+Level: 70
+Ability: Intimidate  
+Tera Type: Normal  
+- Raging Bull  
+- Wild Charge  
+- Close Combat  
+- Pursuit  
+
+Lapras @ Loaded Dice  
+Level: 70
+Ability: Water Absorb  
+Tera Type: Water  
+- Dragon Dance  
+- Aqua Tail  
+- Drill Run  
+- Icicle Spear  
+
 
 === TRAINER_PABLO_1 === /* Route */
 Name: PABLO
@@ -12140,7 +12455,7 @@ Luvdisc
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KARA === /* Route */
+=== TRAINER_KARA === /* Route 131 */ /* Before Sky Pillar */
 Name: KARA
 Class: Swimmer F
 Pic: Swimmer F
@@ -12149,9 +12464,44 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Seaking
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowbro  @ Light Clay
+Level: 74
+Ability: Oblivious  
+Tera Type: Water  
+IVs: 0 Atk  
+- Scald  
+- Blizzard  
+- Body Press  
+- Light Screen
+
+Rhydon @ Assault Vest  
+Level: 74
+Ability: Lightning Rod  
+Tera Type: Ground  
+- Heat Crash  
+- Supercell Slam  
+- Drill Run  
+- Rock Climb  
+
+Furfrou-Heart @ Assault Vest
+Level: 74
+Ability: Fur Coat  
+Tera Type: Normal  
+- Return  
+- U-turn  
+- Wild Charge  
+- Sucker Punch  
+
+Milotic  
+Level: 74
+Ability: Marvel Scale  
+Tera Type: Water  
+IVs: 0 Atk  
+- Alluring Voice  
+- Mirror Coat  
+- Icy Wind  
+- Water Pulse  
+
 
 === TRAINER_DANA === /* Route */
 Name: DANA
@@ -15657,13 +16007,51 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Mightyena
-Level: 35
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Samurott-Hisui  
+Level: 73
+Ability: Sharpness  
+Tera Type: Water  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Razor Shell  
+- Ceaseless Edge  
+- Sacred Sword  
+- Secret Power  
 
-Golbat
-Level: 35
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Kabutops  @ Rindo Berry 
+Level: 73
+Ability: Swift Swim  
+Tera Type: Rock  
+EVs: 128 HP / 128 Atk / 252 Spe  
+Jolly Nature  
+- Razor Shell  
+- Rock Slide  
+- Rock Smash  
+- Leech Life  
+
+
+Drapion  @ Assault Vest
+Level: 73
+Ability: Sniper  
+Tera Type: Poison  
+EVs: 128 HP / 128 Atk / 252 Spe  
+Jolly Nature
+- Poison Fang  
+- Wicked Blow  
+- Fire Fang  
+- Ice Fang  
+
+
+Beedrill-Mega @ Beedrillite  
+Level: 73
+Ability: Adaptability  
+Tera Type: Bug  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Barb Barrage  
+- Fell Stinger  
+- Facade  
+- Rock Smash 
 
 === TRAINER_GRUNT_UNUSED === /* Route */
 Name: GRUNT
@@ -15952,7 +16340,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Surf
 - Thief
 
-=== TRAINER_HARRISON === /* Route 128 */ /* To Evergrande */
+=== TRAINER_HARRISON === /* Route 128 */ /* To Evergrande */ /* TO BE ADDED */
 Name: HARRISON
 Class: Swimmer M
 Pic: Swimmer M
@@ -15961,9 +16349,33 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacruel
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gogoat @ Leftovers  
+Ability: Sap Sipper  
+Tera Type: Grass  
+- Energy Ball  
+- Horn Leech  
+- Wild Charge  
+- Protect  
+
+Goodra @ Leftovers  
+Ability: Gooey  
+Tera Type: Dragon  
+Calm Nature  
+IVs: 0 Atk  
+- Acid Armor  
+- Life Dew  
+- Scald  
+- Dragon Pulse  
+
+Rhyperior @ Weakness Policy  
+Ability: Solid Rock  
+Tera Type: Ground  
+- Accelerock  
+- Body Press  
+- Drill Run  
+- Stone Edge  
+
+
 
 === TRAINER_GRUNT_MT_CHIMNEY_2 === /* Route */ /* TO BE ADDED */
 Name: GRUNT
@@ -19228,7 +19640,7 @@ Tera Type: Fighting
 - Thunder Punch  
 - Drain Punch  
 
-=== TRAINER_WAYNE === /* Route */
+=== TRAINER_WAYNE === /* Route 128 */
 Name: WAYNE
 Class: Fisherman
 Pic: Fisherman
@@ -19237,17 +19649,46 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacool
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tatsugiri (Tatsugiri-Stretchy)  
+Level: 69
+Ability: Storm Drain  
+Tera Type: Dragon  
+IVs: 0 Atk  
+- Counter  
+- Dragon Pulse  
+- Memento  
+- Muddy Water
 
-Tentacool
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dondozo  
+Level: 69
+Ability: Oblivious  
+Tera Type: Water  
+- Wave Crash  
+- Aqua Tail  
+- Body Slam  
+- Heavy Slam  
 
-Wailmer
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Veluza @ Scope Lens  
+Level: 69
+Ability: Sharpness  
+Tera Type: Water  
+- Aqua Cutter  
+- Drill Run  
+- Psycho Cut  
+- Night Slash  
+
+
+Walrein  
+Level: 69
+Ability: Thick Fat  
+Tera Type: Ice  
+IVs: 0 Atk  
+- Hydro Pump  
+- Ice Beam  
+- Body Press  
+- Encore  
+
 
 === TRAINER_AIDAN === /* Route 124 */ /* TO BE ADDED */ /* Change Class? */
 Name: AIDAN
