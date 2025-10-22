@@ -8622,7 +8622,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Feint Attack
 - Heal Bell
 
-=== TRAINER_MIGUEL_2 === /* Route */
+=== TRAINER_HILL_1 ===
 Name: MIGUEL
 Class: Pokefan
 Pic: Pokefan M
@@ -8635,7 +8635,7 @@ Skitty @ Oran Berry
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MIGUEL_3 === /* Route */
+=== TRAINER_HILL_2 ===
 Name: MIGUEL
 Class: Pokefan
 Pic: Pokefan M
@@ -8648,7 +8648,7 @@ Skitty @ Oran Berry
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MIGUEL_4 === /* Route */
+=== TRAINER_HILL_3 ===
 Name: MIGUEL
 Class: Pokefan
 Pic: Pokefan M
@@ -8661,7 +8661,7 @@ Delcatty @ Oran Berry
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MIGUEL_5 === /* Route */
+=== TRAINER_HILL_4 ===
 Name: MIGUEL
 Class: Pokefan
 Pic: Pokefan M
@@ -8787,7 +8787,7 @@ IVs: 0 Atk
 - Water Spout  
 - Flash Cannon  
 
-=== TRAINER_ISABEL_2 === /* Route */
+=== TRAINER_HILL_5 === /* Route */
 Name: ISABEL
 Class: Pokefan
 Pic: Pokefan F
@@ -8804,7 +8804,7 @@ Minun @ Oran Berry
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_ISABEL_3 === /* Route */
+=== TRAINER_HILL_6 === /* Route */
 Name: ISABEL
 Class: Pokefan
 Pic: Pokefan F
@@ -8821,7 +8821,7 @@ Minun @ Oran Berry
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_ISABEL_4 === /* Route */
+=== TRAINER_HILL_7 === /* Route */
 Name: ISABEL
 Class: Pokefan
 Pic: Pokefan F
@@ -8838,7 +8838,7 @@ Minun @ Oran Berry
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_ISABEL_5 === /* Route */
+=== TRAINER_HILL_8 === /* Route */
 Name: ISABEL
 Class: Pokefan
 Pic: Pokefan F

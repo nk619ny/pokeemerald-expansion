@@ -298,29 +298,29 @@
 #define TRAINER_VICTOR                      292
 #define TRAINER_MIGUEL_1                    293
 #define TRAINER_COLTON                      294
-#define TRAINER_MIGUEL_2                    295
-#define TRAINER_MIGUEL_3                    296
-#define TRAINER_MIGUEL_4                    297
-#define TRAINER_MIGUEL_5                    298
+#define TRAINER_HILL_1                    295 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
+#define TRAINER_HILL_2                    296 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
+#define TRAINER_HILL_3                    297 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
+#define TRAINER_HILL_4                    298 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
 #define TRAINER_VICTORIA                    299
 #define TRAINER_VANESSA                     300
 #define TRAINER_BETHANY                     301
 #define TRAINER_ISABEL_1                    302
-#define TRAINER_ISABEL_2                    303
-#define TRAINER_ISABEL_3                    304
-#define TRAINER_ISABEL_4                    305
-#define TRAINER_ISABEL_5                    306
+#define TRAINER_HILL_5                    303 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
+#define TRAINER_HILL_6                    304 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
+#define TRAINER_HILL_7                    305 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
+#define TRAINER_HILL_8                    306 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
 #define TRAINER_TIMOTHY_1                   307
-#define TRAINER_TIMOTHY_2                   308
-#define TRAINER_TIMOTHY_3                   309
-#define TRAINER_TIMOTHY_4                   310
-#define TRAINER_TIMOTHY_5                   311
+#define TRAINER_TIMOTHY_2                   308 //hijacked rematches of Timothy in 308-311 for Trainer Hill fights
+#define TRAINER_TIMOTHY_3                   309 //hijacked rematches of Timothy in 308-311 for Trainer Hill fights
+#define TRAINER_TIMOTHY_4                   310 //hijacked rematches of Timothy in 308-311 for Trainer Hill fights
+#define TRAINER_TIMOTHY_5                   311 //hijacked rematches of Timothy in 308-311 for Trainer Hill fights
 #define TRAINER_VICKY                       312
 #define TRAINER_SHELBY_1                    313
-#define TRAINER_SHELBY_2                    314
-#define TRAINER_SHELBY_3                    315
-#define TRAINER_SHELBY_4                    316
-#define TRAINER_SHELBY_5                    317
+#define TRAINER_SHELBY_2                    314 //hijacked rematches of Shelby in 314-317 for Trainer Hill fights
+#define TRAINER_SHELBY_3                    315 //hijacked rematches of Shelby in 314-317 for Trainer Hill fights
+#define TRAINER_SHELBY_4                    316 //hijacked rematches of Shelby in 314-317 for Trainer Hill fights
+#define TRAINER_SHELBY_5                    317 //hijacked rematches of Shelby in 314-317 for Trainer Hill fights
 #define TRAINER_CALVIN_1                    318
 #define TRAINER_BILLY                       319
 #define TRAINER_JOSH                        320

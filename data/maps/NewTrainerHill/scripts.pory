@@ -1,0 +1,624 @@
+raw `
+@ On this map the player will automatically walk into the room, but the camera is supposed to remain still.
+@ To do this GF sets the player (LOCALID_PLAYER) invisible and creates a fake player object (LOCALID_HILL_PLAYER).
+@ The graphics of this fake player object are represented with VAR_OBJ_GFX_ID_1.
+@ The graphics of the opponent are represented with VAR_OBJ_GFX_ID_0, which will ultimately be set by dome_setopponentgfx.
+
+.set NO_DRAW,       0
+.set DRAW_TRAINER,  1
+.set DRAW_TUCKER,   2
+
+NewTrainerHill_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, NewTrainerHill_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, NewTrainerHill_OnFrame
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, NewTrainerHill_OnWarp
+	map_script MAP_SCRIPT_ON_RESUME, NewTrainerHill_OnResume
+	.byte 0
+
+NewTrainerHill_OnTransition:
+	setflag FLAG_TEMP_HIDE_FOLLOWER
+	call NewTrainerHill_EventScript_SetOpponent
+	//dome_setopponentgfx
+	//frontier_get FRONTIER_DATA_BATTLE_NUM
+	call NewTrainerHill_EventScript_SetupAudienceCount
+	//copyvar VAR_TEMP_F, VAR_RESULT
+	call_if_eq VAR_RESULT, DOME_ROUND1, NewTrainerHill_EventScript_SetWalkingAudienceMemberPos
+	call NewTrainerHill_EventScript_SetPlayerGfx
+	end
+
+NewTrainerHill_EventScript_SetPlayerGfx::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, NewTrainerHill_EventScript_SetPlayerGfxMale
+	goto_if_eq VAR_RESULT, FEMALE, NewTrainerHill_EventScript_SetPlayerGfxFemale
+	return
+
+NewTrainerHill_EventScript_SetPlayerGfxMale::
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
+	return
+
+NewTrainerHill_EventScript_SetPlayerGfxFemale::
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
+	return
+
+NewTrainerHill_OnFrame:
+	map_script_2 VAR_TEMP_0, 0, NewTrainerHill_EventScript_EnterRoom
+	.2byte 0
+
+NewTrainerHill_EventScript_EnterRoom::
+	lockall
+	//call NewTrainerHill_EventScript_GetRoundNum
+	call_if_eq VAR_TEMP_F, DOME_ROUND1, NewTrainerHill_EventScript_TryDoAudienceMemberWalkToSeat
+	applymovement LOCALID_HILL_ANNOUNCER, Common_Movement_WalkInPlaceDown
+	waitmovement 0
+	call NewTrainerHill_EventScript_AnnouncePlayer
+	//msgbox BattleFrontier_BattleDomeBattleRoom_Text_PlayerHasEnteredDome, MSGBOX_DEFAULT
+	closemessage
+	showobjectat LOCALID_HILL_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM
+	goto NewTrainerHill_EventScript_PlayerEnter
+	//goto_if_ne VAR_TEMP_E, FRONTIER_BRAIN_NOT_READY, NewTrainerHill_EventScript_PlayerEnterForTucker
+NewTrainerHill_EventScript_PlayerEnter::
+	applymovement LOCALID_HILL_PLAYER, NewTrainerHill_Movement_PlayerEnter
+	goto NewTrainerHill_EventScript_AudienceReactToPlayer
+
+NewTrainerHill_EventScript_PlayerEnterForTucker::
+	applymovement LOCALID_HILL_PLAYER, NewTrainerHill_Movement_PlayerEnterForTucker
+NewTrainerHill_EventScript_AudienceReactToPlayer::
+	playse SE_M_ENCORE2
+	call NewTrainerHill_EventScript_AudienceLookAround
+	waitmovement 0
+	// ADD BATTLE INTRO HERE
+	//goto_if_ne VAR_TEMP_F, DOME_FINAL, NewTrainerHill_EventScript_BattleOpponent
+	//goto_if_ne VAR_TEMP_E, FRONTIER_BRAIN_NOT_READY, NewTrainerHill_EventScript_AnnounceTucker
+	goto NewTrainerHill_EventScript_NewBattleSequence
+	return
+
+
+NewTrainerHill_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, NewTrainerHill_EventScript_SetUpObjects
+	.2byte 0
+
+NewTrainerHill_EventScript_SetUpObjects::
+	hideobjectat LOCALID_HILL_PLAYER, MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM
+	call NewTrainerHill_EventScript_AddAudience
+	call NewTrainerHill_EventScript_SetPlayerGfx
+	setvar VAR_TEMP_1, 1
+	applymovement LOCALID_PLAYER, NewTrainerHill_Movement_SetInvisible
+	frontier_get FRONTIER_DATA_BATTLE_NUM
+	goto_if_ne VAR_RESULT, DOME_FINAL, NewTrainerHill_EventScript_EndSetUpObjects
+	frontier_getbrainstatus
+	copyvar VAR_TEMP_E, VAR_RESULT
+	goto_if_eq VAR_RESULT, FRONTIER_BRAIN_NOT_READY, NewTrainerHill_EventScript_EndSetUpObjects
+	call BattleFrontier_EventScript_SetBrainObjectGfx
+	setobjectxyperm LOCALID_HILL_OPPONENT, 13, 9
+	removeobject LOCALID_HILL_OPPONENT
+	delay 1
+	addobject LOCALID_HILL_OPPONENT
+	applymovement LOCALID_HILL_OPPONENT, NewTrainerHill_Movement_SetInvisibleFacingUp
+NewTrainerHill_EventScript_EndSetUpObjects::
+	end
+
+NewTrainerHill_OnResume:
+	call_if_eq VAR_TEMP_9, 1, NewTrainerHill_EventScript_CallAddAudience
+	end
+
+NewTrainerHill_EventScript_CallAddAudience::
+	call NewTrainerHill_EventScript_AddAudience
+	return
+
+@ Add audience members to supplement the permanent object event audience
+NewTrainerHill_EventScript_AddAudience::
+	call_if_eq VAR_TEMP_F, DOME_ROUND1, NewTrainerHill_EventScript_AddRound1Audience
+	call_if_eq VAR_TEMP_F, DOME_ROUND2, NewTrainerHill_EventScript_AddRound2Audience
+	call_if_eq VAR_TEMP_F, DOME_SEMIFINAL, NewTrainerHill_EventScript_AddSemifinalAudience
+	call_if_eq VAR_TEMP_F, DOME_FINAL, NewTrainerHill_EventScript_AddFinalAudience
+	return
+
+NewTrainerHill_EventScript_AddRound1Audience::
+	return
+
+NewTrainerHill_EventScript_AddRound2Audience::
+	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 1, 3, 0
+	createvobject OBJ_EVENT_GFX_EXPERT_F, 4, 6, 0
+	createvobject OBJ_EVENT_GFX_NINJA_BOY, 6, 8, 0
+	createvobject OBJ_EVENT_GFX_LITTLE_GIRL, 9, 11, 0
+	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 11, 13, 0
+	createvobject OBJ_EVENT_GFX_MAN_5, 13, 15, 0
+	createvobject OBJ_EVENT_GFX_BEAUTY, 19, 7, 1
+	createvobject OBJ_EVENT_GFX_WOMAN_5, 22, 11, 1
+	createvobject OBJ_EVENT_GFX_LITTLE_BOY, 25, 15, 1
+	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 2, 2
+	createvobject OBJ_EVENT_GFX_SCHOOL_KID_M, 29, 5, 1
+	return
+
+NewTrainerHill_EventScript_AddSemifinalAudience::
+	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 1, 3, 0
+	createvobject OBJ_EVENT_GFX_EXPERT_F, 4, 6, 0
+	createvobject OBJ_EVENT_GFX_NINJA_BOY, 6, 8, 0
+	createvobject OBJ_EVENT_GFX_WOMAN_2, 7, 9, 0
+	createvobject OBJ_EVENT_GFX_LITTLE_GIRL, 9, 11, 0
+	createvobject OBJ_EVENT_GFX_LASS, 10, 12, 0
+	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 11, 13, 0
+	createvobject OBJ_EVENT_GFX_MAN_5, 13, 15, 0
+	createvobject OBJ_EVENT_GFX_GENTLEMAN, 15, 2, 1
+	createvobject OBJ_EVENT_GFX_NINJA_BOY, 16, 3, 1
+	createvobject OBJ_EVENT_GFX_WOMAN_2, 17, 4, 1
+	createvobject OBJ_EVENT_GFX_BEAUTY, 19, 7, 1
+	createvobject OBJ_EVENT_GFX_EXPERT_F, 20, 9, 1
+	createvobject OBJ_EVENT_GFX_WOMAN_5, 22, 11, 1
+	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 23, 13, 1
+	createvobject OBJ_EVENT_GFX_LITTLE_BOY, 25, 15, 1
+	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 2, 2
+	createvobject OBJ_EVENT_GFX_HEX_MANIAC, 28, 5, 2
+	createvobject OBJ_EVENT_GFX_SCHOOL_KID_M, 29, 5, 1
+	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 30, 6, 2
+	createvobject OBJ_EVENT_GFX_WOMAN_5, 31, 8, 2
+	return
+
+NewTrainerHill_EventScript_AddFinalAudience::
+	createvobject OBJ_EVENT_GFX_NINJA_BOY, 0, 2, 0
+	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 1, 3, 0
+	createvobject OBJ_EVENT_GFX_BEAUTY, 2, 15, 0
+	createvobject OBJ_EVENT_GFX_MAN_5, 3, 5, 0
+	createvobject OBJ_EVENT_GFX_EXPERT_F, 4, 6, 0
+	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 5, 7, 0
+	createvobject OBJ_EVENT_GFX_NINJA_BOY, 6, 8, 0
+	createvobject OBJ_EVENT_GFX_WOMAN_2, 7, 9, 0
+	createvobject OBJ_EVENT_GFX_WOMAN_3, 8, 10, 0
+	createvobject OBJ_EVENT_GFX_LITTLE_GIRL, 9, 11, 0
+	createvobject OBJ_EVENT_GFX_LASS, 10, 12, 0
+	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 11, 13, 0
+	createvobject OBJ_EVENT_GFX_BEAUTY, 12, 14, 0
+	createvobject OBJ_EVENT_GFX_MAN_5, 13, 15, 2
+	createvobject OBJ_EVENT_GFX_HIKER, 14, 12, 2
+	createvobject OBJ_EVENT_GFX_GENTLEMAN, 15, 2, 1
+	createvobject OBJ_EVENT_GFX_NINJA_BOY, 16, 3, 1
+	createvobject OBJ_EVENT_GFX_WOMAN_2, 17, 4, 1
+	createvobject OBJ_EVENT_GFX_WOMAN_3, 18, 6, 1
+	createvobject OBJ_EVENT_GFX_BEAUTY, 19, 7, 1
+	createvobject OBJ_EVENT_GFX_EXPERT_F, 20, 9, 1
+	createvobject OBJ_EVENT_GFX_MAN_2, 21, 10, 1
+	createvobject OBJ_EVENT_GFX_WOMAN_5, 22, 11, 1
+	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 23, 13, 1
+	createvobject OBJ_EVENT_GFX_GENTLEMAN, 24, 14, 1
+	createvobject OBJ_EVENT_GFX_LITTLE_BOY, 25, 15, 1
+	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 2, 2
+	createvobject OBJ_EVENT_GFX_FAT_MAN, 27, 3, 2
+	createvobject OBJ_EVENT_GFX_HEX_MANIAC, 28, 5, 2
+	createvobject OBJ_EVENT_GFX_SCHOOL_KID_M, 29, 5, 1
+	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 30, 6, 2
+	createvobject OBJ_EVENT_GFX_WOMAN_5, 31, 8, 2
+	return
+
+NewTrainerHill_Movement_SetInvisible:
+	set_invisible
+	step_end
+
+NewTrainerHill_Movement_PlayerEnter:
+	set_visible
+	delay_16
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+NewTrainerHill_Movement_PlayerStepForward:
+	walk_right
+	step_end
+
+NewTrainerHill_Movement_PlayerApproachAudience:
+	walk_up
+	step_end
+
+@ Identical to Movement_PlayerEnter
+NewTrainerHill_Movement_PlayerEnterForTucker:
+	set_visible
+	delay_16
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	step_end
+
+NewTrainerHill_Movement_PlayerStepForward2:
+	walk_right
+	step_end
+
+NewTrainerHill_Movement_OpponentStepForward:
+	walk_left
+	step_end
+
+NewTrainerHill_Movement_SetInvisibleFacingUp:
+	face_up
+	set_invisible
+	step_end
+
+NewTrainerHill_Movement_TuckerEnterAndDance:
+	set_visible
+	walk_up
+	walk_up
+	walk_up
+	face_left
+	delay_8
+	delay_4
+	face_down
+	delay_8
+	delay_4
+	face_right
+	delay_8
+	delay_4
+	face_up
+	delay_8
+	delay_4
+	face_left
+	delay_16
+	walk_fast_up
+	walk_fast_up
+	face_left
+	delay_8
+	delay_4
+	face_down
+	delay_8
+	delay_4
+	face_right
+	delay_8
+	delay_4
+	face_up
+	delay_8
+	delay_4
+	face_left
+	jump_2_left
+	unlock_facing_direction
+	face_up
+	lock_facing_direction
+	jump_2_left
+	jump_2_left
+	unlock_facing_direction
+	face_right
+	lock_facing_direction
+	jump_2_left
+	unlock_facing_direction
+	face_down
+	delay_2
+	face_left
+	delay_8
+	delay_4
+	face_up
+	delay_8
+	delay_4
+	face_right
+	delay_8
+	delay_4
+	face_down
+	delay_8
+	delay_4
+	face_left
+	delay_4
+	face_up
+	delay_4
+	face_right
+	delay_4
+	face_down
+	delay_4
+	face_left
+	delay_2
+	face_up
+	delay_2
+	face_right
+	delay_2
+	face_down
+	delay_2
+	face_left
+	lock_facing_direction
+	walk_right
+	walk_slow_right
+	walk_right
+	walk_slow_right
+	unlock_facing_direction
+	face_up
+	delay_16
+	jump_in_place_up
+	jump_in_place_up
+	delay_16
+	walk_right
+	walk_right
+	walk_right
+	jump_in_place_up
+	delay_16
+	walk_right
+	walk_down
+	walk_down
+	face_left
+	delay_2
+	face_up
+	delay_2
+	face_right
+	delay_2
+	face_down
+	delay_2
+	face_left
+	delay_4
+	walk_left
+	walk_left
+	step_end
+
+NewTrainerHill_Movement_AnnouncerMoveForTuckerEntrance:
+	delay_16
+	delay_16
+	walk_left
+	walk_left
+	walk_in_place_faster_right
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	walk_right
+	walk_right
+	walk_in_place_faster_down
+	step_end
+
+NewTrainerHill_Movement_TuckerStepForward:
+	walk_left
+	step_end
+
+NewTrainerHill_Movement_TuckerApproachPlayer:
+	walk_left
+	walk_left
+	step_end
+
+NewTrainerHill_EventScript_AudienceLookAround::
+	turnvobject 0, DIR_EAST
+	turnvobject 2, DIR_EAST
+	turnvobject 4, DIR_EAST
+	turnvobject 6, DIR_EAST
+	turnvobject 8, DIR_EAST
+	turnvobject 10, DIR_WEST
+	turnvobject 12, DIR_WEST
+	turnvobject 14, DIR_WEST
+	turnvobject 16, DIR_WEST
+	turnvobject 18, DIR_WEST
+	turnvobject 20, DIR_EAST
+	turnvobject 22, DIR_EAST
+	turnvobject 24, DIR_EAST
+	turnvobject 26, DIR_EAST
+	turnvobject 28, DIR_EAST
+	turnvobject 30, DIR_EAST
+	delay 20
+	turnvobject 0, DIR_SOUTH
+	turnvobject 2, DIR_SOUTH
+	turnvobject 4, DIR_SOUTH
+	turnvobject 6, DIR_SOUTH
+	turnvobject 8, DIR_SOUTH
+	turnvobject 10, DIR_SOUTH
+	turnvobject 12, DIR_SOUTH
+	turnvobject 14, DIR_SOUTH
+	turnvobject 16, DIR_SOUTH
+	turnvobject 18, DIR_SOUTH
+	turnvobject 20, DIR_SOUTH
+	turnvobject 22, DIR_SOUTH
+	turnvobject 24, DIR_SOUTH
+	turnvobject 26, DIR_SOUTH
+	turnvobject 28, DIR_SOUTH
+	turnvobject 30, DIR_SOUTH
+	delay 20
+	turnvobject 1, DIR_EAST
+	turnvobject 3, DIR_EAST
+	turnvobject 5, DIR_EAST
+	turnvobject 7, DIR_EAST
+	turnvobject 9, DIR_EAST
+	turnvobject 11, DIR_WEST
+	turnvobject 13, DIR_WEST
+	turnvobject 15, DIR_WEST
+	turnvobject 17, DIR_WEST
+	turnvobject 19, DIR_WEST
+	turnvobject 21, DIR_EAST
+	turnvobject 23, DIR_EAST
+	turnvobject 25, DIR_EAST
+	turnvobject 27, DIR_WEST
+	turnvobject 31, DIR_WEST
+	delay 20
+	turnvobject 1, DIR_SOUTH
+	turnvobject 3, DIR_SOUTH
+	turnvobject 5, DIR_SOUTH
+	turnvobject 7, DIR_SOUTH
+	turnvobject 9, DIR_SOUTH
+	turnvobject 11, DIR_SOUTH
+	turnvobject 13, DIR_SOUTH
+	turnvobject 15, DIR_SOUTH
+	turnvobject 17, DIR_SOUTH
+	turnvobject 19, DIR_SOUTH
+	turnvobject 21, DIR_SOUTH
+	turnvobject 23, DIR_SOUTH
+	turnvobject 25, DIR_SOUTH
+	turnvobject 27, DIR_SOUTH
+	turnvobject 31, DIR_SOUTH
+	delay 20
+	return
+
+NewTrainerHill_EventScript_WarpToLobby::
+	copyvar VAR_RESULT, VAR_FRONTIER_BATTLE_MODE
+	warp MAP_BATTLE_FRONTIER_BATTLE_DOME_LOBBY, 5, 11
+	waitstate
+	end
+
+@ On round 1 there's a 50% chance that a specific audience member will walk to his seat
+NewTrainerHill_EventScript_SetWalkingAudienceMemberPos::
+	random 2
+	copyvar VAR_TEMP_D, VAR_RESULT
+	goto_if_eq VAR_TEMP_D, 0, Common_EventScript_NopReturn
+	setobjectxyperm LOCALID_HILL_AUDIENCE_WALKING, 2, 0
+	setobjectmovementtype LOCALID_HILL_AUDIENCE_WALKING, MOVEMENT_TYPE_FACE_RIGHT
+	return
+
+NewTrainerHill_EventScript_TryDoAudienceMemberWalkToSeat::
+	goto_if_eq VAR_TEMP_D, 0, Common_EventScript_NopReturn
+	applymovement LOCALID_HILL_AUDIENCE_WALKING, NewTrainerHill_Movement_AudienceMemberWalkToSeat
+	return
+
+NewTrainerHill_Movement_AudienceTwinJump:
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_8
+	disable_jump_landing_ground_effect
+	jump_in_place_down
+	delay_4
+	jump_in_place_down
+	enable_jump_landing_ground_effect
+	step_end
+
+NewTrainerHill_Movement_AudienceMemberWalkToSeat:
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_in_place_faster_down
+	step_end
+
+NewTrainerHill_Movement_RefereeEnter:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+NewTrainerHill_Movement_AnnouncerFaceLeft:
+	walk_in_place_faster_left
+	step_end
+
+NewTrainerHill_Movement_RefereeExit:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+`
+
+script NewTrainerHill_EventScript_SetupAudienceCount {
+	if (flag(FLAG_IS_CHAMPION)) {
+		setvar( VAR_TEMP_F, DOME_FINAL)
+	}
+	elif (flag(FLAG_BADGE06_GET)) {
+		setvar( VAR_TEMP_F, DOME_SEMIFINAL)
+	}
+	elif (flag(FLAG_BADGE03_GET)) {
+		setvar( VAR_TEMP_F, DOME_ROUND2)
+	}
+	else {
+		setvar( VAR_TEMP_F, DOME_ROUND1)
+	}
+	return
+}
+
+script NewTrainerHill_EventScript_AnnouncePlayer {
+	switch (var(VAR_TEMP_F)) {
+		case DOME_ROUND1:
+			msgbox("Presenting a local trainer from Littleroot Town: {PLAYER}!", MSGBOX_DEFAULT)
+		case DOME_ROUND2:
+			msgbox("Presenting a rising talent who has been collecting Gym Badges: {PLAYER}!", MSGBOX_DEFAULT)
+		case DOME_SEMIFINAL:
+			msgbox("Presenting a fierce competitor on his way to Ever Grande City: {PLAYER}!", MSGBOX_DEFAULT)
+		case DOME_FINAL:
+			msgbox("Presenting {PLAYER}, a Hoenn League Champion!", MSGBOX_DEFAULT)
+	}
+	return
+}
+
+script NewTrainerHill_EventScript_SetOpponent {
+	switch (var(VAR_TRAINER_HILL_STATE)) {
+		case 1:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_YOUNGSTER)
+		case 2:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_BEAUTY)
+		case 3:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SCIENTIST_1)
+		case 4:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_EXPERT_F)
+	}
+	return
+}
+
+script NewTrainerHill_EventScript_AnnounceOpponent {
+	switch (var(VAR_TRAINER_HILL_STATE)) {
+		case 1:
+			msgbox(format("{PLAYER} will be facing Charlie, a Youngster from Dewford Town!"), MSGBOX_NPC)
+		case 2:
+			msgbox(format("{PLAYER} will be facing Lily, a Beauty from Slateport City!"), MSGBOX_NPC)
+		case 3:
+			msgbox(format("{PLAYER} will be facing Max, a Scientist from Mauville City!"), MSGBOX_NPC)
+		case 4:
+			msgbox(format("{PLAYER} will be facing Flora, an Expert from Lilycove City!"), MSGBOX_NPC)
+	}
+	return
+}
+
+script NewTrainerHill_EventScript_StartBattle {
+	switch (var(VAR_TRAINER_HILL_STATE)) {
+		case 1:
+			trainerbattle_no_intro(TRAINER_HILL_1, LilycoveCity_Text_BrendanDefeat)
+		case 2:
+			trainerbattle_no_intro(TRAINER_HILL_2, LilycoveCity_Text_BrendanDefeat)
+		case 3:
+			trainerbattle_no_intro(TRAINER_HILL_3, LilycoveCity_Text_BrendanDefeat)
+		case 4:
+			trainerbattle_no_intro(TRAINER_HILL_4, LilycoveCity_Text_BrendanDefeat)
+	}
+	return
+}
+
+script NewTrainerHill_EventScript_NewBattleSequence {
+	call(NewTrainerHill_EventScript_AnnounceOpponent)
+	closemessage
+	applymovement(LOCALID_DOME_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward)
+	applymovement(LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_OpponentStepForward)
+	applymovement(LOCALID_PLAYER, Common_Movement_WalkDownOneStep)
+	waitmovement(0)
+	delay(60)
+	call(NewTrainerHill_EventScript_StartBattle)
+	addvar(VAR_TRAINER_HILL_STATE, 1)
+	warp(MAP_TRAINER_HILL_ENTRANCE, 5, 11)
+	return
+}

@@ -221,7 +221,7 @@ Route124_EventScript_BlockSootopolis::
 
 Route124_EventScript_BlockSootopolis_Text_0:
 # 110 "data/maps/Route124/scripts.pory"
-	.string "I want to visit Sootopolis City, but the\n"
-	.string "currents in this area are a bit much for\l"
-	.string "me.\p"
+	.string "I want to visit Sootopolis City, but\n"
+	.string "swimming around these rocks is\l"
+	.string "difficult.\p"
 	.string "Maybe I should go around...?$"

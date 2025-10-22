@@ -103,14 +103,14 @@
       "x": 9,
       "y": 1,
       "elevation": 3,
-      "dest_map": "MAP_TRAINER_HILL_1F",
+      "dest_map": "MAP_NEW_TRAINER_HILL",
       "dest_warp_id": "0"
     }
   ],
   "coord_events": [
     {
       "type": "trigger",
-      "x": 9,
+      "x": 10,
       "y": 6,
       "elevation": 3,
       "var": "VAR_TRAINER_HILL_IS_ACTIVE",
