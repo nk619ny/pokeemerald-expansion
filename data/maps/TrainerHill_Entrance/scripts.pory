@@ -522,7 +522,7 @@ script TrainerHill_EventScript_ScottIntro {
 }
 
 movement TrainerHill_Entrance_Movement_PlayerExitArena {
-	walk_down * 5
+	walk_down * 4
 	face_right
 }
 
