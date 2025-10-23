@@ -1305,7 +1305,7 @@ NewTrainerHill_EventScript_VictorySequence::
 # 646 "data/maps/NewTrainerHill/scripts.pory"
 	addvar VAR_TRAINER_HILL_STATE, 100
 # 647 "data/maps/NewTrainerHill/scripts.pory"
-	warp MAP_TRAINER_HILL_ENTRANCE, 9, 2
+	warp MAP_TRAINER_HILL_ENTRANCE, 9, 1
 	return
 
 

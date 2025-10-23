@@ -214,13 +214,14 @@ TrainerHill_Entrance_Movement_PlayerExitElevator:
 	walk_down
 	step_end
 
-TrainerHill_Entrance_EventScript_Records::
-	lockall
-	fadescreenswapbuffers FADE_TO_BLACK
-	special ShowTrainerHillRecords
-	waitstate
-	releaseall
-	end
+//TrainerHill_Entrance_EventScript_Records::
+	//lock
+	//msgbox TrainerHill_Entrance_Text_TrainerHill, MSGBOX_DEFAULT
+	//fadescreenswapbuffers FADE_TO_BLACK
+	//special ShowTrainerHillRecords
+	//waitstate
+	//releaseall
+	//end
 
 TrainerHill_Entrance_EventScript_Man::
 	goto_if_unset FLAG_SYS_GAME_CLEAR, TrainerHill_Entrance_EventScript_ManTrainerHillClosed
@@ -526,6 +527,10 @@ movement TrainerHill_Entrance_Movement_PlayerExitArena {
 	face_right
 }
 
+movement TrainerHill_Entrance_Movement_ScottDepart {
+	walk_up * 8
+}
+
 script NewTrainerHill_EventScript_ReceiveReward {
 	lockall
 	setvar(TempVar_JustBattled,TRUE)
@@ -657,10 +662,60 @@ movement TrainerHill_Entrance_Movement_WalkToArena {
 script TrainerHill_Entrance_EventScript_NewPostBattleCheck {
 	lockall
 	setvar(VAR_TEMP_6, 1)
+	goto_if_unset(FLAG_RECEIVED_COIN_CASE, TrainerHill_Entrance_EventScript_ScottIntro)
 	if(var(VAR_TRAINER_HILL_STATE) > 100) {
 		addvar(VAR_TRAINER_HILL_STATE, -100)
 		goto(NewTrainerHill_EventScript_ReceiveReward)
 	}
 	releaseall
 	return
+}
+
+script TrainerHill_Entrance_EventScript_Records {
+	lock
+	//msgbox(format("This board has an advertisement for Trainer Hill.\pRead it?"), MSGBOX_YESNO)
+	//if(var(VAR_RESULT) == YES) {
+	msgbox(format("Trainer Hill is a new project, designed by Scott, to make Pokémon battles more exciting and engaging for both trainers and spectators alike.\pElite Trainers from all over Hoenn, and beyond, can come here to test their mettle against each other.\pTrainer Hill also provides the people of Hoenn an opportunity to watch these battles up close, and cheer on their favorites!\pTrainer Hill is just the first of many institutions under development, as part of the Battle Frontier project."), MSGBOX_DEFAULT)
+	//}
+	closemessage
+	releaseall
+	end
+}
+
+script TrainerHill_Entrance_EventScript_ScottIntro {
+	lock
+	applymovement(LOCALID_TRAINERHILL_SCOTT, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	msgbox(TrainerHill_Text_ScottIntro, MSGBOX_NPC)
+	waitmessage
+	msgbox(TrainerHill_Text_ScottAreYouInterested, MSGBOX_YESNO)
+	waitmessage
+	if(var(VAR_RESULT)==YES){
+		msgbox(TrainerHill_Text_ScottAgree1st, MSGBOX_DEFAULT)
+		waitmessage
+	}
+	else{
+		msgbox(TrainerHill_Text_ScottAreYouSure, MSGBOX_YESNO)
+		waitmessage
+		if(var(VAR_RESULT)==YES){
+			msgbox(TrainerHill_Text_ScottAgree2nd, MSGBOX_DEFAULT)
+			waitmessage
+		}
+		else{
+			msgbox(TrainerHill_Text_ScottDecline, MSGBOX_DEFAULT)
+			waitmessage
+			closemessage
+		}
+	}
+	giveitem(ITEM_COIN_CASE)
+	waitfanfare
+	closemessage
+	setflag(FLAG_RECEIVED_COIN_CASE)
+	msgbox(TrainerHill_Text_ScottDepart, MSGBOX_DEFAULT)
+	waitmessage
+	closemessage
+	applymovement(LOCALID_TRAINERHILL_SCOTT, TrainerHill_Entrance_Movement_ScottDepart)
+	waitmovement(0)
+	removeobject(LOCALID_TRAINERHILL_SCOTT)
+	releaseall
 }
