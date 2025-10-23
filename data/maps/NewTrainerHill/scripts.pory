@@ -22,7 +22,7 @@ NewTrainerHill_OnTransition:
 	//frontier_get FRONTIER_DATA_BATTLE_NUM
 	call NewTrainerHill_EventScript_SetupAudienceCount
 	//copyvar VAR_TEMP_F, VAR_RESULT
-	call_if_eq VAR_RESULT, DOME_ROUND1, NewTrainerHill_EventScript_SetWalkingAudienceMemberPos
+	call_if_eq VAR_TEMP_F, DOME_ROUND1, NewTrainerHill_EventScript_SetWalkingAudienceMemberPos
 	call NewTrainerHill_EventScript_SetPlayerGfx
 	end
 
@@ -47,6 +47,7 @@ NewTrainerHill_OnFrame:
 NewTrainerHill_EventScript_EnterRoom::
 	lockall
 	//call NewTrainerHill_EventScript_GetRoundNum
+	setvar VAR_TEMP_0, TRUE
 	call_if_eq VAR_TEMP_F, DOME_ROUND1, NewTrainerHill_EventScript_TryDoAudienceMemberWalkToSeat
 	applymovement LOCALID_HILL_ANNOUNCER, Common_Movement_WalkInPlaceDown
 	waitmovement 0
@@ -537,6 +538,7 @@ NewTrainerHill_Movement_RefereeExit:
 	step_end
 `
 
+
 script NewTrainerHill_EventScript_SetupAudienceCount {
 	if (flag(FLAG_IS_CHAMPION)) {
 		setvar( VAR_TEMP_F, DOME_FINAL)
@@ -554,15 +556,23 @@ script NewTrainerHill_EventScript_SetupAudienceCount {
 }
 
 script NewTrainerHill_EventScript_AnnouncePlayer {
-	switch (var(VAR_TEMP_F)) {
-		case DOME_ROUND1:
-			msgbox("Presenting a local trainer from Littleroot Town: {PLAYER}!", MSGBOX_DEFAULT)
-		case DOME_ROUND2:
-			msgbox("Presenting a rising talent who has been collecting Gym Badges: {PLAYER}!", MSGBOX_DEFAULT)
-		case DOME_SEMIFINAL:
-			msgbox("Presenting a fierce competitor on his way to Ever Grande City: {PLAYER}!", MSGBOX_DEFAULT)
-		case DOME_FINAL:
-			msgbox("Presenting {PLAYER}, a Hoenn League Champion!", MSGBOX_DEFAULT)
+	switch (var(VAR_TRAINER_HILL_STATE)) {
+		case 1:
+			msgbox(format("Presenting a local trainer from Littleroot Town: {PLAYER}!"), MSGBOX_DEFAULT)
+		case 2:
+			msgbox(format("Fresh off a win against local Gym Leader Wattson, it's {PLAYER}!"), MSGBOX_DEFAULT)
+		case 3:
+		case 4:
+			msgbox(format("Presenting a rising talent who has been collecting Gym Badges: {PLAYER}!"), MSGBOX_DEFAULT)
+		case 5:
+		case 6:
+			msgbox(format("Stopping at Trainer Hill on their way to Eastern Hoenn and the final Gym Badges, here's {PLAYER}!"), MSGBOX_DEFAULT)
+		case 7:
+			msgbox(format("A skilled trainer who's collected almost all of the Hoenn Gym Badges, we have {PLAYER}!"), MSGBOX_DEFAULT)
+		case 8:
+			msgbox(format("We are honored to present a hero of Hoenn, {PLAYER}!"), MSGBOX_DEFAULT)
+		default:
+			msgbox("On this side we have {PLAYER}, a Hoenn League Champion!", MSGBOX_DEFAULT)
 	}
 	return
 }
@@ -618,7 +628,23 @@ script NewTrainerHill_EventScript_NewBattleSequence {
 	waitmovement(0)
 	delay(60)
 	call(NewTrainerHill_EventScript_StartBattle)
-	addvar(VAR_TRAINER_HILL_STATE, 1)
-	warp(MAP_TRAINER_HILL_ENTRANCE, 5, 11)
+	//addvar(VAR_TRAINER_HILL_STATE, 1)
+	//warp(MAP_TRAINER_HILL_ENTRANCE, 5, 11)
+	goto(NewTrainerHill_EventScript_VictorySequence)
+	return
+}
+
+script NewTrainerHill_EventScript_VictorySequence {
+	applymovement(LOCALID_HILL_ANNOUNCER, Common_Movement_WalkInPlaceDown)
+	waitmovement(0)
+	msgbox(format("And our winner is, {PLAYER}! Congratulations!"), MSGBOX_DEFAULT)
+	playse(SE_M_ENCORE2)
+	waitfanfare
+	msgbox(format("I hope you all enjoyed this exciting battle at Trainer Hill. Come back soon to see more new trainers, and find out if {PLAYER} can win again!"), MSGBOX_DEFAULT)
+	waitmessage
+	delay(60)
+	addvar(VAR_TRAINER_HILL_STATE, 100)
+	warp(MAP_TRAINER_HILL_ENTRANCE, 9, 1)
+	//call(NewTrainerHill_EventScript_ReceiveReward)
 	return
 }

@@ -18,7 +18,7 @@ TrainerHill_Entrance_OnWarp:
 
 TrainerHill_Entrance_OnResume:
 	trainerhill_resumetimer
-	setvar VAR_TEMP_0, 0
+	setvar VAR_TEMP_8, 0
 	trainerhill_getusingereader
 	goto_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_TryFaceAttendant  @ VAR_RESULT always FALSE here
 	setobjectxy OBJ_EVENT_ID_PLAYER, 9, 6
@@ -50,7 +50,8 @@ TrainerHill_Entrance_EventScript_OpenCounterDoor::
 	return
 
 TrainerHill_Entrance_OnFrame:
-	map_script_2 VAR_TEMP_0, 0, TrainerHill_Entrance_EventScript_ExitChallenge
+	map_script_2 VAR_TEMP_6, 0, TrainerHill_Entrance_EventScript_NewPostBattleCheck
+	map_script_2 VAR_TEMP_8, 0, TrainerHill_Entrance_EventScript_ExitChallenge
 	map_script_2 VAR_TEMP_D, 17, TrainerHill_Entrance_EventScript_ExitElevator
 	map_script_2 VAR_TEMP_5, 1, TrainerHill_Entrance_EventScript_EntryTrigger
 	map_script_2 VAR_TEMP_1, 1, TrainerHill_EventScript_WarpToEntranceCounter
@@ -69,7 +70,7 @@ TrainerHill_Entrance_EventScript_ExitElevator::
 	end
 
 TrainerHill_Entrance_EventScript_ExitChallenge::
-	setvar VAR_TEMP_0, 1
+	setvar VAR_TEMP_8, 1
 	trainerhill_getstatus
 	switch VAR_RESULT
 	case TRAINER_HILL_PLAYER_STATUS_LOST, TrainerHill_Entrance_EventScript_ExitChallengeLost
@@ -119,17 +120,17 @@ TrainerHill_Entrance_EventScript_AttendantEnd::
 	release
 	end
 
-TrainerHill_Entrance_EventScript_EntryTrigger::
-	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
-	goto_if_unset FLAG_SYS_GAME_CLEAR, TrainerHill_Entrance_EventScript_Closed
-	msgbox TrainerHill_Entrance_Text_WelcomeToTrainerHill, MSGBOX_DEFAULT
-	trainerhill_getsaved
-	call_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_SaveGame
-	trainerhill_allfloorsused
-	goto_if_eq VAR_RESULT, TRUE, TrainerHill_Entrance_EventScript_AllFloorsUsed
-	msgbox TrainerHill_Entrance_Text_TrainersUpToFloorX, MSGBOX_DEFAULT
-	goto TrainerHill_Entrance_EventScript_AskChallengeTrainers
+//TrainerHill_Entrance_EventScript_EntryTrigger::
+//	lockall
+//	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
+	//goto_if_unset FLAG_SYS_GAME_CLEAR, TrainerHill_Entrance_EventScript_Closed
+//	msgbox TrainerHill_Entrance_Text_WelcomeToTrainerHill, MSGBOX_DEFAULT
+//	trainerhill_getsaved
+//	call_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_SaveGame
+//	trainerhill_allfloorsused
+//	goto_if_eq VAR_RESULT, TRUE, TrainerHill_Entrance_EventScript_AllFloorsUsed
+//	msgbox TrainerHill_Entrance_Text_TrainersUpToFloorX, MSGBOX_DEFAULT
+//	goto TrainerHill_Entrance_EventScript_AskChallengeTrainers
 
 TrainerHill_Entrance_EventScript_AllFloorsUsed::
 	msgbox TrainerHill_Entrance_Text_TrainersInEveryRoom, MSGBOX_DEFAULT
@@ -312,7 +313,7 @@ TrainerHill_Entrance_Text_SaveGameBeforeEnter:
 TrainerHill_Entrance_Text_TrainersUpToFloorX:
 	.string "Let's see…\n"
 	.string "The TRAINERS here now are…\p"
-	.string "Up to floor no. {STR_VAR_1}.$"
+	.string "Up to floor no. STR_VAR_1.$"
 
 TrainerHill_Entrance_Text_TrainersInEveryRoom:
 	.string "Let's see…\n"
@@ -424,7 +425,7 @@ TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner:
 	.string "with whom I may form a tag team!$"
 
 TrainerHill_Entrance_Text_ChallengeTime:
-	.string "{STR_VAR_1} min. {STR_VAR_2}.{STR_VAR_3} sec.$"
+	.string "STR_VAR_1 min. {STR_VAR_2}.{STR_VAR_3} sec.$"
 
 TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead:
 	.string "Who knows what sort of TRAINERS\n"
@@ -455,6 +456,8 @@ TrainerHill_Elevator_Text_ReturnToReception:
 	.string "the reception counter?$"
 `
 
+const TempVar_RewardCoins = VAR_TEMP_8
+const TempVar_JustBattled = VAR_TEMP_9
 
 text TrainerHill_Text_ScottIntro {
 	format("Scott: Ah, {PLAYER}!\nYou've stumbled onto something exciting.\pThis is Trainer Hill, a new facility I'm launching for exhibition battles between trainers.\pIt's a way for Trainers to hone their skills, and residents of nearby Cities to see talented or aspiring Trainers.")
@@ -516,4 +519,148 @@ script TrainerHill_EventScript_ScottIntro {
 	closemessage
 	releaseall
 	end
+}
+
+movement TrainerHill_Entrance_Movement_PlayerExitArena {
+	walk_down * 5
+	face_right
+}
+
+script NewTrainerHill_EventScript_ReceiveReward {
+	lockall
+	setvar(TempVar_JustBattled,TRUE)
+	applymovement(OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerExitArena)
+	waitmovement(0)
+	//applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	//waitmovement(0)
+	call(NewTrainerHill_EventScript_GetNumCoins)
+	msgbox(format("Congratulations on your win! As promised, here are some Game Corner Coins as a reward for your performance."), MSGBOX_DEFAULT)
+	addcoins(TempVar_RewardCoins)
+	msgbox(format("Received {STR_VAR_1} Coins!"), MSGBOX_DEFAULT)
+	playfanfare(MUS_OBTAIN_ITEM)
+	waitfanfare
+	closemessage
+	addvar(VAR_TRAINER_HILL_STATE, 1)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep)
+	waitmovement(0)
+	releaseall
+	end
+}
+
+script NewTrainerHill_EventScript_GetNumCoins {
+	switch(var(VAR_TRAINER_HILL_STATE))	 {
+		case 1:
+			setvar(TempVar_RewardCoins, 50)
+			bufferstring(STR_VAR_1,"50")
+		case 2:
+			setvar(TempVar_RewardCoins, 100)
+			bufferstring(STR_VAR_1,"100")
+		case 3:
+			setvar(TempVar_RewardCoins, 150)
+			bufferstring(STR_VAR_1,"150")
+		case 4:
+			setvar(TempVar_RewardCoins, 200)
+			bufferstring(STR_VAR_1,"200")
+		case 5:
+			setvar(TempVar_RewardCoins, 250)
+			bufferstring(STR_VAR_1,"250")
+		case 6:
+			setvar(TempVar_RewardCoins, 300)
+			bufferstring(STR_VAR_1,"300")
+		case 7:
+			setvar(TempVar_RewardCoins, 350)
+			bufferstring(STR_VAR_1,"350")
+		case 8:
+			setvar(TempVar_RewardCoins, 400)
+			bufferstring(STR_VAR_1,"400")
+		case 9:
+			setvar(TempVar_RewardCoins, 450)
+			bufferstring(STR_VAR_1,"450")
+		case 10:
+			setvar(TempVar_RewardCoins, 500)
+			bufferstring(STR_VAR_1,"500")
+		case 11:
+			setvar(TempVar_RewardCoins, 550)
+			bufferstring(STR_VAR_1,"550")
+		case 12:
+			setvar(TempVar_RewardCoins, 600)
+			bufferstring(STR_VAR_1,"600")
+		case 13:
+			setvar(TempVar_RewardCoins, 650)
+			bufferstring(STR_VAR_1,"650")
+		case 14:
+			setvar(TempVar_RewardCoins, 700)
+			bufferstring(STR_VAR_1,"700")
+		case 15:
+			setvar(TempVar_RewardCoins, 750)
+			bufferstring(STR_VAR_1,"750")
+		case 16:
+			setvar(TempVar_RewardCoins, 800)
+			bufferstring(STR_VAR_1,"800")
+		case 17:
+			setvar(TempVar_RewardCoins, 850)
+			bufferstring(STR_VAR_1,"850")
+		case 18:
+			setvar(TempVar_RewardCoins, 900)
+			bufferstring(STR_VAR_1,"900")
+		default:
+			setvar(TempVar_RewardCoins, 1000)
+			bufferstring(STR_VAR_1,"1000")
+	}
+}
+
+
+script TrainerHill_Entrance_EventScript_EntryTrigger {
+	lockall
+	applymovement(OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant)
+	goto_if_eq(VAR_TRAINER_HILL_STATE, 0, TrainerHill_Entrance_EventScript_ComeBackLater)
+	msgbox(format("Welcome to Trainer Hill! We have prepared a Pokémon battle exhibition with an audience, and Scott is offering a reward to the winner.\pAre you interested in competing?"), MSGBOX_YESNO)
+	goto_if_eq(VAR_RESULT, YES, TrainerHill_Entrance_EventScript_BeginChallenge)
+	msgbox(format("I see. Please feel free to come back if you change your mind."), MSGBOX_DEFAULT)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter)
+	waitmovement(0)
+	releaseall
+	end
+}
+
+script TrainerHill_Entrance_EventScript_ComeBackLater {
+	lockall
+	if(var(TempVar_JustBattled) == TRUE) {
+		msgbox(format("It will take some time for us to arrange another challenger for you. Please come back later."), MSGBOX_DEFAULT)
+	}
+	else {
+		msgbox(format("I'm sorry, but we are still working on arranging another battle here at Trainer Hill. Please check back later."), MSGBOX_DEFAULT)
+	}
+	closemessage
+	applymovement(OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter)
+	waitmovement(0)
+	releaseall
+	end
+}
+
+script TrainerHill_Entrance_EventScript_BeginChallenge {
+	lock
+	msgbox(format("Wonderful.\pPlease proceed to the arena, and good luck!"), MSGBOX_DEFAULT)
+	closemessage
+	applymovement(OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_WalkToArena)
+	waitmovement(0)
+	warp(MAP_NEW_TRAINER_HILL, 9, 5)
+	releaseall
+	return
+}
+
+movement TrainerHill_Entrance_Movement_WalkToArena {
+	walk_up * 5
+}
+
+script TrainerHill_Entrance_EventScript_NewPostBattleCheck {
+	lockall
+	setvar(VAR_TEMP_6, 1)
+	if(var(VAR_TRAINER_HILL_STATE) > 100) {
+		addvar(VAR_TRAINER_HILL_STATE, -100)
+		goto(NewTrainerHill_EventScript_ReceiveReward)
+	}
+	releaseall
+	return
 }
