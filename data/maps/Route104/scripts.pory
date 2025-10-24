@@ -995,7 +995,7 @@ Route104_EventScript_Mia::
 	end
 
 Route104_EventScript_Darian::
-	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat, Route104_EventScript_TryDarianGiftAfterBattle
+	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -1269,6 +1269,6 @@ script Route104_EventScript_TryDarianGiftAfterBattle {
 	}
 }
 
-text Route104_Text_DarianPostBattle {
+text Route104_Text_NewFishermanPostBattle {
 	format("Sometimes objects get caught in my fishing line.\pUsually it's junk, so I just throw them away.")
 }

@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_VERDANTURF_TOWN",
-      "offset": 3,
+      "offset": 4,
       "direction": "left"
     },
     {
@@ -197,8 +197,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 16,
-      "y": 21,
+      "x": 23,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -230,7 +230,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
+      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_117_REVIVE"
     },
@@ -262,14 +262,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 43,
+      "x": 44,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "Route117_EventScript_Meg",
       "flag": "0"
     },
@@ -282,7 +282,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "Route117_EventScript_Anna",
       "flag": "0"
     },
@@ -405,8 +405,16 @@
       "x": 3,
       "y": 21,
       "elevation": 3,
-      "item": "ITEM_REPEL",
+      "item": "ITEM_CARBOS",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_117_REPEL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 43,
+      "y": 9,
+      "elevation": 3,
+      "item": "ITEM_ZINC",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_BLACK_GLASSES"
     }
   ]
 }

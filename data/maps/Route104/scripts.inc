@@ -1993,7 +1993,7 @@ Route104_EventScript_Mia::
 # 997 "data/maps/Route104/scripts.pory"
 Route104_EventScript_Darian::
 # 998 "data/maps/Route104/scripts.pory"
-	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat, Route104_EventScript_TryDarianGiftAfterBattle
+	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
 # 999 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 # 1000 "data/maps/Route104/scripts.pory"
@@ -2653,7 +2653,7 @@ Route104_EventScript_TryDarianGiftAfterBattle_Text_1:
 	.string "Mine don't seem interested, so you can\n"
 	.string "have it.$"
 
-Route104_Text_DarianPostBattle::
+Route104_Text_NewFishermanPostBattle::
 # 1272 "data/maps/Route104/scripts.pory"
 	.string "Sometimes objects get caught in my\n"
 	.string "fishing line.\p"

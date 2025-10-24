@@ -423,11 +423,9 @@ Route104_Text_DarianIntro:
 Route104_Text_DarianDefeat:
 	.string "What the…$"
 
-/*
 Route104_Text_DarianPostBattle:
 	.string "Hey, MAGIKARP, you sure don't live up\n"
 	.string "to your name, do you?$"
-*/
 
 Route105_Text_FosterIntro:
 	.string "There's supposed to be a mystical\n"
@@ -1095,7 +1093,7 @@ Route110_Text_JasminePostBattle:
 	.string "No wonder you're so strong!$"
 
 Route110_Text_EdwardIntro:
-	.string "I have foreseen your intentions!\n"
+	.string "I have foreseen your approach!\n"
 	.string "I cannot possibly lose!$"
 
 Route110_Text_EdwardDefeated:

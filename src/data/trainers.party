@@ -1673,7 +1673,7 @@ Roselia
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROSE_1 === /* Route */
+=== TRAINER_ROSE_1 === /* Route 118 */ /* Before Surf */
 Name: ROSE
 Class: Aroma Lady
 Pic: Aroma Lady
@@ -1682,17 +1682,46 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Roselia  
+Level: 35
+Ability: Poison Point  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Leech Seed  
+- Venoshock  
+- Giga Drain  
+- Shadow Ball  
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dipplin  
+Level: 35
+Ability: Supersweet Syrup  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Syrup Bomb  
+- Dragon Pulse  
+- Pollen Puff  
+- Recover  
 
-Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dolliv @ Sitrus Berry  
+Level: 35
+Ability: Harvest  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Strength Sap  
+- Magical Leaf  
+- Earth Power  
+- Protect  
+
+Fidough  @ Power Herb
+Level: 35
+Ability: Own Tempo  
+Tera Type: Fairy  
+- Dig  
+- Trailblaze  
+- Sweet Scent  
+- Play Rough  
+
+
 
 === TRAINER_FELIX === /* Route */
 Name: FELIX
@@ -1714,7 +1743,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Skill Swap
 - Earthquake
 
-=== TRAINER_VIOLET === /* Route */
+=== TRAINER_VIOLET === /* Route 123 */
 Name: VIOLET
 Class: Aroma Lady
 Pic: Aroma Lady
@@ -1723,13 +1752,44 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Roselia
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sunflora @ Heat Rock 
+Level: 55
+Ability: Drought  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Weather Ball  
+- Solar Beam  
+- Morning Sun  
+- Sunny Day  
 
-Gloom
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cherrim
+Level: 55
+Ability: Flower Gift  
+Tera Type: Grass  
+- Morning Sun  
+- Solar Blade  
+- Pollen Puff  
+- Play Rough  
+
+Comfey  @ Light Clay
+Level: 55
+Ability: Flower Veil  
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Draining Kiss  
+- Energy Ball  
+- Floral Healing  
+- Light Screen  
+
+Meganium @ Lum Berry  
+Level: 55
+Ability: Flower Veil    
+Tera Type: Grass  
+- Petal Blizzard  
+- Aromatherapy  
+- Petal Dance  
+- Body Press  
+
 
 === TRAINER_AQUA_ADMIN_FARM === /* Route */
 Name: SHELLY
@@ -3909,7 +3969,7 @@ Grumpig
 Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CINDY_1 === /* Route 104 */
+=== TRAINER_CINDY_1 === /* Route 104 */ 
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -3918,9 +3978,34 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Meowth  
+Level: 10
+Ability: Pickup  
+Tera Type: Normal  
+IVs: 0 Atk  
+- Make It Rain  
+- Power Gem  
+- Shadow Ball  
+- Agility  
+
+Glameow  
+Level: 10
+Ability: Keen Eye  
+Tera Type: Normal  
+- Covet  
+- Hyper Voice  
+- Taunt  
+- Foul Play  
+
+Ponyta-Galar  
+Level: 10
+Ability: Pastel Veil  
+Tera Type: Psychic  
+- Play Rough  
+- Zen Headbutt  
+- Charm  
+- Bounce  
+
 
 === TRAINER_DAPHNE === /* Sootopolis Gym */
 Name: DAPHNE
@@ -4053,7 +4138,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_NAOMI === /* Route */
+=== TRAINER_NAOMI === /* SS TIdal */
 Name: NAOMI
 Class: Lady
 Pic: Lady
@@ -4122,7 +4207,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Odor Sleuth
 - Sand Attack
 
-=== TRAINER_MELISSA === /* Route */
+=== TRAINER_MELISSA === /* Mt Chimney */ /* What to do with these optionals? */
 Name: MELISSA
 Class: Beauty
 Pic: Beauty
@@ -4131,9 +4216,47 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Flaaffy  
+Level: 40
+Ability: Illuminate  
+Tera Type: Electric  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Power Gem  
+- Signal Beam  
+- Shock Wave  
+
+Kirlia  
+Level: 40
+Ability: Synchronize  
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Alluring Voice  
+- Hyper Voice  
+- Mean Look  
+- Psychic  
+
+
+Butterfree  
+Level: 40
+Ability: Tinted Lens  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Draining Kiss  
+- Silver Wind  
+- Attract  
+- Captivate  
+
+Bronzor  
+Level: 40
+Ability: Levitate  
+Tera Type: Steel  
+IVs: 0 Atk  
+- Mirror Shot  
+- Mirror Coat  
+- Luster Purge  
+- Power Gem  
+
 
 === TRAINER_SHEILA === /* Route */
 Name: SHEILA
@@ -5689,7 +5812,7 @@ Loudred
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DALTON_1 === /* Route */
+=== TRAINER_DALTON_1 === /* Route 118 */ /* Pre-Surf */ /* TO BE ADDED */ /* Bird Catcher? */
 Name: DALTON
 Class: Guitarist
 Pic: Guitarist
@@ -7193,7 +7316,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_MICAH === /* Route */
+=== TRAINER_MICAH === /* SS Tidal */
 Name: MICAH
 Class: Gentleman
 Pic: Gentleman
@@ -7210,7 +7333,7 @@ Manectric
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_THOMAS === /* Route */
+=== TRAINER_THOMAS === /* SS Tidal */
 Name: THOMAS
 Class: Gentleman
 Pic: Gentleman
@@ -8989,7 +9112,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Confusion
 - Detect
 
-=== TRAINER_SHELBY_1 === /* Route */
+=== TRAINER_SHELBY_1 === /* Mt chimney */ /* TO BE ADDED */
 Name: SHELBY
 Class: Expert
 Pic: Expert F
@@ -10335,7 +10458,7 @@ Magneton
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_DYLAN_1 === /* Route 117 */
+=== TRAINER_DYLAN_1 === /* Route 117 */ /* Scripted Item*/
 Name: DYLAN
 Class: Triathlete
 Pic: Running Triathlete M
@@ -13286,7 +13409,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Klawf  
-Level: 19
+Level: 17
 Ability: Anger Shell  
 Tera Type: Rock  
 - Block  
@@ -15983,7 +16106,7 @@ Roselia
 Level: 39
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-=== TRAINER_JULIO === /* Route */
+=== TRAINER_JULIO === /* Jagged Pass */
 Name: JULIO
 Class: Triathlete
 Pic: Cycling Triathlete M
@@ -16415,7 +16538,7 @@ Girafarig
 Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_NATE === /* Route */
+=== TRAINER_NATE === /* Mossdeep Gym */
 Name: NATE
 Class: Gentleman
 Pic: Gentleman
@@ -16441,7 +16564,7 @@ Kadabra
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_CLIFFORD === /* Route */
+=== TRAINER_CLIFFORD === /* Mossdeep Goomy */
 Name: CLIFFORD
 Class: Gentleman
 Pic: Gentleman
@@ -20165,7 +20288,7 @@ Poochyena
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SARAH === /* Route */
+=== TRAINER_SARAH === /* Route 116 */
 Name: SARAH
 Class: Lady
 Pic: Lady
@@ -20174,13 +20297,44 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lotad
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Delcatty  
+Level: 45
+Ability: Wonder Skin  
+Tera Type: Normal  
+- Pay Day  
+- Sing  
+- Copycat  
+- Payback  
 
-Zigzagoon @ Nugget
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Meowstic-F (F)  
+Level: 45
+Ability: Competitive  
+Tera Type: Psychic  
+- Alluring Voice  
+- Fake Out  
+- Psychic Noise  
+- Yawn  
+
+
+Furfrou-Debutante  
+Level: 45
+Ability: Fur Coat  
+Tera Type: Normal  
+- Cotton Guard  
+- Return  
+- Sucker Punch  
+- Protect  
+
+
+Absol  
+Level: 45
+Ability: Super Luck  
+Tera Type: Dark  
+- Sucker Punch  
+- Play Rough  
+- Attract  
+- Counter  
+
 
 === TRAINER_DARIAN === /* Route 104 */
 Name: DARIAN
@@ -20409,7 +20563,7 @@ Hasty Nature
 
 
 
-=== TRAINER_RHETT === /* Route */
+=== TRAINER_RHETT === /* Route 103 East */ /* TO BE ADDED */
 Name: RHETT
 Class: Black Belt
 Pic: Black Belt
@@ -25886,7 +26040,7 @@ Exploud
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_SAWYER_2 === /* Route */
+=== TRAINER_SAWYER_2 === /* Mt Chimney */ /* TO BE ADDED */
 Name: SAWYER
 Class: Hiker
 Pic: Hiker
@@ -26206,7 +26360,7 @@ Kadabra
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_EVERETT === /* Route */
+=== TRAINER_EVERETT === /* Trick House */
 Name: EVERETT
 Class: Gentleman
 Pic: Gentleman

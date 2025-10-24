@@ -389,7 +389,7 @@ Route110_EventScript_EdwinRematch::
 # 195 "data/maps/Route110/scripts.pory"
 Route110_EventScript_Dale::
 # 196 "data/maps/Route110/scripts.pory"
-	trainerbattle_single TRAINER_DALE, Route110_Text_DaleIntro, Route110_Text_DaleDefeated
+	trainerbattle_single TRAINER_DALE, Route110_Text_DaleIntro, Route110_Text_DaleDefeated, Route110_EventScript_TryDaleGiftAfterBattle
 # 197 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_DalePostBattle, MSGBOX_AUTOCLOSE
 # 198 "data/maps/Route110/scripts.pory"
@@ -2012,6 +2012,47 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "Well, I had better get going.\n"
 # 1007 "data/maps/Route110/scripts.pory"
 	.string "See you again, {PLAYER}{KUN}!$"
+
+Route110_EventScript_TryDaleGiftAfterBattle::
+# 1020 "data/maps/Route110/scripts.pory"
+	lock
+# 1021 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_BADGE03_GET, Route110_EventScript_TryDaleGiftAfterBattle_1
+# 1025 "data/maps/Route110/scripts.pory"
+	msgbox Route110_EventScript_TryDaleGiftAfterBattle_Text_1, MSGBOX_NPC
+# 1026 "data/maps/Route110/scripts.pory"
+	waitmessage
+# 1027 "data/maps/Route110/scripts.pory"
+	giveitem ITEM_HP_UP
+# 1028 "data/maps/Route110/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 1029 "data/maps/Route110/scripts.pory"
+	waitfanfare
+# 1030 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+Route110_EventScript_TryDaleGiftAfterBattle_1:
+# 1022 "data/maps/Route110/scripts.pory"
+	msgbox Route110_EventScript_TryDaleGiftAfterBattle_Text_0, MSGBOX_NPC
+	return
+
+
+Route110_EventScript_TryDaleGiftAfterBattle_Text_0:
+# 1022 "data/maps/Route110/scripts.pory"
+	.string "A little while ago, I fished up some sort\n"
+	.string "of Pokémon treat. Didn't need it,\l"
+	.string "though.\p"
+	.string "If you came a little sooner, I would've\n"
+	.string "just given it to you, but I already\l"
+	.string "threw it away.$"
+
+Route110_EventScript_TryDaleGiftAfterBattle_Text_1:
+# 1025 "data/maps/Route110/scripts.pory"
+	.string "I just fished up some kind of medicine\n"
+	.string "or treat or something, for Pokémon.\p"
+	.string "Mine don't seem interested, so you can\n"
+	.string "have it.$"
 
 Route110_Text_MayHiLetsRegister::
 # 1011 "data/maps/Route110/scripts.pory"

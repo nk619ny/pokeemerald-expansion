@@ -239,11 +239,11 @@ Route117_EventScript_RematchLydia::
 # 120 "data/maps/Route117/scripts.pory"
 Route117_EventScript_Dylan::
 # 121 "data/maps/Route117/scripts.pory"
-	trainerbattle_single TRAINER_DYLAN_1, Route117_Text_DylanIntro, Route117_Text_DylanDefeat, Route117_EventScript_RegisterDylan
+	trainerbattle_single TRAINER_DYLAN_1, Route117_Text_DylanIntro, Route117_Text_DylanDefeat, Route117_EventScript_TryDylanGiftAfterBattle
 # 122 "data/maps/Route117/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 123 "data/maps/Route117/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchDylan
+	//goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchDylan
 # 124 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_DylanPostBattle, MSGBOX_DEFAULT
 # 125 "data/maps/Route117/scripts.pory"
@@ -486,3 +486,41 @@ Route117_Text_DayCareSign:
 	.string "POKéMON DAY CARE\n"
 # 244 "data/maps/Route117/scripts.pory"
 	.string "“Let us raise your POKéMON.”$"
+
+Route117_EventScript_TryDylanGiftAfterBattle::
+# 249 "data/maps/Route117/scripts.pory"
+	lock
+# 250 "data/maps/Route117/scripts.pory"
+	goto_if_set FLAG_BADGE03_GET, Route117_EventScript_TryDylanGiftAfterBattle_1
+# 254 "data/maps/Route117/scripts.pory"
+	msgbox Route117_EventScript_TryDylanGiftAfterBattle_Text_1, MSGBOX_NPC
+# 255 "data/maps/Route117/scripts.pory"
+	waitmessage
+# 256 "data/maps/Route117/scripts.pory"
+	giveitem ITEM_CARBOS
+# 257 "data/maps/Route117/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 258 "data/maps/Route117/scripts.pory"
+	waitfanfare
+# 259 "data/maps/Route117/scripts.pory"
+	release
+	end
+
+Route117_EventScript_TryDylanGiftAfterBattle_1:
+# 251 "data/maps/Route117/scripts.pory"
+	msgbox Route117_EventScript_TryDylanGiftAfterBattle_Text_0, MSGBOX_NPC
+	return
+
+
+Route117_EventScript_TryDylanGiftAfterBattle_Text_0:
+# 251 "data/maps/Route117/scripts.pory"
+	.string "If you beat Wattson, your Pokémon must\n"
+	.string "be in peak form.\p"
+	.string "Make sure you get enough exercise for\n"
+	.string "yourself, too!$"
+
+Route117_EventScript_TryDylanGiftAfterBattle_Text_1:
+# 254 "data/maps/Route117/scripts.pory"
+	.string "It's important to train your speed!\p"
+	.string "Training Pokémon's speed is easier, you\n"
+	.string "can just give them this.$"

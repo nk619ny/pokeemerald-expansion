@@ -193,7 +193,7 @@ Route110_EventScript_EdwinRematch::
 	end
 
 Route110_EventScript_Dale::
-	trainerbattle_single TRAINER_DALE, Route110_Text_DaleIntro, Route110_Text_DaleDefeated
+	trainerbattle_single TRAINER_DALE, Route110_Text_DaleIntro, Route110_Text_DaleDefeated, Route110_EventScript_TryDaleGiftAfterBattle
 	msgbox Route110_Text_DalePostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -1014,4 +1014,20 @@ text Route110_Text_MayHiLetsRegister {
 
 text Route110_Text_BrendanHiLetsRegister {
 	format("Brendan: Let's register each other in your POKéNAV so that we can get in touch anytime!")
+}
+
+script Route110_EventScript_TryDaleGiftAfterBattle {
+	lock
+	if(flag(FLAG_BADGE03_GET)){
+		msgbox(format("A little while ago, I fished up some sort of Pokémon treat. Didn't need it, though.\pIf you came a little sooner, I would've just given it to you, but I already threw it away."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("I just fished up some kind of medicine or treat or something, for Pokémon.\pMine don't seem interested, so you can have it."), MSGBOX_NPC)
+		waitmessage
+		giveitem(ITEM_HP_UP)
+		goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+		waitfanfare
+		release
+		end
+	}
 }
