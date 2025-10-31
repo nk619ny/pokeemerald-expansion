@@ -2,56 +2,171 @@
 #define GUARD_CONSTANTS_TMS_HMS_H
 
 #define FOREACH_TM(F) \
-    F(FOCUS_PUNCH) \
-    F(DRAGON_CLAW) \
-    F(WATER_PULSE) \
-    F(CALM_MIND) \
+    F(FIRE_PUNCH) \
+    F(ICE_PUNCH) \
+    F(THUNDER_PUNCH) \
+    F(SWORDS_DANCE) \
+    F(DOUBLE_EDGE) \
     F(ROAR) \
-    F(TOXIC) \
-    F(HAIL) \
-    F(BULK_UP) \
-    F(BULLET_SEED) \
-    F(HIDDEN_POWER) \
-    F(SUNNY_DAY) \
-    F(TAUNT) \
+    F(FLAMETHROWER) \
+    F(HYDRO_PUMP) \
     F(ICE_BEAM) \
     F(BLIZZARD) \
     F(HYPER_BEAM) \
-    F(LIGHT_SCREEN) \
-    F(PROTECT) \
-    F(RAIN_DANCE) \
-    F(GIGA_DRAIN) \
-    F(SAFEGUARD) \
-    F(FRUSTRATION) \
     F(SOLAR_BEAM) \
-    F(IRON_TAIL) \
     F(THUNDERBOLT) \
+    F(THUNDER_WAVE) \
     F(THUNDER) \
     F(EARTHQUAKE) \
-    F(RETURN) \
     F(DIG) \
+    F(TOXIC) \
     F(PSYCHIC) \
-    F(SHADOW_BALL) \
-    F(BRICK_BREAK) \
-    F(DOUBLE_TEAM) \
+    F(LIGHT_SCREEN) \
+    F(HAZE) \
     F(REFLECT) \
-    F(SHOCK_WAVE) \
-    F(FLAMETHROWER) \
-    F(SLUDGE_BOMB) \
-    F(SANDSTORM) \
     F(FIRE_BLAST) \
-    F(ROCK_TOMB) \
-    F(AERIAL_ACE) \
-    F(TORMENT) \
-    F(FACADE) \
-    F(SECRET_POWER) \
+    F(SWIFT) \
+    F(AMNESIA) \
+    F(LEECH_LIFE) \
     F(REST) \
-    F(ATTRACT) \
+    F(ROCK_SLIDE) \
+    F(SUBSTITUTE) \
     F(THIEF) \
+    F(REVERSAL) \
+    F(PROTECT) \
+    F(SLUDGE_BOMB) \
+    F(ICY_WIND) \
+    F(OUTRAGE) \
+    F(GIGA_DRAIN) \
+    F(ENDURE) \
+    F(CHARM) \
+    F(FALSE_SWIPE) \
     F(STEEL_WING) \
+    F(ATTRACT) \
+    F(SLEEP_TALK) \
+    F(RETURN) \
+    F(FRUSTRATION) \
+    F(SAFEGUARD) \
+    F(BATON_PASS) \
+    F(ENCORE) \
+    F(HIDDEN_POWER) \
+    F(CRUNCH) \
+    F(SHADOW_BALL) \
+    F(HEAT_WAVE) \
+    F(WILL_O_WISP) \
+    F(FACADE) \
+    F(TAUNT) \
+    F(HELPING_HAND) \
+    F(SUPERPOWER) \
+    F(BRICK_BREAK) \
+    F(KNOCK_OFF) \
     F(SKILL_SWAP) \
-    F(SNATCH) \
-    F(OVERHEAT)
+    F(HYPER_VOICE) \
+    F(WEATHER_BALL) \
+    F(OVERHEAT) \
+    F(ROCK_TOMB) \
+    F(MUDDY_WATER) \
+    F(BULLET_SEED) \
+    F(AERIAL_ACE) \
+    F(DRAGON_CLAW) \
+    F(BULK_UP) \
+    F(CALM_MIND) \
+    F(WATER_PULSE) \
+    F(ROOST) \
+    F(TAILWIND) \
+    F(U_TURN) \
+    F(CLOSE_COMBAT) \
+    F(PAYBACK) \
+    F(FLING) \
+    F(FLARE_BLITZ) \
+    F(ROCK_POLISH) \
+    F(POISON_JAB) \
+    F(DARK_PULSE) \
+    F(SEED_BOMB) \
+    F(AIR_SLASH) \
+    F(X_SCISSOR) \
+    F(BUG_BUZZ) \
+    F(DRAGON_PULSE) \
+    F(POWER_GEM) \
+    F(DRAIN_PUNCH) \
+    F(VACUUM_WAVE) \
+    F(ENERGY_BALL) \
+    F(BRAVE_BIRD) \
+    F(EARTH_POWER) \
+    F(NASTY_PLOT) \
+    F(AVALANCHE) \
+    F(SHADOW_CLAW) \
+    F(PSYCHO_CUT) \
+    F(ZEN_HEADBUTT) \
+    F(FLASH_CANNON) \
+    F(TRICK_ROOM) \
+    F(DRACO_METEOR) \
+    F(LEAF_STORM) \
+    F(CROSS_POISON) \
+    F(GUNK_SHOT) \
+    F(IRON_HEAD) \
+    F(STONE_EDGE) \
+    F(GRASS_KNOT) \
+    F(CHARGE_BEAM) \
+    F(PSYSHOCK) \
+    F(VENOSHOCK) \
+    F(SMACK_DOWN) \
+    F(SLUDGE_WAVE) \
+    F(FLAME_CHARGE) \
+    F(LOW_SWEEP) \
+    F(ACID_SPRAY) \
+    F(FOUL_PLAY) \
+    F(SCALD) \
+    F(HEX) \
+    F(ACROBATICS) \
+    F(VOLT_SWITCH) \
+    F(STRUGGLE_BUG) \
+    F(DRAGON_TAIL) \
+    F(WILD_CHARGE) \
+    F(DRILL_RUN) \
+    F(HEAT_CRASH) \
+    F(HURRICANE) \
+    F(SNARL) \
+    F(PETAL_BLIZZARD) \
+    F(DRAINING_KISS) \
+    F(PLAY_ROUGH) \
+    F(EERIE_IMPULSE) \
+    F(DAZZLING_GLEAM) \
+    F(HIGH_HORSEPOWER) \
+    F(SOLAR_BLADE) \
+    F(THROAT_CHOP) \
+    F(LUNGE) \
+    F(SMART_STRIKE) \
+    F(PSYCHIC_FANGS) \
+    F(STOMPING_TANTRUM) \
+    F(LIQUIDATION) \
+    F(BREAKING_SWIPE) \
+    F(STEEL_BEAM) \
+    F(EXPANDING_FORCE) \
+    F(SCALE_SHOT) \
+    F(METEOR_BEAM) \
+    F(GRASSY_GLIDE) \
+    F(SKITTER_SMACK) \
+    F(BURNING_JEALOUSY) \
+    F(FLIP_TURN) \
+    F(DUAL_WINGBEAT) \
+    F(SCORCHING_SANDS) \
+    F(ICE_SPINNER) \
+    F(POUNCE) \
+    F(CHILLING_WATER) \
+    F(TEMPER_FLARE) \
+    F(SUPERCELL_SLAM) \
+    F(FOCUS_PUNCH) \
+    F(HAIL) \
+    F(SUNNY_DAY) \
+    F(RAIN_DANCE) \
+    F(IRON_TAIL) \
+    F(DOUBLE_TEAM) \
+    F(SHOCK_WAVE) \
+    F(SANDSTORM) \
+    F(TORMENT) \
+    F(SECRET_POWER) \
+    F(SNATCH)
 
 #define FOREACH_HM(F) \
     F(CUT) \
