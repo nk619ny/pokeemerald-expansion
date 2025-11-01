@@ -114,6 +114,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	delay 30
 	setflag FLAG_ENABLE_JUAN_MATCH_CALL
 	setvar VAR_LEVEL_CAP, 80
+	call Common_EventScript_RemoveOptionalItems8
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
 	release

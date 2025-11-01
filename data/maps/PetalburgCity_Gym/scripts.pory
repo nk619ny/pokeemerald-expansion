@@ -1602,6 +1602,7 @@ PetalburgCity_Gym_EventScript_Vito_PostBattle::
 	call Common_EventScript_PlayGymBadgeFanfare
 
 	setvar VAR_LEVEL_CAP, 56
+	call Common_EventScript_RemoveOptionalItems5
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
 
@@ -1749,6 +1750,7 @@ text PetalburgCity_Gym_NormanDefeatedText {
 
 script PetalburgCity_Gym_EventScript_DefeatedNorman {
 	lockall
+	call(Common_EventScript_RemoveOptionalItems0)
 	setvar(VAR_LEVEL_CAP, 24)
 	call(Common_EventScript_ApplyHandicap)
 	call(Common_EventScript_LevelCapUpdate)

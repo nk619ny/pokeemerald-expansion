@@ -147,34 +147,7 @@ script Common_EventScript_CheckIfEliteFourComplete {
 script MauvilleCity_EventScript_Temporary{
 	lock
 	setflag(FLAG_MIRAGE_ISLAND_VISIBLE)
-	giveitem(ITEM_SWAMPERTITE)
-	giveitem(ITEM_TM101)
-	giveitem(ITEM_TM102)
-	giveitem(ITEM_TM103)
-	giveitem(ITEM_TM104)
-	giveitem(ITEM_TM105)
-	giveitem(ITEM_TM106)
-	giveitem(ITEM_TM107)
-	giveitem(ITEM_TM108)
-	giveitem(ITEM_TM109)
-	giveitem(ITEM_TM110)
-	giveitem(ITEM_TM111)
-	giveitem(ITEM_TM112)
-	giveitem(ITEM_TM113)
-	giveitem(ITEM_TM114)
-	giveitem(ITEM_TM115)
-	giveitem(ITEM_TM116)
-	giveitem(ITEM_TM117)
-	giveitem(ITEM_TM118)
-	giveitem(ITEM_TM119)
-	giveitem(ITEM_TM120)
-	giveitem(ITEM_TM121)
-	giveitem(ITEM_TM122)
-	giveitem(ITEM_TM123)
-	giveitem(ITEM_TM124)
-	giveitem(ITEM_TM125)
-	
-	setvar(VAR_SCOTT_PETALBURG_ENCOUNTER,2)
+	addcoins(1800)
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
@@ -201,10 +174,6 @@ script MauvilleCity_EventScript_Temporary{
 	//msgbox("adjusted level cap is {STR_VAR_1}")
 	//waitmessage*/
 
-	fadescreenswapbuffers(FADE_TO_BLACK)
-	//clearflag(FLAG_ENABLE_WALLY_MATCH_CALL)
-    delay(40)
-	fadescreenswapbuffers(FADE_FROM_BLACK)
 	setflag(FLAG_REGI_DOORS_OPENED)
 	if(flag(FLAG_NO_TRAINER_BATTLE)){
 		clearflag(FLAG_NO_TRAINER_BATTLE)
@@ -494,6 +463,8 @@ script Common_EventScript_RemoveOptionalItems0 {
 	//setflag(FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE) //not currently trainer locked
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL) 
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION) //unplaced
+	//setflag(FLAG_ITEM_PETALBURG_WOODS_ETHER) // not set
+	//setflag(FLAG_HIDDEN_ITEM_PETALBURG_WOODS_POKE_BALL) // not set
 	setflag(FLAG_ITEM_PETALBURG_WOODS_PARALYZE_HEAL) 
 	return
 }
@@ -549,6 +520,12 @@ script Common_EventScript_RemoveOptionalItems4 {
 	//setflag(FLAG_HIDDEN_ITEM_ROUTE_115_HEART_SCALE) // not trainer locked
 	setflag(FLAG_ITEM_ROUTE_115_GREAT_BALL)
 	setflag(FLAG_ITEM_ROUTE_115_SUPER_POTION)
+	setflag(FLAG_ITEM_ROUTE_116_REPEL)
+	setflag(FLAG_ITEM_ROUTE_116_ETHER)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_116_SUPER_POTION)
+	setflag(FLAG_ITEM_ROUTE_116_POTION)
+	setflag(FLAG_ITEM_ROUTE_116_X_SPECIAL)
+	setflag(FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL)
 	return
 }
 
@@ -558,12 +535,36 @@ script Common_EventScript_RemoveOptionalItems5 {
 }
 
 script Common_EventScript_RemoveOptionalItems6 {
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_118_IRON)
+	//setflag(FLAG_ITEM_ROUTE_118_HYPER_POTION) //unplaced
+	setflag(FLAG_ITEM_ROUTE_123_ULTRA_BALL)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_123_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_119_SUPER_REPEL)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_119_FULL_HEAL)
+	setflag(FLAG_ITEM_ROUTE_119_HYPER_POTION_1)
+	//setflag(FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM) //unused
+	//setflag(FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL)//unused
+	setflag(FLAG_ITEM_ROUTE_119_HYPER_POTION_2)
+	setflag(FLAG_ITEM_ROUTE_119_ELIXIR_1)
+	setflag(FLAG_ITEM_ROUTE_119_ELIXIR_2)
+	//setflag(FLAG_HIDDEN_ITEM_ROUTE_119_MAX_ETHER) //unused
+	setflag(FLAG_ITEM_ROUTE_119_RARE_CANDY)
+	setflag(FLAG_ITEM_ROUTE_119_NUGGET)
+	setflag(FLAG_ITEM_ROUTE_118_HYPER_POTION)
+	setflag(FLAG_ITEM_ROUTE_118_HYPER_POTION)
+	setflag(FLAG_ITEM_ROUTE_118_HYPER_POTION)
+	setflag(FLAG_ITEM_ROUTE_118_HYPER_POTION)
+
+	return
+}
+
+script Common_EventScript_RemoveOptionalItemsSurfing {
 
 	return
 }
 
 script Common_EventScript_RemoveOptionalItems7 {
-
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1) // can be done before Winona
 	return
 }
 

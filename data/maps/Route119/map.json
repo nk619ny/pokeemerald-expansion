@@ -243,7 +243,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_REPEL",
+      "trainer_sight_or_berry_tree_id": "ITEM_ZINC",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_SUPER_REPEL"
     },
@@ -256,7 +256,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ZINC",
+      "trainer_sight_or_berry_tree_id": "ITEM_CARBOS",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_ZINC"
     },
@@ -269,7 +269,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ELIXIR",
+      "trainer_sight_or_berry_tree_id": "ITEM_CARBOS",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_ELIXIR_1"
     },
@@ -295,7 +295,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_RARE_CANDY",
+      "trainer_sight_or_berry_tree_id": "ITEM_CALCIUM",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_RARE_CANDY"
     },
@@ -308,7 +308,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_HYPER_POTION_1"
     },
@@ -439,7 +439,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_HYPER_POTION_2"
     },
@@ -523,14 +523,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
-      "x": 32,
-      "y": 15,
+      "x": 36,
+      "y": 5,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "5",
       "script": "Route119_EventScript_Dayton",
       "flag": "0"
     },
@@ -556,7 +556,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
+      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_NUGGET"
     },
@@ -569,7 +569,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ELIXIR",
+      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_ELIXIR_2"
     },
@@ -632,7 +632,7 @@
     },
     {
       "type": "weather",
-      "x": 15,
+      "x": 14,
       "y": 34,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
@@ -702,15 +702,8 @@
     },
     {
       "type": "weather",
-      "x": 22,
-      "y": 33,
-      "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_SUNNY"
-    },
-    {
-      "type": "weather",
       "x": 23,
-      "y": 34,
+      "y": 33,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
@@ -765,8 +758,8 @@
     },
     {
       "type": "weather",
-      "x": 34,
-      "y": 13,
+      "x": 37,
+      "y": 15,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
     }
@@ -900,7 +893,7 @@
       "x": 39,
       "y": 126,
       "elevation": 3,
-      "item": "ITEM_FULL_HEAL",
+      "item": "ITEM_CALCIUM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_FULL_HEAL"
     },
     {

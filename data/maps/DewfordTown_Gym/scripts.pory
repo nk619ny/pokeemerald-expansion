@@ -166,7 +166,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	//setvar VAR_ROXANNE_CALL_STEP_COUNTER, 0
 	//setflag FLAG_ENABLE_ROXANNE_FIRST_CALL
 	setflag FLAG_HIDE_ROUTE_110_TEAM_AQUA
-	//setvar VAR_LEVEL_CAP, 30
+	call Common_EventScript_RemoveOptionalItems1
 	call DewfordTown_Gym_EventScript_SetNewLevelCap
 	release
 	end

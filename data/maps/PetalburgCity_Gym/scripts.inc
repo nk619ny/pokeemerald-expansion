@@ -3182,409 +3182,413 @@ PetalburgCity_Gym_EventScript_Vito_PostBattle::
 # 1604 "data/maps/PetalburgCity_Gym/scripts.pory"
 	setvar VAR_LEVEL_CAP, 56
 # 1605 "data/maps/PetalburgCity_Gym/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_RemoveOptionalItems5
 # 1606 "data/maps/PetalburgCity_Gym/scripts.pory"
-	call Common_EventScript_LevelCapUpdate
+	call Common_EventScript_ApplyHandicap
 # 1607 "data/maps/PetalburgCity_Gym/scripts.pory"
-
+	call Common_EventScript_LevelCapUpdate
 # 1608 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
+
 # 1609 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_DEFEATED_PETALBURG_GYM
+	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
 # 1610 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_PETALBURG_GYM_STATE, 7
+	setflag FLAG_DEFEATED_PETALBURG_GYM
 # 1611 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_PETALBURG_CITY_STATE, 5
+	setvar VAR_PETALBURG_GYM_STATE, 7
 # 1612 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_BADGE05_GET
+	setvar VAR_PETALBURG_CITY_STATE, 5
 # 1613 "data/maps/PetalburgCity_Gym/scripts.pory"
-	special ResetHealLocationFromDewford
+	setflag FLAG_BADGE05_GET
 # 1614 "data/maps/PetalburgCity_Gym/scripts.pory"
-	call EventScript_HideMrBriney
+	special ResetHealLocationFromDewford
 # 1615 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	call EventScript_HideMrBriney
 # 1616 "data/maps/PetalburgCity_Gym/scripts.pory"
-	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
+	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
 # 1617 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_0x8008, 5
+	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
 # 1618 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_TEMP_3, 1 //TempVar_Vito_Dialogue 
+	setvar VAR_0x8008, 5
 # 1619 "data/maps/PetalburgCity_Gym/scripts.pory"
-	call Common_EventScript_SetGymTrainers
+	setvar VAR_TEMP_3, 1 //TempVar_Vito_Dialogue 
 # 1620 "data/maps/PetalburgCity_Gym/scripts.pory"
-	clearflag FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN
+	call Common_EventScript_SetGymTrainers
 # 1621 "data/maps/PetalburgCity_Gym/scripts.pory"
-	call PetalburgCity_Gym_EventScript_UnlockAllDoors
+	clearflag FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN
 # 1622 "data/maps/PetalburgCity_Gym/scripts.pory"
-	special DrawWholeMapView
+	call PetalburgCity_Gym_EventScript_UnlockAllDoors
 # 1623 "data/maps/PetalburgCity_Gym/scripts.pory"
-	call PetalburgCity_Gym_EventScript_GiveFacade
+	special DrawWholeMapView
 # 1624 "data/maps/PetalburgCity_Gym/scripts.pory"
-	delay 30
+	call PetalburgCity_Gym_EventScript_GiveFacade
 # 1625 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Text_Vito_GoodLuck, MSGBOX_NPC
+	delay 30
 # 1626 "data/maps/PetalburgCity_Gym/scripts.pory"
-	releaseall
+	msgbox PetalburgCity_Gym_Text_Vito_GoodLuck, MSGBOX_NPC
 # 1627 "data/maps/PetalburgCity_Gym/scripts.pory"
+	releaseall
+# 1628 "data/maps/PetalburgCity_Gym/scripts.pory"
 	end
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew::
-# 1636 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_PETALBURG_GYM_STATE, 1
 # 1637 "data/maps/PetalburgCity_Gym/scripts.pory"
-	lockall
-# 1638 "data/maps/PetalburgCity_Gym/scripts.pory"
-	delay 10
-# 1639 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_PETALBURG_GYM_WALLY, Common_Movement_ExclamationMark
-# 1640 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmovement 0
-# 1641 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_0
-# 1642 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_1
-# 1643 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_2
-# 1644 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmessage
-# 1645 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_ExclamationMark
-# 1646 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmovement 0
-# 1647 "data/maps/PetalburgCity_Gym/scripts.pory"
-	turnobject LOCALID_PETALBURG_GYM_WALLY, DIR_SOUTH
-# 1648 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_3
-# 1649 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_4
-# 1650 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_5
-# 1651 "data/maps/PetalburgCity_Gym/scripts.pory"
-	turnobject LOCALID_PETALBURG_GYM_WALLY, DIR_NORTH
-# 1652 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmovement 0
-# 1653 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_6
-# 1654 "data/maps/PetalburgCity_Gym/scripts.pory"
-	turnobject LOCALID_PETALBURG_GYM_WALLY, DIR_SOUTH
-# 1655 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmovement 0
-# 1656 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_7
-# 1657 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmessage
-# 1658 "data/maps/PetalburgCity_Gym/scripts.pory"
-	delay 20
-# 1659 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_WallyLeave
-# 1660 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmovement 0
-# 1661 "data/maps/PetalburgCity_Gym/scripts.pory"
-	removeobject LOCALID_PETALBURG_GYM_WALLY
-# 1662 "data/maps/PetalburgCity_Gym/scripts.pory"
-	delay 30
-# 1663 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_PlayerApproachNorman
-# 1664 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmovement 0
-# 1665 "data/maps/PetalburgCity_Gym/scripts.pory"
-	delay 5
-# 1666 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_8
-# 1667 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmessage
-# 1668 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_PETALBURG_CITY_STATE, 3
-# 1669 "data/maps/PetalburgCity_Gym/scripts.pory"
 	setvar VAR_PETALBURG_GYM_STATE, 1
+# 1638 "data/maps/PetalburgCity_Gym/scripts.pory"
+	lockall
+# 1639 "data/maps/PetalburgCity_Gym/scripts.pory"
+	delay 10
+# 1640 "data/maps/PetalburgCity_Gym/scripts.pory"
+	applymovement LOCALID_PETALBURG_GYM_WALLY, Common_Movement_ExclamationMark
+# 1641 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmovement 0
+# 1642 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_0
+# 1643 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_1
+# 1644 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_2
+# 1645 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmessage
+# 1646 "data/maps/PetalburgCity_Gym/scripts.pory"
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_ExclamationMark
+# 1647 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmovement 0
+# 1648 "data/maps/PetalburgCity_Gym/scripts.pory"
+	turnobject LOCALID_PETALBURG_GYM_WALLY, DIR_SOUTH
+# 1649 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_3
+# 1650 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_4
+# 1651 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_5
+# 1652 "data/maps/PetalburgCity_Gym/scripts.pory"
+	turnobject LOCALID_PETALBURG_GYM_WALLY, DIR_NORTH
+# 1653 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmovement 0
+# 1654 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_6
+# 1655 "data/maps/PetalburgCity_Gym/scripts.pory"
+	turnobject LOCALID_PETALBURG_GYM_WALLY, DIR_SOUTH
+# 1656 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmovement 0
+# 1657 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_7
+# 1658 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmessage
+# 1659 "data/maps/PetalburgCity_Gym/scripts.pory"
+	delay 20
+# 1660 "data/maps/PetalburgCity_Gym/scripts.pory"
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_WallyLeave
+# 1661 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmovement 0
+# 1662 "data/maps/PetalburgCity_Gym/scripts.pory"
+	removeobject LOCALID_PETALBURG_GYM_WALLY
+# 1663 "data/maps/PetalburgCity_Gym/scripts.pory"
+	delay 30
+# 1664 "data/maps/PetalburgCity_Gym/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_PlayerApproachNorman
+# 1665 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmovement 0
+# 1666 "data/maps/PetalburgCity_Gym/scripts.pory"
+	delay 5
+# 1667 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_8
+# 1668 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmessage
+# 1669 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setvar VAR_PETALBURG_CITY_STATE, 3
 # 1670 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
+	setvar VAR_PETALBURG_GYM_STATE, 1
 # 1671 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_HIDE_PETALBURG_GYM_WALLY
+	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
 # 1672 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setflag FLAG_HIDE_PETALBURG_GYM_WALLY
+# 1673 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
 
-# 1677 "data/maps/PetalburgCity_Gym/scripts.pory"
-PetalburgCity_Gym_WallyLeave:
 # 1678 "data/maps/PetalburgCity_Gym/scripts.pory"
+PetalburgCity_Gym_WallyLeave:
+# 1679 "data/maps/PetalburgCity_Gym/scripts.pory"
 	walk_right
-# 1679 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1680 "data/maps/PetalburgCity_Gym/scripts.pory"
 	walk_down
-# 1679 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1680 "data/maps/PetalburgCity_Gym/scripts.pory"
 	walk_down
-# 1679 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1680 "data/maps/PetalburgCity_Gym/scripts.pory"
 	walk_down
 	step_end
 
-# 1682 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1683 "data/maps/PetalburgCity_Gym/scripts.pory"
 PetalburgCity_Gym_PlayerApproachNorman:
-# 1683 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1684 "data/maps/PetalburgCity_Gym/scripts.pory"
 	walk_up
-# 1683 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1684 "data/maps/PetalburgCity_Gym/scripts.pory"
 	walk_up
-# 1683 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1684 "data/maps/PetalburgCity_Gym/scripts.pory"
 	walk_up
 	step_end
 
 PetalburgCity_Gym_EventScript_NormanGoWest::
-# 1687 "data/maps/PetalburgCity_Gym/scripts.pory"
-	lockall
 # 1688 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_NormanGoWest_Text_0, MSGBOX_NPC
+	lockall
 # 1689 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_NormanGoWest_Text_0, MSGBOX_NPC
+# 1690 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
 
 PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle::
-# 1695 "data/maps/PetalburgCity_Gym/scripts.pory"
-	lockall
 # 1696 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_0, MSGBOX_NPC
+	lockall
 # 1697 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_1, MSGBOX_YESNO
+	msgbox PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_0, MSGBOX_NPC
 # 1698 "data/maps/PetalburgCity_Gym/scripts.pory"
-	switch VAR_RESULT
+	msgbox PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_1, MSGBOX_YESNO
 # 1699 "data/maps/PetalburgCity_Gym/scripts.pory"
+	switch VAR_RESULT
+# 1700 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 0, PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_3
-# 1703 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1704 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 1, PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_4
 	end
 
 PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_3:
-# 1700 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_2, MSGBOX_NPC
 # 1701 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_2, MSGBOX_NPC
+# 1702 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_4:
-# 1704 "data/maps/PetalburgCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_NORMAN_1, PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_3, PetalburgCity_Gym_NormanDefeatedText, PetalburgCity_Gym_EventScript_DefeatedNorman
 # 1705 "data/maps/PetalburgCity_Gym/scripts.pory"
+	trainerbattle_single TRAINER_NORMAN_1, PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_3, PetalburgCity_Gym_NormanDefeatedText, PetalburgCity_Gym_EventScript_DefeatedNorman
+# 1706 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
 
 PetalburgCity_Gym_EventScript_NormanPostBattle::
-# 1712 "data/maps/PetalburgCity_Gym/scripts.pory"
-	lockall
 # 1713 "data/maps/PetalburgCity_Gym/scripts.pory"
-	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_FacePlayer
+	lockall
 # 1714 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_0
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_FacePlayer
 # 1715 "data/maps/PetalburgCity_Gym/scripts.pory"
-	dynmultichoice 25, 3, 0, 5, 0, DYN_MULTICHOICE_CB_NONE, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_1, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_2, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_3, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_4, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_5
+	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_0
 # 1716 "data/maps/PetalburgCity_Gym/scripts.pory"
-	switch VAR_RESULT
+	dynmultichoice 25, 3, 0, 5, 0, DYN_MULTICHOICE_CB_NONE, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_1, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_2, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_3, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_4, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_5
 # 1717 "data/maps/PetalburgCity_Gym/scripts.pory"
+	switch VAR_RESULT
+# 1718 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 0, PetalburgCity_Gym_EventScript_NormanPostBattle_3
-# 1719 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1720 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 1, PetalburgCity_Gym_EventScript_NormanPostBattle_4
-# 1721 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1722 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 2, PetalburgCity_Gym_EventScript_NormanPostBattle_5
-# 1723 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1724 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 3, PetalburgCity_Gym_EventScript_NormanPostBattle_6
-# 1735 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1736 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 4, PetalburgCity_Gym_EventScript_NormanPostBattle_7
-# 1738 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1739 "data/maps/PetalburgCity_Gym/scripts.pory"
 	closemessage
 PetalburgCity_Gym_EventScript_NormanPostBattle_1:
-# 1740 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmessage
 # 1741 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmessage
+# 1742 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_3:
-# 1718 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1719 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_6, MSGBOX_NPC
 	goto PetalburgCity_Gym_EventScript_NormanPostBattle_1
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_4:
-# 1720 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1721 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_7, MSGBOX_NPC
 	goto PetalburgCity_Gym_EventScript_NormanPostBattle_1
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_5:
-# 1722 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1723 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_8
 	goto PetalburgCity_Gym_EventScript_NormanPostBattle_1
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_6:
-# 1724 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1725 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto_if_set FLAG_RECEIVED_EEVEE_FROM_NORMAN, PetalburgCity_Gym_EventScript_NormanPostBattle_9
-# 1730 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_11, MSGBOX_YESNO
 # 1731 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_11, MSGBOX_YESNO
+# 1732 "data/maps/PetalburgCity_Gym/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq PetalburgCity_Gym_EventScript_NormanPostBattle_12
 	goto PetalburgCity_Gym_EventScript_NormanPostBattle_1
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_7:
-# 1736 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1737 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_12
 	goto PetalburgCity_Gym_EventScript_NormanPostBattle_1
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_9:
-# 1725 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_9
 # 1726 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmessage
+	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_9
 # 1727 "data/maps/PetalburgCity_Gym/scripts.pory"
+	waitmessage
+# 1728 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_10
 	goto PetalburgCity_Gym_EventScript_NormanPostBattle_1
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_12:
-# 1732 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1733 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto PetalburgCity_Gym_EventScript_GiveEevee
 	goto PetalburgCity_Gym_EventScript_NormanPostBattle_1
 
 
 PetalburgCity_Gym_EventScript_DefeatedNorman::
-# 1751 "data/maps/PetalburgCity_Gym/scripts.pory"
-	lockall
 # 1752 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_LEVEL_CAP, 24
+	lockall
 # 1753 "data/maps/PetalburgCity_Gym/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_RemoveOptionalItems0
 # 1754 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setvar VAR_LEVEL_CAP, 24
+# 1755 "data/maps/PetalburgCity_Gym/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 1756 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call Common_EventScript_LevelCapUpdate
-# 1760 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_0, MSGBOX_NPC
-# 1761 "data/maps/PetalburgCity_Gym/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 1762 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_1
+	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_0, MSGBOX_NPC
 # 1763 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitfanfare
+	playfanfare MUS_OBTAIN_ITEM
 # 1764 "data/maps/PetalburgCity_Gym/scripts.pory"
-	closemessage
+	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_1
 # 1765 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_DEFEATED_NORMAN_INTRO
-# 1766 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_SYS_POKENAV_GET
-# 1767 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_POKENAV
-# 1768 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_HAS_MATCH_CALL
-# 1769 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
-# 1770 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitfanfare
-# 1771 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1766 "data/maps/PetalburgCity_Gym/scripts.pory"
 	closemessage
+# 1767 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setflag FLAG_DEFEATED_NORMAN_INTRO
+# 1768 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setflag FLAG_SYS_POKENAV_GET
+# 1769 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setflag FLAG_RECEIVED_POKENAV
+# 1770 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setflag FLAG_HAS_MATCH_CALL
+# 1771 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
 # 1772 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox Route104_Text_RegisteredDadInPokenav, MSGBOX_DEFAULT
+	waitfanfare
 # 1773 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitmessage
+	closemessage
 # 1774 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_ENABLE_NORMAN_MATCH_CALL
+	msgbox Route104_Text_RegisteredDadInPokenav, MSGBOX_DEFAULT
 # 1775 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_PETALBURG_GYM_STATE, 3
+	waitmessage
 # 1776 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_BRINEY_HOUSE_STATE, 1
+	setflag FLAG_ENABLE_NORMAN_MATCH_CALL
 # 1777 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_SCOTT_PETALBURG_ENCOUNTER, 2
+	setvar VAR_PETALBURG_GYM_STATE, 3
 # 1778 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_HIDE_BRINEY_FONT_OF_DOOR
+	setvar VAR_BRINEY_HOUSE_STATE, 1
 # 1779 "data/maps/PetalburgCity_Gym/scripts.pory"
-	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	setvar VAR_SCOTT_PETALBURG_ENCOUNTER, 2
 # 1780 "data/maps/PetalburgCity_Gym/scripts.pory"
-	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
+	setflag FLAG_HIDE_BRINEY_FONT_OF_DOOR
 # 1781 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_2, MSGBOX_NPC
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
 # 1782 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_3, MSGBOX_YESNO
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 # 1783 "data/maps/PetalburgCity_Gym/scripts.pory"
-	switch VAR_RESULT
+	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_2, MSGBOX_NPC
 # 1784 "data/maps/PetalburgCity_Gym/scripts.pory"
-	case 0, PetalburgCity_Gym_EventScript_DefeatedNorman_3
+	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_3, MSGBOX_YESNO
+# 1785 "data/maps/PetalburgCity_Gym/scripts.pory"
+	switch VAR_RESULT
 # 1786 "data/maps/PetalburgCity_Gym/scripts.pory"
+	case 0, PetalburgCity_Gym_EventScript_DefeatedNorman_3
+# 1788 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 1, PetalburgCity_Gym_EventScript_DefeatedNorman_4
 PetalburgCity_Gym_EventScript_DefeatedNorman_1:
-# 1789 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1791 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_5, MSGBOX_NPC
-# 1790 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1792 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_Gym_EventScript_DefeatedNorman_3:
-# 1785 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1787 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_DefeatedNorman_Text_4, MSGBOX_NPC
 	goto PetalburgCity_Gym_EventScript_DefeatedNorman_1
 
 PetalburgCity_Gym_EventScript_DefeatedNorman_4:
-# 1787 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1789 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call PetalburgCity_Gym_EventScript_GiveEevee
 	goto PetalburgCity_Gym_EventScript_DefeatedNorman_1
 
 
 PetalburgCity_Gym_EventScript_GiveEevee::
-# 1795 "data/maps/PetalburgCity_Gym/scripts.pory"
-	givemon SPECIES_EEVEE, 5, 0, 0, 0, 2
-# 1796 "data/maps/PetalburgCity_Gym/scripts.pory"
-	switch VAR_RESULT
 # 1797 "data/maps/PetalburgCity_Gym/scripts.pory"
+	givemon SPECIES_EEVEE, 5, 0, 0, 0, 2
+# 1798 "data/maps/PetalburgCity_Gym/scripts.pory"
+	switch VAR_RESULT
+# 1799 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case MON_GIVEN_TO_PARTY, PetalburgCity_Gym_EventScript_GiveEevee_2
-# 1804 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1806 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case MON_GIVEN_TO_PC, PetalburgCity_Gym_EventScript_GiveEevee_3
-# 1811 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1813 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case MON_CANT_GIVE, PetalburgCity_Gym_EventScript_GiveEevee_4
 PetalburgCity_Gym_EventScript_GiveEevee_4:
-# 1813 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1815 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_GiveEevee_Text_1
 	return
 
 PetalburgCity_Gym_EventScript_GiveEevee_2:
-# 1798 "data/maps/PetalburgCity_Gym/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 1799 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_GiveEevee_Text_0
 # 1800 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitfanfare
+	playfanfare MUS_OBTAIN_ITEM
 # 1801 "data/maps/PetalburgCity_Gym/scripts.pory"
-	call NicknamePartyMon
+	msgbox PetalburgCity_Gym_EventScript_GiveEevee_Text_0
 # 1802 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_EEVEE_FROM_NORMAN
+	waitfanfare
 # 1803 "data/maps/PetalburgCity_Gym/scripts.pory"
+	call NicknamePartyMon
+# 1804 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setflag FLAG_RECEIVED_EEVEE_FROM_NORMAN
+# 1805 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_NormanGaveEevee, MSGBOX_NPC
 	return
 
 PetalburgCity_Gym_EventScript_GiveEevee_3:
-# 1805 "data/maps/PetalburgCity_Gym/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 1806 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_EventScript_GiveEevee_Text_0
 # 1807 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitfanfare
+	playfanfare MUS_OBTAIN_ITEM
 # 1808 "data/maps/PetalburgCity_Gym/scripts.pory"
-	call NicknameBoxMon
+	msgbox PetalburgCity_Gym_EventScript_GiveEevee_Text_0
 # 1809 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_EEVEE_FROM_NORMAN
+	waitfanfare
 # 1810 "data/maps/PetalburgCity_Gym/scripts.pory"
+	call NicknameBoxMon
+# 1811 "data/maps/PetalburgCity_Gym/scripts.pory"
+	setflag FLAG_RECEIVED_EEVEE_FROM_NORMAN
+# 1812 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_NormanGaveEevee, MSGBOX_NPC
 	return
 
 
 PetalburgCity_Gym_EventScript_Vito::
-# 1822 "data/maps/PetalburgCity_Gym/scripts.pory"
-	lock
-# 1823 "data/maps/PetalburgCity_Gym/scripts.pory"
-	faceplayer
 # 1824 "data/maps/PetalburgCity_Gym/scripts.pory"
-	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_Vito_2
+	lock
+# 1825 "data/maps/PetalburgCity_Gym/scripts.pory"
+	faceplayer
 # 1826 "data/maps/PetalburgCity_Gym/scripts.pory"
+	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_Vito_2
+# 1828 "data/maps/PetalburgCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_VITO, PetalburgCity_Gym_Text_Vito_Intro, PetalburgCity_Gym_Text_Vito_BattleOutro, PetalburgCity_Gym_EventScript_Vito_PostBattle
 PetalburgCity_Gym_EventScript_Vito_1:
-# 1828 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1830 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_Gym_EventScript_Vito_2:
-# 1824 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1826 "data/maps/PetalburgCity_Gym/scripts.pory"
 	goto PetalburgCity_Gym_EventScript_Vito_PostBadge
 	goto PetalburgCity_Gym_EventScript_Vito_1
 
@@ -3594,68 +3598,68 @@ PetalburgCity_Gym_EventScript_Vito_GymBattle::
 
 
 PetalburgCity_Gym_EventScript_Vito_PostBadge::
-# 1846 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1848 "data/maps/PetalburgCity_Gym/scripts.pory"
 	compare VAR_TEMP_3, 0
 	goto_if_eq PetalburgCity_Gym_EventScript_Vito_PostBadge_2
 PetalburgCity_Gym_EventScript_Vito_PostBadge_1:
-# 1851 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1853 "data/maps/PetalburgCity_Gym/scripts.pory"
 	switch VAR_TEMP_3
-# 1852 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1854 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 1, PetalburgCity_Gym_EventScript_Vito_PostBadge_6
-# 1855 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1857 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 2, PetalburgCity_Gym_EventScript_Vito_PostBadge_7
-# 1858 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1860 "data/maps/PetalburgCity_Gym/scripts.pory"
 	case 3, PetalburgCity_Gym_EventScript_Vito_PostBadge_8
 PetalburgCity_Gym_EventScript_Vito_PostBadge_4:
-# 1862 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1864 "data/maps/PetalburgCity_Gym/scripts.pory"
 	waitmessage
-# 1863 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1865 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_Gym_EventScript_Vito_PostBadge_2:
-# 1847 "data/maps/PetalburgCity_Gym/scripts.pory"
-	random 3
-# 1848 "data/maps/PetalburgCity_Gym/scripts.pory"
-	copyvar VAR_TEMP_3, VAR_RESULT
 # 1849 "data/maps/PetalburgCity_Gym/scripts.pory"
+	random 3
+# 1850 "data/maps/PetalburgCity_Gym/scripts.pory"
+	copyvar VAR_TEMP_3, VAR_RESULT
+# 1851 "data/maps/PetalburgCity_Gym/scripts.pory"
 	addvar VAR_TEMP_3, 1
 	goto PetalburgCity_Gym_EventScript_Vito_PostBadge_1
 
 PetalburgCity_Gym_EventScript_Vito_PostBadge_6:
-# 1853 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1855 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_Vito_DarkUnderrepresented, MSGBOX_NPC
-# 1854 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1856 "data/maps/PetalburgCity_Gym/scripts.pory"
 	addvar VAR_TEMP_3, 1
 	goto PetalburgCity_Gym_EventScript_Vito_PostBadge_4
 
 PetalburgCity_Gym_EventScript_Vito_PostBadge_7:
-# 1856 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1858 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_Vito_TooManyLegendaries, MSGBOX_NPC
-# 1857 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1859 "data/maps/PetalburgCity_Gym/scripts.pory"
 	addvar VAR_TEMP_3, 1
 	goto PetalburgCity_Gym_EventScript_Vito_PostBadge_4
 
 PetalburgCity_Gym_EventScript_Vito_PostBadge_8:
-# 1859 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1861 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_Text_Vito_OweWinstrateFamily, MSGBOX_NPC
-# 1860 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1862 "data/maps/PetalburgCity_Gym/scripts.pory"
 	setvar VAR_TEMP_3, 1
 	goto PetalburgCity_Gym_EventScript_Vito_PostBadge_4
 
 
 PetalburgCity_Gym_EventScript_Vito_Rematch::
-# 1868 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1870 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_0:
-# 1641 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1642 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "I finally did it! I won!$"
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_1:
-# 1642 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1643 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Well done, Wally.\p"
 	.string "You've trained your Pokémon well, and\n"
 	.string "today you commanded them skillfully.\p"
@@ -3664,41 +3668,41 @@ PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_1:
 	.string "$"
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_2:
-# 1643 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1644 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Wally: Thanks, Norman! I've learned a\n"
 	.string "lot from battling you.$"
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_3:
-# 1648 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1649 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Ah, {PLAYER}!\p"
 	.string "It is wonderful to see you with Pokémon\n"
 	.string "of your own.\p"
 	.string "$"
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_4:
-# 1649 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1650 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Let me introduce you to Wally, a new\n"
 	.string "trainer like yourself, from here in\l"
 	.string "Petalburg.$"
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_5:
-# 1650 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1651 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Wally: Hi, {PLAYER}! It's nice to meet\n"
 	.string "you.$"
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_6:
-# 1653 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1654 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Wally: Well, now that I've proven I'm\n"
 	.string "ready, I'm finally going to leave\l"
 	.string "Petalburg.$"
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_7:
-# 1656 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1657 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Wally: Hopefully I see you around,\n"
 	.string "{PLAYER}.$"
 
 PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_8:
-# 1666 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1667 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: It makes me so proud that this\n"
 	.string "moment has finally come, {PLAYER}. I\l"
 	.string "would be honored to finally get the\l"
@@ -3709,59 +3713,59 @@ PetalburgCity_Gym_EventScript_WallyNormanIntroNew_Text_8:
 	.string "you what a Gym Battle is like.$"
 
 PetalburgCity_Gym_EventScript_NormanGoWest_Text_0:
-# 1688 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1689 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Why don't you try heading West to\n"
 	.string "Route 104? You can't get to Rustboro\l"
 	.string "City right now, but there are still many\l"
 	.string "Pokémon to find along the way.$"
 
 PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_0:
-# 1696 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1697 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: So, {PLAYER}, have you found any\n"
 	.string "more Pokémon?$"
 
 PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_1:
-# 1697 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1698 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Do you think you're ready for a Pokémon\n"
 	.string "battle against me now?$"
 
 PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_2:
-# 1700 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1701 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: I see. Well, come back when you're\n"
 	.string "ready.$"
 
 PetalburgCity_Gym_EventScript_NormanAreYouReadyToBattle_Text_3:
-# 1704 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1705 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Excellent! Let's see what you've\n"
 	.string "got!$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_0:
-# 1714 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1715 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Did you have another question for\n"
 	.string "me, {PLAYER}?$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_1:
-# 1715 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1716 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Where To Go$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_2:
-# 1715 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1716 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Your Slaking$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_3:
-# 1715 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1716 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Retirement$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_4:
-# 1715 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1716 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Gift Pokémon$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_5:
-# 1715 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1716 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Nothing$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_6:
-# 1718 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1719 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Unfortunately, the bridge to\n"
 	.string "Rustboro City is down. However, my\l"
 	.string "friend Mr. Briney can take you to\l"
@@ -3770,7 +3774,7 @@ PetalburgCity_Gym_EventScript_NormanPostBattle_Text_6:
 	.string "in Route 104 South.$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_7:
-# 1720 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1721 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Ah, yes, many trainers are\n"
 	.string "confused about the low-level Slaking.\l"
 	.string "Well, it is my signature Pokémon, and\l"
@@ -3787,7 +3791,7 @@ PetalburgCity_Gym_EventScript_NormanPostBattle_Text_7:
 	.string "the ones that were there.$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_8:
-# 1722 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1723 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Yes, retiring is bittersweet, but I\n"
 	.string "feel like I've found the perfect Trainer\l"
 	.string "to replace me. I gave it a lot of\l"
@@ -3798,14 +3802,14 @@ PetalburgCity_Gym_EventScript_NormanPostBattle_Text_8:
 	.string "set up, but I will call you when they do.$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_9:
-# 1725 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1726 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: That Pokémon is an Eevee. It's a\n"
 	.string "special Normal-type Pokémon that can\l"
 	.string "evolve a variety of different ways\l"
 	.string "based on what rare stone you give it.$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_10:
-# 1727 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1728 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "That one is extra special, as it\n"
 	.string "possesses a rare ability. Based on the\l"
 	.string "stone you give it, it will influence the\l"
@@ -3814,18 +3818,18 @@ PetalburgCity_Gym_EventScript_NormanPostBattle_Text_10:
 	.string "decide wisely how to train this Eevee.$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_11:
-# 1730 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1731 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Are you ready to take the special\n"
 	.string "Pokémon now?$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_12:
-# 1736 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1737 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Alright then {PLAYER}, if there's\n"
 	.string "nothing else, I'll just wish you good\l"
 	.string "luck.$"
 
 PetalburgCity_Gym_EventScript_DefeatedNorman_Text_0:
-# 1760 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1762 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: That was an impressive battle,\n"
 	.string "{PLAYER}. You've defeated a Gym\l"
 	.string "Leader.\p"
@@ -3844,11 +3848,11 @@ PetalburgCity_Gym_EventScript_DefeatedNorman_Text_0:
 	.string "this.$"
 
 PetalburgCity_Gym_EventScript_DefeatedNorman_Text_1:
-# 1762 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1764 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Received PokéNAV!$"
 
 PetalburgCity_Gym_EventScript_DefeatedNorman_Text_2:
-# 1781 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1783 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: This is a PokéNAV. It's a device\n"
 	.string "that allows you to keep in touch with\l"
 	.string "other trainers you've met, and even call\l"
@@ -3856,39 +3860,39 @@ PetalburgCity_Gym_EventScript_DefeatedNorman_Text_2:
 	.string "your journey.$"
 
 PetalburgCity_Gym_EventScript_DefeatedNorman_Text_3:
-# 1782 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1784 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: One last thing. To celebrate you\n"
 	.string "becoming a Pokémon Trainer, I want to\l"
 	.string "give you a special Pokémon. Are you\l"
 	.string "ready to take it now?$"
 
 PetalburgCity_Gym_EventScript_DefeatedNorman_Text_4:
-# 1785 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1787 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: That's fine. Just come back for it\n"
 	.string "whenever you're ready.$"
 
 PetalburgCity_Gym_EventScript_DefeatedNorman_Text_5:
-# 1789 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1791 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Well, {PLAYER}, I think that's\n"
 	.string "everything. I'm so proud of you. Good\l"
 	.string "luck.$"
 
 PetalburgCity_Gym_EventScript_GiveEevee_Text_0:
-# 1799 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1801 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Received Eevee.$"
 
 PetalburgCity_Gym_EventScript_GiveEevee_Text_1:
-# 1813 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1815 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: You have too many Pokémon to receive Eevee.$"
 
 PetalburgCity_Gym_NormanDefeatedText::
-# 1746 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1747 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "I'm so happy to have finally had the\n"
 	.string "chance to battle you, {PLAYER}. I'm so\l"
 	.string "proud.$"
 
 PetalburgCity_Gym_Text_NormanGaveEevee::
-# 1817 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1819 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Here you go, {PLAYER}.\p"
 	.string "This is an Eevee. It's a special\n"
 	.string "Normal-type Pokémon that can evolve a\l"
@@ -3903,14 +3907,14 @@ PetalburgCity_Gym_Text_NormanGaveEevee::
 	.string "Eevee.$"
 
 PetalburgCity_Gym_Text_Vito_BattleOutro::
-# 1836 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1838 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "I couldn't have asked for a better\n"
 	.string "inaugural battle, {PLAYER}. You're\l"
 	.string "everything I would've expected from\l"
 	.string "Norman's child.$"
 
 PetalburgCity_Gym_Text_Vito_GoodLuck::
-# 1841 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1843 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Vito: You've cleared a major hurdle\n"
 	.string "getting your fifth badge.\p"
 	.string "But trust me, {PLAYER}, it still gets\n"
@@ -3921,7 +3925,7 @@ PetalburgCity_Gym_Text_Vito_GoodLuck::
 	.string "Good luck.$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis::
-# 1872 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1874 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Vito: With that badge, the HM move Surf\n"
 	.string "will allow your Pokémon to travel over\l"
 	.string "water.\p"
@@ -3931,7 +3935,7 @@ PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis::
 	.string "sure you can use it correctly.$"
 
 PetalburgCity_Gym_Text_Vito_Intro::
-# 1876 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1878 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Hey, {PLAYER}! Your Dad told me you\n"
 	.string "would be here to challenge me soon.\p"
 	.string "You're actually the first person to\n"
@@ -3948,7 +3952,7 @@ PetalburgCity_Gym_Text_Vito_Intro::
 	.string "us!$"
 
 PetalburgCity_Gym_Text_Vito_DarkUnderrepresented::
-# 1880 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1882 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Vito: Norman recognized that Dark-type\n"
 	.string "Pokémon are underrepresented among\l"
 	.string "Gym Leaders across regions.\p"
@@ -3956,7 +3960,7 @@ PetalburgCity_Gym_Text_Vito_DarkUnderrepresented::
 	.string "Dark specialist to take over his Gym.$"
 
 PetalburgCity_Gym_Text_Vito_TooManyLegendaries::
-# 1884 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1886 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Vito: Yeah, I know that the other Gym\n"
 	.string "Leaders all only use one Legendary\l"
 	.string "Pokémon.\p"
@@ -3966,7 +3970,7 @@ PetalburgCity_Gym_Text_Vito_TooManyLegendaries::
 	.string "Yes, I know Yveltal is an Uber...$"
 
 PetalburgCity_Gym_Text_Vito_OweWinstrateFamily::
-# 1888 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1890 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Vito: I really owe everything I've\n"
 	.string "accomplished to my family.\p"
 	.string "They taught me all about battling,\n"
@@ -3977,7 +3981,7 @@ PetalburgCity_Gym_Text_Vito_OweWinstrateFamily::
 	.string "their help!$"
 
 PetalburgCity_Gym_Text_ExplainFacade::
-# 1892 "data/maps/PetalburgCity_Gym/scripts.pory"
+# 1894 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Vito: TM42 contains FACADE.\p"
 	.string "It doubles the power of moves if the\n"
 	.string "POKéMON is poisoned, paralyzed, or\l"

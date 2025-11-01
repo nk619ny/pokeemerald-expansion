@@ -50,7 +50,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POKE_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_CALCIUM",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL"
     },
@@ -159,6 +159,19 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "RusturfTunnel_EventScript_Grunt_F",
       "flag": "FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 7,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Route116_EventScript_Clark",
+      "flag": "0"
     }
   ],
   "warp_events": [

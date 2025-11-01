@@ -335,7 +335,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 # 168 "data/maps/DewfordTown_Gym/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_110_TEAM_AQUA
 # 169 "data/maps/DewfordTown_Gym/scripts.pory"
-	//setvar VAR_LEVEL_CAP, 30
+	call Common_EventScript_RemoveOptionalItems1
 # 170 "data/maps/DewfordTown_Gym/scripts.pory"
 	call DewfordTown_Gym_EventScript_SetNewLevelCap
 # 171 "data/maps/DewfordTown_Gym/scripts.pory"

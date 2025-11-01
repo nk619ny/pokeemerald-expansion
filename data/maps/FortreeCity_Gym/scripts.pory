@@ -33,6 +33,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	setvar VAR_LEVEL_CAP, 63
+	call Common_EventScript_RemoveOptionalItems6
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
 	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
