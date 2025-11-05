@@ -230,6 +230,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Corsola @ Rindo Berry  
+Level: 64
 Ability: Regenerator  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -239,6 +240,7 @@ IVs: 0 Atk
 - Power Gem  
 
 Alomomola @ Sitrus Berry
+Level: 64
 Ability: Regenerator  
 Tera Type: Water  
 - Flip Turn  
@@ -247,6 +249,7 @@ Tera Type: Water
 - Mirror Coat  
 
 Masquerain @ Charti Berry  
+Level: 64
 Ability: Water Bubble  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -256,6 +259,7 @@ IVs: 0 Atk
 - Quiver Dance  
 
 Eelektross @ White Herb
+Level: 63
 Ability: Levitate  
 Tera Type: Electric  
 - Close Combat  
@@ -274,6 +278,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Seismitoad  @ Rindo Berry
+Level: 64
 Ability: Water Absorb  
 Tera Type: Water  
 - Drain Punch  
@@ -282,6 +287,7 @@ Tera Type: Water
 - Poison Jab  
 
 Luvdisc  
+Level: 64
 Ability: Soul-Heart  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -291,6 +297,7 @@ IVs: 0 Atk
 - Agility  
 
 Goodra  @ Yache Berry
+Level: 62
 Ability: Dry Skin  
 Tera Type: Dragon  
 - Power Whip  
@@ -299,6 +306,7 @@ Tera Type: Dragon
 - Acid Spray  
 
 Inteleon  
+Level: 62
 Ability: Sniper  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -4017,6 +4025,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Delibird  @ Charti Berry
+Level: 74
 Ability: Refrigerate  
 Tera Type: Ice  
 - Acrobatics  
@@ -4025,6 +4034,7 @@ Tera Type: Ice
 - Seed Bomb  
 
 Frosmoth @ Occa Berry  
+Level: 74
 Ability: Ice Scales  
 Tera Type: Ice  
 IVs: 0 Atk  
@@ -4034,6 +4044,7 @@ IVs: 0 Atk
 - Quiver Dance  
 
 Carbink @ Babiri Berry  
+Level: 74
 Ability: Clear Body  
 Tera Type: Rock  
 IVs: 0 Atk  
@@ -4043,6 +4054,7 @@ IVs: 0 Atk
 - Ally Switch  
 
 Primarina @ Throat Spray  
+Level: 74
 Ability: Torrent  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -5795,22 +5807,55 @@ IVs: 0 Atk
 - Attract  
 
 
-=== TRAINER_FERNANDO_1 === /* Route */
+=== TRAINER_FERNANDO_1 === /* Route 123 */
 Name: FERNANDO
 Class: Guitarist
 Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Electrike
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rillaboom @ White Herb  
+Level: 60
+Ability: Soundproof  
+Tera Type: Grass  
+EVs: 252 SpA  
+- Drum Beating  
+- Boomburst  
+- Hammer Arm  
+- Frenzy Plant  
 
-Loudred
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Toxtricity  @ Shuca Berry
+Level: 60
+Ability: Punk Rock  
+Tera Type: Electric  
+IVs: 0 Atk  
+- Overdrive  
+- Boomburst  
+- Psychic Noise  
+- Eerie Impulse  
+
+Electrode  @ Normal Gem
+Level: 60
+Ability: Soundproof  
+Tera Type: Electric  
+EVs: 252 Atk  
+- Explosion  
+- Signal Beam  
+- Discharge  
+- Charge Beam  
+
+Noivern  @ Yache Berry
+Level: 60
+Ability: Telepathy  
+Tera Type: Flying  
+IVs: 0 Atk  
+- Boomburst  
+- Air Slash  
+- Tailwind  
+- Psychic Noise  
+
 
 === TRAINER_DALTON_1 === /* Route 118 */ /* Pre-Surf */ /* TO BE ADDED */ /* Bird Catcher? */
 Name: DALTON
@@ -6557,6 +6602,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Orbeetle @ Wide Lens  
+Level: 55
 Ability: Telepathy  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -6566,6 +6612,7 @@ IVs: 0 Atk
 - Hypnosis  
 
 Gligar @ Toxic Orb  
+Level: 55
 Ability: Immunity  
 Tera Type: Ground  
 - Fling  
@@ -6574,6 +6621,7 @@ Tera Type: Ground
 - Earthquake  
 
 Vibrava @ Yache Berry
+Level: 55
 Ability: Levitate  
 Tera Type: Ground  
 EVs: 128 SpA  
@@ -6584,6 +6632,7 @@ Serious Nature
 - U-turn  
 
 Carnivine  
+Level: 55
 Ability: Levitate  
 Tera Type: Grass  
 - Snap Trap  
@@ -6650,6 +6699,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Pinsir  @ Charti Berry
+Level: 55
 Ability: Hyper Cutter  
 Tera Type: Bug  
 - X-Scissor  
@@ -6658,6 +6708,7 @@ Tera Type: Bug
 - Swords Dance  
 
 Masquerain  @ Charti Berry
+Level: 55
 Ability: Intimidate  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -6667,6 +6718,7 @@ IVs: 0 Atk
 - Baton Pass  
 
 Yanma  @ Charti Berry
+Level: 55
 Ability: Compound Eyes  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -6676,6 +6728,7 @@ IVs: 0 Atk
 - Shadow Ball
 
 Vivillon  @ Charti Berry
+Level: 55
 Ability: Compound Eyes  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -13222,7 +13275,7 @@ Minun
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_GINA_AND_MIA_1 === /* Route */
+=== TRAINER_GINA_AND_MIA_1 === /* Route 104 North */
 Name: GINA & MIA
 Class: Twins
 Pic: Twins
@@ -13445,7 +13498,7 @@ Tera Type: Rock
 - Endure  
 
 
-=== TRAINER_ERNEST_1 === /* Route */
+=== TRAINER_ERNEST_1 === /* Route 125 */
 Name: ERNEST
 Class: Sailor
 Pic: Sailor
@@ -13454,13 +13507,45 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wingull
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Corsola @ Eject Button 
+Level: 68 
+Ability: Regenerator  
+Tera Type: Water  
+IVs: 0 Atk  
+- Toxic  
+- Power Gem  
+- Life Dew  
+- Hydro Pump  
 
-Machoke
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chatot  
+Level: 66
+Ability: Keen Eye  
+Tera Type: Normal  
+IVs: 0 Atk  
+- Chatter  
+- Tailwind  
+- Encore  
+- Mimic  
+
+Dhelmise  
+Level: 66
+Ability: Steelworker  
+Tera Type: Ghost  
+- Anchor Shot  
+- Liquidation  
+- Shadow Claw  
+- Power Whip  
+
+Malamar  @ Tanga Berry
+Level: 66
+Ability: Infiltrator  
+Tera Type: Dark  
+- Throat Chop  
+- Psycho Cut  
+- Lunge  
+- Reversal  
+
+
 
 === TRAINER_DWAYNE === /* Route 109 House */
 Name: DWAYNE
@@ -13510,7 +13595,7 @@ IVs: 0 Atk / 12 SpA
 - Toxic  
 - Acid Spray  
 
-=== TRAINER_PHILLIP === /* Route */
+=== TRAINER_PHILLIP === /* SS Tidal */
 Name: PHILLIP
 Class: Sailor
 Pic: Sailor
@@ -13527,7 +13612,7 @@ Machoke
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LEONARD === /* Route */
+=== TRAINER_LEONARD === /* SS Tidal */
 Name: LEONARD
 Class: Sailor
 Pic: Sailor
@@ -13548,7 +13633,7 @@ Machoke
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DUNCAN === /* Route */
+=== TRAINER_DUNCAN === /* Abandoned Ship */
 Name: DUNCAN
 Class: Sailor
 Pic: Sailor
@@ -13782,7 +13867,7 @@ Tera Type: Dragon
 - Thunder Punch  
 
 
-=== TRAINER_KELVIN === /* Route */
+=== TRAINER_KELVIN === /* Route 134 */
 Name: KELVIN
 Class: Sailor
 Pic: Sailor
@@ -13791,13 +13876,44 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Machoke
-Level: 33
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Wailord  @ Power Herb
+Level: 73
+Ability: Spout Spray  
+Tera Type: Water  
+- Water Spout  
+- Hyper Voice  
+- Bounce  
+- Brine  
 
-Spheal
-Level: 33
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Pelipper @ Wacan Berry  
+Level: 73
+Ability: Keen Eye  
+Tera Type: Water  
+IVs: 0 Atk  
+- Hurricane  
+- Surf  
+- Roost  
+- Wide Guard  
+
+Trumbeak  
+Level: 73
+Ability: Skill Link  
+Tera Type: Normal  
+- Rock Blast  
+- Bullet Seed  
+- Drill Peck  
+- Roost  
+
+Ampharos  
+Level: 73
+Ability: Illuminate  
+Tera Type: Electric  
+IVs: 0 Atk  
+- Tail Glow  
+- Signal Beam  
+- Thunder  
+- Dazzling Gleam  
+
 
 === TRAINER_MARLEY === /* Route */
 Name: MARLEY
@@ -13833,7 +13949,7 @@ Hariyama
 Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_HUDSON === /* Route */
+=== TRAINER_HUDSON === /* Route 134 */
 Name: HUDSON
 Class: Sailor
 Pic: Sailor
@@ -13842,9 +13958,43 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wailmer
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tentacruel  
+Level: 72
+Ability: Clear Body  
+Tera Type: Water  
+IVs: 0 Atk  
+- Giga Drain  
+- Mirror Coat  
+- Toxic  
+- Acid Spray  
+
+Exeggutor-Alola  @ Yache Berry
+Level: 72
+Ability: Harvest  
+Tera Type: Grass  
+- Dragon Hammer  
+- Psychic  
+- Wood Hammer  
+- Flamethrower  
+
+Octillery @ Scope Lens  
+Level: 72
+Ability: Suction Cups  
+Tera Type: Water  
+- Octolock  
+- Octazooka  
+- Flamethrower  
+- Seed Bomb  
+
+Perrserker  
+Level: 72
+Ability: Battle Armor  
+Tera Type: Steel  
+- Close Combat  
+- Iron Head  
+- Throat Chop  
+- Fake Out  
+
 
 === TRAINER_CONOR === /* Route */
 Name: CONOR
@@ -19859,7 +20009,7 @@ Chinchou
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TORI_AND_TIA === /* Route */
+=== TRAINER_TORI_AND_TIA === /* Route 113 */
 Name: TORI & TIA
 Class: Twins
 Pic: Twins
@@ -20468,7 +20618,7 @@ Plusle @ Oran Berry
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JOSEPH === /* Route 110 */ /* TO BE ADDED */
+=== TRAINER_JOSEPH === /* Route 110 */ /* TO BE ADDED */ /* Bird Catcher ? */
 Name: JOSEPH
 Class: Guitarist
 Pic: Guitarist
@@ -21820,7 +21970,7 @@ Staryu
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CORY_1 === /* Route */
+=== TRAINER_CORY_1 === /* Route 108 */
 Name: CORY
 Class: Sailor
 Pic: Sailor
@@ -21829,17 +21979,45 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wingull
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Persian  
+Level: 50
+Ability: Unnerve  
+Tera Type: Normal  
+- Pounce  
+- Hone Claws  
+- Last Resort  
+- Hypnosis  
 
-Machop
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Squawkabilly  
+Level: 50
+Ability: Intimidate  
+Tera Type: Normal  
+- Dual Wingbeat  
+- Parting Shot  
+- Lash Out  
+- Take Down  
 
-Tentacool
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cramorant @ Power Herb  
+Level: 50
+Ability: Gulp Missile  
+Tera Type: Flying  
+- Dive  
+- Acrobatics  
+- Pluck  
+- Stockpile  
+
+Exeggutor-Alola @ Yache Berry  
+Level: 50
+Ability: Harvest  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Chloroblast  
+- Dragon Pulse  
+- Energy Ball  
+- Flamethrower  
+
+
 
 === TRAINER_CAROLINA === /* Route */
 Name: CAROLINA
@@ -22669,7 +22847,7 @@ Tera Type: Fighting
 - Night Slash  
 
 
-=== TRAINER_CALE === /* Route */
+=== TRAINER_CALE === /* Route 121 */
 Name: CALE
 Class: Bug Maniac
 Pic: Bug Maniac
