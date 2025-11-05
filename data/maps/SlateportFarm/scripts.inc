@@ -977,24 +977,26 @@ SlateportFarm_EventScript_BoyInGrass_Text_0:
 
 SlateportFarm_EventScript_OldWomanByHouse_Text_0:
 # 416 "data/maps/SlateportFarm/scripts.pory"
-	.string "I used to work on a farm in Johto. When\n"
-	.string "I heard they needed folks to develop\l"
-	.string "new farmland in Hoenn, I moved with my\l"
-	.string "family out here.$"
+	.string "I used to work on a farm in Johto.\p"
+	.string "When I heard they needed folks to\n"
+	.string "develop new farmland in Hoenn, I moved\l"
+	.string "with my family out here.$"
 
 SlateportFarm_EventScript_ManByTrees_Text_0:
 # 423 "data/maps/SlateportFarm/scripts.pory"
 	.string "I take care of the trees in the farm -\n"
 	.string "growing them, pruning them, picking\l"
 	.string "berries and fruit, and eventually\l"
-	.string "cutting them. Many Pokémon make nests\l"
-	.string "in the trees, or feed in them.$"
+	.string "cutting them.\p"
+	.string "Many Pokémon make nests in the trees,\n"
+	.string "or feed in them.$"
 
 SlateportFarm_EventScript_WomanByFlowers_Text_0:
 # 430 "data/maps/SlateportFarm/scripts.pory"
 	.string "It's scary that some people tried\n"
-	.string "destroying our farm. I've worked so\l"
-	.string "hard growing these lovely flowers.$"
+	.string "destroying our farm.\p"
+	.string "I've worked so hard growing these\n"
+	.string "lovely flowers.$"
 
 SlateportFarm_BeatMagmaAdminMultiText::
 # 65 "data/maps/SlateportFarm/scripts.pory"

@@ -413,21 +413,21 @@ script SlateportFarm_EventScript_BoyInGrass {
 
 script SlateportFarm_EventScript_OldWomanByHouse {
     lock
-    msgbox(format("I used to work on a farm in Johto. When I heard they needed folks to develop new farmland in Hoenn, I moved with my family out here."),MSGBOX_NPC)
+    msgbox(format("I used to work on a farm in Johto.\pWhen I heard they needed folks to develop new farmland in Hoenn, I moved with my family out here."),MSGBOX_NPC)
     releaseall
     end
 }
 
 script SlateportFarm_EventScript_ManByTrees {
     lock
-    msgbox(format("I take care of the trees in the farm - growing them, pruning them, picking berries and fruit, and eventually cutting them. Many Pokémon make nests in the trees, or feed in them."),MSGBOX_NPC)
+    msgbox(format("I take care of the trees in the farm - growing them, pruning them, picking berries and fruit, and eventually cutting them.\pMany Pokémon make nests in the trees, or feed in them."),MSGBOX_NPC)
     releaseall
     end
 }
 
 script SlateportFarm_EventScript_WomanByFlowers {
     lock
-    msgbox(format("It's scary that some people tried destroying our farm. I've worked so hard growing these lovely flowers."),MSGBOX_NPC)
+    msgbox(format("It's scary that some people tried destroying our farm.\pI've worked so hard growing these lovely flowers."),MSGBOX_NPC)
     releaseall
     end
 }
