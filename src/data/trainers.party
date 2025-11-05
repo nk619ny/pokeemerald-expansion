@@ -4426,7 +4426,7 @@ IVs: 0 Atk
 - Power Gem  
 
 
-=== TRAINER_SHEILA === /* Route */
+=== TRAINER_SHEILA === /* Mt Chimney */ 
 Name: SHEILA
 Class: Beauty
 Pic: Beauty
@@ -4435,9 +4435,45 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Shroomish
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vulpix  
+Level: 40
+Ability: Drought
+Tera Type: Fire  
+EVs: 252 HP / 128 Atk / 128 SpA
+- Encore  
+- Burning Jealousy  
+- Baby-Doll Eyes  
+- Covet  
+
+Roselia  
+Level: 40
+Ability: Natural Cure  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Petal Dance  
+- Synthesis  
+- Attract  
+
+Togetic  
+Level: 40
+Ability: Serene Grace  
+Tera Type: Fairy  
+- Metronome  
+- Sweet Kiss  
+- Morning Sun  
+- Draining Kiss  
+
+Floette (F) @ Persim Berry  
+Level: 40
+Ability: Flower Veil  
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Captivate  
+- Dazzling Gleam  
+- Petal Dance  
+- Synthesis  
+
 
 === TRAINER_SHIRLEY === /* Route */
 Name: SHIRLEY
@@ -20807,7 +20843,7 @@ Tera Type: Steel
 - Brick Break  
 - Outrage  
 
-Pyroar  
+Pyroar @ Throat Spray
 Level: 45
 Ability: Rivalry  
 Tera Type: Fire  
