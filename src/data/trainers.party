@@ -610,7 +610,7 @@ Shiftry
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ALBERTO === /* Route 123 */
+=== TRAINER_ALBERTO === /* Route 123 */ /* TO BE ADDED */
 Name: ALBERTO
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -627,7 +627,7 @@ Xatu
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ED === /* Route */
+=== TRAINER_ED === /* Route 123 */ /* TO BE ADDED */
 Name: ED
 Class: Collector
 Pic: Collector
@@ -1253,7 +1253,7 @@ Tera Type: Dark
 
 
 
-=== TRAINER_FREDRICK === /* Route */
+=== TRAINER_FREDRICK === /* Route 123 */
 Name: FREDRICK
 Class: Expert
 Pic: Expert M
@@ -1262,13 +1262,46 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Makuhita
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Conkeldurr  
+Level: 68
+Ability: Guts  
+Tera Type: Fighting  
+- Superpower  
+- Power-Up Punch  
+- Hard Press  
+- Coaching  
 
-Machoke
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Gallade (M)  
+Level: 68
+Ability: Justified  
+Tera Type: Psychic  
+- Sacred Sword  
+- Psyblade  
+- Power-Up Punch  
+- Pain Split  
+
+
+Wyrdeer  
+Level: 68
+Ability: Intimidate  
+Tera Type: Normal  
+- Earth Power  
+- Psyshield Bash  
+- Energy Ball  
+- Return  
+
+
+Sinistcha 
+Level: 68 
+Ability: Hospitality  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Strength Sap  
+- Scald  
+- Matcha Gotcha  
+- Calm Mind  
+
 
 === TRAINER_MATT === /* Route */
 Name: MATT
@@ -1616,7 +1649,7 @@ Adamant Nature
 - Psychic Fangs  
 
 
-=== TRAINER_LEAH === /* Route */
+=== TRAINER_LEAH === /* Mt Pyre */
 Name: LEAH
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -1625,9 +1658,53 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Spoink
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Grimmsnarl (M)  
+Level: 60
+Ability: Prankster  
+Tera Type: Dark  
+- False Surrender  
+- Leech Life  
+- Taunt  
+- Parting Shot  
+
+Illumise (F) @ Lagging Tail  
+Level: 60
+Ability: Prankster  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Light Screen  
+- Trick  
+- Encore  
+- Dazzling Gleam  
+
+Noctowl  
+Level: 60
+Ability: Mind's Eye  
+Tera Type: Normal  
+IVs: 0 Atk  
+- Hyper Voice  
+- Shadow Ball  
+- Heat Wave  
+- Nasty Plot  
+
+Ariados  
+Level: 60
+Ability: Swarm  
+Tera Type: Bug  
+- Hex  
+- Toxic Thread  
+- Toxic Spikes  
+- Leech Life  
+
+Gourgeist-Small  
+Level: 60
+Ability: Insomnia  
+Tera Type: Ghost  
+- Shadow Sneak  
+- Flame Charge  
+- Leech Seed  
+- Trick-or-Treat  
+
 
 === TRAINER_DAISY === /* Route 103 East */
 Name: DAISY
@@ -3172,7 +3249,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Energy
 - Slash
 
-=== TRAINER_BRAXTON === /* Route */
+=== TRAINER_BRAXTON === /* Route 123 */ /* TO BE ADDED */
 Name: BRAXTON
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3575,7 +3652,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Slash
 
-=== TRAINER_WENDY === /* Route */
+=== TRAINER_WENDY === /* Route 123 */ /* TO BE ADDED */
 Name: WENDY
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -3845,7 +3922,7 @@ Lunatone
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KINDRA === /* Route */
+=== TRAINER_KINDRA === /* Route 123 */ /* TO BE ADDED */
 Name: KINDRA
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -3879,7 +3956,7 @@ Shuppet
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_VALERIE_1 === /* Route */
+=== TRAINER_VALERIE_1 === /* Mt Pyre */
 Name: VALERIE
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -3888,11 +3965,56 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sableye
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Absol  
+Level: 62
+Ability: Pressure  
+Tera Type: Dark  
+- Pursuit  
+- Perish Song  
+- Sucker Punch  
+- Play Rough  
 
-=== TRAINER_TASHA === /* Route */
+Gothorita  @ Eviolite
+Level: 62
+Ability: Shadow Tag  
+Tera Type: Psychic  
+- Fake Out  
+- Protect  
+- Toxic  
+- Mystical Power  
+
+Zoroark  
+Level: 62
+Ability: Illusion  
+Tera Type: Dark  
+IVs: 0 Atk  
+- Night Daze  
+- Sludge Bomb  
+- Double Team  
+- Extrasensory  
+
+Jellicent  
+Level: 62
+Ability: Cursed Body  
+Tera Type: Water  
+IVs: 0 Atk  
+- Acid Armor  
+- Scald  
+- Recover  
+- Hex  
+
+Volbeat (M)  
+Level: 62
+Ability: Prankster  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Tail Glow  
+- Tailwind  
+- Signal Beam  
+- Shadow Ball  
+
+
+=== TRAINER_TASHA === /* Mt Pyre */
 Name: TASHA
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -3901,9 +4023,43 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Shuppet
-Level: 32
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Cofagrigus  
+Level: 62
+Ability: Mummy  
+Tera Type: Steel  
+IVs: 0 Atk  
+- Hex  
+- Toxic Spikes  
+- Hidden Power
+- Body Press  
+
+Lycanroc-Midnight @ Big Root  
+Level: 62
+Ability: No Guard  
+Tera Type: Rock  
+- Dynamic Punch  
+- Stone Edge  
+- Leech Life  
+- Crunch  
+
+Dusclops  @ Eviolite
+Level: 62
+Ability: Pressure  
+Tera Type: Ghost  
+- Hex  
+- Leech Life  
+- Shadow Sneak  
+- Fire Punch  
+
+Houndstone  
+Level: 62
+Ability: Sand Rush  
+Tera Type: Ghost  
+- Shadow Bone  
+- Last Respects  
+- Stomping Tantrum  
+- Ice Fang  
+
 
 === TRAINER_VALERIE_2 === /* Route */
 Name: VALERIE
@@ -7062,7 +7218,7 @@ Solrock
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CAMERON_1 === /* Route */
+=== TRAINER_CAMERON_1 === /* Route 123 */ /* TO BE ADDED */
 Name: CAMERON
 Class: Psychic
 Pic: Psychic M
@@ -7234,7 +7390,7 @@ Xatu
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JACKI_1 === /* Route */
+=== TRAINER_JACKI_1 === /* Route 123 */ /* TO BE ADDED */
 Name: JACKI
 Class: Psychic
 Pic: Psychic F
@@ -8348,7 +8504,7 @@ IVs: 0 Atk
 - Freeze-Dry  
 
 
-=== TRAINER_JERRY_1 === /* Route */
+=== TRAINER_JERRY_1 === /* Route 116 */
 Name: JERRY
 Class: School Kid
 Pic: School Kid M
@@ -8357,9 +8513,43 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Ralts
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Pincurchin  @ Shuca Berry
+Ability: Lightning Rod  
+Level: 45  
+Tera Type: Electric  
+- Spiky Shield  
+- Spikes  
+- Zing Zap  
+- Sucker Punch  
+
+Grafaiai @ Toxic Orb  
+Ability: Prankster  
+Level: 45  
+Tera Type: Poison  
+- Encore  
+- Parting Shot  
+- Switcheroo  
+- Copycat  
+
+Dedenne  
+Level: 45  
+Ability: Pickup  
+Tera Type: Electric  
+- Dazzling Gleam  
+- Parabolic Charge  
+- Nuzzle  
+- Ally Switch  
+
+Rotom  
+Level: 45  
+Ability: Levitate  
+Tera Type: Electric  
+IVs: 0 Atk  
+- Hex  
+- Thunder Wave  
+- Foul Play  
+- Eerie Impulse  
+
 
 === TRAINER_TED === /* Route */
 Name: TED
@@ -8467,7 +8657,7 @@ Medicham
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_KAREN_1 === /* Route */
+=== TRAINER_KAREN_1 === /* Route 116 */ /* TO BE ADDED */
 Name: KAREN
 Class: School Kid
 Pic: School Kid F
@@ -9031,7 +9221,7 @@ Minun @ Sitrus Berry
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_TIMOTHY_1 === /* Route */
+=== TRAINER_TIMOTHY_1 === /* Route 115 */
 Name: TIMOTHY
 Class: Expert
 Pic: Expert M
@@ -9339,7 +9529,7 @@ Geodude
 Level: 8
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_JOEY === /* Route */
+=== TRAINER_JOEY === /* Route 116 */ /* TO BE ADDED */
 Name: JOEY
 Class: Youngster
 Pic: Youngster
@@ -12192,6 +12382,16 @@ Tera Type: Fairy
 - Fire Fang  
 - Roar  
 
+Beautifly  @ Charti Berry
+Level: 58
+Ability: Swarm  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Giga Drain  
+- Quiver Dance  
+- Morning Sun  
+- Silver Wind  
+
 
 === TRAINER_ANGELICA === /* Route 120 */
 Name: ANGELICA
@@ -13083,7 +13283,7 @@ Swablu
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CEDRIC === /* Route */
+=== TRAINER_CEDRIC === /* Mt Pyre */
 Name: CEDRIC
 Class: Psychic
 Pic: Psychic M
@@ -13092,13 +13292,45 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wobbuffet
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Destiny Bond
-- Safeguard
-- Counter
-- Mirror Coat
+Chimecho  
+Level: 62
+Ability: Levitate  
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Perish Song  
+- Psychic Noise  
+- Protect  
+- Signal Beam  
+
+Hypno  @ Tanga Berry
+Level: 62
+Ability: Bad Dreams  
+Tera Type: Psychic  
+- Dark Void  
+- Nightmare  
+- Drain Punch  
+- Zen Headbutt  
+
+Slowking-Galar  
+Level: 62
+Ability: Curious Medicine  
+Tera Type: Poison  
+IVs: 0 Atk  
+- Eerie Spell  
+- Hex  
+- Tri Attack  
+- Substitute  
+
+Delphox  
+Level: 62
+Ability: Magician  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Eerie Spell  
+- Mystical Fire  
+- Hex  
+- Confuse Ray  
+
 
 === TRAINER_IRENE === /* Route 111 South */
 Name: IRENE
@@ -13785,22 +14017,62 @@ Absol
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JONAS === /* Route */
+=== TRAINER_JONAS === /* Route 123 */
 Name: JONAS
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Koffing
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Toxic
-- Thunder
-- Self Destruct
-- Sludge Bomb
+Sudowoodo  @ Custap Berry
+Level: 66
+Ability: Sturdy  
+Tera Type: Rock  
+- Copycat  
+- Counter  
+- Explosion  
+- Sucker Punch  
+
+Mimikyu @ Big Root  
+Level: 66
+Ability: Disguise  
+Tera Type: Ghost  
+- Shadow Sneak  
+- Drain Punch  
+- Leech Life  
+- Destiny Bond  
+
+Zoroark-Hisui  
+Level: 66
+Ability: Illusion  
+Tera Type: Normal  
+- Shadow Ball  
+- Shadow Sneak  
+- Encore  
+- Psychic  
+
+Mawile  
+Level: 66
+Ability: Intimidate  
+Tera Type: Steel  
+- Jaw Lock  
+- Pain Split  
+- Sucker Punch  
+- Iron Head  
+
+Noivern @ Ring Target  
+Level: 66
+Ability: Telepathy  
+Tera Type: Flying  
+IVs: 0 Atk  
+- Air Slash  
+- Shadow Ball  
+- Whirlwind  
+- Switcheroo  
+
+
 
 === TRAINER_KAYLEY === /* Route */
 Name: KAYLEY
@@ -13811,13 +14083,45 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Castform
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sunny Day
-- Weather Ball
-- Flamethrower
-- Solar Beam
+Granbull  
+Level: 65
+Ability: Intimidate  
+Tera Type: Fairy  
+- Psychic Fangs  
+- Brick Break  
+- Play Rough  
+- Helping Hand  
+
+Sylveon  @ Light Clay
+Level: 65
+Ability: Pixilate  
+Tera Type: Fairy  
+EVs: 252 Atk  
+- Quick Attack  
+- Hyper Voice  
+- Mystical Fire  
+- Light Screen  
+
+Hatterene (F)  
+Level: 65
+Ability: Magic Bounce  
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Aromatic Mist  
+- Mystical Fire  
+- Psychic  
+
+Gothitelle  
+Level: 65
+Ability: Competitive  
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Energy Ball  
+- Mirror Coat  
+- Psychic  
+- Magic Coat  
+
 
 === TRAINER_AURON === /* Route 125 */
 Name: AURON
@@ -15987,7 +16291,7 @@ Tera Type: Normal
 - Brick Break  
 
 
-=== TRAINER_LORENZO === /* Route 120 */ /* TO BE ADDED */
+=== TRAINER_LORENZO === /* Route 120 */
 Name: LORENZO
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
@@ -15996,17 +16300,42 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Seedot
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Mudsdale  @ Utility Umbrella
+Level: 60
+Ability: Stamina  
+Tera Type: Ground  
+- Body Press  
+- Counter  
+- High Horsepower  
+- Lash Out  
 
-Nuzleaf
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Kangaskhan (F) @ Punching Glove  
+Level: 60
+Ability: Inner Focus  
+Tera Type: Normal  
+- Fire Punch  
+- Ice Punch  
+- Sucker Punch  
+- Thunder Punch  
 
-Lombre
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Komala @ Flame Orb  
+Level: 60
+Ability: Comatose  
+Tera Type: Normal  
+- Yawn  
+- Sucker Punch  
+- Wood Hammer  
+- Fling  
+
+Morpeko @ Sitrus Berry  
+Level: 60
+Ability: Hunger Switch  
+Tera Type: Electric  
+- Aura Wheel  
+- Lash Out  
+- Fake Out  
+- Stomping Tantrum  
+
 
 === TRAINER_SEBASTIAN === /* Route */
 Name: SEBASTIAN
@@ -16714,7 +17043,7 @@ Kadabra
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_CLIFFORD === /* Mossdeep Goomy */
+=== TRAINER_CLIFFORD === /* Mossdeep Gym */
 Name: CLIFFORD
 Class: Gentleman
 Pic: Gentleman
@@ -17867,7 +18196,7 @@ Tera Type: Bug
 - Bug Bite  
 - Electroweb  
 
-=== TRAINER_JOSE === /* Route */
+=== TRAINER_JOSE === /* Route 116 */
 Name: JOSE
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -17876,13 +18205,52 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wurmple
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Gligar @ Yache Berry  
+Level: 48
+Ability: Hyper Cutter  
+Tera Type: Ground  
+- Lunge  
+- Skitter Smack  
+- Crabhammer  
+- Tailwind  
 
-Nincada
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Dunsparce @ Silver Powder  
+Level: 48
+Ability: Rattled  
+Tera Type: Normal  
+- Lunge  
+- Skitter Smack  
+- Roost  
+- Glare  
+
+Yanma  @ Charti Berry
+Level: 48
+Ability: Compound Eyes  
+Tera Type: Bug  
+EVs: 64 SpD / 252 Spe  
+Naive Nature  
+- Air Slash  
+- Hypnosis  
+- Skitter Smack  
+- Steel Wing  
+
+Spewpa  
+Level: 48
+Ability: Friend Guard  
+Tera Type: Bug  
+- Protect  
+- Stun Spore  
+- Pounce  
+- Rage Powder  
+
+Vibrava @ Yache Berry  
+Level: 48
+Ability: Levitate  
+Tera Type: Ground  
+- First Impression  
+- U-turn  
+- Dual Wingbeat  
+
 
 === TRAINER_DOUG === /* Route 119 */
 Name: DOUG
@@ -17951,7 +18319,7 @@ Illumise
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KENT === /* Route */
+=== TRAINER_KENT === /* Route 119 */ /* TO BE ADDED */
 Name: KENT
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -20421,7 +20789,7 @@ Tera Type: Water
 - Zen Headbutt  
 
 
-=== TRAINER_DAWSON === /* Route */
+=== TRAINER_DAWSON === /* Route 116 */
 Name: DAWSON
 Class: Rich Boy
 Pic: Rich Boy
@@ -20430,13 +20798,43 @@ Music: Rich
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon @ Nugget
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Copperajah @ Big Nugget  
+Level: 45
+Ability: Sheer Force  
+Tera Type: Steel  
+- Steel Roller  
+- Power Whip  
+- Brick Break  
+- Outrage  
 
-Poochyena
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pyroar  
+Level: 45
+Ability: Rivalry  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Burning Jealousy  
+- Hyper Voice  
+- Endeavor  
+- Noble Roar  
+
+Sableye  
+Level: 45
+Ability: Keen Eye  
+Tera Type: Dark  
+- Diamond Storm  
+- Power Gem  
+- Dark Pulse  
+- Taunt  
+
+Gigalith  
+Level: 45
+Ability: Solar Power  
+Tera Type: Rock  
+- Diamond Storm  
+- Power Gem  
+- Iron Head  
+- Stealth Rock  
+
 
 === TRAINER_SARAH === /* Route 116 */
 Name: SARAH
@@ -22040,7 +22438,7 @@ Manectric
 Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_ELIJAH === /* Route 109 Surf */
+=== TRAINER_ELIJAH === /* Route 109 Surf */ /* TO BE ADDED */
 Name: ELIJAH
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -22467,7 +22865,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_DEVAN === /* Route */
+=== TRAINER_DEVAN === /* Route 116 */
 Name: DEVAN
 Class: Hiker
 Pic: Hiker
@@ -22476,13 +22874,45 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Minior (Minior-Yellow) @ White Herb 
+Level: 45
+Ability: Shields Down  
+Tera Type: Flying  
+IVs: 0 Atk  
+- Power Gem  
+- Psychic  
+- Hidden Power
+- Shell Smash  
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Probopass @ Shuca Berry  
+Level: 45
+Ability: Sturdy  
+Tera Type: Rock  
+IVs: 0 Atk  
+- Body Press  
+- Earth Power  
+- Stealth Rock  
+- Wide Guard  
+
+Durant  
+Level: 45
+Ability: Swarm  
+Tera Type: Bug  
+- Infestation  
+- Rock Climb  
+- Steel Roller  
+- X-Scissor  
+
+
+Diggersby @ Liechi Berry  
+Level: 45
+Ability: Cheek Pouch  
+Tera Type: Normal  
+- Bulk Up  
+- Super Fang  
+- Foul Play  
+- Power-Up Punch  
+
 
 === TRAINER_JOHNSON === /* Route */
 Name: JOHNSON
