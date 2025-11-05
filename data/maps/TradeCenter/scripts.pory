@@ -477,7 +477,7 @@ script Common_EventScript_RemoveOptionalItems1 {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_109_GREAT_BALL)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_1)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_2)
-	//setflag(FLAG_ITEM_ROUTE_109_POTION)  //not trainer locked
+	//setflag(FLAG_HIDDEN_ITEM_ROUTE_106_STARDUST) //not trainer locked
 	return
 }
 
@@ -559,7 +559,15 @@ script Common_EventScript_RemoveOptionalItems6 {
 }
 
 script Common_EventScript_RemoveOptionalItemsSurfing {
-
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE)
+	setflag(FLAG_ITEM_ROUTE_105_IRON)
+	setflag(FLAG_ITEM_ROUTE_106_PROTEIN)
+	setflag(FLAG_ITEM_ROUTE_108_STAR_PIECE)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_108_RARE_CANDY)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_3)
+	setflag(FLAG_ITEM_ROUTE_109_PP_UP)
+	setflag(FLAG_ITEM_ROUTE_109_POTION)
 	return
 }
 

@@ -148,8 +148,8 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 15,
-      "y": 68,
+      "x": 14,
+      "y": 61,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE"
@@ -159,7 +159,7 @@
       "x": 5,
       "y": 56,
       "elevation": 3,
-      "item": "ITEM_BIG_PEARL",
+      "item": "ITEM_CARBOS",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL"
     }
   ]

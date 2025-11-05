@@ -959,11 +959,29 @@ Common_EventScript_RemoveOptionalItems6::
 
 
 Common_EventScript_RemoveOptionalItemsSurfing::
+# 562 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL
+# 563 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE
+# 564 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_105_IRON
+# 565 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_106_PROTEIN
+# 566 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_108_STAR_PIECE
+# 567 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_108_RARE_CANDY
+# 568 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_3
+# 569 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_109_PP_UP
+# 570 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_109_POTION
 	return
 
 
 Common_EventScript_RemoveOptionalItems7::
-# 567 "data/maps/TradeCenter/scripts.pory"
+# 575 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1
 	return
 
