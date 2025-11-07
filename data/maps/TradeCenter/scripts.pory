@@ -568,6 +568,19 @@ script Common_EventScript_RemoveOptionalItemsSurfing {
 
 script Common_EventScript_RemoveOptionalItems7 {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1) // can be done before Winona
+	setflag(FLAG_ITEM_ROUTE_120_NEST_BALL) // can be done before Winona
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_120_REVIVE)
 	return
 }
 
