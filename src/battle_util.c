@@ -3864,7 +3864,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_DARK_CLOUDS:
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, TRUE) && TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN, 0 /*&gFieldTimers.terrainTimer*/))
+            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, TRUE) && TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_DarkCloudsActivates);
                 effect++;
@@ -5301,7 +5301,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_WIND_RIDER: //newly added to make wind rider activate when sandstorm activates
             if (!gDisableStructs[battler].weatherAbilityDone
              && (gBattleWeather & B_WEATHER_SANDSTORM) && HasWeatherEffect()
-             && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
+             && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility)
              && !gBattleMons[battler].volatiles.transformed)
             {
                 gDisableStructs[battler].weatherAbilityDone = TRUE;

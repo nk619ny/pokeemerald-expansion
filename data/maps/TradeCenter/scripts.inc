@@ -947,42 +947,60 @@ Common_EventScript_RemoveOptionalItems6::
 	setflag FLAG_ITEM_ROUTE_119_RARE_CANDY
 # 552 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_119_NUGGET
-# 553 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_118_HYPER_POTION
-# 554 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_118_HYPER_POTION
-# 555 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_118_HYPER_POTION
-# 556 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_118_HYPER_POTION
 	return
 
 
 Common_EventScript_RemoveOptionalItemsSurfing::
-# 562 "data/maps/TradeCenter/scripts.pory"
+# 557 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL
-# 563 "data/maps/TradeCenter/scripts.pory"
+# 558 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE
-# 564 "data/maps/TradeCenter/scripts.pory"
+# 559 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_105_IRON
-# 565 "data/maps/TradeCenter/scripts.pory"
+# 560 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_106_PROTEIN
-# 566 "data/maps/TradeCenter/scripts.pory"
+# 561 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_108_STAR_PIECE
-# 567 "data/maps/TradeCenter/scripts.pory"
+# 562 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_108_RARE_CANDY
-# 568 "data/maps/TradeCenter/scripts.pory"
+# 563 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_3
-# 569 "data/maps/TradeCenter/scripts.pory"
+# 564 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_109_PP_UP
-# 570 "data/maps/TradeCenter/scripts.pory"
+# 565 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_109_POTION
 	return
 
 
 Common_EventScript_RemoveOptionalItems7::
-# 575 "data/maps/TradeCenter/scripts.pory"
+# 570 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1
+# 571 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_NEST_BALL
+# 572 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 573 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 574 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 575 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 576 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 577 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 578 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 579 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 580 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 581 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 582 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
+# 583 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_REVIVE
 	return
 
 
