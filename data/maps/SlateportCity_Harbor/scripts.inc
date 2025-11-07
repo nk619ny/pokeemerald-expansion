@@ -464,9 +464,7 @@ SlateportCity_Harbor_EventScript_BoardFerry::
 	call_if_eq VAR_FACING, DIR_EAST, SlateportCity_Harbor_EventScript_BoardFerryEast
 # 233 "data/maps/SlateportCity_Harbor/scripts.pory"
 	delay 30
-# 234 "data/maps/SlateportCity_Harbor/scripts.pory"
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-# 235 "data/maps/SlateportCity_Harbor/scripts.pory"
+	hideplayer
 	setvar VAR_0x8004, LOCALID_SLATEPORT_HARBOR_SS_TIDAL
 # 236 "data/maps/SlateportCity_Harbor/scripts.pory"
 	call Common_EventScript_FerryDepart
