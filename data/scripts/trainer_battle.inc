@@ -125,6 +125,8 @@ EventScript_DoTrainerBattle::
 	goto_if_eq VAR_RESULT, TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, EventScript_EndTrainerBattle
 	goto_if_eq VAR_RESULT, TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, EventScript_EndTrainerBattle
 EventScript_EndTrainerBattle::
+	special StartSecondTrainerBattle
+	goto_if_eq VAR_RESULT, TRUE, EventScript_StartTrainerApproach
 	gotobeatenscript
 	releaseall
 	end

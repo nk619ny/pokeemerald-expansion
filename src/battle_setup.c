@@ -1220,7 +1220,7 @@ void ClearTrainerFlag(u16 trainerId)
 
 void BattleSetup_StartTrainerBattle(void)
 {
-    if (gNoOfApproachingTrainers == 2)
+    if (gNoOfApproachingTrainers == 2 && !gSecondTrainerWaiting)
     {
         if (FollowerNPCIsBattlePartner())
             gBattleTypeFlags = (BATTLE_TYPE_MULTI | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
@@ -1245,7 +1245,7 @@ void BattleSetup_StartTrainerBattle(void)
         VarSet(VAR_TEMP_PLAYING_PYRAMID_MUSIC, 0);
         gBattleTypeFlags |= BATTLE_TYPE_PYRAMID;
 
-        if (gNoOfApproachingTrainers == 2)
+        if (gNoOfApproachingTrainers == 2 && !gSecondTrainerWaiting)
         {
             FillFrontierTrainersParties(1);
             ZeroMonData(&gEnemyParty[1]);
@@ -1266,7 +1266,7 @@ void BattleSetup_StartTrainerBattle(void)
     {
         gBattleTypeFlags |= BATTLE_TYPE_TRAINER_HILL;
 
-        if (gNoOfApproachingTrainers == 2)
+        if (gNoOfApproachingTrainers == 2 && !gSecondTrainerWaiting)
             FillHillTrainersParties();
         else
             FillHillTrainerParty();
@@ -1274,7 +1274,13 @@ void BattleSetup_StartTrainerBattle(void)
         SetHillTrainerFlag();
     }
 
-    sNoOfPossibleTrainerRetScripts = gNoOfApproachingTrainers;
+    if (gSecondTrainerWaiting)
+        sNoOfPossibleTrainerRetScripts = 1;  // First battle when second trainer waiting
+    else
+    {
+        sNoOfPossibleTrainerRetScripts = gNoOfApproachingTrainers;
+        gSecondTrainerWaiting = FALSE;  // Only reset when not waiting for second trainer
+    }
     gNoOfApproachingTrainers = 0;
     sShouldCheckTrainerBScript = FALSE;
     gWhichTrainerToFaceAfterBattle = 0;
@@ -1290,7 +1296,13 @@ void BattleSetup_StartTrainerBattle(void)
 
 void BattleSetup_StartTrainerBattle_Debug(void)
 {
-    sNoOfPossibleTrainerRetScripts = gNoOfApproachingTrainers;
+    if (gSecondTrainerWaiting)
+        sNoOfPossibleTrainerRetScripts = 1;  // First battle when second trainer waiting
+    else
+    {
+        sNoOfPossibleTrainerRetScripts = gNoOfApproachingTrainers;
+        gSecondTrainerWaiting = FALSE;  // Only reset when not waiting for second trainer
+    }
     gNoOfApproachingTrainers = 0;
     sShouldCheckTrainerBScript = FALSE;
     gWhichTrainerToFaceAfterBattle = 0;

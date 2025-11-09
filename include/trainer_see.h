@@ -15,11 +15,13 @@ extern struct ApproachingTrainer gApproachingTrainers[2];
 extern u8 gNoOfApproachingTrainers;
 extern bool8 gTrainerApproachedPlayer;
 extern u8 gApproachingTrainerId;
+extern bool8 gSecondTrainerWaiting;
 
 bool8 CheckForTrainersWantingBattle(void);
 void SetBuriedTrainerMovement(struct ObjectEvent *objEvent);
 void DoTrainerApproach(void);
 void TryPrepareSecondApproachingTrainer(void);
+bool8 StartSecondTrainerBattle(void);
 u8 FldEff_ExclamationMarkIcon(void);
 u8 FldEff_QuestionMarkIcon(void);
 u8 FldEff_HeartIcon(void);
