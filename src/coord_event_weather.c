@@ -107,7 +107,7 @@ static void CoordEventWeather_Route119Cycle(void)
 
 static void CoordEventWeather_Route123Cycle(void)
 {
-    if (!FlagGet(FLAG_DEFEATED_DAVIS_123))
+    if (!FlagGet(FLAG_DEFEATED_DAVIS_123) && !FlagGet(FLAG_BADGE06_GET))
         SetWeather(WEATHER_RAIN);
     else
         SetWeather(WEATHER_ROUTE123_CYCLE);

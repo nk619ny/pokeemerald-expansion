@@ -1244,6 +1244,10 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 if (nonVolatileStatus == MOVE_EFFECT_SLEEP)
                     RETURN_SCORE_MINUS(20);
                 break;
+            case ABILITY_WATER_VEIL:
+                if (nonVolatileStatus == MOVE_EFFECT_BURN)
+                    RETURN_SCORE_MINUS(20);
+                break;
             case ABILITY_FLOWER_VEIL:
                 if ((IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS)) && (IsNonVolatileStatusMove(move) || IsStatLoweringEffect(moveEffect)))
                     RETURN_SCORE_MINUS(10);

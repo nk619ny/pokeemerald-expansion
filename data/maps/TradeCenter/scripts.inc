@@ -947,64 +947,144 @@ Common_EventScript_RemoveOptionalItems6::
 	setflag FLAG_ITEM_ROUTE_119_RARE_CANDY
 # 552 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_119_NUGGET
+# 553 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1
+# 554 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_120_NEST_BALL
 	return
 
 
 Common_EventScript_RemoveOptionalItemsSurfing::
-# 557 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL
-# 558 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE
 # 559 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_105_IRON
+	setflag FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL
 # 560 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_106_PROTEIN
+	setflag FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE
 # 561 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_108_STAR_PIECE
+	setflag FLAG_ITEM_ROUTE_105_IRON
 # 562 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_HIDDEN_ITEM_ROUTE_108_RARE_CANDY
+	setflag FLAG_ITEM_ROUTE_106_PROTEIN
 # 563 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_3
+	setflag FLAG_ITEM_ROUTE_108_STAR_PIECE
 # 564 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_109_PP_UP
+	setflag FLAG_HIDDEN_ITEM_ROUTE_108_RARE_CANDY
 # 565 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_3
+# 566 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_109_PP_UP
+# 567 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_109_POTION
 	return
 
 
-Common_EventScript_RemoveOptionalItems7::
-# 570 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1
-# 571 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_NEST_BALL
+Common_EventScript_RemoveOptionalItems7PreSurf::
 # 572 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1
 # 573 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_ITEM_ROUTE_120_NEST_BALL
 # 574 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_120_REVIVE
 # 575 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_2
 # 576 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_ITEM_ROUTE_120_NUGGET
 # 577 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_HIDDEN_ITEM_ROUTE_120_ZINC
 # 578 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_ITEM_ROUTE_120_HYPER_POTION
 # 579 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_ITEM_ROUTE_120_FULL_HEAL
 # 580 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_HIDDEN_ITEM_ROUTE_121_HP_UP
 # 581 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_ITEM_ROUTE_121_CARBOS
 # 582 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_HIDDEN_ITEM_ROUTE_121_MAX_REVIVE
 # 583 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_120_REVIVE
+	setflag FLAG_HIDDEN_ITEM_ROUTE_121_NUGGET
+# 584 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_121_FULL_HEAL
+# 585 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_121_REVIVE
+# 593 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_123_CALCIUM
+# 594 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_123_PP_UP
+# 595 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_123_REVIVAL_HERB
+# 596 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL
+# 597 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_123_HYPER_POTION
+# 598 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_123_PP_UP
+# 599 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY
+# 600 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_123_ELIXIR
+# 602 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL
+# 603 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_MT_PYRE_3F_SUPER_REPEL
+# 604 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE
+# 605 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE
+	return
+
+
+Common_EventScript_RemoveOptionalItems7PostSurf::
+# 611 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_125_BIG_PEARL
+# 613 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_127_ZINC
+# 614 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_127_CARBOS
+# 615 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_127_RARE_CANDY
+# 616 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_2
+# 617 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_1
+# 618 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_3
+# 619 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_132_PROTEIN
+# 620 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_132_RARE_CANDY
+# 621 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_133_BIG_PEARL
+# 622 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_133_STAR_PIECE
+# 623 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_133_MAX_REVIVE
+# 624 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_134_CARBOS
+# 625 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_134_STAR_PIECE
 	return
 
 
 Common_EventScript_RemoveOptionalItems8::
+# 630 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_124_RED_SHARD
+# 631 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_124_YELLOW_SHARD
+# 632 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_124_BLUE_SHARD
+# 633 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_126_GREEN_SHARD
+# 634 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_124_CALCIUM
+# 635 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD
+# 636 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_2
+# 637 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1
+# 638 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL
+# 639 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL
 	return
 
 

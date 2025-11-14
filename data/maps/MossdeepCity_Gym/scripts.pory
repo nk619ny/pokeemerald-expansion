@@ -94,7 +94,8 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	delay 30
 	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
 	setvar VAR_LEVEL_CAP, 73
-	call Common_EventScript_RemoveOptionalItems7
+	call Common_EventScript_RemoveOptionalItems7PreSurf
+	//call Common_EventScript_RemoveOptionalItems7PostSurf //leave these available until post Juan
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
 	release

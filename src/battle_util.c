@@ -5736,6 +5736,14 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABILITY_PREVENTS_MOVE_BURN;
             battleScript = BattleScript_ImmunityProtected;
         }
+        else if ((sideBattler = IsAbilityOnSide(battlerDef, ABILITY_WATER_VEIL)))
+        {
+            abilityAffected = TRUE;
+            battlerDef = sideBattler - 1;
+            abilityDef = ABILITY_WATER_VEIL;
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STATUS_HAD_NO_EFFECT;
+            battleScript = BattleScript_ImmunityProtected;
+        }
         else if (abilityDef == ABILITY_THERMAL_EXCHANGE)
         {
             abilityAffected = TRUE;
