@@ -433,6 +433,15 @@ $(OBJEVENTGFXDIR)/people/sada.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/turo.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/people/diver_f.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+$(OBJEVENTGFXDIR)/people/diver_m.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+$(OBJEVENTGFXDIR)/people/lisia.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+$(OBJEVENTGFXDIR)/people/zinnia.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
 $(OBJEVENTGFXDIR)/people/brawly_oras.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 

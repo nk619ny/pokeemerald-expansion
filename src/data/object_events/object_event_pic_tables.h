@@ -753,6 +753,54 @@ static const struct SpriteFrameImage sPicTable_Sada[] = {
     overworld_frame(gObjectEventPic_Sada, 2, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_DiverM[] = {
+    overworld_frame(gObjectEventPic_DiverM, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DiverM, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DiverM, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DiverM, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DiverM, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DiverM, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DiverM, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DiverM, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DiverM, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_DiverF[] = {
+    overworld_frame(gObjectEventPic_DiverF, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DiverF, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DiverF, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DiverF, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DiverF, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DiverF, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DiverF, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DiverF, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DiverF, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Lisia[] = {
+    overworld_frame(gObjectEventPic_Lisia, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Lisia, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Lisia, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Lisia, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Lisia, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Lisia, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Lisia, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Lisia, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Lisia, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Zinnia[] = {
+    overworld_frame(gObjectEventPic_Zinnia, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Zinnia, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Zinnia, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Zinnia, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Zinnia, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Zinnia, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Zinnia, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Zinnia, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Zinnia, 2, 4, 8),
+};
+
 static const struct SpriteFrameImage sPicTable_SSTidal[] = {
     obj_frame_tiles(gObjectEventPic_SSTidal),
     obj_frame_tiles(gObjectEventPic_SSTidal),

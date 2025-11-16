@@ -256,11 +256,15 @@
 #define OBJ_EVENT_GFX_TURO                       249
 #define OBJ_EVENT_GFX_SADA                       250
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               251
+#define OBJ_EVENT_GFX_DIVER_F                    252
+#define OBJ_EVENT_GFX_DIVER_M                    253
+#define OBJ_EVENT_GFX_LISIA                      254
+#define OBJ_EVENT_GFX_ZINNIA                     255
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        252
+#define NUM_OBJ_EVENT_GFX                        1024
 
 
 // These are dynamic object gfx ids.
@@ -400,6 +404,10 @@
 #define OBJ_EVENT_PAL_TAG_VITO                    0x112C
 #define OBJ_EVENT_PAL_TAG_TURO                    0x112D
 #define OBJ_EVENT_PAL_TAG_SADA                    0x112E
+#define OBJ_EVENT_PAL_TAG_DIVER_M                 0x112F
+#define OBJ_EVENT_PAL_TAG_DIVER_F                 0x1130
+#define OBJ_EVENT_PAL_TAG_ZINNIA                  0x1131
+#define OBJ_EVENT_PAL_TAG_LISIA                   0x1132
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

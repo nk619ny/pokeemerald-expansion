@@ -246,6 +246,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrawlyORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Vito;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Turo;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sada;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lisia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zinnia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DiverM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DiverF;
 
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
@@ -513,6 +517,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_VITO] =                     &gObjectEventGraphicsInfo_Vito,
     [OBJ_EVENT_GFX_TURO] =                     &gObjectEventGraphicsInfo_Turo,
     [OBJ_EVENT_GFX_SADA] =                     &gObjectEventGraphicsInfo_Sada,
+    [OBJ_EVENT_GFX_LISIA] =                    &gObjectEventGraphicsInfo_Lisia,
+    [OBJ_EVENT_GFX_ZINNIA] =                   &gObjectEventGraphicsInfo_Zinnia,
+    [OBJ_EVENT_GFX_DIVER_M] =                  &gObjectEventGraphicsInfo_DiverM,
+    [OBJ_EVENT_GFX_DIVER_F] =                  &gObjectEventGraphicsInfo_DiverF,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

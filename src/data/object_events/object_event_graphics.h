@@ -412,6 +412,15 @@ const u16 gObjectEventPal_Sada[] = INCBIN_U16("graphics/object_events/pics/peopl
 const u32 gObjectEventPic_Turo[] = INCBIN_U32("graphics/object_events/pics/people/turo.4bpp");
 const u16 gObjectEventPal_Turo[] = INCBIN_U16("graphics/object_events/pics/people/turo.gbapal");
 
+const u32 gObjectEventPic_DiverM[] = INCBIN_U32("graphics/object_events/pics/people/diver_m.4bpp");
+const u16 gObjectEventPal_DiverM[] = INCBIN_U16("graphics/object_events/pics/people/diver_m.gbapal");
+const u32 gObjectEventPic_DiverF[] = INCBIN_U32("graphics/object_events/pics/people/diver_f.4bpp");
+const u16 gObjectEventPal_DiverF[] = INCBIN_U16("graphics/object_events/pics/people/diver_f.gbapal");
+const u32 gObjectEventPic_Lisia[] = INCBIN_U32("graphics/object_events/pics/people/lisia.4bpp");
+const u16 gObjectEventPal_Lisia[] = INCBIN_U16("graphics/object_events/pics/people/lisia.gbapal");
+const u32 gObjectEventPic_Zinnia[] = INCBIN_U32("graphics/object_events/pics/people/zinnia.4bpp");
+const u16 gObjectEventPal_Zinnia[] = INCBIN_U16("graphics/object_events/pics/people/zinnia.gbapal");
+
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 
