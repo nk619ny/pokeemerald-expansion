@@ -1085,6 +1085,30 @@ Common_EventScript_RemoveOptionalItems8::
 	setflag FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL
 # 639 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL
+# 642 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD
+# 643 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL
+# 644 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON
+# 645 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD
+# 646 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL
+# 647 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE
+# 648 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST
+# 649 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD
+# 650 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD
+# 651 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD
+# 652 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD
+# 653 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD
 	return
 
 

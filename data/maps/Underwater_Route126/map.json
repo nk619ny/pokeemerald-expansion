@@ -29,7 +29,74 @@
       "direction": "emerge"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_DIVER_BARRY",
+      "graphics_id": "OBJ_EVENT_GFX_DIVER_M",
+      "x": 42,
+      "y": 66,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Underwater_Route126_EventScript_DiverBarry",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVER_F",
+      "x": 38,
+      "y": 17,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Route126_EventScript_Nikki",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVER_F",
+      "x": 11,
+      "y": 38,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Route126_EventScript_Brenda",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVER_M",
+      "x": 27,
+      "y": 14,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Underwater_Route126_EventScript_Leonardo",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVER_M",
+      "x": 64,
+      "y": 19,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 9,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Underwater_Route126_EventScript_Dean",
+      "flag": "0"
+    }
+  ],
   "warp_events": [
     {
       "x": 45,
@@ -46,7 +113,7 @@
       "x": 30,
       "y": 17,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
+      "item": "ITEM_HP_UP",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE"
     },
     {
@@ -54,15 +121,15 @@
       "x": 41,
       "y": 19,
       "elevation": 3,
-      "item": "ITEM_ULTRA_BALL",
+      "item": "ITEM_PROTEIN",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL"
     },
     {
       "type": "hidden_item",
-      "x": 63,
-      "y": 19,
+      "x": 65,
+      "y": 18,
       "elevation": 3,
-      "item": "ITEM_STARDUST",
+      "item": "ITEM_CARBOS",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST"
     },
     {
@@ -76,7 +143,7 @@
     {
       "type": "hidden_item",
       "x": 11,
-      "y": 39,
+      "y": 43,
       "elevation": 3,
       "item": "ITEM_IRON",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON"
@@ -102,7 +169,7 @@
       "x": 9,
       "y": 77,
       "elevation": 3,
-      "item": "ITEM_BLUE_SHARD",
+      "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD"
     }
   ]

@@ -2,4 +2,45 @@ raw `
 Underwater_Route126_MapScripts::
 	.byte 0
 
+Route126_EventScript_Nikki::
+	trainerbattle_single TRAINER_NIKKI, Route126_Text_NikkiIntro, Route126_Text_NikkiDefeat
+	msgbox Route126_Text_NikkiPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route126_EventScript_Brenda::
+	trainerbattle_single TRAINER_BRENDA, Route126_Text_BrendaIntro, Route126_Text_BrendaDefeat
+	msgbox Route126_Text_BrendaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Underwater_Route126_EventScript_Leonardo::
+	trainerbattle_single TRAINER_LEONARDO, Route126_Text_LeonardoIntro, Route126_Text_LeonardoDefeat
+	msgbox Route126_Text_LeonardoPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Underwater_Route126_EventScript_Dean::
+	trainerbattle_single TRAINER_DEAN, Route126_Text_DeanIntro, Route126_Text_DeanDefeat
+	msgbox Route126_Text_DeanPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 `
+
+script Underwater_Route126_EventScript_DiverBarry{
+    trainerbattle_single(TRAINER_BARRY, Underwater_Route126_Text_DiverBarryIntro, Underwater_Route126_Text_DiverBarryDefeat,Underwater_Route126_EventScript_ResetDiverMovement)
+    msgbox(Underwater_Route126_Text_DiverBarryPostBattle, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Underwater_Route126_Text_DiverBarryIntro{
+	format("Sootopolis City is just ahead!")
+}
+text Underwater_Route126_Text_DiverBarryDefeat{
+	format("Wow, you might be as strong as Juan or Wallace!")
+}
+text Underwater_Route126_Text_DiverBarryPostBattle{
+	format("Growing up in Sootopolis, we all learn to dive at a young age.")
+}
+
+script Underwater_Route126_EventScript_ResetDiverMovement{
+	//applymovement(LOCALID_DIVER_BARRY,MOVEMENT)
+	return
+}

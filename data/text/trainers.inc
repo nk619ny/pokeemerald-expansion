@@ -3997,7 +3997,7 @@ Route126_Text_PabloPostRematch:
 
 Route126_Text_LeonardoIntro:
 	.string "I couldn't even swim last year,\n"
-	.string "but now I'm a decent SWIMMER.\p"
+	.string "but now I'm a decent diver.\p"
 	.string "I think I'm capable of anything now.$"
 
 Route126_Text_LeonardoDefeat:

@@ -5284,7 +5284,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BARRY === /* Route */
 Name: BARRY
-Class: Swimmer M
+Class: Diver
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
@@ -5297,7 +5297,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEAN === /* Route */
 Name: DEAN
-Class: Swimmer M
+Class: Diver
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
@@ -12808,7 +12808,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NIKKI === /* Route */
 Name: NIKKI
-Class: Swimmer F
+Class: Diver
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
@@ -12825,7 +12825,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRENDA === /* Route */
 Name: BRENDA
-Class: Swimmer F
+Class: Diver
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
