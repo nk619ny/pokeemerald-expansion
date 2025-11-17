@@ -7,4 +7,9 @@ Underwater_Route127_OnResume:
 	call AbnormalWeather_Underwater_SetupEscapeWarp
 	end
 
+Underwater_Route127_EventScript_Camden::
+	trainerbattle_single TRAINER_CAMDEN, Route127_Text_CamdenIntro, Route127_Text_CamdenDefeat
+	msgbox Route127_Text_CamdenPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 `

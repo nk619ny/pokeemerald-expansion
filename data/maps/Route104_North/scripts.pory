@@ -269,6 +269,12 @@ Route104_North_EventScript_Darian::
 	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route104_North_EventScript_Bruce::
+	trainerbattle_single TRAINER_BRUCE, Route104_Text_BruceIntro, Route104_Text_BruceDefeat
+	msgbox Route104_Text_BrucePostBattle, MSGBOX_AUTOCLOSE
+	end
+
 `
 
 script Route104_North_EventScript_SetBrokenBridge {
@@ -279,4 +285,16 @@ script Route104_North_EventScript_SetBrokenBridge {
 		setmetatile(27,16,0x20F,TRUE)
 		setmetatile(27,17,0x208,TRUE)
 		return
+}
+
+text Route104_Text_BruceIntro{
+	format("Shh! You'll scare away the birds!")
+}
+
+text Route104_Text_BruceDefeat{
+	format("You really ruffled my feathers...")
+}
+
+text Route104_Text_BrucePostBattle{
+	format("Bird watching takes a lot of patience, and quiet.")
 }

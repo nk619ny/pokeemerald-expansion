@@ -3800,8 +3800,8 @@ Route125_Text_StanDefeat:
 	.string "I floundered…$"
 
 Route125_Text_StanPostBattle:
-	.string "I was blown away by HORSEA's charm,\n"
-	.string "so I started swimming, too.$"
+	.string "The deep sea has such a unique\n"
+	.string "charm to it.$"
 
 Route125_Text_TanyaIntro:
 	.string "I'm tired of swimming.\n"
@@ -3997,7 +3997,7 @@ Route126_Text_PabloPostRematch:
 
 Route126_Text_LeonardoIntro:
 	.string "I couldn't even swim last year,\n"
-	.string "but now I'm a decent diver.\p"
+	.string "but now I'm a decent Diver.\p"
 	.string "I think I'm capable of anything now.$"
 
 Route126_Text_LeonardoDefeat:

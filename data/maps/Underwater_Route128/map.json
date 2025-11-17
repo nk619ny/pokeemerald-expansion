@@ -24,7 +24,21 @@
       "direction": "emerge"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DIVER_F",
+      "x": 40,
+      "y": 18,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Underwater_Route128_EventScript_Katelyn",
+      "flag": "0"
+    }
+  ],
   "warp_events": [
     {
       "x": 38,
@@ -38,8 +52,8 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 38,
-      "y": 19,
+      "x": 36,
+      "y": 16,
       "elevation": 3,
       "item": "ITEM_PROTEIN",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN"

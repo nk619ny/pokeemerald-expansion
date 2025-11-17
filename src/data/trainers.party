@@ -3821,68 +3821,145 @@ Tropius
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BROOKE_2 === /* Route */
-Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
+=== TRAINER_BRUCE === /* Route 104 North */
+Name: BRUCE
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wingull
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Pidgey  
+Ability: Keen Eye  
+Level: 14
+Tera Type: Normal  
+- Wing Attack  
+- Quick Attack  
+- U-turn  
+- Whirlwind  
 
-Numel
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Piplup  
+Ability: Torrent  
+Level: 14
+Tera Type: Water  
+- Pluck  
+- Icy Wind  
+- Chilling Water  
 
-Roselia
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Rowlet  
+Ability: Overgrow  
+Level: 12  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Air Cutter  
+- Leafage
+- Night Shade  
+- Confuse Ray  
 
-=== TRAINER_BROOKE_3 === /* Route */
-Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
+Pikipek  
+Ability: Skill Link  
+Tera Type: Normal 
+Level: 12 
+- Bullet Seed  
+- Fury Attack  
+- Endeavor  
+
+
+=== TRAINER_JIMMY === /* Route 104 */
+Name: JIMMY
+Class: School Kid
+Pic: School Kid M
+Gender: Male
+Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Pelipper
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Gible  
+Ability: Rough Skin  
+Level: 11  
+Tera Type: Dragon  
+- Bite  
+- Fire Fang  
+- Thunder Fang  
+- Roar  
 
-Numel
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Riolu @ Sticky Barb  
+Ability: Prankster  
+Level: 12  
+Tera Type: Fighting  
+- Coaching  
+- Double Team  
+- Fling  
+- Quick Attack  
 
-Roselia
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Charcadet  
+Ability: Flame Body  
+Level: 11  
+Tera Type: Fire  
+- Night Shade  
+- Confuse Ray  
+- Fire Spin  
+- Flame Charge  
 
-=== TRAINER_BROOKE_4 === /* Route */
+Rattata  
+Ability: Run Away  
+Level: 12  
+Tera Type: Normal  
+- Super Fang  
+- Quick Attack  
+- Bite  
+
+
+=== TRAINER_HATTORI === /* Petalburg Woods */
 Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: Male
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Pelipper
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Foongus  @ Black Sludge
+Level: 34
+Ability: Effect Spore  
+Tera Type: Grass  
+EVs: 128 Def / 128 SpD  
+IVs: 0 Atk  
+- Rage Powder  
+- Clear Smog  
+- Spore  
+- Protect  
 
-Numel
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Skorupi  @ Scope Lens
+Level: 34
+Ability: Sniper  
+Tera Type: Poison  
+- Cross Poison  
+- Fell Stinger  
+- Toxic Spikes  
+- Baneful Bunker  
 
-Roselia
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Trapinch  @ Focus Sash
+Level: 34
+Ability: Arena Trap  
+Tera Type: Ground  
+- First Impression  
+- Jaw Lock  
+- Dig  
+- Quick Attack  
+
+Grimer  @ Black Sludge
+Level: 34
+Ability: Gooey  
+Tera Type: Poison  
+IVs: 0 Atk  
+- Toxic  
+- Acid Armor  
+- Acid Spray  
+- Flamethrower  
+
+
 
 === TRAINER_BROOKE_5 === /* Route */
 Name: BROOKE
@@ -5256,9 +5333,9 @@ IVs: 0 Atk
 - Shell Smash
 
 
-=== TRAINER_NOLEN === /* Route */
+=== TRAINER_NOLEN === /* Underwater 124 */ /* TO BE ADDED */
 Name: NOLEN
-Class: Swimmer M
+Class: Diver
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
@@ -5269,9 +5346,9 @@ Tentacruel
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_STAN === /* Route */
+=== TRAINER_STAN === /* Underwater 128 */ /* TO BE ADDED */
 Name: STAN
-Class: Swimmer M
+Class: Diver
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
@@ -11147,9 +11224,9 @@ Staryu
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KATELYN_1 === /* Route */
+=== TRAINER_KATELYN_1 === /* Underwater 128 */ /* TO BE ADDED */
 Name: KATELYN
-Class: Triathlete
+Class: Diver
 Pic: Swimming Triathlete F
 Gender: Female
 Music: Swimmer
@@ -12780,9 +12857,9 @@ IVs: 0 Atk
 - Signal Beam
 
 
-=== TRAINER_TANYA === /* Route */
+=== TRAINER_TANYA === /* Underwater 124 */ /* TO BE ADDED */
 Name: TANYA
-Class: Swimmer F
+Class: Diver
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
@@ -17366,9 +17443,9 @@ Breloom
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ISABELLA === /* Route */
+=== TRAINER_ISABELLA === /* Underwater 124 */ /* TO BE ADDED */
 Name: ISABELLA
-Class: Triathlete
+Class: Diver
 Pic: Swimming Triathlete F
 Gender: Female
 Music: Swimmer

@@ -999,6 +999,11 @@ Route104_EventScript_Darian::
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route104_EventScript_Jimmy::
+	trainerbattle_single TRAINER_JIMMY, Route104_Text_JimmyIntro, Route104_Text_JimmyDefeat
+	msgbox Route104_Text_JimmyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 Route104_Text_BrineyLivesInSeasideCottage:
 	.string "That seaside cottage is where\n"
 	.string "MR. BRINEY lives.\p"
@@ -1271,4 +1276,16 @@ script Route104_EventScript_TryDarianGiftAfterBattle {
 
 text Route104_Text_NewFishermanPostBattle {
 	format("Sometimes objects get caught in my fishing line.\pUsually it's junk, so I just throw them away.")
+}
+
+text Route104_Text_JimmyIntro{
+	format("I want to do one more battle before I head home!")
+}
+
+text Route104_Text_JimmyDefeat{
+	format("Maybe my Mom will let me do one more...")
+}
+
+text Route104_Text_JimmyPostBattle{
+	format("My Dad says raising Pokémon will teach me responsibility.")
 }

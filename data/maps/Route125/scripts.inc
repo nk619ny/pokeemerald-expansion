@@ -47,9 +47,9 @@ Route125_OnFrame:
 # 24 "data/maps/Route125/scripts.pory"
 Route125_EventScript_Nolen::
 # 25 "data/maps/Route125/scripts.pory"
-	trainerbattle_single TRAINER_NOLEN, Route125_Text_NolenIntro, Route125_Text_NolenDefeat
+	//trainerbattle_single TRAINER_NOLEN, Route125_Text_NolenIntro, Route125_Text_NolenDefeat
 # 26 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_NolenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route125_Text_NolenNoBattle, MSGBOX_AUTOCLOSE
 # 27 "data/maps/Route125/scripts.pory"
 	end
 # 28 "data/maps/Route125/scripts.pory"
@@ -57,9 +57,9 @@ Route125_EventScript_Nolen::
 # 29 "data/maps/Route125/scripts.pory"
 Route125_EventScript_Stan::
 # 30 "data/maps/Route125/scripts.pory"
-	trainerbattle_single TRAINER_STAN, Route125_Text_StanIntro, Route125_Text_StanDefeat
+	//trainerbattle_single TRAINER_STAN, Route125_Text_StanIntro, Route125_Text_StanDefeat
 # 31 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_StanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route125_Text_StanNoBattle, MSGBOX_AUTOCLOSE
 # 32 "data/maps/Route125/scripts.pory"
 	end
 # 33 "data/maps/Route125/scripts.pory"
@@ -67,9 +67,9 @@ Route125_EventScript_Stan::
 # 34 "data/maps/Route125/scripts.pory"
 Route125_EventScript_Tanya::
 # 35 "data/maps/Route125/scripts.pory"
-	trainerbattle_single TRAINER_TANYA, Route125_Text_TanyaIntro, Route125_Text_TanyaDefeat
+	//trainerbattle_single TRAINER_TANYA, Route125_Text_TanyaIntro, Route125_Text_TanyaDefeat
 # 36 "data/maps/Route125/scripts.pory"
-	msgbox Route125_Text_TanyaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route125_Text_TanyaNoBattle, MSGBOX_AUTOCLOSE
 # 37 "data/maps/Route125/scripts.pory"
 	end
 # 38 "data/maps/Route125/scripts.pory"
@@ -164,3 +164,18 @@ Route125_EventScript_Auron::
 	msgbox Route125_Text_AuronPostBattle, MSGBOX_AUTOCLOSE
 # 83 "data/maps/Route125/scripts.pory"
 	end
+
+Route125_Text_NolenNoBattle::
+# 87 "data/maps/Route125/scripts.pory"
+	.string "The water gets colder out here.$"
+
+Route125_Text_TanyaNoBattle::
+# 91 "data/maps/Route125/scripts.pory"
+	.string "I never get tired of swimming!\p"
+	.string "It's exercise, play, and calming all in\n"
+	.string "one!$"
+
+Route125_Text_StanNoBattle::
+# 95 "data/maps/Route125/scripts.pory"
+	.string "The ocean is so vast and beautiful.\p"
+	.string "I could swim here forever!$"

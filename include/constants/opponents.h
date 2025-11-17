@@ -104,10 +104,10 @@
 #define TRAINER_MICHELLE                     98
 #define TRAINER_CAROLINE                     99
 #define TRAINER_JULIE                       100
-#define TRAINER_BROOKE_2                    101
-#define TRAINER_BROOKE_3                    102
-#define TRAINER_BROOKE_4                    103
-#define TRAINER_BROOKE_5                    104
+#define TRAINER_BRUCE                       101 //was Brooke rematches, repurposed
+#define TRAINER_JIMMY                       102 //was Brooke rematches, repurposed
+#define TRAINER_HATTORI                     103 //was Brooke rematches, repurposed
+#define TRAINER_BROOKE_5                    104 //was Brooke rematches, repurposed
 #define TRAINER_PATRICIA                    105
 #define TRAINER_KINDRA                      106
 #define TRAINER_TAMMY                       107

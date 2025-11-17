@@ -7,7 +7,7 @@ PetalburgWoods_MapScripts::
 	.byte 0
 
 PetalburgWoods_OnLoad:
-	call_if_unset FLAG_DEFEATED_NORMAN_INTRO PetalburgWoods_EventScript_HideMysteryGrotto
+	//call_if_unset FLAG_DEFEATED_NORMAN_INTRO PetalburgWoods_EventScript_HideMysteryGrotto
 	end
 
 //PetalburgWoods_EventScript_DevonResearcherLeft::
@@ -327,6 +327,11 @@ PetalburgWoods_EventScript_JamesRematch::
 	msgbox PetalburgWoods_Text_IveBeenTrainingHard, MSGBOX_AUTOCLOSE
 	end
 
+PetalburgWoods_EventScript_Hattori::
+	trainerbattle_single TRAINER_HATTORI, PetalburgWoods_Text_HattoriIntro, PetalburgWoods_Text_HattoriDefeat
+	msgbox PetalburgWoods_Text_HattoriPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 PetalburgWoods_Text_NotAOneToBeFound:
 	.string "Hmmm…\n"
 	.string "Not a one to be found…$"
@@ -556,6 +561,18 @@ movement PetalburgWoods_Movement_PeekoEscape {
 movement PetalburgWoods_Movement_AquaGruntFlee {
 	walk_fast_up * 5
 	walk_fast_right * 8
+}
+
+text PetalburgWoods_Text_HattoriIntro {
+	format("Bet you didn't see me hidden among the trees!")
+}
+
+text PetalburgWoods_Text_HattoriDefeat {
+	format("Did you know I was here all along?")
+}
+
+text PetalburgWoods_Text_HattoriPostBattle {
+	format("Maybe I'm not using the right tree disguise...")
 }
 
 //script PetalburgWoods_EventScript_AquaGruntLeft {

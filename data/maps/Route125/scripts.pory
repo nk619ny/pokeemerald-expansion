@@ -22,18 +22,18 @@ Route125_OnFrame:
 	.2byte 0
 
 Route125_EventScript_Nolen::
-	trainerbattle_single TRAINER_NOLEN, Route125_Text_NolenIntro, Route125_Text_NolenDefeat
-	msgbox Route125_Text_NolenPostBattle, MSGBOX_AUTOCLOSE
+	//trainerbattle_single TRAINER_NOLEN, Route125_Text_NolenIntro, Route125_Text_NolenDefeat
+	msgbox Route125_Text_NolenNoBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route125_EventScript_Stan::
-	trainerbattle_single TRAINER_STAN, Route125_Text_StanIntro, Route125_Text_StanDefeat
-	msgbox Route125_Text_StanPostBattle, MSGBOX_AUTOCLOSE
+	//trainerbattle_single TRAINER_STAN, Route125_Text_StanIntro, Route125_Text_StanDefeat
+	msgbox Route125_Text_StanNoBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route125_EventScript_Tanya::
-	trainerbattle_single TRAINER_TANYA, Route125_Text_TanyaIntro, Route125_Text_TanyaDefeat
-	msgbox Route125_Text_TanyaPostBattle, MSGBOX_AUTOCLOSE
+	//trainerbattle_single TRAINER_TANYA, Route125_Text_TanyaIntro, Route125_Text_TanyaDefeat
+	msgbox Route125_Text_TanyaNoBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route125_EventScript_Sharon::
@@ -83,3 +83,15 @@ Route125_EventScript_Auron::
 	end
 
 `
+
+text Route125_Text_NolenNoBattle{
+	format("The water gets colder out here.")
+}
+
+text Route125_Text_TanyaNoBattle{
+	format("I never get tired of swimming!\pIt's exercise, play, and calming all in one!")
+}
+
+text Route125_Text_StanNoBattle	{
+	format("The ocean is so vast and beautiful.\pI could swim here forever!")
+}

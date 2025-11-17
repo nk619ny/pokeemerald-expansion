@@ -76,7 +76,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_X_ATTACK",
+      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_PETALBURG_WOODS_X_ATTACK"
     },
@@ -184,6 +184,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgWoods_EventScript_PeekoTalk",
       "flag": "FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "x": 30,
+      "y": 36,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PetalburgWoods_EventScript_Boy2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 37,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "PetalburgWoods_EventScript_Hattori",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -231,7 +257,7 @@
     },
     {
       "x": 27,
-      "y": 7,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ROUTE104_NORTH",
       "dest_warp_id": "1"
@@ -249,7 +275,7 @@
     },
     {
       "type": "hidden_item",
-      "x": 39,
+      "x": 40,
       "y": 37,
       "elevation": 3,
       "item": "ITEM_POTION",

@@ -96,8 +96,8 @@ Route124_EventScript_Declan::
 	end
 
 Route124_EventScript_Isabella::
-	trainerbattle_single TRAINER_ISABELLA, Route124_Text_IsabellaIntro, Route124_Text_IsabellaDefeat
-	msgbox Route124_Text_IsabellaPostBattle, MSGBOX_AUTOCLOSE
+	//trainerbattle_single TRAINER_ISABELLA, Route124_Text_IsabellaIntro, Route124_Text_IsabellaDefeat
+	msgbox Route124_Text_IsabellaNoBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route124_Text_HuntersHouse:
@@ -111,4 +111,8 @@ script Route124_EventScript_BlockSootopolis {
 	waitmessage
 	release
 	end
+}
+
+text Route124_Text_IsabellaNoBattle{
+	format("There are lots of places where you can dive around here.")
 }

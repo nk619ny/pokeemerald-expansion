@@ -110,6 +110,7 @@ script Common_EventScript_CheckIfHideoutsComplete {
 		setflag(FLAG_BOTH_HIDEOUTS_COMPLETE)
 		setvar(VAR_LEVEL_CAP,68)
 		clearflag(FLAG_HIDE_LILYCOVE_CITY_RIVAL)
+		call(Common_EventScript_RemoveOptionalItems7PreSurf)
 	}
 	else{
 		setvar(VAR_LEVEL_CAP,66)
@@ -199,19 +200,6 @@ script MauvilleCity_EventScript_Temporary{
 	closemessage
 	releaseall
 	end
-}
-
-script Common_EventScript_HideGym0OptionalRewards {
-	setflag(FLAG_ITEM_ROUTE_102_POTION)
-	setflag(FLAG_ITEM_ROUTE_104_POTION)
-	setflag(FLAG_ITEM_ROUTE_104_X_ACCURACY)
-	setflag(FLAG_ITEM_ROUTE_104_NORTH_NEW)
-	return
-}
-
-script Common_EventScript_HideGym1OptionalRewards {
-	setflag(FLAG_RECEIVED_6_SODA_POP)
-	return
 }
 
 script Common_EventScipt_CheckForBerryTreeEncounter {
@@ -459,13 +447,14 @@ script Common_EventScript_RemoveOptionalItems0 {
 	setflag(FLAG_ITEM_ROUTE_104_X_ACCURACY)
 	setflag(FLAG_ITEM_ROUTE_104_NORTH_NEW)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE)
-	setflag(FLAG_HIDDEN_ITEM_ROUTE_104_POTION) //unplaced
-	//setflag(FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE) //not currently trainer locked
+	//setflag(FLAG_HIDDEN_ITEM_ROUTE_104_POTION) //unplaced
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL) 
-	setflag(FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION) //unplaced
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION) 
 	//setflag(FLAG_ITEM_PETALBURG_WOODS_ETHER) // not set
 	//setflag(FLAG_HIDDEN_ITEM_PETALBURG_WOODS_POKE_BALL) // not set
 	setflag(FLAG_ITEM_PETALBURG_WOODS_PARALYZE_HEAL) 
+	setflag(FLAG_ITEM_ROUTE_104_POKE_BALL)
 	return
 }
 
@@ -496,6 +485,7 @@ script Common_EventScript_RemoveOptionalItems2 {
 	setflag(FLAG_ITEM_ROUTE_116_HP_UP)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_116_BLACK_GLASSES)
 	setflag(FLAG_ITEM_ROUTE_111_ELIXIR)
+	setflag(FLAG_ITEM_PETALBURG_WOODS_X_ATTACK)
 	return
 }
 
@@ -526,6 +516,10 @@ script Common_EventScript_RemoveOptionalItems4 {
 	setflag(FLAG_ITEM_ROUTE_116_POTION)
 	setflag(FLAG_ITEM_ROUTE_116_X_SPECIAL)
 	setflag(FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_111_RARE_CANDY)
+	setflag(FLAG_ITEM_ROUTE_111_STARDUST)
+	setflag(FLAG_ITEM_ROUTE_111_TM_SANDSTORM) //
 	return
 }
 
@@ -609,7 +603,6 @@ script Common_EventScript_RemoveOptionalItems7PreSurf {
 
 script Common_EventScript_RemoveOptionalItems7PostSurf {
 	setflag(FLAG_ITEM_ROUTE_125_BIG_PEARL)
-
 	setflag(FLAG_ITEM_ROUTE_127_ZINC)
 	setflag(FLAG_ITEM_ROUTE_127_CARBOS)
 	setflag(FLAG_ITEM_ROUTE_127_RARE_CANDY)
@@ -637,6 +630,7 @@ script Common_EventScript_RemoveOptionalItems8 {
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1)
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL)
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL)
+	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS)
 
 
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD)
@@ -646,11 +640,14 @@ script Common_EventScript_RemoveOptionalItems8 {
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL) //unused
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE)
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST)
-	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD)
-	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD)
-	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD)
-	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD)
-	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD)
+	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL) //unused
+	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN)
+
+	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP)
+	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD) //unused
+	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE) //unused
+	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE) //unused
+
 
 	return
 }

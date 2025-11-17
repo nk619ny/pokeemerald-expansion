@@ -2,4 +2,35 @@ raw `
 Underwater_Route124_MapScripts::
 	.byte 0
 
+Underwater_Route124_EventScript_Nolen::
+	trainerbattle_single TRAINER_NOLEN, Route125_Text_NolenIntro, Route125_Text_NolenDefeat
+	msgbox Route125_Text_NolenPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Underwater_Route124_EventScript_Tanya::
+	trainerbattle_single TRAINER_TANYA, Route125_Text_TanyaIntro, Route125_Text_TanyaDefeat
+	msgbox Route125_Text_TanyaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Underwater_Route124_EventScript_Stan::
+	trainerbattle_single TRAINER_STAN, Route125_Text_StanIntro, Route125_Text_StanDefeat
+	msgbox Route125_Text_StanPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 `
+
+script Underwater_Route124_EventScript_Isabella{
+	trainerbattle_single(TRAINER_ISABELLA, Underwater_Route124_Text_IsabellaIntro, Underwater_Route124_Text_IsabellaDefeat)
+	msgbox(Underwater_Route124_Text_IsabellaPostBattle, MSGBOX_AUTOCLOSE)
+	end
+}
+
+text Underwater_Route124_Text_IsabellaIntro{
+	format("I'm not going to lose to some Trainer that needs Pokémon to Dive.")
+}
+text Underwater_Route124_Text_IsabellaDefeat{
+	format("Good thing my goggles hide my tears!")
+}
+text Underwater_Route124_Text_IsabellaPostBattle{
+	format("You can find lots of interesting things on the Ocean floor.")
+}

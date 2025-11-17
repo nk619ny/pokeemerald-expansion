@@ -405,13 +405,13 @@ Route128_EventScript_RematchIsaiah::
 # 203 "data/maps/Route128/scripts.pory"
 Route128_EventScript_Katelyn::
 # 204 "data/maps/Route128/scripts.pory"
-	trainerbattle_single TRAINER_KATELYN_1, Route128_Text_KatelynIntro, Route128_Text_KatelynDefeat, Route128_EventScript_RegisterKatelyn
+	//trainerbattle_single TRAINER_KATELYN_1, Route128_Text_KatelynIntro, Route128_Text_KatelynDefeat, Route128_EventScript_RegisterKatelyn
 # 205 "data/maps/Route128/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 206 "data/maps/Route128/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchKatelyn
+	//goto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchKatelyn
 # 207 "data/maps/Route128/scripts.pory"
-	msgbox Route128_Text_KatelynPostBattle, MSGBOX_DEFAULT
+	msgbox Route128_Text_KatelynIntro, MSGBOX_NPC
 # 208 "data/maps/Route128/scripts.pory"
 	release
 # 209 "data/maps/Route128/scripts.pory"

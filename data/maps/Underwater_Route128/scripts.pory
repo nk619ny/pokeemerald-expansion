@@ -3,3 +3,21 @@ Underwater_Route128_MapScripts::
 	.byte 0
 
 `
+
+
+script Underwater_Route128_EventScript_Katelyn{
+	trainerbattle_single(TRAINER_KATELYN_1, Underwater_Route128_Text_KatelynIntro, Underwater_Route128_Text_KatelynDefeat)
+	msgbox(Underwater_Route128_Text_KatelynPostBattle, MSGBOX_NPC)
+	release
+	end
+}
+
+text Underwater_Route128_Text_KatelynIntro{
+	format("The ocean is full of mysteries.\pAre you also excited to explore them?")
+}
+text Underwater_Route128_Text_KatelynDefeat{
+	format("Clearly you have what it takes to delve deeper than me.")
+}
+text Underwater_Route128_Text_KatelynPostBattle{
+	format("You have a keen sense for the unknown!")
+}

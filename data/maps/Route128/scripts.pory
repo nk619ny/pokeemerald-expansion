@@ -201,10 +201,10 @@ Route128_EventScript_RematchIsaiah::
 	end
 
 Route128_EventScript_Katelyn::
-	trainerbattle_single TRAINER_KATELYN_1, Route128_Text_KatelynIntro, Route128_Text_KatelynDefeat, Route128_EventScript_RegisterKatelyn
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchKatelyn
-	msgbox Route128_Text_KatelynPostBattle, MSGBOX_DEFAULT
+	//trainerbattle_single TRAINER_KATELYN_1, Route128_Text_KatelynIntro, Route128_Text_KatelynDefeat, Route128_EventScript_RegisterKatelyn
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
+	//goto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchKatelyn
+	msgbox Route128_Text_KatelynIntro, MSGBOX_NPC
 	release
 	end
 

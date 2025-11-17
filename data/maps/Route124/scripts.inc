@@ -195,9 +195,9 @@ Route124_EventScript_Declan::
 # 98 "data/maps/Route124/scripts.pory"
 Route124_EventScript_Isabella::
 # 99 "data/maps/Route124/scripts.pory"
-	trainerbattle_single TRAINER_ISABELLA, Route124_Text_IsabellaIntro, Route124_Text_IsabellaDefeat
+	//trainerbattle_single TRAINER_ISABELLA, Route124_Text_IsabellaIntro, Route124_Text_IsabellaDefeat
 # 100 "data/maps/Route124/scripts.pory"
-	msgbox Route124_Text_IsabellaPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route124_Text_IsabellaNoBattle, MSGBOX_AUTOCLOSE
 # 101 "data/maps/Route124/scripts.pory"
 	end
 # 102 "data/maps/Route124/scripts.pory"
@@ -225,3 +225,8 @@ Route124_EventScript_BlockSootopolis_Text_0:
 	.string "swimming around these rocks is\l"
 	.string "difficult.\p"
 	.string "Maybe I should go around...?$"
+
+Route124_Text_IsabellaNoBattle::
+# 116 "data/maps/Route124/scripts.pory"
+	.string "There are lots of places where you can\n"
+	.string "dive around here.$"

@@ -540,19 +540,42 @@ Route104_North_EventScript_Darian::
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 # 271 "data/maps/Route104_North/scripts.pory"
 	end
+# 272 "data/maps/Route104_North/scripts.pory"
+
+# 273 "data/maps/Route104_North/scripts.pory"
+Route104_North_EventScript_Bruce::
+# 274 "data/maps/Route104_North/scripts.pory"
+	trainerbattle_single TRAINER_BRUCE, Route104_Text_BruceIntro, Route104_Text_BruceDefeat
+# 275 "data/maps/Route104_North/scripts.pory"
+	msgbox Route104_Text_BrucePostBattle, MSGBOX_AUTOCLOSE
+# 276 "data/maps/Route104_North/scripts.pory"
+	end
 
 Route104_North_EventScript_SetBrokenBridge::
-# 275 "data/maps/Route104_North/scripts.pory"
+# 281 "data/maps/Route104_North/scripts.pory"
 	setmetatile 28, 15, 0x20D, TRUE
-# 276 "data/maps/Route104_North/scripts.pory"
+# 282 "data/maps/Route104_North/scripts.pory"
 	setmetatile 28, 16, 0x20E, TRUE
-# 277 "data/maps/Route104_North/scripts.pory"
+# 283 "data/maps/Route104_North/scripts.pory"
 	setmetatile 28, 17, 0x20F, TRUE
-# 278 "data/maps/Route104_North/scripts.pory"
+# 284 "data/maps/Route104_North/scripts.pory"
 	setmetatile 27, 15, 0x20E, TRUE
-# 279 "data/maps/Route104_North/scripts.pory"
+# 285 "data/maps/Route104_North/scripts.pory"
 	setmetatile 27, 16, 0x20F, TRUE
-# 280 "data/maps/Route104_North/scripts.pory"
+# 286 "data/maps/Route104_North/scripts.pory"
 	setmetatile 27, 17, 0x208, TRUE
 	return
 
+
+Route104_Text_BruceIntro::
+# 290 "data/maps/Route104_North/scripts.pory"
+	.string "Shh! You'll scare away the birds!$"
+
+Route104_Text_BruceDefeat::
+# 294 "data/maps/Route104_North/scripts.pory"
+	.string "You really ruffled my feathers...$"
+
+Route104_Text_BrucePostBattle::
+# 298 "data/maps/Route104_North/scripts.pory"
+	.string "Bird watching takes a lot of patience,\n"
+	.string "and quiet.$"

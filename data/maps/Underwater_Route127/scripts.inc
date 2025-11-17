@@ -14,3 +14,13 @@ Underwater_Route127_OnResume:
 	call AbnormalWeather_Underwater_SetupEscapeWarp
 # 8 "data/maps/Underwater_Route127/scripts.pory"
 	end
+# 9 "data/maps/Underwater_Route127/scripts.pory"
+
+# 10 "data/maps/Underwater_Route127/scripts.pory"
+Underwater_Route127_EventScript_Camden::
+# 11 "data/maps/Underwater_Route127/scripts.pory"
+	trainerbattle_single TRAINER_CAMDEN, Route127_Text_CamdenIntro, Route127_Text_CamdenDefeat
+# 12 "data/maps/Underwater_Route127/scripts.pory"
+	msgbox Route127_Text_CamdenPostBattle, MSGBOX_AUTOCLOSE
+# 13 "data/maps/Underwater_Route127/scripts.pory"
+	end
