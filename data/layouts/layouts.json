@@ -4504,10 +4504,10 @@
     {
       "id": "LAYOUT_TEST_MAP_DESERT",
       "name": "TestMapDesert_Layout",
-      "width": 40,
-      "height": 170,
+      "width": 60,
+      "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Ultra_Space",
       "border_filepath": "data/layouts/TestMapDesert/border.bin",
       "blockdata_filepath": "data/layouts/TestMapDesert/map.bin"
     },
