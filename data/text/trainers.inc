@@ -1212,10 +1212,10 @@ Route110_Text_AlyssaPostBattle:
 
 Route110_Text_JosephIntro:
 	.string "Okay! Full-throttle time! If you can't\n"
-	.string "groove, you get left behind!$"
+	.string "jet, you get left behind!$"
 
 Route110_Text_JosephDefeated:
-	.string "You got into the groove all right…$"
+	.string "You're gliding all right…$"
 
 Route110_Text_JosephPostBattle:
 	.string "This isn't going to bring me down!\n"
@@ -2654,16 +2654,14 @@ Route118_Text_WadePostBattle:
 	.string "between a FISHERMAN and a POKéMON.$"
 
 Route118_Text_DaltonIntro:
-	.string "Let my melody rock your soul!$"
+	.string "Have you ever imagined floating\n"
+	.string "among the clouds?$"
 
 Route118_Text_DaltonDefeat:
-	.string "La-lalala…$"
+	.string "Brought down to earth again…$"
 
 Route118_Text_DaltonPostBattle:
-	.string "An electric guitar doesn't always\n"
-	.string "have to be noisy…\p"
-	.string "It can be strummed to squeeze out\n"
-	.string "this heart-stirring melody…$"
+	.string "Oh, to be free in the sky…$"
 
 Route118_Text_DaltonRegister:
 	.string "When I compose better melodies,\n"
@@ -2753,15 +2751,15 @@ Route119_Text_GregPostBattle:
 	.string "keep on mimicking your every move.$"
 
 Route119_Text_KentIntro:
-	.string "The MIMIC CIRCLE was formed by people\n"
-	.string "who like to MIMIC.\p"
-	.string "A battle starts the instant we meet!$"
+	.string "A lot of people obsessed with\n"
+	.string "bugs hang out up ahead.\p"
+	.string "They kind of give me the creeps.$"
 
 Route119_Text_KentDefeat:
-	.string "I give up!$"
+	.string "You're even scarier!$"
 
 Route119_Text_KentPostBattle:
-	.string "Won't you join our MIMIC CIRCLE?$"
+	.string "I prefer down here where it's drier.$"
 
 Route119_Text_JacksonIntro:
 	.string "Who has the knowledge and\n"

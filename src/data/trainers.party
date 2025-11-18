@@ -5342,9 +5342,40 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacruel
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cramorant @ Wacan Berry
+Level: 73
+Ability: Gulp Missile  
+EVs: 252 HP / 252 SpA
+Modest Nature
+Tera Type: Flying  
+- Ice Beam  
+- Surf  
+- Air Slash
+- Roost
+
+Cradily @ Power Herb  
+Level: 73
+Ability: Storm Drain  
+EVs: 252 HP / 252 SpA
+Tera Type: Rock  
+IVs: 0 Atk  
+Calm Nature
+- Meteor Beam  
+- Leech Seed  
+- Giga Drain  
+- Mirror Coat  
+
+Arctovish  
+Level: 73
+Ability: Water Absorb  
+Tera Type: Water  
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Avalanche  
+- Fishious Rend  
+- Psychic Fangs  
+- Iron Defense  
+
 
 === TRAINER_STAN === /* Underwater 128 */ /* TO BE ADDED */
 Name: STAN
@@ -5355,9 +5386,38 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Horsea
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Eiscue @ Leftovers  
+Level: 74
+Ability: Ice Face  
+Tera Type: Ice  
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Dive  
+- Protect  
+- Belly Drum  
+- Ice Spinner  
+
+Bibarel @ Quick Claw  
+Level: 74
+Ability: Simple  
+Tera Type: Normal  
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Curse  
+- Last Resort  
+- Aqua Jet  
+- Quick Attack  
+
+Dragalge  
+Level: 74
+Ability: Adaptability  
+Tera Type: Poison  
+IVs: 0 Atk  
+- Dragon Pulse  
+- Sludge Bomb  
+- Thunderbolt  
+- Acid Armor  
+
 
 === TRAINER_BARRY === /* Route */
 Name: BARRY
@@ -5372,7 +5432,7 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DEAN === /* Route */
+=== TRAINER_DEAN === /* Underwater */
 Name: DEAN
 Class: Diver
 Pic: Swimmer M
@@ -5381,17 +5441,33 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Relicanth @ Rindo Berry  
+Level: 73
+Ability: Sturdy  
+Tera Type: Water  
+- Amnesia  
+- Body Press  
+- Liquidation  
+- Stone Edge  
 
-Wingull
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Grapploct  
+Level: 73
+Ability: Technician  
+Tera Type: Fighting  
+- Octolock  
+- Power-Up Punch  
+- Liquidation  
+- Stomping Tantrum  
 
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Beartic @ Power Herb  
+Level: 73
+Ability: Swift Swim  
+Tera Type: Ice  
+- Dive  
+- Icicle Crash  
+- Aqua Jet  
+- Swords Dance  
+
 
 === TRAINER_RODNEY === /* Route */
 Name: RODNEY
@@ -6126,22 +6202,50 @@ IVs: 0 Atk
 - Psychic Noise  
 
 
-=== TRAINER_DALTON_1 === /* Route 118 */ /* Pre-Surf */ /* TO BE ADDED */ /* Bird Catcher? */
+=== TRAINER_DALTON_1 === /* Route 118 */ /* Pre-Surf */ 
 Name: DALTON
-Class: Guitarist
-Pic: Guitarist
+Class: Bird Keeper
+Pic: Bird Keeper
 Gender: Male
-Music: Intense
+Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magnemite
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Natu  
+Level: 35
+Ability: Magic Bounce  
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Air Slash  
+- Expanding Force  
+- Future Sight  
+- Signal Beam  
 
-Whismur
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fletchling  
+Ability: Gale Wings  
+Level: 35  
+Tera Type: Normal  
+- U-turn  
+- Flame Charge  
+- Dual Wingbeat  
+
+Vullaby (F)  
+Ability: Big Pecks  
+Level: 35  
+Tera Type: Dark  
+- Feint Attack  
+- Pluck  
+- Taunt  
+- Rock Tomb  
+
+Doduo  
+Ability: Early Bird  
+Level: 35  
+Tera Type: Normal  
+- Drill Peck  
+- Lunge  
+- Quick Attack  
+
 
 === TRAINER_DALTON_2 === /* Route */
 Name: DALTON
@@ -7412,7 +7516,7 @@ Alakazam
 Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_JACLYN === /* Route 110 */ /* TO BE ADDED */
+=== TRAINER_JACLYN === /* Route 110 */ /* TO BE ADDED */ /* REPLACE WITH OTHER TRAINER CLASS */
 Name: JACLYN
 Class: Psychic
 Pic: Psychic F
@@ -10409,7 +10513,7 @@ Tera Type: Water
 - Toxic Spikes  
 
 
-=== TRAINER_WADE === /* Route */
+=== TRAINER_WADE === /* Route 118 */ /* TO BE ADDED */
 Name: WADE
 Class: Fisherman
 Pic: Fisherman
@@ -11199,15 +11303,6 @@ EVs: 252 Atk / 252 Spe
 - U-turn  
 - Helping Hand  
 
-Beartic @ Power Herb  
-Level: 68
-Ability: Swift Swim  
-Tera Type: Ice  
-EVs: 252 SpA  
-- Dive  
-- Chilling Water  
-- Ice Punch  
-- Power-Up Punch  
 
 
 
@@ -11224,18 +11319,60 @@ Staryu
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KATELYN_1 === /* Underwater 128 */ /* TO BE ADDED */
+=== TRAINER_KATELYN_1 === /* Underwater 128 */ 
 Name: KATELYN
 Class: Diver
 Pic: Swimming Triathlete F
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Force Setup First Turn / Prefer Baton Pass
 
-Staryu
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gorebyss @ Leftovers  
+Level: 75
+Ability: Swift Swim  
+Tera Type: Water  
+EVs: 252 HP / 4 SpD / 252 Spe  
+Bold Nature  
+IVs: 0 Atk  
+- Amnesia  
+- Iron Defense  
+- Baton Pass  
+- Shell Smash  
+
+Blastoise  
+Level: 75
+Ability: Mega Launcher  
+Tera Type: Water  
+EVs: 252 HP / 4 Def / 252 SpA  
+Sassy Nature  
+- Follow Me  
+- Heal Pulse  
+- Hydro Pump  
+- Fake Out  
+
+Samurott  
+Level: 73
+Ability: Shell Armor  
+Tera Type: Water  
+EVs: 252 HP / 128 Def / 128 SpD  
+Adamant Nature  
+- Swords Dance  
+- Aqua Jet  
+- Sacred Sword  
+- Drill Run
+
+Armaldo  
+Level: 73
+Ability: Battle Armor  
+Tera Type: Rock  
+EVs: 252 HP / 4 Atk / 252 Spe  
+Adamant Nature  
+- Aqua Jet  
+- X-Scissor  
+- Stone Edge  
+- Swords Dance  
+
 
 === TRAINER_ALLISON === /* Route */
 Name: ALLISON
@@ -12866,9 +13003,26 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Luvdisc
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Corsola @ Rindo Berry  
+Ability: Regenerator  
+Tera Type: Water  
+- Flip Turn  
+- Power Gem  
+- Toxic  
+- Earth Power  
+
+Cursola @ Big Root  
+Ability: Perish Body  
+Tera Type: Ghost  
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Stealth Rock  
+- Shadow Ball  
+- Giga Drain  
+- Strength Sap  
+
+
 
 === TRAINER_SHARON === /* Route */
 Name: SHARON
@@ -12883,7 +13037,7 @@ Seaking
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_NIKKI === /* Route */
+=== TRAINER_NIKKI === /* Underwater */
 Name: NIKKI
 Class: Diver
 Pic: Swimmer F
@@ -12892,13 +13046,35 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dragapult  
+Ability: Infiltrator  
+Tera Type: Dragon  
+EVs: 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Flamethrower  
+- Thunderbolt  
+- Shadow Ball  
+- Reflect  
 
-Spheal
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Eelektross  
+Ability: Swift Swim  
+Tera Type: Electric  
+EVs: 128 HP / 252 Atk / 128 Spe  
+Adamant Nature  
+- Stomping Tantrum  
+- Supercell Slam  
+- Coil  
+- Drain Punch  
+
+Wugtrio @ Focus Sash  
+Ability: Gooey  
+Tera Type: Water  
+- Triple Dive  
+- Aqua Jet  
+- Stomping Tantrum  
+- Sucker Punch  
+
 
 === TRAINER_BRENDA === /* Route */
 Name: BRENDA
@@ -12909,9 +13085,15 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Goldeen
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Beartic @ Power Herb  
+Level: 68
+Ability: Swift Swim  
+Tera Type: Ice  
+EVs: 252 SpA  
+- Dive  
+- Chilling Water  
+- Ice Punch  
+- Power-Up Punch  
 
 === TRAINER_KATIE === /* Route */
 Name: KATIE
@@ -14430,7 +14612,7 @@ Hariyama
 Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_EDWIN_1 === /* Route 110 */ /* TO BE ADDED */
+=== TRAINER_EDWIN_1 === /* Route 110 */ 
 Name: EDWIN
 Class: Collector
 Pic: Collector
@@ -14439,13 +14621,41 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lombre
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Spinda  
+Level: 28
+Ability: Own Tempo  
+Tera Type: Normal  
+- Teeter Dance  
+- Dizzy Punch  
+- Feint Attack  
+- Fake Out  
 
-Nuzleaf
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Spinda @ Life Orb
+Level: 28
+Ability: Contrary
+-Double-Edge
+-Sucker Punch
+-Trick Room
+-Sing
+
+Spinda @ Bright Powder 
+Level: 28 
+Ability: Tangled Feet  
+Tera Type: Normal  
+- Fake Out  
+- Double Team  
+- Thrash  
+- Encore  
+
+Spinda  
+Level: 28
+Ability: Contrary  
+Tera Type: Normal  
+- Superpower  
+- Psycho Boost  
+- Psycho Shift  
+
+
 
 === TRAINER_HECTOR === /* Route 115 */ /* TO BE ADDED */
 Name: HECTOR
@@ -15892,7 +16102,7 @@ IVs: 0 Atk
 */
 
 
-=== TRAINER_ISAAC_1 === /* Route 117 */ /* TO BE ADDED */
+=== TRAINER_ISAAC_1 === /* Route 117 */
 Name: ISAAC
 Class: Pkmn Breeder
 Pic: Pokemon Breeder M
@@ -15902,29 +16112,56 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Whismur
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Elekid  
+Ability: Static  
+Level: 36  
+Tera Type: Electric  
+EVs: 252 HP / 252 Atk  
+- Cross Chop  
+- Follow Me  
+- Ice Punch  
+- Fire Punch  
 
-Zigzagoon
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Magby @ Sitrus Berry  
+Ability: Flame Body  
+Level: 36  
+Tera Type: Fire  
+EVs: 124 HP / 192 Atk / 192 SpA  
+- Belch  
+- Mach Punch  
+- Cross Chop  
+- Belly Drum  
 
-Aron
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Igglybuff  
+Ability: Cute Charm  
+Level: 35  
+Tera Type: Normal  
+EVs: 252 Atk / 128 Def / 128 SpD  
+- Covet  
+- Wish  
+- Perish Song  
+- Present  
 
-Poochyena
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Togepi  
+Ability: Hustle  
+Level: 35  
+Tera Type: Fairy  
+EVs: 252 HP / 64 Atk / 192 SpA  
+- Extrasensory  
+- Morning Sun  
+- Peck  
+- Future Sight  
 
-Taillow
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mantyke  
+Ability: Swift Swim  
+Level: 35  
+Tera Type: Water  
+EVs: 252 HP / 252 Atk  
+- Slam  
+- Mirror Coat  
+- Tailwind  
+- Twister  
 
-Makuhita
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAVIS === /* Route 123 */ /* SET TO ALWAYS RAIN UNTIL DEFEATED */
 Name: DAVIS
@@ -17994,18 +18231,53 @@ Tera Type: Normal
 
 
 
-=== TRAINER_JANICE === /* Route 116 */ /* TO BE ADDED */
+=== TRAINER_JANICE === /* Route 116 */ 
 Name: JANICE
-Class: Lass
-Pic: Lass
+Class: Beauty
+Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mawile  
+Level: 45
+Ability: Intimidate  
+Tera Type: Steel  
+- Metal Claw  
+- Play Rough  
+- Draining Kiss  
+- Helping Hand  
+
+Vivillon-Elegant  @ Charti Berry
+Level: 45
+Ability: Shield Dust  
+Tera Type: Bug  
+IVs: 0 Atk  
+- Energy Ball  
+- Quiver Dance  
+- Air Slash  
+- Tailwind  
+
+Alcremie (F)  
+Level: 45
+Ability: Sweet Veil  
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Alluring Voice  
+- Mystical Fire  
+- Aromatic Mist  
+- Sweet Kiss  
+
+Rapidash  
+Level: 45
+Ability: Run Away  
+Tera Type: Fire  
+- Flame Charge  
+- Wild Charge  
+- Attract  
+- Captivate  
+
 
 === TRAINER_VIVI === /* Route */
 Name: VIVI
@@ -18432,18 +18704,55 @@ Illumise
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KENT === /* Route 119 */ /* TO BE ADDED */
+=== TRAINER_KENT === /* Route 119 */
 Name: KENT
-Class: Bug Catcher
-Pic: Bug Catcher
+Class: Guitarist
+Pic: Guitarist
 Gender: Male
-Music: Male
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Ninjask
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chatot  
+Level: 54
+Ability: Keen Eye  
+Tera Type: Normal  
+IVs: 0 Atk  
+- Chatter  
+- Boomburst  
+- Heat Wave  
+- Taunt  
+
+Skeledirge  
+Level: 54
+Ability: Blaze  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Torch Song  
+- Alluring Voice  
+- Sing  
+- Encore  
+
+Wigglytuff @ Wide Lens  
+Level: 54
+Ability: Competitive  
+Tera Type: Normal  
+IVs: 0 Atk  
+- Relic Song  
+- Sing  
+- Alluring Voice  
+- Perish Song  
+
+Chimecho  
+Level: 54
+Ability: Levitate  
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Psychic Noise  
+- Encore  
+- Signal Beam  
+- Captivate  
+
 
 === TRAINER_JAMES_1 === /* Petalburg Woods */
 Name: JAMES
@@ -18794,6 +19103,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Nosepass  
+Level: 34
 Ability: Sturdy  
 Tera Type: Rock  
 - Body Press  
@@ -18801,7 +19111,8 @@ Tera Type: Rock
 - High Horsepower  
 - Stone Edge  
 
-Sandshrew-Alola  
+Sandshrew-Alola  @ Focus Sash
+Level: 34
 Ability: Snow Cloak  
 Tera Type: Ice  
 - Ice Shard  
@@ -18809,7 +19120,8 @@ Tera Type: Ice
 - Counter  
 - Mirror Coat  
 
-Rhyhorn  
+Rhyhorn  @ Focus Sash
+Level: 34
 Ability: Rock Head  
 Tera Type: Ground  
 - Drill Run  
@@ -18818,6 +19130,7 @@ Tera Type: Ground
 - Metal Burst  
 
 Geodude-Alola @ Iron Ball  
+Level: 34
 Ability: Sturdy  
 Tera Type: Rock  
 - Supercell Slam  
@@ -20443,7 +20756,7 @@ IVs: 0 Atk
 - Encore  
 
 
-=== TRAINER_AIDAN === /* Route 124 */ /* TO BE ADDED */ /* Change Class? */
+=== TRAINER_AIDAN === /* Route 127 */ /* TO BE ADDED */ /* Change Class? */
 Name: AIDAN
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -21129,22 +21442,53 @@ Plusle @ Oran Berry
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JOSEPH === /* Route 110 */ /* TO BE ADDED */ /* Bird Catcher ? */
+=== TRAINER_JOSEPH === /* Route 110 */ 
 Name: JOSEPH
-Class: Guitarist
-Pic: Guitarist
+Class: Bird Keeper
+Pic: Bird Keeper
 Gender: Male
-Music: Intense
+Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Electrike
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hoothoot  
+Ability: Keen Eye  
+Level: 28  
+Tera Type: Normal  
+IVs: 0 Atk  
+- Hypnosis  
+- Echoed Voice  
+- Air Cutter  
+- Confuse Ray  
 
-Voltorb
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pidove  
+Ability: Big Pecks  
+Level: 28  
+Tera Type: Normal  
+- Peck  
+- Morning Sun  
+- Quick Attack  
+- U-turn  
+
+Starly  
+Ability: Reckless  
+Level: 28  
+Tera Type: Normal  
+EVs: 252 HP / 252 Atk
+IVs: 0 HP  
+- Take Down  
+- Final Gambit  
+- Wing Attack  
+
+Quaxly  
+Ability: Moxie  
+Level: 5  
+Tera Type: Water  
+- Aerial Ace  
+- Encore  
+- Roost  
+- Aqua Cutter  
+
 
 === TRAINER_ALYSSA === /* Route 110 */ /* TO BE ADDED */
 Name: ALYSSA
@@ -21632,7 +21976,7 @@ Nuzleaf
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DEANDRE === /* Route */
+=== TRAINER_DEANDRE === /* Route 118 */ /* TO BE ADDED */
 Name: DEANDRE
 Class: Youngster
 Pic: Youngster
