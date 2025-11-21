@@ -4418,3 +4418,62 @@ void SetHiddenNature(void)
     SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_HIDDEN_NATURE, &hiddenNature);
     CalculateMonStats(&gPlayerParty[gSpecialVar_0x8004]);
 }
+
+// === NEW SPECIALS ===
+// gSpecialVar_0x8004: party slot (0..PARTY_SIZE-1)
+// gSpecialVar_0x8005: tera type value
+void ChangeTeraType(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    u16 teraType = gSpecialVar_0x8005;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
+        SetMonData(&gPlayerParty[slot], MON_DATA_TERA_TYPE, &teraType);
+}
+
+// gSpecialVar_0x8004: party slot
+// gSpecialVar_0x8005: status bitfield (STATUS1_*)
+// Note: Does not heal HP or clear existing volatile statuses.
+void InflictStatus(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    u16 status = gSpecialVar_0x8005;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
+        SetMonData(&gPlayerParty[slot], MON_DATA_STATUS, &status);
+}
+
+
+void GetPartyMonTypes(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    {
+        u16 species = GetMonData(&gPlayerParty[slot], MON_DATA_SPECIES);
+        gSpecialVar_0x800A = GetSpeciesType(species, 0);
+        gSpecialVar_0x800B = GetSpeciesType(species, 1);
+        gSpecialVar_Result = 1;
+    }
+    else
+    {
+        gSpecialVar_0x800A = TYPE_NONE;
+        gSpecialVar_0x800B = TYPE_NONE;
+        gSpecialVar_Result = 0;
+    }
+}
+
+void ComparePartyMonTeraType(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    {
+        u16 teraType = GetMonData(&gPlayerParty[slot], MON_DATA_TERA_TYPE);
+        gSpecialVar_0x800A = (teraType == gSpecialVar_0x8005);
+        gSpecialVar_Result = 1;
+    }
+    else
+    {
+        gSpecialVar_0x800A = FALSE;
+        gSpecialVar_Result = 0;
+    }
+}

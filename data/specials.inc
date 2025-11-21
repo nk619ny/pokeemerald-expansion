@@ -568,3 +568,7 @@ gSpecials::
 	def_special EnterCode
 	def_special GetCodeFeedback
 	def_special SetHiddenNature
+	def_special ChangeTeraType
+    def_special InflictStatus  
+	def_special GetPartyMonTypes
+	def_special ComparePartyMonTeraType

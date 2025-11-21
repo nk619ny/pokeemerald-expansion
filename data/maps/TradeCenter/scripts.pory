@@ -1668,3 +1668,192 @@ script MoveTutor_EventScript_ComeBackLater{
 	releaseall
 	end
 }
+
+script PokemonCenter_2F_EventScript_InflictStatusMenu {
+    lockall
+	faceplayer
+    getpartysize
+    if (var(VAR_RESULT) == 0) {
+        msgbox(format("Your PARTY has no Pokémon."), MSGBOX_DEFAULT)
+        releaseall
+        end
+    }
+	msgbox(format("Choose a Pokémon to inflict a status condition on."), MSGBOX_DEFAULT)
+	closemessage
+    special(ChoosePartyMon)
+    waitstate
+    if (var(VAR_0x8004) >= 6) {
+        releaseall
+        end
+    }
+    specialvar(VAR_RESULT, ScriptGetPartyMonSpecies)
+    if (var(VAR_RESULT) == SPECIES_EGG) {
+        releaseall
+        end
+    }
+    dynmultipush("Poison", STATUS1_POISON)
+	dynmultipush("Toxic Poison", STATUS1_TOXIC_POISON)
+    dynmultipush("Paralysis", STATUS1_PARALYSIS)
+    dynmultipush("Sleep", STATUS1_SLEEP)
+    dynmultipush("Burn", STATUS1_BURN)
+    dynmultipush("Freeze", STATUS1_FREEZE)
+	//dynmultipush("Frostbite", STATUS1_FROSTBITE)
+	msgbox(format("Which status condition would you like to inflict?"), MSGBOX_DEFAULT)
+    dynmultistack(0, 0, FALSE, 6, FALSE, 0, 255)
+    if (var(VAR_RESULT) == 127) {
+        releaseall
+        end
+    }
+    copyvar(VAR_0x8005, VAR_RESULT)
+	special(GetPartyMonTypes)
+	if ((var(VAR_0x800A) == TYPE_POISON || (var(VAR_0x800B) == TYPE_POISON)) && (var(VAR_0x8005) == STATUS1_POISON || var(VAR_0x8005) == STATUS1_TOXIC_POISON)) {
+		msgbox(format("That Pokémon is immune to being poisoned."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	elif ((var(VAR_0x800A) == TYPE_STEEL || (var(VAR_0x800B) == TYPE_STEEL)) && (var(VAR_0x8005) == STATUS1_POISON || var(VAR_0x8005) == STATUS1_TOXIC_POISON)) {
+		msgbox(format("That Pokémon is immune to being poisoned."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	elif ((var(VAR_0x800A) == TYPE_ICE || (var(VAR_0x800B) == TYPE_ICE)) && (var(VAR_0x8005) == STATUS1_FREEZE || var(VAR_0x8005) == STATUS1_FROSTBITE)) {
+		msgbox(format("That Pokémon is immune to being frozen."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	elif ((var(VAR_0x800A) == TYPE_FIRE || (var(VAR_0x800B) == TYPE_FIRE)) && (var(VAR_0x8005) == STATUS1_BURN)) {
+		msgbox(format("That Pokémon is immune to being burned."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	elif ((var(VAR_0x800A) == TYPE_ELECTRIC || (var(VAR_0x800B) == TYPE_ELECTRIC)) && (var(VAR_0x8005) == STATUS1_PARALYSIS)) {
+		msgbox(format("That Pokémon is immune to being paralyzed."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	else {
+		//bufferstring(STR_VAR_1, GetPartyMonNickname(var(VAR_0x8004)))
+	special(InflictStatus)
+	msgbox(format("Your Pokémon was inflicted with a status condition!"), MSGBOX_DEFAULT)
+	closemessage
+	}
+	releaseall
+    end
+}
+
+
+script PokemonCenter_2F_EventScript_ChangeHiddenPowerType{
+	getpartysize
+    if (var(VAR_RESULT) == 0) {
+        msgbox(format("Your PARTY has no Pokémon."), MSGBOX_DEFAULT)
+        releaseall
+        end
+    }
+	msgbox(format("Which Pokémon's Hidden Power type would you like to change?"), MSGBOX_DEFAULT)
+	closemessage
+    special(ChoosePartyMon)
+    waitstate
+    if (var(VAR_0x8004) >= 6) {
+        releaseall
+        end
+    }
+    specialvar(VAR_RESULT, ScriptGetPartyMonSpecies)
+    if (var(VAR_RESULT) == SPECIES_EGG) {
+        releaseall
+        end
+    }
+	special(BufferMonNickname)
+    //dynmultipush("Normal",TYPE_NORMAL)
+	msgbox(format("What would you like your Pokémon's Hidden Power type to be?"), MSGBOX_DEFAULT)
+    dynmultipush("Fighting",TYPE_FIGHTING)
+    dynmultipush("Flying",TYPE_FLYING)
+    dynmultipush("Poison",TYPE_POISON)
+    dynmultipush("Ground",TYPE_GROUND)
+    dynmultipush("Rock",TYPE_ROCK)
+    dynmultipush("Bug",TYPE_BUG)
+    dynmultipush("Ghost",TYPE_GHOST)
+    dynmultipush("Steel",TYPE_STEEL)
+    dynmultipush("Fire",TYPE_FIRE)
+    dynmultipush("Water", TYPE_WATER)
+    dynmultipush("Grass", TYPE_GRASS)
+    dynmultipush("Electric", TYPE_ELECTRIC)
+    dynmultipush("Psychic", TYPE_PSYCHIC)
+    dynmultipush("Ice", TYPE_ICE)
+    dynmultipush("Dragon", TYPE_DRAGON)
+    dynmultipush("Dark", TYPE_DARK)
+    dynmultipush("Fairy", TYPE_FAIRY)
+    dynmultistack(0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	switch (var(VAR_RESULT)) {
+		case TYPE_FIGHTING:
+			bufferstring(STR_VAR_2, "Fighting")
+		case TYPE_FLYING:
+			bufferstring(STR_VAR_2, "Flying")
+		case TYPE_POISON:
+			bufferstring(STR_VAR_2, "Poison")
+		case TYPE_GROUND:
+			bufferstring(STR_VAR_2, "Ground")
+		case TYPE_ROCK:
+			bufferstring(STR_VAR_2, "Rock")
+		case TYPE_BUG:
+			bufferstring(STR_VAR_2, "Bug")
+		case TYPE_GHOST:
+			bufferstring(STR_VAR_2, "Ghost")
+		case TYPE_STEEL:
+			bufferstring(STR_VAR_2, "Steel")
+		case TYPE_FIRE:
+			bufferstring(STR_VAR_2, "Fire")
+		case TYPE_WATER:
+			bufferstring(STR_VAR_2, "Water")
+		case TYPE_GRASS:
+			bufferstring(STR_VAR_2, "Grass")
+		case TYPE_ELECTRIC:
+			bufferstring(STR_VAR_2, "Electric")
+		case TYPE_PSYCHIC:
+			bufferstring(STR_VAR_2, "Psychic")
+		case TYPE_ICE:
+			bufferstring(STR_VAR_2, "Ice")
+		case TYPE_DRAGON:
+			bufferstring(STR_VAR_2, "Dragon")
+		case TYPE_DARK:
+			bufferstring(STR_VAR_2, "Dark")
+		case TYPE_FAIRY:
+			bufferstring(STR_VAR_2, "Fairy")
+		case MULTI_B_PRESSED:
+			msgbox(format("Come back later if you ever want to change your Pokémon's Hidden Power type."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+		default:
+			msgbox(format("Come back later if you ever want to change your Pokémon's Hidden Power type."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+	}
+	copyvar(VAR_0x8005, VAR_RESULT)
+	special(ComparePartyMonTeraType)
+	if (var(VAR_0x800A) == TRUE) {
+		msgbox(format("Your {STR_VAR_1}'s Hidden Power type is already {STR_VAR_2}."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	msgbox(format("Are you sure you want to change {STR_VAR_1}'s Hidden Power type to {STR_VAR_2}?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == TRUE) {
+		special(ChangeTeraType)
+		msgbox(format("Your {STR_VAR_1}'s Hidden Power type was changed to {STR_VAR_2}!"), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	else {
+		msgbox(format("Come back later if you ever want to change your Pokémon's Hidden Power type."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+}

@@ -3500,6 +3500,468 @@ MoveTutor_EventScript_ComeBackLater::
 	end
 
 
+PokemonCenter_2F_EventScript_InflictStatusMenu::
+# 1673 "data/maps/TradeCenter/scripts.pory"
+	lockall
+# 1674 "data/maps/TradeCenter/scripts.pory"
+	faceplayer
+# 1675 "data/maps/TradeCenter/scripts.pory"
+	getpartysize
+# 1676 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_2
+# 1681 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_1, MSGBOX_DEFAULT
+# 1682 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1683 "data/maps/TradeCenter/scripts.pory"
+	special ChoosePartyMon
+# 1684 "data/maps/TradeCenter/scripts.pory"
+	waitstate
+# 1685 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8004, 6
+	goto_if_ge PokemonCenter_2F_EventScript_InflictStatusMenu_5
+# 1689 "data/maps/TradeCenter/scripts.pory"
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+# 1690 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, SPECIES_EGG
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_8
+# 1694 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_2, STATUS1_POISON
+# 1695 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_3, STATUS1_TOXIC_POISON
+# 1696 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_4, STATUS1_PARALYSIS
+# 1697 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_5, STATUS1_SLEEP
+# 1698 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_6, STATUS1_BURN
+# 1699 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_7, STATUS1_FREEZE
+# 1701 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_8, MSGBOX_DEFAULT
+# 1702 "data/maps/TradeCenter/scripts.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, 255
+# 1703 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, 127
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_11
+# 1707 "data/maps/TradeCenter/scripts.pory"
+	copyvar VAR_0x8005, VAR_RESULT
+# 1708 "data/maps/TradeCenter/scripts.pory"
+	special GetPartyMonTypes
+# 1709 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800A, TYPE_POISON
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_44
+# 1709 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800B, TYPE_POISON
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_44
+PokemonCenter_2F_EventScript_InflictStatusMenu_39:
+# 1715 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800A, TYPE_STEEL
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_37
+# 1715 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800B, TYPE_STEEL
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_37
+PokemonCenter_2F_EventScript_InflictStatusMenu_32:
+# 1721 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800A, TYPE_ICE
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_30
+# 1721 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800B, TYPE_ICE
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_30
+PokemonCenter_2F_EventScript_InflictStatusMenu_27:
+# 1727 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800A, TYPE_FIRE
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_25
+# 1727 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800B, TYPE_FIRE
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_25
+PokemonCenter_2F_EventScript_InflictStatusMenu_22:
+# 1733 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800A, TYPE_ELECTRIC
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_20
+# 1733 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800B, TYPE_ELECTRIC
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_20
+PokemonCenter_2F_EventScript_InflictStatusMenu_19:
+# 1741 "data/maps/TradeCenter/scripts.pory"
+	special InflictStatus
+# 1742 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_13, MSGBOX_DEFAULT
+# 1743 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1745 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_2:
+# 1677 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_0, MSGBOX_DEFAULT
+# 1678 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_5:
+# 1686 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_8:
+# 1691 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_11:
+# 1704 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_14:
+# 1710 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_9, MSGBOX_DEFAULT
+# 1711 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1712 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_15:
+# 1716 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_9, MSGBOX_DEFAULT
+# 1717 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1718 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_16:
+# 1722 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_10, MSGBOX_DEFAULT
+# 1723 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1724 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_17:
+# 1728 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_11, MSGBOX_DEFAULT
+# 1729 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1730 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_18:
+# 1734 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_12, MSGBOX_DEFAULT
+# 1735 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1736 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_20:
+# 1733 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8005, STATUS1_PARALYSIS
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_18
+	goto PokemonCenter_2F_EventScript_InflictStatusMenu_19
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_25:
+# 1727 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8005, STATUS1_BURN
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_17
+	goto PokemonCenter_2F_EventScript_InflictStatusMenu_22
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_30:
+# 1721 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8005, STATUS1_FREEZE
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_16
+# 1721 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8005, STATUS1_FROSTBITE
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_16
+	goto PokemonCenter_2F_EventScript_InflictStatusMenu_27
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_37:
+# 1715 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8005, STATUS1_POISON
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_15
+# 1715 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8005, STATUS1_TOXIC_POISON
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_15
+	goto PokemonCenter_2F_EventScript_InflictStatusMenu_32
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_44:
+# 1709 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8005, STATUS1_POISON
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_14
+# 1709 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8005, STATUS1_TOXIC_POISON
+	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_14
+	goto PokemonCenter_2F_EventScript_InflictStatusMenu_39
+
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType::
+# 1751 "data/maps/TradeCenter/scripts.pory"
+	getpartysize
+# 1752 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq PokemonCenter_2F_EventScript_ChangeHiddenPowerType_2
+# 1757 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_0, MSGBOX_DEFAULT
+# 1758 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1759 "data/maps/TradeCenter/scripts.pory"
+	special ChoosePartyMon
+# 1760 "data/maps/TradeCenter/scripts.pory"
+	waitstate
+# 1761 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8004, 6
+	goto_if_ge PokemonCenter_2F_EventScript_ChangeHiddenPowerType_5
+# 1765 "data/maps/TradeCenter/scripts.pory"
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+# 1766 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, SPECIES_EGG
+	goto_if_eq PokemonCenter_2F_EventScript_ChangeHiddenPowerType_8
+# 1770 "data/maps/TradeCenter/scripts.pory"
+	special BufferMonNickname
+# 1772 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_1, MSGBOX_DEFAULT
+# 1773 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_2, TYPE_FIGHTING
+# 1774 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_3, TYPE_FLYING
+# 1775 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_2, TYPE_POISON
+# 1776 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_4, TYPE_GROUND
+# 1777 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_5, TYPE_ROCK
+# 1778 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_6, TYPE_BUG
+# 1779 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_7, TYPE_GHOST
+# 1780 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_8, TYPE_STEEL
+# 1781 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_9, TYPE_FIRE
+# 1782 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_10, TYPE_WATER
+# 1783 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_11, TYPE_GRASS
+# 1784 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_12, TYPE_ELECTRIC
+# 1785 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_13, TYPE_PSYCHIC
+# 1786 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_14, TYPE_ICE
+# 1787 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_15, TYPE_DRAGON
+# 1788 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_16, TYPE_DARK
+# 1789 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_17, TYPE_FAIRY
+# 1790 "data/maps/TradeCenter/scripts.pory"
+	dynmultistack 0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 1791 "data/maps/TradeCenter/scripts.pory"
+	switch VAR_RESULT
+# 1792 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_FIGHTING, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_12
+# 1794 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_FLYING, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_13
+# 1796 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_POISON, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_14
+# 1798 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_GROUND, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_15
+# 1800 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_ROCK, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_16
+# 1802 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_BUG, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_17
+# 1804 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_GHOST, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_18
+# 1806 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_STEEL, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_19
+# 1808 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_FIRE, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_20
+# 1810 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_WATER, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_21
+# 1812 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_GRASS, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_22
+# 1814 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_ELECTRIC, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_23
+# 1816 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_PSYCHIC, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_24
+# 1818 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_ICE, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_25
+# 1820 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_DRAGON, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_26
+# 1822 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_DARK, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_27
+# 1824 "data/maps/TradeCenter/scripts.pory"
+	case TYPE_FAIRY, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_28
+# 1826 "data/maps/TradeCenter/scripts.pory"
+	case MULTI_B_PRESSED, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_29
+# 1832 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_18, MSGBOX_DEFAULT
+# 1833 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1834 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_2:
+# 1753 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_0, MSGBOX_DEFAULT
+# 1754 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_5:
+# 1762 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_8:
+# 1767 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10:
+# 1837 "data/maps/TradeCenter/scripts.pory"
+	copyvar VAR_0x8005, VAR_RESULT
+# 1838 "data/maps/TradeCenter/scripts.pory"
+	special ComparePartyMonTeraType
+# 1839 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x800A, TRUE
+	goto_if_eq PokemonCenter_2F_EventScript_ChangeHiddenPowerType_32
+# 1845 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_20, MSGBOX_YESNO
+# 1846 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq PokemonCenter_2F_EventScript_ChangeHiddenPowerType_34
+# 1854 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_18, MSGBOX_DEFAULT
+# 1855 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1856 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_12:
+# 1793 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_2
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_13:
+# 1795 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_3
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_14:
+# 1797 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_InflictStatusMenu_Text_2
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_15:
+# 1799 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_4
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_16:
+# 1801 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_5
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_17:
+# 1803 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_6
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_18:
+# 1805 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_7
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_19:
+# 1807 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_8
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_20:
+# 1809 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_9
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_21:
+# 1811 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_10
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_22:
+# 1813 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_11
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_23:
+# 1815 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_12
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_24:
+# 1817 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_13
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_25:
+# 1819 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_14
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_26:
+# 1821 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_15
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_27:
+# 1823 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_16
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_28:
+# 1825 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_17
+	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_29:
+# 1827 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_18, MSGBOX_DEFAULT
+# 1828 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1829 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_32:
+# 1840 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_19, MSGBOX_DEFAULT
+# 1841 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1842 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_34:
+# 1847 "data/maps/TradeCenter/scripts.pory"
+	special ChangeTeraType
+# 1848 "data/maps/TradeCenter/scripts.pory"
+	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_21, MSGBOX_DEFAULT
+# 1849 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 1850 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+
 Common_EventScript_LevelCapUpdate_Text_0:
 # 290 "data/maps/TradeCenter/scripts.pory"
 	.string "{PLAYER} grew to Trainer Level\n"
@@ -4084,6 +4546,163 @@ MoveTutor_EventScript_ComeBackLater_Text_0:
 # 1666 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back later if you ever want to\n"
 	.string "teach one of your Pokémon a new move.$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_0:
+# 1677 "data/maps/TradeCenter/scripts.pory"
+	.string "Your PARTY has no Pokémon.$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_1:
+# 1681 "data/maps/TradeCenter/scripts.pory"
+	.string "Choose a Pokémon to inflict a status\n"
+	.string "condition on.$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_2:
+# 1694 "data/maps/TradeCenter/scripts.pory"
+	.string "Poison$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_3:
+# 1695 "data/maps/TradeCenter/scripts.pory"
+	.string "Toxic Poison$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_4:
+# 1696 "data/maps/TradeCenter/scripts.pory"
+	.string "Paralysis$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_5:
+# 1697 "data/maps/TradeCenter/scripts.pory"
+	.string "Sleep$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_6:
+# 1698 "data/maps/TradeCenter/scripts.pory"
+	.string "Burn$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_7:
+# 1699 "data/maps/TradeCenter/scripts.pory"
+	.string "Freeze$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_8:
+# 1701 "data/maps/TradeCenter/scripts.pory"
+	.string "Which status condition would you like\n"
+	.string "to inflict?$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_9:
+# 1710 "data/maps/TradeCenter/scripts.pory"
+	.string "That Pokémon is immune to being\n"
+	.string "poisoned.$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_10:
+# 1722 "data/maps/TradeCenter/scripts.pory"
+	.string "That Pokémon is immune to being frozen.$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_11:
+# 1728 "data/maps/TradeCenter/scripts.pory"
+	.string "That Pokémon is immune to being burned.$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_12:
+# 1734 "data/maps/TradeCenter/scripts.pory"
+	.string "That Pokémon is immune to being\n"
+	.string "paralyzed.$"
+
+PokemonCenter_2F_EventScript_InflictStatusMenu_Text_13:
+# 1742 "data/maps/TradeCenter/scripts.pory"
+	.string "Your Pokémon was inflicted with a\n"
+	.string "status condition!$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_0:
+# 1757 "data/maps/TradeCenter/scripts.pory"
+	.string "Which Pokémon's Hidden Power type\n"
+	.string "would you like to change?$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_1:
+# 1772 "data/maps/TradeCenter/scripts.pory"
+	.string "What would you like your Pokémon's\n"
+	.string "Hidden Power type to be?$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_2:
+# 1773 "data/maps/TradeCenter/scripts.pory"
+	.string "Fighting$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_3:
+# 1774 "data/maps/TradeCenter/scripts.pory"
+	.string "Flying$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_4:
+# 1776 "data/maps/TradeCenter/scripts.pory"
+	.string "Ground$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_5:
+# 1777 "data/maps/TradeCenter/scripts.pory"
+	.string "Rock$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_6:
+# 1778 "data/maps/TradeCenter/scripts.pory"
+	.string "Bug$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_7:
+# 1779 "data/maps/TradeCenter/scripts.pory"
+	.string "Ghost$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_8:
+# 1780 "data/maps/TradeCenter/scripts.pory"
+	.string "Steel$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_9:
+# 1781 "data/maps/TradeCenter/scripts.pory"
+	.string "Fire$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_10:
+# 1782 "data/maps/TradeCenter/scripts.pory"
+	.string "Water$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_11:
+# 1783 "data/maps/TradeCenter/scripts.pory"
+	.string "Grass$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_12:
+# 1784 "data/maps/TradeCenter/scripts.pory"
+	.string "Electric$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_13:
+# 1785 "data/maps/TradeCenter/scripts.pory"
+	.string "Psychic$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_14:
+# 1786 "data/maps/TradeCenter/scripts.pory"
+	.string "Ice$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_15:
+# 1787 "data/maps/TradeCenter/scripts.pory"
+	.string "Dragon$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_16:
+# 1788 "data/maps/TradeCenter/scripts.pory"
+	.string "Dark$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_17:
+# 1789 "data/maps/TradeCenter/scripts.pory"
+	.string "Fairy$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_18:
+# 1827 "data/maps/TradeCenter/scripts.pory"
+	.string "Come back later if you ever want to\n"
+	.string "change your Pokémon's Hidden Power\l"
+	.string "type.$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_19:
+# 1840 "data/maps/TradeCenter/scripts.pory"
+	.string "Your {STR_VAR_1}'s Hidden Power\n"
+	.string "type is already {STR_VAR_2}.$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_20:
+# 1845 "data/maps/TradeCenter/scripts.pory"
+	.string "Are you sure you want to change\n"
+	.string "{STR_VAR_1}'s Hidden Power type to\l"
+	.string "{STR_VAR_2}?$"
+
+PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_21:
+# 1848 "data/maps/TradeCenter/scripts.pory"
+	.string "Your {STR_VAR_1}'s Hidden Power\n"
+	.string "type was changed to {STR_VAR_2}!$"
 
 Common_Text_CaveIsDarkUseFlash::
 # 343 "data/maps/TradeCenter/scripts.pory"
