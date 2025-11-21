@@ -609,7 +609,8 @@
     "TestMapIce",
     "TestMapSpaceTime",
     "DewfordGymCopy",
-    "SnowRoute"
+    "SnowRoute",
+    "PokeCenter_2F_Draft"
   ],
   "gMapGroup_IndoorRoute109": [
     "Route109_SeashoreHouse"

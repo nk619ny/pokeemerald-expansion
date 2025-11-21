@@ -285,7 +285,7 @@ bool8 FldEff_UsePuzzleEffect(void)
 bool8 ShouldDoBrailleRegicePuzzle(void)
 {
     u8 i;
-
+/*
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ISLAND_CAVE)
         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ISLAND_CAVE))
     {
@@ -340,6 +340,6 @@ bool8 ShouldDoBrailleRegicePuzzle(void)
         FlagSet(FLAG_TEMP_REGICE_PUZZLE_FAILED);
         FlagClear(FLAG_TEMP_REGICE_PUZZLE_STARTED);
     }
-
+*/
     return FALSE;
 }

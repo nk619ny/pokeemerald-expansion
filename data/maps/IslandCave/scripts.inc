@@ -167,13 +167,13 @@ IslandCave_EventScript_CloseBrailleMsg::
 # 84 "data/maps/IslandCave/scripts.pory"
 IslandCave_EventScript_ClearSteps::
 # 85 "data/maps/IslandCave/scripts.pory"
-	setvar VAR_REGICE_STEPS_1, 0
+	//setvar VAR_REGICE_STEPS_1, 0
 # 86 "data/maps/IslandCave/scripts.pory"
-	setvar VAR_REGICE_STEPS_2, 0
+	//setvar VAR_REGICE_STEPS_2, 0
 # 87 "data/maps/IslandCave/scripts.pory"
-	setvar VAR_REGICE_STEPS_3, 0
+	//setvar VAR_REGICE_STEPS_3, 0
 # 88 "data/maps/IslandCave/scripts.pory"
-	clearflag FLAG_TEMP_REGICE_PUZZLE_FAILED
+	//clearflag FLAG_TEMP_REGICE_PUZZLE_FAILED
 # 89 "data/maps/IslandCave/scripts.pory"
 	return
 # 90 "data/maps/IslandCave/scripts.pory"

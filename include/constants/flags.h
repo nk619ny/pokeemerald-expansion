@@ -340,8 +340,8 @@
 #define FLAG_RECEIVED_AURORA_TICKET          0x13A
 #define FLAG_RECEIVED_MYSTIC_TICKET          0x13B
 #define FLAG_RECEIVED_OLD_SEA_MAP            0x13C
-#define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
-#define FLAG_WONDER_CARD_UNUSED_2            0x13E
+#define FLAG_SORT_TUTOR_ALPHABETICALLY       0x13D // These Wonder Card flags are referenced but never set
+#define FLAG_SORT_TUTOR_BY_BASE_POWER        0x13E //not actually used, unused and available
 #define FLAG_WONDER_CARD_UNUSED_3            0x13F
 #define FLAG_WONDER_CARD_UNUSED_4            0x140
 #define FLAG_WONDER_CARD_UNUSED_5            0x141
@@ -779,8 +779,8 @@
 #define FLAG_UNUSED_2D9                                             0x2D9 // unused, temporarily used but reopened
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
-#define FLAG_UNUSED_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB //was used, now unused and available for repurposing
-#define FLAG_UNUSED_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC //was used, now unused and available for repurposing
+#define FLAG_UNUSED_HIDE_RUSTBORO_CITY_AQUA_GRUNT                   0x2DB //was used, now unused and available for repurposing
+#define FLAG_UNUSED_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1             0x2DC //was used, now unused and available for repurposing
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF
