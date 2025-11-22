@@ -489,6 +489,15 @@ enum TimeOfDay GetTimeOfDayForEncounters(u32 headerId, enum WildPokemonArea area
     if (!OW_TIME_OF_DAY_ENCOUNTERS)
         return TIME_OF_DAY_DEFAULT;
 
+    // Shoal Cave tide-based override
+    if (GetCurrentRegionMapSectionId() == MAPSEC_SHOAL_CAVE)
+    {
+        if (FlagGet(FLAG_SYS_SHOAL_TIDE))
+            timeOfDay = 3; // Night (high tide)
+        else
+            timeOfDay = 1; // Day (low tide)
+    }
+
     if (InBattlePike() || CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
     {
         return OW_TIME_OF_DAY_FALLBACK;
