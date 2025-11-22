@@ -6208,10 +6208,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
 #if P_FAMILY_MOLTRES
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/anim_front.4bpp.smol");
-    const u16 gMonPalette_Moltres[] = INCBIN_U16("graphics/pokemon/moltres/normal.gbapal");
+    //const u32 gMonFrontPic_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/anim_front.4bpp.smol");
+    const u32 gMonFrontPic_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/anim_front_gba.4bpp.smol");
+    //const u16 gMonPalette_Moltres[] = INCBIN_U16("graphics/pokemon/moltres/normal.gbapal");
+    const u16 gMonPalette_Moltres[] = INCBIN_U16("graphics/pokemon/moltres/normal_gba.gbapal");
     const u32 gMonBackPic_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/back.4bpp.smol");
-    const u16 gMonShinyPalette_Moltres[] = INCBIN_U16("graphics/pokemon/moltres/shiny.gbapal");
+    //const u16 gMonShinyPalette_Moltres[] = INCBIN_U16("graphics/pokemon/moltres/shiny.gbapal");
+    const u16 gMonShinyPalette_Moltres[] = INCBIN_U16("graphics/pokemon/moltres/shiny_gba.gbapal");
 #else
     const u32 gMonFrontPic_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/anim_front_gba.4bpp.smol");
     const u16 gMonPalette_Moltres[] = INCBIN_U16("graphics/pokemon/moltres/normal_gba.gbapal");

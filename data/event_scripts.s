@@ -1074,6 +1074,7 @@ Common_EventScript_UnionRoomAttendant::
 	end
 
 Common_EventScript_WirelessClubAttendant::
+	goto MoveTutor_EventScript_BasicTutorIntro
 	call CableClub_EventScript_WirelessClubAttendant
 	end
 
