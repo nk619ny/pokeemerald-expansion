@@ -46,6 +46,7 @@ script MoveTutor_EventScript_FullTutorList {
     dynmultipush("Darkest Lariat",8)
     dynmultipush("Endeavor",9)
     dynmultipush("Explosion",10)
+	False Swipe
     dynmultipush("Fire Fang",11)
     dynmultipush("Focus Punch",12)
     dynmultipush("Giga Impact",13)
@@ -64,6 +65,7 @@ script MoveTutor_EventScript_FullTutorList {
     dynmultipush("Phantom Force",26)
     dynmultipush("Poison Tail",27)
     dynmultipush("Poltergeist",28)
+	Pounce
     dynmultipush("Power Whip",29)
     dynmultipush("Power-Up Punch",30)
     dynmultipush("Razor Shell",31)
@@ -74,6 +76,7 @@ script MoveTutor_EventScript_FullTutorList {
     dynmultipush("Secret Power",36)
     dynmultipush("Self-Destruct",37)
     dynmultipush("Sky Drop",38)
+	Smart Strike
     dynmultipush("Super Fang",39)
     dynmultipush("Tail Slap",40)
     dynmultipush("Take Down",41)
@@ -89,6 +92,7 @@ script MoveTutor_EventScript_FullTutorList {
     dynmultipush("Aura Sphere",3)
     dynmultipush("Blast Burn",4)
     dynmultipush("Brine",5)
+	Burning Jealousy
     dynmultipush("Disarming Voice",6)
     dynmultipush("Dream Eater",7)
     dynmultipush("Echoed Voice",8)
@@ -1012,67 +1016,70 @@ script MoveTutor_EventScript_GetPhysicalMoveList {
 	lock
 	if(flag(FLAG_BADGE08_GET)) {
 		dynmultipush("Body Press",2)
-		dynmultipush("Triple Axel",44)
+		dynmultipush("Triple Axel",47)
 	}
 	if(flag(FLAG_BADGE07_GET)) {
-		dynmultipush("Poltergeist",28)
-		dynmultipush("Sky Drop",38)
+		dynmultipush("Poltergeist",29)
+		dynmultipush("Sky Drop",40)
 	}
 	if(flag(FLAG_BADGE06_GET)) {
 		dynmultipush("Explosion",10)
-		dynmultipush("Megahorn",24)
-		dynmultipush("Power Whip",29)
-		dynmultipush("Leaf Blade",22)
-		dynmultipush("Upper Hand",45)
+		dynmultipush("Megahorn",25)
+		dynmultipush("Power Whip",31)
+		dynmultipush("Leaf Blade",23)
+		dynmultipush("Upper Hand",48)
 	}
 	if(flag(FLAG_BADGE05_GET)) {
 		dynmultipush("Endeavor",9)
-		dynmultipush("Phantom Force",26)
+		dynmultipush("Phantom Force",27)
 		dynmultipush("Darkest Lariat",8)
-		dynmultipush("Retaliate",32)
+		dynmultipush("Retaliate",34)
 		dynmultipush("Brutal Swing",5)
-		dynmultipush("Power-Up Punch",30)
+		dynmultipush("Power-Up Punch",32)
 	}
 	if(flag(FLAG_BADGE04_GET)) {
-		dynmultipush("Gyro Ball",14)
-		dynmultipush("Heavy Slam",17)
-		dynmultipush("Giga Impact",13)
+		dynmultipush("Gyro Ball",15)
+		dynmultipush("Heavy Slam",18)
+		dynmultipush("Giga Impact",14)
 		dynmultipush("Body Slam",3)
-		dynmultipush("Lash Out",21)
-		dynmultipush("Razor Shell",31)
-		dynmultipush("Icicle Spear",19)
-		dynmultipush("Rock Blast",33)
-		dynmultipush("Tail Slap",40)
+		dynmultipush("Lash Out",22)
+		dynmultipush("Razor Shell",33)
+		dynmultipush("Icicle Spear",20)
+		dynmultipush("Rock Blast",35)
+		dynmultipush("Tail Slap",43)
 	}
 	if(flag(FLAG_BADGE03_GET)) {
-		dynmultipush("Hard Press",15)
-		dynmultipush("Self-Destruct",37)
-		dynmultipush("Take Down",41)
+		dynmultipush("Hard Press",16)
+		dynmultipush("Self-Destruct",39)
+		dynmultipush("Take Down",44)
 		dynmultipush("Blaze Kick",1)
 		dynmultipush("Bounce",4)
-		dynmultipush("Secret Power",36)
-		dynmultipush("Trailblaze",43)
+		dynmultipush("Secret Power",38)
+		dynmultipush("Trailblaze",46)
 	}
 	if(flag(FLAG_BADGE02_GET)) {
-		dynmultipush("Iron Tail",20)
-		dynmultipush("Headbutt",16)
-		dynmultipush("Fire Fang",11)
-		dynmultipush("Ice Fang",18)
-		dynmultipush("Thunder Fang",42)
+		dynmultipush("Iron Tail",21)
+		dynmultipush("Headbutt",17)
+		dynmultipush("Smart Strike",41)
+		dynmultipush("Fire Fang",12)
+		dynmultipush("Ice Fang",19)
+		dynmultipush("Thunder Fang",45)
 	}
 	if(flag(FLAG_BADGE01_GET)) {
-		dynmultipush("Low Kick",23)
-		dynmultipush("Focus Punch",12)
+		dynmultipush("Low Kick",24)
+		dynmultipush("Focus Punch",13)
 		dynmultipush("Bug Bite",6)
 		dynmultipush("Bulldoze",7)
-		dynmultipush("Sand Tomb",35)
-		dynmultipush("Rollout",34)
+		dynmultipush("Sand Tomb",37)
+		dynmultipush("Rollout",36)
 	}
 	if(flag(FLAG_DEFEATED_NORMAN_INTRO)) {
-		dynmultipush("Super Fang",39)
-		dynmultipush("Metal Claw",25)
-		dynmultipush("Poison Tail",27)
+		dynmultipush("Super Fang",42)
+		dynmultipush("Metal Claw",26)
+		dynmultipush("Poison Tail",28)
+		dynmultipush("Pounce",30)
 	}
+		dynmultipush("False Swipe",11)
 	goto(MoveTutor_EventScript_TeachPhysicalMove)
 }
 
@@ -1082,57 +1089,58 @@ script MoveTutor_EventScript_GetSpecialMoveList {
 		dynmultipush("Alluring Voice",2)
 	}
 	if(flag(FLAG_BADGE07_GET)) {
-		dynmultipush("Future Sight",16)
+		dynmultipush("Future Sight",17)
 		dynmultipush("Aura Sphere",3)
-		dynmultipush("Mystical Fire",25)
-		dynmultipush("Psychic Noise",29)
-		dynmultipush("Stored Power",33)
+		dynmultipush("Mystical Fire",26)
+		dynmultipush("Psychic Noise",30)
+		dynmultipush("Stored Power",34)
 	}
 	if(flag(FLAG_BADGE06_GET)) {
-		dynmultipush("Electro Ball",9)
-		dynmultipush("Misty Explosion",22)
-		dynmultipush("Pollen Puff",27)
+		dynmultipush("Electro Ball",10)
+		dynmultipush("Misty Explosion",23)
+		dynmultipush("Pollen Puff",28)
 	}
 	if(flag(FLAG_BADGE05_GET)) {
 		dynmultipush("Blast Burn",4)
-		dynmultipush("Frenzy Plant",14)
-		dynmultipush("Hydro Cannon",18)
-		dynmultipush("Focus Blast",13)
-		dynmultipush("Fire Pledge",11)
-		dynmultipush("Grass Pledge",17)
-		dynmultipush("Water Pledge",36)
+		dynmultipush("Frenzy Plant",15)
+		dynmultipush("Hydro Cannon",19)
+		dynmultipush("Focus Blast",14)
+		dynmultipush("Fire Pledge",12)
+		dynmultipush("Grass Pledge",18)
+		dynmultipush("Water Pledge",37)
 	}
 	if(flag(FLAG_BADGE04_GET)) {
-		dynmultipush("Dream Eater",7)
-		dynmultipush("Tri Attack",34)
+		dynmultipush("Dream Eater",8)
+		dynmultipush("Tri Attack",35)
 	}
 	if(flag(FLAG_BADGE03_GET)) {
-		dynmultipush("Zap Cannon",38)
-		dynmultipush("Uproar",35)
-		dynmultipush("Psybeam",28)
-		dynmultipush("Incinerate",19)
+		dynmultipush("Zap Cannon",39)
+		dynmultipush("Uproar",36)
+		dynmultipush("Psybeam",29)
+		dynmultipush("Burning Jealousy",6)
+		dynmultipush("Incinerate",20)
 	}
 	if(flag(FLAG_BADGE02_GET)) {
-		dynmultipush("Night Shade",26)
+		dynmultipush("Night Shade",27)
 		dynmultipush("Brine",5)
-		dynmultipush("Frost Breath",15)
-		dynmultipush("Shock Wave",31)
-		dynmultipush("Silver Wind",32)
+		dynmultipush("Frost Breath",16)
+		dynmultipush("Shock Wave",32)
+		dynmultipush("Silver Wind",33)
 	}
 	if(flag(FLAG_BADGE01_GET)) {
 		dynmultipush("Air Cutter",1)
-		dynmultipush("Magical Leaf",21)
-		dynmultipush("Round",30)
-		dynmultipush("Electroweb",10)
-		dynmultipush("Mud Shot",23)
-		dynmultipush("Fire Spin",12)
-		dynmultipush("Whirlpool",37)
+		dynmultipush("Magical Leaf",22)
+		dynmultipush("Round",31)
+		dynmultipush("Electroweb",11)
+		dynmultipush("Mud Shot",24)
+		dynmultipush("Fire Spin",13)
+		dynmultipush("Whirlpool",38)
 	}
 	if(flag(FLAG_DEFEATED_NORMAN_INTRO)) {
-		dynmultipush("Disarming Voice",6)
-		dynmultipush("Echoed Voice",8)
-		dynmultipush("Infestation",20)
-		dynmultipush("Mud-Slap",24)
+		dynmultipush("Disarming Voice",7)
+		dynmultipush("Echoed Voice",9)
+		dynmultipush("Infestation",21)
+		dynmultipush("Mud-Slap",25)
 	}
 	goto(MoveTutor_EventScript_TeachSpecialMove)
 }
@@ -1250,108 +1258,117 @@ script MoveTutor_EventScript_TeachPhysicalMove{
 			setvar(VAR_0x8005, MOVE_EXPLOSION)
 			bufferstring(STR_VAR_1, "Explosion")
 		case 11:
+			setvar(VAR_0x8005, MOVE_FALSE_SWIPE)
+			bufferstring(STR_VAR_1, "False Swipe")
+		case 12:
 			setvar(VAR_0x8005, MOVE_FIRE_FANG)
 			bufferstring(STR_VAR_1, "Fire Fang")
-		case 12:
+		case 13:
 			setvar(VAR_0x8005, MOVE_FOCUS_PUNCH)
 			bufferstring(STR_VAR_1, "Focus Punch")
-		case 13:
+		case 14:
 			setvar(VAR_0x8005, MOVE_GIGA_IMPACT)
 			bufferstring(STR_VAR_1, "Giga Impact")
-		case 14:
+		case 15:
 			setvar(VAR_0x8005, MOVE_GYRO_BALL)
 			bufferstring(STR_VAR_1, "Gyro Ball")
-		case 15:
+		case 16:
 			setvar(VAR_0x8005, MOVE_HARD_PRESS)
 			bufferstring(STR_VAR_1, "Hard Press")
-		case 16:
+		case 17:
 			setvar(VAR_0x8005, MOVE_HEADBUTT)
 			bufferstring(STR_VAR_1, "Headbutt")
-		case 17:
+		case 18:
 			setvar(VAR_0x8005, MOVE_HEAVY_SLAM)
 			bufferstring(STR_VAR_1, "Heavy Slam")
-		case 18:
+		case 19:
 			setvar(VAR_0x8005, MOVE_ICE_FANG)
 			bufferstring(STR_VAR_1, "Ice Fang")
-		case 19:
+		case 20:
 			setvar(VAR_0x8005, MOVE_ICICLE_SPEAR)
 			bufferstring(STR_VAR_1, "Icicle Spear")
-		case 20:
+		case 21:
 			setvar(VAR_0x8005, MOVE_IRON_TAIL)
 			bufferstring(STR_VAR_1, "Iron Tail")
-		case 21:
+		case 22:
 			setvar(VAR_0x8005, MOVE_LASH_OUT)
 			bufferstring(STR_VAR_1, "Lash Out")
-		case 22:
+		case 23:
 			setvar(VAR_0x8005, MOVE_LEAF_BLADE)
 			bufferstring(STR_VAR_1, "Leaf Blade")
-		case 23:
+		case 24:
 			setvar(VAR_0x8005, MOVE_LOW_KICK)
 			bufferstring(STR_VAR_1, "Low Kick")
-		case 24:
+		case 25:
 			setvar(VAR_0x8005, MOVE_MEGAHORN)
 			bufferstring(STR_VAR_1, "Megahorn")
-		case 25:
+		case 26:
 			setvar(VAR_0x8005, MOVE_METAL_CLAW)
 			bufferstring(STR_VAR_1, "Metal Claw")
-		case 26:
+		case 27:
 			setvar(VAR_0x8005, MOVE_PHANTOM_FORCE)
 			bufferstring(STR_VAR_1, "Phantom Force")
-		case 27:
+		case 28:
 			setvar(VAR_0x8005, MOVE_POISON_TAIL)
 			bufferstring(STR_VAR_1, "Poison Tail")
-		case 28:
+		case 29:
 			setvar(VAR_0x8005, MOVE_POLTERGEIST)
 			bufferstring(STR_VAR_1, "Poltergeist")
-		case 29:
+		case 30:
+			setvar(VAR_0x8005, MOVE_POUNCE)
+			bufferstring(STR_VAR_1, "Pounce")
+		case 31:
 			setvar(VAR_0x8005, MOVE_POWER_WHIP)
 			bufferstring(STR_VAR_1, "Power Whip")
-		case 30:
+		case 32:
 			setvar(VAR_0x8005, MOVE_POWER_UP_PUNCH)
 			bufferstring(STR_VAR_1, "Power-Up Punch")
-		case 31:
+		case 33:
 			setvar(VAR_0x8005, MOVE_RAZOR_SHELL)
 			bufferstring(STR_VAR_1, "Razor Shell")
-		case 32:
+		case 34:
 			setvar(VAR_0x8005, MOVE_RETALIATE)
 			bufferstring(STR_VAR_1, "Retaliate")
-		case 33:
+		case 35:
 			setvar(VAR_0x8005, MOVE_ROCK_BLAST)
 			bufferstring(STR_VAR_1, "Rock Blast")
-		case 34:
+		case 36:
 			setvar(VAR_0x8005, MOVE_ROLLOUT)
 			bufferstring(STR_VAR_1, "Rollout")
-		case 35:
+		case 37:
 			setvar(VAR_0x8005, MOVE_SAND_TOMB)
 			bufferstring(STR_VAR_1, "Sand Tomb")
-		case 36:
+		case 38:
 			setvar(VAR_0x8005, MOVE_SECRET_POWER)
 			bufferstring(STR_VAR_1, "Secret Power")
-		case 37:
+		case 39:
 			setvar(VAR_0x8005, MOVE_SELF_DESTRUCT)
 			bufferstring(STR_VAR_1, "Self-Destruct")
-		case 38:
+		case 40:
 			setvar(VAR_0x8005, MOVE_SKY_DROP)
 			bufferstring(STR_VAR_1, "Sky Drop")
-		case 39:
+		case 41:
+			setvar(VAR_0x8005, MOVE_SMART_STRIKE)
+			bufferstring(STR_VAR_1, "Smart Strike")
+		case 42:
 			setvar(VAR_0x8005, MOVE_SUPER_FANG)
 			bufferstring(STR_VAR_1, "Super Fang")
-		case 40:
+		case 43:
 			setvar(VAR_0x8005, MOVE_TAIL_SLAP)
 			bufferstring(STR_VAR_1, "Tail Slap")
-		case 41:
+		case 44:
 			setvar(VAR_0x8005, MOVE_TAKE_DOWN)
 			bufferstring(STR_VAR_1, "Take Down")
-		case 42:
+		case 45:
 			setvar(VAR_0x8005, MOVE_THUNDER_FANG)
 			bufferstring(STR_VAR_1, "Thunder Fang")
-		case 43:
+		case 46:
 			setvar(VAR_0x8005, MOVE_TRAILBLAZE)
 			bufferstring(STR_VAR_1, "Trailblaze")
-		case 44:
+		case 47:
 			setvar(VAR_0x8005, MOVE_TRIPLE_AXEL)
 			bufferstring(STR_VAR_1, "Triple Axel")
-		case 45:
+		case 48:
 			setvar(VAR_0x8005, MOVE_UPPER_HAND)
 			bufferstring(STR_VAR_1, "Upper Hand")
 		default:
@@ -1394,102 +1411,105 @@ script MoveTutor_EventScript_TeachSpecialMove{
 			setvar(VAR_0x8005, MOVE_BRINE)
 			bufferstring(STR_VAR_1, "Brine")
 		case 6:
+			setvar(VAR_0x8005, MOVE_BURNING_JEALOUSY)
+			bufferstring(STR_VAR_1, "Burning Jealousy")
+		case 7:
 			setvar(VAR_0x8005, MOVE_DISARMING_VOICE)
 			bufferstring(STR_VAR_1, "Disarming Voice")
-		case 7:
+		case 8:
 			setvar(VAR_0x8005, MOVE_DREAM_EATER)
 			bufferstring(STR_VAR_1, "Dream Eater")
-		case 8:
+		case 9:
 			setvar(VAR_0x8005, MOVE_ECHOED_VOICE)
 			bufferstring(STR_VAR_1, "Echoed Voice")
-		case 9:
+		case 10:
 			setvar(VAR_0x8005, MOVE_ELECTRO_BALL)
 			bufferstring(STR_VAR_1, "Electro Ball")
-		case 10:
+		case 11:
 			setvar(VAR_0x8005, MOVE_ELECTROWEB)
 			bufferstring(STR_VAR_1, "Electroweb")
-		case 11:
+		case 12:
 			setvar(VAR_0x8005, MOVE_FIRE_PLEDGE)
 			bufferstring(STR_VAR_1, "Fire Pledge")
-		case 12:
+		case 13:
 			setvar(VAR_0x8005, MOVE_FIRE_SPIN)
 			bufferstring(STR_VAR_1, "Fire Spin")
-		case 13:
+		case 14:
 			setvar(VAR_0x8005, MOVE_FOCUS_BLAST)
 			bufferstring(STR_VAR_1, "Focus Blast")
-		case 14:
+		case 15:
 			setvar(VAR_0x8005, MOVE_FRENZY_PLANT)
 			bufferstring(STR_VAR_1, "Frenzy Plant")
-		case 15:
+		case 16:
 			setvar(VAR_0x8005, MOVE_FROST_BREATH)
 			bufferstring(STR_VAR_1, "Frost Breath")
-		case 16:
+		case 17:
 			setvar(VAR_0x8005, MOVE_FUTURE_SIGHT)
 			bufferstring(STR_VAR_1, "Future Sight")
-		case 17:
+		case 18:
 			setvar(VAR_0x8005, MOVE_GRASS_PLEDGE)
 			bufferstring(STR_VAR_1, "Grass Pledge")
-		case 18:
+		case 19:
 			setvar(VAR_0x8005, MOVE_HYDRO_CANNON)
 			bufferstring(STR_VAR_1, "Hydro Cannon")
-		case 19:
+		case 20:
 			setvar(VAR_0x8005, MOVE_INCINERATE)
 			bufferstring(STR_VAR_1, "Incinerate")
-		case 20:
+		case 21:
 			setvar(VAR_0x8005, MOVE_INFESTATION)
 			bufferstring(STR_VAR_1, "Infestation")
-		case 21:
+		case 22:
 			setvar(VAR_0x8005, MOVE_MAGICAL_LEAF)
 			bufferstring(STR_VAR_1, "Magical Leaf")
-		case 22:
+		case 23:
 			setvar(VAR_0x8005, MOVE_MISTY_EXPLOSION)
 			bufferstring(STR_VAR_1, "Misty Explosion")
-		case 23:
+		case 24:
 			setvar(VAR_0x8005, MOVE_MUD_SHOT)
 			bufferstring(STR_VAR_1, "Mud Shot")
-		case 24:
+		case 25:
 			setvar(VAR_0x8005, MOVE_MUD_SLAP)
 			bufferstring(STR_VAR_1, "Mud-Slap")
-		case 25:
+		case 26:
 			setvar(VAR_0x8005, MOVE_MYSTICAL_FIRE)
 			bufferstring(STR_VAR_1, "Mystical Fire")
-		case 26:
+		case 27:
 			setvar(VAR_0x8005, MOVE_NIGHT_SHADE)
 			bufferstring(STR_VAR_1, "Night Shade")
-		case 27:
+		case 28:
 			setvar(VAR_0x8005, MOVE_POLLEN_PUFF)
 			bufferstring(STR_VAR_1, "Pollen Puff")
-		case 28:
+		case 29:
 			setvar(VAR_0x8005, MOVE_PSYBEAM)
 			bufferstring(STR_VAR_1, "Psybeam")
-		case 29:
+		case 30:
 			setvar(VAR_0x8005, MOVE_PSYCHIC_NOISE)
 			bufferstring(STR_VAR_1, "Psychic Noise")
-		case 30:
+		case 31:
 			setvar(VAR_0x8005, MOVE_ROUND)
 			bufferstring(STR_VAR_1, "Round")
-		case 31:
+		case 32:
 			setvar(VAR_0x8005, MOVE_SHOCK_WAVE)
 			bufferstring(STR_VAR_1, "Shock Wave")
-		case 32:
+		case 33:
 			setvar(VAR_0x8005, MOVE_SILVER_WIND)
 			bufferstring(STR_VAR_1, "Silver Wind")
-		case 33:
+		case 34:
 			setvar(VAR_0x8005, MOVE_STORED_POWER)
 			bufferstring(STR_VAR_1, "Stored Power")
-		case 34:
+		case 35:
 			setvar(VAR_0x8005, MOVE_TRI_ATTACK)
 			bufferstring(STR_VAR_1, "Tri Attack")
-		case 35:
+		case 36:
 			setvar(VAR_0x8005, MOVE_UPROAR)
 			bufferstring(STR_VAR_1, "Uproar")
-		case 36:
+		case 37:
 			setvar(VAR_0x8005, MOVE_WATER_PLEDGE)
 			bufferstring(STR_VAR_1, "Water Pledge")
-		case 37:
+		case 38:
 			setvar(VAR_0x8005, MOVE_WHIRLPOOL)
 			bufferstring(STR_VAR_1, "Whirlpool")
-		case 38:
+		case 39:
 			setvar(VAR_0x8005, MOVE_ZAP_CANNON)
 			bufferstring(STR_VAR_1, "Zap Cannon")
 		default:

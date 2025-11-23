@@ -40,7 +40,6 @@
     F(GIGA_DRAIN) \
     F(ENDURE) \
     F(CHARM) \
-    F(FALSE_SWIPE) \
     F(STEEL_WING) \
     F(ATTRACT) \
     F(SLEEP_TALK) \
@@ -136,7 +135,6 @@
     F(SOLAR_BLADE) \
     F(THROAT_CHOP) \
     F(LUNGE) \
-    F(SMART_STRIKE) \
     F(PSYCHIC_FANGS) \
     F(STOMPING_TANTRUM) \
     F(LIQUIDATION) \
@@ -147,12 +145,10 @@
     F(METEOR_BEAM) \
     F(GRASSY_GLIDE) \
     F(SKITTER_SMACK) \
-    F(BURNING_JEALOUSY) \
     F(FLIP_TURN) \
     F(DUAL_WINGBEAT) \
     F(SCORCHING_SANDS) \
     F(ICE_SPINNER) \
-    F(POUNCE) \
     F(CHILLING_WATER) \
     F(TEMPER_FLARE) \
     F(SUPERCELL_SLAM) \
