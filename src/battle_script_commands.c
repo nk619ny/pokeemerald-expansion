@@ -13955,6 +13955,10 @@ static void Cmd_handleballthrow(void)
                 if (B_DREAM_BALL_MODIFIER >= GEN_8 && (gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP || GetBattlerAbility(gBattlerTarget) == ABILITY_COMATOSE))
                     ballMultiplier = 400;
                 break;
+            case BALL_PREMIER:
+                if (gBattleMons[gBattlerTarget].level == 1)
+                    ballMultiplier = 1000;
+                break;
             case BALL_BEAST:
                 ballMultiplier = 10;
                 break;
@@ -13975,6 +13979,10 @@ static void Cmd_handleballthrow(void)
             odds *= 2;
         if (gBattleMons[gBattlerTarget].status1 & STATUS1_CAN_MOVE)
             odds = (odds * 15) / 10;
+
+        // Premier Ball guarantees catch for level 1 targets
+        if (ballId == BALL_PREMIER && gBattleMons[gBattlerTarget].level == 1)
+            odds = 255;
 
         if (gBattleResults.catchAttempts[ballId] < 255)
             gBattleResults.catchAttempts[ballId]++;

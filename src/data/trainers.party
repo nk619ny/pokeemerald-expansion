@@ -14897,10 +14897,10 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: AI_FLAG_CHECK_BAD_MOVE
 
 Treecko
-Level: 6
+Level: 8
 Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leafage
@@ -14909,8 +14909,9 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Absorb
 
 Beldum  
-Level: 6
+Level: 8
 Ability: Clear Body  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle  
 - Take Down  
 - Iron Defense  
@@ -15104,10 +15105,10 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: AI_FLAG_CHECK_BAD_MOVE
 
 Torchic
-Level: 6
+Level: 8
 Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
@@ -15116,8 +15117,9 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Peck
 
 Flabebe-White  
-Level: 6
-Ability: Flower Veil  
+Level: 8
+Ability: Flower Veil 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe 
 - Disarming Voice  
 - Vine Whip  
 - Confide  
@@ -15300,10 +15302,10 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: AI_FLAG_CHECK_BAD_MOVE
 
 Mudkip
-Level: 6
+Level: 8
 Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
@@ -15312,8 +15314,9 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Smash
 
 Sinistea-Antique  
-Level: 6
+Level: 8
 Ability: Cursed Body  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Night Shade  
 - Astonish  
 - Absorb  
@@ -15486,10 +15489,10 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: AI_FLAG_CHECK_BAD_MOVE
 
 Treecko
-Level: 6
+Level: 8
 Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Absorb
@@ -15498,8 +15501,9 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leafage
 
 Beldum  
-Level: 6
+Level: 8
 Ability: Clear Body  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle  
 - Take Down  
 - Iron Defense  
@@ -15694,10 +15698,10 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: AI_FLAG_CHECK_BAD_MOVE
 
 Torchic
-Level: 6
+Level: 8
 Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
@@ -15706,8 +15710,9 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Peck
 
 Flabebe-White  
-Level: 6
+Level: 8
 Ability: Flower Veil  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Disarming Voice  
 - Vine Whip  
 - Confide  
@@ -15889,10 +15894,10 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: AI_FLAG_CHECK_BAD_MOVE
 
 Mudkip
-Level: 6
+Level: 8
 Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
@@ -15901,7 +15906,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Smash
 
 Sinistea-Antique  
-Level: 6
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ability: Cursed Body  
 - Night Shade  
 - Astonish  

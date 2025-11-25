@@ -17,7 +17,7 @@ LittlerootTown_BrendansHouse_1F_OnLoad:
 # 9 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	call_if_lt VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_BrendansHouse_1F_EventScript_SetMovingBoxes
 # 10 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	call_if_set FLAG_RECEIVED_RUNNING_SHOES, LittlerootTown_BrendansHouse_1F_EventScript_CheckShowShoesManual
+	call_if_set FLAG_SYS_B_DASH, LittlerootTown_BrendansHouse_1F_EventScript_CheckShowShoesManual
 # 11 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	end
 # 12 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"

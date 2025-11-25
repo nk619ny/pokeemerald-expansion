@@ -1442,8 +1442,8 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	setvar (VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
     setflag (FLAG_SYS_NATIONAL_DEX)
 	special (EnableNationalPokedex)
-	msgbox ("Prof. Birch: You will also need these\nPokéballs, in order to catch new\lPokémon to add to your team.")
-	giveitem(ITEM_POKE_BALL, 5)
+	msgbox (format("Prof. Birch: You will also need Pokéballs, in order to catch new Pokémon to add to your team. This should help you get started, but you can buy more at the Mart in Oldale Town."))
+	giveitem(ITEM_PREMIER_BALL, 1)
 	closemessage
 	msgbox (format("Prof. Birch: And here are some utility items that will make your life as a Trainer much easier."))
 	giveitem(ITEM_POKEMON_BOX_LINK)
@@ -1451,6 +1451,7 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	giveitem(ITEM_ESCAPE_ROPE)
 	giveitem(ITEM_FULL_RESTORE)
 	giveitem(ITEM_UNLIMITED_REPEL)
+	giveitem(ITEM_ITEMFINDER)
 	closemessage
 	setvar(VAR_LEVEL_CAP,10)
     setvar(VAR_BIRCH_LAB_STATE, 5)
