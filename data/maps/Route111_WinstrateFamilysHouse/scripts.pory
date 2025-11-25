@@ -119,8 +119,15 @@ text Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort {
 }
 
 script Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem {
+	lock
+	if(!flag(FLAG_RECEIVED_CHOICE_BAND)) {dynmultipush("Choice Band",0)}
+    if(!flag(FLAG_RECEIVED_CHOICE_SCARF)) {dynmultipush("Choice Scarf",1)}
+    if(!flag(FLAG_RECEIVED_CHOICE_SPECS)) {dynmultipush("Choice Specs",2)}
+    if(!flag(FLAG_RECEIVED_LEFTOVERS)) {dynmultipush("Leftovers",3)}
+    if(!flag(FLAG_RECEIVED_LIFE_ORB)) {dynmultipush("Life Orb",4)}
+    if(!flag(FLAG_RECEIVED_ASSAULT_VEST)) {dynmultipush("Assault Vest",5)}
 	msgbox(format("As a reward for taking us all on, we'd like to give you something!\pWhich rare battle item would you like?"))
-	dynmultichoice(25,2,0,5,0,DYN_MULTICHOICE_CB_NONE,"Choice Band","Choice Specs","Choice Scarf","Life Orb","Leftovers")
+	dynmultistack(25, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 	copyvar(TempVar_SelectedItem,VAR_RESULT)
 	switch(var(TempVar_SelectedItem)){
 		case 0:
@@ -133,6 +140,8 @@ script Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem {
 			bufferstring(STR_VAR_1,"Life Orb")
 		case 4:
 			bufferstring(STR_VAR_1,"Leftovers")
+		case 5:
+			bufferstring(STR_VAR_1,"Assault Vest")
 		case 127:
 			msgbox(format("Okay, let me know when you've decided what item you'd like."),MSGBOX_NPC)
 			goto(Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection)
@@ -165,6 +174,10 @@ script Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem {
 			case 4:	
 				giveitem(ITEM_LEFTOVERS)
 				setflag(FLAG_RECEIVED_LEFTOVERS)
+				setflag(FLAG_RECEIVED_WINSTRATE_ITEM)
+			case 5:	
+				giveitem(ITEM_ASSAULT_VEST)
+				setflag(FLAG_RECEIVED_ASSAULT_VEST)
 				setflag(FLAG_RECEIVED_WINSTRATE_ITEM)
 		}
 	}

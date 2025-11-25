@@ -297,7 +297,7 @@
 #define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0x10F
 #define FLAG_RECEIVED_EXP_SHARE              0x110
 #define FLAG_POKERUS_EXPLAINED               0x111
-#define FLAG_RECEIVED_RUNNING_SHOES          0x112 // now unused and available for repurposing
+#define FLAG_RECEIVED_ASSAULT_VEST           0x112 // was running shoes, repurposed
 #define FLAG_RECEIVED_QUICK_CLAW             0x113
 #define FLAG_RECEIVED_KINGS_ROCK             0x114
 #define FLAG_RECEIVED_CHOICE_SPECS           0x115 // Was Macho Brace, repurposed

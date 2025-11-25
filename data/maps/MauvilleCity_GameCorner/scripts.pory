@@ -783,6 +783,26 @@ MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 `
 const LOCALID_GIMMIGHOUL = 13
 const LOCALID_SCOTT = 14
+const TempVar_CurrentCoins = VAR_TEMP_2
+const TempVar_PrizeToBuy = VAR_TEMP_3
+const TempVar_PrizePrice = VAR_TEMP_4
+//const PrizeName = STR_VAR_1
+//const Prizecost = STR_VAR_2
+
+
+script MauvilleCity_GameCorner_EventScript_CoinsClerk {
+	msgbox(MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner, MSGBOX_DEFAULT)
+	closemessage
+	msgbox(format("Were you looking for coins?\pI'm sorry, but I can't sell any to you.\nChildren are not allowed to gamble."))
+	closemessage
+	checkcoins(TempVar_CurrentCoins)
+	if(var(TempVar_CurrentCoins) > 0){
+		msgbox(format("Oh - you have coins already somehow?\pWell... I guess there is no rule against a child exchanging coins they already have for prizes."))
+	}
+	closemessage	
+	releaseall
+	end
+}
 
 script MauvilleCity_GameCorner_EventScript_GimmighoulEncounter {
 	lock
@@ -862,7 +882,7 @@ text MauvilleCity_GameCorner_Text_ScottDecline {
 
 script MauvilleCity_GameCorner_EventScript_SlotMachine {
 	lock
-	msgbox(format("It's a slot machine. Unfortunately, they won't let you play."))
+	msgbox(format("It's a slot machine. Unfortunately, they won't let children play."))
 	waitmessage
 	releaseall
 	end
@@ -870,7 +890,7 @@ script MauvilleCity_GameCorner_EventScript_SlotMachine {
 
 script Roulette_EventScript_Table {
 	lock
-	msgbox(format("It's a roulette table. Unfortunately, they won't let you play."))
+	msgbox(format("It's a roulette table. Unfortunately, they won't let children play."))
 	waitmessage
 	releaseall
 	end
@@ -880,13 +900,621 @@ text MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay {
 	format("The games at the Game Corner are only open to adults above a certain age.\pWe don't want children to develop dangerous habits.")
 }
 
-script MauvilleCity_GameCorner_EventScript_CoinsClerk {
+script MauvilleCity_GameCorner_EventScript_ExchangeCoinsForPrizes {
 	lock
 	faceplayer
-	msgbox(MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner, MSGBOX_DEFAULT)
-	waitmessage
-	msgbox(format("Were you looking for coins?\pI'm sorry, but I can't sell any to you.\nChildren are not allowed to gamble."))
+	checkitem(ITEM_COIN_CASE)
+	if(var(VAR_RESULT) == FALSE){
+		msgbox(format("I'm sorry, but you need a Coin Case to purchase prizes."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	checkcoins(TempVar_CurrentCoins)
+	msgbox(format("Which kind of prize would you like to purchase?"), MSGBOX_DEFAULT)
+	dynmultichoice(25,4,FALSE,4,0,DYN_MULTICHOICE_CB_NONE, "EV Vitamins", "One-Time Items", "Held Items", "Technical Machines", "Rare Battle Items")
+	switch(var(VAR_RESULT)) {
+		case 0:
+			goto(MauvilleCity_GameCorner_EventScript_BuyVitamins)
+		case 1:
+			goto(MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems)
+		case 2:
+			goto(MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems)
+		case 3:
+			goto(MauvilleCity_GameCorner_EventScript_BuyTMs)
+		case 4:
+			goto(MauvilleCity_GameCorner_EventScript_BuyRareBattleItems)
+		default:
+			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
+	}
+	closemessage
+	releaseall
+	end
+}
+
+script MauvilleCity_GameCorner_EventScript_OutOfRareItems {
+	lock
+	msgbox(format("I'm sorry, but it looks we're all out of rare battle items for now.\pPlease come back later!"))
 	waitmessage
 	releaseall
 	end
+}
+
+script MauvilleCity_GameCorner_EventScript_BuyRareBattleItems{
+	if(flag(FLAG_RECEIVED_CHOICE_BAND) && flag(FLAG_RECEIVED_CHOICE_SCARF) && flag(FLAG_RECEIVED_CHOICE_SPECS) && flag(FLAG_RECEIVED_LEFTOVERS) && flag(FLAG_RECEIVED_LIFE_ORB) && flag(FLAG_RECEIVED_ASSAULT_VEST)){
+		goto(MauvilleCity_GameCorner_EventScript_OutOfRareItems)
+	}
+	checkcoins(TempVar_CurrentCoins)
+	goto_if_lt(TempVar_CurrentCoins, 1250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForRarePrize)
+	msgbox(format("We only have one of each of these items, and they cost a whopping 1,250 coins each."), MSGBOX_DEFAULT)
+	closemessage
+	buffernumberstring(STR_VAR_2, 1250)
+	if(!flag(FLAG_RECEIVED_CHOICE_BAND)) {dynmultipush("Choice Band",ITEM_CHOICE_BAND)}
+    if(!flag(FLAG_RECEIVED_CHOICE_SCARF)) {dynmultipush("Choice Scarf",ITEM_CHOICE_SCARF)}
+    if(!flag(FLAG_RECEIVED_CHOICE_SPECS)) {dynmultipush("Choice Specs",ITEM_CHOICE_SPECS)}
+    if(!flag(FLAG_RECEIVED_LEFTOVERS)) {dynmultipush("Leftovers",ITEM_LEFTOVERS)}
+    if(!flag(FLAG_RECEIVED_LIFE_ORB)) {dynmultipush("Life Orb",ITEM_LIFE_ORB)}
+    if(!flag(FLAG_RECEIVED_ASSAULT_VEST)) {dynmultipush("Assault Vest",ITEM_ASSAULT_VEST)}
+	msgbox(format("Which item would you like for 1,250 coins?"), MSGBOX_DEFAULT)
+	showcoinsbox(1, 1)
+	dynmultistack(25, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	copyvar(TempVar_PrizeToBuy, VAR_RESULT)
+	bufferitemname(STR_VAR_1, TempVar_PrizeToBuy)
+	switch(var(TempVar_PrizeToBuy)) {
+	    case ITEM_CHOICE_BAND:          
+            msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+            goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+            removecoins(1250)
+            additem(TempVar_PrizeToBuy)
+            setflag(FLAG_RECEIVED_CHOICE_BAND)
+        case ITEM_CHOICE_SCARF:
+            msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+            goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+            removecoins(1250)
+            additem(TempVar_PrizeToBuy)
+            setflag(FLAG_RECEIVED_CHOICE_SCARF)
+        case ITEM_CHOICE_SPECS:
+            msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+            goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+            removecoins(1250)
+            additem(TempVar_PrizeToBuy)
+            setflag(FLAG_RECEIVED_CHOICE_SPECS)
+        case ITEM_LEFTOVERS:
+            msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+            goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+            removecoins(1250)
+            additem(TempVar_PrizeToBuy)
+            setflag(FLAG_RECEIVED_LEFTOVERS)
+        case ITEM_LIFE_ORB:
+            msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+            goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+            removecoins(1250)
+            additem(TempVar_PrizeToBuy)
+            setflag(FLAG_RECEIVED_LIFE_ORB)
+        case ITEM_ASSAULT_VEST:
+            msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+            goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+            removecoins(1250)
+            additem(TempVar_PrizeToBuy)
+            setflag(FLAG_RECEIVED_ASSAULT_VEST)
+		default:
+			hidecoinsbox(0, 5)
+			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
+	}
+	closemessage
+	playse(SE_SHOP)
+	msgbox(format("Here you go!"))
+	hidecoinsbox(0, 5)
+	closemessage
+	releaseall
+	return
+}
+
+script MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems {
+	lock
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Ability Shield   300 coins",ITEM_ABILITY_SHIELD)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Bright Powder   200 coins",ITEM_BRIGHT_POWDER)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Clear Amulet     500 coins",ITEM_CLEAR_AMULET)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Covert Cloak    500 coins",ITEM_COVERT_CLOAK)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Expert Belt      450 coins",ITEM_EXPERT_BELT)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Flame Orb          200 coins",ITEM_FLAME_ORB)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Heavy Boots     200 coins",ITEM_HEAVY_DUTY_BOOTS)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("King's Rock       200 coins",ITEM_KINGS_ROCK)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Lagging Tail      200 coins",ITEM_LAGGING_TAIL)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Light Clay         400 coins",ITEM_LIGHT_CLAY)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Metronome         300 coins",ITEM_METRONOME)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Protect Pads    300 coins",ITEM_PROTECTIVE_PADS)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Punching Glove 300 coins",ITEM_PUNCHING_GLOVE)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Quick Claw         200 coins",ITEM_QUICK_CLAW)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Safety Goggles 350 coins",ITEM_SAFETY_GOGGLES)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Scope Lens        250 coins",ITEM_SCOPE_LENS)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Shed Shell          250 coins",ITEM_SHED_SHELL)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Shell Bell           350 coins",ITEM_SHELL_BELL)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Sticky Barb       350 coins",ITEM_STICKY_BARB)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Toxic Orb           200 coins",ITEM_TOXIC_ORB)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Util. Umbrella    200 coins",ITEM_UTILITY_UMBRELLA)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Wide Lens          400 coins",ITEM_WIDE_LENS)}
+	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Zoom Lens          400 coins",ITEM_ZOOM_LENS)}
+	msgbox(format("Which held item would you like?"), MSGBOX_DEFAULT)
+	showcoinsbox(1, 1)
+	dynmultistack(25, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	copyvar(TempVar_PrizeToBuy, VAR_RESULT)
+	bufferitemname(STR_VAR_1, TempVar_PrizeToBuy)
+	//hidecoinsbox(0, 5)
+
+	switch(var(TempVar_PrizeToBuy)) {
+		case ITEM_ABILITY_SHIELD:
+			goto_if_lt(TempVar_CurrentCoins, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 300)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(300)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_EXPERT_BELT:
+			goto_if_lt(TempVar_CurrentCoins, 450, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 450)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(450)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_BRIGHT_POWDER:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_CLEAR_AMULET:
+			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 500)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(500)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_COVERT_CLOAK:
+			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 500)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(500)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_FLAME_ORB:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_HEAVY_DUTY_BOOTS:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_KINGS_ROCK:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_LAGGING_TAIL:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_LIGHT_CLAY:
+			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 400)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(400)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_METRONOME:
+			goto_if_lt(TempVar_CurrentCoins, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 300)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(300)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_PROTECTIVE_PADS:
+			goto_if_lt(TempVar_CurrentCoins, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 300)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(300)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_PUNCHING_GLOVE:
+			goto_if_lt(TempVar_CurrentCoins, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 300)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(300)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_QUICK_CLAW:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_SAFETY_GOGGLES:
+			goto_if_lt(TempVar_CurrentCoins, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 350)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(350)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_SCOPE_LENS:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_SHED_SHELL:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_SHELL_BELL:
+			goto_if_lt(TempVar_CurrentCoins, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 350)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(350)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_STICKY_BARB:
+			goto_if_lt(TempVar_CurrentCoins, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 350)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(350)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_TOXIC_ORB:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_UTILITY_UMBRELLA:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_WIDE_LENS:
+			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 400)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(400)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_ZOOM_LENS:
+			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 400)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(400)
+			additem(TempVar_PrizeToBuy)
+		default:
+			hidecoinsbox(0, 5)
+			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
+	}
+	closemessage
+	playse(SE_SHOP)
+	msgbox(format("Here you go!"))
+	hidecoinsbox(0, 5)
+	closemessage
+	releaseall
+	return
+}
+
+script MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems {
+	lock
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Air Balloon       100 coins",ITEM_AIR_BALLOON)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Focus Sash       250 coins",ITEM_FOCUS_SASH)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Mental Herb      100 coins",ITEM_MENTAL_HERB)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Power Herb        150 coins",ITEM_POWER_HERB)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("White Herb        250 coins",ITEM_WHITE_HERB)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Mirror Herb       250 coins",ITEM_MIRROR_HERB)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Adrenaline Orb 250 coins",ITEM_ADRENALINE_ORB)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Blunder Policy 100 coins",ITEM_BLUNDER_POLICY)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Weakness Plcy  150 coins",ITEM_WEAKNESS_POLICY)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Throat Spray    200 coins",ITEM_THROAT_SPRAY)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Eject Button    200 coins",ITEM_EJECT_BUTTON)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Eject Pack        200 coins",ITEM_EJECT_PACK)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Red Card            150 coins",ITEM_RED_CARD)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Absorb Bulb      100 coins",ITEM_ABSORB_BULB)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Cell Battery     100 coins",ITEM_CELL_BATTERY)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Luminous Moss  100 coins",ITEM_LUMINOUS_MOSS)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Snowball           100 coins",ITEM_SNOWBALL)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Grassy Seed      100 coins",ITEM_GRASSY_SEED)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Electric Seed   100 coins",ITEM_ELECTRIC_SEED)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Misty Seed        100 coins",ITEM_MISTY_SEED)}
+	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Psychic Seed    100 coins",ITEM_PSYCHIC_SEED)}
+	msgbox(format("Which one-time use item would you like?"), MSGBOX_DEFAULT)
+	showcoinsbox(1, 1)
+	dynmultistack(30, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	copyvar(TempVar_PrizeToBuy, VAR_RESULT)
+	bufferitemname(STR_VAR_1, TempVar_PrizeToBuy)
+
+	switch(var(TempVar_PrizeToBuy)) {
+		case ITEM_AIR_BALLOON:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_FOCUS_SASH:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_MENTAL_HERB:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_POWER_HERB:
+			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 150)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(150)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_WHITE_HERB:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_MIRROR_HERB:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_ADRENALINE_ORB:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_BLUNDER_POLICY:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_WEAKNESS_POLICY:
+			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 150)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(150)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_THROAT_SPRAY:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_EJECT_BUTTON:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_EJECT_PACK:
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(200)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_RED_CARD:
+			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 150)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(150)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_ABSORB_BULB:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_CELL_BATTERY:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_LUMINOUS_MOSS:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_SNOWBALL:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_GRASSY_SEED:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_ELECTRIC_SEED:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_MISTY_SEED:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_PSYCHIC_SEED:
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		default:
+			hidecoinsbox(0, 5)
+			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
+	}
+	closemessage
+	playse(SE_SHOP)
+	msgbox(format("Here you go!"))
+	closemessage
+	hidecoinsbox(0, 5)
+	releaseall
+	return
+}
+
+script MauvilleCity_GameCorner_EventScript_BuyTMs {
+	lock
+	msgbox(format("Sorry, TMs are not available at this time."))
+	waitmessage
+	releaseall
+	return
+}
+
+script MauvilleCity_GameCorner_EventScript_ComeBackLater {
+	lock
+	hidecoinsbox(0, 5)
+	msgbox(format("Please come back to exchange your coins for more prizes!"))
+	waitmessage
+	releaseall
+	return
+}
+
+script MauvilleCity_GameCorner_EventScript_BuyVitamins {
+	lock
+	dynmultipush("HP Up        250 coins",ITEM_HP_UP)
+	dynmultipush("Protein    250 coins",ITEM_PROTEIN)
+	dynmultipush("Iron         150 coins",ITEM_IRON)
+	dynmultipush("Calcium    250 coins",ITEM_CALCIUM)
+	dynmultipush("Zinc         150 coins",ITEM_ZINC)
+	dynmultipush("Carbos     250 coins",ITEM_CARBOS)
+	dynmultipush("PP Max      250 coins",ITEM_PP_MAX)
+	msgbox(format("Which vitamin would you like?"), MSGBOX_DEFAULT)
+	showcoinsbox(1, 1)
+	dynmultistack(30, 0, FALSE, 6, TRUE, 0, DYN_MULTICHOICE_CB_NONE)
+	copyvar(TempVar_PrizeToBuy, VAR_RESULT)
+	bufferitemname(STR_VAR_1, TempVar_PrizeToBuy)
+	//hidecoinsbox(0, 5)
+	switch(var(TempVar_PrizeToBuy)) {
+		case ITEM_HP_UP:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_PROTEIN:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_IRON:
+			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 150)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(150)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_CALCIUM:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_ZINC:
+			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 150)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(150)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_CARBOS:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_PP_MAX:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		default:
+			hidecoinsbox(0, 5)
+			goto(MoveTutor_EventScript_ComeBackLater)
+	}
+	closemessage
+	playse(SE_SHOP)
+	msgbox(format("Here you go!"))
+	hidecoinsbox(0, 5)
+	closemessage
+	releaseall
+	return
+}
+
+script MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize {
+		lock
+		msgbox(format("I'm sorry, but you don't have enough coins for that prize.\pPlease choose something else, or come back after you've earned more coins."))
+		waitmessage
+		releaseall
+		return
+}
+
+
+script MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForRarePrize {
+		lock
+		msgbox(format("I'm sorry, but you don't have enough coins for one of our rare battle items. These cost 1,250 coins each.\pPlease choose something else, or come back after you've earned more coins."))
+		waitmessage
+		releaseall
+		return
 }

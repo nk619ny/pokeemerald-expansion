@@ -553,64 +553,64 @@ script NewTrainerHill_EventScript_ReceiveReward {
 }
 
 script NewTrainerHill_EventScript_GetNumCoins {
-	switch(var(VAR_TRAINER_HILL_STATE))	 {
+	switch(var(VAR_TRAINER_HILL_STATE)) {
 		case 1:
-			setvar(TempVar_RewardCoins, 50)
-			bufferstring(STR_VAR_1,"50")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 2:
-			setvar(TempVar_RewardCoins, 100)
-			bufferstring(STR_VAR_1,"100")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 3:
-			setvar(TempVar_RewardCoins, 150)
-			bufferstring(STR_VAR_1,"150")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 4:
-			setvar(TempVar_RewardCoins, 200)
-			bufferstring(STR_VAR_1,"200")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 5:
-			setvar(TempVar_RewardCoins, 250)
-			bufferstring(STR_VAR_1,"250")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 6:
-			setvar(TempVar_RewardCoins, 300)
-			bufferstring(STR_VAR_1,"300")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 7:
-			setvar(TempVar_RewardCoins, 350)
-			bufferstring(STR_VAR_1,"350")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 8:
-			setvar(TempVar_RewardCoins, 400)
-			bufferstring(STR_VAR_1,"400")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 9:
-			setvar(TempVar_RewardCoins, 450)
-			bufferstring(STR_VAR_1,"450")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 10:
-			setvar(TempVar_RewardCoins, 500)
-			bufferstring(STR_VAR_1,"500")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 11:
-			setvar(TempVar_RewardCoins, 550)
-			bufferstring(STR_VAR_1,"550")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 12:
-			setvar(TempVar_RewardCoins, 600)
-			bufferstring(STR_VAR_1,"600")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 13:
-			setvar(TempVar_RewardCoins, 650)
-			bufferstring(STR_VAR_1,"650")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 14:
-			setvar(TempVar_RewardCoins, 700)
-			bufferstring(STR_VAR_1,"700")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 15:
-			setvar(TempVar_RewardCoins, 750)
-			bufferstring(STR_VAR_1,"750")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 16:
-			setvar(TempVar_RewardCoins, 800)
-			bufferstring(STR_VAR_1,"800")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 17:
-			setvar(TempVar_RewardCoins, 850)
-			bufferstring(STR_VAR_1,"850")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		case 18:
-			setvar(TempVar_RewardCoins, 900)
-			bufferstring(STR_VAR_1,"900")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 		default:
-			setvar(TempVar_RewardCoins, 1000)
-			bufferstring(STR_VAR_1,"1000")
+			setvar(TempVar_RewardCoins, 1250)
+			bufferstring(STR_VAR_1, "1250")
 	}
 }
 
