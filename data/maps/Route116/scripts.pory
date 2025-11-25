@@ -6,14 +6,14 @@ Route116_MapScripts::
 	.byte 0
 
 Route116_OnTransition:
-	call_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_SetWandasBoyfriendPos
+	//call_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_SetWandasBoyfriendPos
 	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_NORTH, AbnormalWeather_StartGroudonWeather
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_SOUTH, AbnormalWeather_StartGroudonWeather
 	end
 
 Route116_EventScript_SetWandasBoyfriendPos::
-	setobjectxyperm LOCALID_ROUTE116_WANDAS_BF, 38, 10
+	//setobjectxyperm LOCALID_ROUTE116_WANDAS_BF, 38, 10
 	return
 
 Route116_OnLoad:
@@ -470,3 +470,20 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "a BAG of their own.$"
 
 `
+
+script Route116_EventScript_DrillRunMan{
+	lock
+	faceplayer
+	checkitem(ITEM_TM_DRILL_RUN)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("We used Pokémon to expand Rusturf Tunnel, in the hopes people could use it more easily to travel to Verdanturf.\pYour Pokémon can drill, too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_DRILL_RUN)
+		waitfanfare
+	}
+	else {
+		msgbox(format("We should respect nature, but we still need shape our environment sometimes to make people's lives better."), MSGBOX_DEFAULT)
+	}
+	releaseall
+	end
+}

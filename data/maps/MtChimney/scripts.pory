@@ -940,3 +940,21 @@ text MtChimney_Text_ArchieMeetAgain {
 	"{PLAYER}, we shall meet again!"
 }
 
+
+script MtChimney_EventScript_HeatCrashHiker {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_HEAT_CRASH)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Did you know your Pokémon can smash down in a blaze of heat, like molten rock from a volcano?"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_HEAT_CRASH)
+		waitfanfare
+	}
+	else {
+		msgbox(format("Volcanoes are both mesmerizing and terrifying.\pImagine watching fire rain down from the sky..."), MSGBOX_DEFAULT)
+	}
+	releaseall
+	end
+}
+

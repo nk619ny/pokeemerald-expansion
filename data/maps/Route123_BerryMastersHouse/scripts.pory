@@ -38,7 +38,7 @@ Route123_BerryMastersHouse_EventScript_BerryMastersWife::
 	lock
 	faceplayer
 	dotimebasedevents
-	goto_if_set FLAG_DAILY_BERRY_MASTERS_WIFE, Route123_BerryMastersHouse_EventScript_ReceivedWifeBerryToday
+	//goto_if_set FLAG_DAILY_BERRY_MASTERS_WIFE, Route123_BerryMastersHouse_EventScript_ReceivedWifeBerryToday
 	msgbox Route123_BerryMastersHouse_Text_HeardAGoodSayingLately, MSGBOX_DEFAULT
 	setvar VAR_0x8004, EASY_CHAT_TYPE_GOOD_SAYING
 	call Common_ShowEasyChatScreen
@@ -124,9 +124,25 @@ Route123_BerryMastersHouse_EventScript_ReceivedWifeBerryToday::
 	end
 
 Route123_BerryMastersHouse_EventScript_GaveBerry::
-	setflag FLAG_DAILY_BERRY_MASTERS_WIFE
+	//setflag FLAG_DAILY_BERRY_MASTERS_WIFE
 	msgbox Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife, MSGBOX_DEFAULT
 	release
 	end
 
 `
+
+
+script Route109_EventScript_BerryMasterWifeSeedBomb {
+	lock
+	faceplayer
+	msgbox(format("My husband does incredible things, growing berries into thriving trees which bring more fruit into the world."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_SEED_BOMB)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I bet your Pokémon could do some incredible things with berry seeds, too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_SEED_BOMB)
+		waitfanfare
+	}
+	releaseall
+	end
+}

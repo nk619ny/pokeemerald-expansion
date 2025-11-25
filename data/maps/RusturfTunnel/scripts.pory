@@ -662,3 +662,18 @@ text RusturfTunnel_Text_AdminDefeated{
 text RusturfTunnel_Text_AdminIntro{
 	format("People decide they need a new path, and break through whatever is in their way to get there.\pWe've seen how bad things can go when the natural world isn't respected.\pIf nature can't defend itself, we'll step up and be its protectors!")
 }
+
+script RusturfTunnel_EventScript_RockTombHiker {
+	lock
+	faceplayer
+	msgbox(format("You always have to be careful in caves, or you might fall into a fissure or get trapped by a rock slide."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_ROCK_TOMB)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Pokémon can use rocks to slow down opponents, too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_ROCK_TOMB)
+		waitfanfare
+	}
+	releaseall
+	end
+}

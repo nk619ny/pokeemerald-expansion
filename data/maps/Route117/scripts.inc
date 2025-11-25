@@ -512,6 +512,35 @@ Route117_EventScript_TryDylanGiftAfterBattle_1:
 	return
 
 
+Route117_EventScript_GrassyGlideBoy::
+# 265 "data/maps/Route117/scripts.pory"
+	lock
+# 266 "data/maps/Route117/scripts.pory"
+	faceplayer
+# 267 "data/maps/Route117/scripts.pory"
+	checkitem ITEM_TM_GRASSY_GLIDE
+# 268 "data/maps/Route117/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route117_EventScript_GrassyGlideBoy_2
+# 275 "data/maps/Route117/scripts.pory"
+	goto Route117_EventScript_LittleBoy
+Route117_EventScript_GrassyGlideBoy_1:
+# 277 "data/maps/Route117/scripts.pory"
+	releaseall
+	end
+
+Route117_EventScript_GrassyGlideBoy_2:
+# 269 "data/maps/Route117/scripts.pory"
+	msgbox Route117_EventScript_GrassyGlideBoy_Text_0, MSGBOX_DEFAULT
+# 270 "data/maps/Route117/scripts.pory"
+	closemessage
+# 271 "data/maps/Route117/scripts.pory"
+	giveitem ITEM_TM_GRASSY_GLIDE
+# 272 "data/maps/Route117/scripts.pory"
+	waitfanfare
+	goto Route117_EventScript_GrassyGlideBoy_1
+
+
 Route117_EventScript_TryDylanGiftAfterBattle_Text_0:
 # 251 "data/maps/Route117/scripts.pory"
 	.string "If you beat Wattson, your Pokémon must\n"
@@ -524,3 +553,9 @@ Route117_EventScript_TryDylanGiftAfterBattle_Text_1:
 	.string "It's important to train your speed!\p"
 	.string "Training Pokémon's speed is easier, you\n"
 	.string "can just give them this.$"
+
+Route117_EventScript_GrassyGlideBoy_Text_0:
+# 269 "data/maps/Route117/scripts.pory"
+	.string "I feel like I can run so fast here, so\n"
+	.string "easily!\p"
+	.string "I bet your Pokémon can, too.$"

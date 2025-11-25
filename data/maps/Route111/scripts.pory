@@ -751,3 +751,18 @@ script Route111_EventScript_WinstratesGiveRockSmash {
 	closemessage
 	return
 }
+
+script Route111_EventScript_ScorcingSandsHiker{
+	lock
+	faceplayer
+	msgbox(format("Careful, the hot sand on the ground can burn your skin during the daytime."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_SCORCHING_SANDS)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Take this, so your Pokémon are prepared too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_SCORCHING_SANDS)
+		waitfanfare
+	}
+	releaseall
+	end
+}

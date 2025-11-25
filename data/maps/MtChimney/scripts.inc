@@ -1714,6 +1714,7 @@ MtChimney_Text_SawyerPostRematch:
 	.string "Actually, it really is hot here.\n"
 # 858 "data/maps/MtChimney/scripts.pory"
 	.string "I'm overdressed for these parts.$"
+
 MtChimney_EventScript_SetupMagma::
 # 863 "data/maps/MtChimney/scripts.pory"
 	setflag FLAG_HIDE_MT_CHIMNEY_TRAINERS
@@ -1757,6 +1758,48 @@ MtChimney_EventScript_CourtneyOutro::
 	release
 	end
 
+
+MtChimney_EventScript_HeatCrashHiker::
+# 945 "data/maps/MtChimney/scripts.pory"
+	lock
+# 946 "data/maps/MtChimney/scripts.pory"
+	faceplayer
+# 947 "data/maps/MtChimney/scripts.pory"
+	checkitem ITEM_TM_HEAT_CRASH
+# 948 "data/maps/MtChimney/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MtChimney_EventScript_HeatCrashHiker_2
+# 955 "data/maps/MtChimney/scripts.pory"
+	msgbox MtChimney_EventScript_HeatCrashHiker_Text_1, MSGBOX_DEFAULT
+MtChimney_EventScript_HeatCrashHiker_1:
+# 957 "data/maps/MtChimney/scripts.pory"
+	releaseall
+	end
+
+MtChimney_EventScript_HeatCrashHiker_2:
+# 949 "data/maps/MtChimney/scripts.pory"
+	msgbox MtChimney_EventScript_HeatCrashHiker_Text_0, MSGBOX_DEFAULT
+# 950 "data/maps/MtChimney/scripts.pory"
+	closemessage
+# 951 "data/maps/MtChimney/scripts.pory"
+	giveitem ITEM_TM_HEAT_CRASH
+# 952 "data/maps/MtChimney/scripts.pory"
+	waitfanfare
+	goto MtChimney_EventScript_HeatCrashHiker_1
+
+
+MtChimney_EventScript_HeatCrashHiker_Text_0:
+# 949 "data/maps/MtChimney/scripts.pory"
+	.string "Did you know your Pokémon can smash\n"
+	.string "down in a blaze of heat, like molten rock\l"
+	.string "from a volcano?$"
+
+MtChimney_EventScript_HeatCrashHiker_Text_1:
+# 955 "data/maps/MtChimney/scripts.pory"
+	.string "Volcanoes are both mesmerizing and\n"
+	.string "terrifying.\p"
+	.string "Imagine watching fire rain down from\n"
+	.string "the sky...$"
 
 MtChimney_Text_CourtneyIntro::
 # 892 "data/maps/MtChimney/scripts.pory"

@@ -260,3 +260,22 @@ script Route117_EventScript_TryDylanGiftAfterBattle {
 		end
 	}
 }
+
+script Route117_EventScript_GrassyGlideBoy{
+	lock
+	faceplayer
+	checkitem(ITEM_TM_GRASSY_GLIDE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I feel like I can run so fast here, so easily!\pI bet your Pokémon can, too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_GRASSY_GLIDE)
+		waitfanfare
+	}
+	else {
+		goto(Route117_EventScript_LittleBoy)
+	}
+	releaseall
+	end
+}
+
+

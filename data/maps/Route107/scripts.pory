@@ -54,3 +54,20 @@ Route107_EventScript_Camron::
 	end
 
 `
+
+
+script Route107_EventScript_FlipTurnSwimmer{
+	lock
+	faceplayer
+	msgbox(format("In competitive swimming, being able to turn quickly at the edge of the pool is just as important as your frontward speed."), MSGBOX_DEFAULT)
+	closemessage
+	checkitem(ITEM_TM_FLIP_TURN)
+	if(var(VAR_RESULT) == FALSE) {
+		giveitem(ITEM_TM_FLIP_TURN)
+		waitfanfare
+	}
+	msgbox(format("I learned how to turn underwater from watching Pokémon!"), MSGBOX_DEFAULT)
+	closemessage
+	releaseall
+	end
+}

@@ -39,3 +39,21 @@ GraniteCave_1F_Text_ExplainFlash:
 	.string "from DEWFORD's POKéMON GYM.$"
 
 `
+
+
+script GraniteCave_1F_EventScript_SmackDownHiker {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_SMACK_DOWN)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Sometimes when exploring, you need to knock obstacles or Pokémon out of the way.\pWith this TM, your Pokémon can smack opponents down."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_SMACK_DOWN)
+		waitfanfare
+	}
+	else{
+		msgbox(format("It gets pretty dark deeper in the cave.\pYou won't be able to progress further until your Pokémon can light the way."), MSGBOX_DEFAULT)
+	}
+	releaseall
+	end
+}

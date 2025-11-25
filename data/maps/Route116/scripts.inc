@@ -15,7 +15,7 @@ Route116_MapScripts::
 # 8 "data/maps/Route116/scripts.pory"
 Route116_OnTransition:
 # 9 "data/maps/Route116/scripts.pory"
-	call_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_SetWandasBoyfriendPos
+	//call_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_SetWandasBoyfriendPos
 # 10 "data/maps/Route116/scripts.pory"
 	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
 # 11 "data/maps/Route116/scripts.pory"
@@ -29,7 +29,7 @@ Route116_OnTransition:
 # 15 "data/maps/Route116/scripts.pory"
 Route116_EventScript_SetWandasBoyfriendPos::
 # 16 "data/maps/Route116/scripts.pory"
-	setobjectxyperm LOCALID_ROUTE116_WANDAS_BF, 38, 10
+	//setobjectxyperm LOCALID_ROUTE116_WANDAS_BF, 38, 10
 # 17 "data/maps/Route116/scripts.pory"
 	return
 # 18 "data/maps/Route116/scripts.pory"
@@ -938,3 +938,45 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "No TRAINER can afford to be without\n"
 # 470 "data/maps/Route116/scripts.pory"
 	.string "a BAG of their own.$"
+
+Route116_EventScript_DrillRunMan::
+# 475 "data/maps/Route116/scripts.pory"
+	lock
+# 476 "data/maps/Route116/scripts.pory"
+	faceplayer
+# 477 "data/maps/Route116/scripts.pory"
+	checkitem ITEM_TM_DRILL_RUN
+# 478 "data/maps/Route116/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route116_EventScript_DrillRunMan_2
+# 485 "data/maps/Route116/scripts.pory"
+	msgbox Route116_EventScript_DrillRunMan_Text_1, MSGBOX_DEFAULT
+Route116_EventScript_DrillRunMan_1:
+# 487 "data/maps/Route116/scripts.pory"
+	releaseall
+	end
+
+Route116_EventScript_DrillRunMan_2:
+# 479 "data/maps/Route116/scripts.pory"
+	msgbox Route116_EventScript_DrillRunMan_Text_0, MSGBOX_DEFAULT
+# 480 "data/maps/Route116/scripts.pory"
+	closemessage
+# 481 "data/maps/Route116/scripts.pory"
+	giveitem ITEM_TM_DRILL_RUN
+# 482 "data/maps/Route116/scripts.pory"
+	waitfanfare
+	goto Route116_EventScript_DrillRunMan_1
+
+
+Route116_EventScript_DrillRunMan_Text_0:
+# 479 "data/maps/Route116/scripts.pory"
+	.string "We used Pokémon to expand Rusturf\n"
+	.string "Tunnel, in the hopes people could use it\l"
+	.string "more easily to travel to Verdanturf.\p"
+	.string "Your Pokémon can drill, too.$"
+
+Route116_EventScript_DrillRunMan_Text_1:
+# 485 "data/maps/Route116/scripts.pory"
+	.string "We should respect nature, but we still\n"
+	.string "need shape our environment sometimes\l"
+	.string "to make people's lives better.$"

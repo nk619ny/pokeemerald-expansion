@@ -587,3 +587,18 @@ script Route109_EventScript_MrBriney{
 	releaseall
 	end
 }
+
+script Route109_EventScript_ChillingWater {
+	lock
+	faceplayer
+	msgbox(format("I want to swim in the water, but it's too cold!\pEverytime I dip my feet in, I have to run back out!"), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_CHILLING_WATER)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Maybe your Pokémon should spray cold water in battles? That would sure fight enemies off!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_CHILLING_WATER)
+		waitfanfare
+	}
+	releaseall
+	end
+}

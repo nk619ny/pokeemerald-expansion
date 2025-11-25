@@ -117,7 +117,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 # 59 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_EventScript_GiveAerialAce2::
 # 60 "data/maps/FortreeCity_Gym/scripts.pory"
-	giveitem ITEM_TM_AERIAL_ACE
+	giveitem ITEM_TM_BRAVE_BIRD
 # 61 "data/maps/FortreeCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 62 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -133,7 +133,7 @@ FortreeCity_Gym_EventScript_GiveAerialAce2::
 # 67 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_EventScript_GiveAerialAce::
 # 68 "data/maps/FortreeCity_Gym/scripts.pory"
-	giveitem ITEM_TM_AERIAL_ACE
+	giveitem ITEM_TM_BRAVE_BIRD
 # 69 "data/maps/FortreeCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 # 70 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -539,11 +539,11 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
 # 270 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_Text_ExplainAerialAce:
 # 271 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "TM40 contains AERIAL ACE.\p"
+	.string "This TM contains Brave Bird.\p"
 # 272 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "Its speed…\n"
+	.string "Its power…\n"
 # 273 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "No POKéMON should be able to avoid it.\p"
+	.string "No POKéMON should withstand it.\p"
 # 274 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "… … … … … …$"
 # 275 "data/maps/FortreeCity_Gym/scripts.pory"

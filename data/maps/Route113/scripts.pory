@@ -166,3 +166,19 @@ Route113_Text_GlassWorkshopSign:
 	.string "“Turning Volcanic Ash into Glass Items”$"
 
 `
+
+script Route113_EventScript_HazeGentleman {
+	lock
+	faceplayer
+	msgbox(format("There's something facinating about the ash in the air.\pIt is opaque, but I feel it clears the mind being here."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_HAZE)
+	if(var(VAR_RESULT) == FALSE) {
+		closemessage
+		giveitem(ITEM_TM_HAZE)
+		waitfanfare
+		msgbox(format("I wonder if you understand..."), MSGBOX_DEFAULT)
+	}
+	releaseall
+	end
+}
+

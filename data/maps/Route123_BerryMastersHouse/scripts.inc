@@ -79,7 +79,7 @@ Route123_BerryMastersHouse_EventScript_BerryMastersWife::
 # 40 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	dotimebasedevents
 # 41 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	goto_if_set FLAG_DAILY_BERRY_MASTERS_WIFE, Route123_BerryMastersHouse_EventScript_ReceivedWifeBerryToday
+	//goto_if_set FLAG_DAILY_BERRY_MASTERS_WIFE, Route123_BerryMastersHouse_EventScript_ReceivedWifeBerryToday
 # 42 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	msgbox Route123_BerryMastersHouse_Text_HeardAGoodSayingLately, MSGBOX_DEFAULT
 # 43 "data/maps/Route123_BerryMastersHouse/scripts.pory"
@@ -251,10 +251,50 @@ Route123_BerryMastersHouse_EventScript_ReceivedWifeBerryToday::
 # 126 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 Route123_BerryMastersHouse_EventScript_GaveBerry::
 # 127 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	setflag FLAG_DAILY_BERRY_MASTERS_WIFE
+	//setflag FLAG_DAILY_BERRY_MASTERS_WIFE
 # 128 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	msgbox Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife, MSGBOX_DEFAULT
 # 129 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	release
 # 130 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	end
+
+Route109_EventScript_BerryMasterWifeSeedBomb::
+# 136 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	lock
+# 137 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	faceplayer
+# 138 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	msgbox Route109_EventScript_BerryMasterWifeSeedBomb_Text_0, MSGBOX_DEFAULT
+# 139 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	checkitem ITEM_TM_SEED_BOMB
+# 140 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route109_EventScript_BerryMasterWifeSeedBomb_2
+Route109_EventScript_BerryMasterWifeSeedBomb_1:
+# 146 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	releaseall
+	end
+
+Route109_EventScript_BerryMasterWifeSeedBomb_2:
+# 141 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	msgbox Route109_EventScript_BerryMasterWifeSeedBomb_Text_1, MSGBOX_DEFAULT
+# 142 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	closemessage
+# 143 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	giveitem ITEM_TM_SEED_BOMB
+# 144 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	waitfanfare
+	goto Route109_EventScript_BerryMasterWifeSeedBomb_1
+
+
+Route109_EventScript_BerryMasterWifeSeedBomb_Text_0:
+# 138 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	.string "My husband does incredible things,\n"
+	.string "growing berries into thriving trees\l"
+	.string "which bring more fruit into the world.$"
+
+Route109_EventScript_BerryMasterWifeSeedBomb_Text_1:
+# 141 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	.string "I bet your Pokémon could do some\n"
+	.string "incredible things with berry seeds, too.$"

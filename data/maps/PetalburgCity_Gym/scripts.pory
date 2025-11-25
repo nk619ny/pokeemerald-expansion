@@ -1759,7 +1759,10 @@ script PetalburgCity_Gym_EventScript_DefeatedNorman {
 //	playfanfare(MUS_OBTAIN_B_POINTS)
 //	waitfanfare
 //	closemessage
-	msgbox(format("Dad: That was an impressive battle, {PLAYER}. You've defeated a Gym Leader.\pUnfortunately, because I'm in the process of retiring, I cannot give you or Wally a badge.\pHowever, I can now say you are ready to take on the Hoenn League.\pI have a friend, Mr. Briney, who lives out to the West of Petalburg. He can take you to the next step in your journey.\pOh, you've already met? Wonderful. I'll give him a call and ask him to take you to Dewford once you're ready.\pSpeaking of which, I want to give you this."),MSGBOX_NPC)
+	msgbox(format("Dad: That was an impressive battle, {PLAYER}. You've defeated a Gym Leader.\pTraditionally, when this happens, one will give you a TM. I'd like you to have this."),MSGBOX_DEFAULT)
+	giveitem(ITEM_TM_SWIFT)
+	waitfanfare
+	msgbox(format("Dad: Unfortunately, because I'm in the process of retiring, I cannot give you or Wally a badge.\pHowever, I can now say you are ready to take on the Hoenn League.\pI have a friend, Mr. Briney, who lives out to the West of Petalburg. He can take you to the next step in your journey.\pOh, you've already met? Wonderful. I'll give him a call and ask him to take you to Dewford once you're ready.\pSpeaking of which, I want to give you this."),MSGBOX_NPC)
     playfanfare(MUS_OBTAIN_ITEM)    
 	msgbox("Received PokéNAV!")
 	waitfanfare

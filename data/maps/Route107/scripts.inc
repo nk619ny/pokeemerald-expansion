@@ -106,3 +106,46 @@ Route107_EventScript_Camron::
 	msgbox Route107_Text_CamronPostBattle, MSGBOX_AUTOCLOSE
 # 54 "data/maps/Route107/scripts.pory"
 	end
+
+Route107_EventScript_FlipTurnSwimmer::
+# 60 "data/maps/Route107/scripts.pory"
+	lock
+# 61 "data/maps/Route107/scripts.pory"
+	faceplayer
+# 62 "data/maps/Route107/scripts.pory"
+	msgbox Route107_EventScript_FlipTurnSwimmer_Text_0, MSGBOX_DEFAULT
+# 63 "data/maps/Route107/scripts.pory"
+	closemessage
+# 64 "data/maps/Route107/scripts.pory"
+	checkitem ITEM_TM_FLIP_TURN
+# 65 "data/maps/Route107/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route107_EventScript_FlipTurnSwimmer_2
+Route107_EventScript_FlipTurnSwimmer_1:
+# 69 "data/maps/Route107/scripts.pory"
+	msgbox Route107_EventScript_FlipTurnSwimmer_Text_1, MSGBOX_DEFAULT
+# 70 "data/maps/Route107/scripts.pory"
+	closemessage
+# 71 "data/maps/Route107/scripts.pory"
+	releaseall
+	end
+
+Route107_EventScript_FlipTurnSwimmer_2:
+# 66 "data/maps/Route107/scripts.pory"
+	giveitem ITEM_TM_FLIP_TURN
+# 67 "data/maps/Route107/scripts.pory"
+	waitfanfare
+	goto Route107_EventScript_FlipTurnSwimmer_1
+
+
+Route107_EventScript_FlipTurnSwimmer_Text_0:
+# 62 "data/maps/Route107/scripts.pory"
+	.string "In competitive swimming, being able to\n"
+	.string "turn quickly at the edge of the pool is\l"
+	.string "just as important as your frontward\l"
+	.string "speed.$"
+
+Route107_EventScript_FlipTurnSwimmer_Text_1:
+# 69 "data/maps/Route107/scripts.pory"
+	.string "I learned how to turn underwater from\n"
+	.string "watching Pokémon!$"

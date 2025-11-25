@@ -1197,9 +1197,49 @@ RusturfTunnel_EventScript_Wanda_TunnelBlocked::
 	end
 
 
+RusturfTunnel_EventScript_RockTombHiker::
+# 667 "data/maps/RusturfTunnel/scripts.pory"
+	lock
+# 668 "data/maps/RusturfTunnel/scripts.pory"
+	faceplayer
+# 669 "data/maps/RusturfTunnel/scripts.pory"
+	msgbox RusturfTunnel_EventScript_RockTombHiker_Text_0, MSGBOX_DEFAULT
+# 670 "data/maps/RusturfTunnel/scripts.pory"
+	checkitem ITEM_TM_ROCK_TOMB
+# 671 "data/maps/RusturfTunnel/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq RusturfTunnel_EventScript_RockTombHiker_2
+RusturfTunnel_EventScript_RockTombHiker_1:
+# 677 "data/maps/RusturfTunnel/scripts.pory"
+	releaseall
+	end
+
+RusturfTunnel_EventScript_RockTombHiker_2:
+# 672 "data/maps/RusturfTunnel/scripts.pory"
+	msgbox RusturfTunnel_EventScript_RockTombHiker_Text_1, MSGBOX_DEFAULT
+# 673 "data/maps/RusturfTunnel/scripts.pory"
+	closemessage
+# 674 "data/maps/RusturfTunnel/scripts.pory"
+	giveitem ITEM_TM_ROCK_TOMB
+# 675 "data/maps/RusturfTunnel/scripts.pory"
+	waitfanfare
+	goto RusturfTunnel_EventScript_RockTombHiker_1
+
+
 RusturfTunnel_EventScript_Wanda_TunnelBlocked_Text_0:
 # 612 "data/maps/RusturfTunnel/scripts.pory"
 	.string "Thank you for chasing Team Aqua out!$"
+
+RusturfTunnel_EventScript_RockTombHiker_Text_0:
+# 669 "data/maps/RusturfTunnel/scripts.pory"
+	.string "You always have to be careful in caves,\n"
+	.string "or you might fall into a fissure or get\l"
+	.string "trapped by a rock slide.$"
+
+RusturfTunnel_EventScript_RockTombHiker_Text_1:
+# 672 "data/maps/RusturfTunnel/scripts.pory"
+	.string "Pokémon can use rocks to slow down\n"
+	.string "opponents, too.$"
 
 RusturfTunnel_Text_WandaTalksAqua::
 # 618 "data/maps/RusturfTunnel/scripts.pory"

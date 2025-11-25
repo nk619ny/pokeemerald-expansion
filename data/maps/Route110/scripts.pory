@@ -1031,3 +1031,18 @@ script Route110_EventScript_TryDaleGiftAfterBattle {
 		end
 	}
 }
+
+script Route109_EventScript_FlameChargeCyclist {
+	lock
+	faceplayer
+	msgbox(format("I love racing full speed up and down cycling road, with my hair blowing in the wind!"), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_FLAME_CHARGE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Your Pokémon can race at full speed too!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_FLAME_CHARGE)
+		waitfanfare
+	}
+	releaseall
+	end
+}

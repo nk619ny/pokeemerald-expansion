@@ -287,7 +287,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron4::
 # 144 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 
 # 145 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-/* SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
+SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 # 146 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	lock
 # 147 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
@@ -379,7 +379,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited::
 # 190 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	release
 # 191 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	end */
+	end
 # 192 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 
 # 193 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"

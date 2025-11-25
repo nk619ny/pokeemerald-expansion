@@ -142,7 +142,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron4::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon, MSGBOX_NPC
 	end
 
-/* SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
+SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 	lock
 	faceplayer
 	delay 8
@@ -188,7 +188,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited::
 	playse SE_EXIT
 	removeobject LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT
 	release
-	end */
+	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_NoRoomForThief::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_YouHaveToTakeThis, MSGBOX_DEFAULT

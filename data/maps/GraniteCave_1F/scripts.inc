@@ -76,3 +76,46 @@ GraniteCave_1F_Text_ExplainFlash:
 	.string "But, to use it, you need the GYM BADGE\n"
 # 39 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "from DEWFORD's POKéMON GYM.$"
+
+GraniteCave_1F_EventScript_SmackDownHiker::
+# 45 "data/maps/GraniteCave_1F/scripts.pory"
+	lock
+# 46 "data/maps/GraniteCave_1F/scripts.pory"
+	faceplayer
+# 47 "data/maps/GraniteCave_1F/scripts.pory"
+	checkitem ITEM_TM_SMACK_DOWN
+# 48 "data/maps/GraniteCave_1F/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq GraniteCave_1F_EventScript_SmackDownHiker_2
+# 55 "data/maps/GraniteCave_1F/scripts.pory"
+	msgbox GraniteCave_1F_EventScript_SmackDownHiker_Text_1, MSGBOX_DEFAULT
+GraniteCave_1F_EventScript_SmackDownHiker_1:
+# 57 "data/maps/GraniteCave_1F/scripts.pory"
+	releaseall
+	end
+
+GraniteCave_1F_EventScript_SmackDownHiker_2:
+# 49 "data/maps/GraniteCave_1F/scripts.pory"
+	msgbox GraniteCave_1F_EventScript_SmackDownHiker_Text_0, MSGBOX_DEFAULT
+# 50 "data/maps/GraniteCave_1F/scripts.pory"
+	closemessage
+# 51 "data/maps/GraniteCave_1F/scripts.pory"
+	giveitem ITEM_TM_SMACK_DOWN
+# 52 "data/maps/GraniteCave_1F/scripts.pory"
+	waitfanfare
+	goto GraniteCave_1F_EventScript_SmackDownHiker_1
+
+
+GraniteCave_1F_EventScript_SmackDownHiker_Text_0:
+# 49 "data/maps/GraniteCave_1F/scripts.pory"
+	.string "Sometimes when exploring, you need to\n"
+	.string "knock obstacles or Pokémon out of the\l"
+	.string "way.\p"
+	.string "With this TM, your Pokémon can smack\n"
+	.string "opponents down.$"
+
+GraniteCave_1F_EventScript_SmackDownHiker_Text_1:
+# 55 "data/maps/GraniteCave_1F/scripts.pory"
+	.string "It gets pretty dark deeper in the cave.\p"
+	.string "You won't be able to progress further\n"
+	.string "until your Pokémon can light the way.$"

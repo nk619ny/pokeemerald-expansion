@@ -98,12 +98,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_Scientist::
 	goto_if_set FLAG_SYS_GAME_CLEAR, MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal
 	goto_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_ScientistMagma
 	goto_if_lt VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal
-	goto MossdeepCity_SpaceCenter_2F_EventScript_ScientistMagma
-	end
-
-MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets, MSGBOX_DEFAULT
-	release
+	goto MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistMagma::
@@ -702,4 +697,25 @@ text MossdeepCity_SpaceCenter_2F_Text_MaxieInFreeRoam {
 
 text MossdeepCity_SpaceCenter_2F_Text_StevenInFreeRoam {
 	format("Steven: There is something about this meteorite… I can feel it.")
+}
+
+
+script MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal{
+	lock
+	faceplayer
+	checkitem(ITEM_TM_METEOR_BEAM)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("You look like a Pokémon trainer.\NLook at this new TM we've developed through our studies."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_METEOR_BEAM)
+		waitfanfare
+		msgbox(format("By channeling the power of outer space, a Pokémon can power itself up and attack."), MSGBOX_DEFAULT)
+		closemessage
+	}
+	else {
+		msgbox(MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets, MSGBOX_DEFAULT)
+		closemessage
+	}
+	releaseall
+	end
 }

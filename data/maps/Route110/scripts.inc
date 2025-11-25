@@ -2038,6 +2038,35 @@ Route110_EventScript_TryDaleGiftAfterBattle_1:
 	return
 
 
+Route109_EventScript_FlameChargeCyclist::
+# 1036 "data/maps/Route110/scripts.pory"
+	lock
+# 1037 "data/maps/Route110/scripts.pory"
+	faceplayer
+# 1038 "data/maps/Route110/scripts.pory"
+	msgbox Route109_EventScript_FlameChargeCyclist_Text_0, MSGBOX_DEFAULT
+# 1039 "data/maps/Route110/scripts.pory"
+	checkitem ITEM_TM_FLAME_CHARGE
+# 1040 "data/maps/Route110/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route109_EventScript_FlameChargeCyclist_2
+Route109_EventScript_FlameChargeCyclist_1:
+# 1046 "data/maps/Route110/scripts.pory"
+	releaseall
+	end
+
+Route109_EventScript_FlameChargeCyclist_2:
+# 1041 "data/maps/Route110/scripts.pory"
+	msgbox Route109_EventScript_FlameChargeCyclist_Text_1, MSGBOX_DEFAULT
+# 1042 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1043 "data/maps/Route110/scripts.pory"
+	giveitem ITEM_TM_FLAME_CHARGE
+# 1044 "data/maps/Route110/scripts.pory"
+	waitfanfare
+	goto Route109_EventScript_FlameChargeCyclist_1
+
+
 Route110_EventScript_TryDaleGiftAfterBattle_Text_0:
 # 1022 "data/maps/Route110/scripts.pory"
 	.string "A little while ago, I fished up some sort\n"
@@ -2053,6 +2082,17 @@ Route110_EventScript_TryDaleGiftAfterBattle_Text_1:
 	.string "or treat or something, for Pokémon.\p"
 	.string "Mine don't seem interested, so you can\n"
 	.string "have it.$"
+
+Route109_EventScript_FlameChargeCyclist_Text_0:
+# 1038 "data/maps/Route110/scripts.pory"
+	.string "I love racing full speed up and down\n"
+	.string "cycling road, with my hair blowing in the\l"
+	.string "wind!$"
+
+Route109_EventScript_FlameChargeCyclist_Text_1:
+# 1041 "data/maps/Route110/scripts.pory"
+	.string "Your Pokémon can race at full speed\n"
+	.string "too!$"
 
 Route110_Text_MayHiLetsRegister::
 # 1011 "data/maps/Route110/scripts.pory"

@@ -1141,6 +1141,48 @@ Route109_EventScript_MrBriney_5:
 	goto Route109_EventScript_MrBriney_4
 
 
+Route109_EventScript_ChillingWater::
+# 592 "data/maps/Route109/scripts.pory"
+	lock
+# 593 "data/maps/Route109/scripts.pory"
+	faceplayer
+# 594 "data/maps/Route109/scripts.pory"
+	msgbox Route109_EventScript_ChillingWater_Text_0, MSGBOX_DEFAULT
+# 595 "data/maps/Route109/scripts.pory"
+	checkitem ITEM_TM_CHILLING_WATER
+# 596 "data/maps/Route109/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route109_EventScript_ChillingWater_2
+Route109_EventScript_ChillingWater_1:
+# 602 "data/maps/Route109/scripts.pory"
+	releaseall
+	end
+
+Route109_EventScript_ChillingWater_2:
+# 597 "data/maps/Route109/scripts.pory"
+	msgbox Route109_EventScript_ChillingWater_Text_1, MSGBOX_DEFAULT
+# 598 "data/maps/Route109/scripts.pory"
+	closemessage
+# 599 "data/maps/Route109/scripts.pory"
+	giveitem ITEM_TM_CHILLING_WATER
+# 600 "data/maps/Route109/scripts.pory"
+	waitfanfare
+	goto Route109_EventScript_ChillingWater_1
+
+
+Route109_EventScript_ChillingWater_Text_0:
+# 594 "data/maps/Route109/scripts.pory"
+	.string "I want to swim in the water, but it's too\n"
+	.string "cold!\p"
+	.string "Everytime I dip my feet in, I have to run\n"
+	.string "back out!$"
+
+Route109_EventScript_ChillingWater_Text_1:
+# 597 "data/maps/Route109/scripts.pory"
+	.string "Maybe your Pokémon should spray cold\n"
+	.string "water in battles? That would sure fight\l"
+	.string "enemies off!$"
+
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods::
 # 561 "data/maps/Route109/scripts.pory"
 	.string "Ahoy! We've made land in SLATEPORT!\p"

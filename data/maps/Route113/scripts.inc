@@ -330,3 +330,43 @@ Route113_Text_GlassWorkshopSign:
 	.string "GLASS WORKSHOP\n"
 # 166 "data/maps/Route113/scripts.pory"
 	.string "“Turning Volcanic Ash into Glass Items”$"
+
+Route113_EventScript_HazeGentleman::
+# 171 "data/maps/Route113/scripts.pory"
+	lock
+# 172 "data/maps/Route113/scripts.pory"
+	faceplayer
+# 173 "data/maps/Route113/scripts.pory"
+	msgbox Route113_EventScript_HazeGentleman_Text_0, MSGBOX_DEFAULT
+# 174 "data/maps/Route113/scripts.pory"
+	checkitem ITEM_TM_HAZE
+# 175 "data/maps/Route113/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route113_EventScript_HazeGentleman_2
+Route113_EventScript_HazeGentleman_1:
+# 181 "data/maps/Route113/scripts.pory"
+	releaseall
+	end
+
+Route113_EventScript_HazeGentleman_2:
+# 176 "data/maps/Route113/scripts.pory"
+	closemessage
+# 177 "data/maps/Route113/scripts.pory"
+	giveitem ITEM_TM_HAZE
+# 178 "data/maps/Route113/scripts.pory"
+	waitfanfare
+# 179 "data/maps/Route113/scripts.pory"
+	msgbox Route113_EventScript_HazeGentleman_Text_1, MSGBOX_DEFAULT
+	goto Route113_EventScript_HazeGentleman_1
+
+
+Route113_EventScript_HazeGentleman_Text_0:
+# 173 "data/maps/Route113/scripts.pory"
+	.string "There's something facinating about the\n"
+	.string "ash in the air.\p"
+	.string "It is opaque, but I feel it clears the\n"
+	.string "mind being here.$"
+
+Route113_EventScript_HazeGentleman_Text_1:
+# 179 "data/maps/Route113/scripts.pory"
+	.string "I wonder if you understand...$"
