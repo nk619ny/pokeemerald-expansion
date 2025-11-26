@@ -912,18 +912,20 @@ script MauvilleCity_GameCorner_EventScript_ExchangeCoinsForPrizes {
 	}
 	checkcoins(TempVar_CurrentCoins)
 	msgbox(format("Which kind of prize would you like to purchase?"), MSGBOX_DEFAULT)
-	dynmultichoice(25,4,FALSE,4,0,DYN_MULTICHOICE_CB_NONE, "EV Vitamins", "One-Time Items", "Held Items", "Technical Machines", "Rare Battle Items")
+	dynmultichoice(25,2,FALSE,5,0,DYN_MULTICHOICE_CB_NONE, "One-Time Items", "Held Items", "Technical Machines", "Rare Battle Items", "EV Vitamins", "Type Gems")
 	switch(var(VAR_RESULT)) {
 		case 0:
-			goto(MauvilleCity_GameCorner_EventScript_BuyVitamins)
-		case 1:
 			goto(MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems)
-		case 2:
+		case 1:
 			goto(MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems)
-		case 3:
+		case 2:
 			goto(MauvilleCity_GameCorner_EventScript_BuyTMs)
-		case 4:
+		case 3:
 			goto(MauvilleCity_GameCorner_EventScript_BuyRareBattleItems)
+		case 4:
+			goto(MauvilleCity_GameCorner_EventScript_BuyVitamins)
+		case 5: 
+			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
 		default:
 			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
 	}
@@ -1426,13 +1428,13 @@ script MauvilleCity_GameCorner_EventScript_ComeBackLater {
 
 script MauvilleCity_GameCorner_EventScript_BuyVitamins {
 	lock
-	dynmultipush("HP Up        250 coins",ITEM_HP_UP)
-	dynmultipush("Protein    250 coins",ITEM_PROTEIN)
-	dynmultipush("Iron         150 coins",ITEM_IRON)
-	dynmultipush("Calcium    250 coins",ITEM_CALCIUM)
-	dynmultipush("Zinc         150 coins",ITEM_ZINC)
-	dynmultipush("Carbos     250 coins",ITEM_CARBOS)
-	dynmultipush("PP Max      250 coins",ITEM_PP_MAX)
+	dynmultipush("HP Up        200 coins",ITEM_HP_UP)
+	dynmultipush("Protein    200 coins",ITEM_PROTEIN)
+	dynmultipush("Iron         100 coins",ITEM_IRON)
+	dynmultipush("Calcium    200 coins",ITEM_CALCIUM)
+	dynmultipush("Zinc         100 coins",ITEM_ZINC)
+	dynmultipush("Carbos     200 coins",ITEM_CARBOS)
+	dynmultipush("PP Max      200 coins",ITEM_PP_MAX)
 	msgbox(format("Which vitamin would you like?"), MSGBOX_DEFAULT)
 	showcoinsbox(1, 1)
 	dynmultistack(30, 0, FALSE, 6, TRUE, 0, DYN_MULTICHOICE_CB_NONE)
@@ -1441,53 +1443,53 @@ script MauvilleCity_GameCorner_EventScript_BuyVitamins {
 	//hidecoinsbox(0, 5)
 	switch(var(TempVar_PrizeToBuy)) {
 		case ITEM_HP_UP:
-			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 250)
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(250)
+			removecoins(200)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_PROTEIN:
-			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 250)
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(250)
+			removecoins(200)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_IRON:
-			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 150)
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(150)
+			removecoins(100)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_CALCIUM:
-			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 250)
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(250)
+			removecoins(200)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_ZINC:
-			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 150)
+			goto_if_lt(TempVar_CurrentCoins, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 100)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(150)
+			removecoins(100)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_CARBOS:
-			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 250)
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(250)
+			removecoins(200)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_PP_MAX:
-			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 250)
+			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 200)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(250)
+			removecoins(200)
 			additem(TempVar_PrizeToBuy)
 		default:
 			hidecoinsbox(0, 5)

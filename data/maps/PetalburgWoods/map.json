@@ -256,10 +256,17 @@
       "dest_warp_id": "7"
     },
     {
-      "x": 27,
-      "y": 4,
+      "x": 41,
+      "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE104_NORTH",
+      "dest_map": "MAP_PETALBURG_WOODS2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 42,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_WOODS2",
       "dest_warp_id": "1"
     }
   ],
