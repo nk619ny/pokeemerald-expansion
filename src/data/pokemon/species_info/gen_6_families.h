@@ -6187,7 +6187,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 243 : 219,
         .evYield_HP = 3,
         .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
+        .eggCycles = 10,
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),

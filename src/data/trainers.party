@@ -8420,25 +8420,25 @@ Ability: Slow Start
 Ball: Premier Ball
 Level: 14  
 Calm Nature  
-IVs: 0 HP / 0 Atk / 0 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Slack Off  
 - Yawn  
-- Headbutt  
-- Stomping Tantrum  
+- Scratch
+- Rock Smash  
 
-Skitty @ Silk Scarf  
-Ability: Normalize  
+Skitty
+Ability: Cute Charm  
 Ball: Premier Ball
 Level: 14 
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fake Out  
 - Last Resort  
 
-Spinda @ Custap Berry  
+Spinda
 Ability: Contrary  
 Ball: Premier Ball
-Level: 13  
-Quirky Nature  
+Level: 11  
+Quirky Nature 
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Superpower  
 - Psycho Boost  
@@ -8449,22 +8449,24 @@ Ability: Gluttony
 Ball: Premier Ball
 Level: 14  
 EVs: 64 HP
+IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Adamant Nature  
 - Belly Drum  
 - Quick Attack
 - Super Fang  
 - Rock Smash  
 
-Aipom @ Life Orb  
-Ability: Skill Link  
+Aipom
+Ability: Run Away
 Ball: Premier Ball
 Level: 13 
 Jolly Nature
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Tail Slap  
+- Double Hit  
 - U-turn  
-- Pursuit  
-- Retaliate  
+- Shadow Claw
+/* Retaliate */
+
 
 Clefairy @ Eviolite  
 Ability: Friend Guard  
