@@ -1051,7 +1051,7 @@ PetalburgWoods_EventScript_AquaGruntPostBattle::
 # 535 "data/maps/PetalburgWoods/scripts.pory"
 	setvar VAR_PETALBURG_GYM_STATE, 2
 # 536 "data/maps/PetalburgWoods/scripts.pory"
-	setvar VAR_LEVEL_CAP, 17
+	setvar VAR_LEVEL_CAP, 15
 # 537 "data/maps/PetalburgWoods/scripts.pory"
 	call Common_EventScript_ApplyHandicap
 # 538 "data/maps/PetalburgWoods/scripts.pory"

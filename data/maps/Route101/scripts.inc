@@ -757,45 +757,51 @@ Route101_RivalDefeated::
 # 385 "data/maps/Route101/scripts.pory"
 	setvar VAR_PETALBURG_GYM_STATE, 0
 # 386 "data/maps/Route101/scripts.pory"
+	setvar VAR_LEVEL_CAP, 13
+# 387 "data/maps/Route101/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 388 "data/maps/Route101/scripts.pory"
+	call Common_EventScript_LevelCapUpdate
+# 389 "data/maps/Route101/scripts.pory"
 	releaseall
 	return
 
 
-# 389 "data/maps/Route101/scripts.pory"
+# 392 "data/maps/Route101/scripts.pory"
 Route101_RivalApproachPlayer2:
-# 390 "data/maps/Route101/scripts.pory"
-	walk_right
-# 390 "data/maps/Route101/scripts.pory"
-	walk_right
-	step_end
-
 # 393 "data/maps/Route101/scripts.pory"
-Route101_RivalApproachPlayer1:
-# 394 "data/maps/Route101/scripts.pory"
+	walk_right
+# 393 "data/maps/Route101/scripts.pory"
 	walk_right
 	step_end
 
+# 396 "data/maps/Route101/scripts.pory"
+Route101_RivalApproachPlayer1:
 # 397 "data/maps/Route101/scripts.pory"
-Route101_RivalDeparture:
-# 398 "data/maps/Route101/scripts.pory"
-	walk_up
-# 398 "data/maps/Route101/scripts.pory"
-	walk_up
-# 399 "data/maps/Route101/scripts.pory"
 	walk_right
+	step_end
+
 # 400 "data/maps/Route101/scripts.pory"
+Route101_RivalDeparture:
+# 401 "data/maps/Route101/scripts.pory"
 	walk_up
-# 400 "data/maps/Route101/scripts.pory"
+# 401 "data/maps/Route101/scripts.pory"
 	walk_up
-# 400 "data/maps/Route101/scripts.pory"
+# 402 "data/maps/Route101/scripts.pory"
+	walk_right
+# 403 "data/maps/Route101/scripts.pory"
 	walk_up
-# 400 "data/maps/Route101/scripts.pory"
+# 403 "data/maps/Route101/scripts.pory"
 	walk_up
-# 400 "data/maps/Route101/scripts.pory"
+# 403 "data/maps/Route101/scripts.pory"
 	walk_up
-# 400 "data/maps/Route101/scripts.pory"
+# 403 "data/maps/Route101/scripts.pory"
 	walk_up
-# 400 "data/maps/Route101/scripts.pory"
+# 403 "data/maps/Route101/scripts.pory"
+	walk_up
+# 403 "data/maps/Route101/scripts.pory"
+	walk_up
+# 403 "data/maps/Route101/scripts.pory"
 	walk_up
 	step_end
 

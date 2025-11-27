@@ -533,7 +533,7 @@ script PetalburgWoods_EventScript_AquaGruntPostBattle {
 	setflag(FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT)
 	setvar(VAR_PETALBURG_WOODS_STATE, 1)
 	setvar(VAR_PETALBURG_GYM_STATE, 2)
-	setvar(VAR_LEVEL_CAP, 17)
+	setvar(VAR_LEVEL_CAP, 15)
 	call(Common_EventScript_ApplyHandicap)
 	call(Common_EventScript_LevelCapUpdate)
 //	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)

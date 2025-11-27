@@ -563,10 +563,10 @@ Tentacool @ Oran Berry
 Ability: Liquid Ooze  
 Ball: Nest Ball
 Level: 12  
-EVs: 192 HP / 244 SpA / 52 Spe  
+EVs: 48 HP
 Timid Nature  
 IVs: 0 Atk  
-- Giga Drain  
+- Mega Drain  
 - Chilling Water  
 - Acid Spray  
 - Whirlpool  
@@ -575,7 +575,7 @@ Toedscool @ Oran Berry
 Ability: Mycelium Might  
 Ball: Nest Ball
 Level: 12
-EVs: 224 HP / 156 Atk / 64 Def / 44 SpA  
+EVs: 64 HP 
 Sassy Nature  
 - Bullet Seed  
 - Stun Spore  
@@ -585,7 +585,9 @@ Sassy Nature
 Peeko (Wingull) @ Liechi Berry  
 Ability: Hydration  
 Level: 12  
-EVs: 224 HP / 236 Atk / 32 Spe  
+Ball: Friend Ball
+EVs: 48 HP
+IVs: 15 Atk
 Jolly Nature  
 - Acrobatics  
 - Liquidation  
@@ -4210,7 +4212,7 @@ Grumpig
 Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CINDY_1 === /* Route 104 */ 
+=== TRAINER_CINDY_1 === /* Route 104 */ /* ADUST, WAY TOO STRONG */
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -8416,9 +8418,9 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Slaking  
 Ability: Slow Start  
 Ball: Premier Ball
-Level: 15  
-EVs: 92 Atk / 104 SpD / 252 Spe  
-Adamant Nature  
+Level: 14  
+Calm Nature  
+IVs: 0 HP / 0 Atk / 0 Spe
 - Slack Off  
 - Yawn  
 - Headbutt  
@@ -8427,19 +8429,17 @@ Adamant Nature
 Skitty @ Silk Scarf  
 Ability: Normalize  
 Ball: Premier Ball
-Level: 15  
-EVs: 236 Atk / 24 Def / 236 SpD / 12 Spe  
-Adamant Nature  
+Level: 14 
+IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fake Out  
 - Last Resort  
 
 Spinda @ Custap Berry  
 Ability: Contrary  
 Ball: Premier Ball
-Level: 14  
-EVs: 252 HP  
+Level: 13  
 Quirky Nature  
-IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD  
+IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Superpower  
 - Psycho Boost  
 - Teeter Dance
@@ -8447,8 +8447,8 @@ IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD
 Zigzagoon @ Aguav Berry  
 Ability: Gluttony  
 Ball: Premier Ball
-Level: 15  
-EVs: 244 HP / 252 Atk / 4 Def  
+Level: 14  
+EVs: 64 HP
 Adamant Nature  
 - Belly Drum  
 - Quick Attack
@@ -8458,9 +8458,9 @@ Adamant Nature
 Aipom @ Life Orb  
 Ability: Skill Link  
 Ball: Premier Ball
-Level: 15  
-EVs: 252 Atk / 236 Spe  
-Jolly Nature  
+Level: 13 
+Jolly Nature
+IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Tail Slap  
 - U-turn  
 - Pursuit  
@@ -8469,8 +8469,8 @@ Jolly Nature
 Clefairy @ Eviolite  
 Ability: Friend Guard  
 Ball: Premier Ball
-Level: 15  
-EVs: 224 HP / 108 Def / 156 SpD  
+Level: 14  
+EVs: 64 HP
 Calm Nature  
 IVs: 0 Atk  
 - Heal Pulse  
@@ -9701,17 +9701,17 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Cyndaquil  
 Ability: Blaze  
-Level: 5
+Level: 10
 Tera Type: Fire  
 
 Totodile  
 Ability: Torrent  
-Level: 5  
+Level: 10 
 Tera Type: Water  
 
 Chikorita  
 Ability: Overgrow  
-Level: 5  
+Level: 10 
 Tera Type: Grass  
 
 

@@ -142,7 +142,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sGrovyleLevelUpLearnset,
         .teachableLearnset = sGrovyleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SCEPTILE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SCEPTILE}),
     },
 
     [SPECIES_SCEPTILE] =
@@ -455,7 +455,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sCombuskenLevelUpLearnset,
         .teachableLearnset = sCombuskenTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLAZIKEN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_BLAZIKEN}),
     },
 
     [SPECIES_BLAZIKEN] =
@@ -762,7 +762,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sMarshtompLevelUpLearnset,
         .teachableLearnset = sMarshtompTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SWAMPERT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SWAMPERT}),
     },
 
     [SPECIES_SWAMPERT] =

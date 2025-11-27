@@ -444,7 +444,8 @@
     "AlteringCave",
     "MeteorFalls_StevensCave",
     "OldaleRuins",
-    "GlacierPath"
+    "GlacierPath",
+    "PetalburgWoods2"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -610,7 +611,8 @@
     "TestMapSpaceTime",
     "DewfordGymCopy",
     "SnowRoute",
-    "PokeCenter_2F_Draft"
+    "PokeCenter_2F_Draft",
+    "TestMapIceCave"
   ],
   "gMapGroup_IndoorRoute109": [
     "Route109_SeashoreHouse"

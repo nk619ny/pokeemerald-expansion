@@ -139,7 +139,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sIvysaurLevelUpLearnset,
         .teachableLearnset = sIvysaurTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_VENUSAUR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VENUSAUR}),
     },
 
     [SPECIES_VENUSAUR] =
@@ -554,7 +554,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sCharmeleonLevelUpLearnset,
         .teachableLearnset = sCharmeleonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CHARIZARD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CHARIZARD}),
     },
 
     [SPECIES_CHARIZARD] =
@@ -965,7 +965,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sWartortleLevelUpLearnset,
         .teachableLearnset = sWartortleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLASTOISE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_BLASTOISE}),
     },
 
     [SPECIES_BLASTOISE] =

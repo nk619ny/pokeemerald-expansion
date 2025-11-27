@@ -130,7 +130,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sFloragatoLevelUpLearnset,
         .teachableLearnset = sFloragatoTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MEOWSCARADA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_MEOWSCARADA}),
     },
 
     [SPECIES_MEOWSCARADA] =
@@ -324,7 +324,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sCrocalorLevelUpLearnset,
         .teachableLearnset = sCrocalorTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SKELEDIRGE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SKELEDIRGE}),
     },
 
     [SPECIES_SKELEDIRGE] =
@@ -518,7 +518,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sQuaxwellLevelUpLearnset,
         .teachableLearnset = sQuaxwellTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_QUAQUAVAL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_QUAQUAVAL}),
     },
 
     [SPECIES_QUAQUAVAL] =

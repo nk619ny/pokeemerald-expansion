@@ -1206,3 +1206,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SnowRoute/scripts.inc"
 
 	.include "data/maps/PokeCenter_2F_Draft/scripts.inc"
+
+	.include "data/maps/TestMapIceCave/scripts.inc"
+
+	.include "data/maps/PetalburgWoods2/scripts.inc"

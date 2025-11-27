@@ -142,7 +142,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sQuilladinLevelUpLearnset,
         .teachableLearnset = sQuilladinTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CHESNAUGHT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CHESNAUGHT}),
     },
 
     [SPECIES_CHESNAUGHT] =
@@ -352,7 +352,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sBraixenLevelUpLearnset,
         .teachableLearnset = sBraixenTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DELPHOX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DELPHOX}),
     },
 
     [SPECIES_DELPHOX] =
@@ -565,7 +565,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sFrogadierLevelUpLearnset,
         .teachableLearnset = sFrogadierTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GRENINJA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_GRENINJA}),
     },
 
     [SPECIES_GRENINJA] =

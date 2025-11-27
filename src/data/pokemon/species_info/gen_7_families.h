@@ -69,7 +69,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sRowletLevelUpLearnset,
         .teachableLearnset = sRowletTeachableLearnset,
         .eggMoveLearnset = sRowletEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DARTRIX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_DARTRIX}),
     },
 
     [SPECIES_ROWLET_HISUI] =
@@ -137,7 +137,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sRowletLevelUpLearnset,
         .teachableLearnset = sRowletTeachableLearnset,
         .eggMoveLearnset = sRowletEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DARTRIX_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_DARTRIX_HISUI}),
     },
 
     [SPECIES_DARTRIX] =
@@ -205,7 +205,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sDartrixLevelUpLearnset,
         .teachableLearnset = sDartrixTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DECIDUEYE},
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DECIDUEYE},
                                 {EVO_NONE, 0, SPECIES_DECIDUEYE_HISUI}),
     },
 
@@ -274,7 +274,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .isHisuianForm = TRUE,
         .levelUpLearnset = sDartrixLevelUpLearnset,
         .teachableLearnset = sDartrixTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DECIDUEYE_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DECIDUEYE_HISUI}),
     },
 
     [SPECIES_DECIDUEYE] =
@@ -475,7 +475,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sLittenLevelUpLearnset,
         .teachableLearnset = sLittenTeachableLearnset,
         .eggMoveLearnset = sLittenEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_TORRACAT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_TORRACAT}),
     },
 
     [SPECIES_TORRACAT] =
@@ -539,7 +539,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sTorracatLevelUpLearnset,
         .teachableLearnset = sTorracatTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_INCINEROAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_INCINEROAR}),
     },
 
     [SPECIES_INCINEROAR] =
@@ -669,7 +669,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sPopplioLevelUpLearnset,
         .teachableLearnset = sPopplioTeachableLearnset,
         .eggMoveLearnset = sPopplioEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_BRIONNE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BRIONNE}),
     },
 
     [SPECIES_BRIONNE] =
@@ -733,7 +733,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sBrionneLevelUpLearnset,
         .teachableLearnset = sBrionneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_PRIMARINA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_PRIMARINA}),
     },
 
     [SPECIES_PRIMARINA] =

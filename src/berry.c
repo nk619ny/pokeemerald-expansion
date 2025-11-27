@@ -2220,14 +2220,18 @@ void ObjectEventInteractionPickBerryTree(void)
 
     if (!OW_BERRY_MUTATIONS || mutation == 0)
     {
-        gSpecialVar_0x8004 = AddBagItem(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id));
+        u16 harvestCount = (u16)GetBerryCountByBerryTreeId(id) * 15;
+        gSpecialVar_0x8004 = AddBagItem(BerryTypeToItemId(berry), harvestCount);
         return;
     }
-    gSpecialVar_0x8004 = (CheckBagHasSpace(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id)) && CheckBagHasSpace(BerryTypeToItemId(mutation), 1)) + 2;
-    if (gSpecialVar_0x8004 == 3)
     {
-        AddBagItem(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id));
-        AddBagItem(BerryTypeToItemId(mutation), 1);
+        u16 harvestCount = (u16)GetBerryCountByBerryTreeId(id) * 15;
+        gSpecialVar_0x8004 = (CheckBagHasSpace(BerryTypeToItemId(berry), harvestCount) && CheckBagHasSpace(BerryTypeToItemId(mutation), 1)) + 2;
+        if (gSpecialVar_0x8004 == 3)
+        {
+            AddBagItem(BerryTypeToItemId(berry), harvestCount);
+            AddBagItem(BerryTypeToItemId(mutation), 1);
+        }
     }
 }
 
