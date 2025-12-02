@@ -150,6 +150,10 @@ Route119_EventScript_RivalExitScottArrive::
 	setvar VAR_ROUTE119_STATE, 1
 	savebgm MUS_DUMMY
 	fadedefaultbgm
+	setvar VAR_LEVEL_CAP, 60
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
+	closemessage
 	delay 60
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_SetScottPos1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_SetScottPos2

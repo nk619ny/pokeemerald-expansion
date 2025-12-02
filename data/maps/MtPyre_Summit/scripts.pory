@@ -839,6 +839,11 @@ script MtPyre_Summit_EventScript_MtPyreVictory {
 	removeobject(7)
     delay(40)
 	fadescreenswapbuffers(FADE_FROM_BLACK)
+	delay(20)
+	setvar(VAR_LEVEL_CAP, 65)
+    call(Common_EventScript_ApplyHandicap)
+    call(Common_EventScript_LevelCapUpdate)
+	closemessage
     delay(40)
 
     switch(var(TempVar_PlayerPosition)){

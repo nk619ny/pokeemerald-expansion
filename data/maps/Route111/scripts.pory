@@ -749,6 +749,10 @@ script Route111_EventScript_WinstratesGiveRockSmash {
 	setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
 	setflag(FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY)
 	closemessage
+	setvar(VAR_LEVEL_CAP,41)
+	call(Common_EventScript_ApplyHandicap)
+	call(Common_EventScript_LevelCapUpdate)
+	closemessage
 	return
 }
 

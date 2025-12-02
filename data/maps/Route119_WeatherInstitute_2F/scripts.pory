@@ -77,6 +77,9 @@ Route119_WeatherInstitute_2F_EventScript_ArchieDefeated::
 	applymovement OBJ_EVENT_ID_PLAYER, Route119_WeatherInstitute_2F_Movement_PlayerReturnToPosition
 	waitmovement 0
 	fadescreenswapbuffers FADE_FROM_BLACK
+	setvar VAR_LEVEL_CAP, 58
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
 	applymovement LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, Route119_WeatherInstitute_2F_Movement_ScientistApproachPlayer
 	waitmovement 0
 	copyobjectxytoperm LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST

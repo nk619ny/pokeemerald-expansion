@@ -1477,34 +1477,42 @@ Route111_EventScript_WinstratesGiveRockSmash::
 	setflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY
 # 751 "data/maps/Route111/scripts.pory"
 	closemessage
+# 752 "data/maps/Route111/scripts.pory"
+	setvar VAR_LEVEL_CAP, 41
+# 753 "data/maps/Route111/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 754 "data/maps/Route111/scripts.pory"
+	call Common_EventScript_LevelCapUpdate
+# 755 "data/maps/Route111/scripts.pory"
+	closemessage
 	return
 
 
 Route111_EventScript_ScorcingSandsHiker::
-# 756 "data/maps/Route111/scripts.pory"
-	lock
-# 757 "data/maps/Route111/scripts.pory"
-	faceplayer
-# 758 "data/maps/Route111/scripts.pory"
-	msgbox Route111_EventScript_ScorcingSandsHiker_Text_0, MSGBOX_DEFAULT
-# 759 "data/maps/Route111/scripts.pory"
-	checkitem ITEM_TM_SCORCHING_SANDS
 # 760 "data/maps/Route111/scripts.pory"
+	lock
+# 761 "data/maps/Route111/scripts.pory"
+	faceplayer
+# 762 "data/maps/Route111/scripts.pory"
+	msgbox Route111_EventScript_ScorcingSandsHiker_Text_0, MSGBOX_DEFAULT
+# 763 "data/maps/Route111/scripts.pory"
+	checkitem ITEM_TM_SCORCHING_SANDS
+# 764 "data/maps/Route111/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq Route111_EventScript_ScorcingSandsHiker_2
 Route111_EventScript_ScorcingSandsHiker_1:
-# 766 "data/maps/Route111/scripts.pory"
+# 770 "data/maps/Route111/scripts.pory"
 	releaseall
 	end
 
 Route111_EventScript_ScorcingSandsHiker_2:
-# 761 "data/maps/Route111/scripts.pory"
+# 765 "data/maps/Route111/scripts.pory"
 	msgbox Route111_EventScript_ScorcingSandsHiker_Text_1, MSGBOX_DEFAULT
-# 762 "data/maps/Route111/scripts.pory"
+# 766 "data/maps/Route111/scripts.pory"
 	closemessage
-# 763 "data/maps/Route111/scripts.pory"
+# 767 "data/maps/Route111/scripts.pory"
 	giveitem ITEM_TM_SCORCHING_SANDS
-# 764 "data/maps/Route111/scripts.pory"
+# 768 "data/maps/Route111/scripts.pory"
 	waitfanfare
 	goto Route111_EventScript_ScorcingSandsHiker_1
 
@@ -1525,12 +1533,12 @@ Route111_EventScript_WinstratesGiveRockSmash_Text_0:
 	.string "Pokémon to clear rocks away.$"
 
 Route111_EventScript_ScorcingSandsHiker_Text_0:
-# 758 "data/maps/Route111/scripts.pory"
+# 762 "data/maps/Route111/scripts.pory"
 	.string "Careful, the hot sand on the ground can\n"
 	.string "burn your skin during the daytime.$"
 
 Route111_EventScript_ScorcingSandsHiker_Text_1:
-# 761 "data/maps/Route111/scripts.pory"
+# 765 "data/maps/Route111/scripts.pory"
 	.string "Take this, so your Pokémon are prepared\n"
 	.string "too.$"
 
