@@ -39,6 +39,11 @@ script SlateportCity_FarmCorridor_EventScript_BrawlyPostBattle {
     removeobject(LOCALID_BRAWLY)
     setflag(FLAG_SLATEPORT_FARM_COMPLETED)
     setvar(VAR_TEMP_1, 1)
+
+	setvar(VAR_LEVEL_CAP, 24)
+	call(Common_EventScript_ApplyHandicap)
+	call(Common_EventScript_LevelCapUpdate)
+
     release
     end
 }

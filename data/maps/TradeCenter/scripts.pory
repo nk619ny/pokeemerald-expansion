@@ -308,6 +308,7 @@ script Common_EventScript_SetStartingFlagStates {
 	setflag(FLAG_HIDE_ROUTE_120_STEVEN)
 	setflag(FLAG_HIDE_LILYCOVE_CITY_RIVAL)
 	setflag(FLAG_REGI_DOORS_OPENED)
+	setflag(FLAG_SYS_B_DASH)
 	return
 }
 
@@ -432,7 +433,11 @@ script Common_EventScript_CheckIfEliteFourComplete {
 script MauvilleCity_EventScript_Temporary{
 	lock
 	setflag(FLAG_MIRAGE_ISLAND_VISIBLE)
-	addcoins(1800)
+	//additem(ITEM_TM_THUNDER_PUNCH,-1)
+	//additem(ITEM_TM_ICE_PUNCH,-1)
+	setvar(VAR_LEVEL_HANDICAP,0)
+
+
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
@@ -458,7 +463,7 @@ script MauvilleCity_EventScript_Temporary{
 	//buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
 	//msgbox("adjusted level cap is {STR_VAR_1}")
 	//waitmessage*/
-
+	giveitem(ITEM_CHESTO_BERRY,30)
 	setflag(FLAG_REGI_DOORS_OPENED)
 	if(flag(FLAG_NO_TRAINER_BATTLE)){
 		clearflag(FLAG_NO_TRAINER_BATTLE)
@@ -480,6 +485,9 @@ script MauvilleCity_EventScript_Temporary{
 	//givemon(SPECIES_BRAMBLEGHAST,35,,,,0,,,,,,,,,,,,,,MOVE_SUPERPOWER,MOVE_SANDSEAR_STORM)
 	
 	//multi_fixed_2_vs_2(TRAINER_ARCHIE_MT_PYRE, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAXIE_MT_PYRE, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
+	clearflag(FLAG_NO_TRAINER_BATTLE)
+	multi_fixed_2_vs_2(TRAINER_MAGMA_ADMIN_FARM, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAGMA_MULTI_GRUNT_FARM, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
+    
 	waitmessage
 	closemessage
 	releaseall

@@ -134,16 +134,16 @@ DewfordTown_Gym_EventScript_StopCountingTrainers::
 	return
 
 DewfordTown_Gym_EventScript_Brawly::
-	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
+	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
+	//goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
 	goto_if_unset FLAG_RECEIVED_TM_BULK_UP, DewfordTown_Gym_EventScript_GiveBulkUp2
 	msgbox DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
 DewfordTown_Gym_EventScript_BrawlyDefeated::
-	call DewfordTown_Gym_EventScript_AnimateFlashFullBrightness
+	//call DewfordTown_Gym_EventScript_AnimateFlashFullBrightness
 	message DewfordTown_Gym_Text_ReceivedKnuckleBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
@@ -413,7 +413,7 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "machine, too.$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
-	.string "That TM08 contains BULK UP.\p"
+	.string "That TM contains BULK UP.\p"
 	.string "It's a move that raises both ATTACK\n"
 	.string "and DEFENSE stats.\p"
 	.string "… … … … … …$"
@@ -464,7 +464,7 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 `
 
 script DewfordTown_Gym_EventScript_SetNewLevelCap {
-	setvar(VAR_LEVEL_CAP, 30)
+	setvar(VAR_LEVEL_CAP, 28)
 	call(Common_EventScript_ApplyHandicap)
 	call(Common_EventScript_LevelCapUpdate)
 //	addvar(VAR_LEVEL_CAP, VAR_LEVEL_HANDICAP)

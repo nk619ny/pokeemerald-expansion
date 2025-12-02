@@ -1717,8 +1717,8 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Combee  
-Level: 26
+Combee  @ Honey
+Level: 33
 Ability: Honey Gather  
 Tera Type: Bug  
 - Pollen Puff  
@@ -1727,7 +1727,7 @@ Tera Type: Bug
 - Dual Wingbeat  
 
 Oddish  
-Level: 26
+Level: 33
 Ability: Chlorophyll  
 Tera Type: Grass  
 EVs: 196 Atk  
@@ -1737,7 +1737,7 @@ EVs: 196 Atk
 - Venoshock  
 
 Hoppip  
-Level: 26
+Level: 33
 Ability: Leaf Guard  
 Tera Type: Grass  
 - Aromatherapy  
@@ -1745,8 +1745,8 @@ Tera Type: Grass
 - Bounce  
 - Fairy Wind  
 
-Spritzee  
-Level: 26
+Spritzee  @ Eviolite
+Level: 33
 Ability: Aroma Veil  
 Tera Type: Fairy  
 IVs: 0 Atk  
@@ -1756,9 +1756,6 @@ IVs: 0 Atk
 - Fake Tears  
 
 
-Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROSE_1 === /* Route 118 */ /* Before Surf */
 Name: ROSE
@@ -1884,23 +1881,19 @@ Class: Aqua Admin
 Pic: SHELLY ORAS
 Gender: Female
 Music: Aqua
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer 
 
-Ariados @ Sitrus Berry  
+Ariados @ Oran Berry  
 Ability: Swarm  
-Level: 22
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
+Level: 21
 - Bug Bite  
 - Cross Poison  
 - Toxic Thread  
 - Night Slash  
 
-Seaking @ Muscle Band  
+Seaking
 Ability: Water Veil  
-Level: 22
-EVs: 252 HP / 4 SpD / 164 Spe  
-Adamant Nature  
+Level: 21  
 - Waterfall  
 - Horn Attack  
 - Acupressure  
@@ -1908,9 +1901,7 @@ Adamant Nature
 
 Sneasel @ Lum Berry  
 Ability: Inner Focus  
-Level: 22
-EVs: 4 HP / 252 Atk / 252 Spe  
-Jolly Nature  
+Level: 21 
 - Avalanche  
 - Lash Out  
 - Quick Attack  
@@ -1923,23 +1914,19 @@ Pic: Tabitha ORAS
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer 
 
-Sandslash @ Muscle Band  
+Sandslash
 Ability: Sand Veil  
-Level: 22
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
+Level: 21 
 - Brick Break  
 - Drill Run  
 - Super Fang  
 - Crush Claw  
 
-Arboliva @ Sitrus Berry  
+Arboliva @ Oran Berry  
 Ability: Harvest  
-Level: 22
-EVs: 252 HP / 252 SpA / 4 SpD  
-Modest Nature  
+Level: 21
 IVs: 0 Atk  
 - Alluring Voice  
 - Magical Leaf  
@@ -1948,9 +1935,7 @@ IVs: 0 Atk
 
 Pyroar @ Lum Berry  
 Ability: Unnerve  
-Level: 22
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
+Level: 21
 IVs: 0 Atk  
 - Burning Jealousy  
 - Snarl  
@@ -1964,7 +1949,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer 
 
 Poochyena  
 Ability: Intimidate  
@@ -1977,7 +1962,7 @@ Jolly Nature
 
 Sudowoodo  
 Ability: Sturdy  
-Level: 20
+Level: 19
 IVs: 0 Atk / 0 Def / 0 HP
 - Ice Punch  
 - Thunder Punch  
@@ -2000,11 +1985,12 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
+AI: Smart Trainer 
 
 Swalot  
 Ability: Liquid Ooze  
-Level: 20
+Level: 18
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Acid Armor  
 - Fire Punch  
 - Thunder Punch  
@@ -7316,9 +7302,9 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 
-Ralts  
+Ralts  @ Eviolite
 Ability: Trace  
-Level: 26
+Level: 35
 Tera Type: Psychic  
 EVs: 252 Def / 252 SpD  
 Modest Nature  
@@ -7331,9 +7317,10 @@ IVs: 0 HP / 0 Atk
 
 Chingling @ Light Clay  
 Ability: Levitate  
-Level: 26  
+Level: 35
+EVs: 252 HP / 128 Def / 128 SpD 
 Tera Type: Psychic  
-IVs: 0 Atk  
+IVs: 0 Atk / 0 Spe
 - Taunt  
 - Light Screen  
 - Reflect  
@@ -7341,7 +7328,8 @@ IVs: 0 Atk
 
 Abra @ Focus Sash  
 Ability: Synchronize  
-Level: 27  
+Level: 34  
+EVs: 252 SpA / 252 Spe 
 Tera Type: Psychic  
 IVs: 0 Atk  
 - Dazzling Gleam  
@@ -7351,7 +7339,8 @@ IVs: 0 Atk
 
 Drowzee @ Zoom Lens  
 Ability: Bad Dreams  
-Level: 27  
+Level: 34  
+EVs: 252 HP / 252 SpA
 Tera Type: Psychic  
 IVs: 0 Atk / 0 Spe  
 - Hypnosis  
@@ -8167,7 +8156,7 @@ Kubfu @ Weakness Policy
 Ability: Inner Focus  
 Ball: Sport Ball
 Level: 25
-EVs: 252 Atk / 4 SpD / 252 Spe  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Jolly Nature  
 - Wicked Blow  
 - Surging Strikes  
@@ -8177,9 +8166,8 @@ Jolly Nature
 Tauros-Paldea-Aqua (M) @ Salac Berry  
 Ability: Anger Point  
 Ball: Luxury Ball
-Level: 25
-EVs: 64 HP / 64 Spe  
-Jolly Nature  
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Raging Bull  
 - Aqua Jet  
 - Double Kick  
@@ -8188,9 +8176,8 @@ Jolly Nature
 Breloom @ Coba Berry
 Ability: Technician 
 Ball : Nest Ball 
-Level: 25
-EVs: 128 Atk / 128 Spe  
-Jolly Nature  
+Level: 24 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bullet Seed  
 - Mach Punch  
 - Power-Up Punch  
@@ -8201,8 +8188,7 @@ Ability: Speed Boost
 Ball: Fast Ball
 Level: 25
 Tera Type: Grass
-EVs: 128 SpA / 128 Spe /* IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe / HP Grass IVs for Max Atk */
-Modest Nature  
+EVs: 64 SpA /* IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe / HP Grass IVs for Max Atk */
 - Flame Burst  
 - Aura Sphere  
 - Hidden Power
@@ -8211,8 +8197,7 @@ Modest Nature
 Perrserker @ Expert Belt
 Ability: Tough Claws
 Ball: Heavy Ball
-Level: 25
-EVs: 128 HP / 128 Atk
+Level: 24
 Adamant Nature  
 - Fake Out  
 - Iron Head  
@@ -8223,7 +8208,8 @@ Hariyama @ Sitrus Berry
 Ability: Guts  
 Ball: Level Ball
 Level: 25
-EVs: 128 Def / 128 SpD  
+EVs: 64 Def / 64 SpD  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Careful Nature  
 - Fake Out  
 - Force Palm  
@@ -8426,6 +8412,13 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
 - Rock Smash  
 
+Eevee @ Leppa Berry
+Ball: Premier Ball
+Level: 14 
+- Trump Card
+
+
+/*
 Skitty
 Ability: Cute Charm  
 Ball: Premier Ball
@@ -8433,6 +8426,7 @@ Level: 14
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fake Out  
 - Last Resort  
+*/
 
 Spinda
 Ability: Contrary  
@@ -10072,8 +10066,9 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Rattata-Alola  
 Ability: Hustle  
-Level: 24
+Level: 32
 Tera Type: Dark  
+EVs: 128 Spe / 128 Atk
 Jolly Nature  
 - Me First  
 - Thief  
@@ -10082,16 +10077,18 @@ Jolly Nature
 
 Larvitar  
 Ability: Guts  
-Level: 24  
+Level: 32 
+EVs: 128 HP / 128 Atk
+Adamant Nature
 Tera Type: Rock  
 - Rock Blast  
 - Mud Shot  
 - Brick Break  
 - Stealth Rock  
 
-Vanillite  
+Vanillite @ White Herb
 Ability: Weak Armor  
-Level: 24
+Level: 32
 Tera Type: Ice  
 IVs: 0 Atk  
 - Frost Breath  
@@ -10099,9 +10096,10 @@ IVs: 0 Atk
 - Harden  
 - Mist Ball  
 
-Yungoos  
+Yungoos @ Expert Belt
 Ability: Stakeout  
-Level: 24 
+Level: 32 
+EVs: 128 Spe / 128 Atk
 Tera Type: Normal  
 - Pursuit  
 - Thunder Fang  
@@ -10201,7 +10199,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Slowpoke-Galar @ Salac Berry  
-Level: 24
+Level: 33
 Ability: Gluttony  
 Tera Type: Psychic  
 EVs: 128 SpA / 252 Spe  
@@ -10212,8 +10210,8 @@ IVs: 0 Atk
 - Belch  
 - Psyshock  
 
-Tympole  
-Level: 24
+Tympole  @ Power Herb
+Level: 33
 Ability: Swift Swim  
 Tera Type: Water  
 - Endeavor  
@@ -10222,7 +10220,7 @@ Tera Type: Water
 - Bubble Beam  
 
 Skrelp  
-Level: 24
+Level: 33
 Ability: Poison Point  
 Tera Type: Poison  
 - Dragon Tail  
@@ -10231,7 +10229,7 @@ Tera Type: Poison
 - Poison Tail  
 
 Dratini  
-Level: 24
+Level: 33
 Ability: Shed Skin  
 Tera Type: Dragon  
 - Aqua Tail  
@@ -10705,7 +10703,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Cyclizar  
-Level: 24
+Level: 34
 Ability: Shed Skin  
 Tera Type: Dragon  
 - Shed Tail  
@@ -10714,7 +10712,7 @@ Tera Type: Dragon
 - Wicked Torque  
 
 Yamper  
-Level: 27
+Level: 38
 Ability: Competitive  
 Tera Type: Electric  
 - Electro Ball  
@@ -10723,7 +10721,7 @@ Tera Type: Electric
 - Flame Charge  
 
 Graveler @ Custap Berry  
-Level: 24
+Level: 35
 Ability: Sturdy  
 Tera Type: Rock  
 - Body Press  
@@ -10732,7 +10730,7 @@ Tera Type: Rock
 - High Horsepower  
 
 Skiddo  
-Level: 27
+Level: 38
 Ability: Sap Sipper  
 Tera Type: Grass  
 - Trailblaze  
@@ -10817,7 +10815,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Varoom @ Shuca Berry  
-Level: 25
+Level: 34
 Ability: Overcoat  
 Tera Type: Steel  
 - Spin Out  
@@ -10826,7 +10824,7 @@ Tera Type: Steel
 - Poison Gas  
 
 Whirlipede @ Insect Plate   
-Level: 25
+Level: 32
 Ability: Speed Boost  
 Tera Type: Bug  
 - Rollout  
@@ -10835,7 +10833,7 @@ Tera Type: Bug
 - Steel Roller  
 
 Electrode   
-Level: 25
+Level: 26
 Ability: Static  
 Tera Type: Electric  
 EVs: 252 Spe  
@@ -14624,7 +14622,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Spinda  
-Level: 28
+Level: 36
 Ability: Own Tempo  
 Tera Type: Normal  
 - Teeter Dance  
@@ -14633,7 +14631,7 @@ Tera Type: Normal
 - Fake Out  
 
 Spinda @ Life Orb
-Level: 28
+Level: 36
 Ability: Contrary
 -Double-Edge
 -Sucker Punch
@@ -14641,7 +14639,7 @@ Ability: Contrary
 -Sing
 
 Spinda @ Bright Powder 
-Level: 28 
+Level: 36 
 Ability: Tangled Feet  
 Tera Type: Normal  
 - Fake Out  
@@ -14650,7 +14648,7 @@ Tera Type: Normal
 - Encore  
 
 Spinda  
-Level: 28
+Level: 36
 Ability: Contrary  
 Tera Type: Normal  
 - Superpower  
@@ -21461,8 +21459,9 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Hoothoot  
 Ability: Keen Eye  
-Level: 28  
+Level: 32  
 Tera Type: Normal  
+EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Hypnosis  
 - Echoed Voice  
@@ -21471,7 +21470,8 @@ IVs: 0 Atk
 
 Pidove  
 Ability: Big Pecks  
-Level: 28  
+Level: 32  
+EVs: 252 HP / 252 Atk
 Tera Type: Normal  
 - Peck  
 - Morning Sun  
@@ -21480,7 +21480,7 @@ Tera Type: Normal
 
 Starly  
 Ability: Reckless  
-Level: 28  
+Level: 32  
 Tera Type: Normal  
 EVs: 252 HP / 252 Atk
 IVs: 0 HP  
@@ -21490,7 +21490,8 @@ IVs: 0 HP
 
 Quaxly  
 Ability: Moxie  
-Level: 5  
+Level: 32
+EVs: 252 HP / 252 SpA
 Tera Type: Water  
 - Aerial Ace  
 - Encore  
@@ -21507,7 +21508,9 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Varoom @ Shuca Berry  
+Varoom @ Shuca Berry
+Level: 33
+EVs: 252 HP / 252 Spe
 Ability: Overcoat  
 Tera Type: Steel  
 - Spin Out  
@@ -21516,7 +21519,9 @@ Tera Type: Steel
 - Poison Gas  
 
 Whirlipede @ Insect Plate  
+Level: 33
 Ability: Speed Boost  
+EVs: 252 Atk / 252 Spe
 Tera Type: Bug  
 - Rollout  
 - Steamroller  
@@ -21535,7 +21540,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Roggenrola  
-Level: 26
+Level: 34
 Ability: Sturdy  
 Tera Type: Rock  
 - Explosion  
@@ -21544,7 +21549,7 @@ Tera Type: Rock
 - Sleep Talk
 
 Jigglypuff  
-Level: 26
+Level: 33
 Ability: Competitive  
 Tera Type: Normal  
 IVs: 0 Atk  
@@ -21554,7 +21559,7 @@ IVs: 0 Atk
 - Protect
 
 Loudred  @ Pixie Plate  
-Level: 25
+Level: 30
 Ability: Scrappy  
 Tera Type: Normal  
 IVs: 0 Atk  
@@ -21563,8 +21568,8 @@ IVs: 0 Atk
 - Howl  
 - Hyper Voice  
 
-Pikachu-Rock-Star (F) 
-Level: 26
+Pikachu-Rock-Star (F) @ Light Ball
+Level: 31
 Ability: Lightning Rod  
 Tera Type: Electric  
 EVs: 252 HP / 128 Atk / 128 SpA  
@@ -21694,9 +21699,10 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Swinub  
-Level: 30
+Swinub @ Power Herb  
+Level: 38
 Ability: Oblivious  
+EVs: 128 HP / 252 Atk / 128 Spe
 Tera Type: Ice  
 - Dig  
 - Icicle Crash  
@@ -21704,9 +21710,10 @@ Tera Type: Ice
 - Endeavor  
 
 Milcery (F)  
-Level: 30
+Level: 38
 Ability: Sweet Veil  
 Tera Type: Fairy  
+EVs: 252 HP / 128 SpA
 IVs: 0 Atk  
 - Acid Armor  
 - Recover  
@@ -21714,8 +21721,9 @@ IVs: 0 Atk
 - Draining Kiss  
 
 Skwovet @ Apicot Berry 
-Level: 30 
+Level: 38 
 Ability: Cheek Pouch  
+EVs: 128 HP / 128 Atk / 128 Spe
 Tera Type: Normal  
 - Stuff Cheeks  
 - Hyper Fang  
@@ -21723,8 +21731,9 @@ Tera Type: Normal
 - Rest  
 
 Lechonk @ Iapapa Berry  
-Level: 30
+Level: 38
 Ability: Aroma Veil  
+EVs: 252 HP / 252 Atk
 Tera Type: Normal  
 - Body Slam  
 - Zen Headbutt  

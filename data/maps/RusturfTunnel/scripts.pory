@@ -554,6 +554,9 @@ script RusturfTunnel_EventScript_ClearOutAqua{
 	removeobject(LOCALID_RUSTURF_TUNNEL_GRUNT1)
 	removeobject(LOCALID_RUSTURF_TUNNEL_GRUNT2)
 	fadescreenswapbuffers(FADE_FROM_BLACK)
+	setvar(VAR_LEVEL_CAP, 34)
+	call(Common_EventScript_ApplyHandicap)
+	call(Common_EventScript_LevelCapUpdate)
 	releaseall
 	end
 }

@@ -1800,7 +1800,8 @@ static u32 GetTrainerMatchCallFlag(u32 trainerId)
     for (i = 0; i < REMATCH_TABLE_ENTRIES; i++)
     {
         if (gRematchTable[i].trainerIds[0] == trainerId)
-            return TRAINER_REGISTERED_FLAGS_START + i;
+            return 0xFFFF;
+            //return TRAINER_REGISTERED_FLAGS_START + i;
     }
 
     return 0xFFFF;

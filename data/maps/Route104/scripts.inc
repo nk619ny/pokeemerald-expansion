@@ -1885,15 +1885,15 @@ Route104_EventScript_Cindy::
 # 943 "data/maps/Route104/scripts.pory"
 	trainerbattle_single TRAINER_CINDY_1, Route104_Text_CindyIntro, Route104_Text_CindyDefeat, Route104_EventScript_TryRegisterCindyAfterBattle
 # 944 "data/maps/Route104/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 945 "data/maps/Route104/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route104_EventScript_RematchCindy
+	//goto_if_eq VAR_RESULT, TRUE, Route104_EventScript_RematchCindy
 # 946 "data/maps/Route104/scripts.pory"
-	setvar VAR_0x8004, TRAINER_CINDY_1
+	//setvar VAR_0x8004, TRAINER_CINDY_1
 # 947 "data/maps/Route104/scripts.pory"
-	specialvar VAR_RESULT, IsTrainerRegistered
+	//specialvar VAR_RESULT, IsTrainerRegistered
 # 948 "data/maps/Route104/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterCindy
+	//goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterCindy
 # 949 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_CindyPostBattle, MSGBOX_DEFAULT
 # 950 "data/maps/Route104/scripts.pory"
@@ -1909,7 +1909,7 @@ Route104_EventScript_TryRegisterCindyAfterBattle::
 # 955 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 956 "data/maps/Route104/scripts.pory"
-	goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterCindyAfterBattle
+	//goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterCindyAfterBattle
 # 957 "data/maps/Route104/scripts.pory"
 	release
 # 958 "data/maps/Route104/scripts.pory"

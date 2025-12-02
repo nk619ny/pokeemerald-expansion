@@ -74,45 +74,51 @@ SlateportCity_FarmCorridor_EventScript_BrawlyPostBattle::
 	setflag FLAG_SLATEPORT_FARM_COMPLETED
 # 41 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 42 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 43 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+	setvar VAR_LEVEL_CAP, 24
+# 44 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 45 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+	call Common_EventScript_LevelCapUpdate
+# 47 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	release
 	end
 
 
-# 50 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 55 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 SlateportCity_FarmCorridor_BrawlyApproach:
-# 51 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 56 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_right
-# 51 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 56 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_right
 	step_end
 
-# 54 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 59 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 SlateportCity_FarmCorridor_BrawlyDepart:
-# 55 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 60 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_down
-# 56 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 61 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_right
-# 56 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 61 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_right
-# 56 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 61 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_right
-# 56 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 61 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_right
-# 56 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 61 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_right
-# 56 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 61 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_right
-# 56 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 61 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_right
-# 57 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 62 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_down
-# 57 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 62 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	walk_down
 	step_end
 
 BrawlyPostAquaFarmWinText::
-# 46 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
+# 51 "data/maps/SlateportCity_FarmCorridor/scripts.pory"
 	.string "Brawly: So, Team Aqua managed to\n"
 	.string "re-flood Slateport Bay.\p"
 	.string "I'm not completely surprised. A lot of\n"

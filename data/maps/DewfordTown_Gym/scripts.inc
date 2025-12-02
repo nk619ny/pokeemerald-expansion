@@ -271,11 +271,11 @@ DewfordTown_Gym_EventScript_StopCountingTrainers::
 # 136 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_EventScript_Brawly::
 # 137 "data/maps/DewfordTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated
 # 138 "data/maps/DewfordTown_Gym/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 139 "data/maps/DewfordTown_Gym/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
+	//goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
 # 140 "data/maps/DewfordTown_Gym/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_TM_BULK_UP, DewfordTown_Gym_EventScript_GiveBulkUp2
 # 141 "data/maps/DewfordTown_Gym/scripts.pory"
@@ -289,7 +289,7 @@ DewfordTown_Gym_EventScript_Brawly::
 # 145 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_EventScript_BrawlyDefeated::
 # 146 "data/maps/DewfordTown_Gym/scripts.pory"
-	call DewfordTown_Gym_EventScript_AnimateFlashFullBrightness
+	//call DewfordTown_Gym_EventScript_AnimateFlashFullBrightness
 # 147 "data/maps/DewfordTown_Gym/scripts.pory"
 	message DewfordTown_Gym_Text_ReceivedKnuckleBadge
 # 148 "data/maps/DewfordTown_Gym/scripts.pory"
@@ -829,7 +829,7 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 # 415 "data/maps/DewfordTown_Gym/scripts.pory"
 DewfordTown_Gym_Text_ExplainBulkUp:
 # 416 "data/maps/DewfordTown_Gym/scripts.pory"
-	.string "That TM08 contains BULK UP.\p"
+	.string "That TM contains BULK UP.\p"
 # 417 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "It's a move that raises both ATTACK\n"
 # 418 "data/maps/DewfordTown_Gym/scripts.pory"
@@ -927,7 +927,7 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 
 DewfordTown_Gym_EventScript_SetNewLevelCap::
 # 467 "data/maps/DewfordTown_Gym/scripts.pory"
-	setvar VAR_LEVEL_CAP, 30
+	setvar VAR_LEVEL_CAP, 28
 # 468 "data/maps/DewfordTown_Gym/scripts.pory"
 	call Common_EventScript_ApplyHandicap
 # 469 "data/maps/DewfordTown_Gym/scripts.pory"

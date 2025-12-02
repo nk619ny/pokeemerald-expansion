@@ -47,62 +47,46 @@ Route106_EventScript_Elliot::
 # 24 "data/maps/Route106/scripts.pory"
 
 # 25 "data/maps/Route106/scripts.pory"
-Route106_EventScript_ElliotRegisterMatchCallAfterBattle::
-# 26 "data/maps/Route106/scripts.pory"
-	special PlayerFaceTrainerAfterBattle
-# 27 "data/maps/Route106/scripts.pory"
-	waitmovement 0
-# 28 "data/maps/Route106/scripts.pory"
-	msgbox Route106_Text_ElliotRegister, MSGBOX_DEFAULT
-# 29 "data/maps/Route106/scripts.pory"
-	//register_matchcall TRAINER_ELLIOT_1
-# 30 "data/maps/Route106/scripts.pory"
-	release
-# 31 "data/maps/Route106/scripts.pory"
-	end
-# 32 "data/maps/Route106/scripts.pory"
-
-# 33 "data/maps/Route106/scripts.pory"
 Route106_EventScript_ElliotRematch::
-# 34 "data/maps/Route106/scripts.pory"
+# 26 "data/maps/Route106/scripts.pory"
 	trainerbattle_rematch TRAINER_ELLIOT_1, Route106_Text_ElliotRematchIntro, Route106_Text_ElliotRematchDefeated
-# 35 "data/maps/Route106/scripts.pory"
+# 27 "data/maps/Route106/scripts.pory"
 	msgbox Route106_Text_ElliotRematchPostBattle, MSGBOX_AUTOCLOSE
-# 36 "data/maps/Route106/scripts.pory"
+# 28 "data/maps/Route106/scripts.pory"
 	end
-# 37 "data/maps/Route106/scripts.pory"
+# 29 "data/maps/Route106/scripts.pory"
 
-# 38 "data/maps/Route106/scripts.pory"
+# 30 "data/maps/Route106/scripts.pory"
 Route106_EventScript_Ned::
-# 39 "data/maps/Route106/scripts.pory"
+# 31 "data/maps/Route106/scripts.pory"
 	trainerbattle_single TRAINER_NED, Route106_Text_NedIntro, Route106_Text_NedDefeated
-# 40 "data/maps/Route106/scripts.pory"
+# 32 "data/maps/Route106/scripts.pory"
 	msgbox Route106_Text_NedPostBattle, MSGBOX_AUTOCLOSE
-# 41 "data/maps/Route106/scripts.pory"
+# 33 "data/maps/Route106/scripts.pory"
 	end
-# 42 "data/maps/Route106/scripts.pory"
+# 34 "data/maps/Route106/scripts.pory"
 
-# 43 "data/maps/Route106/scripts.pory"
+# 35 "data/maps/Route106/scripts.pory"
 Route106_Text_TrainerTips:
-# 44 "data/maps/Route106/scripts.pory"
+# 36 "data/maps/Route106/scripts.pory"
 	.string "TRAINER TIPS\p"
-# 45 "data/maps/Route106/scripts.pory"
+# 37 "data/maps/Route106/scripts.pory"
 	.string "Advice on catching POKéMON with a ROD:\n"
-# 46 "data/maps/Route106/scripts.pory"
+# 38 "data/maps/Route106/scripts.pory"
 	.string "Press the A Button if you get a bite.$"
 
 Route106_Text_ElliotIntro_New::
-# 50 "data/maps/Route106/scripts.pory"
+# 42 "data/maps/Route106/scripts.pory"
 	.string "Which do you prefer, hiking in the\n"
 	.string "mountains or a stroll on the beach?$"
 
 Route106_Text_ElliotDefeated_New::
-# 54 "data/maps/Route106/scripts.pory"
+# 46 "data/maps/Route106/scripts.pory"
 	.string "Like in cave delving, I lost\n"
 	.string "spectacularly!$"
 
 Route106_Text_ElliotPostBattle_New::
-# 58 "data/maps/Route106/scripts.pory"
+# 50 "data/maps/Route106/scripts.pory"
 	.string "Hiking is the greatest whether it's in\n"
 	.string "the high mountains or deep\l"
 	.string "underground. You agree with me, right?$"

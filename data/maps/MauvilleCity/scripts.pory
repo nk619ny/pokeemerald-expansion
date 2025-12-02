@@ -177,6 +177,9 @@ MauvilleCity_EventScript_DefeatedWally::
 	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottExitNorth
 	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottExitEast
 	removeobject LOCALID_MAUVILLE_SCOTT
+	setvar VAR_LEVEL_CAP, 36
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
 	releaseall
 	end
 

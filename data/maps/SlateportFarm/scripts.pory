@@ -20,15 +20,19 @@ script SlateportFarm_EventScript_HelpAquaAdmin {
 		msgbox(format("Wonderful! Grab some Pokémon and help me out here!"))
         waitmessage
         closemessage
-        goto(SlateportFarm_EventScript_MultiAgainstMagma)
+
+        special(SavePlayerParty)
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        special(ChooseHalfPartyForBattle)
+        waitstate
+        goto_if_ne(VAR_RESULT, 0, SlateportFarm_EventScript_MultiAgainstMagma)
+        special(LoadPlayerParty)
         //Placeholder backsprite for ally Pokemon
         } 
-	else {
 		msgbox(format("Then get out of the way! We have important work to do!"))
         waitmessage
         applymovement(LOCALID_AQUAADMIN,Common_Movement_FaceUp)
         waitmovement(0)
-        }
     releaseall
     end
 }
@@ -49,15 +53,22 @@ script SlateportFarm_EventScript_HelpMagmaAdmin {
     if(var(VAR_RESULT)==YES) {
         msgbox(format("Wonderful! Grab some Pokémon and help me out here!"))
         waitmessage
-        goto(SlateportFarm_EventScript_MultiAgainstAqua)
+
+        special(SavePlayerParty)
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        special(ChooseHalfPartyForBattle)
+        waitstate
+        goto_if_ne(VAR_RESULT, 0, SlateportFarm_EventScript_MultiAgainstAqua)
+        special(LoadPlayerParty)
+
+
+        //goto(SlateportFarm_EventScript_MultiAgainstAqua)
         //Placeholder backsprite for ally Pokemon
         } 
-    else {
         msgbox(format("Then get out of the way! We need to stop them!"))
         waitmessage
         applymovement(LOCALID_MAGMAADMIN,Common_Movement_FaceDown)
         waitmovement(0)
-        }
     releaseall
     end
 }
@@ -89,7 +100,7 @@ script SlateportFarm_EventScript_MultiAgainstMagma {
     waitmovement(0)
     applymovement(LOCALID_MAGMAMULTIGRUNT,Common_Movement_FaceDown)
     waitmovement(20)
-    multi_fixed_2_vs_2(TRAINER_MAGMA_ADMIN_FARM, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAGMA_MULTI_GRUNT_FARM, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
+    multi_2_vs_2(TRAINER_MAGMA_ADMIN_FARM, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAGMA_MULTI_GRUNT_FARM, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
     specialvar(VAR_RESULT,GetBattleOutcome)
     if((var(VAR_RESULT) == B_OUTCOME_WON)){
         goto(SlateportFarm_EventScript_AquaVictory)
@@ -117,7 +128,7 @@ script SlateportFarm_EventScript_MultiAgainstAqua {
     waitmovement(0)
     applymovement(LOCALID_AQUAMULTIGRUNT,Common_Movement_FaceUp)
     waitmovement(20)
-    multi_fixed_2_vs_2(TRAINER_AQUA_ADMIN_FARM, SlateportFarm_BeatAquaAdminMultiText, TRAINER_AQUA_MULTI_GRUNT_FARM, SlateportFarm_BeatAquaGruntMultiText, PARTNER_MAGMA)
+    multi_2_vs_2(TRAINER_AQUA_ADMIN_FARM, SlateportFarm_BeatAquaAdminMultiText, TRAINER_AQUA_MULTI_GRUNT_FARM, SlateportFarm_BeatAquaGruntMultiText, PARTNER_MAGMA)
     specialvar(VAR_RESULT,GetBattleOutcome)
     if((var(VAR_RESULT) == B_OUTCOME_WON)){
         goto(SlateportFarm_EventScript_MagmaVictory)
@@ -205,13 +216,12 @@ script SlateportFarm_EventScript_AquaVictory {
 	waitmovement(0)
     clearflag(FLAG_SLATEPORT_FARM_COMPLETED)
     setflag(FLAG_SLATEPORT_BAY_FLOODED)
-    fadescreenswapbuffers(FADE_TO_WHITE) //newly added; may not work
-    waitstate
-    delay(60)
+    //fadescreenswapbuffers(FADE_TO_WHITE) //newly added; may not work
+    //waitstate
+    //delay(60)
     special(RemoveCameraObject)
+    //fadescreenswapbuffers(FADE_FROM_WHITE) //newly added; may not work
     warp(MAP_SLATEPORT_CITY_FARM_CORRIDOR,8,4)
-    fadescreenswapbuffers(FADE_FROM_WHITE) //newly added; may not work
-    waitstate
     waitmessage
     releaseall
     end
@@ -301,6 +311,9 @@ script SlateportFarm_EventScript_MagmaVictory {
 	applymovement(OBJ_EVENT_ID_CAMERA, SlateportFarm_Movement_CameraPanUp)
 	waitmovement(0)
 	special(RemoveCameraObject)
+	setvar(VAR_LEVEL_CAP, 24)
+	call(Common_EventScript_ApplyHandicap)
+	call(Common_EventScript_LevelCapUpdate)
     releaseall
     end
 }

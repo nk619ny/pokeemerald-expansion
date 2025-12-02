@@ -51,22 +51,20 @@ Class: Aqua Admin
 Pic: Leaf
 Gender: Female
 Music: Aqua
+Back Pic: Leaf
+AI: Smart Trainer
 
-Ariados @ Sitrus Berry  
+Ariados @ Oran Berry  
 Ability: Swarm  
-Level: 22
-EVs: 248 HP / 252 Atk / 8 SpD  
-Adamant Nature  
+Level: 21
 - Bug Bite  
 - Cross Poison  
 - Toxic Thread  
 - Night Slash  
 
-Seaking @ Muscle Band  
+Seaking 
 Ability: Water Veil  
-Level: 22
-EVs: 252 HP / 4 SpD / 164 Spe  
-Adamant Nature  
+Level: 21
 - Waterfall  
 - Horn Attack  
 - Acupressure  
@@ -74,9 +72,7 @@ Adamant Nature
 
 Sneasel @ Lum Berry  
 Ability: Inner Focus  
-Level: 22
-EVs: 4 HP / 252 Atk / 252 Spe  
-Jolly Nature  
+Level: 21
 - Avalanche  
 - Lash Out  
 - Quick Attack  
@@ -88,22 +84,20 @@ Class: Magma Admin
 Pic: Red
 Gender: Male
 Music: Magma
+Back Pic: Red
+AI: Smart Trainer
 
-Sandslash @ Muscle Band  
+Sandslash 
 Ability: Sand Veil  
-Level: 22
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
+Level: 21 
 - Brick Break  
 - Drill Run  
 - Super Fang  
 - Crush Claw  
 
-Arboliva @ Sitrus Berry  
+Arboliva @ Oran Berry  
 Ability: Harvest  
-Level: 22
-EVs: 248 HP / 252 SpA / 8 SpD  
-Modest Nature  
+Level: 21
 IVs: 0 Atk  
 - Alluring Voice  
 - Magical Leaf  
@@ -112,9 +106,7 @@ IVs: 0 Atk
 
 Pyroar @ Lum Berry  
 Ability: Unnerve  
-Level: 22
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
+Level: 21
 IVs: 0 Atk  
 - Burning Jealousy  
 - Snarl  

@@ -1059,7 +1059,7 @@ static bool32 CheckMatchCallChance(void)
     if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG) && GetMonAbility(&gPlayerParty[0]) == ABILITY_LIGHTNING_ROD)
         callChance = 2;
 
-    if (Random() % 10 < callChance * 3)
+    if (Random() % 10 < callChance * 1) // reduce call chance by 3 by removing mutipier
         return TRUE;
     else
         return FALSE;
