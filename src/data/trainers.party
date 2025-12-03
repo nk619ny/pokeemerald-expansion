@@ -6616,7 +6616,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Vibrava  
 Ability: Levitate  
-Level: 40  
+Level: 42  
 Tera Type: Ground  
 EVs: 128 SpA  
 - First Impression  
@@ -6663,46 +6663,56 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Tyrunt @ Sitrus Berry
-Level: 48
+Level: 55
 Ability: Sturdy  
 Tera Type: Rock  
+EVs: 252 HP / 252 Atk
+Adamant Nature
 - Dragon Tail  
 - Bite  
 - Psychic Fangs  
 - Dragon Dance  
 
 Kabuto @ White Herb
-Level: 48
+Level: 55
 Ability: Weak Armor  
 Tera Type: Rock  
+EVs: 252 HP / 128 Atk / 128 SpD
+Adamant Nature
 - Leech Life  
 - Rock Blast  
 - Aqua Jet  
 - Stealth Rock  
 
 Cranidos @ Salac Berry
-Level: 48
+Level: 55
 Ability: Rock Head  
 Tera Type: Rock  
+EVs: 252 Atk / 252 Spe
+Adamant Nature
 - Head Smash  
 - Hammer Arm  
 - Trailblaze  
 - Fire Punch  
 
 Amaura @ Power Herb  
-Level: 48
+Level: 55
 Ability: Refrigerate  
-Tera Type: Rock  
+Tera Type: Rock
+EVs: 252 HP / 252 SpA  
 IVs: 0 Atk  
+Modest Nature
 - Ancient Power  
 - Meteor Beam  
 - Hyper Voice  
 - Roar  
 
 Omanyte @ White Herb
-Level: 48
+Level: 55
 Ability: Weak Armor  
 Tera Type: Rock  
+EVs: 252 HP / 128 SpA / 128 SpD
+Modest Nature
 IVs: 0 Atk  
 - Ancient Power  
 - Earth Power  
@@ -6710,10 +6720,12 @@ IVs: 0 Atk
 - Shell Smash  
 
 Shieldon @ Expert Belt
-Level: 48 
+Level: 55 
 Ability: Sturdy  
 Tera Type: Rock  
 IVs: 0 Atk  
+EVs: 252 HP / 252 SpA
+Bold Nature
 - Flamethrower  
 - Earth Power  
 - Thunderbolt  
@@ -6730,27 +6742,33 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Rellor @ Toxic Orb  
-Level: 40
+Level: 45
 Ability: Shed Skin  
 Tera Type: Bug  
+EVs: 252 HP / 252 Atk
+Adamant Nature
 - Thief  
 - Gunk Shot  
 - Memento  
 - Fling  
 
 Bramblin  
-Level: 40
+Level: 47
 Ability: Wind Rider  
 Tera Type: Grass  
+EVs: 252 HP / 252 Atk
+Adamant Nature
 - Trailblaze  
 - Shadow Sneak  
 - Spikes  
 - Rollout  
 
 Sizzlipede @ Charti Berry  
-Level: 40
+Level: 45
 Ability: Flame Body  
 Tera Type: Fire  
+EVs: 128 HP / 252 Atk / 128 Spe
+Adamant Nature
 - Coil  
 - Fire Lash  
 - Bug Bite  
@@ -6758,9 +6776,11 @@ Tera Type: Fire
 
 Exeggcute @ Oran Berry  
 Ability: Harvest  
-Level: 40
+Level: 45
 Tera Type: Grass  
 IVs: 0 Atk  
+EVs: 128 HP / 252 SpA / 128 SpD
+Modest Nature
 - Confusion  
 - Infestation  
 - Mega Drain  
@@ -6838,7 +6858,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Poliwag @ Wide Lens
-Level: 40
+Level: 50
 Ability: Damp  
 Tera Type: Water  
 - Hypnosis  
@@ -6847,7 +6867,7 @@ Tera Type: Water
 - Wake-Up Slap  
 
 Bellsprout @ Salac Berry  
-Level: 40
+Level: 50
 Ability: Gluttony  
 Tera Type: Grass  
 - Power Whip  
@@ -6856,7 +6876,7 @@ Tera Type: Grass
 - Acid Spray  
 
 Helioptile  
-Level: 40
+Level: 50
 Ability: Dry Skin  
 Tera Type: Electric  
 IVs: 0 Atk  
@@ -6866,7 +6886,7 @@ IVs: 0 Atk
 - Round  
 
 Noibat  
-Level: 40
+Level: 50
 Ability: Telepathy  
 Tera Type: Flying  
 IVs: 0 Atk  
@@ -13390,7 +13410,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Cacturne  
-Level: 40
+Level: 43
 Ability: Sand Veil  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -13400,7 +13420,7 @@ IVs: 0 Atk
 - Counter  
 
 Houndstone  
-Level: 40
+Level: 43
 Ability: Sand Rush  
 Tera Type: Ghost  
 - Last Respects  
@@ -13409,7 +13429,7 @@ Tera Type: Ghost
 - Yawn  
 
 Stoutland  
-Level: 40
+Level: 43
 Ability: Sand Rush  
 Tera Type: Normal  
 - Return  
@@ -13418,7 +13438,7 @@ Tera Type: Normal
 - Howl  
 
 Sigilyph  
-Level: 40
+Level: 43
 Ability: Magic Guard  
 Tera Type: Psychic  
 IVs: 0 Atk  
@@ -13438,7 +13458,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Wugtrio @ Bright Powder  
-Level: 40
+Level: 43
 Ability: Sand Veil  
 Tera Type: Water  
 - Triple Dive  
@@ -13447,7 +13467,7 @@ Tera Type: Water
 - Headbutt  
 
 Dugtrio @ Bright Powder  
-Level: 40
+Level: 43
 Ability: Sand Veil  
 Tera Type: Ground  
 - Shadow Claw  
@@ -13456,7 +13476,7 @@ Tera Type: Ground
 - Dig  
 
 Dugtrio-Alola @ Bright Powder  
-Level: 40
+Level: 43
 Ability: Sand Veil  
 Tera Type: Ground  
 - Metal Claw  
@@ -13484,29 +13504,34 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Deerling  
-Level: 40
+Deerling-Summer
+Level: 45
 Ability: Sap Sipper  
 Tera Type: Normal  
+EVs: 128 HP / 128 Atk / 252 Spe
 - Bullet Seed  
 - Double Kick  
 - Bounce  
 - Leech Seed  
 
 Nacli  
-Level: 40
+Level: 48
 Ability: Purifying Salt  
 Tera Type: Rock  
+EVs: 164 HP / 164 Atk / 164 SpD
+Impish Nature
 - Rock Throw  
 - Facade  
 - Stealth Rock  
 - Curse  
 
 Cottonee  
-Level: 40
+Level: 48
 Ability: Prankster  
 Tera Type: Grass  
 IVs: 0 Atk  
+EVs: 252 HP / 252 SpA
+Timid Nature
 - Cotton Guard  
 - Encore  
 - Cotton Spore  
@@ -13514,9 +13539,11 @@ IVs: 0 Atk
 
 
 Nidoran-M (M) @ Power Herb  
-Level: 40
+Level: 45
 Ability: Poison Point  
 Tera Type: Poison  
+EVs: 164 HP / 164 Atk / 164 Spe
+Adamant Nature
 - Poison Jab   
 - Skull Bash  
 - Counter  
@@ -13638,7 +13665,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Lotad  
 Ability: Swift Swim  
-Level: 40
+Level: 46
 Tera Type: Water  
 IVs: 0 Atk  
 - Bubble Beam  
@@ -13648,7 +13675,7 @@ IVs: 0 Atk
 
 Scorbunny  
 Ability: Libero  
-Level: 40  
+Level: 46  
 Tera Type: Fire  
 - Quick Attack  
 - Bounce  
@@ -13657,7 +13684,7 @@ Tera Type: Fire
 
 Grookey
 Ability: Overgrow  
-Level: 40  
+Level: 46  
 Tera Type: Grass  
 - Branch Poke  
 - Scratch  
@@ -13666,7 +13693,7 @@ Tera Type: Grass
 
 Electrike  
 Ability: Static  
-Level: 40  
+Level: 46  
 Tera Type: Fire  
 IVs: 0 Atk
 - Shock Wave  
@@ -13676,7 +13703,7 @@ IVs: 0 Atk
 
 Bunnelby  
 Ability: Cheek Pouch  
-Level: 40  
+Level: 46  
 Tera Type: Normal  
 - Brick Break  
 - Quick Attack  
@@ -21603,38 +21630,46 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Pineco  
-Level: 28
+Pineco @ Custap Berry
+Level: 37
 Ability: Sturdy  
-Tera Type: Bug  
+Tera Type: Bug 
+EVs: 252 HP / 252 Atk
+Adamant Nature 
 - Self-Destruct  
 - Rapid Spin  
 - Seed Bomb  
 - Power Trick  
 
 Phantump  
-Level: 28
+Level: 37
 Ability: Natural Cure  
 Tera Type: Ghost  
+EVs: 252 HP / 168 Atk / 84 SpA
+Brave Nature
 - Forest's Curse  
 - Poison Jab  
 - Horn Leech  
 - Hex  
 
 Salandit  
-Level: 28
+Level: 37
 Ability: Corrosion  
 Tera Type: Poison  
+EVs: 168 HP / 168 SpA / 168 Spe
+Timid Nature
 - Toxic  
 - Fake Out  
 - Flamethrower  
 - Sludge Bomb  
 
 Mareep  
-Level: 28
+Level: 37
 Ability: Static  
 Tera Type: Electric  
 IVs: 0 Atk  
+EVs: 168 HP / 168 SpA / 168 Spe
+Modest Nature
 - Shock Wave  
 - Cotton Spore  
 - Cotton Guard  
@@ -21651,17 +21686,17 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Sunkern  
-Level: 38
+Level: 40
 Ability: Early Bird  
 Tera Type: Grass  
 IVs: 0 Atk  
 - Morning Sun  
-- Grass Whistle  
+- Sunny Day  
 - Growth  
 - Magical Leaf  
 
 Seedot  
-Level: 38
+Level: 40
 Ability: Pickpocket  
 Tera Type: Grass  
 - Bullet Seed  
@@ -21670,7 +21705,7 @@ Tera Type: Grass
 - Grassy Terrain  
 
 Cherubi  
-Level: 38
+Level: 40
 Ability: Chlorophyll  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -21680,7 +21715,7 @@ IVs: 0 Atk
 - Giga Drain  
 
 Petilil (F)  
-Level: 38
+Level: 40
 Ability: Chlorophyll  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -21751,6 +21786,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Munchlax @ Iapapa Berry  
+Level: 40
 Ability: Gluttony  
 Tera Type: Normal  
 EVs: 252 Def / 252 SpA  
@@ -21760,6 +21796,7 @@ EVs: 252 Def / 252 SpA
 - Belly Drum  
 
 Rolycoly  
+Level: 40
 Ability: Flash Fire  
 Tera Type: Rock  
 EVs: 252 HP / 252 Atk
@@ -21768,7 +21805,8 @@ EVs: 252 HP / 252 Atk
 - Smokescreen  
 - Block  
 
-Gulpin @ Petaya Berry  
+Gulpin @ Petaya Berry 
+Level: 40 
 Ability: Gluttony  
 Tera Type: Poison  
 IVs: 0 Atk  
@@ -21779,6 +21817,7 @@ EVs: 252 HP / 252 SpA
 - Gastro Acid  
 
 Charcadet  
+Level: 40
 Ability: Flame Body  
 Tera Type: Fire  
 EVs: 252 HP / 252 SpA  
@@ -23090,36 +23129,41 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Skiploom  
-Level: 40
+Level: 43
 Ability: Leaf Guard  
 Tera Type: Grass  
+EVs: 252 HP / 252 Spe
 - Cotton Guard  
 - Baton Pass  
 - Seed Bomb  
 - Pollen Puff  
 
-Deerling  
-Level: 40
+Deerling-Autumn
+Level: 45
 Ability: Sap Sipper  
 Tera Type: Normal  
+EVs: 128 HP / 128 Atk / 252 Spe
 - Bullet Seed  
 - Double Kick  
 - Bounce  
 - Leech Seed  
 
-Floragato  
-Level: 40
+Floragato  @ Grassy Seed
+Level: 43
 Ability: Overgrow  
 Tera Type: Grass  
+EVs: 164 HP / 164 Atk / 164 Spe
+Jolly Nature
 - Flower Trick  
 - Acrobatics  
 - Grassy Terrain  
 - Grassy Glide  
 
 Floette (F) @ Lum Berry  
-Level: 40
+Level: 44
 Ability: Flower Veil  
 Tera Type: Fairy  
+EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Floral Healing  
 - Alluring Voice  
