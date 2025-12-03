@@ -2,7 +2,7 @@
 #define GUARD_CONSTANTS_SPECIES_H
 
 // NOTE: The defines here are named in order to match Pokémon Showdown's naming conventions. This is done to avoid issues with trainerproc parsing species names. If a Pokémon does not have an entry on Showdown, use your best judgement.
-// Additionally, we have tried to reduce down to as few defines as possible, because programs like porymap does not always properly handle having multiple defines.
+// Additionally, we have tried to reduce down to as few defines as possible, because programs like porymap do not always properly handle having multiple defines.
 // Discussion: https://github.com/rh-hideout/pokeemerald-expansion/pull/5075#issuecomment-2384088602
 // Showdown: https://github.com/smogon/Pokemon-Showdown/blob/master/data/pokedex.ts
 
@@ -1637,39 +1637,61 @@
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GMAX         SPECIES_URSHIFU_RAPID_STRIKE_GMAX
 #define SPECIES_MIMIKYU_BUSTED_TOTEM                    1523
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    SPECIES_MIMIKYU_BUSTED_TOTEM
+// Legends Z-A
+#define SPECIES_CLEFABLE_MEGA                           1524
+#define SPECIES_VICTREEBEL_MEGA                         1525
+#define SPECIES_STARMIE_MEGA                            1526
+#define SPECIES_DRAGONITE_MEGA                          1527
+#define SPECIES_MEGANIUM_MEGA                           1528
+#define SPECIES_FERALIGATR_MEGA                         1529
+#define SPECIES_SKARMORY_MEGA                           1530
+#define SPECIES_FROSLASS_MEGA                           1531
+#define SPECIES_EMBOAR_MEGA                             1532
+#define SPECIES_EXCADRILL_MEGA                          1533
+#define SPECIES_SCOLIPEDE_MEGA                          1534
+#define SPECIES_SCRAFTY_MEGA                            1535
+#define SPECIES_EELEKTROSS_MEGA                         1536
+#define SPECIES_CHANDELURE_MEGA                         1537
+#define SPECIES_CHESNAUGHT_MEGA                         1538
+#define SPECIES_DELPHOX_MEGA                            1539
+#define SPECIES_GRENINJA_MEGA                           1540
+#define SPECIES_PYROAR_MEGA                             1541
+#define SPECIES_MALAMAR_MEGA                            1542
+#define SPECIES_DRAGALGE_MEGA                           1543
+#define SPECIES_HAWLUCHA_MEGA                           1544
+#define SPECIES_FLOETTE_MEGA                            1545
+#define SPECIES_BARBARACLE_MEGA                         1546
+#define SPECIES_ZYGARDE_MEGA                            1547
+#define SPECIES_DRAMPA_MEGA                             1548
+#define SPECIES_FALINKS_MEGA                            1549
 
-//New Custom Mega Evolutions
-#define SPECIES_BUTTERFREE_MEGA                         1524
-#define SPECIES_MACHAMP_MEGA                            1525
-#define SPECIES_KINGLER_MEGA                            1526
-#define SPECIES_LAPRAS_MEGA                             1527
-#define SPECIES_CENTISKORCH_MEGA                        1528
-#define SPECIES_MEGANIUM_MEGA                           1529
-#define SPECIES_TYPHLOSION_MEGA                         1530
-#define SPECIES_FERALIGATR_MEGA                         1531
-#define SPECIES_RILLABOOM_MEGA                          1532
-#define SPECIES_CINDERACE_MEGA                          1533
-#define SPECIES_INTELEON_MEGA                           1534
-#define SPECIES_MILOTIC_MEGA                            1535
-#define SPECIES_DRAGONITE_MEGA                          1536
-#define SPECIES_SUNFLORA_MEGA                           1537
-#define SPECIES_FLYGON_MEGA                             1538
-#define SPECIES_VIKAVOLT_MEGA                           1539
-#define SPECIES_VENUSAUR_MEGA_X                         1540
-#define SPECIES_BLASTOISE_MEGA_X                        1541
-#define SPECIES_SLOWKING_MEGA                           1542
-#define SPECIES_FROSLASS_MEGA                           1543
+#define SPECIES_BUTTERFREE_MEGA                         1150
+#define SPECIES_MACHAMP_MEGA                            1151
+#define SPECIES_KINGLER_MEGA                            1152
+#define SPECIES_LAPRAS_MEGA                             1153
+#define SPECIES_CENTISKORCH_MEGA                        1154
+#define SPECIES_TYPHLOSION_MEGA                         1155
+#define SPECIES_RILLABOOM_MEGA                          1156
+#define SPECIES_CINDERACE_MEGA                          1157
+#define SPECIES_INTELEON_MEGA                           1158
+#define SPECIES_MILOTIC_MEGA                            1159
+#define SPECIES_SUNFLORA_MEGA                           1160
+#define SPECIES_FLYGON_MEGA                             1161
+#define SPECIES_VIKAVOLT_MEGA                           1162
+#define SPECIES_VENUSAUR_MEGA_X                         1163
+#define SPECIES_BLASTOISE_MEGA_X                        1164
+#define SPECIES_SLOWKING_MEGA                           1165
 
-#define SPECIES_CYNDAQUIL_HISUI                         1544
-#define SPECIES_QUILAVA_HISUI                           1545
-#define SPECIES_OSHAWOTT_HISUI                          1546
-#define SPECIES_DEWOTT_HISUI                            1547
-#define SPECIES_ROWLET_HISUI                            1548
-#define SPECIES_DARTRIX_HISUI                           1549
+#define SPECIES_CYNDAQUIL_HISUI                         1167
+#define SPECIES_QUILAVA_HISUI                           1168
+#define SPECIES_OSHAWOTT_HISUI                          1169
+#define SPECIES_DEWOTT_HISUI                            1170
+#define SPECIES_ROWLET_HISUI                            1171
+#define SPECIES_DARTRIX_HISUI                           1172
 
-#define SPECIES_TERAPAGOS_NORMAL_SHELL                 1550
+#define SPECIES_TERAPAGOS_NORMAL_SHELL                 1173
 
-#define SPECIES_EGG                                     1551
+#define SPECIES_EGG                                     (1174)
 
 #define NUM_SPECIES SPECIES_EGG
 

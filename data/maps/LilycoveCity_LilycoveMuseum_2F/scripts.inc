@@ -160,8 +160,12 @@ LilycoveCity_LilycoveMuseum_2F_EventScript_ShowExhibitHall::
 	waitmovement 0
 # 81 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	msgbox LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit, MSGBOX_SIGN
+#ifdef UBFIX
+	setvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1
+#else
 # 82 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
-	copyvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1
+	copyvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1, warn=FALSE
+#endif
 # 83 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"
 	releaseall
 # 84 "data/maps/LilycoveCity_LilycoveMuseum_2F/scripts.pory"

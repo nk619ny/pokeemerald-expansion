@@ -1090,7 +1090,8 @@ BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50::
 	case FRONTIER_MODE_DOUBLES, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50Doubles
 # 546 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Multis, MSGBOX_DEFAULT
-# 547 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 # 548 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	end
@@ -1100,7 +1101,8 @@ BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50::
 BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50Singles::
 # 551 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles, MSGBOX_DEFAULT
-# 552 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 # 553 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	end
@@ -1110,7 +1112,8 @@ BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50Singles::
 BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50Doubles::
 # 556 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Doubles, MSGBOX_DEFAULT
-# 557 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 # 558 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	end
@@ -1126,7 +1129,8 @@ BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpen::
 	case FRONTIER_MODE_DOUBLES, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenDoubles
 # 564 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenMultis, MSGBOX_DEFAULT
-# 565 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 # 566 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	end
@@ -1136,7 +1140,8 @@ BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpen::
 BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenSingles::
 # 569 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenSingles, MSGBOX_DEFAULT
-# 570 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 # 571 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	end
@@ -1146,7 +1151,8 @@ BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenSingles::
 BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenDoubles::
 # 574 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenDoubles, MSGBOX_DEFAULT
-# 575 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 # 576 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	end
@@ -2170,9 +2176,9 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50:
 	.string "They also must be holding different\n"
 # 1086 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	.string "kinds of items.\p"
-# 1087 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-# 1088 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	.string "EGGS{STR_VAR_1}.$"
+
+BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd:
 	.string "Please come see me when you are ready.$"
 # 1089 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 
@@ -2192,11 +2198,7 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "They also must be holding different\n"
 # 1097 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	.string "kinds of items.\p"
-# 1098 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-# 1099 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "Please come see me when you are ready.$"
-# 1100 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	.string "EGGS{STR_VAR_1}.$"
 
 # 1101 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles:
@@ -2212,11 +2214,7 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles:
 	.string "They also must be holding different\n"
 # 1107 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	.string "kinds of items.\p"
-# 1108 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-# 1109 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "Please come see me when you are ready.$"
-# 1110 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	.string "EGGS{STR_VAR_1}.$"
 
 # 1111 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenSingles:
@@ -2232,11 +2230,7 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenSingles:
 	.string "They also must be holding different\n"
 # 1117 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	.string "kinds of items.\p"
-# 1118 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-# 1119 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "Please come see me when you are ready.$"
-# 1120 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	.string "EGGS{STR_VAR_1}.$"
 
 # 1121 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Doubles:
@@ -2252,11 +2246,7 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Doubles:
 	.string "They also must be holding different\n"
 # 1127 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	.string "kinds of items.\p"
-# 1128 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-# 1129 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "Please come see me when you are ready.$"
-# 1130 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	.string "EGGS{STR_VAR_1}.$"
 
 # 1131 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenDoubles:
@@ -2272,11 +2262,7 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenDoubles:
 	.string "They also must be holding different\n"
 # 1137 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	.string "kinds of items.\p"
-# 1138 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-# 1139 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "Please come see me when you are ready.$"
-# 1140 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	.string "EGGS{STR_VAR_1}.$"
 
 # 1141 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Multis:
@@ -2292,11 +2278,7 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Multis:
 	.string "They also must be holding different\n"
 # 1147 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	.string "kinds of items.\p"
-# 1148 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-# 1149 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "Please come see me when you are ready.$"
-# 1150 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	.string "EGGS{STR_VAR_1}.$"
 
 # 1151 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenMultis:
@@ -2312,11 +2294,7 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenMultis:
 	.string "They also must be holding different\n"
 # 1157 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	.string "kinds of items.\p"
-# 1158 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-# 1159 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	.string "Please come see me when you are ready.$"
-# 1160 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
+	.string "EGGS{STR_VAR_1}.$"
 
 # 1161 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle:

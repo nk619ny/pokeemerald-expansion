@@ -245,26 +245,30 @@
 #define OBJ_EVENT_GFX_HOOH                       238
 #define OBJ_EVENT_GFX_POKE_BALL                  239
 #define OBJ_EVENT_GFX_OW_MON                     240
-#define OBJ_EVENT_GFX_COURTNEY_ORAS              241
-#define OBJ_EVENT_GFX_TABITHA_ORAS               242
-#define OBJ_EVENT_GFX_SHELLY_ORAS                243
-#define OBJ_EVENT_GFX_MATT_ORAS                  244
-#define OBJ_EVENT_GFX_ARCHIE_ORAS                245
-#define OBJ_EVENT_GFX_MAXIE_ORAS                 246
-#define OBJ_EVENT_GFX_BRAWLY_ORAS                247
-#define OBJ_EVENT_GFX_VITO                       248
-#define OBJ_EVENT_GFX_TURO                       249
-#define OBJ_EVENT_GFX_SADA                       250
-#define OBJ_EVENT_GFX_LIGHT_SPRITE               251
-#define OBJ_EVENT_GFX_DIVER_F                    252
-#define OBJ_EVENT_GFX_DIVER_M                    253
-#define OBJ_EVENT_GFX_LISIA                      254
-#define OBJ_EVENT_GFX_ZINNIA                     255
+#define OBJ_EVENT_GFX_LIGHT_SPRITE               241
+#define OBJ_EVENT_GFX_APRICORN_TREE              242
+
+#define OBJ_EVENT_GFX_COURTNEY_ORAS              243
+#define OBJ_EVENT_GFX_TABITHA_ORAS               244
+#define OBJ_EVENT_GFX_SHELLY_ORAS                245
+#define OBJ_EVENT_GFX_MATT_ORAS                  246
+#define OBJ_EVENT_GFX_ARCHIE_ORAS                247
+#define OBJ_EVENT_GFX_MAXIE_ORAS                 248
+#define OBJ_EVENT_GFX_BRAWLY_ORAS                249
+#define OBJ_EVENT_GFX_VITO                       250
+#define OBJ_EVENT_GFX_TURO                       251
+#define OBJ_EVENT_GFX_SADA                       252
+
+#define OBJ_EVENT_GFX_DIVER_F                    253
+#define OBJ_EVENT_GFX_DIVER_M                    254
+#define OBJ_EVENT_GFX_LISIA                      255
+#define OBJ_EVENT_GFX_ZINNIA                     256
+
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        1024
+#define NUM_OBJ_EVENT_GFX                        257
 
 
 // These are dynamic object gfx ids.

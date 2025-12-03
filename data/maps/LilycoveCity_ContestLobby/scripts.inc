@@ -714,8 +714,12 @@ LilycoveCity_ContestLobby_EventScript_SetMasterContestType::
 LilycoveCity_ContestLobby_EventScript_SetDebug::
 # 358 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	setflag FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR
+#ifdef UBFIX
+	setvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1
+#else
 # 359 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
-	copyvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1
+	copyvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1, warn=FALSE
+#endif
 # 360 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	additem ITEM_CONTEST_PASS
 # 361 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
