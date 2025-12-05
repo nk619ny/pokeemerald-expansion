@@ -2174,8 +2174,6 @@ BattleScript_EffectStealthRock::
 
 BattleScript_EffectSteelsurge::
 	attackcanceler
-	attackstring
-	ppreduce
 	setsteelsurge BattleScript_ButItFailed
 	attackanimation
 	waitanimation
@@ -5668,7 +5666,7 @@ BattleScript_AtkDefDownRet:
 BattleScript_SpAtkSpDefDown::
 	setstatchanger STAT_SPATK, 1, TRUE
 	statbuffchange BS_ATTACKER, STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_SpAtkSpDefDownTrySpDef, BIT_SPDEF
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_SpAtkSpDefDownTrySpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_SpAtkSpDefDownTrySpDef
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_SpAtkSpDefDownTrySpDef:

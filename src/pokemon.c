@@ -7444,24 +7444,6 @@ enum Type GetTeraTypeFromPersonality(struct Pokemon *mon)
     return sNonNormalTypes[idx];
 }
 
-// Add this array somewhere accessible (static/global is fine)
-static const u8 sNonNormalTypes[] = {
-    TYPE_FIGHTING, TYPE_FLYING, TYPE_POISON, TYPE_GROUND, TYPE_ROCK,
-    TYPE_BUG, TYPE_GHOST, TYPE_STEEL, TYPE_FIRE, TYPE_WATER,
-    TYPE_GRASS, TYPE_ELECTRIC, TYPE_PSYCHIC, TYPE_ICE, TYPE_DRAGON,
-    TYPE_DARK, TYPE_FAIRY
-    // Add any custom types here, but DO NOT include TYPE_NORMAL
-};
-
-#define NUM_NON_NORMAL_TYPES (sizeof(sNonNormalTypes) / sizeof(sNonNormalTypes[0]))
-
-enum Type GetTeraTypeFromPersonality(struct Pokemon *mon)
-{
-    u32 personality = GetMonData(mon, MON_DATA_PERSONALITY);
-    // Use the personality to pick a type, evenly distributed
-    u32 idx = personality % NUM_NON_NORMAL_TYPES;
-    return sNonNormalTypes[idx];
-}
 struct Pokemon *GetSavedPlayerPartyMon(u32 index)
 {
     return &gSaveBlock1Ptr->playerParty[index];

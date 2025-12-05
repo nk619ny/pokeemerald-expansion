@@ -5858,7 +5858,7 @@ u32 IsAbilityPreventingEscape(u32 battler)
 {
     if (B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return 0;
-    if (GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_SHED_SHELL)
+    if (GetBattlerHoldEffect(battler) == HOLD_EFFECT_SHED_SHELL)
         return 0;
     if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return 0;
@@ -5888,7 +5888,7 @@ bool32 CanBattlerEscape(u32 battler) // no ability check
 {
     if (gBattleStruct->battlerState[battler].commanderSpecies != SPECIES_NONE)
         return FALSE;
-    else if (GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_SHED_SHELL)
+    else if (GetBattlerHoldEffect(battler) == HOLD_EFFECT_SHED_SHELL)
         return TRUE;
     else if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return TRUE;
@@ -6195,16 +6195,7 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, enum Ability abil
         {
             abilityAffected = TRUE;
             battlerDef = sideBattler - 1;
-            abilityDef = ABILITY_WATER_VEIL;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STATUS_HAD_NO_EFFECT;
-            battleScript = BattleScript_ImmunityProtected;
-        }
-        else if ((sideBattler = IsAbilityOnSide(battlerDef, ABILITY_WATER_VEIL)))
-        {
-            abilityAffected = TRUE;
-            battlerDef = sideBattler - 1;
-            abilityDef = ABILITY_WATER_VEIL;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STATUS_HAD_NO_EFFECT;
+            abilityDef = ABILITY_SWEET_VEIL;
             battleScript = BattleScript_ImmunityProtected;
         }
         else if (abilityDef == ABILITY_THERMAL_EXCHANGE)

@@ -1665,33 +1665,33 @@
 #define SPECIES_DRAMPA_MEGA                             1548
 #define SPECIES_FALINKS_MEGA                            1549
 
-#define SPECIES_BUTTERFREE_MEGA                         1150
-#define SPECIES_MACHAMP_MEGA                            1151
-#define SPECIES_KINGLER_MEGA                            1152
-#define SPECIES_LAPRAS_MEGA                             1153
-#define SPECIES_CENTISKORCH_MEGA                        1154
-#define SPECIES_TYPHLOSION_MEGA                         1155
-#define SPECIES_RILLABOOM_MEGA                          1156
-#define SPECIES_CINDERACE_MEGA                          1157
-#define SPECIES_INTELEON_MEGA                           1158
-#define SPECIES_MILOTIC_MEGA                            1159
-#define SPECIES_SUNFLORA_MEGA                           1160
-#define SPECIES_FLYGON_MEGA                             1161
-#define SPECIES_VIKAVOLT_MEGA                           1162
-#define SPECIES_VENUSAUR_MEGA_X                         1163
-#define SPECIES_BLASTOISE_MEGA_X                        1164
-#define SPECIES_SLOWKING_MEGA                           1165
+#define SPECIES_BUTTERFREE_MEGA                         1550
+#define SPECIES_MACHAMP_MEGA                            1551
+#define SPECIES_KINGLER_MEGA                            1552
+#define SPECIES_LAPRAS_MEGA                             1553
+#define SPECIES_CENTISKORCH_MEGA                        1554
+#define SPECIES_TYPHLOSION_MEGA                         1555
+#define SPECIES_RILLABOOM_MEGA                          1556
+#define SPECIES_CINDERACE_MEGA                          1557
+#define SPECIES_INTELEON_MEGA                           1558
+#define SPECIES_MILOTIC_MEGA                            1559
+#define SPECIES_SUNFLORA_MEGA                           1560
+#define SPECIES_FLYGON_MEGA                             1561
+#define SPECIES_VIKAVOLT_MEGA                           1562
+#define SPECIES_VENUSAUR_MEGA_X                         1563
+#define SPECIES_BLASTOISE_MEGA_X                        1564
+#define SPECIES_SLOWKING_MEGA                           1565
 
-#define SPECIES_CYNDAQUIL_HISUI                         1167
-#define SPECIES_QUILAVA_HISUI                           1168
-#define SPECIES_OSHAWOTT_HISUI                          1169
-#define SPECIES_DEWOTT_HISUI                            1170
-#define SPECIES_ROWLET_HISUI                            1171
-#define SPECIES_DARTRIX_HISUI                           1172
+#define SPECIES_CYNDAQUIL_HISUI                         1567
+#define SPECIES_QUILAVA_HISUI                           1568
+#define SPECIES_OSHAWOTT_HISUI                          1569
+#define SPECIES_DEWOTT_HISUI                            1570
+#define SPECIES_ROWLET_HISUI                            1571
+#define SPECIES_DARTRIX_HISUI                           1572
 
-#define SPECIES_TERAPAGOS_NORMAL_SHELL                 1173
+#define SPECIES_TERAPAGOS_NORMAL_SHELL                 1573
 
-#define SPECIES_EGG                                     (1174)
+#define SPECIES_EGG                                     (1574)
 
 #define NUM_SPECIES SPECIES_EGG
 

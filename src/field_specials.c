@@ -4430,12 +4430,6 @@ void SetAbility(void)
     SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_ABILITY_NUM, &ability);
 }
 
-void SetAbility(void)
-{
-    u32 ability = gSpecialVar_Result;
-    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_ABILITY_NUM, &ability);
-}
-
 // === NEW SPECIALS ===
 // gSpecialVar_0x8004: party slot (0..PARTY_SIZE-1)
 // gSpecialVar_0x8005: tera type value
