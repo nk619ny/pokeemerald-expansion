@@ -169,6 +169,7 @@ MauvilleCity_EventScript_DefeatedWally::
 	setflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL
 	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottApproachPlayerNorth
 	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottApproachPlayerEast
+	call_if_eq VAR_FACING, DIR_WEST, MauvilleCity_EventScript_ScottApproachPlayerEast
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox MauvilleCity_Text_ScottYouDidntHoldBack, MSGBOX_DEFAULT
@@ -176,6 +177,7 @@ MauvilleCity_EventScript_DefeatedWally::
 	addvar VAR_SCOTT_STATE, 1
 	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottExitNorth
 	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottExitEast
+	call_if_eq VAR_FACING, DIR_WEST, MauvilleCity_EventScript_ScottExitEast
 	removeobject LOCALID_MAUVILLE_SCOTT
 	setvar VAR_LEVEL_CAP, 36
 	call Common_EventScript_ApplyHandicap

@@ -432,12 +432,13 @@ script Common_EventScript_CheckIfEliteFourComplete {
 
 script MauvilleCity_EventScript_Temporary{
 	lock
-	setflag(FLAG_MIRAGE_ISLAND_VISIBLE)
+	//setflag(FLAG_MIRAGE_ISLAND_VISIBLE)
 	//additem(ITEM_TM_THUNDER_PUNCH,-1)
 	//additem(ITEM_TM_ICE_PUNCH,-1)
 	setvar(VAR_LEVEL_HANDICAP,0)
-
-
+	giveitem(ITEM_CANDY_BAG)
+	giveitem(ITEM_UNLIMITED_REPEL)
+	setflag(FLAG_HIDE_MAUVILLE_CITY_WALLY)
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
@@ -486,7 +487,7 @@ script MauvilleCity_EventScript_Temporary{
 	
 	//multi_fixed_2_vs_2(TRAINER_ARCHIE_MT_PYRE, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAXIE_MT_PYRE, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
 	clearflag(FLAG_NO_TRAINER_BATTLE)
-	multi_fixed_2_vs_2(TRAINER_MAGMA_ADMIN_FARM, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAGMA_MULTI_GRUNT_FARM, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
+	//multi_fixed_2_vs_2(TRAINER_MAGMA_ADMIN_FARM, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAGMA_MULTI_GRUNT_FARM, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
     
 	waitmessage
 	closemessage

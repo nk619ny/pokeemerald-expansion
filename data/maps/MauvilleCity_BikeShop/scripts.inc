@@ -197,7 +197,7 @@ MauvilleCity_BikeShop_EventScript_SwitchMachForAcro::
 # 99 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 
 # 100 "data/maps/MauvilleCity_BikeShop/scripts.pory"
-MauvilleCity_BikeShop_EventScript_Assistant::
+MauvilleCity_BikeShop_EventScript_Assistant_Previous::
 # 101 "data/maps/MauvilleCity_BikeShop/scripts.pory"
 	msgbox MauvilleCity_BikeShop_Text_HandbooksAreInBack, MSGBOX_NPC
 # 102 "data/maps/MauvilleCity_BikeShop/scripts.pory"
@@ -678,6 +678,41 @@ MauvilleCity_BikeShop_EventScript_AlreadyHaveBikes::
 	release
 	end
 
+
+MauvilleCity_BikeShop_EventScript_Assistant::
+# 357 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	lock
+# 358 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	faceplayer
+# 359 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	checkitem ITEM_TM_U_TURN
+# 360 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MauvilleCity_BikeShop_EventScript_Assistant_2
+# 367 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	goto MauvilleCity_BikeShop_EventScript_Assistant_Previous
+MauvilleCity_BikeShop_EventScript_Assistant_1:
+# 369 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	releaseall
+	end
+
+MauvilleCity_BikeShop_EventScript_Assistant_2:
+# 361 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	msgbox MauvilleCity_BikeShop_EventScript_Assistant_Text_0, MSGBOX_DEFAULT
+# 362 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	closemessage
+# 363 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	giveitem ITEM_TM_U_TURN
+# 364 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	waitfanfare
+	goto MauvilleCity_BikeShop_EventScript_Assistant_1
+
+
+MauvilleCity_BikeShop_EventScript_Assistant_Text_0:
+# 361 "data/maps/MauvilleCity_BikeShop/scripts.pory"
+	.string "I love making sharp turns on my bike so\n"
+	.string "much, I taught my Pokemon how to do it,\l"
+	.string "too.$"
 
 MauvilleCity_BikeShop_Text_ExplainBikesGiveBoth::
 # 326 "data/maps/MauvilleCity_BikeShop/scripts.pory"

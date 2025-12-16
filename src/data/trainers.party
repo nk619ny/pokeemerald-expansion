@@ -759,7 +759,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Cubchoo  
-Level: 28
+Level: 34
 Ability: Rattled  
 Tera Type: Ice  
 - Avalanche  
@@ -768,7 +768,7 @@ Tera Type: Ice
 - Protect  
 
 Psyduck  
-Level: 28
+Level: 33
 Ability: Damp  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -778,7 +778,7 @@ IVs: 0 Atk
 - Brine  
 
 Finizen  
-Level: 28
+Level: 33
 Ability: Water Veil  
 Tera Type: Water  
 - Aqua Tail  
@@ -787,7 +787,7 @@ Tera Type: Water
 - Acrobatics  
 
 Frigibax  
-Level: 28
+Level: 35
 Ability: Thermal Exchange  
 Tera Type: Dragon  
 - Dragon Claw  
@@ -2158,9 +2158,9 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gigalith  
 Ability: Sturdy  
-Level: 28
+Level: 29
 Ball: Great Ball
-EVs: 252 HP / 252 Atk / 4 SpD  
+EVs: 164 HP / 164 Atk 
 Adamant Nature  
 - Curse  
 - Rock Slide  
@@ -2170,8 +2170,8 @@ Adamant Nature
 Golbat @ Eviolite  
 Ability: Inner Focus  
 Ball: Great Ball
-Level: 28
-EVs: 252 Atk / 4 SpD / 252 Spe  
+Level: 29
+EVs: 164 Atk / 164 Spe  
 Jolly Nature  
 - Poison Fang  
 - Dual Wingbeat  
@@ -2180,9 +2180,9 @@ Jolly Nature
 
 Swoobat
 Ability: Unaware  
-Level: 28
+Level: 29
 Ball: Great Ball
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 164 SpA / 164 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Air Slash  
@@ -2192,9 +2192,9 @@ IVs: 0 Atk
 
 Beartic  
 Ability: Swift Swim  
-Level: 28
+Level: 29
 Ball: Great Ball
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 164 Atk / 164 Spe  
 Adamant Nature  
 - Aqua Jet  
 - Avalanche  
@@ -2203,9 +2203,9 @@ Adamant Nature
 
 Kleavor  
 Ability: Sharpness  
-Level: 29
+Level: 30
 Ball: Great Ball
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 200 Atk / 200 Spe  
 Jolly Nature  
 - X-Scissor  
 - Stone Axe  
@@ -2224,7 +2224,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Lileep @ Leftovers  
 Ability: Storm Drain  
 EVs: 252 HP / 252 SpA / 4 SpD  
-Level: 28
+Level: 33
 Modest Nature  
 IVs: 0 Atk  
 - Ancient Power  
@@ -2233,7 +2233,7 @@ IVs: 0 Atk
 - Attract  
 
 Shellder  
-Level: 28
+Level: 33
 Ability: Overcoat  
 Tera Type: Water  
 - Ice Shard  
@@ -2244,7 +2244,7 @@ Tera Type: Water
 
 Dwebble @ Salac Berry
 Ability: Sturdy  
-Level: 28
+Level: 33
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Skitter Smack  
@@ -2267,7 +2267,7 @@ IVs: 0 Atk
 
 Binacle @ Rindo Berry  
 Ability: Tough Claws  
-Level: 28
+Level: 33
 EVs: 252 Atk / 4 SpD / 252 Spe  
 - Liquidation  
 - Shell Smash  
@@ -5968,7 +5968,7 @@ Starting Status: STARTING_STATUS_ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Charjabug @ Eviolite  
-Level: 36
+Level: 37
 Ability: Battery  
 Tera Type: Bug  
 Serious Nature  
@@ -5978,7 +5978,7 @@ Serious Nature
 - Spark  
 
 Nosepass  
-Level: 36
+Level: 38
 Ability: Magnet Pull  
 Tera Type: Rock  
 - Flash Cannon  
@@ -5987,7 +5987,7 @@ Tera Type: Rock
 - Rock Throw  
 
 Voltorb  
-Level: 36
+Level: 39
 Ability: Static  
 Tera Type: Electric  
 IVs: 0 Atk  
@@ -5998,7 +5998,7 @@ IVs: 0 Atk
 
 
 Ferroseed  
-Level: 36
+Level: 39
 Ability: Iron Barbs  
 Tera Type: Grass  
 - Curse  
@@ -6093,7 +6093,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Plusle @ Focus Sash  
-Level: 32
+Level: 33
 Ability: Plus  
 Tera Type: Electric  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -6105,7 +6105,7 @@ IVs: 0 Atk
 - Nasty Plot  
 
 Minun @ Shuca Berry  
-Level: 32
+Level: 33
 Ability: Minus  
 Tera Type: Electric  
 EVs: 252 HP / 4 SpA / 252 Spe  
@@ -6116,7 +6116,7 @@ Hasty Nature
 - Nuzzle  
 
 Klang @ Air Balloon  
-Level: 32
+Level: 36
 Ability: Minus  
 Tera Type: Ice  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -6128,7 +6128,7 @@ IVs: 0 Atk
 - Hidden Power
 
 Dedenne @ Big Root  
-Level: 31
+Level: 33
 Ability: Plus  
 Tera Type: Electric  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -7176,17 +7176,19 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skorupi  
-Level: 28
+Skorupi  @ Scope Lens
+Level: 36
 Ability: Sniper  
-Tera Type: Poison  
+Tera Type: Poison
+EVs: 252 Atk
+Adamant Nature   
 - Fell Stinger  
 - Cross Poison  
 - Pursuit  
 - Toxic Spikes  
 
 Slugma @ Binding Band  
-Level: 28
+Level: 36
 Ability: Flame Body  
 Tera Type: Fire  
 EVs: 252 HP / 128 Def / 128 SpD  
@@ -7197,7 +7199,7 @@ IVs: 0 Atk
 - Toxic  
 
 Dunsparce  
-Level: 28
+Level: 36
 Ability: Serene Grace  
 Tera Type: Normal  
 EVs: 252 Spe  
@@ -7206,8 +7208,8 @@ EVs: 252 Spe
 - Body Slam  
 - Headbutt  
 
-Gligar  
-Level: 28
+Gligar @ Yache Berry
+Level: 36
 Ability: Immunity  
 Tera Type: Ground  
 - Counter  
@@ -8250,7 +8252,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Rotom-Heat  
 Ability: Levitate 
 Ball: Fast Ball 
-Level: 29
+Level: 35
 EVs: 192 HP / 192 SpA 
 Modest Nature  
 IVs: 0 Atk  
@@ -8262,7 +8264,7 @@ IVs: 0 Atk
 Lanturn @ Rindo Berry
 Ability: Volt Absorb  
 Ball: Fast Ball 
-Level: 30
+Level: 35
 EVs: 192 HP / 192 SpA
 Modest Nature
 IVs: 0 Atk  
@@ -8274,7 +8276,7 @@ IVs: 0 Atk
 Kilowattrel @ Electric Seed  
 Ability: Volt Absorb  
 Ball: Fast Ball 
-Level: 29
+Level: 35
 EVs: 192 Atk / 192 Spe  
 Jolly Nature  
 - Supercell Slam  
@@ -8285,7 +8287,7 @@ Jolly Nature
 Regieleki @ Petaya Berry
 Ability: Transistor  
 Ball: Fast Ball 
-Level: 30
+Level: 34
 Tera Type: Ice /*IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe / HP Ice IVs for Max Atk */
 EVs: 128 HP / 64 Def / 128 SpA / 64 Spe  
 Mild Nature  
@@ -8297,7 +8299,7 @@ Mild Nature
 Manectric @ Manectite  
 Ability: Static   
 Ball: Fast Ball 
-Level: 30
+Level: 35
 IVs: 0 Atk  
 EVs: 192 SpA / 192 Spe  
 Modest Nature  
@@ -8309,7 +8311,7 @@ Modest Nature
 Cryogonal @ Light Clay  
 Ability: Levitate  
 Ball: Fast Ball 
-Level: 29
+Level: 35
 EVs: 192 Def / 128 SpD / 128 Spe  
 Calm Nature  
 IVs: 0 Atk  
@@ -10949,7 +10951,7 @@ Starting Status: STARTING_STATUS_GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Raboot  
-Level: 26
+Level: 36
 Ability: Blaze  
 Tera Type: Fire  
 - Acrobatics  
@@ -10958,7 +10960,7 @@ Tera Type: Fire
 - Flame Charge  
 
 Grapploct @ Power Herb  
-Level: 26
+Level: 32
 Ability: Limber  
 Tera Type: Fighting  
 - Coaching  
@@ -10967,7 +10969,7 @@ Tera Type: Fighting
 - Dive  
 
 Doduo 
-Level: 26
+Level: 38
 Ability: Run Away  
 Tera Type: Normal  
 - Acrobatics  
@@ -10976,7 +10978,7 @@ Tera Type: Normal
 - Quick Attack  
 
 Linoone  
-Level: 26
+Level: 31
 Ability: Pickup  
 Tera Type: Normal  
 - Extreme Speed  
@@ -16147,7 +16149,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Elekid  
 Ability: Static  
-Level: 36  
+Level: 37 
 Tera Type: Electric  
 EVs: 252 HP / 252 Atk  
 - Cross Chop  
@@ -16157,7 +16159,7 @@ EVs: 252 HP / 252 Atk
 
 Magby @ Sitrus Berry  
 Ability: Flame Body  
-Level: 36  
+Level: 37  
 Tera Type: Fire  
 EVs: 124 HP / 192 Atk / 192 SpA  
 - Belch  
@@ -16167,7 +16169,7 @@ EVs: 124 HP / 192 Atk / 192 SpA
 
 Igglybuff  
 Ability: Cute Charm  
-Level: 35  
+Level: 38  
 Tera Type: Normal  
 EVs: 252 Atk / 128 Def / 128 SpD  
 - Covet  
@@ -16177,7 +16179,7 @@ EVs: 252 Atk / 128 Def / 128 SpD
 
 Togepi  
 Ability: Hustle  
-Level: 35  
+Level: 37  
 Tera Type: Fairy  
 EVs: 252 HP / 64 Atk / 192 SpA  
 - Extrasensory  
@@ -16187,7 +16189,7 @@ EVs: 252 HP / 64 Atk / 192 SpA
 
 Mantyke  
 Ability: Swift Swim  
-Level: 35  
+Level: 38  
 Tera Type: Water  
 EVs: 252 HP / 252 Atk  
 - Slam  
@@ -16414,9 +16416,9 @@ Double Battle: Yes
 Starting Status: STARTING_STATUS_GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Budew  
+Budew @ Wide Lens
 Ability: Natural Cure  
-Level: 35  
+Level: 37  
 Tera Type: Grass  
 EVs: 252 HP / 252 SpA  
 - Extrasensory  
@@ -16424,9 +16426,9 @@ EVs: 252 HP / 252 SpA
 - Life Dew  
 - Sleep Powder  
 
-Cleffa  
+Cleffa  @ Starf Berry
 Ability: Cute Charm  
-Level: 35  
+Level: 37  
 Tera Type: Fairy  
 EVs: 252 HP / 128 Atk / 128 SpA  
 - Metronome  
@@ -16434,9 +16436,9 @@ EVs: 252 HP / 128 Atk / 128 SpA
 - Covet  
 - Amnesia  
 
-Pichu  
+Pichu  @ Light Ball
 Ability: Lightning Rod  
-Level: 35  
+Level: 36  
 Tera Type: Electric  
 EVs: 252 HP / 252 Atk  
 - Disarming Voice  
@@ -16446,7 +16448,7 @@ EVs: 252 HP / 252 Atk
 
 Smoochum (F)  
 Ability: Oblivious  
-Level: 35  
+Level: 37  
 Tera Type: Ice  
 EVs: 252 HP / 252 Atk  
 Adamant Nature  
@@ -16457,7 +16459,7 @@ Adamant Nature
 
 Azurill @ Sitrus Berry  
 Ability: Thick Fat  
-Level: 35  
+Level: 37  
 Tera Type: Normal  
 EVs: 252 HP / 252 Atk  
 - Aqua Jet  
@@ -19777,7 +19779,7 @@ Magneton @ Shuca Berry
 Ability: Magnet Pull  
 Level: 31
 Tera Type: Ground
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 128 SpA / 128 Spe  
 IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */
 Timid Nature  
 - Discharge  
@@ -19788,7 +19790,7 @@ Timid Nature
 Gabite @ Rocky Helmet  
 Ability: Rough Skin  
 Level: 31
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 128 Atk / 4 SpD / 128 Spe  
 Jolly Nature  
 - Earthquake  
 - Dig  
@@ -19798,7 +19800,7 @@ Jolly Nature
 Roselia @ Eviolite  
 Ability: Poison Point  
 Level: 31
-EVs: 252 HP / 252 SpA / 4 SpD  
+EVs: 128 HP / 128 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
 - Dazzling Gleam  
@@ -19809,7 +19811,7 @@ IVs: 0 Atk
 Delcatty @ Normal Gem  
 Ability: Wonder Skin  
 Level: 31
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 128 Atk / 4 SpD / 128 Spe  
 Jolly Nature  
 - Fake Out  
 - Heal Bell  
@@ -23484,7 +23486,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Munna  
 Ability: Synchronize  
-Level: 28
+Level: 36
 Tera Type: Psychic  
 IVs: 0 Atk  
 - Hypnosis  
@@ -23493,7 +23495,7 @@ IVs: 0 Atk
 - Dazzling Gleam  
 
 Natu  
-Level: 28
+Level: 36
 Ability: Magic Bounce  
 Tera Type: Psychic  
 IVs: 0 Atk  
@@ -23503,7 +23505,7 @@ IVs: 0 Atk
 - Reflect  
 
 Solosis   /* REUSED SET */
-Level: 28
+Level: 36
 Ability: Magic Guard  
 Tera Type: Fighting  
 IVs: 0 Atk  
@@ -23523,7 +23525,7 @@ Starting Status: STARTING_STATUS_GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Cranidos  
-Level: 27
+Level: 36
 Ability: Sheer Force  
 Tera Type: Rock  
 - Fire Punch  
@@ -23533,7 +23535,7 @@ Tera Type: Rock
 
 
 Jangmo-o   
-Level: 27
+Level: 36
 Ability: Bulletproof  
 Tera Type: Dragon  
 - Brick Break  
@@ -23543,7 +23545,7 @@ Tera Type: Dragon
 
 
 Monferno   
-Level: 27
+Level: 34
 Ability: Iron Fist  
 Tera Type: Fire  
 - Fire Punch  

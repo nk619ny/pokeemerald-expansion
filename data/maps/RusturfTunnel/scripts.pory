@@ -535,9 +535,6 @@ RusturfTunnel_Text_MikePostBattle:
 
 `
 
-const LOCALID_RUSTURF_TUNNEL_AQUAADMIN = 9
-const LOCALID_RUSTURF_TUNNEL_GRUNT1 = 5
-const LOCALID_RUSTURF_TUNNEL_GRUNT2 = 12
 const TempVar_WandaDialogue = VAR_TEMP_4
 
 script RusturfTunnel_EventScript_WandasBoyfriend {
@@ -550,7 +547,7 @@ script RusturfTunnel_EventScript_ClearOutAqua{
 	setflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
 	clearflag(FLAG_HIDE_MAUVILLE_CITY_WALLY)
 	fadescreenswapbuffers(FADE_TO_BLACK)
-	removeobject(LOCALID_RUSTURF_TUNNEL_AQUAADMIN)
+	removeobject(LOCALID_RUSTURF_TUNNEL_MATT)
 	removeobject(LOCALID_RUSTURF_TUNNEL_GRUNT1)
 	removeobject(LOCALID_RUSTURF_TUNNEL_GRUNT2)
 	fadescreenswapbuffers(FADE_FROM_BLACK)

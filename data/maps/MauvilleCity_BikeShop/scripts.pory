@@ -97,7 +97,7 @@ MauvilleCity_BikeShop_EventScript_SwitchMachForAcro::
 	goto MauvilleCity_BikeShop_EventScript_ComeBackToSwitchBikes
 	end
 
-MauvilleCity_BikeShop_EventScript_Assistant::
+MauvilleCity_BikeShop_EventScript_Assistant_Previous::
 	msgbox MauvilleCity_BikeShop_Text_HandbooksAreInBack, MSGBOX_NPC
 	end
 
@@ -350,5 +350,22 @@ script MauvilleCity_BikeShop_EventScript_AlreadyHaveBikes {
 	msgbox(MauvilleCity_BikeShop_Text_HaveBothBikes)
 	waitmessage
 	release
+	end
+}
+
+script MauvilleCity_BikeShop_EventScript_Assistant {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_U_TURN)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I love making sharp turns on my bike so much, I taught my Pokemon how to do it, too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_U_TURN)
+		waitfanfare
+	}
+	else{
+		goto(MauvilleCity_BikeShop_EventScript_Assistant_Previous)
+	}
+	releaseall
 	end
 }
