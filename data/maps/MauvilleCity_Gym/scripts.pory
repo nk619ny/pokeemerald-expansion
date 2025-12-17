@@ -426,8 +426,90 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 	.string "POKéMON, all right?$"
 `
 
-const LOCALID_GYMGUIDE = 6
-const TempVar_TriggerSquare = VAR_TEMP_2
+const TempVar_Switch1 = VAR_TEMP_1
+const TempVar_Switch2 = VAR_TEMP_2
+const TempVar_Switch3 = VAR_TEMP_3
+const TempVar_Switch4 = VAR_TEMP_4
+const TempVar_TriggerSquare = VAR_TEMP_6
+const TempVar_CheckGymGuideStop = VAR_TEMP_7
+
+script MauvilleCity_Gym_EventScript_Switch1New {
+	lockall
+	goto_if_set(FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing)
+	setvar(TempVar_Switch1, 1)
+	setvar(VAR_0x8004, 0)
+	setmetatile(0, 15, METATILE_MauvilleGym_PressedSwitch, FALSE)
+	setmetatile(1, 10, METATILE_MauvilleGym_GreenBeamH1_Off, FALSE)
+	setmetatile(2, 10, METATILE_MauvilleGym_GreenBeamH2_Off, FALSE)
+	setmetatile(1, 11, METATILE_MauvilleGym_GreenBeamH3_Off, FALSE)
+	setmetatile(2, 11, METATILE_MauvilleGym_GreenBeamH4_Off, FALSE)
+	setmetatile(4, 10, METATILE_MauvilleGym_RedBeamH1_Off, FALSE)
+	setmetatile(5, 10, METATILE_MauvilleGym_RedBeamH2_Off, FALSE)
+	setmetatile(4, 11, METATILE_MauvilleGym_RedBeamH3_Off, FALSE)
+	setmetatile(5, 11, METATILE_MauvilleGym_RedBeamH4_Off, FALSE)
+	//special(MauvilleGymPressSwitch)
+	special(DrawWholeMapView)
+	playse(SE_UNLOCK)
+	releaseall
+}
+
+script MauvilleCity_Gym_EventScript_Switch2New {
+	lockall
+	goto_if_set(FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing)
+	setvar(TempVar_Switch2, 1)
+	setvar(VAR_0x8004, 0)
+	setmetatile(6, 12, METATILE_MauvilleGym_PressedSwitch, FALSE)
+	setmetatile(4, 8, METATILE_MauvilleGym_GreenBeamH1_Off, FALSE)
+	setmetatile(5, 8, METATILE_MauvilleGym_GreenBeamH2_Off, FALSE)
+	setmetatile(4, 7, METATILE_MauvilleGym_GreenBeamH3_Off, FALSE)
+	setmetatile(5, 7, METATILE_MauvilleGym_GreenBeamH4_Off, FALSE)
+	setmetatile(7, 10, METATILE_MauvilleGym_RedBeamH1_Off, FALSE)
+	setmetatile(8, 10, METATILE_MauvilleGym_RedBeamH2_Off, FALSE)
+	setmetatile(7, 11, METATILE_MauvilleGym_RedBeamH3_Off, FALSE)
+	setmetatile(8, 11, METATILE_MauvilleGym_RedBeamH4_Off, FALSE)
+	//special(MauvilleGymPressSwitch)
+	special(DrawWholeMapView)
+	playse(SE_UNLOCK)
+	releaseall
+}
+
+script MauvilleCity_Gym_EventScript_Switch3New {
+	lockall
+	goto_if_set(FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing)
+	setvar(TempVar_Switch3, 1)
+	setvar(VAR_0x8004, 0)
+	setmetatile(3, 9, METATILE_MauvilleGym_PressedSwitch, FALSE)
+	setmetatile(6, 8, METATILE_MauvilleGym_PoleBottom_Off, FALSE)
+	setmetatile(6, 9, METATILE_MauvilleGym_FloorTile, FALSE)
+	setmetatile(6, 10, METATILE_MauvilleGym_PoleTop_Off, FALSE)
+	setmetatile(3, 11, METATILE_MauvilleGym_PoleBottom_Off, FALSE)
+	setmetatile(3, 12, METATILE_MauvilleGym_FloorTile, FALSE)
+	setmetatile(3, 13, METATILE_MauvilleGym_PoleTop_Off, FALSE)
+	//special(MauvilleGymPressSwitch)
+	special(DrawWholeMapView)
+	playse(SE_UNLOCK)
+	releaseall
+}
+
+script MauvilleCity_Gym_EventScript_Switch4New {
+	lockall
+	goto_if_set(FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_SwitchDoNothing)
+	setvar(TempVar_Switch4, 1)
+	setvar(VAR_0x8004, 0)
+	setmetatile(8, 9, METATILE_MauvilleGym_PressedSwitch, FALSE)
+	setmetatile(4, 6, METATILE_MauvilleGym_RedBeamH1_Off, FALSE)
+	setmetatile(5, 6, METATILE_MauvilleGym_RedBeamH2_Off, FALSE)
+	setmetatile(4, 5, METATILE_MauvilleGym_RedBeamH3_Off, FALSE)
+	setmetatile(5, 5, METATILE_MauvilleGym_RedBeamH4_Off, FALSE)
+	setmetatile(4, 13, METATILE_MauvilleGym_GreenBeamH1_Off, FALSE)
+	setmetatile(5, 13, METATILE_MauvilleGym_GreenBeamH2_Off, FALSE)
+	setmetatile(4, 14, METATILE_MauvilleGym_GreenBeamH3_Off, FALSE)
+	setmetatile(5, 14, METATILE_MauvilleGym_GreenBeamH4_Off, FALSE)
+	//special(MauvilleGymPressSwitch)
+	special(DrawWholeMapView)
+	playse(SE_UNLOCK)
+	releaseall
+}
 
 script MauvilleCity_Gym_EventScript_SetNewLevelCap {
 //	setvar(VAR_LEVEL_HANDICAP, 5)
@@ -496,24 +578,24 @@ script MauvilleCity_Gym_EventScript_HaltPlayerTrigger9 {
 script MauvilleCity_Gym_EventScript_HaltPlayer {
 	lockall
 	if(flag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)){
-		setvar(VAR_TEMP_3,1)
+		setvar(TempVar_CheckGymGuideStop,1)
 		releaseall
 		end
 	}
-	applymovement(LOCALID_GYMGUIDE, Common_Movement_ExclamationMark)
+	applymovement(LOCALID_MAUVILLEGYM_GUIDE, Common_Movement_ExclamationMark)
 	waitmovement(0)
 	setflag(FLAG_TEMP_HIDE_FOLLOWER)
 	switch(var(TempVar_TriggerSquare)){
 		case 5:
 			delay(5)
 		case 6:
-			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer6)
+			applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer6)
 		case 7:
-			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer7)
+			applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer7)
 		case 8:
-			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer8)
+			applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer8)
 		case 9:
-			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer9)
+			applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuideHaltPlayer9)
 	}
 	waitmovement(0)
 	turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
@@ -522,25 +604,25 @@ script MauvilleCity_Gym_EventScript_HaltPlayer {
 	setflag(FLAG_TEMP_E)
 	msgbox(MauvilleCity_Gym_Text_GymGuideHaltPlayer,MSGBOX_NPC)
 	waitmessage
-	applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuidePushPlayer)
+	applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuidePushPlayer)
 	applymovement(OBJ_EVENT_ID_PLAYER, MauvilleCity_Gym_Movement_Player_ForcedDown)
 	waitmovement(0)
 	delay(10)
 	switch(var(TempVar_TriggerSquare)){
 		case 5:
-			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot5)
+			applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot5)
 		case 6:
-			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot6)
+			applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot6)
 		case 7:
-			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot7)
+			applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot7)
 		case 8:
-			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot8)
+			applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot8)
 		case 9:
-			applymovement(LOCALID_GYMGUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot9)
+			applymovement(LOCALID_MAUVILLEGYM_GUIDE, MauvilleCity_Gym_Movement_GymGuideReturnToSpot9)
 	}
 	waitmovement(0)
 	delay(20)
-	applymovement(LOCALID_GYMGUIDE, Common_Movement_FaceLeft)
+	applymovement(LOCALID_MAUVILLEGYM_GUIDE, Common_Movement_FaceLeft)
 	waitmovement(0)
 	clearflag(FLAG_TEMP_HIDE_FOLLOWER)
 	clearflag(FLAG_TEMP_E)

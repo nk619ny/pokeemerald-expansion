@@ -6096,7 +6096,7 @@ Plusle @ Focus Sash
 Level: 33
 Ability: Plus  
 Tera Type: Electric  
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 64 SpA / 4 SpD / 64 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Shock Wave  
@@ -6108,7 +6108,7 @@ Minun @ Shuca Berry
 Level: 33
 Ability: Minus  
 Tera Type: Electric  
-EVs: 252 HP / 4 SpA / 252 Spe  
+EVs: 64 HP / 4 SpA / 64 Spe  
 Hasty Nature  
 - Shock Wave  
 - Encore  
@@ -6119,7 +6119,7 @@ Klang @ Air Balloon
 Level: 36
 Ability: Minus  
 Tera Type: Ice  
-EVs: 252 HP / 252 SpA / 4 SpD  
+EVs: 64 HP / 64 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
 - Charge Beam  
@@ -6131,7 +6131,7 @@ Dedenne @ Big Root
 Level: 33
 Ability: Plus  
 Tera Type: Electric  
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 64 SpA / 64 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Draining Kiss  
@@ -8253,7 +8253,7 @@ Rotom-Heat
 Ability: Levitate 
 Ball: Fast Ball 
 Level: 35
-EVs: 192 HP / 192 SpA 
+EVs: 128 HP / 128 SpA 
 Modest Nature  
 IVs: 0 Atk  
 - Discharge  
@@ -8264,8 +8264,8 @@ IVs: 0 Atk
 Lanturn @ Rindo Berry
 Ability: Volt Absorb  
 Ball: Fast Ball 
-Level: 35
-EVs: 192 HP / 192 SpA
+Level: 34
+EVs: 128 HP / 128 SpA
 Modest Nature
 IVs: 0 Atk  
 - Scald  
@@ -8276,8 +8276,8 @@ IVs: 0 Atk
 Kilowattrel @ Electric Seed  
 Ability: Volt Absorb  
 Ball: Fast Ball 
-Level: 35
-EVs: 192 Atk / 192 Spe  
+Level: 34
+EVs: 128 Atk / 128 Spe  
 Jolly Nature  
 - Supercell Slam  
 - Acrobatics  
@@ -8289,7 +8289,7 @@ Ability: Transistor
 Ball: Fast Ball 
 Level: 34
 Tera Type: Ice /*IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe / HP Ice IVs for Max Atk */
-EVs: 128 HP / 64 Def / 128 SpA / 64 Spe  
+EVs: 64 HP / 4 Def / 64 SpA / 4 Spe  
 Mild Nature  
 - Thunder Cage  
 - Volt Switch  
@@ -8301,7 +8301,7 @@ Ability: Static
 Ball: Fast Ball 
 Level: 35
 IVs: 0 Atk  
-EVs: 192 SpA / 192 Spe  
+EVs: 128 SpA / 128 Spe  
 Modest Nature  
 - Volt Switch  
 - Discharge  
@@ -8312,7 +8312,7 @@ Cryogonal @ Light Clay
 Ability: Levitate  
 Ball: Fast Ball 
 Level: 35
-EVs: 192 Def / 128 SpD / 128 Spe  
+EVs: 128 Def / 64 SpD / 64 Spe  
 Calm Nature  
 IVs: 0 Atk  
 - Freeze-Dry  
@@ -8323,7 +8323,7 @@ IVs: 0 Atk
 /* Baxcalibur  
 Ability: Thermal Exchange  
 Level: 36
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 128 Atk / 128 Spe  
 Jolly Nature  
 - Dragon Claw  
 - Avalanche  
@@ -9779,16 +9779,16 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEN === /* Mauville Gym */
 Name: BEN
-Class: Youngster
-Pic: Youngster
+Class: Collector
+Pic: Collector
 Gender: Male
-Music: Male
+Music: Suspicious
 Double Battle: Yes
 Starting Status: STARTING_STATUS_ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Beldum  
-Level: 38
+Level: 39
 Ability: Rock Head  
 Tera Type: Steel  
 - Take Down  
@@ -9797,7 +9797,7 @@ Tera Type: Steel
 - Iron Defense  
 
 Yamper  
-Level: 36
+Level: 39
 Ability: Strong Jaw  
 Tera Type: Electric  
 - Thunder Fang  
@@ -19515,7 +19515,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 
 Meowth-Galar  
-Level: 37
+Level: 38
 Ability: Unnerve  
 Tera Type: Electric  
 - Metal Claw  
@@ -19524,7 +19524,7 @@ Tera Type: Electric
 - Steelsurge  
 
 Magnemite @ Shuca Berry  
-Level: 37
+Level: 40
 Ability: Magnet Pull  
 Tera Type: Electric  
 IVs: 0 Atk  
@@ -19536,6 +19536,7 @@ IVs: 0 Atk
 Duraludon  
 Level: 33
 Ability: Stalwart  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tera Type: Steel  
 - Steel Roller  
 - Breaking Swipe  
@@ -19543,7 +19544,7 @@ Tera Type: Steel
 - Mirror Coat  
 
 Lairon  
-Level: 35
+Level: 36
 Ability: Sturdy  
 Tera Type: Steel  
 - Headbutt  
