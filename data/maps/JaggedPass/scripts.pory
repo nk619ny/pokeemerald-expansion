@@ -268,3 +268,22 @@ JaggedPass_Text_AutumnPostBattle:
 	.string "a little up the hill from here?$"
 
 `
+
+
+script JaggedPass_EventScript_RockSlideHiker {
+	lock
+    faceplayer
+    checkitem(ITEM_TM_ROCK_SLIDE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Jagged Pass is dangerous because wild Pokémon can cause rock slides.\pYour Pokémon can, too, so be courteous!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_ROCK_SLIDE)
+		waitfanfare
+	}
+	else {
+		msgbox(format("Watch your step, here."), MSGBOX_DEFAULT)
+		closemessage
+	}
+	releaseall
+	end
+}

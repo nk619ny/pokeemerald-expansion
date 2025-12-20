@@ -1,0 +1,17 @@
+mapscripts PetalburgWoods2_MapScripts{}
+
+script PetalburgWoods2_EventScript_StrugglingBugCatcher {
+    lock
+    faceplayer
+    msgbox(format("Bugs have a way of wriggling out of danger. I think it's pretty impressive!"))
+    closemessage
+    checkitem(ITEM_TM_STRUGGLE_BUG)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("You should make sure even your weak Pokémon can always put up a fight."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_STRUGGLE_BUG)
+		waitfanfare
+	}
+	releaseall
+	end
+}

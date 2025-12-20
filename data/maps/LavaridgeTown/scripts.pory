@@ -227,10 +227,6 @@ LavaridgeTown_EventScript_HotSpringsOldWoman1::
 	msgbox LavaridgeTown_Text_IfPokemonInHotSprings, MSGBOX_NPC
 	end
 
-LavaridgeTown_EventScript_HotSpringsOldWoman2::
-	msgbox LavaridgeTown_Text_HotSpringsClaims, MSGBOX_NPC
-	end
-
 LavaridgeTown_EventScript_ExpertF::
 	msgbox LavaridgeTown_Text_OhYouLikeHotSprings, MSGBOX_NPC
 	end
@@ -435,4 +431,25 @@ script LavaridgeTown_Script_RivalNewScript {
 	msgbox(LavaridgeTown_Text_RivalSomethingGoingOnMtChimney, MSGBOX_DEFAULT)
 	waitmessage
 	return
+}
+
+
+
+
+script LavaridgeTown_EventScript_HotSpringsOldWoman2 {
+	lock
+    faceplayer
+    checkitem(ITEM_TM_SCALD)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("The Hot Springs are the perfect temperature. Any hotter and it might be dangerous!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_SCALD)
+		waitfanfare
+	}
+	else {
+		msgbox(LavaridgeTown_Text_HotSpringsClaims, MSGBOX_NPC)
+		closemessage
+	}
+	releaseall
+	end
 }
