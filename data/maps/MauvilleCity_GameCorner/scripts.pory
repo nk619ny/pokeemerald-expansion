@@ -781,8 +781,8 @@ MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 	.string "a COIN CASE.$"
 
 `
-const LOCALID_GIMMIGHOUL = 13
-const LOCALID_SCOTT = 14
+//const LOCALID_GIMMIGHOUL = 13
+//const LOCALID_GAMECORNER_SCOTT = 14
 const TempVar_CurrentCoins = VAR_TEMP_2
 const TempVar_PrizeToBuy = VAR_TEMP_3
 const TempVar_PrizePrice = VAR_TEMP_4
@@ -800,19 +800,6 @@ script MauvilleCity_GameCorner_EventScript_CoinsClerk {
 		msgbox(format("Oh - you have coins already somehow?\pWell... I guess there is no rule against a child exchanging coins they already have for prizes."))
 	}
 	closemessage	
-	releaseall
-	end
-}
-
-script MauvilleCity_GameCorner_EventScript_GimmighoulEncounter {
-	lock
-	setflag(FLAG_HIDE_GIMMIGHOUL)
-	delay(40)
-	playmoncry(SPECIES_GIMMIGHOUL,CRY_MODE_ENCOUNTER)
-	waitmoncry
-	setwildbattle(SPECIES_GIMMIGHOUL, 50, ITEM_BIG_NUGGET)
-	dowildbattle
-	removeobject(LOCALID_GIMMIGHOUL)
 	releaseall
 	end
 }
@@ -839,14 +826,14 @@ script MauvilleCity_GameCorner_EventScript_Scott {
 	setflag(FLAG_RECEIVED_COIN_CASE)
 	switch(var(VAR_FACING)){
 		case DIR_NORTH:
-			applymovement(LOCALID_SCOTT, MauvilleCity_GameCorner_Movement_ScottLeaveLeft)
+			applymovement(LOCALID_GAMECORNER_SCOTT, MauvilleCity_GameCorner_Movement_ScottLeaveLeft)
 		case DIR_EAST:
-			applymovement(LOCALID_SCOTT, MauvilleCity_GameCorner_Movement_ScottLeave)
+			applymovement(LOCALID_GAMECORNER_SCOTT, MauvilleCity_GameCorner_Movement_ScottLeave)
 		case DIR_WEST:
-			applymovement(LOCALID_SCOTT, MauvilleCity_GameCorner_Movement_ScottLeave)
+			applymovement(LOCALID_GAMECORNER_SCOTT, MauvilleCity_GameCorner_Movement_ScottLeave)
 	}
 	waitmovement(0)
-	removeobject(LOCALID_SCOTT)
+	removeobject(LOCALID_GAMECORNER_SCOTT)
 	releaseall
 	end
 }

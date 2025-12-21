@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_FARM_AQUAADMIN",
       "graphics_id": "OBJ_EVENT_GFX_SHELLY_ORAS",
       "x": 18,
       "y": 38,
@@ -28,6 +29,7 @@
       "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     },
     {
+      "local_id": "LOCALID_FARM_MAGMAADMIN",
       "graphics_id": "OBJ_EVENT_GFX_TABITHA_ORAS",
       "x": 18,
       "y": 35,
@@ -67,6 +69,7 @@
       "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     },
     {
+      "local_id": "LOCALID_FARM_BRAWLY",
       "graphics_id": "OBJ_EVENT_GFX_BRAWLY_ORAS",
       "x": 12,
       "y": 37,
@@ -80,6 +83,7 @@
       "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     },
     {
+      "local_id": "LOCALID_FARM_MAGMAMULTIGRUNT",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
       "x": 27,
       "y": 35,
@@ -93,6 +97,7 @@
       "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     },
     {
+      "local_id": "LOCALID_FARM_AQUAMULTIGRUNT",
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
       "x": 27,
       "y": 38,
@@ -106,6 +111,7 @@
       "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     },
     {
+      "local_id": "LOCALID_FARM_AQUAGRUNTBOMBER",
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
       "x": 33,
       "y": 35,
@@ -366,6 +372,7 @@
       "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     },
     {
+      "local_id": "LOCALID_FARM_ELECTRODEFARLEFT",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUI)",
       "x": 16,
       "y": 36,
@@ -379,6 +386,7 @@
       "flag": "FLAG_HIDDEN_BY_DEFAULT"
     },
     {
+      "local_id": "LOCALID_FARM_ELECTRODECENTERRIGHT",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUI)",
       "x": 20,
       "y": 36,
@@ -392,6 +400,7 @@
       "flag": "FLAG_HIDDEN_BY_DEFAULT"
     },
     {
+      "local_id": "LOCALID_FARM_ELECTRODECENTERLEFT",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUI)",
       "x": 18,
       "y": 36,
@@ -405,6 +414,7 @@
       "flag": "FLAG_HIDDEN_BY_DEFAULT"
     },
     {
+      "local_id": "LOCALID_FARM_ELECTRODEFARRIGHT",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ELECTRODE_HISUI)",
       "x": 22,
       "y": 36,

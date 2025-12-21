@@ -19250,7 +19250,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 90,
         .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 55 : 90,
         .types = MON_TYPES(TYPE_ROCK, TYPE_WATER),
-        .catchRate = 45,
+        .catchRate = 80,
     #if P_UPDATED_EXP_YIELDS >= GEN_5
         .expYield = 71,
     #elif P_UPDATED_EXP_YIELDS >= GEN_4
@@ -19400,7 +19400,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 55 : 45,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_ROCK, TYPE_WATER),
-        .catchRate = 45,
+        .catchRate = 80,
     #if P_UPDATED_EXP_YIELDS >= GEN_5
         .expYield = 71,
     #elif P_UPDATED_EXP_YIELDS >= GEN_4
