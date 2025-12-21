@@ -2390,11 +2390,11 @@ Route101_EventScript_PeekoCutscene::
 # 1201 "data/maps/Route104/scripts.pory"
 	special SpawnCameraObject
 # 1202 "data/maps/Route104/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraPan
+	applymovement OBJ_EVENT_ID_CAMERA, Route104_Cutscene_CameraPan
 # 1203 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1204 "data/maps/Route104/scripts.pory"
-	applymovement 35, Common_Movement_WalkInPlaceRight
+	applymovement LOCALID_ROUTE104_BRINEY_NEW, Common_Movement_WalkInPlaceRight
 # 1205 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1206 "data/maps/Route104/scripts.pory"
@@ -2402,7 +2402,7 @@ Route101_EventScript_PeekoCutscene::
 # 1207 "data/maps/Route104/scripts.pory"
 	waitmessage
 # 1208 "data/maps/Route104/scripts.pory"
-	applymovement 36, Common_Movement_WalkInPlaceLeft
+	applymovement LOCALID_ROUTE104_GRUNT, Common_Movement_WalkInPlaceLeft
 # 1209 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1210 "data/maps/Route104/scripts.pory"
@@ -2410,7 +2410,7 @@ Route101_EventScript_PeekoCutscene::
 # 1211 "data/maps/Route104/scripts.pory"
 	waitmessage
 # 1212 "data/maps/Route104/scripts.pory"
-	applymovement 35, Common_Movement_WalkInPlaceRight
+	applymovement LOCALID_ROUTE104_BRINEY_NEW, Common_Movement_WalkInPlaceRight
 # 1213 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1214 "data/maps/Route104/scripts.pory"
@@ -2418,7 +2418,7 @@ Route101_EventScript_PeekoCutscene::
 # 1215 "data/maps/Route104/scripts.pory"
 	waitmessage
 # 1216 "data/maps/Route104/scripts.pory"
-	applymovement 36, Common_Movement_WalkInPlaceLeft
+	applymovement LOCALID_ROUTE104_GRUNT, Common_Movement_WalkInPlaceLeft
 # 1217 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1218 "data/maps/Route104/scripts.pory"
@@ -2426,13 +2426,13 @@ Route101_EventScript_PeekoCutscene::
 # 1219 "data/maps/Route104/scripts.pory"
 	waitmessage
 # 1220 "data/maps/Route104/scripts.pory"
-	applymovement 36, Route101_Cutscene_GruntApproachPeeko
+	applymovement LOCALID_ROUTE104_GRUNT, Route104_Cutscene_GruntApproachPeeko
 # 1221 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1222 "data/maps/Route104/scripts.pory"
-	removeobject 37
+	removeobject LOCALID_ROUTE104_PEEKO
 # 1223 "data/maps/Route104/scripts.pory"
-	applymovement 35, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_ROUTE104_BRINEY_NEW, Common_Movement_WalkInPlaceDown
 # 1224 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1225 "data/maps/Route104/scripts.pory"
@@ -2440,11 +2440,11 @@ Route101_EventScript_PeekoCutscene::
 # 1226 "data/maps/Route104/scripts.pory"
 	waitmessage
 # 1227 "data/maps/Route104/scripts.pory"
-	applymovement 36, Route101_Cutscene_GruntFlees
+	applymovement LOCALID_ROUTE104_GRUNT, Route104_Cutscene_GruntFlees
 # 1228 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1229 "data/maps/Route104/scripts.pory"
-	removeobject 36
+	removeobject LOCALID_ROUTE104_GRUNT
 # 1230 "data/maps/Route104/scripts.pory"
 	setflag FLAG_HIDE_104_GRUNT_AND_PEEKO
 # 1231 "data/maps/Route104/scripts.pory"
@@ -2452,7 +2452,7 @@ Route101_EventScript_PeekoCutscene::
 # 1232 "data/maps/Route104/scripts.pory"
 	delay 20
 # 1233 "data/maps/Route104/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraRevert
+	applymovement OBJ_EVENT_ID_CAMERA, Route104_Cutscene_CameraRevert
 # 1234 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 1235 "data/maps/Route104/scripts.pory"
@@ -2463,7 +2463,7 @@ Route101_EventScript_PeekoCutscene::
 
 
 # 1241 "data/maps/Route104/scripts.pory"
-Route101_Cutscene_CameraPan:
+Route104_Cutscene_CameraPan:
 # 1242 "data/maps/Route104/scripts.pory"
 	walk_fast_left
 # 1242 "data/maps/Route104/scripts.pory"
@@ -2503,7 +2503,7 @@ Route101_Cutscene_CameraPan:
 	step_end
 
 # 1246 "data/maps/Route104/scripts.pory"
-Route101_Cutscene_GruntApproachPeeko:
+Route104_Cutscene_GruntApproachPeeko:
 # 1247 "data/maps/Route104/scripts.pory"
 	walk_fast_down
 # 1248 "data/maps/Route104/scripts.pory"
@@ -2511,7 +2511,7 @@ Route101_Cutscene_GruntApproachPeeko:
 	step_end
 
 # 1251 "data/maps/Route104/scripts.pory"
-Route101_Cutscene_GruntFlees:
+Route104_Cutscene_GruntFlees:
 # 1252 "data/maps/Route104/scripts.pory"
 	walk_fast_right
 # 1252 "data/maps/Route104/scripts.pory"
@@ -2541,7 +2541,7 @@ Route101_Cutscene_GruntFlees:
 	step_end
 
 # 1256 "data/maps/Route104/scripts.pory"
-Route101_Cutscene_CameraRevert:
+Route104_Cutscene_CameraRevert:
 # 1257 "data/maps/Route104/scripts.pory"
 	walk_fast_right
 # 1257 "data/maps/Route104/scripts.pory"
@@ -2633,7 +2633,7 @@ Route101_EventScript_PeekoCutscene_Text_2:
 # 1214 "data/maps/Route104/scripts.pory"
 	.string "What?\n"
 	.string "That's nonsense.\l"
-	.string "Peeko's never made the weather change!$"
+	.string "Peeko's never changed the weather!$"
 
 Route101_EventScript_PeekoCutscene_Text_3:
 # 1218 "data/maps/Route104/scripts.pory"

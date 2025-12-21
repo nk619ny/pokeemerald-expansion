@@ -739,74 +739,85 @@ Route101_RivalDefeated::
 # 376 "data/maps/Route101/scripts.pory"
 	lockall
 # 377 "data/maps/Route101/scripts.pory"
-	msgbox Route101_RivalDefeated_Text_0
+	msgbox Route101_RivalDefeated_Text_0, MSGBOX_DEFAULT
 # 378 "data/maps/Route101/scripts.pory"
-	waitmessage
+	giveitem ITEM_POKE_BALL, 20
 # 379 "data/maps/Route101/scripts.pory"
-	applymovement LOCALID_ROUTE101_RIVAL, Route101_RivalDeparture
+	waitfanfare
 # 380 "data/maps/Route101/scripts.pory"
-	waitmovement 0
+	msgbox Route101_RivalDefeated_Text_1, MSGBOX_DEFAULT
 # 381 "data/maps/Route101/scripts.pory"
-	removeobject LOCALID_ROUTE101_RIVAL
+	waitmessage
 # 382 "data/maps/Route101/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_103_RIVAL
+	applymovement LOCALID_ROUTE101_RIVAL, Route101_RivalDeparture
 # 383 "data/maps/Route101/scripts.pory"
-	setflag FLAG_DEFEATED_RIVAL_ROUTE103
+	waitmovement 0
 # 384 "data/maps/Route101/scripts.pory"
-	setvar VAR_OLDALE_RIVAL_STATE, 2
+	removeobject LOCALID_ROUTE101_RIVAL
 # 385 "data/maps/Route101/scripts.pory"
-	setvar VAR_PETALBURG_GYM_STATE, 0
+	setflag FLAG_HIDE_ROUTE_103_RIVAL
 # 386 "data/maps/Route101/scripts.pory"
-	setvar VAR_LEVEL_CAP, 13
+	setflag FLAG_DEFEATED_RIVAL_ROUTE103
 # 387 "data/maps/Route101/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	setvar VAR_OLDALE_RIVAL_STATE, 2
 # 388 "data/maps/Route101/scripts.pory"
-	call Common_EventScript_LevelCapUpdate
+	setvar VAR_PETALBURG_GYM_STATE, 0
 # 389 "data/maps/Route101/scripts.pory"
+	setvar VAR_LEVEL_CAP, 13
+# 390 "data/maps/Route101/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 391 "data/maps/Route101/scripts.pory"
+	call Common_EventScript_LevelCapUpdate
+# 392 "data/maps/Route101/scripts.pory"
 	releaseall
 	return
 
 
-# 392 "data/maps/Route101/scripts.pory"
+# 395 "data/maps/Route101/scripts.pory"
 Route101_RivalApproachPlayer2:
-# 393 "data/maps/Route101/scripts.pory"
-	walk_right
-# 393 "data/maps/Route101/scripts.pory"
-	walk_right
-	step_end
-
 # 396 "data/maps/Route101/scripts.pory"
-Route101_RivalApproachPlayer1:
-# 397 "data/maps/Route101/scripts.pory"
+	walk_right
+# 396 "data/maps/Route101/scripts.pory"
 	walk_right
 	step_end
 
+# 399 "data/maps/Route101/scripts.pory"
+Route101_RivalApproachPlayer1:
 # 400 "data/maps/Route101/scripts.pory"
-Route101_RivalDeparture:
-# 401 "data/maps/Route101/scripts.pory"
-	walk_up
-# 401 "data/maps/Route101/scripts.pory"
-	walk_up
-# 402 "data/maps/Route101/scripts.pory"
 	walk_right
+	step_end
+
 # 403 "data/maps/Route101/scripts.pory"
+Route101_RivalDeparture:
+# 404 "data/maps/Route101/scripts.pory"
 	walk_up
-# 403 "data/maps/Route101/scripts.pory"
+# 404 "data/maps/Route101/scripts.pory"
 	walk_up
-# 403 "data/maps/Route101/scripts.pory"
+# 405 "data/maps/Route101/scripts.pory"
+	walk_right
+# 406 "data/maps/Route101/scripts.pory"
 	walk_up
-# 403 "data/maps/Route101/scripts.pory"
+# 406 "data/maps/Route101/scripts.pory"
 	walk_up
-# 403 "data/maps/Route101/scripts.pory"
+# 406 "data/maps/Route101/scripts.pory"
 	walk_up
-# 403 "data/maps/Route101/scripts.pory"
+# 406 "data/maps/Route101/scripts.pory"
 	walk_up
-# 403 "data/maps/Route101/scripts.pory"
+# 406 "data/maps/Route101/scripts.pory"
+	walk_up
+# 406 "data/maps/Route101/scripts.pory"
+	walk_up
+# 406 "data/maps/Route101/scripts.pory"
 	walk_up
 	step_end
 
 Route101_RivalDefeated_Text_0:
 # 377 "data/maps/Route101/scripts.pory"
 	.string "Looks like you're very ready to be a\n"
-	.string "Pokémon Trainer! I'm looking forward to\l"
-	.string "seeing you out there.$"
+	.string "Pokémon Trainer! You'll need more of\l"
+	.string "these to grow your team.$"
+
+Route101_RivalDefeated_Text_1:
+# 380 "data/maps/Route101/scripts.pory"
+	.string "I'm looking forward to seeing you out\n"
+	.string "there.$"

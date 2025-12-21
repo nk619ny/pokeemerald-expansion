@@ -2220,12 +2220,12 @@ void ObjectEventInteractionPickBerryTree(void)
 
     if (!OW_BERRY_MUTATIONS || mutation == 0)
     {
-        u16 harvestCount = (u16)GetBerryCountByBerryTreeId(id) * 15;
+        u16 harvestCount = (u16)GetBerryCountByBerryTreeId(id) * 50;
         gSpecialVar_0x8004 = AddBagItem(BerryTypeToItemId(berry), harvestCount);
         return;
     }
     {
-        u16 harvestCount = (u16)GetBerryCountByBerryTreeId(id) * 15;
+        u16 harvestCount = (u16)GetBerryCountByBerryTreeId(id) * 50;
         gSpecialVar_0x8004 = (CheckBagHasSpace(BerryTypeToItemId(berry), harvestCount) && CheckBagHasSpace(BerryTypeToItemId(mutation), 1)) + 2;
         if (gSpecialVar_0x8004 == 3)
         {

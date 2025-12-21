@@ -346,6 +346,7 @@
       "flag": "FLAG_HIDE_ROUTE_104_RIVAL"
     },
     {
+      "local_id": "LOCALID_ROUTE104_BRINEY_NEW",
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
       "x": 17,
       "y": 51,
@@ -359,6 +360,7 @@
       "flag": "FLAG_HIDE_BRINEY_FONT_OF_DOOR"
     },
     {
+      "local_id": "LOCALID_ROUTE104_GRUNT",
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
       "x": 18,
       "y": 51,
@@ -372,6 +374,7 @@
       "flag": "FLAG_HIDE_104_GRUNT_AND_PEEKO"
     },
     {
+      "local_id": "LOCALID_ROUTE104_PEEKO",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(WINGULL)",
       "x": 17,
       "y": 52,
@@ -595,7 +598,7 @@
       "x": 16,
       "y": 64,
       "elevation": 3,
-      "item": "ITEM_CARBOS",
+      "item": "ITEM_POTION",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POTION"
     },
     {

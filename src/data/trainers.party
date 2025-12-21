@@ -8436,7 +8436,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Eevee @ Leppa Berry
 Ball: Premier Ball
-Level: 14 
+Level: 15
+EVs: 252 HP
 - Trump Card
 
 
@@ -8455,6 +8456,7 @@ Ability: Contrary
 Ball: Premier Ball
 Level: 11  
 Quirky Nature 
+EVs: 128 HP
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Superpower  
 - Psycho Boost  
@@ -9686,7 +9688,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Sentret  
 Ability: Keen Eye  
-Level: 6
+Level: 10
 - Echoed Voice  
 - Quick Attack  
 - Fury Cutter  
@@ -9694,7 +9696,7 @@ Level: 6
 
 Bidoof  
 Ability: Moody  
-Level: 6
+Level: 10
 - Chilling Water  
 - Yawn  
 - Fury Swipes  
@@ -9702,7 +9704,7 @@ Level: 6
 
 Wooloo  
 Ability: Fluffy  
-Level: 6
+Level: 10
 - Copycat  
 - Grassy Glide  
 - Tackle  
@@ -11683,7 +11685,7 @@ Tera Type: Fighting
 - Swords Dance  
 
 
-=== TRAINER_JARED === /* Route */
+=== TRAINER_JARED === /* Fortree Gym */
 Name: JARED
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -11704,7 +11706,7 @@ Tropius
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_HUMBERTO === /* Route */
+=== TRAINER_HUMBERTO === /* Fortree Gym */
 Name: HUMBERTO
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -11734,7 +11736,7 @@ Xatu
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_EDWARDO === /* Route */
+=== TRAINER_EDWARDO === /* Fortree Gym */
 Name: EDWARDO
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -18191,7 +18193,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Litleo  
 Ability: Unnerve  
-Level: 10
+Level: 11
 Tera Type: Fire  
 - Ember  
 - Echoed Voice  
@@ -18200,7 +18202,7 @@ Tera Type: Fire
 
 Rockruff  
 Ability: Keen Eye  
-Level: 10
+Level: 11
 Tera Type: Rock  
 - Rock Throw  
 - Covet  
@@ -18209,7 +18211,7 @@ Tera Type: Rock
 
 Yamper  
 Ability: Rattled  
-Level: 10
+Level: 11
 Tera Type: Electric  
 - Thunder Fang  
 - Howl  
@@ -18218,7 +18220,7 @@ Tera Type: Electric
 
 Houndour  
 Ability: Unnerve  
-Level: 10
+Level: 11
 Tera Type: Dark  
 - Fire Fang  
 - Howl  
@@ -18550,14 +18552,14 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Wurmple  
 Ability: Shield Dust  
-Level: 6
+Level: 10
 - String Shot  
 - Bug Bite  
 - Tackle  
 
 Burmy  
 Ability: Shed Skin  
-Level: 6
+Level: 10
 Tera Type: Bug  
 - Protect  
 - String Shot  
@@ -18566,7 +18568,7 @@ Tera Type: Bug
 
 Spinarak  
 Ability: Sniper  
-Level: 6
+Level: 10
 Tera Type: Bug  
 - Absorb  
 - Spider Web  
@@ -19729,7 +19731,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sludge
 - Smokescreen
 
-=== TRAINER_FLINT === /* Route */
+=== TRAINER_FLINT === /* Fortree Gym */
 Name: FLINT
 Class: Camper
 Pic: Camper
@@ -19746,7 +19748,7 @@ Xatu
 Level: 29
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_ASHLEY === /* Route */
+=== TRAINER_ASHLEY === /* Fortree Gym */
 Name: ASHLEY
 Class: Picnicker
 Pic: Picnicker

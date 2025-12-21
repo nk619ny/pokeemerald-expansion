@@ -1178,9 +1178,9 @@ Route104_Text_BrendanPostBattle:
 	.string "become friends with your POKéMON.$"
 `
 
-const LOCALID_ROUTE104_BRINEY_NEW = 35
-const LOCALID_ROUTE104_PEEKO = 37
-const LOCALID_ROUTE104_GRUNT = 36
+//const LOCALID_ROUTE104_BRINEY_NEW = 35
+//const LOCALID_ROUTE104_PEEKO = 37
+//const LOCALID_ROUTE104_GRUNT = 36
 
 script Route104_EventScript_BrineyNew{
 	lock
@@ -1199,7 +1199,7 @@ script Route104_EventScript_BrineyNew{
 script Route101_EventScript_PeekoCutscene {
 	lockall
 	special(SpawnCameraObject)
-	applymovement(OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraPan)
+	applymovement(OBJ_EVENT_ID_CAMERA, Route104_Cutscene_CameraPan)
 	waitmovement(0)
 	applymovement(LOCALID_ROUTE104_BRINEY_NEW, Common_Movement_WalkInPlaceRight)
 	waitmovement(0)
@@ -1211,26 +1211,26 @@ script Route101_EventScript_PeekoCutscene {
 	waitmessage
 	applymovement(LOCALID_ROUTE104_BRINEY_NEW, Common_Movement_WalkInPlaceRight)
 	waitmovement(0)
-	msgbox(format("What?\NThat's nonsense.\NPeeko's never made the weather change!"))
+	msgbox(format("What?\NThat's nonsense.\NPeeko's never changed the weather!"))
 	waitmessage
 	applymovement(LOCALID_ROUTE104_GRUNT, Common_Movement_WalkInPlaceLeft)
 	waitmovement(0)
 	msgbox(format("I'm sure of it. It just needs to be trained further.\NBut I don't have time to keep going back and forth with you! That Pokémon is coming with me."))
 	waitmessage
-	applymovement(LOCALID_ROUTE104_GRUNT, Route101_Cutscene_GruntApproachPeeko)	
+	applymovement(LOCALID_ROUTE104_GRUNT, Route104_Cutscene_GruntApproachPeeko)	
 	waitmovement(0)
 	removeobject(LOCALID_ROUTE104_PEEKO)
 	applymovement(LOCALID_ROUTE104_BRINEY_NEW, Common_Movement_WalkInPlaceDown)
 	waitmovement(0)
 	msgbox(format("Peeko!!"))
 	waitmessage
-	applymovement(LOCALID_ROUTE104_GRUNT, Route101_Cutscene_GruntFlees)
+	applymovement(LOCALID_ROUTE104_GRUNT, Route104_Cutscene_GruntFlees)
 	waitmovement(0)
 	removeobject(LOCALID_ROUTE104_GRUNT)
 	setflag(FLAG_HIDE_104_GRUNT_AND_PEEKO)
 	setvar(VAR_PETALBURG_CITY_STATE,4)
 	delay(20)
-	applymovement(OBJ_EVENT_ID_CAMERA, Route101_Cutscene_CameraRevert)
+	applymovement(OBJ_EVENT_ID_CAMERA, Route104_Cutscene_CameraRevert)
 	waitmovement(0)
 	special(RemoveCameraObject)
 	//setvar(VAR_LEVEL_CAP, 30)
@@ -1238,22 +1238,22 @@ script Route101_EventScript_PeekoCutscene {
 	end
 }
 
-movement Route101_Cutscene_CameraPan {
+movement Route104_Cutscene_CameraPan {
 	walk_fast_left * 7
 	walk_diag_northwest * 11
 }
 
-movement Route101_Cutscene_GruntApproachPeeko {
+movement Route104_Cutscene_GruntApproachPeeko {
 	walk_fast_down
 	face_left
 }
 
-movement Route101_Cutscene_GruntFlees {
+movement Route104_Cutscene_GruntFlees {
 	walk_fast_right * 4
 	walk_fast_up * 9
 }
 
-movement Route101_Cutscene_CameraRevert {
+movement Route104_Cutscene_CameraRevert {
 	walk_fast_right * 7
 	walk_diag_southeast * 11
 }

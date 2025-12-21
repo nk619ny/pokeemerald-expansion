@@ -534,3 +534,44 @@ JaggedPass_Text_AutumnPostBattle:
 	.string "What is that odd rock protrusion\n"
 # 268 "data/maps/JaggedPass/scripts.pory"
 	.string "a little up the hill from here?$"
+
+JaggedPass_EventScript_RockSlideHiker::
+# 274 "data/maps/JaggedPass/scripts.pory"
+	lock
+# 275 "data/maps/JaggedPass/scripts.pory"
+	faceplayer
+# 276 "data/maps/JaggedPass/scripts.pory"
+	checkitem ITEM_TM_ROCK_SLIDE
+# 277 "data/maps/JaggedPass/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq JaggedPass_EventScript_RockSlideHiker_2
+# 284 "data/maps/JaggedPass/scripts.pory"
+	msgbox JaggedPass_EventScript_RockSlideHiker_Text_1, MSGBOX_DEFAULT
+# 285 "data/maps/JaggedPass/scripts.pory"
+	closemessage
+JaggedPass_EventScript_RockSlideHiker_1:
+# 287 "data/maps/JaggedPass/scripts.pory"
+	releaseall
+	end
+
+JaggedPass_EventScript_RockSlideHiker_2:
+# 278 "data/maps/JaggedPass/scripts.pory"
+	msgbox JaggedPass_EventScript_RockSlideHiker_Text_0, MSGBOX_DEFAULT
+# 279 "data/maps/JaggedPass/scripts.pory"
+	closemessage
+# 280 "data/maps/JaggedPass/scripts.pory"
+	giveitem ITEM_TM_ROCK_SLIDE
+# 281 "data/maps/JaggedPass/scripts.pory"
+	waitfanfare
+	goto JaggedPass_EventScript_RockSlideHiker_1
+
+
+JaggedPass_EventScript_RockSlideHiker_Text_0:
+# 278 "data/maps/JaggedPass/scripts.pory"
+	.string "Jagged Pass is dangerous because wild\n"
+	.string "Pokémon can cause rock slides.\p"
+	.string "Your Pokémon can, too, so be courteous!$"
+
+JaggedPass_EventScript_RockSlideHiker_Text_1:
+# 284 "data/maps/JaggedPass/scripts.pory"
+	.string "Watch your step, here.$"

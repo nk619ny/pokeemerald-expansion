@@ -374,7 +374,10 @@ script Route101_BrendanBattle {
 
 script Route101_RivalDefeated {
 	lockall
-	msgbox(format("Looks like you're very ready to be a Pokémon Trainer! I'm looking forward to seeing you out there."))
+	msgbox(format("Looks like you're very ready to be a Pokémon Trainer! You'll need more of these to grow your team."),MSGBOX_DEFAULT)
+	giveitem(ITEM_POKE_BALL, 20)
+	waitfanfare
+	msgbox(format("I'm looking forward to seeing you out there."),MSGBOX_DEFAULT)
 	waitmessage
 	applymovement(LOCALID_ROUTE101_RIVAL,Route101_RivalDeparture)
 	waitmovement(0)
