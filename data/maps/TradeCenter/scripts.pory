@@ -1706,7 +1706,7 @@ script PokemonCenter_2F_EventScript_PreTrain_Intro {
 	faceplayer
 	msgbox(format("I can pre-damage or pre-status your Pokémon, for tactical purposes.\pWhat would you like to do?"), MSGBOX_DEFAULT)
 
-	dynmultichoice(25,8,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Set Damage", "Set Status","Never Mind")
+	dynmultichoice(25,6,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Set Damage", "Set Status","Never Mind")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(PokemonCenter_2F_EventScript_PreTrain_ComeBackLater)
