@@ -567,7 +567,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex::
 	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
-	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
+	//setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_PokemonAwait::
@@ -1439,7 +1439,7 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	setflag (FLAG_SYS_POKEDEX_GET)
 	special (SetUnlockedPokedexFlags)
 	setflag (FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
-	setvar (VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
+	//setvar (VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
     setflag (FLAG_SYS_NATIONAL_DEX)
 	special (EnableNationalPokedex)
 	msgbox (format("Prof. Birch: You will also need Pokéballs, in order to catch new Pokémon to add to your team. This should help you get started, but you can buy more at the Mart in Oldale Town."))

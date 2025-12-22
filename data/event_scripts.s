@@ -1075,12 +1075,13 @@ EventScript_CableClub_SetVarResult0::
 	return
 
 Common_EventScript_UnionRoomAttendant::
+	goto PokemonCenter_2F_EventScript_PreTrain_Intro
 	call CableClub_EventScript_UnionRoomAttendant
 	end
 
 Common_EventScript_WirelessClubAttendant::
 	goto MoveTutor_EventScript_BasicTutorIntro
-	call CableClub_EventScript_WirelessClubAttendant
+	//call CableClub_EventScript_WirelessClubAttendant
 	end
 
 Common_EventScript_DirectCornerAttendant::

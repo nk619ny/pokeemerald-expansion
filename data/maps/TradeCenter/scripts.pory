@@ -1701,6 +1701,32 @@ script MoveTutor_EventScript_ComeBackLater{
 	end
 }
 
+script PokemonCenter_2F_EventScript_PreTrain_Intro {
+	lockall
+	faceplayer
+	msgbox(format("I can pre-damage or pre-status your Pokémon, for tactical purposes.\pWhat would you like to do?"), MSGBOX_DEFAULT)
+
+	dynmultichoice(25,8,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Set Damage", "Set Status","Never Mind")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			goto(PokemonCenter_2F_EventScript_PreTrain_ComeBackLater)
+		case 1:
+			goto(PokemonCenter_2F_EventScript_InflictStatusMenu)
+		case 2:
+			goto(PokemonCenter_2F_EventScript_PreTrain_ComeBackLater)
+	}
+	releaseall
+	end
+}
+
+script PokemonCenter_2F_EventScript_PreTrain_ComeBackLater{
+	lock
+	msgbox(format("Come back later if you ever want to adjust your Pokémon's damage or status."), MSGBOX_DEFAULT)
+	closemessage
+	releaseall
+	end
+}
+
 script PokemonCenter_2F_EventScript_InflictStatusMenu {
     lockall
 	faceplayer

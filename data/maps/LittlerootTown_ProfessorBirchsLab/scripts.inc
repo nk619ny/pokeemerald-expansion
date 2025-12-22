@@ -1137,7 +1137,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex::
 # 569 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
 # 570 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
+	//setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 # 571 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	return
 # 572 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -3023,8 +3023,6 @@ ProfessorBirchsLab_EventScript_RevisedIntroSequence::
 	special SetUnlockedPokedexFlags
 # 1441 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
-# 1442 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 # 1443 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setflag FLAG_SYS_NATIONAL_DEX
 # 1444 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
