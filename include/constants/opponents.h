@@ -142,10 +142,10 @@
 #define TRAINER_WINSTON_1                   136
 #define TRAINER_MOLLIE                      137
 #define TRAINER_GARRET                      138
-#define TRAINER_WINSTON_2                   139
-#define TRAINER_WINSTON_3                   140
-#define TRAINER_WINSTON_4                   141
-#define TRAINER_WINSTON_5                   142
+#define TRAINER_NEW_NINJA                   139 //available
+#define TRAINER_WINSTON_3                   140 //available
+#define TRAINER_WINSTON_4                   141 //available
+#define TRAINER_WINSTON_5                   142 //available
 #define TRAINER_STEVE_1                     143
 #define TRAINER_THALIA_1                    144
 #define TRAINER_MARK                        145

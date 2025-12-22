@@ -8,13 +8,13 @@
 // `make release`, it will be automatically disabled.
 //
 // #define DEBUG_OVERWORLD_MENU DISABLED_ON_RELEASE
-#ifdef RELEASE
-#define ENABLED_ON_RELEASE TRUE
+//#ifdef RELEASE
+//#define ENABLED_ON_RELEASE TRUE
 #define DISABLED_ON_RELEASE FALSE
-#else
-#define ENABLED_ON_RELEASE FALSE
-#define DISABLED_ON_RELEASE TRUE
-#endif
+//#else
+//#define ENABLED_ON_RELEASE FALSE
+//#define DISABLED_ON_RELEASE TRUE
+//#endif
 
 #include "config/ai.h"
 #include "config/battle.h"

@@ -1713,19 +1713,19 @@ script PetalburgCity_Gym_EventScript_NormanPostBattle {
 	lockall
 	applymovement(LOCALID_PETALBURG_GYM_NORMAN,Common_Movement_FacePlayer)
 	msgbox(format("Dad: Did you have another question for me, {PLAYER}?"))
-    dynmultichoice(25,3,0,5,0,DYN_MULTICHOICE_CB_NONE,"Where To Go","Your Slaking","Retirement","Gift Pokémon","Nothing")
+    dynmultichoice(25,2,0,5,0,DYN_MULTICHOICE_CB_NONE,"Where To Go","Your Slaking","Retirement","Gift Pokémon","Nothing")
 	switch(var(VAR_RESULT)) {
 		case 0:
-			msgbox(format("Dad: Unfortunately, the bridge to Rustboro City is down. However, my friend Mr. Briney can take you to Dewford to start the Gym Challenge there. He lives just West of Petalburg in Route 104 South."),MSGBOX_NPC)
+			msgbox(format("Dad: Unfortunately, the bridge to Rustboro City is down.\pHowever, my friend Mr. Briney can take you to Dewford to start the Gym Challenge there.\pHe lives just West of Petalburg in Route 104 South."),MSGBOX_NPC)
 		case 1:
-			msgbox(format("Dad: Ah, yes, many trainers are confused about the low-level Slaking. Well, it is my signature Pokémon, and even for new trainers it presents an interested challenge to manage. I found a strange seed in a faraway land that actually allows me to reduce the level of my Pokémon - I used this to weaken a Slaking after evolving it, so I could use it in battles against Trainers without a badge yet. I'll tell you more about this place I visited another time - I'd never seen Kecleon as strong as the ones that were there."),MSGBOX_NPC)
+			msgbox(format("Dad: Ah, yes, many trainers are confused about the low-level Slaking.\pWell, it is my signature Pokémon, and even for new trainers it presents an interested challenge to manage.\pI found a strange seed in a faraway land that actually allows me to reduce the level of my Pokémon - I used this to weaken a Slaking after evolving it, so I could use it in battles against Trainers without a badge yet.\pI'll tell you more about this place I visited another time - I'd never seen Kecleon as strong as the ones that were there."),MSGBOX_NPC)
 		case 2:
-			msgbox(format("Dad: Yes, retiring is bittersweet, but I feel like I've found the perfect Trainer to replace me. I gave it a lot of thought, and I think they will do a great job. I'm really excited for you to meet them. It will take a little more time for them to return and get the gym set up, but I will call you when they do."))
+			msgbox(format("Dad: Yes, retiring is bittersweet, but I feel like I've found the perfect Trainer to replace me. I gave it a lot of thought, and I think they will do a great job.\pI'm really excited for you to meet them. It will take a little more time for them to return and get the gym set up, but I will call you when they do."))
 		case 3:
 			if(flag(FLAG_RECEIVED_EEVEE_FROM_NORMAN)) {
 				msgbox(format("Dad: That Pokémon is an Eevee. It's a special Normal-type Pokémon that can evolve a variety of different ways based on what rare stone you give it."))
 				waitmessage
-				msgbox(format("That one is extra special, as it possesses a rare ability. Based on the stone you give it, it will influence the environment around it. Not many Pokémon can do this. I trust you'll decide wisely how to train this Eevee."))
+				msgbox(format("That one is extra special, as it possesses a rare ability.\pBased on the stone you give it, it will influence the environment around it.\pNot many Pokémon can do this. I trust you'll decide wisely how to train this Eevee."))
 			}
 			else{
 				msgbox(format("Dad: Are you ready to take the special Pokémon now?"),MSGBOX_YESNO)
@@ -1751,7 +1751,7 @@ text PetalburgCity_Gym_NormanDefeatedText {
 script PetalburgCity_Gym_EventScript_DefeatedNorman {
 	lockall
 	call(Common_EventScript_RemoveOptionalItems0)
-	setvar(VAR_LEVEL_CAP, 24)
+	setvar(VAR_LEVEL_CAP, 21)
 	call(Common_EventScript_ApplyHandicap)
 	call(Common_EventScript_LevelCapUpdate)
 //	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)

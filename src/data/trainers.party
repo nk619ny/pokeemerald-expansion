@@ -3820,7 +3820,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Pidgey  
 Ability: Keen Eye  
-Level: 14
+Level: 13
 Tera Type: Normal  
 - Wing Attack  
 - Quick Attack  
@@ -3829,7 +3829,7 @@ Tera Type: Normal
 
 Piplup  
 Ability: Torrent  
-Level: 14
+Level: 13
 Tera Type: Water  
 - Pluck  
 - Icy Wind  
@@ -4884,12 +4884,12 @@ Azumarill @ Nugget
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_2 === /* Route */
+=== TRAINER_NEW_NINJA === /* to be added */
 Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
+Class: Ninja Boy
+Pic: Ninja Boy
 Gender: Male
-Music: Rich
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -8442,7 +8442,7 @@ EVs: 252 HP
 
 
 /*
-Skitty
+Skitty  
 Ability: Cute Charm  
 Ball: Premier Ball
 Level: 14 
@@ -18586,7 +18586,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Silcoon  
 Ability: Shed Skin  
-Level: 10
+Level: 13
 Tera Type: Bug  
 - Harden  
 - String Shot  
@@ -18595,7 +18595,7 @@ Tera Type: Bug
 
 Cascoon  
 Ability: Shed Skin  
-Level: 10
+Level: 13
 Tera Type: Bug  
 - Harden  
 - String Shot  
@@ -18604,7 +18604,7 @@ Tera Type: Bug
 
 Metapod  
 Ability: Shed Skin  
-Level: 10
+Level: 13
 Tera Type: Bug  
 - Iron Defense  
 - Bug Bite  
@@ -18612,7 +18612,7 @@ Tera Type: Bug
 
 Kakuna  
 Ability: Shed Skin  
-Level: 10
+Level: 13
 Tera Type: Bug  
 - Poison Sting  
 - Bug Bite  
@@ -18802,7 +18802,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Kricketot  
 Ability: Shed Skin  
-Level: 10
+Level: 13
 Tera Type: Bug  
 IVs: 0 Atk  
 - Echoed Voice  
@@ -18812,7 +18812,7 @@ IVs: 0 Atk
 
 Venipede  
 Ability: Poison Point  
-Level: 10
+Level: 13
 - Pin Missile  
 - Rollout  
 - Rock Smash  
@@ -18820,7 +18820,7 @@ Level: 10
 
 Grubbin  
 Ability: Swarm  
-Level: 10
+Level: 13
 Tera Type: Water
 IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe / HP Water IVs for Min Atk */
 - Shock Wave  
@@ -18829,7 +18829,7 @@ IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe / HP Water IV
 
 Scatterbug  
 Ability: Shield Dust  
-Level: 10  
+Level: 13
 Tera Type: Bug  
 EVs: 252 HP  
 - Stun Spore  
@@ -18839,7 +18839,7 @@ EVs: 252 HP
 
 Blipbug  
 Ability: Swarm  
-Level: 10  
+Level: 13  
 Tera Type: Bug  
 EVs: 252 HP  
 IVs: 0 Atk  
