@@ -1008,7 +1008,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sBidoofLevelUpLearnset,
         .teachableLearnset = sBidoofTeachableLearnset,
         .eggMoveLearnset = sBidoofEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_BIBAREL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BIBAREL}),
     },
 
     [SPECIES_BIBAREL] =
@@ -1186,7 +1186,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sKricketotLevelUpLearnset,
         .teachableLearnset = sKricketotTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_KRICKETUNE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_KRICKETUNE}),
     },
 
     [SPECIES_KRICKETUNE] =

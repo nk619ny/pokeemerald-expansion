@@ -845,7 +845,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sTarountulaLevelUpLearnset,
         .teachableLearnset = sTarountulaTeachableLearnset,
         .eggMoveLearnset = sTarountulaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_SPIDOPS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_SPIDOPS}),
     },
 
     [SPECIES_SPIDOPS] =

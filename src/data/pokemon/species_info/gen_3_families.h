@@ -1574,7 +1574,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sSilcoonLevelUpLearnset,
         .teachableLearnset = sSilcoonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BEAUTIFLY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BEAUTIFLY}),
     },
 
     [SPECIES_BEAUTIFLY] =
@@ -1747,7 +1747,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sCascoonLevelUpLearnset,
         .teachableLearnset = sCascoonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_DUSTOX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_DUSTOX}),
     },
 
     [SPECIES_DUSTOX] =
