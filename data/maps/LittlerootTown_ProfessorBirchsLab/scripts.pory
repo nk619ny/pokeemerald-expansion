@@ -1447,7 +1447,9 @@ script ProfessorBirchsLab_EventScript_RevisedIntroSequence{
 	closemessage
 	msgbox (format("Prof. Birch: And here are some utility items that will make your life as a Trainer much easier."))
 	giveitem(ITEM_POKEMON_BOX_LINK)
-	giveitem(ITEM_CANDY_BAG)
+	//giveitem(ITEM_CANDY_BAG) //now replaced by the two items below
+	giveitem(ITEM_EXP_CANDY_S)
+	giveitem(ITEM_EXP_CANDY_XL)
 	giveitem(ITEM_ESCAPE_ROPE)
 	giveitem(ITEM_FULL_RESTORE)
 	giveitem(ITEM_UNLIMITED_REPEL)

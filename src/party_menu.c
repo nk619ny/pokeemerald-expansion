@@ -5795,7 +5795,7 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         sFinalLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);
         gPartyMenuUseExitCallback = TRUE;
         UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);
-        if (*itemPtr != ITEM_CANDY_BAG)
+        if ((*itemPtr != ITEM_CANDY_BAG) && (*itemPtr != ITEM_EXP_CANDY_S) && (*itemPtr != ITEM_EXP_CANDY_XL))
         {
            RemoveBagItem(gSpecialVar_ItemId, 1);
         }
@@ -5803,7 +5803,7 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         if (sFinalLevel > sInitialLevel)
         {
             PlayFanfareByFanfareNum(FANFARE_LEVEL_UP);
-            if (holdEffectParam == 0) // Rare Candy
+            if (holdEffectParam == 0 || holdEffectParam == LEVEL_CAP) // Rare Candy or Exp Candy S
             {
                 ConvertIntToDecimalStringN(gStringVar2, sFinalLevel, STR_CONV_MODE_LEFT_ALIGN, 3);
                 StringExpandPlaceholders(gStringVar4, gText_PkmnElevatedToLvVar2);
