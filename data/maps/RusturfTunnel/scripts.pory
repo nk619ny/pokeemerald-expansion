@@ -609,7 +609,17 @@ script RusturfTunnel_EventScript_Wanda_AquaPresent{
 
 script RusturfTunnel_EventScript_Wanda_TunnelBlocked {
 	lock
-	msgbox(format("Thank you for chasing Team Aqua out!"),MSGBOX_NPC  )
+	switch(var(TempVar_WandaDialogue)){
+		case 0:
+			setvar(TempVar_WandaDialogue,1)
+			msgbox(RusturfTunnel_Text_WandaThankful,MSGBOX_NPC)
+		case 1:
+			setvar(TempVar_WandaDialogue,2)
+			msgbox(RusturfTunnel_Text_WandaMissesBoyfriend,MSGBOX_NPC)
+		case 2:
+			setvar(TempVar_WandaDialogue,0)
+			msgbox(RusturfTunnel_Text_WandaWaitingForCompletion,MSGBOX_NPC)
+	}
 	waitmessage
 	releaseall
 	end
@@ -625,6 +635,14 @@ text RusturfTunnel_Text_WandaMissesBoyfriend{
 
 text RusturfTunnel_Text_WandaAsksForHelp{
 	format("Can you help us do something about Team Aqua?")
+}
+
+text RusturfTunnel_Text_WandaWaitingForCompletion{
+	format("Now that Team Aqua is gone, hopefully they finish clearing the rocks out to open the tunnel soon.")
+}
+
+text RusturfTunnel_Text_WandaThankful{
+	format("Thank you for chasing Team Aqua out!")
 }
 
 text RusturfTunnel_Text_Grunt1Intro{

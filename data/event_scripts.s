@@ -943,11 +943,11 @@ gText_FirstShouldRestoreMonsHealth::
 gText_MonsHealedShouldBuyPotions::
 	.string "Your POKéMON have been healed\n"
 	.string "to perfect health.\p"
-	.string "If your POKéMON's energy, HP,\n"
-	.string "is down, please come see us.\p"
-	.string "If you're planning to go far in the\n"
-	.string "field, you should buy some POTIONS\l"
-	.string "at the POKéMON MART.\p"
+	//.string "If your POKéMON's energy, HP,\n"
+	//.string "is down, please come see us.\p"
+	//.string "If you're planning to go far in the\n"
+	//.string "field, you should buy some POTIONS\l"
+	//.string "at the POKéMON MART.\p"
 	.string "We hope you excel!$"
 
 gText_MonsHealed::

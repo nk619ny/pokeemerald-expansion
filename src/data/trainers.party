@@ -1718,7 +1718,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Combee  @ Honey
-Level: 33
+Level: 34
 Ability: Honey Gather  
 Tera Type: Bug  
 - Pollen Puff  
@@ -1727,7 +1727,7 @@ Tera Type: Bug
 - Dual Wingbeat  
 
 Oddish  
-Level: 33
+Level: 34
 Ability: Chlorophyll  
 Tera Type: Grass  
 EVs: 196 Atk  
@@ -1737,7 +1737,7 @@ EVs: 196 Atk
 - Venoshock  
 
 Hoppip  
-Level: 33
+Level: 34
 Ability: Leaf Guard  
 Tera Type: Grass  
 - Aromatherapy  
@@ -1746,7 +1746,7 @@ Tera Type: Grass
 - Fairy Wind  
 
 Spritzee  @ Eviolite
-Level: 33
+Level: 34
 Ability: Aroma Veil  
 Tera Type: Fairy  
 IVs: 0 Atk  
@@ -1767,7 +1767,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Roselia  
-Level: 35
+Level: 34
 Ability: Poison Point  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -1777,7 +1777,7 @@ IVs: 0 Atk
 - Shadow Ball  
 
 Dipplin  
-Level: 35
+Level: 34
 Ability: Supersweet Syrup  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -1787,7 +1787,7 @@ IVs: 0 Atk
 - Recover  
 
 Dolliv @ Sitrus Berry  
-Level: 35
+Level: 34
 Ability: Harvest  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -1797,7 +1797,7 @@ IVs: 0 Atk
 - Protect  
 
 Fidough  @ Power Herb
-Level: 35
+Level: 34
 Ability: Own Tempo  
 Tera Type: Fairy  
 - Dig  
@@ -2158,9 +2158,9 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gigalith  
 Ability: Sturdy  
-Level: 29
+Level: 28
 Ball: Great Ball
-EVs: 164 HP / 164 Atk 
+EVs: 128 HP
 Adamant Nature  
 - Curse  
 - Rock Slide  
@@ -2180,9 +2180,9 @@ Jolly Nature
 
 Swoobat
 Ability: Unaware  
-Level: 29
+Level: 28
 Ball: Great Ball
-EVs: 164 SpA / 164 Spe  
+EVs: 64 SpA / 64 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Air Slash  
@@ -2192,9 +2192,9 @@ IVs: 0 Atk
 
 Beartic  
 Ability: Swift Swim  
-Level: 29
+Level: 28
 Ball: Great Ball
-EVs: 164 Atk / 164 Spe  
+EVs: 96 Atk / 64 Spe  
 Adamant Nature  
 - Aqua Jet  
 - Avalanche  
@@ -2203,9 +2203,9 @@ Adamant Nature
 
 Kleavor  
 Ability: Sharpness  
-Level: 30
+Level: 29
 Ball: Great Ball
-EVs: 200 Atk / 200 Spe  
+EVs: 96 Atk / 128 Spe  
 Jolly Nature  
 - X-Scissor  
 - Stone Axe  
@@ -7199,7 +7199,7 @@ IVs: 0 Atk
 - Toxic  
 
 Dunsparce  
-Level: 36
+Level: 34
 Ability: Serene Grace  
 Tera Type: Normal  
 EVs: 252 Spe  
@@ -7209,7 +7209,7 @@ EVs: 252 Spe
 - Headbutt  
 
 Gligar @ Yache Berry
-Level: 36
+Level: 34
 Ability: Immunity  
 Tera Type: Ground  
 - Counter  
@@ -8300,14 +8300,15 @@ Mild Nature
 Manectric @ Manectite  
 Ability: Static   
 Ball: Fast Ball 
-Level: 35
+Level: 36
 IVs: 0 Atk  
-EVs: 128 SpA / 128 Spe  
+EVs: 96 SpA / 96 Spe  
+Tera Type: Grass
 Modest Nature  
 - Volt Switch  
 - Discharge  
 - Flamethrower  
-- Aurora Beam  
+- Hidden Power
 
 Cryogonal @ Light Clay  
 Ability: Levitate  
@@ -9325,7 +9326,7 @@ Azumarill @ Oran Berry
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ISABEL_1 === /* Route */
+=== TRAINER_ISABEL_1 === /* Route */ /* TO BE SWITCHED WITH LATER POKEFAN */
 Name: ISABEL
 Class: Pokefan
 Pic: Pokefan F
@@ -9336,7 +9337,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Pikachu  
 Ability: Static  
-Level: 30  
+Level: 28  
 Tera Type: Electric  
 EVs: 252 HP / 94 Atk / 68 Def / 94 SpA  
 Hasty Nature  
@@ -9347,7 +9348,7 @@ Hasty Nature
 
 Eevee  
 Ability: Adaptability  
-Level: 30  
+Level: 28  
 Tera Type: Normal  
 EVs: 252 HP / 64 Atk / 64 Def / 128 SpA  
 Lonely Nature  
@@ -9358,7 +9359,7 @@ Lonely Nature
 
 Bulbasaur @ Power Herb  
 Ability: Overgrow  
-Level: 30  
+Level: 28  
 Tera Type: Grass  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -9370,7 +9371,7 @@ IVs: 0 Atk
 
 Charmander @ Power Herb  
 Ability: Blaze  
-Level: 30  
+Level: 28  
 Tera Type: Fire  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -9381,7 +9382,7 @@ IVs: 0 Atk
 
 Squirtle @ Power Herb  
 Ability: Torrent  
-Level: 30  
+Level: 28  
 Tera Type: Water  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -14981,7 +14982,7 @@ Adamant Nature
 - Light Screen  
 
 Salamence  
-Level: 20
+Level: 22
 Ability: Intimidate  
 Tera Type: Dragon  
 - Bite  
@@ -14989,11 +14990,10 @@ Tera Type: Dragon
 - Dual Wingbeat  
 
 Salazzle  
-Level: 28
+Level: 27
 Ability: Corrosion  
 Shiny: Yes  
 Tera Type: Poison  
-EVs: 128 SpA / 128 Spe  
 Timid Nature  
 - Toxic  
 - Fake Out  
@@ -15004,7 +15004,7 @@ Basculin-White-Striped (F)
 Level: 28
 Ability: Adaptability  
 Tera Type: Water  
-EVs: 128 Atk / 128 Spe  
+EVs: 96 Atk / 96 Spe  
 Jolly Nature  
 - Flip Turn  
 - Aqua Jet  
@@ -16152,7 +16152,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Elekid  
 Ability: Static  
-Level: 37 
+Level: 36
 Tera Type: Electric  
 EVs: 252 HP / 252 Atk  
 - Cross Chop  
@@ -16162,7 +16162,7 @@ EVs: 252 HP / 252 Atk
 
 Magby @ Sitrus Berry  
 Ability: Flame Body  
-Level: 37  
+Level: 36
 Tera Type: Fire  
 EVs: 124 HP / 192 Atk / 192 SpA  
 - Belch  
@@ -16192,7 +16192,7 @@ EVs: 252 HP / 64 Atk / 192 SpA
 
 Mantyke  
 Ability: Swift Swim  
-Level: 38  
+Level: 37
 Tera Type: Water  
 EVs: 252 HP / 252 Atk  
 - Slam  
@@ -16421,7 +16421,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Budew @ Wide Lens
 Ability: Natural Cure  
-Level: 37  
+Level: 35
 Tera Type: Grass  
 EVs: 252 HP / 252 SpA  
 - Extrasensory  
@@ -16431,7 +16431,7 @@ EVs: 252 HP / 252 SpA
 
 Cleffa  @ Starf Berry
 Ability: Cute Charm  
-Level: 37  
+Level: 35  
 Tera Type: Fairy  
 EVs: 252 HP / 128 Atk / 128 SpA  
 - Metronome  
@@ -16441,9 +16441,9 @@ EVs: 252 HP / 128 Atk / 128 SpA
 
 Pichu  @ Light Ball
 Ability: Lightning Rod  
-Level: 36  
+Level: 34
 Tera Type: Electric  
-EVs: 252 HP / 252 Atk  
+EVs: 252 HP / 128 Atk  
 - Disarming Voice  
 - Fake Out  
 - Flail  
@@ -16451,7 +16451,7 @@ EVs: 252 HP / 252 Atk
 
 Smoochum (F)  
 Ability: Oblivious  
-Level: 37  
+Level: 35
 Tera Type: Ice  
 EVs: 252 HP / 252 Atk  
 Adamant Nature  
@@ -16462,7 +16462,7 @@ Adamant Nature
 
 Azurill @ Sitrus Berry  
 Ability: Thick Fat  
-Level: 37  
+Level: 35  
 Tera Type: Normal  
 EVs: 252 HP / 252 Atk  
 - Aqua Jet  
@@ -21491,7 +21491,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Hoothoot  
 Ability: Keen Eye  
-Level: 32  
+Level: 34
 Tera Type: Normal  
 EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
@@ -21502,7 +21502,7 @@ IVs: 0 Atk
 
 Pidove  
 Ability: Big Pecks  
-Level: 32  
+Level: 34
 EVs: 252 HP / 252 Atk
 Tera Type: Normal  
 - Peck  
@@ -21512,7 +21512,7 @@ Tera Type: Normal
 
 Starly  
 Ability: Reckless  
-Level: 32  
+Level: 34
 Tera Type: Normal  
 EVs: 252 HP / 252 Atk
 IVs: 0 HP  
@@ -21522,7 +21522,7 @@ IVs: 0 HP
 
 Quaxly  
 Ability: Moxie  
-Level: 32
+Level: 34
 EVs: 252 HP / 252 SpA
 Tera Type: Water  
 - Aerial Ace  
@@ -21541,8 +21541,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Varoom @ Shuca Berry
-Level: 33
-EVs: 252 HP / 252 Spe
+Level: 32
 Ability: Overcoat  
 Tera Type: Steel  
 - Spin Out  
@@ -21551,9 +21550,8 @@ Tera Type: Steel
 - Poison Gas  
 
 Whirlipede @ Insect Plate  
-Level: 33
+Level: 32
 Ability: Speed Boost  
-EVs: 252 Atk / 252 Spe
 Tera Type: Bug  
 - Rollout  
 - Steamroller  

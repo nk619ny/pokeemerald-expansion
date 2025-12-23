@@ -169,7 +169,7 @@ MauvilleCity_EventScript_DefeatedWally::
 	setflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL
 	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottApproachPlayerNorth
 	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottApproachPlayerEast
-	call_if_eq VAR_FACING, DIR_WEST, MauvilleCity_EventScript_ScottApproachPlayerEast
+	call_if_eq VAR_FACING, DIR_WEST, MauvilleCity_EventScript_ScottApproachPlayerWest
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox MauvilleCity_Text_ScottYouDidntHoldBack, MSGBOX_DEFAULT
@@ -189,6 +189,12 @@ MauvilleCity_EventScript_DefeatedWally::
 MauvilleCity_EventScript_ScottApproachPlayerNorth::
 	addobject LOCALID_MAUVILLE_SCOTT
 	applymovement LOCALID_MAUVILLE_SCOTT, MauvilleCity_Movement_ScottApproachPlayerNorth
+	waitmovement 0
+	return
+
+MauvilleCity_EventScript_ScottApproachPlayerWest::
+	addobject LOCALID_MAUVILLE_SCOTT
+	applymovement LOCALID_MAUVILLE_SCOTT, MauvilleCity_Movement_ScottApproachPlayerWest
 	waitmovement 0
 	return
 
@@ -392,16 +398,27 @@ MauvilleCity_Movement_ScottApproachPlayerNorth:
 MauvilleCity_Movement_ScottApproachPlayerEast:
 	walk_up
 	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
 	walk_up
-	walk_up
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 	walk_up
 	step_end
+
+
+MauvilleCity_Movement_ScottApproachPlayerWest:
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	step_end
+
+
 
 MauvilleCity_Movement_ScottExitNorth:
 	walk_left
