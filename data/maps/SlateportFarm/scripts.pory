@@ -154,7 +154,7 @@ script SlateportFarm_EventScript_AquaVictory {
     msgbox(format("Magma Admin: No... You've defeated our Pokémon..."))
     waitmessage
     closemessage
-    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_FaceRight)
+    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceRight)
     applymovement(LOCALID_FARM_AQUAMULTIGRUNT,Common_Movement_FaceLeft)
     waitmovement(0)
     msgbox(format("Aqua Admin: Now is our opportunity! Bring the Pokémon!"))
@@ -195,7 +195,8 @@ script SlateportFarm_EventScript_AquaVictory {
     removeobject(12)   
     removeobject(13)
 
-    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_FaceRight)
+    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_FaceLeft)
     waitmovement(0)
     msgbox(format("Aqua Admin: I'm glad you arrived. The geniuses that now call themselves Team Magma built this wall to close off Slateport Bay. They said they were going to make new land for farms - what they didn't tell us was how badly it would devastate the sealife around Slateport. Many Pokémon lost their habitat, and many of us lost our way of life."))
     waitmessage
@@ -215,6 +216,7 @@ script SlateportFarm_EventScript_AquaVictory {
     applymovement(LOCALID_FARM_BRAWLY,SlateportFarm_Movement_BrawlyRescuePlayer)
     waitmovement(0)
     applymovement(LOCALID_FARM_BRAWLY,Common_Movement_FaceDown)
+    applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_FaceUp)
     waitmovement(0)
     msgbox(format("Brawly: These Electrode are going to explode! We need to get out of here immediately!"))
     waitmessage
@@ -256,13 +258,15 @@ script SlateportFarm_EventScript_MagmaVictory {
     applymovement(LOCALID_FARM_AQUAMULTIGRUNT,SlateportFarm_Movement_AquaLeavesInDefeat)
     waitmovement(0)
     applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_FaceRight)
-    waitmovement(30)
+    waitmovement(0)
+    delay(20)
     applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_FaceDown)
-    waitmovement(30)
+    waitmovement(0)
     msgbox(format("Magma Admin: Thank you both for your help. The people of Slateport need these farms, and I shudder to think what Team Aqua would have done to them in their attempt to 'fix' Slateport Bay."))
     waitmessage
     applymovement(LOCALID_FARM_BRAWLY,Common_Movement_FaceUp)
-    waitmovement(5)
+    waitmovement(0)
+    delay(10)
     msgbox(format("Brawly: I agree, but they have a point about some of the consequences of the land reclamation project. We all need to be more careful going forward how we develop Hoenn, and what it means for the Pokémon in the region."))
     msgbox(format("Magma Admin: Like it or not, Hoenn is growing at a rapid rate. We need more land for people to live, and to grow crops and raise livestock to support them. It might be painful at times, but the scientists at Team Magma will not sit on the sidelines and allow Hoenn to crash into a resource crisis.\pRegardless, thank you."))
     waitmessage
@@ -273,7 +277,7 @@ script SlateportFarm_EventScript_MagmaVictory {
     waitmessage
     giveitem(ITEM_HM01)
     closemessage
-    removeobject(4)
+    removeobject(LOCALID_MAGMAADMINMON)
     setflag(FLAG_RECEIVED_HM_CUT)
     applymovement(LOCALID_FARM_MAGMAADMIN,SlateportFarm_Movement_MagmaLeaves)
     waitmovement(0)
@@ -283,7 +287,7 @@ script SlateportFarm_EventScript_MagmaVictory {
     waitmovement(0)
     applymovement(LOCALID_FARM_BRAWLY,Common_Movement_FaceRight)
     applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_FaceLeft)
-    waitmovement(10)
+    waitmovement(0)
     msgbox(format("Brawly: You don't look like a member of Team Magma, and I don't recognize you from Slateport.\pOh! You're a Pokémon Trainer! I'm Brawly, the Dewford Gym Leader.\p...Oh! You came here looking for me! You're trying to take the Hoenn League Challenge.\pWell, now that the situation here is taken care of, I'll head back to Dewford. Come by soon, I look forward to your challenge!"))
     waitmessage
     applymovement(LOCALID_FARM_BRAWLY,SlateportFarm_Movement_MagmaLeaves)

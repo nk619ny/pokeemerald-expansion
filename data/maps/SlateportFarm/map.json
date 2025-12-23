@@ -43,6 +43,7 @@
       "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     },
     {
+      "local_id": "LOCALID_AQUAADMINMON",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARIADOS)",
       "x": 18,
       "y": 37,
@@ -56,6 +57,7 @@
       "flag": "FLAG_SLATEPORT_FARM_COMPLETED"
     },
     {
+      "local_id": "LOCALID_MAGMAADMINMON",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDSLASH)",
       "x": 18,
       "y": 36,
@@ -419,7 +421,7 @@
       "x": 22,
       "y": 36,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

@@ -3900,7 +3900,7 @@ Tera Type: Normal
 
 
 === TRAINER_HATTORI === /* Petalburg Woods */
-Name: BROOKE
+Name: HATTORI
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
@@ -5707,7 +5707,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mankey @ Liechi Berry  
 Ability: Vital Spirit  
-Level: 21  
+Level: 22 
 Tera Type: Fighting  
 Relaxed Nature  
 IVs: 0 Spe  
@@ -5718,7 +5718,7 @@ IVs: 0 Spe
 
 Nuzleaf  
 Ability: Pickpocket  
-Level: 20  
+Level: 22
 Tera Type: Grass  
 - Fake Out  
 - Brick Break  
@@ -5727,7 +5727,7 @@ Tera Type: Grass
 
 Pignite  
 Ability: Blaze  
-Level: 20  
+Level: 22  
 Tera Type: Fire  
 - Flame Charge  
 - Trailblaze  
@@ -5736,7 +5736,7 @@ Tera Type: Fire
 
 Machop  
 Ability: No Guard  
-Level: 21  
+Level: 23 
 Tera Type: Fighting  
 - Bullet Punch  
 - Mega Punch  
@@ -8188,7 +8188,7 @@ Jolly Nature
 Tauros-Paldea-Aqua (M) @ Salac Berry  
 Ability: Anger Point  
 Ball: Luxury Ball
-Level: 24
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Raging Bull  
 - Aqua Jet  
@@ -8198,7 +8198,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Coba Berry
 Ability: Technician 
 Ball : Nest Ball 
-Level: 24 
+Level: 23 
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bullet Seed  
 - Mach Punch  
@@ -8210,7 +8210,7 @@ Ability: Speed Boost
 Ball: Fast Ball
 Level: 25
 Tera Type: Grass
-EVs: 64 SpA /* IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe / HP Grass IVs for Max Atk */
+EVs: 64 SpA
 - Flame Burst  
 - Aura Sphere  
 - Hidden Power
@@ -8219,7 +8219,8 @@ EVs: 64 SpA /* IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe / HP Gras
 Perrserker @ Expert Belt
 Ability: Tough Claws
 Ball: Heavy Ball
-Level: 24
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Adamant Nature  
 - Fake Out  
 - Iron Head  
@@ -8229,7 +8230,7 @@ Adamant Nature
 Hariyama @ Sitrus Berry
 Ability: Guts  
 Ball: Level Ball
-Level: 25
+Level: 24
 EVs: 64 Def / 64 SpD  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Careful Nature  
@@ -12327,7 +12328,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Maschiff  
 Ability: Intimidate  
-Level: 20  
+Level: 22
 Tera Type: Dark  
 - Bite  
 - Ice Fang  
@@ -12336,7 +12337,7 @@ Tera Type: Dark
 
 Pawmi  
 Ability: Volt Absorb  
-Level: 20  
+Level: 22
 Tera Type: Electric  
 - Spark  
 - Sweet Kiss  
@@ -12345,7 +12346,7 @@ Tera Type: Electric
 
 Sneasel-Hisui  
 Ability: Inner Focus  
-Level: 20  
+Level: 21 
 Tera Type: Fighting  
 - Reversal  
 - Poison Tail  
@@ -12354,7 +12355,7 @@ Tera Type: Fighting
 
 Chimchar  
 Ability: Iron Fist  
-Level: 20
+Level: 22
 Tera Type: Fire  
 - Fire Punch  
 - Thunder Punch  
@@ -12372,7 +12373,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Pawniard  
 Ability: Defiant  
-Level: 22  
+Level: 22
 Tera Type: Dark  
 - Beat Up  
 - Metal Claw  
@@ -12381,7 +12382,7 @@ Tera Type: Dark
 
 Stufful  
 Ability: Fluffy  
-Level: 21  
+Level: 22
 Tera Type: Normal  
 - Charm  
 - Taunt  
@@ -12399,7 +12400,7 @@ Tera Type: Fighting
 
 Riolu  
 Ability: Prankster  
-Level: 21  
+Level: 22
 Tera Type: Fighting  
 - Bulk Up  
 - Attract  
@@ -17152,7 +17153,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Clobbopus  
 Ability: Technician  
-Level: 21  
+Level: 22
 Tera Type: Fighting  
 - Circle Throw  
 - Waterfall  
@@ -17161,7 +17162,7 @@ Tera Type: Fighting
 
 Croagunk  
 Ability: Poison Touch  
-Level: 22  
+Level: 23
 Tera Type: Poison  
 EVs: 252 Atk / 252 SpA  
 - Fake Out  
@@ -17171,7 +17172,7 @@ EVs: 252 Atk / 252 SpA
 
 Crabrawler  
 Ability: Hyper Cutter  
-Level: 21  
+Level: 22  
 Tera Type: Fighting  
 - Crabhammer  
 - Brick Break  
@@ -17180,7 +17181,7 @@ Tera Type: Fighting
 
 Dewott  
 Ability: Shell Armor  
-Level: 20  
+Level: 21
 Tera Type: Water  
 - Aqua Cutter  
 - Aerial Ace  
@@ -17199,7 +17200,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Meditite  
 Ability: Pure Power  
-Level: 21  
+Level: 23
 Tera Type: Fighting  
 - Zen Headbutt  
 - Brick Break  
@@ -17208,7 +17209,7 @@ Tera Type: Fighting
 
 Nymble  
 Ability: Tinted Lens  
-Level: 22  
+Level: 23 
 Tera Type: Bug  
 - Pounce  
 - Double Kick  
@@ -17217,7 +17218,7 @@ Tera Type: Bug
 
 Farfetch’d-Galar  
 Ability: Scrappy  
-Level: 20  
+Level: 22 
 Tera Type: Fighting  
 - Wing Attack  
 - Rock Smash  
@@ -17226,7 +17227,7 @@ Tera Type: Fighting
 
 Mienfoo  
 Ability: Inner Focus  
-Level: 21  
+Level: 23
 Tera Type: Fighting  
 - Fake Out  
 - Low Kick  
@@ -17242,9 +17243,9 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Scraggy  
+Scraggy 
 Ability: Intimidate  
-Level: 21  
+Level: 22  
 Tera Type: Dark  
 - Fake Out  
 - Lash Out  
@@ -17262,7 +17263,7 @@ Tera Type: Fighting
 
 Pancham  
 Ability: Mold Breaker  
-Level: 21  
+Level: 23  
 Tera Type: Fighting  
 - Mega Punch  
 - Power Trip  
@@ -17271,8 +17272,7 @@ Tera Type: Fighting
 
 Ledian @ Charti Berry  
 Ability: Iron Fist  
-Level: 22
-EVs: 252 Atk
+Level: 20
 Tera Type: Bug  
 - Comet Punch  
 - Ice Punch  

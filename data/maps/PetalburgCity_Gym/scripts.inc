@@ -3378,7 +3378,7 @@ PetalburgCity_Gym_EventScript_NormanPostBattle::
 # 1715 "data/maps/PetalburgCity_Gym/scripts.pory"
 	msgbox PetalburgCity_Gym_EventScript_NormanPostBattle_Text_0
 # 1716 "data/maps/PetalburgCity_Gym/scripts.pory"
-	dynmultichoice 25, 3, 0, 5, 0, DYN_MULTICHOICE_CB_NONE, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_1, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_2, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_3, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_4, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_5
+	dynmultichoice 25, 2, 0, 5, 0, DYN_MULTICHOICE_CB_NONE, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_1, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_2, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_3, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_4, PetalburgCity_Gym_EventScript_NormanPostBattle_Text_5
 # 1717 "data/maps/PetalburgCity_Gym/scripts.pory"
 	switch VAR_RESULT
 # 1718 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3451,7 +3451,7 @@ PetalburgCity_Gym_EventScript_DefeatedNorman::
 # 1753 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call Common_EventScript_RemoveOptionalItems0
 # 1754 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_LEVEL_CAP, 24
+	setvar VAR_LEVEL_CAP, 21
 # 1755 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call Common_EventScript_ApplyHandicap
 # 1756 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3773,28 +3773,30 @@ PetalburgCity_Gym_EventScript_NormanPostBattle_Text_5:
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_6:
 # 1719 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Unfortunately, the bridge to\n"
-	.string "Rustboro City is down. However, my\l"
-	.string "friend Mr. Briney can take you to\l"
-	.string "Dewford to start the Gym Challenge\l"
-	.string "there. He lives just West of Petalburg\l"
-	.string "in Route 104 South.$"
+	.string "Rustboro City is down.\p"
+	.string "However, my friend Mr. Briney can take\n"
+	.string "you to Dewford to start the Gym\l"
+	.string "Challenge there.\p"
+	.string "He lives just West of Petalburg in\n"
+	.string "Route 104 South.$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_7:
 # 1721 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Dad: Ah, yes, many trainers are\n"
-	.string "confused about the low-level Slaking.\l"
-	.string "Well, it is my signature Pokémon, and\l"
+	.string "confused about the low-level Slaking.\p"
+	.string "Well, it is my signature Pokémon, and\n"
 	.string "even for new trainers it presents an\l"
-	.string "interested challenge to manage. I\l"
-	.string "found a strange seed in a faraway land\l"
-	.string "that actually allows me to reduce the\l"
-	.string "level of my Pokémon - I used this to\l"
+	.string "interested challenge to manage.\p"
+	.string "I found a strange seed in a faraway\n"
+	.string "land that actually allows me to reduce\l"
+	.string "the level of my Pokémon - I used this to\l"
 	.string "weaken a Slaking after evolving it, so I\l"
 	.string "could use it in battles against Trainers\l"
-	.string "without a badge yet. I'll tell you more\l"
-	.string "about this place I visited another time\l"
-	.string "- I'd never seen Kecleon as strong as\l"
-	.string "the ones that were there.$"
+	.string "without a badge yet.\p"
+	.string "I'll tell you more about this place I\n"
+	.string "visited another time - I'd never seen\l"
+	.string "Kecleon as strong as the ones that\l"
+	.string "were there.$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_8:
 # 1723 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3802,10 +3804,11 @@ PetalburgCity_Gym_EventScript_NormanPostBattle_Text_8:
 	.string "feel like I've found the perfect Trainer\l"
 	.string "to replace me. I gave it a lot of\l"
 	.string "thought, and I think they will do a\l"
-	.string "great job. I'm really excited for you to\l"
-	.string "meet them. It will take a little more\l"
-	.string "time for them to return and get the gym\l"
-	.string "set up, but I will call you when they do.$"
+	.string "great job.\p"
+	.string "I'm really excited for you to meet them.\n"
+	.string "It will take a little more time for them\l"
+	.string "to return and get the gym set up, but I\l"
+	.string "will call you when they do.$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_9:
 # 1726 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3817,11 +3820,12 @@ PetalburgCity_Gym_EventScript_NormanPostBattle_Text_9:
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_10:
 # 1728 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "That one is extra special, as it\n"
-	.string "possesses a rare ability. Based on the\l"
-	.string "stone you give it, it will influence the\l"
-	.string "environment around it. Not many\l"
-	.string "Pokémon can do this. I trust you'll\l"
-	.string "decide wisely how to train this Eevee.$"
+	.string "possesses a rare ability.\p"
+	.string "Based on the stone you give it, it will\n"
+	.string "influence the environment around it.\p"
+	.string "Not many Pokémon can do this. I trust\n"
+	.string "you'll decide wisely how to train this\l"
+	.string "Eevee.$"
 
 PetalburgCity_Gym_EventScript_NormanPostBattle_Text_11:
 # 1731 "data/maps/PetalburgCity_Gym/scripts.pory"

@@ -591,7 +591,7 @@ SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis:
 # 296 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	.string "you thumped before, remember?\l"
 # 297 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
-	.string "Back in RUSTURF TUNNEL?\p"
+	.string "Back in Petalburg Woods?\p"
 # 298 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
 	.string "Here, take this!\n"
 # 299 "data/maps/SlateportCity_OceanicMuseum_1F/scripts.pory"
