@@ -111,12 +111,18 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	call MauvilleCity_Gym_EventScript_GiveShockWave
 	closemessage
 	delay 30
+	msgbox MauvilleCity_Gym_Text_WattsonExplainMegaEvolution, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_MEGA_RING
+	waitfanfare
+	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
 	msgbox MauvilleCity_Gym_Text_RegisteredWattson, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_WATTSON_MATCH_CALL
+	call MauvilleCity_Gym_EventScript_SetNewLevelCap
 	release
 	end
 
@@ -133,7 +139,6 @@ MauvilleCity_Gym_EventScript_GiveShockWave::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox MauvilleCity_Gym_Text_ExplainShockWave, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_SHOCK_WAVE
-	call MauvilleCity_Gym_EventScript_SetNewLevelCap
 	return
 
 MauvilleCity_Gym_EventScript_CompletedNewMauville::
@@ -547,6 +552,10 @@ script MauvilleCity_Gym_EventScript_GymGuideWattsonBusy {
 
 text MauvilleCity_Gym_Text_GymGuideWattsonBusy{
 	format("Wattson is busy right now.\pYou should come back later.\nI recommend checking out Verdanturf Town to the West - it's quite lovely!")
+}
+
+text MauvilleCity_Gym_Text_WattsonExplainMegaEvolution{
+	format("Wattson: One last thing. You may have noticed my Manectric Mega Evolved during our battle.\pAll Gym Leaders after a Trainer's first will use a Mega Evolution in battle.\pYou should collect Mega Stones so you can, too!")
 }
 
 text MauvilleCity_Gym_Text_GymGuideHaltPlayer{
