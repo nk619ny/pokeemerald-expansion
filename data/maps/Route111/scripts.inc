@@ -1519,8 +1519,8 @@ Route111_EventScript_ScorcingSandsHiker_2:
 
 Route111_EventScript_WinstratesCheckBadge_Text_0:
 # 734 "data/maps/Route111/scripts.pory"
-	.string "Victor: Before we start, do you have\n"
-	.string "the Mauville Gym Badge?\p"
+	.string "Before we start, do you have the\n"
+	.string "Mauville Gym Badge?\p"
 	.string "No?\n"
 	.string "Well, then I don't think you're ready to\l"
 	.string "battle us.\p"

@@ -204,6 +204,24 @@
       "var": "VAR_TEMP_7",
       "var_value": "0",
       "script": "MauvilleCity_Gym_EventScript_HaltPlayerTrigger9"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_9",
+      "var_value": "0",
+      "script": "MauvilleCity_Gym_EventScript_SoftlockGuard"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_9",
+      "var_value": "0",
+      "script": "MauvilleCity_Gym_EventScript_SoftlockGuard"
     }
   ],
   "bg_events": [

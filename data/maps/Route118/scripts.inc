@@ -363,7 +363,7 @@ Route118_Movement_StevenExit2:
 # 182 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Rose::
 # 183 "data/maps/Route118/scripts.pory"
-	trainerbattle_single TRAINER_ROSE_1, Route118_Text_RoseIntro, Route118_Text_RoseDefeat, Route118_EventScript_RegisterRose
+	trainerbattle_single TRAINER_ROSE_1, Route118_Text_RoseIntro, Route118_Text_RoseDefeat
 # 184 "data/maps/Route118/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 185 "data/maps/Route118/scripts.pory"

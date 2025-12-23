@@ -731,7 +731,7 @@ script Route111_EventScript_WinstratesCheckBadge{
 		goto(Route111_EventScript_BattleWinstrates)
 	}
 	else {
-		msgbox(format("Victor: Before we start, do you have the Mauville Gym Badge?\pNo?\nWell, then I don't think you're ready to battle us.\pCome back after you've beaten Wattson!"), MSGBOX_DEFAULT)
+		msgbox(format("Before we start, do you have the Mauville Gym Badge?\pNo?\nWell, then I don't think you're ready to battle us.\pCome back after you've beaten Wattson!"), MSGBOX_DEFAULT)
 		waitmessage
 		releaseall
 		end

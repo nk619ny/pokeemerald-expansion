@@ -5,12 +5,17 @@ MauvilleCity_Gym_MapScripts::
 
 MauvilleCity_Gym_OnLoad:
 	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_DeactivatePuzzle
-	switch VAR_MAUVILLE_GYM_STATE
-	case 0, MauvilleCity_Gym_EventScript_UpdateBarriers
-	case 1, MauvilleCity_Gym_EventScript_Switch1Pressed
-	case 2, MauvilleCity_Gym_EventScript_Switch2Pressed
-	case 3, MauvilleCity_Gym_EventScript_Switch3Pressed
-	case 4, MauvilleCity_Gym_EventScript_Switch4Pressed
+	goto_if_eq VAR_TEMP_9, 1, MauvilleCity_Gym_EventScript_DeactivatePuzzle
+	//call_if_eq VAR_TEMP_1, 1, MauvilleCity_Gym_EventScript_Switch1New
+	//call_if_eq VAR_TEMP_2, 1, MauvilleCity_Gym_EventScript_Switch2New
+	//call_if_eq VAR_TEMP_3, 1, MauvilleCity_Gym_EventScript_Switch3New
+	//call_if_eq VAR_TEMP_4, 1, MauvilleCity_Gym_EventScript_Switch4New
+	//switch VAR_MAUVILLE_GYM_STATE
+	//case 0, MauvilleCity_Gym_EventScript_UpdateBarriers
+	//case 1, MauvilleCity_Gym_EventScript_Switch1Pressed
+	//case 2, MauvilleCity_Gym_EventScript_Switch2Pressed
+	//case 3, MauvilleCity_Gym_EventScript_Switch3Pressed
+	//case 4, MauvilleCity_Gym_EventScript_Switch4Pressed
 	end
 
 MauvilleCity_Gym_EventScript_UpdateBarriers::
@@ -75,9 +80,9 @@ MauvilleCity_Gym_EventScript_DeactivatePuzzle::
 	end
 
 MauvilleCity_Gym_EventScript_Wattson::
-	trainerbattle_single TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonIntro, MauvilleCity_Gym_Text_WattsonDefeat, MauvilleCity_Gym_EventScript_WattsonDefeated, NO_MUSIC
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_Gym_EventScript_WattsonRematch
+	trainerbattle_single TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonIntro, MauvilleCity_Gym_Text_WattsonDefeat, MauvilleCity_Gym_EventScript_WattsonDefeated
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
+	//goto_if_eq VAR_RESULT, TRUE, MauvilleCity_Gym_EventScript_WattsonRematch
 	goto_if_unset FLAG_RECEIVED_TM_SHOCK_WAVE, MauvilleCity_Gym_EventScript_GiveShockWave2
 	goto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_Gym_EventScript_CompletedNewMauville
 	msgbox MauvilleCity_Gym_Text_WattsonPostBattle, MSGBOX_DEFAULT
@@ -364,8 +369,6 @@ MauvilleCity_Gym_Text_ReceivedDynamoBadge:
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
 	.string "With the DYNAMO BADGE, POKéMON can\n"
 	.string "use ROCK SMASH out of battle.\p"
-	.string "And, it will make your POKéMON a little\n"
-	.string "bit faster, too.\p"
 	.string "Hmm…\n"
 	.string "You should take this, too!$"
 
@@ -513,7 +516,7 @@ script MauvilleCity_Gym_EventScript_Switch4New {
 
 script MauvilleCity_Gym_EventScript_SetNewLevelCap {
 //	setvar(VAR_LEVEL_HANDICAP, 5)
-	setvar(VAR_LEVEL_CAP, 45)
+	setvar(VAR_LEVEL_CAP, 39)
 	call(Common_EventScript_ApplyHandicap)
 	call(Common_EventScript_LevelCapUpdate)
 //	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
@@ -672,4 +675,10 @@ movement MauvilleCity_Gym_Movement_GymGuideReturnToSpot8 {
 
 movement MauvilleCity_Gym_Movement_GymGuideReturnToSpot9 {
 	walk_right * 5
+}
+
+script MauvilleCity_Gym_EventScript_SoftlockGuard {
+	setvar(VAR_TEMP_9,1)
+	releaseall
+	return
 }

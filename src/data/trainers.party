@@ -8281,7 +8281,7 @@ Level: 34
 EVs: 128 Atk / 128 Spe  
 Jolly Nature  
 - Supercell Slam  
-- Acrobatics  
+- Dual Wingbeat  
 - U-turn  
 - Quick Attack  
 
@@ -8302,7 +8302,7 @@ Ability: Static
 Ball: Fast Ball 
 Level: 36
 IVs: 0 Atk  
-EVs: 96 SpA / 96 Spe  
+EVs: 64 Spe  
 Tera Type: Grass
 Modest Nature  
 - Volt Switch  
