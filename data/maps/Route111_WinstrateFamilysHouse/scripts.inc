@@ -220,10 +220,10 @@ Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem::
 	goto_if_unset FLAG_RECEIVED_CHOICE_BAND, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_2
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_1:
 # 124 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_CHOICE_SCARF, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_5
+	goto_if_unset FLAG_RECEIVED_CHOICE_SPECS, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_5
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_4:
 # 125 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_CHOICE_SPECS, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_8
+	goto_if_unset FLAG_RECEIVED_CHOICE_SCARF, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_8
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_7:
 # 126 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_LEFTOVERS, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_11
@@ -324,12 +324,12 @@ Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_21:
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_22:
 # 136 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_2
+	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_1
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_19
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_23:
 # 138 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_1
+	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_2
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_19
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_24:
@@ -444,11 +444,11 @@ Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_0:
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_1:
 # 124 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	.string "Choice Scarf$"
+	.string "Choice Specs$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_2:
 # 125 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	.string "Choice Specs$"
+	.string "Choice Scarf$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_3:
 # 126 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"

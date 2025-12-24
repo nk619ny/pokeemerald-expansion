@@ -121,8 +121,8 @@ text Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort {
 script Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem {
 	lock
 	if(!flag(FLAG_RECEIVED_CHOICE_BAND)) {dynmultipush("Choice Band",0)}
-    if(!flag(FLAG_RECEIVED_CHOICE_SCARF)) {dynmultipush("Choice Scarf",1)}
-    if(!flag(FLAG_RECEIVED_CHOICE_SPECS)) {dynmultipush("Choice Specs",2)}
+    if(!flag(FLAG_RECEIVED_CHOICE_SPECS)) {dynmultipush("Choice Specs",1)}
+    if(!flag(FLAG_RECEIVED_CHOICE_SCARF)) {dynmultipush("Choice Scarf",2)}
     if(!flag(FLAG_RECEIVED_LEFTOVERS)) {dynmultipush("Leftovers",3)}
     if(!flag(FLAG_RECEIVED_LIFE_ORB)) {dynmultipush("Life Orb",4)}
     if(!flag(FLAG_RECEIVED_ASSAULT_VEST)) {dynmultipush("Assault Vest",5)}

@@ -151,20 +151,22 @@ script SlateportFarm_EventScript_AquaVictory {
     lock
     removeobject(4)
     setobjectxy(LOCALID_FARM_AQUAGRUNTBOMBER,27,35)
-    msgbox(format("Magma Admin: No... You've defeated our Pokémon..."))
+    msgbox(format("Tabitha: No... You've defeated our Pokémon..."))
     waitmessage
     closemessage
     applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceRight)
     applymovement(LOCALID_FARM_AQUAMULTIGRUNT,Common_Movement_FaceLeft)
     waitmovement(0)
-    msgbox(format("Aqua Admin: Now is our opportunity! Bring the Pokémon!"))
-    msgbox(format("Magma Admin: We must fall back. We don't have the strength to stop them, and we don't want to be here when they bring down the wall."))
+    msgbox(format("Matt: Now is our opportunity! Bring the Pokémon!"))
+    applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_WalkInPlaceRight)
+    applymovement(LOCALID_FARM_MAGMAMULTIGRUNT,Common_Movement_FaceLeft)
+    waitmovement(0)
+    msgbox(format("Tabitha: We must retreat. We can't stop them, and we don't want to be here when they bring down the barrier."))
     waitmessage
     closemessage
     applymovement(LOCALID_FARM_MAGMAADMIN,SlateportFarm_Movement_AquaLeavesInDefeat)
     applymovement(LOCALID_FARM_MAGMAMULTIGRUNT,SlateportFarm_Movement_AquaLeavesInDefeat)
-    waitmovement(LOCALID_FARM_MAGMAADMIN)
-    waitmovement(LOCALID_FARM_MAGMAMULTIGRUNT)
+    waitmovement(0)
     removeobject(LOCALID_FARM_MAGMAADMIN)
     removeobject(LOCALID_FARM_MAGMAMULTIGRUNT)
     removeobject(3)
@@ -198,16 +200,15 @@ script SlateportFarm_EventScript_AquaVictory {
     applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceRight)
     applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_FaceLeft)
     waitmovement(0)
-    msgbox(format("Aqua Admin: I'm glad you arrived. The geniuses that now call themselves Team Magma built this wall to close off Slateport Bay. They said they were going to make new land for farms - what they didn't tell us was how badly it would devastate the sealife around Slateport. Many Pokémon lost their habitat, and many of us lost our way of life."))
+    msgbox(format("Matt: I'm glad you came. The geniuses that call themselves Team Magma built this wall to close off Slateport Bay.\pThey said they were going to make new land for farms.\NBut they didn't tell us how bad it would be for sealife around Slateport.\NMany Pokémon lost their habitat, and lots of us lost our way of life."))
     waitmessage
-    
-    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_FaceUp)
+    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceUp)
     waitmovement(0)
-    msgbox(format("Aqua Admin: But today we're going to bring down this wall, and fix all that."))
+    msgbox(format("Matt: But today we're going to fix all that."))
     waitmessage
-    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_FaceRight)
+    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceRight)
     waitmovement(0)
-    msgbox(format("Aqua Admin: As a reward for your help, take this. It's a field move that will allow you to trim down trees, once your Pokémon are strong enough to use it.\pThe small trees grow back fairly quickly, and you've proven yourself responsible enough to use it."))
+    msgbox(format("Matt: As thanks for your help, take this. It will allow you to trim down trees, once your Pokémon are strong enough to use it.\pThe small trees grow back fairly quickly, and you've proven yourself responsible."))
     waitmessage
     giveitem(ITEM_HM01)
     closemessage
@@ -244,36 +245,41 @@ script SlateportFarm_EventScript_MagmaVictory {
 	special(SpawnCameraObject)
 	applymovement(OBJ_EVENT_ID_CAMERA, SlateportFarm_Movement_CameraPanDown)
 	waitmovement(0)
-    msgbox(format("Aqua Admin: Tch... You've defeated our Pokémon."))
+    msgbox(format("Matt: Tch... You've defeated our Pokémon."))
     waitmessage
     closemessage
     applymovement(LOCALID_FARM_BRAWLY,SlateportFarm_Movement_BrawlyChaseAqua)
     //applymovement(LOCALID_FARM_BRAWLYMON,SlateportFarm_Movement_BrawlyChaseAqua)
-    waitmovement(30)
-    msgbox(format("Brawly: You can't just take matters into your own hands like that! The people of Slateport chose to develop these farms, and they have already been setup. I'm sorry, but that's the situation. Now go!"))
-    msgbox(format("Aqua Admin: We are not going to forget the harm done by this 'land reclamation', and we will not give up. We will not allow Team Magma and the shortsighted few of Hoenn to destroy the delicate natural balance all people and Pokémon rely on.\pWe will be back."))
+    waitmovement(0)
+    delay(20)
+    msgbox(format("Brawly: You can't just take matters into your own hands like this!\pThe people of Slateport chose to develop these farms, and they have already been established.\pI'm sorry, but that's the situation. Now go!"))
+    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceUp)
+    waitmovement(0)
+    msgbox(format("Matt: We are not going to forget the harm they've done, and we will not give up.\pWe will not allow a few fools to destroy the delicate natural balance we all rely on.\pWe will be back."))
     waitmessage
     closemessage
     applymovement(LOCALID_FARM_AQUAADMIN,SlateportFarm_Movement_AquaLeavesInDefeat)
     applymovement(LOCALID_FARM_AQUAMULTIGRUNT,SlateportFarm_Movement_AquaLeavesInDefeat)
     waitmovement(0)
-    applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_FaceRight)
+    applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_WalkInPlaceRight)
     waitmovement(0)
     delay(20)
-    applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_FaceDown)
+    applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_WalkInPlaceDown)
     waitmovement(0)
-    msgbox(format("Magma Admin: Thank you both for your help. The people of Slateport need these farms, and I shudder to think what Team Aqua would have done to them in their attempt to 'fix' Slateport Bay."))
+    msgbox(format("Tabitha: Thank you both for your help.\pI hate to think what Team Aqua would have done to them in their attempt to 'fix' Slateport Bay."))
     waitmessage
-    applymovement(LOCALID_FARM_BRAWLY,Common_Movement_FaceUp)
+    applymovement(LOCALID_FARM_BRAWLY,Common_Movement_WalkInPlaceUp)
     waitmovement(0)
     delay(10)
-    msgbox(format("Brawly: I agree, but they have a point about some of the consequences of the land reclamation project. We all need to be more careful going forward how we develop Hoenn, and what it means for the Pokémon in the region."))
-    msgbox(format("Magma Admin: Like it or not, Hoenn is growing at a rapid rate. We need more land for people to live, and to grow crops and raise livestock to support them. It might be painful at times, but the scientists at Team Magma will not sit on the sidelines and allow Hoenn to crash into a resource crisis.\pRegardless, thank you."))
+    msgbox(format("Brawly: I agree, but they have a point about some of the consequences of the land reclamation project..."))
+    closemessage
+    applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_WalkInPlaceDown)
+    msgbox(format("Tabitha: Like it or not, Hoenn is growing at a rapid rate.\pIt might be painful at times, but the scientists at Team Magma will not sit on the sidelines for a looming resource crisis."))
     waitmessage
-    applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_FaceRight)
-    applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_FaceLeft)
+    applymovement(LOCALID_FARM_MAGMAADMIN,Common_Movement_WalkInPlaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
-    msgbox(format("Magma Admin: Take this as a token of our appreciation.\pThis field move will allow you to cut down small trees blocking your path, once your Pokémon are strong enough to use it.\pIt's sometimes necessary to bend the environment around us to move forward."))
+    msgbox(format("Tabitha: Take this as a token of our appreciation.\pThis field move will allow you to cut down small trees blocking your path, once your Pokémon are strong enough to use it.\pIt's sometimes necessary to bend the environment around us to move forward."))
     waitmessage
     giveitem(ITEM_HM01)
     closemessage
@@ -285,10 +291,10 @@ script SlateportFarm_EventScript_MagmaVictory {
     //removeobject(LOCALID_FARM_BRAWLYMON)
     applymovement(LOCALID_FARM_BRAWLY,SlateportFarm_Movement_BrawlyApproachPlayer)
     waitmovement(0)
-    applymovement(LOCALID_FARM_BRAWLY,Common_Movement_FaceRight)
-    applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_FaceLeft)
+    applymovement(LOCALID_FARM_BRAWLY,Common_Movement_WalkInPlaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_WalkInPlaceLeft)
     waitmovement(0)
-    msgbox(format("Brawly: You don't look like a member of Team Magma, and I don't recognize you from Slateport.\pOh! You're a Pokémon Trainer! I'm Brawly, the Dewford Gym Leader.\p...Oh! You came here looking for me! You're trying to take the Hoenn League Challenge.\pWell, now that the situation here is taken care of, I'll head back to Dewford. Come by soon, I look forward to your challenge!"))
+    msgbox(format("Brawly: You don't look like a member of Team Magma.\pOh! You're a Pokémon Trainer! I'm Brawly, the Dewford Gym Leader.\p...Oh! You came here looking for me!\pI'll head back to Dewford. Come by soon, I look forward to your challenge!"))
     waitmessage
     applymovement(LOCALID_FARM_BRAWLY,SlateportFarm_Movement_MagmaLeaves)
     waitmovement(0)
