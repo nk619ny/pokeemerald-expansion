@@ -7408,7 +7408,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMantykeLevelUpLearnset,
         .teachableLearnset = sMantykeTeachableLearnset,
         .eggMoveLearnset = sMantykeEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MANTINE, CONDITIONS({IF_SPECIES_IN_PARTY, SPECIES_REMORAID})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MANTINE, CONDITIONS({IF_SPECIES_IN_PARTY, SPECIES_REMORAID})},
+                                {EVO_LEVEL, 0, SPECIES_MANTINE, CONDITIONS({IF_SPECIES_IN_PARTY, SPECIES_OCTILLERY})},
+                                {EVO_LEVEL, 40, SPECIES_MANTINE}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 

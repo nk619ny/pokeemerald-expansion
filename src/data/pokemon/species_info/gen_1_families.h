@@ -8671,7 +8671,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sKadabraLevelUpLearnset,
         .teachableLearnset = sKadabraTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ALAKAZAM},
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ALAKAZAM},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ALAKAZAM}),
     },
 
@@ -9000,7 +9000,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sMachokeLevelUpLearnset,
         .teachableLearnset = sMachokeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MACHAMP},
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MACHAMP},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_MACHAMP}),
     },
 
@@ -9836,7 +9836,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGravelerLevelUpLearnset,
         .teachableLearnset = sGravelerTeachableLearnset,
         .formSpeciesIdTable = sGravelerFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOLEM},
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GOLEM},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM}),
     },
 
@@ -10045,7 +10045,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGravelerAlolaLevelUpLearnset,
         .teachableLearnset = sGravelerAlolaTeachableLearnset,
         .formSpeciesIdTable = sGravelerFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOLEM_ALOLA},
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GOLEM_ALOLA},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM_ALOLA}),
     },
 
@@ -12308,7 +12308,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sHaunterLevelUpLearnset,
         .teachableLearnset = sHaunterTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GENGAR},
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GENGAR},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GENGAR}),
     },
 
