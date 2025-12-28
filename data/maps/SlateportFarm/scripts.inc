@@ -273,560 +273,574 @@ SlateportFarm_EventScript_AquaVictory::
 # 160 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_AquaVictory_Text_1
 # 161 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_AquaVictory_Text_2
+	applymovement LOCALID_FARM_MAGMAADMIN, Common_Movement_WalkInPlaceRight
 # 162 "data/maps/SlateportFarm/scripts.pory"
-	waitmessage
+	applymovement LOCALID_FARM_MAGMAMULTIGRUNT, Common_Movement_FaceLeft
 # 163 "data/maps/SlateportFarm/scripts.pory"
-	closemessage
+	waitmovement 0
 # 164 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_MAGMAADMIN, SlateportFarm_Movement_AquaLeavesInDefeat
+	msgbox SlateportFarm_EventScript_AquaVictory_Text_2
 # 165 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_MAGMAMULTIGRUNT, SlateportFarm_Movement_AquaLeavesInDefeat
+	waitmessage
 # 166 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement LOCALID_FARM_MAGMAADMIN
+	closemessage
 # 167 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement LOCALID_FARM_MAGMAMULTIGRUNT
+	applymovement LOCALID_FARM_MAGMAADMIN, SlateportFarm_Movement_AquaLeavesInDefeat
 # 168 "data/maps/SlateportFarm/scripts.pory"
-	removeobject LOCALID_FARM_MAGMAADMIN
+	applymovement LOCALID_FARM_MAGMAMULTIGRUNT, SlateportFarm_Movement_AquaLeavesInDefeat
 # 169 "data/maps/SlateportFarm/scripts.pory"
-	removeobject LOCALID_FARM_MAGMAMULTIGRUNT
+	waitmovement 0
 # 170 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 3
+	removeobject LOCALID_FARM_MAGMAADMIN
 # 171 "data/maps/SlateportFarm/scripts.pory"
-	addobject LOCALID_FARM_AQUAGRUNTBOMBER
+	removeobject LOCALID_FARM_MAGMAMULTIGRUNT
 # 172 "data/maps/SlateportFarm/scripts.pory"
-	setobjectxy LOCALID_FARM_AQUAGRUNTBOMBER, 27, 35
+	removeobject 3
 # 173 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAGRUNTBOMBER, SlateportFarm_BomberGruntMovement
+	addobject LOCALID_FARM_AQUAGRUNTBOMBER
 # 174 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAMULTIGRUNT, SlateportFarm_MultiBomberGruntMovement
+	setobjectxy LOCALID_FARM_AQUAGRUNTBOMBER, 27, 35
 # 175 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_FARM_AQUAGRUNTBOMBER, SlateportFarm_BomberGruntMovement
 # 176 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAGRUNTBOMBER, Common_Movement_FaceDown
+	applymovement LOCALID_FARM_AQUAMULTIGRUNT, SlateportFarm_MultiBomberGruntMovement
 # 177 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAMULTIGRUNT, Common_Movement_FaceDown
+	waitmovement 0
 # 178 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
-# 179 "data/maps/SlateportFarm/scripts.pory"
-	delay 20
-# 180 "data/maps/SlateportFarm/scripts.pory"
-	addobject LOCALID_FARM_ELECTRODEFARRIGHT
-# 181 "data/maps/SlateportFarm/scripts.pory"
-	addobject LOCALID_FARM_ELECTRODECENTERRIGHT
-# 182 "data/maps/SlateportFarm/scripts.pory"
-	delay 20
-# 183 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAGRUNTBOMBER, SlateportFarm_Movement_AquaGrunts4StepLeft
-# 184 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAMULTIGRUNT, SlateportFarm_Movement_AquaGrunts4StepLeft
-# 185 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
-# 186 "data/maps/SlateportFarm/scripts.pory"
 	applymovement LOCALID_FARM_AQUAGRUNTBOMBER, Common_Movement_FaceDown
-# 187 "data/maps/SlateportFarm/scripts.pory"
+# 179 "data/maps/SlateportFarm/scripts.pory"
 	applymovement LOCALID_FARM_AQUAMULTIGRUNT, Common_Movement_FaceDown
-# 188 "data/maps/SlateportFarm/scripts.pory"
+# 180 "data/maps/SlateportFarm/scripts.pory"
 	waitmovement 0
-# 189 "data/maps/SlateportFarm/scripts.pory"
+# 181 "data/maps/SlateportFarm/scripts.pory"
 	delay 20
+# 182 "data/maps/SlateportFarm/scripts.pory"
+	addobject LOCALID_FARM_ELECTRODEFARRIGHT
+# 183 "data/maps/SlateportFarm/scripts.pory"
+	addobject LOCALID_FARM_ELECTRODECENTERRIGHT
+# 184 "data/maps/SlateportFarm/scripts.pory"
+	delay 20
+# 185 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_AQUAGRUNTBOMBER, SlateportFarm_Movement_AquaGrunts4StepLeft
+# 186 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_AQUAMULTIGRUNT, SlateportFarm_Movement_AquaGrunts4StepLeft
+# 187 "data/maps/SlateportFarm/scripts.pory"
+	waitmovement 0
+# 188 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_AQUAGRUNTBOMBER, Common_Movement_FaceDown
+# 189 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_AQUAMULTIGRUNT, Common_Movement_FaceDown
 # 190 "data/maps/SlateportFarm/scripts.pory"
-	addobject LOCALID_FARM_ELECTRODEFARLEFT
+	waitmovement 0
 # 191 "data/maps/SlateportFarm/scripts.pory"
-	addobject LOCALID_FARM_ELECTRODECENTERLEFT
+	delay 20
 # 192 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 6
+	addobject LOCALID_FARM_ELECTRODEFARLEFT
 # 193 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 10
+	addobject LOCALID_FARM_ELECTRODECENTERLEFT
 # 194 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 11
+	removeobject 6
 # 195 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 12
+	removeobject 10
 # 196 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 13
+	removeobject 11
+# 197 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 12
 # 198 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAADMIN, Common_Movement_WalkInPlaceRight
-# 199 "data/maps/SlateportFarm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	removeobject 13
 # 200 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_FARM_AQUAADMIN, Common_Movement_WalkInPlaceRight
 # 201 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_AquaVictory_Text_3
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 # 202 "data/maps/SlateportFarm/scripts.pory"
-	waitmessage
+	waitmovement 0
+# 203 "data/maps/SlateportFarm/scripts.pory"
+	msgbox SlateportFarm_EventScript_AquaVictory_Text_3
 # 204 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAADMIN, Common_Movement_FaceUp
+	waitmessage
 # 205 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_FARM_AQUAADMIN, Common_Movement_WalkInPlaceFasterUp
 # 206 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_AquaVictory_Text_4
+	waitmovement 0
 # 207 "data/maps/SlateportFarm/scripts.pory"
-	waitmessage
+	msgbox SlateportFarm_EventScript_AquaVictory_Text_4
 # 208 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAADMIN, Common_Movement_FaceRight
+	waitmessage
 # 209 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_FARM_AQUAADMIN, Common_Movement_WalkInPlaceRight
 # 210 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_AquaVictory_Text_5
+	waitmovement 0
 # 211 "data/maps/SlateportFarm/scripts.pory"
-	waitmessage
+	msgbox SlateportFarm_EventScript_AquaVictory_Text_5
 # 212 "data/maps/SlateportFarm/scripts.pory"
-	giveitem ITEM_HM01
+	waitmessage
 # 213 "data/maps/SlateportFarm/scripts.pory"
-	closemessage
+	giveitem ITEM_HM01
 # 214 "data/maps/SlateportFarm/scripts.pory"
-	setflag FLAG_RECEIVED_HM_CUT
-# 216 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_BrawlyRescuePlayer
-# 217 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
-# 218 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_BRAWLY, Common_Movement_FaceDown
-# 219 "data/maps/SlateportFarm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
-# 220 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
-# 221 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_AquaVictory_Text_6
-# 222 "data/maps/SlateportFarm/scripts.pory"
-	waitmessage
-# 223 "data/maps/SlateportFarm/scripts.pory"
 	closemessage
-# 224 "data/maps/SlateportFarm/scripts.pory"
-	special SpawnCameraObject
-# 225 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_AquaLeavesInDefeat
-# 226 "data/maps/SlateportFarm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportFarm_Movement_AquaLeavesInDefeat
-# 227 "data/maps/SlateportFarm/scripts.pory"
+# 215 "data/maps/SlateportFarm/scripts.pory"
+	setflag FLAG_RECEIVED_HM_CUT
+# 217 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_BrawlyRescuePlayer
+# 218 "data/maps/SlateportFarm/scripts.pory"
 	waitmovement 0
-# 228 "data/maps/SlateportFarm/scripts.pory"
-	clearflag FLAG_SLATEPORT_FARM_COMPLETED
-# 229 "data/maps/SlateportFarm/scripts.pory"
-	setflag FLAG_SLATEPORT_BAY_FLOODED
-# 233 "data/maps/SlateportFarm/scripts.pory"
-	special RemoveCameraObject
-# 235 "data/maps/SlateportFarm/scripts.pory"
-	warp MAP_SLATEPORT_CITY_FARM_CORRIDOR, 8, 4
-# 236 "data/maps/SlateportFarm/scripts.pory"
+# 219 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_BRAWLY, Common_Movement_FaceDown
+# 220 "data/maps/SlateportFarm/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 221 "data/maps/SlateportFarm/scripts.pory"
+	waitmovement 0
+# 222 "data/maps/SlateportFarm/scripts.pory"
+	msgbox SlateportFarm_EventScript_AquaVictory_Text_6
+# 223 "data/maps/SlateportFarm/scripts.pory"
 	waitmessage
+# 224 "data/maps/SlateportFarm/scripts.pory"
+	closemessage
+# 225 "data/maps/SlateportFarm/scripts.pory"
+	special SpawnCameraObject
+# 226 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_AquaLeavesInDefeat
+# 227 "data/maps/SlateportFarm/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SlateportFarm_Movement_AquaLeavesInDefeat
+# 228 "data/maps/SlateportFarm/scripts.pory"
+	waitmovement 0
+# 229 "data/maps/SlateportFarm/scripts.pory"
+	clearflag FLAG_SLATEPORT_FARM_COMPLETED
+# 230 "data/maps/SlateportFarm/scripts.pory"
+	setflag FLAG_SLATEPORT_BAY_FLOODED
+# 234 "data/maps/SlateportFarm/scripts.pory"
+	special RemoveCameraObject
+# 236 "data/maps/SlateportFarm/scripts.pory"
+	warp MAP_SLATEPORT_CITY_FARM_CORRIDOR, 8, 4
 # 237 "data/maps/SlateportFarm/scripts.pory"
+	waitmessage
+# 238 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_MagmaVictory::
-# 242 "data/maps/SlateportFarm/scripts.pory"
-	lock
 # 243 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 3
+	lock
 # 244 "data/maps/SlateportFarm/scripts.pory"
-	special SpawnCameraObject
+	removeobject 3
 # 245 "data/maps/SlateportFarm/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, SlateportFarm_Movement_CameraPanDown
+	special SpawnCameraObject
 # 246 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_CAMERA, SlateportFarm_Movement_CameraPanDown
 # 247 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_MagmaVictory_Text_0
+	waitmovement 0
 # 248 "data/maps/SlateportFarm/scripts.pory"
-	waitmessage
+	msgbox SlateportFarm_EventScript_MagmaVictory_Text_0
 # 249 "data/maps/SlateportFarm/scripts.pory"
-	closemessage
+	waitmessage
 # 250 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_BrawlyChaseAqua
-# 252 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 30
-# 253 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_MagmaVictory_Text_1
-# 254 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_MagmaVictory_Text_2
-# 255 "data/maps/SlateportFarm/scripts.pory"
-	waitmessage
-# 256 "data/maps/SlateportFarm/scripts.pory"
 	closemessage
-# 257 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAADMIN, SlateportFarm_Movement_AquaLeavesInDefeat
-# 258 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_AQUAMULTIGRUNT, SlateportFarm_Movement_AquaLeavesInDefeat
-# 259 "data/maps/SlateportFarm/scripts.pory"
+# 251 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_BrawlyChaseAqua
+# 253 "data/maps/SlateportFarm/scripts.pory"
 	waitmovement 0
-# 260 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_MAGMAADMIN, Common_Movement_FaceRight
-# 261 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
-# 262 "data/maps/SlateportFarm/scripts.pory"
+# 254 "data/maps/SlateportFarm/scripts.pory"
 	delay 20
-# 263 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_MAGMAADMIN, Common_Movement_FaceDown
-# 264 "data/maps/SlateportFarm/scripts.pory"
+# 255 "data/maps/SlateportFarm/scripts.pory"
+	msgbox SlateportFarm_EventScript_MagmaVictory_Text_1
+# 256 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_AQUAADMIN, Common_Movement_WalkInPlaceFasterUp
+# 257 "data/maps/SlateportFarm/scripts.pory"
 	waitmovement 0
-# 265 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_MagmaVictory_Text_3
-# 266 "data/maps/SlateportFarm/scripts.pory"
+# 258 "data/maps/SlateportFarm/scripts.pory"
+	msgbox SlateportFarm_EventScript_MagmaVictory_Text_2
+# 259 "data/maps/SlateportFarm/scripts.pory"
 	waitmessage
+# 260 "data/maps/SlateportFarm/scripts.pory"
+	closemessage
+# 261 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_AQUAADMIN, SlateportFarm_Movement_AquaLeavesInDefeat
+# 262 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_AQUAMULTIGRUNT, SlateportFarm_Movement_AquaLeavesInDefeat
+# 263 "data/maps/SlateportFarm/scripts.pory"
+	waitmovement 0
+# 264 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_MAGMAADMIN, Common_Movement_WalkInPlaceRight
+# 265 "data/maps/SlateportFarm/scripts.pory"
+	waitmovement 0
+# 266 "data/maps/SlateportFarm/scripts.pory"
+	delay 20
 # 267 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_BRAWLY, Common_Movement_FaceUp
+	applymovement LOCALID_FARM_MAGMAADMIN, Common_Movement_WalkInPlaceDown
 # 268 "data/maps/SlateportFarm/scripts.pory"
 	waitmovement 0
 # 269 "data/maps/SlateportFarm/scripts.pory"
-	delay 10
+	msgbox SlateportFarm_EventScript_MagmaVictory_Text_3
 # 270 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_MagmaVictory_Text_4
+	waitmessage
 # 271 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_MagmaVictory_Text_5
+	applymovement LOCALID_FARM_BRAWLY, Common_Movement_WalkInPlaceFasterUp
 # 272 "data/maps/SlateportFarm/scripts.pory"
-	waitmessage
+	waitmovement 0
 # 273 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_MAGMAADMIN, Common_Movement_FaceRight
+	delay 10
 # 274 "data/maps/SlateportFarm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	msgbox SlateportFarm_EventScript_MagmaVictory_Text_4
 # 275 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
-# 276 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_MagmaVictory_Text_6
-# 277 "data/maps/SlateportFarm/scripts.pory"
-	waitmessage
-# 278 "data/maps/SlateportFarm/scripts.pory"
-	giveitem ITEM_HM01
-# 279 "data/maps/SlateportFarm/scripts.pory"
 	closemessage
-# 280 "data/maps/SlateportFarm/scripts.pory"
-	removeobject LOCALID_MAGMAADMINMON
-# 281 "data/maps/SlateportFarm/scripts.pory"
-	setflag FLAG_RECEIVED_HM_CUT
-# 282 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_MAGMAADMIN, SlateportFarm_Movement_MagmaLeaves
-# 283 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
-# 284 "data/maps/SlateportFarm/scripts.pory"
-	delay 20
-# 286 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_BrawlyApproachPlayer
-# 287 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
-# 288 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_BRAWLY, Common_Movement_FaceRight
-# 289 "data/maps/SlateportFarm/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
-# 290 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
-# 291 "data/maps/SlateportFarm/scripts.pory"
-	msgbox SlateportFarm_EventScript_MagmaVictory_Text_7
-# 292 "data/maps/SlateportFarm/scripts.pory"
+# 276 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_MAGMAADMIN, Common_Movement_WalkInPlaceDown
+# 277 "data/maps/SlateportFarm/scripts.pory"
+	msgbox SlateportFarm_EventScript_MagmaVictory_Text_5
+# 278 "data/maps/SlateportFarm/scripts.pory"
 	waitmessage
+# 279 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_MAGMAADMIN, Common_Movement_WalkInPlaceRight
+# 280 "data/maps/SlateportFarm/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
+# 281 "data/maps/SlateportFarm/scripts.pory"
+	waitmovement 0
+# 282 "data/maps/SlateportFarm/scripts.pory"
+	msgbox SlateportFarm_EventScript_MagmaVictory_Text_6
+# 283 "data/maps/SlateportFarm/scripts.pory"
+	waitmessage
+# 284 "data/maps/SlateportFarm/scripts.pory"
+	giveitem ITEM_HM01
+# 285 "data/maps/SlateportFarm/scripts.pory"
+	closemessage
+# 286 "data/maps/SlateportFarm/scripts.pory"
+	removeobject LOCALID_MAGMAADMINMON
+# 287 "data/maps/SlateportFarm/scripts.pory"
+	setflag FLAG_RECEIVED_HM_CUT
+# 288 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_MAGMAADMIN, SlateportFarm_Movement_MagmaLeaves
+# 289 "data/maps/SlateportFarm/scripts.pory"
+	waitmovement 0
+# 290 "data/maps/SlateportFarm/scripts.pory"
+	delay 20
+# 292 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_BrawlyApproachPlayer
 # 293 "data/maps/SlateportFarm/scripts.pory"
-	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_MagmaLeaves
+	waitmovement 0
 # 294 "data/maps/SlateportFarm/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_FARM_BRAWLY, Common_Movement_WalkInPlaceRight
 # 295 "data/maps/SlateportFarm/scripts.pory"
-	setflag FLAG_SLATEPORT_FARM_COMPLETED
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceLeft
 # 296 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 1
-# 297 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 2
-# 298 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 3
-# 299 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 4
-# 300 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 5
-# 301 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 6
-# 302 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 7
-# 303 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 8
-# 304 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 9
-# 305 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 10
-# 306 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 11
-# 307 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 12
-# 308 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 13
-# 309 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 14
-# 310 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 15
-# 311 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 16
-# 312 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 17
-# 313 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 18
-# 314 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 19
-# 315 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 20
-# 316 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 21
-# 317 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 22
-# 318 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 23
-# 319 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 24
-# 320 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 25
-# 321 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 26
-# 322 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 27
-# 323 "data/maps/SlateportFarm/scripts.pory"
-	removeobject 28
-# 324 "data/maps/SlateportFarm/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, SlateportFarm_Movement_CameraPanUp
-# 325 "data/maps/SlateportFarm/scripts.pory"
 	waitmovement 0
+# 297 "data/maps/SlateportFarm/scripts.pory"
+	msgbox SlateportFarm_EventScript_MagmaVictory_Text_7
+# 298 "data/maps/SlateportFarm/scripts.pory"
+	waitmessage
+# 299 "data/maps/SlateportFarm/scripts.pory"
+	applymovement LOCALID_FARM_BRAWLY, SlateportFarm_Movement_MagmaLeaves
+# 300 "data/maps/SlateportFarm/scripts.pory"
+	waitmovement 0
+# 301 "data/maps/SlateportFarm/scripts.pory"
+	setflag FLAG_SLATEPORT_FARM_COMPLETED
+# 302 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 1
+# 303 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 2
+# 304 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 3
+# 305 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 4
+# 306 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 5
+# 307 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 6
+# 308 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 7
+# 309 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 8
+# 310 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 9
+# 311 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 10
+# 312 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 11
+# 313 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 12
+# 314 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 13
+# 315 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 14
+# 316 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 15
+# 317 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 16
+# 318 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 17
+# 319 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 18
+# 320 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 19
+# 321 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 20
+# 322 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 21
+# 323 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 22
+# 324 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 23
+# 325 "data/maps/SlateportFarm/scripts.pory"
+	removeobject 24
 # 326 "data/maps/SlateportFarm/scripts.pory"
-	special RemoveCameraObject
+	removeobject 25
 # 327 "data/maps/SlateportFarm/scripts.pory"
-	setvar VAR_LEVEL_CAP, 24
+	removeobject 26
 # 328 "data/maps/SlateportFarm/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	removeobject 27
 # 329 "data/maps/SlateportFarm/scripts.pory"
-	call Common_EventScript_LevelCapUpdate
+	removeobject 28
 # 330 "data/maps/SlateportFarm/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, SlateportFarm_Movement_CameraPanUp
+# 331 "data/maps/SlateportFarm/scripts.pory"
+	waitmovement 0
+# 332 "data/maps/SlateportFarm/scripts.pory"
+	special RemoveCameraObject
+# 333 "data/maps/SlateportFarm/scripts.pory"
+	setvar VAR_LEVEL_CAP, 24
+# 334 "data/maps/SlateportFarm/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 335 "data/maps/SlateportFarm/scripts.pory"
+	call Common_EventScript_LevelCapUpdate
+# 336 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
-# 334 "data/maps/SlateportFarm/scripts.pory"
+# 340 "data/maps/SlateportFarm/scripts.pory"
 SlateportFarm_Movement_BrawlyChaseAqua:
-# 335 "data/maps/SlateportFarm/scripts.pory"
+# 341 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_down
-# 336 "data/maps/SlateportFarm/scripts.pory"
+# 342 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 336 "data/maps/SlateportFarm/scripts.pory"
+# 342 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 336 "data/maps/SlateportFarm/scripts.pory"
+# 342 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 336 "data/maps/SlateportFarm/scripts.pory"
+# 342 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 336 "data/maps/SlateportFarm/scripts.pory"
+# 342 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 339 "data/maps/SlateportFarm/scripts.pory"
+# 345 "data/maps/SlateportFarm/scripts.pory"
 SlateportFarm_Movement_BrawlyRescuePlayer:
-# 340 "data/maps/SlateportFarm/scripts.pory"
+# 346 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 340 "data/maps/SlateportFarm/scripts.pory"
+# 346 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 340 "data/maps/SlateportFarm/scripts.pory"
+# 346 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 340 "data/maps/SlateportFarm/scripts.pory"
+# 346 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 340 "data/maps/SlateportFarm/scripts.pory"
+# 346 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 340 "data/maps/SlateportFarm/scripts.pory"
+# 346 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
-# 340 "data/maps/SlateportFarm/scripts.pory"
+# 346 "data/maps/SlateportFarm/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 343 "data/maps/SlateportFarm/scripts.pory"
+# 349 "data/maps/SlateportFarm/scripts.pory"
 SlateportFarm_Movement_AquaGruntsArrive:
-# 344 "data/maps/SlateportFarm/scripts.pory"
+# 350 "data/maps/SlateportFarm/scripts.pory"
 	walk_down
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 345 "data/maps/SlateportFarm/scripts.pory"
+# 351 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
 	step_end
 
-# 348 "data/maps/SlateportFarm/scripts.pory"
+# 354 "data/maps/SlateportFarm/scripts.pory"
 SlateportFarm_Movement_AquaGrunts4StepLeft:
-# 349 "data/maps/SlateportFarm/scripts.pory"
+# 355 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 349 "data/maps/SlateportFarm/scripts.pory"
+# 355 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 349 "data/maps/SlateportFarm/scripts.pory"
+# 355 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
-# 349 "data/maps/SlateportFarm/scripts.pory"
+# 355 "data/maps/SlateportFarm/scripts.pory"
 	walk_left
 	step_end
 
-# 352 "data/maps/SlateportFarm/scripts.pory"
+# 358 "data/maps/SlateportFarm/scripts.pory"
 SlateportFarm_Movement_CameraPanDown:
-# 353 "data/maps/SlateportFarm/scripts.pory"
+# 359 "data/maps/SlateportFarm/scripts.pory"
 	walk_down
-# 353 "data/maps/SlateportFarm/scripts.pory"
+# 359 "data/maps/SlateportFarm/scripts.pory"
 	walk_down
 	step_end
 
-# 356 "data/maps/SlateportFarm/scripts.pory"
+# 362 "data/maps/SlateportFarm/scripts.pory"
 SlateportFarm_Movement_CameraPanUp:
-# 357 "data/maps/SlateportFarm/scripts.pory"
+# 363 "data/maps/SlateportFarm/scripts.pory"
 	walk_up
-# 357 "data/maps/SlateportFarm/scripts.pory"
+# 363 "data/maps/SlateportFarm/scripts.pory"
 	walk_up
 	step_end
 
-# 360 "data/maps/SlateportFarm/scripts.pory"
+# 366 "data/maps/SlateportFarm/scripts.pory"
 SlateportFarm_Movement_AquaLeavesInDefeat:
-# 361 "data/maps/SlateportFarm/scripts.pory"
+# 367 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
-# 361 "data/maps/SlateportFarm/scripts.pory"
+# 367 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
-# 361 "data/maps/SlateportFarm/scripts.pory"
+# 367 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
-# 361 "data/maps/SlateportFarm/scripts.pory"
+# 367 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
-# 361 "data/maps/SlateportFarm/scripts.pory"
+# 367 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
-# 361 "data/maps/SlateportFarm/scripts.pory"
+# 367 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
-# 361 "data/maps/SlateportFarm/scripts.pory"
+# 367 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
-# 361 "data/maps/SlateportFarm/scripts.pory"
+# 367 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
-# 361 "data/maps/SlateportFarm/scripts.pory"
-	walk_right
-	step_end
-
-# 364 "data/maps/SlateportFarm/scripts.pory"
-SlateportFarm_Movement_MagmaLeaves:
-# 365 "data/maps/SlateportFarm/scripts.pory"
-	walk_down
-# 366 "data/maps/SlateportFarm/scripts.pory"
-	walk_right
-# 366 "data/maps/SlateportFarm/scripts.pory"
-	walk_right
-# 366 "data/maps/SlateportFarm/scripts.pory"
-	walk_right
-# 366 "data/maps/SlateportFarm/scripts.pory"
-	walk_right
-# 366 "data/maps/SlateportFarm/scripts.pory"
-	walk_right
-# 366 "data/maps/SlateportFarm/scripts.pory"
-	walk_right
-# 366 "data/maps/SlateportFarm/scripts.pory"
-	walk_right
-# 366 "data/maps/SlateportFarm/scripts.pory"
-	walk_right
-# 366 "data/maps/SlateportFarm/scripts.pory"
+# 367 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
 	step_end
 
-# 369 "data/maps/SlateportFarm/scripts.pory"
-SlateportFarm_Movement_BrawlyApproachPlayer:
 # 370 "data/maps/SlateportFarm/scripts.pory"
+SlateportFarm_Movement_MagmaLeaves:
+# 371 "data/maps/SlateportFarm/scripts.pory"
+	walk_down
+# 372 "data/maps/SlateportFarm/scripts.pory"
 	walk_right
-# 371 "data/maps/SlateportFarm/scripts.pory"
+# 372 "data/maps/SlateportFarm/scripts.pory"
+	walk_right
+# 372 "data/maps/SlateportFarm/scripts.pory"
+	walk_right
+# 372 "data/maps/SlateportFarm/scripts.pory"
+	walk_right
+# 372 "data/maps/SlateportFarm/scripts.pory"
+	walk_right
+# 372 "data/maps/SlateportFarm/scripts.pory"
+	walk_right
+# 372 "data/maps/SlateportFarm/scripts.pory"
+	walk_right
+# 372 "data/maps/SlateportFarm/scripts.pory"
+	walk_right
+# 372 "data/maps/SlateportFarm/scripts.pory"
+	walk_right
+	step_end
+
+# 375 "data/maps/SlateportFarm/scripts.pory"
+SlateportFarm_Movement_BrawlyApproachPlayer:
+# 376 "data/maps/SlateportFarm/scripts.pory"
+	walk_right
+# 377 "data/maps/SlateportFarm/scripts.pory"
 	walk_up
-# 371 "data/maps/SlateportFarm/scripts.pory"
+# 377 "data/maps/SlateportFarm/scripts.pory"
 	walk_up
-# 371 "data/maps/SlateportFarm/scripts.pory"
+# 377 "data/maps/SlateportFarm/scripts.pory"
 	walk_up
 	step_end
 
 SlateportFarm_EventScript_AquaGrunt::
-# 375 "data/maps/SlateportFarm/scripts.pory"
+# 381 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 376 "data/maps/SlateportFarm/scripts.pory"
+# 382 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_AquaGrunt_Text_0
-# 377 "data/maps/SlateportFarm/scripts.pory"
+# 383 "data/maps/SlateportFarm/scripts.pory"
 	waitmessage
-# 378 "data/maps/SlateportFarm/scripts.pory"
+# 384 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_MagmaGrunt::
-# 383 "data/maps/SlateportFarm/scripts.pory"
+# 389 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 384 "data/maps/SlateportFarm/scripts.pory"
+# 390 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_MagmaGrunt_Text_0
-# 385 "data/maps/SlateportFarm/scripts.pory"
+# 391 "data/maps/SlateportFarm/scripts.pory"
 	waitmessage
-# 386 "data/maps/SlateportFarm/scripts.pory"
+# 392 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_MagmaGruntBattle::
-# 391 "data/maps/SlateportFarm/scripts.pory"
+# 397 "data/maps/SlateportFarm/scripts.pory"
 	trainerbattle_single TRAINER_GRUNT_FARM_1, SlateportFarm_MagmaGruntIntroText, SlateportFarm_MagmaGruntDefeatText
 	end
 
 
 SlateportFarm_EventScript_AquaGruntBattle::
-# 396 "data/maps/SlateportFarm/scripts.pory"
+# 402 "data/maps/SlateportFarm/scripts.pory"
 	trainerbattle_single TRAINER_GRUNT_FARM_2, SlateportFarm_AquaGruntIntroText, SlateportFarm_AquaGruntDefeatText
 	end
 
 
 SlateportFarm_EventScript_PokemonBattling::
-# 426 "data/maps/SlateportFarm/scripts.pory"
+# 432 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 427 "data/maps/SlateportFarm/scripts.pory"
+# 433 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_PokemonBattlingText
-# 428 "data/maps/SlateportFarm/scripts.pory"
+# 434 "data/maps/SlateportFarm/scripts.pory"
 	waitmessage
-# 429 "data/maps/SlateportFarm/scripts.pory"
+# 435 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_BoyInGrass::
-# 434 "data/maps/SlateportFarm/scripts.pory"
+# 440 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 435 "data/maps/SlateportFarm/scripts.pory"
+# 441 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_BoyInGrass_Text_0, MSGBOX_NPC
-# 436 "data/maps/SlateportFarm/scripts.pory"
+# 442 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_OldWomanByHouse::
-# 441 "data/maps/SlateportFarm/scripts.pory"
+# 447 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 442 "data/maps/SlateportFarm/scripts.pory"
+# 448 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_OldWomanByHouse_Text_0, MSGBOX_NPC
-# 443 "data/maps/SlateportFarm/scripts.pory"
+# 449 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_ManByTrees::
-# 448 "data/maps/SlateportFarm/scripts.pory"
+# 454 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 449 "data/maps/SlateportFarm/scripts.pory"
+# 455 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_ManByTrees_Text_0, MSGBOX_NPC
-# 450 "data/maps/SlateportFarm/scripts.pory"
+# 456 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_WomanByFlowers::
-# 455 "data/maps/SlateportFarm/scripts.pory"
+# 461 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 456 "data/maps/SlateportFarm/scripts.pory"
+# 462 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_WomanByFlowers_Text_0, MSGBOX_NPC
-# 457 "data/maps/SlateportFarm/scripts.pory"
+# 463 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
@@ -869,113 +883,104 @@ SlateportFarm_EventScript_MultiAgainstAqua_Text_0:
 
 SlateportFarm_EventScript_AquaVictory_Text_0:
 # 154 "data/maps/SlateportFarm/scripts.pory"
-	.string "Magma Admin: No... You've defeated our\n"
+	.string "Tabitha: No... You've defeated our\n"
 	.string "Pokémon...$"
 
 SlateportFarm_EventScript_AquaVictory_Text_1:
 # 160 "data/maps/SlateportFarm/scripts.pory"
-	.string "Aqua Admin: Now is our opportunity!\n"
-	.string "Bring the Pokémon!$"
+	.string "Matt: Now is our opportunity! Bring the\n"
+	.string "Pokémon!$"
 
 SlateportFarm_EventScript_AquaVictory_Text_2:
-# 161 "data/maps/SlateportFarm/scripts.pory"
-	.string "Magma Admin: We must fall back. We don't\n"
-	.string "have the strength to stop them, and we\l"
-	.string "don't want to be here when they bring\l"
-	.string "down the wall.$"
+# 164 "data/maps/SlateportFarm/scripts.pory"
+	.string "Tabitha: We must retreat. We can't stop\n"
+	.string "them, and we don't want to be here when\l"
+	.string "they bring down the barrier.$"
 
 SlateportFarm_EventScript_AquaVictory_Text_3:
-# 201 "data/maps/SlateportFarm/scripts.pory"
-	.string "Aqua Admin: I'm glad you arrived. The\n"
-	.string "geniuses that now call themselves Team\l"
-	.string "Magma built this wall to close off\l"
-	.string "Slateport Bay. They said they were\l"
-	.string "going to make new land for farms - what\l"
-	.string "they didn't tell us was how badly it\l"
-	.string "would devastate the sealife around\l"
-	.string "Slateport. Many Pokémon lost their\l"
-	.string "habitat, and many of us lost our way of\l"
-	.string "life.$"
+# 203 "data/maps/SlateportFarm/scripts.pory"
+	.string "Matt: I'm glad you came. The geniuses\n"
+	.string "that call themselves Team Magma built\l"
+	.string "this wall to close off Slateport Bay.\p"
+	.string "They said they were going to make new\n"
+	.string "land for farms.\l"
+	.string "But they didn't tell us how bad it would\l"
+	.string "be for sealife around Slateport.\l"
+	.string "Many Pokémon lost their habitat, and\l"
+	.string "lots of us lost our way of life.$"
 
 SlateportFarm_EventScript_AquaVictory_Text_4:
-# 206 "data/maps/SlateportFarm/scripts.pory"
-	.string "Aqua Admin: But today we're going to\n"
-	.string "bring down this wall, and fix all that.$"
+# 207 "data/maps/SlateportFarm/scripts.pory"
+	.string "Matt: But today we're going to fix all\n"
+	.string "that.$"
 
 SlateportFarm_EventScript_AquaVictory_Text_5:
-# 210 "data/maps/SlateportFarm/scripts.pory"
-	.string "Aqua Admin: As a reward for your help,\n"
-	.string "take this. It's a field move that will\l"
-	.string "allow you to trim down trees, once your\l"
-	.string "Pokémon are strong enough to use it.\p"
+# 211 "data/maps/SlateportFarm/scripts.pory"
+	.string "Matt: As thanks for your help, take\n"
+	.string "this. It will allow you to trim down\l"
+	.string "trees, once your Pokémon are strong\l"
+	.string "enough to use it.\p"
 	.string "The small trees grow back fairly\n"
 	.string "quickly, and you've proven yourself\l"
-	.string "responsible enough to use it.$"
+	.string "responsible.$"
 
 SlateportFarm_EventScript_AquaVictory_Text_6:
-# 221 "data/maps/SlateportFarm/scripts.pory"
+# 222 "data/maps/SlateportFarm/scripts.pory"
 	.string "Brawly: These Electrode are going to\n"
 	.string "explode! We need to get out of here\l"
 	.string "immediately!$"
 
 SlateportFarm_EventScript_MagmaVictory_Text_0:
-# 247 "data/maps/SlateportFarm/scripts.pory"
-	.string "Aqua Admin: Tch... You've defeated our\n"
+# 248 "data/maps/SlateportFarm/scripts.pory"
+	.string "Matt: Tch... You've defeated our\n"
 	.string "Pokémon.$"
 
 SlateportFarm_EventScript_MagmaVictory_Text_1:
-# 253 "data/maps/SlateportFarm/scripts.pory"
+# 255 "data/maps/SlateportFarm/scripts.pory"
 	.string "Brawly: You can't just take matters\n"
-	.string "into your own hands like that! The\l"
-	.string "people of Slateport chose to develop\l"
-	.string "these farms, and they have already\l"
-	.string "been setup. I'm sorry, but that's the\l"
-	.string "situation. Now go!$"
+	.string "into your own hands like this!\p"
+	.string "The people of Slateport chose to\n"
+	.string "develop these farms, and they have\l"
+	.string "already been established.\p"
+	.string "I'm sorry, but that's the situation. Now\n"
+	.string "go!$"
 
 SlateportFarm_EventScript_MagmaVictory_Text_2:
-# 254 "data/maps/SlateportFarm/scripts.pory"
-	.string "Aqua Admin: We are not going to forget\n"
-	.string "the harm done by this 'land\l"
-	.string "reclamation', and we will not give up. We\l"
-	.string "will not allow Team Magma and the\l"
-	.string "shortsighted few of Hoenn to destroy\l"
-	.string "the delicate natural balance all people\l"
-	.string "and Pokémon rely on.\p"
+# 258 "data/maps/SlateportFarm/scripts.pory"
+	.string "Matt: We are not going to forget the\n"
+	.string "harm they've done, and we will not give\l"
+	.string "up.\p"
+	.string "We will not allow a few fools to destroy\n"
+	.string "the delicate natural balance we all rely\l"
+	.string "on.\p"
 	.string "We will be back.$"
 
 SlateportFarm_EventScript_MagmaVictory_Text_3:
-# 265 "data/maps/SlateportFarm/scripts.pory"
-	.string "Magma Admin: Thank you both for your\n"
-	.string "help. The people of Slateport need\l"
-	.string "these farms, and I shudder to think\l"
-	.string "what Team Aqua would have done to them\l"
-	.string "in their attempt to 'fix' Slateport Bay.$"
+# 269 "data/maps/SlateportFarm/scripts.pory"
+	.string "Tabitha: Thank you both for your help.\p"
+	.string "I hate to think what Team Aqua would\n"
+	.string "have done to them in their attempt to\l"
+	.string "'fix' Slateport Bay.$"
 
 SlateportFarm_EventScript_MagmaVictory_Text_4:
-# 270 "data/maps/SlateportFarm/scripts.pory"
+# 274 "data/maps/SlateportFarm/scripts.pory"
 	.string "Brawly: I agree, but they have a point\n"
 	.string "about some of the consequences of the\l"
-	.string "land reclamation project. We all need to\l"
-	.string "be more careful going forward how we\l"
-	.string "develop Hoenn, and what it means for\l"
-	.string "the Pokémon in the region.$"
+	.string "land reclamation project...$"
 
 SlateportFarm_EventScript_MagmaVictory_Text_5:
-# 271 "data/maps/SlateportFarm/scripts.pory"
-	.string "Magma Admin: Like it or not, Hoenn is\n"
-	.string "growing at a rapid rate. We need more\l"
-	.string "land for people to live, and to grow\l"
-	.string "crops and raise livestock to support\l"
-	.string "them. It might be painful at times, but\l"
-	.string "the scientists at Team Magma will not\l"
-	.string "sit on the sidelines and allow Hoenn to\l"
-	.string "crash into a resource crisis.\p"
-	.string "Regardless, thank you.$"
+# 277 "data/maps/SlateportFarm/scripts.pory"
+	.string "Tabitha: Like it or not, Hoenn is\n"
+	.string "growing at a rapid rate.\p"
+	.string "It might be painful at times, but the\n"
+	.string "scientists at Team Magma will not sit on\l"
+	.string "the sidelines for a looming resource\l"
+	.string "crisis.$"
 
 SlateportFarm_EventScript_MagmaVictory_Text_6:
-# 276 "data/maps/SlateportFarm/scripts.pory"
-	.string "Magma Admin: Take this as a token of\n"
-	.string "our appreciation.\p"
+# 282 "data/maps/SlateportFarm/scripts.pory"
+	.string "Tabitha: Take this as a token of our\n"
+	.string "appreciation.\p"
 	.string "This field move will allow you to cut\n"
 	.string "down small trees blocking your path,\l"
 	.string "once your Pokémon are strong enough to\l"
@@ -984,46 +989,41 @@ SlateportFarm_EventScript_MagmaVictory_Text_6:
 	.string "environment around us to move forward.$"
 
 SlateportFarm_EventScript_MagmaVictory_Text_7:
-# 291 "data/maps/SlateportFarm/scripts.pory"
+# 297 "data/maps/SlateportFarm/scripts.pory"
 	.string "Brawly: You don't look like a member of\n"
-	.string "Team Magma, and I don't recognize you\l"
-	.string "from Slateport.\p"
+	.string "Team Magma.\p"
 	.string "Oh! You're a Pokémon Trainer! I'm Brawly,\n"
 	.string "the Dewford Gym Leader.\p"
-	.string "...Oh! You came here looking for me!\n"
-	.string "You're trying to take the Hoenn League\l"
-	.string "Challenge.\p"
-	.string "Well, now that the situation here is\n"
-	.string "taken care of, I'll head back to\l"
-	.string "Dewford. Come by soon, I look forward to\l"
-	.string "your challenge!$"
+	.string "...Oh! You came here looking for me!\p"
+	.string "I'll head back to Dewford. Come by soon,\n"
+	.string "I look forward to your challenge!$"
 
 SlateportFarm_EventScript_AquaGrunt_Text_0:
-# 376 "data/maps/SlateportFarm/scripts.pory"
+# 382 "data/maps/SlateportFarm/scripts.pory"
 	.string "I don't have time for you! We're trying\n"
 	.string "to return Slateport Bay to its natural\l"
 	.string "state!$"
 
 SlateportFarm_EventScript_MagmaGrunt_Text_0:
-# 384 "data/maps/SlateportFarm/scripts.pory"
+# 390 "data/maps/SlateportFarm/scripts.pory"
 	.string "I can't speak now! We're trying to stop\n"
 	.string "Team Aqua from destroying Slateport\l"
 	.string "Farm!$"
 
 SlateportFarm_EventScript_BoyInGrass_Text_0:
-# 435 "data/maps/SlateportFarm/scripts.pory"
+# 441 "data/maps/SlateportFarm/scripts.pory"
 	.string "I saw you up there defending our farm -\n"
 	.string "thank you.$"
 
 SlateportFarm_EventScript_OldWomanByHouse_Text_0:
-# 442 "data/maps/SlateportFarm/scripts.pory"
+# 448 "data/maps/SlateportFarm/scripts.pory"
 	.string "I used to work on a farm in Johto.\p"
 	.string "When I heard they needed folks to\n"
 	.string "develop new farmland in Hoenn, I moved\l"
 	.string "with my family out here.$"
 
 SlateportFarm_EventScript_ManByTrees_Text_0:
-# 449 "data/maps/SlateportFarm/scripts.pory"
+# 455 "data/maps/SlateportFarm/scripts.pory"
 	.string "I take care of the trees in the farm -\n"
 	.string "growing them, pruning them, picking\l"
 	.string "berries and fruit, and eventually\l"
@@ -1032,7 +1032,7 @@ SlateportFarm_EventScript_ManByTrees_Text_0:
 	.string "or feed in them.$"
 
 SlateportFarm_EventScript_WomanByFlowers_Text_0:
-# 456 "data/maps/SlateportFarm/scripts.pory"
+# 462 "data/maps/SlateportFarm/scripts.pory"
 	.string "It's scary that some people tried\n"
 	.string "destroying our farm.\p"
 	.string "I've worked so hard growing these\n"
@@ -1056,17 +1056,17 @@ SlateportFarm_BeatAquaGruntMultiText::
 	.string "It seems the damage is done...$"
 
 SlateportFarm_MagmaGruntIntroText::
-# 405 "data/maps/SlateportFarm/scripts.pory"
+# 411 "data/maps/SlateportFarm/scripts.pory"
 	.string "Team Aqua is trying to undo all the work\n"
 	.string "to build new farms in Slateport! I'm not\l"
 	.string "letting anyone else get to the wall.$"
 
 SlateportFarm_MagmaGruntDefeatText::
-# 409 "data/maps/SlateportFarm/scripts.pory"
+# 415 "data/maps/SlateportFarm/scripts.pory"
 	.string "These farms are too important to lose!$"
 
 SlateportFarm_AquaGruntIntroText::
-# 413 "data/maps/SlateportFarm/scripts.pory"
+# 419 "data/maps/SlateportFarm/scripts.pory"
 	.string "Team Magma's land reclamation project\n"
 	.string "ruined the Slateport Bay, and tainted\l"
 	.string "the seas all around the city! We're\l"
@@ -1074,10 +1074,10 @@ SlateportFarm_AquaGruntIntroText::
 	.string "another!$"
 
 SlateportFarm_AquaGruntDefeatText::
-# 417 "data/maps/SlateportFarm/scripts.pory"
+# 423 "data/maps/SlateportFarm/scripts.pory"
 	.string "We can't sit by and watch as Slateport\n"
 	.string "suffers from pollution.$"
 
 SlateportFarm_PokemonBattlingText::
-# 421 "data/maps/SlateportFarm/scripts.pory"
+# 427 "data/maps/SlateportFarm/scripts.pory"
 	.string "These Pokémon are engaged in a battle.$"

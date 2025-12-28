@@ -202,7 +202,7 @@ script SlateportFarm_EventScript_AquaVictory {
     waitmovement(0)
     msgbox(format("Matt: I'm glad you came. The geniuses that call themselves Team Magma built this wall to close off Slateport Bay.\pThey said they were going to make new land for farms.\NBut they didn't tell us how bad it would be for sealife around Slateport.\NMany Pokémon lost their habitat, and lots of us lost our way of life."))
     waitmessage
-    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceUp)
+    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceFasterUp)
     waitmovement(0)
     msgbox(format("Matt: But today we're going to fix all that."))
     waitmessage
@@ -253,7 +253,7 @@ script SlateportFarm_EventScript_MagmaVictory {
     waitmovement(0)
     delay(20)
     msgbox(format("Brawly: You can't just take matters into your own hands like this!\pThe people of Slateport chose to develop these farms, and they have already been established.\pI'm sorry, but that's the situation. Now go!"))
-    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceUp)
+    applymovement(LOCALID_FARM_AQUAADMIN,Common_Movement_WalkInPlaceFasterUp)
     waitmovement(0)
     msgbox(format("Matt: We are not going to forget the harm they've done, and we will not give up.\pWe will not allow a few fools to destroy the delicate natural balance we all rely on.\pWe will be back."))
     waitmessage
@@ -268,7 +268,7 @@ script SlateportFarm_EventScript_MagmaVictory {
     waitmovement(0)
     msgbox(format("Tabitha: Thank you both for your help.\pI hate to think what Team Aqua would have done to them in their attempt to 'fix' Slateport Bay."))
     waitmessage
-    applymovement(LOCALID_FARM_BRAWLY,Common_Movement_WalkInPlaceUp)
+    applymovement(LOCALID_FARM_BRAWLY,Common_Movement_WalkInPlaceFasterUp)
     waitmovement(0)
     delay(10)
     msgbox(format("Brawly: I agree, but they have a point about some of the consequences of the land reclamation project..."))
