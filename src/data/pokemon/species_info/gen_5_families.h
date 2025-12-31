@@ -8679,7 +8679,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseHP        = 55 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 5 : 0),
         .baseAttack    = 75 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0),
         .baseDefense   = 60,
-        .baseSpeed     = 103 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0),
+        .baseSpeed     = 103 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 20 : 0),
         .baseSpAttack  = 75 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 20 : 0),
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
