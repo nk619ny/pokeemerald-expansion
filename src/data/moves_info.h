@@ -10528,7 +10528,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .slicingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = B_CUSTOMIZED_MOVE_STATS == TRUE ? 250 : 30,
+            .chance = B_CUSTOMIZED_MOVE_STATS == TRUE ? 25 : 30,
         }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = CONTEST_CATEGORY_COOL,
