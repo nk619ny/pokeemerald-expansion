@@ -26212,7 +26212,7 @@ Beldum
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TABITHA_GLACIER === /* Route */
+=== TRAINER_TABITHA_GLACIER === /* Glacier */
 Name: TABITHA
 Class: Magma Admin
 Pic: Tabitha ORAS
@@ -26222,10 +26222,10 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Sandslash-Alola @ Occa Berry  
-Level: 40
+Level: 39
 Ability: Slush Rush  
 Tera Type: Ice  
-EVs: 4 HP / 252 Atk / 252 Spe  
+EVs: 4 HP / 128 Atk / 128 Spe  
 Adamant Nature  
 - Drill Run  
 - Iron Head  
@@ -26233,10 +26233,10 @@ Adamant Nature
 - Swords Dance  
 
 Talonflame @ Charti Berry  
-Level: 40
+Level: 39
 Ability: Gale Wings  
 Tera Type: Water  
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 128 SpA / 4 SpD / 128 Spe  
 IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe / HP Water IVs for Min Atk */
 Timid Nature  
 - Flamethrower  
@@ -26248,7 +26248,7 @@ Gliscor @ Toxic Orb
 Level: 40
 Ability: Poison Heal  
 Tera Type: Ground  
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 128 Atk / 4 SpD / 128 Spe  
 Jolly Nature  
 - Fling  
 - Acrobatics  
@@ -26259,7 +26259,7 @@ Appletun @ Leftovers
 Level: 40
 Ability: Thick Fat  
 Tera Type: Rock  
-EVs: 252 HP / 252 SpA / 4 SpD 
+EVs: 128 HP / 128 SpA / 4 SpD 
 IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs for Min Atk */
 Modest Nature  
 - Apple Acid
@@ -26268,10 +26268,10 @@ Modest Nature
 - Helping Hand
 
 Darmanitan-Galar @ Choice Scarf  
-Level: 40
+Level: 41
 Ability: Zen Mode
 Tera Type: Ice  
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 128 Atk / 4 SpD / 128 Spe  
 Adamant Nature  
 - U-turn  
 - Flare Blitz  
@@ -26279,10 +26279,10 @@ Adamant Nature
 - Rock Slide  
 
 Aggron @ Aggronite  
-Level: 40
+Level: 39
 Ability: Sturdy  
 Tera Type: Steel  
-EVs: 252 HP / 252 Atk / 4 SpD  
+EVs: 252 HP / 128 Atk / 4 SpD  
 Adamant Nature  
 - Body Press  
 - Heavy Slam  

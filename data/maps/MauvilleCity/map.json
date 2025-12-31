@@ -337,6 +337,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MauvilleCity_EventScript_GameCornerSign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 28,
+      "y": 22,
+      "elevation": 0,
+      "item": "ITEM_THUNDER_STONE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_POKE_BALL"
     }
   ]
 }
