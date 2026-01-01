@@ -6376,18 +6376,20 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Incineroar  
-Level: 37
+Level: 38
 Ability: Intimidate  
 Tera Type: Fire  
+EVs: 252 HP
 - Blaze Kick  
 - Darkest Lariat  
 - Fake Out  
 - Parting Shot  
 
 Exeggutor-Alola @ Sitrus Berry  
-Level: 37
+Level: 38
 Ability: Harvest  
 Tera Type: Grass  
+EVs: 252 HP
 IVs: 0 Atk  
 - Solar Beam  
 - Dragon Pulse  
@@ -6395,9 +6397,10 @@ IVs: 0 Atk
 - Flamethrower  
 
 Eldegoss  
-Level: 37
+Level: 38
 Ability: Cotton Down  
 Tera Type: Grass  
+EVs: 128 HP / 128 SpA
 IVs: 0 Atk  
 - Cotton Guard  
 - Hyper Voice  
@@ -6405,9 +6408,10 @@ IVs: 0 Atk
 - Pollen Puff  
 
 Darmanitan  
-Level: 37
+Level: 38
 Ability: Sheer Force  
 Tera Type: Fire  
+EVs: 128 Atk / 128 Spe
 - Fire Punch  
 - Iron Head  
 - Rock Slide  
@@ -6428,6 +6432,7 @@ Weezing
 Ability: Levitate  
 Tera Type: Poison  
 EVs: 252 HP  
+Level: 38
 - Heat Wave  
 - Sludge Bomb  
 - Explosion  
@@ -6435,15 +6440,19 @@ EVs: 252 HP
 
 Flapple  @ Yache Berry
 Ability: Hustle  
-Tera Type: Grass  
+Tera Type: Grass   
+EVs: 128 Atk / 128 Spe 
+Level: 38
 - Grav Apple  
 - Dual Wingbeat  
 - Protect  
 - U-turn  
 
-Centiskorch  
+Centiskorch @ Charti Berry
 Ability: White Smoke  
-Tera Type: Fire  
+Tera Type: Fire    
+EVs: 128 HP / 128 Atk / 128 SpA
+Level: 39
 - Mystical Fire  
 - Lunge  
 - Fire Lash  
@@ -6451,7 +6460,9 @@ Tera Type: Fire
 
 Heatmor  
 Ability: White Smoke  
-Tera Type: Fire  
+Tera Type: Fire    
+EVs: 128 HP / 128 Atk
+Level: 39
 - Fire Lash  
 - Power-Up Punch  
 - Sucker Punch  
@@ -6483,6 +6494,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Cherrim  @ Occa Berry
 Level: 38
 Ability: Flower Gift  
+EVs: 252 HP / 64 Atk / 64 SpA
 Tera Type: Grass  
 - Weather Ball  
 - Solar Blade  
@@ -6493,6 +6505,7 @@ Sinistcha
 Level: 38
 Ability: Heatproof  
 Tera Type: Grass  
+EVs: 252 HP
 IVs: 0 Atk  
 - Matcha Gotcha  
 - Strength Sap  
@@ -6513,6 +6526,7 @@ Simisear
 Level: 38
 Ability: Blaze  
 Tera Type: Fire  
+EVs: 252 Spe
 - Fire Blast  
 - Flare Blitz  
 - Rock Slide  
@@ -8347,7 +8361,7 @@ Typhlosion @ Quick Claw
 Level: 43
 Ball: Love Ball
 Ability: Flash Fire  
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 196 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Eruption  
@@ -8356,11 +8370,11 @@ IVs: 0 Atk
 - Solar Beam  
 
 Blaziken @ Blazikenite  
-Level: 43
+Level: 42
 Ball: Love Ball
 Ability: Speed Boost  
 Tera Type: Fire  
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 196 Atk / 4 SpD / 128 Spe  
 Adamant Nature  
 - Detect  
 - Blaze Kick  
@@ -8368,11 +8382,11 @@ Adamant Nature
 - Sky Uppercut  
 
 Ceruledge @ Salac Berry  
-Level: 43
+Level: 42
 Ball: Love Ball
 Ability: Weak Armor  
 Tera Type: Fire  
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 196 Atk / 4 SpD / 196 Spe  
 Jolly Nature  
 - Bitter Blade  
 - Poltergeist  
@@ -8380,11 +8394,11 @@ Jolly Nature
 - X-Scissor  
 
 Lilligant-Hisui (F) @ Coba Berry  
-Level: 43
+Level: 42
 Ball: Love Ball
 Ability: Chlorophyll  
 Tera Type: Grass  
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 196 Atk / 4 SpD / 196 Spe  
 Adamant Nature  
 - Axe Kick  
 - Solar Blade  
@@ -8396,7 +8410,7 @@ Level: 43
 Ball: Love Ball
 Ability: Levitate  
 Tera Type: Rock  
-EVs: 252 HP / 252 Atk / 4 SpD  
+EVs: 252 HP / 196 Atk / 4 SpD  
 Adamant Nature  
 - Flare Blitz  
 - Rock Slide  
@@ -8408,7 +8422,7 @@ Level: 43
 Ball: Love Ball
 Ability: Inner Focus  
 Tera Type: Fire  
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 128 Atk / 4 SpD / 128 Spe  
 Adamant Nature  
 - Sacred Fire  
 - Burning Bulwark  
@@ -18938,7 +18952,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Shelgon  
-Level: 40
+Level: 45
 Ability: Overcoat  
 Tera Type: Dragon  
 - Iron Defense  
@@ -18947,7 +18961,7 @@ Tera Type: Dragon
 - Scary Face  
 
 Boldore @ Loaded Dice  
-Level: 40
+Level: 45
 Ability: Sturdy  
 Tera Type: Rock  
 - Rock Blast  
@@ -18956,7 +18970,7 @@ Tera Type: Rock
 - Curse  
 
 Graveler  @ Rindo Berry
-Level: 40
+Level: 45
 Ability: Rock Head  
 Tera Type: Rock  
 - Rock Climb  
@@ -19470,7 +19484,7 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Kecleon  
+Kecleon  @ Weakness Policy
 Level: 39
 Ability: Protean  
 Tera Type: Normal  
@@ -19480,10 +19494,11 @@ EVs: 252 HP
 - Trailblaze  
 - Shadow Sneak  
 
-Tropius  
+Tropius  @ Yache Berry
 Level: 39
 Ability: Solar Power  
 Tera Type: Grass  
+EVs: 252 SpA
 IVs: 0 Atk  
 - Giga Drain  
 - Dragon Pulse  
@@ -19491,10 +19506,10 @@ IVs: 0 Atk
 - Synthesis  
 
 Fraxure 
-Level: 39
+Level: 40
 Ability: Mold Breaker  
 Tera Type: Dragon  
-EVs: 252 Spe  
+EVs: 252 HP / 252 Atk
 - Dragon Claw  
 - Counter  
 - Stomping Tantrum  
@@ -19504,7 +19519,9 @@ Turtonator
 Level: 39
 Ability: Shell Armor  
 Tera Type: Fire  
+EVs: 252 HP / 64 SpA
 IVs: 0 Atk  
+Relaxed Nature
 - Burning Bulwark  
 - Body Press  
 - Dragon Pulse  

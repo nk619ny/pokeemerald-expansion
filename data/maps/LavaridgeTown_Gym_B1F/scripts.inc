@@ -71,27 +71,27 @@ LavaridgeTown_Gym_B1F_EventScript_EndSetTrainerTempVars::
 # 36 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
 LavaridgeTown_Gym_B1F_EventScript_CheckBuryTrainers::
 # 37 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-	goto_if_defeated TRAINER_KEEGAN, LavaridgeTown_Gym_B1F_EventScript_CheckBuryJace
+	goto_if_defeated TRAINER_KEEGAN, LavaridgeTown_Gym_B1F_EventScript_CheckBuryGerald
 # 38 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
 	setobjectmovementtype LOCALID_KEEGAN, MOVEMENT_TYPE_BURIED
 # 39 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-LavaridgeTown_Gym_B1F_EventScript_CheckBuryJace::
+LavaridgeTown_Gym_B1F_EventScript_CheckBuryGerald::
 # 40 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-	goto_if_defeated TRAINER_JACE, LavaridgeTown_Gym_B1F_EventScript_CheckBuryJeff
+	goto_if_defeated TRAINER_GERALD, LavaridgeTown_Gym_B1F_EventScript_CheckBuryAxle
 # 41 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-	setobjectmovementtype LOCALID_JACE, MOVEMENT_TYPE_BURIED
+	setobjectmovementtype LOCALID_GERALD, MOVEMENT_TYPE_BURIED
 # 42 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-LavaridgeTown_Gym_B1F_EventScript_CheckBuryJeff::
+LavaridgeTown_Gym_B1F_EventScript_CheckBuryAxle::
 # 43 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-	goto_if_defeated TRAINER_JEFF, LavaridgeTown_Gym_B1F_EventScript_CheckBuryEli
+	goto_if_defeated TRAINER_AXLE, LavaridgeTown_Gym_B1F_EventScript_CheckBuryJeff
 # 44 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-	setobjectmovementtype LOCALID_JEFF, MOVEMENT_TYPE_BURIED
+	setobjectmovementtype LOCALID_AXLE, MOVEMENT_TYPE_BURIED
 # 45 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-LavaridgeTown_Gym_B1F_EventScript_CheckBuryEli::
+LavaridgeTown_Gym_B1F_EventScript_CheckBuryJeff::
 # 46 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-	goto_if_defeated TRAINER_ELI, LavaridgeTown_Gym_B1F_EventScript_EndCheckBuryTrainers
+	goto_if_defeated TRAINER_JEFF, LavaridgeTown_Gym_B1F_EventScript_EndCheckBuryTrainers
 # 47 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
-	setobjectmovementtype LOCALID_ELI, MOVEMENT_TYPE_BURIED
+	setobjectmovementtype LOCALID_JEFF, MOVEMENT_TYPE_BURIED
 # 48 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
 LavaridgeTown_Gym_B1F_EventScript_EndCheckBuryTrainers::
 # 49 "data/maps/LavaridgeTown_Gym_B1F/scripts.pory"
