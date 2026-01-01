@@ -35,6 +35,112 @@
     }
   ],
   "warp_events": [],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VerdantGrove_EventScript_GenerateNectar"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VerdantGrove_EventScript_GenerateNectar"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VerdantGrove_EventScript_GenerateNectar"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VerdantGrove_EventScript_GenerateNectar"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VerdantGrove_EventScript_GenerateNectar"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VerdantGrove_EventScript_GenerateNectar"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VerdantGrove_EventScript_GenerateNectar"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VerdantGrove_EventScript_GenerateNectar"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_PINK_NECTAR",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_PURPLE_NECTAR",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_RED_NECTAR",
+      "flag": "FLAG_TEMP_3"
+    },
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_YELLOW_NECTAR",
+      "flag": "FLAG_TEMP_4"
+    }
+  ]
 }

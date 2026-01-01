@@ -3833,7 +3833,7 @@ MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_3:
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_4:
 # 1050 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Eviolite          300 coins$"
+	.string "Eviolite            300 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_5:
 # 1051 "data/maps/MauvilleCity_GameCorner/scripts.pory"

@@ -47,371 +47,371 @@ DewfordTown_EventScript_Briney::
 # 24 "data/maps/DewfordTown/scripts.pory"
 	faceplayer
 # 25 "data/maps/DewfordTown/scripts.pory"
-//	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
+	call DewfordTown_EventScript_BrineyWaterStone
 # 26 "data/maps/DewfordTown/scripts.pory"
-	message DewfordTown_Text_WhereAreWeBound
+//	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, DewfordTown_EventScript_ReturnToPetalburgPrompt
 # 27 "data/maps/DewfordTown/scripts.pory"
-	waitmessage
+	message DewfordTown_Text_WhereAreWeBound
 # 28 "data/maps/DewfordTown/scripts.pory"
-	multichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 2, FALSE
-# 29 "data/maps/DewfordTown/scripts.pory"
-	switch VAR_RESULT
-# 30 "data/maps/DewfordTown/scripts.pory"
-	case 0, DewfordTown_EventScript_ChoosePetalburg
-# 31 "data/maps/DewfordTown/scripts.pory"
-	case 1, DewfordTown_EventScript_ChooseSlateport
-# 32 "data/maps/DewfordTown/scripts.pory"
-	case 2, DewfordTown_EventScript_CancelSailSelect
-# 33 "data/maps/DewfordTown/scripts.pory"
-	case MULTI_B_PRESSED, DewfordTown_EventScript_CancelSailSelect
-# 34 "data/maps/DewfordTown/scripts.pory"
-	end
-# 35 "data/maps/DewfordTown/scripts.pory"
-
-# 36 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_ChoosePetalburg::
-# 37 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_PetalburgWereSettingSail, MSGBOX_DEFAULT
-# 38 "data/maps/DewfordTown/scripts.pory"
-	closemessage
-# 39 "data/maps/DewfordTown/scripts.pory"
-	goto DewfordTown_EventScript_SailToPetalburg
-# 40 "data/maps/DewfordTown/scripts.pory"
-	release
-# 41 "data/maps/DewfordTown/scripts.pory"
-	end
-# 42 "data/maps/DewfordTown/scripts.pory"
-
-# 43 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_ChooseSlateport::
-# 44 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_SlateportWereSettingSail, MSGBOX_DEFAULT
-# 45 "data/maps/DewfordTown/scripts.pory"
-	closemessage
-# 46 "data/maps/DewfordTown/scripts.pory"
-	goto DewfordTown_EventScript_SailToSlateport
-# 47 "data/maps/DewfordTown/scripts.pory"
-	release
-# 48 "data/maps/DewfordTown/scripts.pory"
-	end
-# 49 "data/maps/DewfordTown/scripts.pory"
-
-# 50 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_CancelSailSelect::
-# 51 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_JustTellMeWhenYouNeedToSetSail, MSGBOX_DEFAULT
-# 52 "data/maps/DewfordTown/scripts.pory"
-	closemessage
-# 53 "data/maps/DewfordTown/scripts.pory"
-	release
-# 54 "data/maps/DewfordTown/scripts.pory"
-	end
-# 55 "data/maps/DewfordTown/scripts.pory"
-
-# 56 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_ReturnToPetalburgPrompt::
-# 57 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_SetSailBackToPetalburg, MSGBOX_YESNO
-# 58 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailBackToPetalburg
-# 59 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_GoDeliverIllBeWaiting, MSGBOX_DEFAULT
-# 60 "data/maps/DewfordTown/scripts.pory"
-	release
-# 61 "data/maps/DewfordTown/scripts.pory"
-	end
-# 62 "data/maps/DewfordTown/scripts.pory"
-
-# 63 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_SailBackToPetalburg::
-# 64 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_PetalburgWereSettingSail2, MSGBOX_DEFAULT
-# 65 "data/maps/DewfordTown/scripts.pory"
-	closemessage
-# 66 "data/maps/DewfordTown/scripts.pory"
-	goto DewfordTown_EventScript_SailToPetalburg
-# 67 "data/maps/DewfordTown/scripts.pory"
-	end
-# 68 "data/maps/DewfordTown/scripts.pory"
-
-# 69 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_Woman::
-# 70 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_TinyIslandCommunity, MSGBOX_NPC
-# 71 "data/maps/DewfordTown/scripts.pory"
-	end
-# 72 "data/maps/DewfordTown/scripts.pory"
-
-# 73 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_TownSign::
-# 74 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_TownSign, MSGBOX_SIGN
-# 75 "data/maps/DewfordTown/scripts.pory"
-	end
-# 76 "data/maps/DewfordTown/scripts.pory"
-
-# 77 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_GymSign::
-# 78 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_GymSign, MSGBOX_SIGN
-# 79 "data/maps/DewfordTown/scripts.pory"
-	end
-# 80 "data/maps/DewfordTown/scripts.pory"
-
-# 81 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_HallSign::
-# 82 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_HallSign, MSGBOX_SIGN
-# 83 "data/maps/DewfordTown/scripts.pory"
-	end
-# 84 "data/maps/DewfordTown/scripts.pory"
-
-# 85 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_OldRodFisherman::
-# 86 "data/maps/DewfordTown/scripts.pory"
-	lock
-# 87 "data/maps/DewfordTown/scripts.pory"
-	faceplayer
-# 88 "data/maps/DewfordTown/scripts.pory"
-	goto DewfordTown_EventScript_HowsFishing
-# 89 "data/maps/DewfordTown/scripts.pory"
-//	msgbox DewfordTown_Text_GettingItchToFish, MSGBOX_YESNO
-# 90 "data/maps/DewfordTown/scripts.pory"
-//	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_GiveOldRod
-# 91 "data/maps/DewfordTown/scripts.pory"
-//	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_NotGettingItchToFish
-# 92 "data/maps/DewfordTown/scripts.pory"
-	end
-# 93 "data/maps/DewfordTown/scripts.pory"
-
-# 94 "data/maps/DewfordTown/scripts.pory"
-//DewfordTown_EventScript_GiveOldRod::
-# 95 "data/maps/DewfordTown/scripts.pory"
-//	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
-# 96 "data/maps/DewfordTown/scripts.pory"
-//	giveitem ITEM_OLD_ROD
-# 97 "data/maps/DewfordTown/scripts.pory"
-//	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 98 "data/maps/DewfordTown/scripts.pory"
-//	setflag FLAG_RECEIVED_OLD_ROD
-# 99 "data/maps/DewfordTown/scripts.pory"
-//	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
-# 100 "data/maps/DewfordTown/scripts.pory"
-//	release
-# 101 "data/maps/DewfordTown/scripts.pory"
-//	end
-# 102 "data/maps/DewfordTown/scripts.pory"
-
-# 103 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_NotGettingItchToFish::
-# 104 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_ThatsTooBadThen, MSGBOX_DEFAULT
-# 105 "data/maps/DewfordTown/scripts.pory"
-	release
-# 106 "data/maps/DewfordTown/scripts.pory"
-	end
-# 107 "data/maps/DewfordTown/scripts.pory"
-
-# 108 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_HowsFishing::
-# 109 "data/maps/DewfordTown/scripts.pory"
-	message DewfordTown_Text_HowsYourFishing
-# 110 "data/maps/DewfordTown/scripts.pory"
 	waitmessage
-# 111 "data/maps/DewfordTown/scripts.pory"
-	multichoice 20, 8, MULTI_HOWS_FISHING, TRUE
-# 112 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, 0, DewfordTown_EventScript_FishingExcellent
-# 113 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, 1, DewfordTown_EventScript_FishingNotSoGood
-# 114 "data/maps/DewfordTown/scripts.pory"
+# 29 "data/maps/DewfordTown/scripts.pory"
+	multichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 2, FALSE
+# 30 "data/maps/DewfordTown/scripts.pory"
+	switch VAR_RESULT
+# 31 "data/maps/DewfordTown/scripts.pory"
+	case 0, DewfordTown_EventScript_ChoosePetalburg
+# 32 "data/maps/DewfordTown/scripts.pory"
+	case 1, DewfordTown_EventScript_ChooseSlateport
+# 33 "data/maps/DewfordTown/scripts.pory"
+	case 2, DewfordTown_EventScript_CancelSailSelect
+# 34 "data/maps/DewfordTown/scripts.pory"
+	case MULTI_B_PRESSED, DewfordTown_EventScript_CancelSailSelect
+# 35 "data/maps/DewfordTown/scripts.pory"
 	end
-# 115 "data/maps/DewfordTown/scripts.pory"
+# 36 "data/maps/DewfordTown/scripts.pory"
 
-# 116 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_FishingExcellent::
-# 117 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_GreatHaulInSomeBigOnes, MSGBOX_DEFAULT
-# 118 "data/maps/DewfordTown/scripts.pory"
-	release
-# 119 "data/maps/DewfordTown/scripts.pory"
-	end
-# 120 "data/maps/DewfordTown/scripts.pory"
-
-# 121 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_FishingNotSoGood::
-# 122 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_FishingAdvice, MSGBOX_DEFAULT
-# 123 "data/maps/DewfordTown/scripts.pory"
-	release
-# 124 "data/maps/DewfordTown/scripts.pory"
-	end
-# 125 "data/maps/DewfordTown/scripts.pory"
-
-# 126 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_SailToPetalburg::
-# 127 "data/maps/DewfordTown/scripts.pory"
-	call EventScript_BackupMrBrineyLocation
-# 128 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0
-# 129 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN, 0
-# 130 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_DEWFORD_BRINEY, DewfordTown_Movement_BrineyBoardBoat
-# 131 "data/maps/DewfordTown/scripts.pory"
-	waitmovement 0
-# 132 "data/maps/DewfordTown/scripts.pory"
-	removeobject LOCALID_DEWFORD_BRINEY
-# 133 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
-# 134 "data/maps/DewfordTown/scripts.pory"
-	waitmovement 0
-# 135 "data/maps/DewfordTown/scripts.pory"
-	hideobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN
-# 136 "data/maps/DewfordTown/scripts.pory"
-	call Common_EventScript_PlayBrineysBoatMusic
-# 137 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_DEWFORD_BOAT, DewfordTown_Movement_SailToPetalburg
-# 138 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_PLAYER, DewfordTown_Movement_SailToPetalburg
-# 139 "data/maps/DewfordTown/scripts.pory"
-	waitmovement 0
-# 140 "data/maps/DewfordTown/scripts.pory"
-	showobjectat LOCALID_PLAYER, MAP_ROUTE104
-# 141 "data/maps/DewfordTown/scripts.pory"
-	call Common_EventScript_StopBrineysBoatMusic
-# 142 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_PLAYER, DewfordTown_Movement_ExitBoatPetalburg
-# 143 "data/maps/DewfordTown/scripts.pory"
-	waitmovement 0
-# 144 "data/maps/DewfordTown/scripts.pory"
-	showobjectat LOCALID_PLAYER, MAP_ROUTE104
-# 145 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
-# 146 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
-# 147 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
-# 148 "data/maps/DewfordTown/scripts.pory"
-	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-# 149 "data/maps/DewfordTown/scripts.pory"
-	hideobjectat LOCALID_DEWFORD_BOAT, MAP_DEWFORD_TOWN
-# 150 "data/maps/DewfordTown/scripts.pory"
-	setvar VAR_BOARD_BRINEY_BOAT_STATE, 2
-# 151 "data/maps/DewfordTown/scripts.pory"
-	resetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN
-# 152 "data/maps/DewfordTown/scripts.pory"
-	warp MAP_ROUTE104_MR_BRINEYS_HOUSE, 5, 4
-# 153 "data/maps/DewfordTown/scripts.pory"
-	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
-# 154 "data/maps/DewfordTown/scripts.pory"
-	waitstate
-# 155 "data/maps/DewfordTown/scripts.pory"
-	release
-# 156 "data/maps/DewfordTown/scripts.pory"
-	end
-# 157 "data/maps/DewfordTown/scripts.pory"
-
-# 158 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_SailToSlateport::
-# 159 "data/maps/DewfordTown/scripts.pory"
-	call EventScript_BackupMrBrineyLocation
-# 160 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0
-# 161 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN, 1
-# 162 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_DEWFORD_BRINEY, DewfordTown_Movement_BrineyBoardBoat
-# 163 "data/maps/DewfordTown/scripts.pory"
-	waitmovement 0
-# 164 "data/maps/DewfordTown/scripts.pory"
-	removeobject LOCALID_DEWFORD_BRINEY
-# 165 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
-# 166 "data/maps/DewfordTown/scripts.pory"
-	waitmovement 0
-# 167 "data/maps/DewfordTown/scripts.pory"
-	hideobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN
-# 168 "data/maps/DewfordTown/scripts.pory"
-	call Common_EventScript_PlayBrineysBoatMusic
-# 169 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_DEWFORD_BOAT, DewfordTown_Movement_SailToSlateport
-# 170 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_PLAYER, DewfordTown_Movement_SailToSlateport
-# 171 "data/maps/DewfordTown/scripts.pory"
-	waitmovement 0
-# 172 "data/maps/DewfordTown/scripts.pory"
-	call Common_EventScript_StopBrineysBoatMusic
-# 173 "data/maps/DewfordTown/scripts.pory"
-	showobjectat LOCALID_PLAYER, MAP_ROUTE109
-# 174 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_PLAYER, DewfordTown_Movement_ExitBoatSlateport
-# 175 "data/maps/DewfordTown/scripts.pory"
-	waitmovement 0
-# 176 "data/maps/DewfordTown/scripts.pory"
-	setobjectxyperm LOCALID_ROUTE109_BRINEY, 21, 26
-# 177 "data/maps/DewfordTown/scripts.pory"
-	addobject LOCALID_ROUTE109_BRINEY
-# 178 "data/maps/DewfordTown/scripts.pory"
-	setobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109, 0
-# 179 "data/maps/DewfordTown/scripts.pory"
-	applymovement LOCALID_ROUTE109_BRINEY, DewfordTown_Movement_BrineyExitBoat
-# 180 "data/maps/DewfordTown/scripts.pory"
-	waitmovement 0
-# 181 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY
-# 182 "data/maps/DewfordTown/scripts.pory"
-	addobject LOCALID_ROUTE109_BOAT
-# 183 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
-# 184 "data/maps/DewfordTown/scripts.pory"
-	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-# 185 "data/maps/DewfordTown/scripts.pory"
-	hideobjectat LOCALID_DEWFORD_BOAT, MAP_DEWFORD_TOWN
-# 186 "data/maps/DewfordTown/scripts.pory"
-	call_if_unset FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_LandedSlateportDeliverGoods
-# 187 "data/maps/DewfordTown/scripts.pory"
-	call_if_set FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_LandedSlateport
-# 188 "data/maps/DewfordTown/scripts.pory"
+# 37 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_ChoosePetalburg::
+# 38 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_PetalburgWereSettingSail, MSGBOX_DEFAULT
+# 39 "data/maps/DewfordTown/scripts.pory"
 	closemessage
-# 189 "data/maps/DewfordTown/scripts.pory"
-	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
-# 190 "data/maps/DewfordTown/scripts.pory"
-	resetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN
-# 191 "data/maps/DewfordTown/scripts.pory"
-	resetobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109
-# 192 "data/maps/DewfordTown/scripts.pory"
-	copyobjectxytoperm LOCALID_ROUTE109_BRINEY
-# 193 "data/maps/DewfordTown/scripts.pory"
+# 40 "data/maps/DewfordTown/scripts.pory"
+	goto DewfordTown_EventScript_SailToPetalburg
+# 41 "data/maps/DewfordTown/scripts.pory"
 	release
-# 194 "data/maps/DewfordTown/scripts.pory"
+# 42 "data/maps/DewfordTown/scripts.pory"
 	end
+# 43 "data/maps/DewfordTown/scripts.pory"
+
+# 44 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_ChooseSlateport::
+# 45 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_SlateportWereSettingSail, MSGBOX_DEFAULT
+# 46 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 47 "data/maps/DewfordTown/scripts.pory"
+	goto DewfordTown_EventScript_SailToSlateport
+# 48 "data/maps/DewfordTown/scripts.pory"
+	release
+# 49 "data/maps/DewfordTown/scripts.pory"
+	end
+# 50 "data/maps/DewfordTown/scripts.pory"
+
+# 51 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_CancelSailSelect::
+# 52 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_JustTellMeWhenYouNeedToSetSail, MSGBOX_DEFAULT
+# 53 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 54 "data/maps/DewfordTown/scripts.pory"
+	release
+# 55 "data/maps/DewfordTown/scripts.pory"
+	end
+# 56 "data/maps/DewfordTown/scripts.pory"
+
+# 57 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_ReturnToPetalburgPrompt::
+# 58 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_SetSailBackToPetalburg, MSGBOX_YESNO
+# 59 "data/maps/DewfordTown/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailBackToPetalburg
+# 60 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_GoDeliverIllBeWaiting, MSGBOX_DEFAULT
+# 61 "data/maps/DewfordTown/scripts.pory"
+	release
+# 62 "data/maps/DewfordTown/scripts.pory"
+	end
+# 63 "data/maps/DewfordTown/scripts.pory"
+
+# 64 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_SailBackToPetalburg::
+# 65 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_PetalburgWereSettingSail2, MSGBOX_DEFAULT
+# 66 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 67 "data/maps/DewfordTown/scripts.pory"
+	goto DewfordTown_EventScript_SailToPetalburg
+# 68 "data/maps/DewfordTown/scripts.pory"
+	end
+# 69 "data/maps/DewfordTown/scripts.pory"
+
+# 70 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_Woman::
+# 71 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_TinyIslandCommunity, MSGBOX_NPC
+# 72 "data/maps/DewfordTown/scripts.pory"
+	end
+# 73 "data/maps/DewfordTown/scripts.pory"
+
+# 74 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_TownSign::
+# 75 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_TownSign, MSGBOX_SIGN
+# 76 "data/maps/DewfordTown/scripts.pory"
+	end
+# 77 "data/maps/DewfordTown/scripts.pory"
+
+# 78 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_GymSign::
+# 79 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_GymSign, MSGBOX_SIGN
+# 80 "data/maps/DewfordTown/scripts.pory"
+	end
+# 81 "data/maps/DewfordTown/scripts.pory"
+
+# 82 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_HallSign::
+# 83 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_HallSign, MSGBOX_SIGN
+# 84 "data/maps/DewfordTown/scripts.pory"
+	end
+# 85 "data/maps/DewfordTown/scripts.pory"
+
+# 86 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_OldRodFisherman::
+# 87 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 88 "data/maps/DewfordTown/scripts.pory"
+	faceplayer
+# 89 "data/maps/DewfordTown/scripts.pory"
+	goto DewfordTown_EventScript_HowsFishing
+# 90 "data/maps/DewfordTown/scripts.pory"
+//	msgbox DewfordTown_Text_GettingItchToFish, MSGBOX_YESNO
+# 91 "data/maps/DewfordTown/scripts.pory"
+//	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_GiveOldRod
+# 92 "data/maps/DewfordTown/scripts.pory"
+//	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_NotGettingItchToFish
+# 93 "data/maps/DewfordTown/scripts.pory"
+	end
+# 94 "data/maps/DewfordTown/scripts.pory"
+
+# 95 "data/maps/DewfordTown/scripts.pory"
+//DewfordTown_EventScript_GiveOldRod::
+# 96 "data/maps/DewfordTown/scripts.pory"
+//	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
+# 97 "data/maps/DewfordTown/scripts.pory"
+//	giveitem ITEM_OLD_ROD
+# 98 "data/maps/DewfordTown/scripts.pory"
+//	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 99 "data/maps/DewfordTown/scripts.pory"
+//	setflag FLAG_RECEIVED_OLD_ROD
+# 100 "data/maps/DewfordTown/scripts.pory"
+//	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
+# 101 "data/maps/DewfordTown/scripts.pory"
+//	release
+# 102 "data/maps/DewfordTown/scripts.pory"
+//	end
+# 103 "data/maps/DewfordTown/scripts.pory"
+
+# 104 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_NotGettingItchToFish::
+# 105 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_ThatsTooBadThen, MSGBOX_DEFAULT
+# 106 "data/maps/DewfordTown/scripts.pory"
+	release
+# 107 "data/maps/DewfordTown/scripts.pory"
+	end
+# 108 "data/maps/DewfordTown/scripts.pory"
+
+# 109 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_HowsFishing::
+# 110 "data/maps/DewfordTown/scripts.pory"
+	message DewfordTown_Text_HowsYourFishing
+# 111 "data/maps/DewfordTown/scripts.pory"
+	waitmessage
+# 112 "data/maps/DewfordTown/scripts.pory"
+	multichoice 20, 8, MULTI_HOWS_FISHING, TRUE
+# 113 "data/maps/DewfordTown/scripts.pory"
+	goto_if_eq VAR_RESULT, 0, DewfordTown_EventScript_FishingExcellent
+# 114 "data/maps/DewfordTown/scripts.pory"
+	goto_if_eq VAR_RESULT, 1, DewfordTown_EventScript_FishingNotSoGood
+# 115 "data/maps/DewfordTown/scripts.pory"
+	end
+# 116 "data/maps/DewfordTown/scripts.pory"
+
+# 117 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_FishingExcellent::
+# 118 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_GreatHaulInSomeBigOnes, MSGBOX_DEFAULT
+# 119 "data/maps/DewfordTown/scripts.pory"
+	release
+# 120 "data/maps/DewfordTown/scripts.pory"
+	end
+# 121 "data/maps/DewfordTown/scripts.pory"
+
+# 122 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_FishingNotSoGood::
+# 123 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_FishingAdvice, MSGBOX_DEFAULT
+# 124 "data/maps/DewfordTown/scripts.pory"
+	release
+# 125 "data/maps/DewfordTown/scripts.pory"
+	end
+# 126 "data/maps/DewfordTown/scripts.pory"
+
+# 127 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_SailToPetalburg::
+# 128 "data/maps/DewfordTown/scripts.pory"
+	call EventScript_BackupMrBrineyLocation
+# 129 "data/maps/DewfordTown/scripts.pory"
+	setobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0
+# 130 "data/maps/DewfordTown/scripts.pory"
+	setobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN, 0
+# 131 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_DEWFORD_BRINEY, DewfordTown_Movement_BrineyBoardBoat
+# 132 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 133 "data/maps/DewfordTown/scripts.pory"
+	removeobject LOCALID_DEWFORD_BRINEY
+# 134 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
+# 135 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 136 "data/maps/DewfordTown/scripts.pory"
+	hideobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN
+# 137 "data/maps/DewfordTown/scripts.pory"
+	call Common_EventScript_PlayBrineysBoatMusic
+# 138 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_DEWFORD_BOAT, DewfordTown_Movement_SailToPetalburg
+# 139 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_SailToPetalburg
+# 140 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 141 "data/maps/DewfordTown/scripts.pory"
+	showobjectat LOCALID_PLAYER, MAP_ROUTE104
+# 142 "data/maps/DewfordTown/scripts.pory"
+	call Common_EventScript_StopBrineysBoatMusic
+# 143 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_ExitBoatPetalburg
+# 144 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 145 "data/maps/DewfordTown/scripts.pory"
+	showobjectat LOCALID_PLAYER, MAP_ROUTE104
+# 146 "data/maps/DewfordTown/scripts.pory"
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+# 147 "data/maps/DewfordTown/scripts.pory"
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
+# 148 "data/maps/DewfordTown/scripts.pory"
+	clearflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
+# 149 "data/maps/DewfordTown/scripts.pory"
+	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+# 150 "data/maps/DewfordTown/scripts.pory"
+	hideobjectat LOCALID_DEWFORD_BOAT, MAP_DEWFORD_TOWN
+# 151 "data/maps/DewfordTown/scripts.pory"
+	setvar VAR_BOARD_BRINEY_BOAT_STATE, 2
+# 152 "data/maps/DewfordTown/scripts.pory"
+	resetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN
+# 153 "data/maps/DewfordTown/scripts.pory"
+	warp MAP_ROUTE104_MR_BRINEYS_HOUSE, 5, 4
+# 154 "data/maps/DewfordTown/scripts.pory"
+	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
+# 155 "data/maps/DewfordTown/scripts.pory"
+	waitstate
+# 156 "data/maps/DewfordTown/scripts.pory"
+	release
+# 157 "data/maps/DewfordTown/scripts.pory"
+	end
+# 158 "data/maps/DewfordTown/scripts.pory"
+
+# 159 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_SailToSlateport::
+# 160 "data/maps/DewfordTown/scripts.pory"
+	call EventScript_BackupMrBrineyLocation
+# 161 "data/maps/DewfordTown/scripts.pory"
+	setobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0
+# 162 "data/maps/DewfordTown/scripts.pory"
+	setobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN, 1
+# 163 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_DEWFORD_BRINEY, DewfordTown_Movement_BrineyBoardBoat
+# 164 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 165 "data/maps/DewfordTown/scripts.pory"
+	removeobject LOCALID_DEWFORD_BRINEY
+# 166 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_PlayerBoardBoat
+# 167 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 168 "data/maps/DewfordTown/scripts.pory"
+	hideobjectat LOCALID_PLAYER, MAP_DEWFORD_TOWN
+# 169 "data/maps/DewfordTown/scripts.pory"
+	call Common_EventScript_PlayBrineysBoatMusic
+# 170 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_DEWFORD_BOAT, DewfordTown_Movement_SailToSlateport
+# 171 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_SailToSlateport
+# 172 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 173 "data/maps/DewfordTown/scripts.pory"
+	call Common_EventScript_StopBrineysBoatMusic
+# 174 "data/maps/DewfordTown/scripts.pory"
+	showobjectat LOCALID_PLAYER, MAP_ROUTE109
+# 175 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_PLAYER, DewfordTown_Movement_ExitBoatSlateport
+# 176 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 177 "data/maps/DewfordTown/scripts.pory"
+	setobjectxyperm LOCALID_ROUTE109_BRINEY, 21, 26
+# 178 "data/maps/DewfordTown/scripts.pory"
+	addobject LOCALID_ROUTE109_BRINEY
+# 179 "data/maps/DewfordTown/scripts.pory"
+	setobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109, 0
+# 180 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_ROUTE109_BRINEY, DewfordTown_Movement_BrineyExitBoat
+# 181 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 182 "data/maps/DewfordTown/scripts.pory"
+	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY
+# 183 "data/maps/DewfordTown/scripts.pory"
+	addobject LOCALID_ROUTE109_BOAT
+# 184 "data/maps/DewfordTown/scripts.pory"
+	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
+# 185 "data/maps/DewfordTown/scripts.pory"
+	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+# 186 "data/maps/DewfordTown/scripts.pory"
+	hideobjectat LOCALID_DEWFORD_BOAT, MAP_DEWFORD_TOWN
+# 187 "data/maps/DewfordTown/scripts.pory"
+	call_if_unset FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_LandedSlateportDeliverGoods
+# 188 "data/maps/DewfordTown/scripts.pory"
+	call_if_set FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_LandedSlateport
+# 189 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 190 "data/maps/DewfordTown/scripts.pory"
+	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
+# 191 "data/maps/DewfordTown/scripts.pory"
+	resetobjectsubpriority LOCALID_PLAYER, MAP_DEWFORD_TOWN
+# 192 "data/maps/DewfordTown/scripts.pory"
+	resetobjectsubpriority LOCALID_ROUTE109_BRINEY, MAP_ROUTE109
+# 193 "data/maps/DewfordTown/scripts.pory"
+	copyobjectxytoperm LOCALID_ROUTE109_BRINEY
+# 194 "data/maps/DewfordTown/scripts.pory"
+	release
 # 195 "data/maps/DewfordTown/scripts.pory"
-
+	end
 # 196 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_LandedSlateportDeliverGoods::
+
 # 197 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_BrineyLandedInSlateportDeliverGoods, MSGBOX_DEFAULT
+DewfordTown_EventScript_LandedSlateportDeliverGoods::
 # 198 "data/maps/DewfordTown/scripts.pory"
-	return
+	msgbox DewfordTown_Text_BrineyLandedInSlateportDeliverGoods, MSGBOX_DEFAULT
 # 199 "data/maps/DewfordTown/scripts.pory"
-
-# 200 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_LandedSlateport::
-# 201 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_BrineyLandedInSlateport, MSGBOX_DEFAULT
-# 202 "data/maps/DewfordTown/scripts.pory"
 	return
-# 203 "data/maps/DewfordTown/scripts.pory"
+# 200 "data/maps/DewfordTown/scripts.pory"
 
+# 201 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_LandedSlateport::
+# 202 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_BrineyLandedInSlateport, MSGBOX_DEFAULT
+# 203 "data/maps/DewfordTown/scripts.pory"
+	return
 # 204 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Movement_SailToPetalburg:
+
 # 205 "data/maps/DewfordTown/scripts.pory"
-	walk_up
+DewfordTown_Movement_SailToPetalburg:
 # 206 "data/maps/DewfordTown/scripts.pory"
 	walk_up
 # 207 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_up
+	walk_up
 # 208 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 209 "data/maps/DewfordTown/scripts.pory"
@@ -441,15 +441,15 @@ DewfordTown_Movement_SailToPetalburg:
 # 221 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 222 "data/maps/DewfordTown/scripts.pory"
-	walk_up
+	walk_fast_up
 # 223 "data/maps/DewfordTown/scripts.pory"
 	walk_up
 # 224 "data/maps/DewfordTown/scripts.pory"
-	walk_left
+	walk_up
 # 225 "data/maps/DewfordTown/scripts.pory"
 	walk_left
 # 226 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_left
+	walk_left
 # 227 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_left
 # 228 "data/maps/DewfordTown/scripts.pory"
@@ -457,7 +457,7 @@ DewfordTown_Movement_SailToPetalburg:
 # 229 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_left
 # 230 "data/maps/DewfordTown/scripts.pory"
-	walk_faster_left
+	walk_fast_left
 # 231 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_left
 # 232 "data/maps/DewfordTown/scripts.pory"
@@ -537,7 +537,7 @@ DewfordTown_Movement_SailToPetalburg:
 # 269 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_left
 # 270 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_left
+	walk_faster_left
 # 271 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_left
 # 272 "data/maps/DewfordTown/scripts.pory"
@@ -545,7 +545,7 @@ DewfordTown_Movement_SailToPetalburg:
 # 273 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_left
 # 274 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_up
+	walk_fast_left
 # 275 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 276 "data/maps/DewfordTown/scripts.pory"
@@ -553,7 +553,7 @@ DewfordTown_Movement_SailToPetalburg:
 # 277 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 278 "data/maps/DewfordTown/scripts.pory"
-	walk_faster_up
+	walk_fast_up
 # 279 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_up
 # 280 "data/maps/DewfordTown/scripts.pory"
@@ -719,7 +719,7 @@ DewfordTown_Movement_SailToPetalburg:
 # 360 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_up
 # 361 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_up
+	walk_faster_up
 # 362 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 363 "data/maps/DewfordTown/scripts.pory"
@@ -727,11 +727,11 @@ DewfordTown_Movement_SailToPetalburg:
 # 364 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 365 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_left
+	walk_fast_up
 # 366 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_left
 # 367 "data/maps/DewfordTown/scripts.pory"
-	walk_faster_left
+	walk_fast_left
 # 368 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_left
 # 369 "data/maps/DewfordTown/scripts.pory"
@@ -743,15 +743,15 @@ DewfordTown_Movement_SailToPetalburg:
 # 372 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_left
 # 373 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_left
+	walk_faster_left
 # 374 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_left
 # 375 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_up
+	walk_fast_left
 # 376 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 377 "data/maps/DewfordTown/scripts.pory"
-	walk_faster_up
+	walk_fast_up
 # 378 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_up
 # 379 "data/maps/DewfordTown/scripts.pory"
@@ -779,7 +779,7 @@ DewfordTown_Movement_SailToPetalburg:
 # 390 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_up
 # 391 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_up
+	walk_faster_up
 # 392 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 393 "data/maps/DewfordTown/scripts.pory"
@@ -787,7 +787,7 @@ DewfordTown_Movement_SailToPetalburg:
 # 394 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 395 "data/maps/DewfordTown/scripts.pory"
-	walk_up
+	walk_fast_up
 # 396 "data/maps/DewfordTown/scripts.pory"
 	walk_up
 # 397 "data/maps/DewfordTown/scripts.pory"
@@ -795,19 +795,19 @@ DewfordTown_Movement_SailToPetalburg:
 # 398 "data/maps/DewfordTown/scripts.pory"
 	walk_up
 # 399 "data/maps/DewfordTown/scripts.pory"
-	step_end
+	walk_up
 # 400 "data/maps/DewfordTown/scripts.pory"
-
+	step_end
 # 401 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Movement_SailToSlateport:
+
 # 402 "data/maps/DewfordTown/scripts.pory"
-	walk_right
+DewfordTown_Movement_SailToSlateport:
 # 403 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_right
+	walk_right
 # 404 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_right
 # 405 "data/maps/DewfordTown/scripts.pory"
-	walk_faster_right
+	walk_fast_right
 # 406 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_right
 # 407 "data/maps/DewfordTown/scripts.pory"
@@ -1095,15 +1095,15 @@ DewfordTown_Movement_SailToSlateport:
 # 548 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_right
 # 549 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_right
+	walk_faster_right
 # 550 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_right
 # 551 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_up
+	walk_fast_right
 # 552 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 553 "data/maps/DewfordTown/scripts.pory"
-	walk_faster_up
+	walk_fast_up
 # 554 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_up
 # 555 "data/maps/DewfordTown/scripts.pory"
@@ -1123,7 +1123,7 @@ DewfordTown_Movement_SailToSlateport:
 # 562 "data/maps/DewfordTown/scripts.pory"
 	walk_faster_up
 # 563 "data/maps/DewfordTown/scripts.pory"
-	walk_fast_up
+	walk_faster_up
 # 564 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 565 "data/maps/DewfordTown/scripts.pory"
@@ -1143,486 +1143,513 @@ DewfordTown_Movement_SailToSlateport:
 # 572 "data/maps/DewfordTown/scripts.pory"
 	walk_fast_up
 # 573 "data/maps/DewfordTown/scripts.pory"
-	step_end
+	walk_fast_up
 # 574 "data/maps/DewfordTown/scripts.pory"
-
-# 575 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Movement_PlayerBoardBoat:
-# 576 "data/maps/DewfordTown/scripts.pory"
-	walk_right
-# 577 "data/maps/DewfordTown/scripts.pory"
-	walk_up
-# 578 "data/maps/DewfordTown/scripts.pory"
 	step_end
-# 579 "data/maps/DewfordTown/scripts.pory"
+# 575 "data/maps/DewfordTown/scripts.pory"
 
-# 580 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Movement_ExitBoatPetalburg:
-# 581 "data/maps/DewfordTown/scripts.pory"
+# 576 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Movement_PlayerBoardBoat:
+# 577 "data/maps/DewfordTown/scripts.pory"
+	walk_right
+# 578 "data/maps/DewfordTown/scripts.pory"
 	walk_up
+# 579 "data/maps/DewfordTown/scripts.pory"
+	step_end
+# 580 "data/maps/DewfordTown/scripts.pory"
+
+# 581 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Movement_ExitBoatPetalburg:
 # 582 "data/maps/DewfordTown/scripts.pory"
 	walk_up
 # 583 "data/maps/DewfordTown/scripts.pory"
 	walk_up
 # 584 "data/maps/DewfordTown/scripts.pory"
-	step_end
-# 585 "data/maps/DewfordTown/scripts.pory"
-
-# 586 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Movement_ExitBoatSlateport:
-# 587 "data/maps/DewfordTown/scripts.pory"
 	walk_up
+# 585 "data/maps/DewfordTown/scripts.pory"
+	step_end
+# 586 "data/maps/DewfordTown/scripts.pory"
+
+# 587 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Movement_ExitBoatSlateport:
 # 588 "data/maps/DewfordTown/scripts.pory"
 	walk_up
 # 589 "data/maps/DewfordTown/scripts.pory"
 	walk_up
 # 590 "data/maps/DewfordTown/scripts.pory"
-	walk_in_place_faster_down
+	walk_up
 # 591 "data/maps/DewfordTown/scripts.pory"
-	step_end
+	walk_in_place_faster_down
 # 592 "data/maps/DewfordTown/scripts.pory"
-
-# 593 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Movement_BrineyBoardBoat:
-# 594 "data/maps/DewfordTown/scripts.pory"
-	walk_up
-# 595 "data/maps/DewfordTown/scripts.pory"
 	step_end
-# 596 "data/maps/DewfordTown/scripts.pory"
+# 593 "data/maps/DewfordTown/scripts.pory"
 
-# 597 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Movement_BrineyExitBoat:
-# 598 "data/maps/DewfordTown/scripts.pory"
+# 594 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Movement_BrineyBoardBoat:
+# 595 "data/maps/DewfordTown/scripts.pory"
 	walk_up
+# 596 "data/maps/DewfordTown/scripts.pory"
+	step_end
+# 597 "data/maps/DewfordTown/scripts.pory"
+
+# 598 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Movement_BrineyExitBoat:
 # 599 "data/maps/DewfordTown/scripts.pory"
 	walk_up
 # 600 "data/maps/DewfordTown/scripts.pory"
-	step_end
+	walk_up
 # 601 "data/maps/DewfordTown/scripts.pory"
-
+	step_end
 # 602 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_TrendyPhraseBoy::
+
 # 603 "data/maps/DewfordTown/scripts.pory"
-	lock
+DewfordTown_EventScript_TrendyPhraseBoy::
 # 604 "data/maps/DewfordTown/scripts.pory"
-	faceplayer
-# 605 "data/maps/DewfordTown/scripts.pory"
-	call Common_EventScript_BufferTrendyPhrase
-# 606 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_XIsTheBiggestHappeningThingRight, MSGBOX_YESNO
-# 607 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_ConfirmTrendyPhrase
-# 608 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_RejectTrendyPhrase
-# 609 "data/maps/DewfordTown/scripts.pory"
-	end
-# 610 "data/maps/DewfordTown/scripts.pory"
-
-# 611 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_ConfirmTrendyPhrase::
-# 612 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_YeahDefinitionOfInRightNow, MSGBOX_DEFAULT
-# 613 "data/maps/DewfordTown/scripts.pory"
-	release
-# 614 "data/maps/DewfordTown/scripts.pory"
-	end
-# 615 "data/maps/DewfordTown/scripts.pory"
-
-# 616 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_RejectTrendyPhrase::
-# 617 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_TellMeWhatsNewAndIn, MSGBOX_DEFAULT
-# 618 "data/maps/DewfordTown/scripts.pory"
-	setvar VAR_0x8004, EASY_CHAT_TYPE_TRENDY_PHRASE
-# 619 "data/maps/DewfordTown/scripts.pory"
-	call Common_ShowEasyChatScreen
-# 620 "data/maps/DewfordTown/scripts.pory"
 	lock
-# 621 "data/maps/DewfordTown/scripts.pory"
+# 605 "data/maps/DewfordTown/scripts.pory"
 	faceplayer
+# 606 "data/maps/DewfordTown/scripts.pory"
+	call Common_EventScript_BufferTrendyPhrase
+# 607 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_XIsTheBiggestHappeningThingRight, MSGBOX_YESNO
+# 608 "data/maps/DewfordTown/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_ConfirmTrendyPhrase
+# 609 "data/maps/DewfordTown/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_RejectTrendyPhrase
+# 610 "data/maps/DewfordTown/scripts.pory"
+	end
+# 611 "data/maps/DewfordTown/scripts.pory"
+
+# 612 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_ConfirmTrendyPhrase::
+# 613 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_YeahDefinitionOfInRightNow, MSGBOX_DEFAULT
+# 614 "data/maps/DewfordTown/scripts.pory"
+	release
+# 615 "data/maps/DewfordTown/scripts.pory"
+	end
+# 616 "data/maps/DewfordTown/scripts.pory"
+
+# 617 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_RejectTrendyPhrase::
+# 618 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_TellMeWhatsNewAndIn, MSGBOX_DEFAULT
+# 619 "data/maps/DewfordTown/scripts.pory"
+	setvar VAR_0x8004, EASY_CHAT_TYPE_TRENDY_PHRASE
+# 620 "data/maps/DewfordTown/scripts.pory"
+	call Common_ShowEasyChatScreen
+# 621 "data/maps/DewfordTown/scripts.pory"
+	lock
 # 622 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, DewfordTown_EventScript_GiveNewTrendyPhrase
+	faceplayer
 # 623 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, DewfordTown_EventScript_CancelNewTrendyPhrase
+	goto_if_eq VAR_RESULT, TRUE, DewfordTown_EventScript_GiveNewTrendyPhrase
 # 624 "data/maps/DewfordTown/scripts.pory"
-	end
+	goto_if_eq VAR_RESULT, FALSE, DewfordTown_EventScript_CancelNewTrendyPhrase
 # 625 "data/maps/DewfordTown/scripts.pory"
-
+	end
 # 626 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_GiveNewTrendyPhrase::
+
 # 627 "data/maps/DewfordTown/scripts.pory"
-	incrementgamestat GAME_STAT_STARTED_TRENDS
+DewfordTown_EventScript_GiveNewTrendyPhrase::
 # 628 "data/maps/DewfordTown/scripts.pory"
-	goto_if_eq VAR_0x8004, FALSE, DewfordTown_EventScript_PhraseNotTrendyEnough
+	incrementgamestat GAME_STAT_STARTED_TRENDS
 # 629 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_OfCourseIKnowAboutThat, MSGBOX_DEFAULT
+	goto_if_eq VAR_0x8004, FALSE, DewfordTown_EventScript_PhraseNotTrendyEnough
 # 630 "data/maps/DewfordTown/scripts.pory"
-	release
+	msgbox DewfordTown_Text_OfCourseIKnowAboutThat, MSGBOX_DEFAULT
 # 631 "data/maps/DewfordTown/scripts.pory"
-	end
+	release
 # 632 "data/maps/DewfordTown/scripts.pory"
-
+	end
 # 633 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_CancelNewTrendyPhrase::
+
 # 634 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_HearOfAnyTrendsComeShareWithMe, MSGBOX_DEFAULT
+DewfordTown_EventScript_CancelNewTrendyPhrase::
 # 635 "data/maps/DewfordTown/scripts.pory"
-	release
+	msgbox DewfordTown_Text_HearOfAnyTrendsComeShareWithMe, MSGBOX_DEFAULT
 # 636 "data/maps/DewfordTown/scripts.pory"
-	end
-# 637 "data/maps/DewfordTown/scripts.pory"
-
-# 638 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_EventScript_PhraseNotTrendyEnough::
-# 639 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_Text_XHuhIThinkYIsCool, MSGBOX_DEFAULT
-# 640 "data/maps/DewfordTown/scripts.pory"
 	release
-# 641 "data/maps/DewfordTown/scripts.pory"
+# 637 "data/maps/DewfordTown/scripts.pory"
 	end
+# 638 "data/maps/DewfordTown/scripts.pory"
+
+# 639 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_EventScript_PhraseNotTrendyEnough::
+# 640 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_Text_XHuhIThinkYIsCool, MSGBOX_DEFAULT
+# 641 "data/maps/DewfordTown/scripts.pory"
+	release
 # 642 "data/maps/DewfordTown/scripts.pory"
-
+	end
 # 643 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_TinyIslandCommunity:
+
 # 644 "data/maps/DewfordTown/scripts.pory"
-	.string "DEWFORD is a tiny island community.\n"
+DewfordTown_Text_TinyIslandCommunity:
 # 645 "data/maps/DewfordTown/scripts.pory"
-	.string "If something gets trendy here,\l"
+	.string "DEWFORD is a tiny island community.\n"
 # 646 "data/maps/DewfordTown/scripts.pory"
-	.string "everyone picks up on it right away.$"
+	.string "If something gets trendy here,\l"
 # 647 "data/maps/DewfordTown/scripts.pory"
-
+	.string "everyone picks up on it right away.$"
 # 648 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_TownSign:
+
 # 649 "data/maps/DewfordTown/scripts.pory"
-	.string "DEWFORD TOWN\n"
+DewfordTown_Text_TownSign:
 # 650 "data/maps/DewfordTown/scripts.pory"
-	.string "“A tiny island in the blue sea.”$"
+	.string "DEWFORD TOWN\n"
 # 651 "data/maps/DewfordTown/scripts.pory"
-
+	.string "“A tiny island in the blue sea.”$"
 # 652 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_GymSign:
+
 # 653 "data/maps/DewfordTown/scripts.pory"
-	.string "DEWFORD TOWN POKéMON GYM\n"
+DewfordTown_Text_GymSign:
 # 654 "data/maps/DewfordTown/scripts.pory"
-	.string "LEADER: BRAWLY\l"
+	.string "DEWFORD TOWN POKéMON GYM\n"
 # 655 "data/maps/DewfordTown/scripts.pory"
-	.string "“A big wave in fighting!”$"
+	.string "LEADER: BRAWLY\l"
 # 656 "data/maps/DewfordTown/scripts.pory"
-
+	.string "“A big wave in fighting!”$"
 # 657 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_HallSign:
+
 # 658 "data/maps/DewfordTown/scripts.pory"
-	.string "DEWFORD HALL\n"
+DewfordTown_Text_HallSign:
 # 659 "data/maps/DewfordTown/scripts.pory"
-	.string "“Everyone's information exchange!”$"
+	.string "DEWFORD HALL\n"
 # 660 "data/maps/DewfordTown/scripts.pory"
-
+	.string "“Everyone's information exchange!”$"
 # 661 "data/maps/DewfordTown/scripts.pory"
-Route104_Text_LandedInDewfordDeliverLetter:
+
 # 662 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: Ahoy!\n"
+Route104_Text_LandedInDewfordDeliverLetter:
 # 663 "data/maps/DewfordTown/scripts.pory"
-	.string "We've hit land in DEWFORD.\p"
+	.string "MR. BRINEY: Ahoy!\n"
 # 664 "data/maps/DewfordTown/scripts.pory"
-	.string "I suppose you're off to the Gym\n"
+	.string "We've hit land in DEWFORD.\p"
 # 665 "data/maps/DewfordTown/scripts.pory"
-	.string "to challenge Brawly!$"
+	.string "I suppose you're off to the Gym\n"
 # 666 "data/maps/DewfordTown/scripts.pory"
-
+	.string "to challenge Brawly!$"
 # 667 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_SetSailBackToPetalburg:
+
 # 668 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: Have you gone to\n"
+DewfordTown_Text_SetSailBackToPetalburg:
 # 669 "data/maps/DewfordTown/scripts.pory"
-	.string "the Gym?\p"
+	.string "MR. BRINEY: Have you gone to\n"
 # 670 "data/maps/DewfordTown/scripts.pory"
-	.string "Or were you meaning to sail back to\n"
+	.string "the Gym?\p"
 # 671 "data/maps/DewfordTown/scripts.pory"
-	.string "PETALBURG?$"
+	.string "Or were you meaning to sail back to\n"
 # 672 "data/maps/DewfordTown/scripts.pory"
-
+	.string "PETALBURG?$"
 # 673 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_PetalburgWereSettingSail2:
+
 # 674 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: PETALBURG it is, then!\p"
+DewfordTown_Text_PetalburgWereSettingSail2:
 # 675 "data/maps/DewfordTown/scripts.pory"
-	.string "Anchors aweigh!\n"
+	.string "MR. BRINEY: PETALBURG it is, then!\p"
 # 676 "data/maps/DewfordTown/scripts.pory"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "Anchors aweigh!\n"
 # 677 "data/maps/DewfordTown/scripts.pory"
-
+	.string "PEEKO, we're setting sail, my darling!$"
 # 678 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_GoDeliverIllBeWaiting:
+
 # 679 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: Then you go on to that\n"
+DewfordTown_Text_GoDeliverIllBeWaiting:
 # 680 "data/maps/DewfordTown/scripts.pory"
-	.string "Gym. I'll be waiting.$"
+	.string "MR. BRINEY: Then you go on to that\n"
 # 681 "data/maps/DewfordTown/scripts.pory"
-
+	.string "Gym. I'll be waiting.$"
 # 682 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_BrineyLandedInDewford:
+
 # 683 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: Ahoy!\n"
+DewfordTown_Text_BrineyLandedInDewford:
 # 684 "data/maps/DewfordTown/scripts.pory"
-	.string "We've hit land in DEWFORD!\p"
-# 685 "data/maps/DewfordTown/scripts.pory"
-	.string "You just go on and tell me whenever\n"
-# 686 "data/maps/DewfordTown/scripts.pory"
-	.string "you want to set sail again!$"
-# 687 "data/maps/DewfordTown/scripts.pory"
-
-# 688 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_WhereAreWeBound:
-# 689 "data/maps/DewfordTown/scripts.pory"
 	.string "MR. BRINEY: Ahoy!\n"
+# 685 "data/maps/DewfordTown/scripts.pory"
+	.string "We've hit land in DEWFORD!\p"
+# 686 "data/maps/DewfordTown/scripts.pory"
+	.string "You just go on and tell me whenever\n"
+# 687 "data/maps/DewfordTown/scripts.pory"
+	.string "you want to set sail again!$"
+# 688 "data/maps/DewfordTown/scripts.pory"
+
+# 689 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_WhereAreWeBound:
 # 690 "data/maps/DewfordTown/scripts.pory"
-	.string "For you, I'll go out to sea anytime!\p"
+	.string "MR. BRINEY: Ahoy!\n"
 # 691 "data/maps/DewfordTown/scripts.pory"
-	.string "Now, my friend, where are we bound?$"
+	.string "For you, I'll go out to sea anytime!\p"
 # 692 "data/maps/DewfordTown/scripts.pory"
-
+	.string "Now, my friend, where are we bound?$"
 # 693 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_PetalburgWereSettingSail:
+
 # 694 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: PETALBURG, is it?\p"
+DewfordTown_Text_PetalburgWereSettingSail:
 # 695 "data/maps/DewfordTown/scripts.pory"
-	.string "Anchors aweigh!\n"
+	.string "MR. BRINEY: PETALBURG, is it?\p"
 # 696 "data/maps/DewfordTown/scripts.pory"
-	.string "PEEKO, we're setting sail, my darling!$"
-# 697 "data/maps/DewfordTown/scripts.pory"
-
-# 698 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_SlateportWereSettingSail:
-# 699 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: SLATEPORT, is it?\p"
-# 700 "data/maps/DewfordTown/scripts.pory"
 	.string "Anchors aweigh!\n"
-# 701 "data/maps/DewfordTown/scripts.pory"
+# 697 "data/maps/DewfordTown/scripts.pory"
 	.string "PEEKO, we're setting sail, my darling!$"
+# 698 "data/maps/DewfordTown/scripts.pory"
+
+# 699 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_SlateportWereSettingSail:
+# 700 "data/maps/DewfordTown/scripts.pory"
+	.string "MR. BRINEY: SLATEPORT, is it?\p"
+# 701 "data/maps/DewfordTown/scripts.pory"
+	.string "Anchors aweigh!\n"
 # 702 "data/maps/DewfordTown/scripts.pory"
-
+	.string "PEEKO, we're setting sail, my darling!$"
 # 703 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_JustTellMeWhenYouNeedToSetSail:
+
 # 704 "data/maps/DewfordTown/scripts.pory"
-	.string "MR. BRINEY: You just tell me whenever\n"
+DewfordTown_Text_JustTellMeWhenYouNeedToSetSail:
 # 705 "data/maps/DewfordTown/scripts.pory"
-	.string "you need to set sail again!$"
+	.string "MR. BRINEY: You just tell me whenever\n"
 # 706 "data/maps/DewfordTown/scripts.pory"
-
+	.string "you need to set sail again!$"
 # 707 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_GettingItchToFish:
+
 # 708 "data/maps/DewfordTown/scripts.pory"
-	.string "This is a renowned fishing spot.\n"
+DewfordTown_Text_GettingItchToFish:
 # 709 "data/maps/DewfordTown/scripts.pory"
-	.string "Are you getting the itch to fish?$"
+	.string "This is a renowned fishing spot.\n"
 # 710 "data/maps/DewfordTown/scripts.pory"
-
+	.string "Are you getting the itch to fish?$"
 # 711 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_GiveYouOneOfMyRods:
+
 # 712 "data/maps/DewfordTown/scripts.pory"
-	.string "I hear you, and I like what\n"
+DewfordTown_Text_GiveYouOneOfMyRods:
 # 713 "data/maps/DewfordTown/scripts.pory"
-	.string "you're saying!\p"
+	.string "I hear you, and I like what\n"
 # 714 "data/maps/DewfordTown/scripts.pory"
-	.string "I'll give you one of my fishing RODS.$"
+	.string "you're saying!\p"
 # 715 "data/maps/DewfordTown/scripts.pory"
-
+	.string "I'll give you one of my fishing RODS.$"
 # 716 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_ThrowInFishingAdvice:
+
 # 717 "data/maps/DewfordTown/scripts.pory"
-	.string "And, as an added bonus, I'll even throw\n"
+DewfordTown_Text_ThrowInFishingAdvice:
 # 718 "data/maps/DewfordTown/scripts.pory"
-	.string "in a little fishing advice!\p"
+	.string "And, as an added bonus, I'll even throw\n"
 # 719 "data/maps/DewfordTown/scripts.pory"
-	.string "First, you want to face the water,\n"
+	.string "in a little fishing advice!\p"
 # 720 "data/maps/DewfordTown/scripts.pory"
-	.string "then use the ROD.\p"
-# 721 "data/maps/DewfordTown/scripts.pory"
-	.string "Focus your mind…\n"
-# 722 "data/maps/DewfordTown/scripts.pory"
-	.string "If you get a bite, pull on the ROD.\p"
-# 723 "data/maps/DewfordTown/scripts.pory"
-	.string "Sometimes you can snag something\n"
-# 724 "data/maps/DewfordTown/scripts.pory"
-	.string "immediately, but with bigger catches,\l"
-# 725 "data/maps/DewfordTown/scripts.pory"
-	.string "you need to time the pulls on your ROD\l"
-# 726 "data/maps/DewfordTown/scripts.pory"
-	.string "to haul them in.$"
-# 727 "data/maps/DewfordTown/scripts.pory"
-
-# 728 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_ThatsTooBadThen:
-# 729 "data/maps/DewfordTown/scripts.pory"
-	.string "Oh, is that so?\n"
-# 730 "data/maps/DewfordTown/scripts.pory"
-	.string "That's too bad, then.$"
-# 731 "data/maps/DewfordTown/scripts.pory"
-
-# 732 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_HowsYourFishing:
-# 733 "data/maps/DewfordTown/scripts.pory"
-	.string "Yo!\n"
-# 734 "data/maps/DewfordTown/scripts.pory"
-	.string "How's your fishing?$"
-# 735 "data/maps/DewfordTown/scripts.pory"
-
-# 736 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_GreatHaulInSomeBigOnes:
-# 737 "data/maps/DewfordTown/scripts.pory"
-	.string "Is that right! That's great!\n"
-# 738 "data/maps/DewfordTown/scripts.pory"
-	.string "Haul in some big ones!$"
-# 739 "data/maps/DewfordTown/scripts.pory"
-
-# 740 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_FishingAdvice:
-# 741 "data/maps/DewfordTown/scripts.pory"
-	.string "Oh, hey, don't get down on yourself!\n"
-# 742 "data/maps/DewfordTown/scripts.pory"
-	.string "I'll give you a little fishing advice.\p"
-# 743 "data/maps/DewfordTown/scripts.pory"
 	.string "First, you want to face the water,\n"
-# 744 "data/maps/DewfordTown/scripts.pory"
+# 721 "data/maps/DewfordTown/scripts.pory"
 	.string "then use the ROD.\p"
-# 745 "data/maps/DewfordTown/scripts.pory"
+# 722 "data/maps/DewfordTown/scripts.pory"
 	.string "Focus your mind…\n"
-# 746 "data/maps/DewfordTown/scripts.pory"
-	.string "If you get a bite, pull the ROD.\p"
-# 747 "data/maps/DewfordTown/scripts.pory"
+# 723 "data/maps/DewfordTown/scripts.pory"
+	.string "If you get a bite, pull on the ROD.\p"
+# 724 "data/maps/DewfordTown/scripts.pory"
 	.string "Sometimes you can snag something\n"
-# 748 "data/maps/DewfordTown/scripts.pory"
+# 725 "data/maps/DewfordTown/scripts.pory"
 	.string "immediately, but with bigger catches,\l"
-# 749 "data/maps/DewfordTown/scripts.pory"
+# 726 "data/maps/DewfordTown/scripts.pory"
 	.string "you need to time the pulls on your ROD\l"
-# 750 "data/maps/DewfordTown/scripts.pory"
+# 727 "data/maps/DewfordTown/scripts.pory"
 	.string "to haul them in.$"
+# 728 "data/maps/DewfordTown/scripts.pory"
+
+# 729 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_ThatsTooBadThen:
+# 730 "data/maps/DewfordTown/scripts.pory"
+	.string "Oh, is that so?\n"
+# 731 "data/maps/DewfordTown/scripts.pory"
+	.string "That's too bad, then.$"
+# 732 "data/maps/DewfordTown/scripts.pory"
+
+# 733 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_HowsYourFishing:
+# 734 "data/maps/DewfordTown/scripts.pory"
+	.string "Yo!\n"
+# 735 "data/maps/DewfordTown/scripts.pory"
+	.string "How's your fishing?$"
+# 736 "data/maps/DewfordTown/scripts.pory"
+
+# 737 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_GreatHaulInSomeBigOnes:
+# 738 "data/maps/DewfordTown/scripts.pory"
+	.string "Is that right! That's great!\n"
+# 739 "data/maps/DewfordTown/scripts.pory"
+	.string "Haul in some big ones!$"
+# 740 "data/maps/DewfordTown/scripts.pory"
+
+# 741 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_FishingAdvice:
+# 742 "data/maps/DewfordTown/scripts.pory"
+	.string "Oh, hey, don't get down on yourself!\n"
+# 743 "data/maps/DewfordTown/scripts.pory"
+	.string "I'll give you a little fishing advice.\p"
+# 744 "data/maps/DewfordTown/scripts.pory"
+	.string "First, you want to face the water,\n"
+# 745 "data/maps/DewfordTown/scripts.pory"
+	.string "then use the ROD.\p"
+# 746 "data/maps/DewfordTown/scripts.pory"
+	.string "Focus your mind…\n"
+# 747 "data/maps/DewfordTown/scripts.pory"
+	.string "If you get a bite, pull the ROD.\p"
+# 748 "data/maps/DewfordTown/scripts.pory"
+	.string "Sometimes you can snag something\n"
+# 749 "data/maps/DewfordTown/scripts.pory"
+	.string "immediately, but with bigger catches,\l"
+# 750 "data/maps/DewfordTown/scripts.pory"
+	.string "you need to time the pulls on your ROD\l"
 # 751 "data/maps/DewfordTown/scripts.pory"
-
+	.string "to haul them in.$"
 # 752 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_XIsTheBiggestHappeningThingRight:
+
 # 753 "data/maps/DewfordTown/scripts.pory"
-	.string "I like what's hip, happening, and trendy.\n"
+DewfordTown_Text_XIsTheBiggestHappeningThingRight:
 # 754 "data/maps/DewfordTown/scripts.pory"
-	.string "I'm always checking it out.\p"
+	.string "I like what's hip, happening, and trendy.\n"
 # 755 "data/maps/DewfordTown/scripts.pory"
-	.string "Listen, have you heard about this new\n"
+	.string "I'm always checking it out.\p"
 # 756 "data/maps/DewfordTown/scripts.pory"
-	.string "“{STR_VAR_1}”?\p"
+	.string "Listen, have you heard about this new\n"
 # 757 "data/maps/DewfordTown/scripts.pory"
-	.string "That's right!\n"
+	.string "“{STR_VAR_1}”?\p"
 # 758 "data/maps/DewfordTown/scripts.pory"
-	.string "Of course you know!\p"
+	.string "That's right!\n"
 # 759 "data/maps/DewfordTown/scripts.pory"
-	.string "I mean, sheesh,\n"
+	.string "Of course you know!\p"
 # 760 "data/maps/DewfordTown/scripts.pory"
-	.string "“{STR_VAR_1}”…\l"
+	.string "I mean, sheesh,\n"
 # 761 "data/maps/DewfordTown/scripts.pory"
-	.string "It's the hottest thing in cool!\p"
+	.string "“{STR_VAR_1}”…\l"
 # 762 "data/maps/DewfordTown/scripts.pory"
-	.string "Wherever you're from,\n"
+	.string "It's the hottest thing in cool!\p"
 # 763 "data/maps/DewfordTown/scripts.pory"
-	.string "“{STR_VAR_1}”\l"
+	.string "Wherever you're from,\n"
 # 764 "data/maps/DewfordTown/scripts.pory"
-	.string "is the biggest happening thing, right?$"
-# 765 "data/maps/DewfordTown/scripts.pory"
-
-# 766 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_TellMeWhatsNewAndIn:
-# 767 "data/maps/DewfordTown/scripts.pory"
-	.string "Hunh?\n"
-# 768 "data/maps/DewfordTown/scripts.pory"
-	.string "It's not the hip and happening thing?\p"
-# 769 "data/maps/DewfordTown/scripts.pory"
-	.string "Well, hey, you have to tell me,\n"
-# 770 "data/maps/DewfordTown/scripts.pory"
-	.string "what's new and what's “in”?$"
-# 771 "data/maps/DewfordTown/scripts.pory"
-
-# 772 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_OfCourseIKnowAboutThat:
-# 773 "data/maps/DewfordTown/scripts.pory"
-	.string "Hunh?\n"
-# 774 "data/maps/DewfordTown/scripts.pory"
-	.string "“{STR_VAR_2}”?\p"
-# 775 "data/maps/DewfordTown/scripts.pory"
-	.string "… …\p"
-# 776 "data/maps/DewfordTown/scripts.pory"
-	.string "…Uh… Yeah! That's right!\n"
-# 777 "data/maps/DewfordTown/scripts.pory"
-	.string "Yeah, I knew that! Knew it all along!\p"
-# 778 "data/maps/DewfordTown/scripts.pory"
-	.string "Of course I know about that!\n"
-# 779 "data/maps/DewfordTown/scripts.pory"
-	.string "“{STR_VAR_2},” right?\p"
-# 780 "data/maps/DewfordTown/scripts.pory"
-	.string "Yeah, that's it, it's there!\n"
-# 781 "data/maps/DewfordTown/scripts.pory"
-	.string "Isn't “{STR_VAR_2}”\l"
-# 782 "data/maps/DewfordTown/scripts.pory"
-	.string "the coolest, or what?\p"
-# 783 "data/maps/DewfordTown/scripts.pory"
-	.string "It's the hippest thing in hip.\n"
-# 784 "data/maps/DewfordTown/scripts.pory"
-	.string "You think I'd not know about it?\p"
-# 785 "data/maps/DewfordTown/scripts.pory"
-	.string "“{STR_VAR_1}”…\n"
-# 786 "data/maps/DewfordTown/scripts.pory"
-	.string "It's, like, so five minutes ago.\p"
-# 787 "data/maps/DewfordTown/scripts.pory"
-	.string "Now, “{STR_VAR_2}” is\n"
-# 788 "data/maps/DewfordTown/scripts.pory"
-	.string "what's vital and in tune with the times!$"
-# 789 "data/maps/DewfordTown/scripts.pory"
-
-# 790 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_XHuhIThinkYIsCool:
-# 791 "data/maps/DewfordTown/scripts.pory"
-	.string "Hmm…\n"
-# 792 "data/maps/DewfordTown/scripts.pory"
-	.string "“{STR_VAR_2},” huh?\p"
-# 793 "data/maps/DewfordTown/scripts.pory"
-	.string "But personally, I think\n"
-# 794 "data/maps/DewfordTown/scripts.pory"
 	.string "“{STR_VAR_1}”\l"
+# 765 "data/maps/DewfordTown/scripts.pory"
+	.string "is the biggest happening thing, right?$"
+# 766 "data/maps/DewfordTown/scripts.pory"
+
+# 767 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_TellMeWhatsNewAndIn:
+# 768 "data/maps/DewfordTown/scripts.pory"
+	.string "Hunh?\n"
+# 769 "data/maps/DewfordTown/scripts.pory"
+	.string "It's not the hip and happening thing?\p"
+# 770 "data/maps/DewfordTown/scripts.pory"
+	.string "Well, hey, you have to tell me,\n"
+# 771 "data/maps/DewfordTown/scripts.pory"
+	.string "what's new and what's “in”?$"
+# 772 "data/maps/DewfordTown/scripts.pory"
+
+# 773 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_OfCourseIKnowAboutThat:
+# 774 "data/maps/DewfordTown/scripts.pory"
+	.string "Hunh?\n"
+# 775 "data/maps/DewfordTown/scripts.pory"
+	.string "“{STR_VAR_2}”?\p"
+# 776 "data/maps/DewfordTown/scripts.pory"
+	.string "… …\p"
+# 777 "data/maps/DewfordTown/scripts.pory"
+	.string "…Uh… Yeah! That's right!\n"
+# 778 "data/maps/DewfordTown/scripts.pory"
+	.string "Yeah, I knew that! Knew it all along!\p"
+# 779 "data/maps/DewfordTown/scripts.pory"
+	.string "Of course I know about that!\n"
+# 780 "data/maps/DewfordTown/scripts.pory"
+	.string "“{STR_VAR_2},” right?\p"
+# 781 "data/maps/DewfordTown/scripts.pory"
+	.string "Yeah, that's it, it's there!\n"
+# 782 "data/maps/DewfordTown/scripts.pory"
+	.string "Isn't “{STR_VAR_2}”\l"
+# 783 "data/maps/DewfordTown/scripts.pory"
+	.string "the coolest, or what?\p"
+# 784 "data/maps/DewfordTown/scripts.pory"
+	.string "It's the hippest thing in hip.\n"
+# 785 "data/maps/DewfordTown/scripts.pory"
+	.string "You think I'd not know about it?\p"
+# 786 "data/maps/DewfordTown/scripts.pory"
+	.string "“{STR_VAR_1}”…\n"
+# 787 "data/maps/DewfordTown/scripts.pory"
+	.string "It's, like, so five minutes ago.\p"
+# 788 "data/maps/DewfordTown/scripts.pory"
+	.string "Now, “{STR_VAR_2}” is\n"
+# 789 "data/maps/DewfordTown/scripts.pory"
+	.string "what's vital and in tune with the times!$"
+# 790 "data/maps/DewfordTown/scripts.pory"
+
+# 791 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_XHuhIThinkYIsCool:
+# 792 "data/maps/DewfordTown/scripts.pory"
+	.string "Hmm…\n"
+# 793 "data/maps/DewfordTown/scripts.pory"
+	.string "“{STR_VAR_2},” huh?\p"
+# 794 "data/maps/DewfordTown/scripts.pory"
+	.string "But personally, I think\n"
 # 795 "data/maps/DewfordTown/scripts.pory"
-	.string "is what's real in cool.$"
+	.string "“{STR_VAR_1}”\l"
 # 796 "data/maps/DewfordTown/scripts.pory"
-
+	.string "is what's real in cool.$"
 # 797 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_HearOfAnyTrendsComeShareWithMe:
-# 798 "data/maps/DewfordTown/scripts.pory"
-	.string "Well, if you hear of any happening new\n"
-# 799 "data/maps/DewfordTown/scripts.pory"
-	.string "trends, come share them with me, okay?$"
-# 800 "data/maps/DewfordTown/scripts.pory"
 
+# 798 "data/maps/DewfordTown/scripts.pory"
+DewfordTown_Text_HearOfAnyTrendsComeShareWithMe:
+# 799 "data/maps/DewfordTown/scripts.pory"
+	.string "Well, if you hear of any happening new\n"
+# 800 "data/maps/DewfordTown/scripts.pory"
+	.string "trends, come share them with me, okay?$"
 # 801 "data/maps/DewfordTown/scripts.pory"
-DewfordTown_Text_YeahDefinitionOfInRightNow:
+
 # 802 "data/maps/DewfordTown/scripts.pory"
-	.string "Yeah, absolutely right!\p"
+DewfordTown_Text_YeahDefinitionOfInRightNow:
 # 803 "data/maps/DewfordTown/scripts.pory"
-	.string "“{STR_VAR_1}” is the\n"
+	.string "Yeah, absolutely right!\p"
 # 804 "data/maps/DewfordTown/scripts.pory"
+	.string "“{STR_VAR_1}” is the\n"
+# 805 "data/maps/DewfordTown/scripts.pory"
 	.string "definition of “in” right now.$"
 
 DewfordTown_EventScript_GymBlocker::
-# 808 "data/maps/DewfordTown/scripts.pory"
-	lock
 # 809 "data/maps/DewfordTown/scripts.pory"
-	faceplayer
+	lock
 # 810 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_EventScript_GymBlocker_Text_0, MSGBOX_NPC
+	faceplayer
 # 811 "data/maps/DewfordTown/scripts.pory"
-	waitmessage
+	msgbox DewfordTown_EventScript_GymBlocker_Text_0, MSGBOX_NPC
 # 812 "data/maps/DewfordTown/scripts.pory"
+	waitmessage
+# 813 "data/maps/DewfordTown/scripts.pory"
 	release
 	end
 
 
+DewfordTown_EventScript_BrineyWaterStone::
+# 819 "data/maps/DewfordTown/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_WATER_STONE, DewfordTown_EventScript_BrineyWaterStone_3
+DewfordTown_EventScript_BrineyWaterStone_1:
+	return
+
+DewfordTown_EventScript_BrineyWaterStone_2:
+# 820 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_BrineyWaterStone_Text_0, MSGBOX_DEFAULT
+# 821 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 822 "data/maps/DewfordTown/scripts.pory"
+	giveitem ITEM_WATER_STONE
+# 823 "data/maps/DewfordTown/scripts.pory"
+	setflag FLAG_RECEIVED_WATER_STONE
+# 824 "data/maps/DewfordTown/scripts.pory"
+	waitfanfare
+	goto DewfordTown_EventScript_BrineyWaterStone_1
+
+DewfordTown_EventScript_BrineyWaterStone_3:
+# 819 "data/maps/DewfordTown/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, DewfordTown_EventScript_BrineyWaterStone_2
+	goto DewfordTown_EventScript_BrineyWaterStone_1
+
+
 DewfordTown_EventScript_GymBlocker_Text_0:
-# 810 "data/maps/DewfordTown/scripts.pory"
+# 811 "data/maps/DewfordTown/scripts.pory"
 	.string "Ah, Trainer!\p"
 	.string "I'm sorry, but Brawly is away dealing\n"
 	.string "with some issues, so the Gym is closed\l"
@@ -1631,3 +1658,11 @@ DewfordTown_EventScript_GymBlocker_Text_0:
 	.string "You don't want to wait? Well, I suppose\n"
 	.string "you could find him in Slateport and try\l"
 	.string "to get him to return to the Gym.$"
+
+DewfordTown_EventScript_BrineyWaterStone_Text_0:
+# 820 "data/maps/DewfordTown/scripts.pory"
+	.string "MR. BRINEY: Ahoy there, young Trainer!\p"
+	.string "Congrats on defeating Brawly. I happen\n"
+	.string "to have found a Water Stone while\l"
+	.string "sailing that you might be interested in.\l"
+	.string "Here you go!$"

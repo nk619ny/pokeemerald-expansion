@@ -16,6 +16,7 @@ VerdanturfTown_WandasHouse_EventScript_WallyShortSpeech::
 	release
 	end
 
+/*
 VerdanturfTown_WandasHouse_EventScript_WallysUncle::
 	lock
 	faceplayer
@@ -24,6 +25,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncle::
 	msgbox VerdanturfTown_WandasHouse_Text_WallysNextDoor, MSGBOX_DEFAULT
 	release
 	end
+*/
 
 VerdanturfTown_WandasHouse_EventScript_WallysUncleSlippedOff::
 	msgbox VerdanturfTown_WandasHouse_Text_WallySlippedOff, MSGBOX_DEFAULT
@@ -168,3 +170,25 @@ VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande:
 	.string "astonished to hear that!$"
 
 `
+
+
+text VerdanturfTown_WandasHouse_Text_WallysGotPotential {
+	format("UNCLE: I hear Wally's doing great in the Pokémon League challenge.\pHe's bound to go far with that Gallade of his.")
+}
+
+
+script VerdanturfTown_WandasHouse_EventScript_WallysUncle{
+	lock
+	faceplayer
+	checkitem(ITEM_TM_HIDDEN_POWER)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("You might know my nephew, Wally.\pWe've always known he had real potential deep down.\pPokémon each have some Hidden Power, too. You should try bringing it out!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_HIDDEN_POWER)
+		waitfanfare
+		end
+	}
+	goto_if_set(FLAG_DEFEATED_WALLY_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande)
+	msgbox(VerdanturfTown_WandasHouse_Text_WallysGotPotential, MSGBOX_DEFAULT)
+	end
+}

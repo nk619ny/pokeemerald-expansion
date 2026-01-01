@@ -138,7 +138,7 @@
       "x": 4,
       "y": 14,
       "elevation": 0,
-      "item": "ITEM_WATER_STONE",
+      "item": "ITEM_SUN_STONE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_107_WATER_STONE"
     }
   ]

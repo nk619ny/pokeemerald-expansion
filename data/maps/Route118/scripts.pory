@@ -51,9 +51,9 @@ Route118_EventScript_ReceivedGoodRod::
 	release
 	end
 
-Route118_EventScript_Girl::
-	msgbox Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC
-	end
+//Route118_EventScript_Girl::
+//	msgbox Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC
+//	end
 
 Route118_EventScript_RouteSignMauville::
 	msgbox Route118_Text_RouteSignMauville, MSGBOX_SIGN
@@ -302,3 +302,25 @@ Route118_Text_RouteSign119:
 	.string "{UP_ARROW} ROUTE 119$"
 
 `
+
+
+script Route118_EventScript_Girl{
+	lock
+	faceplayer
+	goto_if_unset(FLAG_RECEIVED_EVIOLITE,Route118_EventScript_GiveEviolite)
+	msgbox(Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC)
+	closemessage
+	releaseall
+	end
+}
+	
+script Route118_EventScript_GiveEviolite {
+	lock
+	msgbox(format("Everyone talks about evolution making Pokémon stronger.\pBut I think some unevolved Pokémon are more fun to use.\pThis item helps them hold their own against fully evolved opponents."))
+	giveitem(ITEM_EVIOLITE)
+	waitfanfare
+	closemessage
+	setflag(FLAG_RECEIVED_EVIOLITE)
+	releaseall
+	end
+}

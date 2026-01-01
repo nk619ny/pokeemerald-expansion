@@ -673,7 +673,7 @@ LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
 # 337 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "The HEAT BADGE lets Pokémon use the\n"
 # 338 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	.string "HM move STRENGTH outside of battle.\p"
+	.string "HM move Flash outside of battle.\p"
 # 339 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "This is a token of my appreciation.\n"
 # 340 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
@@ -683,7 +683,7 @@ LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
 # 342 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 LavaridgeTown_Gym_1F_Text_ExplainOverheat:
 # 343 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	.string "That TM50 contains OVERHEAT.\p"
+	.string "That TM contains OVERHEAT.\p"
 # 344 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	.string "That move inflicts serious damage on\n"
 # 345 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"

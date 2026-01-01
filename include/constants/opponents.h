@@ -207,7 +207,7 @@
 #define TRAINER_COLE                        201
 #define TRAINER_JEFF                        202
 #define TRAINER_AXLE                        203
-#define TRAINER_JACE                        204
+#define TRAINER_JACE                        204 //was Lavaridge, can be repurposed available
 #define TRAINER_KEEGAN                      205
 #define TRAINER_BERNIE_1                    206
 #define TRAINER_BERNIE_2                    207
@@ -504,7 +504,7 @@
 #define TRAINER_ERNEST_3                    498
 #define TRAINER_ERNEST_4                    499
 #define TRAINER_ERNEST_5                    500
-#define TRAINER_ELI                         501
+#define TRAINER_ELI                         501 //was Lavaridge, can be repurposed available
 #define TRAINER_ANNIKA                      502
 #define TRAINER_JAZMYN                      503
 #define TRAINER_JONAS                       504
@@ -653,7 +653,7 @@
 #define TRAINER_JOHANNA                     647
 #define TRAINER_GERALD                      648
 #define TRAINER_VIVIAN                      649
-#define TRAINER_DANIELLE                    650
+#define TRAINER_DANIELLE                    650 //was Lavaridge, can be repurposed available
 #define TRAINER_HIDEO                       651
 #define TRAINER_KEIGO                       652
 #define TRAINER_RILEY                       653

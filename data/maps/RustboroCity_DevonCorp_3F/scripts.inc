@@ -129,7 +129,7 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 # 65 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND
 # 66 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND
+	//clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND
 # 67 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDA
 # 68 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"

@@ -105,11 +105,11 @@ Route118_EventScript_ReceivedGoodRod::
 # 53 "data/maps/Route118/scripts.pory"
 
 # 54 "data/maps/Route118/scripts.pory"
-Route118_EventScript_Girl::
+//Route118_EventScript_Girl::
 # 55 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC
+//	msgbox Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC
 # 56 "data/maps/Route118/scripts.pory"
-	end
+//	end
 # 57 "data/maps/Route118/scripts.pory"
 
 # 58 "data/maps/Route118/scripts.pory"
@@ -602,3 +602,46 @@ Route118_Text_RouteSign119:
 	.string "ROUTE 118\n"
 # 302 "data/maps/Route118/scripts.pory"
 	.string "{UP_ARROW} ROUTE 119$"
+
+Route118_EventScript_Girl::
+# 308 "data/maps/Route118/scripts.pory"
+	lock
+# 309 "data/maps/Route118/scripts.pory"
+	faceplayer
+# 310 "data/maps/Route118/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_EVIOLITE, Route118_EventScript_GiveEviolite
+# 311 "data/maps/Route118/scripts.pory"
+	msgbox Route118_Text_CanCrossRiversWithSurf, MSGBOX_NPC
+# 312 "data/maps/Route118/scripts.pory"
+	closemessage
+# 313 "data/maps/Route118/scripts.pory"
+	releaseall
+	end
+
+
+Route118_EventScript_GiveEviolite::
+# 318 "data/maps/Route118/scripts.pory"
+	lock
+# 319 "data/maps/Route118/scripts.pory"
+	msgbox Route118_EventScript_GiveEviolite_Text_0
+# 320 "data/maps/Route118/scripts.pory"
+	giveitem ITEM_EVIOLITE
+# 321 "data/maps/Route118/scripts.pory"
+	waitfanfare
+# 322 "data/maps/Route118/scripts.pory"
+	closemessage
+# 323 "data/maps/Route118/scripts.pory"
+	setflag FLAG_RECEIVED_EVIOLITE
+# 324 "data/maps/Route118/scripts.pory"
+	releaseall
+	end
+
+
+Route118_EventScript_GiveEviolite_Text_0:
+# 319 "data/maps/Route118/scripts.pory"
+	.string "Everyone talks about evolution making\n"
+	.string "Pokémon stronger.\p"
+	.string "But I think some unevolved Pokémon are\n"
+	.string "more fun to use.\p"
+	.string "This item helps them hold their own\n"
+	.string "against fully evolved opponents.$"

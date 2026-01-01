@@ -1,0 +1,113 @@
+mapscripts VerdantGrove_MapScripts{}
+
+const TempVar_NectarTrigger = VAR_TEMP_0
+const TempVar_NectarID = VAR_TEMP_1
+const TempFlag_PinkNectar = FLAG_TEMP_1
+const TempFlag_PurpleNectar = FLAG_TEMP_2
+const TempFlag_RedNectar = FLAG_TEMP_3
+const TempFlag_YellowNectar = FLAG_TEMP_4
+
+script VerdantGrove_EventScript_GenerateNectar {
+    setvar(TempVar_NectarTrigger, 1)
+    special(GetPlayerTrainerIdOnesDigit)
+    switch(var(VAR_RESULT)) {
+        case 0:
+        case 1:
+            setvar(TempVar_NectarID, ITEM_PINK_NECTAR)
+        case 2:
+        case 3:
+            setvar(TempVar_NectarID, ITEM_PURPLE_NECTAR)
+        case 4:
+        case 5:
+            setvar(TempVar_NectarID, ITEM_RED_NECTAR)
+        case 6:
+        case 7:
+            setvar(TempVar_NectarID, ITEM_YELLOW_NECTAR)
+        case 8:
+            checkplayergender
+            if(var(VAR_RESULT) == MALE) {
+                setvar(TempVar_NectarID, ITEM_PINK_NECTAR)
+            } 
+            else {
+                setvar(TempVar_NectarID, ITEM_PURPLE_NECTAR)
+            }
+        case 9:
+            checkplayergender
+            if(var(VAR_RESULT) == MALE) {
+                setvar(TempVar_NectarID, ITEM_RED_NECTAR)
+            } 
+            else {
+                setvar(TempVar_NectarID, ITEM_YELLOW_NECTAR)
+            }
+        default:    
+            setvar(TempVar_NectarID, 0)
+    }
+    switch(var(TempVar_NectarID)) {
+        case ITEM_PINK_NECTAR:
+            setflag(TempFlag_PinkNectar)
+            call(VerdantGrove_EventScript_SetPinkNectar)
+        case ITEM_PURPLE_NECTAR:
+            setflag(TempFlag_PurpleNectar)
+            call(VerdantGrove_EventScript_SetPurpleNectar)
+        case ITEM_RED_NECTAR:
+            setflag(TempFlag_RedNectar)
+            call(VerdantGrove_EventScript_SetRedNectar)
+        case ITEM_YELLOW_NECTAR:
+            setflag(TempFlag_YellowNectar)
+            call(VerdantGrove_EventScript_SetYellowNectar)
+    }
+    releaseall
+    end
+}
+
+script VerdantGrove_EventScript_SetPinkNectar {
+    setflag(TempFlag_PinkNectar)
+    setflag(TempFlag_PurpleNectar)
+    setflag(TempFlag_RedNectar)
+    setflag(TempFlag_YellowNectar)
+    clearflag(TempFlag_PinkNectar)
+    setmetatile(9, 8, 0x208, FALSE)
+    //setmetatile(9, 8, 0x210, FALSE)
+    special(DrawWholeMapView)
+    releaseall
+    return
+}
+
+script VerdantGrove_EventScript_SetPurpleNectar {
+    setflag(TempFlag_PinkNectar)
+    setflag(TempFlag_PurpleNectar)
+    setflag(TempFlag_RedNectar)
+    setflag(TempFlag_YellowNectar)
+    clearflag(TempFlag_PurpleNectar)
+    //setmetatile(9, 8, 0x208, FALSE)
+    setmetatile(9, 8, 0x210, FALSE)
+    special(DrawWholeMapView)
+    releaseall
+    return
+}
+
+script VerdantGrove_EventScript_SetRedNectar {
+    setflag(TempFlag_PinkNectar)
+    setflag(TempFlag_PurpleNectar)
+    setflag(TempFlag_RedNectar)
+    setflag(TempFlag_YellowNectar)
+    clearflag(TempFlag_RedNectar)
+    setmetatile(9, 8, 0x208, FALSE)
+    //setmetatile(9, 8, 0x210, FALSE)
+    special(DrawWholeMapView)
+    releaseall
+    return
+}
+
+script VerdantGrove_EventScript_SetYellowNectar {
+    setflag(TempFlag_PinkNectar)
+    setflag(TempFlag_PurpleNectar)
+    setflag(TempFlag_RedNectar)
+    setflag(TempFlag_YellowNectar)
+    clearflag(TempFlag_YellowNectar)
+    //setmetatile(9, 8, 0x208, FALSE)
+    setmetatile(9, 8, 0x210, FALSE)
+    special(DrawWholeMapView)
+    releaseall
+    return
+}
