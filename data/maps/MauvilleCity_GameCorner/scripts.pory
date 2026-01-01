@@ -912,7 +912,7 @@ script MauvilleCity_GameCorner_EventScript_ExchangeCoinsForPrizes {
 		case 4:
 			goto(MauvilleCity_GameCorner_EventScript_BuyVitamins)
 		case 5: 
-			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			goto(MauvilleCity_GameCorner_EventScript_BuyGems)
 		default:
 			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
 	}
@@ -999,31 +999,74 @@ script MauvilleCity_GameCorner_EventScript_BuyRareBattleItems{
 	return
 }
 
+script MauvilleCity_GameCorner_EventScript_BuyGems {
+	lock
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Normal Gem",ITEM_NORMAL_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Fighting Gem",ITEM_FIGHTING_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Flying Gem",ITEM_FLYING_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Poison Gem",ITEM_POISON_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Ground Gem",ITEM_GROUND_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Rock Gem",ITEM_ROCK_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Bug Gem",ITEM_BUG_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Ghost Gem",ITEM_GHOST_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Steel Gem",ITEM_STEEL_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Fire Gem",ITEM_FIRE_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Water Gem",ITEM_WATER_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Grass Gem",ITEM_GRASS_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Electric Gem",ITEM_ELECTRIC_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Psychic Gem",ITEM_PSYCHIC_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Ice Gem",ITEM_ICE_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Dragon Gem",ITEM_DRAGON_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Dark Gem",ITEM_DARK_GEM)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Fairy Gem",ITEM_FAIRY_GEM)}
+	msgbox(format("Which Gem you like to buy for 250 coins?"), MSGBOX_DEFAULT)
+	showcoinsbox(1, 1)
+	dynmultistack(25, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	copyvar(TempVar_PrizeToBuy, VAR_RESULT)
+	bufferitemname(STR_VAR_1, TempVar_PrizeToBuy)
+
+	goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+	buffernumberstring(STR_VAR_2, 250)
+	msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+	goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+	removecoins(250)
+	additem(TempVar_PrizeToBuy)
+
+	closemessage
+	playse(SE_SHOP)
+	msgbox(format("Here you go!"))
+	hidecoinsbox(0, 5)
+	closemessage
+	releaseall
+	return
+}
+
 script MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems {
 	lock
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Ability Shield   300 coins",ITEM_ABILITY_SHIELD)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Bright Powder   200 coins",ITEM_BRIGHT_POWDER)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Clear Amulet     500 coins",ITEM_CLEAR_AMULET)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Covert Cloak    500 coins",ITEM_COVERT_CLOAK)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Expert Belt      450 coins",ITEM_EXPERT_BELT)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Flame Orb          200 coins",ITEM_FLAME_ORB)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Heavy Boots     200 coins",ITEM_HEAVY_DUTY_BOOTS)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("King's Rock       200 coins",ITEM_KINGS_ROCK)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Lagging Tail      200 coins",ITEM_LAGGING_TAIL)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Light Clay         400 coins",ITEM_LIGHT_CLAY)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Metronome         300 coins",ITEM_METRONOME)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Protect Pads    300 coins",ITEM_PROTECTIVE_PADS)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Punching Glove 300 coins",ITEM_PUNCHING_GLOVE)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Quick Claw         200 coins",ITEM_QUICK_CLAW)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Safety Goggles 350 coins",ITEM_SAFETY_GOGGLES)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Scope Lens        250 coins",ITEM_SCOPE_LENS)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Shed Shell          250 coins",ITEM_SHED_SHELL)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Shell Bell           350 coins",ITEM_SHELL_BELL)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Sticky Barb       350 coins",ITEM_STICKY_BARB)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Toxic Orb           200 coins",ITEM_TOXIC_ORB)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Util. Umbrella    200 coins",ITEM_UTILITY_UMBRELLA)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Wide Lens          400 coins",ITEM_WIDE_LENS)}
-	if(flag(FLAG_BADGE01_GET)) {dynmultipush("Zoom Lens          400 coins",ITEM_ZOOM_LENS)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Ability Shield   300 coins",ITEM_ABILITY_SHIELD)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Bright Powder   200 coins",ITEM_BRIGHT_POWDER)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Clear Amulet     500 coins",ITEM_CLEAR_AMULET)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Covert Cloak    500 coins",ITEM_COVERT_CLOAK)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Eviolite            300 coins",ITEM_EVIOLITE)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Expert Belt      450 coins",ITEM_EXPERT_BELT)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Flame Orb          200 coins",ITEM_FLAME_ORB)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Heavy Boots     200 coins",ITEM_HEAVY_DUTY_BOOTS)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("King's Rock       200 coins",ITEM_KINGS_ROCK)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Lagging Tail      200 coins",ITEM_LAGGING_TAIL)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Light Clay         400 coins",ITEM_LIGHT_CLAY)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Metronome         300 coins",ITEM_METRONOME)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Protect Pads    300 coins",ITEM_PROTECTIVE_PADS)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Punching Glove 300 coins",ITEM_PUNCHING_GLOVE)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Quick Claw         200 coins",ITEM_QUICK_CLAW)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Safety Goggles 350 coins",ITEM_SAFETY_GOGGLES)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Scope Lens        250 coins",ITEM_SCOPE_LENS)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Shed Shell          250 coins",ITEM_SHED_SHELL)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Shell Bell           350 coins",ITEM_SHELL_BELL)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Sticky Barb       350 coins",ITEM_STICKY_BARB)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Toxic Orb           200 coins",ITEM_TOXIC_ORB)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Util. Umbrella    200 coins",ITEM_UTILITY_UMBRELLA)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Wide Lens          400 coins",ITEM_WIDE_LENS)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Zoom Lens          400 coins",ITEM_ZOOM_LENS)}
 	msgbox(format("Which held item would you like?"), MSGBOX_DEFAULT)
 	showcoinsbox(1, 1)
 	dynmultistack(25, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
@@ -1193,6 +1236,13 @@ script MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems {
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
 			removecoins(400)
 			additem(TempVar_PrizeToBuy)
+		case ITEM_EVIOLITE:
+			goto_if_lt(TempVar_CurrentCoins, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 300)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(300)
+			additem(TempVar_PrizeToBuy)
 		default:
 			hidecoinsbox(0, 5)
 			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
@@ -1208,27 +1258,27 @@ script MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems {
 
 script MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems {
 	lock
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Air Balloon       100 coins",ITEM_AIR_BALLOON)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Focus Sash       250 coins",ITEM_FOCUS_SASH)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Mental Herb      100 coins",ITEM_MENTAL_HERB)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Power Herb        150 coins",ITEM_POWER_HERB)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("White Herb        250 coins",ITEM_WHITE_HERB)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Mirror Herb       250 coins",ITEM_MIRROR_HERB)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Adrenaline Orb 250 coins",ITEM_ADRENALINE_ORB)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Blunder Policy 100 coins",ITEM_BLUNDER_POLICY)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Weakness Plcy  150 coins",ITEM_WEAKNESS_POLICY)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Throat Spray    200 coins",ITEM_THROAT_SPRAY)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Eject Button    200 coins",ITEM_EJECT_BUTTON)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Eject Pack        200 coins",ITEM_EJECT_PACK)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Red Card            150 coins",ITEM_RED_CARD)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Absorb Bulb      100 coins",ITEM_ABSORB_BULB)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Cell Battery     100 coins",ITEM_CELL_BATTERY)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Luminous Moss  100 coins",ITEM_LUMINOUS_MOSS)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Snowball           100 coins",ITEM_SNOWBALL)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Grassy Seed      100 coins",ITEM_GRASSY_SEED)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Electric Seed   100 coins",ITEM_ELECTRIC_SEED)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Misty Seed        100 coins",ITEM_MISTY_SEED)}
-	if(flag(FLAG_IS_CHAMPION)){dynmultipush("Psychic Seed    100 coins",ITEM_PSYCHIC_SEED)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Air Balloon       100 coins",ITEM_AIR_BALLOON)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Focus Sash       250 coins",ITEM_FOCUS_SASH)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Mental Herb      100 coins",ITEM_MENTAL_HERB)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Power Herb        150 coins",ITEM_POWER_HERB)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("White Herb        250 coins",ITEM_WHITE_HERB)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Mirror Herb       250 coins",ITEM_MIRROR_HERB)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Adrenaline Orb 250 coins",ITEM_ADRENALINE_ORB)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Blunder Policy 100 coins",ITEM_BLUNDER_POLICY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Weakness Plcy  150 coins",ITEM_WEAKNESS_POLICY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Throat Spray    200 coins",ITEM_THROAT_SPRAY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Eject Button    200 coins",ITEM_EJECT_BUTTON)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Eject Pack        200 coins",ITEM_EJECT_PACK)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Red Card            150 coins",ITEM_RED_CARD)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Absorb Bulb      100 coins",ITEM_ABSORB_BULB)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Cell Battery     100 coins",ITEM_CELL_BATTERY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Luminous Moss  100 coins",ITEM_LUMINOUS_MOSS)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Snowball           100 coins",ITEM_SNOWBALL)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Grassy Seed      100 coins",ITEM_GRASSY_SEED)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Electric Seed   100 coins",ITEM_ELECTRIC_SEED)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Misty Seed        100 coins",ITEM_MISTY_SEED)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Psychic Seed    100 coins",ITEM_PSYCHIC_SEED)}
 	msgbox(format("Which one-time use item would you like?"), MSGBOX_DEFAULT)
 	showcoinsbox(1, 1)
 	dynmultistack(30, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)

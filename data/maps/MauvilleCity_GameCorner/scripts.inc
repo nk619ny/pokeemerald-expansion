@@ -1792,7 +1792,7 @@ MauvilleCity_GameCorner_EventScript_ExchangeCoinsForPrizes_10:
 
 MauvilleCity_GameCorner_EventScript_ExchangeCoinsForPrizes_11:
 # 915 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto MauvilleCity_GameCorner_EventScript_ComeBackLater
+	goto MauvilleCity_GameCorner_EventScript_BuyGems
 	goto MauvilleCity_GameCorner_EventScript_ExchangeCoinsForPrizes_4
 
 
@@ -2022,1390 +2022,1599 @@ MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_39:
 	goto MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_32
 
 
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems::
+MauvilleCity_GameCorner_EventScript_BuyGems::
 # 1003 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	lock
 # 1004 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_2
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_1:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_2
+MauvilleCity_GameCorner_EventScript_BuyGems_1:
 # 1005 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_5
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_4:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_5
+MauvilleCity_GameCorner_EventScript_BuyGems_4:
 # 1006 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_8
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_7:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_8
+MauvilleCity_GameCorner_EventScript_BuyGems_7:
 # 1007 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_11
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_10:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_11
+MauvilleCity_GameCorner_EventScript_BuyGems_10:
 # 1008 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_14
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_13:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_14
+MauvilleCity_GameCorner_EventScript_BuyGems_13:
 # 1009 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_17
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_16:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_17
+MauvilleCity_GameCorner_EventScript_BuyGems_16:
 # 1010 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_20
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_19:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_20
+MauvilleCity_GameCorner_EventScript_BuyGems_19:
 # 1011 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_23
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_22:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_23
+MauvilleCity_GameCorner_EventScript_BuyGems_22:
 # 1012 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_26
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_25:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_26
+MauvilleCity_GameCorner_EventScript_BuyGems_25:
 # 1013 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_29
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_28:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_29
+MauvilleCity_GameCorner_EventScript_BuyGems_28:
 # 1014 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_32
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_31:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_32
+MauvilleCity_GameCorner_EventScript_BuyGems_31:
 # 1015 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_35
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_34:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_35
+MauvilleCity_GameCorner_EventScript_BuyGems_34:
 # 1016 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_38
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_37:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_38
+MauvilleCity_GameCorner_EventScript_BuyGems_37:
 # 1017 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_41
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_40:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_41
+MauvilleCity_GameCorner_EventScript_BuyGems_40:
 # 1018 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_44
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_43:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_44
+MauvilleCity_GameCorner_EventScript_BuyGems_43:
 # 1019 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_47
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_46:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_47
+MauvilleCity_GameCorner_EventScript_BuyGems_46:
 # 1020 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_50
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_49:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_50
+MauvilleCity_GameCorner_EventScript_BuyGems_49:
 # 1021 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_53
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_52:
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyGems_53
+MauvilleCity_GameCorner_EventScript_BuyGems_52:
 # 1022 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_56
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_55:
+	msgbox MauvilleCity_GameCorner_EventScript_BuyGems_Text_18, MSGBOX_DEFAULT
 # 1023 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_59
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_58:
-# 1024 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_62
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_61:
-# 1025 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_65
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_64:
-# 1026 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_68
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_67:
-# 1027 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_23, MSGBOX_DEFAULT
-# 1028 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	showcoinsbox 1, 1
-# 1029 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1024 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	dynmultistack 25, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
-# 1030 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1025 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	copyvar VAR_TEMP_3, VAR_RESULT
-# 1031 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1026 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	bufferitemname STR_VAR_1, VAR_TEMP_3
-# 1034 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	switch VAR_TEMP_3
+# 1028 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1029 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 250
+# 1030 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
+# 1031 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
+# 1032 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 250
+# 1033 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	additem VAR_TEMP_3
 # 1035 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_ABILITY_SHIELD, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_72
-# 1042 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_EXPERT_BELT, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
-# 1049 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_BRIGHT_POWDER, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_74
-# 1056 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_CLEAR_AMULET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_75
-# 1063 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_COVERT_CLOAK, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_76
-# 1070 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_FLAME_ORB, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_77
-# 1077 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_HEAVY_DUTY_BOOTS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_78
-# 1084 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_KINGS_ROCK, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_79
-# 1091 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_LAGGING_TAIL, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_80
-# 1098 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_LIGHT_CLAY, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_81
-# 1105 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_METRONOME, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_82
-# 1112 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_PROTECTIVE_PADS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_83
-# 1119 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_PUNCHING_GLOVE, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_84
-# 1126 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_QUICK_CLAW, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_85
-# 1133 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_SAFETY_GOGGLES, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_86
-# 1140 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_SCOPE_LENS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_87
-# 1147 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_SHED_SHELL, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_88
-# 1154 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_SHELL_BELL, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_89
-# 1161 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_STICKY_BARB, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_90
-# 1168 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_TOXIC_ORB, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_91
-# 1175 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_UTILITY_UMBRELLA, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_92
-# 1182 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_WIDE_LENS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_93
-# 1189 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_ZOOM_LENS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_94
-# 1197 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	hidecoinsbox 0, 5
-# 1198 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto MauvilleCity_GameCorner_EventScript_ComeBackLater
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70:
-# 1200 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	closemessage
-# 1201 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1036 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	playse SE_SHOP
-# 1202 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1037 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_9
-# 1203 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1038 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	hidecoinsbox 0, 5
-# 1204 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1039 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	closemessage
-# 1205 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1040 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	releaseall
+	return
+
+MauvilleCity_GameCorner_EventScript_BuyGems_2:
+# 1004 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_0, ITEM_NORMAL_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_1
+
+MauvilleCity_GameCorner_EventScript_BuyGems_5:
+# 1005 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_1, ITEM_FIGHTING_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_4
+
+MauvilleCity_GameCorner_EventScript_BuyGems_8:
+# 1006 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_2, ITEM_FLYING_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_7
+
+MauvilleCity_GameCorner_EventScript_BuyGems_11:
+# 1007 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_3, ITEM_POISON_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_10
+
+MauvilleCity_GameCorner_EventScript_BuyGems_14:
+# 1008 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_4, ITEM_GROUND_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_13
+
+MauvilleCity_GameCorner_EventScript_BuyGems_17:
+# 1009 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_5, ITEM_ROCK_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_16
+
+MauvilleCity_GameCorner_EventScript_BuyGems_20:
+# 1010 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_6, ITEM_BUG_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_19
+
+MauvilleCity_GameCorner_EventScript_BuyGems_23:
+# 1011 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_7, ITEM_GHOST_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_22
+
+MauvilleCity_GameCorner_EventScript_BuyGems_26:
+# 1012 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_8, ITEM_STEEL_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_25
+
+MauvilleCity_GameCorner_EventScript_BuyGems_29:
+# 1013 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_9, ITEM_FIRE_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_28
+
+MauvilleCity_GameCorner_EventScript_BuyGems_32:
+# 1014 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_10, ITEM_WATER_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_31
+
+MauvilleCity_GameCorner_EventScript_BuyGems_35:
+# 1015 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_11, ITEM_GRASS_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_34
+
+MauvilleCity_GameCorner_EventScript_BuyGems_38:
+# 1016 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_12, ITEM_ELECTRIC_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_37
+
+MauvilleCity_GameCorner_EventScript_BuyGems_41:
+# 1017 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_13, ITEM_PSYCHIC_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_40
+
+MauvilleCity_GameCorner_EventScript_BuyGems_44:
+# 1018 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_14, ITEM_ICE_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_43
+
+MauvilleCity_GameCorner_EventScript_BuyGems_47:
+# 1019 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_15, ITEM_DRAGON_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_46
+
+MauvilleCity_GameCorner_EventScript_BuyGems_50:
+# 1020 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_16, ITEM_DARK_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_49
+
+MauvilleCity_GameCorner_EventScript_BuyGems_53:
+# 1021 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyGems_Text_17, ITEM_FAIRY_GEM
+	goto MauvilleCity_GameCorner_EventScript_BuyGems_52
+
+
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems::
+# 1045 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	lock
+# 1046 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_2
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_1:
+# 1047 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_5
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_4:
+# 1048 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_8
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_7:
+# 1049 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_11
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_10:
+# 1050 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_14
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_13:
+# 1051 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_17
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_16:
+# 1052 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_20
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_19:
+# 1053 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_23
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_22:
+# 1054 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_26
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_25:
+# 1055 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_29
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_28:
+# 1056 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_32
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_31:
+# 1057 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_35
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_34:
+# 1058 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_38
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_37:
+# 1059 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_41
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_40:
+# 1060 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_44
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_43:
+# 1061 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_47
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_46:
+# 1062 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_50
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_49:
+# 1063 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_53
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_52:
+# 1064 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_56
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_55:
+# 1065 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_59
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_58:
+# 1066 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_62
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_61:
+# 1067 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_65
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_64:
+# 1068 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_68
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_67:
+# 1069 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_71
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70:
+# 1070 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_24, MSGBOX_DEFAULT
+# 1071 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	showcoinsbox 1, 1
+# 1072 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultistack 25, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 1073 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	copyvar VAR_TEMP_3, VAR_RESULT
+# 1074 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	bufferitemname STR_VAR_1, VAR_TEMP_3
+# 1077 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	switch VAR_TEMP_3
+# 1078 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_ABILITY_SHIELD, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_75
+# 1085 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_EXPERT_BELT, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_76
+# 1092 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_BRIGHT_POWDER, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_77
+# 1099 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_CLEAR_AMULET, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_78
+# 1106 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_COVERT_CLOAK, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_79
+# 1113 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_FLAME_ORB, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_80
+# 1120 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_HEAVY_DUTY_BOOTS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_81
+# 1127 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_KINGS_ROCK, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_82
+# 1134 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_LAGGING_TAIL, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_83
+# 1141 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_LIGHT_CLAY, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_84
+# 1148 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_METRONOME, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_85
+# 1155 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_PROTECTIVE_PADS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_86
+# 1162 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_PUNCHING_GLOVE, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_87
+# 1169 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_QUICK_CLAW, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_88
+# 1176 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_SAFETY_GOGGLES, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_89
+# 1183 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_SCOPE_LENS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_90
+# 1190 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_SHED_SHELL, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_91
+# 1197 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_SHELL_BELL, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_92
+# 1204 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_STICKY_BARB, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_93
+# 1211 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_TOXIC_ORB, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_94
+# 1218 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_UTILITY_UMBRELLA, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_95
+# 1225 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_WIDE_LENS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_96
+# 1232 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_ZOOM_LENS, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_97
+# 1239 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_EVIOLITE, MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_98
+# 1247 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	hidecoinsbox 0, 5
+# 1248 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto MauvilleCity_GameCorner_EventScript_ComeBackLater
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73:
+# 1250 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 1251 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	playse SE_SHOP
+# 1252 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_9
+# 1253 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	hidecoinsbox 0, 5
+# 1254 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 1255 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	releaseall
 	return
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_2:
-# 1004 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1046 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_0, ITEM_ABILITY_SHIELD
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_1
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_5:
-# 1005 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1047 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_1, ITEM_BRIGHT_POWDER
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_4
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_8:
-# 1006 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1048 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_2, ITEM_CLEAR_AMULET
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_7
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_11:
-# 1007 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1049 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_3, ITEM_COVERT_CLOAK
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_10
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_14:
-# 1008 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_4, ITEM_EXPERT_BELT
+# 1050 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_4, ITEM_EVIOLITE
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_13
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_17:
-# 1009 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_5, ITEM_FLAME_ORB
+# 1051 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_5, ITEM_EXPERT_BELT
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_16
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_20:
-# 1010 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_6, ITEM_HEAVY_DUTY_BOOTS
+# 1052 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_6, ITEM_FLAME_ORB
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_19
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_23:
-# 1011 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_7, ITEM_KINGS_ROCK
+# 1053 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_7, ITEM_HEAVY_DUTY_BOOTS
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_22
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_26:
-# 1012 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_8, ITEM_LAGGING_TAIL
+# 1054 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_8, ITEM_KINGS_ROCK
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_25
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_29:
-# 1013 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_9, ITEM_LIGHT_CLAY
+# 1055 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_9, ITEM_LAGGING_TAIL
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_28
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_32:
-# 1014 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_10, ITEM_METRONOME
+# 1056 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_10, ITEM_LIGHT_CLAY
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_31
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_35:
-# 1015 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_11, ITEM_PROTECTIVE_PADS
+# 1057 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_11, ITEM_METRONOME
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_34
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_38:
-# 1016 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_12, ITEM_PUNCHING_GLOVE
+# 1058 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_12, ITEM_PROTECTIVE_PADS
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_37
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_41:
-# 1017 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_13, ITEM_QUICK_CLAW
+# 1059 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_13, ITEM_PUNCHING_GLOVE
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_40
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_44:
-# 1018 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_14, ITEM_SAFETY_GOGGLES
+# 1060 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_14, ITEM_QUICK_CLAW
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_43
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_47:
-# 1019 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_15, ITEM_SCOPE_LENS
+# 1061 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_15, ITEM_SAFETY_GOGGLES
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_46
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_50:
-# 1020 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_16, ITEM_SHED_SHELL
+# 1062 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_16, ITEM_SCOPE_LENS
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_49
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_53:
-# 1021 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_17, ITEM_SHELL_BELL
+# 1063 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_17, ITEM_SHED_SHELL
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_52
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_56:
-# 1022 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_18, ITEM_STICKY_BARB
+# 1064 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_18, ITEM_SHELL_BELL
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_55
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_59:
-# 1023 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_19, ITEM_TOXIC_ORB
+# 1065 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_19, ITEM_STICKY_BARB
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_58
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_62:
-# 1024 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_20, ITEM_UTILITY_UMBRELLA
+# 1066 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_20, ITEM_TOXIC_ORB
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_61
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_65:
-# 1025 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_21, ITEM_WIDE_LENS
+# 1067 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_21, ITEM_UTILITY_UMBRELLA
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_68:
-# 1026 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_22, ITEM_ZOOM_LENS
+# 1068 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_22, ITEM_WIDE_LENS
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_67
 
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_72:
-# 1036 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1037 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 300
-# 1038 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1039 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1040 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 300
-# 1041 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
-
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73:
-# 1043 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 450, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1044 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 450
-# 1045 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1046 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1047 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 450
-# 1048 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
-
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_74:
-# 1050 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1051 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 200
-# 1052 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1053 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1054 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 200
-# 1055 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	additem VAR_TEMP_3
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_71:
+# 1069 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_23, ITEM_ZOOM_LENS
 	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_75:
-# 1057 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1058 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 500
-# 1059 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1079 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1080 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 300
+# 1081 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1060 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1082 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1061 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 500
-# 1062 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1083 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 300
+# 1084 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_76:
-# 1064 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1065 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 500
-# 1066 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1086 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 450, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1087 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 450
+# 1088 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1067 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1089 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1068 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 500
-# 1069 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1090 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 450
+# 1091 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_77:
-# 1071 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1093 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1072 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1094 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1073 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1095 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1074 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1096 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1075 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1097 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1076 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1098 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_78:
-# 1078 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1079 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 200
-# 1080 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1100 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1101 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 500
+# 1102 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1081 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1103 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1082 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 200
-# 1083 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1104 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 500
+# 1105 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_79:
-# 1085 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1086 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 200
-# 1087 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1107 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1108 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 500
+# 1109 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1088 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1110 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1089 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 200
-# 1090 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1111 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 500
+# 1112 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_80:
-# 1092 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1114 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1093 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1115 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1094 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1116 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1095 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1117 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1096 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1118 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1097 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1119 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_81:
-# 1099 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1100 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 400
-# 1101 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1121 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1122 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 200
+# 1123 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1102 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1124 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1103 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 400
-# 1104 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1125 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 200
+# 1126 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_82:
-# 1106 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1107 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 300
-# 1108 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1128 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1129 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 200
+# 1130 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1109 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1131 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1110 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 300
-# 1111 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1132 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 200
+# 1133 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_83:
-# 1113 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1114 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 300
-# 1115 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1135 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1136 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 200
+# 1137 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1116 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1138 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1117 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 300
-# 1118 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1139 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 200
+# 1140 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_84:
-# 1120 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1121 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 300
-# 1122 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1142 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1143 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 400
+# 1144 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1123 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1145 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1124 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 300
-# 1125 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1146 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 400
+# 1147 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_85:
-# 1127 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1128 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 200
-# 1129 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1149 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1150 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 300
+# 1151 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1130 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1152 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1131 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 200
-# 1132 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1153 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 300
+# 1154 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_86:
-# 1134 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1135 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 350
-# 1136 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1156 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1157 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 300
+# 1158 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1137 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1159 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1138 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 350
-# 1139 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1160 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 300
+# 1161 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_87:
-# 1141 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1142 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 250
-# 1143 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1163 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1164 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 300
+# 1165 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1144 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1166 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1145 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 250
-# 1146 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1167 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 300
+# 1168 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_88:
-# 1148 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1149 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 250
-# 1150 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1170 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1171 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 200
+# 1172 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1151 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1173 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1152 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 250
-# 1153 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1174 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 200
+# 1175 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_89:
-# 1155 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1177 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1156 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1178 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 350
-# 1157 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1179 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1158 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1180 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1159 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1181 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 350
-# 1160 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1182 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_90:
-# 1162 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1163 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 350
-# 1164 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1184 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1185 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 250
+# 1186 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1165 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1187 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1166 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 350
-# 1167 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1188 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 250
+# 1189 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_91:
-# 1169 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1170 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 200
-# 1171 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1191 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1192 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 250
+# 1193 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1172 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1194 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1173 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 200
-# 1174 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1195 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 250
+# 1196 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_92:
-# 1176 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1177 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 200
-# 1178 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1198 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1199 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 350
+# 1200 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1179 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1201 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1180 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 200
-# 1181 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1202 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 350
+# 1203 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_93:
-# 1183 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1184 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 400
-# 1185 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1205 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1206 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 350
+# 1207 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1186 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1208 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1187 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 400
-# 1188 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1209 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 350
+# 1210 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_94:
-# 1190 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1191 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 400
-# 1192 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1212 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1213 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 200
+# 1214 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1193 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1215 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1194 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 400
-# 1195 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1216 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 200
+# 1217 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
-	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_70
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems::
-# 1210 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	lock
-# 1211 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_2
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_1:
-# 1212 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_5
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_4:
-# 1213 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_8
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_7:
-# 1214 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_11
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_10:
-# 1215 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_14
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_13:
-# 1216 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_17
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_16:
-# 1217 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_20
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_19:
-# 1218 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_23
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_22:
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_95:
 # 1219 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_26
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_25:
+	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
 # 1220 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_29
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_28:
+	buffernumberstring STR_VAR_2, 200
 # 1221 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_32
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_31:
+	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
 # 1222 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_35
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_34:
+	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
 # 1223 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_38
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_37:
+	removecoins 200
 # 1224 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_41
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_40:
-# 1225 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_44
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_43:
+	additem VAR_TEMP_3
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
+
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_96:
 # 1226 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_47
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_46:
+	goto_if_lt VAR_TEMP_2, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
 # 1227 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_50
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_49:
+	buffernumberstring STR_VAR_2, 400
 # 1228 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_53
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_52:
+	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
 # 1229 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_56
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_55:
+	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
 # 1230 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_59
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_58:
+	removecoins 400
 # 1231 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_62
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_61:
-# 1232 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_21, MSGBOX_DEFAULT
+	additem VAR_TEMP_3
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
+
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_97:
 # 1233 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	showcoinsbox 1, 1
+	goto_if_lt VAR_TEMP_2, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
 # 1234 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultistack 30, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+	buffernumberstring STR_VAR_2, 400
 # 1235 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	copyvar VAR_TEMP_3, VAR_RESULT
+	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
 # 1236 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	bufferitemname STR_VAR_1, VAR_TEMP_3
+	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
+# 1237 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 400
 # 1238 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	switch VAR_TEMP_3
-# 1239 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_AIR_BALLOON, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_66
-# 1246 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_FOCUS_SASH, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_67
-# 1253 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_MENTAL_HERB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_68
-# 1260 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_POWER_HERB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_69
-# 1267 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_WHITE_HERB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_70
-# 1274 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_MIRROR_HERB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_71
-# 1281 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_ADRENALINE_ORB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_72
-# 1288 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_BLUNDER_POLICY, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_73
-# 1295 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_WEAKNESS_POLICY, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_74
-# 1302 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_THROAT_SPRAY, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_75
-# 1309 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_EJECT_BUTTON, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_76
-# 1316 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_EJECT_PACK, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_77
-# 1323 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_RED_CARD, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_78
-# 1330 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_ABSORB_BULB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_79
-# 1337 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_CELL_BATTERY, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_80
-# 1344 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_LUMINOUS_MOSS, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_81
-# 1351 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_SNOWBALL, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_82
-# 1358 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_GRASSY_SEED, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_83
-# 1365 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_ELECTRIC_SEED, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_84
-# 1372 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_MISTY_SEED, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_85
-# 1379 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_PSYCHIC_SEED, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_86
-# 1387 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	hidecoinsbox 0, 5
-# 1388 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto MauvilleCity_GameCorner_EventScript_ComeBackLater
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64:
-# 1390 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	closemessage
-# 1391 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	playse SE_SHOP
-# 1392 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_9
-# 1393 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	closemessage
-# 1394 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	hidecoinsbox 0, 5
-# 1395 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	releaseall
-	return
+	additem VAR_TEMP_3
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
 
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_2:
-# 1211 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_0, ITEM_AIR_BALLOON
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_1
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_5:
-# 1212 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_1, ITEM_FOCUS_SASH
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_4
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_8:
-# 1213 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_2, ITEM_MENTAL_HERB
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_7
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_11:
-# 1214 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_3, ITEM_POWER_HERB
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_10
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_14:
-# 1215 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_4, ITEM_WHITE_HERB
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_13
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_17:
-# 1216 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_5, ITEM_MIRROR_HERB
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_16
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_20:
-# 1217 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_6, ITEM_ADRENALINE_ORB
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_19
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_23:
-# 1218 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_7, ITEM_BLUNDER_POLICY
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_22
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_26:
-# 1219 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_8, ITEM_WEAKNESS_POLICY
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_25
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_29:
-# 1220 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_9, ITEM_THROAT_SPRAY
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_28
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_32:
-# 1221 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_10, ITEM_EJECT_BUTTON
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_31
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_35:
-# 1222 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_11, ITEM_EJECT_PACK
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_34
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_38:
-# 1223 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_12, ITEM_RED_CARD
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_37
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_41:
-# 1224 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_13, ITEM_ABSORB_BULB
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_40
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_44:
-# 1225 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_14, ITEM_CELL_BATTERY
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_43
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_47:
-# 1226 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_15, ITEM_LUMINOUS_MOSS
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_46
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_50:
-# 1227 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_16, ITEM_SNOWBALL
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_49
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_53:
-# 1228 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_17, ITEM_GRASSY_SEED
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_52
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_56:
-# 1229 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_18, ITEM_ELECTRIC_SEED
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_55
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_59:
-# 1230 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_19, ITEM_MISTY_SEED
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_58
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_62:
-# 1231 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_20, ITEM_PSYCHIC_SEED
-	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_61
-
-MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_66:
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_98:
 # 1240 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+	goto_if_lt VAR_TEMP_2, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
 # 1241 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 100
+	buffernumberstring STR_VAR_2, 300
 # 1242 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
 # 1243 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
 # 1244 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 100
+	removecoins 300
 # 1245 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	additem VAR_TEMP_3
+	goto MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_73
+
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems::
+# 1260 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	lock
+# 1261 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_2
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_1:
+# 1262 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_5
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_4:
+# 1263 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_8
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_7:
+# 1264 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_11
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_10:
+# 1265 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_14
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_13:
+# 1266 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_17
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_16:
+# 1267 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_20
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_19:
+# 1268 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_23
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_22:
+# 1269 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_26
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_25:
+# 1270 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_29
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_28:
+# 1271 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_32
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_31:
+# 1272 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_35
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_34:
+# 1273 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_38
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_37:
+# 1274 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_41
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_40:
+# 1275 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_44
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_43:
+# 1276 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_47
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_46:
+# 1277 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_50
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_49:
+# 1278 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_53
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_52:
+# 1279 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_56
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_55:
+# 1280 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_59
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_58:
+# 1281 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_62
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_61:
+# 1282 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_21, MSGBOX_DEFAULT
+# 1283 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	showcoinsbox 1, 1
+# 1284 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultistack 30, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 1285 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	copyvar VAR_TEMP_3, VAR_RESULT
+# 1286 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	bufferitemname STR_VAR_1, VAR_TEMP_3
+# 1288 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	switch VAR_TEMP_3
+# 1289 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_AIR_BALLOON, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_66
+# 1296 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_FOCUS_SASH, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_67
+# 1303 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_MENTAL_HERB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_68
+# 1310 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_POWER_HERB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_69
+# 1317 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_WHITE_HERB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_70
+# 1324 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_MIRROR_HERB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_71
+# 1331 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_ADRENALINE_ORB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_72
+# 1338 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_BLUNDER_POLICY, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_73
+# 1345 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_WEAKNESS_POLICY, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_74
+# 1352 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_THROAT_SPRAY, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_75
+# 1359 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_EJECT_BUTTON, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_76
+# 1366 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_EJECT_PACK, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_77
+# 1373 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_RED_CARD, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_78
+# 1380 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_ABSORB_BULB, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_79
+# 1387 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_CELL_BATTERY, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_80
+# 1394 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_LUMINOUS_MOSS, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_81
+# 1401 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_SNOWBALL, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_82
+# 1408 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_GRASSY_SEED, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_83
+# 1415 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_ELECTRIC_SEED, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_84
+# 1422 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_MISTY_SEED, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_85
+# 1429 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_PSYCHIC_SEED, MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_86
+# 1437 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	hidecoinsbox 0, 5
+# 1438 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto MauvilleCity_GameCorner_EventScript_ComeBackLater
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64:
+# 1440 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 1441 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	playse SE_SHOP
+# 1442 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_9
+# 1443 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	closemessage
+# 1444 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	hidecoinsbox 0, 5
+# 1445 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	releaseall
+	return
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_2:
+# 1261 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_0, ITEM_AIR_BALLOON
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_1
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_5:
+# 1262 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_1, ITEM_FOCUS_SASH
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_4
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_8:
+# 1263 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_2, ITEM_MENTAL_HERB
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_7
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_11:
+# 1264 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_3, ITEM_POWER_HERB
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_10
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_14:
+# 1265 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_4, ITEM_WHITE_HERB
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_13
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_17:
+# 1266 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_5, ITEM_MIRROR_HERB
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_16
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_20:
+# 1267 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_6, ITEM_ADRENALINE_ORB
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_19
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_23:
+# 1268 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_7, ITEM_BLUNDER_POLICY
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_22
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_26:
+# 1269 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_8, ITEM_WEAKNESS_POLICY
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_25
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_29:
+# 1270 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_9, ITEM_THROAT_SPRAY
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_28
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_32:
+# 1271 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_10, ITEM_EJECT_BUTTON
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_31
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_35:
+# 1272 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_11, ITEM_EJECT_PACK
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_34
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_38:
+# 1273 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_12, ITEM_RED_CARD
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_37
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_41:
+# 1274 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_13, ITEM_ABSORB_BULB
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_40
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_44:
+# 1275 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_14, ITEM_CELL_BATTERY
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_43
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_47:
+# 1276 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_15, ITEM_LUMINOUS_MOSS
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_46
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_50:
+# 1277 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_16, ITEM_SNOWBALL
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_49
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_53:
+# 1278 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_17, ITEM_GRASSY_SEED
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_52
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_56:
+# 1279 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_18, ITEM_ELECTRIC_SEED
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_55
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_59:
+# 1280 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_19, ITEM_MISTY_SEED
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_58
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_62:
+# 1281 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_20, ITEM_PSYCHIC_SEED
+	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_61
+
+MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_66:
+# 1290 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+# 1291 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	buffernumberstring STR_VAR_2, 100
+# 1292 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
+# 1293 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
+# 1294 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	removecoins 100
+# 1295 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_67:
-# 1247 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1297 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1248 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1298 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 250
-# 1249 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1299 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1250 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1300 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1251 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1301 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 250
-# 1252 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1302 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_68:
-# 1254 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1304 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1255 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1305 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1256 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1306 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1257 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1307 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1258 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1308 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1259 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1309 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_69:
-# 1261 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1311 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1262 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1312 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 150
-# 1263 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1313 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1264 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1314 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1265 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1315 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 150
-# 1266 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1316 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_70:
-# 1268 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1318 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1269 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1319 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 250
-# 1270 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1320 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1271 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1321 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1272 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1322 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 250
-# 1273 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1323 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_71:
-# 1275 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1325 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1276 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1326 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 250
-# 1277 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1327 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1278 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1328 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1279 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1329 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 250
-# 1280 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1330 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_72:
-# 1282 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1332 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1283 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1333 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 250
-# 1284 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1334 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1285 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1335 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1286 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1336 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 250
-# 1287 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1337 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_73:
-# 1289 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1339 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1290 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1340 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1291 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1341 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1292 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1342 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1293 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1343 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1294 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1344 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_74:
-# 1296 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1346 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1297 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1347 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 150
-# 1298 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1348 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1299 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1349 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1300 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1350 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 150
-# 1301 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1351 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_75:
-# 1303 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1353 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1304 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1354 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1305 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1355 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1306 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1356 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1307 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1357 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1308 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1358 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_76:
-# 1310 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1360 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1311 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1361 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1312 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1362 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1313 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1363 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1314 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1364 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1315 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1365 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_77:
-# 1317 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1367 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1318 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1368 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1319 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1369 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1320 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1370 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1321 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1371 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1322 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1372 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_78:
-# 1324 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1374 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1325 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1375 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 150
-# 1326 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1376 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1327 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1377 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1328 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1378 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 150
-# 1329 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1379 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_79:
-# 1331 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1381 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1332 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1382 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1333 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1383 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1334 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1384 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1335 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1385 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1336 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1386 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_80:
-# 1338 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1388 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1339 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1389 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1340 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1390 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1341 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1391 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1342 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1392 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1343 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1393 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_81:
-# 1345 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1395 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1346 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1396 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1347 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1397 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1348 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1398 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1349 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1399 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1350 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1400 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_82:
-# 1352 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1402 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1353 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1403 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1354 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1404 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1355 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1405 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1356 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1406 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1357 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1407 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_83:
-# 1359 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1409 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1360 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1410 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1361 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1411 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1362 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1412 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1363 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1413 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1364 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1414 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_84:
-# 1366 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1416 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1367 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1417 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1368 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1418 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1369 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1419 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1370 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1420 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1371 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1421 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_85:
-# 1373 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1423 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1374 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1424 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1375 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1425 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1376 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1426 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1377 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1427 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1378 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1428 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_86:
-# 1380 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1430 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1381 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1431 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1382 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1432 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1383 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1433 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1384 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1434 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1385 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1435 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_64
 
 
 MauvilleCity_GameCorner_EventScript_BuyTMs::
-# 1400 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1450 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	lock
-# 1401 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1451 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyTMs_Text_0
-# 1402 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1452 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	waitmessage
-# 1403 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1453 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	releaseall
 	return
 
 
 MauvilleCity_GameCorner_EventScript_ComeBackLater::
-# 1408 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1458 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	lock
-# 1409 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1459 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	hidecoinsbox 0, 5
-# 1410 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1460 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_ComeBackLater_Text_0
-# 1411 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1461 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	waitmessage
-# 1412 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1462 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	releaseall
 	return
 
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins::
-# 1417 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	lock
-# 1418 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_0, ITEM_HP_UP
-# 1419 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_1, ITEM_PROTEIN
-# 1420 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_2, ITEM_IRON
-# 1421 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_3, ITEM_CALCIUM
-# 1422 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_4, ITEM_ZINC
-# 1423 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_5, ITEM_CARBOS
-# 1424 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_6, ITEM_PP_MAX
-# 1425 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	msgbox MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_7, MSGBOX_DEFAULT
-# 1426 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	showcoinsbox 1, 1
-# 1427 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultistack 30, 0, FALSE, 6, TRUE, 0, DYN_MULTICHOICE_CB_NONE
-# 1428 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	copyvar VAR_TEMP_3, VAR_RESULT
-# 1429 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	bufferitemname STR_VAR_1, VAR_TEMP_3
-# 1431 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	switch VAR_TEMP_3
-# 1432 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_HP_UP, MauvilleCity_GameCorner_EventScript_BuyVitamins_3
-# 1439 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_PROTEIN, MauvilleCity_GameCorner_EventScript_BuyVitamins_4
-# 1446 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_IRON, MauvilleCity_GameCorner_EventScript_BuyVitamins_5
-# 1453 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_CALCIUM, MauvilleCity_GameCorner_EventScript_BuyVitamins_6
-# 1460 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_ZINC, MauvilleCity_GameCorner_EventScript_BuyVitamins_7
 # 1467 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_CARBOS, MauvilleCity_GameCorner_EventScript_BuyVitamins_8
+	lock
+# 1468 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_0, ITEM_HP_UP
+# 1469 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_1, ITEM_PROTEIN
+# 1470 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_2, ITEM_IRON
+# 1471 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_3, ITEM_CALCIUM
+# 1472 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_4, ITEM_ZINC
+# 1473 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_5, ITEM_CARBOS
 # 1474 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_PP_MAX, MauvilleCity_GameCorner_EventScript_BuyVitamins_9
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_6, ITEM_PP_MAX
+# 1475 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	msgbox MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_7, MSGBOX_DEFAULT
+# 1476 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	showcoinsbox 1, 1
+# 1477 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	dynmultistack 30, 0, FALSE, 6, TRUE, 0, DYN_MULTICHOICE_CB_NONE
+# 1478 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	copyvar VAR_TEMP_3, VAR_RESULT
+# 1479 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	bufferitemname STR_VAR_1, VAR_TEMP_3
+# 1481 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	switch VAR_TEMP_3
 # 1482 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_HP_UP, MauvilleCity_GameCorner_EventScript_BuyVitamins_3
+# 1489 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_PROTEIN, MauvilleCity_GameCorner_EventScript_BuyVitamins_4
+# 1496 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_IRON, MauvilleCity_GameCorner_EventScript_BuyVitamins_5
+# 1503 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_CALCIUM, MauvilleCity_GameCorner_EventScript_BuyVitamins_6
+# 1510 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_ZINC, MauvilleCity_GameCorner_EventScript_BuyVitamins_7
+# 1517 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_CARBOS, MauvilleCity_GameCorner_EventScript_BuyVitamins_8
+# 1524 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	case ITEM_PP_MAX, MauvilleCity_GameCorner_EventScript_BuyVitamins_9
+# 1532 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	hidecoinsbox 0, 5
-# 1483 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1533 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto MoveTutor_EventScript_ComeBackLater
 MauvilleCity_GameCorner_EventScript_BuyVitamins_1:
-# 1485 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1535 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	closemessage
-# 1486 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1536 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	playse SE_SHOP
-# 1487 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1537 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_9
-# 1488 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1538 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	hidecoinsbox 0, 5
-# 1489 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1539 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	closemessage
-# 1490 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1540 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	releaseall
 	return
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_3:
-# 1433 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1483 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1434 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1484 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1435 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1485 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1436 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1486 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1437 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1487 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1438 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1488 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyVitamins_1
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_4:
-# 1440 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1490 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1441 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1491 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1442 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1492 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1443 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1493 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1444 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1494 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1445 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1495 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyVitamins_1
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_5:
-# 1447 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1497 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1448 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1498 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1449 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1499 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1450 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1500 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1451 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1501 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1452 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1502 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyVitamins_1
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_6:
-# 1454 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1504 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1455 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1505 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1456 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1506 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1457 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1507 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1458 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1508 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1459 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1509 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyVitamins_1
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_7:
-# 1461 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1511 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 100, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1462 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1512 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 100
-# 1463 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1513 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1464 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1514 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1465 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1515 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 100
-# 1466 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1516 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyVitamins_1
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_8:
-# 1468 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1518 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1469 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1519 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1470 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1520 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1471 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1521 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1472 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1522 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1473 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1523 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyVitamins_1
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_9:
-# 1475 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1525 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_lt VAR_TEMP_2, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
-# 1476 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1526 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	buffernumberstring STR_VAR_2, 200
-# 1477 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1527 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_8, MSGBOX_YESNO
-# 1478 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1528 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
-# 1479 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1529 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	removecoins 200
-# 1480 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1530 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	additem VAR_TEMP_3
 	goto MauvilleCity_GameCorner_EventScript_BuyVitamins_1
 
 
 MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize::
-# 1495 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1545 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	lock
-# 1496 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1546 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize_Text_0
-# 1497 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1547 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	waitmessage
-# 1498 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1548 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	releaseall
 	return
 
 
 MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForRarePrize::
-# 1504 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1554 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	lock
-# 1505 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1555 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForRarePrize_Text_0
-# 1506 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1556 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	waitmessage
-# 1507 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1557 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	releaseall
 	return
 
@@ -3530,241 +3739,321 @@ MauvilleCity_GameCorner_EventScript_BuyRareBattleItems_Text_9:
 # 995 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Here you go!$"
 
-MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_0:
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_0:
 # 1004 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Normal Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_1:
+# 1005 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Fighting Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_2:
+# 1006 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Flying Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_3:
+# 1007 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Poison Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_4:
+# 1008 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Ground Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_5:
+# 1009 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Rock Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_6:
+# 1010 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Bug Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_7:
+# 1011 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Ghost Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_8:
+# 1012 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Steel Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_9:
+# 1013 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Fire Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_10:
+# 1014 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Water Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_11:
+# 1015 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Grass Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_12:
+# 1016 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Electric Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_13:
+# 1017 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Psychic Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_14:
+# 1018 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Ice Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_15:
+# 1019 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Dragon Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_16:
+# 1020 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Dark Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_17:
+# 1021 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Fairy Gem$"
+
+MauvilleCity_GameCorner_EventScript_BuyGems_Text_18:
+# 1022 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Which Gem you like to buy for 250 coins?$"
+
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_0:
+# 1046 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Ability Shield   300 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_1:
-# 1005 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1047 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Bright Powder   200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_2:
-# 1006 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1048 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Clear Amulet     500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_3:
-# 1007 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1049 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Covert Cloak    500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_4:
-# 1008 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Expert Belt      450 coins$"
+# 1050 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Eviolite          300 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_5:
-# 1009 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Flame Orb          200 coins$"
+# 1051 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Expert Belt      450 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_6:
-# 1010 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Heavy Boots     200 coins$"
+# 1052 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Flame Orb          200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_7:
-# 1011 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "King's Rock       200 coins$"
+# 1053 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Heavy Boots     200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_8:
-# 1012 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Lagging Tail      200 coins$"
+# 1054 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "King's Rock       200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_9:
-# 1013 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Light Clay         400 coins$"
+# 1055 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Lagging Tail      200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_10:
-# 1014 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Metronome         300 coins$"
+# 1056 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Light Clay         400 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_11:
-# 1015 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Protect Pads    300 coins$"
+# 1057 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Metronome         300 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_12:
-# 1016 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Punching Glove 300 coins$"
+# 1058 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Protect Pads    300 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_13:
-# 1017 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Quick Claw         200 coins$"
+# 1059 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Punching Glove 300 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_14:
-# 1018 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Safety Goggles 350 coins$"
+# 1060 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Quick Claw         200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_15:
-# 1019 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Scope Lens        250 coins$"
+# 1061 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Safety Goggles 350 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_16:
-# 1020 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Shed Shell          250 coins$"
+# 1062 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Scope Lens        250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_17:
-# 1021 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Shell Bell           350 coins$"
+# 1063 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Shed Shell          250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_18:
-# 1022 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Sticky Barb       350 coins$"
+# 1064 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Shell Bell           350 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_19:
-# 1023 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Toxic Orb           200 coins$"
+# 1065 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Sticky Barb       350 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_20:
-# 1024 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Util. Umbrella    200 coins$"
+# 1066 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Toxic Orb           200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_21:
-# 1025 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Wide Lens          400 coins$"
+# 1067 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Util. Umbrella    200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_22:
-# 1026 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Zoom Lens          400 coins$"
+# 1068 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Wide Lens          400 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_23:
-# 1027 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1069 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	.string "Zoom Lens          400 coins$"
+
+MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_24:
+# 1070 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Which held item would you like?$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_0:
-# 1211 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1261 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Air Balloon       100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_1:
-# 1212 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1262 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Focus Sash       250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_2:
-# 1213 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1263 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Mental Herb      100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_3:
-# 1214 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1264 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Power Herb        150 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_4:
-# 1215 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1265 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "White Herb        250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_5:
-# 1216 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1266 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Mirror Herb       250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_6:
-# 1217 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1267 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Adrenaline Orb 250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_7:
-# 1218 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1268 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Blunder Policy 100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_8:
-# 1219 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1269 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Weakness Plcy  150 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_9:
-# 1220 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1270 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Throat Spray    200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_10:
-# 1221 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1271 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Eject Button    200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_11:
-# 1222 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1272 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Eject Pack        200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_12:
-# 1223 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1273 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Red Card            150 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_13:
-# 1224 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1274 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Absorb Bulb      100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_14:
-# 1225 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1275 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Cell Battery     100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_15:
-# 1226 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1276 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Luminous Moss  100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_16:
-# 1227 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1277 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Snowball           100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_17:
-# 1228 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1278 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Grassy Seed      100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_18:
-# 1229 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1279 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Electric Seed   100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_19:
-# 1230 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1280 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Misty Seed        100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_20:
-# 1231 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1281 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Psychic Seed    100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_21:
-# 1232 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1282 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Which one-time use item would you like?$"
 
 MauvilleCity_GameCorner_EventScript_BuyTMs_Text_0:
-# 1401 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1451 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Sorry, TMs are not available at this\n"
 	.string "time.$"
 
 MauvilleCity_GameCorner_EventScript_ComeBackLater_Text_0:
-# 1410 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1460 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Please come back to exchange your\n"
 	.string "coins for more prizes!$"
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_0:
-# 1418 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1468 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "HP Up        200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_1:
-# 1419 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1469 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Protein    200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_2:
-# 1420 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1470 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Iron         100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_3:
-# 1421 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1471 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Calcium    200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_4:
-# 1422 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1472 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Zinc         100 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_5:
-# 1423 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1473 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Carbos     200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_6:
-# 1424 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1474 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "PP Max      200 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_7:
-# 1425 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1475 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "Which vitamin would you like?$"
 
 MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize_Text_0:
-# 1496 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1546 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "I'm sorry, but you don't have enough\n"
 	.string "coins for that prize.\p"
 	.string "Please choose something else, or come\n"
 	.string "back after you've earned more coins.$"
 
 MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForRarePrize_Text_0:
-# 1505 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+# 1555 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	.string "I'm sorry, but you don't have enough\n"
 	.string "coins for one of our rare battle items.\l"
 	.string "These cost 1,250 coins each.\p"
