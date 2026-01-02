@@ -690,3 +690,44 @@ MeteorFalls_1F_1R_FlashCheck_4:
 	release
 	return
 
+
+MeteorFalls_1F_1R_EventScript_DracoMeteor::
+# 355 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	lock
+# 356 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	faceplayer
+# 357 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	msgbox MeteorFalls_1F_1R_EventScript_DracoMeteor_Text_0, MSGBOX_DEFAULT
+# 358 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	checkitem ITEM_TM_DRACO_METEOR
+# 359 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MeteorFalls_1F_1R_EventScript_DracoMeteor_2
+MeteorFalls_1F_1R_EventScript_DracoMeteor_1:
+# 365 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	releaseall
+	end
+
+MeteorFalls_1F_1R_EventScript_DracoMeteor_2:
+# 360 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	msgbox MeteorFalls_1F_1R_EventScript_DracoMeteor_Text_1, MSGBOX_DEFAULT
+# 361 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	closemessage
+# 362 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	giveitem ITEM_TM_DRACO_METEOR
+# 363 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	waitfanfare
+	goto MeteorFalls_1F_1R_EventScript_DracoMeteor_1
+
+
+MeteorFalls_1F_1R_EventScript_DracoMeteor_Text_0:
+# 357 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	.string "Most of these craters were made by\n"
+	.string "impacts from space long ago.$"
+
+MeteorFalls_1F_1R_EventScript_DracoMeteor_Text_1:
+# 360 "data/maps/MeteorFalls_1F_1R/scripts.pory"
+	.string "This one was actually made by my\n"
+	.string "Pokémon, though.\p"
+	.string "With this, you can teach your Dragon\n"
+	.string "Pokémon to make craters, too.$"

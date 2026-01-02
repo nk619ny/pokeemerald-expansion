@@ -152,6 +152,8 @@ RustboroCity_DevonCorp_3F_Movement_PlayerApproachDesk:
 RustboroCity_DevonCorp_3F_EventScript_MrStone::
 	lock
 	faceplayer
+	checkitem ITEM_TM_POWER_GEM
+	goto_if_eq VAR_RESULT, FALSE, RustboroCity_DevonCorp_3F_EventScript_GivePowerGem
 	goto RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor
 	//goto_if_set FLAG_RECEIVED_EXP_SHARE, RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor
 	//goto_if_set FLAG_DELIVERED_STEVEN_LETTER, RustboroCity_DevonCorp_3F_EventScript_GiveExpShare
@@ -309,3 +311,13 @@ RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 	.string "stones assembled by the PRESIDENT.$"
 
 `
+
+script RustboroCity_DevonCorp_3F_EventScript_GivePowerGem {
+	lock
+	msgbox(format("I've always had a fondness for gemstones and rare minerals.\pI like to share this interest with others I meet, too.\pHere, please have this as a gift from myself and Devon Corporation."), MSGBOX_DEFAULT)
+	closemessage
+	giveitem(ITEM_TM_POWER_GEM)
+	waitfanfare
+	releaseall
+	end
+}

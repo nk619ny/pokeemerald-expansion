@@ -35,6 +35,8 @@ Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn::
 Route114_FossilManiacsTunnel_EventScript_FossilManiac::
 	lock
 	faceplayer
+	checkitem ITEM_TM_ROCK_POLISH
+	goto_if_eq VAR_RESULT, FALSE, Route114_FossilManiacsTunnel_EventScript_GiveRockPolish
 	goto_if_set FLAG_RECEIVED_REVIVED_FOSSIL_MON, Route114_FossilManiacsTunnel_EventScript_PlayerRevivedFossil
 	checkitem ITEM_ROOT_FOSSIL
 	goto_if_eq VAR_RESULT, TRUE, Route114_FossilManiacsTunnel_EventScript_PlayerHasFossil
@@ -91,3 +93,13 @@ Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
 	.string "think there are any FOSSILS there…$"
 
 `
+
+script Route114_FossilManiacsTunnel_EventScript_GiveRockPolish {
+	lock
+	msgbox(format("For archeology, you have to be able to carefully clean minerals and fossils without damaging them.\pThis is a useful skill for everyone, even your Pokémon."), MSGBOX_DEFAULT)
+	closemessage
+	giveitem(ITEM_TM_ROCK_POLISH)
+	waitfanfare
+	releaseall
+	end
+}

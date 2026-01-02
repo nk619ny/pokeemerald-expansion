@@ -350,3 +350,18 @@ script MeteorFalls_1F_1R_FlashCheck {
 		return
 	}
 }
+
+script MeteorFalls_1F_1R_EventScript_DracoMeteor {
+	lock
+	faceplayer
+	msgbox(format("Most of these craters were made by impacts from space long ago."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_DRACO_METEOR)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("This one was actually made by my Pokémon, though.\pWith this, you can teach your Dragon Pokémon to make craters, too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_DRACO_METEOR)
+		waitfanfare
+	}
+	releaseall
+	end
+}

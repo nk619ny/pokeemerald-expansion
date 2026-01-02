@@ -2627,6 +2627,48 @@ RustboroCity_Text_YouCanHave2On2Battle:
 # 1314 "data/maps/RustboroCity/scripts.pory"
 	.string "could beat two TRAINERS by yourself?$"
 
+RustboroCity_EventScript_SteelBeam::
+# 1330 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1331 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1332 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_SteelBeam_Text_0, MSGBOX_DEFAULT
+# 1333 "data/maps/RustboroCity/scripts.pory"
+	checkitem ITEM_TM_STEEL_BEAM
+# 1334 "data/maps/RustboroCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq RustboroCity_EventScript_SteelBeam_2
+RustboroCity_EventScript_SteelBeam_1:
+# 1340 "data/maps/RustboroCity/scripts.pory"
+	releaseall
+	end
+
+RustboroCity_EventScript_SteelBeam_2:
+# 1335 "data/maps/RustboroCity/scripts.pory"
+	giveitem ITEM_TM_STEEL_BEAM
+# 1336 "data/maps/RustboroCity/scripts.pory"
+	waitfanfare
+# 1337 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_SteelBeam_Text_1, MSGBOX_DEFAULT
+# 1338 "data/maps/RustboroCity/scripts.pory"
+	closemessage
+	goto RustboroCity_EventScript_SteelBeam_1
+
+
+RustboroCity_EventScript_SteelBeam_Text_0:
+# 1332 "data/maps/RustboroCity/scripts.pory"
+	.string "Rustboro is one of the biggest cities in\n"
+	.string "Hoenn.\p"
+	.string "Devon Corp has led the development of\n"
+	.string "Rustboro with stone and steel!$"
+
+RustboroCity_EventScript_SteelBeam_Text_1:
+# 1337 "data/maps/RustboroCity/scripts.pory"
+	.string "Any traveler who passes through\n"
+	.string "Rustboro should learn the strength of\l"
+	.string "Steel.$"
+
 RustboroCity_Text_MayImNotGoingToLose::
 # 1317 "data/maps/RustboroCity/scripts.pory"
 	.string "May: Oh, hi, {PLAYER}! How's your\n"

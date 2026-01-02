@@ -2024,7 +2024,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Stonjourner  
-Level: 40
+Level: 42
 Ability: Power Spot  
 Tera Type: Rock  
 - Rock Blast  
@@ -2033,7 +2033,7 @@ Tera Type: Rock
 - Sand Tomb  
 
 Furfrou-Pharaoh @ Power Herb  
-Level: 40
+Level: 42
 Ability: Fur Coat  
 Tera Type: Normal  
 - Cotton Guard  
@@ -2055,7 +2055,7 @@ Adamant Nature
 */
 
 Spiritomb @ Safety Goggles    
-Level: 40
+Level: 42
 Ability: Cursed Body  
 Tera Type: Ghost  
 IVs: 0 Atk  
@@ -2066,7 +2066,7 @@ IVs: 0 Atk
 
 
 Runerigus    
-Level: 40
+Level: 42
 Ability: Wandering Spirit  
 Tera Type: Ground  
 - Curse  
@@ -6633,7 +6633,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Vibrava  
 Ability: Levitate  
-Level: 42  
+Level: 44
 Tera Type: Ground  
 EVs: 128 SpA  
 - First Impression  
@@ -6642,7 +6642,7 @@ EVs: 128 SpA
 - Boomburst  
 
 Houndstone  
-Level: 40  
+Level: 42
 Ability: Sand Rush  
 Tera Type: Ghost  
 - Shadow Sneak
@@ -6651,7 +6651,7 @@ Tera Type: Ghost
 - Yawn  
 
 Lycanroc  
-Level: 40  
+Level: 42
 Ability: Sand Rush  
 Tera Type: Rock  
 - Brick Break  
@@ -6660,7 +6660,7 @@ Tera Type: Rock
 - Rock Slide  
 
 Maractus @ Safety Goggles  
-Level: 40  
+Level: 42
 Ability: Water Absorb  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -12438,7 +12438,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Ledian @ Punching Glove  
-Level: 38
+Level: 45
 Ability: Iron Fist  
 Tera Type: Bug  
 - Mach Punch  
@@ -12447,7 +12447,7 @@ Tera Type: Bug
 - Thunder Punch  
 
 Falinks  
-Level: 38
+Level: 45
 Ability: Defiant  
 Tera Type: Fighting  
 - Attack Order  
@@ -12456,7 +12456,7 @@ Tera Type: Fighting
 - No Retreat  
 
 Farfetch’d-Galar 
-Level: 38
+Level: 48
 Ability: Scrappy  
 Tera Type: Fighting  
 - Leaf Blade  
@@ -12465,7 +12465,7 @@ Tera Type: Fighting
 - Night Slash  
 
 Medicham  
-Level: 38
+Level: 45
 Ability: Pure Power  
 Tera Type: Fighting  
 - Zen Headbutt  
@@ -13436,7 +13436,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Cacturne  
-Level: 43
+Level: 44
 Ability: Sand Veil  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -13446,7 +13446,7 @@ IVs: 0 Atk
 - Counter  
 
 Houndstone  
-Level: 43
+Level: 44
 Ability: Sand Rush  
 Tera Type: Ghost  
 - Last Respects  
@@ -13455,7 +13455,7 @@ Tera Type: Ghost
 - Yawn  
 
 Stoutland  
-Level: 43
+Level: 44
 Ability: Sand Rush  
 Tera Type: Normal  
 - Return  
@@ -13464,7 +13464,7 @@ Tera Type: Normal
 - Howl  
 
 Sigilyph  
-Level: 43
+Level: 44
 Ability: Magic Guard  
 Tera Type: Psychic  
 IVs: 0 Atk  
@@ -19029,7 +19029,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Baltoy  
-Level: 48
+Level: 54
 Ability: Levitate  
 Tera Type: Ground  
 IVs: 0 Atk  
@@ -19040,7 +19040,7 @@ IVs: 0 Atk
 
 
 Golett  
-Level: 48
+Level: 54
 Ability: Iron Fist  
 Tera Type: Ground  
 - Shadow Punch  
@@ -19050,7 +19050,7 @@ Tera Type: Ground
 
 
 Elgyem @ Power Herb  
-Level: 48
+Level: 54
 Ability: Synchronize  
 Tera Type: Psychic  
 IVs: 0 Atk  
@@ -19060,7 +19060,7 @@ IVs: 0 Atk
 - Recover  
 
 Unown (Unown-H)  
-Level: 48
+Level: 52
 Ability: Pure Power  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -22997,7 +22997,7 @@ Skarmory
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CELIA === /* Route 111 Desert */ /* TO BE ADDED */
+=== TRAINER_CELIA === /* Route 111 Desert */ /* TO BE ADDED */ /*maybe remove */
 Name: CELIA
 Class: Picnicker
 Pic: Picnicker
@@ -23371,7 +23371,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Girafarig  
-Level: 39
+Level: 48
 Ability: Inner Focus  
 Tera Type: Normal  
 IVs: 0 Atk  
@@ -23381,7 +23381,7 @@ IVs: 0 Atk
 - Twin Beam  
 
 Mr. Mime @ Light Clay    
-Level: 39
+Level: 48
 Ability: Filter  
 Tera Type: Psychic  
 IVs: 0 Atk  
@@ -23391,7 +23391,7 @@ IVs: 0 Atk
 - Light Screen  
 
 Duosion    /* REUSED SET */
-Level: 39
+Level: 55
 Ability: Magic Guard  
 Tera Type: Fighting  
 IVs: 0 Atk  
@@ -23401,7 +23401,7 @@ IVs: 0 Atk
 - Hidden Power 
 
 Dottler    
-Level: 39
+Level: 55
 Ability: Swarm  
 Tera Type: Bug  
 IVs: 0 Atk  
