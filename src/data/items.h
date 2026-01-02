@@ -2045,7 +2045,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
-        .iconPic = gItemIcon_ExpCandyM,
+        .iconPic = gItemIcon_ExpCandyS,
         .iconPalette = gItemIconPalette_ExpCandies,
     },
 

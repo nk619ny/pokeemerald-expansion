@@ -61,7 +61,6 @@ script VerdantGrove_EventScript_GenerateNectar {
 }
 
 script VerdantGrove_EventScript_SetPinkNectar {
-    setflag(TempFlag_PinkNectar)
     setflag(TempFlag_PurpleNectar)
     setflag(TempFlag_RedNectar)
     setflag(TempFlag_YellowNectar)
@@ -75,7 +74,6 @@ script VerdantGrove_EventScript_SetPinkNectar {
 
 script VerdantGrove_EventScript_SetPurpleNectar {
     setflag(TempFlag_PinkNectar)
-    setflag(TempFlag_PurpleNectar)
     setflag(TempFlag_RedNectar)
     setflag(TempFlag_YellowNectar)
     clearflag(TempFlag_PurpleNectar)
@@ -89,7 +87,6 @@ script VerdantGrove_EventScript_SetPurpleNectar {
 script VerdantGrove_EventScript_SetRedNectar {
     setflag(TempFlag_PinkNectar)
     setflag(TempFlag_PurpleNectar)
-    setflag(TempFlag_RedNectar)
     setflag(TempFlag_YellowNectar)
     clearflag(TempFlag_RedNectar)
     setmetatile(9, 8, 0x208, FALSE)
@@ -103,7 +100,6 @@ script VerdantGrove_EventScript_SetYellowNectar {
     setflag(TempFlag_PinkNectar)
     setflag(TempFlag_PurpleNectar)
     setflag(TempFlag_RedNectar)
-    setflag(TempFlag_YellowNectar)
     clearflag(TempFlag_YellowNectar)
     //setmetatile(9, 8, 0x208, FALSE)
     setmetatile(9, 8, 0x210, FALSE)

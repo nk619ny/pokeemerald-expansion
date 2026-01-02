@@ -128,80 +128,72 @@ VerdantGrove_EventScript_GenerateNectar_19:
 
 VerdantGrove_EventScript_SetPinkNectar::
 # 64 "data/maps/VerdantGrove/scripts.pory"
-	setflag FLAG_TEMP_1
-# 65 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_2
-# 66 "data/maps/VerdantGrove/scripts.pory"
+# 65 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_3
-# 67 "data/maps/VerdantGrove/scripts.pory"
+# 66 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_4
-# 68 "data/maps/VerdantGrove/scripts.pory"
+# 67 "data/maps/VerdantGrove/scripts.pory"
 	clearflag FLAG_TEMP_1
-# 69 "data/maps/VerdantGrove/scripts.pory"
+# 68 "data/maps/VerdantGrove/scripts.pory"
 	setmetatile 9, 8, 0x208, FALSE
-# 71 "data/maps/VerdantGrove/scripts.pory"
+# 70 "data/maps/VerdantGrove/scripts.pory"
 	special DrawWholeMapView
-# 72 "data/maps/VerdantGrove/scripts.pory"
+# 71 "data/maps/VerdantGrove/scripts.pory"
 	releaseall
 	return
 
 
 VerdantGrove_EventScript_SetPurpleNectar::
-# 77 "data/maps/VerdantGrove/scripts.pory"
+# 76 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_1
-# 78 "data/maps/VerdantGrove/scripts.pory"
-	setflag FLAG_TEMP_2
-# 79 "data/maps/VerdantGrove/scripts.pory"
+# 77 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_3
-# 80 "data/maps/VerdantGrove/scripts.pory"
+# 78 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_4
-# 81 "data/maps/VerdantGrove/scripts.pory"
+# 79 "data/maps/VerdantGrove/scripts.pory"
 	clearflag FLAG_TEMP_2
-# 83 "data/maps/VerdantGrove/scripts.pory"
+# 81 "data/maps/VerdantGrove/scripts.pory"
 	setmetatile 9, 8, 0x210, FALSE
-# 84 "data/maps/VerdantGrove/scripts.pory"
+# 82 "data/maps/VerdantGrove/scripts.pory"
 	special DrawWholeMapView
-# 85 "data/maps/VerdantGrove/scripts.pory"
+# 83 "data/maps/VerdantGrove/scripts.pory"
 	releaseall
 	return
 
 
 VerdantGrove_EventScript_SetRedNectar::
-# 90 "data/maps/VerdantGrove/scripts.pory"
+# 88 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_1
-# 91 "data/maps/VerdantGrove/scripts.pory"
+# 89 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_2
-# 92 "data/maps/VerdantGrove/scripts.pory"
-	setflag FLAG_TEMP_3
-# 93 "data/maps/VerdantGrove/scripts.pory"
+# 90 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_4
-# 94 "data/maps/VerdantGrove/scripts.pory"
+# 91 "data/maps/VerdantGrove/scripts.pory"
 	clearflag FLAG_TEMP_3
-# 95 "data/maps/VerdantGrove/scripts.pory"
+# 92 "data/maps/VerdantGrove/scripts.pory"
 	setmetatile 9, 8, 0x208, FALSE
-# 97 "data/maps/VerdantGrove/scripts.pory"
+# 94 "data/maps/VerdantGrove/scripts.pory"
 	special DrawWholeMapView
-# 98 "data/maps/VerdantGrove/scripts.pory"
+# 95 "data/maps/VerdantGrove/scripts.pory"
 	releaseall
 	return
 
 
 VerdantGrove_EventScript_SetYellowNectar::
-# 103 "data/maps/VerdantGrove/scripts.pory"
+# 100 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_1
-# 104 "data/maps/VerdantGrove/scripts.pory"
+# 101 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_2
-# 105 "data/maps/VerdantGrove/scripts.pory"
+# 102 "data/maps/VerdantGrove/scripts.pory"
 	setflag FLAG_TEMP_3
-# 106 "data/maps/VerdantGrove/scripts.pory"
-	setflag FLAG_TEMP_4
-# 107 "data/maps/VerdantGrove/scripts.pory"
+# 103 "data/maps/VerdantGrove/scripts.pory"
 	clearflag FLAG_TEMP_4
-# 109 "data/maps/VerdantGrove/scripts.pory"
+# 105 "data/maps/VerdantGrove/scripts.pory"
 	setmetatile 9, 8, 0x210, FALSE
-# 110 "data/maps/VerdantGrove/scripts.pory"
+# 106 "data/maps/VerdantGrove/scripts.pory"
 	special DrawWholeMapView
-# 111 "data/maps/VerdantGrove/scripts.pory"
+# 107 "data/maps/VerdantGrove/scripts.pory"
 	releaseall
 	return
 

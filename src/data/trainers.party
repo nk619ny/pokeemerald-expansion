@@ -5001,7 +5001,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Tangela @ Rocky Helmet  
-Level: 44
+Level: 48
 Ability: Regenerator  
 Tera Type: Grass  
 EVs: 252 HP / 4 SpA / 252 SpD  
@@ -5013,18 +5013,20 @@ IVs: 0 Atk
 - Ancient Power  
 
 Numel  
-Level: 44
+Level: 51
 Ability: Simple  
 Tera Type: Fire  
+EVs: 252 HP
 - Curse  
 - Flame Charge  
 - Trailblaze  
 - Scorching Sands  
 
 Quilava  
-Level: 44
+Level: 50
 Ability: Flash Fire  
 Tera Type: Grass  
+EVs: 128 HP / 128 SpA / 128 Spe
 IVs: 0 Atk  
 - Smokescreen  
 - Extrasensory  
@@ -5032,9 +5034,10 @@ IVs: 0 Atk
 - Hidden Power
 
 Trubbish  
-Level: 44
+Level: 52
 Ability: Stench  
 Tera Type: Poison  
+EVs: 196 Atk / 196 Def / 196 SpD 
 - Gunk Shot  
 - Pain Split  
 - Corrosive Gas  
@@ -10309,7 +10312,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Basculin-Blue-Striped  
-Level: 37
+Level: 40
 Ability: Rock Head  
 Tera Type: Water  
 - Wave Crash  
@@ -10318,7 +10321,7 @@ Tera Type: Water
 - Reversal  
 
 Alomomola @ Iapapa Berry
-Level: 37
+Level: 38
 Ability: Regenerator  
 Tera Type: Water  
 - Flip Turn  
@@ -10327,7 +10330,7 @@ Tera Type: Water
 - Wide Guard  
 
 Eelektrik  
-Level: 37
+Level: 43
 Ability: Levitate  
 Tera Type: Electric  
 - Aqua Tail  
@@ -10336,7 +10339,7 @@ Tera Type: Electric
 - Acid Spray  
 
 Remoraid @ Power Herb  
-Level: 38
+Level: 45
 Ability: Sniper  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -17775,7 +17778,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Tapu Bulu @ Kebia Berry  
 Ability: Grassy Surge  
-Level: 45
+Level: 44
 Ball: Safari Ball
 Tera Type: Grass  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -17787,7 +17790,7 @@ Adamant Nature
 
 Meganium @ Big Root  
 Ability: Flower Veil  
-Level: 46
+Level: 45
 Ball: Safari Ball
 Tera Type: Grass  
 EVs: 252 HP / 4 Def / 252 SpA  
@@ -17812,7 +17815,7 @@ Adamant Nature
 
 Sceptile @ Grassy Seed  
 Ability: Unburden  
-Level: 46
+Level: 45
 Ball: Safari Ball
 Tera Type: Rock  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -17824,7 +17827,7 @@ IVs: 0 Atk/* IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IV
 - Detect  
 
 Florges-Red (F) @ Grassy Seed  
-Level: 46
+Level: 45
 Ability: Flower Veil  
 Ball: Safari Ball
 Tera Type: Ground  
@@ -17837,7 +17840,7 @@ IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground I
 - Floral Healing  
 
 Mudsdale @ Leftovers  
-Level: 47
+Level: 45
 Ability: Stamina  
 Ball: Safari Ball
 Tera Type: Ground  
@@ -21960,7 +21963,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 
 Morelull @ Big Root  
-Level: 44
+Level: 45
 Ability: Effect Spore  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -21970,7 +21973,7 @@ IVs: 0 Atk
 - Leech Seed  
 
 Skiddo  
-Level: 44
+Level: 45
 Ability: Sap Sipper  
 Tera Type: Grass  
 - Stomping Tantrum  
@@ -21979,7 +21982,7 @@ Tera Type: Grass
 - Trailblaze  
 
 Pumpkaboo-Small  
-Level: 44
+Level: 45
 Ability: Pickup  
 Tera Type: Ghost  
 - Trick-or-Treat  
@@ -21988,7 +21991,7 @@ Tera Type: Ghost
 - Skitter Smack  
 
 Nidorino (M)  
-Level: 42
+Level: 44
 Ability: Rivalry  
 Tera Type: Poison  
 - Double-Edge  
