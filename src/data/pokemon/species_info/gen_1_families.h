@@ -1308,12 +1308,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_METAPOD] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 20,
-        .baseDefense   = 55,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseHP        = 50 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
+        .baseAttack    = 20 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 10 : 0),
+        .baseDefense   = 55 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 20 : 0),
+        .baseSpeed     = 30 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 10 : 0),
+        .baseSpAttack  = 25 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 25 : 0),
+        .baseSpDefense = 25 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 25 : 0),
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 120,
         .expYield = 72,
@@ -1680,12 +1680,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_KAKUNA] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 25,
-        .baseDefense   = 50,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseHP        = 45 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
+        .baseAttack    = 25 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 20 : 0),
+        .baseDefense   = 50 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 20 : 0),
+        .baseSpeed     = 35 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 10 : 0),
+        .baseSpAttack  = 25 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 20 : 0),
+        .baseSpDefense = 25 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 20 : 0),
         .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
         .catchRate = 120,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 72 : 71,

@@ -1510,12 +1510,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_SILCOON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 35,
-        .baseDefense   = 55,
+        .baseHP        = 50 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
+        .baseAttack    = 35 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 20 : 0),
+        .baseDefense   = 55 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 15 : 0),
         .baseSpeed     = 15,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseSpAttack  = 25 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 20 : 0),
+        .baseSpDefense = 25 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 35 : 0),
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 120,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_4) ? 72 : 71,
@@ -1675,12 +1675,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_CASCOON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 35,
-        .baseDefense   = 55,
+        .baseHP        = 50 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
+        .baseAttack    = 35 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 20 : 0),
+        .baseDefense   = 55 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 15 : 0),
         .baseSpeed     = 15,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseSpAttack  = 25 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 20 : 0),
+        .baseSpDefense = 25 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 35 : 0),
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 120,
     #if P_UPDATED_EXP_YIELDS >= GEN_7

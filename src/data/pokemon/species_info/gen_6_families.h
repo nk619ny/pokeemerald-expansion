@@ -1430,12 +1430,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
 #define SPEWPA_SPECIES_INFO(evolution)                                          \
     {                                                                           \
-        .baseHP        = 45,                                                    \
-        .baseAttack    = 22,                                                    \
-        .baseDefense   = 60,                                                    \
-        .baseSpeed     = 29,                                                    \
-        .baseSpAttack  = 27,                                                    \
-        .baseSpDefense = 30,                                                    \
+        .baseHP        = 45 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 10 : 0),                                                    \
+        .baseAttack    = 22 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 10 : 0),                                                    \
+        .baseDefense   = 60 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 10 : 0),                                                    \
+        .baseSpeed     = 29 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 20 : 0),                                                    \
+        .baseSpAttack  = 27 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 20 : 0),                                                    \
+        .baseSpDefense = 30 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 20 : 0),                                                    \
         .types = MON_TYPES(TYPE_BUG),                                           \
         .catchRate = 120,                                                       \
         .expYield = 75,                                                         \
