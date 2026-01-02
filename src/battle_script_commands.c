@@ -15169,7 +15169,7 @@ void BS_SetTerrain(void)
     }
     else if (statusFlag)
     {
-        TryChangeBattleTerrain(gBattlerAttacker, statusFlag);
+        TryChangeBattleTerrain(gBattlerAttacker, statusFlag, FALSE);
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
     else
