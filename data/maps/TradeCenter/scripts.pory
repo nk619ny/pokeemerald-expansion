@@ -439,14 +439,9 @@ script MauvilleCity_EventScript_Temporary{
 	//additem(ITEM_TM_ICE_PUNCH,-1)
 	addvar(VAR_LEVEL_CAP, 1)
 	giveitem(ITEM_EXP_CANDY_S)
-	giveitem(ITEM_PROTEIN,99)
-
-	giveitem(ITEM_IRON,99)
-	giveitem(ITEM_HP_UP,99)
-	giveitem(ITEM_ZINC,99)
-	giveitem(ITEM_CALCIUM,99)
-	giveitem(ITEM_CARBOS,99)
-	giveitem(ITEM_FIRE_STONE,20)
+	addcoins(9000)
+	giveitem(ITEM_SUN_STONE,20)
+	giveitem(ITEM_WATER_STONE,20)
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
@@ -793,6 +788,7 @@ script Common_EventScript_RemoveOptionalItems2 {
 script Common_EventScript_RemoveOptionalItems3 {
 	setflag(FLAG_ITEM_ROUTE_111_HP_UP)
 	setflag(FLAG_ITEM_ROUTE_113_SUPER_REPEL)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_113_TM_DOUBLE_TEAM)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_113_ETHER)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_113_NUGGET)
 	setflag(FLAG_ITEM_ROUTE_113_MAX_ETHER)
