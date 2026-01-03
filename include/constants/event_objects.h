@@ -264,11 +264,15 @@
 #define OBJ_EVENT_GFX_LISIA                      255
 #define OBJ_EVENT_GFX_ZINNIA                     256
 
+#define OBJ_EVENT_GFX_BACKPACKER_ORAS            257
+#define OBJ_EVENT_GFX_FAIRY_TALE_GIRL_ORAS       258
+#define OBJ_EVENT_GFX_DELINQUENT_ORAS            259
+#define OBJ_EVENT_GFX_STREET_THUG_ORAS           260
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        257
+#define NUM_OBJ_EVENT_GFX                        261
 
 
 // These are dynamic object gfx ids.
@@ -412,6 +416,10 @@
 #define OBJ_EVENT_PAL_TAG_DIVER_F                 0x1130
 #define OBJ_EVENT_PAL_TAG_ZINNIA                  0x1131
 #define OBJ_EVENT_PAL_TAG_LISIA                   0x1132
+#define OBJ_EVENT_PAL_TAG_BACKPACKER_ORAS              0x1133
+#define OBJ_EVENT_PAL_TAG_FAIRY_TALE_GIRL_ORAS         0x1134
+#define OBJ_EVENT_PAL_TAG_DELINQUENT_ORAS              0x1135
+#define OBJ_EVENT_PAL_TAG_STREET_THUG_ORAS             0x1136
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

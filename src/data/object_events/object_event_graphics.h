@@ -421,6 +421,15 @@ const u16 gObjectEventPal_Lisia[] = INCBIN_U16("graphics/object_events/pics/peop
 const u32 gObjectEventPic_Zinnia[] = INCBIN_U32("graphics/object_events/pics/people/zinnia.4bpp");
 const u16 gObjectEventPal_Zinnia[] = INCBIN_U16("graphics/object_events/pics/people/zinnia.gbapal");
 
+const u16 gObjectEventPic_BackpackerORAS[] = INCBIN_U16("graphics/object_events/pics/people/backpacker_oras.4bpp");
+const u16 gObjectEventPal_BackpackerORAS[] = INCBIN_U16("graphics/object_events/pics/people/backpacker_oras.gbapal");
+const u16 gObjectEventPic_FairyTaleGirlORAS[] = INCBIN_U16("graphics/object_events/pics/people/fairy_tale_girl_oras.4bpp");
+const u16 gObjectEventPal_FairyTaleGirlORAS[] = INCBIN_U16("graphics/object_events/pics/people/fairy_tale_girl_oras.gbapal");
+const u16 gObjectEventPic_DelinquentORAS[] = INCBIN_U16("graphics/object_events/pics/people/delinquent_oras.4bpp");
+const u16 gObjectEventPal_DelinquentORAS[] = INCBIN_U16("graphics/object_events/pics/people/delinquent_oras.gbapal");
+const u16 gObjectEventPic_StreetThugORAS[] = INCBIN_U16("graphics/object_events/pics/people/street_thug_oras.4bpp");
+const u16 gObjectEventPal_StreetThugORAS[] = INCBIN_U16("graphics/object_events/pics/people/street_thug_oras.gbapal");
+
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 

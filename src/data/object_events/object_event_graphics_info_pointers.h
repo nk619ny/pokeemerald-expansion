@@ -250,6 +250,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lisia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zinnia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DiverM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DiverF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BackpackerORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FairyTaleGirlORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DelinquentORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StreetThugORAS;
 
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
@@ -523,6 +527,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_ZINNIA] =                   &gObjectEventGraphicsInfo_Zinnia,
     [OBJ_EVENT_GFX_DIVER_M] =                  &gObjectEventGraphicsInfo_DiverM,
     [OBJ_EVENT_GFX_DIVER_F] =                  &gObjectEventGraphicsInfo_DiverF,
+    [OBJ_EVENT_GFX_BACKPACKER_ORAS] =          &gObjectEventGraphicsInfo_BackpackerORAS,
+    [OBJ_EVENT_GFX_FAIRY_TALE_GIRL_ORAS] =     &gObjectEventGraphicsInfo_FairyTaleGirlORAS,
+    [OBJ_EVENT_GFX_DELINQUENT_ORAS] =          &gObjectEventGraphicsInfo_DelinquentORAS,
+    [OBJ_EVENT_GFX_STREET_THUG_ORAS] =         &gObjectEventGraphicsInfo_StreetThugORAS,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

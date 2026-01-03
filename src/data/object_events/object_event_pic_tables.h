@@ -801,6 +801,22 @@ static const struct SpriteFrameImage sPicTable_Zinnia[] = {
     overworld_frame(gObjectEventPic_Zinnia, 2, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_BackpackerORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_BackpackerORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_FairyTaleGirlORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_FairyTaleGirlORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_DelinquentORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_DelinquentORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_StreetThugORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_StreetThugORAS, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_SSTidal[] = {
     obj_frame_tiles(gObjectEventPic_SSTidal),
     obj_frame_tiles(gObjectEventPic_SSTidal),
