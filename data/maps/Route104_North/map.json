@@ -216,7 +216,7 @@
       "flag": "FLAG_TEMP_11"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TWIN",
+      "graphics_id": "OBJ_EVENT_GFX_TWINS_ORAS",
       "x": 30,
       "y": 15,
       "elevation": 3,
@@ -229,7 +229,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TWIN",
+      "graphics_id": "OBJ_EVENT_GFX_TWINS_ORAS",
       "x": 31,
       "y": 15,
       "elevation": 3,

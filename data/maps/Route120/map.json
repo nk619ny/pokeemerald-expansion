@@ -566,7 +566,7 @@
       "flag": "FLAG_HIDE_ROUTE_120_KECLEON_4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL_ORAS",
       "x": 28,
       "y": 30,
       "elevation": 3,
@@ -579,7 +579,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M_ORAS",
       "x": 13,
       "y": 88,
       "elevation": 3,

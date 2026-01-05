@@ -82,7 +82,7 @@
       "flag": "FLAG_HIDE_RUSTURF_TUNNEL_ROCK_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_HIKER_ORAS",
       "x": 20,
       "y": 19,
       "elevation": 3,
@@ -163,7 +163,7 @@
       "flag": "FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_HIKER_ORAS",
       "x": 7,
       "y": 2,
       "elevation": 3,
