@@ -281,7 +281,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY_ORAS",
       "x": 22,
       "y": 5,
       "elevation": 3,
@@ -359,7 +359,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M_ORAS",
       "x": 65,
       "y": 9,
       "elevation": 3,
