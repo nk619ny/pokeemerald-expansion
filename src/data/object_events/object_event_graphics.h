@@ -430,6 +430,64 @@ const u16 gObjectEventPal_DelinquentORAS[] = INCBIN_U16("graphics/object_events/
 const u16 gObjectEventPic_StreetThugORAS[] = INCBIN_U16("graphics/object_events/pics/people/street_thug_oras.4bpp");
 const u16 gObjectEventPal_StreetThugORAS[] = INCBIN_U16("graphics/object_events/pics/people/street_thug_oras.gbapal");
 
+
+const u32 gObjectEventPic_AceTrainerFORAS[] = INCBIN_U32("graphics/object_events/pics/people/ace_trainer_f_oras.4bpp");
+const u16 gObjectEventPal_AceTrainerFORAS[] = INCBIN_U16("graphics/object_events/pics/people/ace_trainer_f_oras.gbapal");
+const u32 gObjectEventPic_AceTrainerMORAS[] = INCBIN_U32("graphics/object_events/pics/people/ace_trainer_m_oras.4bpp");
+const u16 gObjectEventPal_AceTrainerMORAS[] = INCBIN_U16("graphics/object_events/pics/people/ace_trainer_m_oras.gbapal");
+const u32 gObjectEventPic_AromaLadyORAS[] = INCBIN_U32("graphics/object_events/pics/people/aroma_lady_oras.4bpp");
+const u16 gObjectEventPal_AromaLadyORAS[] = INCBIN_U16("graphics/object_events/pics/people/aroma_lady_oras.gbapal");
+const u32 gObjectEventPic_BattleGirlORAS[] = INCBIN_U32("graphics/object_events/pics/people/battle_girl_oras.4bpp");
+const u16 gObjectEventPal_BattleGirlORAS[] = INCBIN_U16("graphics/object_events/pics/people/battle_girl_oras.gbapal");
+const u32 gObjectEventPic_BeautyORAS[] = INCBIN_U32("graphics/object_events/pics/people/beauty_oras.4bpp");
+const u16 gObjectEventPal_BeautyORAS[] = INCBIN_U16("graphics/object_events/pics/people/beauty_oras.gbapal");
+const u32 gObjectEventPic_BirdKeeperORAS[] = INCBIN_U32("graphics/object_events/pics/people/bird_keeper_oras.4bpp");
+const u16 gObjectEventPal_BirdKeeperORAS[] = INCBIN_U16("graphics/object_events/pics/people/bird_keeper_oras.gbapal");
+const u32 gObjectEventPic_BlackBeltORAS[] = INCBIN_U32("graphics/object_events/pics/people/black_belt_oras.4bpp");
+const u16 gObjectEventPal_BlackBeltORAS[] = INCBIN_U16("graphics/object_events/pics/people/black_belt_oras.gbapal");
+const u32 gObjectEventPic_BreederFORAS[] = INCBIN_U32("graphics/object_events/pics/people/breeder_f_oras.4bpp");
+const u16 gObjectEventPal_BreederFORAS[] = INCBIN_U16("graphics/object_events/pics/people/breeder_f_oras.gbapal");
+const u32 gObjectEventPic_BreederMORAS[] = INCBIN_U32("graphics/object_events/pics/people/breeder_m_oras.4bpp");
+const u16 gObjectEventPal_BreederMORAS[] = INCBIN_U16("graphics/object_events/pics/people/breeder_m_oras.gbapal");
+const u32 gObjectEventPic_BugManiacORAS[] = INCBIN_U32("graphics/object_events/pics/people/bug_maniac_oras.4bpp");
+const u16 gObjectEventPal_BugManiacORAS[] = INCBIN_U16("graphics/object_events/pics/people/bug_maniac_oras.gbapal");
+const u32 gObjectEventPic_CollectorORAS[] = INCBIN_U32("graphics/object_events/pics/people/collector_oras.4bpp");
+const u16 gObjectEventPal_CollectorORAS[] = INCBIN_U16("graphics/object_events/pics/people/collector_oras.gbapal");
+const u32 gObjectEventPic_DragonTamerORAS[] = INCBIN_U32("graphics/object_events/pics/people/dragon_tamer_oras.4bpp");
+const u16 gObjectEventPal_DragonTamerORAS[] = INCBIN_U16("graphics/object_events/pics/people/dragon_tamer_oras.gbapal");
+const u32 gObjectEventPic_GuitaristORAS[] = INCBIN_U32("graphics/object_events/pics/people/guitarist_oras.4bpp");
+const u16 gObjectEventPal_GuitaristORAS[] = INCBIN_U16("graphics/object_events/pics/people/guitarist_oras.gbapal");
+const u32 gObjectEventPic_HikerORAS[] = INCBIN_U32("graphics/object_events/pics/people/hiker_oras.4bpp");
+const u16 gObjectEventPal_HikerORAS[] = INCBIN_U16("graphics/object_events/pics/people/hiker_oras.gbapal");
+const u32 gObjectEventPic_KindlerORAS[] = INCBIN_U32("graphics/object_events/pics/people/kindler_oras.4bpp");
+const u16 gObjectEventPal_KindlerORAS[] = INCBIN_U16("graphics/object_events/pics/people/kindler_oras.gbapal");
+const u32 gObjectEventPic_LadyORAS[] = INCBIN_U32("graphics/object_events/pics/people/lady_oras.4bpp");
+const u16 gObjectEventPal_LadyORAS[] = INCBIN_U16("graphics/object_events/pics/people/lady_oras.gbapal");
+const u32 gObjectEventPic_LassORAS[] = INCBIN_U32("graphics/object_events/pics/people/lass_oras.4bpp");
+const u16 gObjectEventPal_LassORAS[] = INCBIN_U16("graphics/object_events/pics/people/lass_oras.gbapal");
+const u32 gObjectEventPic_NinjaBoyORAS[] = INCBIN_U32("graphics/object_events/pics/people/ninja_boy_oras.4bpp");
+const u16 gObjectEventPal_NinjaBoyORAS[] = INCBIN_U16("graphics/object_events/pics/people/ninja_boy_oras.gbapal");
+const u32 gObjectEventPic_ParasolLadyORAS[] = INCBIN_U32("graphics/object_events/pics/people/parasol_lady_oras.4bpp");
+const u16 gObjectEventPal_ParasolLadyORAS[] = INCBIN_U16("graphics/object_events/pics/people/parasol_lady_oras.gbapal");
+const u32 gObjectEventPic_PokefanFORAS[] = INCBIN_U32("graphics/object_events/pics/people/pokefan_f_oras.4bpp");
+const u16 gObjectEventPal_PokefanFORAS[] = INCBIN_U16("graphics/object_events/pics/people/pokefan_f_oras.gbapal");
+const u32 gObjectEventPic_PokefanMORAS[] = INCBIN_U32("graphics/object_events/pics/people/pokefan_m_oras.4bpp");
+const u16 gObjectEventPal_PokefanMORAS[] = INCBIN_U16("graphics/object_events/pics/people/pokefan_m_oras.gbapal");
+const u32 gObjectEventPic_RangerFORAS[] = INCBIN_U32("graphics/object_events/pics/people/ranger_f_oras.4bpp");
+const u16 gObjectEventPal_RangerFORAS[] = INCBIN_U16("graphics/object_events/pics/people/ranger_f_oras.gbapal");
+const u32 gObjectEventPic_RangerMORAS[] = INCBIN_U32("graphics/object_events/pics/people/ranger_m_oras.4bpp");
+const u16 gObjectEventPal_RangerMORAS[] = INCBIN_U16("graphics/object_events/pics/people/ranger_m_oras.gbapal");
+const u32 gObjectEventPic_RichBoyORAS[] = INCBIN_U32("graphics/object_events/pics/people/rich_boy_oras.4bpp");
+const u16 gObjectEventPal_RichBoyORAS[] = INCBIN_U16("graphics/object_events/pics/people/rich_boy_oras.gbapal");
+const u32 gObjectEventPic_RuinManiacORAS[] = INCBIN_U32("graphics/object_events/pics/people/ruin_maniac_oras.4bpp");
+const u16 gObjectEventPal_RuinManiacORAS[] = INCBIN_U16("graphics/object_events/pics/people/ruin_maniac_oras.gbapal");
+const u32 gObjectEventPic_TriathleteRunningMORAS[] = INCBIN_U32("graphics/object_events/pics/people/triathlete_running_m_oras.4bpp");
+const u16 gObjectEventPal_TriathleteRunningMORAS[] = INCBIN_U16("graphics/object_events/pics/people/triathlete_running_m_oras.gbapal");
+const u32 gObjectEventPic_TwinsORAS[] = INCBIN_U32("graphics/object_events/pics/people/twins_oras.4bpp");
+const u16 gObjectEventPal_TwinsORAS[] = INCBIN_U16("graphics/object_events/pics/people/twins_oras.gbapal");
+
+
+
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 

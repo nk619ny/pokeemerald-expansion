@@ -254,6 +254,33 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BackpackerO
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FairyTaleGirlORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DelinquentORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StreetThugORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AceTrainerFORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AceTrainerMORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AromaLadyORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BattleGirlORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BeautyORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdKeeperORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BlackBeltORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BreederFORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BreederMORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BugManiacORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CollectorORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DragonTamerORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GuitaristORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HikerORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KindlerORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LadyORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LassORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NinjaBoyORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ParasolLadyORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokefanFORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokefanMORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RangerFORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RangerMORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichBoyORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RuinManiacORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TriathleteRunningMORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TwinsORAS;
 
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
@@ -531,6 +558,33 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_FAIRY_TALE_GIRL_ORAS] =     &gObjectEventGraphicsInfo_FairyTaleGirlORAS,
     [OBJ_EVENT_GFX_DELINQUENT_ORAS] =          &gObjectEventGraphicsInfo_DelinquentORAS,
     [OBJ_EVENT_GFX_STREET_THUG_ORAS] =         &gObjectEventGraphicsInfo_StreetThugORAS,
+    [OBJ_EVENT_GFX_ACE_TRAINER_F_ORAS] =       &gObjectEventGraphicsInfo_AceTrainerFORAS,
+    [OBJ_EVENT_GFX_ACE_TRAINER_M_ORAS] =       &gObjectEventGraphicsInfo_AceTrainerMORAS,
+    [OBJ_EVENT_GFX_AROMA_LADY_ORAS] =          &gObjectEventGraphicsInfo_AromaLadyORAS,
+    [OBJ_EVENT_GFX_BATTLE_GIRL_ORAS] =         &gObjectEventGraphicsInfo_BattleGirlORAS,
+    [OBJ_EVENT_GFX_BEAUTY_ORAS] =              &gObjectEventGraphicsInfo_BeautyORAS,
+    [OBJ_EVENT_GFX_BIRD_KEEPER_ORAS] =         &gObjectEventGraphicsInfo_BirdKeeperORAS,
+    [OBJ_EVENT_GFX_BLACK_BELT_ORAS] =         &gObjectEventGraphicsInfo_BlackBeltORAS,
+    [OBJ_EVENT_GFX_BREEDER_F_ORAS] =          &gObjectEventGraphicsInfo_BreederFORAS,
+    [OBJ_EVENT_GFX_BREEDER_M_ORAS] =          &gObjectEventGraphicsInfo_BreederMORAS,
+    [OBJ_EVENT_GFX_BUG_MANIAC_ORAS] =         &gObjectEventGraphicsInfo_BugManiacORAS,
+    [OBJ_EVENT_GFX_COLLECTOR_ORAS] =          &gObjectEventGraphicsInfo_CollectorORAS,
+    [OBJ_EVENT_GFX_DRAGON_TAMER_ORAS] =       &gObjectEventGraphicsInfo_DragonTamerORAS,
+    [OBJ_EVENT_GFX_GUITARIST_ORAS] =          &gObjectEventGraphicsInfo_GuitaristORAS,
+    [OBJ_EVENT_GFX_HIKER_ORAS] =              &gObjectEventGraphicsInfo_HikerORAS,
+    [OBJ_EVENT_GFX_KINDLER_ORAS] =            &gObjectEventGraphicsInfo_KindlerORAS,
+    [OBJ_EVENT_GFX_LADY_ORAS] =               &gObjectEventGraphicsInfo_LadyORAS,
+    [OBJ_EVENT_GFX_LASS_ORAS] =               &gObjectEventGraphicsInfo_LassORAS,
+    [OBJ_EVENT_GFX_NINJA_BOY_ORAS] =          &gObjectEventGraphicsInfo_NinjaBoyORAS,
+    [OBJ_EVENT_GFX_PARASOL_LADY_ORAS] =       &gObjectEventGraphicsInfo_ParasolLadyORAS,
+    [OBJ_EVENT_GFX_POKEFAN_F_ORAS] =          &gObjectEventGraphicsInfo_PokefanFORAS,
+    [OBJ_EVENT_GFX_POKEFAN_M_ORAS] =          &gObjectEventGraphicsInfo_PokefanMORAS,
+    [OBJ_EVENT_GFX_RANGER_F_ORAS] =           &gObjectEventGraphicsInfo_RangerFORAS,
+    [OBJ_EVENT_GFX_RANGER_M_ORAS] =           &gObjectEventGraphicsInfo_RangerMORAS,
+    [OBJ_EVENT_GFX_RICH_BOY_ORAS] =           &gObjectEventGraphicsInfo_RichBoyORAS,
+    [OBJ_EVENT_GFX_RUIN_MANIAC_ORAS] =        &gObjectEventGraphicsInfo_RuinManiacORAS,
+    [OBJ_EVENT_GFX_TRIATHLETE_RUNNING_M_ORAS] = &gObjectEventGraphicsInfo_TriathleteRunningMORAS,
+    [OBJ_EVENT_GFX_TWINS_ORAS] =              &gObjectEventGraphicsInfo_TwinsORAS,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

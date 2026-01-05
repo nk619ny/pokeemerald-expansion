@@ -269,10 +269,38 @@
 #define OBJ_EVENT_GFX_DELINQUENT_ORAS            259
 #define OBJ_EVENT_GFX_STREET_THUG_ORAS           260
 
+#define OBJ_EVENT_GFX_ACE_TRAINER_F_ORAS         261
+#define OBJ_EVENT_GFX_ACE_TRAINER_M_ORAS         262
+#define OBJ_EVENT_GFX_AROMA_LADY_ORAS            263
+#define OBJ_EVENT_GFX_BATTLE_GIRL_ORAS           264
+#define OBJ_EVENT_GFX_BEAUTY_ORAS                265
+#define OBJ_EVENT_GFX_BIRD_KEEPER_ORAS           266
+#define OBJ_EVENT_GFX_BLACK_BELT_ORAS            267
+#define OBJ_EVENT_GFX_BREEDER_F_ORAS             268
+#define OBJ_EVENT_GFX_BREEDER_M_ORAS             269
+#define OBJ_EVENT_GFX_BUG_MANIAC_ORAS            270
+#define OBJ_EVENT_GFX_COLLECTOR_ORAS             271
+#define OBJ_EVENT_GFX_DRAGON_TAMER_ORAS          272
+#define OBJ_EVENT_GFX_GUITARIST_ORAS             273
+#define OBJ_EVENT_GFX_HIKER_ORAS                 274
+#define OBJ_EVENT_GFX_KINDLER_ORAS               275
+#define OBJ_EVENT_GFX_LADY_ORAS                  276
+#define OBJ_EVENT_GFX_LASS_ORAS                  277
+#define OBJ_EVENT_GFX_NINJA_BOY_ORAS             278
+#define OBJ_EVENT_GFX_PARASOL_LADY_ORAS          279
+#define OBJ_EVENT_GFX_POKEFAN_F_ORAS             280
+#define OBJ_EVENT_GFX_POKEFAN_M_ORAS             281
+#define OBJ_EVENT_GFX_RANGER_F_ORAS              282
+#define OBJ_EVENT_GFX_RANGER_M_ORAS              283
+#define OBJ_EVENT_GFX_RICH_BOY_ORAS              284
+#define OBJ_EVENT_GFX_RUIN_MANIAC_ORAS           285
+#define OBJ_EVENT_GFX_TRIATHLETE_RUNNING_M_ORAS            286
+#define OBJ_EVENT_GFX_TWINS_ORAS                           287
+
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        261
+#define NUM_OBJ_EVENT_GFX                        288
 
 
 // These are dynamic object gfx ids.
@@ -420,6 +448,33 @@
 #define OBJ_EVENT_PAL_TAG_FAIRY_TALE_GIRL_ORAS         0x1134
 #define OBJ_EVENT_PAL_TAG_DELINQUENT_ORAS              0x1135
 #define OBJ_EVENT_PAL_TAG_STREET_THUG_ORAS             0x1136
+#define OBJ_EVENT_PAL_TAG_ACE_TRAINER_F_ORAS           0x1137
+#define OBJ_EVENT_PAL_TAG_ACE_TRAINER_M_ORAS           0x1138
+#define OBJ_EVENT_PAL_TAG_AROMA_LADY_ORAS              0x1139
+#define OBJ_EVENT_PAL_TAG_BATTLE_GIRL_ORAS             0x113A
+#define OBJ_EVENT_PAL_TAG_BEAUTY_ORAS                  0x113B
+#define OBJ_EVENT_PAL_TAG_BIRD_KEEPER_ORAS             0x113C
+#define OBJ_EVENT_PAL_TAG_BLACK_BELT_ORAS              0x113D
+#define OBJ_EVENT_PAL_TAG_BREEDER_F_ORAS               0x113E
+#define OBJ_EVENT_PAL_TAG_BREEDER_M_ORAS               0x113F
+#define OBJ_EVENT_PAL_TAG_BUG_MANIAC_ORAS              0x1140
+#define OBJ_EVENT_PAL_TAG_COLLECTOR_ORAS               0x1141
+#define OBJ_EVENT_PAL_TAG_DRAGON_TAMER_ORAS            0x1142
+#define OBJ_EVENT_PAL_TAG_GUITARIST_ORAS               0x1143
+#define OBJ_EVENT_PAL_TAG_HIKER_ORAS                   0x1144
+#define OBJ_EVENT_PAL_TAG_KINDLER_ORAS                 0x1145
+#define OBJ_EVENT_PAL_TAG_LADY_ORAS                    0x1146
+#define OBJ_EVENT_PAL_TAG_LASS_ORAS                    0x1147
+#define OBJ_EVENT_PAL_TAG_NINJA_BOY_ORAS               0x1148
+#define OBJ_EVENT_PAL_TAG_PARASOL_LADY_ORAS            0x1149
+#define OBJ_EVENT_PAL_TAG_POKEFAN_F_ORAS               0x114A
+#define OBJ_EVENT_PAL_TAG_POKEFAN_M_ORAS               0x114B
+#define OBJ_EVENT_PAL_TAG_RANGER_F_ORAS                0x114C
+#define OBJ_EVENT_PAL_TAG_RANGER_M_ORAS                0x114D
+#define OBJ_EVENT_PAL_TAG_RICH_BOY_ORAS                0x114E
+#define OBJ_EVENT_PAL_TAG_RUIN_MANIAC_ORAS             0x114F
+#define OBJ_EVENT_PAL_TAG_TRIATHLETE_RUNNING_M_ORAS    0x1170
+#define OBJ_EVENT_PAL_TAG_TWINS_ORAS                   0x1171
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla
