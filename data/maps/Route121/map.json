@@ -242,7 +242,7 @@
       "flag": "FLAG_TEMP_12"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F_ORAS",
       "x": 67,
       "y": 5,
       "elevation": 3,
@@ -333,7 +333,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+      "graphics_id": "OBJ_EVENT_GFX_BREEDER_M_ORAS",
       "x": 59,
       "y": 8,
       "elevation": 3,
@@ -346,7 +346,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_BREEDER_F_ORAS",
       "x": 64,
       "y": 5,
       "elevation": 3,
