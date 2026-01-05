@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_BUG_MANIAC_ORAS",
       "x": 22,
       "y": 83,
       "elevation": 5,
@@ -355,7 +355,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_PARASOL_LADY_ORAS",
       "x": 15,
       "y": 5,
       "elevation": 3,
@@ -368,7 +368,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_PARASOL_LADY_ORAS",
       "x": 16,
       "y": 29,
       "elevation": 3,
@@ -461,7 +461,7 @@
       "flag": "FLAG_TEMP_12"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY_ORAS",
       "x": 10,
       "y": 72,
       "elevation": 3,
@@ -474,7 +474,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY_ORAS",
       "x": 20,
       "y": 1,
       "elevation": 3,
@@ -619,7 +619,7 @@
       "flag": "FLAG_HIDE_ROUTE_120_KECLEON_BRIDGE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_PARASOL_LADY_ORAS",
       "x": 16,
       "y": 29,
       "elevation": 3,
