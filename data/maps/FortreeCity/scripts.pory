@@ -156,3 +156,18 @@ FortreeCity_Text_GymSign:
 	.string "the world.”$"
 
 `
+
+script FortreeCity_EventScript_Roost {
+	lock
+	faceplayer
+	msgbox(format("The citizens of Fortree City built our homes up in the trees.\pWe learned from the bird and monkey Pokémon who build their homes up here, too."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_ROOST)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("It's important for even sky-flying Pokémon to rest and recover.\pTake this TM to make sure your bird Pokémon can do that, too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_ROOST)
+		waitfanfare
+	}
+	releaseall
+	end
+}

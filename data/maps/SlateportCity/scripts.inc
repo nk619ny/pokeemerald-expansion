@@ -2737,6 +2737,35 @@ SlateportCity_EventScript_EnergyGuruNew::
 	end
 
 
+SlateportCity_EventScript_AerialAce::
+# 1377 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1378 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1379 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_AerialAce_Text_0, MSGBOX_DEFAULT
+# 1380 "data/maps/SlateportCity/scripts.pory"
+	checkitem ITEM_TM_AERIAL_ACE
+# 1381 "data/maps/SlateportCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq SlateportCity_EventScript_AerialAce_2
+SlateportCity_EventScript_AerialAce_1:
+# 1387 "data/maps/SlateportCity/scripts.pory"
+	releaseall
+	end
+
+SlateportCity_EventScript_AerialAce_2:
+# 1382 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_AerialAce_Text_1, MSGBOX_DEFAULT
+# 1383 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1384 "data/maps/SlateportCity/scripts.pory"
+	giveitem ITEM_TM_AERIAL_ACE
+# 1385 "data/maps/SlateportCity/scripts.pory"
+	waitfanfare
+	goto SlateportCity_EventScript_AerialAce_1
+
+
 SlateportCity_EventScript_FarmSign_Text_0:
 # 1364 "data/maps/SlateportCity/scripts.pory"
 	.string "Tunnel to Slateport Farm$"
@@ -2747,3 +2776,14 @@ SlateportCity_EventScript_EnergyGuruNew_Text_0:
 	.string "POKéMON.\n"
 	.string "But they've gotten harder to find, so\l"
 	.string "I've closed my store for now.$"
+
+SlateportCity_EventScript_AerialAce_Text_0:
+# 1379 "data/maps/SlateportCity/scripts.pory"
+	.string "I use bird Pokémon to deliver mail out\n"
+	.string "to the rest of Hoenn.\p"
+	.string "Their flight speed is really incredible.$"
+
+SlateportCity_EventScript_AerialAce_Text_1:
+# 1382 "data/maps/SlateportCity/scripts.pory"
+	.string "You should use this TM to make your bird\n"
+	.string "Pokémon stronger.$"

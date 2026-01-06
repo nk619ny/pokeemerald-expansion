@@ -310,3 +310,47 @@ FortreeCity_Text_GymSign:
 	.string "“The bird user taking flight into\n"
 # 156 "data/maps/FortreeCity/scripts.pory"
 	.string "the world.”$"
+
+FortreeCity_EventScript_Roost::
+# 161 "data/maps/FortreeCity/scripts.pory"
+	lock
+# 162 "data/maps/FortreeCity/scripts.pory"
+	faceplayer
+# 163 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Roost_Text_0, MSGBOX_DEFAULT
+# 164 "data/maps/FortreeCity/scripts.pory"
+	checkitem ITEM_TM_ROOST
+# 165 "data/maps/FortreeCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq FortreeCity_EventScript_Roost_2
+FortreeCity_EventScript_Roost_1:
+# 171 "data/maps/FortreeCity/scripts.pory"
+	releaseall
+	end
+
+FortreeCity_EventScript_Roost_2:
+# 166 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_EventScript_Roost_Text_1, MSGBOX_DEFAULT
+# 167 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 168 "data/maps/FortreeCity/scripts.pory"
+	giveitem ITEM_TM_ROOST
+# 169 "data/maps/FortreeCity/scripts.pory"
+	waitfanfare
+	goto FortreeCity_EventScript_Roost_1
+
+
+FortreeCity_EventScript_Roost_Text_0:
+# 163 "data/maps/FortreeCity/scripts.pory"
+	.string "The citizens of Fortree City built our\n"
+	.string "homes up in the trees.\p"
+	.string "We learned from the bird and monkey\n"
+	.string "Pokémon who build their homes up here,\l"
+	.string "too.$"
+
+FortreeCity_EventScript_Roost_Text_1:
+# 166 "data/maps/FortreeCity/scripts.pory"
+	.string "It's important for even sky-flying\n"
+	.string "Pokémon to rest and recover.\p"
+	.string "Take this TM to make sure your bird\n"
+	.string "Pokémon can do that, too.$"
