@@ -206,7 +206,7 @@ static const struct SpriteFrameImage sPicTable_PikachuF[] = {
 };
 #endif //P_GENDER_DIFFERENCES
 #if P_COSPLAY_PIKACHU_FORMS
-/*static const struct SpriteFrameImage sPicTable_PikachuCosplay[] = {
+static const struct SpriteFrameImage sPicTable_PikachuCosplay[] = {
     overworld_ascending_frames(gObjectEventPic_PikachuCosplay, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_PikachuRockStar[] = {
@@ -223,13 +223,16 @@ static const struct SpriteFrameImage sPicTable_PikachuPhD[] = {
 };
 static const struct SpriteFrameImage sPicTable_PikachuLibre[] = {
     overworld_ascending_frames(gObjectEventPic_PikachuLibre, 4, 4),
-};*/
+};
 #endif //P_COSPLAY_PIKACHU_FORMS
 
-#if P_CAP_PIKACHU_FORMS
-/*static const struct SpriteFrameImage sPicTable_PikachuOriginal[] = {
+
+static const struct SpriteFrameImage sPicTable_PikachuOriginal[] = {
     overworld_ascending_frames(gObjectEventPic_PikachuOriginal, 4, 4),
 };
+
+#if P_CAP_PIKACHU_FORMS
+/*
 static const struct SpriteFrameImage sPicTable_PikachuHoenn[] = {
     overworld_ascending_frames(gObjectEventPic_PikachuHoenn, 4, 4),
 };

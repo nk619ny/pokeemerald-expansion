@@ -103,6 +103,7 @@ static const u16 sPichuFormSpeciesIdTable[] = {
 
 static const u16 sPikachuFormSpeciesIdTable[] = {
     SPECIES_PIKACHU,
+    SPECIES_PIKACHU_ORIGINAL,
 #if P_COSPLAY_PIKACHU_FORMS
     SPECIES_PIKACHU_COSPLAY,
     SPECIES_PIKACHU_ROCK_STAR,
@@ -112,7 +113,6 @@ static const u16 sPikachuFormSpeciesIdTable[] = {
     SPECIES_PIKACHU_LIBRE,
 #endif
 #if P_CAP_PIKACHU_FORMS
-    SPECIES_PIKACHU_ORIGINAL,
     SPECIES_PIKACHU_HOENN,
     SPECIES_PIKACHU_SINNOH,
     SPECIES_PIKACHU_UNOVA,

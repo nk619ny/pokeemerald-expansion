@@ -1007,22 +1007,24 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonIcon_PikachuLibre[] = INCBIN_U8("graphics/pokemon/pikachu/libre/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
-    // const u32 gObjectEventPic_PikachuCosplay[] = INCBIN_COMP("graphics/pokemon/pikachu/cosplay/overworld.4bpp");
-    // const u32 gObjectEventPic_PikachuRockStar[] = INCBIN_COMP("graphics/pokemon/pikachu/rock_star/overworld.4bpp");
-    // const u32 gObjectEventPic_PikachuBelle[] = INCBIN_COMP("graphics/pokemon/pikachu/belle/overworld.4bpp");
-    // const u32 gObjectEventPic_PikachuPopStar[] = INCBIN_COMP("graphics/pokemon/pikachu/pop_star/overworld.4bpp");
-    // const u32 gObjectEventPic_PikachuPhD[] = INCBIN_COMP("graphics/pokemon/pikachu/phd/overworld.4bpp");
-    // const u32 gObjectEventPic_PikachuLibre[] = INCBIN_COMP("graphics/pokemon/pikachu/libre/overworld.4bpp");
+    const u32 gObjectEventPic_PikachuCosplay[] = INCBIN_COMP("graphics/pokemon/pikachu/cosplay/overworld.4bpp");
+    const u32 gObjectEventPic_PikachuRockStar[] = INCBIN_COMP("graphics/pokemon/pikachu/rock_star/overworld.4bpp");
+    const u32 gObjectEventPic_PikachuBelle[] = INCBIN_COMP("graphics/pokemon/pikachu/belle/overworld.4bpp");
+    const u32 gObjectEventPic_PikachuPopStar[] = INCBIN_COMP("graphics/pokemon/pikachu/pop_star/overworld.4bpp");
+    const u32 gObjectEventPic_PikachuPhD[] = INCBIN_COMP("graphics/pokemon/pikachu/phd/overworld.4bpp");
+    const u32 gObjectEventPic_PikachuLibre[] = INCBIN_COMP("graphics/pokemon/pikachu/libre/overworld.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_COSPLAY_PIKACHU_FORMS
 
-#if P_CAP_PIKACHU_FORMS
+
     const u32 gMonFrontPic_PikachuOriginal[] = INCBIN_U32("graphics/pokemon/pikachu/original/front.4bpp.smol");
     const u16 gMonPalette_PikachuOriginal[] = INCBIN_U16("graphics/pokemon/pikachu/original/normal.gbapal");
     const u32 gMonBackPic_PikachuOriginal[] = INCBIN_U32("graphics/pokemon/pikachu/original/back.4bpp.smol");
     const u16 gMonShinyPalette_PikachuOriginal[] = INCBIN_U16("graphics/pokemon/pikachu/original/shiny.gbapal");
     const u8 gMonIcon_PikachuOriginal[] = INCBIN_U8("graphics/pokemon/pikachu/original/icon.4bpp");
-
+    const u32 gObjectEventPic_PikachuOriginal[] = INCBIN_COMP("graphics/pokemon/pikachu/original/overworld.4bpp");
+    
+#if P_CAP_PIKACHU_FORMS
     const u32 gMonFrontPic_PikachuHoenn[] = INCBIN_U32("graphics/pokemon/pikachu/hoenn/front.4bpp.smol");
     const u16 gMonPalette_PikachuHoenn[] = INCBIN_U16("graphics/pokemon/pikachu/hoenn/normal.gbapal");
     const u32 gMonBackPic_PikachuHoenn[] = INCBIN_U32("graphics/pokemon/pikachu/hoenn/back.4bpp.smol");

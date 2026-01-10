@@ -3031,6 +3031,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_GEN_2_CROSS_EVOS
 
+#define PARTNER_PIKACHU_HP    45
+#define PARTNER_PIKACHU_ATK   80
+#define PARTNER_PIKACHU_DEF    50
+#define PARTNER_PIKACHU_SPATK   75
+#define PARTNER_PIKACHU_SPDEF    60
+#define PARTNER_PIKACHU_SPEED   120
+
 #if P_UPDATED_EXP_YIELDS >= GEN_6
     #define PIKACHU_EXP_YIELD 112
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
@@ -3129,12 +3136,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_COSPLAY_PIKACHU_FORMS
     [SPECIES_PIKACHU_COSPLAY]   =
     {
-        .baseHP        = 35,
-        .baseAttack    = 55,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,
+        .baseHP        = PARTNER_PIKACHU_HP,
+        .baseAttack    = PARTNER_PIKACHU_ATK,
+        .baseDefense   = PARTNER_PIKACHU_DEF,
+        .baseSpeed     = PARTNER_PIKACHU_SPEED,
+        .baseSpAttack  = PARTNER_PIKACHU_SPATK,
+        .baseSpDefense = PARTNER_PIKACHU_SPDEF,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 190,
         .expYield = PIKACHU_EXP_YIELD,
@@ -3145,7 +3152,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_CUTE_CHARM }, //made HA regular ability
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Pikachu"),
         .cryId = CRY_PIKACHU,
@@ -3177,16 +3184,18 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
+                                {EVO_ITEM, ITEM_SUN_STONE, SPECIES_RAICHU_ALOLA}),
     },
 
     [SPECIES_PIKACHU_ROCK_STAR] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 55,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,
+        .baseHP        = PARTNER_PIKACHU_HP,
+        .baseAttack    = PARTNER_PIKACHU_ATK,
+        .baseDefense   = PARTNER_PIKACHU_DEF,
+        .baseSpeed     = PARTNER_PIKACHU_SPEED,
+        .baseSpAttack  = PARTNER_PIKACHU_SPATK,
+        .baseSpDefense = PARTNER_PIKACHU_SPDEF,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_STEEL),
         .catchRate = 190,
         .expYield = PIKACHU_EXP_YIELD,
@@ -3197,7 +3206,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_PUNK_ROCK }, //made HA regular ability
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Pikachu"),
         .cryId = CRY_PIKACHU,
@@ -3229,16 +3238,18 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
+                                {EVO_NONE, SPECIES_RAICHU_ALOLA}),
     },
 
     [SPECIES_PIKACHU_BELLE] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 55,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,
+        .baseHP        = PARTNER_PIKACHU_HP,
+        .baseAttack    = PARTNER_PIKACHU_ATK,
+        .baseDefense   = PARTNER_PIKACHU_DEF,
+        .baseSpeed     = PARTNER_PIKACHU_SPEED,
+        .baseSpAttack  = PARTNER_PIKACHU_SPATK,
+        .baseSpDefense = PARTNER_PIKACHU_SPDEF,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_ICE),
         .catchRate = 190,
         .expYield = PIKACHU_EXP_YIELD,
@@ -3249,7 +3260,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_DAZZLING }, //made HA regular ability
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = TRUE,
         .speciesName = _("Pikachu"),
@@ -3282,16 +3293,18 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
+                                {EVO_NONE, SPECIES_RAICHU_ALOLA}),
     },
 
     [SPECIES_PIKACHU_POP_STAR] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 55,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,
+        .baseHP        = PARTNER_PIKACHU_HP,
+        .baseAttack    = PARTNER_PIKACHU_ATK,
+        .baseDefense   = PARTNER_PIKACHU_DEF,
+        .baseSpeed     = PARTNER_PIKACHU_SPEED,
+        .baseSpAttack  = PARTNER_PIKACHU_SPATK,
+        .baseSpDefense = PARTNER_PIKACHU_SPDEF,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FAIRY),
         .catchRate = 190,
         .expYield = PIKACHU_EXP_YIELD,
@@ -3302,7 +3315,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_FRIEND_GUARD }, //made HA regular ability
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = TRUE,
         .speciesName = _("Pikachu"),
@@ -3335,16 +3348,18 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
+                                {EVO_NONE, SPECIES_RAICHU_ALOLA}),
     },
 
     [SPECIES_PIKACHU_PHD] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 55,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,
+        .baseHP        = PARTNER_PIKACHU_HP,
+        .baseAttack    = PARTNER_PIKACHU_ATK,
+        .baseDefense   = PARTNER_PIKACHU_DEF,
+        .baseSpeed     = PARTNER_PIKACHU_SPEED,
+        .baseSpAttack  = PARTNER_PIKACHU_SPATK,
+        .baseSpDefense = PARTNER_PIKACHU_SPDEF,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_PSYCHIC),
         .catchRate = 190,
         .expYield = PIKACHU_EXP_YIELD,
@@ -3355,7 +3370,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_ELECTRIC_SURGE }, //made HA regular ability
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Pikachu"),
         .cryId = CRY_PIKACHU,
@@ -3387,16 +3402,18 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
+                                {EVO_NONE, SPECIES_RAICHU_ALOLA}),
     },
 
     [SPECIES_PIKACHU_LIBRE] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 55,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,
+        .baseHP        = PARTNER_PIKACHU_HP,
+        .baseAttack    = PARTNER_PIKACHU_ATK,
+        .baseDefense   = PARTNER_PIKACHU_DEF,
+        .baseSpeed     = PARTNER_PIKACHU_SPEED,
+        .baseSpAttack  = PARTNER_PIKACHU_SPATK,
+        .baseSpDefense = PARTNER_PIKACHU_SPDEF,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIGHTING),
         .catchRate = 190,
         .expYield = PIKACHU_EXP_YIELD,
@@ -3407,7 +3424,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_GUTS }, //made HA regular ability
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Pikachu"),
         .cryId = CRY_PIKACHU,
@@ -3439,19 +3456,21 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
+                                {EVO_NONE, SPECIES_RAICHU_ALOLA}),
     },
 
 #endif //P_COSPLAY_PIKACHU_FORMS
 
-#if P_CAP_PIKACHU_FORMS
+
     [SPECIES_PIKACHU_ORIGINAL] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 55,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,
+        .baseHP        = PARTNER_PIKACHU_HP * 2,
+        .baseAttack    = PARTNER_PIKACHU_ATK,
+        .baseDefense   = PARTNER_PIKACHU_DEF,
+        .baseSpeed     = PARTNER_PIKACHU_SPEED,
+        .baseSpAttack  = PARTNER_PIKACHU_SPATK,
+        .baseSpDefense = PARTNER_PIKACHU_SPDEF,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 190,
         .expYield = PIKACHU_EXP_YIELD,
@@ -3462,7 +3481,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_NONE }, //made HA regular ability
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = TRUE,
         .speciesName = _("Pikachu"),
@@ -3501,6 +3520,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
     },
 
+#if P_CAP_PIKACHU_FORMS
     [SPECIES_PIKACHU_HOENN] =
     {
         .baseHP        = 35,
