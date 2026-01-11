@@ -6472,18 +6472,60 @@ Level: 39
 - Bug Bite  
 
 
-=== TRAINER_JACE === /* Lavaridge Gym */
+=== TRAINER_JACE === /* Rustboro Gym */
 Name: JACE
-Class: Kindler
-Pic: Kindler
+Class: Backpacker
+Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Slugma
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Carbink @ Babiri Berry  
+Ability: Sturdy
+Tera Type: Rock  
+EVs: 252 HP  
+IVs: 0 Atk  / 0  Spe
+Level: 46
+- Trick Room  
+- Body Press  
+- Light Screen  
+- Iron Defense  
+
+Relicanth @ Custap Berry  
+Ability: Sturdy  
+Tera Type: Water 
+IVs: 0 Spe
+Level: 44
+Brave Nature 
+- Body Press  
+- Aqua Tail  
+- Head Smash  
+- Giga Impact  
+
+Corsola-Galar @ Eviolite  
+Ability: Cursed Body  
+Tera Type: Ghost  
+EVs: 252 HP / 128 SpA / 128 SpD  
+Sassy Nature  
+Level: 48
+IVs: 0 Atk / 0 Spe
+- Night Shade  
+- Strength Sap  
+- Will-O-Wisp  
+- Hex  
+
+Rampardos @ Assault Vest  
+Ability: Mold Breaker  
+Tera Type: Rock  
+Level: 44
+IVs: 0 Spe
+Brave Nature
+- Accelerock  
+- Head Smash  
+- Earthquake  
+- Supercell Slam  
+
 
 === TRAINER_KEEGAN === /* Lavaridge Gym */
 Name: KEEGAN
@@ -9754,36 +9796,108 @@ Level: 10
 Tera Type: Grass  
 
 
-=== TRAINER_JOSH === /* Route */
+=== TRAINER_JOSH === /* Rustboro Gym */
 Name: JOSH
-Class: Youngster
-Pic: Youngster
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
 Gender: Male
-Music: Male
+Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Geodude
-Level: 10
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+Sudowoodo  
+Ability: Rock Head  
+Tera Type: Rock  
+Level: 45
+- Wood Hammer  
+- Counter  
+- Drain Punch  
+- Head Smash  
 
-=== TRAINER_TOMMY === /* Route */
+Kleavor  
+Ability: Sharpness  
+Tera Type: Bug 
+Level: 45 
+- Stone Axe  
+- Mighty Cleave  
+- X-Scissor  
+- Night Slash  
+
+Drednaw @ Rindo Berry  
+Ability: Strong Jaw  
+Tera Type: Water  
+Level: 45
+- Ice Fang  
+- High Horsepower  
+- Waterfall  
+- Jaw Lock  
+
+Stunfisk-Galar  
+Ability: Mimicry  
+Tera Type: Ground  
+EVs: 252 HP / 252 SpA  
+Level: 44
+Modest Nature  
+IVs: 0 Atk  
+- Earth Power  
+- Flash Cannon  
+- Muddy Water  
+- Sludge Wave  
+
+
+=== TRAINER_TOMMY === /* Rustboro Gym */
 Name: TOMMY
-Class: Youngster
-Pic: Youngster
+Class: Ruin Maniac
+Pic: Ruin Maniac
 Gender: Male
-Music: Male
+Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Geodude
-Level: 8
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Bastiodon @ Shuca Berry
+Ability: Sturdy  
+Tera Type: Rock  
+EVs: 252 HP / 252 Atk  
+Level: 44
+Relaxed Nature  
+- Counter  
+- Body Press  
+- Heavy Slam  
+- Reflect  
+
+Conkeldurr @ Muscle Band
+Ability: Sheer Force  
+Tera Type: Fighting  
+EVs: 252 HP / 128 Atk / 128 SpD  
+Level: 44
+Adamant Nature  
+- Strength  
+- Rock Smash  
+- Wide Guard  
+- Bulk Up  
+
+Stonjourner @ Assault Vest  
+Ability: Power Spot  
+Tera Type: Rock  
+EVs: 252 HP / 252 SpD
+Level: 44
+Adamant Nature
+- Heavy Slam  
+- Heat Crash  
+- Body Press  
+- Rock Blast 
+
+Arcanine-Hisui @ Focus Sash  
+Ability: Rock Head  
+Tera Type: Fire  
+EVs: 252 Atk / 252 Spe
+Level: 44
+- Head Smash  
+- Flare Blitz  
+- Wild Charge  
+- Extreme Speed  
+
 
 === TRAINER_JOEY === /* Route 116 */ /* TO BE ADDED */
 Name: JOEY
@@ -17145,7 +17259,7 @@ Numel
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_MARC === /* Route */
+=== TRAINER_MARC === /* Rustboro Gym */
 Name: MARC
 Class: Hiker
 Pic: Hiker
@@ -17154,13 +17268,54 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Hippowdon  
+Ability: Sand Stream  
+Tera Type: Ground  
+EVs: 128 HP / 128 Atk / 124 Def / 128 SpD  
+Level: 46
+Impish Nature  
+- Slack Off  
+- High Horsepower  
+- Stealth Rock  
+- Body Press  
 
-Geodude
-Level: 8
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Wormadam-Sandy (F)  
+Ability: Overcoat  
+Tera Type: Bug  
+IVs: 0 Atk  
+Level: 46
+- Bug Buzz  
+- Quiver Dance  
+- Earth Power  
+- Psychic  
+
+Graveler-Alola @ Choice Band  
+Ability: Galvanize  
+Tera Type: Rock  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Level: 49
+Adamant Nature  
+- Explosion  
+
+Rhyperior @ Assault Vest  
+Ability: Solid Rock  
+Tera Type: Ground  
+Level: 46
+- High Horsepower  
+- Megahorn  
+- Supercell Slam  
+- Rock Climb  
+
+Gastrodon @ Rindo Berry  
+Ability: Storm Drain  
+Tera Type: Water  
+IVs: 0 Atk  
+Level: 46
+- Mud Bomb  
+- Muddy Water  
+- Recover  
+- Stealth Rock  
+
 
 === TRAINER_BRENDEN === /* Dewford Gym */
 Name: BRENDEN
@@ -18648,7 +18803,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gligar @ Yache Berry  
-Level: 48
+Level: 53
 Ability: Hyper Cutter  
 Tera Type: Ground  
 - Lunge  
@@ -18657,7 +18812,7 @@ Tera Type: Ground
 - Tailwind  
 
 Dunsparce @ Silver Powder  
-Level: 48
+Level: 53
 Ability: Rattled  
 Tera Type: Normal  
 - Lunge  
@@ -18666,7 +18821,7 @@ Tera Type: Normal
 - Glare  
 
 Yanma  @ Charti Berry
-Level: 48
+Level: 53
 Ability: Compound Eyes  
 Tera Type: Bug  
 EVs: 64 SpD / 252 Spe  
@@ -18677,7 +18832,7 @@ Naive Nature
 - Steel Wing  
 
 Spewpa  
-Level: 48
+Level: 55
 Ability: Friend Guard  
 Tera Type: Bug  
 - Protect  
@@ -18686,7 +18841,7 @@ Tera Type: Bug
 - Rage Powder  
 
 Vibrava @ Yache Berry  
-Level: 48
+Level: 53
 Ability: Levitate  
 Tera Type: Ground  
 - First Impression  
@@ -19581,22 +19736,59 @@ Tera Type: Steel
 - Metal Burst  
 
 
-=== TRAINER_DANIELLE === /* Lavaridge Gym */
+=== TRAINER_DANIELLE === /* Rustboro Gym */
 Name: DANIELLE
-Class: Battle Girl
-Pic: Battle Girl
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
 Gender: Female
-Music: Intense
+Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Meditite
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bide
-- Detect
-- Confusion
-- Fire Punch
+Shuckle @ Iapapa Berry  
+Ability: Sturdy  
+Tera Type: Bug  
+EVs: 252 HP / 128 Def / 128 SpD  
+Bold Nature  
+Level: 45
+IVs: 0 Atk  
+- Guard Split  
+- Encore  
+- Infestation  
+- Sticky Web  
+
+Lycanroc @ Assault Vest  
+Ability: Steadfast  
+Tera Type: Rock  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Level: 44
+Adamant Nature  
+- Accelerock  
+- Close Combat  
+- Play Rough  
+- Drill Run  
+
+Crustle @ White Herb  
+Ability: Weak Armor  
+Tera Type: Bug  
+EVs: 168 HP / 168 Atk / 168 Spe  
+Level: 44
+Adamant Nature  
+- Wide Guard  
+- Rock Slide  
+- Shell Smash  
+- Skitter Smack  
+
+Dugtrio-Alola @ Iapapa Berry
+Ability: Tangling Hair
+Tera Type: Ground  
+EVs: 252 HP / 128 Atk / 128 Spe
+Level: 44
+Jolly Nature
+- High Horsepower
+- Substitute
+- Iron Head
+- Swords Dance
 
 === TRAINER_HIDEO === /* Route 119 */
 Name: HIDEO

@@ -207,7 +207,7 @@
 #define TRAINER_COLE                        201
 #define TRAINER_JEFF                        202
 #define TRAINER_AXLE                        203
-#define TRAINER_JACE                        204 //was Lavaridge, can be repurposed available
+#define TRAINER_JACE                        204 //was Lavaridge Gym, now Rustboro Gym
 #define TRAINER_KEEGAN                      205
 #define TRAINER_BERNIE_1                    206
 #define TRAINER_BERNIE_2                    207
@@ -653,7 +653,7 @@
 #define TRAINER_JOHANNA                     647
 #define TRAINER_GERALD                      648
 #define TRAINER_VIVIAN                      649
-#define TRAINER_DANIELLE                    650 //was Lavaridge, can be repurposed available
+#define TRAINER_DANIELLE                    650 //was Lavaridge, now Rustboro
 #define TRAINER_HIDEO                       651
 #define TRAINER_KEIGO                       652
 #define TRAINER_RILEY                       653

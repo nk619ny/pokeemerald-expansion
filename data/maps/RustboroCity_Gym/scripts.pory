@@ -62,6 +62,16 @@ RustboroCity_Gym_EventScript_Marc::
 	msgbox RustboroCity_Gym_Text_MarcPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+RustboroCity_Gym_EventScript_Danielle::
+	trainerbattle_single TRAINER_DANIELLE, RustboroCity_Gym_Text_DanielleIntro, RustboroCity_Gym_Text_DanielleDefeat
+	msgbox RustboroCity_Gym_Text_DaniellePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RustboroCity_Gym_EventScript_Jace::
+	trainerbattle_single TRAINER_JACE, RustboroCity_Gym_Text_JaceIntro, RustboroCity_Gym_Text_JaceDefeat
+	msgbox RustboroCity_Gym_Text_JacePostBattle, MSGBOX_AUTOCLOSE
+	end
+
 RustboroCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
@@ -286,4 +296,28 @@ text RustboroCity_Gym_Text_StoneBadgeInfo {
 
 text RustboroCity_Gym_Text_TakeThis {
 	format("Please take this with you, too.")
+}
+
+text RustboroCity_Gym_Text_JaceIntro {
+	format("My Pokémon and I patrolled the mountains around Rustboro.\pRoxanne saw us and recruited us for her Gym!")
+}
+
+text RustboroCity_Gym_Text_JaceDefeat {
+	format("Maybe I should head back to the mountains…")
+}
+
+text RustboroCity_Gym_Text_JacePostBattle {
+	format("Roxanne trains us hard, so we can help her keep the Gym strong!")
+}
+
+text RustboroCity_Gym_Text_DanielleIntro {
+	format("People don't expert a young girl like Roxanne to be a Rock-type specialist.\pShe shows that anyone can have strength, grit, and determination!")
+}
+
+text RustboroCity_Gym_Text_DanielleDefeat {
+	format("I guess I still have a lot to learn about Rock-type Pokémon.")
+}
+
+text RustboroCity_Gym_Text_DaniellePostBattle {
+	format("Roxanne is my inspiration.\pI came to Rustboro to learn from her!")
 }
