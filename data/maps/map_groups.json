@@ -188,7 +188,8 @@
     "SlateportCity_FarmCorridor",
     "SlateportFarm",
     "SlateportBay",
-    "SlateportCity_FarmCorridor_B1F"
+    "SlateportCity_FarmCorridor_B1F",
+    "SlateportCity_ContestHall"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",

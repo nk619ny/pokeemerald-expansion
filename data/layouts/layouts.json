@@ -4660,6 +4660,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/PetalburgWoods2/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgWoods2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLATEPORT_CITY_CONTEST_HALL",
+      "name": "SlateportCity_ContestHall_Layout",
+      "width": 15,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/SlateportCity_ContestHall/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_ContestHall/map.bin"
     }
   ]
 }

@@ -1215,3 +1215,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TestMapIceCave/scripts.inc"
 
 	.include "data/maps/PetalburgWoods2/scripts.inc"
+
+	.include "data/maps/SlateportCity_ContestHall/scripts.inc"

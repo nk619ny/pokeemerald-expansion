@@ -288,7 +288,7 @@
 #define FLAG_RECEIVED_TM_BULLET_SEED         0x106
 #define FLAG_ENTERED_ELITE_FOUR              0x107
 #define FLAG_RECEIVED_TM_HIDDEN_POWER        0x108
-#define FLAG_RECEIVED_TM_TORMENT             0x109 // now unused and available for repurposing
+#define FLAG_RECEIVED_COSPLAY_PIKACHU             0x109 // now unused and available for repurposing
 #define FLAG_RECEIVED_EVIOLITE               0x10A // repurposed from Lavaridge Egg
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10C

@@ -1,0 +1,157 @@
+raw `
+SlateportCity_ContestHall_MapScripts::
+	.byte 0
+
+
+SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToParty::
+	setflag FLAG_RECEIVED_COSPLAY_PIKACHU
+    call Route119_WeatherInstitute_2F_EventScript_ReceivedCastformFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu
+	end
+
+SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToPC::
+	setflag FLAG_RECEIVED_COSPLAY_PIKACHU
+	call Route119_WeatherInstitute_2F_EventScript_ReceivedCastformFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToPCFinish
+	call Common_EventScript_NameReceivedBoxMon
+	goto SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToPCFinish
+	end
+
+SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToPCFinish::
+	call Common_EventScript_TransferredToPC
+	goto SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu
+	end
+
+`
+
+const TempFlag_MetLisia = FLAG_TEMP_1
+const TempFlag_ExplainCosplayPikachu = FLAG_TEMP_2
+
+script SlateportCity_ContestHall_EventScript_ContestHallReceptionist {
+    lock
+    msgbox(format("Welcome to the Contest Hall!\pUnfortunately, we are currently not accepting new contestants at this location."), MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script SlateportCity_ContestHall_EventScript_ContestHallArtist {
+    lock
+    msgbox(format("Hm?\N{PLAYER}, you said?\pSorry, I don't have you on the list."), MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script SlateportCity_ContestHall_EventScript_Lisia {
+    lock
+    faceplayer
+    goto_if_set(FLAG_RECEIVED_COSPLAY_PIKACHU, SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu)
+    goto_if_set(TempFlag_MetLisia, SlateportCity_ContestHall_EventScript_Lisia_TryGiftAgain)
+    goto_if_defeated(TRAINER_HILL_1, SlateportCity_ContestHall_EventScript_Lisia_SecondMeeting)
+    goto_if_not_defeated(TRAINER_HILL_1, SlateportCity_ContestHall_EventScript_Lisia_FirstMeeting)
+    releaseall
+    end
+}
+
+script SlateportCity_ContestHall_EventScript_Lisia_TryGiftAgain {
+    lock
+    faceplayer
+    msgbox(format("Lisia: I hope you've made room for this special Pikachu!"), MSGBOX_DEFAULT)
+    closemessage
+	givemon(SPECIES_PIKACHU_COSPLAY, 20)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PARTY, SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToParty)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PC, SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToParty)
+	goto(Common_EventScript_NoMoreRoomForPokemon)
+    releaseall
+	end
+}
+
+script SlateportCity_ContestHall_EventScript_Lisia_FirstMeeting {
+    lock
+    faceplayer
+    setflag(TempFlag_MetLisia)
+    msgbox(format("Oh, hi, another fan!\NOh, you're not?\pMy name's Lisia, and I'm the Hoenn Contest Champion!\pI'm giving out autographs, but if you aren't a contest fan, you probably won't want one...\pI know! As a Pokémon trainer, I bet you'll appreciate this special Pikachu."), MSGBOX_DEFAULT)    
+    closemessage
+	givemon(SPECIES_PIKACHU_COSPLAY, 20)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PARTY, SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToParty)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PC, SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToParty)
+	goto(Common_EventScript_NoMoreRoomForPokemon)
+    releaseall
+	end
+}
+
+script SlateportCity_ContestHall_EventScript_Lisia_SecondMeeting {
+    lock
+    faceplayer
+    setflag(TempFlag_MetLisia)
+    msgbox(format("Lisia: Oh, it's you again!\pI may not be the best battler, but I just won another contest here in Slateport.\pI actually have a Pikachu that I trained for contests, but seems more interested in battling.\pYou two would be a great match!"), MSGBOX_DEFAULT)
+    closemessage
+	givemon(SPECIES_PIKACHU_COSPLAY, 20)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PARTY, SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToParty)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PC, SlateportCity_ContestHall_EventScript_CosplayPikachuAddedToParty)
+	goto(Common_EventScript_NoMoreRoomForPokemon)
+    releaseall
+    end
+}
+
+script SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu {
+    lock
+    faceplayer
+    msgbox(format("Lisia: That Pikachu can wear several different outfits.\pIt is such a cosplay prodigy, it can actually gain a new move and typing when in costume!"), MSGBOX_DEFAULT)
+    closemessage
+    releaseall
+    end
+}
+
+script SlateportCity_ContestHall_EventScript_Fan1 {
+    lock
+    faceplayer
+    msgbox(format("I'm Lisia's biggest fan!"), MSGBOX_DEFAULT)
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script SlateportCity_ContestHall_EventScript_Fan2 {
+    lock
+    faceplayer
+    msgbox(format("Lisia and her Altaria are so cool!"), MSGBOX_DEFAULT)
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script SlateportCity_ContestHall_EventScript_Fan3 {
+    lock
+    faceplayer
+    msgbox(format("Don't tell anyone, but I don't even know the rules to Pokémon contests."), MSGBOX_DEFAULT)
+    closemessage
+    applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script SlateportCity_ContestHall_EventScript_Encore {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_ENCORE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("As a judge, sometimes I am so blown away, I want an immediate repeat performance.\pWith this TM, you can always ensure you see the same move again!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_ENCORE)
+		waitfanfare
+	}
+	msgbox(format("The Encore is often better than the first performance!"), MSGBOX_DEFAULT)
+    closemessage
+	releaseall
+	end
+}

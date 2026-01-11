@@ -2411,9 +2411,9 @@ SlateportCity_Text_PleaseComeWithMe:
 # 1206 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_Text_BattleTentSign:
 # 1207 "data/maps/SlateportCity/scripts.pory"
-	.string "BATTLE TENT SLATEPORT SITE\n"
+	.string "SLATEPORT CITY CONTEST HALL\n"
 # 1208 "data/maps/SlateportCity/scripts.pory"
-	.string "“Find it! The ultimate POKéMON!”$"
+	.string "Not accepting new entrants.$"
 # 1209 "data/maps/SlateportCity/scripts.pory"
 
 # 1210 "data/maps/SlateportCity/scripts.pory"
