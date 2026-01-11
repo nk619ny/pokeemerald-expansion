@@ -127,7 +127,7 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 # 64 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "But all I have seen are challenges by\n"
 # 65 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "weak TRAINERS and their POKéMON.\p"
+	.string "weak TRAINERS and their Pokémon.\p"
 # 66 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "What about you?\p"
 # 67 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
@@ -139,7 +139,7 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 # 70 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 EverGrandeCity_GlaciasRoom_Text_Defeat:
 # 71 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "You and your POKéMON…\n"
+	.string "You and your Pokémon…\n"
 # 72 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "How hot your spirits burn!\p"
 # 73 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
@@ -157,7 +157,7 @@ EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
 # 79 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 	.string "And there, confirm the truly fearsome\n"
 # 80 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
-	.string "side of the POKéMON LEAGUE.$"
+	.string "side of the Pokémon LEAGUE.$"
 # 81 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"
 */
 # 82 "data/maps/EverGrandeCity_GlaciasRoom/scripts.pory"

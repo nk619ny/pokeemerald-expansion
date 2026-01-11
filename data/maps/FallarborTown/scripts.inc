@@ -157,7 +157,7 @@ FallarborTown_Text_HaveYouChallengedFlannery:
 # 79 "data/maps/FallarborTown/scripts.pory"
 	.string "He was one of the ELITE FOUR in the\l"
 # 80 "data/maps/FallarborTown/scripts.pory"
-	.string "POKéMON LEAGUE at one point.\p"
+	.string "Pokémon LEAGUE at one point.\p"
 # 81 "data/maps/FallarborTown/scripts.pory"
 	.string "It wouldn't surprise me to see FLANNERY\n"
 # 82 "data/maps/FallarborTown/scripts.pory"

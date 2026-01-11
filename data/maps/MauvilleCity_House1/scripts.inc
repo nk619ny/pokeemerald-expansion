@@ -55,7 +55,7 @@ MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 # 28 "data/maps/MauvilleCity_House1/scripts.pory"
 	.string "Woohoo!\p"
 # 29 "data/maps/MauvilleCity_House1/scripts.pory"
-	.string "Anyways, your POKéMON look pretty\n"
+	.string "Anyways, your Pokémon look pretty\n"
 # 30 "data/maps/MauvilleCity_House1/scripts.pory"
 	.string "strong.\p"
 # 31 "data/maps/MauvilleCity_House1/scripts.pory"
@@ -85,7 +85,7 @@ MauvilleCity_House1_Text_ExplainRockSmash:
 # 43 "data/maps/MauvilleCity_House1/scripts.pory"
 MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
 # 44 "data/maps/MauvilleCity_House1/scripts.pory"
-	.string "Oh, yes, if you smash a rock, a POKéMON\n"
+	.string "Oh, yes, if you smash a rock, a Pokémon\n"
 # 45 "data/maps/MauvilleCity_House1/scripts.pory"
 	.string "could come flying out of hiding.\p"
 # 46 "data/maps/MauvilleCity_House1/scripts.pory"

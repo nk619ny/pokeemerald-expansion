@@ -995,7 +995,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Mon1::
 # 498 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Listen, listen! You have to hear about\n"
 # 499 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "the POKéMON {STR_VAR_3} recommended.\l"
+	.string "the Pokémon {STR_VAR_3} recommended.\l"
 # 500 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "One {STR_VAR_2} with {STR_VAR_1} and$"
 # 501 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -1219,7 +1219,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Accept::
 # 610 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Yippee!\n"
 # 611 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "I'll give you a POKéMON as my thanks!\p"
+	.string "I'll give you a Pokémon as my thanks!\p"
 # 612 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Just joking! But I will really go do\n"
 # 613 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -1241,7 +1241,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Intro::
 # 621 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Hey, there, I'm rockin' and a-rollin'!\n"
 # 622 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "POKéMON, I be controllin'!\p"
+	.string "Pokémon, I be controllin'!\p"
 # 623 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "I'm {STR_VAR_3} the rappin' SAILOR.\n"
 # 624 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -1353,7 +1353,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Intro::
 # 677 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Oh, sorry, I have a cold.\n"
 # 678 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "My POKéMON are fine, though.\p"
+	.string "My Pokémon are fine, though.\p"
 # 679 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "My name's {STR_VAR_3}, {STR_VAR_1}'s\n"
 # 680 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -1583,7 +1583,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject::
 # 792 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Aww! If you'd form a tag team with\n"
 # 793 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "my POKéMON, we'd be unstoppable!$"
+	.string "my Pokémon, we'd be unstoppable!$"
 # 794 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 
 # 795 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -1839,7 +1839,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherAccept::
 # 920 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherReject::
 # 921 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "Aww, my POKéMON are awesome.\n"
+	.string "Aww, my Pokémon are awesome.\n"
 # 922 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "I hope you won't regret this!$"
 # 923 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2063,7 +2063,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMIntro::
 # 1032 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "How do you do? I'm {STR_VAR_1},\n"
 # 1033 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "and I'm a POKéMON BREEDER!$"
+	.string "and I'm a Pokémon BREEDER!$"
 # 1034 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 
 # 1035 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2311,7 +2311,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMAccept::
 # 1156 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMReject::
 # 1157 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "My POKéMON are tough for sure…\n"
+	.string "My Pokémon are tough for sure…\n"
 # 1158 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "It's too bad you don't want to team up.$"
 # 1159 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2353,7 +2353,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristAccept::
 # 1177 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristReject::
 # 1178 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "My POKéMON rock hard!\n"
+	.string "My Pokémon rock hard!\n"
 # 1179 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "You'll be sorry, I tell you!$"
 # 1180 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2439,7 +2439,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMAccept::
 # 1220 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMReject::
 # 1221 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "My POKéMON are top grade…\n"
+	.string "My Pokémon are top grade…\n"
 # 1222 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "It's too bad you can't appreciate that.$"
 # 1223 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2455,7 +2455,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMIntro::
 # 1228 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMMon1::
 # 1229 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "The POKéMON that I've toughened up are\n"
+	.string "The Pokémon that I've toughened up are\n"
 # 1230 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "one {STR_VAR_2} with {STR_VAR_1} and$"
 # 1231 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2497,7 +2497,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFIntro::
 # 1249 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFMon1::
 # 1250 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "I've raised my POKéMON thoroughly.\n"
+	.string "I've raised my Pokémon thoroughly.\n"
 # 1251 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "One {STR_VAR_2} with {STR_VAR_1} and$"
 # 1252 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2577,7 +2577,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperIntro::
 # 1289 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperMon1::
 # 1290 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "What POKéMON do I have?\n"
+	.string "What Pokémon do I have?\n"
 # 1291 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "One {STR_VAR_2} with {STR_VAR_1} and$"
 # 1292 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2603,7 +2603,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperAccept::
 # 1302 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperReject::
 # 1303 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "My POKéMON and I are strong.\n"
+	.string "My Pokémon and I are strong.\n"
 # 1304 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "What a letdown.$"
 # 1305 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2617,7 +2617,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyIntro::
 # 1309 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyMon1::
 # 1310 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "My POKéMON team consists of one\n"
+	.string "My Pokémon team consists of one\n"
 # 1311 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "{STR_VAR_2} with {STR_VAR_1} and$"
 # 1312 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2643,7 +2643,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyReject::
 # 1322 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "You'll regret not having my tough\n"
 # 1323 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "POKéMON on your side!$"
+	.string "Pokémon on your side!$"
 # 1324 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 
 # 1325 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2687,7 +2687,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyAccept::
 # 1344 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyReject::
 # 1345 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "My POKéMON are tremendously strong.\n"
+	.string "My Pokémon are tremendously strong.\n"
 # 1346 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "How disappointing…$"
 # 1347 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2703,7 +2703,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacIntro::
 # 1352 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacMon1::
 # 1353 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "I have found my POKéMON, yes.\n"
+	.string "I have found my Pokémon, yes.\n"
 # 1354 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "One {STR_VAR_2} with {STR_VAR_1} and$"
 # 1355 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2733,7 +2733,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacAccept::
 # 1367 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacReject::
 # 1368 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "With the POKéMON I found, we wouldn't\n"
+	.string "With the Pokémon I found, we wouldn't\n"
 # 1369 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "have lost…$"
 # 1370 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2821,7 +2821,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorReject::
 # 1411 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Well, that's upsetting.\n"
 # 1412 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "You don't appreciate my POKéMON.$"
+	.string "You don't appreciate my Pokémon.$"
 # 1413 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 
 # 1414 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2829,7 +2829,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMIntro::
 # 1415 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Howdy, I'm {STR_VAR_1}.\n"
 # 1416 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "I'm a POKéMON RANGER.$"
+	.string "I'm a Pokémon RANGER.$"
 # 1417 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 
 # 1418 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2861,7 +2861,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMAccept::
 # 1431 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMReject::
 # 1432 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "Next time, choose my POKéMON,\n"
+	.string "Next time, choose my Pokémon,\n"
 # 1433 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "will you?$"
 # 1434 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2871,7 +2871,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFIntro::
 # 1436 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "My name's {STR_VAR_1}.\n"
 # 1437 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "I'm a POKéMON RANGER!$"
+	.string "I'm a Pokémon RANGER!$"
 # 1438 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 
 # 1439 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2903,7 +2903,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFAccept::
 # 1452 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFReject::
 # 1453 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "I hope you'll choose my POKéMON\n"
+	.string "I hope you'll choose my Pokémon\n"
 # 1454 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "next time.$"
 # 1455 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2963,7 +2963,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacIntro::
 # 1482 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacMon1::
 # 1483 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "The POKéMON that I have with me are\n"
+	.string "The Pokémon that I have with me are\n"
 # 1484 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "one {STR_VAR_2} with {STR_VAR_1} and$"
 # 1485 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -2991,7 +2991,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacReject::
 # 1496 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Hmm…\n"
 # 1497 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "I think my POKéMON are tough…$"
+	.string "I think my Pokémon are tough…$"
 # 1498 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 
 # 1499 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -3003,7 +3003,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMIntro::
 # 1502 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMMon1::
 # 1503 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "The POKéMON I have right now are one\n"
+	.string "The Pokémon I have right now are one\n"
 # 1504 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "{STR_VAR_2} with {STR_VAR_1} and$"
 # 1505 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -3115,7 +3115,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacAccept::
 # 1558 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacReject::
 # 1559 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "My POKéMON are brutal!\n"
+	.string "My Pokémon are brutal!\n"
 # 1560 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "It's not my fault if you regret this!$"
 # 1561 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -3213,7 +3213,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerIntro::
 # 1607 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerMon1::
 # 1608 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "The POKéMON I've been taking are\n"
+	.string "The Pokémon I've been taking are\n"
 # 1609 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "one {STR_VAR_2} with {STR_VAR_1} and$"
 # 1610 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -3343,7 +3343,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFMon2Ask::
 # 1672 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "and one {STR_VAR_1}-using\n"
 # 1673 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "{STR_VAR_2} are my POKéMON pair.\p"
+	.string "{STR_VAR_2} are my Pokémon pair.\p"
 # 1674 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "May I please be your partner on\n"
 # 1675 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -3371,13 +3371,13 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFIntro::
 # 1686 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "Hiya! The name's {STR_VAR_1}!\n"
 # 1687 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "I'm a POKéMON BREEDER!$"
+	.string "I'm a Pokémon BREEDER!$"
 # 1688 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 
 # 1689 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFMon1::
 # 1690 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "The POKéMON I've raised are one\n"
+	.string "The Pokémon I've raised are one\n"
 # 1691 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "{STR_VAR_1}-using {STR_VAR_2} and$"
 # 1692 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -3419,7 +3419,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFIntro::
 # 1710 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFMon1::
 # 1711 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "The darling POKéMON I've raised are\n"
+	.string "The darling Pokémon I've raised are\n"
 # 1712 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "one {STR_VAR_2} with {STR_VAR_1} and$"
 # 1713 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -3445,7 +3445,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFAccept::
 # 1723 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFReject::
 # 1724 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "My darling POKéMON are the best,\n"
+	.string "My darling Pokémon are the best,\n"
 # 1725 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "I'll have you know. How annoying!$"
 # 1726 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
@@ -3499,7 +3499,7 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMIntro::
 # 1750 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon1::
 # 1751 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
-	.string "I got a couple decent POKéMON.\n"
+	.string "I got a couple decent Pokémon.\n"
 # 1752 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"
 	.string "One {STR_VAR_2} with {STR_VAR_1} and$"
 # 1753 "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.pory"

@@ -269,7 +269,7 @@ Route115_Text_NeverKnowWhenCavePokemonWillAppear:
 # 135 "data/maps/Route115/scripts.pory"
 	.string "on a road.\p"
 # 136 "data/maps/Route115/scripts.pory"
-	.string "You never know when wild POKéMON will\n"
+	.string "You never know when wild Pokémon will\n"
 # 137 "data/maps/Route115/scripts.pory"
 	.string "appear. It's full of suspense.$"
 # 138 "data/maps/Route115/scripts.pory"

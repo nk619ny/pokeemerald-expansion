@@ -189,7 +189,7 @@ PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
 # 95 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 //	.string "When WALLY left town, you helped\n"
 # 96 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-//	.string "him catch a POKéMON, right?\p"
+//	.string "him catch a Pokémon, right?\p"
 # 97 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 //	.string "I think that made WALLY really\n"
 # 98 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -211,7 +211,7 @@ PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
 # 106 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces:
 # 107 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	.string "If your POKéMON can SURF, you'll be\n"
+	.string "If your Pokémon can SURF, you'll be\n"
 # 108 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	.string "able to go to all sorts of places.$"
 # 109 "data/maps/PetalburgCity_WallysHouse/scripts.pory"

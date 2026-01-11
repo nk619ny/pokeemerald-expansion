@@ -88,7 +88,7 @@ text FallarborTown_MoveRelearnersHouse_Text_HeartStoneExplained{
 }
 
 text FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor {
-	format("I'm the MOVE TUTOR.\pI know all the moves that POKéMON learn--every one of them--and I can teach POKéMON those moves.\pI can teach a move to a POKéMON of yours if you'd like.\pI'll do it for a HEART SCALE. I'm collecting those now.")
+	format("I'm the MOVE TUTOR.\pI know all the moves that Pokémon learn--every one of them--and I can teach Pokémon those moves.\pI can teach a move to a Pokémon of yours if you'd like.\pI'll do it for a HEART SCALE. I'm collecting those now.")
 }
 
 text FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove {
@@ -96,7 +96,7 @@ text FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove {
 }
 
 text FallarborTown_MoveRelearnersHouse_Text_TutorWhichMon {
-	format("Which POKéMON needs tutoring?")
+	format("Which Pokémon needs tutoring?")
 }
 
 text FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove {
@@ -104,7 +104,7 @@ text FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove {
 }
 
 text FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon {
-	format("Sorry…\pIt doesn't appear as if I have any move I can teach that POKéMON.")
+	format("Sorry…\pIt doesn't appear as if I have any move I can teach that Pokémon.")
 }
 
 text FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale {
@@ -112,7 +112,7 @@ text FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale {
 }
 
 text FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale {
-	format("If your POKéMON need to learn a move, come back with a HEART SCALE.")
+	format("If your Pokémon need to learn a move, come back with a HEART SCALE.")
 }
 
 text FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg {

@@ -15,5 +15,5 @@ script RustboroCity_CuttersHouse_EventScript_Cutter {
 }
 
 text RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees {
-	format("When they were expanding the city of RUSTBORO, my dad helped out.\pHe made his POKéMON use CUT to clear the land of trees.")
+	format("When they were expanding the city of RUSTBORO, my dad helped out.\pHe made his Pokémon use CUT to clear the land of trees.")
 }

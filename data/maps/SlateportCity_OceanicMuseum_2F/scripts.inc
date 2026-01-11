@@ -661,7 +661,7 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 # 331 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	.string "… … … … … …\p"
 # 332 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	.string "POKéMON, people… All life depends on\n"
+	.string "Pokémon, people… All life depends on\n"
 # 333 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	.string "the sea.\p"
 # 334 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"

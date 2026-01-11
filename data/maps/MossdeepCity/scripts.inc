@@ -749,7 +749,7 @@ MossdeepCity_Text_SurfExhilarating:
 # 375 "data/maps/MossdeepCity/scripts.pory"
 	.string "A voyage on a ship is fine.\p"
 # 376 "data/maps/MossdeepCity/scripts.pory"
-	.string "But crossing the sea with POKéMON\n"
+	.string "But crossing the sea with Pokémon\n"
 # 377 "data/maps/MossdeepCity/scripts.pory"
 	.string "using SURF…\p"
 # 378 "data/maps/MossdeepCity/scripts.pory"
@@ -799,7 +799,7 @@ MossdeepCity_Text_CitySign:
 # 400 "data/maps/MossdeepCity/scripts.pory"
 	.string "MOSSDEEP CITY\n"
 # 401 "data/maps/MossdeepCity/scripts.pory"
-	.string "“Our slogan: Cherish POKéMON!”$"
+	.string "“Our slogan: Cherish Pokémon!”$"
 # 402 "data/maps/MossdeepCity/scripts.pory"
 
 # 403 "data/maps/MossdeepCity/scripts.pory"

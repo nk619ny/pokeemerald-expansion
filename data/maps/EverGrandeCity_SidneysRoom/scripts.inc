@@ -143,7 +143,7 @@ EverGrandeCity_SidneysRoom_Text_IntroSpeech:
 # 72 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 	.string "a battle that can only be staged\l"
 # 73 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "here in the POKéMON LEAGUE!$"
+	.string "here in the Pokémon LEAGUE!$"
 # 74 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
 
 # 75 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"

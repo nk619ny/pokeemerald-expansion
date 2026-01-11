@@ -539,7 +539,7 @@ DewfordTown_Hall_Text_GettingBoredOfTrend:
 # 270 "data/maps/DewfordTown_Hall/scripts.pory"
 DewfordTown_Hall_Text_TeachingMonAboutTrend:
 # 271 "data/maps/DewfordTown_Hall/scripts.pory"
-	.string "I'm teaching my POKéMON about\n"
+	.string "I'm teaching my Pokémon about\n"
 # 272 "data/maps/DewfordTown_Hall/scripts.pory"
 	.string "“{STR_VAR_1},”\l"
 # 273 "data/maps/DewfordTown_Hall/scripts.pory"
@@ -873,7 +873,7 @@ DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
 # 437 "data/maps/DewfordTown_Hall/scripts.pory"
 	.string "I love SLUDGE BOMB.\p"
 # 438 "data/maps/DewfordTown_Hall/scripts.pory"
-	.string "But POKéMON with the move\n"
+	.string "But Pokémon with the move\n"
 # 439 "data/maps/DewfordTown_Hall/scripts.pory"
 	.string "“{STR_VAR_1}”\l"
 # 440 "data/maps/DewfordTown_Hall/scripts.pory"

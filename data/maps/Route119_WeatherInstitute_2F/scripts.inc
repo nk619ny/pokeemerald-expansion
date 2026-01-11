@@ -433,7 +433,7 @@ Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
 # 217 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
 # 218 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	.string "Oh, will you look at my POKéMON?$"
+	.string "Oh, will you look at my Pokémon?$"
 # 219 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 
 # 220 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -467,7 +467,7 @@ Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
 # 234 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "It might be an odd way of thanking you,\n"
 # 235 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	.string "but take this POKéMON and TM.$"
+	.string "but take this Pokémon and TM.$"
 # 236 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 
 # 237 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -477,7 +477,7 @@ Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:
 # 239 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "Hm? You don't seem to have any room\n"
 # 240 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	.string "for this POKéMON.$"
+	.string "for this Pokémon.$"
 # 241 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 
 # 242 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -489,7 +489,7 @@ Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
 # 245 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
 # 246 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	.string "That POKéMON changes shape according\n"
+	.string "That Pokémon changes shape according\n"
 # 247 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "to the weather conditions.\p"
 # 248 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"

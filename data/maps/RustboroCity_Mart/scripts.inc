@@ -151,7 +151,7 @@ RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish:
 # 76 "data/maps/RustboroCity_Mart/scripts.pory"
 RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead:
 # 77 "data/maps/RustboroCity_Mart/scripts.pory"
-	.string "My POKéMON evolved.\n"
+	.string "My Pokémon evolved.\n"
 # 78 "data/maps/RustboroCity_Mart/scripts.pory"
 	.string "It has a lot of HP now.\p"
 # 79 "data/maps/RustboroCity_Mart/scripts.pory"

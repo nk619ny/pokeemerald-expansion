@@ -99,7 +99,7 @@ BattleFrontier_Lounge6_EventScript_TradeCompleted::
 # 50 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 BattleFrontier_Lounge6_Text_WouldYouLikeToTrade:
 # 51 "data/maps/BattleFrontier_Lounge6/scripts.pory"
-	.string "My POKéMON is a {STR_VAR_2}.\n"
+	.string "My Pokémon is a {STR_VAR_2}.\n"
 # 52 "data/maps/BattleFrontier_Lounge6/scripts.pory"
 	.string "Do you know it?\l"
 # 53 "data/maps/BattleFrontier_Lounge6/scripts.pory"

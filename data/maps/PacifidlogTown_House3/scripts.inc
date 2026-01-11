@@ -175,6 +175,6 @@ PacifidlogTown_House3_Text_IsThatAPokedex:
 # 88 "data/maps/PacifidlogTown_House3/scripts.pory"
 	.string "Did you get to meet a lot of different\n"
 # 89 "data/maps/PacifidlogTown_House3/scripts.pory"
-	.string "POKéMON?\p"
+	.string "Pokémon?\p"
 # 90 "data/maps/PacifidlogTown_House3/scripts.pory"
 	.string "I wish I was like you.$"

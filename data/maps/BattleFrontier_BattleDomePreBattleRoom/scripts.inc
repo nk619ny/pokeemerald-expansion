@@ -579,7 +579,7 @@ BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForFinals:
 # 290 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
 BattleFrontier_BattleDomePreBattleRoom_Text_ChooseTwoMons:
 # 291 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
-	.string "Please choose the two POKéMON\n"
+	.string "Please choose the two Pokémon\n"
 # 292 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
 	.string "that are to appear in battle.$"
 # 293 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
@@ -595,7 +595,7 @@ BattleFrontier_BattleDomePreBattleRoom_Text_RestoreMonsToFullHealth:
 # 298 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
 	.string "Thank you for competing!\p"
 # 299 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
-	.string "I'll restore your POKéMON to\n"
+	.string "I'll restore your Pokémon to\n"
 # 300 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
 	.string "full health.$"
 # 301 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"

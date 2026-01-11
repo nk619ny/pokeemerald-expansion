@@ -107,7 +107,7 @@ RustboroCity_House1_EventScript_Hiker::
 # 54 "data/maps/RustboroCity_House1/scripts.pory"
 RustboroCity_House1_Text_IllTradeIfYouWant:
 # 55 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Huh? My POKéMON is cute?\n"
+	.string "Huh? My Pokémon is cute?\n"
 # 56 "data/maps/RustboroCity_House1/scripts.pory"
 	.string "Sure, I knew that.\p"
 # 57 "data/maps/RustboroCity_House1/scripts.pory"
@@ -125,7 +125,7 @@ RustboroCity_House1_Text_PleaseBeGoodToMyPokemon:
 # 63 "data/maps/RustboroCity_House1/scripts.pory"
 	.string "Eheheh…\n"
 # 64 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Please be good to my POKéMON.$"
+	.string "Please be good to my Pokémon.$"
 # 65 "data/maps/RustboroCity_House1/scripts.pory"
 
 # 66 "data/maps/RustboroCity_House1/scripts.pory"
@@ -141,13 +141,13 @@ RustboroCity_House1_Text_YouDontWantToThatsOkay:
 # 71 "data/maps/RustboroCity_House1/scripts.pory"
 	.string "Oh, if you don't want to, that's okay.\n"
 # 72 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "But my POKéMON is cute, you know…$"
+	.string "But my Pokémon is cute, you know…$"
 # 73 "data/maps/RustboroCity_House1/scripts.pory"
 
 # 74 "data/maps/RustboroCity_House1/scripts.pory"
 RustboroCity_House1_Text_AnyPokemonCanBeCute:
 # 75 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Any POKéMON can be cute if you raise\n"
+	.string "Any Pokémon can be cute if you raise\n"
 # 76 "data/maps/RustboroCity_House1/scripts.pory"
 	.string "it with care and kindness.$"
 # 77 "data/maps/RustboroCity_House1/scripts.pory"
@@ -157,7 +157,7 @@ RustboroCity_House1_Text_AllSortsOfPlaces:
 # 79 "data/maps/RustboroCity_House1/scripts.pory"
 	.string "In all sorts of places, there are all\n"
 # 80 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "sorts of POKéMON and people.\p"
+	.string "sorts of Pokémon and people.\p"
 # 81 "data/maps/RustboroCity_House1/scripts.pory"
 	.string "I find that fascinating, so I go to all\n"
 # 82 "data/maps/RustboroCity_House1/scripts.pory"

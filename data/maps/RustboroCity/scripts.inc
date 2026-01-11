@@ -2115,7 +2115,7 @@ RustboroCity_Text_SneakyLookingManWentAroundCorner:
 # 1058 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_HaveYouChallengedGym:
 # 1059 "data/maps/RustboroCity/scripts.pory"
-	.string "Have you taken the POKéMON GYM\n"
+	.string "Have you taken the Pokémon GYM\n"
 # 1060 "data/maps/RustboroCity/scripts.pory"
 	.string "challenge?\p"
 # 1061 "data/maps/RustboroCity/scripts.pory"
@@ -2131,7 +2131,7 @@ RustboroCity_Text_HeyThatsRustborosGymBadge:
 # 1066 "data/maps/RustboroCity/scripts.pory"
 	.string "Hey, that's RUSTBORO's GYM BADGE!\p"
 # 1067 "data/maps/RustboroCity/scripts.pory"
-	.string "Out of all the POKéMON GYM BADGES,\n"
+	.string "Out of all the Pokémon GYM BADGES,\n"
 # 1068 "data/maps/RustboroCity/scripts.pory"
 	.string "RUSTBORO's is the coolest, I'd say.$"
 # 1069 "data/maps/RustboroCity/scripts.pory"
@@ -2145,7 +2145,7 @@ RustboroCity_Text_YoureNewAroundHere:
 # 1073 "data/maps/RustboroCity/scripts.pory"
 	.string "Have you just transferred into the\n"
 # 1074 "data/maps/RustboroCity/scripts.pory"
-	.string "POKéMON TRAINER'S SCHOOL?$"
+	.string "Pokémon TRAINER'S SCHOOL?$"
 # 1075 "data/maps/RustboroCity/scripts.pory"
 
 # 1076 "data/maps/RustboroCity/scripts.pory"
@@ -2155,11 +2155,11 @@ RustboroCity_Text_GymLeaderIsntEasyWithFire:
 # 1078 "data/maps/RustboroCity/scripts.pory"
 	.string "It's not going to be easy winning with\n"
 # 1079 "data/maps/RustboroCity/scripts.pory"
-	.string "my FIRE-type POKéMON…\p"
+	.string "my FIRE-type Pokémon…\p"
 # 1080 "data/maps/RustboroCity/scripts.pory"
-	.string "FIRE-type POKéMON don't match up\n"
+	.string "FIRE-type Pokémon don't match up\n"
 # 1081 "data/maps/RustboroCity/scripts.pory"
-	.string "well against ROCK-type POKéMON…$"
+	.string "well against ROCK-type Pokémon…$"
 # 1082 "data/maps/RustboroCity/scripts.pory"
 
 # 1083 "data/maps/RustboroCity/scripts.pory"
@@ -2193,27 +2193,27 @@ RustboroCity_Text_MrBrineyLovesPeeko:
 # 1097 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_WowYouHavePokemon:
 # 1098 "data/maps/RustboroCity/scripts.pory"
-	.string "Wow, you have POKéMON with you, too.\p"
+	.string "Wow, you have Pokémon with you, too.\p"
 # 1099 "data/maps/RustboroCity/scripts.pory"
 	.string "When I get bigger, I'm going to go\n"
 # 1100 "data/maps/RustboroCity/scripts.pory"
-	.string "places with POKéMON, too.$"
+	.string "places with Pokémon, too.$"
 # 1101 "data/maps/RustboroCity/scripts.pory"
 
 # 1102 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_CatchRarePokemonIfIGoToSchool:
 # 1103 "data/maps/RustboroCity/scripts.pory"
-	.string "POKéMON TRAINER'S SCHOOL!\p"
+	.string "Pokémon TRAINER'S SCHOOL!\p"
 # 1104 "data/maps/RustboroCity/scripts.pory"
 	.string "If I go to this school, will I be able\n"
 # 1105 "data/maps/RustboroCity/scripts.pory"
-	.string "to catch rare POKéMON easily?$"
+	.string "to catch rare Pokémon easily?$"
 # 1106 "data/maps/RustboroCity/scripts.pory"
 
 # 1107 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_PokemonCanChangeLookFromExp:
 # 1108 "data/maps/RustboroCity/scripts.pory"
-	.string "If a POKéMON gains experience in\n"
+	.string "If a Pokémon gains experience in\n"
 # 1109 "data/maps/RustboroCity/scripts.pory"
 	.string "battles, it can sometimes change in\l"
 # 1110 "data/maps/RustboroCity/scripts.pory"
@@ -2223,7 +2223,7 @@ RustboroCity_Text_PokemonCanChangeLookFromExp:
 # 1112 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_PokemonChangeShape:
 # 1113 "data/maps/RustboroCity/scripts.pory"
-	.string "A POKéMON changes shape?\n"
+	.string "A Pokémon changes shape?\n"
 # 1114 "data/maps/RustboroCity/scripts.pory"
 	.string "If one did that, I would be shocked!$"
 # 1115 "data/maps/RustboroCity/scripts.pory"
@@ -2231,7 +2231,7 @@ RustboroCity_Text_PokemonChangeShape:
 # 1116 "data/maps/RustboroCity/scripts.pory"
 RustboroCity_Text_TradePokemonGrowFast:
 # 1117 "data/maps/RustboroCity/scripts.pory"
-	.string "A POKéMON you get in a trade from\n"
+	.string "A Pokémon you get in a trade from\n"
 # 1118 "data/maps/RustboroCity/scripts.pory"
 	.string "someone grows fast.\p"
 # 1119 "data/maps/RustboroCity/scripts.pory"
@@ -2367,7 +2367,7 @@ RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
 # 1184 "data/maps/RustboroCity/scripts.pory"
 	.string "Haven't you caught or raised your\n"
 # 1185 "data/maps/RustboroCity/scripts.pory"
-	.string "POKéMON very much?\p"
+	.string "Pokémon very much?\p"
 # 1186 "data/maps/RustboroCity/scripts.pory"
 	.string "That's not very good for a TRAINER!$"
 # 1187 "data/maps/RustboroCity/scripts.pory"
@@ -2453,7 +2453,7 @@ RustboroCity_Text_BrendanNoConfidenceInPokemon:
 # 1227 "data/maps/RustboroCity/scripts.pory"
 	.string "BRENDAN: What's the matter? Don't have\n"
 # 1228 "data/maps/RustboroCity/scripts.pory"
-	.string "any confidence in your POKéMON?$"
+	.string "any confidence in your Pokémon?$"
 # 1229 "data/maps/RustboroCity/scripts.pory"
 
 # 1230 "data/maps/RustboroCity/scripts.pory"
@@ -2547,7 +2547,7 @@ RustboroCity_Text_TrainersSchoolSign:
 # 1274 "data/maps/RustboroCity/scripts.pory"
 	.string "“We'll teach you anything about\n"
 # 1275 "data/maps/RustboroCity/scripts.pory"
-	.string "POKéMON!”$"
+	.string "Pokémon!”$"
 # 1276 "data/maps/RustboroCity/scripts.pory"
 
 # 1277 "data/maps/RustboroCity/scripts.pory"
@@ -2619,7 +2619,7 @@ RustboroCity_Text_YouCanHave2On2Battle:
 # 1310 "data/maps/RustboroCity/scripts.pory"
 	.string "If you catch the eyes of two TRAINERS\n"
 # 1311 "data/maps/RustboroCity/scripts.pory"
-	.string "when you have two or more POKéMON,\l"
+	.string "when you have two or more Pokémon,\l"
 # 1312 "data/maps/RustboroCity/scripts.pory"
 	.string "they'll both challenge you.\p"
 # 1313 "data/maps/RustboroCity/scripts.pory"
@@ -2672,15 +2672,15 @@ RustboroCity_EventScript_SteelBeam_Text_1:
 RustboroCity_Text_MayImNotGoingToLose::
 # 1317 "data/maps/RustboroCity/scripts.pory"
 	.string "May: Oh, hi, {PLAYER}! How's your\n"
-	.string "POKéMON coming along? Mine's doing\l"
-	.string "great! I've got a lot of POKéMON with\l"
+	.string "Pokémon coming along? Mine's doing\l"
+	.string "great! I've got a lot of Pokémon with\l"
 	.string "me, so I'm pretty confident! Let's have\l"
 	.string "a battle!$"
 
 RustboroCity_Text_BrendanIWontGoEasy::
 # 1321 "data/maps/RustboroCity/scripts.pory"
 	.string "Brendan: Oh, hey, {PLAYER}! I've been\n"
-	.string "doing great with my POKéMON! I bet I\l"
+	.string "doing great with my Pokémon! I bet I\l"
 	.string "can beat you! Let's have a battle!$"
 
 RustboroCity_Text_RivalPetalburgGymReady::

@@ -335,7 +335,7 @@ RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
 # 168 "data/maps/RustboroCity_Flat1_2F/scripts.pory"
 	.string "patterns for the BOXES in the PC\l"
 # 169 "data/maps/RustboroCity_Flat1_2F/scripts.pory"
-	.string "POKéMON Storage System.\p"
+	.string "Pokémon Storage System.\p"
 # 170 "data/maps/RustboroCity_Flat1_2F/scripts.pory"
 	.string "In the wallpaper pattern menu,\n"
 # 171 "data/maps/RustboroCity_Flat1_2F/scripts.pory"
@@ -349,4 +349,4 @@ RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
 # 175 "data/maps/RustboroCity_Flat1_2F/scripts.pory"
 RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll:
 # 176 "data/maps/RustboroCity_Flat1_2F/scripts.pory"
-	.string "It's a POKéMON plush DOLL!$"
+	.string "It's a Pokémon plush DOLL!$"

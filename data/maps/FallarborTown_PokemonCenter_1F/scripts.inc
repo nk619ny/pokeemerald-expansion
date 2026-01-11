@@ -179,7 +179,7 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
 # 90 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 	.string "I can see that you're a TRAINER.\p"
 # 91 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
-	.string "So that means you use the POKéMON\n"
+	.string "So that means you use the Pokémon\n"
 # 92 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 	.string "Storage System I developed.\p"
 # 93 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
@@ -205,7 +205,7 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
 # 103 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown:
 # 104 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
-	.string "I wonder what POKéMON looked like\n"
+	.string "I wonder what Pokémon looked like\n"
 # 105 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"
 	.string "long, long ago?\p"
 # 106 "data/maps/FallarborTown_PokemonCenter_1F/scripts.pory"

@@ -91,11 +91,11 @@ BattleFrontier_Lounge5_Text_NatureGirlGreeting::
 # 46 "data/maps/BattleFrontier_Lounge5/scripts.pory"
 	.string "Ehehe!\n"
 # 47 "data/maps/BattleFrontier_Lounge5/scripts.pory"
-	.string "I can tell what POKéMON are thinking!\p"
+	.string "I can tell what Pokémon are thinking!\p"
 # 48 "data/maps/BattleFrontier_Lounge5/scripts.pory"
 	.string "Please!\n"
 # 49 "data/maps/BattleFrontier_Lounge5/scripts.pory"
-	.string "Can I see your POKéMON?$"
+	.string "Can I see your Pokémon?$"
 # 50 "data/maps/BattleFrontier_Lounge5/scripts.pory"
 
 # 51 "data/maps/BattleFrontier_Lounge5/scripts.pory"
@@ -229,7 +229,7 @@ BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon::
 # 115 "data/maps/BattleFrontier_Lounge5/scripts.pory"
 	.string "That little lady claims she can\l"
 # 116 "data/maps/BattleFrontier_Lounge5/scripts.pory"
-	.string "understand POKéMON!$"
+	.string "understand Pokémon!$"
 # 117 "data/maps/BattleFrontier_Lounge5/scripts.pory"
 
 # 118 "data/maps/BattleFrontier_Lounge5/scripts.pory"

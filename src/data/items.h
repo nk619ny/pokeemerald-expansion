@@ -11905,7 +11905,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A powerful quake\n"
             "that hits all\n"
-            "other POKéMON."),
+            "other Pokémon."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -14228,7 +14228,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Silph Co's scope\n"
             "makes unseeable\n"
-            "POKéMON visible."),
+            "Pokémon visible."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

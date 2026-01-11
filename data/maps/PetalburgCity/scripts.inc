@@ -1413,7 +1413,7 @@ PetalburgCity_Text_AreYouRookieTrainer:
 # 707 "data/maps/PetalburgCity/scripts.pory"
 	.string "A rookie TRAINER?\p"
 # 708 "data/maps/PetalburgCity/scripts.pory"
-	.string "Do you know what POKéMON TRAINERS\n"
+	.string "Do you know what Pokémon TRAINERS\n"
 # 709 "data/maps/PetalburgCity/scripts.pory"
 	.string "do when they reach a new town?\p"
 # 710 "data/maps/PetalburgCity/scripts.pory"
@@ -1511,7 +1511,7 @@ PetalburgCity_Text_AreYouATrainer:
 # 756 "data/maps/PetalburgCity/scripts.pory"
 	.string "Let me guess, from the way you're\n"
 # 757 "data/maps/PetalburgCity/scripts.pory"
-	.string "dressed, are you a POKéMON TRAINER?$"
+	.string "dressed, are you a Pokémon TRAINER?$"
 # 758 "data/maps/PetalburgCity/scripts.pory"
 
 # 759 "data/maps/PetalburgCity/scripts.pory"

@@ -613,7 +613,7 @@ BattleFrontier_OutsideWest_Text_BattleFactorySign:
 # 307 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	.string "This is the BATTLE FACTORY!\n"
 # 308 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	.string "Seek out the toughest POKéMON!$"
+	.string "Seek out the toughest Pokémon!$"
 # 309 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 
 # 310 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
@@ -631,7 +631,7 @@ BattleFrontier_OutsideWest_Text_ThisIsBattleTower:
 # 316 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	.string "TRAINERS bring their best-raised\n"
 # 317 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	.string "POKéMON for elimination-style matches.$"
+	.string "Pokémon for elimination-style matches.$"
 # 318 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 
 # 319 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
@@ -753,7 +753,7 @@ BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons:
 # 377 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	.string "Are you sure we can make challenges\n"
 # 378 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	.string "even if we don't have any POKéMON?$"
+	.string "even if we don't have any Pokémon?$"
 # 379 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 
 # 380 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
@@ -767,7 +767,7 @@ BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons:
 # 384 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	.string "But remember that big scary guy?\n"
 # 385 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	.string "He said, “I'll lend you POKéMON!”$"
+	.string "He said, “I'll lend you Pokémon!”$"
 # 386 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 
 # 387 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
@@ -775,11 +775,11 @@ BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons:
 # 388 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	.string "That's the BATTLE FACTORY.\n"
 # 389 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	.string "You can rent strong POKéMON there.\p"
+	.string "You can rent strong Pokémon there.\p"
 # 390 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	.string "But it makes me wonder.\n"
 # 391 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	.string "Who's raising those rental POKéMON?$"
+	.string "Who's raising those rental Pokémon?$"
 # 392 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 
 # 393 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
@@ -1023,7 +1023,7 @@ BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:
 # 512 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	.string "I heard a rumor that someone saw\n"
 # 513 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
-	.string "a POKéMON with an unusually long tail\l"
+	.string "a Pokémon with an unusually long tail\l"
 # 514 "data/maps/BattleFrontier_OutsideWest/scripts.pory"
 	.string "somewhere in the BATTLE FRONTIER.\p"
 # 515 "data/maps/BattleFrontier_OutsideWest/scripts.pory"

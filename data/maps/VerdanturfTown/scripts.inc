@@ -163,7 +163,7 @@ VerdanturfTown_Text_AirCleanHere:
 # 82 "data/maps/VerdanturfTown/scripts.pory"
 VerdanturfTown_Text_MakeBattleTentDebut:
 # 83 "data/maps/VerdanturfTown/scripts.pory"
-	.string "My POKéMON and I, we've been riding\n"
+	.string "My Pokémon and I, we've been riding\n"
 # 84 "data/maps/VerdanturfTown/scripts.pory"
 	.string "a hot winning streak.\p"
 # 85 "data/maps/VerdanturfTown/scripts.pory"
@@ -177,7 +177,7 @@ VerdanturfTown_Text_GuyTryingToBustThroughCave:
 # 89 "data/maps/VerdanturfTown/scripts.pory"
 	.string "Did you see the cave next to the\n"
 # 90 "data/maps/VerdanturfTown/scripts.pory"
-	.string "POKéMON MART?\p"
+	.string "Pokémon MART?\p"
 # 91 "data/maps/VerdanturfTown/scripts.pory"
 	.string "There's a guy in there who's trying to\n"
 # 92 "data/maps/VerdanturfTown/scripts.pory"
@@ -193,7 +193,7 @@ VerdanturfTown_Text_GuyTryingToBustThroughCave:
 # 97 "data/maps/VerdanturfTown/scripts.pory"
 VerdanturfTown_Text_EasyToGetToRustboroNow:
 # 98 "data/maps/VerdanturfTown/scripts.pory"
-	.string "That cave next to the POKéMON MART\n"
+	.string "That cave next to the Pokémon MART\n"
 # 99 "data/maps/VerdanturfTown/scripts.pory"
 	.string "is now a tunnel to the other side.\p"
 # 100 "data/maps/VerdanturfTown/scripts.pory"

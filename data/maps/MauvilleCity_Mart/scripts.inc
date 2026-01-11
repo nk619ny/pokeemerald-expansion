@@ -81,7 +81,7 @@ MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats:
 # 41 "data/maps/MauvilleCity_Mart/scripts.pory"
 	.string "There are items that temporarily\n"
 # 42 "data/maps/MauvilleCity_Mart/scripts.pory"
-	.string "elevate the stats of POKéMON.\p"
+	.string "elevate the stats of Pokémon.\p"
 # 43 "data/maps/MauvilleCity_Mart/scripts.pory"
 	.string "The ones I know you use in battle\n"
 # 44 "data/maps/MauvilleCity_Mart/scripts.pory"

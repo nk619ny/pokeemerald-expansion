@@ -71,4 +71,4 @@ EverGrandeCity_Text_CitySign:
 # 36 "data/maps/EverGrandeCity/scripts.pory"
 	.string "“The paradise of flowers, the sea,\n"
 # 37 "data/maps/EverGrandeCity/scripts.pory"
-	.string "and POKéMON.”$"
+	.string "and Pokémon.”$"

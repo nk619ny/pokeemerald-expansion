@@ -505,7 +505,7 @@ MagmaHideout_4F_Text_MaxieDefeat:
 # 253 "data/maps/MagmaHideout_4F/scripts.pory"
 	.string "What makes you so adept at handling\n"
 # 254 "data/maps/MagmaHideout_4F/scripts.pory"
-	.string "POKéMON?$"
+	.string "Pokémon?$"
 # 255 "data/maps/MagmaHideout_4F/scripts.pory"
 
 # 256 "data/maps/MagmaHideout_4F/scripts.pory"

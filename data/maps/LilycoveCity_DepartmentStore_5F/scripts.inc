@@ -315,7 +315,7 @@ LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls:
 # 158 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon:
 # 159 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
-	.string "I'm not big enough to raise POKéMON,\n"
+	.string "I'm not big enough to raise Pokémon,\n"
 # 160 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"
 	.string "so I'm getting a cute DOLL instead.$"
 # 161 "data/maps/LilycoveCity_DepartmentStore_5F/scripts.pory"

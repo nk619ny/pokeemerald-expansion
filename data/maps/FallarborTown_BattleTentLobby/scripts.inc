@@ -633,7 +633,7 @@ FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite:
 # 317 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
 	.string "try to win with all their faith in\l"
 # 318 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
-	.string "their POKéMON.$"
+	.string "their Pokémon.$"
 # 319 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
 
 # 320 "data/maps/FallarborTown_BattleTentLobby/scripts.pory"
