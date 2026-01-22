@@ -9287,43 +9287,228 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Heal Bell
 
 === TRAINER_HILL_1 ===
-Name: MIGUEL
-Class: Pokefan
+Name: LISIA
 Pic: Pokefan M
-Gender: Male
-Music: Twins
+Gender: Female
+Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skitty @ Oran Berry
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rapidash-Galar @ Scope Lens  
+Ability: Misty Surge  
+Tera Type: Psychic  
+EVs: 196 Atk / 196 Spe
+Level: 35
+- Play Rough  
+- Psycho Cut  
+- Drill Run  
+- Morning Sun  
+
+Sylveon (F) @ Light Clay  
+Ability: Pixilate  
+Tera Type: Fairy  
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk  
+Level: 35
+- Mystical Fire  
+- Hyper Voice  
+- Misty Explosion  
+- Reflect  
+
+Gardevoir (F)  
+Ability: Synchronize  
+Tera Type: Psychic  
+EVs: 192 HP / 64 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+Level: 35
+- Alluring Voice  
+- Psychic  
+- Vacuum Wave  
+- Calm Mind  
+
+Pikachu-Belle (F) @ Light Ball  
+Ability: Lightning Rod  
+Tera Type: Electric  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+Level: 35
+- Triple Axel  
+- Fake Out  
+- Nuzzle  
+- Present  
+
+Milotic (F)  
+Ability: Competitive  
+Shiny: Yes  
+Tera Type: Water  
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+Level: 35
+- Alluring Voice  
+- Water Pulse  
+- Life Dew  
+- Mirror Coat  
+
+Ali (Altaria) (F) @ Altarianite  
+Tera Type: Dragon  
+EVs: 252 HP / 128 SpA / 128 SpD  
+Modest Nature  
+IVs: 0 Atk  
+Level: 36
+- Hyper Voice  
+- Cotton Guard  
+- Heat Wave  
+- Roost  
 
 === TRAINER_HILL_2 ===
-Name: MIGUEL
-Class: Pokefan
-Pic: Pokefan M
-Gender: Male
-Music: Twins
+Name: GLACIA
+Pic: Elite Four Glacia
+Gender: Female
+Music: Female
 Double Battle: Yes
+Party Size: 6
+Pool Rules: Doubles
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skitty @ Oran Berry
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Froslass (F) @ Bright Powder  
+Level: 55
+Ability: Snow Cloak  
+Tera Type: Ice  
+IVs: 0 Atk  
+Tags: Lead
+- Protect  
+- Bitter Malice  
+- Ice Beam  
+- Thunderbolt  
+
+Froslass (F) @ Froslassite  
+Level: 55
+Ability: Snow Cloak  
+Tera Type: Ice  
+IVs: 0 Atk    
+Tags: Lead
+- Ice Beam  
+- Bitter Malice  
+- Thunderbolt  
+- Double Team  
+
+Glalie @ Choice Band  
+Level: 55
+Ability: Inner Focus  
+Tera Type: Ice  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Lonely Nature    
+Tags: Lead
+- Explosion  
+- Ice Ball  
+- Ice Shard  
+
+Glalie @ Glalitite  
+Level: 55
+Ability: Inner Focus  
+Happiness: 0  
+Tera Type: Ice  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature    
+Tags: Lead
+- Explosion  
+- Frustration  
+- Ice Shard  
+- Earthquake  
+
+Vanilluxe @ Light Clay  
+Level: 55
+Ability: Snow Warning  
+Tera Type: Electric  
+IVs: 0 Atk  
+- Aurora Veil  
+- Freeze-Dry  
+- Mirror Coat  
+- Hidden Power  
+
+Articuno-Galar  
+Level: 55
+Ability: Competitive  
+Tera Type: Ground  
+IVs: 0 Atk  
+- Freezing Glare  
+- Air Slash  
+- Hidden Power 
+- Recover  
+
+Glastrier @ Assault Vest  
+Level: 55
+Ability: Chilling Neigh  
+Tera Type: Ice  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Glacial Lance  
+- Stomping Tantrum  
+- Body Press  
+- Facade  
+
+Abomasnow @ Occa Berry  
+Level: 55
+Ability: Snow Warning  
+Tera Type: Grass  
+IVs: 0 Atk  
+- Weather Ball  
+- Energy Ball  
+- Aurora Veil  
+- Chilling Water  
+
 
 === TRAINER_HILL_3 ===
-Name: MIGUEL
-Class: Pokefan
-Pic: Pokefan M
+Name: SIDNEY
+Pic: Elite Four Sidney
 Gender: Male
-Music: Twins
+Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Delcatty @ Oran Berry
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Fezandipiti (M) @ Expert Belt  
+Ability: Toxic Chain  
+Tera Type: Poison  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Gunk Shot  
+- Play Rough  
+- Tailwind  
+- U-turn  
+
+Brute Bonnet @ Booster Energy  
+Ability: Protosynthesis  
+Tera Type: Grass  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Sucker Punch  
+- Spore  
+- Stomping Tantrum  
+- Rage Powder  
+
+Scrafty @ Scraftinite  
+Ability: Intimidate  
+Tera Type: Dark  
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Fake Out  
+- Poison Jab  
+- Drain Punch  
+- Assurance  
+
+Moltres-Galar @ Sitrus Berry  
+Ability: Berserk  
+Tera Type: Dark  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Fiery Wrath  
+- Air Slash  
+- Ancient Power  
+- Tailwind  
+
 
 === TRAINER_HILL_4 ===
 Name: MIGUEL
