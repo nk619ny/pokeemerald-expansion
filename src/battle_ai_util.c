@@ -1257,6 +1257,9 @@ static bool32 AI_IsMoveEffectInMinus(u32 battlerAtk, u32 battlerDef, u32 move, s
                         return TRUE;
                     break;
                 case MOVE_EFFECT_RECHARGE:
+                    // Power Herb negates the recharge requirement
+                    if (gAiLogicData->holdEffects[battlerAtk] == HOLD_EFFECT_POWER_HERB)
+                        return FALSE;
                     return additionalEffect->self;
                 case MOVE_EFFECT_ATK_PLUS_1:
                 case MOVE_EFFECT_DEF_PLUS_1:

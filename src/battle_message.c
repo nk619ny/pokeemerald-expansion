@@ -525,6 +525,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_TRAINER2WINTEXT]                      = COMPOUND_STRING("{B_TRAINER2_WIN_TEXT}"),
     [STRINGID_ENDUREDSTURDY]                        = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} endured the hit using {B_DEF_ABILITY}!"),
     [STRINGID_POWERHERB]                            = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} became fully charged due to its {B_LAST_ITEM}!"),
+    [STRINGID_POWERHERB_RECHARGE]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} recharged instantly due to its Power Herb!"), //best practice is use LAST_ITEM variable, but since only one item does this, it works for now.
     [STRINGID_HURTBYITEM]                           = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} was hurt by the {B_LAST_ITEM}!"),
     [STRINGID_PSNBYITEM]                            = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX} was badly poisoned by the {B_LAST_ITEM}!"),
     [STRINGID_BRNBYITEM]                            = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX} was burned by the {B_LAST_ITEM}!"),

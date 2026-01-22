@@ -3339,6 +3339,14 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
         if (B_SKIP_RECHARGE == GEN_1 && !IsBattlerAlive(gBattlerTarget))  // Skip recharge if gen 1 and foe is KO'd
             break;
 
+        // Power Herb skips the recharge turn
+        if (GetBattlerHoldEffect(gEffectBattler) == HOLD_EFFECT_POWER_HERB)
+        {
+            BattleScriptPush(battleScript);
+            gBattlescriptCurrInstr = BattleScript_PowerHerbSkipRecharge;
+            break;
+        }
+
         gDisableStructs[gEffectBattler].rechargeTimer = 2;
         gLockedMoves[gEffectBattler] = gCurrentMove;
         gBattlescriptCurrInstr = battleScript;

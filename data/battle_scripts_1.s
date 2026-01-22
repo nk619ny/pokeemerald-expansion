@@ -3120,6 +3120,13 @@ BattleScript_MoveUsedMustRecharge::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_PowerHerbSkipRecharge::
+	playanimation BS_ATTACKER, B_ANIM_HELD_ITEM_EFFECT
+	printstring STRINGID_POWERHERB_RECHARGE
+	waitmessage B_WAIT_TIME_LONG
+	removeitem BS_ATTACKER
+	return
+
 BattleScript_EffectRage::
 	attackcanceler
 	accuracycheck BattleScript_RageMiss, ACC_CURR_MOVE

@@ -22,6 +22,7 @@ extern const u8 BattleScript_StatDown[];
 extern const u8 BattleScript_AlreadyAtFullHp[];
 extern const u8 BattleScript_PresentHealTarget[];
 extern const u8 BattleScript_MoveUsedMustRecharge[];
+extern const u8 BattleScript_PowerHerbSkipRecharge[];
 extern const u8 BattleScript_FaintBattler[];
 extern const u8 BattleScript_GiveExp[];
 extern const u8 BattleScript_HandleFaintedMon[];
