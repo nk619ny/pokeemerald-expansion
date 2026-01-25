@@ -518,6 +518,7 @@ struct SpeciesInfo /*0xC4*/
     // Move Data
     const struct LevelUpMove *levelUpLearnset;
     const u16 *teachableLearnset;
+    const u16 *eliteLearnset;
     const u16 *eggMoveLearnset;
     const struct Evolution *evolutions;
     const u16 *formSpeciesIdTable;
@@ -797,6 +798,7 @@ u32 GetSpeciesBaseSpeed(u16 species);
 u32 GetSpeciesBaseStat(u16 species, u32 statIndex);
 const struct LevelUpMove *GetSpeciesLevelUpLearnset(u16 species);
 const u16 *GetSpeciesTeachableLearnset(u16 species);
+const u16 *GetSpeciesEliteLearnset(u16 species);
 const u16 *GetSpeciesEggMoves(u16 species);
 const struct Evolution *GetSpeciesEvolutions(u16 species);
 const u16 *GetSpeciesFormTable(u16 species);
