@@ -1931,6 +1931,12 @@ script PokemonCenter_2F_EventScript_ChangeHiddenPowerType{
 script EliteMoveTutor_EventScript_Start {
 	lock
 	faceplayer
+	// Check if player has a Heart Scale
+	if (!checkitem(ITEM_HEART_SCALE, 1)) {
+		msgbox(EliteMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT)
+		releaseall
+		end
+	}
 	msgbox(EliteMoveTutor_Text_Intro, MSGBOX_DEFAULT)
 	goto(EliteMoveTutor_EventScript_ChooseMon)
 }
@@ -1961,10 +1967,25 @@ script EliteMoveTutor_EventScript_ChooseMon {
 	waitstate
 	lock
 	faceplayer
-	msgbox(EliteMoveTutor_Text_AnythingElse, MSGBOX_YESNO)
-	if (var(VAR_RESULT) == YES) {
-		goto(EliteMoveTutor_EventScript_ChooseMon)
+	// Check if a move was actually learned (VAR_0x8004 == TRUE means success)
+	if (var(VAR_0x8004) == TRUE) {
+		// Remove a Heart Scale as payment
+		removeitem(ITEM_HEART_SCALE, 1)
+		// Check if player has more Heart Scales for another teaching
+		if (checkitem(ITEM_HEART_SCALE, 1)) {
+			msgbox(EliteMoveTutor_Text_AnythingElse, MSGBOX_YESNO)
+			if (var(VAR_RESULT) == YES) {
+				goto(EliteMoveTutor_EventScript_ChooseMon)
+			}
+			goto(EliteMoveTutor_EventScript_Cancel)
+		} else {
+			// No more Heart Scales
+			msgbox(EliteMoveTutor_Text_NoMoreHeartScales, MSGBOX_DEFAULT)
+			releaseall
+			end
+		}
 	}
+	// Player cancelled without learning a move
 	goto(EliteMoveTutor_EventScript_Cancel)
 }
 
@@ -1975,7 +1996,7 @@ script EliteMoveTutor_EventScript_Cancel {
 }
 
 text EliteMoveTutor_Text_Intro {
-	format("I am the Elite Move Tutor.\pI can teach certain Pokémon powerful Elite Moves that they can't learn any other way.\pWould you like me to teach an Elite Move to one of your Pokémon?")
+	format("I am the Elite Move Tutor.\pI can teach certain Pokémon powerful Elite Moves that they can't learn any other way.\pIt will cost you one Heart Scale per move.\pWould you like me to teach an Elite Move to one of your Pokémon?")
 }
 
 text EliteMoveTutor_Text_ChooseMon {
@@ -2000,4 +2021,12 @@ text EliteMoveTutor_Text_AnythingElse {
 
 text EliteMoveTutor_Text_ComeBack {
 	format("Come back anytime if you want to teach an Elite Move to one of your Pokémon.")
+}
+
+text EliteMoveTutor_Text_NeedHeartScale {
+	format("I am the Elite Move Tutor.\pI can teach certain Pokémon powerful Elite Moves, but I require a Heart Scale as payment.\pCome back when you have one.")
+}
+
+text EliteMoveTutor_Text_NoMoreHeartScales {
+	format("That's all for now!\pCome back with more Heart Scales if you want to learn additional Elite Moves.")
 }
