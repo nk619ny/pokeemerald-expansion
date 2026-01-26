@@ -42,5 +42,7 @@ void ChangeTeraType(void);
 void InflictStatus(void);
 void GetPartyMonTypes(void);
 void ComparePartyMonTeraType(void);
+void CheckPartyMonHasEliteMoves(void);
+void TeachEliteMoves(void);
 
 #endif // GUARD_FIELD_SPECIALS_H

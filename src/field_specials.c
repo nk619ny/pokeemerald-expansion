@@ -28,6 +28,7 @@
 #include "match_call.h"
 #include "menu.h"
 #include "metatile_behavior.h"
+#include "move_relearner.h"
 #include "mystery_gift.h"
 #include "overworld.h"
 #include "party_menu.h"
@@ -4487,4 +4488,34 @@ void ComparePartyMonTeraType(void)
         gSpecialVar_0x800A = FALSE;
         gSpecialVar_Result = 0;
     }
+}
+
+// Elite Move Tutor Special
+// Uses VAR_0x8004 as the party slot
+// Sets VAR_0x8005 to the number of elite moves available
+// Sets VAR_RESULT to TRUE if the Pokemon has elite moves, FALSE otherwise
+void CheckPartyMonHasEliteMoves(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    {
+        u8 numMoves = GetNumberOfEliteMoves(&gPlayerParty[slot]);
+        gSpecialVar_0x8005 = numMoves;
+        gSpecialVar_Result = (numMoves > 0);
+    }
+    else
+    {
+        gSpecialVar_0x8005 = 0;
+        gSpecialVar_Result = FALSE;
+    }
+}
+
+// Teaches elite moves to the party mon at slot VAR_0x8004
+// This special sets up the move relearner for elite moves and calls TeachMoveRelearnerMove
+void TeachEliteMoves(void)
+{
+    gMoveRelearnerState = MOVE_RELEARNER_ELITE_MOVES;
+    gRelearnMode = RELEARN_MODE_ELITE_SCRIPT;
+    TeachMoveRelearnerMove();
 }

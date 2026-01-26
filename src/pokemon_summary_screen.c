@@ -1916,6 +1916,8 @@ u32 GetRelearnMovesCount(enum MoveRelearnerStates state)
             return GetNumberOfTutorMoves(mon);
         case MOVE_RELEARNER_LEVEL_UP_MOVES:
             return GetNumberOfLevelUpMoves(mon);
+        case MOVE_RELEARNER_ELITE_MOVES:
+            return GetNumberOfEliteMoves(mon);
         default:
             return 0;
     }
@@ -1953,6 +1955,8 @@ bool32 CheckRelearnerStateFlag(enum MoveRelearnerStates state)
         return P_TM_MOVES_RELEARNER;
     case MOVE_RELEARNER_TUTOR_MOVES:
         return FlagGet(P_FLAG_TUTOR_MOVES);
+    case MOVE_RELEARNER_ELITE_MOVES:
+        return TRUE; // Elite moves are always valid when accessed via script
     default:
         return FALSE;
     }
@@ -1963,6 +1967,11 @@ void TryUpdateRelearnType(enum IncrDecrUpdateValues delta)
     u32 moveCount = 0;
     u32 zeroCounter = 0;
     enum MoveRelearnerStates state = gMoveRelearnerState;
+
+    // Elite moves state should not be changed by the summary screen
+    // It can only be set/cleared via script
+    if (gMoveRelearnerState == MOVE_RELEARNER_ELITE_MOVES)
+        return;
 
     // just in case everything is off, default to level up moves
     if ((!P_ENABLE_MOVE_RELEARNERS

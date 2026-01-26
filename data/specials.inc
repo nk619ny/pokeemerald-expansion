@@ -572,6 +572,8 @@ gSpecials::
 	def_special ObjectEventInteractionGetApricornTreeData
 	def_special ObjectEventInteractionPickApricornTree
 	def_special ChangeTeraType
-    def_special InflictStatus  
+	def_special InflictStatus
 	def_special GetPartyMonTypes
 	def_special ComparePartyMonTeraType
+	def_special CheckPartyMonHasEliteMoves
+	def_special TeachEliteMoves

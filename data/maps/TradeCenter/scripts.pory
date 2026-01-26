@@ -1926,3 +1926,78 @@ script PokemonCenter_2F_EventScript_ChangeHiddenPowerType{
 		end
 	}
 }
+// Elite Move Tutor - Teaches special Elite Moves to eligible Pokemon
+// This uses the move relearner system but is only accessible through this script
+script EliteMoveTutor_EventScript_Start {
+	lock
+	faceplayer
+	msgbox(EliteMoveTutor_Text_Intro, MSGBOX_DEFAULT)
+	goto(EliteMoveTutor_EventScript_ChooseMon)
+}
+
+script EliteMoveTutor_EventScript_ChooseMon {
+	msgbox(EliteMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT)
+	special(ChoosePartyMon)
+	waitstate
+	if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+		goto(EliteMoveTutor_EventScript_Cancel)
+	}
+	special(IsSelectedMonEgg)
+	if (var(VAR_RESULT) == TRUE) {
+		msgbox(EliteMoveTutor_Text_CantTeachEgg, MSGBOX_DEFAULT)
+		goto(EliteMoveTutor_EventScript_ChooseMon)
+	}
+	// Check if this Pokemon has elite moves (sets VAR_0x8005 to count, VAR_RESULT to TRUE/FALSE)
+	special(CheckPartyMonHasEliteMoves)
+	if (var(VAR_RESULT) == FALSE) {
+		special(BufferMonNickname)
+		msgbox(EliteMoveTutor_Text_NoEliteMoves, MSGBOX_DEFAULT)
+		goto(EliteMoveTutor_EventScript_ChooseMon)
+	}
+	// Pokemon has elite moves, proceed to move relearner UI
+	special(BufferMonNickname)
+	msgbox(EliteMoveTutor_Text_HasEliteMoves, MSGBOX_DEFAULT)
+	special(TeachEliteMoves)
+	waitstate
+	lock
+	faceplayer
+	msgbox(EliteMoveTutor_Text_AnythingElse, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		goto(EliteMoveTutor_EventScript_ChooseMon)
+	}
+	goto(EliteMoveTutor_EventScript_Cancel)
+}
+
+script EliteMoveTutor_EventScript_Cancel {
+	msgbox(EliteMoveTutor_Text_ComeBack, MSGBOX_DEFAULT)
+	releaseall
+	end
+}
+
+text EliteMoveTutor_Text_Intro {
+	format("I am the Elite Move Tutor.\pI can teach certain Pokémon powerful Elite Moves that they can't learn any other way.\pWould you like me to teach an Elite Move to one of your Pokémon?")
+}
+
+text EliteMoveTutor_Text_ChooseMon {
+	format("Which Pokémon would you like me to check?")
+}
+
+text EliteMoveTutor_Text_CantTeachEgg {
+	format("I'm sorry, but I can't teach moves to an Egg.")
+}
+
+text EliteMoveTutor_Text_NoEliteMoves {
+	format("I'm sorry, but {STR_VAR_1} can't learn any Elite Moves.")
+}
+
+text EliteMoveTutor_Text_HasEliteMoves {
+	format("{STR_VAR_1} can learn Elite Moves!\pLet me show you what's available...")
+}
+
+text EliteMoveTutor_Text_AnythingElse {
+	format("Would you like me to teach another Elite Move?")
+}
+
+text EliteMoveTutor_Text_ComeBack {
+	format("Come back anytime if you want to teach an Elite Move to one of your Pokémon.")
+}

@@ -422,6 +422,9 @@ void CB2_InitLearnMove(void)
     case MOVE_RELEARNER_TUTOR_MOVES:
         StringCopy(gStringVar3, MoveRelearner_Text_TutorMoveLWR);
         break;
+    case MOVE_RELEARNER_ELITE_MOVES:
+        StringCopy(gStringVar3, MoveRelearner_Text_EliteMoveLWR);
+        break;
     case MOVE_RELEARNER_LEVEL_UP_MOVES:
     default:
         StringCopy(gStringVar3, MoveRelearner_Text_LevelUpMoveLWR);
@@ -756,6 +759,9 @@ static void DoMoveRelearnerMain(void)
             }
 
             FreeMoveRelearnerResources();
+            // Reset elite move state when exiting
+            if (gRelearnMode == RELEARN_MODE_ELITE_SCRIPT)
+                gMoveRelearnerState = MOVE_RELEARNER_LEVEL_UP_MOVES;
             gRelearnMode = RELEARN_MODE_NONE;
         }
         break;
@@ -1000,6 +1006,9 @@ static void CreateLearnableMovesList(void)
         break;
     case MOVE_RELEARNER_TUTOR_MOVES:
         sMoveRelearnerStruct->numMenuChoices = GetRelearnerTutorMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
+        break;
+    case MOVE_RELEARNER_ELITE_MOVES:
+        sMoveRelearnerStruct->numMenuChoices = GetRelearnerEliteMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
         break;
     case MOVE_RELEARNER_LEVEL_UP_MOVES:
     default:

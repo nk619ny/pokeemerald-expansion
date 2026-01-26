@@ -14,6 +14,8 @@ enum MoveRelearnerStates
     MOVE_RELEARNER_TM_MOVES,
     MOVE_RELEARNER_TUTOR_MOVES,
     MOVE_RELEARNER_COUNT,
+    // Elite moves state is placed after COUNT so it's excluded from summary screen relearner loops
+    MOVE_RELEARNER_ELITE_MOVES,
 };
 
 enum RelearnMode
@@ -24,6 +26,7 @@ enum RelearnMode
     RELEARN_MODE_PSS_PAGE_BATTLE_MOVES = 2,      // Relearning moves through the summary screen's battle moves page
     RELEARN_MODE_PSS_PAGE_CONTEST_MOVES = 3,     // Relearning moves through the summary screen's contest moves page (defaults to contest page on relearner screen)
     RELEARN_MODE_PARTY_MENU = 4,                 // Relearning moves through the party menu's moves submenu
+    RELEARN_MODE_ELITE_SCRIPT = 5,               // Relearning elite moves through an event script (not accessible from summary screen)
 };
 
 #endif // GUARD_CONSTANTS_MOVE_RELEARNER_H
