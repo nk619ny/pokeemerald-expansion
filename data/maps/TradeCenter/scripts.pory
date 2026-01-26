@@ -2030,3 +2030,108 @@ text EliteMoveTutor_Text_NeedHeartScale {
 text EliteMoveTutor_Text_NoMoreHeartScales {
 	format("That's all for now!\pCome back with more Heart Scales if you want to learn additional Elite Moves.")
 }
+
+// Egg Move Tutor - Teaches Egg Moves to eligible Pokemon via script
+// This uses the move relearner system but with script-only access (not accessible from summary screen)
+script EggMoveTutor_EventScript_Start {
+	lock
+	faceplayer
+	// Check if player has a Heart Scale
+	if (!checkitem(ITEM_HEART_SCALE, 1)) {
+		msgbox(EggMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT)
+		releaseall
+		end
+	}
+	msgbox(EggMoveTutor_Text_Intro, MSGBOX_DEFAULT)
+	goto(EggMoveTutor_EventScript_ChooseMon)
+}
+
+script EggMoveTutor_EventScript_ChooseMon {
+	msgbox(EggMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT)
+	special(ChoosePartyMon)
+	waitstate
+	if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+		goto(EggMoveTutor_EventScript_Cancel)
+	}
+	special(IsSelectedMonEgg)
+	if (var(VAR_RESULT) == TRUE) {
+		msgbox(EggMoveTutor_Text_CantTeachEgg, MSGBOX_DEFAULT)
+		goto(EggMoveTutor_EventScript_ChooseMon)
+	}
+	// Check if this Pokemon has egg moves (sets VAR_0x8005 to count, VAR_RESULT to TRUE/FALSE)
+	//special(CheckPartyMonHasScriptEggMoves)
+	//if (var(VAR_RESULT) == FALSE) {
+	//	special(BufferMonNickname)
+	//	msgbox(EggMoveTutor_Text_NoEggMoves, MSGBOX_DEFAULT)
+	//	goto(EggMoveTutor_EventScript_ChooseMon)
+	//}
+	// Pokemon has egg moves, proceed to move relearner UI
+	//special(BufferMonNickname)
+	//msgbox(EggMoveTutor_Text_HasEggMoves, MSGBOX_DEFAULT)
+	special(TeachScriptEggMoves)
+	waitstate
+	lock
+	faceplayer
+	// Check if a move was actually learned (VAR_0x8004 == TRUE means success)
+	if (var(VAR_0x8004) == TRUE) {
+		// Remove a Heart Scale as payment
+		removeitem(ITEM_HEART_SCALE, 1)
+		// Check if player has more Heart Scales for another teaching
+		if (checkitem(ITEM_HEART_SCALE, 1)) {
+			msgbox(EggMoveTutor_Text_AnythingElse, MSGBOX_YESNO)
+			if (var(VAR_RESULT) == YES) {
+				goto(EggMoveTutor_EventScript_ChooseMon)
+			}
+			goto(EggMoveTutor_EventScript_Cancel)
+		} else {
+			// No more Heart Scales
+			msgbox(EggMoveTutor_Text_NoMoreHeartScales, MSGBOX_DEFAULT)
+			releaseall
+			end
+		}
+	}
+	// Player cancelled without learning a move
+	goto(EggMoveTutor_EventScript_Cancel)
+}
+
+script EggMoveTutor_EventScript_Cancel {
+	msgbox(EggMoveTutor_Text_ComeBack, MSGBOX_DEFAULT)
+	releaseall
+	end
+}
+
+text EggMoveTutor_Text_Intro {
+	format("I am the Egg Move Tutor.\pI can teach certain Pokémon moves they could have learned as Eggs.\pIt will cost you one Heart Scale per move.\pWould you like me to teach an Egg Move to one of your Pokémon?")
+}
+
+text EggMoveTutor_Text_ChooseMon {
+	format("Which Pokémon would you like me to check?")
+}
+
+text EggMoveTutor_Text_CantTeachEgg {
+	format("I'm sorry, but I can't teach moves to an Egg.")
+}
+
+text EggMoveTutor_Text_NoEggMoves {
+	format("I'm sorry, but {STR_VAR_1} doesn't have any Egg Moves to learn.")
+}
+
+text EggMoveTutor_Text_HasEggMoves {
+	format("{STR_VAR_1} can learn Egg Moves!\pLet me show you what's available...")
+}
+
+text EggMoveTutor_Text_AnythingElse {
+	format("Would you like me to teach another Egg Move?")
+}
+
+text EggMoveTutor_Text_ComeBack {
+	format("Come back anytime if you want to teach an Egg Move to one of your Pokémon.")
+}
+
+text EggMoveTutor_Text_NeedHeartScale {
+	format("I am the Egg Move Tutor.\pI can teach certain Pokémon moves they could have learned as Eggs, but I require a Heart Scale as payment.\pCome back when you have one.")
+}
+
+text EggMoveTutor_Text_NoMoreHeartScales {
+	format("That's all for now!\pCome back with more Heart Scales if you want to learn additional Egg Moves.")
+}

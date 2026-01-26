@@ -759,8 +759,10 @@ static void DoMoveRelearnerMain(void)
             }
 
             FreeMoveRelearnerResources();
-            // Reset elite move state when exiting
+            // Reset script-only move states when exiting
             if (gRelearnMode == RELEARN_MODE_ELITE_SCRIPT)
+                gMoveRelearnerState = MOVE_RELEARNER_LEVEL_UP_MOVES;
+            else if (gRelearnMode == RELEARN_MODE_EGG_SCRIPT)
                 gMoveRelearnerState = MOVE_RELEARNER_LEVEL_UP_MOVES;
             gRelearnMode = RELEARN_MODE_NONE;
         }

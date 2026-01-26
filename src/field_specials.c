@@ -4519,3 +4519,43 @@ void TeachEliteMoves(void)
     gRelearnMode = RELEARN_MODE_ELITE_SCRIPT;
     TeachMoveRelearnerMove();
 }
+
+// Checks if the party mon at slot VAR_0x8004 has egg moves that can be learned via script
+// Sets VAR_0x8005 to the number of egg moves, and VAR_RESULT to TRUE/FALSE
+void CheckPartyMonHasScriptEggMoves(void)
+{
+    u16 species;
+    struct Pokemon *mon;
+
+    if (gSpecialVar_0x8004 < PARTY_SIZE)
+    {
+        mon = &gPlayerParty[gSpecialVar_0x8004];
+        species = GetMonData(mon, MON_DATA_SPECIES);
+
+        if (species != SPECIES_NONE && species != SPECIES_EGG)
+        {
+            u8 numMoves = GetNumberOfEggMoves(mon);
+            gSpecialVar_0x8005 = numMoves;
+            gSpecialVar_Result = (numMoves > 0);
+        }
+        else
+        {
+            gSpecialVar_0x8005 = 0;
+            gSpecialVar_Result = FALSE;
+        }
+    }
+    else
+    {
+        gSpecialVar_0x8005 = 0;
+        gSpecialVar_Result = FALSE;
+    }
+}
+
+// Teaches egg moves to the party mon at slot VAR_0x8004 via script
+// This special sets up the move relearner for egg moves and calls TeachMoveRelearnerMove
+void TeachScriptEggMoves(void)
+{
+    gMoveRelearnerState = MOVE_RELEARNER_EGG_MOVES;
+    gRelearnMode = RELEARN_MODE_EGG_SCRIPT;
+    TeachMoveRelearnerMove();
+}

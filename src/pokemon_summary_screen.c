@@ -1973,6 +1973,10 @@ void TryUpdateRelearnType(enum IncrDecrUpdateValues delta)
     if (gMoveRelearnerState == MOVE_RELEARNER_ELITE_MOVES)
         return;
 
+    // Egg moves accessed via script should also not be changed by the summary screen
+    if (gMoveRelearnerState == MOVE_RELEARNER_EGG_MOVES && gRelearnMode == RELEARN_MODE_EGG_SCRIPT)
+        return;
+
     // just in case everything is off, default to level up moves
     if ((!P_ENABLE_MOVE_RELEARNERS
         && !P_TM_MOVES_RELEARNER

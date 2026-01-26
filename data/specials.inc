@@ -577,3 +577,5 @@ gSpecials::
 	def_special ComparePartyMonTeraType
 	def_special CheckPartyMonHasEliteMoves
 	def_special TeachEliteMoves
+	def_special CheckPartyMonHasScriptEggMoves
+	def_special TeachScriptEggMoves

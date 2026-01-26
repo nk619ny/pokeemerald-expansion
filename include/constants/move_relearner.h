@@ -27,6 +27,7 @@ enum RelearnMode
     RELEARN_MODE_PSS_PAGE_CONTEST_MOVES = 3,     // Relearning moves through the summary screen's contest moves page (defaults to contest page on relearner screen)
     RELEARN_MODE_PARTY_MENU = 4,                 // Relearning moves through the party menu's moves submenu
     RELEARN_MODE_ELITE_SCRIPT = 5,               // Relearning elite moves through an event script (not accessible from summary screen)
+    RELEARN_MODE_EGG_SCRIPT = 6,                 // Relearning egg moves through an event script (not accessible from summary screen)
 };
 
 #endif // GUARD_CONSTANTS_MOVE_RELEARNER_H

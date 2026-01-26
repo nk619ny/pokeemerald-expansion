@@ -44,5 +44,7 @@ void GetPartyMonTypes(void);
 void ComparePartyMonTeraType(void);
 void CheckPartyMonHasEliteMoves(void);
 void TeachEliteMoves(void);
+void CheckPartyMonHasScriptEggMoves(void);
+void TeachScriptEggMoves(void);
 
 #endif // GUARD_FIELD_SPECIALS_H
