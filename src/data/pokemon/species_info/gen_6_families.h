@@ -2935,7 +2935,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMeowsticMLevelUpLearnset,
         .teachableLearnset = sMeowsticMTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sMeowsticEliteLearnset,
         .formSpeciesIdTable = sMeowsticFormSpeciesIdTable,
     },
 
@@ -3000,7 +3000,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMeowsticFLevelUpLearnset,
         .teachableLearnset = sMeowsticFTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sMeowsticEliteLearnset,
         .formSpeciesIdTable = sMeowsticFormSpeciesIdTable,
     },
 #endif //P_FAMILY_ESPURR

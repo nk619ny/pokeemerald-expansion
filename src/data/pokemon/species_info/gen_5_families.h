@@ -7655,6 +7655,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sGothitelleLevelUpLearnset,
         .teachableLearnset = sGothitelleTeachableLearnset,
+        .eliteLearnset = sGothitelleEliteLearnset,
     },
 #endif //P_FAMILY_GOTHITA
 
@@ -7869,6 +7870,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sReuniclusLevelUpLearnset,
         .teachableLearnset = sReuniclusTeachableLearnset,
+        .eliteLearnset = sReuniclusEliteLearnset,
     },
 #endif //P_FAMILY_SOLOSIS
 
@@ -10322,6 +10324,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sBeheeyemLevelUpLearnset,
         .teachableLearnset = sBeheeyemTeachableLearnset,
+        .eliteLearnset = sBeheeyemEliteLearnset,
     },
 #endif //P_FAMILY_ELGYEM
 
@@ -11684,6 +11687,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sGolurkLevelUpLearnset,
         .teachableLearnset = sGolurkTeachableLearnset,
+        .eliteLearnset = sGolurkEliteLearnset,
     },
 #endif //P_FAMILY_GOLETT
 
@@ -13457,6 +13461,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sReshiramLevelUpLearnset,
         .teachableLearnset = sReshiramTeachableLearnset,
+        .eliteLearnset = sReshiramEliteLearnset,
     },
 #endif //P_FAMILY_RESHIRAM
 

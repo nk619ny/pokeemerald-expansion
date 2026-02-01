@@ -7458,6 +7458,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMarshadowLevelUpLearnset,
         .teachableLearnset = sMarshadowTeachableLearnset,
+        .eliteLearnset = sMarshadowEliteLearnset,
     },
 #endif //P_FAMILY_MARSHADOW
 

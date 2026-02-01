@@ -1516,7 +1516,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_FRISK, ABILITY_TELEPATHY },
+        .abilities = { ABILITY_SWARM, ABILITY_COMPOUND_EYES, ABILITY_TELEPATHY }, //chgnged Frisk to Compoundeyes
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Orbeetle"),
         .cryId = CRY_ORBEETLE,
@@ -6085,6 +6085,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sIndeedeeMLevelUpLearnset,
         .teachableLearnset = sIndeedeeMTeachableLearnset,
+        .eliteLearnset = sIndeedeeEliteLearnset,
         .formSpeciesIdTable = sIndeedeeFormSpeciesIdTable,
     },
 
@@ -6150,6 +6151,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sIndeedeeFLevelUpLearnset,
         .teachableLearnset = sIndeedeeFTeachableLearnset,
         .eggMoveLearnset = sIndeedeeFEggMoveLearnset,
+        .eliteLearnset = sIndeedeeEliteLearnset,
         .formSpeciesIdTable = sIndeedeeFormSpeciesIdTable,
     },
 #endif //P_FAMILY_INDEEDEE
@@ -6728,6 +6730,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sArctovishLevelUpLearnset,
         .teachableLearnset = sArctovishTeachableLearnset,
+        .eliteLearnset = sArctovishEliteLearnset,
     },
 #endif //P_FAMILY_ARCTOVISH
 
@@ -7123,6 +7126,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sDragapultLevelUpLearnset,
         .teachableLearnset = sDragapultTeachableLearnset,
+        .eliteLearnset = sDragapultEliteLearnset,
     },
 #endif //P_FAMILY_DREEPY
 

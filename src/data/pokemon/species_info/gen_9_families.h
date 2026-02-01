@@ -7642,6 +7642,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMunkidoriLevelUpLearnset,
         .teachableLearnset = sMunkidoriTeachableLearnset,
+        .eliteLearnset = sMunkidoriEliteLearnset,
     },
 #endif //P_FAMILY_MUNKIDORI
 
