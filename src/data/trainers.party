@@ -3174,21 +3174,102 @@ IVs: 0 Atk
 - Ancient Power  
 
 
-=== TRAINER_RANDALL === /* Route */
+=== TRAINER_RANDALL === /* Petalburg Gym */ /* Ambush */
 Name: RANDALL
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Ninja Boy
+Pic: Ninja Boy
 Gender: Male
-Music: Cool
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Swellow
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Quick Attack
-- Agility
-- Wing Attack
+Liepard @ Lagging Tail  
+Ability: Prankster  
+Tera Type: Dark  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+Level: 50
+- Assist  
+
+Liepard @ Lagging Tail  
+Ability: Prankster  
+Tera Type: Dark  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+Level: 50
+- Assist  
+
+Dragonite @ Yache Berry  
+Ability: Inner Focus  
+Tera Type: Dragon  
+EVs: 252 Atk / 252 Spe  
+Serious Nature  
+Level: 48
+- Fly  
+- Dive  
+- Dragon Tail  
+- Sky Drop  
+
+Samurott-Hisui  
+Ability: Torrent  
+Tera Type: Water  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+Level: 50
+- Dive  
+- Covet  
+- Thief  
+- Copycat  
+
+/*
+Crawdaunt  
+Ability: Adaptability  
+Tera Type: Water  
+Level: 50
+- Nature Power  
+- Dive  
+- Thief  
+- Counter  
+
+Chatot @ Focus Sash  
+Ability: Keen Eye  
+Tera Type: Normal  
+EVs: 252 Atk / 88 SpA / 168 Spe  
+Naive Nature  
+Level: 50
+- Chatter  
+- Fly  
+- Mimic  
+- Thief  
+*/
+
+Bombirdier  
+Ability: Big Pecks  
+Tera Type: Flying  
+Level: 50
+- Fly  
+- Thief  
+- Sky Drop  
+
+/*
+Ditto  
+Ability: Imposter  
+Tera Type: Normal  
+Level: 50
+- Transform  
+*/
+
+Wobbuffet  
+Ability: Shadow Tag  
+Tera Type: Psychic  
+EVs: 252 Def / 252 SpD  
+Bold Nature  
+IVs: 0 Atk  
+Level: 50
+- Counter  
+- Mirror Coat  
+- Destiny Bond  
+
 
 === TRAINER_PARKER === /* Route */
 Name: PARKER
@@ -3206,21 +3287,68 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dizzy Punch
 - Focus Punch
 
-=== TRAINER_GEORGE === /* Route */
+=== TRAINER_GEORGE === /* Petalburg Gym */ /* Necromancy */
 Name: GEORGE
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Sequence Switching / Will Suicide
 
-Slakoth @ Sitrus Berry
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Slack Off
-- Counter
-- Shadow Ball
+Muk-Alola  @ Big Root
+Ability: Power of Alchemy  
+Tera Type: Poison  
+EVs: 252 HP / 252 Atk / 4 Def  
+Level: 50
+Adamant Nature  
+- Protect  
+- Shadow Sneak  
+- Drain Punch  
+- Poison Jab  
+
+Azumarill  @ Fairy Gem
+Ability: Huge Power  
+Tera Type: Water  
+EVs: 252 Atk / 252 SpA / 4 Spe  
+Mild Nature  
+IVs: 0 HP / 0 Def / 0 SpD   
+Level: 50
+- Misty Explosion  
+- Belly Drum  
+- Aqua Jet  
+- Play Rough  
+
+Persian-Alola  @ Bright Powder
+Ability: Fur Coat  
+Tera Type: Dark  
+EVs: 252 HP / 4 Atk / 252 SpD  
+Jolly Nature   
+Level: 50
+- Fake Out  
+- Helping Hand  
+- Foul Play  
+- Attract  
+
+Muk-Alola @ Assault Vest  
+Ability: Power of Alchemy  
+Tera Type: Poison  
+EVs: 252 HP / 4 Atk / 252 Def  
+Adamant Nature   
+Level: 50
+- Pursuit  
+- Power-Up Punch  
+- Poison Jab  
+- Zen Headbutt  
+
+Weezing @ Normal Gem
+Ability: Levitate  
+Tera Type: Poison  
+EVs: 252 HP / 4 SpD / 252 Spe  
+Jolly Nature  
+- Memento  
+- Explosion  
+
 
 === TRAINER_BERKE === /* Route */
 Name: BERKE
@@ -3594,36 +3722,138 @@ Ludicolo
 Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MARY === /* Route */
+=== TRAINER_MARY === /* Petalburg Gym */ /* Sacrifice */
 Name: MARY
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
+Class: Street Thug
+Pic: Cooltrainer M
+Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Delcatty
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Feint Attack
-- Shock Wave
 
-=== TRAINER_ALEXIA === /* Route */
+Absol  
+Ability: Justified  
+Tera Type: Dark  
+EVs: 252 Atk / 252 Spe
+Level: 50
+- Pursuit
+- Sucker Punch
+- Retaliate
+- Play Rough
+
+Sneasel @ Focus Sash  
+Ability: Inner Focus  
+Tera Type: Dark  
+EVs: 252 HP / 252 Spe  
+IVs: 0 Atk
+Timid Nature  
+Level: 50
+- Beat Up  
+- Fake Out  
+- Knock Off  
+- Toxic  
+
+Whimsicott  @ Scope Lens
+Ability: Prankster  
+Tera Type: Grass  
+EVs: 252 HP / 252 Spe  
+Timid Nature  
+Level: 50
+IVs: 0 Atk  
+- Beat Up  
+- Tailwind  
+- Encore  
+- Leech Seed  
+
+Primeape @ Sitrus Berry 
+Ability: Anger Point
+Tera Type: Fighting  
+EVs: 4 HP / 252 Atk / 252 Spe
+Level: 50
+- Rage Fist  
+- Beat Up
+- Drain Punch
+- Stomping Tantrum
+
+Persian-Alola  @ Scope Lens
+Ability: Rattled  
+Tera Type: Dark  
+EVs: 252 HP / 252 Spe  
+IVs: 0 Atk
+Level: 50
+Timid Nature  
+- Beat Up  
+- Fake Out  
+- Parting Shot  
+- Thunder Wave  
+
+Maushold @ Scope Lens
+Ability: Friend Guard  
+Tera Type: Normal  
+EVs: 252 HP / 252 Spe  
+IVs: 0 Atk
+Level: 50
+Timid Nature  
+- Beat Up  
+- Population Bomb  
+- Encore  
+- Super Fang  
+
+
+
+=== TRAINER_ALEXIA === /* Petalburg Gym */ /* Sleep Paralysis Demon */
 Name: ALEXIA
-Class: Cooltrainer
-Pic: Cooltrainer F
+Class: Hex Maniac
+Pic: Hex Maniac
 Gender: Female
-Music: Cool
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wigglytuff
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Defense Curl
-- Double Edge
-- Shadow Ball
+Hypno @ Wide Lens  
+Ability: Bad Dreams  
+Tera Type: Psychic  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+Level: 50
+- Dark Void  
+- Dream Eater  
+- Hex  
+- Nasty Plot  
+
+Smeargle @ Focus Sash  
+Ability: Own Tempo  
+Tera Type: Normal  
+EVs: 252 HP / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk    
+Level: 50
+- Dark Void  
+- Entrainment  
+- Spore  
+- Follow Me  
+
+Breloom  @ Focus Sash
+Ability: Effect Spore  
+Tera Type: Grass  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature    
+Level: 50
+- Spore  
+- Seed Bomb  
+- Close Combat  
+
+Zoroark  
+Ability: Illusion  
+Tera Type: Dark  
+EVs: 252 SpA / 252 Spe
+IVs: 0 Atk    
+Level: 50
+- Bitter Malice  
+- Night Daze  
+
 
 === TRAINER_JODY === /* Route */
 Name: JODY
@@ -18386,7 +18616,7 @@ Ball: Master Ball
 Tera Type: Ground  
 EVs: 252 HP / 160 SpD / 96 Spe  
 Brave Nature  
-- Precipice Blades  
+- Land's Wrath
 - Heat Crash  
 - Solar Beam  
 - Rock Slide  
