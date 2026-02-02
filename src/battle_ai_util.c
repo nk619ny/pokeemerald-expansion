@@ -681,7 +681,7 @@ bool32 IsDamageMoveUnusable(struct DamageContext *ctx)
             return TRUE;
     }
 
-    if (IsMoveDampBanned(ctx->move) && (battlerDefAbility == ABILITY_DAMP || partnerDefAbility == ABILITY_DAMP))
+    if (IsMoveDampBanned(ctx->move) && (battlerDefAbility == ABILITY_DAMP || partnerDefAbility == ABILITY_DAMP || battlerDefAbility == ABILITY_MUDDY || partnerDefAbility == ABILITY_MUDDY))
         return TRUE;
 
     switch (GetMoveEffect(ctx->move))

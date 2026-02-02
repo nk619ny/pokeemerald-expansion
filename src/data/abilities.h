@@ -48,8 +48,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_DAMP] =
     {
-        .name = _("Damp"),
-        .description = COMPOUND_STRING("Prevents self-destruction."),
+        .name = _("Muddy"),
+        .description = COMPOUND_STRING("Weakens fire & stops booms."),
         .aiRating = 2,
         .breakable = TRUE,
     },
@@ -2467,6 +2467,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Time Traveler"),
         .description = COMPOUND_STRING("Protects from priority."),
         .aiRating = 5,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_MUDDY] =
+    {
+        .name = _("Muddy"),
+        .description = COMPOUND_STRING("Weakens volts & stops booms."),
+        .aiRating = 2,
         .breakable = TRUE,
     },
 };

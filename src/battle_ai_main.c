@@ -1354,7 +1354,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             {
                 ADJUST_SCORE(-10);
             }
-            else if (IsAbilityOnField(ABILITY_DAMP) && !DoesBattlerIgnoreAbilityChecks(battlerAtk, aiData->abilities[battlerAtk], move))
+            else if ((IsAbilityOnField(ABILITY_DAMP) || IsAbilityOnField(ABILITY_MUDDY)) && !DoesBattlerIgnoreAbilityChecks(battlerAtk, aiData->abilities[battlerAtk], move))
             {
                 ADJUST_SCORE(-10);
             }

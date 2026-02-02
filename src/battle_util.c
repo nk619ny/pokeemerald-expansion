@@ -2850,7 +2850,7 @@ static enum MoveCanceler CancelerProtean(struct BattleContext *ctx)
 
 static enum MoveCanceler CancelerExplodingDamp(struct BattleContext *ctx)
 {
-    u32 dampBattler = IsAbilityOnField(ABILITY_DAMP);
+    u32 dampBattler = (IsAbilityOnField(ABILITY_DAMP) || IsAbilityOnField(ABILITY_MUDDY));
     if (dampBattler && IsMoveDampBanned(ctx->currentMove))
     {
         gBattleScripting.battler = dampBattler - 1;
@@ -10510,6 +10510,8 @@ enum Type GetBattleMoveType(u32 move)
           || move == MOVE_FUTURE_SIGHT
           || move == MOVE_DOOM_DESIRE))
           return TYPE_MYSTERY;
+    else if (move == MOVE_SYNCHRONOISE)
+        return TYPE_MYSTERY;
     return GetMoveType(move);
 }
 

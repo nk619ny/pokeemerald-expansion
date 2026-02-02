@@ -12528,7 +12528,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "An odd shock wave that only\n"
             "damages same-type {PKMN}."),
         .effect = EFFECT_SYNCHRONOISE,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 120 : 70,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 150 : 120,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 10 : 15,
@@ -19947,6 +19947,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .metronomeBanned = TRUE,
         .healingMove = TRUE,
         .sketchBanned = (B_SKETCH_BANS >= GEN_9),
+        .assistBanned = TRUE,
         .battleAnimScript = gBattleAnimMove_RevivalBlessing,
     },
 

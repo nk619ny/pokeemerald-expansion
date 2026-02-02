@@ -5944,7 +5944,7 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
         break;
     case EFFECT_EXPLOSION:
     case EFFECT_MISTY_EXPLOSION:
-        if (!IsAbilityOnField(ABILITY_DAMP))
+        if (!IsAbilityOnField(ABILITY_DAMP) && !IsAbilityOnField(ABILITY_MUDDY))
         {
             gBattleStruct->passiveHpUpdate[gBattlerAttacker] = 0;
             BattleScriptCall(BattleScript_FaintAttackerForExplosion);

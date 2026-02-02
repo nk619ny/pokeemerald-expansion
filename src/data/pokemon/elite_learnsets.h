@@ -1624,6 +1624,13 @@ static const u16 sLugiaEliteLearnset[] = {
 };
 #endif //P_FAMILY_LUGIA
 
+#if P_FAMILY_HO_OH
+static const u16 sHoOhEliteLearnset[] = {
+    MOVE_REVIVAL_BLESSING,
+    MOVE_UNAVAILABLE,
+};
+#endif //P_FAMILY_HO_OH
+
 // Gen 3
 
 #if P_FAMILY_LOTAD
