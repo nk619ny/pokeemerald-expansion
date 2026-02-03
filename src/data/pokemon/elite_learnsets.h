@@ -2750,6 +2750,7 @@ static const u16 sDelphoxEliteLearnset[] = {
 #if P_FAMILY_FLETCHLING
 static const u16 sTalonflameEliteLearnset[] = {
     MOVE_BEAK_BLAST,
+    MOVE_SKY_ATTACK,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FLETCHLING
