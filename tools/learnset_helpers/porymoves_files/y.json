@@ -41,7 +41,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -105,7 +105,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -173,7 +173,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -232,7 +232,7 @@
       "MOVE_MEGA_PUNCH",
       "MOVE_SWORDS_DANCE",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -301,7 +301,7 @@
       "MOVE_MEGA_PUNCH",
       "MOVE_SWORDS_DANCE",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -374,7 +374,7 @@
       "MOVE_MEGA_PUNCH",
       "MOVE_SWORDS_DANCE",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -442,7 +442,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -511,7 +511,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -584,7 +584,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -695,7 +695,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -786,7 +786,7 @@
     ],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -840,7 +840,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -896,7 +896,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -956,7 +956,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -1003,7 +1003,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -1058,7 +1058,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -1117,7 +1117,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -1172,7 +1172,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -1222,7 +1222,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -1280,7 +1280,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -1353,7 +1353,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -1405,7 +1405,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -1460,7 +1460,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -1518,7 +1518,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -1580,7 +1580,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -1640,7 +1640,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -1703,7 +1703,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -1774,7 +1774,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -1835,7 +1835,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -1898,7 +1898,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -1971,7 +1971,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2034,7 +2034,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2103,7 +2103,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2147,7 +2147,7 @@
       "MOVE_FLAMETHROWER"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2206,7 +2206,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2268,7 +2268,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2334,7 +2334,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -2388,7 +2388,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -2438,7 +2438,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -2497,7 +2497,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -2551,7 +2551,7 @@
     ],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2600,7 +2600,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2658,7 +2658,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2724,7 +2724,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -2790,7 +2790,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -2841,7 +2841,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2897,7 +2897,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -2950,7 +2950,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3012,7 +3012,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3065,7 +3065,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3131,7 +3131,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3202,7 +3202,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3283,7 +3283,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3343,7 +3343,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3388,7 +3388,7 @@
       "MOVE_FLAMETHROWER"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3443,7 +3443,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3508,7 +3508,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3572,7 +3572,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3613,7 +3613,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3678,7 +3678,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3744,7 +3744,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3803,7 +3803,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3867,7 +3867,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3931,7 +3931,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -3999,7 +3999,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -4062,7 +4062,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -4117,7 +4117,7 @@
     ],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -4178,7 +4178,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_BUBBLE_BEAM",
@@ -4250,7 +4250,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_BUBBLE_BEAM",
@@ -4307,7 +4307,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -4371,7 +4371,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -4436,7 +4436,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -4496,7 +4496,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -4560,7 +4560,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -4613,7 +4613,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -4694,7 +4694,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -4765,7 +4765,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -4826,7 +4826,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -4883,7 +4883,7 @@
       "MOVE_RAZOR_WIND",
       "MOVE_SWORDS_DANCE",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -4936,7 +4936,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -4997,7 +4997,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -5046,7 +5046,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -5106,7 +5106,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -5167,7 +5167,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_RAGE",
       "MOVE_MEGA_DRAIN",
@@ -5226,7 +5226,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_HYPER_BEAM",
       "MOVE_RAGE",
@@ -5278,7 +5278,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_BUBBLE_BEAM",
@@ -5331,7 +5331,7 @@
       "MOVE_TACKLE"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_BUBBLE_BEAM",
@@ -5381,7 +5381,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_RAGE",
       "MOVE_MEGA_DRAIN",
       "MOVE_THUNDERBOLT",
@@ -5425,7 +5425,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_RAGE",
       "MOVE_MEGA_DRAIN",
       "MOVE_THUNDERBOLT",
@@ -5471,7 +5471,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -5533,7 +5533,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -5594,7 +5594,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -5668,7 +5668,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -5730,7 +5730,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -5789,7 +5789,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -5844,7 +5844,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_RAGE",
       "MOVE_THUNDERBOLT",
@@ -5902,7 +5902,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_HYPER_BEAM",
       "MOVE_RAGE",
@@ -5962,7 +5962,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
@@ -6006,7 +6006,7 @@
       "MOVE_STUN_SPORE"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -6073,7 +6073,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -6149,7 +6149,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -6212,7 +6212,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -6268,7 +6268,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -6325,7 +6325,7 @@
       "MOVE_MEGA_PUNCH",
       "MOVE_SWORDS_DANCE",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -6389,7 +6389,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_RAGE",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -6442,7 +6442,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HYPER_BEAM",
       "MOVE_RAGE",
       "MOVE_THUNDERBOLT",
@@ -6504,7 +6504,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -6563,7 +6563,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -6640,7 +6640,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -6720,7 +6720,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -6774,7 +6774,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -6834,7 +6834,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_BUBBLE_BEAM",
@@ -6887,7 +6887,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_BUBBLE_BEAM",
@@ -6945,7 +6945,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7007,7 +7007,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7066,7 +7066,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_BUBBLE_BEAM",
@@ -7118,7 +7118,7 @@
       "MOVE_SWIFT"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_BUBBLE_BEAM",
@@ -7183,7 +7183,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7250,7 +7250,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -7306,7 +7306,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7369,7 +7369,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7434,7 +7434,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7497,7 +7497,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7545,7 +7545,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -7617,7 +7617,7 @@
       "MOVE_SPLASH"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7681,7 +7681,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -7760,7 +7760,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7838,7 +7838,7 @@
       "MOVE_TAKE_DOWN"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7919,7 +7919,7 @@
       "MOVE_TAKE_DOWN"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -7998,7 +7998,7 @@
       "MOVE_TAKE_DOWN"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -8050,7 +8050,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ICE_BEAM",
@@ -8106,7 +8106,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -8159,7 +8159,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -8213,7 +8213,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -8269,7 +8269,7 @@
       "MOVE_RAZOR_WIND",
       "MOVE_SWORDS_DANCE",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -8325,7 +8325,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -8380,7 +8380,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -8445,7 +8445,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_BUBBLE_BEAM",
@@ -8494,7 +8494,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -8543,7 +8543,7 @@
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
@@ -8595,7 +8595,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -8659,7 +8659,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -8729,7 +8729,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_RAZOR_WIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
@@ -8802,7 +8802,7 @@
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
@@ -8869,7 +8869,7 @@
       "MOVE_SWORDS_DANCE",
       "MOVE_WHIRLWIND",
       "MOVE_MEGA_KICK",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HORN_DRILL",
       "MOVE_BODY_SLAM",
       "MOVE_TAKE_DOWN",

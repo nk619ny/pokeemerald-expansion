@@ -21245,6 +21245,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_ThunderousKick,
     },
 
+
+        [MOVE_TOXIC_PLACEHOLDER] =
+    {
+        .name = COMPOUND_STRING("Toxic"),
+        .description = COMPOUND_STRING(
+            "Poisons the foe with an\n"
+            "intensifying toxin."),
+        .effect = EFFECT_NON_VOLATILE_STATUS,
+        .power = 0,
+        .type = TYPE_POISON,
+        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 85,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .argument = { .nonVolatileStatus = MOVE_EFFECT_TOXIC },
+        .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
+        .magicCoatAffected = TRUE,
+        .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = COMBO_STARTER_TOXIC,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Toxic,
+        .validApprenticeMove = TRUE,
+    },
+
         [MOVE_SEARING_SUNSMASH] =
     {
         .name = COMPOUND_STRING("Searing Sunsmash"),

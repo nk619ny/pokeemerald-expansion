@@ -6,6 +6,11 @@ Usage: python3 make_learnables.py INPUTS_DIR OUTPUT_FILE
 Build a primary store of learnable moves for each species based on input documents. This script
 is meant to be run to generate a pre-processed store of data that should not change very much;
 thus, it can safely be pre-computed in order to speed up incremental builds for end-users.
+
+Note: The following JSON files are excluded from processing:
+    - lgpe.json
+    - rgb.json
+    - y.json
 """
 
 from functools import reduce
@@ -13,6 +18,9 @@ from functools import reduce
 import json
 import pathlib
 import sys
+
+# JSON files to exclude from processing
+EXCLUDED_JSON_FILES = {"lgpe.json", "rgb.json", "y.json"}
 
 
 def from_single(fname: pathlib.Path) -> dict[str, set[str]]:
@@ -32,7 +40,7 @@ def from_batch(dir: pathlib.Path) -> dict[str, set[str]]:
             species: acc.get(species, set()) | single.get(species, set())
             for species in acc.keys() | single.keys()
         },
-        map(from_single, dir.glob("*.json")),
+        map(from_single, (f for f in dir.glob("*.json") if f.name not in EXCLUDED_JSON_FILES)),
         {},
     )
 

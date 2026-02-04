@@ -1,0 +1,119 @@
+{
+  "GOLBAT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_TOXIC"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "CROBAT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_TOXIC"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "RATTATA_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_HEADBUTT"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "RATICATE_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_HEADBUTT"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "MEOWTH_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_HEADBUTT"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "PERSIAN_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_HEADBUTT"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "GEODUDE_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_SEISMIC_TOSS"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "GRAVELER_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_SEISMIC_TOSS"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "GOLEM_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_SEISMIC_TOSS"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "GRIMER": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_SELF_DESTRUCT"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "GRIMER_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_SELF_DESTRUCT"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "MUK": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_SELF_DESTRUCT"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "MUK_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_SELF_DESTRUCT"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  }
+}

@@ -60,7 +60,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -176,7 +176,7 @@
       "MOVE_SEED_BOMB"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -301,7 +301,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -399,7 +399,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_DRAGON_CLAW",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -500,7 +500,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_DRAGON_CLAW",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -630,7 +630,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -751,7 +751,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -866,7 +866,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -990,7 +990,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -1148,7 +1148,7 @@
       "MOVE_TACKLE"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -1280,7 +1280,7 @@
       "MOVE_STRING_SHOT"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -1378,7 +1378,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -1482,7 +1482,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -1590,7 +1590,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -1688,7 +1688,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -1812,7 +1812,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -1915,7 +1915,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -2016,7 +2016,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -2119,7 +2119,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -2249,7 +2249,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -2358,7 +2358,7 @@
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -2441,7 +2441,7 @@
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_HYPER_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -2549,7 +2549,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -2670,7 +2670,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -2783,7 +2783,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -2887,7 +2887,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -2979,7 +2979,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -3103,7 +3103,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -3206,7 +3206,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -3297,7 +3297,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -3443,7 +3443,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -3547,7 +3547,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -3678,7 +3678,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -3760,7 +3760,7 @@
     "TMMoves": [
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -3870,7 +3870,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -3965,7 +3965,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -4076,7 +4076,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -4185,7 +4185,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -4288,7 +4288,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -4387,7 +4387,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -4465,7 +4465,7 @@
       "MOVE_SWEET_SCENT"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -4552,7 +4552,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -4662,7 +4662,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -4774,7 +4774,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -4888,7 +4888,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -4990,7 +4990,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -5106,7 +5106,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -5214,7 +5214,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -5343,7 +5343,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -5458,7 +5458,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -5576,7 +5576,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -5696,7 +5696,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -5821,7 +5821,7 @@
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -5943,7 +5943,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -6026,7 +6026,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -6130,7 +6130,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -6237,7 +6237,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -6324,7 +6324,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
@@ -6389,7 +6389,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -6507,7 +6507,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -6627,7 +6627,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -6743,7 +6743,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -6856,7 +6856,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -6969,7 +6969,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -7080,7 +7080,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -7186,7 +7186,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -7274,7 +7274,7 @@
       "MOVE_WRING_OUT"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -7375,7 +7375,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -7484,7 +7484,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -7587,7 +7587,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -7697,7 +7697,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -7808,7 +7808,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -7904,7 +7904,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -8015,7 +8015,7 @@
       "MOVE_TACKLE"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -8121,7 +8121,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -8253,7 +8253,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -8382,7 +8382,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -8492,7 +8492,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -8592,7 +8592,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -8692,7 +8692,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -8795,7 +8795,7 @@
       "MOVE_DOUBLE_HIT"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -8906,7 +8906,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -9034,7 +9034,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -9138,7 +9138,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -9261,7 +9261,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -9378,7 +9378,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -9458,7 +9458,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -9560,7 +9560,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -9681,7 +9681,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -9806,7 +9806,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -9939,7 +9939,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -10055,7 +10055,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -10190,7 +10190,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -10311,7 +10311,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -10429,7 +10429,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -10540,7 +10540,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
       "MOVE_LIGHT_SCREEN",
@@ -10644,7 +10644,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
       "MOVE_HYPER_BEAM",
@@ -10738,7 +10738,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -10841,7 +10841,7 @@
       "MOVE_WORRY_SEED"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -10955,7 +10955,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -11080,7 +11080,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -11209,7 +11209,7 @@
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -11327,7 +11327,7 @@
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -11434,7 +11434,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -11552,7 +11552,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -11667,7 +11667,7 @@
       "MOVE_GYRO_BALL"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -11767,7 +11767,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -11889,7 +11889,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -12025,7 +12025,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -12166,7 +12166,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -12277,7 +12277,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -12396,7 +12396,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -12500,7 +12500,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -12598,7 +12598,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -12699,7 +12699,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -12798,7 +12798,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -12871,7 +12871,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -13003,7 +13003,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -13137,7 +13137,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -13268,7 +13268,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
@@ -13380,7 +13380,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_HYPER_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -13486,7 +13486,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -13594,7 +13594,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -13702,7 +13702,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -13820,7 +13820,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
@@ -13932,7 +13932,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -14045,7 +14045,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -14144,7 +14144,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -14253,7 +14253,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -14362,7 +14362,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -14470,7 +14470,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -14568,7 +14568,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -14680,7 +14680,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -14784,7 +14784,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -14897,7 +14897,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -15024,7 +15024,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -15151,7 +15151,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -15270,7 +15270,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -15368,7 +15368,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -15468,7 +15468,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -15563,7 +15563,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -15676,7 +15676,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -15808,7 +15808,7 @@
       "MOVE_DRAGON_CLAW",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -15948,7 +15948,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
@@ -16074,7 +16074,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULK_UP",
       "MOVE_BULLET_SEED",
@@ -16234,7 +16234,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -16348,7 +16348,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -16468,7 +16468,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -16578,7 +16578,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -16681,7 +16681,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -16795,7 +16795,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -16914,7 +16914,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -17030,7 +17030,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -17157,7 +17157,7 @@
       "MOVE_DRAGON_CLAW",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -17279,7 +17279,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -17401,7 +17401,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -17520,7 +17520,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -17639,7 +17639,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -17745,7 +17745,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -17857,7 +17857,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -17969,7 +17969,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -18080,7 +18080,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -18185,7 +18185,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -18299,7 +18299,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -18418,7 +18418,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -18490,7 +18490,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -18566,7 +18566,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -18647,7 +18647,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -18753,7 +18753,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -18873,7 +18873,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -18998,7 +18998,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -19121,7 +19121,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -19227,7 +19227,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -19324,7 +19324,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -19437,7 +19437,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_HYPER_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -19523,7 +19523,7 @@
       "MOVE_SLEEP_POWDER"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -19622,7 +19622,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -19740,7 +19740,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -19870,7 +19870,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -19957,7 +19957,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -20075,7 +20075,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -20197,7 +20197,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -20319,7 +20319,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -20425,7 +20425,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -20538,7 +20538,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -20645,7 +20645,7 @@
       "MOVE_SYNTHESIS"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -20757,7 +20757,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -20858,7 +20858,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -20966,7 +20966,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -21084,7 +21084,7 @@
     ],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -21194,7 +21194,7 @@
       "MOVE_TRUMP_CARD"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -21291,7 +21291,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -21419,7 +21419,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -21537,7 +21537,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -21701,7 +21701,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -21813,7 +21813,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -21940,7 +21940,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -22053,7 +22053,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -22168,7 +22168,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -22315,7 +22315,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -22436,7 +22436,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -22560,7 +22560,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -22702,7 +22702,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
@@ -22819,7 +22819,7 @@
       "MOVE_WING_ATTACK"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -22912,7 +22912,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -23016,7 +23016,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -23123,7 +23123,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -23249,7 +23249,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -23367,7 +23367,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -23482,7 +23482,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -23586,7 +23586,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -23698,7 +23698,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -23824,7 +23824,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -23936,7 +23936,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -24040,7 +24040,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -24162,7 +24162,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -24223,7 +24223,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -24343,7 +24343,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
@@ -24447,7 +24447,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -24559,7 +24559,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -24684,7 +24684,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -24808,7 +24808,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -24908,7 +24908,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -25025,7 +25025,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -25140,7 +25140,7 @@
       "MOVE_SHARPEN"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -25243,7 +25243,7 @@
     "TMMoves": [
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -25360,7 +25360,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -25463,7 +25463,7 @@
       "MOVE_TACKLE"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -25569,7 +25569,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -25669,7 +25669,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -25765,7 +25765,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -25865,7 +25865,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -25992,7 +25992,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -26121,7 +26121,7 @@
     "TMMoves": [
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -26219,7 +26219,7 @@
     "TMMoves": [
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -26318,7 +26318,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -26413,7 +26413,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -26526,7 +26526,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -26655,7 +26655,7 @@
       "MOVE_DRAGON_CLAW",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -26791,7 +26791,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -26913,7 +26913,7 @@
     "TMMoves": [
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -27027,7 +27027,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -27128,7 +27128,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -27251,7 +27251,7 @@
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -27383,7 +27383,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -27495,7 +27495,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -27611,7 +27611,7 @@
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -27742,7 +27742,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -27856,7 +27856,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -27971,7 +27971,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -28096,7 +28096,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -28215,7 +28215,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -28335,7 +28335,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -28440,7 +28440,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -28560,7 +28560,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -28704,7 +28704,7 @@
       "MOVE_TACKLE"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -28800,7 +28800,7 @@
       },
       {
         "Level": 38,
-        "Move": "MOVE_TOXIC"
+        "Move": "MOVE_TOXIC_PLACEHOLDER"
       },
       {
         "Level": 41,
@@ -28814,7 +28814,7 @@
       "MOVE_TACKLE"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -28897,7 +28897,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
@@ -28991,7 +28991,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
@@ -29074,7 +29074,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
@@ -29159,7 +29159,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -29254,7 +29254,7 @@
       "MOVE_SYNTHESIS"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -29347,7 +29347,7 @@
       "MOVE_TORMENT"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -29452,7 +29452,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -29548,7 +29548,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -29643,7 +29643,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -29765,7 +29765,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -29870,7 +29870,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -29992,7 +29992,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -30121,7 +30121,7 @@
     ],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -30219,7 +30219,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -30329,7 +30329,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -30428,7 +30428,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -30544,7 +30544,7 @@
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
@@ -30641,7 +30641,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -30755,7 +30755,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -30886,7 +30886,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -30988,7 +30988,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -31103,7 +31103,7 @@
       "MOVE_MUD_SLAP"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -31208,7 +31208,7 @@
       "MOVE_MUD_SLAP"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -31302,7 +31302,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -31407,7 +31407,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -31541,7 +31541,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -31664,7 +31664,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -31792,7 +31792,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -31873,7 +31873,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -31964,7 +31964,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -32078,7 +32078,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -32166,7 +32166,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -32302,7 +32302,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -32415,7 +32415,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -32537,7 +32537,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -32657,7 +32657,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -32780,7 +32780,7 @@
       "MOVE_DRAGON_CLAW",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -32910,7 +32910,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -33050,7 +33050,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -33164,7 +33164,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -33280,7 +33280,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_HYPER_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -33394,7 +33394,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -33499,7 +33499,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -33594,7 +33594,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -33695,7 +33695,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -33813,7 +33813,7 @@
       "MOVE_WORRY_SEED"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -33919,7 +33919,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -34038,7 +34038,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -34140,7 +34140,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
@@ -34258,7 +34258,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
@@ -34370,7 +34370,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -34492,7 +34492,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -34590,7 +34590,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -34703,7 +34703,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -34819,7 +34819,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -34927,7 +34927,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -35052,7 +35052,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -35169,7 +35169,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -35276,7 +35276,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -35374,7 +35374,7 @@
       "MOVE_FISSURE"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -35486,7 +35486,7 @@
     ],
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -35608,7 +35608,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -35736,7 +35736,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -35844,7 +35844,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -35966,7 +35966,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -36080,7 +36080,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -36200,7 +36200,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -36303,7 +36303,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
       "MOVE_BLIZZARD",
@@ -36407,7 +36407,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -36518,7 +36518,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -36632,7 +36632,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -36732,7 +36732,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
@@ -36855,7 +36855,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
@@ -36970,7 +36970,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -37092,7 +37092,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -37198,7 +37198,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -37304,7 +37304,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -37405,7 +37405,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -37509,7 +37509,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -37576,7 +37576,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -37678,7 +37678,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -37759,7 +37759,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -37876,7 +37876,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -37999,7 +37999,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -38125,7 +38125,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -38239,7 +38239,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -38375,7 +38375,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -38494,7 +38494,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -38605,7 +38605,7 @@
     ],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -38729,7 +38729,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -38890,7 +38890,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -38993,7 +38993,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
@@ -39095,7 +39095,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -39203,7 +39203,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -39319,7 +39319,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -39387,7 +39387,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -39480,7 +39480,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -39577,7 +39577,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -39677,7 +39677,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -39784,7 +39784,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -39875,7 +39875,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -39990,7 +39990,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -40117,7 +40117,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -40247,7 +40247,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -40359,7 +40359,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -40457,7 +40457,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -40555,7 +40555,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -40661,7 +40661,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -40775,7 +40775,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -40899,7 +40899,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -41010,7 +41010,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -41105,7 +41105,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -41213,7 +41213,7 @@
       "MOVE_DRAGON_CLAW",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -41341,7 +41341,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -41452,7 +41452,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -41564,7 +41564,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -41669,7 +41669,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -41791,7 +41791,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -41903,7 +41903,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -42022,7 +42022,7 @@
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -42153,7 +42153,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -42275,7 +42275,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -42391,7 +42391,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -42521,7 +42521,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -42632,7 +42632,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -42723,7 +42723,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -42822,7 +42822,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -42911,7 +42911,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -43018,7 +43018,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -43134,7 +43134,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -43218,7 +43218,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -43310,7 +43310,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -43406,7 +43406,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_HYPER_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -43475,7 +43475,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -43558,7 +43558,7 @@
       "MOVE_WORRY_SEED"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -43654,7 +43654,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -43764,7 +43764,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -43876,7 +43876,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -43991,7 +43991,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -44120,7 +44120,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -44210,7 +44210,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -44310,7 +44310,7 @@
       },
       {
         "Level": 27,
-        "Move": "MOVE_TOXIC"
+        "Move": "MOVE_TOXIC_PLACEHOLDER"
       },
       {
         "Level": 31,
@@ -44335,7 +44335,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -44419,7 +44419,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
@@ -44512,7 +44512,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
@@ -44619,7 +44619,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
@@ -44713,7 +44713,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -44802,7 +44802,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -44886,7 +44886,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -44981,7 +44981,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -45102,7 +45102,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -45218,7 +45218,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -45334,7 +45334,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -45450,7 +45450,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -45572,7 +45572,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -45666,7 +45666,7 @@
     ],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -45769,7 +45769,7 @@
     ],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -45877,7 +45877,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -45993,7 +45993,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -46072,7 +46072,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -46170,7 +46170,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -46276,7 +46276,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -46386,7 +46386,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -46507,7 +46507,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -46613,7 +46613,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -46730,7 +46730,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -46815,7 +46815,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -46917,7 +46917,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -47014,7 +47014,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -47107,7 +47107,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -47209,7 +47209,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -47328,7 +47328,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -47455,7 +47455,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -47550,7 +47550,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -47680,7 +47680,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -47788,7 +47788,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
@@ -47892,7 +47892,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -47981,7 +47981,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -48104,7 +48104,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -48224,7 +48224,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -48350,7 +48350,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -48468,7 +48468,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -48570,7 +48570,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -48679,7 +48679,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -48782,7 +48782,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -48875,7 +48875,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
@@ -48986,7 +48986,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
@@ -49121,7 +49121,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -49270,7 +49270,7 @@
       "MOVE_TRI_ATTACK"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -49372,7 +49372,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -49507,7 +49507,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -49653,7 +49653,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -49780,7 +49780,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
       "MOVE_HYPER_BEAM",
@@ -49905,7 +49905,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -49996,7 +49996,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -50140,7 +50140,7 @@
       "MOVE_WING_ATTACK"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -50250,7 +50250,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -50362,7 +50362,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -50489,7 +50489,7 @@
       "MOVE_SLASH"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -50638,7 +50638,7 @@
     ],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -50765,7 +50765,7 @@
       "MOVE_SHARPEN"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -50897,7 +50897,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -51047,7 +51047,7 @@
       "MOVE_ROCK_THROW"
     ],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -51180,7 +51180,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -51310,7 +51310,7 @@
     ],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_TAUNT",
@@ -51413,7 +51413,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_LIGHT_SCREEN",
@@ -51499,7 +51499,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -51597,7 +51597,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -51695,7 +51695,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -51797,7 +51797,7 @@
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -51903,7 +51903,7 @@
       "MOVE_DRAGON_CLAW",
       "MOVE_WATER_PULSE",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULK_UP",
       "MOVE_HIDDEN_POWER",
@@ -52015,7 +52015,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -52109,7 +52109,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -52201,7 +52201,7 @@
       "MOVE_DRAGON_CLAW",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -52307,7 +52307,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_ICE_BEAM",
@@ -52398,7 +52398,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_WATER_PULSE",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -52487,7 +52487,7 @@
     "TMMoves": [
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_HIDDEN_POWER",
       "MOVE_ICE_BEAM",
@@ -52581,7 +52581,7 @@
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -52692,7 +52692,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
@@ -52788,7 +52788,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
       "MOVE_ROAR",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HAIL",
       "MOVE_BULLET_SEED",
       "MOVE_HIDDEN_POWER",
@@ -52933,7 +52933,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -53064,7 +53064,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -53187,7 +53187,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_WATER_PULSE",
       "MOVE_CALM_MIND",
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
@@ -53299,7 +53299,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
@@ -53388,7 +53388,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_TOXIC",
+      "MOVE_TOXIC_PLACEHOLDER",
       "MOVE_HIDDEN_POWER",
       "MOVE_SUNNY_DAY",
       "MOVE_HYPER_BEAM",
