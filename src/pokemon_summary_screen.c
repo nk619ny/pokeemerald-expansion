@@ -1937,7 +1937,7 @@ bool32 HasAnyRelearnableMoves(enum MoveRelearnerStates state)
         case MOVE_RELEARNER_LEVEL_UP_MOVES:
             return HasRelearnerLevelUpMoves(mon);
         case MOVE_RELEARNER_ELITE_MOVES:
-            return GetNumberOfEliteMoves(mon);
+            return HasRelearnerEliteMoves(mon);
         default:
             return FALSE;
     }

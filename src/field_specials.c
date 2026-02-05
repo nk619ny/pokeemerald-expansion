@@ -4493,7 +4493,6 @@ void ComparePartyMonTeraType(void)
 
 // Elite Move Tutor Special
 // Uses VAR_0x8004 as the party slot
-// Sets VAR_0x8005 to the number of elite moves available
 // Sets VAR_RESULT to TRUE if the Pokemon has elite moves, FALSE otherwise
 void CheckPartyMonHasEliteMoves(void)
 {
@@ -4501,13 +4500,10 @@ void CheckPartyMonHasEliteMoves(void)
     if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
         && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
     {
-        u8 numMoves = GetNumberOfEliteMoves(&gPlayerParty[slot]);
-        gSpecialVar_0x8005 = numMoves;
-        gSpecialVar_Result = (numMoves > 0);
+        gSpecialVar_Result = HasRelearnerEliteMoves(&gPlayerParty[slot]);
     }
     else
     {
-        gSpecialVar_0x8005 = 0;
         gSpecialVar_Result = FALSE;
     }
 }
@@ -4522,7 +4518,7 @@ void TeachEliteMoves(void)
 }
 
 // Checks if the party mon at slot VAR_0x8004 has egg moves that can be learned via script
-// Sets VAR_0x8005 to the number of egg moves, and VAR_RESULT to TRUE/FALSE
+// Sets VAR_RESULT to TRUE/FALSE
 void CheckPartyMonHasScriptEggMoves(void)
 {
     u16 species;
@@ -4535,19 +4531,15 @@ void CheckPartyMonHasScriptEggMoves(void)
 
         if (species != SPECIES_NONE && species != SPECIES_EGG)
         {
-            u8 numMoves = GetNumberOfEggMoves(mon);
-            gSpecialVar_0x8005 = numMoves;
-            gSpecialVar_Result = (numMoves > 0);
+            gSpecialVar_Result = HasRelearnerEggMoves(mon);
         }
         else
         {
-            gSpecialVar_0x8005 = 0;
             gSpecialVar_Result = FALSE;
         }
     }
     else
     {
-        gSpecialVar_0x8005 = 0;
         gSpecialVar_Result = FALSE;
     }
 }
