@@ -68,7 +68,7 @@ SINGLE_BATTLE_TEST("Sheer Force doesn't boost Present", s16 damage)
     } WHEN {
         //Test will fail if present heals because the hp change would be 0
         //so we want a damaging version of present
-        TURN { MOVE(player, MOVE_PRESENT, WITH_RNG(RNG_PRESENT, 1)); } 
+        TURN { MOVE(player, MOVE_PRESENT, WITH_RNG(RNG_PRESENT, 1)); }
     } SCENE {
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -219,7 +219,7 @@ SINGLE_BATTLE_TEST("Sheer Force doesn't boost Double Shock", s16 damage)
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
         PLAYER(SPECIES_PIKACHU);
-        OPPONENT(SPECIES_TAUROS) { Ability(ABILITY_SHEER_FORCE); };
+        OPPONENT(SPECIES_TAUROS) { Ability(ABILITY_SHEER_FORCE); }
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_DOUBLE_SHOCK); }
     } SCENE {
@@ -270,7 +270,7 @@ SINGLE_BATTLE_TEST("Sheer Force doesn't boost Aura Wheel", s16 damage)
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
         PLAYER(SPECIES_MORPEKO);
-        OPPONENT(SPECIES_TAUROS) { Ability(ABILITY_SHEER_FORCE); };
+        OPPONENT(SPECIES_TAUROS) { Ability(ABILITY_SHEER_FORCE); }
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_AURA_WHEEL); }
     } SCENE {
@@ -287,7 +287,7 @@ SINGLE_BATTLE_TEST("Sheer Force doesn't boost Hyperspace Fury", s16 damage)
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
         PLAYER(SPECIES_HOOPA_UNBOUND);
-        OPPONENT(SPECIES_TAUROS) { Ability(ABILITY_SHEER_FORCE); };
+        OPPONENT(SPECIES_TAUROS) { Ability(ABILITY_SHEER_FORCE); }
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_HYPERSPACE_FURY); }
     } SCENE {
@@ -665,11 +665,11 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             case EFFECT_SOLAR_BEAM:
             case EFFECT_SKY_DROP:
                 TURN { SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
-                TURN { ; }
+                TURN {}
                 break;
             case EFFECT_FUTURE_SIGHT:
-                TURN { ; }
-                TURN { ; }
+                TURN {}
+                TURN {}
                 break;
             case EFFECT_BIDE:
                 TURN { MOVE(opponentRight, MOVE_WATER_GUN, target: playerLeft); MOVE(playerRight, MOVE_WATER_GUN, target: opponentLeft); SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
@@ -690,10 +690,15 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             HP_BAR(opponentRight, captureDamage: &damage1);
         }
     } THEN {
-        if (IsMoveSheerForceBoosted(move))
+        if (IsMoveSheerForceBoosted(move)) {
+            if (!(damage1 > damage2))
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_GT(damage1, damage2);
-        else
+        } else {
+            if (damage1 != damage2)
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_EQ(damage2, damage1);
+        }
     }
 }
 
@@ -748,11 +753,11 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             case EFFECT_SOLAR_BEAM:
             case EFFECT_SKY_DROP:
                 TURN { SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
-                TURN { ; }
+                TURN {}
                 break;
             case EFFECT_FUTURE_SIGHT:
-                TURN { ; }
-                TURN { ; }
+                TURN {}
+                TURN {}
                 break;
             case EFFECT_BIDE:
                 TURN { MOVE(opponentRight, MOVE_WATER_GUN, target: playerLeft); MOVE(playerRight, MOVE_WATER_GUN, target: opponentLeft); SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
@@ -773,10 +778,15 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             HP_BAR(opponentRight, captureDamage: &damage1);
         }
     } THEN {
-        if (IsMoveSheerForceBoosted(move))
+        if (IsMoveSheerForceBoosted(move)) {
+            if (!(damage1 > damage2))
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_GT(damage1, damage2);
-        else
+        } else {
+            if (damage1 != damage2)
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_EQ(damage2, damage1);
+        }
     }
 }
 
@@ -831,11 +841,11 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             case EFFECT_SOLAR_BEAM:
             case EFFECT_SKY_DROP:
                 TURN { SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
-                TURN { ; }
+                TURN {}
                 break;
             case EFFECT_FUTURE_SIGHT:
-                TURN { ; }
-                TURN { ; }
+                TURN {}
+                TURN {}
                 break;
             case EFFECT_BIDE:
                 TURN { MOVE(opponentRight, MOVE_WATER_GUN, target: playerLeft); MOVE(playerRight, MOVE_WATER_GUN, target: opponentLeft); SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
@@ -856,10 +866,15 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             HP_BAR(opponentRight, captureDamage: &damage1);
         }
     } THEN {
-        if (IsMoveSheerForceBoosted(move))
+        if (IsMoveSheerForceBoosted(move)) {
+            if (!(damage1 > damage2))
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_GT(damage1, damage2);
-        else
+        } else {
+            if (damage1 != damage2)
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_EQ(damage2, damage1);
+        }
     }
 }
 
@@ -914,11 +929,11 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             case EFFECT_SOLAR_BEAM:
             case EFFECT_SKY_DROP:
                 TURN { SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
-                TURN { ; }
+                TURN {}
                 break;
             case EFFECT_FUTURE_SIGHT:
-                TURN { ; }
-                TURN { ; }
+                TURN {}
+                TURN {}
                 break;
             case EFFECT_BIDE:
                 TURN { MOVE(opponentRight, MOVE_WATER_GUN, target: playerLeft); MOVE(playerRight, MOVE_WATER_GUN, target: opponentLeft); SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
@@ -939,10 +954,15 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             HP_BAR(opponentRight, captureDamage: &damage1);
         }
     } THEN {
-        if (IsMoveSheerForceBoosted(move))
+        if (IsMoveSheerForceBoosted(move)) {
+            if (!(damage1 > damage2))
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_GT(damage1, damage2);
-        else
+        } else {
+            if (damage1 != damage2)
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_EQ(damage2, damage1);
+        }
     }
 }
 
@@ -997,11 +1017,11 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             case EFFECT_SOLAR_BEAM:
             case EFFECT_SKY_DROP:
                 TURN { SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
-                TURN { ; }
+                TURN {}
                 break;
             case EFFECT_FUTURE_SIGHT:
-                TURN { ; }
-                TURN { ; }
+                TURN {}
+                TURN {}
                 break;
             case EFFECT_BIDE:
                 TURN { MOVE(opponentRight, MOVE_WATER_GUN, target: playerLeft); MOVE(playerRight, MOVE_WATER_GUN, target: opponentLeft); SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
@@ -1022,10 +1042,15 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             HP_BAR(opponentRight, captureDamage: &damage1);
         }
     } THEN {
-        if (IsMoveSheerForceBoosted(move))
+        if (IsMoveSheerForceBoosted(move)) {
+            if (!(damage1 > damage2))
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_GT(damage1, damage2);
-        else
+        } else {
+            if (damage1 != damage2)
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_EQ(damage2, damage1);
+        }
     }
 }
 
@@ -1080,11 +1105,11 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             case EFFECT_SOLAR_BEAM:
             case EFFECT_SKY_DROP:
                 TURN { SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
-                TURN { ; }
+                TURN {}
                 break;
             case EFFECT_FUTURE_SIGHT:
-                TURN { ; }
-                TURN { ; }
+                TURN {}
+                TURN {}
                 break;
             case EFFECT_BIDE:
                 TURN { MOVE(opponentRight, MOVE_WATER_GUN, target: playerLeft); MOVE(playerRight, MOVE_WATER_GUN, target: opponentLeft); SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
@@ -1105,10 +1130,15 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             HP_BAR(opponentRight, captureDamage: &damage1);
         }
     } THEN {
-        if (IsMoveSheerForceBoosted(move))
+        if (IsMoveSheerForceBoosted(move)) {
+            if (!(damage1 > damage2))
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_GT(damage1, damage2);
-        else
+        } else {
+            if (damage1 != damage2)
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_EQ(damage2, damage1);
+        }
     }
 }
 
@@ -1163,11 +1193,11 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             case EFFECT_SOLAR_BEAM:
             case EFFECT_SKY_DROP:
                 TURN { SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
-                TURN { ; }
+                TURN {}
                 break;
             case EFFECT_FUTURE_SIGHT:
-                TURN { ; }
-                TURN { ; }
+                TURN {}
+                TURN {}
                 break;
             case EFFECT_BIDE:
                 TURN { MOVE(opponentRight, MOVE_WATER_GUN, target: playerLeft); MOVE(playerRight, MOVE_WATER_GUN, target: opponentLeft); SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
@@ -1188,10 +1218,15 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             HP_BAR(opponentRight, captureDamage: &damage1);
         }
     } THEN {
-        if (IsMoveSheerForceBoosted(move))
+        if (IsMoveSheerForceBoosted(move)) {
+            if (!(damage1 > damage2))
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_GT(damage1, damage2);
-        else
+        } else {
+            if (damage1 != damage2)
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_EQ(damage2, damage1);
+        }
     }
 }
 
@@ -1246,11 +1281,11 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             case EFFECT_SOLAR_BEAM:
             case EFFECT_SKY_DROP:
                 TURN { SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
-                TURN { ; }
+                TURN {}
                 break;
             case EFFECT_FUTURE_SIGHT:
-                TURN { ; }
-                TURN { ; }
+                TURN {}
+                TURN {}
                 break;
             case EFFECT_BIDE:
                 TURN { MOVE(opponentRight, MOVE_WATER_GUN, target: playerLeft); MOVE(playerRight, MOVE_WATER_GUN, target: opponentLeft); SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
@@ -1271,10 +1306,15 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             HP_BAR(opponentRight, captureDamage: &damage1);
         }
     } THEN {
-        if (IsMoveSheerForceBoosted(move))
+        if (IsMoveSheerForceBoosted(move)) {
+            if (!(damage1 > damage2))
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_GT(damage1, damage2);
-        else
+        } else {
+            if (damage1 != damage2)
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_EQ(damage2, damage1);
+        }
     }
 }
 
@@ -1330,11 +1370,11 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             case EFFECT_SOLAR_BEAM:
             case EFFECT_SKY_DROP:
                 TURN { SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
-                TURN { ; }
+                TURN {}
                 break;
             case EFFECT_FUTURE_SIGHT:
-                TURN { ; }
-                TURN { ; }
+                TURN {}
+                TURN {}
                 break;
             case EFFECT_BIDE:
                 TURN { MOVE(opponentRight, MOVE_WATER_GUN, target: playerLeft); MOVE(playerRight, MOVE_WATER_GUN, target: opponentLeft); SKIP_TURN(playerLeft); SKIP_TURN(opponentLeft); }
@@ -1355,10 +1395,15 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
             HP_BAR(opponentRight, captureDamage: &damage1);
         }
     } THEN {
-        if (IsMoveSheerForceBoosted(move))
+        if (IsMoveSheerForceBoosted(move)) {
+            if (!(damage1 > damage2))
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_GT(damage1, damage2);
-        else
+        } else {
+            if (damage1 != damage2)
+                DebugPrintf("Move that failed: %S", gMovesInfo[move].name);
             EXPECT_EQ(damage2, damage1);
+        }
     }
 }
 
