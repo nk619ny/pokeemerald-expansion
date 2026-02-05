@@ -437,6 +437,7 @@ script MauvilleCity_EventScript_Temporary{
 	//setflag(FLAG_MIRAGE_ISLAND_VISIBLE)
 	//additem(ITEM_TM_THUNDER_PUNCH,-1)
 	//additem(ITEM_TM_ICE_PUNCH,-1)
+	goto(EliteMoveTutor_EventScript_Start)
 	addvar(VAR_LEVEL_CAP, 1)
 	giveitem(ITEM_EXP_CANDY_S)
 	addcoins(9000)
