@@ -437,12 +437,12 @@ script MauvilleCity_EventScript_Temporary{
 	//setflag(FLAG_MIRAGE_ISLAND_VISIBLE)
 	//additem(ITEM_TM_THUNDER_PUNCH,-1)
 	//additem(ITEM_TM_ICE_PUNCH,-1)
-	goto(EliteMoveTutor_EventScript_Start)
-	addvar(VAR_LEVEL_CAP, 1)
+
+
 	giveitem(ITEM_EXP_CANDY_S)
-	addcoins(9000)
-	giveitem(ITEM_SUN_STONE,20)
-	giveitem(ITEM_WATER_STONE,20)
+
+	giveitem(ITEM_HEART_SCALE,20)
+
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
@@ -952,13 +952,14 @@ script Common_EventScript_RemoveOptionalItems8 {
 	return
 }
 
-script MoveTutor_EventScript_BasicTutorIntro {
+script Common_EventScript_BasicMoveTutor {
 	lock
 	faceplayer
 	goto_if_unset(FLAG_DEFEATED_NORMAN_INTRO, MoveTutor_EventScript_NotReadyYet)
-	if(var(VAR_TEMP_1) == 0) {
-		msgbox(format("Hello! I can teach your Pokémon new moves at no cost."), MSGBOX_DEFAULT)
+	if(!flag(FLAG_TEMP_1)) {
+		msgbox(format("Hello! I am the Move Tutor. I can teach your Pokémon new moves at no cost."), MSGBOX_DEFAULT)
 	}
+	setflag(FLAG_TEMP_1)
 	closemessage
 	goto(MoveTutor_EventScript_SelectMoveCategory)
 	releaseall
@@ -989,7 +990,11 @@ text MoveTutor_Text_WhichMoveWouldYouLikeToTeach {
 script MoveTutor_EventScript_SetSorting {
 	lock
 	faceplayer
-	msgbox(format("How would you like to sort the move tutor moves?"), MSGBOX_DEFAULT)
+	if(!flag(FLAG_TEMP_B)) {
+		msgbox(format("The Move Tutor on the left can teach many different moves.\pSometimes I find it easier to see them ordered in a particular way, so I can find the move I'm looking for."), MSGBOX_DEFAULT)
+	}
+	setflag(FLAG_TEMP_B)
+	msgbox(format("How would you like the move tutor to sort his moves?"), MSGBOX_DEFAULT)
 	dynmultichoice(25,8,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Recently Unlocked First", "Alphabetically")
 	switch(var(VAR_RESULT)) {
 		case 0:
@@ -1004,6 +1009,42 @@ script MoveTutor_EventScript_SetSorting {
 			msgbox(format("Come see me if you want to change how the tutor moves are sorted."), MSGBOX_DEFAULT)
 	}
 	closemessage
+	releaseall
+	return
+}
+
+script PokemonCenter_2F_EventScript_ExplainTutors {
+	lock
+	faceplayer
+	if(!flag(FLAG_TEMP_A)) {
+		msgbox(format("The staff here can help you develop your Pokémon in many ways."), MSGBOX_DEFAULT)
+		closemessage
+	}
+	setflag(FLAG_TEMP_A)
+	msgbox(format("Would you like me to tell you about any of the services here?"), MSGBOX_DEFAULT)
+	dynmultichoice(25,0,FALSE,6,0,DYN_MULTICHOICE_CB_NONE, "Basic Move Tutor", "Egg Move Tutor", "Elite Move Tutor","Pre-Damage","Attribute Changer","Nothing")
+	switch(var(VAR_RESULT)) {
+		case 0:
+			msgbox(format("The well-dressed man on the left is the Basic Move Tutor.\pHe can teach a variety of new moves to your Pokémon, completely free!\pAs you defeat more Gym Leaders, he'll be able to teach new, more powerful moves to your Pokémon."), MSGBOX_DEFAULT)
+		case 1:
+			msgbox(format("The woman in the middle is the Egg Move Tutor.\pShe can teach your Pokémon moves that they can normally only learn through breeding.\pBut, she charges a Heart Scale for each move she teaches.\pIf you have the right combination of Pokémon, they might be able to teach each other Egg Moves for free at the Day Care Center in Route 117. So, consider carefully how to use her services."), MSGBOX_DEFAULT)
+			closemessage
+			if(!flag(FLAG_BADGE02_GET)){
+				msgbox(format("However, she will only teach your Pokémon Egg Moves if you have at least one Gym Badge."), MSGBOX_DEFAULT)
+			}
+		case 2:
+			msgbox(format("The older man in the middle is the Elite Move Tutor.\pHe can teach your Pokémon some very rare and powerful moves, but he charges a Heart Scale for each move he teaches.\pThese Elite Moves might normally be exclusive to other Pokémon, or could be moves a Pokémon could learn in faraway places long ago that they no longer learn naturally."), MSGBOX_DEFAULT)
+			closemessage
+			if(!flag(FLAG_BADGE04_GET)){
+				msgbox(format("However, he will only teach your Pokémon Elite Moves if you have at least 3 Gym Badges."), MSGBOX_DEFAULT)
+			}
+		case 3:
+			msgbox(format("The strange woman on the right can inflict a status condition or damage your Pokémon before a battle.\pThis can be useful for some clever strategies.\pShe doesn't charge anything to do it... which makes it feel weirder somehow."), MSGBOX_DEFAULT)
+		case 4:
+			msgbox(format("The woman on the far right can help you adjust some of the hidden attributes of your Pokémon, such as their Nature, IVs, or Hidden Power.\pShe charges a Heart Scale for each change she makes."), MSGBOX_DEFAULT)
+		default:
+			closemessage
+	}
 	releaseall
 	return
 }
@@ -1717,17 +1758,21 @@ script MoveTutor_EventScript_ComeBackLater{
 	end
 }
 
-script PokemonCenter_2F_EventScript_PreTrain_Intro {
+script Common_EventScript_PreDamageOrStatus {
 	lockall
 	faceplayer
-	msgbox(format("I can pre-damage or pre-status your Pokémon, for tactical purposes.\pWhat would you like to do?"), MSGBOX_DEFAULT)
+	if(!flag(FLAG_TEMP_4)) {
+		msgbox(format("I can weaken your Pokémon before battle, by inflicting damage or a status condition."), MSGBOX_DEFAULT)
+	}
+	setflag(FLAG_TEMP_4)
+	msgbox(format("How can I be of assistance?"), MSGBOX_DEFAULT)
 
-	dynmultichoice(25,6,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Set Damage", "Set Status","Never Mind")
+	dynmultichoice(25,6,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Set Status", "Set Damage", "Never Mind")
 	switch (var(VAR_RESULT)) {
 		case 0:
-			goto(PokemonCenter_2F_EventScript_PreTrain_ComeBackLater)
-		case 1:
 			goto(PokemonCenter_2F_EventScript_InflictStatusMenu)
+		case 1:
+			goto(PokemonCenter_2F_EventScript_PreTrain_ComeBackLater)
 		case 2:
 			goto(PokemonCenter_2F_EventScript_PreTrain_ComeBackLater)
 	}
@@ -1737,7 +1782,7 @@ script PokemonCenter_2F_EventScript_PreTrain_Intro {
 
 script PokemonCenter_2F_EventScript_PreTrain_ComeBackLater{
 	lock
-	msgbox(format("Come back later if you ever want to adjust your Pokémon's damage or status."), MSGBOX_DEFAULT)
+	msgbox(format("I'll be here, if you ever need my services."), MSGBOX_DEFAULT)
 	closemessage
 	releaseall
 	end
@@ -1820,6 +1865,45 @@ script PokemonCenter_2F_EventScript_InflictStatusMenu {
     end
 }
 
+script Common_EventScript_AttributeChanger {
+	lockall
+	faceplayer
+	if(!flag(FLAG_TEMP_5)) {
+		msgbox(format("Hello! I can change your Pokémon's Nature, IVs, or Hidden Power Type.\pIt will cost you a Heart Scale, however."), MSGBOX_DEFAULT)
+	}
+	if (!checkitem(ITEM_HEART_SCALE, 1)) {
+		msgbox(EliteMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT)
+		clearflag(FLAG_TEMP_5)
+		releaseall
+		end
+	}
+	setflag(FLAG_TEMP_5)
+	closemessage
+	msgbox(format("What would you like to change?"), MSGBOX_DEFAULT)
+	dynmultichoice(25,3,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Nature", "IVs", "Hidden Power Type","Nevermind")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			goto(Common_EventScript_AttributeChanger_ComeBackLater)
+		case 1:
+			goto(Common_EventScript_AttributeChanger_ComeBackLater)
+		case 2:
+			goto(PokemonCenter_2F_EventScript_ChangeHiddenPowerType)
+		case 3:
+			goto(Common_EventScript_AttributeChanger_ComeBackLater)
+		default:
+			goto(Common_EventScript_AttributeChanger_ComeBackLater)
+	}
+	releaseall
+	end
+}
+
+script Common_EventScript_AttributeChanger_ComeBackLater {
+	lock
+	msgbox(format("I'll be here if you ever want to change any of your Pokémon's attributes!"), MSGBOX_DEFAULT)
+	closemessage
+	releaseall
+	end
+}
 
 script PokemonCenter_2F_EventScript_ChangeHiddenPowerType{
 	getpartysize
@@ -1916,10 +2000,11 @@ script PokemonCenter_2F_EventScript_ChangeHiddenPowerType{
 		releaseall
 		end
 	}
-	msgbox(format("Are you sure you want to change {STR_VAR_1}'s Hidden Power type to {STR_VAR_2}?"), MSGBOX_YESNO)
+	msgbox(format("Are you sure you want to change {STR_VAR_1}'s Hidden Power type to {STR_VAR_2} for a Heart Scale?"), MSGBOX_YESNO)
 	if(var(VAR_RESULT) == TRUE) {
 		special(ChangeTeraType)
 		msgbox(format("Your {STR_VAR_1}'s Hidden Power type was changed to {STR_VAR_2}!"), MSGBOX_DEFAULT)
+		removeitem(ITEM_HEART_SCALE, 1)
 		closemessage
 		releaseall
 		end
@@ -1933,16 +2018,27 @@ script PokemonCenter_2F_EventScript_ChangeHiddenPowerType{
 }
 // Elite Move Tutor - Teaches special Elite Moves to eligible Pokemon
 // This uses the move relearner system but is only accessible through this script
-script EliteMoveTutor_EventScript_Start {
+script Common_EventScript_EliteMoveTutor {
 	lock
 	faceplayer
+	if(!flag(FLAG_TEMP_3)) {
+		msgbox(EliteMoveTutor_Text_Intro, MSGBOX_DEFAULT)
+	}
 	// Check if player has a Heart Scale
-	if (!checkitem(ITEM_HEART_SCALE, 1)) {
-		msgbox(EliteMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT)
+	if (!flag(FLAG_BADGE04_GET)) {
+		msgbox(format("You need to increase your Trainer Level further before I can teach any Elite Moves to your Pokémon."), MSGBOX_DEFAULT)
+		clearflag(FLAG_TEMP_3)
 		releaseall
 		end
 	}
-	msgbox(EliteMoveTutor_Text_Intro, MSGBOX_DEFAULT)
+	if (!checkitem(ITEM_HEART_SCALE, 1)) {
+		msgbox(EliteMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT)
+		clearflag(FLAG_TEMP_3)
+		releaseall
+		end
+	}
+	setflag(FLAG_TEMP_3)
+	msgbox(format("Would you like me to teach an Elite Move to any of your Pokémon?"), MSGBOX_DEFAULT)
 	goto(EliteMoveTutor_EventScript_ChooseMon)
 }
 
@@ -2001,7 +2097,7 @@ script EliteMoveTutor_EventScript_Cancel {
 }
 
 text EliteMoveTutor_Text_Intro {
-	format("I am the Elite Move Tutor.\pI can teach certain Pokémon powerful Elite Moves that they can't learn any other way.\pIt will cost you one Heart Scale per move.\pWould you like me to teach an Elite Move to one of your Pokémon?")
+	format("I am the Elite Move Tutor.\pI can teach certain Pokémon powerful Elite Moves that they can't learn any other way.\pIt will cost you one Heart Scale per move.")
 }
 
 text EliteMoveTutor_Text_ChooseMon {
@@ -2029,25 +2125,37 @@ text EliteMoveTutor_Text_ComeBack {
 }
 
 text EliteMoveTutor_Text_NeedHeartScale {
-	format("I am the Elite Move Tutor.\pI can teach certain Pokémon powerful Elite Moves, but I require a Heart Scale as payment.\pCome back when you have one.")
+	format("Come back when you have a Heart Scale.")
 }
 
 text EliteMoveTutor_Text_NoMoreHeartScales {
-	format("That's all for now!\pCome back with more Heart Scales if you want to learn additional Elite Moves.")
+	format("That's all for now.\pCome back with more Heart Scales if you want to learn additional Elite Moves.")
 }
 
 // Egg Move Tutor - Teaches Egg Moves to eligible Pokemon via script
 // This uses the move relearner system but with script-only access (not accessible from summary screen)
-script EggMoveTutor_EventScript_Start {
+script Common_EventScript_EggMoveTutor {
 	lock
 	faceplayer
 	// Check if player has a Heart Scale
+	if(!flag(FLAG_BADGE02_GET)) {
+		msgbox(format("I'm the Egg Move Tutor.\pI can teach Pokémon moves they could have learned as Eggs.\pUnfortunately, I can only work with Trainers with at least one Gym Badge.\pPlease come back later!"), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
 	if (!checkitem(ITEM_HEART_SCALE, 1)) {
 		msgbox(EggMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT)
 		releaseall
 		end
 	}
-	msgbox(EggMoveTutor_Text_Intro, MSGBOX_DEFAULT)
+	if(!flag(FLAG_TEMP_2)) {
+		msgbox(EggMoveTutor_Text_Intro, MSGBOX_DEFAULT)
+		setflag(FLAG_TEMP_2)
+		closemessage
+	}
+	msgbox(format("Would you like me to teach an Egg Move to any of your Pokémon for a Heart Scale?"), MSGBOX_DEFAULT)
+	closemessage
 	goto(EggMoveTutor_EventScript_ChooseMon)
 }
 
@@ -2106,7 +2214,7 @@ script EggMoveTutor_EventScript_Cancel {
 }
 
 text EggMoveTutor_Text_Intro {
-	format("I am the Egg Move Tutor.\pI can teach certain Pokémon moves they could have learned as Eggs.\pIt will cost you one Heart Scale per move.\pWould you like me to teach an Egg Move to one of your Pokémon?")
+	format("I am the Egg Move Tutor.\pI can teach certain Pokémon moves they could have learned as Eggs.\pIt will cost you one Heart Scale per move.")
 }
 
 text EggMoveTutor_Text_ChooseMon {
