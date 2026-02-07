@@ -2118,9 +2118,9 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6,
     },
 
-    [ABILITY_PLANT_POSER] =
+    [ABILITY_WOODWORKER] =
     {
-        .name = _("Plant Poser"),
+        .name = _("Woodworker"),
         .description = COMPOUND_STRING("Powers up Grass moves."),
         .aiRating = 6,
     },
