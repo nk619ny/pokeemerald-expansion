@@ -1804,7 +1804,7 @@ PokemonCenter_2F_EventScript_ExplainTutors_1:
 # 1024 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_ExplainTutors_Text_1, MSGBOX_DEFAULT
 # 1025 "data/maps/TradeCenter/scripts.pory"
-	dynmultichoice 25, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, PokemonCenter_2F_EventScript_ExplainTutors_Text_2, PokemonCenter_2F_EventScript_ExplainTutors_Text_3, PokemonCenter_2F_EventScript_ExplainTutors_Text_4, PokemonCenter_2F_EventScript_ExplainTutors_Text_5, PokemonCenter_2F_EventScript_ExplainTutors_Text_6, PokemonCenter_2F_EventScript_ExplainTutors_Text_7
+	dynmultichoice 25, 0, FALSE, 6, 0, DYN_MULTICHOICE_CB_NONE, PokemonCenter_2F_EventScript_ExplainTutors_Text_2, PokemonCenter_2F_EventScript_ExplainTutors_Text_3, PokemonCenter_2F_EventScript_ExplainTutors_Text_4, PokemonCenter_2F_EventScript_ExplainTutors_Text_5, PokemonCenter_2F_EventScript_ExplainTutors_Text_6, PokemonCenter_2F_EventScript_ExplainTutors_Text_7
 # 1026 "data/maps/TradeCenter/scripts.pory"
 	switch VAR_RESULT
 # 1027 "data/maps/TradeCenter/scripts.pory"
@@ -4718,7 +4718,8 @@ PokemonCenter_2F_EventScript_ExplainTutors_Text_10:
 
 PokemonCenter_2F_EventScript_ExplainTutors_Text_11:
 # 1036 "data/maps/TradeCenter/scripts.pory"
-	.string "The older man in the Elite Move Tutor.\p"
+	.string "The older man in the middle is the Elite\n"
+	.string "Move Tutor.\p"
 	.string "He can teach your Pokémon some very\n"
 	.string "rare and powerful moves, but he charges\l"
 	.string "a Heart Scale for each move he teaches.\p"
@@ -4742,7 +4743,7 @@ PokemonCenter_2F_EventScript_ExplainTutors_Text_13:
 	.string "This can be useful for some clever\n"
 	.string "strategies.\p"
 	.string "She doesn't charge anything to do it...\n"
-	.string "which makes it feel worse somehow.$"
+	.string "which makes it feel weirder somehow.$"
 
 PokemonCenter_2F_EventScript_ExplainTutors_Text_14:
 # 1044 "data/maps/TradeCenter/scripts.pory"
