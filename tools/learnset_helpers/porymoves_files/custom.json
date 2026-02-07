@@ -115,5 +115,213 @@
     ],
     "EggMoves": [],
     "TutorMoves": []
+  },
+  "COSMOEM": {
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_COSMIC_POWER"
+      },    
+      {
+        "Level": 0,
+        "Move": "MOVE_CONFUSION"
+      },
+      {
+        "Level": 0,
+        "Move": "MOVE_TELEPORT"
+      },  
+      {
+        "Level": 12,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_WISH"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_ZEN_HEADBUTT"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_GRAVITY"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_METEOR_MASH"
+      },
+      {
+        "Level": 53,
+        "Move": "MOVE_RECOVER"
+      },
+      {
+        "Level": 57,
+        "Move": "MOVE_CALM_MIND"
+      },
+      {
+        "Level": 63,
+        "Move": "MOVE_FUTURE_SIGHT"
+      },
+      {
+        "Level": 68,
+        "Move": "MOVE_MOONBLAST"
+      }
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_AGILITY",
+      "MOVE_PROTECT",
+      "MOVE_SWIFT",
+      "MOVE_ENDURE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_RAIN_DANCE",
+      "MOVE_PSYSHOCK",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_SLEEP_TALK",
+      "MOVE_REFLECT",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_REST",
+      "MOVE_CONFUSE_RAY",
+      "MOVE_CHARGE_BEAM",
+      "MOVE_HEX",
+      "MOVE_ICY_WIND",
+      "MOVE_DAZZLING_GLEAM",
+      "MOVE_AIR_SLASH",
+      "MOVE_SHADOW_BALL",
+      "MOVE_ICE_BEAM",
+      "MOVE_BLIZZARD",
+      "MOVE_HEAT_WAVE",
+      "MOVE_POLTERGEIST",
+      "MOVE_NIGHT_SHADE",
+      "MOVE_FLASH_CANNON",
+      "MOVE_SUBSTITUTE",
+      "MOVE_IRON_DEFENSE",
+      "MOVE_HYPER_VOICE",
+      "MOVE_PSYCHIC",
+      "MOVE_HEAVY_SLAM",
+      "MOVE_FLAMETHROWER",
+      "MOVE_THUNDERBOLT",
+      "MOVE_CALM_MIND",
+      "MOVE_HELPING_HAND",
+      "MOVE_FIRE_BLAST",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_FOCUS_BLAST",
+      "MOVE_TRICK_ROOM",
+      "MOVE_HYPER_BEAM",
+      "MOVE_THUNDER",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_HEAT_CRASH",
+      "MOVE_PSYCH_UP",
+      "MOVE_FUTURE_SIGHT",
+      "MOVE_EXPANDING_FORCE",
+      "MOVE_METEOR_BEAM",
+      "MOVE_METAL_SOUND"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+    "ZYGARDE": {
+    "LevelMoves": [
+      {
+        "Level": "1",
+        "Move": "MOVE_BITE"
+      },
+      {
+        "Level": "1",
+        "Move": "MOVE_DRAGON_BREATH"
+      },
+      {
+        "Level": "1",
+        "Move": "MOVE_BULLDOZE"
+      },
+      {
+        "Level": "8",
+        "Move": "MOVE_HAZE"
+      },
+      {
+        "Level": "16",
+        "Move": "MOVE_DIG"
+      },
+      {
+        "Level": "24",
+        "Move": "MOVE_SAFEGUARD"
+      },
+      {
+        "Level": "32",
+        "Move": "MOVE_CRUNCH"
+      },
+      {
+        "Level": "35",
+        "Move": "MOVE_CORE_ENFORCER"
+      },
+      {
+        "Level": "38",
+        "Move": "MOVE_LANDS_WRATH"
+      },
+      {
+        "Level": "40",
+        "Move": "MOVE_DRAGON_PULSE"
+      },
+      {
+        "Level": "44",
+        "Move": "MOVE_BREAKING_SWIPE"
+      },
+      {
+        "Level": "50",
+        "Move": "MOVE_THOUSAND_ARROWS"
+      },
+      {
+        "Level": "50",
+        "Move": "MOVE_THOUSAND_WAVES"
+      },
+      {
+        "Level": "56",
+        "Move": "MOVE_GLARE"
+      },
+      {
+        "Level": "60",
+        "Move": "MOVE_SLUDGE_WAVE"
+      },
+      {
+        "Level": "70",
+        "Move": "MOVE_EXTREME_SPEED"
+      },
+      {
+        "Level": "80",
+        "Move": "MOVE_EARTHQUAKE"
+      },
+      {
+        "Level": "88",
+        "Move": "MOVE_OUTRAGE"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_BODY_SLAM",
+      "MOVE_BRICK_BREAK",
+      "MOVE_DRACO_METEOR",
+      "MOVE_EARTH_POWER",
+      "MOVE_ENDURE",
+      "MOVE_FOCUS_BLAST",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_HYPER_BEAM",
+      "MOVE_HYPER_VOICE",
+      "MOVE_IRON_HEAD",
+      "MOVE_PROTECT",
+      "MOVE_ROCK_SLIDE",
+      "MOVE_STONE_EDGE",
+      "MOVE_SUBSTITUTE",
+      "MOVE_SWIFT",
+      "MOVE_ZEN_HEADBUTT"
+    ],
+    "TutorMoves": [],
+    "EggMoves": []
   }
 }

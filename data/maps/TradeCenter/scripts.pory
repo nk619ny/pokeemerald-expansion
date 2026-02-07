@@ -1053,7 +1053,7 @@ script MoveTutor_EventScript_GetPhysicalMoveList {
 		dynmultipush("Brutal Swing",5)
 		dynmultipush("Power-Up Punch",32)
 	}
-	if(flag(FLAG_BADGE04_GET)) {
+	if(flag(FLAG_BADGE01_GET)) {
 		dynmultipush("Gyro Ball",15)
 		dynmultipush("Heavy Slam",18)
 		dynmultipush("Giga Impact",14)
@@ -1064,7 +1064,7 @@ script MoveTutor_EventScript_GetPhysicalMoveList {
 		dynmultipush("Rock Blast",35)
 		dynmultipush("Tail Slap",44)
 	}
-	if(flag(FLAG_BADGE03_GET)) {
+	if(flag(FLAG_BADGE04_GET)) {
 		dynmultipush("Hard Press",16)
 		dynmultipush("Self-Destruct",40)
 		dynmultipush("Rock Climb",36)
@@ -1074,7 +1074,7 @@ script MoveTutor_EventScript_GetPhysicalMoveList {
 		dynmultipush("Secret Power",39)
 		dynmultipush("Trailblaze",47)
 	}
-	if(flag(FLAG_BADGE02_GET)) {
+	if(flag(FLAG_BADGE03_GET)) {
 		dynmultipush("Iron Tail",21)
 		dynmultipush("Headbutt",17)
 		dynmultipush("Smart Strike",42)
@@ -1082,7 +1082,7 @@ script MoveTutor_EventScript_GetPhysicalMoveList {
 		dynmultipush("Ice Fang",19)
 		dynmultipush("Thunder Fang",46)
 	}
-	if(flag(FLAG_BADGE01_GET)) {
+	if(flag(FLAG_BADGE02_GET)) {
 		dynmultipush("Low Kick",24)
 		dynmultipush("Focus Punch",13)
 		dynmultipush("Bug Bite",6)
@@ -1110,7 +1110,7 @@ script MoveTutor_EventScript_GetSpecialMoveList {
 		dynmultipush("Aura Sphere",3)
 		dynmultipush("Mystical Fire",26)
 		dynmultipush("Psychic Noise",30)
-		dynmultipush("Stored Power",35)
+		dynmultipush("Stored Power",36)
 	}
 	if(flag(FLAG_BADGE06_GET)) {
 		dynmultipush("Electro Ball",10)
@@ -1124,35 +1124,36 @@ script MoveTutor_EventScript_GetSpecialMoveList {
 		dynmultipush("Focus Blast",14)
 		dynmultipush("Fire Pledge",12)
 		dynmultipush("Grass Pledge",18)
-		dynmultipush("Water Pledge",38)
+		dynmultipush("Water Pledge",39)
 	}
-	if(flag(FLAG_BADGE04_GET)) {
+	if(flag(FLAG_BADGE01_GET)) {
 		dynmultipush("Psycho Boost",31)
 		dynmultipush("Dream Eater",8)
-		dynmultipush("Tri Attack",36)
+		dynmultipush("Tri Attack",37)
 	}
-	if(flag(FLAG_BADGE03_GET)) {
-		dynmultipush("Zap Cannon",40)
-		dynmultipush("Uproar",37)
+	if(flag(FLAG_BADGE04_GET)) {
+		dynmultipush("Zap Cannon",41)
+		dynmultipush("Uproar",38)
 		dynmultipush("Psybeam",29)
 		dynmultipush("Burning Jealousy",6)
 		dynmultipush("Incinerate",20)
 	}
-	if(flag(FLAG_BADGE02_GET)) {
+	if(flag(FLAG_BADGE03_GET)) {
 		dynmultipush("Night Shade",27)
+		dynmultipush("Signal Beam",34)
 		dynmultipush("Brine",5)
 		dynmultipush("Frost Breath",16)
 		dynmultipush("Shock Wave",33)
-		dynmultipush("Silver Wind",34)
+		dynmultipush("Silver Wind",35)
 	}
-	if(flag(FLAG_BADGE01_GET)) {
+	if(flag(FLAG_BADGE02_GET)) {
 		dynmultipush("Air Cutter",1)
 		dynmultipush("Magical Leaf",22)
 		dynmultipush("Round",32)
 		dynmultipush("Electroweb",11)
 		dynmultipush("Mud Shot",24)
 		dynmultipush("Fire Spin",13)
-		dynmultipush("Whirlpool",39)
+		dynmultipush("Whirlpool",40)
 	}
 	if(flag(FLAG_DEFEATED_NORMAN_INTRO)) {
 		dynmultipush("Disarming Voice",7)
@@ -1199,19 +1200,19 @@ script MoveTutor_EventScript_GetStatusMoveList{
 		dynmultipush("Trick",41)
 		dynmultipush("Venom Drench",42)
 	}
-	if(flag(FLAG_BADGE04_GET)) {
+	if(flag(FLAG_BADGE01_GET)) {
 		dynmultipush("Curse",8)
 		dynmultipush("Iron Defense",19)
 		dynmultipush("Stealth Rock",37)
 		dynmultipush("Wonder Room",43)
 	}
-	if(flag(FLAG_BADGE03_GET)) {
+	if(flag(FLAG_BADGE04_GET)) {
 		dynmultipush("Agility",1)
 		dynmultipush("Metal Sound",21)
 		dynmultipush("Nature Power",24)
 		dynmultipush("Snatch",33)
 	}
-	if(flag(FLAG_BADGE02_GET)) {
+	if(flag(FLAG_BADGE03_GET)) {
 		dynmultipush("Charge",4)
 		dynmultipush("Confuse Ray",6)
 		dynmultipush("Embargo",12)
@@ -1219,7 +1220,7 @@ script MoveTutor_EventScript_GetStatusMoveList{
 		dynmultipush("Recycle",30)
 		dynmultipush("Spikes",35)
 	}
-	if(flag(FLAG_BADGE01_GET)) {
+	if(flag(FLAG_BADGE02_GET)) {
 		dynmultipush("Coaching",5)
 		dynmultipush("Hone Claws",17)
 	}
@@ -1516,24 +1517,27 @@ script MoveTutor_EventScript_TeachSpecialMove{
 			setvar(VAR_0x8005, MOVE_SHOCK_WAVE)
 			bufferstring(STR_VAR_1, "Shock Wave")
 		case 34:
+			setvar(VAR_0x8005, MOVE_SIGNAL_BEAM)
+			bufferstring(STR_VAR_1, "Signal Beam")
+		case 35:
 			setvar(VAR_0x8005, MOVE_SILVER_WIND)
 			bufferstring(STR_VAR_1, "Silver Wind")
-		case 35:
+		case 36:
 			setvar(VAR_0x8005, MOVE_STORED_POWER)
 			bufferstring(STR_VAR_1, "Stored Power")
-		case 36:
+		case 37:
 			setvar(VAR_0x8005, MOVE_TRI_ATTACK)
 			bufferstring(STR_VAR_1, "Tri Attack")
-		case 37:
+		case 38:
 			setvar(VAR_0x8005, MOVE_UPROAR)
 			bufferstring(STR_VAR_1, "Uproar")
-		case 38:
+		case 39:
 			setvar(VAR_0x8005, MOVE_WATER_PLEDGE)
 			bufferstring(STR_VAR_1, "Water Pledge")
-		case 39:
+		case 40:
 			setvar(VAR_0x8005, MOVE_WHIRLPOOL)
 			bufferstring(STR_VAR_1, "Whirlpool")
-		case 40:
+		case 41:
 			setvar(VAR_0x8005, MOVE_ZAP_CANNON)
 			bufferstring(STR_VAR_1, "Zap Cannon")
 		default:
