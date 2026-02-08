@@ -1216,7 +1216,7 @@ script MoveTutor_EventScript_GetStatusMoveList{
 		dynmultipush("Rain Dance",29)
 		dynmultipush("Sandstorm",31)
 		dynmultipush("Snowscape",34)
-		dynmultipush("Sunny Day",38)
+		dynmultipush("Sunny Day",39)
 	}
 	if(flag(FLAG_BADGE08_GET)) {
 		dynmultipush("Aurora Veil",3)
@@ -1237,20 +1237,21 @@ script MoveTutor_EventScript_GetStatusMoveList{
 		dynmultipush("Fake Tears",13)
 		dynmultipush("Pain Split",25)
 		dynmultipush("Psych Up",26)
-		dynmultipush("Toxic Spikes",40)
-		dynmultipush("Trick",41)
-		dynmultipush("Venom Drench",42)
+		dynmultipush("Toxic Spikes",41)
+		dynmultipush("Trick",42)
+		dynmultipush("Venom Drench",43)
 	}
 	if(flag(FLAG_BADGE01_GET)) {
 		dynmultipush("Curse",8)
 		dynmultipush("Iron Defense",19)
 		dynmultipush("Stealth Rock",37)
-		dynmultipush("Wonder Room",43)
+		dynmultipush("Wonder Room",44)
 	}
 	if(flag(FLAG_BADGE04_GET)) {
 		dynmultipush("Agility",1)
 		dynmultipush("Metal Sound",21)
 		dynmultipush("Nature Power",24)
+		dynmultipush("Steelsurge",38)
 		dynmultipush("Snatch",33)
 	}
 	if(flag(FLAG_BADGE03_GET)) {
@@ -1269,8 +1270,8 @@ script MoveTutor_EventScript_GetStatusMoveList{
 		dynmultipush("Quash",28)
 		dynmultipush("Scary Face",32)
 		dynmultipush("Spite",36)
-		dynmultipush("Swagger",39)
-		dynmultipush("Work Up",44)
+		dynmultipush("Swagger",40)
+		dynmultipush("Work Up",45)
 	}
 
 	goto(MoveTutor_EventScript_TeachStatusMove)
@@ -1717,24 +1718,27 @@ script MoveTutor_EventScript_TeachStatusMove{
 			setvar(VAR_0x8005, MOVE_STEALTH_ROCK)
 			bufferstring(STR_VAR_1, "Stealth Rock")
 		case 38:
+			setvar(VAR_0x8005, MOVE_STEELSURGE)
+			bufferstring(STR_VAR_1, "Steelsurge")
+		case 39:
 			setvar(VAR_0x8005, MOVE_SUNNY_DAY)
 			bufferstring(STR_VAR_1, "Sunny Day")
-		case 39:
+		case 40:
 			setvar(VAR_0x8005, MOVE_SWAGGER)
 			bufferstring(STR_VAR_1, "Swagger")
-		case 40:
+		case 41:
 			setvar(VAR_0x8005, MOVE_TOXIC_SPIKES)
 			bufferstring(STR_VAR_1, "Toxic Spikes")
-		case 41:
+		case 42:
 			setvar(VAR_0x8005, MOVE_TRICK)
 			bufferstring(STR_VAR_1, "Trick")
-		case 42:
+		case 43:
 			setvar(VAR_0x8005, MOVE_VENOM_DRENCH)
 			bufferstring(STR_VAR_1, "Venom Drench")
-		case 43:
+		case 44:
 			setvar(VAR_0x8005, MOVE_WONDER_ROOM)
 			bufferstring(STR_VAR_1, "Wonder Room")
-		case 44:
+		case 45:
 			setvar(VAR_0x8005, MOVE_WORK_UP)
 			bufferstring(STR_VAR_1, "Work Up")
 		default:

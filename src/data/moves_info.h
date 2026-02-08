@@ -7441,7 +7441,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Superpower"),
         .description = COMPOUND_STRING(
             "Boosts strength sharply,\n"
-            "but lowers abilities."),
+            "but lowers Atk & Def."),
         .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_FIGHTING,
@@ -9447,7 +9447,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Psycho Boost"),
         .description = COMPOUND_STRING(
             "Allows a full-power attack,\n"
-            "but sharply lowers Sp. Atk."),
+            "but lowers Sp.A. & Sp.D."),
         .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_PSYCHIC,

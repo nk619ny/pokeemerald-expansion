@@ -7419,7 +7419,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Parasect  @ Coba Berry
-Level: 51
+Level: 56
 Ability: Effect Spore  
 Tera Type: Bug  
 - Spore  
@@ -7428,7 +7428,7 @@ Tera Type: Bug
 - Rage Powder  
 
 Scyther  @ Charti Berry
-Level: 51
+Level: 56
 Ability: Swarm  
 Tera Type: Bug  
 - Dual Wingbeat  
@@ -7437,7 +7437,7 @@ Tera Type: Bug
 - Swords Dance  
 
 Durant @ Occa Berry  
-Level: 51
+Level: 56
 Ability: Truant  
 Tera Type: Bug  
 - Skill Swap  
@@ -7446,7 +7446,7 @@ Tera Type: Bug
 - Skitter Smack  
 
 Gastrodon  @ Rindo Berry
-Level: 51
+Level: 56
 Ability: Storm Drain
 Tera Type: Water  
 IVs: 0 Atk  
@@ -11147,7 +11147,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Dratini  
-Level: 55
+Level: 65
 Ability: Shed Skin  
 Tera Type: Dragon  
 - Ice Beam  
@@ -11156,7 +11156,7 @@ Tera Type: Dragon
 - Extreme Speed  
 
 Huntail  
-Level: 50
+Level: 56
 Ability: Swift Swim  
 Tera Type: Water  
 - Aqua Tail  
@@ -11166,7 +11166,7 @@ Tera Type: Water
 
 
 Basculin-Red-Striped  
-Level: 50
+Level: 58
 Ability: Adaptability  
 Tera Type: Water  
 - Flip Turn  
@@ -11176,7 +11176,7 @@ Tera Type: Water
 
 
 Qwilfish  
-Level: 50
+Level: 58
 Ability: Intimidate  
 Tera Type: Water  
 - Spiky Shield  
@@ -14498,7 +14498,7 @@ Lotad
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MIU_AND_YUKI === /* Route */
+=== TRAINER_MIU_AND_YUKI === /* Route 123 */ /* TO BE ADDED */
 Name: MIU & YUKI
 Class: Twins
 Pic: Twins
