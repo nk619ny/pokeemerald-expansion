@@ -3977,13 +3977,12 @@ PetalburgCity_Gym_Text_Vito_DarkUnderrepresented::
 
 PetalburgCity_Gym_Text_Vito_TooManyLegendaries::
 # 1889 "data/maps/PetalburgCity_Gym/scripts.pory"
-	.string "Vito: Yeah, I know that the other Gym\n"
-	.string "Leaders all only use one Legendary\l"
-	.string "Pokémon.\p"
-	.string "Technically though, Darkrai is mythical,\n"
-	.string "so it doesn't count.\p"
-	.string "...\p"
-	.string "Yes, I know Yveltal is an Uber...$"
+	.string "Vito: When I submitted my team to the\n"
+	.string "Hoenn league, I was nervous they would\l"
+	.string "object to Darkrai because it is\l"
+	.string "technically mythical.\p"
+	.string "But it was either that or Yveltal, so I\n"
+	.string "think everyone made peace with it.$"
 
 PetalburgCity_Gym_Text_Vito_OweWinstrateFamily::
 # 1893 "data/maps/PetalburgCity_Gym/scripts.pory"

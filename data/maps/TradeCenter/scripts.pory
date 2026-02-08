@@ -830,7 +830,7 @@ script Common_EventScript_RemoveOptionalItems5 {
 
 script Common_EventScript_RemoveOptionalItems6 {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_118_IRON)
-	//setflag(FLAG_ITEM_ROUTE_118_HYPER_POTION) //unplaced
+	setflag(FLAG_ITEM_ROUTE_118_HYPER_POTION)
 	setflag(FLAG_ITEM_ROUTE_123_ULTRA_BALL)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_123_REVIVE)
 	setflag(FLAG_ITEM_ROUTE_119_SUPER_REPEL)

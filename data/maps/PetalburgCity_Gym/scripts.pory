@@ -1887,7 +1887,7 @@ text PetalburgCity_Gym_Text_Vito_DarkUnderrepresented{
 }
 
 text PetalburgCity_Gym_Text_Vito_TooManyLegendaries{
-	format("Vito: Yeah, I know that the other Gym Leaders all only use one Legendary Pokémon.\pTechnically though, Darkrai is mythical, so it doesn't count.\p...\pYes, I know Yveltal is an Uber...")
+	format("Vito: When I submitted my team to the Hoenn league, I was nervous they would object to Darkrai because it is technically mythical.\pBut it was either that or Yveltal, so I think everyone made peace with it.")
 }
 
 text PetalburgCity_Gym_Text_Vito_OweWinstrateFamily{

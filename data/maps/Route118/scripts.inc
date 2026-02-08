@@ -637,6 +637,16 @@ Route118_EventScript_GiveEviolite::
 	end
 
 
+Route118_EventScript_Amelia::
+# 329 "data/maps/Route118/scripts.pory"
+	trainerbattle_single TRAINER_AMELIA, Route118_Text_AmeliaIntro, Route118_Text_AmeliaDefeat
+# 330 "data/maps/Route118/scripts.pory"
+	msgbox Route118_Text_AmeliaPostBattle, MSGBOX_DEFAULT
+# 331 "data/maps/Route118/scripts.pory"
+	release
+	end
+
+
 Route118_EventScript_GiveEviolite_Text_0:
 # 319 "data/maps/Route118/scripts.pory"
 	.string "Everyone talks about evolution making\n"
@@ -645,3 +655,22 @@ Route118_EventScript_GiveEviolite_Text_0:
 	.string "more fun to use.\p"
 	.string "This item helps them hold their own\n"
 	.string "against fully evolved opponents.$"
+
+Route118_Text_AmeliaIntro::
+# 335 "data/maps/Route118/scripts.pory"
+	.string "Can't you just smell the fruit and\n"
+	.string "flowers in the air?\p"
+	.string "$"
+
+Route118_Text_AmeliaDefeat::
+# 339 "data/maps/Route118/scripts.pory"
+	.string "Oh, I thought I had a chance against\n"
+	.string "you!\p"
+	.string "$"
+
+Route118_Text_AmeliaPostBattle::
+# 343 "data/maps/Route118/scripts.pory"
+	.string "The Berry Master lives nearby.\n"
+	.string "I often bring my Pokémon over to enjoy\l"
+	.string "the lovely fruit!\p"
+	.string "$"

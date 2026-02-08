@@ -935,7 +935,7 @@ MauvilleCity_EventScript_CompletedNewMauville::
 # 468 "data/maps/MauvilleCity/scripts.pory"
 	msgbox MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT
 # 469 "data/maps/MauvilleCity/scripts.pory"
-	giveitem ITEM_TM_THUNDERBOLT
+	giveitem ITEM_TM_THUNDER_WAVE
 # 470 "data/maps/MauvilleCity/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 471 "data/maps/MauvilleCity/scripts.pory"
@@ -1275,7 +1275,7 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 # 638 "data/maps/MauvilleCity/scripts.pory"
 	.string "This is my thanks--a TM containing\n"
 # 639 "data/maps/MauvilleCity/scripts.pory"
-	.string "THUNDERBOLT!\p"
+	.string "Thunder Wave!\p"
 # 640 "data/maps/MauvilleCity/scripts.pory"
 	.string "Go on, you've earned it!$"
 # 641 "data/maps/MauvilleCity/scripts.pory"

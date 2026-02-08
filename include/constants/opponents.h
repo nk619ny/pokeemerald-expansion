@@ -65,7 +65,7 @@
 #define TRAINER_GWEN                         59
 #define TRAINER_ARCHIE_MT_PYRE               60 //hijacked rematches of Lola in 60-63 for new fights
 #define TRAINER_MAXIE_MT_PYRE                61 //hijacked rematches of Lola in 60-63 for new fights
-#define TRAINER_LOLA_4                       62 //available
+#define TRAINER_AMELIA                       62 //hijacked rematches of Lola in 60-63 for new fights
 #define TRAINER_LOLA_5                       63 //available
 #define TRAINER_RICKY_1                      64
 #define TRAINER_SIMON                        65

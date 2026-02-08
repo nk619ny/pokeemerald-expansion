@@ -2722,22 +2722,54 @@ Serious Nature
 - Earthquake  
 - Explosion  
 
-=== TRAINER_LOLA_4 === /* Route */
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
+=== TRAINER_AMELIA === /* Route 118 */
+Name: AMELIA
+Class: Aroma Lady
+Pic: Aroma Lady
 Gender: Female
-Music: Girl
+Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Aromatisse  
+Ability: Aroma Veil  
+Tera Type: Fairy  
+IVs: 0 Atk  
+Level: 55
+- Aromatherapy  
+- Aromatic Mist  
+- Dazzling Gleam  
+- Energy Ball  
 
-Marill
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Wormadam (F) @ White Herb  
+Ability: Overcoat  
+Tera Type: Rock  
+IVs: 0 Atk  
+Level: 55
+- Infestation  
+- Leaf Storm  
+- Hidden Power 
+- Quiver Dance  
+
+Ribombee  
+Ability: Sweet Veil  
+Tera Type: Bug  
+IVs: 0 Atk  
+Level: 55
+- Aromatherapy  
+- Aromatic Mist  
+- Pollen Puff  
+- Moonblast  
+
+Flapple @ Salac Berry  
+Ability: Ripen  
+Tera Type: Grass  
+Level: 55
+- Dual Wingbeat  
+- Grav Apple  
+- Dragon Dance  
+- Withdraw  
+
 
 === TRAINER_LOLA_5 === /* Route */
 Name: LOLA
@@ -3202,9 +3234,9 @@ Level: 50
 Dragonite @ Yache Berry  
 Ability: Inner Focus  
 Tera Type: Dragon  
-EVs: 252 Atk / 252 Spe  
+EVs: 128 Atk / 128 Spe  
 Serious Nature  
-Level: 48
+Level: 47
 - Fly  
 - Dive  
 - Dragon Tail  
@@ -3213,9 +3245,9 @@ Level: 48
 Samurott-Hisui  
 Ability: Torrent  
 Tera Type: Water  
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 200 Atk / 4 SpD / 200 Spe  
 Jolly Nature  
-Level: 50
+Level: 49
 - Dive  
 - Covet  
 - Thief  
@@ -3559,7 +3591,7 @@ Careful Nature
 - Foul Play  
 
 Crobat @ Black Sludge 
-Level: 53
+Level: 52
 Ability: Inner Focus  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -3589,6 +3621,19 @@ IVs: 0 Atk
 - Sludge Bomb  
 - Nasty Plot  
 
+Umbreon @ Leftovers  
+Ability: Dark Aura  
+Tera Type: Dark  
+EVs: 252 HP / 252 Def / 4 SpD  
+Calm Nature  
+Level: 53
+IVs: 0 Atk  
+- Snarl  
+- Lunar Blessing  
+- Protect  
+- Reflect
+
+/*
 Yveltal  
 Level: 50
 Ability: Dark Aura  
@@ -3598,7 +3643,7 @@ Hasty Nature
 - Pursuit  
 - Knock Off  
 - Steel Wing  
-
+*/
 
 === TRAINER_OWEN === /* Route */
 Name: OWEN
@@ -3855,20 +3900,72 @@ Level: 50
 - Night Daze  
 
 
-=== TRAINER_JODY === /* Route */
+=== TRAINER_JODY === /* Petalburg Gym */
 Name: JODY
-Class: Cooltrainer
+Class: Delinquent
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zangoose
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Slash
+Grimmsnarl (M) @ Light Clay  
+Ability: Prankster  
+Tera Type: Dark  
+EVs: 252 HP / 252 Atk / 4 Def  
+Level: 50
+Adamant Nature  
+- Light Screen  
+- Reflect  
+- False Surrender  
+- Spirit Break  
+
+Liepard @ Rocky Helmet  
+Ability: Prankster  
+Tera Type: Dark  
+EVs: 128 HP / 252 SpA / 128 Spe  
+Level: 50
+Modest Nature  
+- Encore  
+- Thunder Wave  
+- Fake Out  
+- Hyper Voice  
+
+Sableye @ Roseli Berry  
+Ability: Prankster  
+Tera Type: Dark  
+EVs: 252 Def / 252 SpD  
+Level: 50
+Impish Nature  
+- Encore  
+- Fake Out  
+- Foul Play  
+- Pain Split  
+
+Murkrow @ Eviolite  
+Ability: Prankster  
+Tera Type: Dark  
+EVs: 252 HP / 128 Def / 128 SpD  
+Level: 52
+Calm Nature  
+IVs: 0 Atk  
+- Tailwind  
+- Toxic  
+- Night Shade  
+- Captivate  
+
+Klefki @ Leftovers  
+Ability: Prankster  
+Tera Type: Steel  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Level: 50
+Modest Nature  
+IVs: 0 Atk  
+- Fairy Lock  
+- Iron Defense  
+- Calm Mind  
+- Stored Power  
+
 
 === TRAINER_WENDY === /* Route 123 */ /* TO BE ADDED */
 Name: WENDY
@@ -12138,7 +12235,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Sequence Switching
 
 Pidgeotto  
-Level: 55
+Level: 60
 Ability: Keen Eye  
 Tera Type: Normal  
 - Feather Dance  
@@ -12147,7 +12244,7 @@ Tera Type: Normal
 - Steel Wing  
 
 Tranquill  
-Level: 55
+Level: 60
 Ability: Big Pecks  
 Tera Type: Normal  
 - Dual Wingbeat  
@@ -12156,7 +12253,7 @@ Tera Type: Normal
 - Morning Sun  
 
 Staravia  
-Level: 55
+Level: 60
 Ability: Intimidate  
 Tera Type: Normal  
 - Quick Attack  
@@ -12164,7 +12261,7 @@ Tera Type: Normal
 - Retaliate  
 
 Corvisquire  
-Level: 55
+Level: 60
 Ability: Unnerve  
 Tera Type: Flying  
 - Drill Peck  
@@ -16760,17 +16857,17 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Surskit @ Leftovers
-Level: 55 
+Level: 64
 Ability: Rain Dish  
 Tera Type: Bug  
-EVs: 192 Atk  
+EVs: 192 Atk  / 124 HP / 124 Spe
 - Aqua Jet  
 - Leech Life  
 - Infestation  
 - Protect
 
 Wimpod @ Choice Band  
-Level: 55
+Level: 63
 Ability: Wimp Out  
 Tera Type: Bug  
 EVs: 192 HP / 192 Atk / 124 Spe  
@@ -16780,7 +16877,7 @@ Jolly Nature
 - Facade  
 
 Dewpider @ Mystic Water  
-Level: 55
+Level: 65
 Ability: Water Bubble  
 Tera Type: Water  
 EVs: 252 HP / 128 Atk / 128 SpA  
@@ -16790,7 +16887,7 @@ EVs: 252 HP / 128 Atk / 128 SpA
 - Mirror Coat  
 
 Snom @ Charti Berry  
-Level: 55
+Level: 65
 Ability: Ice Scales  
 Tera Type: Water  
 EVs: 252 HP / 252 SpA

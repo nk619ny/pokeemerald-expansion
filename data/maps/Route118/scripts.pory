@@ -324,3 +324,22 @@ script Route118_EventScript_GiveEviolite {
 	releaseall
 	end
 }
+
+script Route118_EventScript_Amelia {
+	trainerbattle_single(TRAINER_AMELIA, Route118_Text_AmeliaIntro, Route118_Text_AmeliaDefeat)
+	msgbox(Route118_Text_AmeliaPostBattle, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+text Route118_Text_AmeliaIntro {
+	format("Can't you just smell the fruit and flowers in the air?\p")
+}
+
+text Route118_Text_AmeliaDefeat {
+	format("Oh, I thought I had a chance against you!\p")
+}
+
+text Route118_Text_AmeliaPostBattle {
+	format("The Berry Master lives nearby.\NI often bring my Pokémon over to enjoy the lovely fruit!\p")
+}

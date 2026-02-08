@@ -1511,6 +1511,8 @@ Common_EventScript_RemoveOptionalItems5::
 Common_EventScript_RemoveOptionalItems6::
 # 832 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_118_IRON
+# 833 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_118_HYPER_POTION
 # 834 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_123_ULTRA_BALL
 # 835 "data/maps/TradeCenter/scripts.pory"
