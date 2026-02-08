@@ -5783,7 +5783,7 @@ u32 GetRelearnerLevelUpMoves(struct Pokemon *mon, u16 *moves)
 
 u32 GetRelearnerEggMoves(struct Pokemon *mon, u16 *moves)
 {
-    if (!FlagGet(P_FLAG_EGG_MOVES) && !P_ENABLE_MOVE_RELEARNERS)
+    if (!FlagGet(P_FLAG_EGG_MOVES) && !P_ENABLE_MOVE_RELEARNERS && gRelearnMode != RELEARN_MODE_EGG_SCRIPT)
         return 0;
 
     u32 learnedMoves[MAX_MON_MOVES] = {0};
@@ -5977,7 +5977,7 @@ bool32 HasRelearnerLevelUpMoves(struct Pokemon *mon)
 
 bool32 HasRelearnerEggMoves(struct Pokemon *mon)
 {
-    if (!FlagGet(P_FLAG_EGG_MOVES) && !P_ENABLE_MOVE_RELEARNERS)
+    if (!FlagGet(P_FLAG_EGG_MOVES) && !P_ENABLE_MOVE_RELEARNERS && gRelearnMode != RELEARN_MODE_EGG_SCRIPT)
         return FALSE;
 
     u32 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
