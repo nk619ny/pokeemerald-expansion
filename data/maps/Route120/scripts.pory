@@ -212,6 +212,7 @@ Route120_EventScript_RemoveBridgeKecleonPostBattle::
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROUTE120_BRIDGE_KECLEON
 	removeobject LOCALID_ROUTE120_BRIDGE_KECLEON_SHADOW
+	setflag FLAG_HIDE_ROUTE_120_KECLEON_BRIDGE
 	fadescreenswapbuffers FADE_FROM_BLACK
 	goto Route120_EventScript_StevenGiveDeconScope
 	end

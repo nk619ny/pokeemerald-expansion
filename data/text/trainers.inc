@@ -2692,15 +2692,15 @@ Route118_Text_DeandrePostBattle:
 	.string "You can copy me--I don't mind!$"
 
 Route119_Text_BrentIntro:
-	.string "We're the MIMIC CIRCLE!\n"
-	.string "We MIMIC what you do!$"
+	.string "We're the Bug Experts!\n"
+	.string "Look at what we found!$"
 
 Route119_Text_BrentDefeat:
 	.string "Whoopsie!\n"
 	.string "I lost!$"
 
 Route119_Text_BrentPostBattle:
-	.string "What's so good about mimicry?\p"
+	.string "What's so interesting about bugs?\p"
 	.string "Fufufu…\n"
 	.string "You'll never understand…$"
 
@@ -2914,8 +2914,8 @@ Route119_Text_FabianPostBattle:
 
 Route119_Text_DaytonIntro:
 	.string "Hohoho!\n"
-	.string "I like kid TRAINERS!\l"
-	.string "Let's have a good one!$"
+	.string "Seeing young Trainers warms my\l"
+	.string "heart! Let's have a good one!$"
 
 Route119_Text_DaytonDefeat:
 	.string "You're pretty amazing!\n"
@@ -3071,9 +3071,9 @@ Route120_Text_ClarissaDefeat:
 	.string "attacks…$"
 
 Route120_Text_ClarissaPostBattle:
-	.string "I don't think strong sunlight is good\n"
-	.string "for my Pokémon.\l"
-	.string "So I shield them with my parasol.$"
+	.string "My Pokémon like strong sunlight, but\n"
+	.string "my skin is sensitive.\l"
+	.string "So I shield myself with a parasol.$"
 
 Route120_Text_AngelicaIntro:
 	.string "Me, Pokémon, and my parasol…\p"

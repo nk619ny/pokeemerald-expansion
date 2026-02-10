@@ -19,7 +19,7 @@ FortreeCity_EventScript_Man::
 FortreeCity_EventScript_Woman::
 	lock
 	faceplayer
-	goto_if_set FLAG_KECLEON_FLED_FORTREE, FortreeCity_EventScript_WomanGymAccessible
+	goto_if_set FLAG_HIDE_ROUTE_120_KECLEON_BRIDGE, FortreeCity_EventScript_WomanGymAccessible
 	msgbox FortreeCity_Text_SomethingBlockingGym, MSGBOX_DEFAULT
 	release
 	end
@@ -80,7 +80,7 @@ FortreeCity_EventScript_UseDevonScope::
 	applymovement VAR_LAST_TALKED, FortreeCity_Movement_KecleonFlee
 	waitmovement 0
 	removeobject VAR_LAST_TALKED
-	setflag FLAG_KECLEON_FLED_FORTREE
+	//setflag FLAG_KECLEON_FLED_FORTREE
 	release
 	end
 
@@ -98,10 +98,8 @@ FortreeCity_Text_SawGiganticPokemonInSky:
 	.string "Were you at a volcano or something?$"
 
 FortreeCity_Text_SomethingBlockingGym:
-	.string "I want to go to the Pokémon GYM,\n"
-	.string "but something's blocking the way.\p"
-	.string "After all the bother I went through\n"
-	.string "training on ROUTE 120…$"
+	.string "I want to go to the Lilycove City,\n"
+	.string "but something's blocking the way…$"
 
 FortreeCity_Text_ThisTimeIllBeatWinona:
 	.string "I've got my pride-and-joy Pokémon\n"
@@ -160,7 +158,8 @@ FortreeCity_Text_GymSign:
 script FortreeCity_EventScript_Roost {
 	lock
 	faceplayer
-	msgbox(format("The citizens of Fortree City built our homes up in the trees.\pWe learned from the bird and monkey Pokémon who build their homes up here, too."), MSGBOX_DEFAULT)
+	msgbox(FortreeCity_Text_EveryoneHealthyAndLively, MSGBOX_DEFAULT)
+	//msgbox(format("The citizens of Fortree City built our homes up in the trees.\pWe learned from the bird and monkey Pokémon who build their homes up here, too."), MSGBOX_DEFAULT)
 	checkitem(ITEM_TM_ROOST)
 	if(var(VAR_RESULT) == FALSE) {
 		msgbox(format("It's important for even sky-flying Pokémon to rest and recover.\pTake this TM to make sure your bird Pokémon can do that, too."), MSGBOX_DEFAULT)

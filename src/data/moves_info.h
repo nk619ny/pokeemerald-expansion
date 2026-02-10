@@ -17641,7 +17641,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "The user spins and hits with\n"
             "its arms. May cause flinch."),
         .effect = EFFECT_HIT,
-        .power = 60,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 50 : 60,
         .type = TYPE_STEEL,
         .accuracy = 100,
         .pp = 5,

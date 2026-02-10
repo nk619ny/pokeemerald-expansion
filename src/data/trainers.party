@@ -841,7 +841,7 @@ Adamant Nature
 */
 
 
-=== TRAINER_GRUNT_WEATHER_INST_1 === /* Route */
+=== TRAINER_GRUNT_WEATHER_INST_1 === /* Weather Institute */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -858,7 +858,7 @@ Poochyena
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_2 === /* Route */
+=== TRAINER_GRUNT_WEATHER_INST_2 === /* Weather Institute */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -875,7 +875,7 @@ Carvanha
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_3 === /* Route */
+=== TRAINER_GRUNT_WEATHER_INST_3 === /* Weather Institute */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -1148,7 +1148,7 @@ IVs: 0 Atk
 - Sludge Bomb  
 
 
-=== TRAINER_GRUNT_WEATHER_INST_4 === /* Route */
+=== TRAINER_GRUNT_WEATHER_INST_4 === /* Weather Institute */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -2287,7 +2287,7 @@ Tornadus (M) @ Wacan Berry
 Level: 55
 Ball: Quick Ball
 Ability: Prankster
-EVs: 4 HP / 252 SpA / 252 Spe
+EVs: 4 HP / 196 SpA / 196 Spe
 Timid Nature  
 IVs: 0 Atk  
 - Bleakwind Storm  
@@ -2299,7 +2299,7 @@ Thundurus (M) @ Charti Berry
 Level: 55
 Ball: Quick Ball
 Ability: Dark Clouds
-EVs: 4 HP / 252 SpA / 252 Spe
+EVs: 4 HP / 196 SpA / 196 Spe
 Modest Nature 
 IVs: 0 Atk  
 - Wildbolt Storm  
@@ -2307,17 +2307,18 @@ IVs: 0 Atk
 - Weather Ball  
 - Aura Sphere  
 
-/* Swampert @ Swampertite  
+Swampert @ Swampertite  
 Level: 55
 Ball: Dive Ball
-Ability: Damp  
-EVs: 4 HP / 252 Atk / 252 Spe
+Ability: Swift Swim  
+EVs: 4 HP / 196 Atk / 196 Spe
 Adamant Nature
 - Flip Turn  
 - Earthquake  
 - Poison Jab  
-- Brick Break  */
+- Brick Break
 
+/*
 Swampert @ Rindo Berry  
 Level: 55
 Ball: Dive Ball
@@ -2328,31 +2329,34 @@ Adamant Nature
 - Earthquake  
 - Poison Jab  
 - Brick Break
+*/
 
 Lanturn @ Assault Vest
-Level: 55
+Level: 54
 Ball: Dive Ball
 Ability: Volt Absorb  
 Tera Type: Water  
+EVs: 196 HP / 196 SpA
 IVs: 0 Atk  
 - Ice Beam  
 - Scald  
 - Thunder  
 - Blizzard
 
-/* Clawitzer @ Sitrus Berry
-Level: 55
+Clawitzer @ Sitrus Berry
+Level: 54
 Ball: Dive Ball
 Ability: Mega Launcher  
 Tera Type: Water  
-EVs: 252 HP / 252 SpA / 4 SpD  
+EVs: 196 HP / 196 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
 - Water Pulse  
 - Terrain Pulse  
 - Heal Pulse  
-- Dark Pulse  */
+- Dark Pulse
 
+/*
 Blastoise @ Blastoisinite
 Level: 55
 Ball: Dive Ball
@@ -2364,13 +2368,14 @@ IVs: 0 Atk
 - Terrain Pulse  
 - Heal Pulse  
 - Dark Pulse
+*/
 
 Raichu-Alola @ Electric Seed  
-Level: 55
+Level: 54
 Ball: Dive Ball
 Ability: Surge Surfer  
 Tera Type: Electric  
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 196 SpA / 4 SpD / 196 Spe  
 Modest Nature  
 IVs: 0 Atk  
 - Rising Voltage  
@@ -12650,7 +12655,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Accelgor @ Sitrus Berry  
-Level: 52
+Level: 54
 Ability: Unburden  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -12660,7 +12665,7 @@ IVs: 0 Atk
 - Acid Spray  
 
 Ariados  
-Level: 52
+Level: 54
 Ability: Swarm  
 Tera Type: Bug  
 - Sticky Web  
@@ -12669,7 +12674,7 @@ Tera Type: Bug
 - Shadow Sneak  
 
 Croconaw  
-Level: 55
+Level: 60
 Ability: Torrent  
 Tera Type: Water  
 - Jaw Lock  
@@ -12678,7 +12683,7 @@ Tera Type: Water
 - Dragon Dance  
 
 Victreebel @ Salac Berry  
-Level: 52
+Level: 54
 Ability: Gluttony  
 Tera Type: Grass  
 - Snap Trap  
@@ -17289,15 +17294,16 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Lopunny @ Jaboca Berry  
-Level: 52
+Level: 53
 Ability: Cute Charm  
 Tera Type: Normal  
 - Mirror Coat  
 - Acrobatics  
 - Fake Out  
+- Retaliate
 
 Tauros (M)  @ White Herb
-Level: 52
+Level: 53
 Ability: Intimidate  
 Tera Type: Normal  
 - Raging Bull  
@@ -17307,7 +17313,7 @@ Tera Type: Normal
 
 
 Dubwool  @ Chople Berry
-Level: 52
+Level: 53
 Ability: Fluffy  
 EVs: 252 HP / 252 SpD
 Tera Type: Normal  
@@ -17316,7 +17322,7 @@ Tera Type: Normal
 - Last Resort  
 
 Kangaskhan (F) @ Chople Berry  
-Level: 52
+Level: 53
 Ability: Scrappy  
 Tera Type: Normal  
 - Body Slam  
@@ -17450,7 +17456,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Ursaring  
-Level: 52
+Level: 56
 Ability: Guts  
 Tera Type: Normal  
 - Trailblaze  
@@ -17459,7 +17465,7 @@ Tera Type: Normal
 - Facade  
 
 Feraligatr  
-Level: 52
+Level: 54
 Ability: Intimidate  
 Tera Type: Water  
 - Aqua Jet  
@@ -17468,7 +17474,7 @@ Tera Type: Water
 - Breaking Swipe  
 
 Girafarig  
-Level: 52
+Level: 54
 Ability: Early Bird  
 Tera Type: Normal  
 - Zen Headbutt  
@@ -17477,7 +17483,7 @@ Tera Type: Normal
 - Skill Swap  
 
 Stantler @ Power Herb
-Level: 52
+Level: 54
 Ability: Intimidate  
 Tera Type: Normal  
 - Body Slam  
@@ -18417,7 +18423,7 @@ Staryu
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_5 === /* Route */
+=== TRAINER_GRUNT_WEATHER_INST_5 === /* Weather Institute */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt F
