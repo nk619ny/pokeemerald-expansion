@@ -2573,8 +2573,9 @@ static const u16 sScytherEliteLearnset[] = {
 
 #if P_GEN_2_CROSS_EVOS
 static const u16 sScizorEliteLearnset[] = {
-    MOVE_SONIC_BOOM,
+    MOVE_DOUBLE_IRON_BASH,
     MOVE_MORNING_SUN,
+    MOVE_SONIC_BOOM,
     MOVE_ASSURANCE,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
