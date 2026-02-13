@@ -657,7 +657,7 @@
 #define TRAINER_HIDEO                       651
 #define TRAINER_KEIGO                       652
 #define TRAINER_RILEY                       653
-#define TRAINER_FLINT                       654
+#define TRAINER_FLINT                       654 //was Winona, now tentatively removed
 #define TRAINER_ASHLEY                      655
 #define TRAINER_WALLY_MAUVILLE              656
 #define TRAINER_WALLY_VR_2                  657

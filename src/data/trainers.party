@@ -8904,7 +8904,7 @@ Mugshot: Blue
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Risky
 
 Aerodactyl @ Expert Belt  
-Level: 60
+Level: 59
 Ability: Unnerve  
 Ball: Safari Ball
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -8927,7 +8927,7 @@ IVs: 0 Atk
 - Thunderbolt  
 
 Magneton @ Eviolite  
-Level: 60
+Level: 59
 Ability: Levitate  
 Ball: Safari Ball
 Tera Type: Ground
@@ -12347,17 +12347,49 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Doduo
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Talonflame @ Power Herb  
+Ability: Gale Wings  
+Tera Type: Fire  
+Serious Nature  
+Level: 58
+- Sky Attack  
+- Acrobatics  
+- Temper Flare  
+- Roost  
 
-Skarmory
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Flygon @ Yache Berry  
+Ability: Levitate  
+Tera Type: Ground  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+Level: 57
+- Earthquake  
+- Rock Slide  
+- Dragon Dance  
+- First Impression  
 
-Tropius
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Hydreigon @ Roseli Berry  
+Ability: Levitate  
+Tera Type: Dark  
+EVs: 252 Atk / 252 Spe  
+Adamant Nature  
+Level: 56
+- Earthquake  
+- Rock Slide  
+- Throat Chop  
+- Steel Wing  
+
+
+Dodrio @ Choice Scarf  
+Ability: Run Away  
+Tera Type: Normal  
+EVs: 252 Spe  
+Jolly Nature  
+Level: 57
+- Bolt Beak  
+- Drill Run  
+- Drill Peck  
+
 
 === TRAINER_HUMBERTO === /* Fortree Gym */
 Name: HUMBERTO
@@ -12368,9 +12400,52 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skarmory
-Level: 30
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Flamigo @ White Herb  
+Ability: Scrappy  
+Tera Type: Flying  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+Level: 56
+- Acrobatics  
+- Close Combat  
+- Swords Dance  
+- Tailwind  
+
+Drifblim @ Flame Orb  
+Ability: Flare Boost  
+Tera Type: Ghost  
+EVs: 128 Def / 252 SpA / 128 SpD  
+Modest Nature  
+IVs: 0 Atk  
+Level: 56
+- Hex  
+- Air Slash  
+- Thunder  
+- Strength Sap  
+
+Decidueye-Hisui @ Coba Berry  
+Ability: Scrappy  
+Tera Type: Grass  
+EVs: 128 HP / 252 Atk / 128 Spe  
+Adamant Nature  
+Level: 56
+- Triple Arrows  
+- Shadow Sneak  
+- Leaf Blade  
+- Tailwind  
+
+Empoleon  
+Ability: Competitive  
+Tera Type: Water  
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+Level: 56
+- Chilling Water  
+- Blizzard  
+- Flash Cannon  
+- Vacuum Wave  
+
 
 === TRAINER_PRESLEY === /* Route */
 Name: PRESLEY
@@ -12390,7 +12465,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_EDWARDO === /* Fortree Gym */
-Name: EDWARDO
+Name: EDUARDO
 Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
@@ -12398,13 +12473,51 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Doduo
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Unfezant  
+Ability: Super Luck  
+Tera Type: Normal  
+EVs: 128 Atk / 252 HP  
+Level: 56
+- Night Slash  
+- Dual Wingbeat  
+- Tailwind  
+- U-turn  
 
-Pelipper
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Chimecho  
+Ability: Levitate  
+Tera Type: Psychic  
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+Level: 56
+- Dazzling Gleam  
+- Psychic  
+- Shadow Ball  
+- Heal Pulse  
+
+Squawkabilly-White @ Life Orb  
+Ability: Intimidate  
+Tera Type: Normal  
+EVs: 128 Atk / 252 Spe  
+Jolly Nature
+Level: 57
+- Brave Bird  
+- Double-Edge  
+- Parting Shot  
+- Copycat  
+
+Decidueye  
+Ability: Overgrow  
+Tera Type: Grass  
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+Level: 56
+- Spirit Shackle  
+- Brave Bird  
+- Leaf Blade  
+- Thousand Arrows  
+
+
 
 === TRAINER_COLIN === /* Route 120 */ /* TO BE ADDED */
 Name: COLIN
@@ -13330,14 +13443,14 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Castform
-Level: 58
+Level: 61
 - Weather Ball
 - Thunder
 - Energy Ball
 - Ice Beam
 
 Drifblim  
-Level: 58
+Level: 61
 Ability: Aftermath  
 Tera Type: Ghost  
 IVs: 0 Atk  
@@ -13347,7 +13460,7 @@ IVs: 0 Atk
 - Thunderbolt  
 
 Cloyster  
-Level: 58
+Level: 61
 Ability: Overcoat  
 Tera Type: Water  
 - Avalanche  
@@ -13356,7 +13469,7 @@ Tera Type: Water
 - Drill Run  
 
 Chimecho  
-Level: 58
+Level: 61
 Ability: Levitate  
 Tera Type: Psychic  
 IVs: 0 Atk  
@@ -20458,15 +20571,6 @@ Tera Type: Bug
 - U-turn  
 - Night Slash  
 
-
-Koffing
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Self Destruct
-- Sludge
-- Smokescreen
-
 === TRAINER_FLINT === /* Fortree Gym */
 Name: FLINT
 Class: Camper
@@ -20493,17 +20597,52 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Mandibuzz (F) @ Leftovers  
+Ability: Big Pecks  
+Tera Type: Dark  
+EVs: 252 HP  
+IVs: 0 Atk  
+Level: 56
+- Foul Play  
+- Mean Look  
+- Roost  
+- Toxic  
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Vikavolt  @ Light Clay
+Ability: Levitate  
+Tera Type: Bug  
+EVs: 252 HP / 128 SpA / 128 Spe
+IVs: 0 Atk  
+Level: 56
+- Bug Buzz  
+- Sticky Web  
+- Thunderbolt  
+- Light Screen  
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Dudunsparce  
+Ability: Rattled  
+Tera Type: Normal  
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+Level: 56
+- Dual Wingbeat  
+- Roost  
+- Hyper Drill  
+- Lunge  
+
+Ribombee @ Focus Sash  
+Ability: Shield Dust  
+Tera Type: Bug  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+Level: 56
+- Tailwind  
+- Pollen Puff  
+- Moonblast  
+- Stun Spore  
+
 
 === TRAINER_WALLY_MAUVILLE === /* Route */
 Name: WALLY
@@ -26577,9 +26716,49 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tropius
-Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Corviknight  
+Ability: Unnerve  
+Tera Type: Flying  
+Level: 59
+- Body Press  
+- Drill Peck  
+- Iron Head  
+- U-turn  
+
+
+Blaziken  
+Ability: Speed Boost  
+Tera Type: Fire  
+EVs: 128 HP / 252 SpA / 128 Spe  
+Modest Nature  
+Level: 57
+IVs: 0 Atk   
+- Aura Sphere  
+- Heat Wave  
+- Detect  
+- Feather Dance  
+
+Noctowl @ Throat Spray  
+Ability: Tinted Lens  
+Tera Type: Normal  
+IVs: 0 Atk  
+Level: 59
+- Esper Wing  
+- Hyper Voice  
+- Air Slash  
+- Roost  
+
+Hawlucha  
+Ability: Mold Breaker  
+Tera Type: Fighting  
+Level: 59
+- Flying Press  
+- Lunge  
+- Last Resort  
+- Zen Headbutt  
+
+
 
 === TRAINER_STEVEN_1 === /* Route */
 Name: STEVEN
