@@ -17,7 +17,7 @@ VerdanturfTown_Mart_EventScript_Clerk::
 # 9 "data/maps/VerdanturfTown_Mart/scripts.pory"
 	waitmessage
 # 10 "data/maps/VerdanturfTown_Mart/scripts.pory"
-	pokemart VerdanturfTown_Mart_Pokemart
+	pokemart 0
 # 11 "data/maps/VerdanturfTown_Mart/scripts.pory"
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 # 12 "data/maps/VerdanturfTown_Mart/scripts.pory"

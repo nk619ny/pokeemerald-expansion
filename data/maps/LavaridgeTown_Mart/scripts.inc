@@ -17,7 +17,7 @@ LavaridgeTown_Mart_EventScript_Clerk::
 # 9 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	waitmessage
 # 10 "data/maps/LavaridgeTown_Mart/scripts.pory"
-	pokemart LavaridgeTown_Mart_Pokemart
+	pokemart 0
 # 11 "data/maps/LavaridgeTown_Mart/scripts.pory"
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 # 12 "data/maps/LavaridgeTown_Mart/scripts.pory"
