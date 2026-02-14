@@ -17,7 +17,7 @@ LilycoveCity_OnTransition:
 	end
 
 LilycoveCity_OnLoad:
-	call_if_unset FLAG_BOTH_HIDEOUTS_COMPLETE, LilycoveCity_EventScript_SetWailmerMetatiles
+	call_if_unset FLAG_MET_RIVAL_LILYCOVE, LilycoveCity_EventScript_SetWailmerMetatiles
 	end
 
 LilycoveCity_EventScript_SetWailmerMetatiles::
@@ -804,6 +804,9 @@ script LilycoveCity_EventScript_RivalTriggerLeft {
 	if (flag(FLAG_MET_RIVAL_LILYCOVE)) {
 		setvar(TempVar_RivalEncounter,1)
 	} 
+	elif (!flag(FLAG_BOTH_HIDEOUTS_COMPLETE)) {
+		setvar(TempVar_RivalEncounter,1)
+	}
 	else {
 		goto(LilycoveCity_EventScript_RivalEncounterLeft)
 	}
@@ -812,7 +815,10 @@ script LilycoveCity_EventScript_RivalTriggerLeft {
 script LilycoveCity_EventScript_RivalTriggerRight {
 	if (flag(FLAG_MET_RIVAL_LILYCOVE)) {
 		setvar(TempVar_RivalEncounter,1)
-	} 
+	} 	
+	elif (!flag(FLAG_BOTH_HIDEOUTS_COMPLETE)) {
+		setvar(TempVar_RivalEncounter,1)
+	}
 	else {
 		goto(LilycoveCity_EventScript_RivalEncounterRight)
 	}

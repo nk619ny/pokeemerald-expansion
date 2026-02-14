@@ -4931,14 +4931,6 @@ Tera Type: Water
 - Aqua Jet  
 
 
-Seviper
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Tail
-- Screech
-- Glare
-- Crunch
-
 === TRAINER_CONNIE === /* Sootopolis Gym */
 Name: CONNIE
 Class: Beauty

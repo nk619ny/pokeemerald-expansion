@@ -309,11 +309,11 @@ Route121_EventScript_Marcel::
 # 155 "data/maps/Route121/scripts.pory"
 Route121_EventScript_Cristin::
 # 156 "data/maps/Route121/scripts.pory"
-	trainerbattle_single TRAINER_CRISTIN_1, Route121_Text_CristinIntro, Route121_Text_CristinDefeat, Route121_EventScript_RegisterCristin
+	trainerbattle_single TRAINER_CRISTIN_1, Route121_Text_CristinIntro, Route121_Text_CristinDefeat
 # 157 "data/maps/Route121/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 158 "data/maps/Route121/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchCristin
+	//goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchCristin
 # 159 "data/maps/Route121/scripts.pory"
 	msgbox Route121_Text_CristinPostBattle, MSGBOX_DEFAULT
 # 160 "data/maps/Route121/scripts.pory"
