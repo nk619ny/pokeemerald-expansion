@@ -579,3 +579,5 @@ gSpecials::
 	def_special TeachEliteMoves
 	def_special CheckPartyMonHasScriptEggMoves
 	def_special TeachScriptEggMoves
+	def_special ComparePartyMonNature
+	def_special ChangeNature

@@ -4552,3 +4552,39 @@ void TeachScriptEggMoves(void)
     gRelearnMode = RELEARN_MODE_EGG_SCRIPT;
     TeachMoveRelearnerMove();
 }
+
+// Nature Changer Specials
+// gSpecialVar_0x8004: party slot (0..PARTY_SIZE-1)
+// gSpecialVar_0x8005: nature value to compare
+// Sets VAR_0x800A to TRUE if the Pokemon's hidden nature matches the selected nature
+void ComparePartyMonNature(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    {
+        u32 hiddenNature = GetMonData(&gPlayerParty[slot], MON_DATA_HIDDEN_NATURE);
+        gSpecialVar_0x800A = (hiddenNature == gSpecialVar_0x8005);
+        gSpecialVar_Result = 1;
+    }
+    else
+    {
+        gSpecialVar_0x800A = FALSE;
+        gSpecialVar_Result = 0;
+    }
+}
+
+// gSpecialVar_0x8004: party slot (0..PARTY_SIZE-1)
+// gSpecialVar_0x8005: new nature value
+// Changes the party mon's hidden nature and recalculates stats
+void ChangeNature(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    u32 newNature = gSpecialVar_0x8005;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    {
+        SetMonData(&gPlayerParty[slot], MON_DATA_HIDDEN_NATURE, &newNature);
+        CalculateMonStats(&gPlayerParty[slot]);
+    }
+}

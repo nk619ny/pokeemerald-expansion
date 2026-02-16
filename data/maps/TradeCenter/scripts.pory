@@ -1887,7 +1887,7 @@ script Common_EventScript_AttributeChanger {
 	dynmultichoice(25,3,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Nature", "IVs", "Hidden Power Type","Nevermind")
 	switch (var(VAR_RESULT)) {
 		case 0:
-			goto(Common_EventScript_AttributeChanger_ComeBackLater)
+			goto(Common_EventScript_ChangeNature)
 		case 1:
 			goto(Common_EventScript_AttributeChanger_ComeBackLater)
 		case 2:
@@ -2020,6 +2020,159 @@ script PokemonCenter_2F_EventScript_ChangeHiddenPowerType{
 		end
 	}
 }
+
+// Nature Changer - Changes the hidden nature of a party mon for a Heart Scale
+script Common_EventScript_ChangeNature {
+	getpartysize
+	if (var(VAR_RESULT) == 0) {
+		msgbox(format("Your PARTY has no Pokémon."), MSGBOX_DEFAULT)
+		releaseall
+		end
+	}
+	msgbox(format("Which Pokémon's Nature would you like to change?"), MSGBOX_DEFAULT)
+	closemessage
+	special(ChoosePartyMon)
+	waitstate
+	if (var(VAR_0x8004) >= 6) {
+		releaseall
+		end
+	}
+	specialvar(VAR_RESULT, ScriptGetPartyMonSpecies)
+	if (var(VAR_RESULT) == SPECIES_EGG) {
+		releaseall
+		end
+	}
+	special(BufferMonNickname)
+	msgbox(format("What Nature would you like {STR_VAR_1} to have?"), MSGBOX_DEFAULT)
+	dynmultipush("Hardy", NATURE_HARDY)
+	dynmultipush("Lonely", NATURE_LONELY)
+	dynmultipush("Brave", NATURE_BRAVE)
+	dynmultipush("Adamant", NATURE_ADAMANT)
+	dynmultipush("Naughty", NATURE_NAUGHTY)
+	dynmultipush("Bold", NATURE_BOLD)
+	dynmultipush("Docile", NATURE_DOCILE)
+	dynmultipush("Relaxed", NATURE_RELAXED)
+	dynmultipush("Impish", NATURE_IMPISH)
+	dynmultipush("Lax", NATURE_LAX)
+	dynmultipush("Timid", NATURE_TIMID)
+	dynmultipush("Hasty", NATURE_HASTY)
+	dynmultipush("Serious", NATURE_SERIOUS)
+	dynmultipush("Jolly", NATURE_JOLLY)
+	dynmultipush("Naive", NATURE_NAIVE)
+	dynmultipush("Modest", NATURE_MODEST)
+	dynmultipush("Mild", NATURE_MILD)
+	dynmultipush("Quiet", NATURE_QUIET)
+	dynmultipush("Bashful", NATURE_BASHFUL)
+	dynmultipush("Rash", NATURE_RASH)
+	dynmultipush("Calm", NATURE_CALM)
+	dynmultipush("Gentle", NATURE_GENTLE)
+	dynmultipush("Sassy", NATURE_SASSY)
+	dynmultipush("Careful", NATURE_CAREFUL)
+	dynmultipush("Quirky", NATURE_QUIRKY)
+	dynmultistack(0, 0, TRUE, 7, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	switch (var(VAR_RESULT)) {
+		case NATURE_HARDY:
+			bufferstring(STR_VAR_2, "Hardy (neutral)")
+		case NATURE_LONELY:
+			bufferstring(STR_VAR_2, "Lonely (+Atk/-Def)")
+		case NATURE_BRAVE:
+			bufferstring(STR_VAR_2, "Brave (+Atk/-Spe)")
+		case NATURE_ADAMANT:
+			bufferstring(STR_VAR_2, "Adamant (+Atk/-SpA)")
+		case NATURE_NAUGHTY:
+			bufferstring(STR_VAR_2, "Naughty (+Atk/-SpD)")
+		case NATURE_BOLD:
+			bufferstring(STR_VAR_2, "Bold (+Def/-Atk)")
+		case NATURE_DOCILE:
+			bufferstring(STR_VAR_2, "Docile (neutral)")
+		case NATURE_RELAXED:
+			bufferstring(STR_VAR_2, "Relaxed (+Def/-Spe)")
+		case NATURE_IMPISH:
+			bufferstring(STR_VAR_2, "Impish (+Def/-SpA)")
+		case NATURE_LAX:
+			bufferstring(STR_VAR_2, "Lax (+Def/-SpD)")
+		case NATURE_TIMID:
+			bufferstring(STR_VAR_2, "Timid (+Spe/-Atk)")
+		case NATURE_HASTY:
+			bufferstring(STR_VAR_2, "Hasty (+Spe/-Def)")
+		case NATURE_SERIOUS:
+			bufferstring(STR_VAR_2, "Serious (neutral)")
+		case NATURE_JOLLY:
+			bufferstring(STR_VAR_2, "Jolly (+Spe/-SpA)")
+		case NATURE_NAIVE:
+			bufferstring(STR_VAR_2, "Naive (+Spe/-SpD)")
+		case NATURE_MODEST:
+			bufferstring(STR_VAR_2, "Modest (+SpA/-Atk)")
+		case NATURE_MILD:
+			bufferstring(STR_VAR_2, "Mild (+SpA/-Def)")
+		case NATURE_QUIET:
+			bufferstring(STR_VAR_2, "Quiet (+SpA/-Spe)")
+		case NATURE_BASHFUL:
+			bufferstring(STR_VAR_2, "Bashful (neutral)")
+		case NATURE_RASH:
+			bufferstring(STR_VAR_2, "Rash (+SpA/-SpD)")
+		case NATURE_CALM:
+			bufferstring(STR_VAR_2, "Calm (+SpD/-Atk)")
+		case NATURE_GENTLE:
+			bufferstring(STR_VAR_2, "Gentle (+SpD/-Def)")
+		case NATURE_SASSY:
+			bufferstring(STR_VAR_2, "Sassy (+SpD/-Spe)")
+		case NATURE_CAREFUL:
+			bufferstring(STR_VAR_2, "Careful (+SpD/-SpA)")
+		case NATURE_QUIRKY:
+			bufferstring(STR_VAR_2, "Quirky (neutral)")
+		case MULTI_B_PRESSED:
+			msgbox(format("Come back later if you ever want to change your Pokémon's Nature."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+		default:
+			msgbox(format("Come back later if you ever want to change your Pokémon's Nature."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+	}
+	copyvar(VAR_0x8005, VAR_RESULT)
+	special(ComparePartyMonNature)
+	if (var(VAR_0x800A) == TRUE) {
+		msgbox(format("{STR_VAR_1}'s Nature is already {STR_VAR_2}."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	// Check if this is a neutral nature (Hardy, Docile, Serious, Bashful, Quirky)
+	// If so, check bag capacity for the bonus mint
+	if (var(VAR_0x8005) == NATURE_HARDY || var(VAR_0x8005) == NATURE_DOCILE || var(VAR_0x8005) == NATURE_SERIOUS || var(VAR_0x8005) == NATURE_BASHFUL || var(VAR_0x8005) == NATURE_QUIRKY) {
+		checkitemspace(ITEM_SERIOUS_MINT, 1)
+		if (var(VAR_RESULT) == FALSE) {
+			msgbox(format("It looks like your Bag is full.\pPlease make some room and come back!"), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+		}
+	}
+	msgbox(format("Are you sure you want to change {STR_VAR_1}'s Nature to {STR_VAR_2} for a Heart Scale?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == TRUE) {
+		special(ChangeNature)
+		msgbox(format("{STR_VAR_1}'s Nature was changed to {STR_VAR_2}!"), MSGBOX_DEFAULT)
+		removeitem(ITEM_HEART_SCALE, 1)
+		// Give bonus mint for neutral natures
+		if (var(VAR_0x8005) == NATURE_HARDY || var(VAR_0x8005) == NATURE_DOCILE || var(VAR_0x8005) == NATURE_SERIOUS || var(VAR_0x8005) == NATURE_BASHFUL || var(VAR_0x8005) == NATURE_QUIRKY) {
+			msgbox(format("We have a 2-for-1 special for this nature; please take this mint as well."), MSGBOX_DEFAULT)
+			giveitem(ITEM_SERIOUS_MINT, 1)
+		}
+		closemessage
+		releaseall
+		end
+	}
+	else {
+		msgbox(format("Come back later if you ever want to change your Pokémon's Nature."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+}
+
 // Elite Move Tutor - Teaches special Elite Moves to eligible Pokemon
 // This uses the move relearner system but is only accessible through this script
 script Common_EventScript_EliteMoveTutor {
