@@ -4398,7 +4398,7 @@ Common_EventScript_ChangeNature::
 # 2070 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_26, NATURE_QUIRKY
 # 2071 "data/maps/TradeCenter/scripts.pory"
-	dynmultistack 0, 0, TRUE, 7, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+	dynmultistack 0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
 # 2072 "data/maps/TradeCenter/scripts.pory"
 	switch VAR_RESULT
 # 2073 "data/maps/TradeCenter/scripts.pory"
