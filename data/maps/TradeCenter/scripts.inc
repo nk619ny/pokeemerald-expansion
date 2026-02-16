@@ -3725,18 +3725,18 @@ Common_EventScript_PreDamageOrStatus_1:
 	setflag FLAG_TEMP_4
 # 1772 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_PreDamageOrStatus_Text_1, MSGBOX_DEFAULT
-# 1774 "data/maps/TradeCenter/scripts.pory"
+# 1773 "data/maps/TradeCenter/scripts.pory"
 	dynmultichoice 25, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_PreDamageOrStatus_Text_2, Common_EventScript_PreDamageOrStatus_Text_3, Common_EventScript_PreDamageOrStatus_Text_4
-# 1775 "data/maps/TradeCenter/scripts.pory"
+# 1774 "data/maps/TradeCenter/scripts.pory"
 	switch VAR_RESULT
-# 1776 "data/maps/TradeCenter/scripts.pory"
+# 1775 "data/maps/TradeCenter/scripts.pory"
 	case 0, Common_EventScript_PreDamageOrStatus_6
-# 1778 "data/maps/TradeCenter/scripts.pory"
+# 1777 "data/maps/TradeCenter/scripts.pory"
 	case 1, Common_EventScript_PreDamageOrStatus_7
-# 1780 "data/maps/TradeCenter/scripts.pory"
+# 1779 "data/maps/TradeCenter/scripts.pory"
 	case 2, Common_EventScript_PreDamageOrStatus_8
 Common_EventScript_PreDamageOrStatus_4:
-# 1783 "data/maps/TradeCenter/scripts.pory"
+# 1782 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
@@ -3746,1247 +3746,1502 @@ Common_EventScript_PreDamageOrStatus_2:
 	goto Common_EventScript_PreDamageOrStatus_1
 
 Common_EventScript_PreDamageOrStatus_6:
-# 1777 "data/maps/TradeCenter/scripts.pory"
+# 1776 "data/maps/TradeCenter/scripts.pory"
 	goto PokemonCenter_2F_EventScript_InflictStatusMenu
 	goto Common_EventScript_PreDamageOrStatus_4
 
 Common_EventScript_PreDamageOrStatus_7:
-# 1779 "data/maps/TradeCenter/scripts.pory"
+# 1778 "data/maps/TradeCenter/scripts.pory"
 	goto PokemonCenter_2F_EventScript_PreTrain_ComeBackLater
 	goto Common_EventScript_PreDamageOrStatus_4
 
 Common_EventScript_PreDamageOrStatus_8:
-# 1781 "data/maps/TradeCenter/scripts.pory"
+# 1780 "data/maps/TradeCenter/scripts.pory"
 	goto PokemonCenter_2F_EventScript_PreTrain_ComeBackLater
 	goto Common_EventScript_PreDamageOrStatus_4
 
 
 PokemonCenter_2F_EventScript_PreTrain_ComeBackLater::
-# 1788 "data/maps/TradeCenter/scripts.pory"
+# 1787 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 1789 "data/maps/TradeCenter/scripts.pory"
+# 1788 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_PreTrain_ComeBackLater_Text_0, MSGBOX_DEFAULT
-# 1790 "data/maps/TradeCenter/scripts.pory"
+# 1789 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1791 "data/maps/TradeCenter/scripts.pory"
+# 1790 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 PokemonCenter_2F_EventScript_InflictStatusMenu::
-# 1796 "data/maps/TradeCenter/scripts.pory"
+# 1795 "data/maps/TradeCenter/scripts.pory"
 	lockall
-# 1797 "data/maps/TradeCenter/scripts.pory"
+# 1796 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 1798 "data/maps/TradeCenter/scripts.pory"
+# 1797 "data/maps/TradeCenter/scripts.pory"
 	getpartysize
-# 1799 "data/maps/TradeCenter/scripts.pory"
+# 1798 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_2
-# 1804 "data/maps/TradeCenter/scripts.pory"
+# 1803 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_1, MSGBOX_DEFAULT
-# 1805 "data/maps/TradeCenter/scripts.pory"
+# 1804 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1806 "data/maps/TradeCenter/scripts.pory"
+# 1805 "data/maps/TradeCenter/scripts.pory"
 	special ChoosePartyMon
-# 1807 "data/maps/TradeCenter/scripts.pory"
+# 1806 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 1808 "data/maps/TradeCenter/scripts.pory"
+# 1807 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, 6
 	goto_if_ge PokemonCenter_2F_EventScript_InflictStatusMenu_5
-# 1812 "data/maps/TradeCenter/scripts.pory"
+# 1811 "data/maps/TradeCenter/scripts.pory"
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
-# 1813 "data/maps/TradeCenter/scripts.pory"
+# 1812 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, SPECIES_EGG
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_8
-# 1817 "data/maps/TradeCenter/scripts.pory"
+# 1816 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_2, STATUS1_POISON
-# 1818 "data/maps/TradeCenter/scripts.pory"
+# 1817 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_3, STATUS1_TOXIC_POISON
-# 1819 "data/maps/TradeCenter/scripts.pory"
+# 1818 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_4, STATUS1_PARALYSIS
-# 1820 "data/maps/TradeCenter/scripts.pory"
+# 1819 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_5, STATUS1_SLEEP
-# 1821 "data/maps/TradeCenter/scripts.pory"
+# 1820 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_6, STATUS1_BURN
-# 1822 "data/maps/TradeCenter/scripts.pory"
+# 1821 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_7, STATUS1_FREEZE
-# 1824 "data/maps/TradeCenter/scripts.pory"
+# 1823 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_8, MSGBOX_DEFAULT
-# 1825 "data/maps/TradeCenter/scripts.pory"
+# 1824 "data/maps/TradeCenter/scripts.pory"
 	dynmultistack 0, 0, FALSE, 6, FALSE, 0, 255
-# 1826 "data/maps/TradeCenter/scripts.pory"
+# 1825 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 127
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_11
-# 1830 "data/maps/TradeCenter/scripts.pory"
+# 1829 "data/maps/TradeCenter/scripts.pory"
 	copyvar VAR_0x8005, VAR_RESULT
-# 1831 "data/maps/TradeCenter/scripts.pory"
+# 1830 "data/maps/TradeCenter/scripts.pory"
 	special GetPartyMonTypes
-# 1832 "data/maps/TradeCenter/scripts.pory"
+# 1831 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800A, TYPE_POISON
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_44
-# 1832 "data/maps/TradeCenter/scripts.pory"
+# 1831 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800B, TYPE_POISON
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_44
 PokemonCenter_2F_EventScript_InflictStatusMenu_39:
-# 1838 "data/maps/TradeCenter/scripts.pory"
+# 1837 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800A, TYPE_STEEL
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_37
-# 1838 "data/maps/TradeCenter/scripts.pory"
+# 1837 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800B, TYPE_STEEL
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_37
 PokemonCenter_2F_EventScript_InflictStatusMenu_32:
-# 1844 "data/maps/TradeCenter/scripts.pory"
+# 1843 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800A, TYPE_ICE
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_30
-# 1844 "data/maps/TradeCenter/scripts.pory"
+# 1843 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800B, TYPE_ICE
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_30
 PokemonCenter_2F_EventScript_InflictStatusMenu_27:
-# 1850 "data/maps/TradeCenter/scripts.pory"
+# 1849 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800A, TYPE_FIRE
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_25
-# 1850 "data/maps/TradeCenter/scripts.pory"
+# 1849 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800B, TYPE_FIRE
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_25
 PokemonCenter_2F_EventScript_InflictStatusMenu_22:
-# 1856 "data/maps/TradeCenter/scripts.pory"
+# 1855 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800A, TYPE_ELECTRIC
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_20
-# 1856 "data/maps/TradeCenter/scripts.pory"
+# 1855 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800B, TYPE_ELECTRIC
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_20
 PokemonCenter_2F_EventScript_InflictStatusMenu_19:
-# 1864 "data/maps/TradeCenter/scripts.pory"
+# 1863 "data/maps/TradeCenter/scripts.pory"
 	special InflictStatus
-# 1865 "data/maps/TradeCenter/scripts.pory"
+# 1864 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_13, MSGBOX_DEFAULT
-# 1866 "data/maps/TradeCenter/scripts.pory"
+# 1865 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1868 "data/maps/TradeCenter/scripts.pory"
+# 1867 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_2:
-# 1800 "data/maps/TradeCenter/scripts.pory"
+# 1799 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_0, MSGBOX_DEFAULT
-# 1801 "data/maps/TradeCenter/scripts.pory"
+# 1800 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_5:
-# 1809 "data/maps/TradeCenter/scripts.pory"
+# 1808 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_8:
-# 1814 "data/maps/TradeCenter/scripts.pory"
+# 1813 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_11:
-# 1827 "data/maps/TradeCenter/scripts.pory"
+# 1826 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_14:
-# 1833 "data/maps/TradeCenter/scripts.pory"
+# 1832 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_9, MSGBOX_DEFAULT
-# 1834 "data/maps/TradeCenter/scripts.pory"
+# 1833 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1835 "data/maps/TradeCenter/scripts.pory"
+# 1834 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_15:
-# 1839 "data/maps/TradeCenter/scripts.pory"
+# 1838 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_9, MSGBOX_DEFAULT
-# 1840 "data/maps/TradeCenter/scripts.pory"
+# 1839 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1841 "data/maps/TradeCenter/scripts.pory"
+# 1840 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_16:
-# 1845 "data/maps/TradeCenter/scripts.pory"
+# 1844 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_10, MSGBOX_DEFAULT
-# 1846 "data/maps/TradeCenter/scripts.pory"
+# 1845 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1847 "data/maps/TradeCenter/scripts.pory"
+# 1846 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_17:
-# 1851 "data/maps/TradeCenter/scripts.pory"
+# 1850 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_11, MSGBOX_DEFAULT
-# 1852 "data/maps/TradeCenter/scripts.pory"
+# 1851 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1853 "data/maps/TradeCenter/scripts.pory"
+# 1852 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_18:
-# 1857 "data/maps/TradeCenter/scripts.pory"
+# 1856 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_12, MSGBOX_DEFAULT
-# 1858 "data/maps/TradeCenter/scripts.pory"
+# 1857 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1859 "data/maps/TradeCenter/scripts.pory"
+# 1858 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_20:
-# 1856 "data/maps/TradeCenter/scripts.pory"
+# 1855 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, STATUS1_PARALYSIS
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_18
 	goto PokemonCenter_2F_EventScript_InflictStatusMenu_19
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_25:
-# 1850 "data/maps/TradeCenter/scripts.pory"
+# 1849 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, STATUS1_BURN
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_17
 	goto PokemonCenter_2F_EventScript_InflictStatusMenu_22
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_30:
-# 1844 "data/maps/TradeCenter/scripts.pory"
+# 1843 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, STATUS1_FREEZE
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_16
-# 1844 "data/maps/TradeCenter/scripts.pory"
+# 1843 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, STATUS1_FROSTBITE
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_16
 	goto PokemonCenter_2F_EventScript_InflictStatusMenu_27
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_37:
-# 1838 "data/maps/TradeCenter/scripts.pory"
+# 1837 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, STATUS1_POISON
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_15
-# 1838 "data/maps/TradeCenter/scripts.pory"
+# 1837 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, STATUS1_TOXIC_POISON
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_15
 	goto PokemonCenter_2F_EventScript_InflictStatusMenu_32
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_44:
-# 1832 "data/maps/TradeCenter/scripts.pory"
+# 1831 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, STATUS1_POISON
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_14
-# 1832 "data/maps/TradeCenter/scripts.pory"
+# 1831 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, STATUS1_TOXIC_POISON
 	goto_if_eq PokemonCenter_2F_EventScript_InflictStatusMenu_14
 	goto PokemonCenter_2F_EventScript_InflictStatusMenu_39
 
 
 Common_EventScript_AttributeChanger::
-# 1873 "data/maps/TradeCenter/scripts.pory"
+# 1872 "data/maps/TradeCenter/scripts.pory"
 	lockall
-# 1874 "data/maps/TradeCenter/scripts.pory"
+# 1873 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 1875 "data/maps/TradeCenter/scripts.pory"
+# 1874 "data/maps/TradeCenter/scripts.pory"
 	goto_if_unset FLAG_TEMP_5, Common_EventScript_AttributeChanger_2
 Common_EventScript_AttributeChanger_1:
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_AttributeChanger_5
-# 1884 "data/maps/TradeCenter/scripts.pory"
+# 1883 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_TEMP_5
-# 1885 "data/maps/TradeCenter/scripts.pory"
+# 1884 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1886 "data/maps/TradeCenter/scripts.pory"
+# 1885 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_AttributeChanger_Text_1, MSGBOX_DEFAULT
+# 1886 "data/maps/TradeCenter/scripts.pory"
+	dynmultichoice 25, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_AttributeChanger_Text_2, Common_EventScript_AttributeChanger_Text_3, Common_EventScript_AttributeChanger_Text_4, Common_EventScript_AttributeChanger_Text_5
 # 1887 "data/maps/TradeCenter/scripts.pory"
-	dynmultichoice 25, 3, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_AttributeChanger_Text_2, Common_EventScript_AttributeChanger_Text_3, Common_EventScript_AttributeChanger_Text_4, Common_EventScript_AttributeChanger_Text_5
-# 1888 "data/maps/TradeCenter/scripts.pory"
 	switch VAR_RESULT
-# 1889 "data/maps/TradeCenter/scripts.pory"
+# 1888 "data/maps/TradeCenter/scripts.pory"
 	case 0, Common_EventScript_AttributeChanger_9
-# 1891 "data/maps/TradeCenter/scripts.pory"
+# 1890 "data/maps/TradeCenter/scripts.pory"
 	case 1, Common_EventScript_AttributeChanger_10
-# 1893 "data/maps/TradeCenter/scripts.pory"
+# 1892 "data/maps/TradeCenter/scripts.pory"
 	case 2, Common_EventScript_AttributeChanger_11
-# 1895 "data/maps/TradeCenter/scripts.pory"
+# 1894 "data/maps/TradeCenter/scripts.pory"
 	case 3, Common_EventScript_AttributeChanger_12
-# 1898 "data/maps/TradeCenter/scripts.pory"
+# 1897 "data/maps/TradeCenter/scripts.pory"
 	goto Common_EventScript_AttributeChanger_ComeBackLater
 Common_EventScript_AttributeChanger_7:
-# 1900 "data/maps/TradeCenter/scripts.pory"
+# 1899 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_AttributeChanger_2:
-# 1876 "data/maps/TradeCenter/scripts.pory"
+# 1875 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_AttributeChanger_Text_0, MSGBOX_DEFAULT
 	goto Common_EventScript_AttributeChanger_1
 
 Common_EventScript_AttributeChanger_5:
-# 1879 "data/maps/TradeCenter/scripts.pory"
+# 1878 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT
-# 1880 "data/maps/TradeCenter/scripts.pory"
+# 1879 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_TEMP_5
-# 1881 "data/maps/TradeCenter/scripts.pory"
+# 1880 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_AttributeChanger_9:
-# 1890 "data/maps/TradeCenter/scripts.pory"
+# 1889 "data/maps/TradeCenter/scripts.pory"
 	goto Common_EventScript_ChangeNature
 	goto Common_EventScript_AttributeChanger_7
 
 Common_EventScript_AttributeChanger_10:
-# 1892 "data/maps/TradeCenter/scripts.pory"
-	goto Common_EventScript_AttributeChanger_ComeBackLater
+# 1891 "data/maps/TradeCenter/scripts.pory"
+	goto Common_EventScript_ChangeIV
 	goto Common_EventScript_AttributeChanger_7
 
 Common_EventScript_AttributeChanger_11:
-# 1894 "data/maps/TradeCenter/scripts.pory"
+# 1893 "data/maps/TradeCenter/scripts.pory"
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType
 	goto Common_EventScript_AttributeChanger_7
 
 Common_EventScript_AttributeChanger_12:
-# 1896 "data/maps/TradeCenter/scripts.pory"
+# 1895 "data/maps/TradeCenter/scripts.pory"
 	goto Common_EventScript_AttributeChanger_ComeBackLater
 	goto Common_EventScript_AttributeChanger_7
 
 
 Common_EventScript_AttributeChanger_ComeBackLater::
-# 1905 "data/maps/TradeCenter/scripts.pory"
+# 1904 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 1906 "data/maps/TradeCenter/scripts.pory"
+# 1905 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_AttributeChanger_ComeBackLater_Text_0, MSGBOX_DEFAULT
-# 1907 "data/maps/TradeCenter/scripts.pory"
+# 1906 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1908 "data/maps/TradeCenter/scripts.pory"
+# 1907 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType::
-# 1913 "data/maps/TradeCenter/scripts.pory"
+# 1912 "data/maps/TradeCenter/scripts.pory"
 	getpartysize
-# 1914 "data/maps/TradeCenter/scripts.pory"
+# 1913 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq PokemonCenter_2F_EventScript_ChangeHiddenPowerType_2
-# 1919 "data/maps/TradeCenter/scripts.pory"
+# 1918 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_0, MSGBOX_DEFAULT
-# 1920 "data/maps/TradeCenter/scripts.pory"
+# 1919 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1921 "data/maps/TradeCenter/scripts.pory"
+# 1920 "data/maps/TradeCenter/scripts.pory"
 	special ChoosePartyMon
-# 1922 "data/maps/TradeCenter/scripts.pory"
+# 1921 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 1923 "data/maps/TradeCenter/scripts.pory"
+# 1922 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, 6
 	goto_if_ge PokemonCenter_2F_EventScript_ChangeHiddenPowerType_5
-# 1927 "data/maps/TradeCenter/scripts.pory"
+# 1926 "data/maps/TradeCenter/scripts.pory"
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
-# 1928 "data/maps/TradeCenter/scripts.pory"
+# 1927 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, SPECIES_EGG
 	goto_if_eq PokemonCenter_2F_EventScript_ChangeHiddenPowerType_8
-# 1932 "data/maps/TradeCenter/scripts.pory"
+# 1931 "data/maps/TradeCenter/scripts.pory"
 	special BufferMonNickname
-# 1934 "data/maps/TradeCenter/scripts.pory"
+# 1933 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_1, MSGBOX_DEFAULT
-# 1935 "data/maps/TradeCenter/scripts.pory"
+# 1934 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_2, TYPE_FIGHTING
-# 1936 "data/maps/TradeCenter/scripts.pory"
+# 1935 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_3, TYPE_FLYING
-# 1937 "data/maps/TradeCenter/scripts.pory"
+# 1936 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_InflictStatusMenu_Text_2, TYPE_POISON
-# 1938 "data/maps/TradeCenter/scripts.pory"
+# 1937 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_4, TYPE_GROUND
-# 1939 "data/maps/TradeCenter/scripts.pory"
+# 1938 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_5, TYPE_ROCK
-# 1940 "data/maps/TradeCenter/scripts.pory"
+# 1939 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_6, TYPE_BUG
-# 1941 "data/maps/TradeCenter/scripts.pory"
+# 1940 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_7, TYPE_GHOST
-# 1942 "data/maps/TradeCenter/scripts.pory"
+# 1941 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_8, TYPE_STEEL
-# 1943 "data/maps/TradeCenter/scripts.pory"
+# 1942 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_9, TYPE_FIRE
-# 1944 "data/maps/TradeCenter/scripts.pory"
+# 1943 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_10, TYPE_WATER
-# 1945 "data/maps/TradeCenter/scripts.pory"
+# 1944 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_11, TYPE_GRASS
-# 1946 "data/maps/TradeCenter/scripts.pory"
+# 1945 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_12, TYPE_ELECTRIC
-# 1947 "data/maps/TradeCenter/scripts.pory"
+# 1946 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_13, TYPE_PSYCHIC
-# 1948 "data/maps/TradeCenter/scripts.pory"
+# 1947 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_14, TYPE_ICE
-# 1949 "data/maps/TradeCenter/scripts.pory"
+# 1948 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_15, TYPE_DRAGON
-# 1950 "data/maps/TradeCenter/scripts.pory"
+# 1949 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_16, TYPE_DARK
-# 1951 "data/maps/TradeCenter/scripts.pory"
+# 1950 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_17, TYPE_FAIRY
-# 1952 "data/maps/TradeCenter/scripts.pory"
+# 1951 "data/maps/TradeCenter/scripts.pory"
 	dynmultistack 0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
-# 1953 "data/maps/TradeCenter/scripts.pory"
+# 1952 "data/maps/TradeCenter/scripts.pory"
 	switch VAR_RESULT
-# 1954 "data/maps/TradeCenter/scripts.pory"
+# 1953 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_FIGHTING, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_12
-# 1956 "data/maps/TradeCenter/scripts.pory"
+# 1955 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_FLYING, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_13
-# 1958 "data/maps/TradeCenter/scripts.pory"
+# 1957 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_POISON, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_14
-# 1960 "data/maps/TradeCenter/scripts.pory"
+# 1959 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_GROUND, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_15
-# 1962 "data/maps/TradeCenter/scripts.pory"
+# 1961 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_ROCK, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_16
-# 1964 "data/maps/TradeCenter/scripts.pory"
+# 1963 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_BUG, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_17
-# 1966 "data/maps/TradeCenter/scripts.pory"
+# 1965 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_GHOST, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_18
-# 1968 "data/maps/TradeCenter/scripts.pory"
+# 1967 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_STEEL, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_19
-# 1970 "data/maps/TradeCenter/scripts.pory"
+# 1969 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_FIRE, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_20
-# 1972 "data/maps/TradeCenter/scripts.pory"
+# 1971 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_WATER, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_21
-# 1974 "data/maps/TradeCenter/scripts.pory"
+# 1973 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_GRASS, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_22
-# 1976 "data/maps/TradeCenter/scripts.pory"
+# 1975 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_ELECTRIC, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_23
-# 1978 "data/maps/TradeCenter/scripts.pory"
+# 1977 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_PSYCHIC, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_24
-# 1980 "data/maps/TradeCenter/scripts.pory"
+# 1979 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_ICE, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_25
-# 1982 "data/maps/TradeCenter/scripts.pory"
+# 1981 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_DRAGON, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_26
-# 1984 "data/maps/TradeCenter/scripts.pory"
+# 1983 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_DARK, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_27
-# 1986 "data/maps/TradeCenter/scripts.pory"
+# 1985 "data/maps/TradeCenter/scripts.pory"
 	case TYPE_FAIRY, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_28
-# 1988 "data/maps/TradeCenter/scripts.pory"
+# 1987 "data/maps/TradeCenter/scripts.pory"
 	case MULTI_B_PRESSED, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_29
-# 1994 "data/maps/TradeCenter/scripts.pory"
+# 1993 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_18, MSGBOX_DEFAULT
-# 1995 "data/maps/TradeCenter/scripts.pory"
+# 1994 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1996 "data/maps/TradeCenter/scripts.pory"
+# 1995 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_2:
-# 1915 "data/maps/TradeCenter/scripts.pory"
+# 1914 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_0, MSGBOX_DEFAULT
-# 1916 "data/maps/TradeCenter/scripts.pory"
+# 1915 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_5:
-# 1924 "data/maps/TradeCenter/scripts.pory"
+# 1923 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_8:
-# 1929 "data/maps/TradeCenter/scripts.pory"
+# 1928 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10:
-# 1999 "data/maps/TradeCenter/scripts.pory"
+# 1998 "data/maps/TradeCenter/scripts.pory"
 	copyvar VAR_0x8005, VAR_RESULT
-# 2000 "data/maps/TradeCenter/scripts.pory"
+# 1999 "data/maps/TradeCenter/scripts.pory"
 	special ComparePartyMonTeraType
-# 2001 "data/maps/TradeCenter/scripts.pory"
+# 2000 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800A, TRUE
 	goto_if_eq PokemonCenter_2F_EventScript_ChangeHiddenPowerType_32
-# 2007 "data/maps/TradeCenter/scripts.pory"
+# 2006 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_20, MSGBOX_YESNO
-# 2008 "data/maps/TradeCenter/scripts.pory"
+# 2007 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq PokemonCenter_2F_EventScript_ChangeHiddenPowerType_34
-# 2017 "data/maps/TradeCenter/scripts.pory"
+# 2016 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_18, MSGBOX_DEFAULT
-# 2018 "data/maps/TradeCenter/scripts.pory"
+# 2017 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2019 "data/maps/TradeCenter/scripts.pory"
+# 2018 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_12:
-# 1955 "data/maps/TradeCenter/scripts.pory"
+# 1954 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_2
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_13:
-# 1957 "data/maps/TradeCenter/scripts.pory"
+# 1956 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_3
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_14:
-# 1959 "data/maps/TradeCenter/scripts.pory"
+# 1958 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_InflictStatusMenu_Text_2
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_15:
-# 1961 "data/maps/TradeCenter/scripts.pory"
+# 1960 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_4
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_16:
-# 1963 "data/maps/TradeCenter/scripts.pory"
+# 1962 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_5
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_17:
-# 1965 "data/maps/TradeCenter/scripts.pory"
+# 1964 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_6
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_18:
-# 1967 "data/maps/TradeCenter/scripts.pory"
+# 1966 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_7
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_19:
-# 1969 "data/maps/TradeCenter/scripts.pory"
+# 1968 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_8
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_20:
-# 1971 "data/maps/TradeCenter/scripts.pory"
+# 1970 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_9
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_21:
-# 1973 "data/maps/TradeCenter/scripts.pory"
+# 1972 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_10
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_22:
-# 1975 "data/maps/TradeCenter/scripts.pory"
+# 1974 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_11
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_23:
-# 1977 "data/maps/TradeCenter/scripts.pory"
+# 1976 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_12
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_24:
-# 1979 "data/maps/TradeCenter/scripts.pory"
+# 1978 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_13
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_25:
-# 1981 "data/maps/TradeCenter/scripts.pory"
+# 1980 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_14
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_26:
-# 1983 "data/maps/TradeCenter/scripts.pory"
+# 1982 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_15
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_27:
-# 1985 "data/maps/TradeCenter/scripts.pory"
+# 1984 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_16
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_28:
-# 1987 "data/maps/TradeCenter/scripts.pory"
+# 1986 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_2, PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_17
 	goto PokemonCenter_2F_EventScript_ChangeHiddenPowerType_10
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_29:
-# 1989 "data/maps/TradeCenter/scripts.pory"
+# 1988 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_18, MSGBOX_DEFAULT
-# 1990 "data/maps/TradeCenter/scripts.pory"
+# 1989 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 1991 "data/maps/TradeCenter/scripts.pory"
+# 1990 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_32:
-# 2002 "data/maps/TradeCenter/scripts.pory"
+# 2001 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_19, MSGBOX_DEFAULT
-# 2003 "data/maps/TradeCenter/scripts.pory"
+# 2002 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2004 "data/maps/TradeCenter/scripts.pory"
+# 2003 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_34:
-# 2009 "data/maps/TradeCenter/scripts.pory"
+# 2008 "data/maps/TradeCenter/scripts.pory"
 	special ChangeTeraType
-# 2010 "data/maps/TradeCenter/scripts.pory"
+# 2009 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_21, MSGBOX_DEFAULT
-# 2011 "data/maps/TradeCenter/scripts.pory"
+# 2010 "data/maps/TradeCenter/scripts.pory"
 	removeitem ITEM_HEART_SCALE, 1
-# 2012 "data/maps/TradeCenter/scripts.pory"
+# 2011 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2013 "data/maps/TradeCenter/scripts.pory"
+# 2012 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 Common_EventScript_ChangeNature::
-# 2026 "data/maps/TradeCenter/scripts.pory"
+# 2025 "data/maps/TradeCenter/scripts.pory"
 	getpartysize
-# 2027 "data/maps/TradeCenter/scripts.pory"
+# 2026 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_ChangeNature_2
-# 2032 "data/maps/TradeCenter/scripts.pory"
+# 2031 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_ChangeNature_Text_0, MSGBOX_DEFAULT
-# 2033 "data/maps/TradeCenter/scripts.pory"
+# 2032 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2034 "data/maps/TradeCenter/scripts.pory"
+# 2033 "data/maps/TradeCenter/scripts.pory"
 	special ChoosePartyMon
-# 2035 "data/maps/TradeCenter/scripts.pory"
+# 2034 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 2036 "data/maps/TradeCenter/scripts.pory"
+# 2035 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, 6
 	goto_if_ge Common_EventScript_ChangeNature_5
-# 2040 "data/maps/TradeCenter/scripts.pory"
+# 2039 "data/maps/TradeCenter/scripts.pory"
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
-# 2041 "data/maps/TradeCenter/scripts.pory"
+# 2040 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, SPECIES_EGG
 	goto_if_eq Common_EventScript_ChangeNature_8
-# 2045 "data/maps/TradeCenter/scripts.pory"
+# 2044 "data/maps/TradeCenter/scripts.pory"
 	special BufferMonNickname
-# 2046 "data/maps/TradeCenter/scripts.pory"
+# 2045 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_ChangeNature_Text_1, MSGBOX_DEFAULT
-# 2047 "data/maps/TradeCenter/scripts.pory"
+# 2046 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_2, NATURE_HARDY
-# 2048 "data/maps/TradeCenter/scripts.pory"
+# 2047 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_3, NATURE_LONELY
-# 2049 "data/maps/TradeCenter/scripts.pory"
+# 2048 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_4, NATURE_BRAVE
-# 2050 "data/maps/TradeCenter/scripts.pory"
+# 2049 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_5, NATURE_ADAMANT
-# 2051 "data/maps/TradeCenter/scripts.pory"
+# 2050 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_6, NATURE_NAUGHTY
-# 2052 "data/maps/TradeCenter/scripts.pory"
+# 2051 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_7, NATURE_BOLD
-# 2053 "data/maps/TradeCenter/scripts.pory"
+# 2052 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_8, NATURE_DOCILE
-# 2054 "data/maps/TradeCenter/scripts.pory"
+# 2053 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_9, NATURE_RELAXED
-# 2055 "data/maps/TradeCenter/scripts.pory"
+# 2054 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_10, NATURE_IMPISH
-# 2056 "data/maps/TradeCenter/scripts.pory"
+# 2055 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_11, NATURE_LAX
-# 2057 "data/maps/TradeCenter/scripts.pory"
+# 2056 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_12, NATURE_TIMID
-# 2058 "data/maps/TradeCenter/scripts.pory"
+# 2057 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_13, NATURE_HASTY
-# 2059 "data/maps/TradeCenter/scripts.pory"
+# 2058 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_14, NATURE_SERIOUS
-# 2060 "data/maps/TradeCenter/scripts.pory"
+# 2059 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_15, NATURE_JOLLY
-# 2061 "data/maps/TradeCenter/scripts.pory"
+# 2060 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_16, NATURE_NAIVE
-# 2062 "data/maps/TradeCenter/scripts.pory"
+# 2061 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_17, NATURE_MODEST
-# 2063 "data/maps/TradeCenter/scripts.pory"
+# 2062 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_18, NATURE_MILD
-# 2064 "data/maps/TradeCenter/scripts.pory"
+# 2063 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_19, NATURE_QUIET
-# 2065 "data/maps/TradeCenter/scripts.pory"
+# 2064 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_20, NATURE_BASHFUL
-# 2066 "data/maps/TradeCenter/scripts.pory"
+# 2065 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_21, NATURE_RASH
-# 2067 "data/maps/TradeCenter/scripts.pory"
+# 2066 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_22, NATURE_CALM
-# 2068 "data/maps/TradeCenter/scripts.pory"
+# 2067 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_23, NATURE_GENTLE
-# 2069 "data/maps/TradeCenter/scripts.pory"
+# 2068 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_24, NATURE_SASSY
-# 2070 "data/maps/TradeCenter/scripts.pory"
+# 2069 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_25, NATURE_CAREFUL
-# 2071 "data/maps/TradeCenter/scripts.pory"
+# 2070 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush Common_EventScript_ChangeNature_Text_26, NATURE_QUIRKY
-# 2072 "data/maps/TradeCenter/scripts.pory"
+# 2071 "data/maps/TradeCenter/scripts.pory"
 	dynmultistack 0, 0, TRUE, 7, FALSE, 0, DYN_MULTICHOICE_CB_NONE
-# 2073 "data/maps/TradeCenter/scripts.pory"
+# 2072 "data/maps/TradeCenter/scripts.pory"
 	switch VAR_RESULT
-# 2074 "data/maps/TradeCenter/scripts.pory"
+# 2073 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_HARDY, Common_EventScript_ChangeNature_12
-# 2076 "data/maps/TradeCenter/scripts.pory"
+# 2075 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_LONELY, Common_EventScript_ChangeNature_13
-# 2078 "data/maps/TradeCenter/scripts.pory"
+# 2077 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_BRAVE, Common_EventScript_ChangeNature_14
-# 2080 "data/maps/TradeCenter/scripts.pory"
+# 2079 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_ADAMANT, Common_EventScript_ChangeNature_15
-# 2082 "data/maps/TradeCenter/scripts.pory"
+# 2081 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_NAUGHTY, Common_EventScript_ChangeNature_16
-# 2084 "data/maps/TradeCenter/scripts.pory"
+# 2083 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_BOLD, Common_EventScript_ChangeNature_17
-# 2086 "data/maps/TradeCenter/scripts.pory"
+# 2085 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_DOCILE, Common_EventScript_ChangeNature_18
-# 2088 "data/maps/TradeCenter/scripts.pory"
+# 2087 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_RELAXED, Common_EventScript_ChangeNature_19
-# 2090 "data/maps/TradeCenter/scripts.pory"
+# 2089 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_IMPISH, Common_EventScript_ChangeNature_20
-# 2092 "data/maps/TradeCenter/scripts.pory"
+# 2091 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_LAX, Common_EventScript_ChangeNature_21
-# 2094 "data/maps/TradeCenter/scripts.pory"
+# 2093 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_TIMID, Common_EventScript_ChangeNature_22
-# 2096 "data/maps/TradeCenter/scripts.pory"
+# 2095 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_HASTY, Common_EventScript_ChangeNature_23
-# 2098 "data/maps/TradeCenter/scripts.pory"
+# 2097 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_SERIOUS, Common_EventScript_ChangeNature_24
-# 2100 "data/maps/TradeCenter/scripts.pory"
+# 2099 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_JOLLY, Common_EventScript_ChangeNature_25
-# 2102 "data/maps/TradeCenter/scripts.pory"
+# 2101 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_NAIVE, Common_EventScript_ChangeNature_26
-# 2104 "data/maps/TradeCenter/scripts.pory"
+# 2103 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_MODEST, Common_EventScript_ChangeNature_27
-# 2106 "data/maps/TradeCenter/scripts.pory"
+# 2105 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_MILD, Common_EventScript_ChangeNature_28
-# 2108 "data/maps/TradeCenter/scripts.pory"
+# 2107 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_QUIET, Common_EventScript_ChangeNature_29
-# 2110 "data/maps/TradeCenter/scripts.pory"
+# 2109 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_BASHFUL, Common_EventScript_ChangeNature_30
-# 2112 "data/maps/TradeCenter/scripts.pory"
+# 2111 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_RASH, Common_EventScript_ChangeNature_31
-# 2114 "data/maps/TradeCenter/scripts.pory"
+# 2113 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_CALM, Common_EventScript_ChangeNature_32
-# 2116 "data/maps/TradeCenter/scripts.pory"
+# 2115 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_GENTLE, Common_EventScript_ChangeNature_33
-# 2118 "data/maps/TradeCenter/scripts.pory"
+# 2117 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_SASSY, Common_EventScript_ChangeNature_34
-# 2120 "data/maps/TradeCenter/scripts.pory"
+# 2119 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_CAREFUL, Common_EventScript_ChangeNature_35
-# 2122 "data/maps/TradeCenter/scripts.pory"
+# 2121 "data/maps/TradeCenter/scripts.pory"
 	case NATURE_QUIRKY, Common_EventScript_ChangeNature_36
-# 2124 "data/maps/TradeCenter/scripts.pory"
+# 2123 "data/maps/TradeCenter/scripts.pory"
 	case MULTI_B_PRESSED, Common_EventScript_ChangeNature_37
+# 2129 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeNature_Text_27, MSGBOX_DEFAULT
 # 2130 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_ChangeNature_Text_52, MSGBOX_DEFAULT
-# 2131 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2132 "data/maps/TradeCenter/scripts.pory"
+# 2131 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_ChangeNature_2:
-# 2028 "data/maps/TradeCenter/scripts.pory"
+# 2027 "data/maps/TradeCenter/scripts.pory"
 	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_0, MSGBOX_DEFAULT
-# 2029 "data/maps/TradeCenter/scripts.pory"
+# 2028 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_ChangeNature_5:
-# 2037 "data/maps/TradeCenter/scripts.pory"
+# 2036 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_ChangeNature_8:
-# 2042 "data/maps/TradeCenter/scripts.pory"
+# 2041 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_ChangeNature_10:
-# 2135 "data/maps/TradeCenter/scripts.pory"
+# 2134 "data/maps/TradeCenter/scripts.pory"
 	copyvar VAR_0x8005, VAR_RESULT
-# 2136 "data/maps/TradeCenter/scripts.pory"
+# 2135 "data/maps/TradeCenter/scripts.pory"
 	special ComparePartyMonNature
-# 2137 "data/maps/TradeCenter/scripts.pory"
+# 2136 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x800A, TRUE
 	goto_if_eq Common_EventScript_ChangeNature_40
-# 2145 "data/maps/TradeCenter/scripts.pory"
+# 2144 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_HARDY
 	goto_if_eq Common_EventScript_ChangeNature_43
-# 2145 "data/maps/TradeCenter/scripts.pory"
+# 2144 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_DOCILE
 	goto_if_eq Common_EventScript_ChangeNature_43
-# 2145 "data/maps/TradeCenter/scripts.pory"
+# 2144 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_SERIOUS
 	goto_if_eq Common_EventScript_ChangeNature_43
-# 2145 "data/maps/TradeCenter/scripts.pory"
+# 2144 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_BASHFUL
 	goto_if_eq Common_EventScript_ChangeNature_43
-# 2145 "data/maps/TradeCenter/scripts.pory"
+# 2144 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_QUIRKY
 	goto_if_eq Common_EventScript_ChangeNature_43
 Common_EventScript_ChangeNature_42:
+# 2153 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeNature_Text_30, MSGBOX_YESNO
 # 2154 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_ChangeNature_Text_55, MSGBOX_YESNO
-# 2155 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq Common_EventScript_ChangeNature_53
+# 2168 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeNature_Text_27, MSGBOX_DEFAULT
 # 2169 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_ChangeNature_Text_52, MSGBOX_DEFAULT
-# 2170 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2171 "data/maps/TradeCenter/scripts.pory"
+# 2170 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_ChangeNature_12:
-# 2075 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_27
+# 2074 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_2
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_13:
-# 2077 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_28
+# 2076 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_3
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_14:
-# 2079 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_29
+# 2078 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_4
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_15:
-# 2081 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_30
+# 2080 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_5
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_16:
-# 2083 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_31
+# 2082 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_6
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_17:
-# 2085 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_32
+# 2084 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_7
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_18:
-# 2087 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_33
+# 2086 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_8
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_19:
-# 2089 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_34
+# 2088 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_9
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_20:
-# 2091 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_35
+# 2090 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_10
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_21:
-# 2093 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_36
+# 2092 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_11
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_22:
-# 2095 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_37
+# 2094 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_12
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_23:
-# 2097 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_38
+# 2096 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_13
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_24:
-# 2099 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_39
+# 2098 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_14
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_25:
-# 2101 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_40
+# 2100 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_15
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_26:
-# 2103 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_41
+# 2102 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_16
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_27:
-# 2105 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_42
+# 2104 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_17
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_28:
-# 2107 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_43
+# 2106 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_18
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_29:
-# 2109 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_44
+# 2108 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_19
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_30:
-# 2111 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_45
+# 2110 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_20
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_31:
-# 2113 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_46
+# 2112 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_21
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_32:
-# 2115 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_47
+# 2114 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_22
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_33:
-# 2117 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_48
+# 2116 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_23
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_34:
-# 2119 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_49
+# 2118 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_24
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_35:
-# 2121 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_50
+# 2120 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_25
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_36:
-# 2123 "data/maps/TradeCenter/scripts.pory"
-	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_51
+# 2122 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeNature_Text_26
 	goto Common_EventScript_ChangeNature_10
 
 Common_EventScript_ChangeNature_37:
+# 2124 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeNature_Text_27, MSGBOX_DEFAULT
 # 2125 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_ChangeNature_Text_52, MSGBOX_DEFAULT
-# 2126 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2127 "data/maps/TradeCenter/scripts.pory"
+# 2126 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_ChangeNature_40:
+# 2137 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeNature_Text_28, MSGBOX_DEFAULT
 # 2138 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_ChangeNature_Text_53, MSGBOX_DEFAULT
-# 2139 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2140 "data/maps/TradeCenter/scripts.pory"
+# 2139 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_ChangeNature_43:
-# 2146 "data/maps/TradeCenter/scripts.pory"
+# 2145 "data/maps/TradeCenter/scripts.pory"
 	checkitemspace ITEM_SERIOUS_MINT, 1
-# 2147 "data/maps/TradeCenter/scripts.pory"
+# 2146 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ChangeNature_56
 	goto Common_EventScript_ChangeNature_42
 
 Common_EventScript_ChangeNature_53:
-# 2156 "data/maps/TradeCenter/scripts.pory"
+# 2155 "data/maps/TradeCenter/scripts.pory"
 	special ChangeNature
+# 2156 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeNature_Text_31, MSGBOX_DEFAULT
 # 2157 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_ChangeNature_Text_56, MSGBOX_DEFAULT
-# 2158 "data/maps/TradeCenter/scripts.pory"
 	removeitem ITEM_HEART_SCALE, 1
-# 2160 "data/maps/TradeCenter/scripts.pory"
+# 2159 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_HARDY
 	goto_if_eq Common_EventScript_ChangeNature_59
-# 2160 "data/maps/TradeCenter/scripts.pory"
+# 2159 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_DOCILE
 	goto_if_eq Common_EventScript_ChangeNature_59
-# 2160 "data/maps/TradeCenter/scripts.pory"
+# 2159 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_SERIOUS
 	goto_if_eq Common_EventScript_ChangeNature_59
-# 2160 "data/maps/TradeCenter/scripts.pory"
+# 2159 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_BASHFUL
 	goto_if_eq Common_EventScript_ChangeNature_59
-# 2160 "data/maps/TradeCenter/scripts.pory"
+# 2159 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8005, NATURE_QUIRKY
 	goto_if_eq Common_EventScript_ChangeNature_59
 Common_EventScript_ChangeNature_58:
-# 2164 "data/maps/TradeCenter/scripts.pory"
+# 2163 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2165 "data/maps/TradeCenter/scripts.pory"
+# 2164 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_ChangeNature_56:
+# 2147 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeNature_Text_29, MSGBOX_DEFAULT
 # 2148 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_ChangeNature_Text_54, MSGBOX_DEFAULT
-# 2149 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2150 "data/maps/TradeCenter/scripts.pory"
+# 2149 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_ChangeNature_59:
+# 2160 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeNature_Text_32, MSGBOX_DEFAULT
 # 2161 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_ChangeNature_Text_57, MSGBOX_DEFAULT
-# 2162 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_SERIOUS_MINT, 1
 	goto Common_EventScript_ChangeNature_58
 
 
-Common_EventScript_EliteMoveTutor::
+Common_EventScript_ChangeIV::
+# 2177 "data/maps/TradeCenter/scripts.pory"
+	getpartysize
+# 2178 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Common_EventScript_ChangeIV_2
+# 2183 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_0, MSGBOX_DEFAULT
+# 2184 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2185 "data/maps/TradeCenter/scripts.pory"
+	special ChoosePartyMon
+# 2186 "data/maps/TradeCenter/scripts.pory"
+	waitstate
+# 2187 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8004, 6
+	goto_if_ge Common_EventScript_ChangeIV_5
+# 2191 "data/maps/TradeCenter/scripts.pory"
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+# 2192 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, SPECIES_EGG
+	goto_if_eq Common_EventScript_ChangeIV_8
+# 2196 "data/maps/TradeCenter/scripts.pory"
+	special BufferMonNickname
+# 2197 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_1, MSGBOX_DEFAULT
+# 2198 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush Common_EventScript_ChangeIV_Text_2, STAT_HP
+# 2199 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush Common_EventScript_ChangeIV_Text_3, STAT_ATK
+# 2200 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush Common_EventScript_ChangeIV_Text_4, STAT_DEF
+# 2201 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush Common_EventScript_ChangeIV_Text_5, STAT_SPEED
+# 2202 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush Common_EventScript_ChangeIV_Text_6, STAT_SPATK
+# 2203 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush Common_EventScript_ChangeIV_Text_7, STAT_SPDEF
+# 2204 "data/maps/TradeCenter/scripts.pory"
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE
+# 2205 "data/maps/TradeCenter/scripts.pory"
+	switch VAR_RESULT
+# 2206 "data/maps/TradeCenter/scripts.pory"
+	case STAT_HP, Common_EventScript_ChangeIV_12
+# 2208 "data/maps/TradeCenter/scripts.pory"
+	case STAT_ATK, Common_EventScript_ChangeIV_13
+# 2210 "data/maps/TradeCenter/scripts.pory"
+	case STAT_DEF, Common_EventScript_ChangeIV_14
+# 2212 "data/maps/TradeCenter/scripts.pory"
+	case STAT_SPEED, Common_EventScript_ChangeIV_15
+# 2214 "data/maps/TradeCenter/scripts.pory"
+	case STAT_SPATK, Common_EventScript_ChangeIV_16
+# 2216 "data/maps/TradeCenter/scripts.pory"
+	case STAT_SPDEF, Common_EventScript_ChangeIV_17
+# 2218 "data/maps/TradeCenter/scripts.pory"
+	case MULTI_B_PRESSED, Common_EventScript_ChangeIV_18
+# 2224 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_8, MSGBOX_DEFAULT
+# 2225 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2226 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_2:
 # 2179 "data/maps/TradeCenter/scripts.pory"
-	lock
+	msgbox PokemonCenter_2F_EventScript_InflictStatusMenu_Text_0, MSGBOX_DEFAULT
 # 2180 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_5:
+# 2188 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_8:
+# 2193 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_10:
+# 2229 "data/maps/TradeCenter/scripts.pory"
+	copyvar VAR_0x8005, VAR_RESULT
+# 2231 "data/maps/TradeCenter/scripts.pory"
+	special GetPartyMonIV
+# 2232 "data/maps/TradeCenter/scripts.pory"
+	copyvar VAR_0x8007, VAR_RESULT
+# 2233 "data/maps/TradeCenter/scripts.pory"
+	buffernumberstring STR_VAR_3, VAR_0x8007
+# 2234 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_9, MSGBOX_DEFAULT
+# 2235 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush Common_EventScript_ChangeIV_Text_10, 31
+# 2236 "data/maps/TradeCenter/scripts.pory"
+	dynmultipush Common_EventScript_ChangeIV_Text_11, 0
+# 2237 "data/maps/TradeCenter/scripts.pory"
+	dynmultistack 0, 0, FALSE, 2, FALSE, 31, DYN_MULTICHOICE_CB_NONE
+# 2238 "data/maps/TradeCenter/scripts.pory"
+	switch VAR_RESULT
+# 2239 "data/maps/TradeCenter/scripts.pory"
+	case 31, Common_EventScript_ChangeIV_22
+# 2242 "data/maps/TradeCenter/scripts.pory"
+	case 0, Common_EventScript_ChangeIV_23
+# 2245 "data/maps/TradeCenter/scripts.pory"
+	case MULTI_B_PRESSED, Common_EventScript_ChangeIV_24
+# 2251 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_8, MSGBOX_DEFAULT
+# 2252 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2253 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_12:
+# 2207 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeIV_Text_2
+	goto Common_EventScript_ChangeIV_10
+
+Common_EventScript_ChangeIV_13:
+# 2209 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeIV_Text_3
+	goto Common_EventScript_ChangeIV_10
+
+Common_EventScript_ChangeIV_14:
+# 2211 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeIV_Text_4
+	goto Common_EventScript_ChangeIV_10
+
+Common_EventScript_ChangeIV_15:
+# 2213 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeIV_Text_5
+	goto Common_EventScript_ChangeIV_10
+
+Common_EventScript_ChangeIV_16:
+# 2215 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeIV_Text_6
+	goto Common_EventScript_ChangeIV_10
+
+Common_EventScript_ChangeIV_17:
+# 2217 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_2, Common_EventScript_ChangeIV_Text_7
+	goto Common_EventScript_ChangeIV_10
+
+Common_EventScript_ChangeIV_18:
+# 2219 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_8, MSGBOX_DEFAULT
+# 2220 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2221 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_20:
+# 2258 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8006, 31
+	goto_if_eq Common_EventScript_ChangeIV_28
+Common_EventScript_ChangeIV_26:
+# 2265 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8006, 0
+	goto_if_eq Common_EventScript_ChangeIV_33
+Common_EventScript_ChangeIV_31:
+# 2272 "data/maps/TradeCenter/scripts.pory"
+	buffernumberstring STR_VAR_3, VAR_0x8007
+# 2274 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8006, 31
+	goto_if_eq Common_EventScript_ChangeIV_37
+# 2278 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_17, MSGBOX_YESNO
+Common_EventScript_ChangeIV_36:
+# 2280 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq Common_EventScript_ChangeIV_40
+# 2290 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_8, MSGBOX_DEFAULT
+# 2291 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2292 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_22:
+# 2240 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_3, Common_EventScript_ChangeIV_Text_12
+# 2241 "data/maps/TradeCenter/scripts.pory"
+	setvar VAR_0x8006, 31
+	goto Common_EventScript_ChangeIV_20
+
+Common_EventScript_ChangeIV_23:
+# 2243 "data/maps/TradeCenter/scripts.pory"
+	bufferstring STR_VAR_3, Common_EventScript_ChangeIV_Text_13
+# 2244 "data/maps/TradeCenter/scripts.pory"
+	setvar VAR_0x8006, 0
+	goto Common_EventScript_ChangeIV_20
+
+Common_EventScript_ChangeIV_24:
+# 2246 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_8, MSGBOX_DEFAULT
+# 2247 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2248 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_27:
+# 2259 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_14, MSGBOX_DEFAULT
+# 2260 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2261 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_28:
+# 2258 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8007, 31
+	goto_if_eq Common_EventScript_ChangeIV_27
+	goto Common_EventScript_ChangeIV_26
+
+Common_EventScript_ChangeIV_32:
+# 2266 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_15, MSGBOX_DEFAULT
+# 2267 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2268 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+Common_EventScript_ChangeIV_33:
+# 2265 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8007, 0
+	goto_if_eq Common_EventScript_ChangeIV_32
+	goto Common_EventScript_ChangeIV_31
+
+Common_EventScript_ChangeIV_37:
+# 2275 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_16, MSGBOX_YESNO
+	goto Common_EventScript_ChangeIV_36
+
+Common_EventScript_ChangeIV_40:
+# 2281 "data/maps/TradeCenter/scripts.pory"
+	special SetPartyMonIV
+# 2282 "data/maps/TradeCenter/scripts.pory"
+	buffernumberstring STR_VAR_3, VAR_0x8006
+# 2283 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_ChangeIV_Text_18, MSGBOX_DEFAULT
+# 2284 "data/maps/TradeCenter/scripts.pory"
+	removeitem ITEM_HEART_SCALE, 1
+# 2285 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2286 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+
+Common_EventScript_EliteMoveTutor::
+# 2300 "data/maps/TradeCenter/scripts.pory"
+	lock
+# 2301 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2181 "data/maps/TradeCenter/scripts.pory"
+# 2302 "data/maps/TradeCenter/scripts.pory"
 	goto_if_unset FLAG_TEMP_3, Common_EventScript_EliteMoveTutor_2
 Common_EventScript_EliteMoveTutor_1:
-# 2185 "data/maps/TradeCenter/scripts.pory"
+# 2306 "data/maps/TradeCenter/scripts.pory"
 	goto_if_unset FLAG_BADGE04_GET, Common_EventScript_EliteMoveTutor_5
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_EliteMoveTutor_8
-# 2197 "data/maps/TradeCenter/scripts.pory"
+# 2318 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_TEMP_3
-# 2198 "data/maps/TradeCenter/scripts.pory"
+# 2319 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_EliteMoveTutor_Text_1, MSGBOX_DEFAULT
-# 2199 "data/maps/TradeCenter/scripts.pory"
+# 2320 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_ChooseMon
 	return
 
 Common_EventScript_EliteMoveTutor_2:
-# 2182 "data/maps/TradeCenter/scripts.pory"
+# 2303 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_Intro, MSGBOX_DEFAULT
 	goto Common_EventScript_EliteMoveTutor_1
 
 Common_EventScript_EliteMoveTutor_5:
-# 2186 "data/maps/TradeCenter/scripts.pory"
+# 2307 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_EliteMoveTutor_Text_0, MSGBOX_DEFAULT
-# 2187 "data/maps/TradeCenter/scripts.pory"
+# 2308 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_TEMP_3
-# 2188 "data/maps/TradeCenter/scripts.pory"
+# 2309 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_EliteMoveTutor_8:
-# 2192 "data/maps/TradeCenter/scripts.pory"
+# 2313 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT
-# 2193 "data/maps/TradeCenter/scripts.pory"
+# 2314 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_TEMP_3
-# 2194 "data/maps/TradeCenter/scripts.pory"
+# 2315 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 EliteMoveTutor_EventScript_ChooseMon::
-# 2203 "data/maps/TradeCenter/scripts.pory"
+# 2324 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT
-# 2204 "data/maps/TradeCenter/scripts.pory"
+# 2325 "data/maps/TradeCenter/scripts.pory"
 	special ChoosePartyMon
-# 2205 "data/maps/TradeCenter/scripts.pory"
+# 2326 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 2206 "data/maps/TradeCenter/scripts.pory"
+# 2327 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_2
 EliteMoveTutor_EventScript_ChooseMon_1:
-# 2209 "data/maps/TradeCenter/scripts.pory"
+# 2330 "data/maps/TradeCenter/scripts.pory"
 	special IsSelectedMonEgg
-# 2210 "data/maps/TradeCenter/scripts.pory"
+# 2331 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_5
 EliteMoveTutor_EventScript_ChooseMon_4:
-# 2215 "data/maps/TradeCenter/scripts.pory"
+# 2336 "data/maps/TradeCenter/scripts.pory"
 	special CheckPartyMonHasEliteMoves
-# 2216 "data/maps/TradeCenter/scripts.pory"
+# 2337 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_8
 EliteMoveTutor_EventScript_ChooseMon_7:
-# 2222 "data/maps/TradeCenter/scripts.pory"
+# 2343 "data/maps/TradeCenter/scripts.pory"
 	special BufferMonNickname
-# 2223 "data/maps/TradeCenter/scripts.pory"
+# 2344 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_HasEliteMoves, MSGBOX_DEFAULT
-# 2224 "data/maps/TradeCenter/scripts.pory"
+# 2345 "data/maps/TradeCenter/scripts.pory"
 	special TeachEliteMoves
-# 2225 "data/maps/TradeCenter/scripts.pory"
+# 2346 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 2226 "data/maps/TradeCenter/scripts.pory"
+# 2347 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2227 "data/maps/TradeCenter/scripts.pory"
+# 2348 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2229 "data/maps/TradeCenter/scripts.pory"
+# 2350 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, TRUE
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_11
 EliteMoveTutor_EventScript_ChooseMon_10:
-# 2247 "data/maps/TradeCenter/scripts.pory"
+# 2368 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_Cancel
 	return
 
 EliteMoveTutor_EventScript_ChooseMon_2:
-# 2207 "data/maps/TradeCenter/scripts.pory"
+# 2328 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_Cancel
 	goto EliteMoveTutor_EventScript_ChooseMon_1
 
 EliteMoveTutor_EventScript_ChooseMon_5:
-# 2211 "data/maps/TradeCenter/scripts.pory"
+# 2332 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_CantTeachEgg, MSGBOX_DEFAULT
-# 2212 "data/maps/TradeCenter/scripts.pory"
+# 2333 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_ChooseMon
 	goto EliteMoveTutor_EventScript_ChooseMon_4
 
 EliteMoveTutor_EventScript_ChooseMon_8:
-# 2217 "data/maps/TradeCenter/scripts.pory"
+# 2338 "data/maps/TradeCenter/scripts.pory"
 	special BufferMonNickname
-# 2218 "data/maps/TradeCenter/scripts.pory"
+# 2339 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_NoEliteMoves, MSGBOX_DEFAULT
-# 2219 "data/maps/TradeCenter/scripts.pory"
+# 2340 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_ChooseMon
 	goto EliteMoveTutor_EventScript_ChooseMon_7
 
 EliteMoveTutor_EventScript_ChooseMon_11:
-# 2231 "data/maps/TradeCenter/scripts.pory"
+# 2352 "data/maps/TradeCenter/scripts.pory"
 	removeitem ITEM_HEART_SCALE, 1
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne EliteMoveTutor_EventScript_ChooseMon_13
-# 2241 "data/maps/TradeCenter/scripts.pory"
+# 2362 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_NoMoreHeartScales, MSGBOX_DEFAULT
-# 2242 "data/maps/TradeCenter/scripts.pory"
+# 2363 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 EliteMoveTutor_EventScript_ChooseMon_13:
-# 2234 "data/maps/TradeCenter/scripts.pory"
+# 2355 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_AnythingElse, MSGBOX_YESNO
-# 2235 "data/maps/TradeCenter/scripts.pory"
+# 2356 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_17
 EliteMoveTutor_EventScript_ChooseMon_16:
-# 2238 "data/maps/TradeCenter/scripts.pory"
+# 2359 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_Cancel
 	goto EliteMoveTutor_EventScript_ChooseMon_10
 
 EliteMoveTutor_EventScript_ChooseMon_17:
-# 2236 "data/maps/TradeCenter/scripts.pory"
+# 2357 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_ChooseMon
 	goto EliteMoveTutor_EventScript_ChooseMon_16
 
 
 EliteMoveTutor_EventScript_Cancel::
-# 2251 "data/maps/TradeCenter/scripts.pory"
+# 2372 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_ComeBack, MSGBOX_DEFAULT
-# 2252 "data/maps/TradeCenter/scripts.pory"
+# 2373 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 Common_EventScript_EggMoveTutor::
-# 2295 "data/maps/TradeCenter/scripts.pory"
+# 2416 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2296 "data/maps/TradeCenter/scripts.pory"
+# 2417 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2298 "data/maps/TradeCenter/scripts.pory"
+# 2419 "data/maps/TradeCenter/scripts.pory"
 	goto_if_unset FLAG_BADGE02_GET, Common_EventScript_EggMoveTutor_2
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_EggMoveTutor_5
-# 2309 "data/maps/TradeCenter/scripts.pory"
+# 2430 "data/maps/TradeCenter/scripts.pory"
 	goto_if_unset FLAG_TEMP_2, Common_EventScript_EggMoveTutor_8
 Common_EventScript_EggMoveTutor_7:
-# 2314 "data/maps/TradeCenter/scripts.pory"
+# 2435 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_EggMoveTutor_Text_1, MSGBOX_DEFAULT
-# 2315 "data/maps/TradeCenter/scripts.pory"
+# 2436 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2316 "data/maps/TradeCenter/scripts.pory"
+# 2437 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_ChooseMon
 	return
 
 Common_EventScript_EggMoveTutor_2:
-# 2299 "data/maps/TradeCenter/scripts.pory"
+# 2420 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_EggMoveTutor_Text_0, MSGBOX_DEFAULT
-# 2300 "data/maps/TradeCenter/scripts.pory"
+# 2421 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2301 "data/maps/TradeCenter/scripts.pory"
+# 2422 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_EggMoveTutor_5:
-# 2305 "data/maps/TradeCenter/scripts.pory"
+# 2426 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT
-# 2306 "data/maps/TradeCenter/scripts.pory"
+# 2427 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_EggMoveTutor_8:
-# 2310 "data/maps/TradeCenter/scripts.pory"
+# 2431 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_Intro, MSGBOX_DEFAULT
-# 2311 "data/maps/TradeCenter/scripts.pory"
+# 2432 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_TEMP_2
-# 2312 "data/maps/TradeCenter/scripts.pory"
+# 2433 "data/maps/TradeCenter/scripts.pory"
 	closemessage
 	goto Common_EventScript_EggMoveTutor_7
 
 
 EggMoveTutor_EventScript_ChooseMon::
-# 2320 "data/maps/TradeCenter/scripts.pory"
+# 2441 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT
-# 2321 "data/maps/TradeCenter/scripts.pory"
+# 2442 "data/maps/TradeCenter/scripts.pory"
 	special ChoosePartyMon
-# 2322 "data/maps/TradeCenter/scripts.pory"
+# 2443 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 2323 "data/maps/TradeCenter/scripts.pory"
+# 2444 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_2
 EggMoveTutor_EventScript_ChooseMon_1:
-# 2326 "data/maps/TradeCenter/scripts.pory"
+# 2447 "data/maps/TradeCenter/scripts.pory"
 	special IsSelectedMonEgg
-# 2327 "data/maps/TradeCenter/scripts.pory"
+# 2448 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_5
 EggMoveTutor_EventScript_ChooseMon_4:
-# 2341 "data/maps/TradeCenter/scripts.pory"
+# 2462 "data/maps/TradeCenter/scripts.pory"
 	special TeachScriptEggMoves
-# 2342 "data/maps/TradeCenter/scripts.pory"
+# 2463 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 2343 "data/maps/TradeCenter/scripts.pory"
+# 2464 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2344 "data/maps/TradeCenter/scripts.pory"
+# 2465 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2346 "data/maps/TradeCenter/scripts.pory"
+# 2467 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, TRUE
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_8
 EggMoveTutor_EventScript_ChooseMon_7:
-# 2364 "data/maps/TradeCenter/scripts.pory"
+# 2485 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_Cancel
 	return
 
 EggMoveTutor_EventScript_ChooseMon_2:
-# 2324 "data/maps/TradeCenter/scripts.pory"
+# 2445 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_Cancel
 	goto EggMoveTutor_EventScript_ChooseMon_1
 
 EggMoveTutor_EventScript_ChooseMon_5:
-# 2328 "data/maps/TradeCenter/scripts.pory"
+# 2449 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_CantTeachEgg, MSGBOX_DEFAULT
-# 2329 "data/maps/TradeCenter/scripts.pory"
+# 2450 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_ChooseMon
 	goto EggMoveTutor_EventScript_ChooseMon_4
 
 EggMoveTutor_EventScript_ChooseMon_8:
-# 2348 "data/maps/TradeCenter/scripts.pory"
+# 2469 "data/maps/TradeCenter/scripts.pory"
 	removeitem ITEM_HEART_SCALE, 1
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne EggMoveTutor_EventScript_ChooseMon_10
-# 2358 "data/maps/TradeCenter/scripts.pory"
+# 2479 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_NoMoreHeartScales, MSGBOX_DEFAULT
-# 2359 "data/maps/TradeCenter/scripts.pory"
+# 2480 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 EggMoveTutor_EventScript_ChooseMon_10:
-# 2351 "data/maps/TradeCenter/scripts.pory"
+# 2472 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_AnythingElse, MSGBOX_YESNO
-# 2352 "data/maps/TradeCenter/scripts.pory"
+# 2473 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_14
 EggMoveTutor_EventScript_ChooseMon_13:
-# 2355 "data/maps/TradeCenter/scripts.pory"
+# 2476 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_Cancel
 	goto EggMoveTutor_EventScript_ChooseMon_7
 
 EggMoveTutor_EventScript_ChooseMon_14:
-# 2353 "data/maps/TradeCenter/scripts.pory"
+# 2474 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_ChooseMon
 	goto EggMoveTutor_EventScript_ChooseMon_13
 
 
 EggMoveTutor_EventScript_Cancel::
-# 2368 "data/maps/TradeCenter/scripts.pory"
+# 2489 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_ComeBack, MSGBOX_DEFAULT
-# 2369 "data/maps/TradeCenter/scripts.pory"
+# 2490 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
@@ -5731,464 +5986,455 @@ Common_EventScript_PreDamageOrStatus_Text_1:
 	.string "How can I be of assistance?$"
 
 Common_EventScript_PreDamageOrStatus_Text_2:
-# 1774 "data/maps/TradeCenter/scripts.pory"
+# 1773 "data/maps/TradeCenter/scripts.pory"
 	.string "Set Status$"
 
 Common_EventScript_PreDamageOrStatus_Text_3:
-# 1774 "data/maps/TradeCenter/scripts.pory"
+# 1773 "data/maps/TradeCenter/scripts.pory"
 	.string "Set Damage$"
 
 Common_EventScript_PreDamageOrStatus_Text_4:
-# 1774 "data/maps/TradeCenter/scripts.pory"
+# 1773 "data/maps/TradeCenter/scripts.pory"
 	.string "Never Mind$"
 
 PokemonCenter_2F_EventScript_PreTrain_ComeBackLater_Text_0:
-# 1789 "data/maps/TradeCenter/scripts.pory"
+# 1788 "data/maps/TradeCenter/scripts.pory"
 	.string "I'll be here, if you ever need my\n"
 	.string "services.$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_0:
-# 1800 "data/maps/TradeCenter/scripts.pory"
+# 1799 "data/maps/TradeCenter/scripts.pory"
 	.string "Your PARTY has no Pokémon.$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_1:
-# 1804 "data/maps/TradeCenter/scripts.pory"
+# 1803 "data/maps/TradeCenter/scripts.pory"
 	.string "Choose a Pokémon to inflict a status\n"
 	.string "condition on.$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_2:
-# 1817 "data/maps/TradeCenter/scripts.pory"
+# 1816 "data/maps/TradeCenter/scripts.pory"
 	.string "Poison$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_3:
-# 1818 "data/maps/TradeCenter/scripts.pory"
+# 1817 "data/maps/TradeCenter/scripts.pory"
 	.string "Toxic Poison$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_4:
-# 1819 "data/maps/TradeCenter/scripts.pory"
+# 1818 "data/maps/TradeCenter/scripts.pory"
 	.string "Paralysis$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_5:
-# 1820 "data/maps/TradeCenter/scripts.pory"
+# 1819 "data/maps/TradeCenter/scripts.pory"
 	.string "Sleep$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_6:
-# 1821 "data/maps/TradeCenter/scripts.pory"
+# 1820 "data/maps/TradeCenter/scripts.pory"
 	.string "Burn$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_7:
-# 1822 "data/maps/TradeCenter/scripts.pory"
+# 1821 "data/maps/TradeCenter/scripts.pory"
 	.string "Freeze$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_8:
-# 1824 "data/maps/TradeCenter/scripts.pory"
+# 1823 "data/maps/TradeCenter/scripts.pory"
 	.string "Which status condition would you like\n"
 	.string "to inflict?$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_9:
-# 1833 "data/maps/TradeCenter/scripts.pory"
+# 1832 "data/maps/TradeCenter/scripts.pory"
 	.string "That Pokémon is immune to being\n"
 	.string "poisoned.$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_10:
-# 1845 "data/maps/TradeCenter/scripts.pory"
+# 1844 "data/maps/TradeCenter/scripts.pory"
 	.string "That Pokémon is immune to being frozen.$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_11:
-# 1851 "data/maps/TradeCenter/scripts.pory"
+# 1850 "data/maps/TradeCenter/scripts.pory"
 	.string "That Pokémon is immune to being burned.$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_12:
-# 1857 "data/maps/TradeCenter/scripts.pory"
+# 1856 "data/maps/TradeCenter/scripts.pory"
 	.string "That Pokémon is immune to being\n"
 	.string "paralyzed.$"
 
 PokemonCenter_2F_EventScript_InflictStatusMenu_Text_13:
-# 1865 "data/maps/TradeCenter/scripts.pory"
+# 1864 "data/maps/TradeCenter/scripts.pory"
 	.string "Your Pokémon was inflicted with a\n"
 	.string "status condition!$"
 
 Common_EventScript_AttributeChanger_Text_0:
-# 1876 "data/maps/TradeCenter/scripts.pory"
+# 1875 "data/maps/TradeCenter/scripts.pory"
 	.string "Hello! I can change your Pokémon's\n"
 	.string "Nature, IVs, or Hidden Power Type.\p"
 	.string "It will cost you a Heart Scale, however.$"
 
 Common_EventScript_AttributeChanger_Text_1:
-# 1886 "data/maps/TradeCenter/scripts.pory"
+# 1885 "data/maps/TradeCenter/scripts.pory"
 	.string "What would you like to change?$"
 
 Common_EventScript_AttributeChanger_Text_2:
-# 1887 "data/maps/TradeCenter/scripts.pory"
+# 1886 "data/maps/TradeCenter/scripts.pory"
 	.string "Nature$"
 
 Common_EventScript_AttributeChanger_Text_3:
-# 1887 "data/maps/TradeCenter/scripts.pory"
+# 1886 "data/maps/TradeCenter/scripts.pory"
 	.string "IVs$"
 
 Common_EventScript_AttributeChanger_Text_4:
-# 1887 "data/maps/TradeCenter/scripts.pory"
+# 1886 "data/maps/TradeCenter/scripts.pory"
 	.string "Hidden Power Type$"
 
 Common_EventScript_AttributeChanger_Text_5:
-# 1887 "data/maps/TradeCenter/scripts.pory"
+# 1886 "data/maps/TradeCenter/scripts.pory"
 	.string "Nevermind$"
 
 Common_EventScript_AttributeChanger_ComeBackLater_Text_0:
-# 1906 "data/maps/TradeCenter/scripts.pory"
+# 1905 "data/maps/TradeCenter/scripts.pory"
 	.string "I'll be here if you ever want to change\n"
 	.string "any of your Pokémon's attributes!$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_0:
-# 1919 "data/maps/TradeCenter/scripts.pory"
+# 1918 "data/maps/TradeCenter/scripts.pory"
 	.string "Which Pokémon's Hidden Power type\n"
 	.string "would you like to change?$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_1:
-# 1934 "data/maps/TradeCenter/scripts.pory"
+# 1933 "data/maps/TradeCenter/scripts.pory"
 	.string "What would you like your Pokémon's\n"
 	.string "Hidden Power type to be?$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_2:
-# 1935 "data/maps/TradeCenter/scripts.pory"
+# 1934 "data/maps/TradeCenter/scripts.pory"
 	.string "Fighting$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_3:
-# 1936 "data/maps/TradeCenter/scripts.pory"
+# 1935 "data/maps/TradeCenter/scripts.pory"
 	.string "Flying$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_4:
-# 1938 "data/maps/TradeCenter/scripts.pory"
+# 1937 "data/maps/TradeCenter/scripts.pory"
 	.string "Ground$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_5:
-# 1939 "data/maps/TradeCenter/scripts.pory"
+# 1938 "data/maps/TradeCenter/scripts.pory"
 	.string "Rock$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_6:
-# 1940 "data/maps/TradeCenter/scripts.pory"
+# 1939 "data/maps/TradeCenter/scripts.pory"
 	.string "Bug$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_7:
-# 1941 "data/maps/TradeCenter/scripts.pory"
+# 1940 "data/maps/TradeCenter/scripts.pory"
 	.string "Ghost$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_8:
-# 1942 "data/maps/TradeCenter/scripts.pory"
+# 1941 "data/maps/TradeCenter/scripts.pory"
 	.string "Steel$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_9:
-# 1943 "data/maps/TradeCenter/scripts.pory"
+# 1942 "data/maps/TradeCenter/scripts.pory"
 	.string "Fire$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_10:
-# 1944 "data/maps/TradeCenter/scripts.pory"
+# 1943 "data/maps/TradeCenter/scripts.pory"
 	.string "Water$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_11:
-# 1945 "data/maps/TradeCenter/scripts.pory"
+# 1944 "data/maps/TradeCenter/scripts.pory"
 	.string "Grass$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_12:
-# 1946 "data/maps/TradeCenter/scripts.pory"
+# 1945 "data/maps/TradeCenter/scripts.pory"
 	.string "Electric$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_13:
-# 1947 "data/maps/TradeCenter/scripts.pory"
+# 1946 "data/maps/TradeCenter/scripts.pory"
 	.string "Psychic$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_14:
-# 1948 "data/maps/TradeCenter/scripts.pory"
+# 1947 "data/maps/TradeCenter/scripts.pory"
 	.string "Ice$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_15:
-# 1949 "data/maps/TradeCenter/scripts.pory"
+# 1948 "data/maps/TradeCenter/scripts.pory"
 	.string "Dragon$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_16:
-# 1950 "data/maps/TradeCenter/scripts.pory"
+# 1949 "data/maps/TradeCenter/scripts.pory"
 	.string "Dark$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_17:
-# 1951 "data/maps/TradeCenter/scripts.pory"
+# 1950 "data/maps/TradeCenter/scripts.pory"
 	.string "Fairy$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_18:
-# 1989 "data/maps/TradeCenter/scripts.pory"
+# 1988 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back later if you ever want to\n"
 	.string "change your Pokémon's Hidden Power\l"
 	.string "type.$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_19:
-# 2002 "data/maps/TradeCenter/scripts.pory"
+# 2001 "data/maps/TradeCenter/scripts.pory"
 	.string "Your {STR_VAR_1}'s Hidden Power\n"
 	.string "type is already {STR_VAR_2}.$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_20:
-# 2007 "data/maps/TradeCenter/scripts.pory"
+# 2006 "data/maps/TradeCenter/scripts.pory"
 	.string "Are you sure you want to change\n"
 	.string "{STR_VAR_1}'s Hidden Power type to\l"
 	.string "{STR_VAR_2} for a Heart Scale?$"
 
 PokemonCenter_2F_EventScript_ChangeHiddenPowerType_Text_21:
-# 2010 "data/maps/TradeCenter/scripts.pory"
+# 2009 "data/maps/TradeCenter/scripts.pory"
 	.string "Your {STR_VAR_1}'s Hidden Power\n"
 	.string "type was changed to {STR_VAR_2}!$"
 
 Common_EventScript_ChangeNature_Text_0:
-# 2032 "data/maps/TradeCenter/scripts.pory"
+# 2031 "data/maps/TradeCenter/scripts.pory"
 	.string "Which Pokémon's Nature would you like\n"
 	.string "to change?$"
 
 Common_EventScript_ChangeNature_Text_1:
-# 2046 "data/maps/TradeCenter/scripts.pory"
+# 2045 "data/maps/TradeCenter/scripts.pory"
 	.string "What Nature would you like\n"
 	.string "{STR_VAR_1} to have?$"
 
 Common_EventScript_ChangeNature_Text_2:
-# 2047 "data/maps/TradeCenter/scripts.pory"
-	.string "Hardy$"
-
-Common_EventScript_ChangeNature_Text_3:
-# 2048 "data/maps/TradeCenter/scripts.pory"
-	.string "Lonely$"
-
-Common_EventScript_ChangeNature_Text_4:
-# 2049 "data/maps/TradeCenter/scripts.pory"
-	.string "Brave$"
-
-Common_EventScript_ChangeNature_Text_5:
-# 2050 "data/maps/TradeCenter/scripts.pory"
-	.string "Adamant$"
-
-Common_EventScript_ChangeNature_Text_6:
-# 2051 "data/maps/TradeCenter/scripts.pory"
-	.string "Naughty$"
-
-Common_EventScript_ChangeNature_Text_7:
-# 2052 "data/maps/TradeCenter/scripts.pory"
-	.string "Bold$"
-
-Common_EventScript_ChangeNature_Text_8:
-# 2053 "data/maps/TradeCenter/scripts.pory"
-	.string "Docile$"
-
-Common_EventScript_ChangeNature_Text_9:
-# 2054 "data/maps/TradeCenter/scripts.pory"
-	.string "Relaxed$"
-
-Common_EventScript_ChangeNature_Text_10:
-# 2055 "data/maps/TradeCenter/scripts.pory"
-	.string "Impish$"
-
-Common_EventScript_ChangeNature_Text_11:
-# 2056 "data/maps/TradeCenter/scripts.pory"
-	.string "Lax$"
-
-Common_EventScript_ChangeNature_Text_12:
-# 2057 "data/maps/TradeCenter/scripts.pory"
-	.string "Timid$"
-
-Common_EventScript_ChangeNature_Text_13:
-# 2058 "data/maps/TradeCenter/scripts.pory"
-	.string "Hasty$"
-
-Common_EventScript_ChangeNature_Text_14:
-# 2059 "data/maps/TradeCenter/scripts.pory"
-	.string "Serious$"
-
-Common_EventScript_ChangeNature_Text_15:
-# 2060 "data/maps/TradeCenter/scripts.pory"
-	.string "Jolly$"
-
-Common_EventScript_ChangeNature_Text_16:
-# 2061 "data/maps/TradeCenter/scripts.pory"
-	.string "Naive$"
-
-Common_EventScript_ChangeNature_Text_17:
-# 2062 "data/maps/TradeCenter/scripts.pory"
-	.string "Modest$"
-
-Common_EventScript_ChangeNature_Text_18:
-# 2063 "data/maps/TradeCenter/scripts.pory"
-	.string "Mild$"
-
-Common_EventScript_ChangeNature_Text_19:
-# 2064 "data/maps/TradeCenter/scripts.pory"
-	.string "Quiet$"
-
-Common_EventScript_ChangeNature_Text_20:
-# 2065 "data/maps/TradeCenter/scripts.pory"
-	.string "Bashful$"
-
-Common_EventScript_ChangeNature_Text_21:
-# 2066 "data/maps/TradeCenter/scripts.pory"
-	.string "Rash$"
-
-Common_EventScript_ChangeNature_Text_22:
-# 2067 "data/maps/TradeCenter/scripts.pory"
-	.string "Calm$"
-
-Common_EventScript_ChangeNature_Text_23:
-# 2068 "data/maps/TradeCenter/scripts.pory"
-	.string "Gentle$"
-
-Common_EventScript_ChangeNature_Text_24:
-# 2069 "data/maps/TradeCenter/scripts.pory"
-	.string "Sassy$"
-
-Common_EventScript_ChangeNature_Text_25:
-# 2070 "data/maps/TradeCenter/scripts.pory"
-	.string "Careful$"
-
-Common_EventScript_ChangeNature_Text_26:
-# 2071 "data/maps/TradeCenter/scripts.pory"
-	.string "Quirky$"
-
-Common_EventScript_ChangeNature_Text_27:
-# 2075 "data/maps/TradeCenter/scripts.pory"
+# 2046 "data/maps/TradeCenter/scripts.pory"
 	.string "Hardy (neutral)$"
 
-Common_EventScript_ChangeNature_Text_28:
-# 2077 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_3:
+# 2047 "data/maps/TradeCenter/scripts.pory"
 	.string "Lonely (+Atk/-Def)$"
 
-Common_EventScript_ChangeNature_Text_29:
-# 2079 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_4:
+# 2048 "data/maps/TradeCenter/scripts.pory"
 	.string "Brave (+Atk/-Spe)$"
 
-Common_EventScript_ChangeNature_Text_30:
-# 2081 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_5:
+# 2049 "data/maps/TradeCenter/scripts.pory"
 	.string "Adamant (+Atk/-SpA)$"
 
-Common_EventScript_ChangeNature_Text_31:
-# 2083 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_6:
+# 2050 "data/maps/TradeCenter/scripts.pory"
 	.string "Naughty (+Atk/-SpD)$"
 
-Common_EventScript_ChangeNature_Text_32:
-# 2085 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_7:
+# 2051 "data/maps/TradeCenter/scripts.pory"
 	.string "Bold (+Def/-Atk)$"
 
-Common_EventScript_ChangeNature_Text_33:
-# 2087 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_8:
+# 2052 "data/maps/TradeCenter/scripts.pory"
 	.string "Docile (neutral)$"
 
-Common_EventScript_ChangeNature_Text_34:
-# 2089 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_9:
+# 2053 "data/maps/TradeCenter/scripts.pory"
 	.string "Relaxed (+Def/-Spe)$"
 
-Common_EventScript_ChangeNature_Text_35:
-# 2091 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_10:
+# 2054 "data/maps/TradeCenter/scripts.pory"
 	.string "Impish (+Def/-SpA)$"
 
-Common_EventScript_ChangeNature_Text_36:
-# 2093 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_11:
+# 2055 "data/maps/TradeCenter/scripts.pory"
 	.string "Lax (+Def/-SpD)$"
 
-Common_EventScript_ChangeNature_Text_37:
-# 2095 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_12:
+# 2056 "data/maps/TradeCenter/scripts.pory"
 	.string "Timid (+Spe/-Atk)$"
 
-Common_EventScript_ChangeNature_Text_38:
-# 2097 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_13:
+# 2057 "data/maps/TradeCenter/scripts.pory"
 	.string "Hasty (+Spe/-Def)$"
 
-Common_EventScript_ChangeNature_Text_39:
-# 2099 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_14:
+# 2058 "data/maps/TradeCenter/scripts.pory"
 	.string "Serious (neutral)$"
 
-Common_EventScript_ChangeNature_Text_40:
-# 2101 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_15:
+# 2059 "data/maps/TradeCenter/scripts.pory"
 	.string "Jolly (+Spe/-SpA)$"
 
-Common_EventScript_ChangeNature_Text_41:
-# 2103 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_16:
+# 2060 "data/maps/TradeCenter/scripts.pory"
 	.string "Naive (+Spe/-SpD)$"
 
-Common_EventScript_ChangeNature_Text_42:
-# 2105 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_17:
+# 2061 "data/maps/TradeCenter/scripts.pory"
 	.string "Modest (+SpA/-Atk)$"
 
-Common_EventScript_ChangeNature_Text_43:
-# 2107 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_18:
+# 2062 "data/maps/TradeCenter/scripts.pory"
 	.string "Mild (+SpA/-Def)$"
 
-Common_EventScript_ChangeNature_Text_44:
-# 2109 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_19:
+# 2063 "data/maps/TradeCenter/scripts.pory"
 	.string "Quiet (+SpA/-Spe)$"
 
-Common_EventScript_ChangeNature_Text_45:
-# 2111 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_20:
+# 2064 "data/maps/TradeCenter/scripts.pory"
 	.string "Bashful (neutral)$"
 
-Common_EventScript_ChangeNature_Text_46:
-# 2113 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_21:
+# 2065 "data/maps/TradeCenter/scripts.pory"
 	.string "Rash (+SpA/-SpD)$"
 
-Common_EventScript_ChangeNature_Text_47:
-# 2115 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_22:
+# 2066 "data/maps/TradeCenter/scripts.pory"
 	.string "Calm (+SpD/-Atk)$"
 
-Common_EventScript_ChangeNature_Text_48:
-# 2117 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_23:
+# 2067 "data/maps/TradeCenter/scripts.pory"
 	.string "Gentle (+SpD/-Def)$"
 
-Common_EventScript_ChangeNature_Text_49:
-# 2119 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_24:
+# 2068 "data/maps/TradeCenter/scripts.pory"
 	.string "Sassy (+SpD/-Spe)$"
 
-Common_EventScript_ChangeNature_Text_50:
-# 2121 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_25:
+# 2069 "data/maps/TradeCenter/scripts.pory"
 	.string "Careful (+SpD/-SpA)$"
 
-Common_EventScript_ChangeNature_Text_51:
-# 2123 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_26:
+# 2070 "data/maps/TradeCenter/scripts.pory"
 	.string "Quirky (neutral)$"
 
-Common_EventScript_ChangeNature_Text_52:
-# 2125 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_27:
+# 2124 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back later if you ever want to\n"
 	.string "change your Pokémon's Nature.$"
 
-Common_EventScript_ChangeNature_Text_53:
-# 2138 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_28:
+# 2137 "data/maps/TradeCenter/scripts.pory"
 	.string "{STR_VAR_1}'s Nature is already\n"
 	.string "{STR_VAR_2}.$"
 
-Common_EventScript_ChangeNature_Text_54:
-# 2148 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_29:
+# 2147 "data/maps/TradeCenter/scripts.pory"
 	.string "It looks like your Bag is full.\p"
 	.string "Please make some room and come back!$"
 
-Common_EventScript_ChangeNature_Text_55:
-# 2154 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_30:
+# 2153 "data/maps/TradeCenter/scripts.pory"
 	.string "Are you sure you want to change\n"
 	.string "{STR_VAR_1}'s Nature to\l"
 	.string "{STR_VAR_2} for a Heart Scale?$"
 
-Common_EventScript_ChangeNature_Text_56:
-# 2157 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_31:
+# 2156 "data/maps/TradeCenter/scripts.pory"
 	.string "{STR_VAR_1}'s Nature was changed to\n"
 	.string "{STR_VAR_2}!$"
 
-Common_EventScript_ChangeNature_Text_57:
-# 2161 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_ChangeNature_Text_32:
+# 2160 "data/maps/TradeCenter/scripts.pory"
 	.string "We have a 2-for-1 special for this\n"
 	.string "nature; please take this mint as well.$"
 
+Common_EventScript_ChangeIV_Text_0:
+# 2183 "data/maps/TradeCenter/scripts.pory"
+	.string "Which Pokémon's IVs would you like to\n"
+	.string "change?$"
+
+Common_EventScript_ChangeIV_Text_1:
+# 2197 "data/maps/TradeCenter/scripts.pory"
+	.string "Which stat's IV would you like to change\n"
+	.string "for {STR_VAR_1}?$"
+
+Common_EventScript_ChangeIV_Text_2:
+# 2198 "data/maps/TradeCenter/scripts.pory"
+	.string "HP$"
+
+Common_EventScript_ChangeIV_Text_3:
+# 2199 "data/maps/TradeCenter/scripts.pory"
+	.string "Attack$"
+
+Common_EventScript_ChangeIV_Text_4:
+# 2200 "data/maps/TradeCenter/scripts.pory"
+	.string "Defense$"
+
+Common_EventScript_ChangeIV_Text_5:
+# 2201 "data/maps/TradeCenter/scripts.pory"
+	.string "Speed$"
+
+Common_EventScript_ChangeIV_Text_6:
+# 2202 "data/maps/TradeCenter/scripts.pory"
+	.string "Sp. Attack$"
+
+Common_EventScript_ChangeIV_Text_7:
+# 2203 "data/maps/TradeCenter/scripts.pory"
+	.string "Sp. Defense$"
+
+Common_EventScript_ChangeIV_Text_8:
+# 2219 "data/maps/TradeCenter/scripts.pory"
+	.string "Come back later if you ever want to\n"
+	.string "change your Pokémon's IVs.$"
+
+Common_EventScript_ChangeIV_Text_9:
+# 2234 "data/maps/TradeCenter/scripts.pory"
+	.string "{STR_VAR_1}'s {STR_VAR_2} IV is\n"
+	.string "currently {STR_VAR_3}.\p"
+	.string "Would you like to maximize or minimize\n"
+	.string "it?$"
+
+Common_EventScript_ChangeIV_Text_10:
+# 2235 "data/maps/TradeCenter/scripts.pory"
+	.string "Maximize$"
+
+Common_EventScript_ChangeIV_Text_11:
+# 2236 "data/maps/TradeCenter/scripts.pory"
+	.string "Minimize$"
+
+Common_EventScript_ChangeIV_Text_12:
+# 2240 "data/maps/TradeCenter/scripts.pory"
+	.string "maximum$"
+
+Common_EventScript_ChangeIV_Text_13:
+# 2243 "data/maps/TradeCenter/scripts.pory"
+	.string "minimum$"
+
+Common_EventScript_ChangeIV_Text_14:
+# 2259 "data/maps/TradeCenter/scripts.pory"
+	.string "{STR_VAR_1}'s {STR_VAR_2} IV is\n"
+	.string "already at the maximum.$"
+
+Common_EventScript_ChangeIV_Text_15:
+# 2266 "data/maps/TradeCenter/scripts.pory"
+	.string "{STR_VAR_1}'s {STR_VAR_2} IV is\n"
+	.string "already at the minimum.$"
+
+Common_EventScript_ChangeIV_Text_16:
+# 2275 "data/maps/TradeCenter/scripts.pory"
+	.string "Are you sure you want to trade a Heart\n"
+	.string "Scale to change {STR_VAR_1}'s\l"
+	.string "{STR_VAR_2} IV from {STR_VAR_3}\l"
+	.string "to the maximum of 31?$"
+
+Common_EventScript_ChangeIV_Text_17:
+# 2278 "data/maps/TradeCenter/scripts.pory"
+	.string "Are you sure you want to trade a Heart\n"
+	.string "Scale to change {STR_VAR_1}'s\l"
+	.string "{STR_VAR_2} IV from {STR_VAR_3}\l"
+	.string "to the minimum of 0?$"
+
+Common_EventScript_ChangeIV_Text_18:
+# 2283 "data/maps/TradeCenter/scripts.pory"
+	.string "{STR_VAR_1}'s {STR_VAR_2} IV was\n"
+	.string "changed to {STR_VAR_3}!$"
+
 Common_EventScript_EliteMoveTutor_Text_0:
-# 2186 "data/maps/TradeCenter/scripts.pory"
+# 2307 "data/maps/TradeCenter/scripts.pory"
 	.string "You need to increase your Trainer Level\n"
 	.string "further before I can teach any Elite\l"
 	.string "Moves to your Pokémon.$"
 
 Common_EventScript_EliteMoveTutor_Text_1:
-# 2198 "data/maps/TradeCenter/scripts.pory"
+# 2319 "data/maps/TradeCenter/scripts.pory"
 	.string "Would you like me to teach an Elite Move\n"
 	.string "to any of your Pokémon?$"
 
 Common_EventScript_EggMoveTutor_Text_0:
-# 2299 "data/maps/TradeCenter/scripts.pory"
+# 2420 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm the Egg Move Tutor.\p"
 	.string "I can teach Pokémon moves they could\n"
 	.string "have learned as Eggs.\p"
@@ -6197,7 +6443,7 @@ Common_EventScript_EggMoveTutor_Text_0:
 	.string "Please come back later!$"
 
 Common_EventScript_EggMoveTutor_Text_1:
-# 2314 "data/maps/TradeCenter/scripts.pory"
+# 2435 "data/maps/TradeCenter/scripts.pory"
 	.string "Would you like me to teach an Egg Move\n"
 	.string "to any of your Pokémon for a Heart\l"
 	.string "Scale?$"
@@ -6257,7 +6503,7 @@ MoveTutor_Text_WhichMoveWouldYouLikeToTeach::
 	.string "one of your Pokémon?$"
 
 EliteMoveTutor_Text_Intro::
-# 2256 "data/maps/TradeCenter/scripts.pory"
+# 2377 "data/maps/TradeCenter/scripts.pory"
 	.string "I am the Elite Move Tutor.\p"
 	.string "I can teach certain Pokémon powerful\n"
 	.string "Elite Moves that they can't learn any\l"
@@ -6266,47 +6512,47 @@ EliteMoveTutor_Text_Intro::
 	.string "move.$"
 
 EliteMoveTutor_Text_ChooseMon::
-# 2260 "data/maps/TradeCenter/scripts.pory"
+# 2381 "data/maps/TradeCenter/scripts.pory"
 	.string "Which Pokémon would you like me to\n"
 	.string "check?$"
 
 EliteMoveTutor_Text_CantTeachEgg::
-# 2264 "data/maps/TradeCenter/scripts.pory"
+# 2385 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm sorry, but I can't teach moves to an\n"
 	.string "Egg.$"
 
 EliteMoveTutor_Text_NoEliteMoves::
-# 2268 "data/maps/TradeCenter/scripts.pory"
+# 2389 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm sorry, but {STR_VAR_1} can't\n"
 	.string "learn any Elite Moves.$"
 
 EliteMoveTutor_Text_HasEliteMoves::
-# 2272 "data/maps/TradeCenter/scripts.pory"
+# 2393 "data/maps/TradeCenter/scripts.pory"
 	.string "{STR_VAR_1} can learn Elite Moves!\p"
 	.string "Let me show you what's available...$"
 
 EliteMoveTutor_Text_AnythingElse::
-# 2276 "data/maps/TradeCenter/scripts.pory"
+# 2397 "data/maps/TradeCenter/scripts.pory"
 	.string "Would you like me to teach another Elite\n"
 	.string "Move?$"
 
 EliteMoveTutor_Text_ComeBack::
-# 2280 "data/maps/TradeCenter/scripts.pory"
+# 2401 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back anytime if you want to teach\n"
 	.string "an Elite Move to one of your Pokémon.$"
 
 EliteMoveTutor_Text_NeedHeartScale::
-# 2284 "data/maps/TradeCenter/scripts.pory"
+# 2405 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back when you have a Heart Scale.$"
 
 EliteMoveTutor_Text_NoMoreHeartScales::
-# 2288 "data/maps/TradeCenter/scripts.pory"
+# 2409 "data/maps/TradeCenter/scripts.pory"
 	.string "That's all for now.\p"
 	.string "Come back with more Heart Scales if you\n"
 	.string "want to learn additional Elite Moves.$"
 
 EggMoveTutor_Text_Intro::
-# 2373 "data/maps/TradeCenter/scripts.pory"
+# 2494 "data/maps/TradeCenter/scripts.pory"
 	.string "I am the Egg Move Tutor.\p"
 	.string "I can teach certain Pokémon moves they\n"
 	.string "could have learned as Eggs.\p"
@@ -6314,37 +6560,37 @@ EggMoveTutor_Text_Intro::
 	.string "move.$"
 
 EggMoveTutor_Text_ChooseMon::
-# 2377 "data/maps/TradeCenter/scripts.pory"
+# 2498 "data/maps/TradeCenter/scripts.pory"
 	.string "Which Pokémon would you like me to\n"
 	.string "check?$"
 
 EggMoveTutor_Text_CantTeachEgg::
-# 2381 "data/maps/TradeCenter/scripts.pory"
+# 2502 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm sorry, but I can't teach moves to an\n"
 	.string "Egg.$"
 
 EggMoveTutor_Text_NoEggMoves::
-# 2385 "data/maps/TradeCenter/scripts.pory"
+# 2506 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm sorry, but {STR_VAR_1} doesn't\n"
 	.string "have any Egg Moves to learn.$"
 
 EggMoveTutor_Text_HasEggMoves::
-# 2389 "data/maps/TradeCenter/scripts.pory"
+# 2510 "data/maps/TradeCenter/scripts.pory"
 	.string "{STR_VAR_1} can learn Egg Moves!\p"
 	.string "Let me show you what's available...$"
 
 EggMoveTutor_Text_AnythingElse::
-# 2393 "data/maps/TradeCenter/scripts.pory"
+# 2514 "data/maps/TradeCenter/scripts.pory"
 	.string "Would you like me to teach another Egg\n"
 	.string "Move?$"
 
 EggMoveTutor_Text_ComeBack::
-# 2397 "data/maps/TradeCenter/scripts.pory"
+# 2518 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back anytime if you want to teach\n"
 	.string "an Egg Move to one of your Pokémon.$"
 
 EggMoveTutor_Text_NeedHeartScale::
-# 2401 "data/maps/TradeCenter/scripts.pory"
+# 2522 "data/maps/TradeCenter/scripts.pory"
 	.string "I am the Egg Move Tutor.\p"
 	.string "I can teach certain Pokémon moves they\n"
 	.string "could have learned as Eggs, but I\l"
@@ -6352,7 +6598,7 @@ EggMoveTutor_Text_NeedHeartScale::
 	.string "Come back when you have one.$"
 
 EggMoveTutor_Text_NoMoreHeartScales::
-# 2405 "data/maps/TradeCenter/scripts.pory"
+# 2526 "data/maps/TradeCenter/scripts.pory"
 	.string "That's all for now!\p"
 	.string "Come back with more Heart Scales if you\n"
 	.string "want to learn additional Egg Moves.$"

@@ -48,5 +48,7 @@ void CheckPartyMonHasScriptEggMoves(void);
 void TeachScriptEggMoves(void);
 void ComparePartyMonNature(void);
 void ChangeNature(void);
+void GetPartyMonIV(void);
+void SetPartyMonIV(void);
 
 #endif // GUARD_FIELD_SPECIALS_H

@@ -1770,7 +1770,6 @@ script Common_EventScript_PreDamageOrStatus {
 	}
 	setflag(FLAG_TEMP_4)
 	msgbox(format("How can I be of assistance?"), MSGBOX_DEFAULT)
-
 	dynmultichoice(25,6,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Set Status", "Set Damage", "Never Mind")
 	switch (var(VAR_RESULT)) {
 		case 0:
@@ -1884,12 +1883,12 @@ script Common_EventScript_AttributeChanger {
 	setflag(FLAG_TEMP_5)
 	closemessage
 	msgbox(format("What would you like to change?"), MSGBOX_DEFAULT)
-	dynmultichoice(25,3,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Nature", "IVs", "Hidden Power Type","Nevermind")
+	dynmultichoice(25,6,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Nature", "IVs", "Hidden Power Type","Nevermind")
 	switch (var(VAR_RESULT)) {
 		case 0:
 			goto(Common_EventScript_ChangeNature)
 		case 1:
-			goto(Common_EventScript_AttributeChanger_ComeBackLater)
+			goto(Common_EventScript_ChangeIV)
 		case 2:
 			goto(PokemonCenter_2F_EventScript_ChangeHiddenPowerType)
 		case 3:
@@ -2044,32 +2043,32 @@ script Common_EventScript_ChangeNature {
 	}
 	special(BufferMonNickname)
 	msgbox(format("What Nature would you like {STR_VAR_1} to have?"), MSGBOX_DEFAULT)
-	dynmultipush("Hardy", NATURE_HARDY)
-	dynmultipush("Lonely", NATURE_LONELY)
-	dynmultipush("Brave", NATURE_BRAVE)
-	dynmultipush("Adamant", NATURE_ADAMANT)
-	dynmultipush("Naughty", NATURE_NAUGHTY)
-	dynmultipush("Bold", NATURE_BOLD)
-	dynmultipush("Docile", NATURE_DOCILE)
-	dynmultipush("Relaxed", NATURE_RELAXED)
-	dynmultipush("Impish", NATURE_IMPISH)
-	dynmultipush("Lax", NATURE_LAX)
-	dynmultipush("Timid", NATURE_TIMID)
-	dynmultipush("Hasty", NATURE_HASTY)
-	dynmultipush("Serious", NATURE_SERIOUS)
-	dynmultipush("Jolly", NATURE_JOLLY)
-	dynmultipush("Naive", NATURE_NAIVE)
-	dynmultipush("Modest", NATURE_MODEST)
-	dynmultipush("Mild", NATURE_MILD)
-	dynmultipush("Quiet", NATURE_QUIET)
-	dynmultipush("Bashful", NATURE_BASHFUL)
-	dynmultipush("Rash", NATURE_RASH)
-	dynmultipush("Calm", NATURE_CALM)
-	dynmultipush("Gentle", NATURE_GENTLE)
-	dynmultipush("Sassy", NATURE_SASSY)
-	dynmultipush("Careful", NATURE_CAREFUL)
-	dynmultipush("Quirky", NATURE_QUIRKY)
-	dynmultistack(0, 0, TRUE, 7, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	dynmultipush("Hardy (neutral)", NATURE_HARDY)
+	dynmultipush("Lonely (+Atk/-Def)", NATURE_LONELY)
+	dynmultipush("Brave (+Atk/-Spe)", NATURE_BRAVE)
+	dynmultipush("Adamant (+Atk/-SpA)", NATURE_ADAMANT)
+	dynmultipush("Naughty (+Atk/-SpD)", NATURE_NAUGHTY)
+	dynmultipush("Bold (+Def/-Atk)", NATURE_BOLD)
+	dynmultipush("Docile (neutral)", NATURE_DOCILE)
+	dynmultipush("Relaxed (+Def/-Spe)", NATURE_RELAXED)
+	dynmultipush("Impish (+Def/-SpA)", NATURE_IMPISH)
+	dynmultipush("Lax (+Def/-SpD)", NATURE_LAX)
+	dynmultipush("Timid (+Spe/-Atk)", NATURE_TIMID)
+	dynmultipush("Hasty (+Spe/-Def)", NATURE_HASTY)
+	dynmultipush("Serious (neutral)", NATURE_SERIOUS)
+	dynmultipush("Jolly (+Spe/-SpA)", NATURE_JOLLY)
+	dynmultipush("Naive (+Spe/-SpD)", NATURE_NAIVE)
+	dynmultipush("Modest (+SpA/-Atk)", NATURE_MODEST)
+	dynmultipush("Mild (+SpA/-Def)", NATURE_MILD)
+	dynmultipush("Quiet (+SpA/-Spe)", NATURE_QUIET)
+	dynmultipush("Bashful (neutral)", NATURE_BASHFUL)
+	dynmultipush("Rash (+SpA/-SpD)", NATURE_RASH)
+	dynmultipush("Calm (+SpD/-Atk)", NATURE_CALM)
+	dynmultipush("Gentle (+SpD/-Def)", NATURE_GENTLE)
+	dynmultipush("Sassy (+SpD/-Spe)", NATURE_SASSY)
+	dynmultipush("Careful (+SpD/-SpA)", NATURE_CAREFUL)
+	dynmultipush("Quirky (neutral)", NATURE_QUIRKY)
+	dynmultistack(0, 0, TRUE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 	switch (var(VAR_RESULT)) {
 		case NATURE_HARDY:
 			bufferstring(STR_VAR_2, "Hardy (neutral)")
@@ -2167,6 +2166,128 @@ script Common_EventScript_ChangeNature {
 	}
 	else {
 		msgbox(format("Come back later if you ever want to change your Pokémon's Nature."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+}
+
+// IV Changer - Changes an individual IV of a party mon for a Heart Scale
+script Common_EventScript_ChangeIV {
+	getpartysize
+	if (var(VAR_RESULT) == 0) {
+		msgbox(format("Your PARTY has no Pokémon."), MSGBOX_DEFAULT)
+		releaseall
+		end
+	}
+	msgbox(format("Which Pokémon's IVs would you like to change?"), MSGBOX_DEFAULT)
+	closemessage
+	special(ChoosePartyMon)
+	waitstate
+	if (var(VAR_0x8004) >= 6) {
+		releaseall
+		end
+	}
+	specialvar(VAR_RESULT, ScriptGetPartyMonSpecies)
+	if (var(VAR_RESULT) == SPECIES_EGG) {
+		releaseall
+		end
+	}
+	special(BufferMonNickname)
+	msgbox(format("Which stat's IV would you like to change for {STR_VAR_1}?"), MSGBOX_DEFAULT)
+	dynmultipush("HP", STAT_HP)
+	dynmultipush("Attack", STAT_ATK)
+	dynmultipush("Defense", STAT_DEF)
+	dynmultipush("Speed", STAT_SPEED)
+	dynmultipush("Sp. Attack", STAT_SPATK)
+	dynmultipush("Sp. Defense", STAT_SPDEF)
+	dynmultistack(0, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	switch (var(VAR_RESULT)) {
+		case STAT_HP:
+			bufferstring(STR_VAR_2, "HP")
+		case STAT_ATK:
+			bufferstring(STR_VAR_2, "Attack")
+		case STAT_DEF:
+			bufferstring(STR_VAR_2, "Defense")
+		case STAT_SPEED:
+			bufferstring(STR_VAR_2, "Speed")
+		case STAT_SPATK:
+			bufferstring(STR_VAR_2, "Sp. Attack")
+		case STAT_SPDEF:
+			bufferstring(STR_VAR_2, "Sp. Defense")
+		case MULTI_B_PRESSED:
+			msgbox(format("Come back later if you ever want to change your Pokémon's IVs."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+		default:
+			msgbox(format("Come back later if you ever want to change your Pokémon's IVs."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+	}
+	copyvar(VAR_0x8005, VAR_RESULT)
+	// Get the current IV for this stat
+	special(GetPartyMonIV)
+	copyvar(VAR_0x8007, VAR_RESULT) // Store current IV in VAR_0x8007
+	buffernumberstring(STR_VAR_3, VAR_0x8007)
+	msgbox(format("{STR_VAR_1}'s {STR_VAR_2} IV is currently {STR_VAR_3}.\pWould you like to maximize or minimize it?"), MSGBOX_DEFAULT)
+	dynmultipush("Maximize", 31)
+	dynmultipush("Minimize", 0)
+	dynmultistack(0, 0, FALSE, 2, FALSE, 31, DYN_MULTICHOICE_CB_NONE)
+	switch (var(VAR_RESULT)) {
+		case 31:
+			bufferstring(STR_VAR_3, "maximum")
+			setvar(VAR_0x8006, 31)
+		case 0:
+			bufferstring(STR_VAR_3, "minimum")
+			setvar(VAR_0x8006, 0)
+		case MULTI_B_PRESSED:
+			msgbox(format("Come back later if you ever want to change your Pokémon's IVs."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+		default:
+			msgbox(format("Come back later if you ever want to change your Pokémon's IVs."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+	}
+	// Check if the IV is already at the target value
+	// Check for maximize case (target is 31)
+	if (var(VAR_0x8006) == 31 && var(VAR_0x8007) == 31) {
+		msgbox(format("{STR_VAR_1}'s {STR_VAR_2} IV is already at the maximum."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	// Check for minimize case (target is 0)
+	if (var(VAR_0x8006) == 0 && var(VAR_0x8007) == 0) {
+		msgbox(format("{STR_VAR_1}'s {STR_VAR_2} IV is already at the minimum."), MSGBOX_DEFAULT)
+		closemessage
+		releaseall
+		end
+	}
+	// Buffer the current IV and target IV for the confirmation message
+	buffernumberstring(STR_VAR_3, VAR_0x8007)
+	// Determine if maximizing or minimizing for message
+	if (var(VAR_0x8006) == 31) {
+		msgbox(format("Are you sure you want to trade a Heart Scale to change {STR_VAR_1}'s {STR_VAR_2} IV from {STR_VAR_3} to the maximum of 31?"), MSGBOX_YESNO)
+	}
+	else {
+		msgbox(format("Are you sure you want to trade a Heart Scale to change {STR_VAR_1}'s {STR_VAR_2} IV from {STR_VAR_3} to the minimum of 0?"), MSGBOX_YESNO)
+	}
+	if(var(VAR_RESULT) == TRUE) {
+		special(SetPartyMonIV)
+		buffernumberstring(STR_VAR_3, VAR_0x8006)
+		msgbox(format("{STR_VAR_1}'s {STR_VAR_2} IV was changed to {STR_VAR_3}!"), MSGBOX_DEFAULT)
+		removeitem(ITEM_HEART_SCALE, 1)
+		closemessage
+		releaseall
+		end
+	}
+	else {
+		msgbox(format("Come back later if you ever want to change your Pokémon's IVs."), MSGBOX_DEFAULT)
 		closemessage
 		releaseall
 		end

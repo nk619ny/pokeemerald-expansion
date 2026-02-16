@@ -581,3 +581,6 @@ gSpecials::
 	def_special TeachScriptEggMoves
 	def_special ComparePartyMonNature
 	def_special ChangeNature
+	def_special GetPartyMonIV
+	def_special SetPartyMonIV
+	

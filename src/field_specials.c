@@ -4588,3 +4588,41 @@ void ChangeNature(void)
         CalculateMonStats(&gPlayerParty[slot]);
     }
 }
+
+// IV Changer Specials
+// gSpecialVar_0x8004: party slot (0..PARTY_SIZE-1)
+// gSpecialVar_0x8005: stat index (STAT_HP through STAT_SPDEF, 0-5)
+// Sets VAR_RESULT to the IV value of the specified stat
+void GetPartyMonIV(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    u8 stat = gSpecialVar_0x8005;
+    if (slot < PARTY_SIZE && stat < NUM_STATS
+        && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    {
+        gSpecialVar_Result = GetMonData(&gPlayerParty[slot], MON_DATA_HP_IV + stat);
+    }
+    else
+    {
+        gSpecialVar_Result = 0;
+    }
+}
+
+// gSpecialVar_0x8004: party slot (0..PARTY_SIZE-1)
+// gSpecialVar_0x8005: stat index (STAT_HP through STAT_SPDEF, 0-5)
+// gSpecialVar_0x8006: new IV value (0-31)
+// Sets the IV of the specified stat and recalculates stats
+void SetPartyMonIV(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    u8 stat = gSpecialVar_0x8005;
+    u32 newIV = gSpecialVar_0x8006;
+    if (slot < PARTY_SIZE && stat < NUM_STATS && newIV <= MAX_PER_STAT_IVS
+        && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    {
+        SetMonData(&gPlayerParty[slot], MON_DATA_HP_IV + stat, &newIV);
+        CalculateMonStats(&gPlayerParty[slot]);
+    }
+}
