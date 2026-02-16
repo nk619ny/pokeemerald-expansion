@@ -583,4 +583,3 @@ gSpecials::
 	def_special ChangeNature
 	def_special GetPartyMonIV
 	def_special SetPartyMonIV
-	
