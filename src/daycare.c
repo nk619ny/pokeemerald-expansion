@@ -186,6 +186,23 @@ static void ClearHatchedEggMoves(void)
         sHatchedEggEggMoves[i] = MOVE_NONE;
 }
 
+// Check if two species share at least one egg group
+static bool8 SpeciesShareEggGroup(u16 species1, u16 species2)
+{
+    u32 i, j;
+
+    for (i = 0; i < EGG_GROUPS_PER_MON; i++)
+    {
+        for (j = 0; j < EGG_GROUPS_PER_MON; j++)
+        {
+            if (gSpeciesInfo[species1].eggGroups[i] == gSpeciesInfo[species2].eggGroups[j]
+                && gSpeciesInfo[species1].eggGroups[i] != EGG_GROUP_NO_EGGS_DISCOVERED)
+                return TRUE;
+        }
+    }
+    return FALSE;
+}
+
 static void TransferEggMoves(void)
 {
     u32 i, j, k, l;
@@ -226,7 +243,9 @@ static void TransferEggMoves(void)
 
                 // Check if you can inherit from them
                 if (GET_BASE_SPECIES_ID(moveTeacherSpecies) != GET_BASE_SPECIES_ID(moveLearnerSpecies)
-                    && (P_EGG_MOVE_TRANSFER < GEN_9 || GetBoxMonData(&gSaveBlock1Ptr->daycare.mons[i].mon, MON_DATA_HELD_ITEM) != ITEM_MIRROR_HERB)
+                    && (P_EGG_MOVE_TRANSFER < GEN_9
+                        || GetBoxMonData(&gSaveBlock1Ptr->daycare.mons[i].mon, MON_DATA_HELD_ITEM)
+                        || !SpeciesShareEggGroup(moveTeacherSpecies, moveLearnerSpecies))
                 )
                     continue;
 
