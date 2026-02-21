@@ -21384,6 +21384,33 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
+        [MOVE_SCALD_PLACEHOLDER] =
+    {
+        .name = COMPOUND_STRING("Scald"),
+        .description = COMPOUND_STRING(
+            "Shoots boiling water at the\n"
+            "foe. May inflict a burn."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .thawsUser = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = COMBO_STARTER_SCALD,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Scald,
+    },
+
+
         [MOVE_SEARING_SUNSMASH] =
     {
         .name = COMPOUND_STRING("Searing Sunsmash"),

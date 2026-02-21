@@ -823,7 +823,7 @@
       "MOVE_AURA_SPHERE",
       "MOVE_DRAGON_PULSE",
       "MOVE_ZEN_HEADBUTT",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP"
     ],
     "EggMoves": [
@@ -942,7 +942,7 @@
       "MOVE_AURA_SPHERE",
       "MOVE_DRAGON_PULSE",
       "MOVE_ZEN_HEADBUTT",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP"
     ],
     "EggMoves": [
@@ -1080,7 +1080,7 @@
       "MOVE_FOCUS_BLAST",
       "MOVE_ZEN_HEADBUTT",
       "MOVE_FLASH_CANNON",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_LIQUIDATION",
       "MOVE_BODY_PRESS"
@@ -4550,7 +4550,7 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_CALM_MIND",
       "MOVE_ZEN_HEADBUTT",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_CLEAR_SMOG",
@@ -4679,7 +4679,7 @@
       "MOVE_CALM_MIND",
       "MOVE_FOCUS_BLAST",
       "MOVE_ZEN_HEADBUTT",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -5024,7 +5024,7 @@
       "MOVE_ENCORE",
       "MOVE_MUDDY_WATER",
       "MOVE_EARTH_POWER",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_ENDEAVOR",
@@ -5121,7 +5121,7 @@
       "MOVE_ENCORE",
       "MOVE_MUDDY_WATER",
       "MOVE_EARTH_POWER",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_ENDEAVOR",
@@ -5251,7 +5251,7 @@
       "MOVE_POISON_JAB",
       "MOVE_FOCUS_BLAST",
       "MOVE_EARTH_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_DARKEST_LARIAT",
       "MOVE_HIGH_HORSEPOWER",
@@ -6070,7 +6070,7 @@
       "MOVE_TOXIC_SPIKES",
       "MOVE_POISON_JAB",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DAZZLING_GLEAM"
     ],
     "EggMoves": [
@@ -6188,7 +6188,7 @@
       "MOVE_TOXIC_SPIKES",
       "MOVE_POISON_JAB",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_VENOM_DRENCH",
       "MOVE_DAZZLING_GLEAM"
     ],
@@ -6558,7 +6558,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_GRASS_KNOT",
       "MOVE_STORED_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -6711,7 +6711,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION",
       "MOVE_BODY_PRESS"
     ],
@@ -7908,7 +7908,7 @@
       "MOVE_IRON_DEFENSE",
       "MOVE_X_SCISSOR",
       "MOVE_ALLY_SWITCH",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -8029,7 +8029,7 @@
       "MOVE_IRON_DEFENSE",
       "MOVE_X_SCISSOR",
       "MOVE_ALLY_SWITCH",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_LIQUIDATION"
     ],
@@ -9934,7 +9934,7 @@
       "MOVE_DRAGON_DANCE",
       "MOVE_DRAGON_PULSE",
       "MOVE_FLASH_CANNON",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -10039,7 +10039,7 @@
       "MOVE_DRAGON_DANCE",
       "MOVE_DRAGON_PULSE",
       "MOVE_FLASH_CANNON",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -10138,7 +10138,7 @@
       "MOVE_MEGAHORN",
       "MOVE_MUDDY_WATER",
       "MOVE_POISON_JAB",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DRILL_RUN",
       "MOVE_THROAT_CHOP"
     ],
@@ -10238,7 +10238,7 @@
       "MOVE_MEGAHORN",
       "MOVE_MUDDY_WATER",
       "MOVE_POISON_JAB",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DRILL_RUN",
       "MOVE_THROAT_CHOP"
     ],
@@ -10354,7 +10354,7 @@
       "MOVE_GYRO_BALL",
       "MOVE_POWER_GEM",
       "MOVE_FLASH_CANNON",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DAZZLING_GLEAM"
     ],
     "EggMoves": [],
@@ -10474,7 +10474,7 @@
       "MOVE_FLASH_CANNON",
       "MOVE_GRASS_KNOT",
       "MOVE_ALLY_SWITCH",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DAZZLING_GLEAM"
     ],
     "EggMoves": [],
@@ -11507,7 +11507,7 @@
       "MOVE_POWER_WHIP",
       "MOVE_IRON_HEAD",
       "MOVE_STONE_EDGE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HURRICANE"
     ],
     "EggMoves": [],
@@ -11903,7 +11903,7 @@
       "MOVE_HYPER_VOICE",
       "MOVE_MUDDY_WATER",
       "MOVE_STORED_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_LIQUIDATION"
     ],
@@ -12435,7 +12435,7 @@
       "MOVE_TOXIC_SPIKES",
       "MOVE_EARTH_POWER",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_AURORA_BEAM",
@@ -12561,7 +12561,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -12675,7 +12675,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -12815,7 +12815,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -14247,7 +14247,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
       "MOVE_DRILL_RUN",
@@ -14732,7 +14732,7 @@
       "MOVE_ENDURE",
       "MOVE_SLEEP_TALK",
       "MOVE_ELECTRO_BALL",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WILD_CHARGE",
       "MOVE_DAZZLING_GLEAM"
     ],
@@ -14863,7 +14863,7 @@
       "MOVE_ENDURE",
       "MOVE_SLEEP_TALK",
       "MOVE_ELECTRO_BALL",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WILD_CHARGE",
       "MOVE_DAZZLING_GLEAM"
     ],
@@ -15876,7 +15876,7 @@
       "MOVE_HYPER_VOICE",
       "MOVE_MUDDY_WATER",
       "MOVE_GRASS_KNOT",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH"
     ],
@@ -16018,7 +16018,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_FOCUS_BLAST",
       "MOVE_GRASS_KNOT",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
       "MOVE_LIQUIDATION"
@@ -16288,7 +16288,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_FOCUS_BLAST",
       "MOVE_EARTH_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -16395,7 +16395,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_EARTH_POWER",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_ACID_SPRAY",
@@ -16517,7 +16517,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STONE_EDGE",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_LIQUIDATION"
     ],
@@ -17010,7 +17010,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -17502,7 +17502,7 @@
       "MOVE_TOXIC_SPIKES",
       "MOVE_POISON_JAB",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_VENOM_DRENCH",
       "MOVE_THROAT_CHOP",
       "MOVE_LIQUIDATION"
@@ -18333,7 +18333,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_THROAT_CHOP",
       "MOVE_LIQUIDATION"
     ],
@@ -18441,7 +18441,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
       "MOVE_GUNK_SHOT",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_ACID_SPRAY",
@@ -18573,7 +18573,7 @@
       "MOVE_FLASH_CANNON",
       "MOVE_GUNK_SHOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -18772,7 +18772,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_GUNK_SHOT",
       "MOVE_IRON_HEAD",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HURRICANE",
       "MOVE_LIQUIDATION",
       "MOVE_BODY_PRESS"
@@ -19004,7 +19004,7 @@
       "MOVE_DRAGON_PULSE",
       "MOVE_FLASH_CANNON",
       "MOVE_IRON_HEAD",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HURRICANE",
       "MOVE_LIQUIDATION"
     ],
@@ -20054,7 +20054,7 @@
       "MOVE_CALM_MIND",
       "MOVE_AURA_SPHERE",
       "MOVE_IRON_HEAD",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WILD_CHARGE",
       "MOVE_THROAT_CHOP"
     ],
@@ -20311,7 +20311,7 @@
       "MOVE_SHADOW_BALL",
       "MOVE_CALM_MIND",
       "MOVE_IRON_HEAD",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [],
@@ -22044,7 +22044,7 @@
       "MOVE_SUPERPOWER",
       "MOVE_EARTH_POWER",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP"
     ],
     "EggMoves": [
@@ -22188,7 +22188,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STEALTH_ROCK",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP"
     ],
     "EggMoves": [
@@ -22339,7 +22339,7 @@
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_DARKEST_LARIAT",
       "MOVE_HIGH_HORSEPOWER",
@@ -22690,7 +22690,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_ZEN_HEADBUTT",
       "MOVE_GRASS_KNOT",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_COUNTER",
@@ -22825,7 +22825,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_ZEN_HEADBUTT",
       "MOVE_GRASS_KNOT",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_COUNTER",
@@ -22967,7 +22967,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_LEAF_STORM",
       "MOVE_GRASS_KNOT",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_COUNTER",
@@ -23475,7 +23475,7 @@
       "MOVE_ENDURE",
       "MOVE_SLEEP_TALK",
       "MOVE_UPROAR",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HURRICANE",
       "MOVE_LIQUIDATION"
     ],
@@ -23608,7 +23608,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_BRAVE_BIRD",
       "MOVE_GUNK_SHOT",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HURRICANE",
       "MOVE_LIQUIDATION"
     ],
@@ -24817,7 +24817,7 @@
       "MOVE_UPROAR",
       "MOVE_HYPER_VOICE",
       "MOVE_MUDDY_WATER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP"
     ],
     "EggMoves": [
@@ -25937,7 +25937,7 @@
       "MOVE_TAUNT",
       "MOVE_DARK_PULSE",
       "MOVE_ZEN_HEADBUTT",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_PSYCHIC_FANGS",
       "MOVE_LIQUIDATION"
     ],
@@ -26067,7 +26067,7 @@
       "MOVE_POISON_JAB",
       "MOVE_DARK_PULSE",
       "MOVE_ZEN_HEADBUTT",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_PSYCHIC_FANGS",
       "MOVE_LIQUIDATION"
     ],
@@ -26184,7 +26184,7 @@
       "MOVE_HYPER_VOICE",
       "MOVE_ZEN_HEADBUTT",
       "MOVE_HEAVY_SLAM",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_BODY_PRESS"
     ],
     "EggMoves": [
@@ -26314,7 +26314,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_IRON_HEAD",
       "MOVE_HEAVY_SLAM",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION",
       "MOVE_BODY_PRESS"
     ],
@@ -27464,7 +27464,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_DRAGON_DANCE",
       "MOVE_EARTH_POWER",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_FLAIL",
@@ -27582,7 +27582,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_ZEN_HEADBUTT",
       "MOVE_STONE_EDGE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -27695,7 +27695,7 @@
       "MOVE_IRON_DEFENSE",
       "MOVE_DRAGON_DANCE",
       "MOVE_X_SCISSOR",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
@@ -27829,7 +27829,7 @@
       "MOVE_X_SCISSOR",
       "MOVE_NASTY_PLOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -28588,7 +28588,7 @@
       "MOVE_IRON_TAIL",
       "MOVE_MUDDY_WATER",
       "MOVE_DRAGON_PULSE",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -28727,7 +28727,7 @@
       "MOVE_DRAGON_DANCE",
       "MOVE_DRAGON_PULSE",
       "MOVE_IRON_HEAD",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -29834,7 +29834,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION",
       "MOVE_BODY_PRESS"
     ],
@@ -31171,7 +31171,7 @@
       "MOVE_CALM_MIND",
       "MOVE_IRON_HEAD",
       "MOVE_HEAVY_SLAM",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [],
@@ -32515,7 +32515,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_MUDDY_WATER",
       "MOVE_EARTH_POWER",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_ACID_ARMOR",
@@ -32622,7 +32622,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STONE_EDGE",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_ACID_ARMOR",
@@ -35719,7 +35719,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_ENDURE",
       "MOVE_SLEEP_TALK",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -41815,7 +41815,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_EARTH_POWER",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_VENOM_DRENCH"
     ],
     "EggMoves": [
@@ -41914,7 +41914,7 @@
       "MOVE_POWER_WHIP",
       "MOVE_STEALTH_ROCK",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_VENOM_DRENCH"
     ],
     "EggMoves": [
@@ -42045,7 +42045,7 @@
       "MOVE_STEALTH_ROCK",
       "MOVE_GRASS_KNOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_VENOM_DRENCH",
       "MOVE_LIQUIDATION"
     ],
@@ -43169,7 +43169,7 @@
       "MOVE_SUPERPOWER",
       "MOVE_MUDDY_WATER",
       "MOVE_ZEN_HEADBUTT",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_PSYCHIC_FANGS",
       "MOVE_LIQUIDATION"
     ],
@@ -44878,7 +44878,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -45010,7 +45010,7 @@
       "MOVE_IRON_HEAD",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -47656,7 +47656,7 @@
       "MOVE_DARK_PULSE",
       "MOVE_ENERGY_BALL",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DAZZLING_GLEAM"
     ],
     "EggMoves": [
@@ -47773,7 +47773,7 @@
       "MOVE_DARK_PULSE",
       "MOVE_ENERGY_BALL",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DAZZLING_GLEAM"
     ],
     "EggMoves": [
@@ -50171,7 +50171,7 @@
       "MOVE_STEALTH_ROCK",
       "MOVE_SLUDGE_WAVE",
       "MOVE_FOUL_PLAY",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -53659,7 +53659,7 @@
       "MOVE_X_SCISSOR",
       "MOVE_FOCUS_BLAST",
       "MOVE_STONE_EDGE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_LIQUIDATION"
     ],
@@ -55906,7 +55906,7 @@
       "MOVE_STEALTH_ROCK",
       "MOVE_GRASS_KNOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -56038,7 +56038,7 @@
       "MOVE_STEALTH_ROCK",
       "MOVE_GRASS_KNOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -56134,7 +56134,7 @@
       "MOVE_DRAGON_PULSE",
       "MOVE_GUNK_SHOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_PLAY_ROUGH",
       "MOVE_VENOM_DRENCH"
     ],
@@ -56241,7 +56241,7 @@
       "MOVE_FOCUS_BLAST",
       "MOVE_GUNK_SHOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_PLAY_ROUGH",
       "MOVE_VENOM_DRENCH"
     ],
@@ -56342,7 +56342,7 @@
       "MOVE_DRAGON_PULSE",
       "MOVE_FLASH_CANNON",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_AQUA_TAIL",
@@ -56456,7 +56456,7 @@
       "MOVE_FOCUS_BLAST",
       "MOVE_FLASH_CANNON",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -59641,7 +59641,7 @@
       },
       {
         "Level": 48,
-        "Move": "MOVE_SCALD"
+        "Move": "MOVE_SCALD_PLACEHOLDER"
       },
       {
         "Level": 54,
@@ -59723,7 +59723,7 @@
       "MOVE_STONE_EDGE",
       "MOVE_SLUDGE_WAVE",
       "MOVE_HEAVY_SLAM",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HEAT_CRASH",
       "MOVE_LIQUIDATION",
       "MOVE_BODY_PRESS"
@@ -60532,7 +60532,7 @@
       "MOVE_IRON_TAIL",
       "MOVE_UPROAR",
       "MOVE_HYPER_VOICE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH"
     ],
@@ -60639,7 +60639,7 @@
       "MOVE_IRON_TAIL",
       "MOVE_UPROAR",
       "MOVE_HYPER_VOICE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH"
     ],
@@ -60764,7 +60764,7 @@
       "MOVE_CALM_MIND",
       "MOVE_ENERGY_BALL",
       "MOVE_STORED_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
       "MOVE_DAZZLING_GLEAM",
@@ -61611,7 +61611,7 @@
       "MOVE_IRON_TAIL",
       "MOVE_UPROAR",
       "MOVE_MUDDY_WATER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -61706,7 +61706,7 @@
       "MOVE_POISON_JAB",
       "MOVE_GUNK_SHOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_VENOM_DRENCH",
       "MOVE_LIQUIDATION"
     ],
@@ -61812,7 +61812,7 @@
       "MOVE_POISON_JAB",
       "MOVE_GUNK_SHOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_VENOM_DRENCH",
       "MOVE_LIQUIDATION"
     ],
@@ -62109,7 +62109,7 @@
       "MOVE_POISON_JAB",
       "MOVE_X_SCISSOR",
       "MOVE_BUG_BUZZ",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -62215,7 +62215,7 @@
       "MOVE_POISON_JAB",
       "MOVE_X_SCISSOR",
       "MOVE_BUG_BUZZ",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -63820,7 +63820,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_TAUNT",
       "MOVE_BUG_BUZZ",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",
@@ -63956,7 +63956,7 @@
       "MOVE_FOCUS_BLAST",
       "MOVE_IRON_HEAD",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DRILL_RUN",
       "MOVE_THROAT_CHOP",
       "MOVE_LIQUIDATION"
@@ -66005,7 +66005,7 @@
       "MOVE_CALM_MIND",
       "MOVE_GRASS_KNOT",
       "MOVE_STORED_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_PLAY_ROUGH",
       "MOVE_DAZZLING_GLEAM"
     ],
@@ -69212,7 +69212,7 @@
       "MOVE_SHADOW_BALL",
       "MOVE_MUDDY_WATER",
       "MOVE_DARK_PULSE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_LIQUIDATION"
     ],
@@ -70699,7 +70699,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_THROAT_CHOP",
       "MOVE_LIQUIDATION",
@@ -71073,7 +71073,7 @@
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
       "MOVE_HEAVY_SLAM",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HEAT_CRASH",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_BODY_PRESS"
@@ -71190,7 +71190,7 @@
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
       "MOVE_HEAVY_SLAM",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HEAT_CRASH",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_BODY_PRESS"
@@ -71752,7 +71752,7 @@
       "MOVE_UPROAR",
       "MOVE_SUPERPOWER",
       "MOVE_BRAVE_BIRD",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HURRICANE",
       "MOVE_THROAT_CHOP",
       "MOVE_LIQUIDATION"
@@ -71836,7 +71836,7 @@
       "MOVE_CRUNCH",
       "MOVE_CLOSE_COMBAT",
       "MOVE_POISON_JAB",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DRILL_RUN",
       "MOVE_THROAT_CHOP",
       "MOVE_PSYCHIC_FANGS",
@@ -71929,7 +71929,7 @@
       "MOVE_CRUNCH",
       "MOVE_CLOSE_COMBAT",
       "MOVE_POISON_JAB",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_DRILL_RUN",
       "MOVE_THROAT_CHOP",
       "MOVE_PSYCHIC_FANGS",
@@ -72228,7 +72228,7 @@
       "MOVE_HEAT_WAVE",
       "MOVE_BUG_BUZZ",
       "MOVE_POWER_WHIP",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HEAT_CRASH"
     ],
     "EggMoves": [
@@ -72333,7 +72333,7 @@
       "MOVE_X_SCISSOR",
       "MOVE_BUG_BUZZ",
       "MOVE_POWER_WHIP",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_HEAT_CRASH"
     ],
     "EggMoves": [
@@ -73807,7 +73807,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_THROAT_CHOP",
       "MOVE_LIQUIDATION"
     ],
@@ -74680,7 +74680,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_TOXIC_SPIKES",
       "MOVE_POISON_JAB",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_VENOM_DRENCH",
       "MOVE_THROAT_CHOP",
       "MOVE_LIQUIDATION"
@@ -75815,7 +75815,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_IRON_HEAD",
       "MOVE_STONE_EDGE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_PSYCHIC_FANGS",
       "MOVE_LIQUIDATION"
     ],
@@ -76194,7 +76194,7 @@
       "MOVE_DRAGON_DANCE",
       "MOVE_DRAGON_PULSE",
       "MOVE_ALLY_SWITCH",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_PSYCHIC_FANGS"
     ],
     "EggMoves": [
@@ -76341,7 +76341,7 @@
       "MOVE_DRAGON_DANCE",
       "MOVE_DRAGON_PULSE",
       "MOVE_ALLY_SWITCH",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_PSYCHIC_FANGS"
     ],
     "EggMoves": [
@@ -79509,7 +79509,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -79677,7 +79677,7 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -80643,7 +80643,7 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_VENOM_DRENCH",
       "MOVE_LIQUIDATION"
     ],
@@ -80760,7 +80760,7 @@
       "MOVE_EARTH_POWER",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_THROAT_CHOP",
       "MOVE_LIQUIDATION"
     ],
@@ -81504,7 +81504,7 @@
       "MOVE_STEALTH_ROCK",
       "MOVE_SLUDGE_WAVE",
       "MOVE_FOUL_PLAY",
-      "MOVE_SCALD"
+      "MOVE_SCALD_PLACEHOLDER"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -83071,7 +83071,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_IRON_HEAD",
       "MOVE_STONE_EDGE",
-      "MOVE_SCALD",
+      "MOVE_SCALD_PLACEHOLDER",
       "MOVE_WORK_UP",
       "MOVE_LIQUIDATION",
       "MOVE_BODY_PRESS"

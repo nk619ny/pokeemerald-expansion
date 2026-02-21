@@ -896,6 +896,7 @@ static const u16 sPsyduckEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
     MOVE_WORRY_SEED,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -925,6 +926,7 @@ static const u16 sGolduckEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
     MOVE_WORRY_SEED,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PSYDUCK
@@ -1068,6 +1070,7 @@ static const u16 sPoliwagEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WAKE_UP_SLAP,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -1096,6 +1099,7 @@ static const u16 sPoliwhirlEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WAKE_UP_SLAP,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -1127,6 +1131,7 @@ static const u16 sPoliwrathEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WAKE_UP_SLAP,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -1152,6 +1157,7 @@ static const u16 sPolitoedEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WAKE_UP_SLAP,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -1291,6 +1297,7 @@ static const u16 sTentacruelEliteLearnset[] = {
     MOVE_SKULL_BASH,
     MOVE_TAKE_DOWN,
     MOVE_WRING_OUT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -1312,6 +1319,7 @@ static const u16 sTentacoolEliteLearnset[] = {
     MOVE_SKULL_BASH,
     MOVE_TAKE_DOWN,
     MOVE_WRING_OUT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TENTACOOL
@@ -1446,6 +1454,7 @@ static const u16 sSlowpokeEliteLearnset[] = {
     MOVE_SKULL_BASH,
     MOVE_TELEKINESIS,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -1507,6 +1516,7 @@ static const u16 sSlowkingEliteLearnset[] = {
 static const u16 sSlowpokeGalarEliteLearnset[] = {
     MOVE_SHED_TAIL,
     MOVE_PAY_DAY,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -1514,12 +1524,14 @@ static const u16 sSlowbroGalarEliteLearnset[] = {
     MOVE_ARMOR_CANNON,
     MOVE_SHED_TAIL,
     MOVE_PAY_DAY,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
 static const u16 sSlowkingGalarEliteLearnset[] = {
     MOVE_SHED_TAIL,
     MOVE_PAY_DAY,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
@@ -2008,6 +2020,7 @@ static const u16 sKinglerEliteLearnset[] = {
     MOVE_TICKLE,
     MOVE_TOXIC,
     MOVE_VICE_GRIP,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -2026,6 +2039,7 @@ static const u16 sKrabbyEliteLearnset[] = {
     MOVE_TICKLE,
     MOVE_TOXIC,
     MOVE_VICE_GRIP,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KRABBY
@@ -2481,6 +2495,7 @@ static const u16 sHorseaEliteLearnset[] = {
     MOVE_SKULL_BASH,
     MOVE_TAKE_DOWN,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -2501,6 +2516,7 @@ static const u16 sSeadraEliteLearnset[] = {
     MOVE_SKULL_BASH,
     MOVE_TAKE_DOWN,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -2528,6 +2544,7 @@ static const u16 sKingdraEliteLearnset[] = {
 static const u16 sStaryuEliteLearnset[] = {
     MOVE_TELEPORT,
     MOVE_TRI_ATTACK,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -2536,6 +2553,7 @@ static const u16 sStarmieEliteLearnset[] = {
     MOVE_REFRESH,
     MOVE_TELEPORT,
     MOVE_TRI_ATTACK,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_STARYU
@@ -3167,6 +3185,7 @@ static const u16 sKabutopsEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WATER_GUN,
     MOVE_WRING_OUT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -3185,6 +3204,7 @@ static const u16 sKabutoEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WATER_GUN,
     MOVE_WRING_OUT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KABUTO
@@ -3205,6 +3225,7 @@ static const u16 sOmanyteEliteLearnset[] = {
     MOVE_TAKE_DOWN,
     MOVE_TOXIC,
     MOVE_WRING_OUT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -3227,6 +3248,7 @@ static const u16 sOmastarEliteLearnset[] = {
     MOVE_TAKE_DOWN,
     MOVE_TOXIC,
     MOVE_WRING_OUT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_OMANYTE
@@ -3985,6 +4007,7 @@ static const u16 sTotodileEliteLearnset[] = {
     MOVE_RAZOR_WIND,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -4001,6 +4024,7 @@ static const u16 sCroconawEliteLearnset[] = {
     MOVE_RAZOR_WIND,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -4018,6 +4042,7 @@ static const u16 sFeraligatrEliteLearnset[] = {
     MOVE_RAZOR_WIND,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TOTODILE
@@ -4291,6 +4316,7 @@ static const u16 sAzumarillEliteLearnset[] = {
     MOVE_STEEL_ROLLER,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -4308,6 +4334,7 @@ static const u16 sMarillEliteLearnset[] = {
     MOVE_STEEL_ROLLER,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -4322,6 +4349,7 @@ static const u16 sAzurillEliteLearnset[] = {
     MOVE_REFRESH,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MARILL
@@ -4372,6 +4400,7 @@ static const u16 sWooperEliteLearnset[] = {
     MOVE_MUD_BOMB,
     MOVE_MUD_SPORT,
     MOVE_NATURAL_GIFT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -4385,6 +4414,7 @@ static const u16 sQuagsireEliteLearnset[] = {
     MOVE_MUD_BOMB,
     MOVE_MUD_SPORT,
     MOVE_NATURAL_GIFT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WOOPER
@@ -4659,6 +4689,7 @@ static const u16 sQwilfishEliteLearnset[] = {
     MOVE_REVENGE,
     //MOVE_SIGNAL_BEAM,
     MOVE_STEEL_ROLLER,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -4815,6 +4846,7 @@ static const u16 sRemoraidEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     //MOVE_SIGNAL_BEAM,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -4835,6 +4867,7 @@ static const u16 sOctilleryEliteLearnset[] = {
     //MOVE_SIGNAL_BEAM,
     MOVE_TOXIC,
     MOVE_WRING_OUT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_REMORAID
@@ -5055,6 +5088,7 @@ static const u16 sLudicoloEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -5065,6 +5099,7 @@ static const u16 sLotadEliteLearnset[] = {
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -5076,6 +5111,7 @@ static const u16 sLombreEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LOTAD
@@ -5495,11 +5531,13 @@ static const u16 sDelcattyEliteLearnset[] = {
 #if P_FAMILY_CARVANHA
 static const u16 sCarvanhaEliteLearnset[] = {
     MOVE_REFRESH,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
 static const u16 sSharpedoEliteLearnset[] = {
     MOVE_REFRESH,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CARVANHA
@@ -5514,6 +5552,7 @@ static const u16 sWailordEliteLearnset[] = {
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -5524,6 +5563,7 @@ static const u16 sWailmerEliteLearnset[] = {
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WAILMER
@@ -5794,6 +5834,7 @@ static const u16 sWhiscashEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -5807,6 +5848,7 @@ static const u16 sBarboachEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BARBOACH
@@ -5825,6 +5867,7 @@ static const u16 sCrawdauntEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_TRUMP_CARD,
     MOVE_VICE_GRIP,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -5839,6 +5882,7 @@ static const u16 sCorphishEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_TRUMP_CARD,
     MOVE_VICE_GRIP,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CORPHISH
@@ -5957,6 +6001,7 @@ static const u16 sFeebasEliteLearnset[] = {
     MOVE_MUD_SPORT,
     MOVE_NATURAL_GIFT,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FEEBAS
@@ -6025,6 +6070,13 @@ static const u16 sAbsolEliteLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ABSOL
+#if P_FAMILY_CASTFORM
+static const u16 sCastformEliteLearnset[] = {
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+#endif //P_FAMILY_CASTFORM
+
 
 #if P_FAMILY_SNORUNT
 static const u16 sSnoruntEliteLearnset[] = {
@@ -6078,6 +6130,17 @@ static const u16 sFroslassEliteLearnset[] = {
 #if P_FAMILY_CLAMPERL
 static const u16 sHuntailEliteLearnset[] = {
     MOVE_FISHIOUS_REND,
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sClamperlEliteLearnset[] = {
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sGorebyssEliteLearnset[] = {
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CLAMPERL
@@ -6096,6 +6159,7 @@ static const u16 sLuvdiscEliteLearnset[] = {
     MOVE_TEARFUL_LOOK,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LUVDISC
@@ -6300,6 +6364,7 @@ static const u16 sRelicanthEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_RELICANTH
@@ -6325,6 +6390,7 @@ static const u16 sPiplupEliteLearnset[] = {
     MOVE_TACKLE,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -6346,6 +6412,7 @@ static const u16 sPrinplupEliteLearnset[] = {
     //MOVE_SIGNAL_BEAM,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -6368,6 +6435,7 @@ static const u16 sEmpoleonEliteLearnset[] = {
     //MOVE_SIGNAL_BEAM,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PIPLUP
@@ -6434,6 +6502,7 @@ static const u16 sStaraviaEliteLearnset[] = {
 
 #if P_FAMILY_BIDOOF
 static const u16 sBibarelEliteLearnset[] = {
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BIDOOF
@@ -6545,6 +6614,7 @@ static const u16 sFloatzelEliteLearnset[] = {
     MOVE_TAIL_WHIP,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -6562,6 +6632,7 @@ static const u16 sBuizelEliteLearnset[] = {
     MOVE_TAIL_WHIP,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BUIZEL
@@ -6821,6 +6892,7 @@ static const u16 sMantineEliteLearnset[] = {
     MOVE_STRING_SHOT,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -6833,6 +6905,7 @@ static const u16 sMantykeEliteLearnset[] = {
     //MOVE_SIGNAL_BEAM,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MANTYKE
@@ -7219,6 +7292,7 @@ static const u16 sSamurottEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_TRUMP_CARD,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -7238,6 +7312,7 @@ static const u16 sOshawottEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_TRUMP_CARD,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -7250,6 +7325,7 @@ static const u16 sDewottEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_TRUMP_CARD,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_OSHAWOTT
@@ -7307,6 +7383,12 @@ static const u16 sSimisearEliteLearnset[] = {
 #if P_FAMILY_PANPOUR
 static const u16 sSimipourEliteLearnset[] = {
     MOVE_JUNGLE_HEALING,
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPanpourEliteLearnset[] = {
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PANPOUR
@@ -7470,6 +7552,7 @@ static const u16 sSeismitoadEliteLearnset[] = {
     MOVE_MUD_BOMB,
     MOVE_MUD_SPORT,
     MOVE_REFRESH,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -7480,6 +7563,7 @@ static const u16 sTympoleEliteLearnset[] = {
     MOVE_MUD_BOMB,
     MOVE_MUD_SPORT,
     MOVE_REFRESH,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -7491,6 +7575,7 @@ static const u16 sPalpitoadEliteLearnset[] = {
     MOVE_MUD_BOMB,
     MOVE_MUD_SPORT,
     MOVE_REFRESH,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TYMPOLE
@@ -7741,6 +7826,7 @@ static const u16 sCarracostaEliteLearnset[] = {
     MOVE_CONFIDE,
     MOVE_FLAIL,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -7749,6 +7835,7 @@ static const u16 sTirtougaEliteLearnset[] = {
     MOVE_CONFIDE,
     MOVE_FLAIL,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TIRTOUGA
@@ -7960,6 +8047,7 @@ static const u16 sSwannaEliteLearnset[] = {
     MOVE_SKY_ATTACK,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -7972,6 +8060,7 @@ static const u16 sDucklettEliteLearnset[] = {
     MOVE_PLUCK,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DUCKLETT
@@ -8223,8 +8312,17 @@ static const u16 sCryogonalEliteLearnset[] = {
 
 #if P_FAMILY_STUNFISK
 static const u16 sStunfiskEliteLearnset[] = {
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
+
+#if P_GALARIAN_FORMS
+static const u16 sStunfiskGalarEliteLearnset[] = {
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+
+#endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_STUNFISK
 
 #if P_FAMILY_DRUDDIGON
@@ -8767,6 +8865,12 @@ static const u16 sInkayEliteLearnset[] = {
 static const u16 sBarbaracleEliteLearnset[] = {
     MOVE_SURGING_STRIKES,
     MOVE_JET_PUNCH,
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBinacleEliteLearnset[] = {
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BINACLE
@@ -9022,6 +9126,7 @@ static const u16 sPrimarinaEliteLearnset[] = {
     MOVE_DOUBLE_SLAP,
     MOVE_MAGIC_COAT,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -9033,6 +9138,7 @@ static const u16 sPopplioEliteLearnset[] = {
     MOVE_COVET,
     MOVE_DOUBLE_SLAP,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -9044,6 +9150,7 @@ static const u16 sBrionneEliteLearnset[] = {
     MOVE_COVET,
     MOVE_DOUBLE_SLAP,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_POPPLIO
@@ -9110,6 +9217,7 @@ static const u16 sAraquanidEliteLearnset[] = {
     MOVE_SPIDER_WEB,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -9122,6 +9230,7 @@ static const u16 sDewpiderEliteLearnset[] = {
     MOVE_SPIDER_WEB,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DEWPIDER
@@ -9263,10 +9372,12 @@ static const u16 sComfeyEliteLearnset[] = {
 
 #if P_FAMILY_WIMPOD
 static const u16 sWimpodEliteLearnset[] = {
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
 static const u16 sGolisopodEliteLearnset[] = {
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WIMPOD
@@ -9359,6 +9470,7 @@ static const u16 sBruxishEliteLearnset[] = {
     MOVE_SYNCHRONOISE,
     MOVE_TELEKINESIS,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BRUXISH
@@ -9610,12 +9722,14 @@ static const u16 sSilicobraEliteLearnset[] = {
 static const u16 sBarraskewdaEliteLearnset[] = {
     MOVE_ASSURANCE,
     MOVE_LASER_FOCUS,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
 static const u16 sArrokudaEliteLearnset[] = {
     MOVE_ASSURANCE,
     MOVE_LASER_FOCUS,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ARROKUDA
@@ -9666,6 +9780,17 @@ static const u16 sFalinksEliteLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FALINKS
+#if P_FAMILY_SIZZLIPEDE
+static const u16 sSizzlipedeEliteLearnset[] = {
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+static const u16 sCentiskorchEliteLearnset[] = {
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+#endif //P_FAMILY_SIZZLIPEDE
+
 
 #if P_FAMILY_SNOM
 static const u16 sSnomEliteLearnset[] = {
@@ -9725,6 +9850,7 @@ static const u16 sArctozoltEliteLearnset[] = {
 #if P_FAMILY_DRACOVISH
 static const u16 sDracovishEliteLearnset[] = {
     MOVE_JAW_LOCK,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DRACOVISH
@@ -9776,6 +9902,7 @@ static const u16 sDragapultEliteLearnset[] = {
     MOVE_SHADOW_CLAW,
     MOVE_BEAT_UP,
     MOVE_GRUDGE,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -10140,6 +10267,7 @@ static const u16 sSquirtleEliteLearnset[] = {
     MOVE_SKULL_BASH,
     MOVE_SUBMISSION,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -10164,6 +10292,7 @@ static const u16 sWartortleEliteLearnset[] = {
     MOVE_SKULL_BASH,
     MOVE_SUBMISSION,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -10194,6 +10323,7 @@ static const u16 sBlastoiseEliteLearnset[] = {
     MOVE_SUBMISSION,
     MOVE_TERRAIN_PULSE,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SQUIRTLE
@@ -10771,6 +10901,7 @@ static const u16 sClawitzerEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_VICE_GRIP,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -10781,6 +10912,7 @@ static const u16 sClauncherEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_VICE_GRIP,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CLAUNCHER
@@ -10834,6 +10966,7 @@ static const u16 sGastrodonEliteLearnset[] = {
     MOVE_TACKLE,
     MOVE_TOXIC,
     MOVE_TRUMP_CARD,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -10848,6 +10981,7 @@ static const u16 sShellosEliteLearnset[] = {
     MOVE_TACKLE,
     MOVE_TOXIC,
     MOVE_TRUMP_CARD,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SHELLOS
@@ -10968,6 +11102,7 @@ static const u16 sPelipperEliteLearnset[] = {
     MOVE_SKY_ATTACK,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -10983,6 +11118,7 @@ static const u16 sWingullEliteLearnset[] = {
     MOVE_SKY_ATTACK,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WINGULL
@@ -10995,6 +11131,7 @@ static const u16 sKeldeoEliteLearnset[] = {
     MOVE_LAST_RESORT,
     MOVE_REVENGE,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KELDEO
@@ -11604,6 +11741,7 @@ static const u16 sMudkipEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_REFRESH,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 static const u16 sMarshtompEliteLearnset[] = {
@@ -11620,6 +11758,7 @@ static const u16 sMarshtompEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_REFRESH,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 static const u16 sSwampertEliteLearnset[] = {
@@ -11636,6 +11775,7 @@ static const u16 sSwampertEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_REFRESH,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MUDKIP
@@ -11677,6 +11817,7 @@ static const u16 sSurskitEliteLearnset[] = {
     MOVE_STRING_SHOT,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 static const u16 sMasquerainEliteLearnset[] = {
@@ -11698,6 +11839,7 @@ static const u16 sMasquerainEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_TWISTER,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SURSKIT
@@ -11905,6 +12047,7 @@ static const u16 sKyogreEliteLearnset[] = {
     MOVE_NATURAL_GIFT,
     //MOVE_SIGNAL_BEAM,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KYOGRE
@@ -12151,6 +12294,7 @@ static const u16 sFinneonEliteLearnset[] = {
     MOVE_SPLASH,
     MOVE_TOXIC,
     MOVE_TWISTER,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -12167,6 +12311,7 @@ static const u16 sLumineonEliteLearnset[] = {
     MOVE_SPLASH,
     MOVE_TOXIC,
     MOVE_TWISTER,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FINNEON
@@ -12353,6 +12498,7 @@ static const u16 sBasculinEliteLearnset[] = {
     MOVE_RAGE,
     MOVE_REVENGE,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 static const u16 sBasculinWhiteStripedEliteLearnset[] = {
@@ -12634,6 +12780,7 @@ static const u16 sFroakieEliteLearnset[] = {
     MOVE_ROLE_PLAY,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -12647,6 +12794,7 @@ static const u16 sFrogadierEliteLearnset[] = {
     MOVE_ROLE_PLAY,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -12661,6 +12809,7 @@ static const u16 sGreninjaEliteLearnset[] = {
     MOVE_MUD_SPORT,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FROAKIE
@@ -12685,6 +12834,7 @@ static const u16 sSkrelpEliteLearnset[] = {
     MOVE_CAMOUFLAGE,
     MOVE_CONFIDE,
     MOVE_FAINT_ATTACK,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -12823,6 +12973,7 @@ static const u16 sCrabrawlerEliteLearnset[] = {
     MOVE_DUAL_CHOP,
     MOVE_PURSUIT,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -12835,6 +12986,7 @@ static const u16 sCrabominableEliteLearnset[] = {
     MOVE_DUAL_CHOP,
     MOVE_PURSUIT,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CRABRAWLER
@@ -12879,6 +13031,7 @@ static const u16 sMareanieEliteLearnset[] = {
     MOVE_GASTRO_ACID,
     MOVE_MAGIC_COAT,
     MOVE_SPIKE_CANNON,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -12890,6 +13043,7 @@ static const u16 sToxapexEliteLearnset[] = {
     MOVE_GASTRO_ACID,
     MOVE_MAGIC_COAT,
     MOVE_SPIKE_CANNON,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MAREANIE
@@ -13027,6 +13181,7 @@ static const u16 sDrednawEliteLearnset[] = {
     MOVE_ASSURANCE,
     MOVE_REVENGE,
     MOVE_SKULL_BASH,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CHEWTLE
@@ -13034,6 +13189,7 @@ static const u16 sDrednawEliteLearnset[] = {
 #if P_FAMILY_CRAMORANT
 static const u16 sCramorantEliteLearnset[] = {
     MOVE_ASSURANCE,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CRAMORANT
@@ -13086,6 +13242,7 @@ static const u16 sPincurchinEliteLearnset[] = {
 static const u16 sDrakloakEliteLearnset[] = {
     MOVE_BEAT_UP,
     MOVE_GRUDGE,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DREEPY
@@ -13109,6 +13266,7 @@ static const u16 sUrshifuSingleStrikeEliteLearnset[] = {
 };
 static const u16 sUrshifuRapidStrikeEliteLearnset[] = {
     MOVE_REVENGE,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_URSHIFU
@@ -13245,6 +13403,7 @@ static const u16 sGoldeenEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WATER_GUN,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -13266,6 +13425,7 @@ static const u16 sSeakingEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WATER_GUN,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GOLDEEN
@@ -13287,8 +13447,22 @@ static const u16 sCorsolaEliteLearnset[] = {
     MOVE_SPIKE_CANNON,
     MOVE_SUCKER_PUNCH,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
+
+#if P_GALARIAN_FORMS
+static const u16 sCorsolaGalarEliteLearnset[] = {
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sCursolaEliteLearnset[] = {
+    MOVE_SCALD,
+    MOVE_UNAVAILABLE,
+};
+
+#endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CORSOLA
 
 #if P_FAMILY_MILTANK
@@ -13421,6 +13595,7 @@ static const u16 sFrillishEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
     MOVE_WRING_OUT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 
@@ -13434,6 +13609,7 @@ static const u16 sJellicentEliteLearnset[] = {
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
     MOVE_WRING_OUT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FRILLISH
@@ -13512,6 +13688,7 @@ static const u16 sWishiwashiEliteLearnset[] = {
     MOVE_FAINT_ATTACK,
     MOVE_TOXIC,
     MOVE_WATER_SPORT,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WISHIWASHI
@@ -13640,6 +13817,7 @@ static const u16 sTapuFiniEliteLearnset[] = {
     MOVE_REFRESH,
     MOVE_TELEKINESIS,
     MOVE_TOXIC,
+    MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TAPU_FINI
