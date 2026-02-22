@@ -182,3 +182,18 @@ script Route113_EventScript_HazeGentleman {
 	end
 }
 
+
+script Route113_EventScript_PoisonSprayNinja {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_ACID_SPRAY)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Before your final strike, you should weaken your foes first!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_ACID_SPRAY)
+		waitfanfare
+	}
+	msgbox(format("An acid spray will make them vulnerable to special attacks."), MSGBOX_DEFAULT)
+	releaseall
+	end
+}

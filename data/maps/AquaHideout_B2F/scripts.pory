@@ -203,11 +203,11 @@ script AquaHideout_B2F_EventScript_StevenCallOutro {
 }
 
 text AquaHideout_B2F_Text_StevenSecondCall_BothHideoutsDone {
-	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch\NArchie, {PLAYER}? I see… Matt\Nbought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not\Nsure where it sleeps. I'm heading\Nhome to Mossdeep to do further research. You should meet me there.\p… … … … … …\n… … … … … Click!")
+	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch Archie, {PLAYER}?\pI see…\NMatt bought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not sure where it sleeps.\pI'm heading home to Mossdeep to do further research. You should meet me there.\p… … … … … …\n… … … … … Click!")
 }
 
 text AquaHideout_B2F_Text_StevenSecondCall_MagmaRemaining {
-	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch\NArchie, {PLAYER}? I see… Matt\Nbought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not\Nsure where it sleeps. In the\Nmeantime, you should hurry to Team Magma's hideout in the Jagged\NPass. We can still stop Maxie.\p… … … … … …\n… … … … … Click!")
+	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch Archie, {PLAYER}?\pI see…\NMatt bought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not sure where it sleeps.\pIn the meantime, you should hurry to Team Magma's hideout in the Jagged Pass.\pWe can still stop Maxie.\p… … … … … …\n… … … … … Click!")
 }
 
 text AquaHideout_B2F_Text_MattIntro {

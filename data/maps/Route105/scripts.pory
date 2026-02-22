@@ -97,3 +97,19 @@ Route104_Text_RegisteredDadInPokenav:
 	.string "Registered DAD NORMAN\n"
 	.string "in the POKéNAV.$"
 `
+
+
+script Route105_EventScript_ScaleShotFisherman {
+	lock
+	faceplayer
+	msgbox(format("There are so many dazzling fish in the sea."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_SCALE_SHOT)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Some fish Pokémon can launch their scales as an attack.\pIt's beautiful, and scary!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_SCALE_SHOT)
+		waitfanfare
+	}
+	releaseall
+	end
+}

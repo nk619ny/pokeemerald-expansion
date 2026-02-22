@@ -360,6 +360,35 @@ Route113_EventScript_HazeGentleman_2:
 	goto Route113_EventScript_HazeGentleman_1
 
 
+Route113_EventScript_PoisonSprayNinja::
+# 187 "data/maps/Route113/scripts.pory"
+	lock
+# 188 "data/maps/Route113/scripts.pory"
+	faceplayer
+# 189 "data/maps/Route113/scripts.pory"
+	checkitem ITEM_TM_ACID_SPRAY
+# 190 "data/maps/Route113/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route113_EventScript_PoisonSprayNinja_2
+Route113_EventScript_PoisonSprayNinja_1:
+# 196 "data/maps/Route113/scripts.pory"
+	msgbox Route113_EventScript_PoisonSprayNinja_Text_1, MSGBOX_DEFAULT
+# 197 "data/maps/Route113/scripts.pory"
+	releaseall
+	end
+
+Route113_EventScript_PoisonSprayNinja_2:
+# 191 "data/maps/Route113/scripts.pory"
+	msgbox Route113_EventScript_PoisonSprayNinja_Text_0, MSGBOX_DEFAULT
+# 192 "data/maps/Route113/scripts.pory"
+	closemessage
+# 193 "data/maps/Route113/scripts.pory"
+	giveitem ITEM_TM_ACID_SPRAY
+# 194 "data/maps/Route113/scripts.pory"
+	waitfanfare
+	goto Route113_EventScript_PoisonSprayNinja_1
+
+
 Route113_EventScript_HazeGentleman_Text_0:
 # 173 "data/maps/Route113/scripts.pory"
 	.string "There's something facinating about the\n"
@@ -370,3 +399,13 @@ Route113_EventScript_HazeGentleman_Text_0:
 Route113_EventScript_HazeGentleman_Text_1:
 # 179 "data/maps/Route113/scripts.pory"
 	.string "I wonder if you understand...$"
+
+Route113_EventScript_PoisonSprayNinja_Text_0:
+# 191 "data/maps/Route113/scripts.pory"
+	.string "Before your final strike, you should\n"
+	.string "weaken your foes first!$"
+
+Route113_EventScript_PoisonSprayNinja_Text_1:
+# 196 "data/maps/Route113/scripts.pory"
+	.string "An acid spray will make them vulnerable\n"
+	.string "to special attacks.$"

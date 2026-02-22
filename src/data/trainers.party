@@ -278,7 +278,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Seismitoad  @ Rindo Berry
-Level: 64
+Level: 65
 Ability: Water Absorb  
 Tera Type: Water  
 - Drain Punch  
@@ -287,7 +287,7 @@ Tera Type: Water
 - Poison Jab  
 
 Luvdisc  
-Level: 64
+Level: 65
 Ability: Soul-Heart  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -297,7 +297,7 @@ IVs: 0 Atk
 - Agility  
 
 Goodra  @ Yache Berry
-Level: 62
+Level: 64
 Ability: Dry Skin  
 Tera Type: Dragon  
 - Power Whip  
@@ -306,7 +306,7 @@ Tera Type: Dragon
 - Acid Spray  
 
 Inteleon  
-Level: 62
+Level: 64
 Ability: Sniper  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -383,6 +383,7 @@ Aurorus  @ Babiri Berry
 Ability: Snow Warning  
 Tera Type: Rock  
 IVs: 0 Atk  
+Level: 75
 - Blizzard  
 - Ancient Power  
 - Aurora Veil  
@@ -392,6 +393,7 @@ Glimmora  @ Shuca Berry
 Ability: Toxic Debris  
 Tera Type: Rock  
 IVs: 0 Atk  
+Level: 75
 - Ancient Power  
 - Earth Power  
 - Energy Ball  
@@ -401,6 +403,7 @@ Ribombee @ Focus Sash
 Ability: Shield Dust  
 Tera Type: Bug  
 IVs: 0 Atk  
+Level: 75
 - Silver Wind  
 - Moonblast  
 - Quiver Dance  
@@ -412,6 +415,7 @@ Tera Type: Water
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
+Level: 75
 - Octazooka  
 - Charge Beam  
 - Energy Ball  
@@ -1218,7 +1222,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Toxicroak  
-Level: 62
+Level: 65
 Ability: Dry Skin
 Tera Type: Poison  
 - Fake Out  
@@ -1227,7 +1231,7 @@ Tera Type: Poison
 - Poison Jab  
 
 Octillery  @ Leftovers
-Level: 62
+Level: 65
 Ability: Moody  
 Tera Type: Water  
 - Surf
@@ -1236,7 +1240,7 @@ Tera Type: Water
 - Protect
 
 Klawf  
-Level: 62
+Level: 65
 Ability: Anger Shell  
 Tera Type: Rock  
 - Stone Edge  
@@ -1245,7 +1249,7 @@ Tera Type: Rock
 - High Horsepower
 
 Malamar  @ Tanga Berry
-Level: 62
+Level: 65
 Ability: Contrary  
 Tera Type: Dark  
 - Superpower  
@@ -1305,7 +1309,7 @@ IVs: 0 Atk
 - Calm Mind  
 
 
-=== TRAINER_MATT === /* Route */
+=== TRAINER_MATT === /* Aqua Hideout */
 Name: MATT
 Class: Aqua Admin
 Pic: Matt ORAS

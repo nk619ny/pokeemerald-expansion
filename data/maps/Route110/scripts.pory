@@ -172,10 +172,11 @@ Route110_EventScript_Jaclyn::
 	end
 
 Route110_EventScript_Edwin::
-	trainerbattle_single TRAINER_EDWIN_1, Route110_Text_EdwinIntro, Route110_Text_EdwinDefeated, Route110_EventScript_EdwinRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_EdwinRematch
-	msgbox Route110_Text_EdwinPostBattle, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_EDWIN_1, Route110_Text_EdwinIntro, Route110_Text_EdwinDefeated
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
+	//goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_EdwinRematch
+	//msgbox Route110_Text_EdwinPostBattle, MSGBOX_DEFAULT
+	goto Route110_EventScript_SpindaCollector
 	release
 	end
 
@@ -1045,4 +1046,111 @@ script Route109_EventScript_FlameChargeCyclist {
 	}
 	releaseall
 	end
+}
+
+script Route109_EventScript_FlingCyclist {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_FLING)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I got in trouble for littering.\pIt's just so easy to toss your trash when cycling, but that doesn't make it okay.\pI really want to get rid of this TM though...\NI know! Why don't you take it?"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_FLING)
+		waitfanfare
+	}
+	msgbox(format("Somehow it's not a problem when a Pokémon flings whatever they're carrying."), MSGBOX_DEFAULT)
+	releaseall
+	end
+}
+
+script Route110_EventScript_SpindaCollector {
+	lock
+	faceplayer
+	msgbox(Route110_Text_SpindaCollectorGreeting, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		msgbox(Route110_Text_SpindaCollectorDecline, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	special(ChoosePartyMon)
+	waitstate
+	if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+		msgbox(Route110_Text_SpindaCollectorNoChoice, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	copyvar(VAR_0x800A, VAR_0x8004)
+	copyvar(VAR_0x8005, VAR_0x8004)
+	specialvar(VAR_RESULT, GetTradeSpecies)
+	if (var(VAR_RESULT) != SPECIES_SPINDA) {
+		msgbox(Route110_Text_SpindaCollectorWrongSpecies, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	msgbox(Route110_Text_SpindaCollectorChoose, MSGBOX_DEFAULT)
+	dynmultichoice(20, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Inkay", "Fomantis", "Dottler")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			setvar(VAR_0x8009, INGAME_TRADE_INKAY)
+			bufferspeciesname(STR_VAR_2, SPECIES_INKAY)
+		case 1:
+			setvar(VAR_0x8009, INGAME_TRADE_FOMANTIS)
+			bufferspeciesname(STR_VAR_2, SPECIES_FOMANTIS)
+		case 2:
+			setvar(VAR_0x8009, INGAME_TRADE_DOTTLER)
+			bufferspeciesname(STR_VAR_2, SPECIES_DOTTLER)
+		default:
+			msgbox(Route110_Text_SpindaCollectorChangedMind, MSGBOX_DEFAULT)
+			release
+			end
+	}
+	copyvar(VAR_0x8004, VAR_0x800A)
+	special(BufferMonNickname)
+	msgbox(Route110_Text_SpindaCollectorConfirmTrade, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		msgbox(Route110_Text_SpindaCollectorChangedMind, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	setvar(VAR_0x8003, 1)
+	copyvar(VAR_0x8004, VAR_0x8009)
+	copyvar(VAR_0x8005, VAR_0x800A)
+	special(CreateInGameTradePokemon)
+	special(DoInGameTradeScene)
+	waitstate
+	msgbox(Route110_Text_SpindaCollectorPostTrade, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+text Route110_Text_SpindaCollectorGreeting {
+	format("Oh, hello there! The name's Marco.\nI'm a Spinda collector!\pI travel the world searching for Spinda\nwith spot patterns I've never seen before.\pI have some rare Pokémon I'd be willing\nto part with for a truly unique Spinda.\pDo you happen to have a Spinda\nyou'd show me?")
+}
+
+text Route110_Text_SpindaCollectorDecline {
+	format("Aw, that's too bad…\nIf you ever catch a Spinda, come find me!\pEvery single one has a different pattern.\nThey're absolutely fascinating!")
+}
+
+text Route110_Text_SpindaCollectorNoChoice {
+	format("Changed your mind?\nNo worries!\pIf you find a Spinda with a pattern\nthat catches your eye, bring it my way!")
+}
+
+text Route110_Text_SpindaCollectorWrongSpecies {
+	format("Hmm… That's not a Spinda!\nI appreciate the thought, though.\pI'm only looking for Spinda with unique\nspot patterns. Come back if you find one!")
+}
+
+text Route110_Text_SpindaCollectorChoose {
+	format("Oh, a Spinda! Let me see…\nWhat a magnificent pattern!\pI simply must add it to my collection!\pI've got some rare Pokémon I could\noffer you in exchange.\pWhich one catches your eye?")
+}
+
+text Route110_Text_SpindaCollectorConfirmTrade {
+	format("Will you trade your {STR_VAR_1}\nfor my {STR_VAR_2}?")
+}
+
+text Route110_Text_SpindaCollectorChangedMind {
+	format("Oh, having second thoughts?\nThat's alright!\pIf you change your mind, you know\nwhere to find me!")
+}
+
+text Route110_Text_SpindaCollectorPostTrade {
+	format("Oh, wonderful! Just look at those\nspots! What a beauty!\pEvery Spinda's pattern is completely\nunique, you know.\pThank you so much! I'll treasure this\none forever!")
 }

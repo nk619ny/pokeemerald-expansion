@@ -194,3 +194,43 @@ Route104_Text_RegisteredDadInPokenav:
 	.string "Registered DAD NORMAN\n"
 # 98 "data/maps/Route105/scripts.pory"
 	.string "in the POKéNAV.$"
+
+Route105_EventScript_ScaleShotFisherman::
+# 103 "data/maps/Route105/scripts.pory"
+	lock
+# 104 "data/maps/Route105/scripts.pory"
+	faceplayer
+# 105 "data/maps/Route105/scripts.pory"
+	msgbox Route105_EventScript_ScaleShotFisherman_Text_0, MSGBOX_DEFAULT
+# 106 "data/maps/Route105/scripts.pory"
+	checkitem ITEM_TM_SCALE_SHOT
+# 107 "data/maps/Route105/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route105_EventScript_ScaleShotFisherman_2
+Route105_EventScript_ScaleShotFisherman_1:
+# 113 "data/maps/Route105/scripts.pory"
+	releaseall
+	end
+
+Route105_EventScript_ScaleShotFisherman_2:
+# 108 "data/maps/Route105/scripts.pory"
+	msgbox Route105_EventScript_ScaleShotFisherman_Text_1, MSGBOX_DEFAULT
+# 109 "data/maps/Route105/scripts.pory"
+	closemessage
+# 110 "data/maps/Route105/scripts.pory"
+	giveitem ITEM_TM_SCALE_SHOT
+# 111 "data/maps/Route105/scripts.pory"
+	waitfanfare
+	goto Route105_EventScript_ScaleShotFisherman_1
+
+
+Route105_EventScript_ScaleShotFisherman_Text_0:
+# 105 "data/maps/Route105/scripts.pory"
+	.string "There are so many dazzling fish in the\n"
+	.string "sea.$"
+
+Route105_EventScript_ScaleShotFisherman_Text_1:
+# 108 "data/maps/Route105/scripts.pory"
+	.string "Some fish Pokémon can launch their\n"
+	.string "scales as an attack.\p"
+	.string "It's beautiful, and scary!$"

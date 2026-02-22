@@ -1047,6 +1047,54 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
+    },
+    [INGAME_TRADE_INKAY] =
+    {
+        .nickname = _("TOPSY"),
+        .species = SPECIES_INKAY,
+        .ivs = {5, 4, 4, 5, 4, 4},
+        .abilityNum = 0, // Contrary
+        .otId = 52814,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x3C,
+        .heldItem = ITEM_NONE,
+        .mailNum = -1,
+        .otName = _("EDWIN"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SPINDA
+    },
+    [INGAME_TRADE_FOMANTIS] =
+    {
+        .nickname = _("MANTIS"),
+        .species = SPECIES_FOMANTIS,
+        .ivs = {4, 4, 5, 4, 5, 4},
+        .abilityNum = 2, // Contrary (Hidden Ability)
+        .otId = 52814,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x5A,
+        .heldItem = ITEM_NONE,
+        .mailNum = -1,
+        .otName = _("EDWIN"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SPINDA
+    },
+    [INGAME_TRADE_DOTTLER] =
+    {
+        .nickname = _("DOTDOT"),
+        .species = SPECIES_DOTTLER,
+        .ivs = {4, 4, 4, 4, 5, 5},
+        .abilityNum = 1, // Compound Eyes
+        .otId = 52814,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x47,
+        .heldItem = ITEM_NONE,
+        .mailNum = -1,
+        .otName = _("EDWIN"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SPINDA
     }
 };
 
