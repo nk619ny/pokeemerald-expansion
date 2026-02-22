@@ -916,6 +916,7 @@ enum Type CheckDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum 
 uq4_12_t GetDynamaxLevelHPMultiplier(u32 dynamaxLevel, bool32 inverseMultiplier);
 u32 GetRegionalFormByRegion(u32 species, u32 region);
 bool32 IsSpeciesForeignRegionalForm(u32 species, u32 currentRegion);
+enum Type GetTeraTypeFromPersonalityValue(u32 personality);
 enum Type GetTeraTypeFromPersonality(struct Pokemon *mon);
 bool8 ShouldSkipFriendshipChange(void);
 struct Pokemon *GetSavedPlayerPartyMon(u32 index);

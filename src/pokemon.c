@@ -1132,7 +1132,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     SetBoxMonData(boxMon, MON_DATA_POKEBALL, &value);
     SetBoxMonData(boxMon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
 
-    enum Type teraType = (boxMon->personality & 0x1) == 0 ? GetSpeciesType(species, 0) : GetSpeciesType(species, 1);
+    enum Type teraType = GetTeraTypeFromPersonalityValue(personality);
     SetBoxMonData(boxMon, MON_DATA_TERA_TYPE, &teraType);
 
     if (fixedIV < USE_RANDOM_IVS)
@@ -7595,13 +7595,18 @@ static const u8 sNonNormalTypes[] = {
 
 #define NUM_NON_NORMAL_TYPES (sizeof(sNonNormalTypes) / sizeof(sNonNormalTypes[0]))
 
-//getTeraTypeFromPersonality is now an enum Type instead of u32
+// Core helper: derive tera type from a raw personality value
+enum Type GetTeraTypeFromPersonalityValue(u32 personality)
+{
+    u32 idx = personality % NUM_NON_NORMAL_TYPES;
+    return sNonNormalTypes[idx];
+}
+
+// Wrapper for use with a Pokemon struct
 enum Type GetTeraTypeFromPersonality(struct Pokemon *mon)
 {
     u32 personality = GetMonData(mon, MON_DATA_PERSONALITY);
-    // Use the personality to pick a type, evenly distributed
-    u32 idx = personality % NUM_NON_NORMAL_TYPES;
-    return sNonNormalTypes[idx];
+    return GetTeraTypeFromPersonalityValue(personality);
 }
 
 struct Pokemon *GetSavedPlayerPartyMon(u32 index)
