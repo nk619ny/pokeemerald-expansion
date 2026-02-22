@@ -1050,7 +1050,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_INKAY] =
     {
-        .nickname = _("TOPSY"),
+        .nickname = _("INKAY"),
         .species = SPECIES_INKAY,
         .ivs = {5, 4, 4, 5, 4, 4},
         .abilityNum = 0, // Contrary
@@ -1066,7 +1066,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_FOMANTIS] =
     {
-        .nickname = _("MANTIS"),
+        .nickname = _("FOMANTIS"),
         .species = SPECIES_FOMANTIS,
         .ivs = {4, 4, 5, 4, 5, 4},
         .abilityNum = 2, // Contrary (Hidden Ability)
@@ -1082,10 +1082,10 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_DOTTLER] =
     {
-        .nickname = _("DOTDOT"),
+        .nickname = _("DOTTLER"),
         .species = SPECIES_DOTTLER,
         .ivs = {4, 4, 4, 4, 5, 5},
-        .abilityNum = 1, // Compound Eyes
+        .abilityNum = 2, // Compound Eyes
         .otId = 52814,
         .conditions = {5, 5, 5, 5, 5},
         .personality = 0x47,

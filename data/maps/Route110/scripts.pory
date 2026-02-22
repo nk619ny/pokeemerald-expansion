@@ -1124,11 +1124,11 @@ script Route110_EventScript_SpindaCollector {
 }
 
 text Route110_Text_SpindaCollectorGreeting {
-	format("Oh, hello there! The name's Marco.\nI'm a Spinda collector!\pI travel the world searching for Spinda\nwith spot patterns I've never seen before.\pI have some rare Pokémon I'd be willing\nto part with for a truly unique Spinda.\pDo you happen to have a Spinda\nyou'd show me?")
+	format("I've collected hundreds of Spinda with unique spot patterns.\pBut I'm always interested in finding new ones. If you find any, I'd be willing to make a trade.\pDo you think you have a Spinda with a spot pattern I've never seen before?")
 }
 
 text Route110_Text_SpindaCollectorDecline {
-	format("Aw, that's too bad…\nIf you ever catch a Spinda, come find me!\pEvery single one has a different pattern.\nThey're absolutely fascinating!")
+	format("Aw, that's too bad…\nIf you ever catch a Spinda, come find me!")
 }
 
 text Route110_Text_SpindaCollectorNoChoice {
@@ -1136,11 +1136,11 @@ text Route110_Text_SpindaCollectorNoChoice {
 }
 
 text Route110_Text_SpindaCollectorWrongSpecies {
-	format("Hmm… That's not a Spinda!\nI appreciate the thought, though.\pI'm only looking for Spinda with unique\nspot patterns. Come back if you find one!")
+	format("Hmm… That's not a Spinda!\nThat's a totally different Pokémon!")
 }
 
 text Route110_Text_SpindaCollectorChoose {
-	format("Oh, a Spinda! Let me see…\nWhat a magnificent pattern!\pI simply must add it to my collection!\pI've got some rare Pokémon I could\noffer you in exchange.\pWhich one catches your eye?")
+	format("Let me see if I've seen that pattern before…\nWoah, that's a new one! What a magnificent design!!\pI simply must add it to my collection!\pI've got some other Pokémon I could\noffer you in exchange.\pWhich one catches your eye?")
 }
 
 text Route110_Text_SpindaCollectorConfirmTrade {
@@ -1148,9 +1148,9 @@ text Route110_Text_SpindaCollectorConfirmTrade {
 }
 
 text Route110_Text_SpindaCollectorChangedMind {
-	format("Oh, having second thoughts?\nThat's alright!\pIf you change your mind, you know\nwhere to find me!")
+	format("What, you're backing out??\pMaybe you'd prefer one of my other Pokémon instead?\pI'm dying to add that Spinda to my collection!")
 }
 
 text Route110_Text_SpindaCollectorPostTrade {
-	format("Oh, wonderful! Just look at those\nspots! What a beauty!\pEvery Spinda's pattern is completely\nunique, you know.\pThank you so much! I'll treasure this\none forever!")
+	format("Oh, wonderful! Just look at those spots! What a beauty!\p…\NYou know, I say I'm only looking for new Spinda patterns, but I've never actually seen two with the exact same design, so I end up keeping every Spinda I find…")
 }

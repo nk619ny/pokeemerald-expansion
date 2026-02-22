@@ -353,6 +353,10 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncle::
 	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande
 # 192 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	msgbox VerdanturfTown_WandasHouse_Text_WallysGotPotential, MSGBOX_DEFAULT
+# 193 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
+	closemessage
+# 194 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
+	releaseall
 	end
 
 VerdanturfTown_WandasHouse_EventScript_WallysUncle_2:
