@@ -5776,7 +5776,8 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         if (targetSpecies != SPECIES_NONE)
         {
             GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, &canStopEvo, DO_EVO);
-            RemoveBagItem(gSpecialVar_ItemId, 1);
+            if ((*itemPtr != ITEM_CANDY_BAG) && (*itemPtr != ITEM_EXP_CANDY_S) && (*itemPtr != ITEM_EXP_CANDY_XL))
+                RemoveBagItem(gSpecialVar_ItemId, 1);
             FreePartyPointers();
             gCB2_AfterEvolution = gPartyMenu.exitCallback;
             BeginEvolutionScene(mon, targetSpecies, canStopEvo, gPartyMenu.slotId);
