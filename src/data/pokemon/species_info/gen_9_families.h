@@ -590,7 +590,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sQuaquavalLevelUpLearnset,
         .teachableLearnset = sQuaquavalTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sQuaquavalEliteLearnset,
     },
 #endif //P_FAMILY_QUAXLY
 

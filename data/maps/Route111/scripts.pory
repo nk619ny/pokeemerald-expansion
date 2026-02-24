@@ -770,3 +770,10 @@ script Route111_EventScript_ScorcingSandsHiker{
 	releaseall
 	end
 }
+
+script Route111_South_RemoveDuplicateBianca{
+	removeobject(LOCALID_MAUVILLE_BIANCA)
+	setvar(VAR_TEMP_0, 1)
+	releaseall
+	end
+}

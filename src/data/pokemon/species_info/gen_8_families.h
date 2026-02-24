@@ -2354,7 +2354,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sBoltundLevelUpLearnset,
         .teachableLearnset = sBoltundTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sBoltundEliteLearnset,
     },
 #endif //P_FAMILY_YAMPER
 
@@ -8557,6 +8557,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sEnamorusLevelUpLearnset,
         .teachableLearnset = sEnamorusTeachableLearnset,
+        .eliteLearnset = sEnamorusEliteLearnset,
         .formSpeciesIdTable = sEnamorusFormSpeciesIdTable,
         .formChangeTable = sEnamorusFormChangeTable,
     },
@@ -8624,6 +8625,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sEnamorusLevelUpLearnset,
         .teachableLearnset = sEnamorusTeachableLearnset,
+        .eliteLearnset = sEnamorusTherianEliteLearnset,
         .formSpeciesIdTable = sEnamorusFormSpeciesIdTable,
         .formChangeTable = sEnamorusFormChangeTable,
     },

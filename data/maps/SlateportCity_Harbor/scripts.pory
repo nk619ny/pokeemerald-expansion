@@ -543,3 +543,18 @@ SlateportCity_Harbor_Text_ThisWillHelpResearch:
 	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
 	.string "This will help our research a lot!$"
 `
+
+script SlateportCity_Harbor_EventScript_WaterPulseSailor {
+	lock
+	faceplayer
+	msgbox(format("It's amazing to see a ship propelling itself through the water"), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_WATER_PULSE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Your Pokémon can create a pulse of water as powerful as a ship with this TM."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_WATER_PULSE)
+		waitfanfare
+	}
+	releaseall
+	end
+}

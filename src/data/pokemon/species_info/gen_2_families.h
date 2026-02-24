@@ -6655,6 +6655,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sMagcargoLevelUpLearnset,
         .teachableLearnset = sMagcargoTeachableLearnset,
+        .eliteLearnset = sMagcargoEliteLearnset,
     },
 #endif //P_FAMILY_SLUGMA
 

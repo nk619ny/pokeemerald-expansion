@@ -2289,24 +2289,19 @@ Route110_Text_BrendanHiLetsRegister::
 
 Route110_Text_SpindaCollectorGreeting::
 # 1126 "data/maps/Route110/scripts.pory"
-	.string "Oh, hello there! The name's Marco.\n"
-	.string "I'm a Spinda collector!\p"
-	.string "I travel the world searching for Spinda\n"
-	.string "with spot patterns I've never seen\l"
-	.string "before.\p"
-	.string "I have some rare Pokémon I'd be willing\n"
-	.string "to part with for a truly unique Spinda.\p"
-	.string "Do you happen to have a Spinda\n"
-	.string "you'd show me?$"
+	.string "I've collected hundreds of Spinda with\n"
+	.string "unique spot patterns.\p"
+	.string "But I'm always interested in finding new\n"
+	.string "ones. If you find any, I'd be willing to\l"
+	.string "make a trade.\p"
+	.string "Do you think you have a Spinda with a\n"
+	.string "spot pattern I've never seen before?$"
 
 Route110_Text_SpindaCollectorDecline::
 # 1130 "data/maps/Route110/scripts.pory"
 	.string "Aw, that's too bad…\n"
 	.string "If you ever catch a Spinda, come find\l"
-	.string "me!\p"
-	.string "Every single one has a different\n"
-	.string "pattern.\n"
-	.string "They're absolutely fascinating!$"
+	.string "me!$"
 
 Route110_Text_SpindaCollectorNoChoice::
 # 1134 "data/maps/Route110/scripts.pory"
@@ -2318,17 +2313,16 @@ Route110_Text_SpindaCollectorNoChoice::
 Route110_Text_SpindaCollectorWrongSpecies::
 # 1138 "data/maps/Route110/scripts.pory"
 	.string "Hmm… That's not a Spinda!\n"
-	.string "I appreciate the thought, though.\p"
-	.string "I'm only looking for Spinda with unique\n"
-	.string "spot patterns. Come back if you find\l"
-	.string "one!$"
+	.string "That's a totally different Pokémon!$"
 
 Route110_Text_SpindaCollectorChoose::
 # 1142 "data/maps/Route110/scripts.pory"
-	.string "Oh, a Spinda! Let me see…\n"
-	.string "What a magnificent pattern!\p"
+	.string "Let me see if I've seen that pattern\n"
+	.string "before…\n"
+	.string "Woah, that's a new one! What a\l"
+	.string "magnificent design!!\p"
 	.string "I simply must add it to my collection!\p"
-	.string "I've got some rare Pokémon I could\n"
+	.string "I've got some other Pokémon I could\n"
 	.string "offer you in exchange.\p"
 	.string "Which one catches your eye?$"
 
@@ -2339,16 +2333,19 @@ Route110_Text_SpindaCollectorConfirmTrade::
 
 Route110_Text_SpindaCollectorChangedMind::
 # 1150 "data/maps/Route110/scripts.pory"
-	.string "Oh, having second thoughts?\n"
-	.string "That's alright!\p"
-	.string "If you change your mind, you know\n"
-	.string "where to find me!$"
+	.string "What, you're backing out??\p"
+	.string "Maybe you'd prefer one of my other\n"
+	.string "Pokémon instead?\p"
+	.string "I'm dying to add that Spinda to my\n"
+	.string "collection!$"
 
 Route110_Text_SpindaCollectorPostTrade::
 # 1154 "data/maps/Route110/scripts.pory"
 	.string "Oh, wonderful! Just look at those\n"
 	.string "spots! What a beauty!\p"
-	.string "Every Spinda's pattern is completely\n"
-	.string "unique, you know.\p"
-	.string "Thank you so much! I'll treasure this\n"
-	.string "one forever!$"
+	.string "…\n"
+	.string "You know, I say I'm only looking for new\l"
+	.string "Spinda patterns, but I've never\l"
+	.string "actually seen two with the exact same\l"
+	.string "design, so I end up keeping every\l"
+	.string "Spinda I find…$"

@@ -288,3 +288,48 @@ Route112_Text_RouteSignLavaridge:
 	.string "ROUTE 112\n"
 # 145 "data/maps/Route112/scripts.pory"
 	.string "{LEFT_ARROW} LAVARIDGE TOWN$"
+
+SlateportCity_Harbor_EventScript_DragonTailTamer::
+# 151 "data/maps/Route112/scripts.pory"
+	lock
+# 152 "data/maps/Route112/scripts.pory"
+	faceplayer
+# 153 "data/maps/Route112/scripts.pory"
+	checkitem ITEM_TM_DRAGON_TAIL
+# 154 "data/maps/Route112/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq SlateportCity_Harbor_EventScript_DragonTailTamer_2
+# 161 "data/maps/Route112/scripts.pory"
+	msgbox SlateportCity_Harbor_EventScript_DragonTailTamer_Text_1, MSGBOX_DEFAULT
+# 162 "data/maps/Route112/scripts.pory"
+	closemessage
+SlateportCity_Harbor_EventScript_DragonTailTamer_1:
+# 164 "data/maps/Route112/scripts.pory"
+	releaseall
+	end
+
+SlateportCity_Harbor_EventScript_DragonTailTamer_2:
+# 155 "data/maps/Route112/scripts.pory"
+	msgbox SlateportCity_Harbor_EventScript_DragonTailTamer_Text_0, MSGBOX_DEFAULT
+# 156 "data/maps/Route112/scripts.pory"
+	closemessage
+# 157 "data/maps/Route112/scripts.pory"
+	giveitem ITEM_TM_DRAGON_TAIL
+# 158 "data/maps/Route112/scripts.pory"
+	waitfanfare
+	goto SlateportCity_Harbor_EventScript_DragonTailTamer_1
+
+
+SlateportCity_Harbor_EventScript_DragonTailTamer_Text_0:
+# 155 "data/maps/Route112/scripts.pory"
+	.string "Dragon Pokémon are the most powerful.\p"
+	.string "Their tails hit so hard, they knock an\n"
+	.string "opponent out of the battle\l"
+	.string "temporarily!$"
+
+SlateportCity_Harbor_EventScript_DragonTailTamer_Text_1:
+# 161 "data/maps/Route112/scripts.pory"
+	.string "I've always felt that Dragon-type\n"
+	.string "Pokémon were the strongest.\p"
+	.string "But I'll admit, girls with pink ribbons\n"
+	.string "have started to scare me.$"

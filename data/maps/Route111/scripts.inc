@@ -1517,6 +1517,16 @@ Route111_EventScript_ScorcingSandsHiker_2:
 	goto Route111_EventScript_ScorcingSandsHiker_1
 
 
+Route111_South_RemoveDuplicateBianca::
+# 775 "data/maps/Route111/scripts.pory"
+	removeobject LOCALID_MAUVILLE_BIANCA
+# 776 "data/maps/Route111/scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 777 "data/maps/Route111/scripts.pory"
+	releaseall
+	end
+
+
 Route111_EventScript_WinstratesCheckBadge_Text_0:
 # 734 "data/maps/Route111/scripts.pory"
 	.string "Before we start, do you have the\n"

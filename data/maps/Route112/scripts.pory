@@ -145,3 +145,22 @@ Route112_Text_RouteSignLavaridge:
 	.string "{LEFT_ARROW} LAVARIDGE TOWN$"
 
 `
+
+
+script SlateportCity_Harbor_EventScript_DragonTailTamer {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_DRAGON_TAIL)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Dragon Pokémon are the most powerful.\pTheir tails hit so hard, they knock an opponent out of the battle temporarily!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_DRAGON_TAIL)
+		waitfanfare
+	}
+	else {
+		msgbox(format("I've always felt that Dragon-type Pokémon were the strongest.\pBut I'll admit, girls with pink ribbons have started to scare me."), MSGBOX_DEFAULT)
+		closemessage
+	}
+	releaseall
+	end
+}

@@ -1086,3 +1086,43 @@ SlateportCity_Harbor_Text_ThisWillHelpResearch:
 	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
 # 544 "data/maps/SlateportCity_Harbor/scripts.pory"
 	.string "This will help our research a lot!$"
+
+SlateportCity_Harbor_EventScript_WaterPulseSailor::
+# 548 "data/maps/SlateportCity_Harbor/scripts.pory"
+	lock
+# 549 "data/maps/SlateportCity_Harbor/scripts.pory"
+	faceplayer
+# 550 "data/maps/SlateportCity_Harbor/scripts.pory"
+	msgbox SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_0, MSGBOX_DEFAULT
+# 551 "data/maps/SlateportCity_Harbor/scripts.pory"
+	checkitem ITEM_TM_WATER_PULSE
+# 552 "data/maps/SlateportCity_Harbor/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq SlateportCity_Harbor_EventScript_WaterPulseSailor_2
+SlateportCity_Harbor_EventScript_WaterPulseSailor_1:
+# 558 "data/maps/SlateportCity_Harbor/scripts.pory"
+	releaseall
+	end
+
+SlateportCity_Harbor_EventScript_WaterPulseSailor_2:
+# 553 "data/maps/SlateportCity_Harbor/scripts.pory"
+	msgbox SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_1, MSGBOX_DEFAULT
+# 554 "data/maps/SlateportCity_Harbor/scripts.pory"
+	closemessage
+# 555 "data/maps/SlateportCity_Harbor/scripts.pory"
+	giveitem ITEM_TM_WATER_PULSE
+# 556 "data/maps/SlateportCity_Harbor/scripts.pory"
+	waitfanfare
+	goto SlateportCity_Harbor_EventScript_WaterPulseSailor_1
+
+
+SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_0:
+# 550 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "It's amazing to see a ship propelling\n"
+	.string "itself through the water$"
+
+SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_1:
+# 553 "data/maps/SlateportCity_Harbor/scripts.pory"
+	.string "Your Pokémon can create a pulse of\n"
+	.string "water as powerful as a ship with this\l"
+	.string "TM.$"

@@ -6509,6 +6509,7 @@ static const u16 sBibarelEliteLearnset[] = {
 
 #if P_FAMILY_SHINX
 static const u16 sLuxrayEliteLearnset[] = {
+    MOVE_VOLT_TACKLE,
     MOVE_ZING_ZAP,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
@@ -6691,6 +6692,7 @@ static const u16 sBronzorEliteLearnset[] = {
 
 static const u16 sBronzongEliteLearnset[] = {
     MOVE_LUSTER_PURGE,
+    MOVE_LUMINA_CRASH,
     MOVE_SUNSTEEL_STRIKE,
     MOVE_DOUBLE_IRON_BASH,
     MOVE_ANCIENT_POWER,
@@ -7109,6 +7111,7 @@ static const u16 sPalkiaEliteLearnset[] = {
 
 #if P_FAMILY_CRESSELIA
 static const u16 sCresseliaEliteLearnset[] = {
+    MOVE_LUMINA_CRASH,
     MOVE_MOONGEIST_BEAM,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
@@ -10862,6 +10865,7 @@ static const u16 sSkarmoryEliteLearnset[] = {
 static const u16 sMagcargoEliteLearnset[] = {
     MOVE_MAGMA_STORM,
     MOVE_BURNING_BULWARK,
+    MOVE_TAR_SHOT,
     MOVE_REFRESH,
     MOVE_AFTER_YOU,
     MOVE_CAPTIVATE,
@@ -11507,6 +11511,7 @@ static const u16 sTinkatonEliteLearnset[] = {
     MOVE_ICE_HAMMER,
     MOVE_HAMMER_ARM,
     MOVE_DRAGON_HAMMER,
+    MOVE_LOVELY_KISS,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TINKATINK
@@ -12476,6 +12481,7 @@ static const u16 sBlitzleEliteLearnset[] = {
 };
 
 static const u16 sZebstrikaEliteLearnset[] = {
+    MOVE_VOLT_TACKLE,
     MOVE_CONFIDE,
     MOVE_ION_DELUGE,
     MOVE_LASER_FOCUS,
@@ -13310,24 +13316,30 @@ static const u16 sSpectrierEliteLearnset[] = {
 };
 #endif //P_FAMILY_SPECTRIER
 
-#if P_FAMILY_BASCULEGION
+#if P_FAMILY_BASCULIN
 static const u16 sBasculegionEliteLearnset[] = {
     MOVE_AQUA_TAIL,
     MOVE_OMINOUS_WIND,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BASCULEGION
+#endif //P_FAMILY_BASCULIN
 
 #if P_FAMILY_ENAMORUS
 static const u16 sEnamorusEliteLearnset[] = {
     MOVE_BITE,
+    MOVE_LOVELY_KISS,
     MOVE_POWER_SHIFT,
     MOVE_TACKLE,
     MOVE_UNAVAILABLE,
 };
+
+static const u16 sEnamorusTherianEliteLearnset[] = {
+    MOVE_LOVELY_KISS,
+    MOVE_UNAVAILABLE,
+};
 #endif //P_FAMILY_ENAMORUS
 
-#if P_FAMILY_LILLIGANT
+#if P_FAMILY_PETILIL
 #if P_HISUIAN_FORMS
 static const u16 sLilligantHisuiEliteLearnset[] = {
     MOVE_BABY_DOLL_EYES,
@@ -13339,7 +13351,7 @@ static const u16 sLilligantHisuiEliteLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_LILLIGANT
+#endif //P_FAMILY_PETILIL
 
 
 #if P_FAMILY_RUFFLET
@@ -13900,3 +13912,23 @@ static const u16 sStakatakaEliteLearnset[] = {
 };
 #endif //P_FAMILY_STAKATAKA
 
+#if P_FAMILY_YAMPER
+static const u16 sBoltundEliteLearnset[] = {
+    MOVE_VOLT_TACKLE,
+    MOVE_UNAVAILABLE,
+};
+#endif //P_FAMILY_YAMPER
+
+#if P_FAMILY_SPRITZEE
+static const u16 sAromatisseEliteLearnset[] = {
+    MOVE_LOVELY_KISS,
+    MOVE_UNAVAILABLE,
+};
+#endif //P_FAMILY_SPRITZEE
+
+#if P_FAMILY_QUAXLY
+static const u16 sQuaquavalEliteLearnset[] = {
+    MOVE_VICTORY_DANCE,
+    MOVE_UNAVAILABLE,
+};
+#endif //P_FAMILY_QUAXLY

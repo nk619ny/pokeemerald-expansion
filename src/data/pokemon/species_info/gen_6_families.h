@@ -3369,7 +3369,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sAromatisseLevelUpLearnset,
         .teachableLearnset = sAromatisseTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sAromatisseEliteLearnset,
     },
 #endif //P_FAMILY_SPRITZEE
 
