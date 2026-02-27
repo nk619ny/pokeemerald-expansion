@@ -120,7 +120,9 @@
     "DewfordTown_PokemonCenter_2F",
     "DewfordTown_Gym",
     "DewfordTown_Hall",
-    "DewfordTown_House2"
+    "DewfordTown_House2",
+    "HauntedManor_1F",
+    "HauntedManor_2F"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",
@@ -613,7 +615,8 @@
     "DewfordGymCopy",
     "SnowRoute",
     "PokeCenter_2F_Draft",
-    "TestMapIceCave"
+    "TestMapIceCave",
+    "Haunted_Manor_Draft"
   ],
   "gMapGroup_IndoorRoute109": [
     "Route109_SeashoreHouse"

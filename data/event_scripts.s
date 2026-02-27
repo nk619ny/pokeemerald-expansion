@@ -1218,3 +1218,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PetalburgWoods2/scripts.inc"
 
 	.include "data/maps/SlateportCity_ContestHall/scripts.inc"
+
+	.include "data/maps/Haunted_Manor_Draft/scripts.inc"
+
+	.include "data/maps/HauntedManor_1F/scripts.inc"
+
+	.include "data/maps/HauntedManor_2F/scripts.inc"

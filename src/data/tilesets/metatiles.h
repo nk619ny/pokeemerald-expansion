@@ -216,3 +216,9 @@ const u16 gMetatileAttributes_CustomGeneral[] = INCBIN_U16("data/tilesets/primar
 
 const u16 gMetatiles_Ultra_Space[] = INCBIN_U16("data/tilesets/secondary/ultra_space/metatiles.bin");
 const u16 gMetatileAttributes_Ultra_Space[] = INCBIN_U16("data/tilesets/secondary/ultra_space/metatile_attributes.bin");
+
+const u16 gMetatiles_CustomBuilding[] = INCBIN_U16("data/tilesets/primary/custom_building/metatiles.bin");
+const u16 gMetatileAttributes_CustomBuilding[] = INCBIN_U16("data/tilesets/primary/custom_building/metatile_attributes.bin");
+
+const u16 gMetatiles_HauntedManor[] = INCBIN_U16("data/tilesets/secondary/haunted_manor/metatiles.bin");
+const u16 gMetatileAttributes_HauntedManor[] = INCBIN_U16("data/tilesets/secondary/haunted_manor/metatile_attributes.bin");

@@ -1691,3 +1691,41 @@ const u16 gTilesetPalettes_Ultra_Space[][16] =
 };
 
 const u32 gTilesetTiles_Ultra_Space[] = INCBIN_U32("data/tilesets/secondary/ultra_space/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_CustomBuilding[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/custom_building/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_CustomBuilding[] = INCBIN_U32("data/tilesets/primary/custom_building/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_HauntedManor[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/haunted_manor/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_HauntedManor[] = INCBIN_U32("data/tilesets/secondary/haunted_manor/tiles.4bpp.lz");

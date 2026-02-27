@@ -872,3 +872,25 @@ const struct Tileset gTileset_Ultra_Space =
     .metatileAttributes = gMetatileAttributes_Ultra_Space,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_CustomBuilding =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_CustomBuilding,
+    .palettes = gTilesetPalettes_CustomBuilding,
+    .metatiles = gMetatiles_CustomBuilding,
+    .metatileAttributes = gMetatileAttributes_CustomBuilding,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_HauntedManor =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_HauntedManor,
+    .palettes = gTilesetPalettes_HauntedManor,
+    .metatiles = gMetatiles_HauntedManor,
+    .metatileAttributes = gMetatileAttributes_HauntedManor,
+    .callback = NULL,
+};

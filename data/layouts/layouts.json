@@ -4670,6 +4670,36 @@
       "secondary_tileset": "gTileset_Contest",
       "border_filepath": "data/layouts/SlateportCity_ContestHall/border.bin",
       "blockdata_filepath": "data/layouts/SlateportCity_ContestHall/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUNTED_MANOR_DRAFT",
+      "name": "Haunted_Manor_Draft_Layout",
+      "width": 30,
+      "height": 45,
+      "primary_tileset": "gTileset_CustomBuilding",
+      "secondary_tileset": "gTileset_HauntedManor",
+      "border_filepath": "data/layouts/Haunted_Manor_Draft/border.bin",
+      "blockdata_filepath": "data/layouts/Haunted_Manor_Draft/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUNTED_MANOR_1F",
+      "name": "HauntedManor_1F_Layout",
+      "width": 21,
+      "height": 16,
+      "primary_tileset": "gTileset_CustomBuilding",
+      "secondary_tileset": "gTileset_HauntedManor",
+      "border_filepath": "data/layouts/HauntedManor_1F/border.bin",
+      "blockdata_filepath": "data/layouts/HauntedManor_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUNTED_MANOR_2F",
+      "name": "HauntedManor_2F_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_CustomBuilding",
+      "secondary_tileset": "gTileset_HauntedManor",
+      "border_filepath": "data/layouts/HauntedManor_2F/border.bin",
+      "blockdata_filepath": "data/layouts/HauntedManor_2F/map.bin"
     }
   ]
 }
