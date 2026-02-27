@@ -6537,7 +6537,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_GRASS),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_EFFECT_SPORE, ABILITY_DRY_SKIN, ABILITY_MYCELIUM_MIGHT }, //changed HA from Damp
+        .abilities = { ABILITY_EFFECT_SPORE, ABILITY_DRY_SKIN, ABILITY_DAMP }, //changed HA from Damp
     #else
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_NONE, ABILITY_DAMP },
     #endif
@@ -6628,7 +6628,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_GRASS),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_EFFECT_SPORE, ABILITY_DRY_SKIN, ABILITY_MYCELIUM_MIGHT }, //changed HA from Damp
+        .abilities = { ABILITY_EFFECT_SPORE, ABILITY_DRY_SKIN, ABILITY_DAMP }, //changed HA from Damp
     #else
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_NONE, ABILITY_DAMP },
     #endif
@@ -20159,7 +20159,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = (P_UPDATED_STATS >= GEN_2 ? 95 : 125) + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 30 : 0),
         .baseSpDefense = 125 - (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 20 : 0),
         .types = MON_TYPES(TYPE_ICE, TYPE_FLYING),
-        .catchRate = 3,
+        .catchRate = 8,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 290,
     #elif P_UPDATED_EXP_YIELDS >= GEN_5
@@ -20239,7 +20239,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 125,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
-        .catchRate = 3,
+        .catchRate = 8,
         .expYield = 290,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -20311,7 +20311,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 125,
         .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 90 : 125,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
-        .catchRate = 3,
+        .catchRate = 8,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 290,
     #elif P_UPDATED_EXP_YIELDS >= GEN_5
@@ -20395,7 +20395,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 85,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_FLYING),
-        .catchRate = 3,
+        .catchRate = 8,
         .expYield = 290,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -20466,7 +20466,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 125,
         .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 85 : 125,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
-        .catchRate = 3,
+        .catchRate = 8,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 290,
     #elif P_UPDATED_EXP_YIELDS >= GEN_5
@@ -20574,7 +20574,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 100,
         .baseSpDefense = 125,
         .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
-        .catchRate = 3,
+        .catchRate = 8,
         .expYield = 290,
         .evYield_SpDefense = 3,
         .genderRatio = MON_GENDERLESS,
