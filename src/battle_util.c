@@ -4397,6 +4397,30 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                 effect++;
             }
             break;
+        case ABILITY_DAMP:
+            if (!(gFieldStatuses & STATUS_FIELD_WATERSPORT) && !gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gFieldStatuses |= STATUS_FIELD_WATERSPORT;
+                gFieldTimers.waterSportTimer = 5;
+                SaveBattlerAttacker(gBattlerAttacker);
+                gBattlerAttacker = battler;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_DampActivates);
+                effect++;
+            }
+            break;
+        case ABILITY_MUDDY:
+            if (!(gFieldStatuses & STATUS_FIELD_MUDSPORT) && !gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gFieldStatuses |= STATUS_FIELD_MUDSPORT;
+                gFieldTimers.mudSportTimer = 5;
+                SaveBattlerAttacker(gBattlerAttacker);
+                gBattlerAttacker = battler;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_MuddyActivates);
+                effect++;
+            }
+            break;
         case ABILITY_INTIMIDATE:
             if (!gSpecialStatuses[battler].switchInAbilityDone && !IsOpposingSideEmpty(battler))
             {

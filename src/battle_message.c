@@ -876,6 +876,10 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_ABILITYSHIELDPROTECTS]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}'s Ability is protected by the effects of its {B_LAST_ITEM}!"),
     [STRINGID_PKMNMADEASTORM]                       = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} created a thunderstorm!"), //not in gen 5+, ability popup
     [STRINGID_ABILITYLOWEREDSURROUNDINGEVASION]     = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} lowered the evasion of all Pokémon on the field!\p"),
+    [STRINGID_DAMPWEAKENEDFIRE]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} Dampened the field!"),
+    [STRINGID_MUDDYWEAKENEDELECTRIC]                 = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} Muddied the field!"),
+    //[STRINGID_DAMPWEAKENEDFIRE]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} weakened Fire attacks!"),
+    //[STRINGID_MUDDYWEAKENEDELECTRIC]                 = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} weakened Electric attacks!"),
 
 };
 
