@@ -1108,13 +1108,14 @@ static bool32 ShouldSwitchIfAttackingStatsLowered(u32 battler)
 
 static bool32 CanBattlerConsiderSwitch(u32 battler)
 {
-    if (gBattleMons[battler].volatiles.wrapped)
+    bool32 canAlwaysEscape = (GetBattlerHoldEffect(battler) == HOLD_EFFECT_SHED_SHELL || GetBattlerAbility(battler) == ABILITY_RUN_AWAY);
+    if (!canAlwaysEscape && gBattleMons[battler].volatiles.wrapped)
         return FALSE;
-    if (gBattleMons[battler].volatiles.escapePrevention)
+    if (!canAlwaysEscape && gBattleMons[battler].volatiles.escapePrevention)
         return FALSE;
-    if (gBattleMons[battler].volatiles.root)
+    if (!canAlwaysEscape && gBattleMons[battler].volatiles.root)
         return FALSE;
-    if (IsAbilityPreventingEscape(battler))
+    if (!canAlwaysEscape && IsAbilityPreventingEscape(battler))
         return FALSE;
     if (gBattleStruct->battlerState[battler].commanderSpecies)
         return FALSE;
