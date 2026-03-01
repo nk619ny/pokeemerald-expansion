@@ -42009,6 +42009,402 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_HAUNTED_MANOR_1F",
+          "base_label": "gHauntedManor_1F_Day",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SINISTEA_PHONY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_POLTCHAGEIST_COUNTERFEIT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_VULPIX"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_GREAVARD"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_CHINGLING"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_YAMASK"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_DUSKULL"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SINISTEA_PHONY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_POLTCHAGEIST_COUNTERFEIT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_VULPIX"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MISDREAVUS"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_LITWICK"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_LITWICK"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SINISTEA_ANTIQUE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_POLTCHAGEIST_ARTISAN"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_HAUNTED_MANOR_1F",
+          "base_label": "gHauntedManor_1F_Night",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_LITWICK"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_LITWICK"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_GREAVARD"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_CHINGLING"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_YAMASK"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_DUSKULL"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MISDREAVUS"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SINISTEA_PHONY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_POLTCHAGEIST_COUNTERFEIT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SINISTEA"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_POLTCHAGEIST"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_HAUNTED_MANOR_2F",
+          "base_label": "gHauntedManor_2F_Day",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_BANETTE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_DUSCLOPS"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_WOBBUFFET"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_HAUNTER"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MISDREAVUS"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MISDREAVUS"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_SINISTEA_ANTIQUE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_POLTCHAGEIST_ARTISAN"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_POLTCHAGEIST_COUNTERFEIT"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_SINISTEA_PHONY"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_ZORUA"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_HONEDGE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_HAUNTED_MANOR_2F",
+          "base_label": "gHauntedManor_2F_Night",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_LAMPENT"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_HONCHKROW"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_WOBBUFFET"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_HAUNTER"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_HAUNTER"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MISDREAVUS"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_SINISTEA_ANTIQUE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_POLTCHAGEIST_ARTISAN"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_POLTCHAGEIST_COUNTERFEIT"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_SINISTEA_PHONY"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_ZORUA_HISUI"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_HONEDGE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MIMIKYU"
+              }
+            ]
+          }
         }
       ]
     },

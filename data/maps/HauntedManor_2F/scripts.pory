@@ -1,0 +1,48 @@
+mapscripts HauntedManor_2F_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: HauntedManor_2F_FlashCheck
+    ]
+}
+
+script HauntedManor_2F_FlashCheck {
+    if (flag(FLAG_SYS_USE_FLASH)) {
+		setvar(VAR_TEMP_0,1)
+		releaseall
+		return
+	}
+	if(flag(FLAG_RECEIVED_HM_FLASH)) {
+		lock
+		msgbox(HauntedManor_2F_Text_RoomIsDarkUseFlash)
+		waitmessage
+		dofieldeffect(FLDEFF_USE_STRENGTH)
+		playse(SE_M_REFLECT)
+		delay(20)
+		setflag(FLAG_SYS_USE_FLASH)
+		animateflash(0)
+		setflashlevel(0)
+		setvar(VAR_TEMP_0,1)
+		release
+		return
+	}
+	else {
+		lock
+		setvar(VAR_TEMP_0,1)
+		msgbox(HauntedManor_2F_Text_RoomIsDarkNeedFlash)
+		waitmessage
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep)
+		delay(1)
+		warp(MAP_HAUNTED_MANOR_1F,10,2)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep)
+		waitmovement(0)
+		release
+		return
+	}
+}
+
+text HauntedManor_2F_Text_RoomIsDarkUseFlash{
+    format("This room is too dark to explore without a light.\p{PLAYER}'s Pokémon used Flash!")
+}
+
+text HauntedManor_2F_Text_RoomIsDarkNeedFlash{
+    format("This room is too dark to explore without a light.\pIt's better to turn back.")
+}
