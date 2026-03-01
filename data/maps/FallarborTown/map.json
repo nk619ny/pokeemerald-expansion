@@ -15,20 +15,25 @@
   "connections": [
     {
       "map": "MAP_ROUTE114",
-      "offset": 5,
+      "offset": 0,
       "direction": "left"
     },
     {
       "map": "MAP_ROUTE113",
-      "offset": 5,
+      "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE135_SOUTH",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
-      "x": 8,
-      "y": 16,
+      "x": 10,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -40,8 +45,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 11,
-      "y": 14,
+      "x": 13,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -53,8 +58,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 11,
-      "y": 20,
+      "x": 13,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 1,
@@ -66,8 +71,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(AZURILL)",
-      "x": 8,
-      "y": 17,
+      "x": 10,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -79,8 +84,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 8,
-      "y": 13,
+      "x": 10,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -93,43 +98,43 @@
   ],
   "warp_events": [
     {
-      "x": 15,
-      "y": 20,
+      "x": 17,
+      "y": 15,
       "elevation": 0,
       "dest_map": "MAP_FALLARBOR_TOWN_MART",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
-      "y": 30,
+      "x": 16,
+      "y": 25,
       "elevation": 0,
       "dest_map": "MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
-      "y": 12,
+      "x": 16,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 6,
-      "y": 22,
+      "x": 8,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_FALLARBOR_TOWN_COZMOS_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 1,
-      "y": 11,
+      "x": 3,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 8,
-      "y": 8,
+      "x": 6,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_GLACIER_PATH",
       "dest_warp_id": "0"
@@ -139,64 +144,64 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 16,
-      "y": 20,
+      "x": 18,
+      "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"
     },
     {
       "type": "sign",
-      "x": 15,
-      "y": 12,
+      "x": 17,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
     },
     {
       "type": "sign",
-      "x": 11,
-      "y": 30,
+      "x": 13,
+      "y": 25,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FallarborTown_EventScript_BattleTentSign"
     },
     {
       "type": "sign",
-      "x": 16,
-      "y": 12,
+      "x": 18,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
     },
     {
       "type": "sign",
-      "x": 10,
-      "y": 16,
+      "x": 12,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FallarborTown_EventScript_TownSign"
     },
     {
       "type": "sign",
-      "x": 17,
-      "y": 20,
+      "x": 19,
+      "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"
     },
     {
       "type": "sign",
-      "x": 3,
-      "y": 12,
+      "x": 5,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FallarborTown_EventScript_MoveTutorSign"
     },
     {
       "type": "hidden_item",
-      "x": 2,
-      "y": 20,
+      "x": 4,
+      "y": 15,
       "elevation": 3,
       "item": "ITEM_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET"

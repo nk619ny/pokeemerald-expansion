@@ -1226,3 +1226,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/HauntedManor_2F/scripts.inc"
 
 	.include "data/maps/DewfordOriginal/scripts.inc"
+
+	.include "data/maps/Route135_South/scripts.inc"
+
+	.include "data/maps/Route135_North/scripts.inc"
