@@ -59,3 +59,17 @@ tools/aif2pcm/aif2pcm
 *.smolTM
 __pycache__
 tools/poryscript
+
+# learnset_helpers generated/working files
+tools/learnset_helpers/add_elite_moves.py
+tools/learnset_helpers/add_missing_moves.py
+tools/learnset_helpers/analyze_learnsets.py
+tools/learnset_helpers/compare_learnsets.ipynb
+tools/learnset_helpers/compare_pre_bdsp_learnsets.ipynb
+tools/learnset_helpers/compare_pre_swsh_learnsets.ipynb
+tools/learnset_helpers/missing_moves.json
+tools/learnset_helpers/missing_moves_filtered.json
+tools/learnset_helpers/missing_moves_filtered_report.txt
+tools/learnset_helpers/missing_moves_report.txt
+tools/learnset_helpers/pre_swsh_missing_moves.json
+tools/learnset_helpers/pre_swsh_missing_moves_report.txt
