@@ -36,9 +36,7 @@ LilycoveCity_MoveDeletersHouse_EventScript_MoveDeleter::
 LilycoveCity_MoveDeletersHouse_EventScript_ChooseMonAndMoveToForget::
 # 19 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
 	msgbox LilycoveCity_MoveDeletersHouse_Text_WhichMonShouldForget, MSGBOX_DEFAULT
-# 20 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
-	special ChoosePartyMon
-# 21 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	chooseboxmon SELECT_PC_MON_MOVE_DELETER
 	waitstate
 # 22 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LilycoveCity_MoveDeletersHouse_EventScript_ComeAgain

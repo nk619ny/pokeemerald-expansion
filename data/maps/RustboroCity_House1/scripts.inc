@@ -14,49 +14,7 @@ RustboroCity_House1_EventScript_Trader::
 	faceplayer
 # 8 "data/maps/RustboroCity_House1/scripts.pory"
 	goto_if_set FLAG_RUSTBORO_NPC_TRADE_COMPLETED, RustboroCity_House1_EventScript_TradeCompleted
-# 9 "data/maps/RustboroCity_House1/scripts.pory"
-	setvar VAR_0x8003, 1
-# 10 "data/maps/RustboroCity_House1/scripts.pory"
-	setvar VAR_0x8008, INGAME_TRADE_SEEDOT
-# 11 "data/maps/RustboroCity_House1/scripts.pory"
-	copyvar VAR_0x8004, VAR_0x8008
-# 12 "data/maps/RustboroCity_House1/scripts.pory"
-	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
-# 13 "data/maps/RustboroCity_House1/scripts.pory"
-	copyvar VAR_0x8009, VAR_RESULT
-# 14 "data/maps/RustboroCity_House1/scripts.pory"
-	msgbox RustboroCity_House1_Text_IllTradeIfYouWant, MSGBOX_YESNO
-# 15 "data/maps/RustboroCity_House1/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, RustboroCity_House1_EventScript_DeclineTrade
-# 16 "data/maps/RustboroCity_House1/scripts.pory"
-	special ChoosePartyMon
-# 17 "data/maps/RustboroCity_House1/scripts.pory"
-	waitstate
-# 18 "data/maps/RustboroCity_House1/scripts.pory"
-	copyvar VAR_0x800A, VAR_0x8004
-# 19 "data/maps/RustboroCity_House1/scripts.pory"
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, RustboroCity_House1_EventScript_DeclineTrade
-# 20 "data/maps/RustboroCity_House1/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
-# 21 "data/maps/RustboroCity_House1/scripts.pory"
-	specialvar VAR_RESULT, GetTradeSpecies
-# 22 "data/maps/RustboroCity_House1/scripts.pory"
-	copyvar VAR_0x800B, VAR_RESULT
-# 23 "data/maps/RustboroCity_House1/scripts.pory"
-	goto_if_ne VAR_RESULT, VAR_0x8009, RustboroCity_House1_EventScript_NotRequestedMon
-# 24 "data/maps/RustboroCity_House1/scripts.pory"
-	copyvar VAR_0x8004, VAR_0x8008
-# 25 "data/maps/RustboroCity_House1/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
-# 26 "data/maps/RustboroCity_House1/scripts.pory"
-	special CreateInGameTradePokemon
-# 27 "data/maps/RustboroCity_House1/scripts.pory"
-	special DoInGameTradeScene
-# 28 "data/maps/RustboroCity_House1/scripts.pory"
-	waitstate
-# 29 "data/maps/RustboroCity_House1/scripts.pory"
-	msgbox RustboroCity_House1_Text_PleaseBeGoodToMyPokemon, MSGBOX_DEFAULT
-# 30 "data/maps/RustboroCity_House1/scripts.pory"
+	ingame_trade INGAME_TRADE_SEEDOT, RustboroCity_House1_Text_IllTradeIfYouWant, RustboroCity_House1_EventScript_DeclineTrade, RustboroCity_House1_EventScript_NotRequestedMon, RustboroCity_House1_Text_PleaseBeGoodToMyPokemon
 	setflag FLAG_RUSTBORO_NPC_TRADE_COMPLETED
 # 31 "data/maps/RustboroCity_House1/scripts.pory"
 	release

@@ -4,3 +4,7 @@ gText_WantToUseSurf::
 
 gText_PlayerUsedSurf::
 	.string "{PLAYER}'s Pokémon used Surf!$"
+
+Text_CurrentTooFast::
+	.string "The current is much too fast!\n"
+	.string "SURF can't be used here…$"
