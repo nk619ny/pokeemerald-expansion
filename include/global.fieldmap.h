@@ -193,6 +193,7 @@ struct BgEvent
             u32 quantity:7;
             u32 underfoot:1;
         } hiddenItem;
+#define HIDDEN_ITEM_DIRECT_FLAG 0x1000
         u32 secretBaseId;
     } bgUnion;
 };

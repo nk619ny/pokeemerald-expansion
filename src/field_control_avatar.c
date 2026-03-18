@@ -450,7 +450,10 @@ static const u8 *GetInteractedBackgroundEventScript(struct MapPosition *position
     case BG_EVENT_HIDDEN_ITEM:
         if (bgEvent->bgUnion.hiddenItem.underfoot == TRUE)
             return NULL;
-        gSpecialVar_0x8004 = bgEvent->bgUnion.hiddenItem.hiddenItemId + FLAG_HIDDEN_ITEMS_START;
+        if (bgEvent->bgUnion.hiddenItem.hiddenItemId & HIDDEN_ITEM_DIRECT_FLAG)
+            gSpecialVar_0x8004 = bgEvent->bgUnion.hiddenItem.hiddenItemId & ~HIDDEN_ITEM_DIRECT_FLAG;
+        else
+            gSpecialVar_0x8004 = bgEvent->bgUnion.hiddenItem.hiddenItemId + FLAG_HIDDEN_ITEMS_START;
         gSpecialVar_0x8005 = bgEvent->bgUnion.hiddenItem.item;
         gSpecialVar_0x8009 = bgEvent->bgUnion.hiddenItem.quantity;
         if (FlagGet(gSpecialVar_0x8004) == TRUE)

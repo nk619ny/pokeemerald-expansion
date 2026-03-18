@@ -720,7 +720,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_HISUIAN_FORMS
 
-/*#if P_MEGA_EVOLUTIONS
+/*
     [SPECIES_TYPHLOSION_MEGA] =
     {
         .baseHP        = 78,
@@ -785,8 +785,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eliteLearnset = sTyphlosionEliteLearnset,
         .formSpeciesIdTable = sTyphlosionFormSpeciesIdTable,
     },
-
-#endif //P_MEGA_EVOLUTIONS */
+*/
 
 #endif //P_FAMILY_CYNDAQUIL
 

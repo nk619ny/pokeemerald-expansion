@@ -109,7 +109,7 @@
 	.error "Hidden Item flag \flag must be >= FLAG_HIDDEN_ITEMS_START or between TEMP_FLAGS_START and TEMP_FLAGS_END."
 	.endif
 	.if (\flag >= TEMP_FLAGS_START) && (\flag <= TEMP_FLAGS_END)
-	bg_event \x, \y, \elevation, BG_EVENT_HIDDEN_ITEM, \item, \flag
+	bg_event \x, \y, \elevation, BG_EVENT_HIDDEN_ITEM, \item | ((0x1000 | \flag) << 11)
 	.else
 	.if \item >= (1 << 12)
 	.error "quantity \quantity too large"

@@ -9332,7 +9332,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/OldaleRuins/border.bin",
-      "blockdata_filepath": "data/layouts/OldaleRuins/map.bin"
+      "blockdata_filepath": "data/layouts/OldaleRuins/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_SLATEPORT_ORIGINAL",
@@ -9342,7 +9343,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Slateport_Original/border.bin",
-      "blockdata_filepath": "data/layouts/Slateport_Original/map.bin"
+      "blockdata_filepath": "data/layouts/Slateport_Original/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_SLATEPORT_CITY_FARM_CORRIDOR",
@@ -9352,7 +9354,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SlateportCity_FarmCorridor/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_FarmCorridor/map.bin"
+      "blockdata_filepath": "data/layouts/SlateportCity_FarmCorridor/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_SLATEPORT_FARM",
@@ -9362,7 +9365,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/SlateportFarm/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportFarm/map.bin"
+      "blockdata_filepath": "data/layouts/SlateportFarm/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_SLATEPORT_BAY",
@@ -9372,7 +9376,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/SlateportBay/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportBay/map.bin"
+      "blockdata_filepath": "data/layouts/SlateportBay/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_SLATEPORT_CITY_FARM_CORRIDOR_B1F",
@@ -9382,7 +9387,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SlateportCity_FarmCorridor_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_FarmCorridor_B1F/map.bin"
+      "blockdata_filepath": "data/layouts/SlateportCity_FarmCorridor_B1F/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_ROUTE104_NORTH",
@@ -9392,7 +9398,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route104_North/border.bin",
-      "blockdata_filepath": "data/layouts/Route104_North/map.bin"
+      "blockdata_filepath": "data/layouts/Route104_North/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_VERDANT_GROVE",
@@ -9402,7 +9409,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/VerdantGrove/border.bin",
-      "blockdata_filepath": "data/layouts/VerdantGrove/map.bin"
+      "blockdata_filepath": "data/layouts/VerdantGrove/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_NEW_TRAINER_HILL",
@@ -9412,7 +9420,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/NewTrainerHill/border.bin",
-      "blockdata_filepath": "data/layouts/NewTrainerHill/map.bin"
+      "blockdata_filepath": "data/layouts/NewTrainerHill/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_TEST_MAP_DESERT",
@@ -9422,7 +9431,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Ultra_Space",
       "border_filepath": "data/layouts/TestMapDesert/border.bin",
-      "blockdata_filepath": "data/layouts/TestMapDesert/map.bin"
+      "blockdata_filepath": "data/layouts/TestMapDesert/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_ROUTE111_SOUTH",
@@ -9432,7 +9442,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route111_South/border.bin",
-      "blockdata_filepath": "data/layouts/Route111_South/map.bin"
+      "blockdata_filepath": "data/layouts/Route111_South/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_ROUTE111_DESERT",
@@ -9442,7 +9453,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route111_Desert/border.bin",
-      "blockdata_filepath": "data/layouts/Route111_Desert/map.bin"
+      "blockdata_filepath": "data/layouts/Route111_Desert/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_ROUTE111_NORTH",
@@ -9452,7 +9464,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/Route111_North/border.bin",
-      "blockdata_filepath": "data/layouts/Route111_North/map.bin"
+      "blockdata_filepath": "data/layouts/Route111_North/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_ROUTE111_MT_CHIMNEY_BACKGROUND",
@@ -9462,7 +9475,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/Route111_MtChimneyBackground/border.bin",
-      "blockdata_filepath": "data/layouts/Route111_MtChimneyBackground/map.bin"
+      "blockdata_filepath": "data/layouts/Route111_MtChimneyBackground/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_GLACIER_PATH",
@@ -9472,7 +9486,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/GlacierPath/border.bin",
-      "blockdata_filepath": "data/layouts/GlacierPath/map.bin"
+      "blockdata_filepath": "data/layouts/GlacierPath/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_TEST_MAP_ICE",
@@ -9482,7 +9497,8 @@
       "primary_tileset": "gTileset_CustomGeneral",
       "secondary_tileset": "gTileset_Glacier",
       "border_filepath": "data/layouts/TestMapIce/border.bin",
-      "blockdata_filepath": "data/layouts/TestMapIce/map.bin"
+      "blockdata_filepath": "data/layouts/TestMapIce/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_TEST_MAP_SPACE_TIME",
@@ -9492,7 +9508,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/TestMapSpaceTime/border.bin",
-      "blockdata_filepath": "data/layouts/TestMapSpaceTime/map.bin"
+      "blockdata_filepath": "data/layouts/TestMapSpaceTime/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_MOSSDEEP_CITY_SPACE_CENTER_2F_R",
@@ -9502,7 +9519,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F_R/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F_R/map.bin"
+      "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F_R/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_EVER_GRANDE_CITY_SELECTION_ROOM",
@@ -9512,7 +9530,8 @@
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
       "border_filepath": "data/layouts/EverGrandeCity_SelectionRoom/border.bin",
-      "blockdata_filepath": "data/layouts/EverGrandeCity_SelectionRoom/map.bin"
+      "blockdata_filepath": "data/layouts/EverGrandeCity_SelectionRoom/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_DEWFORD_GYM_COPY",
@@ -9522,7 +9541,8 @@
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_DewfordGym",
       "border_filepath": "data/layouts/DewfordGymCopy/border.bin",
-      "blockdata_filepath": "data/layouts/DewfordGymCopy/map.bin"
+      "blockdata_filepath": "data/layouts/DewfordGymCopy/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_ROUTE103_WEST",
@@ -9532,7 +9552,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route103_West/border.bin",
-      "blockdata_filepath": "data/layouts/Route103_West/map.bin"
+      "blockdata_filepath": "data/layouts/Route103_West/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_SNOW_ROUTE",
@@ -9542,7 +9563,8 @@
       "primary_tileset": "gTileset_CustomGeneral",
       "secondary_tileset": "gTileset_Glacier",
       "border_filepath": "data/layouts/SnowRoute/border.bin",
-      "blockdata_filepath": "data/layouts/SnowRoute/map.bin"
+      "blockdata_filepath": "data/layouts/SnowRoute/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_POKE_CENTER_2F_DRAFT",
@@ -9552,7 +9574,8 @@
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/PokeCenter_2F_Draft/border.bin",
-      "blockdata_filepath": "data/layouts/PokeCenter_2F_Draft/map.bin"
+      "blockdata_filepath": "data/layouts/PokeCenter_2F_Draft/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_TEST_MAP_ICE_CAVE",
@@ -9562,7 +9585,8 @@
       "primary_tileset": "gTileset_CustomGeneral",
       "secondary_tileset": "gTileset_Glacier",
       "border_filepath": "data/layouts/TestMapIceCave/border.bin",
-      "blockdata_filepath": "data/layouts/TestMapIceCave/map.bin"
+      "blockdata_filepath": "data/layouts/TestMapIceCave/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_PETALBURG_WOODS2",
@@ -9572,7 +9596,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/PetalburgWoods2/border.bin",
-      "blockdata_filepath": "data/layouts/PetalburgWoods2/map.bin"
+      "blockdata_filepath": "data/layouts/PetalburgWoods2/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_SLATEPORT_CITY_CONTEST_HALL",
@@ -9582,7 +9607,8 @@
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Contest",
       "border_filepath": "data/layouts/SlateportCity_ContestHall/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_ContestHall/map.bin"
+      "blockdata_filepath": "data/layouts/SlateportCity_ContestHall/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_HAUNTED_MANOR_DRAFT",
@@ -9592,7 +9618,8 @@
       "primary_tileset": "gTileset_CustomBuilding",
       "secondary_tileset": "gTileset_HauntedManor",
       "border_filepath": "data/layouts/Haunted_Manor_Draft/border.bin",
-      "blockdata_filepath": "data/layouts/Haunted_Manor_Draft/map.bin"
+      "blockdata_filepath": "data/layouts/Haunted_Manor_Draft/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_HAUNTED_MANOR_1F",
@@ -9602,7 +9629,8 @@
       "primary_tileset": "gTileset_CustomBuilding",
       "secondary_tileset": "gTileset_HauntedManor",
       "border_filepath": "data/layouts/HauntedManor_1F/border.bin",
-      "blockdata_filepath": "data/layouts/HauntedManor_1F/map.bin"
+      "blockdata_filepath": "data/layouts/HauntedManor_1F/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_HAUNTED_MANOR_2F",
@@ -9612,7 +9640,8 @@
       "primary_tileset": "gTileset_CustomBuilding",
       "secondary_tileset": "gTileset_HauntedManor",
       "border_filepath": "data/layouts/HauntedManor_2F/border.bin",
-      "blockdata_filepath": "data/layouts/HauntedManor_2F/map.bin"
+      "blockdata_filepath": "data/layouts/HauntedManor_2F/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_DEWFORD_ORIGINAL",
@@ -9622,7 +9651,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/DewfordOriginal/border.bin",
-      "blockdata_filepath": "data/layouts/DewfordOriginal/map.bin"
+      "blockdata_filepath": "data/layouts/DewfordOriginal/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_ROUTE135_SOUTH",
@@ -9632,7 +9662,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/Route135_South/border.bin",
-      "blockdata_filepath": "data/layouts/Route135_South/map.bin"
+      "blockdata_filepath": "data/layouts/Route135_South/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_ROUTE135_NORTH",
@@ -9642,7 +9673,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Glacier",
       "border_filepath": "data/layouts/Route135_North/border.bin",
-      "blockdata_filepath": "data/layouts/Route135_North/map.bin"
+      "blockdata_filepath": "data/layouts/Route135_North/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

@@ -13396,7 +13396,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sKinglerFormChangeTable,
     },
 
- #if P_MEGA_EVOLUTIONS
+#if P_MEGA_EVOLUTIONS
     [SPECIES_KINGLER_MEGA] =
     {
         .baseHP        = 55 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 20 : 0),
