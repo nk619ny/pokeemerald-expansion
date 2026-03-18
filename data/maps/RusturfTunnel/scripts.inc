@@ -1053,7 +1053,7 @@ RusturfTunnel_Text_MikeIntro:
 # 527 "data/maps/RusturfTunnel/scripts.pory"
 RusturfTunnel_Text_MikeDefeat:
 # 528 "data/maps/RusturfTunnel/scripts.pory"
-	.string "My Pokémon…\n"
+	.string "My POKéMON…\n"
 # 529 "data/maps/RusturfTunnel/scripts.pory"
 	.string "Ran out of power…$"
 # 530 "data/maps/RusturfTunnel/scripts.pory"

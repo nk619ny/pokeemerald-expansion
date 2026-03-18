@@ -5180,6 +5180,16 @@ EggMoveTutor_EventScript_ChooseMon_1:
 	compare VAR_RESULT, TRUE
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_5
 EggMoveTutor_EventScript_ChooseMon_4:
+# 2454 "data/maps/TradeCenter/scripts.pory"
+	special CheckPartyMonHasScriptEggMoves
+# 2455 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq EggMoveTutor_EventScript_ChooseMon_8
+EggMoveTutor_EventScript_ChooseMon_7:
+# 2461 "data/maps/TradeCenter/scripts.pory"
+	special BufferMonNickname
+# 2462 "data/maps/TradeCenter/scripts.pory"
+	msgbox EggMoveTutor_Text_HasEggMoves, MSGBOX_DEFAULT
 # 2463 "data/maps/TradeCenter/scripts.pory"
 	special TeachScriptEggMoves
 # 2464 "data/maps/TradeCenter/scripts.pory"
@@ -5190,8 +5200,8 @@ EggMoveTutor_EventScript_ChooseMon_4:
 	faceplayer
 # 2468 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, TRUE
-	goto_if_eq EggMoveTutor_EventScript_ChooseMon_8
-EggMoveTutor_EventScript_ChooseMon_7:
+	goto_if_eq EggMoveTutor_EventScript_ChooseMon_11
+EggMoveTutor_EventScript_ChooseMon_10:
 # 2486 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_Cancel
 	return
@@ -5209,33 +5219,42 @@ EggMoveTutor_EventScript_ChooseMon_5:
 	goto EggMoveTutor_EventScript_ChooseMon_4
 
 EggMoveTutor_EventScript_ChooseMon_8:
+# 2456 "data/maps/TradeCenter/scripts.pory"
+	special BufferMonNickname
+# 2457 "data/maps/TradeCenter/scripts.pory"
+	msgbox EggMoveTutor_Text_NoEggMoves, MSGBOX_DEFAULT
+# 2458 "data/maps/TradeCenter/scripts.pory"
+	goto EggMoveTutor_EventScript_ChooseMon
+	goto EggMoveTutor_EventScript_ChooseMon_7
+
+EggMoveTutor_EventScript_ChooseMon_11:
 # 2470 "data/maps/TradeCenter/scripts.pory"
 	removeitem ITEM_HEART_SCALE, 1
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_ne EggMoveTutor_EventScript_ChooseMon_10
+	goto_if_ne EggMoveTutor_EventScript_ChooseMon_13
 # 2480 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_NoMoreHeartScales, MSGBOX_DEFAULT
 # 2481 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
-EggMoveTutor_EventScript_ChooseMon_10:
+EggMoveTutor_EventScript_ChooseMon_13:
 # 2473 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_AnythingElse, MSGBOX_YESNO
 # 2474 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq EggMoveTutor_EventScript_ChooseMon_14
-EggMoveTutor_EventScript_ChooseMon_13:
+	goto_if_eq EggMoveTutor_EventScript_ChooseMon_17
+EggMoveTutor_EventScript_ChooseMon_16:
 # 2477 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_Cancel
-	goto EggMoveTutor_EventScript_ChooseMon_7
+	goto EggMoveTutor_EventScript_ChooseMon_10
 
-EggMoveTutor_EventScript_ChooseMon_14:
+EggMoveTutor_EventScript_ChooseMon_17:
 # 2475 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_ChooseMon
-	goto EggMoveTutor_EventScript_ChooseMon_13
+	goto EggMoveTutor_EventScript_ChooseMon_16
 
 
 EggMoveTutor_EventScript_Cancel::

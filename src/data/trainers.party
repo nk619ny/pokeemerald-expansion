@@ -323,7 +323,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
+Starting Status: RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Barbaracle @ White Herb  
@@ -376,7 +376,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
+Starting Status: RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Aurorus  @ Babiri Berry
@@ -430,7 +430,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
+Starting Status: RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Vaporeon  
@@ -657,7 +657,7 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
+Starting Status: RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Dragalge  
@@ -1504,7 +1504,7 @@ Pic: Shelly ORAS
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
+Starting Status: RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Shaymin-Sky @ Yache Berry  
@@ -6295,7 +6295,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: Yes
-Starting Status: STARTING_STATUS_ELECTRIC_TERRAIN
+Starting Status: ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Charjabug @ Eviolite  
@@ -6419,7 +6419,7 @@ Class: Guitarist
 Pic: Guitarist
 Gender: Male
 Music: Intense
-Starting Status: STARTING_STATUS_ELECTRIC_TERRAIN
+Starting Status: ELECTRIC_TERRAIN
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -7560,7 +7560,7 @@ Pic: Bug Maniac
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-Starting Status: STARTING_STATUS_GRASSY_TERRAIN
+Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Skorupi  @ Scope Lens
@@ -8278,7 +8278,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Force Setup First T
 Mugshot: Purple
 
 Mightyena
-Level: 46
+Level: 47
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Roar
 - Double Edge
@@ -8634,7 +8634,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-Starting Status: STARTING_STATUS_ELECTRIC_TERRAIN
+Starting Status: ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Rotom-Heat  
@@ -8977,7 +8977,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 Mugshot: Purple
-Starting Status: STARTING_STATUS_TRICK_ROOM
+Starting Status: TRICK_ROOM
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Slowbro @ Slowbronite  
@@ -9413,7 +9413,7 @@ Pic: Sr And Jr
 Gender: Male
 Music: Twins
 Double Battle: Yes
-Starting Status: STARTING_STATUS_GRASSY_TERRAIN
+Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Zigzagoon
@@ -10432,7 +10432,7 @@ Pic: Collector
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-Starting Status: STARTING_STATUS_ELECTRIC_TERRAIN
+Starting Status: ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Beldum  
@@ -11598,7 +11598,7 @@ Pic: Running Triathlete M
 Gender: Male
 Music: Male
 Double Battle: Yes
-Starting Status: STARTING_STATUS_GRASSY_TERRAIN
+Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Raboot  
@@ -11697,7 +11697,7 @@ Pic: Running Triathlete F
 Gender: Female
 Music: Female
 Double Battle: Yes
-Starting Status: STARTING_STATUS_GRASSY_TERRAIN
+Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Doduo
@@ -15474,7 +15474,7 @@ Pic: Courtney ORAS
 Gender: Female
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_PSYCHIC_TERRAIN
+Starting Status: PSYCHIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 /*
@@ -16907,7 +16907,7 @@ Pic: Pokemon Breeder M
 Gender: Male
 Music: Male
 Double Battle: Yes
-Starting Status: STARTING_STATUS_GRASSY_TERRAIN
+Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Elekid  
@@ -17176,7 +17176,7 @@ Pic: Pokemon Breeder F
 Gender: Female
 Music: Female
 Double Battle: Yes
-Starting Status: STARTING_STATUS_GRASSY_TERRAIN
+Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Budew @ Wide Lens
@@ -17754,7 +17754,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-Starting Status: STARTING_STATUS_RAINBOW_OPPONENT
+Starting Status: RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Samurott-Hisui  
@@ -20320,7 +20320,7 @@ Pic: Battle Girl
 Gender: Female
 Music: Intense
 Double Battle: Yes
-Starting Status: STARTING_STATUS_ELECTRIC_TERRAIN
+Starting Status: ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 
@@ -23229,7 +23229,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
+Starting Status: SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Garbodor @ Black Sludge  
@@ -23282,7 +23282,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
+Starting Status: SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mightyena
@@ -23296,7 +23296,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
+Starting Status: SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Duraludon  
@@ -23348,7 +23348,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
+Starting Status: SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Minior @ Focus Sash  
@@ -23400,7 +23400,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
+Starting Status: SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Tauros-Paldea-Blaze (M) @ Life Orb  
@@ -23509,7 +23509,7 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-Starting Status: STARTING_STATUS_SEA_OF_FIRE_PLAYER
+Starting Status: SEA_OF_FIRE_PLAYER
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Torterra @ Yache Berry  
@@ -24330,7 +24330,7 @@ Pic: Running Triathlete F
 Gender: Female
 Music: Female
 Double Battle: Yes
-Starting Status: STARTING_STATUS_GRASSY_TERRAIN
+Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Munna  
@@ -24353,7 +24353,7 @@ Pic: Psychic F
 Gender: Female
 Music: Intense
 Double Battle: Yes
-Starting Status: STARTING_STATUS_GRASSY_TERRAIN
+Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Munna  
@@ -24393,7 +24393,7 @@ Pic: Battle Girl
 Gender: Female
 Music: Intense
 Double Battle: Yes
-Starting Status: STARTING_STATUS_GRASSY_TERRAIN
+Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Cranidos  
@@ -25635,7 +25635,7 @@ Pic: Leader Flannery
 Gender: Female
 Music: Female
 Double Battle: Yes
-Starting Status: STARTING_STATUS_TRICK_ROOM
+Starting Status: TRICK_ROOM
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Growlithe
@@ -26647,7 +26647,7 @@ Pic: Collector
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-Starting Status: STARTING_STATUS_ELECTRIC_TERRAIN
+Starting Status: ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Blitzle  

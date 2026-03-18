@@ -2450,16 +2450,16 @@ script EggMoveTutor_EventScript_ChooseMon {
 		msgbox(EggMoveTutor_Text_CantTeachEgg, MSGBOX_DEFAULT)
 		goto(EggMoveTutor_EventScript_ChooseMon)
 	}
-	// Check if this Pokemon has egg moves (sets VAR_0x8005 to count, VAR_RESULT to TRUE/FALSE)
-	//special(CheckPartyMonHasScriptEggMoves)
-	//if (var(VAR_RESULT) == FALSE) {
-	//	special(BufferMonNickname)
-	//	msgbox(EggMoveTutor_Text_NoEggMoves, MSGBOX_DEFAULT)
-	//	goto(EggMoveTutor_EventScript_ChooseMon)
-	//}
+	// Check if this Pokemon has egg moves
+	special(CheckPartyMonHasScriptEggMoves)
+	if (var(VAR_RESULT) == FALSE) {
+		special(BufferMonNickname)
+		msgbox(EggMoveTutor_Text_NoEggMoves, MSGBOX_DEFAULT)
+		goto(EggMoveTutor_EventScript_ChooseMon)
+	}
 	// Pokemon has egg moves, proceed to move relearner UI
-	//special(BufferMonNickname)
-	//msgbox(EggMoveTutor_Text_HasEggMoves, MSGBOX_DEFAULT)
+	special(BufferMonNickname)
+	msgbox(EggMoveTutor_Text_HasEggMoves, MSGBOX_DEFAULT)
 	special(TeachScriptEggMoves)
 	waitstate
 	lock

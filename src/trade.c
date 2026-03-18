@@ -4593,10 +4593,8 @@ static void CreateInGameTradeParadoxPokemonInternal(u16 species)
     struct Pokemon *pokemon = &gEnemyParty[0];
     u8 metLocation = METLOC_IN_GAME_TRADE;
 
-    // Create the Pokémon with the player's OT_ID
-    CreateMon(pokemon, species, 70, USE_RANDOM_IVS, TRUE, 0, OT_ID_PLAYER_ID, 0);
+    CreateRandomMon(pokemon, species, 70);
 
-    // Set additional Pokémon data
     SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
     CalculateMonStats(pokemon);
 }
@@ -4606,10 +4604,8 @@ static void CreateInGameTradePastParadoxPokemonInternal(u16 species)
     struct Pokemon *pokemon = &gEnemyParty[0];
     u8 metLocation = METLOC_DISTANT_PAST;
 
-    // Create the Pokémon with the player's OT_ID
-    CreateMon(pokemon, species, 70, USE_RANDOM_IVS, TRUE, 0, OT_ID_PLAYER_ID, 0);
+    CreateRandomMon(pokemon, species, 70);
 
-    // Set additional Pokémon data
     SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
     CalculateMonStats(pokemon);
 }
@@ -4619,10 +4615,8 @@ static void CreateInGameTradeFutureParadoxPokemonInternal(u16 species)
     struct Pokemon *pokemon = &gEnemyParty[0];
     u8 metLocation = METLOC_FAR_FUTURE;
 
-    // Create the Pokémon with the player's OT_ID
-    CreateMon(pokemon, species, 70, USE_RANDOM_IVS, TRUE, 0, OT_ID_PLAYER_ID, 0);
+    CreateRandomMon(pokemon, species, 70);
 
-    // Set additional Pokémon data
     SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
     CalculateMonStats(pokemon);
 }
@@ -4653,8 +4647,7 @@ static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTr
     u8 mailNum;
     struct Pokemon *pokemon = &gEnemyParty[0];
 
-    CreateMon(pokemon, inGameTrade->species, level, USE_RANDOM_IVS, FALSE, 0, OT_ID_PRESET, inGameTrade->otId);
-    //CreateMon(pokemon, inGameTrade->species, level, inGameTrade->personality, OTID_STRUCT_PRESET(inGameTrade->otId)); //new trade script
+    CreateMon(pokemon, inGameTrade->species, level, USE_RANDOM_IVS, OTID_STRUCT_PLAYER_ID);
     GiveMonInitialMoveset(pokemon);
 
 

@@ -16808,8 +16808,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM138"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Fires a beam of steel\n"
-            "from its body.\n"
+            "Fires a beam of\n"
+            "steel from its body.\n"
             "It hurts the user."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,

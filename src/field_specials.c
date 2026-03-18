@@ -4617,7 +4617,7 @@ void CheckPartyMonHasEliteMoves(void)
     if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
         && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
     {
-        gSpecialVar_Result = HasRelearnerEliteMoves(&gPlayerParty[slot]);
+        gSpecialVar_Result = CanBoxMonRelearnMoves(&gPlayerParty[slot].box, MOVE_RELEARNER_ELITE_MOVES);
     }
     else
     {
@@ -4638,22 +4638,13 @@ void TeachEliteMoves(void)
 // Sets VAR_RESULT to TRUE/FALSE
 void CheckPartyMonHasScriptEggMoves(void)
 {
-    u16 species;
-    struct Pokemon *mon;
-
-    if (gSpecialVar_0x8004 < PARTY_SIZE)
+    u8 slot = gSpecialVar_0x8004;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
     {
-        mon = &gPlayerParty[gSpecialVar_0x8004];
-        species = GetMonData(mon, MON_DATA_SPECIES);
-
-        if (species != SPECIES_NONE && species != SPECIES_EGG)
-        {
-            gSpecialVar_Result = HasRelearnerEggMoves(mon);
-        }
-        else
-        {
-            gSpecialVar_Result = FALSE;
-        }
+        gRelearnMode = RELEARN_MODE_EGG_SCRIPT;
+        gSpecialVar_Result = CanBoxMonRelearnMoves(&gPlayerParty[slot].box, MOVE_RELEARNER_EGG_MOVES);
+        gRelearnMode = RELEARN_MODE_NONE;
     }
     else
     {
