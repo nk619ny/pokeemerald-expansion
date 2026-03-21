@@ -1311,7 +1311,7 @@ static bool32 HandleEndTurnThirdEventBlock(enum BattlerId battler)
     return effect;
 }
 
-static bool32 HandleEndTurnFormChangeAbilities(enum BattlerId battler)
+static bool32 HandleEndTurnFormChange(enum BattlerId battler)
 {
     bool32 effect = FALSE;
 
@@ -1319,17 +1319,32 @@ static bool32 HandleEndTurnFormChangeAbilities(enum BattlerId battler)
 
     gBattleStruct->eventState.endTurnBattler++;
 
-    switch (ability)
+    if (TryBattleFormChange(battler, FORM_CHANGE_BATTLE_TURN_END, ability)
+        || TryBattleFormChange(battler, FORM_CHANGE_BATTLE_HP_PERCENT_TURN_END, ability))
     {
-    case ABILITY_POWER_CONSTRUCT:
-    case ABILITY_SCHOOLING:
-    case ABILITY_SHIELDS_DOWN:
-    //case ABILITY_ZEN_MODE:
-    case ABILITY_HUNGER_SWITCH:
-        if (AbilityBattleEffects(ABILITYEFFECT_ENDTURN, battler, ability, MOVE_NONE, TRUE))
-            effect = TRUE;
-    default:
-        break;
+        gBattleScripting.battler = battler;
+        gBattleScripting.abilityPopupOverwrite = ability; // To prevent the new form's ability from pop up
+        switch (ability)
+        {
+        case ABILITY_POWER_CONSTRUCT:
+            BattleScriptExecute(BattleScript_PowerConstruct);
+            break;
+        case ABILITY_HUNGER_SWITCH:
+            BattleScriptExecute(BattleScript_BattlerFormChangeEnd3NoPopup);
+            break;
+        //case ABILITY_ZEN_MODE:
+        //    if (gBattleMons[battler].species == SPECIES_DARMANITAN_ZEN
+        //    || gBattleMons[battler].species == SPECIES_DARMANITAN_GALAR_ZEN)
+        //        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ZEN_MODE_TRIGGERED;
+        //    else
+        //        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ZEN_MODE_ENDED;
+        //    BattleScriptExecute(BattleScript_ZenMode);
+        //    break;
+        default:
+            BattleScriptExecute(BattleScript_BattlerFormChangeEnd2); // Generic animation
+            break;
+        }
+        effect = TRUE;
     }
 
     return effect;
@@ -1474,7 +1489,7 @@ static bool32 (*const sEndTurnEffectHandlers[])(enum BattlerId battler) =
     [ENDTURN_TERRAIN] = HandleEndTurnTerrain,
     [ENDTURN_THIRD_EVENT_BLOCK] = HandleEndTurnThirdEventBlock,
     [ENDTURN_EMERGENCY_EXIT_4] = HandleEndTurnEmergencyExit,
-    [ENDTURN_FORM_CHANGE_ABILITIES] = HandleEndTurnFormChangeAbilities,
+    [ENDTURN_FORM_CHANGE] = HandleEndTurnFormChange,
     [ENDTURN_EJECT_PACK] = HandleEndTurnEjectPack,
     [ENDTURN_DYNAMAX] = HandleEndTurnDynamax,
     [ENDTURN_TRAINER_A_SLIDES] = HandleEndTurnTrainerASlides,

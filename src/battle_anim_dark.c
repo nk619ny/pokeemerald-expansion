@@ -1021,7 +1021,7 @@ void AnimTask_SetGrayscaleOrOriginalPal(u8 taskId)
     enum BattlerId battler;
     bool8 calcSpriteId = FALSE;
     u8 position = B_POSITION_PLAYER_LEFT;
-    enum AnimBattler animBattler = gBattleAnimArgs[0];
+    enum AnimBattler animBattler = cmd->battler;
 
     switch (animBattler)
     {

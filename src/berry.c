@@ -2374,7 +2374,7 @@ static const u8 sBerryMutations[][3] = {
 static u8 GetMutationOutcome(u8 berry1, u8 berry2)
 {
     u8 i;
-    for(i = 0; i < ARRAY_COUNT(sBerryMutations); i++)
+    for (i = 0; i < ARRAY_COUNT(sBerryMutations); i++)
     {
         if ((sBerryMutations[i][0] == berry1 && sBerryMutations[i][1] == berry2)
           ||(sBerryMutations[i][0] == berry2 && sBerryMutations[i][1] == berry1))
@@ -2466,26 +2466,26 @@ static u16 GetBerryPestSpecies(u8 berryId)
 {
 //#if OW_BERRY_PESTS == TRUE
     const struct Berry *berry = GetBerryInfo(berryId);
-    switch(berry->color)
+    switch (berry->color)
     {
-        case BERRY_COLOR_RED:
-            return SPECIES_FLABEBE_RED; //P_FAMILY_LEDYBA ? SPECIES_LEDYBA : SPECIES_NONE;
-            break;
-        case BERRY_COLOR_BLUE:
-            return SPECIES_FLABEBE_BLUE; //P_FAMILY_VOLBEAT_ILLUMISE ? SPECIES_VOLBEAT : SPECIES_NONE;
-            break;
-        case BERRY_COLOR_PURPLE:
-            return SPECIES_FLABEBE_RED; //P_FAMILY_VOLBEAT_ILLUMISE ? SPECIES_ILLUMISE : SPECIES_NONE;
-            break;
-        case BERRY_COLOR_GREEN:
-            return SPECIES_FLABEBE_BLUE; //P_FAMILY_BURMY ? SPECIES_BURMY_PLANT : SPECIES_NONE;
-            break;
-        case BERRY_COLOR_YELLOW:
-            return SPECIES_FLABEBE_YELLOW; //P_FAMILY_COMBEE ? SPECIES_COMBEE : SPECIES_NONE;
-            break;
-        case BERRY_COLOR_PINK:
-            return SPECIES_FLABEBE_ORANGE; //P_FAMILY_SCATTERBUG ? SPECIES_SPEWPA : SPECIES_NONE;
-            break;
+    case BERRY_COLOR_RED:
+        return SPECIES_FLABEBE_RED; //P_FAMILY_LEDYBA ? SPECIES_LEDYBA : SPECIES_NONE;
+        break;
+    case BERRY_COLOR_BLUE:
+        return SPECIES_FLABEBE_BLUE; //P_FAMILY_VOLBEAT_ILLUMISE ? SPECIES_VOLBEAT : SPECIES_NONE;
+        break;
+    case BERRY_COLOR_PURPLE:
+        return SPECIES_FLABEBE_RED; //P_FAMILY_VOLBEAT_ILLUMISE ? SPECIES_ILLUMISE : SPECIES_NONE;
+        break;
+    case BERRY_COLOR_GREEN:
+        return SPECIES_FLABEBE_BLUE; //P_FAMILY_BURMY ? SPECIES_BURMY_PLANT : SPECIES_NONE;
+        break;
+    case BERRY_COLOR_YELLOW:
+        return SPECIES_FLABEBE_YELLOW; //P_FAMILY_COMBEE ? SPECIES_COMBEE : SPECIES_NONE;
+        break;
+    case BERRY_COLOR_PINK:
+        return SPECIES_FLABEBE_ORANGE; //P_FAMILY_SCATTERBUG ? SPECIES_SPEWPA : SPECIES_NONE;
+        break;
     }
 //#endif
     return SPECIES_NONE;
