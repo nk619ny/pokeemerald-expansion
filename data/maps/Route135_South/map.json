@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_ROUTE135_NORTH",
-      "offset": 0,
+      "offset": -16,
       "direction": "up"
     }
   ],

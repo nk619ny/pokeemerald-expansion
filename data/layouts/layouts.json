@@ -9668,8 +9668,8 @@
     {
       "id": "LAYOUT_ROUTE135_NORTH",
       "name": "Route135_North_Layout",
-      "width": 24,
-      "height": 22,
+      "width": 46,
+      "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Glacier",
       "border_filepath": "data/layouts/Route135_North/border.bin",
