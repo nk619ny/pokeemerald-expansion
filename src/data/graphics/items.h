@@ -1029,9 +1029,6 @@ const u16 gItemIconPalette_Laprasite[] = INCBIN_U16("graphics/items/icon_palette
 const u32 gItemIcon_Centiskorite[] = INCBIN_U32("graphics/items/icons/centiskorite.4bpp.lz");
 const u16 gItemIconPalette_Centiskorite[] = INCBIN_U16("graphics/items/icon_palettes/centiskorite.gbapal");
 
-const u32 gItemIcon_Meganiumite[] = INCBIN_U32("graphics/items/icons/meganiumite.4bpp.lz");
-const u16 gItemIconPalette_Meganiumite[] = INCBIN_U16("graphics/items/icon_palettes/meganiumite.gbapal");
-
 const u32 gItemIcon_Typhlosionite[] = INCBIN_U32("graphics/items/icons/typhlosionite.4bpp.lz");
 const u16 gItemIconPalette_Typhlosionite[] = INCBIN_U16("graphics/items/icon_palettes/typhlosionite.gbapal");
 

@@ -1047,8 +1047,6 @@ extern const u32 gItemIcon_Laprasite[];
 extern const u16 gItemIconPalette_Laprasite[];
 extern const u32 gItemIcon_Centiskorite[];
 extern const u16 gItemIconPalette_Centiskorite[];
-extern const u32 gItemIcon_Meganiumite[];
-extern const u16 gItemIconPalette_Meganiumite[];
 extern const u32 gItemIcon_Typhlosionite[];
 extern const u16 gItemIconPalette_Typhlosionite[];
 extern const u32 gItemIcon_Feraligatrite[];
