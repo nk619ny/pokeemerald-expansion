@@ -9675,6 +9675,16 @@
       "border_filepath": "data/layouts/Route135_North/border.bin",
       "blockdata_filepath": "data/layouts/Route135_North/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVE_1F",
+      "name": "IceCave_1F_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Glacier",
+      "border_filepath": "data/layouts/IceCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/IceCave_1F/map.bin"
     }
   ]
 }
