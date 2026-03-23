@@ -6336,7 +6336,7 @@ BattleScript_IlluminateAbilityActivates::
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_ABILITYLOWEREDSURROUNDINGEVASION
 	waitmessage B_WAIT_TIME_LONG
-	return	
+	return
 
 
 

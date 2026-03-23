@@ -3621,8 +3621,9 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         case ABILITY_ILLUMINATE:
             if (shouldAbilityTrigger)
             {
-                //gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                BattleScriptPushCursorAndCallback(BattleScript_IlluminateAbilityActivates);
+                gBattleMons[battler].volatiles.illuminate = TRUE;
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_ILLUMINATE;
+                BattleScriptCall(BattleScript_SwitchInAbilityMsg);
                 effect++;
             }
             break;
@@ -6963,6 +6964,25 @@ static bool32 IsRuinStatusActive(u32 fieldEffect)
             continue;
 
         if (GetBattlerVolatile(battler, fieldEffect))
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static bool32 IsIlluminateOnField(void)
+{
+    bool32 isNeutralizingGasOnField = IsNeutralizingGasOnField();
+    for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
+    {
+        if (gBattleMons[battler].volatiles.gastroAcid)
+            continue;
+        if (GetBattlerHoldEffectIgnoreAbility(battler) != HOLD_EFFECT_ABILITY_SHIELD
+         && isNeutralizingGasOnField
+         && gBattleMons[battler].ability != ABILITY_NEUTRALIZING_GAS)
+            continue;
+
+        if (gBattleMons[battler].volatiles.illuminate)
             return TRUE;
     }
 
@@ -10474,6 +10494,12 @@ bool32 CanMoveSkipAccuracyCalc(enum BattlerId battlerAtk, enum BattlerId battler
         effect = TRUE;
         ability = ABILITY_NO_GUARD;
     }
+    // If the target has Illuminate, moves targeting it always hit (skip accuracy checks).
+    else if (abilityDef == ABILITY_ILLUMINATE
+          && gBattleMons[battlerDef].volatiles.semiInvulnerable != STATE_COMMANDER)
+    {
+        effect = TRUE;
+    }
     // If the target is under the effects of Telekinesis, and the move isn't a OH-KO move, move hits.
     else if (gBattleMons[battlerDef].volatiles.telekinesis
           && !IsSemiInvulnerable(battlerDef, CHECK_ALL)
@@ -10603,6 +10629,10 @@ u32 GetTotalAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
     default:
         break;
     }
+
+    // Field-wide Illuminate accuracy boost
+    if (B_ILLUMINATE_ACC_BOOST > 100 && IsIlluminateOnField())
+        calc = (calc * B_ILLUMINATE_ACC_BOOST) / 100;
 
     if (MoveHasIncreasedAccByTenOnSameType(move) && !IS_BATTLER_OF_TYPE(battlerAtk, GetMoveType(move)))
         calc = (calc * 110) / 100;
@@ -10828,6 +10858,9 @@ void RemoveAbilityFlags(enum BattlerId battler)
         break;
     case ABILITY_BEADS_OF_RUIN:
         gBattleMons[battler].volatiles.beadsOfRuin = FALSE;
+        break;
+    case ABILITY_ILLUMINATE:
+        gBattleMons[battler].volatiles.illuminate = FALSE;
         break;
     default:
        break;
