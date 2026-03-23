@@ -2191,7 +2191,7 @@ static enum MoveEndResult MoveEndAbsorb(void)
     case EFFECT_ABSORB:
     case EFFECT_DREAM_EATER:
         if (gBattleStruct->moveDamage[gBattlerTarget] > 0
-         && IsBattlerTurnDamaged(gBattlerTarget)
+         && IsBattlerTurnDamaged(gBattlerTarget, INCLUDING_SUBSTITUTES)
          && IsBattlerAlive(gBattlerAttacker))
         {
             s32 healAmount = (gBattleStruct->moveDamage[gBattlerTarget] * GetMoveAbsorbPercentage(gCurrentMove) / 100);
@@ -3077,7 +3077,7 @@ static enum MoveEndResult MoveEndMoveBlock(void)
         }
         break;
     case EFFECT_RECOIL:
-        if (IsBattlerTurnDamaged(gBattlerTarget) && IsBattlerAlive(gBattlerAttacker) && gBattleStruct->moveDamage[gBattlerTarget] > 0)
+        if (IsBattlerTurnDamaged(gBattlerTarget, INCLUDING_SUBSTITUTES) && IsBattlerAlive(gBattlerAttacker) && gBattleStruct->moveDamage[gBattlerTarget] > 0)
         {
             enum Ability ability = GetBattlerAbility(gBattlerAttacker);
             if (IsAbilityAndRecord(gBattlerAttacker, ability, ABILITY_ROCK_HEAD)
@@ -3091,7 +3091,7 @@ static enum MoveEndResult MoveEndMoveBlock(void)
         }
         break;
     case EFFECT_CHLOROBLAST:
-        if (IsBattlerTurnDamaged(gBattlerTarget) && IsBattlerAlive(gBattlerAttacker))
+        if (IsBattlerTurnDamaged(gBattlerTarget, INCLUDING_SUBSTITUTES) && IsBattlerAlive(gBattlerAttacker))
         {
             enum Ability ability = GetBattlerAbility(gBattlerAttacker);
             if (IsAbilityAndRecord(gBattlerAttacker, ability, ABILITY_ROCK_HEAD)
@@ -3106,7 +3106,7 @@ static enum MoveEndResult MoveEndMoveBlock(void)
         }
         break;
     case EFFECT_RAPID_SPIN:
-        if (IsBattlerTurnDamaged(gBattlerTarget) && IsBattlerAlive(gBattlerAttacker))
+        if (IsBattlerTurnDamaged(gBattlerTarget, INCLUDING_SUBSTITUTES) && IsBattlerAlive(gBattlerAttacker))
         {
             BattleScriptCall(BattleScript_RapidSpinAway);
             result = MOVEEND_RESULT_RUN_SCRIPT;
@@ -3128,7 +3128,7 @@ static enum MoveEndResult MoveEndMoveBlock(void)
         break;
     case EFFECT_STONE_AXE:
         if (!IsHazardOnSide(side, HAZARDS_STEALTH_ROCK)
-         && IsBattlerTurnDamaged(gBattlerTarget)
+         && IsBattlerTurnDamaged(gBattlerTarget, INCLUDING_SUBSTITUTES)
          && IsBattlerAlive(gBattlerAttacker))
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_POINTEDSTONESFLOAT;
@@ -3139,7 +3139,7 @@ static enum MoveEndResult MoveEndMoveBlock(void)
         break;
     case EFFECT_CEASELESS_EDGE:
         if (gSideTimers[side].spikesAmount < 3
-         && IsBattlerTurnDamaged(gBattlerTarget)
+         && IsBattlerTurnDamaged(gBattlerTarget, INCLUDING_SUBSTITUTES)
          && IsBattlerAlive(gBattlerAttacker))
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SPIKESSCATTERED;
@@ -3417,7 +3417,7 @@ static enum MoveEndResult MoveEndHitEscape(void)
 
     if (GetMoveEffect(gCurrentMove) == EFFECT_HIT_ESCAPE
      && !gBattleStruct->unableToUseMove
-     && IsBattlerTurnDamaged(gBattlerTarget)
+     && IsBattlerTurnDamaged(gBattlerTarget, INCLUDING_SUBSTITUTES)
      && IsBattlerAlive(gBattlerAttacker)
      && !NoAliveMonsForBattlerSide(gBattlerTarget))
     {
@@ -3543,7 +3543,7 @@ static enum MoveEndResult MoveEndThirdMoveBlock(void)
     switch (moveEffect)
     {
     case EFFECT_STEEL_ROLLER:
-        if (gFieldStatuses & STATUS_FIELD_TERRAIN_ANY && IsBattlerTurnDamaged(gBattlerTarget))
+        if (gFieldStatuses & STATUS_FIELD_TERRAIN_ANY && IsBattlerTurnDamaged(gBattlerTarget, INCLUDING_SUBSTITUTES))
         {
             BattleScriptCall(BattleScript_RemoveTerrain);
             result = MOVEEND_RESULT_RUN_SCRIPT;
@@ -3553,7 +3553,7 @@ static enum MoveEndResult MoveEndThirdMoveBlock(void)
         if (gFieldStatuses & STATUS_FIELD_TERRAIN_ANY
          && gLastPrintedMoves[gBattlerAttacker] == gCurrentMove
          && IsBattlerAlive(gBattlerAttacker)
-         && IsBattlerTurnDamaged(gBattlerTarget))
+         && IsBattlerTurnDamaged(gBattlerTarget, INCLUDING_SUBSTITUTES))
         {
             BattleScriptCall(BattleScript_RemoveTerrain);
             result = MOVEEND_RESULT_RUN_SCRIPT;

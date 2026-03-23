@@ -1067,10 +1067,22 @@ static inline bool32 IsBattlerAlive(enum BattlerId battler)
         return TRUE;
 }
 
-static inline bool32 IsBattlerTurnDamaged(enum BattlerId battler)
+enum SubCheck
 {
-    return gSpecialStatuses[battler].damagedByAttack;
+    EXCLUDING_SUBSTITUTES,
+    INCLUDING_SUBSTITUTES
+};
+
+static inline bool32 _IsBattlerTurnDamaged(enum BattlerId battler, enum SubCheck subCheck)
+{
+    return gSpecialStatuses[battler].damagedByAttack || ((subCheck == INCLUDING_SUBSTITUTES) && gBattleStruct->moveDamage[battler] > 0);
 }
+
+// Variadic macro: 1-arg defaults to EXCLUDING_SUBSTITUTES; 2-arg uses specified SubCheck
+#define _ISBTD_1(b) _IsBattlerTurnDamaged(b, EXCLUDING_SUBSTITUTES)
+#define _ISBTD_2(b, s) _IsBattlerTurnDamaged(b, s)
+#define _ISBTD_NARGS(_1, _2, N, ...) N
+#define IsBattlerTurnDamaged(...) _ISBTD_NARGS(__VA_ARGS__, _ISBTD_2, _ISBTD_1)(__VA_ARGS__)
 
 static inline bool32 IsBattlerAtMaxHp(enum BattlerId battler)
 {
