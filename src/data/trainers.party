@@ -565,7 +565,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / T
 
 Tentacool @ Oran Berry
 Ability: Liquid Ooze  
-Ball: Nest Ball
+Ball: Nest
 Level: 12  
 EVs: 48 HP
 Timid Nature  
@@ -577,7 +577,7 @@ IVs: 0 Atk
 
 Toedscool @ Oran Berry  
 Ability: Mycelium Might  
-Ball: Nest Ball
+Ball: Nest
 Level: 12
 EVs: 64 HP 
 Sassy Nature  
@@ -589,7 +589,7 @@ Sassy Nature
 Peeko (Wingull) @ Liechi Berry  
 Ability: Hydration  
 Level: 12  
-Ball: Friend Ball
+Ball: Friend
 EVs: 48 HP
 IVs: 15 Atk
 Jolly Nature  
@@ -1320,7 +1320,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Buzzwole @ Coba Berry  
 Ability: Beast Boost  
-Ball: Beast Ball
+Ball: Beast
 Level: 65
 EVs: 128 HP / 252 Atk / 128 SpD  
 Adamant Nature  
@@ -1331,7 +1331,7 @@ Adamant Nature
 
 Feraligatr @ Feraligite  
 Ability: Intimidate  
-Ball: Great Ball
+Ball: Great
 Level: 65
 EVs: 252 HP / 252 Atk / 4 Spe  
 Adamant Nature  
@@ -1342,7 +1342,7 @@ Adamant Nature
 
 Palafin-Hero @ Muscle Band  
 Ability: Zero to Hero  
-Ball: Great Ball
+Ball: Great
 Level: 65
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
@@ -1353,7 +1353,7 @@ Adamant Nature
 
 Greninja-Ash (M) @ Focus Sash  
 Ability: Battle Bond  
-Ball: Great Ball
+Ball: Great
 Level: 65
 Tera Type: Poison
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -1366,7 +1366,7 @@ Timid Nature
 
 Darmanitan-Galar @ Choice Scarf  
 Ability: Gorilla Tactics  
-Ball: Great Ball
+Ball: Great
 Level: 65
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -1376,7 +1376,7 @@ Jolly Nature
 
 Urshifu-Rapid-Strike @ Assault Vest  
 Ability: Unseen Fist  
-Ball: Great Ball
+Ball: Great
 Level: 65
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -1388,7 +1388,7 @@ Jolly Nature
 /*
 Dracovish @ Choice Scarf  
 Ability: Strong Jaw  
-Ball: Great Ball
+Ball: Great
 Level: 65
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
@@ -1422,7 +1422,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Ninetales-Alola @ Light Clay  
 Level: 55
-Ball: Great Ball
+Ball: Great
 Ability: Snow Warning  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -1435,7 +1435,7 @@ IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground I
 
 Empoleon @ Lum Berry  
 Level: 55
-Ball: Great Ball
+Ball: Great
 Ability: Slush Rush  
 Tera Type: Water  
 EVs: 4 HP / 252 SpA / 252 Spe  
@@ -1448,7 +1448,7 @@ IVs: 0 Atk
 
 Articuno @ Charti Berry  
 Level: 55
-Ball: Great Ball
+Ball: Great
 Ability: Snow Cloak  
 Tera Type: Ice  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -1461,7 +1461,7 @@ IVs: 0 Atk
 
 Castform @ Expert Belt  
 Level: 55
-Ball: Great Ball
+Ball: Great
 Ability: Forecast  
 Tera Type: Normal  
 EVs: 4 Def / 252 SpA / 252 Spe  
@@ -1474,7 +1474,7 @@ IVs: 0 Atk
 
 Quaquaval @ Flying Gem  
 Level: 55
-Ball: Great Ball
+Ball: Great
 Ability: Moxie  
 Tera Type: Water  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -1486,7 +1486,7 @@ Jolly Nature
 
 Heracross @ Heracronite  
 Level: 55
-Ball: Great Ball
+Ball: Great
 Ability: Skill Link  
 Tera Type: Bug  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -1589,7 +1589,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Ace Pokemon
 Kyogre @ Blue Orb  
 Ability: Drizzle
 Level: 76
-Ball: Master Ball
+Ball: Master
 EVs: 252 HP / 160 Def  
 Modest Nature  
 IVs: 0 Atk  
@@ -1601,7 +1601,7 @@ IVs: 0 Atk
 Zapdos  
 Ability: Lightning Rod  
 Level: 76
-Ball: Dive Ball
+Ball: Dive
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -1613,7 +1613,7 @@ IVs: 0 Atk
 Overqwil  
 Ability: Swift Swim  
 Level: 76
-Ball: Dive Ball
+Ball: Dive
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Barb Barrage  
@@ -1624,7 +1624,7 @@ Adamant Nature
 Scizor @ Scizorite  
 Ability: Technician  
 Level: 76
-Ball: Dive Ball
+Ball: Dive
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
 - Fury Cutter  
@@ -1635,7 +1635,7 @@ Adamant Nature
 Zarude  
 Ability: Intimidate  
 Level: 76
-Ball: Dive Ball
+Ball: Dive
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Darkest Lariat  
@@ -1646,7 +1646,7 @@ Jolly Nature
 Basculegion (M) @ Muscle Band
 Ability: Swift Swim  
 Level: 76
-Ball: Dive Ball
+Ball: Dive
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Wave Crash  
@@ -2163,7 +2163,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Gigalith  
 Ability: Sturdy  
 Level: 28
-Ball: Great Ball
+Ball: Great
 EVs: 128 HP
 Adamant Nature  
 - Curse  
@@ -2173,7 +2173,7 @@ Adamant Nature
 
 Golbat @ Eviolite  
 Ability: Inner Focus  
-Ball: Great Ball
+Ball: Great
 Level: 29
 EVs: 164 Atk / 164 Spe  
 Jolly Nature  
@@ -2185,7 +2185,7 @@ Jolly Nature
 Swoobat
 Ability: Unaware  
 Level: 28
-Ball: Great Ball
+Ball: Great
 EVs: 64 SpA / 64 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -2197,7 +2197,7 @@ IVs: 0 Atk
 Beartic  
 Ability: Swift Swim  
 Level: 28
-Ball: Great Ball
+Ball: Great
 EVs: 96 Atk / 64 Spe  
 Adamant Nature  
 - Aqua Jet  
@@ -2208,7 +2208,7 @@ Adamant Nature
 Kleavor  
 Ability: Sharpness  
 Level: 29
-Ball: Great Ball
+Ball: Great
 EVs: 96 Atk / 128 Spe  
 Jolly Nature  
 - X-Scissor  
@@ -2289,7 +2289,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Tornadus (M) @ Wacan Berry
 Level: 55
-Ball: Quick Ball
+Ball: Quick
 Ability: Prankster
 EVs: 4 HP / 196 SpA / 196 Spe
 Timid Nature  
@@ -2301,7 +2301,7 @@ IVs: 0 Atk
 
 Thundurus (M) @ Charti Berry
 Level: 55
-Ball: Quick Ball
+Ball: Quick
 Ability: Dark Clouds
 EVs: 4 HP / 196 SpA / 196 Spe
 Modest Nature 
@@ -2313,7 +2313,7 @@ IVs: 0 Atk
 
 Swampert @ Swampertite  
 Level: 55
-Ball: Dive Ball
+Ball: Dive
 Ability: Swift Swim  
 EVs: 4 HP / 196 Atk / 196 Spe
 Adamant Nature
@@ -2325,7 +2325,7 @@ Adamant Nature
 /*
 Swampert @ Rindo Berry  
 Level: 55
-Ball: Dive Ball
+Ball: Dive
 Ability: Swift Swim
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant Nature
@@ -2337,7 +2337,7 @@ Adamant Nature
 
 Lanturn @ Assault Vest
 Level: 54
-Ball: Dive Ball
+Ball: Dive
 Ability: Volt Absorb  
 Tera Type: Water  
 EVs: 196 HP / 196 SpA
@@ -2349,7 +2349,7 @@ IVs: 0 Atk
 
 Clawitzer @ Sitrus Berry
 Level: 54
-Ball: Dive Ball
+Ball: Dive
 Ability: Mega Launcher  
 Tera Type: Water  
 EVs: 196 HP / 196 SpA / 4 SpD  
@@ -2363,7 +2363,7 @@ IVs: 0 Atk
 /*
 Blastoise @ Blastoisinite
 Level: 55
-Ball: Dive Ball
+Ball: Dive
 Ability: Rain Dish
 EVs: 252 HP / 252 SpA / 4 Spe  
 Modest Nature  
@@ -2376,7 +2376,7 @@ IVs: 0 Atk
 
 Raichu-Alola @ Electric Seed  
 Level: 54
-Ball: Dive Ball
+Ball: Dive
 Ability: Surge Surfer  
 Tera Type: Electric  
 EVs: 196 SpA / 4 SpD / 196 Spe  
@@ -2591,7 +2591,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Swampert @ Swampertite  
 Level: 63
-Ball: Dive Ball
+Ball: Dive
 Ability: Torrent
 EVs: 252 HP / 252 SpA  
 Brave Nature  
@@ -2602,7 +2602,7 @@ Brave Nature
 
 Primarina  
 Level: 63
-Ball: Dive Ball
+Ball: Dive
 Ability: Torrent  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -2614,7 +2614,7 @@ IVs: 0 Atk
 
 Electrode-Hisui  
 Level: 63
-Ball: Dive Ball
+Ball: Dive
 Ability: Soundproof  
 EVs: 192 Atk / 252 SpA / 64 Spe  
 Timid Nature  
@@ -2625,7 +2625,7 @@ Timid Nature
 
 Armaldo  
 Level: 63
-Ball: Dive Ball
+Ball: Dive
 Ability: Battle Armor  
 EVs: 252 HP / 4 Atk / 252 SpA  
 Brave Nature  
@@ -2636,7 +2636,7 @@ Brave Nature
 
 Tentacruel  
 Level: 63
-Ball: Dive Ball
+Ball: Dive
 Ability: Clear Body  
 EVs: 112 Atk / 76 Def / 252 SpA / 68 Spe  
 Hasty Nature  
@@ -2647,7 +2647,7 @@ Hasty Nature
 
 Zarude  
 Level: 63
-Ball: Dive Ball
+Ball: Dive
 Ability: Intimidate
 EVs: 252 Atk / 252 Spe  
 Jolly Nature  
@@ -2667,7 +2667,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Camerupt @ Cameruptite  
 Level: 63
-Ball: Timer Ball
+Ball: Timer
 Ability: Sheer Force  
 EVs: 252 HP / 164 Atk / 96 SpA  
 Quiet Nature  
@@ -2677,7 +2677,7 @@ Quiet Nature
 
 Toxtricity @ Air Balloon  
 Level: 63
-Ball: Timer Ball
+Ball: Timer
 Ability: Punk Rock  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -2689,7 +2689,7 @@ IVs: 0 Atk
 
 Weezing-Galar  
 Level: 63
-Ball: Timer Ball
+Ball: Timer
 Ability: Levitate  
 EVs: 252 HP / 4 Atk / 252 SpA  
 Relaxed Nature  
@@ -2700,7 +2700,7 @@ Relaxed Nature
 
 Golem-Alola @ Air Balloon  
 Level: 63
-Ball: Timer Ball
+Ball: Timer
 Ability: Magnet Pull  
 EVs: 252 HP / 128 Atk / 128 SpA  
 Brave Nature  
@@ -2711,7 +2711,7 @@ Brave Nature
 
 Flygon @ Yache Berry  
 Level: 63
-Ball: Timer Ball
+Ball: Timer
 Ability: Levitate  
 EVs: 196 Atk / 84 Def / 60 SpA / 168 Spe  
 Hasty Nature  
@@ -2722,7 +2722,7 @@ Hasty Nature
 
 Volcanion  
 Level: 63
-Ball: Timer Ball
+Ball: Timer
 Ability: Water Absorb  
 EVs: 252 HP / 4 Atk / 252 SpA  
 Serious Nature  
@@ -2909,7 +2909,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Celebi  
 Ability: Time Traveler
 Level: 70
-Ball: Timer Ball
+Ball: Timer
 Timid Nature
 EVs: 252 SpA / 252 Spe / 4 HP
 IVs: 0 Atk  
@@ -2923,7 +2923,7 @@ Ability: Download
 Level: 70
 Modest Nature
 EVs: 252 HP / 128 Def / 128 SpD
-Ball: Timer Ball
+Ball: Timer
 IVs: 0 Atk  
 - Tri Attack  
 - Electric Terrain  
@@ -2935,7 +2935,7 @@ Ability: Clear Body
 Level: 70
 Adamant Nature
 EVs: 252 HP / 252 Atk / 4 SpD
-Ball: Timer Ball
+Ball: Timer
 - Meteor Mash  
 - Bullet Punch  
 - Psychic Fangs  
@@ -2944,7 +2944,7 @@ Ball: Timer Ball
 Iron Jugulis  
 Ability: Quark Drive  
 Level: 70
-Ball: Timer Ball
+Ball: Timer
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -2956,7 +2956,7 @@ IVs: 0 Atk
 Iron Thorns  
 Ability: Quark Drive  
 Level: 70
-Ball: Timer Ball
+Ball: Timer
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Rock Slide  
@@ -2967,7 +2967,7 @@ Adamant Nature
 Iron Valiant  
 Ability: Quark Drive  
 Level: 70
-Ball: Timer Ball
+Ball: Timer
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -2989,7 +2989,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Miraidon  
 Ability: Hadron Engine  
 Level: 85
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Electric  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -3001,7 +3001,7 @@ Timid Nature
 Iron Jugulis  
 Ability: Quark Drive  
 Level: 85
-Ball: Timer Ball
+Ball: Timer
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -3013,7 +3013,7 @@ IVs: 0 Atk
 Metagross @ Metagrossite  
 Ability: Tough Claws  
 Level: 85
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Steel  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -3025,7 +3025,7 @@ Jolly Nature
 Iron Bundle @ Wide Lens  
 Ability: Quark Drive  
 Level: 85
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Ice  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -3038,7 +3038,7 @@ IVs: 0 Atk
 Iron Hands @ Assault Vest  
 Ability: Quark Drive  
 Level: 85
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Fighting  
 EVs: 248 HP / 252 Atk / 8 SpD  
 Adamant Nature  
@@ -3050,7 +3050,7 @@ Adamant Nature
 Iron Boulder  
 Ability: Quark Drive  
 Level: 85
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Rock  
 EVs: 4 HP / 252 Atk / 252 Spe  
 Adamant Nature  
@@ -3072,7 +3072,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Dialga @ Power Herb  
 Ability: Telepathy  
 Level: 70  
-Ball: Timer Ball
+Ball: Timer
 EVs: 128 SpA / 128 Spe  
 Modest Nature  
 IVs: 0 Atk / 0 Def / 0 HP / 0 SpA / 0 SpD / 0 Spe
@@ -3084,7 +3084,7 @@ IVs: 0 Atk / 0 Def / 0 HP / 0 SpA / 0 SpD / 0 Spe
 Scream Tail @ Light Clay  
 Ability: Protosynthesis  
 Level: 70  
-Ball: Timer Ball
+Ball: Timer
 EVs: 252 HP / 4 SpA / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -3096,7 +3096,7 @@ IVs: 0 Atk
 Tyrantrum  
 Ability: Strong Jaw  
 Level: 70  
-Ball: Timer Ball
+Ball: Timer
 EVs: 128 HP / 252 Atk / 128 SpD  
 Adamant Nature  
 - Dragon Claw  
@@ -3107,7 +3107,7 @@ Adamant Nature
 Archeops  
 Ability: Klutz  
 Level: 70  
-Ball: Timer Ball
+Ball: Timer
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Stone Edge  
@@ -3118,7 +3118,7 @@ Jolly Nature
 Slither Wing  
 Ability: Protosynthesis  
 Level: 70  
-Ball: Timer Ball
+Ball: Timer
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Brick Break  
@@ -3129,7 +3129,7 @@ Jolly Nature
 Great Tusk @ White Herb  
 Ability: Protosynthesis  
 Level: 70  
-Ball: Timer Ball
+Ball: Timer
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Headlong Rush  
@@ -8479,7 +8479,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Tyranitar @ Tyranitarite
 Level: 48
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Sand Stream  
 Tera Type: Rock  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -8491,7 +8491,7 @@ Adamant Nature
 
 Aerodactyl @ Life Orb
 Level: 46
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Rock Head  
 Tera Type: Rock  
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -8503,7 +8503,7 @@ Jolly Nature
 
 Aurorus @ Babiri Berry  
 Level: 47
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Refrigerate  
 Tera Type: Rock  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -8516,7 +8516,7 @@ IVs: 0 Atk
 
 Brambleghast @ Liechi Berry
 Level: 46
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Wind Rider  
 Tera Type: Grass  
 EVs: 128 HP / 128 Atk / 252 Spe  
@@ -8528,7 +8528,7 @@ Jolly Nature
 
 Garganacl @ Rocky Helmet
 Level: 46
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Purifying Salt  
 Tera Type: Rock  
 EVs: 252 HP / 4 Atk / 252 Def  
@@ -8540,7 +8540,7 @@ Impish Nature
 
 Regirock @ Leftovers
 Level: 48
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Solid Rock  
 Tera Type: Rock  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -8563,7 +8563,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Kubfu @ Weakness Policy
 Ability: Inner Focus  
-Ball: Sport Ball
+Ball: Sport
 Level: 25
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Jolly Nature  
@@ -8574,7 +8574,7 @@ Jolly Nature
 
 Tauros-Paldea-Aqua (M) @ Salac Berry  
 Ability: Anger Point  
-Ball: Luxury Ball
+Ball: Luxury
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Raging Bull  
@@ -8584,7 +8584,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Breloom @ Coba Berry
 Ability: Technician 
-Ball : Nest Ball 
+Ball : Nest
 Level: 23 
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bullet Seed  
@@ -8594,7 +8594,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Combusken @ Wise Glasses
 Ability: Speed Boost  
-Ball: Fast Ball
+Ball: Fast
 Level: 25
 Tera Type: Grass
 EVs: 64 SpA
@@ -8605,7 +8605,7 @@ EVs: 64 SpA
 
 Perrserker @ Expert Belt
 Ability: Tough Claws
-Ball: Heavy Ball
+Ball: Heavy
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Adamant Nature  
@@ -8616,7 +8616,7 @@ Adamant Nature
 
 Hariyama @ Sitrus Berry
 Ability: Guts  
-Ball: Level Ball
+Ball: Level
 Level: 24
 EVs: 64 Def / 64 SpD  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -8639,7 +8639,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Rotom-Heat  
 Ability: Levitate 
-Ball: Fast Ball 
+Ball: Fast
 Level: 35
 EVs: 128 HP / 128 SpA 
 Modest Nature  
@@ -8651,7 +8651,7 @@ IVs: 0 Atk
 
 Lanturn @ Rindo Berry
 Ability: Volt Absorb  
-Ball: Fast Ball 
+Ball: Fast
 Level: 34
 EVs: 128 HP / 128 SpA
 Modest Nature
@@ -8663,7 +8663,7 @@ IVs: 0 Atk
 
 Kilowattrel @ Electric Seed  
 Ability: Volt Absorb  
-Ball: Fast Ball 
+Ball: Fast
 Level: 34
 EVs: 128 Atk / 128 Spe  
 Jolly Nature  
@@ -8674,7 +8674,7 @@ Jolly Nature
 
 Regieleki @ Petaya Berry
 Ability: Transistor  
-Ball: Fast Ball 
+Ball: Fast
 Level: 34
 Tera Type: Ice /*IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe / HP Ice IVs for Max Atk */
 EVs: 64 HP / 4 Def / 64 SpA / 4 Spe  
@@ -8686,7 +8686,7 @@ Mild Nature
 
 Manectric @ Manectite  
 Ability: Static   
-Ball: Fast Ball 
+Ball: Fast
 Level: 36
 IVs: 0 Atk  
 EVs: 64 Spe  
@@ -8699,7 +8699,7 @@ Modest Nature
 
 Cryogonal @ Light Clay  
 Ability: Levitate  
-Ball: Fast Ball 
+Ball: Fast
 Level: 35
 EVs: 128 Def / 64 SpD / 64 Spe  
 Calm Nature  
@@ -8732,7 +8732,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Typhlosion @ Quick Claw  
 Level: 43
-Ball: Love Ball
+Ball: Love
 Ability: Flash Fire  
 EVs: 196 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -8744,7 +8744,7 @@ IVs: 0 Atk
 
 Blaziken @ Blazikenite  
 Level: 42
-Ball: Love Ball
+Ball: Love
 Ability: Speed Boost  
 Tera Type: Fire  
 EVs: 196 Atk / 4 SpD / 128 Spe  
@@ -8756,7 +8756,7 @@ Adamant Nature
 
 Ceruledge @ Salac Berry  
 Level: 42
-Ball: Love Ball
+Ball: Love
 Ability: Weak Armor  
 Tera Type: Fire  
 EVs: 196 Atk / 4 SpD / 196 Spe  
@@ -8768,7 +8768,7 @@ Jolly Nature
 
 Lilligant-Hisui (F) @ Coba Berry  
 Level: 42
-Ball: Love Ball
+Ball: Love
 Ability: Chlorophyll  
 Tera Type: Grass  
 EVs: 196 Atk / 4 SpD / 196 Spe  
@@ -8780,7 +8780,7 @@ Adamant Nature
 
 Solrock @ Passho Berry  
 Level: 43
-Ball: Love Ball
+Ball: Love
 Ability: Levitate  
 Tera Type: Rock  
 EVs: 252 HP / 196 Atk / 4 SpD  
@@ -8792,7 +8792,7 @@ Adamant Nature
 
 Entei @ Muscle Band
 Level: 43
-Ball: Love Ball
+Ball: Love
 Ability: Inner Focus  
 Tera Type: Fire  
 EVs: 128 Atk / 4 SpD / 128 Spe  
@@ -8814,7 +8814,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Slaking  
 Ability: Slow Start  
-Ball: Premier Ball
+Ball: Premier
 Level: 14  
 Calm Nature  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -8824,7 +8824,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Smash  
 
 Eevee @ Leppa Berry
-Ball: Premier Ball
+Ball: Premier
 Level: 15
 EVs: 252 HP
 - Trump Card
@@ -8833,7 +8833,7 @@ EVs: 252 HP
 /*
 Skitty  
 Ability: Cute Charm  
-Ball: Premier Ball
+Ball: Premier
 Level: 14 
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fake Out  
@@ -8842,7 +8842,7 @@ IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spinda
 Ability: Contrary  
-Ball: Premier Ball
+Ball: Premier
 Level: 11  
 Quirky Nature 
 EVs: 252 HP
@@ -8853,7 +8853,7 @@ IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Zigzagoon @ Aguav Berry  
 Ability: Gluttony  
-Ball: Premier Ball
+Ball: Premier
 Level: 14  
 EVs: 64 HP
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -8865,7 +8865,7 @@ Adamant Nature
 
 Aipom
 Ability: Run Away
-Ball: Premier Ball
+Ball: Premier
 Level: 13 
 Jolly Nature
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -8877,7 +8877,7 @@ IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Clefairy @ Eviolite  
 Ability: Friend Guard  
-Ball: Premier Ball
+Ball: Premier
 Level: 14  
 EVs: 64 HP
 Calm Nature  
@@ -8902,7 +8902,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Risky
 Aerodactyl @ Expert Belt  
 Level: 59
 Ability: Unnerve  
-Ball: Safari Ball
+Ball: Safari
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Earthquake  
@@ -8913,7 +8913,7 @@ Jolly Nature
 Rotom-Fan @ Light Clay  
 Level: 60
 Ability: Motor Drive  
-Ball: Safari Ball
+Ball: Safari
 EVs: 128 HP / 252 SpA / 128 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -8925,7 +8925,7 @@ IVs: 0 Atk
 Magneton @ Eviolite  
 Level: 59
 Ability: Levitate  
-Ball: Safari Ball
+Ball: Safari
 Tera Type: Ground
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -8938,7 +8938,7 @@ IVs: 0 Atk/* IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground 
 Celesteela @ Muscle Band  
 Level: 60
 Ability: Beast Boost  
-Ball: Safari Ball
+Ball: Safari
 Serious Nature  
 - Earthquake  
 - Rock Slide  
@@ -8948,7 +8948,7 @@ Serious Nature
 Altaria @ Altarianite  
 Level: 60
 Ability: Cloud Nine  
-Ball: Safari Ball
+Ball: Safari
 EVs: 252 HP / 4 Atk / 252 SpD  
 Sassy Nature  
 - Hyper Voice  
@@ -8959,7 +8959,7 @@ Sassy Nature
 Tornadus-Therian (M) @ Sitrus Berry  
 Level: 60
 Ability: Delta Stream  
-Ball: Safari Ball
+Ball: Safari
 EVs: 252 HP / 164 SpA / 92 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -8982,7 +8982,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Slowbro @ Slowbronite  
 Level: 70
-Ball: Moon Ball
+Ball: Moon
 Ability: Shell Armor  
 EVs: 252 HP / 252 SpA  
 Relaxed Nature  
@@ -8994,7 +8994,7 @@ IVs: 0 Atk / 0 Spe
 
 Hatterene (F) @ Mental Herb
 Level: 70
-Ball: Moon Ball
+Ball: Moon
 Ability: Magic Bounce  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
@@ -9006,7 +9006,7 @@ IVs: 0 Atk / 0 Spe
 
 Lunatone @ Psychic Seed  
 Level: 71
-Ball: Moon Ball
+Ball: Moon
 Ability: Psychic Surge  
 EVs: 252 HP / 4 Def / 252 SpA  
 Quiet Nature  
@@ -9018,7 +9018,7 @@ IVs: 0 Atk / 0 Spe
 
 Gothitelle @ Leftovers  
 Level: 70
-Ball: Moon Ball
+Ball: Moon
 Ability: Shadow Tag  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
@@ -9030,7 +9030,7 @@ IVs: 0 Atk / 0 Spe
 
 Wigglytuff @ Expert Belt
 Level: 72
-Ball: Moon Ball
+Ball: Moon
 Ability: Cute Charm
 EVs: 168 Def / 172 SpA / 168 SpD  
 Quiet Nature  
@@ -9042,7 +9042,7 @@ IVs: 0 Atk / 0 Spe
 
 Calyrex-Ice @ White Herb
 Level: 70
-Ball: Moon Ball
+Ball: Moon
 Ability: As One Ice Rider 
 EVs: 252 HP / 252 Atk / 4 SpD  
 Brave Nature  
@@ -9063,7 +9063,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mamoswine @ Life Orb
 Ability: Thick Fat  
-Ball: Great Ball
+Ball: Great
 Level: 77
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -9074,7 +9074,7 @@ Jolly Nature
 
 Regice @ Leftovers
 Ability: Ice Body  
-Ball: Great Ball
+Ball: Great
 Level: 77
 IVs: 0 Atk  
 - Blizzard  
@@ -9084,7 +9084,7 @@ IVs: 0 Atk
 
 Jellicent @ Safety Goggles
 Ability: Water Absorb  
-Ball: Great Ball
+Ball: Great
 Level: 77
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -9095,7 +9095,7 @@ IVs: 0 Atk
 - Shadow Ball  
 
 Weavile @ Ice Gem
-Ball: Great Ball
+Ball: Great
 Level: 77
 Ability: Pickpocket  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -9106,7 +9106,7 @@ Jolly Nature
 - Swords Dance  
 
 Baxcalibur @ Leftovers  
-Ball: Great Ball
+Ball: Great
 Level: 77
 Ability: Ice Body  
 Tera Type: Dragon  
@@ -9119,7 +9119,7 @@ Adamant Nature
 
 Lapras @ Laprasite
 Ability: Water Absorb  
-Ball: Great Ball
+Ball: Great
 Level: 77
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -15481,7 +15481,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Indeedee-F (F) @ Light Clay  
 Ability: Psychic Surge  
 Level: 74
-Ball: Dream Ball
+Ball: Dream
 EVs: 252 HP / 4 Def / 252 SpA  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -15495,7 +15495,7 @@ Magmar @ Eviolite
 Ability: Flame Body  
 Shiny: Yes  
 Level: 73
-Ball: Dream Ball
+Ball: Dream
 EVs: 252 HP / 252 Def / 4 SpD  
 Sassy Nature  
 IVs: 0 Atk / 0 Spe  
@@ -15508,7 +15508,7 @@ Armarouge @ White Herb
 Ability: Flash Fire
 Shiny: Yes  
 Level: 73
-Ball: Dream Ball
+Ball: Dream
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -15520,7 +15520,7 @@ IVs: 0 Atk / 0 Spe
 Torkoal @ Psychic Seed  
 Ability: Drought  
 Level: 73
-Ball: Dream Ball
+Ball: Dream
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -15532,7 +15532,7 @@ IVs: 0 Atk / 0 Spe
 Shiinotic @ Kebia Berry  
 Ability: Effect Spore  
 Level: 73
-Ball: Dream Ball
+Ball: Dream
 EVs: 252 HP / 4 Def / 252 SpA
 Quiet Nature
 IVs: 0 Atk / 0 Spe 
@@ -15544,7 +15544,7 @@ IVs: 0 Atk / 0 Spe
 Stakataka @ Chople Berry  
 Ability: Beast Boost  
 Level: 73
-Ball: Beast Ball
+Ball: Beast
 EVs: 252 HP / 252 Atk / 4 SpD  
 Lonely Nature  
 IVs: 10 Def / 0 Spe  
@@ -15556,7 +15556,7 @@ IVs: 10 Def / 0 Spe
 Camerupt @ Cameruptite  
 Ability: Solid Rock  
 Level: 73
-Ball: Timer Ball
+Ball: Timer
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
@@ -18561,7 +18561,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Tapu Bulu @ Kebia Berry  
 Ability: Grassy Surge  
 Level: 44
-Ball: Safari Ball
+Ball: Safari
 Tera Type: Grass  
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
@@ -18573,7 +18573,7 @@ Adamant Nature
 Meganium @ Big Root  
 Ability: Flower Veil  
 Level: 45
-Ball: Safari Ball
+Ball: Safari
 Tera Type: Grass  
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
@@ -18586,7 +18586,7 @@ IVs: 0 Atk
 Rillaboom @ Rillaboomite  
 Ability: Grassy Surge  
 Level: 46
-Ball: Safari Ball
+Ball: Safari
 Tera Type: Grass  
 EVs: 252 Atk / 128 SpD / 128 Spe  
 Adamant Nature  
@@ -18598,7 +18598,7 @@ Adamant Nature
 Sceptile @ Grassy Seed  
 Ability: Unburden  
 Level: 45
-Ball: Safari Ball
+Ball: Safari
 Tera Type: Rock  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Modest Nature  
@@ -18611,7 +18611,7 @@ IVs: 0 Atk/* IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IV
 Florges-Red (F) @ Grassy Seed  
 Level: 45
 Ability: Flower Veil  
-Ball: Safari Ball
+Ball: Safari
 Tera Type: Ground  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -18624,7 +18624,7 @@ IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground I
 Mudsdale @ Leftovers  
 Level: 45
 Ability: Stamina  
-Ball: Safari Ball
+Ball: Safari
 Tera Type: Ground  
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
@@ -18824,7 +18824,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Groudon @ Red Orb  
 Ability: Drought
 Level: 66
-Ball: Master Ball
+Ball: Master
 Tera Type: Ground  
 EVs: 252 HP / 160 SpD / 96 Spe  
 Brave Nature  
@@ -18836,7 +18836,7 @@ Brave Nature
 Lilligant-Hisui (F) @ Coba Berry  
 Ability: Chlorophyll  
 Level: 66
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Grass  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
@@ -18848,7 +18848,7 @@ Adamant Nature
 Charizard @ Charti Berry  
 Ability: Solar Power  
 Level: 66
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Fire  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -18861,7 +18861,7 @@ IVs: 0 Atk
 Walking Wake @ Expert Belt  
 Ability: Protosynthesis  
 Level: 66
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Electric  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature 
@@ -18874,7 +18874,7 @@ IVs: 0 Atk /*IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe / HP Electri
 Gouging Fire @ Weakness Policy  
 Ability: Protosynthesis  
 Level: 66
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Fire  
 EVs: 128 HP / 128 Atk / 252 Spe  
 Jolly Nature  
@@ -18886,7 +18886,7 @@ Jolly Nature
 Camerupt @ Cameruptite  
 Ability: Magma Armor 
 Level: 66
-Ball: Timer Ball
+Ball: Timer
 Tera Type: Fire  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -18908,7 +18908,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Ninetales @ Wise Glasses
 Level: 45
-Ball: Timer Ball
+Ball: Timer
 Ability: Drought  
 Tera Type: Fire  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -18921,7 +18921,7 @@ IVs: 0 Atk
 
 Venusaur @ Big Root
 Level: 45
-Ball: Timer Ball
+Ball: Timer
 Ability: Chlorophyll  
 Tera Type: Grass  
 EVs: 64 HP / 252 SpA / 192 Spe  
@@ -18934,7 +18934,7 @@ IVs: 0 Atk
 
 Houndoom @ Houndoominite 
 Level: 45 
-Ball: Timer Ball
+Ball: Timer
 Ability: Flash Fire  
 Tera Type: Dark  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -18947,7 +18947,7 @@ IVs: 0 Atk
 
 Heatran @ Shuca Berry  
 Level: 45
-Ball: Timer Ball
+Ball: Timer
 Ability: Flash Fire  
 Tera Type: Grass  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -18960,7 +18960,7 @@ IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe / HP Grass IV
 
 Ursaluna @ Flame Orb  
 Level: 45
-Ball: Timer Ball
+Ball: Timer
 Ability: Guts  
 Tera Type: Ground  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -18972,7 +18972,7 @@ Adamant Nature
 
 Volcanion @ Expert Belt
 Level: 45
-Ball: Timer Ball
+Ball: Timer
 Ability: Water Absorb  
 Tera Type: Fire  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -20919,7 +20919,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Florges-White (F) @ Light Clay  
 Ability: Flower Veil  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -20931,7 +20931,7 @@ IVs: 0 Atk
 Manaphy @ Sitrus Berry  
 Ability: Healer  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -20943,7 +20943,7 @@ IVs: 0 Atk
 Victini @ White Herb  
 Ability: Victory Star  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Victory Dance  
@@ -20954,7 +20954,7 @@ Jolly Nature
 Snorlax @ Iapapa Berry  
 Ability: Gluttony  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 252 Atk / 4 Def  
 Adamant Nature  
 - Body Slam  
@@ -20965,7 +20965,7 @@ Adamant Nature
 Dragapult @ Kings Rock  
 Ability: Clear Body  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Dragon Darts  
@@ -20997,7 +20997,7 @@ Adamant Nature
 Dragapult @ Expert Belt
 Ability: Infiltrator  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -21032,7 +21032,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Florges-White (F) @ Light Clay  
 Ability: Flower Veil  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -21044,7 +21044,7 @@ IVs: 0 Atk
 Shaymin @ Expert Belt  
 Ability: Natural Cure  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 4 HP / 252 SpA / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -21056,7 +21056,7 @@ IVs: 0 Atk
 Manaphy @ Sitrus Berry  
 Ability: Healer  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -21068,7 +21068,7 @@ IVs: 0 Atk
 Snorlax @ Iapapa Berry  
 Ability: Gluttony  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 252 Atk / 4 Def  
 Adamant Nature  
 - Body Slam  
@@ -21079,7 +21079,7 @@ Adamant Nature
 Dragapult @ Kings Rock  
 Ability: Clear Body  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Dragon Darts  
@@ -21111,7 +21111,7 @@ Adamant Nature
 Dragapult @ Expert Belt
 Ability: Infiltrator  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -21145,7 +21145,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Florges-White (F) @ Light Clay  
 Ability: Flower Veil  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -21157,7 +21157,7 @@ IVs: 0 Atk
 Victini @ White Herb  
 Ability: Victory Star  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Victory Dance  
@@ -21168,7 +21168,7 @@ Jolly Nature
 Shaymin @ Expert Belt  
 Ability: Natural Cure  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 4 HP / 252 SpA / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -21180,7 +21180,7 @@ IVs: 0 Atk
 Snorlax @ Iapapa Berry  
 Ability: Gluttony  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 252 Atk / 4 Def  
 Adamant Nature  
 - Body Slam  
@@ -21191,7 +21191,7 @@ Adamant Nature
 Dragapult @ Expert Belt
 Ability: Infiltrator  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -21223,7 +21223,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Florges-White (F) @ Light Clay  
 Ability: Flower Veil  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -21235,7 +21235,7 @@ IVs: 0 Atk
 Manaphy @ Sitrus Berry  
 Ability: Healer  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -21247,7 +21247,7 @@ IVs: 0 Atk
 Victini @ White Herb  
 Ability: Victory Star  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Victory Dance  
@@ -21258,7 +21258,7 @@ Jolly Nature
 Snorlax @ Iapapa Berry  
 Ability: Gluttony  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 252 Atk / 4 Def  
 Adamant Nature  
 - Body Slam  
@@ -21269,7 +21269,7 @@ Adamant Nature
 Dragapult @ Kings Rock  
 Ability: Clear Body  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Dragon Darts  
@@ -21301,7 +21301,7 @@ Adamant Nature
 Dragapult @ White Herb  
 Ability: Infiltrator  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -21335,7 +21335,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Florges-White (F) @ Light Clay  
 Ability: Flower Veil  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -21347,7 +21347,7 @@ IVs: 0 Atk
 Shaymin @ Expert Belt  
 Ability: Natural Cure  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 4 HP / 252 SpA / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -21359,7 +21359,7 @@ IVs: 0 Atk
 Manaphy @ Sitrus Berry  
 Ability: Healer  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -21371,7 +21371,7 @@ IVs: 0 Atk
 Snorlax @ Iapapa Berry  
 Ability: Gluttony  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 252 Atk / 4 Def  
 Adamant Nature  
 - Body Slam  
@@ -21382,7 +21382,7 @@ Adamant Nature
 Dragapult @ Kings Rock  
 Ability: Clear Body  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Dragon Darts  
@@ -21412,7 +21412,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Florges-White (F) @ Light Clay  
 Ability: Flower Veil  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -21424,7 +21424,7 @@ IVs: 0 Atk
 Victini @ White Herb  
 Ability: Victory Star  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Victory Dance  
@@ -21435,7 +21435,7 @@ Jolly Nature
 Shaymin @ Expert Belt  
 Ability: Natural Cure  
 Level: 68
-Ball: Cherish Ball
+Ball: Cherish
 EVs: 4 HP / 252 SpA / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -21447,7 +21447,7 @@ IVs: 0 Atk
 Snorlax @ Iapapa Berry  
 Ability: Gluttony  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 HP / 252 Atk / 4 Def  
 Adamant Nature  
 - Body Slam  
@@ -21458,7 +21458,7 @@ Adamant Nature
 Dragapult @ White Herb  
 Ability: Infiltrator  
 Level: 67
-Ball: Ultra Ball
+Ball: Ultra
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -23564,7 +23564,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gigalith  
 Ability: Sand Stream  
-Ball: Heavy Ball
+Ball: Heavy
 Level: 64
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
@@ -23575,7 +23575,7 @@ Adamant Nature
 
 Landorus (M)  
 Ability: Sand Force  
-Ball: Heavy Ball
+Ball: Heavy
 Level: 64
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -23588,7 +23588,7 @@ IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe / HP Flying I
 
 Steelix @ Steelixite  
 Ability: Sand Force  
-Ball: Heavy Ball
+Ball: Heavy
 Level: 64
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
@@ -23599,7 +23599,7 @@ Adamant Nature
 
 Regirock  
 Ability: Solid Rock  
-Ball: Heavy Ball
+Ball: Heavy
 Level: 64
 EVs: 252 HP / 252 Atk / 4 SpD  
 Impish Nature  
@@ -23610,7 +23610,7 @@ Impish Nature
 
 Excadrill  
 Ability: Sand Rush  
-Ball: Heavy Ball
+Ball: Heavy
 Level: 64
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
@@ -23622,7 +23622,7 @@ Adamant Nature
 /*
 Lycanroc  
 Ability: Sand Rush  
-Ball: Heavy Ball
+Ball: Heavy
 Level: 64
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
@@ -23633,7 +23633,7 @@ Adamant Nature
 
 Gliscor @ Toxic Orb  
 Ability: Poison Heal  
-Ball: Heavy Ball
+Ball: Heavy
 Level: 64 
 EVs: 184 HP / 252 Atk / 72 Spe  
 Adamant Nature  
@@ -24957,7 +24957,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 /*Ninetales @ Tyranitarite
 Level: 48
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Drought  
 Tera Type: Rock  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -24969,7 +24969,7 @@ Adamant Nature
 
 Roaring Moon @ Tyranitarite
 Level: 48
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Protosynthesis  
 Tera Type: Rock  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -24981,7 +24981,7 @@ Adamant Nature
 
 Tyranitar @ Tyranitarite
 Level: 2
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Sand Stream  
 Tera Type: Rock  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -24993,7 +24993,7 @@ Adamant Nature
 
 /*Aerodactyl @ Life Orb
 Level: 48
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Rock Head  
 Tera Type: Rock  
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -25005,7 +25005,7 @@ Jolly Nature
 
 Aurorus @ Babiri Berry  
 Level: 48
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Refrigerate  
 Tera Type: Rock  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -25018,7 +25018,7 @@ IVs: 0 Atk
 
 Brambleghast @ Liechi Berry
 Level: 48
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Wind Rider      
 EVs: 128 HP / 128 Atk / 252 Spe  
 Jolly Nature  
@@ -25026,7 +25026,7 @@ Jolly Nature
 
 Garganacl @ Rocky Helmet
 Level: 2
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Purifying Salt  
 Tera Type: Rock  
 EVs: 252 HP / 4 Atk / 252 Def  
@@ -25038,7 +25038,7 @@ Impish Nature
 
 Regirock @ Leftovers
 Level: 48
-Ball: Heavy Ball
+Ball: Heavy
 Ability: Solid Rock  
 Tera Type: Rock  
 EVs: 252 HP / 252 Atk / 4 SpD  
