@@ -1120,6 +1120,7 @@ static bool32 HandleEndTurnWaterSport(enum BattlerId battler)
     if (gFieldTimers.waterSportTimer > 0 && --gFieldTimers.waterSportTimer == 0)
     {
         gFieldStatuses &= ~STATUS_FIELD_WATERSPORT;
+        gFieldTimers.waterSportFromAbility = FALSE;
         BattleScriptExecute(BattleScript_WaterSportEnds);
         effect = TRUE;
     }
@@ -1136,6 +1137,7 @@ static bool32 HandleEndTurnMudSport(enum BattlerId battler)
     if (gFieldTimers.mudSportTimer > 0 && --gFieldTimers.mudSportTimer == 0)
     {
         gFieldStatuses &= ~STATUS_FIELD_MUDSPORT;
+        gFieldTimers.mudSportFromAbility = FALSE;
         BattleScriptExecute(BattleScript_MudSportEnds);
         effect = TRUE;
     }

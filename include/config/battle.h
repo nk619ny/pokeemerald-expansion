@@ -33,7 +33,7 @@
 #define B_HIDDEN_POWER_DMG          GEN_LATEST // In Gen6+, Hidden Power's base power was set to always be 60. Before, it was determined by the mon's IVs.
 #define B_ROUGH_SKIN_DMG            GEN_LATEST // In Gen4+, Rough Skin contact damage is 1/8th of max HP instead of 1/16th. This will also affect Iron Barbs.
 #define B_KNOCK_OFF_DMG             GEN_LATEST // In Gen6+, Knock Off deals 50% more damage when knocking off an item.
-#define B_SPORT_DMG_REDUCTION       GEN_3 // In Gen5+, Water/Mud Sport reduce Fire/Electric Damage by 67% instead of 50%.
+#define B_SPORT_DMG_REDUCTION       GEN_LATEST // In Gen5+, Water/Mud Sport reduce Fire/Electric Damage by 67% instead of 50%.
 #define B_EXPLOSION_DEFENSE         GEN_LATEST // In Gen5+, Self-Destruct and Explosion don't halve the targets' defense.
 #define B_PARENTAL_BOND_DMG         GEN_LATEST // In Gen7+, Parental Bond's second hit does 25% of the initial hits damage. Before, it did 50%.
 #define B_MULTIPLE_TARGETS_DMG      GEN_LATEST // In Gen4+, damage dealt by moves that hit multiple targets at once is reduced to 75%. In Gen3, it was 50%, unless the move hit the entire field, in which case there was no reduction.
@@ -75,6 +75,8 @@
 #define B_HIDDEN_POWER_COUNTER      GEN_LATEST // Prior to Gen4, Counter and Mirror Coat treat Hidden Power as Physical regardless of type.
 #define B_MODERN_TRICK_CHOICE_LOCK  GEN_LATEST // In Gen5+, if a Choice Item is swapped for a Choice Item, the Trick/Switcheroo user can pick another move, and then they'll be locked into it.
 #define B_PROTECT_FAILURE_RATE      GEN_LATEST // In Gen5+, protect moves fails 1/3 of the time instead of 1/2
+#define B_CUSTOMIZED_ABILITY_SPORT_TIMER     4     // Number of turns Water/Mud Sport lasts when set by Damp/Muddy ability (move-based is always 5).
+#define B_CUSTOMIZED_ABILITY_SPORT_REDUCTION 0.5  // Damage multiplier when Water/Mud Sport is set by Damp/Muddy ability (e.g. 0.75 = 25% reduction). Move-based uses B_SPORT_DMG_REDUCTION.
 #define B_CUSTOMIZED_MOVE_STATS     TRUE       // Customizes move stats by me, the hack creator. This includes changing the base power, accuracy, PP, and priority of moves.
 #define B_CUSTOMIZED_GEN_1_STATS    TRUE       // Customizes Gen 1 mon stats by me, the hack creator.
 #define B_CUSTOMIZED_GEN_2_STATS    TRUE       // Customizes Gen 2 mon stats by me, the hack creator.

@@ -157,6 +157,8 @@ struct FieldTimer
 {
     u16 mudSportTimer;
     u16 waterSportTimer;
+    bool8 mudSportFromAbility;
+    bool8 waterSportFromAbility;
     u16 wonderRoomTimer;
     u16 magicRoomTimer;
     u16 trickRoomTimer;

@@ -3463,26 +3463,30 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         case ABILITY_DAMP:
-            if (!(gFieldStatuses & STATUS_FIELD_WATERSPORT) && !shouldAbilityTrigger)
+            if (!shouldAbilityTrigger)
+                break;
+            if (!(gFieldStatuses & STATUS_FIELD_WATERSPORT))
             {
                 gFieldStatuses |= STATUS_FIELD_WATERSPORT;
-                gFieldTimers.waterSportTimer = 5;
+                gFieldTimers.waterSportTimer = B_CUSTOMIZED_ABILITY_SPORT_TIMER;
+                gFieldTimers.waterSportFromAbility = TRUE;
                 SaveBattlerAttacker(gBattlerAttacker);
                 gBattlerAttacker = battler;
-                //gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                BattleScriptPushCursorAndCallback(BattleScript_DampActivates);
+                BattleScriptCall(BattleScript_DampActivates);
                 effect++;
             }
             break;
         case ABILITY_MUDDY:
-            if (!(gFieldStatuses & STATUS_FIELD_MUDSPORT) && !shouldAbilityTrigger)
+            if (!shouldAbilityTrigger)
+                break;
+            if (!(gFieldStatuses & STATUS_FIELD_MUDSPORT))
             {
                 gFieldStatuses |= STATUS_FIELD_MUDSPORT;
-                gFieldTimers.mudSportTimer = 5;
+                gFieldTimers.mudSportTimer = B_CUSTOMIZED_ABILITY_SPORT_TIMER;
+                gFieldTimers.mudSportFromAbility = TRUE;
                 SaveBattlerAttacker(gBattlerAttacker);
                 gBattlerAttacker = battler;
-                //gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                BattleScriptPushCursorAndCallback(BattleScript_MuddyActivates);
+                BattleScriptCall(BattleScript_MuddyActivates);
                 effect++;
             }
             break;
@@ -4112,7 +4116,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
              && IsBattlerAlive(gBattlerAttacker)
              && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker), move))
             {
-                if ((battler = IsAbilityOnField(ABILITY_DAMP)))
+                if ((battler = IsAbilityOnField(ABILITY_DAMP)) || (battler = IsAbilityOnField(ABILITY_MUDDY)))
                 {
                     gBattleScripting.battler = battler - 1;
                     BattleScriptCall(BattleScript_DampPreventsAftermath);
@@ -6714,9 +6718,19 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct BattleContext *ctx)
     if (IsPsychicTerrainAffected(battlerAtk, ctx->abilityAtk, ctx->holdEffectAtk, ctx->fieldStatuses) && moveType == TYPE_PSYCHIC)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
     if (IsFieldMudSportAffected(ctx->moveType))
-        modifier = uq4_12_multiply(modifier, UQ_4_12(GetConfig(B_SPORT_DMG_REDUCTION) >= GEN_5 ? 0.33 : 0.5));
+    {
+        if (gFieldTimers.mudSportFromAbility)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(B_CUSTOMIZED_ABILITY_SPORT_REDUCTION));
+        else
+            modifier = uq4_12_multiply(modifier, UQ_4_12(GetConfig(B_SPORT_DMG_REDUCTION) >= GEN_5 ? 0.33 : 0.5));
+    }
     if (IsFieldWaterSportAffected(ctx->moveType))
-        modifier = uq4_12_multiply(modifier, UQ_4_12(GetConfig(B_SPORT_DMG_REDUCTION) >= GEN_5 ? 0.33 : 0.5));
+    {
+        if (gFieldTimers.waterSportFromAbility)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(B_CUSTOMIZED_ABILITY_SPORT_REDUCTION));
+        else
+            modifier = uq4_12_multiply(modifier, UQ_4_12(GetConfig(B_SPORT_DMG_REDUCTION) >= GEN_5 ? 0.33 : 0.5));
+    }
 
     // attacker's abilities
     switch (ctx->abilityAtk)

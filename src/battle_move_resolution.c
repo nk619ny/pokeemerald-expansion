@@ -1453,6 +1453,8 @@ static enum CancelerResult CancelerProtean(struct BattleContext *ctx)
 static enum CancelerResult CancelerExplodingDamp(struct BattleContext *ctx)
 {
     u32 dampBattler = IsAbilityOnField(ABILITY_DAMP);
+    if (!dampBattler)
+        dampBattler = IsAbilityOnField(ABILITY_MUDDY);
     if (dampBattler && IsMoveDampBanned(ctx->move))
     {
         gBattleScripting.battler = dampBattler - 1;

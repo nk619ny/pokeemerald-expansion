@@ -6452,9 +6452,8 @@ BattleScript_DampActivates::
 	waitanimation
 	printstring STRINGID_DAMPWEAKENEDFIRE
 	waitmessage B_WAIT_TIME_LONG
-	destroyabilitypopup
 	restoreattacker
-	end3
+	return
 
 BattleScript_MuddyActivates::
 	pause B_WAIT_TIME_SHORT
@@ -6463,9 +6462,8 @@ BattleScript_MuddyActivates::
 	waitanimation
 	printstring STRINGID_MUDDYWEAKENEDELECTRIC
 	waitmessage B_WAIT_TIME_LONG
-	destroyabilitypopup
 	restoreattacker
-	end3
+	return
 
 BattleScript_ElectricSurgeActivates::
 	pause B_WAIT_TIME_SHORT

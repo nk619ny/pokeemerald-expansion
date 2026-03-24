@@ -10328,6 +10328,7 @@ static void Cmd_settypebasedhalvers(void)
                 {
                     gFieldStatuses |= STATUS_FIELD_MUDSPORT;
                     gFieldTimers.mudSportTimer = 5;
+                    gFieldTimers.mudSportFromAbility = FALSE;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEAKEN_ELECTRIC;
                     worked = TRUE;
                 }
@@ -10350,6 +10351,7 @@ static void Cmd_settypebasedhalvers(void)
                 {
                     gFieldStatuses |= STATUS_FIELD_WATERSPORT;
                     gFieldTimers.waterSportTimer = 5;
+                    gFieldTimers.waterSportFromAbility = FALSE;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEAKEN_FIRE;
                     worked = TRUE;
                 }
