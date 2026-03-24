@@ -218,6 +218,7 @@
 #define B_TAUNT_TIMER        5
 #define B_SLOW_START_TIMER   5
 #define B_EMBARGO_TIMER      5
+#define B_FRISK_EMBARGO_TIMER 2 // Number of turns Frisk's Embargo effect lasts on opponents.
 #define B_MAGNET_RISE_TIMER  5
 #define B_TELEKINESIS_TIMER  3
 #define B_HEAL_BLOCK_TIMER   5

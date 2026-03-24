@@ -13546,22 +13546,32 @@ void BS_TryFriskMessage(void)
     {
         gBattlerTarget = gBattleStruct->friskedBattler++;
         if (!IsBattlerAlly(gBattlerAttacker, gBattlerTarget)
-            && IsBattlerAlive(gBattlerTarget)
-            && gBattleMons[gBattlerTarget].item != ITEM_NONE)
+            && IsBattlerAlive(gBattlerTarget))
         {
-            gLastUsedItem = gBattleMons[gBattlerTarget].item;
-            RecordItemEffectBattle(gBattlerTarget, GetBattlerHoldEffectIgnoreNegation(gBattlerTarget));
-            // If Frisk identifies two mons' items, show the pop-up only once.
-            if (gBattleStruct->friskedAbility)
+            // Apply Embargo to all alive opponents, even those without items.
+            if (!gBattleMons[gBattlerTarget].volatiles.embargo)
             {
-                BattleScriptCall(BattleScript_FriskMsg);
+                gBattleMons[gBattlerTarget].volatiles.embargo = TRUE;
+                gBattleMons[gBattlerTarget].volatiles.embargoTimer = B_FRISK_EMBARGO_TIMER;
             }
-            else
+
+            // Show the Frisk message only for opponents holding items.
+            if (gBattleMons[gBattlerTarget].item != ITEM_NONE)
             {
-                gBattleStruct->friskedAbility = TRUE;
-                BattleScriptCall(BattleScript_FriskMsgWithPopup);
+                gLastUsedItem = gBattleMons[gBattlerTarget].item;
+                RecordItemEffectBattle(gBattlerTarget, GetBattlerHoldEffectIgnoreNegation(gBattlerTarget));
+                // If Frisk identifies two mons' items, show the pop-up only once.
+                if (gBattleStruct->friskedAbility)
+                {
+                    BattleScriptCall(BattleScript_FriskMsg);
+                }
+                else
+                {
+                    gBattleStruct->friskedAbility = TRUE;
+                    BattleScriptCall(BattleScript_FriskMsgWithPopup);
+                }
+                return;
             }
-            return;
         }
     }
     gBattleStruct->friskedBattler = 0;

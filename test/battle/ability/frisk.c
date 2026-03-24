@@ -29,9 +29,9 @@ SINGLE_BATTLE_TEST("Frisk triggers in a Single Battle")
         TURN {}
     } SCENE {
         ABILITY_POPUP(player, ABILITY_FRISK);
-        MESSAGE("Furret frisked the opposing Sentret and found its Potion!");
+        MESSAGE("Furret frisked the opposing Sentret and blocked their Potion!");
         ABILITY_POPUP(opponent, ABILITY_FRISK);
-        MESSAGE("The opposing Sentret frisked Furret and found its Potion!");
+        MESSAGE("The opposing Sentret frisked Furret and blocked their Potion!");
     }
 }
 
@@ -54,7 +54,7 @@ DOUBLE_BATTLE_TEST("Frisk triggers for player in a Double Battle after switching
         MESSAGE("The opposing Wynaut used Pound!");
         MESSAGE("Wobbuffet fainted!");
         ABILITY_POPUP(target, ABILITY_FRISK);
-        MESSAGE("Furret frisked the opposing Wynaut and found its Potion!");
+        MESSAGE("Furret frisked the opposing Wynaut and blocked their Potion!");
     }
 }
 
@@ -77,6 +77,43 @@ DOUBLE_BATTLE_TEST("Frisk triggers for opponent in a Double Battle after switchi
         MESSAGE("Wynaut used Pound!");
         MESSAGE("The opposing Wobbuffet fainted!");
         ABILITY_POPUP(target, ABILITY_FRISK);
-        MESSAGE("The opposing Furret frisked Wynaut and found its Potion!");
+        MESSAGE("The opposing Furret frisked Wynaut and blocked their Potion!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Frisk applies Embargo that blocks the opponent's held item")
+{
+    GIVEN {
+        ASSUME(gItemsInfo[ITEM_FOCUS_SASH].holdEffect == HOLD_EFFECT_FOCUS_SASH);
+        PLAYER(SPECIES_FURRET) { Ability(ABILITY_FRISK); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_FISSURE); }
+    } SCENE {
+        ABILITY_POPUP(player, ABILITY_FRISK);
+        MESSAGE("Furret frisked the opposing Wobbuffet and blocked their Focus Sash!");
+        MESSAGE("Furret used Fissure!");
+        HP_BAR(opponent, hp: 0);
+    }
+}
+
+SINGLE_BATTLE_TEST("Frisk Embargo wears off after 2 turns")
+{
+    GIVEN {
+        ASSUME(gItemsInfo[ITEM_FOCUS_SASH].holdEffect == HOLD_EFFECT_FOCUS_SASH);
+        PLAYER(SPECIES_FURRET) { Ability(ABILITY_FRISK); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+    } WHEN {
+        TURN {}
+        TURN {}
+        TURN { MOVE(player, MOVE_FISSURE); }
+    } SCENE {
+        ABILITY_POPUP(player, ABILITY_FRISK);
+        MESSAGE("Furret frisked the opposing Wobbuffet and blocked their Focus Sash!");
+        // Embargo wears off after 2 turns.
+        MESSAGE("The opposing Wobbuffet can use items again!");
+        // Focus Sash should now activate.
+        MESSAGE("Furret used Fissure!");
+        MESSAGE("The opposing Wobbuffet hung on using its Focus Sash!");
     }
 }
