@@ -333,7 +333,7 @@ enum __attribute__((packed)) BattleMoveEffects
     EFFECT_SMACK_DOWN,
     EFFECT_LIFE_DEW,
     EFFECT_ICE_SPINNER, // Removes terrain unless attacker is removed from field either by fainting or ejected out
-    EFFECT_STEEL_ROLLER, // Will fail if there is no terrain up but removes it regardless if attacker is removed from field or not
+    EFFECT_STEEL_ROLLER, // Doubles power if terrain is up, removes terrain regardless if attacker is removed from field or not
     EFFECT_STONE_AXE, // Not to be confused with MOVE_EFFECT_STEALTH_ROCK. They have two different activation timings.
     EFFECT_CEASELESS_EDGE, // Same applies to spikes
     EFFECT_SPECIES_POWER_OVERRIDE, // Uses argument field to for the species, power and (number of hits, used only for multi hit moves)

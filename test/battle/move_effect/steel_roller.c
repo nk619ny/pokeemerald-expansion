@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Steel Roller removes Terrain if user is switched out due to 
     }
 }
 
-SINGLE_BATTLE_TEST("Steel Roller will fail if there is no Terrain")
+SINGLE_BATTLE_TEST("Steel Roller does not fail if there is no Terrain")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
@@ -47,29 +47,38 @@ SINGLE_BATTLE_TEST("Steel Roller will fail if there is no Terrain")
     } WHEN {
         TURN { MOVE(opponent, MOVE_STEEL_ROLLER); }
     } SCENE {
-        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_ROLLER, opponent);
-        MESSAGE("The opposing Wobbuffet used Steel Roller!");
-        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_ROLLER, opponent);
     }
 }
 
-AI_SINGLE_BATTLE_TEST("Steel Roller wont be chosen by AI if there is no terrain on the field")
+SINGLE_BATTLE_TEST("Steel Roller doubles its power if terrain is up")
 {
-    enum Move move;
+    s16 dmgWithTerrain, dmgWithoutTerrain;
 
-    PARAMETRIZE { move = MOVE_ELECTRIC_TERRAIN; }
-    PARAMETRIZE { move = MOVE_NONE; }
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_STEEL_ROLLER); }
+        TURN { MOVE(player, MOVE_ELECTRIC_TERRAIN); MOVE(opponent, MOVE_STEEL_ROLLER); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_ROLLER, opponent);
+        HP_BAR(player, captureDamage: &dmgWithoutTerrain);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ELECTRIC_TERRAIN, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_STEEL_ROLLER, opponent);
+        HP_BAR(player, captureDamage: &dmgWithTerrain);
+    } THEN {
+        EXPECT_MUL_EQ(dmgWithoutTerrain, UQ_4_12(2.0), dmgWithTerrain);
+    }
+}
 
+AI_SINGLE_BATTLE_TEST("Steel Roller can be chosen by AI even without terrain on the field")
+{
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_STEEL_ROLLER, MOVE_ICE_SHARD); }
     } WHEN {
-        if (move == MOVE_ELECTRIC_TERRAIN) {
-            TURN { MOVE(player, MOVE_ELECTRIC_TERRAIN); EXPECT_MOVE(opponent, MOVE_ICE_SHARD); }
-            TURN { EXPECT_MOVE(opponent, MOVE_STEEL_ROLLER); }
-        } else {
-            TURN { EXPECT_MOVE(opponent, MOVE_ICE_SHARD); }
-        }
+        TURN { EXPECT_MOVES(opponent, MOVE_STEEL_ROLLER, MOVE_ICE_SHARD); }
     }
 }

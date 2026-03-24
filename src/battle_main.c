@@ -4865,6 +4865,12 @@ s32 GetBattleMovePriority(enum BattlerId battler, enum Ability ability, enum Mov
     {
         priority++;
     }
+    else if (GetMoveEffect(move) == EFFECT_MAGNET_RISE
+          && IsElectricTerrainAffected(battler, ability, GetBattlerHoldEffect(battler), gFieldStatuses)
+          && GetActiveGimmick(gBattlerAttacker) != GIMMICK_DYNAMAX && !IsGimmickSelected(battler, GIMMICK_DYNAMAX))
+    {
+        priority++;
+    }
     else if (ability == ABILITY_TRIAGE && IsHealingMove(move))
     {
         priority += 3;

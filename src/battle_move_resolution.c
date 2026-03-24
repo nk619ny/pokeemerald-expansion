@@ -1204,8 +1204,6 @@ static enum CancelerResult CancelerMoveFailure(struct BattleContext *ctx)
             battleScript = BattleScript_ButItFailed;
         break;
     case EFFECT_STEEL_ROLLER:
-        if (!(gFieldStatuses & STATUS_FIELD_TERRAIN_ANY))
-            battleScript = BattleScript_ButItFailed;
         break;
     case EFFECT_STOCKPILE:
         if (gBattleMons[ctx->battlerAtk].volatiles.stockpileCounter >= 3)

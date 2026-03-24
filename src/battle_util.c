@@ -6695,6 +6695,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct BattleContext *ctx)
             && CanBattlerGetOrLoseItem(battlerDef, battlerAtk, gBattleMons[battlerDef].item))
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case EFFECT_STEEL_ROLLER:
+        if (ctx->fieldStatuses & STATUS_FIELD_TERRAIN_ANY)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
+        break;
     default:
         break;
     }

@@ -2713,9 +2713,16 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
         break;
     case EFFECT_STEEL_ROLLER:
-        if (!(gFieldStatuses & STATUS_FIELD_TERRAIN_ANY)
-         || (HasPartner(battlerAtk) && AreMovesEquivalent(battlerAtk, BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove)))
-            ADJUST_SCORE(-10);
+        {
+            u32 terrain = gFieldStatuses & STATUS_FIELD_TERRAIN_ANY;
+            if (terrain)
+            {
+                if (ShouldClearFieldStatus(battlerAtk, terrain))
+                    ADJUST_SCORE(GOOD_EFFECT);
+                if (ShouldSetFieldStatus(battlerDef, terrain))
+                    ADJUST_SCORE(DECENT_EFFECT);
+            }
+        }
         break;
     case EFFECT_PLEDGE:
         if (hasPartner && gBattleMons[BATTLE_PARTNER(battlerAtk)].hp > 0)

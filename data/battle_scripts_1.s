@@ -1044,10 +1044,19 @@ BattleScript_EffectMagneticFlux::
 	savetarget
 	setbyte gBattleCommunication, 0
 BattleScript_EffectMagneticFluxStart:
-	jumpifability BS_TARGET, ABILITY_MINUS, BattleScript_EffectMagneticFluxCheckStats
-	jumpifability BS_TARGET, ABILITY_PLUS, BattleScript_EffectMagneticFluxCheckStats
+	@ Check Plus/Minus first - gets Def+SpDef
+	jumpifability BS_TARGET, ABILITY_MINUS, BattleScript_EffectMagneticFluxCheckDefSpDef
+	jumpifability BS_TARGET, ABILITY_PLUS, BattleScript_EffectMagneticFluxCheckDefSpDef
+	@ Not Plus/Minus - check if Electric type
+	jumpiftype BS_TARGET, TYPE_ELECTRIC, BattleScript_EffectMagneticFluxElectricType
+	@ Neither Plus/Minus nor Electric type - skip
 	goto BattleScript_EffectMagneticFluxLoop
-BattleScript_EffectMagneticFluxCheckStats:
+BattleScript_EffectMagneticFluxElectricType:
+	@ Electric type - check terrain for Def+SpDef vs SpDef only
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_ELECTRIC_TERRAIN, BattleScript_EffectMagneticFluxCheckDefSpDef
+	@ No electric terrain - SpDef only
+	goto BattleScript_EffectMagneticFluxSpDefOnly
+BattleScript_EffectMagneticFluxCheckDefSpDef:
 	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_EffectMagneticFluxTryDef
 	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_EffectMagneticFluxLoop
 BattleScript_EffectMagneticFluxTryDef:
@@ -1062,6 +1071,19 @@ BattleScript_EffectMagneticFluxSkipAnim:
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_EffectMagneticFluxTrySpDef:
+	setstatchanger STAT_SPDEF, 1, FALSE
+	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_EffectMagneticFluxLoop
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_EffectMagneticFluxLoop
+	addbyte gBattleCommunication, 1
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_EffectMagneticFluxLoop
+BattleScript_EffectMagneticFluxSpDefOnly:
+	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_EffectMagneticFluxLoop
+	jumpifbyte CMP_NOT_EQUAL, gBattleCommunication, 0, BattleScript_EffectMagneticFluxSpDefOnlySkipAnim
+	attackanimation
+	waitanimation
+BattleScript_EffectMagneticFluxSpDefOnlySkipAnim:
 	setstatchanger STAT_SPDEF, 1, FALSE
 	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_EffectMagneticFluxLoop
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_EffectMagneticFluxLoop
