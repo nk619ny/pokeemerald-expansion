@@ -3609,6 +3609,18 @@ Jolly Nature
 - Tailwind  
 - Taunt  
 
+Umbreon @ Leftovers  
+Ability: Dark Aura  
+Tera Type: Dark  
+EVs: 252 HP / 252 Def / 4 SpD  
+Calm Nature  
+Level: 53
+IVs: 0 Atk  
+- Snarl  
+- Lunar Blessing  
+- Protect  
+- Reflect
+
 Absol @ Absolite  
 Level: 53
 Ability: Justified  
@@ -3629,18 +3641,6 @@ IVs: 0 Atk
 - Shadow Ball  
 - Sludge Bomb  
 - Nasty Plot  
-
-Umbreon @ Leftovers  
-Ability: Dark Aura  
-Tera Type: Dark  
-EVs: 252 HP / 252 Def / 4 SpD  
-Calm Nature  
-Level: 53
-IVs: 0 Atk  
-- Snarl  
-- Lunar Blessing  
-- Protect  
-- Reflect
 
 /*
 Yveltal  
