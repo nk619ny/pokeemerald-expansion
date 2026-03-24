@@ -10631,6 +10631,9 @@ u32 GetTotalAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
         buff = MAX_STAT_STAGE;
 
     moveAcc = GetMoveAccuracy(move);
+    // Check Dark Void accuracy based on species.
+    if (move == MOVE_DARK_VOID && gBattleMons[battlerAtk].species == SPECIES_DARKRAI)
+        moveAcc = 80;
     // Check Thunder and Hurricane on sunny weather.
     if (IsBattlerWeatherAffected(battlerDef, B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))
         moveAcc = 50;
