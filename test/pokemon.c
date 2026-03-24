@@ -26,7 +26,7 @@ TEST("Nature independent from Hidden Nature")
     EXPECT_EQ(GetMonData(&mon, MON_DATA_HIDDEN_NATURE), hiddenNature);
 }
 
-TEST("Terastallization type defaults to primary or secondary type")
+TEST("Terastallization type defaults to a random non-normal type")
 {
     u32 i;
     enum Type teraType;
@@ -34,8 +34,7 @@ TEST("Terastallization type defaults to primary or secondary type")
     for (i = 0; i < 128; i++) PARAMETRIZE {}
     CreateRandomMonWithIVs(&mon, SPECIES_PIDGEY, 100, 0);
     teraType = GetMonData(&mon, MON_DATA_TERA_TYPE);
-    EXPECT(teraType == GetSpeciesType(SPECIES_PIDGEY, 0)
-        || teraType == GetSpeciesType(SPECIES_PIDGEY, 1));
+    EXPECT(teraType != TYPE_NONE && teraType != TYPE_NORMAL);
 }
 
 TEST("Terastallization type can be set to any type except TYPE_NONE")
@@ -52,7 +51,7 @@ TEST("Terastallization type can be set to any type except TYPE_NONE")
     EXPECT_EQ(teraType, GetMonData(&mon, MON_DATA_TERA_TYPE));
 }
 
-TEST("Terastallization type is reset to the default types when setting Tera Type back to TYPE_NONE")
+TEST("Terastallization type is reset to personality-based type when setting Tera Type back to TYPE_NONE")
 {
     u32 i;
     enum Type teraType, typeNone;
@@ -64,12 +63,9 @@ TEST("Terastallization type is reset to the default types when setting Tera Type
     CreateRandomMonWithIVs(&mon, SPECIES_PIDGEY, 100, 0);
     SetMonData(&mon, MON_DATA_TERA_TYPE, &teraType);
     EXPECT_EQ(teraType, GetMonData(&mon, MON_DATA_TERA_TYPE));
-    if (typeNone == TYPE_NONE)
-        typeNone = GetTeraTypeFromPersonality(&mon);
     SetMonData(&mon, MON_DATA_TERA_TYPE, &typeNone);
     typeNone = GetMonData(&mon, MON_DATA_TERA_TYPE);
-    EXPECT(typeNone == GetSpeciesType(SPECIES_PIDGEY, 0)
-        || typeNone == GetSpeciesType(SPECIES_PIDGEY, 1));
+    EXPECT_EQ(typeNone, GetTeraTypeFromPersonality(&mon));
 }
 
 TEST("Shininess independent from PID and OTID")

@@ -2878,10 +2878,9 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
                 {
                     retVal = gSpeciesInfo[substruct0->species].forceTeraType;
                 }
-                else if (substruct0->teraType == TYPE_NONE) // Tera Type hasn't been modified so we can just use the personality
+                else if (substruct0->teraType == TYPE_NONE)
                 {
-                    const enum Type *types = gSpeciesInfo[substruct0->species].types;
-                    retVal = (boxMon->personality & 0x1) == 0 ? types[0] : types[1];
+                    retVal = GetTeraTypeFromPersonalityValue(boxMon->personality);
                 }
                 else
                 {
@@ -7671,31 +7670,20 @@ bool32 IsSpeciesForeignRegionalForm(u32 species, u32 currentRegion)
     return FALSE;
 }
 
-//u32 GetTeraTypeFromPersonality(struct Pokemon *mon)
-//{
-//    const u8 *types = gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].types;
-//    return (GetMonData(mon, MON_DATA_PERSONALITY) & 0x1) == 0 ? types[0] : types[1];
-//}
-
-// Add this array somewhere accessible (static/global is fine)
-static const u8 sNonNormalTypes[] = {
+static const enum Type sNonNormalTypes[] = {
     TYPE_FIGHTING, TYPE_FLYING, TYPE_POISON, TYPE_GROUND, TYPE_ROCK,
     TYPE_BUG, TYPE_GHOST, TYPE_STEEL, TYPE_FIRE, TYPE_WATER,
     TYPE_GRASS, TYPE_ELECTRIC, TYPE_PSYCHIC, TYPE_ICE, TYPE_DRAGON,
-    TYPE_DARK, TYPE_FAIRY
-    // Add any custom types here, but DO NOT include TYPE_NORMAL
+    TYPE_DARK, TYPE_FAIRY,
 };
 
-#define NUM_NON_NORMAL_TYPES (sizeof(sNonNormalTypes) / sizeof(sNonNormalTypes[0]))
+#define NUM_NON_NORMAL_TYPES ARRAY_COUNT(sNonNormalTypes)
 
-// Core helper: derive tera type from a raw personality value
 enum Type GetTeraTypeFromPersonalityValue(u32 personality)
 {
-    u32 idx = personality % NUM_NON_NORMAL_TYPES;
-    return sNonNormalTypes[idx];
+    return sNonNormalTypes[personality % NUM_NON_NORMAL_TYPES];
 }
 
-// Wrapper for use with a Pokemon struct
 enum Type GetTeraTypeFromPersonality(struct Pokemon *mon)
 {
     u32 personality = GetMonData(mon, MON_DATA_PERSONALITY);

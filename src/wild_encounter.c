@@ -880,15 +880,6 @@ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
                         TryGenerateWildMon(gWildMonHeaders[headerId].encounterTypes[timeOfDay].landMonsInfo, WILD_AREA_LAND, WILD_CHECK_KEEN_EYE);
                         gEnemyParty[1] = mon1;
 
-                        // Set random Tera Types for both wild Pokémon
-                        {
-                            u32 teraType0 = GetTeraTypeFromPersonality(&gEnemyParty[0]);
-                            SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType0);
-
-                            u32 teraType1 = GetTeraTypeFromPersonality(&gEnemyParty[1]);
-                            SetMonData(&gEnemyParty[1], MON_DATA_TERA_TYPE, &teraType1);
-                        }
-
                         BattleSetup_StartDoubleWildBattle();
                     }
                     else
@@ -935,15 +926,6 @@ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
                         TryGenerateWildMon(gWildMonHeaders[headerId].encounterTypes[timeOfDay].waterMonsInfo, WILD_AREA_WATER, WILD_CHECK_KEEN_EYE);
                         gEnemyParty[1] = mon1;
 
-                        // Set random Tera Types for both wild Pokémon
-                        {
-                            u32 teraType0 = GetTeraTypeFromPersonality(&gEnemyParty[0]);
-                            SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType0);
-
-                            u32 teraType1 = GetTeraTypeFromPersonality(&gEnemyParty[1]);
-                            SetMonData(&gEnemyParty[1], MON_DATA_TERA_TYPE, &teraType1);
-                        }
-
                         BattleSetup_StartDoubleWildBattle();
                     }
                     else
@@ -984,18 +966,6 @@ void RockSmashWildEncounter(void)
                 struct Pokemon mon1 = gEnemyParty[0];
                 TryGenerateWildMon(wildPokemonInfo, WILD_AREA_ROCKS, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE);
                 gEnemyParty[1] = mon1;
-
-
-
-                // Set random Tera Types for both wild Pokémon
-                {
-                    u32 teraType0 = GetTeraTypeFromPersonality(&gEnemyParty[0]);
-                    SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType0);
-
-                    u32 teraType1 = GetTeraTypeFromPersonality(&gEnemyParty[1]);
-                    SetMonData(&gEnemyParty[1], MON_DATA_TERA_TYPE, &teraType1);
-                }
-
 
                 BattleSetup_StartDoubleWildBattle();
                 gSpecialVar_Result = TRUE;
