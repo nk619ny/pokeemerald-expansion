@@ -1009,24 +1009,34 @@ BattleScript_EffectPowder::
 
 BattleScript_EffectAromaticMist::
 	attackcanceler
-	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_ButItFailed
-	jumpiftargetally BattleScript_EffectAromaticMistWorks
-	goto BattleScript_ButItFailed
-BattleScript_EffectAromaticMistWorks:
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_MISTY_TERRAIN, BattleScript_EffectAromaticMistMistyTerrain
 	setstatchanger STAT_SPDEF, 1, FALSE
-	statbuffchange BS_TARGET, STAT_CHANGE_ONLY_CHECKING, BattleScript_EffectAromaticMistWontGoHigher
+	goto BattleScript_EffectAromaticMistApply
+BattleScript_EffectAromaticMistMistyTerrain:
+	setstatchanger STAT_SPDEF, 2, FALSE
+BattleScript_EffectAromaticMistApply:
+	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_ONLY_CHECKING, BattleScript_EffectAromaticMistWontGoHigher
+	jumpifbyte CMP_NOT_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_EffectAromaticMistAttackAnim
+	pause B_WAIT_TIME_SHORT
+	setmoveresultflags MOVE_RESULT_MISSED
+	goto BattleScript_EffectAromaticMistPrintString
+BattleScript_EffectAromaticMistAttackAnim:
 	attackanimation
 	waitanimation
 	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_EffectAromaticMistEnd
+BattleScript_EffectAromaticMistPrintString:
+	saveattacker
+	copybyte gBattlerAttacker, gBattlerTarget
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
+	restoreattacker
 BattleScript_EffectAromaticMistEnd:
 	goto BattleScript_MoveEnd
 BattleScript_EffectAromaticMistWontGoHigher:
 	pause B_WAIT_TIME_SHORTEST
 	printstring STRINGID_TARGETSTATWONTGOHIGHER
 	waitmessage B_WAIT_TIME_LONG
-	setmoveresultflags MOVE_RESULT_MISSED @ TODO: Is this even necessary?
+	setmoveresultflags MOVE_RESULT_MISSED
 	goto BattleScript_EffectAromaticMistEnd
 
 BattleScript_EffectMagneticFlux::
@@ -1184,13 +1194,23 @@ BattleScript_RototillerLoop:
 	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPATK, MAX_STAT_STAGE, BattleScript_RototillerCantRaiseMultipleStats
 BattleScript_RototillerCheckAffected:
 	jumpifmoveresultflags MOVE_RESULT_NO_EFFECT, BattleScript_EffectRototillerGetTarget
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_GRASSY_TERRAIN, BattleScript_RototillerGrassyTerrainAtk
 	setstatchanger STAT_ATK, 1, FALSE
+	goto BattleScript_RototillerApplyAtk
+BattleScript_RototillerGrassyTerrainAtk:
+	setstatchanger STAT_ATK, 2, FALSE
+BattleScript_RototillerApplyAtk:
 	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_RototillerTrySpAtk, BIT_SPATK
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_RototillerTrySpAtk
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_RototillerTrySpAtk::
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_GRASSY_TERRAIN, BattleScript_RototillerGrassyTerrainSpAtk
 	setstatchanger STAT_SPATK, 1, FALSE
+	goto BattleScript_RototillerApplySpAtk
+BattleScript_RototillerGrassyTerrainSpAtk:
+	setstatchanger STAT_SPATK, 2, FALSE
+BattleScript_RototillerApplySpAtk:
 	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_EffectRototillerMoves
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_EffectRototillerMoves
 	printfromtable gStatUpStringIds
