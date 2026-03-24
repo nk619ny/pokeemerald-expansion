@@ -87,8 +87,7 @@ WILD_BATTLE_TEST("Arena Trap prevents switching but Run Away allows fleeing")
         TURN { MOVE(player, MOVE_CELEBRATE); }
     } THEN {
         enum BattlerId battler = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-        enum BattlerId trapper = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-        EXPECT_EQ(IsAbilityPreventingEscape(battler), trapper + 1);
+        EXPECT_EQ(IsAbilityPreventingEscape(battler), 0);
         EXPECT_EQ(IsRunningFromBattleImpossible(battler), BATTLE_RUN_SUCCESS);
     }
 }

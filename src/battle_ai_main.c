@@ -7054,8 +7054,6 @@ static s32 AI_Roaming(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum
 
     if (AI_CanBattlerEscape(battlerAtk))
         roamerCanFlee = TRUE;
-    else if (gAiLogicData->abilities[battlerAtk] == ABILITY_RUN_AWAY)
-        roamerCanFlee = TRUE;
     else if (gAiLogicData->holdEffects[battlerAtk] == HOLD_EFFECT_CAN_ALWAYS_RUN)
         roamerCanFlee = TRUE;
 

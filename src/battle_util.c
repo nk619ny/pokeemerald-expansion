@@ -677,7 +677,6 @@ void HandleAction_Run(void)
         else
         {
             if (GetBattlerHoldEffect(gBattlerAttacker) != HOLD_EFFECT_CAN_ALWAYS_RUN
-             && GetBattlerAbility(gBattlerAttacker) != ABILITY_RUN_AWAY
              && !CanBattlerEscape(gBattlerAttacker))
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ATTACKER_CANT_ESCAPE;
@@ -5140,6 +5139,8 @@ u32 IsAbilityPreventingEscape(enum BattlerId battler)
 {
     if (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return 0;
+    if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
+        return 0;
 
     bool32 isBattlerGrounded = IsBattlerGrounded(battler, GetBattlerAbility(battler), GetBattlerHoldEffect(battler));
     for (enum BattlerId battlerDef = 0; battlerDef < gBattlersCount; battlerDef++)
@@ -5165,11 +5166,13 @@ u32 IsAbilityPreventingEscape(enum BattlerId battler)
     return 0;
 }
 
-bool32 CanBattlerEscape(enum BattlerId battler) // no ability check
+bool32 CanBattlerEscape(enum BattlerId battler)
 {
     if (gBattleStruct->battlerState[battler].commanderSpecies != SPECIES_NONE)
         return FALSE;
     else if (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
+        return TRUE;
+    else if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return TRUE;
     else if (gBattleMons[battler].volatiles.escapePrevention)
         return FALSE;

@@ -3097,6 +3097,7 @@ BattleScript_EffectMeanLook::
 	jumpifgenconfiglowerthan CONFIG_B_GHOSTS_ESCAPE, GEN_6, BattleScript_EffectMeanLookGen5
 	jumpiftype BS_TARGET, TYPE_GHOST, BattleScript_ButItFailed
 BattleScript_EffectMeanLookGen5:
+	jumpifability BS_TARGET, ABILITY_RUN_AWAY, BattleScript_ButItFailed
 	attackanimation
 	waitanimation
 	seteffectprimary BS_ATTACKER, BS_TARGET, MOVE_EFFECT_PREVENT_ESCAPE

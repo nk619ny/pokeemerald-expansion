@@ -5500,7 +5500,7 @@ static void Cmd_jumpifcantswitch(void)
     CMD_ARGS(u8 battler:7, u8 ignoreEscapePrevention:1, const u8 *jumpInstr);
 
     enum BattlerId battler = GetBattlerForBattleScript(cmd->battler);
-    if (!cmd->ignoreEscapePrevention && !CanBattlerEscape(battler) && GetBattlerHoldEffect(battler) != HOLD_EFFECT_SHED_SHELL && GetBattlerAbility(battler) != ABILITY_RUN_AWAY)
+    if (!cmd->ignoreEscapePrevention && !CanBattlerEscape(battler) && GetBattlerHoldEffect(battler) != HOLD_EFFECT_SHED_SHELL)
     {
         gBattlescriptCurrInstr = cmd->jumpInstr;
     }
@@ -13148,16 +13148,17 @@ void BS_TrySetEscapePrevention(void)
 {
     NATIVE_ARGS(const u8 *failInstr);
 
-    if (!gBattleMons[gBattlerTarget].volatiles.escapePrevention)
+    if (GetBattlerAbility(gBattlerTarget) == ABILITY_RUN_AWAY
+        || gBattleMons[gBattlerTarget].volatiles.escapePrevention)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else
     {
         gBattleMons[gBattlerTarget].volatiles.escapePrevention = TRUE;
         gBattleMons[gBattlerTarget].volatiles.battlerPreventingEscape = gBattlerAttacker;
         gEffectBattler = gBattlerTarget;
         gBattlescriptCurrInstr = cmd->nextInstr;
-    }
-    else
-    {
-        gBattlescriptCurrInstr = cmd->failInstr;
     }
 }
 

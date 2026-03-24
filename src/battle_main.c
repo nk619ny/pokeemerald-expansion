@@ -4322,12 +4322,11 @@ static void HandleTurnActionSelectionState(void)
                 case B_ACTION_SWITCH:
                     gBattleStruct->battlerPartyIndexes[battler] = gBattlerPartyIndexes[battler];
                     if (gBattleTypeFlags & BATTLE_TYPE_ARENA
-                        || (!CanBattlerEscape(battler) && GetBattlerHoldEffect(battler) != HOLD_EFFECT_SHED_SHELL && GetBattlerAbility(battler) != ABILITY_RUN_AWAY))
+                        || (!CanBattlerEscape(battler) && GetBattlerHoldEffect(battler) != HOLD_EFFECT_SHED_SHELL))
                     {
                         BtlController_EmitChoosePokemon(battler, B_COMM_TO_CONTROLLER, PARTY_ACTION_CANT_SWITCH, PARTY_SIZE, ABILITY_NONE, 0, gBattleStruct->battlerPartyOrders[battler]);
                     }
-                    else if ((GetItemHoldEffect(gBattleMons[battler].item) != HOLD_EFFECT_SHED_SHELL
-                              && GetBattlerAbility(battler) != ABILITY_RUN_AWAY)
+                    else if ((GetItemHoldEffect(gBattleMons[battler].item) != HOLD_EFFECT_SHED_SHELL)
                              && (i = IsAbilityPreventingEscape(battler)))   // must be last to keep i value integrity
                     {
                         BtlController_EmitChoosePokemon(battler, B_COMM_TO_CONTROLLER, PARTY_ACTION_ABILITY_PREVENTS, PARTY_SIZE, gBattleMons[i - 1].ability, i - 1, gBattleStruct->battlerPartyOrders[battler]);
