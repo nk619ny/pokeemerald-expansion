@@ -3349,7 +3349,7 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
         default:
             break;
         }
-        if (TryChangeBattleTerrain(gBattlerAttacker, statusFlag))
+        if (TryChangeBattleTerrain(gBattlerAttacker, statusFlag, FALSE))
         {
             BattleScriptPush(battleScript);
             gBattlescriptCurrInstr = BattleScript_EffectSetTerrain;
@@ -12167,7 +12167,7 @@ void BS_SetTerrain(void)
     }
     else if (statusFlag)
     {
-        TryChangeBattleTerrain(gBattlerAttacker, statusFlag);
+        TryChangeBattleTerrain(gBattlerAttacker, statusFlag, FALSE);
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
     else
@@ -14706,12 +14706,16 @@ void BS_TryToClearPrimalWeather(void)
     if (gBattleWeather & B_WEATHER_SUN_PRIMAL && !shouldNotClear)
     {
         gBattleWeather &= ~B_WEATHER_SUN_PRIMAL;
+        gBattleWeather |= B_WEATHER_SUN_NORMAL;
+        gBattleStruct->weatherDuration = 0;
         PrepareStringBattle(STRINGID_EXTREMESUNLIGHTFADED, gBattlerAttacker);
         gBattleCommunication[MSG_DISPLAY] = 1;
     }
     else if (gBattleWeather & B_WEATHER_RAIN_PRIMAL && !shouldNotClear)
     {
         gBattleWeather &= ~B_WEATHER_RAIN_PRIMAL;
+        gBattleWeather |= B_WEATHER_RAIN_NORMAL;
+        gBattleStruct->weatherDuration = 0;
         PrepareStringBattle(STRINGID_HEAVYRAINLIFTED, gBattlerAttacker);
         gBattleCommunication[MSG_DISPLAY] = 1;
     }
