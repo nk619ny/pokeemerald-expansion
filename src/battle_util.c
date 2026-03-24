@@ -3434,6 +3434,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         case ABILITY_GRASSY_SURGE:
+        case ABILITY_ABUNDANCE:
             if (!shouldAbilityTrigger)
                 break;
             if (TryChangeBattleTerrain(battler, STATUS_FIELD_GRASSY_TERRAIN, TRUE))
@@ -7258,6 +7259,10 @@ static inline u32 CalcAttackStat(struct BattleContext *ctx)
         break;
     case ABILITY_HADRON_ENGINE:
         if (ctx->fieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN && IsBattleMoveSpecial(move))
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3333));
+        break;
+    case ABILITY_ABUNDANCE:
+        if (ctx->fieldStatuses & STATUS_FIELD_GRASSY_TERRAIN && IsBattleMovePhysical(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3333));
         break;
     default:

@@ -2481,4 +2481,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 2,
         .breakable = TRUE,
     },
+
+    [ABILITY_ABUNDANCE] =
+    {
+        .name = _("Abundance"),
+        .description = COMPOUND_STRING("Field becomes grassy."),
+        .aiRating = 8,
+    },
 };
