@@ -18745,7 +18745,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hit everything and faint.\n"
             "Powers up on Misty Terrain."),
-        .effect = EFFECT_TERRAIN_BOOST,
+        .effect = EFFECT_HIT,
         .power = 200,
         .type = TYPE_FAIRY,
         .accuracy = 100,
@@ -18755,11 +18755,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .explosion = TRUE,
         .dampBanned = TRUE,
-        .argument.terrainBoost = {
-            .terrain =  STATUS_FIELD_MISTY_TERRAIN,
-            .percent = 50,
-            .groundCheck = GROUND_CHECK_USER,
-        },
         .contestEffect = CONTEST_EFFECT_GREAT_APPEAL_BUT_NO_MORE_MOVES,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,

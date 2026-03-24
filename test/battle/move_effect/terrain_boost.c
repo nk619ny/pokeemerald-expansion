@@ -84,38 +84,45 @@ SINGLE_BATTLE_TEST("Terrain Boost: Rising Voltage doubles in power if target is 
     }
 }
 
-SINGLE_BATTLE_TEST("Terrain Boost: Misty Explosion increases in power by 50% when affected by Misty Terrain")
+SINGLE_BATTLE_TEST("Misty Explosion only receives the Fairy-type 1.2x boost in Misty Terrain")
 {
-    s16 damage[3];
+    s16 damage[2];
 
     GIVEN {
-        ASSUME(GetMoveEffect(MOVE_MISTY_EXPLOSION) == EFFECT_TERRAIN_BOOST);
-        ASSUME(GetMoveTerrainBoost_Percent(MOVE_MISTY_EXPLOSION) == 50);
-        ASSUME(GetMoveTerrainBoost_GroundCheck(MOVE_MISTY_EXPLOSION) == GROUND_CHECK_USER);
-        PLAYER(SPECIES_WOBBUFFET);
+        ASSUME(GetMoveEffect(MOVE_MISTY_EXPLOSION) == EFFECT_HIT);
+        ASSUME(GetMoveType(MOVE_MISTY_EXPLOSION) == TYPE_FAIRY);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_MISTY_EXPLOSION); SEND_OUT(player, 1); MOVE(opponent, MOVE_MISTY_TERRAIN); }
-        TURN { MOVE(player, MOVE_MISTY_EXPLOSION); SEND_OUT(player, 2); }
-        TURN { MOVE(player, MOVE_MAGNET_RISE); }
-        TURN { MOVE(player, MOVE_MISTY_EXPLOSION); }
+        TURN { MOVE(opponent, MOVE_MISTY_TERRAIN); MOVE(player, MOVE_CELEBRATE); }
+        TURN { MOVE(player, MOVE_MISTY_EXPLOSION); SEND_OUT(player, 1); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_MISTY_EXPLOSION, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MISTY_TERRAIN, opponent);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MISTY_EXPLOSION, player);
-        HP_BAR(opponent, captureDamage: &damage[1]);
+        HP_BAR(opponent, captureDamage: &damage[0]);
+    }
+}
 
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_MAGNET_RISE, player);
-
+SINGLE_BATTLE_TEST("Misty Explosion does not receive additional terrain boost beyond Fairy-type modifier", s16 damage)
+{
+    bool32 terrain;
+    PARAMETRIZE { terrain = FALSE; }
+    PARAMETRIZE { terrain = TRUE; }
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        if (terrain)
+            TURN { MOVE(opponent, MOVE_MISTY_TERRAIN); MOVE(player, MOVE_CELEBRATE); }
+        TURN { MOVE(player, MOVE_MISTY_EXPLOSION); SEND_OUT(player, 1); }
+    } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MISTY_EXPLOSION, player);
-        HP_BAR(opponent, captureDamage: &damage[2]);
-    } THEN {
-        EXPECT_MUL_EQ(damage[0], UQ_4_12(1.5), damage[1]);
-        EXPECT_EQ(damage[0], damage[2]);
+        HP_BAR(opponent, captureDamage: &results[i].damage);
+    } FINALLY {
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.2), results[1].damage);
     }
 }
 

@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Misty Terrain protects grounded battlers from non-volatile s
     }
 }
 
-SINGLE_BATTLE_TEST("Misty Terrain does not increase the power of Fairy-type moves", s16 damage)
+SINGLE_BATTLE_TEST("Misty Terrain increases the power of Fairy-type moves by 20 percent", s16 damage)
 {
     bool32 terrain;
     PARAMETRIZE { terrain = FALSE; }
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Misty Terrain does not increase the power of Fairy-type move
         MESSAGE("Wobbuffet used Moonblast!");
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
-        EXPECT_EQ(results[0].damage, results[1].damage);
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.2), results[1].damage);
     }
 }
 
