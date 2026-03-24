@@ -336,9 +336,9 @@ enum __attribute__((packed)) BattleMoveEffects
     EFFECT_STONE_AXE, // Not to be confused with MOVE_EFFECT_STEALTH_ROCK. They have two different activation timings.
     EFFECT_CEASELESS_EDGE, // Same applies to spikes
     EFFECT_SPECIES_POWER_OVERRIDE, // Uses argument field to for the species, power and (number of hits, used only for multi hit moves)
-    EFFECT_SANDSTORM_ALWAYS_HIT, // custom for this hack
-    EFFECT_SUN_ALWAYS_HIT, // custom for this hack
-    EFFECT_THUNDER_WAVE, // custom for this hack
+    // Custom effects EFFECT_SANDSTORM_ALWAYS_HIT, EFFECT_SUN_ALWAYS_HIT, EFFECT_THUNDER_WAVE removed.
+    // Their behavior is now handled by move flags (alwaysHitsInSandstorm, alwaysHitsInSun, alwaysHitsOnSameType)
+    // checked in CanMoveSkipAccuracyCalc() in src/battle_util.c.
     NUM_BATTLE_MOVE_EFFECTS,
 };
 

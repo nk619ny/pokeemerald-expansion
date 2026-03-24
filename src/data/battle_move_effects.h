@@ -2250,22 +2250,6 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 0, // TODO: Assign points
     },
 
-    [EFFECT_SANDSTORM_ALWAYS_HIT] =
-    {
-        .battleScript = BattleScript_EffectHit,
-        .battleTvScore = 0, // TODO: Assign points
-    }, 
-
-    [EFFECT_SUN_ALWAYS_HIT] =
-    {
-        .battleScript = BattleScript_EffectHit,
-        .battleTvScore = 0, // TODO: Assign points
-    },
-
-    [EFFECT_THUNDER_WAVE] =
-    {
-        .battleScript = BattleScript_EffectNonVolatileStatus,
-        .battleTvScore = 5,
-        .encourageEncore = TRUE,
-    },
+    // Custom effects EFFECT_SANDSTORM_ALWAYS_HIT, EFFECT_SUN_ALWAYS_HIT, EFFECT_THUNDER_WAVE removed.
+    // Their behavior is now handled by move flags checked in CanMoveSkipAccuracyCalc().
 };

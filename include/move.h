@@ -134,7 +134,9 @@ struct MoveInfo
     bool32 alwaysHitsOnSameType:1; // Always hits if user is of same type as move
     bool32 noAffectOnSameTypeTarget:1; // Fails if target is of same type as move
     bool32 accIncreaseByTenOnSameType:1; // Accuracy is increased by 10% if user is of same type as move
-    bool32 padding1:15;
+    bool32 alwaysHitsInGrassyTerrain:1; // Custom: always hits if Grassy Terrain is active
+    bool32 alwaysHitsInElectricTerrain:1; // Custom: always hits if Electric Terrain is active
+    bool32 padding1:13;
     // end of word
 
     // Ban flags
@@ -500,6 +502,17 @@ static inline bool32 MoveHasNoEffectOnSameType(enum Move moveId)
 static inline bool32 MoveHasIncreasedAccByTenOnSameType(enum Move moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].accIncreaseByTenOnSameType;
+}
+
+// Custom: terrain-based accuracy bypass getters (see also: MoveAlwaysHitsInRain, MoveAlwaysHitsInHailSnow)
+static inline bool32 MoveAlwaysHitsInGrassyTerrain(enum Move moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].alwaysHitsInGrassyTerrain;
+}
+
+static inline bool32 MoveAlwaysHitsInElectricTerrain(enum Move moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].alwaysHitsInElectricTerrain;
 }
 
 static inline bool32 IsMoveGravityBanned(enum Move moveId)

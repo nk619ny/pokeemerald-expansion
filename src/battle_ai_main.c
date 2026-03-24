@@ -6343,7 +6343,6 @@ static s32 AI_ForceSetupFirstTurn(enum BattlerId battlerAtk, enum BattlerId batt
     case EFFECT_EVASION_DOWN_2:
     case EFFECT_REFLECT:
     case EFFECT_NON_VOLATILE_STATUS:
-    case EFFECT_THUNDER_WAVE:
     case EFFECT_SUBSTITUTE:
     case EFFECT_LEECH_SEED:
     case EFFECT_MINIMIZE:

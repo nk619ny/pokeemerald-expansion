@@ -319,11 +319,10 @@ static bool32 ShouldSwitchIfHasBadOdds(enum BattlerId battler)
             || IsExplosionMove(aiMove)
             || nonVolatileStatus == MOVE_EFFECT_SLEEP
             || nonVolatileStatus == MOVE_EFFECT_TOXIC
-            || nonVolatileStatus == MOVE_EFFECT_PARALYSIS //RELEVANT CODE FOR THUNDER WAVE
+            || nonVolatileStatus == MOVE_EFFECT_PARALYSIS
             || nonVolatileStatus == MOVE_EFFECT_THUNDER_WAVE
             || nonVolatileStatus == MOVE_EFFECT_BURN
             || aiMoveEffect == EFFECT_YAWN
-            || aiMoveEffect == EFFECT_THUNDER_WAVE
             || aiMoveEffect == EFFECT_TRICK || aiMoveEffect == EFFECT_TRICK_ROOM || aiMoveEffect== EFFECT_WONDER_ROOM || aiMoveEffect ==  EFFECT_PSYCHO_SHIFT || aiMoveEffect == EFFECT_FIRST_TURN_ONLY
             )
             {

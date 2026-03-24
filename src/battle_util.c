@@ -10532,9 +10532,23 @@ bool32 CanMoveSkipAccuracyCalc(enum BattlerId battlerAtk, enum BattlerId battler
             effect = TRUE;
         else if ((gBattleWeather & B_WEATHER_ICY_ANY) && MoveAlwaysHitsInHailSnow(move))
             effect = TRUE;
+        // Custom: sandstorm and sun weather-based accuracy bypass (like rain/hail above)
+        else if (MoveAlwaysHitsInSandstorm(move) && IsBattlerWeatherAffected(battlerDef, B_WEATHER_SANDSTORM))
+            effect = TRUE;
+        else if (MoveAlwaysHitsInSun(move) && IsBattlerWeatherAffected(battlerDef, B_WEATHER_SUN))
+            effect = TRUE;
 
         if (effect)
             return effect;
+    }
+
+    // Custom: terrain-based accuracy bypass (like weather-based bypasses above)
+    if (!effect)
+    {
+        if (MoveAlwaysHitsInGrassyTerrain(move) && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+            effect = TRUE;
+        else if (MoveAlwaysHitsInElectricTerrain(move) && (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN))
+            effect = TRUE;
     }
 
     if (ability != ABILITY_NONE && option == RUN_SCRIPT)
