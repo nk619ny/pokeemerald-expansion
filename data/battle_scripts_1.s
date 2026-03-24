@@ -4418,6 +4418,7 @@ BattleScript_WeatherAbilityActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
 	jumpifability BS_SCRIPTING, ABILITY_SAND_SPIT, BattleScript_SandSpitActivates
+	jumpifability BS_SCRIPTING, ABILITY_SANDGEIST, BattleScript_SandSpitActivates @ Custom - Sandgeist clone of Sand Spit
 	printfromtable gAbilityWeatherChangeStringId
 BattleScript_WeatherAbilityActivatesContinue:
 	waitstate
@@ -5989,17 +5990,19 @@ BattleScript_ItemSteal::
 	tryactivateabilitywithabilityshield BS_ATTACKER, FALSE
 	return
 
+@ Custom - Dark Clouds: combines Drizzle (Rain) + Electric Surge (Electric Terrain) on switch-in.
+@ Uses STRINGID_PKMNMADEASTORM for the ability popup message.
+@ See also: BattleScript_WeatherAbilityActivates, BattleScript_ElectricSurgeActivates
 BattleScript_DarkCloudsActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_PKMNMADEASTORM
-	waitstate
-	playanimation BS_BATTLER_0, B_ANIM_RAIN_CONTINUES
+	waitmessage B_WAIT_TIME_LONG
+	playanimation_var BS_BATTLER_0, sB_ANIM_ARG1
 	call BattleScript_ActivateWeatherAbilities
-	pause B_WAIT_TIME_SHORT
 	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
 	call BattleScript_ActivateTerrainEffects
-	end3
+	return
 
 BattleScript_AbilityRaisesDefenderStat::
 	pause B_WAIT_TIME_SHORT
@@ -6785,20 +6788,9 @@ BattleScript_ScriptingAbilityStatRaiseRet:
 	restoreattacker
 	return
 
-BattleScript_ScriptingAbilityWindRiderSandstorm::
-	//copybyte gBattlerAbility, sBATTLER
-	//call BattleScript_AbilityPopUp
-	//copybyte sSAVED_DMG, gBattlerAttacker
-	//copybyte gBattlerAttacker, sBATTLER
-	//statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, NULL
-	//setgraphicalstatchangevalues
-	//playanimation BS_SCRIPTING, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
-	//waitanimation
-	//printstring STRINGID_ATTACKERABILITYSTATRAISE
-	//waitmessage B_WAIT_TIME_LONG
-	//copybyte gBattlerAttacker, sSAVED_DMG
-	//end3
-	return
+@ Custom: Removed BattleScript_ScriptingAbilityWindRiderSandstorm (was unused stub).
+@ Wind Rider sandstorm activation now reuses BattleScript_BattlerAbilityStatRaiseOnSwitchIn
+@ via BattleScriptCall in ABILITYEFFECT_ON_WEATHER (src/battle_util.c).
 
 BattleScript_WeakArmorActivates::
 	call BattleScript_AbilityPopUp

@@ -1571,7 +1571,7 @@ static s32 GetSwitchinWeatherImpact(enum BattlerId battler)
             }
             else if ((gBattleWeather & B_WEATHER_SANDSTORM)
                 && IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
-                && ability != ABILITY_SAND_VEIL && ability != ABILITY_SAND_RUSH && ability != ABILITY_SAND_FORCE && ability != ABILITY_WIND_RIDER)
+                && ability != ABILITY_SAND_VEIL && ability != ABILITY_SAND_RUSH && ability != ABILITY_SAND_FORCE && ability != ABILITY_WIND_RIDER) // Custom: Wind Rider immune to sandstorm damage
             {
                 weatherImpact = maxHP / 16;
                 if (weatherImpact == 0)

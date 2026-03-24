@@ -136,9 +136,11 @@ static bool32 HandleEndTurnWeatherDamage(enum BattlerId battler)
         }
         break;
     case BATTLE_WEATHER_SANDSTORM:
+        // Custom: Wind Rider grants sandstorm damage immunity, like Sand Rush / Sand Force.
         if (ability != ABILITY_SAND_VEIL
          && ability != ABILITY_SAND_FORCE
          && ability != ABILITY_SAND_RUSH
+         && ability != ABILITY_WIND_RIDER
          && ability != ABILITY_OVERCOAT
          && !IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
          && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND

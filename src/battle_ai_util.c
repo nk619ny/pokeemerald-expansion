@@ -3364,7 +3364,7 @@ static bool32 DoesBattlerTakeSandstormDamage(enum BattlerId battlerId, enum Abil
 
     if (!IS_BATTLER_ANY_TYPE(battlerId, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
       && ability != ABILITY_SAND_VEIL
-      && ability != ABILITY_WIND_RIDER
+      && ability != ABILITY_WIND_RIDER // Custom: Wind Rider grants sandstorm damage immunity
       && ability != ABILITY_SAND_FORCE
       && ability != ABILITY_SAND_RUSH
       && ability != ABILITY_MAGIC_GUARD
@@ -3397,7 +3397,7 @@ static u32 GetWeatherDamage(enum BattlerId battlerId)
     if (!weather)
         return 0;
 
-    if ((weather & B_WEATHER_SANDSTORM) && ability != ABILITY_WIND_RIDER)
+    if ((weather & B_WEATHER_SANDSTORM) && ability != ABILITY_WIND_RIDER) // Custom: Wind Rider immune to sandstorm damage
     {
         if (DoesBattlerTakeSandstormDamage(battlerId, ability)
           && gBattleMons[battlerId].volatiles.semiInvulnerable != STATE_UNDERGROUND

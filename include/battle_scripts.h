@@ -350,7 +350,7 @@ extern const u8 BattleScript_AnticipationActivates[];
 extern const u8 BattleScript_SlowStartEnds[];
 extern const u8 BattleScript_HealerActivates[];
 extern const u8 BattleScript_ScriptingAbilityStatRaise[];
-extern const u8 BattleScript_ScriptingAbilityWindRiderSandstorm[];
+// Custom: Removed BattleScript_ScriptingAbilityWindRiderSandstorm extern (now unused).
 extern const u8 BattleScript_ReceiverActivates[];
 extern const u8 BattleScript_FriskActivates[];
 extern const u8 BattleScript_FriskMsg[];
@@ -368,7 +368,6 @@ extern const u8 BattleScript_ActivateTeraformZero[];
 extern const u8 BattleScript_BattlerAbilityStatRaiseOnSwitchIn[];
 extern const u8 BattleScript_CottonDownActivates[];
 extern const u8 BattleScript_BallFetch[];
-extern const u8 BattleScript_SpoutSprayActivates[];
 extern const u8 BattleScript_PerishBodyActivates[];
 extern const u8 BattleScript_ActivateAsOne[];
 extern const u8 BattleScript_RaiseStatOnFaintingTarget[];

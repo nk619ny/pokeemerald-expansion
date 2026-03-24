@@ -3361,16 +3361,22 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
-        case ABILITY_DARK_CLOUDS:
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, gLastUsedAbility) && TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
+        case ABILITY_DARK_CLOUDS: // Custom - creates Rain (Drizzle) and Electric Terrain (Electric Surge) on switch-in
+            if (!shouldAbilityTrigger)
+                break;
             {
-                BattleScriptPushCursorAndCallback(BattleScript_DarkCloudsActivates);
-                effect++;
-            }
-            else if (gBattleWeather & B_WEATHER_PRIMAL_ANY && HasWeatherEffect())
-            {
-                BattleScriptCall(BattleScript_BlockedByPrimalWeather);
-                effect++;
+                bool32 weatherChanged = TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, gLastUsedAbility);
+                bool32 terrainChanged = TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN);
+                if (weatherChanged || terrainChanged)
+                {
+                    BattleScriptCall(BattleScript_DarkCloudsActivates);
+                    effect++;
+                }
+                else if (gBattleWeather & B_WEATHER_PRIMAL_ANY && HasWeatherEffect())
+                {
+                    BattleScriptCall(BattleScript_BlockedByPrimalWeather);
+                    effect++;
+                }
             }
             break;
         case ABILITY_SAND_STREAM:
@@ -3545,6 +3551,8 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
             }
             break;
+        // Custom: Wind Rider also activates on switch-in if Sandstorm is already active,
+        // in addition to the vanilla Tailwind check. See also: ABILITYEFFECT_ON_WEATHER Wind Rider case.
         case ABILITY_WIND_RIDER:
             if (shouldAbilityTrigger
              && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility)
@@ -4302,7 +4310,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
             }
             break;
-        case ABILITY_SPOUT_SPRAY:
+        case ABILITY_SPOUT_SPRAY: // Custom - creates Rain when hit, like Sand Spit but for Rain (see also: ABILITY_DRIZZLE)
             if (!gBattleStruct->unableToUseMove
              && IsBattlerTurnDamaged(gBattlerTarget)
              && !(gBattleWeather & B_WEATHER_RAIN && HasWeatherEffect()))
@@ -4312,11 +4320,28 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     BattleScriptCall(BattleScript_BlockedByPrimalWeather);
                     effect++;
                 }
-                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, TRUE))
+                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, ABILITY_DRIZZLE))
                 {
                     gBattleScripting.battler = battler;
-                    BattleScriptPushCursor();
-                    //gBattlescriptCurrInstr = BattleScript_SpoutSprayActivates;
+                    BattleScriptCall(BattleScript_WeatherAbilityActivates);
+                    effect++;
+                }
+            }
+            break;
+        case ABILITY_SANDGEIST: // Custom - creates Sandstorm when hit, clone of Sand Spit (see also: ABILITY_SAND_STREAM)
+            if (!gBattleStruct->unableToUseMove
+             && IsBattlerTurnDamaged(gBattlerTarget)
+             && !(gBattleWeather & B_WEATHER_SANDSTORM && HasWeatherEffect()))
+            {
+                if (gBattleWeather & B_WEATHER_PRIMAL_ANY && HasWeatherEffect())
+                {
+                    BattleScriptCall(BattleScript_BlockedByPrimalWeather);
+                    effect++;
+                }
+                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SANDSTORM, ABILITY_SAND_STREAM))
+                {
+                    gBattleScripting.battler = battler;
+                    BattleScriptCall(BattleScript_WeatherAbilityActivates);
                     effect++;
                 }
             }
@@ -4911,7 +4936,10 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
-        case ABILITY_WIND_RIDER: //newly added to make wind rider activate when sandstorm activates
+        // Custom: Wind Rider activates Attack boost when Sandstorm starts on the field.
+        // Mirrors Tailwind trigger behavior. See also: ABILITYEFFECT_ON_SWITCHIN Wind Rider case,
+        // sandstorm damage immunity in battle_end_turn.c, and AI helpers in battle_ai_util.c / battle_ai_switch.c.
+        case ABILITY_WIND_RIDER:
             if (!gBattleMons[battler].volatiles.weatherAbilityDone
              && (gBattleWeather & B_WEATHER_SANDSTORM) && HasWeatherEffect()
              && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility)
@@ -4920,6 +4948,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 gBattleMons[battler].volatiles.weatherAbilityDone = TRUE;
                 gBattleScripting.battler = battler;
                 SET_STATCHANGER(STAT_ATK, 1, FALSE);
+                BattleScriptCall(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
                 effect++;
             }
             break;
