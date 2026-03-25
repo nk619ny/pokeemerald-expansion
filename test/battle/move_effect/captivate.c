@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Captivate decreases the target's Sp. Attack if they're oppos
     }
 }
 
-SINGLE_BATTLE_TEST("Captivate fails if the target and user share gender")
+SINGLE_BATTLE_TEST("Captivate decreases the target's Sp. Attack if they share gender")
 {
     GIVEN {
         PLAYER(SPECIES_NIDOKING);
@@ -33,13 +33,15 @@ SINGLE_BATTLE_TEST("Captivate fails if the target and user share gender")
     } WHEN {
         TURN { MOVE(player, MOVE_CAPTIVATE); }
     } SCENE {
-        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CAPTIVATE, player);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+        MESSAGE("The opposing Nidoking's Sp. Atk harshly fell!");
     } THEN {
-        EXPECT(opponent->statStages[STAT_SPATK] == DEFAULT_STAT_STAGE);
+        EXPECT(opponent->statStages[STAT_SPATK] == DEFAULT_STAT_STAGE - 2);
     }
 }
 
-SINGLE_BATTLE_TEST("Captivate fails if the target is genderless")
+SINGLE_BATTLE_TEST("Captivate decreases the target's Sp. Attack if the target is genderless")
 {
     GIVEN {
         PLAYER(SPECIES_NIDOQUEEN);
@@ -47,13 +49,15 @@ SINGLE_BATTLE_TEST("Captivate fails if the target is genderless")
     } WHEN {
         TURN { MOVE(player, MOVE_CAPTIVATE); }
     } SCENE {
-        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CAPTIVATE, player);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+        MESSAGE("The opposing Starmie's Sp. Atk harshly fell!");
     } THEN {
-        EXPECT(opponent->statStages[STAT_SPATK] == DEFAULT_STAT_STAGE);
+        EXPECT(opponent->statStages[STAT_SPATK] == DEFAULT_STAT_STAGE - 2);
     }
 }
 
-SINGLE_BATTLE_TEST("Captivate fails if the user is genderless")
+SINGLE_BATTLE_TEST("Captivate decreases the target's Sp. Attack if the user is genderless")
 {
     GIVEN {
         PLAYER(SPECIES_STARMIE);
@@ -61,13 +65,15 @@ SINGLE_BATTLE_TEST("Captivate fails if the user is genderless")
     } WHEN {
         TURN { MOVE(player, MOVE_CAPTIVATE); }
     } SCENE {
-        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CAPTIVATE, player);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+        MESSAGE("The opposing Nidoqueen's Sp. Atk harshly fell!");
     } THEN {
-        EXPECT(opponent->statStages[STAT_SPATK] == 6);
+        EXPECT(opponent->statStages[STAT_SPATK] == DEFAULT_STAT_STAGE - 2);
     }
 }
 
-SINGLE_BATTLE_TEST("Captivate fails if both the user and the opponent are genderless")
+SINGLE_BATTLE_TEST("Captivate decreases the target's Sp. Attack if both the user and the opponent are genderless")
 {
     GIVEN {
         PLAYER(SPECIES_STARMIE);
@@ -75,13 +81,15 @@ SINGLE_BATTLE_TEST("Captivate fails if both the user and the opponent are gender
     } WHEN {
         TURN { MOVE(player, MOVE_CAPTIVATE); }
     } SCENE {
-        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CAPTIVATE, player);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+        MESSAGE("The opposing Starmie's Sp. Atk harshly fell!");
     } THEN {
-        EXPECT(opponent->statStages[STAT_SPATK] == 6);
+        EXPECT(opponent->statStages[STAT_SPATK] == DEFAULT_STAT_STAGE - 2);
     }
 }
 
-SINGLE_BATTLE_TEST("Attract fails when used by a genderless Pokémon")
+SINGLE_BATTLE_TEST("Attract works when used by a genderless Pokémon")
 {
     GIVEN {
         PLAYER(SPECIES_STARMIE);
@@ -90,13 +98,14 @@ SINGLE_BATTLE_TEST("Attract fails when used by a genderless Pokémon")
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
         MESSAGE("Starmie used Attract!");
-        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ATTRACT, player);
+        MESSAGE("The opposing Nidoqueen fell in love!");
     } THEN {
-        EXPECT(!(opponent->volatiles.infatuation));
+        EXPECT(opponent->volatiles.infatuation);
     }
 }
 
-SINGLE_BATTLE_TEST("Attract fails if both the user and the target are genderless")
+SINGLE_BATTLE_TEST("Attract works if both the user and the target are genderless")
 {
     GIVEN {
         PLAYER(SPECIES_STARMIE);
@@ -105,8 +114,9 @@ SINGLE_BATTLE_TEST("Attract fails if both the user and the target are genderless
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
         MESSAGE("Starmie used Attract!");
-        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ATTRACT, player);
+        MESSAGE("The opposing Starmie fell in love!");
     } THEN {
-        EXPECT(!(opponent->volatiles.infatuation));
+        EXPECT(opponent->volatiles.infatuation);
     }
 }

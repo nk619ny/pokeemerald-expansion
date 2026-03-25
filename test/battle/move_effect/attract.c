@@ -73,7 +73,7 @@ SINGLE_BATTLE_TEST("Attract fails if the target is already infatuated")
     }
 }
 
-SINGLE_BATTLE_TEST("Attract fails when used on a Pokémon of the same gender")
+SINGLE_BATTLE_TEST("Attract works when used on a Pokémon of the same gender")
 {
     GIVEN {
         PLAYER(SPECIES_NIDOQUEEN);
@@ -81,14 +81,14 @@ SINGLE_BATTLE_TEST("Attract fails when used on a Pokémon of the same gender")
     } WHEN {
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
-        MESSAGE("Nidoqueen used Attract!");
-        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ATTRACT, player);
+        MESSAGE("The opposing Nidoqueen fell in love!");
     } THEN {
-        EXPECT(!(opponent->volatiles.infatuation));
+        EXPECT(opponent->volatiles.infatuation);
     }
 }
 
-SINGLE_BATTLE_TEST("Attract fails when used on a genderless Pokémon")
+SINGLE_BATTLE_TEST("Attract works when used on a genderless Pokémon")
 {
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_STARMIE].genderRatio == MON_GENDERLESS);
@@ -97,9 +97,9 @@ SINGLE_BATTLE_TEST("Attract fails when used on a genderless Pokémon")
     } WHEN {
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
-        MESSAGE("Nidoqueen used Attract!");
-        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ATTRACT, player);
+        MESSAGE("The opposing Starmie fell in love!");
     } THEN {
-        EXPECT(!(opponent->volatiles.infatuation));
+        EXPECT(opponent->volatiles.infatuation);
     }
 }

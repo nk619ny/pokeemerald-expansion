@@ -1,15 +1,17 @@
 #include "global.h"
 #include "test/battle.h"
 
-SINGLE_BATTLE_TEST("Cute Charm inflicts infatuation on contact")
+SINGLE_BATTLE_TEST("Cute Charm inflicts infatuation on contact regardless of gender")
 {
     enum Move move;
-    PARAMETRIZE { move = MOVE_SCRATCH; }
-    PARAMETRIZE { move = MOVE_SWIFT; }
+    u32 gender;
+    PARAMETRIZE { move = MOVE_SCRATCH; gender = MON_MALE; }
+    PARAMETRIZE { move = MOVE_SCRATCH; gender = MON_FEMALE; }
+    PARAMETRIZE { move = MOVE_SWIFT; gender = MON_MALE; }
     GIVEN {
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
         ASSUME(!MoveMakesContact(MOVE_SWIFT));
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_MALE); }
+        PLAYER(SPECIES_WOBBUFFET) { Gender(gender); }
         OPPONENT(SPECIES_CLEFAIRY) { Gender(MON_FEMALE); Ability(ABILITY_CUTE_CHARM); }
     } WHEN {
         TURN { MOVE(player, move); }
@@ -28,21 +30,6 @@ SINGLE_BATTLE_TEST("Cute Charm inflicts infatuation on contact")
                 MESSAGE("Wobbuffet is in love with the opposing Clefairy!");
             }
         }
-    }
-}
-
-SINGLE_BATTLE_TEST("Cute Charm cannot infatuate same gender")
-{
-    GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_MALE); }
-        OPPONENT(SPECIES_CLEFAIRY) { Gender(MON_MALE); Ability(ABILITY_CUTE_CHARM); }
-    } WHEN {
-        TURN { MOVE(player, MOVE_SCRATCH); }
-        TURN { MOVE(player, MOVE_SCRATCH); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
-        NOT ABILITY_POPUP(opponent, ABILITY_CUTE_CHARM);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
     }
 }
 
