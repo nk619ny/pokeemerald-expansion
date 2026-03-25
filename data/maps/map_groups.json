@@ -492,7 +492,10 @@
     "OldaleRuins",
     "GlacierPath",
     "PetalburgWoods2",
-    "IceCave_1F"
+    "IceCave_1F",
+    "IceCave_2F",
+    "Glacier_Summit",
+    "Tropical_Jungle"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

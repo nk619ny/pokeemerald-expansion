@@ -1373,7 +1373,7 @@
     },
     {
       "id": "MAPSEC_ICEFALL_CAVE",
-      "name": "ICEFALL CAVE",
+      "name": "ICEFALL CAVE FRLG",
       "x": 3,
       "y": 4,
       "width": 1,
@@ -1717,9 +1717,41 @@
     },
     {
       "id": "MAPSEC_DEWFORD_MANOR",
-      "name": "DEWFORD MANOR",
+      "name": "HAUNTED MANOR",
       "x": 1,
       "y": 14,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_TROPICAL_JUNGLE",
+      "name": "TROPICAL JUNGLE",
+      "x": 3,
+      "y": 13,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ICE_CAVE",
+      "name": "ICEFALL CAVE",
+      "x": 3,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_GLACIER_SUMMIT",
+      "name": "GLACIER SUMMIT",
+      "x": 3,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_135",
+      "name": "ROUTE 135",
+      "x": 3,
+      "y": 0,
       "width": 1,
       "height": 1
     }

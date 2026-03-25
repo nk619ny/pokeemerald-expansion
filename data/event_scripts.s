@@ -1803,3 +1803,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Route135_North/scripts.inc"
 
 	.include "data/maps/IceCave_1F/scripts.inc"
+
+	.include "data/maps/IceCave_2F/scripts.inc"
+
+	.include "data/maps/Glacier_Summit/scripts.inc"
+
+	.include "data/maps/Tropical_Jungle/scripts.inc"

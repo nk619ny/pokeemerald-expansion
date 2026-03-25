@@ -9685,6 +9685,36 @@
       "secondary_tileset": "gTileset_Glacier",
       "border_filepath": "data/layouts/IceCave_1F/border.bin",
       "blockdata_filepath": "data/layouts/IceCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CAVE_2F",
+      "name": "IceCave_2F_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Glacier",
+      "border_filepath": "data/layouts/IceCave_2F/border.bin",
+      "blockdata_filepath": "data/layouts/IceCave_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GLACIER_SUMMIT",
+      "name": "Glacier_Summit_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Glacier",
+      "border_filepath": "data/layouts/Glacier_Summit/border.bin",
+      "blockdata_filepath": "data/layouts/Glacier_Summit/map.bin"
+    },
+    {
+      "id": "LAYOUT_TROPICAL_JUNGLE",
+      "name": "Tropical_Jungle_Layout",
+      "width": 28,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/Tropical_Jungle/border.bin",
+      "blockdata_filepath": "data/layouts/Tropical_Jungle/map.bin"
     }
   ]
 }

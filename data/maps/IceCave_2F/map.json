@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ICE_CAVE_1F",
-  "name": "IceCave_1F",
-  "layout": "LAYOUT_ICE_CAVE_1F",
+  "id": "MAP_ICE_CAVE_2F",
+  "name": "IceCave_2F",
+  "layout": "LAYOUT_ICE_CAVE_2F",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ICE_CAVE",
   "requires_flash": false,
