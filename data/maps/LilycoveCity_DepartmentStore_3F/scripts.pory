@@ -4,6 +4,7 @@ LilycoveCity_DepartmentStore_3F_MapScripts::
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft::
 	lock
+	goto_if_unset FLAG_IS_CHAMPION, LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeftNoVitamins
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
@@ -74,3 +75,11 @@ LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon:
 	.string "and its SPEED went up.$"
 
 `
+
+script LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeftNoVitamins{
+	lock
+	msgbox(format("I'm sorry, but the vitamins are currently out of stock.\nPlease check back later."), MSGBOX_DEFAULT)
+	waitmessage
+	release
+	end
+}
