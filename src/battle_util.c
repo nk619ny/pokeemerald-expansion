@@ -7598,6 +7598,7 @@ static inline uq4_12_t GetSameTypeAttackBonusModifier(struct BattleContext *ctx)
 }
 
 // Utility Umbrella holders take normal damage from what would be rain- and sun-weakened attacks.
+// Utility Umbrella holders also deal normal fire/water damage regardless of weather.
 static uq4_12_t GetWeatherDamageModifier(struct BattleContext *ctx)
 {
     if (ctx->weather == B_WEATHER_NONE)
@@ -7605,6 +7606,8 @@ static uq4_12_t GetWeatherDamageModifier(struct BattleContext *ctx)
     if (GetMoveEffect(ctx->move) == EFFECT_HYDRO_STEAM && (ctx->weather & B_WEATHER_SUN) && ctx->holdEffectAtk != HOLD_EFFECT_UTILITY_UMBRELLA)
         return UQ_4_12(1.5);
     if (ctx->holdEffectDef == HOLD_EFFECT_UTILITY_UMBRELLA)
+        return UQ_4_12(1.0);
+    if (ctx->holdEffectAtk == HOLD_EFFECT_UTILITY_UMBRELLA)
         return UQ_4_12(1.0);
 
     if (ctx->weather & B_WEATHER_RAIN)
@@ -7791,6 +7794,13 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(struct BattleContext *ctx)
         if (IsBattleMoveSpecial(ctx->move))
         {
             modifier =  UQ_4_12(0.5);
+            recordAbility = TRUE;
+        }
+        break;
+    case ABILITY_WATER_COMPACTION:
+        if (ctx->moveType == TYPE_WATER)
+        {
+            modifier = UQ_4_12(0.25);
             recordAbility = TRUE;
         }
         break;
