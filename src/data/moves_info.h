@@ -8801,8 +8801,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Sky Uppercut"),
         .description = COMPOUND_STRING(
-            "An uppercut thrown as if\n"
-            "leaping into the sky."),
+            "Hits flying-types for\n"
+            "neutral damage."),
         .effect = EFFECT_NEUTRAL_ON_ARG,
         .power = 85,
         .type = TYPE_FIGHTING,
@@ -15446,8 +15446,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Aromatic Mist"),
         .description = COMPOUND_STRING(
-            "Raises the Sp. Def of a\n"
-            "partner Pokémon."),
+            "Raises the Sp. Def of\n"
+            "self and partner."),
         .effect = EFFECT_AROMATIC_MIST,
         .power = 0,
         .type = TYPE_FAIRY,
@@ -15568,7 +15568,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Magnetic Flux"),
         .description = COMPOUND_STRING(
             "Boosts the defenses of\n"
-            "those with Plus or Minus."),
+            "Electric, Plus, or Minus."),
         .effect = EFFECT_MAGNETIC_FLUX,
         .power = 0,
         .type = TYPE_ELECTRIC,
