@@ -3071,6 +3071,8 @@ static enum MoveEndResult MoveEndMoveBlock(void)
             {
                 recoil = 1;
             }
+            if (GetBattlerHoldEffect(gBattlerAttacker) == HOLD_EFFECT_PROTECTIVE_PADS)
+                recoil /= 2;
             SetPassiveDamageAmount(gBattlerAttacker, recoil);
             BattleScriptCall(BattleScript_RecoilIfMiss);
             result = MOVEEND_RESULT_RUN_SCRIPT;
@@ -3084,7 +3086,11 @@ static enum MoveEndResult MoveEndMoveBlock(void)
              || IsAbilityAndRecord(gBattlerAttacker, ability, ABILITY_MAGIC_GUARD))
                 break;
 
-            SetPassiveDamageAmount(gBattlerAttacker, gBattleScripting.savedDmg * max(1, GetMoveRecoil(gCurrentMove)) / 100);
+            s32 recoil = gBattleScripting.savedDmg * max(1, GetMoveRecoil(gCurrentMove)) / 100;
+            if (GetBattlerHoldEffect(gBattlerAttacker) == HOLD_EFFECT_PROTECTIVE_PADS
+             && GetMoveCategory(gCurrentMove) == DAMAGE_CATEGORY_PHYSICAL)
+                recoil /= 2;
+            SetPassiveDamageAmount(gBattlerAttacker, recoil);
             TryUpdateEvolutionTracker(IF_RECOIL_DAMAGE_GE, gBattleStruct->passiveHpUpdate[gBattlerAttacker], MOVE_NONE);
             BattleScriptCall(BattleScript_MoveEffectRecoil);
             result = MOVEEND_RESULT_RUN_SCRIPT;

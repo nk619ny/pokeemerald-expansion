@@ -884,6 +884,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_MUDDYWEAKENEDELECTRIC]                 = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} Muddied the field!"),
     [STRINGID_TARGETCOVEREDINSTICKYTAR]              = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} got covered in sticky tar!"),
     [STRINGID_TARGETISBEINGCONSTRICTED]              = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} is being constricted tightly!"),
+    [STRINGID_HONEYRESTOREDHEALTH]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} ate a little of its Honey and restored HP!"),
     //[STRINGID_DAMPWEAKENEDFIRE]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} weakened Fire attacks!"),
     //[STRINGID_MUDDYWEAKENEDELECTRIC]                 = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} weakened Electric attacks!"),
 

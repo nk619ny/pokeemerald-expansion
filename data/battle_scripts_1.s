@@ -7275,6 +7275,14 @@ BattleScript_ItemHealHP_End2::
 	call BattleScript_ItemHealHP_Ret
 	end2
 
+BattleScript_HoneyHealHP_End2::
+	playanimation BS_ATTACKER, B_ANIM_HELD_ITEM_EFFECT
+	printstring STRINGID_HONEYRESTOREDHEALTH
+	waitmessage B_WAIT_TIME_LONG
+	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	end2
+
 BattleScript_AirBalloonMsgInRet::
 	printstring STRINGID_AIRBALLOONFLOAT
 	waitmessage B_WAIT_TIME_LONG

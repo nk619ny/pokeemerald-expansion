@@ -1130,6 +1130,17 @@ enum ItemEffect ItemBattleEffects(enum BattlerId itemBattler, enum BattlerId bat
         else
             effect = TryBlackSludgeDamage(itemBattler, holdEffect);
         break;
+    case HOLD_EFFECT_HONEY:
+        if (GetBattlerAbility(itemBattler) == ABILITY_HONEY_GATHER
+         && gBattleMons[itemBattler].hp < gBattleMons[itemBattler].maxHP
+         && !(B_HEAL_BLOCKING >= GEN_5 && gBattleMons[itemBattler].volatiles.healBlock))
+        {
+            SetHealAmount(itemBattler, GetNonDynamaxMaxHP(itemBattler) / 8);
+            RecordItemEffectBattle(itemBattler, holdEffect);
+            BattleScriptExecute(BattleScript_HoneyHealHP_End2);
+            effect = ITEM_HP_CHANGE;
+        }
+        break;
     case HOLD_EFFECT_CURE_PAR: // Cheri Berry
         effect = TryCureParalysis(itemBattler);
         break;

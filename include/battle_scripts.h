@@ -208,6 +208,7 @@ extern const u8 BattleScript_WhiteHerbRet[];
 extern const u8 BattleScript_ItemHealHP_RemoveItem[];
 extern const u8 BattleScript_BerryPPHeal[];
 extern const u8 BattleScript_ItemHealHP_End2[];
+extern const u8 BattleScript_HoneyHealHP_End2[];
 extern const u8 BattleScript_ItemHealHP_Ret[];
 extern const u8 BattleScript_SelectingNotAllowedMoveChoiceItem[];
 extern const u8 BattleScript_SelectingNotAllowedMoveChoiceItemInPalace[];
