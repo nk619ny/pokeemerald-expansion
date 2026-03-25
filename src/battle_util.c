@@ -6788,7 +6788,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct BattleContext *ctx)
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.9));
         break;
     case ABILITY_ANALYTIC:
-        if (IsLastMonToMove(battlerAtk) && moveEffect != EFFECT_FUTURE_SIGHT)
+        if (GetBattlerTurnOrderNum(battlerDef) < GetBattlerTurnOrderNum(battlerAtk) && moveEffect != EFFECT_FUTURE_SIGHT)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     case ABILITY_TOUGH_CLAWS:
