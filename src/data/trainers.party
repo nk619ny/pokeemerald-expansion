@@ -2287,10 +2287,10 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tornadus (M) @ Wacan Berry
+Tornadus (M)
 Level: 55
 Ball: Quick
-Ability: Prankster
+Ability: Cyclone Shift
 EVs: 4 HP / 196 SpA / 196 Spe
 Timid Nature  
 IVs: 0 Atk  
@@ -2299,7 +2299,7 @@ IVs: 0 Atk
 - Tailwind  
 - Grass Knot  
 
-Thundurus (M) @ Charti Berry
+Thundurus (M)
 Level: 55
 Ball: Quick
 Ability: Dark Clouds

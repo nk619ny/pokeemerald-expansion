@@ -1446,7 +1446,7 @@ static u32 UpdateEffectivenessResultFlagsForDoubleSpreadMoves(u32 resultFlags)
 
 static inline bool32 TryStrongWindsWeakenAttack(enum BattlerId battlerDef, enum Type moveType)
 {
-    if (gBattleWeather & B_WEATHER_STRONG_WINDS && HasWeatherEffect())
+    if ((gBattleWeather & B_WEATHER_STRONG_WINDS || gFieldStatuses & STATUS_FIELD_CYCLONE_SHIFT) && HasWeatherEffect())
     {
         if (GetMoveCategory(gCurrentMove) != DAMAGE_CATEGORY_STATUS
          && IS_BATTLER_OF_TYPE(battlerDef, TYPE_FLYING)
@@ -14726,6 +14726,26 @@ void BS_TryToClearPrimalWeather(void)
     else if (gBattleWeather & B_WEATHER_STRONG_WINDS && !shouldNotClear)
     {
         gBattleWeather &= ~B_WEATHER_STRONG_WINDS;
+        PrepareStringBattle(STRINGID_STRONGWINDSDISSIPATED, gBattlerAttacker);
+        gBattleCommunication[MSG_DISPLAY] = 1;
+    }
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_TryToClearCycloneShift(void)
+{
+    NATIVE_ARGS();
+    bool32 shouldNotClear = FALSE;
+
+    for (enum BattlerId i = 0; i < gBattlersCount; i++)
+    {
+        if (GetBattlerAbility(i) == ABILITY_CYCLONE_SHIFT && IsBattlerAlive(i))
+            shouldNotClear = TRUE;
+    }
+
+    if (gFieldStatuses & STATUS_FIELD_CYCLONE_SHIFT && !shouldNotClear)
+    {
+        gFieldStatuses &= ~STATUS_FIELD_CYCLONE_SHIFT;
         PrepareStringBattle(STRINGID_STRONGWINDSDISSIPATED, gBattlerAttacker);
         gBattleCommunication[MSG_DISPLAY] = 1;
     }

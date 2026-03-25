@@ -192,6 +192,8 @@ static bool32 DoesAbilityBenefitFromFieldStatus(enum Ability ability, u32 fieldS
     case ABILITY_GRASS_PELT:
     case ABILITY_ABUNDANCE:
         return (fieldStatus & STATUS_FIELD_GRASSY_TERRAIN);
+    case ABILITY_CYCLONE_SHIFT:
+        return (fieldStatus & STATUS_FIELD_CYCLONE_SHIFT);
     // no abilities inherently benefit from Misty or Psychic Terrains
     // return (fieldStatus & STATUS_FIELD_MISTY_TERRAIN);
     // return (fieldStatus & STATUS_FIELD_PSYCHIC_TERRAIN);

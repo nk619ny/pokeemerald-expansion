@@ -1969,6 +1969,9 @@ u32 AI_GetSwitchinFieldStatus(enum BattlerId battler)
     case ABILITY_GRASSY_SURGE:
     case ABILITY_ABUNDANCE:
         return SwitchinChangeBattleTerrain(STATUS_FIELD_GRASSY_TERRAIN, startingFieldStatus);
+    case ABILITY_CYCLONE_SHIFT:
+        startingFieldStatus |= STATUS_FIELD_CYCLONE_SHIFT;
+        return startingFieldStatus;
     case ABILITY_MISTY_SURGE:
         return SwitchinChangeBattleTerrain(STATUS_FIELD_MISTY_TERRAIN, startingFieldStatus);
     case ABILITY_PSYCHIC_SURGE:

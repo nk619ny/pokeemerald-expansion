@@ -257,6 +257,7 @@ BattleScript_MoveSwitchOpenPartyScreenReturnWithNoAnim:
 	switchindataupdate BS_ATTACKER
 	hpthresholds BS_ATTACKER
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	printstring STRINGID_EMPTYSTRING3
 	waitmessage 1
 	printstring STRINGID_SWITCHINMON
@@ -902,6 +903,7 @@ BattleScript_MoveEffectCoreEnforcer::
 	printstring STRINGID_PKMNSABILITYSUPPRESSED
 	waitmessage B_WAIT_TIME_LONG
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	tryrevertweatherform
 	flushtextbox
 BattleScript_CoreEnforcerRet:
@@ -1850,6 +1852,7 @@ BattleScript_EffectEntrainment::
 	printstring STRINGID_PKMNACQUIREDABILITY
 	waitmessage B_WAIT_TIME_LONG
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	tryrevertweatherform
 	flushtextbox
 	tryendneutralizinggas
@@ -1885,6 +1888,7 @@ BattleScript_EffectHealingWishGen4:
 	switchindataupdate BS_ATTACKER
 	hpthresholds BS_ATTACKER
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	tryrevertweatherform
 	flushtextbox
 	tryendneutralizinggas
@@ -1929,6 +1933,7 @@ BattleScript_EffectOverwriteAbility::
 	printstring STRINGID_PKMNACQUIREDABILITY
 	waitmessage B_WAIT_TIME_LONG
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	tryrevertweatherform
 	flushtextbox
 	tryendneutralizinggas
@@ -2044,6 +2049,7 @@ BattleScript_EffectGastroAcid::
 	printstring STRINGID_PKMNSABILITYSUPPRESSED
 	waitmessage B_WAIT_TIME_LONG
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	tryrevertweatherform
 	flushtextbox
 	tryendneutralizinggas
@@ -2772,6 +2778,7 @@ BattleScript_EffectEvasionUp2::
 BattleScript_EffectTransform::
 	attackcanceler
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	tryrevertweatherform
 	flushtextbox
 	tryendneutralizinggas
@@ -3347,6 +3354,7 @@ BattleScript_EffectBatonPass::
 	switchindataupdate BS_ATTACKER
 	hpthresholds BS_ATTACKER
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
 	switchinanim BS_ATTACKER, FALSE, TRUE
@@ -4057,6 +4065,7 @@ BattleScript_FaintBattler::
 	printstring STRINGID_BATTLERFAINTED
 	cleareffectsonfaint BS_FAINTED
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	tryrevertweatherform
 	flushtextbox
 	waitanimation
@@ -4120,6 +4129,7 @@ BattleScript_FaintedMonTryChoose:
 	switchindataupdate BS_ATTACKER
 	hpthresholds BS_ATTACKER
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
 	hidepartystatussummary BS_ATTACKER
@@ -4132,6 +4142,7 @@ BattleScript_FaintedMonSendOutNew:
 	switchindataupdate BS_FAINTED
 	hpthresholds BS_FAINTED
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
 	hidepartystatussummary BS_FAINTED
@@ -4168,6 +4179,7 @@ BattleScript_HandleFaintedMonLoop::
 	switchindataupdate BS_FAINTED
 	hpthresholds BS_FAINTED
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
 	hidepartystatussummary BS_FAINTED
@@ -4403,6 +4415,7 @@ BattleScript_DoSwitchOut::
 	switchindataupdate BS_ATTACKER
 	hpthresholds BS_ATTACKER
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	flushtextbox
 	printstring STRINGID_SWITCHINMON
 	hidepartystatussummary BS_ATTACKER
@@ -4692,6 +4705,7 @@ BattleScript_RoarSuccessSwitch::
 	getswitchedmondata BS_TARGET
 	switchindataupdate BS_TARGET
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	flushtextbox
 	switchinanim BS_TARGET, FALSE, FALSE
 	waitstate
@@ -6535,6 +6549,14 @@ BattleScript_GrassySurgeActivates::
 	call BattleScript_ActivateTerrainEffects
 	return
 
+BattleScript_CycloneShiftActivates::
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_MYSTERIOUSAIRCURRENT
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_STRONG_WINDS
+	return
+
 BattleScript_PsychicSurgeActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
@@ -6774,6 +6796,7 @@ BattleScript_MummyActivates::
 	printstring STRINGID_ATTACKERACQUIREDABILITY
 	waitmessage B_WAIT_TIME_LONG
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	tryrevertweatherform
 	flushtextbox
 	tryendneutralizinggas
@@ -7798,6 +7821,7 @@ BattleScript_EjectButtonActivates::
 	switchindataupdate BS_SCRIPTING
 	hpthresholds BS_SCRIPTING
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	flushtextbox
 	printstring 0x3
 	switchinanim BS_SCRIPTING, FALSE, TRUE

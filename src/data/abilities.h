@@ -2488,4 +2488,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Field becomes grassy."),
         .aiRating = 8,
     },
+
+    [ABILITY_CYCLONE_SHIFT] =
+    {
+        .name = _("Cyclone Shift"),
+        .description = COMPOUND_STRING("Creates strong winds."),
+        .aiRating = 8,
+    },
 };

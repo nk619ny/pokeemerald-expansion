@@ -3593,6 +3593,17 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
+        case ABILITY_CYCLONE_SHIFT:
+            if (!shouldAbilityTrigger)
+                break;
+            if (!(gFieldStatuses & STATUS_FIELD_CYCLONE_SHIFT))
+            {
+                gFieldStatuses |= STATUS_FIELD_CYCLONE_SHIFT;
+                gBattleScripting.battler = battler;
+                BattleScriptCall(BattleScript_CycloneShiftActivates);
+                effect++;
+            }
+            break;
         case ABILITY_VESSEL_OF_RUIN:
             if (shouldAbilityTrigger)
             {
@@ -8447,6 +8458,13 @@ static inline void MulByTypeEffectiveness(struct BattleContext *ctx, uq4_12_t *m
 
     // B_WEATHER_STRONG_WINDS weakens Super Effective moves against Flying-type Pokémon
     if (ctx->weather & B_WEATHER_STRONG_WINDS && !ctx->isAnticipation)
+    {
+        if (defType == TYPE_FLYING && mod >= UQ_4_12(2.0))
+            mod = UQ_4_12(1.0);
+    }
+
+    // STATUS_FIELD_CYCLONE_SHIFT also weakens Super Effective moves against Flying-type Pokémon
+    if (ctx->fieldStatuses & STATUS_FIELD_CYCLONE_SHIFT && !ctx->isAnticipation && HasWeatherEffect())
     {
         if (defType == TYPE_FLYING && mod >= UQ_4_12(2.0))
             mod = UQ_4_12(1.0);

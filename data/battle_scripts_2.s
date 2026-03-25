@@ -81,6 +81,7 @@ BattleScript_ItemRestoreHP_SendOutRevivedBattler:
 	getswitchedmondata BS_SCRIPTING
 	switchindataupdate BS_SCRIPTING
 	trytoclearprimalweather
+	trytoclearcycloneshift
 	switchinanim BS_SCRIPTING, FALSE, FALSE
 	waitstate
 	switchineffects BS_SCRIPTING

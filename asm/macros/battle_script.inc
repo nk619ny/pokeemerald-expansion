@@ -2109,6 +2109,10 @@
 	callnative BS_TryToClearPrimalWeather
 	.endm
 
+	.macro trytoclearcycloneshift
+	callnative BS_TryToClearCycloneShift
+	.endm
+
 	.macro tryendneutralizinggas
 	callnative BS_TryEndNeutralizingGas
 	.endm
