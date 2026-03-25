@@ -211,6 +211,16 @@ BattleScript_SyrupBombActivates::
 	waitmessage B_WAIT_TIME_LONG
 	return
 
+BattleScript_TarShotStickyActivates::
+	printstring STRINGID_TARGETCOVEREDINSTICKYTAR
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_ConstrictStickyActivates::
+	printstring STRINGID_TARGETISBEINGCONSTRICTED
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_SyrupBombEndTurn::
 	flushtextbox
 	playanimation BS_ATTACKER, B_ANIM_SYRUP_BOMB_SPEED_DROP
@@ -219,6 +229,26 @@ BattleScript_SyrupBombEndTurn::
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_SyrupBombTurnDmgEnd:
+	end2
+
+BattleScript_TarShotEndTurn::
+	flushtextbox
+	playanimation BS_ATTACKER, B_ANIM_TAR_SHOT_SPEED_DROP
+	setstatchanger STAT_SPEED, 1, TRUE
+	statbuffchange BS_ATTACKER, STAT_CHANGE_CHECK_PREVENTION | STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_NOT_PROTECT_AFFECTED, BattleScript_TarShotEndTurnEnd
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_TarShotEndTurnEnd:
+	end2
+
+BattleScript_ConstrictEndTurn::
+	flushtextbox
+	playanimation BS_ATTACKER, B_ANIM_CONSTRICT_SPEED_DROP
+	setstatchanger STAT_SPEED, 1, TRUE
+	statbuffchange BS_ATTACKER, STAT_CHANGE_CHECK_PREVENTION | STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_NOT_PROTECT_AFFECTED, BattleScript_ConstrictEndTurnEnd
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_ConstrictEndTurnEnd:
 	end2
 
 BattleScript_MoveSwitchPursuitEnd:
@@ -608,15 +638,14 @@ BattleScript_EffectTarShot::
 	jumpifsubstituteblocks BattleScript_ButItFailed
 	accuracycheck BattleScript_MoveMissedPause
 	cantarshotwork BattleScript_ButItFailed
-	setstatchanger STAT_SPEED, 1, TRUE
 	attackanimation
 	waitanimation
-	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_TryTarShot
-	printfromtable gStatDownStringIds
-	waitmessage B_WAIT_TIME_LONG
-BattleScript_TryTarShot:
-	trytarshot BattleScript_MoveEnd
+	trytarshot BattleScript_TryTarShotSlow
 	printstring STRINGID_PKMNBECAMEWEAKERTOFIRE
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_TryTarShotSlow:
+	trytarshotslow BattleScript_MoveEnd
+	printstring STRINGID_TARGETCOVEREDINSTICKYTAR
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 

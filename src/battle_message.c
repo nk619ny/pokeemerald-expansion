@@ -882,6 +882,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_ABILITYLOWEREDSURROUNDINGEVASION]     = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} lowered the evasion of all Pokémon on the field!\p"),
     [STRINGID_DAMPWEAKENEDFIRE]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} Dampened the field!"),
     [STRINGID_MUDDYWEAKENEDELECTRIC]                 = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} Muddied the field!"),
+    [STRINGID_TARGETCOVEREDINSTICKYTAR]              = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} got covered in sticky tar!"),
+    [STRINGID_TARGETISBEINGCONSTRICTED]              = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} is being constricted tightly!"),
     //[STRINGID_DAMPWEAKENEDFIRE]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} weakened Fire attacks!"),
     //[STRINGID_MUDDYWEAKENEDELECTRIC]                 = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} weakened Electric attacks!"),
 

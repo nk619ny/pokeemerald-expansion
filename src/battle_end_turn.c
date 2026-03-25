@@ -688,8 +688,17 @@ static bool32 HandleEndTurnSyrupBomb(enum BattlerId battler)
     {
         if (gBattleMons[battler].volatiles.syrupBombTimer > 0 && --gBattleMons[battler].volatiles.syrupBombTimer == 0)
             gBattleMons[battler].volatiles.syrupBomb = FALSE;
-        PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_SYRUP_BOMB);
-        gBattlescriptCurrInstr = BattleScript_SyrupBombEndTurn;
+
+        u32 sourceMove = gBattleMons[battler].volatiles.syrupBombSourceMove;
+        PREPARE_MOVE_BUFFER(gBattleTextBuff1, sourceMove ? sourceMove : MOVE_SYRUP_BOMB);
+
+        if (sourceMove == MOVE_TAR_SHOT)
+            gBattlescriptCurrInstr = BattleScript_TarShotEndTurn;
+        else if (sourceMove == MOVE_CONSTRICT)
+            gBattlescriptCurrInstr = BattleScript_ConstrictEndTurn;
+        else
+            gBattlescriptCurrInstr = BattleScript_SyrupBombEndTurn;
+
         BattleScriptExecute(gBattlescriptCurrInstr);
         effect = TRUE;
     }

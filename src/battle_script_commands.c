@@ -3023,8 +3023,23 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
             gBattleMons[gEffectBattler].volatiles.stickySyrupedBy = gBattlerAttacker;
             gBattleMons[gEffectBattler].volatiles.syrupBombTimer = B_SYRUP_BOMB_TIMER;
             gBattleMons[gEffectBattler].volatiles.syrupBombIsShiny = IsMonShiny(mon);
+            gBattleMons[gEffectBattler].volatiles.syrupBombSourceMove = MOVE_SYRUP_BOMB;
             BattleScriptPush(battleScript);
             gBattlescriptCurrInstr = BattleScript_SyrupBombActivates;
+        }
+        break;
+    case MOVE_EFFECT_CONSTRICT_SLOW:
+        if (!gBattleMons[gEffectBattler].volatiles.syrupBomb)
+        {
+            struct Pokemon *mon = GetBattlerMon(gBattlerAttacker);
+
+            gBattleMons[gEffectBattler].volatiles.syrupBomb = TRUE;
+            gBattleMons[gEffectBattler].volatiles.stickySyrupedBy = gBattlerAttacker;
+            gBattleMons[gEffectBattler].volatiles.syrupBombTimer = B_SYRUP_BOMB_TIMER;
+            gBattleMons[gEffectBattler].volatiles.syrupBombIsShiny = IsMonShiny(mon);
+            gBattleMons[gEffectBattler].volatiles.syrupBombSourceMove = MOVE_CONSTRICT;
+            BattleScriptPush(battleScript);
+            gBattlescriptCurrInstr = BattleScript_ConstrictStickyActivates;
         }
         break;
     case MOVE_EFFECT_SECRET_POWER:
@@ -12689,12 +12704,33 @@ void BS_TryTarShot(void)
     }
 }
 
+void BS_TryTarShotSlow(void)
+{
+    NATIVE_ARGS(const u8 *failInstr);
+    if (gBattleMons[gBattlerTarget].volatiles.syrupBomb)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else
+    {
+        struct Pokemon *mon = GetBattlerMon(gBattlerAttacker);
+
+        gBattleMons[gBattlerTarget].volatiles.syrupBomb = TRUE;
+        gBattleMons[gBattlerTarget].volatiles.stickySyrupedBy = gBattlerAttacker;
+        gBattleMons[gBattlerTarget].volatiles.syrupBombTimer = B_SYRUP_BOMB_TIMER;
+        gBattleMons[gBattlerTarget].volatiles.syrupBombIsShiny = IsMonShiny(mon);
+        gBattleMons[gBattlerTarget].volatiles.syrupBombSourceMove = MOVE_TAR_SHOT;
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
+}
+
 void BS_CanTarShotWork(void)
 {
     NATIVE_ARGS(const u8 *failInstr);
-    // Tar Shot fails if the target can't be made weaker to fire and it's speed can't be lowered further
-    if (!(gBattleMons[gBattlerTarget].volatiles.tarShot || GetActiveGimmick(gBattlerTarget) == GIMMICK_TERA)
-     || CompareStat(gBattlerTarget, STAT_SPEED, MAX_STAT_STAGE, CMP_LESS_THAN, GetBattlerAbility(gBattlerTarget)))
+    // Tar Shot fails if the target already has fire weakness AND already has sticky slow
+    bool32 canApplyFireWeakness = !(gBattleMons[gBattlerTarget].volatiles.tarShot || GetActiveGimmick(gBattlerTarget) == GIMMICK_TERA);
+    bool32 canApplyStickyTar = !gBattleMons[gBattlerTarget].volatiles.syrupBomb;
+    if (canApplyFireWeakness || canApplyStickyTar)
         gBattlescriptCurrInstr = cmd->nextInstr;
     else
         gBattlescriptCurrInstr = cmd->failInstr;

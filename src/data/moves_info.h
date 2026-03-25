@@ -3596,8 +3596,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Constrict"),
         .description = COMPOUND_STRING(
-            "Constricts to inflict pain.\n"
-            "May lower Speed."),
+            "Constricts the foe, lowering\n"
+            "its Speed each turn."),
         .effect = EFFECT_HIT,
         .power = 10,
         .type = TYPE_NORMAL,
@@ -3608,8 +3608,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33,
+            .moveEffect = MOVE_EFFECT_CONSTRICT_SLOW,
+            .chance = 100,
         }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS : CONTEST_EFFECT_STARTLE_PREV_MON,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -15185,12 +15185,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Locks down the battlefield\n"
             "preventing escape next turn."),
-        .effect = EFFECT_FAIRY_LOCK,
+        .effect = EFFECT_MEAN_LOOK,
         .power = 0,
         .type = TYPE_FAIRY,
         .accuracy = 0,
         .pp = 10,
-        .target = TARGET_FIELD,
+        .target = TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_DEF_UP_1 },

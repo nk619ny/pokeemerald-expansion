@@ -263,6 +263,8 @@ static const u8* const sBattleAnims_General[NUM_B_ANIMS_GENERAL] =
     [B_ANIM_MON_SCARED]             = gBattleAnimGeneral_MonScared,
     [B_ANIM_GHOST_GET_OUT]          = gBattleAnimGeneral_GhostGetOut,
     [B_ANIM_SILPH_SCOPED]           = gBattleAnimGeneral_SilphScoped,
+    [B_ANIM_TAR_SHOT_SPEED_DROP]    = gBattleAnimMove_TarShot,
+    [B_ANIM_CONSTRICT_SPEED_DROP]   = gBattleAnimMove_Constrict,
     [B_ANIM_ROCK_THROW]             = gBattleAnimGeneral_SafariRockThrow,
     [B_ANIM_SAFARI_REACTION]        = gBattleAnimGeneral_SafariReaction,
 };

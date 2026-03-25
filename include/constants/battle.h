@@ -279,6 +279,7 @@ enum VolatileFlags
     F(VOLATILE_WEATHER_ABILITY_DONE,        weatherAbilityDone,            (u32, 1)) \
     F(VOLATILE_TERRAIN_ABILITY_DONE,        terrainAbilityDone,            (u32, 1)) \
     F(VOLATILE_SYRUP_BOMB_IS_SHINY,         syrupBombIsShiny,              (u32, 1)) \
+    F(VOLATILE_SYRUP_BOMB_SOURCE_MOVE,      syrupBombSourceMove,           (u32, MOVES_COUNT_ALL)) \
     F(VOLATILE_USED_PROTEAN_LIBERO,         usedProteanLibero,             (u32, 1)) \
     F(VOLATILE_FLASH_FIRE_BOOSTED,          flashFireBoosted,              (u32, 1)) \
     F(VOLATILE_BOOSTER_ENERGY_ACTIVATED,    boosterEnergyActivated,        (u32, 1)) \
@@ -597,6 +598,8 @@ enum __attribute__((packed)) MoveEffect
     MOVE_EFFECT_SPATK_SPDEF_DOWN,
     MOVE_EFFECT_THUNDER_WAVE,
     // Max move effects end. They can be used for (custom) normal moves.
+
+    MOVE_EFFECT_CONSTRICT_SLOW,
 
     // Move effects that happen before the move hits. Set in SetPreAttackMoveEffect
     MOVE_EFFECT_BREAK_SCREEN,
