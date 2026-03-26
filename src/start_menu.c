@@ -33,6 +33,7 @@
 #include "pokenav.h"
 #include "region_map.h" //new include to make Fly work
 //#include "pc.inc" //new include to make PC work
+#include "rtc.h"
 #include "safari_zone.h"
 #include "save.h"
 #include "scanline_effect.h"
@@ -90,6 +91,7 @@ enum
 COMMON_DATA bool8 (*gMenuCallback)(void) = NULL;
 
 // EWRAM
+EWRAM_DATA static u8 sTimeWindowId = 0;
 EWRAM_DATA static u8 sSafariBallsWindowId = 0;
 EWRAM_DATA static u8 sBattlePyramidFloorWindowId = 0;
 EWRAM_DATA static u8 sStartMenuCursorPos = 0;
@@ -152,6 +154,16 @@ static void SaveGameTask(u8 taskId);
 static void Task_SaveAfterLinkBattle(u8 taskId);
 static void Task_WaitForBattleTowerLinkSave(u8 taskId);
 static bool8 FieldCB_ReturnToFieldStartMenu(void);
+
+static const struct WindowTemplate sWindowTemplate_Time = {
+    .bg = 0,
+    .tilemapLeft = 1,
+    .tilemapTop = 1,
+    .width = 7,
+    .height = 2,
+    .paletteNum = 15,
+    .baseBlock = 0x8
+};
 
 static const struct WindowTemplate sWindowTemplate_SafariBalls = {
     .bg = 0,
@@ -266,6 +278,7 @@ static void BuildUnionRoomStartMenu(void);
 static void BuildBattlePikeStartMenu(void);
 static void BuildBattlePyramidStartMenu(void);
 static void BuildMultiPartnerRoomStartMenu(void);
+static void ShowTimeWindow(void);
 static void ShowSafariBallsWindow(void);
 static void ShowPyramidFloorWindow(void);
 static void RemoveExtraStartMenuWindows(void);
@@ -488,8 +501,37 @@ static void ShowPyramidFloorWindow(void)
     CopyWindowToVram(sBattlePyramidFloorWindowId, COPYWIN_GFX);
 }
 
+static void ShowTimeWindow(void)
+{
+    if (!OW_START_MENU_SHOW_TIME)
+        return;
+    if (GetSafariZoneFlag())
+        return;
+    if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
+        return;
+
+    RtcCalcLocalTime();
+
+    u8 timeStr[16];
+    FormatDecimalTimeWithoutSeconds(timeStr, gLocalTime.hours, gLocalTime.minutes, FALSE);
+
+    sTimeWindowId = AddWindow(&sWindowTemplate_Time);
+    PutWindowTilemap(sTimeWindowId);
+    DrawStdWindowFrame(sTimeWindowId, FALSE);
+    AddTextPrinterParameterized(sTimeWindowId, FONT_NORMAL, timeStr, 4, 1, TEXT_SKIP_DRAW, NULL);
+    CopyWindowToVram(sTimeWindowId, COPYWIN_GFX);
+}
+
 static void RemoveExtraStartMenuWindows(void)
 {
+    if (OW_START_MENU_SHOW_TIME
+     && !GetSafariZoneFlag()
+     && CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
+    {
+        ClearStdWindowAndFrameToTransparent(sTimeWindowId, FALSE);
+        CopyWindowToVram(sTimeWindowId, COPYWIN_GFX);
+        RemoveWindow(sTimeWindowId);
+    }
     if (GetSafariZoneFlag())
     {
         ClearStdWindowAndFrameToTransparent(sSafariBallsWindowId, FALSE);
@@ -554,6 +596,7 @@ static bool32 InitStartMenuStep(void)
         sInitStartMenuData[0]++;
         break;
     case 3:
+        ShowTimeWindow();
         if (GetSafariZoneFlag())
             ShowSafariBallsWindow();
         if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
