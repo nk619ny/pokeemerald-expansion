@@ -566,7 +566,8 @@ script Common_EventScript_BerryTreeSproutedEncounter {
 		setwildbattle(SPECIES_BURMY, 12, ITEM_NONE)
 	}
 	elif (var(VAR_RESULT) < 70) {
-		setwildbattle(SPECIES_SCATTERBUG_FANCY, 12, ITEM_NONE)
+		//setwildbattle(SPECIES_SCATTERBUG_FANCY, 12, ITEM_NONE)
+		call(Common_EventScript_BerryTreeSproutedEncounter_Scatterbug)
 	}
 	elif (var(VAR_RESULT) < 80) {
 		setwildbattle(SPECIES_LEDYBA, 12, ITEM_NONE)
@@ -693,6 +694,53 @@ script Common_EventScript_BerryTreeBerriesEncounter {
 	}
 	else {
 		setwildbattle(SPECIES_MUNCHLAX, 12, ITEM_BERRY_JUICE)
+	}
+	return
+}
+
+script Common_EventScript_BerryTreeSproutedEncounter_Scatterbug{
+	random(20)
+	switch(var(VAR_RESULT)) {
+		case 0:
+			setwildbattle(SPECIES_SCATTERBUG_ICY_SNOW,    12, ITEM_NONE)
+		case 1:
+			setwildbattle(SPECIES_SCATTERBUG_POLAR,       12, ITEM_NONE)
+		case 2:
+			setwildbattle(SPECIES_SCATTERBUG_TUNDRA,      12, ITEM_NONE)
+		case 3:
+			setwildbattle(SPECIES_SCATTERBUG_CONTINENTAL, 12, ITEM_NONE)
+		case 4:
+			setwildbattle(SPECIES_SCATTERBUG_GARDEN,      12, ITEM_NONE)
+		case 5:
+			setwildbattle(SPECIES_SCATTERBUG_ELEGANT,     12, ITEM_NONE)
+		case 6:
+			setwildbattle(SPECIES_SCATTERBUG_MEADOW,      12, ITEM_NONE)
+		case 7:
+			setwildbattle(SPECIES_SCATTERBUG_MODERN,      12, ITEM_NONE)
+		case 8:
+			setwildbattle(SPECIES_SCATTERBUG_MARINE,      12, ITEM_NONE)
+		case 9:
+			setwildbattle(SPECIES_SCATTERBUG_ARCHIPELAGO, 12, ITEM_NONE)
+		case 10:
+			setwildbattle(SPECIES_SCATTERBUG_HIGH_PLAINS, 12, ITEM_NONE)
+		case 11:
+			setwildbattle(SPECIES_SCATTERBUG_SANDSTORM,   12, ITEM_NONE)
+		case 12:
+			setwildbattle(SPECIES_SCATTERBUG_RIVER,       12, ITEM_NONE)
+		case 13:
+			setwildbattle(SPECIES_SCATTERBUG_MONSOON,     12, ITEM_NONE)
+		case 14:
+			setwildbattle(SPECIES_SCATTERBUG_SAVANNA,     12, ITEM_NONE)
+		case 15:
+			setwildbattle(SPECIES_SCATTERBUG_SUN,         12, ITEM_NONE)
+		case 16:
+			setwildbattle(SPECIES_SCATTERBUG_OCEAN,       12, ITEM_NONE)
+		case 17:
+			setwildbattle(SPECIES_SCATTERBUG_JUNGLE,      12, ITEM_NONE)
+		case 18:
+			setwildbattle(SPECIES_SCATTERBUG_FANCY,       12, ITEM_NONE)
+		case 19:
+			setwildbattle(SPECIES_SCATTERBUG_POKEBALL,    12, ITEM_NONE)
 	}
 	return
 }
