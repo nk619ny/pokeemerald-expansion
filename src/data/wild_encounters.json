@@ -3365,7 +3365,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_RUFFLET"
               },
               {
                 "min_level": 25,
@@ -3464,7 +3464,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_RUFFLET"
               },
               {
                 "min_level": 25,
@@ -5160,7 +5160,7 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_MEOWSTIC_F"
+                "species": "SPECIES_MEOWSTIC_M"
               },
               {
                 "min_level": 40,
@@ -5564,7 +5564,7 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_MEOWSTIC_M"
+                "species": "SPECIES_MEOWSTIC_F"
               },
               {
                 "min_level": 40,
@@ -91164,7 +91164,7 @@
                 "min_level": 50,
                 "max_level": 50,
                 "species": "SPECIES_SHIINOTIC"
-              },              
+              },
               {
                 "min_level": 50,
                 "max_level": 50,
