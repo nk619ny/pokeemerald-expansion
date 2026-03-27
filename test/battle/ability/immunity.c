@@ -79,3 +79,22 @@ SINGLE_BATTLE_TEST("Immunity cures existing poison on turn 0")
         EXPECT_EQ(player->status1, STATUS1_NONE);
     }
 }
+
+SINGLE_BATTLE_TEST("Immunity halves damage from poison type moves", s16 damage)
+{
+    u16 ability;
+    PARAMETRIZE { ability = ABILITY_IMMUNITY; }
+    PARAMETRIZE { ability = ABILITY_THICK_FAT; }
+
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_SLUDGE_BOMB) == TYPE_POISON);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SNORLAX) { Ability(ability); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_SLUDGE_BOMB); }
+    } SCENE {
+        HP_BAR(opponent, captureDamage: &results[i].damage);
+    } FINALLY {
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(2), results[1].damage);
+    }
+}

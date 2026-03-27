@@ -7316,6 +7316,14 @@ static inline u32 CalcAttackStat(struct BattleContext *ctx)
                 RecordAbilityBattle(battlerDef, ABILITY_PURIFYING_SALT);
         }
         break;
+    case ABILITY_IMMUNITY:
+        if (moveType == TYPE_POISON)
+        {
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
+            if (ctx->updateFlags)
+                RecordAbilityBattle(battlerDef, ABILITY_IMMUNITY);
+        }
+        break;
     default:
         break;
     }
