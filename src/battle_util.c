@@ -3423,6 +3423,20 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
             }
             break;
+        case ABILITY_WHITE_OUT:
+            if (!shouldAbilityTrigger)
+                break;
+            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SNOW, gLastUsedAbility))
+            {
+                BattleScriptCall(BattleScript_WeatherAbilityActivates);
+                effect++;
+            }
+            else if (gBattleWeather & B_WEATHER_PRIMAL_ANY && HasWeatherEffect())
+            {
+                BattleScriptCall(BattleScript_BlockedByPrimalWeather);
+                effect++;
+            }
+            break;
         case ABILITY_ELECTRIC_SURGE:
         case ABILITY_HADRON_ENGINE:
             if (!shouldAbilityTrigger)
@@ -7265,6 +7279,10 @@ static inline u32 CalcAttackStat(struct BattleContext *ctx)
     case ABILITY_ORICHALCUM_PULSE:
         if (ctx->weather & B_WEATHER_SUN && IsBattleMovePhysical(move)
          && ctx->holdEffectAtk != HOLD_EFFECT_UTILITY_UMBRELLA)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3333));
+        break;
+    case ABILITY_WHITE_OUT:
+        if (ctx->weather & B_WEATHER_SNOW && (IsBattleMovePhysical(move) || IsBattleMoveSpecial(move)))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3333));
         break;
     case ABILITY_HADRON_ENGINE:

@@ -2495,4 +2495,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Creates strong winds."),
         .aiRating = 8,
     },
+
+    [ABILITY_WHITE_OUT] =
+    {
+        .name = _("White Out"),
+        .description = COMPOUND_STRING("Summons snow in battle."),
+        .aiRating = 8,
+    },
 };

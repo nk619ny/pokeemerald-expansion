@@ -3975,6 +3975,8 @@ static bool32 DoesAbilityBenefitFromSunOrRain(enum BattlerId battler, enum Abili
     case ABILITY_SOLAR_POWER:
     case ABILITY_ORICHALCUM_PULSE:
         return (weather & B_WEATHER_SUN);
+    case ABILITY_WHITE_OUT:
+        return (weather & B_WEATHER_SNOW);
     default:
         break;
     }
