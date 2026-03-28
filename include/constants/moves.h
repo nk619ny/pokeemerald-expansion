@@ -912,7 +912,9 @@ enum __attribute__((packed)) Move
     MOVE_THUNDER_KICK = 850,
     MOVE_TOXIC_PLACEHOLDER = 851,
     MOVE_SCALD_PLACEHOLDER = 852,
-    MOVES_COUNT = 853,
+    MOVE_DIVE_CATS = 853,
+    MOVE_FLY_CATS = 854,
+    MOVES_COUNT = 855,
 
     // Z Moves
     FIRST_Z_MOVE = MOVES_COUNT,

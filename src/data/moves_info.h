@@ -21516,6 +21516,63 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Scald,
     },
 
+        [MOVE_DIVE_CATS] =
+    {
+        .name = COMPOUND_STRING("Dive"),
+        .description = COMPOUND_STRING(
+            "Dives underwater the first\n"
+            "turn and strikes next turn."),
+        .effect = EFFECT_SEMI_INVULNERABLE,
+        .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 80 : 60,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .sleepTalkBanned = TRUE,
+        .instructBanned = TRUE,
+        .assistBanned = FALSE,
+        .sketchBanned = TRUE,
+        .skyBattleBanned = TRUE,
+        .argument.twoTurnAttack = { .stringId =  STRINGID_PKMNHIDUNDERWATER, .status = STATE_UNDERWATER },
+        .contestEffect = CONTEST_EFFECT_AVOID_STARTLE_ONCE,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = COMBO_STARTER_DIVE,
+        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE, COMBO_STARTER_SURF},
+        .battleAnimScript = gBattleAnimMove_Dive,
+        .validApprenticeMove = TRUE,
+    },
+
+        [MOVE_FLY_CATS] =
+    {
+        .name = COMPOUND_STRING("Fly"),
+        .description = COMPOUND_STRING(
+            "Flies up on the first turn,\n"
+            "then strikes the next turn."),
+        .effect = EFFECT_SEMI_INVULNERABLE,
+        .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 90 : 70,
+        .type = TYPE_FLYING,
+        .accuracy = B_CUSTOMIZED_MOVE_STATS == TRUE ? 100 : 95,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .gravityBanned = TRUE,
+        .sleepTalkBanned = TRUE,
+        .instructBanned = TRUE,
+        .assistBanned = FALSE,
+        .sketchBanned = TRUE,
+        .argument.twoTurnAttack = { .stringId =  STRINGID_PKMNFLEWHIGH, .status = STATE_ON_AIR },
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_AVOID_STARTLE_ONCE : CONTEST_EFFECT_AVOID_STARTLE,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Fly,
+        .validApprenticeMove = TRUE,
+    },
 
         [MOVE_SEARING_SUNSMASH] =
     {
