@@ -281,6 +281,13 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichBoyORAS
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RuinManiacORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TriathleteRunningMORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TwinsORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ExpertFORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ExpertMORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HexManiacORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LassTeammatesORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokemaniacORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SchoolkidFORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TriathleteRunningFORAS;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedBike;
@@ -736,6 +743,13 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RUIN_MANIAC_ORAS] =        &gObjectEventGraphicsInfo_RuinManiacORAS,
     [OBJ_EVENT_GFX_TRIATHLETE_RUNNING_M_ORAS] = &gObjectEventGraphicsInfo_TriathleteRunningMORAS,
     [OBJ_EVENT_GFX_TWINS_ORAS] =              &gObjectEventGraphicsInfo_TwinsORAS,
+    [OBJ_EVENT_GFX_EXPERT_F_ORAS] =           &gObjectEventGraphicsInfo_ExpertFORAS,
+    [OBJ_EVENT_GFX_EXPERT_M_ORAS] =           &gObjectEventGraphicsInfo_ExpertMORAS,
+    [OBJ_EVENT_GFX_HEX_MANIAC_ORAS] =         &gObjectEventGraphicsInfo_HexManiacORAS,
+    [OBJ_EVENT_GFX_LASS_TEAMMATES_ORAS] =     &gObjectEventGraphicsInfo_LassTeammatesORAS,
+    [OBJ_EVENT_GFX_POKEMANIAC_ORAS] =         &gObjectEventGraphicsInfo_PokemaniacORAS,
+    [OBJ_EVENT_GFX_SCHOOLKID_F_ORAS] =        &gObjectEventGraphicsInfo_SchoolkidFORAS,
+    [OBJ_EVENT_GFX_TRIATHLETE_RUNNING_F_ORAS] = &gObjectEventGraphicsInfo_TriathleteRunningFORAS,
 #if IS_FRLG
     [OBJ_EVENT_GFX_RED_NORMAL] =               &gObjectEventGraphicsInfo_RedNormal,
     [OBJ_EVENT_GFX_RED_BIKE] =                 &gObjectEventGraphicsInfo_RedBike,

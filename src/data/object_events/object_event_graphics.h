@@ -485,6 +485,20 @@ const u32 gObjectEventPic_TriathleteRunningMORAS[] = INCBIN_U32("graphics/object
 const u16 gObjectEventPal_TriathleteRunningMORAS[] = INCBIN_U16("graphics/object_events/pics/people/triathlete_running_m_oras.gbapal");
 const u32 gObjectEventPic_TwinsORAS[] = INCBIN_U32("graphics/object_events/pics/people/twins_oras.4bpp");
 const u16 gObjectEventPal_TwinsORAS[] = INCBIN_U16("graphics/object_events/pics/people/twins_oras.gbapal");
+const u32 gObjectEventPic_ExpertFORAS[] = INCBIN_U32("graphics/object_events/pics/people/expert_f_oras.4bpp");
+const u16 gObjectEventPal_ExpertFORAS[] = INCBIN_U16("graphics/object_events/pics/people/expert_f_oras.gbapal");
+const u32 gObjectEventPic_ExpertMORAS[] = INCBIN_U32("graphics/object_events/pics/people/expert_m_oras.4bpp");
+const u16 gObjectEventPal_ExpertMORAS[] = INCBIN_U16("graphics/object_events/pics/people/expert_m_oras.gbapal");
+const u32 gObjectEventPic_HexManiacORAS[] = INCBIN_U32("graphics/object_events/pics/people/hex_maniac_oras.4bpp");
+const u16 gObjectEventPal_HexManiacORAS[] = INCBIN_U16("graphics/object_events/pics/people/hex_maniac_oras.gbapal");
+const u32 gObjectEventPic_LassTeammatesORAS[] = INCBIN_U32("graphics/object_events/pics/people/lass_teammates_oras.4bpp");
+const u16 gObjectEventPal_LassTeammatesORAS[] = INCBIN_U16("graphics/object_events/pics/people/lass_teammates_oras.gbapal");
+const u32 gObjectEventPic_PokemaniacORAS[] = INCBIN_U32("graphics/object_events/pics/people/pokemaniac_oras.4bpp");
+const u16 gObjectEventPal_PokemaniacORAS[] = INCBIN_U16("graphics/object_events/pics/people/pokemaniac_oras.gbapal");
+const u32 gObjectEventPic_SchoolkidFORAS[] = INCBIN_U32("graphics/object_events/pics/people/schoolkid_f_oras.4bpp");
+const u16 gObjectEventPal_SchoolkidFORAS[] = INCBIN_U16("graphics/object_events/pics/people/schoolkid_f_oras.gbapal");
+const u32 gObjectEventPic_TriathleteRunningFORAS[] = INCBIN_U32("graphics/object_events/pics/people/triathlete_running_f_oras.4bpp");
+const u16 gObjectEventPal_TriathleteRunningFORAS[] = INCBIN_U16("graphics/object_events/pics/people/triathlete_running_f_oras.gbapal");
 
 
 

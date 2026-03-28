@@ -467,11 +467,18 @@
 #define OBJ_EVENT_GFX_RUIN_MANIAC_ORAS           430
 #define OBJ_EVENT_GFX_TRIATHLETE_RUNNING_M_ORAS            431
 #define OBJ_EVENT_GFX_TWINS_ORAS                           432
+#define OBJ_EVENT_GFX_EXPERT_F_ORAS                        433
+#define OBJ_EVENT_GFX_EXPERT_M_ORAS                        434
+#define OBJ_EVENT_GFX_HEX_MANIAC_ORAS                      435
+#define OBJ_EVENT_GFX_LASS_TEAMMATES_ORAS                  436
+#define OBJ_EVENT_GFX_POKEMANIAC_ORAS                      437
+#define OBJ_EVENT_GFX_SCHOOLKID_F_ORAS                     438
+#define OBJ_EVENT_GFX_TRIATHLETE_RUNNING_F_ORAS            439
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        433
+#define NUM_OBJ_EVENT_GFX                        440
 
 
 // These are dynamic object gfx ids.
@@ -646,6 +653,13 @@
 #define OBJ_EVENT_PAL_TAG_RUIN_MANIAC_ORAS             0x114F
 #define OBJ_EVENT_PAL_TAG_TRIATHLETE_RUNNING_M_ORAS    0x1170
 #define OBJ_EVENT_PAL_TAG_TWINS_ORAS                   0x1171
+#define OBJ_EVENT_PAL_TAG_EXPERT_F_ORAS                0x1172
+#define OBJ_EVENT_PAL_TAG_EXPERT_M_ORAS                0x1173
+#define OBJ_EVENT_PAL_TAG_HEX_MANIAC_ORAS              0x1174
+#define OBJ_EVENT_PAL_TAG_LASS_TEAMMATES_ORAS          0x1175
+#define OBJ_EVENT_PAL_TAG_POKEMANIAC_ORAS              0x1176
+#define OBJ_EVENT_PAL_TAG_SCHOOLKID_F_ORAS             0x1177
+#define OBJ_EVENT_PAL_TAG_TRIATHLETE_RUNNING_F_ORAS    0x1178
 
 #define OBJ_EVENT_PAL_TAG_PLAYER_RED              0x1190
 #define OBJ_EVENT_PAL_TAG_PLAYER_RED_REFLECTION   0x1191

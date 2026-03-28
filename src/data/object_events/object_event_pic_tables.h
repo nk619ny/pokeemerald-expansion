@@ -1173,6 +1173,90 @@ static const struct SpriteFrameImage sPicTable_TwinsORAS[] = {
     overworld_frame(gObjectEventPic_TwinsORAS, 2, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_ExpertFORAS[] = {
+    overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 0),
+    overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 1),
+    overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 2),
+    overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 3),
+    overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 4),
+    overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 5),
+    overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 6),
+    overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 7),
+    overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_ExpertMORAS[] = {
+    overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 0),
+    overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 1),
+    overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 2),
+    overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 3),
+    overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 4),
+    overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 5),
+    overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 6),
+    overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 7),
+    overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_HexManiacORAS[] = {
+    overworld_frame(gObjectEventPic_HexManiacORAS, 2, 4, 0),
+    overworld_frame(gObjectEventPic_HexManiacORAS, 2, 4, 1),
+    overworld_frame(gObjectEventPic_HexManiacORAS, 2, 4, 2),
+    overworld_frame(gObjectEventPic_HexManiacORAS, 2, 4, 3),
+    overworld_frame(gObjectEventPic_HexManiacORAS, 2, 4, 4),
+    overworld_frame(gObjectEventPic_HexManiacORAS, 2, 4, 5),
+    overworld_frame(gObjectEventPic_HexManiacORAS, 2, 4, 6),
+    overworld_frame(gObjectEventPic_HexManiacORAS, 2, 4, 7),
+    overworld_frame(gObjectEventPic_HexManiacORAS, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_LassTeammatesORAS[] = {
+    overworld_frame(gObjectEventPic_LassTeammatesORAS, 2, 4, 0),
+    overworld_frame(gObjectEventPic_LassTeammatesORAS, 2, 4, 1),
+    overworld_frame(gObjectEventPic_LassTeammatesORAS, 2, 4, 2),
+    overworld_frame(gObjectEventPic_LassTeammatesORAS, 2, 4, 3),
+    overworld_frame(gObjectEventPic_LassTeammatesORAS, 2, 4, 4),
+    overworld_frame(gObjectEventPic_LassTeammatesORAS, 2, 4, 5),
+    overworld_frame(gObjectEventPic_LassTeammatesORAS, 2, 4, 6),
+    overworld_frame(gObjectEventPic_LassTeammatesORAS, 2, 4, 7),
+    overworld_frame(gObjectEventPic_LassTeammatesORAS, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_PokemaniacORAS[] = {
+    overworld_frame(gObjectEventPic_PokemaniacORAS, 2, 4, 0),
+    overworld_frame(gObjectEventPic_PokemaniacORAS, 2, 4, 1),
+    overworld_frame(gObjectEventPic_PokemaniacORAS, 2, 4, 2),
+    overworld_frame(gObjectEventPic_PokemaniacORAS, 2, 4, 3),
+    overworld_frame(gObjectEventPic_PokemaniacORAS, 2, 4, 4),
+    overworld_frame(gObjectEventPic_PokemaniacORAS, 2, 4, 5),
+    overworld_frame(gObjectEventPic_PokemaniacORAS, 2, 4, 6),
+    overworld_frame(gObjectEventPic_PokemaniacORAS, 2, 4, 7),
+    overworld_frame(gObjectEventPic_PokemaniacORAS, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_SchoolkidFORAS[] = {
+    overworld_frame(gObjectEventPic_SchoolkidFORAS, 2, 4, 0),
+    overworld_frame(gObjectEventPic_SchoolkidFORAS, 2, 4, 1),
+    overworld_frame(gObjectEventPic_SchoolkidFORAS, 2, 4, 2),
+    overworld_frame(gObjectEventPic_SchoolkidFORAS, 2, 4, 3),
+    overworld_frame(gObjectEventPic_SchoolkidFORAS, 2, 4, 4),
+    overworld_frame(gObjectEventPic_SchoolkidFORAS, 2, 4, 5),
+    overworld_frame(gObjectEventPic_SchoolkidFORAS, 2, 4, 6),
+    overworld_frame(gObjectEventPic_SchoolkidFORAS, 2, 4, 7),
+    overworld_frame(gObjectEventPic_SchoolkidFORAS, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_TriathleteRunningFORAS[] = {
+    overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 0),
+    overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 1),
+    overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 2),
+    overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 3),
+    overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 4),
+    overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 5),
+    overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 6),
+    overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 7),
+    overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 8),
+};
+
 static const struct SpriteFrameImage sPicTable_SSTidal[] = {
     obj_frame_tiles(gObjectEventPic_SSTidal),
     obj_frame_tiles(gObjectEventPic_SSTidal),

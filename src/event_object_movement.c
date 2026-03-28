@@ -567,6 +567,13 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RuinManiacORAS,        OBJ_EVENT_PAL_TAG_RUIN_MANIAC_ORAS},
     {gObjectEventPal_TriathleteRunningMORAS,OBJ_EVENT_PAL_TAG_TRIATHLETE_RUNNING_M_ORAS},
     {gObjectEventPal_TwinsORAS,             OBJ_EVENT_PAL_TAG_TWINS_ORAS},
+    {gObjectEventPal_ExpertFORAS,            OBJ_EVENT_PAL_TAG_EXPERT_F_ORAS},
+    {gObjectEventPal_ExpertMORAS,            OBJ_EVENT_PAL_TAG_EXPERT_M_ORAS},
+    {gObjectEventPal_HexManiacORAS,          OBJ_EVENT_PAL_TAG_HEX_MANIAC_ORAS},
+    {gObjectEventPal_LassTeammatesORAS,      OBJ_EVENT_PAL_TAG_LASS_TEAMMATES_ORAS},
+    {gObjectEventPal_PokemaniacORAS,         OBJ_EVENT_PAL_TAG_POKEMANIAC_ORAS},
+    {gObjectEventPal_SchoolkidFORAS,         OBJ_EVENT_PAL_TAG_SCHOOLKID_F_ORAS},
+    {gObjectEventPal_TriathleteRunningFORAS,  OBJ_EVENT_PAL_TAG_TRIATHLETE_RUNNING_F_ORAS},
 
 #if IS_FRLG
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_RED},
