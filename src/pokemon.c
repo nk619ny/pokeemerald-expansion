@@ -4002,7 +4002,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, enum Item item, u8 partyIndex, 
                     u32 monLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);
                     const struct Evolution *evolutions = GetSpeciesEvolutions(GetMonData(mon, MON_DATA_SPECIES, NULL));
 
-                    for (u32 evo = 0; evolutions[evo].method != EVOLUTIONS_END; evo++)
+                    for (u32 evo = 0; evolutions != NULL && evolutions[evo].method != EVOLUTIONS_END; evo++)
                     {
                         u32 evoLevelUp = evolutions[evo].param;
 
