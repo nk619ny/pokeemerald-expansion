@@ -3442,10 +3442,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_SCOVILLAIN_MEGA] =
     {
-        .baseHP        = 65,
+        .baseHP        = 65 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 10 : 0),
         .baseAttack    = 138,
         .baseDefense   = 85,
-        .baseSpeed     = 75,
+        .baseSpeed     = 75 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 4 : 0),
         .baseSpAttack  = 138,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
@@ -5487,9 +5487,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_TATSUGIRI_CURLY_MEGA] =
     {
-        .baseHP        = 68,
+        .baseHP        = 68 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 10 : 0),
         .baseAttack    = 65,
-        .baseDefense   = 90,
+        .baseDefense   = 90 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 10 : 0),
         .baseSpeed     = 92,
         .baseSpAttack  = 135,
         .baseSpDefense = 125,
@@ -5545,9 +5545,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_TATSUGIRI_DROOPY_MEGA] =
     {
-        .baseHP        = 68,
+        .baseHP        = 68 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 10 : 0),
         .baseAttack    = 65,
-        .baseDefense   = 90,
+        .baseDefense   = 90 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 10 : 0),
         .baseSpeed     = 92,
         .baseSpAttack  = 135,
         .baseSpDefense = 125,
@@ -5603,9 +5603,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_TATSUGIRI_STRETCHY_MEGA] =
     {
-        .baseHP        = 68,
+        .baseHP        = 68 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 10 : 0),
         .baseAttack    = 65,
-        .baseDefense   = 90,
+        .baseDefense   = 90 + (B_CUSTOMIZED_GEN_9_STATS == TRUE ? 10 : 0),
         .baseSpeed     = 92,
         .baseSpAttack  = 135,
         .baseSpDefense = 125,

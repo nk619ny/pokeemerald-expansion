@@ -1700,10 +1700,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     {
         .baseHP        = 97,
         .baseAttack    = 157,
-        .baseDefense   = 122,
+        .baseDefense   = 122 + (B_CUSTOMIZED_GEN_7_STATS == TRUE ? 10 : 0),
         .baseSpeed     = 33,
-        .baseSpAttack  = 62,
-        .baseSpDefense = 107,
+        .baseSpAttack  = 62 + (B_CUSTOMIZED_GEN_7_STATS == TRUE ? 10 : 0),
+        .baseSpDefense = 107 + (B_CUSTOMIZED_GEN_7_STATS == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_ICE),
         .catchRate = 60,
         .expYield = 167,
@@ -5619,7 +5619,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_DRAMPA_MEGA] =
     {
-        .baseHP        = 78,
+        .baseHP        = 78 + (B_CUSTOMIZED_GEN_7_STATS == TRUE ? 25 : 0),
         .baseAttack    = 85,
         .baseDefense   = 110,
         .baseSpeed     = 36,

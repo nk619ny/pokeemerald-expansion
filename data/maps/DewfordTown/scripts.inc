@@ -1648,6 +1648,41 @@ DewfordTown_EventScript_BrineyWaterStone_3:
 	goto DewfordTown_EventScript_BrineyWaterStone_1
 
 
+DewfordTown_EventScript_LowSweepBlackBelt::
+# 831 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 832 "data/maps/DewfordTown/scripts.pory"
+	faceplayer
+# 833 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_LowSweepBlackBelt_Text_0, MSGBOX_DEFAULT
+# 834 "data/maps/DewfordTown/scripts.pory"
+	checkitem ITEM_TM_LOW_SWEEP
+# 835 "data/maps/DewfordTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq DewfordTown_EventScript_LowSweepBlackBelt_2
+# 842 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 843 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_LowSweepBlackBelt_Text_2, MSGBOX_DEFAULT
+DewfordTown_EventScript_LowSweepBlackBelt_1:
+# 845 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 846 "data/maps/DewfordTown/scripts.pory"
+	releaseall
+	end
+
+DewfordTown_EventScript_LowSweepBlackBelt_2:
+# 836 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 837 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_LowSweepBlackBelt_Text_1, MSGBOX_DEFAULT
+# 838 "data/maps/DewfordTown/scripts.pory"
+	giveitem ITEM_TM_LOW_SWEEP
+# 839 "data/maps/DewfordTown/scripts.pory"
+	waitfanfare
+	goto DewfordTown_EventScript_LowSweepBlackBelt_1
+
+
 DewfordTown_EventScript_GymBlocker_Text_0:
 # 811 "data/maps/DewfordTown/scripts.pory"
 	.string "Ah, Trainer!\p"
@@ -1666,3 +1701,19 @@ DewfordTown_EventScript_BrineyWaterStone_Text_0:
 	.string "to have found a Water Stone while\l"
 	.string "sailing that you might be interested in.\l"
 	.string "Here you go!$"
+
+DewfordTown_EventScript_LowSweepBlackBelt_Text_0:
+# 833 "data/maps/DewfordTown/scripts.pory"
+	.string "I'm training to become one of Brawly's\n"
+	.string "Gym Trainers.$"
+
+DewfordTown_EventScript_LowSweepBlackBelt_Text_1:
+# 837 "data/maps/DewfordTown/scripts.pory"
+	.string "My signature technique is the Low\n"
+	.string "Sweep! Here, take this TM and learn it\l"
+	.string "for yourself.$"
+
+DewfordTown_EventScript_LowSweepBlackBelt_Text_2:
+# 843 "data/maps/DewfordTown/scripts.pory"
+	.string "I'm not there yet, but with enough\n"
+	.string "determination, I know I'll make it!$"

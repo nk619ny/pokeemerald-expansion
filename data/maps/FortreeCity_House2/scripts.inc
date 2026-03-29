@@ -160,3 +160,43 @@ FortreeCity_House2_Text_YouGuessedWrong:
 	.string "No, too bad.\n"
 # 81 "data/maps/FortreeCity_House2/scripts.pory"
 	.string "You guessed wrong.$"
+
+FortreeCity_House2_EventScript_GiveSleepTalk::
+# 87 "data/maps/FortreeCity_House2/scripts.pory"
+	lock
+# 88 "data/maps/FortreeCity_House2/scripts.pory"
+	faceplayer
+# 89 "data/maps/FortreeCity_House2/scripts.pory"
+	msgbox FortreeCity_House2_EventScript_GiveSleepTalk_Text_0, MSGBOX_DEFAULT
+# 90 "data/maps/FortreeCity_House2/scripts.pory"
+	checkitem ITEM_TM_SLEEP_TALK
+# 91 "data/maps/FortreeCity_House2/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq FortreeCity_House2_EventScript_GiveSleepTalk_2
+FortreeCity_House2_EventScript_GiveSleepTalk_1:
+# 97 "data/maps/FortreeCity_House2/scripts.pory"
+	releaseall
+	end
+
+FortreeCity_House2_EventScript_GiveSleepTalk_2:
+# 92 "data/maps/FortreeCity_House2/scripts.pory"
+	closemessage
+# 93 "data/maps/FortreeCity_House2/scripts.pory"
+	msgbox FortreeCity_House2_EventScript_GiveSleepTalk_Text_1, MSGBOX_DEFAULT
+# 94 "data/maps/FortreeCity_House2/scripts.pory"
+	giveitem ITEM_TM_SLEEP_TALK
+# 95 "data/maps/FortreeCity_House2/scripts.pory"
+	waitfanfare
+	goto FortreeCity_House2_EventScript_GiveSleepTalk_1
+
+
+FortreeCity_House2_EventScript_GiveSleepTalk_Text_0:
+# 89 "data/maps/FortreeCity_House2/scripts.pory"
+	.string "There is no joy like a nice, long nap.$"
+
+FortreeCity_House2_EventScript_GiveSleepTalk_Text_1:
+# 93 "data/maps/FortreeCity_House2/scripts.pory"
+	.string "Your Pokémon should take a relaxing nap\n"
+	.string "every now and then, too.\p"
+	.string "With Sleep Talk, they can continue to\n"
+	.string "battle even while snoozing!$"

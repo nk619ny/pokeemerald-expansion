@@ -1527,6 +1527,37 @@ Route111_South_RemoveDuplicateBianca::
 	end
 
 
+Route111_EventScript_BrickBreakBlackBelt::
+# 782 "data/maps/Route111/scripts.pory"
+	lock
+# 783 "data/maps/Route111/scripts.pory"
+	faceplayer
+# 784 "data/maps/Route111/scripts.pory"
+	msgbox Route111_EventScript_BrickBreakBlackBelt_Text_0, MSGBOX_DEFAULT
+# 785 "data/maps/Route111/scripts.pory"
+	checkitem ITEM_TM_BRICK_BREAK
+# 786 "data/maps/Route111/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route111_EventScript_BrickBreakBlackBelt_2
+Route111_EventScript_BrickBreakBlackBelt_1:
+# 792 "data/maps/Route111/scripts.pory"
+	closemessage
+# 793 "data/maps/Route111/scripts.pory"
+	releaseall
+	end
+
+Route111_EventScript_BrickBreakBlackBelt_2:
+# 787 "data/maps/Route111/scripts.pory"
+	closemessage
+# 788 "data/maps/Route111/scripts.pory"
+	msgbox Route111_EventScript_BrickBreakBlackBelt_Text_1, MSGBOX_DEFAULT
+# 789 "data/maps/Route111/scripts.pory"
+	giveitem ITEM_TM_BRICK_BREAK
+# 790 "data/maps/Route111/scripts.pory"
+	waitfanfare
+	goto Route111_EventScript_BrickBreakBlackBelt_1
+
+
 Route111_EventScript_WinstratesCheckBadge_Text_0:
 # 734 "data/maps/Route111/scripts.pory"
 	.string "Before we start, do you have the\n"
@@ -1551,6 +1582,18 @@ Route111_EventScript_ScorcingSandsHiker_Text_1:
 # 765 "data/maps/Route111/scripts.pory"
 	.string "Take this, so your Pokémon are prepared\n"
 	.string "too.$"
+
+Route111_EventScript_BrickBreakBlackBelt_Text_0:
+# 784 "data/maps/Route111/scripts.pory"
+	.string "I've trained really hard, and I can\n"
+	.string "Break Bricks with my bare hands!\p"
+	.string "...I still can't Smash Rocks, though, so\n"
+	.string "I'm stuck here.$"
+
+Route111_EventScript_BrickBreakBlackBelt_Text_1:
+# 788 "data/maps/Route111/scripts.pory"
+	.string "If you take this TM, at least all my\n"
+	.string "training won't have gone to waste.$"
 
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash::
 # 741 "data/maps/Route111/scripts.pory"

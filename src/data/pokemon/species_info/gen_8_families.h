@@ -5564,12 +5564,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_FALINKS_MEGA] =
     {
-        .baseHP        = 65,
+        .baseHP        = 65 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 15 : 0),
         .baseAttack    = 135,
         .baseDefense   = 135,
-        .baseSpeed     = 100,
+        .baseSpeed     = 100 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 55 : 0),
         .baseSpAttack  = 70,
-        .baseSpDefense = 65,
+        .baseSpDefense = 65 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
         .expYield = 165,

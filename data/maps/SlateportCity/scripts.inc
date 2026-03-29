@@ -2766,6 +2766,37 @@ SlateportCity_EventScript_AerialAce_2:
 	goto SlateportCity_EventScript_AerialAce_1
 
 
+Route111_EventScript_DrainingKissSailor::
+# 1393 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1394 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1395 "data/maps/SlateportCity/scripts.pory"
+	checkitem ITEM_TM_DRAINING_KISS
+# 1396 "data/maps/SlateportCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route111_EventScript_DrainingKissSailor_2
+# 1403 "data/maps/SlateportCity/scripts.pory"
+	msgbox Route111_EventScript_DrainingKissSailor_Text_1, MSGBOX_DEFAULT
+Route111_EventScript_DrainingKissSailor_1:
+# 1405 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1406 "data/maps/SlateportCity/scripts.pory"
+	releaseall
+	end
+
+Route111_EventScript_DrainingKissSailor_2:
+# 1397 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1398 "data/maps/SlateportCity/scripts.pory"
+	msgbox Route111_EventScript_DrainingKissSailor_Text_0, MSGBOX_DEFAULT
+# 1399 "data/maps/SlateportCity/scripts.pory"
+	giveitem ITEM_TM_DRAINING_KISS
+# 1400 "data/maps/SlateportCity/scripts.pory"
+	waitfanfare
+	goto Route111_EventScript_DrainingKissSailor_1
+
+
 SlateportCity_EventScript_FarmSign_Text_0:
 # 1364 "data/maps/SlateportCity/scripts.pory"
 	.string "Tunnel to Slateport Farm$"
@@ -2787,3 +2818,16 @@ SlateportCity_EventScript_AerialAce_Text_1:
 # 1382 "data/maps/SlateportCity/scripts.pory"
 	.string "You should use this TM to make your bird\n"
 	.string "Pokémon stronger.$"
+
+Route111_EventScript_DrainingKissSailor_Text_0:
+# 1398 "data/maps/SlateportCity/scripts.pory"
+	.string "Listen here, youngster.\p"
+	.string "If you let yourself get caught up with\n"
+	.string "the wrong person, they can sap the\l"
+	.string "light right out of your life.\p"
+	.string "Take this, so you can learn from my\n"
+	.string "mistakes.$"
+
+Route111_EventScript_DrainingKissSailor_Text_1:
+# 1403 "data/maps/SlateportCity/scripts.pory"
+	.string "Don't forget what I've told you, now...$"

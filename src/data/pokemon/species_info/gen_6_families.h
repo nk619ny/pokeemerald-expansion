@@ -235,7 +235,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_BULLETPROOF },
+        .abilities = { ABILITY_BULLETPROOF, ABILITY_BULLETPROOF, ABILITY_BULLETPROOF },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Chesnaught"),
     #if P_MODIFIED_MEGA_CRIES
@@ -513,7 +513,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_MAGICIAN },
+        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Delphox"),
     #if P_MODIFIED_MEGA_CRIES
@@ -915,7 +915,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_PROTEAN },
+        .abilities = { ABILITY_PROTEAN, ABILITY_PROTEAN, ABILITY_PROTEAN },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
         .speciesName = _("Greninja"),
@@ -1930,10 +1930,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     {
         .baseHP        = 86,
         .baseAttack    = 88,
-        .baseDefense   = 92,
+        .baseDefense   = 92 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 5 : 0),
         .baseSpeed     = 126,
-        .baseSpAttack  = 129,
-        .baseSpDefense = 86,
+        .baseSpAttack  = 129 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 10 : 0),
+        .baseSpDefense = 86 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 5 : 0),
         .types = MON_TYPES(TYPE_FIRE, TYPE_NORMAL),
         .catchRate = 65,
         .expYield = 177,
@@ -2986,11 +2986,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_MEOWSTIC_M_MEGA] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 48,
+        .baseHP        = 74 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 20 : 0),
+        .baseAttack    = 48 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 10 : 0),
         .baseDefense   = 76,
         .baseSpeed     = 124,
-        .baseSpAttack  = 143,
+        .baseSpAttack  = 143 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 10 : 0),
         .baseSpDefense = 101,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 75,
@@ -3045,10 +3045,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     {
         .baseHP        = 74,
         .baseAttack    = 48,
-        .baseDefense   = 76,
+        .baseDefense   = 76 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 10 : 0),
         .baseSpeed     = 124,
-        .baseSpAttack  = 143,
-        .baseSpDefense = 101,
+        .baseSpAttack  = 143 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 20 : 0),
+        .baseSpDefense = 101 + (B_CUSTOMIZED_GEN_6_STATS == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 75,
         .expYield = 163,
@@ -3844,7 +3844,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_CONTRARY, ABILITY_SUCTION_CUPS, ABILITY_INFILTRATOR },
+        .abilities = { ABILITY_CONTRARY, ABILITY_CONTRARY, ABILITY_CONTRARY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Malamar"),
     #if P_MODIFIED_MEGA_CRIES

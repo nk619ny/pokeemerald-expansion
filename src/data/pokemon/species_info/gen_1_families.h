@@ -4315,9 +4315,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_RAICHU_MEGA_X] =
     {
         .baseHP        = 60,
-        .baseAttack    = 135,
-        .baseDefense   = 95,
-        .baseSpeed     = 110,
+        .baseAttack    = 135 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
+        .baseDefense   = 95 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
+        .baseSpeed     = 110 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
         .baseSpAttack  = 90,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_ELECTRIC),
@@ -4375,11 +4375,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_RAICHU_MEGA_Y] =
     {
         .baseHP        = 60,
-        .baseAttack    = 100,
+        .baseAttack    = 100 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
         .baseDefense   = 55,
-        .baseSpeed     = 130,
+        .baseSpeed     = 130 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
         .baseSpAttack  = 160,
-        .baseSpDefense = 80,
+        .baseSpDefense = 80 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 75,
         .expYield = RAICHU_EXP_YIELD,
@@ -5432,8 +5432,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 80,
         .baseDefense   = 93,
         .baseSpeed     = 70,
-        .baseSpAttack  = 135,
-        .baseSpDefense = 110,
+        .baseSpAttack  = 135 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
+        .baseSpDefense = 110 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
         .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
         .catchRate = 25,
         .expYield = 242,
@@ -9742,11 +9742,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_VICTREEBEL_MEGA] =
     {
         .baseHP        = 80,
-        .baseAttack    = 125,
-        .baseDefense   = 85,
+        .baseAttack    = 125 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
+        .baseDefense   = 85 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
         .baseSpeed     = 70,
         .baseSpAttack  = 135,
-        .baseSpDefense = 95,
+        .baseSpDefense = 95 + (B_CUSTOMIZED_GEN_1_STATS == TRUE ? 5 : 0),
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 45,
         .expYield = 245,
@@ -16403,7 +16403,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_ILLUMINATE, ABILITY_NATURAL_CURE, ABILITY_ANALYTIC },
+        .abilities = { ABILITY_HUGE_POWER, ABILITY_HUGE_POWER, ABILITY_HUGE_POWER },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Starmie"),
     #if P_MODIFIED_MEGA_CRIES
@@ -21068,7 +21068,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_MULTISCALE },
+        .abilities = { ABILITY_MULTISCALE, ABILITY_MULTISCALE, ABILITY_MULTISCALE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Dragonite"),
     #if P_MODIFIED_MEGA_CRIES

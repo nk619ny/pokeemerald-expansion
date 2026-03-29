@@ -2178,3 +2178,44 @@ LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily:
 	.string "I bet you can make smoother, better\n"
 # 1090 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
 	.string "{POKEBLOCK}S if you have more people.$"
+
+LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl::
+# 1095 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	lock
+# 1096 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	faceplayer
+# 1097 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	msgbox LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl_Text_0, MSGBOX_DEFAULT
+# 1098 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	checkitem ITEM_TM_DAZZLING_GLEAM
+# 1099 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl_2
+LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl_1:
+# 1105 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl_2:
+# 1100 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	msgbox LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl_Text_1, MSGBOX_DEFAULT
+# 1101 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	closemessage
+# 1102 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	giveitem ITEM_TM_DAZZLING_GLEAM
+# 1103 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	waitfanfare
+	goto LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl_1
+
+
+LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl_Text_0:
+# 1097 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	.string "I've been conditioning my Pokémon into\n"
+	.string "peak beauty.\p"
+	.string "Now she's ready for the master-ranked\n"
+	.string "contest!$"
+
+LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl_Text_1:
+# 1100 "data/maps/LilycoveCity_ContestLobby/scripts.pory"
+	.string "Your Pokémon can dazzling others, too,\n"
+	.string "if they know this move.$"

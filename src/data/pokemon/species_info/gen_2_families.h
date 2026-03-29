@@ -236,7 +236,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_MEGANIUM_MEGA] =
     {
         .baseHP        = 80,
-        .baseAttack    = 92,
+        .baseAttack    = 92 + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 10 : 0),
         .baseDefense   = 115,
         .baseSpeed     = 80,
         .baseSpAttack  = 143,
@@ -957,7 +957,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_SHEER_FORCE, ABILITY_INTIMIDATE }, //Changed
+        .abilities = { ABILITY_TORRENT, ABILITY_SHEER_FORCE, ABILITY_STRONG_JAW }, //Changed
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Feraligatr"),
         .cryId = CRY_FERALIGATR,
@@ -1018,8 +1018,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseHP        = 85,
         .baseAttack    = 160,
         .baseDefense   = 125,
-        .baseSpeed     = 78,
-        .baseSpAttack  = 89,
+        .baseSpeed     = 78 + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 10 : 0),
+        .baseSpAttack  = 89 - (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 5 : 0),
         .baseSpDefense = 93,
         .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
         .catchRate = 45,

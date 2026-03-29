@@ -10569,12 +10569,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_CHIMECHO_MEGA] =
     {
-        .baseHP        = 75,
+        .baseHP        = 75 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
         .baseAttack    = 50,
-        .baseDefense   = 110,
-        .baseSpeed     = 65,
+        .baseDefense   = 110 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
+        .baseSpeed     = 65 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 15 : 0),
         .baseSpAttack  = 135,
-        .baseSpDefense = 120,
+        .baseSpDefense = 120 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_STEEL),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_7
@@ -10718,11 +10718,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_ABSOL_MEGA] =
     {
         .baseHP        = 65,
-        .baseAttack    = 150 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
-        .baseDefense   = 60,
+        .baseAttack    = 150 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 5 : 0),
+        .baseDefense   = 60 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 5 : 0),
         .baseSpeed     = 115,
-        .baseSpAttack  = 115 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
-        .baseSpDefense = 60,
+        .baseSpAttack  = 115 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 5 : 0),
+        .baseSpDefense = 60 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 5 : 0),
         .types = MON_TYPES(TYPE_DARK, TYPE_FAIRY),
         .catchRate = 30,
         .expYield = 198,
@@ -10795,10 +10795,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 65,
         .baseAttack    = 154,
-        .baseDefense   = 60,
+        .baseDefense   = 60 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 5 : 0),
         .baseSpeed     = 151,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 75 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
+        .baseSpDefense = 60 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 5 : 0),
         .types = MON_TYPES(TYPE_DARK, TYPE_GHOST),
         .catchRate = 30,
         .expYield = 198,
@@ -11160,11 +11160,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_FROSLASS_MEGA] =
     {
         .baseHP        = 70,
-        .baseAttack    = 80,
+        .baseAttack    = 80 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 10 : 0),
         .baseDefense   = 70,
-        .baseSpeed     = 120,
-        .baseSpAttack  = 140,
-        .baseSpDefense = 100,
+        .baseSpeed     = 120 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 10 : 0),
+        .baseSpAttack  = 140 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 10 : 0),
+        .baseSpDefense = 100 + (B_CUSTOMIZED_GEN_4_STATS == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_ICE, TYPE_GHOST),
         .catchRate = 75,
         .expYield = 168,
@@ -11174,7 +11174,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_SNOW_CLOAK, ABILITY_NONE, ABILITY_CURSED_BODY },
+        .abilities = { ABILITY_SNOW_WARNING, ABILITY_SNOW_WARNING, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Froslass"),
     #if P_MODIFIED_MEGA_CRIES
