@@ -136,8 +136,8 @@ SECTIONS {
     ALIGN(4)
     {
         __start_tests = .;
-        test/test_test_runner.o(.tests); /* Sanity checks first. */
-        test/*.o(.tests);
+        KEEP(test/test_test_runner.o(.tests)); /* Sanity checks first. */
+        KEEP(test/*.o(.tests));
         __stop_tests = .;
         test/*.o(.text);
         test/*.o(.rodata*);
