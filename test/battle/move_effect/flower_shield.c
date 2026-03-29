@@ -84,3 +84,36 @@ AI_DOUBLE_BATTLE_TEST("AI uses Flower Shield")
         TURN { EXPECT_MOVE(opponentLeft, MOVE_FLOWER_SHIELD); }
     }
 }
+
+DOUBLE_BATTLE_TEST("Flower Shield also raises Special Defense of Grass-type Pokémon under Grassy Terrain")
+{
+    GIVEN {
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_SUNKERN, 0) == TYPE_GRASS);
+        PLAYER(SPECIES_TANGELA);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SUNKERN);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_GRASSY_TERRAIN); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentLeft, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
+        TURN { MOVE(playerRight, MOVE_FLOWER_SHIELD); MOVE(playerLeft, MOVE_CELEBRATE); MOVE(opponentLeft, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASSY_TERRAIN, playerLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_FLOWER_SHIELD, playerRight);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
+        MESSAGE("Tangela's Defense rose!");
+        MESSAGE("Tangela's Sp. Def rose!");
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
+        MESSAGE("The opposing Sunkern's Defense rose!");
+        MESSAGE("The opposing Sunkern's Sp. Def rose!");
+    } THEN {
+        EXPECT_EQ(playerLeft->statStages[STAT_DEF], DEFAULT_STAT_STAGE + 1);
+        EXPECT_EQ(playerLeft->statStages[STAT_SPDEF], DEFAULT_STAT_STAGE + 1);
+        EXPECT_EQ(opponentLeft->statStages[STAT_DEF], DEFAULT_STAT_STAGE + 1);
+        EXPECT_EQ(opponentLeft->statStages[STAT_SPDEF], DEFAULT_STAT_STAGE + 1);
+        EXPECT_EQ(playerRight->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
+        EXPECT_EQ(playerRight->statStages[STAT_SPDEF], DEFAULT_STAT_STAGE);
+        EXPECT_EQ(opponentRight->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
+        EXPECT_EQ(opponentRight->statStages[STAT_SPDEF], DEFAULT_STAT_STAGE);
+    }
+}
