@@ -23058,10 +23058,11 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / SEQUENCE SWITCHING
 
 Weezing-Galar  @ Assault Vest
 Ability: Neutralizing Gas  
+Level: 60
 Tera Type: Poison  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -23073,6 +23074,7 @@ IVs: 0 Atk
 
 Toedscruel  
 Ability: Mycelium Might  
+Level: 60
 Tera Type: Ground  
 EVs: 252 HP / 4 SpD / 252 Spe  
 Timid Nature  
@@ -23084,6 +23086,7 @@ IVs: 0 Atk
 
 Archeops @ Leftovers  
 Ability: Klutz  
+Level: 60
 Tera Type: Rock  
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
@@ -23091,6 +23094,17 @@ Jolly Nature
 - Dual Wingbeat  
 - Dragon Tail  
 - Aqua Tail  
+
+Pyroar (F)
+Ability: Rivalry  
+Level: 60
+Tera Type: Fire  
+IVs: 0 Atk  
+EVs: 128 HP / 252 SpA / 128 Spe  
+- Flamethrower  
+- Dark Pulse  
+- Echoed Voice  
+- Helping Hand  
 
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 === /* Magma Hideout */
