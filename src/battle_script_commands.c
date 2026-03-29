@@ -10786,7 +10786,7 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         ball->divider = 4096;
         break;
     case BALL_PREMIER:
-        if (battleMon->level == 2)
+        if (battleMon->level == 1)
             ball->guaranteedCapture = TRUE;
         break;
     }
