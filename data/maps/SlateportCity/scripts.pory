@@ -1387,3 +1387,22 @@ script SlateportCity_EventScript_AerialAce {
 	releaseall
 	end
 }
+
+
+script Route111_EventScript_DrainingKissSailor {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_DRAINING_KISS)
+	if(var(VAR_RESULT) == FALSE) {
+		closemessage
+    	msgbox(format("Listen here, youngster.\pIf you let yourself get caught up with the wrong person, they can sap the light right out of your life.\pTake this, so you can learn from my mistakes."), MSGBOX_DEFAULT)
+		giveitem(ITEM_TM_DRAINING_KISS)
+		waitfanfare
+	}
+	else {
+		msgbox(format("Don't forget what I've told you, now..."), MSGBOX_DEFAULT)
+	}
+	closemessage
+	releaseall
+	end
+}

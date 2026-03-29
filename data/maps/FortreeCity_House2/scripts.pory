@@ -81,3 +81,19 @@ FortreeCity_House2_Text_YouGuessedWrong:
 	.string "You guessed wrong.$"
 
 `
+
+
+script FortreeCity_House2_EventScript_GiveSleepTalk {
+	lock
+	faceplayer
+    msgbox(format("There is no joy like a nice, long nap."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_SLEEP_TALK)
+	if(var(VAR_RESULT) == FALSE) {
+		closemessage
+    	msgbox(format("Your Pokémon should take a relaxing nap every now and then, too.\pWith Sleep Talk, they can continue to battle even while snoozing!"), MSGBOX_DEFAULT)
+		giveitem(ITEM_TM_SLEEP_TALK)
+		waitfanfare
+	}
+	releaseall
+	end
+}

@@ -1090,3 +1090,18 @@ LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily:
 	.string "{POKEBLOCK}S if you have more people.$"
 
 `
+
+script LilycoveCity_ContestLobby_EventScript_DazzlingGleamGirl {
+	lock
+	faceplayer
+	msgbox(format("I've been conditioning my Pokémon into peak beauty.\pNow she's ready for the master-ranked contest!"), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_DAZZLING_GLEAM)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Your Pokémon can dazzling others, too, if they know this move."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_DAZZLING_GLEAM)
+		waitfanfare
+	}
+	releaseall
+	end
+}

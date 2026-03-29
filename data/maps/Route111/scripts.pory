@@ -777,3 +777,19 @@ script Route111_South_RemoveDuplicateBianca{
 	releaseall
 	end
 }
+
+script Route111_EventScript_BrickBreakBlackBelt {
+	lock
+	faceplayer
+    msgbox(format("I've trained really hard, and I can Break Bricks with my bare hands!\p...I still can't Smash Rocks, though, so I'm stuck here."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_BRICK_BREAK)
+	if(var(VAR_RESULT) == FALSE) {
+		closemessage
+    	msgbox(format("If you take this TM, at least all my training won't have gone to waste."), MSGBOX_DEFAULT)
+		giveitem(ITEM_TM_BRICK_BREAK)
+		waitfanfare
+	}
+	closemessage
+	releaseall
+	end
+}

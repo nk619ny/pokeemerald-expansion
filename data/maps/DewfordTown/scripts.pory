@@ -825,3 +825,24 @@ script DewfordTown_EventScript_BrineyWaterStone {
 	}
 	return
 }
+
+
+script DewfordTown_EventScript_LowSweepBlackBelt {
+	lock
+	faceplayer
+    msgbox(format("I'm training to become one of Brawly's Gym Trainers."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_LOW_SWEEP)
+	if(var(VAR_RESULT) == FALSE) {
+		closemessage
+    	msgbox(format("My signature technique is the Low Sweep! Here, take this TM and learn it for yourself."), MSGBOX_DEFAULT)
+		giveitem(ITEM_TM_LOW_SWEEP)
+		waitfanfare
+	}
+	else{
+		closemessage
+		msgbox(format("I'm not there yet, but with enough determination, I know I'll make it!"), MSGBOX_DEFAULT)
+	}
+	closemessage
+	releaseall
+	end
+}
