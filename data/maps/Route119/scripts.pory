@@ -614,3 +614,19 @@ Route119_Text_TrainerTipsDecoration:
 	.string "your very own SECRET BASE exactly the\l"
 	.string "way you want.$"
 `
+
+script Route119_EventScript_DualWingbeatKeeper {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_DUAL_WINGBEAT)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("When your opponents are expecting a Wing Attack, you can catch them off guard with a Dual Wingbeat instead!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_DUAL_WINGBEAT)
+		waitfanfare
+	}
+	msgbox(format("People are always underestimating flying-type Pokémon.\pThat's one of the reasons I'm grateful for Winona."), MSGBOX_DEFAULT)
+	closemessage
+	releaseall
+	end
+}

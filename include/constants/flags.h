@@ -291,7 +291,7 @@
 #define FLAG_RECEIVED_EEVEE_FROM_NORMAN      0x101 //was Old Rod, but changed to Eevee
 #define FLAG_RECEIVED_COIN_CASE              0x102 // changed to use new Scott plotline
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0x103
-#define FLAG_RECEIVED_TM_SNATCH              0x104
+#define FLAG_RECEIVED_TM_SNATCH              0x104 // now unused and available for repurposing
 #define FLAG_RECEIVED_TM_DIG                 0x105
 #define FLAG_RECEIVED_TM_BULLET_SEED         0x106
 #define FLAG_ENTERED_ELITE_FOUR              0x107
@@ -1094,7 +1094,7 @@
 #define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
 #define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414
+#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414 // now unused and available
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417

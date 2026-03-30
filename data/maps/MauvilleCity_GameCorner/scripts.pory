@@ -218,7 +218,7 @@ MauvilleCity_GameCorner_EventScript_PrizeCornerTMs::
 	faceplayer
 	msgbox MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes, MSGBOX_DEFAULT
 	checkitem ITEM_COIN_CASE
-	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_GameCorner_EventScript_ChooseTMPrizeMessage
+	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_GameCorner_EventScript_NewTMPrizes
 	release
 	end
 
@@ -1556,4 +1556,9 @@ script MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForRarePrize {
 		waitmessage
 		releaseall
 		return
+}
+
+script MauvilleCity_GameCorner_EventScript_NewTMPrizes {
+	releaseall
+	return	
 }

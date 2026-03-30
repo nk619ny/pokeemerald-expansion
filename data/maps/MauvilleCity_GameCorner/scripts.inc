@@ -439,7 +439,7 @@ MauvilleCity_GameCorner_EventScript_PrizeCornerTMs::
 # 220 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	checkitem ITEM_COIN_CASE
 # 221 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_GameCorner_EventScript_ChooseTMPrizeMessage
+	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_GameCorner_EventScript_NewTMPrizes
 # 222 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	release
 # 223 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -3615,6 +3615,12 @@ MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForRarePrize::
 # 1556 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	waitmessage
 # 1557 "data/maps/MauvilleCity_GameCorner/scripts.pory"
+	releaseall
+	return
+
+
+MauvilleCity_GameCorner_EventScript_NewTMPrizes::
+# 1562 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	releaseall
 	return
 

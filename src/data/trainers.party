@@ -1330,7 +1330,7 @@ Adamant Nature
 - Stone Edge  
 
 Feraligatr @ Feraligite  
-Ability: Intimidate  
+Ability: Strong Jaw  
 Ball: Great
 Level: 65
 EVs: 252 HP / 252 Atk / 4 Spe  
@@ -9406,7 +9406,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Slack Off
 - Feint Attack
 
-=== TRAINER_ANNA_AND_MEG_1 === /* Route */
+=== TRAINER_ANNA_AND_MEG_1 === /* Route 117 */ /* TO BE ADDED */
 Name: ANNA & MEG
 Class: Sr And Jr
 Pic: Sr And Jr
@@ -17575,7 +17575,7 @@ Tera Type: Normal
 
 Feraligatr  
 Level: 54
-Ability: Intimidate  
+Ability: Torrent  
 Tera Type: Water  
 - Aqua Jet  
 - Aqua Tail  
@@ -18835,7 +18835,7 @@ Brave Nature
 
 Lilligant-Hisui (F) @ Coba Berry  
 Ability: Chlorophyll  
-Level: 66
+Level: 65
 Ball: Timer
 Tera Type: Grass  
 EVs: 252 Atk / 4 SpD / 252 Spe  
@@ -18847,7 +18847,7 @@ Adamant Nature
 
 Charizard @ Charti Berry  
 Ability: Solar Power  
-Level: 66
+Level: 65
 Ball: Timer
 Tera Type: Fire  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -18860,7 +18860,7 @@ IVs: 0 Atk
 
 Walking Wake @ Expert Belt  
 Ability: Protosynthesis  
-Level: 66
+Level: 65
 Ball: Timer
 Tera Type: Electric  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -18873,7 +18873,7 @@ IVs: 0 Atk /*IVs: 31 HP / 2 Atk / 30 Def / 31 SpA / 31 SpD / 30 Spe / HP Electri
 
 Gouging Fire @ Weakness Policy  
 Ability: Protosynthesis  
-Level: 66
+Level: 65
 Ball: Timer
 Tera Type: Fire  
 EVs: 128 HP / 128 Atk / 252 Spe  
@@ -18885,7 +18885,7 @@ Jolly Nature
 
 Camerupt @ Cameruptite  
 Ability: Magma Armor 
-Level: 66
+Level: 65
 Ball: Timer
 Tera Type: Fire  
 EVs: 252 HP / 252 SpA / 4 SpD  
@@ -23576,7 +23576,7 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Gigalith  
+Gigalith @ Muscle Band
 Ability: Sand Stream  
 Ball: Heavy
 Level: 64
@@ -23587,7 +23587,7 @@ Adamant Nature
 - Curse  
 - Wide Guard  
 
-Landorus (M)  
+Landorus (M) @ Yache Berry
 Ability: Sand Force  
 Ball: Heavy
 Level: 64
@@ -23601,7 +23601,7 @@ IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe / HP Flying I
 - Weather Ball  
 
 Steelix @ Steelixite  
-Ability: Sand Force  
+Ability: Sturdy
 Ball: Heavy
 Level: 64
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -23611,7 +23611,7 @@ Adamant Nature
 - Rock Slide  
 - Body Press  
 
-Regirock  
+Regirock  @ Kee Berry
 Ability: Solid Rock  
 Ball: Heavy
 Level: 64
@@ -23622,7 +23622,7 @@ Impish Nature
 - Thunder Punch  
 - Shore Up  
 
-Excadrill  
+Excadrill  @ Focus Sash
 Ability: Sand Rush  
 Ball: Heavy
 Level: 64
@@ -23633,8 +23633,7 @@ Adamant Nature
 - Brick Break  
 - Swords Dance  
 
-/*
-Lycanroc  
+Lycanroc @ Kings Rock
 Ability: Sand Rush  
 Ball: Heavy
 Level: 64
@@ -23645,6 +23644,7 @@ Adamant Nature
 - Iron Head  
 - Psychic Fangs  
 
+/*
 Gliscor @ Toxic Orb  
 Ability: Poison Heal  
 Ball: Heavy

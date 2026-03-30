@@ -1228,3 +1228,47 @@ Route119_Text_TrainerTipsDecoration:
 	.string "your very own SECRET BASE exactly the\l"
 # 615 "data/maps/Route119/scripts.pory"
 	.string "way you want.$"
+
+Route119_EventScript_DualWingbeatKeeper::
+# 619 "data/maps/Route119/scripts.pory"
+	lock
+# 620 "data/maps/Route119/scripts.pory"
+	faceplayer
+# 621 "data/maps/Route119/scripts.pory"
+	checkitem ITEM_TM_DUAL_WINGBEAT
+# 622 "data/maps/Route119/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route119_EventScript_DualWingbeatKeeper_2
+Route119_EventScript_DualWingbeatKeeper_1:
+# 628 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_DualWingbeatKeeper_Text_1, MSGBOX_DEFAULT
+# 629 "data/maps/Route119/scripts.pory"
+	closemessage
+# 630 "data/maps/Route119/scripts.pory"
+	releaseall
+	end
+
+Route119_EventScript_DualWingbeatKeeper_2:
+# 623 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_DualWingbeatKeeper_Text_0, MSGBOX_DEFAULT
+# 624 "data/maps/Route119/scripts.pory"
+	closemessage
+# 625 "data/maps/Route119/scripts.pory"
+	giveitem ITEM_TM_DUAL_WINGBEAT
+# 626 "data/maps/Route119/scripts.pory"
+	waitfanfare
+	goto Route119_EventScript_DualWingbeatKeeper_1
+
+
+Route119_EventScript_DualWingbeatKeeper_Text_0:
+# 623 "data/maps/Route119/scripts.pory"
+	.string "When your opponents are expecting a\n"
+	.string "Wing Attack, you can catch them off\l"
+	.string "guard with a Dual Wingbeat instead!$"
+
+Route119_EventScript_DualWingbeatKeeper_Text_1:
+# 628 "data/maps/Route119/scripts.pory"
+	.string "People are always underestimating\n"
+	.string "flying-type Pokémon.\p"
+	.string "That's one of the reasons I'm grateful\n"
+	.string "for Winona.$"

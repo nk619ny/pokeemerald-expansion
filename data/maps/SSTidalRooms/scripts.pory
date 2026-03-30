@@ -2,6 +2,7 @@ raw `
 SSTidalRooms_MapScripts::
 	.byte 0
 
+/*
 SSTidalRooms_EventScript_SnatchGiver::
 	lock
 	faceplayer
@@ -18,6 +19,7 @@ SSTidalRooms_EventScript_ExplainSnatch::
 	msgbox SSTidalRooms_Text_ExplainSnatch, MSGBOX_DEFAULT
 	release
 	end
+*/
 
 SSTidalRooms_EventScript_Bed::
 	lockall
