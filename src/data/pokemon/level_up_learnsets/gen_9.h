@@ -9054,7 +9054,7 @@ static const struct LevelUpMove sCastformLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_HEADBUTT),
     LEVEL_UP_MOVE(80, MOVE_RAIN_DANCE), // Changed from 20
     LEVEL_UP_MOVE(80, MOVE_SUNNY_DAY), // Changed from 20
-    LEVEL_UP_MOVE(80, MOVE_HAIL), // Changed from 20
+    LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 20
     LEVEL_UP_MOVE(25, MOVE_WEATHER_BALL),
     LEVEL_UP_MOVE(35, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(35, MOVE_FIRE_BLAST),
@@ -9351,7 +9351,7 @@ static const struct LevelUpMove sSphealLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(40, MOVE_SURF),
     LEVEL_UP_MOVE(44, MOVE_BLIZZARD),
-    LEVEL_UP_MOVE(80, MOVE_HAIL), // Changed from 48
+    LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 48
     LEVEL_UP_MOVE(52, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
@@ -9372,7 +9372,7 @@ static const struct LevelUpMove sSealeoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(46, MOVE_SURF),
     LEVEL_UP_MOVE(52, MOVE_BLIZZARD),
-    LEVEL_UP_MOVE(80, MOVE_HAIL), // Changed from 58
+    LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 58
     LEVEL_UP_MOVE(64, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
@@ -9394,7 +9394,7 @@ static const struct LevelUpMove sWalreinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(48, MOVE_SURF),
     LEVEL_UP_MOVE(56, MOVE_BLIZZARD),
-    LEVEL_UP_MOVE(80, MOVE_HAIL), // Changed from 64
+    LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 64
     LEVEL_UP_MOVE(72, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
@@ -13418,7 +13418,7 @@ static const struct LevelUpMove sVanilliteLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_MIST),
     LEVEL_UP_MOVE(12, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(16, MOVE_AVALANCHE),
-    LEVEL_UP_MOVE(80, MOVE_HAIL), // Changed from 20
+    LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 20
     LEVEL_UP_MOVE(24, MOVE_ICICLE_SPEAR),
     LEVEL_UP_MOVE(28, MOVE_UPROAR),
     LEVEL_UP_MOVE(32, MOVE_ACID_ARMOR),
@@ -13436,7 +13436,7 @@ static const struct LevelUpMove sVanillishLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MIST),
     LEVEL_UP_MOVE(12, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(16, MOVE_AVALANCHE),
-    LEVEL_UP_MOVE(80, MOVE_HAIL), // Changed from 20
+    LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 20
     LEVEL_UP_MOVE(24, MOVE_ICICLE_SPEAR),
     LEVEL_UP_MOVE(28, MOVE_UPROAR),
     LEVEL_UP_MOVE(32, MOVE_ACID_ARMOR),
@@ -13457,7 +13457,7 @@ static const struct LevelUpMove sVanilluxeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MIST),
     LEVEL_UP_MOVE(12, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(16, MOVE_AVALANCHE),
-    LEVEL_UP_MOVE(80, MOVE_HAIL), // Changed from 20
+    LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 20
     LEVEL_UP_MOVE(24, MOVE_ICICLE_SPEAR),
     LEVEL_UP_MOVE(28, MOVE_UPROAR),
     LEVEL_UP_MOVE(32, MOVE_ACID_ARMOR),
@@ -15891,7 +15891,7 @@ static const struct LevelUpMove sAmauraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_FREEZE_DRY),
     LEVEL_UP_MOVE(40, MOVE_ICE_BEAM),
     LEVEL_UP_MOVE(44, MOVE_LIGHT_SCREEN),
-    LEVEL_UP_MOVE(80, MOVE_HAIL), // Changed from 48
+    LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 48
     LEVEL_UP_MOVE(52, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(56, MOVE_HYPER_BEAM),
     LEVEL_UP_END
@@ -15911,7 +15911,7 @@ static const struct LevelUpMove sAurorusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_FREEZE_DRY),
     LEVEL_UP_MOVE(42, MOVE_ICE_BEAM),
     LEVEL_UP_MOVE(48, MOVE_LIGHT_SCREEN),
-    LEVEL_UP_MOVE(80, MOVE_HAIL), // Changed from 54
+    LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 54
     LEVEL_UP_MOVE(60, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(66, MOVE_HYPER_BEAM),
     LEVEL_UP_END
