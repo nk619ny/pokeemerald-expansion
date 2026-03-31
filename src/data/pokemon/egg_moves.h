@@ -595,6 +595,7 @@ static const u16 sAbraEggMoveLearnset[] = {
     MOVE_PSYCHO_SHIFT,
     MOVE_ALLY_SWITCH,
     MOVE_PSYCHIC_TERRAIN,
+    MOVE_MAGIC_COAT, //added from SwSh
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ABRA
@@ -616,6 +617,7 @@ static const u16 sMachopEggMoveLearnset[] = {
     MOVE_KNOCK_OFF,
     MOVE_TICKLE,
     MOVE_QUICK_GUARD,
+    MOVE_SUBMISSION, //added from SwSh
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MACHOP
@@ -5513,6 +5515,7 @@ static const u16 sComfeyEggMoveLearnset[] = {
     MOVE_AMNESIA,
     MOVE_AFTER_YOU,
     MOVE_LUCKY_CHANT,
+    MOVE_LEAF_TORNADO, //added from SwSh
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_COMFEY
