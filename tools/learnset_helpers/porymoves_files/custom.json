@@ -64,6 +64,15 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "FEAROW": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_BRAVE_BIRD"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "FLAREON": {
     "LevelMoves": [],
     "PreEvoMoves": [],
@@ -87,6 +96,15 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GRASS_PLEDGE"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "LEAVANNY": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_SOLAR_BLADE"
     ],
     "EggMoves": [],
     "TutorMoves": []
