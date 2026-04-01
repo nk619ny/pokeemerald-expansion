@@ -3244,6 +3244,7 @@ static const struct LevelUpMove sHitmontopLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_REVENGE), //added from SwSh
     LEVEL_UP_MOVE( 0, MOVE_ROLLING_KICK), //added from USUM
     LEVEL_UP_MOVE( 1, MOVE_PURSUIT), //added from USUM
+    LEVEL_UP_MOVE(48, MOVE_COMBAT_TORQUE), //custom move added
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS

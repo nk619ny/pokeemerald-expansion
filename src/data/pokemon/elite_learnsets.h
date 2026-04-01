@@ -10490,6 +10490,7 @@ static const u16 sCharmeleonEliteLearnset[] = {
 static const u16 sCharizardEliteLearnset[] = {
     MOVE_FIRE_LASH,
     MOVE_SANDSEAR_STORM,
+    MOVE_HEADLONG_RUSH,
     MOVE_HOWL,
     MOVE_QUICK_ATTACK,
     MOVE_BLOCK,

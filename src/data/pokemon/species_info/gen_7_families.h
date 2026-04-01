@@ -7777,7 +7777,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sPoipoleLevelUpLearnset,
         .teachableLearnset = sPoipoleTeachableLearnset,
         .eliteLearnset = sPoipoleEliteLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_NAGANADEL, CONDITIONS({IF_KNOWS_MOVE, MOVE_DRAGON_PULSE})}),
+        .evolutions = EVOLUTION({EVO_NONE, SPECIES_NAGANADEL}),
     },
 
     [SPECIES_NAGANADEL] =

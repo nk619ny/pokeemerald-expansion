@@ -14328,6 +14328,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_FieryDance,
     },
 
+/*
     [MOVE_FREEZE_SHOCK] =
     {
         .name = COMPOUND_STRING("Freeze Shock"),
@@ -14385,7 +14386,67 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_IceBurn,
     },
+*/
+    [MOVE_FREEZE_SHOCK] =
+    {
+        .name = COMPOUND_STRING("Freeze Shock"),
+        .description = COMPOUND_STRING(
+            "May paralyze the foe.\n"
+            "Can't be used twice in a row."),
+        .effect = EFFECT_TWO_TURNS_ATTACK,
+        .power = 140,
+        .type = TYPE_ICE,
+        .accuracy = B_CUSTOMIZED_MOVE_STATS == TRUE ? 100 : 90,
+        .pp = 5,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = FALSE,
+        .sleepTalkBanned = FALSE,
+        .instructBanned = FALSE,
+        .cantUseTwice = TRUE,
+        //.argument.twoTurnAttack = { .stringId = STRINGID_CLOAKEDINAFREEZINGLIGHT },
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_FreezeShock,
+    },
 
+    [MOVE_ICE_BURN] =
+    {
+        .name = COMPOUND_STRING("Ice Burn"),
+        .description = COMPOUND_STRING(
+            "May inflict a burn.\n"
+            "Can't be used twice in a row."),
+        .effect = EFFECT_TWO_TURNS_ATTACK,
+        .power = 140,
+        .type = TYPE_ICE,
+        .accuracy = B_CUSTOMIZED_MOVE_STATS == TRUE ? 100 : 90,
+        .pp = 5,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = FALSE,
+        .sleepTalkBanned = FALSE,
+        .instructBanned = FALSE,
+        .cantUseTwice = TRUE,
+        //.argument.twoTurnAttack = { .stringId = STRINGID_CLOAKEDINAFREEZINGLIGHT },
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_IceBurn,
+    },
+    
     [MOVE_SNARL] =
     {
         .name = COMPOUND_STRING("Snarl"),
@@ -14861,7 +14922,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .argument = { .type = TYPE_WATER },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-            .chance = 10,
+            .chance = B_USE_FROSTBITE == TRUE ? 20 : 10,
         }),
         .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
@@ -17650,7 +17711,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Freezy Frost"),
         .description = COMPOUND_STRING(
             "Crystal from cold haze hits.\n"
+        #if B_USE_FROSTBITE == TRUE
+            "Leaves for with frostbite."),
+        #else
             "Eliminates all stat changes."),
+        #endif
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 100 : 90,
         .type = TYPE_ICE,
@@ -17662,7 +17727,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .mirrorMoveBanned = B_UPDATED_MOVE_FLAGS < GEN_8,
         .metronomeBanned = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_HAZE,
+            .moveEffect = B_USE_FROSTBITE == TRUE ? MOVE_EFFECT_FREEZE_OR_FROSTBITE : MOVE_EFFECT_HAZE,
+            .chance = 100,
         }),
         .battleAnimScript = gBattleAnimMove_FreezyFrost,
     },
@@ -19793,8 +19859,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .windMove = TRUE,
         .alwaysHitsInRain = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = 30,
+            .moveEffect = B_USE_FROSTBITE == TRUE ? MOVE_EFFECT_FREEZE_OR_FROSTBITE : MOVE_EFFECT_SPD_MINUS_1,
+            .chance = B_USE_FROSTBITE == TRUE ? 20 : 30,
         }),
         .battleAnimScript = gBattleAnimMove_BleakwindStorm,
     },
