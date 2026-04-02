@@ -7282,6 +7282,107 @@ IceBurnUnleash:
 	clearmonbg ANIM_TARGET
 	end
 
+gBattleAnimMove_FreezeShockOneTurn::
+	loadspritegfx ANIM_TAG_SPARK
+	loadspritegfx ANIM_TAG_SPARK_2
+	loadspritegfx ANIM_TAG_ICE_CHUNK @Ice Ball
+	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT @Electric Circle
+@ Charge phase
+	createvisualtask AnimTask_HorizontalShake, 5, ANIM_ATTACKER, 2, 16
+	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 1, 0, 15, RGB_WHITE
+	createsprite gFreezeShockCircleTemplate, ANIM_ATTACKER, 2
+	delay 20
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 1, 15, 0, RGB_WHITE
+	waitforvisualfinish
+@ Attack phase
+	loopsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET, 0x5, 0x5
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 0, 16, RGB_BLACK
+	monbg ANIM_TARGET
+	waitforvisualfinish
+	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_ATTACKER
+	createsprite gFreezeShockIceBallTemplate, ANIM_TARGET, 3, 0xa, 0x0, 0x0, 0x0, 0x1e, 0x0
+	createsprite gZapCannonSparkSpriteTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x0, 0x28, 0x0
+	createsprite gZapCannonSparkSpriteTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x40, 0x28, 0x1
+	createsprite gZapCannonSparkSpriteTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x80, 0x28, 0x0
+	createsprite gZapCannonSparkSpriteTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x0, 0x28, 0x2
+	createsprite gZapCannonSparkSpriteTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0x20, 0x28, 0x0
+	createsprite gZapCannonSparkSpriteTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0x60, 0x28, 0x1
+	createsprite gZapCannonSparkSpriteTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0xa0, 0x28, 0x0
+	createsprite gZapCannonSparkSpriteTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0xe0, 0x28, 0x2
+	waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 5, 1
+	delay 15
+	waitplaysewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 0x13
+	call ElectricityEffect
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 16, 0, RGB_BLACK
+	waitforvisualfinish
+	end
+
+gBattleAnimMove_IceBurnOneTurn::
+	loadspritegfx ANIM_TAG_BLACK_SMOKE @smoke
+	loadspritegfx ANIM_TAG_ICE_CHUNK @white color
+	loadspritegfx ANIM_TAG_ICE_CRYSTALS @ice
+	loadspritegfx ANIM_TAG_SMALL_EMBER
+@ Charge phase
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 0, 12, RGB_BLACK
+	waitforvisualfinish
+	loopsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET, 0x4, 0x3
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 1, 8, 0, RGB_BLACK
+	createvisualtask AnimTask_HorizontalShake, 5, ANIM_ATTACKER, 2, 16
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 1, 0, 15, RGB_WHITE
+	delay 20
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 1, 15, 0, RGB_WHITE
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 12, 0, RGB_BLACK
+	waitforvisualfinish
+@ Unleash phase
+	monbg ANIM_TARGET
+	fadetobg BG_ICE
+	waitbgfadeout
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 9, RGB_WHITE
+	createsprite gIceCrystalHitLargeSpriteTemplate, ANIM_TARGET, 2, 0xfff6, 0xfff6, 0x0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0xfff4, 0x68, 0x0, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0xfff4, 0x48, 0x1, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0xfffa, 0x38, 0x1, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0xfffa, 0x58, 0x0, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0x0, 0x38, 0x0, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0x0, 0x58, 0x1, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0x6, 0x48, 0x0, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0x6, 0x68, 0x1, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0xc, 0x48, 0x0, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0xc, 0x38, 0x1, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0x12, 0x50, 0x0, 0x4b
+	createsprite gIceBurnSmokeTemplate, ANIM_TARGET, 4, 0x0, 0x12, 0x48, 0x1, 0x4b
+	call FireSpreadEffect
+	playsewithpan SE_M_FIRE_PUNCH, SOUND_PAN_TARGET
+	delay 4
+	createsprite gIceCrystalHitSmallSpriteTemplate, ANIM_TARGET, 2, 0xa, 0x14, 0x0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	delay 4
+	createsprite gIceCrystalHitLargeSpriteTemplate, ANIM_TARGET, 2, 0xfffb, 0xa, 0x0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	delay 4
+	createsprite gIceCrystalHitSmallSpriteTemplate, ANIM_TARGET, 2, 0x11, 0xfff4, 0x0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	delay 4
+	createsprite gIceCrystalHitSmallSpriteTemplate, ANIM_TARGET, 2, 0xfff1, 0xf, 0x0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	delay 4
+	createsprite gIceCrystalHitSmallSpriteTemplate, ANIM_TARGET, 2, 0x0, 0x0, 0x0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	delay 4
+	createsprite gIceCrystalHitLargeSpriteTemplate, ANIM_TARGET, 2, 0x14, 0x2, 0x0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 9, 0, RGB_WHITE
+	waitforvisualfinish
+	restorebg
+	clearmonbg ANIM_TARGET
+	end
+
 gBattleAnimMove_Snarl::
 	loadspritegfx ANIM_TAG_JAGGED_MUSIC_NOTE
 	loadspritegfx ANIM_TAG_THIN_RING

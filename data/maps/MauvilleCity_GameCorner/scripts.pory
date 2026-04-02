@@ -1064,7 +1064,7 @@ script MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems {
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Shell Bell           350 coins",ITEM_SHELL_BELL)}
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Sticky Barb       350 coins",ITEM_STICKY_BARB)}
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Toxic Orb           200 coins",ITEM_TOXIC_ORB)}
-	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Util. Umbrella    200 coins",ITEM_UTILITY_UMBRELLA)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Util. Umbrella    400 coins",ITEM_UTILITY_UMBRELLA)}
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Wide Lens          400 coins",ITEM_WIDE_LENS)}
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Zoom Lens          400 coins",ITEM_ZOOM_LENS)}
 	msgbox(format("Which held item would you like?"), MSGBOX_DEFAULT)
@@ -1216,11 +1216,11 @@ script MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems {
 			removecoins(200)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_UTILITY_UMBRELLA:
-			goto_if_lt(TempVar_CurrentCoins, 200, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 200)
+			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 400)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(200)
+			removecoins(400)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_WIDE_LENS:
 			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
@@ -1465,6 +1465,7 @@ script MauvilleCity_GameCorner_EventScript_BuyTMs {
 
 	switch(var(TempVar_PrizeToBuy)) {
 		case ITEM_TM_FIRE_PUNCH:
+			buffermovename(STR_VAR_1, MOVE_FIRE_PUNCH)
 			goto_if_lt(TempVar_CurrentCoins, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 350)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1472,6 +1473,7 @@ script MauvilleCity_GameCorner_EventScript_BuyTMs {
 			removecoins(350)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_TM_ICE_PUNCH:
+			buffermovename(STR_VAR_1, MOVE_ICE_PUNCH)
 			goto_if_lt(TempVar_CurrentCoins, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 350)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1479,6 +1481,7 @@ script MauvilleCity_GameCorner_EventScript_BuyTMs {
 			removecoins(350)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_TM_THUNDER_PUNCH:
+			buffermovename(STR_VAR_1, MOVE_THUNDER_PUNCH)
 			goto_if_lt(TempVar_CurrentCoins, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 350)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1486,6 +1489,7 @@ script MauvilleCity_GameCorner_EventScript_BuyTMs {
 			removecoins(350)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_TM_THUNDERBOLT:
+			buffermovename(STR_VAR_1, MOVE_THUNDERBOLT)
 			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 500)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1493,6 +1497,7 @@ script MauvilleCity_GameCorner_EventScript_BuyTMs {
 			removecoins(500)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_TM_FLAMETHROWER:
+			buffermovename(STR_VAR_1, MOVE_FLAMETHROWER)
 			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 500)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1500,6 +1505,7 @@ script MauvilleCity_GameCorner_EventScript_BuyTMs {
 			removecoins(500)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_TM_ICE_BEAM:
+			buffermovename(STR_VAR_1, MOVE_ICE_BEAM)
 			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 500)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1507,6 +1513,7 @@ script MauvilleCity_GameCorner_EventScript_BuyTMs {
 			removecoins(500)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_TM_PSYCHIC:
+			buffermovename(STR_VAR_1, MOVE_PSYCHIC)
 			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 500)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1514,6 +1521,7 @@ script MauvilleCity_GameCorner_EventScript_BuyTMs {
 			removecoins(500)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_TM_BULK_UP:
+			buffermovename(STR_VAR_1, MOVE_BULK_UP)
 			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 400)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1521,6 +1529,7 @@ script MauvilleCity_GameCorner_EventScript_BuyTMs {
 			removecoins(400)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_TM_CALM_MIND:
+			buffermovename(STR_VAR_1, MOVE_CALM_MIND)
 			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 400)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1698,6 +1707,8 @@ script MauvilleCity_GameCorner_EventScript_BuyStarterPokemon {
 	msgbox(format("Which Starter Pokémon would you like for 500 coins?"), MSGBOX_DEFAULT)
 	showcoinsbox(1, 1)
 	dynmultistack(30, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
+	goto_if_eq(VAR_RESULT, 127, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+	goto_if_eq(VAR_RESULT, 128, MauvilleCity_GameCorner_EventScript_ComeBackLater)
 	copyvar(TempVar_PrizeToBuy, VAR_RESULT)
 	goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 	bufferspeciesname(STR_VAR_1, TempVar_PrizeToBuy)
@@ -1713,14 +1724,16 @@ script MauvilleCity_GameCorner_EventScript_BuyStarterPokemon {
 
 script MauvilleCity_GameCorner_EventScript_BuyPrizePokemon {
 	lock
-	dynmultipush("Abra                   400 coins",SPECIES_ABRA)
-	dynmultipush("Clefairy            350 coins",SPECIES_CLEFAIRY)
-	dynmultipush("Jigglypuff        300 coins",SPECIES_JIGGLYPUFF)
-	dynmultipush("Porygon             400 coins",SPECIES_PORYGON)
-	dynmultipush("Mr. Mime             300 coins",SPECIES_MR_MIME)
-	dynmultipush("Eevee                400 coins",SPECIES_EEVEE)
-	dynmultipush("Wobbuffet        500 coins",SPECIES_WOBBUFFET)
-	dynmultipush("Snorlax             500 coins",SPECIES_SNORLAX)
+	dynmultipush("Abra                   600 coins",SPECIES_ABRA)
+	dynmultipush("Clefairy            400 coins",SPECIES_CLEFAIRY)
+	dynmultipush("Jigglypuff        400 coins",SPECIES_JIGGLYPUFF)
+	dynmultipush("Porygon             500 coins",SPECIES_PORYGON)
+	dynmultipush("Mr. Mime             500 coins",SPECIES_MR_MIME)
+	dynmultipush("Eevee                750 coins",SPECIES_EEVEE)
+	dynmultipush("Wobbuffet        750 coins",SPECIES_WOBBUFFET)
+	dynmultipush("Snorlax             750 coins",SPECIES_SNORLAX)
+	dynmultipush("Mimikyu             750 coins",SPECIES_MIMIKYU)
+	dynmultipush("Rotom              1500 coins",SPECIES_ROTOM)
 	msgbox(format("Which Prize Pokémon would you like?"), MSGBOX_DEFAULT)
 	showcoinsbox(1, 1)
 	dynmultistack(30, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
@@ -1729,61 +1742,75 @@ script MauvilleCity_GameCorner_EventScript_BuyPrizePokemon {
 
 	switch(var(TempVar_PrizeToBuy)) {
 		case SPECIES_ABRA:
-			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 400)
+			goto_if_lt(TempVar_CurrentCoins, 600, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 600)
 			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(400)
+			removecoins(600)
 			givemon(SPECIES_ABRA, 5)
 		case SPECIES_CLEFAIRY:
-			goto_if_lt(TempVar_CurrentCoins, 350, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 350)
+			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 400)
 			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(350)
+			removecoins(400)
 			givemon(SPECIES_CLEFAIRY, 5)
 		case SPECIES_JIGGLYPUFF:
-			goto_if_lt(TempVar_CurrentCoins, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 300)
+			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 400)
 			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(300)
+			removecoins(400)
 			givemon(SPECIES_JIGGLYPUFF, 5)
 		case SPECIES_PORYGON:
-			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 400)
+			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 500)
 			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(400)
+			removecoins(500)
 			givemon(SPECIES_PORYGON, 5)
 		case SPECIES_MR_MIME:
-			goto_if_lt(TempVar_CurrentCoins, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 300)
+			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 500)
 			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(300)
+			removecoins(500)
 			givemon(SPECIES_MR_MIME, 5)
 		case SPECIES_EEVEE:
-			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 400)
+			goto_if_lt(TempVar_CurrentCoins, 750, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 750)
 			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(400)
+			removecoins(750)
 			givemon(SPECIES_EEVEE, 5)
 		case SPECIES_WOBBUFFET:
-			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 500)
+			goto_if_lt(TempVar_CurrentCoins, 750, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 750)
 			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(500)
+			removecoins(750)
 			givemon(SPECIES_WOBBUFFET, 5)
 		case SPECIES_SNORLAX:
-			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
-			buffernumberstring(STR_VAR_2, 500)
+			goto_if_lt(TempVar_CurrentCoins, 750, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 750)
 			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
-			removecoins(500)
+			removecoins(750)
 			givemon(SPECIES_SNORLAX, 5)
+		case SPECIES_MIMIKYU:
+			goto_if_lt(TempVar_CurrentCoins, 750, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 750)
+			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(750)
+			givemon(SPECIES_MIMIKYU, 5)
+		case SPECIES_ROTOM:
+			goto_if_lt(TempVar_CurrentCoins, 1500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 1500)
+			msgbox(format("You want to buy a {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(1500)
+			givemon(SPECIES_ROTOM, 5)
 		default:
 			hidecoinsbox(0, 5)
 			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)

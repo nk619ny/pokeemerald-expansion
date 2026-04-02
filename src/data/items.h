@@ -12571,8 +12571,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
             "Blasts the foe with\n"
-            "an icy beam that may\n"
-            "freeze it."),
+            "an icy beam that\n"
+            "may freeze it."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

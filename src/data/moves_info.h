@@ -14393,7 +14393,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "May paralyze the foe.\n"
             "Can't be used twice in a row."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
+        .effect = EFFECT_HIT,
         .power = 140,
         .type = TYPE_ICE,
         .accuracy = B_CUSTOMIZED_MOVE_STATS == TRUE ? 100 : 90,
@@ -14414,7 +14414,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_FreezeShock,
+        .battleAnimScript = gBattleAnimMove_FreezeShockOneTurn,
     },
 
     [MOVE_ICE_BURN] =
@@ -14423,7 +14423,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "May inflict a burn.\n"
             "Can't be used twice in a row."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
+        .effect = EFFECT_HIT,
         .power = 140,
         .type = TYPE_ICE,
         .accuracy = B_CUSTOMIZED_MOVE_STATS == TRUE ? 100 : 90,
@@ -14444,7 +14444,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_IceBurn,
+        .battleAnimScript = gBattleAnimMove_IceBurnOneTurn,
     },
     
     [MOVE_SNARL] =
