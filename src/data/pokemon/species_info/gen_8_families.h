@@ -2691,11 +2691,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_FLAPPLE] =
     {
-        .baseHP        = 70 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 5 : 0),
+        .baseHP        = 70 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 15 : 0),
         .baseAttack    = 110 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 15 : 0),
         .baseDefense   = 80,
         .baseSpeed     = 70 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 20 : 0),
-        .baseSpAttack  = 95,
+        .baseSpAttack  = 95 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 5 : 0),
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
         .catchRate = 45,
@@ -2818,11 +2818,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_APPLETUN] =
     {
         .baseHP        = 110 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
-        .baseAttack    = 85,
-        .baseDefense   = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
+        .baseAttack    = 85 - (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 5 : 0),
+        .baseDefense   = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 20 : 0),
         .baseSpeed     = 30,
         .baseSpAttack  = 100 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
-        .baseSpDefense = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
+        .baseSpDefense = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 20 : 0),
         .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 170,
@@ -3002,7 +3002,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sDipplinLevelUpLearnset,
         .teachableLearnset = sDipplinTeachableLearnset,
         .eliteLearnset = sNoneEliteLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_HYDRAPPLE, CONDITIONS({IF_KNOWS_MOVE, MOVE_DRAGON_CHEER})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_HYDRAPPLE, CONDITIONS({IF_KNOWS_MOVE, MOVE_DRAGON_CHEER})},
+                                {EVO_LEVEL, 50, SPECIES_HYDRAPPLE}),
     },
 
     [SPECIES_HYDRAPPLE] =

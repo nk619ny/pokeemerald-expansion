@@ -2687,9 +2687,9 @@ static const struct LevelUpMove sShellderLevelUpLearnset[] = {
 static const struct LevelUpMove sCloysterLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_ICICLE_SPEAR),
     LEVEL_UP_MOVE( 1, MOVE_ICICLE_CRASH),
-    LEVEL_UP_MOVE( 1, MOVE_SHELL_SMASH),
+    //LEVEL_UP_MOVE( 1, MOVE_SHELL_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_ICE_SHARD),
-    LEVEL_UP_MOVE( 1, MOVE_TOXIC_SPIKES),
+    //LEVEL_UP_MOVE( 1, MOVE_TOXIC_SPIKES),
     LEVEL_UP_MOVE( 1, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE( 1, MOVE_WHIRLPOOL),
     LEVEL_UP_MOVE( 1, MOVE_SPIKES),
@@ -2702,8 +2702,11 @@ static const struct LevelUpMove sCloysterLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_SPIKE_CANNON), //added from USUM
+    LEVEL_UP_MOVE( 1, MOVE_TOXIC_SPIKES),
+    LEVEL_UP_MOVE( 1, MOVE_SHELL_SMASH),
     LEVEL_UP_MOVE( 5, MOVE_RAZOR_SHELL),
-    LEVEL_UP_MOVE(13, MOVE_SPIKE_CANNON), //added from USUM
+    LEVEL_UP_MOVE(65, MOVE_EXPLOSION), // custom added for Aqua Hideout
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHELLDER
@@ -5986,6 +5989,7 @@ static const struct LevelUpMove sClodsireLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_MEGAHORN),
     LEVEL_UP_MOVE(40, MOVE_TOXIC),
     LEVEL_UP_MOVE(48, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(65, MOVE_ANCIENT_POWER), // custom added for Aqua Hideout
     LEVEL_UP_END
 };
 #endif //P_PALDEAN_FORMS
@@ -6193,6 +6197,8 @@ static const struct LevelUpMove sForretressLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_MIRROR_SHOT), //added from USUM
     LEVEL_UP_MOVE(20, MOVE_BIDE), //added from USUM
     LEVEL_UP_MOVE(23, MOVE_NATURAL_GIFT), //added from USUM
+    LEVEL_UP_MOVE(65, MOVE_EXPLOSION), // custom added for Aqua Hideout
+    LEVEL_UP_MOVE(65, MOVE_ROLLOUT), // custom added for Aqua Hideout
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PINECO
@@ -6833,6 +6839,7 @@ static const struct LevelUpMove sOctilleryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_HYPER_BEAM),
     LEVEL_UP_MOVE( 1, MOVE_CONSTRICT), //added from USUM
     LEVEL_UP_MOVE(28, MOVE_WRING_OUT), //added from USUM
+    LEVEL_UP_MOVE(65, MOVE_WRAP), //custom added for Aqua Hideout
     LEVEL_UP_END
 };
 #endif //P_FAMILY_REMORAID
@@ -6841,6 +6848,7 @@ static const struct LevelUpMove sOctilleryLevelUpLearnset[] = {
 static const struct LevelUpMove sDelibirdLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PRESENT),
     LEVEL_UP_MOVE(25, MOVE_DRILL_PECK),
+    LEVEL_UP_MOVE(65, MOVE_MEMENTO), //custom added for Aqua Hideout
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DELIBIRD
@@ -9928,7 +9936,9 @@ static const struct LevelUpMove sGlalieLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_ICE_FANG),
     LEVEL_UP_MOVE(80, MOVE_SNOWSCAPE), // Changed from 47
     LEVEL_UP_MOVE(54, MOVE_WEATHER_BALL),
-    LEVEL_UP_MOVE(61, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(61, MOVE_CRUNCH), //custom added for aqua hideout
+    LEVEL_UP_MOVE(65, MOVE_SELF_DESTRUCT), //custom added for aqua hideout
+    LEVEL_UP_MOVE(65, MOVE_SHEER_COLD), //custom added for aqua hideout
     LEVEL_UP_MOVE(68, MOVE_BLIZZARD),
     LEVEL_UP_END
 };
@@ -17084,6 +17094,7 @@ static const struct LevelUpMove sGoodraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_CURSE),
     LEVEL_UP_MOVE(49, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(58, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(65, MOVE_ACID_SPRAY), // custom added for Aqua Hideut
     LEVEL_UP_MOVE(67, MOVE_POWER_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_BUBBLE), //added from USUM
     LEVEL_UP_MOVE(13, MOVE_BIDE), //added from USUM
@@ -18621,6 +18632,9 @@ static const struct LevelUpMove sPalossandLevelUpLearnset[] = {
 static const struct LevelUpMove sPyukumukuLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BATON_PASS),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
+    LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT), //added from USUM
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SPORT), //added from USUM
+    LEVEL_UP_MOVE( 1, MOVE_BIDE), //added from USUM
     LEVEL_UP_MOVE( 5, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(10, MOVE_TAUNT),
     LEVEL_UP_MOVE(15, MOVE_SAFEGUARD),
@@ -18633,9 +18647,8 @@ static const struct LevelUpMove sPyukumukuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_SOAK),
     LEVEL_UP_MOVE(55, MOVE_TOXIC),
     LEVEL_UP_MOVE(60, MOVE_MEMENTO),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT), //added from USUM
-    LEVEL_UP_MOVE( 1, MOVE_MUD_SPORT), //added from USUM
-    LEVEL_UP_MOVE( 1, MOVE_BIDE), //added from USUM
+    LEVEL_UP_MOVE(65, MOVE_COUNTER), // Custom added for Aqua Hideout
+    LEVEL_UP_MOVE(65, MOVE_PAIN_SPLIT), // Custom added for Aqua Hideout
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PYUKUMUKU
@@ -20532,6 +20545,7 @@ static const struct LevelUpMove sPincurchinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_ZING_ZAP),
     LEVEL_UP_MOVE(55, MOVE_ACUPRESSURE),
     LEVEL_UP_MOVE(60, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(65, MOVE_SELF_DESTRUCT), //custom added for Aqua Hideout
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PINCURCHIN
@@ -21492,6 +21506,9 @@ static const struct LevelUpMove sSpidopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_CIRCLE_THROW),
     LEVEL_UP_MOVE(45, MOVE_THROAT_CHOP),
     LEVEL_UP_MOVE(49, MOVE_SKITTER_SMACK),
+    LEVEL_UP_MOVE(65, MOVE_BLOCK), // readded for Aqua Hideout
+    LEVEL_UP_MOVE(65, MOVE_COUNTER), // readded for Aqua Hideout
+    LEVEL_UP_MOVE(65, MOVE_MEMENTO), // custom added for Aqua Hideout
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TAROUNTULA
@@ -22539,6 +22556,9 @@ static const struct LevelUpMove sGlimmoraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(44, MOVE_ACID_ARMOR),
     LEVEL_UP_MOVE(50, MOVE_SLUDGE_WAVE),
+    LEVEL_UP_MOVE(65, MOVE_SPIKY_SHIELD), // custom added for Aqua Hideout
+    LEVEL_UP_MOVE(65, MOVE_ANCIENT_POWER), // custom added for Aqua Hideout
+    LEVEL_UP_MOVE(65, MOVE_EXPLOSION), // custom added for Aqua Hideout
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GLIMMET
