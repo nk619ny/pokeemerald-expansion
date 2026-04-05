@@ -877,6 +877,7 @@ RustboroCity_EventScript_BattleMay::
 RustboroCity_EventScript_MayBrineyHint::
 	msgbox RustboroCity_Text_RivalPetalburgGymReady, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
+	giveitem ITEM_HM_STRENGTH
 	setvar VAR_LEVEL_CAP, 53
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
@@ -954,6 +955,7 @@ RustboroCity_EventScript_BrendanBrineyHint::
 	msgbox RustboroCity_Text_RivalPetalburgGymReady, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	closemessage
+	giveitem ITEM_HM_STRENGTH
 	setvar VAR_LEVEL_CAP, 53
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate

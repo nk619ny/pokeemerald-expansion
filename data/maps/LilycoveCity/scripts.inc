@@ -951,7 +951,7 @@ LilycoveCity_Text_MayDefeat:
 # 476 "data/maps/LilycoveCity/scripts.pory"
 	.string "I remember the battle I had with you,\n"
 # 477 "data/maps/LilycoveCity/scripts.pory"
-	.string "{PLAYER}{KUN}, on ROUTE 103.\p"
+	.string "{PLAYER}{KUN}, on ROUTE 101.\p"
 # 478 "data/maps/LilycoveCity/scripts.pory"
 	.string "That battle helped you become this\n"
 # 479 "data/maps/LilycoveCity/scripts.pory"

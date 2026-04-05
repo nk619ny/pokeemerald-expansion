@@ -591,7 +591,7 @@ Route103_Text_MayRoute103Pokemon:
 # 296 "data/maps/Route103/scripts.pory"
 	.string "MAY: Let's see… The Pokémon found\n"
 # 297 "data/maps/Route103/scripts.pory"
-	.string "on ROUTE 103 include…$"
+	.string "on ROUTE 101 include…$"
 # 298 "data/maps/Route103/scripts.pory"
 
 # 299 "data/maps/Route103/scripts.pory"
@@ -645,7 +645,7 @@ Route103_Text_BrendanRoute103Pokemon:
 # 323 "data/maps/Route103/scripts.pory"
 	.string "BRENDAN: Okay, so it's this one and\n"
 # 324 "data/maps/Route103/scripts.pory"
-	.string "that one that live on ROUTE 103…$"
+	.string "that one that live on ROUTE 101…$"
 # 325 "data/maps/Route103/scripts.pory"
 
 # 326 "data/maps/Route103/scripts.pory"

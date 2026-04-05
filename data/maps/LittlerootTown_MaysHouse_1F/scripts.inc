@@ -689,7 +689,7 @@ RivalsHouse_1F_Text_TooBusyToNoticeVisit:
 # 345 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 RivalsHouse_1F_Text_WentOutToRoute103:
 # 346 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	.string "Oh, {RIVAL} went out to ROUTE 103\n"
+	.string "Oh, {RIVAL} went out to ROUTE 101\n"
 # 347 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	.string "just a little while ago.\p"
 # 348 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
