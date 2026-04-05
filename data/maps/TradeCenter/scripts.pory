@@ -1824,7 +1824,7 @@ script Common_EventScript_PreDamageOrStatus {
 		case 0:
 			goto(PokemonCenter_2F_EventScript_InflictStatusMenu)
 		case 1:
-			goto(PokemonCenter_2F_EventScript_PreTrain_ComeBackLater)
+			goto(PokemonCenter_2F_EventScript_SetHPMenu)
 		case 2:
 			goto(PokemonCenter_2F_EventScript_PreTrain_ComeBackLater)
 	}
@@ -1836,6 +1836,58 @@ script PokemonCenter_2F_EventScript_PreTrain_ComeBackLater{
 	lock
 	msgbox(format("I'll be here, if you ever need my services."), MSGBOX_DEFAULT)
 	closemessage
+	releaseall
+	end
+}
+
+script PokemonCenter_2F_EventScript_SetHPMenu {
+	lockall
+	faceplayer
+	msgbox(format("Choose a Pokémon to set damage for."), MSGBOX_DEFAULT)
+	closemessage
+	special(ChoosePartyMon)
+	waitstate
+	if (var(VAR_0x8004) >= 6) {
+		releaseall
+		end
+	}
+	specialvar(VAR_RESULT, ScriptGetPartyMonSpecies)
+	if (var(VAR_RESULT) == SPECIES_EGG) {
+		msgbox(format("That's an Egg! I can't harm it."), MSGBOX_DEFAULT)
+		releaseall
+		end
+	}
+	specialvar(VAR_RESULT, GetPartyMonCurrentHP)
+	if (var(VAR_RESULT) == 0) {
+		msgbox(format("That Pokémon has already fainted! I can't injure it farther."), MSGBOX_DEFAULT)
+		releaseall
+		end
+	}
+	// VAR_0x8005 = current HP (starting value for input)
+	copyvar(VAR_0x8005, VAR_RESULT)
+	// Get max HP into VAR_0x8006
+	specialvar(VAR_RESULT, GetPartyMonMaxHP)
+	copyvar(VAR_0x8006, VAR_RESULT)
+	// Open the numeric input window
+	special(OpenNumericInput)
+	waitstate
+	if (var(VAR_RESULT) == 1) {
+		// User cancelled
+		releaseall
+		end
+	}
+	// VAR_0x8005 now has the entered value; call SetPartyMonHP
+	special(SetPartyMonHP)
+	if (var(VAR_RESULT) == 1) {
+		buffernumberstring(STR_VAR_1, VAR_0x8008)
+		msgbox(format("The specified HP is greater than that Pokémon can have. Its maximum HP is {STR_VAR_1}."), MSGBOX_DEFAULT)
+	}
+	elif (var(VAR_RESULT) == 3) {
+		msgbox(format("HP can't be set to 0."), MSGBOX_DEFAULT)
+	}
+	elif (var(VAR_RESULT) == 0) {
+		msgbox(format("The Pokémon's damage has been set!"), MSGBOX_DEFAULT)
+	}
 	releaseall
 	end
 }

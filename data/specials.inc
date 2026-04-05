@@ -574,6 +574,10 @@ gSpecials::
 	def_special ObjectEventInteractionPickApricornTree
 	def_special ChangeTeraType
 	def_special InflictStatus
+	def_special GetPartyMonCurrentHP
+	def_special GetPartyMonMaxHP
+	def_special SetPartyMonHP
+	def_special OpenNumericInput
 	def_special GetPartyMonTypes
 	def_special ComparePartyMonTeraType
 	def_special CheckPartyMonHasEliteMoves

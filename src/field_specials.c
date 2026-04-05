@@ -5850,6 +5850,167 @@ void InflictStatus(void)
         SetMonData(&gPlayerParty[slot], MON_DATA_STATUS, &status);
 }
 
+// gSpecialVar_0x8004: party slot
+// Returns current HP via specialvar
+u16 GetPartyMonCurrentHP(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
+        return GetMonData(&gPlayerParty[slot], MON_DATA_HP);
+    return 0;
+}
+
+// gSpecialVar_0x8004: party slot
+// Returns max HP via specialvar
+u16 GetPartyMonMaxHP(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
+        return GetMonData(&gPlayerParty[slot], MON_DATA_MAX_HP);
+    return 0;
+}
+
+// gSpecialVar_0x8004: party slot
+// gSpecialVar_0x8005: target HP (single value)
+// Sets gSpecialVar_Result: 0 = success, 1 = exceeds max HP, 2 = invalid slot, 3 = HP is 0
+// Sets gSpecialVar_0x8008: max HP of the mon
+void SetPartyMonHP(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    u16 targetHP = gSpecialVar_0x8005;
+
+    if (slot >= PARTY_SIZE || !GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
+    {
+        gSpecialVar_Result = 2;
+        return;
+    }
+
+    u16 maxHP = GetMonData(&gPlayerParty[slot], MON_DATA_MAX_HP);
+    gSpecialVar_0x8008 = maxHP;
+
+    if (targetHP == 0)
+    {
+        gSpecialVar_Result = 3;
+        return;
+    }
+
+    if (targetHP > maxHP)
+    {
+        gSpecialVar_Result = 1;
+        return;
+    }
+
+    SetMonData(&gPlayerParty[slot], MON_DATA_HP, &targetHP);
+    gSpecialVar_Result = 0;
+}
+
+// Numeric input UI (debug-menu style)
+// gSpecialVar_0x8005: initial value / output value on confirm
+// gSpecialVar_0x8006: max value
+// Sets gSpecialVar_Result: 0 = confirmed, 1 = cancelled
+
+#define tInput    data[0]
+#define tDigit    data[1]
+#define tMaxValue data[2]
+#define tWindowId data[3]
+
+static const s32 sNumericInputPowersOfTen[] = { 1, 10, 100 };
+
+static const struct WindowTemplate sNumericInputWindowTemplate =
+{
+    .bg = 0,
+    .tilemapLeft = 18,
+    .tilemapTop = 1,
+    .width = 11,
+    .height = 4,
+    .paletteNum = 15,
+    .baseBlock = 8,
+};
+
+static void Task_HandleNumericInput(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+
+    if (JOY_NEW(DPAD_ANY))
+    {
+        PlaySE(SE_SELECT);
+        if (JOY_NEW(DPAD_UP))
+        {
+            tInput += sNumericInputPowersOfTen[tDigit];
+            if (tInput > tMaxValue)
+                tInput = tMaxValue;
+        }
+        if (JOY_NEW(DPAD_DOWN))
+        {
+            tInput -= sNumericInputPowersOfTen[tDigit];
+            if (tInput < 1)
+                tInput = 1;
+        }
+        if (JOY_NEW(DPAD_LEFT))
+        {
+            if (tDigit < 2)
+                tDigit++;
+        }
+        if (JOY_NEW(DPAD_RIGHT))
+        {
+            if (tDigit > 0)
+                tDigit--;
+        }
+
+        FillWindowPixelBuffer(tWindowId, PIXEL_FILL(1));
+        ConvertIntToDecimalStringN(gStringVar1, tInput, STR_CONV_MODE_LEADING_ZEROS, 3);
+        StringCopy(gStringVar2, gText_DigitIndicator[tDigit]);
+        StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Enter HP: {STR_VAR_1}\n{STR_VAR_2}"));
+        AddTextPrinterParameterized(tWindowId, FONT_NORMAL, gStringVar4, 0, 1, 0, NULL);
+    }
+
+    if (JOY_NEW(A_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        gSpecialVar_0x8005 = tInput;
+        gSpecialVar_Result = 0;
+        ClearStdWindowAndFrame(tWindowId, TRUE);
+        RemoveWindow(tWindowId);
+        DestroyTask(taskId);
+        ScriptContext_Enable();
+    }
+    else if (JOY_NEW(B_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        gSpecialVar_Result = 1;
+        ClearStdWindowAndFrame(tWindowId, TRUE);
+        RemoveWindow(tWindowId);
+        DestroyTask(taskId);
+        ScriptContext_Enable();
+    }
+}
+
+void OpenNumericInput(void)
+{
+    u8 taskId;
+    u8 windowId;
+
+    LoadMessageBoxAndBorderGfx();
+    windowId = AddWindow(&sNumericInputWindowTemplate);
+    DrawStdWindowFrame(windowId, FALSE);
+
+    taskId = CreateTask(Task_HandleNumericInput, 0);
+    gTasks[taskId].tInput = gSpecialVar_0x8005;
+    gTasks[taskId].tDigit = 0;
+    gTasks[taskId].tMaxValue = gSpecialVar_0x8006;
+    gTasks[taskId].tWindowId = windowId;
+
+    ConvertIntToDecimalStringN(gStringVar1, gSpecialVar_0x8005, STR_CONV_MODE_LEADING_ZEROS, 3);
+    StringCopy(gStringVar2, gText_DigitIndicator[0]);
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Enter HP: {STR_VAR_1}\n{STR_VAR_2}"));
+    AddTextPrinterParameterized(windowId, FONT_NORMAL, gStringVar4, 0, 1, 0, NULL);
+    CopyWindowToVram(windowId, COPYWIN_FULL);
+}
+
+#undef tInput
+#undef tDigit
+#undef tMaxValue
+#undef tWindowId
 
 void GetPartyMonTypes(void)
 {

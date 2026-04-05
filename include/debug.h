@@ -3,6 +3,7 @@
 
 void Debug_ShowMainMenu(void);
 extern const u8 Debug_FlagsAndVarNotSetBattleConfigMessage[];
+extern const u8 *const gText_DigitIndicator[];
 const u8 *GetWeatherName(u32 weatherId);
 const struct Trainer* GetDebugAiTrainer(void);
 
