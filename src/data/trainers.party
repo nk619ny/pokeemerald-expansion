@@ -1,4 +1,4 @@
-/*
+﻿/*
 Trainers and their parties defined with Competetive Syntax.
 Compatible with Pokemon Showdown exports.
 https://github.com/smogon/pokemon-showdown/blob/master/sim/TEAMS.md
@@ -108,7 +108,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 /* AI: Setup First Turn / Risky / Prefer Status Moves / Powerful Status / Will Suicide */
 
-=== TRAINER_SAWYER_1 === /* Route */
+=== TRAINER_SAWYER_1 === /* Mt. Chimney */ /* TO BE ADDED */
 Name: SAWYER
 Class: Hiker
 Pic: Hiker
@@ -316,7 +316,7 @@ IVs: 0 Atk
 - Psych Up  
 
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 === /* Route */
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 === /* Seafloor Cavern */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -521,7 +521,7 @@ IVs: 0 Atk
 - Hyper Voice  
 */
 
-=== TRAINER_GABRIELLE_1 === /* Route */
+=== TRAINER_GABRIELLE_1 === /* Mt. Pyre 3F */ /* TO BE ADDED */
 Name: GABRIELLE
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
@@ -554,7 +554,7 @@ Taillow
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_PETALBURG_WOODS === /* Route */
+=== TRAINER_GRUNT_PETALBURG_WOODS === /* Petalburg Woods */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -753,7 +753,7 @@ IVs: 0 Atk
 - Flamethrower  
 - Dazzling Gleam  
 
-=== TRAINER_GRUNT_RUSTURF_TUNNEL === /* Route */
+=== TRAINER_GRUNT_RUSTURF_TUNNEL === /* Rusturf Tunnel */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -988,7 +988,7 @@ Level: 19
 - Tri Attack  
 
 
-=== TRAINER_GRUNT_SPACE_CENTER_1 === /* Route */
+=== TRAINER_GRUNT_SPACE_CENTER_1 === /* Mossdeep Space Center 1F */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -1398,7 +1398,7 @@ Jolly Nature
 */
 
 
-=== TRAINER_ZANDER === /* Route */
+=== TRAINER_ZANDER === /* Mt. Pyre 2F */ /* TO BE ADDED */
 Name: ZANDER
 Class: Black Belt
 Pic: Black Belt
@@ -1411,7 +1411,7 @@ Hariyama
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SHELLY_WEATHER_INSTITUTE === /* Route */
+=== TRAINER_SHELLY_WEATHER_INSTITUTE === /* Weather Institute */
 Name: SHELLY
 Class: Aqua Admin
 Pic: Shelly ORAS
@@ -1497,7 +1497,7 @@ Adamant Nature
 - High Horsepower  
 
 
-=== TRAINER_SHELLY_SEAFLOOR_CAVERN === /* Route */
+=== TRAINER_SHELLY_SEAFLOOR_CAVERN === /* Seafloor Cavern */
 Name: SHELLY
 Class: Aqua Admin
 Pic: Shelly ORAS
@@ -1577,7 +1577,7 @@ IVs: 0 Atk
 - Hex  
 - Recover  
 
-=== TRAINER_ARCHIE_SEAFLOOR_CAVERN === /* Route */
+=== TRAINER_ARCHIE_SEAFLOOR_CAVERN === /* Seafloor Cavern */
 Name: ARCHIE
 Class: Aqua Leader
 Pic: Archie ORAS
@@ -1811,7 +1811,7 @@ Tera Type: Fairy
 
 
 
-=== TRAINER_FELIX === /* Route */
+=== TRAINER_FELIX === /* Victory Road B2F */
 Name: FELIX
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -1879,7 +1879,7 @@ Tera Type: Grass
 - Body Press  
 
 
-=== TRAINER_AQUA_ADMIN_FARM === /* Route */
+=== TRAINER_AQUA_ADMIN_FARM === /* Slateport Farm */
 Name: MATT
 Class: Aqua Admin
 Pic: MATT ORAS
@@ -1911,7 +1911,7 @@ Level: 21
 - Quick Attack  
 - Aerial Ace  
 
-=== TRAINER_MAGMA_ADMIN_FARM === /* Route */
+=== TRAINER_MAGMA_ADMIN_FARM === /* Slateport Farm */
 Name: TABITHA
 Class: Magma Admin
 Pic: Tabitha ORAS
@@ -1946,7 +1946,7 @@ IVs: 0 Atk
 - Swift  
 - Noble Roar  
 
-=== TRAINER_AQUA_MULTI_GRUNT_FARM === /* Route */
+=== TRAINER_AQUA_MULTI_GRUNT_FARM === /* Slateport Farm */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -1982,7 +1982,7 @@ IVs: 0 Atk
 - Tailwind  
 - Psybeam  
 
-=== TRAINER_MAGMA_MULTI_GRUNT_FARM === /* Route */
+=== TRAINER_MAGMA_MULTI_GRUNT_FARM === /* Slateport Farm */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt F
@@ -2018,7 +2018,7 @@ IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs
 - Hidden Power 
 - Synthesis  
 
-=== TRAINER_DUSTY_1 === /* Route */
+=== TRAINER_DUSTY_1 === /* Route 111 */
 Name: DUSTY
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -2126,7 +2126,7 @@ Tera Type: Ground
 - Heat Crash  
 
 
-=== TRAINER_FOSTER === /* Route */
+=== TRAINER_FOSTER === /* Route 105 */
 Name: FOSTER
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -2151,7 +2151,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_AQUA_ADMIN_RUSTURF === /* Route */
+=== TRAINER_AQUA_ADMIN_RUSTURF === /* Rusturf Tunnel */
 Name: MATT
 Class: Aqua Admin
 Pic: Matt ORAS
@@ -2278,7 +2278,7 @@ EVs: 252 Atk / 4 SpD / 252 Spe
 - Poison Jab  
 - Shadow Claw  
 
-=== TRAINER_ARCHIE_WEATHER_INSTITUTE === /* Route */
+=== TRAINER_ARCHIE_WEATHER_INSTITUTE === /* Weather Institute */
 Name: ARCHIE
 Class: Aqua Leader
 Pic: Archie ORAS
@@ -2405,7 +2405,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Sand Attack
 - Poison Sting
 
-=== TRAINER_GABBY_AND_TY_1 === /* Route */
+=== TRAINER_GABBY_AND_TY_1 === /* Roaming */ /* TO BE ADDED */
 Name: GABBY & TY
 Class: Interviewer
 Pic: Interviewer
@@ -2490,7 +2490,7 @@ Loudred
 Level: 36
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
-=== TRAINER_GABBY_AND_TY_6 === /* Route */
+=== TRAINER_GABBY_AND_TY_6 === /* Roaming */
 Name: GABBY & TY
 Class: Interviewer
 Pic: Interviewer
@@ -2554,7 +2554,7 @@ Tera Type: Bug
 
 
 
-=== TRAINER_AUSTINA === /* Route */
+=== TRAINER_AUSTINA === /* Route 109 */ /* TO BE ADDED */
 Name: AUSTINA
 Class: Tuber F
 Pic: Tuber F
@@ -2567,7 +2567,7 @@ Marill
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GWEN === /* Route */
+=== TRAINER_GWEN === /* Route 109 */ /* TO BE ADDED */
 Name: GWEN
 Class: Tuber F
 Pic: Tuber F
@@ -2580,7 +2580,7 @@ Marill
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ARCHIE_MT_PYRE === /* Route */
+=== TRAINER_ARCHIE_MT_PYRE === /* Mt. Pyre Summit */
 Name: ARCHIE
 Class: Aqua Leader
 Pic: Archie ORAS
@@ -2656,7 +2656,7 @@ Jolly Nature
 - Protect  
 - Boomburst  
 
-=== TRAINER_MAXIE_MT_PYRE === /* Route */
+=== TRAINER_MAXIE_MT_PYRE === /* Mt. Pyre Summit */
 Name: MAXIE
 Class: Magma Leader
 Pic: Maxie ORAS
@@ -2884,7 +2884,7 @@ Tera Type: Water
 - Fury Cutter  
 
 
-=== TRAINER_CHARLIE === /* Route */
+=== TRAINER_CHARLIE === /* Abandoned Ship */ /* TO BE ADDED */
 Name: CHARLIE
 Class: Tuber M
 Pic: Tuber M
@@ -2897,7 +2897,7 @@ Marill
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TURO_1 === /* Route */
+=== TRAINER_TURO_1 === /* Mossdeep Space Center 2F */
 Name: TURO
 Class: Professor
 Pic: Professor_Turo
@@ -3060,7 +3060,7 @@ Adamant Nature
 - Swords Dance  
 
 
-=== TRAINER_SADA_1 === /* Route */
+=== TRAINER_SADA_1 === /* Mossdeep Space Center 2F */
 Name: SADA
 Class: Professor
 Pic: Professor Sada
@@ -3312,7 +3312,7 @@ Level: 50
 - Destiny Bond  
 
 
-=== TRAINER_PARKER === /* Route */
+=== TRAINER_PARKER === /* Petalburg Gym */
 Name: PARKER
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3391,7 +3391,7 @@ Jolly Nature
 - Explosion  
 
 
-=== TRAINER_BERKE === /* Route */
+=== TRAINER_BERKE === /* Petalburg Gym */
 Name: BERKE
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3455,7 +3455,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Double Team
 - Swagger
 
-=== TRAINER_VINCENT === /* Route */
+=== TRAINER_VINCENT === /* Trick House */ /* TO BE ADDED */
 Name: VINCENT
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3476,7 +3476,7 @@ Sharpedo
 Level: 44
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_LEROY === /* Route */
+=== TRAINER_LEROY === /* Trick House */ /* TO BE ADDED */
 Name: LEROY
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3514,7 +3514,7 @@ Makuhita
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_EDGAR === /* Route */
+=== TRAINER_EDGAR === /* Victory Road 1F */ /* TO BE ADDED */
 Name: EDGAR
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3531,7 +3531,7 @@ Pelipper
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ALBERT === /* Route */
+=== TRAINER_ALBERT === /* Victory Road 1F */ /* TO BE ADDED */
 Name: ALBERT
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3548,7 +3548,7 @@ Muk
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_SAMUEL === /* Route */
+=== TRAINER_SAMUEL === /* Victory Road B1F */ /* TO BE ADDED */
 Name: SAMUEL
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3569,7 +3569,7 @@ Kadabra
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_VITO === /* Route */
+=== TRAINER_VITO === /* Petalburg Gym */
 Name: VITO
 Class: Leader
 Pic: Cooltrainer M
@@ -3654,7 +3654,7 @@ Hasty Nature
 - Steel Wing  
 */
 
-=== TRAINER_OWEN === /* Route */
+=== TRAINER_OWEN === /* Victory Road B2F */ /* TO BE ADDED */
 Name: OWEN
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3759,7 +3759,7 @@ Hariyama
 Level: 35
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-=== TRAINER_WARREN === /* Route */
+=== TRAINER_WARREN === /* Route 133 */ /* TO BE ADDED */
 Name: WARREN
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -4009,7 +4009,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Mist
 - Protect
 
-=== TRAINER_KEIRA === /* Route */
+=== TRAINER_KEIRA === /* Trick House */ /* TO BE ADDED */
 Name: KEIRA
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4060,7 +4060,7 @@ Sableye
 Level: 30
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_HOPE === /* Route */
+=== TRAINER_HOPE === /* Victory Road 1F */ /* TO BE ADDED */
 Name: HOPE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4073,7 +4073,7 @@ Roselia
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_SHANNON === /* Route */
+=== TRAINER_SHANNON === /* Victory Road B1F */ /* TO BE ADDED */
 Name: SHANNON
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4086,7 +4086,7 @@ Claydol
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MICHELLE === /* Route */
+=== TRAINER_MICHELLE === /* Victory Road B1F */ /* TO BE ADDED */
 Name: MICHELLE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4107,7 +4107,7 @@ Ludicolo
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_CAROLINE === /* Route */
+=== TRAINER_CAROLINE === /* Victory Road B2F */ /* TO BE ADDED */
 Name: CAROLINE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4124,7 +4124,7 @@ Sableye
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_JULIE === /* Route */
+=== TRAINER_JULIE === /* Victory Road B2F */ /* TO BE ADDED */
 Name: JULIE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4306,7 +4306,7 @@ Roselia
 Level: 34
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-=== TRAINER_PATRICIA === /* Route */
+=== TRAINER_PATRICIA === /* Trick House */ /* TO BE ADDED */
 Name: PATRICIA
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -4759,7 +4759,7 @@ Linoone @ Nugget
 Level: 33
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_CINDY_6 === /* Route */
+=== TRAINER_CINDY_6 === /* Route 104 */
 Name: CINDY
 Class: Lady
 Pic: Lady
@@ -4876,7 +4876,7 @@ IVs: 0 Atk
 - Synthesis  
 
 
-=== TRAINER_SHIRLEY === /* Route */
+=== TRAINER_SHIRLEY === /* Mt. Chimney */ /* TO BE ADDED */
 Name: SHIRLEY
 Class: Beauty
 Pic: Beauty
@@ -5182,7 +5182,7 @@ Tera Type: Dark
 - Foul Play  
 
 
-=== TRAINER_MOLLIE === /* Route */
+=== TRAINER_MOLLIE === /* Route 133 */ /* TO BE ADDED */
 Name: MOLLIE
 Class: Expert
 Pic: Expert F
@@ -5199,7 +5199,7 @@ Meditite
 Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_GARRET === /* Route */
+=== TRAINER_GARRET === /* S.S. Tidal */ /* TO BE ADDED */
 Name: GARRET
 Class: Rich Boy
 Pic: Rich Boy
@@ -5289,7 +5289,7 @@ Adamant Nature
 - High Horsepower  
 
 
-=== TRAINER_THALIA_1 === /* Route */
+=== TRAINER_THALIA_1 === /* Abandoned Ship */ /* TO BE ADDED */
 Name: THALIA
 Class: Beauty
 Pic: Beauty
@@ -5306,7 +5306,7 @@ Horsea
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MARK === /* Route */
+=== TRAINER_MARK === /* Mt. Pyre 2F */ /* TO BE ADDED */
 Name: MARK
 Class: Pokemaniac
 Pic: Pokemaniac
@@ -5436,7 +5436,7 @@ Rhydon
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_LUIS === /* Route */
+=== TRAINER_LUIS === /* Route 105 */ /* TO BE ADDED */
 Name: LUIS
 Class: Swimmer M
 Pic: Swimmer M
@@ -5449,7 +5449,7 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DOMINIK === /* Route */
+=== TRAINER_DOMINIK === /* Route 105 */ /* TO BE ADDED */
 Name: DOMINIK
 Class: Swimmer M
 Pic: Swimmer M
@@ -5462,7 +5462,7 @@ Tentacool
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DOUGLAS === /* Route */
+=== TRAINER_DOUGLAS === /* Route 106 */ /* TO BE ADDED */
 Name: DOUGLAS
 Class: Swimmer M
 Pic: Swimmer M
@@ -5479,7 +5479,7 @@ Tentacool
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_DARRIN === /* Route */
+=== TRAINER_DARRIN === /* Route 107 */ /* TO BE ADDED */
 Name: DARRIN
 Class: Swimmer M
 Pic: Swimmer M
@@ -5500,7 +5500,7 @@ Tentacool
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_TONY_1 === /* Route */
+=== TRAINER_TONY_1 === /* Route 107 */ /* TO BE ADDED */
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M
@@ -5513,7 +5513,7 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JEROME === /* Route */
+=== TRAINER_JEROME === /* Route 108 */ /* TO BE ADDED */
 Name: JEROME
 Class: Swimmer M
 Pic: Swimmer M
@@ -5526,7 +5526,7 @@ Tentacruel
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MATTHEW === /* Route */
+=== TRAINER_MATTHEW === /* Route 108 */ /* TO BE ADDED */
 Name: MATTHEW
 Class: Swimmer M
 Pic: Swimmer M
@@ -5539,7 +5539,7 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DAVID === /* Route */
+=== TRAINER_DAVID === /* Route 109 */ /* TO BE ADDED */
 Name: DAVID
 Class: Swimmer M
 Pic: Swimmer M
@@ -5738,7 +5738,7 @@ IVs: 0 Atk
 - Acid Armor  
 
 
-=== TRAINER_BARRY === /* Route */
+=== TRAINER_BARRY === /* Route 126 */ /* TO BE ADDED */
 Name: BARRY
 Class: Diver
 Pic: Swimmer M
@@ -5788,7 +5788,7 @@ Tera Type: Ice
 - Swords Dance  
 
 
-=== TRAINER_RODNEY === /* Route */
+=== TRAINER_RODNEY === /* Route 130 */ /* TO BE ADDED */
 Name: RODNEY
 Class: Swimmer M
 Pic: Swimmer M
@@ -5801,7 +5801,7 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RICHARD === /* Route */
+=== TRAINER_RICHARD === /* Route 131 */ /* TO BE ADDED */
 Name: RICHARD
 Class: Swimmer M
 Pic: Swimmer M
@@ -5814,7 +5814,7 @@ Pelipper
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_HERMAN === /* Route */
+=== TRAINER_HERMAN === /* Route 131 */ /* TO BE ADDED */
 Name: HERMAN
 Class: Swimmer M
 Pic: Swimmer M
@@ -5831,7 +5831,7 @@ Tentacruel
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SANTIAGO === /* Route */
+=== TRAINER_SANTIAGO === /* Route 130 */ /* TO BE ADDED */
 Name: SANTIAGO
 Class: Swimmer M
 Pic: Swimmer M
@@ -5848,7 +5848,7 @@ Wailmer
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GILBERT === /* Route */
+=== TRAINER_GILBERT === /* Route 132 */ /* TO BE ADDED */
 Name: GILBERT
 Class: Swimmer M
 Pic: Swimmer M
@@ -5861,7 +5861,7 @@ Sharpedo
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_FRANKLIN === /* Route */
+=== TRAINER_FRANKLIN === /* Route 133 */ /* TO BE ADDED */
 Name: FRANKLIN
 Class: Swimmer M
 Pic: Swimmer M
@@ -5874,7 +5874,7 @@ Sealeo
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KEVIN === /* Route */
+=== TRAINER_KEVIN === /* Route 131 */ /* TO BE ADDED */
 Name: KEVIN
 Class: Swimmer M
 Pic: Swimmer M
@@ -5887,7 +5887,7 @@ Spheal
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JACK === /* Route */
+=== TRAINER_JACK === /* Route 134 */ /* TO BE ADDED */
 Name: JACK
 Class: Swimmer M
 Pic: Swimmer M
@@ -5900,7 +5900,7 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DUDLEY === /* Route */
+=== TRAINER_DUDLEY === /* Route */ /* TO BE ADDED */
 Name: DUDLEY
 Class: Swimmer M
 Pic: Swimmer M
@@ -6075,7 +6075,7 @@ Tera Type: Fighting
 - Counter  
 
 
-=== TRAINER_HITOSHI === /* Route */
+=== TRAINER_HITOSHI === /* Route 134 */ /* TO BE ADDED */
 Name: HITOSHI
 Class: Black Belt
 Pic: Black Belt
@@ -6092,7 +6092,7 @@ Machoke
 Level: 32
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_KIYO === /* Route */
+=== TRAINER_KIYO === /* Route 132 */ /* TO BE ADDED */
 Name: KIYO
 Class: Black Belt
 Pic: Black Belt
@@ -6275,7 +6275,7 @@ Tera Type: Fighting
 - Zen Headbutt  
 
 
-=== TRAINER_ATSUSHI === /* Route */
+=== TRAINER_ATSUSHI === /* Mt. Pyre 4F */ /* TO BE ADDED */
 Name: ATSUSHI
 Class: Black Belt
 Pic: Black Belt
@@ -7175,7 +7175,7 @@ Modest Nature
 
 
 
-=== TRAINER_SHANE === /* Route */
+=== TRAINER_SHANE === /* Route 114 */ /* TO BE ADDED */
 Name: SHANE
 Class: Camper
 Pic: Camper
@@ -7192,7 +7192,7 @@ Nuzleaf
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JUSTIN === /* Route */
+=== TRAINER_JUSTIN === /* Trick House */ /* TO BE ADDED */
 Name: JUSTIN
 Class: Camper
 Pic: Camper
@@ -7205,7 +7205,7 @@ Kecleon
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ETHAN_1 === /* Route */
+=== TRAINER_ETHAN_1 === /* Jagged Pass */ /* TO BE ADDED */
 Name: ETHAN
 Class: Camper
 Pic: Camper
@@ -7222,7 +7222,7 @@ Taillow
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_AUTUMN === /* Route */
+=== TRAINER_AUTUMN === /* Jagged Pass */ /* TO BE ADDED */
 Name: AUTUMN
 Class: Picnicker
 Pic: Picnicker
@@ -7758,7 +7758,7 @@ IVs: 0 Atk / 0 Spe
 - Attract  
 
 
-=== TRAINER_PRESTON === /* Route */
+=== TRAINER_PRESTON === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: PRESTON
 Class: Psychic
 Pic: Psychic M
@@ -7771,7 +7771,7 @@ Kirlia
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_VIRGIL === /* Route */
+=== TRAINER_VIRGIL === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: VIRGIL
 Class: Psychic
 Pic: Psychic M
@@ -7784,7 +7784,7 @@ Ralts
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BLAKE === /* Route */
+=== TRAINER_BLAKE === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: BLAKE
 Class: Psychic
 Pic: Psychic M
@@ -7797,7 +7797,7 @@ Girafarig
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_WILLIAM === /* Route */
+=== TRAINER_WILLIAM === /* Mt. Pyre 3F */ /* TO BE ADDED */
 Name: WILLIAM
 Class: Psychic
 Pic: Psychic M
@@ -7818,7 +7818,7 @@ Kirlia
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JOSHUA === /* Route */
+=== TRAINER_JOSHUA === /* Trick House */ /* TO BE ADDED */
 Name: JOSHUA
 Class: Psychic
 Pic: Psychic M
@@ -7930,7 +7930,7 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Hidden Power
 
-=== TRAINER_HANNAH === /* Route */
+=== TRAINER_HANNAH === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: HANNAH
 Class: Psychic
 Pic: Psychic F
@@ -7943,7 +7943,7 @@ Kirlia
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_SAMANTHA === /* Route */
+=== TRAINER_SAMANTHA === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: SAMANTHA
 Class: Psychic
 Pic: Psychic F
@@ -7956,7 +7956,7 @@ Xatu
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAURA === /* Route */
+=== TRAINER_MAURA === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: MAURA
 Class: Psychic
 Pic: Psychic F
@@ -7969,7 +7969,7 @@ Kadabra
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_KAYLA === /* Route */
+=== TRAINER_KAYLA === /* Mt. Pyre 3F */ /* TO BE ADDED */
 Name: KAYLA
 Class: Psychic
 Pic: Psychic F
@@ -7990,7 +7990,7 @@ Kadabra
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALEXIS === /* Route */
+=== TRAINER_ALEXIS === /* Trick House */ /* TO BE ADDED */
 Name: ALEXIS
 Class: Psychic
 Pic: Psychic F
@@ -8267,7 +8267,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Odor Sleuth
 - Roar
 
-=== TRAINER_SIDNEY === /* Route */
+=== TRAINER_SIDNEY === /* Ever Grande City */
 Name: SIDNEY
 Class: Elite Four
 Pic: Elite Four Sidney
@@ -8317,7 +8317,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Slash
 
-=== TRAINER_PHOEBE === /* Route */
+=== TRAINER_PHOEBE === /* Ever Grande City */
 Name: PHOEBE
 Class: Elite Four
 Pic: Elite Four Phoebe
@@ -8367,7 +8367,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 - Earthquake
 
-=== TRAINER_GLACIA === /* Route */
+=== TRAINER_GLACIA === /* Ever Grande City */
 Name: GLACIA
 Class: Elite Four
 Pic: Elite Four Glacia
@@ -8417,7 +8417,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Beam
 - Sheer Cold
 
-=== TRAINER_DRAKE === /* Route */
+=== TRAINER_DRAKE === /* Ever Grande City */
 Name: DRAKE
 Class: Elite Four
 Pic: Elite Four Drake
@@ -8467,7 +8467,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 - Crunch
 
-=== TRAINER_ROXANNE_1 === /* Route */
+=== TRAINER_ROXANNE_1 === /* Rustboro Gym */
 Name: ROXANNE
 Class: Leader
 Pic: Leader Roxanne
@@ -8551,7 +8551,7 @@ Impish Nature
 - Shore Up  
 
 
-=== TRAINER_BRAWLY_1 === /* Route */
+=== TRAINER_BRAWLY_1 === /* Dewford Gym */
 Name: BRAWLY
 Class: Leader
 Pic: Leader Brawly
@@ -8626,7 +8626,7 @@ Careful Nature
 - Counter  
 - Feint Attack  
 
-=== TRAINER_WATTSON_1 === /* Route */
+=== TRAINER_WATTSON_1 === /* Mauville Gym */
 Name: WATTSON
 Class: Leader
 Pic: Leader Wattson
@@ -8720,7 +8720,7 @@ Jolly Nature
 - Ice Shard  */
 
 
-=== TRAINER_FLANNERY_1 === /* Route */
+=== TRAINER_FLANNERY_1 === /* Lavaridge Gym */
 Name: FLANNERY
 Class: Leader
 Pic: Leader Flannery
@@ -8802,7 +8802,7 @@ Adamant Nature
 - Extreme Speed  
 - Stomping Tantrum  
 
-=== TRAINER_NORMAN_1 === /* Route */
+=== TRAINER_NORMAN_1 === /* Petalburg Gym */
 Name: NORMAN
 Class: Leader
 Pic: Leader Norman
@@ -8889,7 +8889,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_WINONA_1 === /* Route */
+=== TRAINER_WINONA_1 === /* Fortree Gym */
 Name: WINONA
 Class: Leader
 Pic: Leader Winona
@@ -8969,7 +8969,7 @@ IVs: 0 Atk
 - Heat Wave  
 
 
-=== TRAINER_TATE_AND_LIZA_1 === /* Route */
+=== TRAINER_TATE_AND_LIZA_1 === /* Mossdeep Gym */
 Name: TATE&LIZA
 Class: Leader
 Pic: Leader Tate And Liza
@@ -9052,7 +9052,7 @@ IVs: 0 Spe
 - Close Combat  
 - Trick Room  
 
-=== TRAINER_JUAN_1 === /* Route */
+=== TRAINER_JUAN_1 === /* Sootopolis Gym */
 Name: JUAN
 Class: Leader
 Pic: Leader Juan
@@ -9177,7 +9177,7 @@ IVs: 0 Atk
 - Eerie Impulse  
 
 
-=== TRAINER_TED === /* Route */
+=== TRAINER_TED === /* Trick House */ /* TO BE ADDED */
 Name: TED
 Class: School Kid
 Pic: School Kid M
@@ -9190,7 +9190,7 @@ Ralts
 Level: 17
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_PAUL === /* Route */
+=== TRAINER_PAUL === /* Trick House */ /* TO BE ADDED */
 Name: PAUL
 Class: School Kid
 Pic: School Kid M
@@ -9296,7 +9296,7 @@ Shroomish
 Level: 9
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_GEORGIA === /* Route */
+=== TRAINER_GEORGIA === /* Trick House */ /* TO BE ADDED */
 Name: GEORGIA
 Class: School Kid
 Pic: School Kid F
@@ -9527,7 +9527,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Focus Energy
 - Arm Thrust
 
-=== TRAINER_VICTOR === /* Route */
+=== TRAINER_VICTOR === /* Route 111 */ /* TO BE ADDED */
 Name: VICTOR
 Class: Winstrate
 Pic: Pokefan M
@@ -9544,7 +9544,7 @@ Zigzagoon @ Oran Berry
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_MIGUEL_1 === /* Route */
+=== TRAINER_MIGUEL_1 === /* Route 103 */ /* TO BE ADDED */
 Name: MIGUEL
 Class: Pokefan
 Pic: Pokefan M
@@ -9557,7 +9557,7 @@ Skitty @ Oran Berry
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_COLTON === /* Route */
+=== TRAINER_COLTON === /* S.S. Tidal */
 Name: COLTON
 Class: Pokefan
 Pic: Pokefan M
@@ -9851,7 +9851,7 @@ Delcatty @ Sitrus Berry
 Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_VICTORIA === /* Route */
+=== TRAINER_VICTORIA === /* Route 111 */ /* TO BE ADDED */
 Name: VICTORIA
 Class: Winstrate
 Pic: Pokefan F
@@ -9877,7 +9877,7 @@ Pikachu @ Oran Berry
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BETHANY === /* Route */
+=== TRAINER_BETHANY === /* Sootopolis Gym */ /* TO BE ADDED */
 Name: BETHANY
 Class: Pokefan
 Pic: Pokefan F
@@ -9898,7 +9898,7 @@ Azumarill @ Oran Berry
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ISABEL_1 === /* Route */ /* TO BE SWITCHED WITH LATER POKEFAN */
+=== TRAINER_ISABEL_1 === /* Route 110 */ /* TO BE SWITCHED WITH LATER POKEFAN */
 Name: ISABEL
 Class: Pokefan
 Pic: Pokefan F
@@ -9981,7 +9981,7 @@ Minun @ Oran Berry
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_HILL_6 === /* Route */
+=== TRAINER_HILL_6 === /* Trainer Hill */ /* TO BE ADDED */
 Name: ISABEL
 Class: Pokefan
 Pic: Pokefan F
@@ -9998,7 +9998,7 @@ Minun @ Oran Berry
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_HILL_7 === /* Route */
+=== TRAINER_HILL_7 === /* Trainer Hill */ /* TO BE ADDED */
 Name: ISABEL
 Class: Pokefan
 Pic: Pokefan F
@@ -10015,7 +10015,7 @@ Minun @ Oran Berry
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_HILL_8 === /* Route */
+=== TRAINER_HILL_8 === /* Trainer Hill */ /* TO BE ADDED */
 Name: ISABEL
 Class: Pokefan
 Pic: Pokefan F
@@ -10149,7 +10149,7 @@ IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_VICKY === /* Route */
+=== TRAINER_VICKY === /* Route 111 */
 Name: VICKY
 Class: Winstrate
 Pic: Expert F
@@ -10474,7 +10474,7 @@ Tera Type: Electric
 
 
 
-=== TRAINER_QUINCY === /* Route */
+=== TRAINER_QUINCY === /* Victory Road 1F */
 Name: QUINCY
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -10499,7 +10499,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Will O Wisp
 - Toxic
 
-=== TRAINER_KATELYNN === /* Route */
+=== TRAINER_KATELYNN === /* Victory Road 1F */
 Name: KATELYNN
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -10691,7 +10691,7 @@ Mightyena
 Level: 36
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_EDDIE === /* Route */
+=== TRAINER_EDDIE === /* Trick House */ /* TO BE ADDED */
 Name: EDDIE
 Class: Youngster
 Pic: Youngster
@@ -10708,7 +10708,7 @@ Zigzagoon
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALLEN === /* Route */
+=== TRAINER_ALLEN === /* Route 102 */ /* TO BE ADDED */
 Name: ALLEN
 Class: Youngster
 Pic: Youngster
@@ -10778,7 +10778,7 @@ Tera Type: Normal
 
 
 
-=== TRAINER_WALLACE === /* Route */
+=== TRAINER_WALLACE === /* Ever Grande City */
 Name: WALLACE
 Class: Elite Four
 Pic: Champion Wallace
@@ -11199,7 +11199,7 @@ Tentacool
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CARTER === /* Route */
+=== TRAINER_CARTER === /* Route 109 */ /* TO BE ADDED */
 Name: CARTER
 Class: Fisherman
 Pic: Fisherman
@@ -11312,7 +11312,7 @@ Tentacruel
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_RONALD === /* Route */
+=== TRAINER_RONALD === /* Route 132 */ /* TO BE ADDED */
 Name: RONALD
 Class: Fisherman
 Pic: Fisherman
@@ -11690,7 +11690,7 @@ Dodrio
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_MARIA_1 === /* Route */
+=== TRAINER_MARIA_1 === /* Route 117 */ /* TO BE ADDED */
 Name: MARIA
 Class: Triathlete
 Pic: Running Triathlete F
@@ -11756,7 +11756,7 @@ Dodrio
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CAMDEN === /* Route */
+=== TRAINER_CAMDEN === /* Underwater Route 127 */ /* TO BE ADDED */
 Name: CAMDEN
 Class: Triathlete
 Pic: Swimming Triathlete M
@@ -11773,7 +11773,7 @@ Staryu
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DEMETRIUS === /* Route */
+=== TRAINER_DEMETRIUS === /* Abandoned Ship */ /* TO BE ADDED */
 Name: DEMETRIUS
 Class: Youngster
 Pic: Youngster
@@ -11836,7 +11836,7 @@ Tera Type: Water
 - Icicle Spear  
 
 
-=== TRAINER_PABLO_1 === /* Route */
+=== TRAINER_PABLO_1 === /* Route 126 */ /* TO BE ADDED */
 Name: PABLO
 Class: Triathlete
 Pic: Swimming Triathlete M
@@ -11853,7 +11853,7 @@ Staryu
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CHASE === /* Route */
+=== TRAINER_CHASE === /* Route 129 */ /* TO BE ADDED */
 Name: CHASE
 Class: Triathlete
 Pic: Swimming Triathlete M
@@ -11922,7 +11922,7 @@ Starmie
 Level: 48
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_ISOBEL === /* Route */
+=== TRAINER_ISOBEL === /* Route 126 */ /* TO BE ADDED */
 Name: ISOBEL
 Class: Triathlete
 Pic: Swimming Triathlete F
@@ -11979,7 +11979,7 @@ EVs: 252 Atk / 252 Spe
 
 
 
-=== TRAINER_TALIA === /* Route */
+=== TRAINER_TALIA === /* Route 131 */ /* TO BE ADDED */
 Name: TALIA
 Class: Triathlete
 Pic: Swimming Triathlete F
@@ -12047,7 +12047,7 @@ Adamant Nature
 - Swords Dance  
 
 
-=== TRAINER_ALLISON === /* Route */
+=== TRAINER_ALLISON === /* Route 129 */ /* TO BE ADDED */
 Name: ALLISON
 Class: Triathlete
 Pic: Swimming Triathlete F
@@ -12116,7 +12116,7 @@ Starmie
 Level: 48
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_NICOLAS_1 === /* Route */
+=== TRAINER_NICOLAS_1 === /* Meteor Falls */ /* TO BE ADDED */
 Name: NICOLAS
 Class: Dragon Tamer
 Pic: Dragon Tamer
@@ -12209,7 +12209,7 @@ Shelgon @ Dragon Fang
 Level: 49
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-=== TRAINER_AARON === /* Route */
+=== TRAINER_AARON === /* Route 134 */
 Name: AARON
 Class: Dragon Tamer
 Pic: Dragon Tamer
@@ -12324,7 +12324,7 @@ IVs: 0 Atk
 - Nasty Plot  
 - Air Slash  
 
-Sirfetch’d  
+Sirfetchâ€™d  
 Level: 55
 Ability: Scrappy  
 Tera Type: Fighting  
@@ -12443,7 +12443,7 @@ Level: 56
 - Vacuum Wave  
 
 
-=== TRAINER_PRESLEY === /* Route */
+=== TRAINER_PRESLEY === /* Route 125 */ /* TO BE ADDED */
 Name: PRESLEY
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -12545,7 +12545,7 @@ Swablu
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BENNY === /* Route */
+=== TRAINER_BENNY === /* Trick House */ /* TO BE ADDED */
 Name: BENNY
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -12680,7 +12680,7 @@ Xatu
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_ALEX === /* Route */
+=== TRAINER_ALEX === /* Route 134 */ /* TO BE ADDED */
 Name: ALEX
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -12697,7 +12697,7 @@ Swellow
 Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BECK === /* Route */
+=== TRAINER_BECK === /* Route 133 */ /* TO BE ADDED */
 Name: BECK
 Class: Bird Keeper
 Pic: Bird Keeper
@@ -12801,7 +12801,7 @@ Tera Type: Grass
 - Strength Sap  
 
 
-=== TRAINER_DIANNE === /* Route */
+=== TRAINER_DIANNE === /* Victory Road B2F */
 Name: DIANNE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -12821,7 +12821,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunderbolt
 - Earthquake
 
-=== TRAINER_JANI === /* Route */
+=== TRAINER_JANI === /* Abandoned Ship */ /* TO BE ADDED */
 Name: JANI
 Class: Tuber F
 Pic: Tuber F
@@ -13195,7 +13195,7 @@ Tera Type: Fighting
 - Brick Break  
 - No Retreat  
 
-Farfetch’d-Galar 
+Farfetchâ€™d-Galar 
 Level: 48
 Ability: Scrappy  
 Tera Type: Fighting  
@@ -13214,7 +13214,7 @@ Tera Type: Fighting
 - Detect  
 
 
-=== TRAINER_CORA === /* Route */
+=== TRAINER_CORA === /* Trick House */ /* TO BE ADDED */
 Name: CORA
 Class: Battle Girl
 Pic: Battle Girl
@@ -13227,7 +13227,7 @@ Meditite
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_PAULA === /* Route */
+=== TRAINER_PAULA === /* Trick House */ /* TO BE ADDED */
 Name: PAULA
 Class: Battle Girl
 Pic: Battle Girl
@@ -13560,7 +13560,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Earthquake
 - Sunny Day
 
-=== TRAINER_BEVERLY === /* Route */
+=== TRAINER_BEVERLY === /* Route 105 */ /* TO BE ADDED */
 Name: BEVERLY
 Class: Swimmer F
 Pic: Swimmer F
@@ -13577,7 +13577,7 @@ Wailmer
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_IMANI === /* Route */
+=== TRAINER_IMANI === /* Route 105 */ /* TO BE ADDED */
 Name: IMANI
 Class: Swimmer F
 Pic: Swimmer F
@@ -13590,7 +13590,7 @@ Marill
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KYLA === /* Route */
+=== TRAINER_KYLA === /* Route 106 */ /* TO BE ADDED */
 Name: KYLA
 Class: Swimmer F
 Pic: Swimmer F
@@ -13603,7 +13603,7 @@ Wailmer
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DENISE === /* Route */
+=== TRAINER_DENISE === /* Route 107 */ /* TO BE ADDED */
 Name: DENISE
 Class: Swimmer F
 Pic: Swimmer F
@@ -13620,7 +13620,7 @@ Goldeen
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BETH === /* Route */
+=== TRAINER_BETH === /* Route 107 */ /* TO BE ADDED */
 Name: BETH
 Class: Swimmer F
 Pic: Swimmer F
@@ -13633,7 +13633,7 @@ Goldeen
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TARA === /* Route */
+=== TRAINER_TARA === /* Route 108 */ /* TO BE ADDED */
 Name: TARA
 Class: Swimmer F
 Pic: Swimmer F
@@ -13650,7 +13650,7 @@ Marill
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MISSY === /* Route */
+=== TRAINER_MISSY === /* Route 108 */ /* TO BE ADDED */
 Name: MISSY
 Class: Swimmer F
 Pic: Swimmer F
@@ -13663,7 +13663,7 @@ Goldeen
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALICE === /* Route */
+=== TRAINER_ALICE === /* Route 109 */ /* TO BE ADDED */
 Name: ALICE
 Class: Swimmer F
 Pic: Swimmer F
@@ -13810,7 +13810,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_SHARON === /* Route */
+=== TRAINER_SHARON === /* Route 125 */ /* TO BE ADDED */
 Name: SHARON
 Class: Swimmer F
 Pic: Swimmer F
@@ -13862,7 +13862,7 @@ Tera Type: Water
 - Sucker Punch  
 
 
-=== TRAINER_BRENDA === /* Route */
+=== TRAINER_BRENDA === /* Underwater Route 126 */
 Name: BRENDA
 Class: Diver
 Pic: Swimmer F
@@ -13881,7 +13881,7 @@ EVs: 252 SpA
 - Ice Punch  
 - Power-Up Punch  
 
-=== TRAINER_KATIE === /* Route */
+=== TRAINER_KATIE === /* Route 130 */ /* TO BE ADDED */
 Name: KATIE
 Class: Swimmer F
 Pic: Swimmer F
@@ -13898,7 +13898,7 @@ Spheal
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SUSIE === /* Route */
+=== TRAINER_SUSIE === /* Route 131 */ /* TO BE ADDED */
 Name: SUSIE
 Class: Swimmer F
 Pic: Swimmer F
@@ -13959,7 +13959,7 @@ IVs: 0 Atk
 - Water Pulse  
 
 
-=== TRAINER_DANA === /* Route */
+=== TRAINER_DANA === /* Route 132 */ /* TO BE ADDED */
 Name: DANA
 Class: Swimmer F
 Pic: Swimmer F
@@ -13972,7 +13972,7 @@ Azumarill
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SIENNA === /* Route */
+=== TRAINER_SIENNA === /* Route 126 */ /* TO BE ADDED */
 Name: SIENNA
 Class: Swimmer F
 Pic: Swimmer F
@@ -13989,7 +13989,7 @@ Luvdisc
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DEBRA === /* Route */
+=== TRAINER_DEBRA === /* Route 133 */ /* TO BE ADDED */
 Name: DEBRA
 Class: Swimmer F
 Pic: Swimmer F
@@ -14002,7 +14002,7 @@ Seaking
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LINDA === /* Route */
+=== TRAINER_LINDA === /* Route 133 */ /* TO BE ADDED */
 Name: LINDA
 Class: Swimmer F
 Pic: Swimmer F
@@ -14019,7 +14019,7 @@ Seadra
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KAYLEE === /* Route */
+=== TRAINER_KAYLEE === /* Route */ /* TO BE ADDED */
 Name: KAYLEE
 Class: Swimmer F
 Pic: Swimmer F
@@ -14036,7 +14036,7 @@ Pelipper
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LAUREL === /* Route */
+=== TRAINER_LAUREL === /* Route 134 */ /* TO BE ADDED */
 Name: LAUREL
 Class: Swimmer F
 Pic: Swimmer F
@@ -14333,7 +14333,7 @@ Lombre
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MARTHA === /* Route */
+=== TRAINER_MARTHA === /* Trick House */ /* TO BE ADDED */
 Name: MARTHA
 Class: Picnicker
 Pic: Picnicker
@@ -14350,7 +14350,7 @@ Swablu
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DIANA_1 === /* Route */
+=== TRAINER_DIANA_1 === /* Jagged Pass */ /* TO BE ADDED */
 Name: DIANA
 Class: Picnicker
 Pic: Picnicker
@@ -14709,7 +14709,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Charm
 - Helping Hand
 
-=== TRAINER_AMY_AND_LIV_6 === /* Route */
+=== TRAINER_AMY_AND_LIV_6 === /* Route 103 */
 Name: AMY & LIV
 Class: Twins
 Pic: Twins
@@ -15162,7 +15162,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_KAYLEY === /* Route */
+=== TRAINER_KAYLEY === /* Route 123 */
 Name: KAYLEY
 Class: Parasol Lady
 Pic: Parasol Lady
@@ -15307,7 +15307,7 @@ IVs: 0 Atk
 - Dazzling Gleam  
 
 
-=== TRAINER_MARLEY === /* Route */
+=== TRAINER_MARLEY === /* Route 134 */
 Name: MARLEY
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -15324,7 +15324,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder Wave
 - Thunderbolt
 
-=== TRAINER_REYNA === /* Route */
+=== TRAINER_REYNA === /* Route 134 */ /* TO BE ADDED */
 Name: REYNA
 Class: Battle Girl
 Pic: Battle Girl
@@ -15388,7 +15388,7 @@ Tera Type: Steel
 - Fake Out  
 
 
-=== TRAINER_CONOR === /* Route */
+=== TRAINER_CONOR === /* Route 133 */ /* TO BE ADDED */
 Name: CONOR
 Class: Expert
 Pic: Expert M
@@ -15467,7 +15467,7 @@ Seviper
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_COURTNEY_MOSSDEEP === /* Route */
+=== TRAINER_COURTNEY_MOSSDEEP === /* Mossdeep Space Center 2F */
 Name: Courtney
 Class: Magma Admin
 Pic: Courtney ORAS
@@ -15634,7 +15634,7 @@ Shiftry
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WALLY_VR_1 === /* Route */
+=== TRAINER_WALLY_VR_1 === /* Victory Road 1F */
 Name: WALLY
 Class: Rival
 Pic: Wally
@@ -15683,7 +15683,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_ROUTE_103_MUDKIP === /* Route */
+=== TRAINER_BRENDAN_ROUTE_103_MUDKIP === /* Route 101 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -15710,7 +15710,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Iron Defense  
 
 
-=== TRAINER_BRENDAN_ROUTE_110_MUDKIP === /* Route */
+=== TRAINER_BRENDAN_ROUTE_110_MUDKIP === /* Route 110 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -15782,7 +15782,7 @@ Jolly Nature
 - Breaking Swipe  
 - Quick Attack  
 
-=== TRAINER_BRENDAN_ROUTE_119_MUDKIP === /* Route */
+=== TRAINER_BRENDAN_ROUTE_119_MUDKIP === /* Route 119 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -15890,7 +15890,7 @@ IVs: 0 Atk
 - Infestation  
 */
 
-=== TRAINER_BRENDAN_ROUTE_103_TREECKO === /* Route */
+=== TRAINER_BRENDAN_ROUTE_103_TREECKO === /* Route 101 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -15917,7 +15917,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Confide  
 - Aromatherapy  
 
-=== TRAINER_BRENDAN_ROUTE_110_TREECKO === /* Route */
+=== TRAINER_BRENDAN_ROUTE_110_TREECKO === /* Route 110 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -15990,7 +15990,7 @@ Adamant Nature
 - Skitter Smack  
 - Bullet Seed  
 
-=== TRAINER_BRENDAN_ROUTE_119_TREECKO === /* Route */
+=== TRAINER_BRENDAN_ROUTE_119_TREECKO === /* Route 119 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -16087,7 +16087,7 @@ Adamant Nature
 - Ally Switch  
 
 
-=== TRAINER_BRENDAN_ROUTE_103_TORCHIC === /* Route */
+=== TRAINER_BRENDAN_ROUTE_103_TORCHIC === /* Route 101 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -16114,7 +16114,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Absorb  
 - Aromatic Mist  
 
-=== TRAINER_BRENDAN_ROUTE_110_TORCHIC === /* Route */
+=== TRAINER_BRENDAN_ROUTE_110_TORCHIC === /* Route 110 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -16188,7 +16188,7 @@ Adamant Nature
 - Skitter Smack  
 - Bullet Seed  
 
-=== TRAINER_BRENDAN_ROUTE_119_TORCHIC === /* Route */
+=== TRAINER_BRENDAN_ROUTE_119_TORCHIC === /* Route 119 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -16274,7 +16274,7 @@ IVs: 0 Atk
 - Infestation  
 */
 
-=== TRAINER_MAY_ROUTE_103_MUDKIP === /* Route */
+=== TRAINER_MAY_ROUTE_103_MUDKIP === /* Route 101 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -16300,7 +16300,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Take Down  
 - Iron Defense  
 
-=== TRAINER_MAY_ROUTE_110_MUDKIP === /* Route */
+=== TRAINER_MAY_ROUTE_110_MUDKIP === /* Route 110 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -16374,7 +16374,7 @@ Jolly Nature
 - Quick Attack  
 
 
-=== TRAINER_MAY_ROUTE_119_MUDKIP === /* Route */
+=== TRAINER_MAY_ROUTE_119_MUDKIP === /* Route 119 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -16483,7 +16483,7 @@ IVs: 0 Atk
 */
 
 
-=== TRAINER_MAY_ROUTE_103_TREECKO === /* Route */
+=== TRAINER_MAY_ROUTE_103_TREECKO === /* Route 101 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -16510,7 +16510,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Confide  
 - Aromatherapy  
 
-=== TRAINER_MAY_ROUTE_110_TREECKO === /* Route */
+=== TRAINER_MAY_ROUTE_110_TREECKO === /* Route 110 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -16583,7 +16583,7 @@ Adamant Nature
 - Skitter Smack  
 - Bullet Seed  
 
-=== TRAINER_MAY_ROUTE_119_TREECKO === /* Route */
+=== TRAINER_MAY_ROUTE_119_TREECKO === /* Route 119 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -16679,7 +16679,7 @@ Adamant Nature
 - Power Whip  
 - Ally Switch  
 
-=== TRAINER_MAY_ROUTE_103_TORCHIC === /* Route */
+=== TRAINER_MAY_ROUTE_103_TORCHIC === /* Route 101 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -16706,7 +16706,7 @@ Ability: Cursed Body
 - Absorb
 - Aromatic Mist  
 
-=== TRAINER_MAY_ROUTE_110_TORCHIC === /* Route */
+=== TRAINER_MAY_ROUTE_110_TORCHIC === /* Route 110 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -16780,7 +16780,7 @@ Adamant Nature
 - Skitter Smack  
 - Bullet Seed  
 
-=== TRAINER_MAY_ROUTE_119_TORCHIC === /* Route */
+=== TRAINER_MAY_ROUTE_119_TORCHIC === /* Route 119 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -17012,7 +17012,7 @@ IVs: 0 Atk
 - Bug Buzz  
 
 
-=== TRAINER_MITCHELL === /* Route */
+=== TRAINER_MITCHELL === /* Victory Road B1F */
 Name: MITCHELL
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -17231,7 +17231,7 @@ EVs: 252 HP / 252 Atk
 - Perish Song  
 
 
-=== TRAINER_HALLE === /* Route */
+=== TRAINER_HALLE === /* Victory Road B1F */ /* TO BE ADDED */
 Name: HALLE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -17248,7 +17248,7 @@ Absol
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GARRISON === /* Route */
+=== TRAINER_GARRISON === /* Abandoned Ship */ /* TO BE ADDED */
 Name: GARRISON
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -17486,7 +17486,7 @@ Tera Type: Electric
 - Stomping Tantrum  
 
 
-=== TRAINER_SEBASTIAN === /* Route */
+=== TRAINER_SEBASTIAN === /* Trick House */ /* TO BE ADDED */
 Name: SEBASTIAN
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
@@ -17649,7 +17649,7 @@ Tera Type: Normal
 - Cotton Guard  
 
 
-=== TRAINER_SOPHIA === /* Route */
+=== TRAINER_SOPHIA === /* Trick House */ /* TO BE ADDED */
 Name: SOPHIA
 Class: Pkmn Ranger
 Pic: Pokemon Ranger F
@@ -17803,7 +17803,7 @@ Jolly Nature
 - Facade  
 - Rock Smash 
 
-=== TRAINER_GRUNT_UNUSED === /* Route */
+=== TRAINER_GRUNT_UNUSED === /* Route */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
 Pic: Aqua Grunt F
@@ -17869,7 +17869,7 @@ IVs: 0 Atk
 - Scorching Sands  
 
 
-=== TRAINER_GRUNT_JAGGED_PASS === /* Route */
+=== TRAINER_GRUNT_JAGGED_PASS === /* Jagged Pass */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -18018,7 +18018,7 @@ Tera Type: Bug
 - Counter  
 - Sucker Punch  
 
-Farfetch’d-Galar  
+Farfetchâ€™d-Galar  
 Ability: Scrappy  
 Level: 22 
 Tera Type: Fighting  
@@ -18082,7 +18082,7 @@ Tera Type: Bug
 - Acrobatics  
 
 
-=== TRAINER_SYLVIA === /* Route */
+=== TRAINER_SYLVIA === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: SYLVIA
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -18095,7 +18095,7 @@ Meditite
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_LEONARDO === /* Route */
+=== TRAINER_LEONARDO === /* Route 126 */ /* TO BE ADDED */
 Name: LEONARDO
 Class: Swimmer M
 Pic: Swimmer M
@@ -18180,7 +18180,7 @@ Zubat
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CLARENCE === /* Route */
+=== TRAINER_CLARENCE === /* Route 129 */ /* TO BE ADDED */
 Name: CLARENCE
 Class: Swimmer M
 Pic: Swimmer M
@@ -18193,7 +18193,7 @@ Sharpedo
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TERRY === /* Route */
+=== TRAINER_TERRY === /* Route */ /* TO BE ADDED */
 Name: TERRY
 Class: Psychic
 Pic: Psychic F
@@ -18219,7 +18219,7 @@ Spoink
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_KATHLEEN === /* Route */
+=== TRAINER_KATHLEEN === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: KATHLEEN
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -18245,7 +18245,7 @@ Girafarig
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_NICHOLAS === /* Route */
+=== TRAINER_NICHOLAS === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: NICHOLAS
 Class: Psychic
 Pic: Psychic M
@@ -18301,7 +18301,7 @@ Zubat
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_6 === /* Route */
+=== TRAINER_GRUNT_SPACE_CENTER_6 === /* Mossdeep Space Center 2F */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -18314,7 +18314,7 @@ Mightyena
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_7 === /* Route */
+=== TRAINER_GRUNT_SPACE_CENTER_7 === /* Mossdeep Space Center 2F */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -18327,7 +18327,7 @@ Baltoy
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MACEY === /* Route */
+=== TRAINER_MACEY === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: MACEY
 Class: Psychic
 Pic: Psychic F
@@ -18340,7 +18340,7 @@ Natu
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_TREECKO === /* Route */
+=== TRAINER_BRENDAN_RUSTBORO_TREECKO === /* Route 104 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -18421,7 +18421,7 @@ Adamant Nature
 - Psychic Fangs  
 - Crunch  
 
-=== TRAINER_BRENDAN_RUSTBORO_MUDKIP === /* Route */
+=== TRAINER_BRENDAN_RUSTBORO_MUDKIP === /* Route 104 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -18502,7 +18502,7 @@ Adamant Nature
 - Psychic Fangs  
 - Crunch  
 
-=== TRAINER_PAXTON === /* Route */
+=== TRAINER_PAXTON === /* Route 132 */ /* TO BE ADDED */
 Name: PAXTON
 Class: Expert
 Pic: Expert M
@@ -18549,7 +18549,7 @@ Poochyena
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_COURTNEY_MT_CHIMNEY === /* Route */
+=== TRAINER_COURTNEY_MT_CHIMNEY === /* Mt. Chimney */
 Name: COURTNEY
 Class: Magma Admin
 Pic: Courtney ORAS
@@ -18633,7 +18633,7 @@ Adamant Nature
 - Stone Edge  
 - Rototiller  
 
-=== TRAINER_JONATHAN === /* Route */
+=== TRAINER_JONATHAN === /* Route 132 */ /* TO BE ADDED */
 Name: JONATHAN
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -18650,7 +18650,7 @@ Loudred
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_TORCHIC === /* Route */
+=== TRAINER_BRENDAN_RUSTBORO_TORCHIC === /* Route 104 */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -18731,7 +18731,7 @@ Adamant Nature
 - High Horsepower  
 - Poison Jab  
 
-=== TRAINER_MAY_RUSTBORO_MUDKIP === /* Route */
+=== TRAINER_MAY_RUSTBORO_MUDKIP === /* Route 104 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -18812,7 +18812,7 @@ Adamant Nature
 - Psychic Fangs  
 - Crunch  
 
-=== TRAINER_MAXIE_MAGMA_HIDEOUT === /* Route */
+=== TRAINER_MAXIE_MAGMA_HIDEOUT === /* Magma Hideout */
 Name: MAXIE
 Class: Magma Leader
 Pic: Maxie ORAS
@@ -18897,7 +18897,7 @@ IVs: 0 Atk
 - Solar Beam  
 
 
-=== TRAINER_MAXIE_MT_CHIMNEY === /* Route */
+=== TRAINER_MAXIE_MT_CHIMNEY === /* Mt. Chimney */
 Name: MAXIE
 Class: Magma Leader
 Pic: Maxie ORAS
@@ -19118,7 +19118,7 @@ Tera Type: Fire
 - Captivate  
 
 
-=== TRAINER_VIVI === /* Route */
+=== TRAINER_VIVI === /* Route 111 */ /* TO BE ADDED */
 Name: VIVI
 Class: Winstrate
 Pic: Lass
@@ -19211,7 +19211,7 @@ Breloom
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_SALLY === /* Route */
+=== TRAINER_SALLY === /* Trick House */ /* TO BE ADDED */
 Name: SALLY
 Class: Lass
 Pic: Lass
@@ -19224,7 +19224,7 @@ Oddish
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROBIN === /* Route */
+=== TRAINER_ROBIN === /* Trick House */ /* TO BE ADDED */
 Name: ROBIN
 Class: Lass
 Pic: Lass
@@ -19869,7 +19869,7 @@ Numel
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALAN === /* Route */
+=== TRAINER_ALAN === /* Trick House */ /* TO BE ADDED */
 Name: ALAN
 Class: Hiker
 Pic: Hiker
@@ -19890,7 +19890,7 @@ Graveler
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CLARK === /* Route */
+=== TRAINER_CLARK === /* Route 116 */ /* TO BE ADDED */
 Name: CLARK
 Class: Hiker
 Pic: Hiker
@@ -19903,7 +19903,7 @@ Geodude
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ERIC === /* Route */
+=== TRAINER_ERIC === /* Jagged Pass */ /* TO BE ADDED */
 Name: ERIC
 Class: Hiker
 Pic: Hiker
@@ -20102,7 +20102,7 @@ Golem
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_DEZ_AND_LUKE === /* Route */
+=== TRAINER_DEZ_AND_LUKE === /* Mt. Pyre 2F */ /* TO BE ADDED */
 Name: DEZ & LUKE
 Class: Young Couple
 Pic: Young Couple
@@ -20119,7 +20119,7 @@ Manectric
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LEA_AND_JED === /* Route */
+=== TRAINER_LEA_AND_JED === /* S.S. Tidal */ /* TO BE ADDED */
 Name: LEA & JED
 Class: Young Couple
 Pic: Young Couple
@@ -20136,7 +20136,7 @@ Luvdisc
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KIRA_AND_DAN_1 === /* Route */
+=== TRAINER_KIRA_AND_DAN_1 === /* Abandoned Ship */ /* TO BE ADDED */
 Name: KIRA & DAN
 Class: Young Couple
 Pic: Young Couple
@@ -20640,7 +20640,7 @@ Level: 56
 - Stun Spore  
 
 
-=== TRAINER_WALLY_MAUVILLE === /* Route */
+=== TRAINER_WALLY_MAUVILLE === /* Mauville City */
 Name: WALLY
 Class: Rival
 Pic: Wally
@@ -20907,7 +20907,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_LILYCOVE_MUDKIP === /* Route */
+=== TRAINER_BRENDAN_LILYCOVE_MUDKIP === /* Lilycove City */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -21020,7 +21020,7 @@ IVs: 0 Atk
 - Protect  
 
 
-=== TRAINER_BRENDAN_LILYCOVE_TREECKO === /* Route */
+=== TRAINER_BRENDAN_LILYCOVE_TREECKO === /* Lilycove City */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -21133,7 +21133,7 @@ IVs: 0 Atk
 */
 
 
-=== TRAINER_BRENDAN_LILYCOVE_TORCHIC === /* Route */
+=== TRAINER_BRENDAN_LILYCOVE_TORCHIC === /* Lilycove City */
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -21211,7 +21211,7 @@ Adamant Nature
 - Ice Punch  
 - Protect  
 
-=== TRAINER_MAY_LILYCOVE_MUDKIP === /* Route */
+=== TRAINER_MAY_LILYCOVE_MUDKIP === /* Lilycove City */
 Name: MAY
 Class: Rival
 Pic: May
@@ -21323,7 +21323,7 @@ IVs: 0 Atk
 - Vacuum Wave  
 - Protect  
 
-=== TRAINER_MAY_LILYCOVE_TREECKO === /* Route */
+=== TRAINER_MAY_LILYCOVE_TREECKO === /* Lilycove City */
 Name: MAY
 Class: Rival
 Pic: May
@@ -21400,7 +21400,7 @@ Adamant Nature
 - Brave Bird  
 - Protect  
 
-=== TRAINER_MAY_LILYCOVE_TORCHIC === /* Route */
+=== TRAINER_MAY_LILYCOVE_TORCHIC === /* Lilycove City */
 Name: MAY
 Class: Rival
 Pic: May
@@ -21477,7 +21477,7 @@ Adamant Nature
 - Ice Punch  
 - Protect  
 
-=== TRAINER_JONAH === /* Route */
+=== TRAINER_JONAH === /* Route 127 */ /* TO BE ADDED */
 Name: JONAH
 Class: Fisherman
 Pic: Fisherman
@@ -21498,7 +21498,7 @@ Sharpedo
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_HENRY === /* Route */
+=== TRAINER_HENRY === /* Route 127 */ /* TO BE ADDED */
 Name: HENRY
 Class: Fisherman
 Pic: Fisherman
@@ -21515,7 +21515,7 @@ Tentacruel
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ROGER === /* Route */
+=== TRAINER_ROGER === /* Route 127 */ /* TO BE ADDED */
 Name: ROGER
 Class: Fisherman
 Pic: Fisherman
@@ -21536,7 +21536,7 @@ Gyarados
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALEXA === /* Route */
+=== TRAINER_ALEXA === /* Route 128 */ /* TO BE ADDED */
 Name: ALEXA
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -21553,7 +21553,7 @@ Azumarill
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RUBEN === /* Route */
+=== TRAINER_RUBEN === /* Route 128 */ /* TO BE ADDED */
 Name: RUBEN
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -21682,7 +21682,7 @@ Skarmory
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_REED === /* Route */
+=== TRAINER_REED === /* Route 129 */ /* TO BE ADDED */
 Name: REED
 Class: Swimmer M
 Pic: Swimmer M
@@ -21699,7 +21699,7 @@ Sharpedo
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TISHA === /* Route */
+=== TRAINER_TISHA === /* Route 129 */ /* TO BE ADDED */
 Name: TISHA
 Class: Swimmer F
 Pic: Swimmer F
@@ -21779,7 +21779,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Mud Sport
 - Rock Throw
 
-=== TRAINER_MEL_AND_PAUL === /* Route */
+=== TRAINER_MEL_AND_PAUL === /* Route 109 */
 Name: MEL & PAUL
 Class: Young Couple
 Pic: Young Couple
@@ -21804,7 +21804,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Attract
 - Stun Spore
 
-=== TRAINER_JOHN_AND_JAY_1 === /* Route */
+=== TRAINER_JOHN_AND_JAY_1 === /* Meteor Falls */
 Name: JOHN & JAY
 Class: Old Couple
 Pic: Old Couple
@@ -21929,7 +21929,7 @@ IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Rest
 - Belly Drum
 
-=== TRAINER_RELI_AND_IAN === /* Route */
+=== TRAINER_RELI_AND_IAN === /* Route 131 */ /* TO BE ADDED */
 Name: RELI & IAN
 Class: Sis And Bro
 Pic: Sis And Bro
@@ -22061,7 +22061,7 @@ Sharpedo
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LISA_AND_RAY === /* Route */
+=== TRAINER_LISA_AND_RAY === /* Route 107 */ /* TO BE ADDED */
 Name: LISA & RAY
 Class: Sis And Bro
 Pic: Sis And Bro
@@ -23289,7 +23289,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_10 === /* Route */
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_10 === /* Magma Hideout */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -23355,7 +23355,7 @@ Adamant Nature
 - Combat Torque  
 
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_12 === /* Route */ /* LAVA ROOM */
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_12 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -23407,7 +23407,7 @@ Tera Type: Grass
 - Seed Bomb  
 
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_13 === /* Route */ /* LAVA ROOM */
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_13 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -23658,7 +23658,7 @@ Adamant Nature
 */
 
 
-=== TRAINER_DARCY === /* Route */
+=== TRAINER_DARCY === /* Route 132 */ /* TO BE ADDED */
 Name: DARCY
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -23675,7 +23675,7 @@ Camerupt
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAXIE_MOSSDEEP === /* Route */
+=== TRAINER_MAXIE_MOSSDEEP === /* Mossdeep Space Center 2F */ /* TO BE ADDED */
 Name: MAXIE
 Class: Magma Leader
 Pic: Maxie ORAS
@@ -23696,7 +23696,7 @@ Camerupt
 Level: 44
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_PETE === /* Route */
+=== TRAINER_PETE === /* Route 103 */ /* TO BE ADDED */
 Name: PETE
 Class: Swimmer M
 Pic: Swimmer M
@@ -23722,7 +23722,7 @@ Marill
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ANDRES_1 === /* Route */
+=== TRAINER_ANDRES_1 === /* Route 105 */ /* TO BE ADDED */
 Name: ANDRES
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -23756,7 +23756,7 @@ Wingull
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_CAMRON === /* Route */
+=== TRAINER_CAMRON === /* Route 107 */ /* TO BE ADDED */
 Name: CAMRON
 Class: Triathlete
 Pic: Swimming Triathlete M
@@ -23818,7 +23818,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_CAROLINA === /* Route */
+=== TRAINER_CAROLINA === /* Route 108 */ /* TO BE ADDED */
 Name: CAROLINA
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -24320,7 +24320,7 @@ Tera Type: Normal
 - Power-Up Punch  
 
 
-=== TRAINER_JOHNSON === /* Route */
+=== TRAINER_JOHNSON === /* Route 116 */ /* TO BE ADDED */
 Name: JOHNSON
 Class: Youngster
 Pic: Youngster
@@ -24400,7 +24400,7 @@ IVs: 0 Atk
 - Thunder Wave  
 - Hidden Power
 
-=== TRAINER_AISHA === /* Route */
+=== TRAINER_AISHA === /* Route 117 */
 Name: AISHA
 Class: Battle Girl
 Pic: Battle Girl
@@ -24441,7 +24441,7 @@ Tera Type: Fire
 
 
 
-=== TRAINER_MAKAYLA === /* Route */
+=== TRAINER_MAKAYLA === /* Route 132 */ /* TO BE ADDED */
 Name: MAKAYLA
 Class: Expert
 Pic: Expert F
@@ -24656,7 +24656,7 @@ Tera Type: Electric
 - Ice Punch  
 - Barrier  
 
-Sirfetch’d  
+Sirfetchâ€™d  
 Level: 57
 Ability: Scrappy  
 Tera Type: Fighting  
@@ -24798,7 +24798,7 @@ Vigoroth
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_RUSTBORO_TREECKO === /* Route */
+=== TRAINER_MAY_RUSTBORO_TREECKO === /* Route 104 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -24879,7 +24879,7 @@ Adamant Nature
 - Psychic Fangs  
 - Crunch  
 
-=== TRAINER_MAY_RUSTBORO_TORCHIC === /* Route */
+=== TRAINER_MAY_RUSTBORO_TORCHIC === /* Route 104 */
 Name: MAY
 Class: Rival
 Pic: May
@@ -26770,7 +26770,7 @@ Level: 59
 
 
 
-=== TRAINER_STEVEN_1 === /* Route */
+=== TRAINER_STEVEN_1 === /* Ever Grande City */
 Name: STEVEN
 Class: Champion
 Pic: Steven
@@ -26843,7 +26843,7 @@ Tera Type: Steel
 - Psychic Fangs  
 - Shadow Claw  
 
-=== TRAINER_ANABEL === /* Route */
+=== TRAINER_ANABEL === /* Battle Frontier */ /* TO BE ADDED */
 Name: ANABEL
 Class: Salon Maiden
 Pic: Salon Maiden Anabel
@@ -26856,7 +26856,7 @@ Beldum
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TUCKER === /* Route */
+=== TRAINER_TUCKER === /* Ever Grande City */
 Name: TUCKER
 Class: Elite Four
 Pic: Dome Ace Tucker
@@ -26936,7 +26936,7 @@ IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground I
 - Draining Kiss  
 
 
-=== TRAINER_SPENSER === /* Route */
+=== TRAINER_SPENSER === /* Battle Frontier */ /* TO BE ADDED */
 Name: SPENSER
 Class: Palace Maven
 Pic: Palace Maven Spenser
@@ -26949,7 +26949,7 @@ Beldum
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRETA === /* Route */
+=== TRAINER_GRETA === /* Battle Frontier */ /* TO BE ADDED */
 Name: GRETA
 Class: Arena Tycoon
 Pic: Arena Tycoon Greta
@@ -26962,7 +26962,7 @@ Beldum
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_NOLAND === /* Route */
+=== TRAINER_NOLAND === /* Ever Grande City */
 Name: NOLAND
 Class: Elite Four
 Pic: Factory Head Noland
@@ -27041,7 +27041,7 @@ Adamant Nature
 - Breaking Swipe  
 - Rock Climb  
 
-=== TRAINER_LUCY === /* Route */
+=== TRAINER_LUCY === /* Ever Grande City */
 Name: LUCY
 Class: Elite Four
 Pic: Pike Queen Lucy
@@ -27118,7 +27118,7 @@ Naughty Nature
 - Triple Axel  
 - Drill Run  
 
-=== TRAINER_BRANDON === /* Route */
+=== TRAINER_BRANDON === /* Battle Frontier */ /* TO BE ADDED */
 Name: BRANDON
 Class: Pyramid King
 Pic: Pyramid King Brandon
@@ -28369,7 +28369,7 @@ Kingdra
 Level: 40
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_MARIELA === /* Route */
+=== TRAINER_MARIELA === /* Trick House */ /* TO BE ADDED */
 Name: MARIELA
 Class: Psychic
 Pic: Psychic F
@@ -28381,7 +28381,7 @@ Chimecho
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALVARO === /* Route */
+=== TRAINER_ALVARO === /* Trick House */ /* TO BE ADDED */
 Name: ALVARO
 Class: Psychic
 Pic: Psychic M
@@ -28409,7 +28409,7 @@ Wobbuffet
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RED === /* Route */
+=== TRAINER_RED === /* Route */ /* TO BE ADDED */
 Name: RED
 Class: Rival
 Pic: Red
@@ -28421,7 +28421,7 @@ Charmander
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LEAF === /* Route */
+=== TRAINER_LEAF === /* Route */ /* TO BE ADDED */
 Name: LEAF
 Class: Rival
 Pic: Leaf
@@ -28433,7 +28433,7 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_PLACEHOLDER === /* Route */
+=== TRAINER_BRENDAN_PLACEHOLDER === /* Route */ /* TO BE ADDED */
 Name: BRENDAN
 Class: RS Protag
 Pic: RS Brendan
@@ -28445,7 +28445,7 @@ Groudon
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_PLACEHOLDER === /* Route */
+=== TRAINER_MAY_PLACEHOLDER === /* Route */ /* TO BE ADDED */
 Name: MAY
 Class: RS Protag
 Pic: RS May
