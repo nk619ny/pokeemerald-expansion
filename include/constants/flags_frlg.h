@@ -2371,10 +2371,10 @@
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_7_TROPIC_MAIL                  0
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL                    0
 #define FLAG_ITEM_JAGGED_PASS_BURN_HEAL                             0
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0
+#define FLAG_ITEM_AQUA_HIDEOUT_B1F_TM_LIQUIDATION                       0
 #define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION                       0
-#define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP                    0
+#define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_CALM_MIND                    0
 #define FLAG_ITEM_NEW_MAUVILLE_ULTRA_BALL                           0
 #define FLAG_ITEM_NEW_MAUVILLE_ESCAPE_ROPE                          0
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_6_LUXURY_BALL    0

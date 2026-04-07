@@ -1095,7 +1095,7 @@
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
 #define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414 // now unused and available
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415
+#define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415 // now unused and available
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
@@ -1121,10 +1121,10 @@
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_7_TROPIC_MAIL                  0x42C
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL                    0x42D
 #define FLAG_ITEM_JAGGED_PASS_BURN_HEAL                             0x42E
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0x42F
+#define FLAG_ITEM_AQUA_HIDEOUT_B1F_TM_LIQUIDATION                       0x42F
 #define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0x430
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION                       0x431
-#define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP                    0x432
+#define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_CALM_MIND                    0x432
 #define FLAG_ITEM_NEW_MAUVILLE_ULTRA_BALL                           0x433 //now Volt Switch
 #define FLAG_ITEM_NEW_MAUVILLE_ESCAPE_ROPE                          0x434 //now Magnet
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_6_LUXURY_BALL    0x435
