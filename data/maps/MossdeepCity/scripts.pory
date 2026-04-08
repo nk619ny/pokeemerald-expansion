@@ -428,3 +428,25 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "mentored WALLACE.$"
 
 `
+
+
+script MossdeepCity_EventScript_CloseCombatBlackBelt {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_CLOSE_COMBAT)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(MossdeepCity_Text_DynamicPunchTeach, MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_CLOSE_COMBAT)
+		waitfanfare
+	}
+	else{
+		msgbox(format("I want you to win at the Mossdeep Gym using Close Combat!"), MSGBOX_DEFAULT)
+	}
+	releaseall
+	end
+}
+
+text MossdeepCity_Text_DynamicPunchTeach{
+	format("I can't do this anymore!\pIt's utterly hopeless!\pI'm a FIGHTING-type TRAINER,\nso I can't win at the MOSSDEEP GYM\lno matter how hard I try!\pArgh! Punch! Punch! Punch!\nPunch! Punch! Punch!\pWhat, don't look at me that way!\nI'm only hitting the ground!\pHere, take this and teach your Pokémon Close Combat!")
+}

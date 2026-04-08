@@ -854,3 +854,51 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "People tell me the new LEADER once\n"
 # 428 "data/maps/MossdeepCity/scripts.pory"
 	.string "mentored WALLACE.$"
+
+MossdeepCity_EventScript_CloseCombatBlackBelt::
+# 434 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 435 "data/maps/MossdeepCity/scripts.pory"
+	faceplayer
+# 436 "data/maps/MossdeepCity/scripts.pory"
+	checkitem ITEM_TM_CLOSE_COMBAT
+# 437 "data/maps/MossdeepCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MossdeepCity_EventScript_CloseCombatBlackBelt_2
+# 444 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_CloseCombatBlackBelt_Text_0, MSGBOX_DEFAULT
+MossdeepCity_EventScript_CloseCombatBlackBelt_1:
+# 446 "data/maps/MossdeepCity/scripts.pory"
+	releaseall
+	end
+
+MossdeepCity_EventScript_CloseCombatBlackBelt_2:
+# 438 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_Text_DynamicPunchTeach, MSGBOX_DEFAULT
+# 439 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 440 "data/maps/MossdeepCity/scripts.pory"
+	giveitem ITEM_TM_CLOSE_COMBAT
+# 441 "data/maps/MossdeepCity/scripts.pory"
+	waitfanfare
+	goto MossdeepCity_EventScript_CloseCombatBlackBelt_1
+
+
+MossdeepCity_EventScript_CloseCombatBlackBelt_Text_0:
+# 444 "data/maps/MossdeepCity/scripts.pory"
+	.string "I want you to win at the Mossdeep Gym\n"
+	.string "using Close Combat!$"
+
+MossdeepCity_Text_DynamicPunchTeach::
+# 450 "data/maps/MossdeepCity/scripts.pory"
+	.string "I can't do this anymore!\p"
+	.string "It's utterly hopeless!\p"
+	.string "I'm a FIGHTING-type TRAINER,\n"
+	.string "so I can't win at the MOSSDEEP GYM\l"
+	.string "no matter how hard I try!\p"
+	.string "Argh! Punch! Punch! Punch!\n"
+	.string "Punch! Punch! Punch!\p"
+	.string "What, don't look at me that way!\n"
+	.string "I'm only hitting the ground!\p"
+	.string "Here, take this and teach your Pokémon\n"
+	.string "Close Combat!$"

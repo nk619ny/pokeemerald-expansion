@@ -1073,35 +1073,43 @@ MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_6:
 # 556 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieExplainDive, MSGBOX_DEFAULT
 # 557 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	waitmessage
+	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieExplainMasterBall, MSGBOX_DEFAULT
 # 558 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	switch VAR_TEMP_3
+	closemessage
 # 559 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	case 1, MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_13
+	giveitem ITEM_MASTER_BALL, 1
 # 560 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	case 2, MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_13
+	waitfanfare
+# 561 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	waitmessage
 # 562 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	switch VAR_TEMP_3
+# 563 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	case 1, MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_13
+# 564 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	case 2, MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_13
+# 566 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	case 3, MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_14
 MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_11:
-# 565 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	waitmovement 0
-# 566 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	applymovement LOCALID_SPACE_CENTER_2F_COURTNEY, Common_Movement_FaceRight
-# 567 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	waitmovement 0
-# 568 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	msgbox MossdeepCity_SpaceCenter_2F_Text_StevenInvestigateMeteorite, MSGBOX_DEFAULT
 # 569 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	waitmessage
+	waitmovement 0
 # 570 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setvar VAR_LEVEL_CAP, 75
+	applymovement LOCALID_SPACE_CENTER_2F_COURTNEY, Common_Movement_FaceRight
 # 571 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	waitmovement 0
 # 572 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	call Common_EventScript_LevelCapUpdate
+	msgbox MossdeepCity_SpaceCenter_2F_Text_StevenInvestigateMeteorite, MSGBOX_DEFAULT
 # 573 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	call MossdeepCity_SpaceCenter_2F_EventScript_SetPostMagmaFlags
+	waitmessage
 # 574 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	setvar VAR_LEVEL_CAP, 75
+# 575 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 576 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	call Common_EventScript_LevelCapUpdate
+# 577 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	call MossdeepCity_SpaceCenter_2F_EventScript_SetPostMagmaFlags
+# 578 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	releaseall
 	end
 
@@ -1136,86 +1144,70 @@ MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_10:
 	goto MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_6
 
 MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_13:
-# 561 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 565 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	applymovement LOCALID_SPACE_CENTER_2F_STEVEN, MossdeepCity_SpaceCenter_2F_Movement_StevenApproachCourtney
 	goto MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_11
 
 MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_14:
-# 563 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 567 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	applymovement LOCALID_SPACE_CENTER_2F_STEVEN, Common_Movement_WalkInPlaceFasterLeft
 	goto MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle_11
 
 
 MossdeepCity_SpaceCenter_2F_EventScript_SetPostMagmaFlags::
-# 579 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
-# 580 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
-# 581 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
-# 582 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_DEFEATED_MAGMA_SPACE_CENTER
 # 583 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
 # 584 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 # 585 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	clearflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN
+	setflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
 # 586 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
+	setflag FLAG_DEFEATED_MAGMA_SPACE_CENTER
 # 587 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setvar VAR_MOSSDEEP_CITY_STATE, 3
+	setflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN
 # 588 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 3
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE
 # 589 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setvar VAR_STEVENS_HOUSE_STATE, 2
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN
 # 590 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_RECEIVED_HM_DIVE
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
 # 591 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
+	setvar VAR_MOSSDEEP_CITY_STATE, 3
 # 592 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 3
+# 593 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	setvar VAR_STEVENS_HOUSE_STATE, 2
+# 594 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	setflag FLAG_RECEIVED_HM_DIVE
+# 595 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
+# 596 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
 	return
 
 
 MossdeepCity_SpaceCenter_2F_EventScript_Courtney::
-# 597 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 601 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	trainerbattle_single TRAINER_COURTNEY_MOSSDEEP, MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro, MossdeepCity_SpaceCenter_2F_Text_CourtneyDefeat, MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle
-# 598 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 602 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_Text_CourtneyInFreeRoam, MSGBOX_NPC
 	end
 
 
 MossdeepCity_SpaceCenter_2F_EventScript_Maxie::
-# 603 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 607 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieInFreeRoam, MSGBOX_NPC
 	end
 
 
 MossdeepCity_SpaceCenter_2F_EventScript_Steven::
-# 608 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 612 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_Text_StevenInFreeRoam, MSGBOX_NPC
 	end
 
 
-# 612 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-MossdeepCity_SpaceCenter_2F_Movement_StevenMaxieEnter:
-# 613 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	walk_left
-# 613 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	walk_left
-# 613 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	walk_left
-# 613 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	walk_left
-# 613 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	walk_left
-# 613 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	walk_left
-	step_end
-
 # 616 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer1:
+MossdeepCity_SpaceCenter_2F_Movement_StevenMaxieEnter:
 # 617 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	walk_left
 # 617 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
@@ -1224,85 +1216,101 @@ MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer1:
 	walk_left
 # 617 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	walk_left
-# 618 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	face_up
+# 617 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	walk_left
+# 617 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	walk_left
 	step_end
 
+# 620 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer1:
 # 621 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer2:
-# 622 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	walk_left
+# 621 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	walk_left
+# 621 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	walk_left
+# 621 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	walk_left
 # 622 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	walk_left
+	face_up
 	step_end
 
 # 625 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer2:
+# 626 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	walk_left
+# 626 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	walk_left
+	step_end
+
+# 629 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_Movement_MaxieApproachPlayer3:
-# 626 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 630 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	walk_left
-# 626 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 630 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	walk_left
-# 627 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 631 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	face_up
 	step_end
 
-# 630 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 634 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_Movement_StevenApproachCourtney:
-# 631 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 635 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	walk_left
-# 631 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 635 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	walk_left
 	step_end
 
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal::
-# 704 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 712 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	lock
-# 705 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 713 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	faceplayer
-# 706 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 714 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	checkitem ITEM_TM_METEOR_BEAM
-# 707 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 715 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal_2
-# 716 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 724 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets, MSGBOX_DEFAULT
-# 717 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 725 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	closemessage
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal_1:
-# 719 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 727 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal_2:
-# 708 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 716 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal_Text_0, MSGBOX_DEFAULT
-# 709 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 717 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	closemessage
-# 710 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 718 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	giveitem ITEM_TM_METEOR_BEAM
-# 711 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 719 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	waitfanfare
-# 712 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 720 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal_Text_1, MSGBOX_DEFAULT
-# 713 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 721 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	closemessage
 	goto MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal_1
 
 
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal_Text_0:
-# 708 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 716 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "You look like a Pokémon trainer.\n"
 	.string "Look at this new TM we've developed\l"
 	.string "through our studies.$"
 
 MossdeepCity_SpaceCenter_2F_EventScript_ScientistNormal_Text_1:
-# 712 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 720 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "By channeling the power of outer space,\n"
 	.string "a Pokémon can power itself up and\l"
 	.string "attack.$"
 
 MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro::
-# 634 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 638 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Courtney: …You. You infiltrated the\n"
 	.string "hideout. You interfered with Maxie\l"
 	.string "awakening Groudon. Common\l"
@@ -1310,23 +1318,23 @@ MossdeepCity_SpaceCenter_2F_Text_CourtneyIntro::
 	.string "your removal.$"
 
 MossdeepCity_SpaceCenter_2F_Text_CourtneyDefeat::
-# 638 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 642 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Courtney: Additional data collected.\n"
 	.string "Success rate: 0%.$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieStopThis::
-# 642 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 646 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Maxie: Courtney! Stop this!$"
 
 MossdeepCity_SpaceCenter_2F_Text_CourtneyMeteorite::
-# 646 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 650 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Courtney: This meteorite. It has a\n"
 	.string "connection to a third ancient Pokémon.\l"
 	.string "One that can tame the primal Groudon.\l"
 	.string "If I obtain it, we can…$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWereWrong::
-# 650 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 654 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Maxie: We were wrong. Our models did not\n"
 	.string "fully comprehend the implications of\l"
 	.string "land creation, and the power and will of\l"
@@ -1335,11 +1343,11 @@ MossdeepCity_SpaceCenter_2F_Text_MaxieWeWereWrong::
 	.string "before we make things even worse.$"
 
 MossdeepCity_SpaceCenter_2F_Text_CourtneySilent::
-# 654 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 658 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Courtney: ...$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenArchieKyogre::
-# 658 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 662 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Steven: Right now, Archie is on his way\n"
 	.string "to awaken the ancient undersea\l"
 	.string "Pokémon, Kyogre. As dangerous as it is\l"
@@ -1348,14 +1356,14 @@ MossdeepCity_SpaceCenter_2F_Text_StevenArchieKyogre::
 	.string "situation exponentially worse.$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieKyogreLocation::
-# 662 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 666 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Maxie: We will help. Based on weather\n"
 	.string "patterns we've observed in our\l"
 	.string "research, Kyogre is likely located in a\l"
 	.string "seafloor cavern under Route 128.$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxiePlayerPursue::
-# 666 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 670 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Maxie: However, we shouldn't be the\n"
 	.string "ones to pursue them. Our presence will\l"
 	.string "only antagonize Archie further, and\l"
@@ -1365,47 +1373,58 @@ MossdeepCity_SpaceCenter_2F_Text_MaxiePlayerPursue::
 	.string "and your Pokémon go after them.$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieExplainDive::
-# 670 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 674 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Maxie: HM08 contains the move Dive. It\n"
 	.string "will allow you and your Pokémon to\l"
 	.string "follow Team Aqua to the seafloor cavern\l"
 	.string "where they are searching for Kyogre.$"
 
+MossdeepCity_SpaceCenter_2F_Text_MaxieExplainMasterBall::
+# 678 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+	.string "Maxie: You should also take this rare\n"
+	.string "Master Ball.\p"
+	.string "It is capable of capturing any Pokémon\n"
+	.string "without fail.\p"
+	.string "I had used it in my misguided attempt to\n"
+	.string "control Groudon.\p"
+	.string "I am confident you will use it with more\n"
+	.string "prudence than I had.$"
+
 MossdeepCity_SpaceCenter_2F_Text_StevenInvestigateMeteorite::
-# 674 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 682 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Steven: I will investigate this\n"
 	.string "meteorite Courtney found. If there is\l"
 	.string "some way to pacify Groudon, we'll need\l"
 	.string "to find it.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel::
-# 678 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 686 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Why would Team Magma want to steal a\n"
 	.string "meteorite in the first place?$"
 
 MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace::
-# 682 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 690 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Team Magma… Are they just big fans of\n"
 	.string "rocks?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis::
-# 686 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 694 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "The results of scientific exploration\n"
 	.string "belong to all of humanity. Team Magma\l"
 	.string "can't just take it for themselves!$"
 
 MossdeepCity_SpaceCenter_2F_Text_CourtneyInFreeRoam::
-# 690 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 698 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Courtney: ...\p"
 	.string "All our work...$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieInFreeRoam::
-# 694 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 702 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Maxie: After everything, it turned out\n"
 	.string "I had much to learn.\p"
 	.string "Thank you, {PLAYER}. And good luck.$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenInFreeRoam::
-# 698 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
+# 706 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	.string "Steven: There is something about this\n"
 	.string "meteorite… I can feel it.$"

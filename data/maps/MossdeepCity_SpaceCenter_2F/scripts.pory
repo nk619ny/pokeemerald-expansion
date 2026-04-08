@@ -554,6 +554,10 @@ script MossdeepCity_SpaceCenter_2F_EventScript_CourtneyPostBattle {
 	giveitem(ITEM_HM08, 1)
 	waitfanfare
 	msgbox(MossdeepCity_SpaceCenter_2F_Text_MaxieExplainDive, MSGBOX_DEFAULT)
+	msgbox(MossdeepCity_SpaceCenter_2F_Text_MaxieExplainMasterBall, MSGBOX_DEFAULT)
+	closemessage
+	giveitem(ITEM_MASTER_BALL, 1)
+	waitfanfare
 	waitmessage
 	switch(var(TempVar_PlayerLocation)) {
 		case 1:
@@ -669,6 +673,10 @@ text MossdeepCity_SpaceCenter_2F_Text_MaxiePlayerPursue {
 
 text MossdeepCity_SpaceCenter_2F_Text_MaxieExplainDive {
     format("Maxie: HM08 contains the move Dive. It will allow you and your Pokémon to follow Team Aqua to the seafloor cavern where they are searching for Kyogre.")
+}
+
+text MossdeepCity_SpaceCenter_2F_Text_MaxieExplainMasterBall {
+    format("Maxie: You should also take this rare Master Ball.\pIt is capable of capturing any Pokémon without fail.\pI had used it in my misguided attempt to control Groudon.\pI am confident you will use it with more prudence than I had.")
 }
 
 text MossdeepCity_SpaceCenter_2F_Text_StevenInvestigateMeteorite {
