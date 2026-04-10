@@ -2384,8 +2384,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
-        .alwaysHitsOnSameType = TRUE, // Custom: always hits if user is Electric type (like Toxic for Poison types)
-        .argument = { .nonVolatileStatus = MOVE_EFFECT_THUNDER_WAVE },
+        .alwaysHitsOnSameType = B_CUSTOMIZED_MOVE_STATS == TRUE ? TRUE : FALSE, // Custom: always hits if user is Electric type (like Toxic for Poison types)
+        .argument = { .nonVolatileStatus = MOVE_EFFECT_PARALYSIS },
         .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
         .magicCoatAffected = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS : CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
