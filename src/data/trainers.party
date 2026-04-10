@@ -1335,8 +1335,8 @@ Ball: Great
 Level: 65
 EVs: 252 HP / 252 Atk / 4 Spe  
 Adamant Nature  
-- Crunch  
-- Ice Fang  
+- Double Edge 
+- Facade  
 - Dragon Dance  
 - Fishious Rend  
 
@@ -5225,31 +5225,105 @@ Linoone @ Nugget
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WINSTON_3 === /* Route */
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
-Gender: Male
-Music: Rich
+=== TRAINER_HAZEL === /* Haunted Manor */
+Name: HAZEL
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Linoone @ Nugget
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Misdreavus
+Ability: Levitate  
+Level: 19
+Tera Type: Ghost  
+IVs: 0 Atk  
+- Draining Kiss  
+- Hex  
+- Memento  
+- Toxic  
 
-=== TRAINER_WINSTON_4 === /* Route */
-Name: WINSTON
-Class: Rich Boy
-Pic: Rich Boy
-Gender: Male
-Music: Rich
+Yamask-Galar  
+Ability: Wandering Spirit  
+Level: 20
+Tera Type: Ground  
+IVs: 0 Atk  
+- Curse  
+- Destiny Bond  
+- Earth Power  
+- Shadow Ball  
+
+Gothita @ Focus Band
+Ability: Shadow Tag  
+Level: 20
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Calm Mind  
+- Dark Pulse  
+- Expanding Force  
+- Signal Beam  
+
+Duskull @ Silver Powder
+Ability: Levitate  
+Level: 20
+Tera Type: Ghost  
+EVs: 252 HP  
+- Destiny Bond  
+- Night Shade  
+- Leech Life  
+- Curse  
+
+
+=== TRAINER_SAGE === /* Haunted Manor */
+Name: SAGE
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Linoone @ Nugget
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shuppet  
+Ability: Cursed Body  
+Level: 20
+Tera Type: Ghost  
+- Shadow Sneak  
+- Body Slam  
+- Encore  
+- Thunder Wave  
+
+Yamask  
+Ability: Mummy  
+Level: 20
+Tera Type: Ghost  
+IVs: 0 Atk  
+- Dark Pulse  
+- Psychic  
+- Curse  
+- Will-O-Wisp  
+
+Murkrow  
+Ability: Prankster  
+Level: 20
+Tera Type: Dark  
+IVs: 0 Atk  
+- Thunder Wave  
+- Toxic  
+- Hex  
+- Foul Play  
+
+Litwick  
+Ability: Flame Body  
+Level: 21
+Tera Type: Ghost  
+IVs: 0 Atk  
+- Acid Armor  
+- Flamethrower  
+- Burn Up  
+- Hex  
+
+
 
 === TRAINER_WINSTON_5 === /* Route */
 Name: WINSTON
@@ -12324,7 +12398,7 @@ IVs: 0 Atk
 - Nasty Plot  
 - Air Slash  
 
-Sirfetchâ€™d  
+Sirfetch'd  
 Level: 55
 Ability: Scrappy  
 Tera Type: Fighting  
@@ -13195,7 +13269,7 @@ Tera Type: Fighting
 - Brick Break  
 - No Retreat  
 
-Farfetchâ€™d-Galar 
+Farfetch'd-Galar 
 Level: 48
 Ability: Scrappy  
 Tera Type: Fighting  
@@ -18018,7 +18092,7 @@ Tera Type: Bug
 - Counter  
 - Sucker Punch  
 
-Farfetchâ€™d-Galar  
+Farfetch'd-Galar  
 Ability: Scrappy  
 Level: 22 
 Tera Type: Fighting  
@@ -24656,7 +24730,7 @@ Tera Type: Electric
 - Ice Punch  
 - Barrier  
 
-Sirfetchâ€™d  
+Sirfetch'd  
 Level: 57
 Ability: Scrappy  
 Tera Type: Fighting  

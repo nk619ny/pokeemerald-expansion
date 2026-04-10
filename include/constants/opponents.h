@@ -143,9 +143,9 @@
 #define TRAINER_WINSTON_1                   136
 #define TRAINER_MOLLIE                      137
 #define TRAINER_GARRET                      138
-#define TRAINER_NEW_NINJA                   139 //available
-#define TRAINER_WINSTON_3                   140 //available
-#define TRAINER_WINSTON_4                   141 //available
+#define TRAINER_NEW_NINJA                   139 //repurposed
+#define TRAINER_HAZEL                       140 //repurposed
+#define TRAINER_SAGE                        141 //repurposed
 #define TRAINER_WINSTON_5                   142 //available
 #define TRAINER_STEVE_1                     143
 #define TRAINER_THALIA_1                    144

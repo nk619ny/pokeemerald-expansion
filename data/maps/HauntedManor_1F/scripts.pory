@@ -1,0 +1,60 @@
+mapscripts HauntedManor_1F_MapScripts {
+}
+
+script HauntedManor_1F_EventScript_Hazel {
+    trainerbattle_single(TRAINER_HAZEL, HauntedManor_1F_Text_HazelIntro, HauntedManor_1F_Text_HazelDefeat)
+    msgbox(HauntedManor_1F_Text_HazelPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script HauntedManor_1F_EventScript_Sage {
+    trainerbattle_single(TRAINER_SAGE, HauntedManor_1F_Text_SageIntro, HauntedManor_1F_Text_SageDefeat, HauntedManor_1F_EventScript_GiveHex)
+    goto(HauntedManor_1F_EventScript_GiveHex)
+    release
+    end
+}
+
+text HauntedManor_1F_Text_HazelIntro {
+    format("The spirits brought you here.\pI could sense your presence before you stepped foot through that door.")
+}
+
+text HauntedManor_1F_Text_HazelDefeat {
+    format("What does it all mean…")
+}
+
+text HauntedManor_1F_Text_HazelPostBattle {
+    format("You have a strange energy about you.\pThe manor's ghosts are drawn to those like you. Be careful in here…")
+}
+
+
+
+text HauntedManor_1F_Text_SageIntro {
+    format("Who are you, to intrude in this place?")
+}
+
+text HauntedManor_1F_Text_SageDefeat {
+    format("My incantations have failed me…")
+}
+
+text HauntedManor_1F_Text_ExplainHex {
+    format("A hex is particularly potent against a foe who is already afflicted.")
+}
+
+script HauntedManor_1F_EventScript_GiveHex {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_HEX)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Allow me to teach your Pokémon some of my hexes."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_HEX)
+		waitfanfare
+	}
+    else{
+        msgbox(HauntedManor_1F_Text_ExplainHex, MSGBOX_DEFAULT)
+    }
+    closemessage
+	releaseall
+	end
+}

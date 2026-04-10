@@ -1094,8 +1094,8 @@
 #define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
 #define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414 // now unused and available
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415 // now unused and available
+#define FLAG_ITEM_HAUNTED_MANOR_1F_HP_UP                            0x414 // now unused and available
+#define FLAG_ITEM_HAUNTED_MANOR_1F_PP_MAX                           0x415 // now unused and available
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418

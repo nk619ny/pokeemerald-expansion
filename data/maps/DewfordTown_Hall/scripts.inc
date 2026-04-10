@@ -487,15 +487,15 @@ DewfordTown_Hall_EventScript_SludgeBombMan::
 # 244 "data/maps/DewfordTown_Hall/scripts.pory"
 	call Common_EventScript_BufferTrendyPhrase
 # 245 "data/maps/DewfordTown_Hall/scripts.pory"
-	goto_if_set FLAG_RECEIVED_TM_SLUDGE_BOMB, DewfordTown_Hall_EventScript_ReceivedSludgeBomb
+	goto DewfordTown_Hall_EventScript_ReceivedSludgeBomb
 # 246 "data/maps/DewfordTown_Hall/scripts.pory"
-	msgbox DewfordTown_Hall_Text_GiveYouSludgeBomb, MSGBOX_DEFAULT
+	//msgbox DewfordTown_Hall_Text_GiveYouSludgeBomb, MSGBOX_DEFAULT
 # 247 "data/maps/DewfordTown_Hall/scripts.pory"
-	giveitem ITEM_TM_SLUDGE_BOMB
+	//giveitem ITEM_TM_SLUDGE_BOMB
 # 248 "data/maps/DewfordTown_Hall/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	//goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 249 "data/maps/DewfordTown_Hall/scripts.pory"
-	setflag FLAG_RECEIVED_TM_SLUDGE_BOMB
+	//setflag FLAG_RECEIVED_TM_SLUDGE_BOMB
 # 250 "data/maps/DewfordTown_Hall/scripts.pory"
 	release
 # 251 "data/maps/DewfordTown_Hall/scripts.pory"
