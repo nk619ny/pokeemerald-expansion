@@ -1167,8 +1167,8 @@ enum __attribute__((packed)) Item
     ITEM_FLYGONITE = 985,
     ITEM_VIKAVOLITE = 986,
     ITEM_SLOWKINGITE = 987,
-    ITEM_VENUSAURITE_X = 988,
-    ITEM_BLASTOISINITE_X = 989,
+    ITEM_VENUSAURITE_Z = 988,
+    ITEM_BLASTOISINITE_Z = 989,
 
     // Custom Items
     ITEM_CANDY_BAG = 990,
