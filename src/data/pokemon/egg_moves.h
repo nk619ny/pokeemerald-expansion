@@ -5212,7 +5212,7 @@ static const u16 sHawluchaEggMoveLearnset[] = {
     MOVE_AGILITY,
     MOVE_ME_FIRST,
     MOVE_ALLY_SWITCH,
-    MOVE_ENTRAINMENT,
+    //MOVE_ENTRAINMENT, // removed to prevent player cheese
     MOVE_MUD_SPORT,
     MOVE_BATON_PASS,
     MOVE_QUICK_GUARD,
