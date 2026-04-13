@@ -1,0 +1,105 @@
+mapscripts IceCave_2F_MapScripts {
+}
+
+
+script IceCave_2F_EventScript_Tabitha {
+    trainerbattle_single(TRAINER_TABITHA_GLACIER, IceCave_2F_Text_TabithaMonologue, IceCave_2F_Text_TabithaPostBattle, IceCave_2F_EventScript_TabithaDefeated)
+    releaseall
+    end
+}
+
+script IceCave_2F_EventScript_TabithaDefeated {
+    lock
+    setflag(FLAG_HIDE_MAGMA_GLACIER)
+    setflag(FLAG_HIDE_ROUTE_112_TEAM_MAGMA)
+    clearflag(FLAG_HIDE_CABLE_CAR_ATTENDANT)
+    clearflag(FLAG_HIDE_MT_CHIMNEY_TRAINERS)
+    setflag(FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA)
+	setflag(FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA)
+    msgbox(IceCave_2F_Text_TabithaOutro)
+    waitmessage
+    delay(20)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+	removeobject(LOCALID_GLACIER_TABITHA)
+    removeobject(LOCALID_GLACIER_GRUNT_1)
+    removeobject(LOCALID_GLACIER_GRUNT_2)
+    removeobject(LOCALID_GLACIER_GRUNT_3)
+    delay(40)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(20)
+    setvar(VAR_LEVEL_CAP,43)
+    call(Common_EventScript_ApplyHandicap)
+    call(Common_EventScript_LevelCapUpdate)
+    releaseall
+    end
+}
+
+text IceCave_2F_Text_TabithaMonologue {
+    format("Underneath this glacier, there is plenty of unused land. Courtney tells me that it's especially rich in minerals, or something.\pBy melting away the accumulated ice, we can give the people of Hoenn access to a huge amount of unused land.\pAnd once the ice is gone, there will be nothing you or Team Aqua can do to undo it!")
+}
+
+text IceCave_2F_Text_TabithaPostBattle {
+    format("I can't believe it! We were so close!")
+}
+
+text IceCave_2F_Text_TabithaOutro {
+    format("You and those fools in Team Aqua don't understand. These plans are necessary.\pLand expansion is inevitable. And Leader Maxie is much smarter than you all.\pHe will find a way - trust me.")
+}
+
+
+script IceCave_2F_EventScript_Grunt1 {
+    trainerbattle_single(TRAINER_GRUNT_GLACIER_1, IceCave_2F_Text_Grunt1Intro, IceCave_2F_Text_Grunt1Defeat)
+    msgbox(IceCave_2F_Text_Grunt1PostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script IceCave_2F_EventScript_Grunt2 {
+    trainerbattle_single(TRAINER_GRUNT_GLACIER_2, IceCave_2F_Text_Grunt2Intro, IceCave_2F_Text_Grunt2Defeat)
+    msgbox(IceCave_2F_Text_Grunt2PostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script IceCave_2F_EventScript_Grunt3 {
+    trainerbattle_single(TRAINER_GRUNT_GLACIER_3, IceCave_2F_Text_Grunt3Intro, IceCave_2F_Text_Grunt3Defeat)
+    msgbox(IceCave_2F_Text_Grunt3PostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+text IceCave_2F_Text_Grunt1Intro {
+    format("There isn't supposed to be anyone up here!")
+}
+
+text IceCave_2F_Text_Grunt1Defeat {
+    format("This was supposed to be an easy job...")
+}
+
+text IceCave_2F_Text_Grunt1PostBattle {
+    format("What are the odds of a powerful trainer like you showing up here?")
+}
+
+text IceCave_2F_Text_Grunt2Intro {
+    format("We're on an important mission.\NYou can't be allowed to interfere!")
+}
+
+text IceCave_2F_Text_Grunt2Defeat {
+    format("Defeat feels colder than the ice around us...")
+}
+
+text IceCave_2F_Text_Grunt2PostBattle {
+    format("I just can't wait to get back down to the base...")
+}
+
+text IceCave_2F_Text_Grunt3Intro {
+    format("We're on a special mission with Tabitha!")
+}
+
+text IceCave_2F_Text_Grunt3Defeat {
+    format("I hope he wasn't watching...")
+}
+
+text IceCave_2F_Text_Grunt3PostBattle {
+    format("Tabitha is by far the best admin to work with.")
+}

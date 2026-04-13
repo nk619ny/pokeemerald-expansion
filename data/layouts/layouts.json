@@ -9699,8 +9699,8 @@
     {
       "id": "LAYOUT_GLACIER_SUMMIT",
       "name": "Glacier_Summit_Layout",
-      "width": 30,
-      "height": 40,
+      "width": 35,
+      "height": 45,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Glacier",
       "border_filepath": "data/layouts/Glacier_Summit/border.bin",

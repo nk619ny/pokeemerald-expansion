@@ -27311,7 +27311,7 @@ Tera Type: Grass
 - Leech Seed  
 - Bullet Seed  
 
-Larvitar  
+Larvitar @ Flame Orb
 Level: 45
 Ability: Guts  
 Tera Type: Rock  
@@ -27372,6 +27372,7 @@ Gloom @ Black Sludge
 Level: 43
 Ability: Stench  
 Tera Type: Grass  
+EVs: 252 SpA / 128 Def / 128 SpD  
 IVs: 0 Atk  
 - Giga Drain  
 - Leech Seed  
@@ -27381,11 +27382,32 @@ IVs: 0 Atk
 === TRAINER_GRUNT_GLACIER_3 === /* Route */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
-Gender: Male
+Pic: Magma Grunt F
+Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+
+Steenee (F)  
+Level: 40
+Ability: Leaf Guard  
+Tera Type: Grass  
+- Trop Kick  
+- Triple Axel  
+- Victory Dance  
+- Acupressure  
+
+Tangela @ Rocky Helmet  
+Ability: Regenerator  
+Tera Type: Grass  
+Level: 40
+EVs: 252 HP / 128 SpA / 128 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Ancient Power  
+- Energy Ball  
+- Rage Powder  
+- Leech Seed  
 
 Avalugg-Hisui @ Chople Berry  
 Level: 38
@@ -27410,7 +27432,6 @@ IVs: 0 Atk
 - Giga Drain  
 - Sludge Bomb  
 - Sleep Powder  
-
 
 
 === TRAINER_STEVEN_2 === /* Route */
