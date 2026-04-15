@@ -78,6 +78,7 @@
 #define B_CUSTOMIZED_ABILITY_SPORT_TIMER     4     // Number of turns Water/Mud Sport lasts when set by Damp/Muddy ability (move-based is always 5).
 #define B_CUSTOMIZED_ABILITY_SPORT_REDUCTION 0.5  // Damage multiplier when Water/Mud Sport is set by Damp/Muddy ability (e.g. 0.75 = 25% reduction). Move-based uses B_SPORT_DMG_REDUCTION.
 #define B_CUSTOMIZED_MOVE_STATS     TRUE       // Customizes move stats by me, the hack creator. This includes changing the base power, accuracy, PP, and priority of moves.
+#define B_PERFECT_SPREAD_ACCURACY   FALSE      // Custom toggle to give perfect accuracy to spread moves
 #define B_CUSTOMIZED_GEN_1_STATS    TRUE       // Customizes Gen 1 mon stats by me, the hack creator.
 #define B_CUSTOMIZED_GEN_2_STATS    TRUE       // Customizes Gen 2 mon stats by me, the hack creator.
 #define B_CUSTOMIZED_GEN_3_STATS    TRUE       // Customizes Gen 3 mon stats by me, the hack creator.

@@ -13259,6 +13259,7 @@ static const struct LevelUpMove sVenipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(12, MOVE_PURSUIT), //added from USUM
     LEVEL_UP_MOVE(33, MOVE_STEAMROLLER), //added from USUM
+    LEVEL_UP_MOVE(40, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 
@@ -13280,6 +13281,7 @@ static const struct LevelUpMove sWhirlipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(12, MOVE_PURSUIT), //added from USUM
     LEVEL_UP_MOVE(37, MOVE_STEAMROLLER), //added from USUM
+    LEVEL_UP_MOVE(46, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 
@@ -13302,6 +13304,7 @@ static const struct LevelUpMove sScolipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(74, MOVE_MEGAHORN),
     LEVEL_UP_MOVE(12, MOVE_PURSUIT), //added from USUM
     LEVEL_UP_MOVE(39, MOVE_STEAMROLLER), //added from USUM
+    LEVEL_UP_MOVE(50, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VENIPEDE
@@ -13730,6 +13733,7 @@ static const struct LevelUpMove sScraggyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_HEAD_SMASH),
     LEVEL_UP_MOVE( 9, MOVE_FEINT_ATTACK), //added from USUM
     LEVEL_UP_MOVE(27, MOVE_CHIP_AWAY), //added from USUM
+    LEVEL_UP_MOVE(45, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 
@@ -13751,6 +13755,7 @@ static const struct LevelUpMove sScraftyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_HEAD_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_FEINT_ATTACK), //added from USUM
     LEVEL_UP_MOVE(27, MOVE_CHIP_AWAY), //added from USUM
+    LEVEL_UP_MOVE(51, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SCRAGGY
@@ -14667,6 +14672,7 @@ static const struct LevelUpMove sFerrothornLevelUpLearnset[] = {
     LEVEL_UP_MOVE(49, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(56, MOVE_EXPLOSION),
     LEVEL_UP_MOVE(30, MOVE_MIRROR_SHOT), //added from USUM
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FERROSEED
@@ -15189,6 +15195,7 @@ static const struct LevelUpMove sDruddigonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_SUPERPOWER),
     LEVEL_UP_MOVE(31, MOVE_CHIP_AWAY), //added from USUM
     LEVEL_UP_MOVE(35, MOVE_REVENGE), //added from USUM
+    LEVEL_UP_MOVE(49, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DRUDDIGON
@@ -18048,6 +18055,7 @@ static const struct LevelUpMove sRockruffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(48, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(18, MOVE_ODOR_SLEUTH), //added from USUM
+    LEVEL_UP_MOVE(45, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 
@@ -18071,6 +18079,7 @@ static const struct LevelUpMove sLycanrocMiddayLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(18, MOVE_ODOR_SLEUTH), //added from USUM
+    LEVEL_UP_MOVE(45, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 
@@ -18094,6 +18103,7 @@ static const struct LevelUpMove sLycanrocMidnightLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(18, MOVE_ODOR_SLEUTH), //added from USUM
+    LEVEL_UP_MOVE(45, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 
@@ -18122,6 +18132,7 @@ static const struct LevelUpMove sLycanrocDuskLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(18, MOVE_ODOR_SLEUTH), //added from USUM
+    LEVEL_UP_MOVE(45, MOVE_ROCK_CLIMB), //added from USUM
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ROCKRUFF

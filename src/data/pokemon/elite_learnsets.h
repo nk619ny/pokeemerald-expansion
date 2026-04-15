@@ -865,6 +865,7 @@ static const u16 sMeowthGalarEliteLearnset[] = {
 
 static const u16 sPerrserkerEliteLearnset[] = {
     MOVE_MAKE_IT_RAIN,
+    MOVE_ANCHOR_SHOT,
     MOVE_ASSURANCE,
     MOVE_UNAVAILABLE,
 };

@@ -161,7 +161,9 @@
       "MOVE_SEISMIC_TOSS"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
   },
   "GRAVELER_ALOLA": {
     "LevelMoves": [],
@@ -170,7 +172,9 @@
       "MOVE_SEISMIC_TOSS"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
   },
   "GOLEM_ALOLA": {
     "LevelMoves": [],
@@ -179,7 +183,9 @@
       "MOVE_SEISMIC_TOSS"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
   },
   "GRIMER": {
     "LevelMoves": [],
@@ -764,7 +770,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_STEELSURGE"
+      "MOVE_STEELSURGE",
+      "MOVE_ROCK_CLIMB"
     ]
   },
   "AGGRON": {
@@ -773,7 +780,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_STEELSURGE"
+      "MOVE_STEELSURGE",
+      "MOVE_ROCK_CLIMB"
     ]
   },
   "STUNFISK_GALAR": {
@@ -791,7 +799,8 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_STEELSURGE"
+      "MOVE_STEELSURGE",
+      "MOVE_ROCK_CLIMB"
     ]
   },
   "SANDY_SHOCKS": {
@@ -819,6 +828,456 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_STEELSURGE"
+    ]
+  },
+  "GROWLITHE_HISUI": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "ARCANINE_HISUI": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "GEODUDE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "GRAVELER": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "GOLEM": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "ONIX": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "RHYHORN": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "RHYDON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "KABUTOPS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "AERODACTYL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "SUDOWOODO": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "LARVITAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "PUPITAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "TYRANITAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "ARON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "ARMALDO": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "REGIROCK": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "CRANIDOS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "RAMPARDOS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "SHIELDON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "BASTIODON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "RHYPERIOR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "ARCEUS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "ROGGENROLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "BOLDORE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "GIGALITH": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "DWEBBLE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "CRUSTLE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "TERRAKION": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "BARBARACLE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "TYRUNT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "TYRANTRUM": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "AVALUGG": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "DIANCIE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "ROCKRUFF": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "LYCANROC_MIDDAY": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "LYCANROC_MIDNIGHT": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "LYCANROC_DUSK": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "STAKATAKA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "DREDNAW": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "ROLYCOLY": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "CARKOL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "COALOSSAL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "STONJOURNER": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "KLEAVOR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "NACLI": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "NACLSTACK": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "GARGANACL": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "KLAWF": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "IRON_BOULDER": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ROCK_CLIMB"
     ]
   }
 }

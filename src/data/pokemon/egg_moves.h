@@ -3428,7 +3428,7 @@ static const u16 sLuvdiscEggMoveLearnset[] = {
     MOVE_AQUA_JET,
     MOVE_HEAL_PULSE,
     MOVE_BRINE,
-    MOVE_ENTRAINMENT,
+    //MOVE_ENTRAINMENT, //removed Entrainment from Luvdisc to prevent SoulHeart ability abuse
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LUVDISC
