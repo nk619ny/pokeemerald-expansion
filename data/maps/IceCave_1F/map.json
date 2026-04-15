@@ -39,7 +39,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "IceCave_2F_EventScript_Grunt3",
       "flag": "FLAG_HIDE_MAGMA_GLACIER"
     },
     {
@@ -53,7 +53,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "NULL",
+      "script": "IceCave_2F_EventScript_Grunt2",
       "flag": "FLAG_HIDE_MAGMA_GLACIER"
     },
     {
@@ -67,7 +67,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "IceCave_2F_EventScript_Grunt1",
       "flag": "FLAG_HIDE_MAGMA_GLACIER"
     }
   ],

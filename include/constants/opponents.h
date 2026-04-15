@@ -54,7 +54,7 @@
 #define TRAINER_AQUA_ADMIN_RUSTURF           47 //hijacked rematches of Dusty in 47-50 for new fights
 #define TRAINER_GRUNT_RUSTURF_TUNNEL_2       48 //hijacked rematches of Dusty in 47-50 for new fights
 #define TRAINER_ARCHIE_WEATHER_INSTITUTE     49 //hijacked rematches of Dusty in 47-50 for new fights
-#define TRAINER_DUSTY_5                      50 //available
+#define TRAINER_AMBER                        50 //hijacked rematches of Dusty in 47-50 for new fights
 #define TRAINER_GABBY_AND_TY_1               51
 #define TRAINER_GABBY_AND_TY_2               52
 #define TRAINER_GABBY_AND_TY_3               53
@@ -67,7 +67,7 @@
 #define TRAINER_ARCHIE_MT_PYRE               60 //hijacked rematches of Lola in 60-63 for new fights
 #define TRAINER_MAXIE_MT_PYRE                61 //hijacked rematches of Lola in 60-63 for new fights
 #define TRAINER_AMELIA                       62 //hijacked rematches of Lola in 60-63 for new fights
-#define TRAINER_LOLA_5                       63 //available
+#define TRAINER_MORRIS                       63 //hijacked rematches of Lola in 60-63 for new fights
 #define TRAINER_RICKY_1                      64
 #define TRAINER_SIMON                        65
 #define TRAINER_CHARLIE                      66
@@ -108,7 +108,7 @@
 #define TRAINER_BRUCE                       101 //was Brooke rematches, repurposed
 #define TRAINER_JIMMY                       102 //was Brooke rematches, repurposed
 #define TRAINER_HATTORI                     103 //was Brooke rematches, repurposed
-#define TRAINER_BROOKE_5                    104 //was Brooke rematches, repurposed
+#define TRAINER_BRADLEY                     104 //was Brooke rematches, repurposed
 #define TRAINER_PATRICIA                    105
 #define TRAINER_KINDRA                      106
 #define TRAINER_TAMMY                       107

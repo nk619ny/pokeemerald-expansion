@@ -1701,8 +1701,8 @@
 #define SPECIES_SUNFLORA_MEGA                           1583
 #define SPECIES_FLYGON_MEGA                             1584
 #define SPECIES_VIKAVOLT_MEGA                           1585
-#define SPECIES_VENUSAUR_MEGA_X                         1586
-#define SPECIES_BLASTOISE_MEGA_X                        1587
+#define SPECIES_VENUSAUR_MEGA_Z                         1586
+#define SPECIES_BLASTOISE_MEGA_Z                        1587
 #define SPECIES_SLOWKING_MEGA                           1588
 
 #define SPECIES_CYNDAQUIL_HISUI                         1589

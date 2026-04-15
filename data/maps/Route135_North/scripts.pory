@@ -1,0 +1,41 @@
+mapscripts Route135_North_MapScripts {
+}
+
+
+script Route135_North_EventScript_Amber {
+    trainerbattle_single(TRAINER_AMBER, Route135_North_Text_AmberIntro, Route135_North_Text_AmberDefeated)
+    msgbox(Route135_North_Text_AmberPostBattle, MSGBOX_NPC)
+    releaseall
+    end
+}
+
+text Route135_North_Text_AmberIntro {
+    format("The Ice Caves up ahead can be dangerous, if you're not careful.")
+}
+
+text Route135_North_Text_AmberDefeated {
+    format("You definitely know how to handle yourself!")
+}
+
+text Route135_North_Text_AmberPostBattle {
+    format("You can even climb to the top of the Glacier, if you're brave enough.")
+}
+
+script Route135_North_EventScript_Morris {
+    trainerbattle_single(TRAINER_MORRIS, Route135_North_Text_MorrisIntro, Route135_North_Text_MorrisDefeated)
+    msgbox(Route135_North_Text_MorrisPostBattle, MSGBOX_NPC)
+    releaseall
+    end
+}
+
+text Route135_North_Text_MorrisIntro {
+    format("Climbing a glacier requires a whole different set of equipment and skills!")
+}
+
+text Route135_North_Text_MorrisDefeated {
+    format("I guess I'm not quite there yet.")
+}
+
+text Route135_North_Text_MorrisPostBattle {
+    format("Staying on the move will keep you surprisingly warm in these parts.")
+}

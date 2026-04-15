@@ -312,7 +312,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sVenusaurFormChangeTable,
     },
 
-    [SPECIES_VENUSAUR_MEGA_X] =
+    [SPECIES_VENUSAUR_MEGA_Z] =
     {
         .baseHP        = 80,
         .baseAttack    = (82 + 20),
@@ -320,7 +320,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 80,
         .baseSpAttack  = (100 + 10),
         .baseSpDefense = (100 + 40),
-        .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
+        .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 313 : 281,
         .evYield_SpAttack = 2,
@@ -1158,7 +1158,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sBlastoiseFormChangeTable,
     },
 
-    [SPECIES_BLASTOISE_MEGA_X] =
+    [SPECIES_BLASTOISE_MEGA_Z] =
     {
         .baseHP        = 79,
         .baseAttack    = (83 + 30),

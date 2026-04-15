@@ -2388,22 +2388,53 @@ IVs: 0 Atk
 - Nasty Plot  
 
 
-=== TRAINER_DUSTY_5 === /* Route */
+=== TRAINER_AMBER === /* Route 135 */
 Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
-Music: Hiker
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: Female
+Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sandslash
-Level: 36
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Sneasel  @ Focus Sash
+Level: 41
+Ability: Inner Focus  
+Tera Type: Dark  
+- Icicle Crash  
+- Knock Off  
+- Brick Break  
+- X-Scissor  
+
+Prinplup  @ Salac Berry
+Level: 41
+Ability: Competitive  
+Tera Type: Water  
+- Weather Ball  
+- Water Pledge  
+- Grass Knot  
+- Drill Peck  
+
+Vanillish @ Leftovers
+Level: 41
+Ability: Ice Body  
+Tera Type: Ice  
+IVs: 0 Atk  
+- Ice Beam  
+- Flash Cannon  
+- Acid Armor  
+- Hyper Voice  
+
+Piloswine @ Brightpowder
+Level: 41
+Ability: Snow Cloak  
+Tera Type: Ice  
+- Avalanche  
+- High Horsepower  
+- Trailblaze  
+- Detect  
+
+
 
 === TRAINER_GABBY_AND_TY_1 === /* Roaming */ /* TO BE ADDED */
 Name: GABBY & TY
@@ -2780,22 +2811,52 @@ Level: 55
 - Withdraw  
 
 
-=== TRAINER_LOLA_5 === /* Route */
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
+=== TRAINER_MORRIS === /* Route 135 */
+Name: MORRIS
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Azumarill
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Brionne  
+Level: 41
+Ability: Liquid Voice  
+Tera Type: Water  
+IVs: 0 Atk  
+- Boomburst
+- Blizzard  
+- Perish Song  
+- Protect  
 
-Azumarill
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Abomasnow  @ Occa Berry
+Level: 40
+Ability: Soundproof
+Tera Type: Grass  
+- Trailblaze  
+- Icicle Spear  
+- Outrage  
+- Shadow Ball  
+
+Stantler  
+Level: 41
+Ability: Intimidate  
+Tera Type: Normal  
+- Lunge  
+- Psyshield Bash  
+- Trailblaze  
+- Sucker Punch  
+
+Sealeo  
+Level: 41
+Ability: Thick Fat  
+Tera Type: Ice  
+IVs: 0 Atk  
+- Encore  
+- Frost Breath  
+- Water Pulse  
+
 
 === TRAINER_RICKY_1 === /* Route 109 */
 Name: RICKY
@@ -4285,26 +4346,53 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_BROOKE_5 === /* Route */
-Name: BROOKE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
+=== TRAINER_BRADLEY === /* Ice Cave */
+Name: BRADLEY
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Pelipper
-Level: 34
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Camerupt
-Level: 34
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Cetitan  
+Level: 45
+Ability: Thick Fat  
+Tera Type: Ice  
+- Avalanche  
+- High Horsepower  
+- Play Rough  
+- Body Slam  
 
-Roselia
-Level: 34
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Tyrantrum  
+Level: 45
+Ability: Strong Jaw  
+Tera Type: Rock  
+- Ice Fang  
+- Stomping Tantrum
+- Rock Polish  
+- Rock Slide  
+
+Glalie  @ Metronome
+Level: 45
+Ability: Moody  
+Tera Type: Ice  
+EVs: 252 HP
+- Trailblaze  
+- Avalanche  
+- Rollout  
+- Ice Ball  
+
+Eiscue  @ Protective Pads
+Level: 45
+Ability: Ice Face  
+Tera Type: Ice  
+- Head Smash  
+- Iron Head  
+- Waterfall  
+- Ice Spinner  
+
 
 === TRAINER_PATRICIA === /* Trick House */ /* TO BE ADDED */
 Name: PATRICIA

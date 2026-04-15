@@ -853,6 +853,8 @@ script Common_EventScript_RemoveOptionalItems3 {
 	setflag(FLAG_HIDDEN_ITEM_JAGGED_PASS_FULL_HEAL)
 	setflag(FLAG_ITEM_JAGGED_PASS_BURN_HEAL)
 	setflag(FLAG_HIDDEN_ITEM_JAGGED_PASS_GREAT_BALL)
+	setflag(FLAG_ITEM_ROUTE_135_PROTEIN)
+	setflag(FLAG_ITEM_ROUTE_135_CALCIUM)
 	return
 }
 
@@ -871,6 +873,7 @@ script Common_EventScript_RemoveOptionalItems4 {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_111_RARE_CANDY)
 	setflag(FLAG_ITEM_ROUTE_111_STARDUST)
 	setflag(FLAG_ITEM_ROUTE_111_TM_SANDSTORM) //
+	setflag(FLAG_ITEM_ICE_CAVE_IRON)
 	return
 }
 
