@@ -16,10 +16,17 @@
   "object_events": [],
   "warp_events": [
     {
-      "x": 13,
-      "y": 37,
+      "x": 15,
+      "y": 33,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE135_NORTH",
+      "dest_map": "MAP_ICE_CAVE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GLACIER_SUMMIT",
       "dest_warp_id": "0"
     }
   ],
