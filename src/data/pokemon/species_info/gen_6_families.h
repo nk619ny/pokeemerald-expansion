@@ -6861,7 +6861,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_AURA_BREAK, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_AURA_BREAK, ABILITY_POWER_CONSTRUCT, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Zygarde"),
@@ -6906,7 +6906,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sZygardeLevelUpLearnset,
         .teachableLearnset = sZygardeTeachableLearnset,
         .formSpeciesIdTable = sZygardeFormSpeciesIdTable,
-        .formChangeTable = sZygarde50AuraBreakFormChangeTable,
+        .formChangeTable = sZygarde50PowerConstructFormChangeTable,
     },
 
     [SPECIES_ZYGARDE_50_POWER_CONSTRUCT] =
