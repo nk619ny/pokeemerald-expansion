@@ -9757,6 +9757,12 @@ enum MoveTarget GetBattlerMoveTargetType(enum BattlerId battler, enum Move move)
         return TARGET_BOTH;
     if (effect == EFFECT_TERA_STARSTORM && gBattleMons[battler].species == SPECIES_TERAPAGOS_STELLAR)
         return TARGET_BOTH;
+    if (IsDoubleBattle()
+        && GetBattlerAbility(battler) == ABILITY_SPREAD_FISTS
+        && IsPunchingMove(move)
+        && GetMoveStrikeCount(move) <= 1
+        && !IsMultiHitMove(move))
+        return TARGET_BOTH;
 
     return GetMoveTarget(move);
 }

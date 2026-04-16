@@ -2502,4 +2502,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Summons snow in battle."),
         .aiRating = 8,
     },
+
+    [ABILITY_SPREAD_FISTS] =
+    {
+        .name = _("Spread Fists"),
+        .description = COMPOUND_STRING("Punches hit both foes."),
+        .aiRating = 7,
+    },
 };

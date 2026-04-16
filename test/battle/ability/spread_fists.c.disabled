@@ -1,0 +1,251 @@
+#include "global.h"
+#include "test/battle.h"
+
+ASSUMPTIONS
+{
+    ASSUME(IsPunchingMove(MOVE_ICE_PUNCH));
+    ASSUME(IsPunchingMove(MOVE_DRAIN_PUNCH));
+    ASSUME(IsPunchingMove(MOVE_POWER_UP_PUNCH));
+    ASSUME(IsPunchingMove(MOVE_HAMMER_ARM));
+    ASSUME(IsPunchingMove(MOVE_HEADLONG_RUSH));
+    ASSUME(IsPunchingMove(MOVE_METEOR_MASH));
+    ASSUME(IsPunchingMove(MOVE_SURGING_STRIKES));
+    ASSUME(IsPunchingMove(MOVE_DOUBLE_IRON_BASH));
+    ASSUME(!IsPunchingMove(MOVE_TACKLE));
+    ASSUME(GetMoveEffect(MOVE_DRAIN_PUNCH) == EFFECT_ABSORB);
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists makes punching moves hit both foes")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_ICE_PUNCH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ICE_PUNCH, playerLeft);
+        HP_BAR(opponentLeft);
+        HP_BAR(opponentRight);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists does not affect non-punching moves")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
+        HP_BAR(opponentLeft);
+        NOT HP_BAR(opponentRight);
+    }
+}
+
+SINGLE_BATTLE_TEST("Spread Fists has no effect in single battles")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_ICE_PUNCH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ICE_PUNCH, player);
+        HP_BAR(opponent);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists Drain Punch heals based on damage to each target")
+{
+    s16 damage[2];
+    s16 healed[2];
+
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); HP(1); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_DRAIN_PUNCH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAIN_PUNCH, playerLeft);
+        HP_BAR(opponentLeft, captureDamage: &damage[0]);
+        HP_BAR(playerLeft, captureDamage: &healed[0]);
+        HP_BAR(opponentRight, captureDamage: &damage[1]);
+        HP_BAR(playerLeft, captureDamage: &healed[1]);
+    } THEN {
+        EXPECT_MUL_EQ(damage[0], Q_4_12(-0.5), healed[0]);
+        EXPECT_MUL_EQ(damage[1], Q_4_12(-0.5), healed[1]);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists Power-Up Punch boosts Attack only once")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_POWER_UP_PUNCH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_POWER_UP_PUNCH, playerLeft);
+        HP_BAR(opponentLeft);
+        HP_BAR(opponentRight);
+    } THEN {
+        EXPECT_EQ(playerLeft->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 1);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists Hammer Arm decreases Speed only once")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_HAMMER_ARM); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_HAMMER_ARM, playerLeft);
+        HP_BAR(opponentLeft);
+        HP_BAR(opponentRight);
+    } THEN {
+        EXPECT_EQ(playerLeft->statStages[STAT_SPEED], DEFAULT_STAT_STAGE - 1);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists Headlong Rush lowers Def and SpDef only once")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_HEADLONG_RUSH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_HEADLONG_RUSH, playerLeft);
+        HP_BAR(opponentLeft);
+        HP_BAR(opponentRight);
+    } THEN {
+        EXPECT_EQ(playerLeft->statStages[STAT_DEF], DEFAULT_STAT_STAGE - 1);
+        EXPECT_EQ(playerLeft->statStages[STAT_SPDEF], DEFAULT_STAT_STAGE - 1);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists Meteor Mash has a chance to raise Attack only once")
+{
+    PASSES_RANDOMLY(20, 100, RNG_SECONDARY_EFFECT);
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_METEOR_MASH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_METEOR_MASH, playerLeft);
+        HP_BAR(opponentLeft);
+        HP_BAR(opponentRight);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
+    } THEN {
+        EXPECT_EQ(playerLeft->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 1);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists Ice Punch can freeze each target independently")
+{
+    PASSES_RANDOMLY(10, 100, RNG_SECONDARY_EFFECT);
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_ICE_PUNCH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ICE_PUNCH, playerLeft);
+        HP_BAR(opponentLeft);
+        STATUS_ICON(opponentLeft, freeze: TRUE);
+        HP_BAR(opponentRight);
+        STATUS_ICON(opponentRight, freeze: TRUE);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists does not make Surging Strikes a spread move")
+{
+    GIVEN {
+        ASSUME(GetMoveStrikeCount(MOVE_SURGING_STRIKES) == 3);
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_SURGING_STRIKES, target: opponentLeft); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SURGING_STRIKES, playerLeft);
+        HP_BAR(opponentLeft);
+        HP_BAR(opponentLeft);
+        HP_BAR(opponentLeft);
+        NOT HP_BAR(opponentRight);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists does not make Double Iron Bash a spread move")
+{
+    GIVEN {
+        ASSUME(GetMoveStrikeCount(MOVE_DOUBLE_IRON_BASH) == 2);
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_DOUBLE_IRON_BASH, target: opponentLeft); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_DOUBLE_IRON_BASH, playerLeft);
+        HP_BAR(opponentLeft);
+        HP_BAR(opponentLeft);
+        NOT HP_BAR(opponentRight);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists punching move is blocked by Wide Guard")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SPREAD_FISTS); Speed(10); }
+        PLAYER(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(20); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(15); }
+    } WHEN {
+        TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, MOVE_ICE_PUNCH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_WIDE_GUARD, opponentLeft);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ICE_PUNCH, playerLeft);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Spread Fists punching move gets spread damage reduction", s16 damage)
+{
+    u32 ability;
+    PARAMETRIZE { ability = ABILITY_SPREAD_FISTS; }
+    PARAMETRIZE { ability = ABILITY_IRON_FIST; }
+
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ability); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_MACH_PUNCH, target: opponentLeft); }
+    } SCENE {
+        HP_BAR(opponentLeft, captureDamage: &results[i].damage);
+    } FINALLY {
+        EXPECT_GT(results[1].damage, results[0].damage);
+    }
+}
