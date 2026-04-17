@@ -223,3 +223,350 @@ text SkyPillar_Top_Text_StevenRayquazaAwakens {
 text SkyPillar_Top_Text_StevenCheckSootopolis {
 	format("Steven: Let's hurry back to Sootopolis to see if it worked.")
 }
+
+// =============================================================
+// Fusion Move Tutor NPC
+// Teaches Fusion Bolt, Fusion Flare, Ice Burn, and Freeze Shock
+// to specific Pokémon when their "partner" species is in the party.
+// =============================================================
+
+script SkyPillar_Top_EventScript_FusionTutor {
+	lock
+	faceplayer
+	msgbox(FusionTutor_Text_Intro, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		msgbox(FusionTutor_Text_Declined, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	goto(FusionTutor_EventScript_ChooseMon)
+}
+
+script FusionTutor_EventScript_ChooseMon {
+	msgbox(FusionTutor_Text_ChooseMon, MSGBOX_DEFAULT)
+	special(ChoosePartyMon)
+	waitstate
+	lock
+	faceplayer
+	if (var(VAR_0x8004) >= PARTY_SIZE) {
+		msgbox(FusionTutor_Text_Declined, MSGBOX_DEFAULT)
+		release
+		end
+	}
+	copyvar(VAR_TEMP_0, VAR_0x8004)
+	specialvar(VAR_RESULT, ScriptGetPartyMonSpecies)
+	if (var(VAR_RESULT) == SPECIES_EGG) {
+		msgbox(FusionTutor_Text_CantTeachEgg, MSGBOX_DEFAULT)
+		goto(FusionTutor_EventScript_AskAnother)
+	}
+	// Single-move Fusion Bolt mons
+	if (var(VAR_RESULT) == SPECIES_ELECTIVIRE) {
+		bufferspeciesname(STR_VAR_1, SPECIES_ELECTIVIRE)
+		buffermovename(STR_VAR_2, MOVE_FUSION_BOLT)
+		bufferspeciesname(STR_VAR_3, SPECIES_MAGMORTAR)
+		setvar(VAR_TEMP_1, MOVE_FUSION_BOLT)
+		setvar(VAR_0x8004, SPECIES_MAGMORTAR)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	if (var(VAR_RESULT) == SPECIES_ZAPDOS) {
+		bufferspeciesname(STR_VAR_1, SPECIES_ZAPDOS)
+		buffermovename(STR_VAR_2, MOVE_FUSION_BOLT)
+		bufferspeciesname(STR_VAR_3, SPECIES_MOLTRES)
+		setvar(VAR_TEMP_1, MOVE_FUSION_BOLT)
+		setvar(VAR_0x8004, SPECIES_MOLTRES)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	if (var(VAR_RESULT) == SPECIES_RAIKOU) {
+		bufferspeciesname(STR_VAR_1, SPECIES_RAIKOU)
+		buffermovename(STR_VAR_2, MOVE_FUSION_BOLT)
+		bufferspeciesname(STR_VAR_3, SPECIES_ENTEI)
+		setvar(VAR_TEMP_1, MOVE_FUSION_BOLT)
+		setvar(VAR_0x8004, SPECIES_ENTEI)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	if (var(VAR_RESULT) == SPECIES_JOLTEON) {
+		bufferspeciesname(STR_VAR_1, SPECIES_JOLTEON)
+		buffermovename(STR_VAR_2, MOVE_FUSION_BOLT)
+		bufferspeciesname(STR_VAR_3, SPECIES_FLAREON)
+		setvar(VAR_TEMP_1, MOVE_FUSION_BOLT)
+		setvar(VAR_0x8004, SPECIES_FLAREON)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	if (var(VAR_RESULT) == SPECIES_ELECTABUZZ) {
+		bufferspeciesname(STR_VAR_1, SPECIES_ELECTABUZZ)
+		buffermovename(STR_VAR_2, MOVE_FUSION_BOLT)
+		bufferspeciesname(STR_VAR_3, SPECIES_MAGMAR)
+		setvar(VAR_TEMP_1, MOVE_FUSION_BOLT)
+		setvar(VAR_0x8004, SPECIES_MAGMAR)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	// Single-move Fusion Flare mons
+	if (var(VAR_RESULT) == SPECIES_MAGMORTAR) {
+		bufferspeciesname(STR_VAR_1, SPECIES_MAGMORTAR)
+		buffermovename(STR_VAR_2, MOVE_FUSION_FLARE)
+		bufferspeciesname(STR_VAR_3, SPECIES_ELECTIVIRE)
+		setvar(VAR_TEMP_1, MOVE_FUSION_FLARE)
+		setvar(VAR_0x8004, SPECIES_ELECTIVIRE)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	if (var(VAR_RESULT) == SPECIES_MOLTRES) {
+		bufferspeciesname(STR_VAR_1, SPECIES_MOLTRES)
+		buffermovename(STR_VAR_2, MOVE_FUSION_FLARE)
+		bufferspeciesname(STR_VAR_3, SPECIES_ZAPDOS)
+		setvar(VAR_TEMP_1, MOVE_FUSION_FLARE)
+		setvar(VAR_0x8004, SPECIES_ZAPDOS)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	if (var(VAR_RESULT) == SPECIES_ENTEI) {
+		bufferspeciesname(STR_VAR_1, SPECIES_ENTEI)
+		buffermovename(STR_VAR_2, MOVE_FUSION_FLARE)
+		bufferspeciesname(STR_VAR_3, SPECIES_RAIKOU)
+		setvar(VAR_TEMP_1, MOVE_FUSION_FLARE)
+		setvar(VAR_0x8004, SPECIES_RAIKOU)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	if (var(VAR_RESULT) == SPECIES_FLAREON) {
+		bufferspeciesname(STR_VAR_1, SPECIES_FLAREON)
+		buffermovename(STR_VAR_2, MOVE_FUSION_FLARE)
+		bufferspeciesname(STR_VAR_3, SPECIES_JOLTEON)
+		setvar(VAR_TEMP_1, MOVE_FUSION_FLARE)
+		setvar(VAR_0x8004, SPECIES_JOLTEON)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	if (var(VAR_RESULT) == SPECIES_MAGMAR) {
+		bufferspeciesname(STR_VAR_1, SPECIES_MAGMAR)
+		buffermovename(STR_VAR_2, MOVE_FUSION_FLARE)
+		bufferspeciesname(STR_VAR_3, SPECIES_ELECTABUZZ)
+		setvar(VAR_TEMP_1, MOVE_FUSION_FLARE)
+		setvar(VAR_0x8004, SPECIES_ELECTABUZZ)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	// Single-move Ice Burn mon
+	if (var(VAR_RESULT) == SPECIES_NINETALES_ALOLA) {
+		bufferspeciesname(STR_VAR_1, SPECIES_NINETALES_ALOLA)
+		buffermovename(STR_VAR_2, MOVE_ICE_BURN)
+		bufferspeciesname(STR_VAR_3, SPECIES_NINETALES)
+		setvar(VAR_TEMP_1, MOVE_ICE_BURN)
+		setvar(VAR_0x8004, SPECIES_NINETALES)
+		goto(FusionTutor_EventScript_CheckSingleMove)
+	}
+	// Multi-move mons
+	if (var(VAR_RESULT) == SPECIES_ARTICUNO) {
+		bufferspeciesname(STR_VAR_1, SPECIES_ARTICUNO)
+		goto(FusionTutor_EventScript_Articuno)
+	}
+	if (var(VAR_RESULT) == SPECIES_GLACEON) {
+		bufferspeciesname(STR_VAR_1, SPECIES_GLACEON)
+		goto(FusionTutor_EventScript_Glaceon)
+	}
+	if (var(VAR_RESULT) == SPECIES_JYNX) {
+		bufferspeciesname(STR_VAR_1, SPECIES_JYNX)
+		goto(FusionTutor_EventScript_Jynx)
+	}
+	// Not a valid Tutor Mon
+	msgbox(FusionTutor_Text_InvalidMon, MSGBOX_DEFAULT)
+	goto(FusionTutor_EventScript_AskAnother)
+}
+
+// --- Single-move partner check and teach ---
+script FusionTutor_EventScript_CheckSingleMove {
+	// VAR_0x8004 = partner species (set before goto)
+	// STR_VAR_1 = tutor mon name, STR_VAR_2 = move name, STR_VAR_3 = partner name
+	specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+	if (var(VAR_RESULT) == FALSE) {
+		msgbox(FusionTutor_Text_NeedPartner, MSGBOX_DEFAULT)
+		goto(FusionTutor_EventScript_AskAnother)
+	}
+	msgbox(FusionTutor_Text_OfferMove, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		goto(FusionTutor_EventScript_AskAnother)
+	}
+	goto(FusionTutor_EventScript_TeachBufferedMove)
+}
+
+// --- Teach the move stored in STR_VAR_2 (resolve from VAR_TEMP_1) ---
+script FusionTutor_EventScript_TeachBufferedMove {
+	// Restore party index and set move
+	copyvar(VAR_0x8004, VAR_TEMP_0)
+	copyvar(VAR_0x8005, VAR_TEMP_1)
+	special(CanTeachMoveBoxMon)
+	waitstate
+	lock
+	faceplayer
+	msgbox(FusionTutor_Text_Success, MSGBOX_DEFAULT)
+	goto(FusionTutor_EventScript_AskAnother)
+}
+
+script FusionTutor_EventScript_AskAnother {
+	msgbox(FusionTutor_Text_AnotherMon, MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		goto(FusionTutor_EventScript_ChooseMon)
+	}
+	msgbox(FusionTutor_Text_Declined, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+// --- Articuno: Ice Burn (needs Moltres) / Freeze Shock (needs Zapdos) ---
+script FusionTutor_EventScript_Articuno {
+	setvar(VAR_TEMP_1, 0)
+	setvar(VAR_TEMP_2, 0)
+	// Check Ice Burn partner (Moltres)
+	setvar(VAR_0x8004, SPECIES_MOLTRES)
+	specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+	if (var(VAR_RESULT) == TRUE) {
+		setvar(VAR_TEMP_1, 1)
+	}
+	// Check Freeze Shock partner (Zapdos)
+	setvar(VAR_0x8004, SPECIES_ZAPDOS)
+	specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+	if (var(VAR_RESULT) == TRUE) {
+		setvar(VAR_TEMP_2, 1)
+	}
+	goto(FusionTutor_EventScript_ResolveMultiMove)
+}
+
+// --- Glaceon: Ice Burn (needs Flareon) / Freeze Shock (needs Jolteon) ---
+script FusionTutor_EventScript_Glaceon {
+	setvar(VAR_TEMP_1, 0)
+	setvar(VAR_TEMP_2, 0)
+	// Check Ice Burn partner (Flareon)
+	setvar(VAR_0x8004, SPECIES_FLAREON)
+	specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+	if (var(VAR_RESULT) == TRUE) {
+		setvar(VAR_TEMP_1, 1)
+	}
+	// Check Freeze Shock partner (Jolteon)
+	setvar(VAR_0x8004, SPECIES_JOLTEON)
+	specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+	if (var(VAR_RESULT) == TRUE) {
+		setvar(VAR_TEMP_2, 1)
+	}
+	goto(FusionTutor_EventScript_ResolveMultiMove)
+}
+
+// --- Jynx: Ice Burn (needs Magmortar OR Magmar) / Freeze Shock (needs Electivire OR Electabuzz) ---
+script FusionTutor_EventScript_Jynx {
+	setvar(VAR_TEMP_1, 0)
+	setvar(VAR_TEMP_2, 0)
+	// Check Ice Burn partners (Magmortar or Magmar)
+	setvar(VAR_0x8004, SPECIES_MAGMORTAR)
+	specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+	if (var(VAR_RESULT) == TRUE) {
+		setvar(VAR_TEMP_1, 1)
+	}
+	if (var(VAR_TEMP_1) == 0) {
+		setvar(VAR_0x8004, SPECIES_MAGMAR)
+		specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+		if (var(VAR_RESULT) == TRUE) {
+			setvar(VAR_TEMP_1, 1)
+		}
+	}
+	// Check Freeze Shock partners (Electivire or Electabuzz)
+	setvar(VAR_0x8004, SPECIES_ELECTIVIRE)
+	specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+	if (var(VAR_RESULT) == TRUE) {
+		setvar(VAR_TEMP_2, 1)
+	}
+	if (var(VAR_TEMP_2) == 0) {
+		setvar(VAR_0x8004, SPECIES_ELECTABUZZ)
+		specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+		if (var(VAR_RESULT) == TRUE) {
+			setvar(VAR_TEMP_2, 1)
+		}
+	}
+	goto(FusionTutor_EventScript_ResolveMultiMove)
+}
+
+// --- Shared multi-move resolution ---
+// VAR_TEMP_1 = Ice Burn available, VAR_TEMP_2 = Freeze Shock available
+// STR_VAR_1 = tutor mon name (already buffered)
+script FusionTutor_EventScript_ResolveMultiMove {
+	if (var(VAR_TEMP_1) == 0 && var(VAR_TEMP_2) == 0) {
+		msgbox(FusionTutor_Text_NeedPartnerMulti, MSGBOX_DEFAULT)
+		goto(FusionTutor_EventScript_AskAnother)
+	}
+	// Only Ice Burn available
+	if (var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 0) {
+		buffermovename(STR_VAR_2, MOVE_ICE_BURN)
+		setvar(VAR_TEMP_1, MOVE_ICE_BURN)
+		msgbox(FusionTutor_Text_OfferMove, MSGBOX_YESNO)
+		if (var(VAR_RESULT) == NO) {
+			goto(FusionTutor_EventScript_AskAnother)
+		}
+		goto(FusionTutor_EventScript_TeachBufferedMove)
+	}
+	// Only Freeze Shock available
+	if (var(VAR_TEMP_1) == 0 && var(VAR_TEMP_2) == 1) {
+		buffermovename(STR_VAR_2, MOVE_FREEZE_SHOCK)
+		setvar(VAR_TEMP_1, MOVE_FREEZE_SHOCK)
+		msgbox(FusionTutor_Text_OfferMove, MSGBOX_YESNO)
+		if (var(VAR_RESULT) == NO) {
+			goto(FusionTutor_EventScript_AskAnother)
+		}
+		goto(FusionTutor_EventScript_TeachBufferedMove)
+	}
+	// Both available — let the player choose
+	msgbox(FusionTutor_Text_ChooseMove, MSGBOX_DEFAULT)
+	dynmultichoice(20, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Ice Burn", "Freeze Shock")
+	switch (var(VAR_RESULT)) {
+		case 0:
+			buffermovename(STR_VAR_2, MOVE_ICE_BURN)
+			setvar(VAR_TEMP_1, MOVE_ICE_BURN)
+			goto(FusionTutor_EventScript_TeachBufferedMove)
+		case 1:
+			buffermovename(STR_VAR_2, MOVE_FREEZE_SHOCK)
+			setvar(VAR_TEMP_1, MOVE_FREEZE_SHOCK)
+			goto(FusionTutor_EventScript_TeachBufferedMove)
+		default:
+			goto(FusionTutor_EventScript_AskAnother)
+	}
+}
+
+// =============================================================
+// Fusion Tutor Text
+// =============================================================
+
+text FusionTutor_Text_Intro {
+	format("I've spent years studying the bonds between Pokémon.\pI've discovered that certain pairs of Pokémon, when united under a single Trainer, can unlock incredible power.\pWould you like me to see if any of your Pokémon qualify?")
+}
+
+text FusionTutor_Text_ChooseMon {
+	format("Show me the Pokémon you'd like me to examine.")
+}
+
+text FusionTutor_Text_CantTeachEgg {
+	format("I'm afraid I can't work with an Egg.")
+}
+
+text FusionTutor_Text_InvalidMon {
+	format("Hmm… I don't sense the potential for a bond-based move in that Pokémon.")
+}
+
+text FusionTutor_Text_NeedPartner {
+	format("Your {STR_VAR_1} has the potential to learn {STR_VAR_2}, but only if {STR_VAR_3} is also in your party.\pThe bond between them is what unlocks this power.")
+}
+
+text FusionTutor_Text_NeedPartnerMulti {
+	format("Your {STR_VAR_1} has great potential, but it needs a bonded partner in your party to unlock a special move.\pTry bringing along a Pokémon that shares a deep connection with it.")
+}
+
+text FusionTutor_Text_OfferMove {
+	format("The bond is strong! I can teach {STR_VAR_2} to your {STR_VAR_1}.\pShall I go ahead?")
+}
+
+text FusionTutor_Text_ChooseMove {
+	format("I sense multiple bonds at work!\pWhich move should I teach your {STR_VAR_1}?")
+}
+
+text FusionTutor_Text_Declined {
+	format("I see. Come back anytime if you change your mind.")
+}
+
+text FusionTutor_Text_Success {
+	format("The power of their bond has been channeled into a new move!\pTake good care of your Pokémon.")
+}
+
+text FusionTutor_Text_AnotherMon {
+	format("Would you like me to examine another Pokémon?")
+}

@@ -437,7 +437,9 @@ script MauvilleCity_EventScript_Temporary{
 	//setflag(FLAG_MIRAGE_ISLAND_VISIBLE)
 	//additem(ITEM_TM_THUNDER_PUNCH,-1)
 	//additem(ITEM_TM_ICE_PUNCH,-1)
-
+	givemon(SPECIES_ELECTABUZZ,80,,,,0,,,,,,,,,,,,,,MOVE_BLOCK)
+	givemon(SPECIES_JYNX,80,,,,0,,,,,,,,,,,,,,MOVE_BLOCK)
+	goto(SkyPillar_Top_EventScript_FusionTutor)
 
 	//giveitem(ITEM_EXP_CANDY_S)
 
@@ -2631,4 +2633,38 @@ text EggMoveTutor_Text_NeedHeartScale {
 
 text EggMoveTutor_Text_NoMoreHeartScales {
 	format("That's all for now!\pCome back with more Heart Scales if you want to learn additional Egg Moves.")
+}
+
+script PokemonCenter_2F_Unused_MoveTutor {
+	lock
+	dynmultipush("Fusion Bolt",1)
+	dynmultipush("Fusion Flare",2)
+	dynmultipush("Ice Burn",3)
+	dynmultipush("Freeze Shock",4)
+	msgbox(MoveTutor_Text_WhichMoveWouldYouLikeToTeach, MSGBOX_DEFAULT)
+	dynmultistack(0, 0, FALSE, 6, TRUE, 0, DYN_MULTICHOICE_CB_NONE)
+	switch(var(VAR_RESULT)) {
+		case 1:
+			setvar(VAR_0x8005, MOVE_FUSION_BOLT)
+			bufferstring(STR_VAR_1, "Fusion Bolt")
+		case 2:
+			setvar(VAR_0x8005, MOVE_FUSION_FLARE)
+			bufferstring(STR_VAR_1, "Fusion Flare")
+		case 3:
+			setvar(VAR_0x8005, MOVE_ICE_BURN)
+			bufferstring(STR_VAR_1, "Ice Burn")
+		case 4:
+			setvar(VAR_0x8005, MOVE_FREEZE_SHOCK)
+			bufferstring(STR_VAR_1, "Freeze Shock")
+		default:
+			releaseall
+			return
+	}
+	msgbox(MoveTutor_Text_BufferWhichMon, MSGBOX_DEFAULT)
+	special(ChooseMonForMoveTutor)
+	waitstate
+	lock
+	faceplayer
+	releaseall
+	return
 }

@@ -535,7 +535,7 @@ static const u16 sNinetalesEliteLearnset[] = {
 
 #if P_ALOLAN_FORMS
 static const u16 sNinetalesAlolaEliteLearnset[] = {
-    MOVE_ICE_BURN,
+    //MOVE_ICE_BURN,
     MOVE_AQUA_TAIL,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
@@ -2645,8 +2645,8 @@ static const u16 sSmoochumEliteLearnset[] = {
 
 static const u16 sJynxEliteLearnset[] = {
     MOVE_FREEZING_GLARE,
-    MOVE_ICE_BURN,
-    MOVE_FREEZE_SHOCK,
+    //MOVE_ICE_BURN,
+    //MOVE_FREEZE_SHOCK,
     MOVE_PETAL_DANCE,
     MOVE_TELEPORT,
     MOVE_BIDE,
@@ -2687,7 +2687,7 @@ static const u16 sElectivireEliteLearnset[] = {
     MOVE_THUNDEROUS_KICK,
     MOVE_PLASMA_FISTS,
     MOVE_ZING_ZAP,
-    MOVE_FUSION_BOLT,
+    //MOVE_FUSION_BOLT,
     MOVE_METRONOME,
     MOVE_TELEPORT,
     MOVE_BARRIER,
@@ -2790,7 +2790,7 @@ static const u16 sMagmarEliteLearnset[] = {
 #if P_GEN_4_CROSS_EVOS
 static const u16 sMagmortarEliteLearnset[] = {
     MOVE_FIERY_WRATH,
-    MOVE_FUSION_FLARE,
+    //MOVE_FUSION_FLARE,
     MOVE_METRONOME,
     MOVE_TELEPORT,
     MOVE_BARRIER,
@@ -2980,7 +2980,7 @@ static const u16 sVaporeonEliteLearnset[] = {
 };
 
 static const u16 sJolteonEliteLearnset[] = {
-    MOVE_FUSION_BOLT,
+    //MOVE_FUSION_BOLT,
     MOVE_BUZZY_BUZZ,
     MOVE_VEEVEE_VOLLEY,
     MOVE_GROWTH,
@@ -3010,7 +3010,7 @@ static const u16 sJolteonEliteLearnset[] = {
 static const u16 sFlareonEliteLearnset[] = {
     MOVE_SACRED_FIRE,
     MOVE_PYRO_BALL,
-    MOVE_FUSION_FLARE,
+    //MOVE_FUSION_FLARE,
     MOVE_SIZZLY_SLIDE,
     MOVE_VEEVEE_VOLLEY,
     MOVE_GROWTH,
@@ -3092,7 +3092,7 @@ static const u16 sUmbreonEliteLearnset[] = {
 #if P_GEN_4_CROSS_EVOS
 static const u16 sGlaceonEliteLearnset[] = {
     MOVE_GLACIATE,
-    MOVE_ICE_BURN,
+    //MOVE_ICE_BURN,
     MOVE_FREEZY_FROST,
     MOVE_VEEVEE_VOLLEY,
     MOVE_GROWTH,
@@ -3504,7 +3504,7 @@ static const u16 sZapdosEliteLearnset[] = {
     MOVE_BOLT_BEAK,
     MOVE_AEROBLAST,
     MOVE_WILDBOLT_STORM,
-    MOVE_FUSION_BOLT,
+    //MOVE_FUSION_BOLT,
     MOVE_WHIRLWIND,
     MOVE_EXTRASENSORY,
     MOVE_BIDE,
@@ -3541,7 +3541,7 @@ static const u16 sZapdosGalarEliteLearnset[] = {
 static const u16 sMoltresEliteLearnset[] = {
     MOVE_AEROBLAST,
     MOVE_BEAK_BLAST,
-    MOVE_FUSION_FLARE,
+    //MOVE_FUSION_FLARE,
     MOVE_MORNING_SUN,
     MOVE_WHIRLWIND,
     MOVE_BIDE,
@@ -4963,7 +4963,7 @@ static const u16 sStantlerEliteLearnset[] = {
 #if P_FAMILY_RAIKOU
 static const u16 sRaikouEliteLearnset[] = {
     MOVE_WILDBOLT_STORM,
-    MOVE_FUSION_BOLT,
+    //MOVE_FUSION_BOLT,
     MOVE_CONFIDE,
     MOVE_DETECT,
     MOVE_LASER_FOCUS,
@@ -4979,7 +4979,7 @@ static const u16 sRaikouEliteLearnset[] = {
 
 #if P_FAMILY_ENTEI
 static const u16 sEnteiEliteLearnset[] = {
-    MOVE_FUSION_FLARE,
+    //MOVE_FUSION_FLARE,
     MOVE_HOWL,
     MOVE_CONFIDE,
     MOVE_DETECT,

@@ -80,7 +80,9 @@
       "MOVE_FIRE_PLEDGE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FUSION_FLARE"
+    ]
   },
   "VAPOREON": {
     "LevelMoves": [],
@@ -554,7 +556,9 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_PSYCHO_BOOST"
+      "MOVE_PSYCHO_BOOST",
+      "MOVE_ICE_BURN",
+      "MOVE_FREEZE_SHOCK"
     ]
   },
   "PORYGON": {
@@ -1278,6 +1282,116 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_ROCK_CLIMB"
+    ]
+  },
+  "ELECTIVIRE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FUSION_BOLT"
+    ]
+  },
+  "MAGMORTAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FUSION_FLARE"
+    ]
+  },
+  "ZAPDOS": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FUSION_BOLT"
+    ]
+  },
+  "MOLTRES": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FUSION_FLARE"
+    ]
+  },
+  "RAIKOU": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FUSION_BOLT"
+    ]
+  },
+  "ENTEI": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FUSION_FLARE"
+    ]
+  },
+  "JOLTEON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FUSION_BOLT"
+    ]
+  },
+  "ELECTABUZZ": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FUSION_BOLT"
+    ]
+  },
+  "MAGMAR": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FUSION_FLARE"
+    ]
+  },
+  "ARTICUNO": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ICE_BURN",
+      "MOVE_FREEZE_SHOCK"
+    ]
+  },
+  "GLACEON": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ICE_BURN",
+      "MOVE_FREEZE_SHOCK"
+    ]
+  },
+  "NINETALES_ALOLA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_ICE_BURN"
     ]
   }
 }
