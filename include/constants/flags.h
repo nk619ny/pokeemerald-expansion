@@ -684,7 +684,7 @@
 #define FLAG_NO_TRAINER_BATTLE  0x275 // formerly not used
 #define FLAG_DEFEATED_DAVIS_123  0x276 // formerly not used
 #define FLAG_HIDE_SWIMMER_BLOCKING_SOOTOPOLIS  0x277 // formerly not used
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
+#define FLAG_HIDE_FUSION_TUTOR  0x278 // formerly not used
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag

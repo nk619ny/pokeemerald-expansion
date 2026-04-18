@@ -309,6 +309,7 @@ script Common_EventScript_SetStartingFlagStates {
 	setflag(FLAG_HIDE_MAUVILLE_CITY_WALLY)
 	setflag(FLAG_HIDE_ROUTE_120_STEVEN)
 	setflag(FLAG_HIDE_LILYCOVE_CITY_RIVAL)
+	setflag(FLAG_HIDE_FUSION_TUTOR)
 	setflag(FLAG_REGI_DOORS_OPENED)
 	setflag(FLAG_SYS_B_DASH)
 	return
