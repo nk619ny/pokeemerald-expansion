@@ -46,12 +46,12 @@ Level: 65
 
 
 === PARTNER_AQUA ===
-Name: Shelly
+Name: Matt
 Class: Aqua Admin
 Pic: Leaf
-Gender: Female
+Gender: Male
 Music: Aqua
-Back Pic: Leaf
+Back Pic: Matt
 AI: Smart Trainer
 
 Ariados @ Oran Berry  
@@ -84,7 +84,7 @@ Class: Magma Admin
 Pic: Red
 Gender: Male
 Music: Magma
-Back Pic: Red
+Back Pic: Tabitha
 AI: Smart Trainer
 
 Sandslash 

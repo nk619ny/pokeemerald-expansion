@@ -503,11 +503,15 @@ const u8 gTrainerBackPic_Wally[] = INCBIN_U8("graphics/trainers/back_pics/wally.
 const u8 gTrainerBackPic_Steven[] = INCBIN_U8("graphics/trainers/back_pics/steven.4bpp");
 const u8 gTrainerBackPic_Pokedude[] = INCBIN_U8("graphics/trainers/back_pics/pokedude.4bpp");
 const u8 gTrainerBackPic_OldMan[] = INCBIN_U8("graphics/trainers/back_pics/old_man.4bpp");
+const u8 gTrainerBackPic_Matt[] = INCBIN_U8("graphics/trainers/back_pics/matt.4bpp");
+const u8 gTrainerBackPic_Tabitha[] = INCBIN_U8("graphics/trainers/back_pics/tabitha.4bpp");
 
 const u16 gTrainerBackPicPalette_Red[] = INCBIN_U16("graphics/trainers/back_pics/red.gbapal");
 const u16 gTrainerBackPicPalette_Leaf[] = INCBIN_U16("graphics/trainers/back_pics/leaf.gbapal");
 const u16 gTrainerBackPicPalette_Pokedude[] = INCBIN_U16("graphics/trainers/back_pics/pokedude.gbapal");
 const u16 gTrainerBackPicPalette_OldMan[] = INCBIN_U16("graphics/trainers/back_pics/old_man.gbapal");
+const u16 gTrainerBackPicPalette_Matt[] = INCBIN_U16("graphics/trainers/back_pics/matt.gbapal");
+const u16 gTrainerBackPicPalette_Tabitha[] = INCBIN_U16("graphics/trainers/back_pics/tabitha.gbapal");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_FRONT_HIKER), and
@@ -780,5 +784,7 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_STEVEN, 4, gTrainerBackPic_Steven, gTrainerPalette_Steven, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_POKEDUDE, 4, gTrainerBackPic_Pokedude, gTrainerBackPicPalette_Pokedude, sBackAnims_OldManPokedude),
     TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_OLD_MAN, 4, gTrainerBackPic_OldMan, gTrainerBackPicPalette_OldMan, sBackAnims_OldManPokedude),
+    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_MATT, 4, gTrainerBackPic_Matt, gTrainerBackPicPalette_Matt, sBackAnims_Hoenn),
+    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_TABITHA, 4, gTrainerBackPic_Tabitha, gTrainerBackPicPalette_Tabitha, sBackAnims_Hoenn),
 
 };
