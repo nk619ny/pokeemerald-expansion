@@ -419,6 +419,7 @@ MossdeepCity_Gym_Text_VirgilPostBattle:
 	.string "However, you may be even more talented\n"
 	.string "than them…$"
 
+/*
 MossdeepCity_Gym_Text_BlakeIntro:
 	.string "Fufufufu… Watch me levitate a POKé\n"
 	.string "BALL telekinetically!\p"
@@ -437,6 +438,7 @@ MossdeepCity_Gym_Text_BlakePostBattle:
 	.string "… … … … … …\p"
 	.string "No, I'm not cheating!\n"
 	.string "I didn't blow on it! Honestly!$"
+*/
 
 MossdeepCity_Gym_Text_HannahIntro:
 	.string "When you lose to me, don't be too hard\n"
@@ -671,4 +673,17 @@ text MossdeepCity_Gym_Text_TateAndLizaIntro {
 
 text MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis {
 	format("TATE: The MIND BADGE lets you use the HM move DIVE outside of battle.\pLIZA: You should also take this, too.")
+}
+
+
+text MossdeepCity_Gym_Text_BlakeIntro {
+	format("Fufufufu… Watch me levitate your held items telekinetically!\pWrooooooooaaaar!")
+}
+
+text MossdeepCity_Gym_Text_BlakeDefeat {
+	format("Alright, alright, I'll put them back!")
+}
+
+text MossdeepCity_Gym_Text_BlakePostBattle {
+	format("My mental powers are exhausted...")
 }
