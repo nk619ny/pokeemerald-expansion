@@ -279,7 +279,7 @@ MossdeepCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_MOSSDEEP_GYM, MossdeepCity_Gym_EventScript_GymGuidePostVictory
-	msgbox MossdeepCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox MossdeepCity_Gym_Text_GymGuideAdviceNew, MSGBOX_DEFAULT
 	release
 	end
 
@@ -686,4 +686,8 @@ text MossdeepCity_Gym_Text_BlakeDefeat {
 
 text MossdeepCity_Gym_Text_BlakePostBattle {
 	format("My mental powers are exhausted...")
+}
+
+text MossdeepCity_Gym_Text_GymGuideAdviceNew {
+	format("Yo, how's it going, CHAMPION-bound {PLAYER}?\pThe GYM LEADERS here use PSYCHIC-type Pokémon.\pBut the trainers in this gym, including the Leaders, often possess strange abilities that distort normal battle conditions.\pAnd on top of that, all the trainers before the Leaders will face you in back-to-back battles.\pYou'll need to be prepared for anything!")
 }

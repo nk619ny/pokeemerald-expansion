@@ -2009,7 +2009,6 @@ Level: 20
 - Autotomize  
 
 Cherubi  
-Ability: Flower Gift  
 Level: 20
 Tera Type: Rock
 IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs for Min Atk */
@@ -4877,6 +4876,7 @@ Flaaffy
 Level: 40
 Ability: Illuminate  
 Tera Type: Electric  
+EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Dazzling Gleam  
 - Power Gem  
@@ -4887,6 +4887,7 @@ Kirlia
 Level: 40
 Ability: Synchronize  
 Tera Type: Psychic  
+EVs: 252 SpA / 252 Spe
 IVs: 0 Atk  
 - Alluring Voice  
 - Hyper Voice  
@@ -4905,9 +4906,10 @@ IVs: 0 Atk
 - Captivate  
 
 Bronzor  
-Level: 40
+Level: 42
 Ability: Mirror Armor  
 Tera Type: Steel  
+EVs: 252 HP
 IVs: 0 Atk  
 - Mirror Shot  
 - Mirror Coat  
@@ -7920,7 +7922,7 @@ IVs: 0 Atk / 0 Spe
 - Attract  
 
 
-=== TRAINER_PRESTON === /* Mossdeep Gym */ /* TO BE ADDED */
+=== TRAINER_PRESTON === /* Mossdeep Gym */ 
 Name: PRESTON
 Class: Psychic
 Pic: Psychic M
@@ -7929,35 +7931,161 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Kirlia
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Girafarig  @ Mirror Herb
+Ability: Inner Focus  
+Level: 66
+EVs: 252 HP / 252 Atk / 4 Spe  
+Jolly Nature  
+- Zen Headbutt  
+- Sucker Punch  
+- Low Kick  
+- Swagger
 
-=== TRAINER_VIRGIL === /* Mossdeep Gym */ /* TO BE ADDED */
+Reuniclus @ Flame Orb  
+Ability: Magic Guard   
+Level: 64
+EVs: 252 HP / 4 SpA / 252 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Psycho Shift  
+- Psychic  
+- Recover  
+- Shadow Ball  
+
+Gallade (M) @ Mirror Herb  
+Ability: Steadfast   
+Level: 64
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Careful Nature  
+- Swagger  
+- Psych Up  
+- Sacred Sword  
+- Aqua Cutter  
+
+Azumarill @ Throat Spray  
+Ability: Sap Sipper   
+Level: 66
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Alluring Voice  
+- Hyper Voice  
+- Captivate  
+- Charm  
+
+
+=== TRAINER_VIRGIL === /* Mossdeep Gym */ 
 Name: VIRGIL
 Class: Psychic
 Pic: Psychic M
 Gender: Male
 Music: Intense
 Double Battle: Yes
+Starting Status: Psychic_Terrain
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Ralts
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Slowking  
+Ability: Regenerator  
+Level: 64
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Shed Tail  
+- Expanding Force  
+- Scald  
+- Calm Mind  
 
-=== TRAINER_BLAKE === /* Mossdeep Gym */ /* TO BE ADDED */
+Indeedee (M)  
+Ability: Synchronize  
+Level: 64
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+- Expanding Force  
+- Tera Blast  
+- Encore  
+- Shadow Ball  
+
+Darmanitan
+Ability: Zen Mode  
+Level: 64 
+Tera Type: Fire
+Modest Nature
+EVs: 128 HP / 128 Def / 252 SpA  
+IVs: 0 Atk  
+- Expanding Force
+- Mystical Fire  
+- Calm Mind  
+- Body Press  
+
+Mr. Mime-Galar @ Eviolite
+Ability: Screen Cleaner
+Level: 64
+Timid Nature
+Tera Type: Psychic  
+EVs: 252 HP / 128 SpA / 128 Spe
+IVs: 0 Atk  
+- Reflect  
+- Expanding Force  
+- Nasty Plot
+- Freeze-Dry
+
+
+=== TRAINER_BLAKE === /* Mossdeep Gym */ 
 Name: BLAKE
 Class: Psychic
 Pic: Psychic M
 Gender: Male
 Music: Intense
 Double Battle: Yes
+Starting Status: MAGIC_ROOM
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Girafarig
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Sableye  
+Ability: Prankster  
+Level: 66
+EVs: 252 HP / 128 Def / 128 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Swagger  
+- Thunder Wave  
+- Encore  
+- Foul Play  
+
+
+Meowstic-F (F)  
+Ability: Competitive  
+Level: 64
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Alluring Voice  
+- Expanding Force  
+- Signal Beam  
+- Thunderbolt  
+
+
+Oricorio-Pa'u  
+Ability: Dancer  
+Level: 66
+EVs: 252 Atk / 252 Spe  
+Adamant Nature  
+- Acrobatics  
+- Reversal  
+- Victory Dance  
+- Mirror Move
+
+
+Grumpig  
+Ability: Thick Fat  
+Level: 64
+EVs: 252 SpA / 252 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Counter  
+- Earth Power  
+- Encore  
+- Psyshock  
+
 
 === TRAINER_WILLIAM === /* Mt. Pyre 3F */ /* TO BE ADDED */
 Name: WILLIAM
@@ -8105,7 +8233,7 @@ Kirlia
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_SAMANTHA === /* Mossdeep Gym */ /* TO BE ADDED */
+=== TRAINER_SAMANTHA === /* Mossdeep Gym */ 
 Name: SAMANTHA
 Class: Psychic
 Pic: Psychic F
@@ -8114,11 +8242,52 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Xatu
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Chimecho @ Throat Spray  
+Ability: Levitate
+Level: 65
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Future Sight  
+- Dazzling Gleam  
+- Hyper Voice  
+- Reflect  
 
-=== TRAINER_MAURA === /* Mossdeep Gym */ /* TO BE ADDED */
+Slowking @ Eject Button  
+Ability: Regenerator  
+Level: 65
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Teleport  
+- Counter  
+- Expanding Force  
+- Scald  
+
+Gengar @ Focus Sash  
+Ability: Levitate
+Level: 64
+EVs: 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Destiny Bond  
+- Shadow Ball  
+- Psychic Noise  
+- Encore  
+
+Lickilicky @ Wise Glasses  
+Ability: Oblivious  
+Level: 64
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Blizzard  
+- Flamethrower  
+- Shadow Ball  
+- Wring Out  
+
+
+=== TRAINER_MAURA === /* Mossdeep Gym */ 
 Name: MAURA
 Class: Psychic
 Pic: Psychic F
@@ -8127,9 +8296,53 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Kadabra
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Espeon @ Light Clay  
+Ability: Psychic Surge  
+Level: 65
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Expanding Force  
+- Power Gem  
+- Light Screen
+- Reflect  
+
+
+Exeggutor @ Sitrus Berry  
+Ability: Harvest  
+Level: 64
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Twin Beam  
+- Ancient Power  
+- Energy Ball  
+- Sleep Powder  
+
+
+Braviary-Hisui (M) @ Leftovers  
+Ability: Keen Eye  
+Level: 64
+EVs: 252 HP / 252 SpA / 4 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Esper Wing  
+- Stored Power  
+- Calm Mind  
+- Air Slash  
+
+Alcremie (Alcremie-Star-Salted-Cream) (F) @ Big Root  
+Ability: Aroma Veil  
+Level: 65
+EVs: 252 HP / 84 Def / 84 SpA / 84 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Decorate  
+- Acid Armor  
+- Giga Drain  
+- Draining Kiss  
+
+
 
 === TRAINER_KAYLA === /* Mt. Pyre 3F */ /* TO BE ADDED */
 Name: KAYLA
@@ -18244,7 +18457,7 @@ Tera Type: Bug
 - Acrobatics  
 
 
-=== TRAINER_SYLVIA === /* Mossdeep Gym */ /* TO BE ADDED */
+=== TRAINER_SYLVIA === /* Mossdeep Gym */ 
 Name: SYLVIA
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -18253,9 +18466,50 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Meditite
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Mr. Mime @ Light Clay  
+Ability: Filter  
+Level: 64
+EVs: 252 HP / 128 Def  
+Timid Nature  
+- Reflect  
+- Light Screen  
+- Fake Out  
+- Dazzling Gleam 
+
+Mimikyu @ Focus Band
+Ability: Disguise  
+Level: 64
+EVs: 252 Atk / 252 Spe
+Jolly Nature
+Tera Type: Ghost  
+- Destiny Bond  
+- Leech Life  
+- Shadow Claw  
+- Play Rough  
+
+Exploud @ Wise Glasses  
+Ability: Scrappy  
+Level: 64
+Tera Type: Fairy  
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Boomburst  
+- Flamethrower  
+- Hidden Power  
+- Extrasensory  
+
+Oranguru  
+Ability: Telepathy  
+Level: 64
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Calm Mind  
+- Expanding Force  
+- Energy Ball  
+- Pain Split  
+
 
 === TRAINER_LEONARDO === /* Route 126 */ /* TO BE ADDED */
 Name: LEONARDO
@@ -18375,13 +18629,56 @@ Pic: Gentleman
 Gender: Male
 Music: Rich
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+Starting Status: MISTY_TERRAIN
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Spoink
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Dudunsparce @ Wise Glasses  
+Ability: Serene Grace  
+Level: 64
+EVs: 86 HP / 86 Def / 252 SpA / 86 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Terrain Pulse  
+- Earth Power  
+- Hyper Voice  
+- Protect 
 
-=== TRAINER_KATHLEEN === /* Mossdeep Gym */ /* TO BE ADDED */
+Clefable @ Leftovers  
+Ability: Unaware  
+Level: 64
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Misty Explosion  
+- Flamethrower  
+- Encore  
+- Moonblast  
+
+Gardevoir @ Focus Band
+Ability: Telepathy  
+Level: 64
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Misty Explosion  
+- Aura Sphere  
+- Destiny Bond  
+- Psychic  
+
+Orbeetle @ Assault Vest
+Ability: Telepathy  
+Level: 64
+Bold Nature
+Tera Type: Bug  
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk  
+- Bug Buzz  
+- Body Press  
+- Giga Drain  
+- Psychic
+
+
+=== TRAINER_KATHLEEN === /* Mossdeep Gym */ 
 Name: KATHLEEN
 Class: Hex Maniac
 Pic: Hex Maniac
@@ -18390,9 +18687,53 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Kadabra
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Malamar @ Tanga Berry  
+Ability: Contrary  
+Level: 64
+EVs: 252 HP / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Psycho Boost  
+- Foul Play  
+- Baton Pass  
+- Substitute  
+
+Gothitelle @ Ability Shield
+Ability: Shadow Tag  
+Level: 64
+Tera Type: Psychic  
+EVs: 252 HP / 252 SpA  
+IVs: 0 Atk  
+- Protect
+- Dark Pulse
+- Eerie Spell
+- Fake Out
+
+Mismagius @ Expert Belt  
+Ability: Levitate  
+Level: 64
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Thunder  
+- Shadow Ball  
+- Power Gem  
+- Mystical Fire  
+
+Porygon-Z  @ Expert Belt  
+Ability: Analytic  
+Level: 64
+Tera Type: Fighting
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Tri Attack  
+- Hidden Power
+- Thunderbolt  
+- Ice Beam  
+
+
+
 
 === TRAINER_CLIFFORD === /* Mossdeep Gym */
 Name: CLIFFORD
@@ -18407,7 +18748,7 @@ Girafarig
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_NICHOLAS === /* Mossdeep Gym */ /* TO BE ADDED */
+=== TRAINER_NICHOLAS === /* Mossdeep Gym */
 Name: NICHOLAS
 Class: Psychic
 Pic: Psychic M
@@ -18416,9 +18757,49 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wobbuffet
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Meowstic-M (M)  
+Ability: Prankster
+Level: 64
+Tera Type: Psychic  
+- Signal Beam  
+- Attract
+- Expanding Force  
+- Thunder Wave
+
+Rabsca  
+Ability: Synchronize  
+Level: 64
+Tera Type: Bug  
+IVs: 0 Atk  
+- Bug Buzz  
+- Memento  
+- Power Gem  
+- Extrasensory  
+
+Beheeyem  
+Ability: Synchronize  
+Level: 64
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Magic Coat  
+- Barrier  
+- Expanding Force  
+- Thunderbolt  
+
+
+Blissey (F) @ Kee Berry  
+Ability: Healer  
+Level: 64
+EVs: 252 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Psywave  
+- Soft-Boiled  
+- Toxic  
+- Ally Switch  
+
+
+
 
 === TRAINER_GRUNT_SPACE_CENTER_3 === /* Route */
 Name: GRUNT
@@ -18489,18 +18870,58 @@ Baltoy
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MACEY === /* Mossdeep Gym */ /* TO BE ADDED */
+=== TRAINER_MACEY === /* Mossdeep Gym */ 
 Name: MACEY
 Class: Psychic
 Pic: Psychic F
 Gender: Female
 Music: Intense
 Double Battle: Yes
+Starting Status: WONDER_ROOM
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Natu
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Alakazam @ Focus Sash  
+Ability: Inner Focus  
+Level: 64
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Expanding Force  
+- Shadow Ball  
+- Focus Blast  
+
+Meowstic-F (F)  
+Level: 64
+Ability: Competitive  
+Tera Type: Psychic  
+- Alluring Voice  
+- Fake Out  
+- Psychic Noise  
+- Yawn  
+
+
+Blissey (F) @ Maranga Berry  
+Ability: Healer  
+Level: 64
+EVs: 252 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Psywave  
+- Soft-Boiled  
+- Toxic  
+- Ally Switch  
+
+Musharna  
+Ability: Synchronize  
+Level: 64
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Lovely Kiss  
+- Psychic  
+- Moonblast  
+- Shadow Ball  
+
 
 === TRAINER_BRENDAN_RUSTBORO_TREECKO === /* Route 104 */
 Name: BRENDAN
