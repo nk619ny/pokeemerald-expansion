@@ -2516,4 +2516,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Normal moves become Dragon."),
         .aiRating = 8,
     },
+
+    [ABILITY_MEGA_SOL] =
+    {
+        .name = _("Mega Sol"),
+        .description = COMPOUND_STRING("Moves act as if in sunlight."),
+        .aiRating = 8,
+    },
 };

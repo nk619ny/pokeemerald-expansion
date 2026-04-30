@@ -1477,6 +1477,9 @@ static enum CancelerResult CancelerExplosion(struct BattleContext *ctx)
 
 static bool32 CanTwoTurnMoveFireThisTurn(struct BattleContext *ctx)
 {
+    if (ctx->abilityAtk == ABILITY_MEGA_SOL && GetMoveTwoTurnAttackWeather(ctx->move) == B_WEATHER_SUN)
+        return TRUE;
+
     if (gBattleMoveEffects[GetMoveEffect(ctx->move)].semiInvulnerableEffect
      || GetMoveEffect(ctx->move) == EFFECT_GEOMANCY
      || !IsBattlerWeatherAffected(ctx->battlerAtk, GetMoveTwoTurnAttackWeather(ctx->move)))

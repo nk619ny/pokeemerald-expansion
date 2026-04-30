@@ -9481,6 +9481,13 @@ static void Cmd_recoverbasedonsunlight(void)
             else
                 recoverAmount = GetNonDynamaxMaxHP(gBattlerAttacker) / 2;
         }
+        else if (GetBattlerAbility(gBattlerAttacker) == ABILITY_MEGA_SOL
+              && (GetMoveEffect(gCurrentMove) == EFFECT_SYNTHESIS
+               || GetMoveEffect(gCurrentMove) == EFFECT_MOONLIGHT
+               || GetMoveEffect(gCurrentMove) == EFFECT_MORNING_SUN))
+        {
+            recoverAmount = 20 * GetNonDynamaxMaxHP(gBattlerAttacker) / 30;
+        }
         else if (GetConfig(B_TIME_OF_DAY_HEALING_MOVES) != GEN_2)
         {
             if (!(gBattleWeather & B_WEATHER_ANY) || !HasWeatherEffect() || GetBattlerHoldEffect(gBattlerAttacker) == HOLD_EFFECT_UTILITY_UMBRELLA)
