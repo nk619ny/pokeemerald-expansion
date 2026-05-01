@@ -450,3 +450,29 @@ script MossdeepCity_EventScript_CloseCombatBlackBelt {
 text MossdeepCity_Text_DynamicPunchTeach{
 	format("I can't do this anymore!\pIt's utterly hopeless!\pI'm a FIGHTING-type TRAINER,\nso I can't win at the MOSSDEEP GYM\lno matter how hard I try!\pArgh! Punch! Punch! Punch!\nPunch! Punch! Punch!\pWhat, don't look at me that way!\nI'm only hitting the ground!\pHere, take this and teach your Pokémon Close Combat!")
 }
+
+
+script MossdeepCity_EventScript_DarkPulseManiac {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_DARK_PULSE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("...Do you plan to face the Mossdeep Gym Leaders?"), MSGBOX_YESNO)
+		closemessage
+		if(var(VAR_RESULT) == NO) {
+			msgbox(format("Perhaps I judged you wrong."), MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+		msgbox(format("My Dark techniques could help."), MSGBOX_NPC)
+		closemessage		
+		giveitem(ITEM_TM_DARK_PULSE)
+		waitfanfare
+	}
+	else{
+		msgbox(format("Even powerful psychics fear the dark."), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}

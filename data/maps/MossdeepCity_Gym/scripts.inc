@@ -561,7 +561,7 @@ MossdeepCity_Gym_EventScript_GymGuide::
 # 281 "data/maps/MossdeepCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_MOSSDEEP_GYM, MossdeepCity_Gym_EventScript_GymGuidePostVictory
 # 282 "data/maps/MossdeepCity_Gym/scripts.pory"
-	msgbox MossdeepCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	msgbox MossdeepCity_Gym_Text_GymGuideAdviceNew, MSGBOX_DEFAULT
 # 283 "data/maps/MossdeepCity_Gym/scripts.pory"
 	release
 # 284 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -1367,3 +1367,18 @@ MossdeepCity_Gym_Text_BlakeDefeat::
 MossdeepCity_Gym_Text_BlakePostBattle::
 # 687 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "My mental powers are exhausted...$"
+
+MossdeepCity_Gym_Text_GymGuideAdviceNew::
+# 691 "data/maps/MossdeepCity_Gym/scripts.pory"
+	.string "Yo, how's it going, CHAMPION-bound\n"
+	.string "{PLAYER}?\p"
+	.string "The GYM LEADERS here use PSYCHIC-type\n"
+	.string "Pokémon.\p"
+	.string "But the trainers in this gym, including\n"
+	.string "the Leaders, often possess strange\l"
+	.string "abilities that distort normal battle\l"
+	.string "conditions.\p"
+	.string "And on top of that, all the trainers\n"
+	.string "before the Leaders will face you in\l"
+	.string "back-to-back battles.\p"
+	.string "You'll need to be prepared for anything!$"

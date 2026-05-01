@@ -884,10 +884,72 @@ MossdeepCity_EventScript_CloseCombatBlackBelt_2:
 	goto MossdeepCity_EventScript_CloseCombatBlackBelt_1
 
 
+MossdeepCity_EventScript_DarkPulseManiac::
+# 456 "data/maps/MossdeepCity/scripts.pory"
+	lock
+# 457 "data/maps/MossdeepCity/scripts.pory"
+	faceplayer
+# 458 "data/maps/MossdeepCity/scripts.pory"
+	checkitem ITEM_TM_DARK_PULSE
+# 459 "data/maps/MossdeepCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MossdeepCity_EventScript_DarkPulseManiac_2
+# 474 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_DarkPulseManiac_Text_3, MSGBOX_NPC
+MossdeepCity_EventScript_DarkPulseManiac_1:
+# 476 "data/maps/MossdeepCity/scripts.pory"
+	releaseall
+	end
+
+MossdeepCity_EventScript_DarkPulseManiac_2:
+# 460 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_DarkPulseManiac_Text_0, MSGBOX_YESNO
+# 461 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 462 "data/maps/MossdeepCity/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq MossdeepCity_EventScript_DarkPulseManiac_6
+# 468 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_DarkPulseManiac_Text_2, MSGBOX_NPC
+# 469 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 470 "data/maps/MossdeepCity/scripts.pory"
+	giveitem ITEM_TM_DARK_PULSE
+# 471 "data/maps/MossdeepCity/scripts.pory"
+	waitfanfare
+	goto MossdeepCity_EventScript_DarkPulseManiac_1
+
+MossdeepCity_EventScript_DarkPulseManiac_6:
+# 463 "data/maps/MossdeepCity/scripts.pory"
+	msgbox MossdeepCity_EventScript_DarkPulseManiac_Text_1, MSGBOX_NPC
+# 464 "data/maps/MossdeepCity/scripts.pory"
+	closemessage
+# 465 "data/maps/MossdeepCity/scripts.pory"
+	releaseall
+	end
+
+
 MossdeepCity_EventScript_CloseCombatBlackBelt_Text_0:
 # 444 "data/maps/MossdeepCity/scripts.pory"
 	.string "I want you to win at the Mossdeep Gym\n"
 	.string "using Close Combat!$"
+
+MossdeepCity_EventScript_DarkPulseManiac_Text_0:
+# 460 "data/maps/MossdeepCity/scripts.pory"
+	.string "...Do you plan to face the Mossdeep Gym\n"
+	.string "Leaders?$"
+
+MossdeepCity_EventScript_DarkPulseManiac_Text_1:
+# 463 "data/maps/MossdeepCity/scripts.pory"
+	.string "Perhaps I judged you wrong.$"
+
+MossdeepCity_EventScript_DarkPulseManiac_Text_2:
+# 468 "data/maps/MossdeepCity/scripts.pory"
+	.string "My Dark techniques could help.$"
+
+MossdeepCity_EventScript_DarkPulseManiac_Text_3:
+# 474 "data/maps/MossdeepCity/scripts.pory"
+	.string "Even powerful psychics fear the dark.$"
 
 MossdeepCity_Text_DynamicPunchTeach::
 # 450 "data/maps/MossdeepCity/scripts.pory"

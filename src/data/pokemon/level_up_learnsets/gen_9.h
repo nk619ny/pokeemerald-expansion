@@ -4686,6 +4686,7 @@ static const struct LevelUpMove sAerodactylLevelUpLearnset[] = {
 #if P_FAMILY_SNORLAX
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sMunchlaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_STUFF_CHEEKS),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 4, MOVE_DEFENSE_CURL),
@@ -4711,6 +4712,7 @@ static const struct LevelUpMove sMunchlaxLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 
 static const struct LevelUpMove sSnorlaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_STUFF_CHEEKS),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LAST_RESORT),
     LEVEL_UP_MOVE( 1, MOVE_SWALLOW),

@@ -145,3 +145,22 @@ Route115_Text_MeteorFallsSign:
 	.string "FALLARBOR TOWN THROUGH HERE$"
 
 `
+
+
+script Route115_EventScript_VacuumWaveExpert {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_VACUUM_WAVE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I was once a Black Belt who trained up here.\pOver time, I learned to project force out beyond my fists.\pYou should pass this technique on to your Pokémon."), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_VACUUM_WAVE)
+		waitfanfare
+	}
+	else {
+		msgbox(format("There is no substitute for proper training."), MSGBOX_NPC)
+		closemessage
+	}
+	releaseall
+	end
+}

@@ -39,3 +39,21 @@ text Route135_North_Text_MorrisDefeated {
 text Route135_North_Text_MorrisPostBattle {
     format("Staying on the move will keep you surprisingly warm in these parts.")
 }
+
+script Route135_South_EventScript_GiveIcyWind {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_ICY_WIND)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I want to explore up ahead, but it's just too cold for me.\pMaybe you should have this TM instead of me."), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_ICY_WIND)
+		waitfanfare
+	}
+    else{
+        msgbox("I bet the snow is really pretty up there.", MSGBOX_NPC)
+    }
+    closemessage
+	releaseall
+	end
+}

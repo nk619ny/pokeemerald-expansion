@@ -9358,7 +9358,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Slowbro @ Slowbronite  
 Level: 70
 Ball: Moon
-Ability: Shell Armor  
+Ability: Regenerator 
 EVs: 252 HP / 252 SpA  
 Relaxed Nature  
 IVs: 0 Atk / 0 Spe  
@@ -9374,13 +9374,13 @@ Ability: Magic Bounce
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
 IVs: 0 Atk / 0 Spe  
-- Trick Room  
+- Shadow Ball
 - Dazzling Gleam  
 - Expanding Force  
 - Calm Mind
 
 Lunatone @ Psychic Seed  
-Level: 71
+Level: 70
 Ball: Moon
 Ability: Psychic Surge  
 EVs: 252 HP / 4 Def / 252 SpA  
@@ -9404,7 +9404,7 @@ IVs: 0 Atk / 0 Spe
 - Shadow Ball  
 
 Wigglytuff @ Expert Belt
-Level: 72
+Level: 70
 Ball: Moon
 Ability: Cute Charm
 EVs: 168 Def / 172 SpA / 168 SpD  
@@ -9419,7 +9419,7 @@ Calyrex-Ice @ White Herb
 Level: 70
 Ball: Moon
 Ability: As One Ice Rider 
-EVs: 252 HP / 252 Atk / 4 SpD  
+EVs: 0 HP / 0 Atk 
 Brave Nature  
 IVs: 0 Spe  
 - Icicle Crash
@@ -18467,7 +18467,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mr. Mime @ Light Clay  
-Ability: Filter  
+Ability: Soundproof  
 Level: 64
 EVs: 252 HP / 128 Def  
 Timid Nature  
@@ -18721,7 +18721,7 @@ IVs: 0 Atk
 - Mystical Fire  
 
 Porygon-Z  @ Expert Belt  
-Ability: Analytic  
+Ability: Mold Breaker  
 Level: 64
 Tera Type: Fighting
 EVs: 252 HP / 252 SpA  
@@ -24824,7 +24824,7 @@ IVs: 0 Atk
 
 Mr. Mime @ Light Clay    
 Level: 48
-Ability: Filter  
+Ability: Soundproof  
 Tera Type: Psychic  
 IVs: 0 Atk  
 - Reflect  

@@ -1299,7 +1299,9 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_FUSION_FLARE"
+      "MOVE_FUSION_FLARE",
+      "MOVE_DARK_PULSE",
+      "MOVE_AURA_SPHERE"
     ]
   },
   "ZAPDOS": {

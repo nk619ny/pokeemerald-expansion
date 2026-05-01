@@ -1,0 +1,20 @@
+mapscripts Glacier_Summit_MapScripts {
+}
+
+script Glacier_Summit_EventScript_AvalancheHiker {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_AVALANCHE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("It's rare to run into other folks up on this glacier! You must know what you're doing.\pStill, you can never be too careful.\pA careless step can spell danger not just for you, but others, too."), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_AVALANCHE)
+		waitfanfare
+	}
+	else {
+		msgbox(format("Exploring nature always takes my breath away. But it's important we do it responsibly."), MSGBOX_NPC)
+		closemessage
+	}
+	releaseall
+	end
+}
