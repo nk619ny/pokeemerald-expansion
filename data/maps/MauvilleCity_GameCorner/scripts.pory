@@ -2469,7 +2469,7 @@ script MauvilleCity_GameCorner_EventScript_BuyVitamins {
 	dynmultipush("Zinc         100 coins",ITEM_ZINC)
 	dynmultipush("Carbos     200 coins",ITEM_CARBOS)
 	dynmultipush("PP Max      200 coins",ITEM_PP_MAX)
-	dynmultipush("Ability Capsule 500 coins",ITEM_ABILITY_CAPSULE)
+	dynmultipush("Ability Capsule 500",ITEM_ABILITY_CAPSULE)
 	msgbox(format("Which training item would you like?"), MSGBOX_DEFAULT)
 	showcoinsbox(1, 1)
 	dynmultistack(30, 0, FALSE, 6, TRUE, 0, DYN_MULTICHOICE_CB_NONE)

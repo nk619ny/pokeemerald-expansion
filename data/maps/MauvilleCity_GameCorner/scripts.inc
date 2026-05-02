@@ -8537,7 +8537,7 @@ MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_6:
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_7:
 # 2472 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Ability Capsule 500 coins$"
+	.string "Ability Capsule 500$"
 
 MauvilleCity_GameCorner_EventScript_BuyVitamins_Text_8:
 # 2473 "data/maps/MauvilleCity_GameCorner/scripts.pory"
