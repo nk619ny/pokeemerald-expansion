@@ -475,10 +475,15 @@
 #define OBJ_EVENT_GFX_SCHOOLKID_F_ORAS                     438
 #define OBJ_EVENT_GFX_TRIATHLETE_RUNNING_F_ORAS            439
 
+// Custom item icons
+#define OBJ_EVENT_GFX_TM                                   440
+#define OBJ_EVENT_GFX_VITAMIN                              441
+#define OBJ_EVENT_GFX_MEGA_STONE                           442
+
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        440
+#define NUM_OBJ_EVENT_GFX                        443
 
 
 // These are dynamic object gfx ids.
@@ -660,6 +665,9 @@
 #define OBJ_EVENT_PAL_TAG_POKEMANIAC_ORAS              0x1176
 #define OBJ_EVENT_PAL_TAG_SCHOOLKID_F_ORAS             0x1177
 #define OBJ_EVENT_PAL_TAG_TRIATHLETE_RUNNING_F_ORAS    0x1178
+#define OBJ_EVENT_PAL_TAG_TM                           0x1150
+#define OBJ_EVENT_PAL_TAG_VITAMIN                      0x1151
+#define OBJ_EVENT_PAL_TAG_MEGA_STONE                   0x1152
 
 #define OBJ_EVENT_PAL_TAG_PLAYER_RED              0x1190
 #define OBJ_EVENT_PAL_TAG_PLAYER_RED_REFLECTION   0x1191

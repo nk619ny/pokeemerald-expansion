@@ -1257,6 +1257,19 @@ static const struct SpriteFrameImage sPicTable_TriathleteRunningFORAS[] = {
     overworld_frame(gObjectEventPic_TriathleteRunningFORAS, 2, 4, 8),
 };
 
+// Custom item icons
+static const struct SpriteFrameImage sPicTable_TM[] = {
+    obj_frame_tiles(gObjectEventPic_TM),
+};
+
+static const struct SpriteFrameImage sPicTable_Vitamin[] = {
+    obj_frame_tiles(gObjectEventPic_Vitamin),
+};
+
+static const struct SpriteFrameImage sPicTable_MegaStone[] = {
+    obj_frame_tiles(gObjectEventPic_MegaStone),
+};
+
 static const struct SpriteFrameImage sPicTable_SSTidal[] = {
     obj_frame_tiles(gObjectEventPic_SSTidal),
     obj_frame_tiles(gObjectEventPic_SSTidal),

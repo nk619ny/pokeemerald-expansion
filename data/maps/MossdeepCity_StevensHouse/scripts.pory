@@ -7,7 +7,7 @@ MossdeepCity_StevensHouse_MapScripts::
 	.byte 0
 
 MossdeepCity_StevensHouse_OnLoad:
-	call_if_unset FLAG_SYS_GAME_CLEAR, MossdeepCity_StevensHouse_EventScript_HideStevensNote
+	//call_if_unset FLAG_SYS_GAME_CLEAR, MossdeepCity_StevensHouse_EventScript_HideStevensNote
 	end
 
 MossdeepCity_StevensHouse_EventScript_HideStevensNote::
@@ -139,7 +139,7 @@ MossdeepCity_StevensHouse_EventScript_Steven::
 
 MossdeepCity_StevensHouse_EventScript_Letter::
 	lockall
-	msgbox MossdeepCity_StevensHouse_Text_LetterFromSteven, MSGBOX_DEFAULT
+	msgbox MossdeepCity_StevensHouse_Text_NewLetter, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -215,3 +215,7 @@ MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
 	.string "stones assembled by STEVEN.$"
 
 `
+
+text MossdeepCity_StevensHouse_Text_NewLetter {
+	format("It's a letter.\p… … … … … …\pTo {PLAYER}{KUN}…\pI've decided to leave this for you.\pPowerful Pokémon roam throughout the region. Different corners of Hoenn have different groups of legendary Pokémon that travel the area.\pThis special flute is believed to be able to call the nearest roaming legendary to the holder's location.\pBe warned, they are likely to flee once you engage them. And if they do not flee, they will make formidible opponents.\pLegends say one holder of the flute managed to build a bond strong enough to ride a Latias through the skies.\pI believe you may be able to befriend some of these roamers…\NI hope so, for all our sakes.\pSTEVEN STONE$")
+}

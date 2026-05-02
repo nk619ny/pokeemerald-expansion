@@ -18,7 +18,7 @@ MoveTutor_EventScript_SwaggerTaught::
 MauvilleCity_EventScript_RolloutTutor::
 	lock
 	faceplayer
-	move_tutor MOVE_ROLLOUT, MoveTutor_Text_RolloutTeach, MoveTutor_Text_RolloutWhichMon, MoveTutor_EventScript_RolloutDeclined, MoveTutor_EventScript_RolloutTaught, FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT
+	//move_tutor MOVE_ROLLOUT, MoveTutor_Text_RolloutTeach, MoveTutor_Text_RolloutWhichMon, MoveTutor_EventScript_RolloutDeclined, MoveTutor_EventScript_RolloutTaught, FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT
 	release
 	end
 

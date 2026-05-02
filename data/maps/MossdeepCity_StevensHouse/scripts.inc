@@ -17,7 +17,7 @@ MossdeepCity_StevensHouse_MapScripts::
 # 9 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 MossdeepCity_StevensHouse_OnLoad:
 # 10 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	call_if_unset FLAG_SYS_GAME_CLEAR, MossdeepCity_StevensHouse_EventScript_HideStevensNote
+	//call_if_unset FLAG_SYS_GAME_CLEAR, MossdeepCity_StevensHouse_EventScript_HideStevensNote
 # 11 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	end
 # 12 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
@@ -281,7 +281,7 @@ MossdeepCity_StevensHouse_EventScript_Letter::
 # 141 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	lockall
 # 142 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	msgbox MossdeepCity_StevensHouse_Text_LetterFromSteven, MSGBOX_DEFAULT
+	msgbox MossdeepCity_StevensHouse_Text_NewLetter, MSGBOX_DEFAULT
 # 143 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	releaseall
 # 144 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
@@ -428,3 +428,28 @@ MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
 	.string "It's a collection of rare rocks and\n"
 # 215 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	.string "stones assembled by STEVEN.$"
+
+MossdeepCity_StevensHouse_Text_NewLetter::
+# 219 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "It's a letter.\p"
+	.string "… … … … … …\p"
+	.string "To {PLAYER}{KUN}…\p"
+	.string "I've decided to leave this for you.\p"
+	.string "Powerful Pokémon roam throughout the\n"
+	.string "region. Different corners of Hoenn have\l"
+	.string "different groups of legendary Pokémon\l"
+	.string "that travel the area.\p"
+	.string "This special flute is believed to be\n"
+	.string "able to call the nearest roaming\l"
+	.string "legendary to the holder's location.\p"
+	.string "Be warned, they are likely to flee once\n"
+	.string "you engage them. And if they do not\l"
+	.string "flee, they will make formidible\l"
+	.string "opponents.\p"
+	.string "Legends say one holder of the flute\n"
+	.string "managed to build a bond strong enough\l"
+	.string "to ride a Latias through the skies.\p"
+	.string "I believe you may be able to befriend\n"
+	.string "some of these roamers…\l"
+	.string "I hope so, for all our sakes.\p"
+	.string "STEVEN STONE$"

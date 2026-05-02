@@ -3673,7 +3673,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_43:
 # 1731 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	checkitemspace VAR_TEMP_7
 # 1732 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_TEMP_7, FALSE
+	compare VAR_RESULT, FALSE
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_53
 # 1738 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	bufferitemname STR_VAR_1, VAR_TEMP_7

@@ -91,6 +91,20 @@
       "trainer_sight_or_berry_tree_id": "5",
       "script": "AquaHideout_B1F_EventScript_Grunt7",
       "flag": "FLAG_HIDE_AQUA_HIDEOUT_GRUNTS"
+    },
+    {
+      "local_id": "LOCALID_AQUA_HIDEOUT_MEGA_STONE",
+      "graphics_id": "OBJ_EVENT_GFX_MEGA_STONE",
+      "x": 16,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AquaHideout_B1F_EventScript_TakeMegaStone",
+      "flag": "FLAG_RECEIVED_AQUA_MEGA_STONE"
     }
   ],
   "warp_events": [
@@ -271,5 +285,22 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 8,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AquaHideout_B1F_EventScript_MegaStoneDisplay"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 8,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "AquaHideout_B1F_EventScript_MegaStoneDisplay"
+    }
+  ]
 }

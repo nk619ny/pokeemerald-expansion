@@ -160,3 +160,82 @@ AquaHideout_B1F_Text_Grunt7PostBattle:
 	.string "If you have a cool uniform, you look\n"
 	.string "good even in a loss, don't you think?$"
 `
+
+const TempVar_MegaStone = VAR_TEMP_5
+
+script AquaHideout_B1F_EventScript_MegaStoneDisplay{
+	lock
+	msgbox(AquaHideout_B1F_EventScript_MegaStoneDisplay_Text,MSGBOX_DEFAULT)
+	closemessage
+	if(flag(FLAG_RECEIVED_AQUA_MEGA_STONE)){msgbox(format("The case has locked shut."),MSGBOX_DEFAULT)}
+	closemessage
+	releaseall
+	end
+}
+
+text AquaHideout_B1F_EventScript_MegaStoneDisplay_Text{
+	format("This case appears to hold Team Aqua's Mega Stones.")
+}
+
+script AquaHideout_B1F_EventScript_TakeMegaStone{
+	lock
+	faceplayer
+	msgbox(AquaHideout_B1F_EventScript_MegaStoneDisplay_Text,MSGBOX_DEFAULT)
+	if(!checkitem(ITEM_BEEDRILLITE)) 		{dynmultipush("Beedrillite",ITEM_BEEDRILLITE)}
+	if(!checkitem(ITEM_BUTTERFRITE)) 		{dynmultipush("Butterfrite",ITEM_BUTTERFRITE)}
+	if(!checkitem(ITEM_SLOWBRONITE)) 		{dynmultipush("Slowbronite",ITEM_SLOWBRONITE)}
+	if(!checkitem(ITEM_SLOWKINGITE)) 		{dynmultipush("Slowkingite",ITEM_SLOWKINGITE)}
+	if(!checkitem(ITEM_PINSIRITE)) 			{dynmultipush("Pinsirite",ITEM_PINSIRITE)}
+	if(!checkitem(ITEM_GYARADOSITE)) 		{dynmultipush("Gyaradosite",ITEM_GYARADOSITE)}
+	if(!checkitem(ITEM_HERACRONITE)) 		{dynmultipush("Heracronite",ITEM_HERACRONITE)}
+	if(!checkitem(ITEM_SHARPEDONITE)) 		{dynmultipush("Sharpedonite",ITEM_SHARPEDONITE)}
+	if(!checkitem(ITEM_GLALITITE)) 			{dynmultipush("Glalitite",ITEM_GLALITITE)}
+	if(!checkitem(ITEM_STARMINITE)) 		{dynmultipush("Starminite",ITEM_STARMINITE)}
+	if(!checkitem(ITEM_EELEKTROSSITE)) 		{dynmultipush("Eelektrossite",ITEM_EELEKTROSSITE)}
+	if(!checkitem(ITEM_MALAMARITE)) 		{dynmultipush("Malamarite",ITEM_MALAMARITE)}
+	if(!checkitem(ITEM_BARBARACITE)) 		{dynmultipush("Barbaracite",ITEM_BARBARACITE)}
+	if(!checkitem(ITEM_DRAGALGITE)) 		{dynmultipush("Dragalgite",ITEM_DRAGALGITE)}
+	if(!checkitem(ITEM_CRABOMINITE)) 		{dynmultipush("Crabominite",ITEM_CRABOMINITE)}
+	if(!checkitem(ITEM_GOLISOPITE)) 		{dynmultipush("Golisopite",ITEM_GOLISOPITE)}
+	if(!checkitem(ITEM_TATSUGIRINITE)) 		{dynmultipush("Tatsugirinite",ITEM_TATSUGIRINITE)}
+	if(!checkitem(ITEM_KINGLERITE)) 		{dynmultipush("Kinglerite",ITEM_KINGLERITE)}
+	if(!checkitem(ITEM_LAPRASITE)) 			{dynmultipush("Laprasite",ITEM_LAPRASITE)}
+	if(!checkitem(ITEM_MILOTICITE)) 		{dynmultipush("Miloticite",ITEM_MILOTICITE)}
+
+	dynmultipush("Nevermind",ITEM_NONE)
+
+	msgbox(format("Take one of the Mega Stones?"),MSGBOX_DEFAULT)
+	dynmultistack(25,2,FALSE,5,0,ITEM_BEEDRILLITE,DYN_MULTICHOICE_CB_NONE)
+	if(var(VAR_RESULT) == ITEM_NONE){
+		msgbox(format("Left the case open without taking a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	elif(var(VAR_RESULT) == 127){
+		msgbox(format("Left the case open without taking a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	else{
+		copyvar(TempVar_MegaStone, VAR_RESULT)
+		checkitemspace(TempVar_MegaStone)
+		if(var(VAR_RESULT) == FALSE){
+			msgbox(format("Too bad!\lThe BAG is full..."),MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+		giveitem(TempVar_MegaStone)
+		setflag(FLAG_RECEIVED_AQUA_MEGA_STONE)
+		removeobject(LOCALID_AQUA_HIDEOUT_MEGA_STONE)
+		waitfanfare
+		msgbox(format("The case shut automatically after the Stone was removed."),MSGBOX_NPC)
+		closemessage
+	}
+
+	closemessage
+	release
+	end
+}

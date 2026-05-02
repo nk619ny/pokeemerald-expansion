@@ -477,7 +477,7 @@
 #define FLAG_SHOWN_AURORA_TICKET             0x1AF
 #define FLAG_SHOWN_OLD_SEA_MAP               0x1B0
 #define FLAG_MOVE_TUTOR_TAUGHT_SWAGGER       0x1B1
-#define FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT       0x1B2
+#define FLAG_RECEIVED_AQUA_MEGA_STONE        0x1B2 //repurposed
 #define FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER   0x1B3
 #define FLAG_MOVE_TUTOR_TAUGHT_MIMIC         0x1B4
 #define FLAG_MOVE_TUTOR_TAUGHT_METRONOME     0x1B5
@@ -773,7 +773,7 @@
 #define FLAG_HIDE_BRINEY_FONT_OF_DOOR                               0x2D4 //was devon employee, repurposed
 #define FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT                        0x2D5
 #define FLAG_HIDE_PETALBURG_CITY_WALLY                              0x2D6
-#define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
+#define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7 //was used, now unused and available for repurposing
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
 #define FLAG_UNUSED_2D9                                             0x2D9 // unused, temporarily used but reopened

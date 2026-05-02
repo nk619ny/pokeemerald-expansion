@@ -500,6 +500,14 @@ const u16 gObjectEventPal_SchoolkidFORAS[] = INCBIN_U16("graphics/object_events/
 const u32 gObjectEventPic_TriathleteRunningFORAS[] = INCBIN_U32("graphics/object_events/pics/people/triathlete_running_f_oras.4bpp");
 const u16 gObjectEventPal_TriathleteRunningFORAS[] = INCBIN_U16("graphics/object_events/pics/people/triathlete_running_f_oras.gbapal");
 
+// Custom item icons
+const u32 gObjectEventPic_TM[] = INCBIN_U32("graphics/object_events/pics/misc/tm.4bpp");
+const u16 gObjectEventPal_TM[] = INCBIN_U16("graphics/object_events/pics/misc/tm.gbapal");
+const u32 gObjectEventPic_Vitamin[] = INCBIN_U32("graphics/object_events/pics/misc/vitamin.4bpp");
+const u16 gObjectEventPal_Vitamin[] = INCBIN_U16("graphics/object_events/pics/misc/vitamin.gbapal");
+const u32 gObjectEventPic_MegaStone[] = INCBIN_U32("graphics/object_events/pics/misc/mega_stone.4bpp");
+const u16 gObjectEventPal_MegaStone[] = INCBIN_U16("graphics/object_events/pics/misc/mega_stone.gbapal");
+
 
 
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");

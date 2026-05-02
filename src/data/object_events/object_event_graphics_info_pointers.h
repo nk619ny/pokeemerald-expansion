@@ -288,6 +288,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LassTeammat
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokemaniacORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SchoolkidFORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TriathleteRunningFORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Vitamin;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MegaStone;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedBike;
@@ -750,6 +753,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKEMANIAC_ORAS] =         &gObjectEventGraphicsInfo_PokemaniacORAS,
     [OBJ_EVENT_GFX_SCHOOLKID_F_ORAS] =        &gObjectEventGraphicsInfo_SchoolkidFORAS,
     [OBJ_EVENT_GFX_TRIATHLETE_RUNNING_F_ORAS] = &gObjectEventGraphicsInfo_TriathleteRunningFORAS,
+    [OBJ_EVENT_GFX_TM] =                       &gObjectEventGraphicsInfo_TM,
+    [OBJ_EVENT_GFX_VITAMIN] =                  &gObjectEventGraphicsInfo_Vitamin,
+    [OBJ_EVENT_GFX_MEGA_STONE] =               &gObjectEventGraphicsInfo_MegaStone,
 #if IS_FRLG
     [OBJ_EVENT_GFX_RED_NORMAL] =               &gObjectEventGraphicsInfo_RedNormal,
     [OBJ_EVENT_GFX_RED_BIKE] =                 &gObjectEventGraphicsInfo_RedBike,
