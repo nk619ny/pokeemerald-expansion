@@ -288,3 +288,48 @@ Route115_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
 # 145 "data/maps/Route115/scripts.pory"
 	.string "FALLARBOR TOWN THROUGH HERE$"
+
+Route115_EventScript_VacuumWaveExpert::
+# 151 "data/maps/Route115/scripts.pory"
+	lock
+# 152 "data/maps/Route115/scripts.pory"
+	faceplayer
+# 153 "data/maps/Route115/scripts.pory"
+	checkitem ITEM_TM_VACUUM_WAVE
+# 154 "data/maps/Route115/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route115_EventScript_VacuumWaveExpert_2
+# 161 "data/maps/Route115/scripts.pory"
+	msgbox Route115_EventScript_VacuumWaveExpert_Text_1, MSGBOX_NPC
+# 162 "data/maps/Route115/scripts.pory"
+	closemessage
+Route115_EventScript_VacuumWaveExpert_1:
+# 164 "data/maps/Route115/scripts.pory"
+	releaseall
+	end
+
+Route115_EventScript_VacuumWaveExpert_2:
+# 155 "data/maps/Route115/scripts.pory"
+	msgbox Route115_EventScript_VacuumWaveExpert_Text_0, MSGBOX_NPC
+# 156 "data/maps/Route115/scripts.pory"
+	closemessage
+# 157 "data/maps/Route115/scripts.pory"
+	giveitem ITEM_TM_VACUUM_WAVE
+# 158 "data/maps/Route115/scripts.pory"
+	waitfanfare
+	goto Route115_EventScript_VacuumWaveExpert_1
+
+
+Route115_EventScript_VacuumWaveExpert_Text_0:
+# 155 "data/maps/Route115/scripts.pory"
+	.string "I was once a Black Belt who trained up\n"
+	.string "here.\p"
+	.string "Over time, I learned to project force\n"
+	.string "out beyond my fists.\p"
+	.string "You should pass this technique on to\n"
+	.string "your Pokémon.$"
+
+Route115_EventScript_VacuumWaveExpert_Text_1:
+# 161 "data/maps/Route115/scripts.pory"
+	.string "There is no substitute for proper\n"
+	.string "training.$"

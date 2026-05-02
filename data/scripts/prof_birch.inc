@@ -9,6 +9,7 @@ ProfBirch_EventScript_UpdateLocation::
 	call_if_eq VAR_BIRCH_STATE, 5, ProfBirch_EventScript_MoveToRoute103
 	call_if_eq VAR_BIRCH_STATE, 6, ProfBirch_EventScript_MoveToLab
 	call_if_eq VAR_BIRCH_STATE, 7, ProfBirch_EventScript_MoveToLab
+	call ProfBirch_EventScript_MoveToLab //always keep Birch in the lab
 	return
 
 ProfBirch_EventScript_MoveToLab::

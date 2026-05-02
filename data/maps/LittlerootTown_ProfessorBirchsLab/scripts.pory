@@ -484,6 +484,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Birch::
 	lock
 	faceplayer
 	goto_if_unset FLAG_DEFEATED_NORMAN_INTRO, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseStarterGen
+	call LittlerootTown_ProfessorBirchsLab_EventScript_CheckIfGiveMegaStone
 	//goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 5, LittlerootTown_ProfessorBirchsLab_EventScript_CanHaveAnyOneOfRarePokemon
 	//goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_GrassyPatchWaiting
 	goto_if_unset FLAG_HAS_MATCH_CALL, LittlerootTown_ProfessorBirchsLab_EventScript_TryRatePokedexOrRegister
@@ -1033,6 +1034,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 const TempVar_StarterRegion = VAR_TEMP_8
 const TempVar_HandicapAnswer = VAR_TEMP_9
 const TempVar_ProspectiveHandicap = VAR_TEMP_4
+const TempVar_MegaStone = VAR_TEMP_7
 
 //Uses VAR_TEMP_8 to signify starter region selected
 //Uses VAR_TEMP_7 to record answer to starter offer
@@ -1685,4 +1687,76 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap{
 				}
 				setvar(TempVar_HandicapAnswer,0)
 				return
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone{
+	lock
+	faceplayer
+
+	if(!checkitem(ITEM_VENUSAURITE)) 		{dynmultipush("Venusaur",ITEM_VENUSAURITE)}
+	if(!checkitem(ITEM_CHARIZARDITE_X)) 		{dynmultipush("Charizard",ITEM_CHARIZARDITE_X)}
+	if(!checkitem(ITEM_BLASTOISINITE)) 		{dynmultipush("Blastoise",ITEM_BLASTOISINITE)}
+	if(!checkitem(ITEM_MEGANIUMITE)) 		{dynmultipush("Meganium",ITEM_MEGANIUMITE)}
+	if(!checkitem(ITEM_FERALIGITE)) 			{dynmultipush("Feraligatr",ITEM_FERALIGITE)}
+	if(!checkitem(ITEM_SCEPTILITE)) 			{dynmultipush("Sceptile",ITEM_SCEPTILITE)}
+	if(!checkitem(ITEM_BLAZIKENITE)) 		{dynmultipush("Blaziken",ITEM_BLAZIKENITE)}
+	if(!checkitem(ITEM_SWAMPERTITE)) 		{dynmultipush("Swampert",ITEM_SWAMPERTITE)}
+	if(!checkitem(ITEM_EMBOARITE)) 			{dynmultipush("Emboar",ITEM_EMBOARITE)}
+	if(!checkitem(ITEM_CHESNAUGHTITE)) 		{dynmultipush("Chesnaught",ITEM_CHESNAUGHTITE)}
+	if(!checkitem(ITEM_DELPHOXITE)) 			{dynmultipush("Delphox",ITEM_DELPHOXITE)}
+	if(!checkitem(ITEM_GRENINJITE)) 			{dynmultipush("Greninja",ITEM_GRENINJITE)}
+	if(!checkitem(ITEM_RILLABOOMITE)) 		{dynmultipush("Rillaboom",ITEM_RILLABOOMITE)}
+	if(!checkitem(ITEM_CINDERACITE)) 		{dynmultipush("Cinderace",ITEM_CINDERACITE)}
+	if(!checkitem(ITEM_INTELEONITE)) 		{dynmultipush("Inteleon",ITEM_INTELEONITE)}
+	dynmultipush("Nevermind",ITEM_NONE)
+
+	msgbox(format("PROF. BIRCH: Ah, {PLAYER}!\pIn honor of your new Mega Ring, I wanted to give you a Mega Stone for your starter Pokémon.\pBut... I can't remember which one you chose!"),MSGBOX_NPC)
+	closemessage
+	msgbox(format("Could you remind me of your starter Pokémon?"),MSGBOX_DEFAULT)
+	dynmultistack(25,2,FALSE,5,0,ITEM_VENUSAURITE,DYN_MULTICHOICE_CB_NONE)
+	if(var(VAR_RESULT) == ITEM_NONE){
+		msgbox(format("PROF. BIRCH: Wow, did you forget too?\NThat's concerning.\pOkay, well come back when you remember, and I'll give you the right Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	elif(var(VAR_RESULT) == 127){
+		msgbox(format("PROF. BIRCH: Wow, did you forget too?\NThat's concerning.\pOkay, well come back when you remember, and I'll give you the right Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	else{
+		copyvar(TempVar_MegaStone, VAR_RESULT)
+		checkitemspace(TempVar_MegaStone)
+		if(var(TempVar_MegaStone) == FALSE){
+			msgbox(format("PROF. BIRCH: Hm, your bag seems to be full!\pMake some room and come back to me."),MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+		bufferitemname(STR_VAR_1,TempVar_MegaStone)
+		msgbox(format("PROF. BIRCH: Right, of course!\pThen you should take this {STR_VAR_1} to Mega Evolve your starter."),MSGBOX_NPC)
+		closemessage
+		giveitem(TempVar_MegaStone)
+		setflag(FLAG_RECEIVED_BIRCH_MEGA_STONE)
+		waitfanfare
+		msgbox(format("PROF. BIRCH: Of course, lots of other Pokémon can Mega Evolve too, so try to collect more Mega Stones as you adventure!\pI hear the Game Corner sells many of them - though as a child, I'm not sure how you could get the needed coins."),MSGBOX_NPC)
+		closemessage
+	}
+
+	closemessage
+	release
+	end
+}
+
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_CheckIfGiveMegaStone {
+	lock
+	if(checkitem(ITEM_MEGA_RING) && !flag(FLAG_RECEIVED_BIRCH_MEGA_STONE)){
+		goto(LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone)
+	}
+	else{
+		return
+	}
 }
