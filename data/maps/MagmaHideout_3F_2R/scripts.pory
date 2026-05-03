@@ -26,3 +26,76 @@ MagmaHideout_3F_2R_Text_Grunt10PostBattle:
 	.string "I'm going to ask him about what we do.$"
 
 `
+
+
+const TempVar_MegaStone = VAR_TEMP_5
+
+script MagmaHideout_3F_2R_EventScript_MegaStoneDisplay{
+	lock
+	msgbox(MagmaHideout_3F_2R_EventScript_MegaStoneDisplay_Text,MSGBOX_DEFAULT)
+	closemessage
+	if(flag(FLAG_RECEIVED_MAGMA_MEGA_STONE)){msgbox(format("The machine has locked shut."),MSGBOX_DEFAULT)}
+	closemessage
+	releaseall
+	end
+}
+
+text MagmaHideout_3F_2R_EventScript_MegaStoneDisplay_Text{
+	format("This machine appears to hold Team Magma's Mega Stones.")
+}
+
+script MagmaHideout_3F_2R_EventScript_TakeMegaStone{
+	lock
+	faceplayer
+	msgbox(MagmaHideout_3F_2R_EventScript_MegaStoneDisplay_Text,MSGBOX_DEFAULT)
+	if(!checkitem(ITEM_STEELIXITE)) 		{dynmultipush("Steelixite",ITEM_STEELIXITE)}
+	if(!checkitem(ITEM_HOUNDOOMINITE)) 		{dynmultipush("Houndoominite",ITEM_HOUNDOOMINITE)}
+	if(!checkitem(ITEM_AGGRONITE)) 		{dynmultipush("Aggronite",ITEM_AGGRONITE)}
+	if(!checkitem(ITEM_CAMERUPTITE)) 		{dynmultipush("Cameruptite",ITEM_CAMERUPTITE)}
+	if(!checkitem(ITEM_VICTREEBELITE)) 			{dynmultipush("Victreebelite",ITEM_VICTREEBELITE)}
+	if(!checkitem(ITEM_EXCADRITE)) 		{dynmultipush("Excadrillite",ITEM_EXCADRITE)}
+	if(!checkitem(ITEM_CHANDELURITE)) 		{dynmultipush("Chandelurite",ITEM_CHANDELURITE)}
+	if(!checkitem(ITEM_PYROARITE)) 		{dynmultipush("Pyroarite",ITEM_PYROARITE)}
+	if(!checkitem(ITEM_GOLURKITE)) 			{dynmultipush("Golurkite",ITEM_GOLURKITE)}
+	if(!checkitem(ITEM_CENTISKORITE)) 		{dynmultipush("Centiskorite",ITEM_CENTISKORITE)}
+	if(!checkitem(ITEM_FLYGONITE)) 		{dynmultipush("Flygonite",ITEM_FLYGONITE)}
+	if(!checkitem(ITEM_SUNFLORITE)) 		{dynmultipush("Sunflorite",ITEM_SUNFLORITE)}
+	if(!checkitem(ITEM_SCOVILLAINITE)) 		{dynmultipush("Scovillainite",ITEM_SCOVILLAINITE)}
+
+	dynmultipush("Nevermind",ITEM_NONE)
+
+	msgbox(format("Take one of the Mega Stones?"),MSGBOX_DEFAULT)
+	dynmultistack(25,2,FALSE,5,0,ITEM_STEELIXITE,DYN_MULTICHOICE_CB_NONE)
+	if(var(VAR_RESULT) == ITEM_NONE){
+		msgbox(format("Left the machine without taking a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	elif(var(VAR_RESULT) == 127){
+		msgbox(format("Left the machine without taking a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	else{
+		copyvar(TempVar_MegaStone, VAR_RESULT)
+		checkitemspace(TempVar_MegaStone)
+		if(var(VAR_RESULT) == FALSE){
+			msgbox(format("Too bad!\lThe BAG is full..."),MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+		giveitem(TempVar_MegaStone)
+		setflag(FLAG_RECEIVED_MAGMA_MEGA_STONE)
+		removeobject(LOCALID_MAGMA_HIDEOUT_MEGA_STONE)
+		waitfanfare
+		msgbox(format("The machine locked automatically after the Stone was removed."),MSGBOX_NPC)
+		closemessage
+	}
+
+	closemessage
+	release
+	end
+}

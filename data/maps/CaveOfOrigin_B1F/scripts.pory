@@ -84,6 +84,15 @@ CaveOfOrigin_B1F_Text_WallaceStory:
 	.string "But even I have no clue as to\n"
 	.string "RAYQUAZA's whereabouts…$"
 
+CaveOfOrigin_B1F_Text_WallaceStoryShort:
+	.string "Ah, so you are {PLAYER}{KUN}?\n"
+	.string "I've heard tales of your exploits.\p"
+	.string "My name is WALLACE.\p"
+	.string "I was once the GYM LEADER of\n"
+	.string "SOOTOPOLIS, but something came up.\p"
+	.string "So now, I've entrusted my mentor JUAN\n"
+	.string "with the GYM's operation.$"
+
 CaveOfOrigin_B1F_Text_WhereIsRayquaza:
 	.string "WALLACE: {PLAYER}{KUN}, do you perhaps\n"
 	.string "know where RAYQUAZA is now?\p"
@@ -118,3 +127,77 @@ CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
 	.string "We'll head to the SKY PILLAR right away!$"
 
 `
+const TempVar_MegaStone = VAR_TEMP_5
+const TempFlag_MetWallace = FLAG_TEMP_1
+
+script CaveOfOrigin_B1F_EventScript_WallaceNew {
+	lock
+	faceplayer
+	
+	goto_if_set(FLAG_RECEIVED_CAVE_OF_ORIGIN_MEGA_STONE, CaveOfOrigin_B1F_EventScript_WallacePostStone)
+	if(!flag(TempFlag_MetWallace)){
+		msgbox(CaveOfOrigin_B1F_Text_WallaceStoryShort, MSGBOX_DEFAULT)
+		setflag(TempFlag_MetWallace)
+	}
+
+	if(!checkitem(ITEM_SABLENITE)) 		{dynmultipush("Sablenite",ITEM_SABLENITE)}
+	if(!checkitem(ITEM_MAWILITE)) 		{dynmultipush("Mawilite",ITEM_MAWILITE)}
+	if(!checkitem(ITEM_FLOETTITE)) 		{dynmultipush("Floettite",ITEM_FLOETTITE)}
+	if(!checkitem(ITEM_DRAGONINITE)) 		{dynmultipush("Dragoninite",ITEM_DRAGONINITE)}
+	if(!checkitem(ITEM_TYRANITARITE) && flag(FLAG_BADGE08_GET)) 		{dynmultipush("Tyranitarite",ITEM_TYRANITARITE)}
+	if(!checkitem(ITEM_METAGROSSITE)) 			{dynmultipush("Metagrossite",ITEM_METAGROSSITE)}
+	if(!checkitem(ITEM_SALAMENCITE)) 		{dynmultipush("Salamencite",ITEM_SALAMENCITE)}
+	if(!checkitem(ITEM_GARCHOMPITE)) 			{dynmultipush("Garchompite",ITEM_GARCHOMPITE)}
+	if(!checkitem(ITEM_GARCHOMPITE_Z)) 		{dynmultipush("Garchompite Z",ITEM_GARCHOMPITE_Z)}
+	if(!checkitem(ITEM_LUCARIONITE)) 			{dynmultipush("Lucarionite",ITEM_LUCARIONITE)}
+	if(!checkitem(ITEM_LUCARIONITE_Z)) 		{dynmultipush("Lucarionite Z",ITEM_LUCARIONITE_Z)}
+	if(!checkitem(ITEM_BAXCALIBRITE)) 		{dynmultipush("Baxcalibrite",ITEM_BAXCALIBRITE)}
+
+	dynmultipush("Nevermind",ITEM_NONE)
+
+	msgbox(format("Wallace: We've found some of the most powerful Mega Stones here.\pI'd like to give you one, in recognition of your efforts to restore harmony to the region."),MSGBOX_NPC)
+	closemessage
+	msgbox(format("Which Mega Stone would you like?"),MSGBOX_DEFAULT)
+	dynmultistack(25,2,FALSE,5,0,ITEM_SABLENITE,DYN_MULTICHOICE_CB_NONE)
+	if(var(VAR_RESULT) == ITEM_NONE){
+		msgbox(format("Wallace: Very well.\pCome back when you've decided on a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	elif(var(VAR_RESULT) == 127){
+		msgbox(format("Wallace: Very well.\pCome back when you've decided on a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	else{
+		copyvar(TempVar_MegaStone, VAR_RESULT)
+		checkitemspace(TempVar_MegaStone)
+		if(var(VAR_RESULT) == FALSE){
+			msgbox(format("Wallace: Your bag seems to be full.\pMake some room and come back to me."),MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+		bufferitemname(STR_VAR_1,TempVar_MegaStone)
+		msgbox(format("Wallace: Very well. Use this {STR_VAR_1} wisely."),MSGBOX_NPC)
+		closemessage
+		giveitem(TempVar_MegaStone)
+		setflag(FLAG_RECEIVED_CAVE_OF_ORIGIN_MEGA_STONE)
+		waitfanfare
+		closemessage
+	}
+	closemessage
+	release
+	end
+}
+
+
+script CaveOfOrigin_B1F_EventScript_WallacePostStone {
+	lock
+	msgbox(format("Wallace: The power of these super-ancient Pokémon is almost unbelievable."),MSGBOX_NPC)
+	closemessage
+	release
+	end
+}

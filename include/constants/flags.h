@@ -868,7 +868,7 @@
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL       0x331
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL           0x332
 #define FLAG_HIDE_ROUTE_112_TEAM_MAGMA                              0x333
-#define FLAG_HIDE_CAVE_OF_ORIGIN_B1F_WALLACE                        0x334 // now unused
+#define FLAG_RECEIVED_CAVE_OF_ORIGIN_MEGA_STONE                     0x334 // repurposed
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNTS_BLOCKING_ENTRANCE          0x335 //renamed
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE         0x336 // there were two flags for each grunt - I consolidated. Now unused
 #define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
@@ -1029,7 +1029,7 @@
 #define FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_2                      0x3D2//removed, available for use
 #define FLAG_HIDE_OLDALE_TOWN_RIVAL                                 0x3D3
 #define FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE      0x3D4
-#define FLAG_HIDE_ROUTE_120_KECLEON_BRIDGE_SHADOW                   0x3D5 //removed, available for use
+#define FLAG_RECEIVED_MAGMA_MEGA_STONE                              0x3D5 //repurposed
 #define FLAG_HIDE_ROUTE_120_KECLEON_1                               0x3D6
 #define FLAG_HIDE_RUSTURF_TUNNEL_WANDA                              0x3D7
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA                0x3D8

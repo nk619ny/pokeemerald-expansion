@@ -171,66 +171,395 @@ CaveOfOrigin_B1F_Text_WallaceStory:
 # 86 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 
 # 87 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-CaveOfOrigin_B1F_Text_WhereIsRayquaza:
+CaveOfOrigin_B1F_Text_WallaceStoryShort:
 # 88 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "WALLACE: {PLAYER}{KUN}, do you perhaps\n"
+	.string "Ah, so you are {PLAYER}{KUN}?\n"
 # 89 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "know where RAYQUAZA is now?\p"
+	.string "I've heard tales of your exploits.\p"
 # 90 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "If you do, please tell me.$"
+	.string "My name is WALLACE.\p"
 # 91 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-
+	.string "I was once the GYM LEADER of\n"
 # 92 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin:
+	.string "SOOTOPOLIS, but something came up.\p"
 # 93 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "WALLACE: The CAVE OF ORIGIN?\p"
+	.string "So now, I've entrusted my mentor JUAN\n"
 # 94 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "But that's right here!\n"
+	.string "with the GYM's operation.$"
 # 95 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "I need you to do better than that!\p"
-# 96 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "Please, I need you to think about\n"
-# 97 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "where RAYQUAZA might be right now.$"
-# 98 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 
+# 96 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+CaveOfOrigin_B1F_Text_WhereIsRayquaza:
+# 97 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "WALLACE: {PLAYER}{KUN}, do you perhaps\n"
+# 98 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "know where RAYQUAZA is now?\p"
 # 99 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat:
+	.string "If you do, please tell me.$"
 # 100 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "WALLACE: MT. PYRE?\p"
+
 # 101 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "But when I met the old lady there\n"
+CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin:
 # 102 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "earlier, she made no mention of it.\p"
+	.string "WALLACE: The CAVE OF ORIGIN?\p"
 # 103 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "I very much doubt that the old lady\n"
+	.string "But that's right here!\n"
 # 104 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "would try to hide something from me…\p"
+	.string "I need you to do better than that!\p"
 # 105 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "{PLAYER}{KUN}, could you think about this\n"
+	.string "Please, I need you to think about\n"
 # 106 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "more carefully for me?$"
+	.string "where RAYQUAZA might be right now.$"
 # 107 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 
 # 108 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-CaveOfOrigin_B1F_Text_CantYouRememberSomehow:
+CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat:
 # 109 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "WALLACE: Huh? You don't remember?\n"
+	.string "WALLACE: MT. PYRE?\p"
 # 110 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "Hmm… That's a problem…\p"
+	.string "But when I met the old lady there\n"
 # 111 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "Can't you remember somehow?$"
+	.string "earlier, she made no mention of it.\p"
 # 112 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-
+	.string "I very much doubt that the old lady\n"
 # 113 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
+	.string "would try to hide something from me…\p"
 # 114 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "WALLACE: The SKY PILLAR?\p"
+	.string "{PLAYER}{KUN}, could you think about this\n"
 # 115 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "That's it!\n"
+	.string "more carefully for me?$"
 # 116 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "It must be the SKY PILLAR!\p"
+
 # 117 "data/maps/CaveOfOrigin_B1F/scripts.pory"
-	.string "{PLAYER}{KUN}, there's not a moment to lose!\n"
+CaveOfOrigin_B1F_Text_CantYouRememberSomehow:
 # 118 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "WALLACE: Huh? You don't remember?\n"
+# 119 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Hmm… That's a problem…\p"
+# 120 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Can't you remember somehow?$"
+# 121 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+
+# 122 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
+# 123 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "WALLACE: The SKY PILLAR?\p"
+# 124 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "That's it!\n"
+# 125 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "It must be the SKY PILLAR!\p"
+# 126 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "{PLAYER}{KUN}, there's not a moment to lose!\n"
+# 127 "data/maps/CaveOfOrigin_B1F/scripts.pory"
 	.string "We'll head to the SKY PILLAR right away!$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew::
+# 134 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	lock
+# 135 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	faceplayer
+# 137 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	goto_if_set FLAG_RECEIVED_CAVE_OF_ORIGIN_MEGA_STONE, CaveOfOrigin_B1F_EventScript_WallacePostStone
+# 138 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	goto_if_unset FLAG_TEMP_1, CaveOfOrigin_B1F_EventScript_WallaceNew_2
+CaveOfOrigin_B1F_EventScript_WallaceNew_1:
+	checkitem ITEM_SABLENITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_5
+CaveOfOrigin_B1F_EventScript_WallaceNew_4:
+	checkitem ITEM_MAWILITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_8
+CaveOfOrigin_B1F_EventScript_WallaceNew_7:
+	checkitem ITEM_FLOETTITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_11
+CaveOfOrigin_B1F_EventScript_WallaceNew_10:
+	checkitem ITEM_DRAGONINITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_14
+CaveOfOrigin_B1F_EventScript_WallaceNew_13:
+	checkitem ITEM_TYRANITARITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_18
+CaveOfOrigin_B1F_EventScript_WallaceNew_16:
+	checkitem ITEM_METAGROSSITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_22
+CaveOfOrigin_B1F_EventScript_WallaceNew_21:
+	checkitem ITEM_SALAMENCITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_25
+CaveOfOrigin_B1F_EventScript_WallaceNew_24:
+	checkitem ITEM_GARCHOMPITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_28
+CaveOfOrigin_B1F_EventScript_WallaceNew_27:
+	checkitem ITEM_GARCHOMPITE_Z
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_31
+CaveOfOrigin_B1F_EventScript_WallaceNew_30:
+	checkitem ITEM_LUCARIONITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_34
+CaveOfOrigin_B1F_EventScript_WallaceNew_33:
+	checkitem ITEM_LUCARIONITE_Z
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_37
+CaveOfOrigin_B1F_EventScript_WallaceNew_36:
+	checkitem ITEM_BAXCALIBRITE
+# 0 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_40
+CaveOfOrigin_B1F_EventScript_WallaceNew_39:
+# 156 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_12, ITEM_NONE
+# 158 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	msgbox CaveOfOrigin_B1F_EventScript_WallaceNew_Text_13, MSGBOX_NPC
+# 159 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	closemessage
+# 160 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	msgbox CaveOfOrigin_B1F_EventScript_WallaceNew_Text_14, MSGBOX_DEFAULT
+# 161 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultistack 25, 2, FALSE, 5, 0, ITEM_SABLENITE, DYN_MULTICHOICE_CB_NONE
+# 162 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, ITEM_NONE
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_43
+# 168 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, 127
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_44
+# 175 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	copyvar VAR_TEMP_5, VAR_RESULT
+# 176 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	checkitemspace VAR_TEMP_5
+# 177 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq CaveOfOrigin_B1F_EventScript_WallaceNew_49
+# 183 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	bufferitemname STR_VAR_1, VAR_TEMP_5
+# 184 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	msgbox CaveOfOrigin_B1F_EventScript_WallaceNew_Text_17, MSGBOX_NPC
+# 185 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	closemessage
+# 186 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	giveitem VAR_TEMP_5
+# 187 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	setflag FLAG_RECEIVED_CAVE_OF_ORIGIN_MEGA_STONE
+# 188 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	waitfanfare
+# 189 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	closemessage
+# 191 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	closemessage
+# 192 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	release
+	end
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_2:
+# 139 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	msgbox CaveOfOrigin_B1F_Text_WallaceStoryShort, MSGBOX_DEFAULT
+# 140 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	setflag FLAG_TEMP_1
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_1
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_5:
+# 143 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_0, ITEM_SABLENITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_4
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_8:
+# 144 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_1, ITEM_MAWILITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_7
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_11:
+# 145 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_2, ITEM_FLOETTITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_10
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_14:
+# 146 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_3, ITEM_DRAGONINITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_13
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_17:
+# 147 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_4, ITEM_TYRANITARITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_16
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_18:
+# 147 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	goto_if_set FLAG_BADGE08_GET, CaveOfOrigin_B1F_EventScript_WallaceNew_17
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_16
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_22:
+# 148 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_5, ITEM_METAGROSSITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_21
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_25:
+# 149 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_6, ITEM_SALAMENCITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_24
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_28:
+# 150 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_7, ITEM_GARCHOMPITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_27
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_31:
+# 151 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_8, ITEM_GARCHOMPITE_Z
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_30
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_34:
+# 152 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_9, ITEM_LUCARIONITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_33
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_37:
+# 153 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_10, ITEM_LUCARIONITE_Z
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_36
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_40:
+# 154 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	dynmultipush CaveOfOrigin_B1F_EventScript_WallaceNew_Text_11, ITEM_BAXCALIBRITE
+	goto CaveOfOrigin_B1F_EventScript_WallaceNew_39
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_43:
+# 163 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	msgbox CaveOfOrigin_B1F_EventScript_WallaceNew_Text_15, MSGBOX_NPC
+# 164 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	closemessage
+# 165 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	releaseall
+	end
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_44:
+# 169 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	msgbox CaveOfOrigin_B1F_EventScript_WallaceNew_Text_15, MSGBOX_NPC
+# 170 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	closemessage
+# 171 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	releaseall
+	end
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_49:
+# 178 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	msgbox CaveOfOrigin_B1F_EventScript_WallaceNew_Text_16, MSGBOX_NPC
+# 179 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	closemessage
+# 180 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	releaseall
+	end
+
+
+CaveOfOrigin_B1F_EventScript_WallacePostStone::
+# 198 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	lock
+# 199 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	msgbox CaveOfOrigin_B1F_EventScript_WallacePostStone_Text_0, MSGBOX_NPC
+# 200 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	closemessage
+# 201 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	release
+	end
+
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_0:
+# 143 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Sablenite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_1:
+# 144 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Mawilite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_2:
+# 145 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Floettite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_3:
+# 146 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Dragoninite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_4:
+# 147 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Tyranitarite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_5:
+# 148 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Metagrossite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_6:
+# 149 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Salamencite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_7:
+# 150 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Garchompite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_8:
+# 151 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Garchompite Z$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_9:
+# 152 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Lucarionite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_10:
+# 153 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Lucarionite Z$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_11:
+# 154 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Baxcalibrite$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_12:
+# 156 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Nevermind$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_13:
+# 158 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Wallace: We've found some of the most\n"
+	.string "powerful Mega Stones here.\p"
+	.string "I'd like to give you one, in recognition\n"
+	.string "of your efforts to restore harmony to\l"
+	.string "the region.$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_14:
+# 160 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Which Mega Stone would you like?$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_15:
+# 163 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Wallace: Very well.\p"
+	.string "Come back when you've decided on a Mega\n"
+	.string "Stone.$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_16:
+# 178 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Wallace: Your bag seems to be full.\p"
+	.string "Make some room and come back to me.$"
+
+CaveOfOrigin_B1F_EventScript_WallaceNew_Text_17:
+# 184 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Wallace: Very well. Use this\n"
+	.string "{STR_VAR_1} wisely.$"
+
+CaveOfOrigin_B1F_EventScript_WallacePostStone_Text_0:
+# 199 "data/maps/CaveOfOrigin_B1F/scripts.pory"
+	.string "Wallace: The power of these\n"
+	.string "super-ancient Pokémon is almost\l"
+	.string "unbelievable.$"
