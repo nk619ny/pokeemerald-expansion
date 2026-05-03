@@ -221,7 +221,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
       "x": 18,
       "y": 57,
       "elevation": 3,
@@ -303,7 +303,7 @@
       "flag": "FLAG_TEMP_11"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
       "x": 8,
       "y": 88,
       "elevation": 3,
@@ -381,7 +381,7 @@
       "flag": "FLAG_ITEM_ROUTE_120_NEST_BALL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
       "x": 23,
       "y": 82,
       "elevation": 5,
@@ -579,7 +579,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
       "x": 29,
       "y": 29,
       "elevation": 3,

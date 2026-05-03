@@ -265,7 +265,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
       "x": 32,
       "y": 16,
       "elevation": 3,
@@ -476,7 +476,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
       "x": 3,
       "y": 11,
       "elevation": 3,
