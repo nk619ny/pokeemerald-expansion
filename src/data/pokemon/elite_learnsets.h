@@ -71,6 +71,7 @@ static const u16 sPikachuEliteLearnset[] = {
 };
 
 static const u16 sRaichuEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_WILDBOLT_STORM,
     MOVE_ZIPPY_ZAP,
     MOVE_FLOATY_FALL,
@@ -112,6 +113,7 @@ static const u16 sRaichuEliteLearnset[] = {
 
 #if P_ALOLAN_FORMS
 static const u16 sRaichuAlolaEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_PETAL_DANCE,
     MOVE_SING,
     MOVE_TEETER_DANCE,
@@ -466,6 +468,7 @@ static const u16 sClefairyEliteLearnset[] = {
 };
 
 static const u16 sClefableEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_LUNAR_BLESSING,
     MOVE_LUNAR_DANCE,
     MOVE_MOONGEIST_BEAM,
@@ -650,6 +653,7 @@ static const u16 sJigglypuffEliteLearnset[] = {
 };
 
 static const u16 sWigglytuffEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_TORCH_SONG,
     MOVE_PETAL_DANCE,
     MOVE_TELEPORT,
@@ -902,6 +906,7 @@ static const u16 sPsyduckEliteLearnset[] = {
 };
 
 static const u16 sGolduckEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_PETAL_DANCE,
     MOVE_TRI_ATTACK,
     MOVE_BIDE,
@@ -1180,6 +1185,7 @@ static const u16 sKadabraEliteLearnset[] = {
 };
 
 static const u16 sAlakazamEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_PSYSTRIKE,
     MOVE_SPACIAL_REND,
     MOVE_FORESIGHT,
@@ -1460,6 +1466,7 @@ static const u16 sSlowpokeEliteLearnset[] = {
 };
 
 static const u16 sSlowbroEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_SHED_TAIL,
     MOVE_TELEPORT,
     MOVE_TRI_ATTACK,
@@ -1490,6 +1497,7 @@ static const u16 sSlowbroEliteLearnset[] = {
 
 #if P_GEN_2_CROSS_EVOS
 static const u16 sSlowkingEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_SHED_TAIL,
     MOVE_TELEPORT,
     MOVE_TRI_ATTACK,
@@ -1522,6 +1530,7 @@ static const u16 sSlowpokeGalarEliteLearnset[] = {
 };
 
 static const u16 sSlowbroGalarEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_ARMOR_CANNON,
     MOVE_SHED_TAIL,
     MOVE_PAY_DAY,
@@ -1530,6 +1539,7 @@ static const u16 sSlowbroGalarEliteLearnset[] = {
 };
 
 static const u16 sSlowkingGalarEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_SHED_TAIL,
     MOVE_PAY_DAY,
     MOVE_SCALD,
@@ -1700,6 +1710,7 @@ static const u16 sDewgongEliteLearnset[] = {
 
 #if P_FAMILY_GRIMER
 static const u16 sMukEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BIDE,
     MOVE_BLOCK,
     MOVE_CAPTIVATE,
@@ -1742,6 +1753,7 @@ static const u16 sGrimerAlolaEliteLearnset[] = {
 };
 
 static const u16 sMukAlolaEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BLOCK,
     MOVE_CONFIDE,
     MOVE_FOUL_PLAY,
@@ -1885,6 +1897,7 @@ static const u16 sGastlyEliteLearnset[] = {
 };
 
 static const u16 sHaunterEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BIDE,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
@@ -1904,6 +1917,7 @@ static const u16 sHaunterEliteLearnset[] = {
 };
 
 static const u16 sGengarEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_COUNTER,
     MOVE_METRONOME,
     MOVE_BIDE,
@@ -1948,6 +1962,7 @@ static const u16 sSteelixEliteLearnset[] = {
 
 #if P_FAMILY_DROWZEE
 static const u16 sDrowzeeEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_AMNESIA,
     MOVE_BELLY_DRUM,
     MOVE_TELEPORT,
@@ -1975,6 +1990,7 @@ static const u16 sDrowzeeEliteLearnset[] = {
 };
 
 static const u16 sHypnoEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_DARK_VOID,
     MOVE_NIGHT_DAZE,
     MOVE_AMNESIA,
@@ -2561,7 +2577,24 @@ static const u16 sStarmieEliteLearnset[] = {
 
 #if P_FAMILY_MR_MIME
 static const u16 sMrMimeEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_TIDY_UP,
+    MOVE_MIND_READER,
+    MOVE_FOLLOW_ME,
+    MOVE_TELEPORT,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMrMimeGalarEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
+    MOVE_MIND_READER,
+    MOVE_FOLLOW_ME,
+    MOVE_TELEPORT,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMrRimeEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_MIND_READER,
     MOVE_FOLLOW_ME,
     MOVE_TELEPORT,
@@ -2644,6 +2677,7 @@ static const u16 sSmoochumEliteLearnset[] = {
 };
 
 static const u16 sJynxEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_FREEZING_GLARE,
     //MOVE_ICE_BURN,
     //MOVE_FREEZE_SHOCK,
@@ -2684,6 +2718,7 @@ static const u16 sJynxEliteLearnset[] = {
 #if P_FAMILY_ELECTABUZZ
 #if P_GEN_4_CROSS_EVOS
 static const u16 sElectivireEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_THUNDEROUS_KICK,
     MOVE_PLASMA_FISTS,
     MOVE_ZING_ZAP,
@@ -2710,6 +2745,7 @@ static const u16 sElectivireEliteLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 
 static const u16 sElectabuzzEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_ZING_ZAP,
     MOVE_METRONOME,
     MOVE_TELEPORT,
@@ -2739,6 +2775,7 @@ static const u16 sElectabuzzEliteLearnset[] = {
 };
 
 static const u16 sElekidEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BARRIER,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
@@ -2760,6 +2797,7 @@ static const u16 sElekidEliteLearnset[] = {
 
 #if P_FAMILY_MAGMAR
 static const u16 sMagmarEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_METRONOME,
     MOVE_TELEPORT,
     MOVE_BARRIER,
@@ -2789,6 +2827,7 @@ static const u16 sMagmarEliteLearnset[] = {
 
 #if P_GEN_4_CROSS_EVOS
 static const u16 sMagmortarEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_FIERY_WRATH,
     //MOVE_FUSION_FLARE,
     MOVE_METRONOME,
@@ -4303,6 +4342,7 @@ static const u16 sVileplumeEliteLearnset[] = {
 
 #if P_FAMILY_MARILL
 static const u16 sAzumarillEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_ENDURE,
     //MOVE_BUBBLE, //added back in to normal learnset from USUM
     MOVE_CAMOUFLAGE,
@@ -6602,6 +6642,7 @@ static const u16 sCombeeEliteLearnset[] = {
 
 #if P_FAMILY_BUIZEL
 static const u16 sFloatzelEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
     MOVE_DOUBLE_SLAP,
@@ -6831,6 +6872,7 @@ static const u16 sSkorupiEliteLearnset[] = {
 
 #if P_FAMILY_CROAGUNK
 static const u16 sToxicroakEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_ACUPRESSURE,
     MOVE_ASSURANCE,
     MOVE_CAPTIVATE,
@@ -7372,6 +7414,7 @@ static const u16 sLiepardEliteLearnset[] = {
 
 #if P_FAMILY_PANSAGE
 static const u16 sSimisageEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_JUNGLE_HEALING,
     MOVE_UNAVAILABLE,
 };
@@ -7379,6 +7422,7 @@ static const u16 sSimisageEliteLearnset[] = {
 
 #if P_FAMILY_PANSEAR
 static const u16 sSimisearEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_JUNGLE_HEALING,
     MOVE_UNAVAILABLE,
 };
@@ -7386,6 +7430,7 @@ static const u16 sSimisearEliteLearnset[] = {
 
 #if P_FAMILY_PANPOUR
 static const u16 sSimipourEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_JUNGLE_HEALING,
     MOVE_SCALD,
     MOVE_UNAVAILABLE,
@@ -7748,6 +7793,7 @@ static const u16 sKrokorokEliteLearnset[] = {
 
 #if P_FAMILY_DARUMAKA
 static const u16 sDarmanitanEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_MIND_BLOWN,
     MOVE_CONFIDE,
     MOVE_LASER_FOCUS,
@@ -7758,6 +7804,7 @@ static const u16 sDarmanitanEliteLearnset[] = {
 
 #if P_GALARIAN_FORMS
 static const u16 sDarmanitanGalarEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_ICE_BURN,
     MOVE_UNAVAILABLE,
 };
@@ -7863,6 +7910,7 @@ static const u16 sArchenEliteLearnset[] = {
 
 #if P_FAMILY_ZORUA
 static const u16 sZoroarkEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_ASSURANCE,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
@@ -7894,6 +7942,7 @@ static const u16 sZoruaHisuiEliteLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 static const u16 sZoroarkHisuiEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_OMINOUS_WIND,
     MOVE_SLASH,
     MOVE_UNAVAILABLE,
@@ -7930,6 +7979,7 @@ static const u16 sCinccinoEliteLearnset[] = {
 
 #if P_FAMILY_GOTHITA
 static const u16 sGothitelleEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_PSYSTRIKE,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
@@ -7988,6 +8038,7 @@ static const u16 sGothoritaEliteLearnset[] = {
 
 #if P_FAMILY_SOLOSIS
 static const u16 sReuniclusEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_PSYSTRIKE,
     MOVE_AFTER_YOU,
     MOVE_CONFIDE,
@@ -8204,6 +8255,7 @@ static const u16 sElgyemEliteLearnset[] = {
 
 #if P_FAMILY_GOLETT
 static const u16 sGolurkEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_SHADOW_FORCE,
     MOVE_BLOCK,
     MOVE_CONFIDE,
@@ -8463,6 +8515,7 @@ static const u16 sHeatmorEliteLearnset[] = {
 
 #if P_FAMILY_DEINO
 static const u16 sHydreigonEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_AQUA_TAIL,
     MOVE_BEAT_UP,
     MOVE_CONFIDE,
@@ -8985,6 +9038,7 @@ static const u16 sKlefkiEliteLearnset[] = {
 
 #if P_FAMILY_PHANTUMP
 static const u16 sTrevenantEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BESTOW,
     MOVE_BLOCK,
     MOVE_CONFIDE,
@@ -9010,6 +9064,13 @@ static const u16 sPhantumpEliteLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PHANTUMP
+
+#if P_FAMILY_PUMPKABOO
+static const u16 sGourgeistEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
+    MOVE_UNAVAILABLE,
+};
+#endif //P_FAMILY_PUMPKABOO
 
 #if P_FAMILY_NOIBAT
 static const u16 sNoivernEliteLearnset[] = {
@@ -9481,6 +9542,7 @@ static const u16 sBruxishEliteLearnset[] = {
 
 #if P_FAMILY_DRAMPA
 static const u16 sDrampaEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_DRAGON_ENERGY,
     MOVE_UNAVAILABLE,
 };
@@ -9524,6 +9586,7 @@ static const u16 sJangmoOEliteLearnset[] = {
 };
 
 static const u16 sHakamoOEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_AQUA_TAIL,
     //MOVE_AUTOTOMIZE, //added back in to normal learnset from SwSh
     //MOVE_BIDE, //added back in to normal learnset from USUM
@@ -11981,6 +12044,7 @@ static const u16 sDusclopsEliteLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 static const u16 sDusknoirEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_ABSORB,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
@@ -13065,6 +13129,7 @@ static const u16 sToxapexEliteLearnset[] = {
 
 #if P_FAMILY_ORANGURU
 static const u16 sOranguruEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BLOCK,
     MOVE_CONFIDE,
     MOVE_COVET,
@@ -13682,6 +13747,7 @@ static const u16 sShelmetEliteLearnset[] = {
 };
 
 static const u16 sAccelgorEliteLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BIDE,
     MOVE_CONFIDE,
     MOVE_GASTRO_ACID,

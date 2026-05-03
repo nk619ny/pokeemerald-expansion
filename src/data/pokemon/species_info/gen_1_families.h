@@ -16671,7 +16671,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .isGalarianForm = TRUE,
         .levelUpLearnset = sMrMimeGalarLevelUpLearnset,
         .teachableLearnset = sMrMimeGalarTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sMrMimeGalarEliteLearnset,
         .eggMoveLearnset = sMrMimeGalarEggMoveLearnset,
         .formSpeciesIdTable = sMrMimeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_MR_RIME}),
@@ -16738,7 +16738,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sMrRimeLevelUpLearnset,
         .teachableLearnset = sMrRimeTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sMrRimeEliteLearnset,
     },
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_MR_MIME

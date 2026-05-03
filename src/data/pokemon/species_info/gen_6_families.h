@@ -6072,6 +6072,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sGourgeistLevelUpLearnset,
         .teachableLearnset = sGourgeistTeachableLearnset,
+        .eliteLearnset = sGourgeistEliteLearnset,
         .formSpeciesIdTable = sGourgeistFormSpeciesIdTable,
     },
 
@@ -6136,6 +6137,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sGourgeistLevelUpLearnset,
         .teachableLearnset = sGourgeistTeachableLearnset,
+        .eliteLearnset = sGourgeistEliteLearnset,
         .formSpeciesIdTable = sGourgeistFormSpeciesIdTable,
     },
 
@@ -6200,6 +6202,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sGourgeistLevelUpLearnset,
         .teachableLearnset = sGourgeistTeachableLearnset,
+        .eliteLearnset = sGourgeistEliteLearnset,
         .formSpeciesIdTable = sGourgeistFormSpeciesIdTable,
     },
 
@@ -6266,6 +6269,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sGourgeistLevelUpLearnset,
         .teachableLearnset = sGourgeistTeachableLearnset,
+        .eliteLearnset = sGourgeistEliteLearnset,
         .formSpeciesIdTable = sGourgeistFormSpeciesIdTable,
     },
 #endif //P_FAMILY_PUMPKABOO
