@@ -50,6 +50,7 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	applymovement VAR_0x8008, Common_Movement_FaceLeft
 	waitmovement 0
 	msgbox AquaHideout_B2F_Text_MattRepaidDebt, MSGBOX_DEFAULT
+	addvar VAR_WEATHER_INSTITUTE_STATE, 1
 	setflag FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE
 	setflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS
 	setflag FLAG_ENABLE_STEVEN_CALL_AQUA_HIDEOUT

@@ -864,6 +864,7 @@ script MtPyre_Summit_EventScript_MtPyreVictory {
 	setflag(FLAG_RECEIVED_RED_OR_BLUE_ORB)
 	setflag(FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD)
 	setflag(FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNTS_BLOCKING_ENTRANCE)
+	addvar(VAR_WEATHER_INSTITUTE_STATE, 1)
 	msgbox(format("Steven: We need to hurry. Good luck."))
 	waitmessage
 	releaseall

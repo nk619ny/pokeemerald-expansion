@@ -45,7 +45,7 @@ Route119_OnTransition:
 # 23 "data/maps/Route119/scripts.pory"
 	call Common_EventScript_SetupRivalOnBikeGfxId
 # 24 "data/maps/Route119/scripts.pory"
-	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_EventScript_MoveInstituteWorkersDownstairs
+	//call_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_EventScript_MoveInstituteWorkersDownstairs
 # 25 "data/maps/Route119/scripts.pory"
 	special SetRoute119Weather
 # 26 "data/maps/Route119/scripts.pory"

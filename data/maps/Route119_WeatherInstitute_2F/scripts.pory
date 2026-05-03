@@ -6,6 +6,7 @@ Route119_WeatherInstitute_2F_MapScripts::
 Route119_WeatherInstitute_2F_OnTransition:
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaHere
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaGone
+	call_if_gt VAR_WEATHER_INSTITUTE_STATE, 1, Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaGone
 	call_if_set FLAG_SYS_GAME_CLEAR, Route119_WeatherInstitute_2F_EventScript_SetScientistPosGameClear
 	end
 
@@ -62,7 +63,7 @@ Route119_WeatherInstitute_2F_EventScript_ArchieDefeated::
 	closemessage
 	msgbox Route119_WeatherInstitute_2F_Text_ArchieDepart, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_WEATHER_INSTITUTE_STATE, 1
+	setvar VAR_WEATHER_INSTITUTE_STATE, 2
 	clearflag FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS
 	fadedefaultbgm
 	fadescreenswapbuffers FADE_TO_BLACK
@@ -74,6 +75,8 @@ Route119_WeatherInstitute_2F_EventScript_ArchieDefeated::
 	removeobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_4
 	removeobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_3
 	removeobject LOCALID_WEATHER_INSTITUTE_2F_ARCHIE
+	setflag FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS
+	clearflag FLAG_HIDE_WEATHER_INSTITUTE_1F_WORKERS
 	applymovement OBJ_EVENT_ID_PLAYER, Route119_WeatherInstitute_2F_Movement_PlayerReturnToPosition
 	waitmovement 0
 	fadescreenswapbuffers FADE_FROM_BLACK
@@ -83,12 +86,13 @@ Route119_WeatherInstitute_2F_EventScript_ArchieDefeated::
 	applymovement LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, Route119_WeatherInstitute_2F_Movement_ScientistApproachPlayer
 	waitmovement 0
 	copyobjectxytoperm LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST
-	goto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform
+	//goto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform
+	goto Route119_WeatherInstitute_2F_EventScript_ScientistThanksPlayer
 	end
 
 Route119_WeatherInstitute_2F_EventScript_ReceiveCastform::
-	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon, MSGBOX_DEFAULT
-	giveitem ITEM_TM_WEATHER_BALL
+	//msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon, MSGBOX_DEFAULT
+	//giveitem ITEM_TM_WEATHER_BALL
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CASTFORM_NORMAL
 	givemon SPECIES_CASTFORM_NORMAL, 25
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformParty
@@ -207,8 +211,10 @@ Route119_WeatherInstitute_2F_Movement_ScientistApproachPlayer:
 Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_CASTFORM, Route119_WeatherInstitute_2F_EventScript_ScientistMentionWeather
-	goto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform
+	goto_if_gt VAR_WEATHER_INSTITUTE_STATE, 1, Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward
+	//goto_if_set FLAG_RECEIVED_CASTFORM, Route119_WeatherInstitute_2F_EventScript_ScientistMentionWeather
+	//goto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform
+	goto Route119_WeatherInstitute_2F_EventScript_ScientistMentionWeather
 	end
 
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
@@ -271,7 +277,7 @@ Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:
 	.string "really.$"
 
 `
-
+const TempVar_TM = VAR_TEMP_4
 
 text Route119_WeatherInstitute_2F_Text_Grunt2Intro {
 	format("The Institute has lots of research on Pokémon who interact with the weather.\pWe need to figure out what Maxie is planning, and how to stop it!")
@@ -347,4 +353,72 @@ text Route119_WeatherInstitute_2F_Text_ArchieDepart{
 
 text Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous{
 	format("I've been researching weather for many years.\pHuman activity is certainly impacting the climate, but the idea that we can predict or control how the environment will respond is laughable.")
+}
+
+script Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward{
+	lock
+	if(!flag(FLAG_RECEIVED_CASTFORM)) 		{dynmultipush("Castform",SPECIES_CASTFORM_NORMAL)}
+	if(!checkitem(ITEM_TM_WEATHER_BALL)) 	{dynmultipush("Weather Ball",ITEM_TM_WEATHER_BALL)}
+	if(!checkitem(ITEM_TM_SOLAR_BEAM)) 		{dynmultipush("Solar Beam",ITEM_TM_SOLAR_BEAM)}
+	if(!checkitem(ITEM_TM_SOLAR_BLADE)) 	{dynmultipush("Solar Blade",ITEM_TM_SOLAR_BLADE)}
+	if(!checkitem(ITEM_TM_THUNDER)) 		{dynmultipush("Thunder",ITEM_TM_THUNDER)}	
+	if(!checkitem(ITEM_TM_HURRICANE)) 		{dynmultipush("Hurricane",ITEM_TM_HURRICANE)}
+	if(!checkitem(ITEM_TM_BLIZZARD)) 		{dynmultipush("Blizzard",ITEM_TM_BLIZZARD)}
+	dynmultipush("Nevermind",ITEM_NONE)
+
+	msgbox(format("What would you like to see our research on?"),MSGBOX_DEFAULT)
+	dynmultistack(25,2,FALSE,5,0,SPECIES_CASTFORM_NORMAL,DYN_MULTICHOICE_CB_NONE)
+	if(var(VAR_RESULT) == ITEM_NONE){
+		msgbox(Route119_WeatherInstitute_2F_Text_DeclinedResearchReward,MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	elif(var(VAR_RESULT) == 127){
+		msgbox(Route119_WeatherInstitute_2F_Text_DeclinedResearchReward,MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	elif(var(VAR_RESULT) == SPECIES_CASTFORM_NORMAL){
+		goto(Route119_WeatherInstitute_2F_EventScript_ReceiveCastform)
+	}
+	else{
+		copyvar(TempVar_TM, VAR_RESULT)
+		bufferitemname(STR_VAR_1,VAR_RESULT)
+		msgbox(format("We've done a lot of research into that move, and how it interacts with the weather.\pHopefully you and your Pokémon can make good use of this TM!"),MSGBOX_NPC)
+		closemessage
+		giveitem(TempVar_TM)
+		addvar(VAR_WEATHER_INSTITUTE_STATE, -1)
+		waitfanfare
+
+		if(var(VAR_WEATHER_INSTITUTE_STATE) == 1){
+			msgbox(format("We're still researching more Pokémon moves and how they interact with the weather.\pCome back a little later and we'll have more for you."),MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+		else{
+			msgbox(format("We actually have even more TMs available, if you're interested."),MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+
+	}
+}
+
+text Route119_WeatherInstitute_2F_Text_DeclinedResearchReward{
+	format("We're truly grateful for your help.\pCome back later if you'd like a Pokémon or TM as a reward.")
+}
+
+text Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemonOrTM{
+	format("Thanks!\nThanks to you, we're safe!\pIt might be an odd way of thanking you,\nbut take this Pokémon or a TM.")
+}
+
+script Route119_WeatherInstitute_2F_EventScript_ScientistThanksPlayer{
+	lock
+	msgbox(Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemonOrTM, MSGBOX_DEFAULT)
+	goto(Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward)
+	end
 }

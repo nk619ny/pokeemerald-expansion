@@ -207,7 +207,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 # 104 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_EventScript_GiveCalmMind2::
 # 105 "data/maps/MossdeepCity_Gym/scripts.pory"
-	giveitem ITEM_TM_CALM_MIND
+	giveitem ITEM_TM_EXPANDING_FORCE
 # 106 "data/maps/MossdeepCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 107 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -223,7 +223,7 @@ MossdeepCity_Gym_EventScript_GiveCalmMind2::
 # 112 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_EventScript_GiveCalmMind::
 # 113 "data/maps/MossdeepCity_Gym/scripts.pory"
-	giveitem ITEM_TM_CALM_MIND
+	giveitem ITEM_TM_EXPANDING_FORCE
 # 114 "data/maps/MossdeepCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 # 115 "data/maps/MossdeepCity_Gym/scripts.pory"
@@ -1195,13 +1195,13 @@ MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 # 598 "data/maps/MossdeepCity_Gym/scripts.pory"
 MossdeepCity_Gym_Text_ExplainCalmMind:
 # 599 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: That TM04 contains…\n"
+	.string "TATE: That TM contains…\n"
 # 600 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: CALM MIND!\p"
+	.string "LIZA: EXPANDING FORCE!\p"
 # 601 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "TATE: It raises SP. ATK and…\n"
+	.string "TATE: In Psychic Terrain…\n"
 # 602 "data/maps/MossdeepCity_Gym/scripts.pory"
-	.string "LIZA: It raises SP. DEF!\p"
+	.string "LIZA: It hits all enemies!\p"
 # 603 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "TATE: It's a move that's perfect…\n"
 # 604 "data/maps/MossdeepCity_Gym/scripts.pory"
