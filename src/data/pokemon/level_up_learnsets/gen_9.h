@@ -4764,6 +4764,7 @@ static const struct LevelUpMove sArticunoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_HAZE),
     LEVEL_UP_MOVE(65, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(70, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
     //LEVEL_UP_MOVE(60, MOVE_MIND_READER), //added from SwSh
     LEVEL_UP_END
 };
@@ -4787,6 +4788,8 @@ static const struct LevelUpMove sArticunoGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(70, MOVE_TRICK_ROOM),
     LEVEL_UP_MOVE( 1, MOVE_PSYCHO_SHIFT), //added from SwSh
     LEVEL_UP_MOVE(60, MOVE_MIND_READER), //added from SwSh
+    LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
+
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -4810,6 +4813,7 @@ static const struct LevelUpMove sZapdosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_DETECT),
     LEVEL_UP_MOVE(65, MOVE_MAGNETIC_FLUX),
     LEVEL_UP_MOVE(70, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
     LEVEL_UP_END
 };
 
@@ -4831,6 +4835,7 @@ static const struct LevelUpMove sZapdosGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_DETECT),
     LEVEL_UP_MOVE(65, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE(70, MOVE_REVERSAL),
+    LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -4855,6 +4860,7 @@ static const struct LevelUpMove sMoltresLevelUpLearnset[] = {
     LEVEL_UP_MOVE(65, MOVE_OVERHEAT),
     LEVEL_UP_MOVE(70, MOVE_SKY_ATTACK),
     LEVEL_UP_MOVE(65, MOVE_BURN_UP), //added from SwSh
+    LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
     LEVEL_UP_END
 };
 
@@ -4876,6 +4882,7 @@ static const struct LevelUpMove sMoltresGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_ENDURE),
     LEVEL_UP_MOVE(65, MOVE_MEMENTO),
     LEVEL_UP_MOVE(70, MOVE_SKY_ATTACK),
+    //LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -7111,6 +7118,7 @@ static const struct LevelUpMove sRaikouLevelUpLearnset[] = {
     LEVEL_UP_MOVE(80, MOVE_RAIN_DANCE), // Changed from 66
     LEVEL_UP_MOVE(72, MOVE_THUNDER),
     LEVEL_UP_MOVE(78, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(70, MOVE_ROAR), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RAIKOU
@@ -7136,6 +7144,7 @@ static const struct LevelUpMove sEnteiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(80, MOVE_SUNNY_DAY), // Changed from 66
     LEVEL_UP_MOVE(72, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(78, MOVE_ERUPTION),
+    LEVEL_UP_MOVE(70, MOVE_ROAR), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ENTEI
@@ -7161,6 +7170,7 @@ static const struct LevelUpMove sSuicuneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(80, MOVE_RAIN_DANCE), // Changed from 66
     LEVEL_UP_MOVE(72, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(78, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(70, MOVE_ROAR), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SUICUNE
@@ -10344,6 +10354,7 @@ static const struct LevelUpMove sLatiasLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PSYWAVE), //added from USUM
     LEVEL_UP_MOVE( 4, MOVE_WATER_SPORT), //added from USUM
     LEVEL_UP_MOVE(13, MOVE_REFRESH), //added from USUM
+    LEVEL_UP_MOVE(70, MOVE_TELEPORT), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LATIAS
@@ -11965,6 +11976,7 @@ static const struct LevelUpMove sMespritLevelUpLearnset[] = {
     LEVEL_UP_MOVE(84, MOVE_MYSTICAL_POWER),
     LEVEL_UP_MOVE( 1, MOVE_NATURAL_GIFT), //added from USUM
     LEVEL_UP_MOVE(31, MOVE_LUCKY_CHANT), //added from USUM
+    LEVEL_UP_MOVE(70, MOVE_TELEPORT), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MESPRIT
@@ -12122,6 +12134,7 @@ static const struct LevelUpMove sCresseliaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(72, MOVE_LUNAR_DANCE),
     LEVEL_UP_MOVE(72, MOVE_LUNAR_BLESSING),
     LEVEL_UP_MOVE(24, MOVE_PSYCHO_SHIFT), //added from SwSh
+    LEVEL_UP_MOVE(70, MOVE_TELEPORT), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CRESSELIA
@@ -15621,6 +15634,7 @@ static const struct LevelUpMove sCobalionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(63, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(70, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(70, MOVE_ROAR), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_COBALION
@@ -15641,6 +15655,7 @@ static const struct LevelUpMove sTerrakionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(63, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(70, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(70, MOVE_ROAR), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TERRAKION
@@ -15662,6 +15677,7 @@ static const struct LevelUpMove sVirizionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(63, MOVE_LEAF_BLADE),
     LEVEL_UP_MOVE(70, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(70, MOVE_ROAR), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VIRIZION
@@ -15686,6 +15702,7 @@ static const struct LevelUpMove sTornadusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(70, MOVE_THRASH),
     LEVEL_UP_MOVE(77, MOVE_BLEAKWIND_STORM),
     LEVEL_UP_MOVE(13, MOVE_REVENGE), //added from USUM
+    LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TORNADUS
@@ -15711,6 +15728,7 @@ static const struct LevelUpMove sThundurusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(75, MOVE_WILDBOLT_STORM),
     LEVEL_UP_MOVE(13, MOVE_REVENGE), //added from USUM
     LEVEL_UP_MOVE(25, MOVE_HEAL_BLOCK), //added from USUM
+    LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_THUNDURUS
@@ -15777,6 +15795,8 @@ static const struct LevelUpMove sLandorusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(75, MOVE_FISSURE),
     LEVEL_UP_MOVE(80, MOVE_SANDSEAR_STORM),
     LEVEL_UP_MOVE( 7, MOVE_PUNISHMENT), //added from USUM
+    LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
+    LEVEL_UP_MOVE(80, MOVE_WHIRLWIND), //Roamer tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LANDORUS
@@ -21099,6 +21119,7 @@ static const struct LevelUpMove sGlastrierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_TAUNT),
     LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(72, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(70, MOVE_ROAR), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GLASTRIER
@@ -21119,6 +21140,7 @@ static const struct LevelUpMove sSpectrierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_DISABLE),
     LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(72, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(70, MOVE_ROAR), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPECTRIER
@@ -21241,6 +21263,7 @@ static const struct LevelUpMove sEnamorusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(65, MOVE_MOONBLAST),
     LEVEL_UP_MOVE(70, MOVE_OUTRAGE),
     LEVEL_UP_MOVE(75, MOVE_SPRINGTIDE_STORM),
+    LEVEL_UP_MOVE(70, MOVE_WHIRLWIND), //Roamer Tech
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ENAMORUS
