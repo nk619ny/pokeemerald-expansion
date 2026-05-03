@@ -53,7 +53,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	playse SE_DOOR
 	setmetatile 6, 1, METATILE_EliteFour_OpenDoorChampion_Frame, FALSE
 	setmetatile 6, 2, METATILE_EliteFour_OpenDoorChampion_Opening, FALSE
-	addvar VAR_WEATHER_INSTITUTE_STATE, 1
+	addvar VAR_WEATHER_INSTITUTE_STATE, 2
 	special DrawWholeMapView
 	msgbox EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
 	closemessage

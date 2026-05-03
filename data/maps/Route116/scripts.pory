@@ -487,3 +487,18 @@ script Route116_EventScript_DrillRunMan{
 	releaseall
 	end
 }
+
+
+script Route116_EventScript_SkitterSmackMan{
+	lock
+	faceplayer
+	msgbox(format("He he he... I love following bugs around!"), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_SKITTER_SMACK)
+	if(var(VAR_RESULT) == FALSE) {
+		closemessage
+		giveitem(ITEM_TM_SKITTER_SMACK)
+		waitfanfare
+	}
+	releaseall
+	end
+}

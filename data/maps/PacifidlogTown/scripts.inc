@@ -106,3 +106,39 @@ PacifidlogTown_Text_TownSign:
 	.string "“Where the morning sun smiles upon\n"
 # 54 "data/maps/PacifidlogTown/scripts.pory"
 	.string "the waters.”$"
+
+PacifidlogTown_EventScript_HydroPumpGirl::
+# 60 "data/maps/PacifidlogTown/scripts.pory"
+	lock
+# 61 "data/maps/PacifidlogTown/scripts.pory"
+	faceplayer
+# 62 "data/maps/PacifidlogTown/scripts.pory"
+	checkitem ITEM_TM_HYDRO_PUMP
+# 63 "data/maps/PacifidlogTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq PacifidlogTown_EventScript_HydroPumpGirl_2
+# 70 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_Text_FastRunningCurrent, MSGBOX_NPC
+PacifidlogTown_EventScript_HydroPumpGirl_1:
+# 72 "data/maps/PacifidlogTown/scripts.pory"
+	releaseall
+	end
+
+PacifidlogTown_EventScript_HydroPumpGirl_2:
+# 64 "data/maps/PacifidlogTown/scripts.pory"
+	msgbox PacifidlogTown_EventScript_HydroPumpGirl_Text_0, MSGBOX_DEFAULT
+# 65 "data/maps/PacifidlogTown/scripts.pory"
+	closemessage
+# 66 "data/maps/PacifidlogTown/scripts.pory"
+	giveitem ITEM_TM_HYDRO_PUMP
+# 67 "data/maps/PacifidlogTown/scripts.pory"
+	waitfanfare
+	goto PacifidlogTown_EventScript_HydroPumpGirl_1
+
+
+PacifidlogTown_EventScript_HydroPumpGirl_Text_0:
+# 64 "data/maps/PacifidlogTown/scripts.pory"
+	.string "We use the power of water currents to\n"
+	.string "generate power.\p"
+	.string "People shouldn't underestimate a\n"
+	.string "strong pump of water!$"

@@ -152,3 +152,44 @@ AbandonedShip_Rooms_1F_Text_DemetriusPostBattle:
 	.string "I'm in trouble with my mom, so I ran.\n"
 # 77 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	.string "Keep it a secret where I am!$"
+
+AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor::
+# 83 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	lock
+# 84 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	faceplayer
+# 85 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	checkitem ITEM_TM_FLASH_CANNON
+# 86 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor_2
+# 93 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	msgbox AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor_Text_1, MSGBOX_DEFAULT
+AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor_1:
+# 95 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	releaseall
+	end
+
+AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor_2:
+# 87 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	msgbox AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor_Text_0, MSGBOX_DEFAULT
+# 88 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	closemessage
+# 89 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	giveitem ITEM_TM_FLASH_CANNON
+# 90 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	waitfanfare
+	goto AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor_1
+
+
+AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor_Text_0:
+# 87 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	.string "Old ships used to fire cannons to\n"
+	.string "protect themselves.\p"
+	.string "This ship never had that capability...\n"
+	.string "but it's fun to imagine.$"
+
+AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor_Text_1:
+# 93 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
+	.string "I wish I'd had the chance to sail on Sea\n"
+	.string "Muville before it was abandoned.$"

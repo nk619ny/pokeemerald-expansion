@@ -630,3 +630,21 @@ script Route119_EventScript_DualWingbeatKeeper {
 	releaseall
 	end
 }
+
+
+script Route119_EventScript_XScizzorManiac {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_X_SCISSOR)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("We had to kick someone out of the Bug Enthusiast Club, because he kept cutting down grass to find the rare bugs.\pBut they need the grass to make their home!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_X_SCISSOR)
+		waitfanfare
+	}
+	msgbox(format("I'm glad to be rid of that TM."), MSGBOX_DEFAULT)
+	closemessage
+	releaseall
+	end
+}
+

@@ -224,6 +224,35 @@ Route105_EventScript_ScaleShotFisherman_2:
 	goto Route105_EventScript_ScaleShotFisherman_1
 
 
+Route105_EventScript_IceSpinnerBeauty::
+# 119 "data/maps/Route105/scripts.pory"
+	lock
+# 120 "data/maps/Route105/scripts.pory"
+	faceplayer
+# 121 "data/maps/Route105/scripts.pory"
+	msgbox Route105_EventScript_IceSpinnerBeauty_Text_0, MSGBOX_DEFAULT
+# 122 "data/maps/Route105/scripts.pory"
+	checkitem ITEM_TM_ICE_SPINNER
+# 123 "data/maps/Route105/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route105_EventScript_IceSpinnerBeauty_2
+Route105_EventScript_IceSpinnerBeauty_1:
+# 129 "data/maps/Route105/scripts.pory"
+	releaseall
+	end
+
+Route105_EventScript_IceSpinnerBeauty_2:
+# 124 "data/maps/Route105/scripts.pory"
+	msgbox Route105_EventScript_IceSpinnerBeauty_Text_1, MSGBOX_DEFAULT
+# 125 "data/maps/Route105/scripts.pory"
+	closemessage
+# 126 "data/maps/Route105/scripts.pory"
+	giveitem ITEM_TM_ICE_SPINNER
+# 127 "data/maps/Route105/scripts.pory"
+	waitfanfare
+	goto Route105_EventScript_IceSpinnerBeauty_1
+
+
 Route105_EventScript_ScaleShotFisherman_Text_0:
 # 105 "data/maps/Route105/scripts.pory"
 	.string "There are so many dazzling fish in the\n"
@@ -234,3 +263,14 @@ Route105_EventScript_ScaleShotFisherman_Text_1:
 	.string "Some fish Pokémon can launch their\n"
 	.string "scales as an attack.\p"
 	.string "It's beautiful, and scary!$"
+
+Route105_EventScript_IceSpinnerBeauty_Text_0:
+# 121 "data/maps/Route105/scripts.pory"
+	.string "I've been trying to practice ice\n"
+	.string "skating lately. The Pokémon in this\l"
+	.string "cave move so gracefully!$"
+
+Route105_EventScript_IceSpinnerBeauty_Text_1:
+# 124 "data/maps/Route105/scripts.pory"
+	.string "You should teach your Pokémon to spin\n"
+	.string "gracefully on the ice, too.$"

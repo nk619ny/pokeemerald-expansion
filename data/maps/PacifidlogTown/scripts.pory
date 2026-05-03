@@ -54,3 +54,21 @@ PacifidlogTown_Text_TownSign:
 	.string "the waters.”$"
 
 `
+
+
+script PacifidlogTown_EventScript_HydroPumpGirl{
+	lock
+	faceplayer
+	checkitem(ITEM_TM_HYDRO_PUMP)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("We use the power of water currents to generate power.\pPeople shouldn't underestimate a strong pump of water!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_HYDRO_PUMP)
+		waitfanfare
+	}
+	else {
+		msgbox(PacifidlogTown_Text_FastRunningCurrent, MSGBOX_NPC)
+	}
+	releaseall
+	end
+}

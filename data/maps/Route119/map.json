@@ -341,8 +341,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER_ORAS",
-      "x": 30,
-      "y": 110,
+      "x": 4,
+      "y": 84,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -573,6 +573,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_ROUTE_119_SCOTT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BUG_MANIAC_ORAS",
+      "x": 29,
+      "y": 119,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_COPY_PLAYER_IN_GRASS",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Route119_EventScript_XScizzorManiac",
+      "flag": "0"
     }
   ],
   "warp_events": [

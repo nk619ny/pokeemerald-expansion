@@ -968,6 +968,33 @@ Route116_EventScript_DrillRunMan_2:
 	goto Route116_EventScript_DrillRunMan_1
 
 
+Route116_EventScript_SkitterSmackMan::
+# 493 "data/maps/Route116/scripts.pory"
+	lock
+# 494 "data/maps/Route116/scripts.pory"
+	faceplayer
+# 495 "data/maps/Route116/scripts.pory"
+	msgbox Route116_EventScript_SkitterSmackMan_Text_0, MSGBOX_DEFAULT
+# 496 "data/maps/Route116/scripts.pory"
+	checkitem ITEM_TM_SKITTER_SMACK
+# 497 "data/maps/Route116/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route116_EventScript_SkitterSmackMan_2
+Route116_EventScript_SkitterSmackMan_1:
+# 502 "data/maps/Route116/scripts.pory"
+	releaseall
+	end
+
+Route116_EventScript_SkitterSmackMan_2:
+# 498 "data/maps/Route116/scripts.pory"
+	closemessage
+# 499 "data/maps/Route116/scripts.pory"
+	giveitem ITEM_TM_SKITTER_SMACK
+# 500 "data/maps/Route116/scripts.pory"
+	waitfanfare
+	goto Route116_EventScript_SkitterSmackMan_1
+
+
 Route116_EventScript_DrillRunMan_Text_0:
 # 479 "data/maps/Route116/scripts.pory"
 	.string "We used Pokémon to expand Rusturf\n"
@@ -980,3 +1007,7 @@ Route116_EventScript_DrillRunMan_Text_1:
 	.string "We should respect nature, but we still\n"
 	.string "need shape our environment sometimes\l"
 	.string "to make people's lives better.$"
+
+Route116_EventScript_SkitterSmackMan_Text_0:
+# 495 "data/maps/Route116/scripts.pory"
+	.string "He he he... I love following bugs around!$"

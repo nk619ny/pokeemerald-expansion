@@ -361,6 +361,7 @@ script Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward{
 	if(!checkitem(ITEM_TM_WEATHER_BALL)) 	{dynmultipush("Weather Ball",ITEM_TM_WEATHER_BALL)}
 	if(!checkitem(ITEM_TM_SOLAR_BEAM)) 		{dynmultipush("Solar Beam",ITEM_TM_SOLAR_BEAM)}
 	if(!checkitem(ITEM_TM_SOLAR_BLADE)) 	{dynmultipush("Solar Blade",ITEM_TM_SOLAR_BLADE)}
+	if(!checkitem(ITEM_TM_HEAT_WAVE)) 		{dynmultipush("Heat Wave",ITEM_TM_HEAT_WAVE)}
 	if(!checkitem(ITEM_TM_THUNDER)) 		{dynmultipush("Thunder",ITEM_TM_THUNDER)}	
 	if(!checkitem(ITEM_TM_HURRICANE)) 		{dynmultipush("Hurricane",ITEM_TM_HURRICANE)}
 	if(!checkitem(ITEM_TM_BLIZZARD)) 		{dynmultipush("Blizzard",ITEM_TM_BLIZZARD)}

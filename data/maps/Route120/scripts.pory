@@ -474,3 +474,22 @@ script Route120_EventScript_ResetKecleonVar{
 text Route120_Text_StevenGoodbye{
 	format("STEVEN: I think you're doing great, {PLAYER}{KUN}.\p In fact, I could use your help.\pI just got word that Team Magma and Team Aqua may be planning something nefarious at Mt. Pyre.\pI'm headed there now to investigate, but I could always use a talented, trustworthy Trainer's help.\pHopefully I'll see you there.")
 }
+
+
+
+script Route120_EventScript_MuddyWaterKid{
+	lock
+	faceplayer
+	checkitem(ITEM_TM_MUDDY_WATER)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("My parents get upside when I come back home covered in this muddy water.\pI used to blame it on wild Pokémon, but they don't believe me anymore."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_MUDDY_WATER)
+		waitfanfare
+	}
+	else {
+		msgbox(format("It's fun to play around in the mud."), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}

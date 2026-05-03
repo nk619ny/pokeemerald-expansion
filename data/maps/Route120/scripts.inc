@@ -915,6 +915,46 @@ Route120_EventScript_ResetKecleonVar::
 	end
 
 
+Route120_EventScript_MuddyWaterKid::
+# 481 "data/maps/Route120/scripts.pory"
+	lock
+# 482 "data/maps/Route120/scripts.pory"
+	faceplayer
+# 483 "data/maps/Route120/scripts.pory"
+	checkitem ITEM_TM_MUDDY_WATER
+# 484 "data/maps/Route120/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route120_EventScript_MuddyWaterKid_2
+# 491 "data/maps/Route120/scripts.pory"
+	msgbox Route120_EventScript_MuddyWaterKid_Text_1, MSGBOX_NPC
+Route120_EventScript_MuddyWaterKid_1:
+# 493 "data/maps/Route120/scripts.pory"
+	releaseall
+	end
+
+Route120_EventScript_MuddyWaterKid_2:
+# 485 "data/maps/Route120/scripts.pory"
+	msgbox Route120_EventScript_MuddyWaterKid_Text_0, MSGBOX_DEFAULT
+# 486 "data/maps/Route120/scripts.pory"
+	closemessage
+# 487 "data/maps/Route120/scripts.pory"
+	giveitem ITEM_TM_MUDDY_WATER
+# 488 "data/maps/Route120/scripts.pory"
+	waitfanfare
+	goto Route120_EventScript_MuddyWaterKid_1
+
+
+Route120_EventScript_MuddyWaterKid_Text_0:
+# 485 "data/maps/Route120/scripts.pory"
+	.string "My parents get upside when I come back\n"
+	.string "home covered in this muddy water.\p"
+	.string "I used to blame it on wild Pokémon, but\n"
+	.string "they don't believe me anymore.$"
+
+Route120_EventScript_MuddyWaterKid_Text_1:
+# 491 "data/maps/Route120/scripts.pory"
+	.string "It's fun to play around in the mud.$"
+
 Route120_Text_StevenGoodbye::
 # 474 "data/maps/Route120/scripts.pory"
 	.string "STEVEN: I think you're doing great,\n"

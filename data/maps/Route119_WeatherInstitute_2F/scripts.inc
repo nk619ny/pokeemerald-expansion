@@ -598,58 +598,63 @@ Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_7:
 	compare VAR_RESULT, 0
 	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_11
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_10:
-	checkitem ITEM_TM_THUNDER
+	checkitem ITEM_TM_HEAT_WAVE
 # 0 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_14
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_13:
-	checkitem ITEM_TM_HURRICANE
+	checkitem ITEM_TM_THUNDER
 # 0 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_17
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_16:
-	checkitem ITEM_TM_BLIZZARD
+	checkitem ITEM_TM_HURRICANE
 # 0 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_20
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_19:
-# 367 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	dynmultipush Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_7, ITEM_NONE
-# 369 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_8, MSGBOX_DEFAULT
-# 370 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	dynmultistack 25, 2, FALSE, 5, 0, SPECIES_CASTFORM_NORMAL, DYN_MULTICHOICE_CB_NONE
-# 371 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	compare VAR_RESULT, ITEM_NONE
-	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_22
-# 377 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	compare VAR_RESULT, 127
+	checkitem ITEM_TM_BLIZZARD
+# 0 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_23
-# 383 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_22:
+# 368 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	dynmultipush Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_8, ITEM_NONE
+# 370 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	msgbox Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_9, MSGBOX_DEFAULT
+# 371 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	dynmultistack 25, 2, FALSE, 5, 0, SPECIES_CASTFORM_NORMAL, DYN_MULTICHOICE_CB_NONE
+# 372 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	compare VAR_RESULT, ITEM_NONE
+	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_25
+# 378 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	compare VAR_RESULT, 127
+	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_26
+# 384 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	compare VAR_RESULT, SPECIES_CASTFORM_NORMAL
-	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_24
-# 387 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	copyvar VAR_TEMP_4, VAR_RESULT
+	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_27
 # 388 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	bufferitemname STR_VAR_1, VAR_RESULT
+	copyvar VAR_TEMP_4, VAR_RESULT
 # 389 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_9, MSGBOX_NPC
+	bufferitemname STR_VAR_1, VAR_RESULT
 # 390 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	closemessage
+	msgbox Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_10, MSGBOX_NPC
 # 391 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	giveitem VAR_TEMP_4
-# 392 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	addvar VAR_WEATHER_INSTITUTE_STATE, -1
-# 393 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	waitfanfare
-# 395 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	compare VAR_WEATHER_INSTITUTE_STATE, 1
-	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_29
-# 402 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_11, MSGBOX_NPC
-# 403 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	closemessage
+# 392 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	giveitem VAR_TEMP_4
+# 393 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	addvar VAR_WEATHER_INSTITUTE_STATE, -1
+# 394 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	waitfanfare
+# 396 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	compare VAR_WEATHER_INSTITUTE_STATE, 1
+	goto_if_eq Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_32
+# 403 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	msgbox Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_12, MSGBOX_NPC
 # 404 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	closemessage
+# 405 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	releaseall
 	end
 
@@ -675,58 +680,63 @@ Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_11:
 
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_14:
 # 364 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	dynmultipush Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_4, ITEM_TM_THUNDER
+	dynmultipush Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_4, ITEM_TM_HEAT_WAVE
 	goto Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_13
 
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_17:
 # 365 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	dynmultipush Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_5, ITEM_TM_HURRICANE
+	dynmultipush Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_5, ITEM_TM_THUNDER
 	goto Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_16
 
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_20:
 # 366 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	dynmultipush Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_6, ITEM_TM_BLIZZARD
+	dynmultipush Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_6, ITEM_TM_HURRICANE
 	goto Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_19
 
-Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_22:
-# 372 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_Text_DeclinedResearchReward, MSGBOX_NPC
-# 373 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	closemessage
-# 374 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	releaseall
-	end
-
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_23:
-# 378 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+# 367 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	dynmultipush Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_7, ITEM_TM_BLIZZARD
+	goto Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_22
+
+Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_25:
+# 373 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	msgbox Route119_WeatherInstitute_2F_Text_DeclinedResearchReward, MSGBOX_NPC
-# 379 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+# 374 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	closemessage
-# 380 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+# 375 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	releaseall
 	end
 
-Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_24:
-# 384 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_26:
+# 379 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	msgbox Route119_WeatherInstitute_2F_Text_DeclinedResearchReward, MSGBOX_NPC
+# 380 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	closemessage
+# 381 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	releaseall
+	end
+
+Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_27:
+# 385 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	goto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform
 	return
 
-Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_29:
-# 396 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_10, MSGBOX_NPC
+Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_32:
 # 397 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	closemessage
+	msgbox Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_11, MSGBOX_NPC
 # 398 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	closemessage
+# 399 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	releaseall
 	end
 
 
 Route119_WeatherInstitute_2F_EventScript_ScientistThanksPlayer::
-# 420 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	lock
 # 421 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemonOrTM, MSGBOX_DEFAULT
+	lock
 # 422 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemonOrTM, MSGBOX_DEFAULT
+# 423 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	goto Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward
 	end
 
@@ -756,43 +766,47 @@ Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_3:
 
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_4:
 # 364 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	.string "Thunder$"
+	.string "Heat Wave$"
 
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_5:
 # 365 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	.string "Hurricane$"
+	.string "Thunder$"
 
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_6:
 # 366 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	.string "Blizzard$"
+	.string "Hurricane$"
 
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_7:
 # 367 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	.string "Nevermind$"
+	.string "Blizzard$"
 
 Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_8:
-# 369 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+# 368 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+	.string "Nevermind$"
+
+Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_9:
+# 370 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "What would you like to see our research\n"
 	.string "on?$"
 
-Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_9:
-# 389 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_10:
+# 390 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "We've done a lot of research into that\n"
 	.string "move, and how it interacts with the\l"
 	.string "weather.\p"
 	.string "Hopefully you and your Pokémon can\n"
 	.string "make good use of this TM!$"
 
-Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_10:
-# 396 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_11:
+# 397 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "We're still researching more Pokémon\n"
 	.string "moves and how they interact with the\l"
 	.string "weather.\p"
 	.string "Come back a little later and we'll have\n"
 	.string "more for you.$"
 
-Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_11:
-# 402 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+Route119_WeatherInstitute_2F_EventScript_GiveWeatherReward_Text_12:
+# 403 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "We actually have even more TMs\n"
 	.string "available, if you're interested.$"
 
@@ -907,13 +921,13 @@ Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous::
 	.string "will respond is laughable.$"
 
 Route119_WeatherInstitute_2F_Text_DeclinedResearchReward::
-# 411 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+# 412 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "We're truly grateful for your help.\p"
 	.string "Come back later if you'd like a Pokémon\n"
 	.string "or TM as a reward.$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemonOrTM::
-# 415 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
+# 416 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "Thanks!\n"
 	.string "Thanks to you, we're safe!\p"
 	.string "It might be an odd way of thanking you,\n"

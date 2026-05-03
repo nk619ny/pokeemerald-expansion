@@ -77,3 +77,21 @@ AbandonedShip_Rooms_1F_Text_DemetriusPostBattle:
 	.string "Keep it a secret where I am!$"
 
 `
+
+
+script AbandonedShip_Corridors_1F_EventScript_FlashCannonSailor{
+	lock
+	faceplayer
+	checkitem(ITEM_TM_FLASH_CANNON)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Old ships used to fire cannons to protect themselves.\pThis ship never had that capability... but it's fun to imagine."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_FLASH_CANNON)
+		waitfanfare
+	}
+	else {
+		msgbox(format("I wish I'd had the chance to sail on Sea Muville before it was abandoned."), MSGBOX_DEFAULT)
+	}
+	releaseall
+	end
+}

@@ -109,7 +109,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 # 55 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	setmetatile 6, 2, METATILE_EliteFour_OpenDoorChampion_Opening, FALSE
 # 56 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	addvar VAR_WEATHER_INSTITUTE_STATE, 1
+	addvar VAR_WEATHER_INSTITUTE_STATE, 2
 # 57 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	special DrawWholeMapView
 # 58 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"

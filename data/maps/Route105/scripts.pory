@@ -113,3 +113,19 @@ script Route105_EventScript_ScaleShotFisherman {
 	releaseall
 	end
 }
+
+
+script Route105_EventScript_IceSpinnerBeauty {
+	lock
+	faceplayer
+	msgbox(format("I've been trying to practice ice skating lately. The Pokémon in this cave move so gracefully!"), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_ICE_SPINNER)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("You should teach your Pokémon to spin gracefully on the ice, too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_ICE_SPINNER)
+		waitfanfare
+	}
+	releaseall
+	end
+}
