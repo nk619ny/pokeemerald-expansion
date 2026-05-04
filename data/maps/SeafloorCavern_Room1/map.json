@@ -94,13 +94,6 @@
       "elevation": 3,
       "dest_map": "MAP_SEAFLOOR_CAVERN_ROOM5",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 6,
-      "y": 2,
-      "elevation": 3,
-      "dest_map": "MAP_SEAFLOOR_CAVERN_ROOM2",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],
