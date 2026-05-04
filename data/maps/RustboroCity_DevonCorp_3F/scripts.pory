@@ -152,8 +152,7 @@ RustboroCity_DevonCorp_3F_Movement_PlayerApproachDesk:
 RustboroCity_DevonCorp_3F_EventScript_MrStone::
 	lock
 	faceplayer
-	checkitem ITEM_TM_POWER_GEM
-	goto_if_eq VAR_RESULT, FALSE, RustboroCity_DevonCorp_3F_EventScript_GivePowerGem
+	goto_if_unset FLAG_RECEIVED_DEVON_MEGA_STONE, RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone
 	goto RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor
 	//goto_if_set FLAG_RECEIVED_EXP_SHARE, RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor
 	//goto_if_set FLAG_DELIVERED_STEVEN_LETTER, RustboroCity_DevonCorp_3F_EventScript_GiveExpShare
@@ -320,4 +319,85 @@ script RustboroCity_DevonCorp_3F_EventScript_GivePowerGem {
 	waitfanfare
 	releaseall
 	end
+}
+
+
+const TempVar_MegaStone = VAR_TEMP_5
+const TempFlag_HeardStoneIntro = FLAG_TEMP_1
+
+script RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone {
+	lock
+	faceplayer
+	goto_if_set(FLAG_RECEIVED_DEVON_MEGA_STONE, RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor)
+	if(!flag(TempFlag_HeardStoneIntro)){
+		msgbox(RustboroCity_DevonCorp_3F_EventScript_MrStoneIntro, MSGBOX_DEFAULT)
+		setflag(TempFlag_HeardStoneIntro)
+	}
+
+	if(!checkitem(ITEM_PIDGEOTITE)) 		{dynmultipush("Pidgeotite",ITEM_PIDGEOTITE)}
+	if(!checkitem(ITEM_ALAKAZITE)) 		{dynmultipush("Alakazite",ITEM_ALAKAZITE)}
+	if(!checkitem(ITEM_GENGARITE)) 		{dynmultipush("Gengarite",ITEM_GENGARITE)}
+	if(!checkitem(ITEM_KANGASKHANITE)) 		{dynmultipush("Kangaskhanite",ITEM_KANGASKHANITE)}
+	if(!checkitem(ITEM_AMPHAROSITE)) 			{dynmultipush("Ampharosite",ITEM_AMPHAROSITE)}
+	if(!checkitem(ITEM_GARDEVOIRITE)) 		{dynmultipush("Gardevoirite",ITEM_GARDEVOIRITE)}
+	if(!checkitem(ITEM_MEDICHAMITE)) 			{dynmultipush("Medichamite",ITEM_MEDICHAMITE)}
+	if(!checkitem(ITEM_MANECTITE)) 		{dynmultipush("Manectite",ITEM_MANECTITE)}
+	if(!checkitem(ITEM_ALTARIANITE)) 			{dynmultipush("Altarianite",ITEM_ALTARIANITE)}
+	if(!checkitem(ITEM_BANETTITE)) 		{dynmultipush("Banettite",ITEM_BANETTITE)}
+	if(!checkitem(ITEM_ABSOLITE)) 		{dynmultipush("Absolite",ITEM_ABSOLITE)}
+	if(!checkitem(ITEM_LOPUNNITE)) 		{dynmultipush("Lopunnite",ITEM_LOPUNNITE)}
+	if(!checkitem(ITEM_GALLADITE)) 		{dynmultipush("Galladite",ITEM_GALLADITE)}
+	if(!checkitem(ITEM_AUDINITE)) 		{dynmultipush("Audinite",ITEM_AUDINITE)}
+	if(!checkitem(ITEM_SCRAFTINITE)) 			{dynmultipush("Scraftinite",ITEM_SCRAFTINITE)}
+	if(!checkitem(ITEM_HAWLUCHANITE)) 		{dynmultipush("Hawluchanite",ITEM_HAWLUCHANITE)}
+	if(!checkitem(ITEM_FALINKSITE)) 			{dynmultipush("Falinksite",ITEM_FALINKSITE)}
+	if(!checkitem(ITEM_RAICHUNITE_X)) 		{dynmultipush("Raichunite X",ITEM_RAICHUNITE_X)}
+	if(!checkitem(ITEM_RAICHUNITE_Y)) 			{dynmultipush("Raichunite Y",ITEM_RAICHUNITE_Y)}
+	if(!checkitem(ITEM_MEOWSTICITE)) 		{dynmultipush("Meowsticite",ITEM_MEOWSTICITE)}
+	if(!checkitem(ITEM_MACHAMPITE)) 		{dynmultipush("Machampite",ITEM_MACHAMPITE)}
+	if(!checkitem(ITEM_VIKAVOLITE)) 		{dynmultipush("Vikavolite",ITEM_VIKAVOLITE)}
+	dynmultipush("Nevermind",ITEM_NONE)
+
+	closemessage
+	msgbox(format("MR. STONE: Which Mega Stone would you like?"),MSGBOX_DEFAULT)
+	dynmultistack(25,2,FALSE,5,0,ITEM_SABLENITE,DYN_MULTICHOICE_CB_NONE)
+	if(var(VAR_RESULT) == ITEM_NONE){
+		msgbox(format("MR. STONE: Very well.\pCome back when you've decided on a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	elif(var(VAR_RESULT) == 127){
+		msgbox(format("MR. STONE: Very well.\pCome back when you've decided on a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	else{
+		copyvar(TempVar_MegaStone, VAR_RESULT)
+		checkitemspace(TempVar_MegaStone)
+		if(var(VAR_RESULT) == FALSE){
+			msgbox(format("MR. STONE: Your bag seems to be full.\pMake some room and come back to me."),MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+		bufferitemname(STR_VAR_1,TempVar_MegaStone)
+		msgbox(format("MR. STONE: Wonderful. I hope this {STR_VAR_1} helps bring out the best in your Pokémon."),MSGBOX_NPC)
+		closemessage
+		giveitem(TempVar_MegaStone)
+		setflag(FLAG_RECEIVED_DEVON_MEGA_STONE)
+		waitfanfare
+		closemessage
+	}
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	closemessage
+	release
+	end
+}
+
+
+text RustboroCity_DevonCorp_3F_EventScript_MrStoneIntro {
+	format("MR. STONE: I've heard from my son that you're a very promising young trainer.\pSteven has encouraged the Devon Corporation to collect and study Mega Stones.\pI'd like to support your journey by gifting one to you.")
 }

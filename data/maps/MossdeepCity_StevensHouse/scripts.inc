@@ -269,168 +269,375 @@ MossdeepCity_StevensHouse_EventScript_RockDisplay::
 # 135 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 
 # 136 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_EventScript_Steven::
+MossdeepCity_StevensHouse_EventScript_MegaStoneDisplay::
 # 137 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	msgbox MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis, MSGBOX_NPC
+	msgbox MossdeepCity_StevensHouse_Text_CollectionOfMegaStones, MSGBOX_SIGN
 # 138 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	end
 # 139 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 
 # 140 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_EventScript_Letter::
+MossdeepCity_StevensHouse_EventScript_Steven::
 # 141 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	lockall
+	msgbox MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis, MSGBOX_NPC
 # 142 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	msgbox MossdeepCity_StevensHouse_Text_NewLetter, MSGBOX_DEFAULT
+	end
 # 143 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	releaseall
+
 # 144 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	end
+MossdeepCity_StevensHouse_EventScript_Letter::
 # 145 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-
+	lockall
 # 146 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-@ Unused, leftover from RS
+	msgbox MossdeepCity_StevensHouse_Text_NewLetter, MSGBOX_DEFAULT
 # 147 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_EventScript_DiveItemBall::
+	releaseall
 # 148 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	finditem ITEM_HM_DIVE
-# 149 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	setflag FLAG_RECEIVED_HM_DIVE
-# 150 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	end
+# 149 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+
+# 150 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+@ Unused, leftover from RS
 # 151 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-
+MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 # 152 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
+	finditem ITEM_HM_DIVE
 # 153 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "STEVEN: {PLAYER}{KUN}…\p"
+	setflag FLAG_RECEIVED_HM_DIVE
 # 154 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "As you can see, there's not much here,\n"
+	end
 # 155 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "but this is my home.\p"
+
 # 156 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "Thank you for all that you've done.\p"
+MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 # 157 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "This is my token of appreciation.\n"
+	.string "STEVEN: {PLAYER}{KUN}…\p"
 # 158 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "It's the HIDDEN MACHINE DIVE.\p"
+	.string "As you can see, there's not much here,\n"
 # 159 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "No need to be shy--you've earned\n"
+	.string "but this is my home.\p"
 # 160 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "this HM.$"
+	.string "Thank you for all that you've done.\p"
 # 161 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-
+	.string "This is my token of appreciation.\n"
 # 162 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_Text_ExplainDive:
+	.string "It's the HIDDEN MACHINE DIVE.\p"
 # 163 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "STEVEN: While you're using SURF, you\n"
+	.string "No need to be shy--you've earned\n"
 # 164 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "should notice dark patches of water.\p"
+	.string "this HM.$"
 # 165 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "Use DIVE if you come to deep water\n"
+
 # 166 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "like it. You'll drop to the seafloor.\p"
+MossdeepCity_StevensHouse_Text_ExplainDive:
 # 167 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "When you want to come back up, use\n"
+	.string "STEVEN: While you're using SURF, you\n"
 # 168 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "DIVE again.\p"
+	.string "should notice dark patches of water.\p"
 # 169 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "In some places, it won't be possible\n"
+	.string "Use DIVE if you come to deep water\n"
 # 170 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "for you to surface, though.$"
+	.string "like it. You'll drop to the seafloor.\p"
 # 171 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-
+	.string "When you want to come back up, use\n"
 # 172 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
+	.string "DIVE again.\p"
 # 173 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "STEVEN: Apparently, there's an\n"
+	.string "In some places, it won't be possible\n"
 # 174 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "underwater cavern between\l"
+	.string "for you to surface, though.$"
 # 175 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "MOSSDEEP and SOOTOPOLIS.\p"
+
 # 176 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "You know, the one that CAPT. STERN\n"
+MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 # 177 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "found in his submarine.$"
+	.string "STEVEN: Apparently, there's an\n"
 # 178 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-
+	.string "underwater cavern between\l"
 # 179 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
+	.string "MOSSDEEP and SOOTOPOLIS.\p"
 # 180 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "{PLAYER} checked the POKé BALL.\p"
+	.string "You know, the one that CAPT. STERN\n"
 # 181 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "It contained the Pokémon\n"
+	.string "found in his submarine.$"
 # 182 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "BELDUM.\p"
+
 # 183 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "Take the POKé BALL?$"
+MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
 # 184 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-
+	.string "{PLAYER} checked the POKé BALL.\p"
 # 185 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_Text_ObtainedBeldum:
+	.string "It contained the Pokémon\n"
 # 186 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "{PLAYER} obtained a BELDUM.$"
+	.string "BELDUM.\p"
 # 187 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-
+	.string "Take the POKé BALL?$"
 # 188 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-@ Unused
+
 # 189 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
+MossdeepCity_StevensHouse_Text_ObtainedBeldum:
 # 190 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "There is no space for another Pokémon.$"
+	.string "{PLAYER} obtained a BELDUM.$"
 # 191 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 
 # 192 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
+@ Unused
 # 193 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "{PLAYER} left the POKé BALL where\n"
+MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
 # 194 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "it was.$"
+	.string "There is no space for another Pokémon.$"
 # 195 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 
 # 196 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_Text_LetterFromSteven:
+MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
 # 197 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "It's a letter.\p"
+	.string "{PLAYER} left the POKé BALL where\n"
 # 198 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "… … … … … …\p"
+	.string "it was.$"
 # 199 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "To {PLAYER}{KUN}…\p"
-# 200 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "I've decided to do a little soul-\n"
-# 201 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "searching and train on the road.\p"
-# 202 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "I don't plan to return home for some\n"
-# 203 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "time.\p"
-# 204 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "I have a favor to ask of you.\p"
-# 205 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "I want you to take the POKé BALL on\n"
-# 206 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "the desk.\p"
-# 207 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "Inside it is a BELDUM, my favorite\n"
-# 208 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "Pokémon.\p"
-# 209 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "I'm counting on you.\p"
-# 210 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "May our paths cross someday.\p"
-# 211 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "STEVEN STONE$"
-# 212 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 
+# 200 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+MossdeepCity_StevensHouse_Text_LetterFromSteven:
+# 201 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "It's a letter.\p"
+# 202 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "… … … … … …\p"
+# 203 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "To {PLAYER}{KUN}…\p"
+# 204 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "I've decided to do a little soul-\n"
+# 205 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "searching and train on the road.\p"
+# 206 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "I don't plan to return home for some\n"
+# 207 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "time.\p"
+# 208 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "I have a favor to ask of you.\p"
+# 209 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "I want you to take the POKé BALL on\n"
+# 210 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "the desk.\p"
+# 211 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Inside it is a BELDUM, my favorite\n"
+# 212 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Pokémon.\p"
 # 213 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
+	.string "I'm counting on you.\p"
 # 214 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "It's a collection of rare rocks and\n"
+	.string "May our paths cross someday.\p"
 # 215 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "STEVEN STONE$"
+# 216 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+
+# 217 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
+# 218 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "It's a collection of rare rocks and\n"
+# 219 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	.string "stones assembled by STEVEN.$"
+# 220 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+
+# 221 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+MossdeepCity_StevensHouse_Text_CollectionOfMegaStones:
+# 222 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "It's a collection of Mega Stones\n"
+# 223 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "assembled by STEVEN.$"
+
+MossdeepCity_StevensHouse_TakeMegaStone::
+# 236 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	lock
+# 237 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	faceplayer
+# 238 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	msgbox MossdeepCity_StevensHouse_Text_CollectionOfMegaStones, MSGBOX_DEFAULT
+	checkitem ITEM_AERODACTYLITE
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_2
+MossdeepCity_StevensHouse_TakeMegaStone_1:
+	checkitem ITEM_SCIZORITE
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_5
+MossdeepCity_StevensHouse_TakeMegaStone_4:
+	checkitem ITEM_CLEFABLITE
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_8
+MossdeepCity_StevensHouse_TakeMegaStone_7:
+	checkitem ITEM_SKARMORITE
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_11
+MossdeepCity_StevensHouse_TakeMegaStone_10:
+	checkitem ITEM_CHIMECHITE
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_14
+MossdeepCity_StevensHouse_TakeMegaStone_13:
+	checkitem ITEM_LUCARIONITE
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_17
+MossdeepCity_StevensHouse_TakeMegaStone_16:
+	checkitem ITEM_LUCARIONITE_Z
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_20
+MossdeepCity_StevensHouse_TakeMegaStone_19:
+	checkitem ITEM_GLIMMORANITE
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_23
+MossdeepCity_StevensHouse_TakeMegaStone_22:
+# 248 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_8, ITEM_NONE
+# 250 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	msgbox MossdeepCity_StevensHouse_TakeMegaStone_Text_9, MSGBOX_DEFAULT
+# 251 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultistack 25, 2, FALSE, 5, 0, ITEM_AERODACTYLITE, DYN_MULTICHOICE_CB_NONE
+# 252 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, ITEM_NONE
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_26
+# 258 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 127
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_27
+# 265 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	copyvar VAR_TEMP_5, VAR_RESULT
+# 266 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	checkitemspace VAR_TEMP_5
+# 267 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_32
+# 273 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	giveitem VAR_TEMP_5
+# 274 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	setflag FLAG_RECEIVED_STEVENS_MEGA_STONE
+# 275 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	removeobject LOCALID_STEVENS_MEGA_STONE
+# 276 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	waitfanfare
+# 277 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	closemessage
+# 280 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	closemessage
+# 281 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	release
+	end
+
+MossdeepCity_StevensHouse_TakeMegaStone_2:
+# 239 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_0, ITEM_AERODACTYLITE
+	goto MossdeepCity_StevensHouse_TakeMegaStone_1
+
+MossdeepCity_StevensHouse_TakeMegaStone_5:
+# 240 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_1, ITEM_SCIZORITE
+	goto MossdeepCity_StevensHouse_TakeMegaStone_4
+
+MossdeepCity_StevensHouse_TakeMegaStone_8:
+# 241 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_2, ITEM_CLEFABLITE
+	goto MossdeepCity_StevensHouse_TakeMegaStone_7
+
+MossdeepCity_StevensHouse_TakeMegaStone_11:
+# 242 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_3, ITEM_SKARMORITE
+	goto MossdeepCity_StevensHouse_TakeMegaStone_10
+
+MossdeepCity_StevensHouse_TakeMegaStone_14:
+# 243 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_4, ITEM_CHIMECHITE
+	goto MossdeepCity_StevensHouse_TakeMegaStone_13
+
+MossdeepCity_StevensHouse_TakeMegaStone_17:
+# 244 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_5, ITEM_LUCARIONITE
+	goto MossdeepCity_StevensHouse_TakeMegaStone_16
+
+MossdeepCity_StevensHouse_TakeMegaStone_20:
+# 245 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_6, ITEM_LUCARIONITE_Z
+	goto MossdeepCity_StevensHouse_TakeMegaStone_19
+
+MossdeepCity_StevensHouse_TakeMegaStone_23:
+# 246 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_7, ITEM_GLIMMORANITE
+	goto MossdeepCity_StevensHouse_TakeMegaStone_22
+
+MossdeepCity_StevensHouse_TakeMegaStone_26:
+# 254 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	closemessage
+# 255 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	releaseall
+	end
+
+MossdeepCity_StevensHouse_TakeMegaStone_27:
+# 260 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	closemessage
+# 261 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	releaseall
+	end
+
+MossdeepCity_StevensHouse_TakeMegaStone_32:
+# 268 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	msgbox MossdeepCity_StevensHouse_TakeMegaStone_Text_10, MSGBOX_NPC
+# 269 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	closemessage
+# 270 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	releaseall
+	end
+
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_0:
+# 239 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Aerodactylite$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_1:
+# 240 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Scizorite$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_2:
+# 241 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Clefablite$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_3:
+# 242 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Skarmorite$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_4:
+# 243 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Chimechite$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_5:
+# 244 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Lucarionite$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_6:
+# 245 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Lucarionite Z$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_7:
+# 246 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Glimmoranite$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_8:
+# 248 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Nevermind$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_9:
+# 250 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Take one of the Mega Stones?$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_10:
+# 268 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Too bad!\l"
+	.string "The BAG is full...$"
 
 MossdeepCity_StevensHouse_Text_NewLetter::
-# 219 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+# 228 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	.string "It's a letter.\p"
 	.string "… … … … … …\p"
 	.string "To {PLAYER}{KUN}…\p"

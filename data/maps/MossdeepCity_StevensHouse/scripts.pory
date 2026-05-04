@@ -133,6 +133,10 @@ MossdeepCity_StevensHouse_EventScript_RockDisplay::
 	msgbox MossdeepCity_StevensHouse_Text_CollectionOfRareRocks, MSGBOX_SIGN
 	end
 
+MossdeepCity_StevensHouse_EventScript_MegaStoneDisplay::
+	msgbox MossdeepCity_StevensHouse_Text_CollectionOfMegaStones, MSGBOX_SIGN
+	end
+
 MossdeepCity_StevensHouse_EventScript_Steven::
 	msgbox MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis, MSGBOX_NPC
 	end
@@ -214,8 +218,66 @@ MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
 	.string "It's a collection of rare rocks and\n"
 	.string "stones assembled by STEVEN.$"
 
+MossdeepCity_StevensHouse_Text_CollectionOfMegaStones:
+	.string "It's a collection of Mega Stones\n"
+	.string "assembled by STEVEN.$"
+
+
 `
 
 text MossdeepCity_StevensHouse_Text_NewLetter {
-	format("It's a letter.\p… … … … … …\pTo {PLAYER}{KUN}…\pI've decided to leave this for you.\pPowerful Pokémon roam throughout the region. Different corners of Hoenn have different groups of legendary Pokémon that travel the area.\pThis special flute is believed to be able to call the nearest roaming legendary to the holder's location.\pBe warned, they are likely to flee once you engage them. And if they do not flee, they will make formidible opponents.\pLegends say one holder of the flute managed to build a bond strong enough to ride a Latias through the skies.\pI believe you may be able to befriend some of these roamers…\NI hope so, for all our sakes.\pSTEVEN STONE$")
+	format("It's a letter.\p… … … … … …\pTo {PLAYER}{KUN}…\pI've decided to leave this for you.\pPowerful Pokémon roam throughout the region. Different corners of Hoenn have different groups of legendary Pokémon that travel the area.\pThis special flute is believed to be able to call the nearest roaming legendary to the holder's location.\pBe warned, they are likely to flee once you engage them. And if they do not flee, they will make formidible opponents.\pLegends say one holder of the flute managed to build a bond strong enough to ride a Latias through the skies.\pI believe you may be able to befriend some of these roamers…\NI hope so, for all our sakes.\pPlease help yourself to a Mega Stone from my collection as well.\pSTEVEN STONE$")
+}
+
+
+const TempVar_MegaStone = VAR_TEMP_5
+
+script MossdeepCity_StevensHouse_TakeMegaStone{
+	lock
+	faceplayer
+	msgbox(MossdeepCity_StevensHouse_Text_CollectionOfMegaStones,MSGBOX_DEFAULT)
+	if(!checkitem(ITEM_AERODACTYLITE)) 		{dynmultipush("Aerodactylite",ITEM_AERODACTYLITE)}
+	if(!checkitem(ITEM_SCIZORITE)) 		{dynmultipush("Scizorite",ITEM_SCIZORITE)}
+	if(!checkitem(ITEM_CLEFABLITE)) 		{dynmultipush("Clefablite",ITEM_CLEFABLITE)}
+	if(!checkitem(ITEM_SKARMORITE)) 		{dynmultipush("Skarmorite",ITEM_SKARMORITE)}
+	if(!checkitem(ITEM_CHIMECHITE)) 			{dynmultipush("Chimechite",ITEM_CHIMECHITE)}
+	if(!checkitem(ITEM_LUCARIONITE)) 			{dynmultipush("Lucarionite",ITEM_LUCARIONITE)}
+	if(!checkitem(ITEM_LUCARIONITE_Z)) 		{dynmultipush("Lucarionite Z",ITEM_LUCARIONITE_Z)}
+	if(!checkitem(ITEM_GLIMMORANITE)) 		{dynmultipush("Glimmoranite",ITEM_GLIMMORANITE)}
+
+	dynmultipush("Nevermind",ITEM_NONE)
+
+	msgbox(format("Take one of the Mega Stones?"),MSGBOX_DEFAULT)
+	dynmultistack(25,2,FALSE,5,0,ITEM_AERODACTYLITE,DYN_MULTICHOICE_CB_NONE)
+	if(var(VAR_RESULT) == ITEM_NONE){
+		//msgbox(format("Left the machine without taking a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	elif(var(VAR_RESULT) == 127){
+		//msgbox(format("Left the machine without taking a Mega Stone."),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	else{
+		copyvar(TempVar_MegaStone, VAR_RESULT)
+		checkitemspace(TempVar_MegaStone)
+		if(var(VAR_RESULT) == FALSE){
+			msgbox(format("Too bad!\lThe BAG is full..."),MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+		giveitem(TempVar_MegaStone)
+		setflag(FLAG_RECEIVED_STEVENS_MEGA_STONE)
+		removeobject(LOCALID_STEVENS_MEGA_STONE)
+		waitfanfare
+		closemessage
+	}
+
+	closemessage
+	release
+	end
 }

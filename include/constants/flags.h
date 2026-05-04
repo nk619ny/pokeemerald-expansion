@@ -291,12 +291,12 @@
 #define FLAG_RECEIVED_EEVEE_FROM_NORMAN      0x101 //was Old Rod, but changed to Eevee
 #define FLAG_RECEIVED_COIN_CASE              0x102 // changed to use new Scott plotline
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0x103
-#define FLAG_RECEIVED_TM_SNATCH              0x104 // now unused and available for repurposing
+#define FLAG_RECEIVED_DEVON_MEGA_STONE       0x104 // repurposed
 #define FLAG_RECEIVED_TM_DIG                 0x105
 #define FLAG_RECEIVED_TM_BULLET_SEED         0x106
 #define FLAG_ENTERED_ELITE_FOUR              0x107
 #define FLAG_RECEIVED_TM_HIDDEN_POWER        0x108
-#define FLAG_RECEIVED_COSPLAY_PIKACHU             0x109 // now unused and available for repurposing
+#define FLAG_RECEIVED_COSPLAY_PIKACHU        0x109 // repurposed
 #define FLAG_RECEIVED_EVIOLITE               0x10A // repurposed from Lavaridge Egg
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10C
@@ -326,7 +326,7 @@
 #define FLAG_MET_RIVAL_LILYCOVE              0x124
 #define FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE 0x125
 #define FLAG_EXCHANGED_SCANNER               0x126
-#define FLAG_KECLEON_FLED_FORTREE            0x127 //available to be repurposed
+#define FLAG_RECEIVED_STEVENS_MEGA_STONE     0x127 // repurposed
 #define FLAG_PETALBURG_MART_EXPANDED_ITEMS   0x128
 #define FLAG_RECEIVED_MIRACLE_SEED           0x129
 #define FLAG_RECEIVED_BELDUM                 0x12A
