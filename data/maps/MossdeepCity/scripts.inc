@@ -866,7 +866,7 @@ MossdeepCity_EventScript_CloseCombatBlackBelt::
 	compare VAR_RESULT, FALSE
 	goto_if_eq MossdeepCity_EventScript_CloseCombatBlackBelt_2
 # 444 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_EventScript_CloseCombatBlackBelt_Text_0, MSGBOX_DEFAULT
+	msgbox MossdeepCity_EventScript_CloseCombatBlackBelt_Text_0, MSGBOX_NPC
 MossdeepCity_EventScript_CloseCombatBlackBelt_1:
 # 446 "data/maps/MossdeepCity/scripts.pory"
 	releaseall
@@ -874,7 +874,7 @@ MossdeepCity_EventScript_CloseCombatBlackBelt_1:
 
 MossdeepCity_EventScript_CloseCombatBlackBelt_2:
 # 438 "data/maps/MossdeepCity/scripts.pory"
-	msgbox MossdeepCity_Text_DynamicPunchTeach, MSGBOX_DEFAULT
+	msgbox MossdeepCity_Text_DynamicPunchTeach, MSGBOX_NPC
 # 439 "data/maps/MossdeepCity/scripts.pory"
 	closemessage
 # 440 "data/maps/MossdeepCity/scripts.pory"
