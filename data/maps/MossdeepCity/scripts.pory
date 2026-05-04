@@ -435,13 +435,13 @@ script MossdeepCity_EventScript_CloseCombatBlackBelt {
 	faceplayer
 	checkitem(ITEM_TM_CLOSE_COMBAT)
 	if(var(VAR_RESULT) == FALSE) {
-		msgbox(MossdeepCity_Text_DynamicPunchTeach, MSGBOX_DEFAULT)
+		msgbox(MossdeepCity_Text_DynamicPunchTeach, MSGBOX_NPC)
 		closemessage
 		giveitem(ITEM_TM_CLOSE_COMBAT)
 		waitfanfare
 	}
 	else{
-		msgbox(format("I want you to win at the Mossdeep Gym using Close Combat!"), MSGBOX_DEFAULT)
+		msgbox(format("I want you to win at the Mossdeep Gym using Close Combat!"), MSGBOX_NPC)
 	}
 	releaseall
 	end

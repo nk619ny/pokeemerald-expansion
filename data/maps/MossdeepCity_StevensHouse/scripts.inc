@@ -659,4 +659,6 @@ MossdeepCity_StevensHouse_Text_NewLetter::
 	.string "I believe you may be able to befriend\n"
 	.string "some of these roamers…\l"
 	.string "I hope so, for all our sakes.\p"
+	.string "Please help yourself to a Mega Stone\n"
+	.string "from my collection as well.\p"
 	.string "STEVEN STONE$"
