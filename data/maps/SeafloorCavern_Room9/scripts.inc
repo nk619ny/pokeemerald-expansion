@@ -869,8 +869,8 @@ SeafloorCavern_Room9_Text_ArchieThirdDialogue::
 	.string "dangerous, that Maxie couldn't control\l"
 	.string "Groudon?\p"
 	.string "Of course he couldn't… his “science”\n"
-	.string "fails to understand the equilibrium\l"
-	.string "that nature strives toward.\p"
+	.string "fails to understand the balance that\l"
+	.string "nature strives toward.\p"
 	.string "I am not here to control nature, with\n"
 	.string "this Blue Orb I am going to empower it!$"
 

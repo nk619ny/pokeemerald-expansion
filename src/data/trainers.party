@@ -1588,7 +1588,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Ace Pokemon
 
 Kyogre @ Blue Orb  
 Ability: Drizzle
-Level: 76
+Level: 75
 Ball: Master
 EVs: 252 HP / 160 Def  
 Modest Nature  
@@ -1600,9 +1600,9 @@ IVs: 0 Atk
 
 Zapdos  
 Ability: Lightning Rod  
-Level: 76
+Level: 75
 Ball: Dive
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 128 SpA / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Wildbolt Storm  
@@ -1612,7 +1612,7 @@ IVs: 0 Atk
 
 Overqwil  
 Ability: Swift Swim  
-Level: 76
+Level: 75
 Ball: Dive
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
@@ -1621,6 +1621,16 @@ Adamant Nature
 - Throat Chop  
 - Swords Dance  
 
+Golisopod @ Golisopite  
+Ability: Shell Armor  
+Level: 75
+Tera Type: Bug  
+- Drill Run  
+- Aqua Jet  
+- Swords Dance  
+- Leech Life
+
+/*
 Scizor @ Scizorite  
 Ability: Technician  
 Level: 76
@@ -1631,12 +1641,13 @@ Adamant Nature
 - Bullet Punch  
 - Swords Dance  
 - Drill Run  
+*/
 
 Zarude  
 Ability: Intimidate  
-Level: 76
+Level: 75
 Ball: Dive
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 128 Atk / 4 SpD / 128 Spe  
 Jolly Nature  
 - Darkest Lariat  
 - Power Whip  
@@ -1645,7 +1656,7 @@ Jolly Nature
 
 Basculegion (M) @ Muscle Band
 Ability: Swift Swim  
-Level: 76
+Level: 75
 Ball: Dive
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  

@@ -362,7 +362,7 @@ text SeafloorCavern_Room9_Text_ArchieSecondDialogue {
 
 
 text SeafloorCavern_Room9_Text_ArchieThirdDialogue {
-	format("Archie: Hm?\NYou say these ancient Pokémon are too dangerous, that Maxie couldn't control Groudon?\pOf course he couldn't… his “science” fails to understand the equilibrium that nature strives toward.\pI am not here to control nature, with this Blue Orb I am going to empower it!")
+	format("Archie: Hm?\NYou say these ancient Pokémon are too dangerous, that Maxie couldn't control Groudon?\pOf course he couldn't… his “science” fails to understand the balance that nature strives toward.\pI am not here to control nature, with this Blue Orb I am going to empower it!")
 }
 
 text SeafloorCavern_Room9_Text_ArchieBeholdKyogre {
