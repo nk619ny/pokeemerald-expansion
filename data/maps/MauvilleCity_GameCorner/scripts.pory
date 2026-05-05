@@ -1950,6 +1950,7 @@ script MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems {
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("King's Rock       200 coins",ITEM_KINGS_ROCK)}
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Lagging Tail      200 coins",ITEM_LAGGING_TAIL)}
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Light Clay         400 coins",ITEM_LIGHT_CLAY)}
+	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Loaded Dice      300 coins",ITEM_LOADED_DICE)}
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Metronome         300 coins",ITEM_METRONOME)}
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Protect Pads    300 coins",ITEM_PROTECTIVE_PADS)}
 	if(flag(FLAG_BADGE02_GET)) {dynmultipush("Punching Glove 300 coins",ITEM_PUNCHING_GLOVE)}
@@ -2042,6 +2043,13 @@ script MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems {
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
 			removecoins(400)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_LOADED_DICE:
+			goto_if_lt(TempVar_CurrentCoins, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 300)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(300)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_METRONOME:
 			goto_if_lt(TempVar_CurrentCoins, 300, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)

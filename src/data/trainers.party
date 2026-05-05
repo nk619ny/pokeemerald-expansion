@@ -2966,7 +2966,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Celebi  
+Celebi @ Tanga Berry
 Ability: Time Traveler
 Level: 70
 Ball: Timer
@@ -3013,7 +3013,7 @@ IVs: 0 Atk
 - Tailwind  
 - Flash Cannon  
 
-Iron Thorns  
+Iron Thorns @ Air Balloon
 Ability: Quark Drive  
 Level: 70
 Ball: Timer
@@ -3164,7 +3164,7 @@ Adamant Nature
 - Fire Fang  
 - Ice Fang
 
-Archeops  
+Archeops  @ Sitrus Berry
 Ability: Klutz  
 Level: 70  
 Ball: Timer
@@ -3175,7 +3175,7 @@ Jolly Nature
 - U-turn  
 - Aqua Tail 
 
-Slither Wing  
+Slither Wing  @ Coba Berry
 Ability: Protosynthesis  
 Level: 70  
 Ball: Timer
@@ -12133,8 +12133,8 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_CAMDEN === /* Underwater Route 127 */ /* TO BE ADDED */
 Name: CAMDEN
-Class: Triathlete
-Pic: Swimming Triathlete M
+Class: Diver
+Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Double Battle: Yes

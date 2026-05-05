@@ -41,7 +41,7 @@ MossdeepCity_StevensHouse_OnTransition:
 # 21 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 MossdeepCity_StevensHouse_EventScript_SetStevenPos::
 # 22 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	setobjectxyperm LOCALID_STEVENS_HOUSE_STEVEN, 6, 5
+	setobjectxyperm LOCALID_STEVENS_HOUSE_STEVEN, 5, 5
 # 23 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	setobjectmovementtype LOCALID_STEVENS_HOUSE_STEVEN, MOVEMENT_TYPE_FACE_UP
 # 24 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
@@ -51,7 +51,7 @@ MossdeepCity_StevensHouse_EventScript_SetStevenPos::
 # 26 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 MossdeepCity_StevensHouse_OnFrame:
 # 27 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	map_script_2 VAR_STEVENS_HOUSE_STATE, 6, MossdeepCity_StevensHouse_EventScript_StevenGivesDive
+	//map_script_2 VAR_STEVENS_HOUSE_STATE, 6, MossdeepCity_StevensHouse_EventScript_StevenGivesDive
 # 28 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	.2byte 0
 # 29 "data/maps/MossdeepCity_StevensHouse/scripts.pory"

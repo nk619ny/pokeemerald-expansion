@@ -19,12 +19,12 @@ MossdeepCity_StevensHouse_OnTransition:
 	end
 
 MossdeepCity_StevensHouse_EventScript_SetStevenPos::
-	setobjectxyperm LOCALID_STEVENS_HOUSE_STEVEN, 6, 5
+	setobjectxyperm LOCALID_STEVENS_HOUSE_STEVEN, 5, 5
 	setobjectmovementtype LOCALID_STEVENS_HOUSE_STEVEN, MOVEMENT_TYPE_FACE_UP
 	return
 
 MossdeepCity_StevensHouse_OnFrame:
-	map_script_2 VAR_STEVENS_HOUSE_STATE, 6, MossdeepCity_StevensHouse_EventScript_StevenGivesDive
+	//map_script_2 VAR_STEVENS_HOUSE_STATE, 6, MossdeepCity_StevensHouse_EventScript_StevenGivesDive
 	.2byte 0
 
 MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
