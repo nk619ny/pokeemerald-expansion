@@ -365,8 +365,8 @@
       "x": 31,
       "y": 33,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
+      "var": "VAR_SOOTOPOLIS_CITY_STATE",
+      "var_value": "5",
       "script": "SootopolisCity_EventScript_StevenWaterfallTrigger"
     }
   ],

@@ -169,3 +169,21 @@ SkyPillar_Outside_Text_GotToGoBackForSootopolis:
 	.string "RAYQUAZA should be farther up\n"
 	.string "from here.$"
 `
+
+
+
+script SkyPillar_Outside_EventScript_OutrageTamer {
+	lock
+	faceplayer
+	msgbox(format("To climb the Sky Pillar, you must face the rage of dragons."), MSGBOX_NPC)
+	checkitem(ITEM_TM_OUTRAGE)
+	if(var(VAR_RESULT) == FALSE) {
+		closemessage
+		giveitem(ITEM_TM_OUTRAGE)
+		waitfanfare
+	}
+	msgbox(format("Can you stand before them without fear?"), MSGBOX_NPC)
+	closemessage
+	releaseall
+	end
+}

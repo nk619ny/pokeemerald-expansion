@@ -338,3 +338,44 @@ SkyPillar_Outside_Text_GotToGoBackForSootopolis:
 	.string "RAYQUAZA should be farther up\n"
 # 170 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "from here.$"
+
+SkyPillar_Outside_EventScript_OutrageTamer::
+# 176 "data/maps/SkyPillar_Outside/scripts.pory"
+	lock
+# 177 "data/maps/SkyPillar_Outside/scripts.pory"
+	faceplayer
+# 178 "data/maps/SkyPillar_Outside/scripts.pory"
+	msgbox SkyPillar_Outside_EventScript_OutrageTamer_Text_0, MSGBOX_NPC
+# 179 "data/maps/SkyPillar_Outside/scripts.pory"
+	checkitem ITEM_TM_OUTRAGE
+# 180 "data/maps/SkyPillar_Outside/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq SkyPillar_Outside_EventScript_OutrageTamer_2
+SkyPillar_Outside_EventScript_OutrageTamer_1:
+# 185 "data/maps/SkyPillar_Outside/scripts.pory"
+	msgbox SkyPillar_Outside_EventScript_OutrageTamer_Text_1, MSGBOX_NPC
+# 186 "data/maps/SkyPillar_Outside/scripts.pory"
+	closemessage
+# 187 "data/maps/SkyPillar_Outside/scripts.pory"
+	releaseall
+	end
+
+SkyPillar_Outside_EventScript_OutrageTamer_2:
+# 181 "data/maps/SkyPillar_Outside/scripts.pory"
+	closemessage
+# 182 "data/maps/SkyPillar_Outside/scripts.pory"
+	giveitem ITEM_TM_OUTRAGE
+# 183 "data/maps/SkyPillar_Outside/scripts.pory"
+	waitfanfare
+	goto SkyPillar_Outside_EventScript_OutrageTamer_1
+
+
+SkyPillar_Outside_EventScript_OutrageTamer_Text_0:
+# 178 "data/maps/SkyPillar_Outside/scripts.pory"
+	.string "To climb the Sky Pillar, you must face\n"
+	.string "the rage of dragons.$"
+
+SkyPillar_Outside_EventScript_OutrageTamer_Text_1:
+# 185 "data/maps/SkyPillar_Outside/scripts.pory"
+	.string "Can you stand before them without\n"
+	.string "fear?$"

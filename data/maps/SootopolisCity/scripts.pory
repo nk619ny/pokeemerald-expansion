@@ -49,7 +49,7 @@ SootopolisCity_OnTransition:
 	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SootopolisCity_EventScript_CheckSetEnterCaveOfOriginObjPos
 	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_SetExitCaveOfOriginObjPos
 	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_SetOutsideGymObjPos
-	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_SetExpertBlockCaveEntrance
+	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_SetExpertOpenCaveEntrance
 	end
 
 SootopolisCity_EventScript_HideMapNamePopup::
@@ -141,6 +141,10 @@ SootopolisCity_EventScript_SetWallaceLeft::
 
 SootopolisCity_EventScript_SetExpertBlockCaveEntrance::
 	setobjectxyperm LOCALID_SOOTOPOLIS_EXPERT, 31, 18
+	return
+
+SootopolisCity_EventScript_SetExpertOpenCaveEntrance::
+	setobjectxyperm LOCALID_SOOTOPOLIS_EXPERT, 32, 18
 	return
 
 SootopolisCity_OnWarp:
@@ -1748,6 +1752,7 @@ script SootopolisCity_EventScript_StevenWaterfallTrigger {
 		waitmovement(0)
 		goto(SootopolisCity_EventScript_StevenGiveWaterfall)
 	} 
+	setvar(VAR_SOOTOPOLIS_CITY_STATE,6)
 	releaseall
 	end
 }
