@@ -1387,6 +1387,18 @@
       "MOVE_FREEZE_SHOCK"
     ]
   },
+  "SUNFLORA": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FIRE_BLAST",
+      "MOVE_FLAMETHROWER",
+      "MOVE_HEAT_WAVE",
+      "MOVE_MYSTICAL_FIRE"
+    ]
+  },
   "NINETALES_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],

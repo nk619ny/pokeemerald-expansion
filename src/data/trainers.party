@@ -3455,6 +3455,7 @@ Level: 50
 
 Weezing @ Normal Gem
 Ability: Levitate  
+Level: 50
 Tera Type: Poison  
 EVs: 252 HP / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -9454,7 +9455,7 @@ Level: 77
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - High Horsepower  
-- Avalanche  
+- Glacial Lance 
 - Facade  
 - Ice Shard  
 
@@ -9480,7 +9481,7 @@ IVs: 0 Atk
 - Strength Sap  
 - Shadow Ball  
 
-Weavile @ Ice Gem
+Weavile @ Focus Sash
 Ball: Great
 Level: 77
 Ability: Pickpocket  
@@ -13107,6 +13108,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Glimmora  @ Focus Sash
 Ability: Toxic Debris  
+Level: 55
 Tera Type: Rock  
 IVs: 0 Atk  
 - Spiky Shield  
@@ -13116,6 +13118,7 @@ IVs: 0 Atk
 
 Seviper  
 Ability: Infiltrator  
+Level: 55
 Tera Type: Poison  
 - Toxic  
 - Sucker Punch  
@@ -13124,6 +13127,7 @@ Tera Type: Poison
 
 Venomoth  @ Wide Lens
 Ability: Shield Dust  
+Level: 55
 Tera Type: Bug  
 IVs: 0 Atk  
 - Toxic Spikes  
@@ -13133,6 +13137,7 @@ IVs: 0 Atk
 
 Dugtrio @ Focus Sash  
 Ability: Arena Trap  
+Level: 55
 Tera Type: Ground  
 - Sucker Punch  
 - High Horsepower  
@@ -14177,6 +14182,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Corsola @ Rindo Berry  
 Ability: Regenerator  
+Level: 70
 Tera Type: Water  
 - Flip Turn  
 - Power Gem  
@@ -14185,6 +14191,7 @@ Tera Type: Water
 
 Cursola @ Big Root  
 Ability: Perish Body  
+Level: 70
 Tera Type: Ghost  
 EVs: 252 HP / 4 Def / 252 SpA  
 Modest Nature  
@@ -14220,6 +14227,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Dragapult  
 Ability: Infiltrator  
+Level: 70
 Tera Type: Dragon  
 EVs: 252 SpA / 252 Spe  
 Timid Nature  
@@ -14231,6 +14239,7 @@ IVs: 0 Atk
 
 Eelektross  
 Ability: Swift Swim  
+Level: 70
 Tera Type: Electric  
 EVs: 128 HP / 252 Atk / 128 Spe  
 Adamant Nature  
@@ -14240,6 +14249,7 @@ Adamant Nature
 - Drain Punch  
 
 Wugtrio @ Focus Sash  
+Level: 70
 Ability: Gooey  
 Tera Type: Water  
 - Triple Dive  
@@ -18568,6 +18578,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gogoat @ Leftovers  
 Ability: Sap Sipper  
+Level: 72
 Tera Type: Grass  
 - Energy Ball  
 - Horn Leech  
@@ -18576,6 +18587,7 @@ Tera Type: Grass
 
 Goodra @ Leftovers  
 Ability: Gooey  
+Level: 72
 Tera Type: Dragon  
 Calm Nature  
 IVs: 0 Atk  
@@ -18586,6 +18598,7 @@ IVs: 0 Atk
 
 Rhyperior @ Weakness Policy  
 Ability: Solid Rock  
+Level: 72
 Tera Type: Ground  
 - Accelerock  
 - Body Press  
@@ -19870,6 +19883,7 @@ IVs: 0 Atk
 
 Glaceon @ Leftovers  
 Ability: Ice Body  
+Level: 73
 Tera Type: Ice  
 EVs: 252 HP  
 Serious Nature  
