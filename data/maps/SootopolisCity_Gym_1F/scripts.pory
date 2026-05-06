@@ -122,14 +122,14 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	end
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse::
-	giveitem ITEM_TM_WATER_PULSE
+	giveitem ITEM_TM_ICE_SPINNER
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox SootopolisCity_Gym_1F_Text_ExplainWaterPulse, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_WATER_PULSE
 	return
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2::
-	giveitem ITEM_TM_WATER_PULSE
+	giveitem ITEM_TM_ICE_SPINNER
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox SootopolisCity_Gym_1F_Text_ExplainWaterPulse, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_WATER_PULSE
@@ -256,9 +256,9 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "The TECHNICAL MACHINE I handed you\n"
-	.string "contains WATER PULSE.\p"
-	.string "In use, it will occasionally confuse\n"
-	.string "the target with ultrasonic waves.\p"
+	.string "contains Ice Spinner.\p"
+	.string "Your Pokémon will spin with icy\n"
+	.string "beauty.\p"
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
@@ -346,7 +346,7 @@ text SootopolisCity_Gym_1F_Text_GymGuideAdvice {
 }
 
 text SootopolisCity_Gym_1F_Text_JuanIntro {
-	format("I heard you worked with Steven to fix the situation outside.\pFor that, myself, and all of Hoenn, owe you a great debt.\pBut that will earn you no mercy from me here.\pLet us begin our match, shall we?\pPlease, you shall bear witness to\n our artistry.\pA grand illusion of ice sculpted\n by Pokémon and myself!")
+	format("I heard you worked with Steven to resolve the situation outside.\pFor that, myself, and all of Hoenn, owe you a great debt.\pBut that will earn you no mercy from me here.\pLet us begin our match, shall we?\pPlease, you shall bear witness to\n our artistry.\pA grand illusion of ice sculpted\n by Pokémon and myself!")
 }
 
 text SootopolisCity_Gym_1F_Text_JuanDefeat {
