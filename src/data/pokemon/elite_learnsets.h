@@ -4027,6 +4027,7 @@ static const u16 sQuilavaEliteLearnset[] = {
 
 #if P_HISUIAN_FORMS
 static const u16 sTyphlosionHisuiEliteLearnset[] = {
+    MOVE_WICKED_TORQUE,
     MOVE_OMINOUS_WIND,
     MOVE_UNAVAILABLE,
 };
@@ -6922,7 +6923,7 @@ static const u16 sCarnivineEliteLearnset[] = {
 };
 #endif //P_FAMILY_CARNIVINE
 
-#if P_FAMILY_MANTYKE
+#if P_FAMILY_MANTINE
 static const u16 sMantineEliteLearnset[] = {
     MOVE_GUST,
     MOVE_AQUA_TAIL,
@@ -6953,7 +6954,7 @@ static const u16 sMantykeEliteLearnset[] = {
     MOVE_SCALD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MANTYKE
+#endif //P_FAMILY_MANTINE
 
 #if P_FAMILY_SNOVER
 static const u16 sAbomasnowEliteLearnset[] = {
@@ -9938,6 +9939,7 @@ static const u16 sIndeedeeEliteLearnset[] = {
 
 static const u16 sIndeedeeMEliteLearnset[] = {
     //MOVE_AROMATHERAPY, //added back in to normal learnset from SwSh
+    MOVE_PSYSTRIKE,
     MOVE_PAY_DAY,
     MOVE_POWER_SWAP,
     MOVE_TERRAIN_PULSE,
@@ -9946,6 +9948,7 @@ static const u16 sIndeedeeMEliteLearnset[] = {
 
 static const u16 sIndeedeeFEliteLearnset[] = {
     //MOVE_AROMATHERAPY, //added back in to normal learnset from SwSh
+    MOVE_PSYSTRIKE,
     MOVE_GUARD_SWAP,
     MOVE_PAY_DAY,
     MOVE_PSYCHO_SHIFT,

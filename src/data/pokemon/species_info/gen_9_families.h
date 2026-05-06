@@ -8354,6 +8354,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .isParadox = TRUE,
         .levelUpLearnset = sIronBoulderLevelUpLearnset,
         .teachableLearnset = sIronBoulderTeachableLearnset,
+        .eliteLearnset = sIronBoulderEliteLearnset,
     },
 #endif //P_FAMILY_IRON_BOULDER
 
@@ -8421,6 +8422,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .isParadox = TRUE,
         .levelUpLearnset = sIronCrownLevelUpLearnset,
         .teachableLearnset = sIronCrownTeachableLearnset,
+        .eliteLearnset = sIronCrownEliteLearnset,
     },
 #endif //P_FAMILY_IRON_CROWN
 

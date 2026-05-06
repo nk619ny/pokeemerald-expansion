@@ -1873,7 +1873,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sPanpourLevelUpLearnset,
         .teachableLearnset = sPanpourTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sPanpourEliteLearnset,
         .eggMoveLearnset = sPanpourEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_SIMIPOUR}),
     },
@@ -4691,7 +4691,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .isHisuianForm = TRUE,
         .levelUpLearnset = sLilligantHisuiLevelUpLearnset,
         .teachableLearnset = sLilligantHisuiTeachableLearnset,
-        .eliteLearnset = sLilligantEliteLearnset,
+        .eliteLearnset = sLilligantHisuiEliteLearnset,
         .formSpeciesIdTable = sLilligantFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
@@ -4973,7 +4973,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sBasculegionLevelUpLearnset,
         .teachableLearnset = sBasculegionTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sBasculegionEliteLearnset,
         .formSpeciesIdTable = sBasculegionFormSpeciesIdTable,
     },
 
@@ -5038,7 +5038,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sBasculegionLevelUpLearnset,
         .teachableLearnset = sBasculegionTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sBasculegionEliteLearnset,
         .formSpeciesIdTable = sBasculegionFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
@@ -11296,6 +11296,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .isGalarianForm = TRUE,
         .levelUpLearnset = sStunfiskGalarLevelUpLearnset,
         .teachableLearnset = sStunfiskGalarTeachableLearnset,
+        .eliteLearnset = sStunfiskGalarEliteLearnset,
         .eggMoveLearnset = sStunfiskGalarEggMoveLearnset,
         .formSpeciesIdTable = sStunfiskFormSpeciesIdTable,
     },
