@@ -8345,7 +8345,7 @@ MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_10:
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_11:
 # 1953 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Loaded Dice       300 coins$"
+	.string "Loaded Dice      300 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPermanentHeldItems_Text_12:
 # 1954 "data/maps/MauvilleCity_GameCorner/scripts.pory"
