@@ -29,7 +29,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_TryShowScott::
 # 15 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 	goto_if_unset FLAG_BADGE06_GET, Common_EventScript_NopReturn
 # 16 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
-	clearflag FLAG_HIDE_EVER_GRANDE_POKEMON_CENTER_1F_SCOTT
+	//clearflag FLAG_HIDE_EVER_GRANDE_POKEMON_CENTER_1F_SCOTT
 # 17 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 	return
 # 18 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
@@ -91,7 +91,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_Scott::
 # 46 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 	waitse
 # 47 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
-	removeobject LOCALID_EVER_GRANDE_SCOTT
+	//removeobject LOCALID_EVER_GRANDE_SCOTT
 # 48 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 	release
 # 49 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
@@ -101,7 +101,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_Scott::
 # 51 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 EverGrandeCity_PokemonCenter_1F_EventScript_ScottExitNorth::
 # 52 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_EVER_GRANDE_SCOTT, EverGrandeCity_PokemonCenter_1F_Movement_ScottExitNorth
+	//applymovement LOCALID_EVER_GRANDE_SCOTT, EverGrandeCity_PokemonCenter_1F_Movement_ScottExitNorth
 # 53 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 	waitmovement 0
 # 54 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
@@ -111,7 +111,7 @@ EverGrandeCity_PokemonCenter_1F_EventScript_ScottExitNorth::
 # 56 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 EverGrandeCity_PokemonCenter_1F_EventScript_ScottExit::
 # 57 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_EVER_GRANDE_SCOTT, EverGrandeCity_PokemonCenter_1F_Movement_ScottExit
+	//applymovement LOCALID_EVER_GRANDE_SCOTT, EverGrandeCity_PokemonCenter_1F_Movement_ScottExit
 # 58 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
 	waitmovement 0
 # 59 "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.pory"
