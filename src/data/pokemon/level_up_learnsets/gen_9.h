@@ -19503,10 +19503,13 @@ static const struct LevelUpMove sZeraoraLevelUpLearnset[] = {
 static const struct LevelUpMove sMeltanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
+    LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH), //added
     LEVEL_UP_MOVE( 8, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE(16, MOVE_HEADBUTT),
+    LEVEL_UP_MOVE(20, MOVE_DISCHARGE), //added
     LEVEL_UP_MOVE(24, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE(32, MOVE_ACID_ARMOR),
+    LEVEL_UP_MOVE(36, MOVE_IRON_HEAD), //added
     LEVEL_UP_MOVE(40, MOVE_FLASH_CANNON),
     LEVEL_UP_END
 };
