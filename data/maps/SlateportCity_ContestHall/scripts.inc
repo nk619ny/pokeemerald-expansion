@@ -173,91 +173,93 @@ SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu::
 # 105 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	closemessage
 # 106 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	giveitem ITEM_CONTEST_PASS
+# 107 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 
 SlateportCity_ContestHall_EventScript_Fan1::
-# 111 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	lock
 # 112 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	faceplayer
+	lock
 # 113 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	msgbox SlateportCity_ContestHall_EventScript_Fan1_Text_0, MSGBOX_DEFAULT
+	faceplayer
 # 114 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	closemessage
+	msgbox SlateportCity_ContestHall_EventScript_Fan1_Text_0, MSGBOX_DEFAULT
 # 115 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	closemessage
 # 116 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 117 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	waitmovement 0
+# 118 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 
 SlateportCity_ContestHall_EventScript_Fan2::
-# 122 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	lock
 # 123 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	faceplayer
+	lock
 # 124 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	msgbox SlateportCity_ContestHall_EventScript_Fan2_Text_0, MSGBOX_DEFAULT
+	faceplayer
 # 125 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	closemessage
+	msgbox SlateportCity_ContestHall_EventScript_Fan2_Text_0, MSGBOX_DEFAULT
 # 126 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	closemessage
 # 127 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 128 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	waitmovement 0
+# 129 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 
 SlateportCity_ContestHall_EventScript_Fan3::
-# 133 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	lock
 # 134 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	faceplayer
+	lock
 # 135 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	msgbox SlateportCity_ContestHall_EventScript_Fan3_Text_0, MSGBOX_DEFAULT
+	faceplayer
 # 136 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	closemessage
+	msgbox SlateportCity_ContestHall_EventScript_Fan3_Text_0, MSGBOX_DEFAULT
 # 137 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	closemessage
 # 138 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 139 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	waitmovement 0
+# 140 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 
 SlateportCity_ContestHall_EventScript_Encore::
-# 144 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	lock
 # 145 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	faceplayer
+	lock
 # 146 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	checkitem ITEM_TM_ENCORE
+	faceplayer
 # 147 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	checkitem ITEM_TM_ENCORE
+# 148 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SlateportCity_ContestHall_EventScript_Encore_2
 SlateportCity_ContestHall_EventScript_Encore_1:
-# 153 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	msgbox SlateportCity_ContestHall_EventScript_Encore_Text_1, MSGBOX_DEFAULT
 # 154 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	closemessage
+	msgbox SlateportCity_ContestHall_EventScript_Encore_Text_1, MSGBOX_DEFAULT
 # 155 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	closemessage
+# 156 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 SlateportCity_ContestHall_EventScript_Encore_2:
-# 148 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	msgbox SlateportCity_ContestHall_EventScript_Encore_Text_0, MSGBOX_DEFAULT
 # 149 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	closemessage
+	msgbox SlateportCity_ContestHall_EventScript_Encore_Text_0, MSGBOX_DEFAULT
 # 150 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	giveitem ITEM_TM_ENCORE
+	closemessage
 # 151 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	giveitem ITEM_TM_ENCORE
+# 152 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	waitfanfare
 	goto SlateportCity_ContestHall_EventScript_Encore_1
 
@@ -312,20 +314,20 @@ SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu_Text_0:
 	.string "when in costume!$"
 
 SlateportCity_ContestHall_EventScript_Fan1_Text_0:
-# 113 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 114 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "I'm Lisia's biggest fan!$"
 
 SlateportCity_ContestHall_EventScript_Fan2_Text_0:
-# 124 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 125 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "Lisia and her Altaria are so cool!$"
 
 SlateportCity_ContestHall_EventScript_Fan3_Text_0:
-# 135 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 136 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "Don't tell anyone, but I don't even know\n"
 	.string "the rules to Pokémon contests.$"
 
 SlateportCity_ContestHall_EventScript_Encore_Text_0:
-# 148 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 149 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "As a judge, sometimes I am so blown\n"
 	.string "away, I want an immediate repeat\l"
 	.string "performance.\p"
@@ -333,6 +335,6 @@ SlateportCity_ContestHall_EventScript_Encore_Text_0:
 	.string "see the same move again!$"
 
 SlateportCity_ContestHall_EventScript_Encore_Text_1:
-# 153 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 154 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "The Encore is often better than the\n"
 	.string "first performance!$"

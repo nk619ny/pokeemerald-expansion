@@ -663,6 +663,7 @@ static const u8 *const sActionStringTable[] =
     [PARTY_MSG_NO_POKEMON]             = COMPOUND_STRING("You have no Pokémon."),
     [PARTY_MSG_CHOOSE_MON_FOR_BOX]     = gText_SendWhichMonToPC,
     [PARTY_MSG_MOVE_ITEM_WHERE]        = gText_MoveItemWhere,
+    [PARTY_MSG_WHICH_COSTUME]          = COMPOUND_STRING("Choose a\ncostume!"),
 };
 
 static const u8 *const sDescriptionStringTable[] =
@@ -729,6 +730,12 @@ struct
     [MENU_CATALOG_FRIDGE]  = {COMPOUND_STRING("Refrigerator"),    CursorCb_CatalogFridge},
     [MENU_CATALOG_FAN]     = {COMPOUND_STRING("Electric fan"),    CursorCb_CatalogFan},
     [MENU_CATALOG_MOWER]   = {COMPOUND_STRING("Lawn mower"),      CursorCb_CatalogMower},
+    [MENU_CONTEST_COSPLAY]   = {COMPOUND_STRING("Cosplay"),       CursorCb_ContestCosplay},
+    [MENU_CONTEST_ROCK_STAR] = {COMPOUND_STRING("Rock Star"),     CursorCb_ContestRockStar},
+    [MENU_CONTEST_BELLE]     = {COMPOUND_STRING("Belle"),         CursorCb_ContestBelle},
+    [MENU_CONTEST_POP_STAR]  = {COMPOUND_STRING("Pop Star"),      CursorCb_ContestPopStar},
+    [MENU_CONTEST_PHD]       = {COMPOUND_STRING("Ph.D."),         CursorCb_ContestPhD},
+    [MENU_CONTEST_LIBRE]     = {COMPOUND_STRING("Libre"),         CursorCb_ContestLibre},
     [MENU_CHANGE_FORM]     = {COMPOUND_STRING("Change form"),     CursorCb_ChangeForm},
     [MENU_CHANGE_ABILITY]  = {COMPOUND_STRING("Change Ability"),  CursorCb_ChangeAbility},
 };
@@ -748,6 +755,7 @@ static const u8 sPartyMenuAction_TradeSummaryCancel2[] = {MENU_TRADE2, MENU_SUMM
 static const u8 sPartyMenuAction_TakeItemTossCancel[] = {MENU_TAKE_ITEM, MENU_TOSS, MENU_CANCEL1};
 static const u8 sPartyMenuAction_RotomCatalog[] = {MENU_CATALOG_BULB, MENU_CATALOG_OVEN, MENU_CATALOG_WASHING, MENU_CATALOG_FRIDGE, MENU_CATALOG_FAN, MENU_CATALOG_MOWER, MENU_CANCEL1};
 static const u8 sPartyMenuAction_ZygardeCube[] = {MENU_CHANGE_FORM, MENU_CHANGE_ABILITY, MENU_CANCEL1};
+static const u8 sPartyMenuAction_ContestPass[] = {MENU_CONTEST_COSPLAY, MENU_CONTEST_ROCK_STAR, MENU_CONTEST_BELLE, MENU_CONTEST_POP_STAR, MENU_CONTEST_PHD, MENU_CONTEST_LIBRE, MENU_CANCEL1};
 
 
 
@@ -769,6 +777,7 @@ static const u8 *const sPartyMenuActions[] =
     [ACTIONS_TAKEITEM_TOSS] = sPartyMenuAction_TakeItemTossCancel,
     [ACTIONS_ROTOM_CATALOG] = sPartyMenuAction_RotomCatalog,
     [ACTIONS_ZYGARDE_CUBE]  = sPartyMenuAction_ZygardeCube,
+    [ACTIONS_CONTEST_PASS]  = sPartyMenuAction_ContestPass,
 };
 
 static const u8 sPartyMenuActionCounts[] =
@@ -789,6 +798,7 @@ static const u8 sPartyMenuActionCounts[] =
     [ACTIONS_TAKEITEM_TOSS] = ARRAY_COUNT(sPartyMenuAction_TakeItemTossCancel),
     [ACTIONS_ROTOM_CATALOG] = ARRAY_COUNT(sPartyMenuAction_RotomCatalog),
     [ACTIONS_ZYGARDE_CUBE]  = ARRAY_COUNT(sPartyMenuAction_ZygardeCube),
+    [ACTIONS_CONTEST_PASS]  = ARRAY_COUNT(sPartyMenuAction_ContestPass),
 };
 
 static const u8 *const sUnionRoomTradeMessages[] =
@@ -1104,6 +1114,13 @@ static const u8 *const sUnused_StatStrings[] =
 #define ROTOM_FAN_MOVE   MOVE_AIR_SLASH
 #define ROTOM_MOW_MOVE   MOVE_LEAF_STORM
 
+#define PIKACHU_COSPLAY_MOVE   MOVE_THUNDER_SHOCK
+#define PIKACHU_ROCK_STAR_MOVE MOVE_METEOR_MASH
+#define PIKACHU_BELLE_MOVE     MOVE_TRIPLE_AXEL
+#define PIKACHU_POP_STAR_MOVE  MOVE_DRAINING_KISS
+#define PIKACHU_PHD_MOVE       MOVE_RISING_VOLTAGE
+#define PIKACHU_LIBRE_MOVE     MOVE_FLYING_PRESS
+
 static const u16 sRotomFormChangeMoves[5] =
 {
     ROTOM_HEAT_MOVE,
@@ -1111,4 +1128,14 @@ static const u16 sRotomFormChangeMoves[5] =
     ROTOM_FROST_MOVE,
     ROTOM_FAN_MOVE,
     ROTOM_MOW_MOVE,
+};
+
+static const u16 sCosplayPikachuFormChangeMoves[6] =
+{
+    PIKACHU_COSPLAY_MOVE,
+    PIKACHU_ROCK_STAR_MOVE,
+    PIKACHU_BELLE_MOVE,
+    PIKACHU_POP_STAR_MOVE,
+    PIKACHU_PHD_MOVE,
+    PIKACHU_LIBRE_MOVE,
 };

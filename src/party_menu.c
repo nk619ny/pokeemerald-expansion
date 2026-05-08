@@ -113,6 +113,12 @@ enum {
     MENU_CATALOG_FRIDGE,
     MENU_CATALOG_FAN,
     MENU_CATALOG_MOWER,
+    MENU_CONTEST_COSPLAY,
+    MENU_CONTEST_ROCK_STAR,
+    MENU_CONTEST_BELLE,
+    MENU_CONTEST_POP_STAR,
+    MENU_CONTEST_PHD,
+    MENU_CONTEST_LIBRE,
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
     MENU_FIELD_MOVES
@@ -137,6 +143,7 @@ enum {
     ACTIONS_TAKEITEM_TOSS,
     ACTIONS_ROTOM_CATALOG,
     ACTIONS_ZYGARDE_CUBE,
+    ACTIONS_CONTEST_PASS,
 };
 
 enum {
@@ -490,6 +497,12 @@ static void CursorCb_CatalogWashing(u8);
 static void CursorCb_CatalogFridge(u8);
 static void CursorCb_CatalogFan(u8);
 static void CursorCb_CatalogMower(u8);
+static void CursorCb_ContestCosplay(u8);
+static void CursorCb_ContestRockStar(u8);
+static void CursorCb_ContestBelle(u8);
+static void CursorCb_ContestPopStar(u8);
+static void CursorCb_ContestPhD(u8);
+static void CursorCb_ContestLibre(u8);
 static void CursorCb_ChangeForm(u8);
 static void CursorCb_ChangeAbility(u8);
 void TryItemHoldFormChange(struct Pokemon *mon, s8 slotId);
@@ -2713,6 +2726,9 @@ void DisplayPartyMenuStdMessage(u32 stringId)
         case PARTY_MSG_WHICH_APPLIANCE:
             *windowPtr = AddWindow(&sOrderWhichApplianceMsgWindowTemplate);
             break;
+        case PARTY_MSG_WHICH_COSTUME:
+            *windowPtr = AddWindow(&sOrderWhichApplianceMsgWindowTemplate);
+            break;
         default:
             *windowPtr = AddWindow(&sDefaultPartyMsgWindowTemplate);
             break;
@@ -2777,6 +2793,9 @@ static u8 DisplaySelectionWindow(u8 windowType)
         break;
     case SELECTWINDOW_ZYGARDECUBE:
         window = sZygardeCubeSelectWindowTemplate;
+        break;
+    case SELECTWINDOW_CONTEST_PASS:
+        window = sCatalogSelectWindowTemplate;
         break;
     default: // SELECTWINDOW_MOVES
         window = sMoveSelectWindowTemplate;
@@ -6718,6 +6737,13 @@ static void Task_TryItemUseFormChange(u8 taskId)
                 else
                     FormChangeTeachMove(taskId, gSpecialVar_0x8000, gPartyMenu.slotId);
             }
+            else if (gSpecialVar_ItemId == ITEM_CONTEST_PASS)
+            {
+                u32 i;
+                for (i = 0; i < ARRAY_COUNT(sCosplayPikachuFormChangeMoves); i++)
+                    DeleteMove(mon, sCosplayPikachuFormChangeMoves[i]);
+                FormChangeTeachMove(taskId, gSpecialVar_0x8000, gPartyMenu.slotId);
+            }
 
             gTasks[taskId].tState++;
         }
@@ -6771,6 +6797,17 @@ void ItemUseCB_RotomCatalog(u8 taskId, TaskFunc task)
     SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_ROTOM_CATALOG);
     DisplaySelectionWindow(SELECTWINDOW_CATALOG);
     DisplayPartyMenuStdMessage(PARTY_MSG_WHICH_APPLIANCE);
+    gTasks[taskId].data[0] = 0xFF;
+    gTasks[taskId].func = Task_HandleSelectionMenuInput;
+}
+
+void ItemUseCB_ContestPass(u8 taskId, TaskFunc task)
+{
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+    SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_CONTEST_PASS);
+    DisplaySelectionWindow(SELECTWINDOW_CONTEST_PASS);
+    DisplayPartyMenuStdMessage(PARTY_MSG_WHICH_COSTUME);
     gTasks[taskId].data[0] = 0xFF;
     gTasks[taskId].func = Task_HandleSelectionMenuInput;
 }
@@ -6842,6 +6879,48 @@ static void CursorCb_CatalogMower(u8 taskId)
 {
     gSpecialVar_Result = 5;
     gSpecialVar_0x8000 = ROTOM_MOW_MOVE;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_ContestCosplay(u8 taskId)
+{
+    gSpecialVar_Result = 0;
+    gSpecialVar_0x8000 = PIKACHU_COSPLAY_MOVE;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_ContestRockStar(u8 taskId)
+{
+    gSpecialVar_Result = 1;
+    gSpecialVar_0x8000 = PIKACHU_ROCK_STAR_MOVE;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_ContestBelle(u8 taskId)
+{
+    gSpecialVar_Result = 2;
+    gSpecialVar_0x8000 = PIKACHU_BELLE_MOVE;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_ContestPopStar(u8 taskId)
+{
+    gSpecialVar_Result = 3;
+    gSpecialVar_0x8000 = PIKACHU_POP_STAR_MOVE;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_ContestPhD(u8 taskId)
+{
+    gSpecialVar_Result = 4;
+    gSpecialVar_0x8000 = PIKACHU_PHD_MOVE;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_ContestLibre(u8 taskId)
+{
+    gSpecialVar_Result = 5;
+    gSpecialVar_0x8000 = PIKACHU_LIBRE_MOVE;
     TryMultichoiceFormChange(taskId);
 }
 

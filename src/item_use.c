@@ -1728,6 +1728,12 @@ void ItemUseOutOfBattle_RotomCatalog(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
+void ItemUseOutOfBattle_ContestPass(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_ContestPass;
+    SetUpItemUseCallback(taskId);
+}
+
 void ItemUseOutOfBattle_ZygardeCube(u8 taskId)
 {
     gItemUseCB = ItemUseCB_ZygardeCube;

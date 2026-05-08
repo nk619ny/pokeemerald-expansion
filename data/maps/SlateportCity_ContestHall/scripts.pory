@@ -103,6 +103,7 @@ script SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu {
     faceplayer
     msgbox(format("Lisia: That Pikachu can wear several different outfits.\pIt is such a cosplay prodigy, it can actually gain a new move and typing when in costume!"), MSGBOX_DEFAULT)
     closemessage
+    giveitem(ITEM_CONTEST_PASS)
     releaseall
     end
 }
