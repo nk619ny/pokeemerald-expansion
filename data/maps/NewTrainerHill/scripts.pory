@@ -536,6 +536,42 @@ NewTrainerHill_Movement_RefereeExit:
 	walk_left
 	walk_left
 	step_end
+
+NewTrainerHill_Text_GlaciaDefeat:
+	.string "You and your Pokémon…\n"
+	.string "How hot your spirits burn!$"
+
+
+NewTrainerHill_Text_Glacia:
+	.string "I've traveled from afar to HOENN\n"
+	.string "so that I may hone my ice skills.\p"
+	.string "But all I have seen are challenges by\n"
+	.string "weak TRAINERS and their Pokémon.\p"
+	.string "What about you?\p"
+	.string "It would please me to no end if I could\n"
+	.string "go all out against you!$"
+
+
+NewTrainerHill_Text_Drake:
+	.string "For us to battle with Pokémon as\n"
+	.string "partners, do you know what it takes?\p"
+	.string "Do you know what is needed?\p"
+	.string "If you don't, then you will never\n"
+	.string "prevail over me!$"
+
+NewTrainerHill_Text_Phoebe:
+	.string "While I trained, I gained the ability\n"
+	.string "to commune with GHOST-type Pokémon.\p"
+	.string "Yes, the bond I developed with Pokémon\n"
+	.string "is extremely tight.\p"
+	.string "So, come on, just try and see if you can\n"
+	.string "even inflict damage on my Pokémon!$"
+
+NewTrainerHill_Text_Sidney:
+	.string "I like that look you're giving me.\n"
+	.string "I guess you'll give me a good match.\l"
+	.string "That's good! Looking real good!\p"
+
 `
 
 
@@ -580,13 +616,21 @@ script NewTrainerHill_EventScript_AnnouncePlayer {
 script NewTrainerHill_EventScript_SetOpponent {
 	switch (var(VAR_TRAINER_HILL_STATE)) {
 		case 1:
-			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_YOUNGSTER)
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LISIA)
 		case 2:
-			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_BEAUTY)
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GLACIA)
 		case 3:
-			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SCIENTIST_1)
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SIDNEY)
 		case 4:
-			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_EXPERT_F)
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_DRAKE)
+		case 5:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PHOEBE)
+		case 6:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPENSER)
+		case 7:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GRETA)
+		case 8:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_ZINNIA)
 	}
 	return
 }
@@ -594,13 +638,21 @@ script NewTrainerHill_EventScript_SetOpponent {
 script NewTrainerHill_EventScript_AnnounceOpponent {
 	switch (var(VAR_TRAINER_HILL_STATE)) {
 		case 1:
-			msgbox(format("{PLAYER} will be facing Charlie, a Youngster from Dewford Town!"), MSGBOX_NPC)
+			msgbox(format("{PLAYER} will be facing Lisia, the Hoenn Contest Star making her battle debut!"), MSGBOX_NPC)
 		case 2:
-			msgbox(format("{PLAYER} will be facing Lily, a Beauty from Slateport City!"), MSGBOX_NPC)
+			msgbox(format("{PLAYER} will be facing Glacia, the Ice-type specialist!"), MSGBOX_NPC)
 		case 3:
-			msgbox(format("{PLAYER} will be facing Max, a Scientist from Mauville City!"), MSGBOX_NPC)
+			msgbox(format("{PLAYER} will be facing the rogue Sidney!"), MSGBOX_NPC)
 		case 4:
-			msgbox(format("{PLAYER} will be facing Flora, an Expert from Lilycove City!"), MSGBOX_NPC)
+			msgbox(format("{PLAYER} will be facing Drake, the wild Dragon specialist!"), MSGBOX_NPC)
+		case 5:
+			msgbox(format("{PLAYER} will be facing Phoebe, fresh off training at Mt. Pyre!"), MSGBOX_NPC)
+		case 6:
+			msgbox(format("{PLAYER} will be facing Spenser!"), MSGBOX_NPC)
+		case 7:
+			msgbox(format("{PLAYER} will be facing Greta!"), MSGBOX_NPC)
+		case 8:
+			msgbox(format("{PLAYER} will be facing Zinnia!"), MSGBOX_NPC)
 	}
 	return
 }
@@ -608,13 +660,43 @@ script NewTrainerHill_EventScript_AnnounceOpponent {
 script NewTrainerHill_EventScript_StartBattle {
 	switch (var(VAR_TRAINER_HILL_STATE)) {
 		case 1:
-			trainerbattle_no_intro(TRAINER_HILL_1, LilycoveCity_Text_BrendanDefeat)
+			trainerbattle_no_intro(TRAINER_HILL_1, NewTrainerHill_Text_LisiaDefeated)
 		case 2:
-			trainerbattle_no_intro(TRAINER_HILL_2, LilycoveCity_Text_BrendanDefeat)
+			trainerbattle_no_intro(TRAINER_HILL_2, NewTrainerHill_Text_GlaciaDefeat)
 		case 3:
-			trainerbattle_no_intro(TRAINER_HILL_3, LilycoveCity_Text_BrendanDefeat)
+			trainerbattle_no_intro(TRAINER_HILL_3, EverGrandeCity_SidneysRoom_Text_Defeat)
 		case 4:
-			trainerbattle_no_intro(TRAINER_HILL_4, LilycoveCity_Text_BrendanDefeat)
+			trainerbattle_no_intro(TRAINER_HILL_4, EverGrandeCity_DrakesRoom_Text_Defeat)
+		case 5:
+			trainerbattle_no_intro(TRAINER_HILL_5, EverGrandeCity_PhoebesRoom_Text_Defeat)
+		case 6:
+			trainerbattle_no_intro(TRAINER_HILL_6, LilycoveCity_Text_BrendanDefeat)
+		case 7:
+			trainerbattle_no_intro(TRAINER_HILL_7, LilycoveCity_Text_BrendanDefeat)
+		case 8:
+			trainerbattle_no_intro(TRAINER_HILL_8, LilycoveCity_Text_BrendanDefeat)
+	}
+	return
+}
+
+script NewTrainerHill_EventScript_OpponentDialogue {
+	switch (var(VAR_TRAINER_HILL_STATE)) {
+		case 1:
+			msgbox(format("Lisia: We're just as Tough and Smart as we are Cute and Cool!"), MSGBOX_NPC)
+		case 2:
+			msgbox(NewTrainerHill_Text_Glacia, MSGBOX_NPC)
+		case 3:
+			msgbox(NewTrainerHill_Text_Sidney, MSGBOX_NPC)
+		case 4:
+			msgbox(NewTrainerHill_Text_Drake, MSGBOX_NPC)
+		case 5:
+			msgbox(NewTrainerHill_Text_Phoebe, MSGBOX_NPC)
+		case 6:
+			msgbox(format("Spenser: Let's see what you've got!"), MSGBOX_NPC)
+		case 7:
+			msgbox(format("Greta: Prepare for a challenging battle!"), MSGBOX_NPC)
+		case 8:
+			msgbox(format("Zinnia: Let's see what you've got!"), MSGBOX_NPC)
 	}
 	return
 }
@@ -626,7 +708,9 @@ script NewTrainerHill_EventScript_NewBattleSequence {
 	applymovement(LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_OpponentStepForward)
 	applymovement(LOCALID_PLAYER, Common_Movement_WalkDownOneStep)
 	waitmovement(0)
-	delay(60)
+	delay(30)
+	call(NewTrainerHill_EventScript_OpponentDialogue)
+	closemessage
 	call(NewTrainerHill_EventScript_StartBattle)
 	//addvar(VAR_TRAINER_HILL_STATE, 1)
 	//warp(MAP_TRAINER_HILL_ENTRANCE, 5, 11)
@@ -647,4 +731,8 @@ script NewTrainerHill_EventScript_VictorySequence {
 	warp(MAP_TRAINER_HILL_ENTRANCE, 9, 1)
 	//call(NewTrainerHill_EventScript_ReceiveReward)
 	return
+}
+
+text NewTrainerHill_Text_LisiaDefeated {
+	format("Lisia: That was an incredible performance!")
 }

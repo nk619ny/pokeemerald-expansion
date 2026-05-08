@@ -1074,305 +1074,567 @@ NewTrainerHill_Movement_RefereeExit:
 	walk_left
 # 538 "data/maps/NewTrainerHill/scripts.pory"
 	step_end
+# 539 "data/maps/NewTrainerHill/scripts.pory"
+
+# 540 "data/maps/NewTrainerHill/scripts.pory"
+NewTrainerHill_Text_GlaciaDefeat:
+# 541 "data/maps/NewTrainerHill/scripts.pory"
+	.string "You and your Pokémon…\n"
+# 542 "data/maps/NewTrainerHill/scripts.pory"
+	.string "How hot your spirits burn!$"
+# 543 "data/maps/NewTrainerHill/scripts.pory"
+
+# 544 "data/maps/NewTrainerHill/scripts.pory"
+
+# 545 "data/maps/NewTrainerHill/scripts.pory"
+NewTrainerHill_Text_Glacia:
+# 546 "data/maps/NewTrainerHill/scripts.pory"
+	.string "I've traveled from afar to HOENN\n"
+# 547 "data/maps/NewTrainerHill/scripts.pory"
+	.string "so that I may hone my ice skills.\p"
+# 548 "data/maps/NewTrainerHill/scripts.pory"
+	.string "But all I have seen are challenges by\n"
+# 549 "data/maps/NewTrainerHill/scripts.pory"
+	.string "weak TRAINERS and their Pokémon.\p"
+# 550 "data/maps/NewTrainerHill/scripts.pory"
+	.string "What about you?\p"
+# 551 "data/maps/NewTrainerHill/scripts.pory"
+	.string "It would please me to no end if I could\n"
+# 552 "data/maps/NewTrainerHill/scripts.pory"
+	.string "go all out against you!$"
+# 553 "data/maps/NewTrainerHill/scripts.pory"
+
+# 554 "data/maps/NewTrainerHill/scripts.pory"
+
+# 555 "data/maps/NewTrainerHill/scripts.pory"
+NewTrainerHill_Text_Drake:
+# 556 "data/maps/NewTrainerHill/scripts.pory"
+	.string "For us to battle with Pokémon as\n"
+# 557 "data/maps/NewTrainerHill/scripts.pory"
+	.string "partners, do you know what it takes?\p"
+# 558 "data/maps/NewTrainerHill/scripts.pory"
+	.string "Do you know what is needed?\p"
+# 559 "data/maps/NewTrainerHill/scripts.pory"
+	.string "If you don't, then you will never\n"
+# 560 "data/maps/NewTrainerHill/scripts.pory"
+	.string "prevail over me!$"
+# 561 "data/maps/NewTrainerHill/scripts.pory"
+
+# 562 "data/maps/NewTrainerHill/scripts.pory"
+NewTrainerHill_Text_Phoebe:
+# 563 "data/maps/NewTrainerHill/scripts.pory"
+	.string "While I trained, I gained the ability\n"
+# 564 "data/maps/NewTrainerHill/scripts.pory"
+	.string "to commune with GHOST-type Pokémon.\p"
+# 565 "data/maps/NewTrainerHill/scripts.pory"
+	.string "Yes, the bond I developed with Pokémon\n"
+# 566 "data/maps/NewTrainerHill/scripts.pory"
+	.string "is extremely tight.\p"
+# 567 "data/maps/NewTrainerHill/scripts.pory"
+	.string "So, come on, just try and see if you can\n"
+# 568 "data/maps/NewTrainerHill/scripts.pory"
+	.string "even inflict damage on my Pokémon!$"
+# 569 "data/maps/NewTrainerHill/scripts.pory"
+
+# 570 "data/maps/NewTrainerHill/scripts.pory"
+NewTrainerHill_Text_Sidney:
+# 571 "data/maps/NewTrainerHill/scripts.pory"
+	.string "I like that look you're giving me.\n"
+# 572 "data/maps/NewTrainerHill/scripts.pory"
+	.string "I guess you'll give me a good match.\l"
+# 573 "data/maps/NewTrainerHill/scripts.pory"
+	.string "That's good! Looking real good!\p"
 
 NewTrainerHill_EventScript_SetupAudienceCount::
-# 543 "data/maps/NewTrainerHill/scripts.pory"
+# 579 "data/maps/NewTrainerHill/scripts.pory"
 	goto_if_set FLAG_IS_CHAMPION, NewTrainerHill_EventScript_SetupAudienceCount_2
-# 546 "data/maps/NewTrainerHill/scripts.pory"
+# 582 "data/maps/NewTrainerHill/scripts.pory"
 	goto_if_set FLAG_BADGE06_GET, NewTrainerHill_EventScript_SetupAudienceCount_3
-# 549 "data/maps/NewTrainerHill/scripts.pory"
+# 585 "data/maps/NewTrainerHill/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, NewTrainerHill_EventScript_SetupAudienceCount_4
-# 553 "data/maps/NewTrainerHill/scripts.pory"
+# 589 "data/maps/NewTrainerHill/scripts.pory"
 	setvar VAR_TEMP_F, DOME_ROUND1
 NewTrainerHill_EventScript_SetupAudienceCount_1:
 	return
 
 NewTrainerHill_EventScript_SetupAudienceCount_2:
-# 544 "data/maps/NewTrainerHill/scripts.pory"
+# 580 "data/maps/NewTrainerHill/scripts.pory"
 	setvar VAR_TEMP_F, DOME_FINAL
 	goto NewTrainerHill_EventScript_SetupAudienceCount_1
 
 NewTrainerHill_EventScript_SetupAudienceCount_3:
-# 547 "data/maps/NewTrainerHill/scripts.pory"
+# 583 "data/maps/NewTrainerHill/scripts.pory"
 	setvar VAR_TEMP_F, DOME_SEMIFINAL
 	goto NewTrainerHill_EventScript_SetupAudienceCount_1
 
 NewTrainerHill_EventScript_SetupAudienceCount_4:
-# 550 "data/maps/NewTrainerHill/scripts.pory"
+# 586 "data/maps/NewTrainerHill/scripts.pory"
 	setvar VAR_TEMP_F, DOME_ROUND2
 	goto NewTrainerHill_EventScript_SetupAudienceCount_1
 
 
 NewTrainerHill_EventScript_AnnouncePlayer::
-# 559 "data/maps/NewTrainerHill/scripts.pory"
+# 595 "data/maps/NewTrainerHill/scripts.pory"
 	switch VAR_TRAINER_HILL_STATE
-# 560 "data/maps/NewTrainerHill/scripts.pory"
+# 596 "data/maps/NewTrainerHill/scripts.pory"
 	case 1, NewTrainerHill_EventScript_AnnouncePlayer_3
-# 562 "data/maps/NewTrainerHill/scripts.pory"
+# 598 "data/maps/NewTrainerHill/scripts.pory"
 	case 2, NewTrainerHill_EventScript_AnnouncePlayer_4
-# 564 "data/maps/NewTrainerHill/scripts.pory"
+# 600 "data/maps/NewTrainerHill/scripts.pory"
 	case 3, NewTrainerHill_EventScript_AnnouncePlayer_5
-# 565 "data/maps/NewTrainerHill/scripts.pory"
+# 601 "data/maps/NewTrainerHill/scripts.pory"
 	case 4, NewTrainerHill_EventScript_AnnouncePlayer_5
-# 567 "data/maps/NewTrainerHill/scripts.pory"
+# 603 "data/maps/NewTrainerHill/scripts.pory"
 	case 5, NewTrainerHill_EventScript_AnnouncePlayer_6
-# 568 "data/maps/NewTrainerHill/scripts.pory"
+# 604 "data/maps/NewTrainerHill/scripts.pory"
 	case 6, NewTrainerHill_EventScript_AnnouncePlayer_6
-# 570 "data/maps/NewTrainerHill/scripts.pory"
+# 606 "data/maps/NewTrainerHill/scripts.pory"
 	case 7, NewTrainerHill_EventScript_AnnouncePlayer_7
-# 572 "data/maps/NewTrainerHill/scripts.pory"
+# 608 "data/maps/NewTrainerHill/scripts.pory"
 	case 8, NewTrainerHill_EventScript_AnnouncePlayer_8
-# 575 "data/maps/NewTrainerHill/scripts.pory"
+# 611 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnouncePlayer_Text_6, MSGBOX_DEFAULT
 NewTrainerHill_EventScript_AnnouncePlayer_1:
 	return
 
 NewTrainerHill_EventScript_AnnouncePlayer_3:
-# 561 "data/maps/NewTrainerHill/scripts.pory"
+# 597 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnouncePlayer_Text_0, MSGBOX_DEFAULT
 	goto NewTrainerHill_EventScript_AnnouncePlayer_1
 
 NewTrainerHill_EventScript_AnnouncePlayer_4:
-# 563 "data/maps/NewTrainerHill/scripts.pory"
+# 599 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnouncePlayer_Text_1, MSGBOX_DEFAULT
 	goto NewTrainerHill_EventScript_AnnouncePlayer_1
 
 NewTrainerHill_EventScript_AnnouncePlayer_5:
-# 566 "data/maps/NewTrainerHill/scripts.pory"
+# 602 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnouncePlayer_Text_2, MSGBOX_DEFAULT
 	goto NewTrainerHill_EventScript_AnnouncePlayer_1
 
 NewTrainerHill_EventScript_AnnouncePlayer_6:
-# 569 "data/maps/NewTrainerHill/scripts.pory"
+# 605 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnouncePlayer_Text_3, MSGBOX_DEFAULT
 	goto NewTrainerHill_EventScript_AnnouncePlayer_1
 
 NewTrainerHill_EventScript_AnnouncePlayer_7:
-# 571 "data/maps/NewTrainerHill/scripts.pory"
+# 607 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnouncePlayer_Text_4, MSGBOX_DEFAULT
 	goto NewTrainerHill_EventScript_AnnouncePlayer_1
 
 NewTrainerHill_EventScript_AnnouncePlayer_8:
-# 573 "data/maps/NewTrainerHill/scripts.pory"
+# 609 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnouncePlayer_Text_5, MSGBOX_DEFAULT
 	goto NewTrainerHill_EventScript_AnnouncePlayer_1
 
 
 NewTrainerHill_EventScript_SetOpponent::
-# 581 "data/maps/NewTrainerHill/scripts.pory"
+# 617 "data/maps/NewTrainerHill/scripts.pory"
 	switch VAR_TRAINER_HILL_STATE
-# 582 "data/maps/NewTrainerHill/scripts.pory"
+# 618 "data/maps/NewTrainerHill/scripts.pory"
 	case 1, NewTrainerHill_EventScript_SetOpponent_3
-# 584 "data/maps/NewTrainerHill/scripts.pory"
+# 620 "data/maps/NewTrainerHill/scripts.pory"
 	case 2, NewTrainerHill_EventScript_SetOpponent_4
-# 586 "data/maps/NewTrainerHill/scripts.pory"
+# 622 "data/maps/NewTrainerHill/scripts.pory"
 	case 3, NewTrainerHill_EventScript_SetOpponent_5
-# 588 "data/maps/NewTrainerHill/scripts.pory"
+# 624 "data/maps/NewTrainerHill/scripts.pory"
 	case 4, NewTrainerHill_EventScript_SetOpponent_6
+# 626 "data/maps/NewTrainerHill/scripts.pory"
+	case 5, NewTrainerHill_EventScript_SetOpponent_7
+# 628 "data/maps/NewTrainerHill/scripts.pory"
+	case 6, NewTrainerHill_EventScript_SetOpponent_8
+# 630 "data/maps/NewTrainerHill/scripts.pory"
+	case 7, NewTrainerHill_EventScript_SetOpponent_9
+# 632 "data/maps/NewTrainerHill/scripts.pory"
+	case 8, NewTrainerHill_EventScript_SetOpponent_10
 NewTrainerHill_EventScript_SetOpponent_1:
 	return
 
 NewTrainerHill_EventScript_SetOpponent_3:
-# 583 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_YOUNGSTER
+# 619 "data/maps/NewTrainerHill/scripts.pory"
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LISIA
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_4:
-# 585 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_BEAUTY
+# 621 "data/maps/NewTrainerHill/scripts.pory"
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GLACIA
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_5:
-# 587 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SCIENTIST_1
+# 623 "data/maps/NewTrainerHill/scripts.pory"
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SIDNEY
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_6:
-# 589 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_EXPERT_F
+# 625 "data/maps/NewTrainerHill/scripts.pory"
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_DRAKE
+	goto NewTrainerHill_EventScript_SetOpponent_1
+
+NewTrainerHill_EventScript_SetOpponent_7:
+# 627 "data/maps/NewTrainerHill/scripts.pory"
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PHOEBE
+	goto NewTrainerHill_EventScript_SetOpponent_1
+
+NewTrainerHill_EventScript_SetOpponent_8:
+# 629 "data/maps/NewTrainerHill/scripts.pory"
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPENSER
+	goto NewTrainerHill_EventScript_SetOpponent_1
+
+NewTrainerHill_EventScript_SetOpponent_9:
+# 631 "data/maps/NewTrainerHill/scripts.pory"
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GRETA
+	goto NewTrainerHill_EventScript_SetOpponent_1
+
+NewTrainerHill_EventScript_SetOpponent_10:
+# 633 "data/maps/NewTrainerHill/scripts.pory"
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_ZINNIA
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 
 NewTrainerHill_EventScript_AnnounceOpponent::
-# 595 "data/maps/NewTrainerHill/scripts.pory"
+# 639 "data/maps/NewTrainerHill/scripts.pory"
 	switch VAR_TRAINER_HILL_STATE
-# 596 "data/maps/NewTrainerHill/scripts.pory"
+# 640 "data/maps/NewTrainerHill/scripts.pory"
 	case 1, NewTrainerHill_EventScript_AnnounceOpponent_3
-# 598 "data/maps/NewTrainerHill/scripts.pory"
+# 642 "data/maps/NewTrainerHill/scripts.pory"
 	case 2, NewTrainerHill_EventScript_AnnounceOpponent_4
-# 600 "data/maps/NewTrainerHill/scripts.pory"
+# 644 "data/maps/NewTrainerHill/scripts.pory"
 	case 3, NewTrainerHill_EventScript_AnnounceOpponent_5
-# 602 "data/maps/NewTrainerHill/scripts.pory"
+# 646 "data/maps/NewTrainerHill/scripts.pory"
 	case 4, NewTrainerHill_EventScript_AnnounceOpponent_6
+# 648 "data/maps/NewTrainerHill/scripts.pory"
+	case 5, NewTrainerHill_EventScript_AnnounceOpponent_7
+# 650 "data/maps/NewTrainerHill/scripts.pory"
+	case 6, NewTrainerHill_EventScript_AnnounceOpponent_8
+# 652 "data/maps/NewTrainerHill/scripts.pory"
+	case 7, NewTrainerHill_EventScript_AnnounceOpponent_9
+# 654 "data/maps/NewTrainerHill/scripts.pory"
+	case 8, NewTrainerHill_EventScript_AnnounceOpponent_10
 NewTrainerHill_EventScript_AnnounceOpponent_1:
 	return
 
 NewTrainerHill_EventScript_AnnounceOpponent_3:
-# 597 "data/maps/NewTrainerHill/scripts.pory"
+# 641 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnounceOpponent_Text_0, MSGBOX_NPC
 	goto NewTrainerHill_EventScript_AnnounceOpponent_1
 
 NewTrainerHill_EventScript_AnnounceOpponent_4:
-# 599 "data/maps/NewTrainerHill/scripts.pory"
+# 643 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnounceOpponent_Text_1, MSGBOX_NPC
 	goto NewTrainerHill_EventScript_AnnounceOpponent_1
 
 NewTrainerHill_EventScript_AnnounceOpponent_5:
-# 601 "data/maps/NewTrainerHill/scripts.pory"
+# 645 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnounceOpponent_Text_2, MSGBOX_NPC
 	goto NewTrainerHill_EventScript_AnnounceOpponent_1
 
 NewTrainerHill_EventScript_AnnounceOpponent_6:
-# 603 "data/maps/NewTrainerHill/scripts.pory"
+# 647 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_AnnounceOpponent_Text_3, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_AnnounceOpponent_1
+
+NewTrainerHill_EventScript_AnnounceOpponent_7:
+# 649 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_EventScript_AnnounceOpponent_Text_4, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_AnnounceOpponent_1
+
+NewTrainerHill_EventScript_AnnounceOpponent_8:
+# 651 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_EventScript_AnnounceOpponent_Text_5, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_AnnounceOpponent_1
+
+NewTrainerHill_EventScript_AnnounceOpponent_9:
+# 653 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_EventScript_AnnounceOpponent_Text_6, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_AnnounceOpponent_1
+
+NewTrainerHill_EventScript_AnnounceOpponent_10:
+# 655 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_EventScript_AnnounceOpponent_Text_7, MSGBOX_NPC
 	goto NewTrainerHill_EventScript_AnnounceOpponent_1
 
 
 NewTrainerHill_EventScript_StartBattle::
-# 609 "data/maps/NewTrainerHill/scripts.pory"
+# 661 "data/maps/NewTrainerHill/scripts.pory"
 	switch VAR_TRAINER_HILL_STATE
-# 610 "data/maps/NewTrainerHill/scripts.pory"
+# 662 "data/maps/NewTrainerHill/scripts.pory"
 	case 1, NewTrainerHill_EventScript_StartBattle_3
-# 612 "data/maps/NewTrainerHill/scripts.pory"
+# 664 "data/maps/NewTrainerHill/scripts.pory"
 	case 2, NewTrainerHill_EventScript_StartBattle_4
-# 614 "data/maps/NewTrainerHill/scripts.pory"
+# 666 "data/maps/NewTrainerHill/scripts.pory"
 	case 3, NewTrainerHill_EventScript_StartBattle_5
-# 616 "data/maps/NewTrainerHill/scripts.pory"
+# 668 "data/maps/NewTrainerHill/scripts.pory"
 	case 4, NewTrainerHill_EventScript_StartBattle_6
+# 670 "data/maps/NewTrainerHill/scripts.pory"
+	case 5, NewTrainerHill_EventScript_StartBattle_7
+# 672 "data/maps/NewTrainerHill/scripts.pory"
+	case 6, NewTrainerHill_EventScript_StartBattle_8
+# 674 "data/maps/NewTrainerHill/scripts.pory"
+	case 7, NewTrainerHill_EventScript_StartBattle_9
+# 676 "data/maps/NewTrainerHill/scripts.pory"
+	case 8, NewTrainerHill_EventScript_StartBattle_10
 NewTrainerHill_EventScript_StartBattle_1:
 	return
 
 NewTrainerHill_EventScript_StartBattle_3:
-# 611 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_1, LilycoveCity_Text_BrendanDefeat
+# 663 "data/maps/NewTrainerHill/scripts.pory"
+	trainerbattle_no_intro TRAINER_HILL_1, NewTrainerHill_Text_LisiaDefeated
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_4:
-# 613 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_2, LilycoveCity_Text_BrendanDefeat
+# 665 "data/maps/NewTrainerHill/scripts.pory"
+	trainerbattle_no_intro TRAINER_HILL_2, NewTrainerHill_Text_GlaciaDefeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_5:
-# 615 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_3, LilycoveCity_Text_BrendanDefeat
+# 667 "data/maps/NewTrainerHill/scripts.pory"
+	trainerbattle_no_intro TRAINER_HILL_3, EverGrandeCity_SidneysRoom_Text_Defeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_6:
-# 617 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_4, LilycoveCity_Text_BrendanDefeat
+# 669 "data/maps/NewTrainerHill/scripts.pory"
+	trainerbattle_no_intro TRAINER_HILL_4, EverGrandeCity_DrakesRoom_Text_Defeat
+	goto NewTrainerHill_EventScript_StartBattle_1
+
+NewTrainerHill_EventScript_StartBattle_7:
+# 671 "data/maps/NewTrainerHill/scripts.pory"
+	trainerbattle_no_intro TRAINER_HILL_5, EverGrandeCity_PhoebesRoom_Text_Defeat
+	goto NewTrainerHill_EventScript_StartBattle_1
+
+NewTrainerHill_EventScript_StartBattle_8:
+# 673 "data/maps/NewTrainerHill/scripts.pory"
+	trainerbattle_no_intro TRAINER_HILL_6, LilycoveCity_Text_BrendanDefeat
+	goto NewTrainerHill_EventScript_StartBattle_1
+
+NewTrainerHill_EventScript_StartBattle_9:
+# 675 "data/maps/NewTrainerHill/scripts.pory"
+	trainerbattle_no_intro TRAINER_HILL_7, LilycoveCity_Text_BrendanDefeat
+	goto NewTrainerHill_EventScript_StartBattle_1
+
+NewTrainerHill_EventScript_StartBattle_10:
+# 677 "data/maps/NewTrainerHill/scripts.pory"
+	trainerbattle_no_intro TRAINER_HILL_8, LilycoveCity_Text_BrendanDefeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 
+NewTrainerHill_EventScript_OpponentDialogue::
+# 683 "data/maps/NewTrainerHill/scripts.pory"
+	switch VAR_TRAINER_HILL_STATE
+# 684 "data/maps/NewTrainerHill/scripts.pory"
+	case 1, NewTrainerHill_EventScript_OpponentDialogue_3
+# 686 "data/maps/NewTrainerHill/scripts.pory"
+	case 2, NewTrainerHill_EventScript_OpponentDialogue_4
+# 688 "data/maps/NewTrainerHill/scripts.pory"
+	case 3, NewTrainerHill_EventScript_OpponentDialogue_5
+# 690 "data/maps/NewTrainerHill/scripts.pory"
+	case 4, NewTrainerHill_EventScript_OpponentDialogue_6
+# 692 "data/maps/NewTrainerHill/scripts.pory"
+	case 5, NewTrainerHill_EventScript_OpponentDialogue_7
+# 694 "data/maps/NewTrainerHill/scripts.pory"
+	case 6, NewTrainerHill_EventScript_OpponentDialogue_8
+# 696 "data/maps/NewTrainerHill/scripts.pory"
+	case 7, NewTrainerHill_EventScript_OpponentDialogue_9
+# 698 "data/maps/NewTrainerHill/scripts.pory"
+	case 8, NewTrainerHill_EventScript_OpponentDialogue_10
+NewTrainerHill_EventScript_OpponentDialogue_1:
+	return
+
+NewTrainerHill_EventScript_OpponentDialogue_3:
+# 685 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_EventScript_OpponentDialogue_Text_0, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_OpponentDialogue_1
+
+NewTrainerHill_EventScript_OpponentDialogue_4:
+# 687 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_Text_Glacia, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_OpponentDialogue_1
+
+NewTrainerHill_EventScript_OpponentDialogue_5:
+# 689 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_Text_Sidney, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_OpponentDialogue_1
+
+NewTrainerHill_EventScript_OpponentDialogue_6:
+# 691 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_Text_Drake, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_OpponentDialogue_1
+
+NewTrainerHill_EventScript_OpponentDialogue_7:
+# 693 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_Text_Phoebe, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_OpponentDialogue_1
+
+NewTrainerHill_EventScript_OpponentDialogue_8:
+# 695 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_EventScript_OpponentDialogue_Text_1, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_OpponentDialogue_1
+
+NewTrainerHill_EventScript_OpponentDialogue_9:
+# 697 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_EventScript_OpponentDialogue_Text_2, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_OpponentDialogue_1
+
+NewTrainerHill_EventScript_OpponentDialogue_10:
+# 699 "data/maps/NewTrainerHill/scripts.pory"
+	msgbox NewTrainerHill_EventScript_OpponentDialogue_Text_3, MSGBOX_NPC
+	goto NewTrainerHill_EventScript_OpponentDialogue_1
+
+
 NewTrainerHill_EventScript_NewBattleSequence::
-# 623 "data/maps/NewTrainerHill/scripts.pory"
+# 705 "data/maps/NewTrainerHill/scripts.pory"
 	call NewTrainerHill_EventScript_AnnounceOpponent
-# 624 "data/maps/NewTrainerHill/scripts.pory"
+# 706 "data/maps/NewTrainerHill/scripts.pory"
 	closemessage
-# 625 "data/maps/NewTrainerHill/scripts.pory"
+# 707 "data/maps/NewTrainerHill/scripts.pory"
 	applymovement LOCALID_DOME_PLAYER, BattleFrontier_BattleDomeBattleRoom_Movement_PlayerStepForward
-# 626 "data/maps/NewTrainerHill/scripts.pory"
+# 708 "data/maps/NewTrainerHill/scripts.pory"
 	applymovement LOCALID_DOME_OPPONENT, BattleFrontier_BattleDomeBattleRoom_Movement_OpponentStepForward
-# 627 "data/maps/NewTrainerHill/scripts.pory"
+# 709 "data/maps/NewTrainerHill/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkDownOneStep
-# 628 "data/maps/NewTrainerHill/scripts.pory"
+# 710 "data/maps/NewTrainerHill/scripts.pory"
 	waitmovement 0
-# 629 "data/maps/NewTrainerHill/scripts.pory"
-	delay 60
-# 630 "data/maps/NewTrainerHill/scripts.pory"
+# 711 "data/maps/NewTrainerHill/scripts.pory"
+	delay 30
+# 712 "data/maps/NewTrainerHill/scripts.pory"
+	call NewTrainerHill_EventScript_OpponentDialogue
+# 713 "data/maps/NewTrainerHill/scripts.pory"
+	closemessage
+# 714 "data/maps/NewTrainerHill/scripts.pory"
 	call NewTrainerHill_EventScript_StartBattle
-# 633 "data/maps/NewTrainerHill/scripts.pory"
+# 717 "data/maps/NewTrainerHill/scripts.pory"
 	goto NewTrainerHill_EventScript_VictorySequence
 	return
 
 
 NewTrainerHill_EventScript_VictorySequence::
-# 638 "data/maps/NewTrainerHill/scripts.pory"
+# 722 "data/maps/NewTrainerHill/scripts.pory"
 	applymovement LOCALID_HILL_ANNOUNCER, Common_Movement_WalkInPlaceDown
-# 639 "data/maps/NewTrainerHill/scripts.pory"
+# 723 "data/maps/NewTrainerHill/scripts.pory"
 	waitmovement 0
-# 640 "data/maps/NewTrainerHill/scripts.pory"
+# 724 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_VictorySequence_Text_0, MSGBOX_DEFAULT
-# 641 "data/maps/NewTrainerHill/scripts.pory"
+# 725 "data/maps/NewTrainerHill/scripts.pory"
 	playse SE_M_ENCORE2
-# 642 "data/maps/NewTrainerHill/scripts.pory"
+# 726 "data/maps/NewTrainerHill/scripts.pory"
 	waitfanfare
-# 643 "data/maps/NewTrainerHill/scripts.pory"
+# 727 "data/maps/NewTrainerHill/scripts.pory"
 	msgbox NewTrainerHill_EventScript_VictorySequence_Text_1, MSGBOX_DEFAULT
-# 644 "data/maps/NewTrainerHill/scripts.pory"
+# 728 "data/maps/NewTrainerHill/scripts.pory"
 	waitmessage
-# 645 "data/maps/NewTrainerHill/scripts.pory"
+# 729 "data/maps/NewTrainerHill/scripts.pory"
 	delay 60
-# 646 "data/maps/NewTrainerHill/scripts.pory"
+# 730 "data/maps/NewTrainerHill/scripts.pory"
 	addvar VAR_TRAINER_HILL_STATE, 100
-# 647 "data/maps/NewTrainerHill/scripts.pory"
+# 731 "data/maps/NewTrainerHill/scripts.pory"
 	warp MAP_TRAINER_HILL_ENTRANCE, 9, 1
 	return
 
 
 NewTrainerHill_EventScript_AnnouncePlayer_Text_0:
-# 561 "data/maps/NewTrainerHill/scripts.pory"
+# 597 "data/maps/NewTrainerHill/scripts.pory"
 	.string "Presenting a local trainer from\n"
 	.string "Littleroot Town: {PLAYER}!$"
 
 NewTrainerHill_EventScript_AnnouncePlayer_Text_1:
-# 563 "data/maps/NewTrainerHill/scripts.pory"
+# 599 "data/maps/NewTrainerHill/scripts.pory"
 	.string "Fresh off a win against local Gym\n"
 	.string "Leader Wattson, it's {PLAYER}!$"
 
 NewTrainerHill_EventScript_AnnouncePlayer_Text_2:
-# 566 "data/maps/NewTrainerHill/scripts.pory"
+# 602 "data/maps/NewTrainerHill/scripts.pory"
 	.string "Presenting a rising talent who has been\n"
 	.string "collecting Gym Badges: {PLAYER}!$"
 
 NewTrainerHill_EventScript_AnnouncePlayer_Text_3:
-# 569 "data/maps/NewTrainerHill/scripts.pory"
+# 605 "data/maps/NewTrainerHill/scripts.pory"
 	.string "Stopping at Trainer Hill on their way to\n"
 	.string "Eastern Hoenn and the final Gym Badges,\l"
 	.string "here's {PLAYER}!$"
 
 NewTrainerHill_EventScript_AnnouncePlayer_Text_4:
-# 571 "data/maps/NewTrainerHill/scripts.pory"
+# 607 "data/maps/NewTrainerHill/scripts.pory"
 	.string "A skilled trainer who's collected almost\n"
 	.string "all of the Hoenn Gym Badges, we have\l"
 	.string "{PLAYER}!$"
 
 NewTrainerHill_EventScript_AnnouncePlayer_Text_5:
-# 573 "data/maps/NewTrainerHill/scripts.pory"
+# 609 "data/maps/NewTrainerHill/scripts.pory"
 	.string "We are honored to present a hero of\n"
 	.string "Hoenn, {PLAYER}!$"
 
 NewTrainerHill_EventScript_AnnouncePlayer_Text_6:
-# 575 "data/maps/NewTrainerHill/scripts.pory"
+# 611 "data/maps/NewTrainerHill/scripts.pory"
 	.string "On this side we have {PLAYER}, a Hoenn League Champion!$"
 
 NewTrainerHill_EventScript_AnnounceOpponent_Text_0:
-# 597 "data/maps/NewTrainerHill/scripts.pory"
-	.string "{PLAYER} will be facing Charlie, a\n"
-	.string "Youngster from Dewford Town!$"
+# 641 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing Lisia, the\n"
+	.string "Hoenn Contest Star making her battle\l"
+	.string "debut!$"
 
 NewTrainerHill_EventScript_AnnounceOpponent_Text_1:
-# 599 "data/maps/NewTrainerHill/scripts.pory"
-	.string "{PLAYER} will be facing Lily, a Beauty\n"
-	.string "from Slateport City!$"
+# 643 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing Glacia, the\n"
+	.string "Ice-type specialist!$"
 
 NewTrainerHill_EventScript_AnnounceOpponent_Text_2:
-# 601 "data/maps/NewTrainerHill/scripts.pory"
-	.string "{PLAYER} will be facing Max, a\n"
-	.string "Scientist from Mauville City!$"
+# 645 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing the rogue\n"
+	.string "Sidney!$"
 
 NewTrainerHill_EventScript_AnnounceOpponent_Text_3:
-# 603 "data/maps/NewTrainerHill/scripts.pory"
-	.string "{PLAYER} will be facing Flora, an\n"
-	.string "Expert from Lilycove City!$"
+# 647 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing Drake, the wild\n"
+	.string "Dragon specialist!$"
+
+NewTrainerHill_EventScript_AnnounceOpponent_Text_4:
+# 649 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing Phoebe, fresh\n"
+	.string "off training at Mt. Pyre!$"
+
+NewTrainerHill_EventScript_AnnounceOpponent_Text_5:
+# 651 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing Spenser!$"
+
+NewTrainerHill_EventScript_AnnounceOpponent_Text_6:
+# 653 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing Greta!$"
+
+NewTrainerHill_EventScript_AnnounceOpponent_Text_7:
+# 655 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing Zinnia!$"
+
+NewTrainerHill_EventScript_OpponentDialogue_Text_0:
+# 685 "data/maps/NewTrainerHill/scripts.pory"
+	.string "Lisia: We're just as Tough and Smart as\n"
+	.string "we are Cute and Cool!$"
+
+NewTrainerHill_EventScript_OpponentDialogue_Text_1:
+# 695 "data/maps/NewTrainerHill/scripts.pory"
+	.string "Spenser: Let's see what you've got!$"
+
+NewTrainerHill_EventScript_OpponentDialogue_Text_2:
+# 697 "data/maps/NewTrainerHill/scripts.pory"
+	.string "Greta: Prepare for a challenging\n"
+	.string "battle!$"
+
+NewTrainerHill_EventScript_OpponentDialogue_Text_3:
+# 699 "data/maps/NewTrainerHill/scripts.pory"
+	.string "Zinnia: Let's see what you've got!$"
 
 NewTrainerHill_EventScript_VictorySequence_Text_0:
-# 640 "data/maps/NewTrainerHill/scripts.pory"
+# 724 "data/maps/NewTrainerHill/scripts.pory"
 	.string "And our winner is, {PLAYER}!\n"
 	.string "Congratulations!$"
 
 NewTrainerHill_EventScript_VictorySequence_Text_1:
-# 643 "data/maps/NewTrainerHill/scripts.pory"
+# 727 "data/maps/NewTrainerHill/scripts.pory"
 	.string "I hope you all enjoyed this exciting\n"
 	.string "battle at Trainer Hill. Come back soon\l"
 	.string "to see more new trainers, and find out\l"
 	.string "if {PLAYER} can win again!$"
+
+NewTrainerHill_Text_LisiaDefeated::
+# 736 "data/maps/NewTrainerHill/scripts.pory"
+	.string "Lisia: That was an incredible\n"
+	.string "performance!$"

@@ -14850,10 +14850,10 @@ const struct ItemInfo gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A meteorite found\n"
             "at Meteor Falls."),
-        .importance = 1,
-        .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_Meteorite,
         .iconPalette = gItemIconPalette_Meteorite,
     },

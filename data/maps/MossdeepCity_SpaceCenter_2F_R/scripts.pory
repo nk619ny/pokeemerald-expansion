@@ -46,12 +46,18 @@ const ParadoxEncounterLevel = 70
 const SpecVar_ChoosePartyMonOutput = VAR_0x8004
 const SpecVar_GetTradeSpeciesInput = VAR_0x8005
 const SpecVar_TradeMonToReceive = VAR_0x8008
+
+const TempVarFossilNum = VAR_TEMP_4
+const TempVarFossilItem = VAR_TEMP_2
+const TempVarFossilSpecies = VAR_TEMP_6
 //const LOCALID_SADA = 2
 //const LOCALID_TURO = 3
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_RevivalScientist {
     lock
     faceplayer
+    msgbox(format("The Time Department has partnered with the Devon Corporation to revive Pokémon from fossils found in various locations across the Hoenn region."),MSGBOX_NPC)
+    goto(MossdeepCity_SpaceCenter_2F_R_NewFossilScript)
     releaseall
     end
 }
@@ -62,7 +68,7 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuro {
     waitmovement(0)
     switch (var(VAR_TURO_STATE)) {
         case 0:
-            msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroFirstMeeting)
+            msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroFirstMeeting,MSGBOX_NPC)
             setvar(VAR_TURO_STATE,1)
             goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence1)
             break
@@ -594,4 +600,148 @@ text MossdeepCity_SpaceCenter_2F_R_Text_SadaNotAParadox {
 
 text MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackChangedMind {
     format("Sada: Alright, when you are ready to use the time machine, you can find me here.")
+}
+
+
+
+script MossdeepCity_SpaceCenter_2F_R_NewFossilScript{
+	if(checkitem(ITEM_OLD_AMBER) == TRUE) {dynmultipush("Old Amber",0)}
+	if(checkitem(ITEM_HELIX_FOSSIL) == TRUE) {dynmultipush("Helix Fossil",1)}
+	if(checkitem(ITEM_DOME_FOSSIL) == TRUE) {dynmultipush("Dome Fossil",2)}
+	if(checkitem(ITEM_ROOT_FOSSIL) == TRUE) {dynmultipush("Root Fossil",3)}
+	if(checkitem(ITEM_CLAW_FOSSIL) == TRUE) {dynmultipush("Claw Fossil",4)}
+	if(checkitem(ITEM_ARMOR_FOSSIL) == TRUE) {dynmultipush("Armor Fossil",5)}
+	if(checkitem(ITEM_SKULL_FOSSIL) == TRUE) {dynmultipush("Skull Fossil",6)}
+	if(checkitem(ITEM_JAW_FOSSIL) == TRUE) {dynmultipush("Jaw Fossil",7)}
+	if(checkitem(ITEM_SAIL_FOSSIL) == TRUE) {dynmultipush("Sail Fossil",8)}
+	if(checkitem(ITEM_PLUME_FOSSIL) == TRUE) {dynmultipush("Plume Fossil",9)}
+    if(checkitem(ITEM_COVER_FOSSIL) == TRUE) {dynmultipush("Cover Fossil",10)}
+    if(checkitem(ITEM_FOSSILIZED_BIRD) == TRUE) {dynmultipush("Fossilized Bird",11)}
+    if(checkitem(ITEM_FOSSILIZED_DINO) == TRUE) {dynmultipush("Fossilized Dino",12)}
+    if(checkitem(ITEM_FOSSILIZED_FISH) == TRUE) {dynmultipush("Fossilized Fish",13)}
+    if(checkitem(ITEM_FOSSILIZED_DRAKE) == TRUE) {dynmultipush("Fossilized Drake",14)}
+    dynmultipush("Not Right Now",15)
+	msgbox(format("Do you have a fossil you would like us to revive?"))
+	dynmultistack(25,2,FALSE,5,1,0,DYN_MULTICHOICE_CB_NONE)
+	copyvar(TempVarFossilNum,VAR_RESULT)
+	switch(var(TempVarFossilNum)){
+		case 0:
+			bufferitemname(STR_VAR_1, ITEM_OLD_AMBER)
+		case 1:
+			bufferitemname(STR_VAR_1, ITEM_HELIX_FOSSIL)
+		case 2:
+			bufferitemname(STR_VAR_1, ITEM_DOME_FOSSIL)
+		case 3:
+			bufferitemname(STR_VAR_1, ITEM_ROOT_FOSSIL)
+		case 4:
+			bufferitemname(STR_VAR_1, ITEM_CLAW_FOSSIL)
+		case 5:
+			bufferitemname(STR_VAR_1, ITEM_ARMOR_FOSSIL)
+		case 6:
+			bufferitemname(STR_VAR_1, ITEM_SKULL_FOSSIL)
+		case 7:
+			bufferitemname(STR_VAR_1, ITEM_JAW_FOSSIL)
+		case 8:
+			bufferitemname(STR_VAR_1, ITEM_SAIL_FOSSIL)
+		case 9:
+			bufferitemname(STR_VAR_1, ITEM_PLUME_FOSSIL)
+        case 10:
+            bufferitemname(STR_VAR_1, ITEM_COVER_FOSSIL)
+        case 11:
+        case 12:
+        case 13:
+        case 14:
+            msgbox(format("Unfortunately, I can't revive that one, because the fossil is incomplete."))
+            closemessage
+			goto(MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript)
+		case 15:
+		case 127:
+			goto(MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript)
+		}
+	msgbox(format("You want me to revive your {STR_VAR_1}, is that correct?"),MSGBOX_YESNO)
+	if (var(VAR_RESULT) == NO) {
+		goto(MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript)
+	}
+	else {
+		switch(var(TempVarFossilNum)){
+			case 0:
+				removeitem(ITEM_OLD_AMBER)
+				setvar(TempVarFossilSpecies,SPECIES_AERODACTYL)
+                setvar(TempVarFossilItem,ITEM_OLD_AMBER)
+			case 1:
+				removeitem(ITEM_HELIX_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_OMANYTE)
+                setvar(TempVarFossilItem,ITEM_HELIX_FOSSIL)
+			case 2:
+				removeitem(ITEM_DOME_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_KABUTO)
+                setvar(TempVarFossilItem,ITEM_DOME_FOSSIL)
+			case 3:
+				removeitem(ITEM_ROOT_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_LILEEP)
+                setvar(TempVarFossilItem,ITEM_ROOT_FOSSIL)
+			case 4:
+				removeitem(ITEM_CLAW_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_ANORITH)
+                setvar(TempVarFossilItem,ITEM_CLAW_FOSSIL)
+			case 5:
+				removeitem(ITEM_ARMOR_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_SHIELDON)
+                setvar(TempVarFossilItem,ITEM_ARMOR_FOSSIL)
+			case 6:
+				removeitem(ITEM_SKULL_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_CRANIDOS)
+                setvar(TempVarFossilItem,ITEM_SKULL_FOSSIL)
+			case 7:
+				removeitem(ITEM_JAW_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_TYRUNT)
+                setvar(TempVarFossilItem,ITEM_JAW_FOSSIL)
+			case 8:
+				removeitem(ITEM_SAIL_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_AMAURA)
+                setvar(TempVarFossilItem,ITEM_SAIL_FOSSIL)
+			case 9:
+				removeitem(ITEM_PLUME_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_ARCHEN)
+                setvar(TempVarFossilItem,ITEM_PLUME_FOSSIL)
+			case 10:
+				removeitem(ITEM_COVER_FOSSIL)
+				setvar(TempVarFossilSpecies,SPECIES_TIRTOUGA)
+                setvar(TempVarFossilItem,ITEM_COVER_FOSSIL)
+		}
+        msgbox(format("Okay! This will just take a moment."),MSGBOX_NPC)
+        fadescreenswapbuffers(FADE_TO_BLACK)
+        delay(60)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
+        bufferspeciesname(STR_VAR_2,TempVarFossilSpecies)
+        givemon(TempVarFossilSpecies,5,0,0,0)
+			switch(var(VAR_RESULT)){
+				case MON_GIVEN_TO_PARTY:
+					playfanfare(MUS_OBTAIN_ITEM)
+					msgbox("Received {STR_VAR_2}!")
+					waitfanfare
+					call(NicknamePartyMon)
+					msgbox(format("It worked! We succesfully revived an ancient Pokémon fossil!\pI hope you enjoy this prehistoric creature."),MSGBOX_NPC)
+				case MON_GIVEN_TO_PC:
+					playfanfare(MUS_OBTAIN_ITEM)
+					msgbox("Received {STR_VAR_2}!")
+					waitfanfare
+					call(NicknameBoxMon)
+					msgbox(format("It worked! We succesfully revived an ancient Pokémon fossil!\pI hope you enjoy this prehistoric creature."),MSGBOX_NPC)
+				case MON_CANT_GIVE:
+				default:
+					msgbox("Something wen't wrong... Please take your fossil back.\pMaybe you should try again later?")
+                    giveitem(TempVarFossilItem)
+			}
+        waitmessage
+        releaseall
+        end
+    }
+}
+
+script MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript{
+    msgbox(format("If you do come across any Pokémon fossils, please bring them to us!\pI would love a chance to put our new technology to work."))
+    waitmessage
+    releaseall
+    end
 }

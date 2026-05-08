@@ -997,9 +997,24 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Numel
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Iron Treads @ Assault Vest  
+Ability: Quark Drive  
+Level: 70
+- Spin Out  
+- High Horsepower  
+- Noxious Torque  
+- Supercell Slam  
+
+Brambleghast @ Leftovers  
+Ability: Infiltrator  
+Level: 70
+Tera Type: Grass  
+- Strength Sap  
+- Trailblaze  
+- Skitter Smack  
+- Leech Seed  
+
+
 
 === TRAINER_GRUNT_MT_PYRE_1 === /* Mt Pyre */
 Name: GRUNT
@@ -1822,7 +1837,7 @@ Tera Type: Fairy
 
 
 
-=== TRAINER_FELIX === /* Victory Road B2F */
+=== TRAINER_FELIX === /* Victory Road B2F */ /* Optional */
 Name: FELIX
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3603,7 +3618,7 @@ Pelipper
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ALBERT === /* Victory Road 1F */ /* TO BE ADDED */
+=== TRAINER_ALBERT === /* Victory Road 1F */ /* Unused */
 Name: ALBERT
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -4145,7 +4160,7 @@ Roselia
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_SHANNON === /* Victory Road B1F */ /* TO BE ADDED */
+=== TRAINER_SHANNON === /* Victory Road B1F */ /* Optional */
 Name: SHANNON
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4729,17 +4744,26 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Mightyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sunflora @ Sunflorite  
+Ability: Drought  
+Level: 70
+IVs: 0 Atk  
+- Solar Beam  
+- Mystical Fire  
+- Earth Power  
+- Morning Sun  
 
-Mightyena
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Great Tusk @ White Herb  
+Ability: Protosynthesis  
+Level: 70  
+Tera Type: Ground  
+EVs: 252 SpD  
+IVs: 30 Def  
+- Temper Flare  
+- Close Combat  
+- Headlong Rush  
+- Stomping Tantrum  
 
-Numel
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CINDY_2 === /* Route */
 Name: CINDY
@@ -5624,7 +5648,7 @@ IVs: 0 Atk
 
 Meganium @ Meganiumite  
 Level: 62
-Ability: Leaf Guard  
+Ability: Flower Veil 
 EVs: 128 HP / 252 SpA / 128 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -10144,7 +10168,7 @@ Pool Rules: Doubles
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Froslass (F) @ Bright Powder  
-Level: 55
+Level: 42
 Ability: Snow Cloak  
 Tera Type: Ice  
 IVs: 0 Atk  
@@ -10155,7 +10179,7 @@ Tags: Lead
 - Thunderbolt  
 
 Froslass (F) @ Froslassite  
-Level: 55
+Level: 42
 Ability: Snow Cloak  
 Tera Type: Ice  
 IVs: 0 Atk    
@@ -10166,7 +10190,7 @@ Tags: Lead
 - Double Team  
 
 Glalie @ Choice Band  
-Level: 55
+Level: 42
 Ability: Inner Focus  
 Tera Type: Ice  
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -10177,7 +10201,7 @@ Tags: Lead
 - Ice Shard  
 
 Glalie @ Glalitite  
-Level: 55
+Level: 42
 Ability: Inner Focus  
 Happiness: 0  
 Tera Type: Ice  
@@ -10190,7 +10214,7 @@ Tags: Lead
 - Earthquake  
 
 Vanilluxe @ Light Clay  
-Level: 55
+Level: 42
 Ability: Snow Warning  
 Tera Type: Electric  
 IVs: 0 Atk  
@@ -10200,7 +10224,7 @@ IVs: 0 Atk
 - Hidden Power  
 
 Articuno-Galar  
-Level: 55
+Level: 42
 Ability: Competitive  
 Tera Type: Ground  
 IVs: 0 Atk  
@@ -10210,7 +10234,7 @@ IVs: 0 Atk
 - Recover  
 
 Glastrier @ Assault Vest  
-Level: 55
+Level: 42
 Ability: Chilling Neigh  
 Tera Type: Ice  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -10221,7 +10245,7 @@ Adamant Nature
 - Facade  
 
 Abomasnow @ Occa Berry  
-Level: 55
+Level: 42
 Ability: Snow Warning  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -10282,17 +10306,74 @@ IVs: 0 Atk
 
 
 === TRAINER_HILL_4 ===
-Name: MIGUEL
-Class: Pokefan
-Pic: Pokefan M
+Name: DRAKE
+Pic: Elite Four Drake
 Gender: Male
-Music: Twins
+Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Delcatty @ Sitrus Berry
-Level: 38
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kingdra  @ Scope Lens
+Ability: Sniper 
+Level: 52 
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Wave Crash  
+- Iron Head  
+- Breaking Swipe  
+- Dragon Dance  
+
+Duraludon @ Eviolite  
+Ability: Stamina  
+Level: 52
+EVs: 252 HP / 4 SpA / 252 SpD  
+Serious Nature  
+IVs: 0 Atk  
+- Flash Cannon  
+- Dragon Pulse  
+- Body Press  
+- Light Screen  
+
+Latios (M) @ Soul Dew  
+Ability: Levitate  
+Level: 52
+IVs: 0 Atk  
+- Tailwind  
+- Aura Sphere  
+- Dragon Pulse  
+- Luster Purge  
+
+Hydrapple @ Yache Berry  
+Ability: Supersweet Syrup  
+Level: 52
+EVs: 252 HP / 128 SpA / 128 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Dragon Cheer  
+- Pollen Puff  
+- Syrup Bomb  
+- Reflect  
+
+Salamence @ Salamencite  
+Ability: Intimidate  
+Level: 52
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Temper Flare  
+- Double-Edge  
+- Dragon Rush  
+
+Regidrago @ White Herb  
+Ability: Dragon's Maw  
+Level: 52
+EVs: 132 Def / 60 SpA / 64 SpD / 252 Spe  
+Mild Nature  
+IVs: 0 Atk  
+- Dragon Energy  
+- Draco Meteor  
+- Ancient Power  
+
 
 === TRAINER_VICTORIA === /* Route 111 */ /* TO BE ADDED */
 Name: VICTORIA
@@ -10408,21 +10489,74 @@ IVs: 0 Atk
 - Flash Cannon  
 
 === TRAINER_HILL_5 === /* Route */
-Name: ISABEL
-Class: Pokefan
-Pic: Pokefan F
+Name: PHOEBE
+Pic: Elite Four Phoebe
 Gender: Female
-Music: Twins
+Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Plusle @ Oran Berry
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Marowak-Alola @ Thick Club  
+Ability: Rock Head  
+Level: 59
+EVs: 252 HP / 252 Atk
+Adamant Nature
+- Shadow Bone  
+- Bonemerang  
+- Flare Blitz  
+- Swords Dance  
 
-Minun @ Oran Berry
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Oricorio-Sensu @ Flying Gem  
+Ability: Dancer  
+Level: 59
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Modest Nature  
+- Revelation Dance  
+- Quiver Dance  
+- Acrobatics  
+- Alluring Voice  
+
+Spectrier @ Focus Sash  
+Ability: Grim Neigh  
+Level: 59
+EVs: 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Astral Barrage  
+- Psychic  
+- Draining Kiss  
+- Nasty Plot  
+
+Banette @ Banettite  
+Ability: Insomnia  
+Level: 59
+EVs: 252 HP / 252 Atk
+Adamant Nature
+- Cotton Guard  
+- Shadow Claw  
+- Return  
+- Destiny Bond  
+
+Grimmsnarl (M) @ Expert Belt  
+Ability: Prankster  
+Level: 59
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Spirit Break  
+- False Surrender  
+- Fake Out  
+- Taunt  
+
+Marshadow  
+Ability: Technician  
+Level: 59
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Spectral Thief  
+- Shadow Sneak  
+- Revenge  
+- Copycat  
+
 
 === TRAINER_HILL_6 === /* Trainer Hill */ /* TO BE ADDED */
 Name: ISABEL
@@ -10917,7 +11051,7 @@ Tera Type: Electric
 
 
 
-=== TRAINER_QUINCY === /* Victory Road 1F */
+=== TRAINER_QUINCY === /* Victory Road 1F */ /* Optional */
 Name: QUINCY
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -18890,13 +19024,23 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Iron Moth @ Shuca Berry  
+Ability: Quark Drive  
+Level: 70
+IVs: 0 Atk  
+- Energy Ball  
+- Fiery Dance  
+- Morning Sun  
+- Psychic  
 
-Poochyena
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chimecho
+Ability: Levitate
+Level: 70
+Tera Type: Ice
+- Entrainment
+- Psychic Noise
+- Hidden Power
+
 
 === TRAINER_GRUNT_SPACE_CENTER_4 === /* Route */
 Name: GRUNT
@@ -18907,11 +19051,30 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Baltoy
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Solrock @ Air Balloon  
+Ability: Drought  
+Level: 70
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Heat Crash  
+- Stone Edge  
+- Morning Sun  
+- Ally Switch  
 
-=== TRAINER_GRUNT_SPACE_CENTER_5 === /* Route */
+
+Brute Bonnet @ Tanga Berry  
+Ability: Protosynthesis  
+Level: 70
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Sucker Punch  
+- Rage Powder  
+- Trailblaze  
+- Spore  
+
+
+
+=== TRAINER_GRUNT_SPACE_CENTER_5 === /* First of 3 back to back */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -18920,9 +19083,27 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Scovillain-Mega @ Scovillainite  
+Ability: Chlorophyll
+Level: 70
+IVs: 0 Atk  
+- Rage Powder  
+- Fire Blast  
+- Giga Drain  
+- Ingrain  
+
+Blissey (F)  
+Ability: Healer  
+EVs: 252 Def / 252 SpA  
+Level: 70
+Calm Nature  
+Tera Type: Rock
+IVs: 0 Atk  
+- Thunder Wave  
+- Seismic Toss  
+- Hidden Power
+- Soft-Boiled  
+
 
 === TRAINER_GRUNT_SPACE_CENTER_6 === /* Mossdeep Space Center 2F */ /* TO BE ADDED */
 Name: GRUNT
@@ -18933,9 +19114,50 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Mightyena
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chesnaught @ Chesnaughtite  
+Ability: Bulletproof  
+Level: 70
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Body Press  
+- Iron Defense  
+- Leech Seed  
+- Spiky Shield  
+
+Arcanine-Hisui @ Hard Stone  
+Ability: Intimidate  
+Level: 70
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Accelerock  
+- Extreme Speed  
+- Flare Blitz  
+- Wild Charge
+
+
+Sinistcha @ Big Root  
+Ability: Hospitality  
+Level: 70
+EVs: 252 HP / 252 Def / 4 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Life Dew  
+- Rage Powder  
+- Strength Sap  
+- Matcha Gotcha  
+
+
+/*
+Cherrim  
+Ability: Flower Gift  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Heal Pulse  
+- Swords Dance  
+- Petal Blizzard  
+- Attract  
+*/
 
 === TRAINER_GRUNT_SPACE_CENTER_7 === /* Mossdeep Space Center 2F */ /* TO BE ADDED */
 Name: GRUNT
@@ -18947,7 +19169,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Baltoy
-Level: 32
+Level: 70
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MACEY === /* Mossdeep Gym */ 
