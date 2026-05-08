@@ -12,11 +12,16 @@ raw `
 
 MtPyre_Summit_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MtPyre_Summit_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, MtPyre_Summit_OnFrame
 	.byte 0
 
 MtPyre_Summit_OnTransition:
 	call_if_eq VAR_MT_PYRE_STATE, 2, MtPyre_Summit_EventScript_SetArchieMaxiePositions
 	end
+
+MtPyre_Summit_OnFrame:
+	map_script_2 VAR_TEMP_6, 0, MtPyre_Summit_Script_CheckRemoveShellyCourtneyPokemon
+	.2byte 0
 
 MtPyre_Summit_EventScript_SetArchieMaxiePositions::
 	setobjectxyperm LOCALID_MT_PYRE_SUMMIT_MAXIE, 23, 6
@@ -943,4 +948,144 @@ text MtPyre_Summit_Text_Grunt1Defeat {
 
 text MtPyre_Summit_Text_Grunt1PostBattle {
 	format("We did all this work, and then Team Aqua is stealing our ideas, as usual.")
+}
+
+text MtPyre_Summit_Text_ShellyIntro {
+	format("Shelly: I can't let you go any further.\pI trust Archie to handle Maxie, but I don't want you tipping the scales against us.")
+}
+
+text MtPyre_Summit_Text_CourtneyIntro {
+	format("Courtney: Assessing…\NGreater threat identified. Shifting focus.")
+}
+
+script MtPyre_Summit_Script_Shelly {
+	lock
+	faceplayer
+	goto_if_defeated(TRAINER_SHELLY_MT_PYRE,MtPyre_Summit_Script_ShellyPostBattle)
+	applymovement(LOCALID_MT_PYRE_SHELLY,Common_Movement_ExclamationMark)
+	waitmovement(0)
+	msgbox(MtPyre_Summit_Text_ShellyIntro, MSGBOX_NPC)
+	closemessage
+	applymovement(LOCALID_MT_PYRE_SHELLY,Common_Movement_ExclamationMark)
+	removeobject(LOCALID_MT_PYRE_SHELLY_MON)
+	removeobject(LOCALID_MT_PYRE_COURTNEY_MON)
+	waitmovement(0)
+	applymovement(LOCALID_MT_PYRE_COURTNEY, MtPyre_Summit_Movement_CourtneyApproach)
+	waitmovement(0)
+	applymovement(LOCALID_MT_PYRE_COURTNEY, Common_Movement_FaceDown)
+	waitmovement(0)
+	msgbox(MtPyre_Summit_Text_CourtneyIntro, MSGBOX_NPC)
+	closemessage
+	goto(MtPyre_Summit_Script_Shelly_Courtney_Double)
+}
+
+script MtPyre_Summit_Script_ShellyCourtneyTriggerCheck {
+	lock
+	setvar(VAR_TEMP_3,1)
+	goto_if_not_defeated(TRAINER_SHELLY_MT_PYRE,MtPyre_Summit_Script_ShellyCourtneyInitiateBattle)
+	releaseall
+	return
+}
+
+
+script MtPyre_Summit_Script_ShellyCourtneyInitiateBattle{
+	lock
+	removeobject(LOCALID_MT_PYRE_SHELLY_MON)
+	removeobject(LOCALID_MT_PYRE_COURTNEY_MON)
+	applymovement(LOCALID_MT_PYRE_SHELLY,Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(LOCALID_MT_PYRE_SHELLY, Common_Movement_WalkRightOneStep)
+	waitmovement(0)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight)
+	waitmovement(0)
+	msgbox(MtPyre_Summit_Text_ShellyIntro, MSGBOX_NPC)
+	closemessage
+	applymovement(LOCALID_MT_PYRE_COURTNEY,Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(LOCALID_MT_PYRE_COURTNEY, Common_Movement_WalkLeftOneStep)
+	waitmovement(0)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement(0)
+	msgbox(MtPyre_Summit_Text_CourtneyIntro, MSGBOX_NPC)
+	closemessage
+	goto(MtPyre_Summit_Script_Shelly_Courtney_Double)
+}
+
+script MtPyre_Summit_Script_Courtney {
+	lock
+	faceplayer
+	goto_if_defeated(TRAINER_SHELLY_MT_PYRE,MtPyre_Summit_Script_CourtneyPostBattle)
+	applymovement(LOCALID_MT_PYRE_COURTNEY,Common_Movement_ExclamationMark)
+	waitmovement(0)
+	msgbox(MtPyre_Summit_Text_CourtneyIntro, MSGBOX_NPC)
+	closemessage
+	applymovement(LOCALID_MT_PYRE_SHELLY,Common_Movement_ExclamationMark)
+	removeobject(LOCALID_MT_PYRE_SHELLY_MON)
+	removeobject(LOCALID_MT_PYRE_COURTNEY_MON)
+	waitmovement(0)
+	applymovement(LOCALID_MT_PYRE_SHELLY, MtPyre_Summit_Movement_ShellyApproach)
+	waitmovement(0)
+	applymovement(LOCALID_MT_PYRE_SHELLY, Common_Movement_FaceDown)
+	waitmovement(0)
+	msgbox(MtPyre_Summit_Text_ShellyIntro, MSGBOX_NPC)
+	closemessage
+	goto(MtPyre_Summit_Script_Shelly_Courtney_Double)
+}
+
+movement MtPyre_Summit_Movement_ShellyApproach {
+	walk_right * 3
+}
+
+movement MtPyre_Summit_Movement_CourtneyApproach {
+	walk_left * 3
+}
+
+script MtPyre_Summit_Script_Shelly_Courtney_Double {
+	lock
+	trainerbattle_two_trainers(TRAINER_COURTNEY_MT_PYRE, MtPyre_Summit_Text_CourtneyDefeated, TRAINER_SHELLY_MT_PYRE, MtPyre_Summit_Text_ShellyDefeated)
+	setflag(FLAG_DEFEATED_MT_PYRE_ADMINS)
+	removeobject(LOCALID_MT_PYRE_SHELLY_MON)
+	removeobject(LOCALID_MT_PYRE_COURTNEY_MON)
+	setvar(VAR_TEMP_6,0)
+	releaseall
+	end
+}
+
+text MtPyre_Summit_Text_ShellyDefeated {
+	format("Shelly: Hopefully Archie can handle you, too…")
+}
+
+text MtPyre_Summit_Text_CourtneyDefeated {
+	format("Courtney: Assessment of greater threat… confirmed.")
+}
+
+script MtPyre_Summit_Script_ShellyPostBattle {
+	lock
+	msgbox(format("Shelly: Come, on Archie… We're so close…"), MSGBOX_NPC)
+	closemessage
+	releaseall
+	end
+}
+
+script MtPyre_Summit_Script_CourtneyPostBattle {
+	lock
+	msgbox(format("Courtney: A recurring error…"), MSGBOX_NPC)
+	closemessage
+	releaseall
+	end
+}
+
+script MtPyre_Summit_Script_CheckRemoveShellyCourtneyPokemon {
+	setvar(VAR_TEMP_6,1)
+	goto_if_defeated(TRAINER_SHELLY_MT_PYRE,MtPyre_Summit_Script_RemoveShellyCourtneyPokemon)
+	return
+}
+
+script MtPyre_Summit_Script_RemoveShellyCourtneyPokemon {
+	lock
+	setflag(FLAG_DEFEATED_MT_PYRE_ADMINS)
+	removeobject(LOCALID_MT_PYRE_SHELLY_MON)
+	removeobject(LOCALID_MT_PYRE_COURTNEY_MON)
+	releaseall
+	return
 }

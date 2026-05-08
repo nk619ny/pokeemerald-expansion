@@ -685,7 +685,7 @@
 #define FLAG_DEFEATED_DAVIS_123  0x276 // formerly not used
 #define FLAG_HIDE_SWIMMER_BLOCKING_SOOTOPOLIS  0x277 // formerly not used
 #define FLAG_HIDE_FUSION_TUTOR  0x278 // formerly not used
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
+#define FLAG_DEFEATED_MT_PYRE_ADMINS  0x279 // formerly not used
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag

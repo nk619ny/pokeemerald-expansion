@@ -151,10 +151,10 @@
 #define TRAINER_THALIA_1                    144
 #define TRAINER_MARK                        145
 #define TRAINER_GRUNT_MT_CHIMNEY_1          146
-#define TRAINER_STEVE_2                     147
-#define TRAINER_STEVE_3                     148
-#define TRAINER_STEVE_4                     149
-#define TRAINER_STEVE_5                     150
+#define TRAINER_SHELLY_MT_PYRE              147 //was Steve rematches, repurposed
+#define TRAINER_COURTNEY_MT_PYRE            148 //was Steve rematches, repurposed
+#define TRAINER_STEVE_4                     149 //was Steve rematches, available
+#define TRAINER_STEVE_5                     150 //was Steve rematches, available
 #define TRAINER_LUIS                        151
 #define TRAINER_DOMINIK                     152
 #define TRAINER_DOUGLAS                     153

@@ -5548,35 +5548,91 @@ EVs: 196 Atk / 196 Def / 196 SpD
 - Payback  
 
 
-=== TRAINER_STEVE_2 === /* Route */
-Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
-Gender: Male
-Music: Suspicious
+=== TRAINER_SHELLY_MT_PYRE === /* Route */
+Name: SHELLY
+Class: Aqua Admin
+Pic: Shelly ORAS
+Gender: Female
+Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lairon
-Level: 27
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Pelipper @ Wacan Berry  
+Level: 62
+Ability: Drizzle  
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Hurricane  
+- Weather Ball  
+- Rain Dance  
+- Wide Guard  
 
-=== TRAINER_STEVE_3 === /* Route */
-Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
-Gender: Male
-Music: Suspicious
+Kingdra @ Muscle Band  
+Level: 62
+Ability: Swift Swim  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Wave Crash  
+- Iron Head  
+- Breaking Swipe  
+- Dragon Dance  
+
+Greninja @ Greninjite  
+Level: 62
+Ability: Protean  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+Tera Type: Steel
+IVs: 0 Atk  
+- Grass Knot  
+- Hidden Power 
+- Weather Ball  
+- Mat Block  
+
+
+=== TRAINER_COURTNEY_MT_PYRE === /* Route */
+Name: Courtney
+Class: Magma Admin
+Pic: Courtney ORAS
+Gender: Female
+Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lairon
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Ninetales @ Passho Berry  
+Level: 62
+Ability: Drought  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Energy Ball  
+- Scorching Sands  
+- Psyshock  
+- Hypnosis  
 
-Rhyhorn
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Archaludon @ Leftovers  
+Level: 62
+Ability: Stamina  
+EVs: 128 HP / 252 SpA / 128 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Electro Shot  
+- Flash Cannon  
+- Aura Sphere  
+- Dragon Pulse  
+
+Meganium @ Meganiumite  
+Level: 62
+Ability: Leaf Guard  
+EVs: 128 HP / 252 SpA / 128 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Weather Ball  
+- Solar Beam  
+- Synthesis  
+- Earth Power  
+
 
 === TRAINER_STEVE_4 === /* Route */
 Name: STEVE
