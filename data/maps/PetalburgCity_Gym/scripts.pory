@@ -1601,7 +1601,7 @@ PetalburgCity_Gym_EventScript_Vito_PostBattle::
 	message PetalburgCity_Gym_Text_ReceivedBalanceBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
-
+	setvar VAR_TRAINER_HILL_STATE, 5
 	setvar VAR_LEVEL_CAP, 56
 	call Common_EventScript_RemoveOptionalItems5
 	call Common_EventScript_ApplyHandicap

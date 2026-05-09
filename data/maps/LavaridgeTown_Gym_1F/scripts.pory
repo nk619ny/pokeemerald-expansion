@@ -402,6 +402,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
 
 script LavaridgeTown_Gym_1F_EventScript_NewPostFlannery {
     setvar(VAR_LEVEL_CAP,46)
+	setvar(VAR_TRAINER_HILL_STATE, 3)
     call(Common_EventScript_ApplyHandicap)
     call(Common_EventScript_LevelCapUpdate)
     call(MtChimney_EventScript_SetupMagma)

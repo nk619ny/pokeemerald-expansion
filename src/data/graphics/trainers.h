@@ -307,6 +307,12 @@ const u16 gTrainerPalette_ProfessorSada[] = INCBIN_U16("graphics/trainers/front_
 const u32 gTrainerFrontPic_Vito[] = INCBIN_U32("graphics/trainers/front_pics/vito.4bpp.lz");
 const u16 gTrainerPalette_Vito[] = INCBIN_U16("graphics/trainers/front_pics/vito.gbapal");
 
+const u32 gTrainerFrontPic_Lisia[] = INCBIN_U32("graphics/trainers/front_pics/lisia.4bpp.lz");
+const u16 gTrainerPalette_Lisia[] = INCBIN_U16("graphics/trainers/front_pics/lisia.gbapal");
+
+const u32 gTrainerFrontPic_Zinnia[] = INCBIN_U32("graphics/trainers/front_pics/zinnia.4bpp.lz");
+const u16 gTrainerPalette_Zinnia[] = INCBIN_U16("graphics/trainers/front_pics/zinnia.gbapal");
+
 const u32 gTrainerFrontPic_YoungsterFrlg[] = INCBIN_U32("graphics/trainers/front_pics/youngster_frlg.4bpp.smol");
 const u16 gTrainerPalette_YoungsterFrlg[] = INCBIN_U16("graphics/trainers/palettes/youngster_frlg.gbapal");
 
@@ -631,6 +637,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_FRONT_PROFESSOR_TURO, gTrainerFrontPic_ProfessorTuro, gTrainerPalette_ProfessorTuro),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_PROFESSOR_SADA, gTrainerFrontPic_ProfessorSada, gTrainerPalette_ProfessorSada),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_VITO, gTrainerFrontPic_Vito, gTrainerPalette_Vito),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_LISIA, gTrainerFrontPic_Lisia, gTrainerPalette_Lisia),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_ZINNIA, gTrainerFrontPic_Zinnia, gTrainerPalette_Zinnia),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_YOUNGSTER_FRLG, gTrainerFrontPic_YoungsterFrlg, gTrainerPalette_YoungsterFrlg),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_BUG_CATCHER_FRLG, gTrainerFrontPic_BugCatcherFrlg, gTrainerPalette_BugCatcherFrlg),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_LASS_FRLG, gTrainerFrontPic_LassFrlg, gTrainerPalette_LassFrlg),

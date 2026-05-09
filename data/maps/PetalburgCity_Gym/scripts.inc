@@ -3180,7 +3180,7 @@ PetalburgCity_Gym_EventScript_Vito_PostBattle::
 # 1603 "data/maps/PetalburgCity_Gym/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
 # 1604 "data/maps/PetalburgCity_Gym/scripts.pory"
-
+	setvar VAR_TRAINER_HILL_STATE, 5
 # 1605 "data/maps/PetalburgCity_Gym/scripts.pory"
 	setvar VAR_LEVEL_CAP, 56
 # 1606 "data/maps/PetalburgCity_Gym/scripts.pory"

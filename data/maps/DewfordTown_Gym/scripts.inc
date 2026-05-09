@@ -925,8 +925,10 @@ DewfordTown_Gym_EventScript_SetNewLevelCap::
 # 465 "data/maps/DewfordTown_Gym/scripts.pory"
 	setvar VAR_LEVEL_CAP, 28
 # 466 "data/maps/DewfordTown_Gym/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	setvar VAR_TRAINER_HILL_STATE, 1
 # 467 "data/maps/DewfordTown_Gym/scripts.pory"
+	call Common_EventScript_ApplyHandicap
+# 468 "data/maps/DewfordTown_Gym/scripts.pory"
 	call Common_EventScript_LevelCapUpdate
 	return
 

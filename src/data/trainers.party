@@ -10083,7 +10083,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HILL_1 ===
 Name: LISIA
-Pic: Pokefan M
+Pic: Lisia
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -10558,22 +10558,75 @@ Adamant Nature
 - Copycat  
 
 
-=== TRAINER_HILL_6 === /* Trainer Hill */ /* TO BE ADDED */
-Name: ISABEL
-Class: Pokefan
-Pic: Pokefan F
-Gender: Female
-Music: Twins
+=== TRAINER_HILL_6 === /* Trainer Hill */
+Name: SPENSER
+Pic: Palace Maven Spenser
+Gender: Male
+Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Plusle @ Oran Berry
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Crobat @ Focus Sash  
+Ability: Inner Focus  
+Level: 70
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Tailwind  
+- Dual Wingbeat  
+- Leech Life  
+- Super Fang  
 
-Minun @ Oran Berry
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Slaking @ Leftovers  
+Ability: Comatose  
+Level: 69
+- High Horsepower  
+- Facade  
+- Drain Punch  
+- Lash Out  
+
+Lapras @ Throat Spray
+Ability: Water Absorb  
+Level: 70
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Freeze-Dry  
+- Sparkling Aria  
+- Alluring Voice  
+- Block  
+
+Arcanine @ Normal Gem  
+Ability: Intimidate  
+Level: 70
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Sacred Fire  
+- Extreme Speed  
+- Morning Sun  
+- Close Combat  
+
+Raikou  
+Ability: Inner Focus  
+Level: 70
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Aura Sphere  
+- Thunderbolt  
+- Calm Mind  
+- Shadow Ball  
+
+
+Venusaur @ Venusaurite Z
+Ability: Thick Fat  
+Level: 70
+EVs: 252 HP / 252 Atk
+Adamant Nature
+- Power Whip  
+- Stomping Tantrum  
+- Leech Seed  
+- Swords Dance  
+
 
 === TRAINER_HILL_7 === /* Trainer Hill */ /* TO BE ADDED */
 Name: ISABEL
@@ -10592,22 +10645,78 @@ Minun @ Oran Berry
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_HILL_8 === /* Trainer Hill */ /* TO BE ADDED */
-Name: ISABEL
-Class: Pokefan
-Pic: Pokefan F
+=== TRAINER_HILL_8 === /* Trainer Hill */
+Name: ZINNIA
+Pic: Zinnia
 Gender: Female
-Music: Twins
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Plusle @ Sitrus Berry
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Aster (Exploud) (F) @ Throat Spray  
+Ability: Soundproof  
+Level: 88
+Tera Type: Poison  
+IVs: 0 Atk  
+- Boomburst  
+- Alluring Voice  
+- Blizzard  
+- Hidden Power 
+ 
 
-Minun @ Sitrus Berry
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Noivern @ Focus Sash  
+Ability: Telepathy  
+Level: 85
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Tailwind  
+- Boomburst  
+- Draco Meteor  
+- Dragon Cheer  
+
+Dragonite @ Silk Scarf  
+Ability: Inner Focus  
+Level: 85
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Extreme Speed  
+- Encore  
+- Dual Wingbeat  
+- Power-Up Punch  
+
+Goodra  
+Ability: Sap Sipper  
+Level: 85
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk  
+- Thunderbolt  
+- Flamethrower  
+- Scald  
+- Acid Spray  
+
+
+Goodra-Hisui  
+Ability: Gooey  
+Level: 85
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk  
+- Flash Cannon  
+- Acid Armor  
+- Muddy Water  
+- Sludge Bomb 
+
+
+Rayquaza @ Meteorite  
+Ability: Air Lock  
+Level: 85
+EVs: 252 HP / 252 Spe  
+Jolly Nature  
+- Dragon Ascent  
+- Extreme Speed  
+- V-create  
+- U-turn  
+
 
 === TRAINER_TIMOTHY_1 === /* Route 115 */
 Name: TIMOTHY

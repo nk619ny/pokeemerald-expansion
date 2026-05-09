@@ -26,6 +26,7 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	call Common_EventScript_SetGymTrainers
 	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
 	setvar VAR_LEVEL_CAP 51
+	setvar VAR_TRAINER_HILL_STATE, 4
 	call Common_EventScript_RemoveOptionalItems4
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate

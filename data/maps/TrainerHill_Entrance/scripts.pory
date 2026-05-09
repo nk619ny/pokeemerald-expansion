@@ -17,12 +17,12 @@ TrainerHill_Entrance_OnWarp:
 	end
 
 TrainerHill_Entrance_OnResume:
-	trainerhill_resumetimer
-	setvar VAR_TEMP_8, 0
-	trainerhill_getusingereader
-	goto_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_TryFaceAttendant  @ VAR_RESULT always FALSE here
-	setobjectxy OBJ_EVENT_ID_PLAYER, 9, 6
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
+	//trainerhill_resumetimer
+	//setvar VAR_TEMP_8, 0
+	//trainerhill_getusingereader
+	//goto_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_TryFaceAttendant  @ VAR_RESULT always FALSE here
+	//setobjectxy OBJ_EVENT_ID_PLAYER, 9, 6
+	//applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
 	end
 
 TrainerHill_Entrance_EventScript_TryFaceAttendant::
@@ -51,10 +51,10 @@ TrainerHill_Entrance_EventScript_OpenCounterDoor::
 
 TrainerHill_Entrance_OnFrame:
 	map_script_2 VAR_TEMP_6, 0, TrainerHill_Entrance_EventScript_NewPostBattleCheck
-	map_script_2 VAR_TEMP_8, 0, TrainerHill_Entrance_EventScript_ExitChallenge
-	map_script_2 VAR_TEMP_D, 17, TrainerHill_Entrance_EventScript_ExitElevator
-	map_script_2 VAR_TEMP_5, 1, TrainerHill_Entrance_EventScript_EntryTrigger
-	map_script_2 VAR_TEMP_1, 1, TrainerHill_EventScript_WarpToEntranceCounter
+	//map_script_2 VAR_TEMP_8, 0, TrainerHill_Entrance_EventScript_ExitChallenge
+	//map_script_2 VAR_TEMP_D, 17, TrainerHill_Entrance_EventScript_ExitElevator
+	//map_script_2 VAR_TEMP_5, 1, TrainerHill_Entrance_EventScript_EntryTrigger
+	//map_script_2 VAR_TEMP_1, 1, TrainerHill_EventScript_WarpToEntranceCounter
 	.2byte 0
 
 TrainerHill_Entrance_EventScript_ExitElevator::
@@ -545,7 +545,8 @@ script NewTrainerHill_EventScript_ReceiveReward {
 	playfanfare(MUS_OBTAIN_ITEM)
 	waitfanfare
 	closemessage
-	addvar(VAR_TRAINER_HILL_STATE, 1)
+	//addvar(VAR_TRAINER_HILL_STATE, 1)
+	setvar(VAR_TRAINER_HILL_STATE, 0)
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkDownOneStep)
 	waitmovement(0)
 	releaseall
@@ -618,6 +619,7 @@ script NewTrainerHill_EventScript_GetNumCoins {
 script TrainerHill_Entrance_EventScript_EntryTrigger {
 	lockall
 	applymovement(OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant)
+	waitmovement(0)
 	goto_if_eq(VAR_TRAINER_HILL_STATE, 0, TrainerHill_Entrance_EventScript_ComeBackLater)
 	msgbox(format("Welcome to Trainer Hill! We have prepared a Pokémon battle exhibition with an audience, and Scott is offering a reward to the winner.\pAre you interested in competing?"), MSGBOX_YESNO)
 	goto_if_eq(VAR_RESULT, YES, TrainerHill_Entrance_EventScript_BeginChallenge)

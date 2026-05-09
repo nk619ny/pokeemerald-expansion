@@ -801,22 +801,24 @@ LavaridgeTown_Gym_1F_EventScript_NewPostFlannery::
 # 404 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	setvar VAR_LEVEL_CAP, 46
 # 405 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	setvar VAR_TRAINER_HILL_STATE, 3
 # 406 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
-	call Common_EventScript_LevelCapUpdate
+	call Common_EventScript_ApplyHandicap
 # 407 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+	call Common_EventScript_LevelCapUpdate
+# 408 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	call MtChimney_EventScript_SetupMagma
 	return
 
 
 LavaridgeTown_Gym_1F_EventScript_SetSun::
-# 412 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 413 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	setflag FLAG_FORCE_SUN
 	return
 
 
 LavaridgeTown_Gym_1F_EventScript_ClearSun::
-# 417 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
+# 418 "data/maps/LavaridgeTown_Gym_1F/scripts.pory"
 	clearflag FLAG_FORCE_SUN
 	return
 

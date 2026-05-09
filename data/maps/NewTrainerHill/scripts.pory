@@ -574,6 +574,25 @@ NewTrainerHill_Text_Sidney:
 
 `
 
+text NewTrainerHill_Text_SpenserDefeat {
+	format("Ah… Now this is something else…")
+}
+
+text NewTrainerHill_Text_SpenserIntro {
+	format("Spenser: My physical being is with Pokémon always! My heart beats as one with Pokémon always!")
+}
+
+text NewTrainerHill_Text_GretaDefeat {
+	format("No way! Good job!")
+}
+
+text NewTrainerHill_Text_ZinniaDefeat {
+	format("Niiiice! Ohhh, I really felt that one!")
+}
+
+text NewTrainerHill_Text_GretaIntro {
+	format("Greta: …Wait, are you the challenger?\NIs this right?\NI don't know how to say it, but… To put it bluntly, you look pretty weak.\NAre you sure you're up for me?\NHmm… Well, all right!")
+}
 
 script NewTrainerHill_EventScript_SetupAudienceCount {
 	if (flag(FLAG_IS_CHAMPION)) {
@@ -648,11 +667,11 @@ script NewTrainerHill_EventScript_AnnounceOpponent {
 		case 5:
 			msgbox(format("{PLAYER} will be facing Phoebe, fresh off training at Mt. Pyre!"), MSGBOX_NPC)
 		case 6:
-			msgbox(format("{PLAYER} will be facing Spenser!"), MSGBOX_NPC)
+			msgbox(format("{PLAYER} will be facing Spenser, chosen one of the mysterious Blue Orb!"), MSGBOX_NPC)
 		case 7:
-			msgbox(format("{PLAYER} will be facing Greta!"), MSGBOX_NPC)
+			msgbox(format("{PLAYER} will be facing the gutsy Greta!"), MSGBOX_NPC)
 		case 8:
-			msgbox(format("{PLAYER} will be facing Zinnia!"), MSGBOX_NPC)
+			msgbox(format("{PLAYER} will be facing Zinnia the Draconid!"), MSGBOX_NPC)
 	}
 	return
 }
@@ -670,11 +689,11 @@ script NewTrainerHill_EventScript_StartBattle {
 		case 5:
 			trainerbattle_no_intro(TRAINER_HILL_5, EverGrandeCity_PhoebesRoom_Text_Defeat)
 		case 6:
-			trainerbattle_no_intro(TRAINER_HILL_6, LilycoveCity_Text_BrendanDefeat)
+			trainerbattle_no_intro(TRAINER_HILL_6, NewTrainerHill_Text_SpenserDefeat)
 		case 7:
-			trainerbattle_no_intro(TRAINER_HILL_7, LilycoveCity_Text_BrendanDefeat)
+			trainerbattle_no_intro(TRAINER_HILL_7, NewTrainerHill_Text_GretaDefeat)
 		case 8:
-			trainerbattle_no_intro(TRAINER_HILL_8, LilycoveCity_Text_BrendanDefeat)
+			trainerbattle_no_intro(TRAINER_HILL_8, NewTrainerHill_Text_ZinniaDefeat)
 	}
 	return
 }
@@ -692,11 +711,11 @@ script NewTrainerHill_EventScript_OpponentDialogue {
 		case 5:
 			msgbox(NewTrainerHill_Text_Phoebe, MSGBOX_NPC)
 		case 6:
-			msgbox(format("Spenser: Let's see what you've got!"), MSGBOX_NPC)
+			msgbox(NewTrainerHill_Text_SpenserIntro, MSGBOX_NPC)
 		case 7:
-			msgbox(format("Greta: Prepare for a challenging battle!"), MSGBOX_NPC)
+			msgbox(NewTrainerHill_Text_GretaIntro, MSGBOX_NPC)
 		case 8:
-			msgbox(format("Zinnia: Let's see what you've got!"), MSGBOX_NPC)
+			msgbox(format("Zinnia: Give me a good taste of everything you and your Pokémon have to offer!"), MSGBOX_NPC)
 	}
 	return
 }

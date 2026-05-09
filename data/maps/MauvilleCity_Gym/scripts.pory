@@ -522,6 +522,7 @@ script MauvilleCity_Gym_EventScript_Switch4New {
 script MauvilleCity_Gym_EventScript_SetNewLevelCap {
 //	setvar(VAR_LEVEL_HANDICAP, 5)
 	setvar(VAR_LEVEL_CAP, 39)
+	setvar(VAR_TRAINER_HILL_STATE, 2)
 	call(Common_EventScript_ApplyHandicap)
 	call(Common_EventScript_LevelCapUpdate)
 //	buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
