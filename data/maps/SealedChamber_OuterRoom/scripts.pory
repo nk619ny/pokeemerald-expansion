@@ -89,8 +89,8 @@ SealedChamber_OuterRoom_EventScript_BrailleComma::
 
 SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall::
 	lockall
-	goto_if_set FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_HoleInWall
-	setflag FLAG_SYS_BRAILLE_DIG
+	//goto_if_set FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_HoleInWall
+	//setflag FLAG_SYS_BRAILLE_DIG
 	//braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
 	releaseall
 	end
@@ -103,6 +103,39 @@ SealedChamber_OuterRoom_EventScript_HoleInWall::
 SealedChamber_OuterRoom_EventScript_BrailleDigHere::
 	lockall
 	braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
+	releaseall
+	end
+
+SealedChamber_OuterRoom_EventScript_OpenRegiChambers::
+	lock
+	//goto_if_set FLAG_REGI_DOORS_OPENED, SealedChamber_InnerRoom_EventScript_NoEffect
+	//specialvar VAR_RESULT, CheckRelicanthWailord
+	//goto_if_eq VAR_RESULT, FALSE, SealedChamber_InnerRoom_EventScript_NoEffect
+	fadeoutbgm 0
+	playse SE_TRUCK_MOVE
+	special DoSealedChamberShakingEffect_Long
+	waitstate
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
+	delay 40
+	msgbox gText_DoorOpenedFarAway, MSGBOX_DEFAULT
+	closemessage
+	fadeinbgm 0
+	setflag FLAG_REGI_DOORS_OPENED
+	setflag FLAG_SYS_REGIROCK_PUZZLE_COMPLETED
+	setflag FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED
+	setflag FLAG_SYS_BRAILLE_REGICE_COMPLETED
+	removeobject LOCALID_REGI_DOOR_BUTTON
 	releaseall
 	end
 

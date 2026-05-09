@@ -13,7 +13,22 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_REGI_DOOR_BUTTON",
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 10,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SealedChamber_OuterRoom_EventScript_OpenRegiChambers",
+      "flag": "FLAG_SYS_REGIROCK_PUZZLE_COMPLETED"
+    }
+  ],
   "warp_events": [
     {
       "x": 10,

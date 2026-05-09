@@ -181,9 +181,9 @@ SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall::
 # 91 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	lockall
 # 92 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	goto_if_set FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_HoleInWall
+	//goto_if_set FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_HoleInWall
 # 93 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	setflag FLAG_SYS_BRAILLE_DIG
+	//setflag FLAG_SYS_BRAILLE_DIG
 # 94 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	//braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
 # 95 "data/maps/SealedChamber_OuterRoom/scripts.pory"
@@ -211,4 +211,70 @@ SealedChamber_OuterRoom_EventScript_BrailleDigHere::
 # 106 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	releaseall
 # 107 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	end
+# 108 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+
+# 109 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+SealedChamber_OuterRoom_EventScript_OpenRegiChambers::
+# 110 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	lock
+# 111 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	//goto_if_set FLAG_REGI_DOORS_OPENED, SealedChamber_InnerRoom_EventScript_NoEffect
+# 112 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	//specialvar VAR_RESULT, CheckRelicanthWailord
+# 113 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	//goto_if_eq VAR_RESULT, FALSE, SealedChamber_InnerRoom_EventScript_NoEffect
+# 114 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	fadeoutbgm 0
+# 115 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	playse SE_TRUCK_MOVE
+# 116 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	special DoSealedChamberShakingEffect_Long
+# 117 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	waitstate
+# 118 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	delay 40
+# 119 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	special DoSealedChamberShakingEffect_Short
+# 120 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	waitstate
+# 121 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	playse SE_DOOR
+# 122 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	delay 40
+# 123 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	special DoSealedChamberShakingEffect_Short
+# 124 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	waitstate
+# 125 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	playse SE_DOOR
+# 126 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	delay 40
+# 127 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	special DoSealedChamberShakingEffect_Short
+# 128 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	waitstate
+# 129 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	playse SE_DOOR
+# 130 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	delay 40
+# 131 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	msgbox gText_DoorOpenedFarAway, MSGBOX_DEFAULT
+# 132 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	closemessage
+# 133 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	fadeinbgm 0
+# 134 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	setflag FLAG_REGI_DOORS_OPENED
+# 135 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	setflag FLAG_SYS_REGIROCK_PUZZLE_COMPLETED
+# 136 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	setflag FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED
+# 137 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	setflag FLAG_SYS_BRAILLE_REGICE_COMPLETED
+# 138 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	removeobject LOCALID_REGI_DOOR_BUTTON
+# 139 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	releaseall
+# 140 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	end
