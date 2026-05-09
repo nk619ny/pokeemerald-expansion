@@ -7998,7 +7998,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "down. May lower Sp. Atk."),
         .effect = EFFECT_HIT,
         .power = (B_UPDATED_MOVE_DATA >= GEN_9) ? 95 : 70,
-        .type = TYPE_PSYCHIC,
+        .type = B_CUSTOMIZED_MOVE_STATS == TRUE ? TYPE_FAIRY : TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 5,
         .target = TARGET_SELECTED,
