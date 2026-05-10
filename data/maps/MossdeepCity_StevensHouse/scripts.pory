@@ -237,6 +237,9 @@ script MossdeepCity_StevensHouse_TakeMegaStone{
 	faceplayer
 	msgbox(MossdeepCity_StevensHouse_Text_CollectionOfMegaStones,MSGBOX_DEFAULT)
 	if(!checkitem(ITEM_AERODACTYLITE)) 		{dynmultipush("Aerodactylite",ITEM_AERODACTYLITE)}
+	if(!checkitem(ITEM_STARMINITE)) 		{dynmultipush("Starminite",ITEM_STARMINITE)}
+	if(!checkitem(ITEM_SLOWBRONITE)) 		{dynmultipush("Slowbronite",ITEM_SLOWBRONITE)}
+	if(!checkitem(ITEM_SLOWKINGITE)) 		{dynmultipush("Slowkingite",ITEM_SLOWKINGITE)}
 	if(!checkitem(ITEM_SCIZORITE)) 		{dynmultipush("Scizorite",ITEM_SCIZORITE)}
 	if(!checkitem(ITEM_CLEFABLITE)) 		{dynmultipush("Clefablite",ITEM_CLEFABLITE)}
 	if(!checkitem(ITEM_SKARMORITE)) 		{dynmultipush("Skarmorite",ITEM_SKARMORITE)}

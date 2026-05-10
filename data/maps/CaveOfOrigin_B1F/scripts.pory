@@ -150,6 +150,7 @@ script CaveOfOrigin_B1F_EventScript_WallaceNew {
 	if(!checkitem(ITEM_GARCHOMPITE)) 			{dynmultipush("Garchompite",ITEM_GARCHOMPITE)}
 	if(!checkitem(ITEM_GARCHOMPITE_Z)) 		{dynmultipush("Garchompite Z",ITEM_GARCHOMPITE_Z)}
 	if(!checkitem(ITEM_BAXCALIBRITE)) 		{dynmultipush("Baxcalibrite",ITEM_BAXCALIBRITE)}
+	if(!checkitem(ITEM_MILOTICITE)) 		{dynmultipush("Miloticite",ITEM_MILOTICITE)}
 
 	dynmultipush("Nevermind",ITEM_NONE)
 

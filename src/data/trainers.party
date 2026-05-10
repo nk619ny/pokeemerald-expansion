@@ -3784,7 +3784,7 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Baxcalibur-Mega @ Baxcalibrite  
+Baxcalibur @ Baxcalibrite  
 Ability: Thermal Exchange  
 Level: 78
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -4208,7 +4208,7 @@ Sableye
 Level: 30
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_HOPE === /* Victory Road 1F */ /* TO BE ADDED */
+=== TRAINER_HOPE === /* Victory Road 1F */
 Name: HOPE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4217,7 +4217,7 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skarmory-Mega @ Skarmorite  
+Skarmory @ Skarmorite  
 Ability: Stalwart  
 Level: 78
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -4236,6 +4236,27 @@ Adamant Nature
 - Rock Climb  
 - Breaking Swipe  
 - Guard Split  
+
+Hydrapple @ Yache Berry  
+Ability: Supersweet Syrup  
+Level: 78
+EVs: 248 HP / 252 SpA / 8 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Fickle Beam  
+- Syrup Bomb  
+- Pollen Puff  
+- Nasty Plot  
+
+Ursaluna @ Flame Orb  
+Ability: Guts  
+Level: 78
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Protect  
+- High Horsepower  
+- Facade  
+- Drain Punch  
 
 
 
@@ -4272,7 +4293,7 @@ IVs: 0 Atk
 - Super Fang  
 - Charm
 
-Malamar-Mega @ Malamarite  
+Malamar @ Malamarite  
 Ability: Contrary  
 Level: 78
 EVs: 252 HP / 96 Def / 32 SpA / 128 Spe  
@@ -4334,7 +4355,7 @@ IVs: 0 Atk
 - Flash Cannon  
 - Volt Switch
 
-Absol-Mega-Z @ Absolite Z  
+Absol @ Absolite Z  
 Ability: Magic Bounce  
 Level: 78
 EVs: 252 Atk / 252 Spe
@@ -18202,7 +18223,7 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Chesnaught-Mega @ Chesnaughtite  
+Chesnaught @ Chesnaughtite  
 Ability: Bulletproof  
 Level: 78
 EVs: 252 HP / 4 Def / 252 SpD  
@@ -19744,7 +19765,7 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Scovillain-Mega @ Scovillainite  
+Scovillain @ Scovillainite  
 Ability: Chlorophyll
 Level: 70
 IVs: 0 Atk  
@@ -28577,7 +28598,7 @@ IVs: 0 Atk
 - Vacuum Wave  
 - Body Press  
 
-Garchomp-Mega @ Garchompite  
+Garchomp @ Garchompite  
 Ability: Sand Force  
 Level: 83
 Tera Type: Dragon  
@@ -29359,7 +29380,7 @@ IVs: 0 Atk
 - Vacuum Wave  
 - Body Press  
 
-Garchomp-Mega @ Garchompite  
+Garchomp @ Garchompite  
 Ability: Sand Force  
 Level: 83
 Tera Type: Dragon  

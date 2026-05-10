@@ -183,14 +183,11 @@ script AquaHideout_B1F_EventScript_TakeMegaStone{
 	msgbox(AquaHideout_B1F_EventScript_MegaStoneDisplay_Text,MSGBOX_DEFAULT)
 	if(!checkitem(ITEM_BEEDRILLITE)) 		{dynmultipush("Beedrillite",ITEM_BEEDRILLITE)}
 	if(!checkitem(ITEM_BUTTERFRITE)) 		{dynmultipush("Butterfrite",ITEM_BUTTERFRITE)}
-	if(!checkitem(ITEM_SLOWBRONITE)) 		{dynmultipush("Slowbronite",ITEM_SLOWBRONITE)}
-	if(!checkitem(ITEM_SLOWKINGITE)) 		{dynmultipush("Slowkingite",ITEM_SLOWKINGITE)}
 	if(!checkitem(ITEM_PINSIRITE)) 			{dynmultipush("Pinsirite",ITEM_PINSIRITE)}
 	if(!checkitem(ITEM_GYARADOSITE)) 		{dynmultipush("Gyaradosite",ITEM_GYARADOSITE)}
 	if(!checkitem(ITEM_HERACRONITE)) 		{dynmultipush("Heracronite",ITEM_HERACRONITE)}
 	if(!checkitem(ITEM_SHARPEDONITE)) 		{dynmultipush("Sharpedonite",ITEM_SHARPEDONITE)}
 	if(!checkitem(ITEM_GLALITITE)) 			{dynmultipush("Glalitite",ITEM_GLALITITE)}
-	if(!checkitem(ITEM_STARMINITE)) 		{dynmultipush("Starminite",ITEM_STARMINITE)}
 	if(!checkitem(ITEM_EELEKTROSSITE)) 		{dynmultipush("Eelektrossite",ITEM_EELEKTROSSITE)}
 	if(!checkitem(ITEM_MALAMARITE)) 		{dynmultipush("Malamarite",ITEM_MALAMARITE)}
 	if(!checkitem(ITEM_BARBARACITE)) 		{dynmultipush("Barbaracite",ITEM_BARBARACITE)}
@@ -200,7 +197,6 @@ script AquaHideout_B1F_EventScript_TakeMegaStone{
 	if(!checkitem(ITEM_TATSUGIRINITE)) 		{dynmultipush("Tatsugirinite",ITEM_TATSUGIRINITE)}
 	if(!checkitem(ITEM_KINGLERITE)) 		{dynmultipush("Kinglerite",ITEM_KINGLERITE)}
 	if(!checkitem(ITEM_LAPRASITE)) 			{dynmultipush("Laprasite",ITEM_LAPRASITE)}
-	if(!checkitem(ITEM_MILOTICITE)) 		{dynmultipush("Miloticite",ITEM_MILOTICITE)}
 
 	dynmultipush("Nevermind",ITEM_NONE)
 
