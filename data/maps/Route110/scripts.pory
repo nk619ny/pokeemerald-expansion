@@ -1154,3 +1154,24 @@ text Route110_Text_SpindaCollectorChangedMind {
 text Route110_Text_SpindaCollectorPostTrade {
 	format("Oh, wonderful! Just look at those spots! What a beauty!\p…\NYou know, I say I'm only looking for new Spinda patterns, but I've never actually seen two with the exact same design, so I end up keeping every Spinda I find…")
 }
+
+
+script Route110_EventScript_Theodore {
+    trainerbattle_single(TRAINER_THEODORE, Route110_Text_TheodoreIntro, Route110_Text_TheodoreDefeat)
+    msgbox(Route110_Text_TheodorePostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+
+text Route110_Text_TheodoreIntro {
+    format("Hey, you! Let's battle!")
+}
+
+text Route110_Text_TheodoreDefeat {
+    format("No fair!")
+}
+
+text Route110_Text_TheodorePostBattle {
+    format("My dad keeps telling me to stop fighting with my friends, but I just can't help it! I want to use my Pokémon's cool moves!")
+}

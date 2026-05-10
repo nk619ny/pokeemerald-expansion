@@ -44,6 +44,7 @@ EverGrandeCity_SidneysRoom_EventScript_WalkInCloseDoor::
 	releaseall
 	end
 
+/*
 EverGrandeCity_SidneysRoom_EventScript_Sidney::
 	lock
 	faceplayer
@@ -53,6 +54,7 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney::
 	trainerbattle_no_intro TRAINER_NOLAND, EverGrandeCity_SidneysRoom_Text_Defeat
 	goto EverGrandeCity_SidneysRoom_EventScript_Defeated
 	end
+*/
 
 EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
@@ -123,4 +125,22 @@ script EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech {
 	waitmessage
 	releaseall
 	end
+}
+
+script EverGrandeCity_SidneysRoom_EventScript_Sidney {
+	lock
+	faceplayer
+	if (flag(FLAG_DEFEATED_ELITE_4_SIDNEY)) {
+		goto(EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech)
+	}
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+	msgbox(EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
+	random(2)
+	if (var(VAR_RESULT) == 0) {
+		trainerbattle_no_intro(TRAINER_NOLAND, EverGrandeCity_SidneysRoom_Text_Defeat)
+	}
+	else {
+		trainerbattle_no_intro(TRAINER_NOLAND_2, EverGrandeCity_SidneysRoom_Text_Defeat)
+	}
+	goto(EverGrandeCity_SidneysRoom_EventScript_Defeated)
 }

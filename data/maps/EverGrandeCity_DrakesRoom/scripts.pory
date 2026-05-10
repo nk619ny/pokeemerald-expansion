@@ -39,6 +39,7 @@ EverGrandeCity_DrakesRoom_EventScript_CloseDoor::
 	call PokemonLeague_EliteFour_EventScript_CloseDoor
 	return
 
+/*
 EverGrandeCity_DrakesRoom_EventScript_Drake::
 	lock
 	faceplayer
@@ -48,6 +49,7 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 	trainerbattle_no_intro TRAINER_TUCKER, EverGrandeCity_DrakesRoom_Text_Defeat
 	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
 	end
+*/
 
 EverGrandeCity_DrakesRoom_EventScript_Defeated::
 	//setvar VAR_0x8004, FANCOUNTER_DEFEATED_DRAKE
@@ -127,4 +129,22 @@ script EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech {
 	waitmessage
 	releaseall
 	end
+}
+
+script EverGrandeCity_DrakesRoom_EventScript_Drake {
+	lock
+	faceplayer
+	if (flag(FLAG_DEFEATED_ELITE_4_DRAKE)) {
+		goto(EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech)
+	}
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+	msgbox(EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
+	random(2)
+	if (var(VAR_RESULT) == 0) {
+		trainerbattle_no_intro(TRAINER_TUCKER, EverGrandeCity_DrakesRoom_Text_Defeat)
+	}
+	else {
+		trainerbattle_no_intro(TRAINER_TUCKER_2, EverGrandeCity_DrakesRoom_Text_Defeat)
+	}
+	goto(EverGrandeCity_DrakesRoom_EventScript_Defeated)
 }

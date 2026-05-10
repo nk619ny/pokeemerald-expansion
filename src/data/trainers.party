@@ -5658,22 +5658,51 @@ IVs: 0 Atk
 - Earth Power  
 
 
-=== TRAINER_STEVE_4 === /* Route */
-Name: STEVE
-Class: Pokemaniac
-Pic: Pokemaniac
+=== TRAINER_THEODORE === /* Route 110 Pre-Brawly */
+Name: THEODORE
+Class: School Kid
+Pic: School Kid M
 Gender: Male
-Music: Suspicious
+Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lairon
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Capsakid  
+Ability: Insomnia  
+Level: 20
+Tera Type: Grass  
+- Spicy Extract  
+- Stomping Tantrum  
+- Thief  
+- Grass Knot  
 
-Rhyhorn
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Impidimp (M)  
+Ability: Prankster  
+Level: 20  
+Tera Type: Dark  
+- Draining Kiss  
+- Leech Life  
+- Fake Out  
+- Parting Shot  
+
+Tyrunt  
+Ability: Strong Jaw  
+Level: 20
+Tera Type: Rock  
+- Bite  
+- Play Rough  
+- Ice Fang  
+- Poison Fang  
+
+Cufant  
+Ability: Sheer Force  
+Level: 20
+Tera Type: Steel  
+- Iron Head  
+- Body Slam  
+- Zen Headbutt  
+- Stomping Tantrum  
+
 
 === TRAINER_STEVE_5 === /* Route */
 Name: STEVE
@@ -5908,7 +5937,7 @@ IVs: 0 Atk
 - Shell Smash
 
 
-=== TRAINER_NOLEN === /* Underwater 124 */ /* TO BE ADDED */
+=== TRAINER_NOLEN === /* Underwater 124 */ 
 Name: NOLEN
 Class: Diver
 Pic: Swimmer M
@@ -5916,6 +5945,15 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+
+Araquanid  
+Ability: Water Bubble  
+Level: 73
+Tera Type: Water  
+- Liquidation  
+- Sticky Web  
+- Spider Web  
+- Leech Life  
 
 Cramorant @ Wacan Berry
 Level: 73
@@ -5952,7 +5990,7 @@ Adamant Nature
 - Iron Defense  
 
 
-=== TRAINER_STAN === /* Underwater 128 */ /* TO BE ADDED */
+=== TRAINER_STAN === /* Underwater 128 */
 Name: STAN
 Class: Diver
 Pic: Swimmer M
@@ -5992,6 +6030,16 @@ IVs: 0 Atk
 - Sludge Bomb  
 - Thunderbolt  
 - Acid Armor  
+
+Slowking-Galar  
+Ability: Curious Medicine  
+Level: 74
+Tera Type: Poison  
+IVs: 0 Atk  
+- Light Screen
+- Sludge Bomb
+- Psychic Noise
+- Slack Off
 
 
 === TRAINER_BARRY === /* Route 126 */ /* TO BE ADDED */
@@ -9898,8 +9946,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Focus Energy
 - Arm Thrust
 
-=== TRAINER_ANNA_AND_MEG_2 === /* Route */
-Name: ANNA & MEG
+=== TRAINER_CYNTHIA === /* Route */
+Name: CYNTHIA
 Class: Sr And Jr
 Pic: Sr And Jr
 Gender: Male
@@ -9922,8 +9970,8 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Focus Energy
 - Arm Thrust
 
-=== TRAINER_ANNA_AND_MEG_3 === /* Route */
-Name: ANNA & MEG
+=== TRAINER_RED === /* Route */
+Name: RED
 Class: Sr And Jr
 Pic: Sr And Jr
 Gender: Male
@@ -10767,8 +10815,8 @@ IVs: 0 Atk
 - Hyper Voice  
 
 
-=== TRAINER_TIMOTHY_2 === /* Route */
-Name: TIMOTHY
+=== TRAINER_LOOKER === /* Route */
+Name: LOOKER
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -10784,8 +10832,8 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_TIMOTHY_3 === /* Route */
-Name: TIMOTHY
+=== TRAINER_MIROR_B === /* Route */
+Name: MIROR B
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -10801,8 +10849,8 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_TIMOTHY_4 === /* Route */
-Name: TIMOTHY
+=== TRAINER_SILVER === /* Route */
+Name: SILVER
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -10818,8 +10866,8 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_TIMOTHY_5 === /* Route */
-Name: TIMOTHY
+=== TRAINER_EUSINE === /* Route */
+Name: EUSINE
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -10827,13 +10875,66 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Hariyama
-Level: 42
-IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
-- Arm Thrust
-- Belly Drum
-- Sand Attack
-- Dig
+Ninetales @ Wise Glasses  
+Ability: Flash Fire  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Psyshock  
+- Mystical Fire  
+- Reflect  
+- Scorching Sands  
+
+Electrode @ Focus Sash  
+Ability: Aftermath  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Mind Blown  
+- Thunder Cage  
+- Electro Ball  
+- Energy Ball  
+
+Suicune @ Leftovers  
+Ability: Water Absorb  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Hydro Steam  
+- Air Slash  
+- Calm Mind  
+- Life Dew  
+
+Gengar @ Focus Sash  
+Ability: Levitate  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Destiny Bond  
+- Dazzling Gleam  
+- Shadow Ball  
+- Protect  
+
+Alakazam @ Alakazite  
+Ability: Magic Guard  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Aura Sphere  
+- Psyshock  
+- Shadow Ball  
+- Future Sight  
+
+Hoopa @ Focus Sash  
+Ability: Magician  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Hyperspace Hole  
+- Nasty Plot  
+- Shadow Ball  
+- Destiny Bond  
+
 
 === TRAINER_VICKY === /* Route 111 */
 Name: VICKY
@@ -10869,8 +10970,8 @@ Makuhita
 Level: 21
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_SHELBY_2 === /* Route */
-Name: SHELBY
+=== TRAINER_N === /* Route */
+Name: N
 Class: Expert
 Pic: Expert F
 Gender: Female
@@ -10886,8 +10987,8 @@ Makuhita
 Level: 30
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-=== TRAINER_SHELBY_3 === /* Route */
-Name: SHELBY
+=== TRAINER_GIOVANNI === /* Route */
+Name: GIOVANNI
 Class: Expert
 Pic: Expert F
 Gender: Female
@@ -10895,16 +10996,66 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Medicham
-Level: 33
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+Persian @ Life Orb  
+Ability: Technician  
+Tera Type: Fairy  
+EVs: 4 Def / 252 SpA / 252 Spe  
+Hasty Nature  
+- Make It Rain  
+- Fake Out  
+- Icy Wind  
+- Hidden Power  
 
-Hariyama
-Level: 33
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+Honchkrow @ Liechi Berry  
+Ability: Moxie  
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Acrobatics  
+- Sucker Punch  
+- Tailwind  
+- Comeuppance  
 
-=== TRAINER_SHELBY_4 === /* Route */
-Name: SHELBY
+
+Nidoking (M) @ Life Orb  
+Ability: Sheer Force  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Earth Power  
+- Fire Blast  
+- Sludge Bomb  
+- Blizzard  
+
+Dugtrio @ Focus Sash  
+Ability: Arena Trap  
+EVs: 252 Atk / 252 Spe
+Jolly Nature
+- High Horsepower  
+- Sucker Punch  
+- Reversal  
+- Protect  
+
+Guzzlord @ Roseli Berry  
+Ability: Beast Boost  
+EVs: 252 Atk / 128 Def / 128 SpD  
+Adamant Nature  
+- Heat Crash  
+- Payback  
+- Cosmic Power  
+- Drain Punch  
+
+Mewtwo @ Mewtwonite Y  
+Ability: Psychic Surge  
+EVs: 252 SpA / 252 Spe
+Timid Nature
+IVs: 0 Atk  
+- Psystrike  
+- Aura Sphere  
+- Ice Beam  
+- Thunderbolt  
+
+=== TRAINER_COLRESS === /* Route */
+Name: COLRESS
 Class: Expert
 Pic: Expert F
 Gender: Female
@@ -10920,8 +11071,8 @@ Hariyama
 Level: 36
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
-=== TRAINER_SHELBY_5 === /* Route */
-Name: SHELBY
+=== TRAINER_AZ === /* Route */
+Name: AZ
 Class: Expert
 Pic: Expert F
 Gender: Female
@@ -10929,13 +11080,65 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Medicham
-Level: 39
-IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
+Sigilyph  
+Ability: Wonder Skin  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Tailwind  
+- Ancient Power  
+- Stored Power  
+- Calm Mind  
 
-Hariyama
-Level: 39
-IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
+Golurk-Mega @ Golurkite  
+Ability: Iron Fist  
+- Ally Switch  
+- High Horsepower  
+- Poltergeist  
+- Drain Punch  
+
+Torkoal  
+Ability: White Smoke  
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Ancient Power  
+- Body Press  
+- Clear Smog  
+- Heat Wave  
+
+
+Lucario-Mega-Z @ Lucarionite Z  
+Ability: Adaptability  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Vacuum Wave  
+- Aura Sphere  
+- Flash Cannon  
+- Shadow Ball  
+
+Floette-Mega (F) @ Floettite  
+Ability: Flower Veil  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Light of Ruin  
+- Giga Drain  
+- Psychic  
+- Synthesis  
+
+Zygarde-Mega @ Zygardite  
+Ability: Aura Break  
+EVs: 128 Def / 252 SpA / 128 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Core Enforcer  
+- Earth Power  
+- Grass Knot  
+- Focus Blast  
+
+
 
 === TRAINER_CALVIN_1 === /* Route 102 */
 Name: CALVIN
@@ -15299,13 +15502,43 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Seedot
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vulpix  
+Ability: Flash Fire  
+Level: 12
+Tera Type: Fire  
+- Ember  
+- Hex  
+- Quick Attack  
+- Charm  
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vulpix-Alola  
+Ability: Snow Cloak  
+Level: 12
+Tera Type: Ice  
+- Powder Snow  
+- Draining Kiss  
+- Ice Shard  
+- Captivate  
+
+Doduo  
+Ability: Tangled Feet  
+Level: 12
+Tera Type: Normal  
+- Mirror Move  
+- Double Hit  
+- Pluck  
+- Knock Off  
+
+Tandemaus  
+Ability: Run Away  
+Level: 12
+Tera Type: Normal  
+Modest Nature
+- Twin Beam  
+- Encore  
+- Population Bomb  
+- After You  
+
 
 === TRAINER_MIU_AND_YUKI === /* Route 123 */ /* TO BE ADDED */
 Name: MIU & YUKI
@@ -29425,7 +29658,7 @@ Wobbuffet
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RED === /* Route */ /* TO BE ADDED */
+=== TRAINER_RED_HILL === /* Route */ /* TO BE ADDED */
 Name: RED
 Class: Rival
 Pic: Red

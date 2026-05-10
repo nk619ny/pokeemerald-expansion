@@ -38,6 +38,7 @@ EverGrandeCity_GlaciasRoom_EventScript_CloseDoor::
 	call PokemonLeague_EliteFour_EventScript_CloseDoor
 	return
 
+/*
 EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 	lock
 	faceplayer
@@ -47,6 +48,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
 	end
+*/
 
 EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_GLACIA
@@ -119,4 +121,22 @@ script EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech {
 	waitmessage
 	releaseall
 	end
+}
+
+script EverGrandeCity_GlaciasRoom_EventScript_Glacia {
+	lock
+	faceplayer
+	if (flag(FLAG_DEFEATED_ELITE_4_GLACIA)) {
+		goto(EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech)
+	}
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+	msgbox(EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT)
+	random(2)
+	if (var(VAR_RESULT) == 0) {
+		trainerbattle_no_intro(TRAINER_WALLACE, EverGrandeCity_GlaciasRoom_Text_Defeat)
+	}
+	else {
+		trainerbattle_no_intro(TRAINER_WALLACE_2, EverGrandeCity_GlaciasRoom_Text_Defeat)
+	}
+	goto(EverGrandeCity_GlaciasRoom_EventScript_Defeated)
 }

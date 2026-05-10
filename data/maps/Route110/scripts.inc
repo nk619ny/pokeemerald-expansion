@@ -2220,6 +2220,16 @@ Route110_EventScript_SpindaCollector_17:
 	end
 
 
+Route110_EventScript_Theodore::
+# 1160 "data/maps/Route110/scripts.pory"
+	trainerbattle_single TRAINER_THEODORE, Route110_Text_TheodoreIntro, Route110_Text_TheodoreDefeat
+# 1161 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Text_TheodorePostBattle, MSGBOX_NPC
+# 1162 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+
 Route110_EventScript_TryDaleGiftAfterBattle_Text_0:
 # 1023 "data/maps/Route110/scripts.pory"
 	.string "A little while ago, I fished up some sort\n"
@@ -2349,3 +2359,18 @@ Route110_Text_SpindaCollectorPostTrade::
 	.string "actually seen two with the exact same\l"
 	.string "design, so I end up keeping every\l"
 	.string "Spinda I find…$"
+
+Route110_Text_TheodoreIntro::
+# 1167 "data/maps/Route110/scripts.pory"
+	.string "Hey, you! Let's battle!$"
+
+Route110_Text_TheodoreDefeat::
+# 1171 "data/maps/Route110/scripts.pory"
+	.string "No fair!$"
+
+Route110_Text_TheodorePostBattle::
+# 1175 "data/maps/Route110/scripts.pory"
+	.string "My dad keeps telling me to stop\n"
+	.string "fighting with my friends, but I just\l"
+	.string "can't help it! I want to use my\l"
+	.string "Pokémon's cool moves!$"
