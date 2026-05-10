@@ -2743,7 +2743,7 @@ SlateportCity_EventScript_AerialAce::
 # 1378 "data/maps/SlateportCity/scripts.pory"
 	faceplayer
 # 1379 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_AerialAce_Text_0, MSGBOX_DEFAULT
+	msgbox SlateportCity_EventScript_AerialAce_Text_0, MSGBOX_NPC
 # 1380 "data/maps/SlateportCity/scripts.pory"
 	checkitem ITEM_TM_AERIAL_ACE
 # 1381 "data/maps/SlateportCity/scripts.pory"
@@ -2756,7 +2756,7 @@ SlateportCity_EventScript_AerialAce_1:
 
 SlateportCity_EventScript_AerialAce_2:
 # 1382 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_AerialAce_Text_1, MSGBOX_DEFAULT
+	msgbox SlateportCity_EventScript_AerialAce_Text_1, MSGBOX_NPC
 # 1383 "data/maps/SlateportCity/scripts.pory"
 	closemessage
 # 1384 "data/maps/SlateportCity/scripts.pory"

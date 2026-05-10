@@ -547,10 +547,10 @@ SlateportCity_Harbor_Text_ThisWillHelpResearch:
 script SlateportCity_Harbor_EventScript_WaterPulseSailor {
 	lock
 	faceplayer
-	msgbox(format("It's amazing to see a ship propelling itself through the water"), MSGBOX_DEFAULT)
+	msgbox(format("It's amazing to see a huge ship propelling itself through the water."), MSGBOX_NPC)
 	checkitem(ITEM_TM_WATER_PULSE)
 	if(var(VAR_RESULT) == FALSE) {
-		msgbox(format("Your Pokémon can create a pulse of water as powerful as a ship with this TM."), MSGBOX_DEFAULT)
+		msgbox(format("Your Pokémon can create a pulse of water as powerful as a ship with this TM."), MSGBOX_NPC)
 		closemessage
 		giveitem(ITEM_TM_WATER_PULSE)
 		waitfanfare

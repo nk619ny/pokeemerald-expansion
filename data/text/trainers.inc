@@ -1274,17 +1274,6 @@ Route111_Text_BeauPostBattle:
 	.string "I'm going to work harder to make me\l"
 	.string "and my Pokémon stronger.$"
 
-Route111_Text_BeckyIntro:
-	.string "I heard there are fossils to be found\n"
-	.string "in the desert. Where could they be?$"
-
-Route111_Text_BeckyDefeat:
-	.string "I came up short…$"
-
-Route111_Text_BeckyPostBattle:
-	.string "If they can find fossils in the desert,\n"
-	.string "it must have been a sea before.$"
-
 Route111_Text_DustyIntro:
 	.string "For thirty years I have searched for\n"
 	.string "ancient ruins!\l"

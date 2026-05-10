@@ -723,6 +723,19 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
+/*
+Route111_Text_BeckyIntro:
+	.string "I heard there are fossils to be found\n"
+	.string "in the desert. Where could they be?$"
+
+Route111_Text_BeckyDefeat:
+	.string "I came up short…$"
+
+Route111_Text_BeckyPostBattle:
+	.string "If they can find fossils in the desert,\n"
+	.string "it must have been a sea before.$"
+*/
+
 `
 
 
@@ -792,4 +805,17 @@ script Route111_EventScript_BrickBreakBlackBelt {
 	closemessage
 	releaseall
 	end
+}
+
+
+text Route111_Text_BeckyIntro{
+	format("The best things come in threes!")
+}
+
+text Route111_Text_BeckyDefeat{
+	format("I came up short…")
+}
+
+text Route111_Text_BeckyPostBattle{
+	format("Some scientists in Mossdeep keep calling me about by Magneton.\pI'm not interested in meeting them, though. I don't like boats.")
 }

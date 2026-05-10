@@ -1446,120 +1446,146 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 # 724 "data/maps/Route111/scripts.pory"
 	.string "TRAINERS!”$"
+# 725 "data/maps/Route111/scripts.pory"
+
+# 726 "data/maps/Route111/scripts.pory"
+/*
+# 727 "data/maps/Route111/scripts.pory"
+Route111_Text_BeckyIntro:
+# 728 "data/maps/Route111/scripts.pory"
+	.string "I heard there are fossils to be found\n"
+# 729 "data/maps/Route111/scripts.pory"
+	.string "in the desert. Where could they be?$"
+# 730 "data/maps/Route111/scripts.pory"
+
+# 731 "data/maps/Route111/scripts.pory"
+Route111_Text_BeckyDefeat:
+# 732 "data/maps/Route111/scripts.pory"
+	.string "I came up short…$"
+# 733 "data/maps/Route111/scripts.pory"
+
+# 734 "data/maps/Route111/scripts.pory"
+Route111_Text_BeckyPostBattle:
+# 735 "data/maps/Route111/scripts.pory"
+	.string "If they can find fossils in the desert,\n"
+# 736 "data/maps/Route111/scripts.pory"
+	.string "it must have been a sea before.$"
+# 737 "data/maps/Route111/scripts.pory"
+*/
 
 Route111_EventScript_WinstratesCheckBadge::
-# 730 "data/maps/Route111/scripts.pory"
+# 743 "data/maps/Route111/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, Route111_EventScript_WinstratesCheckBadge_1
-# 734 "data/maps/Route111/scripts.pory"
+# 747 "data/maps/Route111/scripts.pory"
 	msgbox Route111_EventScript_WinstratesCheckBadge_Text_0, MSGBOX_DEFAULT
-# 735 "data/maps/Route111/scripts.pory"
+# 748 "data/maps/Route111/scripts.pory"
 	waitmessage
-# 736 "data/maps/Route111/scripts.pory"
+# 749 "data/maps/Route111/scripts.pory"
 	releaseall
 	end
 
 Route111_EventScript_WinstratesCheckBadge_1:
-# 731 "data/maps/Route111/scripts.pory"
+# 744 "data/maps/Route111/scripts.pory"
 	goto Route111_EventScript_BattleWinstrates
 	return
 
 
 Route111_EventScript_WinstratesGiveRockSmash::
-# 746 "data/maps/Route111/scripts.pory"
+# 759 "data/maps/Route111/scripts.pory"
 	msgbox Route111_EventScript_WinstratesGiveRockSmash_Text_0
-# 747 "data/maps/Route111/scripts.pory"
+# 760 "data/maps/Route111/scripts.pory"
 	waitmessage
-# 748 "data/maps/Route111/scripts.pory"
+# 761 "data/maps/Route111/scripts.pory"
 	giveitem ITEM_HM06
-# 749 "data/maps/Route111/scripts.pory"
+# 762 "data/maps/Route111/scripts.pory"
 	setflag FLAG_RECEIVED_HM_ROCK_SMASH
-# 750 "data/maps/Route111/scripts.pory"
+# 763 "data/maps/Route111/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY
-# 751 "data/maps/Route111/scripts.pory"
+# 764 "data/maps/Route111/scripts.pory"
 	closemessage
-# 752 "data/maps/Route111/scripts.pory"
+# 765 "data/maps/Route111/scripts.pory"
 	setvar VAR_LEVEL_CAP, 41
-# 753 "data/maps/Route111/scripts.pory"
+# 766 "data/maps/Route111/scripts.pory"
 	call Common_EventScript_ApplyHandicap
-# 754 "data/maps/Route111/scripts.pory"
+# 767 "data/maps/Route111/scripts.pory"
 	call Common_EventScript_LevelCapUpdate
-# 755 "data/maps/Route111/scripts.pory"
+# 768 "data/maps/Route111/scripts.pory"
 	closemessage
 	return
 
 
 Route111_EventScript_ScorcingSandsHiker::
-# 760 "data/maps/Route111/scripts.pory"
+# 773 "data/maps/Route111/scripts.pory"
 	lock
-# 761 "data/maps/Route111/scripts.pory"
+# 774 "data/maps/Route111/scripts.pory"
 	faceplayer
-# 762 "data/maps/Route111/scripts.pory"
+# 775 "data/maps/Route111/scripts.pory"
 	msgbox Route111_EventScript_ScorcingSandsHiker_Text_0, MSGBOX_DEFAULT
-# 763 "data/maps/Route111/scripts.pory"
+# 776 "data/maps/Route111/scripts.pory"
 	checkitem ITEM_TM_SCORCHING_SANDS
-# 764 "data/maps/Route111/scripts.pory"
+# 777 "data/maps/Route111/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq Route111_EventScript_ScorcingSandsHiker_2
 Route111_EventScript_ScorcingSandsHiker_1:
-# 770 "data/maps/Route111/scripts.pory"
+# 783 "data/maps/Route111/scripts.pory"
 	releaseall
 	end
 
 Route111_EventScript_ScorcingSandsHiker_2:
-# 765 "data/maps/Route111/scripts.pory"
+# 778 "data/maps/Route111/scripts.pory"
 	msgbox Route111_EventScript_ScorcingSandsHiker_Text_1, MSGBOX_DEFAULT
-# 766 "data/maps/Route111/scripts.pory"
+# 779 "data/maps/Route111/scripts.pory"
 	closemessage
-# 767 "data/maps/Route111/scripts.pory"
+# 780 "data/maps/Route111/scripts.pory"
 	giveitem ITEM_TM_SCORCHING_SANDS
-# 768 "data/maps/Route111/scripts.pory"
+# 781 "data/maps/Route111/scripts.pory"
 	waitfanfare
 	goto Route111_EventScript_ScorcingSandsHiker_1
 
 
 Route111_South_RemoveDuplicateBianca::
-# 775 "data/maps/Route111/scripts.pory"
+# 788 "data/maps/Route111/scripts.pory"
 	removeobject LOCALID_MAUVILLE_BIANCA
-# 776 "data/maps/Route111/scripts.pory"
+# 789 "data/maps/Route111/scripts.pory"
 	setvar VAR_TEMP_0, 1
-# 777 "data/maps/Route111/scripts.pory"
+# 790 "data/maps/Route111/scripts.pory"
 	releaseall
 	end
 
 
 Route111_EventScript_BrickBreakBlackBelt::
-# 782 "data/maps/Route111/scripts.pory"
+# 795 "data/maps/Route111/scripts.pory"
 	lock
-# 783 "data/maps/Route111/scripts.pory"
+# 796 "data/maps/Route111/scripts.pory"
 	faceplayer
-# 784 "data/maps/Route111/scripts.pory"
+# 797 "data/maps/Route111/scripts.pory"
 	msgbox Route111_EventScript_BrickBreakBlackBelt_Text_0, MSGBOX_DEFAULT
-# 785 "data/maps/Route111/scripts.pory"
+# 798 "data/maps/Route111/scripts.pory"
 	checkitem ITEM_TM_BRICK_BREAK
-# 786 "data/maps/Route111/scripts.pory"
+# 799 "data/maps/Route111/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq Route111_EventScript_BrickBreakBlackBelt_2
 Route111_EventScript_BrickBreakBlackBelt_1:
-# 792 "data/maps/Route111/scripts.pory"
+# 805 "data/maps/Route111/scripts.pory"
 	closemessage
-# 793 "data/maps/Route111/scripts.pory"
+# 806 "data/maps/Route111/scripts.pory"
 	releaseall
 	end
 
 Route111_EventScript_BrickBreakBlackBelt_2:
-# 787 "data/maps/Route111/scripts.pory"
+# 800 "data/maps/Route111/scripts.pory"
 	closemessage
-# 788 "data/maps/Route111/scripts.pory"
+# 801 "data/maps/Route111/scripts.pory"
 	msgbox Route111_EventScript_BrickBreakBlackBelt_Text_1, MSGBOX_DEFAULT
-# 789 "data/maps/Route111/scripts.pory"
+# 802 "data/maps/Route111/scripts.pory"
 	giveitem ITEM_TM_BRICK_BREAK
-# 790 "data/maps/Route111/scripts.pory"
+# 803 "data/maps/Route111/scripts.pory"
 	waitfanfare
 	goto Route111_EventScript_BrickBreakBlackBelt_1
 
 
 Route111_EventScript_WinstratesCheckBadge_Text_0:
-# 734 "data/maps/Route111/scripts.pory"
+# 747 "data/maps/Route111/scripts.pory"
 	.string "Before we start, do you have the\n"
 	.string "Mauville Gym Badge?\p"
 	.string "No?\n"
@@ -1568,36 +1594,51 @@ Route111_EventScript_WinstratesCheckBadge_Text_0:
 	.string "Come back after you've beaten Wattson!$"
 
 Route111_EventScript_WinstratesGiveRockSmash_Text_0:
-# 746 "data/maps/Route111/scripts.pory"
+# 759 "data/maps/Route111/scripts.pory"
 	.string "Vicky: You're strong! I'll give you this\n"
 	.string "HM. It's ROCK SMASH. It allows your\l"
 	.string "Pokémon to clear rocks away.$"
 
 Route111_EventScript_ScorcingSandsHiker_Text_0:
-# 762 "data/maps/Route111/scripts.pory"
+# 775 "data/maps/Route111/scripts.pory"
 	.string "Careful, the hot sand on the ground can\n"
 	.string "burn your skin during the daytime.$"
 
 Route111_EventScript_ScorcingSandsHiker_Text_1:
-# 765 "data/maps/Route111/scripts.pory"
+# 778 "data/maps/Route111/scripts.pory"
 	.string "Take this, so your Pokémon are prepared\n"
 	.string "too.$"
 
 Route111_EventScript_BrickBreakBlackBelt_Text_0:
-# 784 "data/maps/Route111/scripts.pory"
+# 797 "data/maps/Route111/scripts.pory"
 	.string "I've trained really hard, and I can\n"
 	.string "Break Bricks with my bare hands!\p"
 	.string "...I still can't Smash Rocks, though, so\n"
 	.string "I'm stuck here.$"
 
 Route111_EventScript_BrickBreakBlackBelt_Text_1:
-# 788 "data/maps/Route111/scripts.pory"
+# 801 "data/maps/Route111/scripts.pory"
 	.string "If you take this TM, at least all my\n"
 	.string "training won't have gone to waste.$"
 
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash::
-# 741 "data/maps/Route111/scripts.pory"
+# 754 "data/maps/Route111/scripts.pory"
 	.string "My Pokémon aren't strong enough to use\n"
 	.string "Rock Smash yet... I usually wait here\l"
 	.string "until someone from the Winstrate House\l"
 	.string "comes this way.$"
+
+Route111_Text_BeckyIntro::
+# 811 "data/maps/Route111/scripts.pory"
+	.string "The best things come in threes!$"
+
+Route111_Text_BeckyDefeat::
+# 815 "data/maps/Route111/scripts.pory"
+	.string "I came up short…$"
+
+Route111_Text_BeckyPostBattle::
+# 819 "data/maps/Route111/scripts.pory"
+	.string "Some scientists in Mossdeep keep\n"
+	.string "calling me about by Magneton.\p"
+	.string "I'm not interested in meeting them,\n"
+	.string "though. I don't like boats.$"

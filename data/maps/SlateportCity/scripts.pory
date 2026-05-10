@@ -1376,10 +1376,10 @@ script SlateportCity_EventScript_EnergyGuruNew {
 script SlateportCity_EventScript_AerialAce {
 	lock
 	faceplayer
-	msgbox(format("I use bird Pokémon to deliver mail out to the rest of Hoenn.\pTheir flight speed is really incredible."), MSGBOX_DEFAULT)
+	msgbox(format("I use bird Pokémon to deliver mail out to the rest of Hoenn.\pTheir flight speed is really incredible."), MSGBOX_NPC)
 	checkitem(ITEM_TM_AERIAL_ACE)
 	if(var(VAR_RESULT) == FALSE) {
-		msgbox(format("You should use this TM to make your bird Pokémon stronger."), MSGBOX_DEFAULT)
+		msgbox(format("You should use this TM to make your bird Pokémon stronger."), MSGBOX_NPC)
 		closemessage
 		giveitem(ITEM_TM_AERIAL_ACE)
 		waitfanfare

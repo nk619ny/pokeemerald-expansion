@@ -3635,26 +3635,60 @@ Muk
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_SAMUEL === /* Victory Road B1F */ /* TO BE ADDED */
+=== TRAINER_SAMUEL === /* Victory Road B1F */ 
 Name: SAMUEL
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Dragon Tamer
+Pic: Dragon Tamer
 Gender: Male
-Music: Cool
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Swellow
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Heliolisk @ Damp Rock  
+Ability: Dry Skin  
+Level: 78
+Tera Type: Electric  
+EVs: 252 Spe
+Timid Nature
+IVs: 0 Atk  
+- Dragon Pulse  
+- Thunder  
+- Rain Dance  
+- Protect 
 
-Mawile
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Dragonite @ Dragoninite
+Ability: Multiscale
+Level: 78
+Tera Type: Steel
+EVs: 252 HP / 252 SpA
+Modest Nature
+- Hurricane
+- Thunder
+- Ice Beam
+- Surf
 
-Kadabra
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Arbok @ Loaded Dice  
+Ability: Shed Skin 
+Level: 78 
+Tera Type: Poison  
+EVs: 252 Atk / 128 Def / 128 SpD  
+Adamant Nature  
+- Dragon Tail  
+- Scale Shot  
+- Poison Tail  
+- Leech Life  
+
+Sceptile @ Dragon Fang  
+Ability: Overgrow  
+Level: 78
+Tera Type: Grass  
+EVs: 252 Atk  
+Adamant Nature  
+- Dragon Dance  
+- Dragon Claw  
+- Leaf Blade  
+- X-Scissor  
+
 
 === TRAINER_VITO === /* Petalburg Gym */
 Name: VITO
@@ -3741,7 +3775,7 @@ Hasty Nature
 - Steel Wing  
 */
 
-=== TRAINER_OWEN === /* Victory Road B2F */ /* TO BE ADDED */
+=== TRAINER_OWEN === /* Victory Road B2F */ 
 Name: OWEN
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -3750,17 +3784,44 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Kecleon
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Baxcalibur-Mega @ Baxcalibrite  
+Ability: Thermal Exchange  
+Level: 78
+EVs: 252 HP / 252 Atk / 4 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- Ice Shard  
+- Glaive Rush  
+- High Horsepower  
+- Protect  
 
-Graveler
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Bruxish  
+Ability: Dazzling  
+Level: 79
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Psychic Fangs  
+- Wave Crash  
+- Ally Switch  
+- Aqua Jet  
 
-Wailord
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Garchomp @ Choice Scarf  
+Ability: Rough Skin  
+Level: 78
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Iron Head  
+- Dragon Claw  
+- Poison Jab  
+- Stomping Tantrum  
+
+Sneasler @ Focus Sash  
+Ability: Poison Touch  
+Level: 78
+- Fake Out  
+- Dire Claw  
+- Close Combat  
+- Protect  
 
 === TRAINER_WILTON_2 === /* Route */
 Name: WILTON
@@ -4156,9 +4217,27 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Roselia
-Level: 45
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Skarmory-Mega @ Skarmorite  
+Ability: Stalwart  
+Level: 78
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Drill Peck  
+- Iron Head  
+- Roost  
+- Drill Run  
+
+Rhydon @ Eviolite  
+Ability: Lightning Rod  
+Level: 78
+EVs: 4 HP / 252 Atk / 252 SpD  
+Adamant Nature  
+- Earthquake  
+- Rock Climb  
+- Breaking Swipe  
+- Guard Split  
+
+
 
 === TRAINER_SHANNON === /* Victory Road B1F */ /* Optional */
 Name: SHANNON
@@ -4173,7 +4252,7 @@ Claydol
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MICHELLE === /* Victory Road B1F */ /* TO BE ADDED */
+=== TRAINER_MICHELLE === /* Victory Road B1F */ 
 Name: MICHELLE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4182,19 +4261,50 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Torkoal
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Maushold @ Leftovers  
+Ability: Friend Guard  
+Level: 80
+EVs: 252 HP / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Follow Me  
+- Encore  
+- Super Fang  
+- Charm
 
-Medicham
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Malamar-Mega @ Malamarite  
+Ability: Contrary  
+Level: 78
+EVs: 252 HP / 96 Def / 32 SpA / 128 Spe  
+Mild Nature  
+- Psycho Boost  
+- Superpower  
+- Baton Pass  
+- Flamethrower  
 
-Ludicolo
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Turtonator @ Wise Glasses
+Ability: Shell Armor  
+Level: 78
+EVs: 252 HP / 60 Spe  
+Serious Nature  
+IVs: 0 Atk  
+- Overheat  
+- Draco Meteor  
+- Body Press  
+- Toxic  
 
-=== TRAINER_CAROLINE === /* Victory Road B2F */ /* TO BE ADDED */
+Hitmontop (M)  
+Ability: Intimidate  
+Level: 80
+EVs: 252 HP / 252 Atk
+Adamant Nature
+IVs: 0 Atk  
+- Topsy-Turvy  
+- Fake Out
+- Combat Torque
+- Blazing Torque
+
+=== TRAINER_CAROLINE === /* Victory Road B2F */ 
 Name: CAROLINE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4203,15 +4313,38 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skarmory
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Sneasler @ Focus Sash  
+Ability: Poison Touch  
+Level: 78
+EVs: 252 Atk / 252 Spe
+Jolly Nature
+- Fake Out  
+- Dire Claw  
+- Close Combat  
+- Protect  
 
-Sableye
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Cobalion @ Assault Vest  
+Ability: Justified  
+Level: 78
+EVs: 128 HP / 252 SpA / 128 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Aura Sphere  
+- Vacuum Wave  
+- Flash Cannon  
+- Volt Switch
 
-=== TRAINER_JULIE === /* Victory Road B2F */ /* TO BE ADDED */
+Absol-Mega-Z @ Absolite Z  
+Ability: Magic Bounce  
+Level: 78
+EVs: 252 Atk / 252 Spe
+Adamant Nature
+- Pursuit  
+- Protect
+- Shadow Claw  
+- Close Combat  
+
+=== TRAINER_JULIE === /* Victory Road B2F */
 Name: JULIE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -4220,17 +4353,49 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sandslash
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Electivire @ Shuca Berry
+Ability: Motor Drive  
+Level: 78
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Fusion Bolt  
+- Thunderous Kick  
+- Detect  
+- Quick Attack  
 
-Ninetales
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Magmortar  @ Shuca Berry
+Ability: Flame Body  
+Level: 78
+EVs: 252 HP / 252 SpA
+Modest Nature
+IVs: 0 Atk  
+- Fusion Flare  
+- Fiery Wrath  
+- Clear Smog  
+- Detect  
 
-Tropius
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Chimecho @ Chimechite  
+Ability: Levitate  
+Level: 78
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Psychic  
+- Flash Cannon  
+- Reflect  
+- Light Screen
+
+Aegislash  @ Shell Bell
+Ability: Stance Change  
+Level: 78
+EVs: 252 HP / 252 Atk / 4 SpD  
+Brave Nature  
+IVs: 0 Spe  
+- King's Shield  
+- Iron Head  
+- Poltergeist  
+- Shadow Sneak  
+
 
 === TRAINER_BRUCE === /* Route 104 North */
 Name: BRUCE
@@ -11397,21 +11562,48 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Gardevoir
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Skill Swap
-- Psychic
-- Thunderbolt
-- Calm Mind
+Drampa @ Drampanite  
+Ability: Sap Sipper  
+Level: 78
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Roost  
+- Calm Mind  
+- Dragon Pulse  
+- Hyper Voice  
 
-Slaking
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Earthquake
-- Shadow Ball
-- Aerial Ace
-- Brick Break
+Rillaboom  
+Ability: Grassy Surge  
+Level: 78
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Fake Out  
+- Grassy Glide  
+- High Horsepower  
+- U-turn  
+
+Sinistcha-Masterpiece  
+Ability: Hospitality 
+Level: 78 
+EVs: 252 HP / 4 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Life Dew  
+- Scald  
+- Strength Sap  
+- Matcha Gotcha  
+
+Hitmonlee (M) @ Grassy Seed  
+Ability: Unburden  
+Level: 78
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Axe Kick  
+- Trop Kick  
+- Blaze Kick  
+- Pursuit  
+
 
 === TRAINER_JAYLEN === /* Route 113 */
 Name: JAYLEN
@@ -13701,18 +13893,56 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Claydol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Skill Swap
-- Earthquake
+Bronzong @ Mental Herb  
+Ability: Levitate  
+Level: 80
+EVs: 252 HP / 252 Atk / 4 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Trick Room  
+- Body Press  
+- Gyro Ball  
+- Explosion  
 
-Lanturn
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Thunderbolt
-- Earthquake
+Musharna  @ Mental Herb
+Ability: Telepathy  
+Level: 80
+EVs: 252 HP / 252 SpA / 4 SpD  
+Quiet Nature  
+IVs: 0 Atk  / 0 Spe
+- Trick Room  
+- Dazzling Gleam  
+- Psychic  
+- Ally Switch  
+
+
+Ferrothorn @ Occa Berry  
+Ability: Iron Barbs  
+Level: 80
+EVs: 252 HP / 252 Def  
+Relaxed Nature  
+IVs: 0 Spe  
+- Body Press  
+- Curse  
+- Gyro Ball  
+- Leech Seed  
+
+
+Dragalge @ Dragalgite  
+Ability: Poison Point  
+Level: 78
+EVs: 252 HP / 252 SpA / 4 SpD  
+Quiet Nature  
+IVs: 0 Atk / 0 Spe  
+- Acid Armor  
+- Scald  
+- Sludge Wave  
+- Dragon Pulse  
+
+
+
 
 === TRAINER_JANI === /* Abandoned Ship */ /* TO BE ADDED */
 Name: JANI
@@ -16571,45 +16801,68 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Altaria
-Level: 44
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Aerial Ace
-- Safeguard
-- Dragon Breath
-- Dragon Dance
+Talonflame @ Life Orb  
+Ability: Gale Wings  
+Level: 80
+EVs: 252 HP / 252 Atk / 4 Spe  
+Jolly Nature  
+- Flare Blitz  
+- Brave Bird  
+- U-turn  
+- Tailwind  
 
-Delcatty
-Level: 43
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sing
-- Assist
-- Charm
-- Feint Attack
+Garchomp @ Rocky Helmet  
+Ability: Rough Skin  
+Level: 80
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Earthquake  
+- Dragon Claw  
+- Iron Head  
+- Stomping Tantrum  
 
-Roselia
-Level: 44
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Magical Leaf
-- Leech Seed
-- Giga Drain
-- Toxic
+Magnezone @ Shuca Berry 
+Ability: Sturdy  
+Level: 80
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Discharge  
+- Mirror Shot  
+- Body Press  
+- Reflect  
 
-Magneton
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Supersonic
-- Thunderbolt
-- Tri Attack
-- Screech
+Roserade @ Bright Powder  
+Ability: Poison Point  
+Level: 80
+EVs: 128 HP / 128 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Giga Drain  
+- Sludge Bomb  
+- Dazzling Gleam  
+- Leech Seed  
 
-Gardevoir
-Level: 45
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Team
-- Calm Mind
-- Psychic
-- Future Sight
+Azumarill @ Assault Vest  
+Ability: Huge Power  
+Level: 80
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Aqua Jet  
+- Aqua Tail  
+- Play Rough  
+- Ice Spinner  
+
+Gallade (M) @ Galladite  
+Ability: Justified  
+Level: 80
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Psycho Cut  
+- Sacred Sword 
+- Leaf Blade  
+- Swords Dance  
+
 
 === TRAINER_BRENDAN_ROUTE_103_MUDKIP === /* Route 101 */
 Name: BRENDAN
@@ -17940,7 +18193,7 @@ IVs: 0 Atk
 - Bug Buzz  
 
 
-=== TRAINER_MITCHELL === /* Victory Road B1F */
+=== TRAINER_MITCHELL === /* Victory Road B1F */ /* Back to Back */
 Name: MITCHELL
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -17949,21 +18202,49 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lunatone
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Explosion
-- Reflect
-- Light Screen
-- Psychic
+Chesnaught-Mega @ Chesnaughtite  
+Ability: Bulletproof  
+Level: 78
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Body Press  
+- Iron Defense  
+- Leech Seed  
+- Spiky Shield  
 
-Solrock
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Explosion
-- Reflect
-- Light Screen
-- Shadow Ball
+Arcanine-Hisui @ Hard Stone  
+Ability: Intimidate  
+Level: 78
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Accelerock  
+- Extreme Speed  
+- Flare Blitz  
+- Wild Charge  
+
+Sinistcha @ Big Root  
+Ability: Hospitality  
+Level: 78
+EVs: 252 HP / 252 Def / 4 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Life Dew  
+- Rage Powder  
+- Strength Sap  
+- Matcha Gotcha  
+
+Cherrim  
+Ability: Flower Gift  
+Level: 78
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Heal Pulse  
+- Swords Dance  
+- Petal Blizzard  
+- Attract  
+
+
 
 === TRAINER_ISAAC_2 === /* Route */
 Name: ISAAC
@@ -18159,7 +18440,7 @@ EVs: 252 HP / 252 Atk
 - Perish Song  
 
 
-=== TRAINER_HALLE === /* Victory Road B1F */ /* TO BE ADDED */
+=== TRAINER_HALLE === /* Victory Road B1F */ /* Back to back */
 Name: HALLE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -18168,13 +18449,51 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sableye
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vikavolt @ Vikavolite
+Ability: Levitate  
+Level: 78
+EVs: 252 HP / 128 SpA / 128 Spe
+Modest Nature
+IVs: 0 Atk  
+- Bug Buzz  
+- Thunderbolt  
+- Sticky Web  
+- Protect  
 
-Absol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Inteleon @ Scope Lens  
+Ability: Sniper  
+Level: 78
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Snipe Shot  
+- Air Slash  
+- Vacuum Wave  
+- Ice Beam  
+
+Kilowattrel  
+Ability: Competitive  
+Level: 78
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+Tera Type: Steel
+IVs: 0 Atk  
+- Thunderbolt  
+- Air Slash  
+- Hidden Power  
+- Tailwind  
+
+Lucario  
+Ability: Steadfast  
+Level: 78
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Aura Sphere  
+- Vacuum Wave  
+- Flash Cannon  
+- Nasty Plot  
+
 
 === TRAINER_GARRISON === /* Abandoned Ship */ /* TO BE ADDED */
 Name: GARRISON

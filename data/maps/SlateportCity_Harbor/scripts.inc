@@ -1093,7 +1093,7 @@ SlateportCity_Harbor_EventScript_WaterPulseSailor::
 # 549 "data/maps/SlateportCity_Harbor/scripts.pory"
 	faceplayer
 # 550 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_0, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_0, MSGBOX_NPC
 # 551 "data/maps/SlateportCity_Harbor/scripts.pory"
 	checkitem ITEM_TM_WATER_PULSE
 # 552 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -1106,7 +1106,7 @@ SlateportCity_Harbor_EventScript_WaterPulseSailor_1:
 
 SlateportCity_Harbor_EventScript_WaterPulseSailor_2:
 # 553 "data/maps/SlateportCity_Harbor/scripts.pory"
-	msgbox SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_1, MSGBOX_DEFAULT
+	msgbox SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_1, MSGBOX_NPC
 # 554 "data/maps/SlateportCity_Harbor/scripts.pory"
 	closemessage
 # 555 "data/maps/SlateportCity_Harbor/scripts.pory"
@@ -1118,8 +1118,8 @@ SlateportCity_Harbor_EventScript_WaterPulseSailor_2:
 
 SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_0:
 # 550 "data/maps/SlateportCity_Harbor/scripts.pory"
-	.string "It's amazing to see a ship propelling\n"
-	.string "itself through the water$"
+	.string "It's amazing to see a huge ship\n"
+	.string "propelling itself through the water.$"
 
 SlateportCity_Harbor_EventScript_WaterPulseSailor_Text_1:
 # 553 "data/maps/SlateportCity_Harbor/scripts.pory"
