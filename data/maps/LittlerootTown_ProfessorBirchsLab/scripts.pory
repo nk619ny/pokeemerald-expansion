@@ -1760,3 +1760,249 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_CheckIfGiveMegaStone {
 		return
 	}
 }
+
+
+
+
+// Level Cap Sync - restores VAR_LEVEL_CAP to the correct value based on story progress.
+// Checks trainers in descending cap order so the highest milestone reached wins.
+script Common_EventScript_LevelCapSync {
+	// Cap 85: Wally at Victory Road entrance
+	goto_if_defeated(TRAINER_WALLY_VR_1, Common_EventScript_LevelCapSync_Set85)
+	// Cap 75: Courtney at Mossdeep Space Center
+	goto_if_defeated(TRAINER_JUAN_1, Common_EventScript_LevelCapSync_Set80)
+	goto_if_defeated(TRAINER_ARCHIE_SEAFLOOR_CAVERN, Common_EventScript_LevelCapSync_Set77)
+	goto_if_defeated(TRAINER_COURTNEY_MOSSDEEP, Common_EventScript_LevelCapSync_Set75)
+	// Cap 73: Tate & Liza at Mossdeep Gym
+	goto_if_defeated(TRAINER_TATE_AND_LIZA_1, Common_EventScript_LevelCapSync_Set73)
+	// Cap 63: Winona at Fortree Gym
+
+	goto_if_defeated(TRAINER_BRENDAN_LILYCOVE_MUDKIP, Common_EventScript_LevelCapSync_Set70)
+	goto_if_defeated(TRAINER_BRENDAN_LILYCOVE_TREECKO, Common_EventScript_LevelCapSync_Set70)
+	goto_if_defeated(TRAINER_BRENDAN_LILYCOVE_TORCHIC, Common_EventScript_LevelCapSync_Set70)
+	goto_if_defeated(TRAINER_MAY_LILYCOVE_MUDKIP, Common_EventScript_LevelCapSync_Set70)
+	goto_if_defeated(TRAINER_MAY_LILYCOVE_TREECKO, Common_EventScript_LevelCapSync_Set70)
+	goto_if_defeated(TRAINER_MAY_LILYCOVE_TORCHIC, Common_EventScript_LevelCapSync_Set70)
+
+	goto_if_set(FLAG_BOTH_HIDEOUTS_COMPLETE, Common_EventScript_LevelCapSync_Set68)
+
+	goto_if_defeated(TRAINER_MATT, Common_EventScript_LevelCapSync_Set66)
+	goto_if_defeated(TRAINER_MAXIE_MAGMA_HIDEOUT, Common_EventScript_LevelCapSync_Set66)
+
+	goto_if_defeated(TRAINER_MAXIE_MT_PYRE, Common_EventScript_LevelCapSync_Set65)
+	goto_if_defeated(TRAINER_ARCHIE_MT_PYRE, Common_EventScript_LevelCapSync_Set65)
+
+	goto_if_defeated(TRAINER_WINONA_1, Common_EventScript_LevelCapSync_Set63)
+	// Cap 60: Rival on Route 119 (all starter/gender variants)
+
+
+	goto_if_defeated(TRAINER_MAY_ROUTE_119_TREECKO, Common_EventScript_LevelCapSync_Set60)
+	goto_if_defeated(TRAINER_MAY_ROUTE_119_TORCHIC, Common_EventScript_LevelCapSync_Set60)
+	goto_if_defeated(TRAINER_MAY_ROUTE_119_MUDKIP, Common_EventScript_LevelCapSync_Set60)
+	goto_if_defeated(TRAINER_BRENDAN_ROUTE_119_TREECKO, Common_EventScript_LevelCapSync_Set60)
+	goto_if_defeated(TRAINER_BRENDAN_ROUTE_119_TORCHIC, Common_EventScript_LevelCapSync_Set60)
+	goto_if_defeated(TRAINER_BRENDAN_ROUTE_119_MUDKIP, Common_EventScript_LevelCapSync_Set60)
+	// Cap 56: Norman at Petalburg Gym
+	goto_if_defeated(TRAINER_ARCHIE_WEATHER_INSTITUTE, Common_EventScript_LevelCapSync_Set58)
+
+	goto_if_defeated(TRAINER_VITO, Common_EventScript_LevelCapSync_Set56)
+	// Cap 53: Rival in Rustboro City (all starter/gender variants)
+	goto_if_defeated(TRAINER_MAY_RUSTBORO_TREECKO, Common_EventScript_LevelCapSync_Set53)
+	goto_if_defeated(TRAINER_MAY_RUSTBORO_TORCHIC, Common_EventScript_LevelCapSync_Set53)
+	goto_if_defeated(TRAINER_MAY_RUSTBORO_MUDKIP, Common_EventScript_LevelCapSync_Set53)
+	goto_if_defeated(TRAINER_BRENDAN_RUSTBORO_TREECKO, Common_EventScript_LevelCapSync_Set53)
+	goto_if_defeated(TRAINER_BRENDAN_RUSTBORO_TORCHIC, Common_EventScript_LevelCapSync_Set53)
+	goto_if_defeated(TRAINER_BRENDAN_RUSTBORO_MUDKIP, Common_EventScript_LevelCapSync_Set53)
+	// Cap 51: Roxanne at Rustboro Gym
+	goto_if_defeated(TRAINER_ROXANNE_1, Common_EventScript_LevelCapSync_Set51)
+	// Cap 48: Maxie at Mt. Chimney
+	goto_if_defeated(TRAINER_MAXIE_MT_CHIMNEY, Common_EventScript_LevelCapSync_Set48)
+	// Cap 46: Flannery at Lavaridge Gym
+	goto_if_defeated(TRAINER_FLANNERY_1, Common_EventScript_LevelCapSync_Set46)
+	goto_if_defeated(TRAINER_TABITHA_GLACIER, Common_EventScript_LevelCapSync_Set43)
+	goto_if_defeated(TRAINER_VICKY, Common_EventScript_LevelCapSync_Set41)
+	// Cap 39: Wattson at Mauville Gym
+	goto_if_defeated(TRAINER_WATTSON_1, Common_EventScript_LevelCapSync_Set39)
+	// Cap 36: Wally in Mauville City
+	goto_if_defeated(TRAINER_WALLY_MAUVILLE, Common_EventScript_LevelCapSync_Set36)
+	// Cap 34: Aqua Admin at Rusturf Tunnel
+	goto_if_defeated(TRAINER_AQUA_ADMIN_RUSTURF, Common_EventScript_LevelCapSync_Set34)
+	// Cap 31: Rival on Route 110 (all starter/gender variants)
+	goto_if_defeated(TRAINER_MAY_ROUTE_110_TREECKO, Common_EventScript_LevelCapSync_Set31)
+	goto_if_defeated(TRAINER_MAY_ROUTE_110_TORCHIC, Common_EventScript_LevelCapSync_Set31)
+	goto_if_defeated(TRAINER_MAY_ROUTE_110_MUDKIP, Common_EventScript_LevelCapSync_Set31)
+	goto_if_defeated(TRAINER_BRENDAN_ROUTE_110_TREECKO, Common_EventScript_LevelCapSync_Set31)
+	goto_if_defeated(TRAINER_BRENDAN_ROUTE_110_TORCHIC, Common_EventScript_LevelCapSync_Set31)
+	goto_if_defeated(TRAINER_BRENDAN_ROUTE_110_MUDKIP, Common_EventScript_LevelCapSync_Set31)
+
+	goto_if_defeated(TRAINER_BRAWLY_1, Common_EventScript_LevelCapSync_Set28)
+
+	goto_if_defeated(TRAINER_AQUA_ADMIN_FARM, Common_EventScript_LevelCapSync_Set24)
+	goto_if_defeated(TRAINER_MAGMA_ADMIN_FARM, Common_EventScript_LevelCapSync_Set24)
+	// Cap 15: Team Aqua Grunt in Petalburg Woods
+	goto_if_defeated(TRAINER_NORMAN_1, Common_EventScript_LevelCapSync_Set21)
+	goto_if_defeated(TRAINER_GRUNT_PETALBURG_WOODS, Common_EventScript_LevelCapSync_Set15)
+	// Cap 13: Rival on Route 103 (all starter/gender variants)
+	goto_if_defeated(TRAINER_MAY_ROUTE_103_TREECKO, Common_EventScript_LevelCapSync_Set13)
+	goto_if_defeated(TRAINER_MAY_ROUTE_103_TORCHIC, Common_EventScript_LevelCapSync_Set13)
+	goto_if_defeated(TRAINER_MAY_ROUTE_103_MUDKIP, Common_EventScript_LevelCapSync_Set13)
+	goto_if_defeated(TRAINER_BRENDAN_ROUTE_103_TREECKO, Common_EventScript_LevelCapSync_Set13)
+	goto_if_defeated(TRAINER_BRENDAN_ROUTE_103_TORCHIC, Common_EventScript_LevelCapSync_Set13)
+	goto_if_defeated(TRAINER_BRENDAN_ROUTE_103_MUDKIP, Common_EventScript_LevelCapSync_Set13)
+	// No milestone matched: report current cap without changing it
+	goto(Common_EventScript_LevelCapSync_Set10)
+}
+
+script Common_EventScript_LevelCapSync_Set85 {
+	setvar(VAR_LEVEL_CAP, 85)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set80 {
+	setvar(VAR_LEVEL_CAP, 80)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set77 {
+	setvar(VAR_LEVEL_CAP, 77)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set75 {
+	setvar(VAR_LEVEL_CAP, 75)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set73 {
+	setvar(VAR_LEVEL_CAP, 73)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set70 {
+	setvar(VAR_LEVEL_CAP, 70)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set68 {
+	setvar(VAR_LEVEL_CAP, 68)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set66 {
+	setvar(VAR_LEVEL_CAP, 66)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set65 {
+	setvar(VAR_LEVEL_CAP, 65)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set63 {
+	setvar(VAR_LEVEL_CAP, 63)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set60 {
+	setvar(VAR_LEVEL_CAP, 60)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set58 {
+	setvar(VAR_LEVEL_CAP, 58)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set56 {
+	setvar(VAR_LEVEL_CAP, 56)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set53 {
+	setvar(VAR_LEVEL_CAP, 53)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set51 {
+	setvar(VAR_LEVEL_CAP, 51)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set48 {
+	setvar(VAR_LEVEL_CAP, 48)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set46 {
+	setvar(VAR_LEVEL_CAP, 46)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set43 {
+	setvar(VAR_LEVEL_CAP, 43)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set41 {
+	setvar(VAR_LEVEL_CAP, 41)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set39 {
+	setvar(VAR_LEVEL_CAP, 39)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set36 {
+	setvar(VAR_LEVEL_CAP, 36)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set34 {
+	setvar(VAR_LEVEL_CAP, 34)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set31 {
+	setvar(VAR_LEVEL_CAP, 31)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set28 {
+	setvar(VAR_LEVEL_CAP, 28)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set24 {
+	setvar(VAR_LEVEL_CAP, 24)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set21 {
+	setvar(VAR_LEVEL_CAP, 21)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set15 {
+	setvar(VAR_LEVEL_CAP, 15)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set13 {
+	setvar(VAR_LEVEL_CAP, 13)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Set10 {
+	setvar(VAR_LEVEL_CAP, 10)
+	goto(Common_EventScript_LevelCapSync_Report)
+}
+
+script Common_EventScript_LevelCapSync_Report {
+	lock
+	buffernumberstring(STR_VAR_1, VAR_LEVEL_CAP)
+	msgbox(format("Your level cap has been restored to {STR_VAR_1}."), MSGBOX_DEFAULT)
+	closemessage
+	releaseall
+	return
+}
