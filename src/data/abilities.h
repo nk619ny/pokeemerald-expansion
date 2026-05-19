@@ -2444,6 +2444,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6
     },
 
+    [ABILITY_DESERT_SPIRIT] =
+    {
+        .name = _("Desert Spirit"),
+        .description = COMPOUND_STRING("Powers up Ground moves."),
+        .aiRating = 6
+    },
+
     [ABILITY_SMOKE_CLOUD] =
     {
         .name = _("Smoke Cloud"),

@@ -7648,7 +7648,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = (100 + 30),
         .baseSpAttack  = (100 + 30),
         .baseSpDefense = (80 + 10),
-        .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
+        .types = MON_TYPES(TYPE_BUG, TYPE_DRAGON),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 260,
@@ -7668,7 +7668,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
-        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_SAND_STREAM },
+        .abilities = { ABILITY_DESERT_SPIRIT, ABILITY_DESERT_SPIRIT, ABILITY_DESERT_SPIRIT },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Flygon"),
         .cryId = CRY_FLYGON,
