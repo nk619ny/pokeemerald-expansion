@@ -1522,11 +1522,15 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap {
 	msgbox(LittlerootTown_ProfessorBirchsLab_Text_ExplainHandicap)
 	waitmessage
 	buffernumberstring(STR_VAR_1,VAR_LEVEL_HANDICAP)
-	if(var(VAR_LEVEL_HANDICAP) == 0){
-		msgbox(format("You currently do not have a handicap.\pWould you like to set one?"),MSGBOX_YESNO)
+	buffernumberstring(STR_VAR_2,VAR_HIGHEST_LEVEL_HANDICAP)
+	if((var(VAR_LEVEL_HANDICAP) == 0) && (var(VAR_HIGHEST_LEVEL_HANDICAP) == 0)) {
+		msgbox(format("You have never set a handicap yet.\pWould you like to set one now?"),MSGBOX_YESNO)
+	}
+	elif(var(VAR_LEVEL_HANDICAP) == 0) {
+		msgbox(format("Your maximum handicap was {STR_VAR_2}, but you currently do not have a handicap.\pWould you like to set one again?"),MSGBOX_YESNO)
 	}
 	else{
-		msgbox(format("You currently have a handicap of {STR_VAR_1}.\pWould you like to change it?"),MSGBOX_YESNO)
+		msgbox(format("Your maximum handicap was {STR_VAR_2}, and you currently have a handicap of {STR_VAR_1}.\pWould you like to change it?"),MSGBOX_YESNO)
 	}
 	waitmessage
 	if (var(VAR_RESULT) == YES) {
@@ -1534,7 +1538,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap {
 		goto(LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes)
 	}
 	else {
-		msgbox(format("If you ever change your mind, come back and talk to me."))
+		msgbox(format("If you change your mind, come back and talk to me."))
 	}
 	waitmessage
 	releaseall
@@ -1542,41 +1546,42 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicap {
 }
 
 text LittlerootTown_ProfessorBirchsLab_Text_ExplainHandicap {
-	format("I can help you register a handicap for your adventure.\pA handicap will let you use slightly higher level Pokémon than you otherwise could, in all battles.\pRemember, though, that once a handicap is set it can’t be lowered, and it will be recorded by the Pokémon League challenge.")
+	format("I can help you register a handicap for your adventure.\pA handicap will let you use slightly higher level Pokémon than you otherwise could, in all battles.\pRemember, though, that the maximum handicap used will be recorded by the Pokémon League challenge.")
 }
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes {
-	if(var(VAR_LEVEL_HANDICAP) == 10){
-		msgbox(format("You currently have a handicap of 10.\pWe cannot change it any further."))
-		waitmessage
-		releaseall
-		end
-	}
-	elif(var(VAR_LEVEL_HANDICAP) == 0){
+	//if(var(VAR_LEVEL_HANDICAP) == 10){
+	//	msgbox(format("You currently have a handicap of 10.\pWe cannot change it any further."))
+	//	waitmessage
+	//	releaseall
+	//	end
+	//}
+	if(var(VAR_LEVEL_HANDICAP) == 0){
 		msgbox(format("What level handicap would you like?"))
         dynmultichoice(25,2,0,5,0,DYN_MULTICHOICE_CB_NONE,"0","1","2","3","4","5","6","7","8","9","10")
-        copyvar(TempVar_HandicapAnswer,VAR_RESULT)      
+        copyvar(TempVar_ProspectiveHandicap,VAR_RESULT)      
 		waitmessage
 
-		if(var(TempVar_HandicapAnswer) == 0){
-			msgbox(format("Very well, you still do not have a handicap.\pCome back if you ever decide to add one."))
+		if(var(TempVar_ProspectiveHandicap) == 0){
+			msgbox(format("Very well, you still do not have a handicap.\pCome back if you decide to add one."))
 			waitmessage
 			releaseall
 			end
 		}
-		elif(var(TempVar_HandicapAnswer) == 127){
-			setvar(TempVar_HandicapAnswer,0)
-			msgbox(format("Very well, you still do not have a handicap.\pCome back if you ever decide to add one."))
+		elif(var(TempVar_ProspectiveHandicap) == 127){
+			setvar(TempVar_ProspectiveHandicap,0)
+			msgbox(format("Very well, you still do not have a handicap.\pCome back if you decide to add one."))
 			waitmessage
 			releaseall
 			end
 		}
 		else{
-			buffernumberstring(STR_VAR_2,TempVar_HandicapAnswer)
+			buffernumberstring(STR_VAR_2,TempVar_ProspectiveHandicap)
 			msgbox(format("Are you sure you would like a handicap of {STR_VAR_2} levels?"),MSGBOX_YESNO)
 
 			if(var(VAR_RESULT) == YES){
-				copyvar(VAR_LEVEL_HANDICAP,TempVar_HandicapAnswer)
+				call(LittlerootTown_ProfessorBirchsLab_EventScript_UpdateMaxHandicap)
+				copyvar(VAR_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
 				msgbox(format("Your handicap has been set to {STR_VAR_2} levels."))
 				waitmessage
 				call(LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap)
@@ -1593,66 +1598,79 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes {
 	}
 	else {
 		buffernumberstring(STR_VAR_1,VAR_LEVEL_HANDICAP)
-		copyvar(TempVar_ProspectiveHandicap,VAR_LEVEL_HANDICAP)
+		//copyvar(TempVar_ProspectiveHandicap,VAR_LEVEL_HANDICAP)
 		dynmultipush("0",0)
-		if(var(VAR_LEVEL_HANDICAP) <= 9){dynmultipush("1",1)}
-		if(var(VAR_LEVEL_HANDICAP) <= 8){dynmultipush("2",2)}
-		if(var(VAR_LEVEL_HANDICAP) <= 7){dynmultipush("3",3)}
-		if(var(VAR_LEVEL_HANDICAP) <= 6){dynmultipush("4",4)}
-		if(var(VAR_LEVEL_HANDICAP) <= 5){dynmultipush("5",5)}
-		if(var(VAR_LEVEL_HANDICAP) <= 4){dynmultipush("6",6)}
-		if(var(VAR_LEVEL_HANDICAP) <= 3){dynmultipush("7",7)}
-		if(var(VAR_LEVEL_HANDICAP) <= 2){dynmultipush("8",8)}
-		if(var(VAR_LEVEL_HANDICAP) <= 1){dynmultipush("9",9)}
+		dynmultipush("1",1)
+		dynmultipush("2",2)
+		dynmultipush("3",3)
+		dynmultipush("4",4)
+		dynmultipush("5",5)
+		dynmultipush("6",6)
+		dynmultipush("7",7)
+		dynmultipush("8",8)
+		dynmultipush("9",9)
+		dynmultipush("10",10)
+//		if(var(VAR_LEVEL_HANDICAP) <= 9){dynmultipush("1",1)}
+//		if(var(VAR_LEVEL_HANDICAP) <= 8){dynmultipush("2",2)}
+//		if(var(VAR_LEVEL_HANDICAP) <= 7){dynmultipush("3",3)}
+//		if(var(VAR_LEVEL_HANDICAP) <= 6){dynmultipush("4",4)}
+//		if(var(VAR_LEVEL_HANDICAP) <= 5){dynmultipush("5",5)}
+//		if(var(VAR_LEVEL_HANDICAP) <= 4){dynmultipush("6",6)}
+//		if(var(VAR_LEVEL_HANDICAP) <= 3){dynmultipush("7",7)}
+//		if(var(VAR_LEVEL_HANDICAP) <= 2){dynmultipush("8",8)}
+//		if(var(VAR_LEVEL_HANDICAP) <= 1){dynmultipush("9",9)}
 //		if(var(VAR_LEVEL_HANDICAP) == 0){dynmultipush("10",10)}
-		msgbox(format("How much would you like to increase it?"))
+		msgbox(format("What would you like your handicap to be?"))
 		dynmultistack(25,2,FALSE,5,1,0,DYN_MULTICHOICE_CB_NONE)
-		copyvar(TempVar_HandicapAnswer,VAR_RESULT)    
+		copyvar(TempVar_ProspectiveHandicap,VAR_RESULT)    
 		waitmessage  
 
-		switch(var(TempVar_HandicapAnswer)){
+		switch(var(TempVar_ProspectiveHandicap)){
 			case 0:
-				msgbox(format("Your handicap remains at {STR_VAR_1}.\pCome back if you ever decide to increase it."))  
-				waitmessage
-				closemessage
-				releaseall
-				end
+				setvar(TempVar_ProspectiveHandicap,0)
+				//msgbox(format("Your handicap remains at {STR_VAR_1}.\pCome back if you ever decide to increase it."))  
+				//waitmessage
+				//closemessage
+				//releaseall
+				//end
 			case 1:
-				addvar(TempVar_ProspectiveHandicap,1)
+				setvar(TempVar_ProspectiveHandicap,1)
 			case 2:
-				addvar(TempVar_ProspectiveHandicap,2)
+				setvar(TempVar_ProspectiveHandicap,2)
 			case 3:
-				addvar(TempVar_ProspectiveHandicap,3)
+				setvar(TempVar_ProspectiveHandicap,3)
 			case 4:
-				addvar(TempVar_ProspectiveHandicap,4)
+				setvar(TempVar_ProspectiveHandicap,4)
 			case 5:
-				addvar(TempVar_ProspectiveHandicap,5)
+				setvar(TempVar_ProspectiveHandicap,5)
 			case 6:
-				addvar(TempVar_ProspectiveHandicap,6)
+				setvar(TempVar_ProspectiveHandicap,6)
 			case 7:
-				addvar(TempVar_ProspectiveHandicap,7)
+				setvar(TempVar_ProspectiveHandicap,7)
 			case 8:
-				addvar(TempVar_ProspectiveHandicap,8)
+				setvar(TempVar_ProspectiveHandicap,8)
 			case 9:
-				addvar(TempVar_ProspectiveHandicap,9)
+				setvar(TempVar_ProspectiveHandicap,9)
 			case 10:
-				addvar(TempVar_ProspectiveHandicap,10)
+				setvar(TempVar_ProspectiveHandicap,10)
 			default:
-				msgbox(format("Your handicap remains at {STR_VAR_1}.\pCome back if you ever decide to increase it."))  
+				msgbox(format("Your handicap remains at {STR_VAR_1}.\pCome back if you ever decide to change it."))  
 				waitmessage
 				releaseall
 				end
 		}
 		buffernumberstring(STR_VAR_2,TempVar_ProspectiveHandicap)
-		msgbox(format("Are you sure you would like to increase your handicap from {STR_VAR_1} to {STR_VAR_2}?"),MSGBOX_YESNO)
+		msgbox(format("Are you sure you would like to change your handicap from {STR_VAR_1} to {STR_VAR_2}?"),MSGBOX_YESNO)
 		waitmessage
 		if(var(VAR_RESULT) == YES){
+			call(LittlerootTown_ProfessorBirchsLab_EventScript_UpdateMaxHandicap)
+			call(LittlerootTown_ProfessorBirchsLab_EventScript_UndoCurrentHandicap)
 			copyvar(VAR_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
 			call(LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap)
-			msgbox(format("Very well. Your handicap has been set to {STR_VAR_2}.\pCome back if you ever decide to increase it."))
+			msgbox(format("Very well. Your handicap has been set to {STR_VAR_2}.\pCome back if you ever decide to change it."))
 		}
 		else{
-			msgbox(format("Very well. Your handicap remains at {STR_VAR_1}.\pCome back if you ever decide to increase it."))  
+			msgbox(format("Very well. Your handicap remains at {STR_VAR_1}.\pCome back if you ever decide to change it."))  
 		}
 		waitmessage
 		releaseall
@@ -1660,8 +1678,84 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_Aide_SetHandicapYes {
 	}
 }
 
+script LittlerootTown_ProfessorBirchsLab_EventScript_UpdateMaxHandicap{
+	switch(var(VAR_HIGHEST_LEVEL_HANDICAP)){
+		case 0:
+			copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+		case 1:
+			if(var(TempVar_ProspectiveHandicap)>1){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+		case 2:
+			if(var(TempVar_ProspectiveHandicap)>2){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+		case 3:
+			if(var(TempVar_ProspectiveHandicap)>3){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+		case 4:
+			if(var(TempVar_ProspectiveHandicap)>4){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+		case 5:
+			if(var(TempVar_ProspectiveHandicap)>5){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+		case 6:
+			if(var(TempVar_ProspectiveHandicap)>6){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+		case 7:
+			if(var(TempVar_ProspectiveHandicap)>7){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+		case 8:
+			if(var(TempVar_ProspectiveHandicap)>8){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+		case 9:
+			if(var(TempVar_ProspectiveHandicap)>9){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+		case 10:
+			if(var(TempVar_ProspectiveHandicap)>10){
+				copyvar(VAR_HIGHEST_LEVEL_HANDICAP,TempVar_ProspectiveHandicap)
+			}
+	}
+	return
+}
+
+script LittlerootTown_ProfessorBirchsLab_EventScript_UndoCurrentHandicap{
+				switch(var(VAR_LEVEL_HANDICAP)){
+					case 1:
+						addvar(VAR_LEVEL_CAP,-1)
+					case 2:
+						addvar(VAR_LEVEL_CAP,-2)
+					case 3:	
+						addvar(VAR_LEVEL_CAP,-3)
+					case 4:
+						addvar(VAR_LEVEL_CAP,-4)
+					case 5:
+						addvar(VAR_LEVEL_CAP,-5)
+					case 6:
+						addvar(VAR_LEVEL_CAP,-6)
+					case 7:
+						addvar(VAR_LEVEL_CAP,-7)
+					case 8:
+						addvar(VAR_LEVEL_CAP,-8)
+					case 9:
+						addvar(VAR_LEVEL_CAP,-9)
+					case 10:	
+						addvar(VAR_LEVEL_CAP,-10)
+					default:
+						delay(1)
+				}
+				return
+}
+
 script LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap{
-				switch(var(TempVar_HandicapAnswer)){
+				switch(var(TempVar_ProspectiveHandicap)){
 					case 1:
 						addvar(VAR_LEVEL_CAP,1)
 					case 2:
@@ -1685,7 +1779,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_ApplyNewHandicap{
 					default:
 						delay(1)
 				}
-				setvar(TempVar_HandicapAnswer,0)
+				setvar(TempVar_ProspectiveHandicap,0)
 				return
 }
 

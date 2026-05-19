@@ -1369,12 +1369,14 @@ SootopolisCity_EventScript_Archie::
 	releaseall
 	end
 
+/*
 SootopolisCity_EventScript_ArchieRayquaza::
 	msgbox SootopolisCity_Text_TryingMeaninglessToPokemon, MSGBOX_DEFAULT
 	setflag FLAG_MET_ARCHIE_SOOTOPOLIS
 	goto_if_set FLAG_MET_MAXIE_SOOTOPOLIS, SootopolisCity_EventScript_MaxieArchieLeave
 	releaseall
 	end
+*/
 
 SootopolisCity_EventScript_MaxieArchieLeave::
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE
@@ -1782,6 +1784,17 @@ script SootopolisCity_EventScript_StevenGiveWaterfall {
 	setflag(FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS)
 	msgbox(SootopolisCity_Text_StevenMeetMeInEvergrande, MSGBOX_DEFAULT)
 	closemessage
+	releaseall
+	end
+}
+
+script SootopolisCity_EventScript_ArchieRayquaza {
+	msgbox(SootopolisCity_Text_TryingMeaninglessToPokemon, MSGBOX_DEFAULT)
+	if(!flag(FLAG_MET_ARCHIE_SOOTOPOLIS)) {
+	setflag(FLAG_MET_ARCHIE_SOOTOPOLIS)
+	giveitem(ITEM_MASTER_BALL)
+	goto_if_set(FLAG_MET_MAXIE_SOOTOPOLIS, SootopolisCity_EventScript_MaxieArchieLeave)
+	}
 	releaseall
 	end
 }

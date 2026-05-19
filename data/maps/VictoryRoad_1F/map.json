@@ -56,8 +56,8 @@
     {
       "local_id": "LOCALID_VICTORY_ROAD_ENTRANCE_WALLY",
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
-      "x": 31,
-      "y": 13,
+      "x": 51,
+      "y": 18,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -101,9 +101,9 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "VictoryRoad_1F_EventScript_ExitWally",
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "VictoryRoad_1F_EventScript_WallyNew",
       "flag": "FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY"
     },
     {
@@ -121,14 +121,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M_ORAS",
-      "x": 32,
-      "y": 17,
+      "x": 25,
+      "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
-      "trainer_sight_or_berry_tree_id": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "VictoryRoad_1F_EventScript_Quincy",
       "flag": "0"
     }
@@ -173,28 +173,28 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 30,
-      "y": 5,
+      "x": 35,
+      "y": 8,
       "elevation": 4,
-      "var": "VAR_TEMP_1",
+      "var": "VAR_TEMP_2",
       "var_value": "0",
       "script": "VictoryRoad_1F_EventScript_WallyBattleTrigger1"
     },
     {
       "type": "trigger",
-      "x": 31,
-      "y": 5,
+      "x": 35,
+      "y": 9,
       "elevation": 4,
-      "var": "VAR_TEMP_1",
+      "var": "VAR_TEMP_2",
       "var_value": "0",
       "script": "VictoryRoad_1F_EventScript_WallyBattleTrigger2"
     },
     {
       "type": "trigger",
-      "x": 32,
-      "y": 5,
+      "x": 35,
+      "y": 10,
       "elevation": 4,
-      "var": "VAR_TEMP_1",
+      "var": "VAR_TEMP_2",
       "var_value": "0",
       "script": "VictoryRoad_1F_EventScript_WallyBattleTrigger3"
     }

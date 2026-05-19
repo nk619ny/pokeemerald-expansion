@@ -27,6 +27,7 @@ VictoryRoad_1F_EventScript_SetEntranceWallyPos2::
 
 VictoryRoad_1F_EventScript_WallyBattleTrigger1::
 	lockall
+	msgbox TestTriggerText123 MSGBOX_DEFAULT
 	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VictoryRoad_1F_EventScript_WallyDefeated
 	setvar VAR_0x8008, 1
 	addobject LOCALID_VICTORY_ROAD_ENTRANCE_WALLY
@@ -37,6 +38,7 @@ VictoryRoad_1F_EventScript_WallyBattleTrigger1::
 
 VictoryRoad_1F_EventScript_WallyBattleTrigger2::
 	lockall
+	msgbox TestTriggerText123 MSGBOX_DEFAULT
 	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VictoryRoad_1F_EventScript_WallyDefeated
 	setvar VAR_0x8008, 2
 	addobject LOCALID_VICTORY_ROAD_ENTRANCE_WALLY
@@ -47,6 +49,7 @@ VictoryRoad_1F_EventScript_WallyBattleTrigger2::
 
 VictoryRoad_1F_EventScript_WallyBattleTrigger3::
 	lockall
+	msgbox TestTriggerText123 MSGBOX_DEFAULT
 	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VictoryRoad_1F_EventScript_WallyDefeated
 	setvar VAR_0x8008, 3
 	addobject LOCALID_VICTORY_ROAD_ENTRANCE_WALLY
@@ -65,6 +68,17 @@ VictoryRoad_1F_EventScript_WallyEntranceBattle::
 	copyobjectxytoperm LOCALID_VICTORY_ROAD_ENTRANCE_WALLY
 	setflag FLAG_DEFEATED_WALLY_VICTORY_ROAD
 	copyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008
+	setvar VAR_LEVEL_CAP, 85
+	call Common_EventScript_ApplyHandicap
+	call Common_EventScript_LevelCapUpdate
+	releaseall
+	end
+
+VictoryRoad_1F_EventScript_WallyPostBattle::
+	lock
+	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
+	setflag FLAG_DEFEATED_WALLY_VICTORY_ROAD
+	//copyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008
 	setvar VAR_LEVEL_CAP, 85
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
@@ -277,3 +291,20 @@ script VictoryRoad_1F_EventScript_WallyDefeated {
 	releaseall
 	return
 }
+
+
+text TestTriggerText123 {
+	format("The trigger is working.")
+}
+
+script VictoryRoad_1F_EventScript_TroubleshootWally {
+	goto(VictoryRoad_1F_EventScript_WallyEntranceBattle)
+}
+
+script VictoryRoad_1F_EventScript_WallyNew {
+    trainerbattle_single(TRAINER_WALLY_VR_1, VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, VictoryRoad_1F_Text_WallyEntranceDefeat, VictoryRoad_1F_EventScript_WallyPostBattle)
+    msgbox(VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_NPC)
+	release
+    end
+}
+

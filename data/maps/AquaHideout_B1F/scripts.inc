@@ -360,130 +360,110 @@ AquaHideout_B1F_EventScript_TakeMegaStone_1:
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_5
 AquaHideout_B1F_EventScript_TakeMegaStone_4:
-	checkitem ITEM_SLOWBRONITE
+	checkitem ITEM_PINSIRITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_8
 AquaHideout_B1F_EventScript_TakeMegaStone_7:
-	checkitem ITEM_SLOWKINGITE
+	checkitem ITEM_GYARADOSITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_11
 AquaHideout_B1F_EventScript_TakeMegaStone_10:
-	checkitem ITEM_PINSIRITE
+	checkitem ITEM_HERACRONITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_14
 AquaHideout_B1F_EventScript_TakeMegaStone_13:
-	checkitem ITEM_GYARADOSITE
+	checkitem ITEM_SHARPEDONITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_17
 AquaHideout_B1F_EventScript_TakeMegaStone_16:
-	checkitem ITEM_HERACRONITE
+	checkitem ITEM_GLALITITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_20
 AquaHideout_B1F_EventScript_TakeMegaStone_19:
-	checkitem ITEM_SHARPEDONITE
+	checkitem ITEM_EELEKTROSSITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_23
 AquaHideout_B1F_EventScript_TakeMegaStone_22:
-	checkitem ITEM_GLALITITE
+	checkitem ITEM_MALAMARITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_26
 AquaHideout_B1F_EventScript_TakeMegaStone_25:
-	checkitem ITEM_STARMINITE
+	checkitem ITEM_BARBARACITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_29
 AquaHideout_B1F_EventScript_TakeMegaStone_28:
-	checkitem ITEM_EELEKTROSSITE
+	checkitem ITEM_DRAGALGITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_32
 AquaHideout_B1F_EventScript_TakeMegaStone_31:
-	checkitem ITEM_MALAMARITE
+	checkitem ITEM_CRABOMINITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_35
 AquaHideout_B1F_EventScript_TakeMegaStone_34:
-	checkitem ITEM_BARBARACITE
+	checkitem ITEM_GOLISOPITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_38
 AquaHideout_B1F_EventScript_TakeMegaStone_37:
-	checkitem ITEM_DRAGALGITE
+	checkitem ITEM_TATSUGIRINITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_41
 AquaHideout_B1F_EventScript_TakeMegaStone_40:
-	checkitem ITEM_CRABOMINITE
+	checkitem ITEM_KINGLERITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_44
 AquaHideout_B1F_EventScript_TakeMegaStone_43:
-	checkitem ITEM_GOLISOPITE
+	checkitem ITEM_LAPRASITE
 # 0 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_47
 AquaHideout_B1F_EventScript_TakeMegaStone_46:
-	checkitem ITEM_TATSUGIRINITE
-# 0 "data/maps/AquaHideout_B1F/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_50
-AquaHideout_B1F_EventScript_TakeMegaStone_49:
-	checkitem ITEM_KINGLERITE
-# 0 "data/maps/AquaHideout_B1F/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_53
-AquaHideout_B1F_EventScript_TakeMegaStone_52:
-	checkitem ITEM_LAPRASITE
-# 0 "data/maps/AquaHideout_B1F/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_56
-AquaHideout_B1F_EventScript_TakeMegaStone_55:
-	checkitem ITEM_MILOTICITE
-# 0 "data/maps/AquaHideout_B1F/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_59
-AquaHideout_B1F_EventScript_TakeMegaStone_58:
-# 205 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_20, ITEM_NONE
-# 207 "data/maps/AquaHideout_B1F/scripts.pory"
-	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_21, MSGBOX_DEFAULT
-# 208 "data/maps/AquaHideout_B1F/scripts.pory"
+# 201 "data/maps/AquaHideout_B1F/scripts.pory"
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_16, ITEM_NONE
+# 203 "data/maps/AquaHideout_B1F/scripts.pory"
+	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_17, MSGBOX_DEFAULT
+# 204 "data/maps/AquaHideout_B1F/scripts.pory"
 	dynmultistack 25, 2, FALSE, 5, 0, ITEM_BEEDRILLITE, DYN_MULTICHOICE_CB_NONE
-# 209 "data/maps/AquaHideout_B1F/scripts.pory"
+# 205 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, ITEM_NONE
-	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_62
-# 215 "data/maps/AquaHideout_B1F/scripts.pory"
+	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_50
+# 211 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, 127
-	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_63
-# 222 "data/maps/AquaHideout_B1F/scripts.pory"
+	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_51
+# 218 "data/maps/AquaHideout_B1F/scripts.pory"
 	copyvar VAR_TEMP_5, VAR_RESULT
-# 223 "data/maps/AquaHideout_B1F/scripts.pory"
+# 219 "data/maps/AquaHideout_B1F/scripts.pory"
 	checkitemspace VAR_TEMP_5
-# 224 "data/maps/AquaHideout_B1F/scripts.pory"
+# 220 "data/maps/AquaHideout_B1F/scripts.pory"
 	compare VAR_RESULT, FALSE
-	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_68
-# 230 "data/maps/AquaHideout_B1F/scripts.pory"
+	goto_if_eq AquaHideout_B1F_EventScript_TakeMegaStone_56
+# 226 "data/maps/AquaHideout_B1F/scripts.pory"
 	giveitem VAR_TEMP_5
-# 231 "data/maps/AquaHideout_B1F/scripts.pory"
+# 227 "data/maps/AquaHideout_B1F/scripts.pory"
 	setflag FLAG_RECEIVED_AQUA_MEGA_STONE
-# 232 "data/maps/AquaHideout_B1F/scripts.pory"
+# 228 "data/maps/AquaHideout_B1F/scripts.pory"
 	removeobject LOCALID_AQUA_HIDEOUT_MEGA_STONE
-# 233 "data/maps/AquaHideout_B1F/scripts.pory"
+# 229 "data/maps/AquaHideout_B1F/scripts.pory"
 	waitfanfare
+# 230 "data/maps/AquaHideout_B1F/scripts.pory"
+	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_20, MSGBOX_NPC
+# 231 "data/maps/AquaHideout_B1F/scripts.pory"
+	closemessage
 # 234 "data/maps/AquaHideout_B1F/scripts.pory"
-	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_24, MSGBOX_NPC
+	closemessage
 # 235 "data/maps/AquaHideout_B1F/scripts.pory"
-	closemessage
-# 238 "data/maps/AquaHideout_B1F/scripts.pory"
-	closemessage
-# 239 "data/maps/AquaHideout_B1F/scripts.pory"
 	release
 	end
 
@@ -499,118 +479,98 @@ AquaHideout_B1F_EventScript_TakeMegaStone_5:
 
 AquaHideout_B1F_EventScript_TakeMegaStone_8:
 # 186 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_2, ITEM_SLOWBRONITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_2, ITEM_PINSIRITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_7
 
 AquaHideout_B1F_EventScript_TakeMegaStone_11:
 # 187 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_3, ITEM_SLOWKINGITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_3, ITEM_GYARADOSITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_10
 
 AquaHideout_B1F_EventScript_TakeMegaStone_14:
 # 188 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_4, ITEM_PINSIRITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_4, ITEM_HERACRONITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_13
 
 AquaHideout_B1F_EventScript_TakeMegaStone_17:
 # 189 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_5, ITEM_GYARADOSITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_5, ITEM_SHARPEDONITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_16
 
 AquaHideout_B1F_EventScript_TakeMegaStone_20:
 # 190 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_6, ITEM_HERACRONITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_6, ITEM_GLALITITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_19
 
 AquaHideout_B1F_EventScript_TakeMegaStone_23:
 # 191 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_7, ITEM_SHARPEDONITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_7, ITEM_EELEKTROSSITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_22
 
 AquaHideout_B1F_EventScript_TakeMegaStone_26:
 # 192 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_8, ITEM_GLALITITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_8, ITEM_MALAMARITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_25
 
 AquaHideout_B1F_EventScript_TakeMegaStone_29:
 # 193 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_9, ITEM_STARMINITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_9, ITEM_BARBARACITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_28
 
 AquaHideout_B1F_EventScript_TakeMegaStone_32:
 # 194 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_10, ITEM_EELEKTROSSITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_10, ITEM_DRAGALGITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_31
 
 AquaHideout_B1F_EventScript_TakeMegaStone_35:
 # 195 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_11, ITEM_MALAMARITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_11, ITEM_CRABOMINITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_34
 
 AquaHideout_B1F_EventScript_TakeMegaStone_38:
 # 196 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_12, ITEM_BARBARACITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_12, ITEM_GOLISOPITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_37
 
 AquaHideout_B1F_EventScript_TakeMegaStone_41:
 # 197 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_13, ITEM_DRAGALGITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_13, ITEM_TATSUGIRINITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_40
 
 AquaHideout_B1F_EventScript_TakeMegaStone_44:
 # 198 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_14, ITEM_CRABOMINITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_14, ITEM_KINGLERITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_43
 
 AquaHideout_B1F_EventScript_TakeMegaStone_47:
 # 199 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_15, ITEM_GOLISOPITE
+	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_15, ITEM_LAPRASITE
 	goto AquaHideout_B1F_EventScript_TakeMegaStone_46
 
 AquaHideout_B1F_EventScript_TakeMegaStone_50:
-# 200 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_16, ITEM_TATSUGIRINITE
-	goto AquaHideout_B1F_EventScript_TakeMegaStone_49
+# 206 "data/maps/AquaHideout_B1F/scripts.pory"
+	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_18, MSGBOX_NPC
+# 207 "data/maps/AquaHideout_B1F/scripts.pory"
+	closemessage
+# 208 "data/maps/AquaHideout_B1F/scripts.pory"
+	releaseall
+	end
 
-AquaHideout_B1F_EventScript_TakeMegaStone_53:
-# 201 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_17, ITEM_KINGLERITE
-	goto AquaHideout_B1F_EventScript_TakeMegaStone_52
+AquaHideout_B1F_EventScript_TakeMegaStone_51:
+# 212 "data/maps/AquaHideout_B1F/scripts.pory"
+	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_18, MSGBOX_NPC
+# 213 "data/maps/AquaHideout_B1F/scripts.pory"
+	closemessage
+# 214 "data/maps/AquaHideout_B1F/scripts.pory"
+	releaseall
+	end
 
 AquaHideout_B1F_EventScript_TakeMegaStone_56:
-# 202 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_18, ITEM_LAPRASITE
-	goto AquaHideout_B1F_EventScript_TakeMegaStone_55
-
-AquaHideout_B1F_EventScript_TakeMegaStone_59:
-# 203 "data/maps/AquaHideout_B1F/scripts.pory"
-	dynmultipush AquaHideout_B1F_EventScript_TakeMegaStone_Text_19, ITEM_MILOTICITE
-	goto AquaHideout_B1F_EventScript_TakeMegaStone_58
-
-AquaHideout_B1F_EventScript_TakeMegaStone_62:
-# 210 "data/maps/AquaHideout_B1F/scripts.pory"
-	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_22, MSGBOX_NPC
-# 211 "data/maps/AquaHideout_B1F/scripts.pory"
+# 221 "data/maps/AquaHideout_B1F/scripts.pory"
+	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_19, MSGBOX_NPC
+# 222 "data/maps/AquaHideout_B1F/scripts.pory"
 	closemessage
-# 212 "data/maps/AquaHideout_B1F/scripts.pory"
-	releaseall
-	end
-
-AquaHideout_B1F_EventScript_TakeMegaStone_63:
-# 216 "data/maps/AquaHideout_B1F/scripts.pory"
-	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_22, MSGBOX_NPC
-# 217 "data/maps/AquaHideout_B1F/scripts.pory"
-	closemessage
-# 218 "data/maps/AquaHideout_B1F/scripts.pory"
-	releaseall
-	end
-
-AquaHideout_B1F_EventScript_TakeMegaStone_68:
-# 225 "data/maps/AquaHideout_B1F/scripts.pory"
-	msgbox AquaHideout_B1F_EventScript_TakeMegaStone_Text_23, MSGBOX_NPC
-# 226 "data/maps/AquaHideout_B1F/scripts.pory"
-	closemessage
-# 227 "data/maps/AquaHideout_B1F/scripts.pory"
+# 223 "data/maps/AquaHideout_B1F/scripts.pory"
 	releaseall
 	end
 
@@ -629,96 +589,80 @@ AquaHideout_B1F_EventScript_TakeMegaStone_Text_1:
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_2:
 # 186 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Slowbronite$"
+	.string "Pinsirite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_3:
 # 187 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Slowkingite$"
+	.string "Gyaradosite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_4:
 # 188 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Pinsirite$"
+	.string "Heracronite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_5:
 # 189 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Gyaradosite$"
+	.string "Sharpedonite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_6:
 # 190 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Heracronite$"
+	.string "Glalitite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_7:
 # 191 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Sharpedonite$"
+	.string "Eelektrossite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_8:
 # 192 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Glalitite$"
+	.string "Malamarite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_9:
 # 193 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Starminite$"
+	.string "Barbaracite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_10:
 # 194 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Eelektrossite$"
+	.string "Dragalgite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_11:
 # 195 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Malamarite$"
+	.string "Crabominite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_12:
 # 196 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Barbaracite$"
+	.string "Golisopite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_13:
 # 197 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Dragalgite$"
+	.string "Tatsugirinite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_14:
 # 198 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Crabominite$"
+	.string "Kinglerite$"
 
 AquaHideout_B1F_EventScript_TakeMegaStone_Text_15:
 # 199 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Golisopite$"
-
-AquaHideout_B1F_EventScript_TakeMegaStone_Text_16:
-# 200 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Tatsugirinite$"
-
-AquaHideout_B1F_EventScript_TakeMegaStone_Text_17:
-# 201 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Kinglerite$"
-
-AquaHideout_B1F_EventScript_TakeMegaStone_Text_18:
-# 202 "data/maps/AquaHideout_B1F/scripts.pory"
 	.string "Laprasite$"
 
-AquaHideout_B1F_EventScript_TakeMegaStone_Text_19:
-# 203 "data/maps/AquaHideout_B1F/scripts.pory"
-	.string "Miloticite$"
-
-AquaHideout_B1F_EventScript_TakeMegaStone_Text_20:
-# 205 "data/maps/AquaHideout_B1F/scripts.pory"
+AquaHideout_B1F_EventScript_TakeMegaStone_Text_16:
+# 201 "data/maps/AquaHideout_B1F/scripts.pory"
 	.string "Nevermind$"
 
-AquaHideout_B1F_EventScript_TakeMegaStone_Text_21:
-# 207 "data/maps/AquaHideout_B1F/scripts.pory"
+AquaHideout_B1F_EventScript_TakeMegaStone_Text_17:
+# 203 "data/maps/AquaHideout_B1F/scripts.pory"
 	.string "Take one of the Mega Stones?$"
 
-AquaHideout_B1F_EventScript_TakeMegaStone_Text_22:
-# 210 "data/maps/AquaHideout_B1F/scripts.pory"
+AquaHideout_B1F_EventScript_TakeMegaStone_Text_18:
+# 206 "data/maps/AquaHideout_B1F/scripts.pory"
 	.string "Left the case open without taking a\n"
 	.string "Mega Stone.$"
 
-AquaHideout_B1F_EventScript_TakeMegaStone_Text_23:
-# 225 "data/maps/AquaHideout_B1F/scripts.pory"
+AquaHideout_B1F_EventScript_TakeMegaStone_Text_19:
+# 221 "data/maps/AquaHideout_B1F/scripts.pory"
 	.string "Too bad!\l"
 	.string "The BAG is full...$"
 
-AquaHideout_B1F_EventScript_TakeMegaStone_Text_24:
-# 234 "data/maps/AquaHideout_B1F/scripts.pory"
+AquaHideout_B1F_EventScript_TakeMegaStone_Text_20:
+# 230 "data/maps/AquaHideout_B1F/scripts.pory"
 	.string "The case shut automatically after the\n"
 	.string "Stone was removed.$"
 
