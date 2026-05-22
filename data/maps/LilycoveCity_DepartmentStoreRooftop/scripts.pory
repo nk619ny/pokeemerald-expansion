@@ -218,3 +218,19 @@ LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney:
 LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink:
 	.string "Decided against buying a drink.$"
 `
+
+
+script LilycoveCity_DepartmentStoreRooftop_EventScript_SubstituteTM {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_SUBSTITUTE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(MoveTutor_Text_SubstituteTeach, MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_SUBSTITUTE)
+		waitfanfare
+	}
+	msgbox(MoveTutor_Text_SubstituteTaught, MSGBOX_NPC)
+	releaseall
+	end
+}

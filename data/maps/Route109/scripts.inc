@@ -1170,6 +1170,35 @@ Route109_EventScript_ChillingWater_2:
 	goto Route109_EventScript_ChillingWater_1
 
 
+Route109_EventScript_AirSlashKeeper::
+# 609 "data/maps/Route109/scripts.pory"
+	lock
+# 610 "data/maps/Route109/scripts.pory"
+	faceplayer
+# 611 "data/maps/Route109/scripts.pory"
+	checkitem ITEM_TM_AIR_SLASH
+# 612 "data/maps/Route109/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route109_EventScript_AirSlashKeeper_2
+Route109_EventScript_AirSlashKeeper_1:
+# 618 "data/maps/Route109/scripts.pory"
+	msgbox Route109_EventScript_AirSlashKeeper_Text_1, MSGBOX_NPC
+# 619 "data/maps/Route109/scripts.pory"
+	releaseall
+	end
+
+Route109_EventScript_AirSlashKeeper_2:
+# 613 "data/maps/Route109/scripts.pory"
+	msgbox Route109_EventScript_AirSlashKeeper_Text_0, MSGBOX_NPC
+# 614 "data/maps/Route109/scripts.pory"
+	closemessage
+# 615 "data/maps/Route109/scripts.pory"
+	giveitem ITEM_TM_AIR_SLASH
+# 616 "data/maps/Route109/scripts.pory"
+	waitfanfare
+	goto Route109_EventScript_AirSlashKeeper_1
+
+
 Route109_EventScript_ChillingWater_Text_0:
 # 594 "data/maps/Route109/scripts.pory"
 	.string "I want to swim in the water, but it's too\n"
@@ -1182,6 +1211,17 @@ Route109_EventScript_ChillingWater_Text_1:
 	.string "Maybe your Pokémon should spray cold\n"
 	.string "water in battles? That would sure fight\l"
 	.string "enemies off!$"
+
+Route109_EventScript_AirSlashKeeper_Text_0:
+# 613 "data/maps/Route109/scripts.pory"
+	.string "A blade of compressed air can cut\n"
+	.string "through almost anything.$"
+
+Route109_EventScript_AirSlashKeeper_Text_1:
+# 618 "data/maps/Route109/scripts.pory"
+	.string "I'm not much of a swimmer.\p"
+	.string "But with my Bird Pokémon, I can hop from\n"
+	.string "island to island through the skies!$"
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods::
 # 561 "data/maps/Route109/scripts.pory"

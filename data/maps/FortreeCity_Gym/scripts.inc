@@ -119,7 +119,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 # 60 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_EventScript_GiveAerialAce2::
 # 61 "data/maps/FortreeCity_Gym/scripts.pory"
-	giveitem ITEM_TM_BRAVE_BIRD
+	giveitem ITEM_TM_TAILWIND
 # 62 "data/maps/FortreeCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 63 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -135,7 +135,7 @@ FortreeCity_Gym_EventScript_GiveAerialAce2::
 # 68 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_EventScript_GiveAerialAce::
 # 69 "data/maps/FortreeCity_Gym/scripts.pory"
-	giveitem ITEM_TM_BRAVE_BIRD
+	giveitem ITEM_TM_TAILWIND
 # 70 "data/maps/FortreeCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 # 71 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -541,11 +541,11 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
 # 271 "data/maps/FortreeCity_Gym/scripts.pory"
 FortreeCity_Gym_Text_ExplainAerialAce:
 # 272 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "This TM contains Brave Bird.\p"
+	.string "This TM contains Tailwind.\p"
 # 273 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "Its power…\n"
+	.string "Your Pokémon…\n"
 # 274 "data/maps/FortreeCity_Gym/scripts.pory"
-	.string "No Pokémon should withstand it.\p"
+	.string "Will soar faster than ever.\p"
 # 275 "data/maps/FortreeCity_Gym/scripts.pory"
 	.string "… … … … … …$"
 # 276 "data/maps/FortreeCity_Gym/scripts.pory"

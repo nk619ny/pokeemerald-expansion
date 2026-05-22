@@ -86,3 +86,24 @@ AncientTomb_EventScript_RanFromRegisteel::
 	end
 
 `
+
+
+script AncientTomb_EventScript_IronHead {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_IRON_HEAD)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Rampardos is trying to use his powerful Headbutt to break down this cave wall.\pBut it isn't working...\pPerhaps you'll have better luck."), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_IRON_HEAD)
+		waitfanfare
+	}
+	if(flag(FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED)) {
+		msgbox(format("The wall just opened! Did you make it happen?"), MSGBOX_NPC)
+	}
+	else{
+		msgbox(format("I have a feeling there's something special on the other side of this wall."), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}

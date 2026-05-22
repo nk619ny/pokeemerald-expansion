@@ -425,7 +425,7 @@ Route103_EventScript_Daisy::
 # 213 "data/maps/Route103/scripts.pory"
 Route103_EventScript_Amy::
 # 214 "data/maps/Route103/scripts.pory"
-	trainerbattle_double TRAINER_AMY_AND_LIV_1, Route103_Text_AmyIntro, Route103_Text_AmyDefeated, Route103_Text_AmyNotEnoughPokemon, Route102_EventScript_AmyRegisterMatchCallAfterBattle
+	trainerbattle_double TRAINER_AMY_AND_LIV_1, Route103_Text_AmyIntro, Route103_Text_AmyDefeated, Route103_Text_AmyNotEnoughPokemon, Route103_EventScript_HelpingHand
 # 215 "data/maps/Route103/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 216 "data/maps/Route103/scripts.pory"
@@ -461,7 +461,7 @@ Route102_EventScript_AmyRematch::
 # 231 "data/maps/Route103/scripts.pory"
 Route103_EventScript_Liv::
 # 232 "data/maps/Route103/scripts.pory"
-	trainerbattle_double TRAINER_AMY_AND_LIV_1, Route103_Text_LivIntro, Route103_Text_LivDefeated, Route103_Text_LivNotEnoughPokemon, Route102_EventScript_LivRegisterMatchCallAfterBattle
+	trainerbattle_double TRAINER_AMY_AND_LIV_1, Route103_Text_LivIntro, Route103_Text_LivDefeated, Route103_Text_LivNotEnoughPokemon, Route103_EventScript_HelpingHand
 # 233 "data/maps/Route103/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 234 "data/maps/Route103/scripts.pory"
@@ -714,3 +714,43 @@ Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 # 358 "data/maps/Route103/scripts.pory"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
+
+Route103_EventScript_HelpingHand::
+# 363 "data/maps/Route103/scripts.pory"
+	lock
+# 364 "data/maps/Route103/scripts.pory"
+	faceplayer
+# 365 "data/maps/Route103/scripts.pory"
+	checkitem ITEM_TM_HELPING_HAND
+# 366 "data/maps/Route103/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route103_EventScript_HelpingHand_2
+# 373 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_HelpingHand_Text_1, MSGBOX_NPC
+Route103_EventScript_HelpingHand_1:
+# 375 "data/maps/Route103/scripts.pory"
+	releaseall
+	end
+
+Route103_EventScript_HelpingHand_2:
+# 367 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_HelpingHand_Text_0, MSGBOX_NPC
+# 368 "data/maps/Route103/scripts.pory"
+	closemessage
+# 369 "data/maps/Route103/scripts.pory"
+	giveitem ITEM_TM_HELPING_HAND
+# 370 "data/maps/Route103/scripts.pory"
+	waitfanfare
+	goto Route103_EventScript_HelpingHand_1
+
+
+Route103_EventScript_HelpingHand_Text_0:
+# 367 "data/maps/Route103/scripts.pory"
+	.string "In double battles, teamwork is\n"
+	.string "everything.\p"
+	.string "You should give your partner a Helping\n"
+	.string "Hand when they really need it!$"
+
+Route103_EventScript_HelpingHand_Text_1:
+# 373 "data/maps/Route103/scripts.pory"
+	.string "I love having my Twin to help me out.$"

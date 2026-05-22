@@ -18214,7 +18214,7 @@ IVs: 0 Atk
 - Bug Buzz  
 
 
-=== TRAINER_MITCHELL === /* Victory Road B1F */ /* Back to Back */
+=== TRAINER_MITCHELL === /* Victory Road B1F */ /* Back to Back */ /* TO BE UPDATED - reused trainer */
 Name: MITCHELL
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -19850,9 +19850,27 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Baltoy
+Flygon  @ Flygonite
+Ability: Levitate  
 Level: 70
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Earthquake  
+- First Impression  
+- Dragon Claw  
+- Dragon Dance  
+
+Claydol @ Light Clay  
+Ability: Levitate  
+Level: 70
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Earthquake  
+- Zen Headbutt  
+- Reflect  
+- Light Screen  
+
+
 
 === TRAINER_MACEY === /* Mossdeep Gym */ 
 Name: MACEY

@@ -156,3 +156,20 @@ script SlateportCity_ContestHall_EventScript_Encore {
 	releaseall
 	end
 }
+
+
+script SlateportCity_ContestHall_EventScript_Charm {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_CHARM)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("As a judge, I see all kinds of charming Pokémon.\pWith this TM, your Pokémon can become charmers too!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_CHARM)
+		waitfanfare
+	}
+	msgbox(format("You can get far in life with a little charm!"), MSGBOX_DEFAULT)
+    closemessage
+	releaseall
+	end
+}

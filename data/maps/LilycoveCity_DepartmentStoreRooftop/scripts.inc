@@ -436,3 +436,32 @@ LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney:
 LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink:
 # 219 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
 	.string "Decided against buying a drink.$"
+
+LilycoveCity_DepartmentStoreRooftop_EventScript_SubstituteTM::
+# 224 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	lock
+# 225 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	faceplayer
+# 226 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	checkitem ITEM_TM_SUBSTITUTE
+# 227 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq LilycoveCity_DepartmentStoreRooftop_EventScript_SubstituteTM_2
+LilycoveCity_DepartmentStoreRooftop_EventScript_SubstituteTM_1:
+# 233 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	msgbox MoveTutor_Text_SubstituteTaught, MSGBOX_NPC
+# 234 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_DepartmentStoreRooftop_EventScript_SubstituteTM_2:
+# 228 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	msgbox MoveTutor_Text_SubstituteTeach, MSGBOX_NPC
+# 229 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	closemessage
+# 230 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	giveitem ITEM_TM_SUBSTITUTE
+# 231 "data/maps/LilycoveCity_DepartmentStoreRooftop/scripts.pory"
+	waitfanfare
+	goto LilycoveCity_DepartmentStoreRooftop_EventScript_SubstituteTM_1
+

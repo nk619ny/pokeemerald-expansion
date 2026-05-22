@@ -602,3 +602,20 @@ script Route109_EventScript_ChillingWater {
 	releaseall
 	end
 }
+
+
+
+script Route109_EventScript_AirSlashKeeper {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_AIR_SLASH)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("A blade of compressed air can cut through almost anything."), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_AIR_SLASH)
+		waitfanfare
+	}
+		msgbox(format("I'm not much of a swimmer.\pBut with my Bird Pokémon, I can hop from island to island through the skies!"), MSGBOX_NPC)
+	releaseall
+	end
+}

@@ -264,6 +264,37 @@ SlateportCity_ContestHall_EventScript_Encore_2:
 	goto SlateportCity_ContestHall_EventScript_Encore_1
 
 
+SlateportCity_ContestHall_EventScript_Charm::
+# 162 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	lock
+# 163 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	faceplayer
+# 164 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	checkitem ITEM_TM_CHARM
+# 165 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq SlateportCity_ContestHall_EventScript_Charm_2
+SlateportCity_ContestHall_EventScript_Charm_1:
+# 171 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	msgbox SlateportCity_ContestHall_EventScript_Charm_Text_1, MSGBOX_DEFAULT
+# 172 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	closemessage
+# 173 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	releaseall
+	end
+
+SlateportCity_ContestHall_EventScript_Charm_2:
+# 166 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	msgbox SlateportCity_ContestHall_EventScript_Charm_Text_0, MSGBOX_DEFAULT
+# 167 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	closemessage
+# 168 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	giveitem ITEM_TM_CHARM
+# 169 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	waitfanfare
+	goto SlateportCity_ContestHall_EventScript_Charm_1
+
+
 SlateportCity_ContestHall_EventScript_ContestHallReceptionist_Text_0:
 # 37 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "Welcome to the Contest Hall!\p"
@@ -338,3 +369,15 @@ SlateportCity_ContestHall_EventScript_Encore_Text_1:
 # 154 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "The Encore is often better than the\n"
 	.string "first performance!$"
+
+SlateportCity_ContestHall_EventScript_Charm_Text_0:
+# 166 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	.string "As a judge, I see all kinds of charming\n"
+	.string "Pokémon.\p"
+	.string "With this TM, your Pokémon can become\n"
+	.string "charmers too!$"
+
+SlateportCity_ContestHall_EventScript_Charm_Text_1:
+# 171 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	.string "You can get far in life with a little\n"
+	.string "charm!$"
