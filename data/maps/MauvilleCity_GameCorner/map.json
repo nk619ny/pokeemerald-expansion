@@ -183,6 +183,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_GameCorner_EventScript_Scott",
       "flag": "FLAG_RECEIVED_COIN_CASE"
+    },
+    {
+      "local_id": "LOCALID_GIMMIGHOUL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GIMMIGHOUL)",
+      "x": 12,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FOLLOW_PLAYER",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MauvilleCity_GameCorner_Gimmighoul",
+      "flag": "FLAG_HIDDEN_BY_DEFAULT"
     }
   ],
   "warp_events": [

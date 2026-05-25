@@ -6749,7 +6749,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseSpAttack  = 75,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GHOST),
-        .catchRate = 45,
+        .catchRate = 100,
         .expYield = 60,
         .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
@@ -6803,7 +6803,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sGimmighoulTeachableLearnset,
         .eliteLearnset = sNoneEliteLearnset,
         .formSpeciesIdTable = sGimmighoulFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_GHOLDENGO, CONDITIONS({IF_BAG_ITEM_COUNT, ITEM_GIMMIGHOUL_COIN, 999})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 1, SPECIES_GHOLDENGO}),    
     },
 
     [SPECIES_GIMMIGHOUL_ROAMING] =
@@ -6860,7 +6860,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sGimmighoulTeachableLearnset,
         .eliteLearnset = sNoneEliteLearnset,
         .formSpeciesIdTable = sGimmighoulFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_GHOLDENGO, CONDITIONS({IF_BAG_ITEM_COUNT, ITEM_GIMMIGHOUL_COIN, 999})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 1, SPECIES_GHOLDENGO}),
     },
 
     [SPECIES_GHOLDENGO] =

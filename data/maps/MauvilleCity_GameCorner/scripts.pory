@@ -1,6 +1,16 @@
 raw `
 MauvilleCity_GameCorner_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_GameCorner_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, MauvilleCity_GameCorner_OnFrame
 	.byte 0
+
+MauvilleCity_GameCorner_OnTransition:
+	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower bc of rotating gates
+	end
+
+MauvilleCity_GameCorner_OnFrame:
+	map_script_2 VAR_TEMP_5, 0, MauvilleCity_GameCorner_GimmighoulCheck
+	.2byte 0
 
 	@ Game Corner prices
 	.set TM_DOUBLE_TEAM_COINS, 1500
@@ -786,6 +796,7 @@ MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 const TempVar_CurrentCoins = VAR_TEMP_2
 const TempVar_PrizeToBuy = VAR_TEMP_3
 const TempVar_PrizePrice = VAR_TEMP_4
+const TempVar_GimmighoulCheck = VAR_TEMP_5
 //const PrizeName = STR_VAR_1
 //const Prizecost = STR_VAR_2
 
@@ -2773,6 +2784,35 @@ script MauvilleCity_GameCorner_EventScript_NoRoomForPokemon {
 	msgbox(format("I'm sorry, but you don't have any room for another Pokémon right now.\pYour party and PC boxes are all full!"))
 	hidecoinsbox(0, 5)
 	waitmessage
+	releaseall
+	return
+}
+
+script MauvilleCity_GameCorner_GimmighoulCheck {
+	checkcoins(TempVar_CurrentCoins)
+	if(var(TempVar_CurrentCoins) == 9999) {
+		addobject(LOCALID_GIMMIGHOUL)
+	}
+	delay(10)
+	setvar(TempVar_GimmighoulCheck, 1)
+	releaseall
+	return
+}
+
+script MauvilleCity_GameCorner_Gimmighoul{
+	lock
+	msgbox(format("Gimmighoul seems interested in your coins.\pGive all your coins away to Gimmighoul?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES) {
+		removecoins(9999)
+		msgbox(format("You gave all your coins to Gimmighoul.\pGimmighoul is excited!"))
+		setwildbattle(SPECIES_GIMMIGHOUL, 10, ITEM_BIG_NUGGET)
+		removeobject(LOCALID_GIMMIGHOUL)
+		dowildbattle
+	}
+	else {
+		msgbox(format("It seems like Gimmighoul will continue to follow after your coins."))
+	}
+	closemessage
 	releaseall
 	return
 }

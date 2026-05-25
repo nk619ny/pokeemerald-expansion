@@ -222,6 +222,24 @@
       "var": "VAR_TEMP_9",
       "var_value": "0",
       "script": "MauvilleCity_Gym_EventScript_SoftlockGuard"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_5",
+      "var_value": "1",
+      "script": "MauvilleCity_Gym_EventScript_CallFromProfBirch"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_5",
+      "var_value": "1",
+      "script": "MauvilleCity_Gym_EventScript_CallFromProfBirch"
     }
   ],
   "bg_events": [

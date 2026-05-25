@@ -113,6 +113,7 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	delay 30
 	msgbox MauvilleCity_Gym_Text_WattsonExplainMegaEvolution, MSGBOX_DEFAULT
 	closemessage
+	setvar VAR_TEMP_5, 1
 	giveitem ITEM_MEGA_RING
 	waitfanfare
 	delay 30
@@ -438,6 +439,7 @@ const TempVar_Switch1 = VAR_TEMP_1
 const TempVar_Switch2 = VAR_TEMP_2
 const TempVar_Switch3 = VAR_TEMP_3
 const TempVar_Switch4 = VAR_TEMP_4
+const TempVar_ProfessorCall = VAR_TEMP_5
 const TempVar_TriggerSquare = VAR_TEMP_6
 const TempVar_CheckGymGuideStop = VAR_TEMP_7
 
@@ -691,4 +693,18 @@ script MauvilleCity_Gym_EventScript_SoftlockGuard {
 	setvar(VAR_TEMP_9,1)
 	releaseall
 	return
+}
+
+script MauvilleCity_Gym_EventScript_CallFromProfBirch {
+    lockall
+    pokenavcall(MauvilleCity_Gym_Text_ProfBirchCall)
+    waitmessage
+    delay(30)
+    setvar(TempVar_ProfessorCall,0)
+    releaseall
+    end
+}
+
+text MauvilleCity_Gym_Text_ProfBirchCall {
+    format("… … … … … …\n… … … … … Beep!\pProf. Birch: Hello, {PLAYER}!\pI just saw a Mega Ring registered to you come online.\pTo celebrate, I'd like to give you a Mega Stone!\pPlease swing by my lab when you have a chance.\p… … … … … …\n… … … … … Click!")
 }
