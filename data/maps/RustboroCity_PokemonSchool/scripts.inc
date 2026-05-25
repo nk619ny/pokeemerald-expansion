@@ -167,7 +167,7 @@ RustboroCity_PokemonSchool_EventScript_Teacher::
 # 84 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	msgbox RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw, MSGBOX_DEFAULT
 # 85 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	giveitem ITEM_QUICK_CLAW
+	giveitem ITEM_EXPERT_BELT
 # 86 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
 # 87 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -207,7 +207,7 @@ RustboroCity_PokemonSchool_EventScript_TeacherCheckOnStudentsWest::
 # 104 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 RustboroCity_PokemonSchool_EventScript_GaveQuickClaw::
 # 105 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	msgbox RustboroCity_PokemonSchool_Text_ExplainQuickClaw, MSGBOX_DEFAULT
+	msgbox RustboroCity_PokemonSchool_Text_ExplainExpertBelt, MSGBOX_DEFAULT
 # 106 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	closemessage
 # 107 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -493,9 +493,9 @@ RustboroCity_PokemonSchool_Text_ExplainFreeze:
 # 247 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
 # 248 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	.string "Students who don't study get a little\n"
+	.string "Students who study get the Expert\n"
 # 249 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
-	.string "taste of my QUICK CLAW.\p"
+	.string "Belt.\p"
 # 250 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "Whether or not you are a good student \n"
 # 251 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
@@ -700,3 +700,9 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "It's hard to tell what you're like as\n"
 # 351 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
 	.string "a TRAINER from a LEAGUE BADGE.$"
+
+RustboroCity_PokemonSchool_Text_ExplainExpertBelt::
+# 355 "data/maps/RustboroCity_PokemonSchool/scripts.pory"
+	.string "If you take advantage of type\n"
+	.string "matchups, the Expert Belt will boost\l"
+	.string "your damage output even further.$"

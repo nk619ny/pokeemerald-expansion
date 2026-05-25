@@ -1094,8 +1094,8 @@
 #define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
 #define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
-#define FLAG_ITEM_HAUNTED_MANOR_1F_HP_UP                            0x414 // now unused and available
-#define FLAG_ITEM_HAUNTED_MANOR_1F_PP_MAX                           0x415 // now unused and available
+#define FLAG_ITEM_HAUNTED_MANOR_1F_HP_UP                            0x414 // repurposed
+#define FLAG_ITEM_HAUNTED_MANOR_1F_PP_MAX                           0x415 // repurposed
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
@@ -1144,7 +1144,7 @@
 #define FLAG_ITEM_FIERY_PATH_TM_TOXIC                               0x443
 #define FLAG_ITEM_ROUTE_124_RED_SHARD                               0x444
 #define FLAG_ITEM_ROUTE_124_BLUE_SHARD                              0x445
-#define FLAG_ITEM_SAFARI_ZONE_NORTH_WEST_TM_SOLAR_BEAM              0x446
+#define FLAG_ITEM_SAFARI_ZONE_NORTH_WEST_TM_SOLAR_BEAM              0x446 // now Leaf Storm
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_1F_HARBOR_MAIL               0x447
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_ESCAPE_ROPE              0x448
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_B1F_DIVE_BALL              0x449
@@ -1174,10 +1174,10 @@
 #define FLAG_ITEM_ROUTE_118_HYPER_POTION                            0x461
 #define FLAG_ITEM_ROUTE_135_CALCIUM                                 0x462 //repurposed
 #define FLAG_ITEM_ROUTE_135_PROTEIN                                 0x463 //repurposed
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464 // Unused Flag
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MASTER_BALL                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MAX_ELIXIR                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
+#define FLAG_ITEM_TRICK_HOUSE_5_HEART_SCALE                         0x464 // repurposed
+#define FLAG_ITEM_TRICK_HOUSE_1_QUICK_CLAW                          0x465 // repurposed
+#define FLAG_ITEM_TRICK_HOUSE_4_LOADED_DICE                         0x466 // repurposed
+#define FLAG_ITEM_TRICK_HOUSE_6_COVERT_CLOAK                        0x467 // repurposed
 #define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
 #define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
 #define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
