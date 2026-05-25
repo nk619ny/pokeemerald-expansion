@@ -440,13 +440,10 @@ script MauvilleCity_EventScript_Temporary{
 	//additem(ITEM_TM_ICE_PUNCH,-1)
 	//givemon(SPECIES_ELECTABUZZ,80,,,,0,,,,,,,,,,,,,,MOVE_BLOCK)
 	//givemon(SPECIES_JYNX,80,,,,0,,,,,,,,,,,,,,MOVE_BLOCK)
-
 	//goto(SkyPillar_Top_EventScript_FusionTutor)
-
 	//giveitem(ITEM_EXP_CANDY_S)
-
 	//giveitem(ITEM_HEART_SCALE,20)
-
+	giveitem(ITEM_MASTER_BALL)
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
@@ -456,13 +453,7 @@ script MauvilleCity_EventScript_Temporary{
 	//givemon(SPECIES_FERALIGATR,12,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE, MOVE_HIDDEN_POWER)
 	//givemon(SPECIES_FERALIGATR,15,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE)
 	//givemon(SPECIES_SNORLAX,100,,,,0,,,,,,,,,,,,,,MOVE_BLOCK,MOVE_HYPER_VOICE,MOVE_STRENGTH,MOVE_MAGICAL_TORQUE)
-	givemon(SPECIES_MUDKIP,80,,,,0,,,,,,,,,,,,,,MOVE_BLOCK)
-	givemon(SPECIES_MUDKIP,80,,,,1,,,,,,,,,,,,,,MOVE_BLOCK)
-	givemon(SPECIES_PARASECT,82,,,,0,,,,,,,,,,,,,,MOVE_BLOCK)
-	givemon(SPECIES_PARASECT,82,,,,2,,,,,,,,,,,,,,MOVE_BLOCK)
-//	givemon(SPECIES_GARDEVOIR,100,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE,MOVE_HYPER_VOICE,MOVE_STRENGTH,MOVE_MAGICAL_TORQUE)
-	//giveitem(ITEM_EON_FLUTE)
-	//setvar(VAR_TRAINER_HILL_STATE,1)
+	//setvar(VAR_TRAINER_HILL_STATE,8)
 	//setflag(FLAG_FLY_FROM_MAP_CONFIG)
 	//setvar(VAR_LEVEL_HANDICAP,0)
 	//buffernumberstring(STR_VAR_1,VAR_LEVEL_CAP)
@@ -818,6 +809,7 @@ script Common_EventScript_RemoveOptionalItems1 {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_2)
 	setflag(FLAG_ITEM_HAUNTED_MANOR_1F_HP_UP)
 	setflag(FLAG_ITEM_HAUNTED_MANOR_1F_PP_MAX)
+	setflag(FLAG_ITEM_ROUTE_110_RARE_CANDY)
 	return
 }
 
@@ -837,6 +829,8 @@ script Common_EventScript_RemoveOptionalItems2 {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_116_BLACK_GLASSES)
 	setflag(FLAG_ITEM_ROUTE_111_ELIXIR)
 	setflag(FLAG_ITEM_PETALBURG_WOODS_X_ATTACK)
+	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_1_ORANGE_MAIL)
+	setflag(FLAG_ITEM_TRICK_HOUSE_1_QUICK_CLAW)
 	return
 }
 
@@ -859,6 +853,8 @@ script Common_EventScript_RemoveOptionalItems3 {
 	setflag(FLAG_HIDDEN_ITEM_JAGGED_PASS_GREAT_BALL)
 	setflag(FLAG_ITEM_ROUTE_135_PROTEIN)
 	setflag(FLAG_ITEM_ROUTE_135_CALCIUM)
+	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL)
+	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL)
 	return
 }
 
@@ -878,11 +874,14 @@ script Common_EventScript_RemoveOptionalItems4 {
 	setflag(FLAG_ITEM_ROUTE_111_STARDUST)
 	setflag(FLAG_ITEM_ROUTE_111_TM_SANDSTORM) //
 	setflag(FLAG_ITEM_ICE_CAVE_IRON)
+	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_WOOD_MAIL)
+	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL)
 	return
 }
 
 script Common_EventScript_RemoveOptionalItems5 {
-
+	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_4_MECH_MAIL)
+	setflag(FLAG_ITEM_TRICK_HOUSE_4_LOADED_DICE)
 	return
 }
 
@@ -904,6 +903,7 @@ script Common_EventScript_RemoveOptionalItems6 {
 	setflag(FLAG_ITEM_ROUTE_119_NUGGET)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1) // can be moves to after Winona
 	setflag(FLAG_ITEM_ROUTE_120_NEST_BALL) // can be moves to after Winona
+	setflag(FLAG_ITEM_TRICK_HOUSE_5_HEART_SCALE)
 	return
 }
 
@@ -974,6 +974,8 @@ script Common_EventScript_RemoveOptionalItems7PostSurf {
 	setflag(FLAG_ITEM_ROUTE_133_MAX_REVIVE)
 	setflag(FLAG_ITEM_ROUTE_134_CARBOS)
 	setflag(FLAG_ITEM_ROUTE_134_STAR_PIECE)
+	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_6_GLITTER_MAIL)
+	setflag(FLAG_ITEM_TRICK_HOUSE_6_COVERT_CLOAK)
 	return
 }
 
@@ -1005,7 +1007,7 @@ script Common_EventScript_RemoveOptionalItems8 {
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD) //unused
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE) //unused
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE) //unused
-
+	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL)
 
 	return
 }
@@ -2637,6 +2639,8 @@ text EggMoveTutor_Text_NoMoreHeartScales {
 	format("That's all for now!\pCome back with more Heart Scales if you want to learn additional Egg Moves.")
 }
 
+
+
 script PokemonCenter_2F_Unused_MoveTutor {
 	lock
 	dynmultipush("Fusion Bolt",1)
@@ -2670,3 +2674,110 @@ script PokemonCenter_2F_Unused_MoveTutor {
 	releaseall
 	return
 }
+
+
+
+
+
+script TradeCenter_EventScript_Psyshock {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_PSYSHOCK)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("A strange Psychic move that materializes into a physical attack.\pHere, take this TM: Psyshock will hit where your foes least expect it!"), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_PSYSHOCK)
+		waitfanfare
+	}
+	else {
+		msgbox(format("You already have Psyshock. Keep catching opponents off guard!"), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}
+
+script TradeCenter_EventScript_DrainPunch {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_DRAIN_PUNCH)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Why take a hit when you can take HP instead?\pThis TM teaches Drain Punch: strike hard and recover your strength at the same time!"), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_DRAIN_PUNCH)
+		waitfanfare
+	}
+	else {
+		msgbox(format("You already have Drain Punch. Keep fighting and recovering!"), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}
+
+script TradeCenter_EventScript_ShadowClaw {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_SHADOW_CLAW)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("A claw forged from shadows strikes with high critical-hit potential.\pHere, take this TM: Shadow Claw is a powerful Ghost-type slash!"), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_SHADOW_CLAW)
+		waitfanfare
+	}
+	else {
+		msgbox(format("You already have Shadow Claw. Keep striking from the darkness!"), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}
+
+script TradeCenter_EventScript_PsychoCut {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_PSYCHO_CUT)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Blades of psychic energy slice through the air with frightening precision.\pTake this TM: Psycho Cut lands critical hits more easily than most moves!"), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_PSYCHO_CUT)
+		waitfanfare
+	}
+	else {
+		msgbox(format("You already have Psycho Cut. Stay sharp out there!"), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}
+
+script TradeCenter_EventScript_CrossPoison {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_CROSS_POISON)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("A slashing attack that spreads venom on contact.\pHere, take this TM: Cross Poison is a high-critical-hit Poison move that may leave foes poisoned!"), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_CROSS_POISON)
+		waitfanfare
+	}
+	else {
+		msgbox(format("You already have Cross Poison. Keep spreading the venom!"), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}
+
+script TradeCenter_EventScript_SupercellSlam {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_SUPERCELL_SLAM)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("A thunderous slam crackling with electricity!\pTake this TM: Supercell Slam hits hard, but the user takes recoil if it misses!"), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_SUPERCELL_SLAM)
+		waitfanfare
+	}
+	else {
+		msgbox(format("You already have Supercell Slam. Don't miss!"), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}
+
