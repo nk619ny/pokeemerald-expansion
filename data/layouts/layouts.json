@@ -862,7 +862,7 @@
     {
       "id": "LAYOUT_PETALBURG_CITY_GYM",
       "name": "PetalburgCity_Gym_Layout",
-      "width": 9,
+      "width": 50,
       "height": 112,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PetalburgGym",

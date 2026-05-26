@@ -3398,28 +3398,74 @@ Level: 50
 - Destiny Bond  
 
 
-=== TRAINER_PARKER === /* Petalburg Gym */
+=== TRAINER_PARKER === /* Petalburg Gym */ /* Power Trip */
 Name: PARKER
-Class: Cooltrainer
+Class: Street Thug
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Spinda
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Teeter Dance
-- Dizzy Punch
-- Focus Punch
+Smeargle @ Mental Herb  
+Ability: Moody  
+EVs: 252 HP / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+Level: 50
+- Victory Dance  
+- Cotton Guard  
+- Taunt  
+- Baton Pass  
+
+Corviknight  
+Ability: Mirror Armor  
+EVs: 252 HP / 128 SpD / 128 Spe  
+Impish Nature  
+Level: 50
+- Power Trip  
+- Body Press  
+- Iron Defense  
+- Roost  
+
+Krookodile @ Assault Vest  
+Ability: Anger Point    
+Level: 50
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Power Trip  
+- Earthquake  
+- Power-Up Punch  
+- Rock Slide  
+
+Drapion  
+Ability: Battle Armor    
+Level: 50
+EVs: 252 HP / 252 Spe  
+Jolly Nature  
+- Wicked Blow  
+- Acupressure  
+- Whirlwind  
+- Toxic Spikes  
+
+Swoobat @ Mental Herb  
+Ability: Simple    
+Level: 50
+EVs: 252 HP / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Agility  
+- Amnesia  
+- Simple Beam  
+- Baton Pass  
+
 
 === TRAINER_GEORGE === /* Petalburg Gym */ /* Necromancy */
-Name: GEORGE
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
+Name: GEORGINA
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Sequence Switching / Will Suicide
 
@@ -3925,7 +3971,7 @@ Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MARY === /* Petalburg Gym */ /* Sacrifice */
-Name: MARY
+Name: MARIO
 Class: Street Thug
 Pic: Cooltrainer M
 Gender: Male
@@ -4057,7 +4103,7 @@ Level: 50
 - Night Daze  
 
 
-=== TRAINER_JODY === /* Petalburg Gym */
+=== TRAINER_JODY === /* Petalburg Gym */ /* Prankster */
 Name: JODY
 Class: Delinquent
 Pic: Cooltrainer F
