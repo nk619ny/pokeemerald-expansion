@@ -631,10 +631,35 @@ void StartRegiBattle(void)
     TryUpdateGymLeaderRematchFromWild();
 }
 
+static void ResetSleepTurns(void)
+{
+    u8 i;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        u32 status;
+        if (!GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES))
+            continue;
+        status = GetMonData(&gPlayerParty[i], MON_DATA_STATUS);
+        if (status & STATUS1_SLEEP)
+        {
+            u32 sleepTurns;
+            if (B_SLEEP_TURNS >= GEN_5)
+                sleepTurns = (Random() % 3) + 2; // 2-4 turns
+            else if (B_SLEEP_TURNS >= GEN_3)
+                sleepTurns = (Random() % 4) + 2; // 2-5 turns
+            else
+                sleepTurns = (Random() % 7) + 2; // 2-8 turns
+            status = (status & ~STATUS1_SLEEP) | STATUS1_SLEEP_TURN(sleepTurns);
+            SetMonData(&gPlayerParty[i], MON_DATA_STATUS, &status);
+        }
+    }
+}
+
 static void DowngradeBadPoison(void)
 {
     u8 i;
     u32 status = STATUS1_POISON;
+    ResetSleepTurns();
     if (B_TOXIC_REVERSAL < GEN_5)
         return;
     for (i = 0; i < PARTY_SIZE; i++)

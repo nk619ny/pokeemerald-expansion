@@ -5842,12 +5842,26 @@ void ChangeTeraType(void)
 // gSpecialVar_0x8004: party slot
 // gSpecialVar_0x8005: status bitfield (STATUS1_*)
 // Note: Does not heal HP or clear existing volatile statuses.
+// For sleep, the turn count is randomized consistent with B_SLEEP_TURNS rather than using the raw mask.
 void InflictStatus(void)
 {
     u8 slot = gSpecialVar_0x8004;
-    u16 status = gSpecialVar_0x8005;
+    u32 status = gSpecialVar_0x8005;
     if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
+    {
+        if (status & STATUS1_SLEEP)
+        {
+            u32 sleepTurns;
+            if (B_SLEEP_TURNS >= GEN_5)
+                sleepTurns = (Random() % 3) + 2; // 2-4 turns
+            else if (B_SLEEP_TURNS >= GEN_3)
+                sleepTurns = (Random() % 4) + 2; // 2-5 turns
+            else
+                sleepTurns = (Random() % 7) + 2; // 2-8 turns
+            status = (status & ~STATUS1_SLEEP) | STATUS1_SLEEP_TURN(sleepTurns);
+        }
         SetMonData(&gPlayerParty[slot], MON_DATA_STATUS, &status);
+    }
 }
 
 // gSpecialVar_0x8004: party slot
