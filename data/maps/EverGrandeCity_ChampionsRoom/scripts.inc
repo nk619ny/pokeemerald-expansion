@@ -699,7 +699,7 @@ EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
 
 EverGrandeCity_ChampionsRoom_EventScript_SelectStevenTeam::
 # 374 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
-	random 1
+	random 2
 # 375 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"
 	switch VAR_RESULT
 # 376 "data/maps/EverGrandeCity_ChampionsRoom/scripts.pory"

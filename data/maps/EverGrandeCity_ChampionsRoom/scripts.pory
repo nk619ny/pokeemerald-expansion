@@ -371,7 +371,7 @@ text EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside {
 }
 
 script EverGrandeCity_ChampionsRoom_EventScript_SelectStevenTeam {
-	random(1)
+	random(2)
 	switch(var(VAR_RESULT)){
 		case 0:
 			trainerbattle_no_intro(TRAINER_STEVEN_1,EverGrandeCity_ChampionsRoom_Text_Defeat)
