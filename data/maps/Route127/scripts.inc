@@ -151,9 +151,50 @@ Route127_EventScript_Camden::
 	end
 
 
+Route127_EventScript_BraveBirdKeeper::
+# 84 "data/maps/Route127/scripts.pory"
+	lock
+# 85 "data/maps/Route127/scripts.pory"
+	faceplayer
+# 86 "data/maps/Route127/scripts.pory"
+	checkitem ITEM_TM_BRAVE_BIRD
+# 87 "data/maps/Route127/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route127_EventScript_BraveBirdKeeper_2
+# 94 "data/maps/Route127/scripts.pory"
+	msgbox Route127_EventScript_BraveBirdKeeper_Text_1, MSGBOX_NPC
+Route127_EventScript_BraveBirdKeeper_1:
+# 96 "data/maps/Route127/scripts.pory"
+	releaseall
+	end
+
+Route127_EventScript_BraveBirdKeeper_2:
+# 88 "data/maps/Route127/scripts.pory"
+	msgbox Route127_EventScript_BraveBirdKeeper_Text_0, MSGBOX_NPC
+# 89 "data/maps/Route127/scripts.pory"
+	closemessage
+# 90 "data/maps/Route127/scripts.pory"
+	giveitem ITEM_TM_BRAVE_BIRD
+# 91 "data/maps/Route127/scripts.pory"
+	waitfanfare
+	goto Route127_EventScript_BraveBirdKeeper_1
+
+
 Route127_EventScript_Camden_Text_0:
 # 78 "data/maps/Route127/scripts.pory"
 	.string "Sometimes when I go into the water, I\n"
 	.string "look down, and get dizzy.\p"
 	.string "I could never bring myself to go in\n"
 	.string "deeper.$"
+
+Route127_EventScript_BraveBirdKeeper_Text_0:
+# 88 "data/maps/Route127/scripts.pory"
+	.string "People underestimate the power of Bird\n"
+	.string "Pokémon all the time.\p"
+	.string "But if you attack with full force from\n"
+	.string "the sky, few foes can withstand it!$"
+
+Route127_EventScript_BraveBirdKeeper_Text_1:
+# 94 "data/maps/Route127/scripts.pory"
+	.string "I hear there is a tower nearby where\n"
+	.string "powerful Flying-types gather.$"

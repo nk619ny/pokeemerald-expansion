@@ -10889,7 +10889,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Aster (Exploud) (F) @ Throat Spray  
 Ability: Soundproof  
-Level: 88
+Level: 87
 Tera Type: Poison  
 IVs: 0 Atk  
 - Boomburst  
@@ -10900,7 +10900,7 @@ IVs: 0 Atk
 
 Noivern @ Focus Sash  
 Ability: Telepathy  
-Level: 85
+Level: 84
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -10911,7 +10911,7 @@ IVs: 0 Atk
 
 Dragonite @ Silk Scarf  
 Ability: Inner Focus  
-Level: 85
+Level: 84
 EVs: 252 HP / 252 Atk / 4 Spe  
 Adamant Nature  
 - Extreme Speed  
@@ -10921,7 +10921,7 @@ Adamant Nature
 
 Goodra  
 Ability: Sap Sipper  
-Level: 85
+Level: 84
 EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Thunderbolt  
@@ -10932,7 +10932,7 @@ IVs: 0 Atk
 
 Goodra-Hisui  
 Ability: Gooey  
-Level: 85
+Level: 84
 EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Flash Cannon  
@@ -28617,7 +28617,7 @@ IVs: 0 Atk
 - Body Press  
 
 Garchomp @ Garchompite  
-Ability: Sand Force  
+Ability: Sand Veil
 Level: 83
 Tera Type: Dragon  
 EVs: 4 HP / 252 Atk / 252 Spe  

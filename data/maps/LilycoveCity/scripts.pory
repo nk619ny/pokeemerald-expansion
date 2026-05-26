@@ -795,6 +795,8 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 
 `
 const TempVar_RivalEncounter = VAR_TEMP_0
+const TempVar_TemperFlare = VAR_TEMP_1
+const TempVar_StompingTantrum = VAR_TEMP_2
 
 text LilycoveCity_Text_IfWorldBecomesOurs{
 	format("If the whole wide world embraces Team Aqua's philosophy, it will be a happier place for Pokémon, too.")
@@ -826,7 +828,7 @@ script LilycoveCity_EventScript_RivalTriggerRight {
 
 script LilycoveCity_EventScript_RivalEncounterLeft{
 	lock
-	msgbox(format("{RIVAL}: {PLAYER}, wait up!"))
+	msgbox(format("{RIVAL}: {PLAYER}, wait up!"),MSGBOX_NPC)
 	closemessage
 	setobjectxyperm(LOCALID_LILYCOVE_RIVAL, 53, 15)
 	addobject(LOCALID_LILYCOVE_RIVAL)
@@ -838,7 +840,7 @@ script LilycoveCity_EventScript_RivalEncounterLeft{
 
 script LilycoveCity_EventScript_RivalEncounterRight{
 	lock
-	msgbox(format("{RIVAL}: {PLAYER}, wait up!"))
+	msgbox(format("{RIVAL}: {PLAYER}, wait up!"),MSGBOX_NPC)
 	closemessage
 	setobjectxyperm(LOCALID_LILYCOVE_RIVAL, 53, 15)
 	addobject(LOCALID_LILYCOVE_RIVAL)
@@ -882,4 +884,120 @@ text LilycoveCity_Text_BrendanShoppingLetsBattle{
 
 text LilycoveCity_Text_RivalGoingBackToLittleroot {
 	format("{RIVAL}: Wow. Thanks, {PLAYER}. This helped me make up my mind.\pI've really enjoyed searching high and low for special Pokémon, but I think it's time to go home.\pI don't have the same love for battling you do, and I think my dad will be really excited to see my Pokédex.\pI hope you have fun on your journey, {PLAYER}.\pSee you later!")
+}
+
+script LilycoveCity_EventScript_MagmaFan {
+	checkitem(ITEM_TM_TEMPER_FLARE)
+	copyvar(TempVar_TemperFlare, VAR_RESULT)
+	checkitem(ITEM_TM_STOMPING_TANTRUM)
+	copyvar(TempVar_StompingTantrum, VAR_RESULT)
+	if(flag(FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE) && var(TempVar_TemperFlare) == FALSE) {
+		msgbox(format("I may have been a little hot-headed with my enthusiasm for Team Magma.\pI'm trying to keep my cool better.\pHere, take this."),MSGBOX_NPC)
+		giveitem(ITEM_TM_TEMPER_FLARE)
+		closemessage
+		releaseall
+		end
+	}
+	if(!flag(FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE) && var(TempVar_TemperFlare) == TRUE){
+		msgbox(format("I still can't believe you agree with him that Archie is a better leader than Maxie!\pOooh, that gets me so fired up!"),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	if(!flag(FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE) && var(TempVar_StompingTantrum) == TRUE){
+		msgbox(format("I'm glad someone else understands what Maxie is trying to accomplish!"),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	if((var(TempVar_TemperFlare) == FALSE) && var(TempVar_StompingTantrum) == FALSE){
+		msgbox(format("This fool in front of me thinks those buffoons in Team Aqua are better than Team Magma!\pMaxie & Team Magma are way better, don't you agree?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			goto(LilycoveCity_EventScript_AquaFanStompsOff)
+		}
+		if(var(VAR_RESULT) == NO){
+			goto(LilycoveCity_EventScript_MagmaFanFlaresUp)
+		}
+	}
+	msgbox(format("Boy, things sure got really heated, didn't they?"),MSGBOX_NPC)
+	closemessage
+	releaseall
+	end
+}
+
+script LilycoveCity_EventScript_AquaFan {
+	checkitem(ITEM_TM_TEMPER_FLARE)
+	copyvar(TempVar_TemperFlare, VAR_RESULT)
+	checkitem(ITEM_TM_STOMPING_TANTRUM)
+	copyvar(TempVar_StompingTantrum, VAR_RESULT)
+	if(flag(FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE) && var(TempVar_StompingTantrum) == FALSE) {
+		msgbox(format("I realized I was being a little too aggressive with my enthusiasm for Team Aqua.\pI'm trying to handle disagreement better.\pHere, take this."),MSGBOX_NPC)
+		giveitem(ITEM_TM_STOMPING_TANTRUM)
+		closemessage
+		releaseall
+		end
+	}
+	if(!flag(FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE) && var(TempVar_TemperFlare) == TRUE){
+		msgbox(format("I'm glad someone else appreciates Archie's bravery and energy!"),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	if(!flag(FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE) && var(TempVar_StompingTantrum) == TRUE){
+		msgbox(format("I still can't believe you agree with him that boorish Maxie is a better leader than Archie!\pOooh, I'm stomping mad!"),MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	if((var(TempVar_TemperFlare) == FALSE) && var(TempVar_StompingTantrum) == FALSE){
+		msgbox(format("This jerk thinks the narcissists in Team Magma are better than Team Aqua!\pArchie and Team Aqua are way cooler! Don't you agree?"), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			goto(LilycoveCity_EventScript_MagmaFanFlaresUp)
+		}
+		if(var(VAR_RESULT) == NO){
+			goto(LilycoveCity_EventScript_AquaFanStompsOff)
+		}
+	}
+	msgbox(format("Folks really threw a fit over this stuff, huh?"),MSGBOX_NPC)
+	closemessage
+	releaseall
+	end
+}
+
+script LilycoveCity_EventScript_MagmaFanFlaresUp {
+	applymovement(LOCALID_LILYCOVE_MAGMA_FAN, Common_Movement_WalkInPlaceFasterRight)
+	msgbox(format("I can't believe how many of you don't get it!\pMaxie is a visionary, and Archie is just a loudmouth!\pI can't even look at your faces anymore!"),MSGBOX_NPC)
+	closemessage
+    delay(20)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+	removeobject(LOCALID_LILYCOVE_MAGMA_FAN)
+    delay(40)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(20)	
+	msgbox(format("The Team Magma fan seems to have left a TM behind..."),MSGBOX_DEFAULT)
+	closemessage
+	giveitem(ITEM_TM_TEMPER_FLARE)
+	waitfanfare
+	closemessage
+	releaseall
+	end
+}
+
+script LilycoveCity_EventScript_AquaFanStompsOff {
+	applymovement(LOCALID_LILYCOVE_AQUA_FAN, Common_Movement_WalkInPlaceFasterRight)
+	msgbox(format("I'm tired of listening to this nonsense!\pMaxie & Team Magma are so full of themselves!\pI can't stand hearing any more of this!"),MSGBOX_NPC)
+	closemessage
+    delay(20)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+	removeobject(LOCALID_LILYCOVE_AQUA_FAN)
+    delay(40)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+    delay(20)	
+	msgbox(format("The Team Aqua fan seems to have left a TM behind..."),MSGBOX_DEFAULT)
+	closemessage
+	giveitem(ITEM_TM_STOMPING_TANTRUM)
+	waitfanfare
+	closemessage
+	releaseall
+	end
 }

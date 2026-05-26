@@ -188,3 +188,44 @@ FallarborTown_Text_MoveTutorSign:
 	.string "HEART HOUSE\n"
 # 95 "data/maps/FallarborTown/scripts.pory"
 	.string "“Bringing out the real self.”$"
+
+FallarborTown_EventScript_Psyshock::
+# 100 "data/maps/FallarborTown/scripts.pory"
+	lock
+# 101 "data/maps/FallarborTown/scripts.pory"
+	faceplayer
+# 102 "data/maps/FallarborTown/scripts.pory"
+	checkitem ITEM_TM_PSYSHOCK
+# 103 "data/maps/FallarborTown/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq FallarborTown_EventScript_Psyshock_2
+# 110 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_Psyshock_Text_1, MSGBOX_NPC
+FallarborTown_EventScript_Psyshock_1:
+# 112 "data/maps/FallarborTown/scripts.pory"
+	releaseall
+	end
+
+FallarborTown_EventScript_Psyshock_2:
+# 104 "data/maps/FallarborTown/scripts.pory"
+	msgbox FallarborTown_EventScript_Psyshock_Text_0, MSGBOX_NPC
+# 105 "data/maps/FallarborTown/scripts.pory"
+	closemessage
+# 106 "data/maps/FallarborTown/scripts.pory"
+	giveitem ITEM_TM_PSYSHOCK
+# 107 "data/maps/FallarborTown/scripts.pory"
+	waitfanfare
+	goto FallarborTown_EventScript_Psyshock_1
+
+
+FallarborTown_EventScript_Psyshock_Text_0:
+# 104 "data/maps/FallarborTown/scripts.pory"
+	.string "I've gotten tired of opponents who\n"
+	.string "counter Psychic types with Specially\l"
+	.string "Defensive Pokémon.\p"
+	.string "Here, take this TM: Psyshock will hit\n"
+	.string "where your foes least expect it!$"
+
+FallarborTown_EventScript_Psyshock_Text_1:
+# 110 "data/maps/FallarborTown/scripts.pory"
+	.string "Keep catching opponents off guard!$"

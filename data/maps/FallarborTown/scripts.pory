@@ -95,3 +95,20 @@ FallarborTown_Text_MoveTutorSign:
 	.string "“Bringing out the real self.”$"
 
 `
+
+script FallarborTown_EventScript_Psyshock {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_PSYSHOCK)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I've gotten tired of opponents who counter Psychic types with Specially Defensive Pokémon.\pHere, take this TM: Psyshock will hit where your foes least expect it!"), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_PSYSHOCK)
+		waitfanfare
+	}
+	else {
+		msgbox(format("Keep catching opponents off guard!"), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}

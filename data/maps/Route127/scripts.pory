@@ -78,3 +78,21 @@ script Route127_EventScript_Camden{
 	msgbox(format("Sometimes when I go into the water, I look down, and get dizzy.\pI could never bring myself to go in deeper."), MSGBOX_NPC)
 	end
 }
+
+
+script Route127_EventScript_BraveBirdKeeper {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_BRAVE_BIRD)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("People underestimate the power of Bird Pokémon all the time.\pBut if you attack with full force from the sky, few foes can withstand it!"), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_BRAVE_BIRD)
+		waitfanfare
+	}
+	else {
+		msgbox(format("I hear there is a tower nearby where powerful Flying-types gather."), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}

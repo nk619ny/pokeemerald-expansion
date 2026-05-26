@@ -1588,151 +1588,522 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "I mean, we are totally happy!$"
 
 LilycoveCity_EventScript_RivalTriggerLeft::
-# 804 "data/maps/LilycoveCity/scripts.pory"
+# 806 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_MET_RIVAL_LILYCOVE, LilycoveCity_EventScript_RivalTriggerLeft_1
-# 807 "data/maps/LilycoveCity/scripts.pory"
+# 809 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_unset FLAG_BOTH_HIDEOUTS_COMPLETE, LilycoveCity_EventScript_RivalTriggerLeft_2
-# 811 "data/maps/LilycoveCity/scripts.pory"
+# 813 "data/maps/LilycoveCity/scripts.pory"
 	goto LilycoveCity_EventScript_RivalEncounterLeft
 	return
 
 LilycoveCity_EventScript_RivalTriggerLeft_1:
-# 805 "data/maps/LilycoveCity/scripts.pory"
+# 807 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_TEMP_0, 1
 	return
 
 LilycoveCity_EventScript_RivalTriggerLeft_2:
-# 808 "data/maps/LilycoveCity/scripts.pory"
+# 810 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_TEMP_0, 1
 	return
 
 
 LilycoveCity_EventScript_RivalTriggerRight::
-# 816 "data/maps/LilycoveCity/scripts.pory"
+# 818 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_set FLAG_MET_RIVAL_LILYCOVE, LilycoveCity_EventScript_RivalTriggerRight_1
-# 819 "data/maps/LilycoveCity/scripts.pory"
+# 821 "data/maps/LilycoveCity/scripts.pory"
 	goto_if_unset FLAG_BOTH_HIDEOUTS_COMPLETE, LilycoveCity_EventScript_RivalTriggerRight_2
-# 823 "data/maps/LilycoveCity/scripts.pory"
+# 825 "data/maps/LilycoveCity/scripts.pory"
 	goto LilycoveCity_EventScript_RivalEncounterRight
 	return
 
 LilycoveCity_EventScript_RivalTriggerRight_1:
-# 817 "data/maps/LilycoveCity/scripts.pory"
+# 819 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_TEMP_0, 1
 	return
 
 LilycoveCity_EventScript_RivalTriggerRight_2:
-# 820 "data/maps/LilycoveCity/scripts.pory"
+# 822 "data/maps/LilycoveCity/scripts.pory"
 	setvar VAR_TEMP_0, 1
 	return
 
 
 LilycoveCity_EventScript_RivalEncounterLeft::
-# 828 "data/maps/LilycoveCity/scripts.pory"
-	lock
-# 829 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_EventScript_RivalEncounterLeft_Text_0
 # 830 "data/maps/LilycoveCity/scripts.pory"
-	closemessage
+	lock
 # 831 "data/maps/LilycoveCity/scripts.pory"
-	setobjectxyperm LOCALID_LILYCOVE_RIVAL, 53, 15
+	msgbox LilycoveCity_EventScript_RivalEncounterLeft_Text_0, MSGBOX_NPC
 # 832 "data/maps/LilycoveCity/scripts.pory"
-	addobject LOCALID_LILYCOVE_RIVAL
+	closemessage
 # 833 "data/maps/LilycoveCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	setobjectxyperm LOCALID_LILYCOVE_RIVAL, 53, 15
 # 834 "data/maps/LilycoveCity/scripts.pory"
-	applymovement LOCALID_LILYCOVE_RIVAL, LilycoveCity_Movement_RivalApproachLeft
+	addobject LOCALID_LILYCOVE_RIVAL
 # 835 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 # 836 "data/maps/LilycoveCity/scripts.pory"
+	applymovement LOCALID_LILYCOVE_RIVAL, LilycoveCity_Movement_RivalApproachLeft
+# 837 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 838 "data/maps/LilycoveCity/scripts.pory"
 	goto LilycoveCity_EventScript_RivalBeachEncounter
 	return
 
 
 LilycoveCity_EventScript_RivalEncounterRight::
-# 840 "data/maps/LilycoveCity/scripts.pory"
-	lock
-# 841 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_EventScript_RivalEncounterLeft_Text_0
 # 842 "data/maps/LilycoveCity/scripts.pory"
-	closemessage
+	lock
 # 843 "data/maps/LilycoveCity/scripts.pory"
-	setobjectxyperm LOCALID_LILYCOVE_RIVAL, 53, 15
+	msgbox LilycoveCity_EventScript_RivalEncounterLeft_Text_0, MSGBOX_NPC
 # 844 "data/maps/LilycoveCity/scripts.pory"
-	addobject LOCALID_LILYCOVE_RIVAL
+	closemessage
 # 845 "data/maps/LilycoveCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	setobjectxyperm LOCALID_LILYCOVE_RIVAL, 53, 15
 # 846 "data/maps/LilycoveCity/scripts.pory"
-	applymovement LOCALID_LILYCOVE_RIVAL, LilycoveCity_Movement_RivalApproachRight
+	addobject LOCALID_LILYCOVE_RIVAL
 # 847 "data/maps/LilycoveCity/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 # 848 "data/maps/LilycoveCity/scripts.pory"
+	applymovement LOCALID_LILYCOVE_RIVAL, LilycoveCity_Movement_RivalApproachRight
+# 849 "data/maps/LilycoveCity/scripts.pory"
+	waitmovement 0
+# 850 "data/maps/LilycoveCity/scripts.pory"
 	goto LilycoveCity_EventScript_RivalBeachEncounter
 	return
 
 
 LilycoveCity_EventScript_RivalBeachEncounter::
-# 852 "data/maps/LilycoveCity/scripts.pory"
-	msgbox LilycoveCity_Text_RivalGreeting, MSGBOX_DEFAULT
-# 853 "data/maps/LilycoveCity/scripts.pory"
-	waitmessage
 # 854 "data/maps/LilycoveCity/scripts.pory"
-	goto LilycoveCity_EventScript_RivalBeachBattleSequence
+	msgbox LilycoveCity_Text_RivalGreeting, MSGBOX_DEFAULT
 # 855 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 856 "data/maps/LilycoveCity/scripts.pory"
+	goto LilycoveCity_EventScript_RivalBeachBattleSequence
+# 857 "data/maps/LilycoveCity/scripts.pory"
 	release
 	end
 
 
-# 859 "data/maps/LilycoveCity/scripts.pory"
+# 861 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Movement_RivalApproachLeft:
-# 860 "data/maps/LilycoveCity/scripts.pory"
+# 862 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_down
-# 860 "data/maps/LilycoveCity/scripts.pory"
+# 862 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_down
-# 861 "data/maps/LilycoveCity/scripts.pory"
+# 863 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_right
-# 861 "data/maps/LilycoveCity/scripts.pory"
+# 863 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_right
-# 862 "data/maps/LilycoveCity/scripts.pory"
+# 864 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_down
-# 862 "data/maps/LilycoveCity/scripts.pory"
+# 864 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_down
-# 862 "data/maps/LilycoveCity/scripts.pory"
+# 864 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 865 "data/maps/LilycoveCity/scripts.pory"
+# 867 "data/maps/LilycoveCity/scripts.pory"
 LilycoveCity_Movement_RivalApproachRight:
-# 866 "data/maps/LilycoveCity/scripts.pory"
-	walk_fast_down
-# 866 "data/maps/LilycoveCity/scripts.pory"
-	walk_fast_down
-# 867 "data/maps/LilycoveCity/scripts.pory"
-	walk_fast_right
-# 867 "data/maps/LilycoveCity/scripts.pory"
-	walk_fast_right
-# 867 "data/maps/LilycoveCity/scripts.pory"
-	walk_fast_right
 # 868 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_down
 # 868 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_down
-# 868 "data/maps/LilycoveCity/scripts.pory"
+# 869 "data/maps/LilycoveCity/scripts.pory"
+	walk_fast_right
+# 869 "data/maps/LilycoveCity/scripts.pory"
+	walk_fast_right
+# 869 "data/maps/LilycoveCity/scripts.pory"
+	walk_fast_right
+# 870 "data/maps/LilycoveCity/scripts.pory"
+	walk_fast_down
+# 870 "data/maps/LilycoveCity/scripts.pory"
+	walk_fast_down
+# 870 "data/maps/LilycoveCity/scripts.pory"
 	walk_fast_down
 	step_end
+
+LilycoveCity_EventScript_MagmaFan::
+# 890 "data/maps/LilycoveCity/scripts.pory"
+	checkitem ITEM_TM_TEMPER_FLARE
+# 891 "data/maps/LilycoveCity/scripts.pory"
+	copyvar VAR_TEMP_1, VAR_RESULT
+# 892 "data/maps/LilycoveCity/scripts.pory"
+	checkitem ITEM_TM_STOMPING_TANTRUM
+# 893 "data/maps/LilycoveCity/scripts.pory"
+	copyvar VAR_TEMP_2, VAR_RESULT
+# 894 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, LilycoveCity_EventScript_MagmaFan_3
+LilycoveCity_EventScript_MagmaFan_1:
+# 901 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, LilycoveCity_EventScript_MagmaFan_8
+LilycoveCity_EventScript_MagmaFan_6:
+# 907 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, LilycoveCity_EventScript_MagmaFan_13
+LilycoveCity_EventScript_MagmaFan_11:
+# 913 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_1, FALSE
+	goto_if_eq LilycoveCity_EventScript_MagmaFan_18
+LilycoveCity_EventScript_MagmaFan_16:
+# 922 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_MagmaFan_Text_4, MSGBOX_NPC
+# 923 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 924 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_EventScript_MagmaFan_2:
+# 895 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_MagmaFan_Text_0, MSGBOX_NPC
+# 896 "data/maps/LilycoveCity/scripts.pory"
+	giveitem ITEM_TM_TEMPER_FLARE
+# 897 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 898 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_EventScript_MagmaFan_3:
+# 894 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_1, FALSE
+	goto_if_eq LilycoveCity_EventScript_MagmaFan_2
+	goto LilycoveCity_EventScript_MagmaFan_1
+
+LilycoveCity_EventScript_MagmaFan_7:
+# 902 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_MagmaFan_Text_1, MSGBOX_NPC
+# 903 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 904 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_EventScript_MagmaFan_8:
+# 901 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_1, TRUE
+	goto_if_eq LilycoveCity_EventScript_MagmaFan_7
+	goto LilycoveCity_EventScript_MagmaFan_6
+
+LilycoveCity_EventScript_MagmaFan_12:
+# 908 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_MagmaFan_Text_2, MSGBOX_NPC
+# 909 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 910 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_EventScript_MagmaFan_13:
+# 907 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_2, TRUE
+	goto_if_eq LilycoveCity_EventScript_MagmaFan_12
+	goto LilycoveCity_EventScript_MagmaFan_11
+
+LilycoveCity_EventScript_MagmaFan_17:
+# 914 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_MagmaFan_Text_3, MSGBOX_YESNO
+# 915 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq LilycoveCity_EventScript_MagmaFan_22
+LilycoveCity_EventScript_MagmaFan_21:
+# 918 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq LilycoveCity_EventScript_MagmaFan_24
+	goto LilycoveCity_EventScript_MagmaFan_16
+
+LilycoveCity_EventScript_MagmaFan_18:
+# 913 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_2, FALSE
+	goto_if_eq LilycoveCity_EventScript_MagmaFan_17
+	goto LilycoveCity_EventScript_MagmaFan_16
+
+LilycoveCity_EventScript_MagmaFan_22:
+# 916 "data/maps/LilycoveCity/scripts.pory"
+	goto LilycoveCity_EventScript_AquaFanStompsOff
+	goto LilycoveCity_EventScript_MagmaFan_21
+
+LilycoveCity_EventScript_MagmaFan_24:
+# 919 "data/maps/LilycoveCity/scripts.pory"
+	goto LilycoveCity_EventScript_MagmaFanFlaresUp
+	goto LilycoveCity_EventScript_MagmaFan_16
+
+
+LilycoveCity_EventScript_AquaFan::
+# 929 "data/maps/LilycoveCity/scripts.pory"
+	checkitem ITEM_TM_TEMPER_FLARE
+# 930 "data/maps/LilycoveCity/scripts.pory"
+	copyvar VAR_TEMP_1, VAR_RESULT
+# 931 "data/maps/LilycoveCity/scripts.pory"
+	checkitem ITEM_TM_STOMPING_TANTRUM
+# 932 "data/maps/LilycoveCity/scripts.pory"
+	copyvar VAR_TEMP_2, VAR_RESULT
+# 933 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, LilycoveCity_EventScript_AquaFan_3
+LilycoveCity_EventScript_AquaFan_1:
+# 940 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, LilycoveCity_EventScript_AquaFan_8
+LilycoveCity_EventScript_AquaFan_6:
+# 946 "data/maps/LilycoveCity/scripts.pory"
+	goto_if_unset FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, LilycoveCity_EventScript_AquaFan_13
+LilycoveCity_EventScript_AquaFan_11:
+# 952 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_1, FALSE
+	goto_if_eq LilycoveCity_EventScript_AquaFan_18
+LilycoveCity_EventScript_AquaFan_16:
+# 961 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_AquaFan_Text_4, MSGBOX_NPC
+# 962 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 963 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_EventScript_AquaFan_2:
+# 934 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_AquaFan_Text_0, MSGBOX_NPC
+# 935 "data/maps/LilycoveCity/scripts.pory"
+	giveitem ITEM_TM_STOMPING_TANTRUM
+# 936 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 937 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_EventScript_AquaFan_3:
+# 933 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_2, FALSE
+	goto_if_eq LilycoveCity_EventScript_AquaFan_2
+	goto LilycoveCity_EventScript_AquaFan_1
+
+LilycoveCity_EventScript_AquaFan_7:
+# 941 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_AquaFan_Text_1, MSGBOX_NPC
+# 942 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 943 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_EventScript_AquaFan_8:
+# 940 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_1, TRUE
+	goto_if_eq LilycoveCity_EventScript_AquaFan_7
+	goto LilycoveCity_EventScript_AquaFan_6
+
+LilycoveCity_EventScript_AquaFan_12:
+# 947 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_AquaFan_Text_2, MSGBOX_NPC
+# 948 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 949 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_EventScript_AquaFan_13:
+# 946 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_2, TRUE
+	goto_if_eq LilycoveCity_EventScript_AquaFan_12
+	goto LilycoveCity_EventScript_AquaFan_11
+
+LilycoveCity_EventScript_AquaFan_17:
+# 953 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_AquaFan_Text_3, MSGBOX_YESNO
+# 954 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq LilycoveCity_EventScript_AquaFan_22
+LilycoveCity_EventScript_AquaFan_21:
+# 957 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq LilycoveCity_EventScript_AquaFan_24
+	goto LilycoveCity_EventScript_AquaFan_16
+
+LilycoveCity_EventScript_AquaFan_18:
+# 952 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_TEMP_2, FALSE
+	goto_if_eq LilycoveCity_EventScript_AquaFan_17
+	goto LilycoveCity_EventScript_AquaFan_16
+
+LilycoveCity_EventScript_AquaFan_22:
+# 955 "data/maps/LilycoveCity/scripts.pory"
+	goto LilycoveCity_EventScript_MagmaFanFlaresUp
+	goto LilycoveCity_EventScript_AquaFan_21
+
+LilycoveCity_EventScript_AquaFan_24:
+# 958 "data/maps/LilycoveCity/scripts.pory"
+	goto LilycoveCity_EventScript_AquaFanStompsOff
+	goto LilycoveCity_EventScript_AquaFan_16
+
+
+LilycoveCity_EventScript_MagmaFanFlaresUp::
+# 968 "data/maps/LilycoveCity/scripts.pory"
+	applymovement LOCALID_LILYCOVE_MAGMA_FAN, Common_Movement_WalkInPlaceFasterRight
+# 969 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_MagmaFanFlaresUp_Text_0, MSGBOX_NPC
+# 970 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 971 "data/maps/LilycoveCity/scripts.pory"
+	delay 20
+# 972 "data/maps/LilycoveCity/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 973 "data/maps/LilycoveCity/scripts.pory"
+	removeobject LOCALID_LILYCOVE_MAGMA_FAN
+# 974 "data/maps/LilycoveCity/scripts.pory"
+	delay 40
+# 975 "data/maps/LilycoveCity/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 976 "data/maps/LilycoveCity/scripts.pory"
+	delay 20
+# 977 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_MagmaFanFlaresUp_Text_1, MSGBOX_DEFAULT
+# 978 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 979 "data/maps/LilycoveCity/scripts.pory"
+	giveitem ITEM_TM_TEMPER_FLARE
+# 980 "data/maps/LilycoveCity/scripts.pory"
+	waitfanfare
+# 981 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 982 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
+
+LilycoveCity_EventScript_AquaFanStompsOff::
+# 987 "data/maps/LilycoveCity/scripts.pory"
+	applymovement LOCALID_LILYCOVE_AQUA_FAN, Common_Movement_WalkInPlaceFasterRight
+# 988 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_AquaFanStompsOff_Text_0, MSGBOX_NPC
+# 989 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 990 "data/maps/LilycoveCity/scripts.pory"
+	delay 20
+# 991 "data/maps/LilycoveCity/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 992 "data/maps/LilycoveCity/scripts.pory"
+	removeobject LOCALID_LILYCOVE_AQUA_FAN
+# 993 "data/maps/LilycoveCity/scripts.pory"
+	delay 40
+# 994 "data/maps/LilycoveCity/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 995 "data/maps/LilycoveCity/scripts.pory"
+	delay 20
+# 996 "data/maps/LilycoveCity/scripts.pory"
+	msgbox LilycoveCity_EventScript_AquaFanStompsOff_Text_1, MSGBOX_DEFAULT
+# 997 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 998 "data/maps/LilycoveCity/scripts.pory"
+	giveitem ITEM_TM_STOMPING_TANTRUM
+# 999 "data/maps/LilycoveCity/scripts.pory"
+	waitfanfare
+# 1000 "data/maps/LilycoveCity/scripts.pory"
+	closemessage
+# 1001 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	end
+
 
 LilycoveCity_EventScript_RivalEncounterLeft_Text_0:
-# 829 "data/maps/LilycoveCity/scripts.pory"
+# 831 "data/maps/LilycoveCity/scripts.pory"
 	.string "{RIVAL}: {PLAYER}, wait up!$"
 
+LilycoveCity_EventScript_MagmaFan_Text_0:
+# 895 "data/maps/LilycoveCity/scripts.pory"
+	.string "I may have been a little hot-headed\n"
+	.string "with my enthusiasm for Team Magma.\p"
+	.string "I'm trying to keep my cool better.\p"
+	.string "Here, take this.$"
+
+LilycoveCity_EventScript_MagmaFan_Text_1:
+# 902 "data/maps/LilycoveCity/scripts.pory"
+	.string "I still can't believe you agree with him\n"
+	.string "that Archie is a better leader than\l"
+	.string "Maxie!\p"
+	.string "Oooh, that gets me so fired up!$"
+
+LilycoveCity_EventScript_MagmaFan_Text_2:
+# 908 "data/maps/LilycoveCity/scripts.pory"
+	.string "I'm glad someone else understands what\n"
+	.string "Maxie is trying to accomplish!$"
+
+LilycoveCity_EventScript_MagmaFan_Text_3:
+# 914 "data/maps/LilycoveCity/scripts.pory"
+	.string "This fool in front of me thinks those\n"
+	.string "buffoons in Team Aqua are better than\l"
+	.string "Team Magma!\p"
+	.string "Maxie & Team Magma are way better,\n"
+	.string "don't you agree?$"
+
+LilycoveCity_EventScript_MagmaFan_Text_4:
+# 922 "data/maps/LilycoveCity/scripts.pory"
+	.string "Boy, things sure got really heated,\n"
+	.string "didn't they?$"
+
+LilycoveCity_EventScript_AquaFan_Text_0:
+# 934 "data/maps/LilycoveCity/scripts.pory"
+	.string "I realized I was being a little too\n"
+	.string "aggressive with my enthusiasm for Team\l"
+	.string "Aqua.\p"
+	.string "I'm trying to handle disagreement\n"
+	.string "better.\p"
+	.string "Here, take this.$"
+
+LilycoveCity_EventScript_AquaFan_Text_1:
+# 941 "data/maps/LilycoveCity/scripts.pory"
+	.string "I'm glad someone else appreciates\n"
+	.string "Archie's bravery and energy!$"
+
+LilycoveCity_EventScript_AquaFan_Text_2:
+# 947 "data/maps/LilycoveCity/scripts.pory"
+	.string "I still can't believe you agree with him\n"
+	.string "that boorish Maxie is a better leader\l"
+	.string "than Archie!\p"
+	.string "Oooh, I'm stomping mad!$"
+
+LilycoveCity_EventScript_AquaFan_Text_3:
+# 953 "data/maps/LilycoveCity/scripts.pory"
+	.string "This jerk thinks the narcissists in\n"
+	.string "Team Magma are better than Team Aqua!\p"
+	.string "Archie and Team Aqua are way cooler!\n"
+	.string "Don't you agree?$"
+
+LilycoveCity_EventScript_AquaFan_Text_4:
+# 961 "data/maps/LilycoveCity/scripts.pory"
+	.string "Folks really threw a fit over this\n"
+	.string "stuff, huh?$"
+
+LilycoveCity_EventScript_MagmaFanFlaresUp_Text_0:
+# 969 "data/maps/LilycoveCity/scripts.pory"
+	.string "I can't believe how many of you don't\n"
+	.string "get it!\p"
+	.string "Maxie is a visionary, and Archie is just\n"
+	.string "a loudmouth!\p"
+	.string "I can't even look at your faces\n"
+	.string "anymore!$"
+
+LilycoveCity_EventScript_MagmaFanFlaresUp_Text_1:
+# 977 "data/maps/LilycoveCity/scripts.pory"
+	.string "The Team Magma fan seems to have left a\n"
+	.string "TM behind...$"
+
+LilycoveCity_EventScript_AquaFanStompsOff_Text_0:
+# 988 "data/maps/LilycoveCity/scripts.pory"
+	.string "I'm tired of listening to this nonsense!\p"
+	.string "Maxie & Team Magma are so full of\n"
+	.string "themselves!\p"
+	.string "I can't stand hearing any more of this!$"
+
+LilycoveCity_EventScript_AquaFanStompsOff_Text_1:
+# 996 "data/maps/LilycoveCity/scripts.pory"
+	.string "The Team Aqua fan seems to have left a\n"
+	.string "TM behind...$"
+
 LilycoveCity_Text_IfWorldBecomesOurs::
-# 799 "data/maps/LilycoveCity/scripts.pory"
+# 801 "data/maps/LilycoveCity/scripts.pory"
 	.string "If the whole wide world embraces Team\n"
 	.string "Aqua's philosophy, it will be a happier\l"
 	.string "place for Pokémon, too.$"
 
 LilycoveCity_Text_RivalGreeting::
-# 871 "data/maps/LilycoveCity/scripts.pory"
+# 873 "data/maps/LilycoveCity/scripts.pory"
 	.string "{RIVAL}: You weren't going to leave\n"
 	.string "without saying anything, were you\l"
 	.string "{PLAYER}?\p"
@@ -1745,7 +2116,7 @@ LilycoveCity_Text_RivalGreeting::
 	.string "you go!$"
 
 LilycoveCity_Text_MayShoppingLetsBattle::
-# 875 "data/maps/LilycoveCity/scripts.pory"
+# 877 "data/maps/LilycoveCity/scripts.pory"
 	.string "{RIVAL}: Oh, hey?\n"
 	.string "{PLAYER}, are you shopping, or\l"
 	.string "leaving?\p"
@@ -1756,14 +2127,14 @@ LilycoveCity_Text_MayShoppingLetsBattle::
 	.string "practice for me, too!$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle::
-# 879 "data/maps/LilycoveCity/scripts.pory"
+# 881 "data/maps/LilycoveCity/scripts.pory"
 	.string "{RIVAL}: Oh, hey, it's {PLAYER}.\n"
 	.string "It's been a while.\p"
 	.string "Want to have a battle to see the cool,\n"
 	.string "ultra-rare Pokémon I found?$"
 
 LilycoveCity_Text_RivalGoingBackToLittleroot::
-# 883 "data/maps/LilycoveCity/scripts.pory"
+# 885 "data/maps/LilycoveCity/scripts.pory"
 	.string "{RIVAL}: Wow. Thanks, {PLAYER}.\n"
 	.string "This helped me make up my mind.\p"
 	.string "I've really enjoyed searching high and\n"

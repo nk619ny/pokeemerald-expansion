@@ -577,8 +577,8 @@ script NewTrainerHill_EventScript_GetNumCoins {
 			setvar(TempVar_RewardCoins, 1500)
 			bufferstring(STR_VAR_1, "1500")
 		case 8:
-			setvar(TempVar_RewardCoins, 1500)
-			bufferstring(STR_VAR_1, "1500")
+			setvar(TempVar_RewardCoins, 2500)
+			bufferstring(STR_VAR_1, "2500")
 		case 9:
 			setvar(TempVar_RewardCoins, 1500)
 			bufferstring(STR_VAR_1, "1500")

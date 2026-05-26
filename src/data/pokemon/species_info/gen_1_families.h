@@ -11628,7 +11628,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eliteLearnset = sNoneEliteLearnset,
         .eggMoveLearnset = sFarfetchdGalarEggMoveLearnset,
         .formSpeciesIdTable = sFarfetchdFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_BATTLE_END, 0, SPECIES_SIRFETCHD, CONDITIONS({IF_CRITICAL_HITS_GE, 3})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SIRFETCHD}),
     },
 
     [SPECIES_SIRFETCHD] =
