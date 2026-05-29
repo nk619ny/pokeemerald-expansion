@@ -170,16 +170,16 @@ Route103_Text_AndrewPostBattle:
 	.string "Grrrrr…$"
 
 Route103_Text_MiguelIntro:
-	.string "My Pokémon is delightfully adorable!\n"
-	.string "Don't be shy--I'll show you!$"
+	.string "I just finished my ninja\n"
+	.string "training! I'll show you!$"
 
 Route103_Text_MiguelDefeated:
-	.string "Oh, my gosh!\n"
-	.string "My darling Pokémon!$"
+	.string "I think I have more training\n"
+	.string "to do…$"
 
 Route103_Text_MiguelPostBattle:
-	.string "My delightful Pokémon looks darling\n"
-	.string "even when it's fainted!$"
+	.string "It takes a lot of patience to hide\n"
+	.string "in the trees for hours.$"
 
 Route103_Text_MiguelRegister:
 	.string "I'll get you to come out and look in\n"
@@ -1105,16 +1105,16 @@ Route110_Text_EdwardPostBattle:
 	.string "I see a shining light…$"
 
 Route110_Text_JaclynIntro:
-	.string "Ahahahaha!\n"
-	.string "I'll dazzle you with my wonders!$"
+	.string "Woah!\n"
+	.string "You surprised me!$"
 
 Route110_Text_JaclynDefeated:
-	.string "I wondrously lost!$"
+	.string "I should have kept looking at\n"
+	.string "the ground…"
 
 Route110_Text_JaclynPostBattle:
-	.string "You managed to win only because it was\n"
-	.string "a wonder! Yes, a wonder!\l"
-	.string "Don't think you can win all the time!$"
+	.string "I'm gonna go back to looking for\n"
+	.string "bugs.$"
 
 Route110_Text_EdwinIntro:
 	.string "Could I see your Pokémon?\n"

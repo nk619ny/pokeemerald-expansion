@@ -8578,19 +8578,52 @@ Alakazam
 Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_JACLYN === /* Route 110 */ /* TO BE ADDED */ /* REPLACE WITH OTHER TRAINER CLASS */
-Name: JACLYN
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
+=== TRAINER_JACLYN === /* Route 110 */ 
+Name: JACQUES
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Abra
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hidden Power
+Sewaddle  
+Ability: Chlorophyll  
+Level: 34
+Tera Type: Bug  
+- Pounce  
+- Grassy Glide  
+- String Shot  
+- Synthesis  
+
+Joltik  
+Ability: Compound Eyes  
+Level: 34
+Tera Type: Bug  
+- Leech Life  
+- Electroweb  
+- Toxic  
+- Protect  
+
+Cutiefly  
+Ability: Shield Dust  
+Level: 34
+Tera Type: Bug  
+IVs: 0 Atk  
+- Bug Buzz  
+- Infestation  
+- Stun Spore  
+- Psychic  
+
+Applin @ Iapapa Berry  
+Level: 34
+Ability: Gluttony  
+Tera Type: Grass  
+- Withdraw  
+- Pounce  
+- Grassy Glide  
+- Recycle  
+
 
 === TRAINER_HANNAH === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: HANNAH
@@ -10291,18 +10324,52 @@ Zigzagoon @ Oran Berry
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_MIGUEL_1 === /* Route 103 */ /* TO BE ADDED */
+=== TRAINER_MIGUEL_1 === /* Route 103 */ 
 Name: MIGUEL
-Class: Pokefan
-Pic: Pokefan M
+Class: Ninja Boy
+Pic: Ninja Boy
 Gender: Male
-Music: Twins
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skitty @ Oran Berry
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Zubat  
+Ability: Infiltrator  
+Tera Type: Poison  
+Level: 28
+- Giga Drain  
+- Leech Life  
+- Poison Fang  
+- Quick Attack  
+
+Ditto  
+Ability: Imposter  
+Tera Type: Normal  
+Level: 30
+IVs: 30 Atk  
+- Transform  
+
+Zorua-Hisui  
+Ability: Illusion  
+Tera Type: Normal  
+EVs: 252 HP  
+Brave Nature  
+Level: 28
+IVs: 0 Spe  
+- Psych Up  
+- Shadow Sneak  
+- Comeuppance  
+- Bitter Malice  
+
+Stunfisk-Galar  
+Ability: Mimicry  
+Tera Type: Ground  
+Level: 25
+- Snap Trap  
+- Counter  
+- Foul Play  
+- Pain Split  
+
 
 === TRAINER_COLTON === /* S.S. Tidal */
 Name: COLTON
@@ -12838,7 +12905,7 @@ Dodrio
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_MARIA_1 === /* Route 117 */ /* TO BE ADDED */
+=== TRAINER_MARIA_1 === /* Route 117 */ /* TO BE ADDED */ /* unused */
 Name: MARIA
 Class: Triathlete
 Pic: Running Triathlete F
@@ -15756,7 +15823,7 @@ Altaria
 Level: 40
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_AMY_AND_LIV_1 === /* Route 103 East */ /* TO BE ADDED */
+=== TRAINER_AMY_AND_LIV_1 === /* Route 103 East */ 
 Name: AMY & LIV
 Class: Twins
 Pic: Twins
@@ -15765,13 +15832,34 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Plusle
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Darumaka  
+Ability: Hustle  
+Tera Type: Fire  
+Level: 33
+- Fire Punch  
+- Double Team  
+- Helping Hand  
+- Zen Headbutt  
 
-Minun
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Darumaka-Galar  
+Ability: Hustle  
+Tera Type: Ice  
+Level: 33
+- Ice Punch  
+- Double Team  
+- Helping Hand  
+- Headbutt  
+
+Girafarig  
+Ability: Inner Focus  
+Tera Type: Normal  
+Level: 32
+IVs: 0 Atk  
+- Ally Switch  
+- Foul Play  
+- Low Kick  
+- Twin Beam  
+
 
 === TRAINER_AMY_AND_LIV_2 === /* Route */
 Name: AMY & LIV
@@ -24114,18 +24202,53 @@ Hasty Nature
 
 
 
-=== TRAINER_RHETT === /* Route 103 East */ /* TO BE ADDED */
+=== TRAINER_RHETT === /* Route 103 East */
 Name: RHETT
-Class: Black Belt
-Pic: Black Belt
+Class: Bird Keeper
+Pic: Bird Keeper
 Gender: Male
-Music: Intense
+Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Makuhita
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Spearow  @ Silk Scarf
+Ability: Keen Eye  
+Tera Type: Normal  
+Level: 33
+- Drill Peck  
+- Drill Run  
+- Quick Attack  
+- Mirror Move  
+
+Swablu  
+Ability: Cloud Nine  
+Level: 33
+Tera Type: Normal  
+IVs: 0 Atk  
+- Cotton Guard  
+- Dragon Pulse  
+- Dazzling Gleam  
+- Heat Wave  
+
+Taillow  @ Flame Orb
+Ability: Guts  
+Level: 32
+Tera Type: Normal  
+- Boomburst  
+- Brave Bird  
+- Facade  
+- Quick Attack  
+
+Piplup  
+Ability: Torrent  
+Level: 33
+Tera Type: Water  
+- Protect
+- Icy Wind  
+- Chilling Water  
+- Air Slash
+
+
 
 === TRAINER_TYRON === /* Route 111 South */
 Name: TYRON
@@ -25969,7 +26092,7 @@ Lotad
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MELINA === /* Route 117 */ /* TO BE ADDED */
+=== TRAINER_MELINA === /* Route 117 */ /* TO BE ADDED */ /* currently unused */
 Name: MELINA
 Class: Triathlete
 Pic: Running Triathlete F

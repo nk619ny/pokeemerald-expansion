@@ -507,11 +507,11 @@ Route103_EventScript_Andrew::
 # 254 "data/maps/Route103/scripts.pory"
 Route103_EventScript_Miguel::
 # 255 "data/maps/Route103/scripts.pory"
-	trainerbattle_single TRAINER_MIGUEL_1, Route103_Text_MiguelIntro, Route103_Text_MiguelDefeated, Route102_EventScript_MiguelRegisterMatchCallAfterBattle
+	trainerbattle_single TRAINER_MIGUEL_1, Route103_Text_MiguelIntro, Route103_Text_MiguelDefeated
 # 256 "data/maps/Route103/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 257 "data/maps/Route103/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route103_EventScript_MiguelRematch
+	//goto_if_eq VAR_RESULT, TRUE, Route103_EventScript_MiguelRematch
 # 258 "data/maps/Route103/scripts.pory"
 	msgbox Route103_Text_MiguelPostBattle, MSGBOX_DEFAULT
 # 259 "data/maps/Route103/scripts.pory"
@@ -527,7 +527,7 @@ Route102_EventScript_MiguelRegisterMatchCallAfterBattle::
 # 264 "data/maps/Route103/scripts.pory"
 	waitmovement 0
 # 265 "data/maps/Route103/scripts.pory"
-	msgbox Route103_Text_MiguelRegister, MSGBOX_DEFAULT
+	//msgbox Route103_Text_MiguelRegister, MSGBOX_DEFAULT
 # 266 "data/maps/Route103/scripts.pory"
 	//register_matchcall TRAINER_MIGUEL_1
 # 267 "data/maps/Route103/scripts.pory"
