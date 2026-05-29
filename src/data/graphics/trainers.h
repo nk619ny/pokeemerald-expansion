@@ -313,6 +313,21 @@ const u16 gTrainerPalette_Lisia[] = INCBIN_U16("graphics/trainers/front_pics/lis
 const u32 gTrainerFrontPic_Zinnia[] = INCBIN_U32("graphics/trainers/front_pics/zinnia.4bpp.lz");
 const u16 gTrainerPalette_Zinnia[] = INCBIN_U16("graphics/trainers/front_pics/zinnia.gbapal");
 
+const u32 gTrainerFrontPic_StreetThugORAS[] = INCBIN_U32("graphics/trainers/front_pics/street_thug_oras.4bpp.lz");
+const u16 gTrainerPalette_StreetThugORAS[] = INCBIN_U16("graphics/trainers/front_pics/street_thug_oras.gbapal");
+
+const u32 gTrainerFrontPic_BackpackerORAS[] = INCBIN_U32("graphics/trainers/front_pics/backpacker_oras.4bpp.lz");
+const u16 gTrainerPalette_BackpackerORAS[] = INCBIN_U16("graphics/trainers/front_pics/backpacker_oras.gbapal");
+
+const u32 gTrainerFrontPic_DelinquentORAS[] = INCBIN_U32("graphics/trainers/front_pics/delinquent_oras.4bpp.lz");
+const u16 gTrainerPalette_DelinquentORAS[] = INCBIN_U16("graphics/trainers/front_pics/delinquent_oras.gbapal");
+
+const u32 gTrainerFrontPic_DiverFORAS[] = INCBIN_U32("graphics/trainers/front_pics/diver_f_oras.4bpp.lz");
+const u16 gTrainerPalette_DiverFORAS[] = INCBIN_U16("graphics/trainers/front_pics/diver_f_oras.gbapal");
+
+const u32 gTrainerFrontPic_DiverMORAS[] = INCBIN_U32("graphics/trainers/front_pics/diver_m_oras.4bpp.lz");
+const u16 gTrainerPalette_DiverMORAS[] = INCBIN_U16("graphics/trainers/front_pics/diver_m_oras.gbapal");
+
 const u32 gTrainerFrontPic_YoungsterFrlg[] = INCBIN_U32("graphics/trainers/front_pics/youngster_frlg.4bpp.smol");
 const u16 gTrainerPalette_YoungsterFrlg[] = INCBIN_U16("graphics/trainers/palettes/youngster_frlg.gbapal");
 
@@ -639,6 +654,11 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_FRONT_VITO, gTrainerFrontPic_Vito, gTrainerPalette_Vito),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_LISIA, gTrainerFrontPic_Lisia, gTrainerPalette_Lisia),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_ZINNIA, gTrainerFrontPic_Zinnia, gTrainerPalette_Zinnia),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_STREET_THUG_ORAS, gTrainerFrontPic_StreetThugORAS, gTrainerPalette_StreetThugORAS),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_BACKPACKER_ORAS, gTrainerFrontPic_BackpackerORAS, gTrainerPalette_BackpackerORAS),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_DELINQUENT_ORAS, gTrainerFrontPic_DelinquentORAS, gTrainerPalette_DelinquentORAS),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_DIVER_F_ORAS, gTrainerFrontPic_DiverFORAS, gTrainerPalette_DiverFORAS),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_DIVER_M_ORAS, gTrainerFrontPic_DiverMORAS, gTrainerPalette_DiverMORAS),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_YOUNGSTER_FRLG, gTrainerFrontPic_YoungsterFrlg, gTrainerPalette_YoungsterFrlg),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_BUG_CATCHER_FRLG, gTrainerFrontPic_BugCatcherFrlg, gTrainerPalette_BugCatcherFrlg),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_LASS_FRLG, gTrainerFrontPic_LassFrlg, gTrainerPalette_LassFrlg),

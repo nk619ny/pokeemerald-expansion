@@ -3401,7 +3401,7 @@ Level: 50
 === TRAINER_PARKER === /* Petalburg Gym */ /* Power Trip */
 Name: PARKER
 Class: Street Thug
-Pic: Cooltrainer M
+Pic: Street Thug ORAS
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -3973,7 +3973,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_MARY === /* Petalburg Gym */ /* Sacrifice */
 Name: MARIO
 Class: Street Thug
-Pic: Cooltrainer M
+Pic: Street Thug ORAS
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4106,7 +4106,7 @@ Level: 50
 === TRAINER_JODY === /* Petalburg Gym */ /* Prankster */
 Name: JODY
 Class: Delinquent
-Pic: Cooltrainer F
+Pic: Delinquent ORAS
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -6172,7 +6172,7 @@ IVs: 0 Atk
 === TRAINER_NOLEN === /* Underwater 124 */ 
 Name: NOLEN
 Class: Diver
-Pic: Swimmer M
+Pic: Diver M ORAS
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -6225,7 +6225,7 @@ Adamant Nature
 === TRAINER_STAN === /* Underwater 128 */
 Name: STAN
 Class: Diver
-Pic: Swimmer M
+Pic: Diver M ORAS
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -6277,7 +6277,7 @@ IVs: 0 Atk
 === TRAINER_BARRY === /* Route 126 */ /* TO BE ADDED */
 Name: BARRY
 Class: Diver
-Pic: Swimmer M
+Pic: Diver M ORAS
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -6290,7 +6290,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_DEAN === /* Underwater */
 Name: DEAN
 Class: Diver
-Pic: Swimmer M
+Pic: Diver M ORAS
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7339,7 +7339,7 @@ Level: 39
 === TRAINER_JACE === /* Rustboro Gym */
 Name: JACE
 Class: Backpacker
-Pic: Hiker
+Pic: Backpacker ORAS
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -12974,7 +12974,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_CAMDEN === /* Underwater Route 127 */ /* TO BE ADDED */
 Name: CAMDEN
 Class: Diver
-Pic: Swimmer M
+Pic: Diver M ORAS
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -13210,7 +13210,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_KATELYN_1 === /* Underwater 128 */ 
 Name: KATELYN
 Class: Diver
-Pic: Swimming Triathlete F
+Pic: Diver F ORAS
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -15040,7 +15040,7 @@ IVs: 0 Atk
 === TRAINER_TANYA === /* Underwater 124 */ /* TO BE ADDED */
 Name: TANYA
 Class: Diver
-Pic: Swimmer F
+Pic: Diver F ORAS
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -15085,7 +15085,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_NIKKI === /* Underwater */
 Name: NIKKI
 Class: Diver
-Pic: Swimmer F
+Pic: Diver F ORAS
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -15127,7 +15127,7 @@ Tera Type: Water
 === TRAINER_BRENDA === /* Underwater Route 126 */
 Name: BRENDA
 Class: Diver
-Pic: Swimmer F
+Pic: Diver F ORAS
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -20241,7 +20241,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ISABELLA === /* Underwater 124 */ /* TO BE ADDED */
 Name: ISABELLA
 Class: Diver
-Pic: Swimming Triathlete F
+Pic: Diver F ORAS
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -22036,7 +22036,7 @@ Relaxed Nature
 === TRAINER_VIVIAN === /* Mauville Gym */
 Name: VIVIAN
 Class: Delinquent
-Pic: Battle Girl
+Pic: Delinquent ORAS
 Gender: Female
 Music: Intense
 Double Battle: Yes
