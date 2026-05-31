@@ -12,6 +12,15 @@ GBA Pokémon ROM hack base built on [pret's pokeemerald](https://github.com/pret
 - **Clean**: `make clean`
 - Build artifacts go to `build/emerald/` (legacy) or `build/modern/` (default).
 
+- **Agent behavior**: AI agents must not attempt to build or produce ROM
+    artifacts themselves. Agents may edit source files, suggest precise
+    build commands, and provide troubleshooting guidance, but they should
+    not run build commands, create `pokeemerald.gba`, or otherwise generate
+    ROM files on behalf of the user. Instead, agents must instruct and
+    assist the user to perform builds locally (for example, in WSL on
+    Windows) and can validate or explain build outputs if the user shares
+    them.
+
 ## Architecture
 
 ### Key directories
