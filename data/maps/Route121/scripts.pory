@@ -192,3 +192,23 @@ Route121_Text_SafariZoneSign:
 	.string "SAFARI ZONE$"
 
 `
+
+script Route121_EventScript_Gabe {
+    trainerbattle_single(TRAINER_GABE, Route121_Text_GabeIntro, Route121_Text_GabeDefeat)
+	msgbox(Route121_Text_GabePostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+
+text Route121_Text_GabeIntro {
+    format("It's important not to battle on an empty stomach!")
+}
+
+text Route121_Text_GabeDefeat {
+    format("I could use a snack.")
+}
+
+text Route121_Text_GabePostBattle {
+    format("Every time I eat, I make sure to give some berries to my Pokémon, too!")
+}

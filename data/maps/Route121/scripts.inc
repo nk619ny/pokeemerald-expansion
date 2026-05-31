@@ -382,3 +382,27 @@ Route121_Text_SafariZoneSign:
 	.string "“Filled with rare Pokémon!”\n"
 # 192 "data/maps/Route121/scripts.pory"
 	.string "SAFARI ZONE$"
+
+Route121_EventScript_Gabe::
+# 197 "data/maps/Route121/scripts.pory"
+	trainerbattle_single TRAINER_GABE, Route121_Text_GabeIntro, Route121_Text_GabeDefeat
+# 198 "data/maps/Route121/scripts.pory"
+	msgbox Route121_Text_GabePostBattle, MSGBOX_NPC
+# 199 "data/maps/Route121/scripts.pory"
+	release
+	end
+
+
+Route121_Text_GabeIntro::
+# 204 "data/maps/Route121/scripts.pory"
+	.string "It's important not to battle on an\n"
+	.string "empty stomach!$"
+
+Route121_Text_GabeDefeat::
+# 208 "data/maps/Route121/scripts.pory"
+	.string "I could use a snack.$"
+
+Route121_Text_GabePostBattle::
+# 212 "data/maps/Route121/scripts.pory"
+	.string "Every time I eat, I make sure to give\n"
+	.string "some berries to my Pokémon, too!$"

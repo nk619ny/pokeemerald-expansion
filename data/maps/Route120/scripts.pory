@@ -270,16 +270,15 @@ Route120_EventScript_RouteSign121::
 	end
 
 Route120_EventScript_Colin::
-	trainerbattle_single TRAINER_COLIN, Route120_Text_ColinIntro, Route120_Text_ColinDefeat
-	msgbox Route120_Text_ColinPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route120_EventScript_Robert::
-	trainerbattle_single TRAINER_ROBERT_1, Route120_Text_RobertIntro, Route120_Text_RobertDefeat, Route120_EventScript_RegisterRobert
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route120_EventScript_RematchRobert
+	trainerbattle_single TRAINER_COLIN, Route120_Text_RobertIntro, Route120_Text_RobertDefeat
 	msgbox Route120_Text_RobertPostBattle, MSGBOX_DEFAULT
 	release
+	end
+	
+
+Route120_EventScript_Robert::
+	trainerbattle_single TRAINER_ROBERT_1, Route120_Text_ColinIntro, Route120_Text_ColinDefeat
+	msgbox Route120_Text_ColinPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route120_EventScript_RegisterRobert::
@@ -492,4 +491,44 @@ script Route120_EventScript_MuddyWaterKid{
 	}
 	releaseall
 	end
+}
+
+script Route120_EventScript_Abe {
+    trainerbattle_single(TRAINER_ABE, Route120_Text_AbeIntro, Route120_Text_AbeDefeat, Route120_EventScript_AbeTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route120_EventScript_AbeTryGiveVitamin)
+	msgbox(Route120_Text_AbePostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script Route120_EventScript_AbeTryGiveVitamin{
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("Okay, I'm sorry, please don't report me to the Pokémon League.\pTake this and let's call it even, okay?"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("What a relief, you came back.\pTake this and let's call it even, okay?"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_HEART_SCALE)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_HEART_SCALE)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("Oh come on, this is more than a fair offer.\pMake some space in your bag and let's make a deal, yeah?"), MSGBOX_NPC)
+	}
+	release
+	end
+}
+
+text Route120_Text_AbeIntro {
+    format("You've fallen into my trap! I've laid barbs all around your space!")
+}
+
+text Route120_Text_AbeDefeat {
+    format("My scheme wasn't enough...")
+}
+
+text Route120_Text_AbePostBattle {
+    format("Lots of trainers complain about my methods.")
 }

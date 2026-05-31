@@ -346,10 +346,12 @@ Route119_EventScript_Doug::
 	msgbox Route119_Text_DougPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+/*
 Route119_EventScript_Greg::
 	trainerbattle_single TRAINER_GREG, Route119_Text_GregIntro, Route119_Text_GregDefeat
 	msgbox Route119_Text_GregPostBattle, MSGBOX_AUTOCLOSE
 	end
+*/
 
 Route119_EventScript_Kent::
 	trainerbattle_single TRAINER_KENT, Route119_Text_KentIntro, Route119_Text_KentDefeat
@@ -645,6 +647,34 @@ script Route119_EventScript_XScizzorManiac {
 	msgbox(format("I'm glad to be rid of that TM."), MSGBOX_DEFAULT)
 	closemessage
 	releaseall
+	end
+}
+
+script Route119_EventScript_Greg {
+    trainerbattle_single(TRAINER_GREG, Route119_Text_GregIntro, Route119_Text_GregDefeat, Route119_EventScript_GregTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route119_EventScript_GregTryGiveVitamin)
+	msgbox(Route119_Text_GregPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script Route119_EventScript_GregTryGiveVitamin{
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("We're trying to start a Mimic Circle.\pHere, take this for playing along."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Are you ready to receive your Mimic Circle prize now?"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_CALCIUM)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_CALCIUM)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("Oh, you don't seem to have room for the prize.\pYou can come back for it later - unless someone else comes to claim it first!"), MSGBOX_NPC)
+	}
+	release
 	end
 }
 

@@ -1804,8 +1804,7 @@ Route114_Text_LucasPostBattle:
 Route114_Text_ShaneIntro:
 	.string "Camping's fun! You can fish, roast\n"
 	.string "marshmallows, and tell spooky stories!\p"
-	.string "But the best of all are the Pokémon\n"
-	.string "battles!$"
+	.string "But the best of all are the bugs!$"
 
 Route114_Text_ShaneDefeat:
 	.string "Way too strong!$"
@@ -1815,8 +1814,8 @@ Route114_Text_ShanePostBattle:
 	.string "camping with my Pokémon.$"
 
 Route114_Text_NancyIntro:
-	.string "I need to exercise after a meal.\n"
-	.string "Let's have a match!$"
+	.string "It's important to make sure\n"
+	.string "everyone is well-fed!$"
 
 Route114_Text_NancyDefeat:
 	.string "Oh, no!$"
@@ -3302,15 +3301,15 @@ Route121_Text_MylesPostBattle:
 
 Route121_Text_PatIntro:
 	.string "I want everybody to see the Pokémon\n"
-	.string "I've raised!$"
+	.string "I've bought!$"
 
 Route121_Text_PatDefeat:
 	.string "Wow!\n"
 	.string "Spectacular!$"
 
 Route121_Text_PatPostBattle:
-	.string "I raise every Pokémon with the same\n"
-	.string "love and care--I don't pick favorites.$"
+	.string "I hand-pick every Pokémon I use.\n"
+	.string "These are my favorites.$"
 
 Route121_Text_MarcelIntro:
 	.string "My Pokémon have never tasted defeat!\n"
@@ -3447,6 +3446,7 @@ Route123_Text_YukiNotEnoughMons:
 	.string "YUKI: It's no fun to battle if you\n"
 	.string "don't have two Pokémon.$"
 
+/*
 Route123_Text_KindraIntro:
 	.string "MT. PYRE…\n"
 	.string "Where the spirits of Pokémon sleep…\l"
@@ -3460,6 +3460,7 @@ Route123_Text_KindraPostBattle:
 	.string "Where the spirits of Pokémon sleep…\p"
 	.string "It must overflow with a power that\n"
 	.string "soothes spirits…$"
+*/
 
 Route123_Text_FernandoIntro:
 	.string "I'll turn your lights out while\n"

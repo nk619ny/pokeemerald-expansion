@@ -760,7 +760,8 @@ void ItemUseOutOfBattle_PokemonBoxLink(u8 taskId)
 {
     if (gMapHeader.regionMapSectionId == MAPSEC_EVER_GRANDE_CITY
      || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_MOSSDEEP_CITY_GYM)
-      && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_MOSSDEEP_CITY_GYM)))
+      && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_MOSSDEEP_CITY_GYM))
+     || gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ROUTE110_TRICK_HOUSE_ENTRANCE))
     {
         DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
         return;

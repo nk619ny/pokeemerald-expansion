@@ -404,3 +404,17 @@ Route123_Script_DavisDefeated::
 	release
 	return
 
+
+Route123_Text_KindraIntro::
+# 209 "data/maps/Route123/scripts.pory"
+	.string "Can you small the fresh fruit?$"
+
+Route123_Text_KindraDefeat::
+# 213 "data/maps/Route123/scripts.pory"
+	.string "So fresh!$"
+
+Route123_Text_KindraPostBattle::
+# 217 "data/maps/Route123/scripts.pory"
+	.string "The berry fields in this area attract\n"
+	.string "all kinds of Pokémon. The blooms in the\l"
+	.string "spring are also beautiful!$"

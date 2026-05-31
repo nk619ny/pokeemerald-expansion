@@ -819,3 +819,23 @@ text Route111_Text_BeckyDefeat{
 text Route111_Text_BeckyPostBattle{
 	format("Some scientists in Mossdeep keep calling me about by Magneton.\pI'm not interested in meeting them, though. I don't like boats.")
 }
+
+script Route111_EventScript_Noah {
+    trainerbattle_single(TRAINER_NOAH, Route111_Text_NoahIntro, Route111_Text_NoahDefeat)
+    msgbox(Route111_Text_NoahPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+
+text Route111_Text_NoahIntro {
+    format("Did you know flowers attract bugs?")
+}
+
+text Route111_Text_NoahDefeat {
+    format("You're going to scare all the bugs away!")
+}
+
+text Route111_Text_NoahPostBattle {
+    format("My parents get upset the flowers in the garden attract bugs.\pI thought that was the whole point of growing flowers!")
+}

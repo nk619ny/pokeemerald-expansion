@@ -204,3 +204,16 @@ script Route123_Script_DavisDefeated{
 	release
 	return
 }
+
+
+text Route123_Text_KindraIntro {
+	format("Can you small the fresh fruit?")
+}
+
+text Route123_Text_KindraDefeat{
+	format("So fresh!")
+}
+
+text Route123_Text_KindraPostBattle {
+	format("The berry fields in this area attract all kinds of Pokémon. The blooms in the spring are also beautiful!")
+}

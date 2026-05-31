@@ -1584,6 +1584,16 @@ Route111_EventScript_BrickBreakBlackBelt_2:
 	goto Route111_EventScript_BrickBreakBlackBelt_1
 
 
+Route111_EventScript_Noah::
+# 824 "data/maps/Route111/scripts.pory"
+	trainerbattle_single TRAINER_NOAH, Route111_Text_NoahIntro, Route111_Text_NoahDefeat
+# 825 "data/maps/Route111/scripts.pory"
+	msgbox Route111_Text_NoahPostBattle, MSGBOX_NPC
+# 826 "data/maps/Route111/scripts.pory"
+	release
+	end
+
+
 Route111_EventScript_WinstratesCheckBadge_Text_0:
 # 747 "data/maps/Route111/scripts.pory"
 	.string "Before we start, do you have the\n"
@@ -1642,3 +1652,18 @@ Route111_Text_BeckyPostBattle::
 	.string "calling me about by Magneton.\p"
 	.string "I'm not interested in meeting them,\n"
 	.string "though. I don't like boats.$"
+
+Route111_Text_NoahIntro::
+# 831 "data/maps/Route111/scripts.pory"
+	.string "Did you know flowers attract bugs?$"
+
+Route111_Text_NoahDefeat::
+# 835 "data/maps/Route111/scripts.pory"
+	.string "You're going to scare all the bugs away!$"
+
+Route111_Text_NoahPostBattle::
+# 839 "data/maps/Route111/scripts.pory"
+	.string "My parents get upset the flowers in the\n"
+	.string "garden attract bugs.\p"
+	.string "I thought that was the whole point of\n"
+	.string "growing flowers!$"

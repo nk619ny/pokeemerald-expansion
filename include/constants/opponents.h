@@ -146,7 +146,7 @@
 #define TRAINER_NEW_NINJA                   139 //repurposed
 #define TRAINER_HAZEL                       140 //repurposed
 #define TRAINER_SAGE                        141 //repurposed
-#define TRAINER_WINSTON_5                   142 //available
+#define TRAINER_NOAH                        142 //repurposed
 #define TRAINER_STEVE_1                     143
 #define TRAINER_THALIA_1                    144
 #define TRAINER_MARK                        145
@@ -154,7 +154,7 @@
 #define TRAINER_SHELLY_MT_PYRE              147 //was Steve rematches, repurposed
 #define TRAINER_COURTNEY_MT_PYRE            148 //was Steve rematches, repurposed
 #define TRAINER_THEODORE                    149 //was Steve rematches, repurposed
-#define TRAINER_STEVE_5                     150 //was Steve rematches, available
+#define TRAINER_ABE                         150 //was Steve rematches, repurposed
 #define TRAINER_LUIS                        151
 #define TRAINER_DOMINIK                     152
 #define TRAINER_DOUGLAS                     153
@@ -293,24 +293,24 @@
 #define TRAINER_KATE_AND_JOY                286
 #define TRAINER_ANNA_AND_MEG_1              287
 #define TRAINER_CYNTHIA                     288 //hijacked rematches of Anna & Meg in 288-291
-#define TRAINER_RED_HILL                         289 //hijacked rematches of Anna & Meg in 288-291
-#define TRAINER_ANNA_AND_MEG_4              290 //hijacked rematches of Anna & Meg in 288-291
+#define TRAINER_RED_HILL                    289 //hijacked rematches of Anna & Meg in 288-291
+#define TRAINER_GABE                        290 //hijacked rematches of Anna & Meg in 288-291
 #define TRAINER_ANNA_AND_MEG_5              291 //hijacked rematches of Anna & Meg in 288-291
 #define TRAINER_VICTOR                      292
 #define TRAINER_MIGUEL_1                    293
 #define TRAINER_COLTON                      294
-#define TRAINER_HILL_1                    295 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
-#define TRAINER_HILL_2                    296 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
-#define TRAINER_HILL_3                    297 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
-#define TRAINER_HILL_4                    298 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
+#define TRAINER_HILL_1                      295 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
+#define TRAINER_HILL_2                      296 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
+#define TRAINER_HILL_3                      297 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
+#define TRAINER_HILL_4                      298 //hijacked rematches of Miguel in 295-298 for Trainer Hill fights
 #define TRAINER_VICTORIA                    299
 #define TRAINER_VANESSA                     300
 #define TRAINER_BETHANY                     301
 #define TRAINER_ISABEL_1                    302
-#define TRAINER_HILL_5                    303 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
-#define TRAINER_HILL_6                    304 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
-#define TRAINER_HILL_7                    305 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
-#define TRAINER_HILL_8                    306 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
+#define TRAINER_HILL_5                      303 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
+#define TRAINER_HILL_6                      304 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
+#define TRAINER_HILL_7                      305 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
+#define TRAINER_HILL_8                      306 //hijacked rematches of Isabel in 302-305 for Trainer Hill fights
 #define TRAINER_TIMOTHY_1                   307
 #define TRAINER_LOOKER                      308 //hijacked rematches of Timothy in 308-311 for Trainer Hill fights
 #define TRAINER_MIROR_B                     309 //hijacked rematches of Timothy in 308-311 for Trainer Hill fights

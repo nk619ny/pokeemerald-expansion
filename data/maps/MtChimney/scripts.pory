@@ -515,14 +515,16 @@ MtChimney_EventScript_Melissa::
 	end
 
 MtChimney_EventScript_Sheila::
-	trainerbattle_single TRAINER_SHEILA, MtChimney_Text_SheilaIntro, MtChimney_Text_SheilaDefeat
-	msgbox MtChimney_Text_SheilaPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_SHEILA, MtChimney_Text_ShirleyIntro, MtChimney_Text_ShirleyDefeat
+	msgbox MtChimney_Text_ShirleyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+/*
 MtChimney_EventScript_Shirley::
 	trainerbattle_single TRAINER_SHIRLEY, MtChimney_Text_ShirleyIntro, MtChimney_Text_ShirleyDefeat
 	msgbox MtChimney_Text_ShirleyPostBattle, MSGBOX_AUTOCLOSE
 	end
+*/
 
 MtChimney_EventScript_Grunt1::
 	trainerbattle_single TRAINER_GRUNT_MT_CHIMNEY_1, MtChimney_Text_Grunt1Intro, MtChimney_Text_Grunt1Defeat
@@ -961,3 +963,44 @@ script MtChimney_EventScript_HeatCrashHiker {
 	end
 }
 
+
+
+script MtChimney_EventScript_Shiloh {
+    trainerbattle_single(TRAINER_SHIRLEY, MtChimney_Text_ShilohIntro, MtChimney_Text_ShilohDefeat, MtChimney_EventScript_ShilohTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, MtChimney_EventScript_ShilohTryGiveVitamin)
+	msgbox(MtChimney_Text_ShilohPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script MtChimney_EventScript_ShilohTryGiveVitamin{
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("I can just tell you're going places.\NI want to invest in you and your team.\pTake this, so I can tell people I helped you out before you won the Pokémon League."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Great, you came back!"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_PROTEIN)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_PROTEIN)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("What, are you not accepting new investors?\pJust make some room in your bag and come back here.\pBut be quick! This funding offer doesn't last long."), MSGBOX_NPC)
+	}
+	release
+	end
+}
+
+text MtChimney_Text_ShilohIntro {
+    format("My family has a vacation home in Lavaridge.\pThe Hot Spring is luxurious, but I love the excitement of being up here at Mt. Chimney.")
+}
+
+text MtChimney_Text_ShilohDefeat {
+    format("You've ruined my vacation!")
+}
+
+text MtChimney_Text_ShilohPostBattle {
+    format("I'm just trying to enjoy the rest of my vacation.")
+}

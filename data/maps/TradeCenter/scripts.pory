@@ -443,12 +443,12 @@ script MauvilleCity_EventScript_Temporary{
 	//goto(SkyPillar_Top_EventScript_FusionTutor)
 	//giveitem(ITEM_EXP_CANDY_S)
 	//giveitem(ITEM_HEART_SCALE,20)
-	giveitem(ITEM_MASTER_BALL)
+	//goto(EverGrandeCity_HallOfFame_EventScript_EnterHallOfFame)
 	//goto(EventScript_RustboroCity_DevonCorp_2F_NewFossilScript)
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
 	//pokenavcall
-	//trainerbattle_no_intro(TRAINER_ARCHIE_SEAFLOOR_CAVERN,LavaridgeTown_Gym_1F_Text_FlanneryDefeat)
+	trainerbattle_no_intro(TRAINER_HILL_8,LavaridgeTown_Gym_1F_Text_FlanneryDefeat)
 	//addvar(VAR_LEVEL_CAP,5)
 	//givemon(SPECIES_FERALIGATR,12,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE, MOVE_HIDDEN_POWER)
 	//givemon(SPECIES_FERALIGATR,15,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE)
@@ -784,7 +784,7 @@ script Common_EventScript_BerryTreeFlowersEncounterFlabebe {
 
 script Common_EventScript_RemoveOptionalItems0 {
 	setflag(FLAG_ITEM_ROUTE_102_POTION)
-	setflag(FLAG_ITEM_ROUTE_104_POTION)
+	//setflag(FLAG_ITEM_ROUTE_104_POTION)
 	setflag(FLAG_ITEM_ROUTE_104_X_ACCURACY)
 	setflag(FLAG_ITEM_ROUTE_104_NORTH_NEW)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE)
@@ -837,6 +837,7 @@ script Common_EventScript_RemoveOptionalItems2 {
 
 script Common_EventScript_RemoveOptionalItems3 {
 	setflag(FLAG_ITEM_ROUTE_111_HP_UP)
+	setflag(FLAG_ITEM_ROUTE_111_CARBOS)
 	setflag(FLAG_ITEM_ROUTE_113_SUPER_REPEL)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_113_TM_DOUBLE_TEAM)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_113_ETHER)
@@ -855,6 +856,8 @@ script Common_EventScript_RemoveOptionalItems3 {
 	setflag(FLAG_ITEM_ROUTE_135_CALCIUM)
 	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL)
 	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL)
+	setflag(FLAG_ITEM_MT_CHIMNEY_HP_UP)
+	setflag(FLAG_ITEM_MT_CHIMNEY_CALCIUM)
 	return
 }
 
@@ -872,7 +875,7 @@ script Common_EventScript_RemoveOptionalItems4 {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_111_RARE_CANDY)
 	setflag(FLAG_ITEM_ROUTE_111_STARDUST)
-	setflag(FLAG_ITEM_ROUTE_111_TM_SANDSTORM) //
+	setflag(FLAG_ITEM_ROUTE_111_TM_SANDSTORM) 
 	setflag(FLAG_ITEM_ICE_CAVE_IRON)
 	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_WOOD_MAIL)
 	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL)
@@ -935,6 +938,7 @@ script Common_EventScript_RemoveOptionalItems7PreSurf {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_121_NUGGET)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_121_FULL_HEAL)
 	setflag(FLAG_ITEM_ROUTE_121_REVIVE)
+	setflag(FLAG_ITEM_ROUTE_121_ZINC)
 	
 	//setflag(FLAG_ITEM_ROUTE_121_ZINC) //currently not behind trainer
 	//setflag(FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP)
@@ -2679,22 +2683,7 @@ script PokemonCenter_2F_Unused_MoveTutor {
 
 
 
-script TradeCenter_EventScript_Psyshock {
-	lock
-	faceplayer
-	checkitem(ITEM_TM_PSYSHOCK)
-	if(var(VAR_RESULT) == FALSE) {
-		msgbox(format("A strange Psychic move that materializes into a physical attack.\pHere, take this TM: Psyshock will hit where your foes least expect it!"), MSGBOX_NPC)
-		closemessage
-		giveitem(ITEM_TM_PSYSHOCK)
-		waitfanfare
-	}
-	else {
-		msgbox(format("You already have Psyshock. Keep catching opponents off guard!"), MSGBOX_NPC)
-	}
-	releaseall
-	end
-}
+
 
 script TradeCenter_EventScript_DrainPunch {
 	lock
