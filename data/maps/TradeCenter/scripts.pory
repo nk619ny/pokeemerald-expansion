@@ -448,7 +448,8 @@ script MauvilleCity_EventScript_Temporary{
 	//setwildbattle(SPECIES_TORNADUS, 50, ITEM_NONE, SPECIES_THUNDURUS, 50, ITEM_NONE)
 	//dowildbattle
 	//pokenavcall
-	trainerbattle_no_intro(TRAINER_HILL_8,LavaridgeTown_Gym_1F_Text_FlanneryDefeat)
+	//goto(Route111_EventScript_PreBattleHealer)
+	//trainerbattle_no_intro(TRAINER_HILL_8,LavaridgeTown_Gym_1F_Text_FlanneryDefeat)
 	//addvar(VAR_LEVEL_CAP,5)
 	//givemon(SPECIES_FERALIGATR,12,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE, MOVE_HIDDEN_POWER)
 	//givemon(SPECIES_FERALIGATR,15,,,,0,,,,,,,,,,,,,,MOVE_ORIGIN_PULSE)
@@ -467,13 +468,12 @@ script MauvilleCity_EventScript_Temporary{
 	//msgbox("adjusted level cap is {STR_VAR_1}")
 	//waitmessage*/
 	//giveitem(ITEM_CHESTO_BERRY,30)
-	setflag(FLAG_REGI_DOORS_OPENED)
-	if(flag(FLAG_NO_TRAINER_BATTLE)){
-		clearflag(FLAG_NO_TRAINER_BATTLE)
-	}
-	else{
-		setflag(FLAG_NO_TRAINER_BATTLE)
-	}
+	//if(flag(FLAG_NO_TRAINER_BATTLE)){
+	//	clearflag(FLAG_NO_TRAINER_BATTLE)
+	//}
+	//else{
+	//	setflag(FLAG_NO_TRAINER_BATTLE)
+	//}
 
 	//givemon(SPECIES_SALAZZLE,60,,,,0,,,,,,,,,,,,,,MOVE_SLUDGE_BOMB,MOVE_SUNSTEEL_STRIKE,MOVE_BITTER_MALICE,MOVE_PURIFY)
 	//givemon(SPECIES_CYNDAQUIL_HISUI,25,,,,1,,,,,,,,,,,,,,MOVE_INFERNAL_PARADE,MOVE_COMBAT_TORQUE,MOVE_THUNDERCLAP,MOVE_NIGHT_DAZE)
@@ -486,11 +486,11 @@ script MauvilleCity_EventScript_Temporary{
 	//givemon(SPECIES_BRAMBLEGHAST,35,,,,0,,,,,,,,,,,,,,MOVE_SUPERPOWER,MOVE_SANDSEAR_STORM)
 	
 	//multi_fixed_2_vs_2(TRAINER_ARCHIE_MT_PYRE, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAXIE_MT_PYRE, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
-	clearflag(FLAG_NO_TRAINER_BATTLE)
+	//clearflag(FLAG_NO_TRAINER_BATTLE)
 	//multi_fixed_2_vs_2(TRAINER_MAGMA_ADMIN_FARM, SlateportFarm_BeatMagmaAdminMultiText, TRAINER_MAGMA_MULTI_GRUNT_FARM, SlateportFarm_BeatMagmaGruntMultiText, PARTNER_AQUA)
     
-	waitmessage
-	closemessage
+	//waitmessage
+	//closemessage
 	releaseall
 	end
 }

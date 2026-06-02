@@ -36,10 +36,12 @@ Route105_EventScript_Luis::
 	msgbox Route105_Text_LuisPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+/*
 Route105_EventScript_Dominik::
 	trainerbattle_single TRAINER_DOMINIK, Route105_Text_DominikIntro, Route105_Text_DominikDefeated
 	msgbox Route105_Text_DominikPostBattle, MSGBOX_AUTOCLOSE
 	end
+*/
 
 Route105_EventScript_Beverly::
 	trainerbattle_single TRAINER_BEVERLY, Route105_Text_BeverlyIntro, Route105_Text_BeverlyDefeated
@@ -127,5 +129,34 @@ script Route105_EventScript_IceSpinnerBeauty {
 		waitfanfare
 	}
 	releaseall
+	end
+}
+
+
+script Route105_EventScript_Dominik {
+    trainerbattle_single(TRAINER_DOMINIK, Route105_Text_DominikIntro, Route105_Text_DominikDefeated, Route105_EventScript_DominikTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route105_EventScript_DominikTryGiveVitamin)
+	msgbox(Route105_Text_DominikPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script Route105_EventScript_DominikTryGiveVitamin {
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("If you want to stay swimming for long periods of time, you need to stay in top shape.\pWith this vitamin, your Pokémon can have endurance like me!"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Ah, just in time!"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_PROTEIN)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_PROTEIN)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("Hmm, you're trying to carry too much stuff while surfing.\pThat's a mistake - drop some weight and come back before I take these vitamins myself!"), MSGBOX_NPC)
+	}
+	release
 	end
 }

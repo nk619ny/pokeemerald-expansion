@@ -256,10 +256,8 @@ Route110_EventScript_AbigailRematch::
 	end
 
 Route110_EventScript_Isabel::
-	trainerbattle_single TRAINER_ISABEL_1, Route110_Text_IsabelIntro, Route110_Text_IsabelDefeated, Route110_EventScript_IsabelRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_IsabelRematch
-	msgbox Route110_Text_IsabelPostBattle, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_ISABEL_1, Route114_Text_CharlotteIntro, Route114_Text_CharlotteDefeat
+	msgbox Route114_Text_CharlottePostBattle, MSGBOX_AUTOCLOSE
 	release
 	end
 

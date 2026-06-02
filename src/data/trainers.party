@@ -6377,7 +6377,7 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DOMINIK === /* Route 105 */ /* TO BE ADDED */
+=== TRAINER_DOMINIK === /* Route 105 */
 Name: DOMINIK
 Class: Swimmer M
 Pic: Swimmer M
@@ -6386,9 +6386,44 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacool
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lickitung  
+Ability: Cloud Nine  
+Level: 58
+Tera Type: Normal  
+- Power Whip  
+- Fire Punch  
+- Body Slam  
+- Belly Drum  
+
+Seaking  
+Ability: Lightning Rod  
+Level: 50
+Tera Type: Water  
+- Megahorn  
+- Flip Turn
+- Waterfall  
+- Drill Run  
+
+
+Dragonair @ Expert Belt  
+Ability: Marvel Scale  
+Level: 55
+Tera Type: Dragon  
+- Aqua Jet  
+- Ice Beam  
+- Thunderbolt  
+- Flamethrower  
+
+Pikachu  
+Ability: Lightning Rod  
+Level: 58  
+Tera Type: Electric  
+- Extreme Speed  
+- Fake Out  
+- Volt Tackle  
+- Play Rough  
+
+
 
 === TRAINER_DOUGLAS === /* Route 106 */ /* TO BE ADDED */
 Name: DOUGLAS
@@ -7204,7 +7239,7 @@ Machoke
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_DAISUKE === /* Route 111 North */ /* TO BE ADDED */
+=== TRAINER_DAISUKE === /* Route 111 North */ 
 Name: DAISUKE
 Class: Black Belt
 Pic: Black Belt
@@ -7213,8 +7248,34 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Makuhita  
+Farfetch’d @ Leek  
+Ability: Defiant  
+Level: 44
+EVs: 252 HP  
+- Revenge  
+- Leaf Blade  
+- Steel Wing  
+- Dual Wingbeat  
+
+Sneasel-Hisui @ Payapa Berry  
+Ability: Inner Focus  
+Level: 44
+- Fake Out  
+- Throat Chop  
+- Shadow Claw  
+- Poison Tail  
+
+Gurdurr  
+Ability: Steelworker  
+Level: 44
+- Double Iron Bash  
+- Bulk Up  
+- Brick Break  
+- Block  
+
+Makuhita  @ Flame Orb
 Ability: Guts  
+Level: 44
 Tera Type: Fighting  
 - Brick Break  
 - Body Slam  
@@ -10815,7 +10876,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Focus Energy
 - Arm Thrust
 
-=== TRAINER_VICTOR === /* Route 111 */ /* TO BE ADDED */
+=== TRAINER_VICTOR === /* Route 111 */ 
 Name: VICTOR
 Class: Winstrate
 Pic: Pokefan M
@@ -10824,13 +10885,30 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Taillow @ Oran Berry
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Lickitung @ Spooky Plate  
+Ability: Oblivious  
+Level: 40
+EVs: 252 HP  
+- Body Slam  
+- Lick  
+- Steel Roller  
+- Wish  
 
-Zigzagoon @ Oran Berry
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Weepinbell @ Salac Berry  
+Ability: Gluttony  
+Level: 40
+- Leech Life  
+- Strength Sap  
+- Giga Drain  
+- Encore  
+
+Mudbray  
+Ability: Inner Focus  
+Level: 40
+- Body Slam  
+- Double Kick  
+- Sand Tomb  
+- Protect  
 
 === TRAINER_MIGUEL_1 === /* Route 103 */ 
 Name: MIGUEL
@@ -11234,7 +11312,7 @@ IVs: 0 Atk
 - Ancient Power  
 
 
-=== TRAINER_VICTORIA === /* Route 111 */ /* TO BE ADDED */
+=== TRAINER_VICTORIA === /* Route 111 */ 
 Name: VICTORIA
 Class: Winstrate
 Pic: Pokefan F
@@ -11243,9 +11321,39 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Roselia @ Oran Berry
-Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Stunfisk  
+Ability: Static  
+Level: 40
+IVs: 0 Atk  
+- Mud Bomb  
+- Muddy Water  
+- Electroweb  
+- Toxic  
+
+Snorunt  
+Ability: Moody  
+Level: 40
+IVs: 0 Atk  
+- Chilling Water  
+- Icy Wind  
+- Fake Tears  
+- Disable  
+
+Herdier  
+Ability: Intimidate  
+Level: 40
+- Pursuit  
+- Return  
+- Thunder Fang  
+- Fire Fang  
+
+Bayleef  
+Ability: Overgrow  
+Level: 40
+- Bullet Seed  
+- Ancient Power  
+- Synthesis  
+- Heal Pulse  
 
 === TRAINER_VANESSA === /* Route 121 */ /* TO BE ADDED */
 Name: VANESSA
@@ -11790,13 +11898,35 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Meditite
-Level: 18
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- High Jump Kick
-- Meditate
-- Confusion
-- Detect
+Medicham @ Medichamite  
+Ability: Pure Power  
+Level: 40
+EVs: 252 HP / 252 SpA  
+- Psycho Boost  
+- Bullet Punch  
+- Drain Punch  
+- Fake Out  
+
+Luxio  
+Ability: Intimidate  
+Level: 40
+- Bite  
+- Thunder Fang  
+- Trailblaze  
+- Ice Fang  
+
+
+Haunter  
+Ability: Levitate  
+Level: 40
+EVs: 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Ominous Wind  
+- Giga Drain  
+- Venoshock  
+- Psychic  
+
 
 === TRAINER_SHELBY_1 === /* Mt chimney */ 
 Name: SHELBY
@@ -21541,17 +21671,31 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Tinkatuff (F)  
+Ability: Mold Breaker  
+Level: 40
+EVs: 128 Atk / 252 Def / 128 SpA  
+- Fake Out  
+- Encore  
+- Metronome  
+- Light Screen  
 
-Shroomish
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Furret  
+Ability: Fur Coat  
+Level: 40
+- Quick Attack  
+- Trailblaze  
+- Zen Headbutt  
+- Ice Punch  
 
-Numel
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Sliggoo  
+Ability: Gooey  
+Level: 40
+IVs: 0 Atk  
+- Acid Armor  
+- Chilling Water  
+- Dragon Breath  
+- Thunderbolt  
 
 === TRAINER_HALEY_2 === /* Route */
 Name: HALEY
@@ -25410,18 +25554,71 @@ Barboach
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CHARLOTTE === /* Route 114 */ /* TO BE ADDED */
+=== TRAINER_CHARLOTTE === /* Route 114 */ 
 Name: CHARLOTTE
-Class: Picnicker
-Pic: Picnicker
+Class: Pokefan
+Pic: Pokefan F
 Gender: Female
-Music: Girl
+Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Nuzleaf
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pikachu @ Light Ball
+Ability: Static  
+Level: 50  
+Tera Type: Electric  
+EVs: 252 HP / 94 Atk / 68 Def / 94 SpA  
+Hasty Nature  
+- Zippy Zap  
+- Pika Papow  
+- Floaty Fall  
+- Splishy Splash  
+
+Eevee @ Expert Belt
+Ability: Adaptability  
+Level: 50  
+Tera Type: Normal  
+EVs: 252 HP / 64 Atk / 64 Def / 128 SpA  
+Lonely Nature  
+- Veevee Volley  
+- Sparkly Swirl  
+- Sizzly Slide  
+- Sappy Seed  
+
+Bulbasaur @ Power Herb  
+Ability: Overgrow  
+Level: 50  
+Tera Type: Grass  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Frenzy Plant  
+- Giga Drain  
+- Sludge Bomb  
+- Weather Ball  
+
+Charmander @ Power Herb  
+Ability: Blaze  
+Level: 50  
+Tera Type: Fire  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Blast Burn  
+- Fire Blast  
+- Draco Meteor  
+
+Squirtle @ Power Herb  
+Ability: Torrent  
+Level: 50  
+Tera Type: Water  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Hydro Cannon  
+- Hydro Pump  
+- Water Spout  
+- Flash Cannon  
 
 === TRAINER_DEANDRE === /* Route 118 */ /* TO BE ADDED */
 Name: DEANDRE
@@ -26256,7 +26453,7 @@ Sandshrew
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_JOSUE === /* Route 105 Surf */
+=== TRAINER_JOSUE === /* Route 105 Surf */ /* TO BE ADDED */
 Name: JOSUE
 Class: Bird Keeper
 Pic: Bird Keeper

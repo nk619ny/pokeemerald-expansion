@@ -343,9 +343,9 @@ Route114_EventScript_Angelina::
 # 172 "data/maps/Route114/scripts.pory"
 Route114_EventScript_Charlotte::
 # 173 "data/maps/Route114/scripts.pory"
-	trainerbattle_single TRAINER_CHARLOTTE, Route114_Text_CharlotteIntro, Route114_Text_CharlotteDefeat
+	trainerbattle_single TRAINER_CHARLOTTE, Route114_Text_CharlotteIntroNew, Route110_Text_IsabelDefeated
 # 174 "data/maps/Route114/scripts.pory"
-	msgbox Route114_Text_CharlottePostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route114_Text_CharlottePostBattleNew, MSGBOX_AUTOCLOSE
 # 175 "data/maps/Route114/scripts.pory"
 	end
 # 176 "data/maps/Route114/scripts.pory"
@@ -412,3 +412,13 @@ Route114_Text_AllMyMonDoesIsSnarlTakeThis::
 	.string "Now it Snarls, too…\n"
 	.string "It's not much improvement.\p"
 	.string "Could you take this TM too?$"
+
+Route114_Text_CharlotteIntroNew::
+# 212 "data/maps/Route114/scripts.pory"
+	.string "These Pokémon have been my favorites\n"
+	.string "for decades!$"
+
+Route114_Text_CharlottePostBattleNew::
+# 216 "data/maps/Route114/scripts.pory"
+	.string "I think there are just too many Pokémon\n"
+	.string "to keep track of nowadays.$"

@@ -47,6 +47,16 @@ void HealPlayerParty(void)
         FlagSet(B_FLAG_TERA_ORB_CHARGED);
 }
 
+void HealPlayerPartyNoRevive(void)
+{
+    u32 i;
+    for (i = 0; i < gPlayerPartyCount; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_HP) > 0)
+            HealPokemon(&gPlayerParty[i]);
+    }
+}
+
 static void HealPlayerBoxes(void)
 {
     int boxId, boxPosition;

@@ -276,6 +276,7 @@ Route111_EventScript_BattleWinstrates::
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
 	msgbox Route111_Text_VictorPostBattle, MSGBOX_DEFAULT
+	call Route111_EventScript_ChooseIfHeal
 	closemessage
 	applymovement LOCALID_ROUTE111_VICTOR, Route111_Movement_WinstrateEnterHouse
 	waitmovement 0
@@ -290,6 +291,7 @@ Route111_EventScript_BattleWinstrates::
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_VictoriaIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VICTORIA, Route111_Text_VictoriaDefeat
+	call Route111_EventScript_ChooseIfHeal
 	applymovement LOCALID_ROUTE111_VICTORIA, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
@@ -308,6 +310,7 @@ Route111_EventScript_BattleWinstrates::
 	call Route111_EventScript_CloseWinstrateDoor
 	msgbox Route111_Text_ViviIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_VIVI, Route111_Text_ViviDefeat
+	call Route111_EventScript_ChooseIfHeal
 	applymovement LOCALID_ROUTE111_VIVI, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	call Route111_EventScript_OpenWinstrateDoor
@@ -839,3 +842,25 @@ text Route111_Text_NoahDefeat {
 text Route111_Text_NoahPostBattle {
     format("My parents get upset the flowers in the garden attract bugs.\pI thought that was the whole point of growing flowers!")
 }
+
+script Route111_EventScript_ChooseIfHeal {
+    lock
+    faceplayer
+    msgbox(format("Do you want your Pokémon healed before the next battle?"), MSGBOX_DEFAULT)
+    dynmultichoice(25, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Do Not Heal", "Heal, No Revive", "Heal and Revive")
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox(format("Oh, alright! You don't get bonus points for style though!"), MSGBOX_DEFAULT)
+			break
+        case 1:
+            msgbox(format("I'll get your Pokémon ready for the next battle!"), MSGBOX_DEFAULT)
+            special(HealPlayerPartyNoRevive)
+        case 2:
+            special(HealPlayerParty)
+            msgbox(format("All of your Pokémon have been fully healed!"), MSGBOX_DEFAULT)
+        default:
+    }
+    return
+}
+
+

@@ -876,29 +876,9 @@ Common_EventScript_CheckIfEliteFourComplete_8:
 MauvilleCity_EventScript_Temporary::
 # 437 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 451 "data/maps/TradeCenter/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_8, LavaridgeTown_Gym_1F_Text_FlanneryDefeat
-# 470 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_REGI_DOORS_OPENED
-# 471 "data/maps/TradeCenter/scripts.pory"
-	goto_if_set FLAG_NO_TRAINER_BATTLE, MauvilleCity_EventScript_Temporary_2
-# 475 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_NO_TRAINER_BATTLE
-MauvilleCity_EventScript_Temporary_1:
-# 489 "data/maps/TradeCenter/scripts.pory"
-	clearflag FLAG_NO_TRAINER_BATTLE
-# 492 "data/maps/TradeCenter/scripts.pory"
-	waitmessage
-# 493 "data/maps/TradeCenter/scripts.pory"
-	closemessage
 # 494 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
-
-MauvilleCity_EventScript_Temporary_2:
-# 472 "data/maps/TradeCenter/scripts.pory"
-	clearflag FLAG_NO_TRAINER_BATTLE
-	goto MauvilleCity_EventScript_Temporary_1
 
 
 Common_EventScipt_CheckForBerryTreeEncounter::

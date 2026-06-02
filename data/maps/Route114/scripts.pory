@@ -170,8 +170,8 @@ Route114_EventScript_Angelina::
 	end
 
 Route114_EventScript_Charlotte::
-	trainerbattle_single TRAINER_CHARLOTTE, Route114_Text_CharlotteIntro, Route114_Text_CharlotteDefeat
-	msgbox Route114_Text_CharlottePostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_CHARLOTTE, Route114_Text_CharlotteIntroNew, Route110_Text_IsabelDefeated
+	msgbox Route114_Text_CharlottePostBattleNew, MSGBOX_AUTOCLOSE
 	end
 
 Route114_EventScript_Kai::
@@ -207,4 +207,12 @@ Route114_Text_LanettesHouse:
 
 text Route114_Text_AllMyMonDoesIsSnarlTakeThis {
 	format("Now it Snarls, too…\nIt's not much improvement.\pCould you take this TM too?")
+}
+
+text Route114_Text_CharlotteIntroNew {
+	format("These Pokémon have been my favorites for decades!")
+}
+
+text Route114_Text_CharlottePostBattleNew {
+	format("I think there are just too many Pokémon to keep track of nowadays.")
 }
