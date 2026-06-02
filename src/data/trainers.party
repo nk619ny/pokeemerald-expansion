@@ -633,22 +633,297 @@ Xatu
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ED === /* Route 123 */ /* TO BE ADDED */
+=== TRAINER_ED === /* Route 123 */ 
 Name: ED
 Class: Collector
 Pic: Collector
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+Party Size: 6
+Pool Rules: Doubles
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zangoose
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Unown
+Level: 66
+Ability: Pure Power
+Tera Type: Flying
+EVs: 252 Atk / 252 SpA
+Adamant Nature
+- Hidden Power
+- Ancient Power
+- Secret Power
 
-Seviper
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Unown-B
+Level: 66
+Ability: Levitate
+Tera Type: Bug
+EVs: 252 Def / 252 SpD
+Bold Nature
+- Hidden Power
+- Earth Power
+- Secret Power
+
+Unown-C
+Level: 66
+Ability: Levitate
+Tera Type: Bug
+EVs: 252 SpD / 252 HP
+Calm Nature
+- Hidden Power
+- Cosmic Power
+- Stored Power
+- Ancient Power
+
+Unown-D
+Level: 66
+Ability: Levitate
+Tera Type: Dragon
+EVs: 252 SpD / 252 Spe
+Docile Nature
+- Hidden Power
+- Secret Power
+- Cosmic Power
+- Ancient Power
+
+Unown-E
+Level: 66
+Ability: Levitate
+Tera Type: Dark
+EVs: 252 SpD / 252 Atk
+Gentle Nature
+- Hidden Power
+- Earth Power
+
+Unown-F
+Level: 66
+Ability: Levitate
+Tera Type: Fairy
+EVs: 252 Atk / 252 Def
+Bashful Nature
+- Hidden Power
+- Secret Power
+- Nature Power
+
+Unown-G
+Level: 66
+Ability: Levitate
+Tera Type: Grass
+EVs: 252 SpD / 252 SpA
+Gentle Nature
+- Hidden Power
+- Earth Power
+- Nature Power
+
+Unown-H
+Level: 66
+Ability: Levitate
+Tera Type: Fire
+EVs: 252 Spe / 252 HP
+Hasty Nature
+- Hidden Power
+- Nature Power
+- Cosmic Power
+
+Unown-I
+Level: 66
+Ability: Levitate
+Tera Type: Ice
+EVs: 128 SpA / 128 Def / 252 Spe
+Impish Nature
+- Hidden Power
+- Mystical Power
+- Cosmic Power
+- Stored Power
+
+Unown-J
+Level: 66
+Ability: Levitate
+Tera Type: Fairy
+EVs: 128 SpA / 128 Spe / 252 HP
+Jolly Nature
+- Hidden Power
+- Ancient Power
+- Earth Power
+
+Unown-K
+Level: 66
+Ability: Levitate
+Tera Type: Fighting
+EVs: 252 SpA / 252 HP
+Quirky Nature
+- Hidden Power
+- Ancient Power
+- Stored Power
+
+Unown-L
+Level: 66
+Ability: Levitate
+Tera Type: Ground
+EVs: 252 Def / 252 SpA
+Lax Nature
+- Hidden Power
+- Ancient Power
+- Cosmic Power
+
+Unown-M
+Level: 66
+Ability: Levitate
+Tera Type: Steel
+EVs: 252 SpA / 252 Spe
+Modest Nature
+- Hidden Power
+- Mystical Power
+- Secret Power
+
+Unown-N
+Level: 66
+Ability: Levitate
+Tera Type: Normal
+EVs: 252 Spe / 252 SpA
+Naive Nature
+- Hidden Power
+- Nature Power
+- Earth Power
+
+Unown-O
+Level: 66
+Ability: Levitate
+Tera Type: Fighting
+EVs: 252 Def / 252 SpA
+Bold Nature
+- Hidden Power
+- Ancient Power
+- Cosmic Power
+
+Unown-P
+Level: 66
+Ability: Pure Power
+Tera Type: Psychic
+EVs: 252 Def / 252 HP
+Impish Nature
+- Hidden Power
+- Nature Power
+- Ancient Power
+
+Unown-Q
+Level: 66
+Ability: Levitate
+Tera Type: Psychic
+EVs: 252 SpA / 252 SpD
+Quiet Nature
+- Hidden Power
+- Secret Power
+
+Unown-R
+Level: 66
+Ability: Levitate
+Tera Type: Rock
+EVs: 252 SpA / 252 Def
+Rash Nature
+- Hidden Power
+- Earth Power
+- Nature Power
+- Cosmic Power
+
+Unown-S
+Level: 66
+Ability: Levitate
+Tera Type: Ghost
+EVs: 252 SpD / 252 SpA
+Sassy Nature
+- Hidden Power
+- Secret Power
+- Stored Power
+- Cosmic Power
+
+Unown-T
+Level: 66
+Ability: Levitate
+Tera Type: Poison
+EVs: 252 Spe / 252 SpD
+Timid Nature
+- Hidden Power
+- Earth Power
+- Secret Power
+
+Unown-U
+Level: 66
+Ability: Levitate
+Tera Type: Ghost
+EVs: 252 Atk / 252 Def
+Naughty Nature
+- Hidden Power
+- Stored Power
+- Ancient Power
+
+Unown-V
+Level: 66
+Ability: Levitate
+Tera Type: Fighting
+EVs: 252 Spe / 252 Atk
+Naive Nature
+- Hidden Power
+- Cosmic Power
+- Stored Power
+
+Unown-W
+Level: 66
+Ability: Levitate
+Tera Type: Water
+EVs: 252 Atk / 252 SpD
+- Hidden Power
+- Ancient Power
+- Secret Power
+
+Unown-X
+Level: 66
+Ability: Levitate
+Tera Type: Fairy
+EVs: 252 Def / 252 Spe
+Lax Nature
+- Hidden Power
+- Secret Power
+- Ancient Power
+
+Unown-Y
+Level: 66
+Ability: Levitate
+Tera Type: Dark
+EVs: 252 Spe / 252 Atk
+Hardy Nature
+- Hidden Power
+- Mystical Power
+
+Unown-Z
+Level: 66
+Ability: Levitate
+Tera Type: Electric
+EVs: 252 HP / 252 Spe
+- Hidden Power
+- Earth Power
+- Cosmic Power
+
+Unown-Exclamation
+Level: 66
+Ability: Pure Power
+Tera Type: Ghost
+EVs: 252 HP / 252 SpD
+Serious Nature
+- Hidden Power
+- Nature Power
+- Mystical Power
+
+Unown-Question
+Level: 66
+Ability: Levitate
+Tera Type: Psychic
+EVs: 252 Spe / 252 SpD
+Timid Nature
+- Hidden Power
+- Secret Power
+- Ancient Power
+- Stored Power
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 === /* Seafloor Cavern */
 Name: GRUNT
@@ -10355,7 +10630,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Slack Off
 - Feint Attack
 
-=== TRAINER_ANNA_AND_MEG_1 === /* Route 117 */ /* TO BE ADDED */
+=== TRAINER_ANNA_AND_MEG_1 === /* Route 117 */ 
 Name: ANNA & MEG
 Class: Sr And Jr
 Pic: Sr And Jr
@@ -10365,20 +10640,60 @@ Double Battle: Yes
 Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Growl
-- Tail Whip
-- Headbutt
-- Odor Sleuth
+Torracat  
+Ability: Blaze 
+Level: 36 
+- Fire Fang  
+- Attract  
+- Dual Chop  
+- Leech Life  
 
-Makuhita
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Focus Energy
-- Arm Thrust
+Litten  
+Ability: Blaze  
+Level: 36
+EVs: 252 HP
+- Fire Fang  
+- Fake Out  
+- Will-O-Wisp  
+- Parting Shot  
+
+Drizzile  
+Ability: Torrent  
+Level: 36
+Tera Type: Ice
+IVs: 0 Atk  
+- Muddy Water  
+- Hidden Power
+- Mud Shot  
+- Whirlpool  
+
+Sobble  
+Ability: Torrent  
+Level: 36
+IVs: 0 Atk  
+EVs: 252 HP
+- Muddy Water  
+- Attract  
+- Chilling Water  
+- Mud Shot  
+
+Quilladin  
+Ability: Overgrow  
+Level: 36
+- Spiky Shield  
+- Grassy Glide  
+- Curse  
+- Power-Up Punch  
+
+Chespin  
+Ability: Overgrow 
+Level: 36
+EVs: 252 HP 
+- Belly Drum  
+- Wood Hammer  
+- Drain Punch  
+- Wide Guard  
+
 
 === TRAINER_CYNTHIA === /* Route */
 Name: CYNTHIA
@@ -10806,6 +11121,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Fezandipiti (M) @ Expert Belt  
 Ability: Toxic Chain  
 Tera Type: Poison  
+Level: 47
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Gunk Shot  
@@ -10815,6 +11131,7 @@ Jolly Nature
 
 Brute Bonnet @ Booster Energy  
 Ability: Protosynthesis  
+Level: 47
 Tera Type: Grass  
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
@@ -10825,6 +11142,7 @@ Adamant Nature
 
 Scrafty @ Scraftinite  
 Ability: Intimidate  
+Level: 47
 Tera Type: Dark  
 EVs: 252 HP / 252 Atk / 4 Spe  
 Adamant Nature  
@@ -10835,6 +11153,7 @@ Adamant Nature
 
 Moltres-Galar @ Sitrus Berry  
 Ability: Berserk  
+Level: 47
 Tera Type: Dark  
 EVs: 4 HP / 252 SpA / 252 Spe  
 Timid Nature  
@@ -11168,22 +11487,56 @@ Adamant Nature
 - Swords Dance  
 
 
-=== TRAINER_HILL_7 === /* Trainer Hill */ /* TO BE ADDED */
-Name: ISABEL
-Class: Pokefan
-Pic: Pokefan F
+=== TRAINER_HILL_7 === /* Trainer Hill */ 
+Name: GRETA
+Class: Arena Tycoon
+Pic: Arena Tycoon Greta
 Gender: Female
-Music: Twins
+Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Plusle @ Oran Berry
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Breloom  @ Focus Sash
+Ability: Effect Spore  
+Level: 76
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Mach Punch  
+- Spore  
+- Swords Dance  
+- Seed Bomb  
 
-Minun @ Oran Berry
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Gengar @ Gengarite  
+Ability: Levitate  
+Level: 76
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Focus Blast  
+- Encore  
+- Shadow Ball  
+- Sludge Bomb  
+
+Chien-Pao @ Chople Berry  
+Ability: Sword of Ruin  
+Level: 76
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Icicle Crash  
+- Protect  
+- Sacred Sword  
+- Throat Chop  
+
+Urshifu @ Focus Sash  
+Ability: Unseen Fist  
+Level: 76
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Sucker Punch  
+- Wicked Blow  
+- Close Combat  
+- Poison Jab  
+
 
 === TRAINER_HILL_8 === /* Trainer Hill */
 Name: ZINNIA
@@ -23812,13 +24165,51 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Spinda
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wooper @ Rindo Berry  
+Ability: Water Absorb  
+Level: 45
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Surf  
+- Ice Beam  
+- Earth Power  
+- Sludge Wave  
 
-Spinda
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wooper-Paldea  
+Ability: Water Absorb  
+Level: 45
+EVs: 252 HP / 252 Atk / 4 SpA  
+Brave Nature  
+- Surf  
+- Poison Jab  
+- Stomping Tantrum  
+- Stealth Rock  
+
+Shellos  
+Ability: Storm Drain  
+Level: 45
+EVs: 252 HP / 4 SpA / 252 SpD  
+Tera Type: Flying
+Calm Nature  
+IVs: 0 Atk  
+- Surf  
+- Hidden Power 
+- Mirror Coat  
+- Recover  
+
+Shellos-East  
+Ability: Storm Drain  
+Level: 45
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Acid Armor  
+- Sludge  
+- Earth Power  
+- Recover  
+
+
 
 === TRAINER_KIM_AND_IRIS === /* Route 125 */ /* Shoal Cave Entrance */ /* TO BE ADDED */
 Name: KIM & IRIS
@@ -29122,9 +29513,60 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Beldum
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Crobat @ Focus Sash  
+Ability: Inner Focus  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Tailwind  
+- Dual Wingbeat  
+- Leech Life  
+- Super Fang  
+
+Slaking @ Leftovers  
+Ability: Comatose  
+- High Horsepower  
+- Facade  
+- Drain Punch  
+- Lash Out  
+
+Lapras  
+Ability: Water Absorb  
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Freeze-Dry  
+- Sparkling Aria  
+- Alluring Voice  
+- Block  
+
+Arcanine @ Normal Gem  
+Ability: Intimidate  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Sacred Fire  
+- Extreme Speed  
+- Morning Sun  
+- Close Combat  
+
+Raikou  
+Ability: Inner Focus  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Aura Sphere  
+- Thunderbolt  
+- Calm Mind  
+- Shadow Ball  
+
+Venusaur @ Venusaurite Z
+Ability: Thick Fat  
+Adamant Nature
+EVs: 252 HP / 252 Atk
+- Power Whip  
+- Stomping Tantrum  
+- Leech Seed  
+- Swords Dance  
+
 
 === TRAINER_GRETA === /* Battle Frontier */ /* TO BE ADDED */
 Name: GRETA

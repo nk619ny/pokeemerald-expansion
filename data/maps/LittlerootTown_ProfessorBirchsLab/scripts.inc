@@ -2993,8 +2993,6 @@ ProfessorBirchsLab_EventScript_RevisedIntroSequence::
 	setflag FLAG_ADVENTURE_STARTED
 # 1427 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setflag FLAG_RESCUED_BIRCH
-# 1428 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
 # 1429 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
 # 1430 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"

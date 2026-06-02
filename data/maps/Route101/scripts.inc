@@ -485,7 +485,7 @@ Route101_EventScript_BirchsBag::
 # 243 "data/maps/Route101/scripts.pory"
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH
 # 244 "data/maps/Route101/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
+	//setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
 # 245 "data/maps/Route101/scripts.pory"
 	setvar VAR_BIRCH_LAB_STATE, 2
 # 246 "data/maps/Route101/scripts.pory"

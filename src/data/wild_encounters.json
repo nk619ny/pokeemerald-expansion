@@ -11133,7 +11133,7 @@
               {
                 "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_HERACROSS"
+                "species": "SPECIES_SIMIPOUR"
               },
               {
                 "min_level": 50,
@@ -11462,7 +11462,7 @@
               {
                 "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_FROGADIER"
+                "species": "SPECIES_SIMIPOUR"
               },
               {
                 "min_level": 50,
@@ -38170,7 +38170,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_STARAPTOR"
+                "species": "SPECIES_THWACKEY"
               },
               {
                 "min_level": 30,
@@ -38269,7 +38269,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_PIDGEOT"
+                "species": "SPECIES_THWACKEY"
               },
               {
                 "min_level": 30,
