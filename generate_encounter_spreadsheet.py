@@ -6,7 +6,7 @@ Reads:
   - src/data/wild_encounters.json       (encounter tables)
   - src/data/region_map/region_map_sections.json (MAPSEC display names)
   - include/constants/region_map_sections.h      (Kanto MAPSEC range)
-  - data/maps/*/map.json                (map→MAPSEC, berry tree detection)
+  - data/maps/*/map.json                (map->MAPSEC, berry tree detection)
 
 Requires: pip install openpyxl
 """
@@ -37,6 +37,23 @@ MAPS_DIR = os.path.join(REPO_ROOT, "data", "maps")
 OUTPUT_FILE = os.path.join(REPO_ROOT, "wild_encounters.xlsx")
 
 # ---------------------------------------------------------------------------
+# Underwater MAPSEC -> Surface MAPSEC merge mapping
+# ---------------------------------------------------------------------------
+UNDERWATER_TO_SURFACE = {
+    "MAPSEC_UNDERWATER_105": "MAPSEC_ROUTE_105",
+    "MAPSEC_UNDERWATER_124": "MAPSEC_ROUTE_124",
+    "MAPSEC_UNDERWATER_125": "MAPSEC_ROUTE_125",
+    "MAPSEC_UNDERWATER_126": "MAPSEC_ROUTE_126",
+    "MAPSEC_UNDERWATER_127": "MAPSEC_ROUTE_127",
+    "MAPSEC_UNDERWATER_128": "MAPSEC_ROUTE_128",
+    "MAPSEC_UNDERWATER_129": "MAPSEC_ROUTE_129",
+    "MAPSEC_UNDERWATER_SOOTOPOLIS": "MAPSEC_SOOTOPOLIS_CITY",
+    "MAPSEC_UNDERWATER_SEAFLOOR_CAVERN": "MAPSEC_SEAFLOOR_CAVERN",
+    "MAPSEC_UNDERWATER_SEALED_CHAMBER": "MAPSEC_SEALED_CHAMBER",
+    "MAPSEC_UNDERWATER_MARINE_CAVE": "MAPSEC_MARINE_CAVE",
+}
+
+# ---------------------------------------------------------------------------
 # Aesthetic form grouping
 # ---------------------------------------------------------------------------
 AESTHETIC_BASES = {
@@ -44,7 +61,6 @@ AESTHETIC_BASES = {
     "SHELLOS", "GASTRODON", "MAUSHOLD", "DUDUNSPARCE", "TATSUGIRI",
 }
 
-# Suffixes that indicate battle-relevant forms (NOT aesthetic)
 BATTLE_FORM_SUFFIXES = {"MEGA", "GMAX", "PRIMAL"}
 
 
@@ -55,10 +71,9 @@ def get_aesthetic_base(species_name):
     """
     parts = species_name.split("_")
     if parts[0] in AESTHETIC_BASES:
-        # Check if any part is a battle-relevant suffix
         for p in parts[1:]:
             if p in BATTLE_FORM_SUFFIXES:
-                return None  # This is a Mega/GMax form, treat separately
+                return None
         return parts[0]
     return None
 
@@ -116,7 +131,29 @@ SPECIAL_NAMES = {
     "OGERPON_CORNERSTONE_MASK": "Ogerpon (Cornerstone)",
 }
 
-# Known regional/form suffixes to format nicely
+# Special display name overrides applied AFTER normal formatting
+# These apply globally to any encounter table
+DISPLAY_NAME_OVERRIDES = {
+    "SPECIES_LYCANROC_MIDNIGHT": "Lycanroc Dusk / Midnight",
+}
+
+# Per-MAPSEC species display overrides: {mapsec: {species_raw: display_name}}
+# Applied only to the rock_smash table for that MAPSEC
+MAPSEC_ROCK_SMASH_OVERRIDES = {
+    "MAPSEC_ROUTE_114": {
+        "SPECIES_SOLROCK": "Solrock / Lunatone",
+        "SPECIES_TYRUNT": "Tyrunt / Amaura",
+    },
+}
+
+# Per-MAPSEC species display overrides applied to ALL table types for that MAPSEC
+# {mapsec: {species_raw: display_name}}
+MAPSEC_SPECIES_OVERRIDES = {
+    "MAPSEC_CAVE_OF_ORIGIN": {
+        "SPECIES_FLOETTE_ETERNAL": "Floette Eternal",
+    },
+}
+
 FORM_SUFFIXES = {
     "ALOLA": "Alolan",
     "GALAR": "Galarian",
@@ -149,21 +186,21 @@ FORM_SUFFIXES = {
 
 def format_species_name(raw):
     """Convert SPECIES_XYZ to a display name."""
+    # Check global overrides first
+    if raw in DISPLAY_NAME_OVERRIDES:
+        return DISPLAY_NAME_OVERRIDES[raw]
+
     name = raw.replace("SPECIES_", "")
 
-    # Check aesthetic grouping first
     aesthetic_base = get_aesthetic_base(name)
     if aesthetic_base is not None:
-        # Return the base species name nicely formatted
         if aesthetic_base == "FLABEBE":
             return "Flab\u00e9b\u00e9"
         return aesthetic_base.capitalize()
 
-    # Check special names dict
     if name in SPECIAL_NAMES:
         return SPECIAL_NAMES[name]
 
-    # Try to detect form suffixes (work backwards from longest known suffixes)
     for suffix_key, suffix_display in sorted(FORM_SUFFIXES.items(), key=lambda x: -len(x[0])):
         if name.endswith("_" + suffix_key):
             base = name[: -(len(suffix_key) + 1)]
@@ -175,11 +212,8 @@ def format_species_name(raw):
 
 def format_base_name(name):
     """Format a base species name: Title case, handle special characters."""
-    # Check if the base name itself is in special names
     if name in SPECIAL_NAMES:
         return SPECIAL_NAMES[name]
-
-    # Title case with underscore → space
     parts = name.split("_")
     formatted_parts = []
     for part in parts:
@@ -189,11 +223,7 @@ def format_base_name(name):
 
 
 def get_grouping_key(raw):
-    """
-    Return the key used to group/aggregate a species.
-    For aesthetic forms, returns the base (e.g. SPECIES_SHELLOS for both WEST/EAST).
-    For others, returns raw as-is.
-    """
+    """Return the key used to group/aggregate a species."""
     name = raw.replace("SPECIES_", "")
     aesthetic_base = get_aesthetic_base(name)
     if aesthetic_base is not None:
@@ -205,7 +235,7 @@ def get_grouping_key(raw):
 # Data loading
 # ---------------------------------------------------------------------------
 def load_mapsec_names():
-    """Load MAPSEC id → display name from region_map_sections.json."""
+    """Load MAPSEC id -> display name from region_map_sections.json."""
     with open(REGION_MAP_JSON, "r", encoding="utf-8") as f:
         data = json.load(f)
     mapping = {}
@@ -220,17 +250,14 @@ def load_mapsec_names():
 
 def load_kanto_mapsecs(ordered_ids):
     """Determine the set of Kanto/FRLG MAPSECs to exclude."""
-    # From the header: KANTO_MAPSEC_START = MAPSEC_PALLET_TOWN, KANTO_MAPSEC_END = MAPSEC_SPECIAL_AREA
     try:
         start_idx = ordered_ids.index("MAPSEC_PALLET_TOWN")
         end_idx = ordered_ids.index("MAPSEC_SPECIAL_AREA")
         return set(ordered_ids[start_idx : end_idx + 1])
     except ValueError:
-        # Fallback: parse the header file
         kanto_set = set()
         with open(REGION_MAP_H, "r", encoding="utf-8") as f:
             content = f.read()
-        # Find all MAPSEC between PALLET_TOWN and SPECIAL_AREA in the enum
         in_kanto = False
         for line in content.splitlines():
             line = line.strip().rstrip(",")
@@ -246,16 +273,11 @@ def load_kanto_mapsecs(ordered_ids):
 
 
 def load_map_data(kanto_mapsecs):
-    """
-    Scan all map.json files. Returns:
-      map_id_to_info: {MAP_ID: {mapsec, name, has_berry_tree}}
-    Excludes FRLG maps.
-    """
+    """Scan all map.json files. Returns map_id_to_info dict. Excludes FRLG maps."""
     map_id_to_info = {}
     map_json_pattern = os.path.join(MAPS_DIR, "*", "map.json")
     for path in glob.glob(map_json_pattern):
         folder_name = os.path.basename(os.path.dirname(path))
-        # Skip FRLG folders
         if folder_name.endswith("_Frlg"):
             continue
         with open(path, "r", encoding="utf-8") as f:
@@ -263,26 +285,18 @@ def load_map_data(kanto_mapsecs):
                 data = json.load(f)
             except json.JSONDecodeError:
                 continue
-
         map_id = data.get("id", "")
         mapsec = data.get("region_map_section", "")
         map_name = data.get("name", folder_name)
-
-        # Skip maps with Kanto MAPSECs
         if mapsec in kanto_mapsecs:
             continue
-
-        # Skip maps with FRLG region field
         if data.get("region") == "REGION_KANTO":
             continue
-
-        # Check for berry trees
         has_berry = False
         for obj in data.get("object_events", []):
             if obj.get("graphics_id") == "OBJ_EVENT_GFX_BERRY_TREE":
                 has_berry = True
                 break
-
         map_id_to_info[map_id] = {
             "mapsec": mapsec,
             "name": map_name,
@@ -295,19 +309,14 @@ def load_encounters():
     """Load wild_encounters.json and return encounter rates + encounter entries."""
     with open(WILD_ENCOUNTERS_JSON, "r", encoding="utf-8") as f:
         data = json.load(f)
-
-    # Find the gWildMonHeaders group (for_maps=true)
     main_group = None
     for group in data["wild_encounter_groups"]:
         if group.get("for_maps") is True and group["label"] == "gWildMonHeaders":
             main_group = group
             break
-
     if main_group is None:
         print("ERROR: Could not find gWildMonHeaders encounter group")
         sys.exit(1)
-
-    # Extract encounter rates
     rates = {}
     fishing_groups = {}
     for field in main_group["fields"]:
@@ -315,85 +324,80 @@ def load_encounters():
         rates[ftype] = field["encounter_rates"]
         if ftype == "fishing_mons" and "groups" in field:
             fishing_groups = field["groups"]
-
     return rates, fishing_groups, main_group["encounters"]
 
 
 # ---------------------------------------------------------------------------
-# Encounter processing
+# Encounter processing   (Night = Day duplication, underwater merge, overrides)
 # ---------------------------------------------------------------------------
-def aggregate_species(mons_list, rate_list, slot_indices=None):
+def aggregate_species(slots, rates, rock_smash_overrides=None, overrides=None):
+    """Aggregate encounter slots into {display_name: probability}."""
+    total_rate = sum(rates)
+    if total_rate == 0:
+        return {}
+    species_prob = {}
+    for slot, rate_val in zip(slots, rates):
+        sp = slot["species"]
+        display = format_species_name(sp)
+        if overrides and sp in overrides:
+            display = overrides[sp]
+        if rock_smash_overrides and sp in rock_smash_overrides:
+            display = rock_smash_overrides[sp]
+        species_prob[display] = species_prob.get(display, 0.0) + rate_val / total_rate
+    # Merge aesthetic forms
+    grouped = {}
+    for display, prob in species_prob.items():
+        key = get_grouping_key(display)
+        grouped[key] = grouped.get(key, 0.0) + prob
+    return grouped
+
+
+def process_encounters(encounters, rates, fishing_groups, map_id_to_info,
+                       mapsec_names, kanto_mapsecs):
     """
-    Sum encounter rates for each species across the given slots.
-    Returns sorted list of (display_name, total_rate).
+    Build mapsec_data: {mapsec: {map_name: {encounter_type: {species: prob}}}}.
+
+    The JSON has separate encounter entries for Day and Night per map,
+    distinguished by base_label ending in _Day or _Night.
+    - Land/Surf Day subtables use the _Day entry.
+    - Land/Surf Night subtables use the _Night entry.
+    - Fishing and Rock Smash always use the _Day entry.
+    - If no _Night entry exists for Land/Surf but _Day does, duplicate Day→Night.
+
+    Also applies:
+      - Underwater MAPSEC merging into surface MAPSEC
+      - Rock smash display name overrides per MAPSEC
     """
-    if not mons_list or not rate_list:
-        return []
+    fishing_rate_keys = ["old_rod", "good_rod", "super_rod"]
+    if fishing_groups:
+        fishing_rate_keys = list(fishing_groups.keys())
 
-    species_totals = defaultdict(float)
-
-    indices = slot_indices if slot_indices is not None else range(len(mons_list))
-
-    for i in indices:
-        if i >= len(mons_list) or i >= len(rate_list):
-            continue
-        raw_species = mons_list[i]["species"]
-        grouping_key = get_grouping_key(raw_species)
-        display_name = format_species_name(raw_species)
-        # Use grouping_key for aggregation, but we need to map key→display
-        species_totals[(grouping_key, display_name)] += rate_list[i]
-
-    # Merge by grouping_key (in case different raw names map to same group)
-    merged = defaultdict(float)
-    key_to_display = {}
-    for (gkey, dname), total in species_totals.items():
-        merged[gkey] += total
-        key_to_display[gkey] = dname  # last one wins, but they should all be same
-
-    # Build result list
-    result = [(key_to_display[gkey], total) for gkey, total in merged.items()]
-
-    # Sort: highest probability first, then alphabetically for ties
-    result.sort(key=lambda x: (-x[1], x[0]))
-    return result
-
-
-def process_encounters(rates, fishing_groups, encounters, map_id_to_info):
-    """
-    Process all encounters into a structure grouped by MAPSEC.
-    Returns: {mapsec: [{map_name, has_berry, land_day, land_night, surf_day, surf_night,
-                         old_rod, good_rod, super_rod, rock_smash}, ...]}
-    """
-    # Group encounters by map_id
-    map_encounters = defaultdict(dict)  # map_id -> {day: entry, night: entry}
+    # Group encounter entries by map_id into day/night
+    map_encounters = defaultdict(dict)
     for entry in encounters:
-        map_id = entry["map"]
-        label = entry.get("base_label", "")
-
-        # Skip FRLG maps
-        if map_id.endswith("_FRLG"):
-            continue
-        # Skip maps not in our map data (i.e., filtered-out Kanto maps)
+        map_id = entry.get("map", "")
         if map_id not in map_id_to_info:
             continue
-
-        if label.endswith("_Day"):
-            map_encounters[map_id]["day"] = entry
-        elif label.endswith("_Night"):
+        label = entry.get("base_label", "")
+        if label.endswith("_Night"):
             map_encounters[map_id]["night"] = entry
+        elif label.endswith("_Day"):
+            map_encounters[map_id]["day"] = entry
         # Skip _Evening entries
 
-    # Now build per-MAPSEC data
-    mapsec_data = defaultdict(list)
+    mapsec_data = {}
 
     for map_id, entries in map_encounters.items():
         info = map_id_to_info[map_id]
         mapsec = info["mapsec"]
+        map_name = info["name"]
+        if mapsec in kanto_mapsecs:
+            continue
 
         day_entry = entries.get("day", {})
         night_entry = entries.get("night", {})
 
-        # Check if this map has any encounters at all
+        # Check if this map has any encounter data at all
         has_any = False
         for enc_type in ["land_mons", "water_mons", "rock_smash_mons", "fishing_mons"]:
             if enc_type in day_entry or enc_type in night_entry:
@@ -402,83 +406,107 @@ def process_encounters(rates, fishing_groups, encounters, map_id_to_info):
         if not has_any:
             continue
 
-        map_data = {
-            "map_name": info["name"],
-            "map_id": map_id,
-            "has_berry": info["has_berry_tree"],
-        }
+        # Determine overrides for this MAPSEC
+        rs_overrides = MAPSEC_ROCK_SMASH_OVERRIDES.get(mapsec)
+        ms_overrides = MAPSEC_SPECIES_OVERRIDES.get(mapsec)
 
-        # Land encounters
+        encounter_dict = {}
         land_rate = rates.get("land_mons", [])
+        water_rate = rates.get("water_mons", [])
+
+        # --- Land (Day from _Day entry, Night from _Night entry) ---
         day_land = day_entry.get("land_mons", {}).get("mons", [])
         night_land = night_entry.get("land_mons", {}).get("mons", [])
-        map_data["land_day"] = aggregate_species(day_land, land_rate) if day_land else []
-        map_data["land_night"] = aggregate_species(night_land, land_rate) if night_land else []
+        land_day_agg = aggregate_species(day_land, land_rate, overrides=ms_overrides) if day_land else {}
+        land_night_agg = aggregate_species(night_land, land_rate, overrides=ms_overrides) if night_land else {}
+        if not land_night_agg and land_day_agg:
+            land_night_agg = dict(land_day_agg)
+        if land_day_agg:
+            encounter_dict["land_day"] = land_day_agg
+        if land_night_agg:
+            encounter_dict["land_night"] = land_night_agg
 
-        # Surf (water) encounters
-        water_rate = rates.get("water_mons", [])
+        # --- Surf (Day from _Day entry, Night from _Night entry) ---
         day_water = day_entry.get("water_mons", {}).get("mons", [])
         night_water = night_entry.get("water_mons", {}).get("mons", [])
-        map_data["surf_day"] = aggregate_species(day_water, water_rate) if day_water else []
-        map_data["surf_night"] = aggregate_species(night_water, water_rate) if night_water else []
+        surf_day_agg = aggregate_species(day_water, water_rate, overrides=ms_overrides) if day_water else {}
+        surf_night_agg = aggregate_species(night_water, water_rate, overrides=ms_overrides) if night_water else {}
+        if not surf_night_agg and surf_day_agg:
+            surf_night_agg = dict(surf_day_agg)
+        if surf_day_agg:
+            encounter_dict["surf_day"] = surf_day_agg
+        if surf_night_agg:
+            encounter_dict["surf_night"] = surf_night_agg
 
-        # Rock Smash - day only
-        rock_rate = rates.get("rock_smash_mons", [])
+        # --- Rock Smash (always from _Day entry) ---
+        rs_rate = rates.get("rock_smash_mons", [])
         day_rock = day_entry.get("rock_smash_mons", {}).get("mons", [])
-        map_data["rock_smash"] = aggregate_species(day_rock, rock_rate) if day_rock else []
+        rs_agg = aggregate_species(day_rock, rs_rate, rs_overrides, overrides=ms_overrides) if day_rock else {}
+        if rs_agg:
+            encounter_dict["rock_smash"] = rs_agg
 
-        # Fishing - day only
+        # --- Fishing (always from _Day entry) ---
         fish_rate = rates.get("fishing_mons", [])
         day_fish = day_entry.get("fishing_mons", {}).get("mons", [])
-        if day_fish:
-            old_rod_indices = fishing_groups.get("old_rod", list(range(0, 10)))
-            good_rod_indices = fishing_groups.get("good_rod", list(range(10, 20)))
-            super_rod_indices = fishing_groups.get("super_rod", list(range(20, 30)))
-            map_data["old_rod"] = aggregate_species(day_fish, fish_rate, old_rod_indices)
-            map_data["good_rod"] = aggregate_species(day_fish, fish_rate, good_rod_indices)
-            map_data["super_rod"] = aggregate_species(day_fish, fish_rate, super_rod_indices)
-        else:
-            map_data["old_rod"] = []
-            map_data["good_rod"] = []
-            map_data["super_rod"] = []
+        if day_fish and fish_rate:
+            group_size = 10
+            for gi, group_key in enumerate(fishing_rate_keys):
+                start = gi * group_size
+                end = start + group_size
+                sub_slots = day_fish[start:end]
+                sub_rates = fish_rate[start:end]
+                if sub_slots:
+                    agg = aggregate_species(sub_slots, sub_rates, overrides=ms_overrides)
+                    if agg:
+                        encounter_dict["fish_" + group_key] = agg
 
-        mapsec_data[mapsec].append(map_data)
+        if encounter_dict:
+            if mapsec not in mapsec_data:
+                mapsec_data[mapsec] = {}
+            mapsec_data[mapsec][map_name] = encounter_dict
 
-    # Sort maps within each MAPSEC alphabetically by map_name
-    for mapsec in mapsec_data:
-        mapsec_data[mapsec].sort(key=lambda x: x["map_name"])
+    # --- Merge underwater into surface ---
+    for uw_mapsec, surface_mapsec in UNDERWATER_TO_SURFACE.items():
+        if uw_mapsec in mapsec_data:
+            if surface_mapsec not in mapsec_data:
+                mapsec_data[surface_mapsec] = {}
+            for map_name, enc_dict in mapsec_data[uw_mapsec].items():
+                uw_label = map_name + " (Underwater)"
+                mapsec_data[surface_mapsec][uw_label] = enc_dict
+            del mapsec_data[uw_mapsec]
 
     return mapsec_data
 
 
+
 # ---------------------------------------------------------------------------
-# Color definitions
+# Color definitions (per-subtable pastel fills)
 # ---------------------------------------------------------------------------
-# Headers
+# Table group headers
 LAND_HEADER_FILL = PatternFill(start_color="7A9A3A", end_color="7A9A3A", fill_type="solid")
+ROCK_HEADER_FILL = PatternFill(start_color="A0845C", end_color="A0845C", fill_type="solid")
 FISH_HEADER_FILL = PatternFill(start_color="2E8B8B", end_color="2E8B8B", fill_type="solid")
 SURF_HEADER_FILL = PatternFill(start_color="4A7FAF", end_color="4A7FAF", fill_type="solid")
-ROCK_HEADER_FILL = PatternFill(start_color="A0845C", end_color="A0845C", fill_type="solid")
 
 # Sub-headers
 LAND_DAY_SUBHEADER = PatternFill(start_color="B5CC6A", end_color="B5CC6A", fill_type="solid")
 LAND_NIGHT_SUBHEADER = PatternFill(start_color="5A7D2A", end_color="5A7D2A", fill_type="solid")
-SURF_DAY_SUBHEADER = PatternFill(start_color="7AB8D9", end_color="7AB8D9", fill_type="solid")
-SURF_NIGHT_SUBHEADER = PatternFill(start_color="3A6B8F", end_color="3A6B8F", fill_type="solid")
+ROCK_SUBHEADER = PatternFill(start_color="C4A97D", end_color="C4A97D", fill_type="solid")
 OLD_ROD_SUBHEADER = PatternFill(start_color="66CDAA", end_color="66CDAA", fill_type="solid")
 GOOD_ROD_SUBHEADER = PatternFill(start_color="48B0A0", end_color="48B0A0", fill_type="solid")
 SUPER_ROD_SUBHEADER = PatternFill(start_color="2E8B7A", end_color="2E8B7A", fill_type="solid")
-ROCK_SUBHEADER = PatternFill(start_color="C4A97D", end_color="C4A97D", fill_type="solid")
+SURF_DAY_SUBHEADER = PatternFill(start_color="7AB8D9", end_color="7AB8D9", fill_type="solid")
+SURF_NIGHT_SUBHEADER = PatternFill(start_color="3A6B8F", end_color="3A6B8F", fill_type="solid")
 
-# Data cells
+# Data cell fills
 LAND_DAY_FILL = PatternFill(start_color="E8F5C8", end_color="E8F5C8", fill_type="solid")
 LAND_NIGHT_FILL = PatternFill(start_color="C8DFA0", end_color="C8DFA0", fill_type="solid")
-SURF_DAY_FILL = PatternFill(start_color="D6EEFC", end_color="D6EEFC", fill_type="solid")
-SURF_NIGHT_FILL = PatternFill(start_color="B0D4EE", end_color="B0D4EE", fill_type="solid")
+ROCK_FILL = PatternFill(start_color="F0E0C8", end_color="F0E0C8", fill_type="solid")
 OLD_ROD_FILL = PatternFill(start_color="D4F5EC", end_color="D4F5EC", fill_type="solid")
 GOOD_ROD_FILL = PatternFill(start_color="BDE8DC", end_color="BDE8DC", fill_type="solid")
 SUPER_ROD_FILL = PatternFill(start_color="A6DDD0", end_color="A6DDD0", fill_type="solid")
-ROCK_FILL = PatternFill(start_color="F0E0C8", end_color="F0E0C8", fill_type="solid")
+SURF_DAY_FILL = PatternFill(start_color="D6EEFC", end_color="D6EEFC", fill_type="solid")
+SURF_NIGHT_FILL = PatternFill(start_color="B0D4EE", end_color="B0D4EE", fill_type="solid")
 
 MAP_NAME_FILL = PatternFill(start_color="3C3C3C", end_color="3C3C3C", fill_type="solid")
 
@@ -502,33 +530,81 @@ CENTER_ALIGN = Alignment(horizontal="center", vertical="center")
 LEFT_ALIGN = Alignment(horizontal="left", vertical="center")
 WRAP_ALIGN = Alignment(horizontal="left", vertical="center", wrap_text=True)
 
+
 # ---------------------------------------------------------------------------
-# Column layout
+# Dynamic column layout (with gap columns between table groups)
 # ---------------------------------------------------------------------------
-# Land: cols 1-4 (A-D)       | Day name, Day%, Night name, Night%
-# Gap:  col 5 (E)
-# Fish: cols 6-11 (F-K)      | OldRod name, %, GoodRod name, %, SuperRod name, %
-# Gap:  col 12 (L)
-# Surf: cols 13-16 (M-P)     | Day name, Day%, Night name, Night%
-# Gap:  col 17 (Q)
-# Rock: cols 18-19 (R-S)     | Name, %
-# Gap:  col 20 (T)
-# Note: col 21 (U)
+# Table group definitions in display order: Land -> Rock Smash -> Fishing -> Surf
+# Each: (group_key, header_title, header_fill,
+#         [(data_key, sub_label, sub_header_fill, sub_header_font, data_fill), ...])
+TABLE_DEFS = [
+    ("land", "Land Encounters", LAND_HEADER_FILL, [
+        ("land_day", "Day", LAND_DAY_SUBHEADER, SUBHEADER_FONT_DARK, LAND_DAY_FILL),
+        ("land_night", "Night", LAND_NIGHT_SUBHEADER, SUBHEADER_FONT, LAND_NIGHT_FILL),
+    ]),
+    ("rock", "Cut Tree / Rock Smash", ROCK_HEADER_FILL, [
+        ("rock_smash", "", ROCK_SUBHEADER, SUBHEADER_FONT, ROCK_FILL),
+    ]),
+    ("fish", "Fishing Encounters", FISH_HEADER_FILL, [
+        ("fish_old_rod", "Old Rod", OLD_ROD_SUBHEADER, SUBHEADER_FONT_DARK, OLD_ROD_FILL),
+        ("fish_good_rod", "Good Rod", GOOD_ROD_SUBHEADER, SUBHEADER_FONT, GOOD_ROD_FILL),
+        ("fish_super_rod", "Super Rod", SUPER_ROD_SUBHEADER, SUBHEADER_FONT, SUPER_ROD_FILL),
+    ]),
+    ("surf", "Surf Encounters", SURF_HEADER_FILL, [
+        ("surf_day", "Day", SURF_DAY_SUBHEADER, SUBHEADER_FONT_DARK, SURF_DAY_FILL),
+        ("surf_night", "Night", SURF_NIGHT_SUBHEADER, SUBHEADER_FONT, SURF_NIGHT_FILL),
+    ]),
+]
 
-COL_LAND_START = 1
-COL_LAND_END = 4
-COL_FISH_START = 6
-COL_FISH_END = 11
-COL_SURF_START = 13
-COL_SURF_END = 16
-COL_ROCK_START = 18
-COL_ROCK_END = 19
-COL_NOTE = 21
+
+def compute_layout(mapsec_maps):
+    """
+    Determine which table groups are present across all maps in a MAPSEC.
+    Returns (layout, note_col, last_col).
+    layout: [(header_title, header_fill, start_col, end_col, sub_info)]
+    sub_info: [(data_key, sub_label, sub_header_fill, sub_header_font,
+                data_fill, name_col, pct_col)]
+    """
+    present_keys = set()
+    for enc_dict in mapsec_maps.values():
+        present_keys.update(enc_dict.keys())
+
+    layout = []
+    col = 1
+    first_table = True
+
+    for _gkey, header_title, header_fill, sub_defs in TABLE_DEFS:
+        active = [(dk, sl, shf, shfont, df)
+                  for dk, sl, shf, shfont, df in sub_defs
+                  if dk in present_keys]
+        if not active:
+            continue
+
+        if not first_table:
+            col += 1  # gap column
+
+        start = col
+        sub_info = []
+        for dk, sl, shf, shfont, df in active:
+            sub_info.append((dk, sl, shf, shfont, df, col, col + 1))
+            col += 2
+        end = col - 1
+
+        layout.append((header_title, header_fill, start, end, sub_info))
+        first_table = False
+
+    note_col = (col + 1) if layout else 1
+    last_col = note_col
+    return layout, note_col, last_col
 
 
-def write_subtable_data(ws, start_row, col_name, col_pct, data_list, fill, max_rows):
-    """Write species/percentage data into a pair of columns."""
-    for i, (species, pct) in enumerate(data_list):
+# ---------------------------------------------------------------------------
+# Spreadsheet writing helpers
+# ---------------------------------------------------------------------------
+def write_subtable_data(ws, start_row, col_name, col_pct, data_dict, fill, max_rows):
+    """Write species/percentage data into a pair of columns with uniform fill."""
+    sorted_species = sorted(data_dict.items(), key=lambda x: (-x[1], x[0]))
+    for i, (species, prob) in enumerate(sorted_species):
         row = start_row + i
         cell_name = ws.cell(row=row, column=col_name, value=species)
         cell_name.font = DATA_FONT
@@ -536,14 +612,14 @@ def write_subtable_data(ws, start_row, col_name, col_pct, data_list, fill, max_r
         cell_name.border = THIN_BORDER
         cell_name.alignment = LEFT_ALIGN
 
-        cell_pct = ws.cell(row=row, column=col_pct, value=f"{pct:.0f}%")
+        cell_pct = ws.cell(row=row, column=col_pct, value=f"{prob * 100:.0f}%")
         cell_pct.font = PCT_FONT
         cell_pct.fill = fill
         cell_pct.border = THIN_BORDER
         cell_pct.alignment = CENTER_ALIGN
 
-    # Fill remaining empty rows with fill color for consistent look
-    for i in range(len(data_list), max_rows):
+    # Fill remaining empty rows with background color for consistent look
+    for i in range(len(sorted_species), max_rows):
         row = start_row + i
         for col in (col_name, col_pct):
             cell = ws.cell(row=row, column=col)
@@ -551,124 +627,86 @@ def write_subtable_data(ws, start_row, col_name, col_pct, data_list, fill, max_r
             cell.border = THIN_BORDER
 
 
-def write_map_section(ws, row, map_data):
+def write_map_section(ws, row, map_name, encounter_dict, layout, note_col,
+                      last_col, map_id_to_info):
     """
-    Write a single map's encounter section starting at the given row.
+    Write a single map's encounter section (map name, headers, sub-headers, data).
     Returns the next available row after this section.
     """
-    # Compute max data rows needed across all tables
-    table_heights = [
-        max(len(map_data["land_day"]), len(map_data["land_night"])),
-        max(len(map_data["old_rod"]), len(map_data["good_rod"]), len(map_data["super_rod"])),
-        max(len(map_data["surf_day"]), len(map_data["surf_night"])),
-        len(map_data["rock_smash"]),
-    ]
+    # Check which table groups this map actually has
+    map_keys = set(encounter_dict.keys())
 
-    # Check which tables are present
-    has_land = bool(map_data["land_day"] or map_data["land_night"])
-    has_fish = bool(map_data["old_rod"] or map_data["good_rod"] or map_data["super_rod"])
-    has_surf = bool(map_data["surf_day"] or map_data["surf_night"])
-    has_rock = bool(map_data["rock_smash"])
+    # Compute max data rows across all present sub-columns
+    max_data_rows = 0
+    for _htitle, _hfill, _sc, _ec, sub_info in layout:
+        for dk, _sl, _shf, _shfont, _df, _nc, _pc in sub_info:
+            max_data_rows = max(max_data_rows, len(encounter_dict.get(dk, {})))
 
-    max_data_rows = max(table_heights) if any(table_heights) else 0
     if max_data_rows == 0:
         return row
 
-    # ---- Row 1: Map name ----
-    map_name_row = row
-    # Merge across all table columns
-    ws.merge_cells(start_row=map_name_row, start_column=1, end_row=map_name_row, end_column=COL_NOTE)
-    cell = ws.cell(row=map_name_row, column=1, value=map_data["map_name"])
+    # ---- Row 1: Map name bar ----
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=last_col)
+    cell = ws.cell(row=row, column=1, value=map_name.replace("_", " "))
     cell.font = MAP_NAME_FONT
     cell.fill = MAP_NAME_FILL
     cell.alignment = CENTER_ALIGN
     row += 1
 
-    # ---- Row 2: Table title headers ----
-    title_row = row
+    # Determine which layout groups this map has data for
+    def map_has_group(sub_info):
+        return any(dk in map_keys for dk, *_ in sub_info)
 
-    def write_title(start_col, end_col, title, fill):
-        ws.merge_cells(start_row=title_row, start_column=start_col, end_row=title_row, end_column=end_col)
-        cell = ws.cell(row=title_row, column=start_col, value=title)
+    # ---- Row 2: Table title headers (per-map, only for present groups) ----
+    title_row = row
+    for htitle, hfill, sc, ec, sub_info in layout:
+        if not map_has_group(sub_info):
+            continue
+        ws.merge_cells(start_row=title_row, start_column=sc, end_row=title_row, end_column=ec)
+        cell = ws.cell(row=title_row, column=sc, value=htitle)
         cell.font = HEADER_FONT
-        cell.fill = fill
+        cell.fill = hfill
         cell.alignment = CENTER_ALIGN
         cell.border = THIN_BORDER
-        # Fill all merged cells
-        for c in range(start_col, end_col + 1):
-            ws.cell(row=title_row, column=c).fill = fill
+        for c in range(sc, ec + 1):
+            ws.cell(row=title_row, column=c).fill = hfill
             ws.cell(row=title_row, column=c).border = THIN_BORDER
-
-    if has_land:
-        write_title(COL_LAND_START, COL_LAND_END, "Land Encounters", LAND_HEADER_FILL)
-    if has_fish:
-        write_title(COL_FISH_START, COL_FISH_END, "Fishing Encounters", FISH_HEADER_FILL)
-    if has_surf:
-        write_title(COL_SURF_START, COL_SURF_END, "Surf Encounters", SURF_HEADER_FILL)
-    if has_rock:
-        write_title(COL_ROCK_START, COL_ROCK_END, "Cut Tree / Rock Smash", ROCK_HEADER_FILL)
-
     row += 1
 
-    # ---- Row 3: Sub-headers ----
+    # ---- Row 3: Sub-headers (per-map) ----
     subheader_row = row
-
-    def write_subheader(start_col, end_col, title, fill, font=None):
-        ws.merge_cells(start_row=subheader_row, start_column=start_col, end_row=subheader_row, end_column=end_col)
-        cell = ws.cell(row=subheader_row, column=start_col, value=title)
-        cell.font = font or SUBHEADER_FONT
-        cell.fill = fill
-        cell.alignment = CENTER_ALIGN
-        cell.border = THIN_BORDER
-        for c in range(start_col, end_col + 1):
-            ws.cell(row=subheader_row, column=c).fill = fill
-            ws.cell(row=subheader_row, column=c).border = THIN_BORDER
-
-    if has_land:
-        write_subheader(COL_LAND_START, COL_LAND_START + 1, "Day", LAND_DAY_SUBHEADER, SUBHEADER_FONT_DARK)
-        write_subheader(COL_LAND_START + 2, COL_LAND_END, "Night", LAND_NIGHT_SUBHEADER)
-    if has_fish:
-        write_subheader(COL_FISH_START, COL_FISH_START + 1, "Old Rod", OLD_ROD_SUBHEADER, SUBHEADER_FONT_DARK)
-        write_subheader(COL_FISH_START + 2, COL_FISH_START + 3, "Good Rod", GOOD_ROD_SUBHEADER)
-        write_subheader(COL_FISH_START + 4, COL_FISH_END, "Super Rod", SUPER_ROD_SUBHEADER)
-    if has_surf:
-        write_subheader(COL_SURF_START, COL_SURF_START + 1, "Day", SURF_DAY_SUBHEADER, SUBHEADER_FONT_DARK)
-        write_subheader(COL_SURF_START + 2, COL_SURF_END, "Night", SURF_NIGHT_SUBHEADER)
-    if has_rock:
-        write_subheader(COL_ROCK_START, COL_ROCK_END, "", ROCK_SUBHEADER)
-
+    for _htitle, _hfill, _sc, _ec, sub_info in layout:
+        if not map_has_group(sub_info):
+            continue
+        for dk, slabel, shfill, shfont, _df, nc, pc in sub_info:
+            ws.merge_cells(start_row=subheader_row, start_column=nc,
+                           end_row=subheader_row, end_column=pc)
+            cell = ws.cell(row=subheader_row, column=nc, value=slabel)
+            cell.font = shfont
+            cell.fill = shfill
+            cell.alignment = CENTER_ALIGN
+            cell.border = THIN_BORDER
+            ws.cell(row=subheader_row, column=pc).fill = shfill
+            ws.cell(row=subheader_row, column=pc).border = THIN_BORDER
     row += 1
 
     # ---- Data rows ----
     data_start = row
+    for _htitle, _hfill, _sc, _ec, sub_info in layout:
+        for dk, _sl, _shf, _shfont, dfill, nc, pc in sub_info:
+            data = encounter_dict.get(dk, {})
+            if data or map_has_group(sub_info):
+                write_subtable_data(ws, data_start, nc, pc, data, dfill, max_data_rows)
 
-    if has_land:
-        write_subtable_data(ws, data_start, COL_LAND_START, COL_LAND_START + 1,
-                            map_data["land_day"], LAND_DAY_FILL, max_data_rows)
-        write_subtable_data(ws, data_start, COL_LAND_START + 2, COL_LAND_END,
-                            map_data["land_night"], LAND_NIGHT_FILL, max_data_rows)
-
-    if has_fish:
-        write_subtable_data(ws, data_start, COL_FISH_START, COL_FISH_START + 1,
-                            map_data["old_rod"], OLD_ROD_FILL, max_data_rows)
-        write_subtable_data(ws, data_start, COL_FISH_START + 2, COL_FISH_START + 3,
-                            map_data["good_rod"], GOOD_ROD_FILL, max_data_rows)
-        write_subtable_data(ws, data_start, COL_FISH_START + 4, COL_FISH_END,
-                            map_data["super_rod"], SUPER_ROD_FILL, max_data_rows)
-
-    if has_surf:
-        write_subtable_data(ws, data_start, COL_SURF_START, COL_SURF_START + 1,
-                            map_data["surf_day"], SURF_DAY_FILL, max_data_rows)
-        write_subtable_data(ws, data_start, COL_SURF_START + 2, COL_SURF_END,
-                            map_data["surf_night"], SURF_NIGHT_FILL, max_data_rows)
-
-    if has_rock:
-        write_subtable_data(ws, data_start, COL_ROCK_START, COL_ROCK_END,
-                            map_data["rock_smash"], ROCK_FILL, max_data_rows)
-
-    # ---- Note ----
-    if map_data["has_berry"]:
-        cell = ws.cell(row=data_start, column=COL_NOTE, value="Berry Tree Encounters available.")
+    # ---- Note column ----
+    has_berry = False
+    clean_name = map_name.replace(" (Underwater)", "")
+    for _mid, minfo in map_id_to_info.items():
+        if minfo["name"] == clean_name and minfo.get("has_berry_tree"):
+            has_berry = True
+            break
+    if has_berry:
+        cell = ws.cell(row=data_start, column=note_col, value="Berry Tree Encounters available.")
         cell.font = NOTE_FONT
         cell.alignment = WRAP_ALIGN
 
@@ -676,30 +714,34 @@ def write_map_section(ws, row, map_data):
     return row
 
 
-def set_column_widths(ws):
-    """Set reasonable column widths."""
+def set_column_widths(ws, layout, note_col):
+    """Set column widths dynamically based on layout, including gap columns."""
     name_width = 18
     pct_width = 7
     gap_width = 2
 
-    widths = {
-        COL_LAND_START: name_width, COL_LAND_START + 1: pct_width,
-        COL_LAND_START + 2: name_width, COL_LAND_END: pct_width,
-        5: gap_width,
-        COL_FISH_START: name_width, COL_FISH_START + 1: pct_width,
-        COL_FISH_START + 2: name_width, COL_FISH_START + 3: pct_width,
-        COL_FISH_START + 4: name_width, COL_FISH_END: pct_width,
-        12: gap_width,
-        COL_SURF_START: name_width, COL_SURF_START + 1: pct_width,
-        COL_SURF_START + 2: name_width, COL_SURF_END: pct_width,
-        17: gap_width,
-        COL_ROCK_START: name_width, COL_ROCK_END: pct_width,
-        20: gap_width,
-        COL_NOTE: 30,
-    }
+    for _htitle, _hfill, _sc, _ec, sub_info in layout:
+        for _dk, _sl, _shf, _shfont, _df, nc, pc in sub_info:
+            ws.column_dimensions[get_column_letter(nc)].width = name_width
+            ws.column_dimensions[get_column_letter(pc)].width = pct_width
 
-    for col, width in widths.items():
-        ws.column_dimensions[get_column_letter(col)].width = width
+    # Set gap columns
+    gap_cols = set()
+    prev_end = 0
+    for _htitle, _hfill, sc, ec, _sub in layout:
+        if prev_end > 0 and sc > prev_end + 1:
+            gap_cols.add(prev_end + 1)
+        prev_end = ec
+    for gc in gap_cols:
+        ws.column_dimensions[get_column_letter(gc)].width = gap_width
+
+    # Gap before note column
+    if layout:
+        last_end = layout[-1][3]
+        if note_col > last_end + 1:
+            ws.column_dimensions[get_column_letter(last_end + 1)].width = gap_width
+
+    ws.column_dimensions[get_column_letter(note_col)].width = 30
 
 
 # ---------------------------------------------------------------------------
@@ -720,15 +762,17 @@ def main():
     print(f"  {len(encounters)} encounter entries loaded")
 
     print("Processing encounters...")
-    mapsec_data = process_encounters(rates, fishing_groups, encounters, map_id_to_info)
+    mapsec_data = process_encounters(
+        encounters, rates, fishing_groups, map_id_to_info,
+        mapsec_names, kanto_mapsecs,
+    )
     print(f"  {len(mapsec_data)} MAPSECs with encounters")
 
     print("Generating spreadsheet...")
     wb = Workbook()
-    # Remove default sheet
     wb.remove(wb.active)
 
-    # Order MAPSECs by their position in the enum (ordered_ids)
+    # Order MAPSECs by their position in the enum
     mapsec_order = {m: i for i, m in enumerate(ordered_ids)}
     sorted_mapsecs = sorted(mapsec_data.keys(), key=lambda m: mapsec_order.get(m, 9999))
 
@@ -742,10 +786,11 @@ def main():
 
         # Excel tab names max 31 chars, no special chars
         tab_name = display_name[:31]
-        # Remove invalid characters for sheet names
         for ch in ["\\", "/", "*", "?", ":", "[", "]"]:
             tab_name = tab_name.replace(ch, "")
-        # Ensure unique
+        tab_name = tab_name.strip()
+        if not tab_name:
+            tab_name = mapsec[:31]
         base_tab = tab_name
         counter = 2
         while tab_name in tab_names_used:
@@ -755,14 +800,30 @@ def main():
         tab_names_used.add(tab_name)
 
         ws = wb.create_sheet(title=tab_name)
-        set_column_widths(ws)
+
+        # Compute dynamic layout for this MAPSEC
+        layout, note_col, last_col = compute_layout(maps)
+
+        if not layout:
+            row = 1
+            for map_name in sorted(maps.keys()):
+                ws.cell(row=row, column=1, value=map_name.replace("_", " "))
+                row += 1
+            continue
+
+        set_column_widths(ws, layout, note_col)
 
         # Freeze top row
         ws.freeze_panes = "A2"
 
         current_row = 1
-        for map_data in maps:
-            current_row = write_map_section(ws, current_row, map_data)
+        sorted_maps = sorted(maps.keys())
+        for map_name in sorted_maps:
+            encounter_dict = maps[map_name]
+            current_row = write_map_section(
+                ws, current_row, map_name, encounter_dict,
+                layout, note_col, last_col, map_id_to_info,
+            )
 
     if not wb.sheetnames:
         print("WARNING: No encounter data found. Creating empty workbook.")
