@@ -1272,6 +1272,25 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
+Ceruledge  
+Ability: Weak Armor 
+Level: 70 
+- Bitter Blade  
+- Close Combat  
+- Shadow Sneak  
+- Swords Dance  
+
+Minior @ White Herb  
+Ability: Shields Down  
+Level: 70
+EVs: 190 HP / 190 Atk / 128 Spe  
+Jolly Nature  
+- Shell Smash  
+- Acrobatics  
+- Rock Slide  
+- Explosion  
+
+
 Iron Treads @ Assault Vest  
 Ability: Quark Drive  
 Level: 70
@@ -5304,6 +5323,14 @@ IVs: 30 Def
 - Headlong Rush  
 - Stomping Tantrum  
 
+Typhlosion @ Choice Scarf  
+Ability: Blaze   
+Level: 70
+IVs: 0 Atk  
+- Eruption  
+- Heat Wave  
+- Scorching Sands  
+- Solar Beam  
 
 === TRAINER_CINDY_2 === /* Route */
 Name: CINDY
@@ -11275,6 +11302,27 @@ IVs: 0 Atk
 - Ancient Power  
 - Tailwind  
 
+Bisharp @ Chople Berry  
+Ability: Defiant  
+Level: 47
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Iron Head  
+- Sucker Punch  
+- Psycho Cut  
+- Swords Dance
+
+Ting-Lu @ Leftovers  
+Ability: Vessel of Ruin   
+Level: 47
+EVs: 128 HP / 252 Def / 128 SpD  
+Relaxed Nature  
+- Sand Tomb  
+- Ruination  
+- Body Press  
+- Protect
+
+
 
 === TRAINER_HILL_4 ===
 Name: DRAKE
@@ -11432,6 +11480,31 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
+Phanpy  
+Ability: Pickup  
+Level: 30
+- Encore  
+- Play Rough  
+- Endeavor  
+- Seed Bomb  
+
+Teddiursa @ Honey
+Ability: Honey Gather  
+Level: 30
+- Baby-Doll Eyes  
+- Chip Away  
+- Feint Attack  
+- Smack Down  
+
+Shinx  
+Ability: Rivalry  
+Level: 30
+- Thunder Fang  
+- Psychic Fangs  
+- Crunch  
+- Baby-Doll Eyes  
+
+/*
 Pikachu  
 Ability: Static  
 Level: 28  
@@ -11488,6 +11561,7 @@ IVs: 0 Atk
 - Hydro Pump  
 - Water Spout  
 - Flash Cannon  
+*/
 
 === TRAINER_HILL_5 === /* Route */
 Name: PHOEBE
@@ -17622,7 +17696,7 @@ Tera Type: Normal
 
 
 
-=== TRAINER_HECTOR === /* Route 115 */ /* TO BE ADDED */
+=== TRAINER_HECTOR === /* Route 115 */ 
 Name: HECTOR
 Class: Collector
 Pic: Collector
@@ -17631,13 +17705,54 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zangoose
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Meowth @ Sitrus Berry  
+Ability: Pickup  
+Level: 55
+Tera Type: Normal  
+- Play Rough  
+- False Swipe  
+- Hypnosis  
+- Fake Out  
 
-Seviper
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Meowth-Alola @ Sitrus Berry  
+Ability: Pickup  
+Level: 55
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Hypnosis  
+- Hidden Power  
+- Snarl  
+- Thunder Wave  
+
+Meowth-Galar @ Sitrus Berry  
+Ability: Pickup  
+Level: 55
+Tera Type: Steel  
+- Aerial Ace  
+- Make It Rain  
+- Play Rough  
+- Fake Out  
+
+Poltchageist-Artisan  
+Ability: Hospitality  
+Level: 55
+Tera Type: Grass  
+IVs: 0 Atk  
+- Rage Powder  
+- Night Shade  
+- Grassy Terrain  
+- Magical Leaf  
+
+Sinistea-Antique  
+Ability: Weak Armor  
+Level: 55
+Tera Type: Ghost  
+IVs: 0 Atk  
+- Mean Look  
+- Night Shade  
+- Hypnosis  
+- Dark Pulse  
+
 
 === TRAINER_COURTNEY_MOSSDEEP === /* Mossdeep Space Center 2F */
 Name: Courtney
@@ -20716,6 +20831,26 @@ Tera Type: Ice
 - Psychic Noise
 - Hidden Power
 
+Krookodile @ Focus Band  
+Ability: Intimidate  
+Level: 70
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Earthquake  
+- Darkest Lariat  
+- Endeavor  
+- Power-Up Punch  
+
+Orthworm  
+Ability: Earth Eater  
+Level: 70
+EVs: 252 HP / 4 Atk / 252 SpD  
+Impish Nature  
+- Stealth Rock  
+- Body Press  
+- Iron Head  
+- Iron Defense  
+
 
 === TRAINER_GRUNT_SPACE_CENTER_4 === /* Route */
 Name: GRUNT
@@ -20748,6 +20883,24 @@ Adamant Nature
 - Spore  
 
 
+Bastiodon @ Shuca Berry  
+Ability: Sturdy   
+Level: 70
+EVs: 252 HP / 252 Def / 4 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Body Press  
+- Counter  
+- Foul Play  
+- Reflect  
+
+Emboar @ Emboarite  
+Ability: Mold Breaker  
+Level: 70
+- Heat Crash  
+- High Horsepower  
+- Close Combat  
+
 
 === TRAINER_GRUNT_SPACE_CENTER_5 === /* First of 3 back to back */
 Name: GRUNT
@@ -20779,8 +20932,17 @@ IVs: 0 Atk
 - Hidden Power
 - Soft-Boiled  
 
+Lilligant-Hisui (F) @ Coba Berry  
+Ability: Hustle  
+Level: 70
+Tera Type: Grass  
+- Victory Dance  
+- Acrobatics  
+- Leaf Blade  
+- Low Kick  
 
-=== TRAINER_GRUNT_SPACE_CENTER_6 === /* Mossdeep Space Center 2F */ /* TO BE ADDED */
+
+=== TRAINER_GRUNT_SPACE_CENTER_6 === /* Mossdeep Space Center 2F */ 
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -20834,7 +20996,7 @@ Jolly Nature
 - Attract  
 */
 
-=== TRAINER_GRUNT_SPACE_CENTER_7 === /* Mossdeep Space Center 2F */ /* TO BE ADDED */
+=== TRAINER_GRUNT_SPACE_CENTER_7 === /* Mossdeep Space Center 2F */ 
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
@@ -20863,6 +21025,16 @@ Adamant Nature
 - Reflect  
 - Light Screen  
 
+Minior @ Focus Sash  
+Ability: Shields Down  
+Tera Type: Rock  
+Level: 70
+EVs: 168 HP / 168 Atk / 168 Spe  
+Jolly Nature  
+- Earthquake  
+- Rock Slide  
+- Acrobatics  
+- Shell Smash  
 
 
 === TRAINER_MACEY === /* Mossdeep Gym */ 
@@ -24994,7 +25166,7 @@ EVs: 128 HP / 128 Atk / 128 SpA
 - Belch  
 
 
-=== TRAINER_KALEB === /* Route 110 */ /* TO BE ADDED */
+=== TRAINER_KALEB === /* Route 110 */ 
 Name: KALEB
 Class: Pokefan
 Pic: Pokefan M
@@ -25003,13 +25175,43 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Minun @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Caterpie  
+Ability: Shield Dust  
+Level: 33
+Tera Type: Rock  
+EVs: 252 HP / 128 Atk / 128 SpA  
+Serious Nature  
+- Bug Bite  
+- Electroweb  
+- Sticky Web  
+- Hidden Power  
 
-Plusle @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cubone  
+Ability: Battle Armor  
+Level: 30
+- Bonemerang  
+- Fire Punch  
+- Seismic Toss  
+- Stealth Rock  
+
+Porygon  
+Ability: Trace  
+Level: 28
+IVs: 0 Atk  
+- Recover  
+- Signal Beam  
+- Charge Beam  
+- Icy Wind  
+
+Bonsly  
+Ability: Sturdy  
+Level: 33  
+Tera Type: Rock  
+EVs: 252 HP / 252 Atk  
+- Headbutt  
+- Rollout  
+- Rock Polish  
+
 
 === TRAINER_JOSEPH === /* Route 110 */ 
 Name: JOSEPH
