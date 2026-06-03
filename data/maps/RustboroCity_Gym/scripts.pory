@@ -32,14 +32,19 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	call Common_EventScript_LevelCapUpdate
 	msgbox RustboroCity_Gym_Text_TakeThis, MSGBOX_DEFAULT
 //	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
+
+	giveitem ITEM_TM_STONE_EDGE
+	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
+	closemessage
+
 	goto RustboroCity_Gym_EventScript_GiveRockTomb
 	end
 
 RustboroCity_Gym_EventScript_GiveRockTomb::
-	giveitem ITEM_TM_STONE_EDGE
+	giveitem ITEM_IRON, 6
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_ROCK_TOMB
-	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
+	//msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 	release
 	end
 

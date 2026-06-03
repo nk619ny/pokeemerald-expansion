@@ -84,6 +84,9 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	setvar VAR_MOSSDEEP_CITY_STATE, 1
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1
+	giveitem ITEM_TM_EXPANDING_FORCE
+	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
+	closemessage
 	call MossdeepCity_Gym_EventScript_GiveCalmMind
 	closemessage
 	delay 30
@@ -103,17 +106,23 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	end
 
 MossdeepCity_Gym_EventScript_GiveCalmMind2::
-	giveitem ITEM_TM_EXPANDING_FORCE
+	checkitemspace ITEM_CALCIUM
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
+	checkitemspace ITEM_ZINC
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_HP_UP, 3
+	giveitem ITEM_CARBOS, 3
 	setflag FLAG_RECEIVED_TM_CALM_MIND
 	release
 	end
 
 MossdeepCity_Gym_EventScript_GiveCalmMind::
-	giveitem ITEM_TM_EXPANDING_FORCE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
-	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
+	checkitemspace ITEM_CALCIUM
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	checkitemspace ITEM_ZINC
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_HP_UP, 3
+	giveitem ITEM_CARBOS, 3
 	setflag FLAG_RECEIVED_TM_CALM_MIND
 	return
 

@@ -431,10 +431,9 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	end
 
 PetalburgCity_Gym_EventScript_GiveFacade::
-	giveitem ITEM_TM_KNOCK_OFF
+	giveitem ITEM_ZINC, 6
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	setflag FLAG_RECEIVED_TM_FACADE
-	msgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT
 	return
 
 PetalburgCity_Gym_EventScript_WallysDadArrivesNorth::
@@ -1743,6 +1742,8 @@ PetalburgCity_Gym_EventScript_Vito_PostBattle::
 	setvar VAR_TEMP_3, 1 //TempVar_Vito_Dialogue 
 	call Common_EventScript_SetGymTrainers
 	clearflag FLAG_HIDE_DEWFORD_HALL_SLUDGE_BOMB_MAN
+	giveitem ITEM_TM_KNOCK_OFF
+	msgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT
 	call PetalburgCity_Gym_EventScript_UnlockAllDoors
 	special DrawWholeMapView
 	call PetalburgCity_Gym_EventScript_GiveFacade
@@ -1886,6 +1887,9 @@ script PetalburgCity_Gym_EventScript_DefeatedNorman {
 	msgbox(format("Dad: That was an impressive battle, {PLAYER}. You've defeated a Gym Leader.\pTraditionally, when this happens, one will give you a TM. I'd like you to have this."),MSGBOX_DEFAULT)
 	giveitem(ITEM_TM_SWIFT)
 	waitfanfare
+	msgbox(format("Dad: In the past, when earning a Gym Badge, your Pokémon would get a 'Badge Boost.'\pThe Champion decided this was a strange and arbitrary system, so instead Gym Leaders will provide you with some vitamins to boost the stats of the Pokémon on your team.\pHere, take these."),MSGBOX_DEFAULT)
+	giveitem(ITEM_HP_UP, 6)
+	waitfanfare
 	msgbox(format("Dad: Unfortunately, because I'm in the process of retiring, I cannot give you or Wally a badge.\pHowever, I can now say you are ready to take on the Hoenn League.\pI have a friend, Mr. Briney, who lives out to the West of Petalburg. He can take you to the next step in your journey.\pOh, you've already met? Wonderful. I'll give him a call and ask him to take you to Dewford once you're ready.\pSpeaking of which, I want to give you this."),MSGBOX_NPC)
     playfanfare(MUS_OBTAIN_ITEM)    
 	msgbox("Received PokéNAV!")
@@ -1972,6 +1976,7 @@ text PetalburgCity_Gym_Text_Vito_GoodLuck {
 }
 
 script PetalburgCity_Gym_EventScript_Vito_PostBadge{
+	goto_if_unset(FLAG_RECEIVED_TM_FACADE, PetalburgCity_Gym_EventScript_GiveFacade2)
 	if (var(TempVar_Vito_Dialogue) == 0) {
 		random(3)
 		copyvar(TempVar_Vito_Dialogue,VAR_RESULT)
