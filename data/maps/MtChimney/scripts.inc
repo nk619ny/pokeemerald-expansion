@@ -1812,35 +1812,42 @@ MtChimney_EventScript_Shiloh::
 
 MtChimney_EventScript_ShilohTryGiveVitamin::
 # 977 "data/maps/MtChimney/scripts.pory"
-	goto_if_unset FLAG_TEMP_A, MtChimney_EventScript_ShilohTryGiveVitamin_2
+	goto_if_set FLAG_BADGE04_GET, MtChimney_EventScript_ShilohTryGiveVitamin_2
 # 981 "data/maps/MtChimney/scripts.pory"
+	goto_if_unset FLAG_TEMP_A, MtChimney_EventScript_ShilohTryGiveVitamin_5
+# 985 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_EventScript_ShilohTryGiveVitamin_Text_1, MSGBOX_NPC
-MtChimney_EventScript_ShilohTryGiveVitamin_1:
-# 983 "data/maps/MtChimney/scripts.pory"
+MtChimney_EventScript_ShilohTryGiveVitamin_4:
+# 987 "data/maps/MtChimney/scripts.pory"
 	checkitemspace ITEM_PROTEIN
-# 984 "data/maps/MtChimney/scripts.pory"
+# 988 "data/maps/MtChimney/scripts.pory"
 	compare VAR_RESULT, TRUE
-	goto_if_eq MtChimney_EventScript_ShilohTryGiveVitamin_6
-# 989 "data/maps/MtChimney/scripts.pory"
+	goto_if_eq MtChimney_EventScript_ShilohTryGiveVitamin_9
+# 993 "data/maps/MtChimney/scripts.pory"
 	setflag FLAG_TEMP_A
-# 990 "data/maps/MtChimney/scripts.pory"
+# 994 "data/maps/MtChimney/scripts.pory"
 	msgbox MtChimney_EventScript_ShilohTryGiveVitamin_Text_2, MSGBOX_NPC
-MtChimney_EventScript_ShilohTryGiveVitamin_5:
-# 992 "data/maps/MtChimney/scripts.pory"
+MtChimney_EventScript_ShilohTryGiveVitamin_8:
+# 996 "data/maps/MtChimney/scripts.pory"
 	release
 	end
 
 MtChimney_EventScript_ShilohTryGiveVitamin_2:
 # 978 "data/maps/MtChimney/scripts.pory"
-	msgbox MtChimney_EventScript_ShilohTryGiveVitamin_Text_0, MSGBOX_NPC
-	goto MtChimney_EventScript_ShilohTryGiveVitamin_1
+	releaseall
+	end
 
-MtChimney_EventScript_ShilohTryGiveVitamin_6:
-# 985 "data/maps/MtChimney/scripts.pory"
+MtChimney_EventScript_ShilohTryGiveVitamin_5:
+# 982 "data/maps/MtChimney/scripts.pory"
+	msgbox MtChimney_EventScript_ShilohTryGiveVitamin_Text_0, MSGBOX_NPC
+	goto MtChimney_EventScript_ShilohTryGiveVitamin_4
+
+MtChimney_EventScript_ShilohTryGiveVitamin_9:
+# 989 "data/maps/MtChimney/scripts.pory"
 	giveitem ITEM_PROTEIN
-# 986 "data/maps/MtChimney/scripts.pory"
+# 990 "data/maps/MtChimney/scripts.pory"
 	clearflag FLAG_TEMP_A
-	goto MtChimney_EventScript_ShilohTryGiveVitamin_5
+	goto MtChimney_EventScript_ShilohTryGiveVitamin_8
 
 
 MtChimney_EventScript_HeatCrashHiker_Text_0:
@@ -1857,7 +1864,7 @@ MtChimney_EventScript_HeatCrashHiker_Text_1:
 	.string "the sky...$"
 
 MtChimney_EventScript_ShilohTryGiveVitamin_Text_0:
-# 978 "data/maps/MtChimney/scripts.pory"
+# 982 "data/maps/MtChimney/scripts.pory"
 	.string "I can just tell you're going places.\n"
 	.string "I want to invest in you and your team.\p"
 	.string "Take this, so I can tell people I helped\n"
@@ -1865,11 +1872,11 @@ MtChimney_EventScript_ShilohTryGiveVitamin_Text_0:
 	.string "League.$"
 
 MtChimney_EventScript_ShilohTryGiveVitamin_Text_1:
-# 981 "data/maps/MtChimney/scripts.pory"
+# 985 "data/maps/MtChimney/scripts.pory"
 	.string "Great, you came back!$"
 
 MtChimney_EventScript_ShilohTryGiveVitamin_Text_2:
-# 990 "data/maps/MtChimney/scripts.pory"
+# 994 "data/maps/MtChimney/scripts.pory"
 	.string "What, are you not accepting new\n"
 	.string "investors?\p"
 	.string "Just make some room in your bag and\n"
@@ -1993,7 +2000,7 @@ MtChimney_Text_ArchieMeetAgain::
 	.string "{PLAYER}, we shall meet again!$"
 
 MtChimney_Text_ShilohIntro::
-# 996 "data/maps/MtChimney/scripts.pory"
+# 1000 "data/maps/MtChimney/scripts.pory"
 	.string "My family has a vacation home in\n"
 	.string "Lavaridge.\p"
 	.string "The Hot Spring is luxurious, but I love\n"
@@ -2001,10 +2008,10 @@ MtChimney_Text_ShilohIntro::
 	.string "Chimney.$"
 
 MtChimney_Text_ShilohDefeat::
-# 1000 "data/maps/MtChimney/scripts.pory"
+# 1004 "data/maps/MtChimney/scripts.pory"
 	.string "You've ruined my vacation!$"
 
 MtChimney_Text_ShilohPostBattle::
-# 1004 "data/maps/MtChimney/scripts.pory"
+# 1008 "data/maps/MtChimney/scripts.pory"
 	.string "I'm just trying to enjoy the rest of my\n"
 	.string "vacation.$"

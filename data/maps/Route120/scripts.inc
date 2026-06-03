@@ -956,35 +956,42 @@ Route120_EventScript_Abe::
 
 Route120_EventScript_AbeTryGiveVitamin::
 # 505 "data/maps/Route120/scripts.pory"
-	goto_if_unset FLAG_TEMP_A, Route120_EventScript_AbeTryGiveVitamin_2
+	goto_if_set FLAG_BOTH_HIDEOUTS_COMPLETE, Route120_EventScript_AbeTryGiveVitamin_2
 # 509 "data/maps/Route120/scripts.pory"
+	goto_if_unset FLAG_TEMP_A, Route120_EventScript_AbeTryGiveVitamin_5
+# 513 "data/maps/Route120/scripts.pory"
 	msgbox Route120_EventScript_AbeTryGiveVitamin_Text_1, MSGBOX_NPC
-Route120_EventScript_AbeTryGiveVitamin_1:
-# 511 "data/maps/Route120/scripts.pory"
+Route120_EventScript_AbeTryGiveVitamin_4:
+# 515 "data/maps/Route120/scripts.pory"
 	checkitemspace ITEM_HEART_SCALE
-# 512 "data/maps/Route120/scripts.pory"
+# 516 "data/maps/Route120/scripts.pory"
 	compare VAR_RESULT, TRUE
-	goto_if_eq Route120_EventScript_AbeTryGiveVitamin_6
-# 517 "data/maps/Route120/scripts.pory"
+	goto_if_eq Route120_EventScript_AbeTryGiveVitamin_9
+# 521 "data/maps/Route120/scripts.pory"
 	setflag FLAG_TEMP_A
-# 518 "data/maps/Route120/scripts.pory"
+# 522 "data/maps/Route120/scripts.pory"
 	msgbox Route120_EventScript_AbeTryGiveVitamin_Text_2, MSGBOX_NPC
-Route120_EventScript_AbeTryGiveVitamin_5:
-# 520 "data/maps/Route120/scripts.pory"
+Route120_EventScript_AbeTryGiveVitamin_8:
+# 524 "data/maps/Route120/scripts.pory"
 	release
 	end
 
 Route120_EventScript_AbeTryGiveVitamin_2:
 # 506 "data/maps/Route120/scripts.pory"
-	msgbox Route120_EventScript_AbeTryGiveVitamin_Text_0, MSGBOX_NPC
-	goto Route120_EventScript_AbeTryGiveVitamin_1
+	releaseall
+	end
 
-Route120_EventScript_AbeTryGiveVitamin_6:
-# 513 "data/maps/Route120/scripts.pory"
+Route120_EventScript_AbeTryGiveVitamin_5:
+# 510 "data/maps/Route120/scripts.pory"
+	msgbox Route120_EventScript_AbeTryGiveVitamin_Text_0, MSGBOX_NPC
+	goto Route120_EventScript_AbeTryGiveVitamin_4
+
+Route120_EventScript_AbeTryGiveVitamin_9:
+# 517 "data/maps/Route120/scripts.pory"
 	giveitem ITEM_HEART_SCALE
-# 514 "data/maps/Route120/scripts.pory"
+# 518 "data/maps/Route120/scripts.pory"
 	clearflag FLAG_TEMP_A
-	goto Route120_EventScript_AbeTryGiveVitamin_5
+	goto Route120_EventScript_AbeTryGiveVitamin_8
 
 
 Route120_EventScript_MuddyWaterKid_Text_0:
@@ -999,18 +1006,18 @@ Route120_EventScript_MuddyWaterKid_Text_1:
 	.string "It's fun to play around in the mud.$"
 
 Route120_EventScript_AbeTryGiveVitamin_Text_0:
-# 506 "data/maps/Route120/scripts.pory"
+# 510 "data/maps/Route120/scripts.pory"
 	.string "Okay, I'm sorry, please don't report me\n"
 	.string "to the Pokémon League.\p"
 	.string "Take this and let's call it even, okay?$"
 
 Route120_EventScript_AbeTryGiveVitamin_Text_1:
-# 509 "data/maps/Route120/scripts.pory"
+# 513 "data/maps/Route120/scripts.pory"
 	.string "What a relief, you came back.\p"
 	.string "Take this and let's call it even, okay?$"
 
 Route120_EventScript_AbeTryGiveVitamin_Text_2:
-# 518 "data/maps/Route120/scripts.pory"
+# 522 "data/maps/Route120/scripts.pory"
 	.string "Oh come on, this is more than a fair\n"
 	.string "offer.\p"
 	.string "Make some space in your bag and let's\n"
@@ -1030,15 +1037,15 @@ Route120_Text_StevenGoodbye::
 	.string "Hopefully I'll see you there.$"
 
 Route120_Text_AbeIntro::
-# 524 "data/maps/Route120/scripts.pory"
+# 528 "data/maps/Route120/scripts.pory"
 	.string "You've fallen into my trap! I've laid\n"
 	.string "barbs all around your space!$"
 
 Route120_Text_AbeDefeat::
-# 528 "data/maps/Route120/scripts.pory"
+# 532 "data/maps/Route120/scripts.pory"
 	.string "My scheme wasn't enough...$"
 
 Route120_Text_AbePostBattle::
-# 532 "data/maps/Route120/scripts.pory"
+# 536 "data/maps/Route120/scripts.pory"
 	.string "Lots of trainers complain about my\n"
 	.string "methods.$"

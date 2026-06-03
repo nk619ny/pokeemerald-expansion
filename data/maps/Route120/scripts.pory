@@ -502,6 +502,10 @@ script Route120_EventScript_Abe {
 }
 
 script Route120_EventScript_AbeTryGiveVitamin{
+	if(flag(FLAG_BOTH_HIDEOUTS_COMPLETE)==TRUE){
+		releaseall
+		end
+	}
 	if(flag(FLAG_TEMP_A) == FALSE) {
 		msgbox(format("Okay, I'm sorry, please don't report me to the Pokémon League.\pTake this and let's call it even, okay?"), MSGBOX_NPC)
 	}

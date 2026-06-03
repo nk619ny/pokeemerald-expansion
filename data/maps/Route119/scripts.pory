@@ -659,6 +659,10 @@ script Route119_EventScript_Greg {
 }
 
 script Route119_EventScript_GregTryGiveVitamin{
+	if(flag(FLAG_BADGE06_GET)==TRUE){
+		releaseall
+		end
+	}	
 	if(flag(FLAG_TEMP_A) == FALSE) {
 		msgbox(format("We're trying to start a Mimic Circle.\pHere, take this for playing along."), MSGBOX_NPC)
 	}

@@ -1309,35 +1309,42 @@ Route119_EventScript_Greg::
 
 Route119_EventScript_GregTryGiveVitamin::
 # 662 "data/maps/Route119/scripts.pory"
-	goto_if_unset FLAG_TEMP_A, Route119_EventScript_GregTryGiveVitamin_2
+	goto_if_set FLAG_BADGE06_GET, Route119_EventScript_GregTryGiveVitamin_2
 # 666 "data/maps/Route119/scripts.pory"
+	goto_if_unset FLAG_TEMP_A, Route119_EventScript_GregTryGiveVitamin_5
+# 670 "data/maps/Route119/scripts.pory"
 	msgbox Route119_EventScript_GregTryGiveVitamin_Text_1, MSGBOX_NPC
-Route119_EventScript_GregTryGiveVitamin_1:
-# 668 "data/maps/Route119/scripts.pory"
+Route119_EventScript_GregTryGiveVitamin_4:
+# 672 "data/maps/Route119/scripts.pory"
 	checkitemspace ITEM_CALCIUM
-# 669 "data/maps/Route119/scripts.pory"
+# 673 "data/maps/Route119/scripts.pory"
 	compare VAR_RESULT, TRUE
-	goto_if_eq Route119_EventScript_GregTryGiveVitamin_6
-# 674 "data/maps/Route119/scripts.pory"
+	goto_if_eq Route119_EventScript_GregTryGiveVitamin_9
+# 678 "data/maps/Route119/scripts.pory"
 	setflag FLAG_TEMP_A
-# 675 "data/maps/Route119/scripts.pory"
+# 679 "data/maps/Route119/scripts.pory"
 	msgbox Route119_EventScript_GregTryGiveVitamin_Text_2, MSGBOX_NPC
-Route119_EventScript_GregTryGiveVitamin_5:
-# 677 "data/maps/Route119/scripts.pory"
+Route119_EventScript_GregTryGiveVitamin_8:
+# 681 "data/maps/Route119/scripts.pory"
 	release
 	end
 
 Route119_EventScript_GregTryGiveVitamin_2:
 # 663 "data/maps/Route119/scripts.pory"
-	msgbox Route119_EventScript_GregTryGiveVitamin_Text_0, MSGBOX_NPC
-	goto Route119_EventScript_GregTryGiveVitamin_1
+	releaseall
+	end
 
-Route119_EventScript_GregTryGiveVitamin_6:
-# 670 "data/maps/Route119/scripts.pory"
+Route119_EventScript_GregTryGiveVitamin_5:
+# 667 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_GregTryGiveVitamin_Text_0, MSGBOX_NPC
+	goto Route119_EventScript_GregTryGiveVitamin_4
+
+Route119_EventScript_GregTryGiveVitamin_9:
+# 674 "data/maps/Route119/scripts.pory"
 	giveitem ITEM_CALCIUM
-# 671 "data/maps/Route119/scripts.pory"
+# 675 "data/maps/Route119/scripts.pory"
 	clearflag FLAG_TEMP_A
-	goto Route119_EventScript_GregTryGiveVitamin_5
+	goto Route119_EventScript_GregTryGiveVitamin_8
 
 
 Route119_EventScript_DualWingbeatKeeper_Text_0:
@@ -1367,17 +1374,17 @@ Route119_EventScript_XScizzorManiac_Text_1:
 	.string "I'm glad to be rid of that TM.$"
 
 Route119_EventScript_GregTryGiveVitamin_Text_0:
-# 663 "data/maps/Route119/scripts.pory"
+# 667 "data/maps/Route119/scripts.pory"
 	.string "We're trying to start a Mimic Circle.\p"
 	.string "Here, take this for playing along.$"
 
 Route119_EventScript_GregTryGiveVitamin_Text_1:
-# 666 "data/maps/Route119/scripts.pory"
+# 670 "data/maps/Route119/scripts.pory"
 	.string "Are you ready to receive your Mimic\n"
 	.string "Circle prize now?$"
 
 Route119_EventScript_GregTryGiveVitamin_Text_2:
-# 675 "data/maps/Route119/scripts.pory"
+# 679 "data/maps/Route119/scripts.pory"
 	.string "Oh, you don't seem to have room for the\n"
 	.string "prize.\p"
 	.string "You can come back for it later - unless\n"

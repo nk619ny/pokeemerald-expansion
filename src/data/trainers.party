@@ -5439,7 +5439,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Odor Sleuth
 - Sand Attack
 
-=== TRAINER_MELISSA === /* Mt Chimney */ /* What to do with these optionals? */
+=== TRAINER_MELISSA === /* Mt Chimney */ 
 Name: MELISSA
 Class: Beauty
 Pic: Beauty
@@ -6100,7 +6100,7 @@ Adamant Nature
 - High Horsepower  
 
 
-=== TRAINER_THALIA_1 === /* Abandoned Ship */ /* TO BE ADDED */
+=== TRAINER_THALIA_1 === /* Abandoned Ship */ 
 Name: THALIA
 Class: Beauty
 Pic: Beauty
@@ -6109,13 +6109,47 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wailmer
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Horsea
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ninetales-Alola  
+Ability: Snow Cloak  
+Level: 50
+Tera Type: Ice  
+EVs: 252 Atk
+- Dazzling Gleam  
+- Triple Axel  
+- Captivate  
+- Charm  
+
+Gorebyss  
+Ability: Hydration  
+Level: 50
+Tera Type: Water  
+IVs: 0 Atk  
+- Captivate  
+- Attract  
+- Scald  
+- Toxic  
+
+Primarina @ Throat Spray  
+Level: 50
+Ability: Torrent  
+Tera Type: Water  
+IVs: 0 Atk  
+- Alluring Voice  
+- Sparkling Aria  
+- Encore  
+- Light Screen  
+
+Togekiss  
+Ability: Serene Grace  
+Level: 50
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Moonblast  
+- Aura Sphere  
+- Morning Sun  
+- Tailwind  
+
 
 === TRAINER_MARK === /* Mt. Pyre 2F */ /* TO BE ADDED */
 Name: MARK

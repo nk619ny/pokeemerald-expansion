@@ -974,6 +974,10 @@ script MtChimney_EventScript_Shiloh {
 }
 
 script MtChimney_EventScript_ShilohTryGiveVitamin{
+	if(flag(FLAG_BADGE04_GET)==TRUE){
+		releaseall
+		end
+	}
 	if(flag(FLAG_TEMP_A) == FALSE) {
 		msgbox(format("I can just tell you're going places.\NI want to invest in you and your team.\pTake this, so I can tell people I helped you out before you won the Pokémon League."), MSGBOX_NPC)
 	}

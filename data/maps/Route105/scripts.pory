@@ -142,6 +142,10 @@ script Route105_EventScript_Dominik {
 }
 
 script Route105_EventScript_DominikTryGiveVitamin {
+	if(flag(FLAG_BADGE05_GET)==TRUE){
+		releaseall
+		end
+	}
 	if(flag(FLAG_TEMP_A) == FALSE) {
 		msgbox(format("If you want to stay swimming for long periods of time, you need to stay in top shape.\pWith this vitamin, your Pokémon can have endurance like me!"), MSGBOX_NPC)
 	}

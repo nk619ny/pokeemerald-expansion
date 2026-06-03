@@ -271,35 +271,42 @@ Route105_EventScript_Dominik::
 
 Route105_EventScript_DominikTryGiveVitamin::
 # 145 "data/maps/Route105/scripts.pory"
-	goto_if_unset FLAG_TEMP_A, Route105_EventScript_DominikTryGiveVitamin_2
+	goto_if_set FLAG_BADGE05_GET, Route105_EventScript_DominikTryGiveVitamin_2
 # 149 "data/maps/Route105/scripts.pory"
+	goto_if_unset FLAG_TEMP_A, Route105_EventScript_DominikTryGiveVitamin_5
+# 153 "data/maps/Route105/scripts.pory"
 	msgbox Route105_EventScript_DominikTryGiveVitamin_Text_1, MSGBOX_NPC
-Route105_EventScript_DominikTryGiveVitamin_1:
-# 151 "data/maps/Route105/scripts.pory"
+Route105_EventScript_DominikTryGiveVitamin_4:
+# 155 "data/maps/Route105/scripts.pory"
 	checkitemspace ITEM_PROTEIN
-# 152 "data/maps/Route105/scripts.pory"
+# 156 "data/maps/Route105/scripts.pory"
 	compare VAR_RESULT, TRUE
-	goto_if_eq Route105_EventScript_DominikTryGiveVitamin_6
-# 157 "data/maps/Route105/scripts.pory"
+	goto_if_eq Route105_EventScript_DominikTryGiveVitamin_9
+# 161 "data/maps/Route105/scripts.pory"
 	setflag FLAG_TEMP_A
-# 158 "data/maps/Route105/scripts.pory"
+# 162 "data/maps/Route105/scripts.pory"
 	msgbox Route105_EventScript_DominikTryGiveVitamin_Text_2, MSGBOX_NPC
-Route105_EventScript_DominikTryGiveVitamin_5:
-# 160 "data/maps/Route105/scripts.pory"
+Route105_EventScript_DominikTryGiveVitamin_8:
+# 164 "data/maps/Route105/scripts.pory"
 	release
 	end
 
 Route105_EventScript_DominikTryGiveVitamin_2:
 # 146 "data/maps/Route105/scripts.pory"
-	msgbox Route105_EventScript_DominikTryGiveVitamin_Text_0, MSGBOX_NPC
-	goto Route105_EventScript_DominikTryGiveVitamin_1
+	releaseall
+	end
 
-Route105_EventScript_DominikTryGiveVitamin_6:
-# 153 "data/maps/Route105/scripts.pory"
+Route105_EventScript_DominikTryGiveVitamin_5:
+# 150 "data/maps/Route105/scripts.pory"
+	msgbox Route105_EventScript_DominikTryGiveVitamin_Text_0, MSGBOX_NPC
+	goto Route105_EventScript_DominikTryGiveVitamin_4
+
+Route105_EventScript_DominikTryGiveVitamin_9:
+# 157 "data/maps/Route105/scripts.pory"
 	giveitem ITEM_PROTEIN
-# 154 "data/maps/Route105/scripts.pory"
+# 158 "data/maps/Route105/scripts.pory"
 	clearflag FLAG_TEMP_A
-	goto Route105_EventScript_DominikTryGiveVitamin_5
+	goto Route105_EventScript_DominikTryGiveVitamin_8
 
 
 Route105_EventScript_ScaleShotFisherman_Text_0:
@@ -325,7 +332,7 @@ Route105_EventScript_IceSpinnerBeauty_Text_1:
 	.string "gracefully on the ice, too.$"
 
 Route105_EventScript_DominikTryGiveVitamin_Text_0:
-# 146 "data/maps/Route105/scripts.pory"
+# 150 "data/maps/Route105/scripts.pory"
 	.string "If you want to stay swimming for long\n"
 	.string "periods of time, you need to stay in top\l"
 	.string "shape.\p"
@@ -333,11 +340,11 @@ Route105_EventScript_DominikTryGiveVitamin_Text_0:
 	.string "have endurance like me!$"
 
 Route105_EventScript_DominikTryGiveVitamin_Text_1:
-# 149 "data/maps/Route105/scripts.pory"
+# 153 "data/maps/Route105/scripts.pory"
 	.string "Ah, just in time!$"
 
 Route105_EventScript_DominikTryGiveVitamin_Text_2:
-# 158 "data/maps/Route105/scripts.pory"
+# 162 "data/maps/Route105/scripts.pory"
 	.string "Hmm, you're trying to carry too much\n"
 	.string "stuff while surfing.\p"
 	.string "That's a mistake - drop some weight and\n"
