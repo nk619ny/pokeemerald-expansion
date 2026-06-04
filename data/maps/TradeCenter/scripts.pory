@@ -2757,20 +2757,3 @@ script TradeCenter_EventScript_CrossPoison {
 	end
 }
 
-script TradeCenter_EventScript_SupercellSlam {
-	lock
-	faceplayer
-	checkitem(ITEM_TM_SUPERCELL_SLAM)
-	if(var(VAR_RESULT) == FALSE) {
-		msgbox(format("A thunderous slam crackling with electricity!\pTake this TM: Supercell Slam hits hard, but the user takes recoil if it misses!"), MSGBOX_NPC)
-		closemessage
-		giveitem(ITEM_TM_SUPERCELL_SLAM)
-		waitfanfare
-	}
-	else {
-		msgbox(format("You already have Supercell Slam. Don't miss!"), MSGBOX_NPC)
-	}
-	releaseall
-	end
-}
-

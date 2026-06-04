@@ -5726,35 +5726,6 @@ TradeCenter_EventScript_CrossPoison_2:
 	goto TradeCenter_EventScript_CrossPoison_1
 
 
-TradeCenter_EventScript_SupercellSlam::
-# 2761 "data/maps/TradeCenter/scripts.pory"
-	lock
-# 2762 "data/maps/TradeCenter/scripts.pory"
-	faceplayer
-# 2763 "data/maps/TradeCenter/scripts.pory"
-	checkitem ITEM_TM_SUPERCELL_SLAM
-# 2764 "data/maps/TradeCenter/scripts.pory"
-	compare VAR_RESULT, FALSE
-	goto_if_eq TradeCenter_EventScript_SupercellSlam_2
-# 2771 "data/maps/TradeCenter/scripts.pory"
-	msgbox TradeCenter_EventScript_SupercellSlam_Text_1, MSGBOX_NPC
-TradeCenter_EventScript_SupercellSlam_1:
-# 2773 "data/maps/TradeCenter/scripts.pory"
-	releaseall
-	end
-
-TradeCenter_EventScript_SupercellSlam_2:
-# 2765 "data/maps/TradeCenter/scripts.pory"
-	msgbox TradeCenter_EventScript_SupercellSlam_Text_0, MSGBOX_NPC
-# 2766 "data/maps/TradeCenter/scripts.pory"
-	closemessage
-# 2767 "data/maps/TradeCenter/scripts.pory"
-	giveitem ITEM_TM_SUPERCELL_SLAM
-# 2768 "data/maps/TradeCenter/scripts.pory"
-	waitfanfare
-	goto TradeCenter_EventScript_SupercellSlam_1
-
-
 Common_EventScript_LevelCapUpdate_Text_0:
 # 296 "data/maps/TradeCenter/scripts.pory"
 	.string "{PLAYER} grew to Trainer Level\n"
@@ -7049,18 +7020,6 @@ TradeCenter_EventScript_CrossPoison_Text_1:
 # 2754 "data/maps/TradeCenter/scripts.pory"
 	.string "You already have Cross Poison. Keep\n"
 	.string "spreading the venom!$"
-
-TradeCenter_EventScript_SupercellSlam_Text_0:
-# 2765 "data/maps/TradeCenter/scripts.pory"
-	.string "A thunderous slam crackling with\n"
-	.string "electricity!\p"
-	.string "Take this TM: Supercell Slam hits hard,\n"
-	.string "but the user takes recoil if it misses!$"
-
-TradeCenter_EventScript_SupercellSlam_Text_1:
-# 2771 "data/maps/TradeCenter/scripts.pory"
-	.string "You already have Supercell Slam. Don't\n"
-	.string "miss!$"
 
 Common_Text_CaveIsDarkUseFlash::
 # 351 "data/maps/TradeCenter/scripts.pory"

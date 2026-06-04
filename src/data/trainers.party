@@ -11692,7 +11692,7 @@ IVs: 0 Atk
 - Shadow Ball  
 
 
-Venusaur @ Venusaurite Z
+Venusaur @ Venusaurite X
 Ability: Thick Fat  
 Level: 70
 EVs: 252 HP / 252 Atk
@@ -12258,7 +12258,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Sentret  
-Ability: Keen Eye  
+Ability: Frisk
 Level: 10
 - Echoed Voice  
 - Quick Attack  
@@ -13569,7 +13569,7 @@ Tera Type: Bug
 
 Electrode   
 Level: 26
-Ability: Static  
+Ability: Aftermath 
 Tera Type: Electric  
 EVs: 252 Spe  
 Timid Nature  
@@ -18006,10 +18006,12 @@ Treecko
 Level: 8
 Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Leafage
 - Pound
 - Leer
+- Pursuit /*
 - Absorb
+- Leafage */
+
 
 Beldum  
 Level: 8
@@ -18214,9 +18216,9 @@ Level: 8
 Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
-- Ember
 - Growl
-- Peck
+- Peck /*
+- Ember */
 
 Flabebe-White  
 Level: 8
@@ -18411,9 +18413,10 @@ Level: 8
 Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
-- Water Gun
 - Growl
-- Rock Smash
+- Rock Smash /*
+- Water Gun */
+
 
 Sinistea-Antique  
 Level: 8
@@ -18597,10 +18600,13 @@ Treecko
 Level: 8
 Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Absorb
 - Pound
 - Leer
-- Leafage
+- Pursuit /*
+- Absorb
+- Leafage */
+
+
 
 Beldum  
 Level: 8
@@ -18807,9 +18813,10 @@ Level: 8
 Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
-- Ember
 - Growl
-- Peck
+- Peck /*
+- Ember */
+
 
 Flabebe-White  
 Level: 8
@@ -19003,9 +19010,9 @@ Level: 8
 Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
-- Water Gun
 - Growl
-- Rock Smash
+- Rock Smash /*
+- Water Gun */
 
 Sinistea-Antique  
 Level: 8
@@ -26443,7 +26450,7 @@ IVs: 0 Atk
 
 Electrode @ Light Clay   
 Level: 62
-Ability: Static  
+Ability: Aftermath
 Tera Type: Ice  
 EVs: 252 HP / 252 SpA / 4 Spe  
 Timid Nature  
@@ -29991,7 +29998,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Shadow Ball  
 
-Venusaur @ Venusaurite Z
+Venusaur @ Venusaurite X
 Ability: Thick Fat  
 Adamant Nature
 EVs: 252 HP / 252 Atk
@@ -30600,7 +30607,7 @@ IVs: 0 Atk
 - Surf  
 */
 
-Blastoise @ Blastoisinite Z
+Blastoise @ Blastoisinite X
 Ability: Torrent  
 Tera Type: Ground  
 Level: 83

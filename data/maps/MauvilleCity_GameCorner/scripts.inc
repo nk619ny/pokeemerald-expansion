@@ -1858,7 +1858,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_1:
 	compare VAR_RESULT, 0
 	goto_if_eq MauvilleCity_GameCorner_EventScript_BuyMegaStones_6
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_4:
-	checkitem ITEM_VENUSAURITE_Z
+	checkitem ITEM_VENUSAURITE_X
 # 0 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MauvilleCity_GameCorner_EventScript_BuyMegaStones_11
@@ -1878,7 +1878,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_19:
 	compare VAR_RESULT, 0
 	goto_if_eq MauvilleCity_GameCorner_EventScript_BuyMegaStones_26
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_24:
-	checkitem ITEM_BLASTOISINITE_Z
+	checkitem ITEM_BLASTOISINITE_X
 # 0 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MauvilleCity_GameCorner_EventScript_BuyMegaStones_31
@@ -2358,7 +2358,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_479:
 # 1079 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	case ITEM_VENUSAURITE, MauvilleCity_GameCorner_EventScript_BuyMegaStones_487
 # 1086 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_VENUSAURITE_Z, MauvilleCity_GameCorner_EventScript_BuyMegaStones_488
+	case ITEM_VENUSAURITE_X, MauvilleCity_GameCorner_EventScript_BuyMegaStones_488
 # 1093 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	case ITEM_CHARIZARDITE_X, MauvilleCity_GameCorner_EventScript_BuyMegaStones_489
 # 1100 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -2366,7 +2366,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_479:
 # 1107 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	case ITEM_BLASTOISINITE, MauvilleCity_GameCorner_EventScript_BuyMegaStones_491
 # 1114 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	case ITEM_BLASTOISINITE_Z, MauvilleCity_GameCorner_EventScript_BuyMegaStones_492
+	case ITEM_BLASTOISINITE_X, MauvilleCity_GameCorner_EventScript_BuyMegaStones_492
 # 1121 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	case ITEM_BEEDRILLITE, MauvilleCity_GameCorner_EventScript_BuyMegaStones_493
 # 1128 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -2603,7 +2603,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_6:
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_10:
 # 958 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_1, ITEM_VENUSAURITE_Z
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_1, ITEM_VENUSAURITE_X
 	goto MauvilleCity_GameCorner_EventScript_BuyMegaStones_9
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_11:
@@ -2643,7 +2643,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_26:
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_30:
 # 962 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	dynmultipush MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_5, ITEM_BLASTOISINITE_Z
+	dynmultipush MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_5, ITEM_BLASTOISINITE_X
 	goto MauvilleCity_GameCorner_EventScript_BuyMegaStones_29
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_31:
@@ -3288,7 +3288,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_350:
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_351:
 # 1034 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_unset FLAG_IS_CHAMPION, MauvilleCity_GameCorner_EventScript_BuyMegaStones_350
+	goto_if_set FLAG_BADGE08_GET, MauvilleCity_GameCorner_EventScript_BuyMegaStones_350
 	goto MauvilleCity_GameCorner_EventScript_BuyMegaStones_349
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_355:
@@ -7865,7 +7865,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_0:
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_1:
 # 958 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Venusaur Z   500 coins$"
+	.string "Venusaur X   500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_2:
 # 959 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -7881,7 +7881,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_4:
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_5:
 # 962 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Blastoise Z  500 coins$"
+	.string "Blastoise X  500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_6:
 # 963 "data/maps/MauvilleCity_GameCorner/scripts.pory"

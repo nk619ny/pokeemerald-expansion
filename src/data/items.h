@@ -5651,9 +5651,9 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_Venusaurite,
     },
 
-    [ITEM_VENUSAURITE_Z] =
+    [ITEM_VENUSAURITE_X] =
     {
-        .name = ITEM_NAME("Venusaurite Z"),
+        .name = ITEM_NAME("Venusaurite X"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
@@ -5716,9 +5716,9 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_Blastoisinite,
     },
 
-    [ITEM_BLASTOISINITE_Z] =
+    [ITEM_BLASTOISINITE_X] =
     {
-        .name = ITEM_NAME("Blastoisinite Z"),
+        .name = ITEM_NAME("Blastoisinite X"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(

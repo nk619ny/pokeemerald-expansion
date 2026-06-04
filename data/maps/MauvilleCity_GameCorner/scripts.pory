@@ -955,11 +955,11 @@ script MauvilleCity_GameCorner_EventScript_BuyMegaStones{
 		goto(MauvilleCity_GameCorner_EventScript_NeedMegaRing)
 	}
 	if(!checkitem(ITEM_VENUSAURITE) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Venusaur      500 coins",ITEM_VENUSAURITE)}
-	if(!checkitem(ITEM_VENUSAURITE_Z) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Venusaur Z   500 coins",ITEM_VENUSAURITE_Z)}
+	if(!checkitem(ITEM_VENUSAURITE_X) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Venusaur X   500 coins",ITEM_VENUSAURITE_X)}
 	if(!checkitem(ITEM_CHARIZARDITE_X) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Charizard X  500 coins",ITEM_CHARIZARDITE_X)}
 	if(!checkitem(ITEM_CHARIZARDITE_Y) && flag(FLAG_BADGE08_GET)) 		{dynmultipush("Charizard Y  500 coins",ITEM_CHARIZARDITE_Y)}
 	if(!checkitem(ITEM_BLASTOISINITE) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Blastoise     500 coins",ITEM_BLASTOISINITE)}
-	if(!checkitem(ITEM_BLASTOISINITE_Z) && !flag(FLAG_IS_CHAMPION)) 	{dynmultipush("Blastoise Z  500 coins",ITEM_BLASTOISINITE_Z)}
+	if(!checkitem(ITEM_BLASTOISINITE_X) && !flag(FLAG_IS_CHAMPION)) 	{dynmultipush("Blastoise X  500 coins",ITEM_BLASTOISINITE_X)}
 	if(!checkitem(ITEM_BEEDRILLITE) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Beedrill        500 coins",ITEM_BEEDRILLITE)}
 	if(!checkitem(ITEM_PIDGEOTITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Pidgeot        500 coins",ITEM_PIDGEOTITE)}
 	if(!checkitem(ITEM_ALAKAZITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Alakazam      500 coins",ITEM_ALAKAZITE)}
@@ -1031,7 +1031,7 @@ script MauvilleCity_GameCorner_EventScript_BuyMegaStones{
 	//if(!checkitem(ITEM_HEATRANITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Heatran         500 coins",ITEM_HEATRANITE)}
 	//if(!checkitem(ITEM_DARKRANITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Darkrai          500 coins",ITEM_DARKRANITE)}
 	//if(!checkitem(ITEM_ZERAORITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Zeraora         500 coins",ITEM_ZERAORITE)}
-	if(!checkitem(ITEM_RAICHUNITE_X) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Raichu X        500 coins",ITEM_RAICHUNITE_X)}
+	if(!checkitem(ITEM_RAICHUNITE_X) && flag(FLAG_BADGE08_GET)) 		{dynmultipush("Raichu X        500 coins",ITEM_RAICHUNITE_X)}
 	if(!checkitem(ITEM_RAICHUNITE_Y) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Raichu Y        500 coins",ITEM_RAICHUNITE_Y)}
 	if(!checkitem(ITEM_CHIMECHITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Chimecho       500 coins",ITEM_CHIMECHITE)}
 	if(!checkitem(ITEM_ABSOLITE_Z) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Absol Z          500 coins",ITEM_ABSOLITE_Z)}
@@ -1083,7 +1083,7 @@ script MauvilleCity_GameCorner_EventScript_BuyMegaStones{
             goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
             removecoins(500)
             additem(TempVar_PrizeToBuy)
-	    case ITEM_VENUSAURITE_Z:
+	    case ITEM_VENUSAURITE_X:
 			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 500)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
@@ -1111,7 +1111,7 @@ script MauvilleCity_GameCorner_EventScript_BuyMegaStones{
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
 			removecoins(500)
 			additem(TempVar_PrizeToBuy)
-	    case ITEM_BLASTOISINITE_Z:
+	    case ITEM_BLASTOISINITE_X:
 			goto_if_lt(TempVar_CurrentCoins, 500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
 			buffernumberstring(STR_VAR_2, 500)
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
