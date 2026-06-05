@@ -4202,6 +4202,10 @@ static void HandleTurnActionSelectionState(void)
                         || gBattleMons[battler].volatiles.rechargeTimer > 0)
                     {
                         gChosenActionByBattler[battler] = B_ACTION_USE_MOVE;
+//                        if (GetBattlerHoldEffect(battler) == HOLD_EFFECT_LAGGING_TAIL)
+//                            gProtectStructs[battler].laggingTail = TRUE;
+//                        if (IsBattleMoveStatus(gLockedMoves[battler]) && GetBattlerAbility(battler) == ABILITY_MYCELIUM_MIGHT)
+//                            gProtectStructs[battler].myceliumMight = TRUE;
                         gBattleCommunication[battler] = STATE_WAIT_ACTION_CONFIRMED_STANDBY;
                     }
                     else if (WILD_DOUBLE_BATTLE
@@ -4821,6 +4825,8 @@ s32 GetChosenMovePriority(enum BattlerId battler, enum Ability ability)
     gProtectStructs[battler].pranksterElevated = FALSE;
     if (gProtectStructs[battler].noValidMoves)
         move = MOVE_STRUGGLE;
+//    else if (gBattleMons[battler].volatiles.multipleTurns || gBattleMons[battler].volatiles.rechargeTimer > 0)
+//        move = gLockedMoves[battler];
     else
         move = GetBattlerChosenMove(battler);
 
