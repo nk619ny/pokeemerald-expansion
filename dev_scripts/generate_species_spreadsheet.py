@@ -123,6 +123,27 @@ TYPE_COLORS = {
 THIN_SIDE = Side(style="thin", color="000000")
 THIN_BORDER = Border(left=THIN_SIDE, right=THIN_SIDE, top=THIN_SIDE, bottom=THIN_SIDE)
 HEADER_FILL = PatternFill(fill_type="solid", fgColor="00DDDDDD")
+FORM_TOKEN_LABELS = {
+    "ALOLA": "Alola",
+    "GALAR": "Galar",
+    "HISUI": "Hisui",
+    "PALDEA": "Paldea",
+    "MEGA": "Mega",
+    "PRIMAL": "Primal",
+    "THERIAN": "Therian",
+    "INCARNATE": "Incarnate",
+    "ORIGIN": "Origin",
+    "RESOLUTE": "Resolute",
+    "COMPLETE": "Complete",
+    "ZEN": "Zen",
+    "CROWNED": "Crowned",
+    "BLOODMOON": "Bloodmoon",
+    "WHITE": "White",
+    "BLACK": "Black",
+    "X": "X",
+    "Y": "Y",
+    "Z": "Z",
+}
 
 
 @dataclass
@@ -434,11 +455,13 @@ class Phase2SpeciesParser:
         hidden_ability = "ABILITY_NONE"
 
         for line in block_lines:
-            if m := SPECIES_NAME_RE.match(line):
+            line_no_comment = strip_trailing_line_comment(line)
+
+            if m := SPECIES_NAME_RE.match(line_no_comment):
                 species_name = m.group(1)
                 continue
 
-            if m := TYPES_FIELD_RE.match(line):
+            if m := TYPES_FIELD_RE.match(line_no_comment):
                 parsed_types = [part.strip() for part in m.group(1).split(",") if part.strip()]
                 if parsed_types:
                     type1 = parsed_types[0]
@@ -446,7 +469,7 @@ class Phase2SpeciesParser:
                     type2 = parsed_types[1]
                 continue
 
-            if m := ABILITIES_FIELD_RE.match(line):
+            if m := ABILITIES_FIELD_RE.match(line_no_comment):
                 parsed_abilities = [part.strip() for part in m.group(1).split(",") if part.strip()]
                 if parsed_abilities:
                     ability1 = parsed_abilities[0]
@@ -456,7 +479,7 @@ class Phase2SpeciesParser:
                     hidden_ability = parsed_abilities[2]
                 continue
 
-            if m := ABILITIES_MACRO_FIELD_RE.match(line):
+            if m := ABILITIES_MACRO_FIELD_RE.match(line_no_comment):
                 macro_name = m.group(1)
                 macro_value = macros.get(macro_name, "")
                 if macro_value.startswith("{") and macro_value.endswith("}"):
@@ -469,7 +492,7 @@ class Phase2SpeciesParser:
                         hidden_ability = parsed_abilities[2]
                 continue
 
-            if m := STAT_FIELD_RE.match(line):
+            if m := STAT_FIELD_RE.match(line_no_comment):
                 field_name = m.group(1)
                 expression = m.group(2).strip()
                 values[field_name] = Phase3ExpressionEvaluator.eval_stat(expression, macros)
@@ -484,6 +507,8 @@ class Phase2SpeciesParser:
         }
         if not required_fields.issubset(values):
             return None
+
+        species_name = build_display_species_name(species_key, species_name)
 
         return SpeciesRecord(
             species_key=species_key,
@@ -702,6 +727,61 @@ def merge_species(
         )
 
     return merged
+
+
+def strip_trailing_line_comment(line: str) -> str:
+    comment_index = line.find("//")
+    if comment_index == -1:
+        return line
+    return line[:comment_index].rstrip()
+
+
+def normalize_name_for_species_key(species_name: str) -> str:
+    normalized = species_name.upper()
+    normalized = normalized.replace(".", "")
+    normalized = normalized.replace("'", "")
+    normalized = normalized.replace("-", "_")
+    normalized = normalized.replace(" ", "_")
+    normalized = normalized.replace("%", "")
+    normalized = re.sub(r"_+", "_", normalized).strip("_")
+    return normalized
+
+
+def format_form_suffix(suffix: str) -> str:
+    tokens = [token for token in suffix.split("_") if token]
+    if not tokens:
+        return ""
+    return " ".join(FORM_TOKEN_LABELS.get(token, token.title()) for token in tokens)
+
+
+def build_display_species_name(species_key: str, species_name: str) -> str:
+    key_body = species_key.removeprefix("SPECIES_")
+    normalized_name = normalize_name_for_species_key(species_name)
+
+    if key_body == normalized_name:
+        return species_name
+
+    suffix = ""
+    if normalized_name and key_body.startswith(normalized_name + "_"):
+        suffix = key_body[len(normalized_name) + 1 :]
+    elif "_MEGA_" in key_body:
+        suffix = key_body.split("_MEGA_", maxsplit=1)[1]
+        suffix = f"MEGA_{suffix}"
+    elif key_body.endswith("_MEGA"):
+        suffix = "MEGA"
+    elif key_body.endswith("_ALOLA"):
+        suffix = "ALOLA"
+    elif key_body.endswith("_GALAR"):
+        suffix = "GALAR"
+    elif key_body.endswith("_HISUI"):
+        suffix = "HISUI"
+    elif key_body.endswith("_PALDEA"):
+        suffix = "PALDEA"
+
+    formatted_suffix = format_form_suffix(suffix)
+    if not formatted_suffix:
+        return species_name
+    return f"{species_name} {formatted_suffix}"
 
 
 def format_type(type_value: str) -> str:
