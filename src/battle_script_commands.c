@@ -2366,7 +2366,7 @@ static void SetNonVolatileStatus(enum BattlerId effectBattler, enum MoveEffect e
 
 static inline bool32 IgnoreTargetingForMoveEffect(enum MoveEffect moveEffect) // Currently only used to determine move effects which happen even if the move's defined effectbattler is fainted
 {
-    switch (moveEffect) 
+    switch (moveEffect)
     {
     case MOVE_EFFECT_PAYDAY:
     case MOVE_EFFECT_BUG_BITE:
@@ -2378,7 +2378,7 @@ static inline bool32 IgnoreTargetingForMoveEffect(enum MoveEffect moveEffect) //
     case MOVE_EFFECT_SANDSTORM:
     case MOVE_EFFECT_HAIL:
     case MOVE_EFFECT_MISTY_TERRAIN:
-    case MOVE_EFFECT_GRASSY_TERRAIN: 
+    case MOVE_EFFECT_GRASSY_TERRAIN:
     case MOVE_EFFECT_ELECTRIC_TERRAIN:
     case MOVE_EFFECT_PSYCHIC_TERRAIN:
     case MOVE_EFFECT_DEFOG:
@@ -2465,7 +2465,7 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
         gBattlescriptCurrInstr = battleScript;
         return;
     }
-    
+
     gBattleScripting.battler = battlerAtk;
     gEffectBattler = effectBattler;
 
@@ -2834,8 +2834,6 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
         s32 recoil = (gBattleMons[gEffectBattler].maxHP) / 4;
         if (recoil == 0)
             recoil = 1;
-        if (abilities[gEffectBattler] == ABILITY_PARENTAL_BOND)
-            recoil *= 2;
         SetPassiveDamageAmount(gEffectBattler, recoil);
         TryUpdateEvolutionTracker(IF_RECOIL_DAMAGE_GE, gBattleStruct->passiveHpUpdate[gBattlerAttacker], MOVE_NONE);
         BattleScriptPush(battleScript);
@@ -10006,6 +10004,7 @@ static void HandleRoomMove(u32 statusFlag, u16 *timer, u8 stringId)
     if (gFieldStatuses & statusFlag)
     {
         gFieldStatuses &= ~statusFlag;
+        *timer = 0;
         gBattleCommunication[MULTISTRING_CHOOSER] = stringId + 1;
     }
     else
@@ -10566,7 +10565,8 @@ static void FinalizeCapture(void)
 {
     u32 ballId = ItemIdToBallId(gLastThrownBall);
     enum NationalDexOrder natDexNo = SpeciesToNationalPokedexNum(gBattleMons[gBattlerTarget].species);
-    if (GetConfig(B_CRITICAL_CAPTURE_IF_OWNED) >= GEN_9 && GetSetPokedexFlag(natDexNo, FLAG_GET_CAUGHT))
+    if ((GetConfig(B_CRITICAL_CAPTURE_IF_OWNED) >= GEN_9 && GetSetPokedexFlag(natDexNo, FLAG_GET_CAUGHT))
+        || IsCriticalCapture())
     {
         gBattleSpritesDataPtr->animationData->isCriticalCapture = TRUE;
         gBattleSpritesDataPtr->animationData->criticalCaptureSuccess = TRUE;
@@ -10955,6 +10955,9 @@ static void Cmd_handleballthrow(void)
         if (gBattleResults.catchAttempts[ballId] < 255)
             gBattleResults.catchAttempts[ballId]++;
 
+        gBattleSpritesDataPtr->animationData->isCriticalCapture = FALSE;
+        gBattleSpritesDataPtr->animationData->criticalCaptureSuccess = FALSE;
+
         //Master Ball check occurs before critical capture check
         if (odds == CAPTURE_GUARANTEED)
         {
@@ -10964,9 +10967,6 @@ static void Cmd_handleballthrow(void)
 
         u8 shakes;
         u8 maxShakes;
-
-        gBattleSpritesDataPtr->animationData->isCriticalCapture = FALSE;
-        gBattleSpritesDataPtr->animationData->criticalCaptureSuccess = FALSE;
 
         if (CriticalCapture(odds))
         {
@@ -10992,8 +10992,6 @@ static void Cmd_handleballthrow(void)
 
         if (shakes == maxShakes) // mon caught, copy of the code above
         {
-            if (IsCriticalCapture())
-                gBattleSpritesDataPtr->animationData->criticalCaptureSuccess = TRUE;
             FinalizeCapture();
             return;
         }
@@ -12807,8 +12805,9 @@ void BS_TryWindRiderPower(void)
 
     enum BattlerId battler = GetBattlerForBattleScript(cmd->battler);
     enum Ability ability = GetBattlerAbility(battler);
-    if (IsBattlerAlly(battler, gBattlerAttacker)
-        && (ability == ABILITY_WIND_RIDER || ability == ABILITY_WIND_POWER))
+    if (IsBattlerAlive(battler)
+     && IsBattlerAlly(battler, gBattlerAttacker)
+     && (ability == ABILITY_WIND_RIDER || ability == ABILITY_WIND_POWER))
     {
         gLastUsedAbility = ability;
         RecordAbilityBattle(battler, gLastUsedAbility);
@@ -14046,16 +14045,18 @@ void BS_RestoreMovePp(void)
 void BS_TryActivateReceiver(void)
 {
     NATIVE_ARGS(u8 battler);
-    enum BattlerId battler = GetBattlerForBattleScript(cmd->battler);
-    gBattlerAbility = BATTLE_PARTNER(battler);
-    u32 partnerAbility = GetBattlerAbility(gBattlerAbility);
-    if (IsBattlerAlive(gBattlerAbility)
-        && (partnerAbility == ABILITY_RECEIVER || partnerAbility == ABILITY_POWER_OF_ALCHEMY)
-        && GetBattlerHoldEffectIgnoreAbility(battler) != HOLD_EFFECT_ABILITY_SHIELD
-        && !gAbilitiesInfo[gBattleMons[battler].ability].cantBeCopied)
+    enum BattlerId faintedBattler = GetBattlerForBattleScript(cmd->battler);
+    enum BattlerId receiverBattler = BATTLE_PARTNER(faintedBattler);
+    enum Ability receiverAbility = GetBattlerAbility(receiverBattler);
+
+    if (IsBattlerAlive(receiverBattler)
+     && (receiverAbility == ABILITY_RECEIVER || receiverAbility == ABILITY_POWER_OF_ALCHEMY)
+     && GetBattlerHoldEffectIgnoreAbility(receiverBattler) != HOLD_EFFECT_ABILITY_SHIELD
+     && !gAbilitiesInfo[gBattleMons[faintedBattler].ability].cantBeCopied)
     {
-        gBattleStruct->tracedAbility[gBattlerAbility] = gBattleMons[battler].ability; // re-using the variable for trace
-        gBattleScripting.battler = battler;
+        gBattlerAbility = receiverBattler;
+        gBattleStruct->tracedAbility[receiverBattler] = gBattleMons[faintedBattler].ability; // re-using the variable for trace
+        gBattleScripting.battler = faintedBattler;
         BattleScriptPush(cmd->nextInstr);
         gBattlescriptCurrInstr = BattleScript_ReceiverActivates;
     }

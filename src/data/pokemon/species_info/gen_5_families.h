@@ -4551,7 +4551,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eliteLearnset = sPetililEliteLearnset,
         .eggMoveLearnset = sPetililEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT},
-                                {EVO_NONE, ITEM_LEAF_STONE, SPECIES_LILLIGANT_HISUI}),
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LILLIGANT_HISUI}),
     },
 
     [SPECIES_LILLIGANT] =
