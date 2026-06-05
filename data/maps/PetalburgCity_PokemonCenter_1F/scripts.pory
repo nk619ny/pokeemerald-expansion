@@ -1,0 +1,197 @@
+raw`
+PetalburgCity_PokemonCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_PokemonCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+PetalburgCity_PokemonCenter_1F_OnTransition:
+	setrespawn HEAL_LOCATION_PETALBURG_CITY
+	call Common_EventScript_UpdateBrineyLocation
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_Nurse::
+	setvar VAR_0x800B, LOCALID_PETALBURG_NURSE
+	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_FatMan::
+	msgbox PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem, MSGBOX_NPC
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_Youngster::
+	msgbox PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP, MSGBOX_NPC
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_Woman::
+	lock
+	faceplayer
+	msgbox PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon, MSGBOX_DEFAULT
+	specialvar VAR_RESULT, IsStarterInParty
+	goto_if_eq VAR_RESULT, TRUE, PetalburgCity_PokemonCenter_1F_EventScript_SayStarterTypeInfo
+	release
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_SayStarterTypeInfo::
+	call_if_eq VAR_STARTER_MON, 0, PetalburgCity_PokemonCenter_1F_EventScript_SayTreeckoType
+	call_if_eq VAR_STARTER_MON, 1, PetalburgCity_PokemonCenter_1F_EventScript_SayTorchicType
+	call_if_eq VAR_STARTER_MON, 2, PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType
+	release
+	end
+
+PetalburgCity_PokemonCenter_1F_EventScript_SayTreeckoType::
+	msgbox PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType, MSGBOX_DEFAULT
+	return
+
+PetalburgCity_PokemonCenter_1F_EventScript_SayTorchicType::
+	msgbox PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType, MSGBOX_DEFAULT
+	return
+
+PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType::
+	msgbox PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType, MSGBOX_DEFAULT
+	return
+
+PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
+	.string "That PC-based Pokémon Storage\n"
+	.string "System…\p"
+	.string "Whoever made it must be some kind\n"
+	.string "of a scientific wizard!$"
+
+PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP:
+	.string "When my Pokémon ate an\n"
+	.string "ORAN BERRY, it regained HP!$"
+
+PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
+	.string "There are many types of Pokémon.\p"
+	.string "All types have their strengths and\n"
+	.string "weaknesses against other types.\p"
+	.string "Depending on the types of Pokémon,\n"
+	.string "a battle could be easy or hard.$"
+
+PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
+	.string "For example, your TREECKO\n"
+	.string "is a GRASS type.\p"
+	.string "It's strong against the WATER and\n"
+	.string "GROUND types.\p"
+	.string "But, it's weak against FIRE-type\n"
+	.string "Pokémon.$"
+
+PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
+	.string "For example, your TORCHIC\n"
+	.string "is a FIRE type.\p"
+	.string "It's strong against the GRASS and\n"
+	.string "BUG types.\p"
+	.string "But, it's weak against WATER-type\n"
+	.string "Pokémon.$"
+
+PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
+	.string "For example, your MUDKIP\n"
+	.string "is a WATER type.\p"
+	.string "It's strong against the FIRE type.\p"
+	.string "But, it's weak against GRASS-type\n"
+	.string "and ELECTRIC-type Pokémon.$"
+
+`
+
+script PokemonCenter_1F_EventScript_Abra{
+    lock
+    if(!flag(FLAG_VISITED_DEWFORD_TOWN)) {
+        msgbox(format("The Abra is not responding to your presence. It seems to be in a deep sleep."))
+        closemessage
+        releaseall
+        end
+    }
+    msgbox(format("Use Abra to teleport?"),MSGBOX_YESNO)
+    if(var(VAR_RESULT) == NO) {
+        closemessage
+        releaseall
+        end
+    }
+	if(flag(FLAG_VISITED_PETALBURG_CITY)){dynmultipush("Petalburg",1)}
+	if(flag(FLAG_VISITED_DEWFORD_TOWN)){dynmultipush("Dewford",2)}
+    if(flag(FLAG_VISITED_SLATEPORT_CITY)){dynmultipush("Slateport",3)}
+    if(flag(FLAG_VISITED_MAUVILLE_CITY)){dynmultipush("Mauville",4)}
+    //if(flag(FLAG_VISITED_LAVARIDGE_TOWN)){dynmultipush("Lavaridge",5)}
+    if(flag(FLAG_VISITED_FALLARBOR_TOWN)){dynmultipush("Fallarbor",6)}
+    //if(flag(FLAG_VISITED_RUSTBORO_CITY)){dynmultipush("Rustboro",7)}
+    if(flag(FLAG_VISITED_FORTREE_CITY)){dynmultipush("Fortree",8)}
+    dynmultipush("Nevermind",127)
+    dynmultistack(25,2,FALSE,5,0,1,DYN_MULTICHOICE_CB_NONE)
+    switch(var(VAR_RESULT)) {
+        case 1:
+            msgbox(format("Abra used Teleport!"))
+            delay(30)
+            clearflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)
+            clearflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)
+            clearflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)
+            setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
+            setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
+            setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)
+            setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)
+            warpteleport(MAP_PETALBURG_CITY,20,17)
+            break
+        case 2:
+            msgbox(format("Abra used Teleport!"))
+            delay(30)
+            setflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)
+            setflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)
+            setflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)
+            clearflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
+            clearflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
+            setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)
+            setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)
+            warpteleport(MAP_DEWFORD_TOWN,17,11)
+            break
+        case 3:
+            msgbox(format("Abra used Teleport!"))
+            delay(30)
+            setflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)
+            setflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)
+            setflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)
+            setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
+            setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
+            clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)
+            clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)
+            warpteleport(MAP_SLATEPORT_CITY,25,20)
+            break
+        case 4:
+            msgbox(format("Abra used Teleport!"))
+            delay(30)
+            setflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)
+            setflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)
+            setflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)
+            setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
+            setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
+            clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)
+            clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)
+            warpteleport(MAP_MAUVILLE_CITY,22,9)
+            break
+        //case 5:
+        //    warpteleport(MAP_LAVARIDGE_TOWN,0,0)
+        //    break
+        case 6:
+            msgbox(format("Abra used Teleport!"))
+            delay(30)
+            warpteleport(MAP_FALLARBOR_TOWN,16,8)
+            break
+        //case 7:
+        //    warpteleport(MAP_RUSTBORO_CITY,0,0)
+        //    break
+        case 8:
+            msgbox(format("Abra used Teleport!"))
+            delay(30)
+            warpteleport(MAP_FORTREE_CITY,5,7)
+            break
+        case 127:
+        default:
+            closemessage
+            releaseall
+            end
+    }
+    closemessage
+    waitstate
+    releaseall
+    end
+}

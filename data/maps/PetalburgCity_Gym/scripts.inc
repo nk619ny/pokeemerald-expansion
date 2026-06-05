@@ -926,7 +926,7 @@ PetalburgCity_Gym_EventScript_WallysDadArrives::
 # 476 "data/maps/PetalburgCity_Gym/scripts.pory"
 	removeobject LOCALID_PETALBURG_GYM_WALLYS_DAD
 # 477 "data/maps/PetalburgCity_Gym/scripts.pory"
-	setvar VAR_PETALBURG_CITY_STATE, 4
+	//setvar VAR_PETALBURG_CITY_STATE, 4
 # 478 "data/maps/PetalburgCity_Gym/scripts.pory"
 	clearflag FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD
 # 479 "data/maps/PetalburgCity_Gym/scripts.pory"

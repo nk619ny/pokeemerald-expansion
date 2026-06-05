@@ -7,9 +7,9 @@
 # 4 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_MapScripts::
 # 5 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_WallysHouse_OnFrame
+	//map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_WallysHouse_OnFrame
 # 6 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, PetalburgCity_WallysHouse_OnWarp
+	//map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, PetalburgCity_WallysHouse_OnWarp
 # 7 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	.byte 0
 # 8 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -17,7 +17,7 @@ PetalburgCity_WallysHouse_MapScripts::
 # 9 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_OnWarp:
 # 10 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther
+	//map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther
 # 11 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	.2byte 0
 # 12 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -25,9 +25,9 @@ PetalburgCity_WallysHouse_OnWarp:
 # 13 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther::
 # 14 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+	//turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 # 15 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	turnobject LOCALID_WALLYS_HOUSE_WALLYS_DAD, DIR_WEST
+	//turnobject LOCALID_WALLYS_HOUSE_WALLYS_DAD, DIR_WEST
 # 16 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	end
 # 17 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -35,7 +35,7 @@ PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther::
 # 18 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 PetalburgCity_WallysHouse_OnFrame:
 # 19 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_WallysHouse_EventScript_GiveHMSurf
+	//map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_WallysHouse_EventScript_GiveHMSurf
 # 20 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	.2byte 0
 # 21 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -47,13 +47,13 @@ PetalburgCity_WallysHouse_EventScript_GiveHMSurf::
 # 24 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	msgbox PetalburgCity_WallysHouse_Text_PleaseExcuseUs, MSGBOX_DEFAULT
 # 25 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	giveitem ITEM_HM_SURF
+	//giveitem ITEM_HM_SURF
 # 26 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	setflag FLAG_RECEIVED_HM_SURF
+	//setflag FLAG_RECEIVED_HM_SURF
 # 27 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	msgbox PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces, MSGBOX_DEFAULT
+	//msgbox PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces, MSGBOX_DEFAULT
 # 28 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	setvar VAR_PETALBURG_CITY_STATE, 5
+	//setvar VAR_PETALBURG_CITY_STATE, 5
 # 29 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	releaseall
 # 30 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -69,9 +69,9 @@ PetalburgCity_WallysHouse_EventScript_WallysDad::
 # 35 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, PetalburgCity_WallysHouse_EventScript_DefeatedWallyInVictoryRoad
 # 36 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	goto_if_set FLAG_RECEIVED_HM_SURF, PetalburgCity_WallysHouse_EventScript_ReceievedHMSurf
+	//goto_if_set FLAG_RECEIVED_HM_SURF, PetalburgCity_WallysHouse_EventScript_ReceievedHMSurf
 # 37 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	goto_if_set FLAG_THANKED_FOR_PLAYING_WITH_WALLY, PetalburgCity_WallysHouse_EventScript_PlayedWithWally
+	//goto_if_set FLAG_THANKED_FOR_PLAYING_WITH_WALLY, PetalburgCity_WallysHouse_EventScript_PlayedWithWally
 # 38 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	msgbox PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally, MSGBOX_DEFAULT
 # 39 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -185,7 +185,7 @@ PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
 # 93 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	.string "since he went to VERDANTURF TOWN.\p"
 # 94 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	.string "We owe it all to you!\p"
+//	.string "We owe it all to you!\p"
 # 95 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 //	.string "When WALLY left town, you helped\n"
 # 96 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
@@ -197,15 +197,15 @@ PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
 # 99 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 //	.string "Actually, not just WALLY.\n"
 # 100 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	.string "It made me, his father, happy too.\p"
+	.string "It made me, his father, happy too.$"
 # 101 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	.string "Happy that he's gained such a great\n"
+//	.string "Happy that he's gained such a great\n"
 # 102 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	.string "friend as you.\p"
+//	.string "friend as you.\p"
 # 103 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	.string "This isn't a bribe or anything, but\n"
+//	.string "This isn't a bribe or anything, but\n"
 # 104 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	.string "I'd really like you to have this.$"
+//	.string "I'd really like you to have this.$"
 # 105 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 
 # 106 "data/maps/PetalburgCity_WallysHouse/scripts.pory"

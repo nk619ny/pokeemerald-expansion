@@ -1089,7 +1089,7 @@
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
 #define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
-#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F
+#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F // now unused, available to use
 #define FLAG_ITEM_ROUTE_110_BLACK_SLUDGE                              0x410 //repurposed
 #define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412

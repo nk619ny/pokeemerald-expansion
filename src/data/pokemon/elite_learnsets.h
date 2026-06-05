@@ -10004,9 +10004,6 @@ static const u16 sEternatusEliteLearnset[] = {
 #endif //P_FAMILY_ETERNATUS
 
 #if P_FAMILY_KUBFU
-static const u16 sUrshifuEliteLearnset[] = {
-    MOVE_UNAVAILABLE,
-};
 
 static const u16 sKubfuEliteLearnset[] = {
     MOVE_SURGING_STRIKES,

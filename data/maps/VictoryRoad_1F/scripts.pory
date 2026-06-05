@@ -76,7 +76,9 @@ VictoryRoad_1F_EventScript_WallyEntranceBattle::
 
 VictoryRoad_1F_EventScript_WallyPostBattle::
 	lock
-	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
+	//msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
+	msgbox VictoryRoad_1F_Text_WallyAbilityPatch, MSGBOX_DEFAULT
+	giveitem ITEM_ABILITY_PATCH
 	setflag FLAG_DEFEATED_WALLY_VICTORY_ROAD
 	//copyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008
 	setvar VAR_LEVEL_CAP, 85
@@ -308,3 +310,6 @@ script VictoryRoad_1F_EventScript_WallyNew {
     end
 }
 
+text VictoryRoad_1F_Text_WallyAbilityPatch {
+	format("When we met in Petalburg, we we're just beginning to realize our potential, {PLAYER}.\pYour Pokémon still have further Hidden Potential, too. I know it!\pTake this, and help them realize it!")
+}
