@@ -2796,7 +2796,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sWoobatTeachableLearnset,
         .eliteLearnset = sWoobatEliteLearnset,
         .eggMoveLearnset = sWoobatEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SWOOBAT, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_SWOOBAT}), //changed from friendship
     },
 
     [SPECIES_SWOOBAT] =
@@ -3951,7 +3951,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sSwadloonLevelUpLearnset,
         .teachableLearnset = sSwadloonTeachableLearnset,
         .eliteLearnset = sSwadloonEliteLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_LEAVANNY, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_LEAVANNY}), //changed from friendship
     },
 
     [SPECIES_LEAVANNY] =

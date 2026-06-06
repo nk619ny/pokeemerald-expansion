@@ -9910,8 +9910,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Kubfu @ Weakness Policy
 Ability: Inner Focus  
 Ball: Sport
-Level: 25
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Jolly Nature  
 - Wicked Blow  
 - Surging Strikes  
@@ -9941,7 +9941,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Combusken @ Wise Glasses
 Ability: Speed Boost  
 Ball: Fast
-Level: 25
+Level: 23
 Tera Type: Grass
 EVs: 64 SpA
 - Flame Burst  
@@ -9950,11 +9950,10 @@ EVs: 64 SpA
 - Detect  
 
 Perrserker @ Expert Belt
-Ability: Tough Claws
+Ability: Tough Claws /* Adamant Nature  */
 Ball: Heavy
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Adamant Nature  
 - Fake Out  
 - Iron Head  
 - Shadow Claw  
@@ -9964,7 +9963,6 @@ Hariyama @ Sitrus Berry
 Ability: Guts  
 Ball: Level
 Level: 24
-EVs: 64 Def / 64 SpD  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Careful Nature  
 - Fake Out  
@@ -10167,7 +10165,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Slack Off  
 - Yawn  
 - Scratch
-- Rock Smash  
+- Metal Claw
 
 Eevee @ Leppa Berry
 Ball: Premier
@@ -15233,7 +15231,7 @@ Tera Type: Dark
 - Helping Hand  
 
 Pawmi  
-Ability: Volt Absorb  
+Ability: Static
 Level: 22
 Tera Type: Electric  
 - Spark  

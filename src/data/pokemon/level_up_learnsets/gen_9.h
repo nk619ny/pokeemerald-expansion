@@ -8150,13 +8150,12 @@ static const struct LevelUpMove sShroomishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_GROWTH),
     LEVEL_UP_MOVE(33, MOVE_TOXIC),
     LEVEL_UP_MOVE(36, MOVE_SEED_BOMB),
-    LEVEL_UP_MOVE(40, MOVE_SPORE),
+    LEVEL_UP_MOVE(39, MOVE_SPORE), //lowered by 1 to be available for Winstrates
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sBreloomLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_MACH_PUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_SPORE),
     LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
@@ -8175,6 +8174,7 @@ static const struct LevelUpMove sBreloomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_SKY_UPPERCUT), //added from USUM
     LEVEL_UP_MOVE(44, MOVE_SEED_BOMB),
     LEVEL_UP_MOVE(50, MOVE_DYNAMIC_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_SPORE), //changed from 1 to make delay worth considering
     LEVEL_UP_MOVE(55, MOVE_FOCUS_PUNCH),
     LEVEL_UP_END
 };
