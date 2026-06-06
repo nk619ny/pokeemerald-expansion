@@ -1368,7 +1368,7 @@ script SlateportCity_EventScript_FarmSign {
 script SlateportCity_EventScript_EnergyGuruNew {
 	lock
 	faceplayer
-	msgbox(format("I used to sell special vitamins for Pokémon.\nBut they've gotten harder to find, so I've closed my store for now."), MSGBOX_NPC)
+	msgbox(format("I used to sell special vitamins for Pokémon.\pBut they've gotten harder to find, so I've closed my store for now."), MSGBOX_NPC)
 	release
 	end
 }

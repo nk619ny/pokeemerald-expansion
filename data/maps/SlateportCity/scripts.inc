@@ -2804,8 +2804,8 @@ SlateportCity_EventScript_FarmSign_Text_0:
 SlateportCity_EventScript_EnergyGuruNew_Text_0:
 # 1371 "data/maps/SlateportCity/scripts.pory"
 	.string "I used to sell special vitamins for\n"
-	.string "Pokémon.\n"
-	.string "But they've gotten harder to find, so\l"
+	.string "Pokémon.\p"
+	.string "But they've gotten harder to find, so\n"
 	.string "I've closed my store for now.$"
 
 SlateportCity_EventScript_AerialAce_Text_0:

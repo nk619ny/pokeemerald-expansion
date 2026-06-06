@@ -1022,7 +1022,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_PikachuOriginal[] = INCGFX_U32("graphics/pokemon/pikachu/original/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_PikachuOriginal[] = INCGFX_U16("graphics/pokemon/pikachu/original/shiny.pal", ".gbapal");
     const u8 gMonIcon_PikachuOriginal[] = INCGFX_U8("graphics/pokemon/pikachu/original/icon.png", ".4bpp");
-    const u32 gObjectEventPic_PikachuOriginal[] = INCBIN_COMP("graphics/pokemon/pikachu/original/overworld.4bpp");
+    const u32 gObjectEventPic_PikachuOriginal[] = INCGFX_COMP("graphics/pokemon/pikachu/original/overworld.png", ".4bpp");
     
 #if P_CAP_PIKACHU_FORMS
     const u32 gMonFrontPic_PikachuHoenn[] = INCGFX_U32("graphics/pokemon/pikachu/hoenn/front.png", ".4bpp.smol");

@@ -4345,6 +4345,42 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
             }
             break;
+        case ABILITY_SANDGEIST:
+            if (!gBattleStruct->unableToUseMove
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
+             && !(gBattleWeather & B_WEATHER_SANDSTORM && HasWeatherEffect()))
+            {
+                if (gBattleWeather & B_WEATHER_PRIMAL_ANY && HasWeatherEffect())
+                {
+                    BattleScriptCall(BattleScript_BlockedByPrimalWeather);
+                    effect++;
+                }
+                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SANDSTORM, ABILITY_NONE)) // use ability none since it's not a switch in ability weather setter
+                {
+                    gBattleScripting.battler = battler;
+                    BattleScriptCall(BattleScript_WeatherAbilityActivates);
+                    effect++;
+                }
+            }
+            break;
+        case ABILITY_SPOUT_SPRAY:
+            if (!gBattleStruct->unableToUseMove
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
+             && !(gBattleWeather & B_WEATHER_RAIN && HasWeatherEffect()))
+            {
+                if (gBattleWeather & B_WEATHER_PRIMAL_ANY && HasWeatherEffect())
+                {
+                    BattleScriptCall(BattleScript_BlockedByPrimalWeather);
+                    effect++;
+                }
+                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, ABILITY_NONE)) // use ability none since it's not a switch in ability weather setter
+                {
+                    gBattleScripting.battler = battler;
+                    BattleScriptCall(BattleScript_WeatherAbilityActivates);
+                    effect++;
+                }
+            }
+            break;
         case ABILITY_PERISH_BODY:
             if (!gBattleStruct->unableToUseMove
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
@@ -7070,31 +7106,7 @@ static bool32 IsRuinStatusActive(u32 fieldEffect)
 
 static bool32 IsIlluminateOnField(void)
 {
-    for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
-    {
-        if (gBattleMons[battler].volatiles.gastroAcid)
-            continue;
-        if (GetBattlerHoldEffectIgnoreAbility(battler) != HOLD_EFFECT_ABILITY_SHIELD
-         && isNeutralizingGasOnField
-         && gBattleMons[battler].ability != ABILITY_NEUTRALIZING_GAS)
-            continue;
-
-        if (gBattleMons[battler].volatiles.illuminate)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-static bool32 IsIlluminateOnField(void)
-{
-    for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
-    {
-        if (GetBattlerVolatile(battler, fieldEffect))
-            return TRUE;
-    }
-
-    return FALSE;
+    return IsRuinStatusActive(VOLATILE_ILLUMINATE);
 }
 
 static inline uq4_12_t ApplyOffensiveBadgeBoost(uq4_12_t modifier, enum BattlerId battler, enum Move move)
@@ -11048,6 +11060,9 @@ void RemoveAbilityFlags(enum BattlerId battler)
     case ABILITY_BEADS_OF_RUIN:
         gBattleMons[battler].volatiles.beadsOfRuin = FALSE;
         break;
+    case ABILITY_ILLUMINATE:
+        gBattleMons[battler].volatiles.illuminate = FALSE;
+        break;
     default:
        break;
     }
@@ -11068,6 +11083,9 @@ void RemoveRuinAbilityFlags(enum BattlerId battler)
         break;
     case ABILITY_BEADS_OF_RUIN:
         gBattleMons[battler].volatiles.beadsOfRuin = FALSE;
+        break;
+    case ABILITY_ILLUMINATE:
+        gBattleMons[battler].volatiles.illuminate = FALSE;
         break;
     default:
        break;
