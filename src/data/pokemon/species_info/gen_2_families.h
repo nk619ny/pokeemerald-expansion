@@ -6417,7 +6417,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eliteLearnset = sUrsaringEliteLearnset,
     #if P_GEN_8_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_PEAT_BLOCK, SPECIES_URSALUNA, CONDITIONS({IF_TIME, TIME_NIGHT})},
-                                {EVO_LEVEL, 0, SPECIES_URSALUNA_BLOODMOON, CONDITIONS({IF_IN_MAPSEC, MAPSEC_MT_PYRE})}),
+                                {EVO_LEVEL, 60, SPECIES_URSALUNA_BLOODMOON, CONDITIONS({IF_IN_MAPSEC, MAPSEC_MT_PYRE}, {IF_TIME, TIME_NIGHT})}),
     #endif
     },
 

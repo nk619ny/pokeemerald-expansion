@@ -5568,7 +5568,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseHP        = 65 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 15 : 0),
         .baseAttack    = 135,
         .baseDefense   = 135,
-        .baseSpeed     = 100 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 55 : 0),
+        .baseSpeed     = 100 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 5 : 0),
         .baseSpAttack  = 70,
         .baseSpDefense = 65 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_FIGHTING),
