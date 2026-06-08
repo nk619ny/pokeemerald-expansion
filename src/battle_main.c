@@ -5643,7 +5643,7 @@ static void HandleEndTurn_FinishBattle(void)
 
         BeginFastPaletteFade(3);
         FadeOutMapMusic(5);
-        if (B_TRAINERS_KNOCK_OFF_ITEMS == TRUE || B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9)
+        if (B_TRAINERS_KNOCK_OFF_ITEMS == TRUE || B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9 || B_RETURN_STOLEN_NPC_ITEMS >= GEN_5)
             TryRestoreHeldItems();
 
         for (u32 i = 0; i < PARTY_SIZE; i++)
