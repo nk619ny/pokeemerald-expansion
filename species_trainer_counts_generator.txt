@@ -1,0 +1,37 @@
+//run this directly in the terminal 
+
+$speciesFile = "c:\Users\nk619\Documents\GitHub\pokeemerald-expansion\include\constants\species.h"
+$trainersFile = "c:\Users\nk619\Documents\GitHub\pokeemerald-expansion\src\data\trainers.h"
+
+# Extract all SPECIES_ defines (not alias lines with =, and not SPECIES_NONE)
+$speciesLines = Get-Content $speciesFile
+$speciesDefines = @{}
+foreach ($line in $speciesLines) {
+    if ($line -match '^\s*#define\s+(SPECIES_\w+)\s+(\d+)\s*$') {
+        $name = $Matches[1]
+        $id = [int]$Matches[2]
+        $speciesDefines[$name] = $id
+    }
+}
+
+Write-Host "Total species defines: $($speciesDefines.Count)"
+
+# Read trainers.h
+$trainersContent = Get-Content $trainersFile -Raw
+
+# Count occurrences of each species
+$results = @()
+foreach ($species in $speciesDefines.Keys) {
+    $count = ([regex]::Matches($trainersContent, "\b$species\b")).Count
+    $results += [PSCustomObject]@{ Species = $species; Count = $count; ID = $speciesDefines[$species] }
+}
+
+# Sort by count, then by ID for stable sort
+$sorted = $results | Sort-Object Count, ID
+
+# Output CSV
+$outputPath = "c:\Users\nk619\Documents\GitHub\pokeemerald-expansion\species_trainer_counts.csv"
+$sorted | Select-Object Species, Count | Export-Csv -Path $outputPath -NoTypeInformation
+
+Write-Host "CSV written to $outputPath with $($sorted.Count) entries"
+$sorted | Where-Object { $_.Count -gt 0 } | Select-Object -Last 10 | Format-Table
