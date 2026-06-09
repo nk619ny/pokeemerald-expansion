@@ -132,9 +132,6 @@ DesertRuins_EventScript_Regirock::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 67 "data/maps/DesertRuins/scripts.pory"
 	special StartRegiBattle
-# 68 "data/maps/DesertRuins/scripts.pory"
-	waitstate
-# 69 "data/maps/DesertRuins/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 70 "data/maps/DesertRuins/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

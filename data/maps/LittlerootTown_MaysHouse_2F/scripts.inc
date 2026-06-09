@@ -602,9 +602,6 @@ LittlerootTown_MaysHouse_2F_EventScript_CheckPlayersPC::
 	msgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT
 # 302 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	special BedroomPC
-# 303 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	waitstate
-# 304 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	releaseall
 # 305 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	end

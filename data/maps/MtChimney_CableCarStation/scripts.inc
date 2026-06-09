@@ -100,9 +100,6 @@ MtChimney_CableCarStation_EventScript_RideCableCar::
 	special CableCarWarp
 # 51 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	special CableCar
-# 52 "data/maps/MtChimney_CableCarStation/scripts.pory"
-	waitstate
-# 53 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	release
 # 54 "data/maps/MtChimney_CableCarStation/scripts.pory"
 	end

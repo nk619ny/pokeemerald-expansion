@@ -160,9 +160,6 @@ SouthernIsland_Interior_EventScript_Lati::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 81 "data/maps/SouthernIsland_Interior/scripts.pory"
 	special BattleSetup_StartLatiBattle
-# 82 "data/maps/SouthernIsland_Interior/scripts.pory"
-	waitstate
-# 83 "data/maps/SouthernIsland_Interior/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 84 "data/maps/SouthernIsland_Interior/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

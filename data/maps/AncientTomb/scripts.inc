@@ -132,9 +132,6 @@ AncientTomb_EventScript_Registeel::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 67 "data/maps/AncientTomb/scripts.pory"
 	special StartRegiBattle
-# 68 "data/maps/AncientTomb/scripts.pory"
-	waitstate
-# 69 "data/maps/AncientTomb/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 70 "data/maps/AncientTomb/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

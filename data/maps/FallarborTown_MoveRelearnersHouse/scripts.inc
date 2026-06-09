@@ -103,6 +103,7 @@ FallarborTown_MoveRelearnersHouse_EventScript_ChooseMove::
 	msgbox FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove, MSGBOX_DEFAULT
 # 57 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	special TeachMoveRelearnerMove
+	goto_if_eq VAR_0x8004, 0, FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon
 # 58 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"
 	waitstate
 # 59 "data/maps/FallarborTown_MoveRelearnersHouse/scripts.pory"

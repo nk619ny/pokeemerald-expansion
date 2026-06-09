@@ -404,9 +404,6 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterSinglesChallenge::
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
 # 203 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	special ChoosePartyForBattleFrontier
-# 204 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	waitstate
-# 205 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
 # 206 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering, MSGBOX_YESNO
@@ -532,9 +529,6 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterDoublesChallenge::
 	setvar VAR_0x8005, FRONTIER_DOUBLES_PARTY_SIZE
 # 267 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	special ChoosePartyForBattleFrontier
-# 268 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	waitstate
-# 269 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
 # 270 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering, MSGBOX_YESNO
@@ -662,9 +656,6 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterMultisChallenge::
 	setvar VAR_0x8005, FRONTIER_MULTI_PARTY_SIZE
 # 332 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	special ChoosePartyForBattleFrontier
-# 333 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	waitstate
-# 334 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
 # 335 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering, MSGBOX_YESNO
@@ -790,9 +781,6 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterLinkMultisChallenge::
 	setvar VAR_0x8005, FRONTIER_MULTI_PARTY_SIZE
 # 396 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	special ChoosePartyForBattleFrontier
-# 397 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	waitstate
-# 398 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
 # 399 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	msgbox BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering, MSGBOX_YESNO
@@ -1532,9 +1520,6 @@ BattleFrontier_BattleTowerLobby_EventScript_TryCableLink::
 	setvar VAR_0x8005, 0
 # 764 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	special TryBattleLinkup
-# 765 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	waitstate
-# 766 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	goto_if_eq VAR_RESULT, LINKUP_SUCCESS, BattleFrontier_BattleTowerLobby_EventScript_CableLinkSuccessful
 # 767 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	goto_if_eq VAR_RESULT, LINKUP_SOMEONE_NOT_READY, CableClub_EventScript_AbortLinkSomeoneNotReady
@@ -1648,9 +1633,6 @@ BattleFrontier_BattleTowerLobby_EventScript_CableLinkSuccessful::
 	tower_save CHALLENGE_STATUS_SAVING
 # 822 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	special SaveForBattleTowerLink
-# 823 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	waitstate
-# 824 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	playse SE_SAVE
 # 825 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	waitse
@@ -1754,9 +1736,6 @@ BattleFrontier_BattleTowerLobby_EventScript_WirelessLinkSuccessful::
 	tower_save CHALLENGE_STATUS_SAVING
 # 875 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	special SaveForBattleTowerLink
-# 876 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	waitstate
-# 877 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	playse SE_SAVE
 # 878 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	waitse

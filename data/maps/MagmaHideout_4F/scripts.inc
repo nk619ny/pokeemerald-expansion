@@ -76,9 +76,6 @@ MagmaHideout_4F_EventScript_Maxie::
 	waitmovement 0
 # 39 "data/maps/MagmaHideout_4F/scripts.pory"
 	special FadeOutOrbEffect
-# 40 "data/maps/MagmaHideout_4F/scripts.pory"
-	waitstate
-# 41 "data/maps/MagmaHideout_4F/scripts.pory"
 	setvar VAR_0x8004, 1  @ vertical pan
 # 42 "data/maps/MagmaHideout_4F/scripts.pory"
 	setvar VAR_0x8005, 1  @ horizontal pan

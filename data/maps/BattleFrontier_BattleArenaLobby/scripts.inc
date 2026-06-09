@@ -278,9 +278,6 @@ BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge::
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
 # 140 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	special ChoosePartyForBattleFrontier
-# 141 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
-	waitstate
-# 142 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge
 # 143 "data/maps/BattleFrontier_BattleArenaLobby/scripts.pory"
 	msgbox BattleFrontier_BattleArenaLobby_Text_OkayToSave, MSGBOX_YESNO

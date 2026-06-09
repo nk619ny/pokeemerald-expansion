@@ -668,7 +668,7 @@ static bool32 HandleEndTurnOctolock(enum BattlerId battler)
 
     gBattleStruct->eventState.endTurnBattler++;
 
-    if (gBattleMons[battler].volatiles.octolock)
+    if (gBattleMons[battler].volatiles.octolock && IsBattlerAlive(battler))
     {
         gBattlerTarget = battler;
         gBattlerAttacker = gBattleMons[battler].volatiles.battlerPreventingEscape;
@@ -692,6 +692,8 @@ static bool32 HandleEndTurnSyrupBomb(enum BattlerId battler)
 
         u32 sourceMove = gBattleMons[battler].volatiles.syrupBombSourceMove;
         PREPARE_MOVE_BUFFER(gBattleTextBuff1, sourceMove ? sourceMove : MOVE_SYRUP_BOMB);
+        gBattlerTarget = battler;
+        gBattlerAttacker = gBattleMons[battler].volatiles.stickySyrupedBy;
 
         if (sourceMove == MOVE_TAR_SHOT)
             gBattlescriptCurrInstr = BattleScript_TarShotEndTurn;
@@ -1329,9 +1331,12 @@ static bool32 HandleEndTurnFormChange(enum BattlerId battler)
 {
     bool32 effect = FALSE;
 
-    enum Ability ability = GetBattlerAbility(battler);
-
     gBattleStruct->eventState.endTurnBattler++;
+
+    if (!IsBattlerAlive(battler))
+        return FALSE;
+
+    enum Ability ability = GetBattlerAbility(battler);
 
     if (TryBattleFormChange(battler, FORM_CHANGE_BATTLE_TURN_END, ability)
         || TryBattleFormChange(battler, FORM_CHANGE_BATTLE_HP_PERCENT_TURN_END, ability))

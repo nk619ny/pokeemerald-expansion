@@ -34,9 +34,6 @@ BattleFrontier_BattleTowerElevator_EventScript_EnterElevator::
 	waitse
 # 18 "data/maps/BattleFrontier_BattleTowerElevator/scripts.pory"
 	special MoveElevator
-# 19 "data/maps/BattleFrontier_BattleTowerElevator/scripts.pory"
-	waitstate
-# 20 "data/maps/BattleFrontier_BattleTowerElevator/scripts.pory"
 	delay 48
 # 21 "data/maps/BattleFrontier_BattleTowerElevator/scripts.pory"
 	applymovement LOCALID_TOWER_ELEVATOR_ATTENDANT, BattleFrontier_BattleTowerElevator_Movement_AttendantExit

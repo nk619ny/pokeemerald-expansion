@@ -234,9 +234,6 @@ BattleFrontier_OutsideEast_EventScript_WaterSudowoodo::
 	faceplayer
 # 118 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 	special DoWateringBerryTreeAnim
-# 119 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
-	waitstate
-# 120 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 	waitse
 # 121 "data/maps/BattleFrontier_OutsideEast/scripts.pory"
 	playse SE_SUDOWOODO_SHAKE

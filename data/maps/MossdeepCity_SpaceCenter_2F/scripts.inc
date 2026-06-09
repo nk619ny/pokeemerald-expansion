@@ -478,9 +478,6 @@ MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle::
 	fadescreenswapbuffers FADE_TO_BLACK
 # 240 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	special ChooseHalfPartyForBattle
-# 241 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	waitstate
-# 242 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	goto_if_ne VAR_RESULT, 0, MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle
 # 243 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	special LoadPlayerParty
@@ -500,9 +497,6 @@ MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
 	fadescreenswapbuffers FADE_TO_BLACK
 # 251 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	special SetCB2WhiteOut
-# 252 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	waitstate
-# 253 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 
 # 254 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::

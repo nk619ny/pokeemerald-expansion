@@ -198,9 +198,6 @@ IslandCave_EventScript_Regice::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 100 "data/maps/IslandCave/scripts.pory"
 	special StartRegiBattle
-# 101 "data/maps/IslandCave/scripts.pory"
-	waitstate
-# 102 "data/maps/IslandCave/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 103 "data/maps/IslandCave/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

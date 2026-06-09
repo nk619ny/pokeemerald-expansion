@@ -268,9 +268,6 @@ FarawayIsland_Interior_EventScript_Mew::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 135 "data/maps/FarawayIsland_Interior/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 136 "data/maps/FarawayIsland_Interior/scripts.pory"
-	waitstate
-# 137 "data/maps/FarawayIsland_Interior/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 138 "data/maps/FarawayIsland_Interior/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

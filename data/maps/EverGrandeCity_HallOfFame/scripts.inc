@@ -112,9 +112,6 @@ EverGrandeCity_HallOfFame_EventScript_GameClearMale::
 	fadescreenspeed FADE_TO_BLACK, 24
 # 57 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	special GameClear
-# 58 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
-	waitstate
-# 59 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	releaseall
 # 60 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	end
@@ -128,9 +125,6 @@ EverGrandeCity_HallOfFame_EventScript_GameClearFemale::
 	fadescreenspeed FADE_TO_BLACK, 24
 # 65 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	special GameClear
-# 66 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
-	waitstate
-# 67 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	releaseall
 # 68 "data/maps/EverGrandeCity_HallOfFame/scripts.pory"
 	end

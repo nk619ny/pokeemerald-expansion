@@ -112,9 +112,6 @@ TrainerHill_Elevator_EventScript_MoveElevator::
 	waitse
 # 57 "data/maps/TrainerHill_Elevator/scripts.pory"
 	special MoveElevator
-# 58 "data/maps/TrainerHill_Elevator/scripts.pory"
-	waitstate
-# 59 "data/maps/TrainerHill_Elevator/scripts.pory"
 	return
 # 60 "data/maps/TrainerHill_Elevator/scripts.pory"
 
