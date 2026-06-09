@@ -16,7 +16,6 @@ BattleFrontier_BattleTowerElevator_EventScript_EnterElevator::
 	special BufferBattleTowerElevatorFloors
 	waitse
 	special MoveElevator
-	waitstate
 	delay 48
 	applymovement LOCALID_TOWER_ELEVATOR_ATTENDANT, BattleFrontier_BattleTowerElevator_Movement_AttendantExit
 	applymovement LOCALID_PLAYER, BattleFrontier_BattleTowerElevator_Movement_PlayerExit
@@ -49,7 +48,6 @@ BattleFrontier_BattleTowerElevator_EventScript_WarpToCorridorMulti::
 
 BattleFrontier_BattleTowerElevator_EventScript_WarpToPartnerRoom::
 	warp MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM, 10, 1
-	waitstate
 	return
 
 BattleFrontier_BattleTowerElevator_Movement_AttendantEnter:

@@ -500,100 +500,101 @@ LittlerootTown_BrendansHouse_2F_EventScript_CheckPlayersPC::
 	msgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT
 # 251 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	special BedroomPC
+# 252 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	releaseall
+# 253 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	end
 # 254 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	end
+
 # 255 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-
-# 256 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 LittlerootTown_BrendansHouse_2F_EventScript_TurnOffPlayerPC::
-# 257 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 256 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	setvar VAR_0x8004, PC_LOCATION_BRENDANS_HOUSE
-# 258 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 257 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	playse SE_PC_OFF
-# 259 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 258 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	special DoPCTurnOffEffect
+# 259 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	releaseall
 # 260 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	releaseall
+	end
 # 261 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	end
+
 # 262 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-
-# 263 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 LittlerootTown_BrendansHouse_2F_EventScript_CheckRivalsPC::
-# 264 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 263 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	msgbox gText_PokemonTrainerSchoolEmail, MSGBOX_DEFAULT
-# 265 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 264 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	releaseall
+# 265 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	end
 # 266 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	end
+
 # 267 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-
-# 268 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 PlayersHouse_2F_EventScript_Notebook::
-# 269 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 268 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	msgbox PlayersHouse_2F_Text_Notebook, MSGBOX_SIGN
+# 269 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+	end
 # 270 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	end
+
 # 271 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-
-# 272 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 PlayersHouse_2F_EventScript_GameCube::
-# 273 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 272 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	msgbox PlayersHouse_2F_Text_ItsAGameCube, MSGBOX_SIGN
-# 274 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 273 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	end
+# 274 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+
 # 275 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-
-# 276 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 PlayersHouse_2F_Text_ClockIsStopped:
-# 277 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 276 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "The clock is stopped…\p"
-# 278 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 277 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "Better set it and start it!$"
+# 278 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+
 # 279 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-
-# 280 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
-# 281 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 280 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "MOM: It's bittersweet to think you\n"
-# 282 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 281 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "won't be home as often anymore.\p"
-# 283 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 282 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "They finished loading the rest of the\n"
-# 284 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 283 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "truck. Let's say goodbye downstairs.$"
+# 284 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+
 # 285 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-
-# 286 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 PlayersHouse_2F_Text_Notebook:
-# 287 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 286 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "{PLAYER} flipped open the notebook.\p"
-# 288 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 287 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "ADVENTURE RULE NO. 1\n"
-# 289 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 288 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "Open the MENU with START.\p"
-# 290 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 289 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "ADVENTURE RULE NO. 2\n"
-# 291 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 290 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "Record your progress with SAVE.\p"
-# 292 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 291 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "The remaining pages are blank…$"
+# 292 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+
 # 293 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-
-# 294 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 Common_Text_LookCloserAtMap:
-# 295 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 294 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "{PLAYER} took a closer look at the\n"
-# 296 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 295 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "HOENN region map.$"
-# 297 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 296 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 
-# 298 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 297 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 PlayersHouse_2F_Text_ItsAGameCube:
-# 299 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 298 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "It's a Nintendo GameCube.\p"
-# 300 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 299 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "A Game Boy Advance is connected to\n"
-# 301 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 300 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "serve as the Controller.$"
