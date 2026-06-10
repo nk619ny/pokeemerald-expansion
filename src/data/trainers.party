@@ -1,4 +1,4 @@
-﻿/*
+/*
 Trainers and their parties defined with Competetive Syntax.
 Compatible with Pokemon Showdown exports.
 https://github.com/smogon/pokemon-showdown/blob/master/sim/TEAMS.md
@@ -9910,8 +9910,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Kubfu @ Weakness Policy
 Ability: Inner Focus  
 Ball: Sport
-Level: 24
-IVs: 0 HP / 0 Atk / 10 Def / 0 SpA / 10 SpD / 0 Spe
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Jolly Nature  
 - Wicked Blow  
 - Surging Strikes  
@@ -9943,7 +9943,6 @@ Ability: Speed Boost
 Ball: Fast
 Level: 23
 Tera Type: Grass
-EVs: 64 SpA
 - Flame Burst  
 - Aura Sphere  
 - Hidden Power
