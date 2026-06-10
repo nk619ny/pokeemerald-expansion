@@ -1712,9 +1712,14 @@
 #define SPECIES_ROWLET_HISUI                            1593
 #define SPECIES_DARTRIX_HISUI                           1594
 
-#define SPECIES_TERAPAGOS_NORMAL_SHELL                 1595
+#define SPECIES_KECLEON_MYSTERY                         1595
+#define SPECIES_SNORLAX_MEGA                            1596
+#define SPECIES_GARBODOR_MEGA                           1597
+#define SPECIES_ORBEETLE_MEGA                           1598
+#define SPECIES_COPPERAJAH_MEGA                         1599
+#define SPECIES_SANDACONDA_MEGA                         1600
 
-#define SPECIES_EGG                                     (SPECIES_TERAPAGOS_NORMAL_SHELL + 1)
+#define SPECIES_EGG                                     (SPECIES_SANDACONDA_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

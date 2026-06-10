@@ -1960,7 +1960,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sLotadTeachableLearnset,
         .eliteLearnset = sLotadEliteLearnset,
         .eggMoveLearnset = sLotadEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_LOMBRE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_LOMBRE}),
     },
 
     [SPECIES_LOMBRE] =
@@ -2204,7 +2204,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSeedotTeachableLearnset,
         .eliteLearnset = sSeedotEliteLearnset,
         .eggMoveLearnset = sSeedotEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_NUZLEAF}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_NUZLEAF}),
     },
 
     [SPECIES_NUZLEAF] =
@@ -9814,6 +9814,82 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseDefense   = 70,
         .baseSpeed     = 40,
         .baseSpAttack  = 60,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 200,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 154 : 132,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+    #if P_UPDATED_ABILITIES >= GEN_6
+        .abilities = { ABILITY_COLOR_CHANGE, ABILITY_MIMICRY, ABILITY_PROTEAN }, //added mimicry as an ability
+    #else
+        .abilities = { ABILITY_COLOR_CHANGE, ABILITY_NONE, ABILITY_NONE },
+    #endif
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Kecleon"),
+        .cryId = CRY_KECLEON,
+        .natDexNum = NATIONAL_DEX_KECLEON,
+        .categoryName = _("Color Swap"),
+        .height = 10,
+        .weight = 220,
+        .description = COMPOUND_STRING(
+            "A Pokémon that has the ability to alter its\n"
+            "body colors to match its surroundings.\n"
+            "A Kecleon reverts to its original colors if\n"
+            "it is startled."),
+        .pokemonScale = 316,
+        .pokemonOffset = 10,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Kecleon,
+        .frontPicSize = MON_COORDS_SIZE(48, 56),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 5,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 18),
+            ANIMCMD_FRAME(0, 8),
+            ANIMCMD_FRAME(1, 8),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_FLICKER_INCREASING,
+        .frontAnimDelay = 30,
+        .backPic = gMonBackPic_Kecleon,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Kecleon,
+        .shinyPalette = gMonShinyPalette_Kecleon,
+        .iconSprite = gMonIcon_Kecleon,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 8, SHADOW_SIZE_S)
+        FOOTPRINT(Kecleon)
+        OVERWORLD(
+            sPicTable_Kecleon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Kecleon,
+            gShinyOverworldPalette_Kecleon
+        )
+        .levelUpLearnset = sKecleonLevelUpLearnset,
+        .teachableLearnset = sKecleonTeachableLearnset,
+        .eliteLearnset = sKecleonEliteLearnset,
+        .eggMoveLearnset = sKecleonEggMoveLearnset,
+    },
+
+    [SPECIES_KECLEON_MYSTERY] =
+    {
+        .baseHP        = 120,
+        .baseAttack    = 120,
+        .baseDefense   = 120,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 120,
         .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 200,

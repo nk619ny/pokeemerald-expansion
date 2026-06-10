@@ -112,66 +112,67 @@ TrainerHill_Elevator_EventScript_MoveElevator::
 	waitse
 # 57 "data/maps/TrainerHill_Elevator/scripts.pory"
 	special MoveElevator
+# 58 "data/maps/TrainerHill_Elevator/scripts.pory"
 	return
-# 60 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 59 "data/maps/TrainerHill_Elevator/scripts.pory"
 
-# 61 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 60 "data/maps/TrainerHill_Elevator/scripts.pory"
 TrainerHill_Elevator_Movement_PlayerMoveToCenterOfElevator:
+# 61 "data/maps/TrainerHill_Elevator/scripts.pory"
+	walk_up
 # 62 "data/maps/TrainerHill_Elevator/scripts.pory"
 	walk_up
 # 63 "data/maps/TrainerHill_Elevator/scripts.pory"
-	walk_up
-# 64 "data/maps/TrainerHill_Elevator/scripts.pory"
 	walk_right
-# 65 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 64 "data/maps/TrainerHill_Elevator/scripts.pory"
 	face_down
+# 65 "data/maps/TrainerHill_Elevator/scripts.pory"
+	step_end
 # 66 "data/maps/TrainerHill_Elevator/scripts.pory"
-	step_end
+
 # 67 "data/maps/TrainerHill_Elevator/scripts.pory"
-
-# 68 "data/maps/TrainerHill_Elevator/scripts.pory"
 TrainerHill_Elevator_Movement_PlayerApproachAttendant:
+# 68 "data/maps/TrainerHill_Elevator/scripts.pory"
+	delay_16
 # 69 "data/maps/TrainerHill_Elevator/scripts.pory"
-	delay_16
-# 70 "data/maps/TrainerHill_Elevator/scripts.pory"
 	walk_left
-# 71 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 70 "data/maps/TrainerHill_Elevator/scripts.pory"
 	step_end
-# 72 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 71 "data/maps/TrainerHill_Elevator/scripts.pory"
 
-# 73 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 72 "data/maps/TrainerHill_Elevator/scripts.pory"
 TrainerHill_Elevator_Movement_PlayerExitElevator:
-# 74 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 73 "data/maps/TrainerHill_Elevator/scripts.pory"
 	delay_16
+# 74 "data/maps/TrainerHill_Elevator/scripts.pory"
+	walk_down
 # 75 "data/maps/TrainerHill_Elevator/scripts.pory"
 	walk_down
 # 76 "data/maps/TrainerHill_Elevator/scripts.pory"
-	walk_down
+	step_end
 # 77 "data/maps/TrainerHill_Elevator/scripts.pory"
-	step_end
+
 # 78 "data/maps/TrainerHill_Elevator/scripts.pory"
-
-# 79 "data/maps/TrainerHill_Elevator/scripts.pory"
 TrainerHill_Elevator_Movement_PlayerExitElevatorToRoof:
+# 79 "data/maps/TrainerHill_Elevator/scripts.pory"
+	face_down
 # 80 "data/maps/TrainerHill_Elevator/scripts.pory"
-	face_down
-# 81 "data/maps/TrainerHill_Elevator/scripts.pory"
 	delay_16
+# 81 "data/maps/TrainerHill_Elevator/scripts.pory"
+	step_end
 # 82 "data/maps/TrainerHill_Elevator/scripts.pory"
-	step_end
+
 # 83 "data/maps/TrainerHill_Elevator/scripts.pory"
-
-# 84 "data/maps/TrainerHill_Elevator/scripts.pory"
 TrainerHill_Elevator_Movement_AttendantFacePlayer:
-# 85 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 84 "data/maps/TrainerHill_Elevator/scripts.pory"
 	face_right
-# 86 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 85 "data/maps/TrainerHill_Elevator/scripts.pory"
 	step_end
-# 87 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 86 "data/maps/TrainerHill_Elevator/scripts.pory"
 
-# 88 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 87 "data/maps/TrainerHill_Elevator/scripts.pory"
 TrainerHill_Elevator_Movement_AttendantFaceDown:
-# 89 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 88 "data/maps/TrainerHill_Elevator/scripts.pory"
 	face_down
-# 90 "data/maps/TrainerHill_Elevator/scripts.pory"
+# 89 "data/maps/TrainerHill_Elevator/scripts.pory"
 	step_end

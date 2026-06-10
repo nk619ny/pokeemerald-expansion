@@ -2829,6 +2829,7 @@ static const u16 sMagmarEliteLearnset[] = {
 static const u16 sMagmortarEliteLearnset[] = {
     MOVE_AURA_SPHERE,
     MOVE_FIERY_WRATH,
+    MOVE_ARMOR_CANNON,
     //MOVE_FUSION_FLARE,
     MOVE_METRONOME,
     MOVE_TELEPORT,

@@ -1069,6 +1069,16 @@ extern const u32 gItemIcon_Vikavolite[];
 extern const u16 gItemIconPalette_Vikavolite[];
 extern const u32 gItemIcon_Slowkingite[];
 extern const u16 gItemIconPalette_Slowkingite[];
+extern const u32 gItemIcon_Snorlaxite[];
+extern const u16 gItemIconPalette_Snorlaxite[];
+extern const u32 gItemIcon_Garbodite[];
+extern const u16 gItemIconPalette_Garbodite[];
+extern const u32 gItemIcon_Copperajite[];
+extern const u16 gItemIconPalette_Copperajite[];
+extern const u32 gItemIcon_Orbeetlite[];
+extern const u16 gItemIconPalette_Orbeetlite[];
+extern const u32 gItemIcon_Sandacondite[];
+extern const u16 gItemIconPalette_Sandacondite[];
 // Gems
 extern const u32 gItemIcon_TypeGem[];
 extern const u16 gItemIconPalette_NormalGem[];

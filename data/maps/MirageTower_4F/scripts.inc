@@ -112,6 +112,9 @@ MirageTower_4F_EventScript_CollapseMirageTower::
 	waitstate
 # 57 "data/maps/MirageTower_4F/scripts.pory"
 	special DoMirageTowerCeilingCrumble
+# 58 "data/maps/MirageTower_4F/scripts.pory"
+	waitstate
+# 59 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_MIRAGE_TOWER_STATE, 1
 # 60 "data/maps/MirageTower_4F/scripts.pory"
 	clearflag FLAG_LANDMARK_MIRAGE_TOWER

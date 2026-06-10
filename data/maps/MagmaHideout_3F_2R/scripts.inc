@@ -140,45 +140,55 @@ MagmaHideout_3F_2R_EventScript_TakeMegaStone_31:
 	compare VAR_RESULT, 0
 	goto_if_eq MagmaHideout_3F_2R_EventScript_TakeMegaStone_35
 MagmaHideout_3F_2R_EventScript_TakeMegaStone_34:
-	checkitem ITEM_SCOVILLAINITE
+	checkitem ITEM_SANDACONDITE
 # 0 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MagmaHideout_3F_2R_EventScript_TakeMegaStone_38
 MagmaHideout_3F_2R_EventScript_TakeMegaStone_37:
-# 65 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	dynmultipush MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_13, ITEM_NONE
-# 67 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_14, MSGBOX_DEFAULT
-# 68 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	dynmultistack 25, 2, FALSE, 5, 0, ITEM_STEELIXITE, DYN_MULTICHOICE_CB_NONE
-# 69 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	compare VAR_RESULT, ITEM_NONE
+	checkitem ITEM_GARBODITE
+# 0 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq MagmaHideout_3F_2R_EventScript_TakeMegaStone_41
-# 75 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	compare VAR_RESULT, 127
-	goto_if_eq MagmaHideout_3F_2R_EventScript_TakeMegaStone_42
-# 82 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	copyvar VAR_TEMP_5, VAR_RESULT
-# 83 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	checkitemspace VAR_TEMP_5
-# 84 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	compare VAR_RESULT, FALSE
+MagmaHideout_3F_2R_EventScript_TakeMegaStone_40:
+	checkitem ITEM_SCOVILLAINITE
+# 0 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MagmaHideout_3F_2R_EventScript_TakeMegaStone_44
+MagmaHideout_3F_2R_EventScript_TakeMegaStone_43:
+# 67 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	dynmultipush MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_15, ITEM_NONE
+# 69 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_16, MSGBOX_DEFAULT
+# 70 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	dynmultistack 25, 2, FALSE, 5, 0, ITEM_STEELIXITE, DYN_MULTICHOICE_CB_NONE
+# 71 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	compare VAR_RESULT, ITEM_NONE
 	goto_if_eq MagmaHideout_3F_2R_EventScript_TakeMegaStone_47
-# 90 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	giveitem VAR_TEMP_5
-# 91 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	setflag FLAG_RECEIVED_MAGMA_MEGA_STONE
+# 77 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	compare VAR_RESULT, 127
+	goto_if_eq MagmaHideout_3F_2R_EventScript_TakeMegaStone_48
+# 84 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	copyvar VAR_TEMP_5, VAR_RESULT
+# 85 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	checkitemspace VAR_TEMP_5
+# 86 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MagmaHideout_3F_2R_EventScript_TakeMegaStone_53
 # 92 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	removeobject LOCALID_MAGMA_HIDEOUT_MEGA_STONE
+	giveitem VAR_TEMP_5
 # 93 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	waitfanfare
+	setflag FLAG_RECEIVED_MAGMA_MEGA_STONE
 # 94 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_17, MSGBOX_NPC
+	removeobject LOCALID_MAGMA_HIDEOUT_MEGA_STONE
 # 95 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	waitfanfare
+# 96 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_19, MSGBOX_NPC
+# 97 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	closemessage
-# 98 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+# 100 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	closemessage
-# 99 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+# 101 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	release
 	end
 
@@ -244,33 +254,43 @@ MagmaHideout_3F_2R_EventScript_TakeMegaStone_35:
 
 MagmaHideout_3F_2R_EventScript_TakeMegaStone_38:
 # 63 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	dynmultipush MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_12, ITEM_SCOVILLAINITE
+	dynmultipush MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_12, ITEM_SANDACONDITE
 	goto MagmaHideout_3F_2R_EventScript_TakeMegaStone_37
 
 MagmaHideout_3F_2R_EventScript_TakeMegaStone_41:
-# 70 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_15, MSGBOX_NPC
-# 71 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	closemessage
-# 72 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	releaseall
-	end
+# 64 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	dynmultipush MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_13, ITEM_GARBODITE
+	goto MagmaHideout_3F_2R_EventScript_TakeMegaStone_40
 
-MagmaHideout_3F_2R_EventScript_TakeMegaStone_42:
-# 76 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_15, MSGBOX_NPC
-# 77 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	closemessage
-# 78 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	releaseall
-	end
+MagmaHideout_3F_2R_EventScript_TakeMegaStone_44:
+# 65 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	dynmultipush MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_14, ITEM_SCOVILLAINITE
+	goto MagmaHideout_3F_2R_EventScript_TakeMegaStone_43
 
 MagmaHideout_3F_2R_EventScript_TakeMegaStone_47:
-# 85 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_16, MSGBOX_NPC
-# 86 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+# 72 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_17, MSGBOX_NPC
+# 73 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	closemessage
+# 74 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	releaseall
+	end
+
+MagmaHideout_3F_2R_EventScript_TakeMegaStone_48:
+# 78 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_17, MSGBOX_NPC
+# 79 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	closemessage
+# 80 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	releaseall
+	end
+
+MagmaHideout_3F_2R_EventScript_TakeMegaStone_53:
 # 87 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	msgbox MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_18, MSGBOX_NPC
+# 88 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	closemessage
+# 89 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	releaseall
 	end
 
@@ -329,28 +349,36 @@ MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_11:
 
 MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_12:
 # 63 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	.string "Scovillainite$"
+	.string "Sandacondite$"
 
 MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_13:
-# 65 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	.string "Nevermind$"
+# 64 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	.string "Garbodite$"
 
 MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_14:
-# 67 "data/maps/MagmaHideout_3F_2R/scripts.pory"
-	.string "Take one of the Mega Stones?$"
+# 65 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	.string "Scovillainite$"
 
 MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_15:
-# 70 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+# 67 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	.string "Nevermind$"
+
+MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_16:
+# 69 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+	.string "Take one of the Mega Stones?$"
+
+MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_17:
+# 72 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	.string "Left the machine without taking a Mega\n"
 	.string "Stone.$"
 
-MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_16:
-# 85 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_18:
+# 87 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	.string "Too bad!\l"
 	.string "The BAG is full...$"
 
-MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_17:
-# 94 "data/maps/MagmaHideout_3F_2R/scripts.pory"
+MagmaHideout_3F_2R_EventScript_TakeMegaStone_Text_19:
+# 96 "data/maps/MagmaHideout_3F_2R/scripts.pory"
 	.string "The machine locked automatically after\n"
 	.string "the Stone was removed.$"
 

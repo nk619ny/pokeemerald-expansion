@@ -6177,7 +6177,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_SnorlaxGmax[] = INCGFX_U32("graphics/pokemon/snorlax/gmax/front.png", ".4bpp.smol");
     const u32 gMonBackPic_SnorlaxGmax[] = INCGFX_U32("graphics/pokemon/snorlax/gmax/back.png", ".4bpp.smol");
     const u16 gMonPalette_SnorlaxGmax[] = INCGFX_U16("graphics/pokemon/snorlax/gmax/normal.pal", ".gbapal");
@@ -17741,7 +17741,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_GarbodorGmax[] = INCGFX_U32("graphics/pokemon/garbodor/gmax/front.png", ".4bpp.smol");
     const u32 gMonBackPic_GarbodorGmax[] = INCGFX_U32("graphics/pokemon/garbodor/gmax/back.png", ".4bpp.smol");
     const u16 gMonPalette_GarbodorGmax[] = INCGFX_U16("graphics/pokemon/garbodor/gmax/normal.pal", ".gbapal");
@@ -23590,7 +23590,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_OrbeetleGmax[] = INCGFX_U32("graphics/pokemon/orbeetle/gmax/front.png", ".4bpp.smol");
     const u32 gMonBackPic_OrbeetleGmax[] = INCGFX_U32("graphics/pokemon/orbeetle/gmax/back.png", ".4bpp.smol");
     const u16 gMonPalette_OrbeetleGmax[] = INCGFX_U16("graphics/pokemon/orbeetle/gmax/normal.pal", ".gbapal");
@@ -24003,7 +24003,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_SandacondaGmax[] = INCGFX_U32("graphics/pokemon/sandaconda/gmax/front.png", ".4bpp.smol");
     const u32 gMonBackPic_SandacondaGmax[] = INCGFX_U32("graphics/pokemon/sandaconda/gmax/back.png", ".4bpp.smol");
     const u16 gMonPalette_SandacondaGmax[] = INCGFX_U16("graphics/pokemon/sandaconda/gmax/normal.pal", ".gbapal");
@@ -24784,7 +24784,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_CopperajahGmax[] = INCGFX_U32("graphics/pokemon/copperajah/gmax/front.png", ".4bpp.smol");
     const u32 gMonBackPic_CopperajahGmax[] = INCGFX_U32("graphics/pokemon/copperajah/gmax/back.png", ".4bpp.smol");
     const u16 gMonPalette_CopperajahGmax[] = INCGFX_U16("graphics/pokemon/copperajah/gmax/normal.pal", ".gbapal");

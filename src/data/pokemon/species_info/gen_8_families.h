@@ -224,7 +224,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .natDexNum = NATIONAL_DEX_RILLABOOM,
         .categoryName = _("Drummer"),
         .height = 280,
-        .weight = 0,
+        .weight = 1100,
         .description = COMPOUND_STRING(
             "Rillaboom has become one with its\n"
             "forest of drums and continues to lay\n"
@@ -539,7 +539,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .natDexNum = NATIONAL_DEX_CINDERACE,
         .categoryName = _("Striker"),
         .height = 270,
-        .weight = 0,
+        .weight = 350,
         .description = COMPOUND_STRING(
             "Infused with Cinderace's fighting\n"
             "spirit, the gigantic Pyro Ball never\n"
@@ -857,10 +857,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .natDexNum = NATIONAL_DEX_INTELEON,
         .categoryName = _("Secret Agent"),
         .height = 400,
-        .weight = 0,
+        .weight = 452,
         .description = COMPOUND_STRING(
-            "Gigantamax Inteleon's Water Gun\n"
-            "move fires at Mach 7. As the Pokémon\n"
+            "Mega Inteleon's Snipe Shot move\n"
+            "fires at Mach 7. As the Pokémon\n"
             "takes aim, it uses the crest on its\n"
             "head to gauge wind and temperature."),
         .pokemonScale = 256,
@@ -1565,6 +1565,67 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sOrbeetleFormSpeciesIdTable,
         .formChangeTable = sOrbeetleFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_ORBEETLE_MEGA] =
+    {
+        .baseHP        = 60 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0),
+        .baseAttack    = 45,
+        .baseDefense   = 110 + 15,
+        .baseSpeed     = 90 + 15,
+        .baseSpAttack  = 80 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0) + 45,
+        .baseSpDefense = 120 + 25,
+        .types = MON_TYPES(TYPE_BUG, TYPE_PSYCHIC),
+        .catchRate = 45,
+        .expYield = 253,
+        .evYield_SpDefense = 3,
+        .itemRare = ITEM_PSYCHIC_SEED,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_MAGIC_GUARD, ABILITY_MAGIC_GUARD, ABILITY_MAGIC_GUARD },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Orbeetle"),
+        .cryId = CRY_ORBEETLE,
+        .natDexNum = NATIONAL_DEX_ORBEETLE,
+        .categoryName = _("Seven Spot"),
+        .height = 140,
+        .weight = 408,
+        .description = COMPOUND_STRING(
+            "Its brain has grown to a gargantuan\n"
+            "size, as has the rest of its body.\n"
+            "This Pokémon's intellect and\n"
+            "psychic abilities are overpowering."),
+        .pokemonScale = 491,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_OrbeetleGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_OrbeetleGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 6,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_OrbeetleGmax,
+        .shinyPalette = gMonShinyPalette_OrbeetleGmax,
+        .iconSprite = gMonIcon_OrbeetleGmax,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Orbeetle)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sOrbeetleLevelUpLearnset,
+        .teachableLearnset = sOrbeetleTeachableLearnset,
+        .eliteLearnset = sNoneEliteLearnset,
+        .formSpeciesIdTable = sOrbeetleFormSpeciesIdTable,
+        .formChangeTable = sOrbeetleFormChangeTable,
+    },
+#endif //P_GIGANTAMAX_FORMS
 
 #if P_GIGANTAMAX_FORMS
     [SPECIES_ORBEETLE_GMAX] =
@@ -3206,6 +3267,66 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sSandacondaFormChangeTable,
     },
 
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_SANDACONDA_MEGA] =
+    {
+        .baseHP        = 72 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 8 : 0),
+        .baseAttack    = 107 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 8 : 0) - 50,
+        .baseDefense   = 125 - 10,
+        .baseSpeed     = 71 + 40,
+        .baseSpAttack  = 65 + 50 + 30,
+        .baseSpDefense = 70 + 40,
+        .types = MON_TYPES(TYPE_GROUND),
+        .catchRate = 120,
+        .expYield = 179,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_EARTH_EATER, ABILITY_EARTH_EATER, ABILITY_EARTH_EATER },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Sandaconda"),
+        .cryId = CRY_SANDACONDA,
+        .natDexNum = NATIONAL_DEX_SANDACONDA,
+        .categoryName = _("Sand Snake"),
+        .height = 220,
+        .weight = 655,
+        .description = COMPOUND_STRING(
+            "Its sand pouch has grown to tremendous\n"
+            "proportions. More than 1,000,000 tons of\n"
+            "sand now swirl around its body with enough\n"
+            "speed and power to pulverize a skyscraper."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 610,
+        .trainerOffset = 17,
+        .frontPic = gMonFrontPic_SandacondaGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_SandacondaGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 5,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_SandacondaGmax,
+        .shinyPalette = gMonShinyPalette_SandacondaGmax,
+        .iconSprite = gMonIcon_SandacondaGmax,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 14, SHADOW_SIZE_M)
+        FOOTPRINT(Sandaconda)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sSandacondaLevelUpLearnset,
+        .teachableLearnset = sSandacondaTeachableLearnset,
+        .eliteLearnset = sSandacondaEliteLearnset,
+        .formSpeciesIdTable = sSandacondaFormSpeciesIdTable,
+        .formChangeTable = sSandacondaFormChangeTable,
+    },
+#endif //P_GIGANTAMAX_FORMS
+
 #if P_GIGANTAMAX_FORMS
     [SPECIES_SANDACONDA_GMAX] =
     {
@@ -4060,7 +4181,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .natDexNum = NATIONAL_DEX_CENTISKORCH,
         .categoryName = _("Radiator"),
         .height = 750,
-        .weight = 0,
+        .weight = 1800,
         .description = COMPOUND_STRING(
             "The heat that comes off a\n"
             "Gigantamax Centiskorch may\n"
@@ -6410,6 +6531,67 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sCopperajahFormSpeciesIdTable,
         .formChangeTable = sCopperajahFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_COPPERAJAH_MEGA] =
+    {
+        .baseHP        = 122,
+        .baseAttack    = 130 + 30,
+        .baseDefense   = 69 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0) + 30,
+        .baseSpeed     = 30 - 5,
+        .baseSpAttack  = 80 + 15,
+        .baseSpDefense = 69 + (B_CUSTOMIZED_GEN_8_STATS == TRUE ? 10 : 0) + 30,
+        .types = MON_TYPES(TYPE_STEEL),
+        .catchRate = 90,
+        .expYield = 175,
+        .evYield_Attack = 2,
+        .itemRare = ITEM_LAGGING_TAIL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_STAMINA, ABILITY_STAMINA, ABILITY_STAMINA },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Copperajah"),
+        .cryId = CRY_COPPERAJAH,
+        .natDexNum = NATIONAL_DEX_COPPERAJAH,
+        .categoryName = _("Copperderm"),
+        .height = 230,
+        .weight = 8500,
+        .description = COMPOUND_STRING(
+            "After this Pokémon has Mega Evolved,\n"
+            "its massive nose can utterly demolish\n"
+            "large structures with a single\n"
+            "smashing blow."),
+        .pokemonScale = 275,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CopperajahGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CopperajahGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CopperajahGmax,
+        .shinyPalette = gMonShinyPalette_CopperajahGmax,
+        .iconSprite = gMonIcon_CopperajahGmax,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 11, SHADOW_SIZE_L)
+        FOOTPRINT(Copperajah)
+        .isGigantamax = TRUE,
+        .levelUpLearnset = sCopperajahLevelUpLearnset,
+        .teachableLearnset = sCopperajahTeachableLearnset,
+        .eliteLearnset = sCopperajahEliteLearnset,
+        .formSpeciesIdTable = sCopperajahFormSpeciesIdTable,
+        .formChangeTable = sCopperajahFormChangeTable,
+    },
+#endif //P_GIGANTAMAX_FORMS
 
 #if P_GIGANTAMAX_FORMS
     [SPECIES_COPPERAJAH_GMAX] =

@@ -60,6 +60,8 @@ script MagmaHideout_3F_2R_EventScript_TakeMegaStone{
 	if(!checkitem(ITEM_CENTISKORITE)) 		{dynmultipush("Centiskorite",ITEM_CENTISKORITE)}
 	if(!checkitem(ITEM_FLYGONITE)) 		{dynmultipush("Flygonite",ITEM_FLYGONITE)}
 	if(!checkitem(ITEM_SUNFLORITE)) 		{dynmultipush("Sunflorite",ITEM_SUNFLORITE)}
+	if(!checkitem(ITEM_SANDACONDITE)) 		{dynmultipush("Sandacondite",ITEM_SANDACONDITE)}	
+	if(!checkitem(ITEM_GARBODITE)) 		{dynmultipush("Garbodite",ITEM_GARBODITE)}
 	if(!checkitem(ITEM_SCOVILLAINITE)) 		{dynmultipush("Scovillainite",ITEM_SCOVILLAINITE)}
 
 	dynmultipush("Nevermind",ITEM_NONE)

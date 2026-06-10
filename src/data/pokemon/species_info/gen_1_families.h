@@ -1182,7 +1182,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .natDexNum = NATIONAL_DEX_BLASTOISE,
         .categoryName = _("Shellfish"),
         .height = 250,
-        .weight = 0,
+        .weight = 1011,
         .description = COMPOUND_STRING(
             "It's not very good at precision\n"
             "shooting. When attacking, it just fires\n"
@@ -1555,7 +1555,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .natDexNum = NATIONAL_DEX_BUTTERFREE,
         .categoryName = _("Butterfly"),
         .height = 170,
-        .weight = 0,
+        .weight = 405,
         .description = COMPOUND_STRING(
             "Once it has opponents trapped in a\n"
             "tornado that could blow away a 10-\n"
@@ -9410,7 +9410,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .natDexNum = NATIONAL_DEX_MACHAMP,
         .categoryName = _("Superpower"),
         .height = 250,
-        .weight = 0,
+        .weight = 1500,
         .description = COMPOUND_STRING(
             "One of these Pokémon once used\n"
             "its immeasurable strength to lift a\n"
@@ -13431,7 +13431,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .natDexNum = NATIONAL_DEX_KINGLER,
         .categoryName = _("Pincer"),
         .height = 190,
-        .weight = 0,
+        .weight = 800,
         .description = COMPOUND_STRING(
             "The flow of Gigantamax energy has\n"
             "spurred this Pokémon's left pincer\n"
@@ -18540,7 +18540,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .natDexNum = NATIONAL_DEX_LAPRAS,
         .categoryName = _("Transport"),
         .height = 240,
-        .weight = 0,
+        .weight = 4000,
         .description = COMPOUND_STRING(
             "Over 5,000 people can ride on its\n"
             "shell at once. And it's a very\n"
@@ -20289,6 +20289,69 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sSnorlaxFormChangeTable,
     },
 
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_SNORLAX_MEGA] =
+    {
+        .baseHP        = 160,
+        .baseAttack    = 110 + 40,
+        .baseDefense   = 65 + 30,
+        .baseSpeed     = 30 - 10,
+        .baseSpAttack  = 65 + 10,
+        .baseSpDefense = 110 + 30,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 25,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 189 : 154,
+        .evYield_HP = 2,
+        .itemCommon = ITEM_LEFTOVERS,
+        .itemRare = ITEM_LEFTOVERS,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 40,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
+        .abilities = { ABILITY_THICK_FAT, ABILITY_THICK_FAT, ABILITY_THICK_FAT },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Snorlax"),
+        .cryId = CRY_SNORLAX,
+        .natDexNum = NATIONAL_DEX_SNORLAX,
+        .categoryName = _("Sleeping"),
+        .height = 21,
+        .weight = 5500,
+        .description = COMPOUND_STRING(
+            "Mega energy has affected stray\n"
+            "seeds and even pebbles that got\n"
+            "stuck to Snorlax, making them grow\n"
+            "to a huge size."),
+        .pokemonScale = 256,
+        .pokemonOffset = 4,
+        .trainerScale = 423,
+        .trainerOffset = 11,
+        .frontPic = gMonFrontPic_SnorlaxGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_SnorlaxGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 5,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_SnorlaxGmax,
+        .shinyPalette = gMonShinyPalette_SnorlaxGmax,
+        .iconSprite = gMonIcon_SnorlaxGmax,
+        .iconPalIndex = 3,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Snorlax)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sSnorlaxLevelUpLearnset,
+        .teachableLearnset = sSnorlaxTeachableLearnset,
+        .eliteLearnset = sSnorlaxEliteLearnset,
+        .eggMoveLearnset = sSnorlaxEggMoveLearnset,
+        .formSpeciesIdTable = sSnorlaxFormSpeciesIdTable,
+        .formChangeTable = sSnorlaxFormChangeTable,
+    },
+#endif //P_GIGANTAMAX_FORMS
+
 #if P_GIGANTAMAX_FORMS
     [SPECIES_SNORLAX_GMAX] =
     {
@@ -20318,9 +20381,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 350,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Gigantamax energy has affected\n"
-            "stray seeds and even pebbles that\n"
-            "got stuck to Snorlax, making them grow\n"
+            "Mega energy has affected stray\n"
+            "seeds and even pebbles that got\n"
+            "stuck to Snorlax, making them grow\n"
             "to a huge size."),
         .pokemonScale = 256,
         .pokemonOffset = 4,

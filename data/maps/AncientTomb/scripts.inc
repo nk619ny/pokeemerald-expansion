@@ -132,92 +132,93 @@ AncientTomb_EventScript_Registeel::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 67 "data/maps/AncientTomb/scripts.pory"
 	special StartRegiBattle
+# 68 "data/maps/AncientTomb/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 70 "data/maps/AncientTomb/scripts.pory"
+# 69 "data/maps/AncientTomb/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 71 "data/maps/AncientTomb/scripts.pory"
+# 70 "data/maps/AncientTomb/scripts.pory"
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, AncientTomb_EventScript_DefeatedRegisteel
-# 72 "data/maps/AncientTomb/scripts.pory"
+# 71 "data/maps/AncientTomb/scripts.pory"
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, AncientTomb_EventScript_RanFromRegisteel
-# 73 "data/maps/AncientTomb/scripts.pory"
+# 72 "data/maps/AncientTomb/scripts.pory"
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, AncientTomb_EventScript_RanFromRegisteel
+# 73 "data/maps/AncientTomb/scripts.pory"
+	setflag FLAG_DEFEATED_REGISTEEL
 # 74 "data/maps/AncientTomb/scripts.pory"
-	setflag FLAG_DEFEATED_REGISTEEL
-# 75 "data/maps/AncientTomb/scripts.pory"
 	release
+# 75 "data/maps/AncientTomb/scripts.pory"
+	end
 # 76 "data/maps/AncientTomb/scripts.pory"
-	end
+
 # 77 "data/maps/AncientTomb/scripts.pory"
-
-# 78 "data/maps/AncientTomb/scripts.pory"
 AncientTomb_EventScript_DefeatedRegisteel::
-# 79 "data/maps/AncientTomb/scripts.pory"
+# 78 "data/maps/AncientTomb/scripts.pory"
 	setflag FLAG_DEFEATED_REGISTEEL
-# 80 "data/maps/AncientTomb/scripts.pory"
+# 79 "data/maps/AncientTomb/scripts.pory"
 	goto Common_EventScript_RemoveStaticPokemon
-# 81 "data/maps/AncientTomb/scripts.pory"
+# 80 "data/maps/AncientTomb/scripts.pory"
 	end
-# 82 "data/maps/AncientTomb/scripts.pory"
+# 81 "data/maps/AncientTomb/scripts.pory"
 
-# 83 "data/maps/AncientTomb/scripts.pory"
+# 82 "data/maps/AncientTomb/scripts.pory"
 AncientTomb_EventScript_RanFromRegisteel::
-# 84 "data/maps/AncientTomb/scripts.pory"
+# 83 "data/maps/AncientTomb/scripts.pory"
 	setvar VAR_0x8004, SPECIES_REGISTEEL
-# 85 "data/maps/AncientTomb/scripts.pory"
+# 84 "data/maps/AncientTomb/scripts.pory"
 	goto Common_EventScript_LegendaryFlewAway
-# 86 "data/maps/AncientTomb/scripts.pory"
+# 85 "data/maps/AncientTomb/scripts.pory"
 	end
 
 AncientTomb_EventScript_IronHead::
-# 92 "data/maps/AncientTomb/scripts.pory"
+# 91 "data/maps/AncientTomb/scripts.pory"
 	lock
-# 93 "data/maps/AncientTomb/scripts.pory"
+# 92 "data/maps/AncientTomb/scripts.pory"
 	faceplayer
-# 94 "data/maps/AncientTomb/scripts.pory"
+# 93 "data/maps/AncientTomb/scripts.pory"
 	checkitem ITEM_TM_IRON_HEAD
-# 95 "data/maps/AncientTomb/scripts.pory"
+# 94 "data/maps/AncientTomb/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq AncientTomb_EventScript_IronHead_2
 AncientTomb_EventScript_IronHead_1:
-# 101 "data/maps/AncientTomb/scripts.pory"
+# 100 "data/maps/AncientTomb/scripts.pory"
 	goto_if_set FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED, AncientTomb_EventScript_IronHead_5
-# 105 "data/maps/AncientTomb/scripts.pory"
+# 104 "data/maps/AncientTomb/scripts.pory"
 	msgbox AncientTomb_EventScript_IronHead_Text_2, MSGBOX_NPC
 AncientTomb_EventScript_IronHead_4:
-# 107 "data/maps/AncientTomb/scripts.pory"
+# 106 "data/maps/AncientTomb/scripts.pory"
 	releaseall
 	end
 
 AncientTomb_EventScript_IronHead_2:
-# 96 "data/maps/AncientTomb/scripts.pory"
+# 95 "data/maps/AncientTomb/scripts.pory"
 	msgbox AncientTomb_EventScript_IronHead_Text_0, MSGBOX_NPC
-# 97 "data/maps/AncientTomb/scripts.pory"
+# 96 "data/maps/AncientTomb/scripts.pory"
 	closemessage
-# 98 "data/maps/AncientTomb/scripts.pory"
+# 97 "data/maps/AncientTomb/scripts.pory"
 	giveitem ITEM_TM_IRON_HEAD
-# 99 "data/maps/AncientTomb/scripts.pory"
+# 98 "data/maps/AncientTomb/scripts.pory"
 	waitfanfare
 	goto AncientTomb_EventScript_IronHead_1
 
 AncientTomb_EventScript_IronHead_5:
-# 102 "data/maps/AncientTomb/scripts.pory"
+# 101 "data/maps/AncientTomb/scripts.pory"
 	msgbox AncientTomb_EventScript_IronHead_Text_1, MSGBOX_NPC
 	goto AncientTomb_EventScript_IronHead_4
 
 
 AncientTomb_EventScript_IronHead_Text_0:
-# 96 "data/maps/AncientTomb/scripts.pory"
+# 95 "data/maps/AncientTomb/scripts.pory"
 	.string "Rampardos is trying to use his powerful\n"
 	.string "Headbutt to break down this cave wall.\p"
 	.string "But it isn't working...\p"
 	.string "Perhaps you'll have better luck.$"
 
 AncientTomb_EventScript_IronHead_Text_1:
-# 102 "data/maps/AncientTomb/scripts.pory"
+# 101 "data/maps/AncientTomb/scripts.pory"
 	.string "The wall just opened! Did you make it\n"
 	.string "happen?$"
 
 AncientTomb_EventScript_IronHead_Text_2:
-# 105 "data/maps/AncientTomb/scripts.pory"
+# 104 "data/maps/AncientTomb/scripts.pory"
 	.string "I have a feeling there's something\n"
 	.string "special on the other side of this wall.$"

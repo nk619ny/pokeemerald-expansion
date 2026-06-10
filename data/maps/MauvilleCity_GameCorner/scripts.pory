@@ -1060,6 +1060,11 @@ script MauvilleCity_GameCorner_EventScript_BuyMegaStones{
 	if(!checkitem(ITEM_SUNFLORITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Sunflora        500 coins",ITEM_SUNFLORITE)}
 	if(!checkitem(ITEM_FLYGONITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Flygon            500 coins",ITEM_FLYGONITE)}
 	if(!checkitem(ITEM_VIKAVOLITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Vikavolt        500 coins",ITEM_VIKAVOLITE)}
+	if(!checkitem(ITEM_SNORLAXITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Snorlax        500 coins",ITEM_SNORLAXITE)}
+	if(!checkitem(ITEM_GARBODITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Garbodor        500 coins",ITEM_GARBODITE)}
+	if(!checkitem(ITEM_SANDACONDITE) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Sandaconda      500 coins",ITEM_SANDACONDITE)}
+	if(!checkitem(ITEM_ORBEETLITE) && !flag(FLAG_IS_CHAMPION)) 			{dynmultipush("Orbeetlite      500 coins",ITEM_ORBEETLITE)}
+	if(!checkitem(ITEM_COPPERAJITE) && !flag(FLAG_IS_CHAMPION)) 		{dynmultipush("Copperajite     500 coins",ITEM_COPPERAJITE)}
 	dynmultipush("Nevermind",ITEM_NONE)
 
 

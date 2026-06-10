@@ -7929,7 +7929,7 @@ static const struct LevelUpMove sTaillowLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sSwellowLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_BRAVE_BIRD),
+//    LEVEL_UP_MOVE( 1, MOVE_BRAVE_BIRD), //nerfed tutor learnset
     LEVEL_UP_MOVE( 1, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_PLUCK),
     LEVEL_UP_MOVE( 1, MOVE_PECK),

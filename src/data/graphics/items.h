@@ -1061,6 +1061,22 @@ const u16 gItemIconPalette_Vikavolite[] = INCGFX_U16("graphics/items/icon_palett
 
 const u32 gItemIcon_Slowkingite[] = INCGFX_U32("graphics/items/icons/slowkingite.png", ".4bpp.smol");
 const u16 gItemIconPalette_Slowkingite[] = INCGFX_U16("graphics/items/icon_palettes/slowkingite.pal", ".gbapal");
+
+const u32 gItemIcon_Snorlaxite[] = INCGFX_U32("graphics/items/icons/snorlaxite.png", ".4bpp.smol");
+const u16 gItemIconPalette_Snorlaxite[] = INCGFX_U16("graphics/items/icons/snorlaxite.png", ".gbapal");
+
+const u32 gItemIcon_Garbodite[] = INCGFX_U32("graphics/items/icons/garbodite.png", ".4bpp.smol");
+const u16 gItemIconPalette_Garbodite[] = INCGFX_U16("graphics/items/icons/garbodite.png", ".gbapal");
+
+const u32 gItemIcon_Copperajite[] = INCGFX_U32("graphics/items/icons/copperajite.png", ".4bpp.smol");
+const u16 gItemIconPalette_Copperajite[] = INCGFX_U16("graphics/items/icons/copperajite.png", ".gbapal");
+
+const u32 gItemIcon_Orbeetlite[] = INCGFX_U32("graphics/items/icons/orbeetlite.png", ".4bpp.smol");
+const u16 gItemIconPalette_Orbeetlite[] = INCGFX_U16("graphics/items/icons/orbeetlite.png", ".gbapal");
+
+const u32 gItemIcon_Sandacondite[] = INCGFX_U32("graphics/items/icons/sandacondite.png", ".4bpp.smol");
+const u16 gItemIconPalette_Sandacondite[] = INCGFX_U16("graphics/items/icons/sandacondite.png", ".gbapal");
+
 //the above mega stones have custom colors
 
 // Gems

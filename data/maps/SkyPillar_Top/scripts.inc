@@ -109,235 +109,235 @@ SkyPillar_Top_EventScript_Rayquaza::
 # 55 "data/maps/SkyPillar_Top/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 56 "data/maps/SkyPillar_Top/scripts.pory"
-	waitstate
-# 57 "data/maps/SkyPillar_Top/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-# 58 "data/maps/SkyPillar_Top/scripts.pory"
+# 57 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 59 "data/maps/SkyPillar_Top/scripts.pory"
+# 58 "data/maps/SkyPillar_Top/scripts.pory"
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, SkyPillar_Top_EventScript_DefeatedRayquaza
-# 60 "data/maps/SkyPillar_Top/scripts.pory"
+# 59 "data/maps/SkyPillar_Top/scripts.pory"
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SkyPillar_Top_EventScript_RanFromRayquaza
-# 61 "data/maps/SkyPillar_Top/scripts.pory"
+# 60 "data/maps/SkyPillar_Top/scripts.pory"
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SkyPillar_Top_EventScript_RanFromRayquaza
+# 61 "data/maps/SkyPillar_Top/scripts.pory"
+	setflag FLAG_DEFEATED_RAYQUAZA
 # 62 "data/maps/SkyPillar_Top/scripts.pory"
-	setflag FLAG_DEFEATED_RAYQUAZA
+	releaseall
 # 63 "data/maps/SkyPillar_Top/scripts.pory"
-	releaseall
+	end
 # 64 "data/maps/SkyPillar_Top/scripts.pory"
-	end
+
 # 65 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 66 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_EventScript_DefeatedRayquaza::
-# 67 "data/maps/SkyPillar_Top/scripts.pory"
+# 66 "data/maps/SkyPillar_Top/scripts.pory"
 	setflag FLAG_DEFEATED_RAYQUAZA
-# 68 "data/maps/SkyPillar_Top/scripts.pory"
+# 67 "data/maps/SkyPillar_Top/scripts.pory"
 	goto SkyPillar_Top_EventScript_DefeatedRayquaza2
+# 68 "data/maps/SkyPillar_Top/scripts.pory"
+	end
 # 69 "data/maps/SkyPillar_Top/scripts.pory"
-	end
+
 # 70 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 71 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_EventScript_RanFromRayquaza::
-# 72 "data/maps/SkyPillar_Top/scripts.pory"
+# 71 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_RAYQUAZA
-# 73 "data/maps/SkyPillar_Top/scripts.pory"
+# 72 "data/maps/SkyPillar_Top/scripts.pory"
 	goto SkyPillar_Top_EventScript_RanFromRayquaza2
+# 73 "data/maps/SkyPillar_Top/scripts.pory"
+	end
 # 74 "data/maps/SkyPillar_Top/scripts.pory"
-	end
+
 # 75 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 76 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_EventScript_DefeatedRayquaza2::
+# 76 "data/maps/SkyPillar_Top/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
 # 77 "data/maps/SkyPillar_Top/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_LAST_TALKED
 # 78 "data/maps/SkyPillar_Top/scripts.pory"
-	removeobject VAR_LAST_TALKED
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 79 "data/maps/SkyPillar_Top/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	releaseall
 # 80 "data/maps/SkyPillar_Top/scripts.pory"
-	releaseall
+	end
 # 81 "data/maps/SkyPillar_Top/scripts.pory"
-	end
+
 # 82 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 83 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_EventScript_RanFromRayquaza2::
-# 84 "data/maps/SkyPillar_Top/scripts.pory"
+# 83 "data/maps/SkyPillar_Top/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 85 "data/maps/SkyPillar_Top/scripts.pory"
+# 84 "data/maps/SkyPillar_Top/scripts.pory"
 	removeobject VAR_LAST_TALKED
-# 86 "data/maps/SkyPillar_Top/scripts.pory"
+# 85 "data/maps/SkyPillar_Top/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 87 "data/maps/SkyPillar_Top/scripts.pory"
+# 86 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, VAR_0x8004
-# 88 "data/maps/SkyPillar_Top/scripts.pory"
+# 87 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox gText_LegendaryFlewAway, MSGBOX_DEFAULT
+# 88 "data/maps/SkyPillar_Top/scripts.pory"
+	releaseall
 # 89 "data/maps/SkyPillar_Top/scripts.pory"
-	releaseall
+	end
 # 90 "data/maps/SkyPillar_Top/scripts.pory"
-	end
+
 # 91 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 92 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_EventScript_AwakenRayquaza::
-# 93 "data/maps/SkyPillar_Top/scripts.pory"
+# 92 "data/maps/SkyPillar_Top/scripts.pory"
 	lockall
-# 94 "data/maps/SkyPillar_Top/scripts.pory"
+# 93 "data/maps/SkyPillar_Top/scripts.pory"
 	fadeoutbgm 1
+# 94 "data/maps/SkyPillar_Top/scripts.pory"
+
 # 95 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 96 "data/maps/SkyPillar_Top/scripts.pory"
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterUp
-# 97 "data/maps/SkyPillar_Top/scripts.pory"
+# 96 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox SkyPillar_Top_Text_StevenRayquazaAwakens, MSGBOX_DEFAULT
+# 97 "data/maps/SkyPillar_Top/scripts.pory"
+	closemessage
 # 98 "data/maps/SkyPillar_Top/scripts.pory"
-	closemessage
+
 # 99 "data/maps/SkyPillar_Top/scripts.pory"
-
+	setvar VAR_RESULT, 1
 # 100 "data/maps/SkyPillar_Top/scripts.pory"
-	setvar VAR_RESULT, 1
-# 101 "data/maps/SkyPillar_Top/scripts.pory"
 	playse SE_M_DETECT
-# 102 "data/maps/SkyPillar_Top/scripts.pory"
+# 101 "data/maps/SkyPillar_Top/scripts.pory"
 	dofieldeffectsparkle 13, 9, 0
-# 103 "data/maps/SkyPillar_Top/scripts.pory"
+# 102 "data/maps/SkyPillar_Top/scripts.pory"
 	waitfieldeffect FLDEFF_SPARKLE
+# 103 "data/maps/SkyPillar_Top/scripts.pory"
+	closemessage
 # 104 "data/maps/SkyPillar_Top/scripts.pory"
-	closemessage
-# 105 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_RESULT, 1
+# 105 "data/maps/SkyPillar_Top/scripts.pory"
+
 # 106 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 107 "data/maps/SkyPillar_Top/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+# 107 "data/maps/SkyPillar_Top/scripts.pory"
+	waitmovement 0
 # 108 "data/maps/SkyPillar_Top/scripts.pory"
-	waitmovement 0
+	special SpawnCameraObject
 # 109 "data/maps/SkyPillar_Top/scripts.pory"
-	special SpawnCameraObject
-# 110 "data/maps/SkyPillar_Top/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, SkyPillar_Top_Movement_CameraPanUp
+# 110 "data/maps/SkyPillar_Top/scripts.pory"
+	waitmovement 0
 # 111 "data/maps/SkyPillar_Top/scripts.pory"
-	waitmovement 0
+	special RemoveCameraObject
 # 112 "data/maps/SkyPillar_Top/scripts.pory"
-	special RemoveCameraObject
-# 113 "data/maps/SkyPillar_Top/scripts.pory"
 	applymovement LOCALID_RAYQUAZA_SLEEPING, SkyPillar_Top_Movement_RayquazaStir
+# 113 "data/maps/SkyPillar_Top/scripts.pory"
+	waitmovement 0
 # 114 "data/maps/SkyPillar_Top/scripts.pory"
-	waitmovement 0
+	waitse
 # 115 "data/maps/SkyPillar_Top/scripts.pory"
-	waitse
+	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
 # 116 "data/maps/SkyPillar_Top/scripts.pory"
-	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
+	setvar VAR_0x8004, 1  @ vertical pan
 # 117 "data/maps/SkyPillar_Top/scripts.pory"
-	setvar VAR_0x8004, 1  @ vertical pan
-# 118 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8005, 1  @ horizontal pan
+# 118 "data/maps/SkyPillar_Top/scripts.pory"
+	setvar VAR_0x8006, 8  @ num shakes
 # 119 "data/maps/SkyPillar_Top/scripts.pory"
-	setvar VAR_0x8006, 8  @ num shakes
-# 120 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8007, 3  @ shake delay
+# 120 "data/maps/SkyPillar_Top/scripts.pory"
+	special ShakeCamera
 # 121 "data/maps/SkyPillar_Top/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 122 "data/maps/SkyPillar_Top/scripts.pory"
-	waitstate
-# 123 "data/maps/SkyPillar_Top/scripts.pory"
 	waitse
-# 124 "data/maps/SkyPillar_Top/scripts.pory"
+# 123 "data/maps/SkyPillar_Top/scripts.pory"
 	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
-# 125 "data/maps/SkyPillar_Top/scripts.pory"
+# 124 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, 1  @ vertical pan
-# 126 "data/maps/SkyPillar_Top/scripts.pory"
+# 125 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8005, 2  @ horizontal pan
-# 127 "data/maps/SkyPillar_Top/scripts.pory"
+# 126 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8006, 8  @ num shakes
-# 128 "data/maps/SkyPillar_Top/scripts.pory"
+# 127 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8007, 5  @ shake delay
-# 129 "data/maps/SkyPillar_Top/scripts.pory"
+# 128 "data/maps/SkyPillar_Top/scripts.pory"
 	special ShakeCamera
-# 130 "data/maps/SkyPillar_Top/scripts.pory"
+# 129 "data/maps/SkyPillar_Top/scripts.pory"
 	waitstate
-# 131 "data/maps/SkyPillar_Top/scripts.pory"
+# 130 "data/maps/SkyPillar_Top/scripts.pory"
 	waitmoncry
-# 132 "data/maps/SkyPillar_Top/scripts.pory"
+# 131 "data/maps/SkyPillar_Top/scripts.pory"
 	applymovement LOCALID_RAYQUAZA_SLEEPING, SkyPillar_Top_Movement_RayquazaFlyOff
+# 132 "data/maps/SkyPillar_Top/scripts.pory"
+	waitmovement 0
 # 133 "data/maps/SkyPillar_Top/scripts.pory"
-	waitmovement 0
-# 134 "data/maps/SkyPillar_Top/scripts.pory"
 	removeobject LOCALID_RAYQUAZA_SLEEPING
-# 135 "data/maps/SkyPillar_Top/scripts.pory"
+# 134 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox SkyPillar_Top_Text_RayquazaFlewOff, MSGBOX_DEFAULT
+# 135 "data/maps/SkyPillar_Top/scripts.pory"
+	closemessage
 # 136 "data/maps/SkyPillar_Top/scripts.pory"
-	closemessage
-# 137 "data/maps/SkyPillar_Top/scripts.pory"
 	delay 20
-# 138 "data/maps/SkyPillar_Top/scripts.pory"
+# 137 "data/maps/SkyPillar_Top/scripts.pory"
 	fadeinbgm 1
-# 139 "data/maps/SkyPillar_Top/scripts.pory"
+# 138 "data/maps/SkyPillar_Top/scripts.pory"
 	special SpawnCameraObject
-# 140 "data/maps/SkyPillar_Top/scripts.pory"
+# 139 "data/maps/SkyPillar_Top/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, SkyPillar_Top_Movement_CameraPanDown
+# 140 "data/maps/SkyPillar_Top/scripts.pory"
+	waitmovement 0
 # 141 "data/maps/SkyPillar_Top/scripts.pory"
-	waitmovement 0
-# 142 "data/maps/SkyPillar_Top/scripts.pory"
 	special RemoveCameraObject
-# 143 "data/maps/SkyPillar_Top/scripts.pory"
+# 142 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 5
-# 144 "data/maps/SkyPillar_Top/scripts.pory"
+# 143 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_SKY_PILLAR_STATE, 1
-# 145 "data/maps/SkyPillar_Top/scripts.pory"
+# 144 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 1
-# 146 "data/maps/SkyPillar_Top/scripts.pory"
+# 145 "data/maps/SkyPillar_Top/scripts.pory"
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA
+# 146 "data/maps/SkyPillar_Top/scripts.pory"
+
 # 147 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 148 "data/maps/SkyPillar_Top/scripts.pory"
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterRight
-# 149 "data/maps/SkyPillar_Top/scripts.pory"
+# 148 "data/maps/SkyPillar_Top/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+# 149 "data/maps/SkyPillar_Top/scripts.pory"
+	waitmovement 0
 # 150 "data/maps/SkyPillar_Top/scripts.pory"
-	waitmovement 0
-# 151 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox SkyPillar_Top_Text_StevenCheckSootopolis, MSGBOX_DEFAULT
-# 152 "data/maps/SkyPillar_Top/scripts.pory"
+# 151 "data/maps/SkyPillar_Top/scripts.pory"
 	closemessage
+# 152 "data/maps/SkyPillar_Top/scripts.pory"
+
 # 153 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 154 "data/maps/SkyPillar_Top/scripts.pory"
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
-# 155 "data/maps/SkyPillar_Top/scripts.pory"
+# 154 "data/maps/SkyPillar_Top/scripts.pory"
 	waitmovement 0
-# 156 "data/maps/SkyPillar_Top/scripts.pory"
+# 155 "data/maps/SkyPillar_Top/scripts.pory"
 	delay 50
-# 157 "data/maps/SkyPillar_Top/scripts.pory"
+# 156 "data/maps/SkyPillar_Top/scripts.pory"
 	setfieldeffectargument 0, 1
-# 158 "data/maps/SkyPillar_Top/scripts.pory"
+# 157 "data/maps/SkyPillar_Top/scripts.pory"
 	dofieldeffect FLDEFF_NPCFLY_OUT
-# 159 "data/maps/SkyPillar_Top/scripts.pory"
+# 158 "data/maps/SkyPillar_Top/scripts.pory"
 	delay 15
-# 160 "data/maps/SkyPillar_Top/scripts.pory"
+# 159 "data/maps/SkyPillar_Top/scripts.pory"
 	removeobject LOCALID_STEVEN
-# 161 "data/maps/SkyPillar_Top/scripts.pory"
+# 160 "data/maps/SkyPillar_Top/scripts.pory"
 	waitfieldeffect FLDEFF_NPCFLY_OUT
+# 161 "data/maps/SkyPillar_Top/scripts.pory"
+
 # 162 "data/maps/SkyPillar_Top/scripts.pory"
-
-# 163 "data/maps/SkyPillar_Top/scripts.pory"
 	releaseall
-# 164 "data/maps/SkyPillar_Top/scripts.pory"
+# 163 "data/maps/SkyPillar_Top/scripts.pory"
 	end
-# 165 "data/maps/SkyPillar_Top/scripts.pory"
+# 164 "data/maps/SkyPillar_Top/scripts.pory"
 
-# 166 "data/maps/SkyPillar_Top/scripts.pory"
+# 165 "data/maps/SkyPillar_Top/scripts.pory"
 @ Rayquaza has unusual movement frames
-# 167 "data/maps/SkyPillar_Top/scripts.pory"
+# 166 "data/maps/SkyPillar_Top/scripts.pory"
 @ See comments, or sAnimTable_Rayquaza
-# 168 "data/maps/SkyPillar_Top/scripts.pory"
+# 167 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_Movement_RayquazaStir:
-# 169 "data/maps/SkyPillar_Top/scripts.pory"
+# 168 "data/maps/SkyPillar_Top/scripts.pory"
 	delay_16
-# 170 "data/maps/SkyPillar_Top/scripts.pory"
+# 169 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_in_place_fast_left  @ Coiled, awake
+# 170 "data/maps/SkyPillar_Top/scripts.pory"
+	delay_16
 # 171 "data/maps/SkyPillar_Top/scripts.pory"
 	delay_16
 # 172 "data/maps/SkyPillar_Top/scripts.pory"
@@ -347,13 +347,13 @@ SkyPillar_Top_Movement_RayquazaStir:
 # 174 "data/maps/SkyPillar_Top/scripts.pory"
 	delay_16
 # 175 "data/maps/SkyPillar_Top/scripts.pory"
-	delay_16
-# 176 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_in_place_left  @ Coiled, mouth open
-# 177 "data/maps/SkyPillar_Top/scripts.pory"
+# 176 "data/maps/SkyPillar_Top/scripts.pory"
 	delay_16
-# 178 "data/maps/SkyPillar_Top/scripts.pory"
+# 177 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_in_place_right  @ Normal, awake
+# 178 "data/maps/SkyPillar_Top/scripts.pory"
+	delay_16
 # 179 "data/maps/SkyPillar_Top/scripts.pory"
 	delay_16
 # 180 "data/maps/SkyPillar_Top/scripts.pory"
@@ -365,25 +365,25 @@ SkyPillar_Top_Movement_RayquazaStir:
 # 183 "data/maps/SkyPillar_Top/scripts.pory"
 	delay_16
 # 184 "data/maps/SkyPillar_Top/scripts.pory"
-	delay_16
-# 185 "data/maps/SkyPillar_Top/scripts.pory"
 	step_end
-# 186 "data/maps/SkyPillar_Top/scripts.pory"
+# 185 "data/maps/SkyPillar_Top/scripts.pory"
 
-# 187 "data/maps/SkyPillar_Top/scripts.pory"
+# 186 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_Movement_RayquazaFlyOff:
-# 188 "data/maps/SkyPillar_Top/scripts.pory"
+# 187 "data/maps/SkyPillar_Top/scripts.pory"
 	delay_16
-# 189 "data/maps/SkyPillar_Top/scripts.pory"
+# 188 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_in_place_down  @ Coiled, asleep
+# 189 "data/maps/SkyPillar_Top/scripts.pory"
+	delay_8
 # 190 "data/maps/SkyPillar_Top/scripts.pory"
-	delay_8
-# 191 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_in_place_right  @ Normal, awake
-# 192 "data/maps/SkyPillar_Top/scripts.pory"
+# 191 "data/maps/SkyPillar_Top/scripts.pory"
 	delay_8
-# 193 "data/maps/SkyPillar_Top/scripts.pory"
+# 192 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_faster_up  @ Fly up
+# 193 "data/maps/SkyPillar_Top/scripts.pory"
+	slide_up
 # 194 "data/maps/SkyPillar_Top/scripts.pory"
 	slide_up
 # 195 "data/maps/SkyPillar_Top/scripts.pory"
@@ -395,683 +395,681 @@ SkyPillar_Top_Movement_RayquazaFlyOff:
 # 198 "data/maps/SkyPillar_Top/scripts.pory"
 	slide_up
 # 199 "data/maps/SkyPillar_Top/scripts.pory"
-	slide_up
-# 200 "data/maps/SkyPillar_Top/scripts.pory"
 	step_end
-# 201 "data/maps/SkyPillar_Top/scripts.pory"
+# 200 "data/maps/SkyPillar_Top/scripts.pory"
 
-# 202 "data/maps/SkyPillar_Top/scripts.pory"
+# 201 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_Movement_CameraPanUp:
+# 202 "data/maps/SkyPillar_Top/scripts.pory"
+	walk_slow_up
 # 203 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_slow_up
 # 204 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_slow_up
 # 205 "data/maps/SkyPillar_Top/scripts.pory"
-	walk_slow_up
-# 206 "data/maps/SkyPillar_Top/scripts.pory"
 	step_end
-# 207 "data/maps/SkyPillar_Top/scripts.pory"
+# 206 "data/maps/SkyPillar_Top/scripts.pory"
 
-# 208 "data/maps/SkyPillar_Top/scripts.pory"
+# 207 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_Movement_CameraPanDown:
+# 208 "data/maps/SkyPillar_Top/scripts.pory"
+	walk_slow_down
 # 209 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_slow_down
 # 210 "data/maps/SkyPillar_Top/scripts.pory"
 	walk_slow_down
 # 211 "data/maps/SkyPillar_Top/scripts.pory"
-	walk_slow_down
-# 212 "data/maps/SkyPillar_Top/scripts.pory"
 	step_end
-# 213 "data/maps/SkyPillar_Top/scripts.pory"
+# 212 "data/maps/SkyPillar_Top/scripts.pory"
 
-# 214 "data/maps/SkyPillar_Top/scripts.pory"
+# 213 "data/maps/SkyPillar_Top/scripts.pory"
 SkyPillar_Top_Text_RayquazaFlewOff:
-# 215 "data/maps/SkyPillar_Top/scripts.pory"
+# 214 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "The awakened RAYQUAZA flew off…$"
 
 SkyPillar_Top_EventScript_FusionTutor::
-# 234 "data/maps/SkyPillar_Top/scripts.pory"
+# 233 "data/maps/SkyPillar_Top/scripts.pory"
 	lock
-# 235 "data/maps/SkyPillar_Top/scripts.pory"
+# 234 "data/maps/SkyPillar_Top/scripts.pory"
 	faceplayer
-# 236 "data/maps/SkyPillar_Top/scripts.pory"
+# 235 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_Intro, MSGBOX_YESNO
-# 237 "data/maps/SkyPillar_Top/scripts.pory"
+# 236 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq SkyPillar_Top_EventScript_FusionTutor_2
-# 242 "data/maps/SkyPillar_Top/scripts.pory"
+# 241 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_ChooseMon
 	return
 
 SkyPillar_Top_EventScript_FusionTutor_2:
-# 238 "data/maps/SkyPillar_Top/scripts.pory"
+# 237 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_Declined, MSGBOX_DEFAULT
-# 239 "data/maps/SkyPillar_Top/scripts.pory"
+# 238 "data/maps/SkyPillar_Top/scripts.pory"
 	release
 	end
 
 
 FusionTutor_EventScript_ChooseMon::
-# 246 "data/maps/SkyPillar_Top/scripts.pory"
+# 245 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_ChooseMon, MSGBOX_DEFAULT
-# 247 "data/maps/SkyPillar_Top/scripts.pory"
+# 246 "data/maps/SkyPillar_Top/scripts.pory"
 	special ChoosePartyMon
-# 248 "data/maps/SkyPillar_Top/scripts.pory"
+# 247 "data/maps/SkyPillar_Top/scripts.pory"
 	waitstate
-# 249 "data/maps/SkyPillar_Top/scripts.pory"
+# 248 "data/maps/SkyPillar_Top/scripts.pory"
 	lock
-# 250 "data/maps/SkyPillar_Top/scripts.pory"
+# 249 "data/maps/SkyPillar_Top/scripts.pory"
 	faceplayer
-# 251 "data/maps/SkyPillar_Top/scripts.pory"
+# 250 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_0x8004, PARTY_SIZE
 	goto_if_ge FusionTutor_EventScript_ChooseMon_2
-# 256 "data/maps/SkyPillar_Top/scripts.pory"
+# 255 "data/maps/SkyPillar_Top/scripts.pory"
 	copyvar VAR_TEMP_0, VAR_0x8004
-# 257 "data/maps/SkyPillar_Top/scripts.pory"
+# 256 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
-# 258 "data/maps/SkyPillar_Top/scripts.pory"
+# 257 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_EGG
 	goto_if_eq FusionTutor_EventScript_ChooseMon_5
 FusionTutor_EventScript_ChooseMon_4:
-# 263 "data/maps/SkyPillar_Top/scripts.pory"
+# 262 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_ELECTIVIRE
 	goto_if_eq FusionTutor_EventScript_ChooseMon_8
 FusionTutor_EventScript_ChooseMon_7:
-# 271 "data/maps/SkyPillar_Top/scripts.pory"
+# 270 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_ZAPDOS
 	goto_if_eq FusionTutor_EventScript_ChooseMon_11
 FusionTutor_EventScript_ChooseMon_10:
-# 279 "data/maps/SkyPillar_Top/scripts.pory"
+# 278 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_RAIKOU
 	goto_if_eq FusionTutor_EventScript_ChooseMon_14
 FusionTutor_EventScript_ChooseMon_13:
-# 287 "data/maps/SkyPillar_Top/scripts.pory"
+# 286 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_JOLTEON
 	goto_if_eq FusionTutor_EventScript_ChooseMon_17
 FusionTutor_EventScript_ChooseMon_16:
-# 295 "data/maps/SkyPillar_Top/scripts.pory"
+# 294 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_ELECTABUZZ
 	goto_if_eq FusionTutor_EventScript_ChooseMon_20
 FusionTutor_EventScript_ChooseMon_19:
-# 304 "data/maps/SkyPillar_Top/scripts.pory"
+# 303 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_MAGMORTAR
 	goto_if_eq FusionTutor_EventScript_ChooseMon_23
 FusionTutor_EventScript_ChooseMon_22:
-# 312 "data/maps/SkyPillar_Top/scripts.pory"
+# 311 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_MOLTRES
 	goto_if_eq FusionTutor_EventScript_ChooseMon_26
 FusionTutor_EventScript_ChooseMon_25:
-# 320 "data/maps/SkyPillar_Top/scripts.pory"
+# 319 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_ENTEI
 	goto_if_eq FusionTutor_EventScript_ChooseMon_29
 FusionTutor_EventScript_ChooseMon_28:
-# 328 "data/maps/SkyPillar_Top/scripts.pory"
+# 327 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_FLAREON
 	goto_if_eq FusionTutor_EventScript_ChooseMon_32
 FusionTutor_EventScript_ChooseMon_31:
-# 336 "data/maps/SkyPillar_Top/scripts.pory"
+# 335 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_MAGMAR
 	goto_if_eq FusionTutor_EventScript_ChooseMon_35
 FusionTutor_EventScript_ChooseMon_34:
-# 345 "data/maps/SkyPillar_Top/scripts.pory"
+# 344 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_NINETALES_ALOLA
 	goto_if_eq FusionTutor_EventScript_ChooseMon_38
 FusionTutor_EventScript_ChooseMon_37:
-# 354 "data/maps/SkyPillar_Top/scripts.pory"
+# 353 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_ARTICUNO
 	goto_if_eq FusionTutor_EventScript_ChooseMon_41
 FusionTutor_EventScript_ChooseMon_40:
-# 358 "data/maps/SkyPillar_Top/scripts.pory"
+# 357 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_GLACEON
 	goto_if_eq FusionTutor_EventScript_ChooseMon_44
 FusionTutor_EventScript_ChooseMon_43:
-# 362 "data/maps/SkyPillar_Top/scripts.pory"
+# 361 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, SPECIES_JYNX
 	goto_if_eq FusionTutor_EventScript_ChooseMon_47
 FusionTutor_EventScript_ChooseMon_46:
-# 367 "data/maps/SkyPillar_Top/scripts.pory"
+# 366 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_InvalidMon, MSGBOX_DEFAULT
-# 368 "data/maps/SkyPillar_Top/scripts.pory"
+# 367 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_AskAnother
 	return
 
 FusionTutor_EventScript_ChooseMon_2:
-# 252 "data/maps/SkyPillar_Top/scripts.pory"
+# 251 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_Declined, MSGBOX_DEFAULT
-# 253 "data/maps/SkyPillar_Top/scripts.pory"
+# 252 "data/maps/SkyPillar_Top/scripts.pory"
 	release
 	end
 
 FusionTutor_EventScript_ChooseMon_5:
-# 259 "data/maps/SkyPillar_Top/scripts.pory"
+# 258 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_CantTeachEgg, MSGBOX_DEFAULT
-# 260 "data/maps/SkyPillar_Top/scripts.pory"
+# 259 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_AskAnother
 	goto FusionTutor_EventScript_ChooseMon_4
 
 FusionTutor_EventScript_ChooseMon_8:
-# 264 "data/maps/SkyPillar_Top/scripts.pory"
+# 263 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_ELECTIVIRE
-# 265 "data/maps/SkyPillar_Top/scripts.pory"
+# 264 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_BOLT
-# 266 "data/maps/SkyPillar_Top/scripts.pory"
+# 265 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_MAGMORTAR
-# 267 "data/maps/SkyPillar_Top/scripts.pory"
+# 266 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_BOLT
-# 268 "data/maps/SkyPillar_Top/scripts.pory"
+# 267 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_MAGMORTAR
-# 269 "data/maps/SkyPillar_Top/scripts.pory"
+# 268 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_7
 
 FusionTutor_EventScript_ChooseMon_11:
-# 272 "data/maps/SkyPillar_Top/scripts.pory"
+# 271 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_ZAPDOS
-# 273 "data/maps/SkyPillar_Top/scripts.pory"
+# 272 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_BOLT
-# 274 "data/maps/SkyPillar_Top/scripts.pory"
+# 273 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_MOLTRES
-# 275 "data/maps/SkyPillar_Top/scripts.pory"
+# 274 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_BOLT
-# 276 "data/maps/SkyPillar_Top/scripts.pory"
+# 275 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_MOLTRES
-# 277 "data/maps/SkyPillar_Top/scripts.pory"
+# 276 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_10
 
 FusionTutor_EventScript_ChooseMon_14:
-# 280 "data/maps/SkyPillar_Top/scripts.pory"
+# 279 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_RAIKOU
-# 281 "data/maps/SkyPillar_Top/scripts.pory"
+# 280 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_BOLT
-# 282 "data/maps/SkyPillar_Top/scripts.pory"
+# 281 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_ENTEI
-# 283 "data/maps/SkyPillar_Top/scripts.pory"
+# 282 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_BOLT
-# 284 "data/maps/SkyPillar_Top/scripts.pory"
+# 283 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_ENTEI
-# 285 "data/maps/SkyPillar_Top/scripts.pory"
+# 284 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_13
 
 FusionTutor_EventScript_ChooseMon_17:
-# 288 "data/maps/SkyPillar_Top/scripts.pory"
+# 287 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_JOLTEON
-# 289 "data/maps/SkyPillar_Top/scripts.pory"
+# 288 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_BOLT
-# 290 "data/maps/SkyPillar_Top/scripts.pory"
+# 289 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_FLAREON
-# 291 "data/maps/SkyPillar_Top/scripts.pory"
+# 290 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_BOLT
-# 292 "data/maps/SkyPillar_Top/scripts.pory"
+# 291 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_FLAREON
-# 293 "data/maps/SkyPillar_Top/scripts.pory"
+# 292 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_16
 
 FusionTutor_EventScript_ChooseMon_20:
-# 296 "data/maps/SkyPillar_Top/scripts.pory"
+# 295 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_ELECTABUZZ
-# 297 "data/maps/SkyPillar_Top/scripts.pory"
+# 296 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_BOLT
-# 298 "data/maps/SkyPillar_Top/scripts.pory"
+# 297 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_MAGMAR
-# 299 "data/maps/SkyPillar_Top/scripts.pory"
+# 298 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_BOLT
-# 300 "data/maps/SkyPillar_Top/scripts.pory"
+# 299 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_MAGMAR
-# 301 "data/maps/SkyPillar_Top/scripts.pory"
+# 300 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_19
 
 FusionTutor_EventScript_ChooseMon_23:
-# 305 "data/maps/SkyPillar_Top/scripts.pory"
+# 304 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_MAGMORTAR
-# 306 "data/maps/SkyPillar_Top/scripts.pory"
+# 305 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_FLARE
-# 307 "data/maps/SkyPillar_Top/scripts.pory"
+# 306 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_ELECTIVIRE
-# 308 "data/maps/SkyPillar_Top/scripts.pory"
+# 307 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_FLARE
-# 309 "data/maps/SkyPillar_Top/scripts.pory"
+# 308 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_ELECTIVIRE
-# 310 "data/maps/SkyPillar_Top/scripts.pory"
+# 309 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_22
 
 FusionTutor_EventScript_ChooseMon_26:
-# 313 "data/maps/SkyPillar_Top/scripts.pory"
+# 312 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_MOLTRES
-# 314 "data/maps/SkyPillar_Top/scripts.pory"
+# 313 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_FLARE
-# 315 "data/maps/SkyPillar_Top/scripts.pory"
+# 314 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_ZAPDOS
-# 316 "data/maps/SkyPillar_Top/scripts.pory"
+# 315 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_FLARE
-# 317 "data/maps/SkyPillar_Top/scripts.pory"
+# 316 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_ZAPDOS
-# 318 "data/maps/SkyPillar_Top/scripts.pory"
+# 317 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_25
 
 FusionTutor_EventScript_ChooseMon_29:
-# 321 "data/maps/SkyPillar_Top/scripts.pory"
+# 320 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_ENTEI
-# 322 "data/maps/SkyPillar_Top/scripts.pory"
+# 321 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_FLARE
-# 323 "data/maps/SkyPillar_Top/scripts.pory"
+# 322 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_RAIKOU
-# 324 "data/maps/SkyPillar_Top/scripts.pory"
+# 323 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_FLARE
-# 325 "data/maps/SkyPillar_Top/scripts.pory"
+# 324 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_RAIKOU
-# 326 "data/maps/SkyPillar_Top/scripts.pory"
+# 325 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_28
 
 FusionTutor_EventScript_ChooseMon_32:
-# 329 "data/maps/SkyPillar_Top/scripts.pory"
+# 328 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_FLAREON
-# 330 "data/maps/SkyPillar_Top/scripts.pory"
+# 329 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_FLARE
-# 331 "data/maps/SkyPillar_Top/scripts.pory"
+# 330 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_JOLTEON
-# 332 "data/maps/SkyPillar_Top/scripts.pory"
+# 331 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_FLARE
-# 333 "data/maps/SkyPillar_Top/scripts.pory"
+# 332 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_JOLTEON
-# 334 "data/maps/SkyPillar_Top/scripts.pory"
+# 333 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_31
 
 FusionTutor_EventScript_ChooseMon_35:
-# 337 "data/maps/SkyPillar_Top/scripts.pory"
+# 336 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_MAGMAR
-# 338 "data/maps/SkyPillar_Top/scripts.pory"
+# 337 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FUSION_FLARE
-# 339 "data/maps/SkyPillar_Top/scripts.pory"
+# 338 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_ELECTABUZZ
-# 340 "data/maps/SkyPillar_Top/scripts.pory"
+# 339 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FUSION_FLARE
-# 341 "data/maps/SkyPillar_Top/scripts.pory"
+# 340 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_ELECTABUZZ
-# 342 "data/maps/SkyPillar_Top/scripts.pory"
+# 341 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_34
 
 FusionTutor_EventScript_ChooseMon_38:
-# 346 "data/maps/SkyPillar_Top/scripts.pory"
+# 345 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_NINETALES_ALOLA
-# 347 "data/maps/SkyPillar_Top/scripts.pory"
+# 346 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_ICE_BURN
-# 348 "data/maps/SkyPillar_Top/scripts.pory"
+# 347 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_3, SPECIES_NINETALES
-# 349 "data/maps/SkyPillar_Top/scripts.pory"
+# 348 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_ICE_BURN
-# 350 "data/maps/SkyPillar_Top/scripts.pory"
+# 349 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_NINETALES
-# 351 "data/maps/SkyPillar_Top/scripts.pory"
+# 350 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_CheckSingleMove
 	goto FusionTutor_EventScript_ChooseMon_37
 
 FusionTutor_EventScript_ChooseMon_41:
-# 355 "data/maps/SkyPillar_Top/scripts.pory"
+# 354 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_ARTICUNO
-# 356 "data/maps/SkyPillar_Top/scripts.pory"
+# 355 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_Articuno
 	goto FusionTutor_EventScript_ChooseMon_40
 
 FusionTutor_EventScript_ChooseMon_44:
-# 359 "data/maps/SkyPillar_Top/scripts.pory"
+# 358 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_GLACEON
-# 360 "data/maps/SkyPillar_Top/scripts.pory"
+# 359 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_Glaceon
 	goto FusionTutor_EventScript_ChooseMon_43
 
 FusionTutor_EventScript_ChooseMon_47:
-# 363 "data/maps/SkyPillar_Top/scripts.pory"
+# 362 "data/maps/SkyPillar_Top/scripts.pory"
 	bufferspeciesname STR_VAR_1, SPECIES_JYNX
-# 364 "data/maps/SkyPillar_Top/scripts.pory"
+# 363 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_Jynx
 	goto FusionTutor_EventScript_ChooseMon_46
 
 
 FusionTutor_EventScript_CheckSingleMove::
-# 375 "data/maps/SkyPillar_Top/scripts.pory"
+# 374 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
-# 376 "data/maps/SkyPillar_Top/scripts.pory"
+# 375 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq FusionTutor_EventScript_CheckSingleMove_2
 FusionTutor_EventScript_CheckSingleMove_1:
-# 380 "data/maps/SkyPillar_Top/scripts.pory"
+# 379 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_OfferMove, MSGBOX_YESNO
-# 381 "data/maps/SkyPillar_Top/scripts.pory"
+# 380 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq FusionTutor_EventScript_CheckSingleMove_5
 FusionTutor_EventScript_CheckSingleMove_4:
-# 384 "data/maps/SkyPillar_Top/scripts.pory"
+# 383 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_TeachBufferedMove
 	return
 
 FusionTutor_EventScript_CheckSingleMove_2:
-# 377 "data/maps/SkyPillar_Top/scripts.pory"
+# 376 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_NeedPartner, MSGBOX_DEFAULT
-# 378 "data/maps/SkyPillar_Top/scripts.pory"
+# 377 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_AskAnother
 	goto FusionTutor_EventScript_CheckSingleMove_1
 
 FusionTutor_EventScript_CheckSingleMove_5:
-# 382 "data/maps/SkyPillar_Top/scripts.pory"
+# 381 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_AskAnother
 	goto FusionTutor_EventScript_CheckSingleMove_4
 
 
 FusionTutor_EventScript_TeachBufferedMove::
-# 390 "data/maps/SkyPillar_Top/scripts.pory"
+# 389 "data/maps/SkyPillar_Top/scripts.pory"
 	copyvar VAR_0x8004, VAR_TEMP_0
-# 391 "data/maps/SkyPillar_Top/scripts.pory"
+# 390 "data/maps/SkyPillar_Top/scripts.pory"
 	copyvar VAR_0x8005, VAR_TEMP_1
-# 392 "data/maps/SkyPillar_Top/scripts.pory"
+# 391 "data/maps/SkyPillar_Top/scripts.pory"
 	special CanTeachMoveBoxMon
-# 393 "data/maps/SkyPillar_Top/scripts.pory"
+# 392 "data/maps/SkyPillar_Top/scripts.pory"
 	waitstate
-# 394 "data/maps/SkyPillar_Top/scripts.pory"
+# 393 "data/maps/SkyPillar_Top/scripts.pory"
 	lock
-# 395 "data/maps/SkyPillar_Top/scripts.pory"
+# 394 "data/maps/SkyPillar_Top/scripts.pory"
 	faceplayer
-# 396 "data/maps/SkyPillar_Top/scripts.pory"
+# 395 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_Success, MSGBOX_DEFAULT
-# 397 "data/maps/SkyPillar_Top/scripts.pory"
+# 396 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_AskAnother
 	return
 
 
 FusionTutor_EventScript_AskAnother::
-# 401 "data/maps/SkyPillar_Top/scripts.pory"
+# 400 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_AnotherMon, MSGBOX_YESNO
-# 402 "data/maps/SkyPillar_Top/scripts.pory"
+# 401 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq FusionTutor_EventScript_AskAnother_2
 FusionTutor_EventScript_AskAnother_1:
-# 405 "data/maps/SkyPillar_Top/scripts.pory"
+# 404 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_Declined, MSGBOX_DEFAULT
-# 406 "data/maps/SkyPillar_Top/scripts.pory"
+# 405 "data/maps/SkyPillar_Top/scripts.pory"
 	release
 	end
 
 FusionTutor_EventScript_AskAnother_2:
-# 403 "data/maps/SkyPillar_Top/scripts.pory"
+# 402 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_ChooseMon
 	goto FusionTutor_EventScript_AskAnother_1
 
 
 FusionTutor_EventScript_Articuno::
-# 412 "data/maps/SkyPillar_Top/scripts.pory"
+# 411 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, 0
-# 413 "data/maps/SkyPillar_Top/scripts.pory"
+# 412 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_2, 0
-# 415 "data/maps/SkyPillar_Top/scripts.pory"
+# 414 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_MOLTRES
-# 416 "data/maps/SkyPillar_Top/scripts.pory"
+# 415 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
-# 417 "data/maps/SkyPillar_Top/scripts.pory"
+# 416 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FusionTutor_EventScript_Articuno_2
 FusionTutor_EventScript_Articuno_1:
-# 421 "data/maps/SkyPillar_Top/scripts.pory"
+# 420 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_ZAPDOS
-# 422 "data/maps/SkyPillar_Top/scripts.pory"
+# 421 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
-# 423 "data/maps/SkyPillar_Top/scripts.pory"
+# 422 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FusionTutor_EventScript_Articuno_5
 FusionTutor_EventScript_Articuno_4:
-# 426 "data/maps/SkyPillar_Top/scripts.pory"
+# 425 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_ResolveMultiMove
 	return
 
 FusionTutor_EventScript_Articuno_2:
-# 418 "data/maps/SkyPillar_Top/scripts.pory"
+# 417 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, 1
 	goto FusionTutor_EventScript_Articuno_1
 
 FusionTutor_EventScript_Articuno_5:
-# 424 "data/maps/SkyPillar_Top/scripts.pory"
+# 423 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_2, 1
 	goto FusionTutor_EventScript_Articuno_4
 
 
 FusionTutor_EventScript_Glaceon::
-# 431 "data/maps/SkyPillar_Top/scripts.pory"
+# 430 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, 0
-# 432 "data/maps/SkyPillar_Top/scripts.pory"
+# 431 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_2, 0
-# 434 "data/maps/SkyPillar_Top/scripts.pory"
+# 433 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_FLAREON
-# 435 "data/maps/SkyPillar_Top/scripts.pory"
+# 434 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
-# 436 "data/maps/SkyPillar_Top/scripts.pory"
+# 435 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FusionTutor_EventScript_Glaceon_2
 FusionTutor_EventScript_Glaceon_1:
-# 440 "data/maps/SkyPillar_Top/scripts.pory"
+# 439 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_JOLTEON
-# 441 "data/maps/SkyPillar_Top/scripts.pory"
+# 440 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
-# 442 "data/maps/SkyPillar_Top/scripts.pory"
+# 441 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FusionTutor_EventScript_Glaceon_5
 FusionTutor_EventScript_Glaceon_4:
-# 445 "data/maps/SkyPillar_Top/scripts.pory"
+# 444 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_ResolveMultiMove
 	return
 
 FusionTutor_EventScript_Glaceon_2:
-# 437 "data/maps/SkyPillar_Top/scripts.pory"
+# 436 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, 1
 	goto FusionTutor_EventScript_Glaceon_1
 
 FusionTutor_EventScript_Glaceon_5:
-# 443 "data/maps/SkyPillar_Top/scripts.pory"
+# 442 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_2, 1
 	goto FusionTutor_EventScript_Glaceon_4
 
 
 FusionTutor_EventScript_Jynx::
-# 450 "data/maps/SkyPillar_Top/scripts.pory"
+# 449 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, 0
-# 451 "data/maps/SkyPillar_Top/scripts.pory"
+# 450 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_2, 0
-# 453 "data/maps/SkyPillar_Top/scripts.pory"
+# 452 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_MAGMORTAR
-# 454 "data/maps/SkyPillar_Top/scripts.pory"
+# 453 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
-# 455 "data/maps/SkyPillar_Top/scripts.pory"
+# 454 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FusionTutor_EventScript_Jynx_2
 FusionTutor_EventScript_Jynx_1:
-# 458 "data/maps/SkyPillar_Top/scripts.pory"
+# 457 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_TEMP_1, 0
 	goto_if_eq FusionTutor_EventScript_Jynx_5
 FusionTutor_EventScript_Jynx_4:
-# 466 "data/maps/SkyPillar_Top/scripts.pory"
+# 465 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_ELECTIVIRE
-# 467 "data/maps/SkyPillar_Top/scripts.pory"
+# 466 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
-# 468 "data/maps/SkyPillar_Top/scripts.pory"
+# 467 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FusionTutor_EventScript_Jynx_8
 FusionTutor_EventScript_Jynx_7:
-# 471 "data/maps/SkyPillar_Top/scripts.pory"
+# 470 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_TEMP_2, 0
 	goto_if_eq FusionTutor_EventScript_Jynx_13
 FusionTutor_EventScript_Jynx_12:
-# 478 "data/maps/SkyPillar_Top/scripts.pory"
+# 477 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_ResolveMultiMove
 	return
 
 FusionTutor_EventScript_Jynx_2:
-# 456 "data/maps/SkyPillar_Top/scripts.pory"
+# 455 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, 1
 	goto FusionTutor_EventScript_Jynx_1
 
 FusionTutor_EventScript_Jynx_5:
-# 459 "data/maps/SkyPillar_Top/scripts.pory"
+# 458 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_MAGMAR
-# 460 "data/maps/SkyPillar_Top/scripts.pory"
+# 459 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
-# 461 "data/maps/SkyPillar_Top/scripts.pory"
+# 460 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FusionTutor_EventScript_Jynx_10
 	goto FusionTutor_EventScript_Jynx_4
 
 FusionTutor_EventScript_Jynx_8:
-# 469 "data/maps/SkyPillar_Top/scripts.pory"
+# 468 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_2, 1
 	goto FusionTutor_EventScript_Jynx_7
 
 FusionTutor_EventScript_Jynx_10:
-# 462 "data/maps/SkyPillar_Top/scripts.pory"
+# 461 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, 1
 	goto FusionTutor_EventScript_Jynx_4
 
 FusionTutor_EventScript_Jynx_13:
-# 472 "data/maps/SkyPillar_Top/scripts.pory"
+# 471 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_0x8004, SPECIES_ELECTABUZZ
-# 473 "data/maps/SkyPillar_Top/scripts.pory"
+# 472 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
-# 474 "data/maps/SkyPillar_Top/scripts.pory"
+# 473 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq FusionTutor_EventScript_Jynx_15
 	goto FusionTutor_EventScript_Jynx_12
 
 FusionTutor_EventScript_Jynx_15:
-# 475 "data/maps/SkyPillar_Top/scripts.pory"
+# 474 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_2, 1
 	goto FusionTutor_EventScript_Jynx_12
 
 
 FusionTutor_EventScript_ResolveMultiMove::
-# 485 "data/maps/SkyPillar_Top/scripts.pory"
+# 484 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_TEMP_1, 0
 	goto_if_eq FusionTutor_EventScript_ResolveMultiMove_3
 FusionTutor_EventScript_ResolveMultiMove_1:
-# 490 "data/maps/SkyPillar_Top/scripts.pory"
+# 489 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_TEMP_1, 1
 	goto_if_eq FusionTutor_EventScript_ResolveMultiMove_8
 FusionTutor_EventScript_ResolveMultiMove_6:
-# 500 "data/maps/SkyPillar_Top/scripts.pory"
+# 499 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_TEMP_1, 0
 	goto_if_eq FusionTutor_EventScript_ResolveMultiMove_13
 FusionTutor_EventScript_ResolveMultiMove_11:
-# 510 "data/maps/SkyPillar_Top/scripts.pory"
+# 509 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_ChooseMove, MSGBOX_DEFAULT
-# 511 "data/maps/SkyPillar_Top/scripts.pory"
+# 510 "data/maps/SkyPillar_Top/scripts.pory"
 	dynmultichoice 20, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, FusionTutor_EventScript_ResolveMultiMove_Text_0, FusionTutor_EventScript_ResolveMultiMove_Text_1
-# 512 "data/maps/SkyPillar_Top/scripts.pory"
+# 511 "data/maps/SkyPillar_Top/scripts.pory"
 	switch VAR_RESULT
-# 513 "data/maps/SkyPillar_Top/scripts.pory"
+# 512 "data/maps/SkyPillar_Top/scripts.pory"
 	case 0, FusionTutor_EventScript_ResolveMultiMove_20
-# 517 "data/maps/SkyPillar_Top/scripts.pory"
+# 516 "data/maps/SkyPillar_Top/scripts.pory"
 	case 1, FusionTutor_EventScript_ResolveMultiMove_21
-# 522 "data/maps/SkyPillar_Top/scripts.pory"
+# 521 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_AskAnother
 	return
 
 FusionTutor_EventScript_ResolveMultiMove_2:
-# 486 "data/maps/SkyPillar_Top/scripts.pory"
+# 485 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_NeedPartnerMulti, MSGBOX_DEFAULT
-# 487 "data/maps/SkyPillar_Top/scripts.pory"
+# 486 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_AskAnother
 	goto FusionTutor_EventScript_ResolveMultiMove_1
 
 FusionTutor_EventScript_ResolveMultiMove_3:
-# 485 "data/maps/SkyPillar_Top/scripts.pory"
+# 484 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_TEMP_2, 0
 	goto_if_eq FusionTutor_EventScript_ResolveMultiMove_2
 	goto FusionTutor_EventScript_ResolveMultiMove_1
 
 FusionTutor_EventScript_ResolveMultiMove_7:
-# 491 "data/maps/SkyPillar_Top/scripts.pory"
+# 490 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_ICE_BURN
-# 492 "data/maps/SkyPillar_Top/scripts.pory"
+# 491 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_ICE_BURN
-# 493 "data/maps/SkyPillar_Top/scripts.pory"
+# 492 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_OfferMove, MSGBOX_YESNO
-# 494 "data/maps/SkyPillar_Top/scripts.pory"
+# 493 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq FusionTutor_EventScript_ResolveMultiMove_17
 FusionTutor_EventScript_ResolveMultiMove_16:
-# 497 "data/maps/SkyPillar_Top/scripts.pory"
+# 496 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_TeachBufferedMove
 	goto FusionTutor_EventScript_ResolveMultiMove_6
 
 FusionTutor_EventScript_ResolveMultiMove_8:
-# 490 "data/maps/SkyPillar_Top/scripts.pory"
+# 489 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_TEMP_2, 0
 	goto_if_eq FusionTutor_EventScript_ResolveMultiMove_7
 	goto FusionTutor_EventScript_ResolveMultiMove_6
 
 FusionTutor_EventScript_ResolveMultiMove_12:
-# 501 "data/maps/SkyPillar_Top/scripts.pory"
+# 500 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FREEZE_SHOCK
-# 502 "data/maps/SkyPillar_Top/scripts.pory"
+# 501 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FREEZE_SHOCK
-# 503 "data/maps/SkyPillar_Top/scripts.pory"
+# 502 "data/maps/SkyPillar_Top/scripts.pory"
 	msgbox FusionTutor_Text_OfferMove, MSGBOX_YESNO
-# 504 "data/maps/SkyPillar_Top/scripts.pory"
+# 503 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq FusionTutor_EventScript_ResolveMultiMove_24
 FusionTutor_EventScript_ResolveMultiMove_23:
-# 507 "data/maps/SkyPillar_Top/scripts.pory"
+# 506 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_TeachBufferedMove
 	goto FusionTutor_EventScript_ResolveMultiMove_11
 
 FusionTutor_EventScript_ResolveMultiMove_13:
-# 500 "data/maps/SkyPillar_Top/scripts.pory"
+# 499 "data/maps/SkyPillar_Top/scripts.pory"
 	compare VAR_TEMP_2, 1
 	goto_if_eq FusionTutor_EventScript_ResolveMultiMove_12
 	goto FusionTutor_EventScript_ResolveMultiMove_11
 
 FusionTutor_EventScript_ResolveMultiMove_17:
-# 495 "data/maps/SkyPillar_Top/scripts.pory"
+# 494 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_AskAnother
 	goto FusionTutor_EventScript_ResolveMultiMove_16
 
 FusionTutor_EventScript_ResolveMultiMove_20:
-# 514 "data/maps/SkyPillar_Top/scripts.pory"
+# 513 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_ICE_BURN
-# 515 "data/maps/SkyPillar_Top/scripts.pory"
+# 514 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_ICE_BURN
-# 516 "data/maps/SkyPillar_Top/scripts.pory"
+# 515 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_TeachBufferedMove
 	return
 
 FusionTutor_EventScript_ResolveMultiMove_21:
-# 518 "data/maps/SkyPillar_Top/scripts.pory"
+# 517 "data/maps/SkyPillar_Top/scripts.pory"
 	buffermovename STR_VAR_2, MOVE_FREEZE_SHOCK
-# 519 "data/maps/SkyPillar_Top/scripts.pory"
+# 518 "data/maps/SkyPillar_Top/scripts.pory"
 	setvar VAR_TEMP_1, MOVE_FREEZE_SHOCK
-# 520 "data/maps/SkyPillar_Top/scripts.pory"
+# 519 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_TeachBufferedMove
 	return
 
 FusionTutor_EventScript_ResolveMultiMove_24:
-# 505 "data/maps/SkyPillar_Top/scripts.pory"
+# 504 "data/maps/SkyPillar_Top/scripts.pory"
 	goto FusionTutor_EventScript_AskAnother
 	goto FusionTutor_EventScript_ResolveMultiMove_23
 
 
 FusionTutor_EventScript_ResolveMultiMove_Text_0:
-# 511 "data/maps/SkyPillar_Top/scripts.pory"
+# 510 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "Ice Burn$"
 
 FusionTutor_EventScript_ResolveMultiMove_Text_1:
-# 511 "data/maps/SkyPillar_Top/scripts.pory"
+# 510 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "Freeze Shock$"
 
 SkyPillar_Top_Text_StevenRayquazaAwakens::
-# 219 "data/maps/SkyPillar_Top/scripts.pory"
+# 218 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "Steven: This meteorite should awaken\n"
 	.string "Rayquaza, and make it aware of the\l"
 	.string "presence of Groudon and Kyogre.\p"
@@ -1084,12 +1082,12 @@ SkyPillar_Top_Text_StevenRayquazaAwakens::
 	.string "We need to trust it to do so again.$"
 
 SkyPillar_Top_Text_StevenCheckSootopolis::
-# 223 "data/maps/SkyPillar_Top/scripts.pory"
+# 222 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "Steven: Let's hurry back to Sootopolis\n"
 	.string "to see if it worked.$"
 
 FusionTutor_Text_Intro::
-# 530 "data/maps/SkyPillar_Top/scripts.pory"
+# 529 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "I've spent years studying the bonds\n"
 	.string "between Pokémon.\p"
 	.string "I've discovered that certain pairs of\n"
@@ -1099,21 +1097,21 @@ FusionTutor_Text_Intro::
 	.string "Pokémon qualify?$"
 
 FusionTutor_Text_ChooseMon::
-# 534 "data/maps/SkyPillar_Top/scripts.pory"
+# 533 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "Show me the Pokémon you'd like me to\n"
 	.string "examine.$"
 
 FusionTutor_Text_CantTeachEgg::
-# 538 "data/maps/SkyPillar_Top/scripts.pory"
+# 537 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "I'm afraid I can't work with an Egg.$"
 
 FusionTutor_Text_InvalidMon::
-# 542 "data/maps/SkyPillar_Top/scripts.pory"
+# 541 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "Hmm… I don't sense the potential for a\n"
 	.string "bond-based move in that Pokémon.$"
 
 FusionTutor_Text_NeedPartner::
-# 546 "data/maps/SkyPillar_Top/scripts.pory"
+# 545 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "Your {STR_VAR_1} has the potential\n"
 	.string "to learn {STR_VAR_2}, but only if\l"
 	.string "{STR_VAR_3} is also in your party.\p"
@@ -1121,7 +1119,7 @@ FusionTutor_Text_NeedPartner::
 	.string "this power.$"
 
 FusionTutor_Text_NeedPartnerMulti::
-# 550 "data/maps/SkyPillar_Top/scripts.pory"
+# 549 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "Your {STR_VAR_1} has great\n"
 	.string "potential, but it needs a bonded\l"
 	.string "partner in your party to unlock a\l"
@@ -1130,29 +1128,29 @@ FusionTutor_Text_NeedPartnerMulti::
 	.string "shares a deep connection with it.$"
 
 FusionTutor_Text_OfferMove::
-# 554 "data/maps/SkyPillar_Top/scripts.pory"
+# 553 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "The bond is strong! I can teach\n"
 	.string "{STR_VAR_2} to your {STR_VAR_1}.\p"
 	.string "Shall I go ahead?$"
 
 FusionTutor_Text_ChooseMove::
-# 558 "data/maps/SkyPillar_Top/scripts.pory"
+# 557 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "I sense multiple bonds at work!\p"
 	.string "Which move should I teach your\n"
 	.string "{STR_VAR_1}?$"
 
 FusionTutor_Text_Declined::
-# 562 "data/maps/SkyPillar_Top/scripts.pory"
+# 561 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "I see. Come back anytime if you change\n"
 	.string "your mind.$"
 
 FusionTutor_Text_Success::
-# 566 "data/maps/SkyPillar_Top/scripts.pory"
+# 565 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "The power of their bond has been\n"
 	.string "channeled into a new move!\p"
 	.string "Take good care of your Pokémon.$"
 
 FusionTutor_Text_AnotherMon::
-# 570 "data/maps/SkyPillar_Top/scripts.pory"
+# 569 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "Would you like me to examine another\n"
 	.string "Pokémon?$"

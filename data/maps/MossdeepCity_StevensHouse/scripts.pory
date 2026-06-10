@@ -246,6 +246,8 @@ script MossdeepCity_StevensHouse_TakeMegaStone{
 	if(!checkitem(ITEM_CHIMECHITE)) 			{dynmultipush("Chimechite",ITEM_CHIMECHITE)}
 	if(!checkitem(ITEM_LUCARIONITE)) 			{dynmultipush("Lucarionite",ITEM_LUCARIONITE)}
 	if(!checkitem(ITEM_LUCARIONITE_Z)) 		{dynmultipush("Lucarionite Z",ITEM_LUCARIONITE_Z)}
+	if(!checkitem(ITEM_ORBEETLITE)) 		{dynmultipush("Orbeetlite",ITEM_ORBEETLITE)}
+	if(!checkitem(ITEM_COPPERAJITE)) 		{dynmultipush("Copperajite",ITEM_COPPERAJITE)}
 	if(!checkitem(ITEM_GLIMMORANITE)) 		{dynmultipush("Glimmoranite",ITEM_GLIMMORANITE)}
 
 	dynmultipush("Nevermind",ITEM_NONE)

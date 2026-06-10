@@ -1653,7 +1653,7 @@ PetalburgCity_EventScript_GiveRareEgg::
 # 835 "data/maps/PetalburgCity/scripts.pory"
 	lock
 # 836 "data/maps/PetalburgCity/scripts.pory"
-	random 6
+	random 7
 # 837 "data/maps/PetalburgCity/scripts.pory"
 	switch VAR_RESULT
 # 838 "data/maps/PetalburgCity/scripts.pory"
@@ -1717,7 +1717,7 @@ PetalburgCity_EventScript_GiveRareEgg_8:
 
 PetalburgCity_EventScript_GiveRareEgg_9:
 # 851 "data/maps/PetalburgCity/scripts.pory"
-	setvar VAR_TEMP_6, SPECIES_TERAPAGOS_NORMAL_SHELL
+	setvar VAR_TEMP_6, SPECIES_TERAPAGOS_NORMAL
 	goto PetalburgCity_EventScript_GiveRareEgg_1
 
 

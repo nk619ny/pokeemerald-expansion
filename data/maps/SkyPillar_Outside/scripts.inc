@@ -97,95 +97,95 @@ SkyPillar_Outside_EventScript_WallaceScene::
 # 49 "data/maps/SkyPillar_Outside/scripts.pory"
 	special ShakeCamera
 # 50 "data/maps/SkyPillar_Outside/scripts.pory"
-	waitstate
-# 51 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 40
-# 52 "data/maps/SkyPillar_Outside/scripts.pory"
+# 51 "data/maps/SkyPillar_Outside/scripts.pory"
 	msgbox SkyPillar_Outside_Text_EarthquakeNotMomentToWaste, MSGBOX_DEFAULT
+# 52 "data/maps/SkyPillar_Outside/scripts.pory"
+	closemessage
 # 53 "data/maps/SkyPillar_Outside/scripts.pory"
-	closemessage
-# 54 "data/maps/SkyPillar_Outside/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SkyPillar_Outside_Movement_PlayerClimbSkyPillar
-# 55 "data/maps/SkyPillar_Outside/scripts.pory"
+# 54 "data/maps/SkyPillar_Outside/scripts.pory"
 	applymovement LOCALID_SKY_PILLAR_WALLACE, SkyPillar_Outside_Movement_WallaceClimbSkyPillar
+# 55 "data/maps/SkyPillar_Outside/scripts.pory"
+	waitmovement 0
 # 56 "data/maps/SkyPillar_Outside/scripts.pory"
-	waitmovement 0
-# 57 "data/maps/SkyPillar_Outside/scripts.pory"
 	setvar VAR_0x8004, 1   @ vertical pan
-# 58 "data/maps/SkyPillar_Outside/scripts.pory"
+# 57 "data/maps/SkyPillar_Outside/scripts.pory"
 	setvar VAR_0x8005, 3   @ horizontal pan
-# 59 "data/maps/SkyPillar_Outside/scripts.pory"
+# 58 "data/maps/SkyPillar_Outside/scripts.pory"
 	setvar VAR_0x8006, 20  @ num shakes
-# 60 "data/maps/SkyPillar_Outside/scripts.pory"
+# 59 "data/maps/SkyPillar_Outside/scripts.pory"
 	setvar VAR_0x8007, 5   @ shake delay
-# 61 "data/maps/SkyPillar_Outside/scripts.pory"
+# 60 "data/maps/SkyPillar_Outside/scripts.pory"
 	special ShakeCamera
+# 61 "data/maps/SkyPillar_Outside/scripts.pory"
+	delay 20
 # 62 "data/maps/SkyPillar_Outside/scripts.pory"
-	waitstate
-# 63 "data/maps/SkyPillar_Outside/scripts.pory"
-	delay 20
-# 64 "data/maps/SkyPillar_Outside/scripts.pory"
 	applymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterLeft
-# 65 "data/maps/SkyPillar_Outside/scripts.pory"
+# 63 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitmovement 0
-# 66 "data/maps/SkyPillar_Outside/scripts.pory"
+# 64 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 10
-# 67 "data/maps/SkyPillar_Outside/scripts.pory"
+# 65 "data/maps/SkyPillar_Outside/scripts.pory"
 	applymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterRight
-# 68 "data/maps/SkyPillar_Outside/scripts.pory"
+# 66 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitmovement 0
-# 69 "data/maps/SkyPillar_Outside/scripts.pory"
+# 67 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 20
-# 70 "data/maps/SkyPillar_Outside/scripts.pory"
+# 68 "data/maps/SkyPillar_Outside/scripts.pory"
 	applymovement LOCALID_SKY_PILLAR_WALLACE, Common_Movement_WalkInPlaceFasterDown
-# 71 "data/maps/SkyPillar_Outside/scripts.pory"
+# 69 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitmovement 0
-# 72 "data/maps/SkyPillar_Outside/scripts.pory"
+# 70 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 30
-# 73 "data/maps/SkyPillar_Outside/scripts.pory"
+# 71 "data/maps/SkyPillar_Outside/scripts.pory"
 	msgbox SkyPillar_Outside_Text_SituationGettingWorse, MSGBOX_DEFAULT
-# 74 "data/maps/SkyPillar_Outside/scripts.pory"
+# 72 "data/maps/SkyPillar_Outside/scripts.pory"
 	closemessage
-# 75 "data/maps/SkyPillar_Outside/scripts.pory"
+# 73 "data/maps/SkyPillar_Outside/scripts.pory"
 	setflag FLAG_SYS_WEATHER_CTRL
-# 76 "data/maps/SkyPillar_Outside/scripts.pory"
+# 74 "data/maps/SkyPillar_Outside/scripts.pory"
 	setweather WEATHER_ABNORMAL
-# 77 "data/maps/SkyPillar_Outside/scripts.pory"
+# 75 "data/maps/SkyPillar_Outside/scripts.pory"
 	doweather
-# 78 "data/maps/SkyPillar_Outside/scripts.pory"
+# 76 "data/maps/SkyPillar_Outside/scripts.pory"
 	special WaitWeather
-# 79 "data/maps/SkyPillar_Outside/scripts.pory"
-	waitstate
-# 80 "data/maps/SkyPillar_Outside/scripts.pory"
+# 77 "data/maps/SkyPillar_Outside/scripts.pory"
 	delay 30
-# 81 "data/maps/SkyPillar_Outside/scripts.pory"
+# 78 "data/maps/SkyPillar_Outside/scripts.pory"
 	msgbox SkyPillar_Outside_Text_GotToGoBackForSootopolis, MSGBOX_DEFAULT
-# 82 "data/maps/SkyPillar_Outside/scripts.pory"
+# 79 "data/maps/SkyPillar_Outside/scripts.pory"
 	closemessage
-# 83 "data/maps/SkyPillar_Outside/scripts.pory"
+# 80 "data/maps/SkyPillar_Outside/scripts.pory"
 	playse SE_EXIT
-# 84 "data/maps/SkyPillar_Outside/scripts.pory"
+# 81 "data/maps/SkyPillar_Outside/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 85 "data/maps/SkyPillar_Outside/scripts.pory"
+# 82 "data/maps/SkyPillar_Outside/scripts.pory"
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
-# 86 "data/maps/SkyPillar_Outside/scripts.pory"
+# 83 "data/maps/SkyPillar_Outside/scripts.pory"
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 4
-# 87 "data/maps/SkyPillar_Outside/scripts.pory"
+# 84 "data/maps/SkyPillar_Outside/scripts.pory"
 	removeobject LOCALID_SKY_PILLAR_WALLACE
-# 88 "data/maps/SkyPillar_Outside/scripts.pory"
+# 85 "data/maps/SkyPillar_Outside/scripts.pory"
 	setflag FLAG_HIDE_SKY_PILLAR_WALLACE
-# 89 "data/maps/SkyPillar_Outside/scripts.pory"
+# 86 "data/maps/SkyPillar_Outside/scripts.pory"
 	//clearflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
-# 90 "data/maps/SkyPillar_Outside/scripts.pory"
+# 87 "data/maps/SkyPillar_Outside/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 91 "data/maps/SkyPillar_Outside/scripts.pory"
+# 88 "data/maps/SkyPillar_Outside/scripts.pory"
 	releaseall
-# 92 "data/maps/SkyPillar_Outside/scripts.pory"
+# 89 "data/maps/SkyPillar_Outside/scripts.pory"
 	end
-# 93 "data/maps/SkyPillar_Outside/scripts.pory"
+# 90 "data/maps/SkyPillar_Outside/scripts.pory"
 
-# 94 "data/maps/SkyPillar_Outside/scripts.pory"
+# 91 "data/maps/SkyPillar_Outside/scripts.pory"
 SkyPillar_Outside_Movement_WallaceApproachPlayer:
+# 92 "data/maps/SkyPillar_Outside/scripts.pory"
+	walk_down
+# 93 "data/maps/SkyPillar_Outside/scripts.pory"
+	walk_down
+# 94 "data/maps/SkyPillar_Outside/scripts.pory"
+	walk_down
 # 95 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_down
 # 96 "data/maps/SkyPillar_Outside/scripts.pory"
@@ -195,187 +195,181 @@ SkyPillar_Outside_Movement_WallaceApproachPlayer:
 # 98 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_down
 # 99 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_down
+	walk_right
 # 100 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_down
+	walk_right
 # 101 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_down
+	walk_right
 # 102 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_right
-# 103 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_right
-# 104 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_right
-# 105 "data/maps/SkyPillar_Outside/scripts.pory"
 	step_end
-# 106 "data/maps/SkyPillar_Outside/scripts.pory"
+# 103 "data/maps/SkyPillar_Outside/scripts.pory"
 
-# 107 "data/maps/SkyPillar_Outside/scripts.pory"
+# 104 "data/maps/SkyPillar_Outside/scripts.pory"
 SkyPillar_Outside_Movement_WallaceClimbSkyPillar:
+# 105 "data/maps/SkyPillar_Outside/scripts.pory"
+	walk_left
+# 106 "data/maps/SkyPillar_Outside/scripts.pory"
+	walk_left
+# 107 "data/maps/SkyPillar_Outside/scripts.pory"
+	walk_left
 # 108 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_left
+	walk_up
 # 109 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_left
+	walk_up
 # 110 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_left
+	walk_up
 # 111 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_up
 # 112 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_up
+	walk_right
 # 113 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_up
 # 114 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_up
 # 115 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_right
+	walk_up
 # 116 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_up
 # 117 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_up
-# 118 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_up
-# 119 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_up
-# 120 "data/maps/SkyPillar_Outside/scripts.pory"
 	step_end
-# 121 "data/maps/SkyPillar_Outside/scripts.pory"
+# 118 "data/maps/SkyPillar_Outside/scripts.pory"
 
-# 122 "data/maps/SkyPillar_Outside/scripts.pory"
+# 119 "data/maps/SkyPillar_Outside/scripts.pory"
 SkyPillar_Outside_Movement_PlayerClimbSkyPillar:
+# 120 "data/maps/SkyPillar_Outside/scripts.pory"
+	walk_left
+# 121 "data/maps/SkyPillar_Outside/scripts.pory"
+	walk_left
+# 122 "data/maps/SkyPillar_Outside/scripts.pory"
+	walk_left
 # 123 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_left
 # 124 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_left
+	walk_up
 # 125 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_left
+	walk_up
 # 126 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_left
+	walk_up
 # 127 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_up
 # 128 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_up
+	walk_right
 # 129 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_up
 # 130 "data/maps/SkyPillar_Outside/scripts.pory"
 	walk_up
 # 131 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_right
+	walk_up
 # 132 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_up
-# 133 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_up
-# 134 "data/maps/SkyPillar_Outside/scripts.pory"
-	walk_up
-# 135 "data/maps/SkyPillar_Outside/scripts.pory"
 	step_end
+# 133 "data/maps/SkyPillar_Outside/scripts.pory"
+
+# 134 "data/maps/SkyPillar_Outside/scripts.pory"
+SkyPillar_Outside_EventScript_Wallace::
+# 135 "data/maps/SkyPillar_Outside/scripts.pory"
+	end
 # 136 "data/maps/SkyPillar_Outside/scripts.pory"
 
 # 137 "data/maps/SkyPillar_Outside/scripts.pory"
-SkyPillar_Outside_EventScript_Wallace::
-# 138 "data/maps/SkyPillar_Outside/scripts.pory"
-	end
-# 139 "data/maps/SkyPillar_Outside/scripts.pory"
-
-# 140 "data/maps/SkyPillar_Outside/scripts.pory"
 SkyPillar_Outside_EventScript_ClosedDoor::
-# 141 "data/maps/SkyPillar_Outside/scripts.pory"
+# 138 "data/maps/SkyPillar_Outside/scripts.pory"
 	msgbox SkyPillar_Outside_Text_DoorIsClosed, MSGBOX_SIGN
-# 142 "data/maps/SkyPillar_Outside/scripts.pory"
+# 139 "data/maps/SkyPillar_Outside/scripts.pory"
 	end
+# 140 "data/maps/SkyPillar_Outside/scripts.pory"
+
+# 141 "data/maps/SkyPillar_Outside/scripts.pory"
+SkyPillar_Outside_Text_DoorIsClosed:
+# 142 "data/maps/SkyPillar_Outside/scripts.pory"
+	.string "The door is closed.$"
 # 143 "data/maps/SkyPillar_Outside/scripts.pory"
 
 # 144 "data/maps/SkyPillar_Outside/scripts.pory"
-SkyPillar_Outside_Text_DoorIsClosed:
-# 145 "data/maps/SkyPillar_Outside/scripts.pory"
-	.string "The door is closed.$"
-# 146 "data/maps/SkyPillar_Outside/scripts.pory"
-
-# 147 "data/maps/SkyPillar_Outside/scripts.pory"
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-# 148 "data/maps/SkyPillar_Outside/scripts.pory"
+# 145 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "Steven: Oh, my, I'm terribly sorry!\p"
-# 149 "data/maps/SkyPillar_Outside/scripts.pory"
+# 146 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "In my haste, I didn't notice that\n"
-# 150 "data/maps/SkyPillar_Outside/scripts.pory"
+# 147 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "I'd left you behind!\p"
-# 151 "data/maps/SkyPillar_Outside/scripts.pory"
+# 148 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "I've opened the locked door of\n"
-# 152 "data/maps/SkyPillar_Outside/scripts.pory"
+# 149 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "the SKY PILLAR.\p"
-# 153 "data/maps/SkyPillar_Outside/scripts.pory"
+# 150 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "{PLAYER}{KUN}, let's be on our way!$"
-# 154 "data/maps/SkyPillar_Outside/scripts.pory"
+# 151 "data/maps/SkyPillar_Outside/scripts.pory"
 
-# 155 "data/maps/SkyPillar_Outside/scripts.pory"
+# 152 "data/maps/SkyPillar_Outside/scripts.pory"
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-# 156 "data/maps/SkyPillar_Outside/scripts.pory"
+# 153 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "Steven: It's an earthquake!\p"
-# 157 "data/maps/SkyPillar_Outside/scripts.pory"
+# 154 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "There's not a moment to waste!\n"
-# 158 "data/maps/SkyPillar_Outside/scripts.pory"
+# 155 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "We've got to hurry!$"
-# 159 "data/maps/SkyPillar_Outside/scripts.pory"
+# 156 "data/maps/SkyPillar_Outside/scripts.pory"
 
-# 160 "data/maps/SkyPillar_Outside/scripts.pory"
+# 157 "data/maps/SkyPillar_Outside/scripts.pory"
 SkyPillar_Outside_Text_SituationGettingWorse:
-# 161 "data/maps/SkyPillar_Outside/scripts.pory"
+# 158 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "Steven: Hmm…\n"
-# 162 "data/maps/SkyPillar_Outside/scripts.pory"
+# 159 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "The situation is getting worse…$"
-# 163 "data/maps/SkyPillar_Outside/scripts.pory"
+# 160 "data/maps/SkyPillar_Outside/scripts.pory"
 
-# 164 "data/maps/SkyPillar_Outside/scripts.pory"
+# 161 "data/maps/SkyPillar_Outside/scripts.pory"
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
-# 165 "data/maps/SkyPillar_Outside/scripts.pory"
+# 162 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "Steven: This isn't good…\p"
-# 166 "data/maps/SkyPillar_Outside/scripts.pory"
+# 163 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "The weather distortion is spreading\n"
-# 167 "data/maps/SkyPillar_Outside/scripts.pory"
+# 164 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "even here…\p"
-# 168 "data/maps/SkyPillar_Outside/scripts.pory"
+# 165 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "{PLAYER}{KUN}.\p"
-# 169 "data/maps/SkyPillar_Outside/scripts.pory"
+# 166 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "RAYQUAZA should be farther up\n"
-# 170 "data/maps/SkyPillar_Outside/scripts.pory"
+# 167 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "from here.$"
 
 SkyPillar_Outside_EventScript_OutrageTamer::
-# 176 "data/maps/SkyPillar_Outside/scripts.pory"
+# 173 "data/maps/SkyPillar_Outside/scripts.pory"
 	lock
-# 177 "data/maps/SkyPillar_Outside/scripts.pory"
+# 174 "data/maps/SkyPillar_Outside/scripts.pory"
 	faceplayer
-# 178 "data/maps/SkyPillar_Outside/scripts.pory"
+# 175 "data/maps/SkyPillar_Outside/scripts.pory"
 	msgbox SkyPillar_Outside_EventScript_OutrageTamer_Text_0, MSGBOX_NPC
-# 179 "data/maps/SkyPillar_Outside/scripts.pory"
+# 176 "data/maps/SkyPillar_Outside/scripts.pory"
 	checkitem ITEM_TM_OUTRAGE
-# 180 "data/maps/SkyPillar_Outside/scripts.pory"
+# 177 "data/maps/SkyPillar_Outside/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SkyPillar_Outside_EventScript_OutrageTamer_2
 SkyPillar_Outside_EventScript_OutrageTamer_1:
-# 185 "data/maps/SkyPillar_Outside/scripts.pory"
+# 182 "data/maps/SkyPillar_Outside/scripts.pory"
 	msgbox SkyPillar_Outside_EventScript_OutrageTamer_Text_1, MSGBOX_NPC
-# 186 "data/maps/SkyPillar_Outside/scripts.pory"
+# 183 "data/maps/SkyPillar_Outside/scripts.pory"
 	closemessage
-# 187 "data/maps/SkyPillar_Outside/scripts.pory"
+# 184 "data/maps/SkyPillar_Outside/scripts.pory"
 	releaseall
 	end
 
 SkyPillar_Outside_EventScript_OutrageTamer_2:
-# 181 "data/maps/SkyPillar_Outside/scripts.pory"
+# 178 "data/maps/SkyPillar_Outside/scripts.pory"
 	closemessage
-# 182 "data/maps/SkyPillar_Outside/scripts.pory"
+# 179 "data/maps/SkyPillar_Outside/scripts.pory"
 	giveitem ITEM_TM_OUTRAGE
-# 183 "data/maps/SkyPillar_Outside/scripts.pory"
+# 180 "data/maps/SkyPillar_Outside/scripts.pory"
 	waitfanfare
 	goto SkyPillar_Outside_EventScript_OutrageTamer_1
 
 
 SkyPillar_Outside_EventScript_OutrageTamer_Text_0:
-# 178 "data/maps/SkyPillar_Outside/scripts.pory"
+# 175 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "To climb the Sky Pillar, you must face\n"
 	.string "the rage of dragons.$"
 
 SkyPillar_Outside_EventScript_OutrageTamer_Text_1:
-# 185 "data/maps/SkyPillar_Outside/scripts.pory"
+# 182 "data/maps/SkyPillar_Outside/scripts.pory"
 	.string "Can you stand before them without\n"
 	.string "fear?$"

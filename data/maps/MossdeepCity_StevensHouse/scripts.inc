@@ -502,43 +502,53 @@ MossdeepCity_StevensHouse_TakeMegaStone_25:
 	compare VAR_RESULT, 0
 	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_29
 MossdeepCity_StevensHouse_TakeMegaStone_28:
-	checkitem ITEM_GLIMMORANITE
+	checkitem ITEM_ORBEETLITE
 # 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_32
 MossdeepCity_StevensHouse_TakeMegaStone_31:
-# 251 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_11, ITEM_NONE
-# 253 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	msgbox MossdeepCity_StevensHouse_TakeMegaStone_Text_12, MSGBOX_DEFAULT
-# 254 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	dynmultistack 25, 2, FALSE, 5, 0, ITEM_AERODACTYLITE, DYN_MULTICHOICE_CB_NONE
-# 255 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	compare VAR_RESULT, ITEM_NONE
+	checkitem ITEM_COPPERAJITE
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_35
-# 261 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	compare VAR_RESULT, 127
-	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_36
-# 268 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	copyvar VAR_TEMP_5, VAR_RESULT
-# 269 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	checkitemspace VAR_TEMP_5
-# 270 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	compare VAR_RESULT, FALSE
+MossdeepCity_StevensHouse_TakeMegaStone_34:
+	checkitem ITEM_GLIMMORANITE
+# 0 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_38
+MossdeepCity_StevensHouse_TakeMegaStone_37:
+# 253 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_13, ITEM_NONE
+# 255 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	msgbox MossdeepCity_StevensHouse_TakeMegaStone_Text_14, MSGBOX_DEFAULT
+# 256 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultistack 25, 2, FALSE, 5, 0, ITEM_AERODACTYLITE, DYN_MULTICHOICE_CB_NONE
+# 257 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, ITEM_NONE
 	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_41
-# 276 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	giveitem VAR_TEMP_5
-# 277 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	setflag FLAG_RECEIVED_STEVENS_MEGA_STONE
+# 263 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, 127
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_42
+# 270 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	copyvar VAR_TEMP_5, VAR_RESULT
+# 271 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	checkitemspace VAR_TEMP_5
+# 272 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq MossdeepCity_StevensHouse_TakeMegaStone_47
 # 278 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	removeobject LOCALID_STEVENS_MEGA_STONE
+	giveitem VAR_TEMP_5
 # 279 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	waitfanfare
+	setflag FLAG_RECEIVED_STEVENS_MEGA_STONE
 # 280 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	removeobject LOCALID_STEVENS_MEGA_STONE
+# 281 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	waitfanfare
+# 282 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	closemessage
-# 283 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+# 285 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	closemessage
-# 284 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+# 286 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	release
 	end
 
@@ -594,29 +604,39 @@ MossdeepCity_StevensHouse_TakeMegaStone_29:
 
 MossdeepCity_StevensHouse_TakeMegaStone_32:
 # 249 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_10, ITEM_GLIMMORANITE
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_10, ITEM_ORBEETLITE
 	goto MossdeepCity_StevensHouse_TakeMegaStone_31
 
 MossdeepCity_StevensHouse_TakeMegaStone_35:
-# 257 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	closemessage
-# 258 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	releaseall
-	end
+# 250 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_11, ITEM_COPPERAJITE
+	goto MossdeepCity_StevensHouse_TakeMegaStone_34
 
-MossdeepCity_StevensHouse_TakeMegaStone_36:
-# 263 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	closemessage
-# 264 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	releaseall
-	end
+MossdeepCity_StevensHouse_TakeMegaStone_38:
+# 251 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	dynmultipush MossdeepCity_StevensHouse_TakeMegaStone_Text_12, ITEM_GLIMMORANITE
+	goto MossdeepCity_StevensHouse_TakeMegaStone_37
 
 MossdeepCity_StevensHouse_TakeMegaStone_41:
-# 271 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	msgbox MossdeepCity_StevensHouse_TakeMegaStone_Text_13, MSGBOX_NPC
-# 272 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+# 259 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	closemessage
+# 260 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	releaseall
+	end
+
+MossdeepCity_StevensHouse_TakeMegaStone_42:
+# 265 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	closemessage
+# 266 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	releaseall
+	end
+
+MossdeepCity_StevensHouse_TakeMegaStone_47:
 # 273 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	msgbox MossdeepCity_StevensHouse_TakeMegaStone_Text_15, MSGBOX_NPC
+# 274 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	closemessage
+# 275 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	releaseall
 	end
 
@@ -663,18 +683,26 @@ MossdeepCity_StevensHouse_TakeMegaStone_Text_9:
 
 MossdeepCity_StevensHouse_TakeMegaStone_Text_10:
 # 249 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "Glimmoranite$"
+	.string "Orbeetlite$"
 
 MossdeepCity_StevensHouse_TakeMegaStone_Text_11:
-# 251 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "Nevermind$"
+# 250 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Copperajite$"
 
 MossdeepCity_StevensHouse_TakeMegaStone_Text_12:
-# 253 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	.string "Take one of the Mega Stones?$"
+# 251 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Glimmoranite$"
 
 MossdeepCity_StevensHouse_TakeMegaStone_Text_13:
-# 271 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+# 253 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Nevermind$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_14:
+# 255 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
+	.string "Take one of the Mega Stones?$"
+
+MossdeepCity_StevensHouse_TakeMegaStone_Text_15:
+# 273 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	.string "Too bad!\l"
 	.string "The BAG is full...$"
 

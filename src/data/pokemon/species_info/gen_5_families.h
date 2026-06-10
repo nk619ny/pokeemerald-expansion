@@ -6894,6 +6894,68 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formChangeTable = sGarbodorFormChangeTable,
     },
 
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_GARBODOR_MEGA] =
+    {
+        .baseHP        = 80 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0),
+        .baseAttack    = 95 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0) + 30,
+        .baseDefense   = 82 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0) + 40,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 60 + 10,
+        .baseSpDefense = 82 + 20,
+        .types = MON_TYPES(TYPE_POISON),
+        .catchRate = 60,
+        .expYield = 166,
+        .evYield_Attack = 2,
+        .itemCommon = ITEM_SILK_SCARF,
+        .itemRare = ITEM_BLACK_SLUDGE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_TOXIC_CHAIN, ABILITY_TOXIC_CHAIN, ABILITY_TOXIC_CHAIN },
+        .bodyColor = BODY_COLOR_GREEN,
+        .noFlip = TRUE,
+        .speciesName = _("Garbodor"),
+        .cryId = CRY_GARBODOR,
+        .natDexNum = NATIONAL_DEX_GARBODOR,
+        .categoryName = _("Trash Heap"),
+        .height = 210,
+        .weight = 2000,
+        .description = COMPOUND_STRING(
+            "It sprays toxic gas from its mouth\n"
+            "and fingers. If the gas engulfs you,\n"
+            "the toxins will seep in all the way\n"
+            "down to your bones."),
+        .pokemonScale = 256,
+        .pokemonOffset = 1,
+        .trainerScale = 326,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_GarbodorGmax,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_GarbodorGmax,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 2,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_GarbodorGmax,
+        .shinyPalette = gMonShinyPalette_GarbodorGmax,
+        .iconSprite = gMonIcon_GarbodorGmax,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        NO_SHADOW
+        FOOTPRINT(Garbodor)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sGarbodorLevelUpLearnset,
+        .teachableLearnset = sGarbodorTeachableLearnset,
+        .formSpeciesIdTable = sGarbodorFormSpeciesIdTable,
+        .formChangeTable = sGarbodorFormChangeTable,
+    },
+#endif //P_GIGANTAMAX_FORMS
+
 #if P_GIGANTAMAX_FORMS
     [SPECIES_GARBODOR_GMAX] =
     {
