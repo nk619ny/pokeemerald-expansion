@@ -1154,7 +1154,7 @@ Carvanha
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_3 === /* Weather Institute */ /* TO BE ADDED */
+=== TRAINER_GRUNT_WEATHER_INST_3 === /* Weather Institute */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -1163,17 +1163,45 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vaporeon  
+Ability: Drizzle  
+Level: 53
+Tera Type: Grass
+IVs: 0 Atk  
+- Weather Ball  
+- Hidden Power
+- Signal Beam  
+- Acid Armor  
 
-Zubat
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Jolteon  
+Ability: Electric Surge  
+Level: 53
+Tera Type: Electric  
+IVs: 0 Atk  
+- Thunder  
+- Weather Ball  
+- Magnet Rise  
+- Discharge  
 
-Carvanha
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ludicolo @ Big Root  
+Ability: Rain Dish  
+Level: 53
+Tera Type: Water  
+- Giga Drain  
+- Fake Out  
+- Muddy Water  
+- Encore  
+
+Lanturn @ Protective Pads  
+Ability: Volt Absorb  
+Level: 53
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Liquidation  
+- Wild Charge  
+- Aqua Ring  
+- Return  
+
 
 === TRAINER_GRUNT_FARM_1 === 
 Name: GRUNT
