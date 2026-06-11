@@ -1137,7 +1137,7 @@ Poochyena
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_2 === /* Weather Institute */ /* TO BE ADDED */
+=== TRAINER_GRUNT_WEATHER_INST_2 === /* Weather Institute */ 
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -1146,13 +1146,40 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Abomasnow @ Light Clay  
+Ability: Snow Warning  
+Level: 53
+- Ice Hammer  
+- Wood Hammer  
+- Earth Power  
+- Aurora Veil  
 
-Carvanha
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Golduck @ Wide Lens  
+Ability: Damp  
+Level: 53
+IVs: 0 Atk  
+- Blizzard  
+- Hydro Pump  
+- Psychic  
+- Power Gem  
+
+Wormadam (F) @ Coba Berry  
+Ability: Overcoat  
+Level: 54
+IVs: 0 Atk  
+- Giga Drain  
+- Bug Buzz  
+- Quiver Dance  
+- Ally Switch  
+
+Arctozolt  
+Ability: Slush Rush  
+Level: 52
+EVs: 252 Spe  
+- Bolt Beak  
+- Avalanche  
+- Icicle Crash  
+- Rock Slide
 
 === TRAINER_GRUNT_WEATHER_INST_3 === /* Weather Institute */
 Name: GRUNT
