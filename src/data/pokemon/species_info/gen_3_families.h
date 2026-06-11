@@ -2787,7 +2787,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_KIRLIA] =
     {
-        .baseHP        = 38,
+        .baseHP        = 38 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
         .baseAttack    = 35,
         .baseDefense   = 35,
         .baseSpeed     = 50,
