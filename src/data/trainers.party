@@ -1,4 +1,4 @@
-﻿/*
+/*
 Trainers and their parties defined with Competetive Syntax.
 Compatible with Pokemon Showdown exports.
 https://github.com/smogon/pokemon-showdown/blob/master/sim/TEAMS.md
@@ -1137,7 +1137,7 @@ Poochyena
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_2 === /* Weather Institute */ /* TO BE ADDED */
+=== TRAINER_GRUNT_WEATHER_INST_2 === /* Weather Institute */ 
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -1146,15 +1146,42 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Abomasnow @ Light Clay  
+Ability: Snow Warning  
+Level: 53
+- Ice Hammer  
+- Wood Hammer  
+- Earth Power  
+- Aurora Veil  
 
-Carvanha
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Golduck @ Wide Lens  
+Ability: Damp  
+Level: 53
+IVs: 0 Atk  
+- Blizzard  
+- Hydro Pump  
+- Psychic  
+- Power Gem  
 
-=== TRAINER_GRUNT_WEATHER_INST_3 === /* Weather Institute */ /* TO BE ADDED */
+Wormadam (F) @ Coba Berry  
+Ability: Overcoat  
+Level: 54
+IVs: 0 Atk  
+- Giga Drain  
+- Bug Buzz  
+- Quiver Dance  
+- Ally Switch  
+
+Arctozolt  
+Ability: Slush Rush  
+Level: 52
+EVs: 252 Spe  
+- Bolt Beak  
+- Avalanche  
+- Icicle Crash  
+- Rock Slide
+
+=== TRAINER_GRUNT_WEATHER_INST_3 === /* Weather Institute */
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -1163,17 +1190,45 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vaporeon  
+Ability: Drizzle  
+Level: 53
+Tera Type: Grass
+IVs: 0 Atk  
+- Weather Ball  
+- Hidden Power
+- Signal Beam  
+- Acid Armor  
 
-Zubat
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Jolteon  
+Ability: Electric Surge  
+Level: 53
+Tera Type: Electric  
+IVs: 0 Atk  
+- Thunder  
+- Weather Ball  
+- Magnet Rise  
+- Discharge  
 
-Carvanha
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ludicolo @ Big Root  
+Ability: Rain Dish  
+Level: 53
+Tera Type: Water  
+- Giga Drain  
+- Fake Out  
+- Muddy Water  
+- Encore  
+
+Lanturn @ Protective Pads  
+Ability: Volt Absorb  
+Level: 53
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Liquidation  
+- Wild Charge  
+- Aqua Ring  
+- Return  
+
 
 === TRAINER_GRUNT_FARM_1 === 
 Name: GRUNT
@@ -3101,7 +3156,7 @@ Level: 55
 - Energy Ball  
 
 Wormadam (F) @ White Herb  
-Ability: Overcoat  
+Ability: Flower Veil
 Tera Type: Rock  
 IVs: 0 Atk  
 Level: 55
@@ -9910,8 +9965,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Kubfu @ Weakness Policy
 Ability: Inner Focus  
 Ball: Sport
-Level: 24
-IVs: 0 HP / 0 Atk / 10 Def / 0 SpA / 10 SpD / 0 Spe
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Jolly Nature  
 - Wicked Blow  
 - Surging Strikes  
@@ -9943,7 +9998,6 @@ Ability: Speed Boost
 Ball: Fast
 Level: 23
 Tera Type: Grass
-EVs: 64 SpA
 - Flame Burst  
 - Aura Sphere  
 - Hidden Power
@@ -19583,7 +19637,7 @@ Pichu  @ Light Ball
 Ability: Lightning Rod  
 Level: 33
 Tera Type: Electric  
-EVs: 252 HP / 128 Atk  
+EVs: 252 HP / 64 Atk  
 - Disarming Voice  
 - Fake Out  
 - Flail  
@@ -20325,7 +20379,7 @@ Impish Nature
 - Body Press  
 
 Wormadam-Sandy (F)  
-Ability: Overcoat  
+Ability: Sand Veil
 Tera Type: Bug  
 IVs: 0 Atk  
 Level: 46
