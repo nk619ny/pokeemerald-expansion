@@ -29,11 +29,11 @@ VerdanturfTown_EventScript_Twin::
 # 15 "data/maps/VerdanturfTown/scripts.pory"
 	faceplayer
 # 16 "data/maps/VerdanturfTown/scripts.pory"
-	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDA
+	//clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDA
 # 17 "data/maps/VerdanturfTown/scripts.pory"
-	clearflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT
+	//clearflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT
 # 18 "data/maps/VerdanturfTown/scripts.pory"
-	clearflag FLAG_HIDE_MAUVILLE_CITY_WALLY
+	//clearflag FLAG_HIDE_MAUVILLE_CITY_WALLY
 # 19 "data/maps/VerdanturfTown/scripts.pory"
 	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, VerdanturfTown_EventScript_TwinTunnelOpen
 # 20 "data/maps/VerdanturfTown/scripts.pory"

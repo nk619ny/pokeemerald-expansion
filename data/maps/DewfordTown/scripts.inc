@@ -1610,81 +1610,224 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "definition of “in” right now.$"
 
 DewfordTown_EventScript_GymBlocker::
-# 809 "data/maps/DewfordTown/scripts.pory"
-	lock
-# 810 "data/maps/DewfordTown/scripts.pory"
-	faceplayer
 # 811 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_EventScript_GymBlocker_Text_0, MSGBOX_NPC
+	lock
 # 812 "data/maps/DewfordTown/scripts.pory"
-	waitmessage
+	faceplayer
 # 813 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_GymBlocker_Text_0, MSGBOX_NPC
+# 814 "data/maps/DewfordTown/scripts.pory"
+	waitmessage
+# 815 "data/maps/DewfordTown/scripts.pory"
 	release
 	end
 
 
 DewfordTown_EventScript_BrineyWaterStone::
-# 819 "data/maps/DewfordTown/scripts.pory"
+# 821 "data/maps/DewfordTown/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_WATER_STONE, DewfordTown_EventScript_BrineyWaterStone_3
 DewfordTown_EventScript_BrineyWaterStone_1:
 	return
 
 DewfordTown_EventScript_BrineyWaterStone_2:
-# 820 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_EventScript_BrineyWaterStone_Text_0, MSGBOX_DEFAULT
-# 821 "data/maps/DewfordTown/scripts.pory"
-	closemessage
 # 822 "data/maps/DewfordTown/scripts.pory"
-	giveitem ITEM_WATER_STONE
+	msgbox DewfordTown_EventScript_BrineyWaterStone_Text_0, MSGBOX_DEFAULT
 # 823 "data/maps/DewfordTown/scripts.pory"
-	setflag FLAG_RECEIVED_WATER_STONE
+	closemessage
 # 824 "data/maps/DewfordTown/scripts.pory"
+	giveitem ITEM_WATER_STONE
+# 825 "data/maps/DewfordTown/scripts.pory"
+	setflag FLAG_RECEIVED_WATER_STONE
+# 826 "data/maps/DewfordTown/scripts.pory"
 	waitfanfare
 	goto DewfordTown_EventScript_BrineyWaterStone_1
 
 DewfordTown_EventScript_BrineyWaterStone_3:
-# 819 "data/maps/DewfordTown/scripts.pory"
+# 821 "data/maps/DewfordTown/scripts.pory"
 	goto_if_set FLAG_BADGE02_GET, DewfordTown_EventScript_BrineyWaterStone_2
 	goto DewfordTown_EventScript_BrineyWaterStone_1
 
 
 DewfordTown_EventScript_LowSweepBlackBelt::
-# 831 "data/maps/DewfordTown/scripts.pory"
-	lock
-# 832 "data/maps/DewfordTown/scripts.pory"
-	faceplayer
 # 833 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_EventScript_LowSweepBlackBelt_Text_0, MSGBOX_DEFAULT
+	lock
 # 834 "data/maps/DewfordTown/scripts.pory"
-	checkitem ITEM_TM_LOW_SWEEP
+	faceplayer
 # 835 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_LowSweepBlackBelt_Text_0, MSGBOX_DEFAULT
+# 836 "data/maps/DewfordTown/scripts.pory"
+	checkitem ITEM_TM_LOW_SWEEP
+# 837 "data/maps/DewfordTown/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq DewfordTown_EventScript_LowSweepBlackBelt_2
-# 842 "data/maps/DewfordTown/scripts.pory"
+# 844 "data/maps/DewfordTown/scripts.pory"
 	closemessage
-# 843 "data/maps/DewfordTown/scripts.pory"
+# 845 "data/maps/DewfordTown/scripts.pory"
 	msgbox DewfordTown_EventScript_LowSweepBlackBelt_Text_2, MSGBOX_DEFAULT
 DewfordTown_EventScript_LowSweepBlackBelt_1:
-# 845 "data/maps/DewfordTown/scripts.pory"
+# 847 "data/maps/DewfordTown/scripts.pory"
 	closemessage
-# 846 "data/maps/DewfordTown/scripts.pory"
+# 848 "data/maps/DewfordTown/scripts.pory"
 	releaseall
 	end
 
 DewfordTown_EventScript_LowSweepBlackBelt_2:
-# 836 "data/maps/DewfordTown/scripts.pory"
-	closemessage
-# 837 "data/maps/DewfordTown/scripts.pory"
-	msgbox DewfordTown_EventScript_LowSweepBlackBelt_Text_1, MSGBOX_DEFAULT
 # 838 "data/maps/DewfordTown/scripts.pory"
-	giveitem ITEM_TM_LOW_SWEEP
+	closemessage
 # 839 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_LowSweepBlackBelt_Text_1, MSGBOX_DEFAULT
+# 840 "data/maps/DewfordTown/scripts.pory"
+	giveitem ITEM_TM_LOW_SWEEP
+# 841 "data/maps/DewfordTown/scripts.pory"
 	waitfanfare
 	goto DewfordTown_EventScript_LowSweepBlackBelt_1
 
 
+DewfordTown_EventScript_StevenTriggerLeft::
+# 853 "data/maps/DewfordTown/scripts.pory"
+	setvar VAR_TEMP_0, 1
+# 854 "data/maps/DewfordTown/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_STEEL_WING, DewfordTown_EventScript_StevenTriggerLeft_3
+DewfordTown_EventScript_StevenTriggerLeft_1:
+	return
+
+DewfordTown_EventScript_StevenTriggerLeft_2:
+# 855 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 856 "data/maps/DewfordTown/scripts.pory"
+	goto DewfordTown_EventScript_Steven
+	goto DewfordTown_EventScript_StevenTriggerLeft_1
+
+DewfordTown_EventScript_StevenTriggerLeft_3:
+# 854 "data/maps/DewfordTown/scripts.pory"
+	goto_if_set FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_StevenTriggerLeft_2
+	goto DewfordTown_EventScript_StevenTriggerLeft_1
+
+
+DewfordTown_EventScript_StevenTriggerDown::
+# 862 "data/maps/DewfordTown/scripts.pory"
+	setvar VAR_TEMP_0, 2
+# 863 "data/maps/DewfordTown/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_STEEL_WING, DewfordTown_EventScript_StevenTriggerDown_3
+DewfordTown_EventScript_StevenTriggerDown_1:
+	return
+
+DewfordTown_EventScript_StevenTriggerDown_2:
+# 864 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 865 "data/maps/DewfordTown/scripts.pory"
+	goto DewfordTown_EventScript_Steven
+	goto DewfordTown_EventScript_StevenTriggerDown_1
+
+DewfordTown_EventScript_StevenTriggerDown_3:
+# 863 "data/maps/DewfordTown/scripts.pory"
+	goto_if_set FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_StevenTriggerDown_2
+	goto DewfordTown_EventScript_StevenTriggerDown_1
+
+
+DewfordTown_EventScript_StevenTriggerRight::
+# 871 "data/maps/DewfordTown/scripts.pory"
+	setvar VAR_TEMP_0, 3
+# 872 "data/maps/DewfordTown/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_STEEL_WING, DewfordTown_EventScript_StevenTriggerRight_3
+DewfordTown_EventScript_StevenTriggerRight_1:
+	return
+
+DewfordTown_EventScript_StevenTriggerRight_2:
+# 873 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 874 "data/maps/DewfordTown/scripts.pory"
+	goto DewfordTown_EventScript_Steven
+	goto DewfordTown_EventScript_StevenTriggerRight_1
+
+DewfordTown_EventScript_StevenTriggerRight_3:
+# 872 "data/maps/DewfordTown/scripts.pory"
+	goto_if_set FLAG_SLATEPORT_FARM_COMPLETED, DewfordTown_EventScript_StevenTriggerRight_2
+	goto DewfordTown_EventScript_StevenTriggerRight_1
+
+
+DewfordTown_EventScript_Steven::
+# 880 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 881 "data/maps/DewfordTown/scripts.pory"
+	opendoor 23, 17
+# 882 "data/maps/DewfordTown/scripts.pory"
+	waitdooranim
+# 883 "data/maps/DewfordTown/scripts.pory"
+	addobject LOCALID_DEWFORD_STEVEN
+# 884 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_DEWFORD_STEVEN, Common_Movement_WalkDownOneStep
+# 885 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 886 "data/maps/DewfordTown/scripts.pory"
+	delay 30
+# 887 "data/maps/DewfordTown/scripts.pory"
+	switch VAR_TEMP_0
+# 888 "data/maps/DewfordTown/scripts.pory"
+	case 1, DewfordTown_EventScript_Steven_3
+# 891 "data/maps/DewfordTown/scripts.pory"
+	case 2, DewfordTown_EventScript_Steven_4
+# 894 "data/maps/DewfordTown/scripts.pory"
+	case 3, DewfordTown_EventScript_Steven_5
+DewfordTown_EventScript_Steven_1:
+# 898 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 899 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_DEWFORD_STEVEN, Common_Movement_ExclamationMark
+# 900 "data/maps/DewfordTown/scripts.pory"
+	closedoor 23, 17
+# 901 "data/maps/DewfordTown/scripts.pory"
+	waitmovement 0
+# 902 "data/maps/DewfordTown/scripts.pory"
+	waitdooranim
+# 903 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_Steven_Text_0, MSGBOX_NPC
+# 904 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 905 "data/maps/DewfordTown/scripts.pory"
+	giveitem ITEM_TM_STEEL_WING
+# 906 "data/maps/DewfordTown/scripts.pory"
+	waitfanfare
+# 907 "data/maps/DewfordTown/scripts.pory"
+	setflag FLAG_RECEIVED_STEEL_WING
+# 908 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_Steven_Text_1, MSGBOX_NPC
+# 909 "data/maps/DewfordTown/scripts.pory"
+	closemessage
+# 910 "data/maps/DewfordTown/scripts.pory"
+	setfieldeffectargument 0, 1
+# 911 "data/maps/DewfordTown/scripts.pory"
+	dofieldeffect FLDEFF_NPCFLY_OUT
+# 912 "data/maps/DewfordTown/scripts.pory"
+	delay 15
+# 913 "data/maps/DewfordTown/scripts.pory"
+	removeobject LOCALID_DEWFORD_STEVEN
+# 914 "data/maps/DewfordTown/scripts.pory"
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+# 915 "data/maps/DewfordTown/scripts.pory"
+	delay 15
+# 916 "data/maps/DewfordTown/scripts.pory"
+	releaseall
+	end
+
+DewfordTown_EventScript_Steven_3:
+# 889 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_DEWFORD_STEVEN, Common_Movement_FaceLeft
+	goto DewfordTown_EventScript_Steven_1
+
+DewfordTown_EventScript_Steven_4:
+# 892 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_DEWFORD_STEVEN, Common_Movement_FaceDown
+	goto DewfordTown_EventScript_Steven_1
+
+DewfordTown_EventScript_Steven_5:
+# 895 "data/maps/DewfordTown/scripts.pory"
+	applymovement LOCALID_DEWFORD_STEVEN, Common_Movement_FaceRight
+	goto DewfordTown_EventScript_Steven_1
+
+
 DewfordTown_EventScript_GymBlocker_Text_0:
-# 811 "data/maps/DewfordTown/scripts.pory"
+# 813 "data/maps/DewfordTown/scripts.pory"
 	.string "Ah, Trainer!\p"
 	.string "I'm sorry, but Brawly is away dealing\n"
 	.string "with some issues, so the Gym is closed\l"
@@ -1695,7 +1838,7 @@ DewfordTown_EventScript_GymBlocker_Text_0:
 	.string "to get him to return to the Gym.$"
 
 DewfordTown_EventScript_BrineyWaterStone_Text_0:
-# 820 "data/maps/DewfordTown/scripts.pory"
+# 822 "data/maps/DewfordTown/scripts.pory"
 	.string "MR. BRINEY: Ahoy there, young Trainer!\p"
 	.string "Congrats on defeating Brawly. I happen\n"
 	.string "to have found a Water Stone while\l"
@@ -1703,17 +1846,35 @@ DewfordTown_EventScript_BrineyWaterStone_Text_0:
 	.string "Here you go!$"
 
 DewfordTown_EventScript_LowSweepBlackBelt_Text_0:
-# 833 "data/maps/DewfordTown/scripts.pory"
+# 835 "data/maps/DewfordTown/scripts.pory"
 	.string "I'm training to become one of Brawly's\n"
 	.string "Gym Trainers.$"
 
 DewfordTown_EventScript_LowSweepBlackBelt_Text_1:
-# 837 "data/maps/DewfordTown/scripts.pory"
+# 839 "data/maps/DewfordTown/scripts.pory"
 	.string "My signature technique is the Low\n"
 	.string "Sweep! Here, take this TM and learn it\l"
 	.string "for yourself.$"
 
 DewfordTown_EventScript_LowSweepBlackBelt_Text_2:
-# 843 "data/maps/DewfordTown/scripts.pory"
+# 845 "data/maps/DewfordTown/scripts.pory"
 	.string "I'm not there yet, but with enough\n"
 	.string "determination, I know I'll make it!$"
+
+DewfordTown_EventScript_Steven_Text_0:
+# 903 "data/maps/DewfordTown/scripts.pory"
+	.string "Oh, hello there!\n"
+	.string "You must be {PLAYER}, right?\l"
+	.string "My name is Steven Stone. Brawly was\l"
+	.string "just telling me how you tried to stop\l"
+	.string "the fight between Team Aqua and Team\l"
+	.string "Magma.\p"
+	.string "Not many people are willing to get\n"
+	.string "involved. I appreciate your bravery.\p"
+	.string "Here, please take this as a token of my\n"
+	.string "appreciation. It's my favorite TM.$"
+
+DewfordTown_EventScript_Steven_Text_1:
+# 908 "data/maps/DewfordTown/scripts.pory"
+	.string "Steven: Good luck against Brawly - I\n"
+	.string "hope to see you again!$"

@@ -3,7 +3,6 @@
   "name": "Route104",
   "layout": "LAYOUT_ROUTE104",
   "music": "MUS_ROUTE104",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_104",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -559,11 +558,11 @@
     },
     {
       "type": "sign",
-      "x": 17,
-      "y": 23,
+      "x": 35,
+      "y": 60,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route104_EventScript_TrainerTipsDoubleBattles"
+      "script": "Route104_EventScript_TrainerTipsSeeAllDirections"
     },
     {
       "type": "hidden_item",
@@ -584,14 +583,6 @@
     {
       "type": "hidden_item",
       "x": 16,
-      "y": 64,
-      "elevation": 3,
-      "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POTION"
-    },
-    {
-      "type": "hidden_item",
-      "x": 16,
       "y": 72,
       "elevation": 3,
       "item": "ITEM_ZINC",
@@ -605,5 +596,6 @@
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

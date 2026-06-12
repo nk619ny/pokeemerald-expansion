@@ -12751,7 +12751,7 @@ Mightyena
 Level: 36
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_EDDIE === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_EDDIE === /* Trick House 1 */ 
 Name: EDDIE
 Class: Youngster
 Pic: Youngster
@@ -12760,13 +12760,46 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Snivy  
+Ability: Contrary  
+Level: 37
+EVs: 252 HP / 252 SpD  
+Careful Nature  
+- Glare  
+- Attract  
+- Bind  
+- Toxic  
 
-Zigzagoon
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Frillish  
+Ability: Damp  
+Level: 37
+EVs: 252 HP / 128 Def / 128 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Constrict  
+- Hex  
+- Strength Sap  
+- Chilling Water  
+
+Tepig @ Salac Berry  
+Ability: Gluttony  
+Level: 37
+EVs: 252 HP / 64 Atk / 192 Spe  
+Jolly Nature  
+- Endeavor  
+- Flame Charge  
+- Endure  
+- Yawn  
+
+Lillipup  
+Ability: Pickup  
+Level: 37
+EVs: 252 HP / 252 Spe  
+- Endure  
+- Reversal  
+- Covet  
+- Attract  
+
 
 === TRAINER_ALLEN === /* Route 102 */ /* TO BE ADDED */
 Name: ALLEN
@@ -17661,6 +17694,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Spinda  
 Level: 36
 Ability: Own Tempo  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Tera Type: Normal  
 - Teeter Dance  
 - Dizzy Punch  
@@ -17670,6 +17704,7 @@ Tera Type: Normal
 Spinda @ Life Orb
 Level: 36
 Ability: Contrary
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 -Double-Edge
 -Sucker Punch
 -Trick Room
@@ -17678,6 +17713,7 @@ Ability: Contrary
 Spinda @ Bright Powder 
 Level: 36 
 Ability: Tangled Feet  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Tera Type: Normal  
 - Fake Out  
 - Double Team  
@@ -17687,6 +17723,7 @@ Tera Type: Normal
 Spinda  
 Level: 36
 Ability: Contrary  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Tera Type: Normal  
 - Superpower  
 - Psycho Boost  
@@ -19524,7 +19561,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Budew @ Wide Lens
 Ability: Natural Cure  
-Level: 35
+Level: 34
 Tera Type: Grass  
 EVs: 252 HP / 252 SpA  
 - Extrasensory  
@@ -19534,7 +19571,7 @@ EVs: 252 HP / 252 SpA
 
 Cleffa  @ Starf Berry
 Ability: Cute Charm  
-Level: 35  
+Level: 34
 Tera Type: Fairy  
 EVs: 252 HP / 128 Atk / 128 SpA  
 - Metronome  
@@ -19544,7 +19581,7 @@ EVs: 252 HP / 128 Atk / 128 SpA
 
 Pichu  @ Light Ball
 Ability: Lightning Rod  
-Level: 34
+Level: 33
 Tera Type: Electric  
 EVs: 252 HP / 128 Atk  
 - Disarming Voice  
@@ -19554,7 +19591,7 @@ EVs: 252 HP / 128 Atk
 
 Smoochum (F)  
 Ability: Oblivious  
-Level: 35
+Level: 34
 Tera Type: Ice  
 EVs: 252 HP / 252 Atk  
 Adamant Nature  
@@ -19565,7 +19602,7 @@ Adamant Nature
 
 Azurill @ Sitrus Berry  
 Ability: Thick Fat  
-Level: 35  
+Level: 34
 Tera Type: Normal  
 EVs: 252 HP / 252 Atk  
 - Aqua Jet  
@@ -21980,7 +22017,7 @@ Breloom
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_SALLY === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_SALLY === /* Trick House 1 */ 
 Name: SALLY
 Class: Lass
 Pic: Lass
@@ -21989,11 +22026,47 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Oddish
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ledyba @ Focus Sash  
+Ability: Rattled  
+Level: 37
+EVs: 252 HP / 252 Spe  
+Careful Nature  
+- Baton Pass  
+- Encore  
+- Power-Up Punch  
+- Agility  
 
-=== TRAINER_ROBIN === /* Trick House */ /* TO BE ADDED */
+Venonat @ Focus Band  
+Ability: Compound Eyes  
+Level: 37
+EVs: 252 HP / 252 SpD  
+Careful Nature  
+- Sleep Powder  
+- Rage Powder  
+- Leech Life  
+- Night Shade  
+
+Slakoth  
+Ability: Comatose  
+Level: 37
+EVs: 252 HP  
+- Yawn  
+- Body Slam  
+- Night Slash  
+- Encore  
+
+Buneary  
+Ability: Klutz  
+Level: 37
+EVs: 252 HP / 252 Spe  
+Jolly Nature  
+- Entrainment  
+- Baton Pass  
+- Power-Up Punch  
+- Trailblaze  
+
+
+=== TRAINER_ROBIN === /* Trick House 1 */ 
 Name: ROBIN
 Class: Lass
 Pic: Lass
@@ -22002,17 +22075,47 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skitty
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Karrablast  
+Ability: No Guard  
+Level: 37
+EVs: 252 HP / 252 Spe  
+IVs: 0 Atk  
+- Toxic  
+- Swagger  
+- Encore  
+- Attract  
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Woobat @ Salac Berry  
+Ability: Simple  
+Level: 37
+EVs: 252 HP / 252 Def  
+Timid Nature  
+IVs: 0 Atk  
+- Baton Pass  
+- Calm Mind  
+- Stored Power  
+- Roost  
 
-Marill
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gothita  
+Ability: Shadow Tag  
+Level: 37
+EVs: 252 HP / 252 Def
+Tera Type: Fighting  
+- Stored Power  
+- Fake Out  
+- Calm Mind  
+- Hidden Power
+
+
+Toxel  
+Ability: Static  
+Level: 37
+EVs: 252 HP / 252 Spe
+- Encore  
+- Nuzzle  
+- Attract  
+- Power-Up Punch  
+
 
 === TRAINER_ANDREA === /* Sootopolis Gym */
 Name: ANDREA
@@ -25228,7 +25331,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Hoothoot  
-Ability: Keen Eye  
+Ability: Mind's Eye  
 Level: 34
 Tera Type: Normal  
 EVs: 252 HP / 252 SpA

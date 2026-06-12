@@ -3,6 +3,12 @@ TradeCenter_MapScripts::
 	.byte 0
 
 
+Common_Text_PlayerReceivedEevee:
+	.string "{PLAYER} received Eevee!$"
+
+Common_Text_PlayerReceivedCosplayPikachu:
+	.string "{PLAYER} received Cosplay Pikachu!$"
+
 /*
 script PokemonCenter_2F_BasicMoveTutor1 {
 	lock

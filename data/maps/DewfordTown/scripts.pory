@@ -805,6 +805,8 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "definition of “in” right now.$"
 `
 
+const TempVar_Steven = VAR_TEMP_0
+
 script DewfordTown_EventScript_GymBlocker {
 	lock
 	faceplayer
@@ -843,6 +845,74 @@ script DewfordTown_EventScript_LowSweepBlackBelt {
 		msgbox(format("I'm not there yet, but with enough determination, I know I'll make it!"), MSGBOX_DEFAULT)
 	}
 	closemessage
+	releaseall
+	end
+}
+
+script DewfordTown_EventScript_StevenTriggerLeft {
+	setvar(TempVar_Steven, 1)
+	if(!flag(FLAG_RECEIVED_STEEL_WING) && flag(FLAG_SLATEPORT_FARM_COMPLETED)) {
+		lock
+		goto(DewfordTown_EventScript_Steven)
+	}
+	return
+}
+
+script DewfordTown_EventScript_StevenTriggerDown {
+	setvar(TempVar_Steven, 2)
+	if(!flag(FLAG_RECEIVED_STEEL_WING) && flag(FLAG_SLATEPORT_FARM_COMPLETED)) {
+		lock
+		goto(DewfordTown_EventScript_Steven)
+	}
+	return
+}
+
+script DewfordTown_EventScript_StevenTriggerRight {
+	setvar(TempVar_Steven, 3)
+	if(!flag(FLAG_RECEIVED_STEEL_WING) && flag(FLAG_SLATEPORT_FARM_COMPLETED)) {
+		lock
+		goto(DewfordTown_EventScript_Steven)
+	}
+	return
+}
+
+script DewfordTown_EventScript_Steven {
+	lock
+	opendoor(23,17)
+	waitdooranim
+	addobject(LOCALID_DEWFORD_STEVEN)
+	applymovement(LOCALID_DEWFORD_STEVEN, Common_Movement_WalkDownOneStep)
+	waitmovement(0)
+	delay(30)
+	switch(var(TempVar_Steven)) {
+		case 1:
+			applymovement(LOCALID_DEWFORD_STEVEN, Common_Movement_FaceLeft)
+			break
+		case 2:
+			applymovement(LOCALID_DEWFORD_STEVEN, Common_Movement_FaceDown)
+			break
+		case 3:
+			applymovement(LOCALID_DEWFORD_STEVEN, Common_Movement_FaceRight)
+			break
+	}
+	waitmovement(0)
+	applymovement(LOCALID_DEWFORD_STEVEN, Common_Movement_ExclamationMark)
+	closedoor(23,17)
+	waitmovement(0)
+	waitdooranim
+	msgbox(format("Oh, hello there!\NYou must be {PLAYER}, right?\NMy name is Steven Stone. Brawly was just telling me how you tried to stop the fight between Team Aqua and Team Magma.\pNot many people are willing to get involved. I appreciate your bravery.\pHere, please take this as a token of my appreciation. It's my favorite TM."), MSGBOX_NPC)
+	closemessage
+	giveitem(ITEM_TM_STEEL_WING)
+	waitfanfare
+	setflag(FLAG_RECEIVED_STEEL_WING)
+	msgbox(format("Steven: Good luck against Brawly - I hope to see you again!"), MSGBOX_NPC)
+	closemessage
+	setfieldeffectargument(0, 1)
+	dofieldeffect(FLDEFF_NPCFLY_OUT)
+	delay(15)
+	removeobject(LOCALID_DEWFORD_STEVEN)
+	waitfieldeffect(FLDEFF_NPCFLY_OUT)
+	delay(15)
 	releaseall
 	end
 }

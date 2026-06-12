@@ -2601,6 +2601,12 @@ Route104_EventScript_TryDarianGiftAfterBattle_1:
 	return
 
 
+Route104_EventScript_TrainerTipsSeeAllDirections::
+# 1296 "data/maps/Route104/scripts.pory"
+	msgbox Route104_Text_TrainerTipsSeeAllDirections, MSGBOX_SIGN
+	end
+
+
 Route104_EventScript_BrineyNew_Text_0:
 # 1189 "data/maps/Route104/scripts.pory"
 	.string "That man took my beloved Peeko! Please,\n"
@@ -2679,3 +2685,15 @@ Route104_Text_JimmyPostBattle::
 # 1287 "data/maps/Route104/scripts.pory"
 	.string "My Dad says raising Pokémon will teach\n"
 	.string "me responsibility.$"
+
+Route104_Text_TrainerTipsSeeAllDirections::
+# 1291 "data/maps/Route104/scripts.pory"
+	.string "TRAINER TIPS\p"
+	.string "Most Trainers will initiate a battle if\n"
+	.string "you walk into their line of sight.\p"
+	.string "Some Trainers look all around them, and\n"
+	.string "will initiate a battle if you get close\l"
+	.string "to them in any direction.\p"
+	.string "And Fishermen can always see you in\n"
+	.string "their reflection, so will also start a\l"
+	.string "battle if you get close to them.$"

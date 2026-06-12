@@ -7427,6 +7427,8 @@ static inline u32 CalcAttackStat(struct BattleContext *ctx)
     case HOLD_EFFECT_LIGHT_BALL:
         if ((atkBaseSpeciesId == SPECIES_PIKACHU || atkBaseSpeciesId == SPECIES_PICHU) && (GetConfig(B_LIGHT_BALL_ATTACK_BOOST) >= GEN_4 || IsBattleMoveSpecial(move)))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+        else if ((atkBaseSpeciesId == SPECIES_RAICHU) && (GetConfig(B_LIGHT_BALL_ATTACK_BOOST) >= GEN_4 || IsBattleMoveSpecial(move)))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case HOLD_EFFECT_CHOICE_BAND:
         if (IsBattleMovePhysical(move) && GetActiveGimmick(battlerAtk) != GIMMICK_DYNAMAX)

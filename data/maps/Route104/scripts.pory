@@ -1287,3 +1287,12 @@ text Route104_Text_JimmyDefeat{
 text Route104_Text_JimmyPostBattle{
 	format("My Dad says raising Pokémon will teach me responsibility.")
 }
+
+text Route104_Text_TrainerTipsSeeAllDirections{
+	format("TRAINER TIPS\pMost Trainers will initiate a battle if you walk into their line of sight.\pSome Trainers look all around them, and will initiate a battle if you get close to them in any direction.\pAnd Fishermen can always see you in their reflection, so will also start a battle if you get close to them.")
+}
+
+script Route104_EventScript_TrainerTipsSeeAllDirections{
+	msgbox(Route104_Text_TrainerTipsSeeAllDirections, MSGBOX_SIGN)
+	end
+}

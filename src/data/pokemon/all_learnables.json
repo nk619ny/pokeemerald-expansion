@@ -13522,6 +13522,7 @@
   ],
   "SANDACONDA": [
     "MOVE_ATTRACT",
+    "MOVE_AIR_SLASH",
     "MOVE_BELCH",
     "MOVE_BODY_PRESS",
     "MOVE_BODY_SLAM",
