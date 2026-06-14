@@ -3456,7 +3456,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_ELECTRIC_SURGE }, //made HA regular ability
+        .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_ANALYTIC }, //made HA regular ability
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Pikachu"),
         .cryId = CRY_PIKACHU,
@@ -8112,7 +8112,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPrimeapeTeachableLearnset,
         .eliteLearnset = sPrimeapeEliteLearnset,
     #if P_GEN_9_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_ANNIHILAPE, CONDITIONS({IF_USED_MOVE_X_TIMES, MOVE_RAGE_FIST, 20})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ANNIHILAPE}),
     #endif
     },
 
