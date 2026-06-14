@@ -592,18 +592,18 @@
       "x": 28,
       "y": 92,
       "elevation": 3,
-      "var": "VAR_CYCLING_CHALLENGE_STATE",
-      "var_value": "2",
-      "script": "Route110_EventScript_CyclingChallengeEnd"
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route110_EventScript_CheckCyclingRoadDone"
     },
     {
       "type": "trigger",
       "x": 29,
       "y": 92,
       "elevation": 3,
-      "var": "VAR_CYCLING_CHALLENGE_STATE",
-      "var_value": "2",
-      "script": "Route110_EventScript_CyclingChallengeEnd"
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Route110_EventScript_CheckCyclingRoadDone"
     },
     {
       "type": "trigger",

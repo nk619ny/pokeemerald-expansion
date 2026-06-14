@@ -1802,6 +1802,7 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone{
 	if(!checkitem(ITEM_RILLABOOMITE)) 		{dynmultipush("Rillaboom",ITEM_RILLABOOMITE)}
 	if(!checkitem(ITEM_CINDERACITE)) 		{dynmultipush("Cinderace",ITEM_CINDERACITE)}
 	if(!checkitem(ITEM_INTELEONITE)) 		{dynmultipush("Inteleon",ITEM_INTELEONITE)}
+	if(!checkitem(ITEM_RAICHUNITE_Y)) 		{dynmultipush("Raichu",ITEM_RAICHUNITE_Y)}
 	dynmultipush("Nevermind",ITEM_NONE)
 
 	msgbox(format("PROF. BIRCH: Ah, {PLAYER}!\pIn honor of your new Mega Ring, I wanted to give you a Mega Stone for your starter Pokémon.\pBut... I can't remember which one you chose!"),MSGBOX_NPC)
@@ -1819,6 +1820,23 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone{
 		closemessage
 		releaseall
 		end
+	}
+	elif(var(VAR_RESULT) == ITEM_RAICHUNITE_Y){
+		msgbox(format("PROF. BIRCH: How strange, I don't even remember having Pikachu available as a Starter option.\pI must be getting too forgetful.\pAnyway, you should take this {STR_VAR_1} to Mega Evolve your starter."),MSGBOX_NPC)
+		copyvar(TempVar_MegaStone, VAR_RESULT)
+		checkitemspace(TempVar_MegaStone)
+		if(var(VAR_RESULT) == FALSE){
+			msgbox(format("PROF. BIRCH: Hm, your bag seems to be full!\pMake some room and come back to me."),MSGBOX_NPC)
+			closemessage
+			releaseall
+			end
+		}
+		bufferitemname(STR_VAR_1,TempVar_MegaStone)
+		giveitem(TempVar_MegaStone)
+		setflag(FLAG_RECEIVED_BIRCH_MEGA_STONE)
+		waitfanfare
+		msgbox(format("PROF. BIRCH: Of course, lots of other Pokémon can Mega Evolve too, so try to collect more Mega Stones as you adventure!\pI hear the Game Corner sells many of them - though as a child, I'm not sure how you could get the needed coins."),MSGBOX_NPC)
+		closemessage
 	}
 	else{
 		copyvar(TempVar_MegaStone, VAR_RESULT)

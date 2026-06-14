@@ -870,7 +870,7 @@
 #define FLAG_HIDE_ROUTE_112_TEAM_MAGMA                              0x333
 #define FLAG_RECEIVED_CAVE_OF_ORIGIN_MEGA_STONE                     0x334 // repurposed
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNTS_BLOCKING_ENTRANCE          0x335 //renamed
-#define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE         0x336 // there were two flags for each grunt - I consolidated. Now unused
+#define FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE                      0x336 // repurposed. there were two flags for each grunt - I consolidated. Now unused
 #define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
 #define FLAG_HIDE_PETALBURG_GYM_WALLYS_DAD                          0x338
 #define FLAG_HIDE_LEGEND_MON_CAVE_OF_ORIGIN                         0x339 // Unused, leftover from R/S

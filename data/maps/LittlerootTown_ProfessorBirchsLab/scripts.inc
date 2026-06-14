@@ -3815,48 +3815,57 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_40:
 	compare VAR_RESULT, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_44
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_43:
-# 1805 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_15, ITEM_NONE
-# 1807 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_16, MSGBOX_NPC
-# 1808 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
-# 1809 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_17, MSGBOX_DEFAULT
-# 1810 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	dynmultistack 25, 2, FALSE, 5, 0, ITEM_VENUSAURITE, DYN_MULTICHOICE_CB_NONE
-# 1811 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_RESULT, ITEM_NONE
+	checkitem ITEM_RAICHUNITE_Y
+# 0 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_47
-# 1817 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_46:
+# 1806 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_16, ITEM_NONE
+# 1808 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_17, MSGBOX_NPC
+# 1809 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1810 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_18, MSGBOX_DEFAULT
+# 1811 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	dynmultistack 25, 2, FALSE, 5, 0, ITEM_VENUSAURITE, DYN_MULTICHOICE_CB_NONE
+# 1812 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_RESULT, ITEM_NONE
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_50
+# 1818 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	compare VAR_RESULT, 127
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_48
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_51
 # 1824 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	copyvar VAR_TEMP_7, VAR_RESULT
-# 1825 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	checkitemspace VAR_TEMP_7
-# 1826 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	compare VAR_RESULT, FALSE
-	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_53
-# 1832 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	bufferitemname STR_VAR_1, VAR_TEMP_7
-# 1833 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_20, MSGBOX_NPC
-# 1834 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
-# 1835 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	giveitem VAR_TEMP_7
-# 1836 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	setflag FLAG_RECEIVED_BIRCH_MEGA_STONE
-# 1837 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	waitfanfare
-# 1838 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_21, MSGBOX_NPC
-# 1839 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
+	compare VAR_RESULT, ITEM_RAICHUNITE_Y
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_52
 # 1842 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
+	copyvar VAR_TEMP_7, VAR_RESULT
 # 1843 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	checkitemspace VAR_TEMP_7
+# 1844 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_61
+# 1850 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	bufferitemname STR_VAR_1, VAR_TEMP_7
+# 1851 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_23, MSGBOX_NPC
+# 1852 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1853 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	giveitem VAR_TEMP_7
+# 1854 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setflag FLAG_RECEIVED_BIRCH_MEGA_STONE
+# 1855 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	waitfanfare
+# 1856 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_22, MSGBOX_NPC
+# 1857 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_49:
+# 1860 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1861 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 	end
 
@@ -3936,35 +3945,73 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_44:
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_43
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_47:
-# 1812 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_18, MSGBOX_NPC
+# 1805 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	dynmultipush LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_15, ITEM_RAICHUNITE_Y
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_46
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_50:
 # 1813 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
-# 1814 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	releaseall
-	end
-
-LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_48:
-# 1818 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_18, MSGBOX_NPC
-# 1819 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	closemessage
-# 1820 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	releaseall
-	end
-
-LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_53:
-# 1827 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_19, MSGBOX_NPC
-# 1828 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1814 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	closemessage
+# 1815 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	releaseall
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_51:
+# 1819 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_19, MSGBOX_NPC
+# 1820 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1821 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	releaseall
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_52:
+# 1825 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_20, MSGBOX_NPC
+# 1826 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	copyvar VAR_TEMP_7, VAR_RESULT
+# 1827 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	checkitemspace VAR_TEMP_7
+# 1828 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_58
+# 1834 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	bufferitemname STR_VAR_1, VAR_TEMP_7
+# 1835 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	giveitem VAR_TEMP_7
+# 1836 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setflag FLAG_RECEIVED_BIRCH_MEGA_STONE
+# 1837 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	waitfanfare
+# 1838 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_22, MSGBOX_NPC
+# 1839 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_49
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_58:
 # 1829 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_21, MSGBOX_NPC
+# 1830 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1831 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	releaseall
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_61:
+# 1845 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_21, MSGBOX_NPC
+# 1846 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	closemessage
+# 1847 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	end
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_CheckIfGiveMegaStone::
-# 1849 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1867 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lock
 	checkitem ITEM_MEGA_RING
 # 0 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
@@ -3974,376 +4021,376 @@ LittlerootTown_ProfessorBirchsLab_EventScript_CheckIfGiveMegaStone_2:
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_CheckIfGiveMegaStone_1:
-# 1851 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1869 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_CheckIfGiveMegaStone_3:
-# 1850 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1868 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_BIRCH_MEGA_STONE, LittlerootTown_ProfessorBirchsLab_EventScript_CheckIfGiveMegaStone_1
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_CheckIfGiveMegaStone_2
 
 
 Common_EventScript_LevelCapSync::
-# 1865 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_WALLY_VR_1, Common_EventScript_LevelCapSync_Set85
-# 1867 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_JUAN_1, Common_EventScript_LevelCapSync_Set80
-# 1868 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_ARCHIE_SEAFLOOR_CAVERN, Common_EventScript_LevelCapSync_Set77
-# 1869 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_COURTNEY_MOSSDEEP, Common_EventScript_LevelCapSync_Set75
-# 1871 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_TATE_AND_LIZA_1, Common_EventScript_LevelCapSync_Set73
-# 1874 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_LILYCOVE_MUDKIP, Common_EventScript_LevelCapSync_Set70
-# 1875 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_LILYCOVE_TREECKO, Common_EventScript_LevelCapSync_Set70
-# 1876 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_LILYCOVE_TORCHIC, Common_EventScript_LevelCapSync_Set70
-# 1877 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_LILYCOVE_MUDKIP, Common_EventScript_LevelCapSync_Set70
-# 1878 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_LILYCOVE_TREECKO, Common_EventScript_LevelCapSync_Set70
-# 1879 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_LILYCOVE_TORCHIC, Common_EventScript_LevelCapSync_Set70
-# 1881 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_set FLAG_BOTH_HIDEOUTS_COMPLETE, Common_EventScript_LevelCapSync_Set68
 # 1883 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MATT, Common_EventScript_LevelCapSync_Set66
-# 1884 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAXIE_MAGMA_HIDEOUT, Common_EventScript_LevelCapSync_Set66
+	goto_if_defeated TRAINER_WALLY_VR_1, Common_EventScript_LevelCapSync_Set85
+# 1885 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_JUAN_1, Common_EventScript_LevelCapSync_Set80
 # 1886 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAXIE_MT_PYRE, Common_EventScript_LevelCapSync_Set65
+	goto_if_defeated TRAINER_ARCHIE_SEAFLOOR_CAVERN, Common_EventScript_LevelCapSync_Set77
 # 1887 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_ARCHIE_MT_PYRE, Common_EventScript_LevelCapSync_Set65
+	goto_if_defeated TRAINER_COURTNEY_MOSSDEEP, Common_EventScript_LevelCapSync_Set75
 # 1889 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_WINONA_1, Common_EventScript_LevelCapSync_Set63
+	goto_if_defeated TRAINER_TATE_AND_LIZA_1, Common_EventScript_LevelCapSync_Set73
+# 1892 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_BRENDAN_LILYCOVE_MUDKIP, Common_EventScript_LevelCapSync_Set70
 # 1893 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_ROUTE_119_TREECKO, Common_EventScript_LevelCapSync_Set60
+	goto_if_defeated TRAINER_BRENDAN_LILYCOVE_TREECKO, Common_EventScript_LevelCapSync_Set70
 # 1894 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_ROUTE_119_TORCHIC, Common_EventScript_LevelCapSync_Set60
+	goto_if_defeated TRAINER_BRENDAN_LILYCOVE_TORCHIC, Common_EventScript_LevelCapSync_Set70
 # 1895 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_ROUTE_119_MUDKIP, Common_EventScript_LevelCapSync_Set60
+	goto_if_defeated TRAINER_MAY_LILYCOVE_MUDKIP, Common_EventScript_LevelCapSync_Set70
 # 1896 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_ROUTE_119_TREECKO, Common_EventScript_LevelCapSync_Set60
+	goto_if_defeated TRAINER_MAY_LILYCOVE_TREECKO, Common_EventScript_LevelCapSync_Set70
 # 1897 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_ROUTE_119_TORCHIC, Common_EventScript_LevelCapSync_Set60
-# 1898 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_ROUTE_119_MUDKIP, Common_EventScript_LevelCapSync_Set60
-# 1900 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_ARCHIE_WEATHER_INSTITUTE, Common_EventScript_LevelCapSync_Set58
+	goto_if_defeated TRAINER_MAY_LILYCOVE_TORCHIC, Common_EventScript_LevelCapSync_Set70
+# 1899 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_set FLAG_BOTH_HIDEOUTS_COMPLETE, Common_EventScript_LevelCapSync_Set68
+# 1901 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_MATT, Common_EventScript_LevelCapSync_Set66
 # 1902 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_VITO, Common_EventScript_LevelCapSync_Set56
+	goto_if_defeated TRAINER_MAXIE_MAGMA_HIDEOUT, Common_EventScript_LevelCapSync_Set66
 # 1904 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_RUSTBORO_TREECKO, Common_EventScript_LevelCapSync_Set53
+	goto_if_defeated TRAINER_MAXIE_MT_PYRE, Common_EventScript_LevelCapSync_Set65
 # 1905 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_RUSTBORO_TORCHIC, Common_EventScript_LevelCapSync_Set53
-# 1906 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_RUSTBORO_MUDKIP, Common_EventScript_LevelCapSync_Set53
+	goto_if_defeated TRAINER_ARCHIE_MT_PYRE, Common_EventScript_LevelCapSync_Set65
 # 1907 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_RUSTBORO_TREECKO, Common_EventScript_LevelCapSync_Set53
-# 1908 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_RUSTBORO_TORCHIC, Common_EventScript_LevelCapSync_Set53
-# 1909 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_RUSTBORO_MUDKIP, Common_EventScript_LevelCapSync_Set53
+	goto_if_defeated TRAINER_WINONA_1, Common_EventScript_LevelCapSync_Set63
 # 1911 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_ROXANNE_1, Common_EventScript_LevelCapSync_Set51
+	goto_if_defeated TRAINER_MAY_ROUTE_119_TREECKO, Common_EventScript_LevelCapSync_Set60
+# 1912 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_MAY_ROUTE_119_TORCHIC, Common_EventScript_LevelCapSync_Set60
 # 1913 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAXIE_MT_CHIMNEY, Common_EventScript_LevelCapSync_Set48
+	goto_if_defeated TRAINER_MAY_ROUTE_119_MUDKIP, Common_EventScript_LevelCapSync_Set60
+# 1914 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_BRENDAN_ROUTE_119_TREECKO, Common_EventScript_LevelCapSync_Set60
 # 1915 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_FLANNERY_1, Common_EventScript_LevelCapSync_Set46
+	goto_if_defeated TRAINER_BRENDAN_ROUTE_119_TORCHIC, Common_EventScript_LevelCapSync_Set60
 # 1916 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_TABITHA_GLACIER, Common_EventScript_LevelCapSync_Set43
-# 1917 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_VICKY, Common_EventScript_LevelCapSync_Set41
-# 1919 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_WATTSON_1, Common_EventScript_LevelCapSync_Set39
-# 1921 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_WALLY_MAUVILLE, Common_EventScript_LevelCapSync_Set36
+	goto_if_defeated TRAINER_BRENDAN_ROUTE_119_MUDKIP, Common_EventScript_LevelCapSync_Set60
+# 1918 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_ARCHIE_WEATHER_INSTITUTE, Common_EventScript_LevelCapSync_Set58
+# 1920 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_VITO, Common_EventScript_LevelCapSync_Set56
+# 1922 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_MAY_RUSTBORO_TREECKO, Common_EventScript_LevelCapSync_Set53
 # 1923 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_AQUA_ADMIN_RUSTURF, Common_EventScript_LevelCapSync_Set34
+	goto_if_defeated TRAINER_MAY_RUSTBORO_TORCHIC, Common_EventScript_LevelCapSync_Set53
+# 1924 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_MAY_RUSTBORO_MUDKIP, Common_EventScript_LevelCapSync_Set53
 # 1925 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_ROUTE_110_TREECKO, Common_EventScript_LevelCapSync_Set31
+	goto_if_defeated TRAINER_BRENDAN_RUSTBORO_TREECKO, Common_EventScript_LevelCapSync_Set53
 # 1926 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_ROUTE_110_TORCHIC, Common_EventScript_LevelCapSync_Set31
+	goto_if_defeated TRAINER_BRENDAN_RUSTBORO_TORCHIC, Common_EventScript_LevelCapSync_Set53
 # 1927 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_ROUTE_110_MUDKIP, Common_EventScript_LevelCapSync_Set31
-# 1928 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_ROUTE_110_TREECKO, Common_EventScript_LevelCapSync_Set31
+	goto_if_defeated TRAINER_BRENDAN_RUSTBORO_MUDKIP, Common_EventScript_LevelCapSync_Set53
 # 1929 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_ROUTE_110_TORCHIC, Common_EventScript_LevelCapSync_Set31
-# 1930 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_ROUTE_110_MUDKIP, Common_EventScript_LevelCapSync_Set31
-# 1932 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRAWLY_1, Common_EventScript_LevelCapSync_Set28
+	goto_if_defeated TRAINER_ROXANNE_1, Common_EventScript_LevelCapSync_Set51
+# 1931 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_MAXIE_MT_CHIMNEY, Common_EventScript_LevelCapSync_Set48
+# 1933 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_FLANNERY_1, Common_EventScript_LevelCapSync_Set46
 # 1934 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_AQUA_ADMIN_FARM, Common_EventScript_LevelCapSync_Set24
+	goto_if_defeated TRAINER_TABITHA_GLACIER, Common_EventScript_LevelCapSync_Set43
 # 1935 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAGMA_ADMIN_FARM, Common_EventScript_LevelCapSync_Set24
+	goto_if_defeated TRAINER_VICKY, Common_EventScript_LevelCapSync_Set41
 # 1937 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_NORMAN_1, Common_EventScript_LevelCapSync_Set21
-# 1938 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_GRUNT_PETALBURG_WOODS, Common_EventScript_LevelCapSync_Set15
-# 1940 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_ROUTE_103_TREECKO, Common_EventScript_LevelCapSync_Set13
+	goto_if_defeated TRAINER_WATTSON_1, Common_EventScript_LevelCapSync_Set39
+# 1939 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_WALLY_MAUVILLE, Common_EventScript_LevelCapSync_Set36
 # 1941 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_ROUTE_103_TORCHIC, Common_EventScript_LevelCapSync_Set13
-# 1942 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_MAY_ROUTE_103_MUDKIP, Common_EventScript_LevelCapSync_Set13
+	goto_if_defeated TRAINER_AQUA_ADMIN_RUSTURF, Common_EventScript_LevelCapSync_Set34
 # 1943 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_ROUTE_103_TREECKO, Common_EventScript_LevelCapSync_Set13
+	goto_if_defeated TRAINER_MAY_ROUTE_110_TREECKO, Common_EventScript_LevelCapSync_Set31
 # 1944 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_ROUTE_103_TORCHIC, Common_EventScript_LevelCapSync_Set13
+	goto_if_defeated TRAINER_MAY_ROUTE_110_TORCHIC, Common_EventScript_LevelCapSync_Set31
 # 1945 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto_if_defeated TRAINER_BRENDAN_ROUTE_103_MUDKIP, Common_EventScript_LevelCapSync_Set13
+	goto_if_defeated TRAINER_MAY_ROUTE_110_MUDKIP, Common_EventScript_LevelCapSync_Set31
+# 1946 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_BRENDAN_ROUTE_110_TREECKO, Common_EventScript_LevelCapSync_Set31
 # 1947 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_BRENDAN_ROUTE_110_TORCHIC, Common_EventScript_LevelCapSync_Set31
+# 1948 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_BRENDAN_ROUTE_110_MUDKIP, Common_EventScript_LevelCapSync_Set31
+# 1950 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_BRAWLY_1, Common_EventScript_LevelCapSync_Set28
+# 1952 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_AQUA_ADMIN_FARM, Common_EventScript_LevelCapSync_Set24
+# 1953 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_MAGMA_ADMIN_FARM, Common_EventScript_LevelCapSync_Set24
+# 1955 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_NORMAN_1, Common_EventScript_LevelCapSync_Set21
+# 1956 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_GRUNT_PETALBURG_WOODS, Common_EventScript_LevelCapSync_Set15
+# 1958 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_MAY_ROUTE_103_TREECKO, Common_EventScript_LevelCapSync_Set13
+# 1959 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_MAY_ROUTE_103_TORCHIC, Common_EventScript_LevelCapSync_Set13
+# 1960 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_MAY_ROUTE_103_MUDKIP, Common_EventScript_LevelCapSync_Set13
+# 1961 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_BRENDAN_ROUTE_103_TREECKO, Common_EventScript_LevelCapSync_Set13
+# 1962 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_BRENDAN_ROUTE_103_TORCHIC, Common_EventScript_LevelCapSync_Set13
+# 1963 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	goto_if_defeated TRAINER_BRENDAN_ROUTE_103_MUDKIP, Common_EventScript_LevelCapSync_Set13
+# 1965 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Set10
 	return
 
 
 Common_EventScript_LevelCapSync_Set85::
-# 1951 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1969 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 85
-# 1952 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1970 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set80::
-# 1956 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1974 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 80
-# 1957 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1975 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set77::
-# 1961 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1979 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 77
-# 1962 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1980 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set75::
-# 1966 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1984 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 75
-# 1967 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1985 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set73::
-# 1971 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1989 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 73
-# 1972 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1990 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set70::
-# 1976 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1994 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 70
-# 1977 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1995 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set68::
-# 1981 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1999 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 68
-# 1982 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2000 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set66::
-# 1986 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2004 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 66
-# 1987 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2005 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set65::
-# 1991 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2009 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 65
-# 1992 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2010 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set63::
-# 1996 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2014 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 63
-# 1997 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2015 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set60::
-# 2001 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2019 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 60
-# 2002 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2020 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set58::
-# 2006 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2024 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 58
-# 2007 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2025 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set56::
-# 2011 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2029 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 56
-# 2012 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2030 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set53::
-# 2016 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2034 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 53
-# 2017 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2035 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set51::
-# 2021 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2039 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 51
-# 2022 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2040 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set48::
-# 2026 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2044 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 48
-# 2027 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2045 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set46::
-# 2031 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2049 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 46
-# 2032 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2050 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set43::
-# 2036 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2054 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 43
-# 2037 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2055 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set41::
-# 2041 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2059 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 41
-# 2042 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2060 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set39::
-# 2046 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2064 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 39
-# 2047 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2065 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set36::
-# 2051 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2069 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 36
-# 2052 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2070 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set34::
-# 2056 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2074 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 34
-# 2057 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2075 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set31::
-# 2061 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2079 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 31
-# 2062 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2080 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set28::
-# 2066 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2084 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 28
-# 2067 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2085 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set24::
-# 2071 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2089 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 24
-# 2072 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2090 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set21::
-# 2076 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2094 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 21
-# 2077 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2095 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set15::
-# 2081 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2099 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 15
-# 2082 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2100 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set13::
-# 2086 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2104 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 13
-# 2087 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2105 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Set10::
-# 2091 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2109 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setvar VAR_LEVEL_CAP, 10
-# 2092 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2110 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	goto Common_EventScript_LevelCapSync_Report
 	return
 
 
 Common_EventScript_LevelCapSync_Report::
-# 2096 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2114 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	lock
-# 2097 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2115 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_LEVEL_CAP
-# 2098 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2116 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox Common_EventScript_LevelCapSync_Report_Text_0, MSGBOX_DEFAULT
-# 2099 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2117 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	closemessage
-# 2100 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2118 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	return
 
@@ -4855,10 +4902,14 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_14:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_15:
 # 1805 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	.string "Nevermind$"
+	.string "Raichu$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_16:
-# 1807 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 1806 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "Nevermind$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_17:
+# 1808 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "PROF. BIRCH: Ah, {PLAYER}!\p"
 	.string "In honor of your new Mega Ring, I\n"
 	.string "wanted to give you a Mega Stone for\l"
@@ -4866,32 +4917,35 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_16:
 	.string "But... I can't remember which one you\n"
 	.string "chose!$"
 
-LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_17:
-# 1809 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_18:
+# 1810 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Could you remind me of your starter\n"
 	.string "Pokémon?$"
 
-LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_18:
-# 1812 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_19:
+# 1813 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "PROF. BIRCH: Wow, did you forget too?\n"
 	.string "That's concerning.\p"
 	.string "Okay, well come back when you remember,\n"
 	.string "and I'll give you the right Mega Stone.$"
 
-LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_19:
-# 1827 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	.string "PROF. BIRCH: Hm, your bag seems to be\n"
-	.string "full!\p"
-	.string "Make some room and come back to me.$"
-
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_20:
-# 1833 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	.string "PROF. BIRCH: Right, of course!\p"
-	.string "Then you should take this\n"
+# 1825 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "PROF. BIRCH: How strange, I don't even\n"
+	.string "remember having Pikachu available as a\l"
+	.string "Starter option.\p"
+	.string "I must be getting too forgetful.\p"
+	.string "Anyway, you should take this\n"
 	.string "{STR_VAR_1} to Mega Evolve your\l"
 	.string "starter.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_21:
+# 1829 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "PROF. BIRCH: Hm, your bag seems to be\n"
+	.string "full!\p"
+	.string "Make some room and come back to me.$"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_22:
 # 1838 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "PROF. BIRCH: Of course, lots of other\n"
 	.string "Pokémon can Mega Evolve too, so try to\l"
@@ -4901,8 +4955,15 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_21:
 	.string "them - though as a child, I'm not sure\l"
 	.string "how you could get the needed coins.$"
 
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMegaStone_Text_23:
+# 1851 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	.string "PROF. BIRCH: Right, of course!\p"
+	.string "Then you should take this\n"
+	.string "{STR_VAR_1} to Mega Evolve your\l"
+	.string "starter.$"
+
 Common_EventScript_LevelCapSync_Report_Text_0:
-# 2098 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 2116 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Your level cap has been restored to\n"
 	.string "{STR_VAR_1}.$"
 

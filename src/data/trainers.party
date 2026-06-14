@@ -6030,7 +6030,7 @@ Adamant Nature
 - Power Gem  
 
 
-=== TRAINER_MOLLIE === /* Route 133 */ /* TO BE ADDED */
+=== TRAINER_MOLLIE === /* Route 133 */
 Name: MOLLIE
 Class: Expert
 Pic: Expert F
@@ -6039,13 +6039,35 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Whiscash
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tangrowth  
+Ability: Regenerator  
+Level: 70
+Tera Type: Grass  
+IVs: 0 Atk  
+- Ancient Power  
+- Focus Blast  
+- Energy Ball  
+- Morning Sun  
 
-Meditite
-Level: 33
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Arboliva @ Ganlon Berry  
+Ability: Harvest  
+Level: 70
+Tera Type: Grass  
+IVs: 0 Atk  
+- Strength Sap  
+- Mirror Coat  
+- Giga Drain  
+- Pollen Puff  
+
+Togekiss  
+Ability: Serene Grace 
+Level: 70 
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Ancient Power  
+- Soft-Boiled  
+- Dazzling Gleam  
+- Aura Sphere  
 
 === TRAINER_GARRET === /* S.S. Tidal */ /* TO BE ADDED */
 Name: GARRET
@@ -10876,7 +10898,7 @@ Shroomish
 Level: 9
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_GEORGIA === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_GEORGIA === /* Trick House 2 */ 
 Name: GEORGIA
 Class: School Kid
 Pic: School Kid F
@@ -10885,13 +10907,44 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Shroomish
-Level: 16
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Beautifly
-Level: 16
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Espurr  
+Ability: Infiltrator  
+Level: 45
+- Fake Out  
+- Protect  
+- Attract  
+- Toxic  
+
+Minccino @ King's Rock  
+Ability: Skill Link  
+Level: 45
+EVs: 252 Spe  
+Jolly Nature  
+- Bullet Seed  
+- Tail Slap  
+- Triple Axel  
+- Rock Blast  
+
+Braixen  
+Ability: Magician  
+Level: 43
+IVs: 0 Atk  
+- Encore  
+- Heat Wave  
+- Ally Switch  
+- Attract  
+
+Popplio @ Bright Powder  
+Ability: Liquid Voice  
+Level: 45
+IVs: 0 Atk  
+- Encore  
+- Scald  
+- Captivate  
+- Double Team  
+
+
 
 === TRAINER_KAREN_2 === /* Route */
 Name: KAREN
@@ -11339,8 +11392,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Rapidash-Galar @ Scope Lens  
 Ability: Misty Surge  
-Tera Type: Psychic  
-EVs: 64 Atk / 128 Spe
+Tera Type: Psychic  /* EVs: 64 Atk / 128 Spe */
+Jolly Nature
 Level: 35
 - Play Rough  
 - Psycho Cut  
@@ -11350,7 +11403,7 @@ Level: 35
 Sylveon (F) @ Light Clay  
 Ability: Pixilate  
 Tera Type: Fairy  
-EVs: 192 HP / 128 SpA
+EVs: 96 HP / 0 SpA
 IVs: 0 Atk  
 Level: 35
 - Mystical Fire  
@@ -11361,7 +11414,7 @@ Level: 35
 Gardevoir (F)  
 Ability: Synchronize  
 Tera Type: Psychic  
-EVs: 128 HP / 32 Def / 128 SpA  /* Modest Nature  */
+EVs: 128 HP / 0 Def / 0 SpA  /* Modest Nature  */
 IVs: 0 Atk  
 Level: 35
 - Alluring Voice  
@@ -11378,15 +11431,14 @@ Jolly Nature
 Level: 35
 - Triple Axel  
 - Fake Out  
-- Nuzzle  
+- Spark  
 - Present  
 
 Milotic (F)  
 Ability: Competitive  
 Shiny: Yes  
 Tera Type: Water  
-EVs: 64 HP / 128 SpA  
-Modest Nature  
+EVs: 0 HP / 0 SpA  
 IVs: 0 Atk  
 Level: 35
 - Alluring Voice  
@@ -13914,7 +13966,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Cyclizar  
-Level: 34
+Level: 32
 Ability: Shed Skin  
 Tera Type: Dragon  
 - Shed Tail  
@@ -13932,7 +13984,7 @@ Tera Type: Electric
 - Flame Charge  
 
 Graveler @ Custap Berry  
-Level: 34
+Level: 33
 Ability: Sturdy  
 Tera Type: Rock  
 - Body Press  
@@ -18234,7 +18286,7 @@ Tera Type: Steel
 - Fake Out  
 
 
-=== TRAINER_CONOR === /* Route 133 */ /* TO BE ADDED */
+=== TRAINER_CONOR === /* Route 133 */ 
 Name: CONOR
 Class: Expert
 Pic: Expert M
@@ -18243,13 +18295,36 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Chinchou
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hariyama
-Level: 33
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Noctowl  
+Ability: Mind's Eye
+Level: 70
+Tera Type: Normal  
+IVs: 0 Atk  
+- Air Slash 
+- Extrasensory  
+- Hyper Voice 
+- Roost  
+
+Inteleon  
+Ability: Sniper  
+Level: 70
+Tera Type: Water  
+IVs: 0 Atk  
+- Snipe Shot  
+- Air Slash  
+- Ice Beam  
+- Vacuum Wave  
+
+
+Sirfetch’d  
+Ability: Steadfast  
+Level: 70
+Tera Type: Fighting  
+- Sacred Sword  
+- First Impression  
+- Counter  
+- Retaliate  
 
 === TRAINER_EDWIN_1 === /* Route 110 */ 
 Name: EDWIN
@@ -22794,13 +22869,6 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wurmple  
-Ability: Shield Dust  
-Level: 10
-- String Shot  
-- Bug Bite  
-- Tackle  
-
 Burmy  
 Ability: Shed Skin  
 Level: 10
@@ -22809,6 +22877,20 @@ Tera Type: Bug
 - String Shot  
 - Tackle  
 - Bug Bite  
+
+Weedle  
+Ability: Shield Dust  
+Level: 10
+- Poison Sting  
+- Bug Bite  
+- String Shot
+
+Wurmple  
+Ability: Shield Dust  
+Level: 10
+- String Shot  
+- Bug Bite  
+- Tackle  
 
 Spinarak  
 Ability: Sniper  
@@ -29632,36 +29714,26 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Chansey
-Level: 42
+Level: 12
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Light Screen
-- Sing
-- Skill Swap
-- Focus Punch
+- Knock Off
 
-Slaking @ Sitrus Berry
-Level: 42
+Blissey
+Level: 12
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Blizzard
-- Shadow Ball
-- Double Edge
-- Fire Blast
+- Knock Off
 
-Spinda
-Level: 43
+Shieldon @ Eviolite
+Level: 12
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Teeter Dance
-- Skill Swap
-- Facade
-- Hypnosis
+- Tackle
 
-Slaking @ Sitrus Berry
-Level: 45
+Raticate-Alola @ Eviolite
+Level: 12
+Modest Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Flamethrower
-- Thunderbolt
-- Shadow Ball
+- Tackle
+
 
 === TRAINER_NORMAN_3 === /* Route */
 Name: NORMAN

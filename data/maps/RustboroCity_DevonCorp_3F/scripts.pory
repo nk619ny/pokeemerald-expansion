@@ -351,8 +351,8 @@ script RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone {
 	if(!checkitem(ITEM_SCRAFTINITE)) 			{dynmultipush("Scraftinite",ITEM_SCRAFTINITE)}
 	if(!checkitem(ITEM_HAWLUCHANITE)) 		{dynmultipush("Hawluchanite",ITEM_HAWLUCHANITE)}
 	if(!checkitem(ITEM_FALINKSITE)) 			{dynmultipush("Falinksite",ITEM_FALINKSITE)}
-	if(!checkitem(ITEM_RAICHUNITE_X)) 		{dynmultipush("Raichunite X",ITEM_RAICHUNITE_X)}
-	if(!checkitem(ITEM_RAICHUNITE_Y)) 			{dynmultipush("Raichunite Y",ITEM_RAICHUNITE_Y)}
+	//if(!checkitem(ITEM_RAICHUNITE_X)) 		{dynmultipush("Raichunite X",ITEM_RAICHUNITE_X)}
+	//if(!checkitem(ITEM_RAICHUNITE_Y)) 			{dynmultipush("Raichunite Y",ITEM_RAICHUNITE_Y)}
 	if(!checkitem(ITEM_MEOWSTICITE)) 		{dynmultipush("Meowsticite",ITEM_MEOWSTICITE)}
 	if(!checkitem(ITEM_MACHAMPITE)) 		{dynmultipush("Machampite",ITEM_MACHAMPITE)}
 	if(!checkitem(ITEM_VIKAVOLITE)) 		{dynmultipush("Vikavolite",ITEM_VIKAVOLITE)}

@@ -444,7 +444,12 @@ script MauvilleCity_EventScript_Temporary{
 	//setflag(FLAG_MIRAGE_ISLAND_VISIBLE)
 	//additem(ITEM_TM_THUNDER_PUNCH,-1)
 	//additem(ITEM_TM_ICE_PUNCH,-1)
-	//givemon(SPECIES_ELECTABUZZ,80,,,,0,,,,,,,,,,,,,,MOVE_BLOCK)
+	givemon(SPECIES_ELECTABUZZ,15,ITEM_EVIOLITE,,,0,,,,,,,,,,,,,,MOVE_BLOCK,MOVE_THUNDER_PUNCH,MOVE_ICE_PUNCH)
+	givemon(SPECIES_MAGMAR,15,ITEM_EVIOLITE,,,0,,,,,,,,,,,,,,MOVE_BLOCK,MOVE_THUNDER_PUNCH,MOVE_ICE_PUNCH)
+	givemon(SPECIES_FURRET,15,,,,0,,,,,,,,,,,,,,MOVE_BLOCK,MOVE_COVET,MOVE_DRAIN_PUNCH)
+	givemon(SPECIES_LINOONE,15,,,,0,,,,,,,,,,,,,,MOVE_BLOCK,MOVE_THIEF,MOVE_DRAIN_PUNCH)
+	trainerbattle_no_intro(TRAINER_NORMAN_2,LavaridgeTown_Gym_1F_Text_FlanneryDefeat)
+
 	//givemon(SPECIES_JYNX,80,,,,0,,,,,,,,,,,,,,MOVE_BLOCK)
 	//goto(SkyPillar_Top_EventScript_FusionTutor)
 	//giveitem(ITEM_EXP_CANDY_S)
@@ -955,7 +960,6 @@ script Common_EventScript_RemoveOptionalItems7PreSurf {
 	setflag(FLAG_ITEM_ROUTE_121_REVIVE)
 	setflag(FLAG_ITEM_ROUTE_121_ZINC)
 	
-	//setflag(FLAG_ITEM_ROUTE_121_ZINC) //currently not behind trainer
 	//setflag(FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP)
 	//setflag(FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE)
 	//setflag(FLAG_HIDDEN_ITEM_LILYCOVE_CITY_POKE_BALL)
@@ -1521,7 +1525,6 @@ script MoveTutor_EventScript_TeachPhysicalMove{
 	closemessage
 	msgbox(MoveTutor_Text_BufferWhichMon, MSGBOX_DEFAULT)
 	special(ChooseMonForMoveTutor)
-	waitstate
 	lock
 	faceplayer
 	releaseall
@@ -1668,7 +1671,6 @@ script MoveTutor_EventScript_TeachSpecialMove{
 	closemessage
 	msgbox(MoveTutor_Text_BufferWhichMon, MSGBOX_DEFAULT)
 	special(ChooseMonForMoveTutor)
-	waitstate
 	lock
 	faceplayer
 	releaseall
@@ -1827,7 +1829,6 @@ script MoveTutor_EventScript_TeachStatusMove{
 	closemessage
 	msgbox(MoveTutor_Text_BufferWhichMon, MSGBOX_DEFAULT)
 	special(ChooseMonForMoveTutor)
-	waitstate
 	lock
 	faceplayer
 	releaseall
@@ -1877,7 +1878,6 @@ script PokemonCenter_2F_EventScript_SetHPMenu {
 	msgbox(format("Choose a Pokémon to set damage for."), MSGBOX_DEFAULT)
 	closemessage
 	special(ChoosePartyMon)
-	waitstate
 	if (var(VAR_0x8004) >= 6) {
 		releaseall
 		end
@@ -2163,7 +2163,6 @@ script Common_EventScript_ChangeNature {
 	msgbox(format("Which Pokémon's Nature would you like to change?"), MSGBOX_DEFAULT)
 	closemessage
 	special(ChoosePartyMon)
-	waitstate
 	if (var(VAR_0x8004) >= 6) {
 		releaseall
 		end
@@ -2315,7 +2314,6 @@ script Common_EventScript_ChangeIV {
 	msgbox(format("Which Pokémon's IVs would you like to change?"), MSGBOX_DEFAULT)
 	closemessage
 	special(ChoosePartyMon)
-	waitstate
 	if (var(VAR_0x8004) >= 6) {
 		releaseall
 		end
@@ -2455,7 +2453,6 @@ script Common_EventScript_EliteMoveTutor {
 script EliteMoveTutor_EventScript_ChooseMon {
 	msgbox(EliteMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT)
 	special(ChoosePartyMon)
-	waitstate
 	if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
 		goto(EliteMoveTutor_EventScript_Cancel)
 	}
@@ -2572,7 +2569,6 @@ script Common_EventScript_EggMoveTutor {
 script EggMoveTutor_EventScript_ChooseMon {
 	msgbox(EggMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT)
 	special(ChoosePartyMon)
-	waitstate
 	if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
 		goto(EggMoveTutor_EventScript_Cancel)
 	}

@@ -403,3 +403,9 @@ movement Route101_RivalDeparture {
 	walk_right *  1
 	walk_up * 7
 }
+
+
+script Route101_EventScript_Girl {
+	msgbox(format("Once, a Zigzagoon scared Professor Birch and he dropped his bag of Poké Balls.\pThat reintroduced a few species to this area, and now if you look carefully you can find them in the grass."), MSGBOX_NPC)
+	end
+}

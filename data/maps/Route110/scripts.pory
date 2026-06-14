@@ -141,6 +141,7 @@ Route110_EventScript_NoRecordSet::
 	releaseall
 	end
 
+/*
 Route110_EventScript_ChallengeGuy::
 	lock
 	faceplayer
@@ -150,6 +151,7 @@ Route110_EventScript_ChallengeGuy::
 	msgbox Route110_Text_AlwaysAimHigher, MSGBOX_DEFAULT
 	release
 	end
+*/
 
 Route110_EventScript_PlayerNotRidingBike::
 	msgbox Route110_Text_RatedForNumberOfCollisions, MSGBOX_DEFAULT
@@ -1006,6 +1008,7 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "See you again, {PLAYER}{KUN}!$"
 
 `
+const TempVar_CheckCRComplete = VAR_TEMP_0
 
 text Route110_Text_MayHiLetsRegister {
 	format("May: Let's register each other in your POKéNAV so that we can contact one another anytime!")
@@ -1192,4 +1195,115 @@ text Route110_Text_ChuckDefeat {
 
 text Route110_Text_ChuckPostBattle {
     format("If you ever want extra protection, I offer a fee for my services.")
+}
+
+script Route110_EventScript_ResetCyclingRoad {
+	cleartrainerflag(TRAINER_JACOB)
+	cleartrainerflag(TRAINER_ANTHONY)
+	cleartrainerflag(TRAINER_BENJAMIN_1)
+	cleartrainerflag(TRAINER_ABIGAIL_1)
+	cleartrainerflag(TRAINER_JASMINE)
+	//cleartrainerflag(TRAINER_ALYSSA)
+	end
+}
+
+script Route110_EventScript_CheckCyclingRoadDoneForReset{
+	lock
+	goto_if_not_defeated(TRAINER_JACOB, Route110_EventScript_ResetCyclingRoad)
+	goto_if_not_defeated(TRAINER_ANTHONY, Route110_EventScript_ResetCyclingRoad)
+	goto_if_not_defeated(TRAINER_BENJAMIN_1, Route110_EventScript_ResetCyclingRoad)
+	goto_if_not_defeated(TRAINER_ABIGAIL_1, Route110_EventScript_ResetCyclingRoad)
+	goto_if_not_defeated(TRAINER_JASMINE, Route110_EventScript_ResetCyclingRoad)
+	//goto_if_not_defeated(TRAINER_ALYSSA, Route110_EventScript_ResetCyclingRoad)
+	return
+}
+
+script Route110_EventScript_CheckCyclingRoadDone{
+	lock
+	goto_if_not_defeated(TRAINER_JACOB, Route110_EventScript_CheckCyclingRoadUnfinished)
+	goto_if_not_defeated(TRAINER_ANTHONY, Route110_EventScript_CheckCyclingRoadUnfinished)
+	goto_if_not_defeated(TRAINER_BENJAMIN_1, Route110_EventScript_CheckCyclingRoadUnfinished)
+	goto_if_not_defeated(TRAINER_ABIGAIL_1, Route110_EventScript_CheckCyclingRoadUnfinished)
+	goto_if_not_defeated(TRAINER_JASMINE, Route110_EventScript_CheckCyclingRoadUnfinished)
+	//goto_if_not_defeated(TRAINER_ALYSSA, Route110_EventScript_CheckCyclingRoadUnfinished)
+	goto_if_set(FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE, Route110_EventScript_CheckCyclingRoadUnfinished)
+	goto_if_unset(FLAG_BADGE03_GET, Route110_EventScript_GiveCyclingRoadHeartScale)
+	releaseall
+	end
+}
+
+script Route110_EventScript_CheckCyclingRoadUnfinished {
+	releaseall
+	end
+}
+
+script Route110_EventScript_GiveCyclingRoadHeartScale {
+	lock
+	applymovement(LOCALID_CHALLENGE_BIKER, Common_Movement_WalkInPlaceRight)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+	waitmovement(0)
+	msgbox(format("Wow, you defeated every trainer on cycling road in one go!\pAs a reward for completing the Cycling Road Challenge, please take this."), MSGBOX_NPC)
+	closemessage
+	giveitem(ITEM_HEART_SCALE)
+	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+	setflag(FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE)
+	waitfanfare
+	releaseall
+	end
+}
+
+script Route110_EventScript_ChallengeGuy {
+	lock
+	faceplayer
+	if(flag(FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE)){
+		msgbox(format("Excellent job cycling and battling!"), MSGBOX_NPC)
+		release
+		end
+	}
+	if(flag(FLAG_BADGE03_GET)){
+		msgbox(format("Unfortunately, we're already had another trainer win the Cycling Road Challenge."), MSGBOX_NPC)
+		release
+		end
+	}
+	goto(Route110_EventScript_CheckCyclingRoadDoneDialogue)
+}
+
+
+
+script Route110_EventScript_CheckCyclingRoadDoneDialogue{
+	lock
+	goto_if_not_defeated(TRAINER_JACOB, Route110_EventScript_CyclingRoadUnfinishedDialogue)
+	goto_if_not_defeated(TRAINER_ANTHONY, Route110_EventScript_CyclingRoadUnfinishedDialogue)
+	goto_if_not_defeated(TRAINER_BENJAMIN_1, Route110_EventScript_CyclingRoadUnfinishedDialogue)
+	goto_if_not_defeated(TRAINER_ABIGAIL_1, Route110_EventScript_CyclingRoadUnfinishedDialogue)
+	goto_if_not_defeated(TRAINER_JASMINE, Route110_EventScript_CyclingRoadUnfinishedDialogue)
+	//goto_if_not_defeated(TRAINER_ALYSSA, Route110_EventScript_CyclingRoadUnfinishedDialogue)
+	msgbox(format("Wow, you defeated every trainer on cycling road in one go!\pAs a reward for completing the Cycling Road Challenge, please take this."), MSGBOX_NPC)
+	closemessage
+	giveitem(ITEM_HEART_SCALE)
+	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+	setflag(FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE)
+	waitfanfare
+	releaseall
+	end
+}
+
+script Route110_EventScript_CyclingRoadUnfinishedDialogue{
+	lock
+	msgbox(format("It looks like you haven't beaten all the trainers on Cycling Road yet.\pIf you can beat them all in one trip, you'll receive a special reward!"), MSGBOX_NPC)
+	release
+	end
+}
+
+script Route110_EventScript_CyclingRoadEntranceIntro{
+	if(!flag(FLAG_TEMP_5) && !flag(FLAG_SYS_CYCLING_ROAD)){
+		msgbox(format("Welcome to Cycling Road!\NWe have two rules you need to be aware of.\pFirst, you must remain on your bike at all times.\pSecond, use of any mobile PC devices is strictly prohibited. Distracted driving is unsafe."), MSGBOX_NPC)
+		closemessage
+		if(!flag(FLAG_BADGE03_GET) && !flag(FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE)){
+			msgbox(format("Additionally, the Cycling Road challenge is currently going on.\pThe first trainer to defeat all trainers on Cycling Road in a single trip will receive a special reward.\pBut be warned, if you leave before defeating all the other trainers, you will have to beat them again to claim the prize."), MSGBOX_NPC)
+			closemessage
+		}
+	}
+	setflag(FLAG_TEMP_5)
+	return
 }

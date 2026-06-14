@@ -730,56 +730,46 @@ RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_49:
 	compare VAR_RESULT, 0
 	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_53
 RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_52:
-	checkitem ITEM_RAICHUNITE_X
+	checkitem ITEM_MEOWSTICITE
 # 0 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_56
 RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_55:
-	checkitem ITEM_RAICHUNITE_Y
+	checkitem ITEM_MACHAMPITE
 # 0 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_59
 RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_58:
-	checkitem ITEM_MEOWSTICITE
+	checkitem ITEM_VIKAVOLITE
 # 0 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_62
 RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_61:
-	checkitem ITEM_MACHAMPITE
-# 0 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_65
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_64:
-	checkitem ITEM_VIKAVOLITE
-# 0 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_68
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_67:
 # 359 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_22, ITEM_NONE
+	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_20, ITEM_NONE
 # 361 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 362 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_23, MSGBOX_DEFAULT
+	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_21, MSGBOX_DEFAULT
 # 363 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	dynmultistack 25, 2, FALSE, 5, 0, ITEM_SABLENITE, DYN_MULTICHOICE_CB_NONE
 # 364 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	compare VAR_RESULT, ITEM_NONE
-	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_71
+	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_65
 # 370 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	compare VAR_RESULT, 127
-	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_72
+	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_66
 # 377 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	copyvar VAR_TEMP_5, VAR_RESULT
 # 378 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	checkitemspace VAR_TEMP_5
 # 379 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	compare VAR_RESULT, FALSE
-	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_77
+	goto_if_eq RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_71
 # 385 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	bufferitemname STR_VAR_1, VAR_TEMP_5
 # 386 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_26, MSGBOX_NPC
+	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_24, MSGBOX_NPC
 # 387 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 388 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -893,51 +883,41 @@ RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_53:
 	goto RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_52
 
 RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_56:
-# 354 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_17, ITEM_RAICHUNITE_X
+# 356 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_17, ITEM_MEOWSTICITE
 	goto RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_55
 
 RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_59:
-# 355 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_18, ITEM_RAICHUNITE_Y
+# 357 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_18, ITEM_MACHAMPITE
 	goto RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_58
 
 RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_62:
-# 356 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_19, ITEM_MEOWSTICITE
+# 358 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
+	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_19, ITEM_VIKAVOLITE
 	goto RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_61
 
 RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_65:
-# 357 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_20, ITEM_MACHAMPITE
-	goto RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_64
-
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_68:
-# 358 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	dynmultipush RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_21, ITEM_VIKAVOLITE
-	goto RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_67
-
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_71:
 # 365 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_24, MSGBOX_NPC
+	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_22, MSGBOX_NPC
 # 366 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 367 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	releaseall
 	end
 
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_72:
+RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_66:
 # 371 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_24, MSGBOX_NPC
+	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_22, MSGBOX_NPC
 # 372 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 373 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	releaseall
 	end
 
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_77:
+RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_71:
 # 380 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_25, MSGBOX_NPC
+	msgbox RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_23, MSGBOX_NPC
 # 381 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	closemessage
 # 382 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
@@ -1023,46 +1003,38 @@ RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_16:
 	.string "Falinksite$"
 
 RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_17:
-# 354 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	.string "Raichunite X$"
-
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_18:
-# 355 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
-	.string "Raichunite Y$"
-
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_19:
 # 356 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "Meowsticite$"
 
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_20:
+RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_18:
 # 357 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "Machampite$"
 
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_21:
+RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_19:
 # 358 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "Vikavolite$"
 
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_22:
+RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_20:
 # 359 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "Nevermind$"
 
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_23:
+RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_21:
 # 362 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "MR. STONE: Which Mega Stone would you\n"
 	.string "like?$"
 
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_24:
+RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_22:
 # 365 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "MR. STONE: Very well.\p"
 	.string "Come back when you've decided on a Mega\n"
 	.string "Stone.$"
 
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_25:
+RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_23:
 # 380 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "MR. STONE: Your bag seems to be full.\p"
 	.string "Make some room and come back to me.$"
 
-RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_26:
+RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone_Text_24:
 # 386 "data/maps/RustboroCity_DevonCorp_3F/scripts.pory"
 	.string "MR. STONE: Wonderful. I hope this\n"
 	.string "{STR_VAR_1} helps bring out the\l"

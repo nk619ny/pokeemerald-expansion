@@ -285,625 +285,617 @@ MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade::
 # 223 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special ChoosePartyMon
 # 224 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
-	waitstate
-# 225 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_2
-# 233 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 232 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	copyvar VAR_0x8005, VAR_0x8004
-# 234 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 233 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	specialvar VAR_TEMP_5, GetTradeSpecies
-# 235 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 234 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_0x8003, 37
-# 236 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 235 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	switch VAR_TEMP_5
-# 237 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 236 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_DONPHAN, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_6
-# 239 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 238 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_VOLCARONA, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_7
-# 241 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 240 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_DELIBIRD, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_8
-# 243 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 242 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_HARIYAMA, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_9
-# 245 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 244 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_HYDREIGON, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_10
-# 247 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 246 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_TYRANITAR, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_11
-# 249 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 248 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_GARDEVOIR, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_12
-# 251 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 250 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_GALLADE, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_13
-# 253 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 252 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_VIRIZION, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_14
-# 255 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 254 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_TERRAKION, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_15
-# 257 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 256 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_COBALION, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_16
-# 259 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 258 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_AMOONGUSS, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 260 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 259 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_SALAMENCE, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 261 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 260 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_JIGGLYPUFF, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 262 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 261 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_WIGGLYTUFF, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 263 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 262 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_MISDREAVUS, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 264 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 263 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_MISMAGIUS, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 265 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 264 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_MAGNETON, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 266 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 265 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_MAGNEZONE, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 267 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 266 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_SUICUNE, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 268 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 267 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_ENTEI, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 269 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 268 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_RAIKOU, MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17
-# 272 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 271 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroNotAParadox
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4:
-# 274 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 273 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferspeciesname STR_VAR_3, VAR_TEMP_8
-# 275 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 274 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special BufferMonNickname
-# 276 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 275 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 277 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 276 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_Text_0, MSGBOX_YESNO
-# 278 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 277 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_20
-# 285 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 284 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_TURO_STATE, 2
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_23
-# 302 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 301 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	copyvar VAR_0x8008, VAR_TEMP_8
-# 303 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 302 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special CreateInGameTradeFutureParadoxPokemon
-# 304 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 303 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special DoInGameTradeScene
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_19:
-# 307 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
-	waitstate
-# 308 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 306 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_2:
-# 226 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 225 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 227 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 226 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWithPokemon
-# 228 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 227 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 230 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 229 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_6:
-# 238 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 237 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_TREADS
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_7:
-# 240 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 239 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_MOTH
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_8:
-# 242 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 241 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_BUNDLE
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_9:
-# 244 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 243 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_HANDS
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_10:
-# 246 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 245 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_JUGULIS
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_11:
-# 248 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 247 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_THORNS
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_12:
-# 250 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 249 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_VALIANT
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_13:
-# 252 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 251 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_VALIANT
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_14:
-# 254 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 253 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_LEAVES
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_15:
-# 256 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 255 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_BOULDER
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_16:
-# 258 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 257 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_IRON_CROWN
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_17:
-# 270 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 269 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroTrySada
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_20:
-# 279 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 278 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackChangedMind
-# 280 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 279 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	closemessage
-# 281 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 280 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_23:
-# 286 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 285 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 287 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 286 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_Text_1, MSGBOX_YESNO
-# 288 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 287 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_26
-# 295 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 294 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	copyvar VAR_0x8008, VAR_TEMP_8
-# 296 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 295 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TURO_STATE, 3
-# 297 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 296 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special CreateInGameTradeFutureParadoxPokemon
-# 298 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 297 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special DoInGameTradeScene
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_19
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_26:
-# 289 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 288 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackChangedMind
-# 290 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 289 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	closemessage
-# 291 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 290 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroNotAParadox::
-# 313 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 311 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 314 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 312 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_TuroNotAParadox, MSGBOX_NPC
-# 315 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 313 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 317 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 315 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroTrySada::
-# 322 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 320 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 323 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 321 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_TuroTrySada, MSGBOX_NPC
-# 324 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 322 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 326 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 324 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada::
-# 343 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 341 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 344 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 342 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	faceplayer
-# 345 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 343 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmovement 0
-# 346 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 344 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	switch VAR_SADA_STATE
-# 347 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 345 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 0, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_3
-# 352 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 350 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 1, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_4
-# 355 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 353 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 2, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_5
-# 358 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 356 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 3, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_6
-# 361 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 359 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 4, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_7
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_1:
-# 366 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 364 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 367 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 365 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_3:
-# 348 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 346 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaFirstMeeting, MSGBOX_NPC
-# 349 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 347 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_SADA_STATE, 1
-# 350 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 348 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_1
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_4:
-# 353 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 351 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_1
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_5:
-# 356 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 354 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_1
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_6:
-# 359 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 357 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence3
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_1
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_7:
-# 362 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 360 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSada_1
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1::
-# 372 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 370 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 373 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 371 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaAreYouInterested, MSGBOX_YESNO
-# 374 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 372 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1_2
-# 382 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 380 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1_1:
-# 384 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 382 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 385 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 383 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1_2:
-# 375 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 373 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaProveYourself, MSGBOX_YESNO
-# 376 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 374 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1_5
-# 379 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 377 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWhenReady
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1_1
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1_5:
-# 377 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 375 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaBattle
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence1_1
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaBattle::
-# 390 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 388 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	trainerbattle_single TRAINER_SADA_1, MossdeepCity_SpaceCenter_2F_R_Text_SadaIntro, MossdeepCity_SpaceCenter_2F_R_Text_SadaDefeated, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2
 	return
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2::
-# 394 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 392 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_SADA_STATE, 2
-# 395 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 393 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon, MSGBOX_YESNO
-# 396 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 394 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2_2
-# 399 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 397 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2_1:
-# 401 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 399 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 402 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 400 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2_2:
-# 397 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 395 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2_1
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence3::
-# 407 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 405 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto_if_set FLAG_IS_CHAMPION, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence3_2
-# 411 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 409 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaEnjoyParadox, MSGBOX_NPC
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence3_1:
-# 413 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 411 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 414 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 412 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence3_2:
-# 408 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 406 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_SADA_STATE, 4
-# 409 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 407 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence3_1
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4::
-# 419 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 417 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 420 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 418 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaChampionNow, MSGBOX_YESNO
-# 421 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 419 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 422 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 420 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4_2
-# 425 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 423 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWhenReady
-# 426 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 424 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4_1:
-# 428 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 426 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4_2:
-# 423 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 421 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	trainerbattle_single TRAINER_SADA_2, MossdeepCity_SpaceCenter_2F_R_Text_SadaNotLikeLastTime, MossdeepCity_SpaceCenter_2F_R_Text_SadaDefeated, MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence5
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4_1
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence5::
-# 433 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 431 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_SADA_STATE, 5
-# 434 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 432 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon, MSGBOX_YESNO
-# 435 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 433 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence5_2
-# 438 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 436 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence5_1:
-# 440 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 438 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 441 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 439 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence5_2:
-# 436 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 434 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence5_1
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade::
-# 490 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 488 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 491 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 489 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special ChoosePartyMon
-# 492 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
-	waitstate
-# 493 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 490 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_2
-# 500 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 497 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	copyvar VAR_0x8005, VAR_0x8004
-# 501 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 498 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	specialvar VAR_TEMP_5, GetTradeSpecies
-# 502 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 499 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_0x8003, 36
-# 503 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 500 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	switch VAR_TEMP_5
-# 504 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 501 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_DONPHAN, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_6
-# 506 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 503 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_VOLCARONA, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_7
-# 508 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 505 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_AMOONGUSS, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_8
-# 510 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 507 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_SALAMENCE, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_9
-# 512 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 509 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_JIGGLYPUFF, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_10
-# 513 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 510 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_WIGGLYTUFF, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_10
-# 515 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 512 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_MISDREAVUS, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_11
-# 516 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 513 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_MISMAGIUS, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_11
-# 518 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 515 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_MAGNETON, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_12
-# 519 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 516 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_MAGNEZONE, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_12
-# 521 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 518 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_SUICUNE, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_13
-# 523 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 520 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_ENTEI, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_14
-# 525 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 522 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_RAIKOU, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_15
-# 527 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 524 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_HYDREIGON, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16
-# 528 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 525 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_DELIBIRD, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16
-# 529 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 526 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_HARIYAMA, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16
-# 530 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 527 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_TYRANITAR, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16
-# 531 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 528 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_VIRIZION, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16
-# 532 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 529 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_TERRAKION, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16
-# 533 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 530 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_COBALION, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16
-# 534 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 531 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_GARDEVOIR, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16
-# 535 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 532 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case SPECIES_GALLADE, MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16
-# 538 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 535 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaNotAParadox
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4:
-# 540 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 537 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferspeciesname STR_VAR_3, VAR_TEMP_8
-# 541 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 538 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special BufferMonNickname
-# 542 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 539 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 543 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 540 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_Text_0, MSGBOX_YESNO
-# 544 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 541 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_19
-# 550 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 547 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_SADA_STATE, 2
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_22
-# 567 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 564 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	copyvar VAR_0x8008, VAR_TEMP_8
-# 568 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 565 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special CreateInGameTradePastParadoxPokemon
-# 569 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 566 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special DoInGameTradeScene
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_18:
-# 572 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
-	waitstate
-# 573 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 569 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_2:
-# 494 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 491 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 495 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 492 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon
-# 496 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 493 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 497 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 494 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_6:
-# 505 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 502 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_GREAT_TUSK
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_7:
-# 507 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 504 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_SLITHER_WING
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_8:
-# 509 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 506 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_BRUTE_BONNET
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_9:
-# 511 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 508 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_ROARING_MOON
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_10:
-# 514 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 511 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_SCREAM_TAIL
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_11:
-# 517 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 514 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_FLUTTER_MANE
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_12:
-# 520 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 517 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_SANDY_SHOCKS
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_13:
-# 522 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 519 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_WALKING_WAKE
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_14:
-# 524 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 521 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_GOUGING_FIRE
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_15:
-# 526 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 523 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_8, SPECIES_RAGING_BOLT
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_16:
-# 536 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 533 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaTryTuro
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_4
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_19:
-# 545 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 542 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackChangedMind
-# 546 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 543 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	closemessage
-# 547 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 544 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_22:
-# 551 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 548 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 552 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 549 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_Text_1, MSGBOX_YESNO
-# 553 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 550 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_25
-# 560 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 557 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	copyvar VAR_0x8008, VAR_TEMP_8
-# 561 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 558 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_SADA_STATE, 3
-# 562 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 559 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special CreateInGameTradePastParadoxPokemon
-# 563 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 560 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	special DoInGameTradeScene
 	goto MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_18
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_25:
-# 554 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 551 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackChangedMind
-# 555 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 552 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	closemessage
-# 556 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 553 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaTryTuro::
-# 578 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 574 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 579 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 575 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaTryTuro, MSGBOX_NPC
-# 580 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 576 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	closemessage
-# 581 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 577 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaNotAParadox::
-# 590 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 586 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	lockall
-# 591 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 587 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_Text_SadaNotAParadox, MSGBOX_NPC
-# 592 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 588 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	closemessage
-# 593 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 589 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
@@ -984,394 +976,394 @@ MossdeepCity_SpaceCenter_2F_R_NewFossilScript_40:
 	compare VAR_RESULT, TRUE
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_NewFossilScript_44
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_43:
-# 623 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 619 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_15, 15
-# 624 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 620 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_16
-# 625 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 621 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultistack 25, 2, FALSE, 5, 1, 0, DYN_MULTICHOICE_CB_NONE
-# 626 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 622 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	copyvar VAR_TEMP_4, VAR_RESULT
-# 627 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 623 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	switch VAR_TEMP_4
-# 628 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 624 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 0, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_48
-# 630 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 626 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 1, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_49
-# 632 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 628 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 2, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_50
-# 634 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 630 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 3, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_51
-# 636 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 632 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 4, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_52
-# 638 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 634 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 5, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_53
-# 640 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 636 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 6, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_54
-# 642 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 638 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 7, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_55
-# 644 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 640 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 8, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_56
-# 646 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 642 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 9, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_57
-# 648 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 644 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 10, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_58
-# 650 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 646 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 11, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_59
-# 651 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 647 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 12, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_59
-# 652 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 648 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 13, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_59
-# 653 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 649 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 14, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_59
-# 657 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 653 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 15, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_60
-# 658 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 654 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 127, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_60
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46:
-# 661 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 657 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_18, MSGBOX_YESNO
-# 662 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 658 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq MossdeepCity_SpaceCenter_2F_R_NewFossilScript_61
-# 666 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 662 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	switch VAR_TEMP_4
-# 667 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 663 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 0, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_66
-# 671 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 667 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 1, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_67
-# 675 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 671 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 2, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_68
-# 679 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 675 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 3, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_69
-# 683 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 679 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 4, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_70
-# 687 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 683 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 5, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_71
-# 691 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 687 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 6, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_72
-# 695 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 691 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 7, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_73
-# 699 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 695 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 8, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_74
-# 703 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 699 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 9, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_75
-# 707 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 703 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case 10, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_76
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64:
-# 712 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 708 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_19, MSGBOX_NPC
-# 713 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 709 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 714 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 710 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	delay 60
-# 715 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 711 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 716 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 712 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferspeciesname STR_VAR_2, VAR_TEMP_6
-# 717 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 713 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	givemon VAR_TEMP_6, 5, 0, 0, 0
-# 718 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 714 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	switch VAR_RESULT
-# 719 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 715 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case MON_GIVEN_TO_PARTY, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_79
-# 725 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 721 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case MON_GIVEN_TO_PC, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_80
-# 731 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 727 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	case MON_CANT_GIVE, MossdeepCity_SpaceCenter_2F_R_NewFossilScript_81
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_81:
-# 733 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 729 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_22
-# 734 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 730 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	giveitem VAR_TEMP_2
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_77:
-# 736 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 732 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 737 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 733 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_2:
-# 608 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 604 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_0, 0
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_1
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_5:
-# 609 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 605 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_1, 1
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_4
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_8:
-# 610 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 606 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_2, 2
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_7
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_11:
-# 611 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 607 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_3, 3
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_10
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_14:
-# 612 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 608 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_4, 4
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_13
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_17:
-# 613 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 609 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_5, 5
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_16
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_20:
-# 614 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 610 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_6, 6
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_19
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_23:
-# 615 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 611 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_7, 7
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_22
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_26:
-# 616 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 612 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_8, 8
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_25
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_29:
-# 617 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 613 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_9, 9
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_28
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_32:
-# 618 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 614 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_10, 10
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_31
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_35:
-# 619 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 615 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_11, 11
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_34
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_38:
-# 620 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 616 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_12, 12
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_37
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_41:
-# 621 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 617 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_13, 13
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_40
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_44:
-# 622 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 618 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	dynmultipush MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_14, 14
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_43
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_48:
-# 629 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 625 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_OLD_AMBER
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_49:
-# 631 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 627 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_HELIX_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_50:
-# 633 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 629 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_DOME_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_51:
-# 635 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 631 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_ROOT_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_52:
-# 637 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 633 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_CLAW_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_53:
-# 639 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 635 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_ARMOR_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_54:
-# 641 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 637 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_SKULL_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_55:
-# 643 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 639 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_JAW_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_56:
-# 645 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 641 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_SAIL_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_57:
-# 647 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 643 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_PLUME_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_58:
-# 649 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 645 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	bufferitemname STR_VAR_1, ITEM_COVER_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_59:
-# 654 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 650 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_17
-# 655 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 651 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	closemessage
-# 656 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 652 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_60:
-# 659 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 655 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_46
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_61:
-# 663 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 659 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	goto MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript
 	return
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_66:
-# 668 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 664 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_OLD_AMBER
-# 669 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 665 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_AERODACTYL
-# 670 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 666 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_OLD_AMBER
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_67:
-# 672 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 668 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_HELIX_FOSSIL
-# 673 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 669 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_OMANYTE
-# 674 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 670 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_HELIX_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_68:
-# 676 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 672 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_DOME_FOSSIL
-# 677 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 673 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_KABUTO
-# 678 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 674 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_DOME_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_69:
-# 680 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 676 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_ROOT_FOSSIL
-# 681 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 677 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_LILEEP
-# 682 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 678 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_ROOT_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_70:
-# 684 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 680 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_CLAW_FOSSIL
-# 685 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 681 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_ANORITH
-# 686 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 682 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_CLAW_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_71:
-# 688 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 684 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_ARMOR_FOSSIL
-# 689 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 685 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_SHIELDON
-# 690 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 686 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_ARMOR_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_72:
-# 692 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 688 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_SKULL_FOSSIL
-# 693 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 689 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_CRANIDOS
-# 694 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 690 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_SKULL_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_73:
-# 696 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 692 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_JAW_FOSSIL
-# 697 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 693 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_TYRUNT
-# 698 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 694 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_JAW_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_74:
-# 700 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 696 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_SAIL_FOSSIL
-# 701 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 697 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_AMAURA
-# 702 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 698 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_SAIL_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_75:
-# 704 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 700 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_PLUME_FOSSIL
-# 705 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 701 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_ARCHEN
-# 706 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 702 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_PLUME_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_76:
-# 708 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 704 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	removeitem ITEM_COVER_FOSSIL
-# 709 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 705 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_TIRTOUGA
-# 710 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 706 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	setvar VAR_TEMP_2, ITEM_COVER_FOSSIL
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_64
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_79:
-# 720 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 716 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 721 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 717 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_20
-# 722 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 718 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitfanfare
-# 723 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 719 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	call NicknamePartyMon
-# 724 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 720 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_21, MSGBOX_NPC
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_77
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_80:
-# 726 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 722 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 727 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 723 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_20
-# 728 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 724 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitfanfare
-# 729 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 725 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	call NicknameBoxMon
-# 730 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 726 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_21, MSGBOX_NPC
 	goto MossdeepCity_SpaceCenter_2F_R_NewFossilScript_77
 
 
 MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript::
-# 743 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 739 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	msgbox MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript_Text_0
-# 744 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 740 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	waitmessage
-# 745 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 741 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	releaseall
 	end
 
@@ -1384,129 +1376,129 @@ MossdeepCity_SpaceCenter_2F_R_EventScript_RevivalScientist_Text_0:
 	.string "locations across the Hoenn region.$"
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_Text_0:
-# 277 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 276 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Turo: You want to send your\n"
 	.string "{STR_VAR_1} to the future, in\l"
 	.string "exchange for an {STR_VAR_3}?$"
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade_Text_1:
-# 287 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 286 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Turo: At the moment, we only have\n"
 	.string "enough power for one pull from the\l"
 	.string "future. Are you sure?$"
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_Text_0:
-# 543 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 540 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: You want to send your\n"
 	.string "{STR_VAR_1} to the past, in\l"
 	.string "exchange for a {STR_VAR_3}?$"
 
 MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade_Text_1:
-# 552 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 549 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: At the moment, we only have\n"
 	.string "enough power for one pull from the\l"
 	.string "past. Are you sure?$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_0:
-# 608 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 604 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Old Amber$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_1:
-# 609 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 605 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Helix Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_2:
-# 610 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 606 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Dome Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_3:
-# 611 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 607 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Root Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_4:
-# 612 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 608 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Claw Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_5:
-# 613 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 609 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Armor Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_6:
-# 614 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 610 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Skull Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_7:
-# 615 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 611 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Jaw Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_8:
-# 616 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 612 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sail Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_9:
-# 617 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 613 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Plume Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_10:
-# 618 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 614 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Cover Fossil$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_11:
-# 619 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 615 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Fossilized Bird$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_12:
-# 620 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 616 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Fossilized Dino$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_13:
-# 621 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 617 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Fossilized Fish$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_14:
-# 622 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 618 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Fossilized Drake$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_15:
-# 623 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 619 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Not Right Now$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_16:
-# 624 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 620 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Do you have a fossil you would like us\n"
 	.string "to revive?$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_17:
-# 654 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 650 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Unfortunately, I can't revive that one,\n"
 	.string "because the fossil is incomplete.$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_18:
-# 661 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 657 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "You want me to revive your\n"
 	.string "{STR_VAR_1}, is that correct?$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_19:
-# 712 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 708 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Okay! This will just take a moment.$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_20:
-# 721 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 717 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Received {STR_VAR_2}!$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_21:
-# 724 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 720 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "It worked! We succesfully revived an\n"
 	.string "ancient Pokémon fossil!\p"
 	.string "I hope you enjoy this prehistoric\n"
 	.string "creature.$"
 
 MossdeepCity_SpaceCenter_2F_R_NewFossilScript_Text_22:
-# 733 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 729 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Something wen't wrong... Please take your fossil back.\pMaybe you should try again later?$"
 
 MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript_Text_0:
-# 743 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 739 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "If you do come across any Pokémon\n"
 	.string "fossils, please bring them to us!\p"
 	.string "I would love a chance to put our new\n"
@@ -1618,7 +1610,7 @@ MossdeepCity_SpaceCenter_2F_R_Text_TuroNotLikeLastTime::
 	.string "I hope you are ready for a challenge!$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_TuroNotAParadox::
-# 330 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 328 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Turo: Unfortunately, I have not\n"
 	.string "discovered a futuristic equivalent for\l"
 	.string "that Pokémon.\p"
@@ -1626,7 +1618,7 @@ MossdeepCity_SpaceCenter_2F_R_Text_TuroNotAParadox::
 	.string "another Pokémon of yours.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_TuroTrySada::
-# 334 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 332 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Turo: Unfortunately, I have not\n"
 	.string "discovered a futuristic equivalent for\l"
 	.string "that Pokémon.\p"
@@ -1635,7 +1627,7 @@ MossdeepCity_SpaceCenter_2F_R_Text_TuroTrySada::
 	.string "some interest in that specimen.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_TuroEnjoyParadox::
-# 338 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 336 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Turo: You now have an extremely rare\n"
 	.string "Pokémon from the future.\p"
 	.string "I hope it brings you a more refined\n"
@@ -1644,17 +1636,17 @@ MossdeepCity_SpaceCenter_2F_R_Text_TuroEnjoyParadox::
 	.string "society is.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaIntro::
-# 445 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 443 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Watch out for our primal\n"
 	.string "strength!$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaDefeated::
-# 449 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 447 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "You've learned something from our\n"
 	.string "ancestors.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaFirstMeeting::
-# 453 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 451 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Good to meet you. I'm Professor Sada.\p"
 	.string "I study Pokémon's past, to learn more\n"
 	.string "about their nature.\p"
@@ -1671,7 +1663,7 @@ MossdeepCity_SpaceCenter_2F_R_Text_SadaFirstMeeting::
 	.string "to scan the timeline.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaAreYouInterested::
-# 457 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 455 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Our time machine is capable of\n"
 	.string "taking a modern Pokémon and scanning\l"
 	.string "the timeline to find one of its\l"
@@ -1679,7 +1671,7 @@ MossdeepCity_SpaceCenter_2F_R_Text_SadaAreYouInterested::
 	.string "Do you want to use the time machine?$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaProveYourself::
-# 461 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 459 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Even if you have a Pokémon whose\n"
 	.string "ancestry we can track, you might not be\l"
 	.string "ready to handle a Paradox Pokémon.\p"
@@ -1692,20 +1684,20 @@ MossdeepCity_SpaceCenter_2F_R_Text_SadaProveYourself::
 	.string "once. Do we have a deal?$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon::
-# 465 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 463 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Okay. If you can hunt down a\n"
 	.string "Pokémon with a counterpart in the past,\l"
 	.string "I can use it to find a new Paradox\l"
 	.string "Pokémon.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWhenReady::
-# 469 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 467 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Fine. If you're bold enough to\n"
 	.string "take me on to get a Paradox Pokémon,\l"
 	.string "I'll be here.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaChampionNow::
-# 473 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 471 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Hey, {PLAYER}. Good news.\p"
 	.string "Professor Turo and I upgraded the time\n"
 	.string "machine so that we can access multiple\l"
@@ -1718,19 +1710,19 @@ MossdeepCity_SpaceCenter_2F_R_Text_SadaChampionNow::
 	.string "battle?$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaNotLikeLastTime::
-# 477 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 475 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: This time, I'll be showing you the\n"
 	.string "full might of the ancient past.\p"
 	.string "You better bring everything you have!$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaEnjoyParadox::
-# 481 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 479 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: You've tamed an ancient Pokémon.\p"
 	.string "Use its strength well, and take\n"
 	.string "inspiration from what has come before.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon::
-# 485 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 483 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Alright, you know how to handle\n"
 	.string "yourself.\p"
 	.string "If you bring me a Pokémon with an\n"
@@ -1741,7 +1733,7 @@ MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon::
 	.string "Pokémon?$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaTryTuro::
-# 585 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 581 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Sorry, I haven't found any\n"
 	.string "ancestors of that Pokémon.\p"
 	.string "Maybe you should speak with Professor\n"
@@ -1749,7 +1741,7 @@ MossdeepCity_SpaceCenter_2F_R_Text_SadaTryTuro::
 	.string "there.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaNotAParadox::
-# 597 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 593 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Unfortunately, I have not\n"
 	.string "discovered an ancient equivalent for\l"
 	.string "that Pokémon.\p"
@@ -1757,6 +1749,6 @@ MossdeepCity_SpaceCenter_2F_R_Text_SadaNotAParadox::
 	.string "another Pokémon of yours.$"
 
 MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackChangedMind::
-# 601 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
+# 597 "data/maps/MossdeepCity_SpaceCenter_2F_R/scripts.pory"
 	.string "Sada: Alright, when you are ready to use\n"
 	.string "the time machine, you can find me here.$"

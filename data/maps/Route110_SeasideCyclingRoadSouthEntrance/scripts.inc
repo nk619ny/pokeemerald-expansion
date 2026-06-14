@@ -12,6 +12,7 @@ Route110_SeasideCyclingRoadSouthEntrance_EventScript_BikeCheck::
 	lockall
 	specialvar VAR_RESULT, GetPlayerAvatarBike
 	goto_if_eq VAR_RESULT, 0, Route110_SeasideCyclingRoadSouthEntrance_EventScript_NoBike
+	call Route110_EventScript_CyclingRoadEntranceIntro
 	setflag FLAG_SYS_CYCLING_ROAD
 	setvar VAR_TEMP_1, 1
 	releaseall
@@ -33,6 +34,7 @@ Route110_SeasideCyclingRoadSouthEntrance_EventScript_ClearCyclingRoad::
 	lockall
 	clearflag FLAG_SYS_CYCLING_ROAD
 	setvar VAR_TEMP_1, 0
+	call Route110_EventScript_CheckCyclingRoadDoneForReset
 	releaseall
 	end
 

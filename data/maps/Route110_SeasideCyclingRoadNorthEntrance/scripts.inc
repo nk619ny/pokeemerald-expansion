@@ -23,6 +23,7 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck::
 	specialvar VAR_RESULT, GetPlayerAvatarBike
 	call_if_eq VAR_RESULT, 2, Route110_SeasideCyclingRoadNorthEntrance_EventScript_OnMachBike
 	goto_if_eq VAR_RESULT, 0, Route110_SeasideCyclingRoadNorthEntrance_EventScript_NoBike
+	call Route110_EventScript_CyclingRoadEntranceIntro
 	setflag FLAG_SYS_CYCLING_ROAD
 	setvar VAR_TEMP_1, 1
 	releaseall
@@ -49,6 +50,7 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad::
 	setvar VAR_CYCLING_CHALLENGE_STATE, 0
 	clearflag FLAG_SYS_CYCLING_ROAD
 	setvar VAR_TEMP_1, 0
+	call Route110_EventScript_CheckCyclingRoadDoneForReset
 	releaseall
 	end
 

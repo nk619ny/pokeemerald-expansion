@@ -807,6 +807,12 @@ Route101_RivalDeparture:
 	walk_up
 	step_end
 
+Route101_EventScript_Girl::
+# 409 "data/maps/Route101/scripts.pory"
+	msgbox Route101_EventScript_Girl_Text_0, MSGBOX_NPC
+	end
+
+
 Route101_RivalDefeated_Text_0:
 # 375 "data/maps/Route101/scripts.pory"
 	.string "Looks like you're very ready to be a\n"
@@ -817,3 +823,12 @@ Route101_RivalDefeated_Text_1:
 # 378 "data/maps/Route101/scripts.pory"
 	.string "I'm looking forward to seeing you out\n"
 	.string "there.$"
+
+Route101_EventScript_Girl_Text_0:
+# 409 "data/maps/Route101/scripts.pory"
+	.string "Once, a Zigzagoon scared Professor\n"
+	.string "Birch and he dropped his bag of Poké\l"
+	.string "Balls.\p"
+	.string "That reintroduced a few species to this\n"
+	.string "area, and now if you look carefully you\l"
+	.string "can find them in the grass.$"
