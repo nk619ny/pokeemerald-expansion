@@ -81,3 +81,10 @@ tools/learnset_helpers/missing_moves_filtered_report.txt
 tools/learnset_helpers/missing_moves_report.txt
 tools/learnset_helpers/pre_swsh_missing_moves.json
 tools/learnset_helpers/pre_swsh_missing_moves_report.txt
+tools/learnset_helpers/moves_by_game.csv
+tools/learnset_helpers/species_by_game.csv
+
+trainer_analysis.txt
+trainer_locations.txt
+isahaya*.zip
+isahaya.zip
