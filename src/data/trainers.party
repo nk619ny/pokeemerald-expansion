@@ -7692,7 +7692,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Plusle @ Focus Sash  
-Level: 33
+Level: 32
 Ability: Plus  
 Tera Type: Electric  
 EVs: 64 SpA / 4 SpD / 64 Spe  
@@ -7704,7 +7704,7 @@ IVs: 0 Atk
 - Nasty Plot  
 
 Minun @ Shuca Berry  
-Level: 33
+Level: 32
 Ability: Minus  
 Tera Type: Electric  
 EVs: 64 HP / 4 SpA / 64 Spe  
@@ -7715,8 +7715,8 @@ Hasty Nature
 - Nuzzle  
 
 Klang @ Air Balloon  
-Level: 36
-Ability: Minus  
+Level: 33
+Ability: Plus  
 Tera Type: Ice  
 EVs: 64 HP / 64 SpA / 4 SpD  
 Modest Nature  
@@ -7727,7 +7727,7 @@ IVs: 0 Atk
 - Hidden Power
 
 Dedenne @ Big Root  
-Level: 33
+Level: 32
 Ability: Plus  
 Tera Type: Electric  
 EVs: 64 SpA / 64 Spe  
@@ -8540,22 +8540,54 @@ Kecleon
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ETHAN_1 === /* Jagged Pass */ /* TO BE ADDED */
+=== TRAINER_ETHAN_1 === /* Jagged Pass */ 
 Name: ETHAN
-Class: Camper
-Pic: Camper
+Class: Pkmn Ranger
+Pic: Pokemon Ranger M
 Gender: Male
-Music: Male
+Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Graveler @ Punching Glove  
+Ability: Sturdy  
+Level: 41
+Tera Type: Rock  
+EVs: 252 SpD  
+- Rock Climb  
+- Fire Punch  
+- Thunder Punch  
+- Sucker Punch  
 
-Taillow
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Aggron  
+Ability: Rocky Payload  
+Tera Type: Steel  
+Level: 38
+EVs: 252 SpD  
+- Rock Climb  
+- Iron Head  
+- Dragon Tail  
+- Thunder Wave  
+
+Nidoking  
+Ability: Sheer Force  
+Level: 38
+Tera Type: Poison  
+EVs: 128 SpA  
+- Rock Climb  
+- Poison Jab  
+- Thunderbolt  
+- Ice Beam  
+
+Druddigon  
+Ability: Sheer Force  
+Level: 38
+Tera Type: Dragon  
+- Rock Climb  
+- Fire Punch  
+- Crunch  
+- Glare  
+
 
 === TRAINER_AUTUMN === /* Jagged Pass */ /* TO BE ADDED */
 Name: AUTUMN
@@ -12883,7 +12915,7 @@ Starting Status: ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Beldum  
-Level: 39
+Level: 37
 Ability: Rock Head  
 Tera Type: Steel  
 - Take Down  
@@ -12892,8 +12924,8 @@ Tera Type: Steel
 - Iron Defense  
 
 Yamper  
-Level: 39
-Ability: Strong Jaw  
+Level: 37
+Ability: Rattled
 Tera Type: Electric  
 - Thunder Fang  
 - Fire Fang  
@@ -12901,7 +12933,7 @@ Tera Type: Electric
 - Bite  
 
 Meltan  
-Level: 36
+Level: 33
 Ability: Magnet Pull  
 Tera Type: Steel  
 IVs: 0 Atk  
@@ -12911,7 +12943,7 @@ IVs: 0 Atk
 - Thunder Wave
 
 Eelektrik  
-Level: 36
+Level: 33
 Ability: Levitate  
 Tera Type: Electric  
 - Giga Drain  
@@ -17197,26 +17229,55 @@ Swablu
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DIANA_1 === /* Jagged Pass */ /* TO BE ADDED */
+=== TRAINER_DIANA_1 === /* Jagged Pass */ 
 Name: DIANA
-Class: Picnicker
-Pic: Picnicker
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
 Gender: Female
-Music: Girl
+Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Shroomish
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bouffalant @ Power Herb  
+Ability: Reckless  
+Level: 38
+Tera Type: Normal  
+- Rock Climb  
+- Head Charge  
+- Skull Bash  
+- Wild Charge  
 
-Oddish
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lycanroc @ White Herb  
+Ability: Steadfast  
+Level: 38
+Tera Type: Rock  
+EVs: 252 SpD  
+- Rock Climb  
+- Accelerock  
+- Close Combat  
+- Psychic Fangs  
 
-Swablu
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Nidoqueen (F)  
+Ability: Rivalry  
+Level: 38
+Tera Type: Poison  
+EVs: 252 HP  
+- Rock Climb  
+- Crunch  
+- High Horsepower  
+- Poison Jab  
+
+
+Kangaskhan (F)  
+Ability: Inner Focus  
+Level: 38
+Tera Type: Normal  
+- Rock Climb  
+- Body Slam  
+- Counter  
+- Fake Out  
+
 
 === TRAINER_CEDRIC === /* Mt Pyre */
 Name: CEDRIC
@@ -18222,7 +18283,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder Wave
 - Thunderbolt
 
-=== TRAINER_REYNA === /* Route 134 */ /* TO BE ADDED */
+=== TRAINER_REYNA === /* Route 134 */ /* TO BE UPDATED */
 Name: REYNA
 Class: Battle Girl
 Pic: Battle Girl
@@ -18231,13 +18292,34 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Meditite
-Level: 33
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Lucario  
+Ability: Inner Focus  
+Level: 72
+Tera Type: Fighting  
+- Aura Sphere  
+- Bullet Punch  
+- Counter  
+- Follow Me  
 
-Hariyama
-Level: 33
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Hawlucha @ Enigma Berry
+Ability: Unburden  
+Level: 72
+Tera Type: Fighting  
+- Flying Press  
+- Acrobatics  
+- Lunge  
+- Tailwind  
+
+
+Mienshao  
+Ability: Reckless  
+Level: 72
+Tera Type: Fighting  
+- Blaze Kick  
+- Jump Kick  
+- Upper Hand  
+- Acrobatics  
+
 
 === TRAINER_HUDSON === /* Route 134 */
 Name: HUDSON
@@ -20805,9 +20887,44 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magnemite
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Donphan  
+Ability: Sturdy  
+Level: 48
+Tera Type: Ground  
+- Spin Out  
+- High Horsepower  
+- Ice Shard  
+- Head Smash  
+
+
+Scolipede @ Insect Plate  
+Ability: Speed Boost   
+Level: 48
+Tera Type: Bug  
+- Noxious Torque  
+- Steamroller  
+- Venom Drench  
+- Baton Pass  
+
+Hitmontop (M) @ Expert Belt  
+Ability: Intimidate   
+Level: 48
+Tera Type: Fighting  
+- Combat Torque  
+- Wicked Torque  
+- Ice Spinner  
+- Noxious Torque  
+
+Revavroom @ Shuca Berry  
+Ability: Filter   
+Level: 48
+Tera Type: Steel  
+- Shift Gear  
+- Noxious Torque  
+- Spin Out  
+- Blazing Torque  
+
+
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 === /* Route */
 Name: GRUNT
@@ -22477,7 +22594,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Smoliv  
 Ability: Early Bird  
-Level: 12
+Level: 11
 Tera Type: Grass  
 IVs: 0 Atk  
 - Mega Drain  
@@ -22493,6 +22610,16 @@ IVs: 0 Atk
 - Disarming Voice  
 - Howl  
 - Round  
+
+Sprigatito  
+Ability: Overgrow  
+Level: 11
+Tera Type: Grass  
+IVs: 0 Atk  
+- Copycat
+- Disarming Voice  
+- Helping Hand  
+- Magical Leaf  
 
 
 Patrat  
@@ -23486,7 +23613,7 @@ Geodude
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ERIC === /* Jagged Pass */ /* TO BE ADDED */
+=== TRAINER_ERIC === /* Jagged Pass */ 
 Name: ERIC
 Class: Hiker
 Pic: Hiker
@@ -23495,13 +23622,46 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Geodude
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gabite @ Eviolite  
+Ability: Rough Skin  
+Level: 41
+Tera Type: Dragon  
+EVs: 252 HP / 252 Atk  
+- Rock Climb  
+- Sand Tomb  
+- Outrage  
+- Attract  
 
-Baltoy
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Primeape  
+Ability: Defiant  
+Level: 41
+Tera Type: Fighting  
+EVs: 252 Spe  
+Jolly Nature  
+- Rock Climb  
+- Rage Fist  
+- Drain Punch  
+- U-turn  
+
+Arcanine-Hisui @ Shuca Berry  
+Ability: Intimidate  
+Level: 39
+Tera Type: Fire  
+- Rock Climb  
+- Raging Fury  
+- Psychic Fangs  
+- Wild Charge  
+
+Rhydon
+Ability: Solid Rock  
+Level: 40
+Tera Type: Ground  
+EVs: 252 SpD  
+- Rock Climb  
+- Drill Run  
+- Heat Crash  
+- Thunder Punch  
+
 
 === TRAINER_LUCAS_2 === /* Route */
 Name: LUCAS
@@ -23917,7 +24077,7 @@ Tera Type: Electric
 - Steelsurge  
 
 Magnemite @ Shuca Berry  
-Level: 40
+Level: 39
 Ability: Magnet Pull  
 Tera Type: Electric  
 IVs: 0 Atk  
@@ -23927,7 +24087,7 @@ IVs: 0 Atk
 - Mirror Shot  
 
 Duraludon  
-Level: 33
+Level: 31
 Ability: Stalwart  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tera Type: Steel  
@@ -23937,7 +24097,7 @@ Tera Type: Steel
 - Mirror Coat  
 
 Lairon  
-Level: 36
+Level: 32
 Ability: Sturdy  
 Tera Type: Steel  
 - Headbutt  
@@ -30573,7 +30733,7 @@ Jolly Nature
 - Encore  
 
 Togedemaru  @ Shuca Berry
-Level: 33
+Level: 32
 Ability: Lightning Rod  
 Tera Type: Electric  
 - Nuzzle  
@@ -30595,7 +30755,7 @@ IVs: 0 Atk
 */
 
 Emolga  
-Level: 33
+Level: 32
 Ability: Motor Drive  
 Tera Type: Electric  
 IVs: 0 Atk  

@@ -3,7 +3,6 @@
   "name": "Route127",
   "layout": "LAYOUT_ROUTE127",
   "music": "MUS_ROUTE120",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_127",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -52,7 +51,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
       "x": 27,
-      "y": 4,
+      "y": 5,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -60,7 +59,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "Route127_EventScript_Donny",
-      "flag": "0"
+      "flag": "FLAG_HIDE_ROUTE_127_TRAINERS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
@@ -191,10 +190,79 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route127_EventScript_BraveBirdKeeper",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_ROUTE127_SWIMMERBLOCK",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 27,
+      "y": 4,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "Route127_EventScript_BlockSouthMossdeep",
+      "flag": "FLAG_DEFEATED_MOSSDEEP_GYM"
     }
   ],
   "warp_events": [],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_7",
+      "var_value": "0",
+      "script": "Route127_EventScript_BlockRouteTrigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_7",
+      "var_value": "0",
+      "script": "Route127_EventScript_BlockRouteTrigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_7",
+      "var_value": "0",
+      "script": "Route127_EventScript_BlockRouteTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_7",
+      "var_value": "0",
+      "script": "Route127_EventScript_BlockRouteTrigger3"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_7",
+      "var_value": "0",
+      "script": "Route127_EventScript_BlockRouteTrigger4"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_7",
+      "var_value": "0",
+      "script": "Route127_EventScript_BlockRouteTrigger5"
+    }
+  ],
   "bg_events": [
     {
       "type": "secret_base",
@@ -231,5 +299,6 @@
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_YELLOW_CAVE1_3"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

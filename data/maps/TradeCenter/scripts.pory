@@ -308,6 +308,7 @@ script Common_EventScript_LevelCapUpdate {
 
 script Common_EventScript_SetStartingFlagStates {
 	setflag(FLAG_HIDDEN_BY_DEFAULT)
+	setflag(FLAG_HIDE_ROUTE_127_TRAINERS)
 	setflag(FLAG_HIDE_CABLE_CAR_ATTENDANT)
 	setflag(FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA)
 	setflag(FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA)
