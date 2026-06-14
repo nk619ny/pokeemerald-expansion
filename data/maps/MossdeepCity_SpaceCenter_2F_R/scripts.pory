@@ -221,7 +221,6 @@ text MossdeepCity_SpaceCenter_2F_R_Text_TuroNotLikeLastTime {
 script MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade {
     lockall
     special(ChoosePartyMon)
-    waitstate
     if(var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
         lockall
         msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroComeBackWithPokemon)
@@ -304,7 +303,6 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_FutureTrade {
             special(DoInGameTradeScene)
         }
     }
-    waitstate
     releaseall
     end
 } 
@@ -489,7 +487,6 @@ text MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon {
 script MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade {
     lockall
     special(ChoosePartyMon)
-    waitstate
     if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
         lockall
         msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackWithPokemon)
@@ -569,7 +566,6 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_PastTrade {
             special(DoInGameTradeScene)
         }
     }
-    waitstate
     releaseall
     end
 }

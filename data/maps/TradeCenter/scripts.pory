@@ -827,6 +827,7 @@ script Common_EventScript_RemoveOptionalItems2 {
 	setflag(FLAG_ITEM_ROUTE_103_PP_UP)
 	setflag(FLAG_ITEM_ROUTE_103_GUARD_SPEC)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_118_HEART_SCALE)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_118_VITAMIN)
 	setflag(FLAG_ITEM_MAUVILLE_CITY_X_SPEED)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_117_REPEL)
 	setflag(FLAG_ITEM_ROUTE_117_GREAT_BALL)
@@ -913,6 +914,9 @@ script Common_EventScript_RemoveOptionalItems6 {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1) // can be moves to after Winona
 	setflag(FLAG_ITEM_ROUTE_120_NEST_BALL) // can be moves to after Winona
 	setflag(FLAG_ITEM_TRICK_HOUSE_5_HEART_SCALE)
+	setflag(FLAG_ITEM_ROUTE_115_HEART_SCALE)
+	setflag(FLAG_ITEM_ROUTE_115_HEAL_POWDER)
+	setflag(FLAG_ITEM_ROUTE_115_IRON)
 	return
 }
 
@@ -930,6 +934,7 @@ script Common_EventScript_RemoveOptionalItemsSurfing {
 	setflag(FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_ESCAPE_ROPE)
 	setflag(FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_1F_REVIVE)
 	setflag(FLAG_ITEM_ABANDONED_SHIP_VITAMIN)
+	setflag(FLAG_ITEM_ROUTE_108_VITAMIN)
 	return
 }
 
@@ -959,6 +964,7 @@ script Common_EventScript_RemoveOptionalItems7PreSurf {
 	setflag(FLAG_ITEM_ROUTE_123_CALCIUM)
 	setflag(FLAG_ITEM_ROUTE_123_PP_UP)
 	setflag(FLAG_ITEM_ROUTE_123_REVIVAL_HERB)
+	setflag(FLAG_ITEM_ROUTE_123_PROTEIN)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_123_HYPER_POTION)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_123_PP_UP)

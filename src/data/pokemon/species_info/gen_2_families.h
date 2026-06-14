@@ -6859,7 +6859,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sPiloswineTeachableLearnset,
         .eliteLearnset = sPiloswineEliteLearnset,
     #if P_GEN_4_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_MAMOSWINE, CONDITIONS({IF_KNOWS_MOVE, MOVE_ANCIENT_POWER})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_MAMOSWINE}),
     #endif
     },
 

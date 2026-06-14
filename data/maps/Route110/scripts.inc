@@ -2226,6 +2226,16 @@ Route110_EventScript_Theodore::
 	end
 
 
+Route110_EventScript_Chuck::
+# 1178 "data/maps/Route110/scripts.pory"
+	trainerbattle_single TRAINER_CHUCK, Route110_Text_ChuckIntro, Route110_Text_ChuckDefeat
+# 1179 "data/maps/Route110/scripts.pory"
+	msgbox Route110_Text_ChuckPostBattle, MSGBOX_NPC
+# 1180 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+
 Route110_EventScript_TryDaleGiftAfterBattle_Text_0:
 # 1021 "data/maps/Route110/scripts.pory"
 	.string "A little while ago, I fished up some sort\n"
@@ -2370,3 +2380,17 @@ Route110_Text_TheodorePostBattle::
 	.string "fighting with my friends, but I just\l"
 	.string "can't help it! I want to use my\l"
 	.string "Pokémon's cool moves!$"
+
+Route110_Text_ChuckIntro::
+# 1185 "data/maps/Route110/scripts.pory"
+	.string "You gotta pay a tax if you want to pass\n"
+	.string "through here, you know.$"
+
+Route110_Text_ChuckDefeat::
+# 1189 "data/maps/Route110/scripts.pory"
+	.string "Alright, geez, go on through!$"
+
+Route110_Text_ChuckPostBattle::
+# 1193 "data/maps/Route110/scripts.pory"
+	.string "If you ever want extra protection, I\n"
+	.string "offer a fee for my services.$"

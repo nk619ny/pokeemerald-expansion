@@ -163,19 +163,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 39,
-      "y": 15,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_104_PP_UP"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
       "x": 8,
       "y": 19,
@@ -265,19 +252,6 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route104_EventScript_Billy",
       "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 37,
-      "y": 22,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_X_ACCURACY",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_104_X_ACCURACY"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -563,22 +537,6 @@
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route104_EventScript_TrainerTipsSeeAllDirections"
-    },
-    {
-      "type": "hidden_item",
-      "x": 7,
-      "y": 6,
-      "elevation": 3,
-      "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION"
-    },
-    {
-      "type": "hidden_item",
-      "x": 3,
-      "y": 9,
-      "elevation": 3,
-      "item": "ITEM_POKE_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL"
     },
     {
       "type": "hidden_item",

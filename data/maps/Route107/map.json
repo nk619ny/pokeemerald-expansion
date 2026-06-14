@@ -3,7 +3,6 @@
   "name": "Route107",
   "layout": "LAYOUT_ROUTE107",
   "music": "MUS_ROUTE104",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_107",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -54,10 +53,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 16,
-      "y": 7,
+      "x": 6,
+      "y": 8,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -157,5 +156,6 @@
       "item": "ITEM_SUN_STONE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_107_WATER_STONE"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

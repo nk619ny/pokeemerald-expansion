@@ -1173,3 +1173,23 @@ text Route110_Text_TheodoreDefeat {
 text Route110_Text_TheodorePostBattle {
     format("My dad keeps telling me to stop fighting with my friends, but I just can't help it! I want to use my Pokémon's cool moves!")
 }
+
+script Route110_EventScript_Chuck {
+    trainerbattle_single(TRAINER_CHUCK, Route110_Text_ChuckIntro, Route110_Text_ChuckDefeat)
+    msgbox(Route110_Text_ChuckPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+
+text Route110_Text_ChuckIntro {
+    format("You gotta pay a tax if you want to pass through here, you know.")
+}
+
+text Route110_Text_ChuckDefeat {
+    format("Alright, geez, go on through!")
+}
+
+text Route110_Text_ChuckPostBattle {
+    format("If you ever want extra protection, I offer a fee for my services.")
+}

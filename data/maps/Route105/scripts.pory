@@ -48,10 +48,12 @@ Route105_EventScript_Beverly::
 	msgbox Route105_Text_PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+/*
 Route105_EventScript_Imani::
 	trainerbattle_single TRAINER_IMANI, Route105_Text_ImaniIntro, Route105_Text_ImaniDefeated
 	msgbox Route105_Text_ImaniPostBattle, MSGBOX_AUTOCLOSE
 	end
+*/
 
 Route105_EventScript_Josue::
 	trainerbattle_single TRAINER_JOSUE, Route105_Text_JosueIntro, Route105_Text_JosueDefeated
@@ -160,6 +162,39 @@ script Route105_EventScript_DominikTryGiveVitamin {
 	else {
 		setflag(FLAG_TEMP_A)
 		msgbox(format("Hmm, you're trying to carry too much stuff while surfing.\pThat's a mistake - drop some weight and come back before I take these vitamins myself!"), MSGBOX_NPC)
+	}
+	release
+	end
+}
+
+
+script Route105_EventScript_Imani {
+    trainerbattle_single(TRAINER_IMANI, Route105_Text_ImaniIntro, Route105_Text_ImaniDefeated, Route105_EventScript_ImaniTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_B, Route105_EventScript_ImaniTryGiveVitamin)
+	msgbox(Route105_Text_ImaniPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script Route105_EventScript_ImaniTryGiveVitamin {
+	if(flag(FLAG_BADGE05_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_B) == FALSE) {
+		msgbox(format("UPDATE If you want to stay swimming for long periods of time, you need to stay in top shape.\pWith this vitamin, your Pokémon can have endurance like me!"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("UPDATEAh, just in time!"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_PP_UP)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_PP_UP)
+		clearflag(FLAG_TEMP_B)
+	}
+	else {
+		setflag(FLAG_TEMP_B)
+		msgbox(format("UPDATEHmm, you're trying to carry too much stuff while surfing.\pThat's a mistake - drop some weight and come back before I take these vitamins myself!"), MSGBOX_NPC)
 	}
 	release
 	end

@@ -295,7 +295,7 @@
 #define TRAINER_CYNTHIA                     288 //hijacked rematches of Anna & Meg in 288-291
 #define TRAINER_RED_HILL                    289 //hijacked rematches of Anna & Meg in 288-291
 #define TRAINER_GABE                        290 //hijacked rematches of Anna & Meg in 288-291
-#define TRAINER_ANNA_AND_MEG_5              291 //hijacked rematches of Anna & Meg in 288-291
+#define TRAINER_CHUCK                       291 //hijacked rematches of Anna & Meg in 288-291
 #define TRAINER_VICTOR                      292
 #define TRAINER_MIGUEL_1                    293
 #define TRAINER_COLTON                      294

@@ -3,7 +3,6 @@
   "name": "Route110",
   "layout": "LAYOUT_ROUTE110",
   "music": "MUS_ROUTE110",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_110",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -452,8 +451,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F",
-      "x": 9,
-      "y": 39,
+      "x": -6,
+      "y": 44,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -528,6 +527,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_BLACK_SLUDGE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_110_BLACK_SLUDGE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_STREET_THUG_ORAS",
+      "x": 9,
+      "y": 39,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Route110_EventScript_Chuck",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -776,5 +788,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route110_EventScript_CyclingRoadSign"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

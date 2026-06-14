@@ -38,6 +38,7 @@ Route107_EventScript_Beth::
 	msgbox Route107_Text_BethPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+/*
 Route107_EventScript_Lisa::
 	trainerbattle_double TRAINER_LISA_AND_RAY, Route107_Text_LisaIntro, Route107_Text_LisaDefeated, Route107_Text_LisaNotEnoughPokemon
 	msgbox Route107_Text_LisaPostBattle, MSGBOX_AUTOCLOSE
@@ -47,6 +48,7 @@ Route107_EventScript_Ray::
 	trainerbattle_double TRAINER_LISA_AND_RAY, Route107_Text_RayIntro, Route107_Text_RayDefeated, Route107_Text_RayNotEnoughPokemon
 	msgbox Route107_Text_RayPostBattle, MSGBOX_AUTOCLOSE
 	end
+*/
 
 Route107_EventScript_Camron::
 	trainerbattle_single TRAINER_CAMRON, Route107_Text_CamronIntro, Route107_Text_CamronDefeated
@@ -69,5 +71,71 @@ script Route107_EventScript_FlipTurnSwimmer{
 	msgbox(format("I learned how to turn underwater from watching Pokémon!"), MSGBOX_DEFAULT)
 	closemessage
 	releaseall
+	end
+}
+
+
+
+script Route107_EventScript_Ray {
+    trainerbattle_single(TRAINER_LISA_AND_RAY, Route107_Text_RayIntro, Route107_Text_RayDefeated, Route107_EventScript_RayTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route107_EventScript_RayTryGiveVitamin)
+	msgbox(Route107_Text_RayPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script Route107_EventScript_RayTryGiveVitamin {
+	if(flag(FLAG_BADGE05_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("My sister told me I wasn't supposed to bring this swimming with us.\pDo you want it?"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("My sister is still really upset I brought this vitamin into the water.\pYou should take it."), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_PROTEIN)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_PROTEIN)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("Are you not supposed to carry this much stuff when swimming either?"), MSGBOX_NPC)
+	}
+	release
+	end
+}
+
+script Route107_EventScript_Lisa {
+    trainerbattle_single(TRAINER_LISA_AND_RAY, Route107_Text_LisaIntro, Route107_Text_LisaDefeated, Route107_EventScript_LisaTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route107_EventScript_LisaTryGiveVitamin)
+	msgbox(Route107_Text_LisaPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script Route107_EventScript_LisaTryGiveVitamin {
+	if(flag(FLAG_BADGE05_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("My brother keeps bringing junk he finds into the water, and then losing it.\pI told him he's not allowed to bring them with us until he's responsible.\pWould you like it instead?"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("You should take the vitamin so it doesn't end up at the bottom of the sea."), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_PROTEIN)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_PROTEIN)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("You should make room in your bag and come back before he drops it."), MSGBOX_NPC)
+	}
+	release
 	end
 }
