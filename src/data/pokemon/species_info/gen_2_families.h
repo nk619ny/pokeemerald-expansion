@@ -7335,7 +7335,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_DELIBIRD
     [SPECIES_DELIBIRD] =
     {
-        .baseHP        = 45 + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 10 : 0),
+        .baseHP        = 45 + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 20 : 0),
         .baseAttack    = 55 + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 40 : 0),
         .baseDefense   = 45 + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 20 : 0),
         .baseSpeed     = 75 + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 30 : 0),
