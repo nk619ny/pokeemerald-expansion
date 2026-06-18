@@ -11902,7 +11902,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_LUVDISC
     [SPECIES_LUVDISC] =
     {
-        .baseHP        = 43 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
+        .baseHP        = 43 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 20 : 0),
         .baseAttack    = 30,
         .baseDefense   = 55 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
         .baseSpeed     = 97 + (B_CUSTOMIZED_GEN_3_STATS == TRUE ? 10 : 0),
