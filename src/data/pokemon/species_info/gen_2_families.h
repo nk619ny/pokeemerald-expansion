@@ -5689,7 +5689,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_SHUCKLE
     [SPECIES_SHUCKLE] =
     {
-        .baseHP        = 20,
+        .baseHP        = 20 + (B_CUSTOMIZED_GEN_2_STATS == TRUE ? 15 : 0),
         .baseAttack    = 10,
         .baseDefense   = 230,
         .baseSpeed     = 5,

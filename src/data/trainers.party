@@ -6234,7 +6234,7 @@ EVs: 252 HP
 - Skitter Smack 
 
 
-=== TRAINER_STEVE_1 === /* Route 119 */ /* TO BE ADDED */
+=== TRAINER_STEVE_1 === /* Route 114 */ /* TO BE ADDED */
 Name: STEVE
 Class: Pokemaniac
 Pic: Pokemaniac
@@ -6306,7 +6306,7 @@ IVs: 0 Atk
 - Tailwind  
 
 
-=== TRAINER_MARK === /* Mt. Pyre 2F */ /* TO BE ADDED */
+=== TRAINER_MARK === /* Mt. Pyre 2F */
 Name: MARK
 Class: Pokemaniac
 Pic: Pokemaniac
@@ -6315,9 +6315,41 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Rhyhorn
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Marowak @ Thick Club
+Ability: Rock Head  
+Level: 60
+Tera Type: Ground  
+- Perish Song  
+- Bonemerang
+- Head Smash
+- Captivate
+
+Snorlax  
+Ability: Immunity  
+Level: 60
+- Block  
+- Heavy Slam  
+- Body Slam  
+- Pursuit
+
+Haxorus  
+Ability: Unnerve  
+Level: 60
+- Glaive Rush  
+- Dragon Dance  
+- First Impression  
+- Psycho Cut
+
+Ampharos  
+Ability: Static  
+Tera Type: Electric  
+Level: 60
+IVs: 0 Atk  
+- Dragon Pulse  
+- Power Gem  
+- Thunderbolt  
+- Confuse Ray  
+
 
 === TRAINER_GRUNT_MT_CHIMNEY_1 === /* Mt Chimney */
 Name: GRUNT
@@ -11458,7 +11490,6 @@ Pikachu-Belle (F) @ Light Ball
 Ability: Dazzling
 Tera Type: Electric  
 EVs: 252 HP / 0 Atk / 252 Spe  
-IVs: 0 Atk
 Jolly Nature  
 Level: 35
 - Triple Axel  
@@ -26244,7 +26275,7 @@ Tera Type: Water
 - Aqua Cutter  
 
 
-=== TRAINER_ALYSSA === /* Route 110 */ /* TO BE ADDED */
+=== TRAINER_ALYSSA === /* Route 110 */ /* TO BE ADDED */ /* removed */
 Name: ALYSSA
 Class: Triathlete
 Pic: Cycling Triathlete F
@@ -26723,7 +26754,7 @@ Tera Type: Poison
 
 
 
-=== TRAINER_WYATT === /* Route 113 */ /* TO BE ADDED */
+=== TRAINER_WYATT === /* Route 113 */
 Name: WYATT
 Class: Pokemaniac
 Pic: Pokemaniac
@@ -26732,13 +26763,39 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Aron
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Axew  
+Ability: Unnerve  
+Level: 45
+- Dragon Claw  
+- First Impression  
+- Hone Claws  
+- Poison Jab  
 
-Aron
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Linoone-Galar @ Chople Berry  
+Ability: Pickup  
+Level: 40
+- Parting Shot  
+- Counter  
+- Throat Chop  
+- Body Slam  
+
+Krokorok  
+Ability: Intimidate  
+Level: 40
+- Crunch  
+- Stomping Tantrum  
+- Substitute  
+- Roar  
+
+Turtwig @ White Herb  
+Ability: Shell Armor  
+Level: 45
+- Seed Bomb  
+- Superpower  
+- Zen Headbutt  
+- Leech Seed  
+
+
 
 === TRAINER_ANGELINA === /* Route 114 */ 
 Name: ANGELINA
