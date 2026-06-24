@@ -16,6 +16,6 @@ SINGLE_BATTLE_TEST("Thunder and Bleakwind/Wildbolt Storm bypass accuracy checks 
     } WHEN {
         TURN { MOVE(opponent, MOVE_RAIN_DANCE); MOVE(player, move); }
     } SCENE {
-        NONE_OF { MESSAGE("Wobbuffet's attack missed!"); }
+        NONE_OF { MESSAGE("The opposing Wobbuffet avoided the attack!"); }
     }
 }

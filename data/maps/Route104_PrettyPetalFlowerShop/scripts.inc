@@ -176,13 +176,7 @@ Route104_PrettyPetalFlowerShop_EventScript_RandomBerryGirl::
 	goto_if_set FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY, Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry
 # 89 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	msgbox Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers, MSGBOX_DEFAULT
-# 90 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	random 8
-# 91 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	addvar VAR_RESULT, FIRST_BERRY_INDEX
-# 92 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	giveitem VAR_RESULT
-# 93 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	giverandomberry BERRY_ID_CHERI, BERRY_ID_PERSIM
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
 # 94 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	setflag FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY

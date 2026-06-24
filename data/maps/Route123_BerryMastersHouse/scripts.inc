@@ -28,29 +28,13 @@ Route123_BerryMastersHouse_EventScript_BerryMaster::
 	goto_if_set FLAG_DAILY_BERRY_MASTER_RECEIVED_BERRY, Route123_BerryMastersHouse_EventScript_ReceivedBerryToday
 # 15 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	msgbox Route123_BerryMastersHouse_Text_YoureDeservingOfBerry, MSGBOX_DEFAULT
-# 16 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	random NUM_BERRY_MASTER_BERRIES
-# 17 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	addvar VAR_RESULT, NUM_BERRY_MASTER_BERRIES_SKIPPED
-# 18 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	addvar VAR_RESULT, FIRST_BERRY_INDEX
-# 19 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	giveitem VAR_RESULT
-# 20 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	giverandomberry BERRY_ID_POMEG, BERRY_ID_NOMEL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 21 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	setflag FLAG_DAILY_BERRY_MASTER_RECEIVED_BERRY
 # 22 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	msgbox Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother, MSGBOX_DEFAULT
-# 23 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	random NUM_BERRY_MASTER_BERRIES
-# 24 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	addvar VAR_RESULT, NUM_BERRY_MASTER_BERRIES_SKIPPED
-# 25 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	addvar VAR_RESULT, FIRST_BERRY_INDEX
-# 26 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	giveitem VAR_RESULT
-# 27 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	giverandomberry BERRY_ID_POMEG, BERRY_ID_NOMEL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 28 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	msgbox Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT
@@ -132,13 +116,7 @@ Route123_BerryMastersHouse_EventScript_GavePhrase::
 Route123_BerryMastersHouse_EventScript_GiveNormalBerry::
 # 67 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	msgbox Route123_BerryMastersHouse_Text_GoodSayingTakeThis, MSGBOX_DEFAULT
-# 68 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	random NUM_BERRY_MASTER_WIFE_BERRIES
-# 69 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	addvar VAR_RESULT, FIRST_BERRY_INDEX
-# 70 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	giveitem VAR_RESULT
-# 71 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	giverandomberry BERRY_ID_CHERI, BERRY_ID_SITRUS
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 72 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	goto Route123_BerryMastersHouse_EventScript_GaveBerry

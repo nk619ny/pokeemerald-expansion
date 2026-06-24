@@ -54,15 +54,7 @@ Route114_EventScript_Man::
 	goto_if_set FLAG_DAILY_ROUTE_114_RECEIVED_BERRY, Route114_EventScript_ReceivedBerry
 # 28 "data/maps/Route114/scripts.pory"
 	msgbox Route114_Text_LoveUsingBerryCrushShareBerry, MSGBOX_DEFAULT
-# 29 "data/maps/Route114/scripts.pory"
-	random NUM_ROUTE_114_MAN_BERRIES
-# 30 "data/maps/Route114/scripts.pory"
-	addvar VAR_RESULT, NUM_ROUTE_114_MAN_BERRIES_SKIPPED
-# 31 "data/maps/Route114/scripts.pory"
-	addvar VAR_RESULT, FIRST_BERRY_INDEX
-# 32 "data/maps/Route114/scripts.pory"
-	giveitem VAR_RESULT
-# 33 "data/maps/Route114/scripts.pory"
+	giverandomberry BERRY_ID_RAZZ, BERRY_ID_PINAP
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 34 "data/maps/Route114/scripts.pory"
 	setflag FLAG_DAILY_ROUTE_114_RECEIVED_BERRY

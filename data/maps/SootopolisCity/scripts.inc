@@ -1426,9 +1426,7 @@ SootopolisCity_EventScript_KiriRayquaza::
 	end
 # 714 "data/maps/SootopolisCity/scripts.pory"
 
-# 715 "data/maps/SootopolisCity/scripts.pory"
-@ Gives 2 berries daily. First ranges from FIRST_KIRI_BERRY to LAST_KIRI_BERRY, second is always Figy or Iapapa
-# 716 "data/maps/SootopolisCity/scripts.pory"
+@ Gives 2 berries daily. First ranges from BERRY_ID_POMEG to BERRY_ID_NOMEL, second is always Figy or Iapapa
 SootopolisCity_EventScript_KiriGiveBerry::
 # 717 "data/maps/SootopolisCity/scripts.pory"
 	dotimebasedevents
@@ -1438,15 +1436,7 @@ SootopolisCity_EventScript_KiriGiveBerry::
 	goto_if_set FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY, SootopolisCity_EventScript_KiriReceivedBerry
 # 720 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_NameIsKiriHaveOneOfThese, MSGBOX_DEFAULT
-# 721 "data/maps/SootopolisCity/scripts.pory"
-	random NUM_KIRI_BERRIES
-# 722 "data/maps/SootopolisCity/scripts.pory"
-	addvar VAR_RESULT, NUM_KIRI_BERRIES_SKIPPED
-# 723 "data/maps/SootopolisCity/scripts.pory"
-	addvar VAR_RESULT, FIRST_BERRY_INDEX
-# 724 "data/maps/SootopolisCity/scripts.pory"
-	giveitem VAR_RESULT
-# 725 "data/maps/SootopolisCity/scripts.pory"
+	giverandomberry BERRY_ID_POMEG, BERRY_ID_NOMEL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 726 "data/maps/SootopolisCity/scripts.pory"
 	setflag FLAG_DAILY_SOOTOPOLIS_RECEIVED_BERRY
