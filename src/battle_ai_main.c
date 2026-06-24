@@ -1543,6 +1543,28 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
     }
         break;
+    case EFFECT_GEAR_UP:
+    {
+        // Valid targets: Steel types and Plus/Minus holders on all sides
+        bool32 decreaseScore = TRUE;
+        for (enum BattlerId battler = B_BATTLER_0; battler < gBattlersCount; battler++)
+        {
+            if (!IsBattlerAlive(battler))
+                continue;
+
+            if (gAiLogicData->abilities[battler] != ABILITY_PLUS
+             && gAiLogicData->abilities[battler] != ABILITY_MINUS
+             && !IS_BATTLER_OF_TYPE(battler, TYPE_STEEL))
+                continue;
+
+            if (IsBattlerAlly(battlerAtk, battler) && AI_CanAnyStatChange(battlerAtk, battler, move))
+                decreaseScore = FALSE;
+        }
+
+        if (decreaseScore)
+            ADJUST_SCORE(-10);
+    }
+        break;
     case EFFECT_STAT_CHANGE_MAGNETIC:
     {
         bool32 decreaseScore = TRUE;
@@ -1562,6 +1584,33 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         if (decreaseScore)
             ADJUST_SCORE(-10);
     }
+        break;
+    case EFFECT_MAGNETIC_FLUX:
+    {
+        // Valid targets: Electric types and Plus/Minus holders
+        bool32 decreaseScore = TRUE;
+        for (enum BattlerId battler = B_BATTLER_0; battler < gBattlersCount; battler++)
+        {
+            if (!IsBattlerAlly(battlerAtk, battler) || !IsBattlerAlive(battler))
+                continue;
+
+            if (gAiLogicData->abilities[battler] != ABILITY_PLUS
+             && gAiLogicData->abilities[battler] != ABILITY_MINUS
+             && !IS_BATTLER_OF_TYPE(battler, TYPE_ELECTRIC))
+                continue;
+
+            if (BattlerStatCanRise(battler, gAiLogicData->abilities[battler], STAT_SPDEF))
+                decreaseScore = FALSE;
+        }
+
+        if (decreaseScore)
+            ADJUST_SCORE(-10);
+    }
+        break;
+    case EFFECT_AROMATIC_MIST:
+        if (!BattlerStatCanRise(battlerAtk, aiData->abilities[battlerAtk], STAT_SPDEF)
+          && (!hasPartner || !BattlerStatCanRise(BATTLE_PARTNER(battlerAtk), aiData->abilities[BATTLE_PARTNER(battlerAtk)], STAT_SPDEF)))
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_STUFF_CHEEKS:
         if (GetItemPocket(gBattleMons[battlerAtk].item) != POCKET_BERRIES)
@@ -3594,6 +3643,7 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 return score;
             case EFFECT_STAT_CHANGE:
             case EFFECT_STAT_CHANGE_MAGNETIC:
+            case EFFECT_AROMATIC_MIST:
                 switch (moveTarget)
                 {
                 case TARGET_USER_AND_ALLY:
@@ -3603,12 +3653,53 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                     if (AI_CanAnyStatChange(battlerAtk, battlerAtkPartner, move))
                     {
                         ADJUST_SCORE(GetAllyStatChangeScore(battlerAtk, battlerAtkPartner, move));
+                        // Aromatic Mist bonus: extra score on Misty Terrain
+                        if (effect == EFFECT_AROMATIC_MIST && (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN))
+                            ADJUST_SCORE(WEAK_EFFECT);
                     }
                     break;
                 default:
                     break;
                 }
                 break;
+            case EFFECT_MAGNETIC_FLUX:
+            {
+                // Score the partner's Electric type / Plus/Minus benefit
+                bool32 isPlusMinus = (aiData->abilities[battlerAtkPartner] == ABILITY_PLUS
+                                   || aiData->abilities[battlerAtkPartner] == ABILITY_MINUS);
+                bool32 isElectric = IS_BATTLER_OF_TYPE(battlerAtkPartner, TYPE_ELECTRIC);
+
+                if (isPlusMinus || isElectric)
+                {
+                    if (BattlerStatCanRise(battlerAtkPartner, aiData->abilities[battlerAtkPartner], STAT_SPDEF))
+                    {
+                        ADJUST_SCORE(WEAK_EFFECT);
+                        if (isPlusMinus || (isElectric && (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)))
+                        {
+                            if (BattlerStatCanRise(battlerAtkPartner, aiData->abilities[battlerAtkPartner], STAT_DEF))
+                                ADJUST_SCORE(WEAK_EFFECT);
+                        }
+                    }
+                }
+                break;
+            }
+            case EFFECT_GEAR_UP:
+            {
+                // Score for partner if they are Steel type or Plus/Minus
+                bool32 isPlusMinus = (aiData->abilities[battlerAtkPartner] == ABILITY_PLUS
+                                   || aiData->abilities[battlerAtkPartner] == ABILITY_MINUS);
+                bool32 isSteel = IS_BATTLER_OF_TYPE(battlerAtkPartner, TYPE_STEEL);
+
+                if (isPlusMinus || isSteel)
+                {
+                    s32 stage = (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN) ? 2 : 1;
+                    if (BattlerStatCanRise(battlerAtkPartner, aiData->abilities[battlerAtkPartner], STAT_ATK))
+                        ADJUST_SCORE(stage);
+                    if (BattlerStatCanRise(battlerAtkPartner, aiData->abilities[battlerAtkPartner], STAT_SPATK))
+                        ADJUST_SCORE(stage);
+                }
+                break;
+            }
             case EFFECT_ACUPRESSURE: // probably not good AI but just kept the same
             {
                 ADJUST_SCORE(IncreaseStatUpScore(battlerAtkPartner, BATTLE_OPPOSITE(battlerAtkPartner), STAT_ATK, 2));
@@ -4298,8 +4389,32 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
     case EFFECT_GROWTH:
     case EFFECT_AUTOTOMIZE:
     case EFFECT_STAT_CHANGE:
+    case EFFECT_AROMATIC_MIST:
         ADJUST_SCORE(GetStatChangeScore(battlerAtk, battlerDef, move));
         break;
+    case EFFECT_MAGNETIC_FLUX:
+    {
+        // Score SpDef boost for Electric types and Plus/Minus; Def bonus for Plus/Minus or Electric Terrain
+        s32 totalScore = 0;
+        for (enum BattlerId battler = B_BATTLER_0; battler < gBattlersCount; battler++)
+        {
+            bool32 isPlusMinus = (gAiLogicData->abilities[battler] == ABILITY_PLUS
+                               || gAiLogicData->abilities[battler] == ABILITY_MINUS);
+            bool32 isElectric = IS_BATTLER_OF_TYPE(battler, TYPE_ELECTRIC);
+
+            if (!isPlusMinus && !isElectric)
+                continue;
+
+            if (battler == battlerAtk || battler == BATTLE_PARTNER(battlerAtk))
+            {
+                totalScore += IncreaseStatUpScore(battlerAtk, battler, STAT_SPDEF, 1);
+                if (isPlusMinus || (isElectric && (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)))
+                    totalScore += IncreaseStatUpScore(battlerAtk, battler, STAT_DEF, 1);
+            }
+        }
+        ADJUST_SCORE(totalScore);
+        break;
+    }
     case EFFECT_STOCKPILE:
         if (HasMoveWithEffect(battlerAtk, EFFECT_SWALLOW) || HasMoveWithEffect(battlerAtk, EFFECT_SPIT_UP))
             ADJUST_SCORE(DECENT_EFFECT);
@@ -4314,6 +4429,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
     case EFFECT_FLOWER_SHIELD:
     {
         s32 totalScore = 0;
+        bool32 grassyTerrain = (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN);
         for (enum BattlerId battler = B_BATTLER_0; battler < gBattlersCount; battler++)
         {
             if (moveEffect == EFFECT_ROTOTILLER && !AI_IsBattlerGrounded(battler))
@@ -4322,10 +4438,34 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             if (!IS_BATTLER_OF_TYPE(battler, TYPE_GRASS))
                 continue;
 
+            s32 terrainMul = grassyTerrain ? 2 : 1;
             if (battler == battlerAtk || battler == BATTLE_PARTNER(battlerAtk))
-                totalScore = GetStatChangeScore(battlerAtk, battler, move);
+                totalScore += terrainMul * GetStatChangeScore(battlerAtk, battler, move);
             else
-                totalScore = -1 * GetStatChangeScore(battlerAtk, battler, move); // Decrease score for opposing mons
+                totalScore -= terrainMul * GetStatChangeScore(battlerAtk, battler, move); // Decrease score for opposing mons
+        }
+        ADJUST_SCORE(totalScore);
+        break;
+    }
+    case EFFECT_GEAR_UP:
+    {
+        // Score for each Steel type and Plus/Minus holder on the field
+        s32 totalScore = 0;
+        bool32 electricTerrain = (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN);
+        for (enum BattlerId battler = B_BATTLER_0; battler < gBattlersCount; battler++)
+        {
+            if (!IsBattlerAlive(battler))
+                continue;
+            if (gAiLogicData->abilities[battler] != ABILITY_PLUS
+             && gAiLogicData->abilities[battler] != ABILITY_MINUS
+             && !IS_BATTLER_OF_TYPE(battler, TYPE_STEEL))
+                continue;
+
+            s32 terrainMul = electricTerrain ? 2 : 1;
+            if (battler == battlerAtk || battler == BATTLE_PARTNER(battlerAtk))
+                totalScore += terrainMul * GetStatChangeScore(battlerAtk, battler, move);
+            else
+                totalScore -= terrainMul * GetStatChangeScore(battlerAtk, battler, move); // Decrease score for opposing mons
         }
         ADJUST_SCORE(totalScore);
         break;

@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(GetMoveEffect(MOVE_TAR_SHOT) == EFFECT_TAR_SHOT);
+    ASSUME(GetMoveEffect(MOVE_TAR_SHOT) == EFFECT_HIT);
 }
 
 SINGLE_BATTLE_TEST("Tar Shot doubles the effectiveness of Fire-type moves used on the target")

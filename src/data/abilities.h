@@ -2452,6 +2452,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Dragonize"),
         .description = COMPOUND_STRING("Normal moves turn Dragon."),
+        .aiRating = 8,
     },
 
     [ABILITY_313] =
@@ -2470,18 +2471,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Mega Sol"),
         .description = COMPOUND_STRING("Acts like under sun."),
-    },
-
-    [ABILITY_316] =
-    {
-        .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
-    },
-
-    [ABILITY_317] =
-    {
-        .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .aiRating = 8,
     },
 
     [ABILITY_SPICY_SPRAY] =
@@ -2490,6 +2480,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Burns the foe when damaged."),
     },
 
+    // Custom abilities
     [ABILITY_DARK_CLOUDS] =
     {
         .name = _("Dark Clouds"),
@@ -2508,13 +2499,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Sub-Zero"),
         .description = COMPOUND_STRING("Powers up Ice moves."),
-        .aiRating = 6
-    },
-
-    [ABILITY_DESERT_SPIRIT] =
-    {
-        .name = _("Desert Spirit"),
-        .description = COMPOUND_STRING("Powers up Ground moves."),
         .aiRating = 6
     },
 
@@ -2546,6 +2530,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Protects from priority."),
         .aiRating = 5,
         .breakable = TRUE,
+    },
+
+    [ABILITY_DESERT_SPIRIT] =
+    {
+        .name = _("Desert Spirit"),
+        .description = COMPOUND_STRING("Powers up Ground moves."),
+        .aiRating = 6
     },
 
     [ABILITY_MUDDY] =
@@ -2582,19 +2573,5 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Spread Fists"),
         .description = COMPOUND_STRING("Punches hit both foes."),
         .aiRating = 7,
-    },
-
-    [ABILITY_DRAGONIZE] =
-    {
-        .name = _("Dragonize"),
-        .description = COMPOUND_STRING("Normal moves become Dragon."),
-        .aiRating = 8,
-    },
-
-    [ABILITY_MEGA_SOL] =
-    {
-        .name = _("Mega Sol"),
-        .description = COMPOUND_STRING("Moves act as if in sunlight."),
-        .aiRating = 8,
     },
 };

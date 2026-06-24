@@ -615,6 +615,7 @@ enum __attribute__((packed)) MoveEffect
     STAT_CHANGE_EFFECT_MINUS,
 
     MOVE_EFFECT_CONSTRICT_SLOW,
+    MOVE_EFFECT_TAR_SHOT_SLOW,
 
     // Move effects that happen before the move hits. Set in SetPreAttackMoveEffect
     MOVE_EFFECT_BREAK_SCREEN,

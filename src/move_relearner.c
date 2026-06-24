@@ -388,7 +388,7 @@ static void CB2_InitLearnMove_Basic(void)
             AddScrollArrows();
             gTasks[sMoveRelearnerStruct->mainTask].func = Task_MoveRelearner_HandleInput;
         }
-        if (gRelearnMode == RELEARN_MODE_SCRIPT)
+        if (gRelearnMode == RELEARN_MODE_SCRIPT || gRelearnMode == RELEARN_MODE_ELITE_SCRIPT)
             gTasks[sMoveRelearnerStruct->mainTask].tRecoverPp = TRUE;
         else
             gTasks[sMoveRelearnerStruct->mainTask].tRecoverPp = P_SUMMARY_MOVE_RELEARNER_FULL_PP;
@@ -429,6 +429,12 @@ static void CB2_InitLearnMoveReturnFromSelectMove(void)
 
 static void StoreMoveText(void)
 {
+    // Script-only modes use states outside sRelearnTypes bounds; use generic text
+    if (gRelearnMode == RELEARN_MODE_ELITE_SCRIPT || gRelearnMode == RELEARN_MODE_EGG_SCRIPT)
+    {
+        StringCopy(gStringVar3, MoveRelearner_Text_MoveLWR);
+        return;
+    }
     if (P_ENABLE_MOVE_RELEARNERS || P_TM_MOVES_RELEARNER
     || FlagGet(P_FLAG_EGG_MOVES) || FlagGet(P_FLAG_TUTOR_MOVES))
         StringCopy(gStringVar3, sRelearnTypes[gMoveRelearnerState].moveText);
@@ -518,7 +524,7 @@ static void UIEndTask(u8 taskId)
         if (!GetItemImportance(item))
             RemoveBagItem(item, 1);
     }
-    if (gRelearnMode == RELEARN_MODE_SCRIPT && gSpecialVar_Result == TRUE)
+    if ((gRelearnMode == RELEARN_MODE_SCRIPT || gRelearnMode == RELEARN_MODE_ELITE_SCRIPT) && gSpecialVar_Result == TRUE)
     {
         gTasks[taskId].func = Task_MoveRelearner_Quit;
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
@@ -576,7 +582,7 @@ static void Task_MoveRelearner_Giveup_Answer(u8 taskId)
     switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
     case 0: // Yes
-        if (gRelearnMode == RELEARN_MODE_SCRIPT)
+        if (gRelearnMode == RELEARN_MODE_SCRIPT || gRelearnMode == RELEARN_MODE_ELITE_SCRIPT)
             gSpecialVar_Result = FALSE;
         gTasks[taskId].func = Task_MoveRelearner_Quit;
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
@@ -742,7 +748,9 @@ static void CreateLearnableMovesList(void)
     s32 i;
 
     struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
-    if (gRelearnMode == RELEARN_MODE_SCRIPT || sRelearnTypes[gMoveRelearnerState].isActive())
+    if (gRelearnMode == RELEARN_MODE_ELITE_SCRIPT)
+        sMoveRelearnerStruct->numMenuChoices = GetRelearnerEliteMoves(boxmon, sMoveRelearnerStruct->movesToLearn);
+    else if (gRelearnMode == RELEARN_MODE_SCRIPT || sRelearnTypes[gMoveRelearnerState].isActive())
         sMoveRelearnerStruct->numMenuChoices = sRelearnTypes[gMoveRelearnerState].getMoves(boxmon, sMoveRelearnerStruct->movesToLearn);
 
     if (P_SORT_MOVES)
@@ -991,6 +999,9 @@ bool32 CanBoxMonRelearnAnyMove(struct BoxPokemon *boxMon)
 
 bool32 CanBoxMonRelearnMoves(struct BoxPokemon *boxMon, enum MoveRelearnerStates state)
 {
+    // MOVE_RELEARNER_ELITE_MOVES is placed beyond MOVE_RELEARNER_COUNT and has no sRelearnTypes entry
+    if (state == MOVE_RELEARNER_ELITE_MOVES)
+        return !GetBoxMonData(boxMon, MON_DATA_IS_EGG) && HasRelearnerEliteMoves(boxMon);
     if (!sRelearnTypes[state].isActive())
         return FALSE;
     if (GetBoxMonData(boxMon, MON_DATA_IS_EGG))

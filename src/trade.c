@@ -4592,7 +4592,7 @@ static void BufferInGameTradeMonName(void)
 
 static void CreateInGameTradeParadoxPokemonInternal(u16 species)
 {
-    struct Pokemon *pokemon = &gEnemyParty[0];
+    struct Pokemon *pokemon = &gParties[B_TRAINER_OPPONENT_A][0];
     u8 metLocation = METLOC_IN_GAME_TRADE;
 
     CreateRandomMon(pokemon, species, 70);
@@ -4603,7 +4603,7 @@ static void CreateInGameTradeParadoxPokemonInternal(u16 species)
 
 static void CreateInGameTradePastParadoxPokemonInternal(u16 species)
 {
-    struct Pokemon *pokemon = &gEnemyParty[0];
+    struct Pokemon *pokemon = &gParties[B_TRAINER_OPPONENT_A][0];
     u8 metLocation = METLOC_DISTANT_PAST;
 
     CreateRandomMon(pokemon, species, 70);
@@ -4614,7 +4614,7 @@ static void CreateInGameTradePastParadoxPokemonInternal(u16 species)
 
 static void CreateInGameTradeFutureParadoxPokemonInternal(u16 species)
 {
-    struct Pokemon *pokemon = &gEnemyParty[0];
+    struct Pokemon *pokemon = &gParties[B_TRAINER_OPPONENT_A][0];
     u8 metLocation = METLOC_FAR_FUTURE;
 
     CreateRandomMon(pokemon, species, 70);

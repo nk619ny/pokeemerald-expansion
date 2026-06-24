@@ -136,6 +136,19 @@ static bool32 CheckSpecificMoveCondition(struct BattleCalcValues *cv, struct Sta
             return TRUE;
         }
         break;
+    case EFFECT_GEAR_UP:
+        if (cv->abilities[cv->battlerDef] != ABILITY_PLUS
+         && cv->abilities[cv->battlerDef] != ABILITY_MINUS
+         && !IS_BATTLER_OF_TYPE(cv->battlerDef, TYPE_STEEL))
+        {
+            if (!st->onlyChecking)
+            {
+                st->script = BattleScript_ItDoesntAffectScrTarget;
+                gBattleScripting.battler = cv->battlerDef;
+            }
+            return TRUE;
+        }
+        break;
     case EFFECT_TOXIC_THREAD:
         if (CanBePoisoned(cv->battlerAtk, cv->battlerDef, cv->abilities[cv->battlerAtk], cv->abilities[cv->battlerDef]))
         {
@@ -206,6 +219,8 @@ bool32 CanAnyStatChange(struct BattleCalcValues *cv, struct StatChange *st)
                 st->stage = -1 * st->stage;
 
             AdjustStatStage(cv, st);
+            if (st->stage == 0) // Skip zero-stage entries (e.g. EFFECT_MAGNETIC_FLUX Def for Electric-only without terrain)
+                continue;
             SetStatChange(cv->battlerDef, st->stat, st->stage);
 
             if (statChangeBlockedOnBattler) // Still need to collect stats for proper failure
@@ -800,6 +815,32 @@ static void AdjustStatStage(struct BattleCalcValues *cv, struct StatChange *st)
 {
     if (cv->moveEffect == EFFECT_GROWTH && GetAttackerWeather(cv->holdEffects[cv->battlerDef], cv->abilities[cv->battlerDef], GetWeather()) & B_WEATHER_SUN)
         st->stage = 2;
+
+    // Custom: Rototiller boosts by 2 stages on Grassy Terrain instead of 1
+    if (cv->moveEffect == EFFECT_ROTOTILLER && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        st->stage = 2;
+
+    // Custom: Flower Shield boosts by 2 stages on Grassy Terrain instead of 1
+    if (cv->moveEffect == EFFECT_FLOWER_SHIELD && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        st->stage = 2;
+
+    // Custom: Aromatic Mist boosts by 2 stages on Misty Terrain instead of 1
+    if (cv->moveEffect == EFFECT_AROMATIC_MIST && (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN))
+        st->stage = 2;
+
+    // Custom: Gear Up boosts by 2 stages on Electric Terrain instead of 1
+    if (cv->moveEffect == EFFECT_GEAR_UP && (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN))
+        st->stage = 2;
+
+    // Custom: Magnetic Flux - Electric types without Electric Terrain (and without Plus/Minus) skip the Def boost
+    if (cv->moveEffect == EFFECT_MAGNETIC_FLUX && st->stat == STAT_DEF && st->stage > 0)
+    {
+        if (IS_BATTLER_OF_TYPE(cv->battlerDef, TYPE_ELECTRIC)
+         && cv->abilities[cv->battlerDef] != ABILITY_PLUS
+         && cv->abilities[cv->battlerDef] != ABILITY_MINUS
+         && !(gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN))
+            st->stage = 0; // Electric type without terrain/Plus/Minus gets SpDef only
+    }
 
     if (st->stage == STAT_CHANGE_FORCE_MAX)
         st->stage = 12;

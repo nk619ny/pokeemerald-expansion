@@ -2770,6 +2770,26 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
             gBattlescriptCurrInstr = BattleScript_ConstrictStickyActivates;
         }
         break;
+    case MOVE_EFFECT_TAR_SHOT_SLOW:
+        if (!gBattleMons[effectBattler].volatiles.syrupBomb
+         && !gBattleMons[effectBattler].volatiles.tarShot
+         && GetActiveGimmick(effectBattler) != GIMMICK_TERA)
+        {
+            struct Pokemon *mon = GetBattlerMon(battlerAtk);
+
+            // Set tar shot fire weakness volatile
+            gBattleMons[effectBattler].volatiles.tarShot = TRUE;
+
+            // Set syrup bomb speed drop volatiles
+            gBattleMons[effectBattler].volatiles.syrupBomb = TRUE;
+            gBattleMons[effectBattler].volatiles.stickySyrupedBy = battlerAtk;
+            gBattleMons[effectBattler].volatiles.syrupBombTimer = B_SYRUP_BOMB_TIMER;
+            gBattleMons[effectBattler].volatiles.syrupBombIsShiny = IsMonShiny(mon);
+            gBattleMons[effectBattler].volatiles.syrupBombSourceMove = MOVE_TAR_SHOT;
+            BattleScriptPush(battleScript);
+            gBattlescriptCurrInstr = BattleScript_TarShotStickyActivates;
+        }
+        break;
     case MOVE_EFFECT_SECRET_POWER:
         if (IsBattlerAlive(battlerAtk))
         {
@@ -3169,7 +3189,7 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SHARPSTEELFLOATS;
             BattleScriptPush(battleScript);
-            gBattlescriptCurrInstr = BattleScript_MoveEffectSteelsurge;
+            gBattlescriptCurrInstr = BattleScript_MoveEffectSteelsurgeOriginal;
         }
         break;
     case MOVE_EFFECT_DEFOG:

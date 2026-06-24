@@ -292,6 +292,10 @@ enum  BattleMoveEffects
     // Custom effects EFFECT_SANDSTORM_ALWAYS_HIT, EFFECT_SUN_ALWAYS_HIT, EFFECT_THUNDER_WAVE removed.
     // Their behavior is now handled by move flags (alwaysHitsInSandstorm, alwaysHitsInSun, alwaysHitsOnSameType)
     // checked in CanMoveSkipAccuracyCalc() in src/battle_util.c.
+    // Custom move effects
+    EFFECT_MAGNETIC_FLUX,  // Extended: boosts Electric types (SpDef) and Plus/Minus (Def+SpDef); terrain boosts Def for Electric types too
+    EFFECT_AROMATIC_MIST,  // Extended: targets user and ally; Misty Terrain gives +2 SpDef instead of +1
+    EFFECT_GEAR_UP,        // Extended: boosts Steel types and Plus/Minus holders on all sides; Electric Terrain gives +2 stages to both
     NUM_BATTLE_MOVE_EFFECTS,
 };
 

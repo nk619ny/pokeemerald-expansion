@@ -5837,8 +5837,8 @@ void ChangeTeraType(void)
 {
     u8 slot = gSpecialVar_0x8004;
     u16 teraType = gSpecialVar_0x8005;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
-        SetMonData(&gPlayerParty[slot], MON_DATA_TERA_TYPE, &teraType);
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES))
+        SetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_TERA_TYPE, &teraType);
 }
 
 // gSpecialVar_0x8004: party slot
@@ -5849,7 +5849,7 @@ void InflictStatus(void)
 {
     u8 slot = gSpecialVar_0x8004;
     u32 status = gSpecialVar_0x8005;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES))
     {
         if (status & STATUS1_SLEEP)
         {
@@ -5862,7 +5862,7 @@ void InflictStatus(void)
                 sleepTurns = (Random() % 7) + 2; // 2-8 turns
             status = (status & ~STATUS1_SLEEP) | STATUS1_SLEEP_TURN(sleepTurns);
         }
-        SetMonData(&gPlayerParty[slot], MON_DATA_STATUS, &status);
+        SetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_STATUS, &status);
     }
 }
 
@@ -5871,8 +5871,8 @@ void InflictStatus(void)
 u16 GetPartyMonCurrentHP(void)
 {
     u8 slot = gSpecialVar_0x8004;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
-        return GetMonData(&gPlayerParty[slot], MON_DATA_HP);
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES))
+        return GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_HP);
     return 0;
 }
 
@@ -5881,8 +5881,8 @@ u16 GetPartyMonCurrentHP(void)
 u16 GetPartyMonMaxHP(void)
 {
     u8 slot = gSpecialVar_0x8004;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
-        return GetMonData(&gPlayerParty[slot], MON_DATA_MAX_HP);
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES))
+        return GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_MAX_HP);
     return 0;
 }
 
@@ -5895,13 +5895,13 @@ void SetPartyMonHP(void)
     u8 slot = gSpecialVar_0x8004;
     u16 targetHP = gSpecialVar_0x8005;
 
-    if (slot >= PARTY_SIZE || !GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES))
+    if (slot >= PARTY_SIZE || !GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES))
     {
         gSpecialVar_Result = 2;
         return;
     }
 
-    u16 maxHP = GetMonData(&gPlayerParty[slot], MON_DATA_MAX_HP);
+    u16 maxHP = GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_MAX_HP);
     gSpecialVar_0x8008 = maxHP;
 
     if (targetHP == 0)
@@ -5916,7 +5916,7 @@ void SetPartyMonHP(void)
         return;
     }
 
-    SetMonData(&gPlayerParty[slot], MON_DATA_HP, &targetHP);
+    SetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_HP, &targetHP);
     gSpecialVar_Result = 0;
 }
 
@@ -6031,10 +6031,10 @@ void OpenNumericInput(void)
 void GetPartyMonTypes(void)
 {
     u8 slot = gSpecialVar_0x8004;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
-        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_IS_EGG))
     {
-        u16 species = GetMonData(&gPlayerParty[slot], MON_DATA_SPECIES);
+        u16 species = GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SPECIES);
         gSpecialVar_0x800A = GetSpeciesType(species, 0);
         gSpecialVar_0x800B = GetSpeciesType(species, 1);
         gSpecialVar_Result = 1;
@@ -6050,10 +6050,10 @@ void GetPartyMonTypes(void)
 void ComparePartyMonTeraType(void)
 {
     u8 slot = gSpecialVar_0x8004;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
-        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_IS_EGG))
     {
-        u16 teraType = GetMonData(&gPlayerParty[slot], MON_DATA_TERA_TYPE);
+        u16 teraType = GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_TERA_TYPE);
         gSpecialVar_0x800A = (teraType == gSpecialVar_0x8005);
         gSpecialVar_Result = 1;
     }
@@ -6070,10 +6070,10 @@ void ComparePartyMonTeraType(void)
 void CheckPartyMonHasEliteMoves(void)
 {
     u8 slot = gSpecialVar_0x8004;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
-        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_IS_EGG))
     {
-        gSpecialVar_Result = CanBoxMonRelearnMoves(&gPlayerParty[slot].box, MOVE_RELEARNER_ELITE_MOVES);
+        gSpecialVar_Result = CanBoxMonRelearnMoves(&gParties[B_TRAINER_PLAYER][slot].box, MOVE_RELEARNER_ELITE_MOVES);
     }
     else
     {
@@ -6095,11 +6095,11 @@ void TeachEliteMoves(void)
 void CheckPartyMonHasScriptEggMoves(void)
 {
     u8 slot = gSpecialVar_0x8004;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
-        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_IS_EGG))
     {
         gRelearnMode = RELEARN_MODE_EGG_SCRIPT;
-        gSpecialVar_Result = CanBoxMonRelearnMoves(&gPlayerParty[slot].box, MOVE_RELEARNER_EGG_MOVES);
+        gSpecialVar_Result = CanBoxMonRelearnMoves(&gParties[B_TRAINER_PLAYER][slot].box, MOVE_RELEARNER_EGG_MOVES);
         gRelearnMode = RELEARN_MODE_NONE;
     }
     else
@@ -6124,10 +6124,10 @@ void TeachScriptEggMoves(void)
 void ComparePartyMonNature(void)
 {
     u8 slot = gSpecialVar_0x8004;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
-        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_IS_EGG))
     {
-        u32 hiddenNature = GetMonData(&gPlayerParty[slot], MON_DATA_HIDDEN_NATURE);
+        u32 hiddenNature = GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_HIDDEN_NATURE);
         gSpecialVar_0x800A = (hiddenNature == gSpecialVar_0x8005);
         gSpecialVar_Result = 1;
     }
@@ -6145,11 +6145,11 @@ void ChangeNature(void)
 {
     u8 slot = gSpecialVar_0x8004;
     u32 newNature = gSpecialVar_0x8005;
-    if (slot < PARTY_SIZE && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
-        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_IS_EGG))
     {
-        SetMonData(&gPlayerParty[slot], MON_DATA_HIDDEN_NATURE, &newNature);
-        CalculateMonStats(&gPlayerParty[slot]);
+        SetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_HIDDEN_NATURE, &newNature);
+        CalculateMonStats(&gParties[B_TRAINER_PLAYER][slot]);
     }
 }
 
@@ -6162,10 +6162,10 @@ void GetPartyMonIV(void)
     u8 slot = gSpecialVar_0x8004;
     u8 stat = gSpecialVar_0x8005;
     if (slot < PARTY_SIZE && stat < NUM_STATS
-        && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
-        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+        && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_IS_EGG))
     {
-        gSpecialVar_Result = GetMonData(&gPlayerParty[slot], MON_DATA_HP_IV + stat);
+        gSpecialVar_Result = GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_HP_IV + stat);
     }
     else
     {
@@ -6183,10 +6183,10 @@ void SetPartyMonIV(void)
     u8 stat = gSpecialVar_0x8005;
     u32 newIV = gSpecialVar_0x8006;
     if (slot < PARTY_SIZE && stat < NUM_STATS && newIV <= MAX_PER_STAT_IVS
-        && GetMonData(&gPlayerParty[slot], MON_DATA_SANITY_HAS_SPECIES)
-        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+        && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES)
+        && !GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_IS_EGG))
     {
-        SetMonData(&gPlayerParty[slot], MON_DATA_HP_IV + stat, &newIV);
-        CalculateMonStats(&gPlayerParty[slot]);
+        SetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_HP_IV + stat, &newIV);
+        CalculateMonStats(&gParties[B_TRAINER_PLAYER][slot]);
     }
 }

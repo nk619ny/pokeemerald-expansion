@@ -1693,36 +1693,36 @@ enum __attribute__((packed)) Species
     SPECIES_CUSTOM_START = SPECIES_GLIMMORA_MEGA,
     // Add any custom species between here and SPECIES_CUSTOM_END
 
-#define SPECIES_BUTTERFREE_MEGA                         1573
-#define SPECIES_MACHAMP_MEGA                            1574
-#define SPECIES_KINGLER_MEGA                            1575
-#define SPECIES_LAPRAS_MEGA                             1576
-#define SPECIES_CENTISKORCH_MEGA                        1577
-#define SPECIES_TYPHLOSION_MEGA                         1578
-#define SPECIES_RILLABOOM_MEGA                          1579
-#define SPECIES_CINDERACE_MEGA                          1580
-#define SPECIES_INTELEON_MEGA                           1581
-#define SPECIES_MILOTIC_MEGA                            1582
-#define SPECIES_SUNFLORA_MEGA                           1583
-#define SPECIES_FLYGON_MEGA                             1584
-#define SPECIES_VIKAVOLT_MEGA                           1585
-#define SPECIES_VENUSAUR_MEGA_X                         1586
-#define SPECIES_BLASTOISE_MEGA_X                        1587
-#define SPECIES_SLOWKING_MEGA                           1588
+    SPECIES_BUTTERFREE_MEGA = 1573,
+    SPECIES_MACHAMP_MEGA = 1574,
+    SPECIES_KINGLER_MEGA = 1575,
+    SPECIES_LAPRAS_MEGA = 1576,
+    SPECIES_CENTISKORCH_MEGA = 1577,
+    SPECIES_TYPHLOSION_MEGA = 1578,
+    SPECIES_RILLABOOM_MEGA = 1579,
+    SPECIES_CINDERACE_MEGA = 1580,
+    SPECIES_INTELEON_MEGA = 1581,
+    SPECIES_MILOTIC_MEGA = 1582,
+    SPECIES_SUNFLORA_MEGA = 1583,
+    SPECIES_FLYGON_MEGA = 1584,
+    SPECIES_VIKAVOLT_MEGA = 1585,
+    SPECIES_VENUSAUR_MEGA_X = 1586,
+    SPECIES_BLASTOISE_MEGA_X = 1587,
+    SPECIES_SLOWKING_MEGA = 1588,
 
-#define SPECIES_CYNDAQUIL_HISUI                         1589
-#define SPECIES_QUILAVA_HISUI                           1590
-#define SPECIES_OSHAWOTT_HISUI                          1591
-#define SPECIES_DEWOTT_HISUI                            1592
-#define SPECIES_ROWLET_HISUI                            1593
-#define SPECIES_DARTRIX_HISUI                           1594
+    SPECIES_CYNDAQUIL_HISUI = 1589,
+    SPECIES_QUILAVA_HISUI = 1590,
+    SPECIES_OSHAWOTT_HISUI = 1591,
+    SPECIES_DEWOTT_HISUI = 1592,
+    SPECIES_ROWLET_HISUI = 1593,
+    SPECIES_DARTRIX_HISUI = 1594,
 
-#define SPECIES_KECLEON_MYSTERY                         1595
-#define SPECIES_SNORLAX_MEGA                            1596
-#define SPECIES_GARBODOR_MEGA                           1597
-#define SPECIES_ORBEETLE_MEGA                           1598
-#define SPECIES_COPPERAJAH_MEGA                         1599
-#define SPECIES_SANDACONDA_MEGA                         1600
+    SPECIES_KECLEON_MYSTERY = 1595,
+    SPECIES_SNORLAX_MEGA = 1596,
+    SPECIES_GARBODOR_MEGA = 1597,
+    SPECIES_ORBEETLE_MEGA = 1598,
+    SPECIES_COPPERAJAH_MEGA = 1599,
+    SPECIES_SANDACONDA_MEGA = 1600,
 
     SPECIES_CUSTOM_END,
 

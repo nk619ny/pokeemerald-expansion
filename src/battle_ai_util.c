@@ -6259,6 +6259,22 @@ static u32 AI_GetAdjustedStatStage(enum BattlerId battler, enum Move move, s32 s
      && GetAttackerWeather(gAiLogicData->holdEffects[battler], gAiLogicData->abilities[battler], AI_GetWeather()) & B_WEATHER_SUN)
         stage = 2;
 
+    // Custom: Rototiller doubles stage on Grassy Terrain
+    if (GetMoveEffect(move) == EFFECT_ROTOTILLER && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        stage = 2;
+
+    // Custom: Flower Shield doubles stage on Grassy Terrain
+    if (GetMoveEffect(move) == EFFECT_FLOWER_SHIELD && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        stage = 2;
+
+    // Custom: Aromatic Mist doubles stage on Misty Terrain
+    if (GetMoveEffect(move) == EFFECT_AROMATIC_MIST && (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN))
+        stage = 2;
+
+    // Custom: Gear Up doubles stage on Electric Terrain
+    if (GetMoveEffect(move) == EFFECT_GEAR_UP && (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN))
+        stage = 2;
+
     switch (gAiLogicData->abilities[battler])
     {
     case ABILITY_CONTRARY:

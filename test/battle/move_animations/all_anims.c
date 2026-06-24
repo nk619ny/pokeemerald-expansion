@@ -41,7 +41,7 @@ static void ParametrizeMovesAndSpecies(u32 j, u32 *pMove, u32 *pSpecies, u32 var
         *pMove = j;
         *pSpecies = SPECIES_JOLTEON;
     }
-    else if (effect == EFFECT_STAT_CHANGE_MAGNETIC) // User needs to have Plus
+    else if (effect == EFFECT_STAT_CHANGE_MAGNETIC || effect == EFFECT_GEAR_UP) // User needs to have Plus/Steel
     {
         *pMove = j;
         *pSpecies = SPECIES_KLINKLANG;
@@ -628,7 +628,7 @@ static void DoublesWhen(enum Move move, struct BattlePokemon *attacker, struct B
 static void DoublesScene(enum Move move, struct BattlePokemon *attacker)
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
-    if (effect == EFFECT_STAT_CHANGE_MAGNETIC) // For some reason, Magnetic Flux and Gear Up are failing in Double Battles here
+    if (effect == EFFECT_STAT_CHANGE_MAGNETIC || effect == EFFECT_GEAR_UP) // For some reason, Magnetic Flux and Gear Up are failing in Double Battles here
     {
         // Moves that fail in Double Battles
     }

@@ -639,9 +639,9 @@ static void ResetSleepTurns(void)
     for (i = 0; i < PARTY_SIZE; i++)
     {
         u32 status;
-        if (!GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES))
+        if (!GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SANITY_HAS_SPECIES))
             continue;
-        status = GetMonData(&gPlayerParty[i], MON_DATA_STATUS);
+        status = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_STATUS);
         if (status & STATUS1_SLEEP)
         {
             u32 sleepTurns;
@@ -652,7 +652,7 @@ static void ResetSleepTurns(void)
             else
                 sleepTurns = (Random() % 7) + 2; // 2-8 turns
             status = (status & ~STATUS1_SLEEP) | STATUS1_SLEEP_TURN(sleepTurns);
-            SetMonData(&gPlayerParty[i], MON_DATA_STATUS, &status);
+            SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_STATUS, &status);
         }
     }
 }

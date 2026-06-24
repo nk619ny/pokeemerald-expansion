@@ -1916,4 +1916,26 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
 
     // Custom effects EFFECT_SANDSTORM_ALWAYS_HIT, EFFECT_SUN_ALWAYS_HIT, EFFECT_THUNDER_WAVE removed.
     // Their behavior is now handled by move flags checked in CanMoveSkipAccuracyCalc().
+
+    // Custom move effects
+    [EFFECT_MAGNETIC_FLUX] =
+    {
+        .battleScript = BattleScript_EffectStatChange,
+        .battleTvScore = 0,
+        .encourageEncore = TRUE,
+    },
+
+    [EFFECT_AROMATIC_MIST] =
+    {
+        .battleScript = BattleScript_EffectStatChange,
+        .battleTvScore = 0,
+        .encourageEncore = TRUE,
+    },
+
+    [EFFECT_GEAR_UP] =
+    {
+        .battleScript = BattleScript_EffectStatChange,
+        .battleTvScore = 0,
+        .encourageEncore = TRUE,
+    },
 };

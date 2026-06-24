@@ -413,6 +413,63 @@ enum
     OBJ_EVENT_GFX_PUSHABLE_BOULDER_FRLG,
     OBJ_EVENT_GFX_CUTTABLE_TREE_FRLG,
     OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG,
+    // Custom ORAS graphics
+    OBJ_EVENT_GFX_COURTNEY_ORAS,
+    OBJ_EVENT_GFX_TABITHA_ORAS,
+    OBJ_EVENT_GFX_SHELLY_ORAS,
+    OBJ_EVENT_GFX_MATT_ORAS,
+    OBJ_EVENT_GFX_ARCHIE_ORAS,
+    OBJ_EVENT_GFX_MAXIE_ORAS,
+    OBJ_EVENT_GFX_BRAWLY_ORAS,
+    OBJ_EVENT_GFX_VITO,
+    OBJ_EVENT_GFX_TURO,
+    OBJ_EVENT_GFX_SADA,
+    OBJ_EVENT_GFX_DIVER_F,
+    OBJ_EVENT_GFX_DIVER_M,
+    OBJ_EVENT_GFX_LISIA,
+    OBJ_EVENT_GFX_ZINNIA,
+    OBJ_EVENT_GFX_BACKPACKER_ORAS,
+    OBJ_EVENT_GFX_FAIRY_TALE_GIRL_ORAS,
+    OBJ_EVENT_GFX_DELINQUENT_ORAS,
+    OBJ_EVENT_GFX_STREET_THUG_ORAS,
+    OBJ_EVENT_GFX_ACE_TRAINER_F_ORAS,
+    OBJ_EVENT_GFX_ACE_TRAINER_M_ORAS,
+    OBJ_EVENT_GFX_AROMA_LADY_ORAS,
+    OBJ_EVENT_GFX_BATTLE_GIRL_ORAS,
+    OBJ_EVENT_GFX_BEAUTY_ORAS,
+    OBJ_EVENT_GFX_BIRD_KEEPER_ORAS,
+    OBJ_EVENT_GFX_BLACK_BELT_ORAS,
+    OBJ_EVENT_GFX_BREEDER_F_ORAS,
+    OBJ_EVENT_GFX_BREEDER_M_ORAS,
+    OBJ_EVENT_GFX_BUG_MANIAC_ORAS,
+    OBJ_EVENT_GFX_COLLECTOR_ORAS,
+    OBJ_EVENT_GFX_DRAGON_TAMER_ORAS,
+    OBJ_EVENT_GFX_GUITARIST_ORAS,
+    OBJ_EVENT_GFX_HIKER_ORAS,
+    OBJ_EVENT_GFX_KINDLER_ORAS,
+    OBJ_EVENT_GFX_LADY_ORAS,
+    OBJ_EVENT_GFX_LASS_ORAS,
+    OBJ_EVENT_GFX_NINJA_BOY_ORAS,
+    OBJ_EVENT_GFX_PARASOL_LADY_ORAS,
+    OBJ_EVENT_GFX_POKEFAN_F_ORAS,
+    OBJ_EVENT_GFX_POKEFAN_M_ORAS,
+    OBJ_EVENT_GFX_RANGER_F_ORAS,
+    OBJ_EVENT_GFX_RANGER_M_ORAS,
+    OBJ_EVENT_GFX_RICH_BOY_ORAS,
+    OBJ_EVENT_GFX_RUIN_MANIAC_ORAS,
+    OBJ_EVENT_GFX_TRIATHLETE_RUNNING_M_ORAS,
+    OBJ_EVENT_GFX_TWINS_ORAS,
+    OBJ_EVENT_GFX_EXPERT_F_ORAS,
+    OBJ_EVENT_GFX_EXPERT_M_ORAS,
+    OBJ_EVENT_GFX_HEX_MANIAC_ORAS,
+    OBJ_EVENT_GFX_LASS_TEAMMATES_ORAS,
+    OBJ_EVENT_GFX_POKEMANIAC_ORAS,
+    OBJ_EVENT_GFX_SCHOOLKID_F_ORAS,
+    OBJ_EVENT_GFX_TRIATHLETE_RUNNING_F_ORAS,
+    // Custom item icons
+    OBJ_EVENT_GFX_TM,
+    OBJ_EVENT_GFX_VITAMIN,
+    OBJ_EVENT_GFX_MEGA_STONE,
     NUM_OBJ_EVENT_GFX,
 };
 
@@ -420,72 +477,9 @@ enum
 // #define OBJ_EVENT_GFX_MEW OBJ_EVENT_GFX_NINJA_BOY
 // #define OBJ_EVENT_GFX_LUGIA OBJ_EVENT_GFX_NINJA_BOY
 
-// Custom objects
-#define OBJ_EVENT_GFX_COURTNEY_ORAS              388
-#define OBJ_EVENT_GFX_TABITHA_ORAS               389
-#define OBJ_EVENT_GFX_SHELLY_ORAS                390
-#define OBJ_EVENT_GFX_MATT_ORAS                  391
-#define OBJ_EVENT_GFX_ARCHIE_ORAS                392
-#define OBJ_EVENT_GFX_MAXIE_ORAS                 393
-#define OBJ_EVENT_GFX_BRAWLY_ORAS                394
-#define OBJ_EVENT_GFX_VITO                       395
-#define OBJ_EVENT_GFX_TURO                       396
-#define OBJ_EVENT_GFX_SADA                       397
-
-#define OBJ_EVENT_GFX_DIVER_F                    398
-#define OBJ_EVENT_GFX_DIVER_M                    399
-#define OBJ_EVENT_GFX_LISIA                      400
-#define OBJ_EVENT_GFX_ZINNIA                     401
-
-#define OBJ_EVENT_GFX_BACKPACKER_ORAS            402
-#define OBJ_EVENT_GFX_FAIRY_TALE_GIRL_ORAS       403
-#define OBJ_EVENT_GFX_DELINQUENT_ORAS            404
-#define OBJ_EVENT_GFX_STREET_THUG_ORAS           405
-
-#define OBJ_EVENT_GFX_ACE_TRAINER_F_ORAS         406
-#define OBJ_EVENT_GFX_ACE_TRAINER_M_ORAS         407
-#define OBJ_EVENT_GFX_AROMA_LADY_ORAS            408
-#define OBJ_EVENT_GFX_BATTLE_GIRL_ORAS           409
-#define OBJ_EVENT_GFX_BEAUTY_ORAS                410
-#define OBJ_EVENT_GFX_BIRD_KEEPER_ORAS           411
-#define OBJ_EVENT_GFX_BLACK_BELT_ORAS            412
-#define OBJ_EVENT_GFX_BREEDER_F_ORAS             413
-#define OBJ_EVENT_GFX_BREEDER_M_ORAS             414
-#define OBJ_EVENT_GFX_BUG_MANIAC_ORAS            415
-#define OBJ_EVENT_GFX_COLLECTOR_ORAS             416
-#define OBJ_EVENT_GFX_DRAGON_TAMER_ORAS          417
-#define OBJ_EVENT_GFX_GUITARIST_ORAS             418
-#define OBJ_EVENT_GFX_HIKER_ORAS                 419
-#define OBJ_EVENT_GFX_KINDLER_ORAS               420
-#define OBJ_EVENT_GFX_LADY_ORAS                  421
-#define OBJ_EVENT_GFX_LASS_ORAS                  422
-#define OBJ_EVENT_GFX_NINJA_BOY_ORAS             423
-#define OBJ_EVENT_GFX_PARASOL_LADY_ORAS          424
-#define OBJ_EVENT_GFX_POKEFAN_F_ORAS             425
-#define OBJ_EVENT_GFX_POKEFAN_M_ORAS             426
-#define OBJ_EVENT_GFX_RANGER_F_ORAS              427
-#define OBJ_EVENT_GFX_RANGER_M_ORAS              428
-#define OBJ_EVENT_GFX_RICH_BOY_ORAS              429
-#define OBJ_EVENT_GFX_RUIN_MANIAC_ORAS           430
-#define OBJ_EVENT_GFX_TRIATHLETE_RUNNING_M_ORAS            431
-#define OBJ_EVENT_GFX_TWINS_ORAS                           432
-#define OBJ_EVENT_GFX_EXPERT_F_ORAS                        433
-#define OBJ_EVENT_GFX_EXPERT_M_ORAS                        434
-#define OBJ_EVENT_GFX_HEX_MANIAC_ORAS                      435
-#define OBJ_EVENT_GFX_LASS_TEAMMATES_ORAS                  436
-#define OBJ_EVENT_GFX_POKEMANIAC_ORAS                      437
-#define OBJ_EVENT_GFX_SCHOOLKID_F_ORAS                     438
-#define OBJ_EVENT_GFX_TRIATHLETE_RUNNING_F_ORAS            439
-
-// Custom item icons
-#define OBJ_EVENT_GFX_TM                                   440
-#define OBJ_EVENT_GFX_VITAMIN                              441
-#define OBJ_EVENT_GFX_MEGA_STONE                           442
-
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-//#define NUM_OBJ_EVENT_GFX                        443
 
 
 // These are dynamic object gfx ids.

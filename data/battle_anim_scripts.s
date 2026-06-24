@@ -6680,10 +6680,6 @@ IceBurnUnleash:
 	end
 
 gBattleAnimMove_FreezeShockOneTurn::
-	loadspritegfx ANIM_TAG_SPARK
-	loadspritegfx ANIM_TAG_SPARK_2
-	loadspritegfx ANIM_TAG_ICE_CHUNK @Ice Ball
-	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT @Electric Circle
 @ Charge phase
 	createvisualtask AnimTask_HorizontalShake, 5, ANIM_ATTACKER, 2, 16
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET
@@ -6719,10 +6715,6 @@ gBattleAnimMove_FreezeShockOneTurn::
 	end
 
 gBattleAnimMove_IceBurnOneTurn::
-	loadspritegfx ANIM_TAG_BLACK_SMOKE @smoke
-	loadspritegfx ANIM_TAG_ICE_CHUNK @white color
-	loadspritegfx ANIM_TAG_ICE_CRYSTALS @ice
-	loadspritegfx ANIM_TAG_SMALL_EMBER
 @ Charge phase
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 0, 12, RGB_BLACK
 	waitforvisualfinish

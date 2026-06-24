@@ -51,10 +51,10 @@ void HealPlayerParty(void)
 void HealPlayerPartyNoRevive(void)
 {
     u32 i;
-    for (i = 0; i < gPlayerPartyCount; i++)
+    for (i = 0; i < gPartiesCount[B_TRAINER_PLAYER]; i++)
     {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_HP) > 0)
-            HealPokemon(&gPlayerParty[i]);
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HP) > 0)
+            HealPokemon(&gParties[B_TRAINER_PLAYER][i]);
     }
 }
 

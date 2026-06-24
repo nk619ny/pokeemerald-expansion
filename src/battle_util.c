@@ -4785,14 +4785,14 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         // sandstorm damage immunity in battle_end_turn.c, and AI helpers in battle_ai_util.c / battle_ai_switch.c.
         case ABILITY_WIND_RIDER:
             if (!gBattleMons[battler].volatiles.weatherAbilityDone
-             && (gBattleWeather & B_WEATHER_SANDSTORM) && HasWeatherEffect()
+             && (GetWeather() & B_WEATHER_SANDSTORM)
              && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility)
              && !gBattleMons[battler].volatiles.transformed)
             {
                 gBattleMons[battler].volatiles.weatherAbilityDone = TRUE;
-                gBattleScripting.battler = battler;
-                SET_STATCHANGER(STAT_ATK, 1, FALSE);
-                BattleScriptCall(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
+                gEffectBattler = gBattlerAbility = battler;
+                SetStatChange(battler, STAT_ATK, 1);
+                BattleScriptCall(BattleScript_AbilityStatChange);
                 effect++;
             }
             break;
@@ -6725,7 +6725,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         {
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.25));
             if (ctx->updateFlags)
-                RecordAbilityBattle(battlerDef, ctx->abilityDef);
+                RecordAbilityBattle(battlerDef, ctx->abilities[ctx->battlerDef]);
         }
         break;
     case ABILITY_WATER_BUBBLE:
@@ -6741,23 +6741,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         {
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
             if (ctx->updateFlags)
-                RecordAbilityBattle(battlerDef, ctx->abilityDef);
-        }
-        break;
-    case ABILITY_DESERT_SPIRIT:
-        if (moveType == TYPE_GROUND)
-        {
-            modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
-            if (ctx->updateFlags)
                 RecordAbilityBattle(battlerDef, ctx->abilities[ctx->battlerDef]);
-        }
-        break;
-    case ABILITY_SUB_ZERO:
-        if (moveType == TYPE_ICE)
-        {
-            modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
-            if (ctx->updateFlags)
-                RecordAbilityBattle(battlerDef, ctx->abilityDef);
         }
         break;
     case ABILITY_DESERT_SPIRIT:
@@ -10450,9 +10434,9 @@ bool32 CanMoveSkipAccuracyCalc(enum BattlerId battlerAtk, enum BattlerId battler
         else if ((attackerWeather & B_WEATHER_ICY_ANY) && MoveAlwaysHitsInHailSnow(move))
             effect = TRUE;
         // Custom: sandstorm and sun weather-based accuracy bypass (like rain/hail above)
-        else if (MoveAlwaysHitsInSandstorm(move) && IsBattlerWeatherAffected(battlerDef, B_WEATHER_SANDSTORM))
+        else if ((attackerWeather & B_WEATHER_SANDSTORM) && MoveAlwaysHitsInSandstorm(move))
             effect = TRUE;
-        else if (MoveAlwaysHitsInSun(move) && IsBattlerWeatherAffected(battlerDef, B_WEATHER_SUN))
+        else if ((attackerWeather & B_WEATHER_SUN) && MoveAlwaysHitsInSun(move))
             effect = TRUE;
 
         if (effect)

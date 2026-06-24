@@ -110,8 +110,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
-      "x": 19,
-      "y": 12,
+      "x": 40,
+      "y": 51,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -337,8 +337,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 15,
-      "y": 61,
+      "x": 39,
+      "y": 51,
       "elevation": 0,
       "item": "ITEM_PROTEIN",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_PROTEIN"

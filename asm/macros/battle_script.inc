@@ -1410,11 +1410,6 @@
 	.4byte \jumpInstr
 	.endm
 
-	.macro trytarshotslow failInstr:req
-	callnative BS_TryTarShotSlow
-	.4byte \failInstr
-	.endm
-
 	.macro jumpifnoberry battler:req, jumpInstr:req
 	callnative BS_JumpIfNoBerry
 	.byte \battler

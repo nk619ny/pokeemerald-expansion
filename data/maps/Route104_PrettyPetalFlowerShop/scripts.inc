@@ -176,23 +176,27 @@ Route104_PrettyPetalFlowerShop_EventScript_RandomBerryGirl::
 	goto_if_set FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY, Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry
 # 89 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	msgbox Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers, MSGBOX_DEFAULT
-	giverandomberry BERRY_ID_CHERI, BERRY_ID_PERSIM
+# 90 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	//giverandomberry BERRY_ID_CHERI, BERRY_ID_PERSIM
+# 91 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	giverandomberry BERRY_ID_ORAN, BERRY_ID_ORAN
+# 92 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
-# 94 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+# 93 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	setflag FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY
+# 94 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
 # 95 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
+	release
 # 96 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
-	release
-# 97 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	end
-# 98 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+# 97 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 
-# 99 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+# 98 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry::
-# 100 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+# 99 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
-# 101 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+# 100 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	release
-# 102 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+# 101 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	end

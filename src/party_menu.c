@@ -6894,7 +6894,7 @@ void ItemUseCB_ContestPass(u8 taskId, TaskFunc task)
 {
     PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
     PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
-    SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_CONTEST_PASS);
+    SetPartyMonSelectionActions(gParties[B_TRAINER_PLAYER], gPartyMenu.slotId, ACTIONS_CONTEST_PASS);
     DisplaySelectionWindow(SELECTWINDOW_CONTEST_PASS);
     DisplayPartyMenuStdMessage(PARTY_MSG_WHICH_COSTUME);
     gTasks[taskId].data[0] = 0xFF;

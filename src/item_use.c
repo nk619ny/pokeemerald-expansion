@@ -796,10 +796,10 @@ void ItemUseOutOfBattle_CoinCase(u8 taskId)
 
 void ItemUseOutOfBattle_UnlimitedRepel(u8 taskId)
 {
-    bool8 infiniteRepelOn = FlagGet(OW_FLAG_NO_ENCOUNTER);
+    bool8 infiniteRepelOn = FlagGet(WE_FLAG_NO_ENCOUNTER);
     if (!infiniteRepelOn)
     {
-        FlagToggle(OW_FLAG_NO_ENCOUNTER);
+        FlagToggle(WE_FLAG_NO_ENCOUNTER);
         PlaySE(SE_REPEL);
         if(gTasks[taskId].tUsingRegisteredKeyItem){
             DisplayItemMessageOnField(taskId, gText_UnlimitedRepelOn, Task_CloseCantUseKeyItemMessage);
@@ -810,7 +810,7 @@ void ItemUseOutOfBattle_UnlimitedRepel(u8 taskId)
     }
     else
     {
-        FlagToggle(OW_FLAG_NO_ENCOUNTER);
+        FlagToggle(WE_FLAG_NO_ENCOUNTER);
         PlaySE(SE_PC_OFF);
         if (gTasks[taskId].tUsingRegisteredKeyItem){
             DisplayItemMessageOnField(taskId, gText_UnlimitedRepelOff, Task_CloseCantUseKeyItemMessage);

@@ -1457,6 +1457,20 @@ static enum CancelerResult CancelerMoveEffectFailureTarget(struct BattleCalcValu
                 continue;
             }
             break;
+        case EFFECT_MAGNETIC_FLUX:
+            // Affects Electric types and Plus/Minus holders
+            if (cv->abilities[battlerDef] != ABILITY_PLUS
+             && cv->abilities[battlerDef] != ABILITY_MINUS
+             && !IS_BATTLER_OF_TYPE(battlerDef, TYPE_ELECTRIC))
+            {
+                battleScript = BattleScript_ButItFailed;
+            }
+            else
+            {
+                numAffectedTargets++;
+                continue;
+            }
+            break;
         default:
             continue;
         }

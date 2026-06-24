@@ -3341,7 +3341,7 @@ const u16 *GetSpeciesTeachableLearnset(enum Species species)
     return learnset;
 }
 
-const u16 *GetSpeciesEliteLearnset(u16 species)
+const u16 *GetSpeciesEliteLearnset(enum Species species)
 {
     const u16 *learnset = gSpeciesInfo[SanitizeSpeciesId(species)].eliteLearnset;
     if (learnset == NULL)

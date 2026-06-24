@@ -15024,8 +15024,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Rototiller"),
         .description = COMPOUND_STRING(
-            "Ups the Attack and Sp. Atk\n"
-            "of Grass-type Pokémon."),
+            "Ups Atk+SpAtk of Grass types;\n"
+            "+2 stages on Grassy Terrain."),
         .effect = EFFECT_ROTOTILLER,
         .power = 0,
         .type = TYPE_GROUND,
@@ -15437,8 +15437,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Flower Shield"),
         .description = COMPOUND_STRING(
-            "Raises the Defense of\n"
-            "Grass-type Pokémon."),
+            "Ups Defense of Grass types;\n"
+            "+2 stages on Grassy Terrain."),
         .effect = EFFECT_FLOWER_SHIELD,
         .power = 0,
         .type = TYPE_FAIRY,
@@ -15916,8 +15916,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Aromatic Mist"),
         .description = COMPOUND_STRING(
-            "Raises the Sp. Def of\n"
-            "self and partner."),
+            "Raises Sp.Def of self and\n"
+            "partner; +2 in Misty Terrain."),
         .effect = EFFECT_AROMATIC_MIST,
         .power = 0,
         .type = TYPE_FAIRY,
@@ -16058,8 +16058,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Magnetic Flux"),
         .description = COMPOUND_STRING(
-            "Boosts the defenses of\n"
-            "Electric, Plus, or Minus."),
+            "Boosts Sp.Def of Electric;\n"
+            "Def+SpDef for Plus/Minus."),
         .effect = EFFECT_MAGNETIC_FLUX,
         .power = 0,
         .type = TYPE_ELECTRIC,
@@ -16073,11 +16073,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .ignoresProtect = TRUE,
         .ignoresSubstitute = TRUE,
         .mirrorMoveBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
-            .defense = 1,
-            .spDef = 1,
-        }),
+        .additionalEffects = ADDITIONAL_EFFECTS(
+            {
+                .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+                .spDef = 1,
+            },
+            {
+                .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+                .defense = 1,
+            }),
+        // SpDef applies to all Electric types and Plus/Minus holders.
+        // Def applies to Plus/Minus holders and Electric types on Electric Terrain.
+        // (AdjustStatStage blocks Def for Electric-only battlers without terrain.)
         .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
@@ -16959,14 +16966,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Gear Up"),
         .description = COMPOUND_STRING(
-            "Boosts the attacks of\n"
-            "those with Plus or Minus."),
-        .effect = EFFECT_STAT_CHANGE_MAGNETIC,
+            "Ups Atk+SpAtk of Steel/Plus/\n"
+            "Minus; +2 on Electric Terrain."),
+        .effect = EFFECT_GEAR_UP,
         .power = 0,
         .type = TYPE_STEEL,
         .accuracy = 0,
         .pp = 20,
-        .target = TARGET_USER_AND_ALLY,
+        .target = TARGET_ALL_BATTLERS,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
@@ -18428,7 +18435,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Lowers the foe's Speed and\n"
             "makes it weak to Fire."),
-        .effect = EFFECT_TAR_SHOT,
+        .effect = EFFECT_HIT,
         .power = 0,
         .type = TYPE_ROCK,
         .accuracy = 100,
@@ -18442,8 +18449,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = STAT_CHANGE_EFFECT_MINUS,
-            .speed = 1,
+            .moveEffect = MOVE_EFFECT_TAR_SHOT_SLOW,
+            .chance = 100,
         }),
         .battleAnimScript = gBattleAnimMove_TarShot,
     },
@@ -20405,8 +20412,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .windMove = TRUE,
         .alwaysHitsInRain = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = B_USE_FROSTBITE == TRUE ? MOVE_EFFECT_FREEZE_OR_FROSTBITE : MOVE_EFFECT_SPD_MINUS_1,
+            .moveEffect = B_USE_FROSTBITE == TRUE ? MOVE_EFFECT_FREEZE_OR_FROSTBITE : MOVE_EFFECT_STAT_MINUS,
             .chance = B_USE_FROSTBITE == TRUE ? 20 : 30,
+            .speed = B_USE_FROSTBITE == TRUE ? 0 : 1,
         }),
         .battleAnimScript = gBattleAnimMove_BleakwindStorm,
     },
