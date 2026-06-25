@@ -12613,19 +12613,25 @@ void BS_TryFriskMessage(void)
     {
         enum BattlerId battler = gBattleScripting.battler;
 
-        if (!IsBattlerAlly(gEffectBattler, battler)
-         && IsBattlerAlive(battler)
-         && gBattleMons[battler].item != ITEM_NONE)
+        if (!IsBattlerAlly(gEffectBattler, battler) && IsBattlerAlive(battler))
         {
-            gLastUsedItem = gBattleMons[battler].item;
-            RecordItemEffectBattle(battler, GetBattlerHoldEffectIgnoreNegation(battler));
-            BattleScriptCall(BattleScript_FriskMsg);
-            return;
+            // Apply Embargo to all alive opponents, even those without items.
+            if (!gBattleMons[battler].volatiles.embargo)
+            {
+                gBattleMons[battler].volatiles.embargo = TRUE;
+                gBattleMons[battler].volatiles.embargoTimer = B_FRISK_EMBARGO_TIMER;
+            }
+
+            // Show the Frisk message only for opponents holding items.
+            if (gBattleMons[battler].item != ITEM_NONE)
+            {
+                gLastUsedItem = gBattleMons[battler].item;
+                RecordItemEffectBattle(battler, GetBattlerHoldEffectIgnoreNegation(battler));
+                BattleScriptCall(BattleScript_FriskMsg);
+                return;
+            }
         }
-        else
-        {
-            gBattleScripting.battler++;
-        }
+        gBattleScripting.battler++;
     }
 
     gBattlescriptCurrInstr = cmd->nextInstr;

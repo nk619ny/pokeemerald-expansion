@@ -1424,17 +1424,17 @@ static enum CancelerResult CancelerMoveEffectFailureTarget(struct BattleCalcValu
                 continue;
             }
             break;
-        case EFFECT_CAPTIVATE:
-            if (!AreBattlersOfOppositeGender(cv->battlerAtk, battlerDef))
-            {
-                battleScript = BattleScript_ButItFailed;
-            }
-            else
-            {
-                numAffectedTargets++;
-                continue;
-            }
-            break;
+//        case EFFECT_CAPTIVATE:
+//           if (!AreBattlersOfOppositeGender(cv->battlerAtk, battlerDef))
+//            {
+//                battleScript = BattleScript_ButItFailed;
+//            }
+//            else
+//            {
+//                numAffectedTargets++;
+//                continue;
+//            }
+//            break;
         case EFFECT_STAT_CHANGE_ON_STATUS:
             if (!(gBattleMons[battlerDef].status1 & GetMoveStatusOnStatChange(cv->move)))
             {
@@ -1563,11 +1563,19 @@ static enum CancelerResult CancelerExplodingDamp(struct BattleCalcValues *cv)
         return CANCELER_RESULT_SUCCESS;
 
     u32 dampBattler = IsAbilityOnField(ABILITY_DAMP);
+    enum Ability blockingAbility = ABILITY_DAMP;
+    
+    if (!dampBattler)
+    {
+        dampBattler = IsAbilityOnField(ABILITY_MUDDY);
+        blockingAbility = ABILITY_MUDDY;
+    }
+    
     if (dampBattler)
     {
         gBattlerAbility = dampBattler - 1;
-        gLastUsedAbility = ABILITY_DAMP;
-        RecordAbilityBattle(gBattlerAbility, ABILITY_DAMP);
+        gLastUsedAbility = blockingAbility;
+        RecordAbilityBattle(gBattlerAbility, blockingAbility);
         gBattlescriptCurrInstr = BattleScript_PokemonCannotUseMove;
         return CANCELER_RESULT_FAILURE;
     }

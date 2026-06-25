@@ -3205,6 +3205,7 @@ BattleScript_WeatherAbilityActivates::
 	call BattleScript_AbilityPopUp
 	jumpifability BS_SCRIPTING, ABILITY_SAND_SPIT, BattleScript_SandSpitActivates
 	jumpifability BS_SCRIPTING, ABILITY_SANDGEIST, BattleScript_SandSpitActivates @ Custom - Sandgeist clone of Sand Spit
+	jumpifability BS_SCRIPTING, ABILITY_SPOUT_SPRAY, BattleScript_SpoutSprayActivates @ Custom - Spout Spray rain variant of Sand Spit
 	printfromtable gAbilityWeatherChangeStringId
 BattleScript_WeatherAbilityActivatesContinue:
 	waitstate
@@ -3214,6 +3215,10 @@ BattleScript_WeatherAbilityActivatesContinue:
 
 BattleScript_SandSpitActivates::
 	printstring STRINGID_ASANDSTORMKICKEDUP
+	goto BattleScript_WeatherAbilityActivatesContinue
+
+BattleScript_SpoutSprayActivates:: @ Custom - rain variant of Sand Spit
+	printstring STRINGID_STARTEDTORAIN
 	goto BattleScript_WeatherAbilityActivatesContinue
 
 BattleScript_WeatherContinues::

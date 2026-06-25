@@ -11953,7 +11953,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Captivates foe in order to\n"
             "sharply reduce its Sp. Atk."),
-        .effect = EFFECT_CAPTIVATE,
+        .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_NORMAL,
         .accuracy = 100,
@@ -19346,7 +19346,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .dampBanned = TRUE,
         .argument.terrainBoost = {
             .terrain = STATUS_FIELD_MISTY_TERRAIN,
-            .percent = 50,
+            .percent = 30,
             .groundCheck = GROUND_CHECK_USER,
         },
         .contestEffect = CONTEST_EFFECT_GREAT_APPEAL_BUT_NO_MORE_MOVES,

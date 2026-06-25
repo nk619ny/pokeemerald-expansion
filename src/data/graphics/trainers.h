@@ -1278,4 +1278,71 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PainterFrlg, gTrainerPalette_PainterFrlg),
     },
+    // Custom ORAS Trainer Pics
+    [TRAINER_PIC_COURTNEY_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CourtneyORAS, gTrainerPalette_CourtneyORAS),
+    },
+    [TRAINER_PIC_TABITHA_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_TabithaORAS, gTrainerPalette_TabithaORAS),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_Tabitha, gTrainerBackPicPalette_Tabitha, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_SHELLY_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ShellyORAS, gTrainerPalette_ShellyORAS),
+    },
+    [TRAINER_PIC_MATT_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MattORAS, gTrainerPalette_MattORAS),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_Matt, gTrainerBackPicPalette_Matt, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_ARCHIE_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ArchieORAS, gTrainerPalette_ArchieORAS),
+    },
+    [TRAINER_PIC_MAXIE_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MaxieORAS, gTrainerPalette_MaxieORAS),
+    },
+    [TRAINER_PIC_STREET_THUG_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_StreetThugORAS, gTrainerPalette_StreetThugORAS),
+    },
+    [TRAINER_PIC_BACKPACKER_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BackpackerORAS, gTrainerPalette_BackpackerORAS),
+    },
+    [TRAINER_PIC_DELINQUENT_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_DelinquentORAS, gTrainerPalette_DelinquentORAS),
+    },
+    [TRAINER_PIC_DIVER_F_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_DiverFORAS, gTrainerPalette_DiverFORAS),
+    },
+    [TRAINER_PIC_DIVER_M_ORAS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_DiverMORAS, gTrainerPalette_DiverMORAS),
+    },
+    [TRAINER_PIC_PROFESSOR_TURO] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ProfessorTuro, gTrainerPalette_ProfessorTuro),
+    },
+    [TRAINER_PIC_PROFESSOR_SADA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ProfessorSada, gTrainerPalette_ProfessorSada),
+    },
+    [TRAINER_PIC_VITO] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Vito, gTrainerPalette_Vito),
+    },
+    [TRAINER_PIC_LISIA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Lisia, gTrainerPalette_Lisia),
+    },
+    [TRAINER_PIC_ZINNIA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Zinnia, gTrainerPalette_Zinnia),
+    },
 };

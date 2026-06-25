@@ -3404,9 +3404,13 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         // in addition to the vanilla Tailwind check. See also: ABILITYEFFECT_ON_WEATHER Wind Rider case.
         case ABILITY_WIND_RIDER:
             if (shouldAbilityTrigger
-             && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility)
-             && ((gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_TAILWIND) || (gBattleWeather & B_WEATHER_SANDSTORM && HasWeatherEffect())))
+            && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility)
+            && ((gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_TAILWIND)
+            || (gBattleWeather & B_WEATHER_SANDSTORM && HasWeatherEffect())))
             {
+                // Prevent double-trigger: weather-continues fires ABILITYEFFECT_ON_WEATHER every turn.
+                if (gBattleWeather & B_WEATHER_SANDSTORM && HasWeatherEffect())
+                    gBattleMons[battler].volatiles.weatherAbilityDone = TRUE;
                 gEffectBattler = gBattlerAbility = battler;
                 SetStatChange(battler, STAT_ATK, 1);
                 BattleScriptCall(BattleScript_AbilityStatChange);
@@ -3540,6 +3544,34 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 gEffectBattler = gBattlerAbility = battler;
                 SetStatChange(battler, stat, 1);
                 BattleScriptCall(BattleScript_AbilityStatChange);
+                effect++;
+            }
+            break;
+        case ABILITY_DAMP:
+            if (!shouldAbilityTrigger)
+                break;
+            if (!(gFieldStatuses & STATUS_FIELD_WATERSPORT))
+            {
+                gFieldStatuses |= STATUS_FIELD_WATERSPORT;
+                gFieldTimers.waterSportTimer = B_CUSTOMIZED_ABILITY_SPORT_TIMER;
+                gFieldTimers.waterSportFromAbility = TRUE;
+                SaveBattlerAttacker(gBattlerAttacker);
+                gBattlerAttacker = battler;
+                BattleScriptCall(BattleScript_DampActivates);
+                effect++;
+            }
+            break;
+        case ABILITY_MUDDY:
+            if (!shouldAbilityTrigger)
+                break;
+            if (!(gFieldStatuses & STATUS_FIELD_MUDSPORT))
+            {
+                gFieldStatuses |= STATUS_FIELD_MUDSPORT;
+                gFieldTimers.mudSportTimer = B_CUSTOMIZED_ABILITY_SPORT_TIMER;
+                gFieldTimers.mudSportFromAbility = TRUE;
+                SaveBattlerAttacker(gBattlerAttacker);
+                gBattlerAttacker = battler;
+                BattleScriptCall(BattleScript_MuddyActivates);
                 effect++;
             }
             break;
@@ -4219,6 +4251,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
+        case ABILITY_SANDGEIST: // Custom: clone of Sand Spit
         case ABILITY_SAND_SPIT:
             if (!gBattleStruct->unableToUseMove
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
@@ -4230,6 +4263,24 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     effect++;
                 }
                 else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SANDSTORM, ABILITY_NONE)) // use ability none since it's not a switch in ability weather setter
+                {
+                    gBattleScripting.battler = battler;
+                    BattleScriptCall(BattleScript_WeatherAbilityActivates);
+                    effect++;
+                }
+            }
+            break;
+        case ABILITY_SPOUT_SPRAY: // Custom: rain variant of Sand Spit
+            if (!gBattleStruct->unableToUseMove
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
+             && !(GetWeather() & B_WEATHER_RAIN))
+            {
+                if (GetWeather() & B_WEATHER_PRIMAL_ANY)
+                {
+                    BattleScriptCall(BattleScript_BlockedByPrimalWeather);
+                    effect++;
+                }
+                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, ABILITY_NONE)) // use ability none since it's not a switch in ability weather setter
                 {
                     gBattleScripting.battler = battler;
                     BattleScriptCall(BattleScript_WeatherAbilityActivates);
@@ -7417,18 +7468,21 @@ static uq4_12_t GetWeatherDamageModifier(struct DamageContext *ctx)
     if ((attackerWeather | ctx->weather) == B_WEATHER_NONE)
         return UQ_4_12(1.0);// This early exit helps limit AI thinking time
     if (GetMoveEffect(ctx->move) == EFFECT_HYDRO_STEAM && (attackerWeather & B_WEATHER_SUN))
-        return UQ_4_12(1.5);
+        return UQ_4_12(1.3); //hydro steam damage changed to be consistent with fire moves
     if (ctx->holdEffects[ctx->battlerDef] == HOLD_EFFECT_UTILITY_UMBRELLA)
         return UQ_4_12(1.0);
 
-    if (ctx->weather & B_WEATHER_SUN || attackerWeather & B_WEATHER_SUN) // called because utility umbrella is only active on the defender for this calc.
+    // Use attackerWeather rather than ctx->weather so that Utility Umbrella holders (and Mega Sol)
+    // are handled correctly: GetAttackerWeather strips sun/rain for umbrella holders, so their
+    // own moves are also unaffected by those weather modifiers.
+    if (attackerWeather & B_WEATHER_SUN)
     {
         if (ctx->moveType != TYPE_FIRE && ctx->moveType != TYPE_WATER)
             return UQ_4_12(1.0);
         return (ctx->moveType == TYPE_WATER) ? UQ_4_12(0.5) : UQ_4_12(1.3); //reduced rain boost of water type attacks to 30%, similar to terrain
     }
 
-    if (ctx->weather & B_WEATHER_RAIN || attackerWeather & B_WEATHER_RAIN)
+    if (attackerWeather & B_WEATHER_RAIN)
     {
         if (ctx->moveType != TYPE_FIRE && ctx->moveType != TYPE_WATER)
             return UQ_4_12(1.0);
@@ -8240,6 +8294,14 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         mod = UQ_4_12(1.0);
         if (ctx->updateFlags)
             RecordAbilityBattle(ctx->battlerAtk, ctx->abilities[ctx->battlerAtk]);
+    }
+    else if (ctx->moveType == TYPE_POISON && (defType == TYPE_STEEL || defType == TYPE_POISON)
+        && ctx->abilities[ctx->battlerAtk] == ABILITY_CORROSION
+        && mod < UQ_4_12(1.0))
+    {
+        mod = UQ_4_12(1.0);
+        if (ctx->updateFlags)
+            RecordAbilityBattle(ctx->battlerAtk, ABILITY_CORROSION);
     }
 
     if (ctx->moveType == TYPE_PSYCHIC && defType == TYPE_DARK && gBattleMons[ctx->battlerDef].volatiles.miracleEye && mod == UQ_4_12(0.0))
