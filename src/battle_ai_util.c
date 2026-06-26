@@ -2319,6 +2319,7 @@ bool32 CanLowerStat(enum BattlerId battlerAtk, enum BattlerId battlerDef, struct
                 return FALSE;
             break;
         case ABILITY_HYPER_CUTTER:
+        case ABILITY_BEETLE_SUMO:
             if (stat == STAT_ATK)
                 return FALSE;
             break;

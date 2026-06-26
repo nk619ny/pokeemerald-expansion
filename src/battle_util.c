@@ -6666,6 +6666,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         if (moveType == TYPE_STEEL)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_BEETLE_SUMO:
+        if (moveType == TYPE_FIGHTING)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
     case ABILITY_SUB_ZERO:
         if (moveType == TYPE_ICE)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));

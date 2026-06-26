@@ -886,6 +886,7 @@ static bool32 AbilityPreventsSpecificStatDrop(u32 ability, u32 stat)
     case ABILITY_MINDS_EYE:
         return stat == STAT_ACC;
     case ABILITY_HYPER_CUTTER:
+    case ABILITY_BEETLE_SUMO:
         return stat == STAT_ATK;
     case ABILITY_BIG_PECKS:
         return stat == STAT_DEF;

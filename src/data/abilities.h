@@ -2574,4 +2574,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Punches hit both foes."),
         .aiRating = 7,
     },
+
+    [ABILITY_BEETLE_SUMO] =
+    {
+        .name = _("Beetle Sumo"),
+        .description = COMPOUND_STRING("Ups Fighting, can't lower Atk."),
+        .aiRating = 6,
+        .breakable = TRUE,
+    },
 };
