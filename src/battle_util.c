@@ -9412,7 +9412,17 @@ void TryRestoreHeldItems(void)
         {
             u16 originalItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
             if (originalItem != ITEM_NONE
-                //&& GetItemPocket(originalItem) != POCKET_BERRIES //commented out for single-use berries
+                //&& GetItemPocket(originalItem) != POCKET_BERRIES
+                && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
+                SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
+        }
+        // Harvest / Seed Sower: recover own consumed berry after battle
+        else if (GetMonAbility(&gParties[B_TRAINER_PLAYER][i]) == ABILITY_HARVEST
+              || GetMonAbility(&gParties[B_TRAINER_PLAYER][i]) == ABILITY_SEED_SOWER)
+        {
+            u16 originalItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
+            if (originalItem != ITEM_NONE
+                && GetItemPocket(originalItem) == POCKET_BERRIES
                 && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
                 SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
         }
