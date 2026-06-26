@@ -1068,6 +1068,13 @@ void ItemUseOutOfBattle_Berry(u8 taskId)
 
 static void ItemUseOnFieldCB_Berry(u8 taskId)
 {
+    if (BerryIsUnplantable(gSpecialVar_ItemId))
+    {
+        LockPlayerFieldControls();
+        ScriptContext_SetupScript(BerryTree_EventScript_ItemUseCannotPlantBerry);
+        DestroyTask(taskId);
+        return;
+    }
     RemoveBagItem(gSpecialVar_ItemId, 1);
     LockPlayerFieldControls();
     ScriptContext_SetupScript(BerryTree_EventScript_ItemUsePlantBerry);

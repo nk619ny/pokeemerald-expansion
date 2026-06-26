@@ -2817,6 +2817,28 @@ void Bag_ChooseMulch(void)
     SetMainCallback2(CB2_ChooseMulch);
 }
 
+bool32 BerryIsUnplantable(u16 itemId)
+{
+    switch (itemId)
+    {
+    case ITEM_LIECHI_BERRY:
+    case ITEM_SALAC_BERRY:
+    case ITEM_PETAYA_BERRY:
+    case ITEM_LANSAT_BERRY:
+    case ITEM_MICLE_BERRY:
+    case ITEM_CUSTAP_BERRY:
+    case ITEM_JABOCA_BERRY:
+    case ITEM_ROWAP_BERRY:
+        return TRUE;
+    }
+    return FALSE;
+}
+
+void IsUnplantableBerry(void)
+{
+    gSpecialVar_Result = BerryIsUnplantable(gSpecialVar_ItemId);
+}
+
 void ObjectEventInteractionPlantBerryTree(void)
 {
     PlantBerryTree(GetObjectEventBerryTreeId(gSelectedObjectEvent), ItemIdToBerryType(gSpecialVar_ItemId), BERRY_STAGE_PLANTED, TRUE);

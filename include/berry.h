@@ -15,6 +15,8 @@ void RemoveBerryTree(u8 id);
 u8 GetBerryTypeByBerryTreeId(u8 id);
 u8 GetStageByBerryTreeId(u8 id);
 void GetBerryNameByBerryType(u8 berry, u8 *string);
+bool32 BerryIsUnplantable(u16 itemId);
+void IsUnplantableBerry(void);
 void Bag_ChooseBerry(void);
 void Bag_ChooseMulch(void);
 void ObjectEventInteractionGetBerryTreeData(void);

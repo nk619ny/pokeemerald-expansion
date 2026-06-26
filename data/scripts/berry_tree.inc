@@ -75,8 +75,15 @@ BerryTree_EventScript_ChooseBerryToPlant::
 	closemessage
 	special Bag_ChooseBerry
 	goto_if_eq VAR_ITEM_ID, 0, BerryTree_EventScript_CancelPlanting
+	specialvar VAR_RESULT, IsUnplantableBerry
+	goto_if_eq VAR_RESULT, TRUE, BerryTree_EventScript_CannotPlantBerry
 	removeitem VAR_ITEM_ID
 	call BerryTree_EventScript_PlantBerry
+
+BerryTree_EventScript_CannotPlantBerry::
+	message BerryTree_Text_CannotBePlanted
+	waitmessage
+	waitbuttonpress
 
 BerryTree_EventScript_CancelPlanting::
 	release
@@ -213,6 +220,14 @@ BerryTree_EventScript_ItemUsePlantBerry::
 	releaseall
 	end
 
+BerryTree_EventScript_ItemUseCannotPlantBerry::
+	lockall
+	message BerryTree_Text_CannotBePlanted
+	waitmessage
+	waitbuttonpress
+	releaseall
+	end
+
 BerryTree_EventScript_WantToWater::
 .if OW_BERRY_PESTS == TRUE
 	call BerryTree_EventScript_CheckForPests
@@ -260,6 +275,10 @@ BerryTree_EventScript_PlantBerry::
 
 BerryTree_Text_ItsSoftLoamySoil:
 	.string "It's soft, loamy soil.$"
+
+BerryTree_Text_CannotBePlanted:
+	.string "This type of BERRY cannot\n"
+	.string "be planted.$"
 
 BerryTree_Text_WantToPlant:
 	.string "It's soft, loamy soil.\n"
