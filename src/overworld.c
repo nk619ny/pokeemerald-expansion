@@ -2126,6 +2126,9 @@ void CB2_ContinueSavedGame(void)
     PlayTimeCounter_Start();
     ScriptContext_Init();
     UnlockPlayerFieldControls();
+#if OW_FLAG_PAUSE_TIME != 0
+    FlagClear(OW_FLAG_PAUSE_TIME);
+#endif
     gExitStairsMovementDisabled = TRUE;
     InitMatchCallCounters();
     if (UseContinueGameWarp() == TRUE)
