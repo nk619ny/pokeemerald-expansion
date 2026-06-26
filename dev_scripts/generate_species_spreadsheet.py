@@ -28,9 +28,11 @@ GEN_FILES = [f"gen_{i}_families.h" for i in range(1, 10)]
 SPECIES_INFO_SUBPATH = Path("src/data/pokemon/species_info")
 
 
+# Prefix filter: any key starting with one of these is cosmetic UNLESS it is
+# listed in COSMETIC_CANONICAL_KEYS below.
 COSMETIC_SPECIES_PREFIXES = (
     "SPECIES_ALCREMIE_",
-    "SPECIES_UNOWN_",
+    "SPECIES_UNOWN_",      # plain SPECIES_UNOWN (no suffix) is kept; letter variants excluded
     "SPECIES_TATSUGIRI_",
     "SPECIES_FLOETTE_",
     "SPECIES_FLABEBE_",
@@ -39,13 +41,77 @@ COSMETIC_SPECIES_PREFIXES = (
     "SPECIES_VIVILLON_",
     "SPECIES_SPEWPA_",
     "SPECIES_SCATTERBUG_",
+    "SPECIES_FURFROU_",
+    "SPECIES_SILVALLY_",
+    "SPECIES_PIKACHU_",   # plain SPECIES_PIKACHU kept; cap/costume variants excluded
 )
 
+# Keys that are kept even when they match COSMETIC_SPECIES_PREFIXES.
+# These are the canonical representatives of each cosmetic family.
+COSMETIC_CANONICAL_KEYS = frozenset({
+    "SPECIES_SCATTERBUG_ICY_SNOW",           # = SPECIES_SCATTERBUG
+    "SPECIES_SPEWPA_ICY_SNOW",               # = SPECIES_SPEWPA
+    "SPECIES_VIVILLON_ICY_SNOW",             # = SPECIES_VIVILLON
+    "SPECIES_FLABEBE_RED",                   # = SPECIES_FLABEBE
+    "SPECIES_FLOETTE_RED",                   # = SPECIES_FLOETTE
+    "SPECIES_FLOETTE_ETERNAL",               # AZ's Floette — unique stats, always include
+    "SPECIES_FLORGES_RED",                   # = SPECIES_FLORGES
+    "SPECIES_FURFROU_NATURAL",               # = SPECIES_FURFROU
+    "SPECIES_MINIOR_METEOR_RED",             # = SPECIES_MINIOR (Meteor form)
+    "SPECIES_MINIOR_CORE_RED",               # = SPECIES_MINIOR_CORE (different stats)
+    "SPECIES_TATSUGIRI_CURLY",               # = SPECIES_TATSUGIRI
+    "SPECIES_SILVALLY_NORMAL",               # = SPECIES_SILVALLY
+    "SPECIES_ALCREMIE_STRAWBERRY_VANILLA_CREAM",  # = SPECIES_ALCREMIE
+    # Pikachu costume/cosplay forms (all unique, all explicitly included)
+    "SPECIES_PIKACHU_COSPLAY",
+    "SPECIES_PIKACHU_ROCK_STAR",
+    "SPECIES_PIKACHU_BELLE",
+    "SPECIES_PIKACHU_POP_STAR",
+    "SPECIES_PIKACHU_PHD",
+    "SPECIES_PIKACHU_LIBRE",
+    "SPECIES_PIKACHU_ORIGINAL",
+})
 
-COSMETIC_SPECIES_EXACT = {
-    # Keep one canonical entry for each cosmetic family.
-    # Base form rows stay; alternates are removed by prefix checks above.
-}
+# Keys that are always excluded regardless of prefix rules.
+EXCLUDED_SPECIES_EXACT = frozenset({
+    # Burmy/Mothim cloak alternates (Plant is canonical)
+    "SPECIES_BURMY_SANDY",
+    "SPECIES_BURMY_TRASH",
+    "SPECIES_MOTHIM_SANDY",
+    "SPECIES_MOTHIM_TRASH",
+    # Shellos/Gastrodon regional alternates (West is canonical)
+    "SPECIES_SHELLOS_EAST",
+    "SPECIES_GASTRODON_EAST",
+    # Seasonal form alternates (Spring is canonical)
+    "SPECIES_DEERLING_SUMMER",
+    "SPECIES_DEERLING_AUTUMN",
+    "SPECIES_DEERLING_WINTER",
+    "SPECIES_SAWSBUCK_SUMMER",
+    "SPECIES_SAWSBUCK_AUTUMN",
+    "SPECIES_SAWSBUCK_WINTER",
+    # Pichu event form
+    "SPECIES_PICHU_SPIKY_EARED",
+    # Maushold family-count variant
+    "SPECIES_MAUSHOLD_FOUR",
+    # Castform battle forms (Normal/base is canonical)
+    "SPECIES_CASTFORM_SUNNY",
+    "SPECIES_CASTFORM_RAINY",
+    "SPECIES_CASTFORM_SNOWY",
+    # Hisuian pre-evolutions (final Hisui evolutions are kept)
+    "SPECIES_CYNDAQUIL_HISUI",
+    "SPECIES_QUILAVA_HISUI",
+    "SPECIES_OSHAWOTT_HISUI",
+    "SPECIES_DEWOTT_HISUI",
+    "SPECIES_ROWLET_HISUI",
+    "SPECIES_DARTRIX_HISUI",
+    # Totem form that embeds TOTEM mid-name (not caught by suffix)
+    "SPECIES_MIMIKYU_TOTEM_DISGUISED",
+})
+
+# Any key ending with one of these suffixes is always excluded.
+EXCLUDED_SPECIES_SUFFIXES = (
+    "_TOTEM",
+)
 
 
 DIRECTIVE_IF_RE = re.compile(r"^\s*#\s*if\b(.*)$")
@@ -60,6 +126,8 @@ SPECIES_ASSIGN_RE = re.compile(r"\[\s*(SPECIES_[A-Z0-9_]+)\s*\]\s*=")
 EMBEDDED_SYM_RE = re.compile(r"#sym:[A-Za-z_][A-Za-z0-9_]*")
 STAT_FIELD_RE = re.compile(r"^\s*\.(baseHP|baseAttack|baseDefense|baseSpeed|baseSpAttack|baseSpDefense)\s*=\s*(.+?),\s*$")
 TYPES_FIELD_RE = re.compile(r"^\s*\.types\s*=\s*MON_TYPES\((.+)\),\s*$")
+# Matches a direct (non-MON_TYPES) type field assignment, e.g. .types = CLEFAIRY_FAMILY_TYPES,
+DIRECT_TYPES_FIELD_RE = re.compile(r"^\s*\.types\s*=\s*([A-Z_][A-Z0-9_]+)\s*,\s*$")
 ABILITIES_FIELD_RE = re.compile(r"^\s*\.abilities\s*=\s*\{(.+)\},\s*$")
 SPECIES_NAME_RE = re.compile(r'^\s*\.speciesName\s*=\s*_\("([^"]+)"\),\s*$')
 TERNARY_PAREN_RE = re.compile(r"\(([^()?:]+?)\?([^:()]+):([^()]+)\)")
@@ -67,6 +135,27 @@ TERNARY_FLAT_RE = re.compile(r"^\s*([^?:]+?)\?([^:]+):(.+)$")
 MACRO_TOKEN_RE = re.compile(r"\b([A-Z_][A-Z0-9_]*)\b")
 IDENTIFIER_RE = re.compile(r"\b([A-Za-z_][A-Za-z0-9_]*)\b")
 ABILITIES_MACRO_FIELD_RE = re.compile(r"^\s*\.abilities\s*=\s*([A-Z_][A-Z0-9_]*)\s*,\s*$")
+# Detects a standalone function-like macro call within a struct body: MACRO(args),
+FUNC_MACRO_CALL_RE = re.compile(r"^\s*([A-Z][A-Z0-9_]+)\s*\([^)]*\)\s*,\s*$")
+# Detects a single-line macro block assignment with args: [SPECIES_X] = MACRO(args),
+SINGLE_LINE_MACRO_ASSIGN_RE = re.compile(r"=\s*([A-Z][A-Z0-9_]+)\s*\([^)]*\)\s*,\s*$")
+# Detects a single-line macro block assignment with NO args: [SPECIES_X] = MACRO,
+# The \] guard ensures this only matches designator assignments, not field initializers.
+SINGLE_LINE_MACRO_ASSIGN_NOARG_RE = re.compile(r"\]\s*=\s*([A-Z][A-Z0-9_]+)\s*,\s*$")
+
+# Hardcoded resolutions for family-wide type macros.
+# DIRECT variants are used as the entire .types field (e.g. .types = CLEFAIRY_FAMILY_TYPES,).
+# TOKEN variants appear as individual args inside MON_TYPES() (e.g. MON_TYPES(TYPE_ELECTRIC, MAGNEMITE_FAMILY_TYPE2)).
+FAMILY_TYPES_DIRECT: Dict[str, Tuple[str, str]] = {
+    "CLEFAIRY_FAMILY_TYPES":   ("TYPE_FAIRY",  "TYPE_NONE"),
+    "JIGGLYPUFF_FAMILY_TYPES": ("TYPE_NORMAL", "TYPE_FAIRY"),
+}
+FAMILY_TYPE_TOKENS: Dict[str, str] = {
+    "MAGNEMITE_FAMILY_TYPE2": "TYPE_STEEL",
+    "TOGEPI_FAMILY_TYPE1":    "TYPE_FAIRY",
+    "RALTS_FAMILY_TYPE2":     "TYPE_FAIRY",
+    "COTTONEE_FAMILY_TYPE2":  "TYPE_FAIRY",
+}
 
 DEFAULT_CLEAN_REPO_ROOT = Path(r"C:\Users\nk619\Documents\pokeemerald-expansion-1.15.0 clean\pokeemerald-expansion-master")
 DEFAULT_OUTPUT_FILE = "species_comparison.xlsx"
@@ -198,7 +287,10 @@ class Phase1Preprocessor:
         gmax_depth = 0
         active_lines_with_flags: List[Tuple[str, bool]] = []
 
-        for line in raw_lines:
+        i = 0
+        while i < len(raw_lines):
+            line = raw_lines[i]
+            i += 1
             if m := DIRECTIVE_IF_RE.match(line):
                 cond = m.group(1).strip()
                 cond_value = self._evaluate_condition(cond)
@@ -299,7 +391,20 @@ class Phase1Preprocessor:
 
             if m := DIRECTIVE_DEFINE_RE.match(line):
                 macro_name = m.group(1)
-                macro_value = m.group(2).strip() or "1"
+                first_value = m.group(2).strip()
+
+                # Collect multi-line macro body: each continuation line ends with \.
+                body_parts: List[str] = []
+                current = first_value.rstrip()
+                while current.endswith("\\"):
+                    body_parts.append(current[:-1].rstrip())
+                    if i < len(raw_lines):
+                        current = raw_lines[i].rstrip()
+                        i += 1
+                    else:
+                        break
+                body_parts.append(current)
+                macro_value = "\n".join(p for p in body_parts if p.strip()) or "1"
                 macro_value = EMBEDDED_SYM_RE.sub("0", macro_value)
 
                 if macro_name.startswith("#sym:"):
@@ -362,26 +467,34 @@ class Phase1Preprocessor:
             brace_depth = line.count("{") - line.count("}")
             i += 1
 
-            # Common format is split over lines:
-            # [SPECIES_X] =
-            # {
-            while i < len(lines_with_flags) and brace_depth == 0:
-                probe_line, probe_flag = lines_with_flags[i]
-                block_lines.append(probe_line)
-                block_gmax = block_gmax or probe_flag
-                brace_depth += probe_line.count("{") - probe_line.count("}")
-                i += 1
-                if brace_depth > 0:
-                    break
+            # Single-line macro invocation blocks (e.g., [SPECIES_X] = MACRO(args), or
+            # [SPECIES_X] = MACRO_NOARG,) are complete on one line with no braces;
+            # skip the probe loops entirely.
+            single_line_macro = brace_depth == 0 and (
+                bool(SINGLE_LINE_MACRO_ASSIGN_RE.search(line)) or
+                bool(SINGLE_LINE_MACRO_ASSIGN_NOARG_RE.search(line))
+            )
+            if not single_line_macro:
+                # Common format is split over lines:
+                # [SPECIES_X] =
+                # {
+                while i < len(lines_with_flags) and brace_depth == 0:
+                    probe_line, probe_flag = lines_with_flags[i]
+                    block_lines.append(probe_line)
+                    block_gmax = block_gmax or probe_flag
+                    brace_depth += probe_line.count("{") - probe_line.count("}")
+                    i += 1
+                    if brace_depth > 0:
+                        break
 
-            while i < len(lines_with_flags):
-                block_line, block_flag = lines_with_flags[i]
-                block_lines.append(block_line)
-                block_gmax = block_gmax or block_flag
-                brace_depth += block_line.count("{") - block_line.count("}")
-                i += 1
-                if brace_depth <= 0:
-                    break
+                while i < len(lines_with_flags):
+                    block_line, block_flag = lines_with_flags[i]
+                    block_lines.append(block_line)
+                    block_gmax = block_gmax or block_flag
+                    brace_depth += block_line.count("{") - block_line.count("}")
+                    i += 1
+                    if brace_depth <= 0:
+                        break
 
             if block_gmax or species_key.endswith("_GMAX"):
                 excluded_gmax += 1
@@ -397,8 +510,16 @@ class Phase1Preprocessor:
 
     @staticmethod
     def _is_cosmetic_species(species_key: str) -> bool:
-        if species_key in COSMETIC_SPECIES_EXACT:
+        # Canonical representatives are always kept regardless of prefix.
+        if species_key in COSMETIC_CANONICAL_KEYS:
+            return False
+        # Explicit exact-key exclusions.
+        if species_key in EXCLUDED_SPECIES_EXACT:
             return True
+        # Suffix-based exclusions (e.g. all _TOTEM forms).
+        if species_key.endswith(EXCLUDED_SPECIES_SUFFIXES):
+            return True
+        # Prefix-based cosmetic family exclusions.
         return species_key.startswith(COSMETIC_SPECIES_PREFIXES)
 
 
@@ -420,19 +541,26 @@ class Phase2SpeciesParser:
             brace_depth = lines[i].count("{") - lines[i].count("}")
             i += 1
 
-            while i < len(lines) and brace_depth == 0:
-                block_lines.append(lines[i])
-                brace_depth += lines[i].count("{") - lines[i].count("}")
-                i += 1
-                if brace_depth > 0:
-                    break
+            # If the assignment is a single-line macro invocation (with or without
+            # args), the block is complete on that one line — skip brace probing.
+            single_line_block = brace_depth == 0 and (
+                bool(SINGLE_LINE_MACRO_ASSIGN_RE.search(block_lines[0])) or
+                bool(SINGLE_LINE_MACRO_ASSIGN_NOARG_RE.search(block_lines[0]))
+            )
+            if not single_line_block:
+                while i < len(lines) and brace_depth == 0:
+                    block_lines.append(lines[i])
+                    brace_depth += lines[i].count("{") - lines[i].count("}")
+                    i += 1
+                    if brace_depth > 0:
+                        break
 
-            while i < len(lines):
-                block_lines.append(lines[i])
-                brace_depth += lines[i].count("{") - lines[i].count("}")
-                i += 1
-                if brace_depth <= 0:
-                    break
+                while i < len(lines):
+                    block_lines.append(lines[i])
+                    brace_depth += lines[i].count("{") - lines[i].count("}")
+                    i += 1
+                    if brace_depth <= 0:
+                        break
 
             record = self._parse_species_block(species_key, block_lines, macros)
             if record is not None:
@@ -454,7 +582,38 @@ class Phase2SpeciesParser:
         ability2 = "ABILITY_NONE"
         hidden_ability = "ABILITY_NONE"
 
-        for line in block_lines:
+        # Pre-expand any function-like macro invocations within the block so that
+        # stats hidden inside shared-family macros (e.g. VIVILLON_MISC_INFO,
+        # SCATTERBUG_SPECIES_INFO) are visible as ordinary field lines.
+        # Runs iteratively to handle nested macros (e.g. ALCREMIE_REGULAR →
+        # ALCREMIE_MISC_INFO) up to 4 nesting levels deep.
+        pending: List[str] = list(block_lines)
+        for _iteration in range(4):
+            pass1: List[str] = []
+            any_expanded = False
+            for bl in pending:
+                bl_nc = strip_trailing_line_comment(bl)
+                macro_body: Optional[str] = None
+                # Case 1: standalone function-like macro call within struct body, e.g. VIVILLON_MISC_INFO(...)
+                if m_call := FUNC_MACRO_CALL_RE.match(bl_nc):
+                    macro_body = macros.get(m_call.group(1))
+                # Case 2: single-line macro block assignment with args, e.g. [SPECIES_X] = MACRO(args),
+                elif m_assign := SINGLE_LINE_MACRO_ASSIGN_RE.search(bl_nc):
+                    macro_body = macros.get(m_assign.group(1))
+                # Case 3: single-line macro block assignment with NO args, e.g. [SPECIES_X] = MACRO,
+                elif m_assign_noarg := SINGLE_LINE_MACRO_ASSIGN_NOARG_RE.search(bl_nc):
+                    macro_body = macros.get(m_assign_noarg.group(1))
+                if macro_body:
+                    pass1.extend(macro_body.split("\n"))
+                    any_expanded = True
+                else:
+                    pass1.append(bl)
+            pending = pass1
+            if not any_expanded:
+                break
+        expanded_block = pending
+
+        for line in expanded_block:
             line_no_comment = strip_trailing_line_comment(line)
 
             if m := SPECIES_NAME_RE.match(line_no_comment):
@@ -462,11 +621,19 @@ class Phase2SpeciesParser:
                 continue
 
             if m := TYPES_FIELD_RE.match(line_no_comment):
-                parsed_types = [part.strip() for part in m.group(1).split(",") if part.strip()]
+                parsed_types = [
+                    FAMILY_TYPE_TOKENS.get(t.strip(), t.strip())
+                    for t in m.group(1).split(",") if t.strip()
+                ]
                 if parsed_types:
                     type1 = parsed_types[0]
                 if len(parsed_types) >= 2:
                     type2 = parsed_types[1]
+                continue
+
+            if m := DIRECT_TYPES_FIELD_RE.match(line_no_comment):
+                if m.group(1) in FAMILY_TYPES_DIRECT:
+                    type1, type2 = FAMILY_TYPES_DIRECT[m.group(1)]
                 continue
 
             if m := ABILITIES_FIELD_RE.match(line_no_comment):
