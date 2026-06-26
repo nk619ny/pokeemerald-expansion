@@ -9390,11 +9390,12 @@ void TryRestoreHeldItems(void)
 {
     u32 i;
     bool32 returnNPCItems = B_RETURN_STOLEN_NPC_ITEMS >= GEN_5 && gBattleTypeFlags & BATTLE_TYPE_TRAINER;
+    bool32 preventWildItemStealing = B_PREVENT_STEALING_WILD_ITEMS == TRUE && !(gBattleTypeFlags & BATTLE_TYPE_TRAINER);
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
         // Check if held items should be restored after battle based on generation
-        if (B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9 || gBattleStruct->itemLost[B_SIDE_PLAYER][i].stolen || returnNPCItems)
+        if (B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9 || gBattleStruct->itemLost[B_SIDE_PLAYER][i].stolen || returnNPCItems || preventWildItemStealing)
         {
             u16 lostItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
 
@@ -9403,8 +9404,17 @@ void TryRestoreHeldItems(void)
                 lostItem = ITEM_NONE;
 
             // Check if the lost item should be restored
-            if ((lostItem != ITEM_NONE || returnNPCItems) && GetItemPocket(lostItem) != POCKET_BERRIES)
+            if ((lostItem != ITEM_NONE || returnNPCItems || preventWildItemStealing) && GetItemPocket(lostItem) != POCKET_BERRIES)
                 SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &lostItem);
+        }
+        // Pickup: recover own consumed non-berry item (only when the standard restore path did not already handle it)
+        else if (GetMonAbility(&gParties[B_TRAINER_PLAYER][i]) == ABILITY_PICKUP)
+        {
+            u16 originalItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
+            if (originalItem != ITEM_NONE
+                //&& GetItemPocket(originalItem) != POCKET_BERRIES //commented out for single-use berries
+                && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
+                SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
         }
     }
 }
