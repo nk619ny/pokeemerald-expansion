@@ -1224,6 +1224,18 @@ static bool32 ShouldSwitchIfAttackingStatsLowered(struct SwitchAiContext *switch
     // Physical attacker
     if (gBattleMons[switchContext->battler].attack > gBattleMons[switchContext->battler].spAttack)
     {
+        // Custom: adjust effective attacking stage for Slow Start.
+        // Slow Start halves Attack for 5 turns; once it elapses the mon gains an effective +2 boost
+        // relative to its displayed stage (treat as +2 if elapsed, +1 if elapses next turn).
+        if (gAiLogicData->abilities[switchContext->battler] == ABILITY_SLOW_START)
+        {
+            u32 slowStartTimer = gBattleMons[switchContext->battler].volatiles.slowStartTimer;
+            if (slowStartTimer == 0)        // Slow Start has elapsed — effective +2 attack stage
+                attackingStage += 2;
+            else if (slowStartTimer == 1)   // Slow Start elapses next turn — effective +1 attack stage
+                attackingStage += 1;
+        }
+
         // Don't switch if attack isn't below -1
         if (attackingStage > DEFAULT_STAT_STAGE - 2)
             return FALSE;
