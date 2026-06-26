@@ -526,7 +526,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_EMBOAR_MEGA] =
     {
-        .baseHP        = 110,
+        .baseHP        = 110 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 5 : 0),
         .baseAttack    = 148,
         .baseDefense   = 75,
         .baseSpeed     = 75,
@@ -10159,10 +10159,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     {
         .baseHP        = 85,
         .baseAttack    = 145,
-        .baseDefense   = 80,
+        .baseDefense   = 80 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0),
         .baseSpeed     = 80,
         .baseSpAttack  = 135,
-        .baseSpDefense = 90,
+        .baseSpDefense = 90 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 30,
         .expYield = 258 ,
@@ -10172,7 +10172,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_EELEVATE, ABILITY_EELEVATE, ABILITY_EELEVATE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Eelektross"),
     #if P_MODIFIED_MEGA_CRIES
@@ -11731,12 +11731,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_GOLURK_MEGA] =
     {
-        .baseHP        = 89,
-        .baseAttack    = 159,
-        .baseDefense   = 105,
-        .baseSpeed     = 55,
+        .baseHP        = 89 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0),
+        .baseAttack    = 159 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 5 : 0),
+        .baseDefense   = 105 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 5 : 0),
+        .baseSpeed     = 55 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 15 : 0),
         .baseSpAttack  = 70,
-        .baseSpDefense = 105,
+        .baseSpDefense = 105 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 5 : 0),
         .types = MON_TYPES(TYPE_GROUND, TYPE_GHOST),
         .catchRate = 90,
         .expYield = 169,

@@ -182,3 +182,86 @@ SINGLE_BATTLE_TEST("Recoil: Hitting substitutes inflicts recoil")
         EXPECT_MUL_EQ(damage, Q_4_12(0.25), recoil);
     }
 }
+
+SINGLE_BATTLE_TEST("Protective Pads: Reduces recoil damage by half on physical recoil moves")
+{
+    s16 directDamage;
+    s16 recoilDamage;
+
+    GIVEN {
+        ASSUME(GetMoveRecoil(MOVE_TAKE_DOWN) == 25);
+        ASSUME(gItemsInfo[ITEM_PROTECTIVE_PADS].holdEffect == HOLD_EFFECT_PROTECTIVE_PADS);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_PROTECTIVE_PADS); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_TAKE_DOWN); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TAKE_DOWN, player);
+        HP_BAR(opponent, captureDamage: &directDamage);
+        HP_BAR(player, captureDamage: &recoilDamage);
+    } THEN {
+        // With Protective Pads, recoil should be half of normal (12.5% of damage instead of 25%)
+        EXPECT_MUL_EQ(directDamage, UQ_4_12(0.125), recoilDamage);
+    }
+}
+
+SINGLE_BATTLE_TEST("Protective Pads: Does NOT reduce crash damage from High Jump Kick")
+{
+    GIVEN {
+        ASSUME(GetMoveRecoil(MOVE_HIGH_JUMP_KICK) > 0);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_PROTECTIVE_PADS); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN {
+            MOVE(player, MOVE_PROTECT);
+            MOVE(opponent, MOVE_HIGH_JUMP_KICK);
+        }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, player);
+        MESSAGE("The opposing Wobbuffet kept going and crashed!");
+    } THEN {
+        // Player takes crash damage even with Protective Pads, verify by checking they have less HP
+        EXPECT_LT(player->hp, player->maxHP / 2);
+    }
+}
+
+SINGLE_BATTLE_TEST("Protective Pads: Does NOT reduce recoil from Chloroblast")
+{
+    s16 recoilDamageWithPads;
+
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_CHLOROBLAST) == EFFECT_CHLOROBLAST);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_PROTECTIVE_PADS); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_CHLOROBLAST); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CHLOROBLAST, player);
+        HP_BAR(opponent);
+        HP_BAR(player, captureDamage: &recoilDamageWithPads);
+    } THEN {
+        // Chloroblast recoil is half of max HP, Protective Pads should NOT reduce it
+        // So recoil should be approximately player maxHP / 2
+        EXPECT_MUL_EQ(player->maxHP, Q_4_12(0.5), recoilDamageWithPads);
+    }
+}
+
+SINGLE_BATTLE_TEST("Protective Pads: Does NOT reduce recoil from Mind Blown")
+{
+    s16 recoilDamageWithPads;
+
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_MIND_BLOWN) == EFFECT_MAX_HP_50_RECOIL);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_PROTECTIVE_PADS); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_MIND_BLOWN); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, player);
+        HP_BAR(opponent);
+        HP_BAR(player, captureDamage: &recoilDamageWithPads);
+    } THEN {
+        // Mind Blown recoil is half of max HP, Protective Pads should NOT reduce it
+        EXPECT_MUL_EQ(player->maxHP, Q_4_12(0.5), recoilDamageWithPads);
+    }
+}

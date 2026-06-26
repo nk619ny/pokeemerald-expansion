@@ -106,6 +106,9 @@ EXCLUDED_SPECIES_EXACT = frozenset({
     "SPECIES_DARTRIX_HISUI",
     # Totem form that embeds TOTEM mid-name (not caught by suffix)
     "SPECIES_MIMIKYU_TOTEM_DISGUISED",
+    # Zygarde Power Construct forms (duplicate stats/abilities; Aura Break versions are canonical)
+    "SPECIES_ZYGARDE_50_POWER_CONSTRUCT",
+    "SPECIES_ZYGARDE_10_POWER_CONSTRUCT",
 })
 
 # Any key ending with one of these suffixes is always excluded.

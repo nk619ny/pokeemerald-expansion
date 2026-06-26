@@ -3420,7 +3420,14 @@ static enum MoveEndResult MoveEndMoveBlockRecoil(struct BattleCalcValues *cv)
             }
             else
             {
-                SetPassiveDamageAmount(cv->battlerAtk, gBattleScripting.savedDmg * max(1, GetMoveRecoil(cv->move)) / 100);
+                s32 recoil = gBattleScripting.savedDmg * max(1, GetMoveRecoil(cv->move)) / 100;
+                // Protective Pads reduces recoil damage by half for physical moves
+                if (cv->holdEffects[cv->battlerAtk] == HOLD_EFFECT_PROTECTIVE_PADS
+                 && GetMoveCategory(cv->move) == DAMAGE_CATEGORY_PHYSICAL)
+                {
+                    recoil /= 2;
+                }
+                SetPassiveDamageAmount(cv->battlerAtk, recoil);
             }
             TryUpdateEvolutionTracker(IF_RECOIL_DAMAGE_GE, gBattleStruct->passiveHpUpdate[cv->battlerAtk], MOVE_NONE);
             BattleScriptCall(BattleScript_MoveEffectRecoil);

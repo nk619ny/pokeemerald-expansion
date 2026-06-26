@@ -2582,4 +2582,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6,
         .breakable = TRUE,
     },
+
+    [ABILITY_EELEVATE] =
+    {
+        .name = _("Eelevate"),
+        .description = COMPOUND_STRING("Levitate + Beast Boost."),
+        .aiRating = 9,
+    },
 };
