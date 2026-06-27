@@ -2217,6 +2217,13 @@ script MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems {
 	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Electric Seed   100 coins",ITEM_ELECTRIC_SEED)}
 	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Misty Seed        100 coins",ITEM_MISTY_SEED)}
 	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Psychic Seed    100 coins",ITEM_PSYCHIC_SEED)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Liechi Berry    250 coins",ITEM_LIECHI_BERRY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Petaya Berry    250 coins",ITEM_PETAYA_BERRY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Salac Berry    250 coins",ITEM_SALAC_BERRY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Custap Berry    250 coins",ITEM_CUSTAP_BERRY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Micle Berry    250 coins",ITEM_MICLE_BERRY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Jaboca Berry    150 coins",ITEM_JABOCA_BERRY)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Rowap Berry    150 coins",ITEM_ROWAP_BERRY)}
 	msgbox(format("Which one-time use item would you like?"), MSGBOX_DEFAULT)
 	showcoinsbox(1, 1)
 	dynmultistack(30, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
@@ -2372,6 +2379,55 @@ script MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems {
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
 			removecoins(100)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_LIECHI_BERRY:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("Please be warned that the {STR_VAR_1} seed is patented, so you will not be able to plant it to grow more.\pWith that in mind, you want to buy 1 {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_PETAYA_BERRY:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("Please be warned that the {STR_VAR_1} seed is patented, so you will not be able to plant it to grow more.\pWith that in mind, you want to buy 1 {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_SALAC_BERRY:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("Please be warned that the {STR_VAR_1} seed is patented, so you will not be able to plant it to grow more.\pWith that in mind, you want to buy 1 {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_CUSTAP_BERRY:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("Please be warned that the {STR_VAR_1} seed is patented, so you will not be able to plant it to grow more.\pWith that in mind, you want to buy 1 {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_MICLE_BERRY:
+			goto_if_lt(TempVar_CurrentCoins, 250, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 250)
+			msgbox(format("Please be warned that the {STR_VAR_1} seed is patented, so you will not be able to plant it to grow more.\pWith that in mind, you want to buy 1 {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_JABOCA_BERRY:
+			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 150)
+			msgbox(format("Please be warned that the {STR_VAR_1} seed is patented, so you will not be able to plant it to grow more.\pWith that in mind, you want to buy 1 {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(150)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_ROWAP_BERRY:
+			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 150)
+			msgbox(format("Please be warned that the {STR_VAR_1} seed is patented, so you will not be able to plant it to grow more.\pWith that in mind, you want to buy 1 {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(150)
 			additem(TempVar_PrizeToBuy)
 		default:
 			hidecoinsbox(0, 5)

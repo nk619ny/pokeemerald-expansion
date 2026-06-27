@@ -41,7 +41,7 @@ Route123_BerryMastersHouse_EventScript_BerryMaster::
 # 21 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 22 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	msgbox Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT
+	goto Route123_EventScript_BerryMasterAlternateText
 # 23 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	release
 # 24 "data/maps/Route123_BerryMastersHouse/scripts.pory"
@@ -244,41 +244,80 @@ Route123_BerryMastersHouse_EventScript_GaveBerry::
 	end
 
 Route109_EventScript_BerryMasterWifeSeedBomb::
-# 128 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	lock
 # 129 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	faceplayer
+	lock
 # 130 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	msgbox Route109_EventScript_BerryMasterWifeSeedBomb_Text_0, MSGBOX_DEFAULT
+	faceplayer
 # 131 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	checkitem ITEM_TM_SEED_BOMB
+	msgbox Route109_EventScript_BerryMasterWifeSeedBomb_Text_0, MSGBOX_DEFAULT
 # 132 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	checkitem ITEM_TM_SEED_BOMB
+# 133 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq Route109_EventScript_BerryMasterWifeSeedBomb_2
 Route109_EventScript_BerryMasterWifeSeedBomb_1:
-# 138 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+# 139 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	releaseall
 	end
 
 Route109_EventScript_BerryMasterWifeSeedBomb_2:
-# 133 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	msgbox Route109_EventScript_BerryMasterWifeSeedBomb_Text_1, MSGBOX_DEFAULT
 # 134 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	closemessage
+	msgbox Route109_EventScript_BerryMasterWifeSeedBomb_Text_1, MSGBOX_DEFAULT
 # 135 "data/maps/Route123_BerryMastersHouse/scripts.pory"
-	giveitem ITEM_TM_SEED_BOMB
+	closemessage
 # 136 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	giveitem ITEM_TM_SEED_BOMB
+# 137 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	waitfanfare
 	goto Route109_EventScript_BerryMasterWifeSeedBomb_1
 
 
+Route123_EventScript_BerryMasterAlternateText::
+# 144 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	switch VAR_TEMP_1
+# 145 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	case 0, Route123_EventScript_BerryMasterAlternateText_3
+# 148 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	case 1, Route123_EventScript_BerryMasterAlternateText_4
+# 152 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	msgbox Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT
+# 153 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	setvar VAR_TEMP_1, 1
+Route123_EventScript_BerryMasterAlternateText_1:
+# 155 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	releaseall
+	end
+
+Route123_EventScript_BerryMasterAlternateText_3:
+# 146 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	msgbox Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_NPC
+# 147 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	addvar VAR_TEMP_1, 1
+	goto Route123_EventScript_BerryMasterAlternateText_1
+
+Route123_EventScript_BerryMasterAlternateText_4:
+# 149 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	msgbox Route123_EventScript_BerryMasterAlternateText_Text_0, MSGBOX_DEFAULT
+# 150 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	setvar VAR_TEMP_1, 0
+	goto Route123_EventScript_BerryMasterAlternateText_1
+
+
 Route109_EventScript_BerryMasterWifeSeedBomb_Text_0:
-# 130 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+# 131 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	.string "My husband does incredible things,\n"
 	.string "growing berries into thriving trees\l"
 	.string "which bring more fruit into the world.$"
 
 Route109_EventScript_BerryMasterWifeSeedBomb_Text_1:
-# 133 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+# 134 "data/maps/Route123_BerryMastersHouse/scripts.pory"
 	.string "I bet your Pokémon could do some\n"
 	.string "incredible things with berry seeds, too.$"
+
+Route123_EventScript_BerryMasterAlternateText_Text_0:
+# 149 "data/maps/Route123_BerryMastersHouse/scripts.pory"
+	.string "Some Berry varieties are 'patented' now,\n"
+	.string "meaning it's illegal to plant them and\l"
+	.string "grow more without paying.\p"
+	.string "I find this deeply offensive, and\n"
+	.string "troubling.$"

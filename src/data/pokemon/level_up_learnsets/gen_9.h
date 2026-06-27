@@ -4256,8 +4256,8 @@ static const struct LevelUpMove sDittoLevelUpLearnset[] = {
 
 #if P_FAMILY_EEVEE
 static const struct LevelUpMove sEeveeLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 1, MOVE_COVET),

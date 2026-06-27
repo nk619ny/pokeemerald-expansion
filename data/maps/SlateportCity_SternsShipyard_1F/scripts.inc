@@ -19,17 +19,17 @@ SlateportCity_SternsShipyard_1F_EventScript_Dock::
 # 10 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	goto_if_set FLAG_BADGE07_GET, SlateportCity_SternsShipyard_1F_EventScript_BrineyJoined
 # 11 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	goto_if_set FLAG_DELIVERED_DEVON_GOODS, SlateportCity_SternsShipyard_1F_EventScript_NeedVeteran
+	goto_if_set FLAG_BADGE02_GET, SlateportCity_SternsShipyard_1F_EventScript_NeedVeteran
 # 12 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	goto_if_set FLAG_DOCK_REJECTED_DEVON_GOODS, SlateportCity_SternsShipyard_1F_EventScript_GoFindStern
+	//goto_if_set FLAG_DOCK_REJECTED_DEVON_GOODS, SlateportCity_SternsShipyard_1F_EventScript_GoFindStern
 # 13 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	msgbox SlateportCity_SternsShipyard_1F_Text_CantMakeHeadsOrTails, MSGBOX_DEFAULT
 # 14 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	applymovement LOCALID_DOCK, Common_Movement_FacePlayer
+	//applymovement LOCALID_DOCK, Common_Movement_FacePlayer
 # 15 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	waitmovement 0
+	//waitmovement 0
 # 16 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	msgbox SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern, MSGBOX_DEFAULT
+	//msgbox SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern, MSGBOX_DEFAULT
 # 17 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	closemessage
 # 18 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
@@ -37,9 +37,9 @@ SlateportCity_SternsShipyard_1F_EventScript_Dock::
 # 19 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	waitmovement 0
 # 20 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	setflag FLAG_DOCK_REJECTED_DEVON_GOODS
+	//setflag FLAG_DOCK_REJECTED_DEVON_GOODS
 # 21 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
-	setflag FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
+	//setflag FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
 # 22 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"
 	releaseall
 # 23 "data/maps/SlateportCity_SternsShipyard_1F/scripts.pory"

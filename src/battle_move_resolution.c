@@ -462,7 +462,7 @@ static enum CancelerResult CancelerInfatuation(struct BattleCalcValues *cv)
     if (gBattleMons[cv->battlerAtk].volatiles.infatuation)
     {
         gBattleScripting.battler = gBattleMons[cv->battlerAtk].volatiles.infatuation - 1;
-        if (!RandomPercentage(RNG_INFATUATION, 50))
+        if (!RandomPercentage(RNG_INFATUATION, B_CUSTOM_INFATUATION_CHANCE))
         {
             BattleScriptCall(BattleScript_MoveUsedIsInLove);
             return CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;

@@ -19,7 +19,7 @@ Route123_BerryMastersHouse_EventScript_BerryMaster::
 	msgbox Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother, MSGBOX_DEFAULT
 	giverandomberry BERRY_ID_POMEG, BERRY_ID_NOMEL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT
+	goto Route123_EventScript_BerryMasterAlternateText
 	release
 	end
 
@@ -123,6 +123,7 @@ Route123_BerryMastersHouse_EventScript_GaveBerry::
 
 `
 
+const TempVar_BerryMasterDialogue = VAR_TEMP_1
 
 script Route109_EventScript_BerryMasterWifeSeedBomb {
 	lock
@@ -134,6 +135,22 @@ script Route109_EventScript_BerryMasterWifeSeedBomb {
 		closemessage
 		giveitem(ITEM_TM_SEED_BOMB)
 		waitfanfare
+	}
+	releaseall
+	end
+}
+
+script Route123_EventScript_BerryMasterAlternateText{
+	switch(var(TempVar_BerryMasterDialogue)) {
+		case 0:
+			msgbox(Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_NPC)
+			addvar(TempVar_BerryMasterDialogue, 1)
+		case 1:
+			msgbox(format("Some Berry varieties are 'patented' now, meaning it's illegal to plant them and grow more without paying.\pI find this deeply offensive, and troubling."), MSGBOX_DEFAULT)
+			setvar(TempVar_BerryMasterDialogue, 0)
+		default:
+			msgbox(Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop, MSGBOX_DEFAULT)
+			setvar(TempVar_BerryMasterDialogue, 1)
 	}
 	releaseall
 	end
