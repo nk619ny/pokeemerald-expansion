@@ -2263,6 +2263,7 @@ Pic: MATT ORAS
 Gender: Male
 Music: Aqua
 AI: Smart Trainer  / Try To 2HKO / Double Battle / HP Aware
+Multi Party: Half
 
 Ariados @ Oran Berry  
 Ability: Swarm  
@@ -2296,6 +2297,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer 
+Multi Party: Half
 
 Sandslash
 Ability: Sand Veil  
@@ -2331,6 +2333,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer 
+Multi Party: Half
 
 Poochyena  
 Ability: Intimidate  
@@ -2367,6 +2370,7 @@ Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer 
+Multi Party: Half
 
 Swalot  
 Ability: Liquid Ooze  

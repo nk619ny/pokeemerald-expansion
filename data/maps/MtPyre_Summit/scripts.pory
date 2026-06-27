@@ -767,7 +767,20 @@ script MtPyre_Summit_EventScript_StevenMultiIntro{
     waitmovement(0)
     msgbox(MtPyre_Summit_Text_StevenNeedHelp, MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES) {
-        goto(MtPyre_Summit_EventScript_MtPyreMultiBattle)
+        specialvar(VAR_TEMP_1, CalculatePlayerPartyCount)
+		if (var(VAR_TEMP_1) <= 4) {
+			goto(MtPyre_Summit_EventScript_MtPyreMultiBattle)
+		}
+		else{
+			msgbox(format("Steven: We can't afford to bring more than 4 Pokémon each into this fight.\pChoose your strongest few, deposit the rest, and hurry back."), MSGBOX_DEFAULT)
+			waitmessage
+			closemessage
+			applymovement(LOCALID_MT_PYRE_SUMMIT_STEVEN,Common_Movement_FaceOriginalDirection)
+			applymovement(OBJ_EVENT_ID_PLAYER,Common_Movement_WalkDownOneStep)
+			waitmovement(0)
+			releaseall
+			return
+		}
     }
     else {
         msgbox(MtPyre_Summit_Text_StevenHurryBack, MSGBOX_DEFAULT)

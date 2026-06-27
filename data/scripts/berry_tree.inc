@@ -338,7 +338,7 @@ BerryTree_Text_WantToPick:
 	.string "{STR_VAR_1}?$"
 
 BerryTree_Text_PickedTheBerry:
-	.string "{PLAYER} picked the {STR_VAR_2} {STR_VAR_1}.$"
+	.string "{PLAYER} picked the {STR_VAR_1}.$"
 
 BerryTree_Text_PutAwayBerry:
 	.string "{PLAYER} put away the {STR_VAR_1}\n"
