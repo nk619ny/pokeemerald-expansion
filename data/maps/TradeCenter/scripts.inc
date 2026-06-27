@@ -1919,14 +1919,14 @@ Common_EventScript_BasicMoveTutor::
 # 1042 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
 # 1043 "data/maps/TradeCenter/scripts.pory"
-	goto_if_unset FLAG_DEFEATED_NORMAN_INTRO, MoveTutor_EventScript_NotReadyYet
-# 1044 "data/maps/TradeCenter/scripts.pory"
 	goto_if_unset FLAG_TEMP_1, Common_EventScript_BasicMoveTutor_2
 Common_EventScript_BasicMoveTutor_1:
-# 1047 "data/maps/TradeCenter/scripts.pory"
+# 1046 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_TEMP_1
-# 1048 "data/maps/TradeCenter/scripts.pory"
+# 1047 "data/maps/TradeCenter/scripts.pory"
 	closemessage
+# 1048 "data/maps/TradeCenter/scripts.pory"
+	goto_if_unset FLAG_DEFEATED_NORMAN_INTRO, MoveTutor_EventScript_GetPhysicalMoveList
 # 1049 "data/maps/TradeCenter/scripts.pory"
 	goto MoveTutor_EventScript_SelectMoveCategory
 # 1050 "data/maps/TradeCenter/scripts.pory"
@@ -1934,7 +1934,7 @@ Common_EventScript_BasicMoveTutor_1:
 	return
 
 Common_EventScript_BasicMoveTutor_2:
-# 1045 "data/maps/TradeCenter/scripts.pory"
+# 1044 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_BasicMoveTutor_Text_0, MSGBOX_DEFAULT
 	goto Common_EventScript_BasicMoveTutor_1
 
@@ -5762,7 +5762,7 @@ Common_EventScript_BerryTreeEncounterFled_Text_0:
 	.string "...but it fled!$"
 
 Common_EventScript_BasicMoveTutor_Text_0:
-# 1045 "data/maps/TradeCenter/scripts.pory"
+# 1044 "data/maps/TradeCenter/scripts.pory"
 	.string "Hello! I am the Move Tutor. I can teach\n"
 	.string "your Pokémon new moves at no cost.$"
 
