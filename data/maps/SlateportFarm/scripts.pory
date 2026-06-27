@@ -24,7 +24,6 @@ script SlateportFarm_EventScript_HelpAquaAdmin {
         special(SavePlayerParty)
         fadescreenswapbuffers(FADE_TO_BLACK)
         special(ChooseHalfPartyForBattle)
-        waitstate
         goto_if_ne(VAR_RESULT, 0, SlateportFarm_EventScript_MultiAgainstMagma)
         special(LoadPlayerParty)
         //Placeholder backsprite for ally Pokemon
@@ -57,7 +56,6 @@ script SlateportFarm_EventScript_HelpMagmaAdmin {
         special(SavePlayerParty)
         fadescreenswapbuffers(FADE_TO_BLACK)
         special(ChooseHalfPartyForBattle)
-        waitstate
         goto_if_ne(VAR_RESULT, 0, SlateportFarm_EventScript_MultiAgainstAqua)
         special(LoadPlayerParty)
 

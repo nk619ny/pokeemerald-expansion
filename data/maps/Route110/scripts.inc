@@ -2111,34 +2111,32 @@ Route110_EventScript_SpindaCollector::
 # 1076 "data/maps/Route110/scripts.pory"
 	special ChoosePartyMon
 # 1077 "data/maps/Route110/scripts.pory"
-	waitstate
-# 1078 "data/maps/Route110/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq Route110_EventScript_SpindaCollector_5
-# 1083 "data/maps/Route110/scripts.pory"
+# 1082 "data/maps/Route110/scripts.pory"
 	copyvar VAR_0x800A, VAR_0x8004
-# 1084 "data/maps/Route110/scripts.pory"
+# 1083 "data/maps/Route110/scripts.pory"
 	copyvar VAR_0x8005, VAR_0x8004
-# 1085 "data/maps/Route110/scripts.pory"
+# 1084 "data/maps/Route110/scripts.pory"
 	specialvar VAR_RESULT, GetTradeSpecies
-# 1086 "data/maps/Route110/scripts.pory"
+# 1085 "data/maps/Route110/scripts.pory"
 	compare VAR_RESULT, SPECIES_SPINDA
 	goto_if_ne Route110_EventScript_SpindaCollector_8
-# 1091 "data/maps/Route110/scripts.pory"
+# 1090 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_SpindaCollectorChoose, MSGBOX_DEFAULT
-# 1092 "data/maps/Route110/scripts.pory"
+# 1091 "data/maps/Route110/scripts.pory"
 	dynmultichoice 20, 6, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Route110_EventScript_SpindaCollector_Text_0, Route110_EventScript_SpindaCollector_Text_1, Route110_EventScript_SpindaCollector_Text_2
-# 1093 "data/maps/Route110/scripts.pory"
+# 1092 "data/maps/Route110/scripts.pory"
 	switch VAR_RESULT
-# 1094 "data/maps/Route110/scripts.pory"
+# 1093 "data/maps/Route110/scripts.pory"
 	case 0, Route110_EventScript_SpindaCollector_12
-# 1097 "data/maps/Route110/scripts.pory"
+# 1096 "data/maps/Route110/scripts.pory"
 	case 1, Route110_EventScript_SpindaCollector_13
-# 1100 "data/maps/Route110/scripts.pory"
+# 1099 "data/maps/Route110/scripts.pory"
 	case 2, Route110_EventScript_SpindaCollector_14
-# 1104 "data/maps/Route110/scripts.pory"
+# 1103 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_SpindaCollectorChangedMind, MSGBOX_DEFAULT
-# 1105 "data/maps/Route110/scripts.pory"
+# 1104 "data/maps/Route110/scripts.pory"
 	release
 	end
 
@@ -2150,279 +2148,277 @@ Route110_EventScript_SpindaCollector_2:
 	end
 
 Route110_EventScript_SpindaCollector_5:
-# 1079 "data/maps/Route110/scripts.pory"
+# 1078 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_SpindaCollectorNoChoice, MSGBOX_DEFAULT
-# 1080 "data/maps/Route110/scripts.pory"
+# 1079 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 Route110_EventScript_SpindaCollector_8:
-# 1087 "data/maps/Route110/scripts.pory"
+# 1086 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_SpindaCollectorWrongSpecies, MSGBOX_DEFAULT
-# 1088 "data/maps/Route110/scripts.pory"
+# 1087 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 Route110_EventScript_SpindaCollector_10:
-# 1108 "data/maps/Route110/scripts.pory"
+# 1107 "data/maps/Route110/scripts.pory"
 	copyvar VAR_0x8004, VAR_0x800A
-# 1109 "data/maps/Route110/scripts.pory"
+# 1108 "data/maps/Route110/scripts.pory"
 	special BufferMonNickname
-# 1110 "data/maps/Route110/scripts.pory"
+# 1109 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_SpindaCollectorConfirmTrade, MSGBOX_YESNO
-# 1111 "data/maps/Route110/scripts.pory"
+# 1110 "data/maps/Route110/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq Route110_EventScript_SpindaCollector_17
-# 1116 "data/maps/Route110/scripts.pory"
+# 1115 "data/maps/Route110/scripts.pory"
 	setvar VAR_0x8003, 1
-# 1117 "data/maps/Route110/scripts.pory"
+# 1116 "data/maps/Route110/scripts.pory"
 	copyvar VAR_0x8004, VAR_0x8009
-# 1118 "data/maps/Route110/scripts.pory"
+# 1117 "data/maps/Route110/scripts.pory"
 	copyvar VAR_0x8005, VAR_0x800A
-# 1119 "data/maps/Route110/scripts.pory"
+# 1118 "data/maps/Route110/scripts.pory"
 	special CreateInGameTradePokemon
-# 1120 "data/maps/Route110/scripts.pory"
+# 1119 "data/maps/Route110/scripts.pory"
 	special DoInGameTradeScene
-# 1121 "data/maps/Route110/scripts.pory"
-	waitstate
-# 1122 "data/maps/Route110/scripts.pory"
+# 1120 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_SpindaCollectorPostTrade, MSGBOX_DEFAULT
-# 1123 "data/maps/Route110/scripts.pory"
+# 1121 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 Route110_EventScript_SpindaCollector_12:
-# 1095 "data/maps/Route110/scripts.pory"
+# 1094 "data/maps/Route110/scripts.pory"
 	setvar VAR_0x8009, INGAME_TRADE_INKAY
-# 1096 "data/maps/Route110/scripts.pory"
+# 1095 "data/maps/Route110/scripts.pory"
 	bufferspeciesname STR_VAR_2, SPECIES_INKAY
 	goto Route110_EventScript_SpindaCollector_10
 
 Route110_EventScript_SpindaCollector_13:
-# 1098 "data/maps/Route110/scripts.pory"
+# 1097 "data/maps/Route110/scripts.pory"
 	setvar VAR_0x8009, INGAME_TRADE_FOMANTIS
-# 1099 "data/maps/Route110/scripts.pory"
+# 1098 "data/maps/Route110/scripts.pory"
 	bufferspeciesname STR_VAR_2, SPECIES_FOMANTIS
 	goto Route110_EventScript_SpindaCollector_10
 
 Route110_EventScript_SpindaCollector_14:
-# 1101 "data/maps/Route110/scripts.pory"
+# 1100 "data/maps/Route110/scripts.pory"
 	setvar VAR_0x8009, INGAME_TRADE_DOTTLER
-# 1102 "data/maps/Route110/scripts.pory"
+# 1101 "data/maps/Route110/scripts.pory"
 	bufferspeciesname STR_VAR_2, SPECIES_DOTTLER
 	goto Route110_EventScript_SpindaCollector_10
 
 Route110_EventScript_SpindaCollector_17:
-# 1112 "data/maps/Route110/scripts.pory"
+# 1111 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_SpindaCollectorChangedMind, MSGBOX_DEFAULT
-# 1113 "data/maps/Route110/scripts.pory"
+# 1112 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
 Route110_EventScript_Theodore::
-# 1161 "data/maps/Route110/scripts.pory"
+# 1159 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_THEODORE, Route110_Text_TheodoreIntro, Route110_Text_TheodoreDefeat
-# 1162 "data/maps/Route110/scripts.pory"
+# 1160 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_TheodorePostBattle, MSGBOX_NPC
-# 1163 "data/maps/Route110/scripts.pory"
+# 1161 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
 Route110_EventScript_Chuck::
-# 1181 "data/maps/Route110/scripts.pory"
+# 1179 "data/maps/Route110/scripts.pory"
 	trainerbattle_single TRAINER_CHUCK, Route110_Text_ChuckIntro, Route110_Text_ChuckDefeat
-# 1182 "data/maps/Route110/scripts.pory"
+# 1180 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_ChuckPostBattle, MSGBOX_NPC
-# 1183 "data/maps/Route110/scripts.pory"
+# 1181 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
 Route110_EventScript_ResetCyclingRoad::
-# 1201 "data/maps/Route110/scripts.pory"
+# 1199 "data/maps/Route110/scripts.pory"
 	cleartrainerflag TRAINER_JACOB
-# 1202 "data/maps/Route110/scripts.pory"
+# 1200 "data/maps/Route110/scripts.pory"
 	cleartrainerflag TRAINER_ANTHONY
-# 1203 "data/maps/Route110/scripts.pory"
+# 1201 "data/maps/Route110/scripts.pory"
 	cleartrainerflag TRAINER_BENJAMIN_1
-# 1204 "data/maps/Route110/scripts.pory"
+# 1202 "data/maps/Route110/scripts.pory"
 	cleartrainerflag TRAINER_ABIGAIL_1
-# 1205 "data/maps/Route110/scripts.pory"
+# 1203 "data/maps/Route110/scripts.pory"
 	cleartrainerflag TRAINER_JASMINE
 	end
 
 
 Route110_EventScript_CheckCyclingRoadDoneForReset::
-# 1211 "data/maps/Route110/scripts.pory"
+# 1209 "data/maps/Route110/scripts.pory"
 	lock
-# 1212 "data/maps/Route110/scripts.pory"
+# 1210 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_JACOB, Route110_EventScript_ResetCyclingRoad
-# 1213 "data/maps/Route110/scripts.pory"
+# 1211 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_ANTHONY, Route110_EventScript_ResetCyclingRoad
-# 1214 "data/maps/Route110/scripts.pory"
+# 1212 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_BENJAMIN_1, Route110_EventScript_ResetCyclingRoad
-# 1215 "data/maps/Route110/scripts.pory"
+# 1213 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_ABIGAIL_1, Route110_EventScript_ResetCyclingRoad
-# 1216 "data/maps/Route110/scripts.pory"
+# 1214 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_JASMINE, Route110_EventScript_ResetCyclingRoad
 	return
 
 
 Route110_EventScript_CheckCyclingRoadDone::
-# 1222 "data/maps/Route110/scripts.pory"
+# 1220 "data/maps/Route110/scripts.pory"
 	lock
-# 1223 "data/maps/Route110/scripts.pory"
+# 1221 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_JACOB, Route110_EventScript_CheckCyclingRoadUnfinished
-# 1224 "data/maps/Route110/scripts.pory"
+# 1222 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_ANTHONY, Route110_EventScript_CheckCyclingRoadUnfinished
-# 1225 "data/maps/Route110/scripts.pory"
+# 1223 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_BENJAMIN_1, Route110_EventScript_CheckCyclingRoadUnfinished
-# 1226 "data/maps/Route110/scripts.pory"
+# 1224 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_ABIGAIL_1, Route110_EventScript_CheckCyclingRoadUnfinished
-# 1227 "data/maps/Route110/scripts.pory"
+# 1225 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_JASMINE, Route110_EventScript_CheckCyclingRoadUnfinished
-# 1229 "data/maps/Route110/scripts.pory"
+# 1227 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE, Route110_EventScript_CheckCyclingRoadUnfinished
-# 1230 "data/maps/Route110/scripts.pory"
+# 1228 "data/maps/Route110/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, Route110_EventScript_GiveCyclingRoadHeartScale
-# 1231 "data/maps/Route110/scripts.pory"
+# 1229 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 
 Route110_EventScript_CheckCyclingRoadUnfinished::
-# 1236 "data/maps/Route110/scripts.pory"
+# 1234 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 
 Route110_EventScript_GiveCyclingRoadHeartScale::
-# 1241 "data/maps/Route110/scripts.pory"
+# 1239 "data/maps/Route110/scripts.pory"
 	lock
-# 1242 "data/maps/Route110/scripts.pory"
+# 1240 "data/maps/Route110/scripts.pory"
 	applymovement LOCALID_CHALLENGE_BIKER, Common_Movement_WalkInPlaceRight
-# 1243 "data/maps/Route110/scripts.pory"
+# 1241 "data/maps/Route110/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
-# 1244 "data/maps/Route110/scripts.pory"
+# 1242 "data/maps/Route110/scripts.pory"
 	waitmovement 0
-# 1245 "data/maps/Route110/scripts.pory"
+# 1243 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_GiveCyclingRoadHeartScale_Text_0, MSGBOX_NPC
-# 1246 "data/maps/Route110/scripts.pory"
+# 1244 "data/maps/Route110/scripts.pory"
 	closemessage
-# 1247 "data/maps/Route110/scripts.pory"
+# 1245 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_HEART_SCALE
-# 1248 "data/maps/Route110/scripts.pory"
+# 1246 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 1249 "data/maps/Route110/scripts.pory"
+# 1247 "data/maps/Route110/scripts.pory"
 	setflag FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE
-# 1250 "data/maps/Route110/scripts.pory"
+# 1248 "data/maps/Route110/scripts.pory"
 	waitfanfare
-# 1251 "data/maps/Route110/scripts.pory"
+# 1249 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 
 Route110_EventScript_ChallengeGuy::
-# 1256 "data/maps/Route110/scripts.pory"
+# 1254 "data/maps/Route110/scripts.pory"
 	lock
-# 1257 "data/maps/Route110/scripts.pory"
+# 1255 "data/maps/Route110/scripts.pory"
 	faceplayer
-# 1258 "data/maps/Route110/scripts.pory"
+# 1256 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE, Route110_EventScript_ChallengeGuy_2
-# 1263 "data/maps/Route110/scripts.pory"
+# 1261 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, Route110_EventScript_ChallengeGuy_5
-# 1268 "data/maps/Route110/scripts.pory"
+# 1266 "data/maps/Route110/scripts.pory"
 	goto Route110_EventScript_CheckCyclingRoadDoneDialogue
 	return
 
 Route110_EventScript_ChallengeGuy_2:
-# 1259 "data/maps/Route110/scripts.pory"
+# 1257 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_ChallengeGuy_Text_0, MSGBOX_NPC
-# 1260 "data/maps/Route110/scripts.pory"
+# 1258 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 Route110_EventScript_ChallengeGuy_5:
-# 1264 "data/maps/Route110/scripts.pory"
+# 1262 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_ChallengeGuy_Text_1, MSGBOX_NPC
-# 1265 "data/maps/Route110/scripts.pory"
+# 1263 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
 Route110_EventScript_CheckCyclingRoadDoneDialogue::
-# 1274 "data/maps/Route110/scripts.pory"
+# 1272 "data/maps/Route110/scripts.pory"
 	lock
-# 1275 "data/maps/Route110/scripts.pory"
+# 1273 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_JACOB, Route110_EventScript_CyclingRoadUnfinishedDialogue
-# 1276 "data/maps/Route110/scripts.pory"
+# 1274 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_ANTHONY, Route110_EventScript_CyclingRoadUnfinishedDialogue
-# 1277 "data/maps/Route110/scripts.pory"
+# 1275 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_BENJAMIN_1, Route110_EventScript_CyclingRoadUnfinishedDialogue
-# 1278 "data/maps/Route110/scripts.pory"
+# 1276 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_ABIGAIL_1, Route110_EventScript_CyclingRoadUnfinishedDialogue
-# 1279 "data/maps/Route110/scripts.pory"
+# 1277 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_JASMINE, Route110_EventScript_CyclingRoadUnfinishedDialogue
-# 1281 "data/maps/Route110/scripts.pory"
+# 1279 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_GiveCyclingRoadHeartScale_Text_0, MSGBOX_NPC
-# 1282 "data/maps/Route110/scripts.pory"
+# 1280 "data/maps/Route110/scripts.pory"
 	closemessage
-# 1283 "data/maps/Route110/scripts.pory"
+# 1281 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_HEART_SCALE
-# 1284 "data/maps/Route110/scripts.pory"
+# 1282 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 1285 "data/maps/Route110/scripts.pory"
+# 1283 "data/maps/Route110/scripts.pory"
 	setflag FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE
-# 1286 "data/maps/Route110/scripts.pory"
+# 1284 "data/maps/Route110/scripts.pory"
 	waitfanfare
-# 1287 "data/maps/Route110/scripts.pory"
+# 1285 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 
 Route110_EventScript_CyclingRoadUnfinishedDialogue::
-# 1292 "data/maps/Route110/scripts.pory"
+# 1290 "data/maps/Route110/scripts.pory"
 	lock
-# 1293 "data/maps/Route110/scripts.pory"
+# 1291 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_CyclingRoadUnfinishedDialogue_Text_0, MSGBOX_NPC
-# 1294 "data/maps/Route110/scripts.pory"
+# 1292 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
 Route110_EventScript_CyclingRoadEntranceIntro::
-# 1299 "data/maps/Route110/scripts.pory"
+# 1297 "data/maps/Route110/scripts.pory"
 	goto_if_unset FLAG_TEMP_5, Route110_EventScript_CyclingRoadEntranceIntro_3
 Route110_EventScript_CyclingRoadEntranceIntro_1:
-# 1307 "data/maps/Route110/scripts.pory"
+# 1305 "data/maps/Route110/scripts.pory"
 	setflag FLAG_TEMP_5
 	return
 
 Route110_EventScript_CyclingRoadEntranceIntro_2:
-# 1300 "data/maps/Route110/scripts.pory"
+# 1298 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_CyclingRoadEntranceIntro_Text_0, MSGBOX_NPC
-# 1301 "data/maps/Route110/scripts.pory"
+# 1299 "data/maps/Route110/scripts.pory"
 	closemessage
-# 1302 "data/maps/Route110/scripts.pory"
+# 1300 "data/maps/Route110/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, Route110_EventScript_CyclingRoadEntranceIntro_7
 	goto Route110_EventScript_CyclingRoadEntranceIntro_1
 
 Route110_EventScript_CyclingRoadEntranceIntro_3:
-# 1299 "data/maps/Route110/scripts.pory"
+# 1297 "data/maps/Route110/scripts.pory"
 	goto_if_unset FLAG_SYS_CYCLING_ROAD, Route110_EventScript_CyclingRoadEntranceIntro_2
 	goto Route110_EventScript_CyclingRoadEntranceIntro_1
 
 Route110_EventScript_CyclingRoadEntranceIntro_6:
-# 1303 "data/maps/Route110/scripts.pory"
+# 1301 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_CyclingRoadEntranceIntro_Text_1, MSGBOX_NPC
-# 1304 "data/maps/Route110/scripts.pory"
+# 1302 "data/maps/Route110/scripts.pory"
 	closemessage
 	goto Route110_EventScript_CyclingRoadEntranceIntro_1
 
 Route110_EventScript_CyclingRoadEntranceIntro_7:
-# 1302 "data/maps/Route110/scripts.pory"
+# 1300 "data/maps/Route110/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE, Route110_EventScript_CyclingRoadEntranceIntro_6
 	goto Route110_EventScript_CyclingRoadEntranceIntro_1
 
@@ -2471,43 +2467,43 @@ Route109_EventScript_FlingCyclist_Text_1:
 	.string "carrying.$"
 
 Route110_EventScript_SpindaCollector_Text_0:
-# 1092 "data/maps/Route110/scripts.pory"
+# 1091 "data/maps/Route110/scripts.pory"
 	.string "Inkay$"
 
 Route110_EventScript_SpindaCollector_Text_1:
-# 1092 "data/maps/Route110/scripts.pory"
+# 1091 "data/maps/Route110/scripts.pory"
 	.string "Fomantis$"
 
 Route110_EventScript_SpindaCollector_Text_2:
-# 1092 "data/maps/Route110/scripts.pory"
+# 1091 "data/maps/Route110/scripts.pory"
 	.string "Dottler$"
 
 Route110_EventScript_GiveCyclingRoadHeartScale_Text_0:
-# 1245 "data/maps/Route110/scripts.pory"
+# 1243 "data/maps/Route110/scripts.pory"
 	.string "Wow, you defeated every trainer on\n"
 	.string "cycling road in one go!\p"
 	.string "As a reward for completing the Cycling\n"
 	.string "Road Challenge, please take this.$"
 
 Route110_EventScript_ChallengeGuy_Text_0:
-# 1259 "data/maps/Route110/scripts.pory"
+# 1257 "data/maps/Route110/scripts.pory"
 	.string "Excellent job cycling and battling!$"
 
 Route110_EventScript_ChallengeGuy_Text_1:
-# 1264 "data/maps/Route110/scripts.pory"
+# 1262 "data/maps/Route110/scripts.pory"
 	.string "Unfortunately, we're already had\n"
 	.string "another trainer win the Cycling Road\l"
 	.string "Challenge.$"
 
 Route110_EventScript_CyclingRoadUnfinishedDialogue_Text_0:
-# 1293 "data/maps/Route110/scripts.pory"
+# 1291 "data/maps/Route110/scripts.pory"
 	.string "It looks like you haven't beaten all the\n"
 	.string "trainers on Cycling Road yet.\p"
 	.string "If you can beat them all in one trip,\n"
 	.string "you'll receive a special reward!$"
 
 Route110_EventScript_CyclingRoadEntranceIntro_Text_0:
-# 1300 "data/maps/Route110/scripts.pory"
+# 1298 "data/maps/Route110/scripts.pory"
 	.string "Welcome to Cycling Road!\n"
 	.string "We have two rules you need to be aware\l"
 	.string "of.\p"
@@ -2518,7 +2514,7 @@ Route110_EventScript_CyclingRoadEntranceIntro_Text_0:
 	.string "is unsafe.$"
 
 Route110_EventScript_CyclingRoadEntranceIntro_Text_1:
-# 1303 "data/maps/Route110/scripts.pory"
+# 1301 "data/maps/Route110/scripts.pory"
 	.string "Additionally, the Cycling Road\n"
 	.string "challenge is currently going on.\p"
 	.string "The first trainer to defeat all trainers\n"
@@ -2542,7 +2538,7 @@ Route110_Text_BrendanHiLetsRegister::
 	.string "touch anytime!$"
 
 Route110_Text_SpindaCollectorGreeting::
-# 1127 "data/maps/Route110/scripts.pory"
+# 1125 "data/maps/Route110/scripts.pory"
 	.string "I've collected hundreds of Spinda with\n"
 	.string "unique spot patterns.\p"
 	.string "But I'm always interested in finding new\n"
@@ -2552,25 +2548,25 @@ Route110_Text_SpindaCollectorGreeting::
 	.string "spot pattern I've never seen before?$"
 
 Route110_Text_SpindaCollectorDecline::
-# 1131 "data/maps/Route110/scripts.pory"
+# 1129 "data/maps/Route110/scripts.pory"
 	.string "Aw, that's too bad…\n"
 	.string "If you ever catch a Spinda, come find\l"
 	.string "me!$"
 
 Route110_Text_SpindaCollectorNoChoice::
-# 1135 "data/maps/Route110/scripts.pory"
+# 1133 "data/maps/Route110/scripts.pory"
 	.string "Changed your mind?\n"
 	.string "No worries!\p"
 	.string "If you find a Spinda with a pattern\n"
 	.string "that catches your eye, bring it my way!$"
 
 Route110_Text_SpindaCollectorWrongSpecies::
-# 1139 "data/maps/Route110/scripts.pory"
+# 1137 "data/maps/Route110/scripts.pory"
 	.string "Hmm… That's not a Spinda!\n"
 	.string "That's a totally different Pokémon!$"
 
 Route110_Text_SpindaCollectorChoose::
-# 1143 "data/maps/Route110/scripts.pory"
+# 1141 "data/maps/Route110/scripts.pory"
 	.string "Let me see if I've seen that pattern\n"
 	.string "before…\n"
 	.string "Woah, that's a new one! What a\l"
@@ -2581,12 +2577,12 @@ Route110_Text_SpindaCollectorChoose::
 	.string "Which one catches your eye?$"
 
 Route110_Text_SpindaCollectorConfirmTrade::
-# 1147 "data/maps/Route110/scripts.pory"
+# 1145 "data/maps/Route110/scripts.pory"
 	.string "Will you trade your {STR_VAR_1}\n"
 	.string "for my {STR_VAR_2}?$"
 
 Route110_Text_SpindaCollectorChangedMind::
-# 1151 "data/maps/Route110/scripts.pory"
+# 1149 "data/maps/Route110/scripts.pory"
 	.string "What, you're backing out??\p"
 	.string "Maybe you'd prefer one of my other\n"
 	.string "Pokémon instead?\p"
@@ -2594,7 +2590,7 @@ Route110_Text_SpindaCollectorChangedMind::
 	.string "collection!$"
 
 Route110_Text_SpindaCollectorPostTrade::
-# 1155 "data/maps/Route110/scripts.pory"
+# 1153 "data/maps/Route110/scripts.pory"
 	.string "Oh, wonderful! Just look at those\n"
 	.string "spots! What a beauty!\p"
 	.string "…\n"
@@ -2605,30 +2601,30 @@ Route110_Text_SpindaCollectorPostTrade::
 	.string "Spinda I find…$"
 
 Route110_Text_TheodoreIntro::
-# 1168 "data/maps/Route110/scripts.pory"
+# 1166 "data/maps/Route110/scripts.pory"
 	.string "Hey, you! Let's battle!$"
 
 Route110_Text_TheodoreDefeat::
-# 1172 "data/maps/Route110/scripts.pory"
+# 1170 "data/maps/Route110/scripts.pory"
 	.string "No fair!$"
 
 Route110_Text_TheodorePostBattle::
-# 1176 "data/maps/Route110/scripts.pory"
+# 1174 "data/maps/Route110/scripts.pory"
 	.string "My dad keeps telling me to stop\n"
 	.string "fighting with my friends, but I just\l"
 	.string "can't help it! I want to use my\l"
 	.string "Pokémon's cool moves!$"
 
 Route110_Text_ChuckIntro::
-# 1188 "data/maps/Route110/scripts.pory"
+# 1186 "data/maps/Route110/scripts.pory"
 	.string "You gotta pay a tax if you want to pass\n"
 	.string "through here, you know.$"
 
 Route110_Text_ChuckDefeat::
-# 1192 "data/maps/Route110/scripts.pory"
+# 1190 "data/maps/Route110/scripts.pory"
 	.string "Alright, geez, go on through!$"
 
 Route110_Text_ChuckPostBattle::
-# 1196 "data/maps/Route110/scripts.pory"
+# 1194 "data/maps/Route110/scripts.pory"
 	.string "If you ever want extra protection, I\n"
 	.string "offer a fee for my services.$"

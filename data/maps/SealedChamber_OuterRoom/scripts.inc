@@ -231,50 +231,42 @@ SealedChamber_OuterRoom_EventScript_OpenRegiChambers::
 # 116 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	special DoSealedChamberShakingEffect_Long
 # 117 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	waitstate
+	delay 40
 # 118 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	delay 40
+	special DoSealedChamberShakingEffect_Short
 # 119 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	special DoSealedChamberShakingEffect_Short
-# 120 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	waitstate
-# 121 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	playse SE_DOOR
-# 122 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 120 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	delay 40
-# 123 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 121 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	special DoSealedChamberShakingEffect_Short
+# 122 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	playse SE_DOOR
+# 123 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+	delay 40
 # 124 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	waitstate
+	special DoSealedChamberShakingEffect_Short
 # 125 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	playse SE_DOOR
 # 126 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	delay 40
 # 127 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	special DoSealedChamberShakingEffect_Short
-# 128 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	waitstate
-# 129 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	playse SE_DOOR
-# 130 "data/maps/SealedChamber_OuterRoom/scripts.pory"
-	delay 40
-# 131 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	msgbox gText_DoorOpenedFarAway, MSGBOX_DEFAULT
-# 132 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 128 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	closemessage
-# 133 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 129 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	fadeinbgm 0
-# 134 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 130 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	setflag FLAG_REGI_DOORS_OPENED
-# 135 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 131 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	setflag FLAG_SYS_REGIROCK_PUZZLE_COMPLETED
-# 136 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 132 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	setflag FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED
-# 137 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 133 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	setflag FLAG_SYS_BRAILLE_REGICE_COMPLETED
-# 138 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 134 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	removeobject LOCALID_REGI_DOOR_BUTTON
-# 139 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 135 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	releaseall
-# 140 "data/maps/SealedChamber_OuterRoom/scripts.pory"
+# 136 "data/maps/SealedChamber_OuterRoom/scripts.pory"
 	end

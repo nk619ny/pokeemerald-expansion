@@ -1074,7 +1074,6 @@ script Route110_EventScript_SpindaCollector {
 		end
 	}
 	special(ChoosePartyMon)
-	waitstate
 	if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
 		msgbox(Route110_Text_SpindaCollectorNoChoice, MSGBOX_DEFAULT)
 		release
@@ -1118,7 +1117,6 @@ script Route110_EventScript_SpindaCollector {
 	copyvar(VAR_0x8005, VAR_0x800A)
 	special(CreateInGameTradePokemon)
 	special(DoInGameTradeScene)
-	waitstate
 	msgbox(Route110_Text_SpindaCollectorPostTrade, MSGBOX_DEFAULT)
 	release
 	end

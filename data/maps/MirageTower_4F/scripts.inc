@@ -109,180 +109,176 @@ MirageTower_4F_EventScript_CollapseMirageTower::
 # 55 "data/maps/MirageTower_4F/scripts.pory"
 	special ShakeCamera
 # 56 "data/maps/MirageTower_4F/scripts.pory"
-	waitstate
-# 57 "data/maps/MirageTower_4F/scripts.pory"
 	special DoMirageTowerCeilingCrumble
-# 58 "data/maps/MirageTower_4F/scripts.pory"
-	waitstate
-# 59 "data/maps/MirageTower_4F/scripts.pory"
+# 57 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_MIRAGE_TOWER_STATE, 1
-# 60 "data/maps/MirageTower_4F/scripts.pory"
+# 58 "data/maps/MirageTower_4F/scripts.pory"
 	clearflag FLAG_LANDMARK_MIRAGE_TOWER
-# 61 "data/maps/MirageTower_4F/scripts.pory"
+# 59 "data/maps/MirageTower_4F/scripts.pory"
 	warp MAP_ROUTE111, 19, 59
-# 62 "data/maps/MirageTower_4F/scripts.pory"
+# 60 "data/maps/MirageTower_4F/scripts.pory"
 	waitstate
-# 63 "data/maps/MirageTower_4F/scripts.pory"
+# 61 "data/maps/MirageTower_4F/scripts.pory"
 	release
-# 64 "data/maps/MirageTower_4F/scripts.pory"
+# 62 "data/maps/MirageTower_4F/scripts.pory"
 	end
-# 65 "data/maps/MirageTower_4F/scripts.pory"
+# 63 "data/maps/MirageTower_4F/scripts.pory"
 
-# 66 "data/maps/MirageTower_4F/scripts.pory"
+# 64 "data/maps/MirageTower_4F/scripts.pory"
 MirageTower_4F_Text_TakeRootFossil:
-# 67 "data/maps/MirageTower_4F/scripts.pory"
+# 65 "data/maps/MirageTower_4F/scripts.pory"
 	.string "You found the ROOT FOSSIL.\p"
+# 66 "data/maps/MirageTower_4F/scripts.pory"
+	.string "If this FOSSIL is taken, the ground\n"
+# 67 "data/maps/MirageTower_4F/scripts.pory"
+	.string "around it will likely crumble away…\p"
 # 68 "data/maps/MirageTower_4F/scripts.pory"
-	.string "If this FOSSIL is taken, the ground\n"
-# 69 "data/maps/MirageTower_4F/scripts.pory"
-	.string "around it will likely crumble away…\p"
-# 70 "data/maps/MirageTower_4F/scripts.pory"
 	.string "Take the ROOT FOSSIL anyway?$"
-# 71 "data/maps/MirageTower_4F/scripts.pory"
+# 69 "data/maps/MirageTower_4F/scripts.pory"
 
-# 72 "data/maps/MirageTower_4F/scripts.pory"
+# 70 "data/maps/MirageTower_4F/scripts.pory"
 MirageTower_4F_Text_LeftRootFossilAlone:
-# 73 "data/maps/MirageTower_4F/scripts.pory"
+# 71 "data/maps/MirageTower_4F/scripts.pory"
 	.string "{PLAYER} left the ROOT FOSSIL alone.$"
-# 74 "data/maps/MirageTower_4F/scripts.pory"
+# 72 "data/maps/MirageTower_4F/scripts.pory"
 
-# 75 "data/maps/MirageTower_4F/scripts.pory"
+# 73 "data/maps/MirageTower_4F/scripts.pory"
 MirageTower_4F_Text_TakeClawFossil:
-# 76 "data/maps/MirageTower_4F/scripts.pory"
+# 74 "data/maps/MirageTower_4F/scripts.pory"
 	.string "You found the CLAW FOSSIL.\p"
-# 77 "data/maps/MirageTower_4F/scripts.pory"
+# 75 "data/maps/MirageTower_4F/scripts.pory"
 	.string "If this FOSSIL is taken, the ground\n"
-# 78 "data/maps/MirageTower_4F/scripts.pory"
+# 76 "data/maps/MirageTower_4F/scripts.pory"
 	.string "around it will likely crumble away…\p"
-# 79 "data/maps/MirageTower_4F/scripts.pory"
+# 77 "data/maps/MirageTower_4F/scripts.pory"
 	.string "Take the CLAW FOSSIL anyway?$"
-# 80 "data/maps/MirageTower_4F/scripts.pory"
+# 78 "data/maps/MirageTower_4F/scripts.pory"
 
-# 81 "data/maps/MirageTower_4F/scripts.pory"
+# 79 "data/maps/MirageTower_4F/scripts.pory"
 MirageTower_4F_Text_LeaveClawFossilAlone:
-# 82 "data/maps/MirageTower_4F/scripts.pory"
+# 80 "data/maps/MirageTower_4F/scripts.pory"
 	.string "{PLAYER} left the CLAW FOSSIL alone.$"
 
 MirageTower_EventScript_GiveRandomFossil::
-# 89 "data/maps/MirageTower_4F/scripts.pory"
+# 87 "data/maps/MirageTower_4F/scripts.pory"
 	lock
-# 90 "data/maps/MirageTower_4F/scripts.pory"
+# 88 "data/maps/MirageTower_4F/scripts.pory"
 	random 15
-# 91 "data/maps/MirageTower_4F/scripts.pory"
+# 89 "data/maps/MirageTower_4F/scripts.pory"
 	switch VAR_RESULT
-# 92 "data/maps/MirageTower_4F/scripts.pory"
+# 90 "data/maps/MirageTower_4F/scripts.pory"
 	case 0, MirageTower_EventScript_GiveRandomFossil_3
-# 95 "data/maps/MirageTower_4F/scripts.pory"
+# 93 "data/maps/MirageTower_4F/scripts.pory"
 	case 1, MirageTower_EventScript_GiveRandomFossil_4
-# 98 "data/maps/MirageTower_4F/scripts.pory"
+# 96 "data/maps/MirageTower_4F/scripts.pory"
 	case 2, MirageTower_EventScript_GiveRandomFossil_5
-# 101 "data/maps/MirageTower_4F/scripts.pory"
+# 99 "data/maps/MirageTower_4F/scripts.pory"
 	case 3, MirageTower_EventScript_GiveRandomFossil_6
-# 104 "data/maps/MirageTower_4F/scripts.pory"
+# 102 "data/maps/MirageTower_4F/scripts.pory"
 	case 4, MirageTower_EventScript_GiveRandomFossil_7
-# 107 "data/maps/MirageTower_4F/scripts.pory"
+# 105 "data/maps/MirageTower_4F/scripts.pory"
 	case 5, MirageTower_EventScript_GiveRandomFossil_8
-# 110 "data/maps/MirageTower_4F/scripts.pory"
+# 108 "data/maps/MirageTower_4F/scripts.pory"
 	case 6, MirageTower_EventScript_GiveRandomFossil_9
-# 113 "data/maps/MirageTower_4F/scripts.pory"
+# 111 "data/maps/MirageTower_4F/scripts.pory"
 	case 7, MirageTower_EventScript_GiveRandomFossil_10
-# 116 "data/maps/MirageTower_4F/scripts.pory"
+# 114 "data/maps/MirageTower_4F/scripts.pory"
 	case 8, MirageTower_EventScript_GiveRandomFossil_11
-# 119 "data/maps/MirageTower_4F/scripts.pory"
+# 117 "data/maps/MirageTower_4F/scripts.pory"
 	case 9, MirageTower_EventScript_GiveRandomFossil_12
-# 122 "data/maps/MirageTower_4F/scripts.pory"
+# 120 "data/maps/MirageTower_4F/scripts.pory"
 	case 10, MirageTower_EventScript_GiveRandomFossil_13
-# 125 "data/maps/MirageTower_4F/scripts.pory"
+# 123 "data/maps/MirageTower_4F/scripts.pory"
 	case 11, MirageTower_EventScript_GiveRandomFossil_14
-# 128 "data/maps/MirageTower_4F/scripts.pory"
+# 126 "data/maps/MirageTower_4F/scripts.pory"
 	case 12, MirageTower_EventScript_GiveRandomFossil_15
-# 131 "data/maps/MirageTower_4F/scripts.pory"
+# 129 "data/maps/MirageTower_4F/scripts.pory"
 	case 13, MirageTower_EventScript_GiveRandomFossil_16
-# 134 "data/maps/MirageTower_4F/scripts.pory"
+# 132 "data/maps/MirageTower_4F/scripts.pory"
 	case 14, MirageTower_EventScript_GiveRandomFossil_17
-# 138 "data/maps/MirageTower_4F/scripts.pory"
+# 136 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_NONE
 MirageTower_EventScript_GiveRandomFossil_1:
-# 141 "data/maps/MirageTower_4F/scripts.pory"
+# 139 "data/maps/MirageTower_4F/scripts.pory"
 	giveitem VAR_TEMP_6
-# 142 "data/maps/MirageTower_4F/scripts.pory"
+# 140 "data/maps/MirageTower_4F/scripts.pory"
 	waitfanfare
-# 143 "data/maps/MirageTower_4F/scripts.pory"
+# 141 "data/maps/MirageTower_4F/scripts.pory"
 	closemessage
 	return
 
 MirageTower_EventScript_GiveRandomFossil_3:
-# 93 "data/maps/MirageTower_4F/scripts.pory"
+# 91 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_HELIX_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_4:
-# 96 "data/maps/MirageTower_4F/scripts.pory"
+# 94 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_DOME_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_5:
-# 99 "data/maps/MirageTower_4F/scripts.pory"
+# 97 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_ROOT_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_6:
-# 102 "data/maps/MirageTower_4F/scripts.pory"
+# 100 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_CLAW_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_7:
-# 105 "data/maps/MirageTower_4F/scripts.pory"
+# 103 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_SKULL_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_8:
-# 108 "data/maps/MirageTower_4F/scripts.pory"
+# 106 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_ARMOR_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_9:
-# 111 "data/maps/MirageTower_4F/scripts.pory"
+# 109 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_JAW_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_10:
-# 114 "data/maps/MirageTower_4F/scripts.pory"
+# 112 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_SAIL_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_11:
-# 117 "data/maps/MirageTower_4F/scripts.pory"
+# 115 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_PLUME_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_12:
-# 120 "data/maps/MirageTower_4F/scripts.pory"
+# 118 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_COVER_FOSSIL
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_13:
-# 123 "data/maps/MirageTower_4F/scripts.pory"
+# 121 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_OLD_AMBER
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_14:
-# 126 "data/maps/MirageTower_4F/scripts.pory"
+# 124 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_FOSSILIZED_BIRD
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_15:
-# 129 "data/maps/MirageTower_4F/scripts.pory"
+# 127 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_FOSSILIZED_DRAKE
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_16:
-# 132 "data/maps/MirageTower_4F/scripts.pory"
+# 130 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_FOSSILIZED_FISH
 	goto MirageTower_EventScript_GiveRandomFossil_1
 
 MirageTower_EventScript_GiveRandomFossil_17:
-# 135 "data/maps/MirageTower_4F/scripts.pory"
+# 133 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_FOSSILIZED_DINO
 	goto MirageTower_EventScript_GiveRandomFossil_1
 

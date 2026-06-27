@@ -244,7 +244,6 @@ script SkyPillar_Top_EventScript_FusionTutor {
 script FusionTutor_EventScript_ChooseMon {
 	msgbox(FusionTutor_Text_ChooseMon, MSGBOX_DEFAULT)
 	special(ChoosePartyMon)
-	waitstate
 	lock
 	faceplayer
 	if (var(VAR_0x8004) >= PARTY_SIZE) {
