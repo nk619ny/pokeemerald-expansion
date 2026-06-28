@@ -4971,6 +4971,103 @@ void ItemUseCB_Medicine(u8 taskId, TaskFunc task)
     }
 }
 
+void ItemUseCB_FullRestore(u8 taskId, TaskFunc task)
+{
+    u16 hp = 0;
+    struct Pokemon *party = NULL;
+    s8 partySlot = 0;
+    GetPartyAndSlotFromPartyMenuId(gPartyMenu.slotId, &party, &partySlot);
+    struct Pokemon *mon = &party[partySlot];
+    enum Item item = gSpecialVar_ItemId;
+    bool8 canHeal, cannotUse;
+    u32 oldStatus = GetMonData(mon, MON_DATA_STATUS);
+    u32 temp2;
+    u32 dataUnsigned;
+    enum Move move;
+    u32 ppBonus;
+
+    if (NotUsingHPEVItemOnShedinja(mon, item) == FALSE)
+    {
+        cannotUse = TRUE;
+    }
+    else
+    {
+        canHeal = IsHPRecoveryItem(item);
+        if (canHeal == TRUE)
+        {
+            hp = GetMonData(mon, MON_DATA_HP);
+            if (hp == GetMonData(mon, MON_DATA_MAX_HP))
+                canHeal = FALSE;
+        }
+        cannotUse = ExecuteTableBasedItemEffect(mon, item, gPartyMenu.slotId, 0);
+
+        // Restore PP for all moves (after medicine effect)
+        if (cannotUse == FALSE)
+        {
+            for (temp2 = 0; temp2 < MAX_MON_MOVES; temp2++)
+            {
+                dataUnsigned = GetMonData(mon, MON_DATA_PP1 + temp2);
+                move = GetMonData(mon, MON_DATA_MOVE1 + temp2);
+                ppBonus = CalculatePPWithBonus(move, GetMonData(mon, MON_DATA_PP_BONUSES), temp2);
+                if (dataUnsigned != ppBonus)
+                {
+                    dataUnsigned = ppBonus;
+                    SetMonData(mon, MON_DATA_PP1 + temp2, &dataUnsigned);
+                }
+            }
+        }
+    }
+
+    if (cannotUse != FALSE)
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        PlaySE(SE_SELECT);
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD)
+            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+        else
+            gTasks[taskId].func = task;
+        return;
+    }
+    else
+    {
+        gPartyMenuUseExitCallback = TRUE;
+        if (!IsItemFlute(item))
+        {
+            PlaySE(SE_USE_ITEM);
+            if (item != ITEM_FULL_RESTORE)
+                RemoveBagItem(item, 1);
+        }
+        else
+        {
+            PlaySE(SE_GLASS_FLUTE);
+        }
+        SetPartyMonAilmentGfx(mon, &sPartyMenuBoxes[gPartyMenu.slotId]);
+        if (gSprites[sPartyMenuBoxes[gPartyMenu.slotId].statusSpriteId].invisible)
+            DisplayPartyPokemonLevelCheck(mon, &sPartyMenuBoxes[gPartyMenu.slotId], 1);
+        if (canHeal == TRUE)
+        {
+            if (hp == 0)
+                AnimatePartySlot(gPartyMenu.slotId, 1);
+            PartyMenuModifyHP(taskId, gPartyMenu.slotId, 1, GetMonData(mon, MON_DATA_HP) - hp, Task_DisplayHPRestoredMessage);
+            ResetHPTaskData(taskId, 0, hp);
+            return;
+        }
+        else
+        {
+            GetMonNickname(mon, gStringVar1);
+            GetMedicineItemEffectMessage(item, oldStatus);
+            DisplayPartyMenuMessage(gStringVar4, TRUE);
+            ScheduleBgCopyTilemapToVram(2);
+            if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(item, 1))
+                gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+            else
+                gTasks[taskId].func = task;
+        }
+    }
+}
+
 #define tState      data[0]
 #define tSpecies    data[1]
 #define tAbilityNum data[2]
