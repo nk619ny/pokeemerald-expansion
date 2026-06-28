@@ -10007,8 +10007,8 @@ static const u16 sEternatusEliteLearnset[] = {
 #if P_FAMILY_KUBFU
 
 static const u16 sKubfuEliteLearnset[] = {
-    MOVE_SURGING_STRIKES,
-    MOVE_WICKED_BLOW,
+    //MOVE_SURGING_STRIKES, //added to level up learnset
+    //MOVE_WICKED_BLOW, //added to level up learnset
     MOVE_REVENGE,
     MOVE_UNAVAILABLE,
 };

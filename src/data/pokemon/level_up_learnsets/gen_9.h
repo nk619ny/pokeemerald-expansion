@@ -12160,6 +12160,7 @@ static const struct LevelUpMove sPhioneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_AQUA_RING),
     LEVEL_UP_MOVE(61, MOVE_DIVE),
     LEVEL_UP_MOVE(75, MOVE_TAKE_HEART),
+    LEVEL_UP_MOVE(75, MOVE_HEART_SWAP), //added custom
     LEVEL_UP_MOVE(80, MOVE_RAIN_DANCE), // Changed from 69
     LEVEL_UP_END
 };
@@ -19409,6 +19410,7 @@ static const struct LevelUpMove sPoipoleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(49, MOVE_POISON_JAB),
     LEVEL_UP_MOVE(56, MOVE_GASTRO_ACID),
+    LEVEL_UP_MOVE(60, MOVE_DYNAMAX_CANNON),
     LEVEL_UP_MOVE(63, MOVE_TOXIC),
     LEVEL_UP_END
 };
@@ -21001,6 +21003,8 @@ static const struct LevelUpMove sKubfuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_DYNAMIC_PUNCH),
     LEVEL_UP_MOVE(44, MOVE_COUNTER),
     LEVEL_UP_MOVE(48, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_SURGING_STRIKES), //custom
+    LEVEL_UP_MOVE(50, MOVE_WICKED_BLOW), //custom
     LEVEL_UP_MOVE(52, MOVE_FOCUS_PUNCH),
     LEVEL_UP_END
 };

@@ -13079,6 +13079,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Sandshrew @ Metronome
 Ability: Sand Rush  
 Level: 45
+EVs: 168 HP / 168 Atk / 168 SpD
 Tera Type: Ground  
 - Rollout  
 - Fury Cutter  
@@ -13088,7 +13089,8 @@ Tera Type: Ground
 
 Aipom 
 Ability: Run Away  
-Level: 43
+Level: 44
+EVs: 168 HP / 168 Atk / 168 Spe
 Tera Type: Normal  
 - Tail Slap  
 - Fake Out  
@@ -13096,8 +13098,9 @@ Tera Type: Normal
 - Shadow Claw  
 
 Deino  @ Roseli Berry
-Ability: Hustle  
-Level: 45 
+Ability: Hustle 
+EVs: 168 HP / 168 Atk / 168 SpA
+Level: 45
 Tera Type: Dark  
 - Outrage  
 - Uproar  
@@ -13108,10 +13111,11 @@ Tera Type: Dark
 Pawmo
 Ability: Static  
 Level: 40  
+EVs: 168 HP / 168 Atk / 168 Spe
 Tera Type: Electric  
-- Spark  
+- Thunder Punch
 - Metal Claw  
-- Scratch  
+- Slash  
 - Sweet Kiss  
 
 
@@ -13127,7 +13131,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Goomy  
 Ability: Gooey  
-Level: 45
+Level: 46
+EVs: 252 HP / 252 SpA
 Tera Type: Dragon  
 IVs: 0 Atk  
 - Acid Armor  
@@ -13136,7 +13141,7 @@ IVs: 0 Atk
 - Bubble Beam
 
 Raticate  
-Ability: Run Away  
+Ability: Guts
 Level: 38 
 Tera Type: Normal  
 - Super Fang  
@@ -13145,7 +13150,9 @@ Tera Type: Normal
 
 Hoppip @ Yache Berry
 Ability: Infiltrator  
-Level: 40  
+Level: 47
+EVs: 168 HP / 168 Atk / 168 Spe
+Jolly Nature
 Tera Type: Grass  
 - Bounce  
 - Cotton Guard  
@@ -15580,7 +15587,7 @@ Stunky
 Level: 44
 Ability: Aftermath  
 Tera Type: Poison  
-EVs: 128 SpA / 128 Atk
+EVs: 128 HP / 128 SpA / 128 Atk / 128 Spe
 Serious Nature  
 - Explosion  
 - Tail Slap  
@@ -15591,7 +15598,7 @@ Nincada
 Level: 46
 Ability: Compound Eyes  
 Tera Type: Bug  
-EVs: 252 Spe
+EVs: 168 HP / 168 Atk / 168 Spe
 Jolly Nature
 - Swagger  
 - Toxic  
@@ -15599,7 +15606,8 @@ Jolly Nature
 - Dig  
 
 Ekans  
-Level: 44
+Level: 45
+EVs: 168 HP / 168 Atk / 168 Spe
 Ability: Intimidate  
 Tera Type: Poison  
 - Leech Life  
@@ -15608,7 +15616,8 @@ Tera Type: Poison
 - Protect
 
 Nickit @ Focus Sash  
-Level: 45
+Level: 47
+EVs: 168 HP / 168 Atk / 168 Spe
 Ability: Stakeout  
 Tera Type: Dark  
 - Thief  
@@ -15649,6 +15658,8 @@ Adamant Nature
 Zorua  
 Level: 44
 Ability: Illusion  
+EVs: 252 HP / 252 Spe
+Jolly Nature
 Tera Type: Dark  
 - Encore  
 - Memento  
@@ -15659,7 +15670,7 @@ Honedge
 Level: 44
 Ability: No Guard  
 Tera Type: Steel  
-EVs: 252 HP  
+EVs: 252 HP / 252 SpD
 - Metal Sound  
 - Screech  
 - Shadow Sneak  
@@ -16054,9 +16065,11 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 
 Drifloon  
-Level: 41
+Level: 42
 Ability: Aftermath  
 Tera Type: Ghost  
+Timid Nature
+EVs: 252 SpA / 128 Def / 128 SpD
 IVs: 0 Atk  
 - Magic Coat  
 - Clear Smog  
@@ -16064,7 +16077,7 @@ IVs: 0 Atk
 - Shadow Ball  
 
 Wormadam-Trash (F) @ Occa Berry  
-Level: 40
+Level: 37
 Ability: Overcoat  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -16074,8 +16087,10 @@ IVs: 0 Atk
 - Quiver Dance  
 
 Snubbull  
-Level: 41
-Ability: Rattled  
+Level: 42
+Ability: Intimidate  
+EVs: 252 HP / 128 Atk / 128 Spe
+Adamant Nature
 Tera Type: Fairy  
 - Play Rough  
 - Ice Fang  
@@ -16084,6 +16099,8 @@ Tera Type: Fairy
 
 Frillish (F)  
 Level: 41
+EVs: 252 HP / 252 Spe
+Modesnt Nature
 Ability: Water Absorb  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -16093,7 +16110,8 @@ IVs: 0 Atk
 - Shadow Ball  
 
 Hattrem (F)  
-Level: 41
+Level: 40
+EVs: 252 HP / 252 Spe
 Ability: Magic Bounce  
 Tera Type: Psychic  
 - Dazzling Gleam  
@@ -26654,7 +26672,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Bounsweet (F)  
 Ability: Oblivious  
-Level: 44
+Level: 50
+EVs: 252 HP / 128 SpA / 128 Spe
 Tera Type: Grass  
 IVs: 0 Atk  
 - Aromatherapy  
@@ -26663,8 +26682,9 @@ IVs: 0 Atk
 - Acupressure  
 
 Pachirisu  
-Level: 39
+Level: 37
 Ability: Pickup  
+EVs: 252 Spe
 Tera Type: Electric  
 - Electro Ball  
 - Nuzzle  
@@ -26680,8 +26700,9 @@ Tera Type: Grass
 - Shadow Sneak  
 - Tailwind  
 
-Naclstack  
-Level: 43
+Naclstack @ Quick Claw
+Level: 42
+EVs: 252 HP / 128 Atk / 128 SpD
 Ability: Purifying Salt  
 Tera Type: Rock  
 - Salt Cure  
@@ -26700,9 +26721,11 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Wattrel    
-Level: 46
+Level: 44
 Ability: Competitive  
 Tera Type: Electric  
+EVs: 252 HP / 252 SpA
+Timid Nature
 IVs: 0 Atk  
 - Charge Beam  
 - Air Cutter  
@@ -26710,8 +26733,9 @@ IVs: 0 Atk
 
 Ducklett  
 Ability: Keen Eye  
-Level: 46
+Level: 44
 Tera Type: Water  
+EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Brine  
 - Icy Wind  
@@ -26721,6 +26745,7 @@ IVs: 0 Atk
 Rufflet (M)  
 Level: 44
 Ability: Sheer Force  
+EVs: 252 HP / 252 Spe
 Tera Type: Normal  
 - Steel Wing  
 - Zen Headbutt  
@@ -26728,9 +26753,11 @@ Tera Type: Normal
 - Bulk Up  
 
 Rookidee  
-Ability: Unnerve  
-Level: 43
+Ability: Big Pecks  
+Level: 48
 Tera Type: Flying  
+EVs: 252 HP / 252 Atk
+Jolly Nature
 - Drill Peck  
 - Assurance  
 - Retaliate  
@@ -26752,6 +26779,7 @@ Morelull @ Big Root
 Level: 45
 Ability: Effect Spore  
 Tera Type: Grass  
+EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Draining Kiss  
 - Giga Drain  
@@ -26762,6 +26790,7 @@ Skiddo
 Level: 45
 Ability: Sap Sipper  
 Tera Type: Grass  
+EVs: 168 HP / 168 Atk / 168 Spe
 - Stomping Tantrum  
 - Rock Climb  
 - Milk Drink  
@@ -26771,13 +26800,14 @@ Pumpkaboo-Small
 Level: 45
 Ability: Pickup  
 Tera Type: Ghost  
+EVs: 252 HP / 252 Spe
 - Trick-or-Treat  
 - Shadow Sneak  
 - Seed Bomb  
 - Skitter Smack  
 
 Nidorino (M)  
-Level: 44
+Level: 41
 Ability: Rivalry  
 Tera Type: Poison  
 - Double-Edge  
@@ -26799,6 +26829,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Axew  
 Ability: Unnerve  
 Level: 45
+EVs: 252 HP / 252 Spe
+Adamant Nature
 - Dragon Claw  
 - First Impression  
 - Hone Claws  
@@ -26822,6 +26854,7 @@ Level: 40
 
 Turtwig @ White Herb  
 Ability: Shell Armor  
+EVs: 252 HP / 252 Atk
 Level: 45
 - Seed Bomb  
 - Superpower  
