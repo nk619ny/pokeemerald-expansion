@@ -441,10 +441,12 @@ Route111_EventScript_Heidi::
 	msgbox Route111_Text_HeidiPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+/*
 Route111_EventScript_Beau::
 	trainerbattle_single TRAINER_BEAU, Route111_Text_BeauIntro, Route111_Text_BeauDefeat
 	msgbox Route111_Text_BeauPostBattle, MSGBOX_AUTOCLOSE
 	end
+*/
 
 Route111_EventScript_Becky::
 	trainerbattle_single TRAINER_BECKY, Route111_Text_BeckyIntro, Route111_Text_BeckyDefeat
@@ -860,3 +862,48 @@ script Route111_EventScript_ChooseIfHeal {
 }
 
 
+
+
+script Route111_EventScript_Beau {
+    trainerbattle_single(TRAINER_BEAU, Route111_Text_BeauIntro, Route111_Text_BeauDefeat, Route111_EventScript_BeauTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route111_EventScript_BeauTryGiveVitamin)
+	msgbox(Route111_Text_BeauPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script Route111_EventScript_BeauTryGiveVitamin{
+	if(flag(FLAG_BADGE01_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("I haven't found any ancient artifacts, yet. But I did find some vitamins that someone must have dropped. Here, you should take it."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Here, you should take this vitamin I dug up."), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_HP_UP)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_HP_UP)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("Hmm, are you saving space in your bag in hopes of digging up some rare artifacts? I get it.\pCome back if you change your mind, otherwise I'll give it to the next trainer who comes through here."), MSGBOX_NPC)
+	}
+	release
+	end
+}
+
+text Route111_Text_BeauIntro {
+    format("It takes real dedication to find lost treasures in this desert!")
+}
+
+text Route111_Text_BeauDefeat {
+    format("You're certainly hardy enough for the desert!")
+}
+
+text Route111_Text_BeauPostBattle {
+    format("I haven't found any ancient artifacts, yet. But I haven't lost hope!")
+}

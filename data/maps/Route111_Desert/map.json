@@ -256,7 +256,7 @@
     },
     {
       "type": "trigger",
-      "x": 11,
+      "x": 8,
       "y": 8,
       "elevation": 3,
       "var": "VAR_TEMP_3",
@@ -265,7 +265,7 @@
     },
     {
       "type": "trigger",
-      "x": 12,
+      "x": 8,
       "y": 7,
       "elevation": 3,
       "var": "VAR_TEMP_3",
@@ -274,34 +274,34 @@
     },
     {
       "type": "trigger",
-      "x": 13,
+      "x": 9,
       "y": 6,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
-      "script": "Route111_EventScript_ViciousSandstormTriggerLeft"
+      "script": "Route111_EventScript_ViciousSandstormTriggerUp"
     },
     {
       "type": "trigger",
-      "x": 14,
+      "x": 10,
       "y": 5,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
-      "script": "Route111_EventScript_ViciousSandstormTriggerLeft"
+      "script": "Route111_EventScript_ViciousSandstormTriggerUp"
     },
     {
       "type": "trigger",
-      "x": 15,
+      "x": 11,
       "y": 4,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
-      "script": "Route111_EventScript_ViciousSandstormTriggerLeft"
+      "script": "Route111_EventScript_ViciousSandstormTriggerUp"
     },
     {
       "type": "trigger",
-      "x": 16,
+      "x": 12,
       "y": 3,
       "elevation": 3,
       "var": "VAR_TEMP_3",
@@ -310,7 +310,7 @@
     },
     {
       "type": "trigger",
-      "x": 17,
+      "x": 13,
       "y": 2,
       "elevation": 3,
       "var": "VAR_TEMP_3",

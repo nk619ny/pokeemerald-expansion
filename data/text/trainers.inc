@@ -1261,6 +1261,7 @@ Route111_Text_HeidiPostBattle:
 	.string "It can faint if you don't keep\n"
 	.string "an eye on it!$"
 
+/*
 Route111_Text_BeauIntro:
 	.string "Wearing these GO-GOGGLES makes me\n"
 	.string "feel like a superhero.\l"
@@ -1273,6 +1274,7 @@ Route111_Text_BeauPostBattle:
 	.string "I'm going to be a real hero one day.\n"
 	.string "I'm going to work harder to make me\l"
 	.string "and my Pokémon stronger.$"
+*/
 
 Route111_Text_DustyIntro:
 	.string "For thirty years I have searched for\n"
