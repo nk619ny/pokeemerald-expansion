@@ -7835,7 +7835,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseHP        = 73,
         .baseAttack    = 73,
         .baseDefense   = 73,
-        .baseSpeed     = 121,
+        .baseSpeed     = 121 + (B_CUSTOMIZED_GEN_7_STATS == TRUE ? 30 : 0),
         .baseSpAttack  = 127,
         .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_POISON, TYPE_DRAGON),
