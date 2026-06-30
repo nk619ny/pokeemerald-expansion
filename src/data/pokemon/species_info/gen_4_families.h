@@ -4724,7 +4724,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sRioluTeachableLearnset,
         .eliteLearnset = sRioluEliteLearnset,
         .eggMoveLearnset = sRioluEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_LUCARIO, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}), //changed from friendship
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_LUCARIO}), //changed from friendship
     },
 
     [SPECIES_LUCARIO] =
