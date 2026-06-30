@@ -2587,6 +2587,7 @@ MatchCall_Text_Brendan15::
 	.string "envious!$"
 
 
+
 MatchCall_Text_Wally1::
 	.string "WALLY: Oh, {PLAYER}!\p"
 	.string "I've been getting healthier and\n"
