@@ -2588,6 +2588,463 @@ MatchCall_Text_Brendan15::
 
 
 
+@ Rival call variant texts (variants 2-6 per stage)
+@ Replace each placeholder .string with the actual call text.
+
+@ --- May variants ---
+
+MatchCall_Text_May1_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May1_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May1_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May1_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May1_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May2_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May2_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May2_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May2_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May2_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May3_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May3_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May3_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May3_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May3_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May4_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May4_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May4_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May4_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May4_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May5_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May5_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May5_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May5_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May5_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May6_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May6_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May6_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May6_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May6_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May7_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May7_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May7_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May7_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May7_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May8_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May8_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May8_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May8_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May8_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May9_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May9_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May9_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May9_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May9_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May10_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May10_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May10_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May10_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May10_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May11_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May11_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May11_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May11_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May11_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May12_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May12_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May12_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May12_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May12_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May13_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May13_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May13_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May13_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May13_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May14_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May14_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May14_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May14_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May14_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May15_2::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May15_3::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May15_4::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May15_5::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+MatchCall_Text_May15_6::
+	.string "MAY: Hi, {PLAYER}{KUN}!$"
+
+@ --- Brendan variants ---
+
+MatchCall_Text_Brendan1_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan1_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan1_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan1_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan1_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan2_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan2_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan2_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan2_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan2_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan3_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan3_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan3_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan3_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan3_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan4_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan4_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan4_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan4_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan4_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan5_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan5_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan5_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan5_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan5_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan6_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan6_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan6_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan6_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan6_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan7_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan7_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan7_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan7_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan7_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan8_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan8_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan8_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan8_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan8_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan9_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan9_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan9_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan9_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan9_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan10_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan10_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan10_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan10_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan10_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan11_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan11_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan11_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan11_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan11_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan12_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan12_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan12_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan12_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan12_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan13_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan13_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan13_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan13_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan13_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan14_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan14_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan14_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan14_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan14_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan15_2::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan15_3::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan15_4::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan15_5::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
+MatchCall_Text_Brendan15_6::
+	.string "BRENDAN: Hey, {PLAYER}!$"
+
 MatchCall_Text_Wally1::
 	.string "WALLY: Oh, {PLAYER}!\p"
 	.string "I've been getting healthier and\n"
