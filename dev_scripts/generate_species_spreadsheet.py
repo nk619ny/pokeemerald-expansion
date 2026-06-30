@@ -44,6 +44,7 @@ COSMETIC_SPECIES_PREFIXES = (
     "SPECIES_FURFROU_",
     "SPECIES_SILVALLY_",
     "SPECIES_PIKACHU_",   # plain SPECIES_PIKACHU kept; cap/costume variants excluded
+    "SPECIES_ARCEUS_",    # plain SPECIES_ARCEUS (Normal) kept; type variants excluded
 )
 
 # Keys that are kept even when they match COSMETIC_SPECIES_PREFIXES.
@@ -109,6 +110,24 @@ EXCLUDED_SPECIES_EXACT = frozenset({
     # Zygarde Power Construct forms (duplicate stats/abilities; Aura Break versions are canonical)
     "SPECIES_ZYGARDE_50_POWER_CONSTRUCT",
     "SPECIES_ZYGARDE_10_POWER_CONSTRUCT",
+    # Cramorant special forms (base form is canonical)
+    "SPECIES_CRAMORANT_GORGING",
+    "SPECIES_CRAMORANT_GULPING",
+    # Magearna forms (base form is canonical)
+    "SPECIES_MAGEARNA_ORIGINAL",
+    "SPECIES_MAGEARNA_ORIGINAL_MEGA",
+    # Rockruff special form (base form is canonical)
+    "SPECIES_ROCKRUFF_OWN_TEMPO",
+    # Zarude special form (base form is canonical)
+    "SPECIES_ZARUDE_DADA",
+    # Morpeko special form (base form is canonical)
+    "SPECIES_MORPEKO_HANGRY",
+    # Cherrim special form (base form is canonical)
+    "SPECIES_CHERRIM_SUNSHINE",
+    # Mimikyu special form (base form is canonical)
+    "SPECIES_MIMIKYU_BUSTED",
+    # Greninja special form (base form is canonical)
+    "SPECIES_GRENINJA_BATTLE_BOND",
 })
 
 # Any key ending with one of these suffixes is always excluded.
