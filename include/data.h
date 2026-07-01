@@ -23,6 +23,14 @@ enum {
     BATTLER_AFFINE_RETURN,
 };
 
+// Trainer front pic canvas size. 64x64 is the standard single-OAM size; 80x80
+// pics are displayed in battle by splitting them across several OAM subsprites.
+enum TrainerFrontPicDimensions
+{
+    TRAINER_PIC_DIM_64x64,
+    TRAINER_PIC_DIM_80x80,
+};
+
 struct MonCoords
 {
     // This would use a bitfield, but some function
@@ -38,6 +46,7 @@ struct TrainerFrontPicInfo
     const union AnimCmd *const *const animation;
     const struct Coords16 mugshotCoords;
     s16 mugshotRotation;
+    u8 dimensions; // enum TrainerFrontPicDimensions
 };
 
 struct TrainerBackPicInfo
@@ -402,6 +411,11 @@ static inline const struct Coords16 GetTrainerFrontPicMugshotCoords(enum Trainer
 static inline s16 GetTrainerFrontPicMugshotRotation(enum TrainerPicID trainerPic)
 {
     return gTrainerPicInfo[SanitizeFrontTrainerPic(trainerPic)].frontPic->mugshotRotation;
+}
+
+static inline u8 GetTrainerFrontPicDimensions(enum TrainerPicID trainerPic)
+{
+    return gTrainerPicInfo[SanitizeFrontTrainerPic(trainerPic)].frontPic->dimensions;
 }
 
 static inline const struct MonCoords *GetTrainerBackPicCoords(enum TrainerPicID trainerPic)

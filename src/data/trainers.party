@@ -126,7 +126,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 === /* Aqua Hideout */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -177,7 +177,7 @@ Tera Type: Bug
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 === /* Aqua Hideout */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -225,7 +225,7 @@ Tera Type: Water
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 === /* Aqua Hideout */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -273,7 +273,7 @@ Tera Type: Electric
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 === /* Aqua Hideout */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -321,7 +321,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 === /* Seafloor Cavern */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -374,7 +374,7 @@ Tera Type: Fighting
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 === /* Route */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -428,7 +428,7 @@ Level: 75
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 === /* Route */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -559,7 +559,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_PETALBURG_WOODS === /* Petalburg Woods */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -1033,7 +1033,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_RUSTURF_TUNNEL === /* Rusturf Tunnel */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -1125,7 +1125,7 @@ Adamant Nature
 === TRAINER_GRUNT_WEATHER_INST_1 === /* Weather Institute */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -1142,7 +1142,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_WEATHER_INST_2 === /* Weather Institute */ 
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -1186,7 +1186,7 @@ EVs: 252 Spe
 === TRAINER_GRUNT_WEATHER_INST_3 === /* Weather Institute */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -1419,7 +1419,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_MT_PYRE_2 === /* Mt Pyre */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -1469,7 +1469,7 @@ Jolly Nature
 === TRAINER_GRUNT_MT_PYRE_3 === /* Mt Pyre */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -2328,7 +2328,7 @@ IVs: 0 Atk
 === TRAINER_AQUA_MULTI_GRUNT_FARM === /* Slateport Farm */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -5322,7 +5322,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_CINDY_1 === /* Route 104 */ /* ADUST, WAY TOO STRONG */
 Name: CINDY
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -5360,7 +5360,7 @@ Tera Type: Psychic
 === TRAINER_DAPHNE === /* Sootopolis Gym */
 Name: DAPHNE
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -5447,7 +5447,7 @@ IVs: 0 Atk
 === TRAINER_CINDY_2 === /* Route */
 Name: CINDY
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -5462,7 +5462,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BRIANNA === /* Sootopolis Gym */
 Name: BRIANNA
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -5512,7 +5512,7 @@ IVs: 0 Atk
 === TRAINER_NAOMI === /* SS TIdal */
 Name: NAOMI
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -5525,7 +5525,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_CINDY_3 === /* Route */
 Name: CINDY
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -5538,7 +5538,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_CINDY_4 === /* Route */
 Name: CINDY
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -5551,7 +5551,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_CINDY_5 === /* Route */
 Name: CINDY
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -5564,7 +5564,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_CINDY_6 === /* Route 104 */
 Name: CINDY
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -6204,7 +6204,7 @@ IVs: 0 Atk
 === TRAINER_NOAH === /* Route 111 North */
 Name: NOAH
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -7709,7 +7709,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 === /* Aqua Hideout */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -9450,7 +9450,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_JACLYN === /* Route 110 */ 
 Name: JACQUES
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -10207,7 +10207,6 @@ Pic: Leader Brawly
 Gender: Male
 Music: Male
 Double Battle: Yes
-Mugshot: Blue
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Kubfu @ Weakness Policy
@@ -13445,7 +13444,7 @@ IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground I
 === TRAINER_ANDREW === /* Route 103 East */
 Name: ANDREW
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13494,7 +13493,7 @@ Tera Type: Dragon
 === TRAINER_IVAN === /* Route 104 North */ /* TO BE ADDED */
 Name: IVAN
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13515,7 +13514,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CLAUDE === /* Route 119 */
 Name: CLAUDE
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13602,7 +13601,7 @@ Tera Type: Rock
 === TRAINER_NED === /* Route 106 */
 Name: NED
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13649,7 +13648,7 @@ Tera Type: Water
 === TRAINER_DALE === /* Route 110 */ 
 Name: DALE
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13695,7 +13694,7 @@ Level: 31
 === TRAINER_NOLAN === /* Route 114 */
 Name: NOLAN
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13745,7 +13744,7 @@ Tera Type: Water
 === TRAINER_BARNY === /* Route 118 */
 Name: BARNY
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13793,7 +13792,7 @@ Tera Type: Water
 === TRAINER_WADE === /* Route 118 */ 
 Name: WADE
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13840,7 +13839,7 @@ IVs: 0 Atk
 === TRAINER_CARTER === /* Route 109 */ /* TO BE ADDED */
 Name: CARTER
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13859,7 +13858,7 @@ Tera Type: Water
 === TRAINER_ELLIOT_2 === /* Route */
 Name: ELLIOT
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13880,7 +13879,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_ELLIOT_3 === /* Route */
 Name: ELLIOT
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13905,7 +13904,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_ELLIOT_4 === /* Route */
 Name: ELLIOT
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13930,7 +13929,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ELLIOT_5 === /* Route */
 Name: ELLIOT
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13955,7 +13954,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_RONALD === /* Route 132 */ /* TO BE ADDED */
 Name: RONALD
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -20097,7 +20096,7 @@ EVs: 252 HP / 252 Atk
 === TRAINER_DAVIS === /* Route 123 */ /* SET TO ALWAYS RAIN UNTIL DEFEATED */
 Name: DAVIS
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -20984,7 +20983,7 @@ Tera Type: Steel
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 === /* Route */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -23045,7 +23044,7 @@ IVs: 0 Atk
 === TRAINER_RICK === /* Route 102 */
 Name: RICK
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -23086,7 +23085,7 @@ Tera Type: Bug
 === TRAINER_LYLE === /* Petalburg Woods */
 Name: LYLE
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -23129,7 +23128,7 @@ Tera Type: Bug
 === TRAINER_JOSE === /* Route 116 */
 Name: JOSE
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -23185,7 +23184,7 @@ Tera Type: Ground
 === TRAINER_DOUG === /* Route 119 */
 Name: DOUG
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -23235,7 +23234,7 @@ Tera Type: Grass
 === TRAINER_GREG === /* Route 119 */ 
 Name: GREG
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -23331,7 +23330,7 @@ IVs: 0 Atk
 === TRAINER_JAMES_1 === /* Petalburg Woods */
 Name: JAMES
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -23389,7 +23388,7 @@ IVs: 0 Atk
 === TRAINER_JAMES_2 === /* Route */
 Name: JAMES
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -23402,7 +23401,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_JAMES_3 === /* Route */
 Name: JAMES
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -23419,7 +23418,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_JAMES_4 === /* Route */
 Name: JAMES
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -23440,7 +23439,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_JAMES_5 === /* Route */
 Name: JAMES
 Class: Bug Catcher
-Pic: Bug Catcher
+Pic: Bug Catcher ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -25295,7 +25294,7 @@ Adamant Nature
 === TRAINER_JONAH === /* Route 127 */ /* TO BE ADDED */
 Name: JONAH
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -25316,7 +25315,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_HENRY === /* Route 127 */ /* TO BE ADDED */
 Name: HENRY
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -25333,7 +25332,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ROGER === /* Route 127 */ /* TO BE ADDED */
 Name: ROGER
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -25433,7 +25432,7 @@ Tera Type: Fighting
 === TRAINER_WAYNE === /* Route 128 */
 Name: WAYNE
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -25965,7 +25964,7 @@ Adamant Nature
 === TRAINER_CHRIS === /* Route 119 */
 Name: CHRIS
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -26058,7 +26057,7 @@ Tera Type: Rock
 === TRAINER_SARAH === /* Route 116 */
 Name: SARAH
 Class: Lady
-Pic: Lady
+Pic: Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -26106,7 +26105,7 @@ Tera Type: Dark
 === TRAINER_DARIAN === /* Route 104 */
 Name: DARIAN
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -26911,7 +26910,7 @@ Tera Type: Grass
 === TRAINER_KAI === /* Route 114 */ /* TO BE ADDED */
 Name: KAI
 Class: Fisherman
-Pic: Fisherman
+Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes

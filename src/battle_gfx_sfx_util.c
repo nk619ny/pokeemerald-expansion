@@ -690,10 +690,158 @@ void BattleGfxSfxDummy2(enum Species species)
 {
 }
 
+// ==========================================================================
+// 80x80 trainer front pics
+//
+// GBA OAM objects are capped at 64x64, so an 80x80 (10x10 tile) front pic is
+// displayed as a single non-animated sprite whose art is split across six OAM
+// subsprites. The image is authored as a plain 80x80 PNG (tiles stored
+// row-major, 10 tiles wide). At load time it is rearranged into six contiguous
+// tile sections that the subsprite table indexes via tileOffset:
+//
+//   Section  Source tiles (col,row)   OAM size   Tiles  tileOffset
+//   A        cols 0-7, rows 0-7       64x64        64    0
+//   B        cols 8-9, rows 0-3       16x32         8    64
+//   C        cols 8-9, rows 4-7       16x32         8    72
+//   D        cols 8-9, rows 8-9       16x16         4    80
+//   E        cols 0-3, rows 8-9       32x16         8    84
+//   F        cols 4-7, rows 8-9       32x16         8    92
+//
+// Total = 100 tiles (must stay <= 255 because CreateSprite casts the tile count
+// to u8 when calling AllocSpriteTiles). Subsprites are positioned relative to
+// the sprite center, so the art is centered on the same origin as a 64x64 pic.
+//
+// Note: subsprite hFlip flips each section individually without swapping their
+// arrangement, so this path is intended for opponent (non-flipped) front pics.
+// ==========================================================================
+
+#define TRAINER_PIC_80x80_WIDTH_TILES 10
+#define TRAINER_PIC_80x80_TILE_COUNT  100
+
+struct TrainerPic80x80Section
+{
+    u8 srcCol;
+    u8 srcRow;
+    u8 wTiles;
+    u8 hTiles;
+};
+
+static const struct TrainerPic80x80Section sTrainerPic80x80Sections[] =
+{
+    { 0, 0, 8, 8 }, // A: 64x64
+    { 8, 0, 2, 4 }, // B: 16x32
+    { 8, 4, 2, 4 }, // C: 16x32
+    { 8, 8, 2, 2 }, // D: 16x16
+    { 0, 8, 4, 2 }, // E: 32x16
+    { 4, 8, 4, 2 }, // F: 32x16
+};
+
+static EWRAM_DATA u8 *sTrainerFront80x80Buffer = NULL;
+static EWRAM_DATA struct SpriteFrameImage sTrainerFront80x80FrameImage = {0};
+
+static const struct OamData sOamData_TrainerFront80x80 =
+{
+    .y = 0,
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .shape = SPRITE_SHAPE(64x64),
+    .x = 0,
+    .size = SPRITE_SIZE(64x64),
+    .priority = 2,
+};
+
+static const union AnimCmd sAnim_TrainerFront80x80[] =
+{
+    ANIMCMD_FRAME(0, 0),
+    ANIMCMD_END,
+};
+
+// Two identical single-frame anims: the trainer slide-back plays anim 1, so a
+// second entry is required even though the pic is not animated.
+static const union AnimCmd *const sAnims_TrainerFront80x80[] =
+{
+    sAnim_TrainerFront80x80,
+    sAnim_TrainerFront80x80,
+};
+
+static const struct SpriteTemplate sTrainerFront80x80SpriteTemplate =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = TAG_NONE,
+    .oam = &sOamData_TrainerFront80x80,
+    .anims = sAnims_TrainerFront80x80,
+    .images = &sTrainerFront80x80FrameImage,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
+};
+
+static const struct Subsprite sSubsprites_TrainerFront80x80[] =
+{
+    { .x = -40, .y = -40, .shape = SPRITE_SHAPE(64x64), .size = SPRITE_SIZE(64x64), .tileOffset = 0,  .priority = 2 },
+    { .x =  24, .y = -40, .shape = SPRITE_SHAPE(16x32), .size = SPRITE_SIZE(16x32), .tileOffset = 64, .priority = 2 },
+    { .x =  24, .y =  -8, .shape = SPRITE_SHAPE(16x32), .size = SPRITE_SIZE(16x32), .tileOffset = 72, .priority = 2 },
+    { .x =  24, .y =  24, .shape = SPRITE_SHAPE(16x16), .size = SPRITE_SIZE(16x16), .tileOffset = 80, .priority = 2 },
+    { .x = -40, .y =  24, .shape = SPRITE_SHAPE(32x16), .size = SPRITE_SIZE(32x16), .tileOffset = 84, .priority = 2 },
+    { .x =  -8, .y =  24, .shape = SPRITE_SHAPE(32x16), .size = SPRITE_SIZE(32x16), .tileOffset = 92, .priority = 2 },
+};
+
+static const struct SubspriteTable sSubspriteTable_TrainerFront80x80[] =
+{
+    { ARRAY_COUNT(sSubsprites_TrainerFront80x80), sSubsprites_TrainerFront80x80 },
+};
+
+// Rearranges a decompressed row-major 80x80 image (src) into the concatenated
+// OAM sections described by sTrainerPic80x80Sections (dst).
+static void BuildTrainerFront80x80Gfx(const u8 *src, u8 *dst)
+{
+    u32 destTile = 0;
+
+    for (u32 s = 0; s < ARRAY_COUNT(sTrainerPic80x80Sections); s++)
+    {
+        const struct TrainerPic80x80Section *section = &sTrainerPic80x80Sections[s];
+
+        for (u32 ty = 0; ty < section->hTiles; ty++)
+        {
+            for (u32 tx = 0; tx < section->wTiles; tx++)
+            {
+                u32 srcTile = (section->srcRow + ty) * TRAINER_PIC_80x80_WIDTH_TILES + (section->srcCol + tx);
+                CpuCopy32(src + srcTile * TILE_SIZE_4BPP, dst + destTile * TILE_SIZE_4BPP, TILE_SIZE_4BPP);
+                destTile++;
+            }
+        }
+    }
+}
+
+bool32 IsTrainerFrontPic80x80(enum TrainerPicID trainerPicId)
+{
+    return GetTrainerFrontPicDimensions(trainerPicId) == TRAINER_PIC_DIM_80x80;
+}
+
+const struct SpriteTemplate *GetTrainerFront80x80SpriteTemplate(void)
+{
+    return &sTrainerFront80x80SpriteTemplate;
+}
+
+const struct SubspriteTable *GetTrainerFront80x80SubspriteTable(void)
+{
+    return sSubspriteTable_TrainerFront80x80;
+}
+
 void DecompressTrainerFrontPic(enum TrainerPicID trainerPicId, enum BattlerId battler)
 {
     enum BattlerPosition position = GetBattlerPosition(battler);
-    DecompressDataWithHeaderWram(GetTrainerFrontPicData(trainerPicId), gMonSpritesGfxPtr->spritesGfx[position]);
+
+    if (IsTrainerFrontPic80x80(trainerPicId))
+    {
+        // Decompress into the battler's scratch gfx buffer (large enough for the
+        // 100 tiles), then rearrange it into the dedicated 80x80 sprite buffer.
+        DecompressDataWithHeaderWram(GetTrainerFrontPicData(trainerPicId), gMonSpritesGfxPtr->spritesGfx[position]);
+        BuildTrainerFront80x80Gfx(gMonSpritesGfxPtr->spritesGfx[position], sTrainerFront80x80Buffer);
+    }
+    else
+    {
+        DecompressDataWithHeaderWram(GetTrainerFrontPicData(trainerPicId), gMonSpritesGfxPtr->spritesGfx[position]);
+    }
     LoadSpritePaletteWithTag(GetTrainerFrontPicPalette(trainerPicId), GetTrainerPicTag(trainerPicId, TRUE));
 }
 
@@ -1421,6 +1569,11 @@ void AllocateMonSpritesGfx(void)
     }
 
     gMonSpritesGfxPtr->barFontGfx = AllocZeroed(0x1000);
+
+    // Dedicated buffer for 80x80 trainer front pics (see DecompressTrainerFrontPic).
+    sTrainerFront80x80Buffer = AllocZeroed(TRAINER_PIC_80x80_TILE_COUNT * TILE_SIZE_4BPP);
+    sTrainerFront80x80FrameImage.data = sTrainerFront80x80Buffer;
+    sTrainerFront80x80FrameImage.size = TRAINER_PIC_80x80_TILE_COUNT * TILE_SIZE_4BPP;
 }
 
 void FreeMonSpritesGfx(void)
@@ -1431,6 +1584,9 @@ void FreeMonSpritesGfx(void)
     TRY_FREE_AND_SET_NULL(gMonSpritesGfxPtr->buffer);
     FREE_AND_SET_NULL(gMonSpritesGfxPtr->barFontGfx);
     FREE_AND_SET_NULL(gMonSpritesGfxPtr->firstDecompressed);
+    sTrainerFront80x80FrameImage.data = NULL;
+    sTrainerFront80x80FrameImage.size = 0;
+    TRY_FREE_AND_SET_NULL(sTrainerFront80x80Buffer);
     gMonSpritesGfxPtr->spritesGfx[B_POSITION_PLAYER_LEFT] = NULL;
     gMonSpritesGfxPtr->spritesGfx[B_POSITION_OPPONENT_LEFT] = NULL;
     gMonSpritesGfxPtr->spritesGfx[B_POSITION_PLAYER_RIGHT] = NULL;

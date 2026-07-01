@@ -331,6 +331,18 @@ const u16 gTrainerPalette_DiverFORAS[] = INCGFX_U16("graphics/trainers/front_pic
 const u32 gTrainerFrontPic_DiverMORAS[] = INCGFX_U32("graphics/trainers/front_pics/diver_m_oras.png", ".4bpp.smol");
 const u16 gTrainerPalette_DiverMORAS[] = INCGFX_U16("graphics/trainers/front_pics/diver_m_oras.png", ".gbapal");
 
+const u32 gTrainerFrontPic_LadyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/lady-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_LadyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/lady-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_AquaGruntMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/aqua-grunt-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_AquaGruntMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/aqua-grunt-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_FishermanORAS80[] = INCGFX_U32("graphics/trainers/front_pics/fisherman-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_FishermanORAS80[] = INCGFX_U16("graphics/trainers/front_pics/fisherman-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_BugCatcherORAS80[] = INCGFX_U32("graphics/trainers/front_pics/bug-catcher-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_BugCatcherORAS80[] = INCGFX_U16("graphics/trainers/front_pics/bug-catcher-oras-80.png", ".gbapal");
+
 const u32 gTrainerFrontPic_YoungsterFrlg[] = INCGFX_U32("graphics/trainers/front_pics/youngster_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_YoungsterFrlg[] = INCGFX_U16("graphics/trainers/palettes/youngster_frlg.pal", ".gbapal");
 
@@ -624,6 +636,20 @@ const union AnimCmd *const sBackAnims_OldManPokedude[] = {
         .paletteData = paletteFile,                                            \
         .mugshotCoords = {DEFAULT(0, __VA_ARGS__), DEFAULT_2(0, __VA_ARGS__)}, \
         .mugshotRotation = DEFAULT_3(0x200, __VA_ARGS__),                      \
+        .dimensions = TRAINER_PIC_DIM_64x64,                                   \
+    }}
+
+// Identical to TRAINER_FRONT_PIC, but tags the pic as an 80x80 canvas so the
+// battle engine renders it across multiple OAM subsprites. The source PNG must
+// be 80x80. Intended for opponent front pics (see notes in battle_gfx_sfx_util.c).
+#define TRAINER_FRONT_PIC_80x80(picFile, paletteFile, ...)                     \
+    (const struct TrainerFrontPicInfo[])                                       \
+    {{                                                                         \
+        .imageData = picFile,                                                  \
+        .paletteData = paletteFile,                                            \
+        .mugshotCoords = {DEFAULT(0, __VA_ARGS__), DEFAULT_2(0, __VA_ARGS__)}, \
+        .mugshotRotation = DEFAULT_3(0x200, __VA_ARGS__),                      \
+        .dimensions = TRAINER_PIC_DIM_80x80,                                   \
     }}
 
 #define TRAINER_BACK_PIC(yOffset, sprite, pal, anim)                                         \
@@ -856,7 +882,7 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     },
     [TRAINER_PIC_LEADER_BRAWLY] =
     {
-        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderBrawly, gTrainerPalette_LeaderBrawly),
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_LeaderBrawly, gTrainerPalette_LeaderBrawly),
     },
     [TRAINER_PIC_LEADER_WATTSON] =
     {
@@ -1324,6 +1350,22 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_DIVER_M_ORAS] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_DiverMORAS, gTrainerPalette_DiverMORAS),
+    },
+    [TRAINER_PIC_LADY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_LadyORAS80, gTrainerPalette_LadyORAS80),
+    },
+    [TRAINER_PIC_AQUA_GRUNT_M_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_AquaGruntMORAS80, gTrainerPalette_AquaGruntMORAS80),
+    },
+    [TRAINER_PIC_FISHERMAN_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_FishermanORAS80, gTrainerPalette_FishermanORAS80),
+    },
+    [TRAINER_PIC_BUG_CATCHER_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_BugCatcherORAS80, gTrainerPalette_BugCatcherORAS80),
     },
     [TRAINER_PIC_PROFESSOR_TURO] =
     {

@@ -2444,6 +2444,8 @@ void BtlController_HandleDrawTrainerPic(enum BattlerId battler, enum TrainerPicI
         gSprites[gBattleStruct->trainerSlideSpriteIds[battler]].x2 = -DISPLAY_WIDTH;
         gSprites[gBattleStruct->trainerSlideSpriteIds[battler]].sSpeedX = 2;
         gSprites[gBattleStruct->trainerSlideSpriteIds[battler]].oam.affineParam = trainerPicId;
+        if (IsTrainerFrontPic80x80(trainerPicId))
+            SetSubspriteTables(&gSprites[gBattleStruct->trainerSlideSpriteIds[battler]], GetTrainerFront80x80SubspriteTable());
     }
     else // Player's side
     {
@@ -2519,6 +2521,8 @@ void BtlController_HandleTrainerSlide(enum BattlerId battler, enum TrainerPicID 
         gSprites[gBattleStruct->trainerSlideSpriteIds[battler]].x2 = 96;
         gSprites[gBattleStruct->trainerSlideSpriteIds[battler]].x += 32;
         gSprites[gBattleStruct->trainerSlideSpriteIds[battler]].sSpeedX = -2;
+        if (IsTrainerFrontPic80x80(trainerPicId))
+            SetSubspriteTables(&gSprites[gBattleStruct->trainerSlideSpriteIds[battler]], GetTrainerFront80x80SubspriteTable());
     }
     gSprites[gBattleStruct->trainerSlideSpriteIds[battler]].callback = SpriteCB_TrainerSlideIn;
 
