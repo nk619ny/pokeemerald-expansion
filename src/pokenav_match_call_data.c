@@ -32,6 +32,14 @@ typedef struct MatchCallTextDataStruct {
     u16 flagToSetOnCompletion;
 } match_call_text_data_t;
 
+#define MATCH_CALL_RIVAL_TEXT_VARIANTS 6
+
+typedef struct RivalCallTextDataStruct {
+    const u8 *texts[MATCH_CALL_RIVAL_TEXT_VARIANTS];
+    u16 availabilityFlag;
+    u16 flagToSetOnCompletion;
+} rival_call_text_data_t;
+
 struct MatchCallStructCommon {
     u8 type;
     mapsec_u8_t mapSec;
@@ -87,7 +95,7 @@ struct MatchCallRival {
     u16 flag;
     const u8 *desc;
     const u8 *name;
-    const match_call_text_data_t *textData;
+    const rival_call_text_data_t *textData;
 };
 
 typedef union {
@@ -155,6 +163,7 @@ static void MatchCall_GetNameAndDesc_Rival(match_call_t, const u8 **, const u8 *
 
 static void MatchCall_BufferCallMessageText(const match_call_text_data_t *, u8 *);
 static void MatchCall_BufferCallMessageTextByRematchTeam(const match_call_text_data_t *, u16, u8 *);
+static void MatchCall_BufferRivalMessageText(const rival_call_text_data_t *, u8 *);
 static void MatchCall_GetNameAndDescByRematchIdx(u32, const u8 **, const u8 **);
 
 // Special flag ID that indicates the start of a section of match calls
@@ -173,6 +182,7 @@ static void MatchCall_GetNameAndDescByRematchIdx(u32, const u8 **, const u8 **);
 #define ALWAYS_AVAILABLE 0xFFFF
 #define NO_FLAG_TO_SET   0xFFFF
 #define MATCH_CALL_TEXT_END {NULL, ALWAYS_AVAILABLE, NO_FLAG_TO_SET}
+#define RIVAL_MATCH_CALL_TEXT_END {{NULL, NULL, NULL, NULL, NULL, NULL}, ALWAYS_AVAILABLE, NO_FLAG_TO_SET}
 
 // .rodata
 
@@ -280,23 +290,23 @@ static const struct MatchCallRival sMayMatchCallHeader =
     .flag = FLAG_ENABLE_RIVAL_MATCH_CALL,
     .desc = gText_MayBrendanMatchCallDesc,
     .name = gText_ExpandedPlaceholder_May,
-    .textData = (const match_call_text_data_t[]) {
-        { MatchCall_Text_May1,  ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
-        { MatchCall_Text_May2,  FLAG_DEFEATED_DEWFORD_GYM,           NO_FLAG_TO_SET },
-        { MatchCall_Text_May3,  FLAG_DELIVERED_DEVON_GOODS,          NO_FLAG_TO_SET },
-        { MatchCall_Text_May4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       NO_FLAG_TO_SET },
-        { MatchCall_Text_May5,  FLAG_RECEIVED_HM_STRENGTH,           NO_FLAG_TO_SET },
-        { MatchCall_Text_May6,  FLAG_DEFEATED_LAVARIDGE_GYM,         NO_FLAG_TO_SET },
-        { MatchCall_Text_May7,  FLAG_DEFEATED_PETALBURG_GYM,         NO_FLAG_TO_SET },
-        { MatchCall_Text_May8,  FLAG_RECEIVED_CASTFORM,              NO_FLAG_TO_SET },
-        { MatchCall_Text_May9,  FLAG_RECEIVED_RED_OR_BLUE_ORB,       NO_FLAG_TO_SET },
-        { MatchCall_Text_May10, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, NO_FLAG_TO_SET },
-        //{ MatchCall_Text_May11, FLAG_MET_TEAM_AQUA_HARBOR,           NO_FLAG_TO_SET },
-        { MatchCall_Text_May12, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
-        { MatchCall_Text_May13, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, NO_FLAG_TO_SET },
-        { MatchCall_Text_May14, FLAG_DEFEATED_SOOTOPOLIS_GYM,        NO_FLAG_TO_SET },
-        { MatchCall_Text_May15, FLAG_SYS_GAME_CLEAR,                 NO_FLAG_TO_SET },
-        MATCH_CALL_TEXT_END
+    .textData = (const rival_call_text_data_t[]) {
+        { {MatchCall_Text_May1,  MatchCall_Text_May1_2,  MatchCall_Text_May1_3,  MatchCall_Text_May1_4,  MatchCall_Text_May1_5,  MatchCall_Text_May1_6},  ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
+        { {MatchCall_Text_May2,  MatchCall_Text_May2_2,  MatchCall_Text_May2_3,  MatchCall_Text_May2_4,  MatchCall_Text_May2_5,  MatchCall_Text_May2_6},  FLAG_DEFEATED_DEWFORD_GYM,           NO_FLAG_TO_SET },
+        { {MatchCall_Text_May3,  MatchCall_Text_May3_2,  MatchCall_Text_May3_3,  MatchCall_Text_May3_4,  MatchCall_Text_May3_5,  MatchCall_Text_May3_6},  FLAG_DELIVERED_DEVON_GOODS,          NO_FLAG_TO_SET },
+        { {MatchCall_Text_May4,  MatchCall_Text_May4_2,  MatchCall_Text_May4_3,  MatchCall_Text_May4_4,  MatchCall_Text_May4_5,  MatchCall_Text_May4_6},  FLAG_HIDE_MAUVILLE_CITY_WALLY,       NO_FLAG_TO_SET },
+        { {MatchCall_Text_May5,  MatchCall_Text_May5_2,  MatchCall_Text_May5_3,  MatchCall_Text_May5_4,  MatchCall_Text_May5_5,  MatchCall_Text_May5_6},  FLAG_RECEIVED_HM_STRENGTH,           NO_FLAG_TO_SET },
+        { {MatchCall_Text_May6,  MatchCall_Text_May6_2,  MatchCall_Text_May6_3,  MatchCall_Text_May6_4,  MatchCall_Text_May6_5,  MatchCall_Text_May6_6},  FLAG_DEFEATED_LAVARIDGE_GYM,         NO_FLAG_TO_SET },
+        { {MatchCall_Text_May7,  MatchCall_Text_May7_2,  MatchCall_Text_May7_3,  MatchCall_Text_May7_4,  MatchCall_Text_May7_5,  MatchCall_Text_May7_6},  FLAG_DEFEATED_PETALBURG_GYM,         NO_FLAG_TO_SET },
+        { {MatchCall_Text_May8,  MatchCall_Text_May8_2,  MatchCall_Text_May8_3,  MatchCall_Text_May8_4,  MatchCall_Text_May8_5,  MatchCall_Text_May8_6},  FLAG_RECEIVED_CASTFORM,              NO_FLAG_TO_SET },
+        { {MatchCall_Text_May9,  MatchCall_Text_May9_2,  MatchCall_Text_May9_3,  MatchCall_Text_May9_4,  MatchCall_Text_May9_5,  MatchCall_Text_May9_6},  FLAG_RECEIVED_RED_OR_BLUE_ORB,       NO_FLAG_TO_SET },
+        { {MatchCall_Text_May10, MatchCall_Text_May10_2, MatchCall_Text_May10_3, MatchCall_Text_May10_4, MatchCall_Text_May10_5, MatchCall_Text_May10_6}, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, NO_FLAG_TO_SET },
+        //{ {MatchCall_Text_May11, MatchCall_Text_May11_2, MatchCall_Text_May11_3, MatchCall_Text_May11_4, MatchCall_Text_May11_5, MatchCall_Text_May11_6}, FLAG_MET_TEAM_AQUA_HARBOR,           NO_FLAG_TO_SET },
+        { {MatchCall_Text_May12, MatchCall_Text_May12_2, MatchCall_Text_May12_3, MatchCall_Text_May12_4, MatchCall_Text_May12_5, MatchCall_Text_May12_6}, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
+        { {MatchCall_Text_May13, MatchCall_Text_May13_2, MatchCall_Text_May13_3, MatchCall_Text_May13_4, MatchCall_Text_May13_5, MatchCall_Text_May13_6}, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, NO_FLAG_TO_SET },
+        { {MatchCall_Text_May14, MatchCall_Text_May14_2, MatchCall_Text_May14_3, MatchCall_Text_May14_4, MatchCall_Text_May14_5, MatchCall_Text_May14_6}, FLAG_DEFEATED_SOOTOPOLIS_GYM,        NO_FLAG_TO_SET },
+        { {MatchCall_Text_May15, MatchCall_Text_May15_2, MatchCall_Text_May15_3, MatchCall_Text_May15_4, MatchCall_Text_May15_5, MatchCall_Text_May15_6}, FLAG_SYS_GAME_CLEAR,                 NO_FLAG_TO_SET },
+        RIVAL_MATCH_CALL_TEXT_END
     }
 };
 
@@ -307,23 +317,23 @@ static const struct MatchCallRival sBrendanMatchCallHeader =
     .flag = FLAG_ENABLE_RIVAL_MATCH_CALL,
     .desc = gText_MayBrendanMatchCallDesc,
     .name = gText_ExpandedPlaceholder_Brendan,
-    .textData = (const match_call_text_data_t[]) {
-        { MatchCall_Text_Brendan1,  ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan2,  FLAG_DEFEATED_DEWFORD_GYM,           NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan3,  FLAG_DELIVERED_DEVON_GOODS,          NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan4,  FLAG_HIDE_MAUVILLE_CITY_WALLY,       NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan5,  FLAG_RECEIVED_HM_STRENGTH,           NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan6,  FLAG_DEFEATED_LAVARIDGE_GYM,         NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan7,  FLAG_DEFEATED_PETALBURG_GYM,         NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan8,  FLAG_RECEIVED_CASTFORM,              NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan9,  FLAG_RECEIVED_RED_OR_BLUE_ORB,       NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan10, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, NO_FLAG_TO_SET },
-        //{ MatchCall_Text_Brendan11, FLAG_MET_TEAM_AQUA_HARBOR,           NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan12, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan13, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan14, FLAG_DEFEATED_SOOTOPOLIS_GYM,        NO_FLAG_TO_SET },
-        { MatchCall_Text_Brendan15, FLAG_SYS_GAME_CLEAR,                 NO_FLAG_TO_SET },
-        MATCH_CALL_TEXT_END
+    .textData = (const rival_call_text_data_t[]) {
+        { {MatchCall_Text_Brendan1,  MatchCall_Text_Brendan1_2,  MatchCall_Text_Brendan1_3,  MatchCall_Text_Brendan1_4,  MatchCall_Text_Brendan1_5,  MatchCall_Text_Brendan1_6},  ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan2,  MatchCall_Text_Brendan2_2,  MatchCall_Text_Brendan2_3,  MatchCall_Text_Brendan2_4,  MatchCall_Text_Brendan2_5,  MatchCall_Text_Brendan2_6},  FLAG_DEFEATED_DEWFORD_GYM,           NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan3,  MatchCall_Text_Brendan3_2,  MatchCall_Text_Brendan3_3,  MatchCall_Text_Brendan3_4,  MatchCall_Text_Brendan3_5,  MatchCall_Text_Brendan3_6},  FLAG_DELIVERED_DEVON_GOODS,          NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan4,  MatchCall_Text_Brendan4_2,  MatchCall_Text_Brendan4_3,  MatchCall_Text_Brendan4_4,  MatchCall_Text_Brendan4_5,  MatchCall_Text_Brendan4_6},  FLAG_HIDE_MAUVILLE_CITY_WALLY,       NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan5,  MatchCall_Text_Brendan5_2,  MatchCall_Text_Brendan5_3,  MatchCall_Text_Brendan5_4,  MatchCall_Text_Brendan5_5,  MatchCall_Text_Brendan5_6},  FLAG_RECEIVED_HM_STRENGTH,           NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan6,  MatchCall_Text_Brendan6_2,  MatchCall_Text_Brendan6_3,  MatchCall_Text_Brendan6_4,  MatchCall_Text_Brendan6_5,  MatchCall_Text_Brendan6_6},  FLAG_DEFEATED_LAVARIDGE_GYM,         NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan7,  MatchCall_Text_Brendan7_2,  MatchCall_Text_Brendan7_3,  MatchCall_Text_Brendan7_4,  MatchCall_Text_Brendan7_5,  MatchCall_Text_Brendan7_6},  FLAG_DEFEATED_PETALBURG_GYM,         NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan8,  MatchCall_Text_Brendan8_2,  MatchCall_Text_Brendan8_3,  MatchCall_Text_Brendan8_4,  MatchCall_Text_Brendan8_5,  MatchCall_Text_Brendan8_6},  FLAG_RECEIVED_CASTFORM,              NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan9,  MatchCall_Text_Brendan9_2,  MatchCall_Text_Brendan9_3,  MatchCall_Text_Brendan9_4,  MatchCall_Text_Brendan9_5,  MatchCall_Text_Brendan9_6},  FLAG_RECEIVED_RED_OR_BLUE_ORB,       NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan10, MatchCall_Text_Brendan10_2, MatchCall_Text_Brendan10_3, MatchCall_Text_Brendan10_4, MatchCall_Text_Brendan10_5, MatchCall_Text_Brendan10_6}, FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, NO_FLAG_TO_SET },
+        //{ {MatchCall_Text_Brendan11, MatchCall_Text_Brendan11_2, MatchCall_Text_Brendan11_3, MatchCall_Text_Brendan11_4, MatchCall_Text_Brendan11_5, MatchCall_Text_Brendan11_6}, FLAG_MET_TEAM_AQUA_HARBOR,           NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan12, MatchCall_Text_Brendan12_2, MatchCall_Text_Brendan12_3, MatchCall_Text_Brendan12_4, MatchCall_Text_Brendan12_5, MatchCall_Text_Brendan12_6}, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan13, MatchCall_Text_Brendan13_2, MatchCall_Text_Brendan13_3, MatchCall_Text_Brendan13_4, MatchCall_Text_Brendan13_5, MatchCall_Text_Brendan13_6}, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan14, MatchCall_Text_Brendan14_2, MatchCall_Text_Brendan14_3, MatchCall_Text_Brendan14_4, MatchCall_Text_Brendan14_5, MatchCall_Text_Brendan14_6}, FLAG_DEFEATED_SOOTOPOLIS_GYM,        NO_FLAG_TO_SET },
+        { {MatchCall_Text_Brendan15, MatchCall_Text_Brendan15_2, MatchCall_Text_Brendan15_3, MatchCall_Text_Brendan15_4, MatchCall_Text_Brendan15_5, MatchCall_Text_Brendan15_6}, FLAG_SYS_GAME_CLEAR,                 NO_FLAG_TO_SET },
+        RIVAL_MATCH_CALL_TEXT_END
     }
 };
 
@@ -982,7 +992,7 @@ static void MatchCall_GetMessage_Wally(match_call_t matchCall, u8 *dest)
 
 static void MatchCall_GetMessage_Rival(match_call_t matchCall, u8 *dest)
 {
-    MatchCall_BufferCallMessageText(matchCall.rival->textData, dest);
+    MatchCall_BufferRivalMessageText(matchCall.rival->textData, dest);
 }
 
 static void MatchCall_GetMessage_Birch(match_call_t matchCall, u8 *dest)
@@ -1006,6 +1016,24 @@ static void MatchCall_BufferCallMessageText(const match_call_text_data_t *textDa
     if (textData[i].flagToSetOnCompletion != NO_FLAG_TO_SET)
         FlagSet(textData[i].flagToSetOnCompletion);
     StringExpandPlaceholders(dest, textData[i].text);
+}
+
+static void MatchCall_BufferRivalMessageText(const rival_call_text_data_t *textData, u8 *dest)
+{
+    u32 i;
+    for (i = 0; textData[i].texts[0] != NULL; i++)
+        ;
+    if (i)
+        i--;
+    while (i)
+    {
+        if (textData[i].availabilityFlag != ALWAYS_AVAILABLE && FlagGet(textData[i].availabilityFlag) == TRUE)
+            break;
+        i--;
+    }
+    if (textData[i].flagToSetOnCompletion != NO_FLAG_TO_SET)
+        FlagSet(textData[i].flagToSetOnCompletion);
+    StringExpandPlaceholders(dest, textData[i].texts[Random() % MATCH_CALL_RIVAL_TEXT_VARIANTS]);
 }
 
 static void MatchCall_BufferCallMessageTextByRematchTeam(const match_call_text_data_t *textData, u16 idx, u8 *dest)
