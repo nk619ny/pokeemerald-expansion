@@ -343,6 +343,21 @@ const u16 gTrainerPalette_FishermanORAS80[] = INCGFX_U16("graphics/trainers/fron
 const u32 gTrainerFrontPic_BugCatcherORAS80[] = INCGFX_U32("graphics/trainers/front_pics/bug-catcher-oras-80.png", ".4bpp.smol");
 const u16 gTrainerPalette_BugCatcherORAS80[] = INCGFX_U16("graphics/trainers/front_pics/bug-catcher-oras-80.png", ".gbapal");
 
+const u32 gTrainerFrontPic_WattsonORAS80[] = INCGFX_U32("graphics/trainers/front_pics/wattson-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_WattsonORAS80[] = INCGFX_U16("graphics/trainers/front_pics/wattson-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_AquaGruntFORAS80[] = INCGFX_U32("graphics/trainers/front_pics/aqua-grunt-f-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_AquaGruntFORAS80[] = INCGFX_U16("graphics/trainers/front_pics/aqua-grunt-f-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_NormanORAS80[] = INCGFX_U32("graphics/trainers/front_pics/norman-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_NormanORAS80[] = INCGFX_U16("graphics/trainers/front_pics/norman-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_RoxanneORAS80[] = INCGFX_U32("graphics/trainers/front_pics/roxanne-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_RoxanneORAS80[] = INCGFX_U16("graphics/trainers/front_pics/roxanne-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_WallyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/wally-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_WallyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/wally-oras-80.png", ".gbapal");
+
 const u32 gTrainerFrontPic_YoungsterFrlg[] = INCGFX_U32("graphics/trainers/front_pics/youngster_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_YoungsterFrlg[] = INCGFX_U16("graphics/trainers/palettes/youngster_frlg.pal", ".gbapal");
 
@@ -1366,6 +1381,26 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_BUG_CATCHER_ORAS_80] =
     {
         .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_BugCatcherORAS80, gTrainerPalette_BugCatcherORAS80),
+    },
+    [TRAINER_PIC_WATTSON_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_WattsonORAS80, gTrainerPalette_WattsonORAS80),
+    },
+    [TRAINER_PIC_AQUA_GRUNT_F_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_AquaGruntFORAS80, gTrainerPalette_AquaGruntFORAS80),
+    },
+    [TRAINER_PIC_NORMAN_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_NormanORAS80, gTrainerPalette_NormanORAS80),
+    },
+    [TRAINER_PIC_ROXANNE_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_RoxanneORAS80, gTrainerPalette_RoxanneORAS80),
+    },
+    [TRAINER_PIC_WALLY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_WallyORAS80, gTrainerPalette_WallyORAS80),
     },
     [TRAINER_PIC_PROFESSOR_TURO] =
     {
