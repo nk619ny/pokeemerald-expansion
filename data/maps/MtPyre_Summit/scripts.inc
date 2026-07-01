@@ -1574,7 +1574,7 @@ MtPyre_Summit_EventScript_MtPyreMultiBattle::
 # 823 "data/maps/MtPyre_Summit/scripts.pory"
 	delay 20
 # 824 "data/maps/MtPyre_Summit/scripts.pory"
-	multi_fixed_2_vs_2 TRAINER_MAXIE_MT_PYRE, MtPyre_Summit_Text_MaxieDefeated, TRAINER_ARCHIE_MT_PYRE, MtPyre_Summit_Text_ArchieDefeated, PARTNER_STEVEN
+	multi_2_vs_2 TRAINER_MAXIE_MT_PYRE, MtPyre_Summit_Text_MaxieDefeated, TRAINER_ARCHIE_MT_PYRE, MtPyre_Summit_Text_ArchieDefeated, PARTNER_STEVEN
 # 825 "data/maps/MtPyre_Summit/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
 # 826 "data/maps/MtPyre_Summit/scripts.pory"
