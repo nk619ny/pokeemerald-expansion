@@ -358,6 +358,21 @@ const u16 gTrainerPalette_RoxanneORAS80[] = INCGFX_U16("graphics/trainers/front_
 const u32 gTrainerFrontPic_WallyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/wally-oras-80.png", ".4bpp.smol");
 const u16 gTrainerPalette_WallyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/wally-oras-80.png", ".gbapal");
 
+const u32 gTrainerFrontPic_AromaLadyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/aroma-lady-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_AromaLadyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/aroma-lady-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_BattleGirlORAS80[] = INCGFX_U32("graphics/trainers/front_pics/battle-girl-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_BattleGirlORAS80[] = INCGFX_U16("graphics/trainers/front_pics/battle-girl-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_BeautyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/beauty-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_BeautyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/beauty-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_BirdKeeperORAS80[] = INCGFX_U32("graphics/trainers/front_pics/bird-keeper-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_BirdKeeperORAS80[] = INCGFX_U16("graphics/trainers/front_pics/bird-keeper-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_BlackBeltORAS80[] = INCGFX_U32("graphics/trainers/front_pics/black-belt-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_BlackBeltORAS80[] = INCGFX_U16("graphics/trainers/front_pics/black-belt-oras-80.png", ".gbapal");
+
 const u32 gTrainerFrontPic_YoungsterFrlg[] = INCGFX_U32("graphics/trainers/front_pics/youngster_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_YoungsterFrlg[] = INCGFX_U16("graphics/trainers/palettes/youngster_frlg.pal", ".gbapal");
 
