@@ -907,3 +907,7 @@ text Route111_Text_BeauDefeat {
 text Route111_Text_BeauPostBattle {
     format("I haven't found any ancient artifacts, yet. But I haven't lost hope!")
 }
+
+text Route111_Text_BeauVitamin {
+	format("Here, you should take this vitamin I dug up.")
+}
