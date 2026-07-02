@@ -2167,8 +2167,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
-        .cantBeSuppressed = TRUE,
-        .cantBeOverwritten = TRUE,
     },
 
     [ABILITY_ELECTROMORPHOSIS] =
@@ -2455,10 +2453,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
-    [ABILITY_313] =
+    [ABILITY_EELEVATE] =
     {
-        .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .name = _("Eelevate"),
+        .description = COMPOUND_STRING("Unimplemented."),
     },
 
     [ABILITY_314] =
