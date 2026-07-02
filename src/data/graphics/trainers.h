@@ -376,6 +376,9 @@ const u16 gTrainerPalette_BlackBeltORAS80[] = INCGFX_U16("graphics/trainers/fron
 const u32 gTrainerFrontPic_FlanneryORAS80[] = INCGFX_U32("graphics/trainers/front_pics/flannery-oras-80.png", ".4bpp.smol");
 const u16 gTrainerPalette_FlanneryORAS80[] = INCGFX_U16("graphics/trainers/front_pics/flannery-oras-80.png", ".gbapal");
 
+const u32 gTrainerFrontPic_BugManiacORAS80[] = INCGFX_U32("graphics/trainers/front_pics/bug-maniac-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_BugManiacORAS80[] = INCGFX_U16("graphics/trainers/front_pics/bug-maniac-oras-80.png", ".gbapal");
+
 const u32 gTrainerFrontPic_YoungsterFrlg[] = INCGFX_U32("graphics/trainers/front_pics/youngster_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_YoungsterFrlg[] = INCGFX_U16("graphics/trainers/palettes/youngster_frlg.pal", ".gbapal");
 
@@ -1423,6 +1426,10 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_FLANNERY_ORAS_80] =
     {
         .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_FlanneryORAS80, gTrainerPalette_FlanneryORAS80),
+    },
+    [TRAINER_PIC_BUG_MANIAC_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_BugManiacORAS80, gTrainerPalette_BugManiacORAS80),
     },
     [TRAINER_PIC_PROFESSOR_TURO] =
     {

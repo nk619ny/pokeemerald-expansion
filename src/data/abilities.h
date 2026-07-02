@@ -2453,9 +2453,9 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
-    [ABILITY_EELEVATE] =
+    [ABILITY_FIRE_MANE] =
     {
-        .name = _("Eelevate"),
+        .name = _("Fire Mane"),
         .description = COMPOUND_STRING("Unimplemented."),
     },
 

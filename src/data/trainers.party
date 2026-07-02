@@ -8517,7 +8517,7 @@ Modest Nature
 === TRAINER_SHANE === /* Route 114 */ 
 Name: SHANE
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -8767,7 +8767,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_BRENT === /* Route 119 */
 Name: BRENT
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -8817,7 +8817,7 @@ Tera Type: Grass
 === TRAINER_DONALD === /* Route 119 */
 Name: DONALD
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -8864,7 +8864,7 @@ IVs: 0 Atk
 === TRAINER_TAYLOR === /* Route 119 */
 Name: TAYLOR
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -8913,7 +8913,7 @@ IVs: 0 Atk
 === TRAINER_JEFFREY_1 === /* Route 120*/
 Name: JEFFREY
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -8960,7 +8960,7 @@ Tera Type: Poison
 === TRAINER_DEREK === /* Route 117 */
 Name: DEREK
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -9012,7 +9012,7 @@ Tera Type: Ground
 === TRAINER_JEFFREY_2 === /* Route */
 Name: JEFFREY
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -9033,7 +9033,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_JEFFREY_3 === /* Route */
 Name: JEFFREY
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -9054,7 +9054,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_JEFFREY_4 === /* Route */
 Name: JEFFREY
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -9079,7 +9079,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_JEFFREY_5 === /* Route */
 Name: JEFFREY
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -28835,7 +28835,7 @@ Tera Type: Fighting
 === TRAINER_CALE === /* Route 121 */
 Name: CALE
 Class: Bug Maniac
-Pic: Bug Maniac
+Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
