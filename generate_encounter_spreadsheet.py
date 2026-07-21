@@ -54,6 +54,105 @@ UNDERWATER_TO_SURFACE = {
 }
 
 # ---------------------------------------------------------------------------
+# Custom tab order (display names, case-insensitive match against mapsec_names)
+# MAPSECs not in this list appear after all listed ones.
+# ---------------------------------------------------------------------------
+CUSTOM_TAB_ORDER = [
+    "Route 101",
+    "Oldale Town",
+    "Route 103 West",
+    "Oldale Ruins",
+    "Route 102",
+    "Petalburg City",
+    "Route 104 South",
+    "Petalburg Woods",
+    "Route 104 North",
+    "Dewford Town",
+    "Haunted Manor",
+    "Route 106",
+    "Granite Cave",
+    "Route 109",
+    "Slateport City",
+    "Slateport Farm",
+    "Slateport Bay",
+    "Route 107",
+    "Route 110",
+    "Route 103 East",
+    "Mauville City",
+    "Route 117",
+    "Verdanturf Town",
+    "Verdant Grove",
+    "Rusturf Tunnel",
+    "Route 118",
+    "Route 111 South",
+    "Route 112",
+    "Fiery Path",
+    "Route 111 North",
+    "Route 113",
+    "Fallarbor Town",
+    "Route 135",
+    "Icefall Cave",
+    "Route 114",
+    "Desert Underpass",
+    "Mt. Chimney",
+    "Jagged Pass",
+    "Lavaridge Town",
+    "Mirage Desert",
+    "Mirage Tower",
+    "Glacier Summit",
+    "Meteor Falls",
+    "Route 115",
+    "Rustboro City",
+    "Route 116",
+    "Artisan Cave",
+    "Route 105",
+    "Route 108",
+    "Tropical Jungle",
+    "Sea Mauville",
+    "Island Cave",
+    "Desert Ruins",
+    "New Mauville",
+    "Berry Fields",
+    "Route 119",
+    "Fortree City",
+    "Route 120",
+    "Scorched Slab",
+    "Ancient Tomb",
+    "Route 121",
+    "Safari Zone",
+    "Lilycove City",
+    "Route 122",
+    "Mt. Pyre",
+    "Route 123",
+    "Magma Hideout",
+    "Aqua Hideout",
+    "Route 124",
+    "Route 125",
+    "Mossdeep City",
+    "Shoal Cave",
+    "Route 127",
+    "Route 126",
+    "Sootopolis City",
+    "Seafloor Cavern",
+    "Route 128",
+    "Route 129",
+    "Route 130",
+    "Route 131",
+    "Pacifidlog Town",
+    "Route 132",
+    "Route 133",
+    "Route 134",
+    "Sealed Chamber",
+    "Sky Pillar",
+    "Cave of Origin",
+    "Ever Grande City",
+    "Victory Road",
+    "Altering Cave",
+    "Marine Cave",
+    "Terra Cave",
+]
+
+# ---------------------------------------------------------------------------
 # Aesthetic form grouping
 # ---------------------------------------------------------------------------
 AESTHETIC_BASES = {
@@ -772,9 +871,14 @@ def main():
     wb = Workbook()
     wb.remove(wb.active)
 
-    # Order MAPSECs by their position in the enum
-    mapsec_order = {m: i for i, m in enumerate(ordered_ids)}
-    sorted_mapsecs = sorted(mapsec_data.keys(), key=lambda m: mapsec_order.get(m, 9999))
+    # Order MAPSECs by custom tab order, with unlisted ones appended at the end
+    custom_order_map = {name.lower(): i for i, name in enumerate(CUSTOM_TAB_ORDER)}
+
+    def get_mapsec_sort_key(mapsec):
+        display = mapsec_names.get(mapsec, mapsec.replace("MAPSEC_", "").replace("_", " "))
+        return custom_order_map.get(display.lower(), len(CUSTOM_TAB_ORDER))
+
+    sorted_mapsecs = sorted(mapsec_data.keys(), key=get_mapsec_sort_key)
 
     tab_names_used = set()
     for mapsec in sorted_mapsecs:
