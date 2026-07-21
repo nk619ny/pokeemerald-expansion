@@ -604,7 +604,7 @@ Jolly Nature
 === TRAINER_MARCEL === /* Route 121 */ /* TO BE ADDED */
 Name: MARCEL
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -638,7 +638,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ED === /* Route 123 */ 
 Name: ED
 Class: Collector
-Pic: Collector
+Pic: Collector ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -1628,7 +1628,7 @@ Tera Type: Dark
 === TRAINER_FREDRICK === /* Route 123 */
 Name: FREDRICK
 Class: Expert
-Pic: Expert M
+Pic: Expert M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -2035,7 +2035,7 @@ Adamant Nature
 === TRAINER_LEAH === /* Mt Pyre */
 Name: LEAH
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -2191,7 +2191,7 @@ Tera Type: Fairy
 === TRAINER_FELIX === /* Victory Road B2F */ /* Optional */
 Name: FELIX
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -3844,7 +3844,7 @@ IVs: 0 Atk
 === TRAINER_GEORGE === /* Petalburg Gym */ /* Necromancy */
 Name: GEORGINA
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -3908,7 +3908,7 @@ Jolly Nature
 === TRAINER_BERKE === /* Petalburg Gym */
 Name: BERKE
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -3923,7 +3923,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_BRAXTON === /* Route 123 */ /* TO BE ADDED */
 Name: BRAXTON
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -3972,7 +3972,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_VINCENT === /* Trick House */ /* TO BE ADDED */
 Name: VINCENT
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -3993,7 +3993,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_LEROY === /* Trick House */ /* TO BE ADDED */
 Name: LEROY
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4010,7 +4010,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_WILTON_1 === /* Route 112 */ 
 Name: WILTON
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4056,7 +4056,7 @@ Level: 41
 === TRAINER_EDGAR === /* Victory Road 1F */ /* TO BE ADDED */
 Name: EDGAR
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4073,7 +4073,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_ALBERT === /* Victory Road 1F */ /* Unused */
 Name: ALBERT
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4090,7 +4090,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_SAMUEL === /* Victory Road B1F */ 
 Name: SAMUEL
 Class: Dragon Tamer
-Pic: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -4145,7 +4145,7 @@ Adamant Nature
 === TRAINER_VITO === /* Petalburg Gym */
 Name: VITO
 Class: Leader
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4229,7 +4229,7 @@ Hasty Nature
 === TRAINER_OWEN === /* Victory Road B2F */ 
 Name: OWEN
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4277,7 +4277,7 @@ Level: 78
 === TRAINER_WILTON_2 === /* Route */
 Name: WILTON
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4298,7 +4298,7 @@ IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 === TRAINER_WILTON_3 === /* Route */
 Name: WILTON
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4319,7 +4319,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 === TRAINER_WILTON_4 === /* Route */
 Name: WILTON
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4340,7 +4340,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 === TRAINER_WILTON_5 === /* Route */
 Name: WILTON
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4361,7 +4361,7 @@ IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 === TRAINER_WARREN === /* Route 133 */ /* TO BE ADDED */
 Name: WARREN
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -4458,7 +4458,7 @@ Timid Nature
 === TRAINER_ALEXIA === /* Petalburg Gym */ /* Sleep Paralysis Demon */
 Name: ALEXIA
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -4578,7 +4578,7 @@ IVs: 0 Atk
 === TRAINER_WENDY === /* Route 123 */ /* TO BE ADDED */
 Name: WENDY
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -4611,7 +4611,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_KEIRA === /* Trick House */ /* TO BE ADDED */
 Name: KEIRA
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -4628,7 +4628,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_BROOKE_1 === /* Route 112 */ /* TO BE ADDED */
 Name: BROOKE
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -4649,7 +4649,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_JENNIFER === /* Route 120 */ /* TO BE ADDED */
 Name: JENNIFER
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -4662,7 +4662,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 === TRAINER_HOPE === /* Victory Road 1F */
 Name: HOPE
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -4714,7 +4714,7 @@ Adamant Nature
 === TRAINER_SHANNON === /* Victory Road B1F */ /* Optional */
 Name: SHANNON
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -4727,7 +4727,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_MICHELLE === /* Victory Road B1F */ 
 Name: MICHELLE
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -4779,7 +4779,7 @@ IVs: 0 Atk
 === TRAINER_CAROLINE === /* Victory Road B2F */ 
 Name: CAROLINE
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -4819,7 +4819,7 @@ Adamant Nature
 === TRAINER_JULIE === /* Victory Road B2F */
 Name: JULIE
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -5060,7 +5060,7 @@ Tera Type: Ice
 === TRAINER_PATRICIA === /* Trick House */ /* TO BE ADDED */
 Name: PATRICIA
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -5127,7 +5127,7 @@ IVs: 0 Atk
 === TRAINER_TAMMY === /* Route 121 */ /* TO BE ADDED */
 Name: TAMMY
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -5144,7 +5144,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_VALERIE_1 === /* Mt Pyre */
 Name: VALERIE
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -5202,7 +5202,7 @@ IVs: 0 Atk
 === TRAINER_TASHA === /* Mt Pyre */
 Name: TASHA
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -5249,7 +5249,7 @@ Tera Type: Ghost
 === TRAINER_VALERIE_2 === /* Route */
 Name: VALERIE
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -5266,7 +5266,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_VALERIE_3 === /* Route */
 Name: VALERIE
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -5283,7 +5283,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_VALERIE_4 === /* Route */
 Name: VALERIE
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -5300,7 +5300,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_VALERIE_5 === /* Route */
 Name: VALERIE
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -6038,7 +6038,7 @@ Adamant Nature
 === TRAINER_MOLLIE === /* Route 133 */
 Name: MOLLIE
 Class: Expert
-Pic: Expert F
+Pic: Expert F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -6103,7 +6103,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_HAZEL === /* Haunted Manor */
 Name: HAZEL
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -6153,7 +6153,7 @@ EVs: 252 HP
 === TRAINER_SAGE === /* Haunted Manor */
 Name: SAGE
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -7596,7 +7596,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_KIRK === /* Mauville Gym */
 Name: KIRK
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -7721,7 +7721,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_SHAWN === /* Mauville Gym */
 Name: SHAWN
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Starting Status: ELECTRIC_TERRAIN
@@ -7779,7 +7779,7 @@ IVs: 0 Atk
 === TRAINER_FERNANDO_1 === /* Route 123 */
 Name: FERNANDO
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -7874,7 +7874,7 @@ Tera Type: Normal
 === TRAINER_DALTON_2 === /* Route */
 Name: DALTON
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -7895,7 +7895,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_DALTON_3 === /* Route */
 Name: DALTON
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -7916,7 +7916,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_DALTON_4 === /* Route */
 Name: DALTON
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -7937,7 +7937,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_DALTON_5 === /* Route */
 Name: DALTON
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -8334,7 +8334,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_DREW === /* Route 111 Desert */
 Name: DREW
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -8461,7 +8461,7 @@ Bold Nature
 === TRAINER_LARRY === /* Route 112 */
 Name: LARRY
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -8567,7 +8567,7 @@ IVs: 0 Atk
 === TRAINER_JUSTIN === /* Trick House */ /* TO BE ADDED */
 Name: JUSTIN
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -8642,7 +8642,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TRAVIS === /* Route 111 South */
 Name: TRAVIS
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -8691,7 +8691,7 @@ IVs: 0 Atk
 === TRAINER_ETHAN_2 === /* Route */
 Name: ETHAN
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -8708,7 +8708,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_ETHAN_3 === /* Route */
 Name: ETHAN
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -8725,7 +8725,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_ETHAN_4 === /* Route */
 Name: ETHAN
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -8746,7 +8746,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ETHAN_5 === /* Route */
 Name: ETHAN
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -9743,7 +9743,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_WALTER_1 === /* Route 121 */
 Name: WALTER
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -9793,7 +9793,7 @@ IVs: 0 Atk
 === TRAINER_MICAH === /* SS Tidal */
 Name: MICAH
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -9810,7 +9810,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_THOMAS === /* SS Tidal */
 Name: THOMAS
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -9823,7 +9823,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_WALTER_2 === /* Route */
 Name: WALTER
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -9836,7 +9836,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_WALTER_3 === /* Route */
 Name: WALTER
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -9861,7 +9861,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_WALTER_4 === /* Route */
 Name: WALTER
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -9885,7 +9885,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_WALTER_5 === /* Route */
 Name: WALTER
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -10528,7 +10528,7 @@ IVs: 0 Atk
 === TRAINER_WINONA_1 === /* Fortree Gym */
 Name: WINONA
 Class: Leader
-Pic: Leader Winona
+Pic: Winona ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -10607,7 +10607,7 @@ IVs: 0 Atk
 === TRAINER_TATE_AND_LIZA_1 === /* Mossdeep Gym */
 Name: TATE&LIZA
 Class: Leader
-Pic: Leader Tate And Liza
+Pic: Tate and Liza ORAS 80
 Gender: Male
 Music: Female
 Double Battle: Yes
@@ -10689,7 +10689,7 @@ IVs: 0 Spe
 === TRAINER_JUAN_1 === /* Sootopolis Gym */
 Name: JUAN
 Class: Leader
-Pic: Leader Juan
+Pic: Juan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -12191,7 +12191,7 @@ Jolly Nature
 === TRAINER_TIMOTHY_1 === /* Route 115 */
 Name: TIMOTHY
 Class: Expert
-Pic: Expert M
+Pic: Expert M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -12240,7 +12240,7 @@ IVs: 0 Atk
 === TRAINER_LOOKER === /* Route */
 Name: LOOKER
 Class: Expert
-Pic: Expert M
+Pic: Expert M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -12257,7 +12257,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 === TRAINER_MIROR_B === /* Route */
 Name: MIROR B
 Class: Expert
-Pic: Expert M
+Pic: Expert M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -12308,7 +12308,7 @@ Jolly Nature
 
 === TRAINER_SILVER === /* Route */
 Name: SILVER
-Pic: Expert M
+Pic: Expert M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -12365,7 +12365,7 @@ Tera Type: Rock
 === TRAINER_EUSINE === /* Route */
 Name: EUSINE
 Class: Expert
-Pic: Expert M
+Pic: Expert M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -12435,7 +12435,7 @@ IVs: 0 Atk
 === TRAINER_VICKY === /* Route 111 */
 Name: VICKY
 Class: Winstrate
-Pic: Expert F
+Pic: Expert F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -12474,7 +12474,7 @@ IVs: 0 Atk
 === TRAINER_SHELBY_1 === /* Mt chimney */ 
 Name: SHELBY
 Class: Expert
-Pic: Expert F
+Pic: Expert F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -12516,7 +12516,7 @@ Timid Nature
 === TRAINER_N === /* Route */
 Name: N
 Class: Expert
-Pic: Expert F
+Pic: Expert F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -12533,7 +12533,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 === TRAINER_GIOVANNI === /* Route */
 Name: GIOVANNI
 Class: Expert
-Pic: Expert F
+Pic: Expert F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -12599,7 +12599,7 @@ IVs: 0 Atk
 
 === TRAINER_COLRESS === /* Route */
 Name: COLRESS
-Pic: Expert F
+Pic: Expert F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -12651,7 +12651,7 @@ IVs: 0 Atk
 === TRAINER_AZ === /* Route */
 Name: AZ
 Class: Expert
-Pic: Expert F
+Pic: Expert F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -12932,7 +12932,7 @@ IVs: 0 Atk
 === TRAINER_BEN === /* Mauville Gym */
 Name: BEN
 Class: Collector
-Pic: Collector
+Pic: Collector ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -12981,7 +12981,7 @@ Tera Type: Electric
 === TRAINER_QUINCY === /* Victory Road 1F */ /* Optional */
 Name: QUINCY
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -13006,7 +13006,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_KATELYNN === /* Victory Road 1F */
 Name: KATELYNN
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -14772,7 +14772,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_NICOLAS_1 === /* Meteor Falls */ /* TO BE ADDED */
 Name: NICOLAS
 Class: Dragon Tamer
-Pic: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -14789,7 +14789,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_NICOLAS_2 === /* Route */
 Name: NICOLAS
 Class: Dragon Tamer
-Pic: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -14806,7 +14806,7 @@ IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 === TRAINER_NICOLAS_3 === /* Route */
 Name: NICOLAS
 Class: Dragon Tamer
-Pic: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -14823,7 +14823,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 === TRAINER_NICOLAS_4 === /* Route */
 Name: NICOLAS
 Class: Dragon Tamer
-Pic: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -14844,7 +14844,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 === TRAINER_NICOLAS_5 === /* Route */
 Name: NICOLAS
 Class: Dragon Tamer
-Pic: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -14865,7 +14865,7 @@ IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 === TRAINER_AARON === /* Route 134 */
 Name: AARON
 Class: Dragon Tamer
-Pic: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -15173,7 +15173,7 @@ Level: 56
 === TRAINER_COLIN === /* Route 120 */ 
 Name: COLIN
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -15495,7 +15495,7 @@ Tera Type: Grass
 === TRAINER_DIANNE === /* Victory Road B2F */
 Name: DIANNE
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -18096,7 +18096,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_JAZMYN === /* Route 123 */ /* TO BE ADDED */
 Name: JAZMYN
 Class: Cooltrainer 2
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -18215,7 +18215,7 @@ IVs: 0 Atk
 === TRAINER_AURON === /* Route 125 */
 Name: AURON
 Class: Expert
-Pic: Expert M
+Pic: Expert M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -18311,7 +18311,7 @@ IVs: 0 Atk
 === TRAINER_MARLEY === /* Route 134 */
 Name: MARLEY
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -18413,7 +18413,7 @@ Tera Type: Steel
 === TRAINER_CONOR === /* Route 133 */ 
 Name: CONOR
 Class: Expert
-Pic: Expert M
+Pic: Expert M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -18453,7 +18453,7 @@ Tera Type: Fighting
 === TRAINER_EDWIN_1 === /* Route 110 */ 
 Name: EDWIN
 Class: Collector
-Pic: Collector
+Pic: Collector ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -18502,7 +18502,7 @@ Tera Type: Normal
 === TRAINER_HECTOR === /* Route 115 */ 
 Name: HECTOR
 Class: Collector
-Pic: Collector
+Pic: Collector ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -18659,7 +18659,7 @@ IVs: 0 Atk / 0 Spe
 === TRAINER_EDWIN_2 === /* Route */
 Name: EDWIN
 Class: Collector
-Pic: Collector
+Pic: Collector ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -18676,7 +18676,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_EDWIN_3 === /* Route */
 Name: EDWIN
 Class: Collector
-Pic: Collector
+Pic: Collector ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -18693,7 +18693,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_EDWIN_4 === /* Route */
 Name: EDWIN
 Class: Collector
-Pic: Collector
+Pic: Collector ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -18710,7 +18710,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_EDWIN_5 === /* Route */
 Name: EDWIN
 Class: Collector
-Pic: Collector
+Pic: Collector ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -18799,7 +18799,7 @@ Adamant Nature
 === TRAINER_BRENDAN_ROUTE_103_MUDKIP === /* Route 101 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18828,7 +18828,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP === /* Route 110 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18900,7 +18900,7 @@ Jolly Nature
 === TRAINER_BRENDAN_ROUTE_119_MUDKIP === /* Route 119 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -19008,7 +19008,7 @@ IVs: 0 Atk
 === TRAINER_BRENDAN_ROUTE_103_TREECKO === /* Route 101 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -19035,7 +19035,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BRENDAN_ROUTE_110_TREECKO === /* Route 110 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -19108,7 +19108,7 @@ Adamant Nature
 === TRAINER_BRENDAN_ROUTE_119_TREECKO === /* Route 119 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -19205,7 +19205,7 @@ Adamant Nature
 === TRAINER_BRENDAN_ROUTE_103_TORCHIC === /* Route 101 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -19233,7 +19233,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC === /* Route 110 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -19307,7 +19307,7 @@ Adamant Nature
 === TRAINER_BRENDAN_ROUTE_119_TORCHIC === /* Route 119 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -19393,7 +19393,7 @@ IVs: 0 Atk
 === TRAINER_MAY_ROUTE_103_MUDKIP === /* Route 101 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -19422,7 +19422,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_MAY_ROUTE_110_MUDKIP === /* Route 110 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -19496,7 +19496,7 @@ Jolly Nature
 === TRAINER_MAY_ROUTE_119_MUDKIP === /* Route 119 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -19605,7 +19605,7 @@ IVs: 0 Atk
 === TRAINER_MAY_ROUTE_103_TREECKO === /* Route 101 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -19633,7 +19633,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_MAY_ROUTE_110_TREECKO === /* Route 110 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -19706,7 +19706,7 @@ Adamant Nature
 === TRAINER_MAY_ROUTE_119_TREECKO === /* Route 119 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -19802,7 +19802,7 @@ Adamant Nature
 === TRAINER_MAY_ROUTE_103_TORCHIC === /* Route 101 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -19829,7 +19829,7 @@ Ability: Cursed Body
 === TRAINER_MAY_ROUTE_110_TORCHIC === /* Route 110 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -19903,7 +19903,7 @@ Adamant Nature
 === TRAINER_MAY_ROUTE_119_TORCHIC === /* Route 119 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -20135,7 +20135,7 @@ IVs: 0 Atk
 === TRAINER_MITCHELL === /* Victory Road B1F */ /* Back to Back */ /* TO BE UPDATED - reused trainer */
 Name: MITCHELL
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -20382,7 +20382,7 @@ EVs: 252 HP / 252 Atk
 === TRAINER_HALLE === /* Victory Road B1F */ /* Back to back */
 Name: HALLE
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -21306,7 +21306,7 @@ Tera Type: Bug
 === TRAINER_SYLVIA === /* Mossdeep Gym */ 
 Name: SYLVIA
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -21373,7 +21373,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ATHENA === /* Route 124 */ /* TO BE ADDED */
 Name: ATHENA
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -21474,7 +21474,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_NATE === /* Mossdeep Gym */
 Name: NATE
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -21530,7 +21530,7 @@ IVs: 0 Atk
 === TRAINER_KATHLEEN === /* Mossdeep Gym */ 
 Name: KATHLEEN
 Class: Hex Maniac
-Pic: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
@@ -21587,7 +21587,7 @@ IVs: 0 Atk
 === TRAINER_CLIFFORD === /* Mossdeep Gym */
 Name: CLIFFORD
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -21938,7 +21938,7 @@ IVs: 0 Atk
 === TRAINER_BRENDAN_RUSTBORO_TREECKO === /* Route 104 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -22019,7 +22019,7 @@ Adamant Nature
 === TRAINER_BRENDAN_RUSTBORO_MUDKIP === /* Route 104 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -22100,7 +22100,7 @@ Adamant Nature
 === TRAINER_PAXTON === /* Route 132 */ /* TO BE ADDED */
 Name: PAXTON
 Class: Expert
-Pic: Expert M
+Pic: Expert M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -22231,7 +22231,7 @@ Adamant Nature
 === TRAINER_JONATHAN === /* Route 132 */ /* TO BE ADDED */
 Name: JONATHAN
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -22248,7 +22248,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BRENDAN_RUSTBORO_TORCHIC === /* Route 104 */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -22329,7 +22329,7 @@ Adamant Nature
 === TRAINER_MAY_RUSTBORO_MUDKIP === /* Route 104 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23268,7 +23268,7 @@ Tera Type: Grass
 === TRAINER_KENT === /* Route 119 */
 Name: KENT
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -24065,7 +24065,7 @@ IVs: 0 Atk
 === TRAINER_GERALD === /* Lavaridge Gym */
 Name: GERALD
 Class: Dragon Tamer
-Pic: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -24372,7 +24372,7 @@ Tera Type: Bug
 === TRAINER_FLINT === /* Fortree Gym */
 Name: FLINT
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -24712,7 +24712,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_BRENDAN_LILYCOVE_MUDKIP === /* Lilycove City */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -24825,7 +24825,7 @@ IVs: 0 Atk
 === TRAINER_BRENDAN_LILYCOVE_TREECKO === /* Lilycove City */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -24938,7 +24938,7 @@ IVs: 0 Atk
 === TRAINER_BRENDAN_LILYCOVE_TORCHIC === /* Lilycove City */
 Name: BRENDAN
 Class: Rival
-Pic: Brendan
+Pic: Brendan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -25016,7 +25016,7 @@ Adamant Nature
 === TRAINER_MAY_LILYCOVE_MUDKIP === /* Lilycove City */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -25128,7 +25128,7 @@ IVs: 0 Atk
 === TRAINER_MAY_LILYCOVE_TREECKO === /* Lilycove City */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -25205,7 +25205,7 @@ Adamant Nature
 === TRAINER_MAY_LILYCOVE_TORCHIC === /* Lilycove City */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -25341,7 +25341,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ALEXA === /* Route 128 */ /* TO BE ADDED */
 Name: ALEXA
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -25358,7 +25358,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_RUBEN === /* Route 128 */ /* TO BE ADDED */
 Name: RUBEN
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -26342,7 +26342,7 @@ Tera Type: Bug
 === TRAINER_MARCOS === /* Route 103 East */
 Name: MARCOS
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -26444,7 +26444,7 @@ Tera Type: Water
 === TRAINER_TYRON === /* Route 111 South */
 Name: TYRON
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -26755,7 +26755,7 @@ Jolly Nature
 === TRAINER_LAWRENCE === /* Route 113 */
 Name: LAWRENCE
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -27748,7 +27748,7 @@ Adamant Nature
 === TRAINER_DARCY === /* Route 132 */ /* TO BE ADDED */
 Name: DARCY
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -27908,7 +27908,7 @@ IVs: 0 Atk
 === TRAINER_CAROLINA === /* Route 108 */ /* TO BE ADDED */
 Name: CAROLINA
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -28011,7 +28011,7 @@ Tera Type: Ground
 === TRAINER_BRANDEN === /* Route 111 Desert */
 Name: BRANDEN
 Class: Camper
-Pic: Camper
+Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -28610,7 +28610,7 @@ Tera Type: Fire
 === TRAINER_MAKAYLA === /* Route 132 */ /* TO BE ADDED */
 Name: MAKAYLA
 Class: Expert
-Pic: Expert F
+Pic: Expert F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -28627,7 +28627,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_FABIAN === /* Route 119 */
 Name: FABIAN
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -28773,7 +28773,7 @@ Tera Type: Bug
 === TRAINER_LEONEL === /* Route 120 */ /* TO BE ADDED */
 Name: LEONEL
 Class: Cooltrainer
-Pic: Cooltrainer M
+Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -28967,7 +28967,7 @@ IVs: 0 Atk
 === TRAINER_CRISTIN_1 === /* Route 121 */ /* TO BE ADDED */
 Name: CRISTIN
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -28984,7 +28984,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_MAY_RUSTBORO_TREECKO === /* Route 104 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -29065,7 +29065,7 @@ Adamant Nature
 === TRAINER_MAY_RUSTBORO_TORCHIC === /* Route 104 */
 Name: MAY
 Class: Rival
-Pic: May
+Pic: May ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -30178,7 +30178,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_WINONA_2 === /* Route */
 Name: WINONA
 Class: Leader
-Pic: Leader Winona
+Pic: Winona ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -30227,7 +30227,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_WINONA_3 === /* Route */
 Name: WINONA
 Class: Leader
-Pic: Leader Winona
+Pic: Winona ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -30284,7 +30284,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_WINONA_4 === /* Route */
 Name: WINONA
 Class: Leader
-Pic: Leader Winona
+Pic: Winona ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -30341,7 +30341,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_WINONA_5 === /* Route */
 Name: WINONA
 Class: Leader
-Pic: Leader Winona
+Pic: Winona ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -30398,7 +30398,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_TATE_AND_LIZA_2 === /* Route */
 Name: TATE&LIZA
 Class: Leader
-Pic: Leader Tate And Liza
+Pic: Tate and Liza ORAS 80
 Gender: Male
 Music: Female
 Double Battle: Yes
@@ -30447,7 +30447,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_TATE_AND_LIZA_3 === /* Route */
 Name: TATE&LIZA
 Class: Leader
-Pic: Leader Tate And Liza
+Pic: Tate and Liza ORAS 80
 Gender: Male
 Music: Female
 Double Battle: Yes
@@ -30504,7 +30504,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_TATE_AND_LIZA_4 === /* Route */
 Name: TATE&LIZA
 Class: Leader
-Pic: Leader Tate And Liza
+Pic: Tate and Liza ORAS 80
 Gender: Male
 Music: Female
 Double Battle: Yes
@@ -30561,7 +30561,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_TATE_AND_LIZA_5 === /* Route */
 Name: TATE&LIZA
 Class: Leader
-Pic: Leader Tate And Liza
+Pic: Tate and Liza ORAS 80
 Gender: Male
 Music: Female
 Double Battle: Yes
@@ -30618,7 +30618,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_JUAN_2 === /* Route */
 Name: JUAN
 Class: Leader
-Pic: Leader Juan
+Pic: Juan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -30667,7 +30667,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_JUAN_3 === /* Route */
 Name: JUAN
 Class: Leader
-Pic: Leader Juan
+Pic: Juan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -30716,7 +30716,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_JUAN_4 === /* Route */
 Name: JUAN
 Class: Leader
-Pic: Leader Juan
+Pic: Juan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -30773,7 +30773,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_JUAN_5 === /* Route */
 Name: JUAN
 Class: Leader
-Pic: Leader Juan
+Pic: Juan ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -30830,7 +30830,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_ANGELO === /* Mauville Gym */
 Name: ANGELO
 Class: Collector
-Pic: Collector
+Pic: Collector ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -32201,7 +32201,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_CRISTIN_5 === /* Route */
 Name: CRISTIN
 Class: Cooltrainer
-Pic: Cooltrainer F
+Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -32222,7 +32222,7 @@ IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 === TRAINER_FERNANDO_2 === /* Route */
 Name: FERNANDO
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -32243,7 +32243,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_FERNANDO_3 === /* Route */
 Name: FERNANDO
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -32264,7 +32264,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_FERNANDO_4 === /* Route */
 Name: FERNANDO
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -32285,7 +32285,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_FERNANDO_5 === /* Route */
 Name: FERNANDO
 Class: Guitarist
-Pic: Guitarist
+Pic: Guitarist ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -32626,7 +32626,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_EVERETT === /* Trick House */
 Name: EVERETT
 Class: Gentleman
-Pic: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
