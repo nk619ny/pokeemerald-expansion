@@ -108,7 +108,7 @@
 // Overworld flags
 // To use the following features in scripting, replace the 0s with the flag ID you're assigning it to.
 // Eg: Replace with FLAG_UNUSED_0x264 so you can use that flag to toggle the feature.
-#define OW_FLAG_PAUSE_TIME          0  // If this flag is set and OW_USE_FAKE_RTC is enabled, seconds on the in-game clock will not advance.
+#define OW_FLAG_PAUSE_TIME          FLAG_PAUSE_TIME  // If this flag is set and OW_USE_FAKE_RTC is enabled, seconds on the in-game clock will not advance.
 #define OW_FLAG_NO_TRAINER_SEE      FLAG_NO_TRAINER_BATTLE   // If this flag is set, trainers will not battle the player unless they're talked to.
 #define OW_FLAG_NO_COLLISION        0  // If this flag is set, the player will be able to walk over tiles with collision. Mainly intended for debugging purposes.
 #define OW_FLAG_POKE_RIDER          FLAG_FLY_FROM_MAP_CONFIG  // If this flag is set, the player will be able to use fly from the Pokenav Region Map and the Town Map key item by pressing 'R' on a city/location they are able to fly to.

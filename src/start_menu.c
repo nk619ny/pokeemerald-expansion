@@ -668,6 +668,9 @@ void Task_ShowStartMenu(u8 taskId)
         if (InUnionRoom() == TRUE)
             SetUsingUnionRoomStartMenu();
 
+#if OW_FLAG_PAUSE_TIME != 0
+        FlagSet(OW_FLAG_PAUSE_TIME);
+#endif
         gMenuCallback = HandleStartMenuInput;
         task->data[0]++;
         break;
@@ -680,6 +683,9 @@ void Task_ShowStartMenu(u8 taskId)
 
 void ShowStartMenu(void)
 {
+#if OW_FLAG_PAUSE_TIME != 0
+    FlagSet(OW_FLAG_PAUSE_TIME);
+#endif
     if (!IsOverworldLinkActive())
     {
         FreezeObjectEvents();
@@ -915,6 +921,9 @@ static bool8 StartMenuSafariZoneRetireCallback(void)
 static void HideStartMenuDebug(void)
 {
     PlaySE(SE_SELECT);
+#if OW_FLAG_PAUSE_TIME != 0
+    FlagClear(OW_FLAG_PAUSE_TIME);
+#endif
     ClearStdWindowAndFrame(GetStartMenuWindowId(), TRUE);
     RemoveStartMenuWindow();
 }
@@ -985,6 +994,9 @@ static bool8 SaveCallback(void)
         return FALSE;
     case SAVE_SUCCESS:
     case SAVE_ERROR:    // Close start menu
+#if OW_FLAG_PAUSE_TIME != 0
+        FlagClear(OW_FLAG_PAUSE_TIME);
+#endif
         ClearDialogWindowAndFrameToTransparent(0, TRUE);
         ScriptUnfreezeObjectEvents();
         UnlockPlayerFieldControls();
@@ -1022,6 +1034,9 @@ static bool8 BattlePyramidRetireCallback(void)
     case SAVE_IN_PROGRESS:
         return FALSE;
     case SAVE_CANCELED: // Yes (Retire from battle pyramid)
+#if OW_FLAG_PAUSE_TIME != 0
+        FlagClear(OW_FLAG_PAUSE_TIME);
+#endif
         ClearDialogWindowAndFrameToTransparent(0, TRUE);
         ScriptUnfreezeObjectEvents();
         UnlockPlayerFieldControls();
@@ -1579,6 +1594,9 @@ void SaveForBattleTowerLink(void)
 
 static void HideStartMenuWindow(void)
 {
+#if OW_FLAG_PAUSE_TIME != 0
+    FlagClear(OW_FLAG_PAUSE_TIME);
+#endif
     ClearStdWindowAndFrame(GetStartMenuWindowId(), TRUE);
     RemoveStartMenuWindow();
     ScriptUnfreezeObjectEvents();
