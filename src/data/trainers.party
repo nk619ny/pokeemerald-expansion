@@ -2517,7 +2517,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Archen  @ Sitrus Berry
 Ability: Defeatist  
-Level: 60
+Level: 55
 EVs: 252 Atk / 252 Spe
 Tera Type: Rock  
 - Ancient Power  
@@ -2528,7 +2528,7 @@ Tera Type: Rock
 Yamask-Galar  @ Custap Berry
 Ability: Wandering Spirit  
 EVs: 252 HP / 252 SpA
-Level: 60
+Level: 55
 Tera Type: Ground  
 IVs: 0 Atk  
 - Curse  
@@ -6601,7 +6601,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Fraxure @ Assault Vest  
 Ability: Mold Breaker  
-Level: 51
+Level: 52
 Tera Type: Dragon  
 - Aqua Tail  
 - Brick Break  
@@ -6610,7 +6610,7 @@ Tera Type: Dragon
 
 Herdier  
 Ability: Intimidate  
-Level: 51
+Level: 52
 Tera Type: Normal  
 - Wild Charge  
 - Psychic Fangs  
@@ -6619,7 +6619,7 @@ Tera Type: Normal
 
 Lombre
 Ability: Swift Swim
-Level: 51
+Level: 52
 Tera Type: Water  
 - Giga Drain
 - Fake Out  
@@ -6629,7 +6629,7 @@ Tera Type: Water
 
 Marill @ Sitrus Berry  
 Ability: Huge Power  
-Level: 51
+Level: 52
 EVs: 252 HP / 252 Atk  
 Adamant Nature  
 - Aqua Jet  
@@ -6648,7 +6648,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Lickitung  
 Ability: Cloud Nine  
-Level: 57
+Level: 55
 Tera Type: Normal  
 - Power Whip  
 - Fire Punch  
@@ -6667,7 +6667,7 @@ Tera Type: Water
 
 Dragonair @ Expert Belt  
 Ability: Marvel Scale  
-Level: 55
+Level: 53
 Tera Type: Dragon  
 - Aqua Jet  
 - Ice Beam  
@@ -6676,7 +6676,7 @@ Tera Type: Dragon
 
 Pikachu @ Light Ball
 Ability: Lightning Rod  
-Level: 58  
+Level: 55
 Tera Type: Electric  
 - Extreme Speed  
 - Fake Out  
@@ -6685,7 +6685,7 @@ Tera Type: Electric
 
 
 
-=== TRAINER_DOUGLAS === /* Route 106 */ /* TO BE ADDED */
+=== TRAINER_DOUGLAS === /* Route 106 */ 
 Name: DOUGLAS
 Class: Swimmer M
 Pic: Swimmer M
@@ -6694,15 +6694,49 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacool
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Shellder @ Assault Vest  
+Ability: Shell Armor  
+EVs: 252 HP / 252 SpD  
+Relaxed Nature  
+Level: 55
+IVs: 0 Spe  
+- Clamp  
+- Avalanche  
+- Ice Shard  
+- Payback  
 
-Tentacool
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Qwilfish-Hisui @ Focus Band
+Ability: Swift Swim  
+EVs: 252 Spe / 252 Atk  
+Level: 55
+- Aqua Jet  
+- Ceaseless Edge  
+- Barb Barrage  
+- Destiny Bond  
 
-=== TRAINER_DARRIN === /* Route 107 */ /* TO BE ADDED */
+Anorith @ Loaded Dice  
+Ability: Swift Swim  
+EVs: 252 HP / 252 Atk  
+Level: 55
+Adamant Nature  
+- Aqua Jet  
+- X-Scissor  
+- Rock Blast  
+- Hone Claws  
+
+Frogadier  
+Ability: Protean  
+EVs: 252 Spe  
+Timid Nature  
+Level: 53
+Tera Type: Steel
+IVs: 0 Atk  
+- Grass Knot  
+- Hidden Power
+- Scald  
+- Echoed Voice  
+
+=== TRAINER_DARRIN === /* Route 107 */ 
 Name: DARRIN
 Class: Swimmer M
 Pic: Swimmer M
@@ -6711,17 +6745,40 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacool
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Wartortle @ Protective Pads  
+Ability: Shell Armor  
+Level: 55
+- Wave Crash  
+- Aura Sphere  
+- Fake Out  
+- Flip Turn  
 
-Wingull
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Luvdisc  
+Ability: Swift Swim  
+Level: 50
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Scald  
+- Heal Pulse  
+- Endeavor  
 
-Tentacool
-Level: 24
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Drizzile @ Silver Powder  
+Ability: Torrent  
+Level: 52
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Facade  
+- Ice Shard  
+- Fell Stinger  
+- Aqua Jet  
+
+Lombre  
+Ability: Swift Swim  
+Level: 55
+- Fake Out  
+- Giga Drain  
+- Ice Beam  
+- Waterfall  
 
 === TRAINER_TONY_1 === /* Route 107 */ /* TO BE ADDED */
 Name: TONY
@@ -6795,7 +6852,6 @@ IVs: 0 Atk
 - Tailwind  
 - Air Slash  
 - Roost  
-
 
 
 
@@ -16512,7 +16568,7 @@ Level: 50
 - High Horsepower  
 - X-Scissor
 
-=== TRAINER_MISSY === /* Route 108 */ /* TO BE ADDED */
+=== TRAINER_MISSY === /* Route 108 */  /* TO BE ADDED */
 Name: MISSY
 Class: Swimmer F
 Pic: Swimmer F
@@ -16521,9 +16577,16 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Goldeen
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+ 
+
+Goldeen @ Charti Berry  
+Ability: Water Bubble  
+Level: 2
+IVs: 0 Atk  
+
+
+ 
+
 
 === TRAINER_ALICE === /* Route 109 */ /* TO BE ADDED */
 Name: ALICE
@@ -16748,7 +16811,7 @@ EVs: 252 SpA
 - Ice Punch  
 - Power-Up Punch  
 
-=== TRAINER_KATIE === /* Route 130 */ /* TO BE ADDED */
+=== TRAINER_KATIE === /* Route 130 */
 Name: KATIE
 Class: Swimmer F
 Pic: Swimmer F
@@ -16757,13 +16820,44 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Goldeen
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Masquerain @ Charti Berry  
+Ability: Water Bubble  
+Level: 72
+EVs: 252 SpA / 252 Spe
+IVs: 0 Atk  
+- Surf  
+- Bug Buzz  
+- Sticky Web  
+- Hurricane  
 
-Spheal
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tatsugiri-Droopy  
+Ability: Storm Drain  
+EVs: 252 Spe / 252 SpA
+Level: 72
+Timid Nature  
+IVs: 0 Atk  
+- Dragon Pulse  
+- Icy Wind  
+- Nasty Plot  
+- Baton Pass 
+
+Heliolisk  
+Ability: Dry Skin  
+EVs: 252 HP / 252 Spe
+Level: 72
+IVs: 0 Atk  
+- Thunderbolt  
+- Grass Knot  
+- Signal Beam  
+- Glare  
+
+Hariyama  
+Ability: Thick Fat  
+Level: 72
+EVs: 252 Atk / 128 Def / 128 SpD
+- Surf  
+- Salt Cure  
+- Cross Chop 
 
 === TRAINER_SUSIE === /* Route 131 */ /* TO BE ADDED */
 Name: SUSIE
@@ -22158,7 +22252,7 @@ Ability: Grassy Surge
 Level: 44
 Ball: Safari
 Tera Type: Grass  
-EVs: 252 HP / 252 Atk / 4 SpD  
+EVs: 128 HP / 128 Atk
 Adamant Nature  
 - Horn Leech  
 - Zen Headbutt  
@@ -22180,7 +22274,7 @@ IVs: 0 Atk
 
 Rillaboom @ Rillaboomite  
 Ability: Grassy Surge  
-Level: 46
+Level: 45
 Ball: Safari
 Tera Type: Grass  
 EVs: 252 Atk / 128 SpD / 128 Spe  
@@ -22216,6 +22310,18 @@ IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground I
 - Moonblast  
 - Floral Healing  
 
+Landorus-Therian (M) @ Yache Berry  
+Level: 44
+Ball: Safari
+Tera Type: Steel  
+Ability: Abundance  
+EVs: 128 HP / 128 Spe
+- Rototiller  
+- Stomping Tantrum  
+- Strength
+- U-turn
+
+/*
 Mudsdale @ Leftovers  
 Level: 45
 Ability: Stamina  
@@ -22227,6 +22333,7 @@ Adamant Nature
 - High Horsepower  
 - Stone Edge  
 - Rototiller  
+*/
 
 === TRAINER_JONATHAN === /* Route 132 */ /* TO BE ADDED */
 Name: JONATHAN
@@ -27809,7 +27916,7 @@ Marill
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ANDRES_1 === /* Route 105 */ /* TO BE ADDED */
+=== TRAINER_ANDRES_1 === /* Route 105 */ 
 Name: ANDRES
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -27818,13 +27925,44 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sandshrew
-Level: 25
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Runerigus @ Binding Band  
+Ability: Wandering Spirit  
+Tera Type: Ground  
+Level: 50
+- Spirit Shackle  
+- Destiny Bond  
+- Sand Tomb  
+- Protect  
 
-Sandshrew
-Level: 25
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Claydol  
+Ability: Levitate  
+Tera Type: Ground  
+Level: 50
+IVs: 0 Atk  
+- Body Press  
+- Earth Power  
+- Reflect  
+- Light Screen  
+
+Sigilyph  
+Ability: Magic Guard  
+Tera Type: Psychic  
+Level: 50
+IVs: 0 Atk  
+- Air Slash  
+- Ancient Power  
+- Psyshock  
+- Tailwind
+
+Oranguru  
+Ability: Telepathy  
+Tera Type: Rock  
+Level: 50
+IVs: 0 Atk  
+- Energy Ball  
+- Calm Mind  
+- Psychic Noise  
+- Hidden Power
 
 === TRAINER_JOSUE === /* Route 105 Surf */ /* TO BE ADDED */
 Name: JOSUE
@@ -27843,7 +27981,7 @@ Wingull
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_CAMRON === /* Route 107 */ /* TO BE ADDED */
+=== TRAINER_CAMRON === /* Route 107 */ 
 Name: CAMRON
 Class: Triathlete
 Pic: Swimming Triathlete M
@@ -27852,9 +27990,40 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Staryu
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mantine @ Wacan Berry  
+Ability: Swift Swim  
+Level: 50
+Tera Type: Ground  
+IVs: 0 Atk  
+- Air Slash  
+- Tailwind  
+- Water Pulse  
+- Hidden Power
+
+Drakloak @ Sitrus Berry  
+Ability: Infiltrator  
+Level: 52
+- Acrobatics  
+- Dragon Dance  
+- Baton Pass  
+- Dragon Rush  
+
+Diggersby  
+Ability: Huge Power  
+Level: 50
+- U-turn  
+- Gunk Shot  
+- High Horsepower  
+- Quick Attack  
+
+Linoone-Galar  
+Ability: Quick Feet  
+Level: 52
+- Body Slam  
+- Assurance  
+- Gunk Shot  
+- Taunt  
+
 
 === TRAINER_CORY_1 === /* Route 108 */
 Name: CORY
@@ -28488,26 +28657,56 @@ IVs: 0 Atk
 - Energy Ball  
 
 
-=== TRAINER_MELINA === /* Route 117 */ /* TO BE ADDED */ /* currently unused */
+=== TRAINER_MELINA === /* Route 117 */ 
 Name: MELINA
-Class: Triathlete
-Pic: Running Triathlete F
+Class: Fairy Tale Girl
+Pic: Fairy Tale Girl ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
 Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Munna  
-Ability: Synchronize  
-Level: 5  
-Tera Type: Psychic  
-IVs: 0 Atk  
-- Hypnosis  
-- Pain Split  
-- Expanding Force  
-- Dazzling Gleam  
+Tinkatink (F)  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk  
+Level: 30
+Adamant Nature  
+- Fake Out  
+- Play Rough  
+- Baby-Doll Eyes  
+- Sweet Kiss  
 
+Stufful  
+Ability: Cute Charm  
+EVs: 252 HP / 252 Atk  
+Level: 30
+Adamant Nature  
+- Charm  
+- Wide Guard  
+- Superpower  
+- Pain Split  
+
+Ponyta  
+Ability: Run Away  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Level: 30
+Jolly Nature  
+- Play Rough  
+- Charm  
+- Return  
+- Morning Sun  
+
+Ponyta-Galar  
+Ability: Pastel Veil  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Level: 30
+Timid Nature  
+IVs: 0 Atk  
+- Mystical Fire  
+- Dazzling Gleam  
+- Psybeam  
+- Attract  
 
 
 
