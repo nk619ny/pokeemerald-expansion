@@ -2101,6 +2101,9 @@ static void Task_BrineyBoardBoat(u8 taskId)
         if (gPaletteFade.active)
             break;
         FlagSet(FLAG_IN_BRINEY_BOAT);
+        FlagSet(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT);
+        FlagSet(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN);
+        FlagSet(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT);
         Overworld_ClearSavedMusic();
         Overworld_ChangeMusicTo(IS_FRLG ? MUS_RG_SURF : MUS_SURF);
         SetPlayerAvatarStateMask(PLAYER_AVATAR_FLAG_SURFING);
@@ -2165,6 +2168,9 @@ static void Task_StopBrineyBoatFadeOut(u8 taskId)
         return;
     // While the screen is black, leave the boat and step forward onto land.
     FlagClear(FLAG_IN_BRINEY_BOAT);
+    FlagClear(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT);
+    FlagClear(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN);
+    FlagClear(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT);
     ObjectEventSetGraphicsId(playerObjEvent, GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_NORMAL));
     if (playerObjEvent->fieldEffectSpriteId != 0 && playerObjEvent->fieldEffectSpriteId != MAX_SPRITES)
     {

@@ -877,6 +877,16 @@ RustboroCity_EventScript_MayBrineyHint::
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	giveitem ITEM_HM_STRENGTH
 	setvar VAR_LEVEL_CAP, 53
+
+	setvar VAR_PETALBURG_CITY_STATE, 9
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
+	clearflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
+	setflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
+	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY
+	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
+
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
 	releaseall
@@ -955,6 +965,16 @@ RustboroCity_EventScript_BrendanBrineyHint::
 	closemessage
 	giveitem ITEM_HM_STRENGTH
 	setvar VAR_LEVEL_CAP, 53
+	
+	setvar VAR_PETALBURG_CITY_STATE, 9
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
+	clearflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
+	setflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
+	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY
+	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
+
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
 	releaseall
@@ -1323,7 +1343,7 @@ text RustboroCity_Text_BrendanIWontGoEasy {
 }
 
 text RustboroCity_Text_RivalPetalburgGymReady {
-	format("{RIVAL}: Oh, by the way, {PLAYER}, I heard that the new Gym Leader in Petalburg is all set up and accepting challengers now.\pI hear they are pretty strong, too.\pI was thinking of challenging the Gym... but after losing to you I'm not sure if I'm ready.\NYou should go challenge them!\pAnd luckily the bridge has been fixed, too.")
+	format("{RIVAL}: Oh, by the way, {PLAYER}, I heard that the new Gym Leader in Petalburg is all set up and accepting challengers now.\pI hear they are pretty strong, too.\pI was thinking of challenging the Gym... but after losing to you I'm not sure if I'm ready.\NOh, and Mr. Briney mentioned wanting to speak with you!\pLuckily the bridge back to Petalburg has been fixed.")
 }
 
 script RustboroCity_EventScript_SteelBeam {

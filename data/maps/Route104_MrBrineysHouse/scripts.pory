@@ -26,9 +26,12 @@ Route104_MrBrineysHouse_EventScript_SetBrineyPeekoPos::
 Route104_MrBrineysHouse_EventScript_Briney::
 	lock
 	faceplayer
+	goto_if_set FLAG_BADGE05_GET, Route104_MrBrineysHouse_EventScript_NoLongerNeedBoat
+	goto_if_set FLAG_ENABLE_BRINEY_BOAT, Route104_MrBrineysHouse_EventScript_TakeMyBoatReminder
+	goto_if_set FLAG_BADGE01_GET, Route104_MrBrineysHouse_EventScript_TakeMyBoat
 	call_if_unset FLAG_MR_BRINEY_SAILING_INTRO, Route104_MrBrineysHouse_EventScript_SailingIntro
-	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_MrBrineysHouse_EventScript_SailBothDeliveries
-	goto_if_unset FLAG_DELIVERED_DEVON_GOODS, Route104_MrBrineysHouse_EventScript_SailDeliverPackage
+	//goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_MrBrineysHouse_EventScript_SailBothDeliveries
+	//goto_if_unset FLAG_DELIVERED_DEVON_GOODS, Route104_MrBrineysHouse_EventScript_SailDeliverPackage
 	goto Route104_MrBrineysHouse_EventScript_WhereAreWeBound
 	end
 
@@ -142,5 +145,45 @@ Route104_MrBrineysHouse_Text_Peeko:
 `
 
 text Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford{
-	format("Ah, {PLAYER}! I just received a call from your father about you.\pSo, you beat him in a Pokémon battle, hm?\pThat's mighty impressive. I suppose you're off to Dewford now?\pWell, I'm happy to take you. Come along with me, and we'll sail together!")
+	format("Mr. Briney: Ahoy, {PLAYER}! I just received a call from your father about you.\pSo, you beat him in a Pokémon battle, hm?\pThat's mighty impressive. I suppose you're off to Dewford now?\pWell, I'm happy to take you. Come along with me, and we'll sail together!")
+}
+
+text Route104_MrBrineysHouse_Text_TakeMyBoat{
+	format("Mr. Briney: Ahoy, {PLAYER}!\pBeating Roxanne is a mighty impressive task.\pI think you're capable enough now to sail the seas on our own.\pAs thanks for rescuing Peeko, I'm happy to let you take out my boat to explore Route 104 to 109, and make your own adventures.\pJust walk up to the water outside, and set sail!")
+}
+
+text Route104_MrBrineysHouse_Text_TakeMyBoatReminder{
+	format("Mr. Briney: Have you figured out how to sail?\pIf you walk to the edge of the beach outside, you'll be able to take my boat out.")
+}
+
+text Route104_MrBrineysHouse_Text_NoLongerNeedBoat{
+	format("Mr. Briney: Ahoy, {PLAYER}!\pI see you can surf with your own Pokémon now, so you no longer need my boat.\pNow you can sail out into even farther seas!")
+}
+
+script Route104_MrBrineysHouse_EventScript_TakeMyBoat{
+	lock
+	faceplayer
+	msgbox(Route104_MrBrineysHouse_Text_TakeMyBoat, MSGBOX_NPC)
+	waitmessage
+	setflag(FLAG_ENABLE_BRINEY_BOAT)
+	releaseall
+	end
+}
+
+script Route104_MrBrineysHouse_EventScript_TakeMyBoatReminder{
+	lock
+	faceplayer
+	msgbox(Route104_MrBrineysHouse_Text_TakeMyBoatReminder, MSGBOX_NPC)
+	waitmessage
+	releaseall
+	end
+}
+
+script Route104_MrBrineysHouse_EventScript_NoLongerNeedBoat{
+	lock
+	faceplayer
+	msgbox(Route104_MrBrineysHouse_Text_NoLongerNeedBoat, MSGBOX_NPC)
+	waitmessage
+	releaseall
+	end
 }

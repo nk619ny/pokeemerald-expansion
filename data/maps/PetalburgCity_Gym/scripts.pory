@@ -1733,6 +1733,7 @@ PetalburgCity_Gym_EventScript_Vito_PostBattle::
 	setvar VAR_PETALBURG_GYM_STATE, 7
 	setvar VAR_PETALBURG_CITY_STATE, 5
 	setflag FLAG_BADGE05_GET
+	clearflag FLAG_ENABLE_BRINEY_BOAT
 	special ResetHealLocationFromDewford
 	call EventScript_HideMrBriney
 	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON

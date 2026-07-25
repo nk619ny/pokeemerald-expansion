@@ -103,6 +103,12 @@ script PokemonCenter_1F_EventScript_Abra{
         releaseall
         end
     }
+    if(flag(FLAG_BADGE06_GET)) {
+        msgbox(format("The Abra is not responding to your presence. It seems to be in a deep sleep."))
+        closemessage
+        releaseall
+        end
+    }
     msgbox(format("Use Abra to teleport?"),MSGBOX_YESNO)
     if(var(VAR_RESULT) == NO) {
         closemessage
@@ -123,49 +129,49 @@ script PokemonCenter_1F_EventScript_Abra{
         case 1:
             msgbox(format("Abra used Teleport!"))
             delay(30)
-            clearflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)
-            clearflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)
-            clearflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)
-            setflag(FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN)
-            setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
-            setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)
-            setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)
+            if(!flag(FLAG_BADGE01_GET)){clearflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)}
+            if(!flag(FLAG_BADGE01_GET)){clearflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)}
+            if(!flag(FLAG_BADGE05_GET)){clearflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)}
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN)}
+            if(!flag(FLAG_BADGE05_GET)){setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)}
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)}
+            if(!flag(FLAG_BADGE05_GET)){setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)}
             warpteleport(MAP_PETALBURG_CITY,20,17)
             break
         case 2:
             msgbox(format("Abra used Teleport!"))
             delay(30)
-            setflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)
-            setflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)
-            setflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)
-            clearflag(FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN)
-            clearflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
-            setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)
-            setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)}
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)}
+            if(!flag(FLAG_BADGE05_GET)){setflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)}
+            if(!flag(FLAG_BADGE01_GET)){clearflag(FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN)}
+            if(!flag(FLAG_BADGE05_GET)){clearflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)}
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)}
+            if(!flag(FLAG_BADGE05_GET)){setflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)}
             warpteleport(MAP_DEWFORD_TOWN,17,11)
             break
         case 3:
             msgbox(format("Abra used Teleport!"))
             delay(30)
-            setflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)
-            setflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)
-            setflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)
-            setflag(FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN)
-            setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
-            clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)
-            clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)}
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)}
+            if(!flag(FLAG_BADGE05_GET)){setflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)}
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN)}
+            if(!flag(FLAG_BADGE05_GET)){setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)}
+            if(!flag(FLAG_BADGE01_GET)){clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)}
+            if(!flag(FLAG_BADGE05_GET)){clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)}
             warpteleport(MAP_SLATEPORT_CITY,25,20)
             break
         case 4:
             msgbox(format("Abra used Teleport!"))
             delay(30)
-            setflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)
-            setflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)
-            setflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)
-            setflag(FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN)
-            setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)
-            clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)
-            clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY)}
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_BRINEYS_HOUSE_PEEKO)}
+            if(!flag(FLAG_BADGE05_GET)){setflag(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT)}
+            if(!flag(FLAG_BADGE01_GET)){setflag(FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN)}
+            if(!flag(FLAG_BADGE05_GET)){setflag(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN)}
+            if(!flag(FLAG_BADGE01_GET)){clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)}
+            if(!flag(FLAG_BADGE05_GET)){clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)}
             warpteleport(MAP_MAUVILLE_CITY,22,9)
             break
         //case 5:

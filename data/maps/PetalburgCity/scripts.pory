@@ -27,6 +27,7 @@ PetalburgCity_EventScript_SetGymDoorsUnlocked::
 
 PetalburgCity_OnFrame:
 	map_script_2 VAR_PETALBURG_CITY_STATE, 5, PetalburgCity_EventScript_WallyPostVito
+	map_script_2 VAR_PETALBURG_CITY_STATE, 9, PetalburgCity_EventScript_CheckBrineyCall
 	.2byte 0
 
 PetalburgCity_EventScript_WallyTutorial::
@@ -858,4 +859,22 @@ script PetalburgCity_EventScript_GiveRareEgg {
 	waitfanfare
 	closemessage
 	return
+}
+
+script PetalburgCity_EventScript_CheckBrineyCall {
+	if(flag(FLAG_ENABLE_BRINEY_BOAT)) {
+		setvar(VAR_PETALBURG_CITY_STATE, 10)
+		releaseall
+		end
+	}
+	lock
+	pokenavcall(PetalburgCity_Text_BrineyBoatCall)
+	closemessage
+	setvar(VAR_PETALBURG_CITY_STATE, 10)
+	releaseall
+	end
+}
+
+text PetalburgCity_Text_BrineyBoatCall {
+	format("… … … … … …\n… … … … … Beep!\pMr. Briney: Ahoy, {PLAYER}! I hear\Nyou've become quite a Trainer!\pYou should stop by my home while\Nyou're in the area.\NI have a surprise for you!\p… … … … … …\n… … … … … Click!")
 }
