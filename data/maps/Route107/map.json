@@ -27,10 +27,10 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 41,
-      "y": 10,
+      "x": 38,
+      "y": 13,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -48,7 +48,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "Route107_EventScript_Tony",
+      "script": "Route107_EventScript_Camron",
       "flag": "0"
     },
     {
@@ -113,12 +113,12 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route107_EventScript_Camron",
+      "script": "Route107_EventScript_Tony",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 27,
+      "x": 34,
       "y": 8,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
@@ -155,6 +155,14 @@
       "elevation": 0,
       "item": "ITEM_SUN_STONE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_107_WATER_STONE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 41,
+      "y": 15,
+      "elevation": 0,
+      "item": "ITEM_HP_UP",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_107_HP_UP"
     }
   ],
   "region": "REGION_HOENN"

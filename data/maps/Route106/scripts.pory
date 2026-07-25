@@ -6,10 +6,12 @@ Route106_EventScript_TrainerTipsSign::
 	msgbox Route106_Text_TrainerTips, MSGBOX_SIGN
 	end
 
+/*
 Route106_EventScript_Douglas::
 	trainerbattle_single TRAINER_DOUGLAS, Route106_Text_DouglasIntro, Route106_Text_DouglasDefeated
 	msgbox Route106_Text_DouglasPostBattle, MSGBOX_AUTOCLOSE
 	end
+*/
 
 Route106_EventScript_Kyla::
 	trainerbattle_single TRAINER_KYLA, Route106_Text_KylaIntro, Route106_Text_KylaDefeated
@@ -49,4 +51,38 @@ text Route106_Text_ElliotDefeated_New {
 
 text Route106_Text_ElliotPostBattle_New {
 	format("Hiking is the greatest whether it's in the high mountains or deep underground. You agree with me, right?")
+}
+
+
+
+script Route106_EventScript_Douglas {
+    trainerbattle_single(TRAINER_DOUGLAS, Route106_Text_DouglasIntro, Route106_Text_DouglasDefeated, Route106_EventScript_DouglasTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route106_EventScript_DouglasTryGiveVitamin)
+	msgbox(Route106_Text_DouglasPostBattle, MSGBOX_AUTOCLOSE)
+    release
+    end
+}
+
+script Route106_EventScript_DouglasTryGiveVitamin{
+	if(flag(FLAG_BADGE05_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("I've battled trainers who were swimming, and trainers surfing on Pokémon, but never a trainer in a boat before.\pTake this as thanks for the new experience!"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Oh hey, it's the guy on the boat again!"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_CALCIUM)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_CALCIUM)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("Would this vitamin weigh down your boat too much?\pTry dropping some weight and come back."), MSGBOX_NPC)
+	}
+	release
+	end
 }

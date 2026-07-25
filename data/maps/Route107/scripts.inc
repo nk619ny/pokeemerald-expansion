@@ -99,17 +99,17 @@ Route107_EventScript_Ray::
 # 50 "data/maps/Route107/scripts.pory"
 	end
 # 51 "data/maps/Route107/scripts.pory"
-*/
-# 52 "data/maps/Route107/scripts.pory"
 
-# 53 "data/maps/Route107/scripts.pory"
+# 52 "data/maps/Route107/scripts.pory"
 Route107_EventScript_Camron::
-# 54 "data/maps/Route107/scripts.pory"
+# 53 "data/maps/Route107/scripts.pory"
 	trainerbattle_single TRAINER_CAMRON, Route107_Text_CamronIntro, Route107_Text_CamronDefeated
-# 55 "data/maps/Route107/scripts.pory"
+# 54 "data/maps/Route107/scripts.pory"
 	msgbox Route107_Text_CamronPostBattle, MSGBOX_AUTOCLOSE
-# 56 "data/maps/Route107/scripts.pory"
+# 55 "data/maps/Route107/scripts.pory"
 	end
+# 56 "data/maps/Route107/scripts.pory"
+*/
 
 Route107_EventScript_FlipTurnSwimmer::
 # 62 "data/maps/Route107/scripts.pory"
@@ -206,42 +206,94 @@ Route107_EventScript_Lisa::
 	end
 
 
-Route107_EventScript_LisaTryGiveVitamin::
-# 120 "data/maps/Route107/scripts.pory"
-	goto_if_set FLAG_BADGE05_GET, Route107_EventScript_LisaTryGiveVitamin_2
+Route107_EventScript_Camron::
+# 121 "data/maps/Route107/scripts.pory"
+	trainerbattle_single TRAINER_CAMRON, Route107_Text_CamronIntro, Route107_Text_CamronDefeated, Route107_EventScript_CamronTryGiveVitamin
+# 122 "data/maps/Route107/scripts.pory"
+	goto_if_set FLAG_TEMP_B, Route107_EventScript_CamronTryGiveVitamin
+# 123 "data/maps/Route107/scripts.pory"
+	msgbox Route107_Text_CamronPostBattle, MSGBOX_NPC
 # 124 "data/maps/Route107/scripts.pory"
+	release
+	end
+
+
+Route107_EventScript_CamronTryGiveVitamin::
+# 129 "data/maps/Route107/scripts.pory"
+	goto_if_set FLAG_BADGE05_GET, Route107_EventScript_CamronTryGiveVitamin_2
+# 133 "data/maps/Route107/scripts.pory"
+	goto_if_unset FLAG_TEMP_B, Route107_EventScript_CamronTryGiveVitamin_5
+# 137 "data/maps/Route107/scripts.pory"
+	msgbox Route107_EventScript_CamronTryGiveVitamin_Text_1, MSGBOX_NPC
+Route107_EventScript_CamronTryGiveVitamin_4:
+# 139 "data/maps/Route107/scripts.pory"
+	checkitemspace ITEM_CARBOS
+# 140 "data/maps/Route107/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route107_EventScript_CamronTryGiveVitamin_9
+# 145 "data/maps/Route107/scripts.pory"
+	setflag FLAG_TEMP_B
+# 146 "data/maps/Route107/scripts.pory"
+	msgbox Route107_EventScript_CamronTryGiveVitamin_Text_2, MSGBOX_NPC
+Route107_EventScript_CamronTryGiveVitamin_8:
+# 148 "data/maps/Route107/scripts.pory"
+	release
+	end
+
+Route107_EventScript_CamronTryGiveVitamin_2:
+# 130 "data/maps/Route107/scripts.pory"
+	releaseall
+	end
+
+Route107_EventScript_CamronTryGiveVitamin_5:
+# 134 "data/maps/Route107/scripts.pory"
+	msgbox Route107_EventScript_CamronTryGiveVitamin_Text_0, MSGBOX_NPC
+	goto Route107_EventScript_CamronTryGiveVitamin_4
+
+Route107_EventScript_CamronTryGiveVitamin_9:
+# 141 "data/maps/Route107/scripts.pory"
+	giveitem ITEM_CARBOS
+# 142 "data/maps/Route107/scripts.pory"
+	clearflag FLAG_TEMP_B
+	goto Route107_EventScript_CamronTryGiveVitamin_8
+
+
+Route107_EventScript_LisaTryGiveVitamin::
+# 153 "data/maps/Route107/scripts.pory"
+	goto_if_set FLAG_BADGE05_GET, Route107_EventScript_LisaTryGiveVitamin_2
+# 157 "data/maps/Route107/scripts.pory"
 	goto_if_unset FLAG_TEMP_A, Route107_EventScript_LisaTryGiveVitamin_5
-# 128 "data/maps/Route107/scripts.pory"
+# 161 "data/maps/Route107/scripts.pory"
 	msgbox Route107_EventScript_LisaTryGiveVitamin_Text_1, MSGBOX_NPC
 Route107_EventScript_LisaTryGiveVitamin_4:
-# 130 "data/maps/Route107/scripts.pory"
+# 163 "data/maps/Route107/scripts.pory"
 	checkitemspace ITEM_PROTEIN
-# 131 "data/maps/Route107/scripts.pory"
+# 164 "data/maps/Route107/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq Route107_EventScript_LisaTryGiveVitamin_9
-# 136 "data/maps/Route107/scripts.pory"
+# 169 "data/maps/Route107/scripts.pory"
 	setflag FLAG_TEMP_A
-# 137 "data/maps/Route107/scripts.pory"
+# 170 "data/maps/Route107/scripts.pory"
 	msgbox Route107_EventScript_LisaTryGiveVitamin_Text_2, MSGBOX_NPC
 Route107_EventScript_LisaTryGiveVitamin_8:
-# 139 "data/maps/Route107/scripts.pory"
+# 172 "data/maps/Route107/scripts.pory"
 	release
 	end
 
 Route107_EventScript_LisaTryGiveVitamin_2:
-# 121 "data/maps/Route107/scripts.pory"
+# 154 "data/maps/Route107/scripts.pory"
 	releaseall
 	end
 
 Route107_EventScript_LisaTryGiveVitamin_5:
-# 125 "data/maps/Route107/scripts.pory"
+# 158 "data/maps/Route107/scripts.pory"
 	msgbox Route107_EventScript_LisaTryGiveVitamin_Text_0, MSGBOX_NPC
 	goto Route107_EventScript_LisaTryGiveVitamin_4
 
 Route107_EventScript_LisaTryGiveVitamin_9:
-# 132 "data/maps/Route107/scripts.pory"
+# 165 "data/maps/Route107/scripts.pory"
 	giveitem ITEM_PROTEIN
-# 133 "data/maps/Route107/scripts.pory"
+# 166 "data/maps/Route107/scripts.pory"
 	clearflag FLAG_TEMP_A
 	goto Route107_EventScript_LisaTryGiveVitamin_8
 
@@ -275,8 +327,24 @@ Route107_EventScript_RayTryGiveVitamin_Text_2:
 	.string "Are you not supposed to carry this much\n"
 	.string "stuff when swimming either?$"
 
+Route107_EventScript_CamronTryGiveVitamin_Text_0:
+# 134 "data/maps/Route107/scripts.pory"
+	.string "Speed is critical for triathalons and\n"
+	.string "Pokémon battles.$"
+
+Route107_EventScript_CamronTryGiveVitamin_Text_1:
+# 137 "data/maps/Route107/scripts.pory"
+	.string "Did you come around to how valuable\n"
+	.string "speed is?$"
+
+Route107_EventScript_CamronTryGiveVitamin_Text_2:
+# 146 "data/maps/Route107/scripts.pory"
+	.string "What, are you an endurance trainer?\p"
+	.string "Drop some weight so you can reach peak\n"
+	.string "speed!$"
+
 Route107_EventScript_LisaTryGiveVitamin_Text_0:
-# 125 "data/maps/Route107/scripts.pory"
+# 158 "data/maps/Route107/scripts.pory"
 	.string "My brother keeps bringing junk he finds\n"
 	.string "into the water, and then losing it.\p"
 	.string "I told him he's not allowed to bring them\n"
@@ -284,12 +352,21 @@ Route107_EventScript_LisaTryGiveVitamin_Text_0:
 	.string "Would you like it instead?$"
 
 Route107_EventScript_LisaTryGiveVitamin_Text_1:
-# 128 "data/maps/Route107/scripts.pory"
+# 161 "data/maps/Route107/scripts.pory"
 	.string "You should take the vitamin so it\n"
 	.string "doesn't end up at the bottom of the\l"
 	.string "sea.$"
 
 Route107_EventScript_LisaTryGiveVitamin_Text_2:
-# 137 "data/maps/Route107/scripts.pory"
+# 170 "data/maps/Route107/scripts.pory"
 	.string "You should make room in your bag and\n"
 	.string "come back before he drops it.$"
+
+Route117_Text_MelinaDefeat::
+# 176 "data/maps/Route107/scripts.pory"
+	.string "The flowers distracted me...$"
+
+Route117_Text_MelinaPostBattle::
+# 181 "data/maps/Route107/scripts.pory"
+	.string "Frolicking through the flowers feels\n"
+	.string "like being in another world sometimes.$"

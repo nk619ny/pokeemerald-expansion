@@ -48,12 +48,12 @@ Route107_EventScript_Ray::
 	trainerbattle_double TRAINER_LISA_AND_RAY, Route107_Text_RayIntro, Route107_Text_RayDefeated, Route107_Text_RayNotEnoughPokemon
 	msgbox Route107_Text_RayPostBattle, MSGBOX_AUTOCLOSE
 	end
-*/
 
 Route107_EventScript_Camron::
 	trainerbattle_single TRAINER_CAMRON, Route107_Text_CamronIntro, Route107_Text_CamronDefeated
 	msgbox Route107_Text_CamronPostBattle, MSGBOX_AUTOCLOSE
 	end
+*/
 
 `
 
@@ -116,6 +116,39 @@ script Route107_EventScript_Lisa {
     end
 }
 
+
+script Route107_EventScript_Camron {
+    trainerbattle_single(TRAINER_CAMRON, Route107_Text_CamronIntro, Route107_Text_CamronDefeated, Route107_EventScript_CamronTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_B, Route107_EventScript_CamronTryGiveVitamin)
+	msgbox(Route107_Text_CamronPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script Route107_EventScript_CamronTryGiveVitamin {
+	if(flag(FLAG_BADGE05_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_B) == FALSE) {
+		msgbox(format("Speed is critical for triathalons and Pokémon battles."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Did you come around to how valuable speed is?"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_CARBOS)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_CARBOS)
+		clearflag(FLAG_TEMP_B)
+	}
+	else {
+		setflag(FLAG_TEMP_B)
+		msgbox(format("What, are you an endurance trainer?\pDrop some weight so you can reach peak speed!"), MSGBOX_NPC)
+	}
+	release
+	end
+}
+
 script Route107_EventScript_LisaTryGiveVitamin {
 	if(flag(FLAG_BADGE05_GET)==TRUE){
 		releaseall
@@ -138,4 +171,13 @@ script Route107_EventScript_LisaTryGiveVitamin {
 	}
 	release
 	end
+}
+
+text Route117_Text_MelinaDefeat {
+	format("The flowers distracted me...")
+}
+
+
+text Route117_Text_MelinaPostBattle {
+	format("Frolicking through the flowers feels like being in another world sometimes.")
 }

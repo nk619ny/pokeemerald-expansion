@@ -2535,12 +2535,14 @@ Route117_Text_MelinaIntro:
 	.string "Isn't it nice? To battle while looking\n"
 	.string "at pretty flowers?$"
 
+/*
 Route117_Text_MelinaDefeat:
 	.string "Oh, that's quite impressive!$"
 
 Route117_Text_MelinaPostBattle:
 	.string "It feels wonderful to go for a jog\n"
 	.string "while looking at flowers.$"
+*/
 
 Route117_Text_BrandiIntro:
 	.string "Let me demonstrate the power\n"
