@@ -41,6 +41,8 @@
 #define AI_FLAG_KNOW_OPPONENT_PARTY         AI_FLAG(31)  // AI knows all the species in the player's party, but not moves/items/abilities unless they've been seen.
 #define AI_FLAG_RANDOMIZE_SWITCHIN          AI_FLAG(32)  // AI will randomly choose between eligible switchin candidates of a given category instead of picking the last one in the party.
 #define AI_FLAG_RANDOMIZE_PARTY_INDICES     AI_FLAG(33)  // AI will randomize the order of the mons in its party, including the lead. Not an AI flag really, just a way to trigger TPP functionality
+// Custom AI Flags
+#define AI_FLAG_HARD_TRICK_ROOM             AI_FLAG(34)  // AI for Trick Room-oriented teams. Strongly favors setting Trick Room when beneficial: always over a slow kill, and over a fast kill SHOULD_TRICK_ROOM_OVER_FAST_KILL% of the time. Also favors Follow Me / Rage Powder to protect a partner that knows Trick Room, unless a fast kill is available.
 
 // The following options are enough to have a basic/smart trainer. Any other addtion could make the trainer worse/better depending on the flag
 #define AI_FLAG_BASIC_TRAINER         (AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY)

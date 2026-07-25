@@ -210,3 +210,6 @@ AI will randomly choose between eligible switchin candidates rather than always 
 
 ## `AI_FLAG_RANDOMIZE_PARTY_INDICES`
 AI will randomize the order of the mons in their party before battle starts. This means that lead choice is randommized, but so is the last mon for things like Illusion or the Ace flag, so be mindful when using it.
+
+## `AI_FLAG_HARD_TRICK_ROOM`
+Custom flag for Trick Room-oriented teams, intended for double battles. When setting Trick Room would benefit the team (as determined by the standard `ShouldSetFieldStatus` checks), a mon knowing Trick Room will always use it over a slow kill, and will use it over a fast kill `SHOULD_TRICK_ROOM_OVER_FAST_KILL`% of the time (default 50, configurable in `include/config/ai.h`). Additionally, if Trick Room is not up and the mon's partner knows Trick Room, a mon knowing Follow Me or Rage Powder is strongly encouraged to redirect attacks to protect the partner while it sets up — unless the redirector has a fast kill available. All fundamental Trick Room checks are preserved: the AI won't set Trick Room when its side is faster than both foes, and two partners knowing Trick Room won't both use it in the same turn (outside the existing final-turn refresh gambit). No other move scores are affected. Use alongside `AI_FLAG_BASIC_TRAINER` or `AI_FLAG_SMART_TRAINER`.

@@ -138,8 +138,11 @@
 #define FRIENDLY_FIRE_NORMAL_THRESHOLD            3 // typical acceptable number of hits to KO the partner via friendly fire
 #define FRIENDLY_FIRE_CONSERVATIVE_THRESHOLD      4 // AI_FLAG_CONSERVATIVE acceptable number of hits to KO the partner via friendly fire
 // Counterplay on the assumption of opponents Protecting.
-#define DOUBLE_TRICK_ROOM_ON_LAST_TURN_CHANCE    35 // both Pokémon use Trick Room on turn Trick Room expires in the hopes both opponents used Protect to stall, getting a free refresh on the timer
-#define TAILWIND_IN_TRICK_ROOM_CHANCE            35 // use Tailwind on turn Trick Room expires in the hopes both opponents used Protect to stall
+#define DOUBLE_TRICK_ROOM_ON_LAST_TURN_CHANCE    20 // both Pokémon use Trick Room on turn Trick Room expires in the hopes both opponents used Protect to stall, getting a free refresh on the timer
+#define TAILWIND_IN_TRICK_ROOM_CHANCE            40 // use Tailwind on turn Trick Room expires in the hopes both opponents used Protect to stall
+
+// AI_FLAG_HARD_TRICK_ROOM settings
+#define SHOULD_TRICK_ROOM_OVER_FAST_KILL         50 // chance the AI sets Trick Room at an appropriate time instead of taking an available fast kill
 
 #define AI_FLAG_ATTACKS_PARTNER_FOCUSES_PARTNER  FALSE  // if TRUE, AI_FLAG_ATTACKS_PARTNER prefers attacking the partner over the ally.
                                                         // This is treated as true regardless during wild battles with AI.

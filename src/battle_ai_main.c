@@ -70,6 +70,7 @@ static s32 AI_Safari(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
 static s32 AI_FirstBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_PowerfulStatus(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
+static s32 AI_HardTrickRoom(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_DynamicFunc(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_PredictSwitch(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_CheckPpStall(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
@@ -110,7 +111,7 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
     [31] = NULL,                     // Unused
     [32] = NULL,                     // Unused
     [33] = NULL,                     // Unused
-    [34] = NULL,                     // Unused
+    [34] = AI_HardTrickRoom,         // AI_FLAG_HARD_TRICK_ROOM
     [35] = NULL,                     // Unused
     [36] = NULL,                     // Unused
     [37] = NULL,                     // Unused
@@ -2085,7 +2086,9 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
     case EFFECT_FOLLOW_ME:
         if (!hasPartner
           || DoesPartnerHaveSameMoveEffect(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove)
-          || (aiData->partnerMove != MOVE_NONE && IsBattleMoveStatus(aiData->partnerMove))
+          || (aiData->partnerMove != MOVE_NONE && IsBattleMoveStatus(aiData->partnerMove)
+            // Hard Trick Room redirects attacks away from its partner while the partner sets Trick Room.
+            && !((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_HARD_TRICK_ROOM) && GetMoveEffect(aiData->partnerMove) == EFFECT_TRICK_ROOM))
           || gBattleStruct->monToSwitchIntoId[BATTLE_PARTNER(battlerAtk)] != PARTY_SIZE)
             ADJUST_SCORE(-20);
         break;
@@ -6571,6 +6574,80 @@ bool32 DoesSideHaveDamagingHazards(enum BattleSide side)
         }
     }
     return FALSE;
+}
+
+// Mirrors the Fast Kill condition in AI_TryToFaint: a damaging move that KOs the target while moving first.
+static bool32 HasFastKillOnFoe(enum BattlerId battlerAtk, enum BattlerId battlerDef)
+{
+    enum Move *moves = GetMovesArray(battlerAtk);
+    enum Move predictedMove = GetPredictedMove(battlerAtk, battlerDef, gAiLogicData);
+
+    if (!IsBattlerAlive(battlerDef))
+        return FALSE;
+
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        enum Move checkMove = moves[moveIndex];
+        if (checkMove == MOVE_NONE || checkMove == MOVE_UNAVAILABLE || IsBattleMoveStatus(checkMove))
+            continue;
+        if (CanIndexMoveFaintTarget(battlerAtk, battlerDef, moveIndex, AI_ATTACKING)
+         && AI_IsFaster(battlerAtk, battlerDef, checkMove, predictedMove, CONSIDER_PRIORITY))
+            return TRUE;
+    }
+    return FALSE;
+}
+
+static bool32 HasFastKillOnAnyFoe(enum BattlerId battlerAtk)
+{
+    return HasFastKillOnFoe(battlerAtk, LEFT_FOE(battlerAtk))
+        || HasFastKillOnFoe(battlerAtk, RIGHT_FOE(battlerAtk));
+}
+
+static s32 AI_HardTrickRoom(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)
+{
+    enum BattlerId canonicalFoe;
+
+    switch (GetMoveEffect(move))
+    {
+    case EFFECT_TRICK_ROOM:
+        // Only boost setting Trick Room; never boost clearing it. The last-turn refresh gambit in AI_DoubleBattle is left untouched.
+        if (gFieldStatuses & STATUS_FIELD_TRICK_ROOM)
+            break;
+        // Preserve the fundamental checks: only when the whole team benefits.
+        if (!ShouldSetFieldStatus(battlerAtk, STATUS_FIELD_TRICK_ROOM))
+            break;
+        // Partner has already committed to Trick Room this turn.
+        if (PartnerMoveEffectIs(BATTLE_PARTNER(battlerAtk), gAiLogicData->partnerMove, EFFECT_TRICK_ROOM))
+            break;
+        // Only score against a single foe so the fast kill roll happens once per turn.
+        canonicalFoe = LEFT_FOE(battlerAtk);
+        if (!IsBattlerAlive(canonicalFoe))
+            canonicalFoe = RIGHT_FOE(battlerAtk);
+        if (battlerDef != canonicalFoe)
+            break;
+        // Always set Trick Room over a slow kill; over a fast kill SHOULD_TRICK_ROOM_OVER_FAST_KILL% of the time.
+        if (!HasFastKillOnAnyFoe(battlerAtk) || RandomPercentage(RNG_AI_HARD_TRICK_ROOM_OVER_FAST_KILL, SHOULD_TRICK_ROOM_OVER_FAST_KILL))
+            ADJUST_SCORE(POWERFUL_STATUS_MOVE);
+        break;
+    case EFFECT_FOLLOW_ME:
+        // Redirect attacks to protect a partner that knows Trick Room, unless the user has a fast kill available.
+        if (gFieldStatuses & STATUS_FIELD_TRICK_ROOM)
+            break;
+        if (!HasPartner(battlerAtk) || !HasMoveWithEffect(BATTLE_PARTNER(battlerAtk), EFFECT_TRICK_ROOM))
+            break;
+        if (!ShouldSetFieldStatus(battlerAtk, STATUS_FIELD_TRICK_ROOM))
+            break;
+        // If the partner has already chosen a move this turn, it must be Trick Room for redirection to matter.
+        if (gAiLogicData->partnerMove != MOVE_NONE && GetMoveEffect(gAiLogicData->partnerMove) != EFFECT_TRICK_ROOM)
+            break;
+        if (!HasFastKillOnAnyFoe(battlerAtk))
+            ADJUST_SCORE(POWERFUL_STATUS_MOVE);
+        break;
+    default: // This flag must not affect any other move's score.
+        break;
+    }
+
+    return score;
 }
 
 static s32 AI_PredictSwitch(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)
