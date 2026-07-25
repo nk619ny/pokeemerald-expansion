@@ -7140,6 +7140,10 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
          && ctx->holdEffects[ctx->battlerAtk] != HOLD_EFFECT_UTILITY_UMBRELLA)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3333));
         break;
+    case ABILITY_WHITE_OUT:
+        if (ctx->weather & B_WEATHER_ICY_ANY)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3333));
+        break;
     case ABILITY_HADRON_ENGINE:
         if (ctx->fieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN && IsBattleMoveSpecial(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3333));
