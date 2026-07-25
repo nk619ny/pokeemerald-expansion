@@ -24,3 +24,21 @@ EventScript_CurrentTooFast::
 EventScript_CurrentTooFastEndMsg::
 	releaseall
 	end
+
+EventScript_BrineyBoardBoat::
+	lockall
+	msgbox Text_TakeBrineysBoat, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_BrineyBoatCancel
+	closemessage
+	callnative StartBrineyBoatBoarding
+	waitstate
+	releaseall
+	end
+
+EventScript_BrineyBoatCancel::
+	releaseall
+	end
+
+Text_TakeBrineysBoat:
+	.string "Take Mr. Briney's boat into the\n"
+	.string "water?$"

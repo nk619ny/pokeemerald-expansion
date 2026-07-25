@@ -41,6 +41,7 @@
 #include "constants/event_objects.h"
 #include "constants/field_poison.h"
 #include "constants/layouts.h"
+#include "constants/maps.h"
 #include "constants/metatile_behaviors.h"
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
@@ -58,6 +59,7 @@ static const u8 *GetInteractedObjectEventScript(struct MapPosition *, u8, enum D
 static const u8 *GetInteractedBackgroundEventScript(struct MapPosition *, u8, enum Direction);
 static const u8 *GetInteractedMetatileScript(struct MapPosition *, u8, enum Direction);
 static const u8 *GetInteractedWaterScript(struct MapPosition *, u8, enum Direction);
+static bool8 IsCurrentMapBrineyBoatMap(void);
 static bool32 TrySetupDiveDownScript(void);
 static bool32 TrySetupDiveEmergeScript(void);
 static bool8 CheckStandardWildEncounter(u16);
@@ -639,11 +641,34 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
 
     return NULL;
 }
+ 
+static bool8 IsCurrentMapBrineyBoatMap(void)
+{
+    u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) | gSaveBlock1Ptr->location.mapNum;
+
+    switch (map)
+    {
+    case MAP_ROUTE104:
+    case MAP_ROUTE105:
+    case MAP_ROUTE106:
+    case MAP_DEWFORD_TOWN:
+    case MAP_ROUTE107:
+    case MAP_ROUTE108:
+    case MAP_ROUTE109:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
 
 static const u8 *GetInteractedWaterScript(struct MapPosition *unused1, u8 metatileBehavior, enum Direction direction)
 {
     if (MetatileBehavior_IsFastWater(metatileBehavior) == TRUE && !TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
         return EventScript_CurrentTooFast;
+    if (FlagGet(FLAG_ENABLE_BRINEY_BOAT) && IsCurrentMapBrineyBoatMap()
+     && !TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING)
+     && IsPlayerFacingSurfableFishableWater() == TRUE)
+        return EventScript_BrineyBoardBoat;
     if (IsFieldMoveUnlocked(FIELD_MOVE_SURF) && FlagGet(FLAG_BADGE05_GET) == TRUE && /*PartyHasMonWithSurf() == TRUE && */ IsPlayerFacingSurfableFishableWater() == TRUE
      && CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_SURF)
      )

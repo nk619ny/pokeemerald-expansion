@@ -15,7 +15,9 @@
 #include "metatile_behavior.h"
 #include "oras_dowse.h"
 #include "overworld.h"
+#include "palette.h"
 #include "party_menu.h"
+#include "field_weather.h"
 #include "random.h"
 #include "rotating_gate.h"
 #include "rtc.h"
@@ -155,6 +157,11 @@ static bool8 PlayerAvatar_SecretBaseMatSpinStep3(struct Task *, struct ObjectEve
 static void CreateStopSurfingTask(enum Direction);
 static void Task_StopSurfingInit(u8);
 static void Task_WaitStopSurfing(u8);
+static void Task_BrineyBoardBoat(u8);
+static void Task_StopBrineyBoatInit(u8);
+static void Task_StopBrineyBoatFadeOut(u8);
+static void Task_StopBrineyBoatMove(u8);
+static void Task_StopBrineyBoatFadeIn(u8);
 
 static u8 TrySpinPlayerForWarp(struct ObjectEvent *, s16 *);
 
@@ -1161,7 +1168,21 @@ static void PlayerAvatarTransition_Surfing(struct ObjectEvent *objEvent)
     gFieldEffectArguments[2] = gPlayerAvatar.objectEventId;
     spriteId = FieldEffectStart(FLDEFF_SURF_BLOB);
     objEvent->fieldEffectSpriteId = spriteId;
-    SetSurfBlob_BobState(spriteId, BOB_PLAYER_AND_MON);
+    // FieldEffectStart returns MAX_SPRITES when no sprite slot was free. Writing to
+    // gSprites[MAX_SPRITES] would be out of bounds, so bail out before touching it.
+    if (spriteId == MAX_SPRITES)
+        return;
+    if (FlagGet(FLAG_IN_BRINEY_BOAT))
+    {
+        // Mr. Briney's boat has no wailmer blob beneath the player, so keep the
+        // blob sprite (for internal bookkeeping) but hide it and stop it bobbing.
+        SetSurfBlob_BobState(spriteId, BOB_NONE);
+        gSprites[spriteId].invisible = TRUE;
+    }
+    else
+    {
+        SetSurfBlob_BobState(spriteId, BOB_PLAYER_AND_MON);
+    }
 }
 
 static void PlayerAvatarTransition_Underwater(struct ObjectEvent *objEvent)
@@ -1574,6 +1595,10 @@ u16 GetRivalAvatarGraphicsIdByStateIdAndGender(u8 state, enum Gender gender)
 
 u16 GetPlayerAvatarGraphicsIdByStateIdAndGender(u8 state, enum Gender gender)
 {
+    // While riding Mr. Briney's boat the player uses the boat graphics instead of
+    // the surf graphics. This also restores the boat appearance on map reloads.
+    if (state == PLAYER_AVATAR_STATE_SURFING && FlagGet(FLAG_IN_BRINEY_BOAT))
+        return OBJ_EVENT_GFX_MR_BRINEYS_BOAT;
     return sPlayerAvatarGfxIds[state][gender];
 }
 
@@ -1612,6 +1637,9 @@ enum Gender GetPlayerAvatarGenderByGraphicsId(u16 gfxId)
     case OBJ_EVENT_GFX_GREEN_VS_SEEKER:
     case OBJ_EVENT_GFX_GREEN_VS_SEEKER_BIKE:
         return FEMALE;
+    case OBJ_EVENT_GFX_MR_BRINEYS_BOAT:
+        // Mr. Briney's boat is genderless; keep the player's current gender.
+        return gPlayerAvatar.gender;
     default:
         return MALE;
     }
@@ -1671,6 +1699,12 @@ void SetPlayerAvatarStateMask(u8 flags)
 static u8 GetPlayerAvatarStateTransitionByGraphicsId(u16 graphicsId, u8 gender)
 {
     u8 i;
+
+    // Mr. Briney's boat isn't in the gfx-to-state table; treat it as a surfing
+    // state so the player keeps surfing when the field is reloaded (e.g. after a
+    // battle, closing the start menu, or using a field move).
+    if (graphicsId == OBJ_EVENT_GFX_MR_BRINEYS_BOAT)
+        return PLAYER_AVATAR_FLAG_SURFING;
 
     for (i = 0; i < ARRAY_COUNT(sPlayerAvatarGfxToStateFlag[0]); i++)
     {
@@ -1988,6 +2022,18 @@ static void CreateStopSurfingTask(enum Direction direction)
     gPlayerAvatar.flags ^= PLAYER_AVATAR_FLAG_SURFING;
     gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_ON_FOOT;
     gPlayerAvatar.preventStep = TRUE;
+    if (FlagGet(FLAG_IN_BRINEY_BOAT))
+    {
+        // Boarding cleared PLAYER_AVATAR_FLAG_CONTROLLABLE; restore it so the player
+        // regains normal control after disembarking (otherwise the avatar stays in a
+        // forced-movement state until the next map reload).
+        gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_CONTROLLABLE;
+        // Disembark Mr. Briney's boat with a fade to black instead of the surf hop.
+        taskId = CreateTask(Task_StopBrineyBoatInit, 0xFF);
+        gTasks[taskId].data[0] = direction;
+        Task_StopBrineyBoatInit(taskId);
+        return;
+    }
     taskId = CreateTask(Task_StopSurfingInit, 0xFF);
     gTasks[taskId].data[0] = direction;
     Task_StopSurfingInit(taskId);
@@ -2025,6 +2071,134 @@ static void Task_WaitStopSurfing(u8 taskId)
 #endif
         DestroyTask(taskId);
     }
+}
+
+// Starts boarding Mr. Briney's boat from land (called from a script via callnative).
+// Fades to black, mounts the boat, steps one tile forward onto the water, then
+// fades back in. Resumes the calling script once finished.
+void StartBrineyBoatBoarding(void)
+{
+    u8 taskId = CreateTask(Task_BrineyBoardBoat, 0xFF);
+    gTasks[taskId].data[0] = 0;
+}
+
+static void Task_BrineyBoardBoat(u8 taskId)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+    s16 destX, destY;
+
+    switch (gTasks[taskId].data[0])
+    {
+    case 0:
+        LockPlayerFieldControls();
+        FreezeObjectEvents();
+        HideFollowerForFieldEffect();
+        gPlayerAvatar.preventStep = TRUE;
+        FadeScreenHardware(FADE_TO_BLACK, 0);
+        gTasks[taskId].data[0]++;
+        break;
+    case 1:
+        if (gPaletteFade.active)
+            break;
+        FlagSet(FLAG_IN_BRINEY_BOAT);
+        Overworld_ClearSavedMusic();
+        Overworld_ChangeMusicTo(IS_FRLG ? MUS_RG_SURF : MUS_SURF);
+        SetPlayerAvatarStateMask(PLAYER_AVATAR_FLAG_SURFING);
+        gPlayerAvatar.flags &= ~PLAYER_AVATAR_FLAG_CONTROLLABLE;
+        ObjectEventSetGraphicsId(playerObjEvent, GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_SURFING));
+        PlayerGetDestCoords(&destX, &destY);
+        MoveCoords(playerObjEvent->movementDirection, &destX, &destY);
+        ObjectEventClearHeldMovementIfFinished(playerObjEvent);
+        ObjectEventSetHeldMovement(playerObjEvent, GetJumpSpecialMovementAction(playerObjEvent->movementDirection));
+        // Create the surf blob for internal bookkeeping, but keep it hidden and still.
+        gFieldEffectArguments[0] = destX;
+        gFieldEffectArguments[1] = destY;
+        gFieldEffectArguments[2] = gPlayerAvatar.objectEventId;
+        playerObjEvent->fieldEffectSpriteId = FieldEffectStart(FLDEFF_SURF_BLOB);
+        // Guard against FieldEffectStart returning MAX_SPRITES (no free slot); writing
+        // to gSprites[MAX_SPRITES] would corrupt memory past the sprite array.
+        if (playerObjEvent->fieldEffectSpriteId != MAX_SPRITES)
+        {
+            SetSurfBlob_BobState(playerObjEvent->fieldEffectSpriteId, BOB_NONE);
+            gSprites[playerObjEvent->fieldEffectSpriteId].invisible = TRUE;
+        }
+        gTasks[taskId].data[0]++;
+        break;
+    case 2:
+        if (ObjectEventClearHeldMovementIfFinished(playerObjEvent))
+        {
+            ObjectEventSetHeldMovement(playerObjEvent, GetFaceDirectionMovementAction(playerObjEvent->movementDirection));
+            FadeScreenHardware(FADE_FROM_BLACK, 0);
+            gTasks[taskId].data[0]++;
+        }
+        break;
+    case 3:
+        if (gPaletteFade.active)
+            break;
+        gPlayerAvatar.preventStep = FALSE;
+        UnfreezeObjectEvents();
+        UnlockPlayerFieldControls();
+        ScriptContext_Enable();
+        DestroyTask(taskId);
+        break;
+    }
+}
+
+static void Task_StopBrineyBoatInit(u8 taskId)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+
+    if (ObjectEventIsMovementOverridden(playerObjEvent))
+    {
+        if (!ObjectEventClearHeldMovementIfFinished(playerObjEvent))
+            return;
+    }
+    FadeScreenHardware(FADE_TO_BLACK, 0);
+    gTasks[taskId].func = Task_StopBrineyBoatFadeOut;
+}
+
+static void Task_StopBrineyBoatFadeOut(u8 taskId)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+
+    if (gPaletteFade.active)
+        return;
+    // While the screen is black, leave the boat and step forward onto land.
+    FlagClear(FLAG_IN_BRINEY_BOAT);
+    ObjectEventSetGraphicsId(playerObjEvent, GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_NORMAL));
+    if (playerObjEvent->fieldEffectSpriteId != 0 && playerObjEvent->fieldEffectSpriteId != MAX_SPRITES)
+    {
+        DestroySprite(&gSprites[playerObjEvent->fieldEffectSpriteId]);
+        // Clear the stale index so nothing dereferences the destroyed blob later.
+        playerObjEvent->fieldEffectSpriteId = 0;
+    }
+    ObjectEventClearHeldMovementIfFinished(playerObjEvent);
+    ObjectEventSetHeldMovement(playerObjEvent, GetWalkNormalMovementAction((u8)gTasks[taskId].data[0]));
+    gTasks[taskId].func = Task_StopBrineyBoatMove;
+}
+
+static void Task_StopBrineyBoatMove(u8 taskId)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+
+    if (ObjectEventClearHeldMovementIfFinished(playerObjEvent))
+    {
+        ObjectEventSetHeldMovement(playerObjEvent, GetFaceDirectionMovementAction(playerObjEvent->facingDirection));
+#ifdef BUGFIX
+        playerObjEvent->triggerGroundEffectsOnMove = TRUE;
+#endif
+        FadeScreenHardware(FADE_FROM_BLACK, 0);
+        gTasks[taskId].func = Task_StopBrineyBoatFadeIn;
+    }
+}
+
+static void Task_StopBrineyBoatFadeIn(u8 taskId)
+{
+    if (gPaletteFade.active)
+        return;
+    gPlayerAvatar.preventStep = FALSE;
+    UnlockPlayerFieldControls();
+    DestroyTask(taskId);
 }
 
 void SetSpinStartFacingDir(enum Direction direction)

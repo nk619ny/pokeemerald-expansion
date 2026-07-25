@@ -326,6 +326,10 @@ static bool32 CanFish(void)
     s16 x, y;
     u16 tileBehavior;
 
+    // Can't fish while riding Mr. Briney's boat.
+    if (FlagGet(FLAG_IN_BRINEY_BOAT))
+        return FALSE;
+
     GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
