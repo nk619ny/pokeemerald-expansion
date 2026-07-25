@@ -4696,6 +4696,14 @@ BattleScript_HealerActivates::
 	waitmessage B_WAIT_TIME_LONG
 	return
 
+BattleScript_HealerSwitchInActivates::
+	call BattleScript_AbilityPopUp
+	curestatus BS_ATTACKER
+	updatestatusicon BS_ATTACKER
+	printstring STRINGID_HEALERCURE
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_ShedSkinActivates::
 	call BattleScript_AbilityPopUp
 	printfromtable gCureStatusStringIds
@@ -4804,6 +4812,16 @@ BattleScript_HospitalityActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_HOSPITALITYRESTORATION
+	waitmessage B_WAIT_TIME_LONG
+ 	playanimation BS_EFFECT_BATTLER, B_ANIM_SIMPLE_HEAL
+	healthbarupdate BS_EFFECT_BATTLER, PASSIVE_HP_UPDATE
+	datahpupdate BS_EFFECT_BATTLER, PASSIVE_HP_UPDATE
+	return
+
+BattleScript_HospitalityActivatesGeneric::
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_HOSPITALITYRESTORATIONGENERIC
 	waitmessage B_WAIT_TIME_LONG
  	playanimation BS_EFFECT_BATTLER, B_ANIM_SIMPLE_HEAL
 	healthbarupdate BS_EFFECT_BATTLER, PASSIVE_HP_UPDATE

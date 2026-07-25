@@ -4765,7 +4765,11 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             {
                 gEffectBattler = partner;
                 SetHealAmount(partner, GetNonDynamaxMaxHP(partner) / 4);
-                BattleScriptCall(BattleScript_HospitalityActivates);
+                if (GET_BASE_SPECIES_ID(gBattleMons[battler].species) == SPECIES_POLTCHAGEIST
+                 || GET_BASE_SPECIES_ID(gBattleMons[battler].species) == SPECIES_SINISTCHA)
+                    BattleScriptCall(BattleScript_HospitalityActivates);
+                else
+                    BattleScriptCall(BattleScript_HospitalityActivatesGeneric);
                 effect++;
             }
             break;
@@ -4783,6 +4787,18 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 gBattleMons[battler].volatiles.bonusCritStages = gBattleMons[partner].volatiles.bonusCritStages;
                 gEffectBattler = partner;
                 BattleScriptCall(BattleScript_CostarActivates);
+                effect++;
+            }
+            break;
+        case ABILITY_HEALER:
+            if (shouldAbilityTrigger
+             && IsDoubleBattle()
+             && IsBattlerAlive(partner)
+             && gBattleMons[partner].status1 & STATUS1_ANY)
+            {
+                gBattlerAttacker = partner;
+                gBattlerAbility = battler;
+                BattleScriptCall(BattleScript_HealerSwitchInActivates);
                 effect++;
             }
             break;
