@@ -3,11 +3,11 @@
 $speciesFile = "c:\Users\nk619\Documents\GitHub\pokeemerald-expansion\include\constants\species.h"
 $trainersFile = "c:\Users\nk619\Documents\GitHub\pokeemerald-expansion\src\data\trainers.h"
 
-# Extract all SPECIES_ defines (not alias lines with =, and not SPECIES_NONE)
+# Extract all SPECIES_ enum entries
 $speciesLines = Get-Content $speciesFile
 $speciesDefines = @{}
 foreach ($line in $speciesLines) {
-    if ($line -match '^\s*#define\s+(SPECIES_\w+)\s+(\d+)\s*$') {
+    if ($line -match '^\s*(SPECIES_\w+)\s*=\s*(\d+),?') {
         $name = $Matches[1]
         $id = [int]$Matches[2]
         $speciesDefines[$name] = $id
