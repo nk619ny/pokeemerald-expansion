@@ -13,7 +13,7 @@ static const u16 sNoneEliteLearnset[] = {
 #if P_FAMILY_PIKACHU
 static const u16 sPichuEliteLearnset[] = {
     MOVE_PETAL_DANCE,
-    MOVE_SING,
+    //MOVE_SING,
     MOVE_TEETER_DANCE,
     MOVE_FOLLOW_ME,
     MOVE_BABY_DOLL_EYES,
@@ -39,7 +39,7 @@ static const u16 sPikachuEliteLearnset[] = {
     MOVE_SPLISHY_SPLASH,
     MOVE_PIKA_PAPOW,
     MOVE_PETAL_DANCE,
-    MOVE_SING,
+    //MOVE_SING,
     MOVE_TEETER_DANCE,
     MOVE_FLY,
     MOVE_SURF,
@@ -78,7 +78,7 @@ static const u16 sRaichuEliteLearnset[] = {
     MOVE_SPLISHY_SPLASH,
     MOVE_PIKA_PAPOW,
     MOVE_PETAL_DANCE,
-    MOVE_SING,
+    //MOVE_SING,
     MOVE_TEETER_DANCE,
     MOVE_FLY,
     MOVE_SURF,
