@@ -502,3 +502,15 @@ script Route116_EventScript_SkitterSmackMan{
 	releaseall
 	end
 }
+
+text Route116_Text_KarenIntro {
+	format("I hear voices from these trees!")
+}
+
+text Route116_Text_KarenDefeat {
+	format("Maybe it was just the wind...")
+}
+
+text Route116_Text_KarenPostBattle {
+	format("I've gotten lost in the woods six different times.")
+}

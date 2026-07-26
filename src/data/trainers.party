@@ -3772,10 +3772,11 @@ Ability: Shadow Tag
 Tera Type: Psychic  
 EVs: 252 Def / 252 SpD  
 Bold Nature  
-IVs: 0 Atk  
+IVs: 0 Atk / 0 Spe
 Level: 50
 - Counter  
 - Mirror Coat  
+- Bide
 - Destiny Bond  
 
 
@@ -3784,7 +3785,7 @@ Name: PARKER
 Class: Street Thug
 Pic: Street Thug ORAS
 Gender: Male
-Music: Cool
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -4380,7 +4381,7 @@ Name: MARIO
 Class: Street Thug
 Pic: Street Thug ORAS
 Gender: Male
-Music: Cool
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
@@ -6239,7 +6240,7 @@ EVs: 252 HP
 - Skitter Smack 
 
 
-=== TRAINER_STEVE_1 === /* Route 114 */ /* TO BE ADDED */
+=== TRAINER_STEVE_1 === /* Route 114 */ 
 Name: STEVE
 Class: Pokemaniac
 Pic: Pokemaniac
@@ -6248,16 +6249,39 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Melmetal  
-Ability: Iron Fist  
-Level: 8
-Tera Type: Steel  
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
-- Double Iron Bash  
-- Darkest Lariat  
-- Ice Punch  
-- High Horsepower  
+Kangaskhan (F)  
+Ability: Scrappy  
+Level: 40
+- Fake Out  
+- Body Slam  
+- Drain Punch  
+- Sucker Punch  
+
+Grotle @ Loaded Dice  
+Ability: Shell Armor  
+Level: 45
+- Shell Smash  
+- Superpower  
+- Smack Down  
+- Bullet Seed  
+
+Charmeleon @ Dragon Fang  
+Ability: Flame Body  
+Level: 45
+IVs: 0 Atk  
+- Dragon Breath  
+- Flame Burst  
+- Air Cutter  
+- Smokescreen  
+
+Croconaw  
+Ability: Sheer Force  
+Level: 45
+- Crunch  
+- Ice Fang  
+- Psychic Fangs  
+- Aqua Jet  
+
 
 
 === TRAINER_THALIA_1 === /* Abandoned Ship */ 
@@ -7123,7 +7147,7 @@ Tera Type: Ice
 - Swords Dance  
 
 
-=== TRAINER_RODNEY === /* Route 130 */ /* TO BE ADDED */
+=== TRAINER_RODNEY === /* Route 130 */
 Name: RODNEY
 Class: Swimmer M
 Pic: Swimmer M
@@ -7132,9 +7156,38 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Gyarados
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Arctovish @ Power Herb  
+Ability: Slush Rush  
+Level: 74
+- Fishious Rend  
+- Freeze-Dry  
+- Meteor Beam  
+- Psychic Fangs  
+
+Sharpedo @ Focus Sash  
+Ability: Speed Boost  
+Level: 74
+- Aqua Jet  
+- Destiny Bond  
+- Psychic Fangs  
+- Crunch
+
+Aggron @ Assault Vest  
+Ability: Sturdy  
+Level: 74
+- Aqua Tail  
+- Fire Punch  
+- Superpower  
+- Heavy Slam  
+
+Garchomp @ Yache Berry  
+Ability: Rough Skin  
+Level: 74
+EVs: 252 SpA  
+- Aqua Tail  
+- Scale Shot  
+- Scorching Sands  
+- Whirlpool
 
 === TRAINER_RICHARD === /* Route 131 */ /* TO BE ADDED */
 Name: RICHARD
@@ -9421,18 +9474,55 @@ Solrock
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CAMERON_1 === /* Route 123 */ /* TO BE ADDED */
+=== TRAINER_CAMERON_1 === /* Route 121 */ 
 Name: CAMERON
-Class: Psychic
-Pic: Psychic M
-Gender: Male
-Music: Intense
+Class: Aroma Lady
+Pic: Aroma Lady ORAS 80
+Gender: Female
+Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Solrock
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bellossom  
+Ability: Chlorophyll  
+Level: 65
+Tera Type: Grass  
+IVs: 0 Atk  
+- Petal Dance  
+- Quiver Dance  
+- Moonblast  
+- Synthesis  
+
+Alcremie-Clover-Rainbow-Swirl (F)  
+Ability: Aroma Veil  
+Level: 65
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Aromatic Mist  
+- Alluring Voice  
+- Magical Leaf  
+- Decorate  
+
+Lilligant (F)  
+Ability: Own Tempo  
+Level: 65
+Tera Type: Grass  
+IVs: 0 Atk  
+- Quiver Dance  
+- Petal Dance  
+- Pollen Puff  
+- Aromatherapy  
+
+Florges (Florges-Blue) (F)  
+Ability: Flower Veil  
+Level: 65
+Tera Type: Fairy  
+IVs: 0 Atk  
+- Alluring Voice  
+- Misty Explosion  
+- Psychic Noise  
+- Attract  
+
 
 === TRAINER_CAMERON_2 === /* Route */
 Name: CAMERON
@@ -10999,18 +11089,60 @@ Medicham
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_KAREN_1 === /* Route 116 */ /* TO BE ADDED */
+=== TRAINER_KAREN_1 === /* Route 116 */ 
 Name: KAREN
-Class: School Kid
-Pic: School Kid F
+Class: Fairy Tale Girl
+Pic: Fairy Tale Girl ORAS 80
 Gender: Female
-Music: Girl
+Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Shroomish
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Igglybuff @ Eviolite  
+Ability: Friend Guard  
+EVs: 252 Def / 252 SpD  
+Calm Nature  
+Level: 55
+IVs: 0 Atk  
+- Counter  
+- Seismic Toss  
+- Thunder Wave  
+- Sweet Kiss  
+
+Togetic  
+Ability: Serene Grace  
+EVs: 252 HP / 128 SpA / 128 Spe  
+Modest Nature  
+Level: 50
+IVs: 0 Atk  
+- Ancient Power  
+- Extrasensory  
+- Tri Attack  
+- Soft-Boiled  
+
+
+Spritzee @ Fairy Feather  
+Ability: Healer  
+EVs: 252 HP / 128 SpA / 128 SpD  
+Calm Nature  
+Level: 53
+IVs: 0 Atk  
+- Draining Kiss  
+- Wish  
+- Helping Hand  
+- Flash Cannon  
+
+
+Jumpluff @ Yache Berry
+Ability: Infiltrator  
+EVs: 252 SpA / 252 Spe
+Level: 48
+IVs: 0 Atk  
+- Fairy Wind  
+- Cotton Guard
+- Sleep Powder
+- Strength Sap
+
 
 === TRAINER_GEORGIA === /* Trick House 2 */ 
 Name: GEORGIA
@@ -18048,7 +18180,7 @@ Machoke
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DUNCAN === /* Abandoned Ship */
+=== TRAINER_DUNCAN === /* Abandoned Ship */ /* TO BE ADDED */
 Name: DUNCAN
 Class: Sailor
 Pic: Sailor
@@ -18149,18 +18281,47 @@ Tentacruel
 Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_ELI === /* Lavaridge Gym */
+=== TRAINER_ELI === /* Route 115 */
 Name: ELI
-Class: Hiker
-Pic: Hiker
+Class: Street Thug
+Pic: Street Thug ORAS
 Gender: Male
-Music: Hiker
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Krokorok  
+Ability: Intimidate  
+Level: 48
+- Aqua Tail  
+- Stomping Tantrum  
+- Pursuit  
+- Stealth Rock  
+
+Thievul  
+Ability: Stakeout  
+Level: 45
+IVs: 0 Atk  
+- Dark Pulse  
+- Psychic  
+- Burning Jealousy  
+- Taunt  
+
+Mabosstiff  
+Ability: Intimidate  
+Level: 45
+- Destiny Bond  
+- Jaw Lock  
+- Psychic Fangs  
+- Retaliate  
+
+Bisharp  
+Ability: Defiant  
+Level: 46
+- Sucker Punch  
+- Metal Burst  
+- Iron Head  
+- Retaliate
 
 === TRAINER_ANNIKA === /* Sootopolis Gym */ /* Remove? */
 Name: ANNIKA
@@ -28083,17 +28244,14 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Manectric
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Bisharp @ Focus Sash  
+Ability: Defiant  
+Level: 50
+- Iron Head  
+- Sucker Punch  
+- Power-Up Punch  
+- Pursuit  
 
-Swellow
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Manectric
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ELIJAH === /* Route 109 Surf */ /* TO BE ADDED */
 Name: ELIJAH

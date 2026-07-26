@@ -1725,6 +1725,7 @@ PetalburgCity_Gym_EventScript_Vito_PostBattle::
 	setvar VAR_TRAINER_HILL_STATE, 5
 	setvar VAR_LEVEL_CAP, 56
 	call Common_EventScript_RemoveOptionalItems5
+	call Common_EventScript_RemoveOptionalItemsBoating
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
 

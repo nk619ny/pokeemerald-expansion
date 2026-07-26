@@ -1011,3 +1011,16 @@ Route116_EventScript_DrillRunMan_Text_1:
 Route116_EventScript_SkitterSmackMan_Text_0:
 # 495 "data/maps/Route116/scripts.pory"
 	.string "He he he... I love following bugs around!$"
+
+Route116_Text_KarenIntro::
+# 506 "data/maps/Route116/scripts.pory"
+	.string "I hear voices from these trees!$"
+
+Route116_Text_KarenDefeat::
+# 510 "data/maps/Route116/scripts.pory"
+	.string "Maybe it was just the wind...$"
+
+Route116_Text_KarenPostBattle::
+# 514 "data/maps/Route116/scripts.pory"
+	.string "I've gotten lost in the woods six\n"
+	.string "different times.$"

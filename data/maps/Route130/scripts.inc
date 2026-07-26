@@ -73,30 +73,99 @@ Route130_EventScript_CheckSetAbnormalWeather::
 # 37 "data/maps/Route130/scripts.pory"
 
 # 38 "data/maps/Route130/scripts.pory"
-Route130_EventScript_Rodney::
+/*
 # 39 "data/maps/Route130/scripts.pory"
-	trainerbattle_single TRAINER_RODNEY, Route130_Text_RodneyIntro, Route130_Text_RodneyDefeat
+Route130_EventScript_Rodney::
 # 40 "data/maps/Route130/scripts.pory"
-	msgbox Route130_Text_RodneyPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_RODNEY, Route130_Text_RodneyIntro, Route130_Text_RodneyDefeat
 # 41 "data/maps/Route130/scripts.pory"
-	end
+	msgbox Route130_Text_RodneyPostBattle, MSGBOX_AUTOCLOSE
 # 42 "data/maps/Route130/scripts.pory"
-
+	end
 # 43 "data/maps/Route130/scripts.pory"
-Route130_EventScript_Katie::
+*/
 # 44 "data/maps/Route130/scripts.pory"
-	trainerbattle_single TRAINER_KATIE, Route130_Text_KatieIntro, Route130_Text_KatieDefeat
-# 45 "data/maps/Route130/scripts.pory"
-	msgbox Route130_Text_KatiePostBattle, MSGBOX_AUTOCLOSE
-# 46 "data/maps/Route130/scripts.pory"
-	end
-# 47 "data/maps/Route130/scripts.pory"
 
+# 45 "data/maps/Route130/scripts.pory"
+Route130_EventScript_Katie::
+# 46 "data/maps/Route130/scripts.pory"
+	trainerbattle_single TRAINER_KATIE, Route130_Text_KatieIntro, Route130_Text_KatieDefeat
+# 47 "data/maps/Route130/scripts.pory"
+	msgbox Route130_Text_KatiePostBattle, MSGBOX_AUTOCLOSE
 # 48 "data/maps/Route130/scripts.pory"
-Route130_EventScript_Santiago::
-# 49 "data/maps/Route130/scripts.pory"
-	trainerbattle_single TRAINER_SANTIAGO, Route130_Text_SantiagoIntro, Route130_Text_SantiagoDefeat
-# 50 "data/maps/Route130/scripts.pory"
-	msgbox Route130_Text_SantiagoPostBattle, MSGBOX_AUTOCLOSE
-# 51 "data/maps/Route130/scripts.pory"
 	end
+# 49 "data/maps/Route130/scripts.pory"
+
+# 50 "data/maps/Route130/scripts.pory"
+Route130_EventScript_Santiago::
+# 51 "data/maps/Route130/scripts.pory"
+	trainerbattle_single TRAINER_SANTIAGO, Route130_Text_SantiagoIntro, Route130_Text_SantiagoDefeat
+# 52 "data/maps/Route130/scripts.pory"
+	msgbox Route130_Text_SantiagoPostBattle, MSGBOX_AUTOCLOSE
+# 53 "data/maps/Route130/scripts.pory"
+	end
+
+Route130_EventScript_Rodney::
+# 59 "data/maps/Route130/scripts.pory"
+	trainerbattle_single TRAINER_RODNEY, Route130_Text_RodneyIntro, Route130_Text_RodneyDefeat, Route130_EventScript_RodneyTryGiveVitamin
+# 60 "data/maps/Route130/scripts.pory"
+	goto_if_set FLAG_TEMP_A, Route130_EventScript_RodneyTryGiveVitamin
+# 61 "data/maps/Route130/scripts.pory"
+	msgbox Route130_Text_RodneyPostBattle, MSGBOX_NPC
+# 62 "data/maps/Route130/scripts.pory"
+	release
+	end
+
+
+Route130_EventScript_RodneyTryGiveVitamin::
+# 67 "data/maps/Route130/scripts.pory"
+	goto_if_set FLAG_BADGE08_GET, Route130_EventScript_RodneyTryGiveVitamin_2
+# 71 "data/maps/Route130/scripts.pory"
+	goto_if_unset FLAG_TEMP_A, Route130_EventScript_RodneyTryGiveVitamin_5
+# 75 "data/maps/Route130/scripts.pory"
+	msgbox Route130_EventScript_RodneyTryGiveVitamin_Text_1, MSGBOX_NPC
+Route130_EventScript_RodneyTryGiveVitamin_4:
+# 77 "data/maps/Route130/scripts.pory"
+	checkitemspace ITEM_HP_UP
+# 78 "data/maps/Route130/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route130_EventScript_RodneyTryGiveVitamin_9
+# 83 "data/maps/Route130/scripts.pory"
+	setflag FLAG_TEMP_A
+# 84 "data/maps/Route130/scripts.pory"
+	msgbox Route130_EventScript_RodneyTryGiveVitamin_Text_2, MSGBOX_NPC
+Route130_EventScript_RodneyTryGiveVitamin_8:
+# 86 "data/maps/Route130/scripts.pory"
+	release
+	end
+
+Route130_EventScript_RodneyTryGiveVitamin_2:
+# 68 "data/maps/Route130/scripts.pory"
+	releaseall
+	end
+
+Route130_EventScript_RodneyTryGiveVitamin_5:
+# 72 "data/maps/Route130/scripts.pory"
+	msgbox Route130_EventScript_RodneyTryGiveVitamin_Text_0, MSGBOX_NPC
+	goto Route130_EventScript_RodneyTryGiveVitamin_4
+
+Route130_EventScript_RodneyTryGiveVitamin_9:
+# 79 "data/maps/Route130/scripts.pory"
+	giveitem ITEM_HP_UP
+# 80 "data/maps/Route130/scripts.pory"
+	clearflag FLAG_TEMP_A
+	goto Route130_EventScript_RodneyTryGiveVitamin_8
+
+
+Route130_EventScript_RodneyTryGiveVitamin_Text_0:
+# 72 "data/maps/Route130/scripts.pory"
+	.string "Here, this is a gift for making my day\n"
+	.string "more interesting than usual.$"
+
+Route130_EventScript_RodneyTryGiveVitamin_Text_1:
+# 75 "data/maps/Route130/scripts.pory"
+	.string "Oh, do you want this gift after all?$"
+
+Route130_EventScript_RodneyTryGiveVitamin_Text_2:
+# 84 "data/maps/Route130/scripts.pory"
+	.string "No? Would you rather I paid it forward?$"

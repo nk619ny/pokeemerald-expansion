@@ -35,10 +35,12 @@ Route130_EventScript_CheckSetAbnormalWeather::
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	return
 
+/*
 Route130_EventScript_Rodney::
 	trainerbattle_single TRAINER_RODNEY, Route130_Text_RodneyIntro, Route130_Text_RodneyDefeat
 	msgbox Route130_Text_RodneyPostBattle, MSGBOX_AUTOCLOSE
 	end
+*/
 
 Route130_EventScript_Katie::
 	trainerbattle_single TRAINER_KATIE, Route130_Text_KatieIntro, Route130_Text_KatieDefeat
@@ -51,3 +53,37 @@ Route130_EventScript_Santiago::
 	end
 
 `
+
+
+script Route130_EventScript_Rodney {
+    trainerbattle_single(TRAINER_RODNEY, Route130_Text_RodneyIntro, Route130_Text_RodneyDefeat, Route130_EventScript_RodneyTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route130_EventScript_RodneyTryGiveVitamin)
+	msgbox(Route130_Text_RodneyPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script Route130_EventScript_RodneyTryGiveVitamin{
+	if(flag(FLAG_BADGE08_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("Here, this is a gift for making my day more interesting than usual."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Oh, do you want this gift after all?"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_HP_UP)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_HP_UP)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("No? Would you rather I paid it forward?"), MSGBOX_NPC)
+	}
+	release
+	end
+}
+

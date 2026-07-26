@@ -2247,6 +2247,7 @@ Route116_Text_JerryPostRematch:
 	.string "the TRAINER'S SCHOOL.\l"
 	.string "If I don't, ROXANNE will be steamed.$"
 
+/*
 Route116_Text_KarenIntro:
 	.string "I study at school, and I study on\n"
 	.string "the way home, too!$"
@@ -2257,6 +2258,7 @@ Route116_Text_KarenDefeat:
 Route116_Text_KarenPostBattle:
 	.string "Awww, I'll never become an elegant\n"
 	.string "TRAINER like ROXANNE this way!$"
+*/
 
 Route116_Text_KarenRegister1:
 	.string "Oh, wow! Isn't that a POKéNAV?\n"
@@ -3363,6 +3365,7 @@ Route123_Text_VioletPostBattle:
 	.string "The BERRY MASTER's garden is filled\n"
 	.string "with uplifting fragrances.$"
 
+/*
 Route123_Text_CameronIntro:
 	.string "Being a psychic is about willpower.\p"
 	.string "I've willed myself not to lose to\n"
@@ -3374,6 +3377,7 @@ Route123_Text_CameronDefeat:
 Route123_Text_CameronPostBattle:
 	.string "Being a psychic is about willpower.\n"
 	.string "I thought I wouldn't lose to you…$"
+*/
 
 Route123_Text_CameronRegister:
 	.string "I sense it!\n"

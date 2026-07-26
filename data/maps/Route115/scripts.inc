@@ -320,6 +320,14 @@ Route115_EventScript_VacuumWaveExpert_2:
 	goto Route115_EventScript_VacuumWaveExpert_1
 
 
+Route115_EventScript_Eli::
+# 170 "data/maps/Route115/scripts.pory"
+	trainerbattle_single TRAINER_ELI, Route115_Text_EliIntro, Route115_Text_EliDefeated
+# 171 "data/maps/Route115/scripts.pory"
+	msgbox Route115_Text_EliPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+
 Route115_EventScript_VacuumWaveExpert_Text_0:
 # 155 "data/maps/Route115/scripts.pory"
 	.string "I was once a Black Belt who trained up\n"
@@ -333,3 +341,18 @@ Route115_EventScript_VacuumWaveExpert_Text_1:
 # 161 "data/maps/Route115/scripts.pory"
 	.string "There is no substitute for proper\n"
 	.string "training.$"
+
+Route115_Text_EliIntro::
+# 175 "data/maps/Route115/scripts.pory"
+	.string "Rustboro is my turf, where do you think\n"
+	.string "you're going?$"
+
+Route115_Text_EliDefeated::
+# 179 "data/maps/Route115/scripts.pory"
+	.string "No one is going to respect me after\n"
+	.string "this...$"
+
+Route115_Text_EliPostBattle::
+# 183 "data/maps/Route115/scripts.pory"
+	.string "If anyone gives you trouble in\n"
+	.string "Rustboro, just tell them Eli sent you.$"

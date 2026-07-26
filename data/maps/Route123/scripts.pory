@@ -59,9 +59,7 @@ Route123_EventScript_Violet::
 	end
 
 Route123_EventScript_Cameron::
-	trainerbattle_single TRAINER_CAMERON_1, Route123_Text_CameronIntro, Route123_Text_CameronDefeat, Route123_EventScript_RegisterCameron
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchCameron
+	trainerbattle_single TRAINER_CAMERON_1, Route123_Text_CameronIntro, Route123_Text_CameronDefeat
 	msgbox Route123_Text_CameronPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -216,4 +214,63 @@ text Route123_Text_KindraDefeat{
 
 text Route123_Text_KindraPostBattle {
 	format("The berry fields in this area attract all kinds of Pokémon. The blooms in the spring are also beautiful!")
+}
+
+
+
+script Route121_EventScript_Gabe {
+    trainerbattle_single(TRAINER_GABE, Route121_Text_GabeIntro, Route121_Text_GabeDefeat, Route121_EventScript_GabeTryGiveVitamin)
+	msgbox(Route121_Text_GabePostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+
+text Route121_Text_GabeIntro {
+    format("It's important not to battle on an empty stomach!")
+}
+
+text Route121_Text_GabeDefeat {
+    format("I could use a snack.")
+}
+
+text Route121_Text_GabePostBattle {
+    format("Every time I eat, I make sure to give some berries to my Pokémon, too!")
+}
+
+
+script Route121_EventScript_GabeTryGiveVitamin {
+	if(flag(FLAG_BADGE07_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("Your Pokémon deserve a snack after that battle!\pHere, give them this."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Are your Pokémon ready for a snack now?"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_CALCIUM)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_CALCIUM)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("Oh, are they not hungry now?\pWell, if you don't come back soon, I might eat it myself."), MSGBOX_NPC)
+	}
+	release
+	end
+}
+
+text Route123_Text_CameronIntro {
+    format("Lots of beautiful plants grow in the Safari Zone.")
+}
+
+text Route123_Text_CameronDefeat {
+    format("Maybe I should be looking for Pokémon there, too.")
+}
+
+text Route123_Text_CameronPostBattle {
+    format("Have you explored the Safari Zone yet?")
 }

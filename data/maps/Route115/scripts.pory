@@ -164,3 +164,22 @@ script Route115_EventScript_VacuumWaveExpert {
 	releaseall
 	end
 }
+
+
+script Route115_EventScript_Eli {
+	trainerbattle_single(TRAINER_ELI, Route115_Text_EliIntro, Route115_Text_EliDefeated)
+	msgbox(Route115_Text_EliPostBattle, MSGBOX_AUTOCLOSE)
+	end
+}
+
+text Route115_Text_EliIntro {
+	format("Rustboro is my turf, where do you think you're going?")
+}
+
+text Route115_Text_EliDefeated {
+	format("No one is going to respect me after this...")
+}
+
+text Route115_Text_EliPostBattle {
+	format("If anyone gives you trouble in Rustboro, just tell them Eli sent you.")
+}
