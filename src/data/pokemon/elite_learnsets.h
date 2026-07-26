@@ -10661,6 +10661,7 @@ static const u16 sWobbuffetEliteLearnset[] = {
     MOVE_TICKLE,
     MOVE_TAUNT,
     MOVE_MIMIC,
+    MOVE_BIDE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_WOBBUFFET

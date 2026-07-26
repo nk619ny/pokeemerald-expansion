@@ -3178,28 +3178,23 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Bide"),
         .description = COMPOUND_STRING(
-            "Endures attack for 2\n"
-            "turns to retaliate double."),
-        .effect = EFFECT_BIDE,
+            "Endures attack to\n"
+            "retaliate 1.5x."),
+        .effect = EFFECT_REFLECT_DAMAGE,
         .power = 1,
         .type = TYPE_NORMAL,
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .accuracy = 0,
-            .priority = 1,
-        #elif B_UPDATED_MOVE_DATA >= GEN_2
-            .accuracy = 100,
-            .priority = 0,
-        #else
-            .accuracy = 0,
-            .priority = 0,
-        #endif
+        .accuracy = 100,
         .pp = 10,
-        .target = TARGET_USER,
+        .target = TARGET_DEPENDS,
+        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .argument = {
+            .reflectDamage.damagePercent = 150,
+            .reflectDamage.damageCategories = 1u << DAMAGE_CATEGORY_PHYSICAL | 1u << DAMAGE_CATEGORY_SPECIAL,
+        },
+        .ignoresProtect = B_UPDATED_MOVE_FLAGS < GEN_5,
         .makesContact = TRUE,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .mirrorMoveBanned = TRUE,
+        .meFirstBanned = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_NEXT_APPEAL_LATER : CONTEST_EFFECT_AVOID_STARTLE,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
