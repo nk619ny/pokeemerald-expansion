@@ -121,6 +121,7 @@ MtPyre_2F_Text_LeahPostBattle:
 	.string "It is my duty to protect this\n"
 	.string "mountain…$"
 
+/*
 MtPyre_2F_Text_ZanderIntro:
 	.string "Kiyaaaaah!\n"
 	.string "I'm terrified!$"
@@ -133,5 +134,17 @@ MtPyre_2F_Text_ZanderPostBattle:
 	.string "I get freaked out every time I see\n"
 	.string "anything move…\p"
 	.string "I shouldn't have come here to train…$"
-
+*/
 `
+
+script MtPyre_2F_Text_ZanderIntro {
+	format("It's important to pay respects to the departed.")
+}
+
+script MtPyre_2F_Text_ZanderDefeat {
+	format("This, too, I will remember.")
+}
+
+script MtPyre_2F_Text_ZanderPostBattle {
+	format("I come here every so often, to keep them in my memory.")
+}

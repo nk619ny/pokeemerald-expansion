@@ -1764,18 +1764,53 @@ Jolly Nature
 */
 
 
-=== TRAINER_ZANDER === /* Mt. Pyre 2F */ /* TO BE ADDED */
-Name: ZANDER
-Class: Black Belt
-Pic: Black Belt ORAS 80
+=== TRAINER_ZANDER === /* Mt. Pyre 2F */
+Name: XAVIER
+Class: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
-Music: Intense
+Music: Rich
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Hariyama
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sinistea @ Salac Berry  
+Ability: Weak Armor  
+Level: 65
+Tera Type: Ghost  
+IVs: 0 Atk  
+- Psybeam  
+- Hex  
+- Giga Drain  
+- Teatime  
+
+Honchkrow @ Lansat Berry
+Ability: Super Luck  
+Level: 65
+Tera Type: Dark  
+- Acrobatics
+- Night Slash  
+- Superpower
+- Whirlwind  
+
+Meowscarada  
+Ability: Overgrow  
+Level: 65
+Tera Type: Grass  
+- Flower Trick  
+- Lash Out  
+- Triple Axel  
+- Hone Claws  
+
+Pyroar  
+Ability: Unnerve  
+Level: 65
+Tera Type: Fire  
+IVs: 0 Atk  
+- Flamethrower  
+- Dark Pulse  
+- Echoed Voice  
+- Helping Hand  
+
 
 === TRAINER_SHELLY_WEATHER_INSTITUTE === /* Weather Institute */
 Name: SHELLY
@@ -3237,7 +3272,7 @@ IVs: 0 Atk
 - Protect  
 
 Abomasnow  @ Occa Berry
-Level: 40
+Level: 39
 Ability: Soundproof
 Tera Type: Grass  
 - Trailblaze  
@@ -4635,17 +4670,13 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wingull
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Numel
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Roselia
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Hakamo-o @ Roseli Berry  
+Ability: Bulletproof  
+Level: 10
+- Brick Break  
+- Bulk Up  
+- Dragon Claw  
+- Iron Head
 
 === TRAINER_JENNIFER === /* Route 120 */ /* TO BE ADDED */
 Name: JENNIFER
@@ -14254,7 +14285,7 @@ Tera Type: Grass
 
 
 
-=== TRAINER_BENJAMIN_1 === /* Route 110 CR */ /* TO BE ADDED */
+=== TRAINER_BENJAMIN_1 === /* Route 110 CR */ 
 Name: BENJAMIN
 Class: Triathlete
 Pic: Cycling Triathlete M
@@ -14263,9 +14294,34 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magnemite
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Blitzle @ Salac Berry  
+Ability: Motor Drive  
+Level: 36
+Tera Type: Electric  
+- Trailblaze  
+- Electro Ball  
+- Flame Charge  
+- Quick Attack
+
+Growlithe-Hisui @ Shuca Berry
+Ability: Justified  
+Level: 36
+Tera Type: Fire  
+- Extreme Speed
+- Flame Wheel
+- Morning Sun
+- Wild Charge
+
+Accelgor @ Dark Gem  
+Ability: Unburden 
+Level: 31
+Tera Type: Bug  
+Hasty Nature  
+- Me First  
+- Pursuit  
+- U-turn  
+- Drain Punch  
+
 
 === TRAINER_BENJAMIN_2 === /* Route */
 Name: BENJAMIN
@@ -14368,17 +14424,14 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magnemite
-Level: 14
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-
-Magnemite
-Level: 14
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-
-Voltorb
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hitmontop (M) @ Expert Belt  
+Ability: Intimidate   
+Level: 31
+Tera Type: Fighting  
+- Combat Torque  
+- Wicked Torque  
+- Ice Spinner  
+- Noxious Torque  
 
 === TRAINER_ABIGAIL_2 === /* Route */
 Name: ABIGAIL
@@ -17998,6 +18051,13 @@ IVs: 0 Atk
 - Venom Drench  
 - Soak  
 
+Hippopotas  
+Level: 19
+Ability: Sand Force  
+- Sand Tomb  
+- Thunder Fang  
+- Slack Off  
+- Dig
 
 === TRAINER_EDMOND === /* Route 109 */
 Name: EDMOND
@@ -18024,7 +18084,6 @@ Tera Type: Ice
 - Ice Ball  
 - Rollout  
 - Defense Curl  
-
 
 Clauncher  
 Level: 19
@@ -27163,18 +27222,55 @@ Tera Type: Grass
 - Wild Charge
 
 
-=== TRAINER_KAI === /* Route 114 */ /* TO BE ADDED */
+=== TRAINER_KAI === /* Route 114 */ 
 Name: KAI
-Class: Fisherman
-Pic: Fisherman ORAS 80
+Class: Gentleman
+Pic: Gentleman ORAS 80
 Gender: Male
-Music: Hiker
+Music: Rich
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Barboach
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bronzor  
+Ability: Levitate  
+Level: 45
+EVs: 252 HP / 252 SpA
+Tera Type: Steel  
+IVs: 0 Atk  
+- Extrasensory  
+- Flash Cannon  
+- Signal Beam  
+- Future Sight  
+
+Gossifleur  
+Ability: Cotton Down  
+Level: 38
+IVs: 0 Atk  
+- Leaf Tornado  
+- Sleep Powder  
+- Pollen Puff  
+- Leech Seed
+
+Dolliv  
+Ability: Early Bird  
+Level: 43
+EVs: 252 HP / 252 SpA
+Tera Type: Grass  
+IVs: 0 Atk  
+- Baby-Doll Eyes  
+- Strength Sap  
+- Earth Power  
+- Giga Drain  
+
+Watchog @ Loaded Dice  
+Level: 38
+Ability: Illuminate  
+Tera Type: Normal  
+- Assurance  
+- Bullet Seed  
+- Hypnosis  
+- Flail  
+
 
 === TRAINER_CHARLOTTE === /* Route 114 */ 
 Name: CHARLOTTE

@@ -871,6 +871,7 @@ script Common_EventScript_RemoveOptionalItems3 {
 	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL)
 	setflag(FLAG_ITEM_MT_CHIMNEY_HP_UP)
 	setflag(FLAG_ITEM_MT_CHIMNEY_CALCIUM)
+	setflag(FLAG_HIDDEN_ITEM_ROUTE_114_HEART_SCALE)
 	return
 }
 
@@ -982,6 +983,7 @@ script Common_EventScript_RemoveOptionalItems7PreSurf {
 	setflag(FLAG_ITEM_MT_PYRE_3F_SUPER_REPEL)
 	setflag(FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE)
 	setflag(FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE)
+	setflag(FLAG_ITEM_MT_PYRE_2F_VITAMIN)
 
 	setflag(FLAG_ITEM_ROUTE_125_BIG_PEARL) // post surf but pre T&L
 

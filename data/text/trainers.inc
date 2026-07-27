@@ -1948,6 +1948,7 @@ Route114_Text_IvyNotEnoughMons:
 	.string "IVY: Do you only have one Pokémon?\n"
 	.string "I think it must feel lonesome.$"
 
+/*
 Route114_Text_KaiIntro:
 	.string "I landed a big one!\n"
 	.string "A huge one, I tell you!$"
@@ -1959,6 +1960,7 @@ Route114_Text_KaiDefeat:
 Route114_Text_KaiPostBattle:
 	.string "Okay!\n"
 	.string "I'll just fish me a bigger one!$"
+*/
 
 Route114_Text_CharlotteIntro:
 	.string "Me!\n"

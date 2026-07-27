@@ -213,3 +213,15 @@ text Route114_Text_CharlotteIntroNew {
 text Route114_Text_CharlottePostBattleNew {
 	format("I think there are just too many Pokémon to keep track of nowadays.")
 }
+
+text Route114_Text_KaiIntro {
+	format("I'm starting a neighborhood watch program.\pWhat's your business here?")
+}
+
+text Route114_Text_KaiDefeat {
+	format("Good thing this wasn't a real emergency.")
+}
+
+text Route114_Text_KaiPostBattle {
+	format("Perhaps I should leave the neighborhood watch to the professionals.")
+}
