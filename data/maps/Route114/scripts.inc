@@ -416,3 +416,19 @@ Route114_Text_CharlottePostBattleNew::
 # 213 "data/maps/Route114/scripts.pory"
 	.string "I think there are just too many Pokémon\n"
 	.string "to keep track of nowadays.$"
+
+Route114_Text_KaiIntro::
+# 217 "data/maps/Route114/scripts.pory"
+	.string "I'm starting a neighborhood watch\n"
+	.string "program.\p"
+	.string "What's your business here?$"
+
+Route114_Text_KaiDefeat::
+# 221 "data/maps/Route114/scripts.pory"
+	.string "Good thing this wasn't a real emergency.$"
+
+Route114_Text_KaiPostBattle::
+# 225 "data/maps/Route114/scripts.pory"
+	.string "Perhaps I should leave the\n"
+	.string "neighborhood watch to the\l"
+	.string "professionals.$"

@@ -245,26 +245,44 @@ MtPyre_2F_Text_LeahPostBattle:
 # 123 "data/maps/MtPyre_2F/scripts.pory"
 
 # 124 "data/maps/MtPyre_2F/scripts.pory"
-MtPyre_2F_Text_ZanderIntro:
+/*
 # 125 "data/maps/MtPyre_2F/scripts.pory"
-	.string "Kiyaaaaah!\n"
+MtPyre_2F_Text_ZanderIntro:
 # 126 "data/maps/MtPyre_2F/scripts.pory"
-	.string "I'm terrified!$"
+	.string "Kiyaaaaah!\n"
 # 127 "data/maps/MtPyre_2F/scripts.pory"
-
+	.string "I'm terrified!$"
 # 128 "data/maps/MtPyre_2F/scripts.pory"
-MtPyre_2F_Text_ZanderDefeat:
-# 129 "data/maps/MtPyre_2F/scripts.pory"
-	.string "Nooooooo!\n"
-# 130 "data/maps/MtPyre_2F/scripts.pory"
-	.string "I lost my wits!$"
-# 131 "data/maps/MtPyre_2F/scripts.pory"
 
+# 129 "data/maps/MtPyre_2F/scripts.pory"
+MtPyre_2F_Text_ZanderDefeat:
+# 130 "data/maps/MtPyre_2F/scripts.pory"
+	.string "Nooooooo!\n"
+# 131 "data/maps/MtPyre_2F/scripts.pory"
+	.string "I lost my wits!$"
 # 132 "data/maps/MtPyre_2F/scripts.pory"
-MtPyre_2F_Text_ZanderPostBattle:
+
 # 133 "data/maps/MtPyre_2F/scripts.pory"
-	.string "I get freaked out every time I see\n"
+MtPyre_2F_Text_ZanderPostBattle:
 # 134 "data/maps/MtPyre_2F/scripts.pory"
-	.string "anything move…\p"
+	.string "I get freaked out every time I see\n"
 # 135 "data/maps/MtPyre_2F/scripts.pory"
+	.string "anything move…\p"
+# 136 "data/maps/MtPyre_2F/scripts.pory"
 	.string "I shouldn't have come here to train…$"
+# 137 "data/maps/MtPyre_2F/scripts.pory"
+*/
+
+MtPyre_2F_Text_ZanderIntro::
+# 140 "data/maps/MtPyre_2F/scripts.pory"
+	.string "It's important to pay respects to the\n"
+	.string "departed.$"
+
+MtPyre_2F_Text_ZanderDefeat::
+# 144 "data/maps/MtPyre_2F/scripts.pory"
+	.string "This, too, I will remember.$"
+
+MtPyre_2F_Text_ZanderPostBattle::
+# 148 "data/maps/MtPyre_2F/scripts.pory"
+	.string "I come here every so often, to keep\n"
+	.string "them in my memory.$"

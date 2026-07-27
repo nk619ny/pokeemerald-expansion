@@ -137,14 +137,14 @@ MtPyre_2F_Text_ZanderPostBattle:
 */
 `
 
-script MtPyre_2F_Text_ZanderIntro {
+text MtPyre_2F_Text_ZanderIntro {
 	format("It's important to pay respects to the departed.")
 }
 
-script MtPyre_2F_Text_ZanderDefeat {
+text MtPyre_2F_Text_ZanderDefeat {
 	format("This, too, I will remember.")
 }
 
-script MtPyre_2F_Text_ZanderPostBattle {
+text MtPyre_2F_Text_ZanderPostBattle {
 	format("I come here every so often, to keep them in my memory.")
 }
