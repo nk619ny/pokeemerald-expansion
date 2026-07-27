@@ -4568,23 +4568,8 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         }
         else
         {
-            u32 healPercent = 0;
-            switch (gBattleMons[battlerAtk].volatiles.stockpileCounter)
-            {
-            case 1:
-                healPercent = 25;
-                break;
-            case 2:
-                healPercent = 50;
-                break;
-            case 3:
-                healPercent = 100;
-                break;
-            default:
-                break;
-            }
-
-            if (ShouldRecover(battlerAtk, battlerDef, move, healPercent))
+            // Always heals 2/3 of max HP
+            if (ShouldRecover(battlerAtk, battlerDef, move, 66))
                 ADJUST_SCORE(DECENT_EFFECT);
         }
         break;

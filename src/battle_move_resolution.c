@@ -3462,17 +3462,20 @@ static enum MoveEndResult MoveEndMoveBlock(struct BattleCalcValues *cv)
         case EFFECT_SWALLOW:
             if (!gBattleStruct->unableToUseMove)
             {
-                gBattleMons[cv->battlerAtk].volatiles.stockpileCounter = 0;
+                // Decrement stockpile counter by 1 instead of clearing entirely
+                if (gBattleMons[cv->battlerAtk].volatiles.stockpileCounter > 0)
+                    gBattleMons[cv->battlerAtk].volatiles.stockpileCounter--;
 
+                // Revert 1 stage of Def/SpDef per use
                 if (gBattleMons[cv->battlerAtk].volatiles.stockpileDef > 0)
                 {
-                    SetStatChange(gBattlerAttacker, STAT_DEF, -1 * gBattleMons[gBattlerAttacker].volatiles.stockpileDef);
-                    gBattleMons[gBattlerAttacker].volatiles.stockpileDef = 0;
+                    SetStatChange(gBattlerAttacker, STAT_DEF, -1);
+                    gBattleMons[gBattlerAttacker].volatiles.stockpileDef--;
                 }
                 if (gBattleMons[gBattlerAttacker].volatiles.stockpileSpDef > 0)
                 {
-                    SetStatChange(gBattlerAttacker, STAT_SPDEF, -1 * gBattleMons[gBattlerAttacker].volatiles.stockpileSpDef);
-                    gBattleMons[gBattlerAttacker].volatiles.stockpileSpDef = 0;
+                    SetStatChange(gBattlerAttacker, STAT_SPDEF, -1);
+                    gBattleMons[gBattlerAttacker].volatiles.stockpileSpDef--;
                 }
 
                 BattleScriptCall(BattleScript_MoveEffectStockpileWoreOff);

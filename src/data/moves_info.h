@@ -6990,7 +6990,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Releases stockpiled power\n"
             "(the more the better)."),
         .effect = EFFECT_SPIT_UP,
-        .power = 1,
+        .power = 130,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
