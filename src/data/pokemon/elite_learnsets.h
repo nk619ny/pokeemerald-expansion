@@ -159,7 +159,7 @@ static const u16 sSandslashEliteLearnset[] = {
     MOVE_CONFIDE,
     MOVE_COVET,
     MOVE_DETECT,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     //MOVE_MAGNITUDE, //added back in to normal learnset from USUM
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
@@ -212,7 +212,7 @@ static const u16 sSandshrewEliteLearnset[] = {
     MOVE_COVET,
     MOVE_CRUSH_CLAW,
     MOVE_DETECT,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     //MOVE_MAGNITUDE, //added back in to normal learnset from USUM
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
@@ -235,7 +235,7 @@ static const u16 sArbokEliteLearnset[] = {
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
     MOVE_DISABLE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_MEGA_DRAIN,
     MOVE_MIMIC,
     //MOVE_MUD_BOMB, //added back in to normal learnset from USUM
@@ -255,7 +255,7 @@ static const u16 sEkansEliteLearnset[] = {
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
     MOVE_DISABLE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_MEGA_DRAIN,
     MOVE_MIMIC,
     //MOVE_MUD_BOMB, //added back in to normal learnset from USUM
@@ -304,7 +304,7 @@ static const u16 sNidorinaEliteLearnset[] = {
     MOVE_CHIP_AWAY,
     MOVE_CONFIDE,
     MOVE_DETECT,
-    MOVE_HORN_DRILL,
+    //MOVE_HORN_DRILL,
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_PURSUIT,
@@ -329,8 +329,8 @@ static const u16 sNidoqueenEliteLearnset[] = {
     //MOVE_CHIP_AWAY, //added back in to normal learnset from USUM
     MOVE_CONFIDE,
     MOVE_DETECT,
-    MOVE_FISSURE,
-    MOVE_HORN_DRILL,
+    //MOVE_FISSURE,
+    //MOVE_HORN_DRILL,
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_PURSUIT,
@@ -394,7 +394,7 @@ static const u16 sNidokingEliteLearnset[] = {
     //MOVE_CHIP_AWAY, //added back in to normal learnset from USUM
     MOVE_CONFIDE,
     MOVE_DETECT,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_RAGE,
@@ -552,7 +552,7 @@ static const u16 sNinetalesAlolaEliteLearnset[] = {
     MOVE_QUICK_ATTACK,
     MOVE_REFLECT,
     MOVE_ROLE_PLAY,
-    MOVE_SHEER_COLD,
+    //MOVE_SHEER_COLD,
     MOVE_TACKLE,
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
@@ -571,7 +571,7 @@ static const u16 sVulpixAlolaEliteLearnset[] = {
     MOVE_QUICK_ATTACK,
     MOVE_REFLECT,
     MOVE_ROLE_PLAY,
-    MOVE_SHEER_COLD,
+    //MOVE_SHEER_COLD,
     MOVE_TACKLE,
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
@@ -1091,7 +1091,7 @@ static const u16 sPoliwhirlEliteLearnset[] = {
     MOVE_CONFIDE,
     MOVE_DETECT,
     //MOVE_DOUBLE_SLAP, //added back in to normal learnset from USUM
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_ICE_BALL,
     MOVE_MIMIC,
     MOVE_MIND_READER,
@@ -1123,7 +1123,7 @@ static const u16 sPoliwrathEliteLearnset[] = {
     MOVE_DETECT,
     //MOVE_DOUBLE_SLAP, //added back in to normal learnset from USUM
     MOVE_DUAL_CHOP,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_ICE_BALL,
     MOVE_MIMIC,
     //MOVE_MIND_READER, //added back in to normal learnset from SwSh
@@ -1339,7 +1339,7 @@ static const u16 sGeodudeEliteLearnset[] = {
     MOVE_BIDE,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_HARDEN,
     //MOVE_MAGNITUDE, //added back in to normal learnset from USUM
     MOVE_MIMIC,
@@ -1360,7 +1360,7 @@ static const u16 sGravelerEliteLearnset[] = {
     MOVE_BIDE,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_HARDEN,
     //MOVE_MAGNITUDE, //added back in to normal learnset from USUM
     MOVE_MIMIC,
@@ -1382,7 +1382,7 @@ static const u16 sGolemEliteLearnset[] = {
     MOVE_BIDE,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_HARDEN,
     //MOVE_MAGNITUDE, //added back in to normal learnset from USUM
     MOVE_MIMIC,
@@ -1446,7 +1446,7 @@ static const u16 sSlowpokeEliteLearnset[] = {
     MOVE_BUBBLE_BEAM,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_MAGIC_COAT,
     MOVE_ME_FIRST,
     MOVE_MIMIC,
@@ -1476,7 +1476,7 @@ static const u16 sSlowbroEliteLearnset[] = {
     MOVE_BUBBLE_BEAM,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_MAGIC_COAT,
     MOVE_ME_FIRST,
     MOVE_MIMIC,
@@ -2126,7 +2126,7 @@ static const u16 sLickitungEliteLearnset[] = {
     MOVE_CAPTIVATE,
     //MOVE_CHIP_AWAY, //added back in to normal learnset from USUM
     MOVE_CONFIDE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_MAGNITUDE,
     //MOVE_ME_FIRST, //added back in to normal learnset from USUM
     MOVE_MIMIC,
@@ -2384,7 +2384,7 @@ static const u16 sRhyhornEliteLearnset[] = {
     //MOVE_CHIP_AWAY, //added back in to normal learnset from USUM
     MOVE_CONFIDE,
     MOVE_CRUSH_CLAW,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_FURY_ATTACK,
     MOVE_LEER,
     MOVE_MAGNITUDE,
@@ -2412,7 +2412,7 @@ static const u16 sRhydonEliteLearnset[] = {
     //MOVE_CHIP_AWAY, //added back in to normal learnset from USUM
     MOVE_CONFIDE,
     MOVE_CRUSH_CLAW,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_FURY_ATTACK,
     MOVE_LEER,
     MOVE_MAGNITUDE,
@@ -2882,9 +2882,9 @@ static const u16 sTaurosEliteLearnset[] = {
     MOVE_BIDE,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_FOCUS_ENERGY,
-    MOVE_HORN_DRILL,
+    //MOVE_HORN_DRILL,
     MOVE_LEER,
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
@@ -3278,7 +3278,7 @@ static const u16 sOmastarEliteLearnset[] = {
     MOVE_CONFIDE,
     //MOVE_CONSTRICT, //added back in to normal learnset from USUM
     MOVE_HORN_ATTACK,
-    MOVE_HORN_DRILL,
+    //MOVE_HORN_DRILL,
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_RAGE,
@@ -3627,7 +3627,7 @@ static const u16 sDragoniteEliteLearnset[] = {
     MOVE_DEFOG,
     MOVE_DETECT,
     MOVE_DRAGON_RAGE,
-    MOVE_HORN_DRILL,
+    //MOVE_HORN_DRILL,
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_OMINOUS_WIND,
@@ -3666,7 +3666,7 @@ static const u16 sDragonairEliteLearnset[] = {
     MOVE_CONFIDE,
     MOVE_DETECT,
     MOVE_DRAGON_RAGE,
-    MOVE_HORN_DRILL,
+    //MOVE_HORN_DRILL,
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_RAGE,
@@ -3756,7 +3756,7 @@ static const u16 sMewEliteLearnset[] = {
     MOVE_EGG_BOMB,
     MOVE_EMBARGO,
     MOVE_EXPLOSION,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_FLASH,
     MOVE_FOCUS_ENERGY,
     MOVE_FROST_BREATH,
@@ -3767,7 +3767,7 @@ static const u16 sMewEliteLearnset[] = {
     MOVE_HEADBUTT,
     MOVE_HEAL_BELL,
     MOVE_HONE_CLAWS,
-    MOVE_HORN_DRILL,
+    //MOVE_HORN_DRILL,
     MOVE_INCINERATE,
     MOVE_INFESTATION,
     MOVE_IRON_TAIL,
@@ -4621,7 +4621,7 @@ static const u16 sForretressEliteLearnset[] = {
 
 #if P_FAMILY_DUNSPARCE
 static const u16 sDunsparceEliteLearnset[] = {
-    MOVE_HORN_DRILL,
+    //MOVE_HORN_DRILL,
     MOVE_FURY_ATTACK,
     MOVE_BIDE,
     MOVE_BIND,
@@ -4653,7 +4653,7 @@ static const u16 sGliscorEliteLearnset[] = {
     MOVE_CONFIDE,
     MOVE_DEFOG,
     //MOVE_FEINT_ATTACK, //added back in to normal learnset from USUM
-    MOVE_GUILLOTINE,
+    //MOVE_GUILLOTINE,
     MOVE_MUD_BOMB,
     MOVE_NATURAL_GIFT,
     MOVE_PIN_MISSILE,
@@ -4675,7 +4675,7 @@ static const u16 sGligarEliteLearnset[] = {
     MOVE_DEFOG,
     MOVE_DETECT,
     //MOVE_FEINT_ATTACK, //added back in to normal learnset from USUM
-    MOVE_GUILLOTINE,
+    //MOVE_GUILLOTINE,
     MOVE_MIMIC,
     MOVE_MUD_BOMB,
     MOVE_NATURAL_GIFT,
@@ -10378,7 +10378,7 @@ static const u16 sBlastoiseEliteLearnset[] = {
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
     MOVE_CONFUSION,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     MOVE_FORESIGHT,
     MOVE_MIMIC,
     MOVE_MUD_SPORT,
@@ -10565,7 +10565,7 @@ static const u16 sCharizardEliteLearnset[] = {
     MOVE_CONFIDE,
     MOVE_DEFOG,
     MOVE_DRAGON_RAGE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     //MOVE_FLAME_BURST, //added back in to normal learnset from USUM
     MOVE_FURY_SWIPES,
     MOVE_LEER,
@@ -11030,7 +11030,7 @@ static const u16 sGastrodonEliteLearnset[] = {
     MOVE_BLOCK,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     //MOVE_MUD_BOMB, //added back in to normal learnset from USUM
     //MOVE_MUD_SPORT, //added back in to normal learnset from USUM
     MOVE_NATURAL_GIFT,
@@ -11044,7 +11044,7 @@ static const u16 sGastrodonEliteLearnset[] = {
 static const u16 sShellosEliteLearnset[] = {
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
-    MOVE_FISSURE,
+    //MOVE_FISSURE,
     //MOVE_MUD_BOMB, //added back in to normal learnset from USUM
     //MOVE_MUD_SPORT, //added back in to normal learnset from USUM
     MOVE_NATURAL_GIFT,
