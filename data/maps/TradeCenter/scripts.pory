@@ -986,7 +986,7 @@ script Common_EventScript_RemoveOptionalItems7PreSurf {
 	setflag(FLAG_ITEM_MT_PYRE_2F_VITAMIN)
 
 	setflag(FLAG_ITEM_ROUTE_125_BIG_PEARL) // post surf but pre T&L
-
+	setflag(FLAG_ITEM_ROUTE_125_VITAMIN)
 	return
 }
 

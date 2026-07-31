@@ -3891,18 +3891,20 @@ Route125_Text_IrisNotEnoughMons:
 	.string "anything like a 2-on-1 battle.$"
 
 Route125_Text_PresleyIntro:
-	.string "Why would a BIRDKEEPER like me\n"
-	.string "come out to the sea?$"
+	.string "Why would a Dragon Tamer like\n"
+	.string "me come out to the sea?$"
 
 Route125_Text_PresleyDefeat:
 	.string "Okay.\n"
 	.string "I'll tell you why I'm here.$"
 
+/*
 Route125_Text_PresleyPostBattle:
 	.string "I put a message in a bottle and put\n"
 	.string "it out to sea.\p"
 	.string "I'm sure that a girl SWIMMER will\n"
 	.string "find it!$"
+*/
 
 Route125_Text_AuronIntro:
 	.string "Hey! Was it you throwing garbage\n"

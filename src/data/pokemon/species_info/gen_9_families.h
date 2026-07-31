@@ -6803,7 +6803,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sGimmighoulTeachableLearnset,
         .eliteLearnset = sNoneEliteLearnset,
         .formSpeciesIdTable = sGimmighoulFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 1, SPECIES_GHOLDENGO}),    
+        .evolutions = EVOLUTION({EVO_LEVEL, 70, SPECIES_GHOLDENGO}),    
     },
 
     [SPECIES_GIMMIGHOUL_ROAMING] =
@@ -6860,7 +6860,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sGimmighoulTeachableLearnset,
         .eliteLearnset = sNoneEliteLearnset,
         .formSpeciesIdTable = sGimmighoulFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 1, SPECIES_GHOLDENGO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 70, SPECIES_GHOLDENGO}),
     },
 
     [SPECIES_GHOLDENGO] =

@@ -27671,9 +27671,9 @@ gBattleAnimMove_Return::
 	setalpha 12, 8
 	createvisualtask AnimTask_GetReturnPowerLevel, 2
 	delay 2
-	jumpreteq 0, ReturnWeak
-	jumpreteq 1, ReturnMedium
-	jumpreteq 2, ReturnStrong
+	jumpreteq 0, ReturnStrongest
+	jumpreteq 1, ReturnStrongest
+	jumpreteq 2, ReturnStrongest
 	jumpreteq 3, ReturnStrongest
 ReturnContinue:
 	waitforvisualfinish

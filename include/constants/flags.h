@@ -350,11 +350,11 @@
 #define FLAG_RECEIVED_OLD_SEA_MAP            0x13C
 #define FLAG_SORT_TUTOR_ALPHABETICALLY       0x13D // These Wonder Card flags are referenced but never set
 #define FLAG_SORT_TUTOR_BY_BASE_POWER        0x13E //not actually used, unused and available
-#define FLAG_WONDER_CARD_UNUSED_3            0x13F
-#define FLAG_WONDER_CARD_UNUSED_4            0x140
-#define FLAG_WONDER_CARD_UNUSED_5            0x141
-#define FLAG_WONDER_CARD_UNUSED_6            0x142
-#define FLAG_WONDER_CARD_UNUSED_7            0x143
+#define FLAG_CR_REWARD_AVAILABLE_ABIGAIL      0x13F // repurposed
+#define FLAG_CR_REWARD_AVAILABLE_ANTHONY      0x140 // repurposed
+#define FLAG_CR_REWARD_AVAILABLE_BENJAMIN     0x141 // repurposed
+#define FLAG_CR_REWARD_AVAILABLE_JASMINE      0x142 // repurposed
+#define FLAG_CR_REWARD_AVAILABLE_JACOB        0x143 // repurposed
 #define FLAG_WONDER_CARD_UNUSED_8            0x144
 #define FLAG_WONDER_CARD_UNUSED_9            0x145
 #define FLAG_WONDER_CARD_UNUSED_10           0x146
@@ -1089,7 +1089,7 @@
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
 #define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
-#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F // now unused, available to use
+#define FLAG_ITEM_ROUTE_125_VITAMIN                                 0x40F // repurposed
 #define FLAG_ITEM_ROUTE_110_BLACK_SLUDGE                              0x410 //repurposed
 #define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412

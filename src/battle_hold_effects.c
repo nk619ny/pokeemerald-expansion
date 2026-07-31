@@ -377,7 +377,8 @@ static enum ItemEffect TryRowapBerry(enum BattlerId battlerDef, enum BattlerId b
     return effect;
 }
 
-static enum ItemEffect TrySetEnigmaBerry(enum BattlerId battlerDef, enum BattlerId battlerAtk)
+/*
+*static enum ItemEffect TrySetEnigmaBerry(enum BattlerId battlerDef, enum BattlerId battlerAtk)
 {
     enum ItemEffect effect = ITEM_NO_EFFECT;
 
@@ -396,6 +397,7 @@ static enum ItemEffect TrySetEnigmaBerry(enum BattlerId battlerDef, enum Battler
 
     return effect;
 }
+*/
 
 static enum ItemEffect TryBlunderPolicy(enum BattlerId battlerAtk)
 {
@@ -1110,9 +1112,7 @@ enum ItemEffect ItemBattleEffects(enum BattlerId itemBattler, enum BattlerId bat
     case HOLD_EFFECT_ROWAP_BERRY:
         effect = TryRowapBerry(itemBattler, battler, item);
         break;
-    case HOLD_EFFECT_ENIGMA_BERRY: // consume and heal if hit by super effective move
-        effect = TrySetEnigmaBerry(itemBattler, battler);
-        break;
+    // HOLD_EFFECT_ENIGMA_BERRY is handled in GetDefenderItemsModifier (damage reduction)
     case HOLD_EFFECT_BLUNDER_POLICY:
         effect = TryBlunderPolicy(itemBattler);
         break;

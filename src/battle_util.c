@@ -7757,6 +7757,18 @@ static inline uq4_12_t GetDefenderItemsModifier(struct DamageContext *ctx)
 {
     switch (ctx->holdEffects[ctx->battlerDef])
     {
+    case HOLD_EFFECT_ENIGMA_BERRY:
+        if (IsUnnerveBlocked(ctx->battlerDef, gBattleMons[ctx->battlerDef].item))
+            return UQ_4_12(1.0);
+        if (ctx->typeEffectivenessModifier >= UQ_4_12(4.0))
+        {
+            if (ctx->updateFlags)
+                gSpecialStatuses[ctx->battlerDef].berryReduced = TRUE;
+            if (ctx->aiCalc && AI_DAMAGES_THROUGH_BERRIES)
+                ctx->aiCheckBerryModifier = TRUE;
+            return (ctx->abilities[ctx->battlerDef] == ABILITY_RIPEN) ? UQ_4_12(0.5) : UQ_4_12(0.75);
+        }
+        break;
     case HOLD_EFFECT_RESIST_BERRY:
         if (IsUnnerveBlocked(ctx->battlerDef, gBattleMons[ctx->battlerDef].item))
             return UQ_4_12(1.0);

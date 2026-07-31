@@ -73,7 +73,7 @@ Route125_EventScript_Iris::
 	end
 
 Route125_EventScript_Presley::
-	trainerbattle_single TRAINER_PRESLEY, Route125_Text_PresleyIntro, Route125_Text_PresleyDefeat
+	trainerbattle_single TRAINER_PRESLEY, Route125_Text_PresleyIntro, Route125_Text_PresleyDefeat, Route125_EventScript_PresleyTryGiveVitamin
 	msgbox Route125_Text_PresleyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -94,4 +94,33 @@ text Route125_Text_TanyaNoBattle{
 
 text Route125_Text_StanNoBattle	{
 	format("The ocean is so vast and beautiful.\pI could swim here forever!")
+}
+
+text Route125_Text_PresleyPostBattle{
+	format("Everyone expects Dragons to roam the skies, but many make their home in the seas.")
+}
+
+
+script Route125_EventScript_PresleyTryGiveVitamin{
+	if(flag(FLAG_BADGE07_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("I am a strong believer in the etiquette of giving not just money, but a greater reward for a victor in battle."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Will you do me the honor of accepting this token for defeating me?"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_IRON)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_IRON)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("Refusing to take this item is an insult to me."), MSGBOX_NPC)
+	}
+	release
+	end
 }

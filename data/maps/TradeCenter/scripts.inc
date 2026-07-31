@@ -1830,6 +1830,8 @@ Common_EventScript_RemoveOptionalItems7PreSurf::
 	setflag FLAG_ITEM_MT_PYRE_2F_VITAMIN
 # 988 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_125_BIG_PEARL
+# 989 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_125_VITAMIN
 	return
 
 

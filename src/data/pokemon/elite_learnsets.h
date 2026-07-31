@@ -2350,7 +2350,7 @@ static const u16 sHitmontopEliteLearnset[] = {
     MOVE_BLAZING_TORQUE,
     MOVE_NOXIOUS_TORQUE,
     MOVE_MAGICAL_TORQUE,
-    MOVE_COMBAT_TORQUE,
+    //MOVE_COMBAT_TORQUE, //added to Level Up Learnset
     MOVE_TOPSY_TURVY,
     MOVE_COLLISION_COURSE,
     MOVE_RAGE,

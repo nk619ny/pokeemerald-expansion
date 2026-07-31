@@ -149,7 +149,7 @@ Route125_EventScript_Iris::
 # 75 "data/maps/Route125/scripts.pory"
 Route125_EventScript_Presley::
 # 76 "data/maps/Route125/scripts.pory"
-	trainerbattle_single TRAINER_PRESLEY, Route125_Text_PresleyIntro, Route125_Text_PresleyDefeat
+	trainerbattle_single TRAINER_PRESLEY, Route125_Text_PresleyIntro, Route125_Text_PresleyDefeat, Route125_EventScript_PresleyTryGiveVitamin
 # 77 "data/maps/Route125/scripts.pory"
 	msgbox Route125_Text_PresleyPostBattle, MSGBOX_AUTOCLOSE
 # 78 "data/maps/Route125/scripts.pory"
@@ -165,6 +165,62 @@ Route125_EventScript_Auron::
 # 83 "data/maps/Route125/scripts.pory"
 	end
 
+Route125_EventScript_PresleyTryGiveVitamin::
+# 105 "data/maps/Route125/scripts.pory"
+	goto_if_set FLAG_BADGE07_GET, Route125_EventScript_PresleyTryGiveVitamin_2
+# 109 "data/maps/Route125/scripts.pory"
+	goto_if_unset FLAG_TEMP_A, Route125_EventScript_PresleyTryGiveVitamin_5
+# 113 "data/maps/Route125/scripts.pory"
+	msgbox Route125_EventScript_PresleyTryGiveVitamin_Text_1, MSGBOX_NPC
+Route125_EventScript_PresleyTryGiveVitamin_4:
+# 115 "data/maps/Route125/scripts.pory"
+	checkitemspace ITEM_IRON
+# 116 "data/maps/Route125/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route125_EventScript_PresleyTryGiveVitamin_9
+# 121 "data/maps/Route125/scripts.pory"
+	setflag FLAG_TEMP_A
+# 122 "data/maps/Route125/scripts.pory"
+	msgbox Route125_EventScript_PresleyTryGiveVitamin_Text_2, MSGBOX_NPC
+Route125_EventScript_PresleyTryGiveVitamin_8:
+# 124 "data/maps/Route125/scripts.pory"
+	release
+	end
+
+Route125_EventScript_PresleyTryGiveVitamin_2:
+# 106 "data/maps/Route125/scripts.pory"
+	releaseall
+	end
+
+Route125_EventScript_PresleyTryGiveVitamin_5:
+# 110 "data/maps/Route125/scripts.pory"
+	msgbox Route125_EventScript_PresleyTryGiveVitamin_Text_0, MSGBOX_NPC
+	goto Route125_EventScript_PresleyTryGiveVitamin_4
+
+Route125_EventScript_PresleyTryGiveVitamin_9:
+# 117 "data/maps/Route125/scripts.pory"
+	giveitem ITEM_IRON
+# 118 "data/maps/Route125/scripts.pory"
+	clearflag FLAG_TEMP_A
+	goto Route125_EventScript_PresleyTryGiveVitamin_8
+
+
+Route125_EventScript_PresleyTryGiveVitamin_Text_0:
+# 110 "data/maps/Route125/scripts.pory"
+	.string "I am a strong believer in the etiquette\n"
+	.string "of giving not just money, but a greater\l"
+	.string "reward for a victor in battle.$"
+
+Route125_EventScript_PresleyTryGiveVitamin_Text_1:
+# 113 "data/maps/Route125/scripts.pory"
+	.string "Will you do me the honor of accepting\n"
+	.string "this token for defeating me?$"
+
+Route125_EventScript_PresleyTryGiveVitamin_Text_2:
+# 122 "data/maps/Route125/scripts.pory"
+	.string "Refusing to take this item is an insult\n"
+	.string "to me.$"
+
 Route125_Text_NolenNoBattle::
 # 87 "data/maps/Route125/scripts.pory"
 	.string "The water gets colder out here.$"
@@ -179,3 +235,9 @@ Route125_Text_StanNoBattle::
 # 95 "data/maps/Route125/scripts.pory"
 	.string "The ocean is so vast and beautiful.\p"
 	.string "I could swim here forever!$"
+
+Route125_Text_PresleyPostBattle::
+# 99 "data/maps/Route125/scripts.pory"
+	.string "Everyone expects Dragons to roam the\n"
+	.string "skies, but many make their home in the\l"
+	.string "seas.$"

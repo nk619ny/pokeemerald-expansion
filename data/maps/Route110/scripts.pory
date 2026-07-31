@@ -201,19 +201,17 @@ Route110_EventScript_Dale::
 	end
 
 Route110_EventScript_Jacob::
-	trainerbattle_single TRAINER_JACOB, Route110_Text_JacobIntro, Route110_Text_JacobDefeated
+	trainerbattle_single TRAINER_JACOB, Route110_Text_JacobIntro, Route110_Text_JacobDefeated, Route110_EventScript_JacobSetFlag
 	msgbox Route110_Text_JacobPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route110_EventScript_Anthony::
-	trainerbattle_single TRAINER_ANTHONY, Route110_Text_AnthonyIntro, Route110_Text_AnthonyDefeated
+	trainerbattle_single TRAINER_ANTHONY, Route110_Text_AnthonyIntro, Route110_Text_AnthonyDefeated, Route110_EventScript_AnthonySetFlag
 	msgbox Route110_Text_AnthonyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route110_EventScript_Benjamin::
-	trainerbattle_single TRAINER_BENJAMIN_1, Route110_Text_BenjaminIntro, Route110_Text_BenjaminDefeated, Route110_EventScript_BenjaminRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_BenjaminRematch
+	trainerbattle_single TRAINER_BENJAMIN_1, Route110_Text_BenjaminIntro, Route110_Text_BenjaminDefeated, Route110_EventScript_BenjaminSetFlag
 	msgbox Route110_Text_BenjaminPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -232,14 +230,13 @@ Route110_EventScript_BenjaminRematch::
 	end
 
 Route110_EventScript_Jasmine::
-	trainerbattle_single TRAINER_JASMINE, Route110_Text_JasmineIntro, Route110_Text_JasmineDefeated
+	trainerbattle_single TRAINER_JASMINE, Route110_Text_JasmineIntro, Route110_Text_JasmineDefeated, Route110_EventScript_JasmineSetFlag
 	msgbox Route110_Text_JasminePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route110_EventScript_Abigail::
-	trainerbattle_single TRAINER_ABIGAIL_1, Route110_Text_AbigailIntro, Route110_Text_AbigailDefeated, Route110_EventScript_AbigailRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_AbigailRematch
+	trainerbattle_single TRAINER_ABIGAIL_1, Route110_Text_AbigailIntro, Route110_Text_AbigailDefeated, Route110_EventScript_AbigailSetFlag
+
 	msgbox Route110_Text_AbigailPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -1232,6 +1229,7 @@ script Route110_EventScript_CheckCyclingRoadDone{
 
 script Route110_EventScript_CheckCyclingRoadUnfinished {
 	releaseall
+	setvar(VAR_TEMP_0, 1)
 	end
 }
 
@@ -1245,7 +1243,13 @@ script Route110_EventScript_GiveCyclingRoadHeartScale {
 	giveitem(ITEM_HEART_SCALE)
 	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
 	setflag(FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE)
+	setvar(VAR_TEMP_0, 1)
 	waitfanfare
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_ANTHONY, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_BENJAMIN, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_ABIGAIL, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_JASMINE, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
 	releaseall
 	end
 }
@@ -1282,6 +1286,11 @@ script Route110_EventScript_CheckCyclingRoadDoneDialogue{
 	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
 	setflag(FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE)
 	waitfanfare
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_ANTHONY, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_BENJAMIN, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_ABIGAIL, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_JASMINE, Route110_EventScript_AlsoGiveIndividualTrainerRewards)
 	releaseall
 	end
 }
@@ -1289,6 +1298,12 @@ script Route110_EventScript_CheckCyclingRoadDoneDialogue{
 script Route110_EventScript_CyclingRoadUnfinishedDialogue{
 	lock
 	msgbox(format("It looks like you haven't beaten all the trainers on Cycling Road yet.\pIf you can beat them all in one trip, you'll receive a special reward!"), MSGBOX_NPC)
+	closemessage
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_GiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_ANTHONY, Route110_EventScript_GiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_BENJAMIN, Route110_EventScript_GiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_ABIGAIL, Route110_EventScript_GiveIndividualTrainerRewards)
+	goto_if_set(FLAG_CR_REWARD_AVAILABLE_JASMINE, Route110_EventScript_GiveIndividualTrainerRewards)
 	release
 	end
 }
@@ -1305,3 +1320,123 @@ script Route110_EventScript_CyclingRoadEntranceIntro{
 	setflag(FLAG_TEMP_5)
 	return
 }
+
+script Route110_EventScript_JacobSetFlag{
+	setflag(FLAG_CR_REWARD_AVAILABLE_JACOB)
+	releaseall
+	end
+}
+
+script Route110_EventScript_AnthonySetFlag{
+	setflag(FLAG_CR_REWARD_AVAILABLE_ANTHONY)
+	releaseall
+	end
+}
+
+script Route110_EventScript_BenjaminSetFlag{
+	setflag(FLAG_CR_REWARD_AVAILABLE_BENJAMIN)
+	releaseall
+	end
+}
+
+script Route110_EventScript_AbigailSetFlag{
+	setflag(FLAG_CR_REWARD_AVAILABLE_ABIGAIL)
+	releaseall
+	end
+}
+
+script Route110_EventScript_JasmineSetFlag{
+	setflag(FLAG_CR_REWARD_AVAILABLE_JASMINE)
+	releaseall
+	end
+}
+
+script Route110_EventScript_AlsoGiveIndividualTrainerRewards{
+	lock
+	msgbox(format("Additionally, you get a reward for each trainer you defeated."), MSGBOX_NPC)
+	closemessage
+	if(flag(FLAG_CR_REWARD_AVAILABLE_JACOB)){
+		giveitem(ITEM_PP_MAX)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_JACOB)
+		waitfanfare
+	}
+	if(flag(FLAG_CR_REWARD_AVAILABLE_ANTHONY)){
+		giveitem(ITEM_HP_UP)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_ANTHONY)
+		waitfanfare
+	}
+	if(flag(FLAG_CR_REWARD_AVAILABLE_BENJAMIN)){
+		giveitem(ITEM_CARBOS)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_BENJAMIN)
+		waitfanfare
+	}
+	if(flag(FLAG_CR_REWARD_AVAILABLE_ABIGAIL)){
+		giveitem(ITEM_IRON)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_ABIGAIL)
+		waitfanfare
+	}
+	if(flag(FLAG_CR_REWARD_AVAILABLE_JASMINE)){
+		giveitem(ITEM_ZINC)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_JASMINE)
+		waitfanfare
+	}
+	setvar(VAR_TEMP_0, 1)
+	releaseall
+	end
+}
+
+
+script Route110_EventScript_GiveIndividualTrainerRewards{
+	lock
+	msgbox(format("However, you do receive some smaller rewards for each trainer you've beaten for the first time."), MSGBOX_NPC)
+	closemessage
+	if(flag(FLAG_CR_REWARD_AVAILABLE_JACOB)){
+		giveitem(ITEM_PP_MAX)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_JACOB)
+		waitfanfare
+	}
+	if(flag(FLAG_CR_REWARD_AVAILABLE_ANTHONY)){
+		giveitem(ITEM_HP_UP)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_ANTHONY)
+		waitfanfare
+	}
+	if(flag(FLAG_CR_REWARD_AVAILABLE_BENJAMIN)){
+		giveitem(ITEM_CARBOS)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_BENJAMIN)
+		waitfanfare
+	}
+	if(flag(FLAG_CR_REWARD_AVAILABLE_ABIGAIL)){
+		giveitem(ITEM_IRON)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_ABIGAIL)
+		waitfanfare
+	}
+	if(flag(FLAG_CR_REWARD_AVAILABLE_JASMINE)){
+		giveitem(ITEM_ZINC)
+		goto_if_eq(VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward)
+		setflag(FLAG_CR_REWARD_AVAILABLE_JASMINE)
+		waitfanfare
+	}
+	setvar(VAR_TEMP_0, 1)
+	releaseall
+	end
+}
+
+
+script Route110_EventScript_CyclingRoadComeBackForReward{
+	lock
+	msgbox(format("It seems you don't have enough room in your bag.\pCome back to receive your rewards once you've made space."), MSGBOX_NPC)
+	closemessage
+	setvar(VAR_TEMP_0, 1)
+	releaseall
+	end
+}
+

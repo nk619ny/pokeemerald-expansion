@@ -381,7 +381,7 @@ Double Battle: Yes
 Starting Status: RAINBOW_OPPONENT
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Aurorus  @ Babiri Berry
+Aurorus  @ Enigma Berry
 Ability: Snow Warning  
 Tera Type: Rock  
 IVs: 0 Atk  
@@ -1773,15 +1773,15 @@ Music: Rich
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sinistea @ Salac Berry  
-Ability: Weak Armor  
+Polteageist @ Starf Berry  
 Level: 65
+Ability: Weak Armor  
 Tera Type: Ghost  
 IVs: 0 Atk  
-- Psybeam  
-- Hex  
-- Giga Drain  
+- Shadow Ball  
+- Foul Play  
 - Teatime  
+- Pain Split  
 
 Honchkrow @ Lansat Berry
 Ability: Super Luck  
@@ -5528,7 +5528,7 @@ IVs: 0 Atk
 - Mirror Coat  
 - Hydro Pump  
 
-Aurorus @ Chople Berry  
+Aurorus @ Enigma Berry  
 Level: 73
 Ability: Refrigerate  
 Tera Type: Rock  
@@ -9928,7 +9928,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 
 Furfrou-Dandy  @ Starf Berry  
-Level: 61
+Level: 63
 Ability: Fur Coat  
 Tera Type: Normal  
 - Return  
@@ -9937,7 +9937,7 @@ Tera Type: Normal
 - Protect  
 
 Slowking  @ Starf Berry  
-Level: 61
+Level: 63
 Ability: Oblivious  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -9947,7 +9947,7 @@ IVs: 0 Atk
 - Heal Pulse  
 
 Gumshoos  @ Starf Berry  
-Level: 61
+Level: 65
 Ability: Stakeout  
 Tera Type: Normal  
 - Thunder Fang  
@@ -9955,16 +9955,15 @@ Tera Type: Normal
 - Fire Fang  
 - Yawn  
 
-Polteageist @ Starf Berry  
+Mr. Rime  
 Level: 61
-Ability: Weak Armor  
-Tera Type: Ghost  
+Ability: Tangled Feet  
+Tera Type: Ice  
 IVs: 0 Atk  
-- Shadow Ball  
-- Foul Play  
-- Teatime  
-- Pain Split  
-
+- Dazzling Gleam  
+- Ice Beam  
+- Magic Coat  
+- Grass Knot  
 
 
 === TRAINER_MICAH === /* SS Tidal */
@@ -10321,7 +10320,7 @@ Jolly Nature
 - Hone Claws  
 - Tailwind  
 
-Aurorus @ Babiri Berry  
+Aurorus @ Enigma Berry  
 Level: 47
 Ball: Heavy
 Ability: Refrigerate  
@@ -12301,6 +12300,16 @@ Jolly Nature
 - Spore  
 - Swords Dance  
 - Seed Bomb  
+
+Haxorus  
+Ability: Mold Breaker  
+Level: 76
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- First Impression  
+- Glaive Rush  
+- Stomping Tantrum  
+- Counter
 
 Gengar @ Gengarite  
 Ability: Levitate  
@@ -14415,7 +14424,7 @@ IVs: 0 Atk
 - Electroweb  
 
 
-=== TRAINER_JASMINE === /* Route 110 CR */ /* TO BE ADDED */
+=== TRAINER_JASMINE === /* Route 110 CR */
 Name: JASMINE
 Class: Triathlete
 Pic: Cycling Triathlete F
@@ -14423,6 +14432,27 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+
+Phanpy  
+Ability: Pickup  
+Level: 35
+EVs: 252 Atk / 84 Def / 84 SpD / 84 Spe  
+Adamant Nature  
+- Rollout  
+- Rapid Spin  
+- Trailblaze  
+- Encore
+
+Pineco  
+Ability: Sturdy  
+Level: 35
+EVs: 252 HP / 252 Atk  
+Brave Nature  
+IVs: 0 Spe  
+- Ice Spinner  
+- Lunge  
+- Gyro Ball  
+- Spikes
 
 Hitmontop (M) @ Expert Belt  
 Ability: Intimidate   
@@ -15120,7 +15150,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Energy
 - Ember
 
-=== TRAINER_PERRY === /* Route 118 */
+=== TRAINER_PERRY === /* Route 118 */ /* COPIED TEAM TO SURF, TO BE ADDED NEWLY */
 Name: PERRY
 Class: Bird Keeper
 Pic: Bird Keeper ORAS 80
@@ -15339,22 +15369,53 @@ Level: 56
 - Vacuum Wave  
 
 
-=== TRAINER_PRESLEY === /* Route 125 */ /* TO BE ADDED */
+=== TRAINER_PRESLEY === /* Route 125 */
 Name: PRESLEY
-Class: Bird Keeper
-Pic: Bird Keeper ORAS 80
+Class: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tropius
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Scrafty @ Roseli Berry  
+Ability: Shed Skin  
+Level: 68
+Tera Type: Dark  
+- Dragon Dance  
+- Dragon Claw  
+- Drain Punch  
+- Iron Head  
 
-Xatu
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Seviper  
+Ability: Shed Skin  
+Level: 68
+Tera Type: Poison  
+- Breaking Swipe  
+- Coil  
+- Psychic Fangs  
+- Poison Jab  
+
+
+Eelektross @ White Herb  
+Ability: Levitate  
+Level: 68
+Tera Type: Electric  
+- Dragon Claw  
+- Supercell Slam  
+- Close Combat  
+- Acrobatics  
+
+Milotic  
+Ability: Marvel Scale  
+Level: 68
+Tera Type: Water  
+IVs: 0 Atk  
+- Recover  
+- Dragon Pulse  
+- Moonblast  
+- Scald  
+
 
 === TRAINER_EDWARDO === /* Fortree Gym */
 Name: EDUARDO
@@ -15522,7 +15583,7 @@ Tera Type: Normal
 - Tailwind  
 
 Fletchinder  
-Level: 53
+Level: 57
 Ability: Flame Body  
 Tera Type: Fire  
 - Flame Charge  
@@ -23803,7 +23864,7 @@ Tera Type: Rock
 - Rock Smash  
 - Curse  
 
-Graveler  @ Rindo Berry
+Graveler  @ Enigma Berry
 Level: 43
 Ability: Rock Head  
 Tera Type: Rock  
@@ -24231,7 +24292,7 @@ Golem
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_DEZ_AND_LUKE === /* Mt. Pyre 2F */ /* TO BE ADDED */
+=== TRAINER_DEZ_AND_LUKE === /* Mt. Pyre 2F */ 
 Name: DEZ & LUKE
 Class: Young Couple
 Pic: Young Couple
@@ -24240,13 +24301,43 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Delcatty
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gardevoir (F) @ Fairy Feather  
+Ability: Trace  
+Level: 63
+IVs: 0 Atk  
+- Draining Kiss  
+- Future Sight  
+- Heal Pulse  
+- Charm  
 
-Manectric
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gallade (M) @ Kasib Berry  
+Ability: Steadfast  
+Level: 63
+- Sacred Sword  
+- Psycho Cut  
+- Captivate  
+- Ally Switch  
+
+Alomomola  
+Ability: Healer  
+Level: 59
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+- Alluring Voice  
+- Heal Pulse  
+- Sparkling Aria  
+- Flip Turn  
+
+Maushold @ Loaded Dice  
+Ability: Technician  
+Level: 60
+EVs: 252 Spe
+Jolly Nature
+- After You  
+- Baby-Doll Eyes  
+- Bullet Seed  
+- Population Bomb  
+
 
 === TRAINER_LEA_AND_JED === /* S.S. Tidal */ /* TO BE ADDED */
 Name: LEA & JED
@@ -24265,7 +24356,7 @@ Luvdisc
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KIRA_AND_DAN_1 === /* Abandoned Ship */ /* TO BE ADDED */
+=== TRAINER_KIRA_AND_DAN_1 === /* Abandoned Ship */ 
 Name: KIRA & DAN
 Class: Young Couple
 Pic: Young Couple
@@ -24274,13 +24365,41 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Volbeat
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Illumise (F)  
+Ability: Prankster  
+Level: 50
+IVs: 0 Atk  
+- Attract  
+- Captivate  
+- Charm  
+- Dazzling Gleam  
 
-Illumise
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Volbeat (M)  
+Ability: Illuminate  
+Level: 50
+IVs: 0 Atk  
+- Thunder  
+- Bug Buzz  
+- Encore  
+- Giga Drain  
+
+Luvdisc @ Pixie Plate  
+Ability: Soul-Heart  
+Level: 50
+IVs: 0 Atk  
+- Draining Kiss  
+- Sweet Kiss  
+- Baby-Doll Eyes  
+- Scald  
+
+Cinccino @ Pixie Plate  
+Ability: Cute Charm  
+Level: 50
+- Last Resort  
+- Triple Axel  
+- Charm  
+- Covet  
+
 
 === TRAINER_KIRA_AND_DAN_2 === /* Route */
 Name: KIRA & DAN
@@ -24291,13 +24410,41 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Volbeat
-Level: 30
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Illumise (F)  
+Ability: Prankster  
+Level: 50
+IVs: 0 Atk  
+- Attract  
+- Captivate  
+- Charm  
+- Dazzling Gleam  
 
-Illumise
-Level: 30
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Volbeat (M)  
+Ability: Illuminate  
+Level: 50
+IVs: 0 Atk  
+- Thunder  
+- Bug Buzz  
+- Encore  
+- Giga Drain  
+
+Luvdisc @ Pixie Plate  
+Ability: Soul-Heart  
+Level: 50
+IVs: 0 Atk  
+- Draining Kiss  
+- Sweet Kiss  
+- Baby-Doll Eyes  
+- Scald  
+
+Cinccino @ Pixie Plate  
+Ability: Cute Charm  
+Level: 50
+- Last Resort  
+- Triple Axel  
+- Charm  
+- Covet  
+
 
 === TRAINER_KIRA_AND_DAN_3 === /* Route */
 Name: KIRA & DAN
@@ -25955,21 +26102,43 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Dustox
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Gust
-- Psybeam
-- Toxic
-- Protect
+Nidoking (M)  
+Ability: Rivalry  
+Level: 50
+- Drill Run  
+- Poison Jab  
+- Power-Up Punch  
+- Shadow Ball  
 
-Beautifly
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Gust
-- Mega Drain
-- Attract
-- Stun Spore
+Nidoqueen (F)  
+Ability: Rivalry  
+Level: 50
+EVs: 252 SpA  
+IVs: 0 Atk  
+- Attract  
+- Flamethrower  
+- Ice Beam  
+- Thunderbolt  
+
+Alcremie (Alcremie-Ruby-Cream) (F)  
+Ability: Sweet Veil  
+Level: 50
+IVs: 0 Atk  
+- Sweet Kiss  
+- Decorate  
+- Alluring Voice  
+- Mystical Fire  
+
+Delcatty  
+Ability: Cute Charm  
+Level: 50
+IVs: 0 Atk  
+- Attract  
+- Sweet Kiss  
+- Fake Tears  
+- Hyper Voice  
+
+
 
 === TRAINER_JOHN_AND_JAY_1 === /* Meteor Falls */
 Name: JOHN & JAY
@@ -27727,7 +27896,7 @@ IVs: 0 Atk
 - Moonlight  
 - Sludge Bomb  
 
-Magcargo  @ Shuca Berry
+Magcargo  @ Enigma Berry
 Level: 63
 Ability: Magma Armor  
 Tera Type: Fire  
@@ -28221,7 +28390,7 @@ IVs: 0 Atk
 - Psychic Noise  
 - Hidden Power
 
-=== TRAINER_JOSUE === /* Route 105 Surf */ /* TO BE ADDED */
+=== TRAINER_JOSUE === /* Route 105 Surf */
 Name: JOSUE
 Class: Bird Keeper
 Pic: Bird Keeper ORAS 80
@@ -28230,13 +28399,40 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Taillow
-Level: 25
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Pidgeotto  
+Level: 53
+Ability: Keen Eye  
+Tera Type: Normal  
+- Feather Dance  
+- Roost  
+- Air Slash  
+- Steel Wing  
 
-Wingull
-Level: 25
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Tranquill  
+Level: 53
+Ability: Big Pecks  
+Tera Type: Normal  
+- Dual Wingbeat  
+- Night Slash  
+- Secret Power  
+- Morning Sun  
+
+Staravia  
+Level: 53
+Ability: Intimidate  
+Tera Type: Normal  
+- Quick Attack  
+- U-turn  
+- Retaliate  
+
+Corvisquire  
+Level: 53
+Ability: Unnerve  
+Tera Type: Flying  
+- Drill Peck  
+- Power Trip  
+- Work Up  
+- Tailwind  
 
 === TRAINER_CAMRON === /* Route 107 */ 
 Name: CAMRON
