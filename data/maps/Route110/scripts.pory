@@ -1274,6 +1274,11 @@ script Route110_EventScript_ChallengeGuy {
 
 script Route110_EventScript_CheckCyclingRoadDoneDialogue{
 	lock
+	if(flag(FLAG_BADGE03_GET)){
+		msgbox(format("Unfortunately, the Cycling Road Challenge is no longer active."), MSGBOX_NPC)
+		release
+		end
+	}
 	goto_if_not_defeated(TRAINER_JACOB, Route110_EventScript_CyclingRoadUnfinishedDialogue)
 	goto_if_not_defeated(TRAINER_ANTHONY, Route110_EventScript_CyclingRoadUnfinishedDialogue)
 	goto_if_not_defeated(TRAINER_BENJAMIN_1, Route110_EventScript_CyclingRoadUnfinishedDialogue)
@@ -1297,6 +1302,11 @@ script Route110_EventScript_CheckCyclingRoadDoneDialogue{
 
 script Route110_EventScript_CyclingRoadUnfinishedDialogue{
 	lock
+	if(flag(FLAG_BADGE03_GET)){
+		msgbox(format("Unfortunately, the Cycling Road Challenge is no longer active."), MSGBOX_NPC)
+		release
+		end
+	}
 	msgbox(format("It looks like you haven't beaten all the trainers on Cycling Road yet.\pIf you can beat them all in one trip, you'll receive a special reward!"), MSGBOX_NPC)
 	closemessage
 	goto_if_set(FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_GiveIndividualTrainerRewards)
