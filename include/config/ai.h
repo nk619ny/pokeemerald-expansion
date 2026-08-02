@@ -144,6 +144,9 @@
 // AI_FLAG_HARD_TRICK_ROOM settings
 #define SHOULD_TRICK_ROOM_OVER_FAST_KILL         50 // chance the AI sets Trick Room at an appropriate time instead of taking an available fast kill
 
+// AI_FLAG_ILLUSION_TRICKS settings
+#define SHOULD_ILLUSION_TRICK                    33 // chance the AI swaps its chosen send-out between its Illusion mon and the mon Illusion would disguise it as
+
 #define AI_FLAG_ATTACKS_PARTNER_FOCUSES_PARTNER  FALSE  // if TRUE, AI_FLAG_ATTACKS_PARTNER prefers attacking the partner over the ally.
                                                         // This is treated as true regardless during wild battles with AI.
 

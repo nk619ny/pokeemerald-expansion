@@ -2633,6 +2633,98 @@ u32 GetMostSuitableMonToSwitchInto(enum BattlerId battler, enum SwitchType switc
     }
 }
 
+// AI_FLAG_ILLUSION_TRICKS: checks that monId is a party member the AI could legally send out right now.
+static bool32 IsValidIllusionTrickSwitchin(enum BattlerId battler, u32 monId)
+{
+    struct Pokemon *party = GetBattlerParty(battler);
+    enum BattlerId partner = BATTLE_PARTNER(battler);
+
+    if (monId >= PARTY_SIZE)
+        return FALSE;
+    if (!GetMonData(&party[monId], MON_DATA_SANITY_HAS_SPECIES)
+     || GetMonData(&party[monId], MON_DATA_HP) == 0
+     || GetMonData(&party[monId], MON_DATA_IS_EGG))
+        return FALSE;
+    // Don't undermine ace behavior by sending the ace out early.
+    if (IsAceMon(battler, monId))
+        return FALSE;
+    // Not already on the field.
+    if (monId == gBattlerPartyIndexes[battler])
+        return FALSE;
+    if (IsDoubleBattle() && BattlersShareParty(battler, partner))
+    {
+        if (IsBattlerAlive(partner) && monId == gBattlerPartyIndexes[partner])
+            return FALSE;
+        // Not already reserved by the partner's pending switch-in choice.
+        if (monId == gBattleStruct->monToSwitchIntoId[partner])
+            return FALSE;
+    }
+    return TRUE;
+}
+
+// AI_FLAG_ILLUSION_TRICKS: if the AI is about to send out its benched Illusion mon (or the mon Illusion
+// would disguise it as), there is a SHOULD_ILLUSION_TRICK% chance it sends out the other one instead,
+// creating uncertainty about which Pokémon was 'really' sent out. Called only at the final send-out
+// decision (OpponentHandleChoosePokemon), so exactly one roll happens per actual switch-in choice.
+u32 AI_TryIllusionTrickSwap(enum BattlerId battler, u32 chosenMonId)
+{
+    struct Pokemon *party, *partnerMon;
+    enum BattlerId partner = BATTLE_PARTNER(battler);
+    u32 illusionMonId = PARTY_SIZE;
+    u32 backMonId;
+    s32 partyStart = 0, partyEnd = PARTY_SIZE;
+
+    if (!(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_ILLUSION_TRICKS))
+        return chosenMonId;
+    if (chosenMonId >= PARTY_SIZE)
+        return chosenMonId;
+
+    party = GetBattlerParty(battler);
+
+    // Match the party range Illusion itself uses (see GetIllusionMonPartyId).
+    if (GetBattlerSide(battler) == B_SIDE_OPPONENT && (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS))
+    {
+        if (GetBattlerPosition(battler) == B_POSITION_OPPONENT_LEFT)
+            partyEnd = PARTY_SIZE / 2;
+        else
+            partyStart = PARTY_SIZE / 2;
+    }
+
+    // Find a benched, usable Illusion mon.
+    for (s32 i = partyStart; i < partyEnd; i++)
+    {
+        if (GetMonAbility(&party[i]) == ABILITY_ILLUSION && IsValidIllusionTrickSwitchin(battler, i))
+        {
+            illusionMonId = i;
+            break;
+        }
+    }
+    if (illusionMonId == PARTY_SIZE)
+        return chosenMonId;
+
+    // Determine which mon Illusion would disguise the Illusion mon as, mirroring SetIllusionMon.
+    if (IsBattlerAlive(partner))
+        partnerMon = &party[gBattlerPartyIndexes[partner]];
+    else
+        partnerMon = &party[illusionMonId];
+
+    backMonId = GetIllusionMonPartyId(party, &party[illusionMonId], partnerMon, battler);
+    if (backMonId == PARTY_SIZE || backMonId == illusionMonId)
+        return chosenMonId; // Illusion wouldn't activate, so there is no mind game to play.
+
+    if (chosenMonId == illusionMonId && IsValidIllusionTrickSwitchin(battler, backMonId))
+    {
+        if (RandomPercentage(RNG_AI_ILLUSION_TRICK, SHOULD_ILLUSION_TRICK))
+            return backMonId;
+    }
+    else if (chosenMonId == backMonId) // illusionMonId was already validated above.
+    {
+        if (RandomPercentage(RNG_AI_ILLUSION_TRICK, SHOULD_ILLUSION_TRICK))
+            return illusionMonId;
+    }
+    return chosenMonId;
+}
+
 u32 AI_SelectRevivalBlessingMon(enum BattlerId battler)
 {
     s32 lastId = GetAILastPartyIndex(battler); // + 1

@@ -112,7 +112,7 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
     [32] = NULL,                     // Unused
     [33] = NULL,                     // Unused
     [34] = AI_HardTrickRoom,         // AI_FLAG_HARD_TRICK_ROOM
-    [35] = NULL,                     // Unused
+    [35] = NULL,                     // AI_FLAG_ILLUSION_TRICKS
     [36] = NULL,                     // Unused
     [37] = NULL,                     // Unused
     [38] = NULL,                     // Unused

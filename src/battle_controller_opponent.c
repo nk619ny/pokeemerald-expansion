@@ -564,12 +564,14 @@ static void OpponentHandleChoosePokemon(enum BattlerId battler)
                     break;
             }
         }
+        chosenMonId = AI_TryIllusionTrickSwap(battler, chosenMonId); // AI_FLAG_ILLUSION_TRICKS
         gBattleStruct->monToSwitchIntoId[battler] = chosenMonId;
     }
     else
     {
         chosenMonId = gBattleStruct->AI_monToSwitchIntoId[battler];
         gBattleStruct->AI_monToSwitchIntoId[battler] = PARTY_SIZE;
+        chosenMonId = AI_TryIllusionTrickSwap(battler, chosenMonId); // AI_FLAG_ILLUSION_TRICKS
         gBattleStruct->monToSwitchIntoId[battler] = chosenMonId;
     }
     #if TESTING

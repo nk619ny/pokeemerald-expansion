@@ -4498,7 +4498,7 @@ Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware  / Illusion Tricks
 
 Hypno @ Wide Lens  
 Ability: Bad Dreams  
@@ -4524,6 +4524,16 @@ Level: 50
 - Spore  
 - Follow Me  
 
+Zoroark  
+Ability: Illusion  
+Tera Type: Dark  
+EVs: 252 SpA / 252 Spe
+IVs: 0 Atk    
+Level: 50
+- Bitter Malice  
+- Night Daze  
+- Protect
+
 Breloom  @ Focus Sash
 Ability: Effect Spore  
 Tera Type: Grass  
@@ -4533,15 +4543,8 @@ Level: 50
 - Spore  
 - Seed Bomb  
 - Close Combat  
+- Protect
 
-Zoroark  
-Ability: Illusion  
-Tera Type: Dark  
-EVs: 252 SpA / 252 Spe
-IVs: 0 Atk    
-Level: 50
-- Bitter Malice  
-- Night Daze  
 
 
 === TRAINER_JODY === /* Petalburg Gym */ /* Prankster */
@@ -5180,7 +5183,7 @@ Pic: Hex Maniac ORAS 80
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Illusion Tricks
 
 Absol  
 Level: 62
@@ -11562,7 +11565,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Illusion Tricks
 
 Zubat @ Big Root
 Ability: Infiltrator  
@@ -12748,7 +12751,7 @@ Pic: Expert F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Illusion Tricks
 
 Meditite
 Level: 30
@@ -12839,6 +12842,7 @@ Tera Type: Steel
 - Shift Gear  
 - Gear Grind  
 - Assurance  
+- Gear Up
 
 Rotom-Wash  
 Ability: Levitate  
@@ -15859,6 +15863,7 @@ Pic: Tuber F
 Gender: Female
 Music: Girl
 Double Battle: Yes
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Marill
 Level: 26
@@ -15921,6 +15926,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide / Illusion Tricks
 
 Gastly @ Focus Sash  
 Level: 44
@@ -18488,7 +18494,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide / Illusion Tricks
 
 Sudowoodo  @ Custap Berry
 Level: 66

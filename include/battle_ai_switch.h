@@ -81,6 +81,7 @@ u32 GetMostSuitableMonToSwitchInto(enum BattlerId battler, enum SwitchType switc
 bool32 ShouldSwitch(enum BattlerId battler);
 void ModifySwitchAfterMoveScoring(enum BattlerId battler);
 u32 AI_SelectRevivalBlessingMon(enum BattlerId battler);
+u32 AI_TryIllusionTrickSwap(enum BattlerId battler, u32 chosenMonId);
 bool32 IsSwitchinValid(enum BattlerId battler);
 bool32 IsAceMon(enum BattlerId battler, u32 monPartyId);
 
