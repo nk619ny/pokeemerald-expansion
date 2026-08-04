@@ -140,6 +140,11 @@
 // Counterplay on the assumption of opponents Protecting.
 #define DOUBLE_TRICK_ROOM_ON_LAST_TURN_CHANCE    20 // both Pokémon use Trick Room on turn Trick Room expires in the hopes both opponents used Protect to stall, getting a free refresh on the timer
 #define TAILWIND_IN_TRICK_ROOM_CHANCE            40 // use Tailwind on turn Trick Room expires in the hopes both opponents used Protect to stall
+// Avoid Double Target KO: don't waste both attacks on a target the partner is already expected to KO
+#define AI_AVOID_DOUBLE_TARGET_KO                TRUE // master switch; when FALSE no RNG is consumed and no scores are adjusted
+#define AVOID_DOUBLE_TARGET_KO_CHANCE            100 // chance to redirect attacks away from a target the partner reliably KOs
+#define DOUBLE_TARGET_SLOW_KILL_CHANCE           66 // chance to still double up when both mons only have slow kills on the target
+#define DOUBLE_TARGET_UNRELIABLE_KILL_CHANCE     75 // chance to double up as insurance when the designated killer is itself threatened by a fast kill
 
 // AI_FLAG_HARD_TRICK_ROOM settings
 #define SHOULD_TRICK_ROOM_OVER_FAST_KILL         50 // chance the AI sets Trick Room at an appropriate time instead of taking an available fast kill

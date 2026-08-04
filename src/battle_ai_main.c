@@ -74,6 +74,7 @@ static s32 AI_HardTrickRoom(enum BattlerId battlerAtk, enum BattlerId battlerDef
 static s32 AI_DynamicFunc(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_PredictSwitch(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_CheckPpStall(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
+static bool32 ShouldAvoidDoubleTargetKO(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move);
 
 static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Move, s32) =
 {
@@ -452,6 +453,13 @@ static void SetupRandomRollsForAIMoveSelection(enum BattlerId battler)
 {
     gAiLogicData->shouldConsiderExplosion = RandomPercentage(RNG_AI_CONSIDER_EXPLOSION, GetAIExplosionChanceFromHP(gAiLogicData->hpPercents[battler]));
     gAiLogicData->shouldConsiderFinalGambit = RandomPercentage(RNG_AI_FINAL_GAMBIT, FINAL_GAMBIT_CHANCE);
+
+    if (AI_AVOID_DOUBLE_TARGET_KO && IsDoubleBattle())
+    {
+        gAiLogicData->avoidDoubleTargetKO = RandomPercentage(RNG_AI_AVOID_DOUBLE_TARGET_KO, AVOID_DOUBLE_TARGET_KO_CHANCE);
+        gAiLogicData->doubleTargetSlowKill = RandomPercentage(RNG_AI_DOUBLE_TARGET_SLOW_KILL, DOUBLE_TARGET_SLOW_KILL_CHANCE);
+        gAiLogicData->doubleTargetInsurance = RandomPercentage(RNG_AI_DOUBLE_TARGET_INSURANCE, DOUBLE_TARGET_UNRELIABLE_KILL_CHANCE);
+    }
 }
 
 void AI_TrySwitchOrUseItem(enum BattlerId battler)
@@ -3124,6 +3132,15 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
     u32 noOfHitsToKOPartner = GetNoOfHitsToKOBattler(battlerAtk, battlerAtkPartner, gAiThinkingStruct->movesetIndex, AI_ATTACKING_PARTNER, CONSIDER_ENDURE);
     bool32 wouldPartnerFaint = hasPartner && CanIndexMoveFaintTarget(battlerAtk, battlerAtkPartner, gAiThinkingStruct->movesetIndex, AI_ATTACKING_PARTNER) && !partnerProtecting;
     bool32 isFriendlyFireOK = !wouldPartnerFaint && (noOfHitsToKOPartner == 0 || noOfHitsToKOPartner > friendlyFireThreshold);
+
+    // Avoid wasting attacks on a target the partner is already expected to KO.
+    if (AI_AVOID_DOUBLE_TARGET_KO
+     && hasPartner && hasTwoOpponents
+     && !IsTargetingPartner(battlerAtk, battlerDef)
+     && !IsBattleMoveStatus(move)
+     && !IsSpreadMove(moveTarget) // A spread move hits both foes, so it is never redundant.
+     && ShouldAvoidDoubleTargetKO(battlerAtk, battlerDef, move))
+        ADJUST_SCORE(WORST_EFFECT);
 
     // check what effect partner is using
     if (aiData->partnerMove != MOVE_NONE && hasPartner)
@@ -6586,6 +6603,121 @@ static bool32 HasFastKillOnAnyFoe(enum BattlerId battlerAtk)
 {
     return HasFastKillOnFoe(battlerAtk, LEFT_FOE(battlerAtk))
         || HasFastKillOnFoe(battlerAtk, RIGHT_FOE(battlerAtk));
+}
+
+enum DoubleTargetKillClass
+{
+    DBL_TARGET_NO_KILL,
+    DBL_TARGET_SLOW_KILL,
+    DBL_TARGET_FAST_KILL,
+};
+
+static enum DoubleTargetKillClass GetBattlerKillClassOnTarget(enum BattlerId battlerAtk, enum BattlerId battlerDef)
+{
+    enum Move *moves = GetMovesArray(battlerAtk);
+    enum Move predictedMove = GetPredictedMove(battlerAtk, battlerDef, gAiLogicData);
+    enum DoubleTargetKillClass killClass = DBL_TARGET_NO_KILL;
+
+    if (!IsBattlerAlive(battlerDef))
+        return DBL_TARGET_NO_KILL;
+
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        enum Move checkMove = moves[moveIndex];
+        if (checkMove == MOVE_NONE || checkMove == MOVE_UNAVAILABLE || IsBattleMoveStatus(checkMove))
+            continue;
+        if (!CanIndexMoveFaintTarget(battlerAtk, battlerDef, moveIndex, AI_ATTACKING))
+            continue;
+        if (AI_IsFaster(battlerAtk, battlerDef, checkMove, predictedMove, CONSIDER_PRIORITY))
+            return DBL_TARGET_FAST_KILL;
+        killClass = DBL_TARGET_SLOW_KILL;
+    }
+    return killClass;
+}
+
+// The partner's expected KO on the target: exact if the partner already committed its action
+// this turn (same lower-id-first convention as GetAllyChosenMove), predicted from its known moves otherwise.
+static enum DoubleTargetKillClass GetPartnerKillClassOnTarget(enum BattlerId battlerAtk, enum BattlerId battlerDef)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battlerAtk);
+
+    if (!IsAiBattlerAware(partner))
+        return DBL_TARGET_NO_KILL;
+
+    if (partner > battlerAtk)
+        return GetBattlerKillClassOnTarget(partner, battlerDef);
+
+    if (gAiBattleData->actionFlee || gAiBattleData->choiceWatch)
+        return DBL_TARGET_NO_KILL;
+
+    u32 moveIndex = gAiBattleData->chosenMoveIndex[partner];
+    enum Move chosenMove = gBattleMons[partner].moves[moveIndex];
+    if (chosenMove == MOVE_NONE || IsBattleMoveStatus(chosenMove))
+        return DBL_TARGET_NO_KILL;
+    if (gAiBattleData->chosenTarget[partner] != battlerDef
+     && !IsSpreadMove(AI_GetBattlerMoveTargetType(partner, chosenMove)))
+        return DBL_TARGET_NO_KILL;
+    if (!CanIndexMoveFaintTarget(partner, battlerDef, moveIndex, AI_ATTACKING))
+        return DBL_TARGET_NO_KILL;
+    if (AI_IsFaster(partner, battlerDef, chosenMove, GetPredictedMove(partner, battlerDef, gAiLogicData), CONSIDER_PRIORITY))
+        return DBL_TARGET_FAST_KILL;
+    return DBL_TARGET_SLOW_KILL;
+}
+
+static bool32 IsBattlerFastKillThreatened(enum BattlerId battler)
+{
+    return (IsBattlerAlive(LEFT_FOE(battler)) && HasFastKillOnFoe(LEFT_FOE(battler), battler))
+        || (IsBattlerAlive(RIGHT_FOE(battler)) && HasFastKillOnFoe(RIGHT_FOE(battler), battler));
+}
+
+// TRUE if this damaging move into battlerDef should be penalized because the partner
+// is already expected to KO battlerDef, so our attack is better spent elsewhere.
+static bool32 ShouldAvoidDoubleTargetKO(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
+{
+    struct AiLogicData *aiData = gAiLogicData;
+    enum BattlerId partner = BATTLE_PARTNER(battlerAtk);
+    enum BattlerId otherFoe = BATTLE_PARTNER(battlerDef);
+    enum DoubleTargetKillClass partnerKill = GetPartnerKillClassOnTarget(battlerAtk, battlerDef);
+
+    if (partnerKill == DBL_TARGET_NO_KILL)
+        return FALSE;
+
+    u32 moveIndex = gAiThinkingStruct->movesetIndex;
+    bool32 myKO = CanIndexMoveFaintTarget(battlerAtk, battlerDef, moveIndex, AI_ATTACKING);
+    bool32 myFastKO = myKO && AI_IsFaster(battlerAtk, battlerDef, move, GetPredictedMove(battlerAtk, battlerDef, aiData), CONSIDER_PRIORITY);
+
+    if (partnerKill == DBL_TARGET_SLOW_KILL)
+    {
+        if (!myKO || myFastKO) // Chip damage still helps; a fast kill supersedes the partner's slow kill.
+            return FALSE;
+        return !aiData->doubleTargetSlowKill;
+    }
+
+    // Partner has a fast kill on this target.
+    bool32 partnerThreatened = IsBattlerFastKillThreatened(partner);
+    bool32 meThreatened = IsBattlerFastKillThreatened(battlerAtk);
+
+    if (partnerThreatened)
+    {
+        if (!meThreatened && myFastKO)
+            return FALSE; // We're the reliable killer; claim the KO ourselves.
+        return !aiData->doubleTargetInsurance;
+    }
+
+    // Partner is a reliable killer; anything we throw at this target is wasted.
+    if (!myFastKO || meThreatened)
+        return aiData->avoidDoubleTargetKO;
+
+    // Both are reliable fast killers on this target; split targets when possible.
+    bool32 iCanKillOtherFoe = HasFastKillOnFoe(battlerAtk, otherFoe);
+    bool32 partnerCanKillOtherFoe = HasFastKillOnFoe(partner, otherFoe);
+    if (iCanKillOtherFoe && !partnerCanKillOtherFoe)
+        return aiData->avoidDoubleTargetKO; // Claim the other foe; leave this one to the partner.
+    if (!iCanKillOtherFoe && partnerCanKillOtherFoe)
+        return FALSE;
+    if (partner < battlerAtk)
+        return aiData->avoidDoubleTargetKO; // Partner committed to this target first.
+    return FALSE;
 }
 
 static s32 AI_HardTrickRoom(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)

@@ -253,7 +253,10 @@ struct AiLogicData
     u32 shouldSwitch:4; // Stores result of ShouldSwitch, which decides whether a mon should be switched out
     u32 shouldConsiderFinalGambit:1; // Determines whether AI should consider Final Gambit this turn
     u32 switchInCalc:1; // Indicates if we're doing switch in calcs, this is purely for Retaliate damage calcs
-    u32 padding2:19;
+    u32 avoidDoubleTargetKO:1; // Rolled per decision: redirect attacks away from a target the partner reliably KOs
+    u32 doubleTargetSlowKill:1; // Rolled per decision: still double up when both mons only have slow kills
+    u32 doubleTargetInsurance:1; // Rolled per decision: double up when the designated killer is fast-kill-threatened
+    u32 padding2:16;
 };
 
 struct AiThinkingStruct

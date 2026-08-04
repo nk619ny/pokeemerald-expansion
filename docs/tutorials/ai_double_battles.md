@@ -591,7 +591,70 @@ over slow kill" behavior relies on `AI_FLAG_CHECK_VIABILITY` being present. Test
 
 ---
 
-## 10. Editing Guidance for Agents
+## 10. Custom behavior: Avoid Double Target KO
+
+Vanilla `AI_DoubleBattle` never checks whether the partner is *already going to KO* a target, so both
+AI mons frequently dump their attacks into the same player mon and waste a turn. The custom
+**Avoid Double Target KO** behavior fixes this. It is a config-only feature (no AI flag) that runs for
+every trainer with `AI_FLAG_DOUBLE_BATTLE` (i.e. all doubles trainers).
+
+### 10.1 Configs (`include/config/ai.h`)
+
+| Config | Default | Meaning |
+|---|---|---|
+| `AI_AVOID_DOUBLE_TARGET_KO` | `TRUE` | Master switch. `FALSE` restores vanilla behavior, consumes no RNG |
+| `AVOID_DOUBLE_TARGET_KO_CHANCE` | 100 | Chance to redirect attacks away from a target the partner *reliably* KOs |
+| `DOUBLE_TARGET_SLOW_KILL_CHANCE` | 66 | Chance to still double up when both mons only have *slow* kills |
+| `DOUBLE_TARGET_UNRELIABLE_KILL_CHANCE` | 75 | Chance to double up as insurance when the designated killer is itself threatened by a fast kill |
+
+RNG tags: `RNG_AI_AVOID_DOUBLE_TARGET_KO`, `RNG_AI_DOUBLE_TARGET_SLOW_KILL`,
+`RNG_AI_DOUBLE_TARGET_INSURANCE`. All three are rolled **once per battler decision** in
+`SetupRandomRollsForAIMoveSelection` and cached in `AiLogicData` bitfields
+(`avoidDoubleTargetKO` / `doubleTargetSlowKill` / `doubleTargetInsurance`), because
+`AI_DoubleBattle` runs once per (move, target) pair.
+
+### 10.2 Mechanism
+
+A single hook near the top of `AI_DoubleBattle` (`src/battle_ai_main.c`) applies
+`ADJUST_SCORE(WORST_EFFECT)` (-10) to a damaging, non-spread move aimed at a foe when
+`ShouldAvoidDoubleTargetKO` says the partner has that KO covered. -10 outweighs `FAST_KILL` (+6),
+so the mon's best remaining option (usually attacking the other foe) wins target selection.
+Status moves, spread moves, and ally-targeted moves are never penalized.
+
+Helper cluster (defined next to `HasFastKillOnFoe`):
+
+- `GetBattlerKillClassOnTarget` — classifies a mon's best KO on a target as
+  `DBL_TARGET_FAST_KILL` (KOs while moving first, mirrors `AI_TryToFaint`'s fast-kill condition),
+  `DBL_TARGET_SLOW_KILL`, or `DBL_TARGET_NO_KILL`.
+- `GetPartnerKillClassOnTarget` — the partner's expected KO on the target. Uses the same
+  lower-ID-first convention as `GetAllyChosenMove`: if the partner already **committed** its action
+  this turn, the exact chosen move/target is checked (including committed spread moves); otherwise
+  the partner's known moveset is used as a prediction. Respects `IsAiBattlerAware`.
+- `IsBattlerFastKillThreatened` — whether either foe has a fast kill on the given AI mon (the
+  "designated killer might die before moving" check).
+- `ShouldAvoidDoubleTargetKO` — the decision matrix below.
+
+### 10.3 Decision matrix
+
+Given the partner's kill class on the target, and "my" move being evaluated:
+
+| Partner kill | Condition | Result |
+|---|---|---|
+| None | — | never penalize |
+| Slow | my move doesn't KO (chip damage helps a slow kill) | never penalize |
+| Slow | my move is a *fast* KO (supersedes partner's slow kill) | never penalize |
+| Slow | my move is also only a slow KO | double up `DOUBLE_TARGET_SLOW_KILL_CHANCE`% of the time |
+| Fast, partner threatened | I am unthreatened and have my own fast KO | never penalize — I claim the kill instead |
+| Fast, partner threatened | otherwise | double up (insurance) `DOUBLE_TARGET_UNRELIABLE_KILL_CHANCE`% of the time |
+| Fast, partner safe | my move isn't a fast KO, or I'm threatened | penalize `AVOID_DOUBLE_TARGET_KO_CHANCE`% of the time |
+| Fast, partner safe | both of us are safe fast killers | split: whoever can also fast-kill the *other* foe takes it; ties defer to whichever mon committed first (lower battler ID) |
+
+Tests: `test/battle/ai/ai_avoid_double_target_ko.c`
+(`make check TESTS="Avoid Double Target KO"`).
+
+---
+
+## 11. Editing Guidance for Agents
 
 1. **Doubles logic lives in three places:** `ChooseMoveOrAction_Doubles` (target loop +
    ally guard), `AI_DoubleBattle` (coordination scoring), and the `battle_ai_util.c` partner
