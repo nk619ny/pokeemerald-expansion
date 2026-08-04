@@ -2360,317 +2360,335 @@ Route110_EventScript_CheckCyclingRoadDoneDialogue::
 # 1276 "data/maps/Route110/scripts.pory"
 	lock
 # 1277 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_BADGE03_GET, Route110_EventScript_CheckCyclingRoadDoneDialogue_2
+# 1282 "data/maps/Route110/scripts.pory"
 	goto_if_not_defeated TRAINER_JACOB, Route110_EventScript_CyclingRoadUnfinishedDialogue
-# 1278 "data/maps/Route110/scripts.pory"
-	goto_if_not_defeated TRAINER_ANTHONY, Route110_EventScript_CyclingRoadUnfinishedDialogue
-# 1279 "data/maps/Route110/scripts.pory"
-	goto_if_not_defeated TRAINER_BENJAMIN_1, Route110_EventScript_CyclingRoadUnfinishedDialogue
-# 1280 "data/maps/Route110/scripts.pory"
-	goto_if_not_defeated TRAINER_ABIGAIL_1, Route110_EventScript_CyclingRoadUnfinishedDialogue
-# 1281 "data/maps/Route110/scripts.pory"
-	goto_if_not_defeated TRAINER_JASMINE, Route110_EventScript_CyclingRoadUnfinishedDialogue
 # 1283 "data/maps/Route110/scripts.pory"
-	msgbox Route110_EventScript_GiveCyclingRoadHeartScale_Text_0, MSGBOX_NPC
+	goto_if_not_defeated TRAINER_ANTHONY, Route110_EventScript_CyclingRoadUnfinishedDialogue
 # 1284 "data/maps/Route110/scripts.pory"
-	closemessage
+	goto_if_not_defeated TRAINER_BENJAMIN_1, Route110_EventScript_CyclingRoadUnfinishedDialogue
 # 1285 "data/maps/Route110/scripts.pory"
-	giveitem ITEM_HEART_SCALE
+	goto_if_not_defeated TRAINER_ABIGAIL_1, Route110_EventScript_CyclingRoadUnfinishedDialogue
 # 1286 "data/maps/Route110/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-# 1287 "data/maps/Route110/scripts.pory"
-	setflag FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE
+	goto_if_not_defeated TRAINER_JASMINE, Route110_EventScript_CyclingRoadUnfinishedDialogue
 # 1288 "data/maps/Route110/scripts.pory"
-	waitfanfare
+	msgbox Route110_EventScript_GiveCyclingRoadHeartScale_Text_0, MSGBOX_NPC
 # 1289 "data/maps/Route110/scripts.pory"
-	goto_if_set FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+	closemessage
 # 1290 "data/maps/Route110/scripts.pory"
-	goto_if_set FLAG_CR_REWARD_AVAILABLE_ANTHONY, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+	giveitem ITEM_HEART_SCALE
 # 1291 "data/maps/Route110/scripts.pory"
-	goto_if_set FLAG_CR_REWARD_AVAILABLE_BENJAMIN, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 1292 "data/maps/Route110/scripts.pory"
-	goto_if_set FLAG_CR_REWARD_AVAILABLE_ABIGAIL, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+	setflag FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE
 # 1293 "data/maps/Route110/scripts.pory"
-	goto_if_set FLAG_CR_REWARD_AVAILABLE_JASMINE, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+	waitfanfare
 # 1294 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+# 1295 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_CR_REWARD_AVAILABLE_ANTHONY, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+# 1296 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_CR_REWARD_AVAILABLE_BENJAMIN, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+# 1297 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_CR_REWARD_AVAILABLE_ABIGAIL, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+# 1298 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_CR_REWARD_AVAILABLE_JASMINE, Route110_EventScript_AlsoGiveIndividualTrainerRewards
+# 1299 "data/maps/Route110/scripts.pory"
 	releaseall
+	end
+
+Route110_EventScript_CheckCyclingRoadDoneDialogue_2:
+# 1278 "data/maps/Route110/scripts.pory"
+	msgbox Route110_EventScript_CheckCyclingRoadDoneDialogue_Text_0, MSGBOX_NPC
+# 1279 "data/maps/Route110/scripts.pory"
+	release
 	end
 
 
 Route110_EventScript_CyclingRoadUnfinishedDialogue::
-# 1299 "data/maps/Route110/scripts.pory"
-	lock
-# 1300 "data/maps/Route110/scripts.pory"
-	msgbox Route110_EventScript_CyclingRoadUnfinishedDialogue_Text_0, MSGBOX_NPC
-# 1301 "data/maps/Route110/scripts.pory"
-	closemessage
-# 1302 "data/maps/Route110/scripts.pory"
-	goto_if_set FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_GiveIndividualTrainerRewards
-# 1303 "data/maps/Route110/scripts.pory"
-	goto_if_set FLAG_CR_REWARD_AVAILABLE_ANTHONY, Route110_EventScript_GiveIndividualTrainerRewards
 # 1304 "data/maps/Route110/scripts.pory"
-	goto_if_set FLAG_CR_REWARD_AVAILABLE_BENJAMIN, Route110_EventScript_GiveIndividualTrainerRewards
+	lock
 # 1305 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_BADGE03_GET, Route110_EventScript_CyclingRoadUnfinishedDialogue_2
+# 1310 "data/maps/Route110/scripts.pory"
+	msgbox Route110_EventScript_CyclingRoadUnfinishedDialogue_Text_0, MSGBOX_NPC
+# 1311 "data/maps/Route110/scripts.pory"
+	closemessage
+# 1312 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_GiveIndividualTrainerRewards
+# 1313 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_CR_REWARD_AVAILABLE_ANTHONY, Route110_EventScript_GiveIndividualTrainerRewards
+# 1314 "data/maps/Route110/scripts.pory"
+	goto_if_set FLAG_CR_REWARD_AVAILABLE_BENJAMIN, Route110_EventScript_GiveIndividualTrainerRewards
+# 1315 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_ABIGAIL, Route110_EventScript_GiveIndividualTrainerRewards
-# 1306 "data/maps/Route110/scripts.pory"
+# 1316 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_JASMINE, Route110_EventScript_GiveIndividualTrainerRewards
+# 1317 "data/maps/Route110/scripts.pory"
+	release
+	end
+
+Route110_EventScript_CyclingRoadUnfinishedDialogue_2:
+# 1306 "data/maps/Route110/scripts.pory"
+	msgbox Route110_EventScript_CheckCyclingRoadDoneDialogue_Text_0, MSGBOX_NPC
 # 1307 "data/maps/Route110/scripts.pory"
 	release
 	end
 
 
 Route110_EventScript_CyclingRoadEntranceIntro::
-# 1312 "data/maps/Route110/scripts.pory"
+# 1322 "data/maps/Route110/scripts.pory"
 	goto_if_unset FLAG_TEMP_5, Route110_EventScript_CyclingRoadEntranceIntro_3
 Route110_EventScript_CyclingRoadEntranceIntro_1:
-# 1320 "data/maps/Route110/scripts.pory"
+# 1330 "data/maps/Route110/scripts.pory"
 	setflag FLAG_TEMP_5
 	return
 
 Route110_EventScript_CyclingRoadEntranceIntro_2:
-# 1313 "data/maps/Route110/scripts.pory"
+# 1323 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_CyclingRoadEntranceIntro_Text_0, MSGBOX_NPC
-# 1314 "data/maps/Route110/scripts.pory"
+# 1324 "data/maps/Route110/scripts.pory"
 	closemessage
-# 1315 "data/maps/Route110/scripts.pory"
+# 1325 "data/maps/Route110/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, Route110_EventScript_CyclingRoadEntranceIntro_7
 	goto Route110_EventScript_CyclingRoadEntranceIntro_1
 
 Route110_EventScript_CyclingRoadEntranceIntro_3:
-# 1312 "data/maps/Route110/scripts.pory"
+# 1322 "data/maps/Route110/scripts.pory"
 	goto_if_unset FLAG_SYS_CYCLING_ROAD, Route110_EventScript_CyclingRoadEntranceIntro_2
 	goto Route110_EventScript_CyclingRoadEntranceIntro_1
 
 Route110_EventScript_CyclingRoadEntranceIntro_6:
-# 1316 "data/maps/Route110/scripts.pory"
+# 1326 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_CyclingRoadEntranceIntro_Text_1, MSGBOX_NPC
-# 1317 "data/maps/Route110/scripts.pory"
+# 1327 "data/maps/Route110/scripts.pory"
 	closemessage
 	goto Route110_EventScript_CyclingRoadEntranceIntro_1
 
 Route110_EventScript_CyclingRoadEntranceIntro_7:
-# 1315 "data/maps/Route110/scripts.pory"
+# 1325 "data/maps/Route110/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_CYCLING_ROAD_HEART_SCALE, Route110_EventScript_CyclingRoadEntranceIntro_6
 	goto Route110_EventScript_CyclingRoadEntranceIntro_1
 
 
 Route110_EventScript_JacobSetFlag::
-# 1325 "data/maps/Route110/scripts.pory"
+# 1335 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_JACOB
-# 1326 "data/maps/Route110/scripts.pory"
+# 1336 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 
 Route110_EventScript_AnthonySetFlag::
-# 1331 "data/maps/Route110/scripts.pory"
+# 1341 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_ANTHONY
-# 1332 "data/maps/Route110/scripts.pory"
+# 1342 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 
 Route110_EventScript_BenjaminSetFlag::
-# 1337 "data/maps/Route110/scripts.pory"
+# 1347 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_BENJAMIN
-# 1338 "data/maps/Route110/scripts.pory"
+# 1348 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 
 Route110_EventScript_AbigailSetFlag::
-# 1343 "data/maps/Route110/scripts.pory"
+# 1353 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_ABIGAIL
-# 1344 "data/maps/Route110/scripts.pory"
+# 1354 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 
 Route110_EventScript_JasmineSetFlag::
-# 1349 "data/maps/Route110/scripts.pory"
+# 1359 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_JASMINE
-# 1350 "data/maps/Route110/scripts.pory"
+# 1360 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 
 Route110_EventScript_AlsoGiveIndividualTrainerRewards::
-# 1355 "data/maps/Route110/scripts.pory"
+# 1365 "data/maps/Route110/scripts.pory"
 	lock
-# 1356 "data/maps/Route110/scripts.pory"
+# 1366 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_AlsoGiveIndividualTrainerRewards_Text_0, MSGBOX_NPC
-# 1357 "data/maps/Route110/scripts.pory"
+# 1367 "data/maps/Route110/scripts.pory"
 	closemessage
-# 1358 "data/maps/Route110/scripts.pory"
+# 1368 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_AlsoGiveIndividualTrainerRewards_2
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_1:
-# 1364 "data/maps/Route110/scripts.pory"
+# 1374 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_ANTHONY, Route110_EventScript_AlsoGiveIndividualTrainerRewards_5
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_4:
-# 1370 "data/maps/Route110/scripts.pory"
+# 1380 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_BENJAMIN, Route110_EventScript_AlsoGiveIndividualTrainerRewards_8
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_7:
-# 1376 "data/maps/Route110/scripts.pory"
+# 1386 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_ABIGAIL, Route110_EventScript_AlsoGiveIndividualTrainerRewards_11
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_10:
-# 1382 "data/maps/Route110/scripts.pory"
+# 1392 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_JASMINE, Route110_EventScript_AlsoGiveIndividualTrainerRewards_14
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_13:
-# 1388 "data/maps/Route110/scripts.pory"
+# 1398 "data/maps/Route110/scripts.pory"
 	setvar VAR_TEMP_0, 1
-# 1389 "data/maps/Route110/scripts.pory"
+# 1399 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_2:
-# 1359 "data/maps/Route110/scripts.pory"
+# 1369 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_PP_MAX
-# 1360 "data/maps/Route110/scripts.pory"
+# 1370 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1361 "data/maps/Route110/scripts.pory"
+# 1371 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_JACOB
-# 1362 "data/maps/Route110/scripts.pory"
+# 1372 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_AlsoGiveIndividualTrainerRewards_1
 
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_5:
-# 1365 "data/maps/Route110/scripts.pory"
+# 1375 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_HP_UP
-# 1366 "data/maps/Route110/scripts.pory"
+# 1376 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1367 "data/maps/Route110/scripts.pory"
+# 1377 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_ANTHONY
-# 1368 "data/maps/Route110/scripts.pory"
+# 1378 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_AlsoGiveIndividualTrainerRewards_4
 
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_8:
-# 1371 "data/maps/Route110/scripts.pory"
+# 1381 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_CARBOS
-# 1372 "data/maps/Route110/scripts.pory"
+# 1382 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1373 "data/maps/Route110/scripts.pory"
+# 1383 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_BENJAMIN
-# 1374 "data/maps/Route110/scripts.pory"
+# 1384 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_AlsoGiveIndividualTrainerRewards_7
 
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_11:
-# 1377 "data/maps/Route110/scripts.pory"
+# 1387 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_IRON
-# 1378 "data/maps/Route110/scripts.pory"
+# 1388 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1379 "data/maps/Route110/scripts.pory"
+# 1389 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_ABIGAIL
-# 1380 "data/maps/Route110/scripts.pory"
+# 1390 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_AlsoGiveIndividualTrainerRewards_10
 
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_14:
-# 1383 "data/maps/Route110/scripts.pory"
+# 1393 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_ZINC
-# 1384 "data/maps/Route110/scripts.pory"
+# 1394 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1385 "data/maps/Route110/scripts.pory"
+# 1395 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_JASMINE
-# 1386 "data/maps/Route110/scripts.pory"
+# 1396 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_AlsoGiveIndividualTrainerRewards_13
 
 
 Route110_EventScript_GiveIndividualTrainerRewards::
-# 1395 "data/maps/Route110/scripts.pory"
+# 1405 "data/maps/Route110/scripts.pory"
 	lock
-# 1396 "data/maps/Route110/scripts.pory"
+# 1406 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_GiveIndividualTrainerRewards_Text_0, MSGBOX_NPC
-# 1397 "data/maps/Route110/scripts.pory"
+# 1407 "data/maps/Route110/scripts.pory"
 	closemessage
-# 1398 "data/maps/Route110/scripts.pory"
+# 1408 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_JACOB, Route110_EventScript_GiveIndividualTrainerRewards_2
 Route110_EventScript_GiveIndividualTrainerRewards_1:
-# 1404 "data/maps/Route110/scripts.pory"
+# 1414 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_ANTHONY, Route110_EventScript_GiveIndividualTrainerRewards_5
 Route110_EventScript_GiveIndividualTrainerRewards_4:
-# 1410 "data/maps/Route110/scripts.pory"
+# 1420 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_BENJAMIN, Route110_EventScript_GiveIndividualTrainerRewards_8
 Route110_EventScript_GiveIndividualTrainerRewards_7:
-# 1416 "data/maps/Route110/scripts.pory"
+# 1426 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_ABIGAIL, Route110_EventScript_GiveIndividualTrainerRewards_11
 Route110_EventScript_GiveIndividualTrainerRewards_10:
-# 1422 "data/maps/Route110/scripts.pory"
+# 1432 "data/maps/Route110/scripts.pory"
 	goto_if_set FLAG_CR_REWARD_AVAILABLE_JASMINE, Route110_EventScript_GiveIndividualTrainerRewards_14
 Route110_EventScript_GiveIndividualTrainerRewards_13:
-# 1428 "data/maps/Route110/scripts.pory"
+# 1438 "data/maps/Route110/scripts.pory"
 	setvar VAR_TEMP_0, 1
-# 1429 "data/maps/Route110/scripts.pory"
+# 1439 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
 Route110_EventScript_GiveIndividualTrainerRewards_2:
-# 1399 "data/maps/Route110/scripts.pory"
+# 1409 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_PP_MAX
-# 1400 "data/maps/Route110/scripts.pory"
+# 1410 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1401 "data/maps/Route110/scripts.pory"
+# 1411 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_JACOB
-# 1402 "data/maps/Route110/scripts.pory"
+# 1412 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_GiveIndividualTrainerRewards_1
 
 Route110_EventScript_GiveIndividualTrainerRewards_5:
-# 1405 "data/maps/Route110/scripts.pory"
+# 1415 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_HP_UP
-# 1406 "data/maps/Route110/scripts.pory"
+# 1416 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1407 "data/maps/Route110/scripts.pory"
+# 1417 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_ANTHONY
-# 1408 "data/maps/Route110/scripts.pory"
+# 1418 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_GiveIndividualTrainerRewards_4
 
 Route110_EventScript_GiveIndividualTrainerRewards_8:
-# 1411 "data/maps/Route110/scripts.pory"
+# 1421 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_CARBOS
-# 1412 "data/maps/Route110/scripts.pory"
+# 1422 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1413 "data/maps/Route110/scripts.pory"
+# 1423 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_BENJAMIN
-# 1414 "data/maps/Route110/scripts.pory"
+# 1424 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_GiveIndividualTrainerRewards_7
 
 Route110_EventScript_GiveIndividualTrainerRewards_11:
-# 1417 "data/maps/Route110/scripts.pory"
+# 1427 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_IRON
-# 1418 "data/maps/Route110/scripts.pory"
+# 1428 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1419 "data/maps/Route110/scripts.pory"
+# 1429 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_ABIGAIL
-# 1420 "data/maps/Route110/scripts.pory"
+# 1430 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_GiveIndividualTrainerRewards_10
 
 Route110_EventScript_GiveIndividualTrainerRewards_14:
-# 1423 "data/maps/Route110/scripts.pory"
+# 1433 "data/maps/Route110/scripts.pory"
 	giveitem ITEM_ZINC
-# 1424 "data/maps/Route110/scripts.pory"
+# 1434 "data/maps/Route110/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route110_EventScript_CyclingRoadComeBackForReward
-# 1425 "data/maps/Route110/scripts.pory"
+# 1435 "data/maps/Route110/scripts.pory"
 	setflag FLAG_CR_REWARD_AVAILABLE_JASMINE
-# 1426 "data/maps/Route110/scripts.pory"
+# 1436 "data/maps/Route110/scripts.pory"
 	waitfanfare
 	goto Route110_EventScript_GiveIndividualTrainerRewards_13
 
 
 Route110_EventScript_CyclingRoadComeBackForReward::
-# 1435 "data/maps/Route110/scripts.pory"
+# 1445 "data/maps/Route110/scripts.pory"
 	lock
-# 1436 "data/maps/Route110/scripts.pory"
+# 1446 "data/maps/Route110/scripts.pory"
 	msgbox Route110_EventScript_CyclingRoadComeBackForReward_Text_0, MSGBOX_NPC
-# 1437 "data/maps/Route110/scripts.pory"
+# 1447 "data/maps/Route110/scripts.pory"
 	closemessage
-# 1438 "data/maps/Route110/scripts.pory"
+# 1448 "data/maps/Route110/scripts.pory"
 	setvar VAR_TEMP_0, 1
-# 1439 "data/maps/Route110/scripts.pory"
+# 1449 "data/maps/Route110/scripts.pory"
 	releaseall
 	end
 
@@ -2747,15 +2765,20 @@ Route110_EventScript_ChallengeGuy_Text_1:
 	.string "another trainer win the Cycling Road\l"
 	.string "Challenge.$"
 
+Route110_EventScript_CheckCyclingRoadDoneDialogue_Text_0:
+# 1278 "data/maps/Route110/scripts.pory"
+	.string "Unfortunately, the Cycling Road\n"
+	.string "Challenge is no longer active.$"
+
 Route110_EventScript_CyclingRoadUnfinishedDialogue_Text_0:
-# 1300 "data/maps/Route110/scripts.pory"
+# 1310 "data/maps/Route110/scripts.pory"
 	.string "It looks like you haven't beaten all the\n"
 	.string "trainers on Cycling Road yet.\p"
 	.string "If you can beat them all in one trip,\n"
 	.string "you'll receive a special reward!$"
 
 Route110_EventScript_CyclingRoadEntranceIntro_Text_0:
-# 1313 "data/maps/Route110/scripts.pory"
+# 1323 "data/maps/Route110/scripts.pory"
 	.string "Welcome to Cycling Road!\n"
 	.string "We have two rules you need to be aware\l"
 	.string "of.\p"
@@ -2766,7 +2789,7 @@ Route110_EventScript_CyclingRoadEntranceIntro_Text_0:
 	.string "is unsafe.$"
 
 Route110_EventScript_CyclingRoadEntranceIntro_Text_1:
-# 1316 "data/maps/Route110/scripts.pory"
+# 1326 "data/maps/Route110/scripts.pory"
 	.string "Additionally, the Cycling Road\n"
 	.string "challenge is currently going on.\p"
 	.string "The first trainer to defeat all trainers\n"
@@ -2778,18 +2801,18 @@ Route110_EventScript_CyclingRoadEntranceIntro_Text_1:
 	.string "the prize.$"
 
 Route110_EventScript_AlsoGiveIndividualTrainerRewards_Text_0:
-# 1356 "data/maps/Route110/scripts.pory"
+# 1366 "data/maps/Route110/scripts.pory"
 	.string "Additionally, you get a reward for each\n"
 	.string "trainer you defeated.$"
 
 Route110_EventScript_GiveIndividualTrainerRewards_Text_0:
-# 1396 "data/maps/Route110/scripts.pory"
+# 1406 "data/maps/Route110/scripts.pory"
 	.string "However, you do receive some smaller\n"
 	.string "rewards for each trainer you've beaten\l"
 	.string "for the first time.$"
 
 Route110_EventScript_CyclingRoadComeBackForReward_Text_0:
-# 1436 "data/maps/Route110/scripts.pory"
+# 1446 "data/maps/Route110/scripts.pory"
 	.string "It seems you don't have enough room in\n"
 	.string "your bag.\p"
 	.string "Come back to receive your rewards once\n"
