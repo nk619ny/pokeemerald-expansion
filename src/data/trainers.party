@@ -103,7 +103,7 @@ Comments can be added as C comment blocks
 === TRAINER_NONE === /* Route */
 Name:
 Class: Pkmn Trainer 1
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -113,7 +113,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / T
 === TRAINER_SAWYER_1 === /* Mt. Chimney */ /* TO BE ADDED */
 Name: SAWYER
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -1235,7 +1235,7 @@ Adamant Nature
 === TRAINER_GRUNT_FARM_1 === 
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -1323,7 +1323,7 @@ Level: 19
 === TRAINER_GRUNT_SPACE_CENTER_1 === /* Mossdeep Space Center 1F */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -1370,7 +1370,7 @@ Tera Type: Grass
 === TRAINER_GRUNT_MT_PYRE_1 === /* Mt Pyre */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -2400,7 +2400,7 @@ IVs: 0 Atk
 === TRAINER_MAGMA_MULTI_GRUNT_FARM === /* Slateport Farm */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt F
+Pic: Magma Grunt F ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -3255,7 +3255,7 @@ Level: 55
 === TRAINER_MORRIS === /* Route 135 */
 Name: MORRIS
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -3720,7 +3720,7 @@ IVs: 0 Atk
 === TRAINER_RANDALL === /* Petalburg Gym */ /* Ambush */
 Name: RANDALL
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -4997,7 +4997,7 @@ Tera Type: Normal
 === TRAINER_HATTORI === /* Petalburg Woods */
 Name: HATTORI
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -5047,7 +5047,7 @@ IVs: 0 Atk
 === TRAINER_BRADLEY === /* Ice Cave */
 Name: BRADLEY
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -5443,7 +5443,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_SPACE_CENTER_2 === /* Route */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -6125,7 +6125,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_NEW_NINJA === /* to be added */
 Name: WINSTON
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -6417,7 +6417,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_MT_CHIMNEY_1 === /* Mt Chimney */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt F
+Pic: Magma Grunt F ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -6602,7 +6602,7 @@ Tera Type: Steel
 === TRAINER_ABE === /* Route 120 */
 Name: ABE
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -8101,7 +8101,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_COLE === /* Lavaridge Gym */
 Name: COLE
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -8148,7 +8148,7 @@ Tera Type: Fire
 === TRAINER_JEFF === /* Lavaridge Gym */
 Name: JEFF
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -8201,7 +8201,7 @@ EVs: 128 Atk / 128 Spe
 === TRAINER_AXLE === /* Lavaridge Gym */
 Name: AXLE
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -8306,7 +8306,7 @@ Brave Nature
 === TRAINER_KEEGAN === /* Lavaridge Gym */
 Name: KEEGAN
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -8358,7 +8358,7 @@ EVs: 252 Spe
 === TRAINER_BERNIE_1 === /* Route 114 */
 Name: BERNIE
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -8409,7 +8409,7 @@ IVs: 0 Atk
 === TRAINER_BERNIE_2 === /* Route */
 Name: BERNIE
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -8426,7 +8426,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_BERNIE_3 === /* Route */
 Name: BERNIE
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -8443,7 +8443,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_BERNIE_4 === /* Route */
 Name: BERNIE
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -8460,7 +8460,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_BERNIE_5 === /* Route */
 Name: BERNIE
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -8772,7 +8772,7 @@ Tera Type: Dragon
 === TRAINER_AUTUMN === /* Jagged Pass */ /* TO BE ADDED */
 Name: AUTUMN
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -11296,7 +11296,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_KATE_AND_JOY === /* Route 121 */ /* TO BE ADDED */
 Name: KATE & JOY
 Class: Sr And Jr
-Pic: Sr And Jr
+Pic: Teammates ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -11321,7 +11321,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ANNA_AND_MEG_1 === /* Route 117 */ 
 Name: ANNA & MEG
 Class: Sr And Jr
-Pic: Sr And Jr
+Pic: Teammates ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -11386,7 +11386,7 @@ EVs: 252 HP
 === TRAINER_CYNTHIA === /* Route */
 Name: CYNTHIA
 Class: Sr And Jr
-Pic: Sr And Jr
+Pic: Teammates ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -11410,7 +11410,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_RED === /* Route */
 Name: RED
 Class: Sr And Jr
-Pic: Sr And Jr
+Pic: Teammates ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -11434,7 +11434,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_GABE === /* Route 121 */
 Name: GABE
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -11561,7 +11561,7 @@ Level: 40
 === TRAINER_MIGUEL_1 === /* Route 103 East */ 
 Name: MIGUEL
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -11979,7 +11979,7 @@ IVs: 0 Atk
 === TRAINER_VICTORIA === /* Route 111 */ 
 Name: VICTORIA
 Class: Winstrate
-Pic: Pokefan F
+Pic: Pokefan F ORAS 80
 Gender: Female
 Music: Twins
 Double Battle: Yes
@@ -12022,7 +12022,7 @@ Level: 40
 === TRAINER_VANESSA === /* Route 121 */ /* TO BE ADDED */
 Name: VANESSA
 Class: Pokefan
-Pic: Pokefan F
+Pic: Pokefan F ORAS 80
 Gender: Female
 Music: Twins
 Double Battle: Yes
@@ -12035,7 +12035,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BETHANY === /* Sootopolis Gym */ /* TO BE ADDED */
 Name: BETHANY
 Class: Pokefan
-Pic: Pokefan F
+Pic: Pokefan F ORAS 80
 Gender: Female
 Music: Twins
 Double Battle: Yes
@@ -12056,7 +12056,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_ISABEL_1 === /* Route 110 */
 Name: ISABEL
 Class: Pokefan
-Pic: Pokefan F
+Pic: Pokefan F ORAS 80
 Gender: Female
 Music: Twins
 Double Battle: Yes
@@ -13113,7 +13113,7 @@ Level: 44
 === TRAINER_JOEY === /* Route 116 */ 
 Name: JOEY
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13781,7 +13781,7 @@ IVs: 0 Atk
 === TRAINER_ELLIOT_1 === /* Route 106 */
 Name: ELLIOT
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -15706,7 +15706,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_YASU === /* Route 119 */
 Name: YASU
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -15754,7 +15754,7 @@ Tera Type: Ground
 === TRAINER_TAKASHI === /* Route 119 */
 Name: TAKASHI
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -15872,7 +15872,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LAO_1 === /* Route 113 */
 Name: LAO
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -15922,7 +15922,7 @@ Tera Type: Dark
 === TRAINER_LUNG === /* Route 113 */
 Name: LUNG
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -15976,7 +15976,7 @@ EVs: 252 HP / 252 SpD
 === TRAINER_LAO_2 === /* Route 113 */
 Name: LAO
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -16013,7 +16013,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LAO_3 === /* Route */
 Name: LAO
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -16050,7 +16050,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_LAO_4 === /* Route */
 Name: LAO
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -16085,7 +16085,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_LAO_5 === /* Route */
 Name: LAO
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -16352,7 +16352,7 @@ IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 === TRAINER_MADELINE_1 === /* Route 113 */
 Name: MADELINE
 Class: Parasol Lady
-Pic: Parasol Lady
+Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -16419,7 +16419,7 @@ Tera Type: Psychic
 === TRAINER_CLARISSA === /* Route 120 */
 Name: CLARISSA
 Class: Parasol Lady
-Pic: Parasol Lady
+Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -16480,7 +16480,7 @@ IVs: 0 Atk
 === TRAINER_ANGELICA === /* Route 120 */
 Name: ANGELICA
 Class: Parasol Lady
-Pic: Parasol Lady
+Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -16527,7 +16527,7 @@ IVs: 0 Atk
 === TRAINER_MADELINE_2 === /* Route */
 Name: MADELINE
 Class: Parasol Lady
-Pic: Parasol Lady
+Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -16544,7 +16544,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_MADELINE_3 === /* Route */
 Name: MADELINE
 Class: Parasol Lady
-Pic: Parasol Lady
+Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -16561,7 +16561,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_MADELINE_4 === /* Route */
 Name: MADELINE
 Class: Parasol Lady
-Pic: Parasol Lady
+Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -16586,7 +16586,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_MADELINE_5 === /* Route */
 Name: MADELINE
 Class: Parasol Lady
-Pic: Parasol Lady
+Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -17382,7 +17382,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_HEIDI === /* Route 111 Desert */
 Name: HEIDI
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -17430,7 +17430,7 @@ IVs: 0 Atk
 === TRAINER_BECKY === /* Route 111 Desert */
 Name: BECKY
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -17477,7 +17477,7 @@ IVs: 0 Atk
 === TRAINER_CAROL === /* Route 112 */
 Name: CAROL
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -17603,7 +17603,7 @@ EVs: 252 HP
 === TRAINER_MARTHA === /* Trick House */ /* TO BE ADDED */
 Name: MARTHA
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -17719,7 +17719,7 @@ IVs: 0 Atk
 === TRAINER_IRENE === /* Route 111 South */
 Name: IRENE
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -17776,7 +17776,7 @@ Tera Type: Normal
 === TRAINER_DIANA_2 === /* Route */
 Name: DIANA
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -17797,7 +17797,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_DIANA_3 === /* Route */
 Name: DIANA
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -17818,7 +17818,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_DIANA_4 === /* Route */
 Name: DIANA
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -17839,7 +17839,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_DIANA_5 === /* Route */
 Name: DIANA
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -18452,7 +18452,7 @@ Level: 46
 === TRAINER_ANNIKA === /* Sootopolis Gym */ /* Remove? */
 Name: ANNIKA
 Class: Pokefan
-Pic: Pokefan F
+Pic: Pokefan F ORAS 80
 Gender: Female
 Music: Twins
 Double Battle: Yes
@@ -18490,7 +18490,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JONAS === /* Route 123 */
 Name: JONAS
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -18547,7 +18547,7 @@ IVs: 0 Atk
 === TRAINER_KAYLEY === /* Route 123 */
 Name: KAYLEY
 Class: Parasol Lady
-Pic: Parasol Lady
+Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -21425,7 +21425,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_MT_PYRE_4 === /* Mt Pyre */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt F
+Pic: Magma Grunt F ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -21474,7 +21474,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_JAGGED_PASS === /* Jagged Pass */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -21491,7 +21491,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_MARC === /* Rustboro Gym */
 Name: MARC
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -21816,7 +21816,7 @@ Tera Type: Ground
 === TRAINER_GRUNT_MT_CHIMNEY_2 === /* Route */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -22034,7 +22034,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_SPACE_CENTER_3 === /* Route */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt F
+Pic: Magma Grunt F ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -22081,7 +22081,7 @@ Impish Nature
 === TRAINER_GRUNT_SPACE_CENTER_4 === /* Route */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -22131,7 +22131,7 @@ Level: 70
 === TRAINER_GRUNT_SPACE_CENTER_5 === /* First of 3 back to back */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -22171,7 +22171,7 @@ Tera Type: Grass
 === TRAINER_GRUNT_SPACE_CENTER_6 === /* Mossdeep Space Center 2F */ 
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -22225,7 +22225,7 @@ Jolly Nature
 === TRAINER_GRUNT_SPACE_CENTER_7 === /* Mossdeep Space Center 2F */ 
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -22976,7 +22976,7 @@ IVs: 0 Atk
 === TRAINER_TIANA === /* Route 102 */
 Name: TIANA
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23022,7 +23022,7 @@ Tera Type: Dark
 === TRAINER_HALEY_1 === /* Route 104 North */
 Name: HALEY
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23120,7 +23120,7 @@ Tera Type: Fire
 === TRAINER_VIVI === /* Route 111 */ /* TO BE ADDED */
 Name: VIVI
 Class: Winstrate
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23155,7 +23155,7 @@ IVs: 0 Atk
 === TRAINER_HALEY_2 === /* Route */
 Name: HALEY
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23172,7 +23172,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_HALEY_3 === /* Route */
 Name: HALEY
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23189,7 +23189,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_HALEY_4 === /* Route */
 Name: HALEY
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23206,7 +23206,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_HALEY_5 === /* Route */
 Name: HALEY
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23227,7 +23227,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_SALLY === /* Trick House 1 */ 
 Name: SALLY
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23276,7 +23276,7 @@ Jolly Nature
 === TRAINER_ROBIN === /* Trick House 1 */ 
 Name: ROBIN
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23327,7 +23327,7 @@ EVs: 252 HP / 252 Spe
 === TRAINER_ANDREA === /* Sootopolis Gym */
 Name: ANDREA
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23380,7 +23380,7 @@ IVs: 0 Atk
 === TRAINER_CRISSY === /* Sootopolis Gym */ /* maybe remove ? */
 Name: CRISSY
 Class: Lass
-Pic: Lass
+Pic: Lass ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -23846,7 +23846,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_BRICE === /* Route 112 */
 Name: BRICE
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -23893,7 +23893,7 @@ Serious Nature
 === TRAINER_TRENT_1 === /* Route 112 */
 Name: TRENT
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -23988,7 +23988,7 @@ IVs: 0 Atk
 === TRAINER_LUCAS_1 === /* Route 114 */ 
 Name: LUCAS
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24035,7 +24035,7 @@ Level: 45
 === TRAINER_ALAN === /* Trick House */ /* TO BE ADDED */
 Name: ALAN
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24056,7 +24056,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CLARK === /* Route 116 */ /* TO BE ADDED */
 Name: CLARK
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24069,7 +24069,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ERIC === /* Jagged Pass */ 
 Name: ERIC
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24119,7 +24119,7 @@ EVs: 252 SpD
 === TRAINER_LUCAS_2 === /* Route */
 Name: LUCAS
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24134,7 +24134,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_MIKE_1 === /* Rusturf Tunnel */
 Name: MIKE
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24180,7 +24180,7 @@ Tera Type: Rock
 === TRAINER_MIKE_2 === /* Route */
 Name: MIKE
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24201,7 +24201,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TRENT_2 === /* Route */
 Name: TRENT
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24226,7 +24226,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_TRENT_3 === /* Route */
 Name: TRENT
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24251,7 +24251,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_TRENT_4 === /* Route */
 Name: TRENT
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24276,7 +24276,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_TRENT_5 === /* Route */
 Name: TRENT
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24702,7 +24702,7 @@ Jolly Nature
 === TRAINER_HIDEO === /* Route 119 */
 Name: HIDEO
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -24756,7 +24756,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_KEIGO === /* Route 120 */
 Name: KEIGO
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -24804,7 +24804,7 @@ Tera Type: Grass
 === TRAINER_RILEY === /* Route 120 */
 Name: RILEY
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -24869,7 +24869,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 === TRAINER_ASHLEY === /* Fortree Gym */
 Name: ASHLEY
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -26052,7 +26052,7 @@ IVs: 0 Atk
 === TRAINER_KIM_AND_IRIS === /* Route 125 */ /* Shoal Cave Entrance */ /* TO BE ADDED */
 Name: KIM & IRIS
 Class: Sr And Jr
-Pic: Sr And Jr
+Pic: Teammates ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -26077,7 +26077,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TYRA_AND_IVY === /* Route 114 */ /* TO BE ADDED */
 Name: TYRA & IVY
 Class: Sr And Jr
-Pic: Sr And Jr
+Pic: Teammates ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -27050,7 +27050,7 @@ IVs: 0 Atk
 === TRAINER_BIANCA === /* Route 111 South */
 Name: BIANCA
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -27101,7 +27101,7 @@ Tera Type: Normal
 === TRAINER_HAYDEN === /* Route 111 South */
 Name: HAYDEN
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -27153,7 +27153,7 @@ IVs: 0 Atk
 === TRAINER_SOPHIE === /* Route 113 */
 Name: SOPHIE
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -27355,7 +27355,7 @@ Level: 45
 === TRAINER_ANGELINA === /* Route 114 */ 
 Name: ANGELINA
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -27450,7 +27450,7 @@ Tera Type: Normal
 === TRAINER_CHARLOTTE === /* Route 114 */ 
 Name: CHARLOTTE
 Class: Pokefan
-Pic: Pokefan F
+Pic: Pokefan F ORAS 80
 Gender: Female
 Music: Twins
 Double Battle: Yes
@@ -27556,7 +27556,7 @@ Tera Type: Electric
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 === /* Magma Hideout */ /* optional */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27569,7 +27569,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 === /* Magma Hideout */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27623,7 +27623,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_MAGMA_HIDEOUT_3 === /* Magma Hideout */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27680,7 +27680,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 === /* Route */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27736,7 +27736,7 @@ EVs: 128 HP / 252 SpA / 128 Spe
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 === /* Magma Hideout */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27798,7 +27798,7 @@ Tera Type: Grass
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 === /* Magma Hideout */ /* redundant optional */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27811,7 +27811,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 === /* Magma Hideout */ /* optional */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27852,7 +27852,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 === /* Magma Hideout */ /* redundant optional */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27865,7 +27865,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27918,7 +27918,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 === /* Magma Hideout */ /* TO BE ADDED */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27932,7 +27932,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -27984,7 +27984,7 @@ Adamant Nature
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -28036,7 +28036,7 @@ Tera Type: Grass
 === TRAINER_GRUNT_MAGMA_HIDEOUT_13 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -28077,7 +28077,7 @@ Tera Type: Ghost
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 === /* Magma Hideout */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt F
+Pic: Magma Grunt F ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -28132,7 +28132,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 === /* Magma Hideout */ /* optional */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt F
+Pic: Magma Grunt F ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -28145,7 +28145,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 === /* Magma Hideout */ /* LAVA ROOM */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt F
+Pic: Magma Grunt F ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -28571,7 +28571,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CELIA === /* Route 111 Desert */ /* TO BE ADDED */ /*maybe remove */
 Name: CELIA
 Class: Picnicker
-Pic: Picnicker
+Pic: Picnicker ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -28675,7 +28675,7 @@ IVs: 0 Atk
 === TRAINER_BRYANT === /* Route 112 */
 Name: BRYANT
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -28821,7 +28821,7 @@ Tera Type: Normal
 === TRAINER_JAIDEN === /* Route 115 */
 Name: JAIDEN
 Class: Ninja Boy
-Pic: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -29016,7 +29016,7 @@ IVs: 0 Atk
 === TRAINER_DEVAN === /* Route 116 */
 Name: DEVAN
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -29331,7 +29331,7 @@ IVs: 0 Atk
 === TRAINER_DAYTON === /* Route 119 */
 Name: DAYTON
 Class: Kindler
-Pic: Kindler
+Pic: Kindler ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -29379,7 +29379,7 @@ Tera Type: Flying
 === TRAINER_RACHEL === /* Route 119 */
 Name: RACHEL
 Class: Parasol Lady
-Pic: Parasol Lady
+Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -32086,7 +32086,7 @@ Adamant Nature
 === TRAINER_GRUNT_GLACIER_1 === /* Route */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt M
+Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -32134,7 +32134,7 @@ Tera Type: Fire
 === TRAINER_GRUNT_GLACIER_2 === /* Route */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt F
+Pic: Magma Grunt F ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -32183,7 +32183,7 @@ IVs: 0 Atk
 === TRAINER_GRUNT_GLACIER_3 === /* Route */
 Name: GRUNT
 Class: Team Magma
-Pic: Magma Grunt F
+Pic: Magma Grunt F ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -32961,7 +32961,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_SAWYER_2 === /* Mt Chimney */ /* TO BE ADDED */
 Name: SAWYER
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -32978,7 +32978,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_SAWYER_3 === /* Route */
 Name: SAWYER
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -32999,7 +32999,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_SAWYER_4 === /* Route */
 Name: SAWYER
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -33020,7 +33020,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_SAWYER_5 === /* Route */
 Name: SAWYER
 Class: Hiker
-Pic: Hiker
+Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes

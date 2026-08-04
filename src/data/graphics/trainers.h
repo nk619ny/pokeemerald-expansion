@@ -433,6 +433,36 @@ const u16 gTrainerPalette_TateAndLizaORAS80[] = INCGFX_U16("graphics/trainers/fr
 const u32 gTrainerFrontPic_WinonaORAS80[] = INCGFX_U32("graphics/trainers/front_pics/winona-oras-80.png", ".4bpp.smol");
 const u16 gTrainerPalette_WinonaORAS80[] = INCGFX_U16("graphics/trainers/front_pics/winona-oras-80.png", ".gbapal");
 
+const u32 gTrainerFrontPic_HikerORAS80[] = INCGFX_U32("graphics/trainers/front_pics/hiker-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_HikerORAS80[] = INCGFX_U16("graphics/trainers/front_pics/hiker-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_TeammatesORAS80[] = INCGFX_U32("graphics/trainers/front_pics/teammates-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_TeammatesORAS80[] = INCGFX_U16("graphics/trainers/front_pics/teammates-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_KindlerORAS80[] = INCGFX_U32("graphics/trainers/front_pics/kindler-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_KindlerORAS80[] = INCGFX_U16("graphics/trainers/front_pics/kindler-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_LassORAS80[] = INCGFX_U32("graphics/trainers/front_pics/lass-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_LassORAS80[] = INCGFX_U16("graphics/trainers/front_pics/lass-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_MagmaGruntMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/magma-grunt-m-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_MagmaGruntMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/magma-grunt-m-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_MagmaGruntFORAS80[] = INCGFX_U32("graphics/trainers/front_pics/magma-grunt-f-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_MagmaGruntFORAS80[] = INCGFX_U16("graphics/trainers/front_pics/magma-grunt-f-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_NinjaBoyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/ninja-boy-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_NinjaBoyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/ninja-boy-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_ParasolLadyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/parasol-lady-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_ParasolLadyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/parasol-lady-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PicnickerORAS80[] = INCGFX_U32("graphics/trainers/front_pics/picnicker-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PicnickerORAS80[] = INCGFX_U16("graphics/trainers/front_pics/picnicker-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PokefanFORAS80[] = INCGFX_U32("graphics/trainers/front_pics/pokefan-f-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PokefanFORAS80[] = INCGFX_U16("graphics/trainers/front_pics/pokefan-f-oras-80.png", ".gbapal");
+
 const u32 gTrainerFrontPic_YoungsterFrlg[] = INCGFX_U32("graphics/trainers/front_pics/youngster_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_YoungsterFrlg[] = INCGFX_U16("graphics/trainers/palettes/youngster_frlg.pal", ".gbapal");
 
@@ -1556,6 +1586,46 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_WINONA_ORAS_80] =
     {
         .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_WinonaORAS80, gTrainerPalette_WinonaORAS80),
+    },
+    [TRAINER_PIC_HIKER_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_HikerORAS80, gTrainerPalette_HikerORAS80),
+    },
+    [TRAINER_PIC_TEAMMATES_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_TeammatesORAS80, gTrainerPalette_TeammatesORAS80),
+    },
+    [TRAINER_PIC_KINDLER_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_KindlerORAS80, gTrainerPalette_KindlerORAS80),
+    },
+    [TRAINER_PIC_LASS_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_LassORAS80, gTrainerPalette_LassORAS80),
+    },
+    [TRAINER_PIC_MAGMA_GRUNT_M_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_MagmaGruntMORAS80, gTrainerPalette_MagmaGruntMORAS80),
+    },
+    [TRAINER_PIC_MAGMA_GRUNT_F_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_MagmaGruntFORAS80, gTrainerPalette_MagmaGruntFORAS80),
+    },
+    [TRAINER_PIC_NINJA_BOY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_NinjaBoyORAS80, gTrainerPalette_NinjaBoyORAS80),
+    },
+    [TRAINER_PIC_PARASOL_LADY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_ParasolLadyORAS80, gTrainerPalette_ParasolLadyORAS80),
+    },
+    [TRAINER_PIC_PICNICKER_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PicnickerORAS80, gTrainerPalette_PicnickerORAS80),
+    },
+    [TRAINER_PIC_POKEFAN_F_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PokefanFORAS80, gTrainerPalette_PokefanFORAS80),
     },
 
     [TRAINER_PIC_PROFESSOR_TURO] =
