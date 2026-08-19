@@ -893,7 +893,7 @@ Route109_EventScript_LolaRematch::
 # 447 "data/maps/Route109/scripts.pory"
 Route109_EventScript_Austina::
 # 448 "data/maps/Route109/scripts.pory"
-	trainerbattle_single TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated
+	trainerbattle_single TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated, Route109_EventScript_SetBothSistersDefeated
 # 449 "data/maps/Route109/scripts.pory"
 	msgbox Route109_Text_AustinaPostBattle, MSGBOX_AUTOCLOSE
 # 450 "data/maps/Route109/scripts.pory"
@@ -903,7 +903,7 @@ Route109_EventScript_Austina::
 # 452 "data/maps/Route109/scripts.pory"
 Route109_EventScript_Gwen::
 # 453 "data/maps/Route109/scripts.pory"
-	trainerbattle_single TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated
+	trainerbattle_single TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated, Route109_EventScript_SetBothSistersDefeated
 # 454 "data/maps/Route109/scripts.pory"
 	msgbox Route109_Text_GwenPostBattle, MSGBOX_AUTOCLOSE
 # 455 "data/maps/Route109/scripts.pory"
@@ -1197,6 +1197,18 @@ Route109_EventScript_AirSlashKeeper_2:
 # 616 "data/maps/Route109/scripts.pory"
 	waitfanfare
 	goto Route109_EventScript_AirSlashKeeper_1
+
+
+Route109_EventScript_SetBothSistersDefeated::
+# 624 "data/maps/Route109/scripts.pory"
+	lockall
+# 625 "data/maps/Route109/scripts.pory"
+	settrainerflag TRAINER_GWEN
+# 626 "data/maps/Route109/scripts.pory"
+	settrainerflag TRAINER_AUSTINA
+# 627 "data/maps/Route109/scripts.pory"
+	releaseall
+	return
 
 
 Route109_EventScript_ChillingWater_Text_0:

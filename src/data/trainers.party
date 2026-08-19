@@ -523,38 +523,51 @@ IVs: 0 Atk
 - Hyper Voice  
 */
 
-=== TRAINER_GABRIELLE_1 === /* Mt. Pyre 3F */ /* TO BE ADDED */
+=== TRAINER_GABRIELLE_1 === /* Mt. Pyre 3F */
 Name: GABRIELLE
-Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Class: Fairy Tale Girl
+Pic: Fairy Tale Girl ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skitty
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Grimmsnarl (M)  
+Ability: Prankster  
+Level: 63
+- Fake Tears  
+- Scary Face  
+- False Surrender  
+- Spirit Break  
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rapidash-Galar  
+Ability: Telepathy  
+Level: 63
+EVs: 56 Def / 252 SpA / 200 Spe  
+Hasty Nature  
+- Dazzling Gleam  
+- Future Sight  
+- Heal Pulse  
+- High Horsepower  
 
-Zigzagoon
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Clefable  
+Ability: Cute Charm  
+Level: 63
+IVs: 0 Atk  
+- Psychic  
+- Ice Beam  
+- Thunderbolt  
+- Shadow Ball  
 
-Lotad
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Musharna  
+Ability: Synchronize  
+Level: 63
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Energy Ball  
+- Ally Switch  
+- Psychic  
 
-Seedot
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Taillow
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_PETALBURG_WOODS === /* Petalburg Woods */
 Name: GRUNT
@@ -1407,7 +1420,7 @@ IVs: 0 Atk
 
 Chandelure  
 Level: 60
-Ability: Flash Fire  
+Ability: Shadow Tag
 Tera Type: Ghost  
 IVs: 0 Atk  
 - Lava Plume  
@@ -3016,7 +3029,7 @@ EVs: 252 HP / 252 SpD
 - Rock Smash  
 
 Wormadam-Sandy (F)  
-Level: 19
+Level: 18
 Ability: Shed Skin
 Tera Type: Bug  
 - Bulldoze  
@@ -3026,7 +3039,7 @@ Tera Type: Bug
 
 
 
-=== TRAINER_AUSTINA === /* Route 109 */ /* TO BE ADDED */
+=== TRAINER_AUSTINA === /* Route 109 */
 Name: AUSTINA
 Class: Tuber F
 Pic: Tuber F
@@ -3035,11 +3048,45 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sealeo  @ Sitrus Berry
+Ability: Thick Fat  
+Level: 60
+- Body Slam  
+- Aqua Tail  
+- Encore  
+- Belly Drum  
 
-=== TRAINER_GWEN === /* Route 109 */ /* TO BE ADDED */
+
+Wartortle  
+Ability: Torrent  
+Level: 60
+- Ice Spinner  
+- Flip Turn  
+- Fake Out  
+- Aqua Jet  
+
+
+Lombre  
+Ability: Swift Swim  
+Level: 60
+- Encore  
+- Fire Punch  
+- Waterfall  
+- Seed Bomb  
+
+
+Lickitung @ Expert Belt  
+Ability: Cloud Nine  
+Level: 60
+IVs: 0 Atk  
+- Body Press  
+- Shadow Ball  
+- Flamethrower  
+- Thunderbolt  
+
+
+
+=== TRAINER_GWEN === /* Route 109 */
 Name: GWEN
 Class: Tuber F
 Pic: Tuber F
@@ -3048,9 +3095,42 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sealeo  @ Sitrus Berry
+Ability: Thick Fat  
+Level: 60
+- Body Slam  
+- Aqua Tail  
+- Encore  
+- Belly Drum  
+
+
+Wartortle  
+Ability: Torrent  
+Level: 60
+- Ice Spinner  
+- Flip Turn  
+- Fake Out  
+- Aqua Jet  
+
+
+Lombre  
+Ability: Swift Swim  
+Level: 60
+- Encore  
+- Fire Punch  
+- Waterfall  
+- Seed Bomb  
+
+
+Lickitung @ Expert Belt  
+Ability: Cloud Nine  
+Level: 60
+IVs: 0 Atk  
+- Body Press  
+- Shadow Ball  
+- Flamethrower  
+- Thunderbolt  
+
 
 === TRAINER_ARCHIE_MT_PYRE === /* Mt. Pyre Summit */
 Name: ARCHIE
@@ -3079,7 +3159,7 @@ Ability: Torrent
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
-- Sparkling Aria  
+- Surf 
 - Misty Explosion  
 - Boomburst  
 - Protect  
@@ -3386,7 +3466,7 @@ Tera Type: Water
 - Fury Cutter  
 
 
-=== TRAINER_CHARLIE === /* Abandoned Ship */ /* TO BE ADDED */
+=== TRAINER_CHARLIE === /* Abandoned Ship */ 
 Name: CHARLIE
 Class: Tuber M
 Pic: Tuber M
@@ -3395,9 +3475,44 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Politoed @ Sitrus Berry
+Ability: Drizzle 
+EVs: 252 Spe
+Jolly Nature
+Level: 50
+- Bounce  
+- Belly Drum  
+- Helping Hand  
+- Waterfall  
+
+Phione  
+Ability: Hydration  
+Level: 51
+IVs: 0 Atk  
+- Baton Pass  
+- Take Heart  
+- Acid Armor  
+- Dazzling Gleam  
+
+
+Ludicolo  
+Ability: Swift Swim 
+Level: 50
+IVs: 0 Atk  
+- Encore  
+- Ice Beam  
+- Giga Drain  
+- Protect  
+
+
+Wailord @ Power Herb  
+Ability: Water Veil  
+Level: 50
+- Bounce  
+- Dive  
+- Heavy Slam  
+- Self-Destruct  
+
 
 === TRAINER_TURO_1 === /* Mossdeep Space Center 2F */
 Name: TURO
@@ -5159,7 +5274,7 @@ IVs: 0 Atk
 - Hidden Power
 
 
-=== TRAINER_TAMMY === /* Route 121 */ /* TO BE ADDED */
+=== TRAINER_TAMMY === /* Route 121 */ 
 Name: TAMMY
 Class: Hex Maniac
 Pic: Hex Maniac ORAS 80
@@ -5168,13 +5283,47 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Duskull
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Jynx (F) @ Big Root
+Ability: Dry Skin  
+Level: 60
+Tera Type: Ice  
+IVs: 0 Atk  
+- Draining Kiss  
+- Ice Beam  
+- Lovely Kiss  
+- Hex  
 
-Shuppet
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Umbreon  
+Ability: Synchronize  
+Level: 60
+Tera Type: Dark  
+IVs: 0 Atk  
+- Moongeist Beam  
+- Moonblast  
+- Moonlight  
+- Toxic  
+
+Dusknoir  
+Ability: Levitate  
+Level: 60
+Tera Type: Ghost  
+- Darkest Lariat  
+- Leech Life  
+- Power-Up Punch  
+- Shadow Sneak  
+
+Banette @ Sticky Barb
+Ability: Insomnia  
+Level: 60
+Happiness: 0  
+Tera Type: Ghost  
+- Poltergeist  
+- Frustration  
+- Taunt  
+- Shadow Sneak  
+
+
+
 
 === TRAINER_VALERIE_1 === /* Mt Pyre */
 Name: VALERIE
@@ -5645,7 +5794,7 @@ IVs: 0 Atk
 
 
 Butterfree  
-Level: 40
+Level: 39
 Ability: Tinted Lens  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -5704,7 +5853,7 @@ Tera Type: Fairy
 - Morning Sun  
 - Draining Kiss  
 
-Floette (F) @ Persim Berry  
+Floette-Red (F) @ Persim Berry  
 Level: 42
 Ability: Flower Veil  
 Tera Type: Fairy  
@@ -8769,7 +8918,7 @@ Tera Type: Dragon
 - Glare  
 
 
-=== TRAINER_AUTUMN === /* Jagged Pass */ /* TO BE ADDED */
+=== TRAINER_AUTUMN === /* Jagged Pass */ 
 Name: AUTUMN
 Class: Picnicker
 Pic: Picnicker ORAS 80
@@ -8778,9 +8927,42 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Shroomish
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rampardos  
+Ability: Mold Breaker  
+Tera Type: Rock  
+Level: 38
+EVs: 252 SpD  
+- Rock Climb  
+- Stomping Tantrum  
+- Trailblaze  
+- Supercell Slam  
+
+Scrafty @ Roseli Berry  
+Ability: Shed Skin  
+Tera Type: Dark  
+Level: 38
+- Rock Climb  
+- Drain Punch  
+- Knock Off  
+- Fake Out  
+
+Pupitar @ Enigma Berry  
+Ability: Shed Skin  
+Level: 41
+- Rock Climb  
+- High Horsepower  
+- Rock Polish  
+- Outrage
+
+Galvantula  
+Ability: Compound Eyes  
+EVs: 252 HP / 252 Spe  
+Level: 37
+Hasty Nature  
+- Thunder  
+- Rock Climb  
+- String Shot  
+- Silk Trap
 
 === TRAINER_TRAVIS === /* Route 111 South */
 Name: TRAVIS
@@ -15044,7 +15226,7 @@ Starmie
 Level: 48
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_NICOLAS_1 === /* Meteor Falls */ /* TO BE ADDED */
+=== TRAINER_NICOLAS_1 === /* Meteor Falls */ 
 Name: NICOLAS
 Class: Dragon Tamer
 Pic: Dragon Tamer ORAS 80
@@ -15053,13 +15235,43 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Altaria
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Shelgon @ Roseli Berry
+Ability: Overcoat  
+Level: 55
+Tera Type: Dragon  
+- Dragon Claw  
+- Iron Defense  
+- Rock Slide  
+- Rock Smash  
 
-Altaria
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Arctibax  
+Ability: Thermal Exchange  
+Tera Type: Dragon  
+Level: 55
+- Ice Fang  
+- Dragon Claw  
+- Swords Dance  
+- Scary Face  
+
+Sliggoo-Hisui
+Ability: Gooey  
+Level: 55
+Tera Type: Steel  
+- Shelter  
+- Heavy Slam  
+- Counter  
+- Muddy Water  
+
+Sandaconda @ Loaded Dice  
+Ability: Shed Skin  
+Level: 48
+Tera Type: Ground  
+- Glare  
+- Dragon Rush  
+- Scale Shot  
+- Drill Run  
+
+
 
 === TRAINER_NICOLAS_2 === /* Route */
 Name: NICOLAS
@@ -15856,7 +16068,7 @@ IVs: 0 Atk / 0 Spe
 
 
 
-=== TRAINER_JANI === /* Abandoned Ship */ /* TO BE ADDED */
+=== TRAINER_JANI === /* Abandoned Ship */ 
 Name: JANI
 Class: Tuber F
 Pic: Tuber F
@@ -15865,9 +16077,47 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Marill
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+Masquerain @ Charti Berry  
+Ability: Water Bubble  
+Level: 50
+IVs: 0 Atk  
+- Air Slash  
+- Hydro Pump  
+- Sticky Web  
+- Signal Beam  
+
+
+Brionne @ Iapapa Berry
+Ability: Torrent  
+EVs: 252 HP / 128 Def / 128 SpD
+Level: 60
+IVs: 0 Atk  
+- Perish Song
+- Sparkling Aria  
+- Encore  
+- Life Dew
+
+Chansey (F) @ Focus Sash  
+Ability: Healer  
+EVs: 252 Atk / 252 Def  
+Level: 50
+Careful Nature  
+- Rollout  
+- Counter  
+- Chilling Water  
+- Reflect  
+
+Dewgong  
+Ability: Hydration  
+Level: 50
+- Aqua Tail  
+- Ice Shard  
+- Drill Run  
+- Fake Out  
+
+
 
 === TRAINER_LAO_1 === /* Route 113 */
 Name: LAO
@@ -23117,7 +23367,7 @@ Tera Type: Fire
 - Captivate  
 
 
-=== TRAINER_VIVI === /* Route 111 */ /* TO BE ADDED */
+=== TRAINER_VIVI === /* Route 111 */
 Name: VIVI
 Class: Winstrate
 Pic: Lass ORAS 80
@@ -26271,7 +26521,7 @@ IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Rest
 - Belly Drum
 
-=== TRAINER_RELI_AND_IAN === /* Route 131 */ /* TO BE ADDED */
+=== TRAINER_RELI_AND_IAN === /* Route 131 */ 
 Name: RELI & IAN
 Class: Sis And Bro
 Pic: Sis And Bro
@@ -26280,13 +26530,43 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Azumarill
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dondozo (M) @ Chesto Berry
+Ability: Water Veil  
+Level: 75
+- Rest  
+- Wave Crash  
+- Order Up  
+- Sleep Talk  
 
-Wingull
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tatsugiri-Stretchy (F)
+Ability: Commander  
+Level: 75
+IVs: 0 Atk  
+- Icy Wind  
+- Hydro Pump  
+- Nasty Plot  
+- Helping Hand  
+
+Cetitan (M) @ Sitrus Berry  
+Ability: Thick Fat  
+Level: 75
+- Avalanche  
+- Ice Shard  
+- Play Rough  
+- Belly Drum  
+
+Goodra-Hisui (F)
+Ability: Gooey  
+Level: 74
+Tera Type: Steel  
+EVs: 252 HP  
+Careful Nature  
+- Iron Head  
+- Acid Armor  
+- Aqua Tail  
+- Dragon Tail  
+
+
 
 === TRAINER_LILA_AND_ROY_1 === /* Route 124 */ /* Dive Optional Item Post Dive */
 Name: LILA & ROY

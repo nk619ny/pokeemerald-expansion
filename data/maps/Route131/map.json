@@ -3,7 +3,6 @@
   "name": "Route131",
   "layout": "LAYOUT_ROUTE131",
   "music": "MUS_ROUTE119",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_131",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -80,26 +79,26 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 9,
-      "y": 16,
+      "x": 3,
+      "y": 13,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route131_EventScript_Reli",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TUBER_M_SWIMMING",
-      "x": 8,
-      "y": 16,
+      "x": 2,
+      "y": 13,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route131_EventScript_Ian",
       "flag": "0"
@@ -129,6 +128,19 @@
       "trainer_sight_or_berry_tree_id": "7",
       "script": "Route131_EventScript_Talia",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
+      "x": 2,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ZINC",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_131_ZINC"
     }
   ],
   "warp_events": [
@@ -141,5 +153,6 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

@@ -445,12 +445,12 @@ Route109_EventScript_LolaRematch::
 	end
 
 Route109_EventScript_Austina::
-	trainerbattle_single TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated
+	trainerbattle_single TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated, Route109_EventScript_SetBothSistersDefeated
 	msgbox Route109_Text_AustinaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route109_EventScript_Gwen::
-	trainerbattle_single TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated
+	trainerbattle_single TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated, Route109_EventScript_SetBothSistersDefeated
 	msgbox Route109_Text_GwenPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -618,4 +618,11 @@ script Route109_EventScript_AirSlashKeeper {
 		msgbox(format("I'm not much of a swimmer.\pBut with my Bird Pokémon, I can hop from island to island through the skies!"), MSGBOX_NPC)
 	releaseall
 	end
+}
+
+script Route109_EventScript_SetBothSistersDefeated {
+	lockall
+	settrainerflag(TRAINER_GWEN)
+	settrainerflag(TRAINER_AUSTINA)
+	releaseall
 }

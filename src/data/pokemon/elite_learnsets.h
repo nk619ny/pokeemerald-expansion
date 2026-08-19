@@ -2216,6 +2216,7 @@ static const u16 sExeggutorEliteLearnset[] = {
 #if P_ALOLAN_FORMS
 static const u16 sExeggutorAlolaEliteLearnset[] = {
     MOVE_CHLOROBLAST,
+    MOVE_FICKLE_BEAM,
     MOVE_ANCIENT_POWER,
     MOVE_REFRESH,
     MOVE_TELEPORT,
@@ -8517,6 +8518,7 @@ static const u16 sHeatmorEliteLearnset[] = {
 
 #if P_FAMILY_DEINO
 static const u16 sHydreigonEliteLearnset[] = {
+    MOVE_FICKLE_BEAM,
     MOVE_AURA_SPHERE,
     MOVE_AQUA_TAIL,
     MOVE_BEAT_UP,
@@ -8525,6 +8527,16 @@ static const u16 sHydreigonEliteLearnset[] = {
     MOVE_DRAGON_RAGE,
     MOVE_SCREECH,
     //MOVE_SIGNAL_BEAM,
+    MOVE_TOXIC,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sZweilousEliteLearnset[] = {
+    MOVE_AQUA_TAIL,
+    MOVE_BEAT_UP,
+    MOVE_CONFIDE,
+    MOVE_DRAGON_RAGE,
+    MOVE_SCREECH,
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
@@ -11534,6 +11546,7 @@ static const u16 sTyranitarEliteLearnset[] = {
 #if P_FAMILY_ROGGENROLA
 static const u16 sGigalithEliteLearnset[] = {
     MOVE_SANDSEAR_STORM,
+    MOVE_DIAMOND_STORM,
     MOVE_BLOCK,
     MOVE_CONFIDE,
     MOVE_LASER_FOCUS,
@@ -12714,18 +12727,6 @@ static const u16 sMienshaoEliteLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MIENFOO
-
-#if P_FAMILY_DEINO
-static const u16 sZweilousEliteLearnset[] = {
-    MOVE_AQUA_TAIL,
-    MOVE_BEAT_UP,
-    MOVE_CONFIDE,
-    MOVE_DRAGON_RAGE,
-    MOVE_SCREECH,
-    MOVE_TOXIC,
-    MOVE_UNAVAILABLE,
-};
-#endif //P_FAMILY_DEINO
 
 #if P_FAMILY_THUNDURUS
 static const u16 sThundurusEliteLearnset[] = {

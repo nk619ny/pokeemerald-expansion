@@ -3,7 +3,6 @@
   "name": "MeteorFalls_1F_1R",
   "layout": "LAYOUT_METEOR_FALLS_1F_1R",
   "music": "MUS_CAVE_OF_ORIGIN",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_METEOR_FALLS",
   "requires_flash": true,
   "weather": "WEATHER_NONE",
@@ -16,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
       "x": 2,
       "y": 14,
       "elevation": 3,
@@ -24,7 +23,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_MOON_STONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_CARBOS",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE"
     },
@@ -149,6 +148,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_TM_DRAGON_CLAW",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_DRAGON_CLAW"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DRAGON_TAMER_ORAS",
+      "x": 4,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "MeteorFalls_1F_2R_EventScript_Nicolas",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -205,5 +217,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "0x0"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

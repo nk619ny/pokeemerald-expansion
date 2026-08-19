@@ -894,6 +894,7 @@ script Common_EventScript_RemoveOptionalItems4 {
 	setflag(FLAG_ITEM_ICE_CAVE_IRON)
 	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_WOOD_MAIL)
 	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL)
+	setflag(FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE)
 	return
 }
 
@@ -1043,6 +1044,8 @@ script Common_EventScript_RemoveOptionalItems8 {
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE) //unused
 	setflag(FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE) //unused
 	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL)
+
+	setflag(FLAG_ITEM_ROUTE_131_ZINC)
 
 	return
 }
