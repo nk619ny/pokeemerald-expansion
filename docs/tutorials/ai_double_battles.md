@@ -654,7 +654,47 @@ Tests: `test/battle/ai/ai_avoid_double_target_ko.c`
 
 ---
 
-## 11. Editing Guidance for Agents
+## 11. Custom behavior: Avoid Wide Guard Spread
+
+Vanilla `AI_DoubleBattle` will happily fire a spread move (Rock Slide, Earthquake, Surf, etc.)
+straight into a Wide Guard that shuts it down. The custom **Avoid Wide Guard Spread** behavior
+discourages that. It is a config-only feature (no AI flag) that runs for every trainer with
+`AI_FLAG_DOUBLE_BATTLE` (i.e. all doubles trainers).
+
+### 11.1 Configs (`include/config/ai.h`)
+
+| Config | Default | Meaning |
+|---|---|---|
+| `AI_AVOID_WIDE_GUARD_SPREAD` | `TRUE` | Master switch. `FALSE` restores vanilla behavior and consumes no RNG |
+| `AVOID_WIDE_GUARD_SPREAD_CHANCE` | 50 | Chance to discourage a Wide-Guard-blockable spread move |
+
+RNG tag: `RNG_AI_AVOID_WIDE_GUARD_SPREAD`, rolled **once per battler decision** in
+`SetupRandomRollsForAIMoveSelection` and cached in the `AiLogicData` bitfield
+`wideGuardDiscourage`, because `AI_DoubleBattle` runs once per (move, target) pair.
+
+### 11.2 Mechanism
+
+A single hook near the top of `AI_DoubleBattle` (`src/battle_ai_main.c`) applies
+`ADJUST_SCORE(AWFUL_EFFECT)` (-3, a "medium" discouragement consistent with the `enum AIScore`
+scale) to a spread move (`IsSpreadMove` and not `MoveIgnoresProtect`) when
+`ShouldDiscourageWideGuardSpread` is true. The penalty is applied uniformly across the spread
+move's per-target evaluations, so it lowers the move's overall standing without distorting
+target selection — the mon naturally prefers a single-target option.
+
+`ShouldDiscourageWideGuardSpread(battlerAtk)` returns TRUE if a live foe both:
+- **knows Wide Guard** — `BattlerKnowsWideGuard` scans `GetMovesArray(foe)` (respects AI
+  awareness, so a non-omniscient AI only reacts once Wide Guard has been observed) for a move
+  whose `GetMoveProtectMethod` is `PROTECT_WIDE_GUARD`, and
+- **didn't just protect** — its `gAiLogicData->lastUsedMove` is `MOVE_NONE` or not a protection
+  effect (`EFFECT_PROTECT`/`EFFECT_ENDURE`/`EFFECT_MAT_BLOCK`); consecutive protection lowers
+  Wide Guard reliability, so a foe that protected last turn is not treated as a live threat.
+
+Tests: `test/battle/ai/ai_avoid_wide_guard_spread.c`
+(`make check TESTS="Avoid Wide Guard"`).
+
+---
+
+## 12. Editing Guidance for Agents
 
 1. **Doubles logic lives in three places:** `ChooseMoveOrAction_Doubles` (target loop +
    ally guard), `AI_DoubleBattle` (coordination scoring), and the `battle_ai_util.c` partner

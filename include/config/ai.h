@@ -145,6 +145,9 @@
 #define AVOID_DOUBLE_TARGET_KO_CHANCE            100 // chance to redirect attacks away from a target the partner reliably KOs
 #define DOUBLE_TARGET_SLOW_KILL_CHANCE           66 // chance to still double up when both mons only have slow kills on the target
 #define DOUBLE_TARGET_UNRELIABLE_KILL_CHANCE     75 // chance to double up as insurance when the designated killer is itself threatened by a fast kill
+// Avoid Wide Guard: discourage spread moves when a foe knows Wide Guard and didn't just use a protection move
+#define AI_AVOID_WIDE_GUARD_SPREAD               TRUE // master switch; when FALSE no RNG is consumed and no scores are adjusted
+#define AVOID_WIDE_GUARD_SPREAD_CHANCE           33 // chance to discourage a Wide-Guard-blockable spread move
 
 // AI_FLAG_HARD_TRICK_ROOM settings
 #define SHOULD_TRICK_ROOM_OVER_FAST_KILL         50 // chance the AI sets Trick Room at an appropriate time instead of taking an available fast kill

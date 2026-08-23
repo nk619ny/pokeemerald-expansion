@@ -75,6 +75,7 @@ static s32 AI_DynamicFunc(enum BattlerId battlerAtk, enum BattlerId battlerDef, 
 static s32 AI_PredictSwitch(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_CheckPpStall(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static bool32 ShouldAvoidDoubleTargetKO(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move);
+static bool32 ShouldDiscourageWideGuardSpread(enum BattlerId battlerAtk);
 
 static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Move, s32) =
 {
@@ -460,6 +461,9 @@ static void SetupRandomRollsForAIMoveSelection(enum BattlerId battler)
         gAiLogicData->doubleTargetSlowKill = RandomPercentage(RNG_AI_DOUBLE_TARGET_SLOW_KILL, DOUBLE_TARGET_SLOW_KILL_CHANCE);
         gAiLogicData->doubleTargetInsurance = RandomPercentage(RNG_AI_DOUBLE_TARGET_INSURANCE, DOUBLE_TARGET_UNRELIABLE_KILL_CHANCE);
     }
+
+    if (AI_AVOID_WIDE_GUARD_SPREAD && IsDoubleBattle())
+        gAiLogicData->wideGuardDiscourage = RandomPercentage(RNG_AI_AVOID_WIDE_GUARD_SPREAD, AVOID_WIDE_GUARD_SPREAD_CHANCE);
 }
 
 void AI_TrySwitchOrUseItem(enum BattlerId battler)
@@ -3141,6 +3145,14 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
      && !IsSpreadMove(moveTarget) // A spread move hits both foes, so it is never redundant.
      && ShouldAvoidDoubleTargetKO(battlerAtk, battlerDef, move))
         ADJUST_SCORE(WORST_EFFECT);
+
+    // Discourage spread moves a foe can block with Wide Guard.
+    if (AI_AVOID_WIDE_GUARD_SPREAD
+     && gAiLogicData->wideGuardDiscourage
+     && IsSpreadMove(moveTarget)
+     && !MoveIgnoresProtect(move)
+     && ShouldDiscourageWideGuardSpread(battlerAtk))
+        ADJUST_SCORE(AWFUL_EFFECT);
 
     // check what effect partner is using
     if (aiData->partnerMove != MOVE_NONE && hasPartner)
@@ -6668,6 +6680,43 @@ static bool32 IsBattlerFastKillThreatened(enum BattlerId battler)
 {
     return (IsBattlerAlive(LEFT_FOE(battler)) && HasFastKillOnFoe(LEFT_FOE(battler), battler))
         || (IsBattlerAlive(RIGHT_FOE(battler)) && HasFastKillOnFoe(RIGHT_FOE(battler), battler));
+}
+
+static bool32 IsProtectionMoveEffect(enum BattleMoveEffects effect)
+{
+    return effect == EFFECT_PROTECT || effect == EFFECT_ENDURE || effect == EFFECT_MAT_BLOCK;
+}
+
+static bool32 BattlerKnowsWideGuard(enum BattlerId battler)
+{
+    enum Move *moves = GetMovesArray(battler);
+
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        enum Move move = moves[moveIndex];
+        if (move == MOVE_NONE || move == MOVE_UNAVAILABLE)
+            continue;
+        if (IsProtectionMoveEffect(GetMoveEffect(move)) && GetMoveProtectMethod(move) == PROTECT_WIDE_GUARD)
+            return TRUE;
+    }
+    return FALSE;
+}
+
+// TRUE if a live foe knows Wide Guard and didn't just protect, so a Wide-Guard-blockable spread move is a poor choice.
+static bool32 ShouldDiscourageWideGuardSpread(enum BattlerId battlerAtk)
+{
+    enum BattlerId foes[2] = { LEFT_FOE(battlerAtk), RIGHT_FOE(battlerAtk) };
+
+    for (u32 i = 0; i < ARRAY_COUNT(foes); i++)
+    {
+        enum BattlerId foe = foes[i];
+        if (!IsBattlerAlive(foe) || !BattlerKnowsWideGuard(foe))
+            continue;
+        enum Move lastMove = gAiLogicData->lastUsedMove[foe];
+        if (lastMove == MOVE_NONE || !IsProtectionMoveEffect(GetMoveEffect(lastMove)))
+            return TRUE;
+    }
+    return FALSE;
 }
 
 // TRUE if this damaging move into battlerDef should be penalized because the partner

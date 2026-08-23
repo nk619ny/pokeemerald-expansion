@@ -256,7 +256,8 @@ struct AiLogicData
     u32 avoidDoubleTargetKO:1; // Rolled per decision: redirect attacks away from a target the partner reliably KOs
     u32 doubleTargetSlowKill:1; // Rolled per decision: still double up when both mons only have slow kills
     u32 doubleTargetInsurance:1; // Rolled per decision: double up when the designated killer is fast-kill-threatened
-    u32 padding2:16;
+    u32 wideGuardDiscourage:1; // Rolled per decision: discourage spread moves vs a live Wide Guard
+    u32 padding2:15;
 };
 
 struct AiThinkingStruct
