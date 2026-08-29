@@ -2779,3 +2779,138 @@ script TradeCenter_EventScript_CrossPoison {
 	end
 }
 
+text MatchCall_Text_Rival_1_1 {
+	format("{RIVAL}: You won't believe this,\N{PLAYER}\pI had to throw dozens of Pokeballs\Nto catch this one Pokémon - it was\Nconstantly breaking out!\pEven worse, they kept knocking themselves out!")
+}
+
+text MatchCall_Text_Rival_1_2 {
+	format("{RIVAL}: Hi, {PLAYER}!\pAfter a lot of searching, I can\Nconfirm there are five colors of \NFlabebe.\pFor some reason, the white ones\Nare just harder to find!")
+}
+
+text MatchCall_Text_Rival_1_3 {
+	format("{RIVAL}: {PLAYER}, I just found out that\na Pokémon's nature can affect how\nthey grow and develop.\pI wonder if that means it affects their\Npersonality too?")
+}
+
+text MatchCall_Text_Rival_2_5 {
+	format("{RIVAL}: Hi {PLAYER}.\pI've spent weeks putting honey on this tree, and still haven't found the Pokémon I'm looking for.\pDo you think I should try another tree?")
+}
+
+text MatchCall_Text_Rival_2_1 {
+	format("{RIVAL}: Guess what, {PLAYER}?\pI think I might have discovered\Nthe minimum catch rate.\pAnd I haven't even seen a\Nlegendary NPokémon yet!")
+}
+
+text MatchCall_Text_Rival_2_2 {
+	format("{RIVAL}: Hey, {PLAYER}!\pI'm away visiting a tropical island.\pI heard you can find fully evolved\NPokémon at an unusually low level,\Nbut there don't seem to be any in\Nthe grass here.\pMaybe I need to lure them out\Nsomehow?")
+}
+
+text MatchCall_Text_Rival_2_3 {
+	format("{RIVAL}: Hi {PLAYER}.\pDid you know that for Pokemon,\pThere aren't always the same\pnumbers of males and females?")
+}
+
+text MatchCall_Text_Rival_2_4 {
+	format("{RIVAL}: {PLAYER}!\pThere are rumors that thousands\Nof years ago, there was a fish with\Na different color stripe we don't\Nsee anymore.\pI wonder if that white fish is still around anywhere?")
+}
+
+text MatchCall_Text_Rival_2_6 {
+	format("{RIVAL}: Hey there, {PLAYER}!\pWe know there's variation in\NPokémon size, even within the same species.\pI'm trying to figure out exactly\Nhow big some Pokémon can get!")
+}
+
+text MatchCall_Text_Rival_3_1 {
+	format("{RIVAL}: Hi, {PLAYER}!\pDid you know there's a difference between a chip and a crack?\pThe difference is 18,000,\Napparently!")
+}
+
+text MatchCall_Text_Rival_3_2 {
+	format("{RIVAL}: Sigh, {PLAYER}...\NMy hands are covered in honey\Nagain…\pI thought I had found all the\NPokémon on these trees, but it\Nturns out some of the ones I found can't actually evolve.")
+}
+
+text MatchCall_Text_Rival_3_3 {
+	format("{RIVAL}: Hi there, {PLAYER}!\pI'm visiting Mt. Pyre right now.\pI swear I keep hearing bells, but I can't figure out where they're\Ncoming from")
+}
+
+text MatchCall_Text_Rival_3_4 {
+	format("{RIVAL}: Oh, {PLAYER}!\pI'm staying at an Inn right now\Nwhile I'm traveling.\pSadly, the TV is broken.\pThe innkeeper doesn't seem willing\Nto fix it, but maybe I can figure it\Nout myself.")
+}
+
+text MatchCall_Text_Rival_3_5 {
+	format("{RIVAL}: Guess what, {PLAYER}?\pI guess it's a good thing I've been catching so many Sinistea.\pThere's a collector looking for\Nbroken parts of their shell, for\Nsome reason.")
+}
+
+text MatchCall_Text_Rival_3_6 {
+	format("{RIVAL}: Ah, {PLAYER}.\pMy poor fish won't evolve.\pIt keeps rushing into battle head-\Nfirst and taking a beating, but\Nstill no luck. Do you think I should\Nkeep at it?")
+}
+
+text MatchCall_Text_Rival_5_1 {
+	format("{RIVAL}: Help me out, {PLAYER}.\pNormally I put Pokémon to sleep to\Nmake them easier to catch.\pI've found a Pokémon that is\Nsleeping so deeply, I can't even\Nbattle it!\NAny ideas?")
+}
+
+text MatchCall_Text_Rival_4_1 {
+	format("{RIVAL}: It's funny, {PLAYER}.\pThere's a Pokémon I haven't been\pable to find in the wild, but I just heard reports of one just stopped\pin the middle of the road.")
+}
+
+text MatchCall_Text_Rival_4_2 {
+	format("{RIVAL}: {PLAYER}!\pI was just hanging underground\Nwith dozens of my closest friends,\Nand when I got out a Pokémon I'd\Nnever seen before appeared!\pDo you think it was looking for a\Nparty?")
+}
+
+text MatchCall_Text_Rival_5_2 {
+	format("{RIVAL}: Oh, {PLAYER}!\pI just found another one of these extraverted ghosts in a shipwreck,\Nfor some reason.\pWhy does it like this specific\NRoute, I wonder?")
+}
+
+text MatchCall_Text_Rival_4_3 {
+	format("{RIVAL}: You know, {PLAYER} - \pI've been trying to visit a shrine inside a grand castle, but it's been closed because of some sort of political issues.")
+}
+
+text MatchCall_Text_Rival_5_3 {
+	format("{RIVAL}: Hey, {PLAYER}.\pHave you ever been so confident\Nyou just found a legendary\NPokémon, only to realize it isn't legendary after all? Just very uncommon?\pI know that it's not fair, but I'm feeling a little disappointed.")
+}
+
+text MatchCall_Text_Rival_4_4 {
+	format("{RIVAL}: Ugh, {PLAYER}.\NI've been fishing in this river for hours, trying to find a rare\NPokémon, with no luck.\pThe fisherman ten feet away from\Nme found three in five minutes!")
+}
+
+text MatchCall_Text_Rival_5_4 {
+	format("{RIVAL}: Hi, {PLAYER}.\pI've got a fish that is really no\NNgood at battling, and doesn't seem interested in evolving either.\pMaybe I'll give it to my little\NNbrother to use in contests.")
+}
+
+text MatchCall_Text_Rival_4_5 {
+	format("{RIVAL}: Hey, {PLAYER}!\pI'm on a fishing boat trying to\Nfind a-\Nwait, I see bubbles!\NSorry {PLAYER}, gotta go!")
+}
+
+text MatchCall_Text_Rival_5_5 {
+	format("{RIVAL}: You know, {PLAYER},\NI just don't understand why\Nsomeone would design a boat after\Na Ground-type Pokémon.")
+}
+
+text MatchCall_Text_Rival_4_6 {
+	format("{RIVAL}: Hi there, {PLAYER}.\pI really love these white flowers.\pIt was worth the effort!")
+}
+
+text MatchCall_Text_Rival_5_6 {
+	format("{RIVAL}: Hi there, {PLAYER}.\pIt took me awhile to find a Flabebe\Nwith a white flower.\pNow, I'm hearing rumors there might\NNbe a sixth flower they can hold?")
+}
+
+text MatchCall_Text_Rival_6_1 {
+	format("{RIVAL}: Hi, {PLAYER}.\pDo you know how I could find an\N extinct flower?\pIt feels impossible, by definition.")
+}
+
+text MatchCall_Text_Rival_6_2 {
+	format("{RIVAL}: Oh hi, {PLAYER}.\pI'm taking a break to help the\NPokémon Rangers.\pThey agreed to answer some\NNquestions if I helped them out.\pThey've been having trouble with\Nsome rogue musicians.")
+}
+
+text MatchCall_Text_Rival_6_3 {
+	format("{RIVAL}: Hey, {PLAYER}.\pI got a letter from one of my Dad's colleagues in Kanto.\pWhat are you most thankful for, {PLAYER}?\pI've been asking myself that\Nquestion lately.")
+}
+
+text MatchCall_Text_Rival_6_4 {
+	format("{RIVAL}: {PLAYER}!\pI think I've finally found a way to guarantee my victory next time we battle, {PLAYER}.\pI won't give it away, though.")
+}
+
+text MatchCall_Text_Rival_6_5 {
+	format("{RIVAL}: What!?\pSorry, {PLAYER}, I can't hear you\Nover the sound of thunder!\pThere's a really bad storm over\Nhere!\pThey say this is the only time a\Ncertain Pokémon appears.")
+}
+
+text MatchCall_Text_Rival_6_6 {
+	format("{RIVAL}: You know, {PLAYER}, I\Nreally don't like the idea that you\Nwill only see some Pokemon if you\Nlive in the right place or have\Nenough money.\pI hope that changes someday.")
+}
+
+text MatchCall_Text_Rival_7_1 {
+	format("{RIVAL}: {PLAYER}! I was just\Nthinking about you.\pGood luck with the rest of the\NPokemon League Challenge!")
+}

@@ -7211,3 +7211,302 @@ EggMoveTutor_Text_NoMoreHeartScales::
 	.string "That's all for now!\p"
 	.string "Come back with more Heart Scales if you\n"
 	.string "want to learn additional Egg Moves.$"
+
+MatchCall_Text_Rival_1_1::
+# 2782 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: You won't believe this,\n"
+	.string "{PLAYER}\p"
+	.string "I had to throw dozens of Pokeballs\n"
+	.string "to catch this one Pokémon - it was\l"
+	.string "constantly breaking out!\p"
+	.string "Even worse, they kept knocking\n"
+	.string "themselves out!$"
+
+MatchCall_Text_Rival_1_2::
+# 2786 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hi, {PLAYER}!\p"
+	.string "After a lot of searching, I can\n"
+	.string "confirm there are five colors of\l"
+	.string "Flabebe.\p"
+	.string "For some reason, the white ones\n"
+	.string "are just harder to find!$"
+
+MatchCall_Text_Rival_1_3::
+# 2790 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: {PLAYER}, I just found\n"
+	.string "out that\n"
+	.string "a Pokémon's nature can affect how\n"
+	.string "they grow and develop.\p"
+	.string "I wonder if that means it affects their\n"
+	.string "personality too?$"
+
+MatchCall_Text_Rival_2_5::
+# 2794 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hi {PLAYER}.\p"
+	.string "I've spent weeks putting honey on this\n"
+	.string "tree, and still haven't found the\l"
+	.string "Pokémon I'm looking for.\p"
+	.string "Do you think I should try another tree?$"
+
+MatchCall_Text_Rival_2_1::
+# 2798 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Guess what, {PLAYER}?\p"
+	.string "I think I might have discovered\n"
+	.string "the minimum catch rate.\p"
+	.string "And I haven't even seen a\n"
+	.string "legendary NPokémon yet!$"
+
+MatchCall_Text_Rival_2_2::
+# 2802 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hey, {PLAYER}!\p"
+	.string "I'm away visiting a tropical island.\p"
+	.string "I heard you can find fully evolved\n"
+	.string "Pokémon at an unusually low level,\l"
+	.string "but there don't seem to be any in\l"
+	.string "the grass here.\p"
+	.string "Maybe I need to lure them out\n"
+	.string "somehow?$"
+
+MatchCall_Text_Rival_2_3::
+# 2806 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hi {PLAYER}.\p"
+	.string "Did you know that for Pokemon,\p"
+	.string "There aren't always the same\p"
+	.string "numbers of males and females?$"
+
+MatchCall_Text_Rival_2_4::
+# 2810 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: {PLAYER}!\p"
+	.string "There are rumors that thousands\n"
+	.string "of years ago, there was a fish with\l"
+	.string "a different color stripe we don't\l"
+	.string "see anymore.\p"
+	.string "I wonder if that white fish is still\n"
+	.string "around anywhere?$"
+
+MatchCall_Text_Rival_2_6::
+# 2814 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hey there, {PLAYER}!\p"
+	.string "We know there's variation in\n"
+	.string "Pokémon size, even within the same\l"
+	.string "species.\p"
+	.string "I'm trying to figure out exactly\n"
+	.string "how big some Pokémon can get!$"
+
+MatchCall_Text_Rival_3_1::
+# 2818 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hi, {PLAYER}!\p"
+	.string "Did you know there's a difference\n"
+	.string "between a chip and a crack?\p"
+	.string "The difference is 18,000,\n"
+	.string "apparently!$"
+
+MatchCall_Text_Rival_3_2::
+# 2822 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Sigh, {PLAYER}...\n"
+	.string "My hands are covered in honey\l"
+	.string "again…\p"
+	.string "I thought I had found all the\n"
+	.string "Pokémon on these trees, but it\l"
+	.string "turns out some of the ones I found\l"
+	.string "can't actually evolve.$"
+
+MatchCall_Text_Rival_3_3::
+# 2826 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hi there, {PLAYER}!\p"
+	.string "I'm visiting Mt. Pyre right now.\p"
+	.string "I swear I keep hearing bells, but I can't\n"
+	.string "figure out where they're\l"
+	.string "coming from$"
+
+MatchCall_Text_Rival_3_4::
+# 2830 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Oh, {PLAYER}!\p"
+	.string "I'm staying at an Inn right now\n"
+	.string "while I'm traveling.\p"
+	.string "Sadly, the TV is broken.\p"
+	.string "The innkeeper doesn't seem willing\n"
+	.string "to fix it, but maybe I can figure it\l"
+	.string "out myself.$"
+
+MatchCall_Text_Rival_3_5::
+# 2834 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Guess what, {PLAYER}?\p"
+	.string "I guess it's a good thing I've been\n"
+	.string "catching so many Sinistea.\p"
+	.string "There's a collector looking for\n"
+	.string "broken parts of their shell, for\l"
+	.string "some reason.$"
+
+MatchCall_Text_Rival_3_6::
+# 2838 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Ah, {PLAYER}.\p"
+	.string "My poor fish won't evolve.\p"
+	.string "It keeps rushing into battle head-\n"
+	.string "first and taking a beating, but\l"
+	.string "still no luck. Do you think I should\l"
+	.string "keep at it?$"
+
+MatchCall_Text_Rival_5_1::
+# 2842 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Help me out, {PLAYER}.\p"
+	.string "Normally I put Pokémon to sleep to\n"
+	.string "make them easier to catch.\p"
+	.string "I've found a Pokémon that is\n"
+	.string "sleeping so deeply, I can't even\l"
+	.string "battle it!\l"
+	.string "Any ideas?$"
+
+MatchCall_Text_Rival_4_1::
+# 2846 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: It's funny, {PLAYER}.\p"
+	.string "There's a Pokémon I haven't been\p"
+	.string "able to find in the wild, but I just\n"
+	.string "heard reports of one just stopped\p"
+	.string "in the middle of the road.$"
+
+MatchCall_Text_Rival_4_2::
+# 2850 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: {PLAYER}!\p"
+	.string "I was just hanging underground\n"
+	.string "with dozens of my closest friends,\l"
+	.string "and when I got out a Pokémon I'd\l"
+	.string "never seen before appeared!\p"
+	.string "Do you think it was looking for a\n"
+	.string "party?$"
+
+MatchCall_Text_Rival_5_2::
+# 2854 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Oh, {PLAYER}!\p"
+	.string "I just found another one of these\n"
+	.string "extraverted ghosts in a shipwreck,\l"
+	.string "for some reason.\p"
+	.string "Why does it like this specific\n"
+	.string "Route, I wonder?$"
+
+MatchCall_Text_Rival_4_3::
+# 2858 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: You know, {PLAYER} -\p"
+	.string "I've been trying to visit a shrine inside\n"
+	.string "a grand castle, but it's been closed\l"
+	.string "because of some sort of political\l"
+	.string "issues.$"
+
+MatchCall_Text_Rival_5_3::
+# 2862 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hey, {PLAYER}.\p"
+	.string "Have you ever been so confident\n"
+	.string "you just found a legendary\l"
+	.string "Pokémon, only to realize it isn't\l"
+	.string "legendary after all? Just very\l"
+	.string "uncommon?\p"
+	.string "I know that it's not fair, but I'm\n"
+	.string "feeling a little disappointed.$"
+
+MatchCall_Text_Rival_4_4::
+# 2866 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Ugh, {PLAYER}.\n"
+	.string "I've been fishing in this river for\l"
+	.string "hours, trying to find a rare\l"
+	.string "Pokémon, with no luck.\p"
+	.string "The fisherman ten feet away from\n"
+	.string "me found three in five minutes!$"
+
+MatchCall_Text_Rival_5_4::
+# 2870 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hi, {PLAYER}.\p"
+	.string "I've got a fish that is really no\n"
+	.string "Ngood at battling, and doesn't seem\l"
+	.string "interested in evolving either.\p"
+	.string "Maybe I'll give it to my little\n"
+	.string "Nbrother to use in contests.$"
+
+MatchCall_Text_Rival_4_5::
+# 2874 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hey, {PLAYER}!\p"
+	.string "I'm on a fishing boat trying to\n"
+	.string "find a-\l"
+	.string "wait, I see bubbles!\l"
+	.string "Sorry {PLAYER}, gotta go!$"
+
+MatchCall_Text_Rival_5_5::
+# 2878 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: You know, {PLAYER},\n"
+	.string "I just don't understand why\l"
+	.string "someone would design a boat after\l"
+	.string "a Ground-type Pokémon.$"
+
+MatchCall_Text_Rival_4_6::
+# 2882 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hi there, {PLAYER}.\p"
+	.string "I really love these white flowers.\p"
+	.string "It was worth the effort!$"
+
+MatchCall_Text_Rival_5_6::
+# 2886 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hi there, {PLAYER}.\p"
+	.string "It took me awhile to find a Flabebe\n"
+	.string "with a white flower.\p"
+	.string "Now, I'm hearing rumors there might\n"
+	.string "Nbe a sixth flower they can hold?$"
+
+MatchCall_Text_Rival_6_1::
+# 2890 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hi, {PLAYER}.\p"
+	.string "Do you know how I could find an\n"
+	.string "extinct flower?\p"
+	.string "It feels impossible, by definition.$"
+
+MatchCall_Text_Rival_6_2::
+# 2894 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Oh hi, {PLAYER}.\p"
+	.string "I'm taking a break to help the\n"
+	.string "Pokémon Rangers.\p"
+	.string "They agreed to answer some\n"
+	.string "Nquestions if I helped them out.\p"
+	.string "They've been having trouble with\n"
+	.string "some rogue musicians.$"
+
+MatchCall_Text_Rival_6_3::
+# 2898 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: Hey, {PLAYER}.\p"
+	.string "I got a letter from one of my Dad's\n"
+	.string "colleagues in Kanto.\p"
+	.string "What are you most thankful for,\n"
+	.string "{PLAYER}?\p"
+	.string "I've been asking myself that\n"
+	.string "question lately.$"
+
+MatchCall_Text_Rival_6_4::
+# 2902 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: {PLAYER}!\p"
+	.string "I think I've finally found a way to\n"
+	.string "guarantee my victory next time we\l"
+	.string "battle, {PLAYER}.\p"
+	.string "I won't give it away, though.$"
+
+MatchCall_Text_Rival_6_5::
+# 2906 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: What!?\p"
+	.string "Sorry, {PLAYER}, I can't hear you\n"
+	.string "over the sound of thunder!\p"
+	.string "There's a really bad storm over\n"
+	.string "here!\p"
+	.string "They say this is the only time a\n"
+	.string "certain Pokémon appears.$"
+
+MatchCall_Text_Rival_6_6::
+# 2910 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: You know, {PLAYER}, I\n"
+	.string "really don't like the idea that you\l"
+	.string "will only see some Pokemon if you\l"
+	.string "live in the right place or have\l"
+	.string "enough money.\p"
+	.string "I hope that changes someday.$"
+
+MatchCall_Text_Rival_7_1::
+# 2914 "data/maps/TradeCenter/scripts.pory"
+	.string "{RIVAL}: {PLAYER}! I was just\n"
+	.string "thinking about you.\p"
+	.string "Good luck with the rest of the\n"
+	.string "Pokemon League Challenge!$"
