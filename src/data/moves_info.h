@@ -121,8 +121,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Repeatedly punches the foe\n"
             "2 to 5 times."),
         .effect = EFFECT_HIT,
-        .power = 18,
-        .type = TYPE_NORMAL,
+        .power = B_CUSTOMIZED_MOVE_STATS == TRUE ? 30 : 18,
+        .type = TYPE_BUG,
         .accuracy = 85,
         .pp = 15,
         .target = TARGET_SELECTED,

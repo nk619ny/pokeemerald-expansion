@@ -3199,7 +3199,6 @@ static const struct LevelUpMove sHitmonleeLevelUpLearnset[] = {
 
 static const struct LevelUpMove sHitmonchanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_DRAIN_PUNCH),
-    LEVEL_UP_MOVE( 0, MOVE_COMET_PUNCH), //added from USUM
     LEVEL_UP_MOVE( 1, MOVE_FEINT),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
@@ -3221,6 +3220,7 @@ static const struct LevelUpMove sHitmonchanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_COUNTER),
     LEVEL_UP_MOVE(41, MOVE_SKY_UPPERCUT), //added from USUM
     LEVEL_UP_MOVE(44, MOVE_FOCUS_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_COMET_PUNCH), //customized from USUM
     LEVEL_UP_END
 };
 
@@ -3561,7 +3561,6 @@ static const struct LevelUpMove sTangrowthLevelUpLearnset[] = {
 static const struct LevelUpMove sKangaskhanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_COMET_PUNCH), //added from USUM
     LEVEL_UP_MOVE( 4, MOVE_GROWL),
     LEVEL_UP_MOVE( 8, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE(12, MOVE_BITE),
@@ -3574,6 +3573,7 @@ static const struct LevelUpMove sKangaskhanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_DOUBLE_HIT),
     LEVEL_UP_MOVE(34, MOVE_DIZZY_PUNCH), //added from USUM
     LEVEL_UP_MOVE(36, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(38, MOVE_COMET_PUNCH), //customized from USUM
     LEVEL_UP_MOVE(40, MOVE_ENDURE),
     LEVEL_UP_MOVE(44, MOVE_REVERSAL),
     LEVEL_UP_MOVE(48, MOVE_OUTRAGE),
@@ -5314,12 +5314,12 @@ static const struct LevelUpMove sLedybaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_MACH_PUNCH),
     LEVEL_UP_MOVE(19, MOVE_ROOST),
     LEVEL_UP_MOVE(22, MOVE_STRUGGLE_BUG),
-    LEVEL_UP_MOVE(22, MOVE_COMET_PUNCH), //added from USUM
     LEVEL_UP_MOVE(26, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(29, MOVE_AGILITY),
     LEVEL_UP_MOVE(33, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(36, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(40, MOVE_COMET_PUNCH), //customized from USUM
     LEVEL_UP_END
 };
 
@@ -5335,12 +5335,12 @@ static const struct LevelUpMove sLedianLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_MACH_PUNCH),
     LEVEL_UP_MOVE(20, MOVE_ROOST),
     LEVEL_UP_MOVE(24, MOVE_STRUGGLE_BUG),
-    LEVEL_UP_MOVE(24, MOVE_COMET_PUNCH), //added from USUM
     LEVEL_UP_MOVE(29, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(33, MOVE_AGILITY),
     LEVEL_UP_MOVE(38, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(42, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE(47, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_COMET_PUNCH), //customized
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LEDYBA
@@ -16446,11 +16446,11 @@ static const struct LevelUpMove sPanchamLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_TAUNT),
     LEVEL_UP_MOVE(12, MOVE_CIRCLE_THROW),
     LEVEL_UP_MOVE(12, MOVE_KARATE_CHOP), //added from USUM
-    LEVEL_UP_MOVE(15, MOVE_COMET_PUNCH), //added from USUM
     LEVEL_UP_MOVE(16, MOVE_LOW_SWEEP),
     LEVEL_UP_MOVE(20, MOVE_WORK_UP),
     LEVEL_UP_MOVE(24, MOVE_SLASH),
     LEVEL_UP_MOVE(28, MOVE_VITAL_THROW),
+    LEVEL_UP_MOVE(30, MOVE_COMET_PUNCH), //customized from USUM
     LEVEL_UP_MOVE(33, MOVE_CRUNCH),
     LEVEL_UP_MOVE(36, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(40, MOVE_PARTING_SHOT),
@@ -16469,11 +16469,11 @@ static const struct LevelUpMove sPangoroLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAUNT),
     LEVEL_UP_MOVE(12, MOVE_CIRCLE_THROW),
     LEVEL_UP_MOVE(12, MOVE_KARATE_CHOP), //added from USUM
-    LEVEL_UP_MOVE(15, MOVE_COMET_PUNCH), //added from USUM
     LEVEL_UP_MOVE(16, MOVE_LOW_SWEEP),
     LEVEL_UP_MOVE(20, MOVE_WORK_UP),
     LEVEL_UP_MOVE(24, MOVE_SLASH),
     LEVEL_UP_MOVE(28, MOVE_VITAL_THROW),
+    LEVEL_UP_MOVE(30, MOVE_COMET_PUNCH), //customized from USUM
     LEVEL_UP_MOVE(35, MOVE_CRUNCH),
     LEVEL_UP_MOVE(40, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(46, MOVE_PARTING_SHOT),
