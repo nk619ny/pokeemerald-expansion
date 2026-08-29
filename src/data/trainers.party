@@ -1705,7 +1705,7 @@ EVs: 128 HP / 252 Atk / 128 SpD
 Adamant Nature  
 - Drain Punch  
 - High Horsepower  
-- Leech Life  
+- Comet Punch 
 - Stone Edge  
 
 Feraligatr @ Feraligite  
@@ -2449,7 +2449,7 @@ IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs
 === TRAINER_DUSTY_1 === /* Route 111 */
 Name: DUSTY
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -2510,7 +2510,7 @@ Tera Type: Ground
 === TRAINER_CHIP === /* Route 120 */
 Name: CHIP
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -2557,7 +2557,7 @@ Tera Type: Ground
 === TRAINER_FOSTER === /* Route 105 */
 Name: FOSTER
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -2845,7 +2845,7 @@ IVs: 0 Atk
 === TRAINER_AMBER === /* Route 135 */
 Name: DUSTY
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -4120,7 +4120,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Double Team
 - Swagger
 
-=== TRAINER_VINCENT === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_VINCENT === /* Trick House 8 */ /* TO BE ADDED */
 Name: VINCENT
 Class: Cooltrainer
 Pic: Ace Trainer M ORAS 80
@@ -4141,7 +4141,7 @@ Sharpedo
 Level: 44
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_LEROY === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_LEROY === /* Trick House 8 */ /* TO BE ADDED */
 Name: LEROY
 Class: Cooltrainer
 Pic: Ace Trainer M ORAS 80
@@ -4204,7 +4204,7 @@ Level: 41
 - Superpower  
 - Crunch
 
-=== TRAINER_EDGAR === /* Victory Road 1F */ /* TO BE ADDED */
+=== TRAINER_EDGAR === /* Victory Road 1F */ 
 Name: EDGAR
 Class: Cooltrainer
 Pic: Ace Trainer M ORAS 80
@@ -4213,13 +4213,59 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Cacturne
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Abomasnow @ Abomasite  
+Ability: Soundproof  
+Level: 75
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Ice Shard  
+- Wood Hammer  
+- Ice Hammer  
+- Protect  
 
-Pelipper
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Politoed @ Focus Sash  
+Ability: Damp  
+Level: 75
+EVs: 192 HP / 64 Def / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Perish Song  
+- Muddy Water  
+- Soak  
+- Encore  
+
+Frosmoth @ Enigma Berry  
+Ability: Ice Scales  
+Level: 75
+EVs: 168 HP / 168 SpA / 168 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Blizzard  
+- Giga Drain  
+- Bug Buzz  
+- Quiver Dance  
+
+Cryogonal @ Light Clay  
+Ability: Levitate  
+Level: 75
+Tera Type: Ground  
+EVs: 64 HP / 192 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Blizzard  
+- Freeze-Dry  
+- Hidden Power
+- Aurora Veil  
+
+Arctovish @ Salac Berry  
+Ability: Slush Rush  
+Level: 75
+EVs: 252 HP / 4 Atk / 252 Spe  
+Adamant Nature  
+- Fishious Rend  
+- Water Sport  
+- Aurora Veil  
+- Crunch  
 
 === TRAINER_ALBERT === /* Victory Road 1F */ /* Unused */
 Name: ALBERT
@@ -4425,89 +4471,204 @@ Level: 78
 - Close Combat  
 - Protect  
 
-=== TRAINER_WILTON_2 === /* Route */
-Name: WILTON
-Class: Cooltrainer
-Pic: Ace Trainer M ORAS 80
+=== TRAINER_MECHADOLL_1 === /* Route */
+Name: DOLL
+Class: Mecha Doll
+Pic: Collector
 Gender: Male
-Music: Cool
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Electrike
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Pokestar MT  
+Ability: Analytic  
+Level: 53
+EVs: 252 HP / 252 Atk  
+Brave Nature  
+IVs: 0 Spe  
+- Earthquake  
+- Gigaton Hammer  
+- Surf  
+- Supercell Slam  
 
-Wailmer
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Pokestar UFO  
+Ability: Telepathy
+Level: 53
+EVs: 252 HP / 252 Spe  
+Serious Nature  
+- Recover  
+- Signal Beam  
+- Counter  
+- Sky Drop  
 
-Makuhita
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Pokestar Transport @ Power Herb  
+Ability: Time Traveler 
+Level: 53
+IVs: 0 Atk  
+- Discharge  
+- Future Sight  
+- Signal Beam  
+- Roar of Time  
 
-=== TRAINER_WILTON_3 === /* Route */
-Name: WILTON
-Class: Cooltrainer
-Pic: Ace Trainer M ORAS 80
+Revavroom-Schedar 
+Ability: Speed Boost  
+Level: 53
+Tera Type: Fire  
+- Blazing Torque  
+- Spin Out  
+- Wild Charge  
+- Temper Flare  
+
+
+=== TRAINER_MECHADOLL_2 === /* Route */
+Name: DOLL
+Class: Mecha Doll
+Pic: Collector
 Gender: Male
-Music: Cool
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Manectric
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Pokestar F-00 @ Focus Sash  
+Ability: Volt Absorb  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Level: 53
+Jolly Nature  
+- Iron Head  
+- Flail  
+- Perish Song  
+- Teeter Dance  
 
-Wailmer
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Makuhita
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Pokestar Monster @ Chople Berry
+Ability: Soundproof 
+Level: 53
+EVs: 4 HP / 252 SpA / 252 Spe  
+Hasty Nature  
+- Dark Pulse  
+- Extrasensory  
+- Constrict  
+- Mean Look  
 
-=== TRAINER_WILTON_4 === /* Route */
-Name: WILTON
-Class: Cooltrainer
-Pic: Ace Trainer M ORAS 80
+
+Pokestar Black Door (F) @ Grip Claw  
+Ability: Woodworker  
+Level: 53
+EVs: 252 HP / 252 Atk  
+Careful Nature  
+- Snap Trap  
+- Counter  
+- Wood Hammer  
+- Ingrain  
+
+Revavroom-Ruchbah 
+Ability: Misty Surge  
+Level: 53
+Tera Type: Fairy  
+- Magical Torque  
+- High Horsepower  
+- Steel Roller  
+- Confuse Ray  
+
+
+=== TRAINER_MECHADOLL_3 === /* Route */
+Name: DOLL
+Class: Mecha Doll
+Pic: Collector
 Gender: Male
-Music: Cool
+Music: Suspicious
+Double Battle: Yes
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
+
+Pokestar Humanoid @ Normal Gem  
+Ability: Insomnia  
+Level: 53
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Explosion  
+- Night Slash  
+- Shadow Claw /* - Ice Punch */
+
+Pokestar Spirit  
+Ability: Wonder Guard  
+Level: 53
+EVs: 252 HP / 128 Def / 128 SpD  
+Serious Nature  
+- Crunch  
+- Dual Chop  
+- Slack Off  
+- Swords Dance  
+
+Pokestar UFO-2  
+Ability: Levitate  
+Level: 53
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Hyperspace Hole  
+- Electro Drift  
+- Flamethrower  
+- Ice Beam  
+
+Revavroom-Navi
+Ability: Toxic Debris  
+Level: 53
+Tera Type: Poison  
+- Noxious Torque  
+- Poison Gas  
+- Spin Out  
+- Shift Gear  
+
+
+=== TRAINER_MECHADOLL_4 === /* Route */
+Name: DOLL
+Class: Mecha Doll
+Pic: Collector
+Gender: Male
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Manectric
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Pokestar White Door (M)  
+Ability: Blaze  
+Level: 53
+EVs: 252 HP / 64 Atk / 128 Def / 64 SpA
+Impish Nature  
+- Heat Crash  
+- Mirror Coat  
+- Burning Bulwark  
+- Lava Plume
 
-Wailmer
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Pokestar MT2 @ Air Balloon  
+Ability: Flash Fire  
+Level: 53
+EVs: 252 HP / 252 SpA  
+Quiet Nature  
+IVs: 0 Atk / 0 Spe  
+- Dragon Pulse  
+- Flamethrower  
+- Thunderbolt  
+- Metal Burst  
 
-Makuhita
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Pokestar F-002 @ Chople Berry  
+Ability: Reckless  
+Level: 53
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Iron Head  
+- Flare Blitz  
+- Wild Charge  
+- Double-Edge  
 
-=== TRAINER_WILTON_5 === /* Route */
-Name: WILTON
-Class: Cooltrainer
-Pic: Ace Trainer M ORAS 80
-Gender: Male
-Music: Cool
-Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+Revavroom-Segin
+Ability: Intimidate  
+Level: 53
+Tera Type: Dark  
+- Wicked Torque  
+- Spin Out  
+- Flame Charge  
+- Parting Shot  
 
-Manectric
-Level: 35
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-
-Wailmer
-Level: 35
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-
-Hariyama
-Level: 35
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_WARREN === /* Route 133 */ /* TO BE ADDED */
 Name: WARREN
@@ -4762,7 +4923,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Mist
 - Protect
 
-=== TRAINER_KEIRA === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_KEIRA === /* Trick House 8 */ /* TO BE ADDED */
 Name: KEIRA
 Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
@@ -5067,7 +5228,7 @@ Level: 12
 === TRAINER_JIMMY === /* Route 104 */
 Name: JIMMY
 Class: School Kid
-Pic: School Kid M
+Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -5867,7 +6028,7 @@ IVs: 0 Atk
 === TRAINER_SHIRLEY === /* Mt. Chimney */ 
 Name: SHILOH
 Class: Rich Boy
-Pic: Rich Boy
+Pic: Rich Boy ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -6173,7 +6334,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_WINSTON_1 === /* Route 104 North */
 Name: WINSTON
 Class: Rich Boy
-Pic: Rich Boy
+Pic: Rich Boy ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -6261,7 +6422,7 @@ IVs: 0 Atk
 === TRAINER_GARRET === /* S.S. Tidal */ /* TO BE ADDED */
 Name: GARRET
 Class: Rich Boy
-Pic: Rich Boy
+Pic: Rich Boy ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -6426,7 +6587,7 @@ EVs: 252 HP
 === TRAINER_STEVE_1 === /* Route 114 */ 
 Name: STEVE
 Class: Pokemaniac
-Pic: Pokemaniac
+Pic: Pokemaniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -6521,7 +6682,7 @@ IVs: 0 Atk
 === TRAINER_MARK === /* Mt. Pyre 2F */
 Name: MARK
 Class: Pokemaniac
-Pic: Pokemaniac
+Pic: Pokemaniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -6705,7 +6866,7 @@ IVs: 0 Atk
 === TRAINER_THEODORE === /* Route 110 Pre-Brawly */
 Name: THEODORE
 Class: School Kid
-Pic: School Kid M
+Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -7811,22 +7972,48 @@ Machamp @ Black Belt
 Level: 33
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-=== TRAINER_YUJI === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_YUJI === /* Trick House 4 */
 Name: YUJI
 Class: Black Belt
 Pic: Black Belt ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Hard Trick Room / Custom Strategies
 
-Makuhita
-Level: 26
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Shuckle @ Mental Herb  
+Ability: Sturdy  
+Level: 50
+EVs: 252 HP / 252 Def  
+Relaxed Nature  
+IVs: 0 Atk  
+- Mimic  
+- Protect  
+- Wrap
 
-Machoke
-Level: 26
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Slowbro  
+Ability: Oblivious  
+Level: 50
+EVs: 252 HP  
+Relaxed Nature  
+IVs: 0 Atk  
+- Trick Room  
+- Body Press  
+- Slack Off  
+- Psychic
+
+Cofagrigus @ Mental Herb  
+Ability: Mummy  
+Level: 50
+EVs: 252 HP  
+Relaxed Nature  
+IVs: 0 Atk  
+- Trick Room  
+- Body Press  
+- Night Shade
+- Flash Cannon
+
+
 
 === TRAINER_DAISUKE === /* Route 111 North */ 
 Name: DAISUKE
@@ -8674,7 +8861,7 @@ IVs: 0 Atk
 === TRAINER_BEAU === /* Route 111 Desert */ 
 Name: BEAU
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -8856,7 +9043,7 @@ IVs: 0 Atk
 - Earth Power  
 
 
-=== TRAINER_JUSTIN === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_JUSTIN === /* Trick House 3 */ /* TO BE ADDED */
 Name: JUSTIN
 Class: Camper
 Pic: Camper ORAS 80
@@ -8872,7 +9059,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ETHAN_1 === /* Jagged Pass */ 
 Name: ETHAN
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -9433,7 +9620,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_EDWARD === /* Route 110 */
 Name: EDWARD
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9490,7 +9677,7 @@ IVs: 0 Atk / 0 Spe
 === TRAINER_PRESTON === /* Mossdeep Gym */ 
 Name: PRESTON
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9542,7 +9729,7 @@ IVs: 0 Atk
 === TRAINER_VIRGIL === /* Mossdeep Gym */ 
 Name: VIRGIL
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9598,7 +9785,7 @@ IVs: 0 Atk
 === TRAINER_BLAKE === /* Mossdeep Gym */ 
 Name: BLAKE
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9655,7 +9842,7 @@ IVs: 0 Atk
 === TRAINER_WILLIAM === /* Mt. Pyre 3F */ /* TO BE ADDED */
 Name: WILLIAM
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9676,7 +9863,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JOSHUA === /* Trick House */ /* TO BE ADDED */
 Name: JOSHUA
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9743,7 +9930,7 @@ IVs: 0 Atk
 === TRAINER_CAMERON_2 === /* Route */
 Name: CAMERON
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9760,7 +9947,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_CAMERON_3 === /* Route */
 Name: CAMERON
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9777,7 +9964,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_CAMERON_4 === /* Route */
 Name: CAMERON
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9794,7 +9981,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_CAMERON_5 === /* Route */
 Name: CAMERON
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -9858,7 +10045,7 @@ Tera Type: Grass
 === TRAINER_HANNAH === /* Mossdeep Gym */ /* TO BE ADDED */
 Name: HANNAH
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -9871,7 +10058,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_SAMANTHA === /* Mossdeep Gym */ 
 Name: SAMANTHA
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -9925,7 +10112,7 @@ IVs: 0 Atk
 === TRAINER_MAURA === /* Mossdeep Gym */ 
 Name: MAURA
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -9982,7 +10169,7 @@ IVs: 0 Atk
 === TRAINER_KAYLA === /* Mt. Pyre 3F */ /* TO BE ADDED */
 Name: KAYLA
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -10003,7 +10190,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ALEXIS === /* Trick House */ /* TO BE ADDED */
 Name: ALEXIS
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -10020,7 +10207,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JACKI_1 === /* Route 123 */ /* TO BE ADDED */
 Name: JACKI
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -10037,7 +10224,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JACKI_2 === /* Route */
 Name: JACKI
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -10054,7 +10241,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_JACKI_3 === /* Route */
 Name: JACKI
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -10071,7 +10258,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_JACKI_4 === /* Route */
 Name: JACKI
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -10088,7 +10275,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_JACKI_5 === /* Route */
 Name: JACKI
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -10279,7 +10466,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_SIDNEY === /* Ever Grande City */
 Name: SIDNEY
 Class: Elite Four
-Pic: Elite Four Sidney
+Pic: Sidney ORAS 80
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
@@ -10328,7 +10515,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_PHOEBE === /* Ever Grande City */
 Name: PHOEBE
 Class: Elite Four
-Pic: Elite Four Phoebe
+Pic: Phoebe ORAS 80
 Gender: Female
 Music: Elite Four
 Double Battle: Yes
@@ -11128,7 +11315,7 @@ IVs: 0 Atk
 === TRAINER_JERRY_1 === /* Route 116 */
 Name: JERRY
 Class: School Kid
-Pic: School Kid M
+Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -11175,7 +11362,7 @@ IVs: 0 Atk
 === TRAINER_TED === /* Trick House */ /* TO BE ADDED */
 Name: TED
 Class: School Kid
-Pic: School Kid M
+Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -11188,7 +11375,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_PAUL === /* Trick House 2 */ 
 Name: PAUL
 Class: School Kid
-Pic: School Kid M
+Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -11235,7 +11422,7 @@ IVs: 0 Atk / 0 Spe
 === TRAINER_JERRY_2 === /* Route */
 Name: JERRY
 Class: School Kid
-Pic: School Kid M
+Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -11252,7 +11439,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_JERRY_3 === /* Route */
 Name: JERRY
 Class: School Kid
-Pic: School Kid M
+Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -11269,7 +11456,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_JERRY_4 === /* Route */
 Name: JERRY
 Class: School Kid
-Pic: School Kid M
+Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -11286,7 +11473,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_JERRY_5 === /* Route */
 Name: JERRY
 Class: School Kid
-Pic: School Kid M
+Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -11362,7 +11549,7 @@ IVs: 0 Atk
 === TRAINER_GEORGIA === /* Trick House 2 */ 
 Name: GEORGIA
 Class: School Kid
-Pic: School Kid F
+Pic: School Kid F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -11410,7 +11597,7 @@ IVs: 0 Atk
 === TRAINER_KAREN_2 === /* Route */
 Name: KAREN
 Class: School Kid
-Pic: School Kid F
+Pic: School Kid F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -11427,7 +11614,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_KAREN_3 === /* Route */
 Name: KAREN
 Class: School Kid
-Pic: School Kid F
+Pic: School Kid F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -11444,7 +11631,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_KAREN_4 === /* Route */
 Name: KAREN
 Class: School Kid
-Pic: School Kid F
+Pic: School Kid F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -11461,7 +11648,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_KAREN_5 === /* Route */
 Name: KAREN
 Class: School Kid
-Pic: School Kid F
+Pic: School Kid F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -12015,7 +12202,7 @@ IVs: 0 Atk
 
 === TRAINER_HILL_3 ===
 Name: SIDNEY
-Pic: Elite Four Sidney
+Pic: Sidney ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -12329,7 +12516,7 @@ IVs: 0 Atk
 
 === TRAINER_HILL_5 === /* Route */
 Name: PHOEBE
-Pic: Elite Four Phoebe
+Pic: Phoebe ORAS 80
 Gender: Female
 Music: Elite Four
 Double Battle: Yes
@@ -13192,7 +13379,7 @@ Tera Type: Grass
 === TRAINER_JOSH === /* Rustboro Gym */
 Name: JOSH
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -13241,7 +13428,7 @@ IVs: 0 Atk
 === TRAINER_TOMMY === /* Rustboro Gym */
 Name: TOMMY
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -13766,7 +13953,7 @@ Tera Type: Normal
 === TRAINER_WALLACE === /* Ever Grande City */
 Name: WALLACE
 Class: Elite Four
-Pic: Champion Wallace
+Pic: Wallace ORAS 80
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
@@ -15750,7 +15937,7 @@ Swablu
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BENNY === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_BENNY === /* Trick House 6 */ /* TO BE ADDED */
 Name: BENNY
 Class: Bird Keeper
 Pic: Bird Keeper ORAS 80
@@ -16474,8 +16661,8 @@ Ability: Iron Fist
 Tera Type: Bug  
 - Mach Punch  
 - Power-Up Punch  
-- Ice Punch  
-- Thunder Punch  
+- Comet Punch  
+- Acrobatics  
 
 Falinks  
 Level: 45
@@ -16505,20 +16692,47 @@ Tera Type: Fighting
 - Detect  
 
 
-=== TRAINER_CORA === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_CORA === /* Trick House 4 */ 
 Name: CORA
 Class: Battle Girl
 Pic: Battle Girl ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Custom Strategies
 
-Meditite
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Shuckle  
+Ability: Sturdy  
+Level: 55
+EVs: 252 HP / 64 Def / 192 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Guard Split  
+- Final Gambit  
+- Acupressure  
+- Sticky Web  
 
-=== TRAINER_PAULA === /* Trick House */ /* TO BE ADDED */
+Chansey (F) @ Eviolite  
+Ability: Healer  
+Level: 50
+EVs: 252 Def / 252 SpA  
+Calm Nature  
+IVs: 0 Atk  
+- Seismic Toss  
+- Soft-Boiled  
+- Charge Beam  
+- Substitute  
+
+Hitmonchan (M)  
+Ability: Blitz Boxer
+Level: 50
+EVs: 252 HP / 252 Atk
+- Power-Up Punch  
+- Fake Out  
+- Dizzy Punch  
+- Encore
+
+=== TRAINER_PAULA === /* Trick House 4 */
 Name: PAULA
 Class: Battle Girl
 Pic: Battle Girl ORAS 80
@@ -16527,9 +16741,30 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Breloom
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Wobbuffet @ Sitrus Berry
+Ability: Shadow Tag  
+Level: 50
+EVs: 252 HP / 92 Def / 164 SpD  
+Bold Nature
+- Taunt
+- Bide
+
+Grafaiai  
+Ability: Prankster  
+Level: 50
+- Taunt  
+- Super Fang  
+- Shadow Claw  
+- Toxic  
+
+Malamar  
+Ability: Contrary  
+Level: 50
+EVs: 252 HP
+- Stored Power  
+- Superpower  
+- Psycho Boost  
+
 
 === TRAINER_CYNDY_2 === /* Route */
 Name: CYNDY
@@ -17782,7 +18017,7 @@ Adamant Nature
 === TRAINER_NANCY === /* Route 114 */ 
 Name: NANCY
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -17850,7 +18085,7 @@ EVs: 252 HP
 - Destiny Bond
 - Encore
 
-=== TRAINER_MARTHA === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_MARTHA === /* Trick House 3 */ /* TO BE ADDED */
 Name: MARTHA
 Class: Picnicker
 Pic: Picnicker ORAS 80
@@ -17870,7 +18105,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_DIANA_1 === /* Jagged Pass */ 
 Name: DIANA
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -17920,7 +18155,7 @@ Tera Type: Normal
 === TRAINER_CEDRIC === /* Mt Pyre */
 Name: CEDRIC
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -18334,7 +18569,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_HUEY === /* Route 109 */
 Name: HUEY
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18379,7 +18614,7 @@ Ability: Sand Force
 === TRAINER_EDMOND === /* Route 109 */
 Name: EDMOND
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18424,7 +18659,7 @@ Tera Type: Rock
 === TRAINER_ERNEST_1 === /* Route 125 */
 Name: ERNEST
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18473,7 +18708,7 @@ Tera Type: Dark
 === TRAINER_DWAYNE === /* Route 109 House */
 Name: DWAYNE
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18521,7 +18756,7 @@ IVs: 0 Atk / 12 SpA
 === TRAINER_PHILLIP === /* SS Tidal */
 Name: PHILLIP
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18538,7 +18773,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LEONARD === /* SS Tidal */
 Name: LEONARD
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18559,7 +18794,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_DUNCAN === /* Abandoned Ship */ /* TO BE ADDED */
 Name: DUNCAN
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18576,7 +18811,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ERNEST_2 === /* Route */
 Name: ERNEST
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18597,7 +18832,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_ERNEST_3 === /* Route */
 Name: ERNEST
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18618,7 +18853,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_ERNEST_4 === /* Route */
 Name: ERNEST
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18639,7 +18874,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ERNEST_5 === /* Route */
 Name: ERNEST
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18894,7 +19129,7 @@ Tera Type: Dragon
 === TRAINER_KELVIN === /* Route 134 */
 Name: KELVIN
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -18997,7 +19232,7 @@ Tera Type: Fighting
 === TRAINER_HUDSON === /* Route 134 */
 Name: HUDSON
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -20654,7 +20889,7 @@ IVs: 0 Atk
 === TRAINER_ISAAC_1 === /* Route 117 */
 Name: ISAAC
 Class: Pkmn Breeder
-Pic: Pokemon Breeder M
+Pic: Pokemon Breeder M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -20819,7 +21054,7 @@ Jolly Nature
 === TRAINER_ISAAC_2 === /* Route */
 Name: ISAAC
 Class: Pkmn Breeder
-Pic: Pokemon Breeder M
+Pic: Pokemon Breeder M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -20852,7 +21087,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_ISAAC_3 === /* Route */
 Name: ISAAC
 Class: Pkmn Breeder
-Pic: Pokemon Breeder M
+Pic: Pokemon Breeder M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -20885,7 +21120,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_ISAAC_4 === /* Route */
 Name: ISAAC
 Class: Pkmn Breeder
-Pic: Pokemon Breeder M
+Pic: Pokemon Breeder M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -20918,7 +21153,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ISAAC_5 === /* Route */
 Name: ISAAC
 Class: Pkmn Breeder
-Pic: Pokemon Breeder M
+Pic: Pokemon Breeder M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -20951,7 +21186,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_LYDIA_1 === /* Route 117 */ 
 Name: LYDIA
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -21068,7 +21303,7 @@ IVs: 0 Atk
 === TRAINER_GARRISON === /* Abandoned Ship */ /* TO BE ADDED */
 Name: GARRISON
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -21081,7 +21316,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LYDIA_2 === /* Route */
 Name: LYDIA
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -21114,7 +21349,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_LYDIA_3 === /* Route */
 Name: LYDIA
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -21147,7 +21382,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_LYDIA_4 === /* Route */
 Name: LYDIA
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -21180,7 +21415,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_LYDIA_5 === /* Route */
 Name: LYDIA
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -21213,7 +21448,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_JACKSON_1 === /* Route 119 */
 Name: JACKSON
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -21260,7 +21495,7 @@ Tera Type: Normal
 === TRAINER_LORENZO === /* Route 120 */
 Name: LORENZO
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -21303,10 +21538,10 @@ Tera Type: Electric
 - Stomping Tantrum  
 
 
-=== TRAINER_SEBASTIAN === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_SEBASTIAN === /* Trick House 6 */ /* TO BE ADDED */
 Name: SEBASTIAN
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -21319,7 +21554,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_JACKSON_2 === /* Route */
 Name: JACKSON
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -21332,7 +21567,7 @@ IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 === TRAINER_JACKSON_3 === /* Route */
 Name: JACKSON
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -21345,7 +21580,7 @@ IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 === TRAINER_JACKSON_4 === /* Route */
 Name: JACKSON
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -21358,7 +21593,7 @@ IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 === TRAINER_JACKSON_5 === /* Route */
 Name: JACKSON
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
@@ -21375,7 +21610,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 === TRAINER_CATHERINE_1 === /* Route 119 */
 Name: CATHERINE
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -21421,7 +21656,7 @@ Tera Type: Normal
 === TRAINER_JENNA === /* Route 120 */
 Name: JENNA
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -21466,10 +21701,10 @@ Tera Type: Normal
 - Cotton Guard  
 
 
-=== TRAINER_SOPHIA === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_SOPHIA === /* Trick House 6 */ /* TO BE ADDED */
 Name: SOPHIA
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -21486,7 +21721,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_CATHERINE_2 === /* Route */
 Name: CATHERINE
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -21503,7 +21738,7 @@ IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 === TRAINER_CATHERINE_3 === /* Route */
 Name: CATHERINE
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -21520,7 +21755,7 @@ IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 === TRAINER_CATHERINE_4 === /* Route */
 Name: CATHERINE
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -21537,7 +21772,7 @@ IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 === TRAINER_CATHERINE_5 === /* Route */
 Name: CATHERINE
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -21799,7 +22034,7 @@ Level: 46
 === TRAINER_BRENDEN === /* Dewford Gym */
 Name: BRENDEN
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -21924,14 +22159,13 @@ Tera Type: Fighting
 - Power-Up Punch  
 - Ice Punch  
 
-Ledian @ Charti Berry  
-Ability: Iron Fist  
+Ledian @ Charti Berry
 Level: 20
+Ability: Iron Fist  
 Tera Type: Bug  
-- Comet Punch  
+- Mach Punch  
 - Ice Punch  
 - Thunder Punch  
-- Acrobatics  
 
 
 === TRAINER_SYLVIA === /* Mossdeep Gym */ 
@@ -22092,7 +22326,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TERRY === /* Route */ /* TO BE ADDED */
 Name: TERRY
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -22231,7 +22465,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_NICHOLAS === /* Mossdeep Gym */
 Name: NICHOLAS
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -22516,7 +22750,7 @@ Jolly Nature
 === TRAINER_MACEY === /* Mossdeep Gym */ 
 Name: MACEY
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -24187,7 +24421,7 @@ Level: 45
 === TRAINER_LENNY === /* Route 114 */ 
 Name: LENNY
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -24282,7 +24516,7 @@ Level: 45
 
 
 
-=== TRAINER_ALAN === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_ALAN === /* Trick House 3 */ /* TO BE ADDED */
 Name: ALAN
 Class: Hiker
 Pic: Hiker ORAS 80
@@ -24898,7 +25132,7 @@ Tera Type: Steel
 === TRAINER_DANIELLE === /* Rustboro Gym */
 Name: DANIELLE
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
@@ -26780,7 +27014,7 @@ Tera Type: Water
 === TRAINER_DAWSON === /* Route 116 */
 Name: DAWSON
 Class: Rich Boy
-Pic: Rich Boy
+Pic: Rich Boy ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -27589,7 +27823,7 @@ Tera Type: Poison
 === TRAINER_WYATT === /* Route 113 */
 Name: WYATT
 Class: Pokemaniac
-Pic: Pokemaniac
+Pic: Pokemaniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
@@ -28631,7 +28865,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ANDRES_1 === /* Route 105 */ 
 Name: ANDRES
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -28767,7 +29001,7 @@ Level: 52
 === TRAINER_CORY_1 === /* Route 108 */
 Name: CORY
 Class: Sailor
-Pic: Sailor
+Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -28868,7 +29102,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BRYAN === /* Route 111 Desert */ 
 Name: BRYAN
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -29149,7 +29383,7 @@ IVs: 0 Atk
 === TRAINER_ALIX === /* Route 115 */ 
 Name: ALIX
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -29245,7 +29479,7 @@ Tera Type: Rock
 === TRAINER_MARLENE === /* Route 115 */
 Name: MARLENE
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -29449,7 +29683,7 @@ IVs: 0 Atk
 === TRAINER_BRANDI === /* Route 117 */
 Name: BRANDI
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -29819,7 +30053,7 @@ Tera Type: Poison
 === TRAINER_MYLES === /* Route 121 */ /* TO BE ADDED */
 Name: MYLES
 Class: Pkmn Breeder
-Pic: Pokemon Breeder M
+Pic: Pokemon Breeder M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -29852,7 +30086,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_PAT === /* Route 121 */ 
 Name: PAT
 Class: Rich Boy
-Pic: Rich Boy
+Pic: Rich Boy ORAS 80
 Gender: Male
 Music: Rich
 Double Battle: Yes
@@ -31881,7 +32115,7 @@ Level: 59
 === TRAINER_STEVEN_1 === /* Ever Grande City */
 Name: STEVEN
 Class: Champion
-Pic: Steven
+Pic: Steven ORAS 80
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
@@ -32200,7 +32434,7 @@ Adamant Nature
 === TRAINER_LUCY === /* Ever Grande City */
 Name: LUCY
 Class: Elite Four
-Pic: Pike Queen Lucy
+Pic: Lucy ORAS 80
 Gender: Female
 Music: Elite Four
 Double Battle: Yes
@@ -32518,7 +32752,7 @@ IVs: 0 Atk
 === TRAINER_STEVEN_2 === /* Route */
 Name: STEVEN
 Class: Champion
-Pic: Steven
+Pic: Steven ORAS 80
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
@@ -32591,7 +32825,7 @@ Tera Type: Steel
 === TRAINER_STEVEN_3 === /* Route */
 Name: STEVEN
 Class: Champion
-Pic: Steven
+Pic: Steven ORAS 80
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
@@ -32612,7 +32846,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_STEVEN_4 === /* Route */
 Name: STEVEN
 Class: Champion
-Pic: Steven
+Pic: Steven ORAS 80
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
@@ -32633,7 +32867,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_WALLACE_2 === /* Route */
 Name: WALLACE
 Class: Elite Four
-Pic: Champion Wallace
+Pic: Wallace ORAS 80
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
@@ -32741,7 +32975,7 @@ IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground I
 === TRAINER_WALLACE_3 === /* Route */
 Name: WALLACE
 Class: Elite Four
-Pic: Champion Wallace
+Pic: Wallace ORAS 80
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
@@ -32758,7 +32992,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_WALLACE_4 === /* Route */
 Name: WALLACE
 Class: Elite Four
-Pic: Champion Wallace
+Pic: Wallace ORAS 80
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
@@ -32779,7 +33013,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_LUCY_2 === /* Route */
 Name: LUCY
 Class: Elite Four
-Pic: Pike Queen Lucy
+Pic: Lucy ORAS 80
 Gender: Female
 Music: Elite Four
 Double Battle: Yes
@@ -32855,7 +33089,7 @@ Mild Nature
 === TRAINER_LUCY_3 === /* Route */
 Name: LUCY
 Class: Elite Four
-Pic: Pike Queen Lucy
+Pic: Lucy ORAS 80
 Gender: Female
 Music: Elite Four
 Double Battle: Yes
@@ -32876,7 +33110,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_LUCY_4 === /* Route */
 Name: LUCY
 Class: Elite Four
-Pic: Pike Queen Lucy
+Pic: Lucy ORAS 80
 Gender: Female
 Music: Elite Four
 Double Battle: Yes
@@ -33321,7 +33555,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_GABRIELLE_2 === /* Route */
 Name: GABRIELLE
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -33354,7 +33588,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_GABRIELLE_3 === /* Route */
 Name: GABRIELLE
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -33387,7 +33621,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_GABRIELLE_4 === /* Route */
 Name: GABRIELLE
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -33420,7 +33654,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_GABRIELLE_5 === /* Route */
 Name: GABRIELLE
 Class: Pkmn Breeder
-Pic: Pokemon Breeder F
+Pic: Pokemon Breeder F ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
@@ -33533,7 +33767,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_MARIELA === /* Trick House */ /* TO BE ADDED */
 Name: MARIELA
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
@@ -33545,7 +33779,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ALVARO === /* Trick House */ /* TO BE ADDED */
 Name: ALVARO
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -33675,3 +33909,4 @@ Double Battle: Yes
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+

@@ -88,10 +88,10 @@
 #define TRAINER_SAMUEL                       81
 #define TRAINER_VITO                         82
 #define TRAINER_OWEN                         83
-#define TRAINER_WILTON_2                     84
-#define TRAINER_WILTON_3                     85
-#define TRAINER_WILTON_4                     86
-#define TRAINER_WILTON_5                     87
+#define TRAINER_MECHADOLL_1                     84 //hijacked rematches of Wilton in 91-94 for Trick House Mechadolls
+#define TRAINER_MECHADOLL_2                     85 //hijacked rematches of Wilton in 91-94 for Trick House Mechadolls
+#define TRAINER_MECHADOLL_3                     86 //hijacked rematches of Wilton in 91-94 for Trick House Mechadolls
+#define TRAINER_MECHADOLL_4                     87 //hijacked rematches of Wilton in 91-94 for Trick House Mechadolls
 #define TRAINER_WARREN                       88
 #define TRAINER_MARY                         89
 #define TRAINER_ALEXIA                       90
