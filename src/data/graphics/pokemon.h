@@ -27502,6 +27502,44 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_PECHARUNT
 
+    // Custom Starmobile Forms
+    const u32 gMonFrontPic_RevavroomSegin[] = INCGFX_U32("graphics/pokemon/starmobile/starmobile-segin.png", ".4bpp.smol");
+    const u16 gMonPalette_RevavroomSegin[] = INCGFX_U16("graphics/pokemon/starmobile/starmobile-segin.png", ".gbapal");
+    const u32 gMonFrontPic_RevavroomSchedar[] = INCGFX_U32("graphics/pokemon/starmobile/starmobile-schedar.png", ".4bpp.smol");
+    const u16 gMonPalette_RevavroomSchedar[] = INCGFX_U16("graphics/pokemon/starmobile/starmobile-schedar.png", ".gbapal");
+    const u32 gMonFrontPic_RevavroomNavi[] = INCGFX_U32("graphics/pokemon/starmobile/starmobile-navi.png", ".4bpp.smol");
+    const u16 gMonPalette_RevavroomNavi[] = INCGFX_U16("graphics/pokemon/starmobile/starmobile-navi.png", ".gbapal");
+    const u32 gMonFrontPic_RevavroomRuchbah[] = INCGFX_U32("graphics/pokemon/starmobile/starmobile-ruchbah.png", ".4bpp.smol");
+    const u16 gMonPalette_RevavroomRuchbah[] = INCGFX_U16("graphics/pokemon/starmobile/starmobile-ruchbah.png", ".gbapal");
+    const u32 gMonFrontPic_RevavroomCaph[] = INCGFX_U32("graphics/pokemon/starmobile/starmobile-caph.png", ".4bpp.smol");
+    const u16 gMonPalette_RevavroomCaph[] = INCGFX_U16("graphics/pokemon/starmobile/starmobile-caph.png", ".gbapal");
+
+    // Custom Placeholder Species
+    const u32 gMonFrontPic_PokestarBlackDoor[] = INCGFX_U32("graphics/pokemon/pokestar/Black-Door.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarBlackDoor[] = INCGFX_U16("graphics/pokemon/pokestar/Black-Door.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarF00[] = INCGFX_U32("graphics/pokemon/pokestar/F-00.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarF00[] = INCGFX_U16("graphics/pokemon/pokestar/F-00.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarF002[] = INCGFX_U32("graphics/pokemon/pokestar/F-002.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarF002[] = INCGFX_U16("graphics/pokemon/pokestar/F-002.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarHumanoid[] = INCGFX_U32("graphics/pokemon/pokestar/Humanoid.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarHumanoid[] = INCGFX_U16("graphics/pokemon/pokestar/Humanoid.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarMajin[] = INCGFX_U32("graphics/pokemon/pokestar/Majin.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarMajin[] = INCGFX_U16("graphics/pokemon/pokestar/Majin.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarMt[] = INCGFX_U32("graphics/pokemon/pokestar/MT.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarMt[] = INCGFX_U16("graphics/pokemon/pokestar/MT.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarMt2[] = INCGFX_U32("graphics/pokemon/pokestar/MT2.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarMt2[] = INCGFX_U16("graphics/pokemon/pokestar/MT2.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarMonster[] = INCGFX_U32("graphics/pokemon/pokestar/Monster.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarMonster[] = INCGFX_U16("graphics/pokemon/pokestar/Monster.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarTransport[] = INCGFX_U32("graphics/pokemon/pokestar/Transport.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarTransport[] = INCGFX_U16("graphics/pokemon/pokestar/Transport.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarUfo[] = INCGFX_U32("graphics/pokemon/pokestar/UFO.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarUfo[] = INCGFX_U16("graphics/pokemon/pokestar/UFO.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarUfo2[] = INCGFX_U32("graphics/pokemon/pokestar/UFO2.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarUfo2[] = INCGFX_U16("graphics/pokemon/pokestar/UFO2.png", ".gbapal");
+    const u32 gMonFrontPic_PokestarWhiteDoor[] = INCGFX_U32("graphics/pokemon/pokestar/White-Door.png", ".4bpp.smol");
+    const u16 gMonPalette_PokestarWhiteDoor[] = INCGFX_U16("graphics/pokemon/pokestar/White-Door.png", ".gbapal");
+
     const u32 gMonFrontPic_Egg[] = INCGFX_U32("graphics/pokemon/egg/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Egg[] = INCGFX_U16("graphics/pokemon/egg/normal.pal", ".gbapal");
     const u8 gMonIcon_Egg[] = INCGFX_U8("graphics/pokemon/egg/icon.png", ".4bpp");

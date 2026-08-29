@@ -463,6 +463,60 @@ const u16 gTrainerPalette_PicnickerORAS80[] = INCGFX_U16("graphics/trainers/fron
 const u32 gTrainerFrontPic_PokefanFORAS80[] = INCGFX_U32("graphics/trainers/front_pics/pokefan-f-oras-80.png", ".4bpp.smol");
 const u16 gTrainerPalette_PokefanFORAS80[] = INCGFX_U16("graphics/trainers/front_pics/pokefan-f-oras-80.png", ".gbapal");
 
+const u32 gTrainerFrontPic_SchoolKidMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/school-kid-m-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_SchoolKidMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/school-kid-m-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_SchoolKidFORAS80[] = INCGFX_U32("graphics/trainers/front_pics/school-kid-f-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_SchoolKidFORAS80[] = INCGFX_U16("graphics/trainers/front_pics/school-kid-f-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_SailorORAS80[] = INCGFX_U32("graphics/trainers/front_pics/sailor-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_SailorORAS80[] = INCGFX_U16("graphics/trainers/front_pics/sailor-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_RuinManiacORAS80[] = INCGFX_U32("graphics/trainers/front_pics/ruin-maniac-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_RuinManiacORAS80[] = INCGFX_U16("graphics/trainers/front_pics/ruin-maniac-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_RichBoyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/rich-boy-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_RichBoyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/rich-boy-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PsychicMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/psychic-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PsychicMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/psychic-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PsychicFORAS80[] = INCGFX_U32("graphics/trainers/front_pics/psychic-f-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PsychicFORAS80[] = INCGFX_U16("graphics/trainers/front_pics/psychic-f-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PokemonRangerMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/pokemon-ranger-m-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PokemonRangerMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/pokemon-ranger-m-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PokemonRangerFORAS80[] = INCGFX_U32("graphics/trainers/front_pics/pokemon-ranger-f-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PokemonRangerFORAS80[] = INCGFX_U16("graphics/trainers/front_pics/pokemon-ranger-f-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PokemonBreederMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/pokemon-breeder-m-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PokemonBreederMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/pokemon-breeder-m-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PokemonBreederFORAS80[] = INCGFX_U32("graphics/trainers/front_pics/pokemon-breeder-f-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PokemonBreederFORAS80[] = INCGFX_U16("graphics/trainers/front_pics/pokemon-breeder-f-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PokemoniacORAS80[] = INCGFX_U32("graphics/trainers/front_pics/pokemaniac-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PokemoniacORAS80[] = INCGFX_U16("graphics/trainers/front_pics/pokemaniac-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PokefanMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/pokefan-m-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PokefanMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/pokefan-m-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_SidneyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/sidney-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_SidneyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/sidney-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_PhoebeORAS80[] = INCGFX_U32("graphics/trainers/front_pics/phoebe-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_PhoebeORAS80[] = INCGFX_U16("graphics/trainers/front_pics/phoebe-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_LucyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/lucy-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_LucyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/lucy-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_StevenORAS80[] = INCGFX_U32("graphics/trainers/front_pics/steven-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_StevenORAS80[] = INCGFX_U16("graphics/trainers/front_pics/steven-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_WallaceORAS80[] = INCGFX_U32("graphics/trainers/front_pics/wallace-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_WallaceORAS80[] = INCGFX_U16("graphics/trainers/front_pics/wallace-oras-80.png", ".gbapal");
+
 const u32 gTrainerFrontPic_YoungsterFrlg[] = INCGFX_U32("graphics/trainers/front_pics/youngster_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_YoungsterFrlg[] = INCGFX_U16("graphics/trainers/palettes/youngster_frlg.pal", ".gbapal");
 
@@ -1626,6 +1680,78 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_POKEFAN_F_ORAS_80] =
     {
         .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PokefanFORAS80, gTrainerPalette_PokefanFORAS80),
+    },
+    [TRAINER_PIC_SCHOOL_KID_M_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_SchoolKidMORAS80, gTrainerPalette_SchoolKidMORAS80),
+    },
+    [TRAINER_PIC_SCHOOL_KID_F_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_SchoolKidFORAS80, gTrainerPalette_SchoolKidFORAS80),
+    },
+    [TRAINER_PIC_SAILOR_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_SailorORAS80, gTrainerPalette_SailorORAS80),
+    },
+    [TRAINER_PIC_RUIN_MANIAC_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_RuinManiacORAS80, gTrainerPalette_RuinManiacORAS80),
+    },
+    [TRAINER_PIC_RICH_BOY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_RichBoyORAS80, gTrainerPalette_RichBoyORAS80),
+    },
+    [TRAINER_PIC_PSYCHIC_M_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PsychicMORAS80, gTrainerPalette_PsychicMORAS80),
+    },
+    [TRAINER_PIC_POKEMON_RANGER_M_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PokemonRangerMORAS80, gTrainerPalette_PokemonRangerMORAS80),
+    },
+    [TRAINER_PIC_POKEMON_RANGER_F_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PokemonRangerFORAS80, gTrainerPalette_PokemonRangerFORAS80),
+    },
+    [TRAINER_PIC_POKEMON_BREEDER_M_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PokemonBreederMORAS80, gTrainerPalette_PokemonBreederMORAS80),
+    },
+    [TRAINER_PIC_POKEMON_BREEDER_F_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PokemonBreederFORAS80, gTrainerPalette_PokemonBreederFORAS80),
+    },
+    [TRAINER_PIC_POKEMANIAC_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PokemoniacORAS80, gTrainerPalette_PokemoniacORAS80),
+    },
+    [TRAINER_PIC_POKEFAN_M_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PokefanMORAS80, gTrainerPalette_PokefanMORAS80),
+    },
+    [TRAINER_PIC_SIDNEY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_SidneyORAS80, gTrainerPalette_SidneyORAS80),
+    },
+    [TRAINER_PIC_PHOEBE_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PhoebeORAS80, gTrainerPalette_PhoebeORAS80),
+    },
+    [TRAINER_PIC_LUCY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_LucyORAS80, gTrainerPalette_LucyORAS80),
+    },
+    [TRAINER_PIC_STEVEN_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_StevenORAS80, gTrainerPalette_StevenORAS80),
+    },
+    [TRAINER_PIC_WALLACE_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_WallaceORAS80, gTrainerPalette_WallaceORAS80),
+    },
+    [TRAINER_PIC_PSYCHIC_F_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PsychicFORAS80, gTrainerPalette_PsychicFORAS80),
     },
 
     [TRAINER_PIC_PROFESSOR_TURO] =
