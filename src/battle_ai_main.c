@@ -74,8 +74,10 @@ static s32 AI_HardTrickRoom(enum BattlerId battlerAtk, enum BattlerId battlerDef
 static s32 AI_DynamicFunc(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_PredictSwitch(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_CheckPpStall(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
+static s32 AI_CustomStrategies(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static bool32 ShouldAvoidDoubleTargetKO(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move);
 static bool32 ShouldDiscourageWideGuardSpread(enum BattlerId battlerAtk);
+static bool32 IsCustomStrategyGimmickSuppressed(enum BattlerId battler);
 
 static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Move, s32) =
 {
@@ -115,7 +117,7 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
     [33] = NULL,                     // Unused
     [34] = AI_HardTrickRoom,         // AI_FLAG_HARD_TRICK_ROOM
     [35] = NULL,                     // AI_FLAG_ILLUSION_TRICKS
-    [36] = NULL,                     // Unused
+    [36] = AI_CustomStrategies,      // AI_FLAG_CUSTOM_STRATEGIES
     [37] = NULL,                     // Unused
     [38] = NULL,                     // Unused
     [39] = NULL,                     // Unused
@@ -524,6 +526,10 @@ u32 BattleAI_ChooseMoveIndex(enum BattlerId battler)
 
     SetAIUsingGimmick(battler, USE_GIMMICK);
     SetupRandomRollsForAIMoveSelection(battler);
+
+    // Some Custom Strategies rely on not Terastalizing (e.g. keeping a Water weakness for Weakness Policy).
+    if (IsCustomStrategyGimmickSuppressed(battler))
+        SetAIUsingGimmick(battler, NO_GIMMICK);
 
     if (gBattleStruct->gimmick.usableGimmick[battler] == GIMMICK_TERA && (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SMART_TERA))
         DecideTerastal(battler);
@@ -6811,6 +6817,243 @@ static s32 AI_HardTrickRoom(enum BattlerId battlerAtk, enum BattlerId battlerDef
         break;
     default: // This flag must not affect any other move's score.
         break;
+    }
+
+    return score;
+}
+
+// AI_FLAG_CUSTOM_STRATEGIES: dispatcher for team-specific scripted strategies the generic AI can't
+// express. Each strategy is gated on a species/ability/item signature so unrelated Custom Strategies
+// trainers are unaffected.
+
+// Score large enough to dominate normal scoring, including fast kills and friendly-fire penalties.
+#define CUSTOM_STRATEGY_FORCE_MOVE 50
+
+// --- Strategy 1: TRAINER_GRUNT_MAGMA_HIDEOUT_14 (Bruxish + Coalossal) ---
+// Bruxish pivots a Water move into its Coalossal partner to trigger Steam Engine (+Speed) and an
+// un-triggered Weakness Policy (+Atk/SpA), then boosted Coalossal cleans up. Coalossal's damage
+// assumptions model the Weakness Policy boost locally (no shared-cache mutation), and both mons
+// suppress Terastal so Coalossal keeps its Water weakness.
+
+static bool32 IsBattlerWeakToWater(enum BattlerId battler)
+{
+    enum Type t1 = gBattleMons[battler].types[0];
+    enum Type t2 = gBattleMons[battler].types[1];
+    enum Type t3 = gBattleMons[battler].types[2];
+    uq4_12_t mod = GetTypeModifier(TYPE_WATER, t1);
+    if (t2 != t1)
+        mod = uq4_12_multiply(mod, GetTypeModifier(TYPE_WATER, t2));
+    if (t3 != TYPE_MYSTERY && t3 != t1 && t3 != t2)
+        mod = uq4_12_multiply(mod, GetTypeModifier(TYPE_WATER, t3));
+    return mod > UQ_4_12(1.0);
+}
+
+// The Weakness Policy / Steam Engine recipient whose combo has not fired yet.
+static bool32 IsUntriggeredWpSteamEngineMon(enum BattlerId battler)
+{
+    struct AiLogicData *aiData = gAiLogicData;
+    bool32 steamEngineReady = aiData->abilities[battler] == ABILITY_STEAM_ENGINE
+        && gBattleMons[battler].statStages[STAT_SPEED] < DEFAULT_STAT_STAGE + 4;
+    bool32 weaknessPolicyReady = aiData->holdEffects[battler] == HOLD_EFFECT_WEAKNESS_POLICY
+        && gBattleMons[battler].statStages[STAT_ATK] < DEFAULT_STAT_STAGE + 4
+        && IsBattlerWeakToWater(battler);
+    return steamEngineReady || weaknessPolicyReady;
+}
+
+static bool32 IsMagmaGrunt14Coalossal(enum BattlerId battler)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battler);
+    return gBattleMons[battler].species == SPECIES_COALOSSAL
+        && IsBattlerAlive(partner)
+        && gBattleMons[partner].species == SPECIES_BRUXISH
+        && IsUntriggeredWpSteamEngineMon(battler);
+}
+
+static bool32 IsMagmaGrunt14Bruxish(enum BattlerId battler)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battler);
+    return gBattleMons[battler].species == SPECIES_BRUXISH
+        && IsBattlerAlive(partner)
+        && gBattleMons[partner].species == SPECIES_COALOSSAL
+        && IsUntriggeredWpSteamEngineMon(partner);
+}
+
+// Called from BattleAI_ChooseMoveIndex to stop the combo mons from Terastalizing.
+static bool32 IsCustomStrategyGimmickSuppressed(enum BattlerId battler)
+{
+    if (!IsDoubleBattle() || !(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_CUSTOM_STRATEGIES))
+        return FALSE;
+    return IsMagmaGrunt14Coalossal(battler) || IsMagmaGrunt14Bruxish(battler);
+}
+
+static bool32 IsAbsoluteFastestOnField(enum BattlerId battler)
+{
+    for (enum BattlerId other = 0; other < gBattlersCount; other++)
+    {
+        if (other == battler || !IsBattlerAlive(other))
+            continue;
+        if (!AI_IsFaster(battler, other, MOVE_NONE, MOVE_NONE, DONT_CONSIDER_PRIORITY))
+            return FALSE;
+    }
+    return TRUE;
+}
+
+// Highest-roll damage assuming an un-triggered Weakness Policy has doubled the attacker's offense
+// (+2 Atk and +2 SpA). Tera is never assumed, matching the combo's Terastal suppression.
+static u32 CustomStrategy_WpBoostedMaxDamage(enum BattlerId atk, enum BattlerId def, enum Move move)
+{
+    uq4_12_t eff;
+    struct SimulatedDamage dmg;
+    u32 savedAtk = gBattleMons[atk].statStages[STAT_ATK];
+    u32 savedSpA = gBattleMons[atk].statStages[STAT_SPATK];
+
+    gBattleMons[atk].statStages[STAT_ATK] = (savedAtk + 2 > MAX_STAT_STAGE) ? MAX_STAT_STAGE : savedAtk + 2;
+    gBattleMons[atk].statStages[STAT_SPATK] = (savedSpA + 2 > MAX_STAT_STAGE) ? MAX_STAT_STAGE : savedSpA + 2;
+    dmg = AI_CalcDamageSaveBattlers(move, atk, def, &eff, NO_GIMMICK, NO_GIMMICK);
+    gBattleMons[atk].statStages[STAT_ATK] = savedAtk;
+    gBattleMons[atk].statStages[STAT_SPATK] = savedSpA;
+
+    return dmg.maximum;
+}
+
+static u32 CustomStrategy_WpBoostedHitsToKO(enum BattlerId atk, enum BattlerId def, enum Move move)
+{
+    return GetNoOfHitsToKO(CustomStrategy_WpBoostedMaxDamage(atk, def, move), gBattleMons[def].hp);
+}
+
+// True (non-Tera) damage of a move, used to check a Water pivot won't accidentally KO the partner.
+static bool32 CustomStrategy_MoveWouldFaint(enum BattlerId atk, enum BattlerId def, enum Move move)
+{
+    uq4_12_t eff;
+    struct SimulatedDamage dmg = AI_CalcDamageSaveBattlers(move, atk, def, &eff, NO_GIMMICK, NO_GIMMICK);
+    return dmg.maximum >= gBattleMons[def].hp;
+}
+
+// Aqua Jet branch: Coalossal prefers Earthquake (killing the frail Bruxish brings in a stronger mon),
+// unless another move kills a foe Earthquake can't, or Earthquake isn't a 2HKO on either foe but
+// another move is. Returns the move slot to force and its target foe (MAX_MON_MOVES if none).
+static u32 CustomStrategy_ChooseCoalossalAquaMove(enum BattlerId coalossal, enum BattlerId *outTarget)
+{
+    enum Move *moves = GetMovesArray(coalossal);
+    enum BattlerId leftFoe = LEFT_FOE(coalossal);
+    enum BattlerId rightFoe = RIGHT_FOE(coalossal);
+    u32 moveLimitations = gAiLogicData->moveLimitations[coalossal];
+    u32 eqIndex = GetMoveIndex(coalossal, MOVE_EARTHQUAKE);
+    bool32 eqKills = FALSE, eqIs2HKO = FALSE;
+
+    if (eqIndex != MAX_MON_MOVES)
+    {
+        if (IsBattlerAlive(leftFoe))
+        {
+            u32 hits = CustomStrategy_WpBoostedHitsToKO(coalossal, leftFoe, MOVE_EARTHQUAKE);
+            eqKills |= (hits == 1);
+            eqIs2HKO |= (hits != 0 && hits <= 2);
+        }
+        if (IsBattlerAlive(rightFoe))
+        {
+            u32 hits = CustomStrategy_WpBoostedHitsToKO(coalossal, rightFoe, MOVE_EARTHQUAKE);
+            eqKills |= (hits == 1);
+            eqIs2HKO |= (hits != 0 && hits <= 2);
+        }
+    }
+
+    for (u32 i = 0; i < MAX_MON_MOVES; i++)
+    {
+        enum Move m = moves[i];
+        if (i == eqIndex || m == MOVE_NONE || IsBattleMoveStatus(m) || (moveLimitations & (1u << i)))
+            continue;
+        for (u32 f = 0; f < 2; f++)
+        {
+            enum BattlerId foe = (f == 0) ? leftFoe : rightFoe;
+            if (!IsBattlerAlive(foe))
+                continue;
+            u32 hits = CustomStrategy_WpBoostedHitsToKO(coalossal, foe, m);
+            bool32 kills = (hits == 1);
+            bool32 twoHKO = (hits != 0 && hits <= 2);
+            if ((kills && !eqKills) || (!eqIs2HKO && twoHKO))
+            {
+                *outTarget = foe;
+                return i;
+            }
+        }
+    }
+
+    // Default: force Earthquake, targeting a foe it kills if possible.
+    if (eqIndex != MAX_MON_MOVES && IsBattlerAlive(leftFoe)
+        && CustomStrategy_WpBoostedHitsToKO(coalossal, leftFoe, MOVE_EARTHQUAKE) == 1)
+        *outTarget = leftFoe;
+    else if (eqIndex != MAX_MON_MOVES && IsBattlerAlive(rightFoe)
+        && CustomStrategy_WpBoostedHitsToKO(coalossal, rightFoe, MOVE_EARTHQUAKE) == 1)
+        *outTarget = rightFoe;
+    else
+        *outTarget = IsBattlerAlive(leftFoe) ? leftFoe : rightFoe;
+    return eqIndex;
+}
+
+static s32 AI_CustomStrategies(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)
+{
+    if (!IsDoubleBattle())
+        return score;
+
+    // Strategy 1 - Bruxish forces a Water pivot into Coalossal to trigger Steam Engine + Weakness Policy.
+    if (IsMagmaGrunt14Bruxish(battlerAtk))
+    {
+        enum BattlerId coalossal = BATTLE_PARTNER(battlerAtk);
+        enum Move waterMove = IsAbsoluteFastestOnField(battlerAtk) ? MOVE_FLIP_TURN : MOVE_AQUA_JET;
+
+        if (!HasMove(battlerAtk, waterMove))
+            return score;
+        // Only set the combo up if the pivot won't KO the partner we're powering up.
+        if (CustomStrategy_MoveWouldFaint(battlerAtk, coalossal, waterMove))
+            return score;
+        if (battlerDef == coalossal && move == waterMove)
+            ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+        return score;
+    }
+
+    // Strategy 1 - Coalossal scores under the assumed Weakness Policy boost.
+    if (IsMagmaGrunt14Coalossal(battlerAtk))
+    {
+        enum BattlerId bruxish = BATTLE_PARTNER(battlerAtk);
+        bool32 bruxishFastest = IsAbsoluteFastestOnField(bruxish);
+
+        // If Bruxish already committed its move this turn, confirm it chose the expected pivot.
+        if (bruxish < battlerAtk)
+        {
+            enum Move expected = bruxishFastest ? MOVE_FLIP_TURN : MOVE_AQUA_JET;
+            if (GetAllyChosenMove(battlerAtk) != expected)
+                return score;
+        }
+
+        if (bruxishFastest)
+        {
+            // Flip Turn expected: the partner pivots out, so Earthquake would likely KO the incoming
+            // replacement after the boost. Add a small penalty on top of the standard partner-hit one,
+            // and let Coalossal recognize KOs that only exist once its offense is doubled.
+            if (move == MOVE_EARTHQUAKE)
+            {
+                ADJUST_SCORE(BAD_EFFECT);
+            }
+            else if (!IsBattleMoveStatus(move) && battlerDef != bruxish && IsBattlerAlive(battlerDef)
+                  && CustomStrategy_WpBoostedHitsToKO(battlerAtk, battlerDef, move) == 1
+                  && !CanIndexMoveFaintTarget(battlerAtk, battlerDef, gAiThinkingStruct->movesetIndex, AI_ATTACKING))
+            {
+                ADJUST_SCORE(FAST_KILL);
+            }
+            return score;
+        }
+        else
+        {
+            // Aqua Jet expected: force the decided move (Earthquake, or a superior alternative).
+            enum BattlerId forcedTarget;
+            u32 forcedMove = CustomStrategy_ChooseCoalossalAquaMove(battlerAtk, &forcedTarget);
+
+            if (forcedMove != MAX_MON_MOVES
+             && move == gBattleMons[battlerAtk].moves[forcedMove]
+             && battlerDef == forcedTarget)
+                ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+            return score;
+        }
     }
 
     return score;

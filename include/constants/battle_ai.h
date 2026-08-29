@@ -44,6 +44,7 @@
 // Custom AI Flags
 #define AI_FLAG_HARD_TRICK_ROOM             AI_FLAG(34)  // AI for Trick Room-oriented teams. Strongly favors setting Trick Room when beneficial: always over a slow kill, and over a fast kill SHOULD_TRICK_ROOM_OVER_FAST_KILL% of the time. Also favors Follow Me / Rage Powder to protect a partner that knows Trick Room, unless a fast kill is available.
 #define AI_FLAG_ILLUSION_TRICKS             AI_FLAG(35)  // When the AI is about to send out its benched Illusion mon (or the mon Illusion would disguise it as), there is a SHOULD_ILLUSION_TRICK% chance it sends out the other one instead, creating uncertainty about which Pokémon was 'really' sent out.
+#define AI_FLAG_CUSTOM_STRATEGIES           AI_FLAG(36)  // Dispatcher for team-specific scripted strategies the generic AI can't express. Each strategy is gated on a species/ability/item signature, so trainers with the flag but a different situation are unaffected.
 
 // The following options are enough to have a basic/smart trainer. Any other addtion could make the trainer worse/better depending on the flag
 #define AI_FLAG_BASIC_TRAINER         (AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY)
