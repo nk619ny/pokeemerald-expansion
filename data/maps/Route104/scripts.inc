@@ -197,27 +197,27 @@ Route104_EventScript_MayEncounter::
 # 99 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_MayDefeated
 # 100 "data/maps/Route104/scripts.pory"
-	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_MayAskToBattle
+	goto_if_set FLAG_MET_RIVAL_104, Route104_EventScript_MayAskToBattle
 # 101 "data/maps/Route104/scripts.pory"
-	setflag FLAG_REGISTER_RIVAL_POKENAV
+	setflag FLAG_MET_RIVAL_104
 # 102 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_MayWeShouldRegister, MSGBOX_DEFAULT
+	//msgbox Route104_Text_MayWeShouldRegister, MSGBOX_DEFAULT
 # 103 "data/maps/Route104/scripts.pory"
-	closemessage
+	//closemessage
 # 104 "data/maps/Route104/scripts.pory"
-	delay 30
+	//delay 30
 # 105 "data/maps/Route104/scripts.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
+	//playfanfare MUS_REGISTER_MATCH_CALL
 # 106 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_RegisteredMay, MSGBOX_DEFAULT
+	//msgbox Route104_Text_RegisteredMay, MSGBOX_DEFAULT
 # 107 "data/maps/Route104/scripts.pory"
-	waitfanfare
+	//waitfanfare
 # 108 "data/maps/Route104/scripts.pory"
-	closemessage
+	//closemessage
 # 109 "data/maps/Route104/scripts.pory"
-	delay 30
+	//delay 30
 # 110 "data/maps/Route104/scripts.pory"
-	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
+	//setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 # 111 "data/maps/Route104/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerFaceRival
 # 112 "data/maps/Route104/scripts.pory"
@@ -369,27 +369,27 @@ Route104_EventScript_BrendanEncounter::
 # 185 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_BrendanDefeated
 # 186 "data/maps/Route104/scripts.pory"
-	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_BrendanAskToBattle
+	goto_if_set FLAG_MET_RIVAL_104, Route104_EventScript_BrendanAskToBattle
 # 187 "data/maps/Route104/scripts.pory"
-	setflag FLAG_REGISTER_RIVAL_POKENAV
+	setflag FLAG_MET_RIVAL_104
 # 188 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_BrendanWeShouldRegister, MSGBOX_DEFAULT
+	//msgbox Route104_Text_BrendanWeShouldRegister, MSGBOX_DEFAULT
 # 189 "data/maps/Route104/scripts.pory"
-	closemessage
+	//closemessage
 # 190 "data/maps/Route104/scripts.pory"
-	delay 30
+	//delay 30
 # 191 "data/maps/Route104/scripts.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
+	//playfanfare MUS_REGISTER_MATCH_CALL
 # 192 "data/maps/Route104/scripts.pory"
-	msgbox Route104_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	//msgbox Route104_Text_RegisteredBrendan, MSGBOX_DEFAULT
 # 193 "data/maps/Route104/scripts.pory"
-	waitfanfare
+	//waitfanfare
 # 194 "data/maps/Route104/scripts.pory"
-	closemessage
+	//closemessage
 # 195 "data/maps/Route104/scripts.pory"
-	delay 30
+	//delay 30
 # 196 "data/maps/Route104/scripts.pory"
-	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
+	//setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 # 197 "data/maps/Route104/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerFaceRival
 # 198 "data/maps/Route104/scripts.pory"

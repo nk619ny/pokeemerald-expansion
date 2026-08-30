@@ -849,23 +849,23 @@ Route110_EventScript_MayDefeated::
 # 425 "data/maps/Route110/scripts.pory"
 	//msgbox Route110_Text_MayExplainItemfinder, MSGBOX_DEFAULT
 # 426 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_MayHiLetsRegister, MSGBOX_DEFAULT
+	//msgbox Route110_Text_MayHiLetsRegister, MSGBOX_DEFAULT
 # 427 "data/maps/Route110/scripts.pory"
-	closemessage
+	//closemessage
 # 428 "data/maps/Route110/scripts.pory"
-	delay 30
+	//delay 30
 # 429 "data/maps/Route110/scripts.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
+	//playfanfare MUS_REGISTER_MATCH_CALL
 # 430 "data/maps/Route110/scripts.pory"
-	msgbox RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT
+	//msgbox RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT
 # 431 "data/maps/Route110/scripts.pory"
-	waitfanfare
+	//waitfanfare
 # 432 "data/maps/Route110/scripts.pory"
-	closemessage
+	//closemessage
 # 433 "data/maps/Route110/scripts.pory"
-	delay 30
+	//delay 30
 # 434 "data/maps/Route110/scripts.pory"
-	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
+	//setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 # 435 "data/maps/Route110/scripts.pory"
 	goto Route110_EventScript_RivalExit
 # 436 "data/maps/Route110/scripts.pory"
@@ -925,25 +925,25 @@ Route110_EventScript_BrendanDefeated::
 # 463 "data/maps/Route110/scripts.pory"
 	//call Route110_EventScript_GiveItemfinder
 # 464 "data/maps/Route110/scripts.pory"
-	//msgbox Route110_Text_BrendanExplainItemfinder, MSGBOX_DEFAULT
+	//msgbox Route110_Text_MayExplainItemfinder, MSGBOX_DEFAULT
 # 465 "data/maps/Route110/scripts.pory"
-	msgbox Route110_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
+	//msgbox Route110_Text_MayHiLetsRegister, MSGBOX_DEFAULT
 # 466 "data/maps/Route110/scripts.pory"
-	closemessage
+	//closemessage
 # 467 "data/maps/Route110/scripts.pory"
-	delay 30
+	//delay 30
 # 468 "data/maps/Route110/scripts.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
+	//playfanfare MUS_REGISTER_MATCH_CALL
 # 469 "data/maps/Route110/scripts.pory"
-	msgbox RustboroCity_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	//msgbox RustboroCity_Text_RegisteredMay, MSGBOX_DEFAULT
 # 470 "data/maps/Route110/scripts.pory"
-	waitfanfare
+	//waitfanfare
 # 471 "data/maps/Route110/scripts.pory"
-	closemessage
+	//closemessage
 # 472 "data/maps/Route110/scripts.pory"
-	delay 30
+	//delay 30
 # 473 "data/maps/Route110/scripts.pory"
-	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
+	//setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 # 474 "data/maps/Route110/scripts.pory"
 	goto Route110_EventScript_RivalExit
 # 475 "data/maps/Route110/scripts.pory"

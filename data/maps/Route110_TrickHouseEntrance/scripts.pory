@@ -825,3 +825,36 @@ Route110_TrickHouseEntrance_Text_DoorLockedWriteSecretCodeHere:
 	.string "on it: “Write the secret code here.”$"
 
 `
+
+
+script Route110_TrickHouseEntrance_Script_ResetTrickHouseTrainersOnWipe {
+	cleartrainerflag(TRAINER_VINCENT)
+	cleartrainerflag(TRAINER_LEROY)
+	cleartrainerflag(TRAINER_KEIRA)
+	cleartrainerflag(TRAINER_PATRICIA)
+	cleartrainerflag(TRAINER_YUJI)
+	cleartrainerflag(TRAINER_JUSTIN)
+	cleartrainerflag(TRAINER_JOSHUA)
+	cleartrainerflag(TRAINER_ALEXIS)
+	cleartrainerflag(TRAINER_TED)
+	cleartrainerflag(TRAINER_PAUL)
+	cleartrainerflag(TRAINER_GEORGIA)
+	cleartrainerflag(TRAINER_EDDIE)
+	cleartrainerflag(TRAINER_BENNY)
+	cleartrainerflag(TRAINER_CORA)
+	cleartrainerflag(TRAINER_PAULA)
+	cleartrainerflag(TRAINER_MARTHA)
+	cleartrainerflag(TRAINER_SEBASTIAN)
+	cleartrainerflag(TRAINER_SOPHIA)
+	cleartrainerflag(TRAINER_SALLY)
+	cleartrainerflag(TRAINER_ROBIN)
+	cleartrainerflag(TRAINER_ALAN)
+	cleartrainerflag(TRAINER_MARIELA)
+	cleartrainerflag(TRAINER_ALVARO)
+	cleartrainerflag(TRAINER_EVERETT)
+	cleartrainerflag(TRAINER_MECHADOLL_1)
+	cleartrainerflag(TRAINER_MECHADOLL_2)
+	cleartrainerflag(TRAINER_MECHADOLL_3)
+	cleartrainerflag(TRAINER_MECHADOLL_4)
+	return
+}

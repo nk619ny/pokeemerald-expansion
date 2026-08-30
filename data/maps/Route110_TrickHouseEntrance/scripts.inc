@@ -1648,3 +1648,63 @@ Route110_TrickHouseEntrance_Text_DoorLockedWriteSecretCodeHere:
 	.string "…On closer inspection, this is written\n"
 # 825 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	.string "on it: “Write the secret code here.”$"
+
+Route110_TrickHouseEntrance_Script_ResetTrickHouseTrainersOnWipe::
+# 831 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_VINCENT
+# 832 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_LEROY
+# 833 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_KEIRA
+# 834 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_PATRICIA
+# 835 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_YUJI
+# 836 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_JUSTIN
+# 837 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_JOSHUA
+# 838 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_ALEXIS
+# 839 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_TED
+# 840 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_PAUL
+# 841 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_GEORGIA
+# 842 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_EDDIE
+# 843 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_BENNY
+# 844 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_CORA
+# 845 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_PAULA
+# 846 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_MARTHA
+# 847 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_SEBASTIAN
+# 848 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_SOPHIA
+# 849 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_SALLY
+# 850 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_ROBIN
+# 851 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_ALAN
+# 852 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_MARIELA
+# 853 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_ALVARO
+# 854 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_EVERETT
+# 855 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_MECHADOLL_1
+# 856 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_MECHADOLL_2
+# 857 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_MECHADOLL_3
+# 858 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
+	cleartrainerflag TRAINER_MECHADOLL_4
+	return
+

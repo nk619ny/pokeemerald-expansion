@@ -125,7 +125,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_TOTODILE
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CHIKORITA
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
-	setflag FLAG_UNKNOWN_0x363
+//	setflag FLAG_UNKNOWN_0x363
 //	setflag FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT //Removed these flags and the sprites from Rustboro
 //	setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1 //Removed these flags and the sprites from Rustboro
 	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL

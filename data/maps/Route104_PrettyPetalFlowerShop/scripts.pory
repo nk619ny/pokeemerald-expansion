@@ -67,6 +67,7 @@ Route104_PrettyPetalFlowerShop_Pokemart_Plants:
 Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirl::
 	lock
 	faceplayer
+	goto Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirlNew
 	goto_if_unset FLAG_RECEIVED_WAILMER_PAIL, Route104_PrettyPetalFlowerShop_EventScript_GiveWailmerPail
 	msgbox Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation, MSGBOX_DEFAULT
 	release
@@ -100,3 +101,10 @@ Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry::
 	release
 	end
 `
+
+script Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirlNew {
+	lock
+	msgbox(format("Berry yields have increased significantly recently.\NA single tree now provides all the berries you could need!\pA researcher named Courtney is responsible for some big breakthroughs in berry cultivation."), MSGBOX_NPC)
+	releaseall
+	end
+}

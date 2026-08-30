@@ -3,7 +3,6 @@
   "name": "Route110_TrickHousePuzzle5",
   "layout": "LAYOUT_ROUTE110_TRICK_HOUSE_PUZZLE5",
   "music": "MUS_TRICK_HOUSE",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_110",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -24,9 +23,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll1Trainer",
       "flag": "0"
     },
     {
@@ -38,9 +37,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll2",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll2Trainer",
       "flag": "0"
     },
     {
@@ -52,9 +51,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll3",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll3Trainer",
       "flag": "0"
     },
     {
@@ -66,16 +65,16 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll4",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route110_TrickHousePuzzle5_EventScript_Mechadoll4Trainer",
       "flag": "0"
     },
     {
       "local_id": "LOCALID_MECHADOLL_5",
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 10,
-      "y": 4,
+      "x": 22,
+      "y": -6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -126,7 +125,7 @@
     {
       "type": "trigger",
       "x": 5,
-      "y": 17,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -135,7 +134,7 @@
     {
       "type": "trigger",
       "x": 4,
-      "y": 17,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -144,7 +143,7 @@
     {
       "type": "trigger",
       "x": 3,
-      "y": 17,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -153,7 +152,7 @@
     {
       "type": "trigger",
       "x": 2,
-      "y": 17,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -162,7 +161,7 @@
     {
       "type": "trigger",
       "x": 1,
-      "y": 7,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_2",
       "var_value": "0",
@@ -171,7 +170,7 @@
     {
       "type": "trigger",
       "x": 2,
-      "y": 7,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_2",
       "var_value": "0",
@@ -180,7 +179,7 @@
     {
       "type": "trigger",
       "x": 13,
-      "y": 10,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -189,7 +188,7 @@
     {
       "type": "trigger",
       "x": 12,
-      "y": 10,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -198,7 +197,7 @@
     {
       "type": "trigger",
       "x": 11,
-      "y": 10,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -207,7 +206,7 @@
     {
       "type": "trigger",
       "x": 13,
-      "y": 19,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_4",
       "var_value": "0",
@@ -216,7 +215,7 @@
     {
       "type": "trigger",
       "x": 12,
-      "y": 19,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_4",
       "var_value": "0",
@@ -224,8 +223,8 @@
     },
     {
       "type": "trigger",
-      "x": 11,
-      "y": 4,
+      "x": 13,
+      "y": -6,
       "elevation": 3,
       "var": "VAR_TEMP_5",
       "var_value": "0",
@@ -234,7 +233,7 @@
     {
       "type": "trigger",
       "x": 1,
-      "y": 17,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -243,7 +242,7 @@
     {
       "type": "trigger",
       "x": 3,
-      "y": 7,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_2",
       "var_value": "0",
@@ -252,7 +251,7 @@
     {
       "type": "trigger",
       "x": 4,
-      "y": 7,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_2",
       "var_value": "0",
@@ -261,7 +260,7 @@
     {
       "type": "trigger",
       "x": 5,
-      "y": 7,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_2",
       "var_value": "0",
@@ -270,7 +269,7 @@
     {
       "type": "trigger",
       "x": 6,
-      "y": 7,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_2",
       "var_value": "0",
@@ -279,7 +278,7 @@
     {
       "type": "trigger",
       "x": 10,
-      "y": 10,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -288,7 +287,7 @@
     {
       "type": "trigger",
       "x": 9,
-      "y": 10,
+      "y": 0,
       "elevation": 3,
       "var": "VAR_TEMP_3",
       "var_value": "0",
@@ -297,7 +296,7 @@
     {
       "type": "trigger",
       "x": 11,
-      "y": 19,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_4",
       "var_value": "0",
@@ -306,7 +305,7 @@
     {
       "type": "trigger",
       "x": 10,
-      "y": 19,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_4",
       "var_value": "0",
@@ -315,7 +314,7 @@
     {
       "type": "trigger",
       "x": 9,
-      "y": 19,
+      "y": 23,
       "elevation": 3,
       "var": "VAR_TEMP_4",
       "var_value": "0",
@@ -331,5 +330,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route110_TrickHousePuzzle5_EventScript_Scroll"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }
