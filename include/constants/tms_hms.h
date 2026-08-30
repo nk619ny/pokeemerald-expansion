@@ -151,18 +151,7 @@
     F(ICE_SPINNER) \
     F(CHILLING_WATER) \
     F(TEMPER_FLARE) \
-    F(SUPERCELL_SLAM) \
-    F(FOCUS_PUNCH) \
-    F(HAIL) \
-    F(SUNNY_DAY) \
-    F(RAIN_DANCE) \
-    F(IRON_TAIL) \
-    F(DOUBLE_TEAM) \
-    F(SHOCK_WAVE) \
-    F(SANDSTORM) \
-    F(TORMENT) \
-    F(SECRET_POWER) \
-    F(SNATCH)
+    F(SUPERCELL_SLAM)
 
 #define FOREACH_HM(F) \
     F(CUT) \

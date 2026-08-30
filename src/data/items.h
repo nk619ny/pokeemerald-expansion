@@ -17062,7 +17062,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_FOCUS_PUNCH] =
+    [ITEM_TM151] =
     {
         .name = ITEM_NAME("TM151"),
         .price = 3000,
@@ -17074,7 +17074,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_HAIL] =
+    [ITEM_TM152] =
     {
         .name = ITEM_NAME("TM152"),
         .price = 3000,
@@ -17084,7 +17084,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_SUNNY_DAY] =
+    [ITEM_TM153] =
     {
         .name = ITEM_NAME("TM153"),
         .price = 3000,
@@ -17094,7 +17094,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_RAIN_DANCE] =
+    [ITEM_TM154] =
     {
         .name = ITEM_NAME("TM154"),
         .price = 3000,
@@ -17104,7 +17104,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_IRON_TAIL] =
+    [ITEM_TM155] =
     {
         .name = ITEM_NAME("TM155"),
         .price = 3000,
@@ -17114,7 +17114,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_DOUBLE_TEAM] =
+    [ITEM_TM156] =
     {
         .name = ITEM_NAME("TM156"),
         .price = 3000,
@@ -17124,7 +17124,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_SHOCK_WAVE] =
+    [ITEM_TM157] =
     {
         .name = ITEM_NAME("TM157"),
         .price = 3000,
@@ -17134,7 +17134,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_SANDSTORM] =
+    [ITEM_TM158] =
     {
         .name = ITEM_NAME("TM158"),
         .price = 3000,
@@ -17144,7 +17144,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_TORMENT] =
+    [ITEM_TM159] =
     {
         .name = ITEM_NAME("TM159"),
         .price = 3000,
@@ -17154,7 +17154,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_SECRET_POWER] =
+    [ITEM_TM160] =
     {
         .name = ITEM_NAME("TM160"),
         .price = 3000,
@@ -17164,7 +17164,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-    [ITEM_TM_SNATCH] =
+    [ITEM_TM161] =
     {
         .name = ITEM_NAME("TM161"),
         .price = 3000,
