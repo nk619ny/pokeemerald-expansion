@@ -1000,7 +1000,7 @@ Adamant Nature
 === TRAINER_DECLAN === /* Route 124 */
 Name: DECLAN
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -3382,7 +3382,7 @@ IVs: 0 Atk
 === TRAINER_RICKY_1 === /* Route 109 */
 Name: RICKY
 Class: Tuber M
-Pic: Tuber M
+Pic: Tuber M ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -3421,7 +3421,7 @@ Tera Type: Water
 === TRAINER_SIMON === /* Route 109 House */
 Name: SIMON
 Class: Tuber M
-Pic: Tuber M
+Pic: Tuber M ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -3469,7 +3469,7 @@ Tera Type: Water
 === TRAINER_CHARLIE === /* Abandoned Ship */ 
 Name: CHARLIE
 Class: Tuber M
-Pic: Tuber M
+Pic: Tuber M ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -4211,7 +4211,7 @@ Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Custom Strategies
 
 Abomasnow @ Abomasite  
 Ability: Soundproof  
@@ -6961,7 +6961,7 @@ IVs: 0 Atk
 === TRAINER_LUIS === /* Route 105 */ 
 Name: LUIS
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7008,7 +7008,7 @@ Adamant Nature
 === TRAINER_DOMINIK === /* Route 105 */
 Name: DOMINIK
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7056,7 +7056,7 @@ Tera Type: Electric
 === TRAINER_DOUGLAS === /* Route 106 */ 
 Name: DOUGLAS
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7107,7 +7107,7 @@ IVs: 0 Atk
 === TRAINER_DARRIN === /* Route 107 */ 
 Name: DARRIN
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7151,7 +7151,7 @@ Level: 55
 === TRAINER_TONY_1 === /* Route 107 */ /* TO BE ADDED */
 Name: TONY
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7164,7 +7164,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JEROME === /* Route 108 */ /* TO BE ADDED */
 Name: JEROME
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7177,7 +7177,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_MATTHEW === /* Route 108 */
 Name: MATTHEW
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7226,7 +7226,7 @@ IVs: 0 Atk
 === TRAINER_DAVID === /* Route 109 */ /* TO BE ADDED */
 Name: DAVID
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7243,7 +7243,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_SPENCER === /* Route 124 */ /* Dive Optional */
 Name: SPENCER
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7291,7 +7291,7 @@ Adamant Nature
 === TRAINER_ROLAND === /* Route 124 */ /*Pre-Dive Optional */
 Name: ROLAND
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7494,7 +7494,7 @@ Tera Type: Ice
 === TRAINER_RODNEY === /* Route 130 */
 Name: RODNEY
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7536,7 +7536,7 @@ EVs: 252 SpA
 === TRAINER_RICHARD === /* Route 131 */ /* TO BE ADDED */
 Name: RICHARD
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7549,7 +7549,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_HERMAN === /* Route 131 */ /* TO BE ADDED */
 Name: HERMAN
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7566,7 +7566,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_SANTIAGO === /* Route 130 */ /* TO BE ADDED */
 Name: SANTIAGO
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7583,7 +7583,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GILBERT === /* Route 132 */ /* TO BE ADDED */
 Name: GILBERT
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7596,7 +7596,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_FRANKLIN === /* Route 133 */ /* TO BE ADDED */
 Name: FRANKLIN
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7609,7 +7609,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_KEVIN === /* Route 131 */ /* TO BE ADDED */
 Name: KEVIN
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7622,7 +7622,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JACK === /* Route 134 */ /* TO BE ADDED */
 Name: JACK
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7635,7 +7635,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_DUDLEY === /* Route */ /* TO BE ADDED */
 Name: DUDLEY
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7656,7 +7656,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CHAD === /* Route 124 */
 Name: CHAD
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7702,7 +7702,7 @@ Tera Type: Water
 === TRAINER_TONY_2 === /* Route */
 Name: TONY
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7715,7 +7715,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_TONY_3 === /* Route */
 Name: TONY
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7728,7 +7728,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_TONY_4 === /* Route */
 Name: TONY
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -7745,7 +7745,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_TONY_5 === /* Route */
 Name: TONY
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -10895,16 +10895,6 @@ IVs: 0 Atk
 - Ancient Power  
 - Light Screen
 
-/* Baxcalibur  
-Ability: Thermal Exchange  
-Level: 36
-EVs: 128 Atk / 128 Spe  
-Jolly Nature  
-- Dragon Claw  
-- Avalanche  
-- Brick Break  
-- Ice Shard  */
-
 
 === TRAINER_FLANNERY_1 === /* Lavaridge Gym */
 Name: FLANNERY
@@ -11154,7 +11144,7 @@ IVs: 0 Atk
 
 === TRAINER_TATE_AND_LIZA_1 === /* Mossdeep Gym */
 Name: TATE&LIZA
-Class: Leader
+Class: Leaders
 Pic: Tate and Liza ORAS 80
 Gender: Male
 Music: Female
@@ -11223,7 +11213,7 @@ IVs: 0 Atk / 0 Spe
 - Psychic Terrain
 
 Calyrex-Ice @ White Herb
-Level: 70
+Level: 68
 Ball: Moon
 Ability: As One Ice Rider 
 EVs: 0 HP / 0 Atk 
@@ -16748,6 +16738,8 @@ EVs: 252 HP / 92 Def / 164 SpD
 Bold Nature
 - Taunt
 - Bide
+- Mirror Coat
+- Counter
 
 Grafaiai  
 Ability: Prankster  
@@ -17096,7 +17088,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_BEVERLY === /* Route 105 */ 
 Name: BEVERLY
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17143,7 +17135,7 @@ Jolly Nature
 === TRAINER_IMANI === /* Route 105 */ /* TO BE ADDED */
 Name: IMANI
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17156,7 +17148,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_KYLA === /* Route 106 */
 Name: KYLA
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17202,7 +17194,7 @@ IVs: 0 Atk
 === TRAINER_DENISE === /* Route 107 */
 Name: DENISE
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17249,7 +17241,7 @@ Tera Type: Normal
 === TRAINER_BETH === /* Route 107 */ /* TO BE ADDED */
 Name: BETH
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17262,7 +17254,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TARA === /* Route 108 */ 
 Name: TARA
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17308,7 +17300,7 @@ Level: 50
 === TRAINER_MISSY === /* Route 108 */  /* TO BE ADDED */
 Name: MISSY
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17328,7 +17320,7 @@ IVs: 0 Atk
 === TRAINER_ALICE === /* Route 109 */ /* TO BE ADDED */
 Name: ALICE
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17349,7 +17341,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JENNY_1 === /* Route 124 */ /* Dive Optional */
 Name: JENNY
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17397,7 +17389,7 @@ Tera Type: Fighting
 === TRAINER_GRACE === /* Route 124 */
 Name: GRACE
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17477,7 +17469,7 @@ IVs: 0 Atk
 === TRAINER_SHARON === /* Route 125 */ /* TO BE ADDED */
 Name: SHARON
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17551,7 +17543,7 @@ EVs: 252 SpA
 === TRAINER_KATIE === /* Route 130 */
 Name: KATIE
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17599,7 +17591,7 @@ EVs: 252 Atk / 128 Def / 128 SpD
 === TRAINER_SUSIE === /* Route 131 */ /* TO BE ADDED */
 Name: SUSIE
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17612,7 +17604,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_KARA === /* Route 131 */ /* Before Sky Pillar */
 Name: KARA
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17660,7 +17652,7 @@ IVs: 0 Atk
 === TRAINER_DANA === /* Route 132 */ /* TO BE ADDED */
 Name: DANA
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17673,7 +17665,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_SIENNA === /* Route 126 */ /* TO BE ADDED */
 Name: SIENNA
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17690,7 +17682,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_DEBRA === /* Route 133 */ /* TO BE ADDED */
 Name: DEBRA
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17703,7 +17695,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LINDA === /* Route 133 */ /* TO BE ADDED */
 Name: LINDA
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17720,7 +17712,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_KAYLEE === /* Route */ /* TO BE ADDED */
 Name: KAYLEE
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17737,7 +17729,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LAUREL === /* Route 134 */ /* TO BE ADDED */
 Name: LAUREL
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17754,7 +17746,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CARLEE === /* Route 128 */ /* To Evergrande */
 Name: CARLEE
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17803,7 +17795,7 @@ IVs: 0 Atk
 === TRAINER_JENNY_2 === /* Route */
 Name: JENNY
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17816,7 +17808,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JENNY_3 === /* Route */
 Name: JENNY
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17829,7 +17821,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JENNY_4 === /* Route */
 Name: JENNY
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -17846,7 +17838,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_JENNY_5 === /* Route */
 Name: JENNY
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -22225,7 +22217,7 @@ IVs: 0 Atk
 === TRAINER_LEONARDO === /* Route 126 */ /* TO BE ADDED */
 Name: LEONARDO
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -22260,7 +22252,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_HARRISON === /* Route 128 */ /* To Evergrande */ /* TO BE ADDED */
 Name: HARRISON
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -22313,7 +22305,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CLARENCE === /* Route 129 */ /* TO BE ADDED */
 Name: CLARENCE
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -26451,7 +26443,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_REED === /* Route 129 */ /* TO BE ADDED */
 Name: REED
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -26468,7 +26460,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TISHA === /* Route 129 */ /* TO BE ADDED */
 Name: TISHA
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -26633,7 +26625,7 @@ IVs: 0 Atk
 === TRAINER_JOHN_AND_JAY_1 === /* Meteor Falls */
 Name: JOHN & JAY
 Class: Old Couple
-Pic: Old Couple
+Pic: Old Couple ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -26658,7 +26650,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 === TRAINER_JOHN_AND_JAY_2 === /* Route */
 Name: JOHN & JAY
 Class: Old Couple
-Pic: Old Couple
+Pic: Old Couple ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -26683,7 +26675,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 === TRAINER_JOHN_AND_JAY_3 === /* Route */
 Name: JOHN & JAY
 Class: Old Couple
-Pic: Old Couple
+Pic: Old Couple ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -26708,7 +26700,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 === TRAINER_JOHN_AND_JAY_4 === /* Route */
 Name: JOHN & JAY
 Class: Old Couple
-Pic: Old Couple
+Pic: Old Couple ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -26733,7 +26725,7 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 === TRAINER_JOHN_AND_JAY_5 === /* Route */
 Name: JOHN & JAY
 Class: Old Couple
-Pic: Old Couple
+Pic: Old Couple ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -26758,7 +26750,7 @@ IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 === TRAINER_RELI_AND_IAN === /* Route 131 */ 
 Name: RELI & IAN
 Class: Sis And Bro
-Pic: Sis And Bro
+Pic: Sis And Bro ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -26805,7 +26797,7 @@ Careful Nature
 === TRAINER_LILA_AND_ROY_1 === /* Route 124 */ /* Dive Optional Item Post Dive */
 Name: LILA & ROY
 Class: Sis And Bro
-Pic: Sis And Bro
+Pic: Sis And Bro ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -26852,7 +26844,7 @@ Tera Type: Water
 === TRAINER_LILA_AND_ROY_2 === /* Route */
 Name: LILA & ROY
 Class: Sis And Bro
-Pic: Sis And Bro
+Pic: Sis And Bro ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -26869,7 +26861,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LILA_AND_ROY_3 === /* Route */
 Name: LILA & ROY
 Class: Sis And Bro
-Pic: Sis And Bro
+Pic: Sis And Bro ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -26886,7 +26878,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LILA_AND_ROY_4 === /* Route */
 Name: LILA & ROY
 Class: Sis And Bro
-Pic: Sis And Bro
+Pic: Sis And Bro ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -26903,7 +26895,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LILA_AND_ROY_5 === /* Route */
 Name: LILA & ROY
 Class: Sis And Bro
-Pic: Sis And Bro
+Pic: Sis And Bro ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -26920,7 +26912,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_LISA_AND_RAY === /* Route 107 */ 
 Name: LISA & RAY
 Class: Sis And Bro
-Pic: Sis And Bro
+Pic: Sis And Bro ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -27184,7 +27176,7 @@ Tera Type: Water
 === TRAINER_CHANDLER === /* Route 109 */
 Name: CHANDLER
 Class: Tuber M
-Pic: Tuber M
+Pic: Tuber M ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -28839,7 +28831,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 === TRAINER_PETE === /* Route 103 */ /* TO BE ADDED */
 Name: PETE
 Class: Swimmer M
-Pic: Swimmer M
+Pic: Swimmer M ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -28852,7 +28844,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_ISABELLE === /* Route 110 */ /* TO BE ADDED */
 Name: ISABELLE
 Class: Swimmer F
-Pic: Swimmer F
+Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
@@ -31566,7 +31558,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TATE_AND_LIZA_2 === /* Route */
 Name: TATE&LIZA
-Class: Leader
+Class: Leaders
 Pic: Tate and Liza ORAS 80
 Gender: Male
 Music: Female

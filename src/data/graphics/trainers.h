@@ -517,6 +517,24 @@ const u16 gTrainerPalette_StevenORAS80[] = INCGFX_U16("graphics/trainers/front_p
 const u32 gTrainerFrontPic_WallaceORAS80[] = INCGFX_U32("graphics/trainers/front_pics/wallace-oras-80.png", ".4bpp.smol");
 const u16 gTrainerPalette_WallaceORAS80[] = INCGFX_U16("graphics/trainers/front_pics/wallace-oras-80.png", ".gbapal");
 
+const u32 gTrainerFrontPic_OldCoupleORAS80[] = INCGFX_U32("graphics/trainers/front_pics/old-couple-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_OldCoupleORAS80[] = INCGFX_U16("graphics/trainers/front_pics/old-couple-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_TuberMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/tuber-m-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_TuberMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/tuber-m-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_SwimmerFORAS80[] = INCGFX_U32("graphics/trainers/front_pics/swimmer-f-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_SwimmerFORAS80[] = INCGFX_U16("graphics/trainers/front_pics/swimmer-f-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_SwimmerMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/swimmer-m-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_SwimmerMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/swimmer-m-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_SisAndBroORAS80[] = INCGFX_U32("graphics/trainers/front_pics/sis-and-bro-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_SisAndBroORAS80[] = INCGFX_U16("graphics/trainers/front_pics/sis-and-bro-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_AceDuoORAS80[] = INCGFX_U32("graphics/trainers/front_pics/ace-duo-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_AceDuoORAS80[] = INCGFX_U16("graphics/trainers/front_pics/ace-duo-oras-80.png", ".gbapal");
+
 const u32 gTrainerFrontPic_YoungsterFrlg[] = INCGFX_U32("graphics/trainers/front_pics/youngster_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_YoungsterFrlg[] = INCGFX_U16("graphics/trainers/palettes/youngster_frlg.pal", ".gbapal");
 
@@ -1752,6 +1770,50 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_PSYCHIC_F_ORAS_80] =
     {
         .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_PsychicFORAS80, gTrainerPalette_PsychicFORAS80),
+    },
+    [TRAINER_PIC_AROMA_LADY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_AromaLadyORAS80, gTrainerPalette_AromaLadyORAS80),
+    },
+    [TRAINER_PIC_BATTLE_GIRL_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_BattleGirlORAS80, gTrainerPalette_BattleGirlORAS80),
+    },
+    [TRAINER_PIC_BEAUTY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_BeautyORAS80, gTrainerPalette_BeautyORAS80),
+    },
+    [TRAINER_PIC_BIRD_KEEPER_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_BirdKeeperORAS80, gTrainerPalette_BirdKeeperORAS80),
+    },
+    [TRAINER_PIC_BLACK_BELT_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_BlackBeltORAS80, gTrainerPalette_BlackBeltORAS80),
+    },
+    [TRAINER_PIC_OLD_COUPLE_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_OldCoupleORAS80, gTrainerPalette_OldCoupleORAS80),
+    },
+    [TRAINER_PIC_TUBER_M_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_TuberMORAS80, gTrainerPalette_TuberMORAS80),
+    },
+    [TRAINER_PIC_SWIMMER_F_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_SwimmerFORAS80, gTrainerPalette_SwimmerFORAS80),
+    },
+    [TRAINER_PIC_SWIMMER_M_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_SwimmerMORAS80, gTrainerPalette_SwimmerMORAS80),
+    },
+    [TRAINER_PIC_SIS_AND_BRO_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_SisAndBroORAS80, gTrainerPalette_SisAndBroORAS80),
+    },
+    [TRAINER_PIC_ACE_DUO_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_AceDuoORAS80, gTrainerPalette_AceDuoORAS80),
     },
 
     [TRAINER_PIC_PROFESSOR_TURO] =
