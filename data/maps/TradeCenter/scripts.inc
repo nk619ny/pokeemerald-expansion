@@ -7215,7 +7215,7 @@ EggMoveTutor_Text_NoMoreHeartScales::
 MatchCall_Text_Rival_1_1::
 # 2782 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: You won't believe this,\n"
-	.string "{PLAYER}\p"
+	.string "{PLAYER}.\p"
 	.string "I had to throw dozens of Pokeballs\n"
 	.string "to catch this one Pokémon - it was\l"
 	.string "constantly breaking out!\p"
@@ -7233,12 +7233,10 @@ MatchCall_Text_Rival_1_2::
 
 MatchCall_Text_Rival_1_3::
 # 2790 "data/maps/TradeCenter/scripts.pory"
-	.string "{RIVAL}: {PLAYER}, I just found\n"
-	.string "out that\n"
-	.string "a Pokémon's nature can affect how\n"
-	.string "they grow and develop.\p"
-	.string "I wonder if that means it affects their\n"
-	.string "personality too?$"
+	.string "{RIVAL}: Oh, hi {PLAYER}!\p"
+	.string "I've just been checking all my\n"
+	.string "Pokémon for a sticker.\p"
+	.string "Hope you're having more fun!$"
 
 MatchCall_Text_Rival_2_5::
 # 2794 "data/maps/TradeCenter/scripts.pory"

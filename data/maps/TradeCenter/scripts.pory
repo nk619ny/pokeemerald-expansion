@@ -2780,7 +2780,7 @@ script TradeCenter_EventScript_CrossPoison {
 }
 
 text MatchCall_Text_Rival_1_1 {
-	format("{RIVAL}: You won't believe this,\N{PLAYER}\pI had to throw dozens of Pokeballs\Nto catch this one Pokémon - it was\Nconstantly breaking out!\pEven worse, they kept knocking themselves out!")
+	format("{RIVAL}: You won't believe this,\N{PLAYER}.\pI had to throw dozens of Pokeballs\Nto catch this one Pokémon - it was\Nconstantly breaking out!\pEven worse, they kept knocking themselves out!")
 }
 
 text MatchCall_Text_Rival_1_2 {
@@ -2788,7 +2788,7 @@ text MatchCall_Text_Rival_1_2 {
 }
 
 text MatchCall_Text_Rival_1_3 {
-	format("{RIVAL}: {PLAYER}, I just found out that\na Pokémon's nature can affect how\nthey grow and develop.\pI wonder if that means it affects their\Npersonality too?")
+	format("{RIVAL}: Oh, hi {PLAYER}!\pI've just been checking all my\NPokémon for a sticker.\pHope you're having more fun!")
 }
 
 text MatchCall_Text_Rival_2_5 {
