@@ -7456,7 +7456,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     #endif
         .evYield_HP = 1,
         .genderRatio = MON_GENDERLESS,
-        .eggCycles = 40,
+        .eggCycles = 5,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FAIRY),
