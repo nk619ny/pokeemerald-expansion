@@ -1357,6 +1357,61 @@ MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
 # 679 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "LIZA: Two Pokémon when you come back.$"
 
+MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge::
+# 711 "data/maps/MossdeepCity_Gym/scripts.pory"
+	compare VAR_TEMP_8, 0
+	goto_if_eq MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_2
+MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_1:
+# 716 "data/maps/MossdeepCity_Gym/scripts.pory"
+	switch VAR_TEMP_8
+# 717 "data/maps/MossdeepCity_Gym/scripts.pory"
+	case 1, MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_6
+# 720 "data/maps/MossdeepCity_Gym/scripts.pory"
+	case 2, MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_7
+# 723 "data/maps/MossdeepCity_Gym/scripts.pory"
+	case 3, MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_8
+# 727 "data/maps/MossdeepCity_Gym/scripts.pory"
+	releaseall
+	end
+
+MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_2:
+# 712 "data/maps/MossdeepCity_Gym/scripts.pory"
+	random 2
+# 713 "data/maps/MossdeepCity_Gym/scripts.pory"
+	copyvar VAR_TEMP_8, VAR_RESULT
+# 714 "data/maps/MossdeepCity_Gym/scripts.pory"
+	addvar VAR_TEMP_8, 1
+	goto MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_1
+
+MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_4:
+# 730 "data/maps/MossdeepCity_Gym/scripts.pory"
+	waitmessage
+# 731 "data/maps/MossdeepCity_Gym/scripts.pory"
+	releaseall
+	end
+
+MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_6:
+# 718 "data/maps/MossdeepCity_Gym/scripts.pory"
+	msgbox MossdeepCity_Gym_Text_TateAndLiza_Legendaries, MSGBOX_NPC
+# 719 "data/maps/MossdeepCity_Gym/scripts.pory"
+	addvar VAR_TEMP_8, 1
+	goto MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_4
+
+MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_7:
+# 721 "data/maps/MossdeepCity_Gym/scripts.pory"
+	msgbox MossdeepCity_Gym_Text_TateAndLiza_BackToBack, MSGBOX_NPC
+# 722 "data/maps/MossdeepCity_Gym/scripts.pory"
+	addvar VAR_TEMP_8, 1
+	goto MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_4
+
+MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_8:
+# 724 "data/maps/MossdeepCity_Gym/scripts.pory"
+	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_NPC
+# 725 "data/maps/MossdeepCity_Gym/scripts.pory"
+	setvar VAR_TEMP_8, 1
+	goto MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge_4
+
+
 MossdeepCity_Gym_Text_TateAndLizaIntro::
 # 682 "data/maps/MossdeepCity_Gym/scripts.pory"
 	.string "TATE: We were the first to master\n"
@@ -1406,3 +1461,22 @@ MossdeepCity_Gym_Text_GymGuideAdviceNew::
 	.string "before the Leaders will face you in\l"
 	.string "back-to-back battles.\p"
 	.string "You'll need to be prepared for anything!$"
+
+MossdeepCity_Gym_Text_TateAndLiza_BackToBack::
+# 735 "data/maps/MossdeepCity_Gym/scripts.pory"
+	.string "Tate: Now that everyone does double\n"
+	.string "battles-\l"
+	.string "Liza: we've been considering something\l"
+	.string "new.\p"
+	.string "Tate: Instead of battling together,\n"
+	.string "Liza: battling challengers individually,\l"
+	.string "back-to-back.$"
+
+MossdeepCity_Gym_Text_TateAndLiza_Legendaries::
+# 739 "data/maps/MossdeepCity_Gym/scripts.pory"
+	.string "Liza: Do you think our Legendary\n"
+	.string "Tate: is too strong?\p"
+	.string "Liza: Mine is Calyrex\n"
+	.string "Tate: and mine is Glastrier.\p"
+	.string "Liza: They are united\n"
+	.string "Tate: just like us!$"

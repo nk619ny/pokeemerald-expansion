@@ -703,3 +703,39 @@ text MossdeepCity_Gym_Text_BlakePostBattle {
 text MossdeepCity_Gym_Text_GymGuideAdviceNew {
 	format("Yo, how's it going, CHAMPION-bound {PLAYER}?\pThe GYM LEADERS here use PSYCHIC-type Pokémon.\pBut the trainers in this gym, including the Leaders, often possess strange abilities that distort normal battle conditions.\pAnd on top of that, all the trainers before the Leaders will face you in back-to-back battles.\pYou'll need to be prepared for anything!")
 }
+
+
+const TempVar_TateAndLiza_Dialogue = VAR_TEMP_8
+
+script MossdeepCity_Gym_EventScript_TateAndLiza_PostBadge{
+	if (var(TempVar_TateAndLiza_Dialogue) == 0) {
+		random(2)
+		copyvar(TempVar_TateAndLiza_Dialogue,VAR_RESULT)
+		addvar(TempVar_TateAndLiza_Dialogue,1)
+	}
+	switch(var(TempVar_TateAndLiza_Dialogue)) {
+		case 1:
+			msgbox(MossdeepCity_Gym_Text_TateAndLiza_Legendaries,MSGBOX_NPC)
+			addvar(TempVar_TateAndLiza_Dialogue,1)
+		case 2:
+			msgbox(MossdeepCity_Gym_Text_TateAndLiza_BackToBack,MSGBOX_NPC)
+			addvar(TempVar_TateAndLiza_Dialogue,1)
+		case 3:
+			msgbox(MossdeepCity_Gym_Text_TateAndLizaPostBattle,MSGBOX_NPC)
+			setvar(TempVar_TateAndLiza_Dialogue,1)
+		default:
+			releaseall
+			end
+	}
+	waitmessage
+	releaseall	
+	end
+}
+
+text MossdeepCity_Gym_Text_TateAndLiza_BackToBack {
+	format("Tate: Now that everyone does double battles-\NLiza: we've been considering something new.\pTate: Instead of battling together,\NLiza: battling challengers individually, back-to-back." )
+}
+
+text MossdeepCity_Gym_Text_TateAndLiza_Legendaries{
+	format("Liza: Do you think our Legendary\NTate: is too strong?\pLiza: Mine is Calyrex\NTate: and mine is Glastrier.\pLiza: They are united\NTate: just like us!")
+}

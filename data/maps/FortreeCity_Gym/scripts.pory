@@ -23,6 +23,7 @@ FortreeCity_Gym_EventScript_Winona::
 	//specialvar VAR_RESULT, ShouldTryRematchBattle
 	//goto_if_eq VAR_RESULT, TRUE, FortreeCity_Gym_EventScript_WinonaRematch
 	goto_if_unset FLAG_RECEIVED_TM_AERIAL_ACE, FortreeCity_Gym_EventScript_GiveAerialAce2
+	goto FortreeCity_Gym_EventScript_Winona_PostBadge
 	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -338,3 +339,46 @@ FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
 	.string "Please return with two Pokémon\n"
 	.string "at the very least.$"
 `
+
+
+const TempVar_Winona_Dialogue = VAR_TEMP_8
+
+script FortreeCity_Gym_EventScript_Winona_PostBadge{
+	if (var(TempVar_Winona_Dialogue) == 0) {
+		random(3)
+		copyvar(TempVar_Winona_Dialogue,VAR_RESULT)
+		addvar(TempVar_Winona_Dialogue,1)
+	}
+	switch(var(TempVar_Winona_Dialogue)) {
+		case 1:
+			msgbox(FortreeCity_Gym_Text_Winona_Legendaries,MSGBOX_NPC)
+			addvar(TempVar_Winona_Dialogue,1)
+		case 2:
+			msgbox(FortreeCity_Gym_Text_Winona_Magma,MSGBOX_NPC)
+			addvar(TempVar_Winona_Dialogue,1)
+		case 3:
+			msgbox(FortreeCity_Gym_Text_Winona_Aqua,MSGBOX_NPC)
+			addvar(TempVar_Winona_Dialogue,1)
+		case 4:
+			msgbox(FortreeCity_Gym_Text_WinonaPostBattle,MSGBOX_NPC)
+			setvar(TempVar_Winona_Dialogue,1)
+		default:
+			releaseall
+			end
+	}
+	waitmessage
+	releaseall	
+	end
+}
+
+text FortreeCity_Gym_Text_Winona_Legendaries {
+	format("Winona: Hm? Two legendaries?\pWell, Liza tells me Celesteela isn't really a legendary, it's some sort of space Beast." )
+}
+
+text FortreeCity_Gym_Text_Winona_Magma{
+	format("Winona: I don't really understand Team Magma.\pHere in Fortree, we haven't felt a need to transform our environment in order to have a thriving community.\pWe live within the forest, in harmony with nature.")
+}
+
+text FortreeCity_Gym_Text_Winona_Aqua{
+	format("Winona: I did hear that Team Aqua was causing some commotion in the Weather Center nearby.\pIt doesn't sound like they were really hurting anyone though.")
+}

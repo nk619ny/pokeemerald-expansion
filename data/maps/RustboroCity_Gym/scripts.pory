@@ -7,6 +7,7 @@ RustboroCity_Gym_EventScript_Roxanne::
 	//specialvar VAR_RESULT, ShouldTryRematchBattle
 	//goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
 	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
+	goto RustboroCity_Gym_EventScript_Roxanne_PostBadge
 	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -326,4 +327,48 @@ text RustboroCity_Gym_Text_DanielleDefeat {
 
 text RustboroCity_Gym_Text_DaniellePostBattle {
 	format("Roxanne is my inspiration.\pI came to Rustboro to learn from her!")
+}
+
+
+
+const TempVar_Roxanne_Dialogue = VAR_TEMP_3
+
+script RustboroCity_Gym_EventScript_Roxanne_PostBadge{
+	if (var(TempVar_Roxanne_Dialogue) == 0) {
+		random(3)
+		copyvar(TempVar_Roxanne_Dialogue,VAR_RESULT)
+		addvar(TempVar_Roxanne_Dialogue,1)
+	}
+	switch(var(TempVar_Roxanne_Dialogue)) {
+		case 1:
+			msgbox(RustboroCity_Gym_Text_Roxanne_Steven,MSGBOX_NPC)
+			addvar(TempVar_Roxanne_Dialogue,1)
+		case 2:
+			msgbox(RustboroCity_Gym_Text_Roxanne_Rusturf,MSGBOX_NPC)
+			addvar(TempVar_Roxanne_Dialogue,1)
+		case 3:
+			msgbox(RustboroCity_Gym_Text_Roxanne_Bridge,MSGBOX_NPC)
+			addvar(TempVar_Roxanne_Dialogue,1)
+		case 4:
+			msgbox(RustboroCity_Gym_Text_RoxannePostBattle,MSGBOX_NPC)
+			setvar(TempVar_Roxanne_Dialogue,1)
+		default:
+			releaseall
+			end
+	}
+	waitmessage
+	releaseall	
+	end
+}
+
+text RustboroCity_Gym_Text_Roxanne_Steven {
+	format("Roxanne: I graduated from the Rustboro Trainer School as valedictorian.\pSteven Stone was the salutatorian of that class." )
+}
+
+text RustboroCity_Gym_Text_Roxanne_Rusturf{
+	format("Roxanne: After the bridge went down, we reopened the Rusturf Tunnel project.\pI negotiated a compromise with Archie and Mr. Stone after team Aqua's intervention.\pWe will continue clearing the tunnel, but only with skilled Trainers and their Pokémon operating carefully.")
+}
+
+text RustboroCity_Gym_Text_Roxanne_Bridge{
+	format("Roxanne: I'm glad we were able to get the bridge to Petalburg City repaired.\pDevon Corp took over the project, and did a great job.")
 }

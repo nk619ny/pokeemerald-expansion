@@ -45,10 +45,11 @@ LavaridgeTown_Gym_1F_EventScript_EndCheckBuryTrainers::
 
 LavaridgeTown_Gym_1F_EventScript_Flannery::
 	setflag FLAG_FORCE_SUN
-	trainerbattle_single TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_Text_FlanneryIntro, LavaridgeTown_Gym_1F_Text_FlanneryDefeat, LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated
+	trainerbattle_single TRAINER_FLANNERY_1, LavaridgeTown_Gym_1F_Text_FlanneryIntroNew, LavaridgeTown_Gym_1F_Text_FlanneryDefeat, LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated
 	//specialvar VAR_RESULT, ShouldTryRematchBattle
 	//goto_if_eq VAR_RESULT, TRUE, LavaridgeTown_Gym_1F_EventScript_FlanneryRematch
 	goto_if_unset FLAG_RECEIVED_TM_OVERHEAT, LavaridgeTown_Gym_1F_EventScript_GiveOverheat2
+	goto LavaridgeTown_Gym_1F_EventScript_Flannery_PostBadge
 	msgbox LavaridgeTown_Gym_1F_Text_FlanneryPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -357,8 +358,8 @@ LavaridgeTown_Gym_1F_Text_RegisteredFlannery:
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostBattle:
 	.string "Your power reminds me of someone…\p"
-	.string "Oh! I know! You battle like NORMAN,\n"
-	.string "the GYM LEADER of PETALBURG.$"
+	.string "Oh! I know! You battle like Norman,\n"
+	.string "the Gym Leader of Petalburg.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue:
 	.string "LAVARIDGE TOWN POKéMON GYM$"
@@ -421,4 +422,75 @@ script LavaridgeTown_Gym_1F_EventScript_SetSun {
 script LavaridgeTown_Gym_1F_EventScript_ClearSun {
 	clearflag(FLAG_FORCE_SUN)
 	return
+}
+
+
+
+const TempVar_Flannery_Dialogue = VAR_TEMP_3
+
+script LavaridgeTown_Gym_1F_EventScript_Flannery_PostBadge{
+	if (var(TempVar_Flannery_Dialogue) == 0) {
+		random(5)
+		copyvar(TempVar_Flannery_Dialogue,VAR_RESULT)
+		addvar(TempVar_Flannery_Dialogue,1)
+	}
+	switch(var(TempVar_Flannery_Dialogue)) {
+		case 1:
+			msgbox(LavaridgeTown_Gym_1F_Text_Flannery_GrandfatherEliteFour,MSGBOX_NPC)
+			addvar(TempVar_Flannery_Dialogue,1)
+		case 2:
+			msgbox(LavaridgeTown_Gym_1F_Text_Flannery_GrandfatherFactory,MSGBOX_NPC)
+			addvar(TempVar_Flannery_Dialogue,1)
+		case 3:
+			msgbox(LavaridgeTown_Gym_1F_Text_Flannery_HotSprings,MSGBOX_NPC)
+			addvar(TempVar_Flannery_Dialogue,1)
+		case 4:
+			msgbox(LavaridgeTown_Gym_1F_Text_Flannery_Magma,MSGBOX_NPC)
+			addvar(TempVar_Flannery_Dialogue,1)
+		case 5:
+			if(flag(FLAG_DEFEATED_RIVAL_RUSTBORO)) {
+				msgbox(LavaridgeTown_Gym_1F_Text_Flannery_NotNewest,MSGBOX_NPC)
+			} 
+			else {
+				msgbox(LavaridgeTown_Gym_1F_Text_Flannery_Newest,MSGBOX_NPC)
+			}
+			addvar(TempVar_Flannery_Dialogue,1)
+		case 6:
+			msgbox(LavaridgeTown_Gym_1F_Text_FlanneryPostBattle,MSGBOX_NPC)
+			setvar(TempVar_Flannery_Dialogue,1)
+		default:
+			releaseall
+			end
+	}
+	waitmessage
+	releaseall	
+	end
+}
+
+text LavaridgeTown_Gym_1F_Text_Flannery_Magma {
+	format("Flannery: Team Magma has a big presence in the area.\pI've been okay with it, because I get their work is meant to make our region better.\pBut it is frustrating sometimes how they seem to do whatever they want without checking in with anyone." )
+}
+
+text LavaridgeTown_Gym_1F_Text_Flannery_HotSprings{
+	format("Flannery: Mt. Chimney and the Hot Springs attract lots of travelers from all around.\pThe money we make from tourism helps fund important conservation efforts.")
+}
+
+text LavaridgeTown_Gym_1F_Text_Flannery_Newest{
+	format("Flannery: Soon I won't be the newest Gym Leader in Hoenn anymore.\pI can't wait!")
+}
+
+text LavaridgeTown_Gym_1F_Text_Flannery_NotNewest{
+	format("Flannery: I'm not the newest Gym Leader in Hoenn anymore.\pMaybe this means I can stand up to Maxie a bit more…")
+}
+
+text LavaridgeTown_Gym_1F_Text_Flannery_GrandfatherEliteFour{
+	format("Flannery: My Grandfather used to run this Gym, but he handed it over to me when he became a member of the Elite Four.\pWhen you make it there, tell him things here are going well!")
+}
+
+text LavaridgeTown_Gym_1F_Text_Flannery_GrandfatherFactory{
+	format("Flannery: Before he became the Gym Leader, my Grandfather ran a factory that helped supply our neighbors at Devon Corp, Greater Mauville Holdings, and Team Magma.")
+}
+
+text LavaridgeTown_Gym_1F_Text_FlanneryIntroNew{
+	format("I'm Flannery, and I'm in charge here!\pYou'd better not underestimate me just 'cause I've only been Leader a short time!\pWith the skills inherited from my grandfather, I'm gonna, uh, demonstrate the hot moves we've honed in this land!")
 }

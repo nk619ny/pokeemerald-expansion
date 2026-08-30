@@ -153,6 +153,7 @@ RustboroCity_DevonCorp_3F_EventScript_MrStone::
 	lock
 	faceplayer
 	goto_if_unset FLAG_RECEIVED_DEVON_MEGA_STONE, RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone
+	goto_if_unset FLAG_TEMP_2, RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone
 	goto RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor
 	//goto_if_set FLAG_RECEIVED_EXP_SHARE, RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor
 	//goto_if_set FLAG_DELIVERED_STEVEN_LETTER, RustboroCity_DevonCorp_3F_EventScript_GiveExpShare
@@ -324,6 +325,16 @@ script RustboroCity_DevonCorp_3F_EventScript_GivePowerGem {
 
 const TempVar_MegaStone = VAR_TEMP_5
 const TempFlag_HeardStoneIntro = FLAG_TEMP_1
+const TempFlag_HeardStoneMagma = FLAG_TEMP_2
+
+script RustboroCity_DevonCorp_3F_EventScript_MrStoneOnMagma{
+	lock
+	setflag(TempFlag_HeardStoneMagma)
+	msgbox(RustboroCity_DevonCorp_3F_Text_MrStoneMagma, MSGBOX_DEFAULT)
+	closemessage
+	releaseall
+	end
+}
 
 script RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone {
 	lock
@@ -400,4 +411,8 @@ script RustboroCity_DevonCorp_3F_EventScript_GiveMegaStone {
 
 text RustboroCity_DevonCorp_3F_EventScript_MrStoneIntro {
 	format("MR. STONE: I've heard from my son that you're a very promising young trainer.\pSteven has encouraged the Devon Corporation to collect and study Mega Stones.\pI'd like to support your journey by gifting one to you.")
+}
+
+text RustboroCity_DevonCorp_3F_Text_MrStoneMagma {
+	format("MR. STONE: In the past, I funded some research grants for Maxie and Courtney.\pLately though, I'm nervous about their plans.")
 }

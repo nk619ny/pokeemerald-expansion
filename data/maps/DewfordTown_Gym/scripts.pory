@@ -138,6 +138,7 @@ DewfordTown_Gym_EventScript_Brawly::
 	//specialvar VAR_RESULT, ShouldTryRematchBattle
 	//goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
 	goto_if_unset FLAG_RECEIVED_TM_BULK_UP, DewfordTown_Gym_EventScript_GiveBulkUp2
+	goto DewfordTown_Gym_EventScript_Brawly_PostBadge
 	msgbox DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -474,4 +475,46 @@ script DewfordTown_Gym_EventScript_SetNewLevelCap {
 //	playfanfare(MUS_OBTAIN_B_POINTS)
 //	waitfanfare
 //	closemessage
+}
+
+const TempVar_Brawly_Dialogue = VAR_TEMP_3
+
+script DewfordTown_Gym_EventScript_Brawly_PostBadge{
+	if (var(TempVar_Brawly_Dialogue) == 0) {
+		random(3)
+		copyvar(TempVar_Brawly_Dialogue,VAR_RESULT)
+		addvar(TempVar_Brawly_Dialogue,1)
+	}
+	switch(var(TempVar_Brawly_Dialogue)) {
+		case 1:
+			msgbox(DewfordTown_Gym_Text_Brawly_MissSurfing,MSGBOX_NPC)
+			addvar(TempVar_Brawly_Dialogue,1)
+		case 2:
+			msgbox(DewfordTown_Gym_Text_Brawly_Steven,MSGBOX_NPC)
+			addvar(TempVar_Brawly_Dialogue,1)
+		case 3:
+			msgbox(DewfordTown_Gym_Text_Brawly_Aqua,MSGBOX_NPC)
+			addvar(TempVar_Brawly_Dialogue,1)
+		case 4:
+			msgbox(DewfordTown_Gym_Text_BrawlyPostBattle,MSGBOX_NPC)
+			setvar(TempVar_Brawly_Dialogue,1)
+		default:
+			releaseall
+			end
+	}
+	waitmessage
+	releaseall	
+	end
+}
+
+text DewfordTown_Gym_Text_Brawly_Aqua {
+	format("Brawly: Honestly, I'm sympathetic to Team Aqua.\pThe Slateport land reclamation project seriously disrupted Pokémon habitats, and I know many sailors who've suffered from it.\pBut that doesn't justify them trying to unilaterally blow up the dam and destroy those farms." )
+}
+
+text DewfordTown_Gym_Text_Brawly_Steven{
+	format("Brawly: Steven is one of the most skilled trainers in Hoenn.\pHe used to come to Dewford often as a child, exploring Granite Cave and the Pokémon within it.\pI think his family owns a private boat.")
+}
+
+text DewfordTown_Gym_Text_Brawly_MissSurfing{
+	format("Brawly: I was honored when the Pokémon League named me as the Gym Leader in my hometown of Dewford, after all my training.\pBut I didn't expect how involved I would have to be with local politics.\pSomedays I miss my more carefree surfer days.")
 }
