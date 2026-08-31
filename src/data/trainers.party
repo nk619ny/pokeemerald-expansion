@@ -16303,6 +16303,8 @@ Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
+
 
 Stunky  
 Level: 44
@@ -16344,7 +16346,7 @@ Tera Type: Dark
 - Thief  
 - Taunt  
 - Howl  
-- Baton Pass  
+- Protect
 
 === TRAINER_LUNG === /* Route 113 */
 Name: LUNG
