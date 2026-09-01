@@ -6829,6 +6829,9 @@ static s32 AI_HardTrickRoom(enum BattlerId battlerAtk, enum BattlerId battlerDef
 // Score large enough to dominate normal scoring, including fast kills and friendly-fire penalties.
 #define CUSTOM_STRATEGY_FORCE_MOVE 50
 
+// Cancels AI_DoubleBattle's ally-target fallback penalty (-10) and nets to fast-kill parity.
+#define CUSTOM_STRATEGY_SOAK_ALLY_PROTECT_BONUS (FAST_KILL + 10)
+
 // --- Strategy 1: TRAINER_GRUNT_MAGMA_HIDEOUT_14 (Bruxish + Coalossal) ---
 // Bruxish pivots a Water move into its Coalossal partner to trigger Steam Engine (+Speed) and an
 // un-triggered Weakness Policy (+Atk/SpA), then boosted Coalossal cleans up. Coalossal's damage
@@ -6933,6 +6936,188 @@ static bool32 ShouldDelayMegaForPerishSong(enum BattlerId abomasnow)
     chance = (soundproofFoes == 1) ? DELAY_MEGA_FOR_PERISH_SONG_ONE_SOUNDPROOF_CHANCE : DELAY_MEGA_FOR_PERISH_SONG_CHANCE;
     aiData->edgarDelayMegaForPerishSong = RandomPercentage(RNG_CUSTOM_STRATEGIES, chance);
     return aiData->edgarDelayMegaForPerishSong;
+}
+
+// Post-Mega Abomasnow: once already Mega Evolved, only Protect when fast-killed and off cooldown.
+static bool32 IsEdgarMegaAbomasnowProtect(enum BattlerId battler)
+{
+    return gBattleMons[battler].species == SPECIES_ABOMASNOW_MEGA && HasMove(battler, MOVE_PROTECT);
+}
+
+// Politoed's Soak: encourages saving an ally from a lethal Fire move, and avoids clashing with the
+// team's Ice-type attackers.
+static bool32 IsEdgarSoakPolitoed(enum BattlerId battler)
+{
+    return gBattleMons[battler].species == SPECIES_POLITOED && HasMove(battler, MOVE_SOAK);
+}
+
+// Arctovish's Water Sport: encourages saving an ally from a lethal Fire move.
+static bool32 IsEdgarWaterSportArctovish(enum BattlerId battler)
+{
+    return gBattleMons[battler].species == SPECIES_ARCTOVISH && HasMove(battler, MOVE_WATER_SPORT);
+}
+
+// The partner's chosen move, only if it has already committed (lower id decides first) to targeting
+// battlerDef this turn. Returns MOVE_NONE otherwise (including "hasn't decided yet").
+static enum Move GetPartnerLockedMoveOnTarget(enum BattlerId battlerAtk, enum BattlerId battlerDef)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battlerAtk);
+    if (partner >= battlerAtk || !IsBattlerAlive(partner))
+        return MOVE_NONE;
+    if (gAiBattleData->chosenTarget[partner] != battlerDef)
+        return MOVE_NONE;
+    return GetAllyChosenMove(battlerAtk);
+}
+
+// True if the ally has already locked in a protection move this turn (only reliable when the ally
+// decides first). Used so Soak/Water Sport don't bother "saving" an ally that's already safe.
+static bool32 IsAllyLockedProtecting(enum BattlerId battlerAtk)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battlerAtk);
+    enum Move partnerMove;
+    if (partner >= battlerAtk || !IsBattlerAlive(partner))
+        return FALSE;
+    partnerMove = GetAllyChosenMove(battlerAtk);
+    return partnerMove != MOVE_NONE && IsProtectionMoveEffect(GetMoveEffect(partnerMove));
+}
+
+// Finds a live, AI-visible foe with a known Fire move that currently would faint `ally`.
+static bool32 FindLethalFireThreatOnAlly(enum BattlerId ally, enum BattlerId *outFoe, u32 *outMoveIndex)
+{
+    for (u32 f = 0; f < 2; f++)
+    {
+        enum BattlerId foe = (f == 0) ? LEFT_FOE(ally) : RIGHT_FOE(ally);
+        enum Move *moves;
+
+        if (!IsBattlerAlive(foe) || !IsAiBattlerAware(foe))
+            continue;
+        moves = GetMovesArray(foe);
+        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+        {
+            enum Move move = moves[moveIndex];
+            if (move == MOVE_NONE || move == MOVE_UNAVAILABLE || IsBattleMoveStatus(move))
+                continue;
+            if (GetMoveType(move) != TYPE_FIRE)
+                continue;
+            if (gAiLogicData->simulatedDmg[foe][ally][moveIndex].maximum < gBattleMons[ally].hp)
+                continue;
+            *outFoe = foe;
+            *outMoveIndex = moveIndex;
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
+// True if every live foe that can currently faint `ally` (by any move) is slower than `attacker`.
+static bool32 IsFasterThanEveryKillerOf(enum BattlerId attacker, enum BattlerId ally, enum Move attackerMove)
+{
+    for (u32 f = 0; f < 2; f++)
+    {
+        enum BattlerId foe = (f == 0) ? LEFT_FOE(attacker) : RIGHT_FOE(attacker);
+        if (!IsBattlerAlive(foe) || !CanTargetFaintAi(foe, ally))
+            continue;
+        if (!AI_IsFaster(attacker, foe, attackerMove, GetPredictedMove(attacker, foe, gAiLogicData), CONSIDER_PRIORITY))
+            return FALSE;
+    }
+    return TRUE;
+}
+
+// Damage of `move` against `def`, recalculated as if `def` were pure Water-type (simulating Soak).
+static u32 CustomStrategy_MaxDamageAsWaterType(enum BattlerId atk, enum BattlerId def, enum Move move)
+{
+    uq4_12_t eff;
+    struct SimulatedDamage dmg;
+    enum Type savedTypes[3];
+
+    savedTypes[0] = gBattleMons[def].types[0];
+    savedTypes[1] = gBattleMons[def].types[1];
+    savedTypes[2] = gBattleMons[def].types[2];
+    gBattleMons[def].types[0] = TYPE_WATER;
+    gBattleMons[def].types[1] = TYPE_WATER;
+    gBattleMons[def].types[2] = TYPE_MYSTERY;
+    dmg = AI_CalcDamageSaveBattlers(move, atk, def, &eff, NO_GIMMICK, NO_GIMMICK);
+    gBattleMons[def].types[0] = savedTypes[0];
+    gBattleMons[def].types[1] = savedTypes[1];
+    gBattleMons[def].types[2] = savedTypes[2];
+
+    return dmg.maximum;
+}
+
+// Politoed should Soak its ally if a known Fire move would otherwise faint it, the ally would survive
+// that same hit as pure Water, the ally hasn't already secured itself with Protect, and Politoed
+// outspeeds every foe that can currently faint the ally.
+static bool32 ShouldSoakToSaveAllyFromFire(enum BattlerId politoed, enum BattlerId ally)
+{
+    enum BattlerId fireFoe;
+    u32 fireMoveIndex;
+    enum Move fireMove;
+
+    if (!IsBattlerAlive(ally) || IsAllyLockedProtecting(politoed))
+        return FALSE;
+    if (!FindLethalFireThreatOnAlly(ally, &fireFoe, &fireMoveIndex))
+        return FALSE;
+    fireMove = GetMovesArray(fireFoe)[fireMoveIndex];
+    if (CustomStrategy_MaxDamageAsWaterType(fireFoe, ally, fireMove) >= gBattleMons[ally].hp)
+        return FALSE; // still dies even as pure Water
+    return IsFasterThanEveryKillerOf(politoed, ally, MOVE_SOAK);
+}
+
+// Same idea as ShouldSoakToSaveAllyFromFire, but for Water Sport's Fire-damage reduction instead of
+// a type change.
+static bool32 ShouldWaterSportToSaveAllyFromFire(enum BattlerId arctovish, enum BattlerId ally)
+{
+    enum BattlerId fireFoe;
+    u32 fireMoveIndex;
+    uq4_12_t sportMod;
+    u32 reducedDmg;
+
+    if (!IsBattlerAlive(ally) || IsAllyLockedProtecting(arctovish))
+        return FALSE;
+    if (!FindLethalFireThreatOnAlly(ally, &fireFoe, &fireMoveIndex))
+        return FALSE;
+
+    sportMod = (GetConfig(B_SPORT_DMG_REDUCTION) >= GEN_5) ? UQ_4_12(0.33) : UQ_4_12(0.5);
+    reducedDmg = uq4_12_multiply(gAiLogicData->simulatedDmg[fireFoe][ally][fireMoveIndex].maximum, sportMod);
+    if (reducedDmg >= gBattleMons[ally].hp)
+        return FALSE; // still dies even with Water Sport active
+    return IsFasterThanEveryKillerOf(arctovish, ally, MOVE_WATER_SPORT);
+}
+
+// Don't Soak an enemy if the partner already locked in a non-Freeze-Dry Ice attack on that same
+// enemy - Soaking it to pure Water would turn a secured KO into a resisted non-KO.
+static bool32 SoakWouldRuinPartnerIceKO(enum BattlerId politoed, enum BattlerId target)
+{
+    enum BattlerId partner = BATTLE_PARTNER(politoed);
+    enum Move partnerMove = GetPartnerLockedMoveOnTarget(politoed, target);
+    u32 partnerMoveIndex;
+
+    if (partnerMove == MOVE_NONE || GetMoveType(partnerMove) != TYPE_ICE
+     || GetMoveEffect(partnerMove) == EFFECT_SUPER_EFFECTIVE_ON_ARG)
+        return FALSE;
+    partnerMoveIndex = GetMoveIndex(partner, partnerMove);
+    if (partnerMoveIndex == MAX_MON_MOVES
+     || gAiLogicData->simulatedDmg[partner][target][partnerMoveIndex].maximum < gBattleMons[target].hp)
+        return FALSE; // wasn't going to KO anyway
+    return CustomStrategy_MaxDamageAsWaterType(partner, target, partnerMove) < gBattleMons[target].hp;
+}
+
+// Don't fire a Water or non-Freeze-Dry Ice move into an enemy the partner already locked Soak onto -
+// the target will be pure Water by the time the hit lands, resisting both move types.
+static bool32 WouldLoseKOIfTargetSoaked(enum BattlerId battlerAtk, enum BattlerId target, enum Move move)
+{
+    u32 moveIndex;
+
+    if (GetPartnerLockedMoveOnTarget(battlerAtk, target) != MOVE_SOAK)
+        return FALSE;
+    if (GetMoveType(move) != TYPE_WATER
+     && !(GetMoveType(move) == TYPE_ICE && GetMoveEffect(move) != EFFECT_SUPER_EFFECTIVE_ON_ARG))
+        return FALSE;
+    moveIndex = GetMoveIndex(battlerAtk, move);
+    if (moveIndex == MAX_MON_MOVES
+     || gAiLogicData->simulatedDmg[battlerAtk][target][moveIndex].maximum < gBattleMons[target].hp)
+        return FALSE; // wasn't going to KO anyway
+    return CustomStrategy_MaxDamageAsWaterType(battlerAtk, target, move) < gBattleMons[target].hp;
 }
 
 // Called from BattleAI_ChooseMoveIndex to stop the combo mons from Terastalizing.
@@ -7054,6 +7239,32 @@ static s32 AI_CustomStrategies(enum BattlerId battlerAtk, enum BattlerId battler
     if (!IsDoubleBattle())
         return score;
 
+    // Failsafe (applies to any Edgar attacker): don't fire a Water/non-Freeze-Dry-Ice move into an
+    // enemy the partner already locked Soak onto.
+    if (IsBattlerAlive(battlerDef) && WouldLoseKOIfTargetSoaked(battlerAtk, battlerDef, move))
+        ADJUST_SCORE(WORST_EFFECT);
+
+    // Strategy 2 - TRAINER_EDGAR: post-Mega Abomasnow only Protects when fast-killed and off cooldown.
+    if (IsEdgarMegaAbomasnowProtect(battlerAtk))
+    {
+        if (move == MOVE_PROTECT)
+        {
+            bool32 allowProtect = FALSE;
+            // Failsafe: don't Protect if the ally already locked Soak targeting this mon - Soak
+            // already resolves this turn's survival plan, so Protect would just waste the turn.
+            if (GetPartnerLockedMoveOnTarget(battlerAtk, battlerAtk) != MOVE_SOAK)
+            {
+                bool32 fastKilled = IsBattlerFastKillThreatened(battlerAtk);
+                bool32 notOnCooldown = (gBattleMons[battlerAtk].volatiles.consecutiveMoveUses == 0);
+                if (fastKilled && notOnCooldown)
+                    allowProtect = RandomPercentage(RNG_CUSTOM_STRATEGIES, MEGA_ABOMASNOW_PROTECT_CHANCE);
+            }
+            if (!allowProtect)
+                ADJUST_SCORE(WORST_EFFECT);
+        }
+        return score;
+    }
+
     // Strategy 2 - TRAINER_EDGAR: Abomasnow holds off Mega Evolution and Protects instead.
     if (IsEdgarComboAbomasnow(battlerAtk))
     {
@@ -7076,6 +7287,30 @@ static s32 AI_CustomStrategies(enum BattlerId battlerAtk, enum BattlerId battler
         {
             ADJUST_SCORE(WORST_EFFECT);
         }
+        return score;
+    }
+
+    // Strategy 2 - TRAINER_EDGAR: Politoed Soaks its ally to save it from a lethal Fire move, and
+    // avoids Soaking an enemy the partner is about to hit with a non-Freeze-Dry Ice move.
+    if (IsEdgarSoakPolitoed(battlerAtk) && move == MOVE_SOAK)
+    {
+        if (battlerDef == BATTLE_PARTNER(battlerAtk))
+        {
+            if (ShouldSoakToSaveAllyFromFire(battlerAtk, battlerDef))
+                ADJUST_SCORE(CUSTOM_STRATEGY_SOAK_ALLY_PROTECT_BONUS);
+        }
+        else if (IsBattlerAlive(battlerDef) && SoakWouldRuinPartnerIceKO(battlerAtk, battlerDef))
+        {
+            ADJUST_SCORE(WORST_EFFECT);
+        }
+        return score;
+    }
+
+    // Strategy 2 - TRAINER_EDGAR: Arctovish uses Water Sport to save its ally from a lethal Fire move.
+    if (IsEdgarWaterSportArctovish(battlerAtk) && move == MOVE_WATER_SPORT)
+    {
+        if (ShouldWaterSportToSaveAllyFromFire(battlerAtk, BATTLE_PARTNER(battlerAtk)))
+            ADJUST_SCORE(CUSTOM_STRATEGY_SOAK_ALLY_PROTECT_BONUS);
         return score;
     }
 

@@ -154,6 +154,9 @@
 // off its Mega Evolution (using Protect instead) so its partner can safely land Perish Song.
 #define DELAY_MEGA_FOR_PERISH_SONG_CHANCE                     50 // chance to adopt the strategy when neither player mon has Soundproof
 #define DELAY_MEGA_FOR_PERISH_SONG_ONE_SOUNDPROOF_CHANCE      10 // reduced chance when exactly one player mon has Soundproof
+// Mega Abomasnow Protect gating (TRAINER_EDGAR): once already Mega Evolved, chance to allow Protect
+// when fast-killed by a foe and Protect isn't on cooldown; otherwise Protect is heavily discouraged.
+#define MEGA_ABOMASNOW_PROTECT_CHANCE                         40
 
 // AI_FLAG_HARD_TRICK_ROOM settings
 #define SHOULD_TRICK_ROOM_OVER_FAST_KILL         50 // chance the AI sets Trick Room at an appropriate time instead of taking an available fast kill
