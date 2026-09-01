@@ -149,6 +149,12 @@
 #define AI_AVOID_WIDE_GUARD_SPREAD               TRUE // master switch; when FALSE no RNG is consumed and no scores are adjusted
 #define AVOID_WIDE_GUARD_SPREAD_CHANCE           33 // chance to discourage a Wide-Guard-blockable spread move
 
+// AI_FLAG_CUSTOM_STRATEGIES settings
+// Delay Mega for Perish Song (TRAINER_EDGAR): on turn 1, chance to have a Soundproof mon holding
+// off its Mega Evolution (using Protect instead) so its partner can safely land Perish Song.
+#define DELAY_MEGA_FOR_PERISH_SONG_CHANCE                     50 // chance to adopt the strategy when neither player mon has Soundproof
+#define DELAY_MEGA_FOR_PERISH_SONG_ONE_SOUNDPROOF_CHANCE      10 // reduced chance when exactly one player mon has Soundproof
+
 // AI_FLAG_HARD_TRICK_ROOM settings
 #define SHOULD_TRICK_ROOM_OVER_FAST_KILL         50 // chance the AI sets Trick Room at an appropriate time instead of taking an available fast kill
 

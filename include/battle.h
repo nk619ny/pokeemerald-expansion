@@ -257,7 +257,9 @@ struct AiLogicData
     u32 doubleTargetSlowKill:1; // Rolled per decision: still double up when both mons only have slow kills
     u32 doubleTargetInsurance:1; // Rolled per decision: double up when the designated killer is fast-kill-threatened
     u32 wideGuardDiscourage:1; // Rolled per decision: discourage spread moves vs a live Wide Guard
-    u32 padding2:15;
+    u32 edgarDelayMegaRolled:1; // Cached once per turn: whether the delay-mega-for-Perish-Song roll has happened
+    u32 edgarDelayMegaForPerishSong:1; // Cached once per turn: result of that roll
+    u32 padding2:13;
 };
 
 struct AiThinkingStruct

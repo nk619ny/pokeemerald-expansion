@@ -94,3 +94,103 @@ AI_DOUBLE_BATTLE_TEST("Custom Strategies: flag is inert when the partner isn't t
         TURN { NOT_EXPECT_MOVE(opponentLeft, MOVE_AQUA_JET, target: opponentRight); }
     }
 }
+
+// AI_FLAG_CUSTOM_STRATEGIES, Strategy 2 (TRAINER_EDGAR):
+// On turn 1, a Soundproof Abomasnow may hold off Mega Evolution (Protect instead) so its Politoed
+// partner can safely land Perish Song. Gated on the Abomasnow + Politoed signature.
+
+#define EDGAR_STRATEGY_FLAGS (CUSTOM_STRATEGIES_FLAGS | AI_FLAG_OMNISCIENT)
+
+ASSUMPTIONS
+{
+    ASSUME(GetMoveEffect(MOVE_PERISH_SONG) == EFFECT_PERISH_SONG);
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: Abomasnow Protects and Politoed uses Perish Song when the strategy is adopted")
+{
+    GIVEN {
+        AI_FLAGS(EDGAR_STRATEGY_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_ABOMASNOW) { Ability(ABILITY_SOUNDPROOF); Item(ITEM_ABOMASITE); Moves(MOVE_ICE_SHARD, MOVE_WOOD_HAMMER, MOVE_ICE_HAMMER, MOVE_PROTECT); }
+        OPPONENT(SPECIES_POLITOED) { Ability(ABILITY_DAMP); Moves(MOVE_PERISH_SONG, MOVE_MUDDY_WATER, MOVE_SOAK, MOVE_ENCORE); }
+    } WHEN {
+        TURN {
+            EXPECT_MOVE(opponentLeft, MOVE_PROTECT);
+            EXPECT_MOVE(opponentRight, MOVE_PERISH_SONG);
+        }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: Politoed still takes an available fast kill over Perish Song")
+{
+    GIVEN {
+        ASSUME(GetMovePower(MOVE_MUDDY_WATER) > 0);
+        AI_FLAGS(EDGAR_STRATEGY_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(1); }
+        OPPONENT(SPECIES_ABOMASNOW) { Ability(ABILITY_SOUNDPROOF); Item(ITEM_ABOMASITE); Moves(MOVE_ICE_SHARD, MOVE_WOOD_HAMMER, MOVE_ICE_HAMMER, MOVE_PROTECT); }
+        OPPONENT(SPECIES_POLITOED) { Ability(ABILITY_DAMP); Speed(200); Moves(MOVE_PERISH_SONG, MOVE_MUDDY_WATER, MOVE_SOAK, MOVE_ENCORE); }
+    } WHEN {
+        TURN { NOT_EXPECT_MOVE(opponentRight, MOVE_PERISH_SONG); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: strategy never adopts when both player mons have Soundproof, and Perish Song is discouraged")
+{
+    GIVEN {
+        AI_FLAGS(EDGAR_STRATEGY_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SOUNDPROOF); }
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SOUNDPROOF); }
+        OPPONENT(SPECIES_ABOMASNOW) { Ability(ABILITY_SOUNDPROOF); Item(ITEM_ABOMASITE); Moves(MOVE_ICE_SHARD, MOVE_WOOD_HAMMER, MOVE_ICE_HAMMER, MOVE_PROTECT); }
+        OPPONENT(SPECIES_POLITOED) { Ability(ABILITY_DAMP); Moves(MOVE_PERISH_SONG, MOVE_MUDDY_WATER, MOVE_SOAK, MOVE_ENCORE); }
+    } WHEN {
+        TURN {
+            EXPECT_MOVE(opponentLeft, gimmick: GIMMICK_MEGA);
+            NOT_EXPECT_MOVE(opponentRight, MOVE_PERISH_SONG);
+        }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: reduced chance to adopt when exactly one player mon has Soundproof")
+{
+    PASSES_RANDOMLY(DELAY_MEGA_FOR_PERISH_SONG_ONE_SOUNDPROOF_CHANCE, 100, RNG_CUSTOM_STRATEGIES);
+    GIVEN {
+        AI_FLAGS(EDGAR_STRATEGY_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SOUNDPROOF); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_ABOMASNOW) { Ability(ABILITY_SOUNDPROOF); Item(ITEM_ABOMASITE); Moves(MOVE_ICE_SHARD, MOVE_WOOD_HAMMER, MOVE_ICE_HAMMER, MOVE_PROTECT); }
+        OPPONENT(SPECIES_POLITOED) { Ability(ABILITY_DAMP); Moves(MOVE_PERISH_SONG, MOVE_MUDDY_WATER, MOVE_SOAK, MOVE_ENCORE); }
+    } WHEN {
+        TURN { EXPECT_MOVE(opponentRight, MOVE_PERISH_SONG); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: default chance to adopt when neither player mon has Soundproof")
+{
+    PASSES_RANDOMLY(DELAY_MEGA_FOR_PERISH_SONG_CHANCE, 100, RNG_CUSTOM_STRATEGIES);
+    GIVEN {
+        AI_FLAGS(EDGAR_STRATEGY_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_ABOMASNOW) { Ability(ABILITY_SOUNDPROOF); Item(ITEM_ABOMASITE); Moves(MOVE_ICE_SHARD, MOVE_WOOD_HAMMER, MOVE_ICE_HAMMER, MOVE_PROTECT); }
+        OPPONENT(SPECIES_POLITOED) { Ability(ABILITY_DAMP); Moves(MOVE_PERISH_SONG, MOVE_MUDDY_WATER, MOVE_SOAK, MOVE_ENCORE); }
+    } WHEN {
+        TURN { EXPECT_MOVE(opponentRight, MOVE_PERISH_SONG); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: strategy and discouragement are turn-1 only")
+{
+    GIVEN {
+        AI_FLAGS(EDGAR_STRATEGY_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SOUNDPROOF); }
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SOUNDPROOF); }
+        OPPONENT(SPECIES_ABOMASNOW) { Ability(ABILITY_SOUNDPROOF); Item(ITEM_ABOMASITE); Moves(MOVE_ICE_SHARD, MOVE_WOOD_HAMMER, MOVE_ICE_HAMMER, MOVE_PROTECT); }
+        OPPONENT(SPECIES_POLITOED) { Ability(ABILITY_DAMP); Moves(MOVE_PERISH_SONG, MOVE_MUDDY_WATER, MOVE_SOAK, MOVE_ENCORE); }
+    } WHEN {
+        TURN { SCORE_EQ_VAL(opponentRight, MOVE_PERISH_SONG, AI_SCORE_DEFAULT + WORST_EFFECT + WORST_EFFECT); }
+        TURN { SCORE_EQ_VAL(opponentRight, MOVE_PERISH_SONG, AI_SCORE_DEFAULT + WORST_EFFECT); }
+    }
+}
+

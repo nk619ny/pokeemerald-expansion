@@ -6878,12 +6878,71 @@ static bool32 IsMagmaGrunt14Bruxish(enum BattlerId battler)
         && IsUntriggeredWpSteamEngineMon(partner);
 }
 
+// --- Strategy 2: TRAINER_EDGAR (Abomasnow + Politoed) ---
+// On turn 1, a Soundproof Abomasnow may hold off its Mega Evolution (using Protect instead) so its
+// Politoed partner can safely land Perish Song without the reply landing on a still-Mega'd attacker.
+
+static bool32 IsEdgarComboAbomasnow(enum BattlerId battler)
+{
+    struct AiLogicData *aiData = gAiLogicData;
+    enum BattlerId partner = BATTLE_PARTNER(battler);
+    return gBattleMons[battler].species == SPECIES_ABOMASNOW
+        && aiData->abilities[battler] == ABILITY_SOUNDPROOF
+        && gBattleStruct->gimmick.usableGimmick[battler] == GIMMICK_MEGA
+        && IsBattlerAlive(partner)
+        && gBattleMons[partner].species == SPECIES_POLITOED
+        && HasMove(partner, MOVE_PERISH_SONG);
+}
+
+static bool32 IsEdgarComboPolitoed(enum BattlerId battler)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battler);
+    return gBattleMons[battler].species == SPECIES_POLITOED
+        && HasMove(battler, MOVE_PERISH_SONG)
+        && IsBattlerAlive(partner)
+        && IsEdgarComboAbomasnow(partner);
+}
+
+// Lazily rolled once per turn and cached, so Abomasnow's and Politoed's separate decisions agree.
+// Always called with Abomasnow's battler id, regardless of which mon is asking.
+static bool32 ShouldDelayMegaForPerishSong(enum BattlerId abomasnow)
+{
+    struct AiLogicData *aiData = gAiLogicData;
+    enum BattlerId foeLeft, foeRight;
+    u32 soundproofFoes, chance;
+
+    if (gBattleTurnCounter != 0)
+        return FALSE;
+    if (aiData->edgarDelayMegaRolled)
+        return aiData->edgarDelayMegaForPerishSong;
+
+    aiData->edgarDelayMegaRolled = TRUE;
+    aiData->edgarDelayMegaForPerishSong = FALSE;
+
+    foeLeft = LEFT_FOE(abomasnow);
+    foeRight = RIGHT_FOE(abomasnow);
+    soundproofFoes = 0;
+    if (IsBattlerAlive(foeLeft) && aiData->abilities[foeLeft] == ABILITY_SOUNDPROOF)
+        soundproofFoes++;
+    if (IsBattlerAlive(foeRight) && aiData->abilities[foeRight] == ABILITY_SOUNDPROOF)
+        soundproofFoes++;
+
+    if (soundproofFoes >= 2)
+        return FALSE; // Perish Song would do nothing; skip the roll entirely.
+
+    chance = (soundproofFoes == 1) ? DELAY_MEGA_FOR_PERISH_SONG_ONE_SOUNDPROOF_CHANCE : DELAY_MEGA_FOR_PERISH_SONG_CHANCE;
+    aiData->edgarDelayMegaForPerishSong = RandomPercentage(RNG_CUSTOM_STRATEGIES, chance);
+    return aiData->edgarDelayMegaForPerishSong;
+}
+
 // Called from BattleAI_ChooseMoveIndex to stop the combo mons from Terastalizing.
 static bool32 IsCustomStrategyGimmickSuppressed(enum BattlerId battler)
 {
     if (!IsDoubleBattle() || !(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_CUSTOM_STRATEGIES))
         return FALSE;
-    return IsMagmaGrunt14Coalossal(battler) || IsMagmaGrunt14Bruxish(battler);
+    if (IsMagmaGrunt14Coalossal(battler) || IsMagmaGrunt14Bruxish(battler))
+        return TRUE;
+    return IsEdgarComboAbomasnow(battler) && ShouldDelayMegaForPerishSong(battler);
 }
 
 static bool32 IsAbsoluteFastestOnField(enum BattlerId battler)
@@ -6994,6 +7053,31 @@ static s32 AI_CustomStrategies(enum BattlerId battlerAtk, enum BattlerId battler
 {
     if (!IsDoubleBattle())
         return score;
+
+    // Strategy 2 - TRAINER_EDGAR: Abomasnow holds off Mega Evolution and Protects instead.
+    if (IsEdgarComboAbomasnow(battlerAtk))
+    {
+        if (ShouldDelayMegaForPerishSong(battlerAtk) && move == MOVE_PROTECT && HasMove(battlerAtk, MOVE_PROTECT))
+            ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+        return score;
+    }
+
+    // Strategy 2 - TRAINER_EDGAR: Politoed lands Perish Song while Abomasnow is delaying its Mega.
+    if (IsEdgarComboPolitoed(battlerAtk) && gBattleTurnCounter == 0)
+    {
+        enum BattlerId abomasnow = BATTLE_PARTNER(battlerAtk);
+        if (ShouldDelayMegaForPerishSong(abomasnow))
+        {
+            // Still take a fast kill over Perish Song.
+            if (move == MOVE_PERISH_SONG && !HasFastKillOnAnyFoe(battlerAtk))
+                ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+        }
+        else if (move == MOVE_PERISH_SONG)
+        {
+            ADJUST_SCORE(WORST_EFFECT);
+        }
+        return score;
+    }
 
     // Strategy 1 - Bruxish forces a Water pivot into Coalossal to trigger Steam Engine + Weakness Policy.
     if (IsMagmaGrunt14Bruxish(battlerAtk))
