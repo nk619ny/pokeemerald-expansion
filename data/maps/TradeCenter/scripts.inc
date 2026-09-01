@@ -1579,31 +1579,31 @@ Common_EventScript_RemoveOptionalItems2::
 # 837 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_117_REPEL
 # 838 "data/maps/TradeCenter/scripts.pory"
-	setflag FLAG_ITEM_ROUTE_117_GREAT_BALL
-# 839 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_117_IRON
-# 840 "data/maps/TradeCenter/scripts.pory"
+# 839 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_117_REVIVE
-# 841 "data/maps/TradeCenter/scripts.pory"
+# 840 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_116_HP_UP
-# 842 "data/maps/TradeCenter/scripts.pory"
+# 841 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_HIDDEN_ITEM_ROUTE_116_BLACK_GLASSES
-# 843 "data/maps/TradeCenter/scripts.pory"
+# 842 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_111_ELIXIR
-# 844 "data/maps/TradeCenter/scripts.pory"
+# 843 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_PETALBURG_WOODS_X_ATTACK
-# 845 "data/maps/TradeCenter/scripts.pory"
+# 844 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_TRICK_HOUSE_PUZZLE_1_ORANGE_MAIL
-# 846 "data/maps/TradeCenter/scripts.pory"
+# 845 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_TRICK_HOUSE_1_QUICK_CLAW
 	return
 
 
 Common_EventScript_RemoveOptionalItems3::
-# 852 "data/maps/TradeCenter/scripts.pory"
+# 851 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_111_HP_UP
-# 853 "data/maps/TradeCenter/scripts.pory"
+# 852 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_111_CARBOS
+# 853 "data/maps/TradeCenter/scripts.pory"
+	setflag FLAG_ITEM_ROUTE_117_GREAT_BALL
 # 854 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_113_SUPER_REPEL
 # 855 "data/maps/TradeCenter/scripts.pory"

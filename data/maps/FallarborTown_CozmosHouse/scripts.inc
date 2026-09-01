@@ -101,11 +101,11 @@ FallarborTown_CozmosHouse_EventScript_CozmosWife::
 # 51 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	faceplayer
 # 52 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	goto_if_set FLAG_RECEIVED_TM_RETURN, FallarborTown_CozmosHouse_EventScript_CozmoIsHappy
+	goto_if_set FLAG_RECEIVED_TM_RETURN, FallarborTown_CozmosHouse_Text_TeamMagmaHeadingNorth
 # 53 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, FallarborTown_CozmosHouse_EventScript_CozmoIsSad
+	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, FallarborTown_CozmosHouse_Text_TeamMagmaHeadingNorth
 # 54 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	msgbox FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls, MSGBOX_DEFAULT
+	msgbox FallarborTown_CozmosHouse_Text_TeamMagmaHeadingNorth, MSGBOX_DEFAULT
 # 55 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	release
 # 56 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
@@ -234,3 +234,48 @@ FallarborTown_CozmosHouse_Text_CozmoIsSoHappy:
 	.string "Look at PROF. COZMO…\n"
 # 118 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	.string "He's so happy! I think it's cute.$"
+
+FallarborTown_CozmosHouse_EventScript_ProfCozmoNewReturn::
+# 129 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	lock
+# 130 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	faceplayer
+# 131 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	checkitem ITEM_TM_RETURN
+# 132 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq FallarborTown_CozmosHouse_EventScript_ProfCozmoNewReturn_2
+FallarborTown_CozmosHouse_EventScript_ProfCozmoNewReturn_1:
+# 138 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	msgbox FallarborTown_CozmosHouse_EventScript_ProfCozmoNewReturn_Text_1, MSGBOX_DEFAULT
+# 139 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	releaseall
+	end
+
+FallarborTown_CozmosHouse_EventScript_ProfCozmoNewReturn_2:
+# 133 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	msgbox FallarborTown_CozmosHouse_EventScript_ProfCozmoNewReturn_Text_0, MSGBOX_DEFAULT
+# 134 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	closemessage
+# 135 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	giveitem ITEM_TM_RETURN
+# 136 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	waitfanfare
+	goto FallarborTown_CozmosHouse_EventScript_ProfCozmoNewReturn_1
+
+
+FallarborTown_CozmosHouse_EventScript_ProfCozmoNewReturn_Text_0:
+# 133 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	.string "Because you have such a strong\n"
+	.string "relationship with your Pokémon, they\l"
+	.string "can hit with a powerful attack.$"
+
+FallarborTown_CozmosHouse_EventScript_ProfCozmoNewReturn_Text_1:
+# 138 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	.string "Never underestimate the power of a\n"
+	.string "strong bond!$"
+
+FallarborTown_CozmosHouse_Text_TeamMagmaHeadingNorth::
+# 123 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
+	.string "I saw some folks from Team Magma\n"
+	.string "heading North up Route 135.$"

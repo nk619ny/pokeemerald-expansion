@@ -9006,7 +9006,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Larvesta @ Charti Berry  
 Ability: Flame Body  
-Level: 54
+Level: 50
 Tera Type: Bug  
 - Flame Charge  
 - Leech Life  
@@ -9016,7 +9016,7 @@ Tera Type: Bug
 
 Swadloon  @ Occa Berry
 Ability: Chlorophyll  
-Level: 54
+Level: 50
 Tera Type: Bug  
 - Lunge  
 - Seed Bomb  
@@ -9025,7 +9025,7 @@ Tera Type: Bug
 
 Fomantis  @ Occa Berry
 Ability: Contrary  
-Level: 54
+Level: 50
 Tera Type: Grass  
 - Energy Ball  
 - Poison Jab  
@@ -9034,7 +9034,7 @@ Tera Type: Grass
   
 Slugma  @ Grip Claw
 Ability: Flame Body  
-Level: 54
+Level: 52
 Tera Type: Fire  
 IVs: 0 Atk  
 - Infestation  
@@ -13688,7 +13688,7 @@ Tera Type: Dark
 
 
 Pawmo
-Ability: Static  
+Ability: Natural Cure 
 Level: 40  
 EVs: 168 HP / 168 Atk / 168 Spe
 Tera Type: Electric  
@@ -27970,7 +27970,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Pikachu @ Light Ball
 Ability: Static  
-Level: 50  
+Level: 45  
 Tera Type: Electric  
 EVs: 252 HP / 94 Atk / 68 Def / 94 SpA  
 Hasty Nature  
@@ -27981,7 +27981,7 @@ Hasty Nature
 
 Eevee @ Expert Belt
 Ability: Adaptability  
-Level: 50  
+Level: 46  
 Tera Type: Normal  
 EVs: 252 HP / 64 Atk / 64 Def / 128 SpA  
 Lonely Nature  
@@ -27992,7 +27992,7 @@ Lonely Nature
 
 Bulbasaur @ Power Herb  
 Ability: Overgrow  
-Level: 50  
+Level: 47  
 Tera Type: Grass  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -28004,7 +28004,7 @@ IVs: 0 Atk
 
 Charmander @ Power Herb  
 Ability: Blaze  
-Level: 50  
+Level: 47  
 Tera Type: Fire  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -28015,7 +28015,7 @@ IVs: 0 Atk
 
 Squirtle @ Power Herb  
 Ability: Torrent  
-Level: 50  
+Level: 47  
 Tera Type: Water  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
@@ -32543,7 +32543,7 @@ Level: 39
 Ability: Gale Wings  
 Tera Type: Water  
 EVs: 128 SpA / 4 SpD / 128 Spe  
-IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe / HP Water IVs for Min Atk */
+IVs: 0 Atk
 Timid Nature  
 - Flamethrower  
 - Air Slash  
@@ -32565,7 +32565,7 @@ Appletun @ Leftovers
 Level: 40
 Ability: Thick Fat  
 Tera Type: Rock  
-EVs: 128 HP / 128 SpA / 4 SpD 
+EVs: 128 HP / 128 SpA
 IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs for Min Atk */
 Modest Nature  
 - Apple Acid
@@ -32574,10 +32574,10 @@ Modest Nature
 - Helping Hand
 
 Darmanitan-Galar @ Choice Scarf  
-Level: 41
+Level: 40
 Ability: Zen Mode
 Tera Type: Ice  
-EVs: 128 Atk / 4 SpD / 128 Spe  
+EVs: 128 Atk / 0 SpD / 128 Spe  
 Adamant Nature  
 - U-turn  
 - Flare Blitz  
@@ -32588,7 +32588,7 @@ Aggron @ Aggronite
 Level: 39
 Ability: Sturdy  
 Tera Type: Steel  
-EVs: 252 HP / 128 Atk / 4 SpD  
+EVs: 252 HP / 0 Atk
 Adamant Nature  
 - Body Press  
 - Heavy Slam  

@@ -835,7 +835,6 @@ script Common_EventScript_RemoveOptionalItems2 {
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_118_VITAMIN)
 	setflag(FLAG_ITEM_MAUVILLE_CITY_X_SPEED)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_117_REPEL)
-	setflag(FLAG_ITEM_ROUTE_117_GREAT_BALL)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_117_IRON)
 	setflag(FLAG_ITEM_ROUTE_117_REVIVE)
 	setflag(FLAG_ITEM_ROUTE_116_HP_UP)
@@ -851,6 +850,7 @@ script Common_EventScript_RemoveOptionalItems2 {
 script Common_EventScript_RemoveOptionalItems3 {
 	setflag(FLAG_ITEM_ROUTE_111_HP_UP)
 	setflag(FLAG_ITEM_ROUTE_111_CARBOS)
+	setflag(FLAG_ITEM_ROUTE_117_GREAT_BALL)
 	setflag(FLAG_ITEM_ROUTE_113_SUPER_REPEL)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_113_TM_DOUBLE_TEAM)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_113_ETHER)
