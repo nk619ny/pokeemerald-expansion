@@ -59,7 +59,7 @@ Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn::
 # 30 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 	msgbox Route114_FossilManiacsTunnel_Text_NotSafeThatWay, MSGBOX_DEFAULT
 # 31 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
-	setvar VAR_FOSSIL_MANIAC_STATE, 2
+	//setvar VAR_FOSSIL_MANIAC_STATE, 2
 # 32 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 	releaseall
 # 33 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"

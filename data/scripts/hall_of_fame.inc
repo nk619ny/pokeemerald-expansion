@@ -4,7 +4,7 @@ EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags::
 	setvar VAR_TRAINER_HILL_STATE, 9
 	setflag FLAG_MIRAGE_ISLAND_VISIBLE
 	call EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries
-	call_if_eq VAR_FOSSIL_MANIAC_STATE, 0, EverGrandeCity_HallOfFame_EventScript_SetDesertUnderpassCommentReady
+	//call_if_eq VAR_FOSSIL_MANIAC_STATE, 0, EverGrandeCity_HallOfFame_EventScript_SetDesertUnderpassCommentReady
 	clearflag FLAG_HIDE_LILYCOVE_MOTEL_GAME_DESIGNERS
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
 	setflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
@@ -35,7 +35,7 @@ EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries::
 	return
 
 EverGrandeCity_HallOfFame_EventScript_SetDesertUnderpassCommentReady::
-	setvar VAR_FOSSIL_MANIAC_STATE, 1
+	//setvar VAR_FOSSIL_MANIAC_STATE, 1
 	return
 
 EverGrandeCity_HallOfFame_EventScript_ShowStevensHouseBeldum::
