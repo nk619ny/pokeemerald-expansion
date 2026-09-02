@@ -3,7 +3,6 @@
   "name": "Route114_FossilManiacsTunnel",
   "layout": "LAYOUT_ROUTE114_FOSSIL_MANIACS_TUNNEL",
   "music": "MUS_FALLARBOR",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_114",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -53,25 +52,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 5,
-      "y": 4,
-      "elevation": 3,
-      "var": "VAR_FOSSIL_MANIAC_STATE",
-      "var_value": "1",
-      "script": "Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn"
-    },
-    {
-      "type": "trigger",
-      "x": 6,
-      "y": 4,
-      "elevation": 3,
-      "var": "VAR_FOSSIL_MANIAC_STATE",
-      "var_value": "1",
-      "script": "Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn"
-    }
-  ],
-  "bg_events": []
+  "coord_events": [],
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

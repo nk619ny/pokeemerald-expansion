@@ -3,9 +3,9 @@
 # 2 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 Route114_FossilManiacsTunnel_MapScripts::
 # 3 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
-	map_script MAP_SCRIPT_ON_TRANSITION, Route114_FossilManiacsTunnel_OnTransition
+	//map_script MAP_SCRIPT_ON_TRANSITION, Route114_FossilManiacsTunnel_OnTransition
 # 4 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
-	map_script MAP_SCRIPT_ON_LOAD, Route114_FossilManiacsTunnel_OnLoad
+	//map_script MAP_SCRIPT_ON_LOAD, Route114_FossilManiacsTunnel_OnLoad
 # 5 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"
 	.byte 0
 # 6 "data/maps/Route114_FossilManiacsTunnel/scripts.pory"

@@ -1101,7 +1101,7 @@
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
 #define FLAG_ITEM_RUSTURF_TUNNEL_MAX_ETHER                          0x419
 #define FLAG_ITEM_ROUTE_108_VITAMIN                                 0x41A // repurposed
-#define FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL                        0x41B //available to move
+#define FLAG_ITEM_JAGGED_PASS_VITAMIN                               0x41B //repurposed
 #define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C
 #define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D
 #define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E

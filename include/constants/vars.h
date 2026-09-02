@@ -223,7 +223,7 @@
 #define VAR_SCOTT_PETALBURG_ENCOUNTER                    0x40C9
 #define VAR_SKY_PILLAR_STATE                             0x40CA
 #define VAR_MIRAGE_TOWER_STATE                           0x40CB
-#define VAR_FOSSIL_MANIAC_STATE                          0x40CC
+#define VAR_FOSSIL_MANIAC_STATE                          0x40CC // now unused and available to be repurposed
 #define VAR_CABLE_CLUB_TUTORIAL_STATE                    0x40CD // now unused and available to be repurposed
 #define VAR_FRONTIER_BATTLE_MODE                         0x40CE
 #define VAR_FRONTIER_FACILITY                            0x40CF
