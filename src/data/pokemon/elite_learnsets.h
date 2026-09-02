@@ -5403,6 +5403,7 @@ static const u16 sMedititeEliteLearnset[] = {
 static const u16 sSableyeEliteLearnset[] = {
     MOVE_DIAMOND_STORM,
     MOVE_SPECTRAL_THIEF,
+    MOVE_OCTAZOOKA,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
     //MOVE_FEINT_ATTACK, //added back in to normal learnset from USUM
