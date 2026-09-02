@@ -2456,7 +2456,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FIRE_MANE] =
     {
         .name = _("Fire Mane"),
-        .description = COMPOUND_STRING("Unimplemented."),
+        .description = COMPOUND_STRING("Powers up Fire moves."),
+        .aiRating = 6,
     },
 
     [ABILITY_314] =
@@ -2476,6 +2477,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Spicy Spray"),
         .description = COMPOUND_STRING("Burns the foe when damaged."),
+    },
+
+    [ABILITY_AURA_GUARD] =
+    {
+        .name = _("Aura Guard"),
+        .description = COMPOUND_STRING("Halves contact damage."),
+        .aiRating = 5,
+        .breakable = TRUE,
     },
 
     // Custom abilities
@@ -2526,6 +2535,22 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Time Traveler"),
         .description = COMPOUND_STRING("Protects from priority."),
+        .aiRating = 5,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_SPEED_FORCE] =
+    {
+        .name = _("Speed Force"),
+        .description = COMPOUND_STRING("Protects from priority."),
+        .aiRating = 5,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_ANGULAR_ACCELERATION] =
+    {
+        .name = _("Angular Momentum"),
+        .description = COMPOUND_STRING("Spinning ups Speed."),
         .aiRating = 5,
         .breakable = TRUE,
     },

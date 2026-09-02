@@ -1516,6 +1516,7 @@ bool32 IsDazzlingAbility(enum Ability ability)
     case ABILITY_QUEENLY_MAJESTY: return TRUE;
     case ABILITY_ARMOR_TAIL:      return TRUE;
     case ABILITY_TIME_TRAVELER:   return TRUE;
+    case ABILITY_SPEED_FORCE:     return TRUE;
     default: break;
     }
     return FALSE;
