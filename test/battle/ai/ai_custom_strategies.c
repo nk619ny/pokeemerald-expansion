@@ -330,3 +330,155 @@ AI_DOUBLE_BATTLE_TEST("Custom Strategies: teammate won't Ice an enemy the partne
     }
 }
 
+// AI_FLAG_CUSTOM_STRATEGIES, Strategy 3 (TRAINER_YUJI):
+// Shuckle Protects turn 1 while its Trick-Roomer ally (Slowbro or Cofagrigus) sets Trick Room, then
+// Body Presses whichever foe it damages more until Shuckle Mimics it off. Gated on the Shuckle /
+// Slowbro-or-Cofagrigus signature; Mimic's presence in Shuckle's moveset (it's permanently replaced
+// once used) doubles as the "hasn't landed the copy yet" flag.
+
+ASSUMPTIONS
+{
+    ASSUME(GetMoveEffect(MOVE_MIMIC) == EFFECT_MIMIC);
+    ASSUME(GetMoveEffect(MOVE_TRICK_ROOM) == EFFECT_TRICK_ROOM);
+    ASSUME(GetMoveEffect(MOVE_BODY_PRESS) == EFFECT_BODY_PRESS);
+    ASSUME(GetMoveTarget(MOVE_PROTECT) == TARGET_USER);
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: Yuji's Shuckle Protects and Slowbro sets Trick Room on turn 1")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_MIMIC, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_SLOWBRO) { Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_SLACK_OFF, MOVE_PSYCHIC); }
+    } WHEN {
+        TURN {
+            EXPECT_MOVE(opponentLeft, MOVE_PROTECT);
+            EXPECT_MOVE(opponentRight, MOVE_TRICK_ROOM);
+        }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: on turn 2, Slowbro Body Presses the harder-hit foe and Shuckle Mimics it")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_STEELIX) { Speed(1); Moves(MOVE_CELEBRATE); } // bulky - takes less damage
+        PLAYER(SPECIES_MAGIKARP) { Speed(1); Moves(MOVE_CELEBRATE); } // frail - takes more damage
+        OPPONENT(SPECIES_SHUCKLE) { Speed(200); Moves(MOVE_MIMIC, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_SLOWBRO) { Speed(1); Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_SLACK_OFF, MOVE_PSYCHIC); }
+    } WHEN {
+        TURN {
+            EXPECT_MOVE(opponentLeft, MOVE_PROTECT);
+            EXPECT_MOVE(opponentRight, MOVE_TRICK_ROOM);
+        }
+        TURN {
+            EXPECT_MOVE(opponentRight, MOVE_BODY_PRESS, target: playerRight);
+            EXPECT_MOVE(opponentLeft, MOVE_MIMIC, target: opponentRight);
+        }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: if Slowbro faints before Shuckle can Mimic, Cofagrigus continues the setup")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_STEELIX) { Speed(1); Moves(MOVE_CELEBRATE); }
+        PLAYER(SPECIES_MAGIKARP) { Speed(100); Moves(MOVE_TACKLE); } // finishes Slowbro after it acts
+        OPPONENT(SPECIES_SHUCKLE) { Speed(150); Moves(MOVE_MIMIC, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_SLOWBRO) { HP(1); Speed(200); Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_SLACK_OFF, MOVE_PSYCHIC); } // faster than Magikarp, sets Trick Room before it faints
+        OPPONENT(SPECIES_COFAGRIGUS) { Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_NIGHT_SHADE, MOVE_FLASH_CANNON); }
+    } WHEN {
+        TURN {
+            MOVE(playerRight, MOVE_TACKLE, target: opponentRight);
+            EXPECT_MOVE(opponentLeft, MOVE_PROTECT);
+            EXPECT_MOVE(opponentRight, MOVE_TRICK_ROOM);
+        }
+        TURN {
+            EXPECT_SEND_OUT(opponentRight, 2);
+            EXPECT_MOVE(opponentRight, MOVE_BODY_PRESS);
+            EXPECT_MOVE(opponentLeft, MOVE_MIMIC, target: opponentRight);
+        }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: post-Mimic Shuckle Protects when Trick Room is down and off cooldown")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_WRAP); } // Mimic already spent
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE); }
+    } WHEN {
+        TURN { EXPECT_MOVE(opponentLeft, MOVE_PROTECT); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: post-Mimic Shuckle won't repeat Protect while on cooldown")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE); }
+    } WHEN {
+        TURN { EXPECT_MOVE(opponentLeft, MOVE_PROTECT); }
+        TURN { NOT_EXPECT_MOVE(opponentLeft, MOVE_PROTECT); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: a lone Yuji Trick-Roomer sets Trick Room whenever it's down")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_COFAGRIGUS) { Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_NIGHT_SHADE, MOVE_FLASH_CANNON); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE); }
+    } WHEN {
+        TURN { EXPECT_MOVE(opponentLeft, MOVE_TRICK_ROOM); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: only one Yuji Trick-Roomer resets Trick Room when both are out together")
+{
+    // Slowbro is opponentLeft (lower battler id) so its Trick Room choice is already committed by
+    // the time Cofagrigus's Trick Room score is checked.
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_GROUDON) { Speed(200); Moves(MOVE_EARTHQUAKE); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(1); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_SLOWBRO) { Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_SLACK_OFF, MOVE_PSYCHIC); }
+        OPPONENT(SPECIES_COFAGRIGUS) { Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_NIGHT_SHADE, MOVE_FLASH_CANNON); }
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_EARTHQUAKE); }
+        TURN {
+            EXPECT_SEND_OUT(opponentLeft, 2);
+            EXPECT_SEND_OUT(opponentRight, 3);
+            EXPECT_MOVE(opponentLeft, MOVE_TRICK_ROOM);
+            NOT_EXPECT_MOVE(opponentRight, MOVE_TRICK_ROOM);
+        }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: post-Mimic Shuckle never aims a move at Cofagrigus")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_COFAGRIGUS) { Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_NIGHT_SHADE, MOVE_FLASH_CANNON); }
+    } WHEN {
+        TURN {
+            NOT_EXPECT_MOVE(opponentLeft, MOVE_BODY_PRESS, target: opponentRight);
+            NOT_EXPECT_MOVE(opponentLeft, MOVE_WRAP, target: opponentRight);
+        }
+    }
+}
+

@@ -7120,6 +7120,36 @@ static bool32 WouldLoseKOIfTargetSoaked(enum BattlerId battlerAtk, enum BattlerI
     return CustomStrategy_MaxDamageAsWaterType(battlerAtk, target, move) < gBattleMons[target].hp;
 }
 
+// --- Strategy 3: TRAINER_YUJI (Shuckle + Slowbro/Cofagrigus) ---
+// Turn 1: the Trick-Roomer sets Trick Room, Shuckle Protects. Turn 2+ (until Shuckle lands the
+// copy): the Trick-Roomer Body Presses the harder-hit foe, and Shuckle Mimics it to steal Body
+// Press for itself. Mimic's presence in Shuckle's moveset (it's replaced permanently once used)
+// doubles as the state flag for "hasn't landed the copy yet".
+
+static bool32 IsYujiShuckle(enum BattlerId battler)
+{
+    return gBattleMons[battler].species == SPECIES_SHUCKLE
+        && HasMove(battler, MOVE_PROTECT)
+        && HasMove(battler, MOVE_INFESTATION);
+}
+
+static bool32 IsYujiTrickRoomer(enum BattlerId battler)
+{
+    return (gBattleMons[battler].species == SPECIES_SLOWBRO || gBattleMons[battler].species == SPECIES_COFAGRIGUS)
+        && HasMove(battler, MOVE_TRICK_ROOM)
+        && HasMove(battler, MOVE_BODY_PRESS);
+}
+
+// Target-agnostic sibling of GetPartnerLockedMoveOnTarget, for moves like Trick Room that aren't
+// aimed at a specific battler.
+static enum Move GetPartnerLockedMove(enum BattlerId battlerAtk)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battlerAtk);
+    if (partner >= battlerAtk || !IsBattlerAlive(partner))
+        return MOVE_NONE;
+    return GetAllyChosenMove(battlerAtk);
+}
+
 // Called from BattleAI_ChooseMoveIndex to stop the combo mons from Terastalizing.
 static bool32 IsCustomStrategyGimmickSuppressed(enum BattlerId battler)
 {
@@ -7243,6 +7273,78 @@ static s32 AI_CustomStrategies(enum BattlerId battlerAtk, enum BattlerId battler
     // enemy the partner already locked Soak onto.
     if (IsBattlerAlive(battlerDef) && WouldLoseKOIfTargetSoaked(battlerAtk, battlerDef, move))
         ADJUST_SCORE(WORST_EFFECT);
+
+    // Strategy 3 - TRAINER_YUJI: Shuckle's opening Protect/Mimic, then Trick-Room upkeep Protect.
+    if (IsYujiShuckle(battlerAtk))
+    {
+        bool32 hasMimicked = !HasMove(battlerAtk, MOVE_MIMIC);
+
+        // Once Mimic is spent, never aim anything (besides the self-only Protect) at Cofagrigus.
+        if (hasMimicked && IsBattlerAlive(battlerDef)
+            && gBattleMons[battlerDef].species == SPECIES_COFAGRIGUS
+            && AI_GetBattlerMoveTargetType(battlerAtk, move) != TARGET_USER)
+        {
+            ADJUST_SCORE(-CUSTOM_STRATEGY_FORCE_MOVE);
+            return score;
+        }
+
+        if (gBattleTurnCounter == 0)
+        {
+            if (move == MOVE_PROTECT)
+                ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+            return score;
+        }
+
+        if (!hasMimicked)
+        {
+            enum BattlerId ally = BATTLE_PARTNER(battlerAtk);
+            if (move == MOVE_MIMIC && battlerDef == ally
+                && IsBattlerAlive(ally) && IsYujiTrickRoomer(ally))
+                ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+            return score;
+        }
+
+        if (!(gFieldStatuses & STATUS_FIELD_TRICK_ROOM) && move == MOVE_PROTECT
+            && gBattleMons[battlerAtk].volatiles.consecutiveMoveUses == 0)
+            ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+        return score;
+    }
+
+    // Strategy 3 - TRAINER_YUJI: Slowbro/Cofagrigus opening Trick Room, then Body Press until
+    // Shuckle mimics it, then Trick-Room upkeep (deduped against the other Trick-Roomer ally).
+    if (IsYujiTrickRoomer(battlerAtk))
+    {
+        enum BattlerId ally = BATTLE_PARTNER(battlerAtk);
+        bool32 comboPending = IsBattlerAlive(ally) && IsYujiShuckle(ally) && HasMove(ally, MOVE_MIMIC);
+
+        if (gBattleTurnCounter == 0)
+        {
+            if (move == MOVE_TRICK_ROOM)
+                ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+            return score;
+        }
+
+        if (comboPending)
+        {
+            if (move == MOVE_BODY_PRESS && IsBattlerAlive(battlerDef)
+                && (battlerDef == LEFT_FOE(battlerAtk) || battlerDef == RIGHT_FOE(battlerAtk)))
+            {
+                enum BattlerId otherFoe = BATTLE_PARTNER(battlerDef);
+                u32 moveIndex = gAiThinkingStruct->movesetIndex;
+                u32 dmgHere = gAiLogicData->simulatedDmg[battlerAtk][battlerDef][moveIndex].maximum;
+                u32 dmgOther = IsBattlerAlive(otherFoe)
+                    ? gAiLogicData->simulatedDmg[battlerAtk][otherFoe][moveIndex].maximum : 0;
+                if (dmgHere >= dmgOther)
+                    ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+            }
+            return score;
+        }
+
+        if (!(gFieldStatuses & STATUS_FIELD_TRICK_ROOM) && move == MOVE_TRICK_ROOM
+            && GetPartnerLockedMove(battlerAtk) != MOVE_TRICK_ROOM)
+            ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+        return score;
+    }
 
     // Strategy 2 - TRAINER_EDGAR: post-Mega Abomasnow only Protects when fast-killed and off cooldown.
     if (IsEdgarMegaAbomasnowProtect(battlerAtk))
