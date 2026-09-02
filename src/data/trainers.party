@@ -7981,33 +7981,33 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Hard Trick Room / Custom Strategies
 
-Shuckle @ Mental Herb  
+Shuckle @ Sitrus Berry  
 Ability: Sturdy  
-Level: 50
-EVs: 252 HP / 252 Def  
-Relaxed Nature  
+Level: 50  
+EVs: 252 HP / 188 Def / 64 Spe  
+Impish Nature  
 IVs: 0 Atk  
 - Mimic  
 - Protect  
-- Wrap
+- Infestation  
 
-Slowbro  
+Slowbro @ Sitrus Berry  
 Ability: Oblivious  
-Level: 50
-EVs: 252 HP  
+Level: 50  
+EVs: 252 HP / 128 Def / 128 SpD  
 Relaxed Nature  
-IVs: 0 Atk  
+IVs: 0 Atk / 0 Spe  
 - Trick Room  
 - Body Press  
 - Slack Off  
-- Psychic
+- Psychic  
 
 Cofagrigus @ Mental Herb  
 Ability: Mummy  
 Level: 50
 EVs: 252 HP  
 Relaxed Nature  
-IVs: 0 Atk  
+IVs: 0 Atk / 0 Spe
 - Trick Room  
 - Body Press  
 - Night Shade
@@ -16700,7 +16700,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Custom Strategies
 Shuckle  
 Ability: Sturdy  
 Level: 55
-EVs: 252 HP / 64 Def / 192 SpD  
+EVs: 252 HP / 252 Def
 Bold Nature  
 IVs: 0 Atk  
 - Guard Split  
