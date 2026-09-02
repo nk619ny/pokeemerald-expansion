@@ -350,7 +350,7 @@ AI_DOUBLE_BATTLE_TEST("Custom Strategies: Yuji's Shuckle Protects and Slowbro se
         AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_MIMIC, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_MIMIC, MOVE_PROTECT, MOVE_INFESTATION); }
         OPPONENT(SPECIES_SLOWBRO) { Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_SLACK_OFF, MOVE_PSYCHIC); }
     } WHEN {
         TURN {
@@ -366,7 +366,7 @@ AI_DOUBLE_BATTLE_TEST("Custom Strategies: on turn 2, Slowbro Body Presses the ha
         AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
         PLAYER(SPECIES_STEELIX) { Speed(1); Moves(MOVE_CELEBRATE); } // bulky - takes less damage
         PLAYER(SPECIES_MAGIKARP) { Speed(1); Moves(MOVE_CELEBRATE); } // frail - takes more damage
-        OPPONENT(SPECIES_SHUCKLE) { Speed(200); Moves(MOVE_MIMIC, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_SHUCKLE) { Speed(200); Moves(MOVE_MIMIC, MOVE_PROTECT, MOVE_INFESTATION); }
         OPPONENT(SPECIES_SLOWBRO) { Speed(1); Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_SLACK_OFF, MOVE_PSYCHIC); }
     } WHEN {
         TURN {
@@ -386,7 +386,7 @@ AI_DOUBLE_BATTLE_TEST("Custom Strategies: if Slowbro faints before Shuckle can M
         AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
         PLAYER(SPECIES_STEELIX) { Speed(1); Moves(MOVE_CELEBRATE); }
         PLAYER(SPECIES_MAGIKARP) { Speed(100); Moves(MOVE_TACKLE); } // finishes Slowbro after it acts
-        OPPONENT(SPECIES_SHUCKLE) { Speed(150); Moves(MOVE_MIMIC, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_SHUCKLE) { Speed(150); Moves(MOVE_MIMIC, MOVE_PROTECT, MOVE_INFESTATION); }
         OPPONENT(SPECIES_SLOWBRO) { HP(1); Speed(200); Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_SLACK_OFF, MOVE_PSYCHIC); } // faster than Magikarp, sets Trick Room before it faints
         OPPONENT(SPECIES_COFAGRIGUS) { Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_NIGHT_SHADE, MOVE_FLASH_CANNON); }
     } WHEN {
@@ -409,7 +409,7 @@ AI_DOUBLE_BATTLE_TEST("Custom Strategies: post-Mimic Shuckle Protects when Trick
         AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_WRAP); } // Mimic already spent
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_INFESTATION); } // Mimic already spent
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE); }
     } WHEN {
         TURN { EXPECT_MOVE(opponentLeft, MOVE_PROTECT); }
@@ -422,7 +422,7 @@ AI_DOUBLE_BATTLE_TEST("Custom Strategies: post-Mimic Shuckle won't repeat Protec
         AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_INFESTATION); }
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE); }
     } WHEN {
         TURN { EXPECT_MOVE(opponentLeft, MOVE_PROTECT); }
@@ -472,13 +472,64 @@ AI_DOUBLE_BATTLE_TEST("Custom Strategies: post-Mimic Shuckle never aims a move a
         AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_WRAP); }
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_BODY_PRESS, MOVE_PROTECT, MOVE_INFESTATION); }
         OPPONENT(SPECIES_COFAGRIGUS) { Moves(MOVE_TRICK_ROOM, MOVE_BODY_PRESS, MOVE_NIGHT_SHADE, MOVE_FLASH_CANNON); }
     } WHEN {
         TURN {
             NOT_EXPECT_MOVE(opponentLeft, MOVE_BODY_PRESS, target: opponentRight);
-            NOT_EXPECT_MOVE(opponentLeft, MOVE_WRAP, target: opponentRight);
+            NOT_EXPECT_MOVE(opponentLeft, MOVE_INFESTATION, target: opponentRight);
         }
+    }
+}
+
+// AI_FLAG_CUSTOM_STRATEGIES, Strategy 4 (TRAINER_CORA):
+// Shuckle forces Guard Split onto its ally until it lands once, and never aims Acupressure at
+// itself. Gated on the Shuckle Guard Split + Acupressure signature.
+
+ASSUMPTIONS
+{
+    ASSUME(GetMoveEffect(MOVE_GUARD_SPLIT) == EFFECT_GUARD_SPLIT);
+    ASSUME(GetMoveTarget(MOVE_GUARD_SPLIT) == TARGET_SELECTED);
+    ASSUME(GetMoveTarget(MOVE_ACUPRESSURE) == TARGET_USER_OR_ALLY);
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: Cora's Shuckle forces Guard Split onto its ally when unused")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_GUARD_SPLIT, MOVE_FINAL_GAMBIT, MOVE_ACUPRESSURE, MOVE_STICKY_WEB); }
+        OPPONENT(SPECIES_CHANSEY) { Moves(MOVE_SEISMIC_TOSS, MOVE_SOFT_BOILED, MOVE_CHARGE_BEAM, MOVE_SUBSTITUTE); }
+    } WHEN {
+        TURN { EXPECT_MOVE(opponentLeft, MOVE_GUARD_SPLIT, target: opponentRight); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: Cora's Shuckle stops forcing Guard Split once it has landed")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_GUARD_SPLIT, MOVE_FINAL_GAMBIT, MOVE_ACUPRESSURE, MOVE_STICKY_WEB); }
+        OPPONENT(SPECIES_CHANSEY) { Moves(MOVE_SEISMIC_TOSS, MOVE_SOFT_BOILED, MOVE_CHARGE_BEAM, MOVE_SUBSTITUTE); }
+    } WHEN {
+        TURN { EXPECT_MOVE(opponentLeft, MOVE_GUARD_SPLIT, target: opponentRight); }
+        TURN { NOT_EXPECT_MOVE(opponentLeft, MOVE_GUARD_SPLIT, target: opponentRight); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("Custom Strategies: Cora's Shuckle never aims Acupressure at itself")
+{
+    GIVEN {
+        AI_FLAGS(CUSTOM_STRATEGIES_FLAGS);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SHUCKLE) { Moves(MOVE_GUARD_SPLIT, MOVE_FINAL_GAMBIT, MOVE_ACUPRESSURE, MOVE_STICKY_WEB); }
+        OPPONENT(SPECIES_CHANSEY) { Moves(MOVE_SEISMIC_TOSS, MOVE_SOFT_BOILED, MOVE_CHARGE_BEAM, MOVE_SUBSTITUTE); }
+    } WHEN {
+        TURN { SCORE_LT_VAL(opponentLeft, MOVE_ACUPRESSURE, AI_SCORE_DEFAULT, target: opponentLeft); }
     }
 }
 

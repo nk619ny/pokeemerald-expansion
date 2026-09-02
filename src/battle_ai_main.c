@@ -7150,6 +7150,23 @@ static enum Move GetPartnerLockedMove(enum BattlerId battlerAtk)
     return GetAllyChosenMove(battlerAtk);
 }
 
+// --- Strategy 4: TRAINER_CORA (Shuckle) ---
+// Guard Split is forced onto the ally until it lands once; Acupressure is never aimed at self.
+
+// Whether battler has already had move resolve at least once this battle (persists across turns).
+static bool32 HasBattlerUsedMove(enum BattlerId battler, enum Move move)
+{
+    u32 moveIndex = GetMoveIndex(battler, move);
+    return moveIndex != MAX_MON_MOVES && gBattleHistory->usedMoves[battler][moveIndex] == move;
+}
+
+static bool32 IsCoraShuckle(enum BattlerId battler)
+{
+    return gBattleMons[battler].species == SPECIES_SHUCKLE
+        && HasMove(battler, MOVE_GUARD_SPLIT)
+        && HasMove(battler, MOVE_ACUPRESSURE);
+}
+
 // Called from BattleAI_ChooseMoveIndex to stop the combo mons from Terastalizing.
 static bool32 IsCustomStrategyGimmickSuppressed(enum BattlerId battler)
 {
@@ -7343,6 +7360,22 @@ static s32 AI_CustomStrategies(enum BattlerId battlerAtk, enum BattlerId battler
         if (!(gFieldStatuses & STATUS_FIELD_TRICK_ROOM) && move == MOVE_TRICK_ROOM
             && GetPartnerLockedMove(battlerAtk) != MOVE_TRICK_ROOM)
             ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+        return score;
+    }
+
+    // Strategy 4 - TRAINER_CORA: Shuckle forces Guard Split onto its ally until it lands once,
+    // and never aims Acupressure at itself (still free to aim it at the ally).
+    if (IsCoraShuckle(battlerAtk))
+    {
+        enum BattlerId ally = BATTLE_PARTNER(battlerAtk);
+
+        if (move == MOVE_GUARD_SPLIT && battlerDef == ally && IsBattlerAlive(ally)
+            && !HasBattlerUsedMove(battlerAtk, MOVE_GUARD_SPLIT))
+            ADJUST_SCORE(CUSTOM_STRATEGY_FORCE_MOVE);
+
+        if (move == MOVE_ACUPRESSURE && battlerDef == battlerAtk)
+            ADJUST_SCORE(-CUSTOM_STRATEGY_FORCE_MOVE);
+
         return score;
     }
 
