@@ -2852,7 +2852,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Sneasel  @ Focus Sash
-Level: 41
+Level: 40
 Ability: Inner Focus  
 Tera Type: Dark  
 - Icicle Crash  
@@ -2861,7 +2861,7 @@ Tera Type: Dark
 - X-Scissor  
 
 Prinplup  @ Salac Berry
-Level: 41
+Level: 40
 Ability: Competitive  
 Tera Type: Water  
 - Weather Ball  
@@ -2870,7 +2870,7 @@ Tera Type: Water
 - Drill Peck  
 
 Vanillish @ Leftovers
-Level: 41
+Level: 40
 Ability: Ice Body  
 Tera Type: Ice  
 IVs: 0 Atk  
@@ -2880,7 +2880,7 @@ IVs: 0 Atk
 - Hyper Voice  
 
 Piloswine @ Brightpowder
-Level: 41
+Level: 40
 Ability: Snow Cloak  
 Tera Type: Ice  
 - Avalanche  
@@ -10765,7 +10765,7 @@ Jolly Nature
 Tauros-Paldea-Aqua (M) @ Salac Berry  
 Ability: Anger Point  
 Ball: Luxury
-Level: 23
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Raging Bull  
 - Aqua Jet  
@@ -10775,7 +10775,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Coba Berry
 Ability: Technician 
 Ball : Nest
-Level: 23 
+Level: 22 
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bullet Seed  
 - Mach Punch  
@@ -10793,7 +10793,7 @@ Tera Type: Grass
 - Detect  
 
 Perrserker @ Expert Belt
-Ability: Tough Claws /* Adamant Nature  */
+Ability: Tough Claws 
 Ball: Heavy
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -12032,7 +12032,7 @@ Rapidash-Galar @ Scope Lens
 Ability: Misty Surge  
 Tera Type: Psychic  /* EVs: 64 Atk / 128 Spe */
 Jolly Nature
-Level: 35
+Level: 34
 - Play Rough  
 - Psycho Cut  
 - Drill Run  
@@ -12043,7 +12043,7 @@ Ability: Pixilate
 Tera Type: Fairy  
 EVs: 96 HP / 0 SpA
 IVs: 0 Atk  
-Level: 35
+Level: 34
 - Mystical Fire  
 - Round
 - Misty Explosion  
@@ -12054,7 +12054,7 @@ Ability: Synchronize
 Tera Type: Psychic  
 EVs: 128 HP / 0 Def / 0 SpA  /* Modest Nature  */
 IVs: 0 Atk  
-Level: 35
+Level: 34
 - Alluring Voice  
 - Psychic Noise
 - Vacuum Wave  
@@ -12077,7 +12077,7 @@ Shiny: Yes
 Tera Type: Water  
 EVs: 0 HP / 0 SpA  
 IVs: 0 Atk  
-Level: 35
+Level: 34
 - Alluring Voice  
 - Water Pulse  
 - Life Dew  
@@ -12086,7 +12086,7 @@ Level: 35
 Ali (Altaria) (F) @ Altarianite  
 Tera Type: Dragon  /* EVs: 64 HP / 64 SpA / 64 SpD   Modest Nature  */
 IVs: 0 Atk  
-Level: 36
+Level: 35
 - Round
 - Cotton Guard  
 - Heat Wave  
@@ -29194,7 +29194,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Carkol @ White Herb 
-Level: 40
+Level: 38
 Ability: Flash Fire  
 Tera Type: Rock  
 - Tar Shot  
@@ -29203,7 +29203,7 @@ Tera Type: Rock
 - Flame Charge  
 
 Pignite @ Loaded Dice  
-Level: 40
+Level: 39
 Ability: Thick Fat  
 Tera Type: Fire  
 - Bulk Up  
@@ -29212,7 +29212,7 @@ Tera Type: Fire
 - Arm Thrust  
 
 Charmeleon  
-Level: 40
+Level: 39
 Ability: Blaze  
 Tera Type: Fire  
 IVs: 0 Atk  
@@ -29222,7 +29222,7 @@ IVs: 0 Atk
 - Will-O-Wisp  
 
 Raticate-Alola 
-Level: 38 
+Level: 37 
 Ability: Thick Fat  
 Tera Type: Dark  
 - Crunch  
@@ -29241,7 +29241,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Skiploom  @ Yache Berry
-Level: 42
+Level: 40
 Ability: Leaf Guard  
 Tera Type: Grass  
 EVs: 252 HP / 252 Spe
@@ -29251,7 +29251,7 @@ EVs: 252 HP / 252 Spe
 - Pollen Puff  
 
 Deerling-Autumn @ Power Herb
-Level: 44
+Level: 42
 Ability: Sap Sipper  
 Tera Type: Normal  
 EVs: 128 HP / 128 Atk / 252 Spe
@@ -29261,7 +29261,7 @@ EVs: 128 HP / 128 Atk / 252 Spe
 - Leech Seed  
 
 Floragato  @ Grassy Seed
-Level: 42
+Level: 40
 Ability: Overgrow  
 Tera Type: Grass  
 EVs: 164 HP / 164 Atk / 164 Spe
@@ -29272,7 +29272,7 @@ Jolly Nature
 - Grassy Glide  
 
 Floette (F) @ Lum Berry  
-Level: 43
+Level: 40
 Ability: Flower Veil  
 Tera Type: Fairy  
 EVs: 252 HP / 252 SpA
@@ -32528,7 +32528,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Sandslash-Alola @ Occa Berry  
-Level: 39
+Level: 38
 Ability: Slush Rush  
 Tera Type: Ice  
 EVs: 4 HP / 128 Atk / 128 Spe  
@@ -32539,7 +32539,7 @@ Adamant Nature
 - Swords Dance  
 
 Talonflame @ Charti Berry  
-Level: 39
+Level: 38
 Ability: Gale Wings  
 Tera Type: Water  
 EVs: 128 SpA / 4 SpD / 128 Spe  
@@ -32551,7 +32551,7 @@ Timid Nature
 - Will-O-Wisp  
 
 Gliscor @ Toxic Orb  
-Level: 40
+Level: 39
 Ability: Poison Heal  
 Tera Type: Ground  
 EVs: 128 Atk / 4 SpD / 128 Spe  
@@ -32562,7 +32562,7 @@ Jolly Nature
 - Protect  
 
 Appletun @ Leftovers  
-Level: 40
+Level: 39
 Ability: Thick Fat  
 Tera Type: Rock  
 EVs: 128 HP / 128 SpA
@@ -32653,7 +32653,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Sawsbuck-Winter  
-Level: 38
+Level: 37
 Ability: Slush Rush  
 Tera Type: Normal  
 - Horn Leech  
@@ -32662,7 +32662,7 @@ Tera Type: Normal
 - Body Slam  
 
 Piloswine @ Bright Powder 
-Level: 39 
+Level: 38
 Ability: Snow Cloak  
 Tera Type: Ice  
 - Glacial Lance  
@@ -32671,7 +32671,7 @@ Tera Type: Ice
 - Light Screen  
 
 Pignite @ Punching Glove 
-Level: 43
+Level: 41
 Ability: Thick Fat  
 Tera Type: Fire  
 EVs: 252 Atk / 128 Def / 128 SpD  
@@ -32682,7 +32682,7 @@ Adamant Nature
 - Power-Up Punch  
 
 Gloom @ Black Sludge  
-Level: 43
+Level: 41
 Ability: Stench  
 Tera Type: Grass  
 EVs: 252 SpA / 128 Def / 128 SpD  

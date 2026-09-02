@@ -4815,17 +4815,17 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": ""
+                "species": "SPECIES_ZANGOOSE"
               },
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": ""
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": ""
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 40,
@@ -5219,17 +5219,17 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": ""
+                "species": "SPECIES_SEVIPER"
               },
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": ""
+                "species": "SPECIES_TOGEDEMARU"
               },
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": ""
+                "species": "SPECIES_TOGEDEMARU"
               },
               {
                 "min_level": 40,
@@ -41922,7 +41922,7 @@
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_CUBCHOO"
+                "species": "SPECIES_PIPLUP"
               },
               {
                 "min_level": 32,
@@ -41952,7 +41952,7 @@
               {
                 "min_level": 38,
                 "max_level": 38,
-                "species": "SPECIES_CLOYSTER"
+                "species": "SPECIES_CUBCHOO"
               },
               {
                 "min_level": 38,
@@ -41962,17 +41962,17 @@
               {
                 "min_level": 38,
                 "max_level": 38,
-                "species": "SPECIES_CUBCHOO"
+                "species": "SPECIES_CLOYSTER"
               },
               {
                 "min_level": 38,
                 "max_level": 38,
-                "species": "SPECIES_CUBCHOO"
+                "species": "SPECIES_PRINPLUP"
               },
               {
                 "min_level": 38,
                 "max_level": 38,
-                "species": "SPECIES_CUBCHOO"
+                "species": "SPECIES_CLOYSTER"
               },
               {
                 "min_level": 38,
