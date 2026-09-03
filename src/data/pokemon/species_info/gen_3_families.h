@@ -11913,7 +11913,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .catchRate = 225,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 116 : 110,
         .evYield_Speed = 1,
-        .itemCommon = ITEM_HEART_SCALE,
+        //.itemCommon = ITEM_HEART_SCALE,
         .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,

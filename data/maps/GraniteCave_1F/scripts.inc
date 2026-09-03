@@ -106,6 +106,58 @@ GraniteCave_1F_EventScript_SmackDownHiker_2:
 	goto GraniteCave_1F_EventScript_SmackDownHiker_1
 
 
+GraniteCave_1F_EventScript_Francisco::
+# 64 "data/maps/GraniteCave_1F/scripts.pory"
+	trainerbattle_single TRAINER_FRANCISCO, GraniteCave_1F_Text_FranciscoIntro, GraniteCave_1F_Text_FranciscoDefeat, GraniteCave_1F_EventScript_FranciscoPostBattle
+# 65 "data/maps/GraniteCave_1F/scripts.pory"
+	goto_if_set FLAG_TEMP_A, GraniteCave_1F_EventScript_FranciscoPostBattle
+# 66 "data/maps/GraniteCave_1F/scripts.pory"
+	msgbox GraniteCave_1F_Text_FranciscoPostBattle, MSGBOX_NPC
+# 67 "data/maps/GraniteCave_1F/scripts.pory"
+	release
+	end
+
+
+GraniteCave_1F_EventScript_FranciscoPostBattle::
+# 72 "data/maps/GraniteCave_1F/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, GraniteCave_1F_EventScript_FranciscoPostBattle_2
+# 76 "data/maps/GraniteCave_1F/scripts.pory"
+	goto_if_unset FLAG_TEMP_A, GraniteCave_1F_EventScript_FranciscoPostBattle_5
+# 80 "data/maps/GraniteCave_1F/scripts.pory"
+	msgbox GraniteCave_1F_EventScript_FranciscoPostBattle_Text_1, MSGBOX_NPC
+GraniteCave_1F_EventScript_FranciscoPostBattle_4:
+# 82 "data/maps/GraniteCave_1F/scripts.pory"
+	checkitemspace ITEM_CALCIUM
+# 83 "data/maps/GraniteCave_1F/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq GraniteCave_1F_EventScript_FranciscoPostBattle_9
+# 88 "data/maps/GraniteCave_1F/scripts.pory"
+	setflag FLAG_TEMP_A
+# 89 "data/maps/GraniteCave_1F/scripts.pory"
+	msgbox GraniteCave_1F_EventScript_FranciscoPostBattle_Text_2, MSGBOX_NPC
+GraniteCave_1F_EventScript_FranciscoPostBattle_8:
+# 91 "data/maps/GraniteCave_1F/scripts.pory"
+	release
+	end
+
+GraniteCave_1F_EventScript_FranciscoPostBattle_2:
+# 73 "data/maps/GraniteCave_1F/scripts.pory"
+	releaseall
+	end
+
+GraniteCave_1F_EventScript_FranciscoPostBattle_5:
+# 77 "data/maps/GraniteCave_1F/scripts.pory"
+	msgbox GraniteCave_1F_EventScript_FranciscoPostBattle_Text_0, MSGBOX_NPC
+	goto GraniteCave_1F_EventScript_FranciscoPostBattle_4
+
+GraniteCave_1F_EventScript_FranciscoPostBattle_9:
+# 84 "data/maps/GraniteCave_1F/scripts.pory"
+	giveitem ITEM_CALCIUM
+# 85 "data/maps/GraniteCave_1F/scripts.pory"
+	clearflag FLAG_TEMP_A
+	goto GraniteCave_1F_EventScript_FranciscoPostBattle_8
+
+
 GraniteCave_1F_EventScript_SmackDownHiker_Text_0:
 # 49 "data/maps/GraniteCave_1F/scripts.pory"
 	.string "Sometimes when exploring, you need to\n"
@@ -119,3 +171,35 @@ GraniteCave_1F_EventScript_SmackDownHiker_Text_1:
 	.string "It gets pretty dark deeper in the cave.\p"
 	.string "You won't be able to progress further\n"
 	.string "until your Pokémon can light the way.$"
+
+GraniteCave_1F_EventScript_FranciscoPostBattle_Text_0:
+# 77 "data/maps/GraniteCave_1F/scripts.pory"
+	.string "I packed some extra vitamins in my bag.\n"
+	.string "You should take one!$"
+
+GraniteCave_1F_EventScript_FranciscoPostBattle_Text_1:
+# 80 "data/maps/GraniteCave_1F/scripts.pory"
+	.string "Did you make room in your bag?$"
+
+GraniteCave_1F_EventScript_FranciscoPostBattle_Text_2:
+# 89 "data/maps/GraniteCave_1F/scripts.pory"
+	.string "You've got to be careful with how much\n"
+	.string "you keep in your bag!\p"
+	.string "It can cause problems if you don't have\n"
+	.string "room for new items.\p"
+	.string "If you clear out space quick, I'll still\n"
+	.string "give you the vitamin.$"
+
+GraniteCave_1F_Text_FranciscoIntro::
+# 95 "data/maps/GraniteCave_1F/scripts.pory"
+	.string "You need to be prepared if you're going\n"
+	.string "to explore remote places!$"
+
+GraniteCave_1F_Text_FranciscoDefeat::
+# 99 "data/maps/GraniteCave_1F/scripts.pory"
+	.string "Not prepared enough!$"
+
+GraniteCave_1F_Text_FranciscoPostBattle::
+# 103 "data/maps/GraniteCave_1F/scripts.pory"
+	.string "Make sure you always have what you\n"
+	.string "need in your bag.$"

@@ -5591,22 +5591,40 @@ Tera Type: Ghost
 - Ice Fang  
 
 
-=== TRAINER_VALERIE_2 === /* Route */
-Name: VALERIE
-Class: Hex Maniac
-Pic: Hex Maniac ORAS 80
-Gender: Female
-Music: Suspicious
+=== TRAINER_FRANCISCO === /* Granite Cave */
+Name: FRANCISCO
+Class: Backpacker
+Pic: Backpacker ORAS
+Gender: Male
+Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sableye
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ekans @ Oran Berry
+Level: 21
+Ability: Shed Skin  
+EVs: 192 SpA  
+- Stockpile  
+- Swallow  
+- Mega Drain  
+- Wrap  
 
-Spoink
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Phanpy  
+Level: 21
+Ability: Pickup  
+- Trailblaze  
+- Endure  
+- Flail  
+- Smack Down  
+
+Pumpkaboo-Large  
+Level: 21
+Ability: Pickup  
+EVs: 192 SpA  
+- Bullet Seed  
+- Incinerate  
+- Skill Swap  
+- Pain Split  
 
 === TRAINER_VALERIE_3 === /* Route */
 Name: VALERIE
@@ -12065,7 +12083,7 @@ Ability: Dazzling
 Tera Type: Electric  
 EVs: 252 HP / 0 Atk / 252 Spe  
 Jolly Nature  
-Level: 35
+Level: 34
 - Triple Axel  
 - Fake Out  
 - Spark  
@@ -12201,7 +12219,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Fezandipiti (M) @ Expert Belt  
 Ability: Toxic Chain  
 Tera Type: Poison  
-Level: 47
+Level: 46
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Gunk Shot  
@@ -12211,7 +12229,7 @@ Jolly Nature
 
 Brute Bonnet @ Booster Energy  
 Ability: Protosynthesis  
-Level: 47
+Level: 46
 Tera Type: Grass  
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
@@ -12222,7 +12240,7 @@ Adamant Nature
 
 Scrafty @ Scraftinite  
 Ability: Intimidate  
-Level: 47
+Level: 48
 Tera Type: Dark  
 EVs: 252 HP / 252 Atk / 4 Spe  
 Adamant Nature  
@@ -12233,7 +12251,7 @@ Adamant Nature
 
 Moltres-Galar @ Sitrus Berry  
 Ability: Berserk  
-Level: 47
+Level: 46
 Tera Type: Dark  
 EVs: 4 HP / 252 SpA / 252 Spe  
 Timid Nature  
@@ -12255,7 +12273,7 @@ Adamant Nature
 
 Ting-Lu @ Leftovers  
 Ability: Vessel of Ruin   
-Level: 47
+Level: 46
 EVs: 128 HP / 252 Def / 128 SpD  
 Relaxed Nature  
 - Sand Tomb  
@@ -12285,7 +12303,7 @@ Adamant Nature
 
 Duraludon @ Eviolite  
 Ability: Stamina  
-Level: 52
+Level: 51
 EVs: 252 HP / 4 SpA / 252 SpD  
 Serious Nature  
 IVs: 0 Atk  
@@ -12296,7 +12314,7 @@ IVs: 0 Atk
 
 Latios (M) @ Soul Dew  
 Ability: Levitate  
-Level: 52
+Level: 51
 IVs: 0 Atk  
 - Tailwind  
 - Aura Sphere  
@@ -12305,7 +12323,7 @@ IVs: 0 Atk
 
 Hydrapple @ Yache Berry  
 Ability: Supersweet Syrup  
-Level: 52
+Level: 51
 EVs: 252 HP / 128 SpA / 128 SpD  
 Bold Nature  
 IVs: 0 Atk  
@@ -12316,7 +12334,7 @@ IVs: 0 Atk
 
 Salamence @ Salamencite  
 Ability: Intimidate  
-Level: 52
+Level: 53
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Dragon Dance  
@@ -12326,7 +12344,7 @@ Adamant Nature
 
 Regidrago @ White Herb  
 Ability: Dragon's Maw  
-Level: 52
+Level: 51
 EVs: 132 Def / 60 SpA / 64 SpD / 252 Spe  
 Mild Nature  
 IVs: 0 Atk  
@@ -12534,7 +12552,7 @@ Modest Nature
 
 Spectrier @ Focus Sash  
 Ability: Grim Neigh  
-Level: 59
+Level: 58
 EVs: 252 SpA / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -12545,7 +12563,7 @@ IVs: 0 Atk
 
 Banette @ Banettite  
 Ability: Insomnia  
-Level: 59
+Level: 60
 EVs: 252 HP / 252 Atk
 Adamant Nature
 - Cotton Guard  
@@ -12555,7 +12573,7 @@ Adamant Nature
 
 Grimmsnarl (M) @ Expert Belt  
 Ability: Prankster  
-Level: 59
+Level: 58
 EVs: 252 HP / 252 Atk  
 Adamant Nature  
 - Spirit Break  
@@ -12565,7 +12583,7 @@ Adamant Nature
 
 Marshadow  
 Ability: Technician  
-Level: 59
+Level: 58
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Spectral Thief  
@@ -12594,7 +12612,7 @@ Jolly Nature
 
 Slaking @ Leftovers  
 Ability: Comatose  
-Level: 69
+Level: 67
 - High Horsepower  
 - Facade  
 - Drain Punch  
@@ -12602,7 +12620,7 @@ Level: 69
 
 Lapras @ Throat Spray
 Ability: Water Absorb  
-Level: 70
+Level: 69
 EVs: 252 HP / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -12613,7 +12631,7 @@ IVs: 0 Atk
 
 Arcanine @ Normal Gem  
 Ability: Intimidate  
-Level: 70
+Level: 69
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Sacred Fire  
@@ -12623,7 +12641,7 @@ Adamant Nature
 
 Raikou  
 Ability: Inner Focus  
-Level: 70
+Level: 68
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -12646,7 +12664,6 @@ Adamant Nature
 
 === TRAINER_HILL_7 === /* Trainer Hill */ 
 Name: GRETA
-Class: Arena Tycoon
 Pic: Arena Tycoon Greta
 Gender: Female
 Music: Male
@@ -12655,7 +12672,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Breloom  @ Focus Sash
 Ability: Effect Spore  
-Level: 76
+Level: 75
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Mach Punch  
@@ -12665,7 +12682,7 @@ Jolly Nature
 
 Haxorus  
 Ability: Mold Breaker  
-Level: 76
+Level: 75
 EVs: 4 HP / 252 Atk / 252 Spe  
 Adamant Nature  
 - First Impression  
@@ -12673,9 +12690,19 @@ Adamant Nature
 - Stomping Tantrum  
 - Counter
 
+Corviknight  
+Ability: Mirror Armor  
+Level: 74
+EVs: 252 HP / 252 SpD  
+Careful Nature  
+- Bulk Up  
+- Brave Bird  
+- Roost  
+- Iron Head
+
 Gengar @ Gengarite  
 Ability: Levitate  
-Level: 76
+Level: 77
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -12686,7 +12713,7 @@ IVs: 0 Atk
 
 Chien-Pao @ Chople Berry  
 Ability: Sword of Ruin  
-Level: 76
+Level: 75
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Icicle Crash  
@@ -12696,7 +12723,7 @@ Jolly Nature
 
 Urshifu @ Focus Sash  
 Ability: Unseen Fist  
-Level: 76
+Level: 74
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Sucker Punch  
@@ -12715,7 +12742,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Aster (Exploud) (F) @ Throat Spray  
 Ability: Soundproof  
-Level: 87
+Level: 86
 Tera Type: Poison  
 IVs: 0 Atk  
 - Boomburst  
@@ -12737,7 +12764,7 @@ IVs: 0 Atk
 
 Dragonite @ Silk Scarf  
 Ability: Inner Focus  
-Level: 84
+Level: 83
 EVs: 252 HP / 252 Atk / 4 Spe  
 Adamant Nature  
 - Extreme Speed  
@@ -12747,7 +12774,7 @@ Adamant Nature
 
 Goodra  
 Ability: Sap Sipper  
-Level: 84
+Level: 83
 EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Thunderbolt  
@@ -12758,7 +12785,7 @@ IVs: 0 Atk
 
 Goodra-Hisui  
 Ability: Gooey  
-Level: 84
+Level: 83
 EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Flash Cannon  
@@ -14415,7 +14442,7 @@ IVs: 0 Atk
 - Octazooka  
 
 
-=== TRAINER_CARTER === /* Route 109 */ /* TO BE ADDED */
+=== TRAINER_CARTER === /* Route 109 */ /* Back to Back */
 Name: CARTER
 Class: Fisherman
 Pic: Fisherman ORAS 80
@@ -14426,12 +14453,29 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Bruxish  
 Ability: Dazzling  
-Level: 10
+Level: 48
 Tera Type: Water  
 - Psychic Fangs  
 - Crunch  
 - Flip Turn  
 - Aqua Jet  
+
+Qwilfish-Hisui @ Rocky Helmet  
+Ability: Intimidate  
+Level: 50
+- Barb Barrage  
+- Destiny Bond  
+- Baneful Bunker  
+- Toxic Spikes  
+
+Remoraid @ Loaded Dice  
+Ability: Hustle  
+Level: 55
+- Rock Blast  
+- Bullet Seed  
+- Waterfall  
+- Flail  
+
 
 
 === TRAINER_ELLIOT_2 === /* Route */
@@ -15060,7 +15104,7 @@ Staryu
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DEMETRIUS === /* Abandoned Ship */ /* TO BE ADDED */
+=== TRAINER_DEMETRIUS === /* Abandoned Ship */
 Name: DEMETRIUS
 Class: Youngster
 Pic: Youngster
@@ -15069,13 +15113,43 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Thwackey  
+Ability: Grassy Surge  
+Level: 52
+EVs: 252 HP  
+Adamant Nature  
+- Grassy Glide  
+- Fake Out  
+- Swords Dance  
+- U-turn
 
-Electrike
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dreepy @ Spooky Plate  
+Ability: Cursed Body  
+Level: 58  
+Tera Type: Dragon  
+EVs: 252 HP / 252 Atk  
+Jolly Nature  
+- Curse  
+- Astonish  
+- Sucker Punch  
+- Dragon Rush
+
+Zweilous @ Roseli Berry  
+Ability: Hustle  
+Level: 53
+Happiness: 0  
+- Stomping Tantrum  
+- Draco Meteor
+- Frustration
+- Crunch
+
+Luxray  
+Ability: Intimidate  
+Level: 48
+- Crunch  
+- Supercell Slam  
+- Psychic Fangs  
+- Confuse Ray
 
 === TRAINER_ISAIAH_1 === /* Route 129 */
 Name: ISAIAH
@@ -17102,7 +17176,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Swirlix  
 Ability: Sweet Veil  
-Level: 58
+Level: 57
 Tera Type: Fairy  
 IVs: 0 Atk  
 - Draining Kiss  
@@ -17112,7 +17186,7 @@ IVs: 0 Atk
 
 Palpitoad  @ Rindo Berry
 Ability: Water Absorb    
-Level: 58
+Level: 54
 Tera Type: Water  
 - Mud Bomb  
 - Muddy Water  
@@ -17121,7 +17195,7 @@ Tera Type: Water
 
 Eelektrik  
 Ability: Levitate    
-Level: 58
+Level: 54
 Tera Type: Electric  
 - Throat Chop  
 - Thunder Fang  
@@ -17130,7 +17204,7 @@ Tera Type: Electric
 
 Carvanha
 Ability: Speed Boost  
-Level: 58
+Level: 57
 Tera Type: Water  
 Jolly Nature  
 - Waterfall
@@ -18619,7 +18693,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Klawf  
-Level: 17
+Level: 16
 Ability: Anger Shell  
 Tera Type: Rock  
 - Block  
@@ -28872,7 +28946,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Runerigus @ Binding Band  
 Ability: Wandering Spirit  
 Tera Type: Ground  
-Level: 50
+Level: 49
 - Spirit Shackle  
 - Destiny Bond  
 - Sand Tomb  
@@ -28881,7 +28955,7 @@ Level: 50
 Claydol  
 Ability: Levitate  
 Tera Type: Ground  
-Level: 50
+Level: 49
 IVs: 0 Atk  
 - Body Press  
 - Earth Power  
@@ -28891,7 +28965,7 @@ IVs: 0 Atk
 Sigilyph  
 Ability: Magic Guard  
 Tera Type: Psychic  
-Level: 50
+Level: 49
 IVs: 0 Atk  
 - Air Slash  
 - Ancient Power  
@@ -28901,7 +28975,7 @@ IVs: 0 Atk
 Oranguru  
 Ability: Telepathy  
 Tera Type: Rock  
-Level: 50
+Level: 49
 IVs: 0 Atk  
 - Energy Ball  
 - Calm Mind  
@@ -28936,7 +29010,7 @@ Tera Type: Normal
 - Morning Sun  
 
 Staravia  
-Level: 53
+Level: 52
 Ability: Intimidate  
 Tera Type: Normal  
 - Quick Attack  
@@ -29006,7 +29080,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Persian  
-Level: 50
+Level: 47
 Ability: Unnerve  
 Tera Type: Normal  
 - Pounce  
@@ -29015,7 +29089,7 @@ Tera Type: Normal
 - Hypnosis  
 
 Squawkabilly  
-Level: 50
+Level: 47
 Ability: Intimidate  
 Tera Type: Normal  
 - Dual Wingbeat  
@@ -29025,7 +29099,7 @@ Tera Type: Normal
 
 
 Cramorant @ Power Herb  
-Level: 50
+Level: 47
 Ability: Gulp Missile  
 Tera Type: Flying  
 - Dive  
@@ -29034,7 +29108,7 @@ Tera Type: Flying
 - Stockpile  
 
 Exeggutor-Alola @ Yache Berry  
-Level: 50
+Level: 47
 Ability: Harvest  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -29045,7 +29119,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_CAROLINA === /* Route 108 */ /* TO BE ADDED */
+=== TRAINER_CAROLINA === /* Route 108 */ /* Back to Back */
 Name: CAROLINA
 Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
@@ -29056,14 +29130,34 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Bisharp @ Focus Sash  
 Ability: Defiant  
-Level: 50
+Level: 47
 - Iron Head  
 - Sucker Punch  
 - Power-Up Punch  
 - Pursuit  
 
+Lampent  
+Ability: Shadow Tag  
+Level: 50
+EVs: 252 HP  
+Modest Nature  
+IVs: 0 Atk  
+- Shadow Ball  
+- Flamethrower  
+- Protect  
+- Ally Switch
 
-=== TRAINER_ELIJAH === /* Route 109 Surf */ /* TO BE ADDED */
+Purugly  
+Ability: Defiant  
+Level: 47
+Tera Type: Normal  
+- Return
+- Fake Out
+- Quick Attack
+- Throat Chop
+
+
+=== TRAINER_ELIJAH === /* Route 109 Surf */ 
 Name: ELIJAH
 Class: Bird Keeper
 Pic: Bird Keeper ORAS 80
@@ -29072,13 +29166,32 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Skarmory
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bombirdier  
+Level: 48
+Ability: Rocky Payload
+Tera Type: Flying  
+- Rock Slide
+- Thief  
+- Sky Drop  
+- Parting Shot
 
-Skarmory
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Flamigo @ White Herb  
+Level: 48
+Ability: Scrappy  
+Tera Type: Flying  
+- U-turn  
+- Acrobatics  
+- Close Combat  
+- Wide Guard  
+
+Golbat @ Big Root   
+Level: 50
+Ability: Inner Focus  
+EVs: 128 SpA  
+- Hypnosis  
+- Mean Look  
+- Leech Life  
+- Sludge Bomb
 
 === TRAINER_CELIA === /* Route 111 Desert */ /* TO BE ADDED */ /*maybe remove */
 Name: CELIA

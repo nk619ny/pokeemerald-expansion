@@ -57,3 +57,49 @@ script GraniteCave_1F_EventScript_SmackDownHiker {
 	releaseall
 	end
 }
+
+
+
+script GraniteCave_1F_EventScript_Francisco {
+    trainerbattle_single(TRAINER_FRANCISCO, GraniteCave_1F_Text_FranciscoIntro, GraniteCave_1F_Text_FranciscoDefeat, GraniteCave_1F_EventScript_FranciscoPostBattle)
+    goto_if_set(FLAG_TEMP_A, GraniteCave_1F_EventScript_FranciscoPostBattle)
+	msgbox(GraniteCave_1F_Text_FranciscoPostBattle, MSGBOX_NPC)
+    release
+    end
+}
+
+script GraniteCave_1F_EventScript_FranciscoPostBattle{
+	if(flag(FLAG_BADGE02_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("I packed some extra vitamins in my bag. You should take one!"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Did you make room in your bag?"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_CALCIUM)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_CALCIUM)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("You've got to be careful with how much you keep in your bag!\pIt can cause problems if you don't have room for new items.\pIf you clear out space quick, I'll still give you the vitamin."), MSGBOX_NPC)
+	}
+	release
+	end
+}
+
+text GraniteCave_1F_Text_FranciscoIntro {
+    format("You need to be prepared if you're going to explore remote places!")
+}
+
+text GraniteCave_1F_Text_FranciscoDefeat {
+    format("Not prepared enough!")
+}
+
+text GraniteCave_1F_Text_FranciscoPostBattle {
+    format("Make sure you always have what you need in your bag.")
+}
