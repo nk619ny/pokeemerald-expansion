@@ -9429,7 +9429,7 @@ static void Cmd_pickup(void)
 {
     CMD_ARGS();
 
-    u32 i, j;
+    u32 i; //, j;
     enum Species species;
     enum Item heldItem;
     u8 lvlDivBy10;
@@ -9437,7 +9437,7 @@ static void Cmd_pickup(void)
 
     if (!InBattlePike()) // No items in Battle Pike.
     {
-        bool32 isInPyramid = CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE;
+        //bool32 isInPyramid = CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE;
         for (i = 0; i < PARTY_SIZE; i++)
         {
             species = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG);
@@ -9448,7 +9448,10 @@ static void Cmd_pickup(void)
 
             ability = GetSpeciesAbility(species, GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_ABILITY_NUM));
 
-            if (ability == ABILITY_PICKUP
+            // Out-of-battle Pickup effect disabled (picking up new items after battles)
+            // In-battle Pickup (picking up used items during battle) and post-battle Pickup 
+            // (keeping consumed items) are still functional in battle_util.c
+            /*if (ability == ABILITY_PICKUP
                 && species != SPECIES_NONE
                 && species != SPECIES_EGG
                 && heldItem == ITEM_NONE
@@ -9474,8 +9477,8 @@ static void Cmd_pickup(void)
                         }
                     }
                 }
-            }
-            else if (ability == ABILITY_HONEY_GATHER
+            }*/
+            if (ability == ABILITY_HONEY_GATHER
                 && species != 0
                 && species != SPECIES_EGG
                 && heldItem == ITEM_NONE)
