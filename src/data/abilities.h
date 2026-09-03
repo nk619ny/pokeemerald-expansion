@@ -391,7 +391,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Keen Eye"),
         .description = COMPOUND_STRING("Raises accuracy."),
-        .aiRating = 1,
+        .aiRating = 3,
         .breakable = TRUE,
     },
 
@@ -406,8 +406,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_PICKUP] =
     {
         .name = _("Pickup"),
-        .description = COMPOUND_STRING("May pick up items."),
-        .aiRating = 1,
+        .description = COMPOUND_STRING("Pick up used items."),
+        .aiRating = 2,
     },
 
     [ABILITY_TRUANT] =
