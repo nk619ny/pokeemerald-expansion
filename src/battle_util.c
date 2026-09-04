@@ -9435,10 +9435,22 @@ void TryRestoreHeldItems(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
+        u16 originalItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
+
+        // Plantable berries are always returned to their original holder, regardless of ability
+        if (originalItem != ITEM_NONE
+            && GetItemPocket(originalItem) == POCKET_BERRIES
+            && !BerryIsUnplantable(originalItem)
+            && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
+        {
+            SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
+            continue;
+        }
+
         // Check if held items should be restored after battle based on generation
         if (B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9 || gBattleStruct->itemLost[B_SIDE_PLAYER][i].stolen || returnNPCItems || preventWildItemStealing)
         {
-            u16 lostItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
+            u16 lostItem = originalItem;
 
             // Check if the lost item is a berry and the mon is not holding it
             if (GetItemPocket(lostItem) == POCKET_BERRIES && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) != lostItem)
@@ -9451,19 +9463,18 @@ void TryRestoreHeldItems(void)
         // Pickup: recover own consumed non-berry item (only when the standard restore path did not already handle it)
         else if (GetMonAbility(&gParties[B_TRAINER_PLAYER][i]) == ABILITY_PICKUP)
         {
-            u16 originalItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
             if (originalItem != ITEM_NONE
                 && GetItemPocket(originalItem) != POCKET_BERRIES
                 && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
                 SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
         }
-        // Harvest / Seed Sower: recover own consumed berry after battle
+        // Harvest / Seed Sower: recover own consumed unplantable berry after battle
         else if (GetMonAbility(&gParties[B_TRAINER_PLAYER][i]) == ABILITY_HARVEST
               || GetMonAbility(&gParties[B_TRAINER_PLAYER][i]) == ABILITY_SEED_SOWER)
         {
-            u16 originalItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
             if (originalItem != ITEM_NONE
                 && GetItemPocket(originalItem) == POCKET_BERRIES
+                && BerryIsUnplantable(originalItem)
                 && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
                 SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
         }

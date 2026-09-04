@@ -77,13 +77,17 @@ BerryTree_EventScript_ChooseBerryToPlant::
 	goto_if_eq VAR_ITEM_ID, 0, BerryTree_EventScript_CancelPlanting
 	specialvar VAR_RESULT, IsUnplantableBerry
 	goto_if_eq VAR_RESULT, TRUE, BerryTree_EventScript_CannotPlantBerry
-	removeitem VAR_ITEM_ID
-	call BerryTree_EventScript_PlantBerry
+    removeitem VAR_ITEM_ID
+    call BerryTree_EventScript_PlantBerry
+    release
+    end
 
 BerryTree_EventScript_CannotPlantBerry::
-	message BerryTree_Text_CannotBePlanted
-	waitmessage
-	waitbuttonpress
+    message BerryTree_Text_CannotBePlanted
+    waitmessage
+    waitbuttonpress
+    release
+    end
 
 BerryTree_EventScript_CancelPlanting::
 	release
