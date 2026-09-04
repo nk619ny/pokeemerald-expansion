@@ -135,6 +135,35 @@ EXCLUDED_SPECIES_SUFFIXES = (
     "_TOTEM",
 )
 
+# Species pulled out of their normal generation-family tabs and placed on a
+# dedicated "Spoilers" tab instead, in this exact display order.
+SPOILER_SPECIES_ORDER = [
+    # Pokestar Species
+    "SPECIES_POKESTAR_BLACK_DOOR",
+    "SPECIES_POKESTAR_F_00",
+    "SPECIES_POKESTAR_F_002",
+    "SPECIES_POKESTAR_HUMANOID",
+    "SPECIES_POKESTAR_SPIRIT",
+    "SPECIES_POKESTAR_MT",
+    "SPECIES_POKESTAR_MT2",
+    "SPECIES_POKESTAR_MONSTER",
+    "SPECIES_POKESTAR_TRANSPORT",
+    "SPECIES_POKESTAR_UFO",
+    "SPECIES_POKESTAR_UFO_2",
+    "SPECIES_POKESTAR_WHITE_DOOR",
+    # Revavroom Starmobile Species
+    "SPECIES_REVAVROOM_SEGIN",
+    "SPECIES_REVAVROOM_SCHEDAR",
+    "SPECIES_REVAVROOM_NAVI",
+    "SPECIES_REVAVROOM_RUCHBAH",
+    "SPECIES_REVAVROOM_CAPH",
+    # Kecleon Mystery
+    "SPECIES_KECLEON_MYSTERY",
+    # Pikachu Original
+    "SPECIES_PIKACHU_ORIGINAL",
+]
+SPOILER_SHEET_NAME = "Spoilers"
+
 
 DIRECTIVE_IF_RE = re.compile(r"^\s*#\s*if\b(.*)$")
 DIRECTIVE_IFDEF_RE = re.compile(r"^\s*#\s*ifdef\b(.*)$")
@@ -179,7 +208,7 @@ FAMILY_TYPE_TOKENS: Dict[str, str] = {
     "COTTONEE_FAMILY_TYPE2":  "TYPE_FAIRY",
 }
 
-DEFAULT_CLEAN_REPO_ROOT = Path(r"C:\Users\nk619\Documents\pokeemerald-expansion-1.15.0 clean\pokeemerald-expansion-master")
+DEFAULT_CLEAN_REPO_ROOT = Path(r"C:\Users\nk619\Documents\pokeemerald-expansion-1.16.1 clean\pokeemerald-expansion-master")
 DEFAULT_OUTPUT_FILE = "species_comparison.xlsx"
 
 HEADER_TITLES = [
@@ -882,6 +911,47 @@ def parse_repo_species(repo_root: Path) -> Dict[str, List[SpeciesRecord]]:
     return parsed
 
 
+def extract_spoiler_species(
+    species_by_gen: Dict[str, List[SpeciesRecord]],
+) -> Dict[str, SpeciesRecord]:
+    """Removes spoiler species from each gen's list in place, returning them by key."""
+    spoiler_keys = set(SPOILER_SPECIES_ORDER)
+    spoilers_by_key: Dict[str, SpeciesRecord] = {}
+
+    for gen_file, records in species_by_gen.items():
+        remaining: List[SpeciesRecord] = []
+        for record in records:
+            if record.species_key in spoiler_keys:
+                spoilers_by_key[record.species_key] = record
+            else:
+                remaining.append(record)
+        species_by_gen[gen_file] = remaining
+
+    return spoilers_by_key
+
+
+def build_spoiler_merged_records(
+    original_spoilers: Dict[str, SpeciesRecord],
+    custom_spoilers: Dict[str, SpeciesRecord],
+) -> List[MergedSpeciesRecord]:
+    merged: List[MergedSpeciesRecord] = []
+    for species_key in SPOILER_SPECIES_ORDER:
+        orig = original_spoilers.get(species_key)
+        custom = custom_spoilers.get(species_key)
+        if orig is None and custom is None:
+            continue
+        species_name = (custom or orig).species_name
+        merged.append(
+            MergedSpeciesRecord(
+                species_key=species_key,
+                species_name=species_name,
+                original=orig,
+                customized=custom,
+            )
+        )
+    return merged
+
+
 def merge_species(
     original: List[SpeciesRecord],
     customized: List[SpeciesRecord],
@@ -1051,8 +1121,55 @@ def autosize_columns(ws) -> None:
         ws.column_dimensions[letter].width = min(max_len + 2, 42)
 
 
+def write_species_sheet(ws, merged_rows: List[MergedSpeciesRecord]) -> None:
+    ws.freeze_panes = "A2"
+
+    for idx, title in enumerate(HEADER_TITLES, start=1):
+        cell = ws.cell(row=1, column=idx, value=title)
+        cell.font = Font(bold=True)
+        cell.fill = HEADER_FILL
+        cell.alignment = Alignment(horizontal="center", vertical="center")
+        cell.border = THIN_BORDER
+
+    row_idx = 2
+    for merged in merged_rows:
+        original_values = species_row_values(merged.original)
+        custom_values = species_row_values(merged.customized)
+
+        ws.cell(row=row_idx, column=1, value=merged.species_name)
+        ws.cell(row=row_idx, column=2, value="Original")
+        ws.cell(row=row_idx + 1, column=2, value="Customized")
+
+        for offset, value in enumerate(original_values, start=3):
+            ws.cell(row=row_idx, column=offset, value=value)
+        for offset, value in enumerate(custom_values, start=3):
+            ws.cell(row=row_idx + 1, column=offset, value=value)
+
+        ws.merge_cells(start_row=row_idx, start_column=1, end_row=row_idx + 1, end_column=1)
+        ws.cell(row=row_idx, column=1).alignment = Alignment(vertical="center")
+
+        apply_column_styles(ws, row_idx)
+        apply_column_styles(ws, row_idx + 1)
+        apply_type_fill(ws, row_idx, "C")
+        apply_type_fill(ws, row_idx, "D")
+        apply_type_fill(ws, row_idx + 1, "C")
+        apply_type_fill(ws, row_idx + 1, "D")
+
+        for col_idx in range(3, 15):
+            original_cell = ws.cell(row=row_idx, column=col_idx)
+            custom_cell = ws.cell(row=row_idx + 1, column=col_idx)
+            if (original_cell.value or "") != (custom_cell.value or ""):
+                original_cell.font = Font(bold=True, italic=True)
+                custom_cell.font = Font(bold=True, italic=True)
+
+        row_idx += 2
+
+    autosize_columns(ws)
+
+
 def build_workbook(
     merged_by_gen: Dict[str, List[MergedSpeciesRecord]],
+    spoiler_rows: List[MergedSpeciesRecord],
     output_path: Path,
 ) -> None:
     wb = Workbook()
@@ -1063,50 +1180,10 @@ def build_workbook(
         gen_num = gen_file.split("_")[1]
         sheet_name = f"Gen {gen_num}"
         ws = wb.create_sheet(title=sheet_name)
-        ws.freeze_panes = "A2"
+        write_species_sheet(ws, merged_by_gen.get(gen_file, []))
 
-        for idx, title in enumerate(HEADER_TITLES, start=1):
-            cell = ws.cell(row=1, column=idx, value=title)
-            cell.font = Font(bold=True)
-            cell.fill = HEADER_FILL
-            cell.alignment = Alignment(horizontal="center", vertical="center")
-            cell.border = THIN_BORDER
-
-        row_idx = 2
-        merged_rows = merged_by_gen.get(gen_file, [])
-        for merged in merged_rows:
-            original_values = species_row_values(merged.original)
-            custom_values = species_row_values(merged.customized)
-
-            ws.cell(row=row_idx, column=1, value=merged.species_name)
-            ws.cell(row=row_idx, column=2, value="Original")
-            ws.cell(row=row_idx + 1, column=2, value="Customized")
-
-            for offset, value in enumerate(original_values, start=3):
-                ws.cell(row=row_idx, column=offset, value=value)
-            for offset, value in enumerate(custom_values, start=3):
-                ws.cell(row=row_idx + 1, column=offset, value=value)
-
-            ws.merge_cells(start_row=row_idx, start_column=1, end_row=row_idx + 1, end_column=1)
-            ws.cell(row=row_idx, column=1).alignment = Alignment(vertical="center")
-
-            apply_column_styles(ws, row_idx)
-            apply_column_styles(ws, row_idx + 1)
-            apply_type_fill(ws, row_idx, "C")
-            apply_type_fill(ws, row_idx, "D")
-            apply_type_fill(ws, row_idx + 1, "C")
-            apply_type_fill(ws, row_idx + 1, "D")
-
-            for col_idx in range(3, 15):
-                original_cell = ws.cell(row=row_idx, column=col_idx)
-                custom_cell = ws.cell(row=row_idx + 1, column=col_idx)
-                if (original_cell.value or "") != (custom_cell.value or ""):
-                    original_cell.font = Font(bold=True, italic=True)
-                    custom_cell.font = Font(bold=True, italic=True)
-
-            row_idx += 2
-
-        autosize_columns(ws)
+    ws = wb.create_sheet(title=SPOILER_SHEET_NAME)
+    write_species_sheet(ws, spoiler_rows)
 
     wb.save(output_path)
 
@@ -1213,6 +1290,11 @@ def main() -> None:
     print(f"Parsing original repo: {clean_repo_root}")
     original_species = parse_repo_species(clean_repo_root)
 
+    custom_spoilers = extract_spoiler_species(custom_species)
+    original_spoilers = extract_spoiler_species(original_species)
+    spoiler_rows = build_spoiler_merged_records(original_spoilers, custom_spoilers)
+    print(f"Spoilers: {len(spoiler_rows)}")
+
     merged_by_gen: Dict[str, List[MergedSpeciesRecord]] = {}
     for gen_file in GEN_FILES:
         merged_by_gen[gen_file] = merge_species(
@@ -1226,7 +1308,7 @@ def main() -> None:
         )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    build_workbook(merged_by_gen, output_path)
+    build_workbook(merged_by_gen, spoiler_rows, output_path)
     print(f"Spreadsheet written: {output_path}")
 
 
