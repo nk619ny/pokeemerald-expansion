@@ -647,6 +647,58 @@ Route118_EventScript_Amelia::
 	end
 
 
+Route118_EventScript_Maria::
+# 349 "data/maps/Route118/scripts.pory"
+	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route118_EventScript_MariaTryGiveVitamin
+# 350 "data/maps/Route118/scripts.pory"
+	goto_if_set FLAG_TEMP_A, Route118_EventScript_MariaTryGiveVitamin
+# 351 "data/maps/Route118/scripts.pory"
+	msgbox Route117_Text_MariaPostBattle, MSGBOX_NPC
+# 352 "data/maps/Route118/scripts.pory"
+	releaseall
+	end
+
+
+Route118_EventScript_MariaTryGiveVitamin::
+# 357 "data/maps/Route118/scripts.pory"
+	goto_if_set FLAG_BADGE06_GET, Route118_EventScript_MariaTryGiveVitamin_2
+# 361 "data/maps/Route118/scripts.pory"
+	goto_if_unset FLAG_TEMP_A, Route118_EventScript_MariaTryGiveVitamin_5
+# 365 "data/maps/Route118/scripts.pory"
+	msgbox Route118_EventScript_MariaTryGiveVitamin_Text_1, MSGBOX_NPC
+Route118_EventScript_MariaTryGiveVitamin_4:
+# 367 "data/maps/Route118/scripts.pory"
+	checkitemspace ITEM_PROTEIN
+# 368 "data/maps/Route118/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route118_EventScript_MariaTryGiveVitamin_9
+# 373 "data/maps/Route118/scripts.pory"
+	setflag FLAG_TEMP_A
+# 374 "data/maps/Route118/scripts.pory"
+	msgbox Route118_EventScript_MariaTryGiveVitamin_Text_2, MSGBOX_NPC
+Route118_EventScript_MariaTryGiveVitamin_8:
+# 376 "data/maps/Route118/scripts.pory"
+	release
+	end
+
+Route118_EventScript_MariaTryGiveVitamin_2:
+# 358 "data/maps/Route118/scripts.pory"
+	releaseall
+	end
+
+Route118_EventScript_MariaTryGiveVitamin_5:
+# 362 "data/maps/Route118/scripts.pory"
+	msgbox Route118_EventScript_MariaTryGiveVitamin_Text_0, MSGBOX_NPC
+	goto Route118_EventScript_MariaTryGiveVitamin_4
+
+Route118_EventScript_MariaTryGiveVitamin_9:
+# 369 "data/maps/Route118/scripts.pory"
+	giveitem ITEM_PROTEIN
+# 370 "data/maps/Route118/scripts.pory"
+	clearflag FLAG_TEMP_A
+	goto Route118_EventScript_MariaTryGiveVitamin_8
+
+
 Route118_EventScript_GiveEviolite_Text_0:
 # 319 "data/maps/Route118/scripts.pory"
 	.string "Everyone talks about evolution making\n"
@@ -655,6 +707,21 @@ Route118_EventScript_GiveEviolite_Text_0:
 	.string "more fun to use.\p"
 	.string "This item helps them hold their own\n"
 	.string "against fully evolved opponents.$"
+
+Route118_EventScript_MariaTryGiveVitamin_Text_0:
+# 362 "data/maps/Route118/scripts.pory"
+	.string "Here, take a vitamin to help with your\n"
+	.string "training!$"
+
+Route118_EventScript_MariaTryGiveVitamin_Text_1:
+# 365 "data/maps/Route118/scripts.pory"
+	.string "Did you change your mind about the\n"
+	.string "vitamin?$"
+
+Route118_EventScript_MariaTryGiveVitamin_Text_2:
+# 374 "data/maps/Route118/scripts.pory"
+	.string "Oh, you don't think you or your Pokémon\n"
+	.string "need supplements?$"
 
 Route118_Text_AmeliaIntro::
 # 335 "data/maps/Route118/scripts.pory"

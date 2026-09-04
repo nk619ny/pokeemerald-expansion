@@ -343,3 +343,36 @@ text Route118_Text_AmeliaDefeat {
 text Route118_Text_AmeliaPostBattle {
 	format("The Berry Master lives nearby.\NI often bring my Pokémon over to enjoy the lovely fruit!\p")
 }
+
+
+script Route118_EventScript_Maria {
+    trainerbattle_single(TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route118_EventScript_MariaTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route118_EventScript_MariaTryGiveVitamin)
+	msgbox(Route117_Text_MariaPostBattle, MSGBOX_NPC)
+    releaseall
+    end
+}
+
+script Route118_EventScript_MariaTryGiveVitamin{
+	if(flag(FLAG_BADGE06_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("Here, take a vitamin to help with your training!"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Did you change your mind about the vitamin?"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_PROTEIN)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_PROTEIN)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("Oh, you don't think you or your Pokémon need supplements?"), MSGBOX_NPC)
+	}
+	release
+	end
+}

@@ -2014,7 +2014,7 @@ IVs: 0 Atk
 
 Zapdos  
 Ability: Lightning Rod  
-Level: 75
+Level: 74
 Ball: Dive
 EVs: 128 SpA / 252 Spe  
 Timid Nature  
@@ -2026,7 +2026,7 @@ IVs: 0 Atk
 
 Overqwil  
 Ability: Swift Swim  
-Level: 75
+Level: 74
 Ball: Dive
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
@@ -2059,7 +2059,7 @@ Adamant Nature
 
 Zarude  
 Ability: Intimidate  
-Level: 75
+Level: 74
 Ball: Dive
 EVs: 128 Atk / 4 SpD / 128 Spe  
 Jolly Nature  
@@ -2440,7 +2440,7 @@ Level: 20
 Cherubi  
 Level: 20
 Tera Type: Rock
-IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs for Min Atk */
+IVs: 0 Atk
 - Draining Kiss  
 - Magical Leaf  
 - Hidden Power 
@@ -4349,7 +4349,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Shiftry @ Focus Sash  
-Level: 53
+Level: 52
 Ability: Wind Rider  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -10748,7 +10748,7 @@ Impish Nature
 - Fire Punch  
 
 Regirock @ Leftovers
-Level: 48
+Level: 47
 Ball: Heavy
 Ability: Solid Rock  
 Tera Type: Rock  
@@ -10844,7 +10844,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Rotom-Heat  
 Ability: Levitate 
 Ball: Fast
-Level: 35
+Level: 34
 EVs: 128 HP / 128 SpA 
 Modest Nature  
 IVs: 0 Atk  
@@ -10904,7 +10904,7 @@ Modest Nature
 Cryogonal @ Light Clay  
 Ability: Levitate  
 Ball: Fast
-Level: 35
+Level: 34
 EVs: 128 Def / 64 SpD / 64 Spe  
 Calm Nature  
 IVs: 0 Atk  
@@ -10924,7 +10924,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Typhlosion @ Quick Claw  
-Level: 43
+Level: 41
 Ball: Love
 Ability: Flash Fire  
 EVs: 196 SpA / 4 SpD / 252 Spe  
@@ -10936,7 +10936,7 @@ IVs: 0 Atk
 - Solar Beam  
 
 Blaziken @ Blazikenite  
-Level: 42
+Level: 43
 Ball: Love
 Ability: Speed Boost  
 Tera Type: Fire  
@@ -10972,7 +10972,7 @@ Adamant Nature
 - Triple Axel  
 
 Solrock @ Enigma Berry  
-Level: 43
+Level: 42
 Ball: Love
 Ability: Levitate  
 Tera Type: Rock  
@@ -10984,7 +10984,7 @@ Adamant Nature
 - Sunny Day 
 
 Entei @ Muscle Band
-Level: 43
+Level: 42
 Ball: Love
 Ability: Inner Focus  
 Tera Type: Fire  
@@ -14096,7 +14096,7 @@ Tera Type: Dragon
 - Breaking Swipe  
 
 
-=== TRAINER_IVAN === /* Route 104 North */ /* TO BE ADDED */
+=== TRAINER_IVAN === /* Route 104 North */
 Name: IVAN
 Class: Fisherman
 Pic: Fisherman ORAS 80
@@ -14105,17 +14105,37 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magikarp
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados @ Wacan Berry  
+Ability: Intimidate  
+- Bounce  
+- Power Whip  
+- Earthquake  
+- Aqua Tail  
 
-Magikarp
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Octillery  
+Ability: Sniper  
+IVs: 0 Atk  
+- Octazooka  
+- Energy Ball  
+- Flamethrower  
+- Acid Spray  
 
-Magikarp
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mantine @ Wacan Berry  
+Ability: Swift Swim  
+Tera Type: Ground  
+IVs: 0 Atk  
+- Air Slash  
+- Surf  
+- Hidden Power
+- Tailwind  
+
+Whiscash @ Rindo Berry
+Ability: Oblivious  
+- Earth Power  
+- Waterfall  
+- Dragon Dance  
+- Future Sight  
+
 
 === TRAINER_CLAUDE === /* Route 119 */
 Name: CLAUDE
@@ -15021,19 +15041,51 @@ Dodrio
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_MARIA_1 === /* Route 117 */ /* TO BE ADDED */ /* unused */
+=== TRAINER_MARIA_1 === /* Route 118 */
 Name: MARIA
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
 Music: Female
 Double Battle: Yes
-Starting Status: GRASSY_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Doduo
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cinderace  
+Ability: Blaze  
+Level: 54
+Tera Type: Fire  
+- Acrobatics  
+- Court Change  
+- Flame Charge  
+- High Jump Kick  
+
+Boltund @ Salac Berry
+Ability: Competitive  
+Level: 54
+Tera Type: Electric  
+- Flame Charge  
+- Agility  
+- Nuzzle  
+- Electro Ball  
+
+Hitmonchan (M)  
+Ability: Iron Fist  
+Level: 54
+Tera Type: Fighting  
+- Coaching  
+- Power-Up Punch  
+- Thunder Punch  
+- Ice Punch  
+
+Stoutland  
+Ability: Sand Rush  
+Level: 54
+Tera Type: Normal  
+- Psychic Fangs  
+- Wild Charge  
+- Play Rough  
+- Pursuit  
+
 
 === TRAINER_MARIA_2 === /* Route */
 Name: MARIA
@@ -15617,7 +15669,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Energy
 - Ember
 
-=== TRAINER_PERRY === /* Route 118 */ /* COPIED TEAM TO SURF, TO BE ADDED NEWLY */
+=== TRAINER_PERRY === /* Route 118 */ /* UNUSED */
 Name: PERRY
 Class: Bird Keeper
 Pic: Bird Keeper ORAS 80
@@ -15626,40 +15678,42 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Sequence Switching
 
-Pidgeotto  
-Level: 60
-Ability: Keen Eye  
-Tera Type: Normal  
-- Feather Dance  
-- Roost  
-- Air Slash  
-- Steel Wing  
+Cinderace  
+Ability: Blaze  
+Level: 54
+Tera Type: Fire  
+- Acrobatics  
+- Court Change  
+- Flame Charge  
+- High Jump Kick  
 
-Tranquill  
-Level: 60
-Ability: Big Pecks  
-Tera Type: Normal  
-- Dual Wingbeat  
-- Night Slash  
-- Secret Power  
-- Morning Sun  
+Boltund  
+Ability: Competitive  
+Level: 54
+Tera Type: Electric  
+- Flame Charge  
+- Agility  
+- Nuzzle  
+- Electro Ball  
 
-Staravia  
-Level: 60
-Ability: Intimidate  
-Tera Type: Normal  
-- Quick Attack  
-- U-turn  
-- Retaliate  
+Hitmonchan (M)  
+Ability: Iron Fist  
+Level: 54
+Tera Type: Fighting  
+- Coaching  
+- Power-Up Punch  
+- Thunder Punch  
+- Ice Punch  
 
-Corvisquire  
-Level: 60
-Ability: Unnerve  
-Tera Type: Flying  
-- Drill Peck  
-- Power Trip  
-- Work Up  
-- Tailwind  
+Stoutland  
+Ability: Sand Rush  
+Level: 54
+Tera Type: Normal  
+- Psychic Fangs  
+- Wild Charge  
+- Play Rough  
+- Pursuit  
+
 
 === TRAINER_HUGH === /* Route 119 */ /* TO BE ADDED */
 Name: HUGH
@@ -19522,7 +19576,7 @@ IVs: 0 Atk / 0 Spe
 Magmar @ Eviolite  
 Ability: Flame Body  
 Shiny: Yes  
-Level: 73
+Level: 72
 Ball: Dream
 EVs: 252 HP / 252 Def / 4 SpD  
 Sassy Nature  
@@ -19535,7 +19589,7 @@ IVs: 0 Atk / 0 Spe
 Armarouge @ White Herb
 Ability: Flash Fire
 Shiny: Yes  
-Level: 73
+Level: 72
 Ball: Dream
 EVs: 252 HP / 252 SpA / 4 SpD  
 Quiet Nature  
@@ -19569,7 +19623,7 @@ IVs: 0 Atk / 0 Spe
 - Dazzling Gleam  
 - Moonlight  
 
-Stakataka @ Chople Berry  
+Stakataka @ Enigma Berry  
 Ability: Beast Boost  
 Level: 73
 Ball: Beast

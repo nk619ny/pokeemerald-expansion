@@ -279,283 +279,287 @@ Route117_EventScript_RematchDylan::
 # 140 "data/maps/Route117/scripts.pory"
 
 # 141 "data/maps/Route117/scripts.pory"
-Route117_EventScript_Maria::
+/*
 # 142 "data/maps/Route117/scripts.pory"
-	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route117_EventScript_RegisterMaria
+Route117_EventScript_Maria::
 # 143 "data/maps/Route117/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route117_EventScript_RegisterMaria
 # 144 "data/maps/Route117/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMaria
+	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 145 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MariaPostBattle, MSGBOX_DEFAULT
+	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMaria
 # 146 "data/maps/Route117/scripts.pory"
-	release
+	msgbox Route117_Text_MariaPostBattle, MSGBOX_DEFAULT
 # 147 "data/maps/Route117/scripts.pory"
-	end
+	release
 # 148 "data/maps/Route117/scripts.pory"
-
+	end
 # 149 "data/maps/Route117/scripts.pory"
-Route117_EventScript_RegisterMaria::
+
 # 150 "data/maps/Route117/scripts.pory"
-	special PlayerFaceTrainerAfterBattle
+Route117_EventScript_RegisterMaria::
 # 151 "data/maps/Route117/scripts.pory"
-	waitmovement 0
+	special PlayerFaceTrainerAfterBattle
 # 152 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MariaRegister, MSGBOX_DEFAULT
+	waitmovement 0
 # 153 "data/maps/Route117/scripts.pory"
-	//register_matchcall TRAINER_MARIA_1
+	msgbox Route117_Text_MariaRegister, MSGBOX_DEFAULT
 # 154 "data/maps/Route117/scripts.pory"
-	release
+	//register_matchcall TRAINER_MARIA_1
 # 155 "data/maps/Route117/scripts.pory"
-	end
+	release
 # 156 "data/maps/Route117/scripts.pory"
-
+	end
 # 157 "data/maps/Route117/scripts.pory"
-Route117_EventScript_RematchMaria::
+
 # 158 "data/maps/Route117/scripts.pory"
-	trainerbattle_rematch TRAINER_MARIA_1, Route117_Text_MariaRematchIntro, Route117_Text_MariaRematchDefeat
+Route117_EventScript_RematchMaria::
 # 159 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MariaPostRematch, MSGBOX_AUTOCLOSE
+	trainerbattle_rematch TRAINER_MARIA_1, Route117_Text_MariaRematchIntro, Route117_Text_MariaRematchDefeat
 # 160 "data/maps/Route117/scripts.pory"
-	end
+	msgbox Route117_Text_MariaPostRematch, MSGBOX_AUTOCLOSE
 # 161 "data/maps/Route117/scripts.pory"
-
+	end
 # 162 "data/maps/Route117/scripts.pory"
-Route117_EventScript_Derek::
+*/
 # 163 "data/maps/Route117/scripts.pory"
-	trainerbattle_single TRAINER_DEREK, Route117_Text_DerekIntro, Route117_Text_DerekDefeat
+
 # 164 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_DerekPostBattle, MSGBOX_AUTOCLOSE
+Route117_EventScript_Derek::
 # 165 "data/maps/Route117/scripts.pory"
-	end
+	trainerbattle_single TRAINER_DEREK, Route117_Text_DerekIntro, Route117_Text_DerekDefeat
 # 166 "data/maps/Route117/scripts.pory"
-
+	msgbox Route117_Text_DerekPostBattle, MSGBOX_AUTOCLOSE
 # 167 "data/maps/Route117/scripts.pory"
-Route117_EventScript_Anna::
+	end
 # 168 "data/maps/Route117/scripts.pory"
-	trainerbattle_double TRAINER_ANNA_AND_MEG_1, Route117_Text_AnnaIntro, Route117_Text_AnnaDefeat, Route117_Text_AnnaNotEnoughMons, Route117_EventScript_RegisterAnna
+
 # 169 "data/maps/Route117/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+Route117_EventScript_Anna::
 # 170 "data/maps/Route117/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchAnna
+	trainerbattle_double TRAINER_ANNA_AND_MEG_1, Route117_Text_AnnaIntro, Route117_Text_AnnaDefeat, Route117_Text_AnnaNotEnoughMons, Route117_EventScript_RegisterAnna
 # 171 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AnnaPostBattle, MSGBOX_DEFAULT
-# 172 "data/maps/Route117/scripts.pory"
-	release
-# 173 "data/maps/Route117/scripts.pory"
-	end
-# 174 "data/maps/Route117/scripts.pory"
-
-# 175 "data/maps/Route117/scripts.pory"
-Route117_EventScript_RegisterAnna::
-# 176 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
-# 177 "data/maps/Route117/scripts.pory"
-	//register_matchcall TRAINER_ANNA_AND_MEG_1
-# 178 "data/maps/Route117/scripts.pory"
-	release
-# 179 "data/maps/Route117/scripts.pory"
-	end
-# 180 "data/maps/Route117/scripts.pory"
-
-# 181 "data/maps/Route117/scripts.pory"
-Route117_EventScript_RematchAnna::
-# 182 "data/maps/Route117/scripts.pory"
-	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_AnnaRematchIntro, Route117_Text_AnnaRematchDefeat, Route117_Text_AnnaRematchNotEnoughMons
-# 183 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AnnaPostRematch, MSGBOX_AUTOCLOSE
-# 184 "data/maps/Route117/scripts.pory"
-	end
-# 185 "data/maps/Route117/scripts.pory"
-
-# 186 "data/maps/Route117/scripts.pory"
-Route117_EventScript_Meg::
-# 187 "data/maps/Route117/scripts.pory"
-	trainerbattle_double TRAINER_ANNA_AND_MEG_1, Route117_Text_MegIntro, Route117_Text_MegDefeat, Route117_Text_MegNotEnoughMons, Route117_EventScript_RegisterMeg
-# 188 "data/maps/Route117/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 189 "data/maps/Route117/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMeg
-# 190 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MegPostBattle, MSGBOX_DEFAULT
-# 191 "data/maps/Route117/scripts.pory"
+# 172 "data/maps/Route117/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchAnna
+# 173 "data/maps/Route117/scripts.pory"
+	msgbox Route117_Text_AnnaPostBattle, MSGBOX_DEFAULT
+# 174 "data/maps/Route117/scripts.pory"
 	release
-# 192 "data/maps/Route117/scripts.pory"
+# 175 "data/maps/Route117/scripts.pory"
 	end
-# 193 "data/maps/Route117/scripts.pory"
+# 176 "data/maps/Route117/scripts.pory"
 
-# 194 "data/maps/Route117/scripts.pory"
-Route117_EventScript_RegisterMeg::
-# 195 "data/maps/Route117/scripts.pory"
+# 177 "data/maps/Route117/scripts.pory"
+Route117_EventScript_RegisterAnna::
+# 178 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
-# 196 "data/maps/Route117/scripts.pory"
+# 179 "data/maps/Route117/scripts.pory"
 	//register_matchcall TRAINER_ANNA_AND_MEG_1
-# 197 "data/maps/Route117/scripts.pory"
+# 180 "data/maps/Route117/scripts.pory"
 	release
+# 181 "data/maps/Route117/scripts.pory"
+	end
+# 182 "data/maps/Route117/scripts.pory"
+
+# 183 "data/maps/Route117/scripts.pory"
+Route117_EventScript_RematchAnna::
+# 184 "data/maps/Route117/scripts.pory"
+	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_AnnaRematchIntro, Route117_Text_AnnaRematchDefeat, Route117_Text_AnnaRematchNotEnoughMons
+# 185 "data/maps/Route117/scripts.pory"
+	msgbox Route117_Text_AnnaPostRematch, MSGBOX_AUTOCLOSE
+# 186 "data/maps/Route117/scripts.pory"
+	end
+# 187 "data/maps/Route117/scripts.pory"
+
+# 188 "data/maps/Route117/scripts.pory"
+Route117_EventScript_Meg::
+# 189 "data/maps/Route117/scripts.pory"
+	trainerbattle_double TRAINER_ANNA_AND_MEG_1, Route117_Text_MegIntro, Route117_Text_MegDefeat, Route117_Text_MegNotEnoughMons, Route117_EventScript_RegisterMeg
+# 190 "data/maps/Route117/scripts.pory"
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+# 191 "data/maps/Route117/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMeg
+# 192 "data/maps/Route117/scripts.pory"
+	msgbox Route117_Text_MegPostBattle, MSGBOX_DEFAULT
+# 193 "data/maps/Route117/scripts.pory"
+	release
+# 194 "data/maps/Route117/scripts.pory"
+	end
+# 195 "data/maps/Route117/scripts.pory"
+
+# 196 "data/maps/Route117/scripts.pory"
+Route117_EventScript_RegisterMeg::
+# 197 "data/maps/Route117/scripts.pory"
+	msgbox Route117_Text_AnnaAndMegRegister, MSGBOX_DEFAULT
 # 198 "data/maps/Route117/scripts.pory"
-	end
+	//register_matchcall TRAINER_ANNA_AND_MEG_1
 # 199 "data/maps/Route117/scripts.pory"
-
+	release
 # 200 "data/maps/Route117/scripts.pory"
-Route117_EventScript_RematchMeg::
+	end
 # 201 "data/maps/Route117/scripts.pory"
-	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_MegRematchIntro, Route117_Text_MegRematchDefeat, Route117_Text_MegRematchNotEnoughMons
+
 # 202 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MegPostRematch, MSGBOX_AUTOCLOSE
+Route117_EventScript_RematchMeg::
 # 203 "data/maps/Route117/scripts.pory"
-	end
+	trainerbattle_rematch_double TRAINER_ANNA_AND_MEG_1, Route117_Text_MegRematchIntro, Route117_Text_MegRematchDefeat, Route117_Text_MegRematchNotEnoughMons
 # 204 "data/maps/Route117/scripts.pory"
-
+	msgbox Route117_Text_MegPostRematch, MSGBOX_AUTOCLOSE
 # 205 "data/maps/Route117/scripts.pory"
-Route117_EventScript_Melina::
+	end
 # 206 "data/maps/Route117/scripts.pory"
-	trainerbattle_single TRAINER_MELINA, Route117_Text_MelinaIntro, Route117_Text_MelinaDefeat
+
 # 207 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_MelinaPostBattle, MSGBOX_AUTOCLOSE
+Route117_EventScript_Melina::
 # 208 "data/maps/Route117/scripts.pory"
-	end
+	trainerbattle_single TRAINER_MELINA, Route117_Text_MelinaIntro, Route117_Text_MelinaDefeat
 # 209 "data/maps/Route117/scripts.pory"
-
+	msgbox Route117_Text_MelinaPostBattle, MSGBOX_AUTOCLOSE
 # 210 "data/maps/Route117/scripts.pory"
-Route117_EventScript_Brandi::
+	end
 # 211 "data/maps/Route117/scripts.pory"
-	trainerbattle_single TRAINER_BRANDI, Route117_Text_BrandiIntro, Route117_Text_BrandiDefeat
+
 # 212 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_BrandiPostBattle, MSGBOX_AUTOCLOSE
+Route117_EventScript_Brandi::
 # 213 "data/maps/Route117/scripts.pory"
-	end
+	trainerbattle_single TRAINER_BRANDI, Route117_Text_BrandiIntro, Route117_Text_BrandiDefeat
 # 214 "data/maps/Route117/scripts.pory"
-
+	msgbox Route117_Text_BrandiPostBattle, MSGBOX_AUTOCLOSE
 # 215 "data/maps/Route117/scripts.pory"
-Route117_EventScript_Aisha::
-# 216 "data/maps/Route117/scripts.pory"
-	trainerbattle_single TRAINER_AISHA, Route117_Text_AishaIntro, Route117_Text_AishaDefeat
-# 217 "data/maps/Route117/scripts.pory"
-	msgbox Route117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE
-# 218 "data/maps/Route117/scripts.pory"
 	end
+# 216 "data/maps/Route117/scripts.pory"
+
+# 217 "data/maps/Route117/scripts.pory"
+Route117_EventScript_Aisha::
+# 218 "data/maps/Route117/scripts.pory"
+	trainerbattle_single TRAINER_AISHA, Route117_Text_AishaIntro, Route117_Text_AishaDefeat
 # 219 "data/maps/Route117/scripts.pory"
-
+	msgbox Route117_Text_AishaPostBattle, MSGBOX_AUTOCLOSE
 # 220 "data/maps/Route117/scripts.pory"
-Route117_Text_DayCarePokemonHadNewMove:
+	end
 # 221 "data/maps/Route117/scripts.pory"
-	.string "I left my Pokémon at the DAY CARE.\p"
+
 # 222 "data/maps/Route117/scripts.pory"
-	.string "When I got it back, it had a new move\n"
+Route117_Text_DayCarePokemonHadNewMove:
 # 223 "data/maps/Route117/scripts.pory"
-	.string "that I didn't teach it.\l"
+	.string "I left my Pokémon at the DAY CARE.\p"
 # 224 "data/maps/Route117/scripts.pory"
-	.string "I was really, really surprised.$"
+	.string "When I got it back, it had a new move\n"
 # 225 "data/maps/Route117/scripts.pory"
-
+	.string "that I didn't teach it.\l"
 # 226 "data/maps/Route117/scripts.pory"
-Route117_Text_ArentTheseFlowersPretty:
+	.string "I was really, really surprised.$"
 # 227 "data/maps/Route117/scripts.pory"
-	.string "What do you think?\n"
+
 # 228 "data/maps/Route117/scripts.pory"
-	.string "Aren't these flowers pretty?\p"
+Route117_Text_ArentTheseFlowersPretty:
 # 229 "data/maps/Route117/scripts.pory"
-	.string "I planted them all!$"
+	.string "What do you think?\n"
 # 230 "data/maps/Route117/scripts.pory"
-
+	.string "Aren't these flowers pretty?\p"
 # 231 "data/maps/Route117/scripts.pory"
-Route117_Text_AirIsTastyHere:
+	.string "I planted them all!$"
 # 232 "data/maps/Route117/scripts.pory"
-	.string "The air is tasty here!$"
+
 # 233 "data/maps/Route117/scripts.pory"
-
+Route117_Text_AirIsTastyHere:
 # 234 "data/maps/Route117/scripts.pory"
-Route117_Text_RouteSignVerdanturf:
+	.string "The air is tasty here!$"
 # 235 "data/maps/Route117/scripts.pory"
-	.string "ROUTE 117\n"
+
 # 236 "data/maps/Route117/scripts.pory"
-	.string "{LEFT_ARROW} VERDANTURF TOWN$"
+Route117_Text_RouteSignVerdanturf:
 # 237 "data/maps/Route117/scripts.pory"
-
-# 238 "data/maps/Route117/scripts.pory"
-Route117_Text_RouteSignMauville:
-# 239 "data/maps/Route117/scripts.pory"
 	.string "ROUTE 117\n"
-# 240 "data/maps/Route117/scripts.pory"
-	.string "{RIGHT_ARROW} MAUVILLE CITY$"
-# 241 "data/maps/Route117/scripts.pory"
+# 238 "data/maps/Route117/scripts.pory"
+	.string "{LEFT_ARROW} VERDANTURF TOWN$"
+# 239 "data/maps/Route117/scripts.pory"
 
+# 240 "data/maps/Route117/scripts.pory"
+Route117_Text_RouteSignMauville:
+# 241 "data/maps/Route117/scripts.pory"
+	.string "ROUTE 117\n"
 # 242 "data/maps/Route117/scripts.pory"
-Route117_Text_DayCareSign:
+	.string "{RIGHT_ARROW} MAUVILLE CITY$"
 # 243 "data/maps/Route117/scripts.pory"
-	.string "Pokémon DAY CARE\n"
+
 # 244 "data/maps/Route117/scripts.pory"
+Route117_Text_DayCareSign:
+# 245 "data/maps/Route117/scripts.pory"
+	.string "Pokémon DAY CARE\n"
+# 246 "data/maps/Route117/scripts.pory"
 	.string "“Let us raise your Pokémon.”$"
 
 Route117_EventScript_TryDylanGiftAfterBattle::
-# 249 "data/maps/Route117/scripts.pory"
+# 251 "data/maps/Route117/scripts.pory"
 	lock
-# 250 "data/maps/Route117/scripts.pory"
+# 252 "data/maps/Route117/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, Route117_EventScript_TryDylanGiftAfterBattle_1
-# 254 "data/maps/Route117/scripts.pory"
-	msgbox Route117_EventScript_TryDylanGiftAfterBattle_Text_1, MSGBOX_NPC
-# 255 "data/maps/Route117/scripts.pory"
-	waitmessage
 # 256 "data/maps/Route117/scripts.pory"
-	giveitem ITEM_CARBOS
+	msgbox Route117_EventScript_TryDylanGiftAfterBattle_Text_1, MSGBOX_NPC
 # 257 "data/maps/Route117/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	waitmessage
 # 258 "data/maps/Route117/scripts.pory"
-	waitfanfare
+	giveitem ITEM_CARBOS
 # 259 "data/maps/Route117/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+# 260 "data/maps/Route117/scripts.pory"
+	waitfanfare
+# 261 "data/maps/Route117/scripts.pory"
 	release
 	end
 
 Route117_EventScript_TryDylanGiftAfterBattle_1:
-# 251 "data/maps/Route117/scripts.pory"
+# 253 "data/maps/Route117/scripts.pory"
 	msgbox Route117_EventScript_TryDylanGiftAfterBattle_Text_0, MSGBOX_NPC
 	return
 
 
 Route117_EventScript_GrassyGlideBoy::
-# 265 "data/maps/Route117/scripts.pory"
-	lock
-# 266 "data/maps/Route117/scripts.pory"
-	faceplayer
 # 267 "data/maps/Route117/scripts.pory"
-	checkitem ITEM_TM_GRASSY_GLIDE
+	lock
 # 268 "data/maps/Route117/scripts.pory"
+	faceplayer
+# 269 "data/maps/Route117/scripts.pory"
+	checkitem ITEM_TM_GRASSY_GLIDE
+# 270 "data/maps/Route117/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq Route117_EventScript_GrassyGlideBoy_2
-# 275 "data/maps/Route117/scripts.pory"
+# 277 "data/maps/Route117/scripts.pory"
 	goto Route117_EventScript_LittleBoy
 Route117_EventScript_GrassyGlideBoy_1:
-# 277 "data/maps/Route117/scripts.pory"
+# 279 "data/maps/Route117/scripts.pory"
 	releaseall
 	end
 
 Route117_EventScript_GrassyGlideBoy_2:
-# 269 "data/maps/Route117/scripts.pory"
-	msgbox Route117_EventScript_GrassyGlideBoy_Text_0, MSGBOX_DEFAULT
-# 270 "data/maps/Route117/scripts.pory"
-	closemessage
 # 271 "data/maps/Route117/scripts.pory"
-	giveitem ITEM_TM_GRASSY_GLIDE
+	msgbox Route117_EventScript_GrassyGlideBoy_Text_0, MSGBOX_DEFAULT
 # 272 "data/maps/Route117/scripts.pory"
+	closemessage
+# 273 "data/maps/Route117/scripts.pory"
+	giveitem ITEM_TM_GRASSY_GLIDE
+# 274 "data/maps/Route117/scripts.pory"
 	waitfanfare
 	goto Route117_EventScript_GrassyGlideBoy_1
 
 
 Route117_EventScript_TryDylanGiftAfterBattle_Text_0:
-# 251 "data/maps/Route117/scripts.pory"
+# 253 "data/maps/Route117/scripts.pory"
 	.string "If you beat Wattson, your Pokémon must\n"
 	.string "be in peak form.\p"
 	.string "Make sure you get enough exercise for\n"
 	.string "yourself, too!$"
 
 Route117_EventScript_TryDylanGiftAfterBattle_Text_1:
-# 254 "data/maps/Route117/scripts.pory"
+# 256 "data/maps/Route117/scripts.pory"
 	.string "It's important to train your speed!\p"
 	.string "Training Pokémon's speed is easier, you\n"
 	.string "can just give them this.$"
 
 Route117_EventScript_GrassyGlideBoy_Text_0:
-# 269 "data/maps/Route117/scripts.pory"
+# 271 "data/maps/Route117/scripts.pory"
 	.string "I feel like I can run so fast here, so\n"
 	.string "easily!\p"
 	.string "I bet your Pokémon can, too.$"
