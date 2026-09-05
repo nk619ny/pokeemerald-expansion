@@ -5875,7 +5875,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .teachableLearnset = sSnomTeachableLearnset,
         .eliteLearnset = sSnomEliteLearnset,
         .eggMoveLearnset = sSnomEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_FROSMOTH, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_TIME, TIME_NIGHT})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_FROSMOTH, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_FROSMOTH] =

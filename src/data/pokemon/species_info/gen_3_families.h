@@ -10604,7 +10604,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sChinglingTeachableLearnset,
         .eliteLearnset = sChinglingEliteLearnset,
         .eggMoveLearnset = sChinglingEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_CHIMECHO, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_TIME, TIME_NIGHT})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_CHIMECHO, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 

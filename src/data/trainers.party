@@ -11367,7 +11367,7 @@ IVs: 0 Atk
 - Eerie Impulse  
 
 
-=== TRAINER_TED === /* Trick House */ /* TO BE ADDED */
+=== TRAINER_TED === /* Trick House 2 */ /* TO BE ADDED */
 Name: TED
 Class: School Kid
 Pic: School Kid M ORAS 80
@@ -13897,22 +13897,40 @@ EVs: 252 HP / 252 Spe
 - Attract  
 
 
-=== TRAINER_ALLEN === /* Route 102 */ /* TO BE ADDED */
-Name: ALLEN
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
+=== TRAINER_ALLEN === /* Route 102 */ 
+Name: ALLIE
+Class: School Kid
+Pic: School Kid F ORAS 80
+Gender: Female
+Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Taillow
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Diglett-Alola  
+Ability: Tangling Hair  
+Level: 10
+- Astonish  
+- Sand Tomb  
+- Stealth Rock  
+- Confide  
+
+Cetoddle  
+Ability: Thick Fat  
+Level: 10
+IVs: 0 Atk  
+- Chilling Water  
+- Powder Snow  
+- Yawn  
+
+Flittle  
+Ability: Frisk  
+Level: 10
+IVs: 0 Atk  
+- Disarming Voice  
+- Confusion  
+- Baby-Doll Eyes  
+- Helping Hand  
 
 === TRAINER_TIMMY === /* Route 110 */
 Name: TIMMY
@@ -18563,6 +18581,7 @@ Tandemaus
 Ability: Run Away  
 Level: 12
 Tera Type: Normal  
+IVs: 10 Atk / 20 SpA
 Modest Nature
 - Twin Beam  
 - Encore  
@@ -27243,7 +27262,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Magikarp  
 Ability: Rattled  
-Level: 12
+Level: 13
 - Tackle  
 - Flail  
 - Bounce  
@@ -27251,7 +27270,7 @@ Level: 12
 
 Feebas  
 Ability: Oblivious  
-Level: 12
+Level: 13
 - Icy Wind  
 - Scale Shot  
 - Dive  
@@ -27259,7 +27278,7 @@ Level: 12
 
 Wishiwashi  
 Ability: Schooling  
-Level: 12
+Level: 13
 IVs: 0 Atk  
 - Tearful Look  
 - Whirlpool  

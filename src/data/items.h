@@ -16600,9 +16600,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM115"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Does double damage if\n"
-            "the foe has a status\n"
-            "problem."),
+            "Does double damage\n"
+            "if the foe has a\n"
+            "status problem."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

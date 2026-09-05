@@ -167,7 +167,7 @@ Route110_TrickHouseEntrance_EventScript_CheckReadyForPuzzle7::
 # 84 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 Route110_TrickHouseEntrance_EventScript_CheckReadyForPuzzle8::
 # 85 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
-	call_if_unset FLAG_SYS_GAME_CLEAR, Route110_TrickHouseEntrance_EventScript_NotReadyForPuzzle
+	call_if_unset FLAG_BADGE08_GET, Route110_TrickHouseEntrance_EventScript_NotReadyForPuzzle
 # 86 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	return
 # 87 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
