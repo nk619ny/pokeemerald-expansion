@@ -4091,6 +4091,14 @@ static enum MoveEndResult MoveEndThirdMoveBlock(struct BattleCalcValues *cv)
             result = MOVEEND_RESULT_RUN_SCRIPT;
         }
         break;
+    case EFFECT_GEAR_UP:
+    // Custom: remove Electric Terrain after applying stat boosts
+        if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
+        {
+            BattleScriptCall(BattleScript_RemoveTerrain);
+            result = MOVEEND_RESULT_RUN_SCRIPT;
+        }
+        break;
     case EFFECT_STEEL_ROLLER:
         if (gFieldStatuses & STATUS_FIELD_TERRAIN_ANY && IsAnyTargetTurnDamaged(cv->battlerAtk, INCLUDING_SUBSTITUTES))
         {
