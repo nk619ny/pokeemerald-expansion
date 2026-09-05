@@ -503,6 +503,7 @@
       "flag": "FLAG_HIDE_ROUTE_110_BIRCH"
     },
     {
+      "local_id": "LOCALID_110_THEODORE",
       "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
       "x": 21,
       "y": 96,
@@ -667,6 +668,60 @@
       "var": "VAR_REGISTER_BIRCH_STATE",
       "var_value": "1",
       "script": "Route110_EventScript_BirchScene4"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 98,
+      "elevation": 3,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "Route110_EventScript_RemoveDuplicateTheodore"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 98,
+      "elevation": 3,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "Route110_EventScript_RemoveDuplicateTheodore"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 98,
+      "elevation": 3,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "Route110_EventScript_RemoveDuplicateTheodore"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 98,
+      "elevation": 3,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "Route110_EventScript_RemoveDuplicateTheodore"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 98,
+      "elevation": 3,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "Route110_EventScript_RemoveDuplicateTheodore"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 98,
+      "elevation": 3,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "Route110_EventScript_RemoveDuplicateTheodore"
     }
   ],
   "bg_events": [

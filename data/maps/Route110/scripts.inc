@@ -2693,6 +2693,14 @@ Route110_EventScript_CyclingRoadComeBackForReward::
 	end
 
 
+Route110_EventScript_RemoveDuplicateTheodore::
+# 1455 "data/maps/Route110/scripts.pory"
+	removeobject LOCALID_SLATEPORT_THEODORE
+# 1456 "data/maps/Route110/scripts.pory"
+	releaseall
+	return
+
+
 Route110_EventScript_TryDaleGiftAfterBattle_Text_0:
 # 1021 "data/maps/Route110/scripts.pory"
 	.string "A little while ago, I fished up some sort\n"

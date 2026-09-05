@@ -1450,3 +1450,8 @@ script Route110_EventScript_CyclingRoadComeBackForReward{
 	end
 }
 
+
+script Route110_EventScript_RemoveDuplicateTheodore {
+	removeobject(LOCALID_SLATEPORT_THEODORE)
+	releaseall
+}

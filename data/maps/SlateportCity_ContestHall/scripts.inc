@@ -197,124 +197,137 @@ SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu::
 # 117 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	closemessage
 # 118 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	giveitem ITEM_CONTEST_PASS
+	checkitem ITEM_CONTEST_PASS
 # 119 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu_2
+SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu_1:
+# 124 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
+SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu_2:
+# 120 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	giveitem ITEM_CONTEST_PASS
+# 121 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	waitfanfare
+# 122 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	closemessage
+	goto SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu_1
+
 
 SlateportCity_ContestHall_EventScript_Fan1::
-# 124 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	lock
-# 125 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	faceplayer
-# 126 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	msgbox SlateportCity_ContestHall_EventScript_Fan1_Text_0, MSGBOX_DEFAULT
-# 127 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	closemessage
-# 128 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 129 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	waitmovement 0
+	lock
 # 130 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	faceplayer
+# 131 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	msgbox SlateportCity_ContestHall_EventScript_Fan1_Text_0, MSGBOX_DEFAULT
+# 132 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	closemessage
+# 133 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 134 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	waitmovement 0
+# 135 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 
 SlateportCity_ContestHall_EventScript_Fan2::
-# 135 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	lock
-# 136 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	faceplayer
-# 137 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	msgbox SlateportCity_ContestHall_EventScript_Fan2_Text_0, MSGBOX_DEFAULT
-# 138 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	closemessage
-# 139 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 140 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	waitmovement 0
+	lock
 # 141 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	faceplayer
+# 142 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	msgbox SlateportCity_ContestHall_EventScript_Fan2_Text_0, MSGBOX_DEFAULT
+# 143 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	closemessage
+# 144 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 145 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	waitmovement 0
+# 146 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 
 SlateportCity_ContestHall_EventScript_Fan3::
-# 146 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	lock
-# 147 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	faceplayer
-# 148 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	msgbox SlateportCity_ContestHall_EventScript_Fan3_Text_0, MSGBOX_DEFAULT
-# 149 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	closemessage
-# 150 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 # 151 "data/maps/SlateportCity_ContestHall/scripts.pory"
-	waitmovement 0
+	lock
 # 152 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	faceplayer
+# 153 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	msgbox SlateportCity_ContestHall_EventScript_Fan3_Text_0, MSGBOX_DEFAULT
+# 154 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	closemessage
+# 155 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 156 "data/maps/SlateportCity_ContestHall/scripts.pory"
+	waitmovement 0
+# 157 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 
 SlateportCity_ContestHall_EventScript_Encore::
-# 157 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 162 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	lock
-# 158 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 163 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	faceplayer
-# 159 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 164 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	checkitem ITEM_TM_ENCORE
-# 160 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 165 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SlateportCity_ContestHall_EventScript_Encore_2
 SlateportCity_ContestHall_EventScript_Encore_1:
-# 166 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 171 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	msgbox SlateportCity_ContestHall_EventScript_Encore_Text_1, MSGBOX_DEFAULT
-# 167 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 172 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	closemessage
-# 168 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 173 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 SlateportCity_ContestHall_EventScript_Encore_2:
-# 161 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 166 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	msgbox SlateportCity_ContestHall_EventScript_Encore_Text_0, MSGBOX_DEFAULT
-# 162 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 167 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	closemessage
-# 163 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 168 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	giveitem ITEM_TM_ENCORE
-# 164 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 169 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	waitfanfare
 	goto SlateportCity_ContestHall_EventScript_Encore_1
 
 
 SlateportCity_ContestHall_EventScript_Charm::
-# 174 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 179 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	lock
-# 175 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 180 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	faceplayer
-# 176 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 181 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	checkitem ITEM_TM_CHARM
-# 177 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 182 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SlateportCity_ContestHall_EventScript_Charm_2
 SlateportCity_ContestHall_EventScript_Charm_1:
-# 183 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 188 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	msgbox SlateportCity_ContestHall_EventScript_Charm_Text_1, MSGBOX_DEFAULT
-# 184 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 189 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	closemessage
-# 185 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 190 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	releaseall
 	end
 
 SlateportCity_ContestHall_EventScript_Charm_2:
-# 178 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 183 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	msgbox SlateportCity_ContestHall_EventScript_Charm_Text_0, MSGBOX_DEFAULT
-# 179 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 184 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	closemessage
-# 180 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 185 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	giveitem ITEM_TM_CHARM
-# 181 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 186 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	waitfanfare
 	goto SlateportCity_ContestHall_EventScript_Charm_1
 
@@ -369,20 +382,20 @@ SlateportCity_ContestHall_EventScript_Lisia_ExplainCosplayPikachu_Text_0:
 	.string "when in costume!$"
 
 SlateportCity_ContestHall_EventScript_Fan1_Text_0:
-# 126 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 131 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "I'm Lisia's biggest fan!$"
 
 SlateportCity_ContestHall_EventScript_Fan2_Text_0:
-# 137 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 142 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "Lisia and her Altaria are so cool!$"
 
 SlateportCity_ContestHall_EventScript_Fan3_Text_0:
-# 148 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 153 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "Don't tell anyone, but I don't even know\n"
 	.string "the rules to Pokémon contests.$"
 
 SlateportCity_ContestHall_EventScript_Encore_Text_0:
-# 161 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 166 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "As a judge, sometimes I am so blown\n"
 	.string "away, I want an immediate repeat\l"
 	.string "performance.\p"
@@ -390,18 +403,18 @@ SlateportCity_ContestHall_EventScript_Encore_Text_0:
 	.string "see the same move again!$"
 
 SlateportCity_ContestHall_EventScript_Encore_Text_1:
-# 166 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 171 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "The Encore is often better than the\n"
 	.string "first performance!$"
 
 SlateportCity_ContestHall_EventScript_Charm_Text_0:
-# 178 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 183 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "As a judge, I see all kinds of charming\n"
 	.string "Pokémon.\p"
 	.string "With this TM, your Pokémon can become\n"
 	.string "charmers too!$"
 
 SlateportCity_ContestHall_EventScript_Charm_Text_1:
-# 183 "data/maps/SlateportCity_ContestHall/scripts.pory"
+# 188 "data/maps/SlateportCity_ContestHall/scripts.pory"
 	.string "You can get far in life with a little\n"
 	.string "charm!$"
