@@ -1322,6 +1322,18 @@ static inline bool32 TryActivateWeaknessBerry(enum BattlerId battlerDef)
     return FALSE;
 }
 
+static inline bool32 TryActivateAnticipationReduceDmg(enum BattlerId battlerDef)
+{
+    if (gSpecialStatuses[battlerDef].anticipationReduced)
+    {
+        gSpecialStatuses[battlerDef].anticipationReduced = FALSE; // No held item to consume, so clear explicitly to avoid re-triggering.
+        gBattleScripting.battler = gBattlerAbility = battlerDef;
+        BattleScriptCall(BattleScript_AnticipationReduceDmg);
+        return TRUE;
+    }
+    return FALSE;
+}
+
 static bool32 ProcessPreAttackAnimationFuncs(void)
 {
     u32 moveType = GetBattleMoveType(gCurrentMove);
@@ -1346,6 +1358,8 @@ static bool32 ProcessPreAttackAnimationFuncs(void)
                 return TRUE;
             if (TryActivateWeaknessBerry(battlerDef))
                 return TRUE;
+            if (TryActivateAnticipationReduceDmg(battlerDef))
+                return TRUE;
         }
     }
     else
@@ -1355,6 +1369,8 @@ static bool32 ProcessPreAttackAnimationFuncs(void)
         if (TryTeraShellDistortTypeMatchups(gBattlerTarget))
             return TRUE;
         if (TryActivateWeaknessBerry(gBattlerTarget))
+            return TRUE;
+        if (TryActivateAnticipationReduceDmg(gBattlerTarget))
             return TRUE;
     }
 
@@ -5483,6 +5499,8 @@ static void Cmd_switchhandleorder(void)
 static void UpdateSentMonFlags(enum BattlerId battler)
 {
     UpdateSentPokesToOpponentValue(battler);
+    // Replacing a still-alive battler (switch action, U-turn/Volt Switch, Whirlwind/Roar, etc.), not battle start or fainted-ally replacement.
+    gBattleStruct->battlerState[battler].midTurnSwitchIn = !(gHitMarker & HITMARKER_FAINTED(battler));
     gHitMarker &= ~HITMARKER_FAINTED(battler);
     gSpecialStatuses[battler].faintedHasReplacement = FALSE;
     gBattleStruct->battlerState[battler].switchIn = TRUE;

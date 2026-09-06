@@ -359,3 +359,98 @@ TO_DO_BATTLE_TEST("Anticipation considers Scrappy and Normalize into their effec
 TO_DO_BATTLE_TEST("Anticipation considers Gravity into their effectiveness (Gen4)");
 TO_DO_BATTLE_TEST("Anticipation doesn't trigger from Counter, Metal Burst or Mirror Coat (Gen4)");
 TO_DO_BATTLE_TEST("Anticipation treats Hidden Power as Normal Type (Gen4-5)");
+
+SINGLE_BATTLE_TEST("Anticipation only halves a super-effective hit during the turn it switches in mid-turn", s16 damage)
+{
+    bool32 midTurnSwitch;
+    PARAMETRIZE { midTurnSwitch = FALSE; }
+    PARAMETRIZE { midTurnSwitch = TRUE; }
+
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_KARATE_CHOP) == TYPE_FIGHTING);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        if (midTurnSwitch) {
+            PLAYER(SPECIES_WOBBUFFET);
+            PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        } else {
+            PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+            PLAYER(SPECIES_WOBBUFFET);
+        }
+        OPPONENT(SPECIES_MACHOP) { Moves(MOVE_KARATE_CHOP, MOVE_CELEBRATE); }
+    } WHEN {
+        if (midTurnSwitch)
+            TURN { SWITCH(player, 1); MOVE(opponent, MOVE_KARATE_CHOP); }
+        else
+            TURN { MOVE(opponent, MOVE_KARATE_CHOP); }
+    } SCENE {
+        if (midTurnSwitch) {
+            MESSAGE("Eevee is anticipating attacks!");
+            MESSAGE("Eevee's anticipation reduced the damage!");
+        } else {
+            MESSAGE("Eevee shuddered!");
+        }
+        HP_BAR(player, captureDamage: &results[i].damage);
+    } FINALLY {
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.5), results[1].damage);
+    }
+}
+
+SINGLE_BATTLE_TEST("Anticipation halves damage when switching in via U-turn mid-turn")
+{
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_KARATE_CHOP) == TYPE_FIGHTING);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_U_TURN, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        OPPONENT(SPECIES_MACHOP) { Moves(MOVE_KARATE_CHOP, MOVE_CELEBRATE); Speed(1); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); MOVE(opponent, MOVE_KARATE_CHOP); }
+    } SCENE {
+        MESSAGE("Eevee is anticipating attacks!");
+        ABILITY_POPUP(player, ABILITY_ANTICIPATION);
+        MESSAGE("Eevee's anticipation reduced the damage!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Anticipation does not arm the damage reduction when replacing a fainted ally at the end of the turn")
+{
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_KARATE_CHOP) == TYPE_FIGHTING);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); Moves(MOVE_CELEBRATE); }
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        OPPONENT(SPECIES_MACHOP) { Moves(MOVE_TACKLE, MOVE_KARATE_CHOP, MOVE_CELEBRATE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_TACKLE); SEND_OUT(player, 1); }
+        TURN { MOVE(opponent, MOVE_KARATE_CHOP); }
+    } SCENE {
+        MESSAGE("Eevee shuddered!");
+        NOT MESSAGE("Eevee is anticipating attacks!");
+        NOT MESSAGE("Eevee's anticipation reduced the damage!");
+    }
+}
+
+DOUBLE_BATTLE_TEST("Anticipation can halve two separate super-effective hits in the same switch-in turn", s16 damage)
+{
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_KARATE_CHOP) == TYPE_FIGHTING);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        OPPONENT(SPECIES_MACHOP) { Moves(MOVE_KARATE_CHOP, MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_MACHOKE) { Moves(MOVE_KARATE_CHOP, MOVE_CELEBRATE); }
+    } WHEN {
+        TURN { SWITCH(player, 1); MOVE(opponentLeft, MOVE_KARATE_CHOP, target: playerLeft); MOVE(opponentRight, MOVE_KARATE_CHOP, target: playerLeft); }
+    } SCENE {
+        MESSAGE("Eevee is anticipating attacks!");
+        MESSAGE("Eevee's anticipation reduced the damage!");
+        HP_BAR(playerLeft, captureDamage: &results[0].damage);
+        MESSAGE("Eevee's anticipation reduced the damage!");
+        HP_BAR(playerLeft, captureDamage: &results[1].damage);
+    }
+}
+

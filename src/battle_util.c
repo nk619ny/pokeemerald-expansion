@@ -3090,6 +3090,16 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         case ABILITY_ANTICIPATION:
             if (shouldAbilityTrigger)
             {
+                // Mid-turn switch-ins always brace, regardless of what the opponent's moveset predicts.
+                if (gBattleStruct->battlerState[battler].midTurnSwitchIn)
+                {
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_ANTICIPATION_ATTACKS;
+                    gBattleStruct->battlerState[battler].bracedForImpact = TRUE;
+                    BattleScriptCall(BattleScript_SwitchInAbilityMsg);
+                    effect++;
+                    break;
+                }
+
                 struct DamageContext ctx = {0};
                 uq4_12_t modifier = UQ_4_12(1.0);
                 for (i = 0; i < MAX_BATTLERS_COUNT; i++)
@@ -7673,6 +7683,17 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(struct DamageContext *ctx)
         {
             modifier = UQ_4_12(0.75);
             recordAbility = TRUE;
+        }
+        break;
+    case ABILITY_ANTICIPATION:
+        if (!ctx->isAnticipation
+            && gBattleStruct->battlerState[ctx->battlerDef].bracedForImpact
+            && ctx->typeEffectivenessModifier >= UQ_4_12(2.0))
+        {
+            modifier = UQ_4_12(0.5);
+            recordAbility = TRUE;
+            if (ctx->updateFlags)
+                gSpecialStatuses[ctx->battlerDef].anticipationReduced = TRUE;
         }
         break;
     case ABILITY_FLUFFY:

@@ -124,7 +124,8 @@ struct SpecialStatus
     u8 dancerUsedMove:1;
     u8 criticalHit:1;
     u8 shellBellEmergencyExit:1;
-    u8 padding:2;
+    u8 anticipationReduced:1; // Anticipation halved a super-effective hit
+    u8 padding:1;
     // End of byte
     u8 gemParam:7;
     u8 gemBoost:1;
@@ -531,7 +532,9 @@ struct BattlerState
     u16 notOnField:1;
     u16 redCardSwitched:1;
     u16 isFirstTurn:2; // Starts at 2 on switch in and counts down during end turn
-    u16 padding:11;
+    u16 midTurnSwitchIn:1; // Switched in replacing a still-alive battler (not battle start/fainted-ally replacement)
+    u16 bracedForImpact:1; // Anticipation is primed to halve a super-effective hit this turn
+    u16 padding:9;
     // End of Word
 };
 

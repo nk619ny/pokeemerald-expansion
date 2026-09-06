@@ -58,6 +58,8 @@ static bool32 HandleEndTurnVarious(enum BattlerId battler)
 
     for (enum BattlerId i = 0; i < gBattlersCount; i++)
     {
+        gBattleStruct->battlerState[i].bracedForImpact = FALSE; // Anticipation's damage reduction only lasts the switch-in turn.
+
         if (gBattleMons[i].volatiles.throatChopTimer > 0)
         {
             gBattleMons[i].volatiles.throatChopTimer--;

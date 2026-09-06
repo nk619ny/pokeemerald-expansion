@@ -5361,6 +5361,12 @@ BattleScript_BerryReduceDmg::
 	removeitem BS_SCRIPTING
 	return
 
+BattleScript_AnticipationReduceDmg::
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_ANTICIPATIONREDUCESDMG
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_BerryCureConfusionRet::
 	playanimation BS_SCRIPTING, B_ANIM_HELD_ITEM_BERRY
 	printstring STRINGID_PKMNSITEMSNAPPEDOUT
