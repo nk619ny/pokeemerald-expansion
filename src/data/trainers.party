@@ -10805,6 +10805,7 @@ Ability: Speed Boost
 Ball: Fast
 Level: 23
 Tera Type: Grass
+IVs: 0 Spe
 - Flame Burst  
 - Aura Sphere  
 - Hidden Power
