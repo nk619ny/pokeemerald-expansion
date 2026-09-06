@@ -258,11 +258,21 @@ bool32 IsAceMon(enum BattlerId battler, u32 monPartyId)
 static bool32 AreStatsRaised(enum BattlerId battler)
 {
     u8 buffedStatsValue = 0;
+    s32 atkStage = gBattleMons[battler].statStages[STAT_ATK];
+
+    // Custom: Slow Start's ATK halving is much less costly once it's (almost) elapsed, so treat it as a +2 ATK stage
+    if (gAiLogicData->abilities[battler] == ABILITY_SLOW_START)
+    {
+        u32 slowStartTimer = gBattleMons[battler].volatiles.slowStartTimer;
+        if (slowStartTimer <= 1)
+            atkStage += 2;
+    }
 
     for (u32 statIndex = 0; statIndex < NUM_BATTLE_STATS; statIndex++)
     {
-        if (gBattleMons[battler].statStages[statIndex] > DEFAULT_STAT_STAGE)
-            buffedStatsValue += gBattleMons[battler].statStages[statIndex] - DEFAULT_STAT_STAGE;
+        s32 stage = (statIndex == STAT_ATK) ? atkStage : gBattleMons[battler].statStages[statIndex];
+        if (stage > DEFAULT_STAT_STAGE)
+            buffedStatsValue += stage - DEFAULT_STAT_STAGE;
     }
 
     return (buffedStatsValue > STAY_IN_STATS_RAISED);

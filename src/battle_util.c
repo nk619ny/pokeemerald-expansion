@@ -9437,12 +9437,16 @@ void TryRestoreHeldItems(void)
     {
         u16 originalItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
 
-        // Plantable berries are always returned to their original holder, regardless of ability
-        if (originalItem != ITEM_NONE
+        // Plantable berries are always returned to their original holder, regardless of ability, unless disabled by flag
+        if (!FlagGet(FLAG_STOP_AUTO_REEQUIP_BERRIES)
+            && originalItem != ITEM_NONE
             && GetItemPocket(originalItem) == POCKET_BERRIES
             && !BerryIsUnplantable(originalItem)
             && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
         {
+            // Charge the player one berry per Pokémon reequipped, floored at zero in the bag
+            if (CountTotalItemQuantityInBag(originalItem) > 0)
+                RemoveBagItem(originalItem, 1);
             SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
             continue;
         }

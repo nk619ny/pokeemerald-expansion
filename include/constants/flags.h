@@ -263,7 +263,7 @@
 #define FLAG_RECEIVED_TM_ROAR                0xE7
 #define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8
 
-#define FLAG_MENU_PC_CONFIG                    0xE9 // Unused Flag
+#define FLAG_STOP_AUTO_REEQUIP_BERRIES       0xE9 // Formerly not used Flag
 
 #define FLAG_RECEIVED_TM_REST                0xEA
 #define FLAG_RECEIVED_TM_ATTRACT             0xEB

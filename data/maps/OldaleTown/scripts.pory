@@ -408,3 +408,7 @@ script OldaleTown_EventScript_MartWorker {
 	releaseall
 	end
 }
+
+text OldaleTown_PokemonCenter_1F_Text_Upstairs {
+	format("The Pokémon Training Club on the second floor was built recently.\pIt's really handy, and you unlock more options as you earn Gym Badges.")
+}

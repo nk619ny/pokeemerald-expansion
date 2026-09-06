@@ -816,3 +816,10 @@ OldaleTown_EventScript_MartWorker_Text_0:
 	.string "This is a Pokemart - if you need\n"
 	.string "supplies for your journeys, you can buy\l"
 	.string "them here!$"
+
+OldaleTown_PokemonCenter_1F_Text_Upstairs::
+# 412 "data/maps/OldaleTown/scripts.pory"
+	.string "The Pokémon Training Club on the\n"
+	.string "second floor was built recently.\p"
+	.string "It's really handy, and you unlock more\n"
+	.string "options as you earn Gym Badges.$"
