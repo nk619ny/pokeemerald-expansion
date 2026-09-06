@@ -274,6 +274,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
 	setflag FLAG_HIDE_MAUVILLE_CITY_WALLY // added so Wally doesn't appear at start
 	setflag FLAG_HIDE_GIMMIGHOUL // added
+	setflag FLAG_HIDE_ROUTE_107_DENISE
 	call Common_EventScript_SetStartingFlagStates
 	call EventScript_ResetAllBerries
 	end

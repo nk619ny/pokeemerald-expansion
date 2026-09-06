@@ -11007,7 +11007,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Slaking  
 Ability: Slow Start  
 Ball: Premier
-Level: 14  
+Level: 13
 Calm Nature  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Slack Off  
@@ -11018,7 +11018,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Eevee @ Leppa Berry
 Ball: Premier
 Level: 15
-EVs: 252 HP
+EVs: 128 HP
+IVs: 20 Atk
 - Trump Card
 
 
@@ -11037,7 +11038,7 @@ Ability: Contrary
 Ball: Premier
 Level: 11  
 Quirky Nature 
-EVs: 252 HP
+EVs: 128 HP
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Superpower  
 - Psycho Boost  
@@ -11059,7 +11060,7 @@ Aipom
 Ability: Run Away
 Ball: Premier
 Level: 13 
-Jolly Nature
+Docile Nature
 IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Double Hit  
 - U-turn  
@@ -11071,9 +11072,9 @@ Clefairy @ Eviolite
 Ability: Friend Guard  
 Ball: Premier
 Level: 14  
-EVs: 64 HP
+EVs: 0 HP
 Calm Nature  
-IVs: 0 Atk  
+IVs: 15 HP / 0 Atk  
 - Heal Pulse  
 - Follow Me  
 - Disarming Voice  
@@ -18592,7 +18593,7 @@ Tandemaus
 Ability: Run Away  
 Level: 12
 Tera Type: Normal  
-IVs: 10 Atk / 20 SpA
+IVs: 0 Atk / 20 SpA
 Modest Nature
 - Twin Beam  
 - Encore  
@@ -23902,7 +23903,7 @@ EVs: 252 HP
 - Encore  
 
 Buneary  
-Ability: Klutz  
+Ability: Limber  
 Level: 37
 EVs: 252 HP / 252 Spe  
 Jolly Nature  
@@ -24114,8 +24115,9 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Silcoon  
 Ability: Shed Skin  
-Level: 13
+Level: 14
 Tera Type: Bug  
+EVs: 252 HP / 252 Atk
 - Harden  
 - String Shot  
 - Tackle  
@@ -24123,8 +24125,9 @@ Tera Type: Bug
 
 Cascoon  
 Ability: Shed Skin  
-Level: 13
+Level: 14
 Tera Type: Bug  
+EVs: 252 HP / 252 Atk
 - Harden  
 - String Shot  
 - Tackle  
@@ -24133,6 +24136,7 @@ Tera Type: Bug
 Metapod  
 Ability: Shed Skin  
 Level: 13
+EVs: 164 HP / 164 Atk / 164 SpA
 Tera Type: Bug  
 - Iron Defense  
 - Bug Bite  
@@ -24142,6 +24146,7 @@ Kakuna
 Ability: Shed Skin  
 Level: 13
 Tera Type: Bug  
+EVs: 164 HP / 164 Atk / 164 SpA
 - Poison Sting  
 - Bug Bite  
 - Electroweb  
@@ -24359,8 +24364,9 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Kricketot  
 Ability: Shed Skin  
-Level: 13
+Level: 14
 Tera Type: Bug  
+EVs: 164 HP  
 IVs: 0 Atk  
 - Echoed Voice  
 - Struggle Bug  
@@ -24368,27 +24374,29 @@ IVs: 0 Atk
 - Bide  
 
 Venipede  
-Ability: Poison Point  
-Level: 13
+Ability: Poison Point    
+EVs: 164 HP  
+Level: 14
 - Pin Missile  
 - Rollout  
 - Rock Smash  
 - Toxic Spikes  
 
 Grubbin  
-Ability: Swarm  
-Level: 13
+Ability: Swarm    
+EVs: 164 HP  
+Level: 14
 Tera Type: Water
-IVs: 0 Atk/*IVs: 31 HP / 2 Atk / 30 Def / 30 SpA / 31 SpD / 31 Spe / HP Water IVs for Min Atk */
+IVs: 0 Atk
 - Shock Wave  
 - Struggle Bug  
 - Hidden Power
 
 Scatterbug  
 Ability: Shield Dust  
-Level: 13
+Level: 14
 Tera Type: Bug  
-EVs: 252 HP  
+EVs: 164 HP  
 - Stun Spore  
 - Pounce  
 - Struggle Bug  
@@ -24396,9 +24404,9 @@ EVs: 252 HP
 
 Blipbug  
 Ability: Swarm  
-Level: 13  
+Level: 14
 Tera Type: Bug  
-EVs: 252 HP  
+EVs: 164 HP  
 IVs: 0 Atk  
 - Infestation  
 - Sticky Web  

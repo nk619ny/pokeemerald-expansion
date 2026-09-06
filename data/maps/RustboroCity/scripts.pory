@@ -886,6 +886,7 @@ RustboroCity_EventScript_MayBrineyHint::
 	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
+	clearflag FLAG_HIDE_ROUTE_107_DENISE
 
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate
@@ -974,6 +975,7 @@ RustboroCity_EventScript_BrendanBrineyHint::
 	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
+	clearflag FLAG_HIDE_ROUTE_107_DENISE
 
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate

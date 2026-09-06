@@ -227,7 +227,7 @@ script SlateportFarm_EventScript_AquaVictory {
     clearflag(FLAG_SLATEPORT_FARM_COMPLETED)
     setflag(FLAG_SLATEPORT_BAY_FLOODED)
     //fadescreenswapbuffers(FADE_TO_WHITE) //newly added; may not work
-    //waitstate
+    waitstate
     //delay(60)
     special(RemoveCameraObject)
     //fadescreenswapbuffers(FADE_FROM_WHITE) //newly added; may not work

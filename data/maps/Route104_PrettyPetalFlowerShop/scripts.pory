@@ -108,3 +108,41 @@ script Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirlNew {
 	releaseall
 	end
 }
+
+script Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip {
+	lock
+	if(!flag(FLAG_STOP_AUTO_REEQUIP_BERRIES)){
+		msgbox(format("It used to be tedious to re-equip berries before every battle.\pBut now, Pokémon can you into your bag and grab another berry after they eat one.\pOr, would you want your Pokémon to stop re-equipping berries automatically?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT) == YES) {
+			setflag(FLAG_STOP_AUTO_REEQUIP_BERRIES)
+			msgbox(format("Okay! I'll help you store your berries so your Pokémon can't get another one themselves."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+		} 
+		else {
+			clearflag(FLAG_STOP_AUTO_REEQUIP_BERRIES)
+			msgbox(format("Okay! Your Pokémon will keep replacing berries they consume, without you having to do anything."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+		}
+	}
+	else{
+		msgbox(format("Are you tired of having to give your Pokémon more berries after every battle?\pWould you like them to replace any consumed berries automatically?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT) == YES) {
+			clearflag(FLAG_STOP_AUTO_REEQUIP_BERRIES)
+			msgbox(format("Okay! I'll help you store your berries so your Pokémon can get another one themselves."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+		} 
+		else {
+			setflag(FLAG_STOP_AUTO_REEQUIP_BERRIES)
+			msgbox(format("Okay! You will still need to replace any berries your Pokémon consume yourself."), MSGBOX_DEFAULT)
+			closemessage
+			releaseall
+			end
+		}
+	}
+}

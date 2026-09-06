@@ -754,7 +754,7 @@
 #define FLAG_CAUGHT_ARTICUNO  0x2BB // previously not used
 
 // Event Flags
-#define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC // now available to be repurposed
+#define FLAG_HIDE_ROUTE_107_DENISE                                  0x2BC // now repurposed
 #define FLAG_HIDE_APPRENTICE                                        0x2BD
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1               0x2C7

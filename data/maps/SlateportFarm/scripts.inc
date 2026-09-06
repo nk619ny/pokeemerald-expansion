@@ -404,6 +404,8 @@ SlateportFarm_EventScript_AquaVictory::
 	clearflag FLAG_SLATEPORT_FARM_COMPLETED
 # 228 "data/maps/SlateportFarm/scripts.pory"
 	setflag FLAG_SLATEPORT_BAY_FLOODED
+# 230 "data/maps/SlateportFarm/scripts.pory"
+	waitstate
 # 232 "data/maps/SlateportFarm/scripts.pory"
 	special RemoveCameraObject
 # 234 "data/maps/SlateportFarm/scripts.pory"

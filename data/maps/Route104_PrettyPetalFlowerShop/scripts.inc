@@ -213,6 +213,65 @@ Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirlNew::
 	end
 
 
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip::
+# 113 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	lock
+# 114 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	goto_if_unset FLAG_STOP_AUTO_REEQUIP_BERRIES, Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_1
+# 132 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	msgbox Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_3, MSGBOX_YESNO
+# 133 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_7
+# 141 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	setflag FLAG_STOP_AUTO_REEQUIP_BERRIES
+# 142 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	msgbox Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_5, MSGBOX_DEFAULT
+# 143 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	closemessage
+# 144 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	releaseall
+	end
+
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_1:
+# 115 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	msgbox Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_0, MSGBOX_YESNO
+# 116 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_4
+# 124 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	clearflag FLAG_STOP_AUTO_REEQUIP_BERRIES
+# 125 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	msgbox Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_2, MSGBOX_DEFAULT
+# 126 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	closemessage
+# 127 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	releaseall
+	end
+
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_4:
+# 117 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	setflag FLAG_STOP_AUTO_REEQUIP_BERRIES
+# 118 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	msgbox Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_1, MSGBOX_DEFAULT
+# 119 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	closemessage
+# 120 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	releaseall
+	end
+
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_7:
+# 134 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	clearflag FLAG_STOP_AUTO_REEQUIP_BERRIES
+# 135 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	msgbox Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_4, MSGBOX_DEFAULT
+# 136 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	closemessage
+# 137 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	releaseall
+	end
+
+
 Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirlNew_Text_0:
 # 107 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
 	.string "Berry yields have increased\n"
@@ -222,3 +281,44 @@ Route104_PrettyPetalFlowerShop_EventScript_WailmerPailGirlNew_Text_0:
 	.string "A researcher named Courtney is\n"
 	.string "responsible for some big breakthroughs\l"
 	.string "in berry cultivation.$"
+
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_0:
+# 115 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	.string "It used to be tedious to re-equip\n"
+	.string "berries before every battle.\p"
+	.string "But now, Pokémon can you into your bag\n"
+	.string "and grab another berry after they eat\l"
+	.string "one.\p"
+	.string "Or, would you want your Pokémon to stop\n"
+	.string "re-equipping berries automatically?$"
+
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_1:
+# 118 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	.string "Okay! I'll help you store your berries so\n"
+	.string "your Pokémon can't get another one\l"
+	.string "themselves.$"
+
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_2:
+# 125 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	.string "Okay! Your Pokémon will keep replacing\n"
+	.string "berries they consume, without you\l"
+	.string "having to do anything.$"
+
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_3:
+# 132 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	.string "Are you tired of having to give your\n"
+	.string "Pokémon more berries after every\l"
+	.string "battle?\p"
+	.string "Would you like them to replace any\n"
+	.string "consumed berries automatically?$"
+
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_4:
+# 135 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	.string "Okay! I'll help you store your berries so\n"
+	.string "your Pokémon can get another one\l"
+	.string "themselves.$"
+
+Route104_PrettyPetalFlowerShop_EventScript_ToggleReequip_Text_5:
+# 142 "data/maps/Route104_PrettyPetalFlowerShop/scripts.pory"
+	.string "Okay! You will still need to replace any\n"
+	.string "berries your Pokémon consume yourself.$"
