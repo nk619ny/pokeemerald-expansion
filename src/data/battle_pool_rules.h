@@ -36,6 +36,7 @@ const struct PoolRules gPoolRulesetsList[] = {
         .zCrystalClause = B_POOL_RULE_Z_CRYSTAL_CLAUSE,
         .tagMaxMembers[POOL_TAG_LEAD] = 2,
         .tagMaxMembers[POOL_TAG_ACE] = 2,
+        .tagRequired[POOL_TAG_MEGA] = TRUE,
     },
     [POOL_RULESET_WEATHER_SINGLES] = {
         .speciesClause = B_POOL_RULE_SPECIES_CLAUSE,

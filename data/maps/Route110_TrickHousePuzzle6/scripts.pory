@@ -64,8 +64,8 @@ Route110_TrickHousePuzzle6_Text_SophiaPostBattle:
 	.string "repeating!$"
 
 Route110_TrickHousePuzzle6_Text_BennyIntro:
-	.string "Maybe I could get my BIRD Pokémon\n"
-	.string "to fly over the wall…$"
+	.string "Maybe I could get my Pokémon\n"
+	.string "to climb over the wall…$"
 
 Route110_TrickHousePuzzle6_Text_BennyDefeat:
 	.string "Gwaaah! I blew it!$"
@@ -87,3 +87,21 @@ Route110_TrickHousePuzzle6_Text_SebastianPostBattle:
 	.string "Or do you have your poker face on?$"
 
 `
+
+text Route110_TrickHousePuzzle6_Text_JonesIntro {
+	format("That man told me there were treasures hidden here.")
+}
+
+text Route110_TrickHousePuzzle6_Text_JonesDefeat {
+	format("I'm beginning to feel I've been misled.")
+}
+
+text Route110_TrickHousePuzzle6_Text_JonesPostBattle {
+	format("I just want to find my way out of here.")
+}
+
+script Route110_TrickHousePuzzle6_EventScript_Jones{
+	trainerbattle_single(TRAINER_JONES, Route110_TrickHousePuzzle6_Text_JonesIntro, Route110_TrickHousePuzzle6_Text_JonesDefeat)
+	msgbox(Route110_TrickHousePuzzle6_Text_JonesPostBattle, MSGBOX_AUTOCLOSE)
+	end
+}

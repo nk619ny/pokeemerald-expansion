@@ -5625,22 +5625,51 @@ EVs: 192 SpA
 - Skill Swap  
 - Pain Split  
 
-=== TRAINER_VALERIE_3 === /* Route */
-Name: VALERIE
-Class: Hex Maniac
-Pic: Hex Maniac ORAS 80
-Gender: Female
-Music: Suspicious
+=== TRAINER_JONES === /* Trick House 6 */
+Name: JONES
+Class: Ruin Maniac
+Pic: Ruin Maniac ORAS 80
+Gender: Male
+Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Spoink
-Level: 35
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Palossand  
+Ability: Sand Spit  
+Level: 62
+IVs: 0 Atk  
+- Shore Up  
+- Shadow Ball  
+- Scorching Sands  
+- Giga Drain  
 
-Sableye
-Level: 35
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Probopass @ Enigma Berry  
+Ability: Sand Force  
+Level: 62
+EVs: 252 HP / 252 SpA  
+IVs: 0 Atk  
+- Power Gem  
+- Flash Cannon  
+- Earth Power  
+- Body Press  
+
+Dracozolt  
+Ability: Sand Rush  
+Level: 62
+- Bolt Beak  
+- Protect  
+- Rock Tomb  
+- Breaking Swipe  
+
+Golem @ Enigma Berry  
+Ability: Sand Veil  
+Level: 62
+EVs: 252 HP / 252 SpD
+Adamant Nature  
+- Explosion  
+- High Horsepower  
+- Stone Edge  
+- Rock Polish  
 
 === TRAINER_VALERIE_4 === /* Route */
 Name: VALERIE
@@ -7996,39 +8025,32 @@ Pic: Black Belt ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Hard Trick Room / Custom Strategies
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Hard Trick Room / Prefer Status Moves
 
-Shuckle @ Sitrus Berry  
-Ability: Sturdy  
-Level: 50  
-EVs: 252 HP / 188 Def / 64 Spe  
-Impish Nature  
-IVs: 0 Atk  
-- Mimic  
-- Protect  
-- Infestation  
-
-Slowbro @ Sitrus Berry  
-Ability: Oblivious  
-Level: 50  
-EVs: 252 HP / 128 Def / 128 SpD  
-Relaxed Nature  
-IVs: 0 Atk / 0 Spe  
-- Trick Room  
-- Body Press  
-- Slack Off  
-- Psychic  
-
-Cofagrigus @ Mental Herb  
-Ability: Mummy  
+Wobbuffet  
+Ability: Shadow Tag  
 Level: 50
-EVs: 252 HP  
-Relaxed Nature  
-IVs: 0 Atk / 0 Spe
-- Trick Room  
-- Body Press  
-- Night Shade
-- Flash Cannon
+EVs: 252 HP / 128 Def / 128 SpD  
+IVs: 0 Atk  
+- Counter  
+- Mirror Coat  
+- Destiny Bond  
+- Bide
+
+Grafaiai  
+Ability: Prankster  
+Level: 50
+- Encore  
+- Taunt
+- Shadow Claw  
+- Toxic
+
+Malamar  
+Ability: Contrary 
+Level: 50 
+- Stored Power  
+- Superpower  
+- Psycho Boost  
 
 
 
@@ -9060,18 +9082,64 @@ IVs: 0 Atk
 - Earth Power  
 
 
-=== TRAINER_JUSTIN === /* Trick House 3 */ /* TO BE ADDED */
+=== TRAINER_JUSTIN === /* Trick House 3 */
 Name: JUSTIN
-Class: Camper
-Pic: Camper ORAS 80
+Class: Psychic
+Pic: Psychic M ORAS 80
 Gender: Male
-Music: Male
+Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Prefer Status Moves / Powerful Status
 
-Kecleon
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sableye @ Mental Herb  
+Ability: Prankster  
+Level: 45
+EVs: 248 HP / 64 Def / 196 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Gravity  
+- Will-O-Wisp  
+- Octazooka  
+- Encore  
+
+Espathra  
+Ability: Speed Boost  
+Level: 45
+EVs: 252 HP / 128 SpA / 128 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Hypnosis  
+- Stored Power  
+- Protect  
+- Foul Play  
+
+Crobat  
+Ability: Inner Focus  
+Level: 45
+IVs: 0 Atk  
+- Hypnosis  
+- Heat Wave  
+- Hurricane  
+
+Gengar @ Focus Sash  
+Ability: Cursed Body  
+Level: 43
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Hypnosis  
+- Dream Eater  
+- Zap Cannon  
+- Focus Blast  
+
+/*
+Persian  
+Ability: Unnerve  
+- Hypnosis  
+- Zap Cannon  
+- Hyper Voice  
+- Fake Out  
+*/
 
 === TRAINER_ETHAN_1 === /* Jagged Pass */ 
 Name: ETHAN
@@ -10844,7 +10912,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Rotom-Heat  
 Ability: Levitate 
 Ball: Fast
-Level: 34
+Level: 33
 EVs: 128 HP / 128 SpA 
 Modest Nature  
 IVs: 0 Atk  
@@ -10880,8 +10948,8 @@ Regieleki @ Petaya Berry
 Ability: Transistor  
 Ball: Fast
 Level: 34
-Tera Type: Ice /*IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe / HP Ice IVs for Max Atk */
-EVs: 64 HP / 4 Def / 64 SpA / 4 Spe  
+Tera Type: Ice 
+EVs: 64 HP / 64 SpA
 Mild Nature  
 - Thunder Cage  
 - Volt Switch  
@@ -10904,7 +10972,7 @@ Modest Nature
 Cryogonal @ Light Clay  
 Ability: Levitate  
 Ball: Fast
-Level: 34
+Level: 33
 EVs: 128 Def / 64 SpD / 64 Spe  
 Calm Nature  
 IVs: 0 Atk  
@@ -11368,18 +11436,46 @@ IVs: 0 Atk
 - Eerie Impulse  
 
 
-=== TRAINER_TED === /* Trick House 2 */ /* TO BE ADDED */
+=== TRAINER_TED === /* Trick House 2 */
 Name: TED
 Class: School Kid
 Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Hard Trick Room / Custom Strategies
 
-Ralts
-Level: 17
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Shuckle @ Sitrus Berry  
+Ability: Sturdy  
+Level: 40  
+EVs: 252 HP / 188 Def / 64 Spe  
+Impish Nature  
+IVs: 0 Atk  
+- Mimic  
+- Protect  
+- Infestation  
+
+Slowbro @ Sitrus Berry  
+Ability: Oblivious  
+Level: 40  
+EVs: 252 HP / 128 Def / 128 SpD  
+Relaxed Nature  
+IVs: 0 Atk / 0 Spe  
+- Trick Room  
+- Body Press  
+- Slack Off  
+- Psychic  
+
+Cofagrigus @ Mental Herb  
+Ability: Mummy  
+Level: 40
+EVs: 252 HP  
+Relaxed Nature  
+IVs: 0 Atk / 0 Spe
+- Trick Room  
+- Body Press  
+- Night Shade
+- Flash Cannon
 
 === TRAINER_PAUL === /* Trick House 2 */ 
 Name: PAUL
@@ -12048,32 +12144,33 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Rapidash-Galar @ Scope Lens  
-Ability: Misty Surge  
-Tera Type: Psychic  /* EVs: 64 Atk / 128 Spe */
+Ability: Telepathy 
+Tera Type: Psychic 
 Jolly Nature
-Level: 34
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Level: 33
 - Play Rough  
 - Psycho Cut  
 - Drill Run  
 - Morning Sun  
 
 Sylveon (F) @ Light Clay  
-Ability: Pixilate  
+Ability: Misty Surge  
 Tera Type: Fairy  
-EVs: 96 HP / 0 SpA
-IVs: 0 Atk  
-Level: 34
+EVs: 0 HP / 0 SpA
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Level: 33
 - Mystical Fire  
-- Round
+- Draining Kiss
 - Misty Explosion  
 - Reflect  
 
 Gardevoir (F)  
 Ability: Synchronize  
 Tera Type: Psychic  
-EVs: 128 HP / 0 Def / 0 SpA  /* Modest Nature  */
-IVs: 0 Atk  
-Level: 34
+EVs: 128 HP / 0 Def / 0 SpA
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Level: 33
 - Alluring Voice  
 - Psychic Noise
 - Vacuum Wave  
@@ -12083,8 +12180,9 @@ Pikachu-Belle (F) @ Light Ball
 Ability: Dazzling
 Tera Type: Electric  
 EVs: 252 HP / 0 Atk / 252 Spe  
+IVs: 0 Atk
 Jolly Nature  
-Level: 34
+Level: 33
 - Triple Axel  
 - Fake Out  
 - Spark  
@@ -12095,16 +12193,16 @@ Ability: Competitive
 Shiny: Yes  
 Tera Type: Water  
 EVs: 0 HP / 0 SpA  
-IVs: 0 Atk  
-Level: 34
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Level: 33
 - Alluring Voice  
 - Water Pulse  
 - Life Dew  
 - Mirror Coat  
 
 Ali (Altaria) (F) @ Altarianite  
-Tera Type: Dragon  /* EVs: 64 HP / 64 SpA / 64 SpD   Modest Nature  */
-IVs: 0 Atk  
+Tera Type: Dragon 
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Level: 35
 - Round
 - Cotton Guard  
@@ -12137,7 +12235,7 @@ Level: 42
 Ability: Snow Cloak  
 Tera Type: Ice  
 IVs: 0 Atk    
-Tags: Lead
+Tags: Lead / Mega
 - Ice Beam  
 - Bitter Malice  
 - Thunderbolt  
@@ -12161,7 +12259,7 @@ Happiness: 0
 Tera Type: Ice  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature    
-Tags: Lead
+Tags: Lead / Mega
 - Explosion  
 - Frustration  
 - Ice Shard  
@@ -16085,26 +16183,52 @@ Swablu
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BENNY === /* Trick House 6 */ /* TO BE ADDED */
+=== TRAINER_BENNY === /* Trick House 6 */ 
 Name: BENNY
-Class: Bird Keeper
-Pic: Bird Keeper ORAS 80
+Class: Camper
+Pic: Camper ORAS 80
 Gender: Male
-Music: Cool
+Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Swellow
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Torkoal  
+Ability: Drought  
+Level: 64
+IVs: 0 Atk  
+- Eruption  
+- Heat Wave  
+- Ancient Power  
+- Scorching Sands
 
-Pelipper
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lilligant (F)   
+Ability: Leaf Guard  
+Level: 64
+IVs: 0 Atk  
+- After You  
+- Encore  
+- Sleep Powder  
+- Pollen Puff
 
-Xatu
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tangrowth @ Big Root  
+Ability: Leaf Guard  
+Level: 64
+IVs: 0 Atk  
+- Giga Drain  
+- Growth  
+- Synthesis  
+- Ancient Power
+
+Exeggutor  
+Ability: Chlorophyll  
+EVs: 252 Spe  
+Level: 64
+IVs: 0 Atk  
+- Twin Beam  
+- Solar Beam  
+- Moonlight  
+- Sleep Powder  
+
 
 === TRAINER_CHESTER === /* Route 118 */
 Name: CHESTER
@@ -18241,22 +18365,57 @@ EVs: 252 HP
 - Destiny Bond
 - Encore
 
-=== TRAINER_MARTHA === /* Trick House 3 */ /* TO BE ADDED */
+=== TRAINER_MARTHA === /* Trick House 3 */
 Name: MARTHA
-Class: Picnicker
-Pic: Picnicker ORAS 80
+Class: Hex Maniac
+Pic: Hex Maniac ORAS 80
 Gender: Female
-Music: Girl
+Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Prefer Status Moves
 
-Skitty
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Klefki @ Leftovers  
+Ability: Prankster  
+Level: 45
+EVs: 252 HP / 252 Def / 4 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Fairy Lock  
+- Protect  
+- Rest  
+- Foul Play 
 
-Swablu
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dewgong  
+Ability: Hydration  
+Level: 45
+EVs: 252 HP / 128 Def / 128 SpA  
+Calm Nature  
+IVs: 0 Atk  
+- Perish Song  
+- Entrainment  
+- Soak  
+- Freeze-Dry  
+
+Chimecho  
+Ability: Levitate  
+Level: 45
+IVs: 0 Atk  
+- Perish Song  
+- Entrainment  
+- Protect
+- Extrasensory
+
+Gothitelle  
+Ability: Shadow Tag  
+Level: 45
+EVs: 252 HP / 128 Def / 128 SpD  
+Calm Nature  
+- Heal Pulse  
+- Protect  
+- Fake Out  
+- Dark Pulse  
+ 
+
 
 === TRAINER_DIANA_1 === /* Jagged Pass */ 
 Name: DIANA
@@ -21694,7 +21853,7 @@ Tera Type: Electric
 - Stomping Tantrum  
 
 
-=== TRAINER_SEBASTIAN === /* Trick House 6 */ /* TO BE ADDED */
+=== TRAINER_SEBASTIAN === /* Trick House 6 */
 Name: SEBASTIAN
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M ORAS 80
@@ -21703,9 +21862,30 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Cacturne
-Level: 39
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Bronzong  
+Ability: Drizzle  
+IVs: 0 Atk  
+- Weather Ball  
+- Thunder  
+- Flash Cannon  
+- Extrasensory  
+
+Shiinotic @ Kebia Berry  
+Ability: Rain Dish  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Energy Ball  
+- Strength Sap  
+- Spore  
+
+Drednaw @ Rindo Berry  
+Ability: Swift Swim  
+EVs: 128 SpD / 128 Spe  
+- Head Smash  
+- Waterfall  
+- Shell Smash  
+- Jaw Lock  
+
 
 === TRAINER_JACKSON_2 === /* Route */
 Name: JACKSON
@@ -21857,7 +22037,7 @@ Tera Type: Normal
 - Cotton Guard  
 
 
-=== TRAINER_SOPHIA === /* Trick House 6 */ /* TO BE ADDED */
+=== TRAINER_SOPHIA === /* Trick House 6 */ 
 Name: SOPHIA
 Class: Pkmn Ranger
 Pic: Pokemon Ranger F ORAS 80
@@ -21866,13 +22046,34 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Swablu
-Level: 38
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Dewgong @ Leftovers  
+Ability: Ice Body  
+Level: 65
+EVs: 252 HP  
+Serious Nature  
+- Protect  
+- Aqua Jet  
+- Drill Run  
+- Fake Out  
 
-Roselia
-Level: 38
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Glaceon @ Light Clay  
+Ability: Snow Warning  
+Level: 65
+Tera Type: Electric
+IVs: 0 Atk  
+- Blizzard  
+- Aurora Veil  
+- Freeze Dry
+- Hidden Power
+
+Froslass (F) @ Bright Powder  
+Ability: Snow Cloak  
+Level: 65
+IVs: 0 Atk  
+- Double Team  
+- Nasty Plot  
+- Shadow Ball  
+- Destiny Bond  
 
 === TRAINER_CATHERINE_2 === /* Route */
 Name: CATHERINE
@@ -24679,26 +24880,50 @@ Level: 45
 
 
 
-=== TRAINER_ALAN === /* Trick House 3 */ /* TO BE ADDED */
+=== TRAINER_ALAN === /* Trick House 3 */ 
 Name: ALAN
-Class: Hiker
-Pic: Hiker ORAS 80
+Class: Ninja Boy
+Pic: Ninja Boy ORAS 80
 Gender: Male
-Music: Hiker
+Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Prefer Status Moves
 
-Geodude
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Qwilfish-Hisui
+Ability: Intimidate  
+Level: 45
+- Barb Barrage  
+- Baneful Bunker  
+- Aqua Jet
+- Crunch
 
-Nosepass
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Glimmora @ Shuca Berry
+Ability: Corrosion  
+Level: 45
+IVs: 0 Atk  
+- Toxic  
+- Venoshock
+- Power Gem
+- Spiky Shield
 
-Graveler
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Toxapex  
+Ability: Merciless  
+Level: 45
+IVs: 0 Atk  
+- Venom Drench  
+- Venoshock  
+- Baneful Bunker  
+- Soak
+
+Mismagius @ Big Root
+Ability: Levitate  
+Level: 45
+IVs: 0 Atk  
+- Hex  
+- Toxic  
+- Draining Kiss
+- Protect
+
 
 === TRAINER_CLARK === /* Route 116 */ /* TO BE ADDED */
 Name: CLARK

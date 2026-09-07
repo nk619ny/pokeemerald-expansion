@@ -115,7 +115,7 @@
 #define TRAINER_VALERIE_1                   108
 #define TRAINER_TASHA                       109
 #define TRAINER_FRANCISCO                   110 //was Valerie rematches, repurposed
-#define TRAINER_VALERIE_3                   111 //was Valerie rematches, available
+#define TRAINER_JONES                       111 //was Valerie rematches, repurposed
 #define TRAINER_VALERIE_4                   112 //was Valerie rematches, available
 #define TRAINER_VALERIE_5                   113 //was Valerie rematches, available
 #define TRAINER_CINDY_1                     114

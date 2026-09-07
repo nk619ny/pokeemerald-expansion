@@ -131,9 +131,9 @@ Route110_TrickHousePuzzle6_Text_SophiaPostBattle:
 # 66 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
 Route110_TrickHousePuzzle6_Text_BennyIntro:
 # 67 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
-	.string "Maybe I could get my BIRD Pokémon\n"
+	.string "Maybe I could get my Pokémon\n"
 # 68 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
-	.string "to fly over the wall…$"
+	.string "to climb over the wall…$"
 # 69 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
 
 # 70 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
@@ -172,3 +172,24 @@ Route110_TrickHousePuzzle6_Text_SebastianPostBattle:
 	.string "You don't seem to be affected at all.\n"
 # 87 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
 	.string "Or do you have your poker face on?$"
+
+Route110_TrickHousePuzzle6_EventScript_Jones::
+# 104 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
+	trainerbattle_single TRAINER_JONES, Route110_TrickHousePuzzle6_Text_JonesIntro, Route110_TrickHousePuzzle6_Text_JonesDefeat
+# 105 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
+	msgbox Route110_TrickHousePuzzle6_Text_JonesPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+
+Route110_TrickHousePuzzle6_Text_JonesIntro::
+# 91 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
+	.string "That man told me there were treasures\n"
+	.string "hidden here.$"
+
+Route110_TrickHousePuzzle6_Text_JonesDefeat::
+# 95 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
+	.string "I'm beginning to feel I've been misled.$"
+
+Route110_TrickHousePuzzle6_Text_JonesPostBattle::
+# 99 "data/maps/Route110_TrickHousePuzzle6/scripts.pory"
+	.string "I just want to find my way out of here.$"

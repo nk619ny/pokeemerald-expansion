@@ -627,74 +627,76 @@ Route118_EventScript_GiveEviolite::
 # 320 "data/maps/Route118/scripts.pory"
 	giveitem ITEM_EVIOLITE
 # 321 "data/maps/Route118/scripts.pory"
-	waitfanfare
+	goto_if_eq VAR_RESULT, 0, Common_EventScript_BagIsFull
 # 322 "data/maps/Route118/scripts.pory"
-	closemessage
+	waitfanfare
 # 323 "data/maps/Route118/scripts.pory"
-	setflag FLAG_RECEIVED_EVIOLITE
+	closemessage
 # 324 "data/maps/Route118/scripts.pory"
+	setflag FLAG_RECEIVED_EVIOLITE
+# 325 "data/maps/Route118/scripts.pory"
 	releaseall
 	end
 
 
 Route118_EventScript_Amelia::
-# 329 "data/maps/Route118/scripts.pory"
-	trainerbattle_single TRAINER_AMELIA, Route118_Text_AmeliaIntro, Route118_Text_AmeliaDefeat
 # 330 "data/maps/Route118/scripts.pory"
-	msgbox Route118_Text_AmeliaPostBattle, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_AMELIA, Route118_Text_AmeliaIntro, Route118_Text_AmeliaDefeat
 # 331 "data/maps/Route118/scripts.pory"
+	msgbox Route118_Text_AmeliaPostBattle, MSGBOX_DEFAULT
+# 332 "data/maps/Route118/scripts.pory"
 	release
 	end
 
 
 Route118_EventScript_Maria::
-# 349 "data/maps/Route118/scripts.pory"
-	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route118_EventScript_MariaTryGiveVitamin
 # 350 "data/maps/Route118/scripts.pory"
-	goto_if_set FLAG_TEMP_A, Route118_EventScript_MariaTryGiveVitamin
+	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route118_EventScript_MariaTryGiveVitamin
 # 351 "data/maps/Route118/scripts.pory"
-	msgbox Route117_Text_MariaPostBattle, MSGBOX_NPC
+	goto_if_set FLAG_TEMP_A, Route118_EventScript_MariaTryGiveVitamin
 # 352 "data/maps/Route118/scripts.pory"
+	msgbox Route117_Text_MariaPostBattle, MSGBOX_NPC
+# 353 "data/maps/Route118/scripts.pory"
 	releaseall
 	end
 
 
 Route118_EventScript_MariaTryGiveVitamin::
-# 357 "data/maps/Route118/scripts.pory"
+# 358 "data/maps/Route118/scripts.pory"
 	goto_if_set FLAG_BADGE06_GET, Route118_EventScript_MariaTryGiveVitamin_2
-# 361 "data/maps/Route118/scripts.pory"
+# 362 "data/maps/Route118/scripts.pory"
 	goto_if_unset FLAG_TEMP_A, Route118_EventScript_MariaTryGiveVitamin_5
-# 365 "data/maps/Route118/scripts.pory"
+# 366 "data/maps/Route118/scripts.pory"
 	msgbox Route118_EventScript_MariaTryGiveVitamin_Text_1, MSGBOX_NPC
 Route118_EventScript_MariaTryGiveVitamin_4:
-# 367 "data/maps/Route118/scripts.pory"
-	checkitemspace ITEM_PROTEIN
 # 368 "data/maps/Route118/scripts.pory"
+	checkitemspace ITEM_PROTEIN
+# 369 "data/maps/Route118/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq Route118_EventScript_MariaTryGiveVitamin_9
-# 373 "data/maps/Route118/scripts.pory"
-	setflag FLAG_TEMP_A
 # 374 "data/maps/Route118/scripts.pory"
+	setflag FLAG_TEMP_A
+# 375 "data/maps/Route118/scripts.pory"
 	msgbox Route118_EventScript_MariaTryGiveVitamin_Text_2, MSGBOX_NPC
 Route118_EventScript_MariaTryGiveVitamin_8:
-# 376 "data/maps/Route118/scripts.pory"
+# 377 "data/maps/Route118/scripts.pory"
 	release
 	end
 
 Route118_EventScript_MariaTryGiveVitamin_2:
-# 358 "data/maps/Route118/scripts.pory"
+# 359 "data/maps/Route118/scripts.pory"
 	releaseall
 	end
 
 Route118_EventScript_MariaTryGiveVitamin_5:
-# 362 "data/maps/Route118/scripts.pory"
+# 363 "data/maps/Route118/scripts.pory"
 	msgbox Route118_EventScript_MariaTryGiveVitamin_Text_0, MSGBOX_NPC
 	goto Route118_EventScript_MariaTryGiveVitamin_4
 
 Route118_EventScript_MariaTryGiveVitamin_9:
-# 369 "data/maps/Route118/scripts.pory"
-	giveitem ITEM_PROTEIN
 # 370 "data/maps/Route118/scripts.pory"
+	giveitem ITEM_PROTEIN
+# 371 "data/maps/Route118/scripts.pory"
 	clearflag FLAG_TEMP_A
 	goto Route118_EventScript_MariaTryGiveVitamin_8
 
@@ -709,34 +711,34 @@ Route118_EventScript_GiveEviolite_Text_0:
 	.string "against fully evolved opponents.$"
 
 Route118_EventScript_MariaTryGiveVitamin_Text_0:
-# 362 "data/maps/Route118/scripts.pory"
+# 363 "data/maps/Route118/scripts.pory"
 	.string "Here, take a vitamin to help with your\n"
 	.string "training!$"
 
 Route118_EventScript_MariaTryGiveVitamin_Text_1:
-# 365 "data/maps/Route118/scripts.pory"
+# 366 "data/maps/Route118/scripts.pory"
 	.string "Did you change your mind about the\n"
 	.string "vitamin?$"
 
 Route118_EventScript_MariaTryGiveVitamin_Text_2:
-# 374 "data/maps/Route118/scripts.pory"
+# 375 "data/maps/Route118/scripts.pory"
 	.string "Oh, you don't think you or your Pokémon\n"
 	.string "need supplements?$"
 
 Route118_Text_AmeliaIntro::
-# 335 "data/maps/Route118/scripts.pory"
+# 336 "data/maps/Route118/scripts.pory"
 	.string "Can't you just smell the fruit and\n"
 	.string "flowers in the air?\p"
 	.string "$"
 
 Route118_Text_AmeliaDefeat::
-# 339 "data/maps/Route118/scripts.pory"
+# 340 "data/maps/Route118/scripts.pory"
 	.string "Oh, I thought I had a chance against\n"
 	.string "you!\p"
 	.string "$"
 
 Route118_Text_AmeliaPostBattle::
-# 343 "data/maps/Route118/scripts.pory"
+# 344 "data/maps/Route118/scripts.pory"
 	.string "The Berry Master lives nearby.\n"
 	.string "I often bring my Pokémon over to enjoy\l"
 	.string "the lovely fruit!\p"
