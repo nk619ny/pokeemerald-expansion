@@ -2795,11 +2795,11 @@ text MatchCall_Text_Rival_1_3 {
 }
 
 text MatchCall_Text_Rival_2_5 {
-	format("{RIVAL}: Hi {PLAYER}.\pI've spent weeks putting honey on this tree, and still haven't found the Pokémon I'm looking for.\pDo you think I should try another tree?")
+	format("{RIVAL}: Hi {PLAYER}.\pI've spent weeks putting honey on\Nthis tree, and still haven't found\Nthe Pokémon I'm looking for.\pDo you think I should try another\Ntree?")
 }
 
 text MatchCall_Text_Rival_2_1 {
-	format("{RIVAL}: Guess what, {PLAYER}?\pI think I might have discovered\Nthe minimum catch rate.\pAnd I haven't even seen a\Nlegendary NPokémon yet!")
+	format("{RIVAL}: Guess what, {PLAYER}?\pI think I might have discovered\Nthe minimum catch rate.\pAnd I haven't even seen a\Nlegendary Pokémon yet!")
 }
 
 text MatchCall_Text_Rival_2_2 {

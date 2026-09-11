@@ -7247,10 +7247,11 @@ MatchCall_Text_Rival_1_3::
 MatchCall_Text_Rival_2_5::
 # 2797 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi {PLAYER}.\p"
-	.string "I've spent weeks putting honey on this\n"
-	.string "tree, and still haven't found the\l"
-	.string "Pokémon I'm looking for.\p"
-	.string "Do you think I should try another tree?$"
+	.string "I've spent weeks putting honey on\n"
+	.string "this tree, and still haven't found\l"
+	.string "the Pokémon I'm looking for.\p"
+	.string "Do you think I should try another\n"
+	.string "tree?$"
 
 MatchCall_Text_Rival_2_1::
 # 2801 "data/maps/TradeCenter/scripts.pory"
@@ -7258,7 +7259,7 @@ MatchCall_Text_Rival_2_1::
 	.string "I think I might have discovered\n"
 	.string "the minimum catch rate.\p"
 	.string "And I haven't even seen a\n"
-	.string "legendary NPokémon yet!$"
+	.string "legendary Pokémon yet!$"
 
 MatchCall_Text_Rival_2_2::
 # 2805 "data/maps/TradeCenter/scripts.pory"

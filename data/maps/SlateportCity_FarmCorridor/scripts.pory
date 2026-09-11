@@ -19,10 +19,11 @@ script SlateportCity_FarmCorridor_EventScript_CheckforBrawly {
 
 script SlateportCity_FarmCorridor_EventScript_BrawlyPostBattle {
     lock
+    applymovement(OBJ_EVENT_ID_PLAYER, SlateportCity_FarmCorridor_PlayerEntrance)
     delay(30) //newly added; test
     setvar(VAR_0x8004, 2)  // vertical pan
     setvar(VAR_0x8005, 2)  // horizontal pan
-    setvar(VAR_0x8006, 8)  // num shakes
+    setvar(VAR_0x8006, 16)  // num shakes
     setvar(VAR_0x8007, 5)  // shake delay
 	special(ShakeCamera)
 	delay(30)  //newly added; test
@@ -78,3 +79,7 @@ movement SlateportCity_FarmCorridor_BrawlyDepart{
 //	releaseall
 //	end
 //}
+
+movement SlateportCity_FarmCorridor_PlayerEntrance{
+    walk_right * 3
+}

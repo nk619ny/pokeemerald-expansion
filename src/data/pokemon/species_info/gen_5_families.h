@@ -11011,7 +11011,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     {
         .baseHP        = P_UPDATED_STATS >= GEN_7 ? 80 : 70,
         .baseAttack    = 50,
-        .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 50 : 30,
+        .baseDefense   = 50 + (B_CUSTOMIZED_GEN_5_STATS == TRUE ? 10 : 0),
         .baseSpeed     = 105,
         .baseSpAttack  = 95,
         .baseSpDefense = 135,
@@ -11932,7 +11932,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sBisharpTeachableLearnset,
         .eliteLearnset = sBisharpEliteLearnset,
     #if P_GEN_9_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_KINGAMBIT}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEADERS_CREST, SPECIES_KINGAMBIT}),
     #endif
     },
 

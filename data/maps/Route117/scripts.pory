@@ -75,6 +75,7 @@ Route117_EventScript_DayCareSign::
 	msgbox Route117_Text_DayCareSign, MSGBOX_SIGN
 	end
 
+/*
 Route117_EventScript_Isaac::
 	trainerbattle_single TRAINER_ISAAC_1, Route117_Text_IsaacIntro, Route117_Text_IsaacDefeat, Route117_EventScript_RegisterIsaac
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -82,6 +83,7 @@ Route117_EventScript_Isaac::
 	msgbox Route117_Text_IsaacPostBattle, MSGBOX_DEFAULT
 	release
 	end
+*/
 
 Route117_EventScript_RegisterIsaac::
 	special PlayerFaceTrainerAfterBattle
@@ -280,4 +282,34 @@ script Route117_EventScript_GrassyGlideBoy{
 	end
 }
 
+script Route117_EventScript_Isaac {
+    trainerbattle_single(TRAINER_ISAAC_1, Route117_Text_IsaacIntro, Route117_Text_IsaacDefeat, Route117_EventScript_IsaacTryGiveVitamin)
+    goto_if_set(FLAG_TEMP_A, Route117_EventScript_IsaacTryGiveVitamin)
+	msgbox(Route117_Text_IsaacPostBattle, MSGBOX_NPC)
+    release
+    end
+}
 
+script Route117_EventScript_IsaacTryGiveVitamin{
+	if(flag(FLAG_BADGE03_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_A) == FALSE) {
+		msgbox(format("Vitamins can help your Pokémon grow big and strong!"), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("I'm glad you understand the importance of proper nutrients!"), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_PROTEIN)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_PROTEIN)
+		clearflag(FLAG_TEMP_A)
+	}
+	else {
+		setflag(FLAG_TEMP_A)
+		msgbox(format("I promise, these vitamins are completely safe. Come back if you change your mind."), MSGBOX_NPC)
+	}
+	release
+	end
+}

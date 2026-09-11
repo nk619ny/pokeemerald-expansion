@@ -10973,7 +10973,7 @@ Cryogonal @ Light Clay
 Ability: Levitate  
 Ball: Fast
 Level: 33
-EVs: 128 Def / 64 SpD / 64 Spe  
+EVs: 64 Def / 64 SpD / 64 Spe  
 Calm Nature  
 IVs: 0 Atk  
 - Freeze-Dry  
@@ -11087,7 +11087,7 @@ Eevee @ Leppa Berry
 Ball: Premier
 Level: 15
 EVs: 128 HP
-IVs: 20 Atk
+IVs: 10 Atk
 - Trump Card
 
 
@@ -11104,13 +11104,14 @@ IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spinda
 Ability: Contrary  
 Ball: Premier
-Level: 11  
-Quirky Nature 
-EVs: 128 HP
-IVs: 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 9
+EVs: 188 HP
+Quirky Nature
+IVs: 0 Atk / 0 SpA
 - Superpower  
 - Psycho Boost  
 - Teeter Dance
+- Confuse Ray
 
 Zigzagoon @ Aguav Berry  
 Ability: Gluttony  
@@ -14331,10 +14332,11 @@ Tera Type: Ground
 - Sand Tomb  
 
 Aron  
-Level: 18
+Level: 17
 Ability: Sturdy  
 Tera Type: Steel  
-EVs: 252 HP / 252 Spe  
+EVs: 128 SpD / 128 Spe
+IVs: 16 Atk
 - Autotomize  
 - Head Smash  
 - Iron Head  
@@ -14409,7 +14411,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Finneon  
-Ability: Water Veil  
+Ability: Dazzling
 Level: 32
 Tera Type: Water  
 IVs: 0 Atk  
@@ -20277,7 +20279,7 @@ Jolly Nature
 
 Gourgeist-Super  
 Level: 28
-Ability: Insomnia  
+Ability: Frisk
 Tera Type: Ghost  
 EVs: 128 HP / 128 Atk
 Adamant Nature  
@@ -20475,7 +20477,7 @@ IVs: 0 Atk
 
 Gourgeist-Super  
 Level: 28
-Ability: Insomnia  
+Ability: Frisk
 Shiny: Yes  
 Tera Type: Ghost  
 EVs: 128 HP / 128 Atk
@@ -20875,7 +20877,7 @@ Jolly Nature
 
 Gourgeist-Super  
 Level: 28
-Ability: Insomnia  
+Ability: Frisk
 Tera Type: Ghost  
 EVs: 128 HP / 128 Atk
 Adamant Nature  
@@ -21071,7 +21073,7 @@ IVs: 0 Atk
 
 Gourgeist-Super  
 Level: 28
-Ability: Insomnia  
+Ability: Frisk
 Shiny: Yes  
 Tera Type: Ghost  
 EVs: 128 HP / 128 Atk
@@ -23871,7 +23873,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Smoliv  
 Ability: Early Bird  
-Level: 11
+Level: 13
 Tera Type: Grass  
 IVs: 0 Atk  
 - Mega Drain  
@@ -23880,7 +23882,7 @@ IVs: 0 Atk
 
 Whismur  
 Ability: Soundproof  
-Level: 12
+Level: 13
 Tera Type: Normal  
 IVs: 0 Atk  
 - Fake Tears  
@@ -23890,7 +23892,7 @@ IVs: 0 Atk
 
 Sprigatito  
 Ability: Overgrow  
-Level: 11
+Level: 13
 Tera Type: Grass  
 IVs: 0 Atk  
 - Copycat
@@ -23901,7 +23903,7 @@ IVs: 0 Atk
 
 Patrat  
 Ability: Keen Eye  
-Level: 12
+Level: 13
 Tera Type: Normal  
 - Detect  
 - Tackle  
@@ -24567,7 +24569,7 @@ Kricketot
 Ability: Shed Skin  
 Level: 14
 Tera Type: Bug  
-EVs: 164 HP  
+EVs: 82 HP  
 IVs: 0 Atk  
 - Echoed Voice  
 - Struggle Bug  
@@ -24576,7 +24578,7 @@ IVs: 0 Atk
 
 Venipede  
 Ability: Poison Point    
-EVs: 164 HP  
+EVs: 82 HP  
 Level: 14
 - Pin Missile  
 - Rollout  
@@ -24585,7 +24587,7 @@ Level: 14
 
 Grubbin  
 Ability: Swarm    
-EVs: 164 HP  
+EVs: 82 HP  
 Level: 14
 Tera Type: Water
 IVs: 0 Atk
@@ -24597,7 +24599,7 @@ Scatterbug
 Ability: Shield Dust  
 Level: 14
 Tera Type: Bug  
-EVs: 164 HP  
+EVs: 82 HP  
 - Stun Spore  
 - Pounce  
 - Struggle Bug  
@@ -24607,7 +24609,7 @@ Blipbug
 Ability: Swarm  
 Level: 14
 Tera Type: Bug  
-EVs: 164 HP  
+EVs: 82 HP  
 IVs: 0 Atk  
 - Infestation  
 - Sticky Web  

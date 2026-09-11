@@ -226,14 +226,9 @@ script SlateportFarm_EventScript_AquaVictory {
 	waitmovement(0)
     clearflag(FLAG_SLATEPORT_FARM_COMPLETED)
     setflag(FLAG_SLATEPORT_BAY_FLOODED)
-    //fadescreenswapbuffers(FADE_TO_WHITE) //newly added; may not work
-    waitstate
-    //delay(60)
     special(RemoveCameraObject)
-    //fadescreenswapbuffers(FADE_FROM_WHITE) //newly added; may not work
-    warp(MAP_SLATEPORT_CITY_FARM_CORRIDOR,8,4)
-    waitmessage
-    releaseall
+    warpwhitefade(MAP_SLATEPORT_CITY_FARM_CORRIDOR, 5, 4)
+    waitstate
     end
 }
 
@@ -362,7 +357,7 @@ movement SlateportFarm_Movement_CameraPanUp {
 }
 
 movement SlateportFarm_Movement_AquaLeavesInDefeat {
-    walk_right * 9
+    walk_right * 10
 }
 
 movement SlateportFarm_Movement_MagmaLeaves {

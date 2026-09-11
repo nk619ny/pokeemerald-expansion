@@ -101,7 +101,7 @@ Route109_EventScript_DoSailToDewford::
 # 51 "data/maps/Route109/scripts.pory"
 	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 # 52 "data/maps/Route109/scripts.pory"
-	setobjectxyperm LOCALID_DEWFORD_BRINEY, 27, 9
+	setobjectxyperm LOCALID_DEWFORD_BRINEY, 27, 8
 # 53 "data/maps/Route109/scripts.pory"
 	addobject LOCALID_DEWFORD_BRINEY
 # 54 "data/maps/Route109/scripts.pory"

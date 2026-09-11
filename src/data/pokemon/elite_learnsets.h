@@ -2270,6 +2270,7 @@ static const u16 sMarowakAlolaEliteLearnset[] = {
 #if P_FAMILY_HITMONS
 static const u16 sTyrogueEliteLearnset[] = {
     MOVE_RAGE,
+    MOVE_ALLY_SWITCH,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
     MOVE_COVET,
@@ -2291,6 +2292,7 @@ static const u16 sHitmonleeEliteLearnset[] = {
     MOVE_TRIPLE_KICK,
     MOVE_TROP_KICK,
     MOVE_AXE_KICK,
+    MOVE_ALLY_SWITCH,
     MOVE_REFRESH,
     MOVE_RAGE,
     MOVE_SUCKER_PUNCH,
@@ -2320,6 +2322,7 @@ static const u16 sHitmonleeEliteLearnset[] = {
 static const u16 sHitmonchanEliteLearnset[] = {
     MOVE_PLASMA_FISTS,
     MOVE_JET_PUNCH,
+    MOVE_ALLY_SWITCH,
     MOVE_RAGE,
     MOVE_BIDE,
     MOVE_CAPTIVATE,
@@ -2354,6 +2357,7 @@ static const u16 sHitmontopEliteLearnset[] = {
     //MOVE_COMBAT_TORQUE, //added to Level Up Learnset
     MOVE_TOPSY_TURVY,
     MOVE_COLLISION_COURSE,
+    MOVE_ALLY_SWITCH,
     MOVE_RAGE,
     MOVE_SUCKER_PUNCH,
     MOVE_CAPTIVATE,
@@ -4761,6 +4765,7 @@ static const u16 sShuckleEliteLearnset[] = {
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
     //MOVE_CONSTRICT, //added back in to normal learnset from USUM
+    MOVE_GUARD_SPLIT, //removed from level up learnset for balance purposes
     MOVE_MIMIC,
     MOVE_NATURAL_GIFT,
     MOVE_STRING_SHOT,
