@@ -40,6 +40,7 @@
 #include "pokedex.h"
 #include "mail.h"
 #include "field_weather.h"
+#include "trainer_see.h"
 #include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
@@ -9457,13 +9458,16 @@ void TryRestoreHeldItems(void)
     for (i = 0; i < PARTY_SIZE; i++)
     {
         u16 originalItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
+        enum Ability ability = GetMonAbility(&gParties[B_TRAINER_PLAYER][i]);
 
-        // Plantable berries are always returned to their original holder, regardless of ability, unless disabled by flag
+        // Plantable berries are always returned to their original holder, regardless of ability, unless disabled by flag.
+        // Suppressed mid-back-to-back trainer battles (another battle is already queued) unless the mon has Harvest/Seed Sower.
         if (!FlagGet(FLAG_STOP_AUTO_REEQUIP_BERRIES)
             && originalItem != ITEM_NONE
             && GetItemPocket(originalItem) == POCKET_BERRIES
             && !BerryIsUnplantable(originalItem)
-            && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
+            && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE
+            && (!gSecondTrainerWaiting || ability == ABILITY_HARVEST || ability == ABILITY_SEED_SOWER))
         {
             // Charge the player one berry per Pokémon reequipped, floored at zero in the bag
             if (CountTotalItemQuantityInBag(originalItem) > 0)
@@ -9486,7 +9490,7 @@ void TryRestoreHeldItems(void)
                 SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &lostItem);
         }
         // Pickup: recover own consumed non-berry item (only when the standard restore path did not already handle it)
-        else if (GetMonAbility(&gParties[B_TRAINER_PLAYER][i]) == ABILITY_PICKUP)
+        else if (ability == ABILITY_PICKUP)
         {
             if (originalItem != ITEM_NONE
                 && GetItemPocket(originalItem) != POCKET_BERRIES
@@ -9494,8 +9498,7 @@ void TryRestoreHeldItems(void)
                 SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
         }
         // Harvest / Seed Sower: recover own consumed unplantable berry after battle
-        else if (GetMonAbility(&gParties[B_TRAINER_PLAYER][i]) == ABILITY_HARVEST
-              || GetMonAbility(&gParties[B_TRAINER_PLAYER][i]) == ABILITY_SEED_SOWER)
+        else if (ability == ABILITY_HARVEST || ability == ABILITY_SEED_SOWER)
         {
             if (originalItem != ITEM_NONE
                 && GetItemPocket(originalItem) == POCKET_BERRIES
