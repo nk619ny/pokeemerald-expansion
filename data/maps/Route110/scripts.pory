@@ -37,6 +37,7 @@ Route110_EventScript_AquaGrunt1::
 	release
 	end
 
+/*
 Route110_EventScript_AquaGrunt2::
 	lock
 	faceplayer
@@ -54,6 +55,7 @@ Route110_EventScript_AquaGrunt3::
 	waitmovement 0
 	release
 	end
+*/
 
 Route110_EventScript_AquaGrunt4::
 	lock
@@ -1454,4 +1456,55 @@ script Route110_EventScript_CyclingRoadComeBackForReward{
 script Route110_EventScript_RemoveDuplicateTheodore {
 	removeobject(LOCALID_SLATEPORT_THEODORE)
 	releaseall
+}
+
+text Route110_Text_AquaImportantMission {
+	format("Team Aqua is in the middle of an important mission in Slateport!")
+}
+
+text Route110_Text_NoOnePass {
+	format("Our job right now is to make sure no one else gets into Slateport.\pBut I heard Team Magma is already here...")
+}
+
+text Route110_Text_AquaFailure {
+	format("It sounds like our mission failed...")
+}
+
+text Route110_Text_FailStillNoOnePass {
+	format("Even though Matt was beat back, we still need to hold down the fort until the rest of Team Aqua evacuates.")
+}
+
+text Route110_Text_AquaSuccess {
+	format("We did it! Slateport Bay will return to pristine condition soon!")
+}
+
+text Route110_Text_SuccessStillNoOnePass {
+	format("Our job right now is to make sure no one interferes before all the water returns to Slateport Bay.")
+}
+
+
+
+script Route110_EventScript_AquaGrunt2{
+	lock
+	faceplayer
+	if(flag(FLAG_SLATEPORT_BAY_FLOODED)){msgbox(Route110_Text_AquaSuccess, MSGBOX_DEFAULT)}
+	elif(flag(FLAG_SLATEPORT_FARM_COMPLETED)){msgbox(Route110_Text_AquaFailure, MSGBOX_DEFAULT)}
+	else{msgbox(Route110_Text_AquaImportantMission, MSGBOX_DEFAULT)}
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
+}
+
+
+script Route110_EventScript_AquaGrunt3{
+	lock
+	faceplayer
+	if(flag(FLAG_SLATEPORT_BAY_FLOODED)){msgbox(Route110_Text_SuccessStillNoOnePass, MSGBOX_DEFAULT)}
+	elif(flag(FLAG_SLATEPORT_FARM_COMPLETED)){msgbox(Route110_Text_FailStillNoOnePass, MSGBOX_DEFAULT)}
+	else{msgbox(Route110_Text_NoOnePass, MSGBOX_DEFAULT)}
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+	end
 }

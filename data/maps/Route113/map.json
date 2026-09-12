@@ -78,7 +78,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
+      "trainer_sight_or_berry_tree_id": "5",
       "script": "Route113_EventScript_Dillon",
       "flag": "0"
     },
@@ -227,14 +227,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER_ORAS",
-      "x": 9,
-      "y": 14,
+      "x": 13,
+      "y": 7,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
-      "movement_range_y": 3,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "8",
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "Route113_EventScript_Coby",
       "flag": "0"
     },
@@ -250,6 +250,19 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route113_EventScript_PoisonSprayNinja",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
+      "x": 14,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ZINC",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_113_VITAMIN"
     }
   ],
   "warp_events": [

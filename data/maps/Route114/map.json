@@ -520,7 +520,7 @@
     },
     {
       "type": "hidden_item",
-      "x": 12,
+      "x": 11,
       "y": 63,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",

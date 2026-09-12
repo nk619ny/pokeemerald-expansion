@@ -819,7 +819,7 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 # 410 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "With the KNUCKLE BADGE, you'll be\n"
 # 411 "data/maps/DewfordTown_Gym/scripts.pory"
-	.string "able to use the HM move Cut\n"
+	.string "able to use the HM move Cut\p"
 # 412 "data/maps/DewfordTown_Gym/scripts.pory"
 	.string "outside of battle.\p"
 # 413 "data/maps/DewfordTown_Gym/scripts.pory"

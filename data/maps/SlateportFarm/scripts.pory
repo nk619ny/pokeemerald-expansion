@@ -388,12 +388,18 @@ script SlateportFarm_EventScript_MagmaGrunt {
 
 script SlateportFarm_EventScript_MagmaGruntBattle {
     trainerbattle_single(TRAINER_GRUNT_FARM_1,SlateportFarm_MagmaGruntIntroText,SlateportFarm_MagmaGruntDefeatText)
-end
+    msgbox(format("The wall we're standing on holds the seas back, which allows people to farm this area.\pTeam Aqua wants to flood this entire farm!"),MSGBOX_NPC)
+    closemessage
+    releaseall
+    end
 }
 
 script SlateportFarm_EventScript_AquaGruntBattle {
     trainerbattle_single(TRAINER_GRUNT_FARM_2,SlateportFarm_AquaGruntIntroText,SlateportFarm_AquaGruntDefeatText)
-end
+    msgbox(format("The wall we're standing on blocks the sea currents.\pSince it's been built, sea life around Slateport has become toxic or died out!"),MSGBOX_NPC)
+    closemessage
+    releaseall
+    end
 }
 
 //Route119_WeatherInstitute_2F_EventScript_Grunt2::
@@ -418,7 +424,7 @@ text SlateportFarm_AquaGruntDefeatText {
 }
 
 text SlateportFarm_PokemonBattlingText {
-    format("These Pokémon are engaged in a battle.")
+    format("These Pokémon are locked in a fierce battle.")
 }
 
 script SlateportFarm_EventScript_PokemonBattling {

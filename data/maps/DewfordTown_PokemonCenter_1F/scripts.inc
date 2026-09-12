@@ -51,7 +51,7 @@ DewfordTown_PokemonCenter_1F_EventScript_PokefanF::
 # 26 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 DewfordTown_PokemonCenter_1F_EventScript_Man::
 # 27 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
-	msgbox DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM, MSGBOX_NPC
+	msgbox DewfordTown_PokemonCenter_1F_Text_HMsNew, MSGBOX_NPC
 # 28 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 	end
 # 29 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
@@ -76,3 +76,12 @@ DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM:
 	.string "battle, it can still use a move learned\l"
 # 39 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
 	.string "from a HIDDEN MACHINE (HM).$"
+
+DewfordTown_PokemonCenter_1F_Text_HMsNew::
+# 43 "data/maps/DewfordTown_PokemonCenter_1F/scripts.pory"
+	.string "You don't actually need to teach your\n"
+	.string "Pokémon HM moves to use them outside\l"
+	.string "of battle.\p"
+	.string "As long as you have the HM and the\n"
+	.string "requisite Gym Badge, your Pokémon can\l"
+	.string "use the move.$"

@@ -334,12 +334,12 @@ Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_23:
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_24:
 # 140 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_4
+	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_3
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_19
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_25:
 # 142 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_3
+	bufferstring STR_VAR_1, Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_4
 	goto Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_19
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_26:
@@ -452,11 +452,11 @@ Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_2:
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_3:
 # 126 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	.string "Leftovers$"
+	.string "Life Orb$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_4:
 # 127 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"
-	.string "Life Orb$"
+	.string "Leftovers$"
 
 Route111_WinstrateFamilyHouse_EventScript_ChooseBattleItem_Text_5:
 # 128 "data/maps/Route111_WinstrateFamilysHouse/scripts.pory"

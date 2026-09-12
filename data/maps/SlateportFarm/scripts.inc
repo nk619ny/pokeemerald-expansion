@@ -780,63 +780,75 @@ SlateportFarm_EventScript_MagmaGrunt::
 SlateportFarm_EventScript_MagmaGruntBattle::
 # 390 "data/maps/SlateportFarm/scripts.pory"
 	trainerbattle_single TRAINER_GRUNT_FARM_1, SlateportFarm_MagmaGruntIntroText, SlateportFarm_MagmaGruntDefeatText
+# 391 "data/maps/SlateportFarm/scripts.pory"
+	msgbox SlateportFarm_EventScript_MagmaGruntBattle_Text_0, MSGBOX_NPC
+# 392 "data/maps/SlateportFarm/scripts.pory"
+	closemessage
+# 393 "data/maps/SlateportFarm/scripts.pory"
+	releaseall
 	end
 
 
 SlateportFarm_EventScript_AquaGruntBattle::
-# 395 "data/maps/SlateportFarm/scripts.pory"
+# 398 "data/maps/SlateportFarm/scripts.pory"
 	trainerbattle_single TRAINER_GRUNT_FARM_2, SlateportFarm_AquaGruntIntroText, SlateportFarm_AquaGruntDefeatText
+# 399 "data/maps/SlateportFarm/scripts.pory"
+	msgbox SlateportFarm_EventScript_AquaGruntBattle_Text_0, MSGBOX_NPC
+# 400 "data/maps/SlateportFarm/scripts.pory"
+	closemessage
+# 401 "data/maps/SlateportFarm/scripts.pory"
+	releaseall
 	end
 
 
 SlateportFarm_EventScript_PokemonBattling::
-# 425 "data/maps/SlateportFarm/scripts.pory"
+# 431 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 426 "data/maps/SlateportFarm/scripts.pory"
+# 432 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_PokemonBattlingText
-# 427 "data/maps/SlateportFarm/scripts.pory"
+# 433 "data/maps/SlateportFarm/scripts.pory"
 	waitmessage
-# 428 "data/maps/SlateportFarm/scripts.pory"
+# 434 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_BoyInGrass::
-# 433 "data/maps/SlateportFarm/scripts.pory"
+# 439 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 434 "data/maps/SlateportFarm/scripts.pory"
+# 440 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_BoyInGrass_Text_0, MSGBOX_NPC
-# 435 "data/maps/SlateportFarm/scripts.pory"
+# 441 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_OldWomanByHouse::
-# 440 "data/maps/SlateportFarm/scripts.pory"
+# 446 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 441 "data/maps/SlateportFarm/scripts.pory"
+# 447 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_OldWomanByHouse_Text_0, MSGBOX_NPC
-# 442 "data/maps/SlateportFarm/scripts.pory"
+# 448 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_ManByTrees::
-# 447 "data/maps/SlateportFarm/scripts.pory"
+# 453 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 448 "data/maps/SlateportFarm/scripts.pory"
+# 454 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_ManByTrees_Text_0, MSGBOX_NPC
-# 449 "data/maps/SlateportFarm/scripts.pory"
+# 455 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
 
 SlateportFarm_EventScript_WomanByFlowers::
-# 454 "data/maps/SlateportFarm/scripts.pory"
+# 460 "data/maps/SlateportFarm/scripts.pory"
 	lock
-# 455 "data/maps/SlateportFarm/scripts.pory"
+# 461 "data/maps/SlateportFarm/scripts.pory"
 	msgbox SlateportFarm_EventScript_WomanByFlowers_Text_0, MSGBOX_NPC
-# 456 "data/maps/SlateportFarm/scripts.pory"
+# 462 "data/maps/SlateportFarm/scripts.pory"
 	releaseall
 	end
 
@@ -1006,20 +1018,35 @@ SlateportFarm_EventScript_MagmaGrunt_Text_0:
 	.string "Team Aqua from destroying Slateport\l"
 	.string "Farm!$"
 
+SlateportFarm_EventScript_MagmaGruntBattle_Text_0:
+# 391 "data/maps/SlateportFarm/scripts.pory"
+	.string "The wall we're standing on holds the\n"
+	.string "seas back, which allows people to farm\l"
+	.string "this area.\p"
+	.string "Team Aqua wants to flood this entire\n"
+	.string "farm!$"
+
+SlateportFarm_EventScript_AquaGruntBattle_Text_0:
+# 399 "data/maps/SlateportFarm/scripts.pory"
+	.string "The wall we're standing on blocks the\n"
+	.string "sea currents.\p"
+	.string "Since it's been built, sea life around\n"
+	.string "Slateport has become toxic or died out!$"
+
 SlateportFarm_EventScript_BoyInGrass_Text_0:
-# 434 "data/maps/SlateportFarm/scripts.pory"
+# 440 "data/maps/SlateportFarm/scripts.pory"
 	.string "I saw you up there defending our farm -\n"
 	.string "thank you.$"
 
 SlateportFarm_EventScript_OldWomanByHouse_Text_0:
-# 441 "data/maps/SlateportFarm/scripts.pory"
+# 447 "data/maps/SlateportFarm/scripts.pory"
 	.string "I used to work on a farm in Johto.\p"
 	.string "When I heard they needed folks to\n"
 	.string "develop new farmland in Hoenn, I moved\l"
 	.string "with my family out here.$"
 
 SlateportFarm_EventScript_ManByTrees_Text_0:
-# 448 "data/maps/SlateportFarm/scripts.pory"
+# 454 "data/maps/SlateportFarm/scripts.pory"
 	.string "I take care of the trees in the farm -\n"
 	.string "growing them, pruning them, picking\l"
 	.string "berries and fruit, and eventually\l"
@@ -1028,7 +1055,7 @@ SlateportFarm_EventScript_ManByTrees_Text_0:
 	.string "or feed in them.$"
 
 SlateportFarm_EventScript_WomanByFlowers_Text_0:
-# 455 "data/maps/SlateportFarm/scripts.pory"
+# 461 "data/maps/SlateportFarm/scripts.pory"
 	.string "It's scary that some people tried\n"
 	.string "destroying our farm.\p"
 	.string "I've worked so hard growing these\n"
@@ -1052,17 +1079,17 @@ SlateportFarm_BeatAquaGruntMultiText::
 	.string "It seems the damage is done...$"
 
 SlateportFarm_MagmaGruntIntroText::
-# 404 "data/maps/SlateportFarm/scripts.pory"
+# 410 "data/maps/SlateportFarm/scripts.pory"
 	.string "Team Aqua is trying to undo all the work\n"
 	.string "to build new farms in Slateport! I'm not\l"
 	.string "letting anyone else get to the wall.$"
 
 SlateportFarm_MagmaGruntDefeatText::
-# 408 "data/maps/SlateportFarm/scripts.pory"
+# 414 "data/maps/SlateportFarm/scripts.pory"
 	.string "These farms are too important to lose!$"
 
 SlateportFarm_AquaGruntIntroText::
-# 412 "data/maps/SlateportFarm/scripts.pory"
+# 418 "data/maps/SlateportFarm/scripts.pory"
 	.string "Team Magma's land reclamation project\n"
 	.string "ruined the Slateport Bay, and tainted\l"
 	.string "the seas all around the city! We're\l"
@@ -1070,10 +1097,11 @@ SlateportFarm_AquaGruntIntroText::
 	.string "another!$"
 
 SlateportFarm_AquaGruntDefeatText::
-# 416 "data/maps/SlateportFarm/scripts.pory"
+# 422 "data/maps/SlateportFarm/scripts.pory"
 	.string "We can't sit by and watch as Slateport\n"
 	.string "suffers from pollution.$"
 
 SlateportFarm_PokemonBattlingText::
-# 420 "data/maps/SlateportFarm/scripts.pory"
-	.string "These Pokémon are engaged in a battle.$"
+# 426 "data/maps/SlateportFarm/scripts.pory"
+	.string "These Pokémon are locked in a fierce\n"
+	.string "battle.$"

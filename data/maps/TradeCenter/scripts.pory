@@ -121,6 +121,7 @@ script MoveTutor_EventScript_FullTutorList {
     dynmultipush("Mud-Slap",24)
     dynmultipush("Mystical Fire",25)
     dynmultipush("Night Shade",26)
+	Ominous Wind
     dynmultipush("Pollen Puff",27)
     dynmultipush("Psybeam",28)
     dynmultipush("Psychic Noise",29)
@@ -872,6 +873,7 @@ script Common_EventScript_RemoveOptionalItems3 {
 	setflag(FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL)
 	setflag(FLAG_ITEM_MT_CHIMNEY_HP_UP)
 	setflag(FLAG_ITEM_MT_CHIMNEY_CALCIUM)
+	setflag(FLAG_ITEM_ROUTE_113_VITAMIN)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_114_HEART_SCALE) // must get all the way to Meteor Falls before Flannery to get this
 	return
 }
@@ -947,6 +949,7 @@ script Common_EventScript_RemoveOptionalItemsBoating {
 	setflag(FLAG_ITEM_ABANDONED_SHIP_VITAMIN)
 	setflag(FLAG_ITEM_ROUTE_108_VITAMIN)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_107_HP_UP)
+	setflag(FLAG_ITEM_ROUTE_107_VITAMIN)
 	setflag(FLAG_HIDDEN_ITEM_ABANDONED_SHIP_ROOM1F_VITAMIN)
 	return
 }
@@ -1251,13 +1254,13 @@ script MoveTutor_EventScript_GetSpecialMoveList {
 		dynmultipush("Future Sight",17)
 		dynmultipush("Aura Sphere",3)
 		dynmultipush("Mystical Fire",26)
-		dynmultipush("Psychic Noise",30)
-		dynmultipush("Stored Power",36)
+		dynmultipush("Psychic Noise",31)
+		dynmultipush("Stored Power",37)
 	}
 	if(flag(FLAG_BADGE06_GET)) {
 		dynmultipush("Electro Ball",10)
 		dynmultipush("Misty Explosion",23)
-		dynmultipush("Pollen Puff",28)
+		dynmultipush("Pollen Puff",29)
 	}
 	if(flag(FLAG_BADGE05_GET)) {
 		dynmultipush("Blast Burn",4)
@@ -1266,36 +1269,37 @@ script MoveTutor_EventScript_GetSpecialMoveList {
 		dynmultipush("Focus Blast",14)
 		dynmultipush("Fire Pledge",12)
 		dynmultipush("Grass Pledge",18)
-		dynmultipush("Water Pledge",39)
+		dynmultipush("Water Pledge",40)
 	}
 	if(flag(FLAG_BADGE01_GET)) {
-		dynmultipush("Psycho Boost",31)
+		dynmultipush("Psycho Boost",32)
 		dynmultipush("Dream Eater",8)
-		dynmultipush("Tri Attack",37)
+		dynmultipush("Tri Attack",38)
+		dynmultipush("Ominous Wind", 28)
 	}
 	if(flag(FLAG_BADGE04_GET)) {
-		dynmultipush("Zap Cannon",41)
-		dynmultipush("Uproar",38)
-		dynmultipush("Psybeam",29)
+		dynmultipush("Zap Cannon",42)
+		dynmultipush("Uproar",39)
+		dynmultipush("Psybeam",30)
 		dynmultipush("Burning Jealousy",6)
 		dynmultipush("Incinerate",20)
 	}
 	if(flag(FLAG_BADGE03_GET)) {
 		dynmultipush("Night Shade",27)
-		dynmultipush("Signal Beam",34)
+		dynmultipush("Signal Beam",35)
 		dynmultipush("Brine",5)
 		dynmultipush("Frost Breath",16)
-		dynmultipush("Shock Wave",33)
-		dynmultipush("Silver Wind",35)
+		dynmultipush("Shock Wave",34)
+		dynmultipush("Silver Wind",36)
 	}
 	if(flag(FLAG_BADGE02_GET)) {
 		dynmultipush("Air Cutter",1)
 		dynmultipush("Magical Leaf",22)
-		dynmultipush("Round",32)
+		dynmultipush("Round",33)
 		dynmultipush("Electroweb",11)
 		dynmultipush("Mud Shot",24)
 		dynmultipush("Fire Spin",13)
-		dynmultipush("Whirlpool",40)
+		dynmultipush("Whirlpool",41)
 	}
 	if(flag(FLAG_DEFEATED_NORMAN_INTRO)) {
 		dynmultipush("Disarming Voice",7)
@@ -1641,45 +1645,48 @@ script MoveTutor_EventScript_TeachSpecialMove{
 			setvar(VAR_0x8005, MOVE_NIGHT_SHADE)
 			bufferstring(STR_VAR_1, "Night Shade")
 		case 28:
+			setvar(VAR_0x8005, MOVE_OMINOUS_WIND)
+			bufferstring(STR_VAR_1, "Ominous Wind")
+		case 29:
 			setvar(VAR_0x8005, MOVE_POLLEN_PUFF)
 			bufferstring(STR_VAR_1, "Pollen Puff")
-		case 29:
+		case 30:
 			setvar(VAR_0x8005, MOVE_PSYBEAM)
 			bufferstring(STR_VAR_1, "Psybeam")
-		case 30:
+		case 31:
 			setvar(VAR_0x8005, MOVE_PSYCHIC_NOISE)
 			bufferstring(STR_VAR_1, "Psychic Noise")
-		case 31:
+		case 32:
 			setvar(VAR_0x8005, MOVE_PSYCHO_BOOST)
 			bufferstring(STR_VAR_1, "Psycho Boost")
-		case 32:
+		case 33:
 			setvar(VAR_0x8005, MOVE_ROUND)
 			bufferstring(STR_VAR_1, "Round")
-		case 33:
+		case 34:
 			setvar(VAR_0x8005, MOVE_SHOCK_WAVE)
 			bufferstring(STR_VAR_1, "Shock Wave")
-		case 34:
+		case 35:
 			setvar(VAR_0x8005, MOVE_SIGNAL_BEAM)
 			bufferstring(STR_VAR_1, "Signal Beam")
-		case 35:
+		case 36:
 			setvar(VAR_0x8005, MOVE_SILVER_WIND)
 			bufferstring(STR_VAR_1, "Silver Wind")
-		case 36:
+		case 37:
 			setvar(VAR_0x8005, MOVE_STORED_POWER)
 			bufferstring(STR_VAR_1, "Stored Power")
-		case 37:
+		case 38:
 			setvar(VAR_0x8005, MOVE_TRI_ATTACK)
 			bufferstring(STR_VAR_1, "Tri Attack")
-		case 38:
+		case 39:
 			setvar(VAR_0x8005, MOVE_UPROAR)
 			bufferstring(STR_VAR_1, "Uproar")
-		case 39:
+		case 40:
 			setvar(VAR_0x8005, MOVE_WATER_PLEDGE)
 			bufferstring(STR_VAR_1, "Water Pledge")
-		case 40:
+		case 41:
 			setvar(VAR_0x8005, MOVE_WHIRLPOOL)
 			bufferstring(STR_VAR_1, "Whirlpool")
-		case 41:
+		case 42:
 			setvar(VAR_0x8005, MOVE_ZAP_CANNON)
 			bufferstring(STR_VAR_1, "Zap Cannon")
 		default:
@@ -2807,7 +2814,7 @@ text MatchCall_Text_Rival_2_2 {
 }
 
 text MatchCall_Text_Rival_2_3 {
-	format("{RIVAL}: Hi {PLAYER}.\pDid you know that for Pokemon,\pThere aren't always the same\pnumbers of males and females?")
+	format("{RIVAL}: Hi {PLAYER}.\pDid you know that for Pokemon,\NThere aren't always the same\Nnumbers of males and females?\pSometimes that can be a\Nbit frustrating!")
 }
 
 text MatchCall_Text_Rival_2_4 {

@@ -408,7 +408,7 @@ DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "With the KNUCKLE BADGE, you'll be\n"
-	.string "able to use the HM move Cut\n"
+	.string "able to use the HM move Cut\p"
 	.string "outside of battle.\p"
 	.string "If you'd like, use this technical\n"
 	.string "machine, too.$"

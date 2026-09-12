@@ -1333,7 +1333,7 @@ Level: 19
 - Tri Attack  
 
 
-=== TRAINER_GRUNT_SPACE_CENTER_1 === /* Mossdeep Space Center 1F */ /* TO BE ADDED */
+=== TRAINER_GRUNT_SPACE_CENTER_1 === /* Mossdeep Space Center 1F */ 
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M ORAS 80
@@ -7194,7 +7194,7 @@ Level: 55
 - Ice Beam  
 - Waterfall  
 
-=== TRAINER_TONY_1 === /* Route 107 */ /* TO BE ADDED */
+=== TRAINER_TONY_1 === /* Route 107 */ 
 Name: TONY
 Class: Swimmer M
 Pic: Swimmer M ORAS 80
@@ -7203,9 +7203,38 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Carvanha
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sneasel-Hisui @ Focus Sash  
+Ability: Inner Focus  
+Level: 60
+- Fake Out  
+- Poison Jab  
+- Quick Attack  
+- Reversal  
+
+Relicanth @ Rindo Berry  
+Ability: Swift Swim  
+Level: 55
+Serious Nature  
+- Aqua Tail  
+- Rock Tomb  
+- Zen Headbutt  
+- Yawn  
+
+Kingler  
+Ability: Hyper Cutter  
+Level: 55
+- Crabhammer  
+- X-Scissor  
+- Superpower  
+- Ally Switch  
+
+Dragalge  
+Ability: Adaptability  
+Level: 55
+- Dragon Pulse  
+- Sludge Wave  
+- Aqua Tail  
+- Camouflage  
 
 === TRAINER_JEROME === /* Route 108 */ /* TO BE ADDED */
 Name: JEROME
@@ -15791,13 +15820,37 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Bagon
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Breath
-- Headbutt
-- Focus Energy
-- Ember
+Salamence  @ Yache Berry
+Ability: Intimidate  
+Level: 75
+Tera Type: Dragon  
+IVs: 0 Atk  
+- Flamethrower  
+- Dragon Pulse  
+- Hurricane  
+- Dragon Cheer  
+
+Salazzle (F)  
+Ability: Oblivious  
+Level: 75
+Tera Type: Poison  
+IVs: 0 Atk  
+- Flamethrower  
+- Sludge Bomb  
+- Dragon Cheer  
+- Encore  
+
+Barbaracle @ King's Rock  
+Ability: Tough Claws  
+Level: 75
+Tera Type: Rock  
+EVs: 252 Spe  
+Jolly Nature  
+- Dual Chop  
+- Surging Strikes  
+- Rock Blast  
+- Shell Smash  
+
 
 === TRAINER_PERRY === /* Route 118 */ /* UNUSED */
 Name: PERRY
@@ -15845,7 +15898,7 @@ Tera Type: Normal
 - Pursuit  
 
 
-=== TRAINER_HUGH === /* Route 119 */ /* TO BE ADDED */
+=== TRAINER_HUGH === /* Route 119 */
 Name: HUGH
 Class: Bird Keeper
 Pic: Bird Keeper ORAS 80
@@ -15854,14 +15907,43 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Gyarados @ Wacan Berry
-Ability: Intimidate  
-Level: 40
-Tera Type: Water  
-- Bounce
-- Waterfall
-- Dragon Dance  
-- Power Whip  
+Oricorio-Pom-Pom  
+Ability: Dancer  
+Level: 53
+IVs: 0 Atk  
+- Revelation Dance  
+- Air Slash  
+- Quiver Dance  
+- Roost  
+
+Farfetch’d @ Leek  
+Ability: Defiant  
+Level: 54
+- Slash  
+- Night Slash  
+- Leaf Blade  
+- First Impression  
+
+Squawkabilly-Yellow @ Life Orb  
+Ability: Sheer Force  
+Level: 53
+EVs: 252 SpA  
+- Air Slash  
+- Heat Wave  
+- Pounce  
+- Quick Attack  
+
+Swanna @ Wacan Berry  
+Ability: Keen Eye  
+Tera Type: Ground
+Level: 53
+IVs: 0 Atk  
+- Hurricane  
+- Hydro Pump  
+- Icy Wind  
+- Hidden Power
+
+
 
 
 === TRAINER_PHIL === /* Route 119 */
@@ -19500,13 +19582,30 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Manectric
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Roar
-- Thunder Wave
-- Thunderbolt
+Ambipom @ Wide Lens  
+Ability: Technician  
+Level: 75
+- Fake Out  
+- Triple Axel  
+- Dual Chop  
+- Power-Up Punch  
+
+Yanmega @ Charti Berry  
+Ability: Speed Boost  
+Level: 75
+IVs: 0 Atk  
+- Air Slash  
+- Bug Buzz  
+- Detect  
+- Shadow Ball  
+
+Scizor @ Occa Berry  
+Ability: Technician  
+Level: 75
+- Bullet Punch  
+- Dual Wingbeat  
+- Bug Bite  
+- Swords Dance
 
 === TRAINER_REYNA === /* Route 134 */ /* TO BE UPDATED */
 Name: REYNA
@@ -20048,11 +20147,10 @@ Tera Type: Dragon
 - Dual Wingbeat  
 
 Salazzle  
-Level: 27
+Level: 26
 Ability: Corrosion  
 Shiny: Yes  
 Tera Type: Poison  
-Timid Nature  
 - Toxic  
 - Fake Out  
 - Sludge Wave  
@@ -20278,11 +20376,9 @@ Jolly Nature
 - Psychic Fangs  
 
 Gourgeist-Super  
-Level: 28
+Level: 27
 Ability: Frisk
 Tera Type: Ghost  
-EVs: 128 HP / 128 Atk
-Adamant Nature  
 - Shadow Sneak  
 - Will-O-Wisp  
 - Skitter Smack  
@@ -20453,11 +20549,9 @@ Tera Type: Dragon
 - Dual Wingbeat  
 
 Salazzle  
-Level: 28
+Level: 26
 Ability: Corrosion  
 Tera Type: Poison  
-EVs: 128 SpA / 128 Spe  
-Timid Nature  
 - Toxic  
 - Fake Out  
 - Sludge Wave  
@@ -20476,12 +20570,10 @@ IVs: 0 Atk
 - Wide Guard  
 
 Gourgeist-Super  
-Level: 28
+Level: 27
 Ability: Frisk
 Shiny: Yes  
 Tera Type: Ghost  
-EVs: 128 HP / 128 Atk
-Adamant Nature  
 - Shadow Sneak  
 - Will-O-Wisp  
 - Skitter Smack  
@@ -20642,12 +20734,10 @@ Tera Type: Dragon
 - Dual Wingbeat  
 
 Salazzle  
-Level: 28
+Level: 26
+Shiny: Yes
 Ability: Corrosion  
-Shiny: Yes  
 Tera Type: Poison  
-EVs: 128 SpA / 128 Spe  
-Timid Nature  
 - Toxic  
 - Fake Out  
 - Sludge Wave  
@@ -20876,11 +20966,9 @@ Jolly Nature
 - Psychic Fangs  
 
 Gourgeist-Super  
-Level: 28
+Level: 27
 Ability: Frisk
 Tera Type: Ghost  
-EVs: 128 HP / 128 Atk
-Adamant Nature  
 - Shadow Sneak  
 - Will-O-Wisp  
 - Skitter Smack  
@@ -21049,11 +21137,9 @@ Tera Type: Dragon
 - Dual Wingbeat  
 
 Salazzle  
-Level: 28
+Level: 26
 Ability: Corrosion  
 Tera Type: Poison  
-EVs: 128 SpA / 128 Spe  
-Timid Nature  
 - Toxic  
 - Fake Out  
 - Sludge Wave  
@@ -21072,12 +21158,10 @@ IVs: 0 Atk
 - Wide Guard  
 
 Gourgeist-Super  
-Level: 28
+Level: 27
 Ability: Frisk
 Shiny: Yes  
 Tera Type: Ghost  
-EVs: 128 HP / 128 Atk
-Adamant Nature  
 - Shadow Sneak  
 - Will-O-Wisp  
 - Skitter Smack  
