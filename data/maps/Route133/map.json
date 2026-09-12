@@ -40,14 +40,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 13,
+      "x": 12,
       "y": 3,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "Route133_EventScript_Linda",
       "flag": "0"
     },
@@ -91,7 +91,7 @@
       "flag": "FLAG_ITEM_ROUTE_133_STAR_PIECE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER_ORAS",
+      "graphics_id": "OBJ_EVENT_GFX_DRAGON_TAMER_ORAS",
       "x": 7,
       "y": 14,
       "elevation": 3,
@@ -105,13 +105,13 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M_ORAS",
-      "x": 37,
-      "y": 15,
+      "x": 34,
+      "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route133_EventScript_Warren",
       "flag": "0"
@@ -158,6 +158,15 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": [],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 33,
+      "y": 15,
+      "elevation": 0,
+      "item": "ITEM_CARBOS",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD"
+    }
+  ],
   "region": "REGION_HOENN"
 }

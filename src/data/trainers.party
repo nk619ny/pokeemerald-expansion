@@ -14083,7 +14083,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Rattata-Alola  
 Ability: Hustle  
-Level: 31
+Level: 32
 Tera Type: Dark  
 EVs: 128 Spe / 128 Atk
 Jolly Nature  
@@ -14094,7 +14094,7 @@ Jolly Nature
 
 Larvitar  
 Ability: Guts  
-Level: 31 
+Level: 32
 EVs: 128 HP / 128 Atk
 Adamant Nature
 Tera Type: Rock  
@@ -14105,7 +14105,7 @@ Tera Type: Rock
 
 Vanillite @ White Herb
 Ability: Weak Armor  
-Level: 31
+Level: 32
 Tera Type: Ice  
 IVs: 0 Atk  
 - Frost Breath  
@@ -14115,7 +14115,7 @@ IVs: 0 Atk
 
 Yungoos @ Expert Belt
 Ability: Stakeout  
-Level: 31 
+Level: 32
 EVs: 128 Spe / 128 Atk
 Tera Type: Normal  
 - Pursuit  
@@ -14215,7 +14215,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Slowpoke-Galar @ Salac Berry  
-Level: 31
+Level: 32
 Ability: Gluttony  
 Tera Type: Psychic  
 EVs: 128 SpA / 252 Spe  
@@ -14227,7 +14227,7 @@ IVs: 0 Atk
 - Psyshock  
 
 Tympole  @ Power Herb
-Level: 33
+Level: 35
 Ability: Swift Swim  
 Tera Type: Water  
 - Endeavor  
@@ -14245,7 +14245,7 @@ Tera Type: Poison
 - Poison Tail  
 
 Dratini  
-Level: 32
+Level: 33
 Ability: Shed Skin  
 Tera Type: Dragon  
 - Aqua Tail  
@@ -16445,18 +16445,52 @@ Swellow
 Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BECK === /* Route 133 */ /* TO BE ADDED */
+=== TRAINER_BECK === /* Route 133 */ 
 Name: BECK
-Class: Bird Keeper
-Pic: Bird Keeper ORAS 80
+Class: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
-Music: Cool
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tropius
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Whiscash @ Rindo Berry  
+Ability: Oblivious  
+Level: 75
+Tera Type: Water  
+- Dragon Dance  
+- Waterfall  
+- Stomping Tantrum  
+- Outrage  
+
+Gyarados @ Wacan Berry  
+Ability: Intimidate
+Level: 75  
+Tera Type: Water  
+- Dragon Dance  
+- Outrage  
+- Lash Out  
+- Power Whip  
+
+Tropius @ Yache Berry  
+Ability: Harvest  
+Level: 75
+Tera Type: Grass  
+- Dragon Dance  
+- Leaf Blade  
+- Dual Wingbeat  
+- Tailwind  
+
+Ampharos @ Shuca Berry
+Ability: Static  
+Level: 75
+Tera Type: Electric  
+IVs: 0 Atk  
+- Dragon Pulse  
+- Power Gem  
+- Thunderbolt  
+- Confuse Ray  
+
 
 === TRAINER_YASU === /* Route 119 */
 Name: YASU
@@ -20139,7 +20173,7 @@ Adamant Nature
 - Light Screen  
 
 Salamence  
-Level: 22
+Level: 20
 Ability: Intimidate  
 Tera Type: Dragon  
 - Bite  
@@ -20157,10 +20191,9 @@ Tera Type: Poison
 - Heat Wave  
 
 Basculin-White-Striped (F) 
-Level: 28
+Level: 27
 Ability: Adaptability  
 Tera Type: Water  
-EVs: 96 Atk / 96 Spe  
 Jolly Nature  
 - Flip Turn  
 - Aqua Jet  
@@ -20365,10 +20398,9 @@ Jolly Nature
 - Thunder Punch  
 
 Basculin-White-Striped (F) 
-Level: 28
+Level: 27
 Ability: Adaptability  
-Tera Type: Water  
-EVs: 128 Atk / 128 Spe  
+Tera Type: Water 
 Jolly Nature  
 - Flip Turn  
 - Aqua Jet  
@@ -20376,7 +20408,7 @@ Jolly Nature
 - Psychic Fangs  
 
 Gourgeist-Super  
-Level: 27
+Level: 26
 Ability: Frisk
 Tera Type: Ghost  
 - Shadow Sneak  
@@ -20570,7 +20602,7 @@ IVs: 0 Atk
 - Wide Guard  
 
 Gourgeist-Super  
-Level: 27
+Level: 26
 Ability: Frisk
 Shiny: Yes  
 Tera Type: Ghost  
@@ -20744,10 +20776,9 @@ Tera Type: Poison
 - Heat Wave  
 
 Basculin-White-Striped (F) 
-Level: 28
+Level: 27
 Ability: Adaptability  
-Tera Type: Water  
-EVs: 128 Atk / 128 Spe  
+Tera Type: Water 
 Jolly Nature  
 - Flip Turn  
 - Aqua Jet  
@@ -20955,10 +20986,9 @@ Jolly Nature
 - Thunder Punch  
 
 Basculin-White-Striped (F) 
-Level: 28
+Level: 27
 Ability: Adaptability  
-Tera Type: Water  
-EVs: 128 Atk / 128 Spe  
+Tera Type: Water 
 Jolly Nature  
 - Flip Turn  
 - Aqua Jet  
@@ -20966,7 +20996,7 @@ Jolly Nature
 - Psychic Fangs  
 
 Gourgeist-Super  
-Level: 27
+Level: 26
 Ability: Frisk
 Tera Type: Ghost  
 - Shadow Sneak  
@@ -21158,7 +21188,7 @@ IVs: 0 Atk
 - Wide Guard  
 
 Gourgeist-Super  
-Level: 27
+Level: 26
 Ability: Frisk
 Shiny: Yes  
 Tera Type: Ghost  
@@ -27760,7 +27790,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Hoothoot  
 Ability: Mind's Eye  
-Level: 31
+Level: 32
 Tera Type: Normal  
 EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
@@ -27771,7 +27801,7 @@ IVs: 0 Atk
 
 Pidove  
 Ability: Big Pecks  
-Level: 31
+Level: 32
 EVs: 252 HP / 252 Atk
 Tera Type: Normal  
 - Peck  
@@ -27781,7 +27811,7 @@ Tera Type: Normal
 
 Starly  
 Ability: Reckless  
-Level: 31
+Level: 32
 Tera Type: Normal  
 EVs: 128 HP / 252 Atk
 IVs: 0 HP  
@@ -27791,7 +27821,7 @@ IVs: 0 HP
 
 Quaxly  
 Ability: Moxie  
-Level: 31
+Level: 32
 EVs: 252 HP / 252 SpA
 Tera Type: Water  
 - Aerial Ace  
@@ -28045,9 +28075,9 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Swinub @ Power Herb  
-Level: 36
+Level: 35
 Ability: Oblivious  
-EVs: 128 HP / 252 Atk / 128 Spe
+EVs: 128 HP / 128 Atk / 128 Spe
 Tera Type: Ice  
 - Dig  
 - Icicle Crash  
@@ -28066,9 +28096,9 @@ IVs: 0 Atk
 - Draining Kiss  
 
 Skwovet @ Apicot Berry 
-Level: 36 
+Level: 35
 Ability: Cheek Pouch  
-EVs: 128 HP / 128 Atk / 128 Spe
+EVs: 128 HP / 0 Atk / 128 Spe
 Tera Type: Normal  
 - Stuff Cheeks  
 - Hyper Fang  
@@ -28076,9 +28106,9 @@ Tera Type: Normal
 - Rest  
 
 Lechonk @ Iapapa Berry  
-Level: 36
+Level: 35
 Ability: Aroma Veil  
-EVs: 252 HP / 252 Atk
+EVs: 252 HP / 128 Atk
 Tera Type: Normal  
 - Body Slam  
 - Zen Headbutt  

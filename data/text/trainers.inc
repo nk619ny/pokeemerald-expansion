@@ -4637,14 +4637,14 @@ Route133_Text_WarrenPostBattle:
 
 Route133_Text_BeckIntro:
 	.string "I came all the way out here with my\n"
-	.string "BIRD Pokémon.$"
+	.string "Dragon Pokémon.$"
 
 Route133_Text_BeckDefeat:
 	.string "You…\n"
 	.string "You're stunningly cool!$"
 
 Route133_Text_BeckPostBattle:
-	.string "I'd like to go back to FORTREE,\n"
+	.string "I'd like to go back to Lilycove,\n"
 	.string "but I've grown to like this place, too.$"
 
 Route133_Text_MollieIntro:

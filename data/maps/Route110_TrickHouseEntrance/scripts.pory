@@ -202,6 +202,7 @@ Route110_TrickHouseEntrance_EventScript_BeginChallenge::
 	delay 20
 	call_if_eq VAR_TRICK_HOUSE_LEVEL, 0, Route110_TrickHouseEntrance_EventScript_MeetTrickMaster
 	msgbox Route110_TrickHouseEntrance_Text_ComeToChallengeTrickHouse, MSGBOX_DEFAULT
+	call_if_unset FLAG_DEFEATED_WALLY_MAUVILLE, Route110_TrickHouseEntrance_Script_YouMightNotBeReady
 	closemessage
 	delay 20
 	applymovement LOCALID_TRICK_MASTER, Route110_TrickHouse_Movement_TrickMasterSpin
@@ -856,5 +857,12 @@ script Route110_TrickHouseEntrance_Script_ResetTrickHouseTrainersOnWipe {
 	cleartrainerflag(TRAINER_MECHADOLL_2)
 	cleartrainerflag(TRAINER_MECHADOLL_3)
 	cleartrainerflag(TRAINER_MECHADOLL_4)
+	return
+}
+
+
+script Route110_TrickHouseEntrance_Script_YouMightNotBeReady {
+	lock
+	msgbox(format("...On second thought, you might not be ready to face this challenge yet.\pI recommend you come back when you think you're almost ready to face Wattson."), MSGBOX_NPC)
 	return
 }

@@ -3,7 +3,6 @@
   "name": "Underwater_Route126",
   "layout": "LAYOUT_UNDERWATER_ROUTE126",
   "music": "MUS_UNDERWATER",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_UNDERWATER_126",
   "requires_flash": false,
   "weather": "WEATHER_UNDERWATER_BUBBLES",
@@ -151,14 +150,6 @@
     },
     {
       "type": "hidden_item",
-      "x": 12,
-      "y": 35,
-      "elevation": 3,
-      "item": "ITEM_YELLOW_SHARD",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD"
-    },
-    {
-      "type": "hidden_item",
       "x": 65,
       "y": 60,
       "elevation": 3,
@@ -173,5 +164,6 @@
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }
