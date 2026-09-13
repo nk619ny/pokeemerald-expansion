@@ -77,6 +77,8 @@ static s32 AI_CheckPpStall(enum BattlerId battlerAtk, enum BattlerId battlerDef,
 static s32 AI_CustomStrategies(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static bool32 ShouldAvoidDoubleTargetKO(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move);
 static bool32 ShouldDiscourageWideGuardSpread(enum BattlerId battlerAtk);
+static bool32 AI_UserSeesA2HKO(enum BattlerId battlerAtk);
+static bool32 ShouldUseAcupressure(enum BattlerId battlerAtk, enum BattlerId receiver);
 static bool32 IsCustomStrategyGimmickSuppressed(enum BattlerId battler);
 
 static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Move, s32) =
@@ -3738,10 +3740,18 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 }
                 break;
             }
-            case EFFECT_ACUPRESSURE: // probably not good AI but just kept the same
+            case EFFECT_ACUPRESSURE:
             {
-                ADJUST_SCORE(IncreaseStatUpScore(battlerAtkPartner, BATTLE_OPPOSITE(battlerAtkPartner), STAT_ATK, 2));
-                ADJUST_SCORE(IncreaseStatUpScore(battlerAtkPartner, BATTLE_OPPOSITE(battlerAtkPartner), STAT_SPATK, 2));
+                if (ShouldUseAcupressure(battlerAtk, battlerAtkPartner))
+                {
+                    if (HasMoveWithEffect(battlerAtkPartner, EFFECT_STORED_POWER))
+                        ADJUST_SCORE(FAST_KILL - 1); // Power Trip/Stored Power scale directly off the boost
+                    else
+                    {
+                        ADJUST_SCORE(IncreaseStatUpScore(battlerAtkPartner, BATTLE_OPPOSITE(battlerAtkPartner), STAT_ATK, 2));
+                        ADJUST_SCORE(IncreaseStatUpScore(battlerAtkPartner, BATTLE_OPPOSITE(battlerAtkPartner), STAT_SPATK, 2));
+                    }
+                }
                 break;
             }
             case EFFECT_PURIFY:
@@ -4568,9 +4578,15 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         if (aiData->hpPercents[battlerAtk] < 90)
             ADJUST_SCORE(-2); // Should be either removed or turned into increasing score
         break;
-    // treat as offense booster
     case EFFECT_ACUPRESSURE:
-        // the old logic didn't make any sense
+        // Ally-target case is scored in AI_DoubleBattle's dedicated partner section.
+        if (battlerAtk != BATTLE_PARTNER(battlerDef) && ShouldUseAcupressure(battlerAtk, battlerDef))
+        {
+            if (HasMoveWithEffect(battlerDef, EFFECT_STORED_POWER))
+                ADJUST_SCORE(FAST_KILL - 1); // Power Trip/Stored Power scale directly off the boost
+            else
+                ADJUST_SCORE(GetStatChangeScore(battlerAtk, battlerDef, move));
+        }
         break;
     case EFFECT_HAZE:
         if (AnyStatIsRaised(BATTLE_PARTNER(battlerAtk))
@@ -6723,6 +6739,37 @@ static bool32 ShouldDiscourageWideGuardSpread(enum BattlerId battlerAtk)
             return TRUE;
     }
     return FALSE;
+}
+
+// TRUE if the Acupressure user's best move can 2HKO or better either live foe.
+static bool32 AI_UserSeesA2HKO(enum BattlerId battlerAtk)
+{
+    enum BattlerId foes[2] = { LEFT_FOE(battlerAtk), RIGHT_FOE(battlerAtk) };
+
+    for (u32 i = 0; i < ARRAY_COUNT(foes); i++)
+    {
+        enum BattlerId foe = foes[i];
+        if (!IsBattlerAlive(foe))
+            continue;
+        u32 hits = GetBestNoOfHitsToKO(battlerAtk, foe, AI_ATTACKING);
+        if (hits != 0 && hits <= 2)
+            return TRUE;
+    }
+    return FALSE;
+}
+
+// Gates Acupressure targeting battlerAtk itself or its ally (receiver) behind ShouldRaiseAnyStat
+// plus an RNG roll, skipping the roll if receiver's boost is amplified by Stored Power/Power Trip
+// or if the Acupressure user has nothing better to do (no 2HKO available).
+static bool32 ShouldUseAcupressure(enum BattlerId battlerAtk, enum BattlerId receiver)
+{
+    if (!ShouldRaiseAnyStat(receiver, BATTLE_OPPOSITE(receiver)))
+        return FALSE;
+    if (HasMoveWithEffect(receiver, EFFECT_STORED_POWER))
+        return TRUE;
+    if (!AI_UserSeesA2HKO(battlerAtk))
+        return TRUE;
+    return RandomPercentage(RNG_AI_ACUPRESSURE, ACUPRESSURE_ROLL_CHANCE);
 }
 
 // TRUE if this damaging move into battlerDef should be penalized because the partner
