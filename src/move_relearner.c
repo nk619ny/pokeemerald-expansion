@@ -524,7 +524,7 @@ static void UIEndTask(u8 taskId)
         if (!GetItemImportance(item))
             RemoveBagItem(item, 1);
     }
-    if ((gRelearnMode == RELEARN_MODE_SCRIPT || gRelearnMode == RELEARN_MODE_ELITE_SCRIPT) && gSpecialVar_Result == TRUE)
+    if ((gRelearnMode == RELEARN_MODE_SCRIPT || gRelearnMode == RELEARN_MODE_ELITE_SCRIPT || gRelearnMode == RELEARN_MODE_EGG_SCRIPT) && gSpecialVar_Result == TRUE)
     {
         gTasks[taskId].func = Task_MoveRelearner_Quit;
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
@@ -582,7 +582,7 @@ static void Task_MoveRelearner_Giveup_Answer(u8 taskId)
     switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
     case 0: // Yes
-        if (gRelearnMode == RELEARN_MODE_SCRIPT || gRelearnMode == RELEARN_MODE_ELITE_SCRIPT)
+        if (gRelearnMode == RELEARN_MODE_SCRIPT || gRelearnMode == RELEARN_MODE_ELITE_SCRIPT || gRelearnMode == RELEARN_MODE_EGG_SCRIPT)
             gSpecialVar_Result = FALSE;
         gTasks[taskId].func = Task_MoveRelearner_Quit;
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
@@ -750,7 +750,7 @@ static void CreateLearnableMovesList(void)
     struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
     if (gRelearnMode == RELEARN_MODE_ELITE_SCRIPT)
         sMoveRelearnerStruct->numMenuChoices = GetRelearnerEliteMoves(boxmon, sMoveRelearnerStruct->movesToLearn);
-    else if (gRelearnMode == RELEARN_MODE_SCRIPT || sRelearnTypes[gMoveRelearnerState].isActive())
+    else if (gRelearnMode == RELEARN_MODE_SCRIPT || gRelearnMode == RELEARN_MODE_EGG_SCRIPT || sRelearnTypes[gMoveRelearnerState].isActive())
         sMoveRelearnerStruct->numMenuChoices = sRelearnTypes[gMoveRelearnerState].getMoves(boxmon, sMoveRelearnerStruct->movesToLearn);
 
     if (P_SORT_MOVES)
@@ -1002,6 +1002,9 @@ bool32 CanBoxMonRelearnMoves(struct BoxPokemon *boxMon, enum MoveRelearnerStates
     // MOVE_RELEARNER_ELITE_MOVES is placed beyond MOVE_RELEARNER_COUNT and has no sRelearnTypes entry
     if (state == MOVE_RELEARNER_ELITE_MOVES)
         return !GetBoxMonData(boxMon, MON_DATA_IS_EGG) && HasRelearnerEliteMoves(boxMon);
+    // Egg move tutor script bypasses the summary-screen relearner activation flags
+    if (state == MOVE_RELEARNER_EGG_MOVES && gRelearnMode == RELEARN_MODE_EGG_SCRIPT)
+        return !GetBoxMonData(boxMon, MON_DATA_IS_EGG) && HasRelearnerEggMoves(boxMon);
     if (!sRelearnTypes[state].isActive())
         return FALSE;
     if (GetBoxMonData(boxMon, MON_DATA_IS_EGG))
