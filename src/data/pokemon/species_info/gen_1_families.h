@@ -3272,6 +3272,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .eliteLearnset = sPikachuEliteLearnset,
+        .eggMoveLearnset = sPichuEggMoveLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sCosplayPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
@@ -3336,7 +3337,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sPikachuEliteLearnset,
+        .eggMoveLearnset = sPichuEggMoveLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sCosplayPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
@@ -3402,7 +3404,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sPikachuEliteLearnset,
+        .eggMoveLearnset = sPichuEggMoveLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sCosplayPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
@@ -3468,7 +3471,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sPikachuEliteLearnset,
+        .eggMoveLearnset = sPichuEggMoveLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sCosplayPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
@@ -3533,7 +3537,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sPikachuEliteLearnset,
+        .eggMoveLearnset = sPichuEggMoveLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sCosplayPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
@@ -3598,7 +3603,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
-        .eliteLearnset = sNoneEliteLearnset,
+        .eliteLearnset = sPikachuEliteLearnset,
+        .eggMoveLearnset = sPichuEggMoveLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sCosplayPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_NONE, SPECIES_RAICHU},
