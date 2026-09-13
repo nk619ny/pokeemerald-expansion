@@ -15,7 +15,7 @@ LilycoveCity_MoveDeletersHouse_EventScript_MoveDeleter::
 # 8 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
 	lockall
 # 9 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
-	applymovement LOCALID_MOVE_DELETER, Common_Movement_FacePlayer
+	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 # 10 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
 	waitmovement 0
 # 11 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"

@@ -110,7 +110,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Check Viability / Try To 2HKO / Double Battle / HP Aware / Smart Switching / Omniscient / Smart Mon Choices
 /* AI: Setup First Turn / Risky / Prefer Status Moves / Powerful Status / Will Suicide */
 
-=== TRAINER_SAWYER_1 === /* Mt. Chimney */ /* TO BE ADDED */
+=== TRAINER_SAWYER_1 === /* Mt. Chimney */ 
 Name: SAWYER
 Class: Hiker
 Pic: Hiker ORAS 80
@@ -119,9 +119,40 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Geodude
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Greavard  
+Ability: Fluffy  
+Level: 44  
+Tera Type: Ghost  
+EVs: 252 HP / 252 Atk  
+- Shadow Sneak  
+- Stomping Tantrum  
+- Ally Switch  
+- Destiny Bond  
+
+Boldore  
+Ability: Sturdy  
+Level: 44
+- Heavy Slam  
+- Rock Slide  
+- Stealth Rock  
+- Wide Guard  
+
+Lairon  
+Ability: Rock Head
+Level: 44
+- Body Press  
+- Double-Edge  
+- Head Smash  
+- Metal Burst  
+
+Magmar  
+Ability: Flame Body  
+Level: 44
+IVs: 0 Atk  
+- Counter  
+- Lava Plume  
+- Psychic  
+- Barrier
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 === /* Aqua Hideout */
 Name: GRUNT
@@ -2618,7 +2649,6 @@ Gigalith
 Ability: Sturdy  
 Level: 28
 Ball: Great
-EVs: 128 HP
 Adamant Nature  
 - Curse  
 - Rock Slide  
@@ -2628,8 +2658,8 @@ Adamant Nature
 Golbat @ Eviolite  
 Ability: Inner Focus  
 Ball: Great
-Level: 29
-EVs: 164 Atk / 164 Spe  
+Level: 28
+EVs: 128 Atk / 128 Spe  
 Jolly Nature  
 - Poison Fang  
 - Dual Wingbeat  
@@ -2652,7 +2682,7 @@ Beartic
 Ability: Swift Swim  
 Level: 28
 Ball: Great
-EVs: 96 Atk / 64 Spe  
+EVs: 64 Atk / 64 Spe  
 Adamant Nature  
 - Aqua Jet  
 - Avalanche  
@@ -2663,7 +2693,7 @@ Kleavor
 Ability: Sharpness  
 Level: 29
 Ball: Great
-EVs: 96 Atk / 128 Spe  
+EVs: 64 Atk / 128 Spe  
 Jolly Nature  
 - X-Scissor  
 - Stone Axe  
@@ -8127,7 +8157,7 @@ Tera Type: Fighting
 - Zen Headbutt  
 
 
-=== TRAINER_ATSUSHI === /* Mt. Pyre 4F */ /* TO BE ADDED */
+=== TRAINER_ATSUSHI === /* Mt. Pyre 4F */ 
 Name: ATSUSHI
 Class: Black Belt
 Pic: Black Belt ORAS 80
@@ -8136,9 +8166,39 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Hariyama
-Level: 32
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Medicham  
+Ability: Pure Power  
+Level: 63
+EVs: 252 SpA
+IVs: 0 Atk  
+- Skill Swap  
+- Energy Ball  
+- Aura Sphere  
+- Psychic  
+
+Kommo-o  
+Ability: Bulletproof  
+Level: 63
+- Aura Sphere  
+- Clanging Scales  
+- Drain Punch  
+- Shadow Claw  
+
+Mienshao @ White Herb  
+Ability: Inner Focus  
+Level: 63
+- Acrobatics  
+- Close Combat  
+- Blaze Kick  
+- Fake Out  
+
+Slowbro-Galar  
+Ability: Quick Draw  
+Level: 63
+- Shell Side Arm  
+- Body Press  
+- Future Sight  
+- Zen Headbutt  
 
 === TRAINER_KIRK === /* Mauville Gym */
 Name: KIRK
@@ -8936,7 +8996,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Tyrunt @ Sitrus Berry
-Level: 55
+Level: 50
 Ability: Sturdy  
 Tera Type: Rock  
 EVs: 252 HP / 252 Atk
@@ -8947,7 +9007,7 @@ Adamant Nature
 - Dragon Dance  
 
 Kabuto @ White Herb
-Level: 55
+Level: 50
 Ability: Weak Armor  
 Tera Type: Rock  
 EVs: 252 HP / 128 Atk / 128 SpD
@@ -8958,7 +9018,7 @@ Adamant Nature
 - Stealth Rock  
 
 Cranidos @ Salac Berry
-Level: 55
+Level: 50
 Ability: Rock Head  
 Tera Type: Rock  
 EVs: 252 Atk / 252 Spe
@@ -8969,7 +9029,7 @@ Adamant Nature
 - Fire Punch  
 
 Amaura @ Power Herb  
-Level: 55
+Level: 50
 Ability: Refrigerate  
 Tera Type: Rock
 EVs: 252 HP / 252 SpA  
@@ -8981,7 +9041,7 @@ Modest Nature
 - Roar  
 
 Omanyte @ White Herb
-Level: 55
+Level: 50
 Ability: Weak Armor  
 Tera Type: Rock  
 EVs: 252 HP / 128 SpA / 128 SpD
@@ -8993,7 +9053,7 @@ IVs: 0 Atk
 - Shell Smash  
 
 Shieldon @ Expert Belt
-Level: 55 
+Level: 50
 Ability: Sturdy  
 Tera Type: Rock  
 IVs: 0 Atk  
@@ -11024,7 +11084,7 @@ Typhlosion @ Quick Claw
 Level: 41
 Ball: Love
 Ability: Flash Fire  
-EVs: 196 SpA / 4 SpD / 252 Spe  
+EVs: 128 SpA / 128 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Eruption  
@@ -11037,7 +11097,7 @@ Level: 43
 Ball: Love
 Ability: Speed Boost  
 Tera Type: Fire  
-EVs: 196 Atk / 4 SpD / 128 Spe  
+EVs: 128 Atk / 128 Spe  
 Adamant Nature  
 - Detect  
 - Blaze Kick  
@@ -11049,7 +11109,7 @@ Level: 42
 Ball: Love
 Ability: Weak Armor  
 Tera Type: Fire  
-EVs: 196 Atk / 4 SpD / 196 Spe  
+EVs: 128 Atk / 128 Spe  
 Jolly Nature  
 - Bitter Blade  
 - Poltergeist  
@@ -11061,7 +11121,7 @@ Level: 42
 Ball: Love
 Ability: Chlorophyll  
 Tera Type: Grass  
-EVs: 196 Atk / 4 SpD / 196 Spe  
+EVs: 128 Atk / 128 Spe  
 Adamant Nature  
 - Axe Kick  
 - Solar Blade  
@@ -11073,7 +11133,7 @@ Level: 42
 Ball: Love
 Ability: Levitate  
 Tera Type: Rock  
-EVs: 252 HP / 196 Atk / 4 SpD  
+EVs: 128 HP / 128 Atk
 Adamant Nature  
 - Flare Blitz  
 - Rock Slide  
@@ -11085,7 +11145,7 @@ Level: 42
 Ball: Love
 Ability: Inner Focus  
 Tera Type: Fire  
-EVs: 128 Atk / 4 SpD / 128 Spe  
+EVs: 128 Atk / 128 Spe  
 Adamant Nature  
 - Sacred Fire  
 - Burning Bulwark  
@@ -28933,7 +28993,7 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_10 === /* Magma Hideout */ /* TO BE ADDED */
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_10 === /* Magma Hideout */ /* TO BE ADDED - Optional for Item */
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M ORAS 80
@@ -33076,7 +33136,7 @@ Sandslash-Alola @ Enigma Berry
 Level: 38
 Ability: Slush Rush  
 Tera Type: Ice  
-EVs: 4 HP / 128 Atk / 128 Spe  
+EVs: 128 Atk / 128 Spe  
 Adamant Nature  
 - Drill Run  
 - Iron Head  
@@ -33087,7 +33147,7 @@ Talonflame @ Charti Berry
 Level: 38
 Ability: Gale Wings  
 Tera Type: Water  
-EVs: 128 SpA / 4 SpD / 128 Spe  
+EVs: 128 SpA / 128 Spe  
 IVs: 0 Atk
 Timid Nature  
 - Flamethrower  
@@ -33096,10 +33156,10 @@ Timid Nature
 - Will-O-Wisp  
 
 Gliscor @ Toxic Orb  
-Level: 39
+Level: 38
 Ability: Poison Heal  
 Tera Type: Ground  
-EVs: 128 Atk / 4 SpD / 128 Spe  
+EVs: 128 Atk / 128 Spe  
 Jolly Nature  
 - Fling  
 - Acrobatics  
@@ -33107,11 +33167,11 @@ Jolly Nature
 - Protect  
 
 Appletun @ Leftovers  
-Level: 39
+Level: 38
 Ability: Thick Fat  
 Tera Type: Rock  
 EVs: 128 HP / 128 SpA
-IVs: 0 Atk/*IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs for Min Atk */
+IVs: 0 Atk
 Modest Nature  
 - Apple Acid
 - Dragon Pulse  
@@ -33130,10 +33190,10 @@ Adamant Nature
 - Rock Slide  
 
 Aggron @ Aggronite  
-Level: 39
+Level: 40
 Ability: Sturdy  
 Tera Type: Steel  
-EVs: 252 HP / 0 Atk
+EVs: 128 HP / 0 Atk
 Adamant Nature  
 - Body Press  
 - Heavy Slam  

@@ -510,7 +510,8 @@ MtChimney_EventScript_RematchShelby::
 	end
 
 MtChimney_EventScript_Melissa::
-	trainerbattle_single TRAINER_MELISSA, MtChimney_Text_MelissaIntro, MtChimney_Text_MelissaDefeat
+	trainerbattle_single TRAINER_MELISSA, MtChimney_Text_MelissaIntro, MtChimney_Text_MelissaDefeat, MtChimney_EventScript_MelissaTryGiveHeartScale
+	goto_if_set FLAG_TEMP_B, MtChimney_EventScript_MelissaTryGiveHeartScale
 	msgbox MtChimney_Text_MelissaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -1007,4 +1008,29 @@ text MtChimney_Text_ShilohDefeat {
 
 text MtChimney_Text_ShilohPostBattle {
     format("I'm just trying to enjoy the rest of my vacation.")
+}
+
+
+script MtChimney_EventScript_MelissaTryGiveHeartScale{
+	if(flag(FLAG_BADGE04_GET)==TRUE){
+		releaseall
+		end
+	}
+	if(flag(FLAG_TEMP_B) == FALSE) {
+		msgbox(format("It's important to spread beauty throughout the world.\pI'll leave a little bit with you, to remember me."), MSGBOX_NPC)
+	}
+	else {
+		msgbox(format("Have you learned better manners? It's rude to decline such a generous offer."), MSGBOX_NPC)
+	}
+	checkitemspace(ITEM_HEART_SCALE)
+	if(var(VAR_RESULT) == TRUE) {
+		giveitem(ITEM_HEART_SCALE)
+		clearflag(FLAG_TEMP_B)
+	}
+	else {
+		setflag(FLAG_TEMP_B)
+		msgbox(format("Hmph, you won't take it? That's very ungrateful of you."), MSGBOX_NPC)
+	}
+	release
+	end
 }
