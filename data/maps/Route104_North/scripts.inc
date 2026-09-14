@@ -39,9 +39,9 @@ Route104_North_OnFrame:
 # 20 "data/maps/Route104_North/scripts.pory"
 Route104_North_EventScript_ShowOrHideWhiteHerbFlorist::
 # 21 "data/maps/Route104_North/scripts.pory"
-	goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_North_EventScript_HideWhiteHerbFlorist
+	//goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_North_EventScript_HideWhiteHerbFlorist
 # 22 "data/maps/Route104_North/scripts.pory"
-	goto_if_unset FLAG_BADGE03_GET, Route104_North_EventScript_HideWhiteHerbFlorist
+	goto_if_unset FLAG_BADGE01_GET, Route104_North_EventScript_HideWhiteHerbFlorist
 # 23 "data/maps/Route104_North/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_104_WHITE_HERB_FLORIST
 # 24 "data/maps/Route104_North/scripts.pory"
@@ -579,10 +579,51 @@ Route104_North_EventScript_ReceivedVitamin::
 	end
 
 
+Route104_North_EventScript_PetalBlizzardFlorist::
+# 323 "data/maps/Route104_North/scripts.pory"
+	lockall
+# 324 "data/maps/Route104_North/scripts.pory"
+	faceplayer
+# 325 "data/maps/Route104_North/scripts.pory"
+	checkitem ITEM_TM_PETAL_BLIZZARD
+# 326 "data/maps/Route104_North/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route104_North_EventScript_PetalBlizzardFlorist_2
+Route104_North_EventScript_PetalBlizzardFlorist_1:
+# 332 "data/maps/Route104_North/scripts.pory"
+	msgbox Route104_North_EventScript_PetalBlizzardFlorist_Text_1, MSGBOX_NPC
+# 333 "data/maps/Route104_North/scripts.pory"
+	releaseall
+	end
+
+Route104_North_EventScript_PetalBlizzardFlorist_2:
+# 327 "data/maps/Route104_North/scripts.pory"
+	msgbox Route104_North_EventScript_PetalBlizzardFlorist_Text_0, MSGBOX_DEFAULT
+# 328 "data/maps/Route104_North/scripts.pory"
+	closemessage
+# 329 "data/maps/Route104_North/scripts.pory"
+	giveitem ITEM_TM_PETAL_BLIZZARD
+# 330 "data/maps/Route104_North/scripts.pory"
+	waitfanfare
+	goto Route104_North_EventScript_PetalBlizzardFlorist_1
+
+
 Route104_North_EventScript_ReceivedVitamin_Text_0:
 # 308 "data/maps/Route104_North/scripts.pory"
 	.string "It's important to always be intentional\n"
 	.string "about developing your Pokémon.$"
+
+Route104_North_EventScript_PetalBlizzardFlorist_Text_0:
+# 327 "data/maps/Route104_North/scripts.pory"
+	.string "To celebrate the reopening of the\n"
+	.string "Rustboro-Petalburg bridge, the Pretty\l"
+	.string "Petal Flower Shop is having a special\l"
+	.string "giveaway! All trainers stopping by will\l"
+	.string "receive a Pretty Petal TM!$"
+
+Route104_North_EventScript_PetalBlizzardFlorist_Text_1:
+# 332 "data/maps/Route104_North/scripts.pory"
+	.string "Spread flowers around the world!$"
 
 Route104_Text_BruceIntro::
 # 279 "data/maps/Route104_North/scripts.pory"

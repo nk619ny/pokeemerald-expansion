@@ -811,7 +811,7 @@ MauvilleCity_Movement_ScottApproachPlayerEast:
 # 406 "data/maps/MauvilleCity/scripts.pory"
 	walk_up
 # 407 "data/maps/MauvilleCity/scripts.pory"
-	walk_up
+	//walk_up
 # 408 "data/maps/MauvilleCity/scripts.pory"
 	step_end
 # 409 "data/maps/MauvilleCity/scripts.pory"
@@ -833,7 +833,7 @@ MauvilleCity_Movement_ScottApproachPlayerWest:
 # 417 "data/maps/MauvilleCity/scripts.pory"
 	walk_up
 # 418 "data/maps/MauvilleCity/scripts.pory"
-	walk_up
+	//walk_up
 # 419 "data/maps/MauvilleCity/scripts.pory"
 	step_end
 # 420 "data/maps/MauvilleCity/scripts.pory"

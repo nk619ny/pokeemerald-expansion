@@ -626,3 +626,26 @@ script Route109_EventScript_SetBothSistersDefeated {
 	settrainerflag(TRAINER_AUSTINA)
 	releaseall
 }
+
+script Route109_EventScript_GunkShotSailor {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_GUNK_SHOT)
+	if(var(VAR_RESULT) == FALSE) {
+		if(flag(FLAG_SLATEPORT_BAY_FLOODED)) {
+			msgbox(format("There is still some gunk left in the waters around Slateport.\pI'm trying to use Pokémon to clean it up.\pMaybe you can help, too."), MSGBOX_NPC)
+			closemessage
+			giveitem(ITEM_TM_GUNK_SHOT)
+			waitfanfare
+		}
+		else {
+			msgbox(format("There is still some gunk left in the waters around Slateport.\pI'm trying to use Pokémon to clean it up.\pMaybe you can help, too."), MSGBOX_NPC)
+			closemessage
+			giveitem(ITEM_TM_GUNK_SHOT)
+			waitfanfare
+		}
+	}
+		msgbox(format("I'm not much of a swimmer.\pBut with my Bird Pokémon, I can hop from island to island through the skies!"), MSGBOX_NPC)
+	releaseall
+	end
+}

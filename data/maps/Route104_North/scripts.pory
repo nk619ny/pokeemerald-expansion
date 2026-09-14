@@ -18,8 +18,8 @@ Route104_North_OnFrame:
 	.2byte 0
 */
 Route104_North_EventScript_ShowOrHideWhiteHerbFlorist::
-	goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_North_EventScript_HideWhiteHerbFlorist
-	goto_if_unset FLAG_BADGE03_GET, Route104_North_EventScript_HideWhiteHerbFlorist
+	//goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_North_EventScript_HideWhiteHerbFlorist
+	goto_if_unset FLAG_BADGE01_GET, Route104_North_EventScript_HideWhiteHerbFlorist
 	clearflag FLAG_HIDE_ROUTE_104_WHITE_HERB_FLORIST
 	return
 
@@ -316,4 +316,20 @@ text Route104_North_Text_ExpertVitamin {
 
 text Route104_North_Text_ExpertYouAlreadyKnow {
 	format("Use that wisely, young one.")
+}
+
+
+script Route104_North_EventScript_PetalBlizzardFlorist {
+	lockall
+	faceplayer
+	checkitem(ITEM_TM_PETAL_BLIZZARD)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("To celebrate the reopening of the Rustboro-Petalburg bridge, the Pretty Petal Flower Shop is having a special giveaway! All trainers stopping by will receive a Pretty Petal TM!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_PETAL_BLIZZARD)
+		waitfanfare
+	}
+	msgbox(format("Spread flowers around the world!"),MSGBOX_NPC)
+	releaseall
+	end
 }

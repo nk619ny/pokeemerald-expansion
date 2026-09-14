@@ -108,3 +108,24 @@ LilycoveCity_MoveDeletersHouse_Text_CantForgetSurf:
 	.string "to forget SURF.$"
 
 `
+
+
+
+script LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia {
+	lock
+	faceplayer
+	msgbox(format("Uh… I remember I had an important job once, but I can't quite remember."), MSGBOX_NPC)
+
+	checkitem(ITEM_TM_AMNESIA)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Maybe it had something to do with this?"), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_AMNESIA)
+		waitfanfare
+	}
+	else{
+		msgbox(format("I hope people aren't counting on me for anything important."), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}

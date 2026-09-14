@@ -2180,6 +2180,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Combee  @ Honey
 Level: 32
 Ability: Honey Gather  
+EVs: 128 HP
 Tera Type: Bug  
 - Pollen Puff  
 - Bug Bite  
@@ -2190,7 +2191,7 @@ Oddish
 Level: 32
 Ability: Chlorophyll  
 Tera Type: Grass  
-EVs: 196 Atk  
+EVs: 128 HP / 128 Atk  
 - Sweet Scent  
 - Sleep Powder  
 - Razor Leaf  
@@ -2199,6 +2200,7 @@ EVs: 196 Atk
 Hoppip  
 Level: 32
 Ability: Leaf Guard  
+EVs: 128 HP
 Tera Type: Grass  
 - Aromatherapy  
 - Bullet Seed  
@@ -7546,7 +7548,7 @@ IVs: 0 Atk
 - Slack Off
 
 
-=== TRAINER_BARRY === /* Route 126 */ /* TO BE ADDED */
+=== TRAINER_BARRY === /* Route 126 */ 
 Name: BARRY
 Class: Diver
 Pic: Diver M ORAS
@@ -7555,9 +7557,40 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Gyarados
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dondozo  
+Ability: Oblivious  
+Level: 72
+- Wave Crash  
+- Earthquake  
+- Avalanche  
+- Curse
+
+Mantine @ Wacan Berry  
+Ability: Water Absorb  
+Level: 72
+Tera Type: Ground
+IVs: 0 Atk  
+- Air Slash  
+- Signal Beam  
+- Hidden Power
+- Tailwind
+
+Starmie  
+Ability: Natural Cure  
+Level: 72
+IVs: 0 Atk  
+- Surf  
+- Grass Knot  
+- Luster Purge  
+- Recover
+
+Dhelmise  
+Ability: Steelworker  
+Level: 72
+- Anchor Shot  
+- Power Whip  
+- Ally Switch  
+- Poltergeist
 
 === TRAINER_DEAN === /* Underwater */
 Name: DEAN
@@ -9178,57 +9211,40 @@ Pic: Psychic M ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Prefer Status Moves / Powerful Status
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Prefer Status Moves / Custom Strategies / Hard Trick Room
 
-Sableye @ Mental Herb  
-Ability: Prankster  
-Level: 45
-EVs: 248 HP / 64 Def / 196 SpD  
-Bold Nature  
-IVs: 0 Atk  
-- Gravity  
-- Will-O-Wisp  
-- Octazooka  
-- Encore  
 
-Espathra  
-Ability: Speed Boost  
+Shuckle @ Sitrus Berry  
+Ability: Sturdy  
 Level: 45
-EVs: 252 HP / 128 SpA / 128 Spe  
-Modest Nature  
+EVs: 252 HP / 188 Def / 64 Spe  
+Impish Nature  
 IVs: 0 Atk  
-- Hypnosis  
-- Stored Power  
+- Mimic  
 - Protect  
-- Foul Play  
+- Infestation  
 
-Crobat  
-Ability: Inner Focus  
+Slowbro @ Sitrus Berry  
+Ability: Oblivious  
 Level: 45
-IVs: 0 Atk  
-- Hypnosis  
-- Heat Wave  
-- Hurricane  
+EVs: 252 HP / 128 Def / 128 SpD  
+Relaxed Nature  
+IVs: 0 Atk / 0 Spe  
+- Trick Room  
+- Body Press  
+- Slack Off  
+- Psychic  
 
-Gengar @ Focus Sash  
-Ability: Cursed Body  
-Level: 43
-EVs: 4 HP / 252 SpA / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Hypnosis  
-- Dream Eater  
-- Zap Cannon  
-- Focus Blast  
-
-/*
-Persian  
-Ability: Unnerve  
-- Hypnosis  
-- Zap Cannon  
-- Hyper Voice  
-- Fake Out  
-*/
+Cofagrigus @ Mental Herb  
+Ability: Mummy  
+Level: 45
+EVs: 252 HP  
+Relaxed Nature  
+IVs: 0 Atk / 0 Spe
+- Trick Room  
+- Body Press  
+- Night Shade
+- Flash Cannon
 
 === TRAINER_ETHAN_1 === /* Jagged Pass */ 
 Name: ETHAN
@@ -10847,7 +10863,7 @@ Level: 48
 Ball: Heavy
 Ability: Sand Stream  
 Tera Type: Rock  
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 252 Atk / 252 Spe  
 Adamant Nature  
 - Crunch  
 - Stone Edge
@@ -10859,7 +10875,7 @@ Level: 46
 Ball: Heavy
 Ability: Rock Head  
 Tera Type: Rock  
-EVs: 4 HP / 252 Atk / 252 Spe  
+EVs: 252 Atk / 252 Spe  
 Jolly Nature  
 - Brave Bird  
 - Head Smash  
@@ -10867,11 +10883,11 @@ Jolly Nature
 - Tailwind  
 
 Aurorus @ Enigma Berry  
-Level: 47
+Level: 46
 Ball: Heavy
 Ability: Refrigerate  
 Tera Type: Rock  
-EVs: 252 HP / 252 SpA / 4 SpD  
+EVs: 252 HP / 252 SpA 
 Modest Nature  
 IVs: 0 Atk  
 - Hyper Voice  
@@ -11533,39 +11549,58 @@ Pic: School Kid M ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Hard Trick Room / Custom Strategies
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Powerful Status
 
-Shuckle @ Sitrus Berry  
-Ability: Sturdy  
-Level: 40  
-EVs: 252 HP / 188 Def / 64 Spe  
-Impish Nature  
-IVs: 0 Atk  
-- Mimic  
-- Protect  
-- Infestation  
-
-Slowbro @ Sitrus Berry  
-Ability: Oblivious  
-Level: 40  
-EVs: 252 HP / 128 Def / 128 SpD  
-Relaxed Nature  
-IVs: 0 Atk / 0 Spe  
-- Trick Room  
-- Body Press  
-- Slack Off  
-- Psychic  
-
-Cofagrigus @ Mental Herb  
-Ability: Mummy  
+Sableye @ Mental Herb  
+Ability: Prankster  
 Level: 40
-EVs: 252 HP  
-Relaxed Nature  
-IVs: 0 Atk / 0 Spe
-- Trick Room  
-- Body Press  
-- Night Shade
-- Flash Cannon
+EVs: 252 HP / 64 Def / 192 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Gravity  
+- Will-O-Wisp  
+- Octazooka  
+- Encore  
+
+Espathra  
+Ability: Speed Boost  
+Level: 40
+EVs: 252 HP / 128 SpA / 128 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Hypnosis  
+- Stored Power  
+- Protect  
+- Foul Play  
+
+Crobat  
+Ability: Inner Focus  
+Level: 40
+IVs: 0 Atk  
+- Hypnosis  
+- Heat Wave  
+- Hurricane  
+
+Gengar @ Focus Sash  
+Ability: Cursed Body  
+Level: 40
+EVs: 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Hypnosis  
+- Dream Eater  
+- Gravity
+- Focus Blast  
+
+/*
+Persian  
+Ability: Unnerve  
+- Hypnosis  
+- Zap Cannon  
+- Hyper Voice  
+- Fake Out  
+*/
+
 
 === TRAINER_PAUL === /* Trick House 2 */ 
 Name: PAUL
@@ -14813,7 +14848,7 @@ Tentacruel
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_RONALD === /* Route 132 */ /* TO BE ADDED */
+=== TRAINER_RONALD === /* Route 132 */ 
 Name: RONALD
 Class: Fisherman
 Pic: Fisherman ORAS 80
@@ -14822,29 +14857,40 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magikarp
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Gyarados
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sharpedo @ Focus Sash  
+Ability: Speed Boost  
+Level: 73
+- Flip Turn  
+- Crunch  
+- Destiny Bond  
+- Psychic Fangs  
 
-Gyarados
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Veluza  
+Ability: Mold Breaker  
+Level: 73
+- Psychic Fangs  
+- Liquidation  
+- Drill Run  
+- Recover  
 
-Gyarados
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Malamar @ Tanga Berry  
+Ability: Contrary  
+Level: 73
+IVs: 0 Atk  
+- Psycho Boost  
+- Dark Pulse  
+- Block  
 
-Gyarados
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bellibolt  
+Ability: Electromorphosis  
+Level: 73
+IVs: 0 Atk  
+- Hyper Voice  
+- Slack Off  
+- Thunderbolt  
+- Thunder Wave  
 
-Gyarados
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JACOB === /* Route 110 CR */ 
 Name: JACOB
@@ -16729,7 +16775,7 @@ IVs: 0 Atk
 Brionne @ Iapapa Berry
 Ability: Torrent  
 EVs: 252 HP / 128 Def / 128 SpD
-Level: 60
+Level: 50
 IVs: 0 Atk  
 - Perish Song
 - Sparkling Aria  
@@ -17900,7 +17946,7 @@ IVs: 0 Atk
 - Signal Beam
 
 
-=== TRAINER_TANYA === /* Underwater 124 */ /* TO BE ADDED */
+=== TRAINER_TANYA === /* Underwater 124 */ 
 Name: TANYA
 Class: Diver
 Pic: Diver F ORAS
@@ -17922,7 +17968,7 @@ Cursola @ Big Root
 Ability: Perish Body  
 Level: 70
 Tera Type: Ghost  
-EVs: 252 HP / 4 Def / 252 SpA  
+EVs: 252 HP / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
 - Stealth Rock  
@@ -17930,7 +17976,13 @@ IVs: 0 Atk
 - Giga Drain  
 - Strength Sap  
 
-
+Tentacruel  
+Ability: Clear Body  
+Level: 70
+- Sludge Bomb  
+- Throat Chop  
+- Giga Drain  
+- Corrosive Gas
 
 === TRAINER_SHARON === /* Route 125 */ /* TO BE ADDED */
 Name: SHARON
@@ -17987,7 +18039,7 @@ Tera Type: Water
 - Sucker Punch  
 
 
-=== TRAINER_BRENDA === /* Underwater Route 126 */
+=== TRAINER_BRENDA === /* Underwater Route 126 */ 
 Name: BRENDA
 Class: Diver
 Pic: Diver F ORAS
@@ -17996,15 +18048,41 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Beartic @ Power Herb  
-Level: 68
-Ability: Swift Swim  
-Tera Type: Ice  
-EVs: 252 SpA  
-- Dive  
-- Chilling Water  
-- Ice Punch  
-- Power-Up Punch  
+Barraskewda  
+Ability: Propeller Tail  
+Level: 72
+- Close Combat  
+- Drill Run  
+- Flip Turn  
+- Poison Jab  
+
+Slowbro-Galar  @ Quick Claw
+Ability: Quick Draw  
+Level: 72
+- Shell Side Arm  
+- Psyshock  
+- Tri Attack  
+- Slack Off  
+
+Klawf @ Eject Button  
+Ability: Regenerator  
+Level: 72
+- Crabhammer  
+- Stone Edge  
+- Temper Flare  
+- X-Scissor  
+
+Alomomola @ Eject Button  
+Ability: Regenerator  
+Level: 73
+EVs: 252 Spe  
+Jolly Nature  
+- Flip Turn  
+- Wish  
+- Acrobatics  
+- Scale Shot  
+
+
 
 === TRAINER_KATIE === /* Route 130 */
 Name: KATIE
@@ -19284,22 +19362,50 @@ Machoke
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DUNCAN === /* Abandoned Ship */ /* TO BE ADDED */
+=== TRAINER_DUNCAN === /* Abandoned Ship */ 
 Name: DUNCAN
 Class: Sailor
 Pic: Sailor ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Spheal
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Corphish  
+Ability: Hyper Cutter  
+EVs: 252 HP
+Level: 55
+Tera Type: Water  
+- Crabhammer  
+- Aqua Jet  
+- X-Scissor
+- Dragon Dance
 
-Machoke
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gurdurr  
+Ability: Steelworker  
+Level: 55
+EVs: 128 SpD  
+- Double Iron Bash  
+- Close Combat  
+- Coaching  
+- Helping Hand
+
+Barbaracle @ Rindo Berry  
+Ability: Tough Claws  
+Level: 50
+Tera Type: Rock  
+- Surging Strikes  
+- Cross Chop  
+- Power-Up Punch  
+- Hone Claws  
+
+Cloyster  
+Ability: Shell Armor  
+Level: 50
+- Poison Jab  
+- Ice Spinner  
+- Explosion  
+- Shell Smash
 
 === TRAINER_ERNEST_2 === /* Route */
 Name: ERNEST
@@ -21791,7 +21897,7 @@ IVs: 0 Atk
 - Nasty Plot  
 
 
-=== TRAINER_GARRISON === /* Abandoned Ship */ /* TO BE ADDED */
+=== TRAINER_GARRISON === /* Abandoned Ship */ 
 Name: GARRISON
 Class: Ruin Maniac
 Pic: Ruin Maniac ORAS 80
@@ -21800,9 +21906,44 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sandslash
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Carracosta @ Rindo Berry  
+Ability: Solid Rock  
+Level: 50
+- Shell Smash  
+- Superpower  
+- Razor Shell  
+- Stone Edge  
+
+Yanmega @ Charti Berry  
+Ability: Frisk   
+Level: 50
+IVs: 0 Atk  
+- Ancient Power  
+- Bug Buzz  
+- Air Slash  
+- Giga Drain  
+
+
+Carbink @ Babiri Berry  
+Ability: Clear Body   
+Level: 50
+IVs: 0 Atk  
+- Meteor Beam  
+- Calm Mind  
+- Dazzling Gleam  
+- Ancient Power  
+
+
+Golurk @ Power Herb  
+Ability: Iron Fist   
+Level: 50
+- Ice Punch  
+- Shadow Punch  
+- Dig  
+- Curse  
+
+
 
 === TRAINER_LYDIA_2 === /* Route */
 Name: LYDIA
@@ -25981,10 +26122,10 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Magneton @ Shuca Berry  
 Ability: Magnet Pull  
-Level: 31
+Level: 33
 Tera Type: Ground
 EVs: 128 SpA / 128 Spe  
-IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */
+IVs: 0 Atk
 Timid Nature  
 - Discharge  
 - Flash Cannon  
@@ -25993,8 +26134,8 @@ Timid Nature
 
 Gabite @ Rocky Helmet  
 Ability: Rough Skin  
-Level: 31
-EVs: 128 Atk / 4 SpD / 128 Spe  
+Level: 33
+EVs: 128 Atk / 128 Spe  
 Jolly Nature  
 - Earthquake  
 - Dig  
@@ -26003,8 +26144,8 @@ Jolly Nature
 
 Roselia @ Eviolite  
 Ability: Poison Point  
-Level: 31
-EVs: 128 HP / 128 SpA / 4 SpD  
+Level: 33
+EVs: 128 HP / 128 SpA 
 Modest Nature  
 IVs: 0 Atk  
 - Dazzling Gleam  
@@ -26014,8 +26155,8 @@ IVs: 0 Atk
 
 Delcatty @ Normal Gem  
 Ability: Wonder Skin  
-Level: 31
-EVs: 128 Atk / 4 SpD / 128 Spe  
+Level: 32
+EVs: 128 Atk / 128 Spe  
 Jolly Nature  
 - Fake Out  
 - Heal Bell  
@@ -26024,7 +26165,7 @@ Jolly Nature
 
 Gallade (M) @ Expert Belt  
 Ability: Justified  
-Level: 31
+Level: 34
 Serious Nature
 - Psycho Cut  
 - Slash
@@ -28395,7 +28536,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Axew  
 Ability: Unnerve  
-Level: 45
+Level: 44
 EVs: 252 HP / 252 Spe
 Adamant Nature
 - Dragon Claw  
@@ -28422,7 +28563,7 @@ Level: 40
 Turtwig @ White Herb  
 Ability: Shell Armor  
 EVs: 252 HP / 252 Atk
-Level: 45
+Level: 43
 - Seed Bomb  
 - Superpower  
 - Zen Headbutt  
@@ -29685,7 +29826,7 @@ EVs: 128 SpA
 - Leech Life  
 - Sludge Bomb
 
-=== TRAINER_CELIA === /* Route 111 Desert */ /* TO BE ADDED */ /*maybe remove */
+=== TRAINER_CELIA === /* Route 110 Pre-Brawly */ 
 Name: CELIA
 Class: Picnicker
 Pic: Picnicker ORAS 80
@@ -29694,13 +29835,41 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Marill
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lombre
+Snover @ Occa Berry  
+Ability: Snow Warning  
 Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Icicle Spear  
+- Bullet Seed  
+- Light Screen  
+- Leech Seed  
+
+Voltorb-Hisui @ Yache Berry  
+Ability: Static  
+Level: 22
+IVs: 0 Atk  
+- Charge Beam  
+- Mega Drain  
+- Stun Spore  
+- Reflect  
+
+Nidoran-F (F) @ Berry Juice  
+Ability: Poison Point  
+Level: 22
+Tera Type: Poison  
+- Shadow Claw  
+- Poison Fang  
+- Thief  
+- Chip Away  
+
+Pumpkaboo-Super  
+Ability: Pickup  
+Level: 22
+- Trick-or-Treat  
+- Shadow Sneak  
+- Synthesis  
+- Will-O-Wisp  
+
 
 === TRAINER_BRYAN === /* Route 111 Desert */ 
 Name: BRYAN

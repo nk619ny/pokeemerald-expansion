@@ -878,3 +878,34 @@ script PetalburgCity_EventScript_CheckBrineyCall {
 text PetalburgCity_Text_BrineyBoatCall {
 	format("… … … … … …\n… … … … … Beep!\pMr. Briney: Ahoy, {PLAYER}! I hear\Nyou've become quite a Trainer!\pYou should stop by my home while\Nyou're in the area.\NI have a surprise for you!\p… … … … … …\n… … … … … Click!")
 }
+
+
+script PetalburgCity_EventScript_EndureAce{
+	lock
+	faceplayer
+	if(!flag(FLAG_BADGE02_GET)) {
+		msgbox(format("What? You're Norman's kid?\pUgh, great, another nepo baby taking on the Hoenn League.\pJust what we need.\pI bet you don't even know about the second floor of the Pokémon Center."), MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	if(!flag(FLAG_BADGE01_GET)) {
+		msgbox(format("So you've got a couple Gym Badges. It's not that impressive."), MSGBOX_NPC)
+		closemessage
+		releaseall
+		end
+	}
+	checkitem(ITEM_TM_ENDURE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Okay, I might have misjudged you. You seem like the real deal.\pAs an apology, I'll share a pro tip with you.\pEveryone knows baiting attacks into a Pokémon using Protect is elite.\pIf you can't do that, though, Enduring a round of attacks is the next best thing.\pTry it out sometime."), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_ENDURE)
+		waitfanfare
+	}
+	else {
+		msgbox(format("Keep holding on, Trainer!"), MSGBOX_NPC)
+		closemessage
+	}
+	releaseall
+	end
+}

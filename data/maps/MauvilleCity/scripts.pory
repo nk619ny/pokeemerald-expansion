@@ -404,7 +404,7 @@ MauvilleCity_Movement_ScottApproachPlayerEast:
 	walk_left
 	walk_left
 	walk_up
-	walk_up
+	//walk_up
 	step_end
 
 
@@ -415,7 +415,7 @@ MauvilleCity_Movement_ScottApproachPlayerWest:
 	walk_left
 	walk_left
 	walk_up
-	walk_up
+	//walk_up
 	step_end
 
 

@@ -994,6 +994,35 @@ Route120_EventScript_AbeTryGiveVitamin_9:
 	goto Route120_EventScript_AbeTryGiveVitamin_8
 
 
+Route120_EventScript_BugBuzzManiac::
+# 542 "data/maps/Route120/scripts.pory"
+	lock
+# 543 "data/maps/Route120/scripts.pory"
+	faceplayer
+# 544 "data/maps/Route120/scripts.pory"
+	checkitem ITEM_TM_BUG_BUZZ
+# 545 "data/maps/Route120/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route120_EventScript_BugBuzzManiac_2
+# 552 "data/maps/Route120/scripts.pory"
+	msgbox Route120_EventScript_BugBuzzManiac_Text_1, MSGBOX_NPC
+Route120_EventScript_BugBuzzManiac_1:
+# 554 "data/maps/Route120/scripts.pory"
+	releaseall
+	end
+
+Route120_EventScript_BugBuzzManiac_2:
+# 546 "data/maps/Route120/scripts.pory"
+	msgbox Route120_EventScript_BugBuzzManiac_Text_0, MSGBOX_DEFAULT
+# 547 "data/maps/Route120/scripts.pory"
+	closemessage
+# 548 "data/maps/Route120/scripts.pory"
+	giveitem ITEM_TM_BUG_BUZZ
+# 549 "data/maps/Route120/scripts.pory"
+	waitfanfare
+	goto Route120_EventScript_BugBuzzManiac_1
+
+
 Route120_EventScript_MuddyWaterKid_Text_0:
 # 484 "data/maps/Route120/scripts.pory"
 	.string "My parents get upside when I come back\n"
@@ -1022,6 +1051,19 @@ Route120_EventScript_AbeTryGiveVitamin_Text_2:
 	.string "offer.\p"
 	.string "Make some space in your bag and let's\n"
 	.string "make a deal, yeah?$"
+
+Route120_EventScript_BugBuzzManiac_Text_0:
+# 546 "data/maps/Route120/scripts.pory"
+	.string "Do you hear it?\n"
+	.string "The buzzing?\l"
+	.string "It never stops.\l"
+	.string "Buzz... buzz...\l"
+	.string "Buzz...$"
+
+Route120_EventScript_BugBuzzManiac_Text_1:
+# 552 "data/maps/Route120/scripts.pory"
+	.string "Day... night...\n"
+	.string "Buzz... buzz...$"
 
 Route120_Text_StevenGoodbye::
 # 473 "data/maps/Route120/scripts.pory"

@@ -214,3 +214,48 @@ LilycoveCity_MoveDeletersHouse_Text_CantForgetSurf:
 	.string "Your {STR_VAR_1} doesn't seem willing\n"
 # 108 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
 	.string "to forget SURF.$"
+
+LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia::
+# 115 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	lock
+# 116 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	faceplayer
+# 117 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	msgbox LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_Text_0, MSGBOX_NPC
+# 119 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	checkitem ITEM_TM_AMNESIA
+# 120 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_2
+# 127 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	msgbox LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_Text_2, MSGBOX_NPC
+LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_1:
+# 129 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	releaseall
+	end
+
+LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_2:
+# 121 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	msgbox LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_Text_1, MSGBOX_NPC
+# 122 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	closemessage
+# 123 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	giveitem ITEM_TM_AMNESIA
+# 124 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	waitfanfare
+	goto LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_1
+
+
+LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_Text_0:
+# 117 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	.string "Uh… I remember I had an important job\n"
+	.string "once, but I can't quite remember.$"
+
+LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_Text_1:
+# 121 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	.string "Maybe it had something to do with this?$"
+
+LilycoveCity_MoveDeletersHouse_Script_GiveAmnesia_Text_2:
+# 127 "data/maps/LilycoveCity_MoveDeletersHouse/scripts.pory"
+	.string "I hope people aren't counting on me for\n"
+	.string "anything important.$"

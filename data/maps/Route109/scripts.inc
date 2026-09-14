@@ -1211,6 +1211,48 @@ Route109_EventScript_SetBothSistersDefeated::
 	return
 
 
+Route109_EventScript_GunkShotSailor::
+# 631 "data/maps/Route109/scripts.pory"
+	lock
+# 632 "data/maps/Route109/scripts.pory"
+	faceplayer
+# 633 "data/maps/Route109/scripts.pory"
+	checkitem ITEM_TM_GUNK_SHOT
+# 634 "data/maps/Route109/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route109_EventScript_GunkShotSailor_2
+Route109_EventScript_GunkShotSailor_1:
+# 648 "data/maps/Route109/scripts.pory"
+	msgbox Route109_EventScript_AirSlashKeeper_Text_1, MSGBOX_NPC
+# 649 "data/maps/Route109/scripts.pory"
+	releaseall
+	end
+
+Route109_EventScript_GunkShotSailor_2:
+# 635 "data/maps/Route109/scripts.pory"
+	goto_if_set FLAG_SLATEPORT_BAY_FLOODED, Route109_EventScript_GunkShotSailor_4
+# 642 "data/maps/Route109/scripts.pory"
+	msgbox Route109_EventScript_GunkShotSailor_Text_0, MSGBOX_NPC
+# 643 "data/maps/Route109/scripts.pory"
+	closemessage
+# 644 "data/maps/Route109/scripts.pory"
+	giveitem ITEM_TM_GUNK_SHOT
+# 645 "data/maps/Route109/scripts.pory"
+	waitfanfare
+	goto Route109_EventScript_GunkShotSailor_1
+
+Route109_EventScript_GunkShotSailor_4:
+# 636 "data/maps/Route109/scripts.pory"
+	msgbox Route109_EventScript_GunkShotSailor_Text_0, MSGBOX_NPC
+# 637 "data/maps/Route109/scripts.pory"
+	closemessage
+# 638 "data/maps/Route109/scripts.pory"
+	giveitem ITEM_TM_GUNK_SHOT
+# 639 "data/maps/Route109/scripts.pory"
+	waitfanfare
+	goto Route109_EventScript_GunkShotSailor_1
+
+
 Route109_EventScript_ChillingWater_Text_0:
 # 594 "data/maps/Route109/scripts.pory"
 	.string "I want to swim in the water, but it's too\n"
@@ -1234,6 +1276,14 @@ Route109_EventScript_AirSlashKeeper_Text_1:
 	.string "I'm not much of a swimmer.\p"
 	.string "But with my Bird Pokémon, I can hop from\n"
 	.string "island to island through the skies!$"
+
+Route109_EventScript_GunkShotSailor_Text_0:
+# 636 "data/maps/Route109/scripts.pory"
+	.string "There is still some gunk left in the\n"
+	.string "waters around Slateport.\p"
+	.string "I'm trying to use Pokémon to clean it\n"
+	.string "up.\p"
+	.string "Maybe you can help, too.$"
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods::
 # 561 "data/maps/Route109/scripts.pory"

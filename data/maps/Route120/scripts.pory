@@ -536,3 +536,21 @@ text Route120_Text_AbeDefeat {
 text Route120_Text_AbePostBattle {
     format("Lots of trainers complain about my methods.")
 }
+
+
+script Route120_EventScript_BugBuzzManiac{
+	lock
+	faceplayer
+	checkitem(ITEM_TM_BUG_BUZZ)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("Do you hear it?\NThe buzzing?\NIt never stops.\NBuzz... buzz...\NBuzz..."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_BUG_BUZZ)
+		waitfanfare
+	}
+	else {
+		msgbox(format("Day... night...\NBuzz... buzz..."), MSGBOX_NPC)
+	}
+	releaseall
+	end
+}

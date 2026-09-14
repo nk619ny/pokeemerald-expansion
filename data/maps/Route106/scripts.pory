@@ -86,3 +86,22 @@ script Route106_EventScript_DouglasTryGiveVitamin{
 	release
 	end
 }
+
+
+
+script Route106_EventScript_DrainPunchBlackBelt {
+	lockall
+	faceplayer
+	checkitem(ITEM_TM_DRAIN_PUNCH)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I'm training to be strong enough to drain the ocean with my fists.\NThen I will be strong enough to replace Brawly.\p...\pNo, I haven't made much progress.\NBut my Pokémon have learned a powerful technique in the process!\pYou should teach it to yours."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_DRAIN_PUNCH)
+		waitfanfare
+	}
+	else {
+		msgbox(format("I applied for a grant from Team Magma.\pI never heard back."),MSGBOX_NPC)
+	}
+	releaseall
+	end
+}

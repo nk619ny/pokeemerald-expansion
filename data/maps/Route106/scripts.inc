@@ -131,6 +131,35 @@ Route106_EventScript_DouglasTryGiveVitamin_9:
 	goto Route106_EventScript_DouglasTryGiveVitamin_8
 
 
+Route106_EventScript_DrainPunchBlackBelt::
+# 93 "data/maps/Route106/scripts.pory"
+	lockall
+# 94 "data/maps/Route106/scripts.pory"
+	faceplayer
+# 95 "data/maps/Route106/scripts.pory"
+	checkitem ITEM_TM_DRAIN_PUNCH
+# 96 "data/maps/Route106/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route106_EventScript_DrainPunchBlackBelt_2
+# 103 "data/maps/Route106/scripts.pory"
+	msgbox Route106_EventScript_DrainPunchBlackBelt_Text_1, MSGBOX_NPC
+Route106_EventScript_DrainPunchBlackBelt_1:
+# 105 "data/maps/Route106/scripts.pory"
+	releaseall
+	end
+
+Route106_EventScript_DrainPunchBlackBelt_2:
+# 97 "data/maps/Route106/scripts.pory"
+	msgbox Route106_EventScript_DrainPunchBlackBelt_Text_0, MSGBOX_DEFAULT
+# 98 "data/maps/Route106/scripts.pory"
+	closemessage
+# 99 "data/maps/Route106/scripts.pory"
+	giveitem ITEM_TM_DRAIN_PUNCH
+# 100 "data/maps/Route106/scripts.pory"
+	waitfanfare
+	goto Route106_EventScript_DrainPunchBlackBelt_1
+
+
 Route106_EventScript_DouglasTryGiveVitamin_Text_0:
 # 72 "data/maps/Route106/scripts.pory"
 	.string "I've battled trainers who were swimming,\n"
@@ -148,6 +177,23 @@ Route106_EventScript_DouglasTryGiveVitamin_Text_2:
 	.string "Would this vitamin weigh down your boat\n"
 	.string "too much?\p"
 	.string "Try dropping some weight and come back.$"
+
+Route106_EventScript_DrainPunchBlackBelt_Text_0:
+# 97 "data/maps/Route106/scripts.pory"
+	.string "I'm training to be strong enough to\n"
+	.string "drain the ocean with my fists.\l"
+	.string "Then I will be strong enough to replace\l"
+	.string "Brawly.\p"
+	.string "...\p"
+	.string "No, I haven't made much progress.\n"
+	.string "But my Pokémon have learned a powerful\l"
+	.string "technique in the process!\p"
+	.string "You should teach it to yours.$"
+
+Route106_EventScript_DrainPunchBlackBelt_Text_1:
+# 103 "data/maps/Route106/scripts.pory"
+	.string "I applied for a grant from Team Magma.\p"
+	.string "I never heard back.$"
 
 Route106_Text_ElliotIntro_New::
 # 44 "data/maps/Route106/scripts.pory"

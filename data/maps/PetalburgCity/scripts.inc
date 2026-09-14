@@ -1746,9 +1746,93 @@ PetalburgCity_EventScript_CheckBrineyCall_2:
 	end
 
 
+PetalburgCity_EventScript_EndureAce::
+# 884 "data/maps/PetalburgCity/scripts.pory"
+	lock
+# 885 "data/maps/PetalburgCity/scripts.pory"
+	faceplayer
+# 886 "data/maps/PetalburgCity/scripts.pory"
+	goto_if_unset FLAG_BADGE02_GET, PetalburgCity_EventScript_EndureAce_2
+# 892 "data/maps/PetalburgCity/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, PetalburgCity_EventScript_EndureAce_5
+# 898 "data/maps/PetalburgCity/scripts.pory"
+	checkitem ITEM_TM_ENDURE
+# 899 "data/maps/PetalburgCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq PetalburgCity_EventScript_EndureAce_8
+# 906 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_EndureAce_Text_3, MSGBOX_NPC
+# 907 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+PetalburgCity_EventScript_EndureAce_7:
+# 909 "data/maps/PetalburgCity/scripts.pory"
+	releaseall
+	end
+
+PetalburgCity_EventScript_EndureAce_2:
+# 887 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_EndureAce_Text_0, MSGBOX_NPC
+# 888 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 889 "data/maps/PetalburgCity/scripts.pory"
+	releaseall
+	end
+
+PetalburgCity_EventScript_EndureAce_5:
+# 893 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_EndureAce_Text_1, MSGBOX_NPC
+# 894 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 895 "data/maps/PetalburgCity/scripts.pory"
+	releaseall
+	end
+
+PetalburgCity_EventScript_EndureAce_8:
+# 900 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_EndureAce_Text_2, MSGBOX_NPC
+# 901 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 902 "data/maps/PetalburgCity/scripts.pory"
+	giveitem ITEM_TM_ENDURE
+# 903 "data/maps/PetalburgCity/scripts.pory"
+	waitfanfare
+	goto PetalburgCity_EventScript_EndureAce_7
+
+
 PetalburgCity_EventScript_GiveRareEgg_Text_0:
 # 858 "data/maps/PetalburgCity/scripts.pory"
 	.string "Received a Pokémon Egg!$"
+
+PetalburgCity_EventScript_EndureAce_Text_0:
+# 887 "data/maps/PetalburgCity/scripts.pory"
+	.string "What? You're Norman's kid?\p"
+	.string "Ugh, great, another nepo baby taking on\n"
+	.string "the Hoenn League.\p"
+	.string "Just what we need.\p"
+	.string "I bet you don't even know about the\n"
+	.string "second floor of the Pokémon Center.$"
+
+PetalburgCity_EventScript_EndureAce_Text_1:
+# 893 "data/maps/PetalburgCity/scripts.pory"
+	.string "So you've got a couple Gym Badges. It's\n"
+	.string "not that impressive.$"
+
+PetalburgCity_EventScript_EndureAce_Text_2:
+# 900 "data/maps/PetalburgCity/scripts.pory"
+	.string "Okay, I might have misjudged you. You\n"
+	.string "seem like the real deal.\p"
+	.string "As an apology, I'll share a pro tip with\n"
+	.string "you.\p"
+	.string "Everyone knows baiting attacks into a\n"
+	.string "Pokémon using Protect is elite.\p"
+	.string "If you can't do that, though, Enduring a\n"
+	.string "round of attacks is the next best\l"
+	.string "thing.\p"
+	.string "Try it out sometime.$"
+
+PetalburgCity_EventScript_EndureAce_Text_3:
+# 906 "data/maps/PetalburgCity/scripts.pory"
+	.string "Keep holding on, Trainer!$"
 
 PetalburgCity_Text_EggHasPotential::
 # 769 "data/maps/PetalburgCity/scripts.pory"
