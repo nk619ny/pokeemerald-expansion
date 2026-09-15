@@ -349,13 +349,13 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncle::
 # 184 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq VerdanturfTown_WandasHouse_EventScript_WallysUncle_2
-# 191 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande
-# 192 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	msgbox VerdanturfTown_WandasHouse_Text_WallysGotPotential, MSGBOX_DEFAULT
 # 193 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
-	closemessage
+	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande
 # 194 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
+	msgbox VerdanturfTown_WandasHouse_Text_WallysGotPotential, MSGBOX_DEFAULT
+# 195 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
+	closemessage
+# 196 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	releaseall
 	end
 
@@ -368,6 +368,10 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncle_2:
 	giveitem ITEM_TM_HIDDEN_POWER
 # 188 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
 	waitfanfare
+# 189 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
+	closemessage
+# 190 "data/maps/VerdanturfTown_WandasHouse/scripts.pory"
+	releaseall
 	end
 
 

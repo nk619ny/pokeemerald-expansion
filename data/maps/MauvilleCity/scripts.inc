@@ -329,7 +329,7 @@ MauvilleCity_EventScript_DefeatedWally::
 # 165 "data/maps/MauvilleCity/scripts.pory"
 	//clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY
 # 166 "data/maps/MauvilleCity/scripts.pory"
-	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE
+	//clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE
 # 167 "data/maps/MauvilleCity/scripts.pory"
 	setflag FLAG_DEFEATED_WALLY_MAUVILLE
 # 168 "data/maps/MauvilleCity/scripts.pory"

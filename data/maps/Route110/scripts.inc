@@ -2300,7 +2300,7 @@ Route110_EventScript_GiveCyclingRoadHeartScale::
 # 1240 "data/maps/Route110/scripts.pory"
 	applymovement LOCALID_CHALLENGE_BIKER, Common_Movement_WalkInPlaceRight
 # 1241 "data/maps/Route110/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
 # 1242 "data/maps/Route110/scripts.pory"
 	waitmovement 0
 # 1243 "data/maps/Route110/scripts.pory"

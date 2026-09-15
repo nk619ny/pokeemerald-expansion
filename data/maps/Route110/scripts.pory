@@ -1238,7 +1238,7 @@ script Route110_EventScript_CheckCyclingRoadUnfinished {
 script Route110_EventScript_GiveCyclingRoadHeartScale {
 	lock
 	applymovement(LOCALID_CHALLENGE_BIKER, Common_Movement_WalkInPlaceRight)
-	applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+	applymovement(LOCALID_PLAYER, Common_Movement_FaceRight) //is this inverted somehow?
 	waitmovement(0)
 	msgbox(format("Wow, you defeated every trainer on cycling road in one go!\pAs a reward for completing the Cycling Road Challenge, please take this."), MSGBOX_NPC)
 	closemessage

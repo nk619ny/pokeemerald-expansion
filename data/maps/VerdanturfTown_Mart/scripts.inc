@@ -113,6 +113,6 @@ VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon:
 # 57 "data/maps/VerdanturfTown_Mart/scripts.pory"
 	.string "weakened Pokémon.\p"
 # 58 "data/maps/VerdanturfTown_Mart/scripts.pory"
-	.string "VERDANTURF is the only place you can\n"
+	.string "VERDANTURF used to be the only\n"
 # 59 "data/maps/VerdanturfTown_Mart/scripts.pory"
-	.string "buy it.$"
+	.string "place you could buy it.$"

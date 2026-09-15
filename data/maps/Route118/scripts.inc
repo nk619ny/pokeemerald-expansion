@@ -425,11 +425,11 @@ Route118_EventScript_Wade::
 # 213 "data/maps/Route118/scripts.pory"
 Route118_EventScript_Dalton::
 # 214 "data/maps/Route118/scripts.pory"
-	trainerbattle_single TRAINER_DALTON_1, Route118_Text_DaltonIntro, Route118_Text_DaltonDefeat, Route118_EventScript_RegisterDalton
+	trainerbattle_single TRAINER_DALTON_1, Route118_Text_DaltonIntro, Route118_Text_DaltonDefeat
 # 215 "data/maps/Route118/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 216 "data/maps/Route118/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route118_EventScript_RematchDalton
+	//goto_if_eq VAR_RESULT, TRUE, Route118_EventScript_RematchDalton
 # 217 "data/maps/Route118/scripts.pory"
 	msgbox Route118_Text_DaltonPostBattle, MSGBOX_DEFAULT
 # 218 "data/maps/Route118/scripts.pory"

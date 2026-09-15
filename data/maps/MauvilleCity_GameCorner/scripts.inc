@@ -8949,7 +8949,7 @@ MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_20:
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_21:
 # 2220 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Liechi Berry    250 coins$"
+	.string "Liechi Berry      250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_22:
 # 2221 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -8957,7 +8957,7 @@ MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_22:
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_23:
 # 2222 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Salac Berry    250 coins$"
+	.string "Salac Berry       250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_24:
 # 2223 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -8965,7 +8965,7 @@ MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_24:
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_25:
 # 2224 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Micle Berry    250 coins$"
+	.string "Micle Berry       250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_26:
 # 2225 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -8973,7 +8973,7 @@ MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_26:
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_27:
 # 2226 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Rowap Berry    150 coins$"
+	.string "Rowap Berry      150 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_28:
 # 2227 "data/maps/MauvilleCity_GameCorner/scripts.pory"

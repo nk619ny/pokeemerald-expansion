@@ -3,9 +3,9 @@
 # 2 "data/maps/Route117/scripts.pory"
 //.set LOCALID_DAYCARE_MAN, 3
 # 3 "data/maps/Route117/scripts.pory"
-.set LOCALID_DAYCARE_MON_0, 25
+//.set LOCALID_DAYCARE_MON_0, 25
 # 4 "data/maps/Route117/scripts.pory"
-.set LOCALID_DAYCARE_MON_1, 26
+//.set LOCALID_DAYCARE_MON_1, 26
 # 5 "data/maps/Route117/scripts.pory"
 
 # 6 "data/maps/Route117/scripts.pory"
@@ -97,7 +97,7 @@ Route117_EventScript_TryMoveDayCareMan::
 # 49 "data/maps/Route117/scripts.pory"
 	goto_if_unset FLAG_PENDING_DAYCARE_EGG, Route117_EventScript_StopMoveDayCareMan
 # 50 "data/maps/Route117/scripts.pory"
-	setobjectxyperm LOCALID_DAYCARE_MAN, 47, 6
+	setobjectxyperm LOCALID_DAYCARE_MAN, 47, 9
 # 51 "data/maps/Route117/scripts.pory"
 Route117_EventScript_StopMoveDayCareMan::
 # 52 "data/maps/Route117/scripts.pory"

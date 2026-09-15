@@ -8244,9 +8244,10 @@ Starting Status: ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Charjabug @ Eviolite  
-Level: 37
+Level: 38
 Ability: Battery  
 Tera Type: Bug  
+EVs: 128 Atk
 Serious Nature  
 - Sticky Web  
 - Eerie Impulse  
@@ -8254,7 +8255,7 @@ Serious Nature
 - Spark  
 
 Nosepass  
-Level: 38
+Level: 39
 Ability: Magnet Pull  
 Tera Type: Rock  
 - Flash Cannon  
@@ -8273,7 +8274,7 @@ IVs: 0 Atk
 - Round  
 
 
-Ferroseed  
+Ferroseed @ Occa Berry
 Level: 39
 Ability: Iron Barbs  
 Tera Type: Grass  
@@ -8372,7 +8373,7 @@ Plusle @ Focus Sash
 Level: 32
 Ability: Plus  
 Tera Type: Electric  
-EVs: 64 SpA / 4 SpD / 64 Spe  
+EVs: 64 SpA / 64 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Shock Wave  
@@ -8384,7 +8385,7 @@ Minun @ Shuca Berry
 Level: 32
 Ability: Minus  
 Tera Type: Electric  
-EVs: 64 HP / 4 SpA / 64 Spe  
+EVs: 64 HP / 64 Spe  
 Hasty Nature  
 - Shock Wave  
 - Encore  
@@ -8392,10 +8393,10 @@ Hasty Nature
 - Nuzzle  
 
 Klang @ Air Balloon  
-Level: 33
+Level: 35
 Ability: Plus  
 Tera Type: Ice  
-EVs: 64 HP / 64 SpA / 4 SpD  
+EVs: 64 HP / 64 SpA 
 Modest Nature  
 IVs: 0 Atk  
 - Charge Beam  
@@ -8982,16 +8983,16 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Vibrava  
 Ability: Levitate  
-Level: 44
+Level: 48
 Tera Type: Ground  
-EVs: 128 SpA  
+EVs: 252 HP
 - First Impression  
 - Dragon Claw  
 - Sandsear Storm  
 - Boomburst  
 
 Houndstone  
-Level: 42
+Level: 44
 Ability: Sand Rush  
 Tera Type: Ghost  
 - Shadow Sneak
@@ -9000,7 +9001,7 @@ Tera Type: Ghost
 - Yawn  
 
 Lycanroc  
-Level: 42
+Level: 44
 Ability: Sand Rush  
 Tera Type: Rock  
 - Brick Break  
@@ -9009,7 +9010,7 @@ Tera Type: Rock
 - Rock Slide  
 
 Maractus @ Safety Goggles  
-Level: 42
+Level: 44
 Ability: Water Absorb  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -13782,7 +13783,7 @@ Starting Status: ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Beldum  
-Level: 37
+Level: 39
 Ability: Rock Head  
 Tera Type: Steel  
 - Take Down  
@@ -13791,7 +13792,7 @@ Tera Type: Steel
 - Iron Defense  
 
 Yamper  
-Level: 37
+Level: 39
 Ability: Rattled
 Tera Type: Electric  
 - Thunder Fang  
@@ -13800,7 +13801,7 @@ Tera Type: Electric
 - Bite  
 
 Meltan  
-Level: 33
+Level: 34
 Ability: Magnet Pull  
 Tera Type: Steel  
 IVs: 0 Atk  
@@ -13810,7 +13811,7 @@ IVs: 0 Atk
 - Thunder Wave
 
 Eelektrik  
-Level: 33
+Level: 36
 Ability: Levitate  
 Tera Type: Electric  
 - Giga Drain  
@@ -14082,7 +14083,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Snivy  
 Ability: Contrary  
-Level: 37
+Level: 39
 EVs: 252 HP / 252 SpD  
 Careful Nature  
 - Glare  
@@ -14092,7 +14093,7 @@ Careful Nature
 
 Frillish  
 Ability: Damp  
-Level: 37
+Level: 39
 EVs: 252 HP / 128 Def / 128 SpD  
 Calm Nature  
 IVs: 0 Atk  
@@ -14103,7 +14104,7 @@ IVs: 0 Atk
 
 Tepig @ Salac Berry  
 Ability: Gluttony  
-Level: 37
+Level: 39
 EVs: 252 HP / 64 Atk / 192 Spe  
 Jolly Nature  
 - Endeavor  
@@ -14113,7 +14114,7 @@ Jolly Nature
 
 Lillipup  
 Ability: Pickup  
-Level: 37
+Level: 39
 EVs: 252 HP / 252 Spe  
 - Endure  
 - Reversal  
@@ -14903,7 +14904,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Togedemaru @ Shuca Berry  
 Ability: Iron Barbs  
-Level: 32
+Level: 33
 Tera Type: Electric  
 - Steelsurge  
 - Metal Claw
@@ -14912,7 +14913,7 @@ Tera Type: Electric
 
 Yanma @ Charti Berry  
 Ability: Speed Boost  
-Level: 33
+Level: 38
 Tera Type: Bug  
 IVs: 0 Atk  
 - Air Slash  
@@ -14931,7 +14932,7 @@ Tera Type: Electric
 
 Vigoroth @ Loaded Dice  
 Ability: Vital Spirit  
-Level: 33
+Level: 34
 Tera Type: Normal  
 - Fury Swipes  
 - Hone Claws  
@@ -14952,14 +14953,15 @@ Cyclizar
 Level: 32
 Ability: Shed Skin  
 Tera Type: Dragon  
+EVs: 128 HP
 - Shed Tail  
 - Shift Gear  
 - Magical Torque  
 - Wicked Torque  
 
 Yamper  
-Level: 38
-Ability: Competitive  
+Level: 39
+Ability: Pickup  
 Tera Type: Electric  
 - Electro Ball  
 - Agility  
@@ -14967,7 +14969,7 @@ Tera Type: Electric
 - Flame Charge  
 
 Graveler @ Custap Berry  
-Level: 33
+Level: 36
 Ability: Sturdy  
 Tera Type: Rock  
 - Body Press  
@@ -14976,7 +14978,7 @@ Tera Type: Rock
 - High Horsepower  
 
 Skiddo  
-Level: 38
+Level: 39
 Ability: Sap Sipper  
 Tera Type: Grass  
 - Trailblaze  
@@ -14997,7 +14999,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Blitzle @ Salac Berry  
 Ability: Motor Drive  
-Level: 36
+Level: 39
 Tera Type: Electric  
 - Trailblaze  
 - Electro Ball  
@@ -15005,8 +15007,8 @@ Tera Type: Electric
 - Quick Attack
 
 Growlithe-Hisui @ Shuca Berry
-Ability: Justified  
-Level: 36
+Ability: Intimidate  
+Level: 38
 Tera Type: Fire  
 - Extreme Speed
 - Flame Wheel
@@ -15086,8 +15088,9 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Varoom @ Shuca Berry  
-Level: 36
+Level: 38
 Ability: Overcoat  
+EVs: 128 HP
 Tera Type: Steel  
 - Spin Out  
 - Noxious Torque  
@@ -15095,8 +15098,9 @@ Tera Type: Steel
 - Poison Gas  
 
 Whirlipede @ Insect Plate   
-Level: 33
+Level: 37
 Ability: Speed Boost  
+EVs: 64 HP
 Tera Type: Bug  
 - Rollout  
 - Steamroller  
@@ -15104,7 +15108,7 @@ Tera Type: Bug
 - Steel Roller  
 
 Electrode   
-Level: 29
+Level: 31
 Ability: Aftermath 
 Tera Type: Electric  
 EVs: 252 Spe  
@@ -15127,7 +15131,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Phanpy  
 Ability: Pickup  
-Level: 35
+Level: 37
 EVs: 252 Atk / 84 Def / 84 SpD / 84 Spe  
 Adamant Nature  
 - Rollout  
@@ -15137,7 +15141,7 @@ Adamant Nature
 
 Pineco  
 Ability: Sturdy  
-Level: 35
+Level: 37
 EVs: 252 HP / 252 Atk  
 Brave Nature  
 IVs: 0 Spe  
@@ -15148,7 +15152,7 @@ IVs: 0 Spe
 
 Hitmontop (M) @ Expert Belt  
 Ability: Intimidate   
-Level: 31
+Level: 32
 Tera Type: Fighting  
 - Combat Torque  
 - Wicked Torque  
@@ -18458,7 +18462,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Wugtrio @ Bright Powder  
-Level: 43
+Level: 45
 Ability: Sand Veil  
 Tera Type: Water  
 - Triple Dive  
@@ -18467,7 +18471,7 @@ Tera Type: Water
 - Headbutt  
 
 Dugtrio @ Bright Powder  
-Level: 43
+Level: 46
 Ability: Sand Veil  
 Tera Type: Ground  
 - Shadow Claw  
@@ -18476,7 +18480,7 @@ Tera Type: Ground
 - Dig  
 
 Dugtrio-Alola @ Bright Powder  
-Level: 43
+Level: 46
 Ability: Sand Veil  
 Tera Type: Ground  
 - Metal Claw  
@@ -18485,7 +18489,7 @@ Tera Type: Ground
 - Aerial Ace  
 
 Sandy Shocks  
-Level: 40
+Level: 41
 Ability: Protosynthesis  
 Tera Type: Electric  
 IVs: 0 Atk  
@@ -24393,7 +24397,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Ledyba @ Focus Sash  
 Ability: Rattled  
-Level: 37
+Level: 39
 EVs: 252 HP / 252 Spe  
 Careful Nature  
 - Baton Pass  
@@ -24403,7 +24407,7 @@ Careful Nature
 
 Venonat @ Focus Band  
 Ability: Compound Eyes  
-Level: 37
+Level: 39
 EVs: 252 HP / 252 SpD  
 Careful Nature  
 - Sleep Powder  
@@ -24413,7 +24417,7 @@ Careful Nature
 
 Slakoth  
 Ability: Comatose  
-Level: 37
+Level: 39
 EVs: 252 HP  
 - Yawn  
 - Body Slam  
@@ -24422,7 +24426,7 @@ EVs: 252 HP
 
 Buneary  
 Ability: Limber  
-Level: 37
+Level: 39
 EVs: 252 HP / 252 Spe  
 Jolly Nature  
 - Entrainment  
@@ -24442,7 +24446,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Karrablast  
 Ability: No Guard  
-Level: 37
+Level: 39
 EVs: 252 HP / 252 Spe  
 IVs: 0 Atk  
 - Toxic  
@@ -24452,7 +24456,7 @@ IVs: 0 Atk
 
 Woobat @ Salac Berry  
 Ability: Simple  
-Level: 37
+Level: 39
 EVs: 252 HP / 252 Def  
 Timid Nature  
 IVs: 0 Atk  
@@ -24463,7 +24467,7 @@ IVs: 0 Atk
 
 Gothita  
 Ability: Shadow Tag  
-Level: 37
+Level: 39
 EVs: 252 HP / 252 Def
 Tera Type: Fighting  
 - Stored Power  
@@ -24474,7 +24478,7 @@ Tera Type: Fighting
 
 Toxel  
 Ability: Static  
-Level: 37
+Level: 39
 EVs: 252 HP / 252 Spe
 - Encore  
 - Nuzzle  
@@ -25796,7 +25800,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 
 Meowth-Galar  
-Level: 38
+Level: 39
 Ability: Unnerve  
 Tera Type: Electric  
 - Metal Claw  
@@ -25815,9 +25819,8 @@ IVs: 0 Atk
 - Mirror Shot  
 
 Duraludon  
-Level: 31
+Level: 32
 Ability: Stalwart  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tera Type: Steel  
 - Steel Roller  
 - Breaking Swipe  
@@ -25825,7 +25828,7 @@ Tera Type: Steel
 - Mirror Coat  
 
 Lairon  
-Level: 32
+Level: 34
 Ability: Sturdy  
 Tera Type: Steel  
 - Headbutt  
@@ -29881,7 +29884,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Beheeyem @ Safety Goggles  
-Level: 40
+Level: 42
 Ability: Synchronize  
 Tera Type: Psychic  
 IVs: 0 Atk  
@@ -29891,7 +29894,7 @@ IVs: 0 Atk
 - Expanding Force  
 
 Orthworm @ Sitrus Berry  
-Level: 40
+Level: 42
 Ability: Sand Veil  
 Tera Type: Steel  
 - Shed Tail  
@@ -29900,7 +29903,7 @@ Tera Type: Steel
 - Helping Hand  
 
 Archeops @ Sitrus Berry  
-Level: 40
+Level: 42
 Ability: Defeatist  
 Tera Type: Rock  
 - Acrobatics  
@@ -29909,7 +29912,7 @@ Tera Type: Rock
 - Lash Out  
 
 Sandslash  
-Level: 40
+Level: 42
 Ability: Sand Rush  
 Tera Type: Ground  
 - Hone Claws  
@@ -29929,7 +29932,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Sandaconda  
-Level: 40
+Level: 43
 Ability: Sand Veil  
 Tera Type: Ground  
 - Glare  
@@ -29938,7 +29941,7 @@ Tera Type: Ground
 - Drill Run  
 
 Heliolisk    
-Level: 40
+Level: 43
 Ability: Sand Veil  
 Tera Type: Electric  
 IVs: 0 Atk  
@@ -29948,7 +29951,7 @@ IVs: 0 Atk
 - Grass Knot  
 
 Claydol    
-Level: 40
+Level: 43
 Ability: Levitate  
 Tera Type: Ground  
 IVs: 0 Atk  
@@ -32779,7 +32782,7 @@ Starting Status: ELECTRIC_TERRAIN
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Blitzle  
-Level: 35
+Level: 38
 Ability: Lightning Rod  
 Tera Type: Fire  
 - Discharge  
@@ -32788,10 +32791,9 @@ Tera Type: Fire
 - Quick Attack  
 
 Pawmo  
-Level: 35
+Level: 38
 Ability: Volt Absorb  
 Tera Type: Electric  
-EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Fake Out  
 - Low Sweep  
@@ -32799,7 +32801,7 @@ Jolly Nature
 - Encore  
 
 Togedemaru  @ Shuca Berry
-Level: 32
+Level: 33
 Ability: Lightning Rod  
 Tera Type: Electric  
 - Nuzzle  
@@ -32821,7 +32823,7 @@ IVs: 0 Atk
 */
 
 Emolga  
-Level: 32
+Level: 33
 Ability: Motor Drive  
 Tera Type: Electric  
 IVs: 0 Atk  

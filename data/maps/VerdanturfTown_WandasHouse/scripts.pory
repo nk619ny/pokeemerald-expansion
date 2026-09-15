@@ -186,6 +186,8 @@ script VerdanturfTown_WandasHouse_EventScript_WallysUncle{
 		closemessage
 		giveitem(ITEM_TM_HIDDEN_POWER)
 		waitfanfare
+		closemessage
+		releaseall
 		end
 	}
 	goto_if_set(FLAG_DEFEATED_WALLY_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande)

@@ -3,7 +3,6 @@
   "name": "VerdanturfTown_WandasHouse",
   "layout": "LAYOUT_VERDANTURF_TOWN_WANDAS_HOUSE",
   "music": "MUS_VERDANTURF",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_VERDANTURF_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -52,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VerdanturfTown_WandasHouse_EventScript_WallysUncle",
-      "flag": "FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLYS_UNCLE"
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
@@ -98,5 +97,6 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }
