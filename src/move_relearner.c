@@ -317,7 +317,9 @@ void TeachMoveRelearnerMove(void)
 {
     LockPlayerFieldControls();
     CreateTask(Task_WaitForFadeOut, 10);
-    gRelearnMode = RELEARN_MODE_SCRIPT;
+    // Don't clobber a mode (e.g. elite/egg script) already set by the caller
+    if (gRelearnMode == RELEARN_MODE_NONE)
+        gRelearnMode = RELEARN_MODE_SCRIPT;
     // Fade to black
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
 }
