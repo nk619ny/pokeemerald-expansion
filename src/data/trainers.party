@@ -12444,8 +12444,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Fezandipiti (M) @ Expert Belt  
 Ability: Toxic Chain  
 Tera Type: Poison  
-Level: 46
-EVs: 4 HP / 252 Atk / 252 Spe  
+Level: 45
+EVs: 188 Atk / 188 Spe  
 Jolly Nature  
 - Gunk Shot  
 - Play Rough  
@@ -12454,9 +12454,9 @@ Jolly Nature
 
 Brute Bonnet @ Booster Energy  
 Ability: Protosynthesis  
-Level: 46
+Level: 45
 Tera Type: Grass  
-EVs: 252 HP / 252 Atk / 4 SpD  
+EVs: 188 HP / 188 Atk
 Adamant Nature  
 - Sucker Punch  
 - Spore  
@@ -12467,7 +12467,7 @@ Scrafty @ Scraftinite
 Ability: Intimidate  
 Level: 48
 Tera Type: Dark  
-EVs: 252 HP / 252 Atk / 4 Spe  
+EVs: 188 HP / 188 Atk
 Adamant Nature  
 - Fake Out  
 - Poison Jab  
@@ -12476,9 +12476,9 @@ Adamant Nature
 
 Moltres-Galar @ Sitrus Berry  
 Ability: Berserk  
-Level: 46
+Level: 45
 Tera Type: Dark  
-EVs: 4 HP / 252 SpA / 252 Spe  
+EVs: 188 SpA / 188 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Fiery Wrath  
@@ -12489,7 +12489,7 @@ IVs: 0 Atk
 Bisharp @ Chople Berry  
 Ability: Defiant  
 Level: 47
-EVs: 252 HP / 252 Atk / 4 SpD  
+EVs: 188 HP / 188 Atk
 Adamant Nature  
 - Iron Head  
 - Sucker Punch  
@@ -12498,8 +12498,8 @@ Adamant Nature
 
 Ting-Lu @ Leftovers  
 Ability: Vessel of Ruin   
-Level: 46
-EVs: 128 HP / 252 Def / 128 SpD  
+Level: 45
+EVs: 128 HP / 128 Def / 128 SpD  
 Relaxed Nature  
 - Sand Tomb  
 - Ruination  
@@ -14361,6 +14361,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gyarados @ Wacan Berry  
 Ability: Intimidate  
+Level: 45
 - Bounce  
 - Power Whip  
 - Earthquake  
@@ -14368,6 +14369,7 @@ Ability: Intimidate
 
 Octillery  
 Ability: Sniper  
+Level: 45
 IVs: 0 Atk  
 - Octazooka  
 - Energy Ball  
@@ -14376,6 +14378,7 @@ IVs: 0 Atk
 
 Mantine @ Wacan Berry  
 Ability: Swift Swim  
+Level: 45
 Tera Type: Ground  
 IVs: 0 Atk  
 - Air Slash  
@@ -14385,6 +14388,7 @@ IVs: 0 Atk
 
 Whiscash @ Rindo Berry
 Ability: Oblivious  
+Level: 45
 - Earth Power  
 - Waterfall  
 - Dragon Dance  
@@ -23710,10 +23714,10 @@ Adamant Nature
 
 Meganium @ Big Root  
 Ability: Flower Veil  
-Level: 45
+Level: 44
 Ball: Safari
 Tera Type: Grass  
-EVs: 252 HP / 4 Def / 252 SpA  
+EVs: 252 HP / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
 - Flower Shield  
@@ -23735,25 +23739,25 @@ Adamant Nature
 
 Sceptile @ Grassy Seed  
 Ability: Unburden  
-Level: 45
+Level: 44
 Ball: Safari
 Tera Type: Rock  
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 252 SpA / 252 Spe  
 Modest Nature  
-IVs: 0 Atk/* IVs: 31 HP / 3 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Rock IVs for Min Atk */
+IVs: 0 Atk
 - Energy Ball  
 - Dragon Pulse  
 - Hidden Power
 - Detect  
 
 Florges-Red (F) @ Grassy Seed  
-Level: 45
+Level: 44
 Ability: Flower Veil  
 Ball: Safari
 Tera Type: Ground  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
-IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */
+IVs: 0 Atk
 - Hidden Power
 - Energy Ball  
 - Moonblast  
@@ -25208,7 +25212,7 @@ Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Prefer Status Moves
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware 
 
 Qwilfish-Hisui
 Ability: Intimidate  

@@ -169,81 +169,89 @@ EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 # 85 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 
 # 86 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-EverGrandeCity_PhoebesRoom_EventScript_Lucy::
+EverGrandeCity_PhoebesOriginal_Text_Defeat:
 # 87 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	lock
+	.string "Oh, darn.\n"
 # 88 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	faceplayer
+	.string "I've gone and lost.$"
 # 89 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
+
 # 90 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+EverGrandeCity_PhoebesRoom_EventScript_Lucy::
 # 91 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	lock
 # 92 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_LUCY, EverGrandeCity_PhoebesRoom_Text_Defeat
+	faceplayer
 # 93 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
+	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 # 94 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+# 95 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+# 96 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	trainerbattle_no_intro TRAINER_LUCY, EverGrandeCity_PhoebesRoom_Text_Defeat
+# 97 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
+# 98 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	end
 
 EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech::
-# 116 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 120 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	lock
-# 117 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
-	goto_if_set FLAG_ALL_ELITE_FOUR_BEATEN, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech_2
 # 121 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+	goto_if_set FLAG_ALL_ELITE_FOUR_BEATEN, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech_2
+# 125 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_NPC
 EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech_1:
-# 123 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 127 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	waitmessage
-# 124 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 128 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	releaseall
 	end
 
 EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech_2:
-# 118 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 122 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_Text_PostE4Speech, MSGBOX_NPC
 	goto EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech_1
 
 
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
-# 129 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 133 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	lock
-# 130 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 134 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	faceplayer
-# 131 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 135 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_Phoebe_2
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe_1:
-# 134 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 138 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
-# 135 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 139 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-# 136 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 140 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	random 2
-# 137 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 141 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq EverGrandeCity_PhoebesRoom_EventScript_Phoebe_5
-# 141 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 145 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_LUCY_2, EverGrandeCity_PhoebesRoom_Text_Defeat
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe_4:
-# 143 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 147 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
 	return
 
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe_2:
-# 132 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 136 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	goto EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 	goto EverGrandeCity_PhoebesRoom_EventScript_Phoebe_1
 
 EverGrandeCity_PhoebesRoom_EventScript_Phoebe_5:
-# 138 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 142 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_LUCY, EverGrandeCity_PhoebesRoom_Text_Defeat
 	goto EverGrandeCity_PhoebesRoom_EventScript_Phoebe_4
 
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech::
-# 99 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 103 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "I am Lucy… You have entered my domain…\p"
 	.string "You already know it, but to advance, you\n"
 	.string "must defeat me.\p"
@@ -252,16 +260,16 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech::
 	.string "use it all up to get here…$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat::
-# 103 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 107 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "Urk…$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech::
-# 107 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 111 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "…That's all there is… Disappear\n"
 	.string "already…$"
 
 EverGrandeCity_PhoebesRoom_Text_PostE4Speech::
-# 111 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
+# 115 "data/maps/EverGrandeCity_PhoebesRoom/scripts.pory"
 	.string "You are never so skilled that victory is\n"
 	.string "completely certain.\p"
 	.string "More often than not, luck is what tilts\n"

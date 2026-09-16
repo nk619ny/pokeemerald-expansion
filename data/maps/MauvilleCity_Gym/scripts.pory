@@ -493,10 +493,10 @@ script MauvilleCity_Gym_EventScript_Switch3New {
 	setvar(TempVar_Switch3, 1)
 	setvar(VAR_0x8004, 0)
 	setmetatile(3, 9, METATILE_MauvilleGym_PressedSwitch, FALSE)
-	setmetatile(6, 8, METATILE_MauvilleGym_PoleBottom_Off, FALSE)
+	setmetatile(6, 8, METATILE_MauvilleGym_PoleBottom_Off, TRUE)
 	setmetatile(6, 9, METATILE_MauvilleGym_FloorTile, FALSE)
 	setmetatile(6, 10, METATILE_MauvilleGym_PoleTop_Off, FALSE)
-	setmetatile(3, 11, METATILE_MauvilleGym_PoleBottom_Off, FALSE)
+	setmetatile(3, 11, METATILE_MauvilleGym_PoleBottom_Off, TRUE)
 	setmetatile(3, 12, METATILE_MauvilleGym_FloorTile, FALSE)
 	setmetatile(3, 13, METATILE_MauvilleGym_PoleTop_Off, FALSE)
 	//special(MauvilleGymPressSwitch)
@@ -710,7 +710,7 @@ script MauvilleCity_Gym_EventScript_CallFromProfBirch {
 }
 
 text MauvilleCity_Gym_Text_ProfBirchCall {
-    format("… … … … … …\n… … … … … Beep!\pProf. Birch: Hello, {PLAYER}!\pI just saw a Mega Ring registered to you come online.\pTo celebrate, I'd like to give you a Mega Stone!\pPlease swing by my lab when you have a chance.\p… … … … … …\n… … … … … Click!")
+    format("… … … … … …\n… … … … … Beep!\pProf. Birch: Hello, {PLAYER}!\pI just saw a Mega Ring registered to you come online.\pTo celebrate, I'd like to give you a\NMega Stone!\pPlease swing by my lab when you have a chance.\p… … … … … …\n… … … … … Click!")
 }
 
 

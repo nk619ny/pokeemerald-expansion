@@ -2839,7 +2839,7 @@ text MatchCall_Text_Rival_3_2 {
 }
 
 text MatchCall_Text_Rival_3_3 {
-	format("{RIVAL}: Hi there, {PLAYER}!\pI'm visiting Mt. Pyre right now.\pI swear I keep hearing bells, but I can't figure out where they're\Ncoming from")
+	format("{RIVAL}: Hi there, {PLAYER}!\pI'm visiting Mt. Pyre right now.\pI swear I keep hearing bells, but I\Ncan't figure out where they're\Ncoming from!")
 }
 
 text MatchCall_Text_Rival_3_4 {

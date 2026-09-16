@@ -570,7 +570,7 @@ NewTrainerHill_Text_Phoebe:
 NewTrainerHill_Text_Sidney:
 	.string "I like that look you're giving me.\n"
 	.string "I guess you'll give me a good match.\l"
-	.string "That's good! Looking real good!\p"
+	.string "That's good! Looking real good!$"
 
 `
 
@@ -683,11 +683,11 @@ script NewTrainerHill_EventScript_StartBattle {
 		case 2:
 			trainerbattle_no_intro(TRAINER_HILL_2, NewTrainerHill_Text_GlaciaDefeat)
 		case 3:
-			trainerbattle_no_intro(TRAINER_HILL_3, EverGrandeCity_SidneysRoom_Text_Defeat)
+			trainerbattle_no_intro(TRAINER_HILL_3, EverGrandeCity_SidneysOriginalText_Defeat)
 		case 4:
-			trainerbattle_no_intro(TRAINER_HILL_4, EverGrandeCity_DrakesRoom_Text_Defeat)
+			trainerbattle_no_intro(TRAINER_HILL_4, EverGrandeCity_DrakesOriginal_Text_Defeat)
 		case 5:
-			trainerbattle_no_intro(TRAINER_HILL_5, EverGrandeCity_PhoebesRoom_Text_Defeat)
+			trainerbattle_no_intro(TRAINER_HILL_5, EverGrandeCity_PhoebesOriginal_Text_Defeat)
 		case 6:
 			trainerbattle_no_intro(TRAINER_HILL_6, NewTrainerHill_Text_SpenserDefeat)
 		case 7:

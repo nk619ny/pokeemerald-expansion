@@ -31,7 +31,8 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "local_id": "LOCALID_ROUTE111_VICTOR",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M_ORAS",
       "x": 16,
       "y": 51,
       "elevation": 3,
@@ -44,7 +45,8 @@
       "flag": "FLAG_HIDE_ROUTE_111_VICTOR_WINSTRATE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
+      "local_id": "LOCALID_ROUTE111_VICKY",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F_ORAS",
       "x": 16,
       "y": 50,
       "elevation": 0,
@@ -57,7 +59,8 @@
       "flag": "FLAG_HIDE_ROUTE_111_VICKY_WINSTRATE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "local_id": "LOCALID_ROUTE111_VIVI",
+      "graphics_id": "OBJ_EVENT_GFX_LASS_ORAS",
       "x": 16,
       "y": 50,
       "elevation": 0,
@@ -70,7 +73,8 @@
       "flag": "FLAG_HIDE_ROUTE_111_VIVI_WINSTRATE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "local_id": "LOCALID_ROUTE111_VICTORIA",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F_ORAS",
       "x": 16,
       "y": 50,
       "elevation": 0,

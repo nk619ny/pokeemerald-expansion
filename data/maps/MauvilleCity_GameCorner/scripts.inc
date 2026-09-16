@@ -7994,45 +7994,45 @@ MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_9:
 
 MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_10:
 # 2831 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 750, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+	goto_if_lt VAR_TEMP_2, 1000, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
 # 2832 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 750
+	buffernumberstring STR_VAR_2, 1000
 # 2833 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyStarterPokemon_Text_28, MSGBOX_YESNO
 # 2834 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
 # 2835 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 750
+	removecoins 1000
 # 2836 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	givemon SPECIES_SNORLAX, 5
 	goto MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_1
 
 MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_11:
 # 2838 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 750, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+	goto_if_lt VAR_TEMP_2, 1000, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
 # 2839 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 750
+	buffernumberstring STR_VAR_2, 1000
 # 2840 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyStarterPokemon_Text_28, MSGBOX_YESNO
 # 2841 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
 # 2842 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 750
+	removecoins 1000
 # 2843 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	givemon SPECIES_MIMIKYU, 5
 	goto MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_1
 
 MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_12:
 # 2845 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	goto_if_lt VAR_TEMP_2, 1500, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
+	goto_if_lt VAR_TEMP_2, 2000, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize
 # 2846 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	buffernumberstring STR_VAR_2, 1500
+	buffernumberstring STR_VAR_2, 2000
 # 2847 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	msgbox MauvilleCity_GameCorner_EventScript_BuyStarterPokemon_Text_28, MSGBOX_YESNO
 # 2848 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater
 # 2849 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	removecoins 1500
+	removecoins 2000
 # 2850 "data/maps/MauvilleCity_GameCorner/scripts.pory"
 	givemon SPECIES_ROTOM, 5
 	goto MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_1
@@ -8605,7 +8605,7 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_95:
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_96:
 # 1063 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Snorlax        500 coins$"
+	.string "Snorlax          500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_97:
 # 1064 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -8613,15 +8613,15 @@ MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_97:
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_98:
 # 1065 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Sandaconda      500 coins$"
+	.string "Sandaconda    500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_99:
 # 1066 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Orbeetlite      500 coins$"
+	.string "Orbeetle        500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_100:
 # 1067 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Copperajite     500 coins$"
+	.string "Copperajah     500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyMegaStones_Text_101:
 # 1068 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -8949,7 +8949,7 @@ MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_20:
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_21:
 # 2220 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Liechi Berry      250 coins$"
+	.string "Liechi Berry     250 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems_Text_22:
 # 2221 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -9003,7 +9003,7 @@ MauvilleCity_GameCorner_EventScript_BuyTMs_Text_2:
 
 MauvilleCity_GameCorner_EventScript_BuyTMs_Text_3:
 # 2450 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Thunderbolt       500 coins$"
+	.string "Thunderbolt      500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyTMs_Text_4:
 # 2451 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -9015,7 +9015,7 @@ MauvilleCity_GameCorner_EventScript_BuyTMs_Text_5:
 
 MauvilleCity_GameCorner_EventScript_BuyTMs_Text_6:
 # 2453 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Energy Ball     500 coins$"
+	.string "Energy Ball       500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyTMs_Text_7:
 # 2454 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -9023,7 +9023,7 @@ MauvilleCity_GameCorner_EventScript_BuyTMs_Text_7:
 
 MauvilleCity_GameCorner_EventScript_BuyTMs_Text_8:
 # 2455 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Hyper Voice     500 coins$"
+	.string "Hyper Voice      500 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyTMs_Text_9:
 # 2456 "data/maps/MauvilleCity_GameCorner/scripts.pory"
@@ -9259,15 +9259,15 @@ MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_Text_6:
 
 MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_Text_7:
 # 2771 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Snorlax             750 coins$"
+	.string "Snorlax            1000 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_Text_8:
 # 2772 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Mimikyu             750 coins$"
+	.string "Mimikyu            1000 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_Text_9:
 # 2773 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "Rotom              1500 coins$"
+	.string "Rotom              2000 coins$"
 
 MauvilleCity_GameCorner_EventScript_BuyPrizePokemon_Text_10:
 # 2774 "data/maps/MauvilleCity_GameCorner/scripts.pory"

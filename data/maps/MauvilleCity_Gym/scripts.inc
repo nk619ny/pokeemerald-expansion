@@ -961,13 +961,13 @@ MauvilleCity_Gym_EventScript_Switch3New::
 # 495 "data/maps/MauvilleCity_Gym/scripts.pory"
 	setmetatile 3, 9, METATILE_MauvilleGym_PressedSwitch, FALSE
 # 496 "data/maps/MauvilleCity_Gym/scripts.pory"
-	setmetatile 6, 8, METATILE_MauvilleGym_PoleBottom_Off, FALSE
+	setmetatile 6, 8, METATILE_MauvilleGym_PoleBottom_Off, TRUE
 # 497 "data/maps/MauvilleCity_Gym/scripts.pory"
 	setmetatile 6, 9, METATILE_MauvilleGym_FloorTile, FALSE
 # 498 "data/maps/MauvilleCity_Gym/scripts.pory"
 	setmetatile 6, 10, METATILE_MauvilleGym_PoleTop_Off, FALSE
 # 499 "data/maps/MauvilleCity_Gym/scripts.pory"
-	setmetatile 3, 11, METATILE_MauvilleGym_PoleBottom_Off, FALSE
+	setmetatile 3, 11, METATILE_MauvilleGym_PoleBottom_Off, TRUE
 # 500 "data/maps/MauvilleCity_Gym/scripts.pory"
 	setmetatile 3, 12, METATILE_MauvilleGym_FloorTile, FALSE
 # 501 "data/maps/MauvilleCity_Gym/scripts.pory"
@@ -1457,8 +1457,8 @@ MauvilleCity_Gym_Text_ProfBirchCall::
 	.string "Prof. Birch: Hello, {PLAYER}!\p"
 	.string "I just saw a Mega Ring registered to\n"
 	.string "you come online.\p"
-	.string "To celebrate, I'd like to give you a Mega\n"
-	.string "Stone!\p"
+	.string "To celebrate, I'd like to give you a\n"
+	.string "Mega Stone!\p"
 	.string "Please swing by my lab when you have a\n"
 	.string "chance.\p"
 	.string "… … … … … …\n"

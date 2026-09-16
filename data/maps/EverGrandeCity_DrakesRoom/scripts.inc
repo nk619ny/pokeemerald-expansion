@@ -185,81 +185,89 @@ EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 # 93 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 
 # 94 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-EverGrandeCity_DrakesRoom_EventScript_Tucker::
+
 # 95 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	lock
+EverGrandeCity_DrakesOriginal_Text_Defeat:
 # 96 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	faceplayer
+	.string "Superb, it should be said.$"
 # 97 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
+
 # 98 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+EverGrandeCity_DrakesRoom_EventScript_Tucker::
 # 99 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+	lock
 # 100 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_TUCKER, EverGrandeCity_DrakesRoom_Text_Defeat
+	faceplayer
 # 101 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
+	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
 # 102 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+# 103 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
+# 104 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	trainerbattle_no_intro TRAINER_TUCKER, EverGrandeCity_DrakesRoom_Text_Defeat
+# 105 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
+# 106 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	end
 
 EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech::
-# 122 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 126 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	lock
-# 123 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
-	goto_if_set FLAG_ALL_ELITE_FOUR_BEATEN, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech_2
 # 127 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+	goto_if_set FLAG_ALL_ELITE_FOUR_BEATEN, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech_2
+# 131 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_DrakesRoom_Text_PostBattleSpeech, MSGBOX_NPC
 EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech_1:
-# 129 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 133 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	waitmessage
-# 130 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 134 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	releaseall
 	end
 
 EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech_2:
-# 124 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 128 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_DrakesRoom_Text_PostE4Speech, MSGBOX_NPC
 	goto EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech_1
 
 
 EverGrandeCity_DrakesRoom_EventScript_Drake::
-# 135 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 139 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	lock
-# 136 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 140 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	faceplayer
-# 137 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 141 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_Drake_2
 EverGrandeCity_DrakesRoom_EventScript_Drake_1:
-# 140 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 144 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
-# 141 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 145 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-# 142 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 146 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	random 2
-# 143 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 147 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq EverGrandeCity_DrakesRoom_EventScript_Drake_5
-# 147 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 151 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_TUCKER_2, EverGrandeCity_DrakesRoom_Text_Defeat
 EverGrandeCity_DrakesRoom_EventScript_Drake_4:
-# 149 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 153 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
 	return
 
 EverGrandeCity_DrakesRoom_EventScript_Drake_2:
-# 138 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 142 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	goto EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
 	goto EverGrandeCity_DrakesRoom_EventScript_Drake_1
 
 EverGrandeCity_DrakesRoom_EventScript_Drake_5:
-# 144 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 148 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	trainerbattle_no_intro TRAINER_TUCKER, EverGrandeCity_DrakesRoom_Text_Defeat
 	goto EverGrandeCity_DrakesRoom_EventScript_Drake_4
 
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech::
-# 105 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 109 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "Ahahah! Do you hear it? The crowd!\n"
 	.string "They're all itching to see our match!\p"
 	.string "Ahahah! I bet you're twitching all over\n"
@@ -275,11 +283,11 @@ EverGrandeCity_DrakesRoom_Text_IntroSpeech::
 	.string "Let the battle begin!$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat::
-# 109 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 113 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "What the…$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech::
-# 113 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 117 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "You're genuinely fantastic! Yes, quite\n"
 	.string "fantastic!\p"
 	.string "You're strong, but above all, you have a\n"
@@ -291,7 +299,7 @@ EverGrandeCity_DrakesRoom_Text_PostBattleSpeech::
 	.string "Four!$"
 
 EverGrandeCity_DrakesRoom_Text_PostE4Speech::
-# 117 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
+# 121 "data/maps/EverGrandeCity_DrakesRoom/scripts.pory"
 	.string "You're genuinely fantastic! Yes, quite\n"
 	.string "fantastic!\p"
 	.string "You're strong, but above all, you have a\n"

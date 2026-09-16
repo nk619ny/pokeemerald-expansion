@@ -1143,7 +1143,7 @@ NewTrainerHill_Text_Sidney:
 # 572 "data/maps/NewTrainerHill/scripts.pory"
 	.string "I guess you'll give me a good match.\l"
 # 573 "data/maps/NewTrainerHill/scripts.pory"
-	.string "That's good! Looking real good!\p"
+	.string "That's good! Looking real good!$"
 
 NewTrainerHill_EventScript_SetupAudienceCount::
 # 598 "data/maps/NewTrainerHill/scripts.pory"
@@ -1388,17 +1388,17 @@ NewTrainerHill_EventScript_StartBattle_4:
 
 NewTrainerHill_EventScript_StartBattle_5:
 # 686 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_3, EverGrandeCity_SidneysRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_HILL_3, EverGrandeCity_SidneysOriginalText_Defeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_6:
 # 688 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_4, EverGrandeCity_DrakesRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_HILL_4, EverGrandeCity_DrakesOriginal_Text_Defeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_7:
 # 690 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_5, EverGrandeCity_PhoebesRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_HILL_5, EverGrandeCity_PhoebesOriginal_Text_Defeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_8:

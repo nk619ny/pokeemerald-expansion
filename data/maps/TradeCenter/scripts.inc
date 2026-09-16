@@ -7353,9 +7353,9 @@ MatchCall_Text_Rival_3_3::
 # 2841 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi there, {PLAYER}!\p"
 	.string "I'm visiting Mt. Pyre right now.\p"
-	.string "I swear I keep hearing bells, but I can't\n"
-	.string "figure out where they're\l"
-	.string "coming from$"
+	.string "I swear I keep hearing bells, but I\n"
+	.string "can't figure out where they're\l"
+	.string "coming from!$"
 
 MatchCall_Text_Rival_3_4::
 # 2845 "data/maps/TradeCenter/scripts.pory"

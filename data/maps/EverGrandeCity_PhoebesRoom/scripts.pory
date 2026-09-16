@@ -83,6 +83,10 @@ EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 	.string "Go ahead, move on to the next room.$"
 */
 
+EverGrandeCity_PhoebesOriginal_Text_Defeat:
+	.string "Oh, darn.\n"
+	.string "I've gone and lost.$"
+
 EverGrandeCity_PhoebesRoom_EventScript_Lucy::
 	lock
 	faceplayer

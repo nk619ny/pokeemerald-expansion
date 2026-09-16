@@ -86,6 +86,10 @@ EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
 	.string "your next battle!$"
 */
 
+EverGrandeCity_SidneysOriginalText_Defeat:
+	.string "Well, how do you like that? I lost!\n"
+	.string "Eh, it was fun, so it doesn't matter.$"
+
 EverGrandeCity_SidneysRoom_EventScript_Noland::
 	lock
 	faceplayer

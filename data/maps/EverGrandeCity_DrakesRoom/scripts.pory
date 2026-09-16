@@ -91,6 +91,10 @@ EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 	.string "The CHAMPION is waiting!$"
 */
 
+
+EverGrandeCity_DrakesOriginal_Text_Defeat:
+	.string "Superb, it should be said.$"
+
 EverGrandeCity_DrakesRoom_EventScript_Tucker::
 	lock
 	faceplayer
