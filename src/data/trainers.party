@@ -11122,7 +11122,7 @@ Adamant Nature
 - Sky Uppercut  
 
 Ceruledge @ Salac Berry  
-Level: 42
+Level: 41
 Ball: Love
 Ability: Weak Armor  
 Tera Type: Fire  
@@ -11134,7 +11134,7 @@ Jolly Nature
 - X-Scissor  
 
 Lilligant-Hisui (F) @ Coba Berry  
-Level: 42
+Level: 41
 Ball: Love
 Ability: Chlorophyll  
 Tera Type: Grass  
@@ -11146,7 +11146,7 @@ Adamant Nature
 - Triple Axel  
 
 Solrock @ Enigma Berry  
-Level: 42
+Level: 41
 Ball: Love
 Ability: Levitate  
 Tera Type: Rock  
@@ -22479,7 +22479,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Donphan  
 Ability: Sturdy  
-Level: 48
+Level: 39
 Tera Type: Ground  
 - Spin Out  
 - High Horsepower  
@@ -22489,7 +22489,7 @@ Tera Type: Ground
 
 Scolipede @ Insect Plate  
 Ability: Speed Boost   
-Level: 48
+Level: 39
 Tera Type: Bug  
 - Noxious Torque  
 - Steamroller  
@@ -22498,7 +22498,7 @@ Tera Type: Bug
 
 Hitmontop (M) @ Expert Belt  
 Ability: Intimidate   
-Level: 48
+Level: 39
 Tera Type: Fighting  
 - Combat Torque  
 - Wicked Torque  
@@ -22507,7 +22507,7 @@ Tera Type: Fighting
 
 Revavroom @ Shuca Berry  
 Ability: Filter   
-Level: 48
+Level: 39
 Tera Type: Steel  
 - Shift Gear  
 - Noxious Torque  
@@ -25302,8 +25302,8 @@ Tera Type: Fire
 - Psychic Fangs  
 - Wild Charge  
 
-Rhydon
-Ability: Solid Rock  
+Rhydon @ Enigma Berry
+Ability: Reckless
 Level: 40
 Tera Type: Ground  
 EVs: 252 SpD  

@@ -3,7 +3,6 @@
   "name": "MauvilleCity",
   "layout": "LAYOUT_MAUVILLE_CITY",
   "music": "MUS_RUSTBORO",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MAUVILLE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -132,7 +131,7 @@
       "local_id": "LOCALID_MAUVILLE_SCOTT",
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
       "x": 12,
-      "y": 17,
+      "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -156,7 +155,6 @@
       "script": "MauvilleCity_EventScript_Gallade",
       "flag": "FLAG_HIDE_MAUVILLE_CITY_WALLY"
     },
-
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
       "x": 24,
@@ -323,5 +321,6 @@
       "item": "ITEM_THUNDER_STONE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_POKE_BALL"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

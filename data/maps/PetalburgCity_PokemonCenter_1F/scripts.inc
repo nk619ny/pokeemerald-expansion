@@ -211,36 +211,46 @@ PokemonCenter_1F_EventScript_Abra_16:
 # 121 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	goto_if_set FLAG_VISITED_MAUVILLE_CITY, PokemonCenter_1F_EventScript_Abra_20
 PokemonCenter_1F_EventScript_Abra_19:
-# 123 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_set FLAG_VISITED_FALLARBOR_TOWN, PokemonCenter_1F_EventScript_Abra_23
+# 122 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_set FLAG_VISITED_LAVARIDGE_TOWN, PokemonCenter_1F_EventScript_Abra_23
 PokemonCenter_1F_EventScript_Abra_22:
-# 125 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_set FLAG_VISITED_FORTREE_CITY, PokemonCenter_1F_EventScript_Abra_26
+# 123 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_set FLAG_VISITED_FALLARBOR_TOWN, PokemonCenter_1F_EventScript_Abra_26
 PokemonCenter_1F_EventScript_Abra_25:
+# 124 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_set FLAG_VISITED_RUSTBORO_CITY, PokemonCenter_1F_EventScript_Abra_29
+PokemonCenter_1F_EventScript_Abra_28:
+# 125 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_set FLAG_VISITED_FORTREE_CITY, PokemonCenter_1F_EventScript_Abra_32
+PokemonCenter_1F_EventScript_Abra_31:
 # 126 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	dynmultipush PokemonCenter_1F_EventScript_Abra_Text_8, 127
+	dynmultipush PokemonCenter_1F_EventScript_Abra_Text_10, 127
 # 127 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	dynmultistack 25, 2, FALSE, 5, 0, 1, DYN_MULTICHOICE_CB_NONE
 # 128 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	switch VAR_RESULT
 # 129 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	case 1, PokemonCenter_1F_EventScript_Abra_30
+	case 1, PokemonCenter_1F_EventScript_Abra_36
 # 141 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	case 2, PokemonCenter_1F_EventScript_Abra_31
+	case 2, PokemonCenter_1F_EventScript_Abra_37
 # 153 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	case 3, PokemonCenter_1F_EventScript_Abra_32
+	case 3, PokemonCenter_1F_EventScript_Abra_38
 # 165 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	case 4, PokemonCenter_1F_EventScript_Abra_33
-# 180 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	case 6, PokemonCenter_1F_EventScript_Abra_34
-# 188 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	case 8, PokemonCenter_1F_EventScript_Abra_35
-# 193 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	case 127, PokemonCenter_1F_EventScript_Abra_36
-PokemonCenter_1F_EventScript_Abra_36:
-# 195 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	case 4, PokemonCenter_1F_EventScript_Abra_39
+# 177 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	case 5, PokemonCenter_1F_EventScript_Abra_40
+# 182 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	case 6, PokemonCenter_1F_EventScript_Abra_41
+# 187 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	case 7, PokemonCenter_1F_EventScript_Abra_42
+# 192 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	case 8, PokemonCenter_1F_EventScript_Abra_43
+# 197 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	case 127, PokemonCenter_1F_EventScript_Abra_44
+PokemonCenter_1F_EventScript_Abra_44:
+# 199 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	closemessage
-# 196 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+# 200 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	releaseall
 	end
 
@@ -290,301 +300,329 @@ PokemonCenter_1F_EventScript_Abra_20:
 	goto PokemonCenter_1F_EventScript_Abra_19
 
 PokemonCenter_1F_EventScript_Abra_23:
-# 123 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	dynmultipush PokemonCenter_1F_EventScript_Abra_Text_6, 6
+# 122 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	dynmultipush PokemonCenter_1F_EventScript_Abra_Text_6, 5
 	goto PokemonCenter_1F_EventScript_Abra_22
 
 PokemonCenter_1F_EventScript_Abra_26:
-# 125 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	dynmultipush PokemonCenter_1F_EventScript_Abra_Text_7, 8
+# 123 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	dynmultipush PokemonCenter_1F_EventScript_Abra_Text_7, 6
 	goto PokemonCenter_1F_EventScript_Abra_25
 
-PokemonCenter_1F_EventScript_Abra_28:
-# 199 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	closemessage
-# 200 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	waitstate
-# 201 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	releaseall
-	end
-
-PokemonCenter_1F_EventScript_Abra_30:
-# 130 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PokemonCenter_1F_EventScript_Abra_Text_9
-# 131 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	delay 30
-# 132 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_38
-PokemonCenter_1F_EventScript_Abra_37:
-# 133 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_50
-PokemonCenter_1F_EventScript_Abra_49:
-# 134 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_62
-PokemonCenter_1F_EventScript_Abra_61:
-# 135 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_74
-PokemonCenter_1F_EventScript_Abra_73:
-# 136 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_86
-PokemonCenter_1F_EventScript_Abra_85:
-# 137 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_98
-PokemonCenter_1F_EventScript_Abra_97:
-# 138 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_110
-PokemonCenter_1F_EventScript_Abra_109:
-# 139 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	warpteleport MAP_PETALBURG_CITY, 20, 17
-	goto PokemonCenter_1F_EventScript_Abra_28
-
-PokemonCenter_1F_EventScript_Abra_31:
-# 142 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PokemonCenter_1F_EventScript_Abra_Text_9
-# 143 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	delay 30
-# 144 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_41
-PokemonCenter_1F_EventScript_Abra_40:
-# 145 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_53
-PokemonCenter_1F_EventScript_Abra_52:
-# 146 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_65
-PokemonCenter_1F_EventScript_Abra_64:
-# 147 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_77
-PokemonCenter_1F_EventScript_Abra_76:
-# 148 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_89
-PokemonCenter_1F_EventScript_Abra_88:
-# 149 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_101
-PokemonCenter_1F_EventScript_Abra_100:
-# 150 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_113
-PokemonCenter_1F_EventScript_Abra_112:
-# 151 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	warpteleport MAP_DEWFORD_TOWN, 17, 11
+PokemonCenter_1F_EventScript_Abra_29:
+# 124 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	dynmultipush PokemonCenter_1F_EventScript_Abra_Text_8, 7
 	goto PokemonCenter_1F_EventScript_Abra_28
 
 PokemonCenter_1F_EventScript_Abra_32:
+# 125 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	dynmultipush PokemonCenter_1F_EventScript_Abra_Text_9, 8
+	goto PokemonCenter_1F_EventScript_Abra_31
+
+PokemonCenter_1F_EventScript_Abra_34:
+# 203 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	closemessage
+# 204 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	waitstate
+# 205 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	releaseall
+	end
+
+PokemonCenter_1F_EventScript_Abra_36:
+# 130 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	msgbox PokemonCenter_1F_EventScript_Abra_Text_11
+# 131 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	delay 30
+# 132 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_46
+PokemonCenter_1F_EventScript_Abra_45:
+# 133 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_58
+PokemonCenter_1F_EventScript_Abra_57:
+# 134 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_70
+PokemonCenter_1F_EventScript_Abra_69:
+# 135 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_82
+PokemonCenter_1F_EventScript_Abra_81:
+# 136 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_94
+PokemonCenter_1F_EventScript_Abra_93:
+# 137 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_106
+PokemonCenter_1F_EventScript_Abra_105:
+# 138 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_118
+PokemonCenter_1F_EventScript_Abra_117:
+# 139 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	warpteleport MAP_PETALBURG_CITY, 20, 17
+	goto PokemonCenter_1F_EventScript_Abra_34
+
+PokemonCenter_1F_EventScript_Abra_37:
+# 142 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	msgbox PokemonCenter_1F_EventScript_Abra_Text_11
+# 143 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	delay 30
+# 144 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_49
+PokemonCenter_1F_EventScript_Abra_48:
+# 145 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_61
+PokemonCenter_1F_EventScript_Abra_60:
+# 146 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_73
+PokemonCenter_1F_EventScript_Abra_72:
+# 147 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_85
+PokemonCenter_1F_EventScript_Abra_84:
+# 148 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_97
+PokemonCenter_1F_EventScript_Abra_96:
+# 149 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_109
+PokemonCenter_1F_EventScript_Abra_108:
+# 150 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_121
+PokemonCenter_1F_EventScript_Abra_120:
+# 151 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	warpteleport MAP_DEWFORD_TOWN, 17, 11
+	goto PokemonCenter_1F_EventScript_Abra_34
+
+PokemonCenter_1F_EventScript_Abra_38:
 # 154 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PokemonCenter_1F_EventScript_Abra_Text_9
+	msgbox PokemonCenter_1F_EventScript_Abra_Text_11
 # 155 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	delay 30
 # 156 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_44
-PokemonCenter_1F_EventScript_Abra_43:
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_52
+PokemonCenter_1F_EventScript_Abra_51:
 # 157 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_56
-PokemonCenter_1F_EventScript_Abra_55:
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_64
+PokemonCenter_1F_EventScript_Abra_63:
 # 158 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_68
-PokemonCenter_1F_EventScript_Abra_67:
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_76
+PokemonCenter_1F_EventScript_Abra_75:
 # 159 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_80
-PokemonCenter_1F_EventScript_Abra_79:
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_88
+PokemonCenter_1F_EventScript_Abra_87:
 # 160 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_92
-PokemonCenter_1F_EventScript_Abra_91:
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_100
+PokemonCenter_1F_EventScript_Abra_99:
 # 161 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_104
-PokemonCenter_1F_EventScript_Abra_103:
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_112
+PokemonCenter_1F_EventScript_Abra_111:
 # 162 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_116
-PokemonCenter_1F_EventScript_Abra_115:
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_124
+PokemonCenter_1F_EventScript_Abra_123:
 # 163 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	warpteleport MAP_SLATEPORT_CITY, 25, 20
-	goto PokemonCenter_1F_EventScript_Abra_28
+	goto PokemonCenter_1F_EventScript_Abra_34
 
-PokemonCenter_1F_EventScript_Abra_33:
+PokemonCenter_1F_EventScript_Abra_39:
 # 166 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PokemonCenter_1F_EventScript_Abra_Text_9
+	msgbox PokemonCenter_1F_EventScript_Abra_Text_11
 # 167 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	delay 30
 # 168 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_47
-PokemonCenter_1F_EventScript_Abra_46:
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_55
+PokemonCenter_1F_EventScript_Abra_54:
 # 169 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_59
-PokemonCenter_1F_EventScript_Abra_58:
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_67
+PokemonCenter_1F_EventScript_Abra_66:
 # 170 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_71
-PokemonCenter_1F_EventScript_Abra_70:
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_79
+PokemonCenter_1F_EventScript_Abra_78:
 # 171 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_83
-PokemonCenter_1F_EventScript_Abra_82:
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_91
+PokemonCenter_1F_EventScript_Abra_90:
 # 172 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_95
-PokemonCenter_1F_EventScript_Abra_94:
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_103
+PokemonCenter_1F_EventScript_Abra_102:
 # 173 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_107
-PokemonCenter_1F_EventScript_Abra_106:
+	goto_if_unset FLAG_BADGE01_GET, PokemonCenter_1F_EventScript_Abra_115
+PokemonCenter_1F_EventScript_Abra_114:
 # 174 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_119
-PokemonCenter_1F_EventScript_Abra_118:
+	goto_if_unset FLAG_BADGE05_GET, PokemonCenter_1F_EventScript_Abra_127
+PokemonCenter_1F_EventScript_Abra_126:
 # 175 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	warpteleport MAP_MAUVILLE_CITY, 22, 9
-	goto PokemonCenter_1F_EventScript_Abra_28
+	goto PokemonCenter_1F_EventScript_Abra_34
 
-PokemonCenter_1F_EventScript_Abra_34:
-# 181 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PokemonCenter_1F_EventScript_Abra_Text_9
-# 182 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+PokemonCenter_1F_EventScript_Abra_40:
+# 178 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	msgbox PokemonCenter_1F_EventScript_Abra_Text_11
+# 179 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	delay 30
-# 183 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	warpteleport MAP_FALLARBOR_TOWN, 16, 8
-	goto PokemonCenter_1F_EventScript_Abra_28
-
-PokemonCenter_1F_EventScript_Abra_35:
-# 189 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	msgbox PokemonCenter_1F_EventScript_Abra_Text_9
-# 190 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	delay 30
-# 191 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	warpteleport MAP_FORTREE_CITY, 5, 7
-	goto PokemonCenter_1F_EventScript_Abra_28
-
-PokemonCenter_1F_EventScript_Abra_38:
-# 132 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
-	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
-	goto PokemonCenter_1F_EventScript_Abra_37
+# 180 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	warpteleport MAP_LAVARIDGE_TOWN, 9, 7
+	goto PokemonCenter_1F_EventScript_Abra_34
 
 PokemonCenter_1F_EventScript_Abra_41:
+# 183 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	msgbox PokemonCenter_1F_EventScript_Abra_Text_11
+# 184 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	delay 30
+# 185 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	warpteleport MAP_FALLARBOR_TOWN, 16, 8
+	goto PokemonCenter_1F_EventScript_Abra_34
+
+PokemonCenter_1F_EventScript_Abra_42:
+# 188 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	msgbox PokemonCenter_1F_EventScript_Abra_Text_11
+# 189 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	delay 30
+# 190 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	warpteleport MAP_RUSTBORO_CITY, 16, 39
+	goto PokemonCenter_1F_EventScript_Abra_34
+
+PokemonCenter_1F_EventScript_Abra_43:
+# 193 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	msgbox PokemonCenter_1F_EventScript_Abra_Text_11
+# 194 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	delay 30
+# 195 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	warpteleport MAP_FORTREE_CITY, 5, 7
+	goto PokemonCenter_1F_EventScript_Abra_34
+
+PokemonCenter_1F_EventScript_Abra_46:
+# 132 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	goto PokemonCenter_1F_EventScript_Abra_45
+
+PokemonCenter_1F_EventScript_Abra_49:
 # 144 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
-	goto PokemonCenter_1F_EventScript_Abra_40
+	goto PokemonCenter_1F_EventScript_Abra_48
 
-PokemonCenter_1F_EventScript_Abra_44:
+PokemonCenter_1F_EventScript_Abra_52:
 # 156 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
-	goto PokemonCenter_1F_EventScript_Abra_43
+	goto PokemonCenter_1F_EventScript_Abra_51
 
-PokemonCenter_1F_EventScript_Abra_47:
+PokemonCenter_1F_EventScript_Abra_55:
 # 168 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
-	goto PokemonCenter_1F_EventScript_Abra_46
+	goto PokemonCenter_1F_EventScript_Abra_54
 
-PokemonCenter_1F_EventScript_Abra_50:
+PokemonCenter_1F_EventScript_Abra_58:
 # 133 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
-	goto PokemonCenter_1F_EventScript_Abra_49
+	goto PokemonCenter_1F_EventScript_Abra_57
 
-PokemonCenter_1F_EventScript_Abra_53:
+PokemonCenter_1F_EventScript_Abra_61:
 # 145 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
-	goto PokemonCenter_1F_EventScript_Abra_52
+	goto PokemonCenter_1F_EventScript_Abra_60
 
-PokemonCenter_1F_EventScript_Abra_56:
+PokemonCenter_1F_EventScript_Abra_64:
 # 157 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
-	goto PokemonCenter_1F_EventScript_Abra_55
+	goto PokemonCenter_1F_EventScript_Abra_63
 
-PokemonCenter_1F_EventScript_Abra_59:
+PokemonCenter_1F_EventScript_Abra_67:
 # 169 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
-	goto PokemonCenter_1F_EventScript_Abra_58
+	goto PokemonCenter_1F_EventScript_Abra_66
 
-PokemonCenter_1F_EventScript_Abra_62:
+PokemonCenter_1F_EventScript_Abra_70:
 # 134 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
-	goto PokemonCenter_1F_EventScript_Abra_61
+	goto PokemonCenter_1F_EventScript_Abra_69
 
-PokemonCenter_1F_EventScript_Abra_65:
+PokemonCenter_1F_EventScript_Abra_73:
 # 146 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
-	goto PokemonCenter_1F_EventScript_Abra_64
+	goto PokemonCenter_1F_EventScript_Abra_72
 
-PokemonCenter_1F_EventScript_Abra_68:
+PokemonCenter_1F_EventScript_Abra_76:
 # 158 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
-	goto PokemonCenter_1F_EventScript_Abra_67
+	goto PokemonCenter_1F_EventScript_Abra_75
 
-PokemonCenter_1F_EventScript_Abra_71:
+PokemonCenter_1F_EventScript_Abra_79:
 # 170 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
-	goto PokemonCenter_1F_EventScript_Abra_70
+	goto PokemonCenter_1F_EventScript_Abra_78
 
-PokemonCenter_1F_EventScript_Abra_74:
+PokemonCenter_1F_EventScript_Abra_82:
 # 135 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
-	goto PokemonCenter_1F_EventScript_Abra_73
+	goto PokemonCenter_1F_EventScript_Abra_81
 
-PokemonCenter_1F_EventScript_Abra_77:
+PokemonCenter_1F_EventScript_Abra_85:
 # 147 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
-	goto PokemonCenter_1F_EventScript_Abra_76
+	goto PokemonCenter_1F_EventScript_Abra_84
 
-PokemonCenter_1F_EventScript_Abra_80:
+PokemonCenter_1F_EventScript_Abra_88:
 # 159 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
-	goto PokemonCenter_1F_EventScript_Abra_79
+	goto PokemonCenter_1F_EventScript_Abra_87
 
-PokemonCenter_1F_EventScript_Abra_83:
+PokemonCenter_1F_EventScript_Abra_91:
 # 171 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
-	goto PokemonCenter_1F_EventScript_Abra_82
+	goto PokemonCenter_1F_EventScript_Abra_90
 
-PokemonCenter_1F_EventScript_Abra_86:
+PokemonCenter_1F_EventScript_Abra_94:
 # 136 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	goto PokemonCenter_1F_EventScript_Abra_85
+	goto PokemonCenter_1F_EventScript_Abra_93
 
-PokemonCenter_1F_EventScript_Abra_89:
+PokemonCenter_1F_EventScript_Abra_97:
 # 148 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	goto PokemonCenter_1F_EventScript_Abra_88
+	goto PokemonCenter_1F_EventScript_Abra_96
 
-PokemonCenter_1F_EventScript_Abra_92:
+PokemonCenter_1F_EventScript_Abra_100:
 # 160 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	goto PokemonCenter_1F_EventScript_Abra_91
+	goto PokemonCenter_1F_EventScript_Abra_99
 
-PokemonCenter_1F_EventScript_Abra_95:
+PokemonCenter_1F_EventScript_Abra_103:
 # 172 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	goto PokemonCenter_1F_EventScript_Abra_94
+	goto PokemonCenter_1F_EventScript_Abra_102
 
-PokemonCenter_1F_EventScript_Abra_98:
+PokemonCenter_1F_EventScript_Abra_106:
 # 137 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY
-	goto PokemonCenter_1F_EventScript_Abra_97
+	goto PokemonCenter_1F_EventScript_Abra_105
 
-PokemonCenter_1F_EventScript_Abra_101:
+PokemonCenter_1F_EventScript_Abra_109:
 # 149 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY
-	goto PokemonCenter_1F_EventScript_Abra_100
+	goto PokemonCenter_1F_EventScript_Abra_108
 
-PokemonCenter_1F_EventScript_Abra_104:
+PokemonCenter_1F_EventScript_Abra_112:
 # 161 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY
-	goto PokemonCenter_1F_EventScript_Abra_103
+	goto PokemonCenter_1F_EventScript_Abra_111
 
-PokemonCenter_1F_EventScript_Abra_107:
+PokemonCenter_1F_EventScript_Abra_115:
 # 173 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY
-	goto PokemonCenter_1F_EventScript_Abra_106
+	goto PokemonCenter_1F_EventScript_Abra_114
 
-PokemonCenter_1F_EventScript_Abra_110:
+PokemonCenter_1F_EventScript_Abra_118:
 # 138 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
-	goto PokemonCenter_1F_EventScript_Abra_109
+	goto PokemonCenter_1F_EventScript_Abra_117
 
-PokemonCenter_1F_EventScript_Abra_113:
+PokemonCenter_1F_EventScript_Abra_121:
 # 150 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
-	goto PokemonCenter_1F_EventScript_Abra_112
+	goto PokemonCenter_1F_EventScript_Abra_120
 
-PokemonCenter_1F_EventScript_Abra_116:
+PokemonCenter_1F_EventScript_Abra_124:
 # 162 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
-	goto PokemonCenter_1F_EventScript_Abra_115
+	goto PokemonCenter_1F_EventScript_Abra_123
 
-PokemonCenter_1F_EventScript_Abra_119:
+PokemonCenter_1F_EventScript_Abra_127:
 # 174 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
-	goto PokemonCenter_1F_EventScript_Abra_118
+	goto PokemonCenter_1F_EventScript_Abra_126
 
 
 PokemonCenter_1F_EventScript_Abra_Text_0:
@@ -614,17 +652,25 @@ PokemonCenter_1F_EventScript_Abra_Text_5:
 	.string "Mauville$"
 
 PokemonCenter_1F_EventScript_Abra_Text_6:
+# 122 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	.string "Lavaridge$"
+
+PokemonCenter_1F_EventScript_Abra_Text_7:
 # 123 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	.string "Fallarbor$"
 
-PokemonCenter_1F_EventScript_Abra_Text_7:
+PokemonCenter_1F_EventScript_Abra_Text_8:
+# 124 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
+	.string "Rustboro$"
+
+PokemonCenter_1F_EventScript_Abra_Text_9:
 # 125 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	.string "Fortree$"
 
-PokemonCenter_1F_EventScript_Abra_Text_8:
+PokemonCenter_1F_EventScript_Abra_Text_10:
 # 126 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	.string "Nevermind$"
 
-PokemonCenter_1F_EventScript_Abra_Text_9:
+PokemonCenter_1F_EventScript_Abra_Text_11:
 # 130 "data/maps/PetalburgCity_PokemonCenter_1F/scripts.pory"
 	.string "Abra used Teleport!$"

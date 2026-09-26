@@ -163,7 +163,7 @@ RusturfTunnel_EventScript_BoyfriendApproachWanda1::
 # 82 "data/maps/RusturfTunnel/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PlayerWatchBoyfriend1
 # 83 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda1
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda1
 # 84 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 85 "data/maps/RusturfTunnel/scripts.pory"
@@ -175,7 +175,7 @@ RusturfTunnel_EventScript_BoyfriendApproachWanda2::
 # 88 "data/maps/RusturfTunnel/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PlayerWatchBoyfriend
 # 89 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda
 # 90 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 91 "data/maps/RusturfTunnel/scripts.pory"
@@ -191,7 +191,7 @@ RusturfTunnel_EventScript_BoyfriendApproachWanda3::
 # 96 "data/maps/RusturfTunnel/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PlayerWatchBoyfriend
 # 97 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda
 # 98 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 99 "data/maps/RusturfTunnel/scripts.pory"
@@ -205,7 +205,7 @@ RusturfTunnel_EventScript_BoyfriendApproachWanda3::
 # 103 "data/maps/RusturfTunnel/scripts.pory"
 RusturfTunnel_EventScript_FaceWandasBoyfriend1::
 # 104 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_WalkInPlaceFasterUp
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_WalkInPlaceFasterUp
 # 105 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 106 "data/maps/RusturfTunnel/scripts.pory"
@@ -219,7 +219,7 @@ RusturfTunnel_EventScript_FaceWandasBoyfriend1::
 # 110 "data/maps/RusturfTunnel/scripts.pory"
 RusturfTunnel_EventScript_FaceWandasBoyfriend2::
 # 111 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendFaceRight
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendFaceRight
 # 112 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 113 "data/maps/RusturfTunnel/scripts.pory"
@@ -237,7 +237,7 @@ RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer::
 # 119 "data/maps/RusturfTunnel/scripts.pory"
 	closemessage
 # 120 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendApproachPlayer
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendApproachPlayer
 # 121 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 122 "data/maps/RusturfTunnel/scripts.pory"
@@ -249,7 +249,7 @@ RusturfTunnel_EventScript_WandaAndBoyfriendExit1::
 # 125 "data/maps/RusturfTunnel/scripts.pory"
 	applymovement LOCALID_RUSTURF_TUNNEL_WANDA, RusturfTunnel_Movement_WandaExit1
 # 126 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit1
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit1
 # 127 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 128 "data/maps/RusturfTunnel/scripts.pory"
@@ -263,7 +263,7 @@ RusturfTunnel_EventScript_WandaAndBoyfriendExit::
 # 132 "data/maps/RusturfTunnel/scripts.pory"
 	applymovement LOCALID_RUSTURF_TUNNEL_WANDA, RusturfTunnel_Movement_WandaExit
 # 133 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit
 # 134 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 135 "data/maps/RusturfTunnel/scripts.pory"
@@ -275,11 +275,11 @@ RusturfTunnel_EventScript_WandasBoyfriendNotice::
 # 138 "data/maps/RusturfTunnel/scripts.pory"
 	playse SE_PIN
 # 139 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_ExclamationMark
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_ExclamationMark
 # 140 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 141 "data/maps/RusturfTunnel/scripts.pory"
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_Delay48
+	//applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_Delay48
 # 142 "data/maps/RusturfTunnel/scripts.pory"
 	waitmovement 0
 # 143 "data/maps/RusturfTunnel/scripts.pory"

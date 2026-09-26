@@ -193,6 +193,7 @@ MauvilleCity_EventScript_ScottApproachPlayerNorth::
 	return
 
 MauvilleCity_EventScript_ScottApproachPlayerWest::
+	setobjectxyperm LOCALID_MAUVILLE_SCOTT, 12, 13
 	addobject LOCALID_MAUVILLE_SCOTT
 	applymovement LOCALID_MAUVILLE_SCOTT, MauvilleCity_Movement_ScottApproachPlayerWest
 	waitmovement 0

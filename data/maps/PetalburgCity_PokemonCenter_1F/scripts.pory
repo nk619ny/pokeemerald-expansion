@@ -119,9 +119,9 @@ script PokemonCenter_1F_EventScript_Abra{
 	if(flag(FLAG_VISITED_DEWFORD_TOWN)){dynmultipush("Dewford",2)}
     if(flag(FLAG_VISITED_SLATEPORT_CITY)){dynmultipush("Slateport",3)}
     if(flag(FLAG_VISITED_MAUVILLE_CITY)){dynmultipush("Mauville",4)}
-    //if(flag(FLAG_VISITED_LAVARIDGE_TOWN)){dynmultipush("Lavaridge",5)}
+    if(flag(FLAG_VISITED_LAVARIDGE_TOWN)){dynmultipush("Lavaridge",5)}
     if(flag(FLAG_VISITED_FALLARBOR_TOWN)){dynmultipush("Fallarbor",6)}
-    //if(flag(FLAG_VISITED_RUSTBORO_CITY)){dynmultipush("Rustboro",7)}
+    if(flag(FLAG_VISITED_RUSTBORO_CITY)){dynmultipush("Rustboro",7)}
     if(flag(FLAG_VISITED_FORTREE_CITY)){dynmultipush("Fortree",8)}
     dynmultipush("Nevermind",127)
     dynmultistack(25,2,FALSE,5,0,1,DYN_MULTICHOICE_CB_NONE)
@@ -174,17 +174,21 @@ script PokemonCenter_1F_EventScript_Abra{
             if(!flag(FLAG_BADGE05_GET)){clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)}
             warpteleport(MAP_MAUVILLE_CITY,22,9)
             break
-        //case 5:
-        //    warpteleport(MAP_LAVARIDGE_TOWN,0,0)
-        //    break
+        case 5:
+            msgbox(format("Abra used Teleport!"))
+            delay(30)
+            warpteleport(MAP_LAVARIDGE_TOWN,9,7)
+            break
         case 6:
             msgbox(format("Abra used Teleport!"))
             delay(30)
             warpteleport(MAP_FALLARBOR_TOWN,16,8)
             break
-        //case 7:
-        //    warpteleport(MAP_RUSTBORO_CITY,0,0)
-        //    break
+        case 7:
+            msgbox(format("Abra used Teleport!"))
+            delay(30)
+            warpteleport(MAP_RUSTBORO_CITY,16,39)
+            break
         case 8:
             msgbox(format("Abra used Teleport!"))
             delay(30)
