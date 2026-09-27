@@ -37,7 +37,7 @@ MirageTower_4F_EventScript_RootFossil::
 # 19 "data/maps/MirageTower_4F/scripts.pory"
 	delay 30
 # 20 "data/maps/MirageTower_4F/scripts.pory"
-	setflag FLAG_CHOSE_ROOT_FOSSIL
+	//setflag FLAG_CHOSE_ROOT_FOSSIL
 # 21 "data/maps/MirageTower_4F/scripts.pory"
 	goto MirageTower_4F_EventScript_CollapseMirageTower
 # 22 "data/maps/MirageTower_4F/scripts.pory"
@@ -79,7 +79,7 @@ MirageTower_4F_EventScript_ClawFossil::
 # 40 "data/maps/MirageTower_4F/scripts.pory"
 	delay 30
 # 41 "data/maps/MirageTower_4F/scripts.pory"
-	setflag FLAG_CHOSE_CLAW_FOSSIL
+	//setflag FLAG_CHOSE_CLAW_FOSSIL
 # 42 "data/maps/MirageTower_4F/scripts.pory"
 	goto MirageTower_4F_EventScript_CollapseMirageTower
 # 43 "data/maps/MirageTower_4F/scripts.pory"
@@ -201,10 +201,6 @@ MirageTower_EventScript_GiveRandomFossil::
 MirageTower_EventScript_GiveRandomFossil_1:
 # 139 "data/maps/MirageTower_4F/scripts.pory"
 	giveitem VAR_TEMP_6
-# 140 "data/maps/MirageTower_4F/scripts.pory"
-	waitfanfare
-# 141 "data/maps/MirageTower_4F/scripts.pory"
-	closemessage
 	return
 
 MirageTower_EventScript_GiveRandomFossil_3:
@@ -281,4 +277,64 @@ MirageTower_EventScript_GiveRandomFossil_17:
 # 133 "data/maps/MirageTower_4F/scripts.pory"
 	setvar VAR_TEMP_6, ITEM_FOSSILIZED_DINO
 	goto MirageTower_EventScript_GiveRandomFossil_1
+
+
+MirageTower_EventScript_NewRootFossil::
+# 144 "data/maps/MirageTower_4F/scripts.pory"
+	lock
+# 145 "data/maps/MirageTower_4F/scripts.pory"
+	call MirageTower_EventScript_GiveRandomFossil
+# 146 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+# 147 "data/maps/MirageTower_4F/scripts.pory"
+	waitfanfare
+# 148 "data/maps/MirageTower_4F/scripts.pory"
+	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
+# 149 "data/maps/MirageTower_4F/scripts.pory"
+	removeobject LOCALID_MIRAGE_ROOT_FOSSIL
+# 150 "data/maps/MirageTower_4F/scripts.pory"
+	closemessage
+# 151 "data/maps/MirageTower_4F/scripts.pory"
+	releaseall
+	end
+
+
+MirageTower_EventScript_NewClawFossil::
+# 156 "data/maps/MirageTower_4F/scripts.pory"
+	lock
+# 157 "data/maps/MirageTower_4F/scripts.pory"
+	call MirageTower_EventScript_GiveRandomFossil
+# 158 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+# 159 "data/maps/MirageTower_4F/scripts.pory"
+	waitfanfare
+# 160 "data/maps/MirageTower_4F/scripts.pory"
+	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
+# 161 "data/maps/MirageTower_4F/scripts.pory"
+	removeobject LOCALID_MIRAGE_CLAW_FOSSIL
+# 162 "data/maps/MirageTower_4F/scripts.pory"
+	closemessage
+# 163 "data/maps/MirageTower_4F/scripts.pory"
+	releaseall
+	end
+
+
+Route111_EventScript_New111Fossil::
+# 168 "data/maps/MirageTower_4F/scripts.pory"
+	lock
+# 169 "data/maps/MirageTower_4F/scripts.pory"
+	call MirageTower_EventScript_GiveRandomFossil
+# 170 "data/maps/MirageTower_4F/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+# 171 "data/maps/MirageTower_4F/scripts.pory"
+	waitfanfare
+# 172 "data/maps/MirageTower_4F/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_111_DESERT_FOSSIL
+# 173 "data/maps/MirageTower_4F/scripts.pory"
+	removeobject LOCALID_DESERT_FOSSIL
+# 174 "data/maps/MirageTower_4F/scripts.pory"
+	closemessage
+# 175 "data/maps/MirageTower_4F/scripts.pory"
+	releaseall
+	end
 

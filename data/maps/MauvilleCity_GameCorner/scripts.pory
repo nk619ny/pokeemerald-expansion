@@ -1933,6 +1933,9 @@ script MauvilleCity_GameCorner_EventScript_BuyGems {
 	showcoinsbox(1, 1)
 	dynmultistack(25, 0, FALSE, 6, FALSE, 0, DYN_MULTICHOICE_CB_NONE)
 	copyvar(TempVar_PrizeToBuy, VAR_RESULT)
+
+	goto_if_eq(VAR_RESULT, 127, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+
 	bufferitemname(STR_VAR_1, TempVar_PrizeToBuy)
 	checkitemspace(TempVar_PrizeToBuy)
 	goto_if_eq(VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_BagFull)

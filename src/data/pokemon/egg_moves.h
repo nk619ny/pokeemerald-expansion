@@ -1294,6 +1294,7 @@ static const u16 sMagbyEggMoveLearnset[] = {
     MOVE_FOCUS_ENERGY,
     MOVE_POWER_SWAP,
     MOVE_BELCH,
+    MOVE_FOLLOW_ME,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS

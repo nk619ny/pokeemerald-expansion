@@ -23,9 +23,9 @@ DesertUnderpass_EventScript_Fossil::
 # 12 "data/maps/DesertUnderpass/scripts.pory"
 	faceplayer
 # 13 "data/maps/DesertUnderpass/scripts.pory"
-	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, DesertUnderpass_EventScript_GiveClawFossil
+	//goto_if_set FLAG_CHOSE_ROOT_FOSSIL, DesertUnderpass_EventScript_GiveClawFossil
 # 14 "data/maps/DesertUnderpass/scripts.pory"
-	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, DesertUnderpass_EventScript_GiveRootFossil
+	//goto_if_set FLAG_CHOSE_CLAW_FOSSIL, DesertUnderpass_EventScript_GiveRootFossil
 # 15 "data/maps/DesertUnderpass/scripts.pory"
 	release
 # 16 "data/maps/DesertUnderpass/scripts.pory"
@@ -74,3 +74,23 @@ DesertUnderpass_Text_FoundRootFossil::
 DesertUnderpass_Text_FoundClawFossil::
 # 38 "data/maps/DesertUnderpass/scripts.pory"
 	.string "{PLAYER} found the CLAW FOSSIL.$"
+
+DesertUnderpass_EventScript_NewFossil::
+# 44 "data/maps/DesertUnderpass/scripts.pory"
+	lock
+# 45 "data/maps/DesertUnderpass/scripts.pory"
+	call MirageTower_EventScript_GiveRandomFossil
+# 46 "data/maps/DesertUnderpass/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+# 47 "data/maps/DesertUnderpass/scripts.pory"
+	waitfanfare
+# 48 "data/maps/DesertUnderpass/scripts.pory"
+	setflag FLAG_HIDE_DESERT_UNDERPASS_FOSSIL
+# 49 "data/maps/DesertUnderpass/scripts.pory"
+	removeobject LOCALID_UNDERPASS_FOSSIL
+# 50 "data/maps/DesertUnderpass/scripts.pory"
+	closemessage
+# 51 "data/maps/DesertUnderpass/scripts.pory"
+	releaseall
+	end
+

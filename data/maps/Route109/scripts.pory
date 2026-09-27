@@ -639,13 +639,13 @@ script Route109_EventScript_GunkShotSailor {
 			waitfanfare
 		}
 		else {
-			msgbox(format("There is still some gunk left in the waters around Slateport.\pI'm trying to use Pokémon to clean it up.\pMaybe you can help, too."), MSGBOX_NPC)
+			msgbox(format("There lots of gunk in the waters around Slateport because of the new farms.\pI'm trying to use Pokémon to clean it up.\pMaybe you can help, too."), MSGBOX_NPC)
 			closemessage
 			giveitem(ITEM_TM_GUNK_SHOT)
 			waitfanfare
 		}
 	}
-		msgbox(format("I'm not much of a swimmer.\pBut with my Bird Pokémon, I can hop from island to island through the skies!"), MSGBOX_NPC)
+		msgbox(format("It's important to try to keep our waters clean.\pIt's better for Pokémon and people, even the ones who aren't sailors!"), MSGBOX_NPC)
 	releaseall
 	end
 }

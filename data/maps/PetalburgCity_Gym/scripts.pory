@@ -1403,6 +1403,7 @@ PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough:
 	.string "I honestly think that no amount of\n"
 	.string "training would ever be enough.$"
 
+/*
 PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "Hey, how's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
@@ -1420,10 +1421,11 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "the door, so choose carefully.\p"
 	.string "Once you've chosen the door…\n"
 	.string "Well, hey, go for it!$"
+*/
 
 PetalburgCity_Gym_Text_GymGuidePostVictory:
 	.string "{PLAYER}! Whoa! You've overcome a\n"
-	.string "new Leader at the top of their!\n"
+	.string "new Leader at the top of their\l"
 	.string "game! That's amazing!$"
 
 
@@ -2030,7 +2032,7 @@ text PetalburgCity_Gym_Text_ExplainFacade {
 }
 
 text PetalburgCity_Gym_Text_LeaderDoorLocked {
-	format("This door appears to be locked\pright now…\pPerhaps defeating more Trainers will open it.")
+	format("This door appears to be locked right now…\pPerhaps defeating more Trainers will open it.")
 }
 
 
@@ -2119,3 +2121,6 @@ text PetalburgCity_Gym_Text_JodyPostBadge{
 	format("Hope you had fun taking on the Gym!")
 }
 
+text PetalburgCity_Gym_Text_GymGuideAdvice{
+	format("Hey, how's it going, CHAMPION-\nbound {PLAYER}?\pThe doors in this Gym open when you\nbeat the awaiting TRAINERS.\pNorman had the rooms in the Gym set up around discrete themes.\pThe new leader has kept the same design, but put his own type-twist on the themes.")
+}

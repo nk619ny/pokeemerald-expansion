@@ -13175,9 +13175,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM46"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Makes the foe repeat\n"
-            "its last move over 3\n"
-            "turns."),
+            "Makes the foe\n"
+            "repeat its last move\n"
+            "over 3 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -13828,8 +13828,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
             "An attack that\n"
-            "moves last and gains\n"
-            "power if hit."),
+            "moves last and\n"
+            "gains power if hit."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

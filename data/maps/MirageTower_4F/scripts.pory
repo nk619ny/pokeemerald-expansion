@@ -17,7 +17,7 @@ MirageTower_4F_EventScript_RootFossil::
 	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
 	removeobject LOCALID_MIRAGE_ROOT_FOSSIL
 	delay 30
-	setflag FLAG_CHOSE_ROOT_FOSSIL
+	//setflag FLAG_CHOSE_ROOT_FOSSIL
 	goto MirageTower_4F_EventScript_CollapseMirageTower
 	end
 
@@ -38,7 +38,7 @@ MirageTower_4F_EventScript_ClawFossil::
 	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
 	removeobject LOCALID_MIRAGE_CLAW_FOSSIL
 	delay 30
-	setflag FLAG_CHOSE_CLAW_FOSSIL
+	//setflag FLAG_CHOSE_CLAW_FOSSIL
 	goto MirageTower_4F_EventScript_CollapseMirageTower
 	end
 
@@ -137,6 +137,41 @@ script MirageTower_EventScript_GiveRandomFossil {
 			break
 	}
 	giveitem(TempVar_Fossil)
+	return
+}
+
+script MirageTower_EventScript_NewRootFossil{
+	lock
+	call(MirageTower_EventScript_GiveRandomFossil)
+	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_BagIsFull)
 	waitfanfare
+	setflag(FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL)
+	removeobject(LOCALID_MIRAGE_ROOT_FOSSIL)
 	closemessage
+	releaseall
+	end
+}
+
+script MirageTower_EventScript_NewClawFossil{
+	lock
+	call(MirageTower_EventScript_GiveRandomFossil)
+	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_BagIsFull)
+	waitfanfare
+	setflag(FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL)
+	removeobject(LOCALID_MIRAGE_CLAW_FOSSIL)
+	closemessage
+	releaseall
+	end
+}
+
+script Route111_EventScript_New111Fossil{
+	lock
+	call(MirageTower_EventScript_GiveRandomFossil)
+	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_BagIsFull)
+	waitfanfare
+	setflag(FLAG_HIDE_ROUTE_111_DESERT_FOSSIL)
+	removeobject(LOCALID_DESERT_FOSSIL)
+	closemessage
+	releaseall
+	end
 }

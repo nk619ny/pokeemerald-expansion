@@ -10,8 +10,8 @@ DesertUnderpass_OnTransition:
 DesertUnderpass_EventScript_Fossil::
 	lock
 	faceplayer
-	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, DesertUnderpass_EventScript_GiveClawFossil
-	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, DesertUnderpass_EventScript_GiveRootFossil
+	//goto_if_set FLAG_CHOSE_ROOT_FOSSIL, DesertUnderpass_EventScript_GiveClawFossil
+	//goto_if_set FLAG_CHOSE_CLAW_FOSSIL, DesertUnderpass_EventScript_GiveRootFossil
 	release
 	end
 
@@ -38,3 +38,16 @@ DesertUnderpass_Text_FoundClawFossil::
 	.string "{PLAYER} found the CLAW FOSSIL.$"
 
 `
+
+
+script DesertUnderpass_EventScript_NewFossil{
+	lock
+	call(MirageTower_EventScript_GiveRandomFossil)
+	goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_BagIsFull)
+	waitfanfare
+	setflag(FLAG_HIDE_DESERT_UNDERPASS_FOSSIL)
+	removeobject(LOCALID_UNDERPASS_FOSSIL)
+	closemessage
+	releaseall
+	end
+}

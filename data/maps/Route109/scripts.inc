@@ -1223,7 +1223,7 @@ Route109_EventScript_GunkShotSailor::
 	goto_if_eq Route109_EventScript_GunkShotSailor_2
 Route109_EventScript_GunkShotSailor_1:
 # 648 "data/maps/Route109/scripts.pory"
-	msgbox Route109_EventScript_AirSlashKeeper_Text_1, MSGBOX_NPC
+	msgbox Route109_EventScript_GunkShotSailor_Text_2, MSGBOX_NPC
 # 649 "data/maps/Route109/scripts.pory"
 	releaseall
 	end
@@ -1232,7 +1232,7 @@ Route109_EventScript_GunkShotSailor_2:
 # 635 "data/maps/Route109/scripts.pory"
 	goto_if_set FLAG_SLATEPORT_BAY_FLOODED, Route109_EventScript_GunkShotSailor_4
 # 642 "data/maps/Route109/scripts.pory"
-	msgbox Route109_EventScript_GunkShotSailor_Text_0, MSGBOX_NPC
+	msgbox Route109_EventScript_GunkShotSailor_Text_1, MSGBOX_NPC
 # 643 "data/maps/Route109/scripts.pory"
 	closemessage
 # 644 "data/maps/Route109/scripts.pory"
@@ -1284,6 +1284,21 @@ Route109_EventScript_GunkShotSailor_Text_0:
 	.string "I'm trying to use Pokémon to clean it\n"
 	.string "up.\p"
 	.string "Maybe you can help, too.$"
+
+Route109_EventScript_GunkShotSailor_Text_1:
+# 642 "data/maps/Route109/scripts.pory"
+	.string "There lots of gunk in the waters around\n"
+	.string "Slateport because of the new farms.\p"
+	.string "I'm trying to use Pokémon to clean it\n"
+	.string "up.\p"
+	.string "Maybe you can help, too.$"
+
+Route109_EventScript_GunkShotSailor_Text_2:
+# 648 "data/maps/Route109/scripts.pory"
+	.string "It's important to try to keep our\n"
+	.string "waters clean.\p"
+	.string "It's better for Pokémon and people,\n"
+	.string "even the ones who aren't sailors!$"
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods::
 # 561 "data/maps/Route109/scripts.pory"

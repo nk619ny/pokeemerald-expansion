@@ -122,8 +122,8 @@ Route111_EventScript_MirageTowerDisappear::
 	special StartMirageTowerDisintegration
 	special StartMirageTowerFossilFallAndSink
 	setvar VAR_MIRAGE_TOWER_STATE, 2
-	clearflag FLAG_HIDE_DESERT_UNDERPASS_FOSSIL
-	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, Route111_EventScript_RootFossilDisappeared
+	//clearflag FLAG_HIDE_DESERT_UNDERPASS_FOSSIL
+	//goto_if_set FLAG_CHOSE_CLAW_FOSSIL, Route111_EventScript_RootFossilDisappeared
 	msgbox Route111_Text_ClawFossilDisappeared, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -398,10 +398,11 @@ Route111_EventScript_Man2::
 Route111_EventScript_Hiker::
 	lock
 	faceplayer
-	goto_if_eq VAR_MIRAGE_TOWER_STATE, 3, Route111_EventScript_HikerMirageTowerGone
-	goto_if_eq VAR_MIRAGE_TOWER_STATE, 2, Route111_EventScript_HikerMirageTowerDisintegrated
-	goto_if_set FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_HikerMirageTowerVisible
-	msgbox Route111_Text_ShouldBeMirageTowerAroundHere, MSGBOX_DEFAULT
+	//goto_if_eq VAR_MIRAGE_TOWER_STATE, 3, Route111_EventScript_HikerMirageTowerGone
+	//goto_if_eq VAR_MIRAGE_TOWER_STATE, 2, Route111_EventScript_HikerMirageTowerDisintegrated
+	//goto_if_set FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_HikerMirageTowerVisible
+	//msgbox Route111_Text_ShouldBeMirageTowerAroundHere, MSGBOX_DEFAULT
+	msgbox Route111_EventScript_HikerMirageTowerVisible, MSGBOX_DEFAULT
 	release
 	end
 
