@@ -758,3 +758,24 @@ Route113_GlassWorkshop_Text_FunToBlowGlassFlute:
 	.string "my boss is talking.\p"
 # 380 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	.string "Huff-huff! Puff-puff!$"
+
+Route113_GlassWorkshop_EventScript_GlassWorkerNew::
+# 385 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	lock
+# 386 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	faceplayer
+# 387 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	msgbox Route113_GlassWorkshop_EventScript_GlassWorkerNew_Text_0, MSGBOX_NPC
+# 388 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	releaseall
+	end
+
+
+Route113_GlassWorkshop_EventScript_GlassWorkerNew_Text_0:
+# 387 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	.string "What? You want me to give you a Soot\n"
+	.string "Sack so you can collect ash?\p"
+	.string "Why would I ask a child to run around\n"
+	.string "collecting potentially toxic soot?\p"
+	.string "Let's leave that to the professionals,\n"
+	.string "like me!$"

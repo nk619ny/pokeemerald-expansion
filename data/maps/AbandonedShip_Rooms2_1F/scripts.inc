@@ -9,11 +9,11 @@ AbandonedShip_Rooms2_1F_MapScripts::
 # 5 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 AbandonedShip_Rooms2_1F_EventScript_Dan::
 # 6 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	trainerbattle_double TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_Text_DanIntro, AbandonedShip_Rooms2_1F_Text_DanDefeat, AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons, AbandonedShip_Rooms2_1F_EventScript_RegisterDan
+	trainerbattle_double TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_Text_DanIntro, AbandonedShip_Rooms2_1F_Text_DanDefeat, AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons
 # 7 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 8 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms2_1F_EventScript_DanRematch
+	//goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms2_1F_EventScript_DanRematch
 # 9 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	msgbox AbandonedShip_Rooms2_1F_Text_DanPostBattle, MSGBOX_DEFAULT
 # 10 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
@@ -47,11 +47,11 @@ AbandonedShip_Rooms2_1F_EventScript_DanRematch::
 # 24 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 AbandonedShip_Rooms2_1F_EventScript_Kira::
 # 25 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	trainerbattle_double TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_Text_KiraIntro, AbandonedShip_Rooms2_1F_Text_KiraDefeat, AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons, AbandonedShip_Rooms2_1F_EventScript_RegisterKira
+	trainerbattle_double TRAINER_KIRA_AND_DAN_1, AbandonedShip_Rooms2_1F_Text_KiraIntro, AbandonedShip_Rooms2_1F_Text_KiraDefeat, AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons
 # 26 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 27 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms2_1F_EventScript_KiraRematch
+	//goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms2_1F_EventScript_KiraRematch
 # 28 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
 	msgbox AbandonedShip_Rooms2_1F_Text_KiraPostBattle, MSGBOX_DEFAULT
 # 29 "data/maps/AbandonedShip_Rooms2_1F/scripts.pory"
