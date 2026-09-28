@@ -1375,6 +1375,7 @@ static const u16 sGravelerEliteLearnset[] = {
 };
 
 static const u16 sGolemEliteLearnset[] = {
+    MOVE_HEAD_SMASH,
     MOVE_RAPID_SPIN,
     MOVE_SUCKER_PUNCH,
     MOVE_ANCIENT_POWER,
