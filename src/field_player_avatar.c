@@ -2073,6 +2073,46 @@ static void Task_WaitStopSurfing(u8 taskId)
     }
 }
 
+// Docked boat NPCs are only skipped by the flag check at (re)spawn time, so
+// setting FLAG_HIDE_* alone won't remove one that's already active on the map.
+static void RemoveBrineyBoatObjectOnCurrentMap(void)
+{
+    u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) | gSaveBlock1Ptr->location.mapNum;
+
+    switch (map)
+    {
+    case MAP_ROUTE104:
+        RemoveObjectEventByLocalIdAndMap(LOCALID_ROUTE104_BOAT, MAP_NUM(MAP_ROUTE104), MAP_GROUP(MAP_ROUTE104));
+        break;
+    case MAP_DEWFORD_TOWN:
+        RemoveObjectEventByLocalIdAndMap(LOCALID_DEWFORD_BOAT, MAP_NUM(MAP_DEWFORD_TOWN), MAP_GROUP(MAP_DEWFORD_TOWN));
+        break;
+    case MAP_ROUTE109:
+        RemoveObjectEventByLocalIdAndMap(LOCALID_ROUTE109_BOAT, MAP_NUM(MAP_ROUTE109), MAP_GROUP(MAP_ROUTE109));
+        break;
+    }
+}
+
+// Safe to call even if the boat was never removed on this map (e.g. disembarking
+// on a different boat map than the one boarded from); it no-ops if already active.
+static void AddBrineyBoatObjectOnCurrentMap(void)
+{
+    u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) | gSaveBlock1Ptr->location.mapNum;
+
+    switch (map)
+    {
+    case MAP_ROUTE104:
+        TrySpawnObjectEvent(LOCALID_ROUTE104_BOAT, MAP_NUM(MAP_ROUTE104), MAP_GROUP(MAP_ROUTE104));
+        break;
+    case MAP_DEWFORD_TOWN:
+        TrySpawnObjectEvent(LOCALID_DEWFORD_BOAT, MAP_NUM(MAP_DEWFORD_TOWN), MAP_GROUP(MAP_DEWFORD_TOWN));
+        break;
+    case MAP_ROUTE109:
+        TrySpawnObjectEvent(LOCALID_ROUTE109_BOAT, MAP_NUM(MAP_ROUTE109), MAP_GROUP(MAP_ROUTE109));
+        break;
+    }
+}
+
 // Starts boarding Mr. Briney's boat from land (called from a script via callnative).
 // Fades to black, mounts the boat, steps one tile forward onto the water, then
 // fades back in. Resumes the calling script once finished.
@@ -2104,6 +2144,7 @@ static void Task_BrineyBoardBoat(u8 taskId)
         FlagSet(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT);
         FlagSet(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN);
         FlagSet(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT);
+        RemoveBrineyBoatObjectOnCurrentMap();
         Overworld_ClearSavedMusic();
         Overworld_ChangeMusicTo(IS_FRLG ? MUS_RG_SURF : MUS_SURF);
         SetPlayerAvatarStateMask(PLAYER_AVATAR_FLAG_SURFING);
@@ -2171,6 +2212,7 @@ static void Task_StopBrineyBoatFadeOut(u8 taskId)
     FlagClear(FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT);
     FlagClear(FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN);
     FlagClear(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT);
+    AddBrineyBoatObjectOnCurrentMap();
     ObjectEventSetGraphicsId(playerObjEvent, GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_NORMAL));
     if (playerObjEvent->fieldEffectSpriteId != 0 && playerObjEvent->fieldEffectSpriteId != MAX_SPRITES)
     {
