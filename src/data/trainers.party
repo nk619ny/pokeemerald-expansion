@@ -2902,7 +2902,7 @@ Tera Type: Water
 - Drill Peck  
 
 Vanillish @ Leftovers
-Level: 40
+Level: 39
 Ability: Ice Body  
 Tera Type: Ice  
 IVs: 0 Atk  
@@ -2912,7 +2912,7 @@ IVs: 0 Atk
 - Hyper Voice  
 
 Piloswine @ Brightpowder
-Level: 40
+Level: 39
 Ability: Snow Cloak  
 Tera Type: Ice  
 - Avalanche  
@@ -3385,7 +3385,7 @@ IVs: 0 Atk
 - Protect  
 
 Abomasnow  @ Occa Berry
-Level: 39
+Level: 38
 Ability: Soundproof
 Tera Type: Grass  
 - Trailblaze  
@@ -3394,7 +3394,7 @@ Tera Type: Grass
 - Shadow Ball  
 
 Stantler  
-Level: 41
+Level: 40
 Ability: Intimidate  
 Tera Type: Normal  
 - Lunge  
@@ -4380,7 +4380,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Shiftry @ Focus Sash  
-Level: 52
+Level: 53
 Ability: Wind Rider  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -4390,7 +4390,7 @@ Jolly Nature
 - Aerial Ace  
 
 Murkrow @ Focus Sash 
-Level: 55
+Level: 56
 Ability: Prankster  
 EVs: 252 HP / 4 Def / 252 SpD  
 Careful Nature  
@@ -4400,7 +4400,7 @@ Careful Nature
 - Foul Play  
 
 Crobat @ Black Sludge 
-Level: 52
+Level: 53
 Ability: Inner Focus  
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -4414,7 +4414,7 @@ Ability: Dark Aura
 Tera Type: Dark  
 EVs: 252 HP / 252 Def / 4 SpD  
 Calm Nature  
-Level: 53
+Level: 54
 IVs: 0 Atk  
 - Snarl  
 - Lunar Blessing  
@@ -6634,9 +6634,9 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Paras  @ Big Root
 Ability: Effect Spore  
-Level: 43
+Level: 44
 Tera Type: Bug  
-EVs: 252 HP / 192 SpA  
+EVs: 252 HP / 128 Atk / 128 SpA  
 - Spore  
 - Leech Life  
 - Leech Seed  
@@ -6644,8 +6644,9 @@ EVs: 252 HP / 192 SpA
 
 Pineco @ Loaded Dice  
 Ability: Sturdy  
-Level: 43
+Level: 44
 Tera Type: Bug  
+EVs: 252 HP / 252 Atk
 - Seed Bomb  
 - Rock Blast  
 - Counter  
@@ -6653,9 +6654,9 @@ Tera Type: Bug
 
 Rellor @ Leftovers  
 Ability: Shed Skin  
-Level: 43
+Level: 44
 Tera Type: Bug  
-EVs: 252 HP  
+EVs: 252 HP / 252 Atk
 - Recover  
 - Lunge  
 - Cosmic Power  
@@ -7193,7 +7194,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Wartortle @ Protective Pads  
 Ability: Shell Armor  
-Level: 55
+Level: 56
+EVs: 252 HP / 128 Atk / 128 SpA
 - Wave Crash  
 - Aura Sphere  
 - Fake Out  
@@ -7201,7 +7203,8 @@ Level: 55
 
 Luvdisc  
 Ability: Swift Swim  
-Level: 50
+Level: 51
+EVs: 252 Spe
 IVs: 0 Atk  
 - Dazzling Gleam  
 - Scald  
@@ -7210,8 +7213,8 @@ IVs: 0 Atk
 
 Drizzile @ Silver Powder  
 Ability: Torrent  
-Level: 52
-EVs: 252 Atk / 4 SpD / 252 Spe  
+Level: 55
+EVs: 252 Atk / 252 Spe  
 Jolly Nature  
 - Facade  
 - Ice Shard  
@@ -7221,6 +7224,7 @@ Jolly Nature
 Lombre  
 Ability: Swift Swim  
 Level: 55
+EVs: 128 HP / 128 Atk / 128 SpA / 124 Spe
 - Fake Out  
 - Giga Drain  
 - Ice Beam  
@@ -7294,6 +7298,7 @@ Loudred @ Punching Glove
 Ability: Soundproof 
 Level: 55
 Quiet Nature  
+EVs: 128 HP / 128 Atk
 IVs: 0 Atk / 0 Spe  
 - Circle Throw
 - Ice Punch  
@@ -7303,6 +7308,7 @@ IVs: 0 Atk / 0 Spe
 Finizen  @ Power Herb
 Ability: Water Veil  
 Level: 55
+EVs: 128 HP / 128 Atk / 128 Spe
 Tera Type: Water  
 - Boomburst  
 - Bounce  
@@ -7311,8 +7317,9 @@ Tera Type: Water
 
 Skrelp  
 Ability: Poison Touch  
-Level: 55
+Level: 56
 Tera Type: Poison  
+EVs: 252 HP / 252 Atk
 - Aqua Tail  
 - Poison Tail  
 - Dragon Tail  
@@ -7320,8 +7327,9 @@ Tera Type: Poison
 
 Wattrel  
 Ability: Wind Power  
-Level: 55
+Level: 57
 Tera Type: Electric  
+EVs: 252 HP / 128 SpA / 128 Spe
 IVs: 0 Atk  
 - Charge Beam  
 - Tailwind  
@@ -14586,17 +14594,17 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Slowpoke  
-Level: 45
+Level: 46
 Ability: Regenerator  
 Tera Type: Water  
-EVs: 252 HP
+EVs: 252 HP / 252 Atk
 - Shed Tail  
 - Aqua Tail  
 - Zen Headbutt  
 - Yawn  
 
 Staryu @ Focus Sash
-Level: 43
+Level: 45
 Ability: Illuminate  
 Tera Type: Water  
 IVs: 0 HP / 0 Atk  
@@ -14608,8 +14616,9 @@ Timid Nature
 - Pain Split  
 
 Arrokuda  @ Loaded Dice 
-Level: 43
+Level: 46
 Ability: Propeller Tail  
+EVs: 164 HP / 164 Atk / 164 Spe
 Tera Type: Water  
 - Aqua Jet  
 - Flip Turn  
@@ -14617,8 +14626,9 @@ Tera Type: Water
 - Scale Shot  
 
 Palpitoad  @ Rindo Berry
-Level: 43
+Level: 45
 Ability: Swift Swim  
+EVs: 164 HP / 164 Atk / 164 SpA
 Tera Type: Water  
 - Power Whip  
 - Gastro Acid  
@@ -15440,8 +15450,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Thwackey  
 Ability: Grassy Surge  
-Level: 52
-EVs: 252 HP  
+Level: 54
+EVs: 252 HP / 128 Atk
 Adamant Nature  
 - Grassy Glide  
 - Fake Out  
@@ -15461,8 +15471,9 @@ Jolly Nature
 
 Zweilous @ Roseli Berry  
 Ability: Hustle  
-Level: 53
+Level: 56
 Happiness: 0  
+EVs: 252 HP / 128 Atk / 128 SpA
 - Stomping Tantrum  
 - Draco Meteor
 - Frustration
@@ -15470,7 +15481,7 @@ Happiness: 0
 
 Luxray  
 Ability: Intimidate  
-Level: 48
+Level: 51
 - Crunch  
 - Supercell Slam  
 - Psychic Fangs  
@@ -17722,7 +17733,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Clamperl @ Big Nugget  
 Ability: Rattled  
-Level: 57
+Level: 58
+EVs: 252 HP 
 Tera Type: Water  
 - Clamp  
 - Dive  
@@ -17731,7 +17743,8 @@ Tera Type: Water
 
 Wailmer  
 Ability: Oblivious  
-Level: 55
+Level: 57
+EVs: 124 Atk / 124 Def / 124 SpA / 124 SpD
 Tera Type: Water  
 - Amnesia  
 - Bounce  
@@ -17741,6 +17754,7 @@ Tera Type: Water
 Poliwhirl  
 Ability: Damp  
 Level: 55
+EVs: 164 HP / 164 Atk / 164 Spe
 Tera Type: Water  
 - Brick Break  
 - Counter  
@@ -17749,7 +17763,7 @@ Tera Type: Water
 
 Zangoose @ Sitrus Berry  
 Ability: Toxic Boost  
-Level: 50
+Level: 53
 Tera Type: Normal  
 - Crush Claw  
 - Shadow Claw  
@@ -17782,7 +17796,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Miltank (F) @ Chople Berry
 Ability: Thick Fat  
-Level: 50
+Level: 54
 Tera Type: Normal  
 IVs: 0 SpA
 Adamant Nature
@@ -17793,7 +17807,7 @@ Adamant Nature
 
 Palossand @ Absorb Bulb  
 Ability: Water Compaction   
-Level: 49
+Level: 52
 IVs: 0 Atk  
 - Scorching Sands  
 - Energy Ball  
@@ -17802,7 +17816,7 @@ IVs: 0 Atk
 
 Stunfisk-Galar @ Power Herb  
 Ability: Mimicry  
-Level: 50
+Level: 53
 Tera Type: Ground  
 - Counter  
 - Sucker Punch  
@@ -17811,7 +17825,7 @@ Tera Type: Ground
 
 Kingler  
 Ability: Shell Armor   
-Level: 50
+Level: 52
 - Crabhammer  
 - Brick Break  
 - High Horsepower  
@@ -18569,7 +18583,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Tyrogue (M)  @ Flame Orb
 Ability: Guts  
-Level: 50
+Level: 48
 Tera Type: Fighting  
 EVs: 252 HP / 192 Atk / 64 SpA  
 - Vacuum Wave  
@@ -18579,7 +18593,7 @@ EVs: 252 HP / 192 Atk / 64 SpA
 
 Mime Jr. @ Wide Lens
 Ability: Technician  
-Level: 50
+Level: 48
 Tera Type: Fairy  
 EVs: 252 HP / 252 SpA  
 - Confuse Ray  
@@ -18589,7 +18603,7 @@ EVs: 252 HP / 252 SpA
 
 Happiny (F) @ Leftovers
 Ability: Natural Cure  
-Level: 50  
+Level: 48  
 Tera Type: Normal  
 EVs: 252 Def  / 252 SpD
 Calm Nature
@@ -18599,7 +18613,7 @@ Calm Nature
 
 Munchlax @ Iapapa Berry  
 Ability: Gluttony  
-Level: 50  
+Level: 48  
 Tera Type: Normal  
 EVs: 252 Def / 252 SpA  
 - Belch  
@@ -18609,7 +18623,7 @@ EVs: 252 Def / 252 SpA
 
 Chingling @ Wide Lens
 Ability: Levitate  
-Level: 50  
+Level: 48  
 Tera Type: Psychic  
 EVs: 252 HP / 252 SpA  
 IVs: 0 Atk  
@@ -18620,7 +18634,7 @@ IVs: 0 Atk
 
 Wynaut @ Rocky Helmet
 Ability: Shadow Tag  
-Level: 50  
+Level: 48  
 Tera Type: Psychic  
 IVs: 0 Atk  
 EVs: 252 HP
@@ -27306,7 +27320,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Nidoking (M)  
 Ability: Rivalry  
-Level: 50
+Level: 53
 - Drill Run  
 - Poison Jab  
 - Power-Up Punch  
@@ -27314,7 +27328,7 @@ Level: 50
 
 Nidoqueen (F)  
 Ability: Rivalry  
-Level: 50
+Level: 53
 EVs: 252 SpA  
 IVs: 0 Atk  
 - Attract  
@@ -27324,7 +27338,7 @@ IVs: 0 Atk
 
 Alcremie (Alcremie-Ruby-Cream) (F)  
 Ability: Sweet Veil  
-Level: 50
+Level: 53
 IVs: 0 Atk  
 - Sweet Kiss  
 - Decorate  
@@ -27333,7 +27347,7 @@ IVs: 0 Atk
 
 Delcatty  
 Ability: Cute Charm  
-Level: 50
+Level: 53
 IVs: 0 Atk  
 - Attract  
 - Sweet Kiss  
@@ -29632,17 +29646,19 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Pidgeotto  
-Level: 53
+Level: 54
 Ability: Keen Eye  
 Tera Type: Normal  
+EVs: 164 HP / 164 Atk / 164 Spe
 - Feather Dance  
 - Roost  
 - Air Slash  
 - Steel Wing  
 
 Tranquill  
-Level: 53
-Ability: Big Pecks  
+Level: 54
+Ability: Big Pecks 
+EVs: 164 HP / 164 Atk / 164 Spe 
 Tera Type: Normal  
 - Dual Wingbeat  
 - Night Slash  
@@ -29650,16 +29666,18 @@ Tera Type: Normal
 - Morning Sun  
 
 Staravia  
-Level: 52
+Level: 54
 Ability: Intimidate  
+EVs: 164 HP / 164 Atk / 164 Spe
 Tera Type: Normal  
 - Quick Attack  
 - U-turn  
 - Retaliate  
 
 Corvisquire  
-Level: 53
+Level: 54
 Ability: Unnerve  
+EVs: 164 HP / 164 Atk / 164 Spe
 Tera Type: Flying  
 - Drill Peck  
 - Power Trip  
@@ -29677,7 +29695,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Mantine @ Wacan Berry  
 Ability: Swift Swim  
-Level: 50
+Level: 51
 Tera Type: Ground  
 IVs: 0 Atk  
 - Air Slash  
@@ -29688,6 +29706,7 @@ IVs: 0 Atk
 Drakloak @ Sitrus Berry  
 Ability: Infiltrator  
 Level: 52
+EVs: 164 HP / 164 Atk / 164 Spe
 - Acrobatics  
 - Dragon Dance  
 - Baton Pass  
@@ -29695,7 +29714,7 @@ Level: 52
 
 Diggersby  
 Ability: Huge Power  
-Level: 50
+Level: 52
 - U-turn  
 - Gunk Shot  
 - High Horsepower  
@@ -29703,7 +29722,7 @@ Level: 50
 
 Linoone-Galar  
 Ability: Quick Feet  
-Level: 52
+Level: 54
 - Body Slam  
 - Assurance  
 - Gunk Shot  
@@ -29720,7 +29739,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Persian  
-Level: 47
+Level: 50
 Ability: Limber  
 Tera Type: Normal  
 - Pounce  
@@ -29729,7 +29748,7 @@ Tera Type: Normal
 - Hypnosis  
 
 Squawkabilly  
-Level: 47
+Level: 50
 Ability: Intimidate  
 Tera Type: Normal  
 - Dual Wingbeat  
@@ -29739,7 +29758,7 @@ Tera Type: Normal
 
 
 Cramorant @ Power Herb  
-Level: 47
+Level: 50
 Ability: Gulp Missile  
 Tera Type: Flying  
 - Dive  
@@ -29748,7 +29767,7 @@ Tera Type: Flying
 - Stockpile  
 
 Exeggutor-Alola @ Yache Berry  
-Level: 47
+Level: 50
 Ability: Harvest  
 Tera Type: Grass  
 IVs: 0 Atk  
@@ -29807,7 +29826,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Bombirdier  
-Level: 48
+Level: 52
 Ability: Rocky Payload
 Tera Type: Flying  
 - Rock Slide
@@ -29816,7 +29835,7 @@ Tera Type: Flying
 - Parting Shot
 
 Flamigo @ White Herb  
-Level: 48
+Level: 52
 Ability: Scrappy  
 Tera Type: Flying  
 - U-turn  
@@ -29825,7 +29844,7 @@ Tera Type: Flying
 - Wide Guard  
 
 Golbat @ Big Root   
-Level: 50
+Level: 52
 Ability: Inner Focus  
 EVs: 128 SpA  
 - Hypnosis  
@@ -33433,7 +33452,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Sawsbuck-Winter  
-Level: 37
+Level: 36
 Ability: Slush Rush  
 Tera Type: Normal  
 - Horn Leech  
@@ -33442,7 +33461,7 @@ Tera Type: Normal
 - Body Slam  
 
 Piloswine @ Bright Powder 
-Level: 38
+Level: 37
 Ability: Snow Cloak  
 Tera Type: Ice  
 - Glacial Lance  
@@ -33451,7 +33470,7 @@ Tera Type: Ice
 - Light Screen  
 
 Pignite @ Punching Glove 
-Level: 41
+Level: 40
 Ability: Thick Fat  
 Tera Type: Fire  
 EVs: 252 Atk / 128 Def / 128 SpD  
@@ -33462,7 +33481,7 @@ Adamant Nature
 - Power-Up Punch  
 
 Gloom @ Black Sludge  
-Level: 41
+Level: 40
 Ability: Stench  
 Tera Type: Grass  
 EVs: 252 SpA / 128 Def / 128 SpD  
