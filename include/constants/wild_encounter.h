@@ -3,8 +3,8 @@
 
 #define LAND_WILD_COUNT     18 // must match the highest slot index in ChooseWildMonIndex_Land
 #define WATER_WILD_COUNT    14 // must match the highest slot index in ChooseWildMonIndex_Water
-#define ROCK_WILD_COUNT     5
-#define FISH_WILD_COUNT     10
+#define ROCK_WILD_COUNT     14 // must match the highest slot index in ChooseWildMonIndex_Rocks
+#define FISH_WILD_COUNT     30 // must match the highest slot index in ChooseWildMonIndex_Fishing
 #define HIDDEN_WILD_COUNT   3
 
 #define NUM_ALTERING_CAVE_TABLES 9

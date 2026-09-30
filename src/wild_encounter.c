@@ -288,14 +288,32 @@ u32 ChooseWildMonIndex_Rocks(void)
         wildMonIndex = 2;
     else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_2 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_3)
         wildMonIndex = 3;
-    else
+    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_3 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_4)
         wildMonIndex = 4;
+    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_4 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_5)
+        wildMonIndex = 5;
+    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_5 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_6)
+        wildMonIndex = 6;
+    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_6 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_7)
+        wildMonIndex = 7;
+    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_7 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_8)
+        wildMonIndex = 8;
+    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_8 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_9)
+        wildMonIndex = 9;
+    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_9 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_10)
+        wildMonIndex = 10;
+    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_10 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_11)
+        wildMonIndex = 11;
+    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_11 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_12)
+        wildMonIndex = 12;
+    else
+        wildMonIndex = 13;
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
 
     if (swap)
-        wildMonIndex = 4 - wildMonIndex;
+        wildMonIndex = 13 - wildMonIndex;
 
     return wildMonIndex;
 }
