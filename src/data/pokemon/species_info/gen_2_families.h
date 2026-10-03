@@ -502,8 +502,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
         .eliteLearnset = sQuilavaEliteLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_TYPHLOSION},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_TYPHLOSION}),
     },
 
     [SPECIES_QUILAVA_HISUI] =
@@ -572,8 +571,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
         .eliteLearnset = sQuilavaEliteLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_TYPHLOSION_HISUI},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_TYPHLOSION_HISUI}),
     },
 
 

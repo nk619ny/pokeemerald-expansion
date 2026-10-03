@@ -7273,8 +7273,7 @@ static bool32 CanEvolve(enum Species species)
     {
         for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
         {
-            if (evolutions[i].method
-             && SanitizeSpeciesId(evolutions[i].targetSpecies) != SPECIES_NONE)
+            if (SanitizeSpeciesId(evolutions[i].targetSpecies) != SPECIES_NONE)
                 return TRUE;
         }
     }

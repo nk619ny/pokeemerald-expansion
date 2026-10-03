@@ -802,8 +802,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sDewottLevelUpLearnset,
         .teachableLearnset = sDewottTeachableLearnset,
         .eliteLearnset = sDewottEliteLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SAMUROTT},
-                                {EVO_NONE, 0, SPECIES_SAMUROTT_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SAMUROTT}),
     },
 
     [SPECIES_DEWOTT_HISUI] =
@@ -874,8 +873,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sDewottLevelUpLearnset,
         .teachableLearnset = sDewottTeachableLearnset,
         .eliteLearnset = sNoneEliteLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SAMUROTT_HISUI},
-                                {EVO_NONE, 0, SPECIES_SAMUROTT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SAMUROTT_HISUI}),
     },
 
     [SPECIES_SAMUROTT] =
