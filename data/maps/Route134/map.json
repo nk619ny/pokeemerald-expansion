@@ -3,7 +3,6 @@
   "name": "Route134",
   "layout": "LAYOUT_ROUTE134",
   "music": "MUS_ROUTE119",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_134",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -80,13 +79,13 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT_ORAS",
-      "x": 49,
+      "x": 56,
       "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 6,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route134_EventScript_Hitoshi",
       "flag": "0"
@@ -119,13 +118,13 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
-      "x": 51,
+      "x": 55,
       "y": 16,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 6,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route134_EventScript_Reyna",
       "flag": "0"
@@ -145,7 +144,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VITAMIN",
-      "x": 50,
+      "x": 58,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -172,5 +171,6 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

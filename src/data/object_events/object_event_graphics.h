@@ -499,6 +499,9 @@ const u32 gObjectEventPic_SchoolkidFORAS[] = INCGFX_U32("graphics/object_events/
 const u16 gObjectEventPal_SchoolkidFORAS[] = INCGFX_U16("graphics/object_events/pics/people/schoolkid_f_oras.png", ".gbapal");
 const u32 gObjectEventPic_TriathleteRunningFORAS[] = INCGFX_U32("graphics/object_events/pics/people/triathlete_running_f_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_TriathleteRunningFORAS[] = INCGFX_U16("graphics/object_events/pics/people/triathlete_running_f_oras.png", ".gbapal");
+const u32 gObjectEventPic_Man[] = INCGFX_U32("graphics/object_events/pics/people/man.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_Man[] = INCGFX_U16("graphics/object_events/pics/people/man.png", ".gbapal");
+
 
 // Custom item icons
 const u32 gObjectEventPic_TM[] = INCGFX_U32("graphics/object_events/pics/misc/tm.png", ".4bpp", "-mwidth 2 -mheight 2");

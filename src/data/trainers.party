@@ -1166,7 +1166,7 @@ Adamant Nature
 */
 
 
-=== TRAINER_GRUNT_WEATHER_INST_1 === /* Weather Institute */ /* TO BE ADDED */
+=== TRAINER_GRUNT_WEATHER_INST_1 === /* Weather Institute */ 
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M ORAS 80
@@ -1175,13 +1175,41 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zubat
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Quagsire @ Rindo Berry  
+Ability: Muddy  
+Level: 53
+- Mud Sport  
+- High Horsepower  
+- Liquidation  
+- Recover  
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Azumarill  
+Ability: Sap Sipper  
+EVs: 252 SpA  
+Level: 53
+IVs: 0 Atk  
+- Alluring Voice  
+- Grass Knot  
+- Scald  
+- Encore  
+
+Mantine @ Wacan Berry  
+Ability: Swift Swim  
+Level: 53
+IVs: 0 Atk  
+- Air Slash  
+- Whirlpool  
+- Tailwind  
+- Wide Guard  
+
+Tentacruel @ Black Sludge  
+Ability: Clear Body  
+Level: 53
+- Acid Armor  
+- Poison Jab  
+- Aqua Ring  
+- Acupressure  
+
 
 === TRAINER_GRUNT_WEATHER_INST_2 === /* Weather Institute */ 
 Name: GRUNT
@@ -1562,7 +1590,7 @@ IVs: 0 Atk
 - Sludge Bomb  
 
 
-=== TRAINER_GRUNT_WEATHER_INST_4 === /* Weather Institute */ /* TO BE ADDED */
+=== TRAINER_GRUNT_WEATHER_INST_4 === /* Weather Institute */ 
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt F ORAS 80
@@ -1571,9 +1599,40 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Carvanha
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dragalge @ Poison Barb  
+Ability: Adaptability  
+Level: 52
+IVs: 0 Atk  
+- Sludge Wave  
+- Dragon Pulse  
+- Scald  
+- Thunderbolt  
+
+Aromatisse  
+Ability: Misty Surge  
+Level: 52
+IVs: 0 Atk  
+- Aromatic Mist  
+- Misty Explosion  
+- Mist Ball  
+- Energy Ball  
+
+Altaria @ Focus Sash
+Ability: Cloud Nine
+Level: 52
+- Mist Ball  
+- Mist  
+- Heat Wave  
+- Earthquake  
+
+Orbeetle @ Light Clay  
+Ability: Telepathy  
+Level: 52
+IVs: 0 Atk  
+- Giga Drain  
+- Reflect  
+- Light Screen  
+- Psychic  
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_5 === /* Aqua Hideout */
 Name: GRUNT
@@ -7953,7 +8012,7 @@ Tera Type: Fighting
 - Counter  
 
 
-=== TRAINER_HITOSHI === /* Route 134 */ /* TO BE ADDED */
+=== TRAINER_HITOSHI === /* Route 134 */
 Name: HITOSHI
 Class: Black Belt
 Pic: Black Belt ORAS 80
@@ -7962,15 +8021,40 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Machop
-Level: 32
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Pawmot  
+Ability: Iron Fist  
+Level: 75
+- Double Shock  
+- Close Combat  
+- Fake Out  
+- Coaching  
 
-Machoke
-Level: 32
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Ledian @ Charti Berry  
+Ability: Iron Fist  
+Level: 75
+- Comet Punch  
+- Drain Punch  
+- Mach Punch  
+- Acrobatics  
 
-=== TRAINER_KIYO === /* Route 132 */ /* TO BE ADDED */
+Hawlucha  
+Ability: Limber 
+Level: 75 
+- Brave Bird  
+- Cross Chop  
+- Focus Energy  
+- Detect  
+
+Lycanroc-Dusk  
+Ability: Tough Claws  
+Level: 75
+- Close Combat  
+- Accelerock  
+- Psychic Fangs  
+- Howl
+
+
+=== TRAINER_KIYO === /* Route 132 */
 Name: KIYO
 Class: Black Belt
 Pic: Black Belt ORAS 80
@@ -7979,9 +8063,38 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Hariyama
-Level: 34
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Pinsir @ White Herb  
+Ability: Hyper Cutter  
+Level: 75
+- X-Scissor  
+- Superpower  
+- Strength  
+- Seismic Toss  
+
+Granbull @ Custap Berry  
+Ability: Intimidate  
+Level: 75
+- Play Rough  
+- Close Combat  
+- Counter  
+- Reversal  
+
+Hitmonchan (M) @ Punching Glove  
+Ability: Iron Fist  
+Level: 75
+- Bullet Punch  
+- Power-Up Punch  
+- Comet Punch  
+- Fire Punch  
+
+Pangoro @ Roseli Berry  
+Ability: Mold Breaker  
+Level: 75
+- Darkest Lariat  
+- Bulk Up  
+- Stomping Tantrum  
+- Sky Uppercut  
+
 
 === TRAINER_KOICHI === /* Route 115 */
 Name: KOICHI
@@ -8029,7 +8142,7 @@ Tera Type: Fighting
 - Swords Dance  
 
 
-=== TRAINER_NOB_1 === /* Route 115 */ /* TO BE ADDED */
+=== TRAINER_NOB_1 === /* Route 115 */
 Name: NOB
 Class: Black Belt
 Pic: Black Belt ORAS 80
@@ -8038,9 +8151,43 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Machop
-Level: 19
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Sawk (M) @ Iapapa Berry  
+Ability: Sturdy  
+EVs: 252 HP
+Level: 46
+- Bide  
+- Payback  
+- Helping Hand  
+- Close Combat  
+
+Throh (M) @ Flame Orb  
+Ability: Guts  
+Level: 46
+EVs: 252 Spe  
+Jolly Nature  
+- Fire Punch  
+- Ice Punch  
+- Thunder Punch  
+- Mat Block  
+
+Bisharp @ Chople Berry  
+Ability: Inner Focus  
+Level: 46
+EVs: 252 HP  
+- Brick Break  
+- Sucker Punch  
+- Iron Head  
+- Poison Jab  
+
+Ursaring @ Toxic Orb  
+Ability: Quick Feet  
+Level: 46
+EVs: 252 Spe  
+- Facade  
+- Brick Break  
+- Throat Chop  
+- Bulk Up  
+
 
 === TRAINER_NOB_2 === /* Route */
 Name: NOB
@@ -13173,7 +13320,7 @@ IVs: 0 Atk
 - Heat Wave  
 - Shadow Ball  
 
-Feraligatr-Mega @ Feraligite  
+Feraligatr @ Feraligite  
 Ability: Intimidate  
 Tera Type: Water  
 EVs: 252 HP / 252 Atk / 4 Spe  
@@ -13182,7 +13329,7 @@ Adamant Nature
 - Dragon Dance  
 - Fishious Rend  
 
-Meganium-Mega @ Meganiumite  
+Meganium @ Meganiumite  
 Ability: Overgrow  
 Tera Type: Grass  
 EVs: 252 HP / 4 Def / 252 SpA  
@@ -14648,6 +14795,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Dratini  
 Level: 65
 Ability: Shed Skin  
+EVs: 252 HP / 64 Atk / 128 SpA / 64 Spe
 Tera Type: Dragon  
 - Ice Beam  
 - Flamethrower  
@@ -14667,6 +14815,7 @@ Tera Type: Water
 Basculin-Red-Striped  
 Level: 58
 Ability: Adaptability  
+EVs: 188 HP / 188 Atk / 64 Spe
 Tera Type: Water  
 - Flip Turn  
 - Aqua Jet  
@@ -14677,6 +14826,7 @@ Tera Type: Water
 Qwilfish  
 Level: 58
 Ability: Intimidate  
+EVs: 188 HP / 188 Atk / 64 Spe
 Tera Type: Water  
 - Spiky Shield  
 - Aqua Jet  
@@ -16041,8 +16191,9 @@ IVs: 0 Atk
 - Quiver Dance  
 - Roost  
 
-Farfetch’d @ Leek  
+Farfetch'd @ Leek  
 Ability: Defiant  
+EVs: 252 HP / 128 Atk
 Level: 54
 - Slash  
 - Night Slash  
@@ -22993,7 +23144,7 @@ Tera Type: Ground
 
 
 
-=== TRAINER_GRUNT_MT_CHIMNEY_2 === /* Route */ /* TO BE ADDED */
+=== TRAINER_GRUNT_MT_CHIMNEY_2 === /* Mt Chimney */ 
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M ORAS 80
@@ -23002,9 +23153,61 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zubat
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Smeargle @ Focus Band
+Ability: Moody  
+Level: 51
+EVs: 252 HP / 252 Spe  
+Jolly Nature  
+IVs: 0 Atk  
+- Magma Storm  
+- Fairy Lock  
+- Spore  
+- Grass Pledge  
+
+Typhlosion @ Wide Lens  
+Ability: Blaze  
+Level: 43
+IVs: 0 Atk 
+Tera Type: Water 
+- Magma Storm  
+- Fire Pledge  
+- Scorching Sands  
+- Hidden Power
+
+Magcargo @ Enigma Berry  
+Ability: Solid Rock  
+Level: 43
+IVs: 0 Atk  
+- Magma Storm  
+- Burning Bulwark  
+- Toxic  
+- Recover  
+
+Shiinotic @ Kebia Berry  
+Ability: Illuminate  
+Level: 43
+IVs: 0 Atk  
+- Spore  
+- Giga Drain  
+- Leech Seed  
+- Strength Sap  
+
+Garbodor  
+Ability: Toxic Debris  
+Level: 43
+EVs: 252 SpA  
+IVs: 0 Atk  
+- Venom Drench  
+- Toxic  
+- Venoshock  
+- Dark Pulse  
+
+/*
+Camerupt @ Passho Berry  
+Ability: Solid Rock  
+IVs: 0 Atk  
+- Magma Storm  
+*/
 
 === TRAINER_CLARENCE === /* Route 129 */ /* TO BE ADDED */
 Name: CLARENCE
@@ -23688,7 +23891,7 @@ Staryu
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_5 === /* Weather Institute */ /* TO BE ADDED */
+=== TRAINER_GRUNT_WEATHER_INST_5 === /* Weather Institute */ 
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt F ORAS 80
@@ -23697,13 +23900,55 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zubat
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Simisage @ Iapapa Berry  
+Ability: Gluttony  
+Level: 51
+EVs: 252 HP / 52 SpA / 200 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Grass Pledge  
+- Gastro Acid  
+- Attract  
+- Leech Seed  
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Simipour  
+Ability: Torrent  
+Level: 51
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Water Pledge  
+- Nasty Plot  
+- Ice Beam  
+
+Smeargle @ Focus Sash
+Ability: Trace  
+Level: 61
+EVs: 252 HP / 4 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Grass Pledge  
+- Water Pledge  
+- Sticky Web  
+
+Parasect @ Coba Berry  
+Ability: Damp  
+Level: 51
+EVs: 252 HP / 252 Spe  
+- Spore  
+- Leech Life  
+- Brick Break  
+- Light Screen  
+
+Crustle  
+Ability: Sturdy  
+Level: 52
+EVs: 252 HP / 252 Spe  
+- Stone Edge  
+- X-Scissor  
+- Counter  
+- Stomping Tantrum  
+
 
 === TRAINER_COURTNEY_MT_CHIMNEY === /* Mt. Chimney */
 Name: COURTNEY

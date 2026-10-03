@@ -539,6 +539,7 @@ static const u16 sNinetalesEliteLearnset[] = {
 #if P_ALOLAN_FORMS
 static const u16 sNinetalesAlolaEliteLearnset[] = {
     //MOVE_ICE_BURN,
+    MOVE_MIST_BALL,
     MOVE_AQUA_TAIL,
     MOVE_CAPTIVATE,
     MOVE_CONFIDE,
