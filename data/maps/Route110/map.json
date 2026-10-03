@@ -554,6 +554,19 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route111_EventScript_Celia",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AROMA_LADY_ORAS",
+      "x": -7,
+      "y": 70,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Route103_EventScript_Daisy",
+      "flag": "0"
     }
   ],
   "warp_events": [

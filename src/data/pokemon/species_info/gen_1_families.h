@@ -10811,11 +10811,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eliteLearnset = sSlowpokeEliteLearnset,
         .eggMoveLearnset = sSlowpokeEggMoveLearnset,
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_SLOWBRO}
-                            #if P_GEN_2_CROSS_EVOS
-                                ,{EVO_TRADE, 0, SPECIES_SLOWKING, CONDITIONS({IF_HOLD_ITEM, ITEM_KINGS_ROCK})},
-                                {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING}
-                            #endif
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_SLOWBRO},
+                                {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING},  
+                                {EVO_LEVEL, 20, SPECIES_SLOWBRO, CONDITIONS({IF_SPECIES_IN_PARTY, SPECIES_SHELLDER},{IF_PID_UPPER_MODULO_10_GT, 4})},
+                                {EVO_LEVEL, 20, SPECIES_SLOWKING, CONDITIONS({IF_SPECIES_IN_PARTY, SPECIES_SHELLDER},{IF_PID_UPPER_MODULO_10_LT, 5})}
                             ),
     },
 
@@ -11159,10 +11158,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eliteLearnset = sSlowpokeGalarEliteLearnset,
         .eggMoveLearnset = sSlowpokeGalarEggMoveLearnset,
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_GALARICA_CUFF, SPECIES_SLOWBRO_GALAR}
-                            #if P_GEN_2_CROSS_EVOS
-                                ,{EVO_ITEM, ITEM_GALARICA_WREATH, SPECIES_SLOWKING_GALAR}
-                            #endif
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_GALARICA_CUFF, SPECIES_SLOWBRO_GALAR},
+                                {EVO_ITEM, ITEM_GALARICA_WREATH, SPECIES_SLOWKING_GALAR},
+                                {EVO_LEVEL, 20, SPECIES_SLOWBRO_GALAR, CONDITIONS({IF_SPECIES_IN_PARTY, SPECIES_SHELLDER},{IF_PID_UPPER_MODULO_10_GT, 4})},
+                                {EVO_LEVEL, 20, SPECIES_SLOWKING_GALAR, CONDITIONS({IF_SPECIES_IN_PARTY, SPECIES_SHELLDER},{IF_PID_UPPER_MODULO_10_LT, 5})}
                             ),
     },
 
