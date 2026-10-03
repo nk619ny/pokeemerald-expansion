@@ -3796,6 +3796,16 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 }
                 break;
             }
+            case EFFECT_POPULATION_BOMB:
+                if (ShouldPopulationBombForRageFist(battlerAtk, battlerAtkPartner, move, wouldPartnerFaint, aiData))
+                {
+                    if (isFriendlyFireOK)
+                    {
+                        ADJUST_SCORE(GOOD_EFFECT);
+                    }
+                    RETURN_SCORE_PLUS(WEAK_EFFECT);
+                }
+                break;
             case EFFECT_SOAK:
                 if (atkPartnerAbility == ABILITY_WONDER_GUARD
                  && !IS_BATTLER_OF_TYPE(battlerAtkPartner, TYPE_WATER)

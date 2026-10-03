@@ -2584,6 +2584,24 @@ bool32 ShouldBeatUpForRageFist(enum BattlerId battlerAtkPartner, enum Move move,
          && CanMoveIndexHitAnyOpponent(battlerAtkPartner, rageFistMoveIndex, aiData)
          && GetBattlerPartyState(battlerAtkPartner)->timesGotHit < 4 // Power is already high beyond this.
          && !IsBattleMoveStatus(move)
+         && !wouldPartnerFaint
+         && CountUsablePartyMons(battlerAtkPartner) >= 3);
+}
+
+bool32 ShouldPopulationBombForRageFist(enum BattlerId battlerAtk, enum BattlerId battlerAtkPartner, enum Move move, bool32 wouldPartnerFaint, struct AiLogicData *aiData)
+{
+    u32 rageFistMoveIndex = GetUsableMoveIndexWithEffect(battlerAtkPartner, EFFECT_RAGE_FIST, aiData->moveLimitations[battlerAtkPartner]);
+
+    if (GetMoveEffect(move) != EFFECT_POPULATION_BOMB)
+        return FALSE;
+
+    if (gBattleMons[battlerAtkPartner].volatiles.substitute)
+        return FALSE;
+
+    return (rageFistMoveIndex != MAX_MON_MOVES
+         && CanMoveIndexHitAnyOpponent(battlerAtkPartner, rageFistMoveIndex, aiData)
+         && aiData->effectiveness[battlerAtk][battlerAtkPartner][gAiThinkingStruct->movesetIndex] > UQ_4_12(0.0) // Rage Fist only counts hits that deal damage.
+         && GetBattlerPartyState(battlerAtkPartner)->timesGotHit < 4 // Power is already high beyond this.
          && !wouldPartnerFaint);
 }
 

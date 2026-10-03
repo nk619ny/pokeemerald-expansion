@@ -212,7 +212,8 @@ beneficial ability or effect. Representative rewards:
   proc or `WEAK_EFFECT`/`DECENT_EFFECT` for a single-target proc.
 - Support move effects on the ally: `EFFECT_SKILL_SWAP`/`ENTRAINMENT`/`ROLE_PLAY` (ability
   swaps), `EFFECT_STAT_CHANGE`/`AROMATIC_MIST` (ally buffs), `EFFECT_MAGNETIC_FLUX`/`GEAR_UP`,
-  `EFFECT_BEAT_UP` (Justified/Rage Fist proc), `EFFECT_HEAL_PULSE`/`HIT_ENEMY_HEAL_ALLY`
+  `EFFECT_BEAT_UP` (Justified/Rage Fist proc), `EFFECT_POPULATION_BOMB` (Rage Fist proc),
+  `EFFECT_HEAL_PULSE`/`HIT_ENEMY_HEAL_ALLY`
   (ally < 50% HP), `EFFECT_PURIFY`, `EFFECT_AFTER_YOU`.
 - **Fallback:** if no beneficial reason is found, `RETURN_SCORE_MINUS(10)`. Combined with the
   ally guard in §4, this keeps friendly fire from ever being chosen accidentally.
@@ -239,6 +240,7 @@ doubles behavior, reuse these rather than reimplementing.
 | `IsAllyProtectingFromMove(...)` | Whether the ally's Protect variant blocks our move (handles Wide Guard, Quick Guard, Crafty Shield, Mat Block, etc.). |
 | `GetFriendlyFireKOThreshold(battler)` | Hits-to-KO-ally tolerance: `RISKY`→2, default→3, `CONSERVATIVE`→4, `ATTACKS_PARTNER`→0. Constants in [include/config/ai.h](../../include/config/ai.h). |
 | `ShouldBeatUpForJustified(...)` / `ShouldBeatUpForRageFist(...)` | Whether Beat Up should hit the ally to proc its ability/counter. |
+| `ShouldPopulationBombForRageFist(...)` | Whether Population Bomb should hit an ally that has a usable Rage Fist (each hit adds a Rage Fist stack). |
 | `AI_ShouldSpicyExtract(...)` | Whether to Spicy Extract the ally (Atk up + Def down, skipped if ally has Contrary/Good as Gold or a foe has Foul Play). |
 | `ShouldUseWishAromatherapy(...)` | Wish / Heal Bell / Aromatherapy support timing. |
 
