@@ -79,6 +79,20 @@ extern u16 gSpecialVar_ItemId;
 
 #define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_8) ? 160 : 220)
 #define VITAMIN_EV_BOOST_VALUE 64
+#define EV_BERRY_REDUCE_VALUE 8
+
+static s32 GetItemEffectEvChange(u8 evParam)
+{
+    switch ((s8)evParam)
+    {
+    case ITEM6_SUBTRACT_EV:
+        return -EV_BERRY_REDUCE_VALUE;
+    case ITEM6_RESET_EV:
+        return 0;
+    default:
+        return VITAMIN_EV_BOOST_VALUE;
+    }
+}
 
 struct SpeciesItem
 {
@@ -3687,7 +3701,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, enum Item item, u8 partyIndex, 
                     case 0: // ITEM4_EV_HP
                     case 1: // ITEM4_EV_ATK
                         evCount = GetMonEVCount(mon);
-                        temp2 = VITAMIN_EV_BOOST_VALUE;
+                        temp2 = GetItemEffectEvChange(itemEffect[itemEffectParam]);
                         dataSigned = GetMonData(mon, sGetMonDataEVConstants[temp1]);
                         evChange = temp2;
 
@@ -3882,7 +3896,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, enum Item item, u8 partyIndex, 
                     case 2: // ITEM5_EV_SPDEF
                     case 3: // ITEM5_EV_SPATK
                         evCount = GetMonEVCount(mon);
-                        temp2 = VITAMIN_EV_BOOST_VALUE;
+                        temp2 = GetItemEffectEvChange(itemEffect[itemEffectParam]);
                         dataSigned = GetMonData(mon, sGetMonDataEVConstants[temp1 + 2]);
                         evChange = temp2;
                         if (evChange > 0) // Increasing EV
