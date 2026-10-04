@@ -2924,6 +2924,33 @@ static bool32 TryDancer(void)
     return FALSE;
 }
 
+static bool32 IsAngularAccelerationMove(enum Move move)
+{
+    switch (move)
+    {
+    case MOVE_RAPID_SPIN:
+    case MOVE_SPIN_OUT:
+    case MOVE_MORTAL_SPIN:
+    case MOVE_ICE_SPINNER:
+    case MOVE_BLAZING_TORQUE:
+    case MOVE_COMBAT_TORQUE:
+    case MOVE_MAGICAL_TORQUE:
+    case MOVE_NOXIOUS_TORQUE:
+    case MOVE_WICKED_TORQUE:
+    case MOVE_COLLISION_COURSE:
+    case MOVE_ELECTRO_DRIFT:
+    case MOVE_TRIPLE_AXEL:
+    case MOVE_TRIPLE_KICK:
+    case MOVE_ROLLING_KICK:
+    case MOVE_GYRO_BALL:
+    case MOVE_DRILL_RUN:
+    case MOVE_HYPER_DRILL:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
 u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum Ability ability, enum Move move, bool32 shouldAbilityTrigger)
 {
     u32 effect = 0;
@@ -3240,6 +3267,19 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             {
                 BattleScriptCall(BattleScript_BlockedByPrimalWeather);
                 effect++;
+            }
+            break;
+        case ABILITY_DARK_CLOUDS:
+            if (!shouldAbilityTrigger)
+                break;
+            {
+                bool32 weatherSet = TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, gLastUsedAbility);
+                bool32 terrainSet = TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN, TRUE);
+                if (weatherSet || terrainSet)
+                {
+                    BattleScriptCall(BattleScript_DarkCloudsActivates);
+                    effect++;
+                }
             }
             break;
         case ABILITY_SAND_STREAM:
@@ -4388,6 +4428,19 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
     case ABILITYEFFECT_MOVE_END_ATTACKER: // Same as above, but for attacker
         switch (gLastUsedAbility)
         {
+        case ABILITY_ANGULAR_ACCELERATION:
+            if (IsAngularAccelerationMove(gCurrentMove)
+             && !gBattleStruct->unableToUseMove
+             && IsBattlerAlive(battler)
+             && IsAnyTargetTurnDamaged(battler, INCLUDING_SUBSTITUTES)
+             && CompareStat(battler, STAT_SPEED, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility))
+            {
+                gEffectBattler = gBattlerAbility = battler;
+                SetStatChange(battler, STAT_SPEED, 1);
+                BattleScriptCall(BattleScript_AbilityStatChange);
+                effect++;
+            }
+            break;
         case ABILITY_POISON_TOUCH:
             if (IsBattlerAlive(gBattlerTarget)
              && !IsMoveEffectBlockedByTarget(GetBattlerAbility(gBattlerTarget))

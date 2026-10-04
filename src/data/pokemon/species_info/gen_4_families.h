@@ -7513,6 +7513,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sPhioneLevelUpLearnset,
         .teachableLearnset = sPhioneTeachableLearnset,
         .eliteLearnset = sPhioneEliteLearnset,
+        .evolutions = EVOLUTION({EVO_NONE, 0, SPECIES_MANAPHY}),
     },
 
     [SPECIES_MANAPHY] =

@@ -1901,6 +1901,7 @@ u32 AI_GetSwitchinWeather(enum BattlerId battler)
     switch (ability)
     {
     case ABILITY_DRIZZLE:
+    case ABILITY_DARK_CLOUDS:
         return B_WEATHER_RAIN_NORMAL;
     case ABILITY_DROUGHT:
     case ABILITY_ORICHALCUM_PULSE:
@@ -1908,6 +1909,7 @@ u32 AI_GetSwitchinWeather(enum BattlerId battler)
     case ABILITY_SAND_STREAM:
         return B_WEATHER_SANDSTORM;
     case ABILITY_SNOW_WARNING:
+    case ABILITY_WHITE_OUT:
         return GetConfig(B_SNOW_WARNING) >= GEN_9 ? B_WEATHER_SNOW : B_WEATHER_HAIL;
     default:
         return gBattleWeather;
@@ -1938,6 +1940,7 @@ u32 AI_GetSwitchinFieldStatus(enum BattlerId battler)
     {
     case ABILITY_ELECTRIC_SURGE:
     case ABILITY_HADRON_ENGINE:
+    case ABILITY_DARK_CLOUDS:
         return SwitchinChangeBattleTerrain(STATUS_FIELD_ELECTRIC_TERRAIN, startingFieldStatus);
     case ABILITY_GRASSY_SURGE:
     case ABILITY_ABUNDANCE:
