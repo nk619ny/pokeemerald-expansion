@@ -777,12 +777,13 @@ static const struct SpriteTemplate sTrainerFront80x80SpriteTemplate =
 
 static const struct Subsprite sSubsprites_TrainerFront80x80[] =
 {
-    { .x = -40, .y = -40, .shape = SPRITE_SHAPE(64x64), .size = SPRITE_SIZE(64x64), .tileOffset = 0,  .priority = 2 },
-    { .x =  24, .y = -40, .shape = SPRITE_SHAPE(16x32), .size = SPRITE_SIZE(16x32), .tileOffset = 64, .priority = 2 },
-    { .x =  24, .y =  -8, .shape = SPRITE_SHAPE(16x32), .size = SPRITE_SIZE(16x32), .tileOffset = 72, .priority = 2 },
-    { .x =  24, .y =  24, .shape = SPRITE_SHAPE(16x16), .size = SPRITE_SIZE(16x16), .tileOffset = 80, .priority = 2 },
-    { .x = -40, .y =  24, .shape = SPRITE_SHAPE(32x16), .size = SPRITE_SIZE(32x16), .tileOffset = 84, .priority = 2 },
-    { .x =  -8, .y =  24, .shape = SPRITE_SHAPE(32x16), .size = SPRITE_SIZE(32x16), .tileOffset = 92, .priority = 2 },
+    // Y offsets are shifted up 1px from true center to keep the feet on the platform.
+    { .x = -40, .y = -41, .shape = SPRITE_SHAPE(64x64), .size = SPRITE_SIZE(64x64), .tileOffset = 0,  .priority = 2 },
+    { .x =  24, .y = -41, .shape = SPRITE_SHAPE(16x32), .size = SPRITE_SIZE(16x32), .tileOffset = 64, .priority = 2 },
+    { .x =  24, .y =  -9, .shape = SPRITE_SHAPE(16x32), .size = SPRITE_SIZE(16x32), .tileOffset = 72, .priority = 2 },
+    { .x =  24, .y =  23, .shape = SPRITE_SHAPE(16x16), .size = SPRITE_SIZE(16x16), .tileOffset = 80, .priority = 2 },
+    { .x = -40, .y =  23, .shape = SPRITE_SHAPE(32x16), .size = SPRITE_SIZE(32x16), .tileOffset = 84, .priority = 2 },
+    { .x =  -8, .y =  23, .shape = SPRITE_SHAPE(32x16), .size = SPRITE_SIZE(32x16), .tileOffset = 92, .priority = 2 },
 };
 
 static const struct SubspriteTable sSubspriteTable_TrainerFront80x80[] =
