@@ -1925,24 +1925,24 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Ninetales-Alola @ Light Clay  
-Level: 55
+Level: 53
 Ball: Great
 Ability: Snow Warning  
-EVs: 252 SpA / 4 SpD / 252 Spe  
+EVs: 188 SpA / 188 Spe  
 Timid Nature  
 Tera Type: Ground
-IVs: 0 Atk/*IVs: 30 HP / 2 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe / HP Ground IVs for Min Atk */
+IVs: 0 Atk
 - Aurora Veil  
 - Blizzard  
 - Dazzling Gleam  
 - Hidden Power 
 
 Empoleon @ Lum Berry  
-Level: 55
+Level: 53
 Ball: Great
 Ability: Slush Rush  
 Tera Type: Water  
-EVs: 4 HP / 252 SpA / 252 Spe  
+EVs: 188 SpA / 188 Spe  
 Modest Nature  
 IVs: 0 Atk  
 - Blizzard  
@@ -1951,11 +1951,11 @@ IVs: 0 Atk
 - Scald  
 
 Articuno @ Charti Berry  
-Level: 55
+Level: 53
 Ball: Great
 Ability: Snow Cloak  
 Tera Type: Ice  
-EVs: 252 HP / 252 SpA / 4 SpD  
+EVs: 188 HP / 188 SpA
 Modest Nature  
 IVs: 0 Atk  
 - Freeze-Dry  
@@ -1964,11 +1964,11 @@ IVs: 0 Atk
 - Aurora Veil  
 
 Castform @ Expert Belt  
-Level: 55
+Level: 53
 Ball: Great
 Ability: Forecast  
 Tera Type: Normal  
-EVs: 4 Def / 252 SpA / 252 Spe  
+EVs: 188 SpA / 188 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Weather Ball  
@@ -1977,11 +1977,11 @@ IVs: 0 Atk
 - Hex  
 
 Quaquaval @ Flying Gem  
-Level: 55
+Level: 53
 Ball: Great
 Ability: Moxie  
 Tera Type: Water  
-EVs: 252 Atk / 4 SpD / 252 Spe  
+EVs: 188 Atk / 188 Spe  
 Jolly Nature  
 - Aqua Step  
 - Triple Axel  
@@ -1993,7 +1993,7 @@ Level: 55
 Ball: Great
 Ability: Moxie 
 Tera Type: Bug  
-EVs: 252 HP / 252 Atk / 4 SpD  
+EVs: 188 HP / 188 Atk 
 Adamant Nature  
 - Arm Thrust  
 - Pin Missile  
@@ -2832,23 +2832,11 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tornadus (M)
-Level: 55
-Ball: Quick
-Ability: Cyclone Shift
-EVs: 4 HP / 196 SpA / 196 Spe
-Timid Nature  
-IVs: 0 Atk  
-- Bleakwind Storm  
-- Weather Ball  
-- Tailwind  
-- Grass Knot  
-
 Thundurus (M)
 Level: 55
 Ball: Quick
 Ability: Dark Clouds
-EVs: 4 HP / 196 SpA / 196 Spe
+EVs: 128 SpA / 128 Spe
 Modest Nature 
 IVs: 0 Atk  
 - Wildbolt Storm  
@@ -2856,11 +2844,23 @@ IVs: 0 Atk
 - Weather Ball  
 - Aura Sphere  
 
-Swampert @ Swampertite  
+Tornadus (M)
 Level: 55
+Ball: Quick
+Ability: Cyclone Shift
+EVs: 128 SpA / 128 Spe
+Timid Nature  
+IVs: 0 Atk  
+- Bleakwind Storm  
+- Weather Ball  
+- Tailwind  
+- Grass Knot  
+
+Swampert @ Swampertite  
+Level: 56
 Ball: Dive
 Ability: Swift Swim  
-EVs: 4 HP / 196 Atk / 196 Spe
+EVs: 252 Atk / 252 Spe
 Adamant Nature
 - Flip Turn  
 - Earthquake  
@@ -2885,7 +2885,7 @@ Level: 54
 Ball: Dive
 Ability: Volt Absorb  
 Tera Type: Water  
-EVs: 196 HP / 196 SpA
+EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Ice Beam  
 - Scald  
@@ -2897,7 +2897,7 @@ Level: 54
 Ball: Dive
 Ability: Mega Launcher  
 Tera Type: Water  
-EVs: 196 HP / 196 SpA / 4 SpD  
+EVs: 252 HP / 252 SpA
 Modest Nature  
 IVs: 0 Atk  
 - Water Pulse  
@@ -2924,7 +2924,7 @@ Level: 54
 Ball: Dive
 Ability: Surge Surfer  
 Tera Type: Electric  
-EVs: 196 SpA / 4 SpD / 196 Spe  
+EVs: 252 SpA / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
 - Rising Voltage  
@@ -15314,12 +15314,12 @@ IVs: 0 Spe
 - Gyro Ball  
 - Spikes
 
-Hitmontop (M) @ Expert Belt  
-Ability: Intimidate   
+Hitmontop (M) 
+Ability: Angular Momentum   
 Level: 32
 Tera Type: Fighting  
 - Combat Torque  
-- Wicked Torque  
+- Blazing Torque  
 - Ice Spinner  
 - Noxious Torque  
 
@@ -22662,13 +22662,13 @@ Tera Type: Bug
 - Baton Pass  
 
 Hitmontop (M) @ Expert Belt  
-Ability: Intimidate   
+Ability: Angular Momentum   
 Level: 39
 Tera Type: Fighting  
 - Combat Torque  
 - Wicked Torque  
 - Ice Spinner  
-- Noxious Torque  
+- Magical Torque  
 
 Revavroom @ Shuca Berry  
 Ability: Filter   

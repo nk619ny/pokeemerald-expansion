@@ -20,7 +20,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	//applymovement OBJ_EVENT_ID_PLAYER, SeafloorCavern_Room9_Movement_Delay32
 	//waitmovement 0
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	//msgbox SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT
+	msgbox SeafloorCavern_Room9_Text_ArchieHoldItRightThere, MSGBOX_DEFAULT
 	//closemessage
 	//addobject LOCALID_SEAFLOOR_CAVERN_ARCHIE
 	//applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
@@ -244,11 +244,8 @@ SeafloorCavern_Room9_Movement_Delay32:
 	delay_16
 	step_end
 
-SeafloorCavern_Room9_Text_ArchieHoldItRightThere:
-	.string "ARCHIE: Hold it right there.$"
-
 SeafloorCavern_Room9_Text_ArchieSoItWasYou:
-	.string "ARCHIE: Fufufu…\n"
+	.string "ARCHIE: Bwahahahaha…\n"
 	.string "So it was you, after all.$"
 
 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear:
@@ -355,16 +352,16 @@ SeafloorCavern_Room9_Text_MaxieComeOnPlayer:
 const TempVar_PlayerLocation = VAR_TEMP_2
 
 text SeafloorCavern_Room9_Text_ArchieSecondDialogue {
-	format("Archie: With Kyogre's power, we will return this world to the way it should be.\pWaves will tear down the dams that disrupt currents. Storms will destroy the factories that pollute, and tornados will rip down the skyscrapers that blot the skies.\pHumanity and Pokémon can start anew in an untainted world.\pTeam Aqua will reveal the hubris of the world, and teach humanity a lesson it will never forget!")
+	format("Archie: With Kyogre's power, we will return this world to the way it should be.\pWaves will tear down the dams that disrupt currents. Storms will destroy the factories that pollute, and tornados will rip down the skyscrapers that blot the skies.\pHumanity and Pokémon can start anew in an untainted world.\pTeam Aqua will reveal the corruption of the world, and teach humanity a lesson it will never forget!")
 }
 
 
 text SeafloorCavern_Room9_Text_ArchieThirdDialogue {
-	format("Archie: Hm?\NYou say these ancient Pokémon are too dangerous, that Maxie couldn't control Groudon?\pOf course he couldn't… his “science” fails to understand the balance that nature strives toward.\pI am not here to control nature, with this Blue Orb I am going to empower it!")
+	format("Archie: Aye?\NYa say these ancient Pokémon are too dangerous, an' that Maxie couldn't control Groudon?\p'Course he couldn't! His “science” can't grasp the balance that nature strives toward.\pI'm not here to control nature, with this Blue Orb I'll empower it!")
 }
 
 text SeafloorCavern_Room9_Text_ArchieBeholdKyogre {
-	format("Archie: See how beautiful it is, the sleeping form of the ancient Pokémon Kyogre!\pI have waited so long for this day to come…")
+	format("Archie: How 'bout that?! That beautiful form so long resting at peace within the azure sea!\pI've been waiting so long for this day to come…")
 }
 
 script SeafloorCavern_Room9_EventScript_ArchieAppear {
@@ -373,7 +370,7 @@ script SeafloorCavern_Room9_EventScript_ArchieAppear {
 }
 
 text SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard {
-	format("Archie: Yes, what is it?\pHm…\nIt's raining heavily?\pGood… That should have happened.\nThat is why we awakened Kyogre, to fight back against humankind's degradation of the environment.\pWhat?!\pIt's raining far harder than we envisioned? You're in danger?\pThat can't be…\nKyogre surely understands…\pHold your position and monitor the situation!")
+	format("Archie: Aye?\N\nIt's raining heavily?\pGood… the great deluge has begun.\nThat is exactly why we awakened Kyogre, to put an end to humankind's degradation of the environment.\p…What?!\pIt's fiercer than we envisioned? It's all sinking?\pThat can't be…\nKyogre surely understands…\pHold anchor and monitor the situation!")
 }
 
 text SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought {
@@ -381,7 +378,7 @@ text SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought {
 }
 
 text SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty {
-	format("Archie: Don't come here lecturing me about responsibility!\pWasn't it you, Maxie, who started all this?\pSo long as I have this Blue Orb, I should be able to speak with Kyogre…\pI can still calm it down…")
+	format("Archie: Don't ye dare come lecturing me about responsibility!\pWeren't it you, Maxie, who started all this?\pSo long as I hold this Blue Orb, I should be able to speak with Kyogre…\pI can still calm the creature…")
 }
 
 text SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue {
@@ -389,7 +386,7 @@ text SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue {
 }
 
 text SeafloorCavern_Room9_Text_ArchieDefeat {
-	format("What?! A mere child like you defeated Kyogre?!")
+	format("Eh?! A mere scamp like you defeated Kyogre?!")
 }
 
 script SeafloorCavern_Room9_EventScript_PlayerLoc1 {
@@ -453,4 +450,8 @@ script SeafloorCavern_Room9_EventScript_ArchieWalkMessage {
 
 movement SeafloorCavern_Room9_Movement_KyogreNewExit {
 	walk_fast_up * 10
+}
+
+text SeafloorCavern_Room9_Text_ArchieHoldItRightThere {
+	format("Archie: Bwahahaha!\NWell, if it isn't the little scamp!")
 }

@@ -2547,7 +2547,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_ANGULAR_ACCELERATION] =
+    [ABILITY_ANGULAR_MOMENTUM] =
     {
         .name = _("Angular Momentum"),
         .description = COMPOUND_STRING("Spinning ups Speed."),

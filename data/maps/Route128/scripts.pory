@@ -249,11 +249,7 @@ Route128_EventScript_Carlee::
 Route128_Text_ArchieWhatHappened:
 	.string "Archie: What happened…\n"
 	.string "What is this wretched scene…\p"
-	.string "Did I…make a horrible mistake?$"
-
-Route128_Text_ArchieIOnlyWanted:
-	.string "I…\n"
-	.string "I only wanted…$"
+	.string "Did I…make a terrible mistake?$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
 	.string "Maxie: Do you understand now,\n"
@@ -311,4 +307,8 @@ Route128_Text_StevenImGoingToSootopolis:
 
 text Route128_Text_MaxieResposibilityFallsToArchieAndMe {
 	format("Maxie: {PLAYER}, there is no need to verbalize your thoughts.\pI know that I have no ground to criticize Archie…\pBut as it stands, I doubt that we humans will be capable of doing anything about it.\pBut neither can we stand by and\njust watch helplessly.\pThe responsibility for putting an end\nto this falls to Archie and me…")
+}
+
+text Route128_Text_ArchieIOnlyWanted {
+	format("I…\nI only wanted…\NA world where Pokémon could live on… in peace…")
 }

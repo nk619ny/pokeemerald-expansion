@@ -917,7 +917,7 @@ text MtPyre_Summit_Text_MaxieBeforeBattle{
 }	
 
 text MtPyre_Summit_Text_ArchieBeforeBattle{
-	format("Archie: We won't allow that. Team Aqua is taking possession of the Orbs, and we will use them to definitively stop your destructive plans!")
+	format("Archie: We won't allow that. Team Aqua shall be taking possession of the Orbs, and we will use them to put final end to your foolhardy plans!")
 }
 
 text MtPyre_Summit_Text_MaxieDefeated {
@@ -925,7 +925,7 @@ text MtPyre_Summit_Text_MaxieDefeated {
 }
 
 text MtPyre_Summit_Text_ArchieDefeated {
-	format("Archie: Why won't you two pick a side already?")
+	format("Archie: Why don't ye both pick a side already?")
 }
 
 text MtPyre_Summit_Text_MaxieAfterBattle{
@@ -933,7 +933,7 @@ text MtPyre_Summit_Text_MaxieAfterBattle{
 }
 
 text MtPyre_Summit_Text_ArchieAfterBattle{
-	format("Archie: Then I'll be keeping this Blue Orb as our insurance against you.")
+	format("Archie: Then I'll be keeping this here Blue Orb as our balance against ye.")
 }
 
 text MtPyre_Summit_Text_MaxieResponse{

@@ -2008,9 +2008,9 @@ MtPyre_Summit_Text_MaxieBeforeBattle::
 MtPyre_Summit_Text_ArchieBeforeBattle::
 # 919 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Archie: We won't allow that. Team Aqua\n"
-	.string "is taking possession of the Orbs, and\l"
-	.string "we will use them to definitively stop\l"
-	.string "your destructive plans!$"
+	.string "shall be taking possession of the Orbs,\l"
+	.string "and we will use them to put final end to\l"
+	.string "your foolhardy plans!$"
 
 MtPyre_Summit_Text_MaxieDefeated::
 # 923 "data/maps/MtPyre_Summit/scripts.pory"
@@ -2019,7 +2019,7 @@ MtPyre_Summit_Text_MaxieDefeated::
 
 MtPyre_Summit_Text_ArchieDefeated::
 # 927 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Archie: Why won't you two pick a side\n"
+	.string "Archie: Why don't ye both pick a side\n"
 	.string "already?$"
 
 MtPyre_Summit_Text_MaxieAfterBattle::
@@ -2030,8 +2030,8 @@ MtPyre_Summit_Text_MaxieAfterBattle::
 
 MtPyre_Summit_Text_ArchieAfterBattle::
 # 935 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "Archie: Then I'll be keeping this Blue\n"
-	.string "Orb as our insurance against you.$"
+	.string "Archie: Then I'll be keeping this here\n"
+	.string "Blue Orb as our balance against ye.$"
 
 MtPyre_Summit_Text_MaxieResponse::
 # 939 "data/maps/MtPyre_Summit/scripts.pory"

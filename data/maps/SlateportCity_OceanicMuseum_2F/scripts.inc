@@ -881,8 +881,114 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	return
 
 
+SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew::
+# 447 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	lock
+# 448 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	goto_if_set FLAG_TEMP_1, SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_2
+# 452 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	checkplayergender
+# 453 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	compare VAR_RESULT, MALE
+	goto_if_eq SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_6
+SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_5:
+# 454 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	compare VAR_RESULT, FEMALE
+	goto_if_eq SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_9
+SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_8:
+# 455 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	setflag FLAG_TEMP_1
+SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_1:
+# 457 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	closemessage
+# 458 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	applymovement LOCALID_MUSEUM_ARCHIE, Common_Movement_FaceOriginalDirection
+# 459 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	releaseall
+	end
+
+SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_2:
+# 449 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieRepeat, MSGBOX_NPC
+	goto SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_1
+
+SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_6:
+# 453 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieIntroBoyo, MSGBOX_NPC
+	goto SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_5
+
+SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_9:
+# 454 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieIntroGirlie, MSGBOX_NPC
+	goto SlateportCity_OceanicMuseum_2F_EventScript_ArchieNew_8
+
+
 SlateportCity_OceanicMuseum_2F_EventScript_CaptStern_Text_0:
 # 442 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	.string "I'm preparing for an expedition to the\n"
 	.string "Ocean Floor soon. I'm excited to see\l"
 	.string "what we'll find!$"
+
+SlateportCity_OceanicMuseum_2F_Text_ArchieIntroBoyo::
+# 463 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Tell me, boyo… Do you know that\n"
+	.string "Pokémon, people, and all life in this\l"
+	.string "world depend on the sea for life?\p"
+	.string "That's right. The sea is an\n"
+	.string "irreplaceable treasure for every living\l"
+	.string "thing on this planet.\p"
+	.string "But with our selfish extravagance,\n"
+	.string "humanity dirties the great ocean,\l"
+	.string "destroying this source of all life… Day\l"
+	.string "by day, we're all destroying our most\l"
+	.string "precious resource!\p"
+	.string "If we humans suffer from our actions,\n"
+	.string "well, maybe we'll end up getting what we\l"
+	.string "deserve. But what about the Pokémon in\l"
+	.string "our world? The Pokémon that no longer\l"
+	.string "have a place to live because we stole\l"
+	.string "and soiled their seas? The Pokémon\l"
+	.string "that won't have a place to raise their\l"
+	.string "young and watch them grow?\p"
+	.string "We are creating a world in which\n"
+	.string "innocent Pokémon suffer as a result of\l"
+	.string "our actions…\p"
+	.string "You can see it happening right here in\n"
+	.string "Slateport, all a result of those damned\l"
+	.string "artificial farms they built.$"
+
+SlateportCity_OceanicMuseum_2F_Text_ArchieIntroGirlie::
+# 467 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Tell me, girlie… Do you know that\n"
+	.string "Pokémon, people, and all life in this\l"
+	.string "world depend on the sea for life?\p"
+	.string "That's right. The sea is an\n"
+	.string "irreplaceable treasure for every living\l"
+	.string "thing on this planet.\p"
+	.string "But with our selfish extravagance,\n"
+	.string "humanity dirties the great ocean,\l"
+	.string "destroying this source of all life… Day\l"
+	.string "by day, we're all destroying our most\l"
+	.string "precious resource!\p"
+	.string "If we humans suffer from our actions,\n"
+	.string "well, maybe we'll end up getting what we\l"
+	.string "deserve. But what about the Pokémon in\l"
+	.string "our world? The Pokémon that no longer\l"
+	.string "have a place to live because we stole\l"
+	.string "and soiled their seas? The Pokémon\l"
+	.string "that won't have a place to raise their\l"
+	.string "young and watch them grow?\p"
+	.string "We are creating a world in which\n"
+	.string "innocent Pokémon suffer as a result of\l"
+	.string "our actions…\p"
+	.string "You can see it happening right here in\n"
+	.string "Slateport, all a result of those damned\l"
+	.string "artificial farms they built.$"
+
+SlateportCity_OceanicMuseum_2F_Text_ArchieRepeat::
+# 471 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Day by day, we're all destroying our\n"
+	.string "most precious resource. You can see it\l"
+	.string "happening right here in Slateport, all a\l"
+	.string "result of those damned artificial farms\l"
+	.string "they built.$"

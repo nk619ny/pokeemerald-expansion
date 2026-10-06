@@ -857,18 +857,19 @@ Route119_WeatherInstitute_2F_Text_Grunt3PostBattle::
 
 Route119_WeatherInstitute_2F_Text_ArchieIntro::
 # 318 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
-	.string "Archie: Ah, it's you again!\n"
-	.string "Why do you insist on meddling in our\l"
-	.string "important work?\p"
-	.string "I'll show you the same thing I'm going to\n"
-	.string "show Maxie. Witness what happens when\l"
-	.string "you stand against the Forces of\l"
-	.string "Nature!$"
+	.string "Archie: Ah, it's the little scamp!\n"
+	.string "Why are ya meddling here, hm?\p"
+	.string "We've got a thing we gotta do, ya see.\n"
+	.string "From our point of view, scamp, you're a\l"
+	.string "dirty villain who's gettin' in our way.\p"
+	.string "I'll show ya the same thing I'm gonna to\n"
+	.string "show Maxie. See what happens when ya\l"
+	.string "stand against the forces of nature!$"
 
 Route119_WeatherInstitute_2F_Text_ArchieOutro::
 # 322 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
 	.string "This is the problem… Humans think they\n"
-	.string "can fight against Nature…$"
+	.string "can fight against nature…$"
 
 Route119_WeatherInstitute_2F_Text_ShellyIntro::
 # 334 "data/maps/Route119_WeatherInstitute_2F/scripts.pory"
@@ -898,10 +899,10 @@ Route119_WeatherInstitute_2F_Text_ArchiePostBattle::
 	.string "Day by day, human actions are polluting\n"
 	.string "the oceans, damaging the forests, and\l"
 	.string "changing the climate.\p"
-	.string "It would be one then for us to suffer\n"
-	.string "the consequences of our actions, but\l"
-	.string "the innocent Pokémon and animals of\l"
-	.string "Hoenn won't be able to adapt in time.\p"
+	.string "It'd be one thing for us to suffer the\n"
+	.string "consequences of our actions, but the\l"
+	.string "innocent Pokémon won't be able to\l"
+	.string "adapt in time.\p"
 	.string "We need to go back… to how things were\n"
 	.string "before.$"
 

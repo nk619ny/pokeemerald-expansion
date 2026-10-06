@@ -8691,10 +8691,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_TERAPAGOS_NORMAL] =
     {
         .baseHP        = 90,
-        .baseAttack    = 65,
+        .baseAttack    = 65 + (B_LITTLE_LEGEND_480 == TRUE ? 10 : 0),
         .baseDefense   = 85,
         .baseSpeed     = 60,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 65 + (B_LITTLE_LEGEND_480 == TRUE ? 10 : 0),
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_NORMAL),
     /*    .forceTeraType = TYPE_STELLAR, */

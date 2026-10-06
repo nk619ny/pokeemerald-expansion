@@ -316,11 +316,11 @@ script Route119_WeatherInstitute_2F_EventScript_Archie{
 }
  
 text Route119_WeatherInstitute_2F_Text_ArchieIntro{
-	format("Archie: Ah, it's you again!\nWhy do you insist on meddling in our important work?\pI'll show you the same thing I'm going to show Maxie. Witness what happens when you stand against the Forces of Nature!")
+	format("Archie: Ah, it's the little scamp!\NWhy are ya meddling here, hm?\pWe've got a thing we gotta do, ya see. From our point of view, scamp, you're a dirty villain who's gettin' in our way.\pI'll show ya the same thing I'm gonna to show Maxie. See what happens when ya stand against the forces of nature!")
 }
 
 text Route119_WeatherInstitute_2F_Text_ArchieOutro{
-	format("This is the problem… Humans think they can fight against Nature…")
+	format("This is the problem… Humans think they can fight against nature…")
 }
 
 script Route119_WeatherInstitute_2F_EventScript_ShellyDefeated {
@@ -344,7 +344,7 @@ text Route119_WeatherInstitute_2F_Text_ShellyPostBattle{
 }
 
 text Route119_WeatherInstitute_2F_Text_ArchiePostBattle{
-	format("Day by day, human actions are polluting the oceans, damaging the forests, and changing the climate.\pIt would be one then for us to suffer the consequences of our actions, but the innocent Pokémon and animals of Hoenn won't be able to adapt in time.\pWe need to go back… to how things were before.")
+	format("Day by day, human actions are polluting the oceans, damaging the forests, and changing the climate.\pIt'd be one thing for us to suffer the consequences of our actions, but the innocent Pokémon won't be able to adapt in time.\pWe need to go back… to how things were before.")
 }
 
 text Route119_WeatherInstitute_2F_Text_ArchieDepart{

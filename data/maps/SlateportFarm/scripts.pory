@@ -226,6 +226,7 @@ script SlateportFarm_EventScript_AquaVictory {
 	waitmovement(0)
     clearflag(FLAG_SLATEPORT_FARM_COMPLETED)
     setflag(FLAG_SLATEPORT_BAY_FLOODED)
+    setflag(FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE)
     special(RemoveCameraObject)
     warpwhitefade(MAP_SLATEPORT_CITY_FARM_CORRIDOR, 5, 4)
     waitstate
@@ -292,6 +293,7 @@ script SlateportFarm_EventScript_MagmaVictory {
     applymovement(LOCALID_FARM_BRAWLY,SlateportFarm_Movement_MagmaLeaves)
     waitmovement(0)
     setflag(FLAG_SLATEPORT_FARM_COMPLETED)
+    setflag(FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE)
     removeobject(1)
     removeobject(2) 
     removeobject(3)

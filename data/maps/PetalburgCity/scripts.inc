@@ -1655,7 +1655,7 @@ PetalburgCity_EventScript_GiveRareEgg::
 # 836 "data/maps/PetalburgCity/scripts.pory"
 	lock
 # 837 "data/maps/PetalburgCity/scripts.pory"
-	random 7
+	random 8
 # 838 "data/maps/PetalburgCity/scripts.pory"
 	switch VAR_RESULT
 # 839 "data/maps/PetalburgCity/scripts.pory"
@@ -1672,18 +1672,20 @@ PetalburgCity_EventScript_GiveRareEgg::
 	case 5, PetalburgCity_EventScript_GiveRareEgg_8
 # 851 "data/maps/PetalburgCity/scripts.pory"
 	case 6, PetalburgCity_EventScript_GiveRareEgg_9
-# 854 "data/maps/PetalburgCity/scripts.pory"
+# 853 "data/maps/PetalburgCity/scripts.pory"
+	case 7, PetalburgCity_EventScript_GiveRareEgg_10
+# 856 "data/maps/PetalburgCity/scripts.pory"
 	setvar VAR_TEMP_6, SPECIES_DITTO
 PetalburgCity_EventScript_GiveRareEgg_1:
-# 856 "data/maps/PetalburgCity/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 857 "data/maps/PetalburgCity/scripts.pory"
-	giveegg VAR_TEMP_6
 # 858 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_GiveRareEgg_Text_0, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
 # 859 "data/maps/PetalburgCity/scripts.pory"
-	waitfanfare
+	giveegg VAR_TEMP_6
 # 860 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_GiveRareEgg_Text_0, MSGBOX_DEFAULT
+# 861 "data/maps/PetalburgCity/scripts.pory"
+	waitfanfare
+# 862 "data/maps/PetalburgCity/scripts.pory"
 	closemessage
 	return
 
@@ -1722,89 +1724,94 @@ PetalburgCity_EventScript_GiveRareEgg_9:
 	setvar VAR_TEMP_6, SPECIES_TERAPAGOS_NORMAL
 	goto PetalburgCity_EventScript_GiveRareEgg_1
 
+PetalburgCity_EventScript_GiveRareEgg_10:
+# 854 "data/maps/PetalburgCity/scripts.pory"
+	setvar VAR_TEMP_6, SPECIES_TYPE_NULL
+	goto PetalburgCity_EventScript_GiveRareEgg_1
+
 
 PetalburgCity_EventScript_CheckBrineyCall::
-# 865 "data/maps/PetalburgCity/scripts.pory"
+# 867 "data/maps/PetalburgCity/scripts.pory"
 	goto_if_set FLAG_ENABLE_BRINEY_BOAT, PetalburgCity_EventScript_CheckBrineyCall_2
-# 870 "data/maps/PetalburgCity/scripts.pory"
-	lock
-# 871 "data/maps/PetalburgCity/scripts.pory"
-	pokenavcall PetalburgCity_Text_BrineyBoatCall
 # 872 "data/maps/PetalburgCity/scripts.pory"
-	closemessage
+	lock
 # 873 "data/maps/PetalburgCity/scripts.pory"
-	setvar VAR_PETALBURG_CITY_STATE, 10
+	pokenavcall PetalburgCity_Text_BrineyBoatCall
 # 874 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 875 "data/maps/PetalburgCity/scripts.pory"
+	setvar VAR_PETALBURG_CITY_STATE, 10
+# 876 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_EventScript_CheckBrineyCall_2:
-# 866 "data/maps/PetalburgCity/scripts.pory"
+# 868 "data/maps/PetalburgCity/scripts.pory"
 	setvar VAR_PETALBURG_CITY_STATE, 10
-# 867 "data/maps/PetalburgCity/scripts.pory"
+# 869 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	end
 
 
 PetalburgCity_EventScript_EndureAce::
-# 884 "data/maps/PetalburgCity/scripts.pory"
-	lock
-# 885 "data/maps/PetalburgCity/scripts.pory"
-	faceplayer
 # 886 "data/maps/PetalburgCity/scripts.pory"
+	lock
+# 887 "data/maps/PetalburgCity/scripts.pory"
+	faceplayer
+# 888 "data/maps/PetalburgCity/scripts.pory"
 	goto_if_unset FLAG_BADGE02_GET, PetalburgCity_EventScript_EndureAce_2
-# 892 "data/maps/PetalburgCity/scripts.pory"
+# 894 "data/maps/PetalburgCity/scripts.pory"
 	goto_if_unset FLAG_BADGE01_GET, PetalburgCity_EventScript_EndureAce_5
-# 898 "data/maps/PetalburgCity/scripts.pory"
+# 900 "data/maps/PetalburgCity/scripts.pory"
 	checkitem ITEM_TM_ENDURE
-# 899 "data/maps/PetalburgCity/scripts.pory"
+# 901 "data/maps/PetalburgCity/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq PetalburgCity_EventScript_EndureAce_8
-# 906 "data/maps/PetalburgCity/scripts.pory"
+# 908 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_EndureAce_Text_3, MSGBOX_NPC
-# 907 "data/maps/PetalburgCity/scripts.pory"
+# 909 "data/maps/PetalburgCity/scripts.pory"
 	closemessage
 PetalburgCity_EventScript_EndureAce_7:
-# 909 "data/maps/PetalburgCity/scripts.pory"
+# 911 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_EventScript_EndureAce_2:
-# 887 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_EndureAce_Text_0, MSGBOX_NPC
-# 888 "data/maps/PetalburgCity/scripts.pory"
-	closemessage
 # 889 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_EndureAce_Text_0, MSGBOX_NPC
+# 890 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 891 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_EventScript_EndureAce_5:
-# 893 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_EndureAce_Text_1, MSGBOX_NPC
-# 894 "data/maps/PetalburgCity/scripts.pory"
-	closemessage
 # 895 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_EndureAce_Text_1, MSGBOX_NPC
+# 896 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 897 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_EventScript_EndureAce_8:
-# 900 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_EndureAce_Text_2, MSGBOX_NPC
-# 901 "data/maps/PetalburgCity/scripts.pory"
-	closemessage
 # 902 "data/maps/PetalburgCity/scripts.pory"
-	giveitem ITEM_TM_ENDURE
+	msgbox PetalburgCity_EventScript_EndureAce_Text_2, MSGBOX_NPC
 # 903 "data/maps/PetalburgCity/scripts.pory"
+	closemessage
+# 904 "data/maps/PetalburgCity/scripts.pory"
+	giveitem ITEM_TM_ENDURE
+# 905 "data/maps/PetalburgCity/scripts.pory"
 	waitfanfare
 	goto PetalburgCity_EventScript_EndureAce_7
 
 
 PetalburgCity_EventScript_GiveRareEgg_Text_0:
-# 858 "data/maps/PetalburgCity/scripts.pory"
+# 860 "data/maps/PetalburgCity/scripts.pory"
 	.string "Received a Pokémon Egg!$"
 
 PetalburgCity_EventScript_EndureAce_Text_0:
-# 887 "data/maps/PetalburgCity/scripts.pory"
+# 889 "data/maps/PetalburgCity/scripts.pory"
 	.string "What? You're Norman's kid?\p"
 	.string "Ugh, great, another nepo baby taking on\n"
 	.string "the Hoenn League.\p"
@@ -1813,12 +1820,12 @@ PetalburgCity_EventScript_EndureAce_Text_0:
 	.string "second floor of the Pokémon Center.$"
 
 PetalburgCity_EventScript_EndureAce_Text_1:
-# 893 "data/maps/PetalburgCity/scripts.pory"
+# 895 "data/maps/PetalburgCity/scripts.pory"
 	.string "So you've got a couple Gym Badges. It's\n"
 	.string "not that impressive.$"
 
 PetalburgCity_EventScript_EndureAce_Text_2:
-# 900 "data/maps/PetalburgCity/scripts.pory"
+# 902 "data/maps/PetalburgCity/scripts.pory"
 	.string "Okay, I might have misjudged you. You\n"
 	.string "seem like the real deal.\p"
 	.string "As an apology, I'll share a pro tip with\n"
@@ -1831,7 +1838,7 @@ PetalburgCity_EventScript_EndureAce_Text_2:
 	.string "Try it out sometime.$"
 
 PetalburgCity_EventScript_EndureAce_Text_3:
-# 906 "data/maps/PetalburgCity/scripts.pory"
+# 908 "data/maps/PetalburgCity/scripts.pory"
 	.string "Keep holding on, Trainer!$"
 
 PetalburgCity_Text_EggHasPotential::
@@ -1874,7 +1881,7 @@ PetalburgCity_Text_WallyBye::
 	.string "now - wish me luck!$"
 
 PetalburgCity_Text_BrineyBoatCall::
-# 878 "data/maps/PetalburgCity/scripts.pory"
+# 880 "data/maps/PetalburgCity/scripts.pory"
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "Mr. Briney: Ahoy, {PLAYER}! I hear\n"

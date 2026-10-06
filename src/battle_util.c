@@ -4428,7 +4428,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
     case ABILITYEFFECT_MOVE_END_ATTACKER: // Same as above, but for attacker
         switch (gLastUsedAbility)
         {
-        case ABILITY_ANGULAR_ACCELERATION:
+        case ABILITY_ANGULAR_MOMENTUM:
             if (IsAngularAccelerationMove(gCurrentMove)
              && !gBattleStruct->unableToUseMove
              && IsBattlerAlive(battler)

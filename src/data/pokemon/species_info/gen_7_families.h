@@ -3843,7 +3843,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_FLUFFY, ABILITY_KLUTZ, ABILITY_CUTE_CHARM },
+        .abilities = { ABILITY_FLUFFY, ABILITY_CUTE_CHARM, ABILITY_KLUTZ },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Stufful"),
         .cryId = CRY_STUFFUL,
@@ -3913,7 +3913,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_FLUFFY, ABILITY_KLUTZ, ABILITY_UNNERVE },
+        .abilities = { ABILITY_FLUFFY, ABILITY_UNNERVE, ABILITY_KLUTZ },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Bewear"),
         .cryId = CRY_BEWEAR,
@@ -4811,12 +4811,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_TYPE_NULL
     [SPECIES_TYPE_NULL] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 95,
-        .baseDefense   = 95,
+        .baseHP        = 95 - (B_LITTLE_LEGEND_480 == TRUE ? 10 : 0),
+        .baseAttack    = 95 - (B_LITTLE_LEGEND_480 == TRUE ? 10 : 0),
+        .baseDefense   = 95 - (B_LITTLE_LEGEND_480 == TRUE ? 10 : 0),
         .baseSpeed     = 59,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 95,
+        .baseSpAttack  = 95 - (B_LITTLE_LEGEND_480 == TRUE ? 10 : 0),
+        .baseSpDefense = 95 - (B_LITTLE_LEGEND_480 == TRUE ? 10 : 0),
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 3,
         .expYield = 107,
@@ -4873,7 +4873,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sTypeNullLevelUpLearnset,
         .teachableLearnset = sTypeNullTeachableLearnset,
         .eliteLearnset = sTypeNullEliteLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SILVALLY_NORMAL, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+        .evolutions = EVOLUTION({EVO_NONE, 0, SPECIES_SILVALLY_NORMAL}),
     },
 
 #define SILVALLY_SPECIES_INFO(type, _palette)                                       \
@@ -6536,12 +6536,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_COSMOEM] =
     {
-        .baseHP        = 43 + (B_LITTLE_LEGEND_480  == TRUE ? 20 : 0),
-        .baseAttack    = 29 + (B_LITTLE_LEGEND_480  == TRUE ? 20 : 0),
-        .baseDefense   = 131,
-        .baseSpeed     = 37,
-        .baseSpAttack  = 29 + (B_LITTLE_LEGEND_480  == TRUE ? 20 : 0),
-        .baseSpDefense = 131,
+        .baseHP        = (B_LITTLE_LEGEND_480  == TRUE ? 61 : 43),
+        .baseAttack    = (B_LITTLE_LEGEND_480  == TRUE ? 53 : 29),
+        .baseDefense   = (B_LITTLE_LEGEND_480  == TRUE ? 131 : 131),
+        .baseSpeed     = (B_LITTLE_LEGEND_480  == TRUE ? 41 : 37),
+        .baseSpAttack  = (B_LITTLE_LEGEND_480  == TRUE ? 53 : 29),
+        .baseSpDefense = (B_LITTLE_LEGEND_480  == TRUE ? 131 : 131),
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 3,
         .expYield = 140,
@@ -8280,7 +8280,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseHP        = 46 + (B_LITTLE_LEGEND_420  == TRUE ? 20 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
         .baseAttack    = 65 + (B_LITTLE_LEGEND_420  == TRUE ? 15 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 15 : 0),
         .baseDefense   = 65 + (B_LITTLE_LEGEND_420  == TRUE ? 20 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
-        .baseSpeed     = 34 + (B_LITTLE_LEGEND_420  == TRUE ? 10 : 0),
+        .baseSpeed     = 34 + (B_LITTLE_LEGEND_420  == TRUE ? 10 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 10 : 0),
         .baseSpAttack  = 55 + (B_LITTLE_LEGEND_420  == TRUE ? 15 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 25 : 0),
         .baseSpDefense = 35 + (B_LITTLE_LEGEND_420  == TRUE ? 10 : 0) + (B_LITTLE_LEGEND_480  == TRUE ? 20 : 0),
         .types = MON_TYPES(TYPE_STEEL),

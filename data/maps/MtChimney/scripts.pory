@@ -677,6 +677,7 @@ MtChimney_Text_KeepMakingMoreLand:
 MtChimney_Text_Bufoh:
 	.string "Bufoh!$"
 
+/*
 MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "ARCHIE: Grr, {PLAYER}!\n"
 	.string "I should've guessed you'd show up!\p"
@@ -704,6 +705,7 @@ MtChimney_Text_ArchieThankYou:
 	.string "Ah, it doesn't matter.\p"
 	.string "We will remain vigilant and keep up\n"
 	.string "our pursuit of TEAM MAGMA.$"
+*/
 
 MtChimney_Text_MagmaOutnumbersUs:
 	.string "Darn… TEAM MAGMA outnumbers us!\n"
@@ -1033,4 +1035,16 @@ script MtChimney_EventScript_MelissaTryGiveHeartScale{
 	}
 	release
 	end
+}
+
+text MtChimney_Text_ArchieGoStopTeamMagma{
+	format("Archie: Get out of my blasted way, ye scurvy Team Magma knaves! Or face a keelhauling!")
+}
+
+text MtChimney_Text_ArchieIHaveMyHandsFull{
+	format("Archie: Tch…\pBlast that Maxie…\nI can't get through to him, not when I have my hands full facing three bilge rats at once!")
+}
+
+text MtChimney_Text_ArchieThankYou{
+	format("Archie: Ya little scamp!\nThank you!\pWith yer help, we thwarted Maxie's destructive plan!\pBut… You…\nWhose side are you on?\pEh, it don't matter.\pWe shall remain vigilant and keep up our chase of Team Magma.")
 }
