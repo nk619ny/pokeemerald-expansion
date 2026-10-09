@@ -120,7 +120,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route119_WeatherInstitute_2F_EventScript_Grunt5",
       "flag": "FLAG_HIDE_ROUTE_119_TEAM_AQUA"
     },

@@ -53,35 +53,35 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 # 27 "data/maps/RustboroCity_Gym/scripts.pory"
 	call Common_EventScript_SetGymTrainers
 # 28 "data/maps/RustboroCity_Gym/scripts.pory"
-	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
+	setflag FLAG_REGISTERED_ROXANNE
 # 29 "data/maps/RustboroCity_Gym/scripts.pory"
-	setvar VAR_LEVEL_CAP 51
+	setflag FLAG_ENABLE_ROXANNE_MATCH_CALL
 # 30 "data/maps/RustboroCity_Gym/scripts.pory"
-	setvar VAR_TRAINER_HILL_STATE, 4
+	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
 # 31 "data/maps/RustboroCity_Gym/scripts.pory"
-	call Common_EventScript_RemoveOptionalItems4
+	setvar VAR_LEVEL_CAP 51
 # 32 "data/maps/RustboroCity_Gym/scripts.pory"
-	call Common_EventScript_ApplyHandicap
+	setvar VAR_TRAINER_HILL_STATE, 4
 # 33 "data/maps/RustboroCity_Gym/scripts.pory"
-	call Common_EventScript_LevelCapUpdate
+	call Common_EventScript_RemoveOptionalItems4
 # 34 "data/maps/RustboroCity_Gym/scripts.pory"
-	msgbox RustboroCity_Gym_Text_TakeThis, MSGBOX_DEFAULT
+	call Common_EventScript_ApplyHandicap
 # 35 "data/maps/RustboroCity_Gym/scripts.pory"
-//	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
+	call Common_EventScript_LevelCapUpdate
 # 36 "data/maps/RustboroCity_Gym/scripts.pory"
-
+	msgbox RustboroCity_Gym_Text_TakeThis, MSGBOX_DEFAULT
 # 37 "data/maps/RustboroCity_Gym/scripts.pory"
-	giveitem ITEM_TM_STONE_EDGE
+//	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
 # 38 "data/maps/RustboroCity_Gym/scripts.pory"
-	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
+	giveitem ITEM_TM_STONE_EDGE
 # 39 "data/maps/RustboroCity_Gym/scripts.pory"
-	closemessage
+	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 # 40 "data/maps/RustboroCity_Gym/scripts.pory"
-
+	closemessage
 # 41 "data/maps/RustboroCity_Gym/scripts.pory"
 	goto RustboroCity_Gym_EventScript_GiveRockTomb
 # 42 "data/maps/RustboroCity_Gym/scripts.pory"
-	end
+	return
 # 43 "data/maps/RustboroCity_Gym/scripts.pory"
 
 # 44 "data/maps/RustboroCity_Gym/scripts.pory"
@@ -97,7 +97,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 # 49 "data/maps/RustboroCity_Gym/scripts.pory"
 	release
 # 50 "data/maps/RustboroCity_Gym/scripts.pory"
-	end
+	return
 # 51 "data/maps/RustboroCity_Gym/scripts.pory"
 
 # 52 "data/maps/RustboroCity_Gym/scripts.pory"

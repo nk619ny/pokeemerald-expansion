@@ -277,7 +277,7 @@ MauvilleCity_Gym_EventScript_GiveShockWave2::
 # 139 "data/maps/MauvilleCity_Gym/scripts.pory"
 	release
 # 140 "data/maps/MauvilleCity_Gym/scripts.pory"
-	end
+	return
 # 141 "data/maps/MauvilleCity_Gym/scripts.pory"
 
 # 142 "data/maps/MauvilleCity_Gym/scripts.pory"
@@ -285,7 +285,7 @@ MauvilleCity_Gym_EventScript_GiveShockWave::
 # 143 "data/maps/MauvilleCity_Gym/scripts.pory"
 	giveitem ITEM_CARBOS, 6
 # 144 "data/maps/MauvilleCity_Gym/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 145 "data/maps/MauvilleCity_Gym/scripts.pory"
 	//msgbox MauvilleCity_Gym_Text_ExplainShockWave, MSGBOX_DEFAULT
 # 146 "data/maps/MauvilleCity_Gym/scripts.pory"

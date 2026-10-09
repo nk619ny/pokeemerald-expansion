@@ -9729,6 +9729,10 @@ static const struct LevelUpMove sKecleonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(50, MOVE_FOUL_PLAY),
     LEVEL_UP_MOVE(50, MOVE_SYNCHRONOISE), //added from USUM
+    LEVEL_UP_MOVE(60, MOVE_SUCKER_PUNCH), //added for scripted fight
+    LEVEL_UP_MOVE(60, MOVE_SHADOW_SNEAK), //added for scripted fight
+    LEVEL_UP_MOVE(60, MOVE_DRAIN_PUNCH), //added for scripted fight
+    LEVEL_UP_MOVE(60, MOVE_LAST_RESORT), //added for scripted fight
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KECLEON

@@ -384,7 +384,18 @@ Route113_GlassWorkshop_Text_FunToBlowGlassFlute:
 script Route113_GlassWorkshop_EventScript_GlassWorkerNew {
 	lock
 	faceplayer
-	msgbox(format("What? You want me to give you a Soot Sack so you can collect ash?\pWhy would I ask a child to run around collecting potentially toxic soot?\pLet's leave that to the professionals, like me!"),MSGBOX_NPC)
+	checkitem(ITEM_WHITE_FLUTE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I make all sorts of glass flutes from the volcanic soot that I collect, huff-puff.\pHere, a Trainer like yourself could probably use this!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_WHITE_FLUTE)
+		waitfanfare
+		closemessage
+	}
+	else {
+		msgbox(format("What? You want me to give you a Soot Sack so you can collect ash?\pWhy would I ask a child to run around collecting potentially toxic soot?\pLet's leave that to the professionals, like me!"),MSGBOX_NPC)
+		closemessage
+	}
 	releaseall
 	end
 }

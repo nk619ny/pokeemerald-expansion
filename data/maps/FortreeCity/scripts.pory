@@ -125,9 +125,11 @@ FortreeCity_Text_BugPokemonComeThroughWindow:
 	.string "through windows.\l"
 	.string "It can be really startling.$"
 
+/*
 FortreeCity_Text_PokemonThatEvolveWhenTraded:
 	.string "There are Pokémon that evolve when\n"
 	.string "you trade them! That's what I heard.$"
+*/
 
 FortreeCity_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"
@@ -170,3 +172,8 @@ script FortreeCity_EventScript_Roost {
 	releaseall
 	end
 }
+
+
+text FortreeCity_Text_PokemonThatEvolveWhenTraded{
+	format("There used to be Pokémon that could only evolve when you traded them!\pThat's what I heard.\pThat sounds so silly though. I'm glad they figured out other ways to evolve these Pokémon.")
+}	

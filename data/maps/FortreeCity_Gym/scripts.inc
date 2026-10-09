@@ -147,7 +147,7 @@ FortreeCity_Gym_EventScript_GiveAerialAce2::
 # 74 "data/maps/FortreeCity_Gym/scripts.pory"
 	release
 # 75 "data/maps/FortreeCity_Gym/scripts.pory"
-	end
+	return
 # 76 "data/maps/FortreeCity_Gym/scripts.pory"
 
 # 77 "data/maps/FortreeCity_Gym/scripts.pory"
@@ -173,7 +173,7 @@ FortreeCity_Gym_EventScript_GiveAerialAce::
 # 87 "data/maps/FortreeCity_Gym/scripts.pory"
 	release
 # 88 "data/maps/FortreeCity_Gym/scripts.pory"
-	end
+	return
 # 89 "data/maps/FortreeCity_Gym/scripts.pory"
 
 # 90 "data/maps/FortreeCity_Gym/scripts.pory"

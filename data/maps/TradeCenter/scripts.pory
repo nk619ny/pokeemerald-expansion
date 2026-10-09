@@ -921,7 +921,6 @@ script Common_EventScript_RemoveOptionalItems6 {
 	setflag(FLAG_ITEM_ROUTE_119_HYPER_POTION_2)
 	setflag(FLAG_ITEM_ROUTE_119_ELIXIR_1)
 	setflag(FLAG_ITEM_ROUTE_119_ELIXIR_2)
-	//setflag(FLAG_HIDDEN_ITEM_ROUTE_119_MAX_ETHER) //unused
 	setflag(FLAG_ITEM_ROUTE_119_RARE_CANDY)
 	setflag(FLAG_ITEM_ROUTE_119_NUGGET)
 	setflag(FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1) // can be moves to after Winona
@@ -2907,7 +2906,7 @@ text MatchCall_Text_Rival_6_1 {
 }
 
 text MatchCall_Text_Rival_6_2 {
-	format("{RIVAL}: Oh hi, {PLAYER}.\pI'm taking a break to help the\NPokémon Rangers.\pThey agreed to answer some\NNquestions if I helped them out.\pThey've been having trouble with\Nsome rogue musicians.")
+	format("{RIVAL}: Oh hi, {PLAYER}.\pI'm taking a break to help the\NPokémon Rangers.\pThey agreed to answer some\Nquestions if I helped them out.\pThey've been having trouble with\Nsome rogue musicians.")
 }
 
 text MatchCall_Text_Rival_6_3 {

@@ -3,7 +3,6 @@
   "name": "Route119",
   "layout": "LAYOUT_ROUTE119",
   "music": "MUS_ROUTE119",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_119",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -629,88 +628,88 @@
       "x": 14,
       "y": 33,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
       "x": 14,
       "y": 34,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
       "x": 24,
-      "y": 38,
+      "y": 39,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
-      "x": 25,
+      "x": 26,
       "y": 37,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
       "x": 15,
       "y": 133,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
       "x": 16,
       "y": 132,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
       "x": 17,
       "y": 131,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
       "x": 18,
       "y": 130,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
       "x": 19,
       "y": 131,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
       "x": 20,
       "y": 132,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
       "x": 21,
       "y": 133,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     },
     {
       "type": "weather",
-      "x": 23,
+      "x": 20,
       "y": 33,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 24,
+      "x": 20,
       "y": 34,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
@@ -762,7 +761,21 @@
       "x": 37,
       "y": 15,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_ROUTE119_CYCLE"
+      "weather": "COORD_EVENT_WEATHER_RAIN"
+    },
+    {
+      "type": "weather",
+      "x": 24,
+      "y": 35,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
+    },
+    {
+      "type": "weather",
+      "x": 25,
+      "y": 38,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_RAIN"
     }
   ],
   "bg_events": [
@@ -839,22 +852,6 @@
       "secret_base_id": "SECRET_BASE_BLUE_CAVE4_3"
     },
     {
-      "type": "hidden_item",
-      "x": 17,
-      "y": 82,
-      "elevation": 3,
-      "item": "ITEM_CALCIUM",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM"
-    },
-    {
-      "type": "hidden_item",
-      "x": 38,
-      "y": 63,
-      "elevation": 3,
-      "item": "ITEM_ULTRA_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL"
-    },
-    {
       "type": "secret_base",
       "x": 26,
       "y": 81,
@@ -892,7 +889,7 @@
     {
       "type": "hidden_item",
       "x": 39,
-      "y": 126,
+      "y": 127,
       "elevation": 3,
       "item": "ITEM_CALCIUM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_FULL_HEAL"
@@ -905,5 +902,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route119_EventScript_TrainerTipsDecoration"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

@@ -2257,7 +2257,7 @@ const struct ItemInfo gItemsInfo[] =
             "A glass flute that\n"
             "lures wild Pokémon."),
         .notConsumed = TRUE,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_FLUTE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_BlackWhiteFlute,
@@ -12283,7 +12283,7 @@ const struct ItemInfo gItemsInfo[] =
         .pluralName = ITEM_PLURAL_NAME("Ganlon Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_DEFENSE_UP,
-        .holdEffectParam = 4,
+        .holdEffectParam = 2,
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "raises Defense in\n"
@@ -12340,7 +12340,7 @@ const struct ItemInfo gItemsInfo[] =
         .pluralName = ITEM_PLURAL_NAME("Apicot Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_SP_DEFENSE_UP,
-        .holdEffectParam = 4,
+        .holdEffectParam = 2,
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "raises Sp. Def in\n"

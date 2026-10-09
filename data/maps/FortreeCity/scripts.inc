@@ -253,92 +253,105 @@ FortreeCity_Text_BugPokemonComeThroughWindow:
 # 127 "data/maps/FortreeCity/scripts.pory"
 
 # 128 "data/maps/FortreeCity/scripts.pory"
-FortreeCity_Text_PokemonThatEvolveWhenTraded:
+/*
 # 129 "data/maps/FortreeCity/scripts.pory"
-	.string "There are Pokémon that evolve when\n"
+FortreeCity_Text_PokemonThatEvolveWhenTraded:
 # 130 "data/maps/FortreeCity/scripts.pory"
-	.string "you trade them! That's what I heard.$"
+	.string "There are Pokémon that evolve when\n"
 # 131 "data/maps/FortreeCity/scripts.pory"
-
+	.string "you trade them! That's what I heard.$"
 # 132 "data/maps/FortreeCity/scripts.pory"
-FortreeCity_Text_SomethingUnseeable:
+*/
 # 133 "data/maps/FortreeCity/scripts.pory"
-	.string "Something unseeable is in the way.$"
+
 # 134 "data/maps/FortreeCity/scripts.pory"
-
+FortreeCity_Text_SomethingUnseeable:
 # 135 "data/maps/FortreeCity/scripts.pory"
-FortreeCity_Text_UnseeableUseDevonScope:
+	.string "Something unseeable is in the way.$"
 # 136 "data/maps/FortreeCity/scripts.pory"
-	.string "Something unseeable is in the way.\p"
+
 # 137 "data/maps/FortreeCity/scripts.pory"
-	.string "Want to use the DEVON SCOPE?$"
+FortreeCity_Text_UnseeableUseDevonScope:
 # 138 "data/maps/FortreeCity/scripts.pory"
-
+	.string "Something unseeable is in the way.\p"
 # 139 "data/maps/FortreeCity/scripts.pory"
-FortreeCity_Text_UsedDevonScopePokemonFled:
+	.string "Want to use the DEVON SCOPE?$"
 # 140 "data/maps/FortreeCity/scripts.pory"
-	.string "{PLAYER} used the DEVON SCOPE.\p"
+
 # 141 "data/maps/FortreeCity/scripts.pory"
-	.string "An invisible Pokémon became completely\n"
+FortreeCity_Text_UsedDevonScopePokemonFled:
 # 142 "data/maps/FortreeCity/scripts.pory"
-	.string "visible!\p"
+	.string "{PLAYER} used the DEVON SCOPE.\p"
 # 143 "data/maps/FortreeCity/scripts.pory"
-	.string "The startled Pokémon fled!$"
+	.string "An invisible Pokémon became completely\n"
 # 144 "data/maps/FortreeCity/scripts.pory"
-
+	.string "visible!\p"
 # 145 "data/maps/FortreeCity/scripts.pory"
-FortreeCity_Text_CitySign:
+	.string "The startled Pokémon fled!$"
 # 146 "data/maps/FortreeCity/scripts.pory"
-	.string "FORTREE CITY\n"
-# 147 "data/maps/FortreeCity/scripts.pory"
-	.string "“The treetop city that frolics with\l"
-# 148 "data/maps/FortreeCity/scripts.pory"
-	.string "nature.”$"
-# 149 "data/maps/FortreeCity/scripts.pory"
 
+# 147 "data/maps/FortreeCity/scripts.pory"
+FortreeCity_Text_CitySign:
+# 148 "data/maps/FortreeCity/scripts.pory"
+	.string "FORTREE CITY\n"
+# 149 "data/maps/FortreeCity/scripts.pory"
+	.string "“The treetop city that frolics with\l"
 # 150 "data/maps/FortreeCity/scripts.pory"
-FortreeCity_Text_GymSign:
+	.string "nature.”$"
 # 151 "data/maps/FortreeCity/scripts.pory"
-	.string "FORTREE CITY POKéMON GYM\n"
+
 # 152 "data/maps/FortreeCity/scripts.pory"
-	.string "LEADER: WINONA\p"
+FortreeCity_Text_GymSign:
 # 153 "data/maps/FortreeCity/scripts.pory"
-	.string "“The bird user taking flight into\n"
+	.string "FORTREE CITY POKéMON GYM\n"
 # 154 "data/maps/FortreeCity/scripts.pory"
+	.string "LEADER: WINONA\p"
+# 155 "data/maps/FortreeCity/scripts.pory"
+	.string "“The bird user taking flight into\n"
+# 156 "data/maps/FortreeCity/scripts.pory"
 	.string "the world.”$"
 
 FortreeCity_EventScript_Roost::
-# 159 "data/maps/FortreeCity/scripts.pory"
-	lock
-# 160 "data/maps/FortreeCity/scripts.pory"
-	faceplayer
 # 161 "data/maps/FortreeCity/scripts.pory"
-	msgbox FortreeCity_Text_EveryoneHealthyAndLively, MSGBOX_DEFAULT
+	lock
+# 162 "data/maps/FortreeCity/scripts.pory"
+	faceplayer
 # 163 "data/maps/FortreeCity/scripts.pory"
+	msgbox FortreeCity_Text_EveryoneHealthyAndLively, MSGBOX_DEFAULT
+# 165 "data/maps/FortreeCity/scripts.pory"
 	checkitem ITEM_TM_ROOST
-# 164 "data/maps/FortreeCity/scripts.pory"
+# 166 "data/maps/FortreeCity/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq FortreeCity_EventScript_Roost_2
 FortreeCity_EventScript_Roost_1:
-# 170 "data/maps/FortreeCity/scripts.pory"
+# 172 "data/maps/FortreeCity/scripts.pory"
 	releaseall
 	end
 
 FortreeCity_EventScript_Roost_2:
-# 165 "data/maps/FortreeCity/scripts.pory"
-	msgbox FortreeCity_EventScript_Roost_Text_0, MSGBOX_DEFAULT
-# 166 "data/maps/FortreeCity/scripts.pory"
-	closemessage
 # 167 "data/maps/FortreeCity/scripts.pory"
-	giveitem ITEM_TM_ROOST
+	msgbox FortreeCity_EventScript_Roost_Text_0, MSGBOX_DEFAULT
 # 168 "data/maps/FortreeCity/scripts.pory"
+	closemessage
+# 169 "data/maps/FortreeCity/scripts.pory"
+	giveitem ITEM_TM_ROOST
+# 170 "data/maps/FortreeCity/scripts.pory"
 	waitfanfare
 	goto FortreeCity_EventScript_Roost_1
 
 
 FortreeCity_EventScript_Roost_Text_0:
-# 165 "data/maps/FortreeCity/scripts.pory"
+# 167 "data/maps/FortreeCity/scripts.pory"
 	.string "It's important for even sky-flying\n"
 	.string "Pokémon to rest and recover.\p"
 	.string "Take this TM to make sure your bird\n"
 	.string "Pokémon can do that, too.$"
+
+FortreeCity_Text_PokemonThatEvolveWhenTraded::
+# 177 "data/maps/FortreeCity/scripts.pory"
+	.string "There used to be Pokémon that could\n"
+	.string "only evolve when you traded them!\p"
+	.string "That's what I heard.\p"
+	.string "That sounds so silly though. I'm glad\n"
+	.string "they figured out other ways to evolve\l"
+	.string "these Pokémon.$"

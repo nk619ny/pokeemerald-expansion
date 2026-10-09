@@ -765,14 +765,43 @@ Route113_GlassWorkshop_EventScript_GlassWorkerNew::
 # 386 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	faceplayer
 # 387 "data/maps/Route113_GlassWorkshop/scripts.pory"
-	msgbox Route113_GlassWorkshop_EventScript_GlassWorkerNew_Text_0, MSGBOX_NPC
+	checkitem ITEM_WHITE_FLUTE
 # 388 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route113_GlassWorkshop_EventScript_GlassWorkerNew_2
+# 396 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	msgbox Route113_GlassWorkshop_EventScript_GlassWorkerNew_Text_1, MSGBOX_NPC
+# 397 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	closemessage
+Route113_GlassWorkshop_EventScript_GlassWorkerNew_1:
+# 399 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	releaseall
 	end
 
+Route113_GlassWorkshop_EventScript_GlassWorkerNew_2:
+# 389 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	msgbox Route113_GlassWorkshop_EventScript_GlassWorkerNew_Text_0, MSGBOX_DEFAULT
+# 390 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	closemessage
+# 391 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	giveitem ITEM_WHITE_FLUTE
+# 392 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	waitfanfare
+# 393 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	closemessage
+	goto Route113_GlassWorkshop_EventScript_GlassWorkerNew_1
+
 
 Route113_GlassWorkshop_EventScript_GlassWorkerNew_Text_0:
-# 387 "data/maps/Route113_GlassWorkshop/scripts.pory"
+# 389 "data/maps/Route113_GlassWorkshop/scripts.pory"
+	.string "I make all sorts of glass flutes from\n"
+	.string "the volcanic soot that I collect,\l"
+	.string "huff-puff.\p"
+	.string "Here, a Trainer like yourself could\n"
+	.string "probably use this!$"
+
+Route113_GlassWorkshop_EventScript_GlassWorkerNew_Text_1:
+# 396 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	.string "What? You want me to give you a Soot\n"
 	.string "Sack so you can collect ash?\p"
 	.string "Why would I ask a child to run around\n"

@@ -182,6 +182,7 @@ static const u16 sShopInventory_OneBadge[] =
     ITEM_FULL_HEAL,
     ITEM_MAX_REVIVE,
     ITEM_MAX_ELIXIR,
+    ITEM_EVERSTONE,
     ITEM_NONE
 };
 
@@ -196,6 +197,7 @@ static const u16 sShopInventory_TwoBadges[] =
     ITEM_FULL_HEAL,
     ITEM_MAX_REVIVE,
     ITEM_MAX_ELIXIR,
+    ITEM_EVERSTONE,
     ITEM_NONE
 };
 
@@ -223,6 +225,7 @@ static const u16 sShopInventory_ThreeBadges[] =
     ITEM_FULL_HEAL,
     ITEM_MAX_REVIVE,
     ITEM_MAX_ELIXIR,
+    ITEM_EVERSTONE,
     ITEM_NONE
 };
 
@@ -273,6 +276,7 @@ static const u16 sShopInventory_FourBadges[] =
     ITEM_FULL_HEAL,
     ITEM_MAX_REVIVE,
     ITEM_MAX_ELIXIR,
+    ITEM_EVERSTONE,
     ITEM_NONE
 };
 
@@ -324,6 +328,7 @@ static const u16 sShopInventory_FiveBadges[] =
     ITEM_FULL_HEAL,
     ITEM_MAX_REVIVE,
     ITEM_MAX_ELIXIR,
+    ITEM_EVERSTONE,
     ITEM_NONE
 };
 
@@ -381,6 +386,7 @@ static const u16 sShopInventory_SixBadges[] =
     ITEM_FULL_HEAL,
     ITEM_MAX_REVIVE,
     ITEM_MAX_ELIXIR,
+    ITEM_EVERSTONE,
     ITEM_NONE
 };
 
@@ -445,6 +451,7 @@ static const u16 sShopInventory_SevenBadges[] =
     ITEM_FULL_HEAL,
     ITEM_MAX_REVIVE,
     ITEM_MAX_ELIXIR,
+    ITEM_EVERSTONE,
     ITEM_NONE
 };
 
@@ -510,6 +517,7 @@ static const u16 sShopInventory_EightBadges[] =
     ITEM_FULL_HEAL,
     ITEM_MAX_REVIVE,
     ITEM_MAX_ELIXIR,
+    ITEM_EVERSTONE,
     ITEM_NONE
 };
 
@@ -575,6 +583,7 @@ static const u16 sShopInventory_NineBadges[] =
     ITEM_FULL_HEAL,
     ITEM_MAX_REVIVE,
     ITEM_MAX_ELIXIR,
+    ITEM_EVERSTONE,
     ITEM_NONE
 };
 

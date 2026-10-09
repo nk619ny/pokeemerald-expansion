@@ -25,6 +25,8 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 //	addvar VAR_PETALBURG_GYM_STATE, 1
 	setvar VAR_0x8008, 1
 	call Common_EventScript_SetGymTrainers
+	setflag FLAG_REGISTERED_ROXANNE
+	setflag FLAG_ENABLE_ROXANNE_MATCH_CALL
 	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
 	setvar VAR_LEVEL_CAP 51
 	setvar VAR_TRAINER_HILL_STATE, 4
@@ -33,13 +35,11 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	call Common_EventScript_LevelCapUpdate
 	msgbox RustboroCity_Gym_Text_TakeThis, MSGBOX_DEFAULT
 //	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
-
 	giveitem ITEM_TM_STONE_EDGE
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 	closemessage
-
 	goto RustboroCity_Gym_EventScript_GiveRockTomb
-	end
+	return
 
 RustboroCity_Gym_EventScript_GiveRockTomb::
 	giveitem ITEM_IRON, 6
@@ -47,7 +47,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	setflag FLAG_RECEIVED_TM_ROCK_TOMB
 	//msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 	release
-	end
+	return
 
 RustboroCity_Gym_EventScript_RoxanneRematch::
 	trainerbattle_rematch_double TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons

@@ -347,6 +347,186 @@
       "y": 12,
       "respawn_map": "MAP_SIX_ISLAND_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SIX_ISLAND_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE101",
+      "map": "MAP_ROUTE101",
+      "x": 6,
+      "y": 9
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE102",
+      "map": "MAP_ROUTE102",
+      "x": 25,
+      "y": 4
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE103",
+      "map": "MAP_ROUTE103",
+      "x": 25,
+      "y": 17
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE104",
+      "map": "MAP_ROUTE104",
+      "x": 17,
+      "y": 51
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE104_NORTH",
+      "map": "MAP_ROUTE104_NORTH",
+      "x": 5,
+      "y": 19
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE105",
+      "map": "MAP_ROUTE105",
+      "x": 9,
+      "y": 21
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE106",
+      "map": "MAP_ROUTE106",
+      "x": 48,
+      "y": 17
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE107",
+      "map": "MAP_ROUTE107",
+      "x": 41,
+      "y": 14
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE109",
+      "map": "MAP_ROUTE109",
+      "x": 21,
+      "y": 21
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE110",
+      "map": "MAP_ROUTE110",
+      "x": 11,
+      "y": 67
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE111_SOUTH",
+      "map": "MAP_ROUTE111_SOUTH",
+      "x": 34,
+      "y": 51
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE112",
+      "map": "MAP_ROUTE112",
+      "x": 21,
+      "y": 39
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE113",
+      "map": "MAP_ROUTE113",
+      "x": 33,
+      "y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE114",
+      "map": "MAP_ROUTE114",
+      "x": 27,
+      "y": 37
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE115",
+      "map": "MAP_ROUTE115",
+      "x": 26,
+      "y": 50
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE116",
+      "map": "MAP_ROUTE116",
+      "x": 38,
+      "y": 11
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE117",
+      "map": "MAP_ROUTE117",
+      "x": 51,
+      "y": 9
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE118",
+      "map": "MAP_ROUTE118",
+      "x": 44,
+      "y": 10
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE119",
+      "map": "MAP_ROUTE119",
+      "x": 6,
+      "y": 33
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE120",
+      "map": "MAP_ROUTE120",
+      "x": 7,
+      "y": 56
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE121",
+      "map": "MAP_ROUTE121",
+      "x": 37,
+      "y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE126",
+      "map": "MAP_ROUTE126",
+      "x": 41,
+      "y": 18
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE127",
+      "map": "MAP_ROUTE127",
+      "x": 45,
+      "y": 25
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE128",
+      "map": "MAP_ROUTE128",
+      "x": 38,
+      "y": 23
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE129",
+      "map": "MAP_ROUTE129",
+      "x": 43,
+      "y": 21
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE130",
+      "map": "MAP_ROUTE130",
+      "x": 8,
+      "y": 17
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE132",
+      "map": "MAP_ROUTE132",
+      "x": 26,
+      "y": 25
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE133",
+      "map": "MAP_ROUTE133",
+      "x": 72,
+      "y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE134",
+      "map": "MAP_ROUTE134",
+      "x": 76,
+      "y": 32
+    },
+    {
+      "id": "HEAL_LOCATION_VERDANT_GROVE",
+      "map": "MAP_VERDANT_GROVE",
+      "x": 10,
+      "y": 7
     }
   ]
 }

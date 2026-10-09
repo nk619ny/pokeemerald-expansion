@@ -1017,7 +1017,7 @@ RustboroCity_EventScript_EmployeeAskToGetGoods::
 # 509 "data/maps/RustboroCity/scripts.pory"
 	call_if_eq VAR_TEMP_1, 3, RustboroCity_EventScript_EmployeeApproachPlayerDown1
 # 510 "data/maps/RustboroCity/scripts.pory"
-	setflag FLAG_INTERACTED_WITH_DEVON_EMPLOYEE_GOODS_STOLEN
+	//setflag FLAG_INTERACTED_WITH_DEVON_EMPLOYEE_GOODS_STOLEN
 # 511 "data/maps/RustboroCity/scripts.pory"
 	setvar VAR_RUSTBORO_CITY_STATE, 3
 # 512 "data/maps/RustboroCity/scripts.pory"
