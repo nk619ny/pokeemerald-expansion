@@ -141,7 +141,8 @@
     "Route111_North",
     "Route103_West",
     "Route135_South",
-    "Route135_North"
+    "Route135_North",
+    "BerryFields"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

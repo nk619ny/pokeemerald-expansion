@@ -422,7 +422,7 @@
     {
       "id": "LAYOUT_ROUTE123",
       "name": "Route123_Layout",
-      "width": 140,
+      "width": 113,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
@@ -9715,6 +9715,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Tropical_Jungle/border.bin",
       "blockdata_filepath": "data/layouts/Tropical_Jungle/map.bin"
+    },
+    {
+      "id": "LAYOUT_BERRY_FIELDS",
+      "name": "BerryFields_Layout",
+      "width": 27,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/BerryFields/border.bin",
+      "blockdata_filepath": "data/layouts/BerryFields/map.bin"
     }
   ]
 }
