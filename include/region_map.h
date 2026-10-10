@@ -32,6 +32,7 @@ enum {
     MAPSECTYPE_CITY_CANFLY,
     MAPSECTYPE_CITY_CANTFLY,
     MAPSECTYPE_BATTLE_FRONTIER,
+    MAPSECTYPE_ROUTE_CANFLY,
     NUM_MAPSEC_TYPES
 };
 
@@ -140,6 +141,7 @@ enum RegionMapType GetRegionMapType(u32 mapSecId);
 //Pokenav Fly funcs
 u32 FilterFlyDestination(struct RegionMap* regionMap);
 void SetFlyDestination(struct RegionMap* regionMap);
+bool32 IsMapSecTypeFlyable(u32 mapSecType);
 
 extern const struct RegionMapLocation gRegionMapEntries[];
 extern const struct RegionMapInfo gRegionMapInfos[];

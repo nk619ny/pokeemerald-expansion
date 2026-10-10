@@ -527,6 +527,72 @@
       "map": "MAP_VERDANT_GROVE",
       "x": 10,
       "y": 7
+    },
+    {
+      "id": "HEAL_LOCATION_BERRY_FIELDS",
+      "map": "MAP_BERRY_FIELDS",
+      "x": 22,
+      "y": 7
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE103_WEST",
+      "map": "MAP_ROUTE103_WEST",
+      "x": 7,
+      "y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE108",
+      "map": "MAP_ROUTE108",
+      "x": 29,
+      "y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE111_DESERT",
+      "map": "MAP_ROUTE111_DESERT",
+      "x": 15,
+      "y": 65
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE111_NORTH",
+      "map": "MAP_ROUTE111_NORTH",
+      "x": 36,
+      "y": 19
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE122",
+      "map": "MAP_ROUTE122",
+      "x": 22,
+      "y": 30
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE123",
+      "map": "MAP_ROUTE123",
+      "x": 88,
+      "y": 14
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE124",
+      "map": "MAP_ROUTE124",
+      "x": 70,
+      "y": 49
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE125",
+      "map": "MAP_ROUTE125",
+      "x": 21,
+      "y": 20
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE131",
+      "map": "MAP_ROUTE131",
+      "x": 36,
+      "y": 7
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE135_NORTH",
+      "map": "MAP_ROUTE135_NORTH",
+      "x": 26,
+      "y": 8
     }
   ]
 }
