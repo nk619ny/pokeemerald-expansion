@@ -591,6 +591,26 @@ untouched. Designed to be combined with `AI_FLAG_BASIC_TRAINER`/`AI_FLAG_SMART_T
 over slow kill" behavior relies on `AI_FLAG_CHECK_VIABILITY` being present. Tests:
 `test/battle/ai/ai_flag_hard_trick_room.c`.
 
+### 9.11 Custom flag: `AI_FLAG_TRY_TO_POISON` (bit 37)
+
+Custom flag for poison-oriented teams (`Try To Poison` in `trainers.party`). Only foe targets are scored,
+and moves already penalized below `AI_SCORE_DEFAULT` are left alone. The status move's score is **set**
+(clamped up or down) to an anchor derived from the user's own 2HKO moves: the highest current score among
+its damaging moves that 2HKO the target, or `AI_SCORE_DEFAULT + DECENT_EFFECT` if none does.
+
+- **Toxic / Poison Gas**: if the target is statusless and can be poisoned, scored anchor - 1 (just below a
+  2HKO). With Corrosion, a Steel/Poison target, and no OHKO available on either foe, scored at the anchor.
+- **Baneful Bunker**: scored at the anchor if a foe is statusless, poisonable, and knows a contact move,
+  and the user's protection is off cooldown (`consecutiveMoveUses == 0`).
+- **Double Protect**: if both foes are poisoned and both AI mons have a Protect move off cooldown, there is a
+  `TRY_TO_POISON_DOUBLE_PROTECT_CHANCE`% (default 66) chance both use a protect-type move (+50). The
+  lower-ID battler uses the cached roll (`RNG_AI_TRY_TO_POISON_DOUBLE_PROTECT`, `AiLogicData.tryToPoisonDoubleProtect`);
+  the other follows its partner's committed Protect. A failed roll leaves default scoring.
+- **Soak**: if neither AI mon has Corrosion, the target is a statusless non-Water Steel/Poison foe, and
+  the user sees no 2HKO on either foe, scored anchor - 1.
+
+No other move scores are affected.
+
 ---
 
 ## 10. Custom behavior: Avoid Double Target KO

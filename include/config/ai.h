@@ -165,6 +165,9 @@
 // AI_FLAG_ILLUSION_TRICKS settings
 #define SHOULD_ILLUSION_TRICK                    33 // chance the AI swaps its chosen send-out between its Illusion mon and the mon Illusion would disguise it as
 
+// AI_FLAG_TRY_TO_POISON settings
+#define TRY_TO_POISON_DOUBLE_PROTECT_CHANCE      66 // chance both AI mons Protect when both foes are poisoned and both Protects are off cooldown
+
 #define AI_FLAG_ATTACKS_PARTNER_FOCUSES_PARTNER  FALSE  // if TRUE, AI_FLAG_ATTACKS_PARTNER prefers attacking the partner over the ally.
                                                         // This is treated as true regardless during wild battles with AI.
 

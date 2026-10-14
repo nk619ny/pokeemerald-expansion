@@ -260,7 +260,8 @@ struct AiLogicData
     u32 wideGuardDiscourage:1; // Rolled per decision: discourage spread moves vs a live Wide Guard
     u32 edgarDelayMegaRolled:1; // Cached once per turn: whether the delay-mega-for-Perish-Song roll has happened
     u32 edgarDelayMegaForPerishSong:1; // Cached once per turn: result of that roll
-    u32 padding2:13;
+    u32 tryToPoisonDoubleProtect:1; // Rolled per decision: both mons Protect while both foes are poisoned
+    u32 padding2:12;
 };
 
 struct AiThinkingStruct

@@ -71,6 +71,7 @@ static s32 AI_FirstBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef, 
 static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_PowerfulStatus(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_HardTrickRoom(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
+static s32 AI_TryToPoison(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_DynamicFunc(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_PredictSwitch(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_CheckPpStall(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
@@ -120,7 +121,7 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
     [34] = AI_HardTrickRoom,         // AI_FLAG_HARD_TRICK_ROOM
     [35] = NULL,                     // AI_FLAG_ILLUSION_TRICKS
     [36] = AI_CustomStrategies,      // AI_FLAG_CUSTOM_STRATEGIES
-    [37] = NULL,                     // Unused
+    [37] = AI_TryToPoison,           // AI_FLAG_TRY_TO_POISON
     [38] = NULL,                     // Unused
     [39] = NULL,                     // Unused
     [40] = NULL,                     // Unused
@@ -468,6 +469,9 @@ static void SetupRandomRollsForAIMoveSelection(enum BattlerId battler)
 
     if (AI_AVOID_WIDE_GUARD_SPREAD && IsDoubleBattle())
         gAiLogicData->wideGuardDiscourage = RandomPercentage(RNG_AI_AVOID_WIDE_GUARD_SPREAD, AVOID_WIDE_GUARD_SPREAD_CHANCE);
+
+    if ((gAiThinkingStruct->aiFlags[battler] & AI_FLAG_TRY_TO_POISON) && IsDoubleBattle())
+        gAiLogicData->tryToPoisonDoubleProtect = RandomPercentage(RNG_AI_TRY_TO_POISON_DOUBLE_PROTECT, TRY_TO_POISON_DOUBLE_PROTECT_CHANCE);
 }
 
 void AI_TrySwitchOrUseItem(enum BattlerId battler)
@@ -6877,6 +6881,158 @@ static s32 AI_HardTrickRoom(enum BattlerId battlerAtk, enum BattlerId battlerDef
         break;
     }
 
+    return score;
+}
+
+// AI_FLAG_TRY_TO_POISON: Toxic / Poison Gas, Baneful Bunker, Soak and a coordinated double Protect are
+// scored relative to the user's own 2HKO moves. The status move's score is set to that anchor, not added to it.
+#define TRY_TO_POISON_FORCE_PROTECT 50
+
+// Highest current score among the user's damaging moves that 2HKO battlerDef, i.e. what a 2HKO is "worth" right now.
+static u32 GetTryToPoisonReferenceScore(enum BattlerId battlerAtk, enum BattlerId battlerDef)
+{
+    enum Move *moves = GetMovesArray(battlerAtk);
+    s32 reference = 0;
+
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        enum Move move = moves[moveIndex];
+
+        if (move == MOVE_NONE || move == MOVE_UNAVAILABLE || IsBattleMoveStatus(move))
+            continue;
+        if (GetNoOfHitsToKOBattler(battlerAtk, battlerDef, moveIndex, AI_ATTACKING, CONSIDER_ENDURE) != 2)
+            continue;
+        if (gAiThinkingStruct->score[moveIndex] > reference)
+            reference = gAiThinkingStruct->score[moveIndex];
+    }
+
+    return reference != 0 ? reference : AI_SCORE_DEFAULT + DECENT_EFFECT;
+}
+
+static bool32 UserSeesAnOHKO(enum BattlerId battlerAtk)
+{
+    for (enum BattlerId foe = 0; foe < gBattlersCount; foe++)
+    {
+        if (IsBattlerAlly(battlerAtk, foe) || !IsBattlerAlive(foe))
+            continue;
+        if (GetBestNoOfHitsToKO(battlerAtk, foe, AI_ATTACKING) == 1)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+static bool32 IsTryToPoisonProtectReady(enum BattlerId battler)
+{
+    return IsBattlerAlive(battler)
+        && gBattleMons[battler].volatiles.consecutiveMoveUses == 0
+        && HasMoveWithEffect(battler, EFFECT_PROTECT);
+}
+
+static bool32 ShouldTryToPoisonBanefulBunker(enum BattlerId battlerAtk)
+{
+    if (gBattleMons[battlerAtk].volatiles.consecutiveMoveUses != 0)
+        return FALSE;
+
+    for (enum BattlerId foe = 0; foe < gBattlersCount; foe++)
+    {
+        if (IsBattlerAlly(battlerAtk, foe) || !IsBattlerAlive(foe) || gBattleMons[foe].status1 != 0)
+            continue;
+        if (!CanBePoisoned(battlerAtk, foe, gAiLogicData->abilities[battlerAtk], gAiLogicData->abilities[foe]))
+            continue;
+
+        enum Move *moves = GetMovesArray(foe);
+        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+        {
+            enum Move foeMove = moves[moveIndex];
+
+            if (foeMove == MOVE_NONE || foeMove == MOVE_UNAVAILABLE || IsBattleMoveStatus(foeMove))
+                continue;
+            if (AI_MoveMakesContact(foe, battlerAtk, gAiLogicData->abilities[foe], gAiLogicData->holdEffects[foe], foeMove))
+                return TRUE;
+        }
+    }
+
+    return FALSE;
+}
+
+static bool32 ShouldTryToPoisonDoubleProtect(enum BattlerId battlerAtk)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battlerAtk);
+
+    if (!HasPartner(battlerAtk) || !HasTwoOpponents(battlerAtk))
+        return FALSE;
+
+    for (enum BattlerId foe = 0; foe < gBattlersCount; foe++)
+    {
+        if (!IsBattlerAlly(battlerAtk, foe) && !(gBattleMons[foe].status1 & STATUS1_PSN_ANY))
+            return FALSE;
+    }
+
+    if (!IsTryToPoisonProtectReady(battlerAtk) || !IsTryToPoisonProtectReady(partner))
+        return FALSE;
+
+    // The lower-ID battler chooses first and makes the roll; the other follows what it committed to.
+    if (partner < battlerAtk)
+        return IsProtectionMoveEffect(GetMoveEffect(GetAllyChosenMove(battlerAtk)));
+    return gAiLogicData->tryToPoisonDoubleProtect;
+}
+
+static s32 AI_TryToPoison(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)
+{
+    enum BattleMoveEffects effect = GetMoveEffect(move);
+    enum MoveEffect nonVolatile = GetMoveNonVolatileStatus(move);
+    s32 target;
+    s32 delta;
+
+    if (IsBattlerAlly(battlerAtk, battlerDef) || !IsBattlerAlive(battlerDef) || score < AI_SCORE_DEFAULT)
+        return score;
+
+    if (IsProtectionMoveEffect(effect))
+    {
+        if (ShouldTryToPoisonDoubleProtect(battlerAtk))
+            target = score + TRY_TO_POISON_FORCE_PROTECT;
+        else if (GetMoveProtectMethod(move) == PROTECT_BANEFUL_BUNKER && ShouldTryToPoisonBanefulBunker(battlerAtk))
+            target = GetTryToPoisonReferenceScore(battlerAtk, battlerDef);
+        else
+            return score;
+    }
+    else if (IsBattleMoveStatus(move) && (nonVolatile == MOVE_EFFECT_POISON || nonVolatile == MOVE_EFFECT_TOXIC))
+    {
+        if (gBattleMons[battlerDef].status1 != 0
+         || !AI_CanPoison(battlerAtk, battlerDef, gAiLogicData->abilities[battlerDef], move, gAiLogicData->partnerMove))
+            return score;
+
+        target = GetTryToPoisonReferenceScore(battlerAtk, battlerDef);
+        // Corrosion poisons Steel/Poison foes; with no OHKO available that is worth a 2HKO.
+        if (gAiLogicData->abilities[battlerAtk] != ABILITY_CORROSION
+         || !IS_BATTLER_ANY_TYPE(battlerDef, TYPE_STEEL, TYPE_POISON)
+         || UserSeesAnOHKO(battlerAtk))
+            target--;
+    }
+    else if (effect == EFFECT_SOAK)
+    {
+        enum BattlerId partner = BATTLE_PARTNER(battlerAtk);
+
+        if (gAiLogicData->abilities[battlerAtk] == ABILITY_CORROSION
+         || (HasPartner(battlerAtk) && IsBattlerAlive(partner) && gAiLogicData->abilities[partner] == ABILITY_CORROSION))
+            return score;
+        if (!IS_BATTLER_ANY_TYPE(battlerDef, TYPE_STEEL, TYPE_POISON)
+         || gBattleMons[battlerDef].status1 != 0
+         || (GetBattlerType(battlerDef, 0, FALSE) == TYPE_WATER && GetBattlerType(battlerDef, 1, FALSE) == TYPE_WATER))
+            return score;
+        if (AI_UserSeesA2HKO(battlerAtk))
+            return score;
+
+        target = GetTryToPoisonReferenceScore(battlerAtk, battlerDef) - 1;
+    }
+    else
+    {
+        return score;
+    }
+
+    delta = target - score;
+    ADJUST_SCORE(delta);
     return score;
 }
 
