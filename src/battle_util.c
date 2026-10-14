@@ -67,7 +67,7 @@ static void ResetParadoxTerrainStat(enum BattlerId battler);
 static bool32 CanBattlerFormChange(enum BattlerId battler, enum FormChanges method);
 const u8 *AbsorbedByDrainHpAbility(enum BattlerId battlerDef);
 const u8 *AbsorbedByStatIncreaseAbility(struct DamageContext *ctx, enum Stat statId, u32 statAmount);
-const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef);
+const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef, bool32 runScript);
 static bool32 IsCriticalHit(struct DamageContext *ctx);
 
 ARM_FUNC NOINLINE static uq4_12_t PercentToUQ4_12(u32 percent);
@@ -2279,7 +2279,7 @@ bool32 CanAbilityAbsorbMove(struct DamageContext *ctx)
         break;
     case ABILITY_FLASH_FIRE:
         if (ctx->moveType == TYPE_FIRE && (B_FLASH_FIRE_FROZEN >= GEN_5 || !(gBattleMons[ctx->battlerDef].status1 & STATUS1_FREEZE)))
-            battleScript = AbsorbedByFlashFire(ctx->battlerDef);
+            battleScript = AbsorbedByFlashFire(ctx->battlerDef, ctx->runScript);
         break;
     case ABILITY_SOUNDPROOF:
         if (IsSoundMove(ctx->move))
@@ -2341,19 +2341,24 @@ const u8 *AbsorbedByStatIncreaseAbility(struct DamageContext *ctx, enum Stat sta
     }
 }
 
-const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef)
+const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef, bool32 runScript)
 {
+    // Only touch battle state when the script will actually run, otherwise AI/damage
+    // calcs would pre-set the boost and the real hit would show the "no boost" message.
     if (!gBattleMons[battlerDef].volatiles.flashFireBoosted)
     {
-        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_FLASH_FIRE_BOOST;
-        gBattleMons[battlerDef].volatiles.flashFireBoosted = TRUE;
-        return BattleScript_FlashFireBoost;
+        if (runScript)
+        {
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_FLASH_FIRE_BOOST;
+            gBattleMons[battlerDef].volatiles.flashFireBoosted = TRUE;
+        }
     }
-    else
+    else if (runScript)
     {
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_FLASH_FIRE_NO_BOOST;
-        return BattleScript_FlashFireBoost;
     }
+
+    return BattleScript_FlashFireBoost;
 }
 
 static u32 GetFirstBattlerOnSide(enum BattleSide side)

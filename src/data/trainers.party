@@ -5727,7 +5727,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Palossand  
-Ability: Sand Spit  
+Ability: Sand Stream  
 Level: 62
 IVs: 0 Atk  
 - Shore Up  
@@ -9369,7 +9369,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Prefer Status Moves / Custom Strategies / Hard Trick Room
-
+/* Update Custom Strategies for if Turn 1 gets disrupted */
 
 Shuckle @ Sitrus Berry  
 Ability: Sturdy  
@@ -11483,7 +11483,7 @@ Sassy Nature
 
 Tornadus-Therian (M) @ Sitrus Berry  
 Level: 60
-Ability: Delta Stream  
+Ability: Cyclone Shift
 Ball: Safari
 EVs: 252 HP / 164 SpA / 92 Spe  
 Timid Nature  
@@ -25479,6 +25479,7 @@ Pic: Ninja Boy ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+Starting Status: Toxic Spikes Player L1
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware 
 
 Qwilfish-Hisui
@@ -26221,6 +26222,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Spidops @ Silver Powder  
 Level: 63
 Ability: Stakeout  
+EVs: 128 HP / 128 Atk
 Tera Type: Bug  
 - Silk Trap  
 - Leech Life  
@@ -26229,6 +26231,7 @@ Tera Type: Bug
 
 Crobat  @ Bright Powder
 Level: 63
+EVs: 128 Atk / 128 Spe
 Ability: Inner Focus  
 Tera Type: Poison  
 - Acrobatics  
@@ -26240,7 +26243,7 @@ Greninja  @ King's Rock
 Level: 63
 Ability: Protean  
 Tera Type: Water  
-EVs: 252 Spe
+EVs: 96 Atk / 252 Spe
 - Water Shuriken  
 - Night Slash  
 - Shadow Sneak  
@@ -26248,6 +26251,7 @@ EVs: 252 Spe
 
 Carnivine @ Grip Claw  
 Level: 63
+EVs: 128 HP / 128 Atk
 Ability: Levitate  
 Tera Type: Grass  
 - Snap Trap  

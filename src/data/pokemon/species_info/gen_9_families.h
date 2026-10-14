@@ -9044,7 +9044,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPic = gMonFrontPic_PokestarF00,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 12,
-        .enemyMonElevation = 5,
+        .enemyMonElevation = 6,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .backPic = gMonBackPic_CircledQuestionMark,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -9094,6 +9094,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_PokestarF002,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .enemyMonElevation = 3,
         .frontPicYOffset = 12,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .backPic = gMonBackPic_CircledQuestionMark,
@@ -9199,14 +9200,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .backPic = gMonBackPic_CircledQuestionMark,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .enemyMonElevation = 11,
+        .enemyMonElevation = 13,
         .backPicYOffset = 12,
         .palette = gMonPalette_PokestarMajin,
         .shinyPalette = gMonShinyPalette_CircledQuestionMark,
         .iconSprite = gMonIcon_QuestionMark,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_NONE)
+        NO_SHADOW
         FOOTPRINT(QuestionMark)
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
@@ -9246,7 +9247,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_PokestarMt,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .enemyMonElevation = 4,
+        .enemyMonElevation = 8,
         .frontPicYOffset = 12,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .backPic = gMonBackPic_CircledQuestionMark,
@@ -9298,7 +9299,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPic = gMonFrontPic_PokestarMt2,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 12,
-        .enemyMonElevation = 5,
+        .enemyMonElevation = 8,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .backPic = gMonBackPic_CircledQuestionMark,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -9359,7 +9360,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_QuestionMark,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_M)
+        NO_SHADOW
         FOOTPRINT(QuestionMark)
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
@@ -9399,6 +9400,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_PokestarTransport,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .enemyMonElevation = 4,
         .frontPicYOffset = 12,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .backPic = gMonBackPic_CircledQuestionMark,
@@ -9459,7 +9461,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_QuestionMark,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 10, SHADOW_SIZE_M)
+        SHADOW(0, 20, SHADOW_SIZE_M)
         FOOTPRINT(QuestionMark)
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
@@ -9499,7 +9501,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_PokestarUfo2,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .enemyMonElevation = 10,
+        .enemyMonElevation = 13,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .backPic = gMonBackPic_CircledQuestionMark,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -9509,7 +9511,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_QuestionMark,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 10, SHADOW_SIZE_M)
+        SHADOW(0, 22, SHADOW_SIZE_M)
         FOOTPRINT(QuestionMark)
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,

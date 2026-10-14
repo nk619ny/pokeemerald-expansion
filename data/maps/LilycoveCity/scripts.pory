@@ -795,6 +795,8 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 const TempVar_RivalEncounter = VAR_TEMP_0
 const TempVar_TemperFlare = VAR_TEMP_1
 const TempVar_StompingTantrum = VAR_TEMP_2
+const TempFlag_HideMagmaFan = FLAG_TEMP_1
+const TempFlag_HideAquaFan = FLAG_TEMP_2
 
 text LilycoveCity_Text_IfWorldBecomesOurs{
 	format("If the whole wide world embraces Team Aqua's philosophy, it will be a happier place for Pokémon, too.")
@@ -966,6 +968,7 @@ script LilycoveCity_EventScript_MagmaFanFlaresUp {
 	applymovement(LOCALID_LILYCOVE_MAGMA_FAN, Common_Movement_WalkInPlaceFasterRight)
 	msgbox(format("I can't believe how many of you don't get it!\pMaxie is a visionary, and Archie is just a loudmouth!\pI can't even look at your faces anymore!"),MSGBOX_NPC)
 	closemessage
+	setflag(TempFlag_HideMagmaFan)
     delay(20)
     fadescreenswapbuffers(FADE_TO_BLACK)
 	removeobject(LOCALID_LILYCOVE_MAGMA_FAN)
@@ -985,6 +988,7 @@ script LilycoveCity_EventScript_AquaFanStompsOff {
 	applymovement(LOCALID_LILYCOVE_AQUA_FAN, Common_Movement_WalkInPlaceFasterRight)
 	msgbox(format("I'm tired of listening to this nonsense!\pMaxie & Team Magma are so full of themselves!\pI can't stand hearing any more of this!"),MSGBOX_NPC)
 	closemessage
+	setflag(TempFlag_HideAquaFan)
     delay(20)
     fadescreenswapbuffers(FADE_TO_BLACK)
 	removeobject(LOCALID_LILYCOVE_AQUA_FAN)

@@ -16433,9 +16433,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM102"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Slams the foe with a\n"
-            "hard head. May cause\n"
-            "flinching."),
+            "Slams the foe with\n"
+            "a hard head. May\n"
+            "cause flinching."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

@@ -1665,7 +1665,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Battery"),
         .description = COMPOUND_STRING("Boosts ally's Sp. Atk."),
-        .aiRating = 0,
+        .aiRating = 6,
     },
 
     [ABILITY_FLUFFY] =
@@ -1916,7 +1916,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Power Spot"),
         .description = COMPOUND_STRING("Powers up ally moves."),
-        .aiRating = 2,
+        .aiRating = 7,
     },
 
     [ABILITY_MIMICRY] =
@@ -2477,6 +2477,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Spicy Spray"),
         .description = COMPOUND_STRING("Burns the foe when damaged."),
+        .aiRating = 8,
     },
 
     [ABILITY_AURA_GUARD] =
@@ -2492,21 +2493,21 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Dark Clouds"),
         .description = COMPOUND_STRING("Summons storms in battle."),
-        .aiRating = 9
+        .aiRating = 9,
     },
 
     [ABILITY_BLITZ_BOXER] =
     {
         .name = _("Blitz Boxer"),
         .description = COMPOUND_STRING("Punching moves strike first."),
-        .aiRating = 8
+        .aiRating = 8,
     },
 
     [ABILITY_SUB_ZERO] =
     {
         .name = _("Sub-Zero"),
         .description = COMPOUND_STRING("Powers up Ice moves."),
-        .aiRating = 6
+        .aiRating = 6,
     },
 
     [ABILITY_SMOKE_CLOUD] =
@@ -2559,7 +2560,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Desert Spirit"),
         .description = COMPOUND_STRING("Powers up Ground moves."),
-        .aiRating = 6
+        .aiRating = 6,
     },
 
     [ABILITY_MUDDY] =
@@ -2579,7 +2580,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_CYCLONE_SHIFT] =
     {
-        .name = _("Cyclone Shift"),
+        .name = _("Cyclone Shield"),
         .description = COMPOUND_STRING("Creates strong winds."),
         .aiRating = 8,
     },
