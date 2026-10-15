@@ -16420,8 +16420,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "Fully heals your\n"
-            "party, like a\n"
-            "Pokémon Center."),
+            "party and revives\n"
+            "fainted Pokémon."),
         .pocket = POCKET_KEY_ITEMS,
         .importance = 1,
         .type = ITEM_USE_BAG_MENU,

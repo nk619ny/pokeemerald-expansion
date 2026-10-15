@@ -670,15 +670,15 @@ text RusturfTunnel_Text_Grunt2Outro{
 }
 
 text RusturfTunnel_Text_AdminOutro{
-	format("People just won't learn their lesson. You want to open this tunnel so badly? Fine. We'll focus our efforts elsewhere.")
+	format("Matt: You're an interesting punk, I'll give you that.\pPeople just won't learn their lesson. You want to break open this tunnel so badly? Fine. We'll focus our efforts elsewhere.")
 }
 
 text RusturfTunnel_Text_AdminDefeated{
-	format("I hope you know what you're doing.")
+	format("Strong, ain'tcha?\pWell, that's a loss I can be proud of!")
 }
 
 text RusturfTunnel_Text_AdminIntro{
-	format("People decide they need a new path, and break through whatever is in their way to get there.\pWe've seen how bad things can go when the natural world isn't respected.\pIf nature can't defend itself, we'll step up and be its protectors!")
+	format("Some punks decide they need a new path, and break through whatever is in their way to get there.\pThe name's Matt, and I've seen firsthand how a couple of smart guys can mess things up for everyone.\pSo I'm gonna step up and keep anyone from ruining this cave!")
 }
 
 script RusturfTunnel_EventScript_RockTombHiker {

@@ -204,19 +204,19 @@ script AquaHideout_B2F_EventScript_StevenCallOutro {
 }
 
 text AquaHideout_B2F_Text_StevenSecondCall_BothHideoutsDone {
-	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch Archie, {PLAYER}?\pI see…\NMatt bought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not sure where it sleeps.\pI'm heading home to Mossdeep to do further research. You should meet me there.\p… … … … … …\n… … … … … Click!")
+	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch\NArchie, {PLAYER}?\pI see…\NMatt bought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not sure where it sleeps.\pI'm heading home to Mossdeep to do further research. You should meet me there.\p… … … … … …\n… … … … … Click!")
 }
 
 text AquaHideout_B2F_Text_StevenSecondCall_MagmaRemaining {
-	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch Archie, {PLAYER}?\pI see…\NMatt bought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not sure where it sleeps.\pIn the meantime, you should hurry to Team Magma's hideout in the Jagged Pass.\pWe can still stop Maxie.\p… … … … … …\n… … … … … Click!")
+	format("… … … … … …\n… … … … … Beep!\pSteven: Were you able to catch\NArchie, {PLAYER}?\pI see…\NMatt bought time for him to escape.\pWe need to catch them before they awaken Kyogre, but I'm still not sure where it sleeps.\pIn the meantime, you should hurry to Team Magma's hideout in the Jagged Pass.\pWe can still stop Maxie.\p… … … … … …\n… … … … … Click!")
 }
 
 text AquaHideout_B2F_Text_MattIntro {
-	format("Matt: Shelly looked through the documents from the Weather Institute, Archie grabbed the Blue Orb, and I took this submarine.\pEverything is working according to Archie's plan.\pAnd now, my last job is to stop you, right here!\pThis won't be like last time.\NI've collected the strongest and most fearsome Pokémon around.\pYou'll see our strength!")
+	format("Matt: You're the first punk ever to sneak into this hideout and make it this far!\pShelly looked through the papers, Boss grabbed the Blue Orb, and I yanked this submarine.\pEverything is working according to the Boss's plan.\pAnd now, my last job is to stop you, right here!\pThis won't be like last time.\NI've collected the strongest and most fearsome Pokémon around.\pMe! You! Pokémon! Mixing it up! Dueling!")
 }
 
 text AquaHideout_B2F_Text_MattDefeat{
-	format("I still can't beat you.\NBut I held you back long enough for Archie and Shelly to take off.\pYou can't stop us now…")
+	format("That hurt just about exactly as much as I figured!\NBut I held you back long enough…")
 }
 
 text AquaHideout_B2F_Text_OurBossGotThroughHisPreparations{

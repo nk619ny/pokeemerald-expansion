@@ -1332,20 +1332,25 @@ RusturfTunnel_Text_Grunt2Outro::
 
 RusturfTunnel_Text_AdminOutro::
 # 672 "data/maps/RusturfTunnel/scripts.pory"
+	.string "Matt: You're an interesting punk, I'll\n"
+	.string "give you that.\p"
 	.string "People just won't learn their lesson.\n"
-	.string "You want to open this tunnel so badly?\l"
-	.string "Fine. We'll focus our efforts elsewhere.$"
+	.string "You want to break open this tunnel so\l"
+	.string "badly? Fine. We'll focus our efforts\l"
+	.string "elsewhere.$"
 
 RusturfTunnel_Text_AdminDefeated::
 # 676 "data/maps/RusturfTunnel/scripts.pory"
-	.string "I hope you know what you're doing.$"
+	.string "Strong, ain'tcha?\p"
+	.string "Well, that's a loss I can be proud of!$"
 
 RusturfTunnel_Text_AdminIntro::
 # 680 "data/maps/RusturfTunnel/scripts.pory"
-	.string "People decide they need a new path, and\n"
-	.string "break through whatever is in their way\l"
-	.string "to get there.\p"
-	.string "We've seen how bad things can go when\n"
-	.string "the natural world isn't respected.\p"
-	.string "If nature can't defend itself, we'll\n"
-	.string "step up and be its protectors!$"
+	.string "Some punks decide they need a new path,\n"
+	.string "and break through whatever is in their\l"
+	.string "way to get there.\p"
+	.string "The name's Matt, and I've seen\n"
+	.string "firsthand how a couple of smart guys\l"
+	.string "can mess things up for everyone.\p"
+	.string "So I'm gonna step up and keep anyone\n"
+	.string "from ruining this cave!$"
