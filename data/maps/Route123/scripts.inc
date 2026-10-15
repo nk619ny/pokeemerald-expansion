@@ -301,11 +301,11 @@ Route123_EventScript_Davis::
 # 151 "data/maps/Route123/scripts.pory"
 Route123_EventScript_Fernando::
 # 152 "data/maps/Route123/scripts.pory"
-	trainerbattle_single TRAINER_FERNANDO_1, Route123_Text_FernandoIntro, Route123_Text_FernandoDefeat, Route123_EventScript_RegisterFernando
+	trainerbattle_single TRAINER_FERNANDO_1, Route123_Text_FernandoIntro, Route123_Text_FernandoDefeat
 # 153 "data/maps/Route123/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 154 "data/maps/Route123/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchFernando
+	//goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchFernando
 # 155 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_FernandoPostBattle, MSGBOX_DEFAULT
 # 156 "data/maps/Route123/scripts.pory"

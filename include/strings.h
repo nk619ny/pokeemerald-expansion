@@ -584,6 +584,7 @@ extern const u8 gText_MoveRelearnerJam[];
 extern const u8 gText_DadsAdvice[];
 extern const u8 gText_UnlimitedRepelOn[];
 extern const u8 gText_UnlimitedRepelOff[];
+extern const u8 gText_PokevialUsed[];
 extern const u8 gText_PlayerUsedVar2[];
 extern const u8 gText_RepelEffectsLingered[];
 extern const u8 gText_LureEffectsLingered[];

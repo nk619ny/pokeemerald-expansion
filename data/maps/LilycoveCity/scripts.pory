@@ -416,6 +416,19 @@ LilycoveCity_EventScript_RivalFlyAway::
 	fadedefaultbgm
 	setflag FLAG_MET_RIVAL_LILYCOVE
 	setflag FLAG_HIDE_LILYCOVE_CITY_RIVAL
+    setmetatile 76, 12, METATILE_General_CalmWater, FALSE
+    setmetatile 77, 12, METATILE_General_CalmWater, FALSE
+    setmetatile 76, 13, METATILE_General_CalmWater, FALSE
+    setmetatile 77, 13, METATILE_General_CalmWater, FALSE
+    setmetatile 76, 14, METATILE_General_CalmWater, FALSE
+    setmetatile 77, 14, METATILE_General_CalmWater, FALSE
+    setmetatile 76, 15, METATILE_General_CalmWater, FALSE
+    setmetatile 77, 15, METATILE_General_CalmWater, FALSE
+    setmetatile 77, 16, METATILE_General_CalmWater, FALSE
+    setmetatile 78, 16, METATILE_General_CalmWater, FALSE
+    setmetatile 77, 17, METATILE_General_CalmWater, FALSE
+    setmetatile 78, 17, METATILE_General_CalmWater, FALSE
+    special DrawWholeMapView
 	setvar VAR_LEVEL_CAP, 70
 	call Common_EventScript_ApplyHandicap
 	call Common_EventScript_LevelCapUpdate

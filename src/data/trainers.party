@@ -691,7 +691,7 @@ Pool Rules: Doubles
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Unown
-Level: 66
+Level: 70
 Ability: Pure Power
 Tera Type: Flying
 EVs: 252 Atk / 252 SpA
@@ -701,7 +701,7 @@ Adamant Nature
 - Secret Power
 
 Unown-B
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Bug
 EVs: 252 Def / 252 SpD
@@ -711,7 +711,7 @@ Bold Nature
 - Secret Power
 
 Unown-C
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Bug
 EVs: 252 SpD / 252 HP
@@ -722,7 +722,7 @@ Calm Nature
 - Ancient Power
 
 Unown-D
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Dragon
 EVs: 252 SpD / 252 Spe
@@ -733,7 +733,7 @@ Docile Nature
 - Ancient Power
 
 Unown-E
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Dark
 EVs: 252 SpD / 252 Atk
@@ -742,7 +742,7 @@ Gentle Nature
 - Earth Power
 
 Unown-F
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Fairy
 EVs: 252 Atk / 252 Def
@@ -752,7 +752,7 @@ Bashful Nature
 - Nature Power
 
 Unown-G
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Grass
 EVs: 252 SpD / 252 SpA
@@ -762,7 +762,7 @@ Gentle Nature
 - Nature Power
 
 Unown-H
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Fire
 EVs: 252 Spe / 252 HP
@@ -772,7 +772,7 @@ Hasty Nature
 - Cosmic Power
 
 Unown-I
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Ice
 EVs: 128 SpA / 128 Def / 252 Spe
@@ -783,7 +783,7 @@ Impish Nature
 - Stored Power
 
 Unown-J
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Fairy
 EVs: 128 SpA / 128 Spe / 252 HP
@@ -793,7 +793,7 @@ Jolly Nature
 - Earth Power
 
 Unown-K
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Fighting
 EVs: 252 SpA / 252 HP
@@ -803,7 +803,7 @@ Quirky Nature
 - Stored Power
 
 Unown-L
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Ground
 EVs: 252 Def / 252 SpA
@@ -813,7 +813,7 @@ Lax Nature
 - Cosmic Power
 
 Unown-M
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Steel
 EVs: 252 SpA / 252 Spe
@@ -823,7 +823,7 @@ Modest Nature
 - Secret Power
 
 Unown-N
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Normal
 EVs: 252 Spe / 252 SpA
@@ -833,7 +833,7 @@ Naive Nature
 - Earth Power
 
 Unown-O
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Fighting
 EVs: 252 Def / 252 SpA
@@ -843,7 +843,7 @@ Bold Nature
 - Cosmic Power
 
 Unown-P
-Level: 66
+Level: 70
 Ability: Pure Power
 Tera Type: Psychic
 EVs: 252 Def / 252 HP
@@ -853,7 +853,7 @@ Impish Nature
 - Ancient Power
 
 Unown-Q
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Psychic
 EVs: 252 SpA / 252 SpD
@@ -862,7 +862,7 @@ Quiet Nature
 - Secret Power
 
 Unown-R
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Rock
 EVs: 252 SpA / 252 Def
@@ -873,7 +873,7 @@ Rash Nature
 - Cosmic Power
 
 Unown-S
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Ghost
 EVs: 252 SpD / 252 SpA
@@ -884,7 +884,7 @@ Sassy Nature
 - Cosmic Power
 
 Unown-T
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Poison
 EVs: 252 Spe / 252 SpD
@@ -894,7 +894,7 @@ Timid Nature
 - Secret Power
 
 Unown-U
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Ghost
 EVs: 252 Atk / 252 Def
@@ -904,7 +904,7 @@ Naughty Nature
 - Ancient Power
 
 Unown-V
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Fighting
 EVs: 252 Spe / 252 Atk
@@ -914,7 +914,7 @@ Naive Nature
 - Stored Power
 
 Unown-W
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Water
 EVs: 252 Atk / 252 SpD
@@ -923,7 +923,7 @@ EVs: 252 Atk / 252 SpD
 - Secret Power
 
 Unown-X
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Fairy
 EVs: 252 Def / 252 Spe
@@ -933,7 +933,7 @@ Lax Nature
 - Ancient Power
 
 Unown-Y
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Dark
 EVs: 252 Spe / 252 Atk
@@ -942,7 +942,7 @@ Hardy Nature
 - Mystical Power
 
 Unown-Z
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Electric
 EVs: 252 HP / 252 Spe
@@ -951,7 +951,7 @@ EVs: 252 HP / 252 Spe
 - Cosmic Power
 
 Unown-Exclamation
-Level: 66
+Level: 70
 Ability: Pure Power
 Tera Type: Ghost
 EVs: 252 HP / 252 SpD
@@ -961,7 +961,7 @@ Serious Nature
 - Mystical Power
 
 Unown-Question
-Level: 66
+Level: 70
 Ability: Levitate
 Tera Type: Psychic
 EVs: 252 Spe / 252 SpD
@@ -4898,6 +4898,7 @@ IVs: 0 Atk
 Level: 50
 - Bitter Malice  
 - Night Daze  
+- Hex
 - Protect
 
 Breloom  @ Focus Sash
@@ -5486,7 +5487,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Roserade  
 Ability: Poison Point 
-Level: 60 
+Level: 68
 Tera Type: Grass  
 IVs: 0 Atk  
 - Aromatherapy  
@@ -5496,7 +5497,7 @@ IVs: 0 Atk
 
 Sawsbuck  
 Ability: Sap Sipper  
-Level: 60
+Level: 68
 Tera Type: Normal  
 - Horn Leech  
 - Petal Blizzard  
@@ -5505,7 +5506,7 @@ Tera Type: Normal
 
 Florges (F)  
 Ability: Flower Veil  
-Level: 60
+Level: 68
 Tera Type: Ground  
 IVs: 0 Atk  
 - Moonblast  
@@ -5516,7 +5517,7 @@ IVs: 0 Atk
 
 Vivillon-Fancy @ Charti Berry  
 Ability: Friend Guard  
-Level: 60
+Level: 68
 Tera Type: Water
 IVs: 0 Atk  
 - Aromatherapy  
@@ -6829,7 +6830,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Marowak @ Thick Club
 Ability: Rock Head  
-Level: 64
+Level: 67
 Tera Type: Ground  
 - Perish Song  
 - Bonemerang
@@ -6838,7 +6839,7 @@ Tera Type: Ground
 
 Snorlax  
 Ability: Immunity  
-Level: 64
+Level: 67
 - Block  
 - Heavy Slam  
 - Body Slam  
@@ -6846,7 +6847,7 @@ Level: 64
 
 Haxorus  
 Ability: Unnerve  
-Level: 64
+Level: 67
 - Glaive Rush  
 - Dragon Dance  
 - First Impression  
@@ -6855,7 +6856,7 @@ Level: 64
 Ampharos  
 Ability: Static  
 Tera Type: Electric  
-Level: 64
+Level: 67
 IVs: 0 Atk  
 - Dragon Pulse  
 - Power Gem  
@@ -8583,7 +8584,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Rillaboom @ White Herb  
-Level: 60
+Level: 67
 Ability: Soundproof  
 Tera Type: Grass  
 EVs: 252 SpA  
@@ -8593,7 +8594,7 @@ EVs: 252 SpA
 - Frenzy Plant  
 
 Toxtricity  @ Shuca Berry
-Level: 60
+Level: 67
 Ability: Punk Rock  
 Tera Type: Electric  
 IVs: 0 Atk  
@@ -8603,7 +8604,7 @@ IVs: 0 Atk
 - Eerie Impulse  
 
 Electrode  @ Normal Gem
-Level: 60
+Level: 67
 Ability: Soundproof  
 Tera Type: Electric  
 EVs: 252 Atk  
@@ -8613,7 +8614,7 @@ EVs: 252 Atk
 - Charge Beam  
 
 Noivern  @ Yache Berry
-Level: 60
+Level: 67
 Ability: Telepathy  
 Tera Type: Flying  
 IVs: 0 Atk  
@@ -19742,7 +19743,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JAZMYN === /* Route 123 */ /* TO BE ADDED */
 Name: JAZMYN
-Class: Cooltrainer 2
+Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
@@ -19763,7 +19764,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide / Illusion Tricks
 
 Sudowoodo  @ Custap Berry
-Level: 66
+Level: 68
 Ability: Sturdy  
 Tera Type: Rock  
 - Copycat  
@@ -19772,7 +19773,7 @@ Tera Type: Rock
 - Sucker Punch  
 
 Mimikyu @ Big Root  
-Level: 66
+Level: 68
 Ability: Disguise  
 Tera Type: Ghost  
 - Shadow Sneak  
@@ -19781,7 +19782,7 @@ Tera Type: Ghost
 - Destiny Bond  
 
 Zoroark-Hisui  
-Level: 66
+Level: 68
 Ability: Illusion  
 Tera Type: Normal  
 - Shadow Ball  
@@ -19790,7 +19791,7 @@ Tera Type: Normal
 - Psychic  
 
 Mawile  
-Level: 66
+Level: 68
 Ability: Intimidate  
 Tera Type: Steel  
 - Jaw Lock  
@@ -19799,7 +19800,7 @@ Tera Type: Steel
 - Iron Head  
 
 Noivern @ Ring Target  
-Level: 66
+Level: 68
 Ability: Telepathy  
 Tera Type: Flying  
 IVs: 0 Atk  

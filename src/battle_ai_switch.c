@@ -1041,6 +1041,10 @@ static bool32 ShouldSwitchIfAbilityBenefit(struct SwitchAiContext *switchContext
     {
         enum Move hitEscapeMove = MOVE_NONE;
 
+        // Already transformed, nothing to gain from switching out
+        if (gBattleMons[switchContext->battler].species != SPECIES_PALAFIN_ZERO)
+            return FALSE;
+
         if (GetBattlerMoveIndexWithEffect(switchContext->battler, EFFECT_HIT_ESCAPE) < MAX_MON_MOVES)
             hitEscapeMove = gBattleMons[switchContext->battler].moves[GetBattlerMoveIndexWithEffect(switchContext->battler, EFFECT_HIT_ESCAPE)];
 

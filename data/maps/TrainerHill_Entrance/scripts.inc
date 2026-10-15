@@ -1082,56 +1082,56 @@ NewTrainerHill_EventScript_GetNumCoins::
 # 609 "data/maps/TrainerHill_Entrance/scripts.pory"
 	case 18, NewTrainerHill_EventScript_GetNumCoins_19
 # 613 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 614 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_2:
 # 559 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 560 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_3:
 # 562 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 563 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_4:
 # 565 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 566 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_5:
 # 568 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 569 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_6:
 # 571 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 572 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_7:
 # 574 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 575 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_8:
 # 577 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 578 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
@@ -1145,70 +1145,70 @@ NewTrainerHill_EventScript_GetNumCoins_9:
 
 NewTrainerHill_EventScript_GetNumCoins_10:
 # 583 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 584 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_11:
 # 586 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 587 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_12:
 # 589 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 590 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_13:
 # 592 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 593 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_14:
 # 595 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 596 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_15:
 # 598 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 599 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_16:
 # 601 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 602 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_17:
 # 604 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 605 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_18:
 # 607 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 608 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
 
 NewTrainerHill_EventScript_GetNumCoins_19:
 # 610 "data/maps/TrainerHill_Entrance/scripts.pory"
-	setvar VAR_TEMP_8, 1500
+	setvar VAR_TEMP_8, 2000
 # 611 "data/maps/TrainerHill_Entrance/scripts.pory"
 	bufferstring STR_VAR_1, NewTrainerHill_EventScript_GetNumCoins_Text_0
 	return
@@ -1415,7 +1415,7 @@ NewTrainerHill_EventScript_ReceiveReward_Text_1:
 
 NewTrainerHill_EventScript_GetNumCoins_Text_0:
 # 560 "data/maps/TrainerHill_Entrance/scripts.pory"
-	.string "1500$"
+	.string "2000$"
 
 NewTrainerHill_EventScript_GetNumCoins_Text_1:
 # 581 "data/maps/TrainerHill_Entrance/scripts.pory"

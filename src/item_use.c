@@ -37,6 +37,7 @@
 #include "pokeblock.h"
 #include "pokemon.h"
 #include "script.h"
+#include "script_pokemon_util.h"
 #include "sound.h"
 #include "strings.h"
 #include "string_util.h"
@@ -823,6 +824,16 @@ void ItemUseOutOfBattle_UnlimitedRepel(u8 taskId)
             DisplayItemMessage(taskId, 1, gText_UnlimitedRepelOff, CloseItemMessage);
         }
     }
+}
+
+void ItemUseOutOfBattle_Pokevial(u8 taskId)
+{
+    HealPlayerParty();
+    PlaySE(SE_USE_ITEM);
+    if (gTasks[taskId].tUsingRegisteredKeyItem)
+        DisplayItemMessageOnField(taskId, gText_PokevialUsed, Task_CloseCantUseKeyItemMessage);
+    else
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_PokevialUsed, CloseItemMessage);
 }
 
 void ItemUseOutOfBattle_RoamingBeacon(u8 taskId)

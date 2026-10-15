@@ -1610,6 +1610,8 @@ extern const u16 gItemIconPalette_DynamaxBand[];
 // Misc. Key Items
 extern const u32 gItemIcon_EonFlute[];
 extern const u16 gItemIconPalette_EonFlute[];
+extern const u32 gItemIcon_Pokevial[];
+extern const u16 gItemIconPalette_Pokevial[];
 extern const u32 gItemIcon_Bicycle[];
 extern const u16 gItemIconPalette_Bicycle[];
 extern const u32 gItemIcon_MachBike[];

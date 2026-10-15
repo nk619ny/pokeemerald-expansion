@@ -3,7 +3,6 @@
   "name": "MtPyre_Summit",
   "layout": "LAYOUT_MT_PYRE_SUMMIT",
   "music": "MUS_MT_PYRE_EXTERIOR",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MT_PYRE",
   "requires_flash": false,
   "weather": "WEATHER_FOG_HORIZONTAL",
@@ -178,7 +177,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtPyre_Summit_Script_Courtney",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA"
     },
     {
       "local_id": "LOCALID_MT_PYRE_SHELLY",
@@ -192,7 +191,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtPyre_Summit_Script_Shelly",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA"
     },
     {
       "local_id": "LOCALID_MT_PYRE_COURTNEY_MON",
@@ -337,5 +336,6 @@
       "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_RARE_CANDY"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

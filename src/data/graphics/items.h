@@ -1891,6 +1891,9 @@ const u16 gItemIconPalette_DynamaxBand[] = INCGFX_U16("graphics/items/icon_palet
 const u32 gItemIcon_EonFlute[] = INCGFX_U32("graphics/items/icons/eon_flute.png", ".4bpp.smol");
 const u16 gItemIconPalette_EonFlute[] = INCGFX_U16("graphics/items/icons/eon_flute.png", ".gbapal");
 
+const u32 gItemIcon_Pokevial[] = INCGFX_U32("graphics/items/icons/pokevial.png", ".4bpp.smol");
+const u16 gItemIconPalette_Pokevial[] = INCGFX_U16("graphics/items/icons/pokevial.png", ".gbapal");
+
 const u32 gItemIcon_Bicycle[] = INCGFX_U32("graphics/items/icons/bicycle.png", ".4bpp.smol");
 const u16 gItemIconPalette_Bicycle[] = INCGFX_U16("graphics/items/icon_palettes/bicycle.pal", ".gbapal");
 

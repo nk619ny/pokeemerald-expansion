@@ -16414,6 +16414,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_EonFlute,
     },
 
+    [ITEM_POKEVIAL] =
+    {
+        .name = ITEM_NAME("Pokévial"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Fully heals your\n"
+            "party, like a\n"
+            "Pokémon Center."),
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Pokevial,
+        .iconPic = gItemIcon_Pokevial,
+        .iconPalette = gItemIconPalette_Pokevial,
+    },
+
     /* New TM slots 101-200 */
     [ITEM_TM_GUNK_SHOT] =
     {

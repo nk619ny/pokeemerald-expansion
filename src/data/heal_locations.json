@@ -593,6 +593,18 @@
       "map": "MAP_ROUTE135_NORTH",
       "x": 26,
       "y": 8
+    },
+    {
+      "id": "HEAL_LOCATION_JAGGED_PASS",
+      "map": "MAP_JAGGED_PASS",
+      "x": 16,
+      "y": 20
+    },
+    {
+      "id": "HEAL_LOCATION_MT_CHIMNEY",
+      "map": "MAP_MT_CHIMNEY",
+      "x": 18,
+      "y": 37
     }
   ]
 }
