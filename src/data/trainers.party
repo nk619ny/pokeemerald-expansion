@@ -2030,7 +2030,7 @@ Tera Type: Water
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Poison Fang  
-- Ice Fang  
+- Ice Fang
 - Waterfall  
 - Bite  
 
@@ -4027,7 +4027,7 @@ Pic: Street Thug ORAS
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Encourage Stat Boosts
 
 Smeargle @ Mental Herb  
 Ability: Moody  
@@ -4040,7 +4040,7 @@ Level: 50
 - Taunt  
 - Baton Pass  
 
-Corviknight  
+Corviknight @ Mental Herb
 Ability: Mirror Armor  
 EVs: 252 HP / 128 SpD / 128 Spe  
 Impish Nature  
@@ -10466,7 +10466,7 @@ Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Encourage Stat Boosts
 
 Espeon @ Light Clay  
 Ability: Psychic Surge  

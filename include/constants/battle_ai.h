@@ -46,6 +46,7 @@
 #define AI_FLAG_ILLUSION_TRICKS             AI_FLAG(35)  // When the AI is about to send out its benched Illusion mon (or the mon Illusion would disguise it as), there is a SHOULD_ILLUSION_TRICK% chance it sends out the other one instead, creating uncertainty about which Pokémon was 'really' sent out.
 #define AI_FLAG_CUSTOM_STRATEGIES           AI_FLAG(36)  // Dispatcher for team-specific scripted strategies the generic AI can't express. Each strategy is gated on a species/ability/item signature, so trainers with the flag but a different situation are unaffected.
 #define AI_FLAG_TRY_TO_POISON               AI_FLAG(37)  // AI for poison-oriented teams. Scores Toxic/Poison Gas, Baneful Bunker, Soak (onto Steel/Poison foes) and a coordinated double Protect relative to its 2HKO moves.
+#define AI_FLAG_ENCOURAGE_STAT_BOOSTS       AI_FLAG(38)  // Stored Power / Power Trip users below +6 total boosts strongly favor self stat-boosting moves: +2 to the attacking stat over a 2HKO (never over a KO), other +2 boosts tied with a 2HKO.
 
 // The following options are enough to have a basic/smart trainer. Any other addtion could make the trainer worse/better depending on the flag
 #define AI_FLAG_BASIC_TRAINER         (AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY)

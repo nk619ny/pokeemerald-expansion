@@ -2739,6 +2739,42 @@ u32 AI_TryIllusionTrickSwap(enum BattlerId battler, u32 chosenMonId)
     return chosenMonId;
 }
 
+// AI_FLAG_ENCOURAGE_STAT_BOOSTS: pass net-positive boosts to the first valid Stored Power / Power Trip user.
+u32 AI_GetBatonPassReceiver(enum BattlerId battler)
+{
+    struct Pokemon *party;
+    s32 netStages = 0;
+    u32 partyStart = 0, partyEnd = PARTY_SIZE;
+
+    if (!(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_ENCOURAGE_STAT_BOOSTS))
+        return PARTY_SIZE;
+    for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
+        netStages += gBattleMons[battler].statStages[stat] - DEFAULT_STAT_STAGE;
+    if (netStages <= 0)
+        return PARTY_SIZE;
+
+    if (GetBattlerSide(battler) == B_SIDE_OPPONENT && (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS))
+    {
+        if (GetBattlerPosition(battler) == B_POSITION_OPPONENT_LEFT)
+            partyEnd = PARTY_SIZE / 2;
+        else
+            partyStart = PARTY_SIZE / 2;
+    }
+
+    party = GetBattlerParty(battler);
+    for (u32 monIndex = partyStart; monIndex < partyEnd; monIndex++)
+    {
+        if (!IsValidIllusionTrickSwitchin(battler, monIndex))
+            continue;
+        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+        {
+            if (GetMoveEffect(GetMonData(&party[monIndex], MON_DATA_MOVE1 + moveIndex)) == EFFECT_STORED_POWER)
+                return monIndex;
+        }
+    }
+    return PARTY_SIZE;
+}
+
 u32 AI_SelectRevivalBlessingMon(enum BattlerId battler)
 {
     s32 lastId = GetAILastPartyIndex(battler); // + 1

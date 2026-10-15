@@ -261,7 +261,9 @@ struct AiLogicData
     u32 edgarDelayMegaRolled:1; // Cached once per turn: whether the delay-mega-for-Perish-Song roll has happened
     u32 edgarDelayMegaForPerishSong:1; // Cached once per turn: result of that roll
     u32 tryToPoisonDoubleProtect:1; // Rolled per decision: both mons Protect while both foes are poisoned
-    u32 padding2:12;
+    u32 speedBoostMegaDelay:1; // Rolled per decision: Speed Boost mon Protects without Mega Evolving on its first turn
+    u32 encourageBatonPass:1; // Rolled per decision: AI_FLAG_ENCOURAGE_STAT_BOOSTS booster passes its boosts this turn
+    u32 padding2:10;
 };
 
 struct AiThinkingStruct

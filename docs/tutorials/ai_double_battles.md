@@ -611,6 +611,39 @@ its damaging moves that 2HKO the target, or `AI_SCORE_DEFAULT + DECENT_EFFECT` i
 
 No other move scores are affected.
 
+### 9.12 Custom flag: `AI_FLAG_ENCOURAGE_STAT_BOOSTS` (bit 38)
+
+Standalone flag (`Encourage Stat Boosts` in `trainers.party`, not part of `AI_FLAG_SMART_TRAINER`).
+`AI_EncourageStatBoosts` only touches self-targeting stat-boosting status moves of a Stored Power /
+Power Trip user whose positive stat stages total less than +6, when no foe can KO it and the move
+wasn't already penalized below `AI_SCORE_DEFAULT`. The score is raised (never lowered) to an anchor
+built from the best 2HKO move against the target (`GetTryToPoisonReferenceScore` + `BEST_DAMAGE_MOVE`,
+since that bonus is only added later in `AI_CompareDamagingMoves`):
+
+- **Primary tier** (+2 to the Stored Power move's attacking stat, or +1 to it with +2 total): anchor + 1.
+- **Secondary tier** (any other +2 total): anchor, i.e. tied with the 2HKO.
+- Both capped at `AI_SCORE_DEFAULT + SLOW_KILL`, so any KO (fast or slow, either foe) still wins.
+
+Ally-target scoring (`EncourageStatBoosts_Ally`, runs in the ally pass of the target loop, skipped if the
+ally is protecting against the move):
+
+| Move | Condition | Score |
+|---|---|---|
+| Always-crit move | Ally has Anger Point + Stored Power/Power Trip, Atk < +4, move affects it, passes the `isFriendlyFireOK` test; no fast kill on a foe | +60 |
+| Simple Beam | Ally has Stored Power/Power Trip + a self stat raise, isn't Simple/Contrary, `CanEffectChangeAbility`; skipped while an Anger Point crit plan exists; no fast kill on a foe | +60 |
+| Acupressure | Ally has Stored Power/Power Trip, `ShouldUseAcupressure`, not already penalized | raised to `AI_SCORE_DEFAULT + FAST_KILL` |
+
+This stacks with the existing `AI_DoubleBattle` Anger Point case (which additionally requires moving first).
+
+Baton Pass (singles and doubles): a user with a +3 or more self boost (`IsBatonPassBooster`) gets +30 on
+that boost while no foe can KO it. `RNG_AI_ENCOURAGE_STAT_BOOSTS_BATON_PASS` is rolled once per decision in
+`SetupRandomRollsForAIMoveSelection` from the net stage total (cached in `AiLogicData.encourageBatonPass`;
+forced TRUE when a foe can only slow-kill it). Baton Pass gets +40 on a pass, `WORST_EFFECT` otherwise.
+Nothing is forced while a foe threatens a fast kill. `AI_GetBatonPassReceiver` (called from
+`OpponentHandleChoosePokemon`) sends in the first valid Stored Power / Power Trip user.
+
+Tests: `test/battle/ai/ai_flag_encourage_stat_boosts.c`.
+
 ---
 
 ## 10. Custom behavior: Avoid Double Target KO
@@ -716,7 +749,22 @@ Tests: `test/battle/ai/ai_avoid_wide_guard_spread.c`
 
 ---
 
-## 12. Editing Guidance for Agents
+## 12. Smart Trainer behavior: Speed Boost Mega delay
+
+Applies to any trainer with the full `AI_FLAG_SMART_TRAINER` set (no custom flag). A Speed Boost mon
+holding Sharpedonite or Scolipite that hasn't Mega Evolved, is on its first turn on the field
+(`battlerState.isFirstTurn == 1`, i.e. not the turn it switched in, so Speed Boost fires at end of turn),
+has a usable `EFFECT_PROTECT` move and no fast kill on either foe (`IsSpeedBoostMegaDelayCandidate`)
+rolls `RNG_AI_SPEED_BOOST_MEGA_DELAY` against `SPEED_BOOST_MEGA_DELAY_CHANCE` (66) in
+`SetupRandomRollsForAIMoveSelection`, cached in `AiLogicData.speedBoostMegaDelay`. On success,
+`BattleAI_ChooseMoveIndex` suppresses the gimmick and `AI_CheckViability` adds +50 to the Protect move.
+The next turn the candidate check fails, so the mon Mega Evolves as normal.
+
+Tests: `test/battle/ai/ai_speed_boost_mega_delay.c`.
+
+---
+
+## 13. Editing Guidance for Agents
 
 1. **Doubles logic lives in three places:** `ChooseMoveOrAction_Doubles` (target loop +
    ally guard), `AI_DoubleBattle` (coordination scoring), and the `battle_ai_util.c` partner

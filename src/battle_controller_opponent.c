@@ -540,7 +540,11 @@ static void OpponentHandleChoosePokemon(enum BattlerId battler)
         if (IsDoubleBattle())
             SetBattlerAiData(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT), gAiLogicData);
 
-        chosenMonId = GetMostSuitableMonToSwitchInto(battler, switchType);
+        chosenMonId = PARTY_SIZE;
+        if (GetMoveEffect(gCurrentMove) == EFFECT_BATON_PASS)
+            chosenMonId = AI_GetBatonPassReceiver(battler);
+        if (chosenMonId == PARTY_SIZE)
+            chosenMonId = GetMostSuitableMonToSwitchInto(battler, switchType);
         if (chosenMonId == PARTY_SIZE) // Advanced logic failed so we pick the next available battler
         {
             enum BattlerId battler1, battler2;

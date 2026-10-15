@@ -40,6 +40,8 @@
 #define AI_ACTION_WATCH         (1 << 2)
 #define AI_ACTION_DO_NOT_ATTACK (1 << 3)
 
+#define SPEED_BOOST_MEGA_DELAY_FORCE_PROTECT 50
+
 static u32 ChooseMoveOrAction(enum BattlerId battler);
 static u32 ChooseMoveOrAction_Singles(enum BattlerId battler);
 static u32 ChooseMoveOrAction_Doubles(enum BattlerId battler);
@@ -81,6 +83,9 @@ static bool32 ShouldDiscourageWideGuardSpread(enum BattlerId battlerAtk);
 static bool32 AI_UserSeesA2HKO(enum BattlerId battlerAtk);
 static bool32 ShouldUseAcupressure(enum BattlerId battlerAtk, enum BattlerId receiver);
 static bool32 IsCustomStrategyGimmickSuppressed(enum BattlerId battler);
+static s32 AI_EncourageStatBoosts(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
+static bool32 IsSpeedBoostMegaDelayCandidate(enum BattlerId battler);
+static bool32 RollEncourageBatonPass(enum BattlerId battler);
 
 static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Move, s32) =
 {
@@ -122,7 +127,7 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
     [35] = NULL,                     // AI_FLAG_ILLUSION_TRICKS
     [36] = AI_CustomStrategies,      // AI_FLAG_CUSTOM_STRATEGIES
     [37] = AI_TryToPoison,           // AI_FLAG_TRY_TO_POISON
-    [38] = NULL,                     // Unused
+    [38] = AI_EncourageStatBoosts,   // AI_FLAG_ENCOURAGE_STAT_BOOSTS
     [39] = NULL,                     // Unused
     [40] = NULL,                     // Unused
     [41] = NULL,                     // Unused
@@ -472,6 +477,11 @@ static void SetupRandomRollsForAIMoveSelection(enum BattlerId battler)
 
     if ((gAiThinkingStruct->aiFlags[battler] & AI_FLAG_TRY_TO_POISON) && IsDoubleBattle())
         gAiLogicData->tryToPoisonDoubleProtect = RandomPercentage(RNG_AI_TRY_TO_POISON_DOUBLE_PROTECT, TRY_TO_POISON_DOUBLE_PROTECT_CHANCE);
+
+    gAiLogicData->speedBoostMegaDelay = IsSpeedBoostMegaDelayCandidate(battler)
+                                     && RandomPercentage(RNG_AI_SPEED_BOOST_MEGA_DELAY, SPEED_BOOST_MEGA_DELAY_CHANCE);
+
+    gAiLogicData->encourageBatonPass = RollEncourageBatonPass(battler);
 }
 
 void AI_TrySwitchOrUseItem(enum BattlerId battler)
@@ -535,6 +545,9 @@ u32 BattleAI_ChooseMoveIndex(enum BattlerId battler)
 
     // Some Custom Strategies rely on not Terastalizing (e.g. keeping a Water weakness for Weakness Policy).
     if (IsCustomStrategyGimmickSuppressed(battler))
+        SetAIUsingGimmick(battler, NO_GIMMICK);
+
+    if (gAiLogicData->speedBoostMegaDelay)
         SetAIUsingGimmick(battler, NO_GIMMICK);
 
     if (gBattleStruct->gimmick.usableGimmick[battler] == GIMMICK_TERA && (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SMART_TERA))
@@ -6098,6 +6111,10 @@ static s32 AI_CheckViability(enum BattlerId battlerAtk, enum BattlerId battlerDe
     if (IsTargetingPartner(battlerAtk, battlerDef))
         return score;
 
+    // Re-check the candidate so move prediction for other battlers never inherits the cached roll.
+    if (gAiLogicData->speedBoostMegaDelay && GetMoveEffect(move) == EFFECT_PROTECT && IsSpeedBoostMegaDelayCandidate(battlerAtk))
+        ADJUST_SCORE(SPEED_BOOST_MEGA_DELAY_FORCE_PROTECT);
+
     if (GetMovePower(move) != 0)
     {
         if (GetNoOfHitsToKOBattler(battlerAtk, battlerDef, gAiThinkingStruct->movesetIndex, AI_ATTACKING, CONSIDER_ENDURE) == 0)
@@ -6654,6 +6671,38 @@ static bool32 HasFastKillOnAnyFoe(enum BattlerId battlerAtk)
         || HasFastKillOnFoe(battlerAtk, RIGHT_FOE(battlerAtk));
 }
 
+static bool32 HasUsableMoveWithEffect(enum BattlerId battler, enum BattleMoveEffects effect)
+{
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        if (GetMoveEffect(gBattleMons[battler].moves[moveIndex]) == effect
+         && gBattleMons[battler].pp[moveIndex] != 0
+         && !(gAiLogicData->moveLimitations[battler] & (1u << moveIndex)))
+            return TRUE;
+    }
+    return FALSE;
+}
+
+// Smart Trainer: Speed Boost Mega Sharpedo/Scolipede Protect on their first turn to bank a boost before Mega Evolving.
+static bool32 IsSpeedBoostMegaDelayCandidate(enum BattlerId battler)
+{
+    enum Item item = gBattleMons[battler].item;
+
+    if ((gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SMART_TRAINER) != AI_FLAG_SMART_TRAINER)
+        return FALSE;
+    if (gAiLogicData->abilities[battler] != ABILITY_SPEED_BOOST
+     || (item != ITEM_SHARPEDONITE && item != ITEM_SCOLIPITE)
+     || gBattleStruct->gimmick.usableGimmick[battler] != GIMMICK_MEGA)
+        return FALSE;
+    // 1 = first turn on the field and not just switched in, so Speed Boost fires at the end of this turn.
+    if (gBattleStruct->battlerState[battler].isFirstTurn != 1
+     || gBattleMons[battler].statStages[STAT_SPEED] >= MAX_STAT_STAGE)
+        return FALSE;
+    if (!HasUsableMoveWithEffect(battler, EFFECT_PROTECT))
+        return FALSE;
+    return !HasFastKillOnAnyFoe(battler);
+}
+
 enum DoubleTargetKillClass
 {
     DBL_TARGET_NO_KILL,
@@ -7033,6 +7082,353 @@ static s32 AI_TryToPoison(enum BattlerId battlerAtk, enum BattlerId battlerDef, 
 
     delta = target - score;
     ADJUST_SCORE(delta);
+    return score;
+}
+
+// AI_FLAG_ENCOURAGE_STAT_BOOSTS: Stored Power / Power Trip users favor self stat boosts relative to their 2HKO moves.
+#define STORED_POWER_MAX_POSITIVE_STAGES 6
+
+static enum Stat GetStoredPowerPrimaryStat(enum BattlerId battler)
+{
+    enum Move *moves = GetMovesArray(battler);
+
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE
+         && GetMoveEffect(moves[moveIndex]) == EFFECT_STORED_POWER)
+            return GetMoveCategory(moves[moveIndex]) == DAMAGE_CATEGORY_PHYSICAL ? STAT_ATK : STAT_SPATK;
+    }
+    return STAT_HP; // No Stored Power / Power Trip
+}
+
+static u32 GetPositiveStatStageTotal(enum BattlerId battler)
+{
+    u32 total = 0;
+
+    for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
+    {
+        if (gBattleMons[battler].statStages[stat] > DEFAULT_STAT_STAGE)
+            total += gBattleMons[battler].statStages[stat] - DEFAULT_STAT_STAGE;
+    }
+    return total;
+}
+
+static void GetSelfBoostGains(enum BattlerId battler, enum Move move, enum Stat primaryStat, u32 *primaryGain, u32 *totalGain)
+{
+    u32 effectCount = GetMoveAdditionalEffectCount(move);
+
+    *primaryGain = 0;
+    *totalGain = 0;
+
+    for (u32 effectIndex = 0; effectIndex < effectCount; effectIndex++)
+    {
+        const struct AdditionalEffect *effect = GetMoveAdditionalEffectById(move, effectIndex);
+
+        if (effect->moveEffect != STAT_CHANGE_EFFECT_PLUS)
+            continue;
+
+        for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
+        {
+            s32 stage = AI_GetAdjustedStatStage(battler, move, (s32)GetStatStage(stat, effect));
+            s32 room = MAX_STAT_STAGE - gBattleMons[battler].statStages[stat];
+
+            if (stage <= 0 || room <= 0)
+                continue;
+            if (stage > room)
+                stage = room;
+
+            *totalGain += stage;
+            if (stat == primaryStat)
+                *primaryGain += stage;
+        }
+    }
+}
+
+// Ally-support and Baton Pass forcing tiers: crit / Simple Beam > Baton Pass > Baton Pass setup.
+#define ENCOURAGE_STAT_BOOSTS_ALLY_FORCE        60
+#define ENCOURAGE_STAT_BOOSTS_BATON_PASS_FORCE  40
+#define ENCOURAGE_STAT_BOOSTS_BP_SETUP_FORCE    30
+#define BATON_PASS_SETUP_MIN_STAGES             3
+
+// Baton Pass chance indexed by the user's net stat stage total; +7 and above always pass.
+static const u8 sEncourageBatonPassChance[] = {0, 0, 25, 50, 66, 75, 90, 100};
+
+static bool32 IsSelfBoostTargetType(enum BattlerId battler, enum Move move)
+{
+    enum MoveTarget targetType = AI_GetBattlerMoveTargetType(battler, move);
+    return targetType == TARGET_USER || targetType == TARGET_USER_AND_ALLY || targetType == TARGET_USER_OR_ALLY;
+}
+
+// Status self boosts and damaging moves with a self stat raise (e.g. Power-Up Punch).
+static bool32 HasSelfStatRaisingMove(enum BattlerId battler)
+{
+    enum Move *moves = GetMovesArray(battler);
+
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        enum Move move = moves[moveIndex];
+
+        if (move == MOVE_NONE || move == MOVE_UNAVAILABLE)
+            continue;
+        if (IsBattleMoveStatus(move))
+        {
+            if (IsStatRaisingMove(move) && IsSelfBoostTargetType(battler, move))
+                return TRUE;
+        }
+        else if (MoveHasAdditionalEffectSelf(move, MOVE_EFFECT_STAT_PLUS))
+        {
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
+// Uncapped stages a self-boosting status move grants, including Simple doubling.
+static u32 GetRawSelfBoostTotal(enum BattlerId battler, enum Move move)
+{
+    u32 effectCount = GetMoveAdditionalEffectCount(move);
+    u32 total = 0;
+
+    for (u32 effectIndex = 0; effectIndex < effectCount; effectIndex++)
+    {
+        const struct AdditionalEffect *effect = GetMoveAdditionalEffectById(move, effectIndex);
+
+        if (effect->moveEffect != STAT_CHANGE_EFFECT_PLUS)
+            continue;
+        for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
+        {
+            s32 stage = AI_GetAdjustedStatStage(battler, move, (s32)GetStatStage(stat, effect));
+            if (stage > 0)
+                total += stage;
+        }
+    }
+    return total;
+}
+
+static s32 GetNetStatStageTotal(enum BattlerId battler)
+{
+    s32 total = 0;
+
+    for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
+        total += gBattleMons[battler].statStages[stat] - DEFAULT_STAT_STAGE;
+    return total;
+}
+
+static bool32 CanAnyFoeFaintBattler(enum BattlerId battler)
+{
+    for (enum BattlerId foe = 0; foe < gBattlersCount; foe++)
+    {
+        if (!IsBattlerAlly(battler, foe) && IsBattlerAlive(foe) && CanTargetFaintAi(foe, battler))
+            return TRUE;
+    }
+    return FALSE;
+}
+
+static bool32 IsBatonPassSetupMove(enum BattlerId battler, enum Move move)
+{
+    enum BattleMoveEffects effect = GetMoveEffect(move);
+
+    if (!IsBattleMoveStatus(move) || !IsSelfBoostTargetType(battler, move))
+        return FALSE;
+    if (effect == EFFECT_BELLY_DRUM || effect == EFFECT_STAT_CHANGE_HALF_HP
+     || effect == EFFECT_CLANGOROUS_SOUL || effect == EFFECT_ACUPRESSURE)
+        return FALSE;
+    return GetRawSelfBoostTotal(battler, move) >= BATON_PASS_SETUP_MIN_STAGES;
+}
+
+static bool32 IsBatonPassBooster(enum BattlerId battler)
+{
+    enum Move *moves = GetMovesArray(battler);
+
+    if (!(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_ENCOURAGE_STAT_BOOSTS))
+        return FALSE;
+    if (!HasUsableMoveWithEffect(battler, EFFECT_BATON_PASS) || CountUsablePartyMons(battler) == 0)
+        return FALSE;
+
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE
+         && IsBatonPassSetupMove(battler, moves[moveIndex]))
+            return TRUE;
+    }
+    return FALSE;
+}
+
+// Rolled once per decision so every target pass agrees on whether to Baton Pass.
+static bool32 RollEncourageBatonPass(enum BattlerId battler)
+{
+    s32 net;
+
+    if (!IsBatonPassBooster(battler) || IsBattlerFastKillThreatened(battler))
+        return FALSE;
+    net = GetNetStatStageTotal(battler);
+    if (net <= 0)
+        return FALSE;
+    // Slow-killed: the boosts are lost next turn unless they're passed now.
+    if (CanAnyFoeFaintBattler(battler))
+        return TRUE;
+    if (net >= (s32)ARRAY_COUNT(sEncourageBatonPassChance))
+        net = ARRAY_COUNT(sEncourageBatonPassChance) - 1;
+    if (sEncourageBatonPassChance[net] == 0)
+        return FALSE;
+    if (sEncourageBatonPassChance[net] >= 100)
+        return TRUE;
+    return RandomPercentage(RNG_AI_ENCOURAGE_STAT_BOOSTS_BATON_PASS, sEncourageBatonPassChance[net]);
+}
+
+// TRUE if a live party member other than the ally knows an always-crit move to trigger the ally's Anger Point.
+static bool32 IsAngerPointCritPlanAvailable(enum BattlerId battlerAtk, enum BattlerId ally)
+{
+    struct Pokemon *party = GetBattlerParty(battlerAtk);
+
+    if (gAiLogicData->abilities[ally] != ABILITY_ANGER_POINT
+     || gBattleMons[ally].statStages[STAT_ATK] >= DEFAULT_STAT_STAGE + 4)
+        return FALSE;
+
+    for (u32 monIndex = 0; monIndex < PARTY_SIZE; monIndex++)
+    {
+        if (BattlersShareParty(battlerAtk, ally) && monIndex == gBattlerPartyIndexes[ally])
+            continue;
+        if (!GetMonData(&party[monIndex], MON_DATA_SANITY_HAS_SPECIES)
+         || GetMonData(&party[monIndex], MON_DATA_IS_EGG)
+         || GetMonData(&party[monIndex], MON_DATA_HP) == 0)
+            continue;
+        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+        {
+            enum Move move = GetMonData(&party[monIndex], MON_DATA_MOVE1 + moveIndex);
+            if (move != MOVE_NONE && !IsBattleMoveStatus(move) && MoveAlwaysCrits(move))
+                return TRUE;
+        }
+    }
+    return FALSE;
+}
+
+static bool32 ShouldCritIntoAngerPointAlly(enum BattlerId battlerAtk, enum BattlerId ally, enum Move move)
+{
+    u32 moveIndex = gAiThinkingStruct->movesetIndex;
+    u32 hitsToKOAlly;
+
+    if (IsBattleMoveStatus(move) || !MoveAlwaysCrits(move))
+        return FALSE;
+    if (gAiLogicData->abilities[ally] != ABILITY_ANGER_POINT
+     || DoesBattlerIgnoreAbilityChecks(battlerAtk, gAiLogicData->abilities[battlerAtk], move))
+        return FALSE;
+    if (!HasMoveWithEffect(ally, EFFECT_STORED_POWER)
+     || gBattleMons[ally].statStages[STAT_ATK] >= DEFAULT_STAT_STAGE + 4)
+        return FALSE;
+    if (gAiLogicData->effectiveness[battlerAtk][ally][moveIndex] == UQ_4_12(0.0))
+        return FALSE;
+    // Same friendly-fire tolerance AI_DoubleBattle uses before hitting the ally on purpose.
+    if (CanIndexMoveFaintTarget(battlerAtk, ally, moveIndex, AI_ATTACKING_PARTNER))
+        return FALSE;
+    hitsToKOAlly = GetNoOfHitsToKOBattler(battlerAtk, ally, moveIndex, AI_ATTACKING_PARTNER, CONSIDER_ENDURE);
+    return hitsToKOAlly == 0 || hitsToKOAlly > GetFriendlyFireKOThreshold(battlerAtk);
+}
+
+static bool32 ShouldSimpleBeamAlly(enum BattlerId battlerAtk, enum BattlerId ally, enum Move move)
+{
+    enum Ability allyAbility = gAiLogicData->abilities[ally];
+
+    if (GetMoveEffect(move) != EFFECT_OVERWRITE_ABILITY || GetMoveOverwriteAbility(move) != ABILITY_SIMPLE)
+        return FALSE;
+    if (allyAbility == ABILITY_SIMPLE || allyAbility == ABILITY_CONTRARY)
+        return FALSE;
+    if (!HasMoveWithEffect(ally, EFFECT_STORED_POWER) || !HasSelfStatRaisingMove(ally))
+        return FALSE;
+    if (!CanEffectChangeAbility(battlerAtk, ally, move, gAiLogicData)
+     || DoesPartnerHaveSameMoveEffect(ally, ally, move, gAiLogicData->partnerMove))
+        return FALSE;
+    return !IsAngerPointCritPlanAvailable(battlerAtk, ally);
+}
+
+static s32 EncourageStatBoosts_Ally(enum BattlerId battlerAtk, enum BattlerId ally, enum Move move, s32 score)
+{
+    if (!IsBattlerAlive(ally) || IsAllyProtectingFromMove(battlerAtk, move, gAiLogicData->partnerMove))
+        return score;
+
+    if (ShouldCritIntoAngerPointAlly(battlerAtk, ally, move) || ShouldSimpleBeamAlly(battlerAtk, ally, move))
+    {
+        if (!HasFastKillOnAnyFoe(battlerAtk))
+            ADJUST_SCORE(ENCOURAGE_STAT_BOOSTS_ALLY_FORCE);
+        return score;
+    }
+
+    // Above the base ally Acupressure bonus but still below a fast kill.
+    if (GetMoveEffect(move) == EFFECT_ACUPRESSURE
+     && score >= AI_SCORE_DEFAULT
+     && HasMoveWithEffect(ally, EFFECT_STORED_POWER)
+     && ShouldUseAcupressure(battlerAtk, ally)
+     && score < AI_SCORE_DEFAULT + FAST_KILL)
+        ADJUST_SCORE(AI_SCORE_DEFAULT + FAST_KILL - score);
+
+    return score;
+}
+
+static s32 AI_EncourageStatBoosts(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)
+{
+    enum BattleMoveEffects effect = GetMoveEffect(move);
+    enum MoveTarget targetType = AI_GetBattlerMoveTargetType(battlerAtk, move);
+    enum Stat primaryStat;
+    u32 primaryGain, totalGain;
+    s32 anchor, target;
+
+    if (IsDoubleBattle() && battlerDef == BATTLE_PARTNER(battlerAtk))
+        return EncourageStatBoosts_Ally(battlerAtk, battlerDef, move, score);
+    if (IsBattlerAlly(battlerAtk, battlerDef) || !IsBattlerAlive(battlerDef))
+        return score;
+
+    if (IsBatonPassBooster(battlerAtk) && !IsBattlerFastKillThreatened(battlerAtk))
+    {
+        if (effect == EFFECT_BATON_PASS)
+        {
+            if (gAiLogicData->encourageBatonPass)
+                ADJUST_SCORE(ENCOURAGE_STAT_BOOSTS_BATON_PASS_FORCE);
+            else
+                ADJUST_SCORE(WORST_EFFECT);
+            return score;
+        }
+        if (IsBatonPassSetupMove(battlerAtk, move) && !CanAnyFoeFaintBattler(battlerAtk))
+        {
+            GetSelfBoostGains(battlerAtk, move, STAT_HP, &primaryGain, &totalGain);
+            if (totalGain > 0)
+            {
+                ADJUST_SCORE(ENCOURAGE_STAT_BOOSTS_BP_SETUP_FORCE);
+                return score;
+            }
+        }
+    }
+
+    if (score < AI_SCORE_DEFAULT)
+        return score;
+    if (!IsBattleMoveStatus(move))
+        return score;
+    if (targetType != TARGET_USER && targetType != TARGET_USER_AND_ALLY && targetType != TARGET_USER_OR_ALLY)
+        return score;
+    if (effect == EFFECT_BELLY_DRUM || effect == EFFECT_STAT_CHANGE_HALF_HP
+     || effect == EFFECT_CLANGOROUS_SOUL || effect == EFFECT_ACUPRESSURE)
+        return score;
+
+    primaryStat = GetStoredPowerPrimaryStat(battlerAtk);
+    if (primaryStat == STAT_HP || GetPositiveStatStageTotal(battlerAtk) >= STORED_POWER_MAX_POSITIVE_STAGES)
+        return score;
+    if (CanAnyFoeFaintBattler(battlerAtk))
+        return score;
+
+    GetSelfBoostGains(battlerAtk, move, primaryStat, &primaryGain, &totalGain);
+
+    // 2HKO moves still gain BEST_DAMAGE_MOVE in AI_CompareDamagingMoves; capping at SLOW_KILL keeps every KO on top.
+    anchor = GetTryToPoisonReferenceScore(battlerAtk, battlerDef) + BEST_DAMAGE_MOVE;
+    if (primaryGain >= 2 || (primaryGain >= 1 && totalGain >= 2))
+        target = anchor + 1;
+    else if (totalGain >= 2)
+        target = anchor;
+    else
+        return score;
+
+    if (target > AI_SCORE_DEFAULT + SLOW_KILL)
+        target = AI_SCORE_DEFAULT + SLOW_KILL;
+    if (target > score)
+        ADJUST_SCORE(target - score);
     return score;
 }
 
