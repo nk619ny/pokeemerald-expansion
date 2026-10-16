@@ -4435,6 +4435,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         {
         case ABILITY_ANGULAR_MOMENTUM:
             if (IsAngularAccelerationMove(gCurrentMove)
+             && !gSpecialStatuses[battler].multiHitOn // Only the first strike of a multi-hit move
              && !gBattleStruct->unableToUseMove
              && IsBattlerAlive(battler)
              && IsAnyTargetTurnDamaged(battler, INCLUDING_SUBSTITUTES)

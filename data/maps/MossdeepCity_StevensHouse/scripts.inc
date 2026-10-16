@@ -251,9 +251,9 @@ MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare::
 # 126 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldum::
 # 127 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL
+	//setflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL
 # 128 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
-	setflag FLAG_RECEIVED_BELDUM
+	setflag FLAG_RECEIVED_EON_FLUTE
 # 129 "data/maps/MossdeepCity_StevensHouse/scripts.pory"
 	releaseall
 # 130 "data/maps/MossdeepCity_StevensHouse/scripts.pory"

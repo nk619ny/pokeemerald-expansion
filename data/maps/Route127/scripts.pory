@@ -227,21 +227,21 @@ movement Route127_Movement_SwimmerHaltPlayer5 {
 }
 
 movement Route127_Movement_SwimmerReturnToSpot1 {
-	walk_left
-}
-
-movement Route127_Movement_SwimmerReturnToSpot2 {
 	walk_left * 2
 }
 
-movement Route127_Movement_SwimmerReturnToSpot3 {
+movement Route127_Movement_SwimmerReturnToSpot2 {
 	walk_left * 3
 }
 
-movement Route127_Movement_SwimmerReturnToSpot4 {
+movement Route127_Movement_SwimmerReturnToSpot3 {
 	walk_left * 4
 }
 
-movement Route127_Movement_SwimmerReturnToSpot5 {
+movement Route127_Movement_SwimmerReturnToSpot4 {
 	walk_left * 5
+}
+
+movement Route127_Movement_SwimmerReturnToSpot5 {
+	walk_left * 6
 }

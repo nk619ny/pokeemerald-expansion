@@ -439,6 +439,8 @@ Route127_Movement_SwimmerHaltPlayer5:
 Route127_Movement_SwimmerReturnToSpot1:
 # 230 "data/maps/Route127/scripts.pory"
 	walk_left
+# 230 "data/maps/Route127/scripts.pory"
+	walk_left
 	step_end
 
 # 233 "data/maps/Route127/scripts.pory"
@@ -447,10 +449,14 @@ Route127_Movement_SwimmerReturnToSpot2:
 	walk_left
 # 234 "data/maps/Route127/scripts.pory"
 	walk_left
+# 234 "data/maps/Route127/scripts.pory"
+	walk_left
 	step_end
 
 # 237 "data/maps/Route127/scripts.pory"
 Route127_Movement_SwimmerReturnToSpot3:
+# 238 "data/maps/Route127/scripts.pory"
+	walk_left
 # 238 "data/maps/Route127/scripts.pory"
 	walk_left
 # 238 "data/maps/Route127/scripts.pory"
@@ -469,10 +475,14 @@ Route127_Movement_SwimmerReturnToSpot4:
 	walk_left
 # 242 "data/maps/Route127/scripts.pory"
 	walk_left
+# 242 "data/maps/Route127/scripts.pory"
+	walk_left
 	step_end
 
 # 245 "data/maps/Route127/scripts.pory"
 Route127_Movement_SwimmerReturnToSpot5:
+# 246 "data/maps/Route127/scripts.pory"
+	walk_left
 # 246 "data/maps/Route127/scripts.pory"
 	walk_left
 # 246 "data/maps/Route127/scripts.pory"

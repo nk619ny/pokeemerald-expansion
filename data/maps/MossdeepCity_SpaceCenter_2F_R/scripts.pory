@@ -93,6 +93,7 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuro {
 }
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence1 {
+            lock
             msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroAreYouInterested,MSGBOX_YESNO)
             if(var(VAR_RESULT) == YES) {
                 msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroProveYourself,MSGBOX_YESNO)
@@ -117,6 +118,7 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroBattle {
 }
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence2 {
+    lock
     setvar(VAR_TURO_STATE,2)
     msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroDoYouHaveFuturePokemon,MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES) {
@@ -132,6 +134,7 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence2 {
 }
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence3 {
+    lock
     if (flag(FLAG_IS_CHAMPION) == TRUE) {
         setvar(VAR_TURO_STATE,4)
         goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence4)
@@ -160,6 +163,7 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence4 {
 }
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorTuroSequence5 {
+    lock
     setvar(VAR_TURO_STATE,5)
     msgbox(MossdeepCity_SpaceCenter_2F_R_Text_TuroDoYouHaveFuturePokemon,MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES) {
@@ -389,6 +393,7 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaBattle {
 }
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2 {
+    lockall
     setvar(VAR_SADA_STATE, 2)
     msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon, MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
@@ -402,6 +407,7 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence2 {
 }
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence3 {
+    lockall
     if (flag(FLAG_IS_CHAMPION) == TRUE) {
         setvar(VAR_SADA_STATE, 4)
         goto(MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4)
@@ -428,6 +434,7 @@ script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence4 {
 }
 
 script MossdeepCity_SpaceCenter_2F_R_EventScript_ProfessorSadaSequence5 {
+    lockall
     setvar(VAR_SADA_STATE, 5)
     msgbox(MossdeepCity_SpaceCenter_2F_R_Text_SadaDoYouHavePastPokemon, MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
@@ -601,7 +608,8 @@ text MossdeepCity_SpaceCenter_2F_R_Text_SadaComeBackChangedMind {
 
 
 script MossdeepCity_SpaceCenter_2F_R_NewFossilScript{
-	if(checkitem(ITEM_OLD_AMBER) == TRUE) {dynmultipush("Old Amber",0)}
+	lockall
+    if(checkitem(ITEM_OLD_AMBER) == TRUE) {dynmultipush("Old Amber",0)}
 	if(checkitem(ITEM_HELIX_FOSSIL) == TRUE) {dynmultipush("Helix Fossil",1)}
 	if(checkitem(ITEM_DOME_FOSSIL) == TRUE) {dynmultipush("Dome Fossil",2)}
 	if(checkitem(ITEM_ROOT_FOSSIL) == TRUE) {dynmultipush("Root Fossil",3)}
@@ -736,6 +744,7 @@ script MossdeepCity_SpaceCenter_2F_R_NewFossilScript{
 }
 
 script MossdeepCity_SpaceCenter_2F_R_DeclinedFossilScript{
+    lockall
     msgbox(format("If you do come across any Pokémon fossils, please bring them to us!\pI would love a chance to put our new technology to work."))
     waitmessage
     releaseall

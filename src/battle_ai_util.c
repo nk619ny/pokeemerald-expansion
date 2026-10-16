@@ -3942,9 +3942,13 @@ bool32 ShouldSetScreen(enum BattlerId battlerAtk, enum BattlerId battlerDef, enu
 {
     enum BattleSide atkSide = GetBattlerSide(battlerAtk);
 
-    // Don't waste a turn if screens will be broken
-    if (HasMoveWithAIEffect(battlerDef, AI_EFFECT_BREAK_SCREENS))
-        return FALSE;
+    // Don't waste a turn if screens will be broken; check every live foe, since this runs once per target.
+    enum BattlerId foes[2] = { LEFT_FOE(battlerAtk), RIGHT_FOE(battlerAtk) };
+    for (u32 i = 0; i < ARRAY_COUNT(foes); i++)
+    {
+        if (IsBattlerAlive(foes[i]) && HasMoveWithAIEffect(foes[i], AI_EFFECT_BREAK_SCREENS))
+            return FALSE;
+    }
 
     switch (moveEffect)
     {

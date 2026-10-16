@@ -565,7 +565,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Grimmsnarl (M)  
 Ability: Prankster  
-Level: 65
+Level: 69
 - Fake Tears  
 - Scary Face  
 - False Surrender  
@@ -573,7 +573,7 @@ Level: 65
 
 Rapidash-Galar  
 Ability: Telepathy  
-Level: 65
+Level: 67
 EVs: 56 Def / 252 SpA / 200 Spe  
 Hasty Nature  
 - Dazzling Gleam  
@@ -583,7 +583,7 @@ Hasty Nature
 
 Clefable  
 Ability: Cute Charm  
-Level: 65
+Level: 69
 IVs: 0 Atk  
 - Psychic  
 - Ice Beam  
@@ -592,7 +592,7 @@ IVs: 0 Atk
 
 Musharna  
 Ability: Synchronize  
-Level: 65
+Level: 69
 IVs: 0 Atk  
 - Dazzling Gleam  
 - Energy Ball  
@@ -1781,7 +1781,7 @@ IVs: 0 Atk
 === TRAINER_MATT === /* Aqua Hideout */
 Name: MATT
 Class: Aqua Admin
-Pic: Matt ORAS
+Pic: Matt ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -1877,7 +1877,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Polteageist @ Starf Berry  
-Level: 65
+Level: 68
 Ability: Weak Armor  
 Tera Type: Ghost  
 IVs: 0 Atk  
@@ -1888,7 +1888,7 @@ IVs: 0 Atk
 
 Honchkrow @ Lansat Berry
 Ability: Super Luck  
-Level: 65
+Level: 68
 Tera Type: Dark  
 - Acrobatics
 - Night Slash  
@@ -1897,7 +1897,7 @@ Tera Type: Dark
 
 Meowscarada  
 Ability: Overgrow  
-Level: 65
+Level: 68
 Tera Type: Grass  
 - Flower Trick  
 - Lash Out  
@@ -1906,7 +1906,7 @@ Tera Type: Grass
 
 Pyroar  
 Ability: Unnerve  
-Level: 65
+Level: 68
 Tera Type: Fire  
 IVs: 0 Atk  
 - Flamethrower  
@@ -2700,7 +2700,7 @@ IVs: 0 Atk
 === TRAINER_AQUA_ADMIN_RUSTURF === /* Rusturf Tunnel */
 Name: MATT
 Class: Aqua Admin
-Pic: Matt ORAS
+Pic: Matt ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -3094,7 +3094,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_LOLA_1 === /* Route 109 */
 Name: LOLA
 Class: Tuber F
-Pic: Tuber F
+Pic: Tuber F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -3134,7 +3134,7 @@ Tera Type: Bug
 === TRAINER_AUSTINA === /* Route 109 */
 Name: AUSTINA
 Class: Tuber F
-Pic: Tuber F
+Pic: Tuber F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -3181,7 +3181,7 @@ IVs: 0 Atk
 === TRAINER_GWEN === /* Route 109 */
 Name: GWEN
 Class: Tuber F
-Pic: Tuber F
+Pic: Tuber F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -6830,7 +6830,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Marowak @ Thick Club
 Ability: Rock Head  
-Level: 67
+Level: 69
 Tera Type: Ground  
 - Perish Song  
 - Bonemerang
@@ -6839,7 +6839,7 @@ Tera Type: Ground
 
 Snorlax  
 Ability: Immunity  
-Level: 67
+Level: 69
 - Block  
 - Heavy Slam  
 - Body Slam  
@@ -6847,7 +6847,7 @@ Level: 67
 
 Haxorus  
 Ability: Unnerve  
-Level: 67
+Level: 68
 - Glaive Rush  
 - Dragon Dance  
 - First Impression  
@@ -6856,7 +6856,7 @@ Level: 67
 Ampharos  
 Ability: Static  
 Tera Type: Electric  
-Level: 67
+Level: 69
 IVs: 0 Atk  
 - Dragon Pulse  
 - Power Gem  
@@ -8358,7 +8358,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Medicham  
 Ability: Pure Power  
-Level: 63
+Level: 68
 EVs: 252 SpA
 IVs: 0 Atk  
 - Skill Swap  
@@ -8368,7 +8368,7 @@ IVs: 0 Atk
 
 Kommo-o  
 Ability: Bulletproof  
-Level: 63
+Level: 68
 - Aura Sphere  
 - Clanging Scales  
 - Drain Punch  
@@ -8376,7 +8376,7 @@ Level: 63
 
 Mienshao @ White Herb  
 Ability: Inner Focus  
-Level: 63
+Level: 68
 - Acrobatics  
 - Close Combat  
 - Blaze Kick  
@@ -8384,7 +8384,7 @@ Level: 63
 
 Slowbro-Galar  
 Ability: Quick Draw  
-Level: 63
+Level: 68
 - Shell Side Arm  
 - Body Press  
 - Future Sight  
@@ -13726,7 +13726,7 @@ IVs: 0 Atk
 === TRAINER_CALVIN_1 === /* Route 102 */
 Name: CALVIN
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -13759,7 +13759,7 @@ Level: 10
 === TRAINER_BILLY === /* Route 104 */
 Name: BILLY
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -14064,7 +14064,7 @@ Adamant Nature
 === TRAINER_JAYLEN === /* Route 113 */
 Name: JAYLEN
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -14117,7 +14117,7 @@ Tera Type: Electric
 === TRAINER_DILLON === /* Route 113 */
 Name: DILLON
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -14166,7 +14166,7 @@ Tera Type: Dark
 === TRAINER_CALVIN_2 === /* Route */
 Name: CALVIN
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -14179,7 +14179,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_CALVIN_3 === /* Route */
 Name: CALVIN
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -14196,7 +14196,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_CALVIN_4 === /* Route */
 Name: CALVIN
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -14217,7 +14217,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_CALVIN_5 === /* Route */
 Name: CALVIN
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -14238,7 +14238,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_EDDIE === /* Trick House 1 */ 
 Name: EDDIE
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -14334,7 +14334,7 @@ EVs: 128 SpA
 === TRAINER_TIMMY === /* Route 110 */
 Name: TIMMY
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15068,7 +15068,7 @@ IVs: 0 Atk
 === TRAINER_JACOB === /* Route 110 CR */ 
 Name: JACOB
 Class: Triathlete
-Pic: Cycling Triathlete M
+Pic: Triathlete M Biker ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15115,7 +15115,7 @@ Tera Type: Normal
 === TRAINER_ANTHONY === /* Route 110 CR */
 Name: ANTHONY
 Class: Triathlete
-Pic: Cycling Triathlete M
+Pic: Triathlete M Biker ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15163,7 +15163,7 @@ Tera Type: Grass
 === TRAINER_BENJAMIN_1 === /* Route 110 CR */ 
 Name: BENJAMIN
 Class: Triathlete
-Pic: Cycling Triathlete M
+Pic: Triathlete M Biker ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15201,7 +15201,7 @@ Hasty Nature
 === TRAINER_BENJAMIN_2 === /* Route */
 Name: BENJAMIN
 Class: Triathlete
-Pic: Cycling Triathlete M
+Pic: Triathlete M Biker ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15214,7 +15214,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_BENJAMIN_3 === /* Route */
 Name: BENJAMIN
 Class: Triathlete
-Pic: Cycling Triathlete M
+Pic: Triathlete M Biker ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15227,7 +15227,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_BENJAMIN_4 === /* Route */
 Name: BENJAMIN
 Class: Triathlete
-Pic: Cycling Triathlete M
+Pic: Triathlete M Biker ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15240,7 +15240,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_BENJAMIN_5 === /* Route */
 Name: BENJAMIN
 Class: Triathlete
-Pic: Cycling Triathlete M
+Pic: Triathlete M Biker ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15386,7 +15386,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_DYLAN_1 === /* Route 117 */ /* Scripted Item*/
 Name: DYLAN
 Class: Triathlete
-Pic: Running Triathlete M
+Pic: Triathlete M Runner ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15433,7 +15433,7 @@ Tera Type: Normal
 === TRAINER_DYLAN_2 === /* Route */
 Name: DYLAN
 Class: Triathlete
-Pic: Running Triathlete M
+Pic: Triathlete M Runner ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15446,7 +15446,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_DYLAN_3 === /* Route */
 Name: DYLAN
 Class: Triathlete
-Pic: Running Triathlete M
+Pic: Triathlete M Runner ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15459,7 +15459,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_DYLAN_4 === /* Route */
 Name: DYLAN
 Class: Triathlete
-Pic: Running Triathlete M
+Pic: Triathlete M Runner ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15472,7 +15472,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_DYLAN_5 === /* Route */
 Name: DYLAN
 Class: Triathlete
-Pic: Running Triathlete M
+Pic: Triathlete M Runner ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15600,7 +15600,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_DEMETRIUS === /* Abandoned Ship */
 Name: DEMETRIUS
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -15648,7 +15648,7 @@ Level: 51
 === TRAINER_ISAIAH_1 === /* Route 129 */
 Name: ISAIAH
 Class: Triathlete
-Pic: Swimming Triathlete M
+Pic: Triathlete M Swimmer ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -15694,7 +15694,7 @@ Tera Type: Water
 === TRAINER_PABLO_1 === /* Route 126 */ /* TO BE ADDED */
 Name: PABLO
 Class: Triathlete
-Pic: Swimming Triathlete M
+Pic: Triathlete M Swimmer ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -15711,7 +15711,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_CHASE === /* Route 129 */ /* TO BE ADDED */
 Name: CHASE
 Class: Triathlete
-Pic: Swimming Triathlete M
+Pic: Triathlete M Swimmer ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -15728,7 +15728,7 @@ IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 === TRAINER_ISAIAH_2 === /* Route */
 Name: ISAIAH
 Class: Triathlete
-Pic: Swimming Triathlete M
+Pic: Triathlete M Swimmer ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -15741,7 +15741,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_ISAIAH_3 === /* Route */
 Name: ISAIAH
 Class: Triathlete
-Pic: Swimming Triathlete M
+Pic: Triathlete M Swimmer ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -15754,7 +15754,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_ISAIAH_4 === /* Route */
 Name: ISAIAH
 Class: Triathlete
-Pic: Swimming Triathlete M
+Pic: Triathlete M Swimmer ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -15767,7 +15767,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ISAIAH_5 === /* Route */
 Name: ISAIAH
 Class: Triathlete
-Pic: Swimming Triathlete M
+Pic: Triathlete M Swimmer ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -16934,7 +16934,7 @@ IVs: 0 Atk / 0 Spe
 === TRAINER_JANI === /* Abandoned Ship */ 
 Name: JANI
 Class: Tuber F
-Pic: Tuber F
+Pic: Tuber F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -19099,7 +19099,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_AMY_AND_LIV_1 === /* Route 103 East */ 
 Name: AMY & LIV
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -19137,7 +19137,7 @@ IVs: 0 Atk
 === TRAINER_AMY_AND_LIV_2 === /* Route */
 Name: AMY & LIV
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -19154,7 +19154,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 === TRAINER_GINA_AND_MIA_1 === /* Route 104 North */
 Name: GINA & MIA
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -19202,7 +19202,7 @@ Modest Nature
 === TRAINER_MIU_AND_YUKI === /* Route 123 */ /* TO BE ADDED */
 Name: MIU & YUKI
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -19219,7 +19219,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_AMY_AND_LIV_3 === /* Route */
 Name: AMY & LIV
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -19236,7 +19236,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GINA_AND_MIA_2 === /* Route */
 Name: GINA & MIA
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -19257,7 +19257,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_AMY_AND_LIV_4 === /* Route */
 Name: AMY & LIV
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -19274,7 +19274,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_AMY_AND_LIV_5 === /* Route */
 Name: AMY & LIV
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -19299,7 +19299,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_AMY_AND_LIV_6 === /* Route 103 */
 Name: AMY & LIV
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -22646,7 +22646,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 === TRAINER_JULIO === /* Jagged Pass */
 Name: JULIO
 Class: Triathlete
-Pic: Cycling Triathlete M
+Pic: Triathlete M Biker ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -25767,7 +25767,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_DEZ_AND_LUKE === /* Mt. Pyre 2F */ 
 Name: DEZ & LUKE
 Class: Young Couple
-Pic: Young Couple
+Pic: Young Couple ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -25775,7 +25775,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Gardevoir (F) @ Fairy Feather  
 Ability: Trace  
-Level: 63
+Level: 68
 IVs: 0 Atk  
 - Draining Kiss  
 - Future Sight  
@@ -25784,7 +25784,7 @@ IVs: 0 Atk
 
 Gallade (M) @ Kasib Berry  
 Ability: Steadfast  
-Level: 63
+Level: 68
 - Sacred Sword  
 - Psycho Cut  
 - Captivate  
@@ -25792,7 +25792,7 @@ Level: 63
 
 Alomomola  
 Ability: Healer  
-Level: 59
+Level: 66
 EVs: 252 HP / 252 SpA  
 Modest Nature  
 - Alluring Voice  
@@ -25802,7 +25802,7 @@ Modest Nature
 
 Maushold @ Loaded Dice  
 Ability: Technician  
-Level: 60
+Level: 67
 EVs: 252 Spe
 Jolly Nature
 - After You  
@@ -25814,7 +25814,7 @@ Jolly Nature
 === TRAINER_LEA_AND_JED === /* S.S. Tidal */ /* TO BE ADDED */
 Name: LEA & JED
 Class: Young Couple
-Pic: Young Couple
+Pic: Young Couple ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -25831,7 +25831,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_KIRA_AND_DAN_1 === /* Abandoned Ship */ 
 Name: KIRA & DAN
 Class: Young Couple
-Pic: Young Couple
+Pic: Young Couple ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -25876,7 +25876,7 @@ Level: 50
 === TRAINER_KIRA_AND_DAN_2 === /* Route */
 Name: KIRA & DAN
 Class: Young Couple
-Pic: Young Couple
+Pic: Young Couple ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -25921,7 +25921,7 @@ Level: 50
 === TRAINER_KIRA_AND_DAN_3 === /* Route */
 Name: KIRA & DAN
 Class: Young Couple
-Pic: Young Couple
+Pic: Young Couple ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -25938,7 +25938,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 === TRAINER_KIRA_AND_DAN_4 === /* Route */
 Name: KIRA & DAN
 Class: Young Couple
-Pic: Young Couple
+Pic: Young Couple ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -25955,7 +25955,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_KIRA_AND_DAN_5 === /* Route */
 Name: KIRA & DAN
 Class: Young Couple
-Pic: Young Couple
+Pic: Young Couple ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -27458,7 +27458,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_TORI_AND_TIA === /* Route 113 */
 Name: TORI & TIA
 Class: Twins
-Pic: Twins
+Pic: Twins ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -27563,7 +27563,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_MEL_AND_PAUL === /* Route 109 */
 Name: MEL & PAUL
 Class: Young Couple
-Pic: Young Couple
+Pic: Young Couple ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
@@ -28122,7 +28122,7 @@ IVs: 0 Atk
 === TRAINER_HAILEY === /* Route 109 */
 Name: HAILEY
 Class: Tuber F
-Pic: Tuber F
+Pic: Tuber F ORAS 80
 Gender: Female
 Music: Girl
 Double Battle: Yes
@@ -29009,7 +29009,7 @@ IVs: 0 Atk
 === TRAINER_DEANDRE === /* Route 118 */ /* Back to Back with Rose */
 Name: DEANDRE
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -29940,7 +29940,7 @@ Tera Type: Flying
 === TRAINER_CAMRON === /* Route 107 */ 
 Name: CAMRON
 Class: Triathlete
-Pic: Swimming Triathlete M
+Pic: Triathlete M Swimmer ORAS 80
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
@@ -30634,7 +30634,7 @@ Tera Type: Normal
 === TRAINER_JOHNSON === /* Route 116 */  /* to be added - - duplicate*/
 Name: JOHNSON
 Class: Youngster
-Pic: Youngster
+Pic: Youngster ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
