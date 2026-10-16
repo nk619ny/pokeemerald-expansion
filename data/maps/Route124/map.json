@@ -43,13 +43,13 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
       "x": 16,
-      "y": 8,
+      "y": 7,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route124_EventScript_Spencer",
       "flag": "0"
     },
@@ -69,13 +69,13 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
       "x": 64,
-      "y": 7,
+      "y": 6,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_sight_or_berry_tree_id": "6",
       "script": "Route124_EventScript_Jenny",
       "flag": "0"
     },
@@ -93,6 +93,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_124_CHAD",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
       "x": 77,
       "y": 59,

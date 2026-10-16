@@ -350,7 +350,7 @@ Route127_EventScript_HaltPlayer_11:
 
 Route127_EventScript_HaltPlayer_14:
 # 183 "data/maps/Route127/scripts.pory"
-	delay 5
+	applymovement LOCALID_ROUTE127_SWIMMERBLOCK, Common_Movement_WalkLeftOneStep
 	goto Route127_EventScript_HaltPlayer_12
 
 Route127_EventScript_HaltPlayer_15:

@@ -87,11 +87,11 @@ Route125_EventScript_Sharon::
 # 44 "data/maps/Route125/scripts.pory"
 Route125_EventScript_Ernest::
 # 45 "data/maps/Route125/scripts.pory"
-	trainerbattle_single TRAINER_ERNEST_1, Route125_Text_ErnestIntro, Route125_Text_ErnestDefeat, Route125_EventScript_RegisterErnest
+	trainerbattle_single TRAINER_ERNEST_1, Route125_Text_ErnestIntro, Route125_Text_ErnestDefeat
 # 46 "data/maps/Route125/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 47 "data/maps/Route125/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route125_EventScript_RematchErnest
+	//goto_if_eq VAR_RESULT, TRUE, Route125_EventScript_RematchErnest
 # 48 "data/maps/Route125/scripts.pory"
 	msgbox Route125_Text_ErnestPostBattle, MSGBOX_DEFAULT
 # 49 "data/maps/Route125/scripts.pory"

@@ -180,7 +180,7 @@ script Route127_EventScript_HaltPlayer {
 	delay(20)
 	switch(var(TempVar_TriggerSquare)){
 		case 0:
-			delay(5)
+			applymovement(LOCALID_ROUTE127_SWIMMERBLOCK, Common_Movement_WalkLeftOneStep)
 		case 1:
 			applymovement(LOCALID_ROUTE127_SWIMMERBLOCK, Route127_Movement_SwimmerReturnToSpot1)
 		case 2:

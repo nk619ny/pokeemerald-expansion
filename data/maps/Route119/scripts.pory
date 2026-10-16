@@ -682,3 +682,19 @@ script Route119_EventScript_GregTryGiveVitamin{
 	end
 }
 
+
+script Route119_EventScript_AcrobaticsGirl {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_ACROBATICS)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I've been trying to emulate Winona's grace through my own acrobatics training.\pYou should try teaching your Pokémon some acrobatics too!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_ACROBATICS)
+		waitfanfare
+	}
+	msgbox(format("The way Winona moves is really a marvel to watch."), MSGBOX_DEFAULT)
+	closemessage
+	releaseall
+	end
+}

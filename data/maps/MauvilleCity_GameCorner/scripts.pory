@@ -927,7 +927,7 @@ script MauvilleCity_GameCorner_EventScript_ExchangeCoinsForPrizes {
 		case 6:
 			goto(MauvilleCity_GameCorner_EventScript_BuyGems)
 		default:
-			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			goto(MauvilleCity_GameCorner_EventScript_ComeBackLaterNoCoinBoxToHide)
 	}
 	closemessage
 	releaseall
@@ -2578,6 +2578,15 @@ script MauvilleCity_GameCorner_EventScript_ComeBackLater {
 	return
 }
 
+script MauvilleCity_GameCorner_EventScript_ComeBackLaterNoCoinBoxToHide {
+	lock
+	closemessage
+	msgbox(format("Please come back to exchange your coins for more prizes!"))
+	waitmessage
+	releaseall
+	return
+}
+
 script MauvilleCity_GameCorner_EventScript_BuyVitamins {
 	lock
 	dynmultipush("HP Up        250 coins",ITEM_HP_UP)
@@ -2708,7 +2717,7 @@ script MauvilleCity_GameCorner_EventScript_BuyPokemon {
 		case 1:
 			goto(MauvilleCity_GameCorner_EventScript_BuyPrizePokemon)
 		default:
-			goto(MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			goto(MauvilleCity_GameCorner_EventScript_ComeBackLaterNoCoinBoxToHide)
 	}
 	closemessage
 	releaseall

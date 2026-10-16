@@ -1347,6 +1347,37 @@ Route119_EventScript_GregTryGiveVitamin_9:
 	goto Route119_EventScript_GregTryGiveVitamin_8
 
 
+Route119_EventScript_AcrobaticsGirl::
+# 687 "data/maps/Route119/scripts.pory"
+	lock
+# 688 "data/maps/Route119/scripts.pory"
+	faceplayer
+# 689 "data/maps/Route119/scripts.pory"
+	checkitem ITEM_TM_ACROBATICS
+# 690 "data/maps/Route119/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route119_EventScript_AcrobaticsGirl_2
+Route119_EventScript_AcrobaticsGirl_1:
+# 696 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_AcrobaticsGirl_Text_1, MSGBOX_DEFAULT
+# 697 "data/maps/Route119/scripts.pory"
+	closemessage
+# 698 "data/maps/Route119/scripts.pory"
+	releaseall
+	end
+
+Route119_EventScript_AcrobaticsGirl_2:
+# 691 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_AcrobaticsGirl_Text_0, MSGBOX_DEFAULT
+# 692 "data/maps/Route119/scripts.pory"
+	closemessage
+# 693 "data/maps/Route119/scripts.pory"
+	giveitem ITEM_TM_ACROBATICS
+# 694 "data/maps/Route119/scripts.pory"
+	waitfanfare
+	goto Route119_EventScript_AcrobaticsGirl_1
+
+
 Route119_EventScript_DualWingbeatKeeper_Text_0:
 # 625 "data/maps/Route119/scripts.pory"
 	.string "When your opponents are expecting a\n"
@@ -1389,3 +1420,16 @@ Route119_EventScript_GregTryGiveVitamin_Text_2:
 	.string "prize.\p"
 	.string "You can come back for it later - unless\n"
 	.string "someone else comes to claim it first!$"
+
+Route119_EventScript_AcrobaticsGirl_Text_0:
+# 691 "data/maps/Route119/scripts.pory"
+	.string "I've been trying to emulate Winona's\n"
+	.string "grace through my own acrobatics\l"
+	.string "training.\p"
+	.string "You should try teaching your Pokémon\n"
+	.string "some acrobatics too!$"
+
+Route119_EventScript_AcrobaticsGirl_Text_1:
+# 696 "data/maps/Route119/scripts.pory"
+	.string "The way Winona moves is really a marvel\n"
+	.string "to watch.$"

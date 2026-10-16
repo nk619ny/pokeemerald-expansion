@@ -2399,7 +2399,7 @@ Tera Type: Grass
 === TRAINER_AQUA_ADMIN_FARM === /* Slateport Farm */
 Name: MATT
 Class: Aqua Admin
-Pic: MATT ORAS
+Pic: MATT ORAS 80
 Gender: Male
 Music: Aqua
 AI: Smart Trainer  / Try To 2HKO / Double Battle / HP Aware
@@ -2468,7 +2468,7 @@ IVs: 0 Atk
 === TRAINER_AQUA_MULTI_GRUNT_FARM === /* Slateport Farm */
 Name: GRUNT
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -15834,7 +15834,7 @@ EVs: 252 Atk / 252 Spe
 
 
 
-=== TRAINER_TALIA === /* Route 131 */ /* TO BE ADDED */
+=== TRAINER_TALIA === /* Route 131 */ 
 Name: TALIA
 Class: Triathlete
 Pic: Swimming Triathlete F
@@ -15843,9 +15843,41 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Staryu
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Avalugg  
+Ability: Sturdy  
+Level: 77
+- Mountain Gale  
+- Body Press  
+- Mirror Coat  
+- High Horsepower  
+
+Araquanid @ Light Clay  
+Ability: Water Bubble  
+Level: 77
+- Leech Life  
+- Liquidation  
+- Sticky Web  
+- Reflect  
+
+Hydreigon @ Roseli Berry  
+Ability: Levitate  
+Level: 76
+IVs: 0 Atk  
+- Dark Pulse  
+- Dragon Pulse  
+- Flamethrower  
+- Flash Cannon  
+
+Pyukumuku @ Sitrus Berry  
+Ability: Innards Out  
+Level: 77
+EVs: 252 HP / 128 Def / 128 SpD  
+Sassy Nature  
+IVs: 0 Atk  
+- Bide  
+- Toxic  
+- Pain Split  
+- Memento  
 
 === TRAINER_KATELYN_1 === /* Underwater 128 */ 
 Name: KATELYN
@@ -18167,7 +18199,7 @@ Level: 70
 - Giga Drain  
 - Corrosive Gas
 
-=== TRAINER_SHARON === /* Route 125 */ /* TO BE ADDED */
+=== TRAINER_SHARON === /* Route 125 */ 
 Name: SHARON
 Class: Swimmer F
 Pic: Swimmer F ORAS 80
@@ -18176,9 +18208,41 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Seaking
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lumineon @ Damp Rock  
+Ability: Swift Swim  
+Level: 70
+IVs: 0 Atk  
+- Rain Dance  
+- Air Slash  
+- Blizzard  
+- Hydro Pump  
+
+Swanna @ Wacan Berry  
+Ability: Hydration  
+Level: 70
+IVs: 0 Atk  
+- Roost  
+- Rain Dance  
+- Hurricane  
+- Hydro Pump  
+
+Poliwrath @ Sitrus Berry  
+Ability: Swift Swim  
+Level: 70
+EVs: 252 Spe  
+- Surging Strikes  
+- Close Combat  
+- Belly Drum  
+- Poison Jab  
+
+Floatzel  
+Ability: Swift Swim  
+Level: 70
+Jolly Nature  
+- Waterfall  
+- Flip Turn  
+- Ice Spinner  
+- Pursuit  
 
 === TRAINER_NIKKI === /* Underwater */
 Name: NIKKI
@@ -23268,7 +23332,7 @@ IVs: 0 Atk
 
 Clefable @ Leftovers  
 Ability: Unaware  
-Level: 64
+Level: 63
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
@@ -23279,7 +23343,7 @@ IVs: 0 Atk
 
 Gardevoir @ Focus Band
 Ability: Telepathy  
-Level: 64
+Level: 63
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
