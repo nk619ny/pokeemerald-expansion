@@ -1943,6 +1943,7 @@ void SetMultiuseSpriteTemplateToTrainerFront(enum TrainerPicID trainerPicId, enu
     {
         // 80x80 front pics use a dedicated non-animated template rendered via subsprites.
         gMultiuseSpriteTemplate = *GetTrainerFront80x80SpriteTemplate();
+        gMultiuseSpriteTemplate.images = GetTrainerFront80x80FrameImage(battlerPosition);
         gMultiuseSpriteTemplate.paletteTag = GetTrainerPicTag(trainerPicId, TRUE);
         return;
     }

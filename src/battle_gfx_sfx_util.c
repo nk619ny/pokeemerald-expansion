@@ -736,8 +736,12 @@ static const struct TrainerPic80x80Section sTrainerPic80x80Sections[] =
     { 4, 8, 4, 2 }, // F: 32x16
 };
 
+STATIC_ASSERT(MON_PIC_SIZE * MAX_MON_PIC_FRAMES >= TRAINER_PIC_80x80_TILE_COUNT * TILE_SIZE_4BPP, TrainerPic80x80FitsInBattlerGfx);
+
+// Decompression scratch only; arranged tiles go to the per-position spritesGfx buffer
+// so two trainers queued for VRAM copy in the same frame don't share source data.
 static EWRAM_DATA u8 *sTrainerFront80x80Buffer = NULL;
-static EWRAM_DATA struct SpriteFrameImage sTrainerFront80x80FrameImage = {0};
+static EWRAM_DATA struct SpriteFrameImage sTrainerFront80x80FrameImages[MAX_BATTLERS_COUNT] = {0};
 
 static const struct OamData sOamData_TrainerFront80x80 =
 {
@@ -770,7 +774,7 @@ static const struct SpriteTemplate sTrainerFront80x80SpriteTemplate =
     .paletteTag = TAG_NONE,
     .oam = &sOamData_TrainerFront80x80,
     .anims = sAnims_TrainerFront80x80,
-    .images = &sTrainerFront80x80FrameImage,
+    .images = NULL, // set per battler position by SetMultiuseSpriteTemplateToTrainerFront
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallbackDummy,
 };
@@ -828,16 +832,19 @@ const struct SubspriteTable *GetTrainerFront80x80SubspriteTable(void)
     return sSubspriteTable_TrainerFront80x80;
 }
 
+const struct SpriteFrameImage *GetTrainerFront80x80FrameImage(enum BattlerPosition position)
+{
+    return &sTrainerFront80x80FrameImages[position];
+}
+
 void DecompressTrainerFrontPic(enum TrainerPicID trainerPicId, enum BattlerId battler)
 {
     enum BattlerPosition position = GetBattlerPosition(battler);
 
     if (IsTrainerFrontPic80x80(trainerPicId))
     {
-        // Decompress into the battler's scratch gfx buffer (large enough for the
-        // 100 tiles), then rearrange it into the dedicated 80x80 sprite buffer.
-        DecompressDataWithHeaderWram(GetTrainerFrontPicData(trainerPicId), gMonSpritesGfxPtr->spritesGfx[position]);
-        BuildTrainerFront80x80Gfx(gMonSpritesGfxPtr->spritesGfx[position], sTrainerFront80x80Buffer);
+        DecompressDataWithHeaderWram(GetTrainerFrontPicData(trainerPicId), sTrainerFront80x80Buffer);
+        BuildTrainerFront80x80Gfx(sTrainerFront80x80Buffer, gMonSpritesGfxPtr->spritesGfx[position]);
     }
     else
     {
@@ -1571,10 +1578,13 @@ void AllocateMonSpritesGfx(void)
 
     gMonSpritesGfxPtr->barFontGfx = AllocZeroed(0x1000);
 
-    // Dedicated buffer for 80x80 trainer front pics (see DecompressTrainerFrontPic).
     sTrainerFront80x80Buffer = AllocZeroed(TRAINER_PIC_80x80_TILE_COUNT * TILE_SIZE_4BPP);
-    sTrainerFront80x80FrameImage.data = sTrainerFront80x80Buffer;
-    sTrainerFront80x80FrameImage.size = TRAINER_PIC_80x80_TILE_COUNT * TILE_SIZE_4BPP;
+    for (u32 i = 0; i < MAX_BATTLERS_COUNT; i++)
+    {
+        sTrainerFront80x80FrameImages[i].data = gMonSpritesGfxPtr->spritesGfx[i];
+        sTrainerFront80x80FrameImages[i].size = TRAINER_PIC_80x80_TILE_COUNT * TILE_SIZE_4BPP;
+        sTrainerFront80x80FrameImages[i].relativeFrames = FALSE;
+    }
 }
 
 void FreeMonSpritesGfx(void)
@@ -1585,8 +1595,11 @@ void FreeMonSpritesGfx(void)
     TRY_FREE_AND_SET_NULL(gMonSpritesGfxPtr->buffer);
     FREE_AND_SET_NULL(gMonSpritesGfxPtr->barFontGfx);
     FREE_AND_SET_NULL(gMonSpritesGfxPtr->firstDecompressed);
-    sTrainerFront80x80FrameImage.data = NULL;
-    sTrainerFront80x80FrameImage.size = 0;
+    for (u32 i = 0; i < MAX_BATTLERS_COUNT; i++)
+    {
+        sTrainerFront80x80FrameImages[i].data = NULL;
+        sTrainerFront80x80FrameImages[i].size = 0;
+    }
     TRY_FREE_AND_SET_NULL(sTrainerFront80x80Buffer);
     gMonSpritesGfxPtr->spritesGfx[B_POSITION_PLAYER_LEFT] = NULL;
     gMonSpritesGfxPtr->spritesGfx[B_POSITION_OPPONENT_LEFT] = NULL;

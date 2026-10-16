@@ -19,6 +19,7 @@ void FreeTrainerFrontPicPalette(enum TrainerPicID trainerPicId);
 bool32 IsTrainerFrontPic80x80(enum TrainerPicID trainerPicId);
 const struct SpriteTemplate *GetTrainerFront80x80SpriteTemplate(void);
 const struct SubspriteTable *GetTrainerFront80x80SubspriteTable(void);
+const struct SpriteFrameImage *GetTrainerFront80x80FrameImage(enum BattlerPosition position);
 bool8 BattleLoadAllHealthBoxesGfx(u8 state);
 void LoadBattleBarGfx(u8 unused);
 bool8 BattleInitAllSprites(u8 *state1, u8 *battler);
