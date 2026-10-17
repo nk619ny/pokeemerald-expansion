@@ -553,7 +553,10 @@ struct PartyState
     u32 changedSpecies:11; // For forms when multiple mons can change into the same Pokémon.
     u32 sentOut:1;
     u32 isKnockedOff:1;
-    u32 padding:8;
+    // How the mon's pre-battle held item was last lost, used to decide whether to restore it after battle
+    u32 originalItemTaken:1;    // Removed by another battler (Knock Off, Trick, Thief, Corrosive Gas, Pluck...): restored
+    u32 originalItemConsumed:1; // Used up by the holder (berries, Focus Sash, popped Air Balloon...): not restored
+    u32 padding:6;
     u16 usedHeldItem;
 };
 

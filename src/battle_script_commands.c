@@ -2656,6 +2656,7 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
             gLastUsedItem = gBattleMons[effectBattler].item;
             gBattleMons[effectBattler].item = ITEM_NONE;
             CheckSetUnburden(effectBattler);
+            MarkOriginalItemStolen(effectBattler, gLastUsedItem);
 
             BtlController_EmitSetMonData(effectBattler, B_COMM_TO_CONTROLLER, REQUEST_HELDITEM_BATTLE, 0, sizeof(gBattleMons[effectBattler].item), &gBattleMons[effectBattler].item);
             MarkBattlerForControllerExec(effectBattler);
@@ -2676,6 +2677,7 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
             gLastUsedItem = gBattleMons[effectBattler].item;
             gBattleMons[effectBattler].item = ITEM_NONE;
             CheckSetUnburden(effectBattler);
+            MarkOriginalItemStolen(effectBattler, gLastUsedItem);
 
             BtlController_EmitSetMonData(effectBattler, B_COMM_TO_CONTROLLER, REQUEST_HELDITEM_BATTLE, 0, sizeof(gBattleMons[effectBattler].item), &gBattleMons[effectBattler].item);
             MarkBattlerForControllerExec(effectBattler);
@@ -6258,12 +6260,14 @@ static void Cmd_removeitem(void)
     enum BattlerId battler = GetBattlerForBattleScript(cmd->battler);
     enum Item itemId = gBattleMons[battler].item;
     bool32 scriptQueued;
+    bool32 isFlungItem = FALSE;
 
     if (gBattleStruct->flungItem == FLUNG_ITEM_REMOVE)
     {
         gBattleStruct->flungItem = FLUNG_ITEM_REMOVED;
         battler = gBattlerAttacker;
         itemId = gLastUsedItem;
+        isFlungItem = TRUE;
     }
     else if (gBattleScripting.overrideBerryRequirements
           || gBattleStruct->flungItem == FLUNG_ITEM_REMOVED
@@ -6279,6 +6283,14 @@ static void Cmd_removeitem(void)
     if (GetBattlerHoldEffect(battler) != HOLD_EFFECT_AIR_BALLOON
      && GetMoveEffect(gCurrentMove) != EFFECT_CORROSIVE_GAS)
         GetBattlerPartyState(battler)->usedHeldItem = itemId; // Remember if switched out
+
+    // Corroded items and Sticky Barbs latching onto the attacker count as taken by the opponent and are returned after battle.
+    // Everything else removed here was used up.
+    if (GetMoveEffect(gCurrentMove) == EFFECT_CORROSIVE_GAS
+     || (!isFlungItem && GetItemHoldEffect(itemId) == HOLD_EFFECT_STICKY_BARB))
+        MarkOriginalItemStolen(battler, itemId);
+    else
+        MarkOriginalItemConsumed(battler, itemId);
 
     gBattleMons[battler].item = ITEM_NONE;
     gBattleStruct->battlerState[battler].canPickupItem = TRUE;

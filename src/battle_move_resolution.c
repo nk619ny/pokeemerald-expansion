@@ -3517,6 +3517,7 @@ static enum MoveEndResult MoveEndMoveBlock(struct BattleCalcValues *cv)
                     MarkBattlerForControllerExec(battlerDef);
                     // Mark item as stolen so it will be restored after battle
                     gBattleStruct->itemLost[side][gBattlerPartyIndexes[battlerDef]].stolen = TRUE;
+                    MarkOriginalItemStolen(battlerDef, gLastUsedItem);
                 }
                 else
                 {
@@ -4123,6 +4124,7 @@ static enum MoveEndResult MoveEndThirdMoveBlock(struct BattleCalcValues *cv)
             gBattleMons[gBattlerAttacker].item = ITEM_NONE;
             gBattleStruct->battlerState[cv->battlerAtk].canPickupItem = TRUE;
             GetBattlerPartyState(cv->battlerAtk)->usedHeldItem = item;
+            MarkOriginalItemConsumed(cv->battlerAtk, item);
             CheckSetUnburden(cv->battlerAtk);
             BtlController_EmitSetMonData(
                 cv->battlerAtk,

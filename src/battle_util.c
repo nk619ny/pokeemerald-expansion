@@ -9507,63 +9507,98 @@ void SortBattlersBySpeed(enum BattlerId *battlers, bool32 slowToFast)
     }
 }
 
-void TryRestoreHeldItems(void)
+// Called for a player mon that used up its original item. Recovers it only through berry re-equipping, Pickup, or Harvest/Seed Sower.
+static void TryRecoverConsumedHeldItem(struct Pokemon *mon, enum Item originalItem, enum Ability ability)
 {
-    u32 i;
-    bool32 returnNPCItems = B_RETURN_STOLEN_NPC_ITEMS >= GEN_5 && gBattleTypeFlags & BATTLE_TYPE_TRAINER;
-    bool32 preventWildItemStealing = B_PREVENT_STEALING_WILD_ITEMS == TRUE && !(gBattleTypeFlags & BATTLE_TYPE_TRAINER);
+    if (originalItem == ITEM_NONE)
+        return;
 
-    for (i = 0; i < PARTY_SIZE; i++)
+    if (GetItemPocket(originalItem) == POCKET_BERRIES)
     {
-        u16 originalItem = gBattleStruct->itemLost[B_SIDE_PLAYER][i].originalItem;
-        enum Ability ability = GetMonAbility(&gParties[B_TRAINER_PLAYER][i]);
-
-        // Plantable berries are always returned to their original holder, regardless of ability, unless disabled by flag.
-        // Suppressed mid-back-to-back trainer battles (another battle is already queued) unless the mon has Harvest/Seed Sower.
-        if (!FlagGet(FLAG_STOP_AUTO_REEQUIP_BERRIES)
-            && originalItem != ITEM_NONE
-            && GetItemPocket(originalItem) == POCKET_BERRIES
-            && !BerryIsUnplantable(originalItem)
-            && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE
-            && (!gSecondTrainerWaiting || ability == ABILITY_HARVEST || ability == ABILITY_SEED_SOWER))
+        if (!BerryIsUnplantable(originalItem))
         {
-            // Charge the player one berry per Pokémon reequipped, floored at zero in the bag
-            if (CountTotalItemQuantityInBag(originalItem) > 0)
-                RemoveBagItem(originalItem, 1);
-            SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
-            continue;
-        }
-
-        // Check if held items should be restored after battle based on generation
-        if (B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9 || gBattleStruct->itemLost[B_SIDE_PLAYER][i].stolen || returnNPCItems || preventWildItemStealing)
-        {
-            u16 lostItem = originalItem;
-
-            // Check if the lost item is a berry and the mon is not holding it
-            if (GetItemPocket(lostItem) == POCKET_BERRIES && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) != lostItem)
-                lostItem = ITEM_NONE;
-
-            // Check if the lost item should be restored
-            if ((lostItem != ITEM_NONE || returnNPCItems || preventWildItemStealing) && GetItemPocket(lostItem) != POCKET_BERRIES)
-                SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &lostItem);
-        }
-        // Pickup: recover own consumed non-berry item (only when the standard restore path did not already handle it)
-        else if (ability == ABILITY_PICKUP)
-        {
-            if (originalItem != ITEM_NONE
-                && GetItemPocket(originalItem) != POCKET_BERRIES
-                && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
-                SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
+            // Plantable berries are returned to their original holder regardless of ability, unless disabled by flag.
+            // Suppressed mid-back-to-back trainer battles (another battle is already queued) unless the mon has Harvest/Seed Sower.
+            if (!FlagGet(FLAG_STOP_AUTO_REEQUIP_BERRIES)
+             && (!gSecondTrainerWaiting || ability == ABILITY_HARVEST || ability == ABILITY_SEED_SOWER))
+            {
+                // Charge the player one berry per Pokémon reequipped, floored at zero in the bag
+                if (CountTotalItemQuantityInBag(originalItem) > 0)
+                    RemoveBagItem(originalItem, 1);
+                SetMonData(mon, MON_DATA_HELD_ITEM, &originalItem);
+            }
         }
         // Harvest / Seed Sower: recover own consumed unplantable berry after battle
         else if (ability == ABILITY_HARVEST || ability == ABILITY_SEED_SOWER)
         {
-            if (originalItem != ITEM_NONE
-                && GetItemPocket(originalItem) == POCKET_BERRIES
-                && BerryIsUnplantable(originalItem)
-                && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM) == ITEM_NONE)
-                SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HELD_ITEM, &originalItem);
+            SetMonData(mon, MON_DATA_HELD_ITEM, &originalItem);
         }
+    }
+    // Pickup: recover own consumed non-berry item
+    else if (ability == ABILITY_PICKUP)
+    {
+        SetMonData(mon, MON_DATA_HELD_ITEM, &originalItem);
+    }
+}
+
+//NICHE INTERACTION: Bestow/Symbiosis
+//Case 1: the partner uses up X, receives Y, and still holds Y at the end.
+
+//Partner: X is marked consumed, so X is not given back. Y was never its own item, so Y is removed. It ends with nothing.
+//Symbiosis mon: gets Y back, because it gave Y away and Y was never used up.
+//This matches your intent: the consumed item isn't restored and nobody keeps an item they didn't start with.
+//Case 2: the partner uses up X, receives Y, then uses up Y too.
+
+//Partner: ends with nothing, which is correct.
+//Symbiosis mon: still gets Y back, which is the gap. Y was used up, but the consumed mark only applies to the mon's own starting item. Y was the Symbiosis mon's item, so nothing records that it was used up, and the giver gets it back.
+//The same gap applies to Bestow.
+
+void TryRestoreHeldItems(void)
+{
+    bool32 returnNPCItems = B_RETURN_STOLEN_NPC_ITEMS >= GEN_5 && gBattleTypeFlags & BATTLE_TYPE_TRAINER;
+    bool32 preventWildItemStealing = B_PREVENT_STEALING_WILD_ITEMS == TRUE && !(gBattleTypeFlags & BATTLE_TYPE_TRAINER);
+    bool32 returnForeignItems = returnNPCItems || preventWildItemStealing;
+
+    for (u32 i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
+        enum Item originalItem = gBattleStruct->itemLost[B_TRAINER_PLAYER][i].originalItem;
+        enum Item heldItem = GetMonData(mon, MON_DATA_HELD_ITEM);
+        enum Ability ability = GetMonAbility(mon);
+
+        if (heldItem == originalItem)
+            continue;
+
+        // Gen9+: all non-berry items are restored after battle, even consumed ones
+        if (B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9 && originalItem != ITEM_NONE && GetItemPocket(originalItem) != POCKET_BERRIES)
+        {
+            SetMonData(mon, MON_DATA_HELD_ITEM, &originalItem);
+            continue;
+        }
+
+        // Taken by another battler (Knock Off, Trick, Thief, Corrosive Gas, Pluck, etc.): always given back, berries included
+        if (gBattleStruct->partyState[B_TRAINER_PLAYER][i].originalItemTaken)
+        {
+            SetMonData(mon, MON_DATA_HELD_ITEM, &originalItem);
+            continue;
+        }
+
+        // Used up by the mon itself: not restored, aside from berry re-equipping and recovery abilities
+        if (gBattleStruct->partyState[B_TRAINER_PLAYER][i].originalItemConsumed)
+        {
+            if (heldItem != ITEM_NONE && returnForeignItems)
+            {
+                heldItem = ITEM_NONE;
+                SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+            }
+            if (heldItem == ITEM_NONE)
+                TryRecoverConsumedHeldItem(mon, originalItem, ability);
+            continue;
+        }
+
+        // Item changed through the player's own actions (Bestow, Symbiosis, using Thief/Trick on the opponent, etc.)
+        if (returnForeignItems)
+            SetMonData(mon, MON_DATA_HELD_ITEM, &originalItem);
     }
 }
 
@@ -9607,16 +9642,41 @@ bool32 CanStealItem(enum BattlerId battlerStealing, enum BattlerId battlerItem, 
 
 void TrySaveExchangedItem(enum BattlerId battler, enum Item stolenItem)
 {
+    // If regular trainer battle and mon's original item matches what is being stolen, save it to be restored at end of battle
+    if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+      || gBattleTypeFlags & BATTLE_TYPE_FRONTIER
+      || !IsOnPlayerSide(battler))
+        return;
+
+    MarkOriginalItemStolen(battler, stolenItem);
+
     // Because BtlController_EmitSetMonData does SetMonData, we need to save the stolen item only if it matches the battler's original
     // So, if the player steals an item during battle and has it stolen from it, it will not end the battle with it (naturally)
-    if (B_TRAINERS_KNOCK_OFF_ITEMS == FALSE)
-        return;
-    // If regular trainer battle and mon's original item matches what is being stolen, save it to be restored at end of battle
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
-      && !(gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-      && IsOnPlayerSide(battler)
+    if (B_TRAINERS_KNOCK_OFF_ITEMS == TRUE
       && stolenItem == gBattleStruct->itemLost[B_SIDE_PLAYER][gBattlerPartyIndexes[battler]].originalItem)
         gBattleStruct->itemLost[B_SIDE_PLAYER][gBattlerPartyIndexes[battler]].stolen = TRUE;
+}
+
+// Records that the battler's original held item was taken/destroyed by another battler, so it is restored after battle.
+void MarkOriginalItemStolen(enum BattlerId battler, enum Item item)
+{
+    struct PartyState *partyState = GetBattlerPartyState(battler);
+
+    if (item != gBattleStruct->itemLost[GetBattlerTrainer(battler)][gBattlerPartyIndexes[battler]].originalItem)
+        return;
+    partyState->originalItemTaken = TRUE;
+    partyState->originalItemConsumed = FALSE;
+}
+
+// Records that the battler's original held item was used up, so it is not restored after battle.
+void MarkOriginalItemConsumed(enum BattlerId battler, enum Item item)
+{
+    struct PartyState *partyState = GetBattlerPartyState(battler);
+
+    if (item == ITEM_NONE || item != gBattleStruct->itemLost[GetBattlerTrainer(battler)][gBattlerPartyIndexes[battler]].originalItem)
+        return;
+    partyState->originalItemTaken = FALSE;
+    partyState->originalItemConsumed = TRUE;
 }
 
 bool32 IsBattlerAffectedByHazards(enum BattlerId battler, enum HoldEffect holdEffect, bool32 toxicSpikes)

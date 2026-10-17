@@ -3103,6 +3103,8 @@ static void BattleStartClearSetData(void)
         for (enum BattleTrainer trainer = B_TRAINER_PLAYER; trainer < MAX_BATTLE_TRAINERS; trainer++)
         {
             gBattleStruct->partyState[trainer][i].usedHeldItem = ITEM_NONE;
+            gBattleStruct->partyState[trainer][i].originalItemTaken = FALSE;
+            gBattleStruct->partyState[trainer][i].originalItemConsumed = FALSE;
             gBattleStruct->itemLost[trainer][i].originalItem = GetMonData(&gParties[trainer][i], MON_DATA_HELD_ITEM);
             gPartyCriticalHits[i] = 0;
         }
