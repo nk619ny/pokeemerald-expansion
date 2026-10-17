@@ -1664,6 +1664,12 @@
 	.byte \battler
 	.endm
 
+	.macro jumpifghosttrapimmune battler:req, jumpInstr:req
+	callnative BS_JumpIfGhostTrapImmune
+	.byte \battler
+	.4byte \jumpInstr
+	.endm
+
 	.macro trysetfairylock failInstr:req
 	callnative BS_TrySetFairyLock
 	.4byte \failInstr

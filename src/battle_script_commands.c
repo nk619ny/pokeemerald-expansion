@@ -12598,6 +12598,15 @@ void BS_TrySetFairyLock(void)
     }
 }
 
+void BS_JumpIfGhostTrapImmune(void)
+{
+    NATIVE_ARGS(u8 battler, const u8 *jumpInstr);
+    if (IsGhostTrapImmune(GetBattlerForBattleScript(cmd->battler)))
+        gBattlescriptCurrInstr = cmd->jumpInstr;
+    else
+        gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
 void BS_JumpIfFullHp(void)
 {
     NATIVE_ARGS(u8 battler, const u8 *jumpInstr);

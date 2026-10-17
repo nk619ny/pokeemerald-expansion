@@ -5113,9 +5113,21 @@ u32 IsAbilityOnFieldExcept(enum BattlerId battler, enum Ability ability)
     return 0;
 }
 
+bool32 IsGhostTrapImmune(enum BattlerId battler)
+{
+    if (GetConfig(B_GHOSTS_ESCAPE) < GEN_6 || !IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
+        return FALSE;
+    // Eon Flute encounters are flagged as roamer battles; this Spectrier stays trappable
+    if ((gBattleTypeFlags & BATTLE_TYPE_ROAMER)
+     && GetBattlerSide(battler) == B_SIDE_OPPONENT
+     && gBattleMons[battler].species == SPECIES_SPECTRIER)
+        return FALSE;
+    return TRUE;
+}
+
 u32 IsAbilityPreventingEscape(enum BattlerId battler)
 {
-    if (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
+    if (IsGhostTrapImmune(battler))
         return 0;
     if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return 0;
@@ -5145,7 +5157,7 @@ bool32 CanBattlerEscape(enum BattlerId battler)
 {
     if (gBattleStruct->battlerState[battler].commanderSpecies != SPECIES_NONE)
         return FALSE;
-    else if (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
+    else if (IsGhostTrapImmune(battler))
         return TRUE;
     else if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return TRUE;

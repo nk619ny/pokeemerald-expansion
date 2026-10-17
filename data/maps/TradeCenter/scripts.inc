@@ -5327,7 +5327,7 @@ Common_EventScript_EliteMoveTutor_1:
 # 2470 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_EliteMoveTutor_Text_0
 # 2471 "data/maps/TradeCenter/scripts.pory"
-	dynmultichoice 25, 2, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_EliteMoveTutor_Text_1, Common_EventScript_EliteMoveTutor_Text_2, Common_EventScript_AttributeChanger_Text_5
+	dynmultichoice 25, 5, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_EliteMoveTutor_Text_1, Common_EventScript_EliteMoveTutor_Text_2, Common_EventScript_AttributeChanger_Text_5
 # 2472 "data/maps/TradeCenter/scripts.pory"
 	switch VAR_RESULT
 # 2473 "data/maps/TradeCenter/scripts.pory"
@@ -7433,9 +7433,9 @@ FutureLevelMoveTutor_Text_NoFutureMoves::
 
 FutureLevelMoveTutor_Text_HasFutureMoves::
 # 2770 "data/maps/TradeCenter/scripts.pory"
-	.string "{STR_VAR_1} has some moves in its\n"
-	.string "future!\p"
-	.string "Let me show you what's available...$"
+	.string "{STR_VAR_1} has moves it will learn\n"
+	.string "at higher levels!\p"
+	.string "Let me show you it's upcoming moves.$"
 
 FutureLevelMoveTutor_Text_AnythingElse::
 # 2774 "data/maps/TradeCenter/scripts.pory"
@@ -7445,8 +7445,8 @@ FutureLevelMoveTutor_Text_AnythingElse::
 FutureLevelMoveTutor_Text_ComeBack::
 # 2778 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back anytime if you want to teach\n"
-	.string "one of your Pokémon a move from its\l"
-	.string "future.$"
+	.string "one of your Pokémon a higher-level\l"
+	.string "move.$"
 
 FutureLevelMoveTutor_Text_NeedHeartScale::
 # 2782 "data/maps/TradeCenter/scripts.pory"

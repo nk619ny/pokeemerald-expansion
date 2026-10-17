@@ -447,7 +447,7 @@ bool32 AI_CanBattlerEscape(enum BattlerId battler)
     enum HoldEffect holdEffect = gAiLogicData->holdEffects[battler];
     u32 ability = gAiLogicData->abilities[battler];
 
-    if (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
+    if (IsGhostTrapImmune(battler))
         return TRUE;
     if (holdEffect == HOLD_EFFECT_SHED_SHELL)
         return TRUE;

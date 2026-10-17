@@ -2162,9 +2162,7 @@ BattleScript_EffectMeanLook::
 	attackcanceler
 	jumpifvolatile BS_TARGET, VOLATILE_ESCAPE_PREVENTION, BattleScript_ButItFailed
 	jumpifsubstituteblocks BattleScript_ButItFailed
-	jumpifgenconfiglowerthan CONFIG_B_GHOSTS_ESCAPE, GEN_6, BattleScript_EffectMeanLookGen5
-	jumpiftype BS_TARGET, TYPE_GHOST, BattleScript_ButItFailed
-BattleScript_EffectMeanLookGen5:
+	jumpifghosttrapimmune BS_TARGET, BattleScript_ButItFailed
 	jumpifability BS_TARGET, ABILITY_RUN_AWAY, BattleScript_ButItFailed
 	attackanimation
 	waitanimation
