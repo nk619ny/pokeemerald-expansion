@@ -2,9 +2,9 @@
 #define GUARD_CONSTANTS_MOVE_RELEARNER_H
 
 // Max number of moves shown by the move relearner.
-// Increased from 25 to 60 so Mew can display all TMs/HMs.
-// If you plan on adding more TMs, increase this number too.
-#define MAX_RELEARNER_MOVES 60
+// Increased from 25 to 140 so the badge-gated tutor list (136 moves) fits.
+// If you plan on adding more TMs or badge tutor moves, increase this number too.
+#define MAX_RELEARNER_MOVES 140
 
 // Move Relearner menu change constants
 enum MoveRelearnerStates
@@ -13,6 +13,7 @@ enum MoveRelearnerStates
     MOVE_RELEARNER_EGG_MOVES,
     MOVE_RELEARNER_TM_MOVES,
     MOVE_RELEARNER_TUTOR_MOVES,
+    MOVE_RELEARNER_BADGE_TUTOR_MOVES,
     MOVE_RELEARNER_COUNT,
     // Elite moves state is placed after COUNT so it's excluded from summary screen relearner loops
     MOVE_RELEARNER_ELITE_MOVES,
@@ -27,6 +28,7 @@ enum RelearnMode
     RELEARN_MODE_PSS_PAGE_CONTEST_MOVES = 3,     // Relearning moves through the summary screen's contest moves page (defaults to contest page on relearner screen)
     RELEARN_MODE_ELITE_SCRIPT = 5,               // Relearning elite moves through an event script (not accessible from summary screen)
     RELEARN_MODE_EGG_SCRIPT = 6,                 // Relearning egg moves through an event script (not accessible from summary screen)
+    RELEARN_MODE_FUTURE_LEVEL_SCRIPT = 7,        // Learning upcoming level up moves through an event script (not accessible from summary screen)
 };
 
 #endif // GUARD_CONSTANTS_MOVE_RELEARNER_H

@@ -50,6 +50,8 @@ void CheckPartyMonHasEliteMoves(void);
 void TeachEliteMoves(void);
 void CheckPartyMonHasScriptEggMoves(void);
 void TeachScriptEggMoves(void);
+void CheckPartyMonHasFutureLevelMoves(void);
+void TeachFutureLevelMoves(void);
 void ComparePartyMonNature(void);
 void ChangeNature(void);
 void GetPartyMonIV(void);

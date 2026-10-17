@@ -5318,19 +5318,28 @@ Common_EventScript_EliteMoveTutor::
 # 2458 "data/maps/TradeCenter/scripts.pory"
 	goto_if_unset FLAG_TEMP_3, Common_EventScript_EliteMoveTutor_2
 Common_EventScript_EliteMoveTutor_1:
-# 2462 "data/maps/TradeCenter/scripts.pory"
-	goto_if_unset FLAG_BADGE04_GET, Common_EventScript_EliteMoveTutor_5
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_eq Common_EventScript_EliteMoveTutor_8
-# 2474 "data/maps/TradeCenter/scripts.pory"
+	goto_if_eq Common_EventScript_EliteMoveTutor_5
+# 2469 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_TEMP_3
-# 2475 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_EliteMoveTutor_Text_1, MSGBOX_DEFAULT
+# 2470 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_EliteMoveTutor_Text_0
+# 2471 "data/maps/TradeCenter/scripts.pory"
+	dynmultichoice 25, 2, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, Common_EventScript_EliteMoveTutor_Text_1, Common_EventScript_EliteMoveTutor_Text_2, Common_EventScript_AttributeChanger_Text_5
+# 2472 "data/maps/TradeCenter/scripts.pory"
+	switch VAR_RESULT
+# 2473 "data/maps/TradeCenter/scripts.pory"
+	case 0, Common_EventScript_EliteMoveTutor_9
 # 2476 "data/maps/TradeCenter/scripts.pory"
-	goto EliteMoveTutor_EventScript_ChooseMon
-	return
+	case 1, Common_EventScript_EliteMoveTutor_10
+# 2488 "data/maps/TradeCenter/scripts.pory"
+	case 2, Common_EventScript_EliteMoveTutor_11
+Common_EventScript_EliteMoveTutor_7:
+# 2492 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
 
 Common_EventScript_EliteMoveTutor_2:
 # 2459 "data/maps/TradeCenter/scripts.pory"
@@ -5338,457 +5347,590 @@ Common_EventScript_EliteMoveTutor_2:
 	goto Common_EventScript_EliteMoveTutor_1
 
 Common_EventScript_EliteMoveTutor_5:
-# 2463 "data/maps/TradeCenter/scripts.pory"
-	msgbox Common_EventScript_EliteMoveTutor_Text_0, MSGBOX_DEFAULT
 # 2464 "data/maps/TradeCenter/scripts.pory"
-	clearflag FLAG_TEMP_3
+	msgbox EliteMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT
 # 2465 "data/maps/TradeCenter/scripts.pory"
+	clearflag FLAG_TEMP_3
+# 2466 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
-Common_EventScript_EliteMoveTutor_8:
-# 2469 "data/maps/TradeCenter/scripts.pory"
-	msgbox EliteMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT
-# 2470 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_EliteMoveTutor_9:
+# 2474 "data/maps/TradeCenter/scripts.pory"
+	goto FutureLevelMoveTutor_EventScript_ChooseMon
+	goto Common_EventScript_EliteMoveTutor_7
+
+Common_EventScript_EliteMoveTutor_10:
+# 2477 "data/maps/TradeCenter/scripts.pory"
+	goto_if_unset FLAG_BADGE04_GET, Common_EventScript_EliteMoveTutor_13
+# 2484 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_EliteMoveTutor_Text_4, MSGBOX_DEFAULT
+# 2485 "data/maps/TradeCenter/scripts.pory"
+	goto EliteMoveTutor_EventScript_ChooseMon
+	goto Common_EventScript_EliteMoveTutor_7
+
+Common_EventScript_EliteMoveTutor_11:
+# 2489 "data/maps/TradeCenter/scripts.pory"
+	goto EliteMoveTutor_EventScript_Cancel
+	goto Common_EventScript_EliteMoveTutor_7
+
+Common_EventScript_EliteMoveTutor_13:
+# 2478 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_EliteMoveTutor_Text_3, MSGBOX_DEFAULT
+# 2479 "data/maps/TradeCenter/scripts.pory"
 	clearflag FLAG_TEMP_3
-# 2471 "data/maps/TradeCenter/scripts.pory"
+# 2480 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 EliteMoveTutor_EventScript_ChooseMon::
-# 2480 "data/maps/TradeCenter/scripts.pory"
+# 2497 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT
-# 2481 "data/maps/TradeCenter/scripts.pory"
+# 2498 "data/maps/TradeCenter/scripts.pory"
 	special ChoosePartyMon
-# 2482 "data/maps/TradeCenter/scripts.pory"
+# 2499 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_2
 EliteMoveTutor_EventScript_ChooseMon_1:
-# 2485 "data/maps/TradeCenter/scripts.pory"
+# 2502 "data/maps/TradeCenter/scripts.pory"
 	special IsSelectedMonEgg
-# 2486 "data/maps/TradeCenter/scripts.pory"
+# 2503 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_5
 EliteMoveTutor_EventScript_ChooseMon_4:
-# 2491 "data/maps/TradeCenter/scripts.pory"
+# 2508 "data/maps/TradeCenter/scripts.pory"
 	special CheckPartyMonHasEliteMoves
-# 2492 "data/maps/TradeCenter/scripts.pory"
+# 2509 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_8
 EliteMoveTutor_EventScript_ChooseMon_7:
-# 2498 "data/maps/TradeCenter/scripts.pory"
+# 2515 "data/maps/TradeCenter/scripts.pory"
 	special BufferMonNickname
-# 2499 "data/maps/TradeCenter/scripts.pory"
+# 2516 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_HasEliteMoves, MSGBOX_DEFAULT
-# 2500 "data/maps/TradeCenter/scripts.pory"
+# 2517 "data/maps/TradeCenter/scripts.pory"
 	special TeachEliteMoves
-# 2501 "data/maps/TradeCenter/scripts.pory"
+# 2518 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 2502 "data/maps/TradeCenter/scripts.pory"
+# 2519 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2503 "data/maps/TradeCenter/scripts.pory"
+# 2520 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2505 "data/maps/TradeCenter/scripts.pory"
-	compare VAR_0x8004, TRUE
+# 2521 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_11
 EliteMoveTutor_EventScript_ChooseMon_10:
-# 2523 "data/maps/TradeCenter/scripts.pory"
+# 2539 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_Cancel
 	return
 
 EliteMoveTutor_EventScript_ChooseMon_2:
-# 2483 "data/maps/TradeCenter/scripts.pory"
+# 2500 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_Cancel
 	goto EliteMoveTutor_EventScript_ChooseMon_1
 
 EliteMoveTutor_EventScript_ChooseMon_5:
-# 2487 "data/maps/TradeCenter/scripts.pory"
+# 2504 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_CantTeachEgg, MSGBOX_DEFAULT
-# 2488 "data/maps/TradeCenter/scripts.pory"
+# 2505 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_ChooseMon
 	goto EliteMoveTutor_EventScript_ChooseMon_4
 
 EliteMoveTutor_EventScript_ChooseMon_8:
-# 2493 "data/maps/TradeCenter/scripts.pory"
+# 2510 "data/maps/TradeCenter/scripts.pory"
 	special BufferMonNickname
-# 2494 "data/maps/TradeCenter/scripts.pory"
+# 2511 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_NoEliteMoves, MSGBOX_DEFAULT
-# 2495 "data/maps/TradeCenter/scripts.pory"
+# 2512 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_ChooseMon
 	goto EliteMoveTutor_EventScript_ChooseMon_7
 
 EliteMoveTutor_EventScript_ChooseMon_11:
-# 2507 "data/maps/TradeCenter/scripts.pory"
+# 2523 "data/maps/TradeCenter/scripts.pory"
 	removeitem ITEM_HEART_SCALE, 1
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne EliteMoveTutor_EventScript_ChooseMon_13
-# 2517 "data/maps/TradeCenter/scripts.pory"
+# 2533 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_NoMoreHeartScales, MSGBOX_DEFAULT
-# 2518 "data/maps/TradeCenter/scripts.pory"
+# 2534 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 EliteMoveTutor_EventScript_ChooseMon_13:
-# 2510 "data/maps/TradeCenter/scripts.pory"
+# 2526 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_AnythingElse, MSGBOX_YESNO
-# 2511 "data/maps/TradeCenter/scripts.pory"
+# 2527 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq EliteMoveTutor_EventScript_ChooseMon_17
 EliteMoveTutor_EventScript_ChooseMon_16:
-# 2514 "data/maps/TradeCenter/scripts.pory"
+# 2530 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_Cancel
 	goto EliteMoveTutor_EventScript_ChooseMon_10
 
 EliteMoveTutor_EventScript_ChooseMon_17:
-# 2512 "data/maps/TradeCenter/scripts.pory"
+# 2528 "data/maps/TradeCenter/scripts.pory"
 	goto EliteMoveTutor_EventScript_ChooseMon
 	goto EliteMoveTutor_EventScript_ChooseMon_16
 
 
 EliteMoveTutor_EventScript_Cancel::
-# 2527 "data/maps/TradeCenter/scripts.pory"
+# 2543 "data/maps/TradeCenter/scripts.pory"
 	msgbox EliteMoveTutor_Text_ComeBack, MSGBOX_DEFAULT
-# 2528 "data/maps/TradeCenter/scripts.pory"
+# 2544 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2545 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 Common_EventScript_EggMoveTutor::
-# 2571 "data/maps/TradeCenter/scripts.pory"
+# 2588 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2572 "data/maps/TradeCenter/scripts.pory"
+# 2589 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2574 "data/maps/TradeCenter/scripts.pory"
+# 2591 "data/maps/TradeCenter/scripts.pory"
 	goto_if_unset FLAG_BADGE02_GET, Common_EventScript_EggMoveTutor_2
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_EggMoveTutor_5
-# 2585 "data/maps/TradeCenter/scripts.pory"
+# 2602 "data/maps/TradeCenter/scripts.pory"
 	goto_if_unset FLAG_TEMP_2, Common_EventScript_EggMoveTutor_8
 Common_EventScript_EggMoveTutor_7:
-# 2590 "data/maps/TradeCenter/scripts.pory"
+# 2607 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_EggMoveTutor_Text_1, MSGBOX_DEFAULT
-# 2591 "data/maps/TradeCenter/scripts.pory"
+# 2608 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2592 "data/maps/TradeCenter/scripts.pory"
+# 2609 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_ChooseMon
 	return
 
 Common_EventScript_EggMoveTutor_2:
-# 2575 "data/maps/TradeCenter/scripts.pory"
+# 2592 "data/maps/TradeCenter/scripts.pory"
 	msgbox Common_EventScript_EggMoveTutor_Text_0, MSGBOX_DEFAULT
-# 2576 "data/maps/TradeCenter/scripts.pory"
+# 2593 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2577 "data/maps/TradeCenter/scripts.pory"
+# 2594 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_EggMoveTutor_5:
-# 2581 "data/maps/TradeCenter/scripts.pory"
+# 2598 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT
-# 2582 "data/maps/TradeCenter/scripts.pory"
+# 2599 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 Common_EventScript_EggMoveTutor_8:
-# 2586 "data/maps/TradeCenter/scripts.pory"
+# 2603 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_Intro, MSGBOX_DEFAULT
-# 2587 "data/maps/TradeCenter/scripts.pory"
+# 2604 "data/maps/TradeCenter/scripts.pory"
 	setflag FLAG_TEMP_2
-# 2588 "data/maps/TradeCenter/scripts.pory"
+# 2605 "data/maps/TradeCenter/scripts.pory"
 	closemessage
 	goto Common_EventScript_EggMoveTutor_7
 
 
 EggMoveTutor_EventScript_ChooseMon::
-# 2596 "data/maps/TradeCenter/scripts.pory"
+# 2613 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT
-# 2597 "data/maps/TradeCenter/scripts.pory"
+# 2614 "data/maps/TradeCenter/scripts.pory"
 	special ChoosePartyMon
-# 2598 "data/maps/TradeCenter/scripts.pory"
+# 2615 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_2
 EggMoveTutor_EventScript_ChooseMon_1:
-# 2601 "data/maps/TradeCenter/scripts.pory"
+# 2618 "data/maps/TradeCenter/scripts.pory"
 	special IsSelectedMonEgg
-# 2602 "data/maps/TradeCenter/scripts.pory"
+# 2619 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_5
 EggMoveTutor_EventScript_ChooseMon_4:
-# 2607 "data/maps/TradeCenter/scripts.pory"
+# 2624 "data/maps/TradeCenter/scripts.pory"
 	special CheckPartyMonHasScriptEggMoves
-# 2608 "data/maps/TradeCenter/scripts.pory"
+# 2625 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_8
 EggMoveTutor_EventScript_ChooseMon_7:
-# 2614 "data/maps/TradeCenter/scripts.pory"
+# 2631 "data/maps/TradeCenter/scripts.pory"
 	special BufferMonNickname
-# 2615 "data/maps/TradeCenter/scripts.pory"
+# 2632 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_HasEggMoves, MSGBOX_DEFAULT
-# 2616 "data/maps/TradeCenter/scripts.pory"
+# 2633 "data/maps/TradeCenter/scripts.pory"
 	special TeachScriptEggMoves
-# 2617 "data/maps/TradeCenter/scripts.pory"
+# 2634 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 2618 "data/maps/TradeCenter/scripts.pory"
+# 2635 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2619 "data/maps/TradeCenter/scripts.pory"
+# 2636 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2621 "data/maps/TradeCenter/scripts.pory"
-	compare VAR_0x8004, TRUE
+# 2637 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_11
 EggMoveTutor_EventScript_ChooseMon_10:
-# 2639 "data/maps/TradeCenter/scripts.pory"
+# 2655 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_Cancel
 	return
 
 EggMoveTutor_EventScript_ChooseMon_2:
-# 2599 "data/maps/TradeCenter/scripts.pory"
+# 2616 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_Cancel
 	goto EggMoveTutor_EventScript_ChooseMon_1
 
 EggMoveTutor_EventScript_ChooseMon_5:
-# 2603 "data/maps/TradeCenter/scripts.pory"
+# 2620 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_CantTeachEgg, MSGBOX_DEFAULT
-# 2604 "data/maps/TradeCenter/scripts.pory"
+# 2621 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_ChooseMon
 	goto EggMoveTutor_EventScript_ChooseMon_4
 
 EggMoveTutor_EventScript_ChooseMon_8:
-# 2609 "data/maps/TradeCenter/scripts.pory"
+# 2626 "data/maps/TradeCenter/scripts.pory"
 	special BufferMonNickname
-# 2610 "data/maps/TradeCenter/scripts.pory"
+# 2627 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_NoEggMoves, MSGBOX_DEFAULT
-# 2611 "data/maps/TradeCenter/scripts.pory"
+# 2628 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_ChooseMon
 	goto EggMoveTutor_EventScript_ChooseMon_7
 
 EggMoveTutor_EventScript_ChooseMon_11:
-# 2623 "data/maps/TradeCenter/scripts.pory"
+# 2639 "data/maps/TradeCenter/scripts.pory"
 	removeitem ITEM_HEART_SCALE, 1
 	checkitem ITEM_HEART_SCALE, 1
 # 0 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne EggMoveTutor_EventScript_ChooseMon_13
-# 2633 "data/maps/TradeCenter/scripts.pory"
+# 2649 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_NoMoreHeartScales, MSGBOX_DEFAULT
-# 2634 "data/maps/TradeCenter/scripts.pory"
+# 2650 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 EggMoveTutor_EventScript_ChooseMon_13:
-# 2626 "data/maps/TradeCenter/scripts.pory"
+# 2642 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_AnythingElse, MSGBOX_YESNO
-# 2627 "data/maps/TradeCenter/scripts.pory"
+# 2643 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq EggMoveTutor_EventScript_ChooseMon_17
 EggMoveTutor_EventScript_ChooseMon_16:
-# 2630 "data/maps/TradeCenter/scripts.pory"
+# 2646 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_Cancel
 	goto EggMoveTutor_EventScript_ChooseMon_10
 
 EggMoveTutor_EventScript_ChooseMon_17:
-# 2628 "data/maps/TradeCenter/scripts.pory"
+# 2644 "data/maps/TradeCenter/scripts.pory"
 	goto EggMoveTutor_EventScript_ChooseMon
 	goto EggMoveTutor_EventScript_ChooseMon_16
 
 
 EggMoveTutor_EventScript_Cancel::
-# 2643 "data/maps/TradeCenter/scripts.pory"
+# 2659 "data/maps/TradeCenter/scripts.pory"
 	msgbox EggMoveTutor_Text_ComeBack, MSGBOX_DEFAULT
-# 2644 "data/maps/TradeCenter/scripts.pory"
+# 2660 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+
+Common_EventScript_FutureLevelMoveTutor::
+# 2702 "data/maps/TradeCenter/scripts.pory"
+	lock
+# 2703 "data/maps/TradeCenter/scripts.pory"
+	msgbox Common_EventScript_FutureLevelMoveTutor_Text_0, MSGBOX_DEFAULT
+# 2704 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 2705 "data/maps/TradeCenter/scripts.pory"
+	goto FutureLevelMoveTutor_EventScript_ChooseMon
+	return
+
+
+FutureLevelMoveTutor_EventScript_ChooseMon::
+# 2709 "data/maps/TradeCenter/scripts.pory"
+	msgbox FutureLevelMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT
+# 2710 "data/maps/TradeCenter/scripts.pory"
+	special ChoosePartyMon
+# 2711 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
+	goto_if_eq FutureLevelMoveTutor_EventScript_ChooseMon_2
+FutureLevelMoveTutor_EventScript_ChooseMon_1:
+# 2714 "data/maps/TradeCenter/scripts.pory"
+	special IsSelectedMonEgg
+# 2715 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq FutureLevelMoveTutor_EventScript_ChooseMon_5
+FutureLevelMoveTutor_EventScript_ChooseMon_4:
+# 2719 "data/maps/TradeCenter/scripts.pory"
+	special CheckPartyMonHasFutureLevelMoves
+# 2720 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq FutureLevelMoveTutor_EventScript_ChooseMon_8
+FutureLevelMoveTutor_EventScript_ChooseMon_7:
+# 2725 "data/maps/TradeCenter/scripts.pory"
+	special BufferMonNickname
+# 2726 "data/maps/TradeCenter/scripts.pory"
+	msgbox FutureLevelMoveTutor_Text_HasFutureMoves, MSGBOX_DEFAULT
+# 2727 "data/maps/TradeCenter/scripts.pory"
+	special TeachFutureLevelMoves
+# 2728 "data/maps/TradeCenter/scripts.pory"
+	waitstate
+# 2729 "data/maps/TradeCenter/scripts.pory"
+	lock
+# 2730 "data/maps/TradeCenter/scripts.pory"
+	faceplayer
+# 2731 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq FutureLevelMoveTutor_EventScript_ChooseMon_11
+FutureLevelMoveTutor_EventScript_ChooseMon_10:
+# 2745 "data/maps/TradeCenter/scripts.pory"
+	goto FutureLevelMoveTutor_EventScript_Cancel
+	return
+
+FutureLevelMoveTutor_EventScript_ChooseMon_2:
+# 2712 "data/maps/TradeCenter/scripts.pory"
+	goto FutureLevelMoveTutor_EventScript_Cancel
+	goto FutureLevelMoveTutor_EventScript_ChooseMon_1
+
+FutureLevelMoveTutor_EventScript_ChooseMon_5:
+# 2716 "data/maps/TradeCenter/scripts.pory"
+	msgbox FutureLevelMoveTutor_Text_CantTeachEgg, MSGBOX_DEFAULT
+# 2717 "data/maps/TradeCenter/scripts.pory"
+	goto FutureLevelMoveTutor_EventScript_ChooseMon
+	goto FutureLevelMoveTutor_EventScript_ChooseMon_4
+
+FutureLevelMoveTutor_EventScript_ChooseMon_8:
+# 2721 "data/maps/TradeCenter/scripts.pory"
+	special BufferMonNickname
+# 2722 "data/maps/TradeCenter/scripts.pory"
+	msgbox FutureLevelMoveTutor_Text_NoFutureMoves, MSGBOX_DEFAULT
+# 2723 "data/maps/TradeCenter/scripts.pory"
+	goto FutureLevelMoveTutor_EventScript_ChooseMon
+	goto FutureLevelMoveTutor_EventScript_ChooseMon_7
+
+FutureLevelMoveTutor_EventScript_ChooseMon_11:
+# 2732 "data/maps/TradeCenter/scripts.pory"
+	removeitem ITEM_HEART_SCALE, 1
+	checkitem ITEM_HEART_SCALE, 1
+# 0 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_ne FutureLevelMoveTutor_EventScript_ChooseMon_13
+# 2740 "data/maps/TradeCenter/scripts.pory"
+	msgbox FutureLevelMoveTutor_Text_NoMoreHeartScales, MSGBOX_DEFAULT
+# 2741 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+FutureLevelMoveTutor_EventScript_ChooseMon_13:
+# 2734 "data/maps/TradeCenter/scripts.pory"
+	msgbox FutureLevelMoveTutor_Text_AnythingElse, MSGBOX_YESNO
+# 2735 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq FutureLevelMoveTutor_EventScript_ChooseMon_17
+FutureLevelMoveTutor_EventScript_ChooseMon_16:
+# 2738 "data/maps/TradeCenter/scripts.pory"
+	goto FutureLevelMoveTutor_EventScript_Cancel
+	goto FutureLevelMoveTutor_EventScript_ChooseMon_10
+
+FutureLevelMoveTutor_EventScript_ChooseMon_17:
+# 2736 "data/maps/TradeCenter/scripts.pory"
+	goto Common_EventScript_EliteMoveTutor
+	goto FutureLevelMoveTutor_EventScript_ChooseMon_16
+
+
+FutureLevelMoveTutor_EventScript_Cancel::
+# 2749 "data/maps/TradeCenter/scripts.pory"
+	msgbox FutureLevelMoveTutor_Text_ComeBack, MSGBOX_DEFAULT
+# 2750 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 
 PokemonCenter_2F_Unused_MoveTutor::
-# 2687 "data/maps/TradeCenter/scripts.pory"
+# 2793 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2688 "data/maps/TradeCenter/scripts.pory"
+# 2794 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_Unused_MoveTutor_Text_0, 1
-# 2689 "data/maps/TradeCenter/scripts.pory"
+# 2795 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_Unused_MoveTutor_Text_1, 2
-# 2690 "data/maps/TradeCenter/scripts.pory"
+# 2796 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_Unused_MoveTutor_Text_2, 3
-# 2691 "data/maps/TradeCenter/scripts.pory"
+# 2797 "data/maps/TradeCenter/scripts.pory"
 	dynmultipush PokemonCenter_2F_Unused_MoveTutor_Text_3, 4
-# 2692 "data/maps/TradeCenter/scripts.pory"
+# 2798 "data/maps/TradeCenter/scripts.pory"
 	msgbox MoveTutor_Text_WhichMoveWouldYouLikeToTeach, MSGBOX_DEFAULT
-# 2693 "data/maps/TradeCenter/scripts.pory"
+# 2799 "data/maps/TradeCenter/scripts.pory"
 	dynmultistack 0, 0, FALSE, 6, TRUE, 0, DYN_MULTICHOICE_CB_NONE
-# 2694 "data/maps/TradeCenter/scripts.pory"
+# 2800 "data/maps/TradeCenter/scripts.pory"
 	switch VAR_RESULT
-# 2695 "data/maps/TradeCenter/scripts.pory"
+# 2801 "data/maps/TradeCenter/scripts.pory"
 	case 1, PokemonCenter_2F_Unused_MoveTutor_3
-# 2698 "data/maps/TradeCenter/scripts.pory"
+# 2804 "data/maps/TradeCenter/scripts.pory"
 	case 2, PokemonCenter_2F_Unused_MoveTutor_4
-# 2701 "data/maps/TradeCenter/scripts.pory"
+# 2807 "data/maps/TradeCenter/scripts.pory"
 	case 3, PokemonCenter_2F_Unused_MoveTutor_5
-# 2704 "data/maps/TradeCenter/scripts.pory"
+# 2810 "data/maps/TradeCenter/scripts.pory"
 	case 4, PokemonCenter_2F_Unused_MoveTutor_6
-# 2708 "data/maps/TradeCenter/scripts.pory"
+# 2814 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	return
 
 PokemonCenter_2F_Unused_MoveTutor_1:
-# 2711 "data/maps/TradeCenter/scripts.pory"
+# 2817 "data/maps/TradeCenter/scripts.pory"
 	msgbox MoveTutor_Text_BufferWhichMon, MSGBOX_DEFAULT
-# 2712 "data/maps/TradeCenter/scripts.pory"
+# 2818 "data/maps/TradeCenter/scripts.pory"
 	special ChooseMonForMoveTutor
-# 2713 "data/maps/TradeCenter/scripts.pory"
+# 2819 "data/maps/TradeCenter/scripts.pory"
 	waitstate
-# 2714 "data/maps/TradeCenter/scripts.pory"
+# 2820 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2715 "data/maps/TradeCenter/scripts.pory"
+# 2821 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2716 "data/maps/TradeCenter/scripts.pory"
+# 2822 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	return
 
 PokemonCenter_2F_Unused_MoveTutor_3:
-# 2696 "data/maps/TradeCenter/scripts.pory"
+# 2802 "data/maps/TradeCenter/scripts.pory"
 	setvar VAR_0x8005, MOVE_FUSION_BOLT
-# 2697 "data/maps/TradeCenter/scripts.pory"
+# 2803 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_1, PokemonCenter_2F_Unused_MoveTutor_Text_0
 	goto PokemonCenter_2F_Unused_MoveTutor_1
 
 PokemonCenter_2F_Unused_MoveTutor_4:
-# 2699 "data/maps/TradeCenter/scripts.pory"
+# 2805 "data/maps/TradeCenter/scripts.pory"
 	setvar VAR_0x8005, MOVE_FUSION_FLARE
-# 2700 "data/maps/TradeCenter/scripts.pory"
+# 2806 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_1, PokemonCenter_2F_Unused_MoveTutor_Text_1
 	goto PokemonCenter_2F_Unused_MoveTutor_1
 
 PokemonCenter_2F_Unused_MoveTutor_5:
-# 2702 "data/maps/TradeCenter/scripts.pory"
+# 2808 "data/maps/TradeCenter/scripts.pory"
 	setvar VAR_0x8005, MOVE_ICE_BURN
-# 2703 "data/maps/TradeCenter/scripts.pory"
+# 2809 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_1, PokemonCenter_2F_Unused_MoveTutor_Text_2
 	goto PokemonCenter_2F_Unused_MoveTutor_1
 
 PokemonCenter_2F_Unused_MoveTutor_6:
-# 2705 "data/maps/TradeCenter/scripts.pory"
+# 2811 "data/maps/TradeCenter/scripts.pory"
 	setvar VAR_0x8005, MOVE_FREEZE_SHOCK
-# 2706 "data/maps/TradeCenter/scripts.pory"
+# 2812 "data/maps/TradeCenter/scripts.pory"
 	bufferstring STR_VAR_1, PokemonCenter_2F_Unused_MoveTutor_Text_3
 	goto PokemonCenter_2F_Unused_MoveTutor_1
 
 
 TradeCenter_EventScript_DrainPunch::
-# 2727 "data/maps/TradeCenter/scripts.pory"
+# 2833 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2728 "data/maps/TradeCenter/scripts.pory"
+# 2834 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2729 "data/maps/TradeCenter/scripts.pory"
+# 2835 "data/maps/TradeCenter/scripts.pory"
 	checkitem ITEM_TM_DRAIN_PUNCH
-# 2730 "data/maps/TradeCenter/scripts.pory"
+# 2836 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq TradeCenter_EventScript_DrainPunch_2
-# 2737 "data/maps/TradeCenter/scripts.pory"
+# 2843 "data/maps/TradeCenter/scripts.pory"
 	msgbox TradeCenter_EventScript_DrainPunch_Text_1, MSGBOX_NPC
 TradeCenter_EventScript_DrainPunch_1:
-# 2739 "data/maps/TradeCenter/scripts.pory"
+# 2845 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 TradeCenter_EventScript_DrainPunch_2:
-# 2731 "data/maps/TradeCenter/scripts.pory"
+# 2837 "data/maps/TradeCenter/scripts.pory"
 	msgbox TradeCenter_EventScript_DrainPunch_Text_0, MSGBOX_NPC
-# 2732 "data/maps/TradeCenter/scripts.pory"
+# 2838 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2733 "data/maps/TradeCenter/scripts.pory"
+# 2839 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_TM_DRAIN_PUNCH
-# 2734 "data/maps/TradeCenter/scripts.pory"
+# 2840 "data/maps/TradeCenter/scripts.pory"
 	waitfanfare
 	goto TradeCenter_EventScript_DrainPunch_1
 
 
 TradeCenter_EventScript_ShadowClaw::
-# 2744 "data/maps/TradeCenter/scripts.pory"
+# 2850 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2745 "data/maps/TradeCenter/scripts.pory"
+# 2851 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2746 "data/maps/TradeCenter/scripts.pory"
+# 2852 "data/maps/TradeCenter/scripts.pory"
 	checkitem ITEM_TM_SHADOW_CLAW
-# 2747 "data/maps/TradeCenter/scripts.pory"
+# 2853 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq TradeCenter_EventScript_ShadowClaw_2
-# 2754 "data/maps/TradeCenter/scripts.pory"
+# 2860 "data/maps/TradeCenter/scripts.pory"
 	msgbox TradeCenter_EventScript_ShadowClaw_Text_1, MSGBOX_NPC
 TradeCenter_EventScript_ShadowClaw_1:
-# 2756 "data/maps/TradeCenter/scripts.pory"
+# 2862 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 TradeCenter_EventScript_ShadowClaw_2:
-# 2748 "data/maps/TradeCenter/scripts.pory"
+# 2854 "data/maps/TradeCenter/scripts.pory"
 	msgbox TradeCenter_EventScript_ShadowClaw_Text_0, MSGBOX_NPC
-# 2749 "data/maps/TradeCenter/scripts.pory"
+# 2855 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2750 "data/maps/TradeCenter/scripts.pory"
+# 2856 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_TM_SHADOW_CLAW
-# 2751 "data/maps/TradeCenter/scripts.pory"
+# 2857 "data/maps/TradeCenter/scripts.pory"
 	waitfanfare
 	goto TradeCenter_EventScript_ShadowClaw_1
 
 
 TradeCenter_EventScript_PsychoCut::
-# 2761 "data/maps/TradeCenter/scripts.pory"
+# 2867 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2762 "data/maps/TradeCenter/scripts.pory"
+# 2868 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2763 "data/maps/TradeCenter/scripts.pory"
+# 2869 "data/maps/TradeCenter/scripts.pory"
 	checkitem ITEM_TM_PSYCHO_CUT
-# 2764 "data/maps/TradeCenter/scripts.pory"
+# 2870 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq TradeCenter_EventScript_PsychoCut_2
-# 2771 "data/maps/TradeCenter/scripts.pory"
+# 2877 "data/maps/TradeCenter/scripts.pory"
 	msgbox TradeCenter_EventScript_PsychoCut_Text_1, MSGBOX_NPC
 TradeCenter_EventScript_PsychoCut_1:
-# 2773 "data/maps/TradeCenter/scripts.pory"
+# 2879 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 TradeCenter_EventScript_PsychoCut_2:
-# 2765 "data/maps/TradeCenter/scripts.pory"
+# 2871 "data/maps/TradeCenter/scripts.pory"
 	msgbox TradeCenter_EventScript_PsychoCut_Text_0, MSGBOX_NPC
-# 2766 "data/maps/TradeCenter/scripts.pory"
+# 2872 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2767 "data/maps/TradeCenter/scripts.pory"
+# 2873 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_TM_PSYCHO_CUT
-# 2768 "data/maps/TradeCenter/scripts.pory"
+# 2874 "data/maps/TradeCenter/scripts.pory"
 	waitfanfare
 	goto TradeCenter_EventScript_PsychoCut_1
 
 
 TradeCenter_EventScript_CrossPoison::
-# 2778 "data/maps/TradeCenter/scripts.pory"
+# 2884 "data/maps/TradeCenter/scripts.pory"
 	lock
-# 2779 "data/maps/TradeCenter/scripts.pory"
+# 2885 "data/maps/TradeCenter/scripts.pory"
 	faceplayer
-# 2780 "data/maps/TradeCenter/scripts.pory"
+# 2886 "data/maps/TradeCenter/scripts.pory"
 	checkitem ITEM_TM_CROSS_POISON
-# 2781 "data/maps/TradeCenter/scripts.pory"
+# 2887 "data/maps/TradeCenter/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq TradeCenter_EventScript_CrossPoison_2
-# 2788 "data/maps/TradeCenter/scripts.pory"
+# 2894 "data/maps/TradeCenter/scripts.pory"
 	msgbox TradeCenter_EventScript_CrossPoison_Text_1, MSGBOX_NPC
 TradeCenter_EventScript_CrossPoison_1:
-# 2790 "data/maps/TradeCenter/scripts.pory"
+# 2896 "data/maps/TradeCenter/scripts.pory"
 	releaseall
 	end
 
 TradeCenter_EventScript_CrossPoison_2:
-# 2782 "data/maps/TradeCenter/scripts.pory"
+# 2888 "data/maps/TradeCenter/scripts.pory"
 	msgbox TradeCenter_EventScript_CrossPoison_Text_0, MSGBOX_NPC
-# 2783 "data/maps/TradeCenter/scripts.pory"
+# 2889 "data/maps/TradeCenter/scripts.pory"
 	closemessage
-# 2784 "data/maps/TradeCenter/scripts.pory"
+# 2890 "data/maps/TradeCenter/scripts.pory"
 	giveitem ITEM_TM_CROSS_POISON
-# 2785 "data/maps/TradeCenter/scripts.pory"
+# 2891 "data/maps/TradeCenter/scripts.pory"
 	waitfanfare
 	goto TradeCenter_EventScript_CrossPoison_1
 
@@ -7001,18 +7143,31 @@ Common_EventScript_ChangeIV_Text_18:
 	.string "changed to {STR_VAR_3}!$"
 
 Common_EventScript_EliteMoveTutor_Text_0:
-# 2463 "data/maps/TradeCenter/scripts.pory"
+# 2470 "data/maps/TradeCenter/scripts.pory"
+	.string "What would you like me to teach your\n"
+	.string "Pokémon?$"
+
+Common_EventScript_EliteMoveTutor_Text_1:
+# 2471 "data/maps/TradeCenter/scripts.pory"
+	.string "Higher Level Moves$"
+
+Common_EventScript_EliteMoveTutor_Text_2:
+# 2471 "data/maps/TradeCenter/scripts.pory"
+	.string "Elite Moves$"
+
+Common_EventScript_EliteMoveTutor_Text_3:
+# 2478 "data/maps/TradeCenter/scripts.pory"
 	.string "You need to increase your Trainer Level\n"
 	.string "further before I can teach any Elite\l"
 	.string "Moves to your Pokémon.$"
 
-Common_EventScript_EliteMoveTutor_Text_1:
-# 2475 "data/maps/TradeCenter/scripts.pory"
+Common_EventScript_EliteMoveTutor_Text_4:
+# 2484 "data/maps/TradeCenter/scripts.pory"
 	.string "Would you like me to teach an Elite Move\n"
 	.string "to any of your Pokémon?$"
 
 Common_EventScript_EggMoveTutor_Text_0:
-# 2575 "data/maps/TradeCenter/scripts.pory"
+# 2592 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm the Egg Move Tutor.\p"
 	.string "I can teach Pokémon moves they could\n"
 	.string "have learned as Eggs.\p"
@@ -7021,29 +7176,34 @@ Common_EventScript_EggMoveTutor_Text_0:
 	.string "Please come back later!$"
 
 Common_EventScript_EggMoveTutor_Text_1:
-# 2590 "data/maps/TradeCenter/scripts.pory"
+# 2607 "data/maps/TradeCenter/scripts.pory"
 	.string "Would you like me to teach an Egg Move\n"
 	.string "to any of your Pokémon for a Heart\l"
 	.string "Scale?$"
 
+Common_EventScript_FutureLevelMoveTutor_Text_0:
+# 2703 "data/maps/TradeCenter/scripts.pory"
+	.string "Would you like me to teach one of your\n"
+	.string "Pokémon a higher-level move?$"
+
 PokemonCenter_2F_Unused_MoveTutor_Text_0:
-# 2688 "data/maps/TradeCenter/scripts.pory"
+# 2794 "data/maps/TradeCenter/scripts.pory"
 	.string "Fusion Bolt$"
 
 PokemonCenter_2F_Unused_MoveTutor_Text_1:
-# 2689 "data/maps/TradeCenter/scripts.pory"
+# 2795 "data/maps/TradeCenter/scripts.pory"
 	.string "Fusion Flare$"
 
 PokemonCenter_2F_Unused_MoveTutor_Text_2:
-# 2690 "data/maps/TradeCenter/scripts.pory"
+# 2796 "data/maps/TradeCenter/scripts.pory"
 	.string "Ice Burn$"
 
 PokemonCenter_2F_Unused_MoveTutor_Text_3:
-# 2691 "data/maps/TradeCenter/scripts.pory"
+# 2797 "data/maps/TradeCenter/scripts.pory"
 	.string "Freeze Shock$"
 
 TradeCenter_EventScript_DrainPunch_Text_0:
-# 2731 "data/maps/TradeCenter/scripts.pory"
+# 2837 "data/maps/TradeCenter/scripts.pory"
 	.string "Why take a hit when you can take HP\n"
 	.string "instead?\p"
 	.string "This TM teaches Drain Punch: strike\n"
@@ -7051,36 +7211,36 @@ TradeCenter_EventScript_DrainPunch_Text_0:
 	.string "same time!$"
 
 TradeCenter_EventScript_DrainPunch_Text_1:
-# 2737 "data/maps/TradeCenter/scripts.pory"
+# 2843 "data/maps/TradeCenter/scripts.pory"
 	.string "You already have Drain Punch. Keep\n"
 	.string "fighting and recovering!$"
 
 TradeCenter_EventScript_ShadowClaw_Text_0:
-# 2748 "data/maps/TradeCenter/scripts.pory"
+# 2854 "data/maps/TradeCenter/scripts.pory"
 	.string "A claw forged from shadows strikes with\n"
 	.string "high critical-hit potential.\p"
 	.string "Here, take this TM: Shadow Claw is a\n"
 	.string "powerful Ghost-type slash!$"
 
 TradeCenter_EventScript_ShadowClaw_Text_1:
-# 2754 "data/maps/TradeCenter/scripts.pory"
+# 2860 "data/maps/TradeCenter/scripts.pory"
 	.string "You already have Shadow Claw. Keep\n"
 	.string "striking from the darkness!$"
 
 TradeCenter_EventScript_PsychoCut_Text_0:
-# 2765 "data/maps/TradeCenter/scripts.pory"
+# 2871 "data/maps/TradeCenter/scripts.pory"
 	.string "Blades of psychic energy slice through\n"
 	.string "the air with frightening precision.\p"
 	.string "Take this TM: Psycho Cut lands critical\n"
 	.string "hits more easily than most moves!$"
 
 TradeCenter_EventScript_PsychoCut_Text_1:
-# 2771 "data/maps/TradeCenter/scripts.pory"
+# 2877 "data/maps/TradeCenter/scripts.pory"
 	.string "You already have Psycho Cut. Stay\n"
 	.string "sharp out there!$"
 
 TradeCenter_EventScript_CrossPoison_Text_0:
-# 2782 "data/maps/TradeCenter/scripts.pory"
+# 2888 "data/maps/TradeCenter/scripts.pory"
 	.string "A slashing attack that spreads venom\n"
 	.string "on contact.\p"
 	.string "Here, take this TM: Cross Poison is a\n"
@@ -7088,7 +7248,7 @@ TradeCenter_EventScript_CrossPoison_Text_0:
 	.string "leave foes poisoned!$"
 
 TradeCenter_EventScript_CrossPoison_Text_1:
-# 2788 "data/maps/TradeCenter/scripts.pory"
+# 2894 "data/maps/TradeCenter/scripts.pory"
 	.string "You already have Cross Poison. Keep\n"
 	.string "spreading the venom!$"
 
@@ -7147,56 +7307,57 @@ MoveTutor_Text_WhichMoveWouldYouLikeToTeach::
 	.string "one of your Pokémon?$"
 
 EliteMoveTutor_Text_Intro::
-# 2532 "data/maps/TradeCenter/scripts.pory"
+# 2549 "data/maps/TradeCenter/scripts.pory"
 	.string "I am the Elite Move Tutor.\p"
-	.string "I can teach certain Pokémon powerful\n"
-	.string "Elite Moves that they can't learn any\l"
-	.string "other way.\p"
+	.string "I can teach Pokémon moves they would\n"
+	.string "normally learn at higher levels, as well\l"
+	.string "as powerful Elite Moves that they can't\l"
+	.string "learn any other way.\p"
 	.string "It will cost you one Heart Scale per\n"
 	.string "move.$"
 
 EliteMoveTutor_Text_ChooseMon::
-# 2536 "data/maps/TradeCenter/scripts.pory"
+# 2553 "data/maps/TradeCenter/scripts.pory"
 	.string "Which Pokémon would you like me to\n"
 	.string "check?$"
 
 EliteMoveTutor_Text_CantTeachEgg::
-# 2540 "data/maps/TradeCenter/scripts.pory"
+# 2557 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm sorry, but I can't teach moves to an\n"
 	.string "Egg.$"
 
 EliteMoveTutor_Text_NoEliteMoves::
-# 2544 "data/maps/TradeCenter/scripts.pory"
+# 2561 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm sorry, but {STR_VAR_1} can't\n"
 	.string "learn any Elite Moves.$"
 
 EliteMoveTutor_Text_HasEliteMoves::
-# 2548 "data/maps/TradeCenter/scripts.pory"
+# 2565 "data/maps/TradeCenter/scripts.pory"
 	.string "{STR_VAR_1} can learn Elite Moves!\p"
 	.string "Let me show you what's available...$"
 
 EliteMoveTutor_Text_AnythingElse::
-# 2552 "data/maps/TradeCenter/scripts.pory"
+# 2569 "data/maps/TradeCenter/scripts.pory"
 	.string "Would you like me to teach another Elite\n"
 	.string "Move?$"
 
 EliteMoveTutor_Text_ComeBack::
-# 2556 "data/maps/TradeCenter/scripts.pory"
+# 2573 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back anytime if you want to teach\n"
 	.string "an Elite Move to one of your Pokémon.$"
 
 EliteMoveTutor_Text_NeedHeartScale::
-# 2560 "data/maps/TradeCenter/scripts.pory"
+# 2577 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back when you have a Heart Scale.$"
 
 EliteMoveTutor_Text_NoMoreHeartScales::
-# 2564 "data/maps/TradeCenter/scripts.pory"
+# 2581 "data/maps/TradeCenter/scripts.pory"
 	.string "That's all for now.\p"
 	.string "Come back with more Heart Scales if you\n"
 	.string "want to learn additional Elite Moves.$"
 
 EggMoveTutor_Text_Intro::
-# 2648 "data/maps/TradeCenter/scripts.pory"
+# 2664 "data/maps/TradeCenter/scripts.pory"
 	.string "I am the Egg Move Tutor.\p"
 	.string "I can teach certain Pokémon moves they\n"
 	.string "could have learned as Eggs.\p"
@@ -7204,37 +7365,37 @@ EggMoveTutor_Text_Intro::
 	.string "move.$"
 
 EggMoveTutor_Text_ChooseMon::
-# 2652 "data/maps/TradeCenter/scripts.pory"
+# 2668 "data/maps/TradeCenter/scripts.pory"
 	.string "Which Pokémon would you like me to\n"
 	.string "check?$"
 
 EggMoveTutor_Text_CantTeachEgg::
-# 2656 "data/maps/TradeCenter/scripts.pory"
+# 2672 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm sorry, but I can't teach moves to an\n"
 	.string "Egg.$"
 
 EggMoveTutor_Text_NoEggMoves::
-# 2660 "data/maps/TradeCenter/scripts.pory"
+# 2676 "data/maps/TradeCenter/scripts.pory"
 	.string "I'm sorry, but {STR_VAR_1} doesn't\n"
 	.string "have any Egg Moves to learn.$"
 
 EggMoveTutor_Text_HasEggMoves::
-# 2664 "data/maps/TradeCenter/scripts.pory"
+# 2680 "data/maps/TradeCenter/scripts.pory"
 	.string "{STR_VAR_1} can learn Egg Moves!\p"
 	.string "Let me show you what's available...$"
 
 EggMoveTutor_Text_AnythingElse::
-# 2668 "data/maps/TradeCenter/scripts.pory"
+# 2684 "data/maps/TradeCenter/scripts.pory"
 	.string "Would you like me to teach another Egg\n"
 	.string "Move?$"
 
 EggMoveTutor_Text_ComeBack::
-# 2672 "data/maps/TradeCenter/scripts.pory"
+# 2688 "data/maps/TradeCenter/scripts.pory"
 	.string "Come back anytime if you want to teach\n"
 	.string "an Egg Move to one of your Pokémon.$"
 
 EggMoveTutor_Text_NeedHeartScale::
-# 2676 "data/maps/TradeCenter/scripts.pory"
+# 2692 "data/maps/TradeCenter/scripts.pory"
 	.string "I am the Egg Move Tutor.\p"
 	.string "I can teach certain Pokémon moves they\n"
 	.string "could have learned as Eggs, but I\l"
@@ -7242,13 +7403,66 @@ EggMoveTutor_Text_NeedHeartScale::
 	.string "Come back when you have one.$"
 
 EggMoveTutor_Text_NoMoreHeartScales::
-# 2680 "data/maps/TradeCenter/scripts.pory"
+# 2696 "data/maps/TradeCenter/scripts.pory"
 	.string "That's all for now!\p"
 	.string "Come back with more Heart Scales if you\n"
 	.string "want to learn additional Egg Moves.$"
 
+FutureLevelMoveTutor_Text_Intro::
+# 2754 "data/maps/TradeCenter/scripts.pory"
+	.string "I can teach a Pokémon a move it would\n"
+	.string "normally learn a little later on, as it\l"
+	.string "grows stronger.\p"
+	.string "It will cost you one Heart Scale per\n"
+	.string "move.$"
+
+FutureLevelMoveTutor_Text_ChooseMon::
+# 2758 "data/maps/TradeCenter/scripts.pory"
+	.string "Which Pokémon would you like to teach a\n"
+	.string "higher-level move?$"
+
+FutureLevelMoveTutor_Text_CantTeachEgg::
+# 2762 "data/maps/TradeCenter/scripts.pory"
+	.string "I'm sorry, but I can't teach moves to an\n"
+	.string "Egg.$"
+
+FutureLevelMoveTutor_Text_NoFutureMoves::
+# 2766 "data/maps/TradeCenter/scripts.pory"
+	.string "I'm sorry, but {STR_VAR_1} doesn't\n"
+	.string "have any upcoming moves I can teach.$"
+
+FutureLevelMoveTutor_Text_HasFutureMoves::
+# 2770 "data/maps/TradeCenter/scripts.pory"
+	.string "{STR_VAR_1} has some moves in its\n"
+	.string "future!\p"
+	.string "Let me show you what's available...$"
+
+FutureLevelMoveTutor_Text_AnythingElse::
+# 2774 "data/maps/TradeCenter/scripts.pory"
+	.string "Would you like me to teach another\n"
+	.string "move?$"
+
+FutureLevelMoveTutor_Text_ComeBack::
+# 2778 "data/maps/TradeCenter/scripts.pory"
+	.string "Come back anytime if you want to teach\n"
+	.string "one of your Pokémon a move from its\l"
+	.string "future.$"
+
+FutureLevelMoveTutor_Text_NeedHeartScale::
+# 2782 "data/maps/TradeCenter/scripts.pory"
+	.string "I can teach Pokémon moves they would\n"
+	.string "learn as they grow, but I require a\l"
+	.string "Heart Scale as payment.\p"
+	.string "Come back when you have one.$"
+
+FutureLevelMoveTutor_Text_NoMoreHeartScales::
+# 2786 "data/maps/TradeCenter/scripts.pory"
+	.string "That's all for now!\p"
+	.string "Come back with more Heart Scales if you\n"
+	.string "want to learn additional moves.$"
+
 MatchCall_Text_Rival_1_1::
-# 2794 "data/maps/TradeCenter/scripts.pory"
+# 2900 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: You won't believe this,\n"
 	.string "{PLAYER}.\p"
 	.string "I had to throw dozens of Pokeballs\n"
@@ -7258,7 +7472,7 @@ MatchCall_Text_Rival_1_1::
 	.string "themselves out!$"
 
 MatchCall_Text_Rival_1_2::
-# 2798 "data/maps/TradeCenter/scripts.pory"
+# 2904 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi, {PLAYER}!\p"
 	.string "After a lot of searching, I can\n"
 	.string "confirm there are five colors of\l"
@@ -7267,14 +7481,14 @@ MatchCall_Text_Rival_1_2::
 	.string "are just harder to find!$"
 
 MatchCall_Text_Rival_1_3::
-# 2802 "data/maps/TradeCenter/scripts.pory"
+# 2908 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Oh, hi {PLAYER}!\p"
 	.string "I've just been checking all my\n"
 	.string "Pokémon for a sticker.\p"
 	.string "Hope you're having more fun!$"
 
 MatchCall_Text_Rival_2_5::
-# 2806 "data/maps/TradeCenter/scripts.pory"
+# 2912 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi {PLAYER}.\p"
 	.string "I've spent weeks putting honey on\n"
 	.string "this tree, and still haven't found\l"
@@ -7283,7 +7497,7 @@ MatchCall_Text_Rival_2_5::
 	.string "tree?$"
 
 MatchCall_Text_Rival_2_1::
-# 2810 "data/maps/TradeCenter/scripts.pory"
+# 2916 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Guess what, {PLAYER}?\p"
 	.string "I think I might have discovered\n"
 	.string "the minimum catch rate.\p"
@@ -7291,7 +7505,7 @@ MatchCall_Text_Rival_2_1::
 	.string "legendary Pokémon yet!$"
 
 MatchCall_Text_Rival_2_2::
-# 2814 "data/maps/TradeCenter/scripts.pory"
+# 2920 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hey, {PLAYER}!\p"
 	.string "I'm away visiting a tropical island.\p"
 	.string "I heard you can find fully evolved\n"
@@ -7302,7 +7516,7 @@ MatchCall_Text_Rival_2_2::
 	.string "somehow?$"
 
 MatchCall_Text_Rival_2_3::
-# 2818 "data/maps/TradeCenter/scripts.pory"
+# 2924 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi {PLAYER}.\p"
 	.string "Did you know that for Pokemon,\n"
 	.string "There aren't always the same\l"
@@ -7311,7 +7525,7 @@ MatchCall_Text_Rival_2_3::
 	.string "bit frustrating!$"
 
 MatchCall_Text_Rival_2_4::
-# 2822 "data/maps/TradeCenter/scripts.pory"
+# 2928 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: {PLAYER}!\p"
 	.string "There are rumors that thousands\n"
 	.string "of years ago, there was a fish with\l"
@@ -7321,7 +7535,7 @@ MatchCall_Text_Rival_2_4::
 	.string "around anywhere?$"
 
 MatchCall_Text_Rival_2_6::
-# 2826 "data/maps/TradeCenter/scripts.pory"
+# 2932 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hey there, {PLAYER}!\p"
 	.string "We know there's variation in\n"
 	.string "Pokémon size, even within the same\l"
@@ -7330,7 +7544,7 @@ MatchCall_Text_Rival_2_6::
 	.string "how big some Pokémon can get!$"
 
 MatchCall_Text_Rival_3_1::
-# 2830 "data/maps/TradeCenter/scripts.pory"
+# 2936 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi, {PLAYER}!\p"
 	.string "Did you know there's a difference\n"
 	.string "between a chip and a crack?\p"
@@ -7338,7 +7552,7 @@ MatchCall_Text_Rival_3_1::
 	.string "apparently!$"
 
 MatchCall_Text_Rival_3_2::
-# 2834 "data/maps/TradeCenter/scripts.pory"
+# 2940 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Sigh, {PLAYER}...\n"
 	.string "My hands are covered in honey\l"
 	.string "again…\p"
@@ -7348,7 +7562,7 @@ MatchCall_Text_Rival_3_2::
 	.string "can't actually evolve.$"
 
 MatchCall_Text_Rival_3_3::
-# 2838 "data/maps/TradeCenter/scripts.pory"
+# 2944 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi there, {PLAYER}!\p"
 	.string "I'm visiting Mt. Pyre right now.\p"
 	.string "I swear I keep hearing bells, but I\n"
@@ -7356,7 +7570,7 @@ MatchCall_Text_Rival_3_3::
 	.string "coming from!$"
 
 MatchCall_Text_Rival_3_4::
-# 2842 "data/maps/TradeCenter/scripts.pory"
+# 2948 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Oh, {PLAYER}!\p"
 	.string "I'm staying at an Inn right now\n"
 	.string "while I'm traveling.\p"
@@ -7366,7 +7580,7 @@ MatchCall_Text_Rival_3_4::
 	.string "out myself.$"
 
 MatchCall_Text_Rival_3_5::
-# 2846 "data/maps/TradeCenter/scripts.pory"
+# 2952 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Guess what, {PLAYER}?\p"
 	.string "I guess it's a good thing I've been\n"
 	.string "catching so many Sinistea.\p"
@@ -7375,7 +7589,7 @@ MatchCall_Text_Rival_3_5::
 	.string "some reason.$"
 
 MatchCall_Text_Rival_3_6::
-# 2850 "data/maps/TradeCenter/scripts.pory"
+# 2956 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Ah, {PLAYER}.\p"
 	.string "My poor fish won't evolve.\p"
 	.string "It keeps rushing into battle head-\n"
@@ -7384,7 +7598,7 @@ MatchCall_Text_Rival_3_6::
 	.string "keep at it?$"
 
 MatchCall_Text_Rival_5_1::
-# 2854 "data/maps/TradeCenter/scripts.pory"
+# 2960 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Help me out, {PLAYER}.\p"
 	.string "Normally I put Pokémon to sleep to\n"
 	.string "make them easier to catch.\p"
@@ -7394,7 +7608,7 @@ MatchCall_Text_Rival_5_1::
 	.string "Any ideas?$"
 
 MatchCall_Text_Rival_4_1::
-# 2858 "data/maps/TradeCenter/scripts.pory"
+# 2964 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: It's funny, {PLAYER}.\p"
 	.string "There's a Pokémon I haven't been\p"
 	.string "able to find in the wild, but I just\n"
@@ -7402,7 +7616,7 @@ MatchCall_Text_Rival_4_1::
 	.string "in the middle of the road.$"
 
 MatchCall_Text_Rival_4_2::
-# 2862 "data/maps/TradeCenter/scripts.pory"
+# 2968 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: {PLAYER}!\p"
 	.string "I was just hanging underground\n"
 	.string "with dozens of my closest friends,\l"
@@ -7412,7 +7626,7 @@ MatchCall_Text_Rival_4_2::
 	.string "party?$"
 
 MatchCall_Text_Rival_5_2::
-# 2866 "data/maps/TradeCenter/scripts.pory"
+# 2972 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Oh, {PLAYER}!\p"
 	.string "I just found another one of these\n"
 	.string "extraverted ghosts in a shipwreck,\l"
@@ -7421,7 +7635,7 @@ MatchCall_Text_Rival_5_2::
 	.string "Route, I wonder?$"
 
 MatchCall_Text_Rival_4_3::
-# 2870 "data/maps/TradeCenter/scripts.pory"
+# 2976 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: You know, {PLAYER} -\p"
 	.string "I've been trying to visit a shrine inside\n"
 	.string "a grand castle, but it's been closed\l"
@@ -7429,7 +7643,7 @@ MatchCall_Text_Rival_4_3::
 	.string "issues.$"
 
 MatchCall_Text_Rival_5_3::
-# 2874 "data/maps/TradeCenter/scripts.pory"
+# 2980 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hey, {PLAYER}.\p"
 	.string "Have you ever been so confident\n"
 	.string "you just found a legendary\l"
@@ -7440,7 +7654,7 @@ MatchCall_Text_Rival_5_3::
 	.string "feeling a little disappointed.$"
 
 MatchCall_Text_Rival_4_4::
-# 2878 "data/maps/TradeCenter/scripts.pory"
+# 2984 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Ugh, {PLAYER}.\n"
 	.string "I've been fishing in this river for\l"
 	.string "hours, trying to find a rare\l"
@@ -7449,7 +7663,7 @@ MatchCall_Text_Rival_4_4::
 	.string "me found three in five minutes!$"
 
 MatchCall_Text_Rival_5_4::
-# 2882 "data/maps/TradeCenter/scripts.pory"
+# 2988 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi, {PLAYER}.\p"
 	.string "I've got a fish that is really no\n"
 	.string "Ngood at battling, and doesn't seem\l"
@@ -7458,7 +7672,7 @@ MatchCall_Text_Rival_5_4::
 	.string "Nbrother to use in contests.$"
 
 MatchCall_Text_Rival_4_5::
-# 2886 "data/maps/TradeCenter/scripts.pory"
+# 2992 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hey, {PLAYER}!\p"
 	.string "I'm on a fishing boat trying to\n"
 	.string "find a-\l"
@@ -7466,20 +7680,20 @@ MatchCall_Text_Rival_4_5::
 	.string "Sorry {PLAYER}, gotta go!$"
 
 MatchCall_Text_Rival_5_5::
-# 2890 "data/maps/TradeCenter/scripts.pory"
+# 2996 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: You know, {PLAYER},\n"
 	.string "I just don't understand why\l"
 	.string "someone would design a boat after\l"
 	.string "a Ground-type Pokémon.$"
 
 MatchCall_Text_Rival_4_6::
-# 2894 "data/maps/TradeCenter/scripts.pory"
+# 3000 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi there, {PLAYER}.\p"
 	.string "I really love these white flowers.\p"
 	.string "It was worth the effort!$"
 
 MatchCall_Text_Rival_5_6::
-# 2898 "data/maps/TradeCenter/scripts.pory"
+# 3004 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi there, {PLAYER}.\p"
 	.string "It took me awhile to find a Flabebe\n"
 	.string "with a white flower.\p"
@@ -7487,14 +7701,14 @@ MatchCall_Text_Rival_5_6::
 	.string "Nbe a sixth flower they can hold?$"
 
 MatchCall_Text_Rival_6_1::
-# 2902 "data/maps/TradeCenter/scripts.pory"
+# 3008 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hi, {PLAYER}.\p"
 	.string "Do you know how I could find an\n"
 	.string "extinct flower?\p"
 	.string "It feels impossible, by definition.$"
 
 MatchCall_Text_Rival_6_2::
-# 2906 "data/maps/TradeCenter/scripts.pory"
+# 3012 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Oh hi, {PLAYER}.\p"
 	.string "I'm taking a break to help the\n"
 	.string "Pokémon Rangers.\p"
@@ -7504,7 +7718,7 @@ MatchCall_Text_Rival_6_2::
 	.string "some rogue musicians.$"
 
 MatchCall_Text_Rival_6_3::
-# 2910 "data/maps/TradeCenter/scripts.pory"
+# 3016 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: Hey, {PLAYER}.\p"
 	.string "I got a letter from one of my Dad's\n"
 	.string "colleagues in Kanto.\p"
@@ -7514,7 +7728,7 @@ MatchCall_Text_Rival_6_3::
 	.string "question lately.$"
 
 MatchCall_Text_Rival_6_4::
-# 2914 "data/maps/TradeCenter/scripts.pory"
+# 3020 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: {PLAYER}!\p"
 	.string "I think I've finally found a way to\n"
 	.string "guarantee my victory next time we\l"
@@ -7522,7 +7736,7 @@ MatchCall_Text_Rival_6_4::
 	.string "I won't give it away, though.$"
 
 MatchCall_Text_Rival_6_5::
-# 2918 "data/maps/TradeCenter/scripts.pory"
+# 3024 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: What!?\p"
 	.string "Sorry, {PLAYER}, I can't hear you\n"
 	.string "over the sound of thunder!\p"
@@ -7532,7 +7746,7 @@ MatchCall_Text_Rival_6_5::
 	.string "certain Pokémon appears.$"
 
 MatchCall_Text_Rival_6_6::
-# 2922 "data/maps/TradeCenter/scripts.pory"
+# 3028 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: You know, {PLAYER}, I\n"
 	.string "really don't like the idea that you\l"
 	.string "will only see some Pokemon if you\l"
@@ -7541,7 +7755,7 @@ MatchCall_Text_Rival_6_6::
 	.string "I hope that changes someday.$"
 
 MatchCall_Text_Rival_7_1::
-# 2926 "data/maps/TradeCenter/scripts.pory"
+# 3032 "data/maps/TradeCenter/scripts.pory"
 	.string "{RIVAL}: {PLAYER}! I was just\n"
 	.string "thinking about you.\p"
 	.string "Good luck with the rest of the\n"

@@ -10,6 +10,7 @@ void CB2_InitLearnMove(void);
 bool32 CanBoxMonRelearnAnyMove(struct BoxPokemon *boxMon);
 bool32 CanBoxMonRelearnMoves(struct BoxPokemon *boxMon, enum MoveRelearnerStates state);
 bool32 HasMoveToRelearn(struct BoxPokemon *boxMon, enum MoveRelearnerStates state);
+bool32 CanBoxMonLearnFutureLevelMoves(struct BoxPokemon *boxMon);
 
 extern enum MoveRelearnerStates gMoveRelearnerState;
 extern enum RelearnMode gRelearnMode;

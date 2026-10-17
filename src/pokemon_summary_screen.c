@@ -775,6 +775,7 @@ static const u8 *const sRelearnTexts[MOVE_RELEARNER_COUNT] =
     [MOVE_RELEARNER_EGG_MOVES] =      COMPOUND_STRING("{START_BUTTON} RELEARN EGG"),
     [MOVE_RELEARNER_TM_MOVES] =       COMPOUND_STRING("{START_BUTTON} RELEARN TM"),
     [MOVE_RELEARNER_TUTOR_MOVES] =    COMPOUND_STRING("{START_BUTTON} RELEARN TUTOR"),
+    [MOVE_RELEARNER_BADGE_TUTOR_MOVES] = COMPOUND_STRING("{START_BUTTON} RELEARN TUTOR"),
 };
 
 static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
@@ -1740,15 +1741,15 @@ static void HandleMoveRelearnerInput(u8 taskId)
         PlaySE(SE_SELECT);
         BeginCloseSummaryScreen(taskId);
     }
-    else if (JOY_NEW(R_BUTTON)) // R means increase. Level -> Egg -> TM -> Tutor
+    else if (JOY_NEW(R_BUTTON)) // R means increase. Level -> Egg -> TM -> Tutor -> Badge Tutor
     {
-        gMoveRelearnerState++;
+        gMoveRelearnerState = (gMoveRelearnerState + 1) % MOVE_RELEARNER_COUNT;
         UpdateMoveRelearnerState(FALSE);
         PlaySE(SE_SELECT);
     }
-    else if (JOY_NEW(L_BUTTON)) // L means decrease. Level <- Egg <- TM <- Tutor
+    else if (JOY_NEW(L_BUTTON)) // L means decrease. Level <- Egg <- TM <- Tutor <- Badge Tutor
     {
-        gMoveRelearnerState--;
+        gMoveRelearnerState = (gMoveRelearnerState + MOVE_RELEARNER_COUNT - 1) % MOVE_RELEARNER_COUNT;
         UpdateMoveRelearnerState(TRUE);
         PlaySE(SE_SELECT);
     }
@@ -1950,7 +1951,10 @@ static void UpdateMoveRelearnerState(bool32 goingDown)
     sMonSummaryScreen->hasRelearnableMoves = FALSE;
     for (u32 i = 0; i < MOVE_RELEARNER_COUNT; i++)
     {
-        state = (gMoveRelearnerState + i * (goingDown ? -1 : 1)) % MOVE_RELEARNER_COUNT;
+        if (goingDown)
+            state = ((s32)gMoveRelearnerState - (s32)i + MOVE_RELEARNER_COUNT) % MOVE_RELEARNER_COUNT;
+        else
+            state = ((s32)gMoveRelearnerState + (s32)i) % MOVE_RELEARNER_COUNT;
         if (HasAnyRelearnableMoves(state))
         {
             sMonSummaryScreen->hasRelearnableMoves = TRUE;

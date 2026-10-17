@@ -6087,6 +6087,8 @@ void TeachEliteMoves(void)
 {
     gMoveRelearnerState = MOVE_RELEARNER_ELITE_MOVES;
     gRelearnMode = RELEARN_MODE_ELITE_SCRIPT;
+    // VAR_RESULT is the learn-success output; clear the stale TRUE left by the Check special
+    gSpecialVar_Result = FALSE;
     TeachMoveRelearnerMove();
 }
 
@@ -6114,6 +6116,26 @@ void TeachScriptEggMoves(void)
 {
     gMoveRelearnerState = MOVE_RELEARNER_EGG_MOVES;
     gRelearnMode = RELEARN_MODE_EGG_SCRIPT;
+    gSpecialVar_Result = FALSE;
+    TeachMoveRelearnerMove();
+}
+
+// Uses VAR_0x8004 as the party slot; sets VAR_RESULT to TRUE if the mon has upcoming level up moves
+void CheckPartyMonHasFutureLevelMoves(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+    if (slot < PARTY_SIZE && GetMonData(&gParties[B_TRAINER_PLAYER][slot], MON_DATA_SANITY_HAS_SPECIES))
+        gSpecialVar_Result = CanBoxMonLearnFutureLevelMoves(&gParties[B_TRAINER_PLAYER][slot].box);
+    else
+        gSpecialVar_Result = FALSE;
+}
+
+// Teaches a level up move from the next P_FUTURE_LEVEL_MOVES_RANGE levels to the party mon at slot VAR_0x8004
+void TeachFutureLevelMoves(void)
+{
+    gMoveRelearnerState = MOVE_RELEARNER_LEVEL_UP_MOVES;
+    gRelearnMode = RELEARN_MODE_FUTURE_LEVEL_SCRIPT;
+    gSpecialVar_Result = FALSE;
     TeachMoveRelearnerMove();
 }
 

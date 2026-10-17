@@ -51,4 +51,8 @@ Info taken from https://bulbapedia.bulbagarden.net/wiki/Stats_judge.
 #define P_SUMMARY_SCREEN_MOVE_RELEARNER  TRUE   // If TRUE, shows an option for Pokémon to relearn moves on the summary screen moves page.
 #define P_SUMMARY_MOVE_RELEARNER_FULL_PP TRUE   // If TRUE, the move relearner in the summary screen restores relearned moves' PP to full.
 
+// Custom relearners
+#define P_SUMMARY_BADGE_TUTOR_RELEARNER  TRUE   // If TRUE, the summary screen relearner can cycle to badge-gated tutor moves (see src/data/badge_tutor_moves.h).
+#define P_FUTURE_LEVEL_MOVES_RANGE       15     // The future level move tutor offers level up moves from current level + 1 to current level + this value.
+
 #endif // GUARD_CONFIG_SUMMARY_SCREEN_H

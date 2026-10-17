@@ -2459,12 +2459,7 @@ script Common_EventScript_EliteMoveTutor {
 		msgbox(EliteMoveTutor_Text_Intro, MSGBOX_DEFAULT)
 	}
 	// Check if player has a Heart Scale
-	if (!flag(FLAG_BADGE04_GET)) {
-		msgbox(format("You need to increase your Trainer Level further before I can teach any Elite Moves to your Pokémon."), MSGBOX_DEFAULT)
-		clearflag(FLAG_TEMP_3)
-		releaseall
-		end
-	}
+
 	if (!checkitem(ITEM_HEART_SCALE, 1)) {
 		msgbox(EliteMoveTutor_Text_NeedHeartScale, MSGBOX_DEFAULT)
 		clearflag(FLAG_TEMP_3)
@@ -2472,8 +2467,30 @@ script Common_EventScript_EliteMoveTutor {
 		end
 	}
 	setflag(FLAG_TEMP_3)
-	msgbox(format("Would you like me to teach an Elite Move to any of your Pokémon?"), MSGBOX_DEFAULT)
-	goto(EliteMoveTutor_EventScript_ChooseMon)
+	msgbox(format("What would you like me to teach your Pokémon?"))
+	dynmultichoice(25,5,FALSE,3,0,DYN_MULTICHOICE_CB_NONE, "Higher Level Moves", "Elite Moves","Nevermind")
+	switch(var(VAR_RESULT)) {
+		case 0: // Higher Level Moves
+			goto(FutureLevelMoveTutor_EventScript_ChooseMon)
+			break
+		case 1: // Elite Moves
+			if (!flag(FLAG_BADGE04_GET)) {
+				msgbox(format("You need to increase your Trainer Level further before I can teach any Elite Moves to your Pokémon."), MSGBOX_DEFAULT)
+				clearflag(FLAG_TEMP_3)
+				releaseall
+				end
+			}
+			else {
+				msgbox(format("Would you like me to teach an Elite Move to any of your Pokémon?"), MSGBOX_DEFAULT)
+				goto(EliteMoveTutor_EventScript_ChooseMon)
+			}
+			break
+		case 2: // Nevermind
+			goto(EliteMoveTutor_EventScript_Cancel)
+			break
+	}
+	releaseall
+	end
 }
 
 script EliteMoveTutor_EventScript_ChooseMon {
@@ -2501,8 +2518,7 @@ script EliteMoveTutor_EventScript_ChooseMon {
 	waitstate
 	lock
 	faceplayer
-	// Check if a move was actually learned (VAR_0x8004 == TRUE means success)
-	if (var(VAR_0x8004) == TRUE) {
+	if (var(VAR_RESULT) == TRUE) {
 		// Remove a Heart Scale as payment
 		removeitem(ITEM_HEART_SCALE, 1)
 		// Check if player has more Heart Scales for another teaching
@@ -2525,12 +2541,13 @@ script EliteMoveTutor_EventScript_ChooseMon {
 
 script EliteMoveTutor_EventScript_Cancel {
 	msgbox(EliteMoveTutor_Text_ComeBack, MSGBOX_DEFAULT)
+	closemessage
 	releaseall
 	end
 }
 
 text EliteMoveTutor_Text_Intro {
-	format("I am the Elite Move Tutor.\pI can teach certain Pokémon powerful Elite Moves that they can't learn any other way.\pIt will cost you one Heart Scale per move.")
+	format("I am the Elite Move Tutor.\pI can teach Pokémon moves they would normally learn at higher levels, as well as powerful Elite Moves that they can't learn any other way.\pIt will cost you one Heart Scale per move.")
 }
 
 text EliteMoveTutor_Text_ChooseMon {
@@ -2617,8 +2634,7 @@ script EggMoveTutor_EventScript_ChooseMon {
 	waitstate
 	lock
 	faceplayer
-	// Check if a move was actually learned (VAR_0x8004 == TRUE means success)
-	if (var(VAR_0x8004) == TRUE) {
+	if (var(VAR_RESULT) == TRUE) {
 		// Remove a Heart Scale as payment
 		removeitem(ITEM_HEART_SCALE, 1)
 		// Check if player has more Heart Scales for another teaching
@@ -2679,6 +2695,96 @@ text EggMoveTutor_Text_NeedHeartScale {
 
 text EggMoveTutor_Text_NoMoreHeartScales {
 	format("That's all for now!\pCome back with more Heart Scales if you want to learn additional Egg Moves.")
+}
+
+// Future Level Move Tutor - Teaches level up moves the Pokemon would learn within the next P_FUTURE_LEVEL_MOVES_RANGE levels
+script Common_EventScript_FutureLevelMoveTutor {
+	lock
+	msgbox(format("Would you like me to teach one of your Pokémon a higher-level move?"), MSGBOX_DEFAULT)
+	closemessage
+	goto(FutureLevelMoveTutor_EventScript_ChooseMon)
+}
+
+script FutureLevelMoveTutor_EventScript_ChooseMon {
+	msgbox(FutureLevelMoveTutor_Text_ChooseMon, MSGBOX_DEFAULT)
+	special(ChoosePartyMon)
+	if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+		goto(FutureLevelMoveTutor_EventScript_Cancel)
+	}
+	special(IsSelectedMonEgg)
+	if (var(VAR_RESULT) == TRUE) {
+		msgbox(FutureLevelMoveTutor_Text_CantTeachEgg, MSGBOX_DEFAULT)
+		goto(FutureLevelMoveTutor_EventScript_ChooseMon)
+	}
+	special(CheckPartyMonHasFutureLevelMoves)
+	if (var(VAR_RESULT) == FALSE) {
+		special(BufferMonNickname)
+		msgbox(FutureLevelMoveTutor_Text_NoFutureMoves, MSGBOX_DEFAULT)
+		goto(FutureLevelMoveTutor_EventScript_ChooseMon)
+	}
+	special(BufferMonNickname)
+	msgbox(FutureLevelMoveTutor_Text_HasFutureMoves, MSGBOX_DEFAULT)
+	special(TeachFutureLevelMoves)
+	waitstate
+	lock
+	faceplayer
+	if (var(VAR_RESULT) == TRUE) {
+		removeitem(ITEM_HEART_SCALE, 1)
+		if (checkitem(ITEM_HEART_SCALE, 1)) {
+			msgbox(FutureLevelMoveTutor_Text_AnythingElse, MSGBOX_YESNO)
+			if (var(VAR_RESULT) == YES) {
+				goto(Common_EventScript_EliteMoveTutor)
+			}
+			goto(FutureLevelMoveTutor_EventScript_Cancel)
+		} else {
+			msgbox(FutureLevelMoveTutor_Text_NoMoreHeartScales, MSGBOX_DEFAULT)
+			releaseall
+			end
+		}
+	}
+	goto(FutureLevelMoveTutor_EventScript_Cancel)
+}
+
+script FutureLevelMoveTutor_EventScript_Cancel {
+	msgbox(FutureLevelMoveTutor_Text_ComeBack, MSGBOX_DEFAULT)
+	releaseall
+	end
+}
+
+text FutureLevelMoveTutor_Text_Intro {
+	format("I can teach a Pokémon a move it would normally learn a little later on, as it grows stronger.\pIt will cost you one Heart Scale per move.")
+}
+
+text FutureLevelMoveTutor_Text_ChooseMon {
+	format("Which Pokémon would you like to teach a higher-level move?")
+}
+
+text FutureLevelMoveTutor_Text_CantTeachEgg {
+	format("I'm sorry, but I can't teach moves to an Egg.")
+}
+
+text FutureLevelMoveTutor_Text_NoFutureMoves {
+	format("I'm sorry, but {STR_VAR_1} doesn't have any upcoming moves I can teach.")
+}
+
+text FutureLevelMoveTutor_Text_HasFutureMoves {
+	format("{STR_VAR_1} has moves it will learn at higher levels!\pLet me show you it's upcoming moves.")
+}
+
+text FutureLevelMoveTutor_Text_AnythingElse {
+	format("Would you like me to teach another move?")
+}
+
+text FutureLevelMoveTutor_Text_ComeBack {
+	format("Come back anytime if you want to teach one of your Pokémon a higher-level move.")
+}
+
+text FutureLevelMoveTutor_Text_NeedHeartScale {
+	format("I can teach Pokémon moves they would learn as they grow, but I require a Heart Scale as payment.\pCome back when you have one.")
+}
+
+text FutureLevelMoveTutor_Text_NoMoreHeartScales {
+	format("That's all for now!\pCome back with more Heart Scales if you want to learn additional moves.")
 }
 
 
