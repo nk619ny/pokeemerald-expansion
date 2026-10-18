@@ -486,8 +486,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 1000 : 300,
         .description = COMPOUND_STRING(
             "Works well on\n"
-            "Pokémon of the\n"
-            "opposite gender."),
+            "opposite-gender\n"
+            "egg group mates."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,

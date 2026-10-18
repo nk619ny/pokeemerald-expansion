@@ -189,7 +189,7 @@ static void ClearHatchedEggMoves(void)
 }
 
 // Check if two species share at least one egg group
-static bool8 SpeciesShareEggGroup(u16 species1, u16 species2)
+bool8 SpeciesShareEggGroup(u16 species1, u16 species2)
 {
     u32 i, j;
 
@@ -198,6 +198,7 @@ static bool8 SpeciesShareEggGroup(u16 species1, u16 species2)
         for (j = 0; j < EGG_GROUPS_PER_MON; j++)
         {
             if (gSpeciesInfo[species1].eggGroups[i] == gSpeciesInfo[species2].eggGroups[j]
+                && gSpeciesInfo[species1].eggGroups[i] != EGG_GROUP_NONE
                 && gSpeciesInfo[species1].eggGroups[i] != EGG_GROUP_NO_EGGS_DISCOVERED)
                 return TRUE;
         }

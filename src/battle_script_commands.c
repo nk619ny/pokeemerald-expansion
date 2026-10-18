@@ -53,7 +53,7 @@
 #include "data.h"
 #include "config_changes.h"
 #include "move.h"
-//#include "daycare.c"
+#include "daycare.h"
 #include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
@@ -9899,7 +9899,7 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         break;
     }
     case BALL_LOVE:
-        if (battleMon->species == gBattleMons[playerBattler].species)
+        if (SpeciesShareEggGroup(battleMon->species, gBattleMons[playerBattler].species))
         {
             u8 gender1 = GetMonGender(GetBattlerMon(wildMonBattler));
             u8 gender2 = GetMonGender(GetBattlerMon(playerBattler));

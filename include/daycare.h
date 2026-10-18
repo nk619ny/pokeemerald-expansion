@@ -35,6 +35,7 @@ void ShowDaycareLevelMenu(void);
 void ChooseSendDaycareMon(void);
 u8 GetEggMovesBySpecies(enum Species species, u16 *eggMoves);
 bool8 SpeciesCanLearnEggMove(enum Species species, enum Move move);
+bool8 SpeciesShareEggGroup(u16 species1, u16 species2);
 void StorePokemonInDaycare(struct Pokemon *mon, struct DaycareMon *daycareMon);
 u8 GetEggMoves(struct Pokemon *pokemon, u16 *eggMoves);
 
