@@ -72,7 +72,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle2::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToMakeMaze, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_TAUNT
+	giveitem ITEM_TM_BATON_PASS
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -84,7 +84,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle3::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToPreparePanels, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_BATON_PASS
+	giveitem ITEM_TM_ENCORE
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -96,7 +96,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle4::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToShoveBoulders, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_ENCORE
+	giveitem ITEM_TM_NASTY_PLOT
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -120,7 +120,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToInstallDoors, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_NASTY_PLOT
+	giveitem ITEM_TM_TAUNT
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -276,11 +276,13 @@ Route110_TrickHouseEnd_Text_AllNightToShoveBoulders:
 	.string "You're almost my equal in greatness by\n"
 	.string "one, two, three places!$"
 
+/*
 Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls:
 	.string "It took me all night to make MECHADOLLS\n"
 	.string "and another to think up the quiz…\p"
 	.string "You're almost my equal in greatness by\n"
 	.string "one, two places!$"
+*/
 
 Route110_TrickHouseEnd_Text_AllNightToInstallDoors:
 	.string "It took me all night to install\n"
@@ -356,3 +358,7 @@ Route110_TrickHouseEnd_Text_YoureIgnoringMe:
 	.string "Now that, I consider heartbreaking!$"
 
 `
+
+text Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls {
+	format("It took me all night to make MECHADOLLS, and I had to order the props all the way from Unova and Paldea…\pYou're almost my equal in greatness by\none, two places!")
+}

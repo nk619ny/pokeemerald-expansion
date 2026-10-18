@@ -1259,6 +1259,22 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_PONYTA
+    },
+    [INGAME_TRADE_HIPPOWDON] =
+    {
+        .nickname = _("HIPPOWDON"),
+        .species = SPECIES_HIPPOWDON,
+        .ivs = {20, 20, 20, 20, 20, 20},
+        .abilityNum = 2, // Sand Stream (Hidden Ability)
+        .otId = 28417,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x2B,
+        .heldItem = ITEM_NONE,
+        .mailNum = MAIL_NONE,
+        .otName = _("ACE"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_EEVEE
     }
 };
 

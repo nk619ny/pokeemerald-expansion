@@ -147,7 +147,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle2::
 # 74 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 # 75 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	giveitem ITEM_TM_TAUNT
+	giveitem ITEM_TM_BATON_PASS
 # 76 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 # 77 "data/maps/Route110_TrickHouseEnd/scripts.pory"
@@ -171,7 +171,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle3::
 # 86 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 # 87 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	giveitem ITEM_TM_BATON_PASS
+	giveitem ITEM_TM_ENCORE
 # 88 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 # 89 "data/maps/Route110_TrickHouseEnd/scripts.pory"
@@ -195,7 +195,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle4::
 # 98 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 # 99 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	giveitem ITEM_TM_ENCORE
+	giveitem ITEM_TM_NASTY_PLOT
 # 100 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 # 101 "data/maps/Route110_TrickHouseEnd/scripts.pory"
@@ -243,7 +243,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::
 # 122 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 # 123 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	giveitem ITEM_TM_NASTY_PLOT
+	giveitem ITEM_TM_TAUNT
 # 124 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 # 125 "data/maps/Route110_TrickHouseEnd/scripts.pory"
@@ -555,158 +555,171 @@ Route110_TrickHouseEnd_Text_AllNightToShoveBoulders:
 # 278 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 
 # 279 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls:
+/*
 # 280 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "It took me all night to make MECHADOLLS\n"
+Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls:
 # 281 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "and another to think up the quiz…\p"
+	.string "It took me all night to make MECHADOLLS\n"
 # 282 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "You're almost my equal in greatness by\n"
+	.string "and another to think up the quiz…\p"
 # 283 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "one, two places!$"
+	.string "You're almost my equal in greatness by\n"
 # 284 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "one, two places!$"
 # 285 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_AllNightToInstallDoors:
+*/
 # 286 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "It took me all night to install\n"
+
 # 287 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "the doors…\p"
+Route110_TrickHouseEnd_Text_AllNightToInstallDoors:
 # 288 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "You're almost my equal in greatness!$"
+	.string "It took me all night to install\n"
 # 289 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "the doors…\p"
 # 290 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_AllNightSettingUpArrows:
+	.string "You're almost my equal in greatness!$"
 # 291 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "It took me all night setting up arrows…\p"
+
 # 292 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "You're my equal in greatness!$"
+Route110_TrickHouseEnd_Text_AllNightSettingUpArrows:
 # 293 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "It took me all night setting up arrows…\p"
 # 294 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_AllNightPolishingFloors:
+	.string "You're my equal in greatness!$"
 # 295 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "It took me all night polishing floors…\p"
+
 # 296 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "You're above me in greatness!\n"
+Route110_TrickHouseEnd_Text_AllNightPolishingFloors:
 # 297 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Possibly…$"
+	.string "It took me all night polishing floors…\p"
 # 298 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "You're above me in greatness!\n"
 # 299 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry:
+	.string "Possibly…$"
 # 300 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Wh-what should I do?\n"
+
 # 301 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "My fountain of ideas for tricks has\l"
+Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry:
 # 302 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "run dry…\p"
+	.string "Wh-what should I do?\n"
 # 303 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Perhaps it is time I toured the country\n"
+	.string "My fountain of ideas for tricks has\l"
 # 304 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "on a quest to devise new tricks…$"
+	.string "run dry…\p"
 # 305 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "Perhaps it is time I toured the country\n"
 # 306 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent:
+	.string "on a quest to devise new tricks…$"
 # 307 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "I hate to admit defeat, but you have\n"
+
 # 308 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "bested me!\p"
+Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent:
 # 309 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Still, you must have been reeled in by\n"
+	.string "I hate to admit defeat, but you have\n"
 # 310 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "my charisma for you to visit me again\l"
+	.string "bested me!\p"
 # 311 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "and again. Yes, you must have!\p"
+	.string "Still, you must have been reeled in by\n"
 # 312 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "But that has nothing to do with my\n"
+	.string "my charisma for you to visit me again\l"
 # 313 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "losing!\p"
+	.string "and again. Yes, you must have!\p"
 # 314 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "In recognition of the friendship\n"
+	.string "But that has nothing to do with my\n"
 # 315 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "between you, the driven, and the genius\l"
+	.string "losing!\p"
 # 316 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "that is myself, I demand that you take\l"
+	.string "In recognition of the friendship\n"
 # 317 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "this keepsake!\p"
+	.string "between you, the driven, and the genius\l"
 # 318 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Actually there are two--\n"
+	.string "that is myself, I demand that you take\l"
 # 319 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "a RED TENT and a BLUE TENT.\l"
+	.string "this keepsake!\p"
 # 320 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Which do you prefer?$"
+	.string "Actually there are two--\n"
 # 321 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "a RED TENT and a BLUE TENT.\l"
 # 322 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_NoRoomInPC:
+	.string "Which do you prefer?$"
 # 323 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "What? No room in your PC?\n"
+
 # 324 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "What am I to make of that?\p"
+Route110_TrickHouseEnd_Text_NoRoomInPC:
 # 325 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "I wish I could say that, but I am much\n"
+	.string "What? No room in your PC?\n"
 # 326 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "too kind and caring, so come back later!$"
+	.string "What am I to make of that?\p"
 # 327 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "I wish I could say that, but I am much\n"
 # 328 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_LeavingOnJourney:
+	.string "too kind and caring, so come back later!$"
 # 329 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "… … … … … …\p"
+
 # 330 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "I am leaving on a journey of discovery.\n"
+Route110_TrickHouseEnd_Text_LeavingOnJourney:
 # 331 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "A quest in search of new tricks.\p"
+	.string "… … … … … …\p"
 # 332 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "I wish that you will one day visit and\n"
+	.string "I am leaving on a journey of discovery.\n"
 # 333 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "entertain me again.\p"
+	.string "A quest in search of new tricks.\p"
 # 334 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "And now, farewell!$"
+	.string "I wish that you will one day visit and\n"
 # 335 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "entertain me again.\p"
 # 336 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward:
+	.string "And now, farewell!$"
 # 337 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Fine!\n"
+
 # 338 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "You have earned this reward!$"
+Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward:
 # 339 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "Fine!\n"
 # 340 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_NoRoomForThis:
+	.string "You have earned this reward!$"
 # 341 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "What? Have you no room for this?\n"
+
 # 342 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "What manner of items do you carry?\p"
+Route110_TrickHouseEnd_Text_NoRoomForThis:
 # 343 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "But fine, since you've reached me,\n"
+	.string "What? Have you no room for this?\n"
 # 344 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "your reward will be with me till later.$"
+	.string "What manner of items do you carry?\p"
 # 345 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-
+	.string "But fine, since you've reached me,\n"
 # 346 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou:
+	.string "your reward will be with me till later.$"
 # 347 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Scrub that smug smirk from your face!\n"
-# 348 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "It's much too early to think you've won!\p"
-# 349 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "I'll make new tricks to stump you, I will.\n"
-# 350 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "You may mock me only when you're done.\p"
-# 351 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Come back for the next exciting\n"
-# 352 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "installment!$"
-# 353 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 
+# 348 "data/maps/Route110_TrickHouseEnd/scripts.pory"
+Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou:
+# 349 "data/maps/Route110_TrickHouseEnd/scripts.pory"
+	.string "Scrub that smug smirk from your face!\n"
+# 350 "data/maps/Route110_TrickHouseEnd/scripts.pory"
+	.string "It's much too early to think you've won!\p"
+# 351 "data/maps/Route110_TrickHouseEnd/scripts.pory"
+	.string "I'll make new tricks to stump you, I will.\n"
+# 352 "data/maps/Route110_TrickHouseEnd/scripts.pory"
+	.string "You may mock me only when you're done.\p"
+# 353 "data/maps/Route110_TrickHouseEnd/scripts.pory"
+	.string "Come back for the next exciting\n"
 # 354 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-Route110_TrickHouseEnd_Text_YoureIgnoringMe:
+	.string "installment!$"
 # 355 "data/maps/Route110_TrickHouseEnd/scripts.pory"
-	.string "Now, now! You're ignoring me now?\n"
+
 # 356 "data/maps/Route110_TrickHouseEnd/scripts.pory"
+Route110_TrickHouseEnd_Text_YoureIgnoringMe:
+# 357 "data/maps/Route110_TrickHouseEnd/scripts.pory"
+	.string "Now, now! You're ignoring me now?\n"
+# 358 "data/maps/Route110_TrickHouseEnd/scripts.pory"
 	.string "Now that, I consider heartbreaking!$"
+
+Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls::
+# 362 "data/maps/Route110_TrickHouseEnd/scripts.pory"
+	.string "It took me all night to make\n"
+	.string "MECHADOLLS, and I had to order the\l"
+	.string "props all the way from Unova and\l"
+	.string "Paldea…\p"
+	.string "You're almost my equal in greatness by\n"
+	.string "one, two places!$"

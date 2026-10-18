@@ -24,6 +24,8 @@ enum InGameTradeID
     INGAME_TRADE_ELECTRODE,
     INGAME_TRADE_TANGELA,
     INGAME_TRADE_SEEL,
+    // Custom
+    INGAME_TRADE_HIPPOWDON,
 };
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon

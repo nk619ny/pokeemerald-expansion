@@ -281,6 +281,7 @@ gSpecials::
 	def_special CreateInGameTradeFutureParadoxPokemon
 	def_special DoInGameTradeScene, waitstate=1
 	def_special GetTradeSpecies
+	def_special GetTradeMonAbilityNum
 	def_special GetWeekCount
 	def_special RetrieveLotteryNumber
 	def_special PickLotteryCornerTicket

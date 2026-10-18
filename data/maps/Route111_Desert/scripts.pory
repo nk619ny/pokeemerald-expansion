@@ -35,3 +35,88 @@ script  Route111_Desert_EventScript_SinkBoulder {
 }
 */
 `
+
+script Route111_Desert_EventScript_AceTrainerTrade {
+    lock
+    faceplayer
+    if (flag(FLAG_ROUTE111_DESERT_NPC_TRADE_COMPLETED)) {
+        msgbox(Route111_Desert_Text_AceTrainerTradeCompleted, MSGBOX_DEFAULT)
+        releaseall
+        end
+    }
+    msgbox(Route111_Desert_Text_AceTrainerTradeIntro, MSGBOX_YESNO)
+    if (var(VAR_RESULT) == NO) {
+        msgbox(Route111_Desert_Text_AceTrainerYouDontHaveEevee, MSGBOX_DEFAULT)
+        closemessage
+        releaseall
+        end
+    }
+    setvar(VAR_0x8005, INGAME_TRADE_HIPPOWDON)
+    specialvar(VAR_0x8009, GetInGameTradeSpeciesInfo)
+    msgbox(Route111_Desert_Text_AceTrainerWantToTrade, MSGBOX_YESNO)
+    if (var(VAR_RESULT) == NO) {
+        msgbox(Route111_Desert_Text_AceTrainerDeclined, MSGBOX_DEFAULT)
+        releaseall
+        end
+    }
+    chooseboxmon(SELECT_PC_MON_TRADE)
+    waitstate
+    if (var(VAR_0x8004) == PARTY_NOTHING_CHOSEN) {
+        msgbox(Route111_Desert_Text_AceTrainerDeclined, MSGBOX_DEFAULT)
+        releaseall
+        end
+    }
+    specialvar(VAR_RESULT, GetTradeSpecies)
+    if (var(VAR_RESULT) != SPECIES_EEVEE) {
+        msgbox(Route111_Desert_Text_AceTrainerNotEevee, MSGBOX_DEFAULT)
+        releaseall
+        end
+    }
+    // Only an Eevee with its Hidden Ability (slot 2, Adaptability) is accepted
+    specialvar(VAR_RESULT, GetTradeMonAbilityNum)
+    if (var(VAR_RESULT) != 2) {
+        msgbox(Route111_Desert_Text_AceTrainerWrongAbility, MSGBOX_DEFAULT)
+        releaseall
+        end
+    }
+    special(CreateInGameTradePokemon)
+    special(DoInGameTradeScene)
+    setflag(FLAG_ROUTE111_DESERT_NPC_TRADE_COMPLETED)
+    bufferspeciesname(STR_VAR_1, VAR_0x8009)
+    msgbox(Route111_Desert_Text_AceTrainerTradeDone, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+text Route111_Desert_Text_AceTrainerTradeIntro {
+    format("I built a sand team catching Pokémon in this desert. But I've gotten bored, and want to try different strategies.\pI don't know what weather condition I want to build around yet, though.\pI heard that rare Eevee can set whatever weather you want, based on the evolution stone you use.\pYou look pretty well traveled. Would you happen to have an Eevee like that?")
+}
+
+text Route111_Desert_Text_AceTrainerWantToTrade {
+    format("Wow, really?\NMy Hippowdon creates a Sandstorm, which none of Eevee's evolutions can do.\pWould you be interested in trading that Eevee for my Hippowdon?")
+}
+
+text Route111_Desert_Text_AceTrainerDeclined {
+    format("Suit yourself. If you ever want to create Sandstorms, come see me.")
+}
+
+text Route111_Desert_Text_AceTrainerYouDontHaveEevee {
+    format("Yeah, I think they're pretty rare. If you ever find a special Eevee like that, come see me.")
+}
+
+text Route111_Desert_Text_AceTrainerNotEevee {
+    format("That isn't an Eevee.\nI think I would only trade my sand-setter for an Eevee that can set whichever weather condition I choose.")
+}
+
+text Route111_Desert_Text_AceTrainerWrongAbility {
+    format("Hmm, this Eevee doesn't have the hidden ability I'm looking for.\pI need one with Adaptability.")
+}
+
+text Route111_Desert_Text_AceTrainerTradeDone {
+    format("Perfect! This Eevee will give me lots of options.\pTake good care of my Hippowdon!")
+}
+
+text Route111_Desert_Text_AceTrainerTradeCompleted {
+    format("I think I'm going to evolve this Eevee into a Glaceon.\pI better head up to Route 135 to build out my team.")
+}
+

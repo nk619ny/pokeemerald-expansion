@@ -4717,6 +4717,15 @@ enum Species GetTradeSpecies(void)
     return species;
 }
 
+// Returns the ability slot (0, 1, or 2 = Hidden Ability) of the selected mon, or 0xFF for an egg
+u32 GetTradeMonAbilityNum(void)
+{
+    struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
+    if (GetBoxMonData(boxmon, MON_DATA_IS_EGG))
+        return 0xFF;
+    return GetBoxMonData(boxmon, MON_DATA_ABILITY_NUM);
+}
+
 void CreateInGameTradePokemon(void)
 {
     CreateInGameTradePokemonInternal(gSpecialVar_0x8004, gSpecialVar_0x8005);
