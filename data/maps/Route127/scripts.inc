@@ -520,3 +520,8 @@ Route127_EventScript_CantCross127Yet::
 	.string "really bad right now.\p"
 	.string "You won't be able to head this way until\n"
 	.string "they calm down.$"
+
+Route127_Text_AidanIntro::
+# 249 "data/maps/Route127/scripts.pory"
+	.string "Dragons can soar through the skies and\n"
+	.string "glide through the seas.$"

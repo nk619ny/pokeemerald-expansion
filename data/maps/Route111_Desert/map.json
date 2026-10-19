@@ -98,13 +98,13 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_RUIN_MANIAC_ORAS",
       "x": 33,
-      "y": 40,
+      "y": 41,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 2,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "Route111_EventScript_Dusty",
       "flag": "0"
     },
@@ -200,6 +200,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route111_EventScript_New111Fossil",
       "flag": "FLAG_HIDE_ROUTE_111_DESERT_FOSSIL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M_ORAS",
+      "x": 22,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route111_Desert_EventScript_AceTrainerTrade",
+      "flag": "0"
     }
   ],
   "warp_events": [

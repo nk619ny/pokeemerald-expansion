@@ -9,11 +9,11 @@ MtPyre_6F_MapScripts::
 # 5 "data/maps/MtPyre_6F/scripts.pory"
 MtPyre_6F_EventScript_Valerie::
 # 6 "data/maps/MtPyre_6F/scripts.pory"
-	trainerbattle_single TRAINER_VALERIE_1, MtPyre_6F_Text_ValerieIntro, MtPyre_6F_Text_ValerieDefeat, MtPyre_6F_EventScript_RegisterValerie
+	trainerbattle_single TRAINER_VALERIE_1, MtPyre_6F_Text_ValerieIntro, MtPyre_6F_Text_ValerieDefeat
 # 7 "data/maps/MtPyre_6F/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 8 "data/maps/MtPyre_6F/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, MtPyre_6F_EventScript_RematchValerie
+	//goto_if_eq VAR_RESULT, TRUE, MtPyre_6F_EventScript_RematchValerie
 # 9 "data/maps/MtPyre_6F/scripts.pory"
 	msgbox MtPyre_6F_Text_ValeriePostBattle, MSGBOX_DEFAULT
 # 10 "data/maps/MtPyre_6F/scripts.pory"

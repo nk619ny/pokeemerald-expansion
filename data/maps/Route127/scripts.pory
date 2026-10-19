@@ -245,3 +245,7 @@ movement Route127_Movement_SwimmerReturnToSpot4 {
 movement Route127_Movement_SwimmerReturnToSpot5 {
 	walk_left * 6
 }
+
+text Route127_Text_AidanIntro {
+    format("Dragons can soar through the skies and glide through the seas.")
+}

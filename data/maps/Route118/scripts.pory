@@ -377,3 +377,23 @@ script Route118_EventScript_MariaTryGiveVitamin{
 	release
 	end
 }
+
+
+script Route118_EventScript_PlayRoughGirl {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_PLAY_ROUGH)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I like playing Pokémon with my friends!\NBut sometimes, things get a bit out of control."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_PLAY_ROUGH)
+		waitfanfare
+		closemessage
+	}
+	else{
+		msgbox(format("Do you want to play a game?"), MSGBOX_DEFAULT)
+		closemessage
+	}
+	releaseall
+	end
+}

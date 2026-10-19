@@ -3133,11 +3133,10 @@ Route120_Text_LeonelPostBattle:
 	.string "battling with your favorite Pokémon.$"
 
 Route121_Text_VanessaIntro:
-	.string "Will you play with my delightfully\n"
-	.string "pretty Pokémon?$"
+	.string "I've got the coolest Pokémon!$"
 
 Route121_Text_VanessaDefeat:
-	.string "This isn't what I meant!$"
+	.string "Where did you get those??$"
 
 Route121_Text_VanessaPostBattle:
 	.string "I'm going to a CONTEST in LILYCOVE.\p"
@@ -4092,10 +4091,6 @@ Route127_Text_RogerDefeat:
 Route127_Text_RogerPostBattle:
 	.string "My fishing line's doing a dance!\n"
 	.string "The tangle tango! Hahaha, snarl!$"
-
-Route127_Text_AidanIntro:
-	.string "BIRD Pokémon have excellent vision.\n"
-	.string "They spot prey from great heights.$"
 
 Route127_Text_AidanDefeat:
 	.string "Whew… I give up.$"

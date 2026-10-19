@@ -13,11 +13,11 @@ FortreeCity_House1_EventScript_Trader::
 # 7 "data/maps/FortreeCity_House1/scripts.pory"
 	faceplayer
 # 8 "data/maps/FortreeCity_House1/scripts.pory"
-	goto_if_set FLAG_FORTREE_NPC_TRADE_COMPLETED, FortreeCity_House1_EventScript_TradeCompleted
+	goto FortreeCity_House1_EventScript_TradeCompleted
 # 9 "data/maps/FortreeCity_House1/scripts.pory"
-	ingame_trade INGAME_TRADE_PLUSLE, FortreeCity_House1_Text_YouWillTradeWontYou, FortreeCity_House1_EventScript_DeclineTrade, FortreeCity_House1_EventScript_NotRequestedMon, FortreeCity_House1_Text_MonYouTakeCare
+	//ingame_trade INGAME_TRADE_PLUSLE, FortreeCity_House1_Text_YouWillTradeWontYou, FortreeCity_House1_EventScript_DeclineTrade, FortreeCity_House1_EventScript_NotRequestedMon, FortreeCity_House1_Text_MonYouTakeCare
 # 10 "data/maps/FortreeCity_House1/scripts.pory"
-	setflag FLAG_FORTREE_NPC_TRADE_COMPLETED
+	//setflag FLAG_FORTREE_NPC_TRADE_COMPLETED
 # 11 "data/maps/FortreeCity_House1/scripts.pory"
 	release
 # 12 "data/maps/FortreeCity_House1/scripts.pory"
@@ -133,24 +133,22 @@ FortreeCity_House1_Text_YouWontTradeMe:
 # 67 "data/maps/FortreeCity_House1/scripts.pory"
 FortreeCity_House1_Text_GoingToMakeVolbeatStrong:
 # 68 "data/maps/FortreeCity_House1/scripts.pory"
-	.string "I'm going to make VOLBEAT super\n"
+	.string "I'm going to make my VOLBEAT\n"
 # 69 "data/maps/FortreeCity_House1/scripts.pory"
-	.string "strong from this moment on!\p"
+	.string "super strong!$"
 # 70 "data/maps/FortreeCity_House1/scripts.pory"
-	.string "I hope you do the same with PLUSLE!$"
+
 # 71 "data/maps/FortreeCity_House1/scripts.pory"
-
-# 72 "data/maps/FortreeCity_House1/scripts.pory"
 FortreeCity_House1_Text_TradingMemoriesWithOthers:
-# 73 "data/maps/FortreeCity_House1/scripts.pory"
+# 72 "data/maps/FortreeCity_House1/scripts.pory"
 	.string "Trading Pokémon with others…\p"
-# 74 "data/maps/FortreeCity_House1/scripts.pory"
+# 73 "data/maps/FortreeCity_House1/scripts.pory"
 	.string "It's as if you're trading your own\n"
-# 75 "data/maps/FortreeCity_House1/scripts.pory"
+# 74 "data/maps/FortreeCity_House1/scripts.pory"
 	.string "memories with other people.$"
-# 76 "data/maps/FortreeCity_House1/scripts.pory"
+# 75 "data/maps/FortreeCity_House1/scripts.pory"
 
-# 77 "data/maps/FortreeCity_House1/scripts.pory"
+# 76 "data/maps/FortreeCity_House1/scripts.pory"
 FortreeCity_House1_Text_Zigzagoon:
-# 78 "data/maps/FortreeCity_House1/scripts.pory"
+# 77 "data/maps/FortreeCity_House1/scripts.pory"
 	.string "ZIGZAGOON: Gumomoh?$"

@@ -1185,6 +1185,18 @@ static const struct SpriteFrameImage sPicTable_ExpertFORAS[] = {
     overworld_frame(gObjectEventPic_ExpertFORAS, 2, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_PsychicMORAS[] = {
+    overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 0),
+    overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 1),
+    overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 2),
+    overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 3),
+    overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 4),
+    overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 5),
+    overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 6),
+    overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 7),
+    overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 8),
+};
+
 static const struct SpriteFrameImage sPicTable_ExpertMORAS[] = {
     overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 0),
     overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 1),
@@ -1971,6 +1983,19 @@ static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
 
 static const struct SpriteFrameImage sPicTable_ApricornTree[] = {
     overworld_frame(gObjectEventPic_ApricornTree, 2, 2, 0),
+};
+
+static const struct SpriteFrameImage sPicTable_Man[] = {
+    overworld_frame(gObjectEventPic_Man, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Man, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Man, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Man, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Man, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Man, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Man, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Man, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Man, 2, 4, 8),
+    overworld_frame(gObjectEventPic_Man, 2, 4, 9),
 };
 
 #if IS_FRLG

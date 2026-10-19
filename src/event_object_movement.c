@@ -586,6 +586,10 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_TM,              OBJ_EVENT_PAL_TAG_TM},
     {gObjectEventPal_Vitamin,         OBJ_EVENT_PAL_TAG_VITAMIN},
     {gObjectEventPal_MegaStone,       OBJ_EVENT_PAL_TAG_MEGA_STONE},
+    {gObjectEventPal_PsychicMORAS,          OBJ_EVENT_PAL_TAG_PSYCHIC_M_ORAS},
+
+    {gObjectEventPal_NpcWhite,              OBJ_EVENT_PAL_TAG_NPC_WHITE},
+    {gObjectEventPal_NpcWhiteReflection,    OBJ_EVENT_PAL_TAG_NPC_WHITE_REFLECTION},
 
 #if IS_FRLG
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_RED},

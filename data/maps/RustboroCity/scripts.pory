@@ -1362,3 +1362,17 @@ script RustboroCity_EventScript_SteelBeam {
 	releaseall
 	end
 }
+
+
+script RustboroCity_EventScript_PaybackThug {
+	lock
+	faceplayer
+	msgbox(format("If someone tries to punk you, make sure you get your payback."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_PAYBACK)
+	if(var(VAR_RESULT) == FALSE) {
+		giveitem(ITEM_TM_PAYBACK)
+		waitfanfare
+	}
+	releaseall
+	end
+}

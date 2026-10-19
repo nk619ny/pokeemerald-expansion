@@ -49,3 +49,21 @@ Route108_EventScript_CoryRematch::
 	end
 
 `
+
+script Route108_EventScript_ZenHeadbuttPsychic {
+	lock
+	faceplayer
+	msgbox(format("I come out to the ocean, far away from civilization, to better meditate.\pIt helps me reach a state of inner peace."), MSGBOX_NPC)
+	closemessage
+	checkitem(ITEM_TM_ZEN_HEADBUTT)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("If you can train your Pokémon to be as Zen as me, it can help them in battle, too."), MSGBOX_NPC)
+		closemessage
+		giveitem(ITEM_TM_ZEN_HEADBUTT)
+		waitfanfare
+		closemessage
+	}
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	releaseall
+	end
+}

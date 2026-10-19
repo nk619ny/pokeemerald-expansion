@@ -96,3 +96,51 @@ Route108_EventScript_CoryRematch::
 	msgbox Route108_Text_CoryRematchPostBattle, MSGBOX_AUTOCLOSE
 # 49 "data/maps/Route108/scripts.pory"
 	end
+
+Route108_EventScript_ZenHeadbuttPsychic::
+# 54 "data/maps/Route108/scripts.pory"
+	lock
+# 55 "data/maps/Route108/scripts.pory"
+	faceplayer
+# 56 "data/maps/Route108/scripts.pory"
+	msgbox Route108_EventScript_ZenHeadbuttPsychic_Text_0, MSGBOX_NPC
+# 57 "data/maps/Route108/scripts.pory"
+	closemessage
+# 58 "data/maps/Route108/scripts.pory"
+	checkitem ITEM_TM_ZEN_HEADBUTT
+# 59 "data/maps/Route108/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route108_EventScript_ZenHeadbuttPsychic_2
+Route108_EventScript_ZenHeadbuttPsychic_1:
+# 66 "data/maps/Route108/scripts.pory"
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+# 67 "data/maps/Route108/scripts.pory"
+	releaseall
+	end
+
+Route108_EventScript_ZenHeadbuttPsychic_2:
+# 60 "data/maps/Route108/scripts.pory"
+	msgbox Route108_EventScript_ZenHeadbuttPsychic_Text_1, MSGBOX_NPC
+# 61 "data/maps/Route108/scripts.pory"
+	closemessage
+# 62 "data/maps/Route108/scripts.pory"
+	giveitem ITEM_TM_ZEN_HEADBUTT
+# 63 "data/maps/Route108/scripts.pory"
+	waitfanfare
+# 64 "data/maps/Route108/scripts.pory"
+	closemessage
+	goto Route108_EventScript_ZenHeadbuttPsychic_1
+
+
+Route108_EventScript_ZenHeadbuttPsychic_Text_0:
+# 56 "data/maps/Route108/scripts.pory"
+	.string "I come out to the ocean, far away from\n"
+	.string "civilization, to better meditate.\p"
+	.string "It helps me reach a state of inner\n"
+	.string "peace.$"
+
+Route108_EventScript_ZenHeadbuttPsychic_Text_1:
+# 60 "data/maps/Route108/scripts.pory"
+	.string "If you can train your Pokémon to be as\n"
+	.string "Zen as me, it can help them in battle,\l"
+	.string "too.$"

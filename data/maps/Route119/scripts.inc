@@ -1378,6 +1378,68 @@ Route119_EventScript_AcrobaticsGirl_2:
 	goto Route119_EventScript_AcrobaticsGirl_1
 
 
+Route119_EventScript_SuperpowerBlackBelt::
+# 703 "data/maps/Route119/scripts.pory"
+	lock
+# 704 "data/maps/Route119/scripts.pory"
+	faceplayer
+# 705 "data/maps/Route119/scripts.pory"
+	checkitem ITEM_TM_SUPERPOWER
+# 706 "data/maps/Route119/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route119_EventScript_SuperpowerBlackBelt_2
+Route119_EventScript_SuperpowerBlackBelt_1:
+# 712 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_SuperpowerBlackBelt_Text_1, MSGBOX_DEFAULT
+# 713 "data/maps/Route119/scripts.pory"
+	closemessage
+# 714 "data/maps/Route119/scripts.pory"
+	release
+	end
+
+Route119_EventScript_SuperpowerBlackBelt_2:
+# 707 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_SuperpowerBlackBelt_Text_0, MSGBOX_DEFAULT
+# 708 "data/maps/Route119/scripts.pory"
+	closemessage
+# 709 "data/maps/Route119/scripts.pory"
+	giveitem ITEM_TM_SUPERPOWER
+# 710 "data/maps/Route119/scripts.pory"
+	waitfanfare
+	goto Route119_EventScript_SuperpowerBlackBelt_1
+
+
+Route119_EventScript_CyclingTriathleteMWildCharge::
+# 720 "data/maps/Route119/scripts.pory"
+	lock
+# 721 "data/maps/Route119/scripts.pory"
+	faceplayer
+# 722 "data/maps/Route119/scripts.pory"
+	checkitem ITEM_TM_WILD_CHARGE
+# 723 "data/maps/Route119/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route119_EventScript_CyclingTriathleteMWildCharge_2
+# 727 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_CyclingTriathleteMWildCharge_Text_0, MSGBOX_DEFAULT
+# 728 "data/maps/Route119/scripts.pory"
+	closemessage
+# 729 "data/maps/Route119/scripts.pory"
+	giveitem ITEM_TM_WILD_CHARGE
+# 730 "data/maps/Route119/scripts.pory"
+	waitfanfare
+# 731 "data/maps/Route119/scripts.pory"
+	closemessage
+Route119_EventScript_CyclingTriathleteMWildCharge_1:
+# 733 "data/maps/Route119/scripts.pory"
+	releaseall
+	end
+
+Route119_EventScript_CyclingTriathleteMWildCharge_2:
+# 724 "data/maps/Route119/scripts.pory"
+	goto Route119_EventScript_CyclingTriathleteM
+	goto Route119_EventScript_CyclingTriathleteMWildCharge_1
+
+
 Route119_EventScript_DualWingbeatKeeper_Text_0:
 # 625 "data/maps/Route119/scripts.pory"
 	.string "When your opponents are expecting a\n"
@@ -1433,3 +1495,19 @@ Route119_EventScript_AcrobaticsGirl_Text_1:
 # 696 "data/maps/Route119/scripts.pory"
 	.string "The way Winona moves is really a marvel\n"
 	.string "to watch.$"
+
+Route119_EventScript_SuperpowerBlackBelt_Text_0:
+# 707 "data/maps/Route119/scripts.pory"
+	.string "I'm trying to muster all of my strength\n"
+	.string "to into one incredible burst!\p"
+	.string "Hrrrragghhh!$"
+
+Route119_EventScript_SuperpowerBlackBelt_Text_1:
+# 712 "data/maps/Route119/scripts.pory"
+	.string "Phew. I'm exhausted.$"
+
+Route119_EventScript_CyclingTriathleteMWildCharge_Text_0:
+# 727 "data/maps/Route119/scripts.pory"
+	.string "I dream about riding down Route 119 at\n"
+	.string "full speed, with the wind and sounds of\l"
+	.string "thunder all around me!$"

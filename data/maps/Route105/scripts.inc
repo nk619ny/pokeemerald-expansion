@@ -365,6 +365,35 @@ Route105_EventScript_ImaniTryGiveVitamin_9:
 	goto Route105_EventScript_ImaniTryGiveVitamin_8
 
 
+Route105_EventScript_DragonPulseTamer::
+# 206 "data/maps/Route105/scripts.pory"
+	lock
+# 207 "data/maps/Route105/scripts.pory"
+	faceplayer
+# 208 "data/maps/Route105/scripts.pory"
+	msgbox Route105_EventScript_DragonPulseTamer_Text_0, MSGBOX_DEFAULT
+# 209 "data/maps/Route105/scripts.pory"
+	checkitem ITEM_TM_DRAGON_PULSE
+# 210 "data/maps/Route105/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route105_EventScript_DragonPulseTamer_2
+Route105_EventScript_DragonPulseTamer_1:
+# 216 "data/maps/Route105/scripts.pory"
+	releaseall
+	end
+
+Route105_EventScript_DragonPulseTamer_2:
+# 211 "data/maps/Route105/scripts.pory"
+	msgbox Route105_EventScript_DragonPulseTamer_Text_1, MSGBOX_DEFAULT
+# 212 "data/maps/Route105/scripts.pory"
+	closemessage
+# 213 "data/maps/Route105/scripts.pory"
+	giveitem ITEM_TM_DRAGON_PULSE
+# 214 "data/maps/Route105/scripts.pory"
+	waitfanfare
+	goto Route105_EventScript_DragonPulseTamer_1
+
+
 Route105_EventScript_ScaleShotFisherman_Text_0:
 # 109 "data/maps/Route105/scripts.pory"
 	.string "There are so many dazzling fish in the\n"
@@ -426,3 +455,13 @@ Route105_EventScript_ImaniTryGiveVitamin_Text_2:
 	.string "That's a mistake - drop some weight and\n"
 	.string "come back before I take these vitamins\l"
 	.string "myself!$"
+
+Route105_EventScript_DragonPulseTamer_Text_0:
+# 208 "data/maps/Route105/scripts.pory"
+	.string "I'm training my dragons to shoot a wave\n"
+	.string "of energy across the ocean.$"
+
+Route105_EventScript_DragonPulseTamer_Text_1:
+# 211 "data/maps/Route105/scripts.pory"
+	.string "You should witness the incredible power\n"
+	.string "of Dragons, firsthand!$"

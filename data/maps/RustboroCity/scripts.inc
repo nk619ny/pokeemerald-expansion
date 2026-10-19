@@ -2700,6 +2700,31 @@ RustboroCity_EventScript_SteelBeam_2:
 	goto RustboroCity_EventScript_SteelBeam_1
 
 
+RustboroCity_EventScript_PaybackThug::
+# 1368 "data/maps/RustboroCity/scripts.pory"
+	lock
+# 1369 "data/maps/RustboroCity/scripts.pory"
+	faceplayer
+# 1370 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_PaybackThug_Text_0, MSGBOX_DEFAULT
+# 1371 "data/maps/RustboroCity/scripts.pory"
+	checkitem ITEM_TM_PAYBACK
+# 1372 "data/maps/RustboroCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq RustboroCity_EventScript_PaybackThug_2
+RustboroCity_EventScript_PaybackThug_1:
+# 1376 "data/maps/RustboroCity/scripts.pory"
+	releaseall
+	end
+
+RustboroCity_EventScript_PaybackThug_2:
+# 1373 "data/maps/RustboroCity/scripts.pory"
+	giveitem ITEM_TM_PAYBACK
+# 1374 "data/maps/RustboroCity/scripts.pory"
+	waitfanfare
+	goto RustboroCity_EventScript_PaybackThug_1
+
+
 RustboroCity_EventScript_SteelBeam_Text_0:
 # 1354 "data/maps/RustboroCity/scripts.pory"
 	.string "Rustboro is one of the biggest cities in\n"
@@ -2712,6 +2737,11 @@ RustboroCity_EventScript_SteelBeam_Text_1:
 	.string "Any traveler who passes through\n"
 	.string "Rustboro should learn the strength of\l"
 	.string "Steel.$"
+
+RustboroCity_EventScript_PaybackThug_Text_0:
+# 1370 "data/maps/RustboroCity/scripts.pory"
+	.string "If someone tries to punk you, make sure\n"
+	.string "you get your payback.$"
 
 RustboroCity_Text_MayImNotGoingToLose::
 # 1339 "data/maps/RustboroCity/scripts.pory"

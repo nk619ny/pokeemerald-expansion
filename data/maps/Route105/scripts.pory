@@ -199,3 +199,20 @@ script Route105_EventScript_ImaniTryGiveVitamin {
 	release
 	end
 }
+
+
+
+script Route105_EventScript_DragonPulseTamer {
+	lock
+	faceplayer
+	msgbox(format("I'm training my dragons to shoot a wave of energy across the ocean."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_DRAGON_PULSE)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("You should witness the incredible power of Dragons, firsthand!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_DRAGON_PULSE)
+		waitfanfare
+	}
+	releaseall
+	end
+}

@@ -541,6 +541,21 @@ const u16 gTrainerPalette_TriathleteRunnerMORAS80[] = INCGFX_U16("graphics/train
 const u32 gTrainerFrontPic_TriathleteBikerMORAS80[] = INCGFX_U32("graphics/trainers/front_pics/triathlete-m-biker-oras-80.png", ".4bpp.smol");
 const u16 gTrainerPalette_TriathleteBikerMORAS80[] = INCGFX_U16("graphics/trainers/front_pics/triathlete-m-biker-oras-80.png", ".gbapal");
 
+const u32 gTrainerFrontPic_ArchieORAS80[] = INCGFX_U32("graphics/trainers/front_pics/archie-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_ArchieORAS80[] = INCGFX_U16("graphics/trainers/front_pics/archie-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_MaxieORAS80[] = INCGFX_U32("graphics/trainers/front_pics/maxie-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_MaxieORAS80[] = INCGFX_U16("graphics/trainers/front_pics/maxie-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_CourtneyORAS80[] = INCGFX_U32("graphics/trainers/front_pics/courtney-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_CourtneyORAS80[] = INCGFX_U16("graphics/trainers/front_pics/courtney-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_BackpackerORAS80[] = INCGFX_U32("graphics/trainers/front_pics/backpacker-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_BackpackerORAS80[] = INCGFX_U16("graphics/trainers/front_pics/backpacker-oras-80.png", ".gbapal");
+
+const u32 gTrainerFrontPic_StreetThugORAS80[] = INCGFX_U32("graphics/trainers/front_pics/street-thug-oras-80.png", ".4bpp.smol");
+const u16 gTrainerPalette_StreetThugORAS80[] = INCGFX_U16("graphics/trainers/front_pics/street-thug-oras-80.png", ".gbapal");
+
 const u32 gTrainerFrontPic_OldCoupleORAS80[] = INCGFX_U32("graphics/trainers/front_pics/old-couple-oras-80.png", ".4bpp.smol");
 const u16 gTrainerPalette_OldCoupleORAS80[] = INCGFX_U16("graphics/trainers/front_pics/old-couple-oras-80.png", ".gbapal");
 
@@ -1870,6 +1885,26 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_TRIATHLETE_M_BIKER_ORAS_80] =
     {
         .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_TriathleteBikerMORAS80, gTrainerPalette_TriathleteBikerMORAS80),
+    },
+    [TRAINER_PIC_ARCHIE_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_ArchieORAS80, gTrainerPalette_ArchieORAS80),
+    },
+    [TRAINER_PIC_MAXIE_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_MaxieORAS80, gTrainerPalette_MaxieORAS80),
+    },
+    [TRAINER_PIC_COURTNEY_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_CourtneyORAS80, gTrainerPalette_CourtneyORAS80),
+    },
+    [TRAINER_PIC_BACKPACKER_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_BackpackerORAS80, gTrainerPalette_BackpackerORAS80),
+    },
+    [TRAINER_PIC_STREET_THUG_ORAS_80] =
+    {
+        .frontPic = TRAINER_FRONT_PIC_80x80(gTrainerFrontPic_StreetThugORAS80, gTrainerPalette_StreetThugORAS80),
     },
 
     [TRAINER_PIC_PROFESSOR_TURO] =

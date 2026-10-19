@@ -3298,6 +3298,25 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StreetThugORAS = {
         .affineAnims = gDummySpriteAffineAnimTable,
     };
 
+        const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicMORAS = {
+        .tileTag = TAG_NONE,
+        .paletteTag = OBJ_EVENT_PAL_TAG_PSYCHIC_M_ORAS,
+        .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+        .size = 256,
+        .width = 16,
+        .height = 32,
+        .paletteSlot = PALSLOT_NPC_1,
+        .shadowSize = SHADOW_SIZE_M,
+        .inanimate = FALSE,
+        .compressed = FALSE,
+        .tracks = TRACKS_FOOT,
+        .oam = &gObjectEventBaseOam_16x32,
+        .subspriteTables = sOamTables_16x32,
+        .anims = sAnimTable_Standard,
+        .images = sPicTable_PsychicMORAS,
+        .affineAnims = gDummySpriteAffineAnimTable,
+    };
+
     const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichBoyORAS = {
         .tileTag = TAG_NONE,
         .paletteTag = OBJ_EVENT_PAL_TAG_RICH_BOY_ORAS,
@@ -3884,6 +3903,25 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DuskullDoll = {
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Inanimate,
     .images = sPicTable_DuskullDoll,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Man = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_WHITE,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_4,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_Man,
+    .affineAnims = gDummySpriteAffineAnimTable,
 };
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WynautDoll = {

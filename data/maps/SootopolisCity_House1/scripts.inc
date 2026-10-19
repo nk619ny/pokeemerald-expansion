@@ -17,7 +17,7 @@ SootopolisCity_House1_EventScript_BrickBreakBlackBelt::
 # 9 "data/maps/SootopolisCity_House1/scripts.pory"
 	msgbox SootopolisCity_House1_Text_DevelopedThisTM, MSGBOX_DEFAULT
 # 10 "data/maps/SootopolisCity_House1/scripts.pory"
-	giveitem ITEM_TM_BRICK_BREAK
+	giveitem ITEM_TM_PSYCHIC_FANGS
 # 11 "data/maps/SootopolisCity_House1/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 12 "data/maps/SootopolisCity_House1/scripts.pory"
@@ -70,17 +70,13 @@ SootopolisCity_House1_Text_DevelopedThisTM:
 	.string "I developed a shattering TM.\n"
 # 36 "data/maps/SootopolisCity_House1/scripts.pory"
 	.string "I bequeath it to you!$"
-# 37 "data/maps/SootopolisCity_House1/scripts.pory"
 
-# 38 "data/maps/SootopolisCity_House1/scripts.pory"
-SootopolisCity_House1_Text_ExplainBrickBreak:
+SootopolisCity_House1_Text_ExplainBrickBreak::
 # 39 "data/maps/SootopolisCity_House1/scripts.pory"
-	.string "TM31 contains BRICK BREAK! It's a move\n"
-# 40 "data/maps/SootopolisCity_House1/scripts.pory"
-	.string "so horrible that I can't describe it.$"
-# 41 "data/maps/SootopolisCity_House1/scripts.pory"
+	.string "This TM contains Psychic Fangs! It's a\n"
+	.string "move so horrible that I can't describe\l"
+	.string "it.$"
 
-# 42 "data/maps/SootopolisCity_House1/scripts.pory"
-SootopolisCity_House1_Text_Kecleon:
-# 43 "data/maps/SootopolisCity_House1/scripts.pory"
-	.string "KECLEON: Puu puhyaah.$"
+SootopolisCity_House1_Text_Kecleon::
+# 45 "data/maps/SootopolisCity_House1/scripts.pory"
+	.string "BRUXISH: Kaaa waa waa waa!$"

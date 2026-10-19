@@ -501,6 +501,9 @@ const u32 gObjectEventPic_TriathleteRunningFORAS[] = INCGFX_U32("graphics/object
 const u16 gObjectEventPal_TriathleteRunningFORAS[] = INCGFX_U16("graphics/object_events/pics/people/triathlete_running_f_oras.png", ".gbapal");
 const u32 gObjectEventPic_Man[] = INCGFX_U32("graphics/object_events/pics/people/man.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_Man[] = INCGFX_U16("graphics/object_events/pics/people/man.png", ".gbapal");
+const u32 gObjectEventPic_PsychicMORAS[] = INCGFX_U32("graphics/object_events/pics/people/psychic_m_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_PsychicMORAS[] = INCGFX_U16("graphics/object_events/pics/people/psychic_m_oras.png", ".gbapal");
+
 
 
 // Custom item icons
@@ -596,6 +599,9 @@ const u16 gFieldEffectObjectPalette_CaveDust[] = INCGFX_U16("graphics/field_effe
 const u32 gObjectEventPic_ApricornTree[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_tree.png", ".4bpp", "-mwidth 2 -mheight 2");
 
 const u32 gFieldEffectObjectPic_ShinySparkle[] = INCGFX_U32("graphics/field_effects/pics/shiny_sparkle.png", ".4bpp", "-mwidth 2 -mheight 4");
+
+const u16 gObjectEventPal_NpcWhite[] = INCGFX_U16("graphics/object_events/palettes/npc_white.pal", ".gbapal");
+const u16 gObjectEventPal_NpcWhiteReflection[] = INCGFX_U16("graphics/object_events/palettes/npc_white_reflection.pal", ".gbapal");
 
 #if IS_FRLG
 

@@ -698,3 +698,38 @@ script Route119_EventScript_AcrobaticsGirl {
 	releaseall
 	end
 }
+
+script Route119_EventScript_SuperpowerBlackBelt {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_SUPERPOWER)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("I'm trying to muster all of my strength to into one incredible burst!\pHrrrragghhh!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_SUPERPOWER)
+		waitfanfare
+	}
+	msgbox(format("Phew. I'm exhausted."), MSGBOX_DEFAULT)
+	closemessage
+	release
+	end
+}
+
+
+script Route119_EventScript_CyclingTriathleteMWildCharge {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_WILD_CHARGE)
+	if(var(VAR_RESULT) == TRUE) {
+		goto(Route119_EventScript_CyclingTriathleteM)
+	}
+	else{
+		msgbox(format("I dream about riding down Route 119 at full speed, with the wind and sounds of thunder all around me!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_WILD_CHARGE)
+		waitfanfare
+		closemessage
+	}
+	releaseall
+	end
+}

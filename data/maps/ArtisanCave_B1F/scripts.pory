@@ -8,3 +8,19 @@ ArtisanCave_B1F_OnTransition:
 	end
 
 `
+
+script ArtisanCave_B1F_EventScript_SwordsDancer {
+	lock
+	faceplayer
+	msgbox(format("I come here often seeking inspiration from the Pokémon in this cave."), MSGBOX_DEFAULT)
+	checkitem(ITEM_TM_SWORDS_DANCE)
+	if(var(VAR_RESULT) == FALSE) {
+		lockall
+		msgbox(format("Your Pokémon can take inspiration from this beautiful choreography, too."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_SWORDS_DANCE)
+		waitfanfare
+	}
+	releaseall
+	end
+}

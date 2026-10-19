@@ -291,6 +291,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TriathleteR
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Vitamin;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MegaStone;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicMORAS;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedBike;
@@ -756,6 +757,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_TM] =                       &gObjectEventGraphicsInfo_TM,
     [OBJ_EVENT_GFX_VITAMIN] =                  &gObjectEventGraphicsInfo_Vitamin,
     [OBJ_EVENT_GFX_MEGA_STONE] =               &gObjectEventGraphicsInfo_MegaStone,
+    [OBJ_EVENT_GFX_PSYCHIC_M_ORAS] =           &gObjectEventGraphicsInfo_PsychicMORAS,
+    [OBJ_EVENT_GFX_MAN]                      = &gObjectEventGraphicsInfo_Man,
+    
 #if IS_FRLG
     [OBJ_EVENT_GFX_RED_NORMAL] =               &gObjectEventGraphicsInfo_RedNormal,
     [OBJ_EVENT_GFX_RED_BIKE] =                 &gObjectEventGraphicsInfo_RedBike,

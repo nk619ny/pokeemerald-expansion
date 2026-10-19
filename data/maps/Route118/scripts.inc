@@ -701,6 +701,39 @@ Route118_EventScript_MariaTryGiveVitamin_9:
 	goto Route118_EventScript_MariaTryGiveVitamin_8
 
 
+Route118_EventScript_PlayRoughGirl::
+# 383 "data/maps/Route118/scripts.pory"
+	lock
+# 384 "data/maps/Route118/scripts.pory"
+	faceplayer
+# 385 "data/maps/Route118/scripts.pory"
+	checkitem ITEM_TM_PLAY_ROUGH
+# 386 "data/maps/Route118/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route118_EventScript_PlayRoughGirl_2
+# 394 "data/maps/Route118/scripts.pory"
+	msgbox Route118_EventScript_PlayRoughGirl_Text_1, MSGBOX_DEFAULT
+# 395 "data/maps/Route118/scripts.pory"
+	closemessage
+Route118_EventScript_PlayRoughGirl_1:
+# 397 "data/maps/Route118/scripts.pory"
+	releaseall
+	end
+
+Route118_EventScript_PlayRoughGirl_2:
+# 387 "data/maps/Route118/scripts.pory"
+	msgbox Route118_EventScript_PlayRoughGirl_Text_0, MSGBOX_DEFAULT
+# 388 "data/maps/Route118/scripts.pory"
+	closemessage
+# 389 "data/maps/Route118/scripts.pory"
+	giveitem ITEM_TM_PLAY_ROUGH
+# 390 "data/maps/Route118/scripts.pory"
+	waitfanfare
+# 391 "data/maps/Route118/scripts.pory"
+	closemessage
+	goto Route118_EventScript_PlayRoughGirl_1
+
+
 Route118_EventScript_GiveEviolite_Text_0:
 # 319 "data/maps/Route118/scripts.pory"
 	.string "Everyone talks about evolution making\n"
@@ -724,6 +757,16 @@ Route118_EventScript_MariaTryGiveVitamin_Text_2:
 # 375 "data/maps/Route118/scripts.pory"
 	.string "Oh, you don't think you or your Pokémon\n"
 	.string "need supplements?$"
+
+Route118_EventScript_PlayRoughGirl_Text_0:
+# 387 "data/maps/Route118/scripts.pory"
+	.string "I like playing Pokémon with my friends!\n"
+	.string "But sometimes, things get a bit out of\l"
+	.string "control.$"
+
+Route118_EventScript_PlayRoughGirl_Text_1:
+# 394 "data/maps/Route118/scripts.pory"
+	.string "Do you want to play a game?$"
 
 Route118_Text_AmeliaIntro::
 # 336 "data/maps/Route118/scripts.pory"
