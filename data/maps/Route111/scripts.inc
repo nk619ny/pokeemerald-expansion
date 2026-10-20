@@ -913,11 +913,11 @@ Route111_EventScript_Becky::
 # 457 "data/maps/Route111/scripts.pory"
 Route111_EventScript_Dusty::
 # 458 "data/maps/Route111/scripts.pory"
-	trainerbattle_single TRAINER_DUSTY_1, Route111_Text_DustyIntro, Route111_Text_DustyDefeat, Route111_EventScript_RegisterDusty
+	trainerbattle_single TRAINER_DUSTY_1, Route111_Text_DustyIntro, Route111_Text_DustyDefeat
 # 459 "data/maps/Route111/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 460 "data/maps/Route111/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchDusty
+	//goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchDusty
 # 461 "data/maps/Route111/scripts.pory"
 	msgbox Route111_Text_DustyPostBattle, MSGBOX_DEFAULT
 # 462 "data/maps/Route111/scripts.pory"
@@ -985,11 +985,11 @@ Route111_EventScript_Daisuke::
 # 493 "data/maps/Route111/scripts.pory"
 Route111_EventScript_Wilton::
 # 494 "data/maps/Route111/scripts.pory"
-	trainerbattle_single TRAINER_WILTON_1, Route111_Text_WiltonIntro, Route111_Text_WiltonDefeat, Route111_EventScript_RegisterWilton
+	trainerbattle_single TRAINER_WILTON_1, Route111_Text_WiltonIntro, Route111_Text_WiltonDefeat
 # 495 "data/maps/Route111/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 496 "data/maps/Route111/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchWilton
+	//goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchWilton
 # 497 "data/maps/Route111/scripts.pory"
 	msgbox Route111_Text_WiltonPostBattle, MSGBOX_DEFAULT
 # 498 "data/maps/Route111/scripts.pory"
@@ -1027,11 +1027,11 @@ Route111_EventScript_RematchWilton::
 # 514 "data/maps/Route111/scripts.pory"
 Route111_EventScript_Brooke::
 # 515 "data/maps/Route111/scripts.pory"
-	trainerbattle_single TRAINER_BROOKE_1, Route111_Text_BrookeIntro, Route111_Text_BrookeDefeat, Route111_EventScript_RegisterBrooke
+	trainerbattle_single TRAINER_BROOKE_1, Route111_Text_BrookeIntro, Route111_Text_BrookeDefeat
 # 516 "data/maps/Route111/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 517 "data/maps/Route111/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchBrooke
+	//goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_RematchBrooke
 # 518 "data/maps/Route111/scripts.pory"
 	msgbox Route111_Text_BrookePostBattle, MSGBOX_DEFAULT
 # 519 "data/maps/Route111/scripts.pory"

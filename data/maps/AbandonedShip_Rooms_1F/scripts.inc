@@ -27,11 +27,11 @@ AbandonedShip_Rooms_1F_EventScript_Demetrius::
 # 14 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 AbandonedShip_Rooms_1F_EventScript_Thalia::
 # 15 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	trainerbattle_single TRAINER_THALIA_1, AbandonedShip_Rooms_1F_Text_ThaliaIntro, AbandonedShip_Rooms_1F_Text_ThaliaDefeat, AbandonedShip_Rooms_1F_EventScript_RegisterThalia
+	trainerbattle_single TRAINER_THALIA_1, AbandonedShip_Rooms_1F_Text_ThaliaIntro, AbandonedShip_Rooms_1F_Text_ThaliaDefeat
 # 16 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 17 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms_1F_EventScript_ThaliaRematch
+	//goto_if_eq VAR_RESULT, TRUE, AbandonedShip_Rooms_1F_EventScript_ThaliaRematch
 # 18 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"
 	msgbox AbandonedShip_Rooms_1F_Text_ThaliaPostBattle, MSGBOX_DEFAULT
 # 19 "data/maps/AbandonedShip_Rooms_1F/scripts.pory"

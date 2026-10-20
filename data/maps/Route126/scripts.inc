@@ -81,11 +81,11 @@ Route126_EventScript_Sienna::
 # 41 "data/maps/Route126/scripts.pory"
 Route126_EventScript_Pablo::
 # 42 "data/maps/Route126/scripts.pory"
-	trainerbattle_single TRAINER_PABLO_1, Route126_Text_PabloIntro, Route126_Text_PabloDefeat, Route126_EventScript_RegisterPablo
+	trainerbattle_single TRAINER_PABLO_1, Route126_Text_PabloIntro, Route126_Text_PabloDefeat
 # 43 "data/maps/Route126/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 44 "data/maps/Route126/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route126_EventScript_RematchPablo
+	//goto_if_eq VAR_RESULT, TRUE, Route126_EventScript_RematchPablo
 # 45 "data/maps/Route126/scripts.pory"
 	msgbox Route126_Text_PabloPostBattle, MSGBOX_DEFAULT
 # 46 "data/maps/Route126/scripts.pory"

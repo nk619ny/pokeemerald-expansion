@@ -49,11 +49,11 @@ Route124_EventScript_Roland::
 # 25 "data/maps/Route124/scripts.pory"
 Route124_EventScript_Jenny::
 # 26 "data/maps/Route124/scripts.pory"
-	trainerbattle_single TRAINER_JENNY_1, Route124_Text_JennyIntro, Route124_Text_JennyDefeat, Route124_EventScript_RegisterJenny
+	trainerbattle_single TRAINER_JENNY_1, Route124_Text_JennyIntro, Route124_Text_JennyDefeat
 # 27 "data/maps/Route124/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 28 "data/maps/Route124/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route124_EventScript_RematchJenny
+	//goto_if_eq VAR_RESULT, TRUE, Route124_EventScript_RematchJenny
 # 29 "data/maps/Route124/scripts.pory"
 	msgbox Route124_Text_JennyPostBattle, MSGBOX_DEFAULT
 # 30 "data/maps/Route124/scripts.pory"

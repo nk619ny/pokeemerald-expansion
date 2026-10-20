@@ -29,11 +29,11 @@ MtPyre_3F_EventScript_Kayla::
 # 15 "data/maps/MtPyre_3F/scripts.pory"
 MtPyre_3F_EventScript_Gabrielle::
 # 16 "data/maps/MtPyre_3F/scripts.pory"
-	trainerbattle_single TRAINER_GABRIELLE_1, MtPyre_3F_Text_GabrielleIntro, MtPyre_3F_Text_GabrielleDefeat, MtPyre_3F_EventScript_RegisterGabrielle
+	trainerbattle_single TRAINER_GABRIELLE_1, MtPyre_3F_Text_GabrielleIntro, MtPyre_3F_Text_GabrielleDefeat
 # 17 "data/maps/MtPyre_3F/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 18 "data/maps/MtPyre_3F/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, MtPyre_3F_EventScript_RematchGabrielle
+	//goto_if_eq VAR_RESULT, TRUE, MtPyre_3F_EventScript_RematchGabrielle
 # 19 "data/maps/MtPyre_3F/scripts.pory"
 	msgbox MtPyre_3F_Text_GabriellePostBattle, MSGBOX_DEFAULT
 # 20 "data/maps/MtPyre_3F/scripts.pory"

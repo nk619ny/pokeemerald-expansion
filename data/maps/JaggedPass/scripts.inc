@@ -205,11 +205,11 @@ JaggedPass_EventScript_Eric::
 # 103 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_Diana::
 # 104 "data/maps/JaggedPass/scripts.pory"
-	trainerbattle_single TRAINER_DIANA_1, JaggedPass_Text_DianaIntro, JaggedPass_Text_DianaDefeat, JaggedPass_EventScript_RegisterDiana
+	trainerbattle_single TRAINER_DIANA_1, JaggedPass_Text_DianaIntro, JaggedPass_Text_DianaDefeat
 # 105 "data/maps/JaggedPass/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 106 "data/maps/JaggedPass/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_DianaRematch
+	//goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_DianaRematch
 # 107 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_DianaPostBattle, MSGBOX_DEFAULT
 # 108 "data/maps/JaggedPass/scripts.pory"
@@ -245,11 +245,11 @@ JaggedPass_EventScript_DianaRematch::
 # 123 "data/maps/JaggedPass/scripts.pory"
 JaggedPass_EventScript_Ethan::
 # 124 "data/maps/JaggedPass/scripts.pory"
-	trainerbattle_single TRAINER_ETHAN_1, JaggedPass_Text_EthanIntro, JaggedPass_Text_EthanDefeat, JaggedPass_EventScript_RegisterEthan
+	trainerbattle_single TRAINER_ETHAN_1, JaggedPass_Text_EthanIntro, JaggedPass_Text_EthanDefeat
 # 125 "data/maps/JaggedPass/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 126 "data/maps/JaggedPass/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_EthanRematch
+	//goto_if_eq VAR_RESULT, TRUE, JaggedPass_EventScript_EthanRematch
 # 127 "data/maps/JaggedPass/scripts.pory"
 	msgbox JaggedPass_Text_EthanPostBattle, MSGBOX_DEFAULT
 # 128 "data/maps/JaggedPass/scripts.pory"

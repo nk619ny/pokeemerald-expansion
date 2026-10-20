@@ -623,11 +623,11 @@ Route120_EventScript_Jenna::
 # 312 "data/maps/Route120/scripts.pory"
 Route120_EventScript_Jeffrey::
 # 313 "data/maps/Route120/scripts.pory"
-	trainerbattle_single TRAINER_JEFFREY_1, Route120_Text_JeffreyIntro, Route120_Text_JeffreyDefeat, Route120_EventScript_RegisterJeffrey
+	trainerbattle_single TRAINER_JEFFREY_1, Route120_Text_JeffreyIntro, Route120_Text_JeffreyDefeat
 # 314 "data/maps/Route120/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 315 "data/maps/Route120/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route120_EventScript_RematchJeffrey
+	//goto_if_eq VAR_RESULT, TRUE, Route120_EventScript_RematchJeffrey
 # 316 "data/maps/Route120/scripts.pory"
 	msgbox Route120_Text_JeffreyPostBattle, MSGBOX_DEFAULT
 # 317 "data/maps/Route120/scripts.pory"

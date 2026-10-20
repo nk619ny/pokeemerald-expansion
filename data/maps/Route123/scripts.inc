@@ -159,11 +159,11 @@ Route123_EventScript_RematchCameron::
 # 80 "data/maps/Route123/scripts.pory"
 Route123_EventScript_Jacki::
 # 81 "data/maps/Route123/scripts.pory"
-	trainerbattle_single TRAINER_JACKI_1, Route123_Text_JackiIntro, Route123_Text_JackiDefeat, Route123_EventScript_RegisterJacki
+	trainerbattle_single TRAINER_JACKI_1, Route123_Text_JackiIntro, Route123_Text_JackiDefeat
 # 82 "data/maps/Route123/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 83 "data/maps/Route123/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchJacki
+	//goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchJacki
 # 84 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_JackiPostBattle, MSGBOX_DEFAULT
 # 85 "data/maps/Route123/scripts.pory"

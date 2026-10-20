@@ -155,11 +155,11 @@ Route121_EventScript_Vanessa::
 # 78 "data/maps/Route121/scripts.pory"
 Route121_EventScript_Walter::
 # 79 "data/maps/Route121/scripts.pory"
-	trainerbattle_single TRAINER_WALTER_1, Route121_Text_WalterIntro, Route121_Text_WalterDefeat, Route121_EventScript_RegisterWalter
+	trainerbattle_single TRAINER_WALTER_1, Route121_Text_WalterIntro, Route121_Text_WalterDefeat
 # 80 "data/maps/Route121/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 81 "data/maps/Route121/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchWalter
+	//goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchWalter
 # 82 "data/maps/Route121/scripts.pory"
 	msgbox Route121_Text_WalterPostBattle, MSGBOX_DEFAULT
 # 83 "data/maps/Route121/scripts.pory"
@@ -227,11 +227,11 @@ Route121_EventScript_Joy::
 # 114 "data/maps/Route121/scripts.pory"
 Route121_EventScript_Jessica::
 # 115 "data/maps/Route121/scripts.pory"
-	trainerbattle_single TRAINER_JESSICA_1, Route121_Text_JessicaIntro, Route121_Text_JessicaDefeat, Route121_EventScript_RegisterJessica
+	trainerbattle_single TRAINER_JESSICA_1, Route121_Text_JessicaIntro, Route121_Text_JessicaDefeat
 # 116 "data/maps/Route121/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 117 "data/maps/Route121/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchJessica
+	//goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchJessica
 # 118 "data/maps/Route121/scripts.pory"
 	msgbox Route121_Text_JessicaPostBattle, MSGBOX_DEFAULT
 # 119 "data/maps/Route121/scripts.pory"

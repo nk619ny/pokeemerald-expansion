@@ -203,11 +203,11 @@ Route114_EventScript_Nancy::
 # 102 "data/maps/Route114/scripts.pory"
 Route114_EventScript_Steve::
 # 103 "data/maps/Route114/scripts.pory"
-	trainerbattle_single TRAINER_STEVE_1, Route114_Text_SteveIntro, Route114_Text_SteveDefeat, Route114_EventScript_RegisterSteve
+	trainerbattle_single TRAINER_STEVE_1, Route114_Text_SteveIntro, Route114_Text_SteveDefeat
 # 104 "data/maps/Route114/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 105 "data/maps/Route114/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route114_EventScript_RematchSteve
+	//goto_if_eq VAR_RESULT, TRUE, Route114_EventScript_RematchSteve
 # 106 "data/maps/Route114/scripts.pory"
 	msgbox Route114_Text_StevePostBattle, MSGBOX_DEFAULT
 # 107 "data/maps/Route114/scripts.pory"
@@ -245,11 +245,11 @@ Route114_EventScript_RematchSteve::
 # 123 "data/maps/Route114/scripts.pory"
 Route114_EventScript_Bernie::
 # 124 "data/maps/Route114/scripts.pory"
-	trainerbattle_single TRAINER_BERNIE_1, Route114_Text_BernieIntro, Route114_Text_BernieDefeat, Route114_EventScript_RegisterBernie
+	trainerbattle_single TRAINER_BERNIE_1, Route114_Text_BernieIntro, Route114_Text_BernieDefeat
 # 125 "data/maps/Route114/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 126 "data/maps/Route114/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route114_EventScript_RematchBernie
+	//goto_if_eq VAR_RESULT, TRUE, Route114_EventScript_RematchBernie
 # 127 "data/maps/Route114/scripts.pory"
 	msgbox Route114_Text_BerniePostBattle, MSGBOX_DEFAULT
 # 128 "data/maps/Route114/scripts.pory"

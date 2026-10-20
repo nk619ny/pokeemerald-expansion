@@ -9,11 +9,11 @@ MeteorFalls_1F_2R_MapScripts::
 # 5 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 MeteorFalls_1F_2R_EventScript_Nicolas::
 # 6 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	trainerbattle_single TRAINER_NICOLAS_1, MeteorFalls_1F_2R_Text_NicolasIntro, MeteorFalls_1F_2R_Text_NicolasDefeat, MeteorFalls_1F_2R_EventScript_RegisterNicolas
+	trainerbattle_single TRAINER_NICOLAS_1, MeteorFalls_1F_2R_Text_NicolasIntro, MeteorFalls_1F_2R_Text_NicolasDefeat
 # 7 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 8 "data/maps/MeteorFalls_1F_2R/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, MeteorFalls_1F_2R_EventScript_RematchNicolas
+	//goto_if_eq VAR_RESULT, TRUE, MeteorFalls_1F_2R_EventScript_RematchNicolas
 # 9 "data/maps/MeteorFalls_1F_2R/scripts.pory"
 	msgbox MeteorFalls_1F_2R_Text_NicolasPostBattle, MSGBOX_DEFAULT
 # 10 "data/maps/MeteorFalls_1F_2R/scripts.pory"

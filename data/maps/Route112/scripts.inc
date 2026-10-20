@@ -143,11 +143,11 @@ Route112_EventScript_Brice::
 # 72 "data/maps/Route112/scripts.pory"
 Route112_EventScript_Trent::
 # 73 "data/maps/Route112/scripts.pory"
-	trainerbattle_single TRAINER_TRENT_1, Route112_Text_TrentIntro, Route112_Text_TrentDefeat, Route112_EventScript_RegisterTrent
+	trainerbattle_single TRAINER_TRENT_1, Route112_Text_TrentIntro, Route112_Text_TrentDefeat
 # 74 "data/maps/Route112/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 75 "data/maps/Route112/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route112_EventScript_RematchTrent
+	//goto_if_eq VAR_RESULT, TRUE, Route112_EventScript_RematchTrent
 # 76 "data/maps/Route112/scripts.pory"
 	msgbox Route112_Text_TrentPostBattle, MSGBOX_DEFAULT
 # 77 "data/maps/Route112/scripts.pory"

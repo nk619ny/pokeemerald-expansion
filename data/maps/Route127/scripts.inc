@@ -107,11 +107,11 @@ Route127_EventScript_Athena::
 # 54 "data/maps/Route127/scripts.pory"
 Route127_EventScript_Koji::
 # 55 "data/maps/Route127/scripts.pory"
-	trainerbattle_single TRAINER_KOJI_1, Route127_Text_KojiIntro, Route127_Text_KojiDefeat, Route127_EventScript_RegisterKoji
+	trainerbattle_single TRAINER_KOJI_1, Route127_Text_KojiIntro, Route127_Text_KojiDefeat
 # 56 "data/maps/Route127/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 57 "data/maps/Route127/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route127_EventScript_RematchKoji
+	//goto_if_eq VAR_RESULT, TRUE, Route127_EventScript_RematchKoji
 # 58 "data/maps/Route127/scripts.pory"
 	msgbox Route127_Text_KojiPostBattle, MSGBOX_DEFAULT
 # 59 "data/maps/Route127/scripts.pory"

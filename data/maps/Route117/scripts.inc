@@ -157,11 +157,11 @@ Route117_EventScript_DayCareSign::
 # 79 "data/maps/Route117/scripts.pory"
 Route117_EventScript_Isaac::
 # 80 "data/maps/Route117/scripts.pory"
-	trainerbattle_single TRAINER_ISAAC_1, Route117_Text_IsaacIntro, Route117_Text_IsaacDefeat, Route117_EventScript_RegisterIsaac
+	trainerbattle_single TRAINER_ISAAC_1, Route117_Text_IsaacIntro, Route117_Text_IsaacDefeat
 # 81 "data/maps/Route117/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 82 "data/maps/Route117/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchIsaac
+	//goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchIsaac
 # 83 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_IsaacPostBattle, MSGBOX_DEFAULT
 # 84 "data/maps/Route117/scripts.pory"
@@ -201,11 +201,11 @@ Route117_EventScript_RematchIsaac::
 # 101 "data/maps/Route117/scripts.pory"
 Route117_EventScript_Lydia::
 # 102 "data/maps/Route117/scripts.pory"
-	trainerbattle_single TRAINER_LYDIA_1, Route117_Text_LydiaIntro, Route117_Text_LydiaDefeat, Route117_EventScript_RegisterLydia
+	trainerbattle_single TRAINER_LYDIA_1, Route117_Text_LydiaIntro, Route117_Text_LydiaDefeat
 # 103 "data/maps/Route117/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 104 "data/maps/Route117/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchLydia
+	//goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchLydia
 # 105 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_LydiaPostBattle, MSGBOX_DEFAULT
 # 106 "data/maps/Route117/scripts.pory"
@@ -287,11 +287,11 @@ Route117_EventScript_RematchDylan::
 # 144 "data/maps/Route117/scripts.pory"
 Route117_EventScript_Maria::
 # 145 "data/maps/Route117/scripts.pory"
-	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat, Route117_EventScript_RegisterMaria
+	trainerbattle_single TRAINER_MARIA_1, Route117_Text_MariaIntro, Route117_Text_MariaDefeat
 # 146 "data/maps/Route117/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 147 "data/maps/Route117/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMaria
+	//goto_if_eq VAR_RESULT, TRUE, Route117_EventScript_RematchMaria
 # 148 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Text_MariaPostBattle, MSGBOX_DEFAULT
 # 149 "data/maps/Route117/scripts.pory"

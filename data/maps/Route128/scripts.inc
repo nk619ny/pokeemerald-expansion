@@ -363,11 +363,11 @@ Route128_Movement_MaxieApproachPlayer:
 # 182 "data/maps/Route128/scripts.pory"
 Route128_EventScript_Isaiah::
 # 183 "data/maps/Route128/scripts.pory"
-	trainerbattle_single TRAINER_ISAIAH_1, Route128_Text_IsaiahIntro, Route128_Text_IsaiahDefeat, Route128_EventScript_RegisterIsaiah
+	trainerbattle_single TRAINER_ISAIAH_1, Route128_Text_IsaiahIntro, Route128_Text_IsaiahDefeat
 # 184 "data/maps/Route128/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 185 "data/maps/Route128/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchIsaiah
+	//goto_if_eq VAR_RESULT, TRUE, Route128_EventScript_RematchIsaiah
 # 186 "data/maps/Route128/scripts.pory"
 	msgbox Route128_Text_IsaiahPostBattle, MSGBOX_DEFAULT
 # 187 "data/maps/Route128/scripts.pory"

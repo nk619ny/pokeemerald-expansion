@@ -69,11 +69,11 @@ Route115_EventScript_MeteorFallsSign::
 # 35 "data/maps/Route115/scripts.pory"
 Route115_EventScript_Timothy::
 # 36 "data/maps/Route115/scripts.pory"
-	trainerbattle_single TRAINER_TIMOTHY_1, Route115_Text_TimothyIntro, Route115_Text_TimothyDefeat, Route115_EventScript_RegisterTimothy
+	trainerbattle_single TRAINER_TIMOTHY_1, Route115_Text_TimothyIntro, Route115_Text_TimothyDefeat
 # 37 "data/maps/Route115/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 38 "data/maps/Route115/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchTimothy
+	//goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchTimothy
 # 39 "data/maps/Route115/scripts.pory"
 	msgbox Route115_Text_TimothyPostBattle, MSGBOX_DEFAULT
 # 40 "data/maps/Route115/scripts.pory"
@@ -121,11 +121,11 @@ Route115_EventScript_Koichi::
 # 61 "data/maps/Route115/scripts.pory"
 Route115_EventScript_Nob::
 # 62 "data/maps/Route115/scripts.pory"
-	trainerbattle_single TRAINER_NOB_1, Route115_Text_NobIntro, Route115_Text_NobDefeat, Route115_EventScript_RegisterNob
+	trainerbattle_single TRAINER_NOB_1, Route115_Text_NobIntro, Route115_Text_NobDefeat
 # 63 "data/maps/Route115/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 64 "data/maps/Route115/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchNob
+	//goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchNob
 # 65 "data/maps/Route115/scripts.pory"
 	msgbox Route115_Text_NobPostBattle, MSGBOX_DEFAULT
 # 66 "data/maps/Route115/scripts.pory"
@@ -163,11 +163,11 @@ Route115_EventScript_RematchNob::
 # 82 "data/maps/Route115/scripts.pory"
 Route115_EventScript_Cyndy::
 # 83 "data/maps/Route115/scripts.pory"
-	trainerbattle_single TRAINER_CYNDY_1, Route115_Text_CyndyIntro, Route115_Text_CyndyDefeat, Route115_EventScript_RegisterCyndy
+	trainerbattle_single TRAINER_CYNDY_1, Route115_Text_CyndyIntro, Route115_Text_CyndyDefeat
 # 84 "data/maps/Route115/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 85 "data/maps/Route115/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchCyndy
+	//goto_if_eq VAR_RESULT, TRUE, Route115_EventScript_RematchCyndy
 # 86 "data/maps/Route115/scripts.pory"
 	msgbox Route115_Text_CyndyPostBattle, MSGBOX_DEFAULT
 # 87 "data/maps/Route115/scripts.pory"

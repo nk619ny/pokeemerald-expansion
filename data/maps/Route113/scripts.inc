@@ -119,11 +119,11 @@ Route113_EventScript_Dillon::
 # 60 "data/maps/Route113/scripts.pory"
 Route113_EventScript_Madeline::
 # 61 "data/maps/Route113/scripts.pory"
-	trainerbattle_single TRAINER_MADELINE_1, Route113_Text_MadelineIntro, Route113_Text_MadelineDefeat, Route113_EventScript_RegisterMadeline
+	trainerbattle_single TRAINER_MADELINE_1, Route113_Text_MadelineIntro, Route113_Text_MadelineDefeat
 # 62 "data/maps/Route113/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 63 "data/maps/Route113/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route113_EventScript_RematchMadeline
+	//goto_if_eq VAR_RESULT, TRUE, Route113_EventScript_RematchMadeline
 # 64 "data/maps/Route113/scripts.pory"
 	msgbox Route113_Text_MadelinePostBattle, MSGBOX_DEFAULT
 # 65 "data/maps/Route113/scripts.pory"
@@ -161,11 +161,11 @@ Route113_EventScript_RematchMadeline::
 # 81 "data/maps/Route113/scripts.pory"
 Route113_EventScript_Lao::
 # 82 "data/maps/Route113/scripts.pory"
-	trainerbattle_single TRAINER_LAO_1, Route113_Text_LaoIntro, Route113_Text_LaoDefeat, Route113_EventScript_RegisterLao
+	trainerbattle_single TRAINER_LAO_1, Route113_Text_LaoIntro, Route113_Text_LaoDefeat
 # 83 "data/maps/Route113/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
+	//specialvar VAR_RESULT, ShouldTryRematchBattle
 # 84 "data/maps/Route113/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route113_EventScript_RematchLao
+	//goto_if_eq VAR_RESULT, TRUE, Route113_EventScript_RematchLao
 # 85 "data/maps/Route113/scripts.pory"
 	msgbox Route113_Text_LaoPostBattle, MSGBOX_DEFAULT
 # 86 "data/maps/Route113/scripts.pory"
