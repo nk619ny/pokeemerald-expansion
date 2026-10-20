@@ -1237,7 +1237,7 @@ IVs: 0 Atk
 - Psychic  
 - Power Gem  
 
-Wormadam (F) @ Coba Berry  
+Wormadam (F) @ Enigma Berry  
 Ability: Overcoat  
 Level: 54
 IVs: 0 Atk  
@@ -2084,7 +2084,7 @@ IVs: 0 Atk
 === TRAINER_ARCHIE_SEAFLOOR_CAVERN === /* Seafloor Cavern */
 Name: ARCHIE
 Class: Aqua Leader
-Pic: Archie ORAS
+Pic: Archie ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -2826,7 +2826,7 @@ EVs: 252 Atk / 4 SpD / 252 Spe
 === TRAINER_ARCHIE_WEATHER_INSTITUTE === /* Weather Institute */
 Name: ARCHIE
 Class: Aqua Leader
-Pic: Archie ORAS
+Pic: Archie ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -3227,7 +3227,7 @@ IVs: 0 Atk
 === TRAINER_ARCHIE_MT_PYRE === /* Mt. Pyre Summit */
 Name: ARCHIE
 Class: Aqua Leader
-Pic: Archie ORAS
+Pic: Archie ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
@@ -3303,7 +3303,7 @@ Jolly Nature
 === TRAINER_MAXIE_MT_PYRE === /* Mt. Pyre Summit */
 Name: MAXIE
 Class: Magma Leader
-Pic: Maxie ORAS
+Pic: Maxie ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -4023,7 +4023,7 @@ Level: 50
 === TRAINER_PARKER === /* Petalburg Gym */ /* Power Trip */
 Name: PARKER
 Class: Street Thug
-Pic: Street Thug ORAS
+Pic: Street Thug ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -4780,7 +4780,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_MARY === /* Petalburg Gym */ /* Sacrifice */
 Name: MARIO
 Class: Street Thug
-Pic: Street Thug ORAS
+Pic: Street Thug ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -5031,7 +5031,7 @@ Manectric
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BROOKE_1 === /* Route 112 */ /* TO BE ADDED */
+=== TRAINER_BROOKE_1 === /* Route 112 */ 
 Name: BROOKE
 Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
@@ -5040,15 +5040,45 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
+Morgrem (M) @ Light Clay 
+Level: 42
+EVs: 252 HP / 252 Atk
+Ability: Prankster  
+- Reflect  
+- Light Screen  
+- Fake Out  
+- False Surrender
+
+Cosmog  @ Eviolite
+Ability: Unaware  
+Level: 50
+EVs: 252 HP / 128 Def / 128 SpD  
+IVs: 0 Atk  
+- Psywave  
+- Night Shade  
+- Cosmic Power  
+- Recover  
+
 Hakamo-o @ Roseli Berry  
 Ability: Bulletproof  
-Level: 10
+EVs: 164 HP / 164 Atk / 164 Spe
+Level: 41
 - Brick Break  
 - Bulk Up  
 - Dragon Claw  
 - Iron Head
 
-=== TRAINER_JENNIFER === /* Route 120 */ /* TO BE ADDED */
+Grimer-Alola @ Shuca Berry  
+Level: 44
+EVs: 252 HP / 252 Atk
+Ability: Poison Touch  
+- Power-Up Punch  
+- Poison Jab  
+- Pursuit  
+- Curse  
+
+
+=== TRAINER_JENNIFER === /* Route 120 */
 Name: JENNIFER
 Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
@@ -5057,9 +5087,49 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sableye
-Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Mandibuzz (F)  
+Ability: Overcoat  
+Level: 60
+EVs: 252 HP / 252 SpA  
+Bold Nature   
+IVs: 0 Atk  
+- Foul Play  
+- Hurricane  
+- Tailwind  
+- Whirlwind
+
+Poipole  
+Ability: Beast Boost  
+Level: 60
+EVs: 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Nasty Plot  
+- Dragon Pulse  
+- Sludge Bomb  
+- Signal Beam  
+
+Gurdurr @ Eviolite  
+Ability: Guts  
+Level: 60
+EVs: 128 HP / 252 Atk / 128 SpD  
+Adamant Nature  
+- Bulk Up  
+- Drain Punch  
+- Mach Punch  
+- Ice Punch  
+
+Zebstrika @ Wide Lens  
+Ability: Motor Drive  
+Level: 60
+EVs: 252 Atk / 252 Spe  
+Jolly Nature  
+- Supercell Slam  
+- High Horsepower  
+- Ion Deluge  
+- Magnet Rise  
+
+
 
 === TRAINER_HOPE === /* Victory Road 1F */
 Name: HOPE
@@ -5110,7 +5180,6 @@ Adamant Nature
 - High Horsepower  
 - Facade  
 - Drain Punch  
-
 
 
 === TRAINER_SHANNON === /* Victory Road B1F */ /* Optional */
@@ -5587,7 +5656,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Illusion Tricks
 
 Absol  
-Level: 63
+Level: 70
 Ability: Pressure  
 Tera Type: Dark  
 - Pursuit  
@@ -5596,7 +5665,7 @@ Tera Type: Dark
 - Play Rough  
 
 Gothorita  @ Eviolite
-Level: 70
+Level: 72
 Ability: Shadow Tag  
 EVs: 252 HP / 252 SpA
 Tera Type: Psychic  
@@ -5606,7 +5675,7 @@ Tera Type: Psychic
 - Mystical Power  
 
 Zoroark  
-Level: 63
+Level: 70
 Ability: Illusion  
 Tera Type: Dark  
 IVs: 0 Atk  
@@ -5616,7 +5685,7 @@ IVs: 0 Atk
 - Extrasensory  
 
 Jellicent  
-Level: 63
+Level: 70
 Ability: Cursed Body  
 Tera Type: Water  
 IVs: 0 Atk  
@@ -5626,7 +5695,7 @@ IVs: 0 Atk
 - Hex  
 
 Volbeat (M)  
-Level: 63
+Level: 70
 Ability: Prankster  
 Tera Type: Bug  
 IVs: 0 Atk  
@@ -5686,7 +5755,7 @@ Tera Type: Ghost
 === TRAINER_FRANCISCO === /* Granite Cave */
 Name: FRANCISCO
 Class: Backpacker
-Pic: Backpacker ORAS
+Pic: Backpacker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -5736,8 +5805,8 @@ IVs: 0 Atk
 - Scorching Sands  
 - Giga Drain  
 
-Probopass @ Enigma Berry  
-Ability: Sand Force  
+Probopass @ Chople Berry  
+Ability: Levitate
 Level: 66
 EVs: 252 HP / 252 SpA  
 IVs: 0 Atk  
@@ -6703,6 +6772,16 @@ EVs: 252 HP / 128 Atk / 128 SpA
 - Leech Seed  
 - Giga Drain  
 
+Tarountula  
+Ability: Stakeout  
+EVs: 252 HP / 252 Atk  
+Level: 44
+Adamant Nature  
+- First Impression  
+- Sticky Web  
+- Circle Throw  
+- Leech Life
+
 Pineco @ Loaded Dice  
 Ability: Sturdy  
 Level: 44
@@ -6963,7 +7042,7 @@ IVs: 0 Atk
 === TRAINER_COURTNEY_MT_PYRE === /* Route */
 Name: Courtney
 Class: Magma Admin
-Pic: Courtney ORAS
+Pic: Courtney ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -7333,7 +7412,7 @@ Level: 55
 - Aqua Tail  
 - Camouflage  
 
-=== TRAINER_JEROME === /* Route 108 */ /* TO BE ADDED */
+=== TRAINER_JEROME === /* Route 108 */ /* TENTATIVELY UNUSED REMOVED */
 Name: JEROME
 Class: Swimmer M
 Pic: Swimmer M ORAS 80
@@ -8906,7 +8985,7 @@ Level: 39
 === TRAINER_JACE === /* Rustboro Gym */
 Name: JACE
 Class: Backpacker
-Pic: Backpacker ORAS
+Pic: Backpacker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
@@ -11664,42 +11743,39 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Pincurchin  @ Shuca Berry
-Ability: Lightning Rod  
-Level: 45  
-Tera Type: Electric  
-- Spiky Shield  
-- Spikes  
-- Zing Zap  
-- Sucker Punch  
+Cosmog @ Eviolite
+Level: 55
+Ability: Unaware  
+- Meteor Mash  
+- Moonblast  
+- Cosmic Power  
+- Future Sight  
 
-Grafaiai @ Toxic Orb  
-Ability: Prankster  
-Level: 45  
-Tera Type: Poison  
-- Encore  
-- Parting Shot  
-- Switcheroo  
-- Copycat  
-
-Dedenne  
-Level: 45  
-Ability: Pickup  
-Tera Type: Electric  
-- Dazzling Gleam  
-- Parabolic Charge  
-- Nuzzle  
-- Ally Switch  
-
-Rotom  
-Level: 45  
-Ability: Levitate  
-Tera Type: Electric  
+Porygon2  
+Ability: Analytic  
+Level: 45
 IVs: 0 Atk  
-- Hex  
-- Thunder Wave  
-- Foul Play  
-- Eerie Impulse  
+- Tri Attack  
+- Teleport  
+- Recover  
+- Signal Beam  
+
+Pikachu-PhD (F) @ Light Ball  
+Ability: Lightning Rod  
+Level: 46
+- Luster Purge  
+- Fake Out  
+- Nuzzle  
+- Thunderbolt  
+
+Mimikyu  
+Ability: Disguise  
+Level: 45
+- Copycat  
+- Mimic  
+- Shadow Sneak  
+- Play Rough  
+
 
 
 === TRAINER_TED === /* Trick House 2 */
@@ -12241,7 +12317,7 @@ Tera Type: Normal
 === TRAINER_CHUCK === /* Route 110 */
 Name: CHUCK
 Class: Street Thug
-Pic: Street Thug ORAS
+Pic: Street Thug ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -12780,20 +12856,49 @@ Level: 40
 - Synthesis  
 - Heal Pulse  
 
-=== TRAINER_VANESSA === /* Route 121 */ /* TO BE ADDED */
-Name: VANESSA
-Class: Pokefan
-Pic: Pokefan F ORAS 80
-Gender: Female
-Music: Twins
+=== TRAINER_VANESSA === /* Route 121 */ 
+Name: VAUGHN
+Class: Pokemaniac
+Pic: Pokemaniac ORAS 80
+Gender: Male
+Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Pikachu @ Oran Berry
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Haxorus  
+Ability: Unnerve  
+Level: 65
+- Dragon Tail  
+- First Impression  
+- Superpower  
+- Scary Face  
 
-=== TRAINER_BETHANY === /* Sootopolis Gym */ /* TO BE ADDED */
+Aurorus @ Power Herb  
+Ability: Refrigerate  
+Level: 65
+IVs: 0 Atk  
+- Hyper Voice  
+- Meteor Beam  
+- Hyper Beam  
+- Thunderbolt  
+
+Snorlax  @ Chople Berry
+Ability: Immunity  
+Level: 65
+- Body Slam  
+- Gastro Acid  
+- High Horsepower  
+- Supercell Slam  
+
+Lapras  
+Ability: Shell Armor  
+Level: 65
+- Avalanche  
+- Aqua Tail  
+- Drill Run  
+- Ice Shard  
+
+=== TRAINER_BETHANY === /* Sootopolis Gym */ /* Removed */
 Name: BETHANY
 Class: Pokefan
 Pic: Pokefan F ORAS 80
@@ -15580,7 +15685,7 @@ Dodrio
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CAMDEN === /* Underwater Route 127 */ /* TO BE ADDED */
+=== TRAINER_CAMDEN === /* Underwater Route 127 */ 
 Name: CAMDEN
 Class: Diver
 Pic: Diver M ORAS
@@ -15589,13 +15694,45 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Staryu
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mantine @ Wacan Berry  
+Ability: Water Absorb  
+Level: 75
+EVs: 252 SpA / 252 Spe
+IVs: 0 Atk  
+- Surf  
+- Blizzard  
+- Air Slash  
+- Roost  
 
-Staryu
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gastrodon-East @ Rindo Berry  
+Ability: Storm Drain  
+Level: 75
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk  
+- Surf  
+- Acid Armor  
+- Earth Power  
+- Sludge Bomb
+
+Lanturn @ Rindo Berry  
+Ability: Water Absorb   
+Level: 75
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk  
+- Surf  
+- Thunderbolt  
+- Dazzling Gleam  
+- Volt Switch  
+
+Jellicent  
+Ability: Water Absorb   
+Level: 75
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk  
+- Surf  
+- Giga Drain  
+- Psychic  
+- Acid Armor  
 
 === TRAINER_DEMETRIUS === /* Abandoned Ship */
 Name: DEMETRIUS
@@ -16595,7 +16732,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Torkoal  
 Ability: Drought  
-Level: 64
+Level: 67
 IVs: 0 Atk  
 - Eruption  
 - Heat Wave  
@@ -16604,13 +16741,14 @@ IVs: 0 Atk
 
 Lilligant (F)   
 Ability: Chlorophyll
-Level: 64
+Level: 67
 IVs: 0 Atk  
 - After You  
 - Encore  
 - Sleep Powder  
 - Pollen Puff
 
+/*
 Tangrowth @ Big Root  
 Ability: Leaf Guard  
 Level: 64
@@ -16619,17 +16757,27 @@ IVs: 0 Atk
 - Growth  
 - Synthesis  
 - Ancient Power
+*/
 
 Exeggutor  
 Ability: Chlorophyll  
 EVs: 252 Spe  
-Level: 64
+Level: 67
 IVs: 0 Atk  
 - Twin Beam  
 - Solar Beam  
 - Moonlight  
 - Sleep Powder  
 
+
+Heatmor @ White Herb  
+Ability: White Smoke  
+Level: 67
+IVs: 0 Atk  
+- Heat Wave  
+- Overheat  
+- Scorching Sands  
+- Gastro Acid
 
 === TRAINER_CHESTER === /* Route 118 */
 Name: CHESTER
@@ -18980,7 +19128,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Chimecho  
-Level: 62
+Level: 70
 Ability: Levitate  
 Tera Type: Psychic  
 IVs: 0 Atk  
@@ -18990,7 +19138,7 @@ IVs: 0 Atk
 - Signal Beam  
 
 Hypno  @ Tanga Berry
-Level: 62
+Level: 70
 Ability: Bad Dreams  
 Tera Type: Psychic  
 - Dark Void  
@@ -18999,7 +19147,7 @@ Tera Type: Psychic
 - Zen Headbutt  
 
 Slowking-Galar  
-Level: 62
+Level: 70
 Ability: Curious Medicine  
 Tera Type: Poison  
 IVs: 0 Atk  
@@ -19009,7 +19157,7 @@ IVs: 0 Atk
 - Substitute  
 
 Delphox  
-Level: 62
+Level: 70
 Ability: Magician  
 Tera Type: Fire  
 IVs: 0 Atk  
@@ -19741,7 +19889,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_ELI === /* Route 115 */
 Name: ELI
 Class: Street Thug
-Pic: Street Thug ORAS
+Pic: Street Thug ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
@@ -20289,7 +20437,7 @@ IVs: 0 Atk
 === TRAINER_COURTNEY_MOSSDEEP === /* Mossdeep Space Center 2F */
 Name: Courtney
 Class: Magma Admin
-Pic: Courtney ORAS
+Pic: Courtney ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -22439,6 +22587,7 @@ Shiinotic @ Kebia Berry
 Ability: Rain Dish  
 Level: 69
 IVs: 0 Atk  
+EVs: 184 Spe
 - Dazzling Gleam  
 - Energy Ball  
 - Strength Sap  
@@ -22453,6 +22602,14 @@ EVs: 128 SpD / 128 Spe
 - Shell Smash  
 - Jaw Lock  
 
+Kilowattrel  
+Ability: Competitive  
+Level: 69
+IVs: 0 Atk  
+- Thunder  
+- Hurricane  
+- Tailwind  
+- Weather Ball
 
 === TRAINER_JACKSON_2 === /* Route */
 Name: JACKSON
@@ -22641,6 +22798,15 @@ IVs: 0 Atk
 - Nasty Plot  
 - Shadow Ball  
 - Destiny Bond  
+
+Cetitan  
+Ability: Slush Rush  
+Level: 67
+Jolly Nature  
+- Icicle Crash  
+- Ice Shard  
+- Liquidation  
+- Play Rough
 
 === TRAINER_CATHERINE_2 === /* Route */
 Name: CATHERINE
@@ -23955,7 +24121,7 @@ Breloom
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ISABELLA === /* Underwater 124 */ /* TO BE ADDED */
+=== TRAINER_ISABELLA === /* Underwater 124 */ 
 Name: ISABELLA
 Class: Diver
 Pic: Diver F ORAS
@@ -23964,9 +24130,43 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Staryu
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wailord @ Throat Spray  
+Ability: Drizzle  
+Level: 75
+EVs: 128 Def / 252 SpA / 128 SpD  
+IVs: 0 Atk  
+- Hyper Voice  
+- Water Spout  
+- Weather Ball  
+- Clear Smog  
+
+Octillery @ Scope Lens  
+Ability: Sniper  
+Level: 75
+EVs: 252 HP / 252 SpA  
+IVs: 0 Atk  
+- Water Spout  
+- Focus Energy  
+- Energy Ball  
+- Flamethrower  
+
+Veluza @ Sitrus Berry  
+Ability: Mold Breaker  
+Level: 75
+EVs: 192 HP / 252 Atk / 64 Spe  
+- Aqua Cutter  
+- Drill Run  
+- Fillet Away  
+- Psychic Fangs  
+
+Kabutops @ Rindo Berry  
+Ability: Swift Swim  
+Level: 75
+EVs: 252 Atk / 252 Spe  
+- Leech Life  
+- Waterfall  
+- Rock Slide  
+- Swords Dance  
 
 === TRAINER_GRUNT_WEATHER_INST_5 === /* Weather Institute */ 
 Name: GRUNT
@@ -24030,7 +24230,7 @@ EVs: 252 HP / 252 Spe
 === TRAINER_COURTNEY_MT_CHIMNEY === /* Mt. Chimney */
 Name: COURTNEY
 Class: Magma Admin
-Pic: Courtney ORAS
+Pic: Courtney ORAS 80
 Gender: Female
 Music: Magma
 Double Battle: Yes
@@ -24306,7 +24506,7 @@ Adamant Nature
 === TRAINER_MAXIE_MAGMA_HIDEOUT === /* Magma Hideout */
 Name: MAXIE
 Class: Magma Leader
-Pic: Maxie ORAS
+Pic: Maxie ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -24391,7 +24591,7 @@ IVs: 0 Atk
 === TRAINER_MAXIE_MT_CHIMNEY === /* Mt. Chimney */
 Name: MAXIE
 Class: Magma Leader
-Pic: Maxie ORAS
+Pic: Maxie ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -25586,7 +25786,7 @@ IVs: 0 Atk
 - Protect
 
 
-=== TRAINER_CLARK === /* Route 116 */ /* TO BE ADDED */
+=== TRAINER_CLARK === /* Route 116 */ 
 Name: CLARK
 Class: Hiker
 Pic: Hiker ORAS 80
@@ -25595,9 +25795,37 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Steelix @ Expert Belt  
+Ability: Sheer Force  
+Level: 46
+- Fire Fang  
+- Ice Fang  
+- Thunder Fang  
+- Iron Head  
+
+Crobat  
+Ability: Inner Focus  
+Level: 46
+- Dual Wingbeat  
+- Leech Life  
+- Cross Poison  
+- Super Fang  
+
+Sandaconda @ Loaded Dice  
+Ability: Shed Skin  
+Level: 46
+- Glare  
+- Drill Run  
+- Rock Blast  
+- Zen Headbutt  
+
+Lycanroc-Midnight @ Chople Berry  
+Ability: No Guard  
+Level: 46
+- Play Rough  
+- Stone Edge  
+- Dynamic Punch  
+- Lash Out  
 
 === TRAINER_ERIC === /* Jagged Pass */ 
 Name: ERIC
@@ -27475,22 +27703,53 @@ IVs: 0 Atk
 - Encore  
 
 
-=== TRAINER_AIDAN === /* Route 127 */ /* TO BE ADDED */ /* Change Class? */
+=== TRAINER_AIDAN === /* Route 127 */ 
 Name: AIDAN
-Class: Bird Keeper
-Pic: Bird Keeper ORAS 80
+Class: Dragon Tamer
+Pic: Dragon Tamer ORAS 80
 Gender: Male
-Music: Cool
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Swellow
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skarmory
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Steelix  
+Ability: Sturdy  
+Level: 77
+Tera Type: Steel  
+- Dragon Dance  
+- Rock Climb  
+- Iron Head  
+- Psychic Fangs  
+
+Dudunsparce-Three-Segment  
+Ability: Rattled  
+Level: 77
+Tera Type: Normal  
+- Hyper Drill  
+- Dragon Tail  
+- Lunge  
+- Roost  
+
+Serperior  @ Yache Berry
+Ability: Contrary  
+Level: 77
+Tera Type: Grass  
+IVs: 0 Atk  
+- Draco Meteor  
+- Leaf Storm  
+- Glare  
+- Mirror Coat  
+
+Aggron @ Metal Coat  
+Ability: Sturdy  
+Level: 77
+Tera Type: Steel  
+- Dragon Claw  
+- Metal Claw  
+- Shadow Claw  
+- Hone Claws  
+
 
 === TRAINER_REED === /* Route 129 */ /* TO BE ADDED */
 Name: REED
@@ -27602,7 +27861,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rest
 - Earthquake
 
-=== TRAINER_TYRA_AND_IVY === /* Route 114 */ /* TO BE ADDED */
+=== TRAINER_TYRA_AND_IVY === /* Route 114 */ 
 Name: TYRA & IVY
 Class: Sr And Jr
 Pic: Teammates ORAS 80
@@ -27611,21 +27870,42 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Roselia
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Growth
-- Stun Spore
-- Mega Drain
-- Leech Seed
 
-Graveler
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Defense Curl
-- Rollout
-- Mud Sport
-- Rock Throw
+Plusle  
+Ability: Plus  
+Level: 40
+- Thunderbolt  
+- Grass Knot  
+- Copycat  
+- Signal Beam  
+
+Minun  
+Ability: Minus  
+Level: 40
+IVs: 0 Atk  
+- Encore  
+- Nasty Plot  
+- Baton Pass  
+- Alluring Voice  
+
+Ninetales  
+Ability: Flash Fire  
+Level: 40
+IVs: 0 Atk  
+- Pain Split  
+- Extrasensory  
+- Flamethrower  
+- Shadow Ball  
+
+Ninetales-Alola @ Babiri Berry  
+Ability: Snow Cloak  
+Level: 40
+IVs: 0 Atk  
+- Helping Hand  
+- Dazzling Gleam  
+- Encore  
+- Freeze-Dry  
+
 
 === TRAINER_MEL_AND_PAUL === /* Route 109 */
 Name: MEL & PAUL
@@ -29861,10 +30141,10 @@ Camerupt
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAXIE_MOSSDEEP === /* Mossdeep Space Center 2F */ /* TO BE ADDED */
+=== TRAINER_MAXIE_MOSSDEEP === /* Mossdeep Space Center 2F */ /* REMOVED */
 Name: MAXIE
 Class: Magma Leader
-Pic: Maxie ORAS
+Pic: Maxie ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
@@ -29895,7 +30175,7 @@ Tentacool
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ISABELLE === /* Route 110 */ /* TO BE ADDED */
+=== TRAINER_ISABELLE === /* Route 103 */ /* TO BE ADDED */
 Name: ISABELLE
 Class: Swimmer F
 Pic: Swimmer F ORAS 80
@@ -30668,7 +30948,7 @@ IVs: 0 Atk
 - Hidden Power
 - Shell Smash  
 
-Probopass @ Shuca Berry  
+Probopass @ Enigma Berry  
 Level: 45
 Ability: Sturdy  
 Tera Type: Rock  
@@ -30698,7 +30978,7 @@ Tera Type: Normal
 - Power-Up Punch  
 
 
-=== TRAINER_JOHNSON === /* Route 116 */  /* to be added - - duplicate*/
+=== TRAINER_JOHNSON === /* Route 116 */  
 Name: JOHNSON
 Class: Youngster
 Pic: Youngster ORAS 80
@@ -30707,46 +30987,42 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tatsugiri @ Yache Berry
-Ability: Storm Drain  
-Tera Type: Dragon  
-Level: 50
-EVs: 252 HP / 4 Def / 252 SpA  
-Modest Nature  
+Pincurchin  @ Shuca Berry
+Ability: Lightning Rod  
+Level: 45  
+Tera Type: Electric  
+- Spiky Shield  
+- Spikes  
+- Zing Zap  
+- Sucker Punch  
+
+Grafaiai @ Toxic Orb  
+Ability: Prankster  
+Level: 45  
+Tera Type: Poison  
+- Encore  
+- Parting Shot  
+- Switcheroo  
+- Copycat  
+
+Dedenne  
+Level: 45  
+Ability: Pickup  
+Tera Type: Electric  
+- Dazzling Gleam  
+- Parabolic Charge  
+- Nuzzle  
+- Ally Switch  
+
+Rotom  
+Level: 45  
+Ability: Levitate  
+Tera Type: Electric  
 IVs: 0 Atk  
-- Chilling Water  
-- Icy Wind  
-- Mirror Coat  
-- Counter  
-
-Miltank (F)  @ Punching Glove
-Ability: Thick Fat  
-Level: 47
-Tera Type: Normal  
-- Body Slam  
-- Milk Drink  
-- Ice Punch  
-- Fire Punch  
-
-Raticate-Alola  @ Chople Berry
-Ability: Thick Fat  
-Level: 47
-Tera Type: Dark  
-- Crunch  
-- Super Fang  
-- Stockpile  
-- Body Slam  
-
-
-Grumpig @ Salac Berry  
-Ability: Thick Fat  
-Level: 47
-Tera Type: Psychic  
-IVs: 0 Atk  
-- Extrasensory  
-- Mirror Coat  
-- Belch  
-- Energy Ball  
+- Hex  
+- Thunder Wave  
+- Foul Play  
+- Eerie Impulse  
 
 
 === TRAINER_MELINA === /* Route 117 */ 
@@ -31068,14 +31344,26 @@ Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Manectric
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunder
-- Quick Attack
-- Thunder Wave
+Cosmoem @ Eviolite  
+Ability: Sturdy  
+Level: 
+EVs: 252 HP / 128 Atk / 128 SpA  
+Sassy Nature  
+- Cosmic Power  
+- Recover  
+- Moonblast  
+- Meteor Mash  
+
+Skuntank @ Shuca Berry  
+Ability: Aftermath  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Temper Flare  
+- Gunk Shot  
+- Explosion  
+- Sucker Punch
 
 === TRAINER_CALLIE === /* Route 120 */
 Name: CALLIE
