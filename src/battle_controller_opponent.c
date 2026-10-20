@@ -520,6 +520,7 @@ static void OpponentHandleChoosePokemon(enum BattlerId battler)
 {
     s32 chosenMonId;
     enum SwitchType switchType = SWITCH_AFTER_KO;
+    bool32 illusionPaired = FALSE;
 
     // Choosing Revival Blessing target
     if (gBattleResources->bufferA[battler][1] == PARTY_ACTION_CHOOSE_FAINTED_MON)
@@ -543,6 +544,11 @@ static void OpponentHandleChoosePokemon(enum BattlerId battler)
         chosenMonId = PARTY_SIZE;
         if (GetMoveEffect(gCurrentMove) == EFFECT_BATON_PASS)
             chosenMonId = AI_GetBatonPassReceiver(battler);
+        if (chosenMonId == PARTY_SIZE)
+        {
+            chosenMonId = AI_TryIllusionDoubleRefill(battler, switchType); // AI_FLAG_ILLUSION_TRICKS
+            illusionPaired = (chosenMonId != PARTY_SIZE);
+        }
         if (chosenMonId == PARTY_SIZE)
             chosenMonId = GetMostSuitableMonToSwitchInto(battler, switchType);
         if (chosenMonId == PARTY_SIZE) // Advanced logic failed so we pick the next available battler
@@ -568,7 +574,8 @@ static void OpponentHandleChoosePokemon(enum BattlerId battler)
                     break;
             }
         }
-        chosenMonId = AI_TryIllusionTrickSwap(battler, chosenMonId); // AI_FLAG_ILLUSION_TRICKS
+        if (!illusionPaired)
+            chosenMonId = AI_TryIllusionTrickSwap(battler, chosenMonId); // AI_FLAG_ILLUSION_TRICKS
         gBattleStruct->monToSwitchIntoId[battler] = chosenMonId;
     }
     else

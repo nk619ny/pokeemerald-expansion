@@ -77,3 +77,51 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_ILLUSION_TRICKS: no swap when the AI has no bench
         TURN { MOVE(player, MOVE_SCRATCH); EXPECT_SEND_OUT(opponent, 1); }
     }
 }
+
+AI_DOUBLE_BATTLE_TEST("AI_FLAG_ILLUSION_TRICKS: double refill sends another mon beside the better of the Illusion mon and its disguise target")
+{
+    PASSES_RANDOMLY(100 - SHOULD_ILLUSION_TRICK, 100, RNG_AI_ILLUSION_TRICK);
+    GIVEN {
+        WITH_CONFIG(AI_REVERSE_BATTLER_LOGIC_ORDER_CHANCE, 0);
+        ASSUME(GetMoveCategory(MOVE_CELEBRATE) == DAMAGE_CATEGORY_STATUS);
+        AI_FLAGS(ILLUSION_TRICKS_BASIC_FLAGS | AI_FLAG_ILLUSION_TRICKS);
+        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_SCRATCH); }
+        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_SCRATCH); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_ZOROARK) { Ability(ABILITY_ILLUSION); Moves(MOVE_SCRATCH); }
+        OPPONENT(SPECIES_WYNAUT) { Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE); } // Disguise target
+    } WHEN {
+        TURN {
+            MOVE(playerLeft, MOVE_SCRATCH, target: opponentLeft);
+            MOVE(playerRight, MOVE_SCRATCH, target: opponentRight);
+            EXPECT_SEND_OUT(opponentLeft, 3);
+            EXPECT_SEND_OUT(opponentRight, 2);
+        }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("AI_FLAG_ILLUSION_TRICKS: double refill sometimes sends the other of the Illusion mon and its disguise target")
+{
+    PASSES_RANDOMLY(SHOULD_ILLUSION_TRICK, 100, RNG_AI_ILLUSION_TRICK);
+    GIVEN {
+        WITH_CONFIG(AI_REVERSE_BATTLER_LOGIC_ORDER_CHANCE, 0);
+        ASSUME(GetMoveCategory(MOVE_CELEBRATE) == DAMAGE_CATEGORY_STATUS);
+        AI_FLAGS(ILLUSION_TRICKS_BASIC_FLAGS | AI_FLAG_ILLUSION_TRICKS);
+        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_SCRATCH); }
+        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_SCRATCH); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_ZOROARK) { Ability(ABILITY_ILLUSION); Moves(MOVE_SCRATCH); }
+        OPPONENT(SPECIES_WYNAUT) { Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE); } // Disguise target
+    } WHEN {
+        TURN {
+            MOVE(playerLeft, MOVE_SCRATCH, target: opponentLeft);
+            MOVE(playerRight, MOVE_SCRATCH, target: opponentRight);
+            EXPECT_SEND_OUT(opponentLeft, 3);
+            EXPECT_SEND_OUT(opponentRight, 4);
+        }
+    }
+}

@@ -2214,6 +2214,9 @@ static inline bool32 CanSwitchinWin1v1(u32 hitsToKOAI, u32 hitsToKOPlayer, bool3
 
 // This function splits switching behaviour depending on whether the switch is free.
 // Everything runs in the same loop to minimize computation time. This makes it harder to read, but hopefully the comments can guide you!
+// AI_FLAG_ILLUSION_TRICKS: bitmask of party slots the switch-in pickers must ignore (see GetMostSuitableMonExcluding).
+static u32 sExcludedSwitchinMons = 0;
+
 static u32 GetBestMonIntegrated(struct Pokemon *party, int lastId, enum BattlerId battler, enum BattlerId opposingBattler, enum BattlerId battlerIn1, enum BattlerId battlerIn2, enum SwitchType switchType)
 {
     struct IncomingHealInfo healInfoData;
@@ -2248,6 +2251,8 @@ static u32 GetBestMonIntegrated(struct Pokemon *party, int lastId, enum BattlerI
             continue;
         // Check if partner wants to use this mon already
         if (IsPartyMonPlannedToBeSwitchedInByPartner(monIndex, battler))
+            continue;
+        if (sExcludedSwitchinMons & (1u << monIndex))
             continue;
         // Save Ace Pokemon for last
         if (IsAceMon(battler, monIndex))
@@ -2510,6 +2515,8 @@ static u32 GetBestMonVanilla(struct Pokemon *party, int lastId, enum BattlerId b
         // Check if partner wants to use this mon already
         if (IsPartyMonPlannedToBeSwitchedInByPartner(monIndex, battler))
             continue;
+        if (sExcludedSwitchinMons & (1u << monIndex))
+            continue;
         // Save Ace Pokemon for last
         if (IsAceMon(battler, monIndex))
         {
@@ -2602,6 +2609,10 @@ static u32 GetNextMonInParty(struct Pokemon *party, int lastId, enum BattlerId b
         }
         // Check if partner wants to use this mon already
         if (IsPartyMonPlannedToBeSwitchedInByPartner(monIndex, battler))
+        {
+            continue;
+        }
+        if (sExcludedSwitchinMons & (1u << monIndex))
         {
             continue;
         }
@@ -2717,8 +2728,11 @@ u32 AI_TryIllusionTrickSwap(enum BattlerId battler, u32 chosenMonId)
         return chosenMonId;
 
     // Determine which mon Illusion would disguise the Illusion mon as, mirroring SetIllusionMon.
+    // If the partner slot is empty but already has a pending switch-in, that mon will be the partner.
     if (IsBattlerAlive(partner))
         partnerMon = &party[gBattlerPartyIndexes[partner]];
+    else if (IsDoubleBattle() && BattlersShareParty(battler, partner) && gBattleStruct->monToSwitchIntoId[partner] < PARTY_SIZE)
+        partnerMon = &party[gBattleStruct->monToSwitchIntoId[partner]];
     else
         partnerMon = &party[illusionMonId];
 
@@ -2737,6 +2751,100 @@ u32 AI_TryIllusionTrickSwap(enum BattlerId battler, u32 chosenMonId)
             return illusionMonId;
     }
     return chosenMonId;
+}
+
+static u32 GetMostSuitableMonExcluding(enum BattlerId battler, enum SwitchType switchType, u32 excludeMask)
+{
+    u32 monId;
+
+    sExcludedSwitchinMons = excludeMask;
+    monId = GetMostSuitableMonToSwitchInto(battler, switchType);
+    sExcludedSwitchinMons = 0;
+
+    if (monId < PARTY_SIZE && !(excludeMask & (1u << monId)))
+        return monId;
+
+    // Standard logic found nothing usable; fall back to the first allowed valid mon.
+    for (u32 i = 0; i < PARTY_SIZE; i++)
+    {
+        if (!(excludeMask & (1u << i)) && IsValidIllusionTrickSwitchin(battler, i))
+            return i;
+    }
+    return PARTY_SIZE;
+}
+
+// AI_FLAG_ILLUSION_TRICKS: when both of the AI's slots are refilled after KOs and its benched Illusion mon,
+// the mon Illusion would disguise it as, and at least one other mon are available, the first slot sends the
+// best other mon and the second slot sends the better of the Illusion mon / disguise target (with a
+// SHOULD_ILLUSION_TRICK% chance to send the other). This keeps one of the pair hidden in the back so the
+// Illusion is never broken by its disguise target standing next to it.
+// Returns PARTY_SIZE if the situation doesn't apply; otherwise the caller must not apply AI_TryIllusionTrickSwap.
+u32 AI_TryIllusionDoubleRefill(enum BattlerId battler, enum SwitchType switchType)
+{
+    enum BattlerId partner = BATTLE_PARTNER(battler);
+    struct Pokemon *party;
+    u32 illusionMonId = PARTY_SIZE, targetMonId, otherMask = 0, pairMask, pending, pick;
+    s32 partyStart = 0, partyEnd = PARTY_SIZE;
+
+    if (!(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_ILLUSION_TRICKS)
+     || !IsDoubleBattle()
+     || switchType != SWITCH_AFTER_KO
+     || !BattlersShareParty(battler, partner)
+     || IsBattlerAlive(partner))
+        return PARTY_SIZE;
+
+    party = GetBattlerParty(battler);
+
+    // Match the party range Illusion itself uses (see GetIllusionMonPartyId).
+    if (GetBattlerSide(battler) == B_SIDE_OPPONENT && (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS))
+    {
+        if (GetBattlerPosition(battler) == B_POSITION_OPPONENT_LEFT)
+            partyEnd = PARTY_SIZE / 2;
+        else
+            partyStart = PARTY_SIZE / 2;
+    }
+
+    for (s32 i = partyStart; i < partyEnd; i++)
+    {
+        if (GetMonAbility(&party[i]) == ABILITY_ILLUSION && IsValidIllusionTrickSwitchin(battler, i))
+        {
+            illusionMonId = i;
+            break;
+        }
+    }
+    if (illusionMonId == PARTY_SIZE)
+        return PARTY_SIZE;
+
+    // Neither slot is occupied yet, so compute the disguise as if there were no partner on the field.
+    targetMonId = GetIllusionMonPartyId(party, &party[illusionMonId], &party[illusionMonId], battler);
+    if (targetMonId == PARTY_SIZE || targetMonId == illusionMonId || !IsValidIllusionTrickSwitchin(battler, targetMonId))
+        return PARTY_SIZE;
+
+    pairMask = (1u << illusionMonId) | (1u << targetMonId);
+    for (s32 i = partyStart; i < partyEnd; i++)
+    {
+        if (!(pairMask & (1u << i)) && IsValidIllusionTrickSwitchin(battler, i))
+            otherMask |= (1u << i);
+    }
+
+    pending = gBattleStruct->monToSwitchIntoId[partner];
+    if (pending >= PARTY_SIZE)
+    {
+        // First slot to choose: best mon that is neither the Illusion mon nor its disguise target.
+        if (otherMask == 0)
+            return PARTY_SIZE;
+        return GetMostSuitableMonExcluding(battler, switchType, ~otherMask);
+    }
+    if (pairMask & (1u << pending))
+        return PARTY_SIZE; // Partner already took one of the pair; nothing to plan.
+
+    // Second slot: standard logic picks between the Illusion mon and its disguise target, then maybe swap.
+    pick = GetMostSuitableMonExcluding(battler, switchType, ~pairMask);
+    if (pick != illusionMonId && pick != targetMonId)
+        pick = illusionMonId;
+    if (RandomPercentage(RNG_AI_ILLUSION_TRICK, SHOULD_ILLUSION_TRICK))
+        pick = (pick == illusionMonId) ? targetMonId : illusionMonId;
+    return pick;
 }
 
 // AI_FLAG_ENCOURAGE_STAT_BOOSTS: pass net-positive boosts to the first valid Stored Power / Power Trip user.
