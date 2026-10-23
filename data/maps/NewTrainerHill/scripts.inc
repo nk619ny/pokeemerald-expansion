@@ -1262,27 +1262,27 @@ NewTrainerHill_EventScript_SetOpponent_4:
 
 NewTrainerHill_EventScript_SetOpponent_5:
 # 642 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SIDNEY
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PHOEBE
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_6:
 # 644 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_DRAKE
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GRETA
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_7:
 # 646 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PHOEBE
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPENSER
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_8:
 # 648 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPENSER
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_DRAKE
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_9:
 # 650 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GRETA
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SIDNEY
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_10:
@@ -1388,27 +1388,27 @@ NewTrainerHill_EventScript_StartBattle_4:
 
 NewTrainerHill_EventScript_StartBattle_5:
 # 686 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_3, EverGrandeCity_SidneysOriginalText_Defeat
+	trainerbattle_no_intro TRAINER_HILL_3, EverGrandeCity_PhoebesOriginal_Text_Defeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_6:
 # 688 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_4, EverGrandeCity_DrakesOriginal_Text_Defeat
+	trainerbattle_no_intro TRAINER_HILL_4, NewTrainerHill_Text_GretaDefeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_7:
 # 690 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_5, EverGrandeCity_PhoebesOriginal_Text_Defeat
+	trainerbattle_no_intro TRAINER_HILL_5, NewTrainerHill_Text_SpenserDefeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_8:
 # 692 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_6, NewTrainerHill_Text_SpenserDefeat
+	trainerbattle_no_intro TRAINER_HILL_6, EverGrandeCity_DrakesOriginal_Text_Defeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_9:
 # 694 "data/maps/NewTrainerHill/scripts.pory"
-	trainerbattle_no_intro TRAINER_HILL_7, NewTrainerHill_Text_GretaDefeat
+	trainerbattle_no_intro TRAINER_HILL_7, EverGrandeCity_SidneysOriginalText_Defeat
 	goto NewTrainerHill_EventScript_StartBattle_1
 
 NewTrainerHill_EventScript_StartBattle_10:
@@ -1451,27 +1451,27 @@ NewTrainerHill_EventScript_OpponentDialogue_4:
 
 NewTrainerHill_EventScript_OpponentDialogue_5:
 # 708 "data/maps/NewTrainerHill/scripts.pory"
-	msgbox NewTrainerHill_Text_Sidney, MSGBOX_NPC
+	msgbox NewTrainerHill_Text_Phoebe, MSGBOX_NPC
 	goto NewTrainerHill_EventScript_OpponentDialogue_1
 
 NewTrainerHill_EventScript_OpponentDialogue_6:
 # 710 "data/maps/NewTrainerHill/scripts.pory"
-	msgbox NewTrainerHill_Text_Drake, MSGBOX_NPC
+	msgbox NewTrainerHill_Text_GretaIntro, MSGBOX_NPC
 	goto NewTrainerHill_EventScript_OpponentDialogue_1
 
 NewTrainerHill_EventScript_OpponentDialogue_7:
 # 712 "data/maps/NewTrainerHill/scripts.pory"
-	msgbox NewTrainerHill_Text_Phoebe, MSGBOX_NPC
+	msgbox NewTrainerHill_Text_SpenserIntro, MSGBOX_NPC
 	goto NewTrainerHill_EventScript_OpponentDialogue_1
 
 NewTrainerHill_EventScript_OpponentDialogue_8:
 # 714 "data/maps/NewTrainerHill/scripts.pory"
-	msgbox NewTrainerHill_Text_SpenserIntro, MSGBOX_NPC
+	msgbox NewTrainerHill_Text_Drake, MSGBOX_NPC
 	goto NewTrainerHill_EventScript_OpponentDialogue_1
 
 NewTrainerHill_EventScript_OpponentDialogue_9:
 # 716 "data/maps/NewTrainerHill/scripts.pory"
-	msgbox NewTrainerHill_Text_GretaIntro, MSGBOX_NPC
+	msgbox NewTrainerHill_Text_Sidney, MSGBOX_NPC
 	goto NewTrainerHill_EventScript_OpponentDialogue_1
 
 NewTrainerHill_EventScript_OpponentDialogue_10:
@@ -1579,28 +1579,28 @@ NewTrainerHill_EventScript_AnnounceOpponent_Text_1:
 
 NewTrainerHill_EventScript_AnnounceOpponent_Text_2:
 # 664 "data/maps/NewTrainerHill/scripts.pory"
-	.string "{PLAYER} will be facing the rogue\n"
-	.string "Sidney!$"
-
-NewTrainerHill_EventScript_AnnounceOpponent_Text_3:
-# 666 "data/maps/NewTrainerHill/scripts.pory"
-	.string "{PLAYER} will be facing Drake, the wild\n"
-	.string "Dragon specialist!$"
-
-NewTrainerHill_EventScript_AnnounceOpponent_Text_4:
-# 668 "data/maps/NewTrainerHill/scripts.pory"
 	.string "{PLAYER} will be facing Phoebe, fresh\n"
 	.string "off training at Mt. Pyre!$"
 
-NewTrainerHill_EventScript_AnnounceOpponent_Text_5:
-# 670 "data/maps/NewTrainerHill/scripts.pory"
+NewTrainerHill_EventScript_AnnounceOpponent_Text_3:
+# 666 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing the gutsy\n"
+	.string "Greta!$"
+
+NewTrainerHill_EventScript_AnnounceOpponent_Text_4:
+# 668 "data/maps/NewTrainerHill/scripts.pory"
 	.string "{PLAYER} will be facing Spenser,\n"
 	.string "chosen one of the mysterious Blue Orb!$"
 
+NewTrainerHill_EventScript_AnnounceOpponent_Text_5:
+# 670 "data/maps/NewTrainerHill/scripts.pory"
+	.string "{PLAYER} will be facing Drake, the wild\n"
+	.string "Dragon specialist!$"
+
 NewTrainerHill_EventScript_AnnounceOpponent_Text_6:
 # 672 "data/maps/NewTrainerHill/scripts.pory"
-	.string "{PLAYER} will be facing the gutsy\n"
-	.string "Greta!$"
+	.string "{PLAYER} will be facing the rogue\n"
+	.string "Sidney!$"
 
 NewTrainerHill_EventScript_AnnounceOpponent_Text_7:
 # 674 "data/maps/NewTrainerHill/scripts.pory"

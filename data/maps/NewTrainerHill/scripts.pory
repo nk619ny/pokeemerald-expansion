@@ -639,15 +639,15 @@ script NewTrainerHill_EventScript_SetOpponent {
 		case 2:
 			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GLACIA)
 		case 3:
-			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SIDNEY)
-		case 4:
-			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_DRAKE)
-		case 5:
 			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PHOEBE)
-		case 6:
-			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPENSER)
-		case 7:
+		case 4:
 			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GRETA)
+		case 5:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPENSER)
+		case 6:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_DRAKE)
+		case 7:
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SIDNEY)
 		case 8:
 			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_ZINNIA)
 	}
@@ -661,15 +661,15 @@ script NewTrainerHill_EventScript_AnnounceOpponent {
 		case 2:
 			msgbox(format("{PLAYER} will be facing Glacia, the Ice-type specialist!"), MSGBOX_NPC)
 		case 3:
-			msgbox(format("{PLAYER} will be facing the rogue Sidney!"), MSGBOX_NPC)
-		case 4:
-			msgbox(format("{PLAYER} will be facing Drake, the wild Dragon specialist!"), MSGBOX_NPC)
-		case 5:
 			msgbox(format("{PLAYER} will be facing Phoebe, fresh off training at Mt. Pyre!"), MSGBOX_NPC)
-		case 6:
-			msgbox(format("{PLAYER} will be facing Spenser, chosen one of the mysterious Blue Orb!"), MSGBOX_NPC)
-		case 7:
+		case 4:
 			msgbox(format("{PLAYER} will be facing the gutsy Greta!"), MSGBOX_NPC)
+		case 5:
+			msgbox(format("{PLAYER} will be facing Spenser, chosen one of the mysterious Blue Orb!"), MSGBOX_NPC)
+		case 6:
+			msgbox(format("{PLAYER} will be facing Drake, the wild Dragon specialist!"), MSGBOX_NPC)
+		case 7:
+			msgbox(format("{PLAYER} will be facing the rogue Sidney!"), MSGBOX_NPC)
 		case 8:
 			msgbox(format("{PLAYER} will be facing Zinnia the Draconid!"), MSGBOX_NPC)
 	}
@@ -683,15 +683,15 @@ script NewTrainerHill_EventScript_StartBattle {
 		case 2:
 			trainerbattle_no_intro(TRAINER_HILL_2, NewTrainerHill_Text_GlaciaDefeat)
 		case 3:
-			trainerbattle_no_intro(TRAINER_HILL_3, EverGrandeCity_SidneysOriginalText_Defeat)
+			trainerbattle_no_intro(TRAINER_HILL_3, EverGrandeCity_PhoebesOriginal_Text_Defeat)
 		case 4:
-			trainerbattle_no_intro(TRAINER_HILL_4, EverGrandeCity_DrakesOriginal_Text_Defeat)
+			trainerbattle_no_intro(TRAINER_HILL_4, NewTrainerHill_Text_GretaDefeat)
 		case 5:
-			trainerbattle_no_intro(TRAINER_HILL_5, EverGrandeCity_PhoebesOriginal_Text_Defeat)
+			trainerbattle_no_intro(TRAINER_HILL_5, NewTrainerHill_Text_SpenserDefeat)
 		case 6:
-			trainerbattle_no_intro(TRAINER_HILL_6, NewTrainerHill_Text_SpenserDefeat)
+			trainerbattle_no_intro(TRAINER_HILL_6, EverGrandeCity_DrakesOriginal_Text_Defeat)
 		case 7:
-			trainerbattle_no_intro(TRAINER_HILL_7, NewTrainerHill_Text_GretaDefeat)
+			trainerbattle_no_intro(TRAINER_HILL_7, EverGrandeCity_SidneysOriginalText_Defeat)
 		case 8:
 			trainerbattle_no_intro(TRAINER_HILL_8, NewTrainerHill_Text_ZinniaDefeat)
 	}
@@ -705,15 +705,15 @@ script NewTrainerHill_EventScript_OpponentDialogue {
 		case 2:
 			msgbox(NewTrainerHill_Text_Glacia, MSGBOX_NPC)
 		case 3:
-			msgbox(NewTrainerHill_Text_Sidney, MSGBOX_NPC)
-		case 4:
-			msgbox(NewTrainerHill_Text_Drake, MSGBOX_NPC)
-		case 5:
 			msgbox(NewTrainerHill_Text_Phoebe, MSGBOX_NPC)
-		case 6:
-			msgbox(NewTrainerHill_Text_SpenserIntro, MSGBOX_NPC)
-		case 7:
+		case 4:
 			msgbox(NewTrainerHill_Text_GretaIntro, MSGBOX_NPC)
+		case 5:
+			msgbox(NewTrainerHill_Text_SpenserIntro, MSGBOX_NPC)
+		case 6:
+			msgbox(NewTrainerHill_Text_Drake, MSGBOX_NPC)
+		case 7:
+			msgbox(NewTrainerHill_Text_Sidney, MSGBOX_NPC)
 		case 8:
 			msgbox(format("Zinnia: Give me a good taste of everything you and your Pokémon have to offer!"), MSGBOX_NPC)
 	}

@@ -7640,6 +7640,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sFlygonLevelUpLearnset,
         .teachableLearnset = sFlygonTeachableLearnset,
         .eliteLearnset = sFlygonEliteLearnset,
+        .formSpeciesIdTable = sFlygonFormSpeciesIdTable,
+        .formChangeTable = sFlygonFormChangeTable,
     },
 
     [SPECIES_FLYGON_MEGA] =
@@ -7724,6 +7726,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sFlygonLevelUpLearnset,
         .teachableLearnset = sFlygonTeachableLearnset,
         .eliteLearnset = sFlygonEliteLearnset,
+        .formSpeciesIdTable = sFlygonFormSpeciesIdTable,
+        .formChangeTable = sFlygonFormChangeTable,
     }, 
 
 #endif //P_FAMILY_TRAPINCH

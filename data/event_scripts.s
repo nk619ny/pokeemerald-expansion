@@ -1253,7 +1253,7 @@ Common_EventScript_OutOfCenterPartyHeal::
 EventScript_RegionMap::
 	lockall
 	msgbox Common_Text_LookCloserAtMap, MSGBOX_DEFAULT
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special FieldShowRegionMap
 	releaseall
 	end

@@ -88,7 +88,7 @@
       "x": 64,
       "y": 19,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 9,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",

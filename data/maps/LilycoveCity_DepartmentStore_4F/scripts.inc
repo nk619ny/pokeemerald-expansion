@@ -121,40 +121,52 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 # 61 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_TM_LIGHT_SCREEN
 # 62 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_NONE
+	.2byte ITEM_TM_VENOSHOCK
 # 63 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	pokemartlistend
+	.2byte ITEM_TM_LEECH_LIFE
 # 64 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-
+	.2byte ITEM_TM_POISON_JAB
 # 65 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
+	.2byte ITEM_TM_THROAT_CHOP
 # 66 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "Hmm…\p"
+	.2byte ITEM_TM_LUNGE
 # 67 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "An attacking move…\n"
+	.2byte ITEM_TM_REVERSAL
 # 68 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "Or a defensive move…\p"
+	.2byte ITEM_NONE
 # 69 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "It's no easy matter to decide which TM\n"
+	pokemartlistend
 # 70 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "moves should be taught to Pokémon…$"
-# 71 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 
+# 71 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
 # 72 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
+	.string "Hmm…\p"
 # 73 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "There are so many different kinds of\n"
+	.string "An attacking move…\n"
 # 74 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "TM moves.\p"
+	.string "Or a defensive move…\p"
 # 75 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "A catalog I read said there are fifty\n"
+	.string "It's no easy matter to decide which TM\n"
 # 76 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "different kinds.$"
+	.string "moves should be taught to Pokémon…$"
 # 77 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 
 # 78 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
+LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
 # 79 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
-	.string "I'd like to get all the different TMs,\n"
+	.string "There are so many different kinds of\n"
 # 80 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.string "TM moves.\p"
+# 81 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.string "A catalog I read said there are fifty\n"
+# 82 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.string "different kinds.$"
+# 83 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+
+# 84 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
+# 85 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
+	.string "I'd like to get all the different TMs,\n"
+# 86 "data/maps/LilycoveCity_DepartmentStore_4F/scripts.pory"
 	.string "but a Pokémon learns only four moves.$"

@@ -2212,6 +2212,7 @@ script MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems {
 	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Eject Button    300 coins",ITEM_EJECT_BUTTON)}
 	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Eject Pack        300 coins",ITEM_EJECT_PACK)}
 	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Red Card            250 coins",ITEM_RED_CARD)}
+	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Room Service    400 coins",ITEM_ROOM_SERVICE)}
 	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Absorb Bulb      150 coins",ITEM_ABSORB_BULB)}
 	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Cell Battery     150 coins",ITEM_CELL_BATTERY)}
 	if(!flag(FLAG_IS_CHAMPION)){dynmultipush("Luminous Moss  150 coins",ITEM_LUMINOUS_MOSS)}
@@ -2326,6 +2327,13 @@ script MauvilleCity_GameCorner_EventScript_BuyOneTimeHeldItems {
 			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
 			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
 			removecoins(250)
+			additem(TempVar_PrizeToBuy)
+		case ITEM_ROOM_SERVICE:
+			goto_if_lt(TempVar_CurrentCoins, 400, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)
+			buffernumberstring(STR_VAR_2, 400)
+			msgbox(format("You want to buy {STR_VAR_1} for {STR_VAR_2} coins. Is that correct?"), MSGBOX_YESNO)
+			goto_if_eq(VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_ComeBackLater)
+			removecoins(400)
 			additem(TempVar_PrizeToBuy)
 		case ITEM_ABSORB_BULB:
 			goto_if_lt(TempVar_CurrentCoins, 150, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForPrize)

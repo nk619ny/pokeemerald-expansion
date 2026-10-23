@@ -5280,7 +5280,7 @@ IVs: 0 Atk
 - Volt Switch
 
 Absol @ Absolite Z  
-Ability: Magic Bounce  
+Ability: Justified
 Level: 78
 EVs: 252 Atk / 252 Spe
 Adamant Nature
@@ -12670,7 +12670,7 @@ IVs: 0 Atk
 - Chilling Water  
 
 
-=== TRAINER_HILL_3 ===
+=== TRAINER_HILL_7 ===
 Name: SIDNEY
 Pic: Sidney ORAS 80
 Gender: Male
@@ -12681,8 +12681,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Fezandipiti (M) @ Expert Belt  
 Ability: Toxic Chain  
 Tera Type: Poison  
-Level: 45
-EVs: 188 Atk / 188 Spe  
+Level: 75
+EVs: 252 Atk / 252 Spe  
 Jolly Nature  
 - Gunk Shot  
 - Play Rough  
@@ -12691,9 +12691,9 @@ Jolly Nature
 
 Brute Bonnet @ Booster Energy  
 Ability: Protosynthesis  
-Level: 45
+Level: 75
 Tera Type: Grass  
-EVs: 188 HP / 188 Atk
+EVs: 252 HP / 252 Atk
 Adamant Nature  
 - Sucker Punch  
 - Spore  
@@ -12702,9 +12702,9 @@ Adamant Nature
 
 Scrafty @ Scraftinite  
 Ability: Intimidate  
-Level: 48
+Level: 75
 Tera Type: Dark  
-EVs: 188 HP / 188 Atk
+EVs: 252 HP / 252 Atk
 Adamant Nature  
 - Fake Out  
 - Poison Jab  
@@ -12713,9 +12713,9 @@ Adamant Nature
 
 Moltres-Galar @ Sitrus Berry  
 Ability: Berserk  
-Level: 45
+Level: 75
 Tera Type: Dark  
-EVs: 188 SpA / 188 Spe  
+EVs: 252 SpA / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Fiery Wrath  
@@ -12723,10 +12723,10 @@ IVs: 0 Atk
 - Ancient Power  
 - Tailwind  
 
-Bisharp @ Chople Berry  
+Kingambit @ Chople Berry  
 Ability: Defiant  
-Level: 47
-EVs: 188 HP / 188 Atk
+Level: 75
+EVs: 252 HP / 252 Atk
 Adamant Nature  
 - Iron Head  
 - Sucker Punch  
@@ -12735,8 +12735,8 @@ Adamant Nature
 
 Ting-Lu @ Leftovers  
 Ability: Vessel of Ruin   
-Level: 45
-EVs: 128 HP / 128 Def / 128 SpD  
+Level: 75
+EVs: 168 HP / 168 Def / 168 SpD  
 Relaxed Nature  
 - Sand Tomb  
 - Ruination  
@@ -12745,7 +12745,7 @@ Relaxed Nature
 
 
 
-=== TRAINER_HILL_4 ===
+=== TRAINER_HILL_6 ===
 Name: DRAKE
 Pic: Elite Four Drake
 Gender: Male
@@ -12755,7 +12755,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Kingdra  @ Scope Lens
 Ability: Sniper 
-Level: 52 
+Level: 70 
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Wave Crash  
@@ -12765,7 +12765,7 @@ Adamant Nature
 
 Duraludon @ Eviolite  
 Ability: Stamina  
-Level: 51
+Level: 69
 EVs: 252 HP / 4 SpA / 252 SpD  
 Serious Nature  
 IVs: 0 Atk  
@@ -12776,7 +12776,7 @@ IVs: 0 Atk
 
 Latios (M) @ Soul Dew  
 Ability: Levitate  
-Level: 51
+Level: 69
 IVs: 0 Atk  
 - Tailwind  
 - Aura Sphere  
@@ -12785,7 +12785,7 @@ IVs: 0 Atk
 
 Hydrapple @ Yache Berry  
 Ability: Supersweet Syrup  
-Level: 51
+Level: 70
 EVs: 252 HP / 128 SpA / 128 SpD  
 Bold Nature  
 IVs: 0 Atk  
@@ -12796,7 +12796,7 @@ IVs: 0 Atk
 
 Salamence @ Salamencite  
 Ability: Intimidate  
-Level: 53
+Level: 70
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Dragon Dance  
@@ -12806,13 +12806,14 @@ Adamant Nature
 
 Regidrago @ White Herb  
 Ability: Dragon's Maw  
-Level: 51
+Level: 69
 EVs: 132 Def / 60 SpA / 64 SpD / 252 Spe  
 Mild Nature  
 IVs: 0 Atk  
 - Dragon Energy  
 - Draco Meteor  
 - Ancient Power  
+- Protect
 
 
 === TRAINER_VICTORIA === /* Route 111 */ 
@@ -13013,7 +13014,7 @@ IVs: 0 Atk
 - Flash Cannon  
 */
 
-=== TRAINER_HILL_5 === /* Route */
+=== TRAINER_HILL_3 === /* Route */
 Name: PHOEBE
 Pic: Phoebe ORAS 80
 Gender: Female
@@ -13023,8 +13024,8 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Marowak-Alola @ Thick Club  
 Ability: Rock Head  
-Level: 60
-EVs: 252 HP / 252 Atk
+Level: 45
+EVs: 188 HP / 188 Atk
 Adamant Nature
 - Shadow Bone  
 - Bonemerang  
@@ -13033,8 +13034,8 @@ Adamant Nature
 
 Oricorio-Sensu @ Flying Gem  
 Ability: Dancer  
-Level: 61
-EVs: 4 Atk / 252 SpA / 252 Spe  
+Level: 45
+EVs: 188 SpA / 188 Spe  
 Modest Nature  
 - Revelation Dance  
 - Quiver Dance  
@@ -13043,8 +13044,8 @@ Modest Nature
 
 Spectrier @ Focus Sash  
 Ability: Grim Neigh  
-Level: 60
-EVs: 252 SpA / 252 Spe  
+Level: 46
+EVs: 188 SpA / 188 Spe  
 Timid Nature  
 IVs: 0 Atk  
 - Astral Barrage  
@@ -13054,8 +13055,8 @@ IVs: 0 Atk
 
 Banette @ Banettite  
 Ability: Insomnia  
-Level: 60
-EVs: 252 HP / 252 Atk
+Level: 48
+EVs: 188 HP / 188 Atk
 Adamant Nature
 - Cotton Guard  
 - Shadow Claw  
@@ -13064,8 +13065,8 @@ Adamant Nature
 
 Grimmsnarl (M) @ Expert Belt  
 Ability: Prankster  
-Level: 61
-EVs: 252 HP / 252 Atk  
+Level: 45
+EVs: 188 HP / 188 Atk  
 Adamant Nature  
 - Spirit Break  
 - False Surrender  
@@ -13074,8 +13075,8 @@ Adamant Nature
 
 Marshadow  
 Ability: Technician  
-Level: 60
-EVs: 252 Atk / 4 SpD / 252 Spe  
+Level: 46
+EVs: 164 Atk / 64 SpD / 164 Spe  
 Adamant Nature  
 - Spectral Thief  
 - Shadow Sneak  
@@ -13083,7 +13084,7 @@ Adamant Nature
 - Copycat  
 
 
-=== TRAINER_HILL_6 === /* Trainer Hill */
+=== TRAINER_HILL_5 === /* Trainer Hill */
 Name: SPENSER
 Pic: Palace Maven Spenser
 Gender: Male
@@ -13093,7 +13094,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Crobat @ Focus Sash  
 Ability: Inner Focus  
-Level: 70
+Level: 60
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Tailwind  
@@ -13103,7 +13104,7 @@ Jolly Nature
 
 Slaking @ Leftovers  
 Ability: Comatose  
-Level: 67
+Level: 57
 - High Horsepower  
 - Facade  
 - Drain Punch  
@@ -13111,7 +13112,7 @@ Level: 67
 
 Lapras @ Throat Spray
 Ability: Water Absorb  
-Level: 69
+Level: 60
 EVs: 252 HP / 252 SpA  
 Modest Nature  
 IVs: 0 Atk  
@@ -13122,7 +13123,7 @@ IVs: 0 Atk
 
 Arcanine @ Normal Gem  
 Ability: Intimidate  
-Level: 69
+Level: 60
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
 - Sacred Fire  
@@ -13132,7 +13133,7 @@ Adamant Nature
 
 Raikou  
 Ability: Inner Focus  
-Level: 68
+Level: 60
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -13144,7 +13145,7 @@ IVs: 0 Atk
 
 Venusaur @ Venusaurite X
 Ability: Thick Fat  
-Level: 70
+Level: 60
 EVs: 252 HP / 252 Atk
 Adamant Nature
 - Power Whip  
@@ -13153,7 +13154,7 @@ Adamant Nature
 - Swords Dance  
 
 
-=== TRAINER_HILL_7 === /* Trainer Hill */ 
+=== TRAINER_HILL_4 === /* Trainer Hill */ 
 Name: GRETA
 Pic: Arena Tycoon Greta
 Gender: Female
@@ -13163,7 +13164,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Breloom  @ Focus Sash
 Ability: Effect Spore  
-Level: 75
+Level: 52
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Mach Punch  
@@ -13173,7 +13174,7 @@ Jolly Nature
 
 Haxorus  
 Ability: Mold Breaker  
-Level: 75
+Level: 51
 EVs: 4 HP / 252 Atk / 252 Spe  
 Adamant Nature  
 - First Impression  
@@ -13181,9 +13182,9 @@ Adamant Nature
 - Stomping Tantrum  
 - Counter
 
-Corviknight  
+Corviknight @ Mirror Herb
 Ability: Mirror Armor  
-Level: 74
+Level: 51
 EVs: 252 HP / 252 SpD  
 Careful Nature  
 - Bulk Up  
@@ -13193,7 +13194,7 @@ Careful Nature
 
 Gengar @ Gengarite  
 Ability: Levitate  
-Level: 77
+Level: 52
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -13204,7 +13205,7 @@ IVs: 0 Atk
 
 Chien-Pao @ Chople Berry  
 Ability: Sword of Ruin  
-Level: 75
+Level: 51
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Icicle Crash  
@@ -13214,7 +13215,7 @@ Jolly Nature
 
 Urshifu @ Focus Sash  
 Ability: Unseen Fist  
-Level: 74
+Level: 51
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
 - Sucker Punch  
@@ -23860,7 +23861,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Flygon  @ Flygonite
-Ability: Levitate  
+Ability: Sand Stream  
 Level: 70
 EVs: 252 HP / 252 Atk / 4 Spe  
 Adamant Nature  
