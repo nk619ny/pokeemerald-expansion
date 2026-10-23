@@ -434,7 +434,7 @@ Route119_EventScript_Fabian::
 	end
 
 Route119_EventScript_Dayton::
-	trainerbattle_single TRAINER_DAYTON, Route119_Text_DaytonIntro, Route119_Text_DaytonDefeat
+	trainerbattle_single TRAINER_DAYTON, Route119_Text_DaytonIntro, Route119_Text_DaytonDefeat, Route119_EventScript_CrunchKindler
 	msgbox Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -730,6 +730,21 @@ script Route119_EventScript_CyclingTriathleteMWildCharge {
 		waitfanfare
 		closemessage
 	}
+	releaseall
+	end
+}
+
+script Route119_EventScript_CrunchKindler {
+	lock
+	faceplayer
+	checkitem(ITEM_TM_CRUNCH)
+	if(var(VAR_RESULT) == FALSE) {
+		msgbox(format("There's nothing as satisfying as getting a good crunch off some perfectly-seared meat.\pYou should share that joy with your Pokémon too!"), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_TM_CRUNCH)
+		waitfanfare
+	}
+	closemessage
 	releaseall
 	end
 }

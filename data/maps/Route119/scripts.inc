@@ -871,7 +871,7 @@ Route119_EventScript_Fabian::
 # 436 "data/maps/Route119/scripts.pory"
 Route119_EventScript_Dayton::
 # 437 "data/maps/Route119/scripts.pory"
-	trainerbattle_single TRAINER_DAYTON, Route119_Text_DaytonIntro, Route119_Text_DaytonDefeat
+	trainerbattle_single TRAINER_DAYTON, Route119_Text_DaytonIntro, Route119_Text_DaytonDefeat, Route119_EventScript_CrunchKindler
 # 438 "data/maps/Route119/scripts.pory"
 	msgbox Route119_Text_DaytonPostBattle, MSGBOX_AUTOCLOSE
 # 439 "data/maps/Route119/scripts.pory"
@@ -1440,6 +1440,35 @@ Route119_EventScript_CyclingTriathleteMWildCharge_2:
 	goto Route119_EventScript_CyclingTriathleteMWildCharge_1
 
 
+Route119_EventScript_CrunchKindler::
+# 738 "data/maps/Route119/scripts.pory"
+	lock
+# 739 "data/maps/Route119/scripts.pory"
+	faceplayer
+# 740 "data/maps/Route119/scripts.pory"
+	checkitem ITEM_TM_CRUNCH
+# 741 "data/maps/Route119/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route119_EventScript_CrunchKindler_2
+Route119_EventScript_CrunchKindler_1:
+# 747 "data/maps/Route119/scripts.pory"
+	closemessage
+# 748 "data/maps/Route119/scripts.pory"
+	releaseall
+	end
+
+Route119_EventScript_CrunchKindler_2:
+# 742 "data/maps/Route119/scripts.pory"
+	msgbox Route119_EventScript_CrunchKindler_Text_0, MSGBOX_DEFAULT
+# 743 "data/maps/Route119/scripts.pory"
+	closemessage
+# 744 "data/maps/Route119/scripts.pory"
+	giveitem ITEM_TM_CRUNCH
+# 745 "data/maps/Route119/scripts.pory"
+	waitfanfare
+	goto Route119_EventScript_CrunchKindler_1
+
+
 Route119_EventScript_DualWingbeatKeeper_Text_0:
 # 625 "data/maps/Route119/scripts.pory"
 	.string "When your opponents are expecting a\n"
@@ -1511,3 +1540,11 @@ Route119_EventScript_CyclingTriathleteMWildCharge_Text_0:
 	.string "I dream about riding down Route 119 at\n"
 	.string "full speed, with the wind and sounds of\l"
 	.string "thunder all around me!$"
+
+Route119_EventScript_CrunchKindler_Text_0:
+# 742 "data/maps/Route119/scripts.pory"
+	.string "There's nothing as satisfying as\n"
+	.string "getting a good crunch off some\l"
+	.string "perfectly-seared meat.\p"
+	.string "You should share that joy with your\n"
+	.string "Pokémon too!$"

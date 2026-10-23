@@ -777,12 +777,12 @@ MossdeepCity_EventScript_RightSign_Text_0:
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice::
 # 380 "data/maps/MossdeepCity_SpaceCenter_1F/scripts.pory"
-	.string "To the staff of the Space Center, and\n"
-	.string "the people of Hoenn:\p"
+	.string "To the staff of the Science Center, and\n"
+	.string "the broader populace of Hoenn:\p"
 	.string "We have not yielded or relinquished.\n"
 	.string "Land expansion is inevitable.\p"
-	.string "Our goal will be completed, even without\n"
-	.string "your cooperation.\p"
+	.string "Our objective will be achieved,\n"
+	.string "regardless of your compliance.\p"
 	.string "TEAM MAGMA$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel::

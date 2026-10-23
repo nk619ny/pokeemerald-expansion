@@ -378,7 +378,7 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 `
 
 text MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice {
-	format("To the staff of the Space Center, and the people of Hoenn:\pWe have not yielded or relinquished. Land expansion is inevitable.\pOur goal will be completed, even without your cooperation.\p                                          TEAM MAGMA")
+	format("To the staff of the Science Center, and the broader populace of Hoenn:\pWe have not yielded or relinquished. Land expansion is inevitable.\pOur objective will be achieved, regardless of your compliance.\p                                          TEAM MAGMA")
 }
 
 text MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel {

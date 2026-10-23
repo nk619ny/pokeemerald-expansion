@@ -445,7 +445,7 @@ Level: 75
 Octillery @ Bright Powder  
 Ability: Moody  
 Tera Type: Water  
-EVs: 252 HP / 252 SpA / 4 SpD  
+EVs: 252 HP / 128 SpA
 Modest Nature  
 IVs: 0 Atk  
 Level: 75
@@ -4545,7 +4545,7 @@ Adamant Nature
 
 Garchomp @ Choice Scarf  
 Ability: Rough Skin  
-Level: 78
+Level: 79
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Iron Head  
@@ -4555,6 +4555,8 @@ Jolly Nature
 
 Sneasler @ Focus Sash  
 Ability: Poison Touch  
+EVs: 252 Atk / 252 Spe
+Adamant Nature
 Level: 78
 - Fake Out  
 - Dire Claw  
@@ -12266,7 +12268,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Focus Energy
 - Arm Thrust
 
-=== TRAINER_GABE === /* Route 121 */
+=== TRAINER_GABE === /* Route 123 */
 Name: GABE
 Class: Kindler
 Pic: Kindler ORAS 80

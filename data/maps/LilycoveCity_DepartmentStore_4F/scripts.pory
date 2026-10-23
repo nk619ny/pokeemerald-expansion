@@ -32,8 +32,14 @@ LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:
 	.2byte ITEM_TM_ICE_BEAM
 	.2byte ITEM_TM_THUNDERBOLT
 	.2byte ITEM_TM_FLAMETHROWER
+	.2byte ITEM_TM_ENERGY_BALL
 	.2byte ITEM_TM_PSYCHIC
+	.2byte ITEM_TM_HYPER_VOICE
+	.2byte ITEM_TM_FACADE
 	.2byte ITEM_TM_HYPER_BEAM
+	.2byte ITEM_TM_SHADOW_CLAW
+	.2byte ITEM_TM_PSYCHO_CUT
+	.2byte ITEM_TM_CROSS_POISON
 	.2byte ITEM_NONE
 	pokemartlistend
 
@@ -53,7 +59,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 	.2byte ITEM_TM_SAFEGUARD
 	.2byte ITEM_TM_REFLECT
 	.2byte ITEM_TM_LIGHT_SCREEN
-	.2byte ITEM_TM_BULK_UP
 	.2byte ITEM_NONE
 	pokemartlistend
 
