@@ -1991,7 +1991,7 @@ bool32 TryChangeBattleWeather(enum BattlerId battler, u32 battleWeatherId, enum 
         if (gBattleWeather & B_WEATHER_PRIMAL_ANY || ability != ABILITY_NONE)
             gBattleStruct->weatherDuration = 0;
         else if (rock != 0 && GetBattlerHoldEffect(battler) == rock)
-            gBattleStruct->weatherDuration = 8;
+            gBattleStruct->weatherDuration = 10;
         else
             gBattleStruct->weatherDuration = 5;
     }
@@ -4319,7 +4319,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     BattleScriptCall(BattleScript_BlockedByPrimalWeather);
                     effect++;
                 }
-                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SANDSTORM, ABILITY_NONE)) // use ability none since it's not a switch in ability weather setter
+                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SANDSTORM, gLastUsedAbility)) // use gLastUsedAbility to make weather permanent
                 {
                     gBattleScripting.battler = battler;
                     BattleScriptCall(BattleScript_WeatherAbilityActivates);
@@ -4337,7 +4337,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     BattleScriptCall(BattleScript_BlockedByPrimalWeather);
                     effect++;
                 }
-                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, ABILITY_NONE)) // use ability none since it's not a switch in ability weather setter
+                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, gLastUsedAbility)) // use gLastUsedAbility to make weather permanent
                 {
                     gBattleScripting.battler = battler;
                     BattleScriptCall(BattleScript_WeatherAbilityActivates);
