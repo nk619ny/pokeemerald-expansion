@@ -360,7 +360,7 @@ Route109_EventScript_Woman::
 	msgbox Route109_Text_LittleKidsDartAround, MSGBOX_NPC
 	end
 
-Route109_EventScript_OldMan::
+Route109_EventScript_OldManOriginal::
 	msgbox Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC
 	end
 
@@ -646,6 +646,18 @@ script Route109_EventScript_GunkShotSailor {
 		}
 	}
 		msgbox(format("It's important to try to keep our waters clean.\pIt's better for Pokémon and people, even the ones who aren't sailors!"), MSGBOX_NPC)
+	releaseall
+	end
+}
+
+script Route109_EventScript_OldMan {
+	lock
+	goto_if_set(FLAG_RECEIVED_SHELL_BELL, Route109_EventScript_OldManOriginal)
+	msgbox(format("My Zigzagoon found this lovely charm made from shells. I suspect your Pokémon might appreciate it."), MSGBOX_NPC)
+	closemessage
+	giveitem(ITEM_SHELL_BELL)
+	waitfanfare
+	setflag(FLAG_RECEIVED_SHELL_BELL)
 	releaseall
 	end
 }

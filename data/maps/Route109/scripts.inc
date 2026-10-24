@@ -723,7 +723,7 @@ Route109_EventScript_Woman::
 # 362 "data/maps/Route109/scripts.pory"
 
 # 363 "data/maps/Route109/scripts.pory"
-Route109_EventScript_OldMan::
+Route109_EventScript_OldManOriginal::
 # 364 "data/maps/Route109/scripts.pory"
 	msgbox Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC
 # 365 "data/maps/Route109/scripts.pory"
@@ -1253,6 +1253,26 @@ Route109_EventScript_GunkShotSailor_4:
 	goto Route109_EventScript_GunkShotSailor_1
 
 
+Route109_EventScript_OldMan::
+# 654 "data/maps/Route109/scripts.pory"
+	lock
+# 655 "data/maps/Route109/scripts.pory"
+	goto_if_set FLAG_RECEIVED_SHELL_BELL, Route109_EventScript_OldManOriginal
+# 656 "data/maps/Route109/scripts.pory"
+	msgbox Route109_EventScript_OldMan_Text_0, MSGBOX_NPC
+# 657 "data/maps/Route109/scripts.pory"
+	closemessage
+# 658 "data/maps/Route109/scripts.pory"
+	giveitem ITEM_SHELL_BELL
+# 659 "data/maps/Route109/scripts.pory"
+	waitfanfare
+# 660 "data/maps/Route109/scripts.pory"
+	setflag FLAG_RECEIVED_SHELL_BELL
+# 661 "data/maps/Route109/scripts.pory"
+	releaseall
+	end
+
+
 Route109_EventScript_ChillingWater_Text_0:
 # 594 "data/maps/Route109/scripts.pory"
 	.string "I want to swim in the water, but it's too\n"
@@ -1299,6 +1319,12 @@ Route109_EventScript_GunkShotSailor_Text_2:
 	.string "waters clean.\p"
 	.string "It's better for Pokémon and people,\n"
 	.string "even the ones who aren't sailors!$"
+
+Route109_EventScript_OldMan_Text_0:
+# 656 "data/maps/Route109/scripts.pory"
+	.string "My Zigzagoon found this lovely charm\n"
+	.string "made from shells. I suspect your\l"
+	.string "Pokémon might appreciate it.$"
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods::
 # 561 "data/maps/Route109/scripts.pory"

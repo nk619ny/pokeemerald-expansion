@@ -57,7 +57,7 @@ Route127_EventScript_Donny::
 # 29 "data/maps/Route127/scripts.pory"
 Route127_EventScript_Jonah::
 # 30 "data/maps/Route127/scripts.pory"
-	trainerbattle_single TRAINER_JONAH, Route127_Text_JonahIntro, Route127_Text_JonahDefeat
+	trainerbattle_single TRAINER_JONAH, Route127_Text_JonahIntro, Route127_Text_JonahDefeat, Route127_EventScript_CompletedFishermenCheck
 # 31 "data/maps/Route127/scripts.pory"
 	msgbox Route127_Text_JonahPostBattle, MSGBOX_AUTOCLOSE
 # 32 "data/maps/Route127/scripts.pory"
@@ -67,7 +67,7 @@ Route127_EventScript_Jonah::
 # 34 "data/maps/Route127/scripts.pory"
 Route127_EventScript_Henry::
 # 35 "data/maps/Route127/scripts.pory"
-	trainerbattle_single TRAINER_HENRY, Route127_Text_HenryIntro, Route127_Text_HenryDefeat
+	trainerbattle_single TRAINER_HENRY, Route127_Text_HenryIntro, Route127_Text_HenryDefeat, Route127_EventScript_CompletedFishermenCheck
 # 36 "data/maps/Route127/scripts.pory"
 	msgbox Route127_Text_HenryPostBattle, MSGBOX_AUTOCLOSE
 # 37 "data/maps/Route127/scripts.pory"
@@ -77,7 +77,7 @@ Route127_EventScript_Henry::
 # 39 "data/maps/Route127/scripts.pory"
 Route127_EventScript_Roger::
 # 40 "data/maps/Route127/scripts.pory"
-	trainerbattle_single TRAINER_ROGER, Route127_Text_RogerIntro, Route127_Text_RogerDefeat
+	trainerbattle_single TRAINER_ROGER, Route127_Text_RogerIntro, Route127_Text_RogerDefeat, Route127_EventScript_CompletedFishermenCheck
 # 41 "data/maps/Route127/scripts.pory"
 	msgbox Route127_Text_RogerPostBattle, MSGBOX_AUTOCLOSE
 # 42 "data/maps/Route127/scripts.pory"
@@ -495,6 +495,50 @@ Route127_Movement_SwimmerReturnToSpot5:
 	walk_left
 	step_end
 
+Route127_EventScript_CompletedFishermenCheck::
+# 254 "data/maps/Route127/scripts.pory"
+	lock
+# 255 "data/maps/Route127/scripts.pory"
+	goto_if_not_defeated TRAINER_JONAH, Route127_EventScript_FishermenNotCompleted
+# 256 "data/maps/Route127/scripts.pory"
+	goto_if_not_defeated TRAINER_HENRY, Route127_EventScript_FishermenNotCompleted
+# 257 "data/maps/Route127/scripts.pory"
+	goto_if_not_defeated TRAINER_ROGER, Route127_EventScript_FishermenNotCompleted
+# 258 "data/maps/Route127/scripts.pory"
+	goto Route127_EventScript_CompletedFishermenReward
+# 259 "data/maps/Route127/scripts.pory"
+	releaseall
+	end
+
+
+Route127_EventScript_FishermenNotCompleted::
+# 264 "data/maps/Route127/scripts.pory"
+	lock
+# 265 "data/maps/Route127/scripts.pory"
+	msgbox Route127_EventScript_FishermenNotCompleted_Text_0
+# 266 "data/maps/Route127/scripts.pory"
+	closemessage
+# 267 "data/maps/Route127/scripts.pory"
+	releaseall
+	end
+
+
+Route127_EventScript_CompletedFishermenReward::
+# 272 "data/maps/Route127/scripts.pory"
+	lock
+# 273 "data/maps/Route127/scripts.pory"
+	msgbox Route127_EventScript_CompletedFishermenReward_Text_0
+# 274 "data/maps/Route127/scripts.pory"
+	closemessage
+# 275 "data/maps/Route127/scripts.pory"
+	giveitem ITEM_HEART_SCALE
+# 276 "data/maps/Route127/scripts.pory"
+	waitfanfare
+# 277 "data/maps/Route127/scripts.pory"
+	releaseall
+	end
+
+
 Route127_EventScript_Camden_Text_0:
 # 80 "data/maps/Route127/scripts.pory"
 	.string "Sometimes when I go into the water, I\n"
@@ -513,6 +557,14 @@ Route127_EventScript_BraveBirdKeeper_Text_1:
 # 96 "data/maps/Route127/scripts.pory"
 	.string "I hear there is a tower nearby where\n"
 	.string "powerful Flying-types gather.$"
+
+Route127_EventScript_FishermenNotCompleted_Text_0:
+# 265 "data/maps/Route127/scripts.pory"
+	.string "You may have bested me, but if you want the Fisherman's Treasure, you have to beat all of us on the island.$"
+
+Route127_EventScript_CompletedFishermenReward_Text_0:
+# 273 "data/maps/Route127/scripts.pory"
+	.string "You've certainly provedn your skill.\pAs a reward for defeating all of us, here's the treasure we fished up.$"
 
 Route127_EventScript_CantCross127Yet::
 # 102 "data/maps/Route127/scripts.pory"

@@ -1582,6 +1582,7 @@ SootopolisCity_Text_YouBroughtFlyingMon:
 	.string "Pokémon here?\p"
 	.string "Well, aren't you amazing!$"
 
+/*
 SootopolisCity_Text_GroudonPleaseStop:
 	.string "Maxie: G… Groudon…\n"
 	.string "Please! Stop what you're doing!\p"
@@ -1618,7 +1619,7 @@ SootopolisCity_Text_TryingMeaninglessToPokemon:
 	.string "Maybe all we were trying to do was\n"
 	.string "something small, even meaningless,\l"
 	.string "to Pokémon…$"
-/*
+
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
 	.string "STEVEN: Those Pokémon fighting…\n"
 	.string "GROUDON… And KYOGRE…\p"
@@ -1788,4 +1789,20 @@ script SootopolisCity_EventScript_ArchieRayquaza {
 	}
 	releaseall
 	end
+}
+
+text SootopolisCity_Text_TryingMeaninglessToPokemon {
+	format("Archie: That all was a right terror.\pBut still… I can't just change… The world I believed to be ideal…\pThe world that I dreamed of making, where nature was safe an' I could just live alongside my beloved Pokémon… That hasn't changed.\pI know I can't take it on myself, after causing this much hurt, but…")
+}
+
+text SootopolisCity_Text_AfterAllOurScheming{
+	format("Maxie: It is a great relief you and Steven were able to use the meteorite to set things right.\pI'm grateful to have played a small part at the Science Center in setting things right.\pStill… Some wrongs cannot be atoned for, no matter how you try to right them. And I have committed wrongs so great as to bring the whole world to its knees.\pIt may be that I… It may be too much to assume that I should deserve the chance to start anything over.")
+}
+
+text SootopolisCity_Text_GroudonPleaseStop {
+	format("Maxie: I see how misguided I was, and recognize the unimaginable power and inscrutable will of these ancient Pokemon…\pI only hope Hoenn will be spared from paying for my mistake…")
+}
+
+text SootopolisCity_Text_KyogreCalmDown {
+	format("Archie: I'm begging ya… Save us… The world… And Kyogre…")
 }

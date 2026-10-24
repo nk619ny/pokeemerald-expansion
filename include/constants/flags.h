@@ -355,7 +355,7 @@
 #define FLAG_CR_REWARD_AVAILABLE_BENJAMIN     0x141 // repurposed
 #define FLAG_CR_REWARD_AVAILABLE_JASMINE      0x142 // repurposed
 #define FLAG_CR_REWARD_AVAILABLE_JACOB        0x143 // repurposed
-#define FLAG_WONDER_CARD_UNUSED_8            0x144
+#define FLAG_RECEIVED_SHELL_BELL             0x144 //repurposed
 #define FLAG_WONDER_CARD_UNUSED_9            0x145
 #define FLAG_WONDER_CARD_UNUSED_10           0x146
 #define FLAG_WONDER_CARD_UNUSED_11           0x147

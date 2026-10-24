@@ -5289,6 +5289,16 @@ Adamant Nature
 - Shadow Claw  
 - Close Combat  
 
+Bombirdier  
+Ability: Rocky Payload  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Level: 78
+Jolly Nature  
+- Brave Bird  
+- Rock Slide  
+- Steel Wing  
+- Tailwind
+
 === TRAINER_JULIE === /* Victory Road B2F */
 Name: JULIE
 Class: Cooltrainer
@@ -7778,6 +7788,15 @@ Tera Type: Ice
 - Aqua Jet  
 - Swords Dance  
 
+Golisopod  
+Ability: Shell Armor  
+Level: 70
+Adamant Nature  
+- Frost Breath  
+- Aqua Jet  
+- Leech Life  
+- Sucker Punch  
+
 
 === TRAINER_RODNEY === /* Route 130 */
 Name: RODNEY
@@ -7851,22 +7870,49 @@ Tentacruel
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SANTIAGO === /* Route 130 */ /* TO BE ADDED */
+=== TRAINER_SANTIAGO === /* Route 127 Underwater */ 
 Name: SANTIAGO
-Class: Swimmer M
-Pic: Swimmer M ORAS 80
+Class: Diver
+Pic: Diver M ORAS
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Tentacruel
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados @ Wacan Berry 
+Level: 73 
+Ability: Moxie  
+- Aqua Tail  
+- Power Whip  
+- Temper Flare  
+- Dragon Dance  
 
-Wailmer
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Seaking  
+Ability: Lightning Rod  
+Level: 73
+EVs: 252 Spe  
+- Drill Run  
+- Flip Turn  
+- Acupressure  
+- Poison Jab  
+
+Empoleon  
+Ability: Competitive  
+Level: 73
+IVs: 0 Atk  
+- Ice Beam  
+- Flash Cannon  
+- Air Slash  
+- Vacuum Wave  
+
+Dragonite @ Yache Berry  
+Ability: Multiscale  
+Level: 73
+- Extreme Speed  
+- Dual Wingbeat  
+- Stomping Tantrum  
+- Dragon Rush  
+
 
 === TRAINER_GILBERT === /* Route 132 */ /* TO BE ADDED */
 Name: GILBERT
@@ -7920,7 +7966,7 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DUDLEY === /* Route */ /* TO BE ADDED */
+=== TRAINER_DUDLEY === /* Route */ /* Removed - or never added? */
 Name: DUDLEY
 Class: Swimmer M
 Pic: Swimmer M ORAS 80
@@ -18350,6 +18396,15 @@ Level: 70
 - Giga Drain  
 - Corrosive Gas
 
+Crabominable  
+Ability: Anger Point  
+Level: 70
+- Crabhammer  
+- Ice Hammer  
+- Drain Punch  
+- Pursuit  
+
+
 === TRAINER_SHARON === /* Route 125 */ 
 Name: SHARON
 Class: Swimmer F
@@ -18415,6 +18470,15 @@ IVs: 0 Atk
 - Thunderbolt  
 - Shadow Ball  
 - Reflect  
+
+Octillery @ Quick Claw  
+Ability: Moody  
+Level: 70
+IVs: 0 Atk  
+- Protect  
+- Whirlpool  
+- Energy Ball  
+- Water Spout  
 
 Eelektross  
 Ability: Swift Swim  
@@ -27518,7 +27582,7 @@ Adamant Nature
 - Ice Punch  
 - Protect  
 
-=== TRAINER_JONAH === /* Route 127 */ /* TO BE ADDED */
+=== TRAINER_JONAH === /* Route 127 */ 
 Name: JONAH
 Class: Fisherman
 Pic: Fisherman ORAS 80
@@ -27527,19 +27591,44 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Wailmer
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lanturn  @ Lum Berry
+Ability: Illuminate  
+Level: 73
+IVs: 0 Atk  
+- Blizzard  
+- Hydro Pump  
+- Thunder  
+- Amnesia  
 
-Tentacool
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dewgong  
+Ability: Thick Fat  
+Level: 73
+EVs: 252 Spe  
+- Sheer Cold  
+- Triple Axel  
+- Muddy Water  
+- Drill Run
 
-Sharpedo
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Qwilfish  
+Ability: Intimidate  
+Level: 73
+EVs: 252 HP / 252 Atk  
+Adamant Nature  
+- Gunk Shot  
+- Scale Shot  
+- Aqua Jet  
+- Spiky Shield
 
-=== TRAINER_HENRY === /* Route 127 */ /* TO BE ADDED */
+Dragonite @ Yache Berry  
+Ability: Inner Focus  
+Level: 73
+- Aqua Jet  
+- Dragon Claw  
+- Ice Spinner  
+- Substitute  
+
+
+=== TRAINER_HENRY === /* Route 127 */ 
 Name: HENRY
 Class: Fisherman
 Pic: Fisherman ORAS 80
@@ -27548,15 +27637,44 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wishiwashi @ Iapapa Berry  
+Ability: Schooling  
+Level: 73
+EVs: 252 HP  
+IVs: 0 Atk  
+- Hydro Pump  
+- Ice Beam  
+- Round  
 
-Tentacruel
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Luvdisc  
+Ability: Soul-Heart  
+EVs: 252 Spe  
+Level: 73
+Timid Nature  
+IVs: 0 Atk  
+- Heal Pulse  
+- Protect  
+- Round 
+- Icy Wind  
 
-=== TRAINER_ROGER === /* Route 127 */ /* TO BE ADDED */
+Malamar  
+Ability: Contrary  
+Level: 73
+- Night Slash  
+- Topsy-Turvy  
+- Psycho Cut  
+- Destiny Bond  
+
+Arbok @ Poison Barb  
+Ability: Intimidate  
+Level: 73
+- Aqua Tail  
+- Poison Tail  
+- Iron Tail  
+- Coil  
+
+
+=== TRAINER_ROGER === /* Route 127 */ 
 Name: ROGER
 Class: Fisherman
 Pic: Fisherman ORAS 80
@@ -27565,17 +27683,43 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Magikarp
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Heliolisk  @ Damp Rock
+Ability: Dry Skin  
+Level: 73
+IVs: 0 Atk  
+- Grass Knot  
+- Thunder  
+- Rain Dance  
+- Weather Ball 
 
-Magikarp
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pincurchin @ Shuca Berry
+Ability: Lightning Rod  
+EVs: 252 HP  
+Level: 73
+IVs: 0 Atk  
+- Thunder  
+- Scald  
+- Hex  
+- Spiky Shield  
 
-Gyarados
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Clodsire @ Black Sludge  
+Ability: Water Absorb  
+Level: 73
+- Curse  
+- Stomping Tantrum  
+- Gunk Shot  
+- Recover  
+
+Bellibolt @ Light Clay  
+Ability: Electromorphosis
+Level: 73  
+IVs: 0 Atk  
+- Slack Off  
+- Reflect  
+- Light Screen  
+- Discharge  
+
+
 
 === TRAINER_ALEXA === /* Route 128 */ /* TO BE ADDED */
 Name: ALEXA

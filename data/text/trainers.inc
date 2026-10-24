@@ -4353,7 +4353,7 @@ Route130_Text_KatiePostBattle:
 	.string "the Pokémon CHAMPION.$"
 
 Route130_Text_SantiagoIntro:
-	.string "Floating on the open sea like this…\n"
+	.string "Floating above the sea floor like this…\n"
 	.string "It's peaceful.$"
 
 Route130_Text_SantiagoDefeat:

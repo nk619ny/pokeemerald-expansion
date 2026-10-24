@@ -27,17 +27,17 @@ Route127_EventScript_Donny::
 	end
 
 Route127_EventScript_Jonah::
-	trainerbattle_single TRAINER_JONAH, Route127_Text_JonahIntro, Route127_Text_JonahDefeat
+	trainerbattle_single TRAINER_JONAH, Route127_Text_JonahIntro, Route127_Text_JonahDefeat, Route127_EventScript_CompletedFishermenCheck
 	msgbox Route127_Text_JonahPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route127_EventScript_Henry::
-	trainerbattle_single TRAINER_HENRY, Route127_Text_HenryIntro, Route127_Text_HenryDefeat
+	trainerbattle_single TRAINER_HENRY, Route127_Text_HenryIntro, Route127_Text_HenryDefeat, Route127_EventScript_CompletedFishermenCheck
 	msgbox Route127_Text_HenryPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route127_EventScript_Roger::
-	trainerbattle_single TRAINER_ROGER, Route127_Text_RogerIntro, Route127_Text_RogerDefeat
+	trainerbattle_single TRAINER_ROGER, Route127_Text_RogerIntro, Route127_Text_RogerDefeat, Route127_EventScript_CompletedFishermenCheck
 	msgbox Route127_Text_RogerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -248,4 +248,32 @@ movement Route127_Movement_SwimmerReturnToSpot5 {
 
 text Route127_Text_AidanIntro {
     format("Dragons can soar through the skies and glide through the seas.")
+}
+
+script Route127_EventScript_CompletedFishermenCheck{
+	lock
+	goto_if_not_defeated(TRAINER_JONAH, Route127_EventScript_FishermenNotCompleted)
+	goto_if_not_defeated(TRAINER_HENRY, Route127_EventScript_FishermenNotCompleted)
+	goto_if_not_defeated(TRAINER_ROGER, Route127_EventScript_FishermenNotCompleted)
+	goto(Route127_EventScript_CompletedFishermenReward)
+	releaseall
+	end
+}
+
+script Route127_EventScript_FishermenNotCompleted{
+	lock
+	msgbox("You may have bested me, but if you want the Fisherman's Treasure, you have to beat all of us on the island.")
+	closemessage
+	releaseall
+	end
+}
+
+script Route127_EventScript_CompletedFishermenReward{
+	lock
+	msgbox("You've certainly provedn your skill.\pAs a reward for defeating all of us, here's the treasure we fished up.")
+	closemessage
+	giveitem(ITEM_HEART_SCALE)
+	waitfanfare
+	releaseall
+	end
 }
