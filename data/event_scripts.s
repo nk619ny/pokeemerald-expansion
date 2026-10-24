@@ -1335,7 +1335,7 @@ Common_EventScript_FerryDepartIsland::
 	.include "data/scripts/kecleon.inc"
 
 Common_EventScript_NameReceivedPartyMon::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special ChangePokemonNickname
 	return
 

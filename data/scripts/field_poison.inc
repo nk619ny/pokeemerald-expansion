@@ -12,7 +12,7 @@ EventScript_FieldWhiteOut::
 	waitmessage
 	waitbuttonpress
 	special Script_FadeOutMapMusic
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	call_if_set FLAG_WHITEOUT_TO_LAVARIDGE, EventScript_SetRespawnLavaridgePkmnCenter
 	special SetCB2WhiteOut
 	end
@@ -33,6 +33,6 @@ EventScript_FrontierFieldWhiteOut::
 	trainerhill_inchallenge
 	goto_if_eq VAR_RESULT, TRUE, TrainerHill_1F_EventScript_Lost
 	special Script_FadeOutMapMusic
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special SetCB2WhiteOut
 	end

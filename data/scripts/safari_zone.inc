@@ -65,7 +65,7 @@ EventScript_PokeBlockFeeder::
 	end
 
 SafariZone_EventScript_ChoosePokeblock::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special OpenPokeblockCaseOnFeeder
 	goto_if_ne VAR_RESULT, 0xFFFF, SafariZone_EventScript_PokeblockPlaced
 #ifdef BUGFIX

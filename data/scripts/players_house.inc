@@ -97,13 +97,13 @@ PlayersHouse_2F_EventScript_MomComesUpstairsFemale::
 
 PlayersHouse_2F_EventScript_CheckWallClock::
 	incrementgamestat GAME_STAT_CHECKED_CLOCK
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special Special_ViewWallClock
 	releaseall
 	end
 
 PlayersHouse_2F_EventScript_SetWallClock::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special StartWallClock
 	return
 

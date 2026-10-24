@@ -663,7 +663,7 @@ EventScript_BattleColosseum_2P_PlayerSpot1::
 	end
 
 EventScript_BattleColosseum_4P_PlayerSpot0::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special ChooseHalfPartyForBattle
 	goto_if_eq VAR_RESULT, 0, EventScript_BattleColosseum_4P_CancelSpotTrigger
 	setvar VAR_0x8005, 0
@@ -671,7 +671,7 @@ EventScript_BattleColosseum_4P_PlayerSpot0::
 	end
 
 EventScript_BattleColosseum_4P_PlayerSpot1::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special ChooseHalfPartyForBattle
 	goto_if_eq VAR_RESULT, 0, EventScript_BattleColosseum_4P_CancelSpotTrigger
 	setvar VAR_0x8005, 1
@@ -679,7 +679,7 @@ EventScript_BattleColosseum_4P_PlayerSpot1::
 	end
 
 EventScript_BattleColosseum_4P_PlayerSpot2::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special ChooseHalfPartyForBattle
 	goto_if_eq VAR_RESULT, 0, EventScript_BattleColosseum_4P_CancelSpotTrigger
 	setvar VAR_0x8005, 2
@@ -687,7 +687,7 @@ EventScript_BattleColosseum_4P_PlayerSpot2::
 	end
 
 EventScript_BattleColosseum_4P_PlayerSpot3::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special ChooseHalfPartyForBattle
 	goto_if_eq VAR_RESULT, 0, EventScript_BattleColosseum_4P_CancelSpotTrigger
 	setvar VAR_0x8005, 3
@@ -753,13 +753,13 @@ RecordCorner_EventScript_ReceivedGiftItem::
 
 CableClub_EventScript_ReadTrainerCard::
 	msgbox CableClub_Text_GotToLookAtTrainerCard, MSGBOX_DEFAULT
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special Script_ShowLinkTrainerCard
 	end
 
 CableClub_EventScript_ReadTrainerCardColored::
 	msgbox CableClub_Text_GotToLookAtColoredTrainerCard, MSGBOX_DEFAULT
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special Script_ShowLinkTrainerCard
 	end
 
@@ -1181,7 +1181,7 @@ EventScript_WirelessBoxResults::
 	goto_if_unset FLAG_SYS_POKEDEX_GET, CableClub_EventScript_NotReadyYet
 	specialvar VAR_RESULT, IsWirelessAdapterConnected
 	goto_if_eq VAR_RESULT, FALSE, CableClub_EventScript_AdapterNotConnected
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	special ShowWirelessCommunicationScreen
 	msgbox CableClub_Text_ParticipantsStepUpToCounter, MSGBOX_DEFAULT
 	releaseall
@@ -1281,7 +1281,7 @@ MossdeepCity_GameCorner_1F_EventScript_PlayPokemonJump::
 	special IsPokemonJumpSpeciesInParty
 	goto_if_eq VAR_RESULT, FALSE, MossdeepCity_GameCorner_1F_EventScript_DontHaveRequiredMon
 	msgbox MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon, MSGBOX_DEFAULT
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	setvar VAR_0x8005, 0
 	special ChooseMonForWirelessMinigame
 	goto_if_ge VAR_0x8004, PARTY_SIZE, MossdeepCity_GameCorner_1F_EventScript_AbortMinigame
@@ -1296,7 +1296,7 @@ MossdeepCity_GameCorner_1F_EventScript_PlayDodrioBerryPicking::
 	special IsDodrioInParty
 	goto_if_eq VAR_RESULT, FALSE, MossdeepCity_GameCorner_1F_EventScript_DontHaveRequiredMon
 	msgbox MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon, MSGBOX_DEFAULT
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	setvar VAR_0x8005, 1
 	special ChooseMonForWirelessMinigame
 	goto_if_ge VAR_0x8004, PARTY_SIZE, MossdeepCity_GameCorner_1F_EventScript_AbortMinigame

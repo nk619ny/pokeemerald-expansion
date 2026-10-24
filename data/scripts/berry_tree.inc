@@ -61,7 +61,7 @@ BerryTree_EventScript_WantToPlantMulch::
 	case MULTI_B_PRESSED, BerryTree_EventScript_CancelPlanting
 
 BerryTree_EventScript_ChooseMulchToUse::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	closemessage
 	special Bag_ChooseMulch
 	waitstate
@@ -71,7 +71,7 @@ BerryTree_EventScript_ChooseMulchToUse::
 .endif
 
 BerryTree_EventScript_ChooseBerryToPlant::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	closemessage
 	special Bag_ChooseBerry
 	goto_if_eq VAR_ITEM_ID, 0, BerryTree_EventScript_CancelPlanting
