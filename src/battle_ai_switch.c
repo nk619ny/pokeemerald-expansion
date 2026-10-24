@@ -1061,6 +1061,25 @@ static bool32 ShouldSwitchIfAbilityBenefit(struct SwitchAiContext *switchContext
     return SetSwitchinAndSwitch(switchContext->battler, PARTY_SIZE);
 }
 
+// AI_FLAG_WEATHER_OR_TERRAIN_FOCUS: a setter whose weather/terrain has lapsed cycles out to reset it on return.
+static bool32 ShouldSwitchIfWeatherOrTerrainLost(struct SwitchAiContext *switchContext)
+{
+    enum BattlerId battler = switchContext->battler;
+
+    if (!(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_WEATHER_OR_TERRAIN_FOCUS))
+        return FALSE;
+    if (gBattleMons[battler].volatiles.gastroAcid || IsNeutralizingGasOnField())
+        return FALSE;
+    if (!AI_DoesAbilitySetMissingWeatherOrTerrain(gAiLogicData->abilities[battler]))
+        return FALSE;
+    if (HasFastKillOnAnyFoe(battler))
+        return FALSE;
+    if (!RandomPercentage(RNG_AI_WEATHER_TERRAIN_FOCUS, WEATHER_TERRAIN_SWITCHOUT_CHANCE))
+        return FALSE;
+
+    return SetSwitchinAndSwitch(battler, PARTY_SIZE);
+}
+
 // Consider switching to pass Wish to a teammate that benefits from the heal
 static bool32 ShouldSwitchIfWishPassing(struct SwitchAiContext *switchContext)
 {
@@ -1466,6 +1485,8 @@ bool32 ShouldSwitch(enum BattlerId battler)
     if (ShouldSwitchIfBadlyStatused(&switchContext))
         return TRUE;
     if (ShouldSwitchIfAbilityBenefit(&switchContext))
+        return TRUE;
+    if (ShouldSwitchIfWeatherOrTerrainLost(&switchContext))
         return TRUE;
     if (ShouldSwitchIfWishPassing(&switchContext))
         return TRUE;
@@ -2879,6 +2900,34 @@ u32 AI_GetBatonPassReceiver(enum BattlerId battler)
             if (GetMoveEffect(GetMonData(&party[monIndex], MON_DATA_MOVE1 + moveIndex)) == EFFECT_STORED_POWER)
                 return monIndex;
         }
+    }
+    return PARTY_SIZE;
+}
+
+// AI_FLAG_WEATHER_OR_TERRAIN_FOCUS: sometimes send in a benched weather/terrain setter whose effect is missing.
+u32 AI_GetWeatherTerrainSwitchin(enum BattlerId battler)
+{
+    struct Pokemon *party;
+    u32 partyStart = 0, partyEnd = PARTY_SIZE;
+
+    if (!(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_WEATHER_OR_TERRAIN_FOCUS))
+        return PARTY_SIZE;
+
+    if (GetBattlerSide(battler) == B_SIDE_OPPONENT && (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS))
+    {
+        if (GetBattlerPosition(battler) == B_POSITION_OPPONENT_LEFT)
+            partyEnd = PARTY_SIZE / 2;
+        else
+            partyStart = PARTY_SIZE / 2;
+    }
+
+    party = GetBattlerParty(battler);
+    for (u32 monIndex = partyStart; monIndex < partyEnd; monIndex++)
+    {
+        if (!IsValidIllusionTrickSwitchin(battler, monIndex))
+            continue;
+        if (AI_DoesAbilitySetMissingWeatherOrTerrain(GetMonAbility(&party[monIndex])))
+            return RandomPercentage(RNG_AI_WEATHER_TERRAIN_FOCUS, WEATHER_TERRAIN_SWITCHIN_CHANCE) ? monIndex : PARTY_SIZE;
     }
     return PARTY_SIZE;
 }

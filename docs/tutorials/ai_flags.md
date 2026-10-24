@@ -246,6 +246,12 @@ The flag also supports a Stored Power / Power Trip **ally** in doubles (none of 
 
 For **Baton Pass** users with a self-boosting move worth +3 or more stages (Simple counted): that move is forced while the user has room to boost and no foe can KO it, and Baton Pass is used with a chance based on the net boost total (+2: 25%, +3: 50%, +4: 66%, +5: 75%, +6: 90%, +7 or more: 100%; 100% whenever a foe can only slow-kill it). Otherwise Baton Pass is discouraged. The replacement is the first valid party Pokémon with Stored Power / Power Trip, if any.
 
+## `AI_FLAG_WEATHER_OR_TERRAIN_FOCUS`
+Custom flag (`Weather Or Terrain Focus` in `trainers.party`) for weather and terrain teams. Use alongside `AI_FLAG_BASIC_TRAINER` or `AI_FLAG_SMART_TRAINER`. Tests: `test/battle/ai/ai_flag_weather_or_terrain_focus.c`.
+- **Switch out:** each turn, if the active Pokémon has a weather/terrain-setting ability (Drizzle, Drought, Sand Stream, Snow Warning, Electric/Grassy/Misty/Psychic Surge, etc.) and that weather/terrain is not currently active, it has a `WEATHER_TERRAIN_SWITCHOUT_CHANCE`% chance (default 50, `include/config/ai.h`) to switch out, provided it isn't trapped, a valid party member exists and no fast kill is available. Seed Sower, Sand Spit and Spout Spray are ignored since they don't trigger on switch-in.
+- **Switch in:** when choosing the next Pokémon (after a KO, Whirlwind, U-turn, etc.), if a party member has such an ability whose weather/terrain is missing, there is a `WEATHER_TERRAIN_SWITCHIN_CHANCE`% chance (default 40) it is sent in, overriding the normal choice.
+- **Moves:** a weather or terrain move whose effect is not already active is raised to above a 2HKO and below a slow KO. Scores are never lowered.
+
 ### Smart Trainer: Speed Boost Mega delay
 Not tied to any custom flag: any trainer with the full `AI_FLAG_SMART_TRAINER` set applies it. A Speed Boost Pokémon holding Sharpedonite or Scolipite that hasn't Mega Evolved, is on its first turn on the field (not the turn it switched in), knows a usable Protect-type move and has no fast kill available has a `SPEED_BOOST_MEGA_DELAY_CHANCE`% chance (default 66, `include/config/ai.h`) to Protect without Mega Evolving. On its next turn it Mega Evolves as normal. Tests: `test/battle/ai/ai_speed_boost_mega_delay.c`.
 

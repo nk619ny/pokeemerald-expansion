@@ -168,6 +168,10 @@
 // AI_FLAG_TRY_TO_POISON settings
 #define TRY_TO_POISON_DOUBLE_PROTECT_CHANCE      66 // chance both AI mons Protect when both foes are poisoned and both Protects are off cooldown
 
+// AI_FLAG_WEATHER_OR_TERRAIN_FOCUS settings
+#define WEATHER_TERRAIN_SWITCHOUT_CHANCE         50 // per-turn chance a setter whose weather/terrain has lapsed switches out to reset it later
+#define WEATHER_TERRAIN_SWITCHIN_CHANCE          40 // chance the AI sends in a benched setter (whose weather/terrain is missing) instead of its usual pick
+
 // Smart Trainer: Speed Boost Sharpedo/Scolipede Protect on their first turn to boost before Mega Evolving
 #define SPEED_BOOST_MEGA_DELAY_CHANCE            66
 

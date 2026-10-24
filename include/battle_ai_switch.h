@@ -84,6 +84,7 @@ u32 AI_SelectRevivalBlessingMon(enum BattlerId battler);
 u32 AI_TryIllusionTrickSwap(enum BattlerId battler, u32 chosenMonId);
 u32 AI_TryIllusionDoubleRefill(enum BattlerId battler, enum SwitchType switchType);
 u32 AI_GetBatonPassReceiver(enum BattlerId battler);
+u32 AI_GetWeatherTerrainSwitchin(enum BattlerId battler);
 bool32 IsSwitchinValid(enum BattlerId battler);
 bool32 IsAceMon(enum BattlerId battler, u32 monPartyId);
 

@@ -1957,6 +1957,58 @@ u32 AI_GetSwitchinFieldStatus(enum BattlerId battler)
     }
 }
 
+// Seed Sower, Sand Spit and Spout Spray only trigger when hit, so they are deliberately not handled here.
+bool32 AI_DoesAbilitySetMissingWeatherOrTerrain(enum Ability ability)
+{
+    u32 weather = B_WEATHER_NONE;
+    u32 terrain = 0;
+
+    switch (ability)
+    {
+    case ABILITY_DRIZZLE:
+        weather = B_WEATHER_RAIN;
+        break;
+    case ABILITY_DARK_CLOUDS:
+        weather = B_WEATHER_RAIN;
+        terrain = STATUS_FIELD_ELECTRIC_TERRAIN;
+        break;
+    case ABILITY_DROUGHT:
+    case ABILITY_ORICHALCUM_PULSE:
+        weather = B_WEATHER_SUN;
+        break;
+    case ABILITY_SAND_STREAM:
+        weather = B_WEATHER_SANDSTORM;
+        break;
+    case ABILITY_SNOW_WARNING:
+    case ABILITY_WHITE_OUT:
+        weather = GetConfig(B_SNOW_WARNING) >= GEN_9 ? B_WEATHER_SNOW : B_WEATHER_HAIL;
+        break;
+    case ABILITY_ELECTRIC_SURGE:
+    case ABILITY_HADRON_ENGINE:
+        terrain = STATUS_FIELD_ELECTRIC_TERRAIN;
+        break;
+    case ABILITY_GRASSY_SURGE:
+    case ABILITY_ABUNDANCE:
+        terrain = STATUS_FIELD_GRASSY_TERRAIN;
+        break;
+    case ABILITY_MISTY_SURGE:
+        terrain = STATUS_FIELD_MISTY_TERRAIN;
+        break;
+    case ABILITY_PSYCHIC_SURGE:
+        terrain = STATUS_FIELD_PSYCHIC_TERRAIN;
+        break;
+    default:
+        return FALSE;
+    }
+
+    // Primal weather can't be overwritten, so the ability would fail to set weather.
+    if (weather != B_WEATHER_NONE && !(gBattleWeather & B_WEATHER_PRIMAL_ANY) && !(gBattleWeather & weather))
+        return TRUE;
+    if (terrain != 0 && !gBattleStruct->isSkyBattle && !(gFieldStatuses & terrain))
+        return TRUE;
+    return FALSE;
+}
+
 enum WeatherState IsWeatherActive(u32 flags)
 {
     enum WeatherState state = WEATHER_INACTIVE;

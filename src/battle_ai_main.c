@@ -86,6 +86,7 @@ static bool32 IsCustomStrategyGimmickSuppressed(enum BattlerId battler);
 static s32 AI_EncourageStatBoosts(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static bool32 IsSpeedBoostMegaDelayCandidate(enum BattlerId battler);
 static bool32 RollEncourageBatonPass(enum BattlerId battler);
+static s32 AI_WeatherOrTerrainFocus(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 
 static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Move, s32) =
 {
@@ -128,7 +129,7 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
     [36] = AI_CustomStrategies,      // AI_FLAG_CUSTOM_STRATEGIES
     [37] = AI_TryToPoison,           // AI_FLAG_TRY_TO_POISON
     [38] = AI_EncourageStatBoosts,   // AI_FLAG_ENCOURAGE_STAT_BOOSTS
-    [39] = NULL,                     // Unused
+    [39] = AI_WeatherOrTerrainFocus, // AI_FLAG_WEATHER_OR_TERRAIN_FOCUS
     [40] = NULL,                     // Unused
     [41] = NULL,                     // Unused
     [42] = NULL,                     // Unused
@@ -6665,7 +6666,7 @@ static bool32 HasFastKillOnFoe(enum BattlerId battlerAtk, enum BattlerId battler
     return FALSE;
 }
 
-static bool32 HasFastKillOnAnyFoe(enum BattlerId battlerAtk)
+bool32 HasFastKillOnAnyFoe(enum BattlerId battlerAtk)
 {
     return HasFastKillOnFoe(battlerAtk, LEFT_FOE(battlerAtk))
         || HasFastKillOnFoe(battlerAtk, RIGHT_FOE(battlerAtk));
@@ -7427,6 +7428,75 @@ static s32 AI_EncourageStatBoosts(enum BattlerId battlerAtk, enum BattlerId batt
 
     if (target > AI_SCORE_DEFAULT + SLOW_KILL)
         target = AI_SCORE_DEFAULT + SLOW_KILL;
+    if (target > score)
+        ADJUST_SCORE(target - score);
+    return score;
+}
+
+// AI_FLAG_WEATHER_OR_TERRAIN_FOCUS: status moves that set a weather/terrain that isn't currently up.
+static bool32 IsWeatherOrTerrainMoveMissing(enum Move move)
+{
+    u32 weather;
+
+    switch (GetMoveEffect(move))
+    {
+    case EFFECT_WEATHER:
+    case EFFECT_WEATHER_AND_SWITCH:
+        // Primal weather can't be overwritten, so the move would fail.
+        if (gBattleWeather & B_WEATHER_PRIMAL_ANY)
+            return FALSE;
+        switch (GetMoveWeatherType(move))
+        {
+        case BATTLE_WEATHER_RAIN:
+            weather = B_WEATHER_RAIN;
+            break;
+        case BATTLE_WEATHER_SUN:
+            weather = B_WEATHER_SUN;
+            break;
+        case BATTLE_WEATHER_SANDSTORM:
+            weather = B_WEATHER_SANDSTORM;
+            break;
+        case BATTLE_WEATHER_HAIL:
+            weather = B_WEATHER_HAIL;
+            break;
+        case BATTLE_WEATHER_SNOW:
+            weather = B_WEATHER_SNOW;
+            break;
+        default:
+            return FALSE;
+        }
+        return !(gBattleWeather & weather);
+    case EFFECT_ELECTRIC_TERRAIN:
+        return !gBattleStruct->isSkyBattle && !(gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN);
+    case EFFECT_GRASSY_TERRAIN:
+        return !gBattleStruct->isSkyBattle && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN);
+    case EFFECT_MISTY_TERRAIN:
+        return !gBattleStruct->isSkyBattle && !(gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN);
+    case EFFECT_PSYCHIC_TERRAIN:
+        return !gBattleStruct->isSkyBattle && !(gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN);
+    default:
+        return FALSE;
+    }
+}
+
+// Raised to just above a 2HKO and kept below every KO; never lowered.
+static s32 AI_WeatherOrTerrainFocus(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)
+{
+    s32 target;
+
+    if (IsBattlerAlly(battlerAtk, battlerDef) || !IsBattlerAlive(battlerDef))
+        return score;
+    if (!IsBattleMoveStatus(move) || !IsWeatherOrTerrainMoveMissing(move))
+        return score;
+    // Partner already covers it, or Chilly Reception would leave the AI with nobody to switch to.
+    if (HasPartner(battlerAtk) && AreMovesEquivalent(battlerAtk, BATTLE_PARTNER(battlerAtk), move, gAiLogicData->partnerMove))
+        return score;
+    if (GetMoveEffect(move) == EFFECT_WEATHER_AND_SWITCH && CountUsablePartyMons(battlerAtk) == 0)
+        return score;
+
+    target = GetTryToPoisonReferenceScore(battlerAtk, battlerDef) + BEST_DAMAGE_MOVE + 1;
+    if (target > AI_SCORE_DEFAULT + SLOW_KILL - 1)
+        target = AI_SCORE_DEFAULT + SLOW_KILL - 1;
     if (target > score)
         ADJUST_SCORE(target - score);
     return score;

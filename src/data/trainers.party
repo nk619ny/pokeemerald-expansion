@@ -464,7 +464,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 Starting Status: RAINBOW_OPPONENT
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide / Weather Or Terrain Focus
 
 Vaporeon  
 Level: 72
@@ -1218,7 +1218,7 @@ Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Abomasnow @ Light Clay  
 Ability: Snow Warning  
@@ -1262,7 +1262,7 @@ Pic: Aqua Grunt M ORAS 80
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus 
 
 Vaporeon  
 Ability: Drizzle  
@@ -1922,7 +1922,7 @@ Pic: Shelly ORAS
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Ninetales-Alola @ Light Clay  
 Level: 53
@@ -2355,7 +2355,7 @@ Pic: Aroma Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Sunflora @ Heat Rock 
 Level: 58
@@ -3563,7 +3563,7 @@ Pic: Tuber M ORAS 80
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Politoed @ Sitrus Berry
 Ability: Drizzle 
@@ -3774,7 +3774,7 @@ Pic: Professor Sada
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Dialga @ Power Herb  
 Ability: Telepathy  
@@ -4381,7 +4381,7 @@ Pic: Dragon Tamer ORAS 80
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Heliolisk @ Damp Rock  
 Ability: Dry Skin  
@@ -5143,7 +5143,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Skarmory @ Skarmorite  
-Ability: Stalwart  
+Ability: Weak Armor  
 Level: 78
 EVs: 252 HP / 252 Atk / 4 SpD  
 Adamant Nature  
@@ -5806,7 +5806,7 @@ Pic: Ruin Maniac ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Palossand  
 Ability: Sand Stream  
@@ -5977,7 +5977,7 @@ Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Sunflora @ Sunflorite  
 Ability: Drought  
@@ -7015,7 +7015,7 @@ Pic: Shelly ORAS
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Pelipper @ Wacan Berry  
 Level: 62
@@ -9446,7 +9446,7 @@ Pic: Bug Maniac ORAS 80
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 
 
@@ -11143,7 +11143,7 @@ Pic: Roxanne ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Tyranitar @ Tyranitarite
 Level: 48
@@ -11630,7 +11630,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 Starting Status: TRICK_ROOM
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Slowbro @ Slowbronite  
 Level: 70
@@ -12550,7 +12550,7 @@ Pic: Lisia
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Rapidash-Galar @ Scope Lens  
 Ability: Telepathy 
@@ -12626,7 +12626,7 @@ Music: Female
 Double Battle: Yes
 Party Size: 6
 Pool Rules: Doubles
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Froslass (F) @ Bright Powder  
 Level: 42
@@ -14170,7 +14170,7 @@ Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Drampa @ Drampanite  
 Ability: Sap Sipper  
@@ -16777,7 +16777,7 @@ Pic: Camper ORAS 80
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Torkoal  
 Ability: Drought  
@@ -17821,7 +17821,7 @@ Pic: Parasol Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 
 Espeon @ Heat Rock  
@@ -18412,7 +18412,7 @@ Pic: Swimmer F ORAS 80
 Gender: Female
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Lumineon @ Damp Rock  
 Ability: Swift Swim  
@@ -22639,7 +22639,7 @@ Pic: Pokemon Ranger M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Bronzong  
 Ability: Drizzle  
@@ -22835,7 +22835,7 @@ Pic: Pokemon Ranger F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Dewgong @ Leftovers  
 Ability: Ice Body  
@@ -23137,7 +23137,7 @@ Pic: Hiker ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Hippowdon  
 Ability: Sand Stream  
@@ -23778,7 +23778,7 @@ Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Solrock @ Air Balloon  
 Ability: Drought  
@@ -23814,7 +23814,7 @@ IVs: 0 Atk
 - Reflect  
 
 Emboar @ Emboarite  
-Ability: Mold Breaker  
+Ability: Blaze
 Level: 70
 - Heat Crash  
 - High Horsepower  
@@ -23833,6 +23833,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 Scovillain @ Scovillainite  
 Ability: Chlorophyll
 Level: 70
+EVs: 252 HP / 252 SpA
 IVs: 0 Atk  
 - Rage Powder  
 - Fire Blast  
@@ -23854,6 +23855,7 @@ IVs: 0 Atk
 Lilligant-Hisui (F) @ Coba Berry  
 Ability: Hustle  
 Level: 70
+EVs: 184 HP / 184 Atk / 184 Spe
 Tera Type: Grass  
 - Victory Dance  
 - Acrobatics  
@@ -24198,7 +24200,7 @@ Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
 Wailord @ Throat Spray  
-Ability: Drizzle  
+Ability: Spout Spray  
 Level: 75
 EVs: 128 Def / 252 SpA / 128 SpD  
 IVs: 0 Atk  
@@ -24662,7 +24664,7 @@ Pic: Maxie ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Ninetales @ Wise Glasses
 Level: 45
@@ -27681,7 +27683,7 @@ Pic: Fisherman ORAS 80
 Gender: Male
 Music: Hiker
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Heliolisk  @ Damp Rock
 Ability: Dry Skin  
@@ -28992,7 +28994,7 @@ Pic: Aroma Lady ORAS 80
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Sunkern  
 Level: 40
@@ -29614,7 +29616,7 @@ Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Flareon  
 Level: 63
@@ -29802,7 +29804,7 @@ Pic: Magma Grunt M ORAS 80
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Victreebel  
 Level: 63
@@ -30187,7 +30189,7 @@ Pic: Tabitha ORAS
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Gigalith @ Muscle Band
 Ability: Sand Stream  
@@ -30936,7 +30938,7 @@ Pic: Psychic F ORAS 80
 Gender: Female
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Clefable @ Expert Belt  
 Level: 55
@@ -33760,7 +33762,7 @@ Pic: Dome Ace Tucker
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Tapu Fini @ Leftovers  
 Ability: Misty Surge  
@@ -34687,7 +34689,7 @@ Pic: Factory Head Noland
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Ting-Lu @ Leftovers
 Ability: Vessel of Ruin  
@@ -34808,7 +34810,7 @@ Pic: Dome Ace Tucker
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Weather Or Terrain Focus
 
 Tapu Fini @ Leftovers  
 Ability: Misty Surge  

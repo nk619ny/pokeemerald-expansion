@@ -122,6 +122,7 @@ bool32 DoesBattlerIgnoreAbilityChecks(enum BattlerId battlerAtk, enum Ability at
 u32 AI_GetWeather(void);
 u32 AI_GetSwitchinWeather(enum BattlerId battler);
 u32 AI_GetSwitchinFieldStatus(enum BattlerId battler);
+bool32 AI_DoesAbilitySetMissingWeatherOrTerrain(enum Ability ability);
 enum WeatherState IsWeatherActive(u32 flags);
 bool32 CanAIFaintTarget(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 numHits);
 bool32 CanIndexMoveFaintTarget(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 index, enum DamageCalcContext calcContext);

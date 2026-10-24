@@ -47,6 +47,7 @@
 #define AI_FLAG_CUSTOM_STRATEGIES           AI_FLAG(36)  // Dispatcher for team-specific scripted strategies the generic AI can't express. Each strategy is gated on a species/ability/item signature, so trainers with the flag but a different situation are unaffected.
 #define AI_FLAG_TRY_TO_POISON               AI_FLAG(37)  // AI for poison-oriented teams. Scores Toxic/Poison Gas, Baneful Bunker, Soak (onto Steel/Poison foes) and a coordinated double Protect relative to its 2HKO moves.
 #define AI_FLAG_ENCOURAGE_STAT_BOOSTS       AI_FLAG(38)  // Stored Power / Power Trip users below +6 total boosts strongly favor self stat-boosting moves: +2 to the attacking stat over a 2HKO (never over a KO), other +2 boosts tied with a 2HKO.
+#define AI_FLAG_WEATHER_OR_TERRAIN_FOCUS    AI_FLAG(39)  // Weather/terrain setters (Drizzle, Electric Surge, ...) cycle out when their effect has lapsed and are favored on switch-in; Sunny Day/Electric Terrain-style moves are scored above a 2HKO but below any KO when the effect is missing.
 
 // The following options are enough to have a basic/smart trainer. Any other addtion could make the trainer worse/better depending on the flag
 #define AI_FLAG_BASIC_TRAINER         (AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY)

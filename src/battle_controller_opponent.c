@@ -545,6 +545,8 @@ static void OpponentHandleChoosePokemon(enum BattlerId battler)
         if (GetMoveEffect(gCurrentMove) == EFFECT_BATON_PASS)
             chosenMonId = AI_GetBatonPassReceiver(battler);
         if (chosenMonId == PARTY_SIZE)
+            chosenMonId = AI_GetWeatherTerrainSwitchin(battler); // AI_FLAG_WEATHER_OR_TERRAIN_FOCUS
+        if (chosenMonId == PARTY_SIZE)
         {
             chosenMonId = AI_TryIllusionDoubleRefill(battler, switchType); // AI_FLAG_ILLUSION_TRICKS
             illusionPaired = (chosenMonId != PARTY_SIZE);
