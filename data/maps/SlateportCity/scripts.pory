@@ -1403,3 +1403,22 @@ script Route111_EventScript_DrainingKissSailor {
 	releaseall
 	end
 }
+
+
+script SlateportFarm_EventScript_BerryJuiceFarmWoman {
+    lock
+    if(!flag(FLAG_RECEIVED_BERRY_JUICE)){
+        msgbox(format("Because of Team Aqua, our farm is gone, and we only have a little bit of our Berry Juice left."),MSGBOX_NPC)
+        closemessage
+        giveitem(ITEM_BERRY_JUICE, 6)
+        waitfanfare
+        closemessage
+        setflag(FLAG_RECEIVED_BERRY_JUICE)
+    }
+    else {
+        msgbox(format("Maybe I'll move to Verdanturf. I hear there are beautiful gardens and meadows out there."),MSGBOX_NPC)
+        closemessage
+    }
+    releaseall
+    end    
+}

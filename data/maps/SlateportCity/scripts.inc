@@ -2791,6 +2791,36 @@ Route111_EventScript_DrainingKissSailor_2:
 	goto Route111_EventScript_DrainingKissSailor_1
 
 
+SlateportFarm_EventScript_BerryJuiceFarmWoman::
+# 1409 "data/maps/SlateportCity/scripts.pory"
+	lock
+# 1410 "data/maps/SlateportCity/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_BERRY_JUICE, SlateportFarm_EventScript_BerryJuiceFarmWoman_2
+# 1419 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportFarm_EventScript_BerryJuiceFarmWoman_Text_1, MSGBOX_NPC
+# 1420 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+SlateportFarm_EventScript_BerryJuiceFarmWoman_1:
+# 1422 "data/maps/SlateportCity/scripts.pory"
+	releaseall
+	end
+
+SlateportFarm_EventScript_BerryJuiceFarmWoman_2:
+# 1411 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportFarm_EventScript_BerryJuiceFarmWoman_Text_0, MSGBOX_NPC
+# 1412 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1413 "data/maps/SlateportCity/scripts.pory"
+	giveitem ITEM_BERRY_JUICE, 6
+# 1414 "data/maps/SlateportCity/scripts.pory"
+	waitfanfare
+# 1415 "data/maps/SlateportCity/scripts.pory"
+	closemessage
+# 1416 "data/maps/SlateportCity/scripts.pory"
+	setflag FLAG_RECEIVED_BERRY_JUICE
+	goto SlateportFarm_EventScript_BerryJuiceFarmWoman_1
+
+
 SlateportCity_EventScript_FarmSign_Text_0:
 # 1361 "data/maps/SlateportCity/scripts.pory"
 	.string "Tunnel to Slateport Farm$"
@@ -2825,3 +2855,15 @@ Route111_EventScript_DrainingKissSailor_Text_0:
 Route111_EventScript_DrainingKissSailor_Text_1:
 # 1400 "data/maps/SlateportCity/scripts.pory"
 	.string "Don't forget what I've told you, now...$"
+
+SlateportFarm_EventScript_BerryJuiceFarmWoman_Text_0:
+# 1411 "data/maps/SlateportCity/scripts.pory"
+	.string "Because of Team Aqua, our farm is gone,\n"
+	.string "and we only have a little bit of our\l"
+	.string "Berry Juice left.$"
+
+SlateportFarm_EventScript_BerryJuiceFarmWoman_Text_1:
+# 1419 "data/maps/SlateportCity/scripts.pory"
+	.string "Maybe I'll move to Verdanturf. I hear\n"
+	.string "there are beautiful gardens and\l"
+	.string "meadows out there.$"

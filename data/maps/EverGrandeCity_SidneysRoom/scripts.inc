@@ -277,7 +277,8 @@ EverGrandeCity_SidneysRoom_Text_Defeat::
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech::
 # 113 "data/maps/EverGrandeCity_SidneysRoom/scripts.pory"
-	.string "Heh... you're a pretty bright spark.\p"
+	.string "Heh... you're a pretty bright spark. It\n"
+	.string "reminds me of my granddaughter.\p"
 	.string "You keep up your studies, there'll be no\n"
 	.string "stopping you!\p"
 	.string "You should go on to the next room and\n"

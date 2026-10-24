@@ -2681,7 +2681,7 @@ SootopolisCity_EventScript_Maxie::
 # 1341 "data/maps/SootopolisCity/scripts.pory"
 	lockall
 # 1342 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_MaxieRayquaza
+	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_MaxieRayquaza
 # 1343 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_GroudonPleaseStop, MSGBOX_DEFAULT
 # 1344 "data/maps/SootopolisCity/scripts.pory"
@@ -2711,7 +2711,7 @@ SootopolisCity_EventScript_Archie::
 # 1356 "data/maps/SootopolisCity/scripts.pory"
 	lockall
 # 1357 "data/maps/SootopolisCity/scripts.pory"
-	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_ArchieRayquaza
+	goto_if_ge VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_ArchieRayquaza
 # 1358 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_KyogreCalmDown, MSGBOX_DEFAULT
 # 1359 "data/maps/SootopolisCity/scripts.pory"

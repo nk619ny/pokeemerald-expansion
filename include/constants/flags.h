@@ -356,7 +356,7 @@
 #define FLAG_CR_REWARD_AVAILABLE_JASMINE      0x142 // repurposed
 #define FLAG_CR_REWARD_AVAILABLE_JACOB        0x143 // repurposed
 #define FLAG_RECEIVED_SHELL_BELL             0x144 //repurposed
-#define FLAG_WONDER_CARD_UNUSED_9            0x145
+#define FLAG_RECEIVED_BERRY_JUICE            0x145 //repurposed
 #define FLAG_WONDER_CARD_UNUSED_10           0x146
 #define FLAG_WONDER_CARD_UNUSED_11           0x147
 #define FLAG_WONDER_CARD_UNUSED_12           0x148
@@ -763,7 +763,7 @@
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_4               0x2CA
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_5               0x2CB
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_6               0x2CC
-#define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD // now available to be reused
+#define FLAG_HIDE_DISPLACED_FARM_STAFF_IN_SLATEPORT                 0x2CD // now repurposed
 #define FLAG_HIDE_MEW                                               0x2CE
 #define FLAG_HIDE_ROUTE_104_RIVAL                                   0x2CF
 #define FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE                  0x2D0

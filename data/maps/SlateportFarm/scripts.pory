@@ -227,6 +227,7 @@ script SlateportFarm_EventScript_AquaVictory {
     clearflag(FLAG_SLATEPORT_FARM_COMPLETED)
     setflag(FLAG_SLATEPORT_BAY_FLOODED)
     setflag(FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE)
+    clearflag(FLAG_HIDE_DISPLACED_FARM_STAFF_IN_SLATEPORT)
     special(RemoveCameraObject)
     warpwhitefade(MAP_SLATEPORT_CITY_FARM_CORRIDOR, 5, 4)
     waitstate
@@ -460,7 +461,18 @@ script SlateportFarm_EventScript_ManByTrees {
 
 script SlateportFarm_EventScript_WomanByFlowers {
     lock
-    msgbox(format("It's scary that some people tried destroying our farm.\pI've worked so hard growing these lovely flowers."),MSGBOX_NPC)
+    if(!flag(FLAG_RECEIVED_BERRY_JUICE)){
+        msgbox(format("I saw you up there defending our farm. As a thank you, please take some fresh Berry Juice from the farm."),MSGBOX_NPC)
+        closemessage
+        giveitem(ITEM_BERRY_JUICE, 6)
+        waitfanfare
+        closemessage
+        setflag(FLAG_RECEIVED_BERRY_JUICE)
+    }
+    else {
+        msgbox(format("It's scary that some people tried destroying our farm.\pI've worked so hard growing these lovely flowers."),MSGBOX_NPC)
+        closemessage
+    }
     releaseall
-    end
+    end    
 }

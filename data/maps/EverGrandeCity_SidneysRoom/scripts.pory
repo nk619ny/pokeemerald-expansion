@@ -111,7 +111,7 @@ text EverGrandeCity_SidneysRoom_Text_Defeat {
 }
 
 text EverGrandeCity_SidneysRoom_Text_PostBattleSpeech {
-	format("Heh... you're a pretty bright spark.\pYou keep up your studies, there'll be no stopping you!\pYou should go on to the next room and have a good time!")
+	format("Heh... you're a pretty bright spark. It reminds me of my granddaughter.\pYou keep up your studies, there'll be no stopping you!\pYou should go on to the next room and have a good time!")
 }
 
 text EverGrandeCity_SidneysRoom_Text_PostE4Speech {
