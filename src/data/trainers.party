@@ -645,22 +645,48 @@ Jolly Nature
 - Quick Attack  
 
 
-=== TRAINER_MARCEL === /* Route 121 */ /* TO BE ADDED */
+=== TRAINER_MARCEL === /* Route 121 */ 
 Name: MARCEL
 Class: Cooltrainer
 Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
-Manectric
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Gyarados @ Expert Belt  
+Ability: Intimidate  
+Level: 65
+- Aqua Tail  
+- Dragon Ascent  
+- Power Whip  
+- Temper Flare  
 
-Shiftry
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Marowak @ Thick Club  
+Ability: Lightning Rod
+Level: 65
+- Bone Rush  
+- Power-Up Punch  
+- Fire Punch  
+- Thunder Punch  
+
+
+Type: Null @ Eviolite  
+Ability: Battle Armor  
+Level: 65
+- Swords Dance  
+- Return  
+- Flame Charge  
+- Iron Defense
+
+Annihilape @ Punching Glove
+Ability: Defiant  
+Level: 65
+- Rage Fist  
+- Bulk Up  
+- Final Gambit  
+- Drain Punch  
+
 
 === TRAINER_ALBERTO === /* Route 123 */ /* TO BE ADDED */
 Name: ALBERTO
@@ -4161,7 +4187,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Energy
 - Slash
 
-=== TRAINER_BRAXTON === /* Route 123 */ /* TO BE ADDED */
+=== TRAINER_BRAXTON === /* Route 123 */ 
 Name: BRAXTON
 Class: Cooltrainer
 Pic: Ace Trainer M ORAS 80
@@ -4170,45 +4196,44 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Swellow
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Energy
-- Quick Attack
-- Wing Attack
-- Endeavor
+Zygarde-10% @ Yache Berry  
+Ability: Aura Break  
+Level: 65
+EVs: 252 HP  
+- Core Enforcer  
+- Thousand Waves  
+- Extreme Speed  
+- Protect  
 
-Trapinch
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bite
-- Dig
-- Feint Attack
-- Sand Tomb
+Tauros-Paldea-Combat (M)  
+Ability: Intimidate  
+Level: 65
+EVs: 128 HP / 128 Atk / 252 Spe
+- Raging Bull  
+- Bulk Up  
+- Stomping Tantrum  
+- Wild Charge  
 
-Wailmer
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Rollout
-- Whirlpool
-- Astonish
-- Water Pulse
+Dudunsparce  @ Yache Berry
+Ability: Serene Grace  
+Level: 65
+EVs: 128 HP / 128 Atk / 252 Spe
+- Hyper Drill  
+- Rock Slide  
+- Tailwind  
+- Lunge  
 
-Magneton
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunderbolt
-- Supersonic
-- Thunder Wave
-- Sonic Boom
+Skuntank @ Focus Band  
+Ability: Lingering Aroma  
+Jolly Nature  
+Level: 65
+EVs: 252 HP / 252 Atk
+- Crunch  
+- Temper Flare  
+- Gunk Shot  
+- Memento
 
-Shiftry
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Giga Drain
-- Feint Attack
-- Double Team
-- Swagger
+
 
 === TRAINER_VINCENT === /* Trick House 8 */ /* TO BE ADDED */
 Name: VINCENT
@@ -4983,7 +5008,7 @@ IVs: 0 Atk
 - Stored Power  
 
 
-=== TRAINER_WENDY === /* Route 123 */ /* TO BE ADDED */
+=== TRAINER_WENDY === /* Route 123 */ 
 Name: WENDY
 Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
@@ -4992,29 +5017,45 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Mawile
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Baton Pass
-- Feint Attack
-- Fake Tears
-- Bite
+Polteageist-Antique @ Weakness Policy  
+Ability: Weak Armor  
+EVs: 252 HP / 252 Def  
+Level: 64
+Modest Nature  
+IVs: 0 Atk  
+- Stored Power  
+- Shell Smash  
+- Giga Drain  
+- Strength Sap  
 
-Roselia
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Mega Drain
-- Magical Leaf
-- Grass Whistle
-- Leech Seed
+Maushold  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Spe  
+Level: 64
+Jolly Nature  
+- Beat Up  
+- Follow Me  
+- Thunder Wave  
+- Encore  
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Fly
-- Water Gun
-- Mist
-- Protect
+Annihilape @ Big Root  
+Ability: Defiant  
+EVs: 184 HP / 184 Atk / 184 Spe
+Level: 64
+- Rage Fist  
+- Drain Punch  
+- Pursuit  
+- Encore  
+
+Absol  
+Ability: Justified  
+EVs: 252 HP / 64 Atk / 192 Spe  
+Level: 64
+Adamant Nature  
+- Pursuit  
+- Throat Chop  
+- Play Rough  
+- Quick Attack
 
 === TRAINER_KEIRA === /* Trick House 8 */ /* TO BE ADDED */
 Name: KEIRA
@@ -7052,7 +7093,7 @@ IVs: 0 Atk
 
 
 === TRAINER_COURTNEY_MT_PYRE === /* Route */
-Name: Courtney
+Name: COURTNEY
 Class: Magma Admin
 Pic: Courtney ORAS 80
 Gender: Female
@@ -31715,8 +31756,8 @@ IVs: 0 Atk
 
 
 
-=== TRAINER_CRISTIN_1 === /* Route 121 */ /* TO BE ADDED */
-Name: CRISTIN
+=== TRAINER_CRISTIN_1 === /* Route 121 */ 
+Name: KRISTIN
 Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
 Gender: Female
@@ -31724,13 +31765,46 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Loudred
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Vigoroth
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Scolipede  
+Ability: Speed Boost  
+Level: 65
+EVs: 252 Spe
+- Baton Pass  
+- Swords Dance  
+- Cross Poison  
+- X-Scissor  
+
+Terapagos-Normal @ Power Herb  
+Ability: Tera Shell  
+Level: 65
+EVs: 252 HP
+- Tera Starstorm  
+- Meteor Beam  
+- Thunderbolt  
+- Earth Power  
+
+
+Serperior @ Yache Berry  
+Ability: Contrary  
+Level: 65
+EVs: 252 Spe  
+IVs: 0 Atk  
+- Draco Meteor  
+- Leaf Storm  
+- Synthesis  
+- Glare  
+
+
+Pawmot  
+Ability: Natural Cure 
+EVs: 252 Atk
+Level: 65 
+- Revival Blessing  
+- Double Shock  
+- Close Combat  
+- Encore  
+
 
 === TRAINER_MAY_RUSTBORO_TREECKO === /* Route 104 */
 Name: MAY
