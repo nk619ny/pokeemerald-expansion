@@ -2666,7 +2666,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_JuanORAS = {
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
-    .anims = sAnimTable_Standard,
+    .anims = sAnimTable_Standard_Asym,
     .images = sPicTable_JuanORAS,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
