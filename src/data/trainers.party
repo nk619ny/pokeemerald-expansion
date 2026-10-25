@@ -12410,7 +12410,7 @@ Tera Type: Dark
 === TRAINER_VICTOR === /* Route 111 */ 
 Name: VICTOR
 Class: Winstrate
-Pic: Pokefan M
+Pic: Pokefan M ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -12490,7 +12490,7 @@ Level: 27
 === TRAINER_COLTON === /* S.S. Tidal */
 Name: COLTON
 Class: Pokefan
-Pic: Pokefan M
+Pic: Pokefan M ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -14307,14 +14307,16 @@ Tera Type: Grass
 - Trailblaze  
 - U-turn  
 
-Raticate-Alola @ Liechi Berry  
-Ability: Gluttony  
-Level: 37  
-Tera Type: Dark  
-- Sucker Punch  
-- Pursuit  
-- Quick Attack  
-- Double-Edge  
+Fuecoco @ Sitrus Berry  
+Ability: Unaware  
+Level: 46
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Fire Blast  
+- Belch  
+- Hyper Voice  
+- Encore
 
 
 === TRAINER_CALVIN_2 === /* Route */
@@ -28706,7 +28708,7 @@ Level: 21
 === TRAINER_KALEB === /* Route 110 */ 
 Name: KALEB
 Class: Pokefan
-Pic: Pokefan M
+Pic: Pokefan M ORAS 80
 Gender: Male
 Music: Twins
 Double Battle: Yes
@@ -31486,7 +31488,7 @@ Tera Type: Bug
 - Ally Switch  
 
 
-=== TRAINER_LEONEL === /* Route 120 */ /* TO BE ADDED */
+=== TRAINER_LEONEL === /* Route 120 */ 
 Name: LEONEL
 Class: Cooltrainer
 Pic: Ace Trainer M ORAS 80
@@ -31497,7 +31499,7 @@ AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Will Suicide
 
 Cosmoem @ Eviolite  
 Ability: Sturdy  
-Level: 
+Level: 57
 EVs: 252 HP / 128 Atk / 128 SpA  
 Sassy Nature  
 - Cosmic Power  
@@ -31507,12 +31509,33 @@ Sassy Nature
 
 Skuntank @ Shuca Berry  
 Ability: Aftermath  
+Level: 55
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
 - Temper Flare  
 - Gunk Shot  
 - Explosion  
 - Sucker Punch
+
+Oinkologne-F (F) @ Liechi Berry  
+Ability: Gluttony  
+Level: 55
+EVs: 252 Atk / 252 Spe  
+Jolly Nature
+- Body Slam  
+- Trailblaze  
+- Endure  
+- Stomping Tantrum
+
+Staraptor @ Protective Pads  
+Ability: Reckless  
+Level: 55
+EVs: 252 Atk / 252 Spe
+- Double-Edge  
+- Brave Bird  
+- Roost  
+- Revenge  
+
 
 === TRAINER_CALLIE === /* Route 120 */
 Name: CALLIE
@@ -32738,12 +32761,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Shieldon @ Eviolite
 Level: 12
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tackle
-
-Raticate-Alola @ Eviolite
-Level: 12
-Modest Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Tackle
 
