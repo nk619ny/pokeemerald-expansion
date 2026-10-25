@@ -17,7 +17,7 @@
   "object_events": [
     {
       "local_id": "LOCALID_PETALBURG_GYM_NORMAN",
-      "graphics_id": "OBJ_EVENT_GFX_NORMAN",
+      "graphics_id": "OBJ_EVENT_GFX_NORMAN_ORAS",
       "x": 4,
       "y": 107,
       "elevation": 0,
@@ -135,7 +135,7 @@
     },
     {
       "local_id": "LOCALID_PETALBURG_GYM_WALLY",
-      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_WALLY_ORAS",
       "x": 4,
       "y": 108,
       "elevation": 3,

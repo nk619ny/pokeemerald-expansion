@@ -292,6 +292,13 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Vitamin;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MegaStone;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicMORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Drayden;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FlanneryORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_JuanORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NormanORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WallaceORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WallyORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WinonaORAS;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedBike;
@@ -758,6 +765,13 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_VITAMIN] =                  &gObjectEventGraphicsInfo_Vitamin,
     [OBJ_EVENT_GFX_MEGA_STONE] =               &gObjectEventGraphicsInfo_MegaStone,
     [OBJ_EVENT_GFX_PSYCHIC_M_ORAS] =           &gObjectEventGraphicsInfo_PsychicMORAS,
+    [OBJ_EVENT_GFX_DRAYDEN] =                  &gObjectEventGraphicsInfo_Drayden,
+    [OBJ_EVENT_GFX_FLANNERY_ORAS] =            &gObjectEventGraphicsInfo_FlanneryORAS,
+    [OBJ_EVENT_GFX_JUAN_ORAS] =                &gObjectEventGraphicsInfo_JuanORAS,
+    [OBJ_EVENT_GFX_NORMAN_ORAS] =              &gObjectEventGraphicsInfo_NormanORAS,
+    [OBJ_EVENT_GFX_WALLACE_ORAS] =             &gObjectEventGraphicsInfo_WallaceORAS,
+    [OBJ_EVENT_GFX_WALLY_ORAS] =               &gObjectEventGraphicsInfo_WallyORAS,
+    [OBJ_EVENT_GFX_WINONA_ORAS] =              &gObjectEventGraphicsInfo_WinonaORAS,
     [OBJ_EVENT_GFX_MAN]                      = &gObjectEventGraphicsInfo_Man,
     
 #if IS_FRLG

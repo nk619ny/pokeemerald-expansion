@@ -587,6 +587,13 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Vitamin,         OBJ_EVENT_PAL_TAG_VITAMIN},
     {gObjectEventPal_MegaStone,       OBJ_EVENT_PAL_TAG_MEGA_STONE},
     {gObjectEventPal_PsychicMORAS,          OBJ_EVENT_PAL_TAG_PSYCHIC_M_ORAS},
+    {gObjectEventPal_Drayden,               OBJ_EVENT_PAL_TAG_DRAYDEN},
+    {gObjectEventPal_FlanneryORAS,          OBJ_EVENT_PAL_TAG_FLANNERY_ORAS},
+    {gObjectEventPal_JuanORAS,              OBJ_EVENT_PAL_TAG_JUAN_ORAS},
+    {gObjectEventPal_NormanORAS,            OBJ_EVENT_PAL_TAG_NORMAN_ORAS},
+    {gObjectEventPal_WallaceORAS,           OBJ_EVENT_PAL_TAG_WALLACE_ORAS},
+    {gObjectEventPal_WallyORAS,             OBJ_EVENT_PAL_TAG_WALLY_ORAS},
+    {gObjectEventPal_WinonaORAS,            OBJ_EVENT_PAL_TAG_WINONA_ORAS},
 
     {gObjectEventPal_NpcWhite,              OBJ_EVENT_PAL_TAG_NPC_WHITE},
     {gObjectEventPal_NpcWhiteReflection,    OBJ_EVENT_PAL_TAG_NPC_WHITE_REFLECTION},

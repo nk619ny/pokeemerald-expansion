@@ -503,6 +503,20 @@ const u32 gObjectEventPic_Man[] = INCGFX_U32("graphics/object_events/pics/people
 const u16 gObjectEventPal_Man[] = INCGFX_U16("graphics/object_events/pics/people/man.png", ".gbapal");
 const u32 gObjectEventPic_PsychicMORAS[] = INCGFX_U32("graphics/object_events/pics/people/psychic_m_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_PsychicMORAS[] = INCGFX_U16("graphics/object_events/pics/people/psychic_m_oras.png", ".gbapal");
+const u32 gObjectEventPic_Drayden[] = INCGFX_U32("graphics/object_events/pics/people/drayden.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_Drayden[] = INCGFX_U16("graphics/object_events/pics/people/drayden.png", ".gbapal");
+const u32 gObjectEventPic_FlanneryORAS[] = INCGFX_U32("graphics/object_events/pics/people/flannery_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_FlanneryORAS[] = INCGFX_U16("graphics/object_events/pics/people/flannery_oras.png", ".gbapal");
+const u32 gObjectEventPic_JuanORAS[] = INCGFX_U32("graphics/object_events/pics/people/juan_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_JuanORAS[] = INCGFX_U16("graphics/object_events/pics/people/juan_oras.png", ".gbapal");
+const u32 gObjectEventPic_NormanORAS[] = INCGFX_U32("graphics/object_events/pics/people/norman_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_NormanORAS[] = INCGFX_U16("graphics/object_events/pics/people/norman_oras.png", ".gbapal");
+const u32 gObjectEventPic_WallaceORAS[] = INCGFX_U32("graphics/object_events/pics/people/wallace_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_WallaceORAS[] = INCGFX_U16("graphics/object_events/pics/people/wallace_oras.png", ".gbapal");
+const u32 gObjectEventPic_WallyORAS[] = INCGFX_U32("graphics/object_events/pics/people/wally_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_WallyORAS[] = INCGFX_U16("graphics/object_events/pics/people/wally_oras.png", ".gbapal");
+const u32 gObjectEventPic_WinonaORAS[] = INCGFX_U32("graphics/object_events/pics/people/winona_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_WinonaORAS[] = INCGFX_U16("graphics/object_events/pics/people/winona_oras.png", ".gbapal");
 
 
 

@@ -1197,6 +1197,34 @@ static const struct SpriteFrameImage sPicTable_PsychicMORAS[] = {
     overworld_frame(gObjectEventPic_PsychicMORAS, 2, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_Drayden[] = {
+    overworld_ascending_frames(gObjectEventPic_Drayden, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_FlanneryORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_FlanneryORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_JuanORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_JuanORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_NormanORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_NormanORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_WallaceORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_WallaceORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_WallyORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_WallyORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_WinonaORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_WinonaORAS, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_ExpertMORAS[] = {
     overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 0),
     overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 1),
