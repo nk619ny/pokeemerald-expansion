@@ -4196,7 +4196,7 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Zygarde-10% @ Yache Berry  
+Zygarde-10 @ Yache Berry  
 Ability: Aura Break  
 Level: 65
 EVs: 252 HP  
@@ -4235,7 +4235,7 @@ EVs: 252 HP / 252 Atk
 
 
 
-=== TRAINER_VINCENT === /* Trick House 8 */ /* TO BE ADDED */
+=== TRAINER_VINCENT === /* Trick House 8 */ 
 Name: VINCENT
 Class: Cooltrainer
 Pic: Ace Trainer M ORAS 80
@@ -4244,34 +4244,107 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Sableye
-Level: 44
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Gengar @ Gengarite  
+Ability: Levitate
+Level: 80
+EVs: 128 HP / 128 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Perish Song  
+- Encore  
+- Protect  
+- Shadow Ball  
 
-Medicham
-Level: 44
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Mr. Mime  
+Ability: Soundproof  
+Level: 80
+EVs: 252 HP / 4 SpA / 252 Spe  
+Timid Nature  
+- Fake Out  
+- Encore  
+- Teleport  
+- Dazzling Gleam  
 
-Sharpedo
-Level: 44
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Smeargle  @ Focus Sash
+Ability: Moody  
+Level: 80
+EVs: 252 HP / 252 Spe  
+Jolly Nature  
+- Perish Song  
+- Fairy Lock  
+- Fake Out  
+- Protect  
 
-=== TRAINER_LEROY === /* Trick House 8 */ /* TO BE ADDED */
+Scream Tail @ Booster Energy  
+Ability: Protosynthesis  
+Level: 80
+EVs: 252 HP / 252 SpA / 4 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Perish Song  
+- Protect  
+- Encore  
+- Dazzling Gleam  
+
+Gothitelle @ Sitrus Berry  
+Ability: Shadow Tag  
+Level: 80
+EVs: 252 HP / 252 SpD  
+Careful Nature  
+- Fake Out  
+- Protect  
+- Heal Pulse  
+- Ally Switch  
+
+
+=== TRAINER_LEROY === /* Trick House 8 */ 
 Name: LEROY
 Class: Cooltrainer
 Pic: Ace Trainer M ORAS 80
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Hard Trick Room
 
-Mawile
-Level: 46
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Farigiraf @ Mental Herb
+Ability: Armor Tail  
+Level: 82
+EVs: 252 HP
+IVs: 0 Atk  
+- Trick Room  
+- Hyper Voice  
+- Psychic Noise  
+- Dazzling Gleam  
 
-Starmie
-Level: 46
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Incineroar  
+Ability: Intimidate  
+Level: 82
+EVs: 252 HP / 252 Atk  
+Brave Nature  
+- Fake Out  
+- Taunt  
+- Flare Blitz  
+- Throat Chop
+
+Snorlax @ Snorlaxite  
+Ability: Immunity  
+Level: 82
+EVs: 252 Atk / 128 Def / 128 SpD
+IVs: 0 Spe
+- Curse  
+- Slack Off  
+- Seed Bomb  
+- Return  
+
+Indeedee-F (F) @ Light Clay  
+Ability: Psychic Surge  
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk / 0 Spe
+- Expanding Force  
+- Trick Room  
+- Reflect  
+- Light Screen  
+
 
 === TRAINER_WILTON_1 === /* Route 112 */ 
 Name: WILTON
@@ -5057,7 +5130,7 @@ Adamant Nature
 - Play Rough  
 - Quick Attack
 
-=== TRAINER_KEIRA === /* Trick House 8 */ /* TO BE ADDED */
+=== TRAINER_KEIRA === /* Trick House 8 */ 
 Name: KEIRA
 Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
@@ -5066,13 +5139,45 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
 
-Lairon
-Level: 45
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Staraptor-Mega @ Staraptite  
+Ability: Intimidate
+Level: 82  
+EVs: 252 Atk / 252 Spe
+- Close Combat  
+- Dual Wingbeat  
+- Roost  
+- Pursuit  
 
-Manectric
-Level: 45
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Whimsicott  
+Ability: Prankster  
+Level: 82
+EVs: 252 HP / 64 Def / 64 SpD / 64 Spe  
+Bold Nature  
+IVs: 0 Atk  
+- Charm  
+- Fake Tears  
+- Tailwind  
+- Encore
+
+Lurantis  
+Ability: Contrary  
+Level: 82
+EVs: 252 HP / 128 Atk / 128 Spe  
+Adamant Nature  
+- Leaf Blade  
+- Leech Life  
+- Superpower  
+- Grassy Glide
+
+Rillaboom  
+Ability: Grassy Surge  
+Level: 82
+EVs: 252 HP / 128 Atk / 128 Spe  
+Serious Nature  
+- Fake Out  
+- Grassy Glide  
+- Wood Hammer  
+- High Horsepower
 
 === TRAINER_BROOKE_1 === /* Route 112 */ 
 Name: BROOKE
@@ -20063,18 +20168,57 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Return
 - Attract
 
-=== TRAINER_JAZMYN === /* Route 123 */ /* TO BE ADDED */
+=== TRAINER_JAZMYN === /* Route 123 */
 Name: JAZMYN
 Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware
+AI: Smart Trainer / Try To 2HKO / Double Battle / HP Aware / Hard Trick Room
 
-Absol
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dusknoir @ Big Root  
+Ability: Frisk  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Level: 56
+Sassy Nature  
+IVs: 0 Spe  
+- Leech Life  
+- Shadow Sneak  
+- Power-Up Punch  
+- Trick Room  
+
+Parasect @ Enigma Berry  
+Ability: Damp  
+Level: 56
+EVs: 252 HP / 252 Atk  
+Brave Nature  
+- Spore  
+- Leech Life  
+- Seed Bomb  
+- Swords Dance
+
+Farigiraf @ Throat Spray  
+Ability: Armor Tail  
+Level: 56
+EVs: 252 HP / 252 SpA
+IVs: 0 Atk / 0 Spe
+- Hyper Voice  
+- Psychic Noise  
+- Trick Room  
+
+Ferrothorn @ Occa Berry  
+Ability: Iron Barbs  
+Level: 56
+EVs: 252 HP / 252 Atk  
+Relaxed Nature  
+IVs: 0 Spe  
+- Power Whip  
+- Body Press  
+- Curse  
+- Gyro Ball
+
+
 
 === TRAINER_JONAS === /* Route 123 */
 Name: JONAS
@@ -23435,7 +23579,7 @@ Carvanha
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ATHENA === /* Route 124 */ /* TO BE ADDED */
+=== TRAINER_ATHENA === /* Route 127 */ /* TO BE ADDED */
 Name: ATHENA
 Class: Cooltrainer
 Pic: Ace Trainer F ORAS 80
