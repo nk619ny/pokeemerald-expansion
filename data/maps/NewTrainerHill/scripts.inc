@@ -1257,12 +1257,12 @@ NewTrainerHill_EventScript_SetOpponent_3:
 
 NewTrainerHill_EventScript_SetOpponent_4:
 # 640 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GLACIA
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GLACIA_ORAS
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_5:
 # 642 "data/maps/NewTrainerHill/scripts.pory"
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PHOEBE
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PHOEBE_ORAS
 	goto NewTrainerHill_EventScript_SetOpponent_1
 
 NewTrainerHill_EventScript_SetOpponent_6:

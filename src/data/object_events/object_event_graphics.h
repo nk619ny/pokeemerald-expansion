@@ -517,6 +517,14 @@ const u32 gObjectEventPic_WallyORAS[] = INCGFX_U32("graphics/object_events/pics/
 const u16 gObjectEventPal_WallyORAS[] = INCGFX_U16("graphics/object_events/pics/people/wally_oras.png", ".gbapal");
 const u32 gObjectEventPic_WinonaORAS[] = INCGFX_U32("graphics/object_events/pics/people/winona_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_WinonaORAS[] = INCGFX_U16("graphics/object_events/pics/people/winona_oras.png", ".gbapal");
+const u32 gObjectEventPic_RoxanneORAS[] = INCGFX_U32("graphics/object_events/pics/people/roxanne_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_RoxanneORAS[] = INCGFX_U16("graphics/object_events/pics/people/roxanne_oras.png", ".gbapal");
+const u32 gObjectEventPic_StevenORAS[] = INCGFX_U32("graphics/object_events/pics/people/steven_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_StevenORAS[] = INCGFX_U16("graphics/object_events/pics/people/steven_oras.png", ".gbapal");
+const u32 gObjectEventPic_PhoebeORAS[] = INCGFX_U32("graphics/object_events/pics/people/phoebe_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_PhoebeORAS[] = INCGFX_U16("graphics/object_events/pics/people/phoebe_oras.png", ".gbapal");
+const u32 gObjectEventPic_GlaciaORAS[] = INCGFX_U32("graphics/object_events/pics/people/glacia_oras.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_GlaciaORAS[] = INCGFX_U16("graphics/object_events/pics/people/glacia_oras.png", ".gbapal");
 
 
 

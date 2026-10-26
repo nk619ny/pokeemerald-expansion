@@ -637,9 +637,9 @@ script NewTrainerHill_EventScript_SetOpponent {
 		case 1:
 			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LISIA)
 		case 2:
-			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GLACIA)
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GLACIA_ORAS)
 		case 3:
-			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PHOEBE)
+			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PHOEBE_ORAS)
 		case 4:
 			setvar( VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_GRETA)
 		case 5:

@@ -474,6 +474,10 @@ enum
     OBJ_EVENT_GFX_WALLACE_ORAS,
     OBJ_EVENT_GFX_WALLY_ORAS,
     OBJ_EVENT_GFX_WINONA_ORAS,
+    OBJ_EVENT_GFX_ROXANNE_ORAS,
+    OBJ_EVENT_GFX_STEVEN_ORAS,
+    OBJ_EVENT_GFX_PHOEBE_ORAS,
+    OBJ_EVENT_GFX_GLACIA_ORAS,
     // Custom item icons
     OBJ_EVENT_GFX_TM,
     OBJ_EVENT_GFX_VITAMIN,
@@ -677,6 +681,10 @@ enum
 #define OBJ_EVENT_PAL_TAG_WALLACE_ORAS                 0x117D
 #define OBJ_EVENT_PAL_TAG_WALLY_ORAS                   0x117E
 #define OBJ_EVENT_PAL_TAG_WINONA_ORAS                  0x117F
+#define OBJ_EVENT_PAL_TAG_ROXANNE_ORAS                 0x1180
+#define OBJ_EVENT_PAL_TAG_STEVEN_ORAS                  0x1181
+#define OBJ_EVENT_PAL_TAG_PHOEBE_ORAS                  0x1182
+#define OBJ_EVENT_PAL_TAG_GLACIA_ORAS                  0x1183
 #define OBJ_EVENT_PAL_TAG_TM                           0x1150
 #define OBJ_EVENT_PAL_TAG_VITAMIN                      0x1151
 #define OBJ_EVENT_PAL_TAG_MEGA_STONE                   0x1152

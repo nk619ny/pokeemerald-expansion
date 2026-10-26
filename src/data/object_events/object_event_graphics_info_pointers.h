@@ -299,6 +299,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NormanORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WallaceORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WallyORAS;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WinonaORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RoxanneORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_StevenORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PhoebeORAS;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GlaciaORAS;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedBike;
@@ -772,6 +776,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WALLACE_ORAS] =             &gObjectEventGraphicsInfo_WallaceORAS,
     [OBJ_EVENT_GFX_WALLY_ORAS] =               &gObjectEventGraphicsInfo_WallyORAS,
     [OBJ_EVENT_GFX_WINONA_ORAS] =              &gObjectEventGraphicsInfo_WinonaORAS,
+    [OBJ_EVENT_GFX_ROXANNE_ORAS] =             &gObjectEventGraphicsInfo_RoxanneORAS,
+    [OBJ_EVENT_GFX_STEVEN_ORAS] =              &gObjectEventGraphicsInfo_StevenORAS,
+    [OBJ_EVENT_GFX_PHOEBE_ORAS] =              &gObjectEventGraphicsInfo_PhoebeORAS,
+    [OBJ_EVENT_GFX_GLACIA_ORAS] =              &gObjectEventGraphicsInfo_GlaciaORAS,
     [OBJ_EVENT_GFX_MAN]                      = &gObjectEventGraphicsInfo_Man,
     
 #if IS_FRLG

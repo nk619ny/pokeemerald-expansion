@@ -1225,6 +1225,22 @@ static const struct SpriteFrameImage sPicTable_WinonaORAS[] = {
     overworld_ascending_frames(gObjectEventPic_WinonaORAS, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_RoxanneORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_RoxanneORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_StevenORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_StevenORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_PhoebeORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_PhoebeORAS, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_GlaciaORAS[] = {
+    overworld_ascending_frames(gObjectEventPic_GlaciaORAS, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_ExpertMORAS[] = {
     overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 0),
     overworld_frame(gObjectEventPic_ExpertMORAS, 2, 4, 1),
