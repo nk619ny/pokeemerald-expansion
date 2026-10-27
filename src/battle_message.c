@@ -897,6 +897,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_HONEYRESTOREDHEALTH]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} ate a little of its Honey and restored HP!"),
     [STRINGID_ANTICIPATIONSWITCHIN]                  = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is anticipating attacks!"),
     [STRINGID_ANTICIPATIONREDUCESDMG]                = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s anticipation reduced the damage!"),
+    [STRINGID_TRAPPEDINFISSURE]                      = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX} became trapped in a gaping fissure!"),
     //[STRINGID_DAMPWEAKENEDFIRE]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} weakened Fire attacks!"),
     //[STRINGID_MUDDYWEAKENEDELECTRIC]                 = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} weakened Electric attacks!"),
 
@@ -1162,6 +1163,7 @@ const u16 gWrappedStringIds[NUM_TRAPPING_MOVES] =
     [B_MSG_WRAPPED_INFESTATION] = STRINGID_INFESTATION,            // MOVE_INFESTATION
     [B_MSG_WRAPPED_SNAP_TRAP]   = STRINGID_PKMNINSNAPTRAP,         // MOVE_SNAP_TRAP
     [B_MSG_WRAPPED_THUNDER_CAGE]= STRINGID_THUNDERCAGETRAPPED,     // MOVE_THUNDER_CAGE
+    [B_MSG_WRAPPED_FISSURE]     = STRINGID_TRAPPEDINFISSURE,       // MOVE_FISSURE
 };
 
 const u16 gMistUsedStringIds[] =

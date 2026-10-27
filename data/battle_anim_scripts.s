@@ -29057,6 +29057,7 @@ gBattleAnimGeneral_TurnTrap::
 	jumpargeq 0, TRAP_ANIM_INFESTATION, Status_Infestation
 	jumpargeq 0, TRAP_ANIM_SNAP_TRAP, Status_Snap_Trap
 	jumpargeq 0, TRAP_ANIM_THUNDER_CAGE, Status_Thunder_Cage
+	jumpargeq 0, TRAP_ANIM_FISSURE, Status_Fissure
 	goto Status_BindWrap
 Status_BindWrap:
 	loopsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET, 6, 2
@@ -29148,6 +29149,22 @@ Status_SandTomb:
 	call SandTombSwirlingDirt
 	delay 22
 	simple_palette_blend unused_subpriority_offset=0, selector=F_PAL_TARGET, delay=2, initial_blend_y=7, target_blend_y=0, color=RGB(19, 17, 0)
+	waitforvisualfinish
+	stopsound
+	end
+
+Status_Fissure:
+	simple_palette_blend unused_subpriority_offset=0, selector=F_PAL_TARGET, delay=2, initial_blend_y=0, target_blend_y=7, color=RGB(17, 11, 4)
+	createvisualtask AnimTask_HorizontalShake, 5, (MAX_BATTLERS_COUNT + 1), 6, 36
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 2, 36, 1
+	playsewithpan SE_M_EARTHQUAKE, SOUND_PAN_TARGET
+	call FissureDirtPlumeClose
+	delay 12
+	call FissureDirtPlumeFar
+	delay 12
+	call FissureDirtPlumeClose
+	delay 16
+	simple_palette_blend unused_subpriority_offset=0, selector=F_PAL_TARGET, delay=2, initial_blend_y=7, target_blend_y=0, color=RGB(17, 11, 4)
 	waitforvisualfinish
 	stopsound
 	end
