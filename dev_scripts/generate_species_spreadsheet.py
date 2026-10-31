@@ -83,13 +83,11 @@ EXCLUDED_SPECIES_EXACT = frozenset({
     # Shellos/Gastrodon regional alternates (West is canonical)
     "SPECIES_SHELLOS_EAST",
     "SPECIES_GASTRODON_EAST",
-    # Seasonal form alternates (Spring is canonical)
+    # Seasonal form alternates for Deerling (Spring is canonical)
     "SPECIES_DEERLING_SUMMER",
     "SPECIES_DEERLING_AUTUMN",
     "SPECIES_DEERLING_WINTER",
-    "SPECIES_SAWSBUCK_SUMMER",
-    "SPECIES_SAWSBUCK_AUTUMN",
-    "SPECIES_SAWSBUCK_WINTER",
+    # Note: All Sawsbuck seasonal forms (Spring, Summer, Autumn, Winter) are included separately
     # Pichu event form
     "SPECIES_PICHU_SPIKY_EARED",
     # Maushold family-count variant
