@@ -3033,3 +3033,15 @@ text MatchCall_Text_Rival_6_6 {
 text MatchCall_Text_Rival_7_1 {
 	format("{RIVAL}: {PLAYER}! I was just\Nthinking about you.\pGood luck with the rest of the\NPokemon League Challenge!")
 }
+
+script EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom {
+	if (!checkitem(ITEM_POKEVIAL)) {
+		msgbox(format("Instead of returning here every time you need to heal your Pokémon, you can use this."), MSGBOX_DEFAULT)
+		closemessage
+		giveitem(ITEM_POKEVIAL)
+		waitfanfare
+		closemessage
+		releaseall
+		end
+	}	
+}

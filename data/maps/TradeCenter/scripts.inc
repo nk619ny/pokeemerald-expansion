@@ -5937,6 +5937,29 @@ TradeCenter_EventScript_CrossPoison_2:
 	goto TradeCenter_EventScript_CrossPoison_1
 
 
+EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom::
+	checkitem ITEM_POKEVIAL
+# 0 "data/maps/TradeCenter/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom_1
+	return
+
+EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom_1:
+# 3039 "data/maps/TradeCenter/scripts.pory"
+	msgbox EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom_Text_0, MSGBOX_DEFAULT
+# 3040 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 3041 "data/maps/TradeCenter/scripts.pory"
+	giveitem ITEM_POKEVIAL
+# 3042 "data/maps/TradeCenter/scripts.pory"
+	waitfanfare
+# 3043 "data/maps/TradeCenter/scripts.pory"
+	closemessage
+# 3044 "data/maps/TradeCenter/scripts.pory"
+	releaseall
+	end
+
+
 Common_EventScript_LevelCapUpdate_Text_0:
 # 303 "data/maps/TradeCenter/scripts.pory"
 	.string "{PLAYER} grew to Trainer Level\n"
@@ -7253,6 +7276,12 @@ TradeCenter_EventScript_CrossPoison_Text_1:
 # 2895 "data/maps/TradeCenter/scripts.pory"
 	.string "You already have Cross Poison. Keep\n"
 	.string "spreading the venom!$"
+
+EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom_Text_0:
+# 3039 "data/maps/TradeCenter/scripts.pory"
+	.string "Instead of returning here every time\n"
+	.string "you need to heal your Pokémon, you can\l"
+	.string "use this.$"
 
 Common_Text_CaveIsDarkUseFlash::
 # 360 "data/maps/TradeCenter/scripts.pory"

@@ -49,6 +49,7 @@ EventScript_PkmnCenterNurse_TakeAndHealPkmn::
 	callnative UpdateFollowingPokemon
 	return
 
+/*
 EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom::
 	specialvar VAR_RESULT, PlayerNotAtTrainerHillEntrance
 	goto_if_eq VAR_RESULT, 0, EventScript_PkmnCenterNurse_ReturnPkmn
@@ -57,6 +58,7 @@ EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom::
 	goto_if_eq VAR_0x8008, 0, EventScript_PkmnCenterNurse_ReturnPkmn
 	goto_if_eq VAR_0x8008, 1, EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom
 	end
+*/
 
 @ VAR_0x8004 is 1 when player has Gold Card
 EventScript_PkmnCenterNurse_ReturnPkmn::
